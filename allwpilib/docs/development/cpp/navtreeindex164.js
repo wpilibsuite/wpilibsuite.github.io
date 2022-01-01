@@ -1,5 +1,13 @@
 var NAVTREEINDEX164 =
 {
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html":[4,0,7,4,1396],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html#a9616d03c8c5cc855c0db0609914cff77":[5,0,4,2,1394,1],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html#a9616d03c8c5cc855c0db0609914cff77":[4,0,7,4,1396,1],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html#ae24298ad951f706fe9a38cc4c5a714e1":[4,0,7,4,1396,0],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html#ae24298ad951f706fe9a38cc4c5a714e1":[5,0,4,2,1394,0],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2l_01_4.html":[5,0,4,2,1395],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2l_01_4.html":[4,0,7,4,1397],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2l_01_4.html#aadf90005ed52140af3735cb4a1a582d6":[5,0,4,2,1395,0],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2l_01_4.html#aadf90005ed52140af3735cb4a1a582d6":[4,0,7,4,1397,0],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2l_01_4.html#accd93dc4e086b11f4cf1d45dcd79b749":[4,0,7,4,1397,1],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2l_01_4.html#accd93dc4e086b11f4cf1d45dcd79b749":[5,0,4,2,1395,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX164 =
 "struct_h_a_l___joystick_buttons.html":[3,1,32,3],
 "struct_h_a_l___joystick_buttons.html#a38ec62e88472f4c7918af189d4043cd4":[3,1,32,3,0],
 "struct_h_a_l___joystick_buttons.html#ad2aeabb6cc9c523c765132c1749e82fd":[3,1,32,3,1],
-"struct_h_a_l___joystick_descriptor.html":[3,1,32,4],
-"struct_h_a_l___joystick_descriptor.html#a15fc9338bfe07981f2fc19424b229223":[3,1,32,4,6],
-"struct_h_a_l___joystick_descriptor.html#a1f06f84bae0b1781aa239419432911e0":[3,1,32,4,5],
-"struct_h_a_l___joystick_descriptor.html#a45192fc1fc352d02822cacd9f15bdc21":[3,1,32,4,1],
-"struct_h_a_l___joystick_descriptor.html#a62e581da1088320d7a96e3ca402c86f0":[3,1,32,4,0],
-"struct_h_a_l___joystick_descriptor.html#a76ad44b8f42ab4487fcd0ad29cb3552a":[3,1,32,4,4],
-"struct_h_a_l___joystick_descriptor.html#a99849a0f6e37c8c119f1d911384c5d2e":[3,1,32,4,2],
-"struct_h_a_l___joystick_descriptor.html#afc9f2c48582c93f9569c641da3d14802":[3,1,32,4,3],
-"struct_h_a_l___joystick_p_o_vs.html":[3,1,32,2]
+"struct_h_a_l___joystick_descriptor.html":[3,1,32,4]
 };

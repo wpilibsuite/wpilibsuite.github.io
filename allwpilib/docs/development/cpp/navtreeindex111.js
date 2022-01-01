@@ -1,5 +1,13 @@
 var NAVTREEINDEX111 =
 {
+"group__cscore__source__create__func.html#ga786ec315ee637ef07919376b5c871824":[3,11,1,2],
+"group__cscore__source__create__func.html#gaae6f1c7ec698a5a349fd4ed01936545b":[3,11,1,0],
+"group__cscore__source__func.html":[3,11,2],
+"group__cscore__source__func.html#ga0746fd6725b23c36ca1cb79e27774e87":[3,11,2,16],
+"group__cscore__source__func.html#ga1f90bf7051627dbba5038a26e490883f":[3,11,2,14],
+"group__cscore__source__func.html#ga23dfd8f4abeaa9d073008573a23c839d":[3,11,2,9],
+"group__cscore__source__func.html#ga2a71b2104a708b4fa8231fa377ef8382":[3,11,2,22],
+"group__cscore__source__func.html#ga3bc72f22d4c2f22527331fdc81e10bc4":[3,11,2,12],
 "group__cscore__source__func.html#ga42b9391439eadaa637600caa6bc5e83a":[3,11,2,18],
 "group__cscore__source__func.html#ga4611681c463db001462787139c80fffc":[3,11,2,21],
 "group__cscore__source__func.html#ga47896bf818efc12943fa44e39a2a05f4":[3,11,2,17],
@@ -241,13 +249,5 @@ var NAVTREEINDEX111 =
 "group__hal__accelerometer.html#ga6f99f01cb6c095d06ede0bf51809549a":[3,1,15,5],
 "group__hal__accelerometer.html#ga7332d27496781b06b21f7427189d4c66":[3,1,15,4],
 "group__hal__accelerometer.html#ga9ee75074d28dacc07e929ef9bc881095":[3,1,15,1],
-"group__hal__accelerometer.html#gaab1b5306437adfe98fb39a520477e528":[3,1,15,2],
-"group__hal__addressable.html":[3,1,6],
-"group__hal__addressable.html#ga00ffec5067d8892d56b6bf25d641c967":[3,1,6,5],
-"group__hal__addressable.html#ga01462e33726c97fc876bd1333251a36e":[3,1,6,2],
-"group__hal__addressable.html#ga0594b879fa9f0795bf096d7f77431e93":[3,1,6,4],
-"group__hal__addressable.html#ga27b2ccc600e5821fb29563028664f796":[3,1,6,3],
-"group__hal__addressable.html#ga58ec649fceb951f56ea7c0700e6547e4":[3,1,6,8],
-"group__hal__addressable.html#ga8fdd0268859f778900fc21b5bd890859":[3,1,6,7],
-"group__hal__addressable.html#ga9ad80c485f7e10e8c90ad187786b3c94":[3,1,6,6]
+"group__hal__accelerometer.html#gaab1b5306437adfe98fb39a520477e528":[3,1,15,2]
 };

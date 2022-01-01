@@ -1,5 +1,13 @@
 var NAVTREEINDEX119 =
 {
+"namespace_eigen_1_1bfloat16__impl.html#ac9f6a8c5c1420c1418e70cd02459e20a":[4,0,7,1,21],
+"namespace_eigen_1_1bfloat16__impl.html#ad04be92982355cc746d9d02ae4379fb0":[4,0,7,1,40],
+"namespace_eigen_1_1bfloat16__impl.html#ad42a51b3750fb0a6161ade50aaf1fd3d":[4,0,7,1,33],
+"namespace_eigen_1_1bfloat16__impl.html#ad564417257334c6bbf88e3c4ff7998d4":[4,0,7,1,14],
+"namespace_eigen_1_1bfloat16__impl.html#ad5ba186f2cbed8bfb9d7ba1f4558ddd8":[4,0,7,1,60],
+"namespace_eigen_1_1bfloat16__impl.html#ad9e04699aea5b9eae8f72e47a12d7603":[4,0,7,1,29],
+"namespace_eigen_1_1bfloat16__impl.html#ade393b7acf30f289f3878e4ac3d3f13b":[4,0,7,1,47],
+"namespace_eigen_1_1bfloat16__impl.html#ae3e24591612c31c6123874d169b58f8e":[4,0,7,1,57],
 "namespace_eigen_1_1bfloat16__impl.html#aee9777241ebcdcb8bf45b6d9c79ba98b":[4,0,7,1,32],
 "namespace_eigen_1_1bfloat16__impl.html#af2f40bace0a2447ca623a1d823e4cd52":[4,0,7,1,36],
 "namespace_eigen_1_1bfloat16__impl.html#af649d3ac4a2848cc81459a243eb1f7b1":[4,0,7,1,20],
@@ -241,13 +249,5 @@ var NAVTREEINDEX119 =
 "namespace_eigen_1_1internal.html#a17db1017816cbbca4bfa964a86140713":[4,0,7,4,1772],
 "namespace_eigen_1_1internal.html#a1870ae734340f0ef9640d59dc98b9df4":[4,0,7,4,2378],
 "namespace_eigen_1_1internal.html#a1896c0953e091890d45773c726c5001d":[4,0,7,4,3042],
-"namespace_eigen_1_1internal.html#a18ca97a81e769f4679706703b17f2e9f":[4,0,7,4,2102],
-"namespace_eigen_1_1internal.html#a190c34785e0f92dea3f8786b8330063a":[4,0,7,4,2526],
-"namespace_eigen_1_1internal.html#a1910eee131fbacbd1f069d6e0758eb3a":[4,0,7,4,2018],
-"namespace_eigen_1_1internal.html#a1917d6b5169a665e5a3eeb432d31124e":[4,0,7,4,1942],
-"namespace_eigen_1_1internal.html#a1930153f67ba4a0633ba03a00bab6c61":[4,0,7,4,1962],
-"namespace_eigen_1_1internal.html#a194449110f9ba42a049b2a41e5730edc":[4,0,7,4,2160],
-"namespace_eigen_1_1internal.html#a199c447b5f7d2696177268d5936c8144":[4,0,7,4,2970],
-"namespace_eigen_1_1internal.html#a1a03bc1a2d76351d72fc53d2d4bed1e5":[4,0,7,4,1596],
-"namespace_eigen_1_1internal.html#a1a0570833e5374772ff9afd06537e1a8":[4,0,7,4,1517]
+"namespace_eigen_1_1internal.html#a18ca97a81e769f4679706703b17f2e9f":[4,0,7,4,2102]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX169 =
 {
+"structfrc_1_1_p_s4_controller_1_1_button.html#a277e67c0f719e90494700d1dd29d6782":[4,0,9,148,1,12],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a277e67c0f719e90494700d1dd29d6782":[5,0,6,144,1,12],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a2f08c343289e971faf79ed12a13a1330":[5,0,6,144,1,4],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a2f08c343289e971faf79ed12a13a1330":[4,0,9,148,1,4],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a32066c4be493794d4d50786cb360399b":[5,0,6,144,1,7],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a32066c4be493794d4d50786cb360399b":[4,0,9,148,1,7],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a3ef9242075705f19f8238090e855ac87":[5,0,6,144,1,13],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a3ef9242075705f19f8238090e855ac87":[4,0,9,148,1,13],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a4998f9ba861b99d6f6e2968b7b5316be":[4,0,9,148,1,11],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a4998f9ba861b99d6f6e2968b7b5316be":[5,0,6,144,1,11],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a4f5ffbc84d9329ad07c6d94fff42d4df":[5,0,6,144,1,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX169 =
 "structfrc_1_1_swerve_module_state.html#a686b128ca4f86f83788ef08024523fa8":[4,0,9,206,2],
 "structfrc_1_1_swerve_module_state.html#a686b128ca4f86f83788ef08024523fa8":[5,0,6,202,2],
 "structfrc_1_1_swerve_module_state.html#ab8c668b9aaea89c1ce37502c09c18c0c":[5,0,6,202,1],
-"structfrc_1_1_swerve_module_state.html#ab8c668b9aaea89c1ce37502c09c18c0c":[4,0,9,206,1],
-"structfrc_1_1_trajectory_1_1_state.html":[5,0,6,213,0],
-"structfrc_1_1_trajectory_1_1_state.html":[4,0,9,217,0],
-"structfrc_1_1_trajectory_1_1_state.html#a39de4bdb853c7885f92bb6a037ddddee":[4,0,9,217,0,5],
-"structfrc_1_1_trajectory_1_1_state.html#a39de4bdb853c7885f92bb6a037ddddee":[5,0,6,213,0,5],
-"structfrc_1_1_trajectory_1_1_state.html#a479e2d7059f93e95469348dbde773268":[5,0,6,213,0,0],
-"structfrc_1_1_trajectory_1_1_state.html#a479e2d7059f93e95469348dbde773268":[4,0,9,217,0,0],
-"structfrc_1_1_trajectory_1_1_state.html#a4c937c0b44ec69c1be69394b2a5d137c":[5,0,6,213,0,7],
-"structfrc_1_1_trajectory_1_1_state.html#a4c937c0b44ec69c1be69394b2a5d137c":[4,0,9,217,0,7]
+"structfrc_1_1_swerve_module_state.html#ab8c668b9aaea89c1ce37502c09c18c0c":[4,0,9,206,1]
 };

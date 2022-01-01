@@ -1,5 +1,13 @@
 var NAVTREEINDEX149 =
 {
+"struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_wrapper_3_01_t_01_4_01_4.html":[5,0,4,2,612],
+"struct_eigen_1_1internal_1_1is__exp__known__type.html":[4,0,7,4,615],
+"struct_eigen_1_1internal_1_1is__exp__known__type.html":[5,0,4,2,613],
+"struct_eigen_1_1internal_1_1is__exp__known__type_3_01double_01_4.html":[5,0,4,2,614],
+"struct_eigen_1_1internal_1_1is__exp__known__type_3_01double_01_4.html":[4,0,7,4,616],
+"struct_eigen_1_1internal_1_1is__exp__known__type_3_01float_01_4.html":[5,0,4,2,615],
+"struct_eigen_1_1internal_1_1is__exp__known__type_3_01float_01_4.html":[4,0,7,4,617],
+"struct_eigen_1_1internal_1_1is__exp__known__type_3_01long_01double_01_4.html":[5,0,4,2,616],
 "struct_eigen_1_1internal_1_1is__exp__known__type_3_01long_01double_01_4.html":[4,0,7,4,618],
 "struct_eigen_1_1internal_1_1is__identity.html":[5,0,4,2,617],
 "struct_eigen_1_1internal_1_1is__identity.html":[4,0,7,4,619],
@@ -241,13 +249,5 @@ var NAVTREEINDEX149 =
 "struct_eigen_1_1internal_1_1log1p__retval.html#ad20e438f9c73d391972259df9fa21c06":[4,0,7,4,671,0],
 "struct_eigen_1_1internal_1_1log__impl.html":[4,0,7,4,672],
 "struct_eigen_1_1internal_1_1log__impl.html":[5,0,4,2,670],
-"struct_eigen_1_1internal_1_1log__impl.html#a3c0e319db1ec5bcfa661aeb4d7daa55d":[5,0,4,2,670,0],
-"struct_eigen_1_1internal_1_1log__impl.html#a3c0e319db1ec5bcfa661aeb4d7daa55d":[4,0,7,4,672,0],
-"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html":[5,0,4,2,671],
-"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html":[4,0,7,4,673],
-"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html#ab61aa51563b64a47e62da360812f9b2f":[5,0,4,2,671,0],
-"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html#ab61aa51563b64a47e62da360812f9b2f":[4,0,7,4,673,0],
-"struct_eigen_1_1internal_1_1lp_norm__selector.html":[4,0,7,4,674],
-"struct_eigen_1_1internal_1_1lp_norm__selector.html":[5,0,4,2,672],
-"struct_eigen_1_1internal_1_1lp_norm__selector.html#a0b5f864c870840d664e36fa33239aed8":[5,0,4,2,672,1]
+"struct_eigen_1_1internal_1_1log__impl.html#a3c0e319db1ec5bcfa661aeb4d7daa55d":[5,0,4,2,670,0]
 };

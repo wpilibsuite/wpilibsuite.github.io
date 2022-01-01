@@ -1,5 +1,13 @@
 var NAVTREEINDEX167 =
 {
+"structdetail_1_1counting__iterator_1_1value__type.html":[4,0,3,9,0],
+"structdetail_1_1counting__iterator_1_1value__type.html#a74a217ed69d29ecacf3ee8c13e68102b":[4,0,3,9,0,0],
+"structdetail_1_1counting__iterator_1_1value__type.html#a74a217ed69d29ecacf3ee8c13e68102b":[5,0,1,8,0,0],
+"structdetail_1_1dragonbox_1_1cache__accessor.html":[5,0,1,0,0],
+"structdetail_1_1dragonbox_1_1cache__accessor.html":[4,0,3,1,0],
+"structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html":[5,0,1,0,1],
+"structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html":[4,0,3,1,1],
+"structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a095ce431daa7b2683b33125d0a3ee873":[4,0,3,1,1,8],
 "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a095ce431daa7b2683b33125d0a3ee873":[5,0,1,0,1,8],
 "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a0e5b419d37e746cb7f44d38a61883a9a":[5,0,1,0,1,4],
 "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a0e5b419d37e746cb7f44d38a61883a9a":[4,0,3,1,1,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX167 =
 "structdragonbox_1_1float__info_3_01float_01_4.html#a8841e713f9fc7d0c37b3a5bb187c468c":[4,0,5,3,7],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a911eab5205c78be0e2e0a1567a1d2b3b":[4,0,5,3,3],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a911eab5205c78be0e2e0a1567a1d2b3b":[5,0,2,3,3],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a981c1dff6331cee782417a864a57b33c":[5,0,2,3,2],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a981c1dff6331cee782417a864a57b33c":[4,0,5,3,2],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a9cce74756bd380756e6d62cc177f7c11":[4,0,5,3,18],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a9cce74756bd380756e6d62cc177f7c11":[5,0,2,3,18],
-"structdragonbox_1_1float__info_3_01float_01_4.html#ab0fb2514a0a9e0c2381513d5df6a7ee7":[4,0,5,3,9],
-"structdragonbox_1_1float__info_3_01float_01_4.html#ab0fb2514a0a9e0c2381513d5df6a7ee7":[5,0,2,3,9],
-"structdragonbox_1_1float__info_3_01float_01_4.html#ab7b21ace649cecc2433ea913d89786bf":[4,0,5,3,10],
-"structdragonbox_1_1float__info_3_01float_01_4.html#ab7b21ace649cecc2433ea913d89786bf":[5,0,2,3,10],
-"structdragonbox_1_1float__info_3_01float_01_4.html#ac0b86f95ebbafcb49a07a5451188c560":[4,0,5,3,8]
+"structdragonbox_1_1float__info_3_01float_01_4.html#a981c1dff6331cee782417a864a57b33c":[5,0,2,3,2]
 };

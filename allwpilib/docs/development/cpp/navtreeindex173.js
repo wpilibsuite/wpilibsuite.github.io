@@ -1,5 +1,13 @@
 var NAVTREEINDEX173 =
 {
+"structwpi_1_1_dense_map_info.html":[4,0,20,30],
+"structwpi_1_1_dense_map_info.html":[5,0,13,28],
+"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html":[5,0,13,34],
+"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html":[4,0,20,36],
+"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[5,0,13,34,2],
+"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[4,0,20,36,2],
+"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1cefdfe148903820fb6f94d2a54e06d0":[5,0,13,34,3],
+"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1cefdfe148903820fb6f94d2a54e06d0":[4,0,20,36,3],
 "structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a2f759dea970e7542d4786687d56011ec":[5,0,13,34,1],
 "structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a2f759dea970e7542d4786687d56011ec":[4,0,20,36,1],
 "structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#abdfa39293344d439b86e7eef8a651559":[4,0,20,36,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX173 =
 "structwpi_1_1_pointer_like_type_traits_3_01const_01_t_01_5_01_4.html#ad6d78a0405a5cf940dbc5b04c0beb526":[4,0,20,95,0],
 "structwpi_1_1_pointer_like_type_traits_3_01const_01_t_01_5_01_4.html#ad6d78a0405a5cf940dbc5b04c0beb526":[5,0,13,93,0],
 "structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html":[5,0,13,101],
-"structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html":[4,0,20,103],
-"structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html#a237c50fbcd76178621196b2cc14ddd55":[5,0,13,101,0],
-"structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html#a237c50fbcd76178621196b2cc14ddd55":[4,0,20,103,0],
-"structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html#a6305826cf0bddb1465d58bb3cc51439f":[5,0,13,101,1],
-"structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html#a6305826cf0bddb1465d58bb3cc51439f":[4,0,20,103,1],
-"structwpi_1_1_pointer_like_type_traits_3_01void_01_5_01_4.html":[5,0,13,102],
-"structwpi_1_1_pointer_like_type_traits_3_01void_01_5_01_4.html":[4,0,20,104],
-"structwpi_1_1_pointer_like_type_traits_3_01void_01_5_01_4.html#a3b2a20200006babdcf76e6ee48571fd7":[5,0,13,102,0],
-"structwpi_1_1_pointer_like_type_traits_3_01void_01_5_01_4.html#a3b2a20200006babdcf76e6ee48571fd7":[4,0,20,104,0]
+"structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html":[4,0,20,103]
 };

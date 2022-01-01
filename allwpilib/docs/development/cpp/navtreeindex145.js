@@ -1,5 +1,13 @@
 var NAVTREEINDEX145 =
 {
+"struct_eigen_1_1internal_1_1functor__traits_3_01bind1st__op_3_01_binary_op_01_4_01_4.html":[4,0,7,4,333],
+"struct_eigen_1_1internal_1_1functor__traits_3_01bind2nd__op_3_01_binary_op_01_4_01_4.html":[5,0,4,2,332],
+"struct_eigen_1_1internal_1_1functor__traits_3_01bind2nd__op_3_01_binary_op_01_4_01_4.html":[4,0,7,4,334],
+"struct_eigen_1_1internal_1_1functor__traits_3_01div__assign__op_3_01_dst_scalar_00_01_src_scalar_01_4_01_4.html":[4,0,7,4,335],
+"struct_eigen_1_1internal_1_1functor__traits_3_01div__assign__op_3_01_dst_scalar_00_01_src_scalar_01_4_01_4.html":[5,0,4,2,333],
+"struct_eigen_1_1internal_1_1functor__traits_3_01linspaced__op_3_01_scalar_01_4_01_4.html":[4,0,7,4,336],
+"struct_eigen_1_1internal_1_1functor__traits_3_01linspaced__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,334],
+"struct_eigen_1_1internal_1_1functor__traits_3_01max__coeff__visitor_3_01_scalar_00_01_na_n_propagation_01_4_01_4.html":[5,0,4,2,335],
 "struct_eigen_1_1internal_1_1functor__traits_3_01max__coeff__visitor_3_01_scalar_00_01_na_n_propagation_01_4_01_4.html":[4,0,7,4,337],
 "struct_eigen_1_1internal_1_1functor__traits_3_01min__coeff__visitor_3_01_scalar_00_01_na_n_propagation_01_4_01_4.html":[4,0,7,4,338],
 "struct_eigen_1_1internal_1_1functor__traits_3_01min__coeff__visitor_3_01_scalar_00_01_na_n_propagation_01_4_01_4.html":[5,0,4,2,336],
@@ -241,13 +249,5 @@ var NAVTREEINDEX145 =
 "struct_eigen_1_1internal_1_1gebp__kernel.html#ae56f4e92199b3f1bae0e833a1fd1b2ba":[4,0,7,4,431,1],
 "struct_eigen_1_1internal_1_1gebp__kernel.html#af92bc35edc7da33d13ddf48317d871e8":[5,0,4,2,429,8],
 "struct_eigen_1_1internal_1_1gebp__kernel.html#af92bc35edc7da33d13ddf48317d871e8":[4,0,7,4,431,8],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#afd8f51fe544ebb1106bbae9698f8a1de":[5,0,4,2,429,25],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#afd8f51fe544ebb1106bbae9698f8a1de":[4,0,7,4,431,25],
-"struct_eigen_1_1internal_1_1gemm__functor.html":[5,0,4,2,437],
-"struct_eigen_1_1internal_1_1gemm__functor.html":[4,0,7,4,439],
-"struct_eigen_1_1internal_1_1gemm__functor.html#a0a5d7ecf3c8912fd58586b29f8649def":[5,0,4,2,437,6],
-"struct_eigen_1_1internal_1_1gemm__functor.html#a0a5d7ecf3c8912fd58586b29f8649def":[4,0,7,4,439,6],
-"struct_eigen_1_1internal_1_1gemm__functor.html#a10901ca9388438219a91c0968e8118d9":[4,0,7,4,439,2],
-"struct_eigen_1_1internal_1_1gemm__functor.html#a10901ca9388438219a91c0968e8118d9":[5,0,4,2,437,2],
-"struct_eigen_1_1internal_1_1gemm__functor.html#a1dbea6badf09fbba36dc310601e31a77":[4,0,7,4,439,8]
+"struct_eigen_1_1internal_1_1gebp__kernel.html#afd8f51fe544ebb1106bbae9698f8a1de":[5,0,4,2,429,25]
 };

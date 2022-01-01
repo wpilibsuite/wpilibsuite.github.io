@@ -1,5 +1,13 @@
 var NAVTREEINDEX150 =
 {
+"struct_eigen_1_1internal_1_1log__impl.html#a3c0e319db1ec5bcfa661aeb4d7daa55d":[4,0,7,4,672,0],
+"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html":[5,0,4,2,671],
+"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html":[4,0,7,4,673],
+"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html#ab61aa51563b64a47e62da360812f9b2f":[5,0,4,2,671,0],
+"struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html#ab61aa51563b64a47e62da360812f9b2f":[4,0,7,4,673,0],
+"struct_eigen_1_1internal_1_1lp_norm__selector.html":[4,0,7,4,674],
+"struct_eigen_1_1internal_1_1lp_norm__selector.html":[5,0,4,2,672],
+"struct_eigen_1_1internal_1_1lp_norm__selector.html#a0b5f864c870840d664e36fa33239aed8":[5,0,4,2,672,1],
 "struct_eigen_1_1internal_1_1lp_norm__selector.html#a0b5f864c870840d664e36fa33239aed8":[4,0,7,4,674,1],
 "struct_eigen_1_1internal_1_1lp_norm__selector.html#add3e153759c6287e7aab897115e7b94d":[5,0,4,2,672,0],
 "struct_eigen_1_1internal_1_1lp_norm__selector.html#add3e153759c6287e7aab897115e7b94d":[4,0,7,4,674,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX150 =
 "struct_eigen_1_1internal_1_1member__redux.html#a4d57150e134ce927dc14db74515e338e":[4,0,7,4,722,3],
 "struct_eigen_1_1internal_1_1member__redux.html#a75253fa1a8b741b7f73d621c406b8f22":[5,0,4,2,720,5],
 "struct_eigen_1_1internal_1_1member__redux.html#a75253fa1a8b741b7f73d621c406b8f22":[4,0,7,4,722,5],
-"struct_eigen_1_1internal_1_1member__redux.html#a92be8433c2f8faaa694899e03019eb18":[5,0,4,2,720,1],
-"struct_eigen_1_1internal_1_1member__redux.html#a92be8433c2f8faaa694899e03019eb18":[4,0,7,4,722,1],
-"struct_eigen_1_1internal_1_1member__redux.html#aa66a3fa1b5113305a12d3e4113cf0a8b":[4,0,7,4,722,4],
-"struct_eigen_1_1internal_1_1member__redux.html#aa66a3fa1b5113305a12d3e4113cf0a8b":[5,0,4,2,720,4],
-"struct_eigen_1_1internal_1_1member__redux.html#aceddf7572cdbea5cf331b62d03f9aaf2":[5,0,4,2,720,6],
-"struct_eigen_1_1internal_1_1member__redux.html#aceddf7572cdbea5cf331b62d03f9aaf2":[4,0,7,4,722,6],
-"struct_eigen_1_1internal_1_1member__redux_1_1_cost.html":[4,0,7,4,722,0],
-"struct_eigen_1_1internal_1_1member__redux_1_1_cost.html":[5,0,4,2,720,0],
-"struct_eigen_1_1internal_1_1meta__floor__log2.html":[5,0,4,2,721]
+"struct_eigen_1_1internal_1_1member__redux.html#a92be8433c2f8faaa694899e03019eb18":[5,0,4,2,720,1]
 };

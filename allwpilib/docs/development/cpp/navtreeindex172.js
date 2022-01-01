@@ -1,5 +1,13 @@
 var NAVTREEINDEX172 =
 {
+"structunits_1_1traits_1_1is__unit__t.html":[3,21,6],
+"structunits_1_1traits_1_1is__unit__value__t.html":[3,21,10],
+"structunits_1_1traits_1_1is__unit__value__t__category.html":[3,21,11],
+"structunits_1_1unit.html":[3,16,1],
+"structunits_1_1unit.html#a0cdaa6959c83b6ddb1038d99a31e7814":[3,16,1,3],
+"structunits_1_1unit.html#a0f2b640f43170629369706775699fdbe":[3,16,1,1],
+"structunits_1_1unit.html#a80a7bfacd08e44750f2f00789705c7b4":[3,16,1,0],
+"structunits_1_1unit.html#aadc106afe2fedc05c154ff9f2c16025f":[3,16,1,2],
 "structunits_1_1unit__value__add.html":[3,18,0],
 "structunits_1_1unit__value__add.html#ac99c4648bc63c4b4b279bfd04fc9c33a":[3,18,0,0],
 "structunits_1_1unit__value__divide.html":[3,18,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX172 =
 "structwpi_1_1_callback_thread_1_1_poller.html#a981d05b774f9a1e755579508f4a3e546":[4,0,20,22,0,1],
 "structwpi_1_1_callback_thread_1_1_poller.html#a981d05b774f9a1e755579508f4a3e546":[5,0,13,20,0,1],
 "structwpi_1_1_callback_thread_1_1_poller.html#ad60592b664c738ccdd0f112319edc6df":[5,0,13,20,0,5],
-"structwpi_1_1_callback_thread_1_1_poller.html#ad60592b664c738ccdd0f112319edc6df":[4,0,20,22,0,5],
-"structwpi_1_1_dense_map_info.html":[4,0,20,30],
-"structwpi_1_1_dense_map_info.html":[5,0,13,28],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html":[5,0,13,34],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html":[4,0,20,36],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[5,0,13,34,2],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[4,0,20,36,2],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1cefdfe148903820fb6f94d2a54e06d0":[5,0,13,34,3],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1cefdfe148903820fb6f94d2a54e06d0":[4,0,20,36,3]
+"structwpi_1_1_callback_thread_1_1_poller.html#ad60592b664c738ccdd0f112319edc6df":[4,0,20,22,0,5]
 };

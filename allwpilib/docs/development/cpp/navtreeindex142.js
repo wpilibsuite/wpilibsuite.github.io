@@ -1,5 +1,13 @@
 var NAVTREEINDEX142 =
 {
+"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling.html#a7bd34f0aaff97549c85930302f539eef":[5,0,4,2,191,0],
+"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling_3_01_kernel_00_01f9638de23111656da8d7300be7918511.html":[5,0,4,2,192],
+"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling_3_01_kernel_00_01f9638de23111656da8d7300be7918511.html":[4,0,7,4,194],
+"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling_3_01_kernel_00_01f9638de23111656da8d7300be7918511.html#aa4b8cc41b2fd619fa21cb57414053b68":[5,0,4,2,192,0],
+"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling_3_01_kernel_00_01f9638de23111656da8d7300be7918511.html#aa4b8cc41b2fd619fa21cb57414053b68":[4,0,7,4,194,0],
+"struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html":[5,0,4,2,195],
+"struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html":[4,0,7,4,197],
+"struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html#aa9716330cd953312b26506a8eccce6c2":[5,0,4,2,195,0],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html#aa9716330cd953312b26506a8eccce6c2":[4,0,7,4,197,0],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html#aaba77950701aef241d3f7e51e11a8c8a":[5,0,4,2,195,2],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html#aaba77950701aef241d3f7e51e11a8c8a":[4,0,7,4,197,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX142 =
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html#add17fe1edd4a4b44cc5fe474cba7d01b":[5,0,4,2,249,0],
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html#af6474d747b93b9e3a6f0519631a2c6ea":[4,0,7,4,251,5],
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html#af6474d747b93b9e3a6f0519631a2c6ea":[5,0,4,2,249,5],
-"struct_eigen_1_1internal_1_1eigenvalues__selector.html":[5,0,4,2,251],
-"struct_eigen_1_1internal_1_1eigenvalues__selector.html":[4,0,7,4,253],
-"struct_eigen_1_1internal_1_1eigenvalues__selector.html#af4bb5e5c01d16182d0faf9331e7abde7":[4,0,7,4,253,0],
-"struct_eigen_1_1internal_1_1eigenvalues__selector.html#af4bb5e5c01d16182d0faf9331e7abde7":[5,0,4,2,251,0],
-"struct_eigen_1_1internal_1_1eigenvalues__selector_3_01_derived_00_01false_01_4.html":[4,0,7,4,254],
-"struct_eigen_1_1internal_1_1eigenvalues__selector_3_01_derived_00_01false_01_4.html":[5,0,4,2,252],
-"struct_eigen_1_1internal_1_1eigenvalues__selector_3_01_derived_00_01false_01_4.html#a393e414b671b1279ea04e9bc0f7b2a7f":[4,0,7,4,254,0],
-"struct_eigen_1_1internal_1_1eigenvalues__selector_3_01_derived_00_01false_01_4.html#a393e414b671b1279ea04e9bc0f7b2a7f":[5,0,4,2,252,0],
-"struct_eigen_1_1internal_1_1enable__if.html":[4,0,7,4,255]
+"struct_eigen_1_1internal_1_1eigenvalues__selector.html":[5,0,4,2,251]
 };

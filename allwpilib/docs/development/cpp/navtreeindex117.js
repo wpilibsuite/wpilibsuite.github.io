@@ -1,5 +1,13 @@
 var NAVTREEINDEX117 =
 {
+"hal_2src_2main_2native_2include_2hal_2_power_distribution_8h.html":[6,0,9,36],
+"hal_2src_2main_2native_2include_2hal_2_power_distribution_8h_source.html":[6,0,9,36],
+"hal_2src_2main_2native_2include_2hal_2_relay_8h.html":[6,0,9,38],
+"hal_2src_2main_2native_2include_2hal_2_relay_8h_source.html":[6,0,9,38],
+"hal_2src_2main_2native_2include_2hal_2_s_p_i_8h.html":[6,0,9,42],
+"hal_2src_2main_2native_2include_2hal_2_s_p_i_8h_source.html":[6,0,9,42],
+"hal_2src_2main_2native_2include_2hal_2_serial_port_8h.html":[6,0,9,40],
+"hal_2src_2main_2native_2include_2hal_2_serial_port_8h_source.html":[6,0,9,40],
 "hal_2src_2main_2native_2include_2hal_2_threads_8h.html":[6,0,9,44],
 "hal_2src_2main_2native_2include_2hal_2_threads_8h_source.html":[6,0,9,44],
 "hierarchy.html":[5,2],
@@ -8,8 +16,8 @@ var NAVTREEINDEX117 =
 "hostname_8h.html#a9adbe1d3698433c32c8b78b84f582a5b":[6,0,14,32,0],
 "hostname_8h_source.html":[6,0,14,32],
 "http__parser_8h.html":[6,0,14,33],
-"http__parser_8h.html#a001751e2abb71763b08651bec986b6f7":[6,0,14,33,13],
 "http__parser_8h.html#a001751e2abb71763b08651bec986b6f7":[6,0,14,33,14],
+"http__parser_8h.html#a001751e2abb71763b08651bec986b6f7":[6,0,14,33,13],
 "http__parser_8h.html#a062873fd30d66c26468d4f1bd73e2976":[6,0,14,33,6],
 "http__parser_8h.html#a0e56bd09798339ac4f86d36eb8ecea0b":[6,0,14,33,18],
 "http__parser_8h.html#a1285c84e98d61b7f161a2213dd9f7940":[6,0,14,33,33],
@@ -241,13 +249,5 @@ var NAVTREEINDEX117 =
 "libuv_2include_2uv_2_errno_8h.html#a6f2515e76953f05040a8b99557136554":[6,0,10,0,0,3,10],
 "libuv_2include_2uv_2_errno_8h.html#a6f454948ec4356e0cb386e635c9b9134":[6,0,10,0,0,3,68],
 "libuv_2include_2uv_2_errno_8h.html#a71c825692a8704dbabddbed12e2c19e2":[6,0,10,0,0,3,0],
-"libuv_2include_2uv_2_errno_8h.html#a752982839fbefbbcd4d67818e83c4d73":[6,0,10,0,0,3,11],
-"libuv_2include_2uv_2_errno_8h.html#a7a1ab8875f6ca88962a201fbfde10307":[6,0,10,0,0,3,50],
-"libuv_2include_2uv_2_errno_8h.html#a7ae7ddc2102d035fe11d321a70e896d4":[6,0,10,0,0,3,49],
-"libuv_2include_2uv_2_errno_8h.html#a7ebe539be627c99baf5ce6786c998f9f":[6,0,10,0,0,3,77],
-"libuv_2include_2uv_2_errno_8h.html#a80129b7c12767c04e2a3cbe1029c1b26":[6,0,10,0,0,3,37],
-"libuv_2include_2uv_2_errno_8h.html#a805ce1ab21c9fcbc2c54b414f5bd7828":[6,0,10,0,0,3,75],
-"libuv_2include_2uv_2_errno_8h.html#a8208f498559d1f06574fb3ea41da855a":[6,0,10,0,0,3,69],
-"libuv_2include_2uv_2_errno_8h.html#a87fc11b4c3775c7c66513bd16cd318de":[6,0,10,0,0,3,35],
-"libuv_2include_2uv_2_errno_8h.html#a88564da337a15d01545d3722db52431a":[6,0,10,0,0,3,46]
+"libuv_2include_2uv_2_errno_8h.html#a752982839fbefbbcd4d67818e83c4d73":[6,0,10,0,0,3,11]
 };

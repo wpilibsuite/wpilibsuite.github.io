@@ -1,5 +1,13 @@
 var NAVTREEINDEX168 =
 {
+"structdragonbox_1_1float__info_3_01float_01_4.html#a981c1dff6331cee782417a864a57b33c":[4,0,5,3,2],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a9cce74756bd380756e6d62cc177f7c11":[4,0,5,3,18],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a9cce74756bd380756e6d62cc177f7c11":[5,0,2,3,18],
+"structdragonbox_1_1float__info_3_01float_01_4.html#ab0fb2514a0a9e0c2381513d5df6a7ee7":[4,0,5,3,9],
+"structdragonbox_1_1float__info_3_01float_01_4.html#ab0fb2514a0a9e0c2381513d5df6a7ee7":[5,0,2,3,9],
+"structdragonbox_1_1float__info_3_01float_01_4.html#ab7b21ace649cecc2433ea913d89786bf":[4,0,5,3,10],
+"structdragonbox_1_1float__info_3_01float_01_4.html#ab7b21ace649cecc2433ea913d89786bf":[5,0,2,3,10],
+"structdragonbox_1_1float__info_3_01float_01_4.html#ac0b86f95ebbafcb49a07a5451188c560":[4,0,5,3,8],
 "structdragonbox_1_1float__info_3_01float_01_4.html#ac0b86f95ebbafcb49a07a5451188c560":[5,0,2,3,8],
 "structdragonbox_1_1float__info_3_01float_01_4.html#ac805b612bb9410980184394034c1fc78":[4,0,5,3,22],
 "structdragonbox_1_1float__info_3_01float_01_4.html#ac805b612bb9410980184394034c1fc78":[5,0,2,3,22],
@@ -241,13 +249,5 @@ var NAVTREEINDEX168 =
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[5,0,6,144,0,2],
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[4,0,9,148,0,2],
 "structfrc_1_1_p_s4_controller_1_1_button.html":[5,0,6,144,1],
-"structfrc_1_1_p_s4_controller_1_1_button.html":[4,0,9,148,1],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a277e67c0f719e90494700d1dd29d6782":[4,0,9,148,1,12],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a277e67c0f719e90494700d1dd29d6782":[5,0,6,144,1,12],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a2f08c343289e971faf79ed12a13a1330":[5,0,6,144,1,4],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a2f08c343289e971faf79ed12a13a1330":[4,0,9,148,1,4],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a32066c4be493794d4d50786cb360399b":[5,0,6,144,1,7],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a32066c4be493794d4d50786cb360399b":[4,0,9,148,1,7],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a3ef9242075705f19f8238090e855ac87":[5,0,6,144,1,13],
-"structfrc_1_1_p_s4_controller_1_1_button.html#a3ef9242075705f19f8238090e855ac87":[4,0,9,148,1,13]
+"structfrc_1_1_p_s4_controller_1_1_button.html":[4,0,9,148,1]
 };

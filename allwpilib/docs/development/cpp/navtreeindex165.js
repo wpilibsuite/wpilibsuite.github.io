@@ -1,5 +1,13 @@
 var NAVTREEINDEX165 =
 {
+"struct_h_a_l___joystick_descriptor.html#a15fc9338bfe07981f2fc19424b229223":[3,1,32,4,6],
+"struct_h_a_l___joystick_descriptor.html#a1f06f84bae0b1781aa239419432911e0":[3,1,32,4,5],
+"struct_h_a_l___joystick_descriptor.html#a45192fc1fc352d02822cacd9f15bdc21":[3,1,32,4,1],
+"struct_h_a_l___joystick_descriptor.html#a62e581da1088320d7a96e3ca402c86f0":[3,1,32,4,0],
+"struct_h_a_l___joystick_descriptor.html#a76ad44b8f42ab4487fcd0ad29cb3552a":[3,1,32,4,4],
+"struct_h_a_l___joystick_descriptor.html#a99849a0f6e37c8c119f1d911384c5d2e":[3,1,32,4,2],
+"struct_h_a_l___joystick_descriptor.html#afc9f2c48582c93f9569c641da3d14802":[3,1,32,4,3],
+"struct_h_a_l___joystick_p_o_vs.html":[3,1,32,2],
 "struct_h_a_l___joystick_p_o_vs.html#a72965ba8cbcd5aad88057d326c1879ba":[3,1,32,2,0],
 "struct_h_a_l___joystick_p_o_vs.html#adc41b7cdd2e3dd216f919c7659e42d1e":[3,1,32,2,1],
 "struct_h_a_l___match_info.html":[3,1,32,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX165 =
 "structarg__formatter.html#a9cefc9d64ed03494749cb68d70db6292":[5,0,22,1],
 "structarg__mapper.html":[5,0,23],
 "structarg__mapper.html#a0e5fd42160aa65adb46c50c3d04920c8":[5,0,23,16],
-"structarg__mapper.html#a1682c2443b7892553ebb2c67b3ff76b7":[5,0,23,19],
-"structarg__mapper.html#a18e6814ea7234f853ea650a5c93ed71c":[5,0,23,18],
-"structarg__mapper.html#a1f8474167b9620300909fe20a6a2dcc5":[5,0,23,34],
-"structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798":[5,0,23,0],
-"structarg__mapper.html#a2b124d792d2d61cbf983df726e7300ae":[5,0,23,1],
-"structarg__mapper.html#a2cddbdef92190f4b9aaedd7142504d32":[5,0,23,15],
-"structarg__mapper.html#a2ed0800e69ed61072d381e8cebdbf8e7":[5,0,23,32],
-"structarg__mapper.html#a3904a7f58226a7d8b1bd6dfa756eb94a":[5,0,23,29],
-"structarg__mapper.html#a3a5ef81f5e3666d25aa64c49a92d736d":[5,0,23,4]
+"structarg__mapper.html#a1682c2443b7892553ebb2c67b3ff76b7":[5,0,23,19]
 };
