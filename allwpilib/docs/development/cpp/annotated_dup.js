@@ -1926,7 +1926,6 @@ var annotated_dup =
       [ "NetworkButton", "classfrc_1_1_network_button.html", "classfrc_1_1_network_button" ],
       [ "NidecBrushless", "classfrc_1_1_nidec_brushless.html", "classfrc_1_1_nidec_brushless" ],
       [ "Notifier", "classfrc_1_1_notifier.html", "classfrc_1_1_notifier" ],
-      [ "offset_data", "structfrc_1_1offset__data.html", "structfrc_1_1offset__data" ],
       [ "PIDAnalogAccelerometer", "classfrc_1_1_p_i_d_analog_accelerometer.html", "classfrc_1_1_p_i_d_analog_accelerometer" ],
       [ "PIDAnalogGyro", "classfrc_1_1_p_i_d_analog_gyro.html", "classfrc_1_1_p_i_d_analog_gyro" ],
       [ "PIDAnalogInput", "classfrc_1_1_p_i_d_analog_input.html", "classfrc_1_1_p_i_d_analog_input" ],

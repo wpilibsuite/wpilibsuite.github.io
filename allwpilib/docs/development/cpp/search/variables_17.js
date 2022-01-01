@@ -1,25 +1,6 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_eigen_1_1half__impl_1_1____half__raw.html#a75c6435aaa367f7b9b7cddd9f9981c09',1,'Eigen::half_impl::__half_raw::x()'],['../structfrc_1_1_vector2d.html#ae9c161cc01e7e5c36337ed42a79851a4',1,'frc::Vector2d::x()'],['../structfrc_1_1_spline_1_1_control_vector.html#a7fa1176e9fa0c34ab45d3baf168d75c6',1,'frc::Spline::ControlVector::x()']]],
-  ['x_5faccl_5flow_1',['X_ACCL_LOW',['../namespacefrc.html#a37eaf630b0a2ec224593b5bfa3f6df87',1,'frc']]],
-  ['x_5faccl_5fout_2',['X_ACCL_OUT',['../namespacefrc.html#aa7e2021c52c0548d501cb3ce02d9286c',1,'frc']]],
-  ['x_5fdeltang_5flow_3',['X_DELTANG_LOW',['../namespacefrc.html#af484c575b4576dec999a2c3286a00e8e',1,'frc']]],
-  ['x_5fdeltang_5fout_4',['X_DELTANG_OUT',['../namespacefrc.html#a5bf80bce788ccacc7b787b1ef7ae60e5',1,'frc']]],
-  ['x_5fdeltvel_5flow_5',['X_DELTVEL_LOW',['../namespacefrc.html#a82a391244f7e082fd8290b2f0b2c91cf',1,'frc']]],
-  ['x_5fdeltvel_5fout_6',['X_DELTVEL_OUT',['../namespacefrc.html#a53ea2aac9b04b869e2e5f6414aced1d8',1,'frc']]],
-  ['x_5fgyro_5flow_7',['X_GYRO_LOW',['../namespacefrc.html#ac73f7a63c9ad8f6b47841bc82e0e70d3',1,'frc']]],
-  ['x_5fgyro_5fout_8',['X_GYRO_OUT',['../namespacefrc.html#adfdc99383c421d6a57549d1ac79bc09d',1,'frc']]],
-  ['xa_5fbias_5fhigh_9',['XA_BIAS_HIGH',['../namespacefrc.html#a3b04e430f7a22dd88a8c2c88e7773b99',1,'frc']]],
-  ['xa_5fbias_5flow_10',['XA_BIAS_LOW',['../namespacefrc.html#ad855a2802bc529a7755380cef4f738cf',1,'frc']]],
-  ['xaccl_5foff_11',['XACCL_OFF',['../namespacefrc.html#a9736681b27256690b4f1736f30a3228f',1,'frc']]],
-  ['xaccl_5fout_12',['XACCL_OUT',['../namespacefrc.html#a4c7cc9f300b3ff5a6c9ea6ab53e25c23',1,'frc']]],
-  ['xaxis_13',['XAxis',['../structfrc_1_1_a_d_x_l362_1_1_all_axes.html#ae7ff073e5e548b74baab336e7c9a5fd3',1,'frc::ADXL362::AllAxes::XAxis()'],['../structfrc_1_1_a_d_x_l345___s_p_i_1_1_all_axes.html#ac3211539489b6d5fca9af190c1281b8a',1,'frc::ADXL345_SPI::AllAxes::XAxis()'],['../structfrc_1_1_a_d_x_l345___i2_c_1_1_all_axes.html#a34c6d1d49df56a7adb9a54e6db81ee5c',1,'frc::ADXL345_I2C::AllAxes::XAxis()']]],
-  ['xg_5fbias_5fhigh_14',['XG_BIAS_HIGH',['../namespacefrc.html#afae2c58d6548269fade1a55aee292bb4',1,'frc']]],
-  ['xg_5fbias_5flow_15',['XG_BIAS_LOW',['../namespacefrc.html#a73562fe1919e6bb76dac59238433f15e',1,'frc']]],
-  ['xgyro_5foff_16',['XGYRO_OFF',['../namespacefrc.html#ac7030337d9ea1f3a07278380a9b29c1e',1,'frc']]],
-  ['xgyro_5fout_17',['XGYRO_OUT',['../namespacefrc.html#aaa94cf97d086ec44e4e4ae517beb2e49',1,'frc']]],
-  ['xhat_18',['xHat',['../structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html#a33a0e2fecb2eb2d073998674e03f11f7',1,'frc::KalmanFilterLatencyCompensator::ObserverSnapshot']]],
-  ['xmagn_5fhic_19',['XMAGN_HIC',['../namespacefrc.html#afccdbc767c41d2b6f6ce27d7a6e2fbb8',1,'frc']]],
-  ['xmagn_5fout_20',['XMAGN_OUT',['../namespacefrc.html#a91357c807f875b674e38b60a6c101043',1,'frc']]],
-  ['xmagn_5fsic_21',['XMAGN_SIC',['../namespacefrc.html#ad439125d299bac3ac71180b9b2e46f27',1,'frc']]]
+  ['x_0',['x',['../structfrc_1_1_spline_1_1_control_vector.html#a7fa1176e9fa0c34ab45d3baf168d75c6',1,'frc::Spline::ControlVector::x()'],['../struct_eigen_1_1half__impl_1_1____half__raw.html#a75c6435aaa367f7b9b7cddd9f9981c09',1,'Eigen::half_impl::__half_raw::x()'],['../structfrc_1_1_vector2d.html#ae9c161cc01e7e5c36337ed42a79851a4',1,'frc::Vector2d::x()']]],
+  ['xaxis_1',['XAxis',['../structfrc_1_1_a_d_x_l345___i2_c_1_1_all_axes.html#a34c6d1d49df56a7adb9a54e6db81ee5c',1,'frc::ADXL345_I2C::AllAxes::XAxis()'],['../structfrc_1_1_a_d_x_l345___s_p_i_1_1_all_axes.html#ac3211539489b6d5fca9af190c1281b8a',1,'frc::ADXL345_SPI::AllAxes::XAxis()'],['../structfrc_1_1_a_d_x_l362_1_1_all_axes.html#ae7ff073e5e548b74baab336e7c9a5fd3',1,'frc::ADXL362::AllAxes::XAxis()']]],
+  ['xhat_2',['xHat',['../structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html#a33a0e2fecb2eb2d073998674e03f11f7',1,'frc::KalmanFilterLatencyCompensator::ObserverSnapshot']]]
 ];

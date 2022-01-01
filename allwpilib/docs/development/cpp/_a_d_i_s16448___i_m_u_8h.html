@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-29-gecee224</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-30-g112acb9</span>
    </div>
   </td>
  </tr>
@@ -94,8 +94,7 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_8h.html',''); in
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">ADIS16448_IMU.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -116,9 +115,6 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_8h.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1offset__data.html">frc::offset_data</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct to store offset data  <a href="structfrc_1_1offset__data.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html">frc::ADIS16448_IMU</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classfrc_1_1_d_m_a.html">DMA</a> <a class="el" href="classfrc_1_1_s_p_i.html" title="SPI bus interface class.">SPI</a> to read rate, acceleration, and magnetometer data from the ADIS16448 IMU and return the robots heading relative to a starting position, AHRS, and instant measurements.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,97 +128,6 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_d_i_s16448___i_m_u_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>&#160;&#160;&#160;3.14159265358979323846</td></tr>
 <tr class="separator:ae71449b1cc6e6250b91f539153a7a0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:aca9c85c19fee9fa92e64d427063b1627"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">frc::FLASH_CNT</a> = 0x00</td></tr>
-<tr class="memdesc:aca9c85c19fee9fa92e64d427063b1627"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADIS16448 Register Map Declaration.  <a href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">More...</a><br /></td></tr>
-<tr class="separator:aca9c85c19fee9fa92e64d427063b1627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa94cf97d086ec44e4e4ae517beb2e49"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aaa94cf97d086ec44e4e4ae517beb2e49">frc::XGYRO_OUT</a> = 0x04</td></tr>
-<tr class="separator:aaa94cf97d086ec44e4e4ae517beb2e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267c8a851e2f8f6cfb3204caabdabb65"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a267c8a851e2f8f6cfb3204caabdabb65">frc::YGYRO_OUT</a> = 0x06</td></tr>
-<tr class="separator:a267c8a851e2f8f6cfb3204caabdabb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dbcb72b45b09c003f6fed60c20c37c4"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7dbcb72b45b09c003f6fed60c20c37c4">frc::ZGYRO_OUT</a> = 0x08</td></tr>
-<tr class="separator:a7dbcb72b45b09c003f6fed60c20c37c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c7cc9f300b3ff5a6c9ea6ab53e25c23"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a4c7cc9f300b3ff5a6c9ea6ab53e25c23">frc::XACCL_OUT</a> = 0x0A</td></tr>
-<tr class="separator:a4c7cc9f300b3ff5a6c9ea6ab53e25c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bee329fb7a8f1c15dff62f36bc8c914"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5bee329fb7a8f1c15dff62f36bc8c914">frc::YACCL_OUT</a> = 0x0C</td></tr>
-<tr class="separator:a5bee329fb7a8f1c15dff62f36bc8c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a229cd1c295ca6d5d98fe6611688ac912"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a229cd1c295ca6d5d98fe6611688ac912">frc::ZACCL_OUT</a> = 0x0E</td></tr>
-<tr class="separator:a229cd1c295ca6d5d98fe6611688ac912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91357c807f875b674e38b60a6c101043"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a91357c807f875b674e38b60a6c101043">frc::XMAGN_OUT</a> = 0x10</td></tr>
-<tr class="separator:a91357c807f875b674e38b60a6c101043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163cc649e567608f0cefa88e9bb531cc"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a163cc649e567608f0cefa88e9bb531cc">frc::YMAGN_OUT</a> = 0x12</td></tr>
-<tr class="separator:a163cc649e567608f0cefa88e9bb531cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19cc0d2b395024f842e36b90c40ec594"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a19cc0d2b395024f842e36b90c40ec594">frc::ZMAGN_OUT</a> = 0x14</td></tr>
-<tr class="separator:a19cc0d2b395024f842e36b90c40ec594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7625dfd559401852a33473eb00a8ac"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ace7625dfd559401852a33473eb00a8ac">frc::BARO_OUT</a></td></tr>
-<tr class="separator:ace7625dfd559401852a33473eb00a8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae60be315bb3f292b75d928378964c422"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae60be315bb3f292b75d928378964c422">frc::TEMP_OUT</a> = 0x18</td></tr>
-<tr class="separator:ae60be315bb3f292b75d928378964c422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7030337d9ea1f3a07278380a9b29c1e"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac7030337d9ea1f3a07278380a9b29c1e">frc::XGYRO_OFF</a></td></tr>
-<tr class="separator:ac7030337d9ea1f3a07278380a9b29c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90a1b1999ec827a3fda0a2321132d07"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad90a1b1999ec827a3fda0a2321132d07">frc::YGYRO_OFF</a></td></tr>
-<tr class="separator:ad90a1b1999ec827a3fda0a2321132d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fda93e217e758dd97788fe39d5f5e58"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9fda93e217e758dd97788fe39d5f5e58">frc::ZGYRO_OFF</a></td></tr>
-<tr class="separator:a9fda93e217e758dd97788fe39d5f5e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9736681b27256690b4f1736f30a3228f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9736681b27256690b4f1736f30a3228f">frc::XACCL_OFF</a></td></tr>
-<tr class="separator:a9736681b27256690b4f1736f30a3228f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6c5803bcdf154b653784cd6de6b50d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5a6c5803bcdf154b653784cd6de6b50d">frc::YACCL_OFF</a></td></tr>
-<tr class="separator:a5a6c5803bcdf154b653784cd6de6b50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6de5e9bb79545fcc95481d0376df3ff"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af6de5e9bb79545fcc95481d0376df3ff">frc::ZACCL_OFF</a></td></tr>
-<tr class="separator:af6de5e9bb79545fcc95481d0376df3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afccdbc767c41d2b6f6ce27d7a6e2fbb8"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#afccdbc767c41d2b6f6ce27d7a6e2fbb8">frc::XMAGN_HIC</a></td></tr>
-<tr class="separator:afccdbc767c41d2b6f6ce27d7a6e2fbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5c1d5f63a8f91d1b497d9bdccee94fb"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa5c1d5f63a8f91d1b497d9bdccee94fb">frc::YMAGN_HIC</a></td></tr>
-<tr class="separator:aa5c1d5f63a8f91d1b497d9bdccee94fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c4e97a290138c4d9cc5cae588f222c9"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7c4e97a290138c4d9cc5cae588f222c9">frc::ZMAGN_HIC</a></td></tr>
-<tr class="separator:a7c4e97a290138c4d9cc5cae588f222c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad439125d299bac3ac71180b9b2e46f27"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad439125d299bac3ac71180b9b2e46f27">frc::XMAGN_SIC</a></td></tr>
-<tr class="separator:ad439125d299bac3ac71180b9b2e46f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246885d3631775fee4b9721913373139"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a246885d3631775fee4b9721913373139">frc::YMAGN_SIC</a></td></tr>
-<tr class="separator:a246885d3631775fee4b9721913373139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61c7614c9a1ca6a67754c107b220c32f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a61c7614c9a1ca6a67754c107b220c32f">frc::ZMAGN_SIC</a></td></tr>
-<tr class="separator:a61c7614c9a1ca6a67754c107b220c32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f0bde0ab143139a82b2ca53cbfb3bf"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af5f0bde0ab143139a82b2ca53cbfb3bf">frc::GPIO_CTRL</a> = 0x32</td></tr>
-<tr class="separator:af5f0bde0ab143139a82b2ca53cbfb3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f00eeb83cd11f2d36613e6b8a518c2b"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5f00eeb83cd11f2d36613e6b8a518c2b">frc::MSC_CTRL</a> = 0x34</td></tr>
-<tr class="separator:a5f00eeb83cd11f2d36613e6b8a518c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc46d9abff37dae5dc78179a8a5f826"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a8cc46d9abff37dae5dc78179a8a5f826">frc::SMPL_PRD</a></td></tr>
-<tr class="separator:a8cc46d9abff37dae5dc78179a8a5f826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad06abf235dd26e890ba899aef9cc5e1"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aad06abf235dd26e890ba899aef9cc5e1">frc::SENS_AVG</a> = 0x38</td></tr>
-<tr class="separator:aad06abf235dd26e890ba899aef9cc5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0207a4c9e95a04f3fd5f5d51228e2941"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0207a4c9e95a04f3fd5f5d51228e2941">frc::SEQ_CNT</a> = 0x3A</td></tr>
-<tr class="separator:a0207a4c9e95a04f3fd5f5d51228e2941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f8d7cf46056e732f0682013c267d9a"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a92f8d7cf46056e732f0682013c267d9a">frc::DIAG_STAT</a> = 0x3C</td></tr>
-<tr class="separator:a92f8d7cf46056e732f0682013c267d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cb2c87ebd39ee28804dfcf41ca6f46d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1cb2c87ebd39ee28804dfcf41ca6f46d">frc::GLOB_CMD</a> = 0x3E</td></tr>
-<tr class="separator:a1cb2c87ebd39ee28804dfcf41ca6f46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72977f7cc42f8a2dcbb6b5191c440d9d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a72977f7cc42f8a2dcbb6b5191c440d9d">frc::ALM_MAG1</a> = 0x40</td></tr>
-<tr class="separator:a72977f7cc42f8a2dcbb6b5191c440d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a16ae92c0c56fff40b98f5198ec5db0"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1a16ae92c0c56fff40b98f5198ec5db0">frc::ALM_MAG2</a> = 0x42</td></tr>
-<tr class="separator:a1a16ae92c0c56fff40b98f5198ec5db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a035b084605fcb91037483bb77bce9c66"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a035b084605fcb91037483bb77bce9c66">frc::ALM_SMPL1</a> = 0x44</td></tr>
-<tr class="separator:a035b084605fcb91037483bb77bce9c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af29d17ede760370fc892336a0a547263"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af29d17ede760370fc892336a0a547263">frc::ALM_SMPL2</a> = 0x46</td></tr>
-<tr class="separator:af29d17ede760370fc892336a0a547263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f">frc::ALM_CTRL</a> = 0x48</td></tr>
-<tr class="separator:ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a719b333ad5faacaf977c9c6d06c87537"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a719b333ad5faacaf977c9c6d06c87537">frc::LOT_ID1</a> = 0x52</td></tr>
-<tr class="separator:a719b333ad5faacaf977c9c6d06c87537"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89e673e5c591c7fe1606ef66db325318"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a89e673e5c591c7fe1606ef66db325318">frc::LOT_ID2</a> = 0x54</td></tr>
-<tr class="separator:a89e673e5c591c7fe1606ef66db325318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98cae000d2c5f3e8c0df54960bd63245"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a98cae000d2c5f3e8c0df54960bd63245">frc::PROD_ID</a> = 0x56</td></tr>
-<tr class="separator:a98cae000d2c5f3e8c0df54960bd63245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3bf7fd281c3cf04432ad42b2efc9e9"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2e3bf7fd281c3cf04432ad42b2efc9e9">frc::SERIAL_NUM</a> = 0x58</td></tr>
-<tr class="separator:a2e3bf7fd281c3cf04432ad42b2efc9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f128539f5e2d1cad934f175d2689f2"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af7f128539f5e2d1cad934f175d2689f2">frc::rad_to_deg</a> = 57.2957795</td></tr>
-<tr class="memdesc:af7f128539f5e2d1cad934f175d2689f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADIS16448 Static Constants.  <a href="namespacefrc.html#af7f128539f5e2d1cad934f175d2689f2">More...</a><br /></td></tr>
-<tr class="separator:af7f128539f5e2d1cad934f175d2689f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143e11a17a1e19be14ddac338f69c064"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a143e11a17a1e19be14ddac338f69c064">frc::deg_to_rad</a> = 0.0174532</td></tr>
-<tr class="separator:a143e11a17a1e19be14ddac338f69c064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd3eb9792ab7c23d40636a7610027d5a"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abd3eb9792ab7c23d40636a7610027d5a">frc::grav</a> = 9.81</td></tr>
-<tr class="separator:abd3eb9792ab7c23d40636a7610027d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ae71449b1cc6e6250b91f539153a7a0d3" name="ae71449b1cc6e6250b91f539153a7a0d3"></a>
@@ -245,7 +150,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_a_d_i_s16448___i_m_u_8h.html">ADIS16448_IMU.h</a></li>
-    <li class="footer">Generated on Sat Jan 1 2022 18:14:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 1 2022 19:44:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

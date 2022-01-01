@@ -2210,7 +2210,6 @@ var hierarchy =
     [ "wpi::object_deleter< T >", "structwpi_1_1object__deleter.html", null ],
     [ "wpi::object_deleter< T[N]>", "structwpi_1_1object__deleter_3_01_t_0f_n_0e_4.html", null ],
     [ "frc::KalmanFilterLatencyCompensator< States, Inputs, Outputs, KalmanFilterType >::ObserverSnapshot", "structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html", null ],
-    [ "frc::offset_data", "structfrc_1_1offset__data.html", null ],
     [ "Eigen::internal::operator_bitwise_helper< T >", "struct_eigen_1_1internal_1_1operator__bitwise__helper.html", [
       [ "Eigen::internal::bitwise_helper< T, typename internal::enable_if< is_scalar< T >::value &&(NumTraits< T >::IsInteger||NumTraits< T >::RequireInitialization)>::type >", "struct_eigen_1_1internal_1_1bitwise__helper_3_01_t_00_01typename_01internal_1_1enable__if_3_01is511f9b17390a86cf8902d79021239f89.html", null ]
     ] ],
