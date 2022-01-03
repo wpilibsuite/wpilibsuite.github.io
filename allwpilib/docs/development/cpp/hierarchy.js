@@ -74,6 +74,8 @@ var hierarchy =
     [ "frc::AddressableLED", "classfrc_1_1_addressable_l_e_d.html", null ],
     [ "frc::sim::AddressableLEDSim", "classfrc_1_1sim_1_1_addressable_l_e_d_sim.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, DenseShape, OuterProduct >::adds", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_de79c82097ad07c840c671e4414c434d06.html", null ],
+    [ "frc::sim::ADIS16448_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html", null ],
+    [ "frc::sim::ADIS16470_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16470___i_m_u_sim.html", null ],
     [ "wpi::adl_serializer< typename, typename >", "structwpi_1_1adl__serializer.html", null ],
     [ "frc::sim::ADXL345Sim", "classfrc_1_1sim_1_1_a_d_x_l345_sim.html", null ],
     [ "frc::sim::ADXL362Sim", "classfrc_1_1sim_1_1_a_d_x_l362_sim.html", null ],

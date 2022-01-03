@@ -3,6 +3,12 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "AddressableLEDSim.h", "_addressable_l_e_d_sim_8h.html", [
       [ "frc::sim::AddressableLEDSim", "classfrc_1_1sim_1_1_addressable_l_e_d_sim.html", "classfrc_1_1sim_1_1_addressable_l_e_d_sim" ]
     ] ],
+    [ "ADIS16448_IMUSim.h", "_a_d_i_s16448___i_m_u_sim_8h.html", [
+      [ "frc::sim::ADIS16448_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim" ]
+    ] ],
+    [ "ADIS16470_IMUSim.h", "_a_d_i_s16470___i_m_u_sim_8h.html", [
+      [ "frc::sim::ADIS16470_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16470___i_m_u_sim.html", "classfrc_1_1sim_1_1_a_d_i_s16470___i_m_u_sim" ]
+    ] ],
     [ "ADXL345Sim.h", "_a_d_x_l345_sim_8h.html", [
       [ "frc::sim::ADXL345Sim", "classfrc_1_1sim_1_1_a_d_x_l345_sim.html", "classfrc_1_1sim_1_1_a_d_x_l345_sim" ]
     ] ],

@@ -13,7 +13,9 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
       [ "frc::AddressableLED", "classfrc_1_1_addressable_l_e_d.html", "classfrc_1_1_addressable_l_e_d" ],
       [ "frc::AddressableLED::LEDData", "classfrc_1_1_addressable_l_e_d_1_1_l_e_d_data.html", "classfrc_1_1_addressable_l_e_d_1_1_l_e_d_data" ]
     ] ],
-    [ "ADIS16448_IMU.h", "_a_d_i_s16448___i_m_u_8h.html", "_a_d_i_s16448___i_m_u_8h" ],
+    [ "ADIS16448_IMU.h", "_a_d_i_s16448___i_m_u_8h.html", [
+      [ "frc::ADIS16448_IMU", "classfrc_1_1_a_d_i_s16448___i_m_u.html", "classfrc_1_1_a_d_i_s16448___i_m_u" ]
+    ] ],
     [ "ADIS16470_IMU.h", "_a_d_i_s16470___i_m_u_8h.html", [
       [ "frc::ADIS16470_IMU", "classfrc_1_1_a_d_i_s16470___i_m_u.html", "classfrc_1_1_a_d_i_s16470___i_m_u" ]
     ] ],

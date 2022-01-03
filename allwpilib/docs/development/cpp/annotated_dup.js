@@ -1773,6 +1773,8 @@ var annotated_dup =
       ] ],
       [ "sim", "namespacefrc_1_1sim.html", [
         [ "AddressableLEDSim", "classfrc_1_1sim_1_1_addressable_l_e_d_sim.html", "classfrc_1_1sim_1_1_addressable_l_e_d_sim" ],
+        [ "ADIS16448_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim" ],
+        [ "ADIS16470_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16470___i_m_u_sim.html", "classfrc_1_1sim_1_1_a_d_i_s16470___i_m_u_sim" ],
         [ "ADXL345Sim", "classfrc_1_1sim_1_1_a_d_x_l345_sim.html", "classfrc_1_1sim_1_1_a_d_x_l345_sim" ],
         [ "ADXL362Sim", "classfrc_1_1sim_1_1_a_d_x_l362_sim.html", "classfrc_1_1sim_1_1_a_d_x_l362_sim" ],
         [ "ADXRS450_GyroSim", "classfrc_1_1sim_1_1_a_d_x_r_s450___gyro_sim.html", "classfrc_1_1sim_1_1_a_d_x_r_s450___gyro_sim" ],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"_chassis_speeds_8h.html":[6,0,6,6,0],
+"_chassis_speeds_8h_source.html":[6,0,6,6,0],
+"_check_8h.html":[6,0,14,3,3],
 "_check_8h_source.html":[6,0,14,3,3],
 "_chip_object_8h.html":[6,0,9,15],
 "_chip_object_8h_source.html":[6,0,9,15],
@@ -221,8 +224,8 @@ var NAVTREEINDEX4 =
 "_d_i_o_data_8h.html#adea326f55989c2c945c8397ab1999996":[6,0,9,2,9,9],
 "_d_i_o_data_8h.html#afafafad6572ef6a4fa9958ad7398eb10":[6,0,9,2,9,13],
 "_d_i_o_data_8h_source.html":[6,0,9,2,9],
-"_d_i_o_sim_8h.html":[6,0,7,6,15],
-"_d_i_o_sim_8h_source.html":[6,0,7,6,15],
+"_d_i_o_sim_8h.html":[6,0,7,6,17],
+"_d_i_o_sim_8h_source.html":[6,0,7,6,17],
 "_d_m_a_sample_8h.html":[6,0,7,38],
 "_d_m_a_sample_8h_source.html":[6,0,7,38],
 "_d_m_c60_8h.html":[6,0,7,4,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "_dense_coeffs_base_8h.html":[6,0,3,0,0,1,23],
 "_dense_coeffs_base_8h.html#a8f16b915ba954e15a13f76ca3016830a":[6,0,3,0,0,1,23,8],
 "_dense_coeffs_base_8h.html#ab83986b0ebbd20ebde1f9033162ca121":[6,0,3,0,0,1,23,7],
-"_dense_coeffs_base_8h_source.html":[6,0,3,0,0,1,23],
-"_dense_map_8h.html":[6,0,14,17],
-"_dense_map_8h.html#a703d958d0d00e12bac5736929f6f1b33":[6,0,14,17,5],
-"_dense_map_8h.html#a9258f2870864143e01a09bb5cf806ba6":[6,0,14,17,7]
+"_dense_coeffs_base_8h_source.html":[6,0,3,0,0,1,23]
 };

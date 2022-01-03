@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"_handles_internal_8h.html#aa824c02dcbbe7fc687592d258125cd27":[6,0,9,1,1,5],
+"_handles_internal_8h.html#abd9e6fe86aa997774ce9cd678f6b2786":[6,0,9,1,1,4],
+"_handles_internal_8h.html#abda8f141e53785a3eb6b21731b4a1389":[6,0,9,1,1,8],
 "_handles_internal_8h.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea":[6,0,9,1,1,10],
 "_handles_internal_8h.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6":[6,0,9,1,1,7],
 "_handles_internal_8h_source.html":[6,0,9,1,1],
@@ -161,8 +164,8 @@ var NAVTREEINDEX8 =
 "_jaguar_8h_source.html":[6,0,7,4,1],
 "_joystick_8h.html":[6,0,7,50],
 "_joystick_8h_source.html":[6,0,7,50],
-"_joystick_sim_8h.html":[6,0,7,6,23],
-"_joystick_sim_8h_source.html":[6,0,7,6,23],
+"_joystick_sim_8h.html":[6,0,7,6,25],
+"_joystick_sim_8h_source.html":[6,0,7,6,25],
 "_kalman_filter_8h.html":[6,0,6,1,3],
 "_kalman_filter_8h_source.html":[6,0,6,1,3],
 "_kalman_filter_latency_compensator_8h.html":[6,0,6,1,4],
@@ -202,8 +205,8 @@ var NAVTREEINDEX8 =
 "_linear_system_id_8h_source.html":[6,0,6,8,0,1],
 "_linear_system_loop_8h.html":[6,0,6,8,3],
 "_linear_system_loop_8h_source.html":[6,0,6,8,3],
-"_linear_system_sim_8h.html":[6,0,7,6,24],
-"_linear_system_sim_8h_source.html":[6,0,7,6,24],
+"_linear_system_sim_8h.html":[6,0,7,6,26],
+"_linear_system_sim_8h_source.html":[6,0,7,6,26],
 "_listener_executor_8h.html":[6,0,7,7,2],
 "_listener_executor_8h_source.html":[6,0,7,7,2],
 "_live_window_8h.html":[6,0,7,3,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "_macros_8h.html#a0cc43bc4567bc5b52d6f7575d6fbc61b":[6,0,3,0,0,1,3,7,6],
 "_macros_8h.html#a122f6a43b6a5ccf0e68391ab32dcfc30":[6,0,3,0,0,1,3,7,39],
 "_macros_8h.html#a144a95fccc6a83d8d5bfc4c066882146":[6,0,3,0,0,1,3,7,23],
-"_macros_8h.html#a16888e22057d2f1476efe2b90bed9f4b":[6,0,3,0,0,1,3,7,125],
-"_macros_8h.html#a19dff117eed64678a59331cdeda6d8fc":[6,0,3,0,0,1,3,7,119],
-"_macros_8h.html#a1afbc610f742807153c78d1e66a7576a":[6,0,3,0,0,1,3,7,13],
-"_macros_8h.html#a1fdc6f94f20527c7275768d82b2eb9ce":[6,0,3,0,0,1,3,7,1]
+"_macros_8h.html#a16888e22057d2f1476efe2b90bed9f4b":[6,0,3,0,0,1,3,7,125]
 };
