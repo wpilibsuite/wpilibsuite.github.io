@@ -1,7 +1,5 @@
 var NAVTREEINDEX135 =
 {
-"struct_eigen_1_1_comma_initializer.html#ab31bf5a9a85ca7afd84b7adf4baaaa5a":[3,23,30,8],
-"struct_eigen_1_1_comma_initializer.html#ad737684daf9bc78f2a6527713d2c6e35":[3,23,30,4],
 "struct_eigen_1_1_comma_initializer.html#adeba5544d995f8d5e31d05ae89f2eeca":[3,23,30,6],
 "struct_eigen_1_1_comma_initializer.html#aed4e19a5d8bb35516c08385e67feae00":[3,23,30,1],
 "struct_eigen_1_1_comma_initializer.html#afac25de119210f2df4d814694b6c56f6":[3,23,30,10],
@@ -249,5 +247,7 @@ var NAVTREEINDEX135 =
 "struct_eigen_1_1_transpositions_shape.html#afad8fac6c0338e163cca86f04fe12cdb":[5,0,4,201,0],
 "struct_eigen_1_1_transpositions_storage.html":[5,0,4,202],
 "struct_eigen_1_1_transpositions_storage.html":[4,0,7,205],
-"struct_eigen_1_1_triangular_shape.html":[5,0,4,205]
+"struct_eigen_1_1_triangular_shape.html":[5,0,4,205],
+"struct_eigen_1_1_triangular_shape.html":[4,0,7,208],
+"struct_eigen_1_1_triangular_shape.html#a6c43155ceddf7ca3176df0976fb531db":[5,0,4,205,0]
 };

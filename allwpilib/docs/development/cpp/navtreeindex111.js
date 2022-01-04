@@ -1,7 +1,5 @@
 var NAVTREEINDEX111 =
 {
-"group__cscore__source__prop__cfunc.html#gaad39d7d3442154e38cdfb6291199f67a":[3,13,4,0],
-"group__cscore__telemetry__cfunc.html":[3,13,13],
 "group__cscore__telemetry__cfunc.html#ga3a6374fdc629bdbc1e54f97885532d8a":[3,13,13,1],
 "group__cscore__telemetry__cfunc.html#ga56cdfce36c66508da91ebab1c0c55927":[3,13,13,0],
 "group__cscore__telemetry__cfunc.html#ga8eec0da17244e5fda04d58d77595291a":[3,13,13,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX111 =
 "group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,1,9,9],
 "group__hal__analoginput.html":[3,1,4],
 "group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452":[3,1,4,3],
-"group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,1,4,17]
+"group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,1,4,17],
+"group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b":[3,1,4,11],
+"group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8":[3,1,4,15]
 };

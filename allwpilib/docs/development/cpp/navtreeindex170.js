@@ -1,7 +1,5 @@
 var NAVTREEINDEX170 =
 {
-"structis__contiguous.html":[5,0,132],
-"structis__contiguous_3_01basic__memory__buffer_3_01_t_00_01_s_i_z_e_00_01_allocator_01_4_01_4.html":[5,0,133],
 "structis__contiguous_3_01std_1_1basic__string_3_01_char_01_4_01_4.html":[5,0,134],
 "structis__contiguous__back__insert__iterator.html":[5,0,135],
 "structis__contiguous__back__insert__iterator_3_01appender_01_4.html":[5,0,136],
@@ -249,5 +247,7 @@ var NAVTREEINDEX170 =
 "structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#afd344b69d47d402b86994c84c8ad696e":[4,0,18,12,24],
 "structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#afdf71074af23746967cb9d2d9c24639c":[4,0,18,12,17],
 "structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#afdf71074af23746967cb9d2d9c24639c":[5,0,11,12,17],
-"structstd_1_1numeric__limits_3_01const_01_eigen_1_1bfloat16_01_4.html":[4,0,18,5]
+"structstd_1_1numeric__limits_3_01const_01_eigen_1_1bfloat16_01_4.html":[4,0,18,5],
+"structstd_1_1numeric__limits_3_01const_01_eigen_1_1bfloat16_01_4.html":[5,0,11,5],
+"structstd_1_1numeric__limits_3_01const_01_eigen_1_1half_01_4.html":[5,0,11,6]
 };

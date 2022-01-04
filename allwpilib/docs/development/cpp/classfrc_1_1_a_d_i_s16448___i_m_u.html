@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-36-g947f589</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-37-ga2510aa</span>
    </div>
   </td>
  </tr>
@@ -118,6 +118,24 @@ Inheritance diagram for frc::ADIS16448_IMU:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:aa4d79379c6ddf65b46ce0c4617ebabd8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">CalibrationTime</a> { <br />
+&#160;&#160;<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8ab0b8a93c9bf5ddefc0fd376c8b3c530d">_32ms</a> = 0
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a3cb3056e0645dc2b986cf73e38408ddb">_64ms</a> = 1
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a73eb12a53d31b30f39bc0719bf5a6468">_128ms</a> = 2
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8ad2a51879df8bd3eaa4f311fa24f30881">_256ms</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a05d79f83c5636d144fd53a36b1224a0b">_512ms</a> = 4
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a14224719a3a5927354cdeebe61588127">_1s</a> = 5
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a2289da39f901ce1ac9a65802e8c1b673">_2s</a> = 6
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8ae65ec6cd4b2df8ecc52026c85d7a0087">_4s</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a343388ccc88415696aaefdee49e40d96">_8s</a> = 8
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a18debbf0e119174857b7621801096b35">_16s</a> = 9
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8a3930868e03834c854198fcd220ffe14b">_32s</a> = 10
+, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8aa5394b801375f24fd87f610144ca39e2">_64s</a> = 11
+<br />
+ }</td></tr>
+<tr class="separator:aa4d79379c6ddf65b46ce0c4617ebabd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84a9c1b185255f6c8c580bd4e1dc234b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a> { <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234baae57a037b0a85a3cb571e960db7583cb">kX</a>
 , <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234ba13b350940eb11fdd1df105143a24a4ef">kY</a>
 , <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234bab928bb6e8a673df4f7cf390afebea5a0">kZ</a>
@@ -129,9 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc2a99f7eea5c98f5035118f44917b71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#afc2a99f7eea5c98f5035118f44917b71">ADIS16448_IMU</a> ()</td></tr>
 <tr class="memdesc:afc2a99f7eea5c98f5035118f44917b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMU constructor on onboard MXP CS0, Z-up orientation, and complementary AHRS computation.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#afc2a99f7eea5c98f5035118f44917b71">More...</a><br /></td></tr>
 <tr class="separator:afc2a99f7eea5c98f5035118f44917b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089525efe79d3c1f7fbb523e13ba8abb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a089525efe79d3c1f7fbb523e13ba8abb">ADIS16448_IMU</a> (<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a> yaw_axis, <a class="el" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">SPI::Port</a> port, uint16_t cal_time)</td></tr>
-<tr class="memdesc:a089525efe79d3c1f7fbb523e13ba8abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMU constructor on the specified MXP port and orientation.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a089525efe79d3c1f7fbb523e13ba8abb">More...</a><br /></td></tr>
-<tr class="separator:a089525efe79d3c1f7fbb523e13ba8abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e1f9c4e86d3234480f7b4babe6b418"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a79e1f9c4e86d3234480f7b4babe6b418">ADIS16448_IMU</a> (<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a> yaw_axis, <a class="el" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">SPI::Port</a> port, <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">CalibrationTime</a> cal_time)</td></tr>
+<tr class="memdesc:a79e1f9c4e86d3234480f7b4babe6b418"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMU constructor on the specified MXP port and orientation.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a79e1f9c4e86d3234480f7b4babe6b418">More...</a><br /></td></tr>
+<tr class="separator:a79e1f9c4e86d3234480f7b4babe6b418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac76c1706880f19aa02c45cbfea215312"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ac76c1706880f19aa02c45cbfea215312">~ADIS16448_IMU</a> () override</td></tr>
 <tr class="separator:ac76c1706880f19aa02c45cbfea215312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e10dbeac44e48f13ea38ec54dacd75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#af5e10dbeac44e48f13ea38ec54dacd75">ADIS16448_IMU</a> (<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html">ADIS16448_IMU</a> &amp;&amp;)=default</td></tr>
@@ -141,54 +159,51 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8b73b407db3681f9a5a89f8319b6b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ab8b73b407db3681f9a5a89f8319b6b91">Calibrate</a> ()</td></tr>
 <tr class="memdesc:ab8b73b407db3681f9a5a89f8319b6b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the IMU.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ab8b73b407db3681f9a5a89f8319b6b91">More...</a><br /></td></tr>
 <tr class="separator:ab8b73b407db3681f9a5a89f8319b6b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae82861d57c2e3a5953c419c126c9b57e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae82861d57c2e3a5953c419c126c9b57e">ConfigCalTime</a> (int new_cal_time)</td></tr>
-<tr class="memdesc:ae82861d57c2e3a5953c419c126c9b57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the calibration time used for the next calibrate.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae82861d57c2e3a5953c419c126c9b57e">More...</a><br /></td></tr>
-<tr class="separator:ae82861d57c2e3a5953c419c126c9b57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78290990d0f3a14ee9a53e90b9ccd1e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a78290990d0f3a14ee9a53e90b9ccd1e5">ConfigCalTime</a> (<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">CalibrationTime</a> new_cal_time)</td></tr>
+<tr class="memdesc:a78290990d0f3a14ee9a53e90b9ccd1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the calibration time used for the next calibrate.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a78290990d0f3a14ee9a53e90b9ccd1e5">More...</a><br /></td></tr>
+<tr class="separator:a78290990d0f3a14ee9a53e90b9ccd1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fd143b4a8c4ad4b655142c4b3a4ed6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a8fd143b4a8c4ad4b655142c4b3a4ed6b">Reset</a> ()</td></tr>
 <tr class="memdesc:a8fd143b4a8c4ad4b655142c4b3a4ed6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the gyro.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a8fd143b4a8c4ad4b655142c4b3a4ed6b">More...</a><br /></td></tr>
 <tr class="separator:a8fd143b4a8c4ad4b655142c4b3a4ed6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e53e7e2257d6c5637e5842f6a82c3ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a8e53e7e2257d6c5637e5842f6a82c3ce">GetAngle</a> () const</td></tr>
-<tr class="memdesc:a8e53e7e2257d6c5637e5842f6a82c3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the actual angle in degrees that the robot is currently facing.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a8e53e7e2257d6c5637e5842f6a82c3ce">More...</a><br /></td></tr>
-<tr class="separator:a8e53e7e2257d6c5637e5842f6a82c3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae021e84ca07b09ca14d9049739df0665"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae021e84ca07b09ca14d9049739df0665">GetRate</a> () const</td></tr>
-<tr class="memdesc:ae021e84ca07b09ca14d9049739df0665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the rate of rotation of the yaw_axis gyro.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae021e84ca07b09ca14d9049739df0665">More...</a><br /></td></tr>
-<tr class="separator:ae021e84ca07b09ca14d9049739df0665"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0b6f8f05ac91318862f4d74cde406e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa0b6f8f05ac91318862f4d74cde406e1">GetGyroAngleX</a> () const</td></tr>
-<tr class="separator:aa0b6f8f05ac91318862f4d74cde406e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af250d963ad4c889f6beecdb1679839dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#af250d963ad4c889f6beecdb1679839dc">GetGyroAngleY</a> () const</td></tr>
-<tr class="separator:af250d963ad4c889f6beecdb1679839dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84bd4d8ae0055c3757d9cb632295ff8e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84bd4d8ae0055c3757d9cb632295ff8e">GetGyroAngleZ</a> () const</td></tr>
-<tr class="separator:a84bd4d8ae0055c3757d9cb632295ff8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23adfdfc245863ede3f589e87e47b6a3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a23adfdfc245863ede3f589e87e47b6a3">GetGyroRateX</a> () const</td></tr>
-<tr class="separator:a23adfdfc245863ede3f589e87e47b6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e36fdbf1e295e167759baa4eab91b2b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1e36fdbf1e295e167759baa4eab91b2b">GetGyroRateY</a> () const</td></tr>
-<tr class="separator:a1e36fdbf1e295e167759baa4eab91b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad44bdfd7bb8c74cd86d562cb2519e2b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ad44bdfd7bb8c74cd86d562cb2519e2b9">GetGyroRateZ</a> () const</td></tr>
-<tr class="separator:ad44bdfd7bb8c74cd86d562cb2519e2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af6f5e84ab9e507b44b04115c661c2b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1af6f5e84ab9e507b44b04115c661c2b">GetAccelX</a> () const</td></tr>
-<tr class="separator:a1af6f5e84ab9e507b44b04115c661c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633a58e5785d942db6e2bc9472ec3cdd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a633a58e5785d942db6e2bc9472ec3cdd">GetAccelY</a> () const</td></tr>
-<tr class="separator:a633a58e5785d942db6e2bc9472ec3cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b99d538f363909d2a78054ab807ebb3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a2b99d538f363909d2a78054ab807ebb3">GetAccelZ</a> () const</td></tr>
-<tr class="separator:a2b99d538f363909d2a78054ab807ebb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a689a150cc3c0e994da5adfd892b13ef1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a689a150cc3c0e994da5adfd892b13ef1">GetXComplementaryAngle</a> () const</td></tr>
-<tr class="separator:a689a150cc3c0e994da5adfd892b13ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0423c4cd56a78d517b5f967821923e4e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a0423c4cd56a78d517b5f967821923e4e">GetYComplementaryAngle</a> () const</td></tr>
-<tr class="separator:a0423c4cd56a78d517b5f967821923e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a379db6ab96f6365c268f0df9f33b2f3d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a379db6ab96f6365c268f0df9f33b2f3d">GetXFilteredAccelAngle</a> () const</td></tr>
-<tr class="separator:a379db6ab96f6365c268f0df9f33b2f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae39484a93aff76aa7a0b14b024e6484"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aae39484a93aff76aa7a0b14b024e6484">GetYFilteredAccelAngle</a> () const</td></tr>
-<tr class="separator:aae39484a93aff76aa7a0b14b024e6484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd92941d19c89b456a7f6e3df421cfac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#afd92941d19c89b456a7f6e3df421cfac">GetMagInstantX</a> () const</td></tr>
-<tr class="separator:afd92941d19c89b456a7f6e3df421cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1475519814670585d6c33b899e4444"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a9b1475519814670585d6c33b899e4444">GetMagInstantY</a> () const</td></tr>
-<tr class="separator:a9b1475519814670585d6c33b899e4444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866d45f0c6a6e30da0e4a8d0f8bd0533"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a866d45f0c6a6e30da0e4a8d0f8bd0533">GetMagInstantZ</a> () const</td></tr>
-<tr class="separator:a866d45f0c6a6e30da0e4a8d0f8bd0533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14797d21c7cc8d627515a7418aba5813"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a14797d21c7cc8d627515a7418aba5813">GetBarometricPressure</a> () const</td></tr>
-<tr class="separator:a14797d21c7cc8d627515a7418aba5813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57d5036639de5bdd280e6fa94039621"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ab57d5036639de5bdd280e6fa94039621">GetTemperature</a> () const</td></tr>
-<tr class="separator:ab57d5036639de5bdd280e6fa94039621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411a1531aa3e7eb0b6be8b7a409234f8"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a411a1531aa3e7eb0b6be8b7a409234f8">GetAngle</a> () const</td></tr>
+<tr class="memdesc:a411a1531aa3e7eb0b6be8b7a409234f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the yaw axis angle in degrees (CCW positive).  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a411a1531aa3e7eb0b6be8b7a409234f8">More...</a><br /></td></tr>
+<tr class="separator:a411a1531aa3e7eb0b6be8b7a409234f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1412db03564384408028c5ef77a2ff5c"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1412db03564384408028c5ef77a2ff5c">GetGyroAngleX</a> () const</td></tr>
+<tr class="memdesc:a1412db03564384408028c5ef77a2ff5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the accumulated gyro angle in the X axis.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1412db03564384408028c5ef77a2ff5c">More...</a><br /></td></tr>
+<tr class="separator:a1412db03564384408028c5ef77a2ff5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9013d0f1da091eab87ca3859d41b97"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#adc9013d0f1da091eab87ca3859d41b97">GetGyroAngleY</a> () const</td></tr>
+<tr class="memdesc:adc9013d0f1da091eab87ca3859d41b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the accumulated gyro angle in the Y axis.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#adc9013d0f1da091eab87ca3859d41b97">More...</a><br /></td></tr>
+<tr class="separator:adc9013d0f1da091eab87ca3859d41b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4649ae26bd736ece979741af5897278"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae4649ae26bd736ece979741af5897278">GetGyroAngleZ</a> () const</td></tr>
+<tr class="memdesc:ae4649ae26bd736ece979741af5897278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the accumulated gyro angle in the Z axis.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae4649ae26bd736ece979741af5897278">More...</a><br /></td></tr>
+<tr class="separator:ae4649ae26bd736ece979741af5897278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d569a1eff38f7878850386b579646f"><td class="memItemLeft" align="right" valign="top">units::meters_per_second_squared_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae5d569a1eff38f7878850386b579646f">GetAccelX</a> () const</td></tr>
+<tr class="memdesc:ae5d569a1eff38f7878850386b579646f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the acceleration in the X axis.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ae5d569a1eff38f7878850386b579646f">More...</a><br /></td></tr>
+<tr class="separator:ae5d569a1eff38f7878850386b579646f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a10558faf50ada856173d68f2e81aa"><td class="memItemLeft" align="right" valign="top">units::meters_per_second_squared_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ad4a10558faf50ada856173d68f2e81aa">GetAccelY</a> () const</td></tr>
+<tr class="memdesc:ad4a10558faf50ada856173d68f2e81aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the acceleration in the Y axis.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ad4a10558faf50ada856173d68f2e81aa">More...</a><br /></td></tr>
+<tr class="separator:ad4a10558faf50ada856173d68f2e81aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119b356937d46f72b7a49a2c5b68bd93"><td class="memItemLeft" align="right" valign="top">units::meters_per_second_squared_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a119b356937d46f72b7a49a2c5b68bd93">GetAccelZ</a> () const</td></tr>
+<tr class="memdesc:a119b356937d46f72b7a49a2c5b68bd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the acceleration in the Z axis.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a119b356937d46f72b7a49a2c5b68bd93">More...</a><br /></td></tr>
+<tr class="separator:a119b356937d46f72b7a49a2c5b68bd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ecb3ff1e14f68955096da07e8e66d97"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a5ecb3ff1e14f68955096da07e8e66d97">GetXComplementaryAngle</a> () const</td></tr>
+<tr class="separator:a5ecb3ff1e14f68955096da07e8e66d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3818ad67d18f8b629aff5028577b598e"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a3818ad67d18f8b629aff5028577b598e">GetYComplementaryAngle</a> () const</td></tr>
+<tr class="separator:a3818ad67d18f8b629aff5028577b598e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267935d3cc239ab01e5da88d270e78ff"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a267935d3cc239ab01e5da88d270e78ff">GetXFilteredAccelAngle</a> () const</td></tr>
+<tr class="separator:a267935d3cc239ab01e5da88d270e78ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f8423636e9822220a45007b836c4e3"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a11f8423636e9822220a45007b836c4e3">GetYFilteredAccelAngle</a> () const</td></tr>
+<tr class="separator:a11f8423636e9822220a45007b836c4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc79a38c921c458662df2f922c9e5c83"><td class="memItemLeft" align="right" valign="top">units::tesla_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#afc79a38c921c458662df2f922c9e5c83">GetMagneticFieldX</a> () const</td></tr>
+<tr class="separator:afc79a38c921c458662df2f922c9e5c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5599c4bf13b3b1a1befb06ea11c56bc5"><td class="memItemLeft" align="right" valign="top">units::tesla_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a5599c4bf13b3b1a1befb06ea11c56bc5">GetMagneticFieldY</a> () const</td></tr>
+<tr class="separator:a5599c4bf13b3b1a1befb06ea11c56bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9b905d5075ab77976769d6d94340e5"><td class="memItemLeft" align="right" valign="top">units::tesla_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a0f9b905d5075ab77976769d6d94340e5">GetMagneticFieldZ</a> () const</td></tr>
+<tr class="separator:a0f9b905d5075ab77976769d6d94340e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9f3806772c0845a8246781b3a07ab3"><td class="memItemLeft" align="right" valign="top">units::pounds_per_square_inch_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aae9f3806772c0845a8246781b3a07ab3">GetBarometricPressure</a> () const</td></tr>
+<tr class="separator:aae9f3806772c0845a8246781b3a07ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fa8932198a71ec2999a6306d620452"><td class="memItemLeft" align="right" valign="top">units::celsius_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a38fa8932198a71ec2999a6306d620452">GetTemperature</a> () const</td></tr>
+<tr class="separator:a38fa8932198a71ec2999a6306d620452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec0f41427f1972891841e5376877c82a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aec0f41427f1972891841e5376877c82a">GetYawAxis</a> () const</td></tr>
 <tr class="separator:aec0f41427f1972891841e5376877c82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712f877b1e421fda6bf0cec09ff1965f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a712f877b1e421fda6bf0cec09ff1965f">SetYawAxis</a> (<a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a> yaw_axis)</td></tr>
@@ -258,6 +273,42 @@ Additional Inherited Members</h2></td></tr>
 <p >The ADIS16448 gyro angle outputs track the robot's heading based on the starting position. As the robot rotates the new heading is computed by integrating the rate of rotation returned by the IMU. When the class is instantiated, a short calibration routine is performed where the IMU samples the gyros while at rest to determine the initial offset. This is subtracted from each sample to determine the heading.</p>
 <p >This class is for the ADIS16448 IMU connected via the <a class="el" href="classfrc_1_1_s_p_i.html" title="SPI bus interface class.">SPI</a> port available on the RoboRIO MXP port. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aa4d79379c6ddf65b46ce0c4617ebabd8" name="aa4d79379c6ddf65b46ce0c4617ebabd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d79379c6ddf65b46ce0c4617ebabd8">&#9670;&nbsp;</a></span>CalibrationTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">frc::ADIS16448_IMU::CalibrationTime</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8ab0b8a93c9bf5ddefc0fd376c8b3c530d" name="aa4d79379c6ddf65b46ce0c4617ebabd8ab0b8a93c9bf5ddefc0fd376c8b3c530d"></a>_32ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a3cb3056e0645dc2b986cf73e38408ddb" name="aa4d79379c6ddf65b46ce0c4617ebabd8a3cb3056e0645dc2b986cf73e38408ddb"></a>_64ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a73eb12a53d31b30f39bc0719bf5a6468" name="aa4d79379c6ddf65b46ce0c4617ebabd8a73eb12a53d31b30f39bc0719bf5a6468"></a>_128ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8ad2a51879df8bd3eaa4f311fa24f30881" name="aa4d79379c6ddf65b46ce0c4617ebabd8ad2a51879df8bd3eaa4f311fa24f30881"></a>_256ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a05d79f83c5636d144fd53a36b1224a0b" name="aa4d79379c6ddf65b46ce0c4617ebabd8a05d79f83c5636d144fd53a36b1224a0b"></a>_512ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a14224719a3a5927354cdeebe61588127" name="aa4d79379c6ddf65b46ce0c4617ebabd8a14224719a3a5927354cdeebe61588127"></a>_1s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a2289da39f901ce1ac9a65802e8c1b673" name="aa4d79379c6ddf65b46ce0c4617ebabd8a2289da39f901ce1ac9a65802e8c1b673"></a>_2s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8ae65ec6cd4b2df8ecc52026c85d7a0087" name="aa4d79379c6ddf65b46ce0c4617ebabd8ae65ec6cd4b2df8ecc52026c85d7a0087"></a>_4s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a343388ccc88415696aaefdee49e40d96" name="aa4d79379c6ddf65b46ce0c4617ebabd8a343388ccc88415696aaefdee49e40d96"></a>_8s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a18debbf0e119174857b7621801096b35" name="aa4d79379c6ddf65b46ce0c4617ebabd8a18debbf0e119174857b7621801096b35"></a>_16s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8a3930868e03834c854198fcd220ffe14b" name="aa4d79379c6ddf65b46ce0c4617ebabd8a3930868e03834c854198fcd220ffe14b"></a>_32s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa4d79379c6ddf65b46ce0c4617ebabd8aa5394b801375f24fd87f610144ca39e2" name="aa4d79379c6ddf65b46ce0c4617ebabd8aa5394b801375f24fd87f610144ca39e2"></a>_64s&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a84a9c1b185255f6c8c580bd4e1dc234b" name="a84a9c1b185255f6c8c580bd4e1dc234b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84a9c1b185255f6c8c580bd4e1dc234b">&#9670;&nbsp;</a></span>IMUAxis</h2>
 
@@ -297,8 +348,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a089525efe79d3c1f7fbb523e13ba8abb" name="a089525efe79d3c1f7fbb523e13ba8abb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089525efe79d3c1f7fbb523e13ba8abb">&#9670;&nbsp;</a></span>ADIS16448_IMU() <span class="overload">[2/3]</span></h2>
+<a id="a79e1f9c4e86d3234480f7b4babe6b418" name="a79e1f9c4e86d3234480f7b4babe6b418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e1f9c4e86d3234480f7b4babe6b418">&#9670;&nbsp;</a></span>ADIS16448_IMU() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">CalibrationTime</a>&#160;</td>
           <td class="paramname"><em>cal_time</em>&#160;</td>
         </tr>
         <tr>
@@ -423,8 +474,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae82861d57c2e3a5953c419c126c9b57e" name="ae82861d57c2e3a5953c419c126c9b57e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae82861d57c2e3a5953c419c126c9b57e">&#9670;&nbsp;</a></span>ConfigCalTime()</h2>
+<a id="a78290990d0f3a14ee9a53e90b9ccd1e5" name="a78290990d0f3a14ee9a53e90b9ccd1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78290990d0f3a14ee9a53e90b9ccd1e5">&#9670;&nbsp;</a></span>ConfigCalTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +483,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">int frc::ADIS16448_IMU::ConfigCalTime </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">CalibrationTime</a>&#160;</td>
           <td class="paramname"><em>new_cal_time</em></td><td>)</td>
           <td></td>
         </tr>
@@ -467,14 +518,90 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a1af6f5e84ab9e507b44b04115c661c2b" name="a1af6f5e84ab9e507b44b04115c661c2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1af6f5e84ab9e507b44b04115c661c2b">&#9670;&nbsp;</a></span>GetAccelX()</h2>
+<a id="ae5d569a1eff38f7878850386b579646f" name="ae5d569a1eff38f7878850386b579646f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5d569a1eff38f7878850386b579646f">&#9670;&nbsp;</a></span>GetAccelX()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetAccelX </td>
+          <td class="memname">units::meters_per_second_squared_t frc::ADIS16448_IMU::GetAccelX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the acceleration in the X axis. </p>
+
+</div>
+</div>
+<a id="ad4a10558faf50ada856173d68f2e81aa" name="ad4a10558faf50ada856173d68f2e81aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a10558faf50ada856173d68f2e81aa">&#9670;&nbsp;</a></span>GetAccelY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::meters_per_second_squared_t frc::ADIS16448_IMU::GetAccelY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the acceleration in the Y axis. </p>
+
+</div>
+</div>
+<a id="a119b356937d46f72b7a49a2c5b68bd93" name="a119b356937d46f72b7a49a2c5b68bd93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a119b356937d46f72b7a49a2c5b68bd93">&#9670;&nbsp;</a></span>GetAccelZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::meters_per_second_squared_t frc::ADIS16448_IMU::GetAccelZ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the acceleration in the Z axis. </p>
+
+</div>
+</div>
+<a id="a411a1531aa3e7eb0b6be8b7a409234f8" name="a411a1531aa3e7eb0b6be8b7a409234f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411a1531aa3e7eb0b6be8b7a409234f8">&#9670;&nbsp;</a></span>GetAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the yaw axis angle in degrees (CCW positive). </p>
+
+</div>
+</div>
+<a id="aae9f3806772c0845a8246781b3a07ab3" name="aae9f3806772c0845a8246781b3a07ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9f3806772c0845a8246781b3a07ab3">&#9670;&nbsp;</a></span>GetBarometricPressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::pounds_per_square_inch_t frc::ADIS16448_IMU::GetBarometricPressure </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -484,14 +611,71 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a633a58e5785d942db6e2bc9472ec3cdd" name="a633a58e5785d942db6e2bc9472ec3cdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633a58e5785d942db6e2bc9472ec3cdd">&#9670;&nbsp;</a></span>GetAccelY()</h2>
+<a id="a1412db03564384408028c5ef77a2ff5c" name="a1412db03564384408028c5ef77a2ff5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1412db03564384408028c5ef77a2ff5c">&#9670;&nbsp;</a></span>GetGyroAngleX()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetAccelY </td>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetGyroAngleX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the accumulated gyro angle in the X axis. </p>
+
+</div>
+</div>
+<a id="adc9013d0f1da091eab87ca3859d41b97" name="adc9013d0f1da091eab87ca3859d41b97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9013d0f1da091eab87ca3859d41b97">&#9670;&nbsp;</a></span>GetGyroAngleY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetGyroAngleY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the accumulated gyro angle in the Y axis. </p>
+
+</div>
+</div>
+<a id="ae4649ae26bd736ece979741af5897278" name="ae4649ae26bd736ece979741af5897278"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4649ae26bd736ece979741af5897278">&#9670;&nbsp;</a></span>GetGyroAngleZ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetGyroAngleZ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the accumulated gyro angle in the Z axis. </p>
+
+</div>
+</div>
+<a id="afc79a38c921c458662df2f922c9e5c83" name="afc79a38c921c458662df2f922c9e5c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc79a38c921c458662df2f922c9e5c83">&#9670;&nbsp;</a></span>GetMagneticFieldX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::tesla_t frc::ADIS16448_IMU::GetMagneticFieldX </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -501,14 +685,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b99d538f363909d2a78054ab807ebb3" name="a2b99d538f363909d2a78054ab807ebb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b99d538f363909d2a78054ab807ebb3">&#9670;&nbsp;</a></span>GetAccelZ()</h2>
+<a id="a5599c4bf13b3b1a1befb06ea11c56bc5" name="a5599c4bf13b3b1a1befb06ea11c56bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5599c4bf13b3b1a1befb06ea11c56bc5">&#9670;&nbsp;</a></span>GetMagneticFieldY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetAccelZ </td>
+          <td class="memname">units::tesla_t frc::ADIS16448_IMU::GetMagneticFieldY </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -518,188 +702,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e53e7e2257d6c5637e5842f6a82c3ce" name="a8e53e7e2257d6c5637e5842f6a82c3ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e53e7e2257d6c5637e5842f6a82c3ce">&#9670;&nbsp;</a></span>GetAngle()</h2>
+<a id="a0f9b905d5075ab77976769d6d94340e5" name="a0f9b905d5075ab77976769d6d94340e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9b905d5075ab77976769d6d94340e5">&#9670;&nbsp;</a></span>GetMagneticFieldZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetAngle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the actual angle in degrees that the robot is currently facing. </p>
-<p >The angle is based on the current accumulator value corrected by offset calibration and built-in IMU calibration. The angle is continuous, that is it will continue from 360-&gt;361 degrees. This allows algorithms that wouldn't want to see a discontinuity in the gyro output as it sweeps from 360 to 0 on the second time around. The axis returned by this function is adjusted fased on the configured yaw_axis.</p>
-<dl class="section return"><dt>Returns</dt><dd>the current heading of the robot in degrees. This heading is based on integration of the returned rate from the gyro. </dd></dl>
-
-</div>
-</div>
-<a id="a14797d21c7cc8d627515a7418aba5813" name="a14797d21c7cc8d627515a7418aba5813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14797d21c7cc8d627515a7418aba5813">&#9670;&nbsp;</a></span>GetBarometricPressure()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetBarometricPressure </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa0b6f8f05ac91318862f4d74cde406e1" name="aa0b6f8f05ac91318862f4d74cde406e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0b6f8f05ac91318862f4d74cde406e1">&#9670;&nbsp;</a></span>GetGyroAngleX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetGyroAngleX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af250d963ad4c889f6beecdb1679839dc" name="af250d963ad4c889f6beecdb1679839dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af250d963ad4c889f6beecdb1679839dc">&#9670;&nbsp;</a></span>GetGyroAngleY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetGyroAngleY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a84bd4d8ae0055c3757d9cb632295ff8e" name="a84bd4d8ae0055c3757d9cb632295ff8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84bd4d8ae0055c3757d9cb632295ff8e">&#9670;&nbsp;</a></span>GetGyroAngleZ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetGyroAngleZ </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a23adfdfc245863ede3f589e87e47b6a3" name="a23adfdfc245863ede3f589e87e47b6a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23adfdfc245863ede3f589e87e47b6a3">&#9670;&nbsp;</a></span>GetGyroRateX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetGyroRateX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e36fdbf1e295e167759baa4eab91b2b" name="a1e36fdbf1e295e167759baa4eab91b2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e36fdbf1e295e167759baa4eab91b2b">&#9670;&nbsp;</a></span>GetGyroRateY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetGyroRateY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad44bdfd7bb8c74cd86d562cb2519e2b9" name="ad44bdfd7bb8c74cd86d562cb2519e2b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad44bdfd7bb8c74cd86d562cb2519e2b9">&#9670;&nbsp;</a></span>GetGyroRateZ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetGyroRateZ </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afd92941d19c89b456a7f6e3df421cfac" name="afd92941d19c89b456a7f6e3df421cfac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd92941d19c89b456a7f6e3df421cfac">&#9670;&nbsp;</a></span>GetMagInstantX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetMagInstantX </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9b1475519814670585d6c33b899e4444" name="a9b1475519814670585d6c33b899e4444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b1475519814670585d6c33b899e4444">&#9670;&nbsp;</a></span>GetMagInstantY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetMagInstantY </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a866d45f0c6a6e30da0e4a8d0f8bd0533" name="a866d45f0c6a6e30da0e4a8d0f8bd0533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a866d45f0c6a6e30da0e4a8d0f8bd0533">&#9670;&nbsp;</a></span>GetMagInstantZ()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetMagInstantZ </td>
+          <td class="memname">units::tesla_t frc::ADIS16448_IMU::GetMagneticFieldZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -729,35 +739,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae021e84ca07b09ca14d9049739df0665" name="ae021e84ca07b09ca14d9049739df0665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae021e84ca07b09ca14d9049739df0665">&#9670;&nbsp;</a></span>GetRate()</h2>
+<a id="a38fa8932198a71ec2999a6306d620452" name="a38fa8932198a71ec2999a6306d620452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fa8932198a71ec2999a6306d620452">&#9670;&nbsp;</a></span>GetTemperature()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetRate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return the rate of rotation of the yaw_axis gyro. </p>
-<p >The rate is based on the most recent reading of the gyro value</p>
-<dl class="section return"><dt>Returns</dt><dd>the current rate in degrees per second </dd></dl>
-
-</div>
-</div>
-<a id="ab57d5036639de5bdd280e6fa94039621" name="ab57d5036639de5bdd280e6fa94039621"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab57d5036639de5bdd280e6fa94039621">&#9670;&nbsp;</a></span>GetTemperature()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetTemperature </td>
+          <td class="memname">units::celsius_t frc::ADIS16448_IMU::GetTemperature </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -767,14 +756,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a689a150cc3c0e994da5adfd892b13ef1" name="a689a150cc3c0e994da5adfd892b13ef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a689a150cc3c0e994da5adfd892b13ef1">&#9670;&nbsp;</a></span>GetXComplementaryAngle()</h2>
+<a id="a5ecb3ff1e14f68955096da07e8e66d97" name="a5ecb3ff1e14f68955096da07e8e66d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ecb3ff1e14f68955096da07e8e66d97">&#9670;&nbsp;</a></span>GetXComplementaryAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetXComplementaryAngle </td>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetXComplementaryAngle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -784,14 +773,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a379db6ab96f6365c268f0df9f33b2f3d" name="a379db6ab96f6365c268f0df9f33b2f3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a379db6ab96f6365c268f0df9f33b2f3d">&#9670;&nbsp;</a></span>GetXFilteredAccelAngle()</h2>
+<a id="a267935d3cc239ab01e5da88d270e78ff" name="a267935d3cc239ab01e5da88d270e78ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267935d3cc239ab01e5da88d270e78ff">&#9670;&nbsp;</a></span>GetXFilteredAccelAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetXFilteredAccelAngle </td>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetXFilteredAccelAngle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -818,14 +807,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0423c4cd56a78d517b5f967821923e4e" name="a0423c4cd56a78d517b5f967821923e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0423c4cd56a78d517b5f967821923e4e">&#9670;&nbsp;</a></span>GetYComplementaryAngle()</h2>
+<a id="a3818ad67d18f8b629aff5028577b598e" name="a3818ad67d18f8b629aff5028577b598e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3818ad67d18f8b629aff5028577b598e">&#9670;&nbsp;</a></span>GetYComplementaryAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetYComplementaryAngle </td>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetYComplementaryAngle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -835,14 +824,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aae39484a93aff76aa7a0b14b024e6484" name="aae39484a93aff76aa7a0b14b024e6484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae39484a93aff76aa7a0b14b024e6484">&#9670;&nbsp;</a></span>GetYFilteredAccelAngle()</h2>
+<a id="a11f8423636e9822220a45007b836c4e3" name="a11f8423636e9822220a45007b836c4e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f8423636e9822220a45007b836c4e3">&#9670;&nbsp;</a></span>GetYFilteredAccelAngle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::ADIS16448_IMU::GetYFilteredAccelAngle </td>
+          <td class="memname">units::degree_t frc::ADIS16448_IMU::GetYFilteredAccelAngle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -961,7 +950,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html">ADIS16448_IMU</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 01:57:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Jan 4 2022 04:04:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

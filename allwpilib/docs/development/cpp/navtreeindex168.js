@@ -1,7 +1,5 @@
 var NAVTREEINDEX168 =
 {
-"structfrc_1_1_c_a_n_data.html#ac2515d55e732b243e84d53a440c15899":[5,0,6,28,1],
-"structfrc_1_1_c_a_n_data.html#ac2515d55e732b243e84d53a440c15899":[4,0,9,32,1],
 "structfrc_1_1_c_a_n_status.html":[4,0,9,33],
 "structfrc_1_1_c_a_n_status.html":[5,0,6,29],
 "structfrc_1_1_c_a_n_status.html#a242599daa5e41472276826cb2a1417a0":[4,0,9,33,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX168 =
 "structfrc_1_1_power_distribution_1_1_faults.html#ac528133612b6fd5ce8d4a00495de4414":[4,0,9,142,0,7],
 "structfrc_1_1_power_distribution_1_1_faults.html#ac528133612b6fd5ce8d4a00495de4414":[5,0,6,138,0,7],
 "structfrc_1_1_power_distribution_1_1_faults.html#acc80383bdaceebc9914a8fd025b13df6":[4,0,9,142,0,16],
-"structfrc_1_1_power_distribution_1_1_faults.html#acc80383bdaceebc9914a8fd025b13df6":[5,0,6,138,0,16]
+"structfrc_1_1_power_distribution_1_1_faults.html#acc80383bdaceebc9914a8fd025b13df6":[5,0,6,138,0,16],
+"structfrc_1_1_power_distribution_1_1_faults.html#ae7f3d91fb4b3ebe0a3a02cbea3c57e19":[4,0,9,142,0,8],
+"structfrc_1_1_power_distribution_1_1_faults.html#ae7f3d91fb4b3ebe0a3a02cbea3c57e19":[5,0,6,138,0,8]
 };

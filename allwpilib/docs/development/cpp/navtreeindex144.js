@@ -1,7 +1,5 @@
 var NAVTREEINDEX144 =
 {
-"struct_eigen_1_1internal_1_1evaluator__traits__base.html#a0bf58decc51e23ed3bfb61be37aac375":[5,0,4,2,308,1],
-"struct_eigen_1_1internal_1_1evaluator__traits__base.html#a8a4fe178eeaaf75f72907aac8f4b0b9e":[5,0,4,2,308,0],
 "struct_eigen_1_1internal_1_1evaluator__traits__base.html#a8a4fe178eeaaf75f72907aac8f4b0b9e":[4,0,7,4,310,0],
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html":[5,0,4,2,309],
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html":[4,0,7,4,311],
@@ -249,5 +247,7 @@ var NAVTREEINDEX144 =
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__square__op_3_01bool_01_4_01_4.html":[4,0,7,4,406],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__sum__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[5,0,4,2,406],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__sum__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[4,0,7,4,408],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__tan__op_3_01_scalar_01_4_01_4.html":[4,0,7,4,409]
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__tan__op_3_01_scalar_01_4_01_4.html":[4,0,7,4,409],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__tan__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,407],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__tanh__op_3_01_scalar_01_4_01_4.html":[4,0,7,4,410]
 };

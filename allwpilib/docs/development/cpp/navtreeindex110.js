@@ -1,7 +1,5 @@
 var NAVTREEINDEX110 =
 {
-"group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a26f35234b5274c2d40086610c1cfac72":[3,13,26,5],
-"group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a30a2d3c9949d409348ad1e6d2b7a5b30":[3,13,26,3],
 "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a9336b427e8b017ae95fbd4c851e9cd42":[3,13,26,1],
 "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4aad5221e344f415720cdbb78c365cfa25":[3,13,26,2],
 "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4aae0b83a29ebc3caf6aba12ca3332eb91":[3,13,26,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX110 =
 "group__cscore__source__prop__cfunc.html#ga3e5d9c7b14a218366257ba7b75e69420":[3,13,4,7],
 "group__cscore__source__prop__cfunc.html#ga4bbe4f95ae0a3a37f4885b624bb778d3":[3,13,4,2],
 "group__cscore__source__prop__cfunc.html#ga633d836042486254fba15c6bf83a9ee9":[3,13,4,5],
-"group__cscore__source__prop__cfunc.html#ga9737d69357b99ff5804793ecc17b7fc2":[3,13,4,1]
+"group__cscore__source__prop__cfunc.html#ga9737d69357b99ff5804793ecc17b7fc2":[3,13,4,1],
+"group__cscore__source__prop__cfunc.html#gaad39d7d3442154e38cdfb6291199f67a":[3,13,4,0],
+"group__cscore__telemetry__cfunc.html":[3,13,13]
 };

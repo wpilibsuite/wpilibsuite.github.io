@@ -1,7 +1,5 @@
 var NAVTREEINDEX104 =
 {
-"conductance_8h_source.html":[6,0,12,9],
-"core_8h.html":[6,0,4,0,0,4],
 "core_8h.html#a00a37b07f38260f9b8e417066fd8e002":[6,0,4,0,0,4,206],
 "core_8h.html#a012819c9e8b5e04872a271f50f8b8196":[6,0,4,0,0,4,126],
 "core_8h.html#a02307ec0131a3aa9df2db7c2f10b69f2":[6,0,4,0,0,4,172],
@@ -249,5 +247,7 @@ var NAVTREEINDEX104 =
 "data_8h.html#a67058e255d29c9811c4f442a7bd2eb86":[6,0,12,13,2],
 "data_8h.html#a77b2abc79841f7f67c7bc406b7c5083b":[6,0,12,13,1],
 "data_8h.html#aecc88b3b6cd76d31d268b8b661eaf4a8":[6,0,12,13,3],
-"data_8h_source.html":[6,0,12,13]
+"data_8h_source.html":[6,0,12,13],
+"data__transfer__rate_8h.html":[6,0,12,14],
+"data__transfer__rate_8h.html#a231d8134d8ed3fb36347afe477798d41":[6,0,12,14,5]
 };

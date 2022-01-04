@@ -1,7 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"os_8h.html":[6,0,4,0,0,8],
-"os_8h.html#a4107274242b7f99d9559aabd297f7534":[6,0,4,0,0,8,8],
 "os_8h.html#a54f7e73fc1fc6ded8358c6339b51bde7":[6,0,4,0,0,8,6],
 "os_8h.html#a6fa0773ef89920062fe6ab8b6e3cf337":[6,0,4,0,0,8,3],
 "os_8h.html#a7795db0411b810b2dec7d9f72dca9aad":[6,0,4,0,0,8,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX134 =
 "struct_eigen_1_1_comma_initializer.html#a55b185ca858afa95645cbc4e97030cee":[3,23,30,2],
 "struct_eigen_1_1_comma_initializer.html#a7f68d18e7f7069247aaa7ff43dbcdccb":[3,23,30,7],
 "struct_eigen_1_1_comma_initializer.html#a87dd22a8aa63222a264d263a254255b1":[3,23,30,5],
-"struct_eigen_1_1_comma_initializer.html#a9a6ad628399cc4aa31bafe8df7beb850":[3,23,30,9]
+"struct_eigen_1_1_comma_initializer.html#a9a6ad628399cc4aa31bafe8df7beb850":[3,23,30,9],
+"struct_eigen_1_1_comma_initializer.html#ab31bf5a9a85ca7afd84b7adf4baaaa5a":[3,23,30,8],
+"struct_eigen_1_1_comma_initializer.html#ad737684daf9bc78f2a6527713d2c6e35":[3,23,30,4]
 };

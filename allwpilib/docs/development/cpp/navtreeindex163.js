@@ -1,7 +1,5 @@
 var NAVTREEINDEX163 =
 {
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html#a87825ad5799553ca3c40591899488f89":[5,0,4,2,1378,1],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html#a891eccc16c4a60358cd467c0dad6a906":[5,0,4,2,1378,2],
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html#a891eccc16c4a60358cd467c0dad6a906":[4,0,7,4,1380,2],
 "struct_eigen_1_1internal_1_1unary__result__of__select.html":[4,0,7,4,1381],
 "struct_eigen_1_1internal_1_1unary__result__of__select.html":[5,0,4,2,1379],
@@ -249,5 +247,7 @@ var NAVTREEINDEX163 =
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01const_01_t_01_4.html":[4,0,7,4,1385],
 "struct_eigen_1_1internal_1_1valid__indexed__view__overload.html":[5,0,4,2,1417],
 "struct_eigen_1_1internal_1_1valid__indexed__view__overload.html":[4,0,7,4,1419],
-"struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl.html":[5,0,4,2,1423]
+"struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl.html":[5,0,4,2,1423],
+"struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl.html":[4,0,7,4,1425],
+"struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_horizontal_01_4.html":[5,0,4,2,1424]
 };

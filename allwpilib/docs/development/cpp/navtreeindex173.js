@@ -1,7 +1,5 @@
 var NAVTREEINDEX173 =
 {
-"structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4.html#abdea0c54289234ad97768b66dde0d18d":[5,0,13,43,1],
-"structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4.html#abdea0c54289234ad97768b66dde0d18d":[4,0,20,45,1],
 "structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4.html#afe63c50a0548735f3ef820f7baabd38c":[4,0,20,45,3],
 "structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4.html#afe63c50a0548735f3ef820f7baabd38c":[5,0,13,43,3],
 "structwpi_1_1_dense_map_info_3_01unsigned_01short_01_4.html":[4,0,20,46],
@@ -249,5 +247,7 @@ var NAVTREEINDEX173 =
 "structwpi_1_1detail_1_1_leading_zeros_counter.html":[5,0,13,0,56],
 "structwpi_1_1detail_1_1_leading_zeros_counter.html":[4,0,20,0,56],
 "structwpi_1_1detail_1_1_leading_zeros_counter.html#af7ab1bde20cfa425c4b505fc3771b551":[5,0,13,0,56,0],
-"structwpi_1_1detail_1_1_leading_zeros_counter.html#af7ab1bde20cfa425c4b505fc3771b551":[4,0,20,0,56,0]
+"structwpi_1_1detail_1_1_leading_zeros_counter.html#af7ab1bde20cfa425c4b505fc3771b551":[4,0,20,0,56,0],
+"structwpi_1_1detail_1_1_population_counter.html":[5,0,13,0,60],
+"structwpi_1_1detail_1_1_population_counter.html":[4,0,20,0,60]
 };
