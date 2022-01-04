@@ -11,6 +11,7 @@ var group__hal__encoder =
     [ "HAL_GetEncoderEncodingScale", "group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6", null ],
     [ "HAL_GetEncoderEncodingType", "group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40", null ],
     [ "HAL_GetEncoderFPGAIndex", "group__hal__encoder.html#gab6488dae8c6071fd9922808afc031cfd", null ],
+    [ "HAL_GetEncoderPeriod", "group__hal__encoder.html#gad859111d75e05ba26d40b958a6a16095", null ],
     [ "HAL_GetEncoderRate", "group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff", null ],
     [ "HAL_GetEncoderRaw", "group__hal__encoder.html#ga3fab873a71e053508ecd012a3896b364", null ],
     [ "HAL_GetEncoderSamplesToAverage", "group__hal__encoder.html#ga59cc1f78976c7c4f0f483a42dfe43caa", null ],

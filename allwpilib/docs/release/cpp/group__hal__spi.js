@@ -2,6 +2,7 @@ var group__hal__spi =
 [
     [ "HAL_CloseSPI", "group__hal__spi.html#ga6c79f2c1a53777af8912dd29efe6f78e", null ],
     [ "HAL_ConfigureSPIAutoStall", "group__hal__spi.html#ga21450e78e5744b36151025a62aa07c22", null ],
+    [ "HAL_ENUM", "group__hal__spi.html#gae58880a5ca64d2a518180674610928a7", null ],
     [ "HAL_ForceSPIAutoRead", "group__hal__spi.html#ga9e3235810dce4e090c20a2a0e58ea29a", null ],
     [ "HAL_FreeSPIAuto", "group__hal__spi.html#ga116f6ccb289a6d820cc76e3097a2c025", null ],
     [ "HAL_GetSPIAutoDroppedCount", "group__hal__spi.html#gad60d88465ec0e71d9252ad00d8a7ab27", null ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['httpcamera_20source_20functions_7967',['HttpCamera Source Functions',['../group__cscore__httpcamera__cfunc.html',1,'']]],
-  ['httpcamera_20source_20functions_7968',['HttpCamera Source Functions',['../group__cscore__httpcamera__func.html',1,'']]]
+  ['global_20array_20typedefs_0',['Global array typedefs',['../group__arraytypedefs.html',1,'']]],
+  ['global_20matrix_20typedefs_1',['Global matrix typedefs',['../group__matrixtypedefs.html',1,'']]]
 ];

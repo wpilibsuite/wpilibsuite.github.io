@@ -1,7 +1,7 @@
 var group__ntcore__network__cfunc =
 [
     [ "NT_Flush", "group__ntcore__network__cfunc.html#ga96c81880381677551aa73a1aceb2a781", null ],
-    [ "NT_GetConnections", "group__ntcore__network__cfunc.html#gaa8e44803f2a46e10f3bdf48c1b8a6a4b", null ],
+    [ "NT_GetConnections", "group__ntcore__network__cfunc.html#gae4abb8a32eb89eb80fc92e4d1b529281", null ],
     [ "NT_GetNetworkMode", "group__ntcore__network__cfunc.html#ga7043e1a9b1a13717832fb5a27b69bb24", null ],
     [ "NT_IsConnected", "group__ntcore__network__cfunc.html#gaa6697890b18a4b8b827b415bb4e4914b", null ],
     [ "NT_SetNetworkIdentity", "group__ntcore__network__cfunc.html#ga70d53212d78cbfea099ba7751609c7b1", null ],

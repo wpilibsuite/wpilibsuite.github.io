@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['queuework_6734',['QueueWork',['../classwpi_1_1WorkerThread_3_01R_07T_8_8_8_08_4.html#aad199f0079b7ccc0040fb36054817a0b',1,'wpi::WorkerThread&lt; R(T...)&gt;']]],
-  ['queueworkthen_6735',['QueueWorkThen',['../classwpi_1_1WorkerThread_3_01R_07T_8_8_8_08_4.html#a7ea6f74c3cca7b95f0c0a59f8725a288',1,'wpi::WorkerThread&lt; R(T...)&gt;']]],
-  ['quintichermitespline_6736',['QuinticHermiteSpline',['../classfrc_1_1QuinticHermiteSpline.html#a6f479f9d7e447c856722d05964d33bb1',1,'frc::QuinticHermiteSpline']]],
-  ['quinticsplinesfromcontrolvectors_6737',['QuinticSplinesFromControlVectors',['../classfrc_1_1SplineHelper.html#a6b72f5212a0d0012eb62102c97f62d38',1,'frc::SplineHelper']]],
-  ['quinticsplinesfromwaypoints_6738',['QuinticSplinesFromWaypoints',['../classfrc_1_1SplineHelper.html#af1b57c0205789a127f32dcfca8f894fd',1,'frc::SplineHelper']]]
+  ['querycachesizes_0',['queryCacheSizes',['../namespace_eigen_1_1internal.html#a3a3f70166790e15844d6b9804f84f952',1,'Eigen::internal']]],
+  ['queryl1cachesize_1',['queryL1CacheSize',['../namespace_eigen_1_1internal.html#abc24477d9f0a7445aa8ece2b5b7a0b7b',1,'Eigen::internal']]],
+  ['querytoplevelcachesize_2',['queryTopLevelCacheSize',['../namespace_eigen_1_1internal.html#ab12a6ee511234693252cf02dfef07899',1,'Eigen::internal']]],
+  ['queuework_3',['QueueWork',['../classwpi_1_1_worker_thread_3_01_r_07_t_8_8_8_08_4.html#a572a2a71fb79402493891d52cfe146d2',1,'wpi::WorkerThread&lt; R(T...)&gt;::QueueWork()'],['../namespacewpi_1_1uv.html#ab509dab8b7b2189d66857d09ffe37036',1,'wpi::uv::QueueWork(const std::shared_ptr&lt; Loop &gt; &amp;loop, std::function&lt; void()&gt; work, std::function&lt; void()&gt; afterWork)'],['../namespacewpi_1_1uv.html#a8265cfdcc118df24dc08c92830805967',1,'wpi::uv::QueueWork(Loop &amp;loop, std::function&lt; void()&gt; work, std::function&lt; void()&gt; afterWork)'],['../namespacewpi_1_1uv.html#ab530fe6af79260b0fe47ee837dd92a6d',1,'wpi::uv::QueueWork(const std::shared_ptr&lt; Loop &gt; &amp;loop, const std::shared_ptr&lt; WorkReq &gt; &amp;req)'],['../namespacewpi_1_1uv.html#a517565ddbb3c0fea140a6ec60c7c9a47',1,'wpi::uv::QueueWork(Loop &amp;loop, const std::shared_ptr&lt; WorkReq &gt; &amp;req)']]],
+  ['queueworkthen_4',['QueueWorkThen',['../classwpi_1_1_worker_thread_3_01_r_07_t_8_8_8_08_4.html#a7ea6f74c3cca7b95f0c0a59f8725a288',1,'wpi::WorkerThread&lt; R(T...)&gt;']]],
+  ['quiet_5fnan_5',['quiet_NaN',['../struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#ac2d4700de7b9dcd85b8eb4aca7b16a17',1,'Eigen::NumTraits&lt; Eigen::bfloat16 &gt;::quiet_NaN()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#accb460d73bdc0bc29a06f9e206912eb6',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::quiet_NaN()'],['../struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#ab0df6ec64ad44709ddc3b6e544054303',1,'Eigen::NumTraits&lt; Eigen::half &gt;::quiet_NaN()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a985f4f39490ac49ac256b3961c211202',1,'std::numeric_limits&lt; Eigen::half &gt;::quiet_NaN()']]],
+  ['quintichermitespline_6',['QuinticHermiteSpline',['../classfrc_1_1_quintic_hermite_spline.html#a6f479f9d7e447c856722d05964d33bb1',1,'frc::QuinticHermiteSpline']]],
+  ['quinticsplinesfromcontrolvectors_7',['QuinticSplinesFromControlVectors',['../classfrc_1_1_spline_helper.html#ab4b137dbd882255abb7dd1652832eda5',1,'frc::SplineHelper']]],
+  ['quinticsplinesfromwaypoints_8',['QuinticSplinesFromWaypoints',['../classfrc_1_1_spline_helper.html#af421996e855218928f10cdf13f20b97d',1,'frc::SplineHelper']]],
+  ['quotientexpr_9',['QuotientExpr',['../class_eigen_1_1symbolic_1_1_quotient_expr.html#a2a1dd7bc7a9118a322025a6dc5c7ebc9',1,'Eigen::symbolic::QuotientExpr']]]
 ];

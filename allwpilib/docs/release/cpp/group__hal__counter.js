@@ -6,6 +6,7 @@ var group__hal__counter =
     [ "HAL_FreeCounter", "group__hal__counter.html#ga724a5d5311c14b01d2be1830d52e7d8b", null ],
     [ "HAL_GetCounter", "group__hal__counter.html#gaf1a2a0232c5618658b2e16f22cfb0b7d", null ],
     [ "HAL_GetCounterDirection", "group__hal__counter.html#gafca99ba15ca87f9bf67207b3f220b3dc", null ],
+    [ "HAL_GetCounterPeriod", "group__hal__counter.html#gacd9854946b5495a52c2f27ee0c72c04d", null ],
     [ "HAL_GetCounterSamplesToAverage", "group__hal__counter.html#ga8b2212c603ffd7a87b667c0224b7baad", null ],
     [ "HAL_GetCounterStopped", "group__hal__counter.html#ga6d12b6d57ef82211521afb0054261314", null ],
     [ "HAL_InitializeCounter", "group__hal__counter.html#ga65ce41f9ef724a350f1809598286fb6d", null ],

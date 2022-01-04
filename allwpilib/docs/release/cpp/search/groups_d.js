@@ -1,17 +1,8 @@
 var searchData=
 [
-  ['sink_20functions_8003',['Sink Functions',['../group__cscore__sink__cfunc.html',1,'']]],
-  ['sink_20creation_20functions_8004',['Sink Creation Functions',['../group__cscore__sink__create__cfunc.html',1,'']]],
-  ['sink_20creation_20functions_8005',['Sink Creation Functions',['../group__cscore__sink__create__func.html',1,'']]],
-  ['sink_20functions_8006',['Sink Functions',['../group__cscore__sink__func.html',1,'']]],
-  ['source_20functions_8007',['Source Functions',['../group__cscore__source__cfunc.html',1,'']]],
-  ['source_20creation_20functions_8008',['Source Creation Functions',['../group__cscore__source__create__cfunc.html',1,'']]],
-  ['source_20creation_20functions_8009',['Source Creation Functions',['../group__cscore__source__create__func.html',1,'']]],
-  ['source_20functions_8010',['Source Functions',['../group__cscore__source__func.html',1,'']]],
-  ['simulator_20extensions_8011',['Simulator Extensions',['../group__hal__extensions.html',1,'']]],
-  ['serial_20port_20functions_8012',['Serial Port Functions',['../group__hal__serialport.html',1,'']]],
-  ['simulator_20device_20framework_8013',['Simulator Device Framework',['../group__hal__simdevice.html',1,'']]],
-  ['solenoid_20output_20functions_8014',['Solenoid Output Functions',['../group__hal__solenoid.html',1,'']]],
-  ['spi_20functions_8015',['SPI Functions',['../group__hal__spi.html',1,'']]],
-  ['set_20default_20values_8016',['Set Default Values',['../group__ntcore__setdefault__cfunc.html',1,'']]]
+  ['ports_20functions_0',['Ports Functions',['../group__hal__ports.html',1,'']]],
+  ['power_20distribution_20functions_1',['Power Distribution Functions',['../group__hal__pd.html',1,'']]],
+  ['power_20functions_2',['Power Functions',['../group__hal__power.html',1,'']]],
+  ['property_20functions_3',['Property Functions',['../group__cscore__property__cfunc.html',1,'(Global Namespace)'],['../group__cscore__property__func.html',1,'(Global Namespace)']]],
+  ['pwm_20output_20functions_4',['PWM Output Functions',['../group__hal__pwm.html',1,'']]]
 ];

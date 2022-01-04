@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['null_7898',['null',['../namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788a37a6259cc0c1dae299a7866489dff0bd',1,'wpi::detail']]],
-  ['number_5ffloat_7899',['number_float',['../namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788ad9966ecb59667235a57b4b999a649eef',1,'wpi::detail']]],
-  ['number_5finteger_7900',['number_integer',['../namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788a5763da164f8659d94a56e29df64b4bcc',1,'wpi::detail']]],
-  ['number_5funsigned_7901',['number_unsigned',['../namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788adce7cc8ec29055c4158828921f2f265e',1,'wpi::detail']]]
+  ['gainsboro_0',['gainsboro',['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca2ca891b27d02c8a2fea622359be7c4dd',1,'color.h']]],
+  ['gebppacketfull_1',['GEBPPacketFull',['../namespace_eigen_1_1internal.html#a8257011cae49b2992df612e2ae92d912a9586773fd5a366257f484da9a5e59fb3',1,'Eigen::internal']]],
+  ['gebppackethalf_2',['GEBPPacketHalf',['../namespace_eigen_1_1internal.html#a8257011cae49b2992df612e2ae92d912a379c2f4a26b2c7ff52f0631a99784f49',1,'Eigen::internal']]],
+  ['gebppacketquarter_3',['GEBPPacketQuarter',['../namespace_eigen_1_1internal.html#a8257011cae49b2992df612e2ae92d912a430046160a17c8fda9047751c256c279',1,'Eigen::internal']]],
+  ['gemmproduct_4',['GemmProduct',['../namespace_eigen.html#a15a3e26ba06f3c60d2f2e46f56045f27ab5d51f933a93d8a2f8bc6ec7f8f2bd7a',1,'Eigen']]],
+  ['gemvpacketfull_5',['GEMVPacketFull',['../namespace_eigen_1_1internal.html#aa577026891cdad5030881ca8a7b278fda5a0f6f744f9ef42dee38fd9d82e6c502',1,'Eigen::internal']]],
+  ['gemvpackethalf_6',['GEMVPacketHalf',['../namespace_eigen_1_1internal.html#aa577026891cdad5030881ca8a7b278fdac7780d1a5fc7b5b3ec645955fc982440',1,'Eigen::internal']]],
+  ['gemvpacketquarter_7',['GEMVPacketQuarter',['../namespace_eigen_1_1internal.html#aa577026891cdad5030881ca8a7b278fdaca1001b94b7684cc3006da997d9b46b4',1,'Eigen::internal']]],
+  ['gemvproduct_8',['GemvProduct',['../namespace_eigen.html#a15a3e26ba06f3c60d2f2e46f56045f27a11dd4c4050b374f570224e2f708bc699',1,'Eigen']]],
+  ['geneigmask_9',['GenEigMask',['../group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a2cd73a7e08a5f26915a562a7f88c6465',1,'Eigen']]],
+  ['general_10',['general',['../core_8h.html#a824a8e3e13800e82ebdc3fb042eeed91a958153f1b8b96ec4c4eb2147429105d9',1,'core.h']]],
+  ['generic_11',['Generic',['../namespace_eigen_1_1_architecture.html#ae54c092bdb3a978b9aa8cc50dcafc13ca528dc998729cc443a8784b971249d00e',1,'Eigen::Architecture']]],
+  ['getaction_12',['GetAction',['../namespace_eigen.html#a3cbc3ee52075935e7854d9f65c5a8e03a50e0300a7050ebe879b82484f89efb68',1,'Eigen']]],
+  ['ghost_5fwhite_13',['ghost_white',['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca396d120e4c6a21d1fad9cd2a57802a6c',1,'color.h']]],
+  ['gold_14',['gold',['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cae07e81c20cf5935f5225765f0af81755',1,'color.h']]],
+  ['golden_5frod_15',['golden_rod',['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca8f0b108fa3efae8069bfeecaef1f0330',1,'color.h']]],
+  ['gpu_5ftensor_5fcontraction_5fdoes_5fnot_5fsupport_5foutput_5fkernels_16',['GPU_TENSOR_CONTRACTION_DOES_NOT_SUPPORT_OUTPUT_KERNELS',['../struct_eigen_1_1internal_1_1static__assertion_3_01true_01_4.html#ac3a4baec595772be27c68dbdfed60c0aa6587df9e1e8966ceca06efb8b368cba7',1,'Eigen::internal::static_assertion&lt; true &gt;']]],
+  ['gray_17',['gray',['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cacda7a650c5856cf2f6738072447d7825',1,'color.h']]],
+  ['green_18',['GREEN',['../classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a303c195beced10c2ac6955347d67587c',1,'wpi::raw_ostream']]],
+  ['green_19',['green',['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a76f7aa9aae46c2ea7333dae7b531d6aca9f27410725ab8cc8854a2769c7a516b8',1,'green():&#160;color.h'],['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca9f27410725ab8cc8854a2769c7a516b8',1,'green():&#160;color.h']]],
+  ['green_5fyellow_20',['green_yellow',['../wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cad3472adca7f1b0edf7dc5d99bd79bb9e',1,'color.h']]],
+  ['group_5fall_21',['group_all',['../namespaceghc_1_1filesystem.html#a2dd23f153d201e7557a43c7644ccf44aae177de190fd9bcd01e4f8934f58dfa5c',1,'ghc::filesystem']]],
+  ['group_5fexec_22',['group_exec',['../namespaceghc_1_1filesystem.html#a2dd23f153d201e7557a43c7644ccf44aa314d3c6602524dddf70432b0ece937a8',1,'ghc::filesystem']]],
+  ['group_5fread_23',['group_read',['../namespaceghc_1_1filesystem.html#a2dd23f153d201e7557a43c7644ccf44aa25103dc0b7bf4bb70a12fdc9ae83b5dc',1,'ghc::filesystem']]],
+  ['group_5fwrite_24',['group_write',['../namespaceghc_1_1filesystem.html#a2dd23f153d201e7557a43c7644ccf44aacf5f2e0341d3d21a4bc073c8eb8a25fa',1,'ghc::filesystem']]]
 ];

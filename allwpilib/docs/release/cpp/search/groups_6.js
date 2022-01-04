@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['i2c_20functions_7969',['I2C Functions',['../group__hal__i2c.html',1,'']]],
-  ['interrupts_20functions_7970',['Interrupts Functions',['../group__hal__interrupts.html',1,'']]],
-  ['instance_20functions_7971',['Instance Functions',['../group__ntcore__instance__cfunc.html',1,'']]],
-  ['instance_20functions_7972',['Instance Functions',['../group__ntcore__instance__func.html',1,'']]],
-  ['interop_20utility_20functions_7973',['Interop Utility Functions',['../group__ntcore__interop__cfunc.html',1,'']]]
+  ['householder_20module_0',['Householder module',['../group___householder___module.html',1,'']]],
+  ['httpcamera_20source_20functions_1',['HttpCamera Source Functions',['../group__cscore__httpcamera__cfunc.html',1,'(Global Namespace)'],['../group__cscore__httpcamera__func.html',1,'(Global Namespace)']]]
 ];

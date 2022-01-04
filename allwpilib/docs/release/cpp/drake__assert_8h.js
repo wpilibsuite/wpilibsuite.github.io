@@ -1,6 +1,6 @@
 var drake__assert_8h =
 [
-    [ "ConditionTraits", "structdrake_1_1assert_1_1ConditionTraits.html", "structdrake_1_1assert_1_1ConditionTraits" ],
+    [ "drake::assert::ConditionTraits< Condition >", "structdrake_1_1assert_1_1_condition_traits.html", "structdrake_1_1assert_1_1_condition_traits" ],
     [ "DRAKE_ASSERT", "drake__assert_8h.html#a0d126d5c79d6e74d5f03f8c81e4b3a63", null ],
     [ "DRAKE_ASSERT_IS_ARMED", "drake__assert_8h.html#a5b5f61792fe51f289ef43521b8ceaf26", null ],
     [ "DRAKE_ASSERT_VOID", "drake__assert_8h.html#a53797785bb2511ded7061028fcca65c5", null ],

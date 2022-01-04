@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['end_7914',['end',['../classwpi_1_1sys_1_1path_1_1const__iterator.html#a8a503d1cbee10d1b8c8f5ac2a03b90df',1,'wpi::sys::path::const_iterator']]],
-  ['equivalent_7915',['equivalent',['../classwpi_1_1sys_1_1fs_1_1file__status.html#a9cadf207fcfd9702ec20d6b20c2bfeaf',1,'wpi::sys::fs::file_status']]],
-  ['errorcodetoerror_7916',['errorCodeToError',['../classwpi_1_1ECError.html#abd3ceb8d2e68a229b0343d162b08bd53',1,'wpi::ECError']]]
+  ['basic_5fformat_5fargs_3c_20context_20_3e_0',['basic_format_args&lt; Context &gt;',['../classdynamic__format__arg__store.html#ab8e9e33cc7b78829001a86ef6110ebb6',1,'dynamic_format_arg_store::basic_format_args&lt; Context &gt;()'],['../classbasic__format__arg.html#ab8e9e33cc7b78829001a86ef6110ebb6',1,'basic_format_arg::basic_format_args&lt; Context &gt;()'],['../classformat__arg__store.html#ab8e9e33cc7b78829001a86ef6110ebb6',1,'format_arg_store::basic_format_args&lt; Context &gt;()']]],
+  ['bg_1',['bg',['../classtext__style.html#a0e774baca51b1026d9e413e49789f6bd',1,'text_style']]]
 ];
