@@ -1,5 +1,7 @@
 var NAVTREEINDEX108 =
 {
+"functions_func_t.html":[5,3,1,20],
+"functions_func_u.html":[5,3,1,21],
 "functions_func_v.html":[5,3,1,22],
 "functions_func_w.html":[5,3,1,23],
 "functions_func_x.html":[5,3,1,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX108 =
 "group___matrix_functions___module.html#matrixbase_pow":[3,30,13,0,0,4],
 "group___matrix_functions___module.html#matrixbase_pow":[0,4],
 "group___matrix_functions___module.html#matrixbase_sin":[3,30,13,0,6],
-"group___matrix_functions___module.html#matrixbase_sin":[3,30,13,0,0,6],
-"group___matrix_functions___module.html#matrixbase_sin":[0,6],
-"group___matrix_functions___module.html#matrixbase_sinh":[0,7]
+"group___matrix_functions___module.html#matrixbase_sin":[3,30,13,0,0,6]
 };

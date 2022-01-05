@@ -1,6 +1,7 @@
 var classfrc_1_1sim_1_1_linear_system_sim =
 [
     [ "LinearSystemSim", "classfrc_1_1sim_1_1_linear_system_sim.html#a3d62ff6432a0512b39fe9c7a431db483", null ],
+    [ "~LinearSystemSim", "classfrc_1_1sim_1_1_linear_system_sim.html#addbf5fdae866bd6dddddcc2e00ab0205", null ],
     [ "ClampInput", "classfrc_1_1sim_1_1_linear_system_sim.html#a4099eb596462acc74663e2f11868529a", null ],
     [ "GetCurrentDraw", "classfrc_1_1sim_1_1_linear_system_sim.html#af5bb34cd6e847c0c167d060fb6ef54b8", null ],
     [ "GetOutput", "classfrc_1_1sim_1_1_linear_system_sim.html#ae2e2edcc10c643e4010df537e997a30a", null ],

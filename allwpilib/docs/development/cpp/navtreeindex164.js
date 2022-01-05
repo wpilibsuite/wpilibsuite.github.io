@@ -1,5 +1,7 @@
 var NAVTREEINDEX164 =
 {
+"struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl.html":[4,0,7,4,1425],
+"struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_horizontal_01_4.html":[5,0,4,2,1424],
 "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_horizontal_01_4.html":[4,0,7,4,1426],
 "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_horizontal_01_4.html#af29b95ed902a8adad594cd29f7dde0f9":[5,0,4,2,1424,0],
 "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_horizontal_01_4.html#af29b95ed902a8adad594cd29f7dde0f9":[4,0,7,4,1426,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX164 =
 "struct_n_t___connection_notification.html":[3,10,19],
 "struct_n_t___connection_notification.html#a46228561287d59ee9191f74270a58967":[3,10,19,0],
 "struct_n_t___connection_notification.html#a94cc2f3b8a74683859f14f9d5a9c1ea1":[3,10,19,2],
-"struct_n_t___connection_notification.html#a9f0adeeeb6e0d91b9f9231b8784bf0a0":[3,10,19,1],
-"struct_n_t___entry_info.html":[3,10,12],
-"struct_n_t___entry_info.html#a19a2b64fd95a95949870b750dfa89b70":[3,10,12,2]
+"struct_n_t___connection_notification.html#a9f0adeeeb6e0d91b9f9231b8784bf0a0":[3,10,19,1]
 };
