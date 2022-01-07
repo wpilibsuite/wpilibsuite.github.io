@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-rc-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1</span>
    </div>
   </td>
  </tr>
@@ -172,6 +172,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11bc51e472e18e4bf9e96a11246577cf"><td class="memItemLeft" align="right" valign="top">units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a11bc51e472e18e4bf9e96a11246577cf">GetAngle</a> () const</td></tr>
 <tr class="memdesc:a11bc51e472e18e4bf9e96a11246577cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the yaw axis angle in degrees (CCW positive).  <a href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a11bc51e472e18e4bf9e96a11246577cf">More...</a><br /></td></tr>
 <tr class="separator:a11bc51e472e18e4bf9e96a11246577cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa3468adc596094462263f0701b8361"><td class="memItemLeft" align="right" valign="top">units::degrees_per_second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a4aa3468adc596094462263f0701b8361">GetRate</a> () const</td></tr>
+<tr class="memdesc:a4aa3468adc596094462263f0701b8361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the yaw axis angular rate in degrees per second (CCW positive).  <a href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a4aa3468adc596094462263f0701b8361">More...</a><br /></td></tr>
+<tr class="separator:a4aa3468adc596094462263f0701b8361"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb8f22f15f8ab07585282ed396dd9a68"><td class="memItemLeft" align="right" valign="top">units::meters_per_second_squared_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#acb8f22f15f8ab07585282ed396dd9a68">GetAccelX</a> () const</td></tr>
 <tr class="memdesc:acb8f22f15f8ab07585282ed396dd9a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the acceleration in the X axis.  <a href="classfrc_1_1_a_d_i_s16470___i_m_u.html#acb8f22f15f8ab07585282ed396dd9a68">More...</a><br /></td></tr>
 <tr class="separator:acb8f22f15f8ab07585282ed396dd9a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,7 +384,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Allows the <a class="el" href="classfrc_1_1_s_p_i.html" title="SPI bus interface class.">SPI</a> port and CS to be customized, the yaw axis used for <a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a11bc51e472e18e4bf9e96a11246577cf" title="Returns the yaw axis angle in degrees (CCW positive).">GetAngle()</a> is adjustable, and initial calibration time can be modified.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">yaw_axis</td><td>Selects the "default" axis to use for <a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a11bc51e472e18e4bf9e96a11246577cf" title="Returns the yaw axis angle in degrees (CCW positive).">GetAngle()</a> and GetRate()</td></tr>
+    <tr><td class="paramname">yaw_axis</td><td>Selects the "default" axis to use for <a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a11bc51e472e18e4bf9e96a11246577cf" title="Returns the yaw axis angle in degrees (CCW positive).">GetAngle()</a> and <a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#a4aa3468adc596094462263f0701b8361" title="Returns the yaw axis angular rate in degrees per second (CCW positive).">GetRate()</a></td></tr>
     <tr><td class="paramname">port</td><td>The <a class="el" href="classfrc_1_1_s_p_i.html" title="SPI bus interface class.">SPI</a> port and CS where the IMU is connected.</td></tr>
     <tr><td class="paramname">cal_time</td><td>The calibration time that should be used on start-up. </td></tr>
   </table>
@@ -598,6 +601,25 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4aa3468adc596094462263f0701b8361" name="a4aa3468adc596094462263f0701b8361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa3468adc596094462263f0701b8361">&#9670;&nbsp;</a></span>GetRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::degrees_per_second_t frc::ADIS16470_IMU::GetRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the yaw axis angular rate in degrees per second (CCW positive). </p>
+
+</div>
+</div>
 <a id="afe4edae08c40af5c6427a2905c7bd21a" name="afe4edae08c40af5c6427a2905c7bd21a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe4edae08c40af5c6427a2905c7bd21a">&#9670;&nbsp;</a></span>GetXComplementaryAngle()</h2>
 
@@ -807,7 +829,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html">ADIS16470_IMU</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 05:29:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jan 7 2022 05:57:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

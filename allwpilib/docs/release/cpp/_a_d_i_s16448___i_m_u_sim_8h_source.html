@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-rc-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1</span>
    </div>
   </td>
  </tr>
@@ -145,37 +145,61 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_sim_8h_source.ht
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a0652207da316c235c7d2db1f805f73c0">   49</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a0652207da316c235c7d2db1f805f73c0">SetGyroAngleZ</a>(units::degree_t angle);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * Sets the X axis acceleration.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * Sets the X axis angular rate (CCW positive).</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * @param accel The acceleration.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * @param angularRate The angular rate.</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a851b305883b3f825a040ab79c849eb84">   56</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a851b305883b3f825a040ab79c849eb84">SetAccelX</a>(units::meters_per_second_squared_t accel);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a5d3b01fb8724cf1af757e5375221d65d">   56</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a5d3b01fb8724cf1af757e5375221d65d">SetGyroRateX</a>(units::degrees_per_second_t angularRate);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * Sets the Y axis acceleration.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * Sets the Y axis angular rate (CCW positive).</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @param accel The acceleration.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @param angularRate The angular rate.</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#afb95011880315f4e67f372de1d5f91fc">   63</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#afb95011880315f4e67f372de1d5f91fc">SetAccelY</a>(units::meters_per_second_squared_t accel);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a659441fc2276c95f13d064c3a13fed56">   63</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a659441fc2276c95f13d064c3a13fed56">SetGyroRateY</a>(units::degrees_per_second_t angularRate);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * Sets the Z axis acceleration.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * Sets the Z axis angular rate (CCW positive).</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   * @param accel The acceleration.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   * @param angularRate The angular rate.</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a85731cdba488c6397996f768f2e10297">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a85731cdba488c6397996f768f2e10297">SetAccelZ</a>(units::meters_per_second_squared_t accel);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  hal::SimDouble m_simGyroAngleX;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  hal::SimDouble m_simGyroAngleY;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  hal::SimDouble m_simGyroAngleZ;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  hal::SimDouble m_simAccelX;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  hal::SimDouble m_simAccelY;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  hal::SimDouble m_simAccelZ;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}  <span class="comment">// namespace sim</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#ad5ec3279dcfc78456b47211fd716fefb">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#ad5ec3279dcfc78456b47211fd716fefb">SetGyroRateZ</a>(units::degrees_per_second_t angularRate);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"></span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   * Sets the X axis acceleration.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   * @param accel The acceleration.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a851b305883b3f825a040ab79c849eb84">   77</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a851b305883b3f825a040ab79c849eb84">SetAccelX</a>(units::meters_per_second_squared_t accel);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * Sets the Y axis acceleration.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">   * @param accel The acceleration.</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#afb95011880315f4e67f372de1d5f91fc">   84</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#afb95011880315f4e67f372de1d5f91fc">SetAccelY</a>(units::meters_per_second_squared_t accel);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">   * Sets the Z axis acceleration.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">   * @param accel The acceleration.</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a85731cdba488c6397996f768f2e10297">   91</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a85731cdba488c6397996f768f2e10297">SetAccelZ</a>(units::meters_per_second_squared_t accel);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  hal::SimDouble m_simGyroAngleX;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  hal::SimDouble m_simGyroAngleY;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  hal::SimDouble m_simGyroAngleZ;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  hal::SimDouble m_simGyroRateX;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  hal::SimDouble m_simGyroRateY;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  hal::SimDouble m_simGyroRateZ;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  hal::SimDouble m_simAccelX;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  hal::SimDouble m_simAccelY;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  hal::SimDouble m_simAccelZ;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}  <span class="comment">// namespace sim</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_sim_device_8h_html"><div class="ttname"><a href="_sim_device_8h.html">SimDevice.h</a></div></div>
 <div class="ttc" id="aacceleration_8h_html"><div class="ttname"><a href="acceleration_8h.html">acceleration.h</a></div></div>
 <div class="ttc" id="aangle_8h_html"><div class="ttname"><a href="angle_8h.html">angle.h</a></div></div>
@@ -183,10 +207,13 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_sim_8h_source.ht
 <div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html">frc::ADIS16448_IMU</a></div><div class="ttdoc">Use DMA SPI to read rate, acceleration, and magnetometer data from the ADIS16448 IMU and return the r...</div><div class="ttdef"><b>Definition:</b> ADIS16448_IMU.h:57</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html">frc::sim::ADIS16448_IMUSim</a></div><div class="ttdoc">Class to control a simulated ADIS16448 IMU.</div><div class="ttdef"><b>Definition:</b> ADIS16448_IMUSim.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_a0652207da316c235c7d2db1f805f73c0"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a0652207da316c235c7d2db1f805f73c0">frc::sim::ADIS16448_IMUSim::SetGyroAngleZ</a></div><div class="ttdeci">void SetGyroAngleZ(units::degree_t angle)</div><div class="ttdoc">Sets the Z axis angle (CCW positive).</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_a5d3b01fb8724cf1af757e5375221d65d"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a5d3b01fb8724cf1af757e5375221d65d">frc::sim::ADIS16448_IMUSim::SetGyroRateX</a></div><div class="ttdeci">void SetGyroRateX(units::degrees_per_second_t angularRate)</div><div class="ttdoc">Sets the X axis angular rate (CCW positive).</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_a659441fc2276c95f13d064c3a13fed56"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a659441fc2276c95f13d064c3a13fed56">frc::sim::ADIS16448_IMUSim::SetGyroRateY</a></div><div class="ttdeci">void SetGyroRateY(units::degrees_per_second_t angularRate)</div><div class="ttdoc">Sets the Y axis angular rate (CCW positive).</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_a72660b259be8d1dfc66de24100c35c1d"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a72660b259be8d1dfc66de24100c35c1d">frc::sim::ADIS16448_IMUSim::SetGyroAngleY</a></div><div class="ttdeci">void SetGyroAngleY(units::degree_t angle)</div><div class="ttdoc">Sets the Y axis angle (CCW positive).</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_a851b305883b3f825a040ab79c849eb84"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a851b305883b3f825a040ab79c849eb84">frc::sim::ADIS16448_IMUSim::SetAccelX</a></div><div class="ttdeci">void SetAccelX(units::meters_per_second_squared_t accel)</div><div class="ttdoc">Sets the X axis acceleration.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_a85731cdba488c6397996f768f2e10297"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a85731cdba488c6397996f768f2e10297">frc::sim::ADIS16448_IMUSim::SetAccelZ</a></div><div class="ttdeci">void SetAccelZ(units::meters_per_second_squared_t accel)</div><div class="ttdoc">Sets the Z axis acceleration.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_a8f99b9dacf1256948f89260fba88549a"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#a8f99b9dacf1256948f89260fba88549a">frc::sim::ADIS16448_IMUSim::ADIS16448_IMUSim</a></div><div class="ttdeci">ADIS16448_IMUSim(const ADIS16448_IMU &amp;imu)</div><div class="ttdoc">Constructs from a ADIS16448_IMU object.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_ad5ec3279dcfc78456b47211fd716fefb"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#ad5ec3279dcfc78456b47211fd716fefb">frc::sim::ADIS16448_IMUSim::SetGyroRateZ</a></div><div class="ttdeci">void SetGyroRateZ(units::degrees_per_second_t angularRate)</div><div class="ttdoc">Sets the Z axis angular rate (CCW positive).</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_ae34f7c5dc88889a986db6cb9d31c04d3"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#ae34f7c5dc88889a986db6cb9d31c04d3">frc::sim::ADIS16448_IMUSim::SetGyroAngleX</a></div><div class="ttdeci">void SetGyroAngleX(units::degree_t angle)</div><div class="ttdoc">Sets the X axis angle (CCW positive).</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim_html_afb95011880315f4e67f372de1d5f91fc"><div class="ttname"><a href="classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html#afb95011880315f4e67f372de1d5f91fc">frc::sim::ADIS16448_IMUSim::SetAccelY</a></div><div class="ttdeci">void SetAccelY(units::meters_per_second_squared_t accel)</div><div class="ttdoc">Sets the Y axis acceleration.</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
@@ -196,7 +223,7 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_sim_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_a_d_i_s16448___i_m_u_sim_8h.html">ADIS16448_IMUSim.h</a></li>
-    <li class="footer">Generated on Tue Jan 4 2022 05:28:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jan 7 2022 05:57:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

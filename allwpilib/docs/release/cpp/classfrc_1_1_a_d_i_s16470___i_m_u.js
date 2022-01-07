@@ -31,6 +31,7 @@ var classfrc_1_1_a_d_i_s16470___i_m_u =
     [ "GetAccelZ", "classfrc_1_1_a_d_i_s16470___i_m_u.html#af92972dcfe5237adaad8c148792a0ef2", null ],
     [ "GetAngle", "classfrc_1_1_a_d_i_s16470___i_m_u.html#a11bc51e472e18e4bf9e96a11246577cf", null ],
     [ "GetPort", "classfrc_1_1_a_d_i_s16470___i_m_u.html#aa8a86e9ae2ea8f41ab1a30e81db5dd73", null ],
+    [ "GetRate", "classfrc_1_1_a_d_i_s16470___i_m_u.html#a4aa3468adc596094462263f0701b8361", null ],
     [ "GetXComplementaryAngle", "classfrc_1_1_a_d_i_s16470___i_m_u.html#afe4edae08c40af5c6427a2905c7bd21a", null ],
     [ "GetXFilteredAccelAngle", "classfrc_1_1_a_d_i_s16470___i_m_u.html#a9705587b17eed30e209d2ca556959f75", null ],
     [ "GetYawAxis", "classfrc_1_1_a_d_i_s16470___i_m_u.html#ac4617e7770f70631935e5daaf3a35166", null ],
