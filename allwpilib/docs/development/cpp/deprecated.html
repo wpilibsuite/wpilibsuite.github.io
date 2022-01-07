@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-rc-1-4-gb6f44f9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1</span>
    </div>
   </td>
  </tr>
@@ -169,12 +169,26 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000061"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1_live_window.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
 <dt>Member <a class="el" href="namespacefrc.html#ac51fbc126b48788f46f6d42c99bfbee3">frc::MakeMatrix</a>  (Ts... elems)</dt>
 <dd><a class="anchor" id="_deprecated000028"></a>Use <a class="el" href="class_eigen_1_1_matrix.html" title="The matrix class, also used for vectors and row-vectors.">Eigen::Matrix</a> or Eigen::Vector initializer list constructor.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_analog_accelerometer.html">frc::PIDAnalogAccelerometer</a>  </dt>
+<dd><a class="anchor" id="_deprecated000084"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead which doesn't require this wrapper.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_analog_gyro.html">frc::PIDAnalogGyro</a>  </dt>
+<dd><a class="anchor" id="_deprecated000078"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead which doesn't require this wrapper.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_analog_input.html">frc::PIDAnalogInput</a>  </dt>
+<dd><a class="anchor" id="_deprecated000083"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead which doesn't require this wrapper.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_analog_potentiometer.html">frc::PIDAnalogPotentiometer</a>  </dt>
+<dd><a class="anchor" id="_deprecated000082"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead which doesn't require this wrapper.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1_p_i_d_base.html">frc::PIDBase</a>  </dt>
-<dd><a class="anchor" id="_deprecated000078"></a>All APIs which use this have been deprecated.  </dd>
+<dd><a class="anchor" id="_deprecated000085"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1_p_i_d_controller.html">frc::PIDController</a>  </dt>
 <dd><a class="anchor" id="_deprecated000077"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_encoder.html">frc::PIDEncoder</a>  </dt>
+<dd><a class="anchor" id="_deprecated000081"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead which doesn't require this wrapper.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>  </dt>
-<dd><a class="anchor" id="_deprecated000079"></a>All APIs which use this have been deprecated.  </dd>
+<dd><a class="anchor" id="_deprecated000086"></a>All APIs which use this have been deprecated.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_motor_controller.html">frc::PIDMotorController</a>  </dt>
+<dd><a class="anchor" id="_deprecated000080"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead which doesn't require this wrapper.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_ultrasonic.html">frc::PIDUltrasonic</a>  </dt>
+<dd><a class="anchor" id="_deprecated000079"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead which doesn't require this wrapper.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_preferences.html#a515f50bbde384332273c6f4011fbb349">frc::Preferences::GetInstance</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000058"></a>Use the static methods  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_robot_base.html#ac9693ec00691571f9825d96c0ec86128">frc::RobotBase::IsOperatorControl</a>  () const</dt>
@@ -260,7 +274,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 7 2022 01:47:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jan 7 2022 02:12:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
