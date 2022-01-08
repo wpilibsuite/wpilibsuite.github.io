@@ -19,31 +19,33 @@
 <span class="sourceLineNo">007</span><a id="line.7">/**</a>
 <span class="sourceLineNo">008</span><a id="line.8"> * This interface allows for PIDController to automatically read from this object.</a>
 <span class="sourceLineNo">009</span><a id="line.9"> *</a>
-<span class="sourceLineNo">010</span><a id="line.10"> * @deprecated Use DoubleSupplier and new PIDController class.</a>
-<span class="sourceLineNo">011</span><a id="line.11"> */</a>
-<span class="sourceLineNo">012</span><a id="line.12">@Deprecated(since = "2020", forRemoval = true)</a>
-<span class="sourceLineNo">013</span><a id="line.13">public interface PIDSource {</a>
-<span class="sourceLineNo">014</span><a id="line.14">  /**</a>
-<span class="sourceLineNo">015</span><a id="line.15">   * Set which parameter of the device you are using as a process control variable.</a>
-<span class="sourceLineNo">016</span><a id="line.16">   *</a>
-<span class="sourceLineNo">017</span><a id="line.17">   * @param pidSource An enum to select the parameter.</a>
-<span class="sourceLineNo">018</span><a id="line.18">   */</a>
-<span class="sourceLineNo">019</span><a id="line.19">  void setPIDSourceType(PIDSourceType pidSource);</a>
-<span class="sourceLineNo">020</span><a id="line.20"></a>
-<span class="sourceLineNo">021</span><a id="line.21">  /**</a>
-<span class="sourceLineNo">022</span><a id="line.22">   * Get which parameter of the device you are using as a process control variable.</a>
-<span class="sourceLineNo">023</span><a id="line.23">   *</a>
-<span class="sourceLineNo">024</span><a id="line.24">   * @return the currently selected PID source parameter</a>
-<span class="sourceLineNo">025</span><a id="line.25">   */</a>
-<span class="sourceLineNo">026</span><a id="line.26">  PIDSourceType getPIDSourceType();</a>
-<span class="sourceLineNo">027</span><a id="line.27"></a>
-<span class="sourceLineNo">028</span><a id="line.28">  /**</a>
-<span class="sourceLineNo">029</span><a id="line.29">   * Get the result to use in PIDController.</a>
-<span class="sourceLineNo">030</span><a id="line.30">   *</a>
-<span class="sourceLineNo">031</span><a id="line.31">   * @return the result to use in PIDController</a>
-<span class="sourceLineNo">032</span><a id="line.32">   */</a>
-<span class="sourceLineNo">033</span><a id="line.33">  double pidGet();</a>
-<span class="sourceLineNo">034</span><a id="line.34">}</a>
+<span class="sourceLineNo">010</span><a id="line.10"> * &lt;p&gt;This class is provided by the OldCommands VendorDep</a>
+<span class="sourceLineNo">011</span><a id="line.11"> *</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * @deprecated Use DoubleSupplier and new PIDController class.</a>
+<span class="sourceLineNo">013</span><a id="line.13"> */</a>
+<span class="sourceLineNo">014</span><a id="line.14">@Deprecated(since = "2020", forRemoval = true)</a>
+<span class="sourceLineNo">015</span><a id="line.15">public interface PIDSource {</a>
+<span class="sourceLineNo">016</span><a id="line.16">  /**</a>
+<span class="sourceLineNo">017</span><a id="line.17">   * Set which parameter of the device you are using as a process control variable.</a>
+<span class="sourceLineNo">018</span><a id="line.18">   *</a>
+<span class="sourceLineNo">019</span><a id="line.19">   * @param pidSource An enum to select the parameter.</a>
+<span class="sourceLineNo">020</span><a id="line.20">   */</a>
+<span class="sourceLineNo">021</span><a id="line.21">  void setPIDSourceType(PIDSourceType pidSource);</a>
+<span class="sourceLineNo">022</span><a id="line.22"></a>
+<span class="sourceLineNo">023</span><a id="line.23">  /**</a>
+<span class="sourceLineNo">024</span><a id="line.24">   * Get which parameter of the device you are using as a process control variable.</a>
+<span class="sourceLineNo">025</span><a id="line.25">   *</a>
+<span class="sourceLineNo">026</span><a id="line.26">   * @return the currently selected PID source parameter</a>
+<span class="sourceLineNo">027</span><a id="line.27">   */</a>
+<span class="sourceLineNo">028</span><a id="line.28">  PIDSourceType getPIDSourceType();</a>
+<span class="sourceLineNo">029</span><a id="line.29"></a>
+<span class="sourceLineNo">030</span><a id="line.30">  /**</a>
+<span class="sourceLineNo">031</span><a id="line.31">   * Get the result to use in PIDController.</a>
+<span class="sourceLineNo">032</span><a id="line.32">   *</a>
+<span class="sourceLineNo">033</span><a id="line.33">   * @return the result to use in PIDController</a>
+<span class="sourceLineNo">034</span><a id="line.34">   */</a>
+<span class="sourceLineNo">035</span><a id="line.35">  double pidGet();</a>
+<span class="sourceLineNo">036</span><a id="line.36">}</a>
 
 
 

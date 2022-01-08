@@ -21,21 +21,23 @@
 <span class="sourceLineNo">009</span><a id="line.9">/**</a>
 <span class="sourceLineNo">010</span><a id="line.10"> * WaitUntilCommand - waits until an absolute game time. This will wait until the game clock reaches</a>
 <span class="sourceLineNo">011</span><a id="line.11"> * some value, then continue to the next command.</a>
-<span class="sourceLineNo">012</span><a id="line.12"> */</a>
-<span class="sourceLineNo">013</span><a id="line.13">public class WaitUntilCommand extends Command {</a>
-<span class="sourceLineNo">014</span><a id="line.14">  private final double m_time;</a>
-<span class="sourceLineNo">015</span><a id="line.15"></a>
-<span class="sourceLineNo">016</span><a id="line.16">  public WaitUntilCommand(double time) {</a>
-<span class="sourceLineNo">017</span><a id="line.17">    super("WaitUntil(" + time + ")");</a>
-<span class="sourceLineNo">018</span><a id="line.18">    m_time = time;</a>
-<span class="sourceLineNo">019</span><a id="line.19">  }</a>
-<span class="sourceLineNo">020</span><a id="line.20"></a>
-<span class="sourceLineNo">021</span><a id="line.21">  /** Check if we've reached the actual finish time. */</a>
-<span class="sourceLineNo">022</span><a id="line.22">  @Override</a>
-<span class="sourceLineNo">023</span><a id="line.23">  public boolean isFinished() {</a>
-<span class="sourceLineNo">024</span><a id="line.24">    return Timer.getMatchTime() &gt;= m_time;</a>
-<span class="sourceLineNo">025</span><a id="line.25">  }</a>
-<span class="sourceLineNo">026</span><a id="line.26">}</a>
+<span class="sourceLineNo">012</span><a id="line.12"> *</a>
+<span class="sourceLineNo">013</span><a id="line.13"> * &lt;p&gt;This class is provided by the OldCommands VendorDep</a>
+<span class="sourceLineNo">014</span><a id="line.14"> */</a>
+<span class="sourceLineNo">015</span><a id="line.15">public class WaitUntilCommand extends Command {</a>
+<span class="sourceLineNo">016</span><a id="line.16">  private final double m_time;</a>
+<span class="sourceLineNo">017</span><a id="line.17"></a>
+<span class="sourceLineNo">018</span><a id="line.18">  public WaitUntilCommand(double time) {</a>
+<span class="sourceLineNo">019</span><a id="line.19">    super("WaitUntil(" + time + ")");</a>
+<span class="sourceLineNo">020</span><a id="line.20">    m_time = time;</a>
+<span class="sourceLineNo">021</span><a id="line.21">  }</a>
+<span class="sourceLineNo">022</span><a id="line.22"></a>
+<span class="sourceLineNo">023</span><a id="line.23">  /** Check if we've reached the actual finish time. */</a>
+<span class="sourceLineNo">024</span><a id="line.24">  @Override</a>
+<span class="sourceLineNo">025</span><a id="line.25">  public boolean isFinished() {</a>
+<span class="sourceLineNo">026</span><a id="line.26">    return Timer.getMatchTime() &gt;= m_time;</a>
+<span class="sourceLineNo">027</span><a id="line.27">  }</a>
+<span class="sourceLineNo">028</span><a id="line.28">}</a>
 
 
 
