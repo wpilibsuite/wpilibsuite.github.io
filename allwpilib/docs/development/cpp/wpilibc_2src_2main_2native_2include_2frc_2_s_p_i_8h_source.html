@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   * If not running in output only mode, also saves the data received</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">   * on the CIPO input during the transfer into the receive FIFO.</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1_s_p_i.html#ace18201bd33d2a624fa476c75e06cc08">  128</a></span>  virtual <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_s_p_i.html#ace18201bd33d2a624fa476c75e06cc08">Write</a>(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#aadfb7303ce6c1a8f0bdf86cb2cbad6be">uint8_t</a>* <a class="code hl_struct" href="structdata.html">data</a>, <span class="keywordtype">int</span> <a class="code hl_function" href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">size</a>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1_s_p_i.html#ace18201bd33d2a624fa476c75e06cc08">  128</a></span>  virtual <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_s_p_i.html#ace18201bd33d2a624fa476c75e06cc08">Write</a>(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#aadfb7303ce6c1a8f0bdf86cb2cbad6be">uint8_t</a>* data, <span class="keywordtype">int</span> <a class="code hl_function" href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">size</a>);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"></span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   * Read a word from the receive FIFO.</span></div>
@@ -513,7 +513,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_s_p_i_types_8h_html"><div class="ttname"><a href="_s_p_i_types_8h.html">SPITypes.h</a></div></div>
-<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:749</div></div>
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:778</div></div>
 <div class="ttc" id="aclassfrc_1_1_digital_source_html"><div class="ttname"><a href="classfrc_1_1_digital_source.html">frc::DigitalSource</a></div><div class="ttdoc">DigitalSource Interface.</div><div class="ttdef"><b>Definition:</b> DigitalSource.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_s_p_i_html"><div class="ttname"><a href="classfrc_1_1_s_p_i.html">frc::SPI</a></div><div class="ttdoc">SPI bus interface class.</div><div class="ttdef"><b>Definition:</b> SPI.h:27</div></div>
 <div class="ttc" id="aclassfrc_1_1_s_p_i_html_a13df61aff07325c9ea6768ef161db5be"><div class="ttname"><a href="classfrc_1_1_s_p_i.html#a13df61aff07325c9ea6768ef161db5be">frc::SPI::SetSampleDataOnFalling</a></div><div class="ttdeci">void SetSampleDataOnFalling()</div><div class="ttdoc">Configure that the data is stable on the falling edge and the data changes on the rising edge.</div></div>
@@ -568,14 +568,14 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1_s_p_i_html_af2bda94cf34d6e5905efa5d54c726510"><div class="ttname"><a href="classfrc_1_1_s_p_i.html#af2bda94cf34d6e5905efa5d54c726510">frc::SPI::InitAccumulator</a></div><div class="ttdeci">void InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</div><div class="ttdoc">Initialize the accumulator.</div></div>
 <div class="ttc" id="aclassfrc_1_1_s_p_i_html_afbabf1221808896f269dc6a0e76d3670"><div class="ttname"><a href="classfrc_1_1_s_p_i.html#afbabf1221808896f269dc6a0e76d3670">frc::SPI::SetClockRate</a></div><div class="ttdeci">void SetClockRate(int hz)</div><div class="ttdoc">Configure the rate of the generated clock signal.</div></div>
 <div class="ttc" id="aclassfrc_1_1_s_p_i_html_afed70a1e9bbc2f355c759623cad415f9"><div class="ttname"><a href="classfrc_1_1_s_p_i.html#afed70a1e9bbc2f355c759623cad415f9">frc::SPI::ConfigureAutoStall</a></div><div class="ttdeci">void ConfigureAutoStall(HAL_SPIPort port, int csToSclkTicks, int stallTicks, int pow2BytesPerRead)</div><div class="ttdoc">Configure the Auto SPI Stall time between reads.</div></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
-<div class="ttc" id="acore_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> core.h:1039</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1208</div></div>
+<div class="ttc" id="acore_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> core.h:1117</div></div>
 <div class="ttc" id="adeprecated_8h_html"><div class="ttname"><a href="deprecated_8h.html">deprecated.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_aa3c1588240009c3c17b3e477512b2ffd"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">Eigen::internal::size</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index size(const T &amp;x)</div><div class="ttdef"><b>Definition:</b> Meta.h:479</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a26035668345422b5f30be2124b0b6f6e"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a26035668345422b5f30be2124b0b6f6e">Eigen::numext::int64_t</a></div><div class="ttdeci">typedef::int64_t int64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:59</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_aadfb7303ce6c1a8f0bdf86cb2cbad6be"><div class="ttname"><a href="namespace_eigen_1_1numext.html#aadfb7303ce6c1a8f0bdf86cb2cbad6be">Eigen::numext::uint8_t</a></div><div class="ttdeci">typedef::uint8_t uint8_t</div><div class="ttdef"><b>Definition:</b> Meta.h:52</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_af6a076c0f63ad22b8620d4de6fc6f632"><div class="ttname"><a href="namespace_eigen_1_1numext.html#af6a076c0f63ad22b8620d4de6fc6f632">Eigen::numext::uint32_t</a></div><div class="ttdeci">typedef::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:56</div></div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4"><div class="ttname"><a href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4">align::center</a></div><div class="ttdeci">@ center</div><div class="ttdef"><b>Definition:</b> core.h:1859</div></div>
+<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4"><div class="ttname"><a href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4">align::center</a></div><div class="ttdeci">@ center</div><div class="ttdef"><b>Definition:</b> core.h:2021</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> fpga_clock.h:10</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> SmallVector.h:931</div></div>
@@ -583,7 +583,6 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> StringExtras.h:27</div></div>
 <div class="ttc" id="anamespacewpi_html_a39d52ea374e69d520e3f696e58c1565f"><div class="ttname"><a href="namespacewpi.html#a39d52ea374e69d520e3f696e58c1565f">wpi::span</a></div><div class="ttdeci">span(T(&amp;)[N]) -&gt; span&lt; T, N &gt;</div></div>
 <div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
-<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:897</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -591,7 +590,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h.html">SPI.h</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -313,7 +313,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p >A command that uses two PID controllers (<a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">PIDController</a>) and a profiled PID controller (ProfiledPIDController) to follow a trajectory (Trajectory) with a mecanum drive. </p>
 <p >The command handles trajectory-following, Velocity PID calculations, and feedforwards internally. This is intended to be a more-or-less "complete solution" that can be used by teams without a great deal of controls expertise.</p>
 <p >Advanced teams seeking more flexibility (for example, those who wish to use the onboard PID functionality of a "smart" motor controller) may use the secondary constructor that omits the PID and feedforward functionality, returning only the raw wheel speeds from the PID controllers.</p>
-<p >The robot angle controller does not follow the angle given by the trajectory but rather goes to the angle given in the final state of the trajectory. </p>
+<p >The robot angle controller does not follow the angle given by the trajectory but rather goes to the angle given in the final state of the trajectory.</p>
+<p >This class is provided by the NewCommands VendorDep </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abae3e16496433e438519cd0e06a47950" name="abae3e16496433e438519cd0e06a47950"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abae3e16496433e438519cd0e06a47950">&#9670;&nbsp;</a></span>MecanumControllerCommand() <span class="overload">[1/8]</span></h2>
@@ -1357,7 +1358,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_mecanum_controller_command.html">MecanumControllerCommand</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

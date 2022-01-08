@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -120,47 +120,49 @@ $(document).ready(function(){initNavTree('_notifier_command_8h_source.html','');
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * &lt;p&gt;WARNING: Do not use this class unless you are confident in your ability to</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * make the executed code thread-safe.  If you do not know what &quot;thread-safe&quot;</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * means, that is a good sign that you should not use this class.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc2_1_1_notifier_command.html">NotifierCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="classfrc2_1_1_command_helper.html">CommandHelper</a>&lt;CommandBase, NotifierCommand&gt; {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * Creates a new NotifierCommand.</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * @param toRun        the runnable for the notifier to run</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * @param period       the period at which the notifier should run</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#abc3d9359932b10e69fa1ae3588bfc4cb">   37</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#abc3d9359932b10e69fa1ae3588bfc4cb">NotifierCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun, units::second_t period,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                  std::initializer_list&lt;Subsystem*&gt; requirements);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * Creates a new NotifierCommand.</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   * @param toRun        the runnable for the notifier to run</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * @param period       the period at which the notifier should run</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a90f1f455f5265e5f2c742e051b651b26">   47</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a90f1f455f5265e5f2c742e051b651b26">NotifierCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun, units::second_t period,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                  <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a16cc1d9d21cba00198eeb7a3b3d7ff28">   50</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a16cc1d9d21cba00198eeb7a3b3d7ff28">NotifierCommand</a>(<a class="code hl_class" href="classfrc2_1_1_notifier_command.html">NotifierCommand</a>&amp;&amp; other);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * This class is provided by the NewCommands VendorDep</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc2_1_1_notifier_command.html">NotifierCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="classfrc2_1_1_command_helper.html">CommandHelper</a>&lt;CommandBase, NotifierCommand&gt; {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * Creates a new NotifierCommand.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * @param toRun        the runnable for the notifier to run</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param period       the period at which the notifier should run</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#abc3d9359932b10e69fa1ae3588bfc4cb">   39</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#abc3d9359932b10e69fa1ae3588bfc4cb">NotifierCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun, units::second_t period,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                  std::initializer_list&lt;Subsystem*&gt; requirements);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   * Creates a new NotifierCommand.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   * @param toRun        the runnable for the notifier to run</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param period       the period at which the notifier should run</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a90f1f455f5265e5f2c742e051b651b26">   49</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a90f1f455f5265e5f2c742e051b651b26">NotifierCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun, units::second_t period,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                  <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a7ed6d553450c881d026e7d42e7f73f33">   52</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a7ed6d553450c881d026e7d42e7f73f33">NotifierCommand</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_notifier_command.html">NotifierCommand</a>&amp; other);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a16cc1d9d21cba00198eeb7a3b3d7ff28">   52</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a16cc1d9d21cba00198eeb7a3b3d7ff28">NotifierCommand</a>(<a class="code hl_class" href="classfrc2_1_1_notifier_command.html">NotifierCommand</a>&amp;&amp; other);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a815e3e7828540dbe56a845fb9bfec6b5">   54</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a815e3e7828540dbe56a845fb9bfec6b5">Initialize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a7ed6d553450c881d026e7d42e7f73f33">   54</a></span>  <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a7ed6d553450c881d026e7d42e7f73f33">NotifierCommand</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_notifier_command.html">NotifierCommand</a>&amp; other);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#ac17b00e06553b1e9bc9d42fd7cb15ae1">   56</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#ac17b00e06553b1e9bc9d42fd7cb15ae1">End</a>(<span class="keywordtype">bool</span> interrupted) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#a815e3e7828540dbe56a845fb9bfec6b5">   56</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#a815e3e7828540dbe56a845fb9bfec6b5">Initialize</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::function&lt;void()&gt; m_toRun;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_class" href="classfrc_1_1_notifier.html">frc::Notifier</a> m_notifier;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  units::second_t m_period;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classfrc2_1_1_notifier_command.html#ac17b00e06553b1e9bc9d42fd7cb15ae1">   58</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_notifier_command.html#ac17b00e06553b1e9bc9d42fd7cb15ae1">End</a>(<span class="keywordtype">bool</span> interrupted) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::function&lt;void()&gt; m_toRun;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_class" href="classfrc_1_1_notifier.html">frc::Notifier</a> m_notifier;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  units::second_t m_period;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_command_base_8h_html"><div class="ttname"><a href="_command_base_8h.html">CommandBase.h</a></div></div>
 <div class="ttc" id="a_command_helper_8h_html"><div class="ttname"><a href="_command_helper_8h.html">CommandHelper.h</a></div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_helper_html"><div class="ttname"><a href="classfrc2_1_1_command_helper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
-<div class="ttc" id="aclassfrc2_1_1_notifier_command_html"><div class="ttname"><a href="classfrc2_1_1_notifier_command.html">frc2::NotifierCommand</a></div><div class="ttdoc">A command that starts a notifier to run the given runnable periodically in a separate thread.</div><div class="ttdef"><b>Definition:</b> NotifierCommand.h:28</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_helper_html"><div class="ttname"><a href="classfrc2_1_1_command_helper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:25</div></div>
+<div class="ttc" id="aclassfrc2_1_1_notifier_command_html"><div class="ttname"><a href="classfrc2_1_1_notifier_command.html">frc2::NotifierCommand</a></div><div class="ttdoc">A command that starts a notifier to run the given runnable periodically in a separate thread.</div><div class="ttdef"><b>Definition:</b> NotifierCommand.h:30</div></div>
 <div class="ttc" id="aclassfrc2_1_1_notifier_command_html_a16cc1d9d21cba00198eeb7a3b3d7ff28"><div class="ttname"><a href="classfrc2_1_1_notifier_command.html#a16cc1d9d21cba00198eeb7a3b3d7ff28">frc2::NotifierCommand::NotifierCommand</a></div><div class="ttdeci">NotifierCommand(NotifierCommand &amp;&amp;other)</div></div>
 <div class="ttc" id="aclassfrc2_1_1_notifier_command_html_a7ed6d553450c881d026e7d42e7f73f33"><div class="ttname"><a href="classfrc2_1_1_notifier_command.html#a7ed6d553450c881d026e7d42e7f73f33">frc2::NotifierCommand::NotifierCommand</a></div><div class="ttdeci">NotifierCommand(const NotifierCommand &amp;other)</div></div>
 <div class="ttc" id="aclassfrc2_1_1_notifier_command_html_a815e3e7828540dbe56a845fb9bfec6b5"><div class="ttname"><a href="classfrc2_1_1_notifier_command.html#a815e3e7828540dbe56a845fb9bfec6b5">frc2::NotifierCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
@@ -179,7 +181,7 @@ $(document).ready(function(){initNavTree('_notifier_command_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_notifier_command_8h.html">NotifierCommand.h</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

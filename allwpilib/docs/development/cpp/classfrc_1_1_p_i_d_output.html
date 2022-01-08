@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ Inheritance diagram for frc::PIDOutput:</div>
   <img src="classfrc_1_1_p_i_d_output.png" usemap="#frc::PIDOutput_map" alt=""/>
   <map id="frc::PIDOutput_map" name="frc::PIDOutput_map">
 <area href="classfrc_1_1_p_i_d_base.html" title="Class implements a PID Control Loop." alt="frc::PIDBase" shape="rect" coords="0,56,143,80"/>
-<area href="classfrc_1_1_p_i_d_command.html" alt="frc::PIDCommand" shape="rect" coords="153,56,296,80"/>
+<area href="classfrc_1_1_p_i_d_command.html" title="This class defines aCommand which interacts heavily with a PID loop." alt="frc::PIDCommand" shape="rect" coords="153,56,296,80"/>
 <area href="classfrc_1_1_p_i_d_motor_controller.html" title="Wrapper so that PIDOutput is implemented for MotorController for old PIDController." alt="frc::PIDMotorController" shape="rect" coords="306,56,449,80"/>
 <area href="classfrc_1_1_p_i_d_subsystem.html" title="This class is designed to handle the case where there is a Subsystem which uses a single PIDControlle..." alt="frc::PIDSubsystem" shape="rect" coords="459,56,602,80"/>
 <area href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop." alt="frc::PIDController" shape="rect" coords="0,112,143,136"/>
@@ -123,7 +123,8 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classfrc_1_1_p_i_d_output.html" title="PIDOutput interface is a generic output for the PID class.">PIDOutput</a> interface is a generic output for the PID class. </p>
-<p >PWMs use this class. Users implement this interface to allow for a <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a> to read directly from the inputs. </p>
+<p >MotorControllers use this class. Users implement this interface to allow for a <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a> to read directly from the inputs.</p>
+<p >This class is provided by the OldCommands VendorDep </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1e416c6129b15f21c70ed859a5658b18" name="a1e416c6129b15f21c70ed859a5658b18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1e416c6129b15f21c70ed859a5658b18">&#9670;&nbsp;</a></span>PIDWrite()</h2>
@@ -162,7 +163,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

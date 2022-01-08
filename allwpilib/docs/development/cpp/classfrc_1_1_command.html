@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -116,13 +116,13 @@ Inheritance diagram for frc::Command:</div>
 <area href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence." alt="frc::CommandGroup" shape="rect" coords="0,112,207,136"/>
 <area href="classfrc_1_1_conditional_command.html" title="A ConditionalCommand is a Command that starts one of two commands." alt="frc::ConditionalCommand" shape="rect" coords="217,112,424,136"/>
 <area href="classfrc_1_1_instant_command.html" title="This command will execute once, then finish immediately afterward." alt="frc::InstantCommand" shape="rect" coords="434,112,641,136"/>
-<area href="classfrc_1_1_p_i_d_command.html" alt="frc::PIDCommand" shape="rect" coords="651,112,858,136"/>
+<area href="classfrc_1_1_p_i_d_command.html" title="This class defines aCommand which interacts heavily with a PID loop." alt="frc::PIDCommand" shape="rect" coords="651,112,858,136"/>
 <area href="classfrc_1_1_timed_command.html" title="A TimedCommand will wait for a timeout before finishing." alt="frc::TimedCommand" shape="rect" coords="868,112,1075,136"/>
-<area href="classfrc_1_1_wait_for_children.html" alt="frc::WaitForChildren" shape="rect" coords="1085,112,1292,136"/>
-<area href="classfrc_1_1_wait_until_command.html" alt="frc::WaitUntilCommand" shape="rect" coords="1302,112,1509,136"/>
-<area href="classfrc_1_1_print_command.html" alt="frc::PrintCommand" shape="rect" coords="325,168,532,192"/>
-<area href="classfrc_1_1_start_command.html" alt="frc::StartCommand" shape="rect" coords="542,168,749,192"/>
-<area href="classfrc_1_1_wait_command.html" alt="frc::WaitCommand" shape="rect" coords="868,168,1075,192"/>
+<area href="classfrc_1_1_wait_for_children.html" title="This command will only finish if whatever CommandGroup it is in has no active children." alt="frc::WaitForChildren" shape="rect" coords="1085,112,1292,136"/>
+<area href="classfrc_1_1_wait_until_command.html" title="A WaitCommand will wait until a certain match time before finishing." alt="frc::WaitUntilCommand" shape="rect" coords="1302,112,1509,136"/>
+<area href="classfrc_1_1_print_command.html" title="A PrintCommand is a command which prints out a string when it is initialized, and then immediately fi..." alt="frc::PrintCommand" shape="rect" coords="325,168,532,192"/>
+<area href="classfrc_1_1_start_command.html" title="A PrintCommand is a command which prints out a string when it is initialized, and then immediately fi..." alt="frc::StartCommand" shape="rect" coords="542,168,749,192"/>
+<area href="classfrc_1_1_wait_command.html" title="A WaitCommand will wait for a certain amount of time before finishing." alt="frc::WaitCommand" shape="rect" coords="868,168,1075,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -167,7 +167,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab29c1b983b4843e5c167324b89d21c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time since this command was initialized.  <a href="classfrc_1_1_command.html#ab29c1b983b4843e5c167324b89d21c69">More...</a><br /></td></tr>
 <tr class="separator:ab29c1b983b4843e5c167324b89d21c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5633c00c38027e8c978b40caf4fb9d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5">Requires</a> (<a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> *subsystem)</td></tr>
-<tr class="memdesc:ad5633c00c38027e8c978b40caf4fb9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method specifies that the given <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> is used by this command.  <a href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5">More...</a><br /></td></tr>
+<tr class="memdesc:ad5633c00c38027e8c978b40caf4fb9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method specifies that the given <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> is used by this command.  <a href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5">More...</a><br /></td></tr>
 <tr class="separator:ad5633c00c38027e8c978b40caf4fb9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4501af3516c00803f8540ac6c61175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#a0f4501af3516c00803f8540ac6c61175">Start</a> ()</td></tr>
 <tr class="memdesc:a0f4501af3516c00803f8540ac6c61175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts up the command.  <a href="classfrc_1_1_command.html#a0f4501af3516c00803f8540ac6c61175">More...</a><br /></td></tr>
@@ -197,10 +197,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab657ac42c885ee9e5b7fff126b732f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not this command can be interrupted.  <a href="classfrc_1_1_command.html#ab657ac42c885ee9e5b7fff126b732f2c">More...</a><br /></td></tr>
 <tr class="separator:ab657ac42c885ee9e5b7fff126b732f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082e02f365d6f594b9b1572ee162eb21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#a082e02f365d6f594b9b1572ee162eb21">DoesRequire</a> (<a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> *subsystem) const</td></tr>
-<tr class="memdesc:a082e02f365d6f594b9b1572ee162eb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the command requires the given <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a>.  <a href="classfrc_1_1_command.html#a082e02f365d6f594b9b1572ee162eb21">More...</a><br /></td></tr>
+<tr class="memdesc:a082e02f365d6f594b9b1572ee162eb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the command requires the given <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a>.  <a href="classfrc_1_1_command.html#a082e02f365d6f594b9b1572ee162eb21">More...</a><br /></td></tr>
 <tr class="separator:a082e02f365d6f594b9b1572ee162eb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a949a7c286923fc6bfa77707cb038809c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_command.html#a5075af354b50e11610449f9e8597a883">SubsystemSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#a949a7c286923fc6bfa77707cb038809c">GetRequirements</a> () const</td></tr>
-<tr class="memdesc:a949a7c286923fc6bfa77707cb038809c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> pointers) of this command.  <a href="classfrc_1_1_command.html#a949a7c286923fc6bfa77707cb038809c">More...</a><br /></td></tr>
+<tr class="memdesc:a949a7c286923fc6bfa77707cb038809c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> pointers) of this command.  <a href="classfrc_1_1_command.html#a949a7c286923fc6bfa77707cb038809c">More...</a><br /></td></tr>
 <tr class="separator:a949a7c286923fc6bfa77707cb038809c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad202f2ddf4bfad6e997b4cdbfb57620e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_command_group.html">CommandGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#ad202f2ddf4bfad6e997b4cdbfb57620e">GetGroup</a> () const</td></tr>
 <tr class="memdesc:ad202f2ddf4bfad6e997b4cdbfb57620e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> that this command is a part of.  <a href="classfrc_1_1_command.html#ad202f2ddf4bfad6e997b4cdbfb57620e">More...</a><br /></td></tr>
@@ -334,11 +334,14 @@ Friends</h2></td></tr>
 <div class="textblock"><p >The <a class="el" href="classfrc_1_1_command.html" title="The Command class is at the very core of the entire command framework.">Command</a> class is at the very core of the entire command framework. </p>
 <p >Every command can be started with a call to <a class="el" href="classfrc_1_1_command.html#a0f4501af3516c00803f8540ac6c61175" title="Starts up the command.">Start()</a>. Once a command is started it will call <a class="el" href="classfrc_1_1_command.html#a18db0ecafe4e8ec6c1d3e77393fc8843" title="The initialize method is called the first time this Command is run after being started.">Initialize()</a>, and then will repeatedly call <a class="el" href="classfrc_1_1_command.html#ac26f53da9061c835104c42a6f799e280" title="The execute method is called repeatedly until this Command either finishes or is canceled.">Execute()</a> until the <a class="el" href="classfrc_1_1_command.html#ac1683a5e3ef8870f165db771c85a0dd5" title="Returns whether this command is finished.">IsFinished()</a> returns true. Once it does,<a class="el" href="classfrc_1_1_command.html#ac4aa2d9113c477d2c41c1b9406a11b21" title="Called when the command ended peacefully.">End()</a> will be called.</p>
 <p >However, if at any point while it is running <a class="el" href="classfrc_1_1_command.html#af816dc206e90bdad6ae895fb5e5574c2" title="This will cancel the current command.">Cancel()</a> is called, then the command will be stopped and <a class="el" href="classfrc_1_1_command.html#a3e53f0de33e61973fbaeaf3a5f4a26aa" title="Called when the command ends because somebody called Cancel() or another command shared the same requ...">Interrupted()</a> will be called.</p>
-<p >If a command uses a <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a>, then it should specify that it does so by calling the <a class="el" href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5" title="This method specifies that the given Subsystem is used by this command.">Requires()</a> method in its constructor. Note that a <a class="el" href="classfrc_1_1_command.html" title="The Command class is at the very core of the entire command framework.">Command</a> may have multiple requirements, and <a class="el" href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5" title="This method specifies that the given Subsystem is used by this command.">Requires()</a> should be called for each one.</p>
+<p >If a command uses a <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a>, then it should specify that it does so by calling the <a class="el" href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5" title="This method specifies that the given Subsystem is used by this command.">Requires()</a> method in its constructor. Note that a <a class="el" href="classfrc_1_1_command.html" title="The Command class is at the very core of the entire command framework.">Command</a> may have multiple requirements, and <a class="el" href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5" title="This method specifies that the given Subsystem is used by this command.">Requires()</a> should be called for each one.</p>
 <p >If a command is running and a new command with shared requirements is started, then one of two things will happen. If the active command is interruptible, then <a class="el" href="classfrc_1_1_command.html#af816dc206e90bdad6ae895fb5e5574c2" title="This will cancel the current command.">Cancel()</a> will be called and the command will be removed to make way for the new one. If the active command is not interruptible, the other one will not even be started, and the active one will continue functioning.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> </dd>
+<p >This class is provided by the OldCommands VendorDep</p><ul>
+<li><dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> </dd>
 <dd>
-<a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> </dd></dl>
+<a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> </dd></dl>
+</li>
+</ul>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5075af354b50e11610449f9e8597a883" name="a5075af354b50e11610449f9e8597a883"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5075af354b50e11610449f9e8597a883">&#9670;&nbsp;</a></span>SubsystemSet</h2>
@@ -926,7 +929,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks if the command requires the given <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a>. </p>
+<p>Checks if the command requires the given <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subsystem</td><td>the subsystem </td></tr>
@@ -1073,8 +1076,8 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> pointers) of this command. </p>
-<dl class="section return"><dt>Returns</dt><dd>The requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> pointers) of this command </dd></dl>
+<p>Returns the requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> pointers) of this command. </p>
+<dl class="section return"><dt>Returns</dt><dd>The requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> pointers) of this command </dd></dl>
 
 </div>
 </div>
@@ -1094,7 +1097,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the subsystem name of this <a class="el" href="classfrc_1_1_command.html" title="The Command class is at the very core of the entire command framework.">Command</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> name </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> name </dd></dl>
 
 </div>
 </div>
@@ -1435,16 +1438,16 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This method specifies that the given <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> is used by this command. </p>
+<p>This method specifies that the given <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> is used by this command. </p>
 <p >This method is crucial to the functioning of the <a class="el" href="classfrc_1_1_command.html" title="The Command class is at the very core of the entire command framework.">Command</a> System in general.</p>
 <p >Note that the recommended way to call this method is in the constructor.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">subsystem</td><td>The <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> required </td></tr>
+    <tr><td class="paramname">subsystem</td><td>The <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> required </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> </dd></dl>
 
 </div>
 </div>
@@ -1464,7 +1467,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The run method is used internally to actually run the commands. </p>
-<dl class="section return"><dt>Returns</dt><dd>Whether or not the command should stay within the <a class="el" href="classfrc_1_1_scheduler.html">Scheduler</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether or not the command should stay within the <a class="el" href="classfrc_1_1_scheduler.html" title="The Scheduler is a singleton which holds the top-level running commands.">Scheduler</a>. </dd></dl>
 
 </div>
 </div>
@@ -1781,7 +1784,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_command.html">Command</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

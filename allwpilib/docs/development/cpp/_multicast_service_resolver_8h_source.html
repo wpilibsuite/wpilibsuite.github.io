@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -141,9 +141,9 @@ $(document).ready(function(){initNavTree('_multicast_service_resolver_8h_source.
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">struct </span>Impl;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> PushData(ServiceData&amp;&amp; <a class="code hl_struct" href="structdata.html">data</a>) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> PushData(ServiceData&amp;&amp; data) {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::scoped_lock lock{<a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    queue.emplace_back(std::forward&lt;ServiceData&gt;(<a class="code hl_struct" href="structdata.html">data</a>));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    queue.emplace_back(std::forward&lt;ServiceData&gt;(data));</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">event</span>.Set();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  wpi::Event <span class="keyword">event</span>{<span class="keyword">true</span>};</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('_multicast_service_resolver_8h_source.
 <div class="ttc" id="a_multicast_service_resolver_8h_html_ac3bf38dca1e4926bbec44b7241de12b6"><div class="ttname"><a href="_multicast_service_resolver_8h.html#ac3bf38dca1e4926bbec44b7241de12b6">WPI_GetMulticastServiceResolverData</a></div><div class="ttdeci">WPI_ServiceData * WPI_GetMulticastServiceResolverData(WPI_MulticastServiceResolverHandle handle, int32_t *dataCount)</div></div>
 <div class="ttc" id="a_synchronization_8h_html"><div class="ttname"><a href="_synchronization_8h.html">Synchronization.h</a></div></div>
 <div class="ttc" id="a_synchronization_8h_html_a4e842b28ce72a1d1dc778397b5f81b87"><div class="ttname"><a href="_synchronization_8h.html#a4e842b28ce72a1d1dc778397b5f81b87">WPI_EventHandle</a></div><div class="ttdeci">WPI_Handle WPI_EventHandle</div><div class="ttdoc">An event handle.</div><div class="ttdef"><b>Definition:</b> Synchronization.h:26</div></div>
-<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:540</div></div>
 <div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_ae4642fe9b8f3d42e634712b1d5e2fffe"><div class="ttname"><a href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">Eigen::numext::int32_t</a></div><div class="ttdeci">typedef::int32_t int32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:57</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_af6a076c0f63ad22b8620d4de6fc6f632"><div class="ttname"><a href="namespace_eigen_1_1numext.html#af6a076c0f63ad22b8620d4de6fc6f632">Eigen::numext::uint32_t</a></div><div class="ttdeci">typedef::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:56</div></div>
@@ -223,14 +223,13 @@ $(document).ready(function(){initNavTree('_multicast_service_resolver_8h_source.
 <div class="ttc" id="astruct_w_p_i___service_data_html_abeaea578d46d82f0f74cdd016dd58cc0"><div class="ttname"><a href="struct_w_p_i___service_data.html#abeaea578d46d82f0f74cdd016dd58cc0">WPI_ServiceData::txtKeys</a></div><div class="ttdeci">const char ** txtKeys</div><div class="ttdef"><b>Definition:</b> MulticastServiceResolver.h:91</div></div>
 <div class="ttc" id="astruct_w_p_i___service_data_html_adbbc86dcf18d0f0472ed8b49ff225bda"><div class="ttname"><a href="struct_w_p_i___service_data.html#adbbc86dcf18d0f0472ed8b49ff225bda">WPI_ServiceData::serviceName</a></div><div class="ttdeci">const char * serviceName</div><div class="ttdef"><b>Definition:</b> MulticastServiceResolver.h:88</div></div>
 <div class="ttc" id="astruct_w_p_i___service_data_html_ae83b73f29f3839c0e6fa84614ab1d98c"><div class="ttname"><a href="struct_w_p_i___service_data.html#ae83b73f29f3839c0e6fa84614ab1d98c">WPI_ServiceData::port</a></div><div class="ttdeci">int32_t port</div><div class="ttdef"><b>Definition:</b> MulticastServiceResolver.h:87</div></div>
-<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:897</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_multicast_service_resolver_8h.html">MulticastServiceResolver.h</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

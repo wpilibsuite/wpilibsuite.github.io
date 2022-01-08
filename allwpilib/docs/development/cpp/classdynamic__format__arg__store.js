@@ -1,5 +1,6 @@
 var classdynamic__format__arg__store =
 [
+    [ "dynamic_format_arg_store", "classdynamic__format__arg__store.html#a48136c185f01d0d7f30a2bb20934d959", null ],
     [ "clear", "classdynamic__format__arg__store.html#a94763fc905f02222d575f7c03161c212", null ],
     [ "push_back", "classdynamic__format__arg__store.html#a14baaad39c59b82fdf86dc4276f7d7cc", null ],
     [ "push_back", "classdynamic__format__arg__store.html#a710e994685e69fd1cd4f56d29efc0d95", null ],

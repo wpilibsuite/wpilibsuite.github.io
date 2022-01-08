@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -312,7 +312,8 @@ Additional Inherited Members</h2></td></tr>
 class frc2::SelectCommand&lt; Key &gt;</div><p >Runs one of a selection of commands, either using a selector and a key to command mapping, or a supplier that returns the command directly at runtime. </p>
 <p >Does not actually schedule the selected command - rather, the command is run through this command; this ensures that the command will behave as expected if used as part of a CommandGroup. Requires the requirements of all included commands, again to ensure proper functioning when used in a CommandGroup. If this is undesired, consider using <a class="el" href="classfrc2_1_1_schedule_command.html" title="Schedules the given commands when this command is initialized.">ScheduleCommand</a>.</p>
 <p >As this command contains multiple component commands within it, it is technically a command group; the command instances that are passed to it cannot be added to any other groups, or scheduled individually.</p>
-<p >As a rule, CommandGroups require the union of the requirements of their component commands. </p>
+<p >As a rule, CommandGroups require the union of the requirements of their component commands.</p>
+<p >This class is provided by the NewCommands VendorDep </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a34405202dee4d650af08bf87db9d4374" name="a34405202dee4d650af08bf87db9d4374"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34405202dee4d650af08bf87db9d4374">&#9670;&nbsp;</a></span>SelectCommand() <span class="overload">[1/6]</span></h2>
@@ -732,7 +733,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_select_command.html">SelectCommand</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

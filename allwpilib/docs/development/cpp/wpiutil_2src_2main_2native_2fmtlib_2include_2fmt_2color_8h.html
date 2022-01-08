@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a739a924584febb5cd57fd73129b28bae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a739a924584febb5cd57fd73129b28bae">FMT_DEPRECATED_NONMSVC</a>&#160;&#160;&#160;<a class="el" href="format_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a></td></tr>
+<tr class="memitem:a739a924584febb5cd57fd73129b28bae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a739a924584febb5cd57fd73129b28bae">FMT_DEPRECATED_NONMSVC</a>&#160;&#160;&#160;<a class="el" href="core_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a></td></tr>
 <tr class="separator:a739a924584febb5cd57fd73129b28bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -327,10 +327,17 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a76f7aa9aae46c2ea7333dae7b531d6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a535b59b8edc8902bb3c4f254625f91ba"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91ba">emphasis</a> : uint8_t { <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa69dcab4a73aeec2113f69b61e6263da8">bold</a> = 1
-, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa030c5b6d1e5715105943ac111d9671bf">italic</a> = 1 &lt;&lt; 1
-, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa6dc7b4483f8c2c701a48e42db552806d">underline</a> = 1 &lt;&lt; 2
-, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baaae9a363b2dfa9181da7ffde8e37813b5">strikethrough</a> = 1 &lt;&lt; 3
+<tr class="memitem:a535b59b8edc8902bb3c4f254625f91ba"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91ba">emphasis</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa69dcab4a73aeec2113f69b61e6263da8">bold</a> = 1
+, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baaa2f30af159c87a8828f7d9581ca9e8c8">faint</a> = 1 &lt;&lt; 1
+, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa030c5b6d1e5715105943ac111d9671bf">italic</a> = 1 &lt;&lt; 2
+, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa6dc7b4483f8c2c701a48e42db552806d">underline</a> = 1 &lt;&lt; 3
+, <br />
+&#160;&#160;<a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa40652ee9ae143f1c1c830f01a5449ecb">blink</a> = 1 &lt;&lt; 4
+, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa4d9c2073afa3c2abb817dceb22c34de6">reverse</a> = 1 &lt;&lt; 5
+, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baaa27efeecfcdb7794476cafb0b362835e">conceal</a> = 1 &lt;&lt; 6
+, <a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baaae9a363b2dfa9181da7ffde8e37813b5">strikethrough</a> = 1 &lt;&lt; 7
+<br />
  }</td></tr>
 <tr class="separator:a535b59b8edc8902bb3c4f254625f91ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -406,7 +413,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FMT_DEPRECATED_NONMSVC&#160;&#160;&#160;<a class="el" href="format_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a></td>
+          <td class="memname">#define FMT_DEPRECATED_NONMSVC&#160;&#160;&#160;<a class="el" href="core_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -600,8 +607,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baa69dcab4a73aeec2113f69b61e6263da8" name="a535b59b8edc8902bb3c4f254625f91baa69dcab4a73aeec2113f69b61e6263da8"></a>bold&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baaa2f30af159c87a8828f7d9581ca9e8c8" name="a535b59b8edc8902bb3c4f254625f91baaa2f30af159c87a8828f7d9581ca9e8c8"></a>faint&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baa030c5b6d1e5715105943ac111d9671bf" name="a535b59b8edc8902bb3c4f254625f91baa030c5b6d1e5715105943ac111d9671bf"></a>italic&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baa6dc7b4483f8c2c701a48e42db552806d" name="a535b59b8edc8902bb3c4f254625f91baa6dc7b4483f8c2c701a48e42db552806d"></a>underline&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baa40652ee9ae143f1c1c830f01a5449ecb" name="a535b59b8edc8902bb3c4f254625f91baa40652ee9ae143f1c1c830f01a5449ecb"></a>blink&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baa4d9c2073afa3c2abb817dceb22c34de6" name="a535b59b8edc8902bb3c4f254625f91baa4d9c2073afa3c2abb817dceb22c34de6"></a>reverse&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baaa27efeecfcdb7794476cafb0b362835e" name="a535b59b8edc8902bb3c4f254625f91baaa27efeecfcdb7794476cafb0b362835e"></a>conceal&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a535b59b8edc8902bb3c4f254625f91baaae9a363b2dfa9181da7ffde8e37813b5" name="a535b59b8edc8902bb3c4f254625f91baaae9a363b2dfa9181da7ffde8e37813b5"></a>strikethrough&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -1326,7 +1337,7 @@ template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2fr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><a class="el" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html">color.h</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

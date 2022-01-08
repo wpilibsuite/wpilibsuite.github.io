@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -8377,7 +8377,7 @@ template&lt;class ValueType , typename std::enable_if&lt; std::is_convertible&lt
 <div class="line">}</div>
 <div class="ttc" id="aclasswpi_1_1json_html_a99be415a916dc9d23df458ff26095ce9"><div class="ttname"><a href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9">wpi::json::at</a></div><div class="ttdeci">reference at(size_type idx)</div><div class="ttdoc">access specified array element with bounds checking</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html_aab36cadf0a02394d11bf493b3d95e272"><div class="ttname"><a href="classwpi_1_1json.html#aab36cadf0a02394d11bf493b3d95e272">wpi::json::out_of_range</a></div><div class="ttdeci">detail::out_of_range out_of_range</div><div class="ttdoc">exception indicating access out of the defined range</div><div class="ttdef"><b>Definition:</b> json.h:2710</div></div>
-<div class="ttc" id="aformat_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdoc">\rst Converts p to const void* for pointer formatting.</div><div class="ttdef"><b>Definition:</b> format.h:2451</div></div>
+<div class="ttc" id="aformat_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdoc">\rst Converts p to const void* for pointer formatting.</div><div class="ttdef"><b>Definition:</b> format.h:2680</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Unlike <a class="el" href="classwpi_1_1json.html#a4668b5df6ec27b8b5a44c47c1fad159b">at(const json_pointer&amp;)</a>, this function does not throw if the given key <em>key</em> was not found.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -9178,10 +9178,10 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <dl class="section note"><dt>Note</dt><dd>Floating-point inside JSON values numbers are compared with <code>double::operator==</code>. To compare floating-point while respecting an epsilon, an alternative <a href="https://github.com/mariokonrad/marnav/blob/master/src/marnav/math/floatingpoint.hpp#L34-#L39">comparison function</a> could be used, for instance <div class="fragment"><div class="line">template&lt;typename T, typename = typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, T&gt;<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>&gt;</div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> is_same(T a, T <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>, T epsilon = std::numeric_limits&lt;T&gt;::epsilon()) noexcept</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a35560f7dbf19244fda7e463d14157c43">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
 <div class="line">}</div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a35560f7dbf19244fda7e463d14157c43"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a35560f7dbf19244fda7e463d14157c43">abs</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE const AbsReturnType abs() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:52</div></div>
-<div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1048</div></div>
+<div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1131</div></div>
+<div class="ttc" id="afmtlib_2include_2fmt_2_chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1488</div></div>
 <div class="ttc" id="anamespaceunits_html_a77b2abc79841f7f67c7bc406b7c5083b"><div class="ttname"><a href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">units::b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
 </div><!-- fragment --></dd>
 <dd>
@@ -9246,7 +9246,7 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <dl class="section note"><dt>Note</dt><dd>Floating-point inside JSON values numbers are compared with <code>double::operator==</code>. To compare floating-point while respecting an epsilon, an alternative <a href="https://github.com/mariokonrad/marnav/blob/master/src/marnav/math/floatingpoint.hpp#L34-#L39">comparison function</a> could be used, for instance <div class="fragment"><div class="line">template&lt;typename T, typename = typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, T&gt;<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>&gt;</div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> is_same(T a, T <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>, T epsilon = std::numeric_limits&lt;T&gt;::epsilon()) noexcept</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a35560f7dbf19244fda7e463d14157c43">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
 <div class="line">}</div>
 </div><!-- fragment --></dd>
 <dd>
@@ -9309,7 +9309,7 @@ NaN values never compare equal to themselves or to other NaN values.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Floating-point inside JSON values numbers are compared with <code>double::operator==</code>. To compare floating-point while respecting an epsilon, an alternative <a href="https://github.com/mariokonrad/marnav/blob/master/src/marnav/math/floatingpoint.hpp#L34-#L39">comparison function</a> could be used, for instance <div class="fragment"><div class="line">template&lt;typename T, typename = typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, T&gt;<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>&gt;</div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> is_same(T a, T <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>, T epsilon = std::numeric_limits&lt;T&gt;::epsilon()) noexcept</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a35560f7dbf19244fda7e463d14157c43">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
 <div class="line">}</div>
 </div><!-- fragment --></dd>
 <dd>
@@ -9711,7 +9711,7 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1json.html">json</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

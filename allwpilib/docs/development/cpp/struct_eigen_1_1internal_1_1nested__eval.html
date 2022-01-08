@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-2-g41c5b2b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-6-g8ac45f2</span>
    </div>
   </td>
  </tr>
@@ -102,18 +102,18 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1nested__ev
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab9411f1e6ed92f49ba4a0324c19c0588"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588a9890ef7124d41e698600a5d16f8638d6">ScalarReadCost</a> = NumTraits&lt;typename traits&lt;T&gt;::Scalar&gt;::ReadCost
-, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588a49cff2e44edf50377a97ef7a6795a18d">CoeffReadCost</a> = evaluator&lt;T&gt;::CoeffReadCost
-, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588a850220718686d5f060e3351dbb87cf51">NAsInteger</a> = n == Dynamic ? HugeCost : n
-, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588aa67e6956b21f3e478767bc56441f0c5d">CostEval</a> = (NAsInteger+1) * ScalarReadCost + CoeffReadCost
+<tr class="memitem:a26b7ab6daffa33532d51f2bf4fe2dc4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4da9890ef7124d41e698600a5d16f8638d6">ScalarReadCost</a> = NumTraits&lt;typename traits&lt;T&gt;::Scalar&gt;::ReadCost
+, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4da49cff2e44edf50377a97ef7a6795a18d">CoeffReadCost</a> = evaluator&lt;T&gt;::CoeffReadCost
+, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4da850220718686d5f060e3351dbb87cf51">NAsInteger</a> = n == Dynamic ? HugeCost : n
+, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4daa67e6956b21f3e478767bc56441f0c5d">CostEval</a> = (NAsInteger+1) * ScalarReadCost + CoeffReadCost
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588a586d977872077a9a628547587bbbfc87">CostNoEval</a> = NAsInteger * CoeffReadCost
-, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588aa1f3d1cb5e715314885deb4c16950dfe">Evaluate</a> = (int(evaluator&lt;T&gt;::Flags) &amp; EvalBeforeNestingBit) || (int(CostEval) &lt; int(CostNoEval))
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4da586d977872077a9a628547587bbbfc87">CostNoEval</a> = NAsInteger * CoeffReadCost
+, <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4daa1f3d1cb5e715314885deb4c16950dfe">Evaluate</a> = (int(evaluator&lt;T&gt;::Flags) &amp; EvalBeforeNestingBit) || (int(CostEval) &lt; int(CostNoEval))
 <br />
  }</td></tr>
-<tr class="separator:ab9411f1e6ed92f49ba4a0324c19c0588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a787dfc6bd971e0ab60b3c1158ba4b313"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">conditional</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588aa1f3d1cb5e715314885deb4c16950dfe">Evaluate</a>, PlainObject, typenameref_selector&lt; T &gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a></td></tr>
+<tr class="separator:a26b7ab6daffa33532d51f2bf4fe2dc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787dfc6bd971e0ab60b3c1158ba4b313"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">conditional</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4daa1f3d1cb5e715314885deb4c16950dfe">Evaluate</a>, PlainObject, typenameref_selector&lt; T &gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a></td></tr>
 <tr class="separator:a787dfc6bd971e0ab60b3c1158ba4b313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -126,7 +126,7 @@ Public Types</h2></td></tr>
 template&lt;typename T , int n, typename PlainObject  = typename plain_object_eval&lt;T&gt;::type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">conditional</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#ab9411f1e6ed92f49ba4a0324c19c0588aa1f3d1cb5e715314885deb4c16950dfe">Evaluate</a>,PlainObject,typenameref_selector&lt;T&gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a>&gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a> <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html">Eigen::internal::nested_eval</a>&lt; T, n, PlainObject &gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a></td>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">conditional</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a26b7ab6daffa33532d51f2bf4fe2dc4daa1f3d1cb5e715314885deb4c16950dfe">Evaluate</a>,PlainObject,typenameref_selector&lt;T&gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a>&gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a> <a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html">Eigen::internal::nested_eval</a>&lt; T, n, PlainObject &gt;::<a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html#a787dfc6bd971e0ab60b3c1158ba4b313">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -134,8 +134,8 @@ template&lt;typename T , int n, typename PlainObject  = typename plain_object_ev
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ab9411f1e6ed92f49ba4a0324c19c0588" name="ab9411f1e6ed92f49ba4a0324c19c0588"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9411f1e6ed92f49ba4a0324c19c0588">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a26b7ab6daffa33532d51f2bf4fe2dc4d" name="a26b7ab6daffa33532d51f2bf4fe2dc4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b7ab6daffa33532d51f2bf4fe2dc4d">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,12 +148,12 @@ template&lt;typename T , int n, typename PlainObject  = typename plain_object_ev
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab9411f1e6ed92f49ba4a0324c19c0588a9890ef7124d41e698600a5d16f8638d6" name="ab9411f1e6ed92f49ba4a0324c19c0588a9890ef7124d41e698600a5d16f8638d6"></a>ScalarReadCost&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab9411f1e6ed92f49ba4a0324c19c0588a49cff2e44edf50377a97ef7a6795a18d" name="ab9411f1e6ed92f49ba4a0324c19c0588a49cff2e44edf50377a97ef7a6795a18d"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab9411f1e6ed92f49ba4a0324c19c0588a850220718686d5f060e3351dbb87cf51" name="ab9411f1e6ed92f49ba4a0324c19c0588a850220718686d5f060e3351dbb87cf51"></a>NAsInteger&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab9411f1e6ed92f49ba4a0324c19c0588aa67e6956b21f3e478767bc56441f0c5d" name="ab9411f1e6ed92f49ba4a0324c19c0588aa67e6956b21f3e478767bc56441f0c5d"></a>CostEval&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab9411f1e6ed92f49ba4a0324c19c0588a586d977872077a9a628547587bbbfc87" name="ab9411f1e6ed92f49ba4a0324c19c0588a586d977872077a9a628547587bbbfc87"></a>CostNoEval&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ab9411f1e6ed92f49ba4a0324c19c0588aa1f3d1cb5e715314885deb4c16950dfe" name="ab9411f1e6ed92f49ba4a0324c19c0588aa1f3d1cb5e715314885deb4c16950dfe"></a>Evaluate&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a26b7ab6daffa33532d51f2bf4fe2dc4da9890ef7124d41e698600a5d16f8638d6" name="a26b7ab6daffa33532d51f2bf4fe2dc4da9890ef7124d41e698600a5d16f8638d6"></a>ScalarReadCost&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a26b7ab6daffa33532d51f2bf4fe2dc4da49cff2e44edf50377a97ef7a6795a18d" name="a26b7ab6daffa33532d51f2bf4fe2dc4da49cff2e44edf50377a97ef7a6795a18d"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a26b7ab6daffa33532d51f2bf4fe2dc4da850220718686d5f060e3351dbb87cf51" name="a26b7ab6daffa33532d51f2bf4fe2dc4da850220718686d5f060e3351dbb87cf51"></a>NAsInteger&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a26b7ab6daffa33532d51f2bf4fe2dc4daa67e6956b21f3e478767bc56441f0c5d" name="a26b7ab6daffa33532d51f2bf4fe2dc4daa67e6956b21f3e478767bc56441f0c5d"></a>CostEval&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a26b7ab6daffa33532d51f2bf4fe2dc4da586d977872077a9a628547587bbbfc87" name="a26b7ab6daffa33532d51f2bf4fe2dc4da586d977872077a9a628547587bbbfc87"></a>CostNoEval&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a26b7ab6daffa33532d51f2bf4fe2dc4daa1f3d1cb5e715314885deb4c16950dfe" name="a26b7ab6daffa33532d51f2bf4fe2dc4daa1f3d1cb5e715314885deb4c16950dfe"></a>Evaluate&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -167,7 +167,7 @@ template&lt;typename T , int n, typename PlainObject  = typename plain_object_ev
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1nested__eval.html">nested_eval</a></li>
-    <li class="footer">Generated on Sat Jan 8 2022 08:18:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 8 2022 19:14:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
