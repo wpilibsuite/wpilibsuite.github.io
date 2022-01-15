@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-12-ge78cd49</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-13-g8cc112d</span>
    </div>
   </td>
  </tr>
@@ -211,10 +211,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ad47cd5d042e47e907891568d605e4e29"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ad47cd5d042e47e907891568d605e4e29">detail::write_tm_str</a> (OutputIt out, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> sv, const std::locale &amp;loc) -&gt; OutputIt</td></tr>
 <tr class="separator:ad47cd5d042e47e907891568d605e4e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5007cc441bd246a9096070c10d1ea683"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
-<tr class="memitem:a5007cc441bd246a9096070c10d1ea683"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a5007cc441bd246a9096070c10d1ea683">detail::do_write</a> (<a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;buf, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, char modifier)</td></tr>
+<tr class="memitem:a5007cc441bd246a9096070c10d1ea683"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a5007cc441bd246a9096070c10d1ea683">detail::do_write</a> (<a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;buf, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, char modifier)</td></tr>
 <tr class="separator:a5007cc441bd246a9096070c10d1ea683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; Char, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a29dacf26eedc9e3575fb57329a5ca0a3">detail::write</a> (OutputIt out, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, char modifier=0) -&gt; OutputIt</td></tr>
+<tr class="memitem:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a29dacf26eedc9e3575fb57329a5ca0a3">detail::write</a> (OutputIt out, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, char modifier=0) -&gt; OutputIt</td></tr>
 <tr class="separator:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5420acd34656784c3736b4803efad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a405a25ede2658f5f1bd426ce7d10f3ee">FMT_MODULE_EXPORT_BEGIN</a> std::tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2_chrono_8h.html#a5a5420acd34656784c3736b4803efad1">localtime</a> (std::time_t time)</td></tr>
 <tr class="memdesc:a5a5420acd34656784c3736b4803efad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts given time since epoch as <code>std::time_t</code> value into calendar time, expressed in local time.  <a href="fmtlib_2include_2fmt_2_chrono_8h.html#a5a5420acd34656784c3736b4803efad1">More...</a><br /></td></tr>
@@ -1092,7 +1092,7 @@ template&lt;typename T , typename Int , <a class="el" href="core_8h.html#ab02671
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><a class="el" href="fmtlib_2include_2fmt_2_chrono_8h.html">chrono.h</a></li>
-    <li class="footer">Generated on Wed Jan 12 2022 06:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 15 2022 07:55:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

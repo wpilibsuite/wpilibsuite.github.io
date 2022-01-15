@@ -13,7 +13,7 @@ var searchData=
   ['address4_10',['address4',['../structuv__interface__address__s.html#a5646bea5e4cba86ae1d92447c9cc8cf6',1,'uv_interface_address_s']]],
   ['address6_11',['address6',['../structuv__interface__address__s.html#a3f3cbcf386d1de17a7ef2992d6b5624d',1,'uv_interface_address_s']]],
   ['after_5fwork_5fcb_12',['after_work_cb',['../structuv__work__s.html#a0f73c632f0357aaff9fbc1e13fec603c',1,'uv_work_s']]],
-  ['afterwork_13',['afterWork',['../classwpi_1_1uv_1_1_work_req.html#a099d63016a38b0c6ea32e139c9ea6a05',1,'wpi::uv::WorkReq::afterWork()'],['../structwpi_1_1detail_1_1_worker_thread_request.html#a3c76d39bb83859e57e8ecca388e81418',1,'wpi::detail::WorkerThreadRequest::afterWork()']]],
+  ['afterwork_13',['afterWork',['../structwpi_1_1detail_1_1_worker_thread_request.html#a3c76d39bb83859e57e8ecca388e81418',1,'wpi::detail::WorkerThreadRequest::afterWork()'],['../classwpi_1_1uv_1_1_work_req.html#a099d63016a38b0c6ea32e139c9ea6a05',1,'wpi::uv::WorkReq::afterWork()']]],
   ['ah_14',['Ah',['../namespaceunits.html#a6095a546249e2dddd8ad172ecc4d38ff',1,'units']]],
   ['align_15',['align',['../structbasic__format__specs.html#a19b57f324eb8ed2b6cc96329009b1612',1,'basic_format_specs']]],
   ['alignedbit_16',['AlignedBit',['../group__flags.html#gac5795adacd266512a26890973503ed88',1,'Eigen']]],

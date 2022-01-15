@@ -2285,7 +2285,7 @@ var namespace_eigen_1_1internal =
     [ "pfrexp< Packet4f >", "namespace_eigen_1_1internal.html#a7fe688df681c759b1e3db4ab11444f76", null ],
     [ "pfrexp< Packet8f >", "namespace_eigen_1_1internal.html#a3564848b1a64d62355373122dfbaa8df", null ],
     [ "pfrexp_generic", "namespace_eigen_1_1internal.html#ace01ecfb4f96a051479c259c31cddba8", null ],
-    [ "pfrexp_generic_get_biased_exponent", "namespace_eigen_1_1internal.html#ae613bd261d7701bbc5d18a4f800ca60f", null ],
+    [ "pfrexp_generic_get_biased_exponent", "namespace_eigen_1_1internal.html#afee8a210263b3aff85ec85a60c34344a", null ],
     [ "pfrexp_generic_get_biased_exponent", "namespace_eigen_1_1internal.html#a7549bf5b23387c2c6ada4e12ca1ae930", null ],
     [ "pfrexp_generic_get_biased_exponent", "namespace_eigen_1_1internal.html#a874dce31f1d4fb5d7643737c8aff8095", null ],
     [ "pgather", "namespace_eigen_1_1internal.html#a49ef1e59fe39c143bd5a24f8f9d2dcbd", null ],

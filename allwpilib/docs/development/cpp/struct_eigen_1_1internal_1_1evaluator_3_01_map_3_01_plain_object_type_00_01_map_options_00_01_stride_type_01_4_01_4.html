@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-12-ge78cd49</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-13-g8cc112d</span>
    </div>
   </td>
  </tr>
@@ -113,22 +113,22 @@ Inheritance diagram for Eigen::internal::evaluator&lt; Map&lt; PlainObjectType, 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a92c38ecd921495e9cb0ad0c81d0edd12"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12a93ea149c43260ebaf1116d4cff72911a">InnerStrideAtCompileTime</a>
-, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12ac7bad62b7ff77ac587992568a93b8fa3">OuterStrideAtCompileTime</a>
-, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12a5f52efbdd01848dc40869fa18465c3ac">HasNoInnerStride</a> = InnerStrideAtCompileTime == 1
-, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12a0e08e850d5a2f5d377b706c909c26f37">HasNoOuterStride</a> = StrideType::OuterStrideAtCompileTime == 0
+<tr class="memitem:a774f141c45dc9affc767c1308227b7c7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7a93ea149c43260ebaf1116d4cff72911a">InnerStrideAtCompileTime</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7ac7bad62b7ff77ac587992568a93b8fa3">OuterStrideAtCompileTime</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7a5f52efbdd01848dc40869fa18465c3ac">HasNoInnerStride</a> = InnerStrideAtCompileTime == 1
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7a0e08e850d5a2f5d377b706c909c26f37">HasNoOuterStride</a> = StrideType::OuterStrideAtCompileTime == 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12ac3a46f86848c05067115617e7a8e1e07">HasNoStride</a> = HasNoInnerStride &amp;&amp; HasNoOuterStride
-, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12a6abb4c6db07e5fc4c5d9b5b3116a2fbd">IsDynamicSize</a> = PlainObjectType::SizeAtCompileTime==Dynamic
-, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12a2a005675be09c3127a94a568611f27bc">PacketAccessMask</a> = bool(HasNoInnerStride) ? ~int(0) : ~int(PacketAccessBit)
-, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12a7c9c406ef98aef78b085e020e5c3dc90">LinearAccessMask</a> = bool(HasNoStride) || bool(PlainObjectType::IsVectorAtCompileTime) ? ~int(0) : ~int(LinearAccessBit)
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7ac3a46f86848c05067115617e7a8e1e07">HasNoStride</a> = HasNoInnerStride &amp;&amp; HasNoOuterStride
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7a6abb4c6db07e5fc4c5d9b5b3116a2fbd">IsDynamicSize</a> = PlainObjectType::SizeAtCompileTime==Dynamic
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7a2a005675be09c3127a94a568611f27bc">PacketAccessMask</a> = bool(HasNoInnerStride) ? ~int(0) : ~int(PacketAccessBit)
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7a7c9c406ef98aef78b085e020e5c3dc90">LinearAccessMask</a> = bool(HasNoStride) || bool(PlainObjectType::IsVectorAtCompileTime) ? ~int(0) : ~int(LinearAccessBit)
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12a95644052e9b2857c67bec3d4c29a73af">Flags</a> = int( evaluator&lt;PlainObjectType&gt;::Flags) &amp; (LinearAccessMask&amp;PacketAccessMask)
-, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a92c38ecd921495e9cb0ad0c81d0edd12aaf26ead49b9fa1dea495dd606b1b0d74">Alignment</a> = int(MapOptions)&amp;int(AlignedMask)
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7a95644052e9b2857c67bec3d4c29a73af">Flags</a> = int( evaluator&lt;PlainObjectType&gt;::Flags) &amp; (LinearAccessMask&amp;PacketAccessMask)
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a774f141c45dc9affc767c1308227b7c7aaf26ead49b9fa1dea495dd606b1b0d74">Alignment</a> = int(MapOptions)&amp;int(AlignedMask)
 <br />
  }</td></tr>
-<tr class="separator:a92c38ecd921495e9cb0ad0c81d0edd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a774f141c45dc9affc767c1308227b7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80fdb5638d909afe0fd082f96bde0e1b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_map.html">Map</a>&lt; PlainObjectType, MapOptions, StrideType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a80fdb5638d909afe0fd082f96bde0e1b">XprType</a></td></tr>
 <tr class="separator:a80fdb5638d909afe0fd082f96bde0e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c72be1590c93d2fddf24398a45d9f7b"><td class="memItemLeft" align="right" valign="top">typedef XprType::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a4c72be1590c93d2fddf24398a45d9f7b">Scalar</a></td></tr>
@@ -136,8 +136,8 @@ Public Types</h2></td></tr>
 <tr class="memitem:a005617b21f80a25250a573052bd35319"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a4c72be1590c93d2fddf24398a45d9f7b">Scalar</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html#a005617b21f80a25250a573052bd35319">PacketScalar</a></td></tr>
 <tr class="separator:a005617b21f80a25250a573052bd35319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_eigen_1_1internal_1_1mapbase__evaluator.html">Eigen::internal::mapbase_evaluator&lt; Map&lt; PlainObjectType, MapOptions, StrideType &gt;, PlainObjectType &gt;</a></td></tr>
-<tr class="memitem:a3110c1b408ac065a67354186b1f74da0 inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a3110c1b408ac065a67354186b1f74da0 inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ac9a61e98e4cd84e08be2535b694ff inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a72ac9a61e98e4cd84e08be2535b694ff inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba84e56a1b0084898f7558ab110837c inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_map.html">Map</a>&lt; PlainObjectType, MapOptions, StrideType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1mapbase__evaluator.html#afba84e56a1b0084898f7558ab110837c">XprType</a></td></tr>
 <tr class="separator:afba84e56a1b0084898f7558ab110837c inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ec31b534c7d98abad460b037be78a4 inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_map.html#a252d5ec1d7ae98164e90c9a33d7cb819">XprType::PointerType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1mapbase__evaluator.html#a70ec31b534c7d98abad460b037be78a4">PointerType</a></td></tr>
@@ -147,9 +147,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8ecbb62e5ec7872f86b2a1ea087358ca inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memItemLeft" align="right" valign="top">typedef XprType::CoeffReturnType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1mapbase__evaluator.html#a8ecbb62e5ec7872f86b2a1ea087358ca">CoeffReturnType</a></td></tr>
 <tr class="separator:a8ecbb62e5ec7872f86b2a1ea087358ca inherit pub_types_struct_eigen_1_1internal_1_1mapbase__evaluator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_eigen_1_1internal_1_1evaluator__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html">Eigen::internal::evaluator_base&lt; ExpressionType &gt;</a></td></tr>
-<tr class="memitem:ab3b349c15657d3039084bbc661a52067 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html#ab3b349c15657d3039084bbc661a52067a9b30673e2e59d7217185643a6ccc9844">Alignment</a> = 0
+<tr class="memitem:a6bc33edfff1957935e97e994497927ee inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html#a6bc33edfff1957935e97e994497927eea9b30673e2e59d7217185643a6ccc9844">Alignment</a> = 0
  }</td></tr>
-<tr class="separator:ab3b349c15657d3039084bbc661a52067 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a6bc33edfff1957935e97e994497927ee inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; ExpressionType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html#acb94884a759bb59a96c8c3eea1e50c10">ExpressionTraits</a></td></tr>
 <tr class="separator:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -247,8 +247,8 @@ template&lt;typename PlainObjectType , int MapOptions, typename StrideType &gt; 
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a92c38ecd921495e9cb0ad0c81d0edd12" name="a92c38ecd921495e9cb0ad0c81d0edd12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92c38ecd921495e9cb0ad0c81d0edd12">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a774f141c45dc9affc767c1308227b7c7" name="a774f141c45dc9affc767c1308227b7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774f141c45dc9affc767c1308227b7c7">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,16 +261,16 @@ template&lt;typename PlainObjectType , int MapOptions, typename StrideType &gt; 
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12a93ea149c43260ebaf1116d4cff72911a" name="a92c38ecd921495e9cb0ad0c81d0edd12a93ea149c43260ebaf1116d4cff72911a"></a>InnerStrideAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12ac7bad62b7ff77ac587992568a93b8fa3" name="a92c38ecd921495e9cb0ad0c81d0edd12ac7bad62b7ff77ac587992568a93b8fa3"></a>OuterStrideAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12a5f52efbdd01848dc40869fa18465c3ac" name="a92c38ecd921495e9cb0ad0c81d0edd12a5f52efbdd01848dc40869fa18465c3ac"></a>HasNoInnerStride&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12a0e08e850d5a2f5d377b706c909c26f37" name="a92c38ecd921495e9cb0ad0c81d0edd12a0e08e850d5a2f5d377b706c909c26f37"></a>HasNoOuterStride&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12ac3a46f86848c05067115617e7a8e1e07" name="a92c38ecd921495e9cb0ad0c81d0edd12ac3a46f86848c05067115617e7a8e1e07"></a>HasNoStride&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12a6abb4c6db07e5fc4c5d9b5b3116a2fbd" name="a92c38ecd921495e9cb0ad0c81d0edd12a6abb4c6db07e5fc4c5d9b5b3116a2fbd"></a>IsDynamicSize&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12a2a005675be09c3127a94a568611f27bc" name="a92c38ecd921495e9cb0ad0c81d0edd12a2a005675be09c3127a94a568611f27bc"></a>PacketAccessMask&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12a7c9c406ef98aef78b085e020e5c3dc90" name="a92c38ecd921495e9cb0ad0c81d0edd12a7c9c406ef98aef78b085e020e5c3dc90"></a>LinearAccessMask&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12a95644052e9b2857c67bec3d4c29a73af" name="a92c38ecd921495e9cb0ad0c81d0edd12a95644052e9b2857c67bec3d4c29a73af"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a92c38ecd921495e9cb0ad0c81d0edd12aaf26ead49b9fa1dea495dd606b1b0d74" name="a92c38ecd921495e9cb0ad0c81d0edd12aaf26ead49b9fa1dea495dd606b1b0d74"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7a93ea149c43260ebaf1116d4cff72911a" name="a774f141c45dc9affc767c1308227b7c7a93ea149c43260ebaf1116d4cff72911a"></a>InnerStrideAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7ac7bad62b7ff77ac587992568a93b8fa3" name="a774f141c45dc9affc767c1308227b7c7ac7bad62b7ff77ac587992568a93b8fa3"></a>OuterStrideAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7a5f52efbdd01848dc40869fa18465c3ac" name="a774f141c45dc9affc767c1308227b7c7a5f52efbdd01848dc40869fa18465c3ac"></a>HasNoInnerStride&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7a0e08e850d5a2f5d377b706c909c26f37" name="a774f141c45dc9affc767c1308227b7c7a0e08e850d5a2f5d377b706c909c26f37"></a>HasNoOuterStride&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7ac3a46f86848c05067115617e7a8e1e07" name="a774f141c45dc9affc767c1308227b7c7ac3a46f86848c05067115617e7a8e1e07"></a>HasNoStride&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7a6abb4c6db07e5fc4c5d9b5b3116a2fbd" name="a774f141c45dc9affc767c1308227b7c7a6abb4c6db07e5fc4c5d9b5b3116a2fbd"></a>IsDynamicSize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7a2a005675be09c3127a94a568611f27bc" name="a774f141c45dc9affc767c1308227b7c7a2a005675be09c3127a94a568611f27bc"></a>PacketAccessMask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7a7c9c406ef98aef78b085e020e5c3dc90" name="a774f141c45dc9affc767c1308227b7c7a7c9c406ef98aef78b085e020e5c3dc90"></a>LinearAccessMask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7a95644052e9b2857c67bec3d4c29a73af" name="a774f141c45dc9affc767c1308227b7c7a95644052e9b2857c67bec3d4c29a73af"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a774f141c45dc9affc767c1308227b7c7aaf26ead49b9fa1dea495dd606b1b0d74" name="a774f141c45dc9affc767c1308227b7c7aaf26ead49b9fa1dea495dd606b1b0d74"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -313,7 +313,7 @@ template&lt;typename PlainObjectType , int MapOptions, typename StrideType &gt; 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html">evaluator&lt; Map&lt; PlainObjectType, MapOptions, StrideType &gt; &gt;</a></li>
-    <li class="footer">Generated on Wed Jan 12 2022 06:28:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 15 2022 07:55:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
