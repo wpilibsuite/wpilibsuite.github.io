@@ -451,6 +451,7 @@ var menudata={children:[
 {text:"w",url:"globals_type_w.html#index_w"}]},
 {text:"Enumerations",url:"globals_enum.html",children:[
 {text:"a",url:"globals_enum.html#index_a"},
+{text:"b",url:"globals_enum.html#index_b"},
 {text:"c",url:"globals_enum.html#index_c"},
 {text:"e",url:"globals_enum.html#index_e"},
 {text:"f",url:"globals_enum.html#index_f"},
@@ -458,6 +459,7 @@ var menudata={children:[
 {text:"i",url:"globals_enum.html#index_i"},
 {text:"m",url:"globals_enum.html#index_m"},
 {text:"n",url:"globals_enum.html#index_n"},
+{text:"p",url:"globals_enum.html#index_p"},
 {text:"t",url:"globals_enum.html#index_t"},
 {text:"u",url:"globals_enum.html#index_u"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[

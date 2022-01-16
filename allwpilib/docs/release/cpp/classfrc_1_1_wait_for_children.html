@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_wait_for_children.html','
 </div><!--header-->
 <div class="contents">
 
+<p>This command will only finish if whatever <a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> it is in has no active children.  
+ <a href="classfrc_1_1_wait_for_children.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_wait_for_children_8h_source.html">frc/commands/WaitForChildren.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for frc::WaitForChildren:</div>
@@ -159,7 +162,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab29c1b983b4843e5c167324b89d21c69 inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time since this command was initialized.  <a href="classfrc_1_1_command.html#ab29c1b983b4843e5c167324b89d21c69">More...</a><br /></td></tr>
 <tr class="separator:ab29c1b983b4843e5c167324b89d21c69 inherit pub_methods_classfrc_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5633c00c38027e8c978b40caf4fb9d5 inherit pub_methods_classfrc_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5">Requires</a> (<a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> *subsystem)</td></tr>
-<tr class="memdesc:ad5633c00c38027e8c978b40caf4fb9d5 inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method specifies that the given <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> is used by this command.  <a href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5">More...</a><br /></td></tr>
+<tr class="memdesc:ad5633c00c38027e8c978b40caf4fb9d5 inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method specifies that the given <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> is used by this command.  <a href="classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5">More...</a><br /></td></tr>
 <tr class="separator:ad5633c00c38027e8c978b40caf4fb9d5 inherit pub_methods_classfrc_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f4501af3516c00803f8540ac6c61175 inherit pub_methods_classfrc_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#a0f4501af3516c00803f8540ac6c61175">Start</a> ()</td></tr>
 <tr class="memdesc:a0f4501af3516c00803f8540ac6c61175 inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts up the command.  <a href="classfrc_1_1_command.html#a0f4501af3516c00803f8540ac6c61175">More...</a><br /></td></tr>
@@ -189,10 +192,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab657ac42c885ee9e5b7fff126b732f2c inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not this command can be interrupted.  <a href="classfrc_1_1_command.html#ab657ac42c885ee9e5b7fff126b732f2c">More...</a><br /></td></tr>
 <tr class="separator:ab657ac42c885ee9e5b7fff126b732f2c inherit pub_methods_classfrc_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082e02f365d6f594b9b1572ee162eb21 inherit pub_methods_classfrc_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#a082e02f365d6f594b9b1572ee162eb21">DoesRequire</a> (<a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> *subsystem) const</td></tr>
-<tr class="memdesc:a082e02f365d6f594b9b1572ee162eb21 inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the command requires the given <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a>.  <a href="classfrc_1_1_command.html#a082e02f365d6f594b9b1572ee162eb21">More...</a><br /></td></tr>
+<tr class="memdesc:a082e02f365d6f594b9b1572ee162eb21 inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the command requires the given <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a>.  <a href="classfrc_1_1_command.html#a082e02f365d6f594b9b1572ee162eb21">More...</a><br /></td></tr>
 <tr class="separator:a082e02f365d6f594b9b1572ee162eb21 inherit pub_methods_classfrc_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a949a7c286923fc6bfa77707cb038809c inherit pub_methods_classfrc_1_1_command"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_command.html#a5075af354b50e11610449f9e8597a883">SubsystemSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#a949a7c286923fc6bfa77707cb038809c">GetRequirements</a> () const</td></tr>
-<tr class="memdesc:a949a7c286923fc6bfa77707cb038809c inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> pointers) of this command.  <a href="classfrc_1_1_command.html#a949a7c286923fc6bfa77707cb038809c">More...</a><br /></td></tr>
+<tr class="memdesc:a949a7c286923fc6bfa77707cb038809c inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the requirements (as an std::set of <a class="el" href="classfrc_1_1_subsystem.html" title="This class defines a major component of the robot.">Subsystem</a> pointers) of this command.  <a href="classfrc_1_1_command.html#a949a7c286923fc6bfa77707cb038809c">More...</a><br /></td></tr>
 <tr class="separator:a949a7c286923fc6bfa77707cb038809c inherit pub_methods_classfrc_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad202f2ddf4bfad6e997b4cdbfb57620e inherit pub_methods_classfrc_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_command_group.html">CommandGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#ad202f2ddf4bfad6e997b4cdbfb57620e">GetGroup</a> () const</td></tr>
 <tr class="memdesc:ad202f2ddf4bfad6e997b4cdbfb57620e inherit pub_methods_classfrc_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> that this command is a part of.  <a href="classfrc_1_1_command.html#ad202f2ddf4bfad6e997b4cdbfb57620e">More...</a><br /></td></tr>
@@ -320,7 +323,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a5075af354b50e11610449f9e8597a883 inherit pub_types_classfrc_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_command.html#a5075af354b50e11610449f9e8597a883">SubsystemSet</a> = <a class="el" href="classwpi_1_1_small_ptr_set_impl.html">wpi::SmallPtrSetImpl</a>&lt; <a class="el" href="classfrc_1_1_subsystem.html">Subsystem</a> * &gt;</td></tr>
 <tr class="separator:a5075af354b50e11610449f9e8597a883 inherit pub_types_classfrc_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >This command will only finish if whatever <a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> it is in has no active children. </p>
+<p >If it is not a part of a <a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a>, then it will finish immediately. If it is itself an active child, then the <a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> will never end.</p>
+<p >This class is useful for the situation where you want to allow anything running in parallel to finish, before continuing in the main <a class="el" href="classfrc_1_1_command_group.html" title="A CommandGroup is a list of commands which are executed in sequence.">CommandGroup</a> sequence.</p>
+<p >This class is provided by the OldCommands VendorDep </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab2ee1cee2adecd4368bb9bd894302b61" name="ab2ee1cee2adecd4368bb9bd894302b61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2ee1cee2adecd4368bb9bd894302b61">&#9670;&nbsp;</a></span>WaitForChildren() <span class="overload">[1/3]</span></h2>
 
@@ -496,7 +504,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_wait_for_children.html">WaitForChildren</a></li>
-    <li class="footer">Generated on Fri Jan 7 2022 05:57:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jan 16 2022 04:23:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

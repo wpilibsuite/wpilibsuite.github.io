@@ -216,9 +216,6 @@ var hierarchy =
       [ "Eigen::symbolic::SymbolExpr< tag >", "class_eigen_1_1symbolic_1_1_symbol_expr.html", null ]
     ] ],
     [ "basic_cstring_view< Char >", "classbasic__cstring__view.html", null ],
-    [ "basic_data< T >", "structbasic__data.html", [
-      [ "data", "structdata.html", null ]
-    ] ],
     [ "std::basic_filebuf", null, [
       [ "ghc::filesystem::basic_filebuf< charT, traits >", "classghc_1_1filesystem_1_1basic__filebuf.html", null ]
     ] ],
@@ -235,17 +232,14 @@ var hierarchy =
     [ "std::basic_ifstream", null, [
       [ "ghc::filesystem::basic_ifstream< charT, traits >", "classghc_1_1filesystem_1_1basic__ifstream.html", null ]
     ] ],
+    [ "detail::basic_impl_data< T >", "structdetail_1_1basic__impl__data.html", [
+      [ "detail::impl_data", "structdetail_1_1impl__data.html", null ]
+    ] ],
     [ "std::basic_ofstream", null, [
       [ "ghc::filesystem::basic_ofstream< charT, traits >", "classghc_1_1filesystem_1_1basic__ofstream.html", null ]
     ] ],
-    [ "std::basic_ostream", null, [
-      [ "detail::test_stream< Char >", "structdetail_1_1test__stream.html", null ]
-    ] ],
     [ "basic_printf_context< OutputIt, Char >", "classbasic__printf__context.html", null ],
     [ "basic_runtime< Char >", "structbasic__runtime.html", null ],
-    [ "std::basic_streambuf", null, [
-      [ "detail::formatbuf< Char >", "classdetail_1_1formatbuf.html", null ]
-    ] ],
     [ "basic_string_view< Char >", "classbasic__string__view.html", null ],
     [ "basic_string_view< char >", "classbasic__string__view.html", null ],
     [ "frc::sim::BatterySim", "classfrc_1_1sim_1_1_battery_sim.html", null ],
@@ -324,11 +318,14 @@ var hierarchy =
     [ "Eigen::BlockImpl< XprType, BlockRows, BlockCols, InnerPanel, internal::traits< XprType >::StorageKind >", "class_eigen_1_1_block_impl.html", [
       [ "Eigen::Block< XprType, BlockRows, BlockCols, InnerPanel >", "class_eigen_1_1_block.html", null ]
     ] ],
+    [ "bool_constant", null, [
+      [ "arg_mapper< Context >::formattable< T, U >", "structarg__mapper_1_1formattable.html", null ]
+    ] ],
     [ "Eigen::internal::bool_constant< Condition >", "struct_eigen_1_1internal_1_1bool__constant.html", null ],
-    [ "detail::boundaries", "structdetail_1_1boundaries.html", null ],
     [ "buffer< T >", "classbuffer.html", [
       [ "iterator_buffer< OutputIt, T, Traits >", "classiterator__buffer.html", null ],
-      [ "iterator_buffer< T *, T >", "classiterator__buffer_3_01_t_01_5_00_01_t_01_4.html", null ]
+      [ "iterator_buffer< T *, T >", "classiterator__buffer_3_01_t_01_5_00_01_t_01_4.html", null ],
+      [ "iterator_buffer< T *, T, fixed_buffer_traits >", "classiterator__buffer_3_01_t_01_5_00_01_t_00_01fixed__buffer__traits_01_4.html", null ]
     ] ],
     [ "detail::buffer", null, [
       [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", null ]
@@ -396,6 +393,7 @@ var hierarchy =
     [ "Eigen::internal::cleanup_index_type< VariableAndFixedInt< N >, DynamicKey >", "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_dynamic_key_01_4.html", null ],
     [ "Eigen::internal::cleanup_seq_incr< T >", "struct_eigen_1_1internal_1_1cleanup__seq__incr.html", null ],
     [ "wpi::WebSocket::ClientOptions", "structwpi_1_1_web_socket_1_1_client_options.html", null ],
+    [ "detail::codecvt_result< CodeUnit >", "structdetail_1_1codecvt__result.html", null ],
     [ "Eigen::internal::coeff_visitor< Derived >", "struct_eigen_1_1internal_1_1coeff__visitor.html", [
       [ "Eigen::internal::max_coeff_visitor< Derived, NaNPropagation >", "struct_eigen_1_1internal_1_1max__coeff__visitor.html", null ],
       [ "Eigen::internal::max_coeff_visitor< Derived, PropagateNaN >", "struct_eigen_1_1internal_1_1max__coeff__visitor_3_01_derived_00_01_propagate_na_n_01_4.html", null ],
@@ -570,7 +568,6 @@ var hierarchy =
       [ "frc::PIDController", "classfrc_1_1_p_i_d_controller.html", null ]
     ] ],
     [ "frc::Spline< Degree >::ControlVector", "structfrc_1_1_spline_1_1_control_vector.html", null ],
-    [ "detail::converter", "structdetail_1_1converter.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, bool >", "structwpi_1_1java_1_1detail_1_1_convert_int_array.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, true >", "structwpi_1_1java_1_1detail_1_1_convert_int_array_3_01_t_00_01true_01_4.html", null ],
     [ "Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling< Kernel, Index, Stop >", "struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html", null ],
@@ -759,6 +756,7 @@ var hierarchy =
     [ "frc::DifferentialDrivePoseEstimator", "classfrc_1_1_differential_drive_pose_estimator.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim", "classfrc_1_1sim_1_1_differential_drivetrain_sim.html", null ],
     [ "frc::DifferentialDriveWheelSpeeds", "structfrc_1_1_differential_drive_wheel_speeds.html", null ],
+    [ "digit_grouping< Char >", "classdigit__grouping.html", null ],
     [ "frc::sim::DigitalPWMSim", "classfrc_1_1sim_1_1_digital_p_w_m_sim.html", null ],
     [ "frc::DigitalSource", "classfrc_1_1_digital_source.html", [
       [ "frc::AnalogTriggerOutput", "classfrc_1_1_analog_trigger_output.html", null ],
@@ -1142,6 +1140,7 @@ var hierarchy =
     [ "wpi::detail::external_constructor< value_t::string >", "structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1string_01_4.html", null ],
     [ "Eigen::internal::extract_data_selector< T, HasUsableDirectAccess >", "struct_eigen_1_1internal_1_1extract__data__selector.html", null ],
     [ "Eigen::internal::extract_data_selector< T, false >", "struct_eigen_1_1internal_1_1extract__data__selector_3_01_t_00_01false_01_4.html", null ],
+    [ "fallback_digit_grouping< Char >", "classfallback__digit__grouping.html", null ],
     [ "fallback_formatter< T, Char, Enable >", "structfallback__formatter.html", null ],
     [ "detail::fallback_uintptr", "structdetail_1_1fallback__uintptr.html", null ],
     [ "Eigen::internal::false_type", "struct_eigen_1_1internal_1_1false__type.html", [
@@ -1158,9 +1157,11 @@ var hierarchy =
       [ "detail::has_const_begin_end< T, Enable >", "structdetail_1_1has__const__begin__end.html", null ],
       [ "detail::has_member_fn_begin_end_t< T, Enable >", "structdetail_1_1has__member__fn__begin__end__t.html", null ],
       [ "detail::has_mutable_begin_end< T, Enable >", "structdetail_1_1has__mutable__begin__end.html", null ],
-      [ "detail::is_locale< T, Enable >", "structdetail_1_1is__locale.html", null ],
       [ "detail::is_range_< T, _ >", "structdetail_1_1is__range__.html", null ],
       [ "detail::is_reference_wrapper< T >", "structdetail_1_1is__reference__wrapper.html", null ],
+      [ "detail::is_streamable< T, Char, enable_if_t< std::is_arithmetic< T >::value||std::is_array< T >::value||std::is_pointer< T >::value||std::is_same< T, char8_type >::value||std::is_same< T, std::basic_string< Char > >::value||std::is_same< T, std_string_view< Char > >::value||(std::is_convertible< T, int >::value &&!std::is_enum< T >::value)> >", "structdetail_1_1is__streamable_3_01_t_00_01_char_00_01enable__if__t_3_01std_1_1is__arithmetic_3_99543233d03d64d9a2040c5204d2e687.html", null ],
+      [ "has_member_data_tm_gmtoff< T, typename >", "structhas__member__data__tm__gmtoff.html", null ],
+      [ "has_member_data_tm_zone< T, typename >", "structhas__member__data__tm__zone.html", null ],
       [ "is_back_insert_iterator< OutputIt >", "structis__back__insert__iterator.html", null ],
       [ "is_char< T >", "structis__char.html", null ],
       [ "is_contiguous< T >", "structis__contiguous.html", null ],
@@ -1193,10 +1194,12 @@ var hierarchy =
     [ "Eigen::internal::find_best_packet_helper< Size, PacketType, Stop >", "struct_eigen_1_1internal_1_1find__best__packet__helper.html", null ],
     [ "Eigen::internal::find_best_packet_helper< Size, PacketType, false >", "struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01false_01_4.html", null ],
     [ "Eigen::internal::find_best_packet_helper< Size, PacketType, true >", "struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01true_01_4.html", null ],
+    [ "detail::find_escape_result< Char >", "structdetail_1_1find__escape__result.html", null ],
     [ "Eigen::internal::first_aligned_impl< Alignment, Derived, JustReturnZero >", "struct_eigen_1_1internal_1_1first__aligned__impl.html", null ],
     [ "Eigen::internal::first_aligned_impl< Alignment, Derived, false >", "struct_eigen_1_1internal_1_1first__aligned__impl_3_01_alignment_00_01_derived_00_01false_01_4.html", null ],
-    [ "fixed_buffer_traits", "classfixed__buffer__traits.html", null ],
-    [ "detail::fixed_handler", "structdetail_1_1fixed__handler.html", null ],
+    [ "fixed_buffer_traits", "classfixed__buffer__traits.html", [
+      [ "iterator_buffer< T *, T, fixed_buffer_traits >", "classiterator__buffer_3_01_t_01_5_00_01_t_00_01fixed__buffer__traits_01_4.html", null ]
+    ] ],
     [ "FixedBlockXpr< Rows, Cols >", "struct_fixed_block_xpr.html", null ],
     [ "Eigen::internal::FixedInt< N >", "class_eigen_1_1internal_1_1_fixed_int.html", null ],
     [ "FixedSegmentReturnType< Size >", "struct_fixed_segment_return_type.html", null ],
@@ -1215,7 +1218,9 @@ var hierarchy =
       [ "fmt::formatter< units::dimensionless::dB_t >", "structfmt_1_1formatter_3_01units_1_1dimensionless_1_1d_b__t_01_4.html", null ],
       [ "fmt::formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01_units_00_01_t_00_01_non_linear_scale_01_4_01_4.html", null ]
     ] ],
-    [ "formatter< T, Char, Enable >", "structformatter.html", null ],
+    [ "formatter< T, Char, Enable >", "structformatter.html", [
+      [ "formatter< group_digits_view< T > >", "structformatter_3_01group__digits__view_3_01_t_01_4_01_4.html", null ]
+    ] ],
     [ "formatter< basic_string_view< Char >, Char >", "structformatter.html", [
       [ "detail::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >", "structdetail_1_1fallback__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01is__streamable_3_0116a9df8564c2d9e12499cd5b72786d7c.html", null ],
       [ "formatter< Char[N], Char >", "structformatter_3_01_char_0f_n_0e_00_01_char_01_4.html", null ]
@@ -1232,14 +1237,13 @@ var hierarchy =
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
       [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", null ]
     ] ],
+    [ "formatter< T, Char, enable_if_t< detail::is_map< T >::value &&(is_formattable< detail::value_type< T >, Char >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01detail_1_1is__map_3_01_t_01_4_1_1value_53212af8d40eae8d53388dcc2cfe05ab.html", null ],
     [ "formatter< T, Char, enable_if_t< detail::type_constant< T, Char >::value !=detail::type::custom_type > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01detail_1_1type__constant_3_01_t_00_01_ce66aa95d8f86570b04dc47971fbb1e4b.html", null ],
-    [ "formatter< T, Char, enable_if_t< fmt::is_range< T, Char >::value &&(has_formatter< detail::value_type< T >, format_context >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01fmt_1_1is__range_3_01_t_00_01_char_01_41b8553b261ee7f61183f57b22bd82d88.html", null ],
+    [ "formatter< T, Char, enable_if_t< fmt::is_range< T, Char >::value &&(is_formattable< detail::value_type< T >, Char >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01fmt_1_1is__range_3_01_t_00_01_char_01_4cba26440f94df2f142946ab02c9c1c06.html", null ],
     [ "formatter< tuple_join_view< Char, T... >, Char >", "structformatter_3_01tuple__join__view_3_01_char_00_01_t_8_8_8_01_4_00_01_char_01_4.html", null ],
     [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value > >", "structformatter_3_01_tuple_t_00_01_char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01_tuple_t_01_4_1_1value_01_4_01_4.html", null ],
-    [ "formatter< weekday >", "structformatter_3_01weekday_01_4.html", null ],
-    [ "formatting_range< Char, Enable >", "structformatting__range.html", null ],
-    [ "formatting_tuple< Char, Enable >", "structformatting__tuple.html", null ],
-    [ "detail::fp", "classdetail_1_1fp.html", null ],
+    [ "formatter< weekday, Char >", "structformatter_3_01weekday_00_01_char_01_4.html", null ],
+    [ "detail::fp", "structdetail_1_1fp.html", null ],
     [ "hal::fpga_clock", "classhal_1_1fpga__clock.html", null ],
     [ "wpi::detail::from_json_fn", "structwpi_1_1detail_1_1from__json__fn.html", null ],
     [ "wpi::AlignTo< Align >::from_value< Value >", "structwpi_1_1_align_to_1_1from__value.html", null ],
@@ -1393,6 +1397,7 @@ var hierarchy =
     [ "Eigen::internal::gemv_static_vector_if< Scalar, Size, MaxSize, false >", "struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01false_01_4.html", null ],
     [ "Eigen::internal::gemv_static_vector_if< Scalar, Size, MaxSize, true >", "struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html", null ],
     [ "Eigen::internal::gemv_traits< LhsScalar, RhsScalar, _PacketSize >", "class_eigen_1_1internal_1_1gemv__traits.html", null ],
+    [ "detail::gen_digits_handler", "structdetail_1_1gen__digits__handler.html", null ],
     [ "Eigen::internal::general_matrix_matrix_product< Index, LhsScalar, LhsStorageOrder, ConjugateLhs, RhsScalar, RhsStorageOrder, ConjugateRhs, ResStorageOrder, ResInnerStride >", "struct_eigen_1_1internal_1_1general__matrix__matrix__product.html", null ],
     [ "Eigen::internal::general_matrix_matrix_product< Index, LhsScalar, LhsStorageOrder, ConjugateLhs, RhsScalar, RhsStorageOrder, ConjugateRhs, ColMajor, ResInnerStride >", "struct_eigen_1_1internal_1_1general__matrix__matrix__product_3_01_index_00_01_lhs_scalar_00_01_l1c18efada955ca658977e927c1127f83.html", null ],
     [ "Eigen::internal::general_matrix_matrix_product< Index, LhsScalar, LhsStorageOrder, ConjugateLhs, RhsScalar, RhsStorageOrder, ConjugateRhs, RowMajor, ResInnerStride >", "struct_eigen_1_1internal_1_1general__matrix__matrix__product_3_01_index_00_01_lhs_scalar_00_01_le432ed816e972784a1617a76eb4d53eb.html", null ],
@@ -1511,10 +1516,12 @@ var hierarchy =
     [ "Eigen::internal::get_fixed_value< FixedInt< N >, Default >", "struct_eigen_1_1internal_1_1get__fixed__value_3_01_fixed_int_3_01_n_01_4_00_01_default_01_4.html", null ],
     [ "Eigen::internal::get_fixed_value< variable_if_dynamic< T, N >, Default >", "struct_eigen_1_1internal_1_1get__fixed__value_3_01variable__if__dynamic_3_01_t_00_01_n_01_4_00_01_default_01_4.html", null ],
     [ "Eigen::internal::get_fixed_value< VariableAndFixedInt< N >, Default >", "struct_eigen_1_1internal_1_1get__fixed__value_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_default_01_4.html", null ],
+    [ "get_locale", "classget__locale.html", null ],
     [ "Eigen::internal::global_math_functions_filtering_base< T, dummy >", "struct_eigen_1_1internal_1_1global__math__functions__filtering__base.html", null ],
     [ "Eigen::internal::global_math_functions_filtering_base< T, typename always_void< typename T::Eigen_BaseClassForSpecializationOfGlobalMathFuncImpl >::type >", "struct_eigen_1_1internal_1_1global__math__functions__filtering__base_3_01_t_00_01typename_01alwa3a21a82d868fc50f3fc9fd9dd230c694.html", null ],
     [ "Eigen::internal::glue_shapes< S1, S2 >", "struct_eigen_1_1internal_1_1glue__shapes.html", null ],
     [ "Eigen::internal::glue_shapes< DenseShape, TriangularShape >", "struct_eigen_1_1internal_1_1glue__shapes_3_01_dense_shape_00_01_triangular_shape_01_4.html", null ],
+    [ "group_digits_view< T >", "structgroup__digits__view.html", null ],
     [ "frc::Gyro", "classfrc_1_1_gyro.html", [
       [ "frc::ADXRS450_Gyro", "classfrc_1_1_a_d_x_r_s450___gyro.html", null ],
       [ "frc::AnalogGyro", "classfrc_1_1_analog_gyro.html", [
@@ -1772,6 +1779,7 @@ var hierarchy =
     [ "wpi::is_integral_or_enum< T >", "classwpi_1_1is__integral__or__enum.html", null ],
     [ "wpi::detail::is_json_nested_type< BasicJsonType, T >", "structwpi_1_1detail_1_1is__json__nested__type.html", null ],
     [ "Eigen::internal::is_lvalue< ExpressionType >", "struct_eigen_1_1internal_1_1is__lvalue.html", null ],
+    [ "detail::is_map< T >", "classdetail_1_1is__map.html", null ],
     [ "is_range< T, Char >", "structis__range.html", null ],
     [ "Eigen::internal::is_same< T, U >", "struct_eigen_1_1internal_1_1is__same.html", null ],
     [ "std::is_same", null, [
@@ -1782,8 +1790,9 @@ var hierarchy =
       [ "Eigen::internal::is_void< T >", "struct_eigen_1_1internal_1_1is__void.html", null ]
     ] ],
     [ "Eigen::internal::is_scalar< Packet >", "struct_eigen_1_1internal_1_1is__scalar.html", null ],
+    [ "detail::is_set< T >", "classdetail_1_1is__set.html", null ],
     [ "detail::is_std_string_like< T >", "classdetail_1_1is__std__string__like.html", null ],
-    [ "detail::is_streamable< T, Char >", "classdetail_1_1is__streamable.html", null ],
+    [ "detail::is_streamable< T, Char, Enable >", "classdetail_1_1is__streamable.html", null ],
     [ "Eigen::symbolic::is_symbolic< T >", "struct_eigen_1_1symbolic_1_1is__symbolic.html", null ],
     [ "is_tuple_like< T >", "structis__tuple__like.html", null ],
     [ "detail::is_tuple_like_< T >", "classdetail_1_1is__tuple__like__.html", null ],
@@ -2186,6 +2195,9 @@ var hierarchy =
     [ "null_chrono_spec_handler< chrono_format_checker >", "structnull__chrono__spec__handler.html", [
       [ "chrono_format_checker", "structchrono__format__checker.html", null ]
     ] ],
+    [ "null_chrono_spec_handler< tm_format_checker >", "structnull__chrono__spec__handler.html", [
+      [ "tm_format_checker", "structtm__format__checker.html", null ]
+    ] ],
     [ "Eigen::internal::nullary_result_of_select< Func, SizeOf >", "struct_eigen_1_1internal_1_1nullary__result__of__select.html", null ],
     [ "Eigen::internal::nullary_result_of_select< Func, sizeof(has_std_result_type)>", "struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__std__result__type_08_4.html", null ],
     [ "Eigen::internal::nullary_result_of_select< Func, sizeof(has_tr1_result)>", "struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__tr1__result_08_4.html", null ],
@@ -2468,9 +2480,6 @@ var hierarchy =
     [ "Eigen::internal::random_default_impl< Scalar, true, false >", "struct_eigen_1_1internal_1_1random__default__impl_3_01_scalar_00_01true_00_01false_01_4.html", null ],
     [ "Eigen::internal::random_impl< bool >", "struct_eigen_1_1internal_1_1random__impl_3_01bool_01_4.html", null ],
     [ "Eigen::internal::random_retval< Scalar >", "struct_eigen_1_1internal_1_1random__retval.html", null ],
-    [ "detail::range_to_view< T, Enable >", "structdetail_1_1range__to__view.html", null ],
-    [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >", "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_01has__const__begin__end_3_01_t_01_4_1_1value_01_4_01_4.html", null ],
-    [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >", "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_02cc276889d7570dd56de7fd1b0cb211.html", null ],
     [ "wpi::raw_istream", "classwpi_1_1raw__istream.html", [
       [ "wpi::raw_fd_istream", "classwpi_1_1raw__fd__istream.html", null ],
       [ "wpi::raw_mem_istream", "classwpi_1_1raw__mem__istream.html", null ],
@@ -3102,6 +3111,7 @@ var hierarchy =
     [ "wpi::uv::SimpleBufferPool< DEPTH >", "classwpi_1_1uv_1_1_simple_buffer_pool.html", null ],
     [ "frc::SimpleMotorFeedforward< Distance >", "classfrc_1_1_simple_motor_feedforward.html", null ],
     [ "Eigen::internal::SingleRange", "struct_eigen_1_1internal_1_1_single_range.html", null ],
+    [ "detail::singleton", "structdetail_1_1singleton.html", null ],
     [ "Eigen::internal::size_at_compile_time< _Rows, _Cols >", "struct_eigen_1_1internal_1_1size__at__compile__time.html", null ],
     [ "Eigen::internal::size_of_xpr_at_compile_time< XprType >", "struct_eigen_1_1internal_1_1size__of__xpr__at__compile__time.html", null ],
     [ "wpi::detail::SizerImpl< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "unionwpi_1_1detail_1_1_sizer_impl.html", null ],
@@ -3228,6 +3238,9 @@ var hierarchy =
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< double >, n, idx >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_11fb595916ab6c56b42dbf4a9ba5366d.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< float >, n, -1 >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_8693329e3850a66b17c66e21b02756d2.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< float >, n, idx >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_66a0834fa5668a55b83645f836a84679.html", null ],
+    [ "Streambuf", null, [
+      [ "detail::formatbuf< Streambuf >", "classdetail_1_1formatbuf.html", null ]
+    ] ],
     [ "Eigen::Stride< _OuterStrideAtCompileTime, _InnerStrideAtCompileTime >", "class_eigen_1_1_stride.html", null ],
     [ "Eigen::Stride< 0, Value >", "class_eigen_1_1_stride.html", [
       [ "Eigen::InnerStride< Value >", "class_eigen_1_1_inner_stride.html", null ]
@@ -3282,6 +3295,7 @@ var hierarchy =
     [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
     [ "frc::TimeInterpolatableBuffer< T >", "classfrc_1_1_time_interpolatable_buffer.html", null ],
     [ "frc::Timer", "classfrc_1_1_timer.html", null ],
+    [ "tm_writer< OutputIt, Char >", "classtm__writer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1_tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1_trailing_zeros_counter.html", null ],
@@ -3497,12 +3511,13 @@ var hierarchy =
       [ "Eigen::internal::is_exp_known_type< long double >", "struct_eigen_1_1internal_1_1is__exp__known__type_3_01long_01double_01_4.html", null ]
     ] ],
     [ "std::true_type", null, [
-      [ "detail::has_const_begin_end< T, void_t< decltype(detail::range_begin(std::declval< const remove_cvref_t< T > & >())), decltype(detail::range_begin(std::declval< const remove_cvref_t< T > & >()))> >", "structdetail_1_1has__const__begin__end_3_01_t_00_01void__t_3_01decltype_07detail_1_1range__begin63de91744deb89d44ebe24a1f708f2c1.html", null ],
+      [ "detail::has_const_begin_end< T, void_t< decltype(detail::range_begin(std::declval< const remove_cvref_t< T > & >())), decltype(detail::range_end(std::declval< const remove_cvref_t< T > & >()))> >", "structdetail_1_1has__const__begin__end_3_01_t_00_01void__t_3_01decltype_07detail_1_1range__begin4d0cf3c56adb617747d1750d2b5598ac.html", null ],
       [ "detail::has_member_fn_begin_end_t< T, void_t< decltype(std::declval< T >().begin()), decltype(std::declval< T >().end())> >", "structdetail_1_1has__member__fn__begin__end__t_3_01_t_00_01void__t_3_01decltype_07std_1_1declval2d279443b63d262c3d0c3ea7654a8b24.html", null ],
-      [ "detail::has_mutable_begin_end< T, void_t< decltype(detail::range_begin(std::declval< T >())), decltype(detail::range_begin(std::declval< T >())), enable_if_t< std::is_copy_constructible< T >::value > > >", "structdetail_1_1has__mutable__begin__end_3_01_t_00_01void__t_3_01decltype_07detail_1_1range__bege0b01531b4d9708c282dc1af11d69506.html", null ],
-      [ "detail::is_locale< T, void_t< decltype(T::classic())> >", "structdetail_1_1is__locale_3_01_t_00_01void__t_3_01decltype_07_t_1_1classic_07_08_08_4_01_4.html", null ],
+      [ "detail::has_mutable_begin_end< T, void_t< decltype(detail::range_begin(std::declval< T >())), decltype(detail::range_end(std::declval< T >())), enable_if_t< std::is_copy_constructible< T >::value > > >", "structdetail_1_1has__mutable__begin__end_3_01_t_00_01void__t_3_01decltype_07detail_1_1range__begd5f2729531552232d214cda8da44d539.html", null ],
       [ "detail::is_reference_wrapper< std::reference_wrapper< T > >", "structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01_t_01_4_01_4.html", null ],
       [ "detail::is_std_string_like< fmt::basic_string_view< Char > >", "structdetail_1_1is__std__string__like_3_01fmt_1_1basic__string__view_3_01_char_01_4_01_4.html", null ],
+      [ "has_member_data_tm_gmtoff< T, void_t< decltype(T::tm_gmtoff)> >", "structhas__member__data__tm__gmtoff_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__gmtoff_08_4_01_4.html", null ],
+      [ "has_member_data_tm_zone< T, void_t< decltype(T::tm_zone)> >", "structhas__member__data__tm__zone_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__zone_08_4_01_4.html", null ],
       [ "is_back_insert_iterator< std::back_insert_iterator< Container > >", "structis__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01_container_01_4_01_4.html", null ],
       [ "is_char< char >", "structis__char_3_01char_01_4.html", null ],
       [ "is_char< char16_t >", "structis__char_3_01char16__t_01_4.html", null ],
@@ -3898,7 +3913,11 @@ var hierarchy =
     [ "Eigen::internal::unary_result_of_select< Func, ArgType, SizeOf >", "struct_eigen_1_1internal_1_1unary__result__of__select.html", null ],
     [ "Eigen::internal::unary_result_of_select< Func, ArgType, sizeof(has_std_result_type)>", "struct_eigen_1_1internal_1_1unary__result__of__select_3_01_func_00_01_arg_type_00_01sizeof_07has__std__result__type_08_4.html", null ],
     [ "Eigen::internal::unary_result_of_select< Func, ArgType, sizeof(has_tr1_result)>", "struct_eigen_1_1internal_1_1unary__result__of__select_3_01_func_00_01_arg_type_00_01sizeof_07has__tr1__result_08_4.html", null ],
-    [ "unformattable", "structunformattable.html", null ],
+    [ "unformattable", "structunformattable.html", [
+      [ "unformattable_char", "structunformattable__char.html", null ],
+      [ "unformattable_const", "structunformattable__const.html", null ],
+      [ "unformattable_pointer", "structunformattable__pointer.html", null ]
+    ] ],
     [ "Eigen::UniformScaling< Scalar >", "class_eigen_1_1_uniform_scaling.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
     [ "wpi::unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4.html", null ],
@@ -4051,8 +4070,6 @@ var hierarchy =
     [ "view", "structview.html", [
       [ "named_arg< Char, T >", "structnamed__arg.html", null ]
     ] ],
-    [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_01has__const__begin__end_3_01_t_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
-    [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_f652c0eeba6644f05ccec8d962321faf.html", null ],
     [ "frc::VisionPipeline", "classfrc_1_1_vision_pipeline.html", null ],
     [ "frc::VisionRunnerBase", "classfrc_1_1_vision_runner_base.html", [
       [ "frc::VisionRunner< T >", "classfrc_1_1_vision_runner.html", null ]
@@ -4081,6 +4098,7 @@ var hierarchy =
     [ "wpi::wpi_shutdown_obj", "structwpi_1_1wpi__shutdown__obj.html", null ],
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
     [ "write_int_data< Char >", "structwrite__int__data.html", null ],
+    [ "year_month_day", "classyear__month__day.html", null ],
     [ "numeric_limits", null, [
       [ "std::numeric_limits< Eigen::AutoDiffScalar< T & > >", "classstd_1_1numeric__limits_3_01_eigen_1_1_auto_diff_scalar_3_01_t_01_6_01_4_01_4.html", null ],
       [ "std::numeric_limits< Eigen::AutoDiffScalar< T > >", "classstd_1_1numeric__limits_3_01_eigen_1_1_auto_diff_scalar_3_01_t_01_4_01_4.html", null ]

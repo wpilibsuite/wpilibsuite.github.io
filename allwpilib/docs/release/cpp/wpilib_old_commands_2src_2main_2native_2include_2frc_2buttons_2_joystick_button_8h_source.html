@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1</span>
    </div>
   </td>
  </tr>
@@ -104,33 +104,38 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="wpilib_old_commands_2src_2main_2native_2include_2frc_2buttons_2_button_8h.html">frc/buttons/Button.h</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a> : <span class="keyword">public</span> <a class="code hl_class" href="classfrc_1_1_button.html">Button</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#ada516648b7de4b77a3495a6ed9ee2199">   14</a></span>  <a class="code hl_function" href="classfrc_1_1_joystick_button.html#ada516648b7de4b77a3495a6ed9ee2199">JoystickButton</a>(<a class="code hl_class" href="classfrc_1_1_generic_h_i_d.html">GenericHID</a>* joystick, <span class="keywordtype">int</span> buttonNumber);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#af781efaef4ea505420c233dcf7887308">   15</a></span>  <a class="code hl_function" href="classfrc_1_1_joystick_button.html#af781efaef4ea505420c233dcf7887308">~JoystickButton</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#ac968ecebf6f44c259501dd63a27d0a69">   17</a></span>  <a class="code hl_function" href="classfrc_1_1_joystick_button.html#ac968ecebf6f44c259501dd63a27d0a69">JoystickButton</a>(<a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#a95df533a98bdf74430e77e1daa6e181c">   18</a></span>  <a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a>&amp; <a class="code hl_function" href="classfrc_1_1_joystick_button.html#a95df533a98bdf74430e77e1daa6e181c">operator=</a>(<a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#a1b9e99b56ddbf50b00b6f7ef66b8f69c">   20</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_joystick_button.html#a1b9e99b56ddbf50b00b6f7ef66b8f69c">Get</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * A Button} that gets its state from a GenericHID.</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * This class is provided by the OldCommands VendorDep</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a> : <span class="keyword">public</span> <a class="code hl_class" href="classfrc_1_1_button.html">Button</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#ada516648b7de4b77a3495a6ed9ee2199">   19</a></span>  <a class="code hl_function" href="classfrc_1_1_joystick_button.html#ada516648b7de4b77a3495a6ed9ee2199">JoystickButton</a>(<a class="code hl_class" href="classfrc_1_1_generic_h_i_d.html">GenericHID</a>* joystick, <span class="keywordtype">int</span> buttonNumber);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#af781efaef4ea505420c233dcf7887308">   20</a></span>  <a class="code hl_function" href="classfrc_1_1_joystick_button.html#af781efaef4ea505420c233dcf7887308">~JoystickButton</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_class" href="classfrc_1_1_generic_h_i_d.html">GenericHID</a>* m_joystick;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">int</span> m_buttonNumber;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#ac968ecebf6f44c259501dd63a27d0a69">   22</a></span>  <a class="code hl_function" href="classfrc_1_1_joystick_button.html#ac968ecebf6f44c259501dd63a27d0a69">JoystickButton</a>(<a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#a95df533a98bdf74430e77e1daa6e181c">   23</a></span>  <a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a>&amp; <a class="code hl_function" href="classfrc_1_1_joystick_button.html#a95df533a98bdf74430e77e1daa6e181c">operator=</a>(<a class="code hl_class" href="classfrc_1_1_joystick_button.html">JoystickButton</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classfrc_1_1_joystick_button.html#a1b9e99b56ddbf50b00b6f7ef66b8f69c">   25</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_joystick_button.html#a1b9e99b56ddbf50b00b6f7ef66b8f69c">Get</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="classfrc_1_1_generic_h_i_d.html">GenericHID</a>* m_joystick;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">int</span> m_buttonNumber;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_generic_h_i_d_8h_html"><div class="ttname"><a href="_generic_h_i_d_8h.html">GenericHID.h</a></div></div>
-<div class="ttc" id="aclassfrc_1_1_button_html"><div class="ttname"><a href="classfrc_1_1_button.html">frc::Button</a></div><div class="ttdoc">This class provides an easy way to link commands to OI inputs.</div><div class="ttdef"><b>Definition:</b> Button.h:23</div></div>
+<div class="ttc" id="aclassfrc_1_1_button_html"><div class="ttname"><a href="classfrc_1_1_button.html">frc::Button</a></div><div class="ttdoc">This class provides an easy way to link commands to OI inputs.</div><div class="ttdef"><b>Definition:</b> Button.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1_generic_h_i_d_html"><div class="ttname"><a href="classfrc_1_1_generic_h_i_d.html">frc::GenericHID</a></div><div class="ttdoc">Handle input from standard HID devices connected to the Driver Station.</div><div class="ttdef"><b>Definition:</b> GenericHID.h:23</div></div>
-<div class="ttc" id="aclassfrc_1_1_joystick_button_html"><div class="ttname"><a href="classfrc_1_1_joystick_button.html">frc::JoystickButton</a></div><div class="ttdef"><b>Definition:</b> JoystickButton.h:12</div></div>
+<div class="ttc" id="aclassfrc_1_1_joystick_button_html"><div class="ttname"><a href="classfrc_1_1_joystick_button.html">frc::JoystickButton</a></div><div class="ttdoc">A Button} that gets its state from a GenericHID.</div><div class="ttdef"><b>Definition:</b> JoystickButton.h:17</div></div>
 <div class="ttc" id="aclassfrc_1_1_joystick_button_html_a1b9e99b56ddbf50b00b6f7ef66b8f69c"><div class="ttname"><a href="classfrc_1_1_joystick_button.html#a1b9e99b56ddbf50b00b6f7ef66b8f69c">frc::JoystickButton::Get</a></div><div class="ttdeci">bool Get() override</div></div>
 <div class="ttc" id="aclassfrc_1_1_joystick_button_html_a95df533a98bdf74430e77e1daa6e181c"><div class="ttname"><a href="classfrc_1_1_joystick_button.html#a95df533a98bdf74430e77e1daa6e181c">frc::JoystickButton::operator=</a></div><div class="ttdeci">JoystickButton &amp; operator=(JoystickButton &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_joystick_button_html_ac968ecebf6f44c259501dd63a27d0a69"><div class="ttname"><a href="classfrc_1_1_joystick_button.html#ac968ecebf6f44c259501dd63a27d0a69">frc::JoystickButton::JoystickButton</a></div><div class="ttdeci">JoystickButton(JoystickButton &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_joystick_button_html_ada516648b7de4b77a3495a6ed9ee2199"><div class="ttname"><a href="classfrc_1_1_joystick_button.html#ada516648b7de4b77a3495a6ed9ee2199">frc::JoystickButton::JoystickButton</a></div><div class="ttdeci">JoystickButton(GenericHID *joystick, int buttonNumber)</div></div>
 <div class="ttc" id="aclassfrc_1_1_joystick_button_html_af781efaef4ea505420c233dcf7887308"><div class="ttname"><a href="classfrc_1_1_joystick_button.html#af781efaef4ea505420c233dcf7887308">frc::JoystickButton::~JoystickButton</a></div><div class="ttdeci">~JoystickButton() override=default</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
 <div class="ttc" id="awpilib_old_commands_2src_2main_2native_2include_2frc_2buttons_2_button_8h_html"><div class="ttname"><a href="wpilib_old_commands_2src_2main_2native_2include_2frc_2buttons_2_button_8h.html">Button.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -138,7 +143,7 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_2806a47f1bd27756a9266462cf76a864.html">buttons</a></li><li class="navelem"><a class="el" href="wpilib_old_commands_2src_2main_2native_2include_2frc_2buttons_2_joystick_button_8h.html">JoystickButton.h</a></li>
-    <li class="footer">Generated on Fri Jan 7 2022 05:57:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jan 16 2022 04:23:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

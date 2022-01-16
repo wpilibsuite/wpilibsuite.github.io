@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('globals_func_h.html',''); initResizabl
 <li>HAL_CreateSimValueLong()&#160;:&#160;<a class="el" href="group__hal__simdevice.html#ga634408f23b2eba9059c652693e4c9066">SimDevice.h</a></li>
 <li>HAL_DisableSerialTermination()&#160;:&#160;<a class="el" href="group__hal__serialport.html#ga8969a109884d86c95adf819496c64784">SerialPort.h</a></li>
 <li>HAL_EnableSerialTermination()&#160;:&#160;<a class="el" href="group__hal__serialport.html#gafcf5b2de69d717550fb9aacfc2e55c78">SerialPort.h</a></li>
-<li>HAL_ENUM()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga2c9ac82bc2f384d1ac9fcf6d8d1b851c">DriverStationTypes.h</a>, <a class="el" href="group__hal__simdevice.html#ga82d1db3d13cb6397a8a795dce593e181">SimDevice.h</a>, <a class="el" href="group__hal__dma.html#gacb9f489dfdc755b4e1ecf41d5c36c352">DMA.h</a>, <a class="el" href="group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106">Encoder.h</a>, <a class="el" href="group__hal__capi.html#ga59224521ba6146730042619c40c2b3ed">HALBase.h</a>, <a class="el" href="group__hal__analogtrigger.html#ga9e75285997fc3ef49951f49bd5001ba9">AnalogTrigger.h</a>, <a class="el" href="group__hal__accelerometer.html#ga483672a8d82151b03aa3e7f06eeb3cb2">Accelerometer.h</a>, <a class="el" href="group__hal__pd.html#gae8ef15e374e534ef59868d95f9ed9b10">PowerDistribution.h</a>, <a class="el" href="group__hal__canapi.html#gaeb9c1f2328fb93a93713f818a67ad85a">CANAPITypes.h</a>, <a class="el" href="group__hal__serialport.html#gaa827902ab8c266aa857612cd506e834e">SerialPort.h</a>, <a class="el" href="group__hal__spi.html#gae58880a5ca64d2a518180674610928a7">SPITypes.h</a>, <a class="el" href="group__hal__i2c.html#gadc160e0691b080d4ba30a071f64df025">I2CTypes.h</a>, <a class="el" href="group__hal__counter.html#ga84bbe84ace9756712e5edbc3a287abc6">Counter.h</a>, <a class="el" href="group__hal__rev__ph.html#gac493ef38f5557da40d01d4c9490dfbb8">REVPH.h</a></li>
+<li>HAL_ENUM()&#160;:&#160;<a class="el" href="group__hal__spi.html#gae58880a5ca64d2a518180674610928a7">SPITypes.h</a>, <a class="el" href="group__hal__pd.html#gae8ef15e374e534ef59868d95f9ed9b10">PowerDistribution.h</a>, <a class="el" href="group__hal__driverstation.html#ga2c9ac82bc2f384d1ac9fcf6d8d1b851c">DriverStationTypes.h</a>, <a class="el" href="group__hal__analogtrigger.html#ga9e75285997fc3ef49951f49bd5001ba9">AnalogTrigger.h</a>, <a class="el" href="group__hal__accelerometer.html#ga483672a8d82151b03aa3e7f06eeb3cb2">Accelerometer.h</a>, <a class="el" href="group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106">Encoder.h</a>, <a class="el" href="group__hal__canapi.html#ga96faadeb9b740fd2d97aa23e53565595">CANAPITypes.h</a>, <a class="el" href="group__hal__i2c.html#gadc160e0691b080d4ba30a071f64df025">I2CTypes.h</a>, <a class="el" href="group__hal__serialport.html#gaa827902ab8c266aa857612cd506e834e">SerialPort.h</a>, <a class="el" href="group__hal__simdevice.html#ga82d1db3d13cb6397a8a795dce593e181">SimDevice.h</a>, <a class="el" href="group__hal__capi.html#ga59224521ba6146730042619c40c2b3ed">HALBase.h</a>, <a class="el" href="group__hal__rev__ph.html#gac493ef38f5557da40d01d4c9490dfbb8">REVPH.h</a>, <a class="el" href="group__hal__dma.html#gacb9f489dfdc755b4e1ecf41d5c36c352">DMA.h</a>, <a class="el" href="group__hal__canapi.html#gaeb9c1f2328fb93a93713f818a67ad85a">CANAPITypes.h</a>, <a class="el" href="group__hal__counter.html#ga84bbe84ace9756712e5edbc3a287abc6">Counter.h</a></li>
 <li>HAL_ExitMain()&#160;:&#160;<a class="el" href="group__hal__relay.html#gaf51728a6358166efc0a0e30678c907a6">Main.h</a></li>
 <li>HAL_ExpandFPGATime()&#160;:&#160;<a class="el" href="group__hal__capi.html#ga7fda7ce97de711c9dfc5bb8bed9a79ed">HALBase.h</a></li>
 <li>HAL_FireCTREPCMOneShot()&#160;:&#160;<a class="el" href="group__hal__ctre__pcm.html#ga37ca98b2bfb7c19abd1683422f653ee5">CTREPCM.h</a></li>
@@ -1155,6 +1155,8 @@ $(document).ready(function(){initNavTree('globals_func_h.html',''); initResizabl
 <li>HALSIM_StepTimingAsync()&#160;:&#160;<a class="el" href="_mock_hooks_8h.html#a3d51d50d5557d59504847373d70016aa">MockHooks.h</a></li>
 <li>HALSIM_WaitForProgramStart()&#160;:&#160;<a class="el" href="_mock_hooks_8h.html#a1498351dd7427b2eb5ba34271b9f509f">MockHooks.h</a></li>
 <li>handle_dynamic_spec()&#160;:&#160;<a class="el" href="format_8h.html#a66ff3c801831c40a7caaa4870d6caafb">format.h</a></li>
+<li>has_const_formatter()&#160;:&#160;<a class="el" href="core_8h.html#af1bd84ed55d3f25b69a382e0e6252131">core.h</a></li>
+<li>has_const_formatter_impl()&#160;:&#160;<a class="el" href="core_8h.html#a61cb94144cf48d21c29bc3343e9c11f9">core.h</a></li>
 <li>head()&#160;:&#160;<a class="el" href="_block_methods_8h.html#af652402b7c3103c3e9f6c62d51e8d490">BlockMethods.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -1162,7 +1164,7 @@ $(document).ready(function(){initNavTree('globals_func_h.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 7 2022 05:57:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jan 16 2022 04:23:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

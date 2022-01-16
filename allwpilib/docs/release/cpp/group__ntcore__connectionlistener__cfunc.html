@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1</span>
    </div>
   </td>
  </tr>
@@ -100,13 +100,13 @@ $(document).ready(function(){initNavTree('group__ntcore__connectionlistener__cfu
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga59dc84868226f7f0005c98d862f50697"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697">NT_ConnectionListenerCallback</a>) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___connection_notification.html">NT_ConnectionNotification</a> *event)</td></tr>
+<tr class="memitem:ga59dc84868226f7f0005c98d862f50697"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697">NT_ConnectionListenerCallback</a>) (void *data, const struct <a class="el" href="struct_n_t___connection_notification.html">NT_ConnectionNotification</a> *event)</td></tr>
 <tr class="memdesc:ga59dc84868226f7f0005c98d862f50697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection listener callback function.  <a href="group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697">More...</a><br /></td></tr>
 <tr class="separator:ga59dc84868226f7f0005c98d862f50697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac64a972063e3be3fe4d7ae3859e7c062"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062">NT_AddConnectionListener</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, void *<a class="el" href="structdata.html">data</a>, <a class="el" href="group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697">NT_ConnectionListenerCallback</a> callback, <a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> immediate_notify)</td></tr>
+<tr class="memitem:gac64a972063e3be3fe4d7ae3859e7c062"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062">NT_AddConnectionListener</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, void *data, <a class="el" href="group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697">NT_ConnectionListenerCallback</a> callback, <a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> immediate_notify)</td></tr>
 <tr class="memdesc:gac64a972063e3be3fe4d7ae3859e7c062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062">More...</a><br /></td></tr>
 <tr class="separator:gac64a972063e3be3fe4d7ae3859e7c062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02b07a837bac69fc086f1c21c0aedaea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2482a18d8ea87cb75f5e3738759a717f">NT_ConnectionListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__cfunc.html#ga02b07a837bac69fc086f1c21c0aedaea">NT_CreateConnectionListenerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
@@ -143,7 +143,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* NT_ConnectionListenerCallback) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___connection_notification.html">NT_ConnectionNotification</a> *event)</td>
+          <td class="memname">typedef void(* NT_ConnectionListenerCallback) (void *data, const struct <a class="el" href="struct_n_t___connection_notification.html">NT_ConnectionNotification</a> *event)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -495,7 +495,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 7 2022 05:57:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jan 16 2022 04:23:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
