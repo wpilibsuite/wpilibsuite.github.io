@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-19-g8f387f7</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-20-g36af6d2</span>
    </div>
   </td>
  </tr>
@@ -140,7 +140,7 @@ class frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</div><p >This class wrap
 <p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7" title="Add a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a> can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.</p>
 <p >The state-space system used internally has the following states (x), inputs (u), and outputs (y):</p>
 <p ><b> x = [x, y, theta]ᵀ </b> in the field coordinate system containing x position, y position, and heading.</p>
-<p ><b> u = [v_l, v_r, dtheta]ᵀ </b> containing left wheel velocity, right wheel velocity, and change in gyro heading.</p>
+<p ><b> u = [v_x, v_y, omega]ᵀ </b> containing x velocity, y velocity, and angular velocity in the field coordinate system.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta]ᵀ </b> containing gyro heading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a31c93b63c5349dce5053414a6c30dccb" name="a31c93b63c5349dce5053414a6c30dccb"></a>
@@ -566,7 +566,7 @@ template&lt;typename... ModuleState&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">SwerveDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sat Jan 15 2022 23:26:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jan 16 2022 04:06:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
