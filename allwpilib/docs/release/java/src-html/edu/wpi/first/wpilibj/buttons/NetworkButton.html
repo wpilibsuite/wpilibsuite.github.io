@@ -20,23 +20,27 @@
 <span class="sourceLineNo">008</span><a id="line.8">import edu.wpi.first.networktables.NetworkTableEntry;</a>
 <span class="sourceLineNo">009</span><a id="line.9">import edu.wpi.first.networktables.NetworkTableInstance;</a>
 <span class="sourceLineNo">010</span><a id="line.10"></a>
-<span class="sourceLineNo">011</span><a id="line.11">/** A {@link Button} that uses a {@link NetworkTable} boolean field. */</a>
-<span class="sourceLineNo">012</span><a id="line.12">public class NetworkButton extends Button {</a>
-<span class="sourceLineNo">013</span><a id="line.13">  private final NetworkTableEntry m_entry;</a>
-<span class="sourceLineNo">014</span><a id="line.14"></a>
-<span class="sourceLineNo">015</span><a id="line.15">  public NetworkButton(String table, String field) {</a>
-<span class="sourceLineNo">016</span><a id="line.16">    this(NetworkTableInstance.getDefault().getTable(table), field);</a>
-<span class="sourceLineNo">017</span><a id="line.17">  }</a>
+<span class="sourceLineNo">011</span><a id="line.11">/**</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * A {@link Button} that uses a {@link NetworkTable} boolean field.</a>
+<span class="sourceLineNo">013</span><a id="line.13"> *</a>
+<span class="sourceLineNo">014</span><a id="line.14"> * &lt;p&gt;This class is provided by the OldCommands VendorDep</a>
+<span class="sourceLineNo">015</span><a id="line.15"> */</a>
+<span class="sourceLineNo">016</span><a id="line.16">public class NetworkButton extends Button {</a>
+<span class="sourceLineNo">017</span><a id="line.17">  private final NetworkTableEntry m_entry;</a>
 <span class="sourceLineNo">018</span><a id="line.18"></a>
-<span class="sourceLineNo">019</span><a id="line.19">  public NetworkButton(NetworkTable table, String field) {</a>
-<span class="sourceLineNo">020</span><a id="line.20">    m_entry = table.getEntry(field);</a>
+<span class="sourceLineNo">019</span><a id="line.19">  public NetworkButton(String table, String field) {</a>
+<span class="sourceLineNo">020</span><a id="line.20">    this(NetworkTableInstance.getDefault().getTable(table), field);</a>
 <span class="sourceLineNo">021</span><a id="line.21">  }</a>
 <span class="sourceLineNo">022</span><a id="line.22"></a>
-<span class="sourceLineNo">023</span><a id="line.23">  @Override</a>
-<span class="sourceLineNo">024</span><a id="line.24">  public boolean get() {</a>
-<span class="sourceLineNo">025</span><a id="line.25">    return m_entry.getInstance().isConnected() &amp;&amp; m_entry.getBoolean(false);</a>
-<span class="sourceLineNo">026</span><a id="line.26">  }</a>
-<span class="sourceLineNo">027</span><a id="line.27">}</a>
+<span class="sourceLineNo">023</span><a id="line.23">  public NetworkButton(NetworkTable table, String field) {</a>
+<span class="sourceLineNo">024</span><a id="line.24">    m_entry = table.getEntry(field);</a>
+<span class="sourceLineNo">025</span><a id="line.25">  }</a>
+<span class="sourceLineNo">026</span><a id="line.26"></a>
+<span class="sourceLineNo">027</span><a id="line.27">  @Override</a>
+<span class="sourceLineNo">028</span><a id="line.28">  public boolean get() {</a>
+<span class="sourceLineNo">029</span><a id="line.29">    return m_entry.getInstance().isConnected() &amp;&amp; m_entry.getBoolean(false);</a>
+<span class="sourceLineNo">030</span><a id="line.30">  }</a>
+<span class="sourceLineNo">031</span><a id="line.31">}</a>
 
 
 
