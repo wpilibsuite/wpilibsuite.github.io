@@ -1,5 +1,7 @@
 var NAVTREEINDEX156 =
 {
+"struct_eigen_1_1internal_1_1scalar__atan__op.html":[4,0,7,4,996],
+"struct_eigen_1_1internal_1_1scalar__atan__op.html":[5,0,4,2,994],
 "struct_eigen_1_1internal_1_1scalar__atan__op.html#a04ef6093fea73bc9fdb084deb43212dd":[5,0,4,2,994,0],
 "struct_eigen_1_1internal_1_1scalar__atan__op.html#a04ef6093fea73bc9fdb084deb43212dd":[4,0,7,4,996,0],
 "struct_eigen_1_1internal_1_1scalar__atan__op.html#aa58f970745f7b563a6c9ce9f999ec008":[5,0,4,2,994,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX156 =
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#aa4c92580cf3c10157719848b15c6297d":[4,0,7,4,1051,1],
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#aa4c92580cf3c10157719848b15c6297d":[5,0,4,2,1049,1],
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#ac7a6fe76e747630758fe3c88904f1836":[5,0,4,2,1049,0],
-"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#ac7a6fe76e747630758fe3c88904f1836":[4,0,7,4,1051,0],
-"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#af3f6e15738af2fa5eafa78d82fd49610":[4,0,7,4,1051,3],
-"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#af3f6e15738af2fa5eafa78d82fd49610":[5,0,4,2,1049,3]
+"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#ac7a6fe76e747630758fe3c88904f1836":[4,0,7,4,1051,0]
 };

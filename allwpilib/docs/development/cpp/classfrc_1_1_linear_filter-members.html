@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-21-g63d1fb3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1-1-gf3a0b5c</span>
    </div>
   </td>
  </tr>
@@ -97,20 +97,21 @@ $(document).ready(function(){initNavTree('classfrc_1_1_linear_filter.html',''); 
 
 <p>This is the complete list of members for <a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#ad81074659881872d4202922096e4d710">BackwardFiniteDifference</a>(units::second_t period)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#a6d8d9b86c5f88f100a4a8bdcdd5d8db8">BackwardFiniteDifference</a>(units::second_t period)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#a4ce233ce452caec0f7489ddbb12ca980">Calculate</a>(T input)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#a5c4a4c49c259b7664b663606b42ec4e1">HighPass</a>(double timeConstant, units::second_t period)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>(wpi::span&lt; const double &gt; ffGains, wpi::span&lt; const double &gt; fbGains)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#ad9e2fcd1f28f1b9e40582c500d4ca6bb">LinearFilter</a>(std::initializer_list&lt; double &gt; ffGains, std::initializer_list&lt; double &gt; fbGains)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#a82095916400744938dcd6a4103925743">MovingAverage</a>(int taps)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#ac197e7d5cea0a24d9729cc63bc0f122f">Reset</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">SinglePoleIIR</a>(double timeConstant, units::second_t period)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#a69e97c4cd8537e820ff86b5ae07dc395">FiniteDifference</a>(const wpi::array&lt; int, Samples &gt; stencil, units::second_t period)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#a5c4a4c49c259b7664b663606b42ec4e1">HighPass</a>(double timeConstant, units::second_t period)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>(wpi::span&lt; const double &gt; ffGains, wpi::span&lt; const double &gt; fbGains)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#ad9e2fcd1f28f1b9e40582c500d4ca6bb">LinearFilter</a>(std::initializer_list&lt; double &gt; ffGains, std::initializer_list&lt; double &gt; fbGains)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#a82095916400744938dcd6a4103925743">MovingAverage</a>(int taps)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#ac197e7d5cea0a24d9729cc63bc0f122f">Reset</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">SinglePoleIIR</a>(double timeConstant, units::second_t period)</td><td class="entry"><a class="el" href="classfrc_1_1_linear_filter.html">frc::LinearFilter&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 16 2022 04:13:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Jan 17 2022 18:02:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
