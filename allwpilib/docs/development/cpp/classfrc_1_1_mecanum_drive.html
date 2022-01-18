@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1-2-g5ba69e1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1-5-g8c55844</span>
    </div>
   </td>
  </tr>
@@ -287,12 +287,11 @@ Additional Inherited Members</h2></td></tr>
   |   |
 /_|___|_\
 /       \
-</pre><p >Each Drive() function provides different inverse kinematic relations for a Mecanum drive robot. Motor outputs for the right side are negated, so motor direction inversion by the user is usually unnecessary.</p>
+</pre><p >Each Drive() function provides different inverse kinematic relations for a Mecanum drive robot.</p>
 <p >This library uses the NED axes convention (North-East-Down as external reference in the world frame): <a href="http://www.nuclearprojects.com/ins/images/axis_big.png">http://www.nuclearprojects.com/ins/images/axis_big.png</a>.</p>
 <p >The positive X axis points ahead, the positive Y axis points to the right, and the positive Z axis points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is positive.</p>
 <p >Inputs smaller then 0.02 will be set to 0, and larger values will be scaled so that the full range is still used. This deadband value can be changed with <a class="el" href="classfrc_1_1_robot_drive_base.html#a66ca9d336c81659405045bf064490cfe" title="Sets the deadband applied to the drive inputs (e.g., joystick values).">SetDeadband()</a>.</p>
 <p >RobotDrive porting guide: <br  />
-In <a class="el" href="classfrc_1_1_mecanum_drive.html" title="A class for driving Mecanum drive platforms.">MecanumDrive</a>, the right side motor controllers are automatically inverted, while in RobotDrive, no motor controllers are automatically inverted. <br  />
 <a class="el" href="classfrc_1_1_mecanum_drive.html#a7801f779e6486dfd7f6f101d51d5e1f5" title="Drive method for Mecanum platform.">DriveCartesian(double, double, double, double)</a> is equivalent to RobotDrive's MecanumDrive_Cartesian(double, double, double, double) if a deadband of 0 is used, and the ySpeed and gyroAngle values are inverted compared to RobotDrive (eg DriveCartesian(xSpeed, -ySpeed, zRotation, -gyroAngle). <br  />
 <a class="el" href="classfrc_1_1_mecanum_drive.html#a5fb956c5b44a5b608a85212e77962d08" title="Drive method for Mecanum platform.">DrivePolar(double, double, double)</a> is equivalent to RobotDrive's MecanumDrive_Polar(double, double, double) if a deadband of 0 is used. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -673,7 +672,7 @@ In <a class="el" href="classfrc_1_1_mecanum_drive.html" title="A class for drivi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mecanum_drive.html">MecanumDrive</a></li>
-    <li class="footer">Generated on Mon Jan 17 2022 20:24:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Jan 18 2022 09:04:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
