@@ -21,6 +21,7 @@ var classfrc_1_1_power_distribution =
     [ "GetTotalCurrent", "classfrc_1_1_power_distribution.html#a0808ca4ac93ab4d5bb4f7b0b9f99e975", null ],
     [ "GetTotalEnergy", "classfrc_1_1_power_distribution.html#a6e548976ab85b2be4a2c89a760be1df1", null ],
     [ "GetTotalPower", "classfrc_1_1_power_distribution.html#a3bfdfa0c4211a0130111347a12b9c8aa", null ],
+    [ "GetType", "classfrc_1_1_power_distribution.html#a0bae6b162882800c05c3b1e340d0e7c3", null ],
     [ "GetVersion", "classfrc_1_1_power_distribution.html#a46440394f0210c847884307ea96d0c07", null ],
     [ "GetVoltage", "classfrc_1_1_power_distribution.html#abdf5c6ca896de30f0dc9bc544a4bb305", null ],
     [ "InitSendable", "classfrc_1_1_power_distribution.html#ace26051828996ca044b5e5604702888d", null ],
