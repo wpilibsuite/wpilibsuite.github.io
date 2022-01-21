@@ -165,54 +165,68 @@
 <span class="sourceLineNo">153</span><a id="line.153">  }</a>
 <span class="sourceLineNo">154</span><a id="line.154"></a>
 <span class="sourceLineNo">155</span><a id="line.155">  /**</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * Gets whether the PDH switchable channel is turned on or off. Returns false with the CTRE PDP.</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * Gets the module type for this power distribution object.</a>
 <span class="sourceLineNo">157</span><a id="line.157">   *</a>
-<span class="sourceLineNo">158</span><a id="line.158">   * @return The output state of the PDH switchable channel</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * @return The module type</a>
 <span class="sourceLineNo">159</span><a id="line.159">   */</a>
-<span class="sourceLineNo">160</span><a id="line.160">  public boolean getSwitchableChannel() {</a>
-<span class="sourceLineNo">161</span><a id="line.161">    return PowerDistributionJNI.getSwitchableChannel(m_handle);</a>
-<span class="sourceLineNo">162</span><a id="line.162">  }</a>
-<span class="sourceLineNo">163</span><a id="line.163"></a>
-<span class="sourceLineNo">164</span><a id="line.164">  /**</a>
-<span class="sourceLineNo">165</span><a id="line.165">   * Sets the PDH switchable channel on or off. Does nothing with the CTRE PDP.</a>
-<span class="sourceLineNo">166</span><a id="line.166">   *</a>
-<span class="sourceLineNo">167</span><a id="line.167">   * @param enabled Whether to turn the PDH switchable channel on or off</a>
-<span class="sourceLineNo">168</span><a id="line.168">   */</a>
-<span class="sourceLineNo">169</span><a id="line.169">  public void setSwitchableChannel(boolean enabled) {</a>
-<span class="sourceLineNo">170</span><a id="line.170">    PowerDistributionJNI.setSwitchableChannel(m_handle, enabled);</a>
-<span class="sourceLineNo">171</span><a id="line.171">  }</a>
-<span class="sourceLineNo">172</span><a id="line.172"></a>
-<span class="sourceLineNo">173</span><a id="line.173">  PowerDistributionVersion getVersion() {</a>
-<span class="sourceLineNo">174</span><a id="line.174">    return PowerDistributionJNI.getVersion(m_handle);</a>
-<span class="sourceLineNo">175</span><a id="line.175">  }</a>
-<span class="sourceLineNo">176</span><a id="line.176"></a>
-<span class="sourceLineNo">177</span><a id="line.177">  PowerDistributionFaults getFaults() {</a>
-<span class="sourceLineNo">178</span><a id="line.178">    return PowerDistributionJNI.getFaults(m_handle);</a>
-<span class="sourceLineNo">179</span><a id="line.179">  }</a>
-<span class="sourceLineNo">180</span><a id="line.180"></a>
-<span class="sourceLineNo">181</span><a id="line.181">  PowerDistributionStickyFaults getStickyFaults() {</a>
-<span class="sourceLineNo">182</span><a id="line.182">    return PowerDistributionJNI.getStickyFaults(m_handle);</a>
-<span class="sourceLineNo">183</span><a id="line.183">  }</a>
-<span class="sourceLineNo">184</span><a id="line.184"></a>
-<span class="sourceLineNo">185</span><a id="line.185">  @Override</a>
-<span class="sourceLineNo">186</span><a id="line.186">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">187</span><a id="line.187">    builder.setSmartDashboardType("PowerDistribution");</a>
-<span class="sourceLineNo">188</span><a id="line.188">    int numChannels = getNumChannels();</a>
-<span class="sourceLineNo">189</span><a id="line.189">    for (int i = 0; i &lt; numChannels; ++i) {</a>
-<span class="sourceLineNo">190</span><a id="line.190">      final int chan = i;</a>
-<span class="sourceLineNo">191</span><a id="line.191">      builder.addDoubleProperty(</a>
-<span class="sourceLineNo">192</span><a id="line.192">          "Chan" + i, () -&gt; PowerDistributionJNI.getChannelCurrentNoError(m_handle, chan), null);</a>
-<span class="sourceLineNo">193</span><a id="line.193">    }</a>
-<span class="sourceLineNo">194</span><a id="line.194">    builder.addDoubleProperty(</a>
-<span class="sourceLineNo">195</span><a id="line.195">        "Voltage", () -&gt; PowerDistributionJNI.getVoltageNoError(m_handle), null);</a>
-<span class="sourceLineNo">196</span><a id="line.196">    builder.addDoubleProperty(</a>
-<span class="sourceLineNo">197</span><a id="line.197">        "TotalCurrent", () -&gt; PowerDistributionJNI.getTotalCurrent(m_handle), null);</a>
-<span class="sourceLineNo">198</span><a id="line.198">    builder.addBooleanProperty(</a>
-<span class="sourceLineNo">199</span><a id="line.199">        "SwitchableChannel",</a>
-<span class="sourceLineNo">200</span><a id="line.200">        () -&gt; PowerDistributionJNI.getSwitchableChannelNoError(m_handle),</a>
-<span class="sourceLineNo">201</span><a id="line.201">        value -&gt; PowerDistributionJNI.setSwitchableChannel(m_handle, value));</a>
-<span class="sourceLineNo">202</span><a id="line.202">  }</a>
-<span class="sourceLineNo">203</span><a id="line.203">}</a>
+<span class="sourceLineNo">160</span><a id="line.160">  public ModuleType getType() {</a>
+<span class="sourceLineNo">161</span><a id="line.161">    int type = PowerDistributionJNI.getType(m_handle);</a>
+<span class="sourceLineNo">162</span><a id="line.162">    if (type == PowerDistributionJNI.REV_TYPE) {</a>
+<span class="sourceLineNo">163</span><a id="line.163">      return ModuleType.kRev;</a>
+<span class="sourceLineNo">164</span><a id="line.164">    } else {</a>
+<span class="sourceLineNo">165</span><a id="line.165">      return ModuleType.kCTRE;</a>
+<span class="sourceLineNo">166</span><a id="line.166">    }</a>
+<span class="sourceLineNo">167</span><a id="line.167">  }</a>
+<span class="sourceLineNo">168</span><a id="line.168"></a>
+<span class="sourceLineNo">169</span><a id="line.169">  /**</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * Gets whether the PDH switchable channel is turned on or off. Returns false with the CTRE PDP.</a>
+<span class="sourceLineNo">171</span><a id="line.171">   *</a>
+<span class="sourceLineNo">172</span><a id="line.172">   * @return The output state of the PDH switchable channel</a>
+<span class="sourceLineNo">173</span><a id="line.173">   */</a>
+<span class="sourceLineNo">174</span><a id="line.174">  public boolean getSwitchableChannel() {</a>
+<span class="sourceLineNo">175</span><a id="line.175">    return PowerDistributionJNI.getSwitchableChannel(m_handle);</a>
+<span class="sourceLineNo">176</span><a id="line.176">  }</a>
+<span class="sourceLineNo">177</span><a id="line.177"></a>
+<span class="sourceLineNo">178</span><a id="line.178">  /**</a>
+<span class="sourceLineNo">179</span><a id="line.179">   * Sets the PDH switchable channel on or off. Does nothing with the CTRE PDP.</a>
+<span class="sourceLineNo">180</span><a id="line.180">   *</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * @param enabled Whether to turn the PDH switchable channel on or off</a>
+<span class="sourceLineNo">182</span><a id="line.182">   */</a>
+<span class="sourceLineNo">183</span><a id="line.183">  public void setSwitchableChannel(boolean enabled) {</a>
+<span class="sourceLineNo">184</span><a id="line.184">    PowerDistributionJNI.setSwitchableChannel(m_handle, enabled);</a>
+<span class="sourceLineNo">185</span><a id="line.185">  }</a>
+<span class="sourceLineNo">186</span><a id="line.186"></a>
+<span class="sourceLineNo">187</span><a id="line.187">  PowerDistributionVersion getVersion() {</a>
+<span class="sourceLineNo">188</span><a id="line.188">    return PowerDistributionJNI.getVersion(m_handle);</a>
+<span class="sourceLineNo">189</span><a id="line.189">  }</a>
+<span class="sourceLineNo">190</span><a id="line.190"></a>
+<span class="sourceLineNo">191</span><a id="line.191">  PowerDistributionFaults getFaults() {</a>
+<span class="sourceLineNo">192</span><a id="line.192">    return PowerDistributionJNI.getFaults(m_handle);</a>
+<span class="sourceLineNo">193</span><a id="line.193">  }</a>
+<span class="sourceLineNo">194</span><a id="line.194"></a>
+<span class="sourceLineNo">195</span><a id="line.195">  PowerDistributionStickyFaults getStickyFaults() {</a>
+<span class="sourceLineNo">196</span><a id="line.196">    return PowerDistributionJNI.getStickyFaults(m_handle);</a>
+<span class="sourceLineNo">197</span><a id="line.197">  }</a>
+<span class="sourceLineNo">198</span><a id="line.198"></a>
+<span class="sourceLineNo">199</span><a id="line.199">  @Override</a>
+<span class="sourceLineNo">200</span><a id="line.200">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">201</span><a id="line.201">    builder.setSmartDashboardType("PowerDistribution");</a>
+<span class="sourceLineNo">202</span><a id="line.202">    int numChannels = getNumChannels();</a>
+<span class="sourceLineNo">203</span><a id="line.203">    for (int i = 0; i &lt; numChannels; ++i) {</a>
+<span class="sourceLineNo">204</span><a id="line.204">      final int chan = i;</a>
+<span class="sourceLineNo">205</span><a id="line.205">      builder.addDoubleProperty(</a>
+<span class="sourceLineNo">206</span><a id="line.206">          "Chan" + i, () -&gt; PowerDistributionJNI.getChannelCurrentNoError(m_handle, chan), null);</a>
+<span class="sourceLineNo">207</span><a id="line.207">    }</a>
+<span class="sourceLineNo">208</span><a id="line.208">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">209</span><a id="line.209">        "Voltage", () -&gt; PowerDistributionJNI.getVoltageNoError(m_handle), null);</a>
+<span class="sourceLineNo">210</span><a id="line.210">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">211</span><a id="line.211">        "TotalCurrent", () -&gt; PowerDistributionJNI.getTotalCurrent(m_handle), null);</a>
+<span class="sourceLineNo">212</span><a id="line.212">    builder.addBooleanProperty(</a>
+<span class="sourceLineNo">213</span><a id="line.213">        "SwitchableChannel",</a>
+<span class="sourceLineNo">214</span><a id="line.214">        () -&gt; PowerDistributionJNI.getSwitchableChannelNoError(m_handle),</a>
+<span class="sourceLineNo">215</span><a id="line.215">        value -&gt; PowerDistributionJNI.setSwitchableChannel(m_handle, value));</a>
+<span class="sourceLineNo">216</span><a id="line.216">  }</a>
+<span class="sourceLineNo">217</span><a id="line.217">}</a>
 
 
 
