@@ -48,12 +48,12 @@
 <span class="sourceLineNo">036</span><a id="line.36"> * &lt;p&gt;Each drive() function provides different inverse kinematic relations for a Mecanum drive</a>
 <span class="sourceLineNo">037</span><a id="line.37"> * robot.</a>
 <span class="sourceLineNo">038</span><a id="line.38"> *</a>
-<span class="sourceLineNo">039</span><a id="line.39"> * &lt;p&gt;This library uses the NED axes convention (North-East-Down as external reference in the world</a>
-<span class="sourceLineNo">040</span><a id="line.40"> * frame): http://www.nuclearprojects.com/ins/images/axis_big.png.</a>
-<span class="sourceLineNo">041</span><a id="line.41"> *</a>
-<span class="sourceLineNo">042</span><a id="line.42"> * &lt;p&gt;The positive X axis points ahead, the positive Y axis points right, and the positive Z axis</a>
-<span class="sourceLineNo">043</span><a id="line.43"> * points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is</a>
-<span class="sourceLineNo">044</span><a id="line.44"> * positive.</a>
+<span class="sourceLineNo">039</span><a id="line.39"> * &lt;p&gt;The positive Y axis points ahead, the positive X axis points right, and the positive Z axis</a>
+<span class="sourceLineNo">040</span><a id="line.40"> * points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is</a>
+<span class="sourceLineNo">041</span><a id="line.41"> * positive.</a>
+<span class="sourceLineNo">042</span><a id="line.42"> *</a>
+<span class="sourceLineNo">043</span><a id="line.43"> * &lt;p&gt;Note: the axis conventions used in this class differ from DifferentialDrive. This may change</a>
+<span class="sourceLineNo">044</span><a id="line.44"> * in a future year's WPILib release.</a>
 <span class="sourceLineNo">045</span><a id="line.45"> *</a>
 <span class="sourceLineNo">046</span><a id="line.46"> * &lt;p&gt;Inputs smaller then {@value edu.wpi.first.wpilibj.drive.RobotDriveBase#kDefaultDeadband} will</a>
 <span class="sourceLineNo">047</span><a id="line.47"> * be set to 0, and larger values will be scaled so that the full range is still used. This deadband</a>
@@ -152,8 +152,8 @@
 <span class="sourceLineNo">140</span><a id="line.140">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
 <span class="sourceLineNo">141</span><a id="line.141">   * from its angle or rotation rate.</a>
 <span class="sourceLineNo">142</span><a id="line.142">   *</a>
-<span class="sourceLineNo">143</span><a id="line.143">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
-<span class="sourceLineNo">144</span><a id="line.144">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">143</span><a id="line.143">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Right is positive.</a>
 <span class="sourceLineNo">145</span><a id="line.145">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
 <span class="sourceLineNo">146</span><a id="line.146">   *     positive.</a>
 <span class="sourceLineNo">147</span><a id="line.147">   */</a>
@@ -168,8 +168,8 @@
 <span class="sourceLineNo">156</span><a id="line.156">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
 <span class="sourceLineNo">157</span><a id="line.157">   * from its angle or rotation rate.</a>
 <span class="sourceLineNo">158</span><a id="line.158">   *</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">159</span><a id="line.159">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">160</span><a id="line.160">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Right is positive.</a>
 <span class="sourceLineNo">161</span><a id="line.161">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
 <span class="sourceLineNo">162</span><a id="line.162">   *     positive.</a>
 <span class="sourceLineNo">163</span><a id="line.163">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
@@ -227,8 +227,8 @@
 <span class="sourceLineNo">215</span><a id="line.215">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
 <span class="sourceLineNo">216</span><a id="line.216">   * from its angle or rotation rate.</a>
 <span class="sourceLineNo">217</span><a id="line.217">   *</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
-<span class="sourceLineNo">219</span><a id="line.219">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Right is positive.</a>
 <span class="sourceLineNo">220</span><a id="line.220">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
 <span class="sourceLineNo">221</span><a id="line.221">   *     positive.</a>
 <span class="sourceLineNo">222</span><a id="line.222">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
