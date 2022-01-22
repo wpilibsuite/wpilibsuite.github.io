@@ -1,5 +1,7 @@
 var NAVTREEINDEX17 =
 {
+"_robo_rio_data_8h.html#a54160cfb9bd4727455258dd369bc8145":[6,0,9,2,21,13],
+"_robo_rio_data_8h.html#a5c9aa9518f360181f5aed1722fff2b6a":[6,0,9,2,21,62],
 "_robo_rio_data_8h.html#a5f8b58fae1f3a7133d0f0dea23415e3f":[6,0,9,2,21,58],
 "_robo_rio_data_8h.html#a611b052689e12e22fc422a9019a15760":[6,0,9,2,21,0],
 "_robo_rio_data_8h.html#a619751ffde9801b37618d9859bd53164":[6,0,9,2,21,49],
@@ -48,8 +50,8 @@ var NAVTREEINDEX17 =
 "_robo_rio_data_8h.html#af68dc1cb2f16ee562643071fd4143379":[6,0,9,2,21,40],
 "_robo_rio_data_8h.html#afbb3f42f8e92f49309d7f51a7ebf9086":[6,0,9,2,21,65],
 "_robo_rio_data_8h_source.html":[6,0,9,2,21],
-"_robo_rio_sim_8h.html":[6,0,5,6,32],
-"_robo_rio_sim_8h_source.html":[6,0,5,6,32],
+"_robo_rio_sim_8h.html":[6,0,5,6,33],
+"_robo_rio_sim_8h_source.html":[6,0,5,6,33],
 "_robot_base_8h.html":[6,0,5,63],
 "_robot_base_8h.html#a34e168565dec463c0b67d584e80c2c0d":[6,0,5,63,3],
 "_robot_base_8h.html#a8d83e7ec5a444cd625593917680b750c":[6,0,5,63,1],
@@ -103,8 +105,8 @@ var NAVTREEINDEX17 =
 "_s_p_i_accelerometer_data_8h.html#aebe4a7e9628d76a14f4a1b941a18efb3":[6,0,9,2,25,5],
 "_s_p_i_accelerometer_data_8h.html#af3cdfb5a0c2a4914e7b67312db7a7e18":[6,0,9,2,25,13],
 "_s_p_i_accelerometer_data_8h_source.html":[6,0,9,2,25],
-"_s_p_i_accelerometer_sim_8h.html":[6,0,5,6,36],
-"_s_p_i_accelerometer_sim_8h_source.html":[6,0,5,6,36],
+"_s_p_i_accelerometer_sim_8h.html":[6,0,5,6,37],
+"_s_p_i_accelerometer_sim_8h_source.html":[6,0,5,6,37],
 "_s_p_i_data_8h.html":[6,0,9,2,26],
 "_s_p_i_data_8h.html#a078a80374c9b569d59990684695db8d0":[6,0,9,2,26,4],
 "_s_p_i_data_8h.html#a440fb2d6d22ad309adec8403bc57a611":[6,0,9,2,26,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX17 =
 "_s_s_e_2_packet_math_8h.html#a6024368181b050eb03ef7eea98f084ea":[6,0,3,0,0,1,0,3,2,169],
 "_s_s_e_2_packet_math_8h.html#a60a1f4703a05ea77a014c35063c1fe71":[6,0,3,0,0,1,0,3,2,106],
 "_s_s_e_2_packet_math_8h.html#a624ca0b7bac752a4ec676a86a6c8d388":[6,0,3,0,0,1,0,3,2,125],
-"_s_s_e_2_packet_math_8h.html#a62c23ae3be5330c3ba229b9becb68395":[6,0,3,0,0,1,0,3,2,197],
-"_s_s_e_2_packet_math_8h.html#a635a49ba01f6b1e3d82cc16c7e0e2dc6":[6,0,3,0,0,1,0,3,2,67],
-"_s_s_e_2_packet_math_8h.html#a63e92b056e3378b0853f510fdb6757b2":[6,0,3,0,0,1,0,3,2,94]
+"_s_s_e_2_packet_math_8h.html#a62c23ae3be5330c3ba229b9becb68395":[6,0,3,0,0,1,0,3,2,197]
 };

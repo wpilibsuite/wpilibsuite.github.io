@@ -1933,6 +1933,9 @@ var hierarchy =
       [ "frc::sim::ElevatorSim", "classfrc_1_1sim_1_1_elevator_sim.html", null ],
       [ "frc::sim::SingleJointedArmSim", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html", null ]
     ] ],
+    [ "frc::sim::LinearSystemSim< 2, 1, 2 >", "classfrc_1_1sim_1_1_linear_system_sim.html", [
+      [ "frc::sim::DCMotorSim", "classfrc_1_1sim_1_1_d_c_motor_sim.html", null ]
+    ] ],
     [ "Eigen::internal::linspaced_op< Scalar >", "struct_eigen_1_1internal_1_1linspaced__op.html", null ],
     [ "Eigen::internal::linspaced_op_impl< Scalar, IsInteger >", "struct_eigen_1_1internal_1_1linspaced__op__impl.html", null ],
     [ "Eigen::internal::linspaced_op_impl< Scalar, false >", "struct_eigen_1_1internal_1_1linspaced__op__impl_3_01_scalar_00_01false_01_4.html", null ],

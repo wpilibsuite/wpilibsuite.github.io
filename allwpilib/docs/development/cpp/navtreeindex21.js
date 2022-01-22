@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"_victor_8h_source.html":[6,0,5,4,15],
+"_victor_s_p_8h.html":[6,0,5,4,16],
 "_victor_s_p_8h_source.html":[6,0,5,4,16],
 "_vision_pipeline_8h.html":[6,0,13,0],
 "_vision_pipeline_8h_source.html":[6,0,13,0],
@@ -38,8 +40,8 @@ var NAVTREEINDEX21 =
 "_worker_thread_8h_source.html":[6,0,14,105],
 "_xbox_controller_8h.html":[6,0,5,86],
 "_xbox_controller_8h_source.html":[6,0,5,86],
-"_xbox_controller_sim_8h.html":[6,0,5,6,38],
-"_xbox_controller_sim_8h_source.html":[6,0,5,6,38],
+"_xbox_controller_sim_8h.html":[6,0,5,6,39],
+"_xbox_controller_sim_8h_source.html":[6,0,5,6,39],
 "_xpr_helper_8h.html":[6,0,3,0,0,1,3,14],
 "_xpr_helper_8h.html#a4363bfa78f2780a0714888ec373b2673":[6,0,3,0,0,1,3,14,93],
 "_xpr_helper_8h.html#a53454178d54621169eded201cec9f05e":[6,0,3,0,0,1,3,14,94],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "base_8h.html#acd405f8c8254f75f777291f83cf92a0f":[6,0,12,5,127],
 "base_8h.html#acd7d26c3ef641666b95ad90b6a143fdd":[6,0,12,5,144],
 "base_8h.html#ad2faf0f8cb76762e1534a8f35884f8ec":[6,0,12,5,57],
-"base_8h.html#ad4c40cb31fd4fda534f293016693c221":[6,0,12,5,126],
-"base_8h.html#adc650709b31816197530a08cabbd9df2":[6,0,12,5,91],
-"base_8h.html#adcdd7d0eaedc290c7a56b2ce5340175c":[6,0,12,5,50]
+"base_8h.html#ad4c40cb31fd4fda534f293016693c221":[6,0,12,5,126]
 };
