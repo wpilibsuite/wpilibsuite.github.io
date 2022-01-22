@@ -1,5 +1,7 @@
 var NAVTREEINDEX111 =
 {
+"group__cscore__oo.html":[3,12],
+"group__cscore__opencv__sink__cfunc.html":[3,13,11],
 "group__cscore__opencv__sink__cfunc.html#ga5a7f3506101cdca1eea49a4521450e62":[3,13,11,0],
 "group__cscore__opencv__sink__cfunc.html#ga62900b3278e194fbcf411e42de238f7a":[3,13,11,2],
 "group__cscore__opencv__sink__cfunc.html#gad8aed83068994f63687ee0c4a9222c93":[3,13,11,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX111 =
 "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ae12d0f8f869c40c76128260af2242bc8":[3,28,2,1,7],
 "group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56ea2e95bc818f975b19def01e93d240dece":[3,28,2,6,0],
 "group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56ea9c660eb3336bf8c77ce9d081ca07cbdd":[3,28,2,6,1],
-"group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd2e2f4875c5b4b6e602a433d90c4e5e":[3,28,2,6,2],
-"group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50":[3,28,2,6,3],
-"group__enums.html#gga7f4e3f96895bdb325eab1a0b651e211fa1d414f9966ecba69cd840b8def472c4a":[3,28,2,5,1]
+"group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd2e2f4875c5b4b6e602a433d90c4e5e":[3,28,2,6,2]
 };

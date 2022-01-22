@@ -1,5 +1,9 @@
 var NAVTREEINDEX166 =
 {
+"structansi__color__escape.html#ab7629d7b24ac0054239bc80c26097eee":[5,0,17,1],
+"structansi__color__escape.html#afd8ada1bb5d2f1910b7911c83b252d2c":[5,0,17,2],
+"structarg__data.html":[5,0,20],
+"structarg__data.html#a066861f784ce8301389e9d1672e25142":[5,0,20,4],
 "structarg__data.html#a1c1f92742fd40957dd9eaeba38226854":[5,0,20,1],
 "structarg__data.html#a345dd2a7772f9573bacb312a27401eb4":[5,0,20,2],
 "structarg__data.html#a7a2618d0038b7b2e6bd73ba169a6e153":[5,0,20,3],
@@ -44,9 +48,9 @@ var NAVTREEINDEX166 =
 "structarg__mapper.html#a814451c2db4b8ff1dd0d63ec14730d26":[5,0,23,34],
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[5,0,23,6],
 "structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,23,40],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,13],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,14],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,15],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,14],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,13],
 "structarg__mapper.html#ab0ca23b1107e95c90038a32db2611dd6":[5,0,23,16],
 "structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16":[5,0,23,42],
 "structarg__mapper.html#aba49e677ad2ec1ce1e49fb888a6df858":[5,0,23,38],
@@ -245,9 +249,5 @@ var NAVTREEINDEX166 =
 "structcustom__value.html#a309711ed33def627213e6f31c4a79d8a":[5,0,62,1],
 "structcustom__value.html#aa675d4392521cd807b92f0089dbcea65":[5,0,62,2],
 "structcustom__value.html#ac68007857d3f702299fe7f3f20fccf80":[5,0,62,0],
-"structdefault__arg__formatter.html":[5,0,63],
-"structdefault__arg__formatter.html#a36cffc85932714f47ee362b66095e9e0":[5,0,63,6],
-"structdefault__arg__formatter.html#a7c55fbfae832b0655254a9b5dc47efe8":[5,0,63,0],
-"structdefault__arg__formatter.html#a87dac3079039d85698aa8541cc44a1bd":[5,0,63,4],
-"structdefault__arg__formatter.html#ab1da9076b3552104969f324ed1cf6eae":[5,0,63,2]
+"structdefault__arg__formatter.html":[5,0,63]
 };

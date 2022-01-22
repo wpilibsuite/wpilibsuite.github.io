@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html#a46a21d1c7e4599f0ca98d9ed65fb7683":[3,28,8,10],
+"class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html#a48fda67cfb4266110ef57b0e7c250b71":[3,28,8,1],
 "class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html#a4c246eca080f5a92ebd439ecaf32319d":[3,28,8,35],
 "class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html#a50b5fabd3f60148d1ea0a33aefeb8e80":[3,28,8,16],
 "class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html#a5a547a12698e0e656d90e259037b2dbe":[3,28,8,22],
@@ -157,8 +159,8 @@ var NAVTREEINDEX34 =
 "class_eigen_1_1aligned__allocator.html#a9718dcf6d11a462d6cdb41cb0df04921":[3,28,35,11],
 "class_eigen_1_1aligned__allocator.html#aa225f4ea011fce1e792423ad02d5de01":[3,28,35,1],
 "class_eigen_1_1aligned__allocator.html#ae00326806b7ba19c141c6c61a5f7b1ad":[3,28,35,13],
-"class_eigen_1_1aligned__allocator__indirection.html":[5,0,4,6],
 "class_eigen_1_1aligned__allocator__indirection.html":[4,0,7,9],
+"class_eigen_1_1aligned__allocator__indirection.html":[5,0,4,6],
 "class_eigen_1_1aligned__allocator__indirection.html#a1a1edf82e8455ff7b4d9249f69d0fcb9":[5,0,4,6,4],
 "class_eigen_1_1aligned__allocator__indirection.html#a1a1edf82e8455ff7b4d9249f69d0fcb9":[4,0,7,9,4],
 "class_eigen_1_1aligned__allocator__indirection.html#a1e6768d759dca2902bfaac420f145b37":[5,0,4,6,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "class_eigen_1_1internal_1_1_band_matrix_base.html#afca234d64175589fd9f35bb54e99a0cb":[4,0,7,4,90,4],
 "class_eigen_1_1internal_1_1_band_matrix_base.html#afca234d64175589fd9f35bb54e99a0cb":[5,0,4,2,88,4],
 "class_eigen_1_1internal_1_1_band_matrix_base.html#afe8b339abeca5197541cfe9ae036ffcd":[4,0,7,4,90,14],
-"class_eigen_1_1internal_1_1_band_matrix_base.html#afe8b339abeca5197541cfe9ae036ffcd":[5,0,4,2,88,14],
-"class_eigen_1_1internal_1_1_band_matrix_wrapper.html":[5,0,4,2,89],
-"class_eigen_1_1internal_1_1_band_matrix_wrapper.html":[4,0,7,4,91]
+"class_eigen_1_1internal_1_1_band_matrix_base.html#afe8b339abeca5197541cfe9ae036ffcd":[5,0,4,2,88,14]
 };

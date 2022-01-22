@@ -1,5 +1,7 @@
 var NAVTREEINDEX112 =
 {
+"group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50":[3,28,2,6,3],
+"group__enums.html#gga7f4e3f96895bdb325eab1a0b651e211fa1d414f9966ecba69cd840b8def472c4a":[3,28,2,5,1],
 "group__enums.html#gga7f4e3f96895bdb325eab1a0b651e211fa5bfaff916ad4913fd04fe2e92c5c32ae":[3,28,2,5,2],
 "group__enums.html#gga7f4e3f96895bdb325eab1a0b651e211fa917fa8982b7eb0cbb440d38ee50e0b9c":[3,28,2,5,0],
 "group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea1c6e20706575a629b27a105f07f1883b":[3,28,2,2,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX112 =
 "group__hal__capi.html#gae581c7334cf37b57b6b12d3e9113ab74":[3,1,43],
 "group__hal__capi.html#gaf2d1ec0dcf2d988d78606df3f6c9f765":[3,1,48],
 "group__hal__capi.html#gaf88a3a55375664d6b8333819edb19d5c":[3,1,49],
-"group__hal__capi.html#gafccf269a24459a444068863528a7c963":[3,1,47],
-"group__hal__constants.html":[3,1,27],
-"group__hal__constants.html#ga30986a1e0c04ef68e0e6f4b8399f9ff4":[3,1,27,0]
+"group__hal__capi.html#gafccf269a24459a444068863528a7c963":[3,1,47]
 };

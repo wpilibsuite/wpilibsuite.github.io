@@ -1,5 +1,7 @@
 var NAVTREEINDEX82 =
 {
+"classnt_1_1_connection_notification.html#af7de20981b70adfed64421591fb201c5":[3,10,16,3],
+"classnt_1_1_entry_notification.html":[3,10,15],
 "classnt_1_1_entry_notification.html#a2a5a58f2a4ca2a1baa768265a52a6d11":[3,10,15,6],
 "classnt_1_1_entry_notification.html#a35fc3a5dd93cef1abd3c5a1dce62e6f5":[3,10,15,5],
 "classnt_1_1_entry_notification.html#a839e4e60114996e6e677e79b7defce3e":[3,10,15,7],
@@ -25,14 +27,14 @@ var NAVTREEINDEX82 =
 "classnt_1_1_n_t_sendable.html#a8dc9969c212f79d2c11623cadf723b63":[4,0,15,9,1],
 "classnt_1_1_n_t_sendable_builder.html":[5,0,10,9],
 "classnt_1_1_n_t_sendable_builder.html":[4,0,15,10],
-"classnt_1_1_n_t_sendable_builder.html#a50946faff205ed82def13b87342206b8":[5,0,10,9,0],
 "classnt_1_1_n_t_sendable_builder.html#a50946faff205ed82def13b87342206b8":[4,0,15,10,0],
+"classnt_1_1_n_t_sendable_builder.html#a50946faff205ed82def13b87342206b8":[5,0,10,9,0],
 "classnt_1_1_n_t_sendable_builder.html#a6e0654ce56f9ef1d11b1e4385c3d0697":[4,0,15,10,3],
 "classnt_1_1_n_t_sendable_builder.html#a6e0654ce56f9ef1d11b1e4385c3d0697":[5,0,10,9,3],
 "classnt_1_1_n_t_sendable_builder.html#aa7bee16f0d7cc48ad4c531be602062ad":[4,0,15,10,2],
 "classnt_1_1_n_t_sendable_builder.html#aa7bee16f0d7cc48ad4c531be602062ad":[5,0,10,9,2],
-"classnt_1_1_n_t_sendable_builder.html#ab8879b861b3ec0ca145dc2b71a0d6f19":[4,0,15,10,4],
 "classnt_1_1_n_t_sendable_builder.html#ab8879b861b3ec0ca145dc2b71a0d6f19":[5,0,10,9,4],
+"classnt_1_1_n_t_sendable_builder.html#ab8879b861b3ec0ca145dc2b71a0d6f19":[4,0,15,10,4],
 "classnt_1_1_n_t_sendable_builder.html#ae2cb6786e1aefb87383f3df4700aa67e":[4,0,15,10,1],
 "classnt_1_1_n_t_sendable_builder.html#ae2cb6786e1aefb87383f3df4700aa67e":[5,0,10,9,1],
 "classnt_1_1_network_table.html":[3,8,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX82 =
 "classnt_1_1_rpc_answer.html#aeaa34e5bac1d86f916ebd74fbc2d6cac":[3,10,14,8],
 "classnt_1_1_rpc_call.html":[3,8,2],
 "classnt_1_1_rpc_call.html#a0464a89a36e00b3f6ebb2c84f62c1c0e":[3,8,2,3],
-"classnt_1_1_rpc_call.html#a134ae7c121b6dd483c3295868d90d1f5":[3,8,2,1],
-"classnt_1_1_rpc_call.html#a1d4ca2c6c383e3344e45f029be8a2a52":[3,8,2,9],
-"classnt_1_1_rpc_call.html#a34f19c639816582febfe271251ba5696":[3,8,2,5]
+"classnt_1_1_rpc_call.html#a134ae7c121b6dd483c3295868d90d1f5":[3,8,2,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"namespaceunits.html#a785a0ba862b865ad0e64259a4828c2ee":[4,0,19,312],
+"namespaceunits.html#a7a384dff370f22039617dbfd6b9dfb3c":[4,0,19,247],
 "namespaceunits.html#a7c2a72cd884899cf6eb716f10d319d72":[4,0,19,233],
 "namespaceunits.html#a7d51510e8f24656a658b315ebdc9f0f1":[4,0,19,119],
 "namespaceunits.html#a7d672ef2a90e36f1dcef21929d9c671e":[4,0,19,299],
@@ -237,17 +239,15 @@ var NAVTREEINDEX131 =
 "namespaceunits_1_1voltage.html":[4,0,19,41],
 "namespaceunits_1_1volume.html":[4,0,19,42],
 "namespacewpi.html":[4,0,20],
-"namespacewpi.html#a01982bb8b119d94de4200ed371ad5397":[4,0,20,374],
-"namespacewpi.html#a01feba2e98f9634bb529eac857ffa4fb":[4,0,20,421],
-"namespacewpi.html#a025d8760b23ac3786c52b2cc7d72f5eb":[4,0,20,306],
-"namespacewpi.html#a0497f3ae3790ae4464ca31a28110983f":[4,0,20,385],
-"namespacewpi.html#a0505b5d13f504fa6069411cb2fdbddaf":[4,0,20,437],
+"namespacewpi.html#a01982bb8b119d94de4200ed371ad5397":[4,0,20,375],
+"namespacewpi.html#a01feba2e98f9634bb529eac857ffa4fb":[4,0,20,422],
+"namespacewpi.html#a025d8760b23ac3786c52b2cc7d72f5eb":[4,0,20,307],
+"namespacewpi.html#a0497f3ae3790ae4464ca31a28110983f":[4,0,20,386],
+"namespacewpi.html#a0505b5d13f504fa6069411cb2fdbddaf":[4,0,20,439],
 "namespacewpi.html#a051a613a70381a8d15a4ed7630bfd942":[4,0,20,258],
-"namespacewpi.html#a08d89324acbf36872064573065959d20":[4,0,20,407],
-"namespacewpi.html#a096e48bf0264a255eb2ff954146cc85b":[4,0,20,465],
+"namespacewpi.html#a08d89324acbf36872064573065959d20":[4,0,20,408],
+"namespacewpi.html#a096e48bf0264a255eb2ff954146cc85b":[4,0,20,467],
 "namespacewpi.html#a0b2b50e25edd8fc47c0ef3b0929a9aac":[4,0,20,250],
-"namespacewpi.html#a0ca1a8d567765c25e5c8aaf6f2a3a51a":[4,0,20,370],
-"namespacewpi.html#a0cc73ce1be7e2680fb97374e03368001":[4,0,20,208],
-"namespacewpi.html#a0cc73ce1be7e2680fb97374e03368001a06108efce8ef1cd8aa4cc440f8b4317f":[4,0,20,208,31],
-"namespacewpi.html#a0cc73ce1be7e2680fb97374e03368001a1a5334dd8d1ca56e33887bd44630641b":[4,0,20,208,21]
+"namespacewpi.html#a0ca1a8d567765c25e5c8aaf6f2a3a51a":[4,0,20,371],
+"namespacewpi.html#a0cc73ce1be7e2680fb97374e03368001":[4,0,20,208]
 };
