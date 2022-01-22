@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1-13-g4ccfe1c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1-14-g02a0ced</span>
    </div>
   </td>
  </tr>
@@ -289,8 +289,8 @@ Additional Inherited Members</h2></td></tr>
 /_|___|_\
 /       \
 </pre><p >Each Drive() function provides different inverse kinematic relations for a Mecanum drive robot.</p>
-<p >This library uses the NED axes convention (North-East-Down as external reference in the world frame): <a href="http://www.nuclearprojects.com/ins/images/axis_big.png">http://www.nuclearprojects.com/ins/images/axis_big.png</a>.</p>
-<p >The positive X axis points ahead, the positive Y axis points to the right, and the positive Z axis points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is positive.</p>
+<p >The positive Y axis points ahead, the positive X axis points to the right, and the positive Z axis points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is positive.</p>
+<p >Note: the axis conventions used in this class differ from <a class="el" href="classfrc_1_1_differential_drive.html" title="A class for driving differential drive/skid-steer drive platforms such as the Kit of Parts drive base...">DifferentialDrive</a>. This may change in a future year's WPILib release.</p>
 <p >Inputs smaller then 0.02 will be set to 0, and larger values will be scaled so that the full range is still used. This deadband value can be changed with <a class="el" href="classfrc_1_1_robot_drive_base.html#a66ca9d336c81659405045bf064490cfe" title="Sets the deadband applied to the drive inputs (e.g., joystick values).">SetDeadband()</a>.</p>
 <p >RobotDrive porting guide: <br  />
 <a class="el" href="classfrc_1_1_mecanum_drive.html#a7801f779e6486dfd7f6f101d51d5e1f5" title="Drive method for Mecanum platform.">DriveCartesian(double, double, double, double)</a> is equivalent to RobotDrive's MecanumDrive_Cartesian(double, double, double, double) if a deadband of 0 is used, and the ySpeed and gyroAngle values are inverted compared to RobotDrive (eg DriveCartesian(xSpeed, -ySpeed, zRotation, -gyroAngle). <br  />
@@ -433,8 +433,8 @@ Additional Inherited Members</h2></td></tr>
 <p >Angles are measured clockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Right is positive. </td></tr>
-    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Forward is positive. </td></tr>
+    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Forward is positive. </td></tr>
+    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Right is positive. </td></tr>
     <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is positive. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The current angle reading from the gyro in degrees around the Z axis. Use this to implement field-oriented controls. </td></tr>
   </table>
@@ -493,8 +493,8 @@ Additional Inherited Members</h2></td></tr>
 <p >Angles are measured clockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Right is positive. </td></tr>
-    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Forward is positive. </td></tr>
+    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Forward is positive. </td></tr>
+    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Right is positive. </td></tr>
     <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is positive. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The current angle reading from the gyro in degrees around the Z axis. Use this to implement field-oriented controls. </td></tr>
   </table>
@@ -674,7 +674,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mecanum_drive.html">MecanumDrive</a></li>
-    <li class="footer">Generated on Sat Jan 22 2022 00:13:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jan 22 2022 00:25:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
