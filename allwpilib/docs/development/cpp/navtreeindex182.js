@@ -1,5 +1,9 @@
 var NAVTREEINDEX182 =
 {
+"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca743b7827c281254e45c305696344535b":[6,0,4,0,0,2,6,75],
+"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca75435e6bea50867263766b9e5f9bc08d":[6,0,4,0,0,2,6,40],
+"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca76f258d530f43c55523384b472086771":[6,0,4,0,0,2,6,111],
+"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca770e427f6a16eb64e2ece9585ba9d193":[6,0,4,0,0,2,6,67],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca7fbe63cdab154c0227420b368fcaea3d":[6,0,4,0,0,2,6,8],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca83d1d60e0de07e8b1bf164247a77e28b":[6,0,4,0,0,2,6,90],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca8a99d28c3c43cafed58cdbac5f4e9201":[6,0,4,0,0,2,6,56],

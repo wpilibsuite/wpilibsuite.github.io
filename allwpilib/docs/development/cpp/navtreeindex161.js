@@ -1,5 +1,9 @@
 var NAVTREEINDEX161 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b":[5,0,4,2,1221,1],
+"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b":[4,0,7,4,1223,1],
+"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[5,0,4,2,1221,0],
+"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[4,0,7,4,1223,0],
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_transpositions_base_3_01_derived_01_4_01_4_01_4.html":[4,0,7,4,1224],
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_transpositions_base_3_01_derived_01_4_01_4_01_4.html":[5,0,4,2,1222],
 "struct_eigen_1_1internal_1_1traits_3_01_transpositions_3_01_size_at_compile_time_00_01_max_size_a3e3a58d21bfa7053a385355887ee81d.html":[4,0,7,4,1225],
@@ -245,9 +249,5 @@ var NAVTREEINDEX161 =
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01_eigen_1_1half_00_01float_01_4.html":[5,0,4,2,1278],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01_eigen_1_1half_00_01float_01_4.html":[4,0,7,4,1280],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01bfloat16_00_01float_01_4.html":[5,0,4,2,1276],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01bfloat16_00_01float_01_4.html":[4,0,7,4,1278],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01double_00_01float_01_4.html":[4,0,7,4,1279],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01double_00_01float_01_4.html":[5,0,4,2,1277],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01_eigen_1_1half_01_4.html":[5,0,4,2,1281],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01_eigen_1_1half_01_4.html":[4,0,7,4,1283]
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01bfloat16_00_01float_01_4.html":[4,0,7,4,1278]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX112 =
 {
+"group__enums.html#gga7f4e3f96895bdb325eab1a0b651e211fa5bfaff916ad4913fd04fe2e92c5c32ae":[3,28,2,5,2],
+"group__enums.html#gga7f4e3f96895bdb325eab1a0b651e211fa917fa8982b7eb0cbb440d38ee50e0b9c":[3,28,2,5,0],
+"group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea1c6e20706575a629b27a105f07f1883b":[3,28,2,2,1],
+"group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea580b2a3cafe585691e789f768fb729bf":[3,28,2,2,3],
 "group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea671a2aeb0f527802806a441d58a80fcf":[3,28,2,2,0],
 "group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea6a68dfb88a8336108a30588bdf356c57":[3,28,2,2,2],
 "group__enums.html#gga9f93eac38eb83deb0e8dbd42ddf11d5da50108ad00095928de06228470ceab09e":[3,28,2,0,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX112 =
 "group__hal__capi.html#gaf88a3a55375664d6b8333819edb19d5c":[3,1,49],
 "group__hal__capi.html#gafccf269a24459a444068863528a7c963":[3,1,47],
 "group__hal__constants.html":[3,1,27],
-"group__hal__constants.html#ga30986a1e0c04ef68e0e6f4b8399f9ff4":[3,1,27,0],
-"group__hal__counter.html":[3,1,9],
-"group__hal__counter.html#ga0bf5cd8fe969bbb8dcb0df1fd90a9915":[3,1,9,21],
-"group__hal__counter.html#ga208b8126a4129417caf70601acb0ccfd":[3,1,9,11],
-"group__hal__counter.html#ga3de9784fc11a949c1aa28b8b2aba3179":[3,1,9,23]
+"group__hal__constants.html#ga30986a1e0c04ef68e0e6f4b8399f9ff4":[3,1,27,0]
 };

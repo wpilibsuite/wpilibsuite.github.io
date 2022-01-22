@@ -1,5 +1,9 @@
 var NAVTREEINDEX160 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a178edf36545f29db3ec5052a7a79d33d":[5,0,4,2,1184,1],
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a178edf36545f29db3ec5052a7a79d33d":[4,0,7,4,1186,1],
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a270a1e2a935fb1e006b2eca85157cf7b":[5,0,4,2,1184,2],
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a270a1e2a935fb1e006b2eca85157cf7b":[4,0,7,4,1186,2],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a9ede8dfbf4a63e58b5a9b1c18a545ace":[5,0,4,2,1184,0],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a9ede8dfbf4a63e58b5a9b1c18a545ace":[4,0,7,4,1186,0],
 "struct_eigen_1_1internal_1_1traits_3_01_indexed_view_3_01_xpr_type_00_01_row_indices_00_01_col_indices_01_4_01_4.html":[4,0,7,4,1188],
@@ -245,9 +249,5 @@ var NAVTREEINDEX160 =
 "struct_eigen_1_1internal_1_1traits_3_01_solve_3_01_decomposition_00_01_rhs_type_01_4_01_4.html#aef1ed243da126919a72995b25f28adfd":[5,0,4,2,1219,2],
 "struct_eigen_1_1internal_1_1traits_3_01_solve_3_01_decomposition_00_01_rhs_type_01_4_01_4.html#aef1ed243da126919a72995b25f28adfd":[4,0,7,4,1221,2],
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html":[4,0,7,4,1223],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html":[5,0,4,2,1221],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b":[5,0,4,2,1221,1],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b":[4,0,7,4,1223,1],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[5,0,4,2,1221,0],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[4,0,7,4,1223,0]
+"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html":[5,0,4,2,1221]
 };

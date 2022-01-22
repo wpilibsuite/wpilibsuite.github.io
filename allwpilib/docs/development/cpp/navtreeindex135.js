@@ -1,5 +1,9 @@
 var NAVTREEINDEX135 =
 {
+"products_2_general_block_panel_kernel_8h.html#ac2dabbb388a11b5e16876fccd70920f9":[6,0,3,0,0,1,2,0,45],
+"products_2_general_block_panel_kernel_8h.html#ac9cc02b134b2087594ef50a9941d8cc6":[6,0,3,0,0,1,2,0,34],
+"products_2_general_block_panel_kernel_8h.html#aca0e350087dd459cc7e036355dca1fb7":[6,0,3,0,0,1,2,0,51],
+"products_2_general_block_panel_kernel_8h.html#ae1e6bb72e347bc77a729d74b7641f7a3":[6,0,3,0,0,1,2,0,33],
 "products_2_general_block_panel_kernel_8h.html#ae2efa4852ea90c2d47b7dcec5b40ba2b":[6,0,3,0,0,1,2,0,41],
 "products_2_general_block_panel_kernel_8h.html#ae5dbe304ca733104251c26ff178dc6f1":[6,0,3,0,0,1,2,0,48],
 "products_2_general_block_panel_kernel_8h.html#ae64421554aa0a4bf9258bafe3170102b":[6,0,3,0,0,1,2,0,49],
@@ -245,9 +249,5 @@ var NAVTREEINDEX135 =
 "struct_eigen_1_1_matrix_exponential_return_value.html#aa24f98f94fbacccc2f2a81c09ea67568":[3,22,8,4],
 "struct_eigen_1_1_matrix_exponential_return_value.html#af817682d9e7d860f799bbe3b6b749eb3":[3,22,8,1],
 "struct_eigen_1_1_matrix_xpr.html":[4,0,7,119],
-"struct_eigen_1_1_matrix_xpr.html":[5,0,4,116],
-"struct_eigen_1_1_num_traits.html":[3,28,50],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html":[4,0,7,123],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html":[5,0,4,120],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a0466bb695bcb2ebd0692ad6ae99c37e5":[5,0,4,120,6]
+"struct_eigen_1_1_matrix_xpr.html":[5,0,4,116]
 };
