@@ -34,15 +34,6 @@ var group___matrix_functions___module =
       [ "evalTo", "class_eigen_1_1_matrix_complex_power_return_value.html#ac7a7947bc6cad6554d31b08b847bc6dd", null ],
       [ "rows", "class_eigen_1_1_matrix_complex_power_return_value.html#ad64216fcb7130adeccb5301054c0b8fc", null ]
     ] ],
-    [ "Eigen::MatrixLogarithmReturnValue< Derived >", "class_eigen_1_1_matrix_logarithm_return_value.html", [
-      [ "DerivedNested", "class_eigen_1_1_matrix_logarithm_return_value.html#a18e69d2302e53d0ab0ebcfceda3f64ae", null ],
-      [ "Index", "class_eigen_1_1_matrix_logarithm_return_value.html#a736377749656a2d0f664cfb36805f521", null ],
-      [ "Scalar", "class_eigen_1_1_matrix_logarithm_return_value.html#ad79436b8ca8b20765dcd9ef6b6c832ad", null ],
-      [ "MatrixLogarithmReturnValue", "class_eigen_1_1_matrix_logarithm_return_value.html#adfd2417a3d6f671e156b4ab1b92f1837", null ],
-      [ "cols", "class_eigen_1_1_matrix_logarithm_return_value.html#a5f2f251989faf25e0cbbdfe6883ea50c", null ],
-      [ "evalTo", "class_eigen_1_1_matrix_logarithm_return_value.html#ac17537a51ce53a44746fabd7a83d29d3", null ],
-      [ "rows", "class_eigen_1_1_matrix_logarithm_return_value.html#a13acb69f8ba2d48f84e508a19605a2a6", null ]
-    ] ],
     [ "Eigen::internal::matrix_sqrt_compute< MatrixType, IsComplex >", "struct_eigen_1_1internal_1_1matrix__sqrt__compute.html", [
       [ "run", "struct_eigen_1_1internal_1_1matrix__sqrt__compute.html#a29c137f6d7c0cbe4df034be5aed427f6", null ]
     ] ],
@@ -60,6 +51,15 @@ var group___matrix_functions___module =
       [ "evalTo", "struct_eigen_1_1_matrix_exponential_return_value.html#a3dd2c65c7c6cdc41ab17415ee11899a0", null ],
       [ "rows", "struct_eigen_1_1_matrix_exponential_return_value.html#a79e39d9a80c94d30122b82c71523a950", null ],
       [ "m_src", "struct_eigen_1_1_matrix_exponential_return_value.html#aa24f98f94fbacccc2f2a81c09ea67568", null ]
+    ] ],
+    [ "Eigen::MatrixLogarithmReturnValue< Derived >", "class_eigen_1_1_matrix_logarithm_return_value.html", [
+      [ "DerivedNested", "class_eigen_1_1_matrix_logarithm_return_value.html#a18e69d2302e53d0ab0ebcfceda3f64ae", null ],
+      [ "Index", "class_eigen_1_1_matrix_logarithm_return_value.html#a736377749656a2d0f664cfb36805f521", null ],
+      [ "Scalar", "class_eigen_1_1_matrix_logarithm_return_value.html#ad79436b8ca8b20765dcd9ef6b6c832ad", null ],
+      [ "MatrixLogarithmReturnValue", "class_eigen_1_1_matrix_logarithm_return_value.html#adfd2417a3d6f671e156b4ab1b92f1837", null ],
+      [ "cols", "class_eigen_1_1_matrix_logarithm_return_value.html#a5f2f251989faf25e0cbbdfe6883ea50c", null ],
+      [ "evalTo", "class_eigen_1_1_matrix_logarithm_return_value.html#ac17537a51ce53a44746fabd7a83d29d3", null ],
+      [ "rows", "class_eigen_1_1_matrix_logarithm_return_value.html#a13acb69f8ba2d48f84e508a19605a2a6", null ]
     ] ],
     [ "Eigen::internal::matrix_function_compute< MatrixType, IsComplex >", "struct_eigen_1_1internal_1_1matrix__function__compute.html", [
       [ "run", "struct_eigen_1_1internal_1_1matrix__function__compute.html#a55a328773f5254d0cd29ac699bc2634f", null ]
