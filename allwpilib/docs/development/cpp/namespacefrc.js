@@ -282,7 +282,8 @@ var namespacefrc =
       [ "kRelay", "namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7a600d5ee964479ab12510b8a6798ef1ef", null ],
       [ "kDifferentialDrive", "namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7a67d5b30ad3a5c5eba54e8ae861c7abb5", null ],
       [ "kMecanumDrive", "namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7aed9117c387ea502f789d5af6d2bedbae", null ],
-      [ "kCameraStream", "namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7af6c26edf7033b54cee905d3f4e4d228d", null ]
+      [ "kCameraStream", "namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7af6c26edf7033b54cee905d3f4e4d228d", null ],
+      [ "kField", "namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7a7be01c1ae587bb8938b2097146b0499f", null ]
     ] ],
     [ "CompressorConfigType", "namespacefrc.html#a498a2d59993362a6264f53be5572b823", [
       [ "Disabled", "namespacefrc.html#a498a2d59993362a6264f53be5572b823ab9f5c797ebbf55adccdd8539a65a0241", null ],

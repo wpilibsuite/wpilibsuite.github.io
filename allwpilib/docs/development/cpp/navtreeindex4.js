@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_centripetal_acceleration_constraint_8h_source.html":[6,0,6,9,0,0],
 "_chassis_speeds_8h.html":[6,0,6,6,0],
 "_chassis_speeds_8h_source.html":[6,0,6,6,0],
 "_check_8h.html":[6,0,14,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_dense_base_8h.html#aa97b59c5b6e64c3ff7f2b86a93156245":[6,0,3,0,0,1,22,3],
 "_dense_base_8h.html#ad7f74cf0d006b06b945187535404355e":[6,0,3,0,0,1,22,2],
 "_dense_base_8h_source.html":[6,0,3,0,0,1,22],
-"_dense_coeffs_base_8h.html":[6,0,3,0,0,1,23],
-"_dense_coeffs_base_8h.html#a8f16b915ba954e15a13f76ca3016830a":[6,0,3,0,0,1,23,8]
+"_dense_coeffs_base_8h.html":[6,0,3,0,0,1,23]
 };

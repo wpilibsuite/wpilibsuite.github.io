@@ -1,5 +1,7 @@
 var NAVTREEINDEX148 =
 {
+"struct_eigen_1_1internal_1_1has__unary__operator_3_01scalar__identity__op_3_01_scalar_01_4_00_01_index_type_01_4.html":[4,0,7,4,532],
+"struct_eigen_1_1internal_1_1has__unary__operator_3_01scalar__random__op_3_01_scalar_01_4_00_01_index_type_01_4.html":[5,0,4,2,531],
 "struct_eigen_1_1internal_1_1has__unary__operator_3_01scalar__random__op_3_01_scalar_01_4_00_01_index_type_01_4.html":[4,0,7,4,533],
 "struct_eigen_1_1internal_1_1householder__qr__inplace__blocked.html":[5,0,4,2,533],
 "struct_eigen_1_1internal_1_1householder__qr__inplace__blocked.html":[4,0,7,4,535],
@@ -247,7 +249,5 @@ var NAVTREEINDEX148 =
 "struct_eigen_1_1internal_1_1is__diagonal.html":[5,0,4,2,609],
 "struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_base_3_01_t_01_4_01_4.html":[4,0,7,4,612],
 "struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_base_3_01_t_01_4_01_4.html":[5,0,4,2,610],
-"struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_matrix_3_01_t_00_01_s_01_4_01_4.html":[4,0,7,4,613],
-"struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_matrix_3_01_t_00_01_s_01_4_01_4.html":[5,0,4,2,611],
-"struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_wrapper_3_01_t_01_4_01_4.html":[5,0,4,2,612]
+"struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_matrix_3_01_t_00_01_s_01_4_01_4.html":[4,0,7,4,613]
 };

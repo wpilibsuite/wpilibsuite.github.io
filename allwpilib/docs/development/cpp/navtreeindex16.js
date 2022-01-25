@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"_parallel_deadline_group_8h.html":[6,0,8,0,13],
 "_parallel_deadline_group_8h_source.html":[6,0,8,0,13],
 "_parallel_race_group_8h.html":[6,0,8,0,14],
 "_parallel_race_group_8h_source.html":[6,0,8,0,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "_robo_rio_data_8h.html#a3d710d79dcfb3785d66dc969afc0f002":[6,0,9,2,21,18],
 "_robo_rio_data_8h.html#a4a825b6dcb8fb0087d8698fa9a3ba632":[6,0,9,2,21,20],
 "_robo_rio_data_8h.html#a4f37c2f685e7abf28574db31e4dd7c7a":[6,0,9,2,21,57],
-"_robo_rio_data_8h.html#a54160cfb9bd4727455258dd369bc8145":[6,0,9,2,21,13],
-"_robo_rio_data_8h.html#a5c9aa9518f360181f5aed1722fff2b6a":[6,0,9,2,21,62]
+"_robo_rio_data_8h.html#a54160cfb9bd4727455258dd369bc8145":[6,0,9,2,21,13]
 };

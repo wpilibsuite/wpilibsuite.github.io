@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_dense_coeffs_base_8h.html#a8f16b915ba954e15a13f76ca3016830a":[6,0,3,0,0,1,23,8],
 "_dense_coeffs_base_8h.html#ab83986b0ebbd20ebde1f9033162ca121":[6,0,3,0,0,1,23,7],
 "_dense_coeffs_base_8h_source.html":[6,0,3,0,0,1,23],
 "_dense_map_8h.html":[6,0,14,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_encoder_data_8h.html#a7639fdb8bae90a96833e316634b10db2":[6,0,9,2,12,44],
 "_encoder_data_8h.html#a82a1f75f7d801ab1caf684d3fb525917":[6,0,9,2,12,14],
 "_encoder_data_8h.html#aa03253cb65c4da37433cbc4cb02a9169":[6,0,9,2,12,31],
-"_encoder_data_8h.html#ab531b135acd72952860cdb6f7ca1b38d":[6,0,9,2,12,9],
-"_encoder_data_8h.html#ab84d3574f978ca38d2f041028f8f10fa":[6,0,9,2,12,28]
+"_encoder_data_8h.html#ab531b135acd72952860cdb6f7ca1b38d":[6,0,9,2,12,9]
 };

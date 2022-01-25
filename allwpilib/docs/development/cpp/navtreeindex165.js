@@ -1,5 +1,7 @@
 var NAVTREEINDEX165 =
 {
+"struct_h_a_l___joystick_buttons.html#ad2aeabb6cc9c523c765132c1749e82fd":[3,1,21,3,1],
+"struct_h_a_l___joystick_descriptor.html":[3,1,21,4],
 "struct_h_a_l___joystick_descriptor.html#a15fc9338bfe07981f2fc19424b229223":[3,1,21,4,6],
 "struct_h_a_l___joystick_descriptor.html#a1f06f84bae0b1781aa239419432911e0":[3,1,21,4,5],
 "struct_h_a_l___joystick_descriptor.html#a45192fc1fc352d02822cacd9f15bdc21":[3,1,21,4,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX165 =
 "structarg__formatter.html#a7564446a13d037cd4e415f17d4ae8214":[5,0,22,4],
 "structarg__formatter.html#a812825d096745167b0b12e87209938b8":[5,0,22,5],
 "structarg__formatter.html#a9cefc9d64ed03494749cb68d70db6292":[5,0,22,1],
-"structarg__mapper.html":[5,0,23],
-"structarg__mapper.html#a0e5fd42160aa65adb46c50c3d04920c8":[5,0,23,22],
-"structarg__mapper.html#a14ab65add041093bc6f20890e96bff85":[5,0,23,20]
+"structarg__mapper.html":[5,0,23]
 };
