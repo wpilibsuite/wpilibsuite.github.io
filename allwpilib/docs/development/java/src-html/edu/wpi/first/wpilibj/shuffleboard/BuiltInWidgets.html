@@ -485,19 +485,28 @@
 <span class="sourceLineNo">473</span><a id="line.473">   * &lt;/table&gt;</a>
 <span class="sourceLineNo">474</span><a id="line.474">   */</a>
 <span class="sourceLineNo">475</span><a id="line.475">  kCameraStream("Camera Stream"),</a>
-<span class="sourceLineNo">476</span><a id="line.476">  ;</a>
-<span class="sourceLineNo">477</span><a id="line.477"></a>
-<span class="sourceLineNo">478</span><a id="line.478">  private final String m_widgetName;</a>
-<span class="sourceLineNo">479</span><a id="line.479"></a>
-<span class="sourceLineNo">480</span><a id="line.480">  BuiltInWidgets(String widgetName) {</a>
-<span class="sourceLineNo">481</span><a id="line.481">    this.m_widgetName = widgetName;</a>
-<span class="sourceLineNo">482</span><a id="line.482">  }</a>
-<span class="sourceLineNo">483</span><a id="line.483"></a>
-<span class="sourceLineNo">484</span><a id="line.484">  @Override</a>
-<span class="sourceLineNo">485</span><a id="line.485">  public String getWidgetName() {</a>
-<span class="sourceLineNo">486</span><a id="line.486">    return m_widgetName;</a>
-<span class="sourceLineNo">487</span><a id="line.487">  }</a>
-<span class="sourceLineNo">488</span><a id="line.488">}</a>
+<span class="sourceLineNo">476</span><a id="line.476">  /**</a>
+<span class="sourceLineNo">477</span><a id="line.477">   * Displays a field2d object.&lt;br&gt;</a>
+<span class="sourceLineNo">478</span><a id="line.478">   * Supported types:</a>
+<span class="sourceLineNo">479</span><a id="line.479">   *</a>
+<span class="sourceLineNo">480</span><a id="line.480">   * &lt;ul&gt;</a>
+<span class="sourceLineNo">481</span><a id="line.481">   *   &lt;li&gt;{@link edu.wpi.first.wpilibj.smartdashboard.Field2d}</a>
+<span class="sourceLineNo">482</span><a id="line.482">   * &lt;/ul&gt;</a>
+<span class="sourceLineNo">483</span><a id="line.483">   */</a>
+<span class="sourceLineNo">484</span><a id="line.484">  kField("Field"),</a>
+<span class="sourceLineNo">485</span><a id="line.485">  ;</a>
+<span class="sourceLineNo">486</span><a id="line.486"></a>
+<span class="sourceLineNo">487</span><a id="line.487">  private final String m_widgetName;</a>
+<span class="sourceLineNo">488</span><a id="line.488"></a>
+<span class="sourceLineNo">489</span><a id="line.489">  BuiltInWidgets(String widgetName) {</a>
+<span class="sourceLineNo">490</span><a id="line.490">    this.m_widgetName = widgetName;</a>
+<span class="sourceLineNo">491</span><a id="line.491">  }</a>
+<span class="sourceLineNo">492</span><a id="line.492"></a>
+<span class="sourceLineNo">493</span><a id="line.493">  @Override</a>
+<span class="sourceLineNo">494</span><a id="line.494">  public String getWidgetName() {</a>
+<span class="sourceLineNo">495</span><a id="line.495">    return m_widgetName;</a>
+<span class="sourceLineNo">496</span><a id="line.496">  }</a>
+<span class="sourceLineNo">497</span><a id="line.497">}</a>
 
 
 
