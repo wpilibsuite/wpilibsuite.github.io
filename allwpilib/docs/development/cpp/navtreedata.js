@@ -241,7 +241,7 @@ var NAVTREEINDEX =
 "structdetail_1_1basic__impl__data.html#a2cd03a390055efeadef93325c052d7bf",
 "structdragonbox_1_1float__info_3_01float_01_4.html#a050120fb38fc21225d1aac294606f954",
 "structfrc_1_1_mecanum_drive_wheel_speeds.html#a5b8f638a24ec54fe78fb67d4b35057b5",
-"structfrc_1_1_power_distribution_1_1_version.html#a637e8337a5bac837ba735e654d17aa15",
+"structfrc_1_1_power_distribution_1_1_version.html#a53fdb3c084f7314e9e845abc58e329a5",
 "structnt_1_1_rpc_param_def.html#a96ba9260c2033f8071a9b34b3ff878ef",
 "structtm__format__checker.html#ace3710f5e13491d6841c08474c3b17e2",
 "structuv__stat__t.html#a7cb4ce091e3b7418f368451dd60e535e",
