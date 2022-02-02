@@ -102,245 +102,281 @@
 <span class="sourceLineNo">090</span><a id="line.90">  }</a>
 <span class="sourceLineNo">091</span><a id="line.91"></a>
 <span class="sourceLineNo">092</span><a id="line.92">  /**</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * Create a state-space model of a differential drive drivetrain. In this model, the states are</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * [v_left, v_right]ᵀ, inputs are [V_left, V_right]ᵀ and outputs are [v_left, v_right]ᵀ.</a>
-<span class="sourceLineNo">095</span><a id="line.95">   *</a>
-<span class="sourceLineNo">096</span><a id="line.96">   * @param motor the gearbox representing the motors driving the drivetrain.</a>
-<span class="sourceLineNo">097</span><a id="line.97">   * @param massKg the mass of the robot.</a>
-<span class="sourceLineNo">098</span><a id="line.98">   * @param rMeters the radius of the wheels in meters.</a>
-<span class="sourceLineNo">099</span><a id="line.99">   * @param rbMeters the radius of the base (half the track width) in meters.</a>
-<span class="sourceLineNo">100</span><a id="line.100">   * @param JKgMetersSquared the moment of inertia of the robot.</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * @param G the gearing reduction as output over input.</a>
-<span class="sourceLineNo">102</span><a id="line.102">   * @return A LinearSystem representing a differential drivetrain.</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * @throws IllegalArgumentException if m &amp;lt;= 0, r &amp;lt;= 0, rb &amp;lt;= 0, J &amp;lt;= 0, or G &amp;lt;= 0.</a>
-<span class="sourceLineNo">104</span><a id="line.104">   */</a>
-<span class="sourceLineNo">105</span><a id="line.105">  @SuppressWarnings({"LocalVariableName", "ParameterName"})</a>
-<span class="sourceLineNo">106</span><a id="line.106">  public static LinearSystem&lt;N2, N2, N2&gt; createDrivetrainVelocitySystem(</a>
-<span class="sourceLineNo">107</span><a id="line.107">      DCMotor motor,</a>
-<span class="sourceLineNo">108</span><a id="line.108">      double massKg,</a>
-<span class="sourceLineNo">109</span><a id="line.109">      double rMeters,</a>
-<span class="sourceLineNo">110</span><a id="line.110">      double rbMeters,</a>
-<span class="sourceLineNo">111</span><a id="line.111">      double JKgMetersSquared,</a>
-<span class="sourceLineNo">112</span><a id="line.112">      double G) {</a>
-<span class="sourceLineNo">113</span><a id="line.113">    if (massKg &lt;= 0.0) {</a>
-<span class="sourceLineNo">114</span><a id="line.114">      throw new IllegalArgumentException("massKg must be greater than zero.");</a>
-<span class="sourceLineNo">115</span><a id="line.115">    }</a>
-<span class="sourceLineNo">116</span><a id="line.116">    if (rMeters &lt;= 0.0) {</a>
-<span class="sourceLineNo">117</span><a id="line.117">      throw new IllegalArgumentException("rMeters must be greater than zero.");</a>
-<span class="sourceLineNo">118</span><a id="line.118">    }</a>
-<span class="sourceLineNo">119</span><a id="line.119">    if (rbMeters &lt;= 0.0) {</a>
-<span class="sourceLineNo">120</span><a id="line.120">      throw new IllegalArgumentException("rbMeters must be greater than zero.");</a>
-<span class="sourceLineNo">121</span><a id="line.121">    }</a>
-<span class="sourceLineNo">122</span><a id="line.122">    if (JKgMetersSquared &lt;= 0.0) {</a>
-<span class="sourceLineNo">123</span><a id="line.123">      throw new IllegalArgumentException("JKgMetersSquared must be greater than zero.");</a>
-<span class="sourceLineNo">124</span><a id="line.124">    }</a>
-<span class="sourceLineNo">125</span><a id="line.125">    if (G &lt;= 0.0) {</a>
-<span class="sourceLineNo">126</span><a id="line.126">      throw new IllegalArgumentException("G must be greater than zero.");</a>
-<span class="sourceLineNo">127</span><a id="line.127">    }</a>
-<span class="sourceLineNo">128</span><a id="line.128"></a>
-<span class="sourceLineNo">129</span><a id="line.129">    var C1 =</a>
-<span class="sourceLineNo">130</span><a id="line.130">        -(G * G) * motor.KtNMPerAmp / (motor.KvRadPerSecPerVolt * motor.rOhms * rMeters * rMeters);</a>
-<span class="sourceLineNo">131</span><a id="line.131">    var C2 = G * motor.KtNMPerAmp / (motor.rOhms * rMeters);</a>
-<span class="sourceLineNo">132</span><a id="line.132"></a>
-<span class="sourceLineNo">133</span><a id="line.133">    final double C3 = 1 / massKg + rbMeters * rbMeters / JKgMetersSquared;</a>
-<span class="sourceLineNo">134</span><a id="line.134">    final double C4 = 1 / massKg - rbMeters * rbMeters / JKgMetersSquared;</a>
-<span class="sourceLineNo">135</span><a id="line.135">    var A = Matrix.mat(Nat.N2(), Nat.N2()).fill(C3 * C1, C4 * C1, C4 * C1, C3 * C1);</a>
-<span class="sourceLineNo">136</span><a id="line.136">    var B = Matrix.mat(Nat.N2(), Nat.N2()).fill(C3 * C2, C4 * C2, C4 * C2, C3 * C2);</a>
-<span class="sourceLineNo">137</span><a id="line.137">    var C = Matrix.mat(Nat.N2(), Nat.N2()).fill(1.0, 0.0, 0.0, 1.0);</a>
-<span class="sourceLineNo">138</span><a id="line.138">    var D = Matrix.mat(Nat.N2(), Nat.N2()).fill(0.0, 0.0, 0.0, 0.0);</a>
-<span class="sourceLineNo">139</span><a id="line.139"></a>
-<span class="sourceLineNo">140</span><a id="line.140">    return new LinearSystem&lt;&gt;(A, B, C, D);</a>
-<span class="sourceLineNo">141</span><a id="line.141">  }</a>
-<span class="sourceLineNo">142</span><a id="line.142"></a>
-<span class="sourceLineNo">143</span><a id="line.143">  /**</a>
-<span class="sourceLineNo">144</span><a id="line.144">   * Create a state-space model of a single jointed arm system. The states of the system are [angle,</a>
-<span class="sourceLineNo">145</span><a id="line.145">   * angular velocity], inputs are [voltage], and outputs are [angle].</a>
-<span class="sourceLineNo">146</span><a id="line.146">   *</a>
-<span class="sourceLineNo">147</span><a id="line.147">   * @param motor The motor (or gearbox) attached to the arm.</a>
-<span class="sourceLineNo">148</span><a id="line.148">   * @param jKgSquaredMeters The moment of inertia J of the arm.</a>
-<span class="sourceLineNo">149</span><a id="line.149">   * @param G The gearing between the motor and arm, in output over input. Most of the time this</a>
-<span class="sourceLineNo">150</span><a id="line.150">   *     will be greater than 1.</a>
-<span class="sourceLineNo">151</span><a id="line.151">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">152</span><a id="line.152">   */</a>
-<span class="sourceLineNo">153</span><a id="line.153">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">154</span><a id="line.154">  public static LinearSystem&lt;N2, N1, N1&gt; createSingleJointedArmSystem(</a>
-<span class="sourceLineNo">155</span><a id="line.155">      DCMotor motor, double jKgSquaredMeters, double G) {</a>
-<span class="sourceLineNo">156</span><a id="line.156">    if (jKgSquaredMeters &lt;= 0.0) {</a>
-<span class="sourceLineNo">157</span><a id="line.157">      throw new IllegalArgumentException("jKgSquaredMeters must be greater than zero.");</a>
-<span class="sourceLineNo">158</span><a id="line.158">    }</a>
-<span class="sourceLineNo">159</span><a id="line.159">    if (G &lt;= 0.0) {</a>
-<span class="sourceLineNo">160</span><a id="line.160">      throw new IllegalArgumentException("G must be greater than zero.");</a>
-<span class="sourceLineNo">161</span><a id="line.161">    }</a>
-<span class="sourceLineNo">162</span><a id="line.162"></a>
-<span class="sourceLineNo">163</span><a id="line.163">    return new LinearSystem&lt;&gt;(</a>
-<span class="sourceLineNo">164</span><a id="line.164">        Matrix.mat(Nat.N2(), Nat.N2())</a>
-<span class="sourceLineNo">165</span><a id="line.165">            .fill(</a>
-<span class="sourceLineNo">166</span><a id="line.166">                0,</a>
-<span class="sourceLineNo">167</span><a id="line.167">                1,</a>
-<span class="sourceLineNo">168</span><a id="line.168">                0,</a>
-<span class="sourceLineNo">169</span><a id="line.169">                -Math.pow(G, 2)</a>
-<span class="sourceLineNo">170</span><a id="line.170">                    * motor.KtNMPerAmp</a>
-<span class="sourceLineNo">171</span><a id="line.171">                    / (motor.KvRadPerSecPerVolt * motor.rOhms * jKgSquaredMeters)),</a>
-<span class="sourceLineNo">172</span><a id="line.172">        VecBuilder.fill(0, G * motor.KtNMPerAmp / (motor.rOhms * jKgSquaredMeters)),</a>
-<span class="sourceLineNo">173</span><a id="line.173">        Matrix.mat(Nat.N1(), Nat.N2()).fill(1, 0),</a>
-<span class="sourceLineNo">174</span><a id="line.174">        new Matrix&lt;&gt;(Nat.N1(), Nat.N1()));</a>
-<span class="sourceLineNo">175</span><a id="line.175">  }</a>
-<span class="sourceLineNo">176</span><a id="line.176"></a>
-<span class="sourceLineNo">177</span><a id="line.177">  /**</a>
-<span class="sourceLineNo">178</span><a id="line.178">   * Identify a velocity system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These</a>
-<span class="sourceLineNo">179</span><a id="line.179">   * constants cam be found using SysId. The states of the system are [velocity], inputs are</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * [voltage], and outputs are [velocity].</a>
-<span class="sourceLineNo">181</span><a id="line.181">   *</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * &lt;p&gt;The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the</a>
-<span class="sourceLineNo">183</span><a id="line.183">   * {@link edu.wpi.first.math.util.Units} class for converting between unit types.</a>
-<span class="sourceLineNo">184</span><a id="line.184">   *</a>
-<span class="sourceLineNo">185</span><a id="line.185">   * @param kV The velocity gain, in volts per (units per second)</a>
-<span class="sourceLineNo">186</span><a id="line.186">   * @param kA The acceleration gain, in volts per (units per second squared)</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * Create a state-space model of a DC motor system. The states of the system are [angular</a>
+<span class="sourceLineNo">094</span><a id="line.94">   * position, angular velocity], inputs are [voltage], and outputs are [angular position, angular</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * velocity].</a>
+<span class="sourceLineNo">096</span><a id="line.96">   *</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * @param motor The motor (or gearbox) attached to the DC motor.</a>
+<span class="sourceLineNo">098</span><a id="line.98">   * @param jKgMetersSquared The moment of inertia J of the DC motor.</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * @param G The reduction between motor and drum, as a ratio of output to input.</a>
+<span class="sourceLineNo">100</span><a id="line.100">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">101</span><a id="line.101">   * @throws IllegalArgumentException if jKgMetersSquared &amp;lt;= 0 or G &amp;lt;= 0.</a>
+<span class="sourceLineNo">102</span><a id="line.102">   */</a>
+<span class="sourceLineNo">103</span><a id="line.103">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">104</span><a id="line.104">  public static LinearSystem&lt;N2, N1, N2&gt; createDCMotorSystem(</a>
+<span class="sourceLineNo">105</span><a id="line.105">      DCMotor motor, double jKgMetersSquared, double G) {</a>
+<span class="sourceLineNo">106</span><a id="line.106">    if (jKgMetersSquared &lt;= 0.0) {</a>
+<span class="sourceLineNo">107</span><a id="line.107">      throw new IllegalArgumentException("J must be greater than zero.");</a>
+<span class="sourceLineNo">108</span><a id="line.108">    }</a>
+<span class="sourceLineNo">109</span><a id="line.109">    if (G &lt;= 0.0) {</a>
+<span class="sourceLineNo">110</span><a id="line.110">      throw new IllegalArgumentException("G must be greater than zero.");</a>
+<span class="sourceLineNo">111</span><a id="line.111">    }</a>
+<span class="sourceLineNo">112</span><a id="line.112"></a>
+<span class="sourceLineNo">113</span><a id="line.113">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">114</span><a id="line.114">        Matrix.mat(Nat.N2(), Nat.N2())</a>
+<span class="sourceLineNo">115</span><a id="line.115">            .fill(</a>
+<span class="sourceLineNo">116</span><a id="line.116">                0,</a>
+<span class="sourceLineNo">117</span><a id="line.117">                1,</a>
+<span class="sourceLineNo">118</span><a id="line.118">                0,</a>
+<span class="sourceLineNo">119</span><a id="line.119">                -G</a>
+<span class="sourceLineNo">120</span><a id="line.120">                    * G</a>
+<span class="sourceLineNo">121</span><a id="line.121">                    * motor.KtNMPerAmp</a>
+<span class="sourceLineNo">122</span><a id="line.122">                    / (motor.KvRadPerSecPerVolt * motor.rOhms * jKgMetersSquared)),</a>
+<span class="sourceLineNo">123</span><a id="line.123">        VecBuilder.fill(0, G * motor.KtNMPerAmp / (motor.rOhms * jKgMetersSquared)),</a>
+<span class="sourceLineNo">124</span><a id="line.124">        Matrix.eye(Nat.N2()),</a>
+<span class="sourceLineNo">125</span><a id="line.125">        new Matrix&lt;&gt;(Nat.N2(), Nat.N1()));</a>
+<span class="sourceLineNo">126</span><a id="line.126">  }</a>
+<span class="sourceLineNo">127</span><a id="line.127"></a>
+<span class="sourceLineNo">128</span><a id="line.128">  /**</a>
+<span class="sourceLineNo">129</span><a id="line.129">   * Create a state-space model of a differential drive drivetrain. In this model, the states are</a>
+<span class="sourceLineNo">130</span><a id="line.130">   * [v_left, v_right]ᵀ, inputs are [V_left, V_right]ᵀ and outputs are [v_left, v_right]ᵀ.</a>
+<span class="sourceLineNo">131</span><a id="line.131">   *</a>
+<span class="sourceLineNo">132</span><a id="line.132">   * @param motor the gearbox representing the motors driving the drivetrain.</a>
+<span class="sourceLineNo">133</span><a id="line.133">   * @param massKg the mass of the robot.</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * @param rMeters the radius of the wheels in meters.</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * @param rbMeters the radius of the base (half the track width) in meters.</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * @param JKgMetersSquared the moment of inertia of the robot.</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * @param G the gearing reduction as output over input.</a>
+<span class="sourceLineNo">138</span><a id="line.138">   * @return A LinearSystem representing a differential drivetrain.</a>
+<span class="sourceLineNo">139</span><a id="line.139">   * @throws IllegalArgumentException if m &amp;lt;= 0, r &amp;lt;= 0, rb &amp;lt;= 0, J &amp;lt;= 0, or G &amp;lt;= 0.</a>
+<span class="sourceLineNo">140</span><a id="line.140">   */</a>
+<span class="sourceLineNo">141</span><a id="line.141">  @SuppressWarnings({"LocalVariableName", "ParameterName"})</a>
+<span class="sourceLineNo">142</span><a id="line.142">  public static LinearSystem&lt;N2, N2, N2&gt; createDrivetrainVelocitySystem(</a>
+<span class="sourceLineNo">143</span><a id="line.143">      DCMotor motor,</a>
+<span class="sourceLineNo">144</span><a id="line.144">      double massKg,</a>
+<span class="sourceLineNo">145</span><a id="line.145">      double rMeters,</a>
+<span class="sourceLineNo">146</span><a id="line.146">      double rbMeters,</a>
+<span class="sourceLineNo">147</span><a id="line.147">      double JKgMetersSquared,</a>
+<span class="sourceLineNo">148</span><a id="line.148">      double G) {</a>
+<span class="sourceLineNo">149</span><a id="line.149">    if (massKg &lt;= 0.0) {</a>
+<span class="sourceLineNo">150</span><a id="line.150">      throw new IllegalArgumentException("massKg must be greater than zero.");</a>
+<span class="sourceLineNo">151</span><a id="line.151">    }</a>
+<span class="sourceLineNo">152</span><a id="line.152">    if (rMeters &lt;= 0.0) {</a>
+<span class="sourceLineNo">153</span><a id="line.153">      throw new IllegalArgumentException("rMeters must be greater than zero.");</a>
+<span class="sourceLineNo">154</span><a id="line.154">    }</a>
+<span class="sourceLineNo">155</span><a id="line.155">    if (rbMeters &lt;= 0.0) {</a>
+<span class="sourceLineNo">156</span><a id="line.156">      throw new IllegalArgumentException("rbMeters must be greater than zero.");</a>
+<span class="sourceLineNo">157</span><a id="line.157">    }</a>
+<span class="sourceLineNo">158</span><a id="line.158">    if (JKgMetersSquared &lt;= 0.0) {</a>
+<span class="sourceLineNo">159</span><a id="line.159">      throw new IllegalArgumentException("JKgMetersSquared must be greater than zero.");</a>
+<span class="sourceLineNo">160</span><a id="line.160">    }</a>
+<span class="sourceLineNo">161</span><a id="line.161">    if (G &lt;= 0.0) {</a>
+<span class="sourceLineNo">162</span><a id="line.162">      throw new IllegalArgumentException("G must be greater than zero.");</a>
+<span class="sourceLineNo">163</span><a id="line.163">    }</a>
+<span class="sourceLineNo">164</span><a id="line.164"></a>
+<span class="sourceLineNo">165</span><a id="line.165">    var C1 =</a>
+<span class="sourceLineNo">166</span><a id="line.166">        -(G * G) * motor.KtNMPerAmp / (motor.KvRadPerSecPerVolt * motor.rOhms * rMeters * rMeters);</a>
+<span class="sourceLineNo">167</span><a id="line.167">    var C2 = G * motor.KtNMPerAmp / (motor.rOhms * rMeters);</a>
+<span class="sourceLineNo">168</span><a id="line.168"></a>
+<span class="sourceLineNo">169</span><a id="line.169">    final double C3 = 1 / massKg + rbMeters * rbMeters / JKgMetersSquared;</a>
+<span class="sourceLineNo">170</span><a id="line.170">    final double C4 = 1 / massKg - rbMeters * rbMeters / JKgMetersSquared;</a>
+<span class="sourceLineNo">171</span><a id="line.171">    var A = Matrix.mat(Nat.N2(), Nat.N2()).fill(C3 * C1, C4 * C1, C4 * C1, C3 * C1);</a>
+<span class="sourceLineNo">172</span><a id="line.172">    var B = Matrix.mat(Nat.N2(), Nat.N2()).fill(C3 * C2, C4 * C2, C4 * C2, C3 * C2);</a>
+<span class="sourceLineNo">173</span><a id="line.173">    var C = Matrix.mat(Nat.N2(), Nat.N2()).fill(1.0, 0.0, 0.0, 1.0);</a>
+<span class="sourceLineNo">174</span><a id="line.174">    var D = Matrix.mat(Nat.N2(), Nat.N2()).fill(0.0, 0.0, 0.0, 0.0);</a>
+<span class="sourceLineNo">175</span><a id="line.175"></a>
+<span class="sourceLineNo">176</span><a id="line.176">    return new LinearSystem&lt;&gt;(A, B, C, D);</a>
+<span class="sourceLineNo">177</span><a id="line.177">  }</a>
+<span class="sourceLineNo">178</span><a id="line.178"></a>
+<span class="sourceLineNo">179</span><a id="line.179">  /**</a>
+<span class="sourceLineNo">180</span><a id="line.180">   * Create a state-space model of a single jointed arm system. The states of the system are [angle,</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * angular velocity], inputs are [voltage], and outputs are [angle].</a>
+<span class="sourceLineNo">182</span><a id="line.182">   *</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * @param motor The motor (or gearbox) attached to the arm.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   * @param jKgSquaredMeters The moment of inertia J of the arm.</a>
+<span class="sourceLineNo">185</span><a id="line.185">   * @param G The gearing between the motor and arm, in output over input. Most of the time this</a>
+<span class="sourceLineNo">186</span><a id="line.186">   *     will be greater than 1.</a>
 <span class="sourceLineNo">187</span><a id="line.187">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">188</span><a id="line.188">   * @throws IllegalArgumentException if kV &amp;lt;= 0 or kA &amp;lt;= 0.</a>
-<span class="sourceLineNo">189</span><a id="line.189">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
-<span class="sourceLineNo">190</span><a id="line.190">   */</a>
-<span class="sourceLineNo">191</span><a id="line.191">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">192</span><a id="line.192">  public static LinearSystem&lt;N1, N1, N1&gt; identifyVelocitySystem(double kV, double kA) {</a>
-<span class="sourceLineNo">193</span><a id="line.193">    if (kV &lt;= 0.0) {</a>
-<span class="sourceLineNo">194</span><a id="line.194">      throw new IllegalArgumentException("Kv must be greater than zero.");</a>
-<span class="sourceLineNo">195</span><a id="line.195">    }</a>
-<span class="sourceLineNo">196</span><a id="line.196">    if (kA &lt;= 0.0) {</a>
-<span class="sourceLineNo">197</span><a id="line.197">      throw new IllegalArgumentException("Ka must be greater than zero.");</a>
-<span class="sourceLineNo">198</span><a id="line.198">    }</a>
-<span class="sourceLineNo">199</span><a id="line.199"></a>
-<span class="sourceLineNo">200</span><a id="line.200">    return new LinearSystem&lt;&gt;(</a>
-<span class="sourceLineNo">201</span><a id="line.201">        VecBuilder.fill(-kV / kA),</a>
-<span class="sourceLineNo">202</span><a id="line.202">        VecBuilder.fill(1.0 / kA),</a>
-<span class="sourceLineNo">203</span><a id="line.203">        VecBuilder.fill(1.0),</a>
-<span class="sourceLineNo">204</span><a id="line.204">        VecBuilder.fill(0.0));</a>
-<span class="sourceLineNo">205</span><a id="line.205">  }</a>
-<span class="sourceLineNo">206</span><a id="line.206"></a>
-<span class="sourceLineNo">207</span><a id="line.207">  /**</a>
-<span class="sourceLineNo">208</span><a id="line.208">   * Identify a position system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These</a>
-<span class="sourceLineNo">209</span><a id="line.209">   * constants cam be found using SysId. The states of the system are [position, velocity]ᵀ, inputs</a>
-<span class="sourceLineNo">210</span><a id="line.210">   * are [voltage], and outputs are [position].</a>
-<span class="sourceLineNo">211</span><a id="line.211">   *</a>
-<span class="sourceLineNo">212</span><a id="line.212">   * &lt;p&gt;The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the</a>
-<span class="sourceLineNo">213</span><a id="line.213">   * {@link edu.wpi.first.math.util.Units} class for converting between unit types.</a>
-<span class="sourceLineNo">214</span><a id="line.214">   *</a>
-<span class="sourceLineNo">215</span><a id="line.215">   * @param kV The velocity gain, in volts per (units per second)</a>
-<span class="sourceLineNo">216</span><a id="line.216">   * @param kA The acceleration gain, in volts per (units per second squared)</a>
-<span class="sourceLineNo">217</span><a id="line.217">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * @throws IllegalArgumentException if kV &amp;lt;= 0 or kA &amp;lt;= 0.</a>
-<span class="sourceLineNo">219</span><a id="line.219">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
-<span class="sourceLineNo">220</span><a id="line.220">   */</a>
-<span class="sourceLineNo">221</span><a id="line.221">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">222</span><a id="line.222">  public static LinearSystem&lt;N2, N1, N1&gt; identifyPositionSystem(double kV, double kA) {</a>
-<span class="sourceLineNo">223</span><a id="line.223">    if (kV &lt;= 0.0) {</a>
-<span class="sourceLineNo">224</span><a id="line.224">      throw new IllegalArgumentException("Kv must be greater than zero.");</a>
-<span class="sourceLineNo">225</span><a id="line.225">    }</a>
-<span class="sourceLineNo">226</span><a id="line.226">    if (kA &lt;= 0.0) {</a>
-<span class="sourceLineNo">227</span><a id="line.227">      throw new IllegalArgumentException("Ka must be greater than zero.");</a>
-<span class="sourceLineNo">228</span><a id="line.228">    }</a>
-<span class="sourceLineNo">229</span><a id="line.229"></a>
-<span class="sourceLineNo">230</span><a id="line.230">    return new LinearSystem&lt;&gt;(</a>
-<span class="sourceLineNo">231</span><a id="line.231">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0.0, 1.0, 0.0, -kV / kA),</a>
-<span class="sourceLineNo">232</span><a id="line.232">        VecBuilder.fill(0.0, 1.0 / kA),</a>
-<span class="sourceLineNo">233</span><a id="line.233">        Matrix.mat(Nat.N1(), Nat.N2()).fill(1.0, 0.0),</a>
-<span class="sourceLineNo">234</span><a id="line.234">        VecBuilder.fill(0.0));</a>
-<span class="sourceLineNo">235</span><a id="line.235">  }</a>
-<span class="sourceLineNo">236</span><a id="line.236"></a>
-<span class="sourceLineNo">237</span><a id="line.237">  /**</a>
-<span class="sourceLineNo">238</span><a id="line.238">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
-<span class="sourceLineNo">239</span><a id="line.239">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(meter/sec) and</a>
-<span class="sourceLineNo">240</span><a id="line.240">   * volts/(meter/sec^2)) cases. This can be found using SysId. The states of the system are [left</a>
-<span class="sourceLineNo">241</span><a id="line.241">   * velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and outputs are [left</a>
-<span class="sourceLineNo">242</span><a id="line.242">   * velocity, right velocity]ᵀ.</a>
-<span class="sourceLineNo">243</span><a id="line.243">   *</a>
-<span class="sourceLineNo">244</span><a id="line.244">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
-<span class="sourceLineNo">245</span><a id="line.245">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
-<span class="sourceLineNo">246</span><a id="line.246">   * @param kVAngular The angular velocity gain, volts per (meter per second).</a>
-<span class="sourceLineNo">247</span><a id="line.247">   * @param kAAngular The angular acceleration gain, volts per (meter per second squared).</a>
-<span class="sourceLineNo">248</span><a id="line.248">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">249</span><a id="line.249">   * @throws IllegalArgumentException if kVLinear &amp;lt;= 0, kALinear &amp;lt;= 0, kVAngular &amp;lt;= 0, or</a>
-<span class="sourceLineNo">250</span><a id="line.250">   *     kAAngular &amp;lt;= 0.</a>
-<span class="sourceLineNo">251</span><a id="line.251">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
-<span class="sourceLineNo">252</span><a id="line.252">   */</a>
-<span class="sourceLineNo">253</span><a id="line.253">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">254</span><a id="line.254">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
-<span class="sourceLineNo">255</span><a id="line.255">      double kVLinear, double kALinear, double kVAngular, double kAAngular) {</a>
-<span class="sourceLineNo">256</span><a id="line.256">    if (kVLinear &lt;= 0.0) {</a>
-<span class="sourceLineNo">257</span><a id="line.257">      throw new IllegalArgumentException("Kv,linear must be greater than zero.");</a>
-<span class="sourceLineNo">258</span><a id="line.258">    }</a>
-<span class="sourceLineNo">259</span><a id="line.259">    if (kALinear &lt;= 0.0) {</a>
-<span class="sourceLineNo">260</span><a id="line.260">      throw new IllegalArgumentException("Ka,linear must be greater than zero.");</a>
+<span class="sourceLineNo">188</span><a id="line.188">   */</a>
+<span class="sourceLineNo">189</span><a id="line.189">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">190</span><a id="line.190">  public static LinearSystem&lt;N2, N1, N1&gt; createSingleJointedArmSystem(</a>
+<span class="sourceLineNo">191</span><a id="line.191">      DCMotor motor, double jKgSquaredMeters, double G) {</a>
+<span class="sourceLineNo">192</span><a id="line.192">    if (jKgSquaredMeters &lt;= 0.0) {</a>
+<span class="sourceLineNo">193</span><a id="line.193">      throw new IllegalArgumentException("jKgSquaredMeters must be greater than zero.");</a>
+<span class="sourceLineNo">194</span><a id="line.194">    }</a>
+<span class="sourceLineNo">195</span><a id="line.195">    if (G &lt;= 0.0) {</a>
+<span class="sourceLineNo">196</span><a id="line.196">      throw new IllegalArgumentException("G must be greater than zero.");</a>
+<span class="sourceLineNo">197</span><a id="line.197">    }</a>
+<span class="sourceLineNo">198</span><a id="line.198"></a>
+<span class="sourceLineNo">199</span><a id="line.199">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">200</span><a id="line.200">        Matrix.mat(Nat.N2(), Nat.N2())</a>
+<span class="sourceLineNo">201</span><a id="line.201">            .fill(</a>
+<span class="sourceLineNo">202</span><a id="line.202">                0,</a>
+<span class="sourceLineNo">203</span><a id="line.203">                1,</a>
+<span class="sourceLineNo">204</span><a id="line.204">                0,</a>
+<span class="sourceLineNo">205</span><a id="line.205">                -Math.pow(G, 2)</a>
+<span class="sourceLineNo">206</span><a id="line.206">                    * motor.KtNMPerAmp</a>
+<span class="sourceLineNo">207</span><a id="line.207">                    / (motor.KvRadPerSecPerVolt * motor.rOhms * jKgSquaredMeters)),</a>
+<span class="sourceLineNo">208</span><a id="line.208">        VecBuilder.fill(0, G * motor.KtNMPerAmp / (motor.rOhms * jKgSquaredMeters)),</a>
+<span class="sourceLineNo">209</span><a id="line.209">        Matrix.mat(Nat.N1(), Nat.N2()).fill(1, 0),</a>
+<span class="sourceLineNo">210</span><a id="line.210">        new Matrix&lt;&gt;(Nat.N1(), Nat.N1()));</a>
+<span class="sourceLineNo">211</span><a id="line.211">  }</a>
+<span class="sourceLineNo">212</span><a id="line.212"></a>
+<span class="sourceLineNo">213</span><a id="line.213">  /**</a>
+<span class="sourceLineNo">214</span><a id="line.214">   * Identify a velocity system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These</a>
+<span class="sourceLineNo">215</span><a id="line.215">   * constants cam be found using SysId. The states of the system are [velocity], inputs are</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * [voltage], and outputs are [velocity].</a>
+<span class="sourceLineNo">217</span><a id="line.217">   *</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * &lt;p&gt;The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * {@link edu.wpi.first.math.util.Units} class for converting between unit types.</a>
+<span class="sourceLineNo">220</span><a id="line.220">   *</a>
+<span class="sourceLineNo">221</span><a id="line.221">   * @param kV The velocity gain, in volts per (units per second)</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * @param kA The acceleration gain, in volts per (units per second squared)</a>
+<span class="sourceLineNo">223</span><a id="line.223">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">224</span><a id="line.224">   * @throws IllegalArgumentException if kV &amp;lt;= 0 or kA &amp;lt;= 0.</a>
+<span class="sourceLineNo">225</span><a id="line.225">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">226</span><a id="line.226">   */</a>
+<span class="sourceLineNo">227</span><a id="line.227">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">228</span><a id="line.228">  public static LinearSystem&lt;N1, N1, N1&gt; identifyVelocitySystem(double kV, double kA) {</a>
+<span class="sourceLineNo">229</span><a id="line.229">    if (kV &lt;= 0.0) {</a>
+<span class="sourceLineNo">230</span><a id="line.230">      throw new IllegalArgumentException("Kv must be greater than zero.");</a>
+<span class="sourceLineNo">231</span><a id="line.231">    }</a>
+<span class="sourceLineNo">232</span><a id="line.232">    if (kA &lt;= 0.0) {</a>
+<span class="sourceLineNo">233</span><a id="line.233">      throw new IllegalArgumentException("Ka must be greater than zero.");</a>
+<span class="sourceLineNo">234</span><a id="line.234">    }</a>
+<span class="sourceLineNo">235</span><a id="line.235"></a>
+<span class="sourceLineNo">236</span><a id="line.236">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">237</span><a id="line.237">        VecBuilder.fill(-kV / kA),</a>
+<span class="sourceLineNo">238</span><a id="line.238">        VecBuilder.fill(1.0 / kA),</a>
+<span class="sourceLineNo">239</span><a id="line.239">        VecBuilder.fill(1.0),</a>
+<span class="sourceLineNo">240</span><a id="line.240">        VecBuilder.fill(0.0));</a>
+<span class="sourceLineNo">241</span><a id="line.241">  }</a>
+<span class="sourceLineNo">242</span><a id="line.242"></a>
+<span class="sourceLineNo">243</span><a id="line.243">  /**</a>
+<span class="sourceLineNo">244</span><a id="line.244">   * Identify a position system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These</a>
+<span class="sourceLineNo">245</span><a id="line.245">   * constants cam be found using SysId. The states of the system are [position, velocity]ᵀ, inputs</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * are [voltage], and outputs are [position].</a>
+<span class="sourceLineNo">247</span><a id="line.247">   *</a>
+<span class="sourceLineNo">248</span><a id="line.248">   * &lt;p&gt;The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the</a>
+<span class="sourceLineNo">249</span><a id="line.249">   * {@link edu.wpi.first.math.util.Units} class for converting between unit types.</a>
+<span class="sourceLineNo">250</span><a id="line.250">   *</a>
+<span class="sourceLineNo">251</span><a id="line.251">   * @param kV The velocity gain, in volts per (units per second)</a>
+<span class="sourceLineNo">252</span><a id="line.252">   * @param kA The acceleration gain, in volts per (units per second squared)</a>
+<span class="sourceLineNo">253</span><a id="line.253">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">254</span><a id="line.254">   * @throws IllegalArgumentException if kV &amp;lt;= 0 or kA &amp;lt;= 0.</a>
+<span class="sourceLineNo">255</span><a id="line.255">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">256</span><a id="line.256">   */</a>
+<span class="sourceLineNo">257</span><a id="line.257">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">258</span><a id="line.258">  public static LinearSystem&lt;N2, N1, N1&gt; identifyPositionSystem(double kV, double kA) {</a>
+<span class="sourceLineNo">259</span><a id="line.259">    if (kV &lt;= 0.0) {</a>
+<span class="sourceLineNo">260</span><a id="line.260">      throw new IllegalArgumentException("Kv must be greater than zero.");</a>
 <span class="sourceLineNo">261</span><a id="line.261">    }</a>
-<span class="sourceLineNo">262</span><a id="line.262">    if (kVAngular &lt;= 0.0) {</a>
-<span class="sourceLineNo">263</span><a id="line.263">      throw new IllegalArgumentException("Kv,angular must be greater than zero.");</a>
+<span class="sourceLineNo">262</span><a id="line.262">    if (kA &lt;= 0.0) {</a>
+<span class="sourceLineNo">263</span><a id="line.263">      throw new IllegalArgumentException("Ka must be greater than zero.");</a>
 <span class="sourceLineNo">264</span><a id="line.264">    }</a>
-<span class="sourceLineNo">265</span><a id="line.265">    if (kAAngular &lt;= 0.0) {</a>
-<span class="sourceLineNo">266</span><a id="line.266">      throw new IllegalArgumentException("Ka,angular must be greater than zero.");</a>
-<span class="sourceLineNo">267</span><a id="line.267">    }</a>
-<span class="sourceLineNo">268</span><a id="line.268"></a>
-<span class="sourceLineNo">269</span><a id="line.269">    final double A1 = 0.5 * -(kVLinear / kALinear + kVAngular / kAAngular);</a>
-<span class="sourceLineNo">270</span><a id="line.270">    final double A2 = 0.5 * -(kVLinear / kALinear - kVAngular / kAAngular);</a>
-<span class="sourceLineNo">271</span><a id="line.271">    final double B1 = 0.5 * (1.0 / kALinear + 1.0 / kAAngular);</a>
-<span class="sourceLineNo">272</span><a id="line.272">    final double B2 = 0.5 * (1.0 / kALinear - 1.0 / kAAngular);</a>
-<span class="sourceLineNo">273</span><a id="line.273"></a>
-<span class="sourceLineNo">274</span><a id="line.274">    return new LinearSystem&lt;&gt;(</a>
-<span class="sourceLineNo">275</span><a id="line.275">        Matrix.mat(Nat.N2(), Nat.N2()).fill(A1, A2, A2, A1),</a>
-<span class="sourceLineNo">276</span><a id="line.276">        Matrix.mat(Nat.N2(), Nat.N2()).fill(B1, B2, B2, B1),</a>
-<span class="sourceLineNo">277</span><a id="line.277">        Matrix.mat(Nat.N2(), Nat.N2()).fill(1, 0, 0, 1),</a>
-<span class="sourceLineNo">278</span><a id="line.278">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0, 0, 0, 0));</a>
-<span class="sourceLineNo">279</span><a id="line.279">  }</a>
-<span class="sourceLineNo">280</span><a id="line.280"></a>
-<span class="sourceLineNo">281</span><a id="line.281">  /**</a>
-<span class="sourceLineNo">282</span><a id="line.282">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
-<span class="sourceLineNo">283</span><a id="line.283">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(radian/sec) and</a>
-<span class="sourceLineNo">284</span><a id="line.284">   * volts/(radian/sec^2)) cases. This can be found using SysId. The states of the system are [left</a>
-<span class="sourceLineNo">285</span><a id="line.285">   * velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and outputs are [left</a>
-<span class="sourceLineNo">286</span><a id="line.286">   * velocity, right velocity]ᵀ.</a>
-<span class="sourceLineNo">287</span><a id="line.287">   *</a>
-<span class="sourceLineNo">288</span><a id="line.288">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
-<span class="sourceLineNo">289</span><a id="line.289">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
-<span class="sourceLineNo">290</span><a id="line.290">   * @param kVAngular The angular velocity gain, volts per (radians per second).</a>
-<span class="sourceLineNo">291</span><a id="line.291">   * @param kAAngular The angular acceleration gain, volts per (radians per second squared).</a>
-<span class="sourceLineNo">292</span><a id="line.292">   * @param trackwidth The width of the drivetrain in meters.</a>
-<span class="sourceLineNo">293</span><a id="line.293">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">294</span><a id="line.294">   * @throws IllegalArgumentException if kVLinear &amp;lt;= 0, kALinear &amp;lt;= 0, kVAngular &amp;lt;= 0,</a>
-<span class="sourceLineNo">295</span><a id="line.295">   *     kAAngular &amp;lt;= 0, or trackwidth &amp;lt;= 0.</a>
-<span class="sourceLineNo">296</span><a id="line.296">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
-<span class="sourceLineNo">297</span><a id="line.297">   */</a>
-<span class="sourceLineNo">298</span><a id="line.298">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">299</span><a id="line.299">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
-<span class="sourceLineNo">300</span><a id="line.300">      double kVLinear, double kALinear, double kVAngular, double kAAngular, double trackwidth) {</a>
-<span class="sourceLineNo">301</span><a id="line.301">    if (kVLinear &lt;= 0.0) {</a>
-<span class="sourceLineNo">302</span><a id="line.302">      throw new IllegalArgumentException("Kv,linear must be greater than zero.");</a>
+<span class="sourceLineNo">265</span><a id="line.265"></a>
+<span class="sourceLineNo">266</span><a id="line.266">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">267</span><a id="line.267">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0.0, 1.0, 0.0, -kV / kA),</a>
+<span class="sourceLineNo">268</span><a id="line.268">        VecBuilder.fill(0.0, 1.0 / kA),</a>
+<span class="sourceLineNo">269</span><a id="line.269">        Matrix.mat(Nat.N1(), Nat.N2()).fill(1.0, 0.0),</a>
+<span class="sourceLineNo">270</span><a id="line.270">        VecBuilder.fill(0.0));</a>
+<span class="sourceLineNo">271</span><a id="line.271">  }</a>
+<span class="sourceLineNo">272</span><a id="line.272"></a>
+<span class="sourceLineNo">273</span><a id="line.273">  /**</a>
+<span class="sourceLineNo">274</span><a id="line.274">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
+<span class="sourceLineNo">275</span><a id="line.275">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(meter/sec) and</a>
+<span class="sourceLineNo">276</span><a id="line.276">   * volts/(meter/sec^2)) cases. This can be found using SysId. The states of the system are [left</a>
+<span class="sourceLineNo">277</span><a id="line.277">   * velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and outputs are [left</a>
+<span class="sourceLineNo">278</span><a id="line.278">   * velocity, right velocity]ᵀ.</a>
+<span class="sourceLineNo">279</span><a id="line.279">   *</a>
+<span class="sourceLineNo">280</span><a id="line.280">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
+<span class="sourceLineNo">281</span><a id="line.281">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
+<span class="sourceLineNo">282</span><a id="line.282">   * @param kVAngular The angular velocity gain, volts per (meter per second).</a>
+<span class="sourceLineNo">283</span><a id="line.283">   * @param kAAngular The angular acceleration gain, volts per (meter per second squared).</a>
+<span class="sourceLineNo">284</span><a id="line.284">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">285</span><a id="line.285">   * @throws IllegalArgumentException if kVLinear &amp;lt;= 0, kALinear &amp;lt;= 0, kVAngular &amp;lt;= 0, or</a>
+<span class="sourceLineNo">286</span><a id="line.286">   *     kAAngular &amp;lt;= 0.</a>
+<span class="sourceLineNo">287</span><a id="line.287">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">288</span><a id="line.288">   */</a>
+<span class="sourceLineNo">289</span><a id="line.289">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">290</span><a id="line.290">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
+<span class="sourceLineNo">291</span><a id="line.291">      double kVLinear, double kALinear, double kVAngular, double kAAngular) {</a>
+<span class="sourceLineNo">292</span><a id="line.292">    if (kVLinear &lt;= 0.0) {</a>
+<span class="sourceLineNo">293</span><a id="line.293">      throw new IllegalArgumentException("Kv,linear must be greater than zero.");</a>
+<span class="sourceLineNo">294</span><a id="line.294">    }</a>
+<span class="sourceLineNo">295</span><a id="line.295">    if (kALinear &lt;= 0.0) {</a>
+<span class="sourceLineNo">296</span><a id="line.296">      throw new IllegalArgumentException("Ka,linear must be greater than zero.");</a>
+<span class="sourceLineNo">297</span><a id="line.297">    }</a>
+<span class="sourceLineNo">298</span><a id="line.298">    if (kVAngular &lt;= 0.0) {</a>
+<span class="sourceLineNo">299</span><a id="line.299">      throw new IllegalArgumentException("Kv,angular must be greater than zero.");</a>
+<span class="sourceLineNo">300</span><a id="line.300">    }</a>
+<span class="sourceLineNo">301</span><a id="line.301">    if (kAAngular &lt;= 0.0) {</a>
+<span class="sourceLineNo">302</span><a id="line.302">      throw new IllegalArgumentException("Ka,angular must be greater than zero.");</a>
 <span class="sourceLineNo">303</span><a id="line.303">    }</a>
-<span class="sourceLineNo">304</span><a id="line.304">    if (kALinear &lt;= 0.0) {</a>
-<span class="sourceLineNo">305</span><a id="line.305">      throw new IllegalArgumentException("Ka,linear must be greater than zero.");</a>
-<span class="sourceLineNo">306</span><a id="line.306">    }</a>
-<span class="sourceLineNo">307</span><a id="line.307">    if (kVAngular &lt;= 0.0) {</a>
-<span class="sourceLineNo">308</span><a id="line.308">      throw new IllegalArgumentException("Kv,angular must be greater than zero.");</a>
-<span class="sourceLineNo">309</span><a id="line.309">    }</a>
-<span class="sourceLineNo">310</span><a id="line.310">    if (kAAngular &lt;= 0.0) {</a>
-<span class="sourceLineNo">311</span><a id="line.311">      throw new IllegalArgumentException("Ka,angular must be greater than zero.");</a>
-<span class="sourceLineNo">312</span><a id="line.312">    }</a>
-<span class="sourceLineNo">313</span><a id="line.313">    if (trackwidth &lt;= 0.0) {</a>
-<span class="sourceLineNo">314</span><a id="line.314">      throw new IllegalArgumentException("trackwidth must be greater than zero.");</a>
-<span class="sourceLineNo">315</span><a id="line.315">    }</a>
+<span class="sourceLineNo">304</span><a id="line.304"></a>
+<span class="sourceLineNo">305</span><a id="line.305">    final double A1 = 0.5 * -(kVLinear / kALinear + kVAngular / kAAngular);</a>
+<span class="sourceLineNo">306</span><a id="line.306">    final double A2 = 0.5 * -(kVLinear / kALinear - kVAngular / kAAngular);</a>
+<span class="sourceLineNo">307</span><a id="line.307">    final double B1 = 0.5 * (1.0 / kALinear + 1.0 / kAAngular);</a>
+<span class="sourceLineNo">308</span><a id="line.308">    final double B2 = 0.5 * (1.0 / kALinear - 1.0 / kAAngular);</a>
+<span class="sourceLineNo">309</span><a id="line.309"></a>
+<span class="sourceLineNo">310</span><a id="line.310">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">311</span><a id="line.311">        Matrix.mat(Nat.N2(), Nat.N2()).fill(A1, A2, A2, A1),</a>
+<span class="sourceLineNo">312</span><a id="line.312">        Matrix.mat(Nat.N2(), Nat.N2()).fill(B1, B2, B2, B1),</a>
+<span class="sourceLineNo">313</span><a id="line.313">        Matrix.mat(Nat.N2(), Nat.N2()).fill(1, 0, 0, 1),</a>
+<span class="sourceLineNo">314</span><a id="line.314">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0, 0, 0, 0));</a>
+<span class="sourceLineNo">315</span><a id="line.315">  }</a>
 <span class="sourceLineNo">316</span><a id="line.316"></a>
-<span class="sourceLineNo">317</span><a id="line.317">    // We want to find a factor to include in Kv,angular that will convert</a>
-<span class="sourceLineNo">318</span><a id="line.318">    // `u = Kv,angular omega` to `u = Kv,angular v`.</a>
-<span class="sourceLineNo">319</span><a id="line.319">    //</a>
-<span class="sourceLineNo">320</span><a id="line.320">    // v = omega r</a>
-<span class="sourceLineNo">321</span><a id="line.321">    // omega = v/r</a>
-<span class="sourceLineNo">322</span><a id="line.322">    // omega = 1/r v</a>
-<span class="sourceLineNo">323</span><a id="line.323">    // omega = 1/(trackwidth/2) v</a>
-<span class="sourceLineNo">324</span><a id="line.324">    // omega = 2/trackwidth v</a>
-<span class="sourceLineNo">325</span><a id="line.325">    //</a>
-<span class="sourceLineNo">326</span><a id="line.326">    // So multiplying by 2/trackwidth converts the angular gains from V/(rad/s)</a>
-<span class="sourceLineNo">327</span><a id="line.327">    // to V/(m/s).</a>
-<span class="sourceLineNo">328</span><a id="line.328">    return identifyDrivetrainSystem(</a>
-<span class="sourceLineNo">329</span><a id="line.329">        kVLinear, kALinear, kVAngular * 2.0 / trackwidth, kAAngular * 2.0 / trackwidth);</a>
-<span class="sourceLineNo">330</span><a id="line.330">  }</a>
-<span class="sourceLineNo">331</span><a id="line.331">}</a>
+<span class="sourceLineNo">317</span><a id="line.317">  /**</a>
+<span class="sourceLineNo">318</span><a id="line.318">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
+<span class="sourceLineNo">319</span><a id="line.319">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(radian/sec) and</a>
+<span class="sourceLineNo">320</span><a id="line.320">   * volts/(radian/sec^2)) cases. This can be found using SysId. The states of the system are [left</a>
+<span class="sourceLineNo">321</span><a id="line.321">   * velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and outputs are [left</a>
+<span class="sourceLineNo">322</span><a id="line.322">   * velocity, right velocity]ᵀ.</a>
+<span class="sourceLineNo">323</span><a id="line.323">   *</a>
+<span class="sourceLineNo">324</span><a id="line.324">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
+<span class="sourceLineNo">325</span><a id="line.325">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
+<span class="sourceLineNo">326</span><a id="line.326">   * @param kVAngular The angular velocity gain, volts per (radians per second).</a>
+<span class="sourceLineNo">327</span><a id="line.327">   * @param kAAngular The angular acceleration gain, volts per (radians per second squared).</a>
+<span class="sourceLineNo">328</span><a id="line.328">   * @param trackwidth The width of the drivetrain in meters.</a>
+<span class="sourceLineNo">329</span><a id="line.329">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">330</span><a id="line.330">   * @throws IllegalArgumentException if kVLinear &amp;lt;= 0, kALinear &amp;lt;= 0, kVAngular &amp;lt;= 0,</a>
+<span class="sourceLineNo">331</span><a id="line.331">   *     kAAngular &amp;lt;= 0, or trackwidth &amp;lt;= 0.</a>
+<span class="sourceLineNo">332</span><a id="line.332">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">333</span><a id="line.333">   */</a>
+<span class="sourceLineNo">334</span><a id="line.334">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">335</span><a id="line.335">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
+<span class="sourceLineNo">336</span><a id="line.336">      double kVLinear, double kALinear, double kVAngular, double kAAngular, double trackwidth) {</a>
+<span class="sourceLineNo">337</span><a id="line.337">    if (kVLinear &lt;= 0.0) {</a>
+<span class="sourceLineNo">338</span><a id="line.338">      throw new IllegalArgumentException("Kv,linear must be greater than zero.");</a>
+<span class="sourceLineNo">339</span><a id="line.339">    }</a>
+<span class="sourceLineNo">340</span><a id="line.340">    if (kALinear &lt;= 0.0) {</a>
+<span class="sourceLineNo">341</span><a id="line.341">      throw new IllegalArgumentException("Ka,linear must be greater than zero.");</a>
+<span class="sourceLineNo">342</span><a id="line.342">    }</a>
+<span class="sourceLineNo">343</span><a id="line.343">    if (kVAngular &lt;= 0.0) {</a>
+<span class="sourceLineNo">344</span><a id="line.344">      throw new IllegalArgumentException("Kv,angular must be greater than zero.");</a>
+<span class="sourceLineNo">345</span><a id="line.345">    }</a>
+<span class="sourceLineNo">346</span><a id="line.346">    if (kAAngular &lt;= 0.0) {</a>
+<span class="sourceLineNo">347</span><a id="line.347">      throw new IllegalArgumentException("Ka,angular must be greater than zero.");</a>
+<span class="sourceLineNo">348</span><a id="line.348">    }</a>
+<span class="sourceLineNo">349</span><a id="line.349">    if (trackwidth &lt;= 0.0) {</a>
+<span class="sourceLineNo">350</span><a id="line.350">      throw new IllegalArgumentException("trackwidth must be greater than zero.");</a>
+<span class="sourceLineNo">351</span><a id="line.351">    }</a>
+<span class="sourceLineNo">352</span><a id="line.352"></a>
+<span class="sourceLineNo">353</span><a id="line.353">    // We want to find a factor to include in Kv,angular that will convert</a>
+<span class="sourceLineNo">354</span><a id="line.354">    // `u = Kv,angular omega` to `u = Kv,angular v`.</a>
+<span class="sourceLineNo">355</span><a id="line.355">    //</a>
+<span class="sourceLineNo">356</span><a id="line.356">    // v = omega r</a>
+<span class="sourceLineNo">357</span><a id="line.357">    // omega = v/r</a>
+<span class="sourceLineNo">358</span><a id="line.358">    // omega = 1/r v</a>
+<span class="sourceLineNo">359</span><a id="line.359">    // omega = 1/(trackwidth/2) v</a>
+<span class="sourceLineNo">360</span><a id="line.360">    // omega = 2/trackwidth v</a>
+<span class="sourceLineNo">361</span><a id="line.361">    //</a>
+<span class="sourceLineNo">362</span><a id="line.362">    // So multiplying by 2/trackwidth converts the angular gains from V/(rad/s)</a>
+<span class="sourceLineNo">363</span><a id="line.363">    // to V/(m/s).</a>
+<span class="sourceLineNo">364</span><a id="line.364">    return identifyDrivetrainSystem(</a>
+<span class="sourceLineNo">365</span><a id="line.365">        kVLinear, kALinear, kVAngular * 2.0 / trackwidth, kAAngular * 2.0 / trackwidth);</a>
+<span class="sourceLineNo">366</span><a id="line.366">  }</a>
+<span class="sourceLineNo">367</span><a id="line.367">}</a>
 
 
 
