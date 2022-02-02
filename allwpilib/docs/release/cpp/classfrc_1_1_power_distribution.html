@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_power_distribution.html',
 </div><!--header-->
 <div class="contents">
 
-<p>Class for getting voltage, current, temperature, power and energy from the <a class="el" href="classfrc_1_1_c_a_n.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> PDP.  
+<p>Class for getting voltage, current, temperature, power and energy from the CTRE Power Distribution Panel (PDP) or REV Power Distribution Hub (PDH).  
  <a href="classfrc_1_1_power_distribution.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_power_distribution_8h_source.html">frc/PowerDistribution.h</a>&gt;</code></p>
@@ -135,10 +135,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a3f400b44e9daa078c69cecba077d42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a4a3f400b44e9daa078c69cecba077d42">PowerDistribution</a> ()</td></tr>
-<tr class="memdesc:a4a3f400b44e9daa078c69cecba077d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>.  <a href="classfrc_1_1_power_distribution.html#a4a3f400b44e9daa078c69cecba077d42">More...</a><br /></td></tr>
+<tr class="memdesc:a4a3f400b44e9daa078c69cecba077d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CTRE Power Distribution Pa...">PowerDistribution</a> object.  <a href="classfrc_1_1_power_distribution.html#a4a3f400b44e9daa078c69cecba077d42">More...</a><br /></td></tr>
 <tr class="separator:a4a3f400b44e9daa078c69cecba077d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a1e3a4c48298f8d236654e400b2bd4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a6a1e3a4c48298f8d236654e400b2bd4c">PowerDistribution</a> (int module, <a class="el" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">ModuleType</a> moduleType)</td></tr>
-<tr class="memdesc:a6a1e3a4c48298f8d236654e400b2bd4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>.  <a href="classfrc_1_1_power_distribution.html#a6a1e3a4c48298f8d236654e400b2bd4c">More...</a><br /></td></tr>
+<tr class="memdesc:a6a1e3a4c48298f8d236654e400b2bd4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CTRE Power Distribution Pa...">PowerDistribution</a> object.  <a href="classfrc_1_1_power_distribution.html#a6a1e3a4c48298f8d236654e400b2bd4c">More...</a><br /></td></tr>
 <tr class="separator:a6a1e3a4c48298f8d236654e400b2bd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914294e904db6ebe37998f4cde647890"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a914294e904db6ebe37998f4cde647890">~PowerDistribution</a> () override</td></tr>
 <tr class="separator:a914294e904db6ebe37998f4cde647890"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,35 +147,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a646f4fe52b8bf7cbc47682e1900fac63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_power_distribution.html">PowerDistribution</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a646f4fe52b8bf7cbc47682e1900fac63">operator=</a> (<a class="el" href="classfrc_1_1_power_distribution.html">PowerDistribution</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a646f4fe52b8bf7cbc47682e1900fac63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf5c6ca896de30f0dc9bc544a4bb305"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#abdf5c6ca896de30f0dc9bc544a4bb305">GetVoltage</a> () const</td></tr>
-<tr class="memdesc:abdf5c6ca896de30f0dc9bc544a4bb305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the input voltage of the PDP.  <a href="classfrc_1_1_power_distribution.html#abdf5c6ca896de30f0dc9bc544a4bb305">More...</a><br /></td></tr>
+<tr class="memdesc:abdf5c6ca896de30f0dc9bc544a4bb305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the input voltage of the PDP/PDH.  <a href="classfrc_1_1_power_distribution.html#abdf5c6ca896de30f0dc9bc544a4bb305">More...</a><br /></td></tr>
 <tr class="separator:abdf5c6ca896de30f0dc9bc544a4bb305"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a089a7955e9efda65fdc566b4fe0add93"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a089a7955e9efda65fdc566b4fe0add93">GetTemperature</a> () const</td></tr>
-<tr class="memdesc:a089a7955e9efda65fdc566b4fe0add93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the temperature of the PDP.  <a href="classfrc_1_1_power_distribution.html#a089a7955e9efda65fdc566b4fe0add93">More...</a><br /></td></tr>
+<tr class="memdesc:a089a7955e9efda65fdc566b4fe0add93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the temperature of the PDP/PDH.  <a href="classfrc_1_1_power_distribution.html#a089a7955e9efda65fdc566b4fe0add93">More...</a><br /></td></tr>
 <tr class="separator:a089a7955e9efda65fdc566b4fe0add93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67605af60445b992a14c45b522f93ea3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a67605af60445b992a14c45b522f93ea3">GetCurrent</a> (int channel) const</td></tr>
-<tr class="memdesc:a67605af60445b992a14c45b522f93ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the current of a single channel of the PDP.  <a href="classfrc_1_1_power_distribution.html#a67605af60445b992a14c45b522f93ea3">More...</a><br /></td></tr>
+<tr class="memdesc:a67605af60445b992a14c45b522f93ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the current of a single channel of the PDP/PDH.  <a href="classfrc_1_1_power_distribution.html#a67605af60445b992a14c45b522f93ea3">More...</a><br /></td></tr>
 <tr class="separator:a67605af60445b992a14c45b522f93ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0808ca4ac93ab4d5bb4f7b0b9f99e975"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a0808ca4ac93ab4d5bb4f7b0b9f99e975">GetTotalCurrent</a> () const</td></tr>
-<tr class="memdesc:a0808ca4ac93ab4d5bb4f7b0b9f99e975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the total current of all monitored PDP channels (0-15).  <a href="classfrc_1_1_power_distribution.html#a0808ca4ac93ab4d5bb4f7b0b9f99e975">More...</a><br /></td></tr>
+<tr class="memdesc:a0808ca4ac93ab4d5bb4f7b0b9f99e975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the total current of all monitored PDP/PDH channels.  <a href="classfrc_1_1_power_distribution.html#a0808ca4ac93ab4d5bb4f7b0b9f99e975">More...</a><br /></td></tr>
 <tr class="separator:a0808ca4ac93ab4d5bb4f7b0b9f99e975"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bfdfa0c4211a0130111347a12b9c8aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a3bfdfa0c4211a0130111347a12b9c8aa">GetTotalPower</a> () const</td></tr>
-<tr class="memdesc:a3bfdfa0c4211a0130111347a12b9c8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the total power drawn from the monitored PDP channels.  <a href="classfrc_1_1_power_distribution.html#a3bfdfa0c4211a0130111347a12b9c8aa">More...</a><br /></td></tr>
+<tr class="memdesc:a3bfdfa0c4211a0130111347a12b9c8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the total power drawn from all monitored PDP/PDH channels.  <a href="classfrc_1_1_power_distribution.html#a3bfdfa0c4211a0130111347a12b9c8aa">More...</a><br /></td></tr>
 <tr class="separator:a3bfdfa0c4211a0130111347a12b9c8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e548976ab85b2be4a2c89a760be1df1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a6e548976ab85b2be4a2c89a760be1df1">GetTotalEnergy</a> () const</td></tr>
-<tr class="memdesc:a6e548976ab85b2be4a2c89a760be1df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the total energy drawn from the monitored PDP channels.  <a href="classfrc_1_1_power_distribution.html#a6e548976ab85b2be4a2c89a760be1df1">More...</a><br /></td></tr>
+<tr class="memdesc:a6e548976ab85b2be4a2c89a760be1df1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the total energy drawn from the monitored PDP/PDH channels.  <a href="classfrc_1_1_power_distribution.html#a6e548976ab85b2be4a2c89a760be1df1">More...</a><br /></td></tr>
 <tr class="separator:a6e548976ab85b2be4a2c89a760be1df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa86ef8194c97d6f1b01340962d41e123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#aa86ef8194c97d6f1b01340962d41e123">ResetTotalEnergy</a> ()</td></tr>
-<tr class="memdesc:aa86ef8194c97d6f1b01340962d41e123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the total energy drawn from the PDP.  <a href="classfrc_1_1_power_distribution.html#aa86ef8194c97d6f1b01340962d41e123">More...</a><br /></td></tr>
+<tr class="memdesc:aa86ef8194c97d6f1b01340962d41e123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the total energy drawn from the PDP/PDH.  <a href="classfrc_1_1_power_distribution.html#aa86ef8194c97d6f1b01340962d41e123">More...</a><br /></td></tr>
 <tr class="separator:aa86ef8194c97d6f1b01340962d41e123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a005d736bd7a325929cf9c6584b20525c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a005d736bd7a325929cf9c6584b20525c">ClearStickyFaults</a> ()</td></tr>
-<tr class="memdesc:a005d736bd7a325929cf9c6584b20525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all of the fault flags on the PDP.  <a href="classfrc_1_1_power_distribution.html#a005d736bd7a325929cf9c6584b20525c">More...</a><br /></td></tr>
+<tr class="memdesc:a005d736bd7a325929cf9c6584b20525c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all of the fault flags on the PDP/PDH.  <a href="classfrc_1_1_power_distribution.html#a005d736bd7a325929cf9c6584b20525c">More...</a><br /></td></tr>
 <tr class="separator:a005d736bd7a325929cf9c6584b20525c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf0ab6ab2077aa492e0f6137e9fb304c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#aaf0ab6ab2077aa492e0f6137e9fb304c">GetModule</a> () const</td></tr>
 <tr class="memdesc:aaf0ab6ab2077aa492e0f6137e9fb304c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets module number (<a class="el" href="classfrc_1_1_c_a_n.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID).  <a href="classfrc_1_1_power_distribution.html#aaf0ab6ab2077aa492e0f6137e9fb304c">More...</a><br /></td></tr>
 <tr class="separator:aaf0ab6ab2077aa492e0f6137e9fb304c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bae6b162882800c05c3b1e340d0e7c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">ModuleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a0bae6b162882800c05c3b1e340d0e7c3">GetType</a> () const</td></tr>
+<tr class="memdesc:a0bae6b162882800c05c3b1e340d0e7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets module type.  <a href="classfrc_1_1_power_distribution.html#a0bae6b162882800c05c3b1e340d0e7c3">More...</a><br /></td></tr>
+<tr class="separator:a0bae6b162882800c05c3b1e340d0e7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab555e8f6c84f1157a96020ad9f1a58c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#ab555e8f6c84f1157a96020ad9f1a58c4">GetSwitchableChannel</a> () const</td></tr>
+<tr class="memdesc:ab555e8f6c84f1157a96020ad9f1a58c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the PDH switchable channel is turned on or off.  <a href="classfrc_1_1_power_distribution.html#ab555e8f6c84f1157a96020ad9f1a58c4">More...</a><br /></td></tr>
 <tr class="separator:ab555e8f6c84f1157a96020ad9f1a58c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a217c4bf63b3b7102c5a963e2b7abcb8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a217c4bf63b3b7102c5a963e2b7abcb8a">SetSwitchableChannel</a> (bool enabled)</td></tr>
+<tr class="memdesc:a217c4bf63b3b7102c5a963e2b7abcb8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the PDH switchable channel on or off.  <a href="classfrc_1_1_power_distribution.html#a217c4bf63b3b7102c5a963e2b7abcb8a">More...</a><br /></td></tr>
 <tr class="separator:a217c4bf63b3b7102c5a963e2b7abcb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46440394f0210c847884307ea96d0c07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_power_distribution_1_1_version.html">Version</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_power_distribution.html#a46440394f0210c847884307ea96d0c07">GetVersion</a> () const</td></tr>
 <tr class="separator:a46440394f0210c847884307ea96d0c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,7 +245,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Class for getting voltage, current, temperature, power and energy from the <a class="el" href="classfrc_1_1_c_a_n.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> PDP. </p>
+<div class="textblock"><p >Class for getting voltage, current, temperature, power and energy from the CTRE Power Distribution Panel (PDP) or REV Power Distribution Hub (PDH). </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a3f8cf3a17c7112e56bec6ebcb44147d6" name="a3f8cf3a17c7112e56bec6ebcb44147d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f8cf3a17c7112e56bec6ebcb44147d6">&#9670;&nbsp;</a></span>ModuleType</h2>
@@ -284,8 +289,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>. </p>
-<p >Uses the default <a class="el" href="classfrc_1_1_c_a_n.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID (0 for CTRE and 1 for REV). </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CTRE Power Distribution Pa...">PowerDistribution</a> object. </p>
+<p >Detects the connected PDP/PDH using the default <a class="el" href="classfrc_1_1_c_a_n.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID (0 for CTRE and 1 for REV). </p>
 
 </div>
 </div>
@@ -315,10 +320,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>. </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_power_distribution.html" title="Class for getting voltage, current, temperature, power and energy from the CTRE Power Distribution Pa...">PowerDistribution</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">module</td><td>The <a class="el" href="classfrc_1_1_c_a_n.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID of the PDP </td></tr>
+    <tr><td class="paramname">module</td><td>The <a class="el" href="classfrc_1_1_c_a_n.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID of the PDP/PDH </td></tr>
     <tr><td class="paramname">moduleType</td><td>The type of module </td></tr>
   </table>
   </dd>
@@ -393,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Remove all of the fault flags on the PDP. </p>
+<p>Remove all of the fault flags on the PDP/PDH. </p>
 
 </div>
 </div>
@@ -413,8 +418,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Query the current of a single channel of the PDP. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current of one of the PDP channels (channels 0-15) in Amperes </dd></dl>
+<p>Query the current of a single channel of the PDP/PDH. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>the channel to query (0-15 for PDP, 0-23 for PDH) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The current of the channel in Amperes </dd></dl>
 
 </div>
 </div>
@@ -486,6 +497,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets whether the PDH switchable channel is turned on or off. </p>
+<p >Returns false with the CTRE PDP.</p>
+<dl class="section return"><dt>Returns</dt><dd>The output state of the PDH switchable channel </dd></dl>
+
 </div>
 </div>
 <a id="a089a7955e9efda65fdc566b4fe0add93" name="a089a7955e9efda65fdc566b4fe0add93"></a>
@@ -503,8 +518,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Query the temperature of the PDP. </p>
-<dl class="section return"><dt>Returns</dt><dd>The temperature of the PDP in degrees Celsius </dd></dl>
+<p>Query the temperature of the PDP/PDH. </p>
+<dl class="section return"><dt>Returns</dt><dd>The temperature in degrees Celsius </dd></dl>
 
 </div>
 </div>
@@ -523,8 +538,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Query the total current of all monitored PDP channels (0-15). </p>
-<dl class="section return"><dt>Returns</dt><dd>The the total current drawn from the PDP channels in Amperes </dd></dl>
+<p>Query the total current of all monitored PDP/PDH channels. </p>
+<dl class="section return"><dt>Returns</dt><dd>The total current drawn from all channels in Amperes </dd></dl>
 
 </div>
 </div>
@@ -543,8 +558,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Query the total energy drawn from the monitored PDP channels. </p>
-<dl class="section return"><dt>Returns</dt><dd>The the total energy drawn from the PDP channels in Joules </dd></dl>
+<p>Query the total energy drawn from the monitored PDP/PDH channels. </p>
+<dl class="section return"><dt>Returns</dt><dd>The total energy drawn in Joules </dd></dl>
 
 </div>
 </div>
@@ -563,8 +578,27 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Query the total power drawn from the monitored PDP channels. </p>
-<dl class="section return"><dt>Returns</dt><dd>The the total power drawn from the PDP channels in Watts </dd></dl>
+<p>Query the total power drawn from all monitored PDP/PDH channels. </p>
+<dl class="section return"><dt>Returns</dt><dd>The total power drawn in Watts </dd></dl>
+
+</div>
+</div>
+<a id="a0bae6b162882800c05c3b1e340d0e7c3" name="a0bae6b162882800c05c3b1e340d0e7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bae6b162882800c05c3b1e340d0e7c3">&#9670;&nbsp;</a></span>GetType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">ModuleType</a> frc::PowerDistribution::GetType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets module type. </p>
 
 </div>
 </div>
@@ -600,8 +634,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Query the input voltage of the PDP. </p>
-<dl class="section return"><dt>Returns</dt><dd>The voltage of the PDP in volts </dd></dl>
+<p>Query the input voltage of the PDP/PDH. </p>
+<dl class="section return"><dt>Returns</dt><dd>The input voltage in volts </dd></dl>
 
 </div>
 </div>
@@ -682,8 +716,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reset the total energy drawn from the PDP. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1_power_distribution.html#a6e548976ab85b2be4a2c89a760be1df1" title="Query the total energy drawn from the monitored PDP channels.">PowerDistribution::GetTotalEnergy</a> </dd></dl>
+<p>Reset the total energy drawn from the PDP/PDH. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1_power_distribution.html#a6e548976ab85b2be4a2c89a760be1df1" title="Query the total energy drawn from the monitored PDP/PDH channels.">PowerDistribution::GetTotalEnergy</a> </dd></dl>
 
 </div>
 </div>
@@ -702,6 +736,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the PDH switchable channel on or off. </p>
+<p >Does nothing with the CTRE PDP.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>Whether to turn the PDH switchable channel on or off </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -737,7 +780,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_power_distribution.html">PowerDistribution</a></li>
-    <li class="footer">Generated on Sun Jan 16 2022 04:23:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Feb 2 2022 04:48:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

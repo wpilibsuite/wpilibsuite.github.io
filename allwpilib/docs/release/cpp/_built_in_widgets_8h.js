@@ -24,6 +24,7 @@ var _built_in_widgets_8h =
       [ "kRelay", "_built_in_widgets_8h.html#aa813b05ca027557d06e5af4dea5959a7a600d5ee964479ab12510b8a6798ef1ef", null ],
       [ "kDifferentialDrive", "_built_in_widgets_8h.html#aa813b05ca027557d06e5af4dea5959a7a67d5b30ad3a5c5eba54e8ae861c7abb5", null ],
       [ "kMecanumDrive", "_built_in_widgets_8h.html#aa813b05ca027557d06e5af4dea5959a7aed9117c387ea502f789d5af6d2bedbae", null ],
-      [ "kCameraStream", "_built_in_widgets_8h.html#aa813b05ca027557d06e5af4dea5959a7af6c26edf7033b54cee905d3f4e4d228d", null ]
+      [ "kCameraStream", "_built_in_widgets_8h.html#aa813b05ca027557d06e5af4dea5959a7af6c26edf7033b54cee905d3f4e4d228d", null ],
+      [ "kField", "_built_in_widgets_8h.html#aa813b05ca027557d06e5af4dea5959a7a7be01c1ae587bb8938b2097146b0499f", null ]
     ] ]
 ];

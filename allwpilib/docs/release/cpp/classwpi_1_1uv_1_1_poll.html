@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.2.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acad3bb9b01719fbb60f204af5d16fbd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#acad3bb9b01719fbb60f204af5d16fbd3">Reuse</a> (int fd, std::function&lt; void()&gt; callback)</td></tr>
 <tr class="memdesc:acad3bb9b01719fbb60f204af5d16fbd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reuse this handle.  <a href="classwpi_1_1uv_1_1_poll.html#acad3bb9b01719fbb60f204af5d16fbd3">More...</a><br /></td></tr>
 <tr class="separator:acad3bb9b01719fbb60f204af5d16fbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a738c9ffab912692235348f1c03d0f3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#a738c9ffab912692235348f1c03d0f3f2">ReuseSocket</a> (<a class="el" href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a> sock, std::function&lt; void()&gt; callback)</td></tr>
+<tr class="memitem:a738c9ffab912692235348f1c03d0f3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#a738c9ffab912692235348f1c03d0f3f2">ReuseSocket</a> (<a class="el" href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a> sock, std::function&lt; void()&gt; callback)</td></tr>
 <tr class="memdesc:a738c9ffab912692235348f1c03d0f3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reuse this handle.  <a href="classwpi_1_1uv_1_1_poll.html#a738c9ffab912692235348f1c03d0f3f2">More...</a><br /></td></tr>
 <tr class="separator:a738c9ffab912692235348f1c03d0f3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a395e1e6865729f009287dee0edeb19e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#a395e1e6865729f009287dee0edeb19e4">Start</a> (int events)</td></tr>
@@ -220,10 +220,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4227cc36db573c32e93e6ce39aeade7"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_poll.html">Poll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#ab4227cc36db573c32e93e6ce39aeade7">Create</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, int fd)</td></tr>
 <tr class="memdesc:ab4227cc36db573c32e93e6ce39aeade7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll handle using a file descriptor.  <a href="classwpi_1_1uv_1_1_poll.html#ab4227cc36db573c32e93e6ce39aeade7">More...</a><br /></td></tr>
 <tr class="separator:ab4227cc36db573c32e93e6ce39aeade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a584b5a23bcffb0df2c7b1a72a50f3e1d"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_poll.html">Poll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#a584b5a23bcffb0df2c7b1a72a50f3e1d">CreateSocket</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &amp;loop, <a class="el" href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a> sock)</td></tr>
+<tr class="memitem:a584b5a23bcffb0df2c7b1a72a50f3e1d"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_poll.html">Poll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#a584b5a23bcffb0df2c7b1a72a50f3e1d">CreateSocket</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &amp;loop, <a class="el" href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a> sock)</td></tr>
 <tr class="memdesc:a584b5a23bcffb0df2c7b1a72a50f3e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll handle using a socket descriptor.  <a href="classwpi_1_1uv_1_1_poll.html#a584b5a23bcffb0df2c7b1a72a50f3e1d">More...</a><br /></td></tr>
 <tr class="separator:a584b5a23bcffb0df2c7b1a72a50f3e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c3ff495b8d0a29539739de772565bc"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_poll.html">Poll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#aa7c3ff495b8d0a29539739de772565bc">CreateSocket</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, <a class="el" href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a> sock)</td></tr>
+<tr class="memitem:aa7c3ff495b8d0a29539739de772565bc"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_poll.html">Poll</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_poll.html#aa7c3ff495b8d0a29539739de772565bc">CreateSocket</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, <a class="el" href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a> sock)</td></tr>
 <tr class="memdesc:aa7c3ff495b8d0a29539739de772565bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a poll handle using a socket descriptor.  <a href="classwpi_1_1uv_1_1_poll.html#aa7c3ff495b8d0a29539739de772565bc">More...</a><br /></td></tr>
 <tr class="separator:aa7c3ff495b8d0a29539739de772565bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -429,7 +429,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a>&#160;</td>
           <td class="paramname"><em>sock</em>&#160;</td>
         </tr>
         <tr>
@@ -474,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a>&#160;</td>
           <td class="paramname"><em>sock</em>&#160;</td>
         </tr>
         <tr>
@@ -548,7 +548,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void wpi::uv::Poll::ReuseSocket </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a>&#160;</td>
           <td class="paramname"><em>sock</em>, </td>
         </tr>
         <tr>
@@ -656,7 +656,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1uv.html">uv</a></li><li class="navelem"><a class="el" href="classwpi_1_1uv_1_1_poll.html">Poll</a></li>
-    <li class="footer">Generated on Sun Jan 16 2022 04:23:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Feb 2 2022 04:48:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

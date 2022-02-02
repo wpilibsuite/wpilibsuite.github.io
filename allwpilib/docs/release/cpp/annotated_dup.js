@@ -1787,6 +1787,7 @@ var annotated_dup =
         [ "BuiltInAccelerometerSim", "classfrc_1_1sim_1_1_built_in_accelerometer_sim.html", "classfrc_1_1sim_1_1_built_in_accelerometer_sim" ],
         [ "CallbackStore", "classfrc_1_1sim_1_1_callback_store.html", "classfrc_1_1sim_1_1_callback_store" ],
         [ "CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim" ],
+        [ "DCMotorSim", "classfrc_1_1sim_1_1_d_c_motor_sim.html", "classfrc_1_1sim_1_1_d_c_motor_sim" ],
         [ "DifferentialDrivetrainSim", "classfrc_1_1sim_1_1_differential_drivetrain_sim.html", "classfrc_1_1sim_1_1_differential_drivetrain_sim" ],
         [ "DigitalPWMSim", "classfrc_1_1sim_1_1_digital_p_w_m_sim.html", "classfrc_1_1sim_1_1_digital_p_w_m_sim" ],
         [ "DIOSim", "classfrc_1_1sim_1_1_d_i_o_sim.html", "classfrc_1_1sim_1_1_d_i_o_sim" ],

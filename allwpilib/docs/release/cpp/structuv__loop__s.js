@@ -1,7 +1,7 @@
 var structuv__loop__s =
 [
     [ "active_handles", "structuv__loop__s.html#ad864cd44352250a9fae85ae654a4f2e4", null ],
-    [ "active_reqs", "structuv__loop__s.html#ae32dfb4fb497ca421a1da79bd0a883c2", null ],
+    [ "active_reqs", "structuv__loop__s.html#a0a09562ed7990133656555a6633c9dec", null ],
     [ "count", "structuv__loop__s.html#ac1f276ba649f8ee990583c4f18676b84", null ],
     [ "data", "structuv__loop__s.html#aaeef0f8d2c764e9919504f76cdc13df1", null ],
     [ "handle_queue", "structuv__loop__s.html#ab2fa25cbe860d335878ac7236efe91bc", null ],

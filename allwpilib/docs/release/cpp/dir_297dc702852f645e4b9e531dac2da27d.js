@@ -43,6 +43,9 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "CTREPCMSim.h", "_c_t_r_e_p_c_m_sim_8h.html", [
       [ "frc::sim::CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim" ]
     ] ],
+    [ "DCMotorSim.h", "_d_c_motor_sim_8h.html", [
+      [ "frc::sim::DCMotorSim", "classfrc_1_1sim_1_1_d_c_motor_sim.html", "classfrc_1_1sim_1_1_d_c_motor_sim" ]
+    ] ],
     [ "DifferentialDrivetrainSim.h", "_differential_drivetrain_sim_8h.html", [
       [ "frc::sim::DifferentialDrivetrainSim", "classfrc_1_1sim_1_1_differential_drivetrain_sim.html", "classfrc_1_1sim_1_1_differential_drivetrain_sim" ],
       [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_state.html", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_state" ],
