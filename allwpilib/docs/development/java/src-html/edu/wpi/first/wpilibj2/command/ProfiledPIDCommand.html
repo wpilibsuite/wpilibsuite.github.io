@@ -54,10 +54,10 @@
 <span class="sourceLineNo">042</span><a id="line.42">      Supplier&lt;State&gt; goalSource,</a>
 <span class="sourceLineNo">043</span><a id="line.43">      BiConsumer&lt;Double, State&gt; useOutput,</a>
 <span class="sourceLineNo">044</span><a id="line.44">      Subsystem... requirements) {</a>
-<span class="sourceLineNo">045</span><a id="line.45">    requireNonNullParam(controller, "controller", "SynchronousPIDCommand");</a>
-<span class="sourceLineNo">046</span><a id="line.46">    requireNonNullParam(measurementSource, "measurementSource", "SynchronousPIDCommand");</a>
-<span class="sourceLineNo">047</span><a id="line.47">    requireNonNullParam(goalSource, "goalSource", "SynchronousPIDCommand");</a>
-<span class="sourceLineNo">048</span><a id="line.48">    requireNonNullParam(useOutput, "useOutput", "SynchronousPIDCommand");</a>
+<span class="sourceLineNo">045</span><a id="line.45">    requireNonNullParam(controller, "controller", "ProfiledPIDCommand");</a>
+<span class="sourceLineNo">046</span><a id="line.46">    requireNonNullParam(measurementSource, "measurementSource", "ProfiledPIDCommand");</a>
+<span class="sourceLineNo">047</span><a id="line.47">    requireNonNullParam(goalSource, "goalSource", "ProfiledPIDCommand");</a>
+<span class="sourceLineNo">048</span><a id="line.48">    requireNonNullParam(useOutput, "useOutput", "ProfiledPIDCommand");</a>
 <span class="sourceLineNo">049</span><a id="line.49"></a>
 <span class="sourceLineNo">050</span><a id="line.50">    m_controller = controller;</a>
 <span class="sourceLineNo">051</span><a id="line.51">    m_useOutput = useOutput;</a>
