@@ -292,9 +292,9 @@
 <span class="sourceLineNo">280</span><a id="line.280"></a>
 <span class="sourceLineNo">281</span><a id="line.281">    double maxInput = Math.copySign(Math.max(Math.abs(xSpeed), Math.abs(zRotation)), xSpeed);</a>
 <span class="sourceLineNo">282</span><a id="line.282"></a>
-<span class="sourceLineNo">283</span><a id="line.283">    if (xSpeed &gt;= 0.0) {</a>
+<span class="sourceLineNo">283</span><a id="line.283">    if (Double.compare(xSpeed, 0.0) &gt;= 0) {</a>
 <span class="sourceLineNo">284</span><a id="line.284">      // First quadrant, else second quadrant</a>
-<span class="sourceLineNo">285</span><a id="line.285">      if (zRotation &gt;= 0.0) {</a>
+<span class="sourceLineNo">285</span><a id="line.285">      if (Double.compare(zRotation, 0.0) &gt;= 0) {</a>
 <span class="sourceLineNo">286</span><a id="line.286">        leftSpeed = maxInput;</a>
 <span class="sourceLineNo">287</span><a id="line.287">        rightSpeed = xSpeed - zRotation;</a>
 <span class="sourceLineNo">288</span><a id="line.288">      } else {</a>
@@ -303,7 +303,7 @@
 <span class="sourceLineNo">291</span><a id="line.291">      }</a>
 <span class="sourceLineNo">292</span><a id="line.292">    } else {</a>
 <span class="sourceLineNo">293</span><a id="line.293">      // Third quadrant, else fourth quadrant</a>
-<span class="sourceLineNo">294</span><a id="line.294">      if (zRotation &gt;= 0.0) {</a>
+<span class="sourceLineNo">294</span><a id="line.294">      if (Double.compare(zRotation, 0.0) &gt;= 0) {</a>
 <span class="sourceLineNo">295</span><a id="line.295">        leftSpeed = xSpeed + zRotation;</a>
 <span class="sourceLineNo">296</span><a id="line.296">        rightSpeed = maxInput;</a>
 <span class="sourceLineNo">297</span><a id="line.297">      } else {</a>

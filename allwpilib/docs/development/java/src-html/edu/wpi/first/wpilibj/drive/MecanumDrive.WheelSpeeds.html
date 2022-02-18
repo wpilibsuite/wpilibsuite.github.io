@@ -231,67 +231,84 @@
 <span class="sourceLineNo">219</span><a id="line.219">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Right is positive.</a>
 <span class="sourceLineNo">220</span><a id="line.220">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
 <span class="sourceLineNo">221</span><a id="line.221">   *     positive.</a>
-<span class="sourceLineNo">222</span><a id="line.222">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
-<span class="sourceLineNo">223</span><a id="line.223">   *     to implement field-oriented controls.</a>
-<span class="sourceLineNo">224</span><a id="line.224">   * @return Wheel speeds [-1.0..1.0].</a>
-<span class="sourceLineNo">225</span><a id="line.225">   */</a>
-<span class="sourceLineNo">226</span><a id="line.226">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">227</span><a id="line.227">  public static WheelSpeeds driveCartesianIK(</a>
-<span class="sourceLineNo">228</span><a id="line.228">      double ySpeed, double xSpeed, double zRotation, double gyroAngle) {</a>
-<span class="sourceLineNo">229</span><a id="line.229">    ySpeed = MathUtil.clamp(ySpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">230</span><a id="line.230">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">231</span><a id="line.231"></a>
-<span class="sourceLineNo">232</span><a id="line.232">    // Compensate for gyro angle.</a>
-<span class="sourceLineNo">233</span><a id="line.233">    Vector2d input = new Vector2d(ySpeed, xSpeed);</a>
-<span class="sourceLineNo">234</span><a id="line.234">    input.rotate(-gyroAngle);</a>
-<span class="sourceLineNo">235</span><a id="line.235"></a>
-<span class="sourceLineNo">236</span><a id="line.236">    double[] wheelSpeeds = new double[4];</a>
-<span class="sourceLineNo">237</span><a id="line.237">    wheelSpeeds[MotorType.kFrontLeft.value] = input.x + input.y + zRotation;</a>
-<span class="sourceLineNo">238</span><a id="line.238">    wheelSpeeds[MotorType.kFrontRight.value] = input.x - input.y - zRotation;</a>
-<span class="sourceLineNo">239</span><a id="line.239">    wheelSpeeds[MotorType.kRearLeft.value] = input.x - input.y + zRotation;</a>
-<span class="sourceLineNo">240</span><a id="line.240">    wheelSpeeds[MotorType.kRearRight.value] = input.x + input.y - zRotation;</a>
-<span class="sourceLineNo">241</span><a id="line.241"></a>
-<span class="sourceLineNo">242</span><a id="line.242">    normalize(wheelSpeeds);</a>
-<span class="sourceLineNo">243</span><a id="line.243"></a>
-<span class="sourceLineNo">244</span><a id="line.244">    return new WheelSpeeds(</a>
-<span class="sourceLineNo">245</span><a id="line.245">        wheelSpeeds[MotorType.kFrontLeft.value],</a>
-<span class="sourceLineNo">246</span><a id="line.246">        wheelSpeeds[MotorType.kFrontRight.value],</a>
-<span class="sourceLineNo">247</span><a id="line.247">        wheelSpeeds[MotorType.kRearLeft.value],</a>
-<span class="sourceLineNo">248</span><a id="line.248">        wheelSpeeds[MotorType.kRearRight.value]);</a>
-<span class="sourceLineNo">249</span><a id="line.249">  }</a>
-<span class="sourceLineNo">250</span><a id="line.250"></a>
-<span class="sourceLineNo">251</span><a id="line.251">  @Override</a>
-<span class="sourceLineNo">252</span><a id="line.252">  public void stopMotor() {</a>
-<span class="sourceLineNo">253</span><a id="line.253">    m_frontLeftMotor.stopMotor();</a>
-<span class="sourceLineNo">254</span><a id="line.254">    m_frontRightMotor.stopMotor();</a>
-<span class="sourceLineNo">255</span><a id="line.255">    m_rearLeftMotor.stopMotor();</a>
-<span class="sourceLineNo">256</span><a id="line.256">    m_rearRightMotor.stopMotor();</a>
-<span class="sourceLineNo">257</span><a id="line.257">    feed();</a>
-<span class="sourceLineNo">258</span><a id="line.258">  }</a>
-<span class="sourceLineNo">259</span><a id="line.259"></a>
-<span class="sourceLineNo">260</span><a id="line.260">  @Override</a>
-<span class="sourceLineNo">261</span><a id="line.261">  public String getDescription() {</a>
-<span class="sourceLineNo">262</span><a id="line.262">    return "MecanumDrive";</a>
-<span class="sourceLineNo">263</span><a id="line.263">  }</a>
-<span class="sourceLineNo">264</span><a id="line.264"></a>
-<span class="sourceLineNo">265</span><a id="line.265">  @Override</a>
-<span class="sourceLineNo">266</span><a id="line.266">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">267</span><a id="line.267">    builder.setSmartDashboardType("MecanumDrive");</a>
-<span class="sourceLineNo">268</span><a id="line.268">    builder.setActuator(true);</a>
-<span class="sourceLineNo">269</span><a id="line.269">    builder.setSafeState(this::stopMotor);</a>
-<span class="sourceLineNo">270</span><a id="line.270">    builder.addDoubleProperty(</a>
-<span class="sourceLineNo">271</span><a id="line.271">        "Front Left Motor Speed", m_frontLeftMotor::get, m_frontLeftMotor::set);</a>
-<span class="sourceLineNo">272</span><a id="line.272">    builder.addDoubleProperty(</a>
-<span class="sourceLineNo">273</span><a id="line.273">        "Front Right Motor Speed",</a>
-<span class="sourceLineNo">274</span><a id="line.274">        () -&gt; m_frontRightMotor.get(),</a>
-<span class="sourceLineNo">275</span><a id="line.275">        value -&gt; m_frontRightMotor.set(value));</a>
-<span class="sourceLineNo">276</span><a id="line.276">    builder.addDoubleProperty("Rear Left Motor Speed", m_rearLeftMotor::get, m_rearLeftMotor::set);</a>
-<span class="sourceLineNo">277</span><a id="line.277">    builder.addDoubleProperty(</a>
-<span class="sourceLineNo">278</span><a id="line.278">        "Rear Right Motor Speed",</a>
-<span class="sourceLineNo">279</span><a id="line.279">        () -&gt; m_rearRightMotor.get(),</a>
-<span class="sourceLineNo">280</span><a id="line.280">        value -&gt; m_rearRightMotor.set(value));</a>
-<span class="sourceLineNo">281</span><a id="line.281">  }</a>
-<span class="sourceLineNo">282</span><a id="line.282">}</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * @return Wheel speeds [-1.0..1.0].</a>
+<span class="sourceLineNo">223</span><a id="line.223">   */</a>
+<span class="sourceLineNo">224</span><a id="line.224">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">225</span><a id="line.225">  public static WheelSpeeds driveCartesianIK(double ySpeed, double xSpeed, double zRotation) {</a>
+<span class="sourceLineNo">226</span><a id="line.226">    return driveCartesianIK(ySpeed, xSpeed, zRotation, 0.0);</a>
+<span class="sourceLineNo">227</span><a id="line.227">  }</a>
+<span class="sourceLineNo">228</span><a id="line.228"></a>
+<span class="sourceLineNo">229</span><a id="line.229">  /**</a>
+<span class="sourceLineNo">230</span><a id="line.230">   * Cartesian inverse kinematics for Mecanum platform.</a>
+<span class="sourceLineNo">231</span><a id="line.231">   *</a>
+<span class="sourceLineNo">232</span><a id="line.232">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
+<span class="sourceLineNo">233</span><a id="line.233">   * from its angle or rotation rate.</a>
+<span class="sourceLineNo">234</span><a id="line.234">   *</a>
+<span class="sourceLineNo">235</span><a id="line.235">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">236</span><a id="line.236">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Right is positive.</a>
+<span class="sourceLineNo">237</span><a id="line.237">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">238</span><a id="line.238">   *     positive.</a>
+<span class="sourceLineNo">239</span><a id="line.239">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
+<span class="sourceLineNo">240</span><a id="line.240">   *     to implement field-oriented controls.</a>
+<span class="sourceLineNo">241</span><a id="line.241">   * @return Wheel speeds [-1.0..1.0].</a>
+<span class="sourceLineNo">242</span><a id="line.242">   */</a>
+<span class="sourceLineNo">243</span><a id="line.243">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">244</span><a id="line.244">  public static WheelSpeeds driveCartesianIK(</a>
+<span class="sourceLineNo">245</span><a id="line.245">      double ySpeed, double xSpeed, double zRotation, double gyroAngle) {</a>
+<span class="sourceLineNo">246</span><a id="line.246">    ySpeed = MathUtil.clamp(ySpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">247</span><a id="line.247">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">248</span><a id="line.248"></a>
+<span class="sourceLineNo">249</span><a id="line.249">    // Compensate for gyro angle.</a>
+<span class="sourceLineNo">250</span><a id="line.250">    Vector2d input = new Vector2d(ySpeed, xSpeed);</a>
+<span class="sourceLineNo">251</span><a id="line.251">    input.rotate(-gyroAngle);</a>
+<span class="sourceLineNo">252</span><a id="line.252"></a>
+<span class="sourceLineNo">253</span><a id="line.253">    double[] wheelSpeeds = new double[4];</a>
+<span class="sourceLineNo">254</span><a id="line.254">    wheelSpeeds[MotorType.kFrontLeft.value] = input.x + input.y + zRotation;</a>
+<span class="sourceLineNo">255</span><a id="line.255">    wheelSpeeds[MotorType.kFrontRight.value] = input.x - input.y - zRotation;</a>
+<span class="sourceLineNo">256</span><a id="line.256">    wheelSpeeds[MotorType.kRearLeft.value] = input.x - input.y + zRotation;</a>
+<span class="sourceLineNo">257</span><a id="line.257">    wheelSpeeds[MotorType.kRearRight.value] = input.x + input.y - zRotation;</a>
+<span class="sourceLineNo">258</span><a id="line.258"></a>
+<span class="sourceLineNo">259</span><a id="line.259">    normalize(wheelSpeeds);</a>
+<span class="sourceLineNo">260</span><a id="line.260"></a>
+<span class="sourceLineNo">261</span><a id="line.261">    return new WheelSpeeds(</a>
+<span class="sourceLineNo">262</span><a id="line.262">        wheelSpeeds[MotorType.kFrontLeft.value],</a>
+<span class="sourceLineNo">263</span><a id="line.263">        wheelSpeeds[MotorType.kFrontRight.value],</a>
+<span class="sourceLineNo">264</span><a id="line.264">        wheelSpeeds[MotorType.kRearLeft.value],</a>
+<span class="sourceLineNo">265</span><a id="line.265">        wheelSpeeds[MotorType.kRearRight.value]);</a>
+<span class="sourceLineNo">266</span><a id="line.266">  }</a>
+<span class="sourceLineNo">267</span><a id="line.267"></a>
+<span class="sourceLineNo">268</span><a id="line.268">  @Override</a>
+<span class="sourceLineNo">269</span><a id="line.269">  public void stopMotor() {</a>
+<span class="sourceLineNo">270</span><a id="line.270">    m_frontLeftMotor.stopMotor();</a>
+<span class="sourceLineNo">271</span><a id="line.271">    m_frontRightMotor.stopMotor();</a>
+<span class="sourceLineNo">272</span><a id="line.272">    m_rearLeftMotor.stopMotor();</a>
+<span class="sourceLineNo">273</span><a id="line.273">    m_rearRightMotor.stopMotor();</a>
+<span class="sourceLineNo">274</span><a id="line.274">    feed();</a>
+<span class="sourceLineNo">275</span><a id="line.275">  }</a>
+<span class="sourceLineNo">276</span><a id="line.276"></a>
+<span class="sourceLineNo">277</span><a id="line.277">  @Override</a>
+<span class="sourceLineNo">278</span><a id="line.278">  public String getDescription() {</a>
+<span class="sourceLineNo">279</span><a id="line.279">    return "MecanumDrive";</a>
+<span class="sourceLineNo">280</span><a id="line.280">  }</a>
+<span class="sourceLineNo">281</span><a id="line.281"></a>
+<span class="sourceLineNo">282</span><a id="line.282">  @Override</a>
+<span class="sourceLineNo">283</span><a id="line.283">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">284</span><a id="line.284">    builder.setSmartDashboardType("MecanumDrive");</a>
+<span class="sourceLineNo">285</span><a id="line.285">    builder.setActuator(true);</a>
+<span class="sourceLineNo">286</span><a id="line.286">    builder.setSafeState(this::stopMotor);</a>
+<span class="sourceLineNo">287</span><a id="line.287">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">288</span><a id="line.288">        "Front Left Motor Speed", m_frontLeftMotor::get, m_frontLeftMotor::set);</a>
+<span class="sourceLineNo">289</span><a id="line.289">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">290</span><a id="line.290">        "Front Right Motor Speed",</a>
+<span class="sourceLineNo">291</span><a id="line.291">        () -&gt; m_frontRightMotor.get(),</a>
+<span class="sourceLineNo">292</span><a id="line.292">        value -&gt; m_frontRightMotor.set(value));</a>
+<span class="sourceLineNo">293</span><a id="line.293">    builder.addDoubleProperty("Rear Left Motor Speed", m_rearLeftMotor::get, m_rearLeftMotor::set);</a>
+<span class="sourceLineNo">294</span><a id="line.294">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">295</span><a id="line.295">        "Rear Right Motor Speed",</a>
+<span class="sourceLineNo">296</span><a id="line.296">        () -&gt; m_rearRightMotor.get(),</a>
+<span class="sourceLineNo">297</span><a id="line.297">        value -&gt; m_rearRightMotor.set(value));</a>
+<span class="sourceLineNo">298</span><a id="line.298">  }</a>
+<span class="sourceLineNo">299</span><a id="line.299">}</a>
 
 
 
