@@ -1,5 +1,6 @@
 var NAVTREEINDEX132 =
 {
+"namespacewpi.html#a0505b5d13f504fa6069411cb2fdbddaf":[4,0,20,439],
 "namespacewpi.html#a051a613a70381a8d15a4ed7630bfd942":[4,0,20,258],
 "namespacewpi.html#a08d89324acbf36872064573065959d20":[4,0,20,408],
 "namespacewpi.html#a096e48bf0264a255eb2ff954146cc85b":[4,0,20,467],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "namespacewpi.html#ac32a7896ab3ee6b24926527703eabade":[4,0,20,445],
 "namespacewpi.html#ac503c8c47490fca90512a88b23b65358":[4,0,20,228],
 "namespacewpi.html#ac54c2f26ecf324df5da9128c77052d31":[4,0,20,252],
-"namespacewpi.html#ac654fbccde78931efbd96a33a8af5726":[4,0,20,201],
-"namespacewpi.html#ac792221430e4bf80c1b31493afd90bfe":[4,0,20,207]
+"namespacewpi.html#ac654fbccde78931efbd96a33a8af5726":[4,0,20,201]
 };

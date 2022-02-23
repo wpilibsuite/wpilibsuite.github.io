@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1-29-ge4b9100</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1-30-gf88c435</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,9 @@ $(document).ready(function(){initNavTree('_mock_hooks_8h_source.html',''); initR
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_typedef" href="_mock_hooks_8h.html#aa0ba707a7884888d2722bb29ae3d4931">HALSIM_SimPeriodicCallback</a> callback, <span class="keywordtype">void</span>* param);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_mock_hooks_8h.html#ae17c3b9843c68b32c8218938ea9e14aa">   37</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_mock_hooks_8h.html#ae17c3b9843c68b32c8218938ea9e14aa">HALSIM_CancelSimPeriodicAfterCallback</a>(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> uid);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="_mock_hooks_8h.html#ae2b6076c6710b37f6fa89ce7654bc9de">   39</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_mock_hooks_8h.html#ae2b6076c6710b37f6fa89ce7654bc9de">HALSIM_CancelAllSimPeriodicCallbacks</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}  <span class="comment">// extern &quot;C&quot;</span></div>
 <div class="ttc" id="a_h_a_l_base_8h_html"><div class="ttname"><a href="_h_a_l_base_8h.html">HALBase.h</a></div></div>
 <div class="ttc" id="a_mock_hooks_8h_html_a00476d77d12a0bc51e5cc3d13da4a347"><div class="ttname"><a href="_mock_hooks_8h.html#a00476d77d12a0bc51e5cc3d13da4a347">HALSIM_SendConsoleLineHandler</a></div><div class="ttdeci">int32_t(* HALSIM_SendConsoleLineHandler)(const char *line)</div><div class="ttdef"><b>Definition:</b> MockHooks.h:27</div></div>
 <div class="ttc" id="a_mock_hooks_8h_html_a05941019c795c73f9c840c40d4da5a06"><div class="ttname"><a href="_mock_hooks_8h.html#a05941019c795c73f9c840c40d4da5a06">HALSIM_StepTiming</a></div><div class="ttdeci">void HALSIM_StepTiming(uint64_t delta)</div></div>
@@ -150,6 +152,7 @@ $(document).ready(function(){initNavTree('_mock_hooks_8h_source.html',''); initR
 <div class="ttc" id="a_mock_hooks_8h_html_a96729aea2f66728ce9bcaead3fbbaee3"><div class="ttname"><a href="_mock_hooks_8h.html#a96729aea2f66728ce9bcaead3fbbaee3">HALSIM_ResumeTiming</a></div><div class="ttdeci">void HALSIM_ResumeTiming(void)</div></div>
 <div class="ttc" id="a_mock_hooks_8h_html_aa0ba707a7884888d2722bb29ae3d4931"><div class="ttname"><a href="_mock_hooks_8h.html#aa0ba707a7884888d2722bb29ae3d4931">HALSIM_SimPeriodicCallback</a></div><div class="ttdeci">void(* HALSIM_SimPeriodicCallback)(void *param)</div><div class="ttdef"><b>Definition:</b> MockHooks.h:30</div></div>
 <div class="ttc" id="a_mock_hooks_8h_html_ae17c3b9843c68b32c8218938ea9e14aa"><div class="ttname"><a href="_mock_hooks_8h.html#ae17c3b9843c68b32c8218938ea9e14aa">HALSIM_CancelSimPeriodicAfterCallback</a></div><div class="ttdeci">void HALSIM_CancelSimPeriodicAfterCallback(int32_t uid)</div></div>
+<div class="ttc" id="a_mock_hooks_8h_html_ae2b6076c6710b37f6fa89ce7654bc9de"><div class="ttname"><a href="_mock_hooks_8h.html#ae2b6076c6710b37f6fa89ce7654bc9de">HALSIM_CancelAllSimPeriodicCallbacks</a></div><div class="ttdeci">void HALSIM_CancelAllSimPeriodicCallbacks(void)</div></div>
 <div class="ttc" id="a_mock_hooks_8h_html_ae407944ee20832bb2015566583bec117"><div class="ttname"><a href="_mock_hooks_8h.html#ae407944ee20832bb2015566583bec117">HALSIM_PauseTiming</a></div><div class="ttdeci">void HALSIM_PauseTiming(void)</div></div>
 <div class="ttc" id="a_mock_hooks_8h_html_ae860f367ab877285fd32f80c15b995f4"><div class="ttname"><a href="_mock_hooks_8h.html#ae860f367ab877285fd32f80c15b995f4">HALSIM_RegisterSimPeriodicAfterCallback</a></div><div class="ttdeci">int32_t HALSIM_RegisterSimPeriodicAfterCallback(HALSIM_SimPeriodicCallback callback, void *param)</div></div>
 <div class="ttc" id="a_mock_hooks_8h_html_af185834ce258a6557b487f2aa6b473a2"><div class="ttname"><a href="_mock_hooks_8h.html#af185834ce258a6557b487f2aa6b473a2">HALSIM_SendErrorHandler</a></div><div class="ttdeci">int32_t(* HALSIM_SendErrorHandler)(HAL_Bool isError, int32_t errorCode, HAL_Bool isLVCode, const char *details, const char *location, const char *callStack, HAL_Bool printMsg)</div><div class="ttdef"><b>Definition:</b> MockHooks.h:22</div></div>
@@ -165,7 +168,7 @@ $(document).ready(function(){initNavTree('_mock_hooks_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_03b7d37b9dc08ca478f4c25141f731ae.html">simulation</a></li><li class="navelem"><a class="el" href="_mock_hooks_8h.html">MockHooks.h</a></li>
-    <li class="footer">Generated on Tue Feb 22 2022 17:29:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Feb 23 2022 17:49:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

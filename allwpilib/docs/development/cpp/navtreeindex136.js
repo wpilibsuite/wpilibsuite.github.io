@@ -1,5 +1,6 @@
 var NAVTREEINDEX136 =
 {
+"struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html#a42dbbe162affc9b2f2d4a143d7070a94":[3,28,26,3,0],
 "struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html#ad0d0f7a06c69ccea87a0ec5c397d8ec5":[3,28,26,3,1],
 "struct_eigen_1_1_matrix_exponential_return_value.html":[3,31,2],
 "struct_eigen_1_1_matrix_exponential_return_value.html#a3dd2c65c7c6cdc41ab17415ee11899a0":[3,31,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX136 =
 "struct_eigen_1_1half.html":[5,0,4,78],
 "struct_eigen_1_1half.html":[4,0,7,81],
 "struct_eigen_1_1half.html#a128c010ae7f6f974d57f2f8fcabff25a":[4,0,7,81,0],
-"struct_eigen_1_1half.html#a128c010ae7f6f974d57f2f8fcabff25a":[5,0,4,78,0],
-"struct_eigen_1_1half.html#a17384583ab989a4685921bb02d92b90a":[4,0,7,81,6]
+"struct_eigen_1_1half.html#a128c010ae7f6f974d57f2f8fcabff25a":[5,0,4,78,0]
 };

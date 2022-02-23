@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"struct_eigen_1_1half.html#a17384583ab989a4685921bb02d92b90a":[4,0,7,81,6],
 "struct_eigen_1_1half.html#a17384583ab989a4685921bb02d92b90a":[5,0,4,78,6],
 "struct_eigen_1_1half.html#a27e910e3aa8ed0f69890e8e3f949b652":[4,0,7,81,1],
 "struct_eigen_1_1half.html#a27e910e3aa8ed0f69890e8e3f949b652":[5,0,4,78,1],
@@ -97,8 +98,8 @@ var NAVTREEINDEX137 =
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01152e807df0d83cf57bdf33fb42d1d87d.html":[5,0,4,2,65],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01152e807df0d83cf57bdf33fb42d1d87d.html#a9370383707f2c9f59467bb0256e1beef":[5,0,4,2,65,1],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01152e807df0d83cf57bdf33fb42d1d87d.html#a9370383707f2c9f59467bb0256e1beef":[4,0,7,4,67,1],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01152e807df0d83cf57bdf33fb42d1d87d.html#aaa296ef17ca0ac8a53b602b94f2d69b2":[4,0,7,4,67,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01152e807df0d83cf57bdf33fb42d1d87d.html#aaa296ef17ca0ac8a53b602b94f2d69b2":[5,0,4,2,65,0],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01152e807df0d83cf57bdf33fb42d1d87d.html#aaa296ef17ca0ac8a53b602b94f2d69b2":[4,0,7,4,67,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_0193a1d113168a246bb6cb34430a4d0595.html":[5,0,4,2,61],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_0193a1d113168a246bb6cb34430a4d0595.html":[4,0,7,4,63],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_0193a1d113168a246bb6cb34430a4d0595.html#a5a4f87a4c03524b1caca94cde6e215ae":[5,0,4,2,61,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html":[3,29,0],
 "struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html#a07f618acb4fada7e8d4017d7e341f4ec":[3,29,0,2],
 "struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html#a2106e3e1d3cbf5699f5a1f41ea01f802":[3,29,0,1],
-"struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html#a33656ee221422a3800edf363c72994d4":[3,29,0,7],
-"struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html#a3518abc98f07cff4e7a3c7b38f226d9e":[3,29,0,8]
+"struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html#a33656ee221422a3800edf363c72994d4":[3,29,0,7]
 };

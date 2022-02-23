@@ -1,5 +1,6 @@
 var NAVTREEINDEX141 =
 {
+"struct_eigen_1_1internal_1_1cast__return__type.html#abb3bfd8d86545d08e7b239b2ec116632":[5,0,4,2,130,3],
 "struct_eigen_1_1internal_1_1cast__return__type.html#abb3bfd8d86545d08e7b239b2ec116632":[4,0,7,4,132,3],
 "struct_eigen_1_1internal_1_1check__rows__cols__for__overflow.html":[4,0,7,4,133],
 "struct_eigen_1_1internal_1_1check__rows__cols__for__overflow.html":[5,0,4,2,131],
@@ -248,6 +249,5 @@ var NAVTREEINDEX141 =
 "struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___inner_unrolling.html":[4,0,7,4,189],
 "struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___inner_unrolling.html":[5,0,4,2,187],
 "struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___inner_unrolling.html#a4a3241ab24ef97eec46891b1488eb31e":[4,0,7,4,189,0],
-"struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___inner_unrolling.html#a4a3241ab24ef97eec46891b1488eb31e":[5,0,4,2,187,0],
-"struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___inner_unrolling_3_01_kernel_00_01_stop_00_01_stop_01_4.html":[4,0,7,4,190]
+"struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___inner_unrolling.html#a4a3241ab24ef97eec46891b1488eb31e":[5,0,4,2,187,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX166 =
 {
+"struct_w_p_i___service_data.html#adbbc86dcf18d0f0472ed8b49ff225bda":[5,0,269,3],
 "struct_w_p_i___service_data.html#ae83b73f29f3839c0e6fa84614ab1d98c":[5,0,269,2],
 "structansi__color__escape.html":[5,0,17],
 "structansi__color__escape.html#a40755e81fc7f91e684b0de86015730e7":[5,0,17,4],
@@ -54,8 +55,8 @@ var NAVTREEINDEX166 =
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[5,0,23,6],
 "structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,23,40],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,15],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,14],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,13],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,23,14],
 "structarg__mapper.html#ab0ca23b1107e95c90038a32db2611dd6":[5,0,23,16],
 "structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16":[5,0,23,42],
 "structarg__mapper.html#aba49e677ad2ec1ce1e49fb888a6df858":[5,0,23,38],
@@ -248,6 +249,5 @@ var NAVTREEINDEX166 =
 "structcustom__formatter.html":[5,0,61],
 "structcustom__formatter.html#a4ed3fa02b4d1bf6e434e61b8313a9dd6":[5,0,61,0],
 "structcustom__formatter.html#a8f67332c042b980be0cb368b5e64d1a5":[5,0,61,1],
-"structcustom__formatter.html#aafc42ddcaf7c8e9df197a91f4e485f63":[5,0,61,2],
-"structcustom__formatter.html#acb18f478613eb8afea27c48c6a63843a":[5,0,61,3]
+"structcustom__formatter.html#aafc42ddcaf7c8e9df197a91f4e485f63":[5,0,61,2]
 };

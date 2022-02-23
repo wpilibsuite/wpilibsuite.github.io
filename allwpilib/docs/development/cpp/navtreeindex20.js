@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"_string_extras_8h.html#ac1334c1afcb5a1b5592e57a78436915b":[6,0,14,88,16],
 "_string_extras_8h.html#ac32a7896ab3ee6b24926527703eabade":[6,0,14,88,49],
 "_string_extras_8h.html#ad2e6acbb1ecc26fc431a01798885b5a1":[6,0,14,88,29],
 "_string_extras_8h.html#ad40bed52c4db6c9d8ac4d6a34f701fca":[6,0,14,88,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "_vectorwise_op_8h.html#ac6e1a194a1588d270eef6efa247c2991":[6,0,3,0,0,1,73,10],
 "_vectorwise_op_8h.html#af0728ee4134f879abe9121af16def656":[6,0,3,0,0,1,73,21],
 "_vectorwise_op_8h_source.html":[6,0,3,0,0,1,73],
-"_version_tuple_8h.html":[6,0,14,101],
-"_version_tuple_8h_source.html":[6,0,14,101]
+"_version_tuple_8h.html":[6,0,14,101]
 };
