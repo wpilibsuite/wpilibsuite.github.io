@@ -1,5 +1,15 @@
 var NAVTREEINDEX113 =
 {
+"group__hal__capi.html#ga5aaf51b826034ad48b05e02e3736b687":[3,1,45],
+"group__hal__capi.html#ga7fda7ce97de711c9dfc5bb8bed9a79ed":[3,1,34],
+"group__hal__capi.html#ga886a0688d44a47eb593961e851d58a1c":[3,1,36],
+"group__hal__capi.html#ga8ffc0f5069623bdac62037716ba23156":[3,1,44],
+"group__hal__capi.html#ga90870d91c61183d070b6064020e8a0c8":[3,1,39],
+"group__hal__capi.html#ga92246516e9f543f8b73ffaa1f085d626":[3,1,38],
+"group__hal__capi.html#ga9673988f8c8dcb3c9c0e3b11d5b2550d":[3,1,40],
+"group__hal__capi.html#gaa08f0d857909be9eb98cdb71189eca0c":[3,1,35],
+"group__hal__capi.html#gad72b2804c3cb301e53d90f0e61f2137f":[3,1,46],
+"group__hal__capi.html#gae581c7334cf37b57b6b12d3e9113ab74":[3,1,43],
 "group__hal__capi.html#gaf2d1ec0dcf2d988d78606df3f6c9f765":[3,1,48],
 "group__hal__capi.html#gaf88a3a55375664d6b8333819edb19d5c":[3,1,49],
 "group__hal__capi.html#gafccf269a24459a444068863528a7c963":[3,1,47],
@@ -239,15 +249,5 @@ var NAVTREEINDEX113 =
 "group__hal__errors.html#ga76c97cd38eab1eb4d977e5eade0d46b8":[3,1,10,22],
 "group__hal__errors.html#ga79815183872556f812ca60e6a773e3eb":[3,1,10,57],
 "group__hal__errors.html#ga7e0806e463470b30e39379643dd12ada":[3,1,10,37],
-"group__hal__errors.html#ga7e1d4238df93d7dc5ff817b43dd9aa12":[3,1,10,34],
-"group__hal__errors.html#ga7ecd4ae23f7526521695f11a2daa0a6e":[3,1,10,90],
-"group__hal__errors.html#ga817049bb9336ce99a13b736da77c6e63":[3,1,10,44],
-"group__hal__errors.html#ga8199cbd75cb6029c65f0e77dc49d850e":[3,1,10,29],
-"group__hal__errors.html#ga82cd51e5d08779b1168448fed874b982":[3,1,10,53],
-"group__hal__errors.html#ga851da180984b2008cba6292c2abf8bac":[3,1,10,87],
-"group__hal__errors.html#ga87137c745e517df3efe31c7aa207962f":[3,1,10,71],
-"group__hal__errors.html#ga87336e425eae89ac99ba238fc278ea75":[3,1,10,18],
-"group__hal__errors.html#ga87ea9420ff8e1a1813cd6abe465eb2b9":[3,1,10,20],
-"group__hal__errors.html#ga8bf9ba15c3f7332cf942fdce1181a603":[3,1,10,96],
-"group__hal__errors.html#ga8d4e1c263e17b13efedb43653da7d821":[3,1,10,39]
+"group__hal__errors.html#ga7e1d4238df93d7dc5ff817b43dd9aa12":[3,1,10,34]
 };

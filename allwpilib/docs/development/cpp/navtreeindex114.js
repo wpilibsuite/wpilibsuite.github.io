@@ -1,5 +1,15 @@
 var NAVTREEINDEX114 =
 {
+"group__hal__errors.html#ga7ecd4ae23f7526521695f11a2daa0a6e":[3,1,10,90],
+"group__hal__errors.html#ga817049bb9336ce99a13b736da77c6e63":[3,1,10,44],
+"group__hal__errors.html#ga8199cbd75cb6029c65f0e77dc49d850e":[3,1,10,29],
+"group__hal__errors.html#ga82cd51e5d08779b1168448fed874b982":[3,1,10,53],
+"group__hal__errors.html#ga851da180984b2008cba6292c2abf8bac":[3,1,10,87],
+"group__hal__errors.html#ga87137c745e517df3efe31c7aa207962f":[3,1,10,71],
+"group__hal__errors.html#ga87336e425eae89ac99ba238fc278ea75":[3,1,10,18],
+"group__hal__errors.html#ga87ea9420ff8e1a1813cd6abe465eb2b9":[3,1,10,20],
+"group__hal__errors.html#ga8bf9ba15c3f7332cf942fdce1181a603":[3,1,10,96],
+"group__hal__errors.html#ga8d4e1c263e17b13efedb43653da7d821":[3,1,10,39],
 "group__hal__errors.html#ga9063647bc35d65f52367d033e93a4c2c":[3,1,10,91],
 "group__hal__errors.html#ga9071b5fcd6c2a8915e371565d83de550":[3,1,10,6],
 "group__hal__errors.html#ga9184903aeaf30dbd02278b739d06c9d8":[3,1,10,23],
@@ -239,15 +249,5 @@ var NAVTREEINDEX114 =
 "group__hal__simdevice.html#ga73c9e5733f08b9004f3c3d277d3a2d1a":[3,1,23,11],
 "group__hal__simdevice.html#ga8024433d1d76490e4c9032696bbb74be":[3,1,23,10],
 "group__hal__simdevice.html#ga8175dfd4d0c35f2381f5734803fa27ee":[3,1,23,15],
-"group__hal__simdevice.html#ga82d1db3d13cb6397a8a795dce593e181":[3,1,23,8],
-"group__hal__simdevice.html#gab5cda539e8f0ad65d58cd0cd85578494":[3,1,23,18],
-"group__hal__simdevice.html#gaba7c611c6e2f3704422c2fa1fe88d461":[3,1,23,14],
-"group__hal__simdevice.html#gafce97e08831108baebcf3c986a21f3ad":[3,1,23,16],
-"group__hal__spi.html":[3,1,11],
-"group__hal__spi.html#ga034d2e6ed032a97f9fb9d4b765c21759":[3,1,11,20],
-"group__hal__spi.html#ga066adb08304046ab0137867ce88606e4":[3,1,11,19],
-"group__hal__spi.html#ga116f6ccb289a6d820cc76e3097a2c025":[3,1,11,4],
-"group__hal__spi.html#ga169756accacdfa9546f052458701b750":[3,1,11,11],
-"group__hal__spi.html#ga19b15bd35dab44155df970b1f8fada70":[3,1,11,6],
-"group__hal__spi.html#ga21450e78e5744b36151025a62aa07c22":[3,1,11,1]
+"group__hal__simdevice.html#ga82d1db3d13cb6397a8a795dce593e181":[3,1,23,8]
 };

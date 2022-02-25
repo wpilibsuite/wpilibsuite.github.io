@@ -1,5 +1,15 @@
 var NAVTREEINDEX166 =
 {
+"struct_shift_left_xpr.html":[5,0,193],
+"struct_shift_left_xpr.html#ae7d019a2b799ad9d320c8c4525e10530":[5,0,193,0],
+"struct_shift_right_xpr.html":[5,0,194],
+"struct_shift_right_xpr.html#a1ede7e47da45fd8a8e9dff1a0cbb133b":[5,0,194,0],
+"struct_w_p_i___service_data.html":[5,0,269],
+"struct_w_p_i___service_data.html#a1c6073120ea6f6d33994e917cd5e2a4c":[5,0,269,6],
+"struct_w_p_i___service_data.html#a2c066b8d8fe2b1abf39178b438f0eab8":[5,0,269,1],
+"struct_w_p_i___service_data.html#a59ba503ee7241c14c6b67156d10792ef":[5,0,269,0],
+"struct_w_p_i___service_data.html#a8918b118202912e20fcd2fe0e8c0d42d":[5,0,269,4],
+"struct_w_p_i___service_data.html#abeaea578d46d82f0f74cdd016dd58cc0":[5,0,269,5],
 "struct_w_p_i___service_data.html#adbbc86dcf18d0f0472ed8b49ff225bda":[5,0,269,3],
 "struct_w_p_i___service_data.html#ae83b73f29f3839c0e6fa84614ab1d98c":[5,0,269,2],
 "structansi__color__escape.html":[5,0,17],
@@ -239,15 +249,5 @@ var NAVTREEINDEX166 =
 "structcs_1_1_video_mode.html#a7edfda92cb98f2dfb6e91e310e73f8d1":[3,13,17,3],
 "structcs_1_1_video_mode.html#a7fd009ed027c50ca9790fd292aff9258":[3,13,17,5],
 "structcs_1_1_video_mode.html#ae49551cdd0382d00ad9b716373559fb2":[3,13,17,4],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c":[3,13,17,0],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca079dbdeb2ee22b4a1fca071e2a067afc":[3,13,17,0,2],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca30ac416074440d95b3d54defeba28251":[3,13,17,0,0],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca3cba1faed93be76a17daf0d962e48015":[3,13,17,0,5],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca6dd1f0ef1bc181b52b5e0c357b665d04":[3,13,17,0,4],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca9283d3e71becf7f9a45e93c1a6c9f439":[3,13,17,0,1],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183cad9275bfc801596c593d252f4b12a8fbd":[3,13,17,0,3],
-"structcustom__formatter.html":[5,0,61],
-"structcustom__formatter.html#a4ed3fa02b4d1bf6e434e61b8313a9dd6":[5,0,61,0],
-"structcustom__formatter.html#a8f67332c042b980be0cb368b5e64d1a5":[5,0,61,1],
-"structcustom__formatter.html#aafc42ddcaf7c8e9df197a91f4e485f63":[5,0,61,2]
+"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c":[3,13,17,0]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX111 =
 {
+"group__cscore__logging__cfunc.html#ga2b4d450fc62f9d615eec5ace597d95e1":[3,12,14,1],
+"group__cscore__logging__cfunc.html#ga38e5aeab07ab49cd338db2aaa9fe3976":[3,12,14,0],
+"group__cscore__logging__cfunc.html#gaf2cacb1c5e55d199e39df7c9457e1cec":[3,12,14,2],
+"group__cscore__logging__func.html":[3,13,13],
+"group__cscore__logging__func.html#ga0a656d0d01cc1c848b89a4d3ddacec48":[3,13,13,1],
+"group__cscore__logging__func.html#ga1dc027dfb55fce0ad05b35ca6ae4c24f":[3,13,13,0],
+"group__cscore__logging__func.html#gad24ff6b7ebfb0fe2b873503b6aaa93ab":[3,13,13,2],
+"group__cscore__mjpegserver__cfunc.html":[3,12,10],
+"group__cscore__mjpegserver__cfunc.html#ga237393fc37481281b86a0670d545e25f":[3,12,10,0],
+"group__cscore__mjpegserver__cfunc.html#ga90e99bdb88a029a036575816dea48f36":[3,12,10,1],
 "group__cscore__mjpegserver__func.html":[3,13,9],
 "group__cscore__mjpegserver__func.html#ga9f0e8c03673a8b2c04a4c703c2d6963a":[3,13,9,1],
 "group__cscore__mjpegserver__func.html#gae04752a2325c46d03ca6a208f3ebb586":[3,13,9,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX111 =
 "group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdacf9ccb2016f8b9c0f3268f05a1e75821":[3,28,1,10,8],
 "group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdad5381b2d1c8973a08303c94e7da02333":[3,28,1,10,9],
 "group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdadd28224d7ea92689930be73c1b50b0ad":[3,28,1,10,5],
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdaf581029282d421eee5aae14238c6f749":[3,28,1,10,0],
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdafca2ccebb604f171656deb53e8c083c1":[3,28,1,10,1],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a2639cfa1e8faac751556bc0009fe95a4":[3,28,1,1,4],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a47779b66e706c87e0850af31224ae9f6":[3,28,1,1,6],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a4e19dd09d5ff42295ba1d72d12a46686":[3,28,1,1,0],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a60057da2408e499b5656244d0b26cc20":[3,28,1,1,5],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a8a380b1cd0c3e5a6cceac06f8235157a":[3,28,1,1,3],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a9d99d7a9ff1da5c949bec22733bfba14":[3,28,1,1,1],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ad0b140cd97bc74365b51843d28379655":[3,28,1,1,2],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ad4d49ef22c9ba2818598e95fdf3608fd":[3,28,1,1,8],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ae12d0f8f869c40c76128260af2242bc8":[3,28,1,1,7]
+"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdaf581029282d421eee5aae14238c6f749":[3,28,1,10,0]
 };
