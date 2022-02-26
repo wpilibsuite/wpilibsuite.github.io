@@ -17,274 +17,291 @@
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.networktables;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
 <span class="sourceLineNo">007</span><a id="line.7">import edu.wpi.first.util.RuntimeLoader;</a>
-<span class="sourceLineNo">008</span><a id="line.8">import java.io.IOException;</a>
-<span class="sourceLineNo">009</span><a id="line.9">import java.nio.ByteBuffer;</a>
-<span class="sourceLineNo">010</span><a id="line.10">import java.util.concurrent.atomic.AtomicBoolean;</a>
-<span class="sourceLineNo">011</span><a id="line.11"></a>
-<span class="sourceLineNo">012</span><a id="line.12">public final class NetworkTablesJNI {</a>
-<span class="sourceLineNo">013</span><a id="line.13">  static boolean libraryLoaded = false;</a>
-<span class="sourceLineNo">014</span><a id="line.14">  static RuntimeLoader&lt;NetworkTablesJNI&gt; loader = null;</a>
-<span class="sourceLineNo">015</span><a id="line.15"></a>
-<span class="sourceLineNo">016</span><a id="line.16">  public static class Helper {</a>
-<span class="sourceLineNo">017</span><a id="line.17">    private static AtomicBoolean extractOnStaticLoad = new AtomicBoolean(true);</a>
-<span class="sourceLineNo">018</span><a id="line.18"></a>
-<span class="sourceLineNo">019</span><a id="line.19">    public static boolean getExtractOnStaticLoad() {</a>
-<span class="sourceLineNo">020</span><a id="line.20">      return extractOnStaticLoad.get();</a>
-<span class="sourceLineNo">021</span><a id="line.21">    }</a>
-<span class="sourceLineNo">022</span><a id="line.22"></a>
-<span class="sourceLineNo">023</span><a id="line.23">    public static void setExtractOnStaticLoad(boolean load) {</a>
-<span class="sourceLineNo">024</span><a id="line.24">      extractOnStaticLoad.set(load);</a>
-<span class="sourceLineNo">025</span><a id="line.25">    }</a>
-<span class="sourceLineNo">026</span><a id="line.26">  }</a>
-<span class="sourceLineNo">027</span><a id="line.27"></a>
-<span class="sourceLineNo">028</span><a id="line.28">  static {</a>
-<span class="sourceLineNo">029</span><a id="line.29">    if (Helper.getExtractOnStaticLoad()) {</a>
-<span class="sourceLineNo">030</span><a id="line.30">      try {</a>
-<span class="sourceLineNo">031</span><a id="line.31">        loader =</a>
-<span class="sourceLineNo">032</span><a id="line.32">            new RuntimeLoader&lt;&gt;(</a>
-<span class="sourceLineNo">033</span><a id="line.33">                "ntcorejni", RuntimeLoader.getDefaultExtractionRoot(), NetworkTablesJNI.class);</a>
-<span class="sourceLineNo">034</span><a id="line.34">        loader.loadLibrary();</a>
-<span class="sourceLineNo">035</span><a id="line.35">      } catch (IOException ex) {</a>
-<span class="sourceLineNo">036</span><a id="line.36">        ex.printStackTrace();</a>
-<span class="sourceLineNo">037</span><a id="line.37">        System.exit(1);</a>
-<span class="sourceLineNo">038</span><a id="line.38">      }</a>
-<span class="sourceLineNo">039</span><a id="line.39">      libraryLoaded = true;</a>
-<span class="sourceLineNo">040</span><a id="line.40">    }</a>
-<span class="sourceLineNo">041</span><a id="line.41">  }</a>
-<span class="sourceLineNo">042</span><a id="line.42"></a>
-<span class="sourceLineNo">043</span><a id="line.43">  /**</a>
-<span class="sourceLineNo">044</span><a id="line.44">   * Force load the library.</a>
-<span class="sourceLineNo">045</span><a id="line.45">   *</a>
-<span class="sourceLineNo">046</span><a id="line.46">   * @throws IOException if the library fails to load</a>
-<span class="sourceLineNo">047</span><a id="line.47">   */</a>
-<span class="sourceLineNo">048</span><a id="line.48">  public static synchronized void forceLoad() throws IOException {</a>
-<span class="sourceLineNo">049</span><a id="line.49">    if (libraryLoaded) {</a>
-<span class="sourceLineNo">050</span><a id="line.50">      return;</a>
-<span class="sourceLineNo">051</span><a id="line.51">    }</a>
-<span class="sourceLineNo">052</span><a id="line.52">    loader =</a>
-<span class="sourceLineNo">053</span><a id="line.53">        new RuntimeLoader&lt;&gt;(</a>
-<span class="sourceLineNo">054</span><a id="line.54">            "ntcorejni", RuntimeLoader.getDefaultExtractionRoot(), NetworkTablesJNI.class);</a>
-<span class="sourceLineNo">055</span><a id="line.55">    loader.loadLibrary();</a>
-<span class="sourceLineNo">056</span><a id="line.56">    libraryLoaded = true;</a>
-<span class="sourceLineNo">057</span><a id="line.57">  }</a>
-<span class="sourceLineNo">058</span><a id="line.58"></a>
-<span class="sourceLineNo">059</span><a id="line.59">  public static native int getDefaultInstance();</a>
-<span class="sourceLineNo">060</span><a id="line.60"></a>
-<span class="sourceLineNo">061</span><a id="line.61">  public static native int createInstance();</a>
-<span class="sourceLineNo">062</span><a id="line.62"></a>
-<span class="sourceLineNo">063</span><a id="line.63">  public static native void destroyInstance(int inst);</a>
-<span class="sourceLineNo">064</span><a id="line.64"></a>
-<span class="sourceLineNo">065</span><a id="line.65">  public static native int getInstanceFromHandle(int handle);</a>
-<span class="sourceLineNo">066</span><a id="line.66"></a>
-<span class="sourceLineNo">067</span><a id="line.67">  public static native int getEntry(int inst, String key);</a>
-<span class="sourceLineNo">068</span><a id="line.68"></a>
-<span class="sourceLineNo">069</span><a id="line.69">  public static native int[] getEntries(int inst, String prefix, int types);</a>
-<span class="sourceLineNo">070</span><a id="line.70"></a>
-<span class="sourceLineNo">071</span><a id="line.71">  public static native String getEntryName(int entry);</a>
-<span class="sourceLineNo">072</span><a id="line.72"></a>
-<span class="sourceLineNo">073</span><a id="line.73">  public static native long getEntryLastChange(int entry);</a>
-<span class="sourceLineNo">074</span><a id="line.74"></a>
-<span class="sourceLineNo">075</span><a id="line.75">  public static native int getType(int entry);</a>
-<span class="sourceLineNo">076</span><a id="line.76"></a>
-<span class="sourceLineNo">077</span><a id="line.77">  public static native boolean setBoolean(int entry, long time, boolean value, boolean force);</a>
-<span class="sourceLineNo">078</span><a id="line.78"></a>
-<span class="sourceLineNo">079</span><a id="line.79">  public static native boolean setDouble(int entry, long time, double value, boolean force);</a>
-<span class="sourceLineNo">080</span><a id="line.80"></a>
-<span class="sourceLineNo">081</span><a id="line.81">  public static native boolean setString(int entry, long time, String value, boolean force);</a>
-<span class="sourceLineNo">082</span><a id="line.82"></a>
-<span class="sourceLineNo">083</span><a id="line.83">  public static native boolean setRaw(int entry, long time, byte[] value, boolean force);</a>
-<span class="sourceLineNo">084</span><a id="line.84"></a>
-<span class="sourceLineNo">085</span><a id="line.85">  public static native boolean setRaw(</a>
-<span class="sourceLineNo">086</span><a id="line.86">      int entry, long time, ByteBuffer value, int len, boolean force);</a>
-<span class="sourceLineNo">087</span><a id="line.87"></a>
-<span class="sourceLineNo">088</span><a id="line.88">  public static native boolean setBooleanArray(</a>
-<span class="sourceLineNo">089</span><a id="line.89">      int entry, long time, boolean[] value, boolean force);</a>
-<span class="sourceLineNo">090</span><a id="line.90"></a>
-<span class="sourceLineNo">091</span><a id="line.91">  public static native boolean setDoubleArray(int entry, long time, double[] value, boolean force);</a>
-<span class="sourceLineNo">092</span><a id="line.92"></a>
-<span class="sourceLineNo">093</span><a id="line.93">  public static native boolean setStringArray(int entry, long time, String[] value, boolean force);</a>
-<span class="sourceLineNo">094</span><a id="line.94"></a>
-<span class="sourceLineNo">095</span><a id="line.95">  public static native NetworkTableValue getValue(int entry);</a>
-<span class="sourceLineNo">096</span><a id="line.96"></a>
-<span class="sourceLineNo">097</span><a id="line.97">  public static native boolean getBoolean(int entry, boolean defaultValue);</a>
-<span class="sourceLineNo">098</span><a id="line.98"></a>
-<span class="sourceLineNo">099</span><a id="line.99">  public static native double getDouble(int entry, double defaultValue);</a>
-<span class="sourceLineNo">100</span><a id="line.100"></a>
-<span class="sourceLineNo">101</span><a id="line.101">  public static native String getString(int entry, String defaultValue);</a>
-<span class="sourceLineNo">102</span><a id="line.102"></a>
-<span class="sourceLineNo">103</span><a id="line.103">  public static native byte[] getRaw(int entry, byte[] defaultValue);</a>
-<span class="sourceLineNo">104</span><a id="line.104"></a>
-<span class="sourceLineNo">105</span><a id="line.105">  public static native boolean[] getBooleanArray(int entry, boolean[] defaultValue);</a>
-<span class="sourceLineNo">106</span><a id="line.106"></a>
-<span class="sourceLineNo">107</span><a id="line.107">  public static native double[] getDoubleArray(int entry, double[] defaultValue);</a>
-<span class="sourceLineNo">108</span><a id="line.108"></a>
-<span class="sourceLineNo">109</span><a id="line.109">  public static native String[] getStringArray(int entry, String[] defaultValue);</a>
-<span class="sourceLineNo">110</span><a id="line.110"></a>
-<span class="sourceLineNo">111</span><a id="line.111">  public static native boolean setDefaultBoolean(int entry, long time, boolean defaultValue);</a>
-<span class="sourceLineNo">112</span><a id="line.112"></a>
-<span class="sourceLineNo">113</span><a id="line.113">  public static native boolean setDefaultDouble(int entry, long time, double defaultValue);</a>
-<span class="sourceLineNo">114</span><a id="line.114"></a>
-<span class="sourceLineNo">115</span><a id="line.115">  public static native boolean setDefaultString(int entry, long time, String defaultValue);</a>
-<span class="sourceLineNo">116</span><a id="line.116"></a>
-<span class="sourceLineNo">117</span><a id="line.117">  public static native boolean setDefaultRaw(int entry, long time, byte[] defaultValue);</a>
-<span class="sourceLineNo">118</span><a id="line.118"></a>
-<span class="sourceLineNo">119</span><a id="line.119">  public static native boolean setDefaultBooleanArray(int entry, long time, boolean[] defaultValue);</a>
-<span class="sourceLineNo">120</span><a id="line.120"></a>
-<span class="sourceLineNo">121</span><a id="line.121">  public static native boolean setDefaultDoubleArray(int entry, long time, double[] defaultValue);</a>
-<span class="sourceLineNo">122</span><a id="line.122"></a>
-<span class="sourceLineNo">123</span><a id="line.123">  public static native boolean setDefaultStringArray(int entry, long time, String[] defaultValue);</a>
-<span class="sourceLineNo">124</span><a id="line.124"></a>
-<span class="sourceLineNo">125</span><a id="line.125">  public static native void setEntryFlags(int entry, int flags);</a>
-<span class="sourceLineNo">126</span><a id="line.126"></a>
-<span class="sourceLineNo">127</span><a id="line.127">  public static native int getEntryFlags(int entry);</a>
-<span class="sourceLineNo">128</span><a id="line.128"></a>
-<span class="sourceLineNo">129</span><a id="line.129">  public static native void deleteEntry(int entry);</a>
-<span class="sourceLineNo">130</span><a id="line.130"></a>
-<span class="sourceLineNo">131</span><a id="line.131">  public static native void deleteAllEntries(int inst);</a>
-<span class="sourceLineNo">132</span><a id="line.132"></a>
-<span class="sourceLineNo">133</span><a id="line.133">  public static native EntryInfo getEntryInfoHandle(NetworkTableInstance inst, int entry);</a>
-<span class="sourceLineNo">134</span><a id="line.134"></a>
-<span class="sourceLineNo">135</span><a id="line.135">  public static native EntryInfo[] getEntryInfo(</a>
-<span class="sourceLineNo">136</span><a id="line.136">      NetworkTableInstance instObject, int inst, String prefix, int types);</a>
-<span class="sourceLineNo">137</span><a id="line.137"></a>
-<span class="sourceLineNo">138</span><a id="line.138">  public static native int createEntryListenerPoller(int inst);</a>
-<span class="sourceLineNo">139</span><a id="line.139"></a>
-<span class="sourceLineNo">140</span><a id="line.140">  public static native void destroyEntryListenerPoller(int poller);</a>
-<span class="sourceLineNo">141</span><a id="line.141"></a>
-<span class="sourceLineNo">142</span><a id="line.142">  public static native int addPolledEntryListener(int poller, String prefix, int flags);</a>
-<span class="sourceLineNo">143</span><a id="line.143"></a>
-<span class="sourceLineNo">144</span><a id="line.144">  public static native int addPolledEntryListener(int poller, int entry, int flags);</a>
-<span class="sourceLineNo">145</span><a id="line.145"></a>
-<span class="sourceLineNo">146</span><a id="line.146">  public static native EntryNotification[] pollEntryListener(NetworkTableInstance inst, int poller)</a>
-<span class="sourceLineNo">147</span><a id="line.147">      throws InterruptedException;</a>
-<span class="sourceLineNo">148</span><a id="line.148"></a>
-<span class="sourceLineNo">149</span><a id="line.149">  public static native EntryNotification[] pollEntryListenerTimeout(</a>
-<span class="sourceLineNo">150</span><a id="line.150">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
-<span class="sourceLineNo">151</span><a id="line.151"></a>
-<span class="sourceLineNo">152</span><a id="line.152">  public static native void cancelPollEntryListener(int poller);</a>
-<span class="sourceLineNo">153</span><a id="line.153"></a>
-<span class="sourceLineNo">154</span><a id="line.154">  public static native void removeEntryListener(int entryListener);</a>
-<span class="sourceLineNo">155</span><a id="line.155"></a>
-<span class="sourceLineNo">156</span><a id="line.156">  public static native boolean waitForEntryListenerQueue(int inst, double timeout);</a>
-<span class="sourceLineNo">157</span><a id="line.157"></a>
-<span class="sourceLineNo">158</span><a id="line.158">  public static native int createConnectionListenerPoller(int inst);</a>
-<span class="sourceLineNo">159</span><a id="line.159"></a>
-<span class="sourceLineNo">160</span><a id="line.160">  public static native void destroyConnectionListenerPoller(int poller);</a>
-<span class="sourceLineNo">161</span><a id="line.161"></a>
-<span class="sourceLineNo">162</span><a id="line.162">  public static native int addPolledConnectionListener(int poller, boolean immediateNotify);</a>
-<span class="sourceLineNo">163</span><a id="line.163"></a>
-<span class="sourceLineNo">164</span><a id="line.164">  public static native ConnectionNotification[] pollConnectionListener(</a>
-<span class="sourceLineNo">165</span><a id="line.165">      NetworkTableInstance inst, int poller) throws InterruptedException;</a>
-<span class="sourceLineNo">166</span><a id="line.166"></a>
-<span class="sourceLineNo">167</span><a id="line.167">  public static native ConnectionNotification[] pollConnectionListenerTimeout(</a>
-<span class="sourceLineNo">168</span><a id="line.168">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
-<span class="sourceLineNo">169</span><a id="line.169"></a>
-<span class="sourceLineNo">170</span><a id="line.170">  public static native void cancelPollConnectionListener(int poller);</a>
-<span class="sourceLineNo">171</span><a id="line.171"></a>
-<span class="sourceLineNo">172</span><a id="line.172">  public static native void removeConnectionListener(int connListener);</a>
-<span class="sourceLineNo">173</span><a id="line.173"></a>
-<span class="sourceLineNo">174</span><a id="line.174">  public static native boolean waitForConnectionListenerQueue(int inst, double timeout);</a>
-<span class="sourceLineNo">175</span><a id="line.175"></a>
-<span class="sourceLineNo">176</span><a id="line.176">  public static native int createRpcCallPoller(int inst);</a>
-<span class="sourceLineNo">177</span><a id="line.177"></a>
-<span class="sourceLineNo">178</span><a id="line.178">  public static native void destroyRpcCallPoller(int poller);</a>
-<span class="sourceLineNo">179</span><a id="line.179"></a>
-<span class="sourceLineNo">180</span><a id="line.180">  public static native void createPolledRpc(int entry, byte[] def, int poller);</a>
-<span class="sourceLineNo">181</span><a id="line.181"></a>
-<span class="sourceLineNo">182</span><a id="line.182">  public static native RpcAnswer[] pollRpc(NetworkTableInstance inst, int poller)</a>
-<span class="sourceLineNo">183</span><a id="line.183">      throws InterruptedException;</a>
-<span class="sourceLineNo">184</span><a id="line.184"></a>
-<span class="sourceLineNo">185</span><a id="line.185">  public static native RpcAnswer[] pollRpcTimeout(</a>
-<span class="sourceLineNo">186</span><a id="line.186">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
-<span class="sourceLineNo">187</span><a id="line.187"></a>
-<span class="sourceLineNo">188</span><a id="line.188">  public static native void cancelPollRpc(int poller);</a>
-<span class="sourceLineNo">189</span><a id="line.189"></a>
-<span class="sourceLineNo">190</span><a id="line.190">  public static native boolean waitForRpcCallQueue(int inst, double timeout);</a>
-<span class="sourceLineNo">191</span><a id="line.191"></a>
-<span class="sourceLineNo">192</span><a id="line.192">  public static native boolean postRpcResponse(int entry, int call, byte[] result);</a>
-<span class="sourceLineNo">193</span><a id="line.193"></a>
-<span class="sourceLineNo">194</span><a id="line.194">  public static native int callRpc(int entry, byte[] params);</a>
-<span class="sourceLineNo">195</span><a id="line.195"></a>
-<span class="sourceLineNo">196</span><a id="line.196">  public static native byte[] getRpcResult(int entry, int call);</a>
-<span class="sourceLineNo">197</span><a id="line.197"></a>
-<span class="sourceLineNo">198</span><a id="line.198">  public static native byte[] getRpcResult(int entry, int call, double timeout);</a>
-<span class="sourceLineNo">199</span><a id="line.199"></a>
-<span class="sourceLineNo">200</span><a id="line.200">  public static native void cancelRpcResult(int entry, int call);</a>
-<span class="sourceLineNo">201</span><a id="line.201"></a>
-<span class="sourceLineNo">202</span><a id="line.202">  public static native byte[] getRpc(int entry, byte[] defaultValue);</a>
-<span class="sourceLineNo">203</span><a id="line.203"></a>
-<span class="sourceLineNo">204</span><a id="line.204">  public static native void setNetworkIdentity(int inst, String name);</a>
-<span class="sourceLineNo">205</span><a id="line.205"></a>
-<span class="sourceLineNo">206</span><a id="line.206">  public static native int getNetworkMode(int inst);</a>
-<span class="sourceLineNo">207</span><a id="line.207"></a>
-<span class="sourceLineNo">208</span><a id="line.208">  public static native void startLocal(int inst);</a>
-<span class="sourceLineNo">209</span><a id="line.209"></a>
-<span class="sourceLineNo">210</span><a id="line.210">  public static native void stopLocal(int inst);</a>
-<span class="sourceLineNo">211</span><a id="line.211"></a>
-<span class="sourceLineNo">212</span><a id="line.212">  public static native void startServer(</a>
-<span class="sourceLineNo">213</span><a id="line.213">      int inst, String persistFilename, String listenAddress, int port);</a>
-<span class="sourceLineNo">214</span><a id="line.214"></a>
-<span class="sourceLineNo">215</span><a id="line.215">  public static native void stopServer(int inst);</a>
-<span class="sourceLineNo">216</span><a id="line.216"></a>
-<span class="sourceLineNo">217</span><a id="line.217">  public static native void startClient(int inst);</a>
-<span class="sourceLineNo">218</span><a id="line.218"></a>
-<span class="sourceLineNo">219</span><a id="line.219">  public static native void startClient(int inst, String serverName, int port);</a>
-<span class="sourceLineNo">220</span><a id="line.220"></a>
-<span class="sourceLineNo">221</span><a id="line.221">  public static native void startClient(int inst, String[] serverNames, int[] ports);</a>
-<span class="sourceLineNo">222</span><a id="line.222"></a>
-<span class="sourceLineNo">223</span><a id="line.223">  public static native void startClientTeam(int inst, int team, int port);</a>
-<span class="sourceLineNo">224</span><a id="line.224"></a>
-<span class="sourceLineNo">225</span><a id="line.225">  public static native void stopClient(int inst);</a>
-<span class="sourceLineNo">226</span><a id="line.226"></a>
-<span class="sourceLineNo">227</span><a id="line.227">  public static native void setServer(int inst, String serverName, int port);</a>
-<span class="sourceLineNo">228</span><a id="line.228"></a>
-<span class="sourceLineNo">229</span><a id="line.229">  public static native void setServer(int inst, String[] serverNames, int[] ports);</a>
-<span class="sourceLineNo">230</span><a id="line.230"></a>
-<span class="sourceLineNo">231</span><a id="line.231">  public static native void setServerTeam(int inst, int team, int port);</a>
-<span class="sourceLineNo">232</span><a id="line.232"></a>
-<span class="sourceLineNo">233</span><a id="line.233">  public static native void startDSClient(int inst, int port);</a>
-<span class="sourceLineNo">234</span><a id="line.234"></a>
-<span class="sourceLineNo">235</span><a id="line.235">  public static native void stopDSClient(int inst);</a>
-<span class="sourceLineNo">236</span><a id="line.236"></a>
-<span class="sourceLineNo">237</span><a id="line.237">  public static native void setUpdateRate(int inst, double interval);</a>
-<span class="sourceLineNo">238</span><a id="line.238"></a>
-<span class="sourceLineNo">239</span><a id="line.239">  public static native void flush(int inst);</a>
-<span class="sourceLineNo">240</span><a id="line.240"></a>
-<span class="sourceLineNo">241</span><a id="line.241">  public static native ConnectionInfo[] getConnections(int inst);</a>
-<span class="sourceLineNo">242</span><a id="line.242"></a>
-<span class="sourceLineNo">243</span><a id="line.243">  public static native boolean isConnected(int inst);</a>
-<span class="sourceLineNo">244</span><a id="line.244"></a>
-<span class="sourceLineNo">245</span><a id="line.245">  public static native void savePersistent(int inst, String filename) throws PersistentException;</a>
-<span class="sourceLineNo">246</span><a id="line.246"></a>
-<span class="sourceLineNo">247</span><a id="line.247">  public static native String[] loadPersistent(int inst, String filename)</a>
-<span class="sourceLineNo">248</span><a id="line.248">      throws PersistentException; // returns warnings</a>
-<span class="sourceLineNo">249</span><a id="line.249"></a>
-<span class="sourceLineNo">250</span><a id="line.250">  public static native void saveEntries(int inst, String filename, String prefix)</a>
-<span class="sourceLineNo">251</span><a id="line.251">      throws PersistentException;</a>
-<span class="sourceLineNo">252</span><a id="line.252"></a>
-<span class="sourceLineNo">253</span><a id="line.253">  public static native String[] loadEntries(int inst, String filename, String prefix)</a>
-<span class="sourceLineNo">254</span><a id="line.254">      throws PersistentException; // returns warnings</a>
-<span class="sourceLineNo">255</span><a id="line.255"></a>
-<span class="sourceLineNo">256</span><a id="line.256">  public static native long now();</a>
-<span class="sourceLineNo">257</span><a id="line.257"></a>
-<span class="sourceLineNo">258</span><a id="line.258">  public static native int createLoggerPoller(int inst);</a>
-<span class="sourceLineNo">259</span><a id="line.259"></a>
-<span class="sourceLineNo">260</span><a id="line.260">  public static native void destroyLoggerPoller(int poller);</a>
-<span class="sourceLineNo">261</span><a id="line.261"></a>
-<span class="sourceLineNo">262</span><a id="line.262">  public static native int addPolledLogger(int poller, int minLevel, int maxLevel);</a>
-<span class="sourceLineNo">263</span><a id="line.263"></a>
-<span class="sourceLineNo">264</span><a id="line.264">  public static native LogMessage[] pollLogger(NetworkTableInstance inst, int poller)</a>
-<span class="sourceLineNo">265</span><a id="line.265">      throws InterruptedException;</a>
+<span class="sourceLineNo">008</span><a id="line.8">import edu.wpi.first.util.datalog.DataLog;</a>
+<span class="sourceLineNo">009</span><a id="line.9">import java.io.IOException;</a>
+<span class="sourceLineNo">010</span><a id="line.10">import java.nio.ByteBuffer;</a>
+<span class="sourceLineNo">011</span><a id="line.11">import java.util.concurrent.atomic.AtomicBoolean;</a>
+<span class="sourceLineNo">012</span><a id="line.12"></a>
+<span class="sourceLineNo">013</span><a id="line.13">public final class NetworkTablesJNI {</a>
+<span class="sourceLineNo">014</span><a id="line.14">  static boolean libraryLoaded = false;</a>
+<span class="sourceLineNo">015</span><a id="line.15">  static RuntimeLoader&lt;NetworkTablesJNI&gt; loader = null;</a>
+<span class="sourceLineNo">016</span><a id="line.16"></a>
+<span class="sourceLineNo">017</span><a id="line.17">  public static class Helper {</a>
+<span class="sourceLineNo">018</span><a id="line.18">    private static AtomicBoolean extractOnStaticLoad = new AtomicBoolean(true);</a>
+<span class="sourceLineNo">019</span><a id="line.19"></a>
+<span class="sourceLineNo">020</span><a id="line.20">    public static boolean getExtractOnStaticLoad() {</a>
+<span class="sourceLineNo">021</span><a id="line.21">      return extractOnStaticLoad.get();</a>
+<span class="sourceLineNo">022</span><a id="line.22">    }</a>
+<span class="sourceLineNo">023</span><a id="line.23"></a>
+<span class="sourceLineNo">024</span><a id="line.24">    public static void setExtractOnStaticLoad(boolean load) {</a>
+<span class="sourceLineNo">025</span><a id="line.25">      extractOnStaticLoad.set(load);</a>
+<span class="sourceLineNo">026</span><a id="line.26">    }</a>
+<span class="sourceLineNo">027</span><a id="line.27">  }</a>
+<span class="sourceLineNo">028</span><a id="line.28"></a>
+<span class="sourceLineNo">029</span><a id="line.29">  static {</a>
+<span class="sourceLineNo">030</span><a id="line.30">    if (Helper.getExtractOnStaticLoad()) {</a>
+<span class="sourceLineNo">031</span><a id="line.31">      try {</a>
+<span class="sourceLineNo">032</span><a id="line.32">        loader =</a>
+<span class="sourceLineNo">033</span><a id="line.33">            new RuntimeLoader&lt;&gt;(</a>
+<span class="sourceLineNo">034</span><a id="line.34">                "ntcorejni", RuntimeLoader.getDefaultExtractionRoot(), NetworkTablesJNI.class);</a>
+<span class="sourceLineNo">035</span><a id="line.35">        loader.loadLibrary();</a>
+<span class="sourceLineNo">036</span><a id="line.36">      } catch (IOException ex) {</a>
+<span class="sourceLineNo">037</span><a id="line.37">        ex.printStackTrace();</a>
+<span class="sourceLineNo">038</span><a id="line.38">        System.exit(1);</a>
+<span class="sourceLineNo">039</span><a id="line.39">      }</a>
+<span class="sourceLineNo">040</span><a id="line.40">      libraryLoaded = true;</a>
+<span class="sourceLineNo">041</span><a id="line.41">    }</a>
+<span class="sourceLineNo">042</span><a id="line.42">  }</a>
+<span class="sourceLineNo">043</span><a id="line.43"></a>
+<span class="sourceLineNo">044</span><a id="line.44">  /**</a>
+<span class="sourceLineNo">045</span><a id="line.45">   * Force load the library.</a>
+<span class="sourceLineNo">046</span><a id="line.46">   *</a>
+<span class="sourceLineNo">047</span><a id="line.47">   * @throws IOException if the library fails to load</a>
+<span class="sourceLineNo">048</span><a id="line.48">   */</a>
+<span class="sourceLineNo">049</span><a id="line.49">  public static synchronized void forceLoad() throws IOException {</a>
+<span class="sourceLineNo">050</span><a id="line.50">    if (libraryLoaded) {</a>
+<span class="sourceLineNo">051</span><a id="line.51">      return;</a>
+<span class="sourceLineNo">052</span><a id="line.52">    }</a>
+<span class="sourceLineNo">053</span><a id="line.53">    loader =</a>
+<span class="sourceLineNo">054</span><a id="line.54">        new RuntimeLoader&lt;&gt;(</a>
+<span class="sourceLineNo">055</span><a id="line.55">            "ntcorejni", RuntimeLoader.getDefaultExtractionRoot(), NetworkTablesJNI.class);</a>
+<span class="sourceLineNo">056</span><a id="line.56">    loader.loadLibrary();</a>
+<span class="sourceLineNo">057</span><a id="line.57">    libraryLoaded = true;</a>
+<span class="sourceLineNo">058</span><a id="line.58">  }</a>
+<span class="sourceLineNo">059</span><a id="line.59"></a>
+<span class="sourceLineNo">060</span><a id="line.60">  public static native int getDefaultInstance();</a>
+<span class="sourceLineNo">061</span><a id="line.61"></a>
+<span class="sourceLineNo">062</span><a id="line.62">  public static native int createInstance();</a>
+<span class="sourceLineNo">063</span><a id="line.63"></a>
+<span class="sourceLineNo">064</span><a id="line.64">  public static native void destroyInstance(int inst);</a>
+<span class="sourceLineNo">065</span><a id="line.65"></a>
+<span class="sourceLineNo">066</span><a id="line.66">  public static native int getInstanceFromHandle(int handle);</a>
+<span class="sourceLineNo">067</span><a id="line.67"></a>
+<span class="sourceLineNo">068</span><a id="line.68">  public static native int getEntry(int inst, String key);</a>
+<span class="sourceLineNo">069</span><a id="line.69"></a>
+<span class="sourceLineNo">070</span><a id="line.70">  public static native int[] getEntries(int inst, String prefix, int types);</a>
+<span class="sourceLineNo">071</span><a id="line.71"></a>
+<span class="sourceLineNo">072</span><a id="line.72">  public static native String getEntryName(int entry);</a>
+<span class="sourceLineNo">073</span><a id="line.73"></a>
+<span class="sourceLineNo">074</span><a id="line.74">  public static native long getEntryLastChange(int entry);</a>
+<span class="sourceLineNo">075</span><a id="line.75"></a>
+<span class="sourceLineNo">076</span><a id="line.76">  public static native int getType(int entry);</a>
+<span class="sourceLineNo">077</span><a id="line.77"></a>
+<span class="sourceLineNo">078</span><a id="line.78">  public static native boolean setBoolean(int entry, long time, boolean value, boolean force);</a>
+<span class="sourceLineNo">079</span><a id="line.79"></a>
+<span class="sourceLineNo">080</span><a id="line.80">  public static native boolean setDouble(int entry, long time, double value, boolean force);</a>
+<span class="sourceLineNo">081</span><a id="line.81"></a>
+<span class="sourceLineNo">082</span><a id="line.82">  public static native boolean setString(int entry, long time, String value, boolean force);</a>
+<span class="sourceLineNo">083</span><a id="line.83"></a>
+<span class="sourceLineNo">084</span><a id="line.84">  public static native boolean setRaw(int entry, long time, byte[] value, boolean force);</a>
+<span class="sourceLineNo">085</span><a id="line.85"></a>
+<span class="sourceLineNo">086</span><a id="line.86">  public static native boolean setRaw(</a>
+<span class="sourceLineNo">087</span><a id="line.87">      int entry, long time, ByteBuffer value, int len, boolean force);</a>
+<span class="sourceLineNo">088</span><a id="line.88"></a>
+<span class="sourceLineNo">089</span><a id="line.89">  public static native boolean setBooleanArray(</a>
+<span class="sourceLineNo">090</span><a id="line.90">      int entry, long time, boolean[] value, boolean force);</a>
+<span class="sourceLineNo">091</span><a id="line.91"></a>
+<span class="sourceLineNo">092</span><a id="line.92">  public static native boolean setDoubleArray(int entry, long time, double[] value, boolean force);</a>
+<span class="sourceLineNo">093</span><a id="line.93"></a>
+<span class="sourceLineNo">094</span><a id="line.94">  public static native boolean setStringArray(int entry, long time, String[] value, boolean force);</a>
+<span class="sourceLineNo">095</span><a id="line.95"></a>
+<span class="sourceLineNo">096</span><a id="line.96">  public static native NetworkTableValue getValue(int entry);</a>
+<span class="sourceLineNo">097</span><a id="line.97"></a>
+<span class="sourceLineNo">098</span><a id="line.98">  public static native boolean getBoolean(int entry, boolean defaultValue);</a>
+<span class="sourceLineNo">099</span><a id="line.99"></a>
+<span class="sourceLineNo">100</span><a id="line.100">  public static native double getDouble(int entry, double defaultValue);</a>
+<span class="sourceLineNo">101</span><a id="line.101"></a>
+<span class="sourceLineNo">102</span><a id="line.102">  public static native String getString(int entry, String defaultValue);</a>
+<span class="sourceLineNo">103</span><a id="line.103"></a>
+<span class="sourceLineNo">104</span><a id="line.104">  public static native byte[] getRaw(int entry, byte[] defaultValue);</a>
+<span class="sourceLineNo">105</span><a id="line.105"></a>
+<span class="sourceLineNo">106</span><a id="line.106">  public static native boolean[] getBooleanArray(int entry, boolean[] defaultValue);</a>
+<span class="sourceLineNo">107</span><a id="line.107"></a>
+<span class="sourceLineNo">108</span><a id="line.108">  public static native double[] getDoubleArray(int entry, double[] defaultValue);</a>
+<span class="sourceLineNo">109</span><a id="line.109"></a>
+<span class="sourceLineNo">110</span><a id="line.110">  public static native String[] getStringArray(int entry, String[] defaultValue);</a>
+<span class="sourceLineNo">111</span><a id="line.111"></a>
+<span class="sourceLineNo">112</span><a id="line.112">  public static native boolean setDefaultBoolean(int entry, long time, boolean defaultValue);</a>
+<span class="sourceLineNo">113</span><a id="line.113"></a>
+<span class="sourceLineNo">114</span><a id="line.114">  public static native boolean setDefaultDouble(int entry, long time, double defaultValue);</a>
+<span class="sourceLineNo">115</span><a id="line.115"></a>
+<span class="sourceLineNo">116</span><a id="line.116">  public static native boolean setDefaultString(int entry, long time, String defaultValue);</a>
+<span class="sourceLineNo">117</span><a id="line.117"></a>
+<span class="sourceLineNo">118</span><a id="line.118">  public static native boolean setDefaultRaw(int entry, long time, byte[] defaultValue);</a>
+<span class="sourceLineNo">119</span><a id="line.119"></a>
+<span class="sourceLineNo">120</span><a id="line.120">  public static native boolean setDefaultBooleanArray(int entry, long time, boolean[] defaultValue);</a>
+<span class="sourceLineNo">121</span><a id="line.121"></a>
+<span class="sourceLineNo">122</span><a id="line.122">  public static native boolean setDefaultDoubleArray(int entry, long time, double[] defaultValue);</a>
+<span class="sourceLineNo">123</span><a id="line.123"></a>
+<span class="sourceLineNo">124</span><a id="line.124">  public static native boolean setDefaultStringArray(int entry, long time, String[] defaultValue);</a>
+<span class="sourceLineNo">125</span><a id="line.125"></a>
+<span class="sourceLineNo">126</span><a id="line.126">  public static native void setEntryFlags(int entry, int flags);</a>
+<span class="sourceLineNo">127</span><a id="line.127"></a>
+<span class="sourceLineNo">128</span><a id="line.128">  public static native int getEntryFlags(int entry);</a>
+<span class="sourceLineNo">129</span><a id="line.129"></a>
+<span class="sourceLineNo">130</span><a id="line.130">  public static native void deleteEntry(int entry);</a>
+<span class="sourceLineNo">131</span><a id="line.131"></a>
+<span class="sourceLineNo">132</span><a id="line.132">  public static native void deleteAllEntries(int inst);</a>
+<span class="sourceLineNo">133</span><a id="line.133"></a>
+<span class="sourceLineNo">134</span><a id="line.134">  public static native EntryInfo getEntryInfoHandle(NetworkTableInstance inst, int entry);</a>
+<span class="sourceLineNo">135</span><a id="line.135"></a>
+<span class="sourceLineNo">136</span><a id="line.136">  public static native EntryInfo[] getEntryInfo(</a>
+<span class="sourceLineNo">137</span><a id="line.137">      NetworkTableInstance instObject, int inst, String prefix, int types);</a>
+<span class="sourceLineNo">138</span><a id="line.138"></a>
+<span class="sourceLineNo">139</span><a id="line.139">  public static native int createEntryListenerPoller(int inst);</a>
+<span class="sourceLineNo">140</span><a id="line.140"></a>
+<span class="sourceLineNo">141</span><a id="line.141">  public static native void destroyEntryListenerPoller(int poller);</a>
+<span class="sourceLineNo">142</span><a id="line.142"></a>
+<span class="sourceLineNo">143</span><a id="line.143">  public static native int addPolledEntryListener(int poller, String prefix, int flags);</a>
+<span class="sourceLineNo">144</span><a id="line.144"></a>
+<span class="sourceLineNo">145</span><a id="line.145">  public static native int addPolledEntryListener(int poller, int entry, int flags);</a>
+<span class="sourceLineNo">146</span><a id="line.146"></a>
+<span class="sourceLineNo">147</span><a id="line.147">  public static native EntryNotification[] pollEntryListener(NetworkTableInstance inst, int poller)</a>
+<span class="sourceLineNo">148</span><a id="line.148">      throws InterruptedException;</a>
+<span class="sourceLineNo">149</span><a id="line.149"></a>
+<span class="sourceLineNo">150</span><a id="line.150">  public static native EntryNotification[] pollEntryListenerTimeout(</a>
+<span class="sourceLineNo">151</span><a id="line.151">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
+<span class="sourceLineNo">152</span><a id="line.152"></a>
+<span class="sourceLineNo">153</span><a id="line.153">  public static native void cancelPollEntryListener(int poller);</a>
+<span class="sourceLineNo">154</span><a id="line.154"></a>
+<span class="sourceLineNo">155</span><a id="line.155">  public static native void removeEntryListener(int entryListener);</a>
+<span class="sourceLineNo">156</span><a id="line.156"></a>
+<span class="sourceLineNo">157</span><a id="line.157">  public static native boolean waitForEntryListenerQueue(int inst, double timeout);</a>
+<span class="sourceLineNo">158</span><a id="line.158"></a>
+<span class="sourceLineNo">159</span><a id="line.159">  public static native int createConnectionListenerPoller(int inst);</a>
+<span class="sourceLineNo">160</span><a id="line.160"></a>
+<span class="sourceLineNo">161</span><a id="line.161">  public static native void destroyConnectionListenerPoller(int poller);</a>
+<span class="sourceLineNo">162</span><a id="line.162"></a>
+<span class="sourceLineNo">163</span><a id="line.163">  public static native int addPolledConnectionListener(int poller, boolean immediateNotify);</a>
+<span class="sourceLineNo">164</span><a id="line.164"></a>
+<span class="sourceLineNo">165</span><a id="line.165">  public static native ConnectionNotification[] pollConnectionListener(</a>
+<span class="sourceLineNo">166</span><a id="line.166">      NetworkTableInstance inst, int poller) throws InterruptedException;</a>
+<span class="sourceLineNo">167</span><a id="line.167"></a>
+<span class="sourceLineNo">168</span><a id="line.168">  public static native ConnectionNotification[] pollConnectionListenerTimeout(</a>
+<span class="sourceLineNo">169</span><a id="line.169">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
+<span class="sourceLineNo">170</span><a id="line.170"></a>
+<span class="sourceLineNo">171</span><a id="line.171">  public static native void cancelPollConnectionListener(int poller);</a>
+<span class="sourceLineNo">172</span><a id="line.172"></a>
+<span class="sourceLineNo">173</span><a id="line.173">  public static native void removeConnectionListener(int connListener);</a>
+<span class="sourceLineNo">174</span><a id="line.174"></a>
+<span class="sourceLineNo">175</span><a id="line.175">  public static native boolean waitForConnectionListenerQueue(int inst, double timeout);</a>
+<span class="sourceLineNo">176</span><a id="line.176"></a>
+<span class="sourceLineNo">177</span><a id="line.177">  public static native int createRpcCallPoller(int inst);</a>
+<span class="sourceLineNo">178</span><a id="line.178"></a>
+<span class="sourceLineNo">179</span><a id="line.179">  public static native void destroyRpcCallPoller(int poller);</a>
+<span class="sourceLineNo">180</span><a id="line.180"></a>
+<span class="sourceLineNo">181</span><a id="line.181">  public static native void createPolledRpc(int entry, byte[] def, int poller);</a>
+<span class="sourceLineNo">182</span><a id="line.182"></a>
+<span class="sourceLineNo">183</span><a id="line.183">  public static native RpcAnswer[] pollRpc(NetworkTableInstance inst, int poller)</a>
+<span class="sourceLineNo">184</span><a id="line.184">      throws InterruptedException;</a>
+<span class="sourceLineNo">185</span><a id="line.185"></a>
+<span class="sourceLineNo">186</span><a id="line.186">  public static native RpcAnswer[] pollRpcTimeout(</a>
+<span class="sourceLineNo">187</span><a id="line.187">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
+<span class="sourceLineNo">188</span><a id="line.188"></a>
+<span class="sourceLineNo">189</span><a id="line.189">  public static native void cancelPollRpc(int poller);</a>
+<span class="sourceLineNo">190</span><a id="line.190"></a>
+<span class="sourceLineNo">191</span><a id="line.191">  public static native boolean waitForRpcCallQueue(int inst, double timeout);</a>
+<span class="sourceLineNo">192</span><a id="line.192"></a>
+<span class="sourceLineNo">193</span><a id="line.193">  public static native boolean postRpcResponse(int entry, int call, byte[] result);</a>
+<span class="sourceLineNo">194</span><a id="line.194"></a>
+<span class="sourceLineNo">195</span><a id="line.195">  public static native int callRpc(int entry, byte[] params);</a>
+<span class="sourceLineNo">196</span><a id="line.196"></a>
+<span class="sourceLineNo">197</span><a id="line.197">  public static native byte[] getRpcResult(int entry, int call);</a>
+<span class="sourceLineNo">198</span><a id="line.198"></a>
+<span class="sourceLineNo">199</span><a id="line.199">  public static native byte[] getRpcResult(int entry, int call, double timeout);</a>
+<span class="sourceLineNo">200</span><a id="line.200"></a>
+<span class="sourceLineNo">201</span><a id="line.201">  public static native void cancelRpcResult(int entry, int call);</a>
+<span class="sourceLineNo">202</span><a id="line.202"></a>
+<span class="sourceLineNo">203</span><a id="line.203">  public static native byte[] getRpc(int entry, byte[] defaultValue);</a>
+<span class="sourceLineNo">204</span><a id="line.204"></a>
+<span class="sourceLineNo">205</span><a id="line.205">  public static native void setNetworkIdentity(int inst, String name);</a>
+<span class="sourceLineNo">206</span><a id="line.206"></a>
+<span class="sourceLineNo">207</span><a id="line.207">  public static native int getNetworkMode(int inst);</a>
+<span class="sourceLineNo">208</span><a id="line.208"></a>
+<span class="sourceLineNo">209</span><a id="line.209">  public static native void startLocal(int inst);</a>
+<span class="sourceLineNo">210</span><a id="line.210"></a>
+<span class="sourceLineNo">211</span><a id="line.211">  public static native void stopLocal(int inst);</a>
+<span class="sourceLineNo">212</span><a id="line.212"></a>
+<span class="sourceLineNo">213</span><a id="line.213">  public static native void startServer(</a>
+<span class="sourceLineNo">214</span><a id="line.214">      int inst, String persistFilename, String listenAddress, int port);</a>
+<span class="sourceLineNo">215</span><a id="line.215"></a>
+<span class="sourceLineNo">216</span><a id="line.216">  public static native void stopServer(int inst);</a>
+<span class="sourceLineNo">217</span><a id="line.217"></a>
+<span class="sourceLineNo">218</span><a id="line.218">  public static native void startClient(int inst);</a>
+<span class="sourceLineNo">219</span><a id="line.219"></a>
+<span class="sourceLineNo">220</span><a id="line.220">  public static native void startClient(int inst, String serverName, int port);</a>
+<span class="sourceLineNo">221</span><a id="line.221"></a>
+<span class="sourceLineNo">222</span><a id="line.222">  public static native void startClient(int inst, String[] serverNames, int[] ports);</a>
+<span class="sourceLineNo">223</span><a id="line.223"></a>
+<span class="sourceLineNo">224</span><a id="line.224">  public static native void startClientTeam(int inst, int team, int port);</a>
+<span class="sourceLineNo">225</span><a id="line.225"></a>
+<span class="sourceLineNo">226</span><a id="line.226">  public static native void stopClient(int inst);</a>
+<span class="sourceLineNo">227</span><a id="line.227"></a>
+<span class="sourceLineNo">228</span><a id="line.228">  public static native void setServer(int inst, String serverName, int port);</a>
+<span class="sourceLineNo">229</span><a id="line.229"></a>
+<span class="sourceLineNo">230</span><a id="line.230">  public static native void setServer(int inst, String[] serverNames, int[] ports);</a>
+<span class="sourceLineNo">231</span><a id="line.231"></a>
+<span class="sourceLineNo">232</span><a id="line.232">  public static native void setServerTeam(int inst, int team, int port);</a>
+<span class="sourceLineNo">233</span><a id="line.233"></a>
+<span class="sourceLineNo">234</span><a id="line.234">  public static native void startDSClient(int inst, int port);</a>
+<span class="sourceLineNo">235</span><a id="line.235"></a>
+<span class="sourceLineNo">236</span><a id="line.236">  public static native void stopDSClient(int inst);</a>
+<span class="sourceLineNo">237</span><a id="line.237"></a>
+<span class="sourceLineNo">238</span><a id="line.238">  public static native void setUpdateRate(int inst, double interval);</a>
+<span class="sourceLineNo">239</span><a id="line.239"></a>
+<span class="sourceLineNo">240</span><a id="line.240">  public static native void flush(int inst);</a>
+<span class="sourceLineNo">241</span><a id="line.241"></a>
+<span class="sourceLineNo">242</span><a id="line.242">  public static native ConnectionInfo[] getConnections(int inst);</a>
+<span class="sourceLineNo">243</span><a id="line.243"></a>
+<span class="sourceLineNo">244</span><a id="line.244">  public static native boolean isConnected(int inst);</a>
+<span class="sourceLineNo">245</span><a id="line.245"></a>
+<span class="sourceLineNo">246</span><a id="line.246">  public static native void savePersistent(int inst, String filename) throws PersistentException;</a>
+<span class="sourceLineNo">247</span><a id="line.247"></a>
+<span class="sourceLineNo">248</span><a id="line.248">  public static native String[] loadPersistent(int inst, String filename)</a>
+<span class="sourceLineNo">249</span><a id="line.249">      throws PersistentException; // returns warnings</a>
+<span class="sourceLineNo">250</span><a id="line.250"></a>
+<span class="sourceLineNo">251</span><a id="line.251">  public static native void saveEntries(int inst, String filename, String prefix)</a>
+<span class="sourceLineNo">252</span><a id="line.252">      throws PersistentException;</a>
+<span class="sourceLineNo">253</span><a id="line.253"></a>
+<span class="sourceLineNo">254</span><a id="line.254">  public static native String[] loadEntries(int inst, String filename, String prefix)</a>
+<span class="sourceLineNo">255</span><a id="line.255">      throws PersistentException; // returns warnings</a>
+<span class="sourceLineNo">256</span><a id="line.256"></a>
+<span class="sourceLineNo">257</span><a id="line.257">  public static native long now();</a>
+<span class="sourceLineNo">258</span><a id="line.258"></a>
+<span class="sourceLineNo">259</span><a id="line.259">  private static native int startEntryDataLog(int inst, long log, String prefix, String logPrefix);</a>
+<span class="sourceLineNo">260</span><a id="line.260"></a>
+<span class="sourceLineNo">261</span><a id="line.261">  public static int startEntryDataLog(int inst, DataLog log, String prefix, String logPrefix) {</a>
+<span class="sourceLineNo">262</span><a id="line.262">    return startEntryDataLog(inst, log.getImpl(), prefix, logPrefix);</a>
+<span class="sourceLineNo">263</span><a id="line.263">  }</a>
+<span class="sourceLineNo">264</span><a id="line.264"></a>
+<span class="sourceLineNo">265</span><a id="line.265">  public static native void stopEntryDataLog(int logger);</a>
 <span class="sourceLineNo">266</span><a id="line.266"></a>
-<span class="sourceLineNo">267</span><a id="line.267">  public static native LogMessage[] pollLoggerTimeout(</a>
-<span class="sourceLineNo">268</span><a id="line.268">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
-<span class="sourceLineNo">269</span><a id="line.269"></a>
-<span class="sourceLineNo">270</span><a id="line.270">  public static native void cancelPollLogger(int poller);</a>
-<span class="sourceLineNo">271</span><a id="line.271"></a>
-<span class="sourceLineNo">272</span><a id="line.272">  public static native void removeLogger(int logger);</a>
-<span class="sourceLineNo">273</span><a id="line.273"></a>
-<span class="sourceLineNo">274</span><a id="line.274">  public static native boolean waitForLoggerQueue(int inst, double timeout);</a>
-<span class="sourceLineNo">275</span><a id="line.275">}</a>
+<span class="sourceLineNo">267</span><a id="line.267">  private static native int startConnectionDataLog(int inst, long log, String name);</a>
+<span class="sourceLineNo">268</span><a id="line.268"></a>
+<span class="sourceLineNo">269</span><a id="line.269">  public static int startConnectionDataLog(int inst, DataLog log, String name) {</a>
+<span class="sourceLineNo">270</span><a id="line.270">    return startConnectionDataLog(inst, log.getImpl(), name);</a>
+<span class="sourceLineNo">271</span><a id="line.271">  }</a>
+<span class="sourceLineNo">272</span><a id="line.272"></a>
+<span class="sourceLineNo">273</span><a id="line.273">  public static native void stopConnectionDataLog(int logger);</a>
+<span class="sourceLineNo">274</span><a id="line.274"></a>
+<span class="sourceLineNo">275</span><a id="line.275">  public static native int createLoggerPoller(int inst);</a>
+<span class="sourceLineNo">276</span><a id="line.276"></a>
+<span class="sourceLineNo">277</span><a id="line.277">  public static native void destroyLoggerPoller(int poller);</a>
+<span class="sourceLineNo">278</span><a id="line.278"></a>
+<span class="sourceLineNo">279</span><a id="line.279">  public static native int addPolledLogger(int poller, int minLevel, int maxLevel);</a>
+<span class="sourceLineNo">280</span><a id="line.280"></a>
+<span class="sourceLineNo">281</span><a id="line.281">  public static native LogMessage[] pollLogger(NetworkTableInstance inst, int poller)</a>
+<span class="sourceLineNo">282</span><a id="line.282">      throws InterruptedException;</a>
+<span class="sourceLineNo">283</span><a id="line.283"></a>
+<span class="sourceLineNo">284</span><a id="line.284">  public static native LogMessage[] pollLoggerTimeout(</a>
+<span class="sourceLineNo">285</span><a id="line.285">      NetworkTableInstance inst, int poller, double timeout) throws InterruptedException;</a>
+<span class="sourceLineNo">286</span><a id="line.286"></a>
+<span class="sourceLineNo">287</span><a id="line.287">  public static native void cancelPollLogger(int poller);</a>
+<span class="sourceLineNo">288</span><a id="line.288"></a>
+<span class="sourceLineNo">289</span><a id="line.289">  public static native void removeLogger(int logger);</a>
+<span class="sourceLineNo">290</span><a id="line.290"></a>
+<span class="sourceLineNo">291</span><a id="line.291">  public static native boolean waitForLoggerQueue(int inst, double timeout);</a>
+<span class="sourceLineNo">292</span><a id="line.292">}</a>
 
 
 
