@@ -82,6 +82,9 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "CounterBase.h", "_counter_base_8h.html", [
       [ "frc::CounterBase", "classfrc_1_1_counter_base.html", "classfrc_1_1_counter_base" ]
     ] ],
+    [ "DataLogManager.h", "_data_log_manager_8h.html", [
+      [ "frc::DataLogManager", "classfrc_1_1_data_log_manager.html", "classfrc_1_1_data_log_manager" ]
+    ] ],
     [ "DigitalGlitchFilter.h", "_digital_glitch_filter_8h.html", [
       [ "frc::DigitalGlitchFilter", "classfrc_1_1_digital_glitch_filter.html", "classfrc_1_1_digital_glitch_filter" ]
     ] ],

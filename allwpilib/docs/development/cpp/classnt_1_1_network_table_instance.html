@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1-32-gac5d46c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1-39-gd66555e</span>
    </div>
   </td>
  </tr>
@@ -293,6 +293,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7d5282662e5be28b164d932a9cdf8e81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a7d5282662e5be28b164d932a9cdf8e81">RemoveConnectionListener</a> (<a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a> conn_listener)</td></tr>
 <tr class="memdesc:a7d5282662e5be28b164d932a9cdf8e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a connection listener.  <a href="classnt_1_1_network_table_instance.html#a7d5282662e5be28b164d932a9cdf8e81">More...</a><br /></td></tr>
 <tr class="separator:a7d5282662e5be28b164d932a9cdf8e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Data Logger Functions</h2></td></tr>
+<tr class="memitem:a5b8f83283dbf3f19246d6ca028d6d243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e">NT_DataLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a5b8f83283dbf3f19246d6ca028d6d243">StartEntryDataLog</a> (<a class="el" href="classwpi_1_1log_1_1_data_log.html">wpi::log::DataLog</a> &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a48e72df6412ca98881afcd657352a1d5">log</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> logPrefix)</td></tr>
+<tr class="memdesc:a5b8f83283dbf3f19246d6ca028d6d243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts logging entry changes to a DataLog.  <a href="classnt_1_1_network_table_instance.html#a5b8f83283dbf3f19246d6ca028d6d243">More...</a><br /></td></tr>
+<tr class="separator:a5b8f83283dbf3f19246d6ca028d6d243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f6959e920ff4302f86e97181856db30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b">NT_ConnectionDataLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a4f6959e920ff4302f86e97181856db30">StartConnectionDataLog</a> (<a class="el" href="classwpi_1_1log_1_1_data_log.html">wpi::log::DataLog</a> &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a48e72df6412ca98881afcd657352a1d5">log</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name)</td></tr>
+<tr class="memdesc:a4f6959e920ff4302f86e97181856db30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts logging connection changes to a DataLog.  <a href="classnt_1_1_network_table_instance.html#a4f6959e920ff4302f86e97181856db30">More...</a><br /></td></tr>
+<tr class="separator:a4f6959e920ff4302f86e97181856db30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fd85da65fde9cf7d341978b410cc38"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a28fd85da65fde9cf7d341978b410cc38">StopEntryDataLog</a> (<a class="el" href="group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e">NT_DataLogger</a> logger)</td></tr>
+<tr class="memdesc:a28fd85da65fde9cf7d341978b410cc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops logging entry changes to a DataLog.  <a href="classnt_1_1_network_table_instance.html#a28fd85da65fde9cf7d341978b410cc38">More...</a><br /></td></tr>
+<tr class="separator:a28fd85da65fde9cf7d341978b410cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd2565c1c78f25d2128d0c3e418d575"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#acdd2565c1c78f25d2128d0c3e418d575">StopConnectionDataLog</a> (<a class="el" href="group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b">NT_ConnectionDataLogger</a> logger)</td></tr>
+<tr class="memdesc:acdd2565c1c78f25d2128d0c3e418d575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops logging connection changes to a DataLog.  <a href="classnt_1_1_network_table_instance.html#acdd2565c1c78f25d2128d0c3e418d575">More...</a><br /></td></tr>
+<tr class="separator:acdd2565c1c78f25d2128d0c3e418d575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Logger Functions</h2></td></tr>
 <tr class="memitem:a39e38354186352eb5351ae671108de5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a39e38354186352eb5351ae671108de5c">AddLogger</a> (std::function&lt; void(const <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &amp;msg)&gt; func, unsigned int minLevel, unsigned int maxLevel)</td></tr>
@@ -1793,6 +1807,52 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4f6959e920ff4302f86e97181856db30" name="a4f6959e920ff4302f86e97181856db30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f6959e920ff4302f86e97181856db30">&#9670;&nbsp;</a></span>StartConnectionDataLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b">NT_ConnectionDataLogger</a> nt::NetworkTableInstance::StartConnectionDataLog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1log_1_1_data_log.html">wpi::log::DataLog</a> &amp;&#160;</td>
+          <td class="paramname"><em>log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts logging connection changes to a DataLog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">log</td><td>data log object; lifetime must extend until StopConnectionDataLog is called or the instance is destroyed </td></tr>
+    <tr><td class="paramname">name</td><td>data log entry name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Data logger handle </dd></dl>
+
+</div>
+</div>
 <a id="a1cdbcfc6aa5e893afdbbeb437a56bdee" name="a1cdbcfc6aa5e893afdbbeb437a56bdee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1cdbcfc6aa5e893afdbbeb437a56bdee">&#9670;&nbsp;</a></span>StartDSClient()</h2>
 
@@ -1825,6 +1885,59 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5b8f83283dbf3f19246d6ca028d6d243" name="a5b8f83283dbf3f19246d6ca028d6d243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b8f83283dbf3f19246d6ca028d6d243">&#9670;&nbsp;</a></span>StartEntryDataLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e">NT_DataLogger</a> nt::NetworkTableInstance::StartEntryDataLog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1log_1_1_data_log.html">wpi::log::DataLog</a> &amp;&#160;</td>
+          <td class="paramname"><em>log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>logPrefix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts logging entry changes to a DataLog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">log</td><td>data log object; lifetime must extend until StopEntryDataLog is called or the instance is destroyed </td></tr>
+    <tr><td class="paramname">prefix</td><td>only store entries with names that start with this prefix; the prefix is not included in the data log entry name </td></tr>
+    <tr><td class="paramname">logPrefix</td><td>prefix to add to data log entry names </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Data logger handle </dd></dl>
 
 </div>
 </div>
@@ -1935,6 +2048,40 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acdd2565c1c78f25d2128d0c3e418d575" name="acdd2565c1c78f25d2128d0c3e418d575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd2565c1c78f25d2128d0c3e418d575">&#9670;&nbsp;</a></span>StopConnectionDataLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nt::NetworkTableInstance::StopConnectionDataLog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b">NT_ConnectionDataLogger</a>&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stops logging connection changes to a DataLog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logger</td><td>data logger handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8527f50a31a1bbdf73f1f45fd6c0b65d" name="a8527f50a31a1bbdf73f1f45fd6c0b65d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8527f50a31a1bbdf73f1f45fd6c0b65d">&#9670;&nbsp;</a></span>StopDSClient()</h2>
 
@@ -1959,6 +2106,40 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stops requesting server address from Driver Station. </p>
+
+</div>
+</div>
+<a id="a28fd85da65fde9cf7d341978b410cc38" name="a28fd85da65fde9cf7d341978b410cc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28fd85da65fde9cf7d341978b410cc38">&#9670;&nbsp;</a></span>StopEntryDataLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nt::NetworkTableInstance::StopEntryDataLog </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e">NT_DataLogger</a>&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stops logging entry changes to a DataLog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logger</td><td>data logger handle </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2171,7 +2352,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a></li>
-    <li class="footer">Generated on Sat Feb 26 2022 04:30:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Feb 26 2022 17:53:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

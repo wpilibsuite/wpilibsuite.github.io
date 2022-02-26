@@ -27,7 +27,7 @@ var namespaces_dup =
     [ "frc", "namespacefrc.html", "namespacefrc" ],
     [ "frc2", "namespacefrc2.html", "namespacefrc2" ],
     [ "fs", "namespacefs.html", [
-      [ "file_t", "namespacefs.html#ac70b1e99af7979a02f5bee6b5a2e58aa", null ],
+      [ "file_t", "namespacefs.html#a69bca4cd48a2ac719202f2f290a78bc9", null ],
       [ "fstream", "namespacefs.html#abd38bed113ec30fc0cf304e41ee3ff12", null ],
       [ "ifstream", "namespacefs.html#ac99ee6cbdcaf6f7e90def06726182670", null ],
       [ "ofstream", "namespacefs.html#a6403a5197805cd4be3f1e3db86210ff2", null ],

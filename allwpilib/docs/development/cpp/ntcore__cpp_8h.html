@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1-32-gac5d46c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1-39-gd66555e</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacewpi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html">wpi</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacewpi_1_1log"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1log.html">wpi::log</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacent"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacent.html">nt</a></td></tr>
 <tr class="memdesc:namespacent"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables (ntcore) namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -403,6 +407,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9e57c1308e76272f160b24b18b3ee254"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">nt::Now</a> ()</td></tr>
 <tr class="memdesc:ga9e57c1308e76272f160b24b18b3ee254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns monotonic current time in 1 us increments.  <a href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">More...</a><br /></td></tr>
 <tr class="separator:ga9e57c1308e76272f160b24b18b3ee254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8392f6242d167a6023172e4e728060ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e">NT_DataLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__data__logger__func.html#ga8392f6242d167a6023172e4e728060ed">nt::StartEntryDataLog</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, <a class="el" href="classwpi_1_1log_1_1_data_log.html">wpi::log::DataLog</a> &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a48e72df6412ca98881afcd657352a1d5">log</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> logPrefix)</td></tr>
+<tr class="memdesc:ga8392f6242d167a6023172e4e728060ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts logging entry changes to a DataLog.  <a href="group__ntcore__data__logger__func.html#ga8392f6242d167a6023172e4e728060ed">More...</a><br /></td></tr>
+<tr class="separator:ga8392f6242d167a6023172e4e728060ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab7b2f14ef128fb8e490ca0692cd07c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__data__logger__func.html#gab7b2f14ef128fb8e490ca0692cd07c51">nt::StopEntryDataLog</a> (<a class="el" href="group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e">NT_DataLogger</a> logger)</td></tr>
+<tr class="memdesc:gab7b2f14ef128fb8e490ca0692cd07c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops logging entry changes to a DataLog.  <a href="group__ntcore__data__logger__func.html#gab7b2f14ef128fb8e490ca0692cd07c51">More...</a><br /></td></tr>
+<tr class="separator:gab7b2f14ef128fb8e490ca0692cd07c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga268446df7f13fdf24fb244935d9b8eed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b">NT_ConnectionDataLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__data__logger__func.html#ga268446df7f13fdf24fb244935d9b8eed">nt::StartConnectionDataLog</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, <a class="el" href="classwpi_1_1log_1_1_data_log.html">wpi::log::DataLog</a> &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a48e72df6412ca98881afcd657352a1d5">log</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name)</td></tr>
+<tr class="memdesc:ga268446df7f13fdf24fb244935d9b8eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts logging connection changes to a DataLog.  <a href="group__ntcore__data__logger__func.html#ga268446df7f13fdf24fb244935d9b8eed">More...</a><br /></td></tr>
+<tr class="separator:ga268446df7f13fdf24fb244935d9b8eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fd4c47bd5c1f6bb3c8e268135f67a36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__data__logger__func.html#ga2fd4c47bd5c1f6bb3c8e268135f67a36">nt::StopConnectionDataLog</a> (<a class="el" href="group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b">NT_ConnectionDataLogger</a> logger)</td></tr>
+<tr class="memdesc:ga2fd4c47bd5c1f6bb3c8e268135f67a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops logging connection changes to a DataLog.  <a href="group__ntcore__data__logger__func.html#ga2fd4c47bd5c1f6bb3c8e268135f67a36">More...</a><br /></td></tr>
+<tr class="separator:ga2fd4c47bd5c1f6bb3c8e268135f67a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8171c7719887be8c60df6fbbf8408399"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399">nt::AddLogger</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, std::function&lt; void(const LogMessage &amp;msg)&gt; func, unsigned int min_level, unsigned int max_level)</td></tr>
 <tr class="memdesc:ga8171c7719887be8c60df6fbbf8408399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399">More...</a><br /></td></tr>
 <tr class="separator:ga8171c7719887be8c60df6fbbf8408399"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,7 +453,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="ntcore__cpp_8h.html">ntcore_cpp.h</a></li>
-    <li class="footer">Generated on Sat Feb 26 2022 04:30:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Feb 26 2022 17:53:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
