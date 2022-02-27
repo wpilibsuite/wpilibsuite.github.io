@@ -55,6 +55,7 @@ var namespacefrc =
     [ "Counter", "classfrc_1_1_counter.html", "classfrc_1_1_counter" ],
     [ "CounterBase", "classfrc_1_1_counter_base.html", "classfrc_1_1_counter_base" ],
     [ "CubicHermiteSpline", "classfrc_1_1_cubic_hermite_spline.html", "classfrc_1_1_cubic_hermite_spline" ],
+    [ "DataLogManager", "classfrc_1_1_data_log_manager.html", "classfrc_1_1_data_log_manager" ],
     [ "DCMotor", "classfrc_1_1_d_c_motor.html", "classfrc_1_1_d_c_motor" ],
     [ "Debouncer", "classfrc_1_1_debouncer.html", "classfrc_1_1_debouncer" ],
     [ "DifferentialDrive", "classfrc_1_1_differential_drive.html", "classfrc_1_1_differential_drive" ],

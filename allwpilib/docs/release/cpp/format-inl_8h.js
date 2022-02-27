@@ -52,7 +52,7 @@ var format_inl_8h =
     [ "num_significand_bits", "format-inl_8h.html#a84740d6d1b1ad9b243c02ee4ec87ac50", null ],
     [ "operator*", "format-inl_8h.html#a80d21e54df38b45e955af2ed01b75513", null ],
     [ "operator==", "format-inl_8h.html#aa603b042d25caa96cdd2e68d95948651", null ],
-    [ "print", "format-inl_8h.html#a4b7c06a301760f9866b4d66f5c9386a9", null ],
+    [ "print", "format-inl_8h.html#aa348a72f26ad98c21315d54f255f6fcb", null ],
     [ "remove_trailing_zeros", "format-inl_8h.html#a83117db8135a641068152ca16b84f2c8", null ],
     [ "remove_trailing_zeros", "format-inl_8h.html#a9fc2fb80666f3b16561c5e76c6339d5d", null ],
     [ "report_error", "format-inl_8h.html#a500ea148a2d7d71c2b2ab8888f8f10f0", null ],

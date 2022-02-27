@@ -8,6 +8,7 @@ var group__ntcore__cpp__handle__api =
     [ "Client/Server Functions", "group__ntcore__network__func.html", "group__ntcore__network__func" ],
     [ "File Save/Load Functions", "group__ntcore__file__func.html", "group__ntcore__file__func" ],
     [ "Utility Functions", "group__ntcore__utility__func.html", "group__ntcore__utility__func" ],
+    [ "Data Logger Functions", "group__ntcore__data__logger__func.html", "group__ntcore__data__logger__func" ],
     [ "Logger Functions", "group__ntcore__logger__func.html", "group__ntcore__logger__func" ],
     [ "nt::EntryInfo", "structnt_1_1_entry_info.html", [
       [ "swap", "structnt_1_1_entry_info.html#a7311eaf43798609406870ba7d538ab67", null ],

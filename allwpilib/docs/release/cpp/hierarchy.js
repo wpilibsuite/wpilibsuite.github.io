@@ -616,6 +616,24 @@ var hierarchy =
     [ "Eigen::internal::ternary_evaluator< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 >, IndexBased, IndexBased >::Data", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_8eba744208381e51778bcc517b7240fe.html", null ],
     [ "Eigen::internal::unary_evaluator< CwiseUnaryOp< UnaryOp, ArgType >, IndexBased >::Data", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_op_3_01_unary_op_00_01_arg_type_0172a10a169ba39d051c0ca7af1d424ea1.html", null ],
     [ "Eigen::internal::unary_evaluator< CwiseUnaryView< UnaryOp, ArgType >, IndexBased >::Data", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_079d21df0a7a154a879c65327fdb0f20.html", null ],
+    [ "wpi::log::DataLog", "classwpi_1_1log_1_1_data_log.html", null ],
+    [ "wpi::log::DataLogEntry", "classwpi_1_1log_1_1_data_log_entry.html", [
+      [ "wpi::log::BooleanArrayLogEntry", "classwpi_1_1log_1_1_boolean_array_log_entry.html", null ],
+      [ "wpi::log::BooleanLogEntry", "classwpi_1_1log_1_1_boolean_log_entry.html", null ],
+      [ "wpi::log::DoubleArrayLogEntry", "classwpi_1_1log_1_1_double_array_log_entry.html", null ],
+      [ "wpi::log::DoubleLogEntry", "classwpi_1_1log_1_1_double_log_entry.html", null ],
+      [ "wpi::log::FloatArrayLogEntry", "classwpi_1_1log_1_1_float_array_log_entry.html", null ],
+      [ "wpi::log::FloatLogEntry", "classwpi_1_1log_1_1_float_log_entry.html", null ],
+      [ "wpi::log::IntegerArrayLogEntry", "classwpi_1_1log_1_1_integer_array_log_entry.html", null ],
+      [ "wpi::log::IntegerLogEntry", "classwpi_1_1log_1_1_integer_log_entry.html", null ],
+      [ "wpi::log::RawLogEntry", "classwpi_1_1log_1_1_raw_log_entry.html", null ],
+      [ "wpi::log::StringArrayLogEntry", "classwpi_1_1log_1_1_string_array_log_entry.html", null ],
+      [ "wpi::log::StringLogEntry", "classwpi_1_1log_1_1_string_log_entry.html", null ]
+    ] ],
+    [ "wpi::log::DataLogIterator", "classwpi_1_1log_1_1_data_log_iterator.html", null ],
+    [ "frc::DataLogManager", "classfrc_1_1_data_log_manager.html", null ],
+    [ "wpi::log::DataLogReader", "classwpi_1_1log_1_1_data_log_reader.html", null ],
+    [ "wpi::log::DataLogRecord", "classwpi_1_1log_1_1_data_log_record.html", null ],
     [ "frc::DCMotor", "classfrc_1_1_d_c_motor.html", null ],
     [ "frc::Debouncer", "classfrc_1_1_debouncer.html", null ],
     [ "wpi::DebugEpochBase", "classwpi_1_1_debug_epoch_base.html", [
@@ -2017,6 +2035,7 @@ var hierarchy =
     [ "Eigen::MapBase< Reshaped< XprType, Rows, Cols, Order > >", "class_eigen_1_1_map_base.html", [
       [ "Eigen::internal::ReshapedImpl_dense< XprType, Rows, Cols, Order, true >", "class_eigen_1_1internal_1_1_reshaped_impl__dense_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01true_01_4.html", null ]
     ] ],
+    [ "wpi::MappedFileRegion", "classwpi_1_1_mapped_file_region.html", null ],
     [ "wpi::MapVector< KeyT, ValueT, MapType, VectorType >", "classwpi_1_1_map_vector.html", null ],
     [ "wpi::MapVector< KeyT, ValueT, SmallDenseMap< KeyT, unsigned, N >, SmallVector< std::pair< KeyT, ValueT >, N > >", "classwpi_1_1_map_vector.html", [
       [ "wpi::SmallMapVector< KeyT, ValueT, N >", "structwpi_1_1_small_map_vector.html", null ]
@@ -2054,6 +2073,12 @@ var hierarchy =
     [ "frc::MedianFilter< T >", "classfrc_1_1_median_filter.html", null ],
     [ "Eigen::internal::member_lpnorm< p, ResultType, Scalar >", "struct_eigen_1_1internal_1_1member__lpnorm.html", null ],
     [ "Eigen::internal::member_redux< BinaryOpT, Scalar >", "struct_eigen_1_1internal_1_1member__redux.html", null ],
+    [ "wpi::MemoryBuffer", "classwpi_1_1_memory_buffer.html", [
+      [ "wpi::SmallVectorMemoryBuffer", "classwpi_1_1_small_vector_memory_buffer.html", null ],
+      [ "wpi::WritableMemoryBuffer", "classwpi_1_1_writable_memory_buffer.html", null ],
+      [ "wpi::WriteThroughMemoryBuffer", "classwpi_1_1_write_through_memory_buffer.html", null ]
+    ] ],
+    [ "wpi::MemoryBufferRef", "classwpi_1_1_memory_buffer_ref.html", null ],
     [ "frc::MerweScaledSigmaPoints< States >", "classfrc_1_1_merwe_scaled_sigma_points.html", null ],
     [ "Eigen::internal::meta_floor_log2< n, lower, upper, selector >", "struct_eigen_1_1internal_1_1meta__floor__log2.html", null ],
     [ "Eigen::internal::meta_floor_log2< n, lower, upper, meta_floor_log2_bogus >", "struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__bogus_01_4.html", null ],
@@ -2068,6 +2093,7 @@ var hierarchy =
     [ "Eigen::internal::meta_sqrt< Y, InfX, SupX, Done >", "class_eigen_1_1internal_1_1meta__sqrt.html", null ],
     [ "Eigen::internal::meta_sqrt< Y, InfX, SupX, true >", "class_eigen_1_1internal_1_1meta__sqrt_3_01_y_00_01_inf_x_00_01_sup_x_00_01true_01_4.html", null ],
     [ "Eigen::internal::meta_yes", "struct_eigen_1_1internal_1_1meta__yes.html", null ],
+    [ "wpi::log::MetadataRecordData", "structwpi_1_1log_1_1_metadata_record_data.html", null ],
     [ "frc::TrajectoryConstraint::MinMax", "structfrc_1_1_trajectory_constraint_1_1_min_max.html", null ],
     [ "monostate", "structmonostate.html", null ],
     [ "frc::MotorSafety", "classfrc_1_1_motor_safety.html", [
@@ -3217,6 +3243,7 @@ var hierarchy =
     [ "Eigen::internal::sqrt_impl< Scalar >", "struct_eigen_1_1internal_1_1sqrt__impl.html", null ],
     [ "Eigen::internal::sqrt_impl< std::complex< T > >", "struct_eigen_1_1internal_1_1sqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html", null ],
     [ "Eigen::internal::sqrt_retval< Scalar >", "struct_eigen_1_1internal_1_1sqrt__retval.html", null ],
+    [ "wpi::log::StartRecordData", "structwpi_1_1log_1_1_start_record_data.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_state.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1_trajectory_1_1_state.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1_trapezoid_profile_1_1_state.html", null ],

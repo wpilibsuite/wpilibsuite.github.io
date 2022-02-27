@@ -32,6 +32,14 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     ] ],
     [ "condition_variable.h", "condition__variable_8h.html", "condition__variable_8h" ],
     [ "ConvertUTF.h", "_convert_u_t_f_8h.html", "_convert_u_t_f_8h" ],
+    [ "DataLog.h", "_data_log_8h.html", "_data_log_8h" ],
+    [ "DataLogReader.h", "_data_log_reader_8h.html", [
+      [ "wpi::log::StartRecordData", "structwpi_1_1log_1_1_start_record_data.html", "structwpi_1_1log_1_1_start_record_data" ],
+      [ "wpi::log::MetadataRecordData", "structwpi_1_1log_1_1_metadata_record_data.html", "structwpi_1_1log_1_1_metadata_record_data" ],
+      [ "wpi::log::DataLogRecord", "classwpi_1_1log_1_1_data_log_record.html", "classwpi_1_1log_1_1_data_log_record" ],
+      [ "wpi::log::DataLogIterator", "classwpi_1_1log_1_1_data_log_iterator.html", "classwpi_1_1log_1_1_data_log_iterator" ],
+      [ "wpi::log::DataLogReader", "classwpi_1_1log_1_1_data_log_reader.html", "classwpi_1_1log_1_1_data_log_reader" ]
+    ] ],
     [ "Demangle.h", "_demangle_8h.html", "_demangle_8h" ],
     [ "DenseMap.h", "_dense_map_8h.html", "_dense_map_8h" ],
     [ "DenseMapInfo.h", "_dense_map_info_8h.html", [
@@ -100,6 +108,9 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "leb128.h", "leb128_8h.html", "leb128_8h" ],
     [ "Logger.h", "_logger_8h.html", "_logger_8h" ],
     [ "ManagedStatic.h", "_managed_static_8h.html", "_managed_static_8h" ],
+    [ "MappedFileRegion.h", "_mapped_file_region_8h.html", [
+      [ "wpi::MappedFileRegion", "classwpi_1_1_mapped_file_region.html", "classwpi_1_1_mapped_file_region" ]
+    ] ],
     [ "MapVector.h", "_map_vector_8h.html", [
       [ "wpi::MapVector< KeyT, ValueT, MapType, VectorType >", "classwpi_1_1_map_vector.html", "classwpi_1_1_map_vector" ],
       [ "wpi::SmallMapVector< KeyT, ValueT, N >", "structwpi_1_1_small_map_vector.html", null ]
@@ -107,6 +118,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "math", "math.html", null ],
     [ "MathExtras.h", "_math_extras_8h.html", "_math_extras_8h" ],
     [ "MemAlloc.h", "_mem_alloc_8h.html", "_mem_alloc_8h" ],
+    [ "MemoryBuffer.h", "_memory_buffer_8h.html", "_memory_buffer_8h" ],
     [ "MimeTypes.h", "_mime_types_8h.html", "_mime_types_8h" ],
     [ "mpack.h", "mpack_8h.html", "mpack_8h" ],
     [ "MulticastServiceAnnouncer.h", "_multicast_service_announcer_8h.html", "_multicast_service_announcer_8h" ],
@@ -189,6 +201,9 @@ var dir_1224104d412225b996ab6dfa83431a88 =
       [ "wpi::SmallString< InternalLen >", "classwpi_1_1_small_string.html", "classwpi_1_1_small_string" ]
     ] ],
     [ "SmallVector.h", "_small_vector_8h.html", "_small_vector_8h" ],
+    [ "SmallVectorMemoryBuffer.h", "_small_vector_memory_buffer_8h.html", [
+      [ "wpi::SmallVectorMemoryBuffer", "classwpi_1_1_small_vector_memory_buffer.html", "classwpi_1_1_small_vector_memory_buffer" ]
+    ] ],
     [ "SocketError.h", "_socket_error_8h.html", "_socket_error_8h" ],
     [ "span.h", "span_8h.html", "span_8h" ],
     [ "SpanExtras.h", "_span_extras_8h.html", "_span_extras_8h" ],

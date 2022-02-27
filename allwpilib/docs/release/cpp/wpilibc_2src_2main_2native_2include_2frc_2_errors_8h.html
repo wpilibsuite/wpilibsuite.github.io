@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1</span>
    </div>
   </td>
  </tr>
@@ -130,16 +130,16 @@ Macros</h2></td></tr>
 <tr class="separator:a82134794782845c50b9a960bb191ba30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82134794782845c50b9a960bb191ba30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>(label,  offset,  message)&#160;&#160;&#160;inline constexpr int label = offset;</td></tr>
 <tr class="separator:a82134794782845c50b9a960bb191ba30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89aececfad081ca3a319cbca54288764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a89aececfad081ca3a319cbca54288764">FRC_ReportError</a>(status,  <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, ...)</td></tr>
+<tr class="memitem:a89aececfad081ca3a319cbca54288764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a89aececfad081ca3a319cbca54288764">FRC_ReportError</a>(status,  <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, ...)</td></tr>
 <tr class="memdesc:a89aececfad081ca3a319cbca54288764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a89aececfad081ca3a319cbca54288764">More...</a><br /></td></tr>
 <tr class="separator:a89aececfad081ca3a319cbca54288764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d23dc32abeccb7ba07383d141299271"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a9d23dc32abeccb7ba07383d141299271">FRC_MakeError</a>(status,  <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, ...)</td></tr>
+<tr class="memitem:a9d23dc32abeccb7ba07383d141299271"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a9d23dc32abeccb7ba07383d141299271">FRC_MakeError</a>(status,  <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, ...)</td></tr>
 <tr class="memdesc:a9d23dc32abeccb7ba07383d141299271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a runtime error exception object.  <a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a9d23dc32abeccb7ba07383d141299271">More...</a><br /></td></tr>
 <tr class="separator:a9d23dc32abeccb7ba07383d141299271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a548af4bf8d5ee5cc4b888593b3967006"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a548af4bf8d5ee5cc4b888593b3967006">FRC_CheckErrorStatus</a>(status,  <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, ...)</td></tr>
+<tr class="memitem:a548af4bf8d5ee5cc4b888593b3967006"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a548af4bf8d5ee5cc4b888593b3967006">FRC_CheckErrorStatus</a>(status,  <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, ...)</td></tr>
 <tr class="memdesc:a548af4bf8d5ee5cc4b888593b3967006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks a status code and depending on its value, either throws a RuntimeError exception, calls ReportError, or does nothing (if no error).  <a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a548af4bf8d5ee5cc4b888593b3967006">More...</a><br /></td></tr>
 <tr class="separator:a548af4bf8d5ee5cc4b888593b3967006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e058cb8c8062c0cdd799f2112961af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition,  <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, ...)</td></tr>
+<tr class="memitem:ac6e058cb8c8062c0cdd799f2112961af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition,  <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, ...)</td></tr>
 <tr class="separator:ac6e058cb8c8062c0cdd799f2112961af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81508d97a92d2c184bbc8fa49ee66651"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a81508d97a92d2c184bbc8fa49ee66651">FRC_Assert</a>(condition)&#160;&#160;&#160;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition, &quot;{}&quot;, #condition)</td></tr>
 <tr class="separator:a81508d97a92d2c184bbc8fa49ee66651"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,18 +149,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae7c9f541a9d22363f20fa1bd14bd459e">frc::GetErrorMessage</a> (int32_t *code)</td></tr>
 <tr class="memdesc:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets error message string for an error code.  <a href="namespacefrc.html#ae7c9f541a9d22363f20fa1bd14bd459e">More...</a><br /></td></tr>
 <tr class="separator:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae524c828d05c9df76525cd615a26772a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">frc::ReportErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
+<tr class="memitem:ae524c828d05c9df76525cd615a26772a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">frc::ReportErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
 <tr class="memdesc:ae524c828d05c9df76525cd615a26772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">More...</a><br /></td></tr>
 <tr class="separator:ae524c828d05c9df76525cd615a26772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49dbf58a9be631cb32db6def6184cd60"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </td></tr>
-<tr class="memitem:a49dbf58a9be631cb32db6def6184cd60"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">frc::ReportError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a49dbf58a9be631cb32db6def6184cd60"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">frc::ReportError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a49dbf58a9be631cb32db6def6184cd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">More...</a><br /></td></tr>
 <tr class="separator:a49dbf58a9be631cb32db6def6184cd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memItemLeft" align="right" valign="top">RuntimeError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">frc::MakeErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
+<tr class="memitem:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memItemLeft" align="right" valign="top">RuntimeError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">frc::MakeErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
 <tr class="memdesc:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a runtime error exception object.  <a href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">More...</a><br /></td></tr>
 <tr class="separator:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </td></tr>
-<tr class="memitem:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memTemplItemLeft" align="right" valign="top">RuntimeError&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">frc::MakeError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memTemplItemLeft" align="right" valign="top">RuntimeError&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">frc::MakeError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -198,7 +198,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, </td>
+          <td class="paramname"><a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -241,7 +241,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, </td>
+          <td class="paramname"><a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -295,7 +295,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, </td>
+          <td class="paramname"><a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -342,7 +342,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, </td>
+          <td class="paramname"><a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -449,7 +449,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html">Errors.h</a></li>
-    <li class="footer">Generated on Wed Feb 2 2022 04:48:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Feb 27 2022 18:43:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -55,6 +55,7 @@ var classfrc_1_1_driver_station =
     [ "IsTeleopEnabled", "classfrc_1_1_driver_station.html#a4569055a17be6d13e353e22a6e72bf22", null ],
     [ "IsTest", "classfrc_1_1_driver_station.html#a4857bcaa88562d60a1ddbca1b36bca36", null ],
     [ "SilenceJoystickConnectionWarning", "classfrc_1_1_driver_station.html#ad92dee0301f96316ffd2a28a22ab9e54", null ],
+    [ "StartDataLog", "classfrc_1_1_driver_station.html#ab75665ae5304f64ffb80b907abc13752", null ],
     [ "WaitForData", "classfrc_1_1_driver_station.html#a17926a2d9ecf8fd16a2c8fb5eafe9080", null ],
     [ "WaitForData", "classfrc_1_1_driver_station.html#a77dc9aa0e52c50dea3dfd2bbf066ec97", null ],
     [ "WakeupWaitForData", "classfrc_1_1_driver_station.html#a1b91ad93ca0de7be7e2d4d3723257e6f", null ],

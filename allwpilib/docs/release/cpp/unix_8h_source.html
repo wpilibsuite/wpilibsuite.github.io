@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.3.1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1</span>
    </div>
   </td>
  </tr>
@@ -207,8 +207,8 @@ $(document).ready(function(){initNavTree('unix_8h_source.html',''); initResizabl
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">/* Note: May be cast to struct iovec. See writev(2). */</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structuv__buf__t.html">uv_buf_t</a> {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordtype">char</span>* <a class="code hl_variable" href="structuv__buf__t.html#a40bb714f0ca47b0d0913caf0fd4df44e">base</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structuv__buf__t.html">  114</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structuv__buf__t.html">uv_buf_t</a> {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="structuv__buf__t.html#a40bb714f0ca47b0d0913caf0fd4df44e">  115</a></span>  <span class="keywordtype">char</span>* <a class="code hl_variable" href="structuv__buf__t.html#a40bb714f0ca47b0d0913caf0fd4df44e">base</a>;</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="structuv__buf__t.html#a1f258533d380bfb77f226e03f590388d">  116</a></span>  <span class="keywordtype">size_t</span> <a class="code hl_variable" href="structuv__buf__t.html#a1f258533d380bfb77f226e03f590388d">len</a>;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="unix_8h.html#a2bd121b427ae36738f62b1a74e110378">  117</a></span>} <a class="code hl_typedef" href="unix_8h.html#a2bd121b427ae36738f62b1a74e110378">uv_buf_t</a>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
@@ -233,14 +233,14 @@ $(document).ready(function(){initNavTree('unix_8h_source.html',''); initResizabl
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">    !defined(PTHREAD_BARRIER_SERIAL_THREAD)</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">/* TODO(bnoordhuis) Merge into uv_barrier_t in v2. */</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="struct__uv__barrier.html">  139</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct__uv__barrier.html">_uv_barrier</a> {</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="struct__uv__barrier.html#a9f41f321768dc2db18463da86cd291d4">  140</a></span>  <a class="code hl_typedef" href="win_8h.html#a7b18b934b9c7c7b34064b20afe84bd71">uv_mutex_t</a> <a class="code hl_variable" href="struct__uv__barrier.html#a9f41f321768dc2db18463da86cd291d4">mutex</a>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="struct__uv__barrier.html#a9f41f321768dc2db18463da86cd291d4">  140</a></span>  <a class="code hl_typedef" href="unix_8h.html#a877501d4f3c968ff371bcf56ebbfbc65">uv_mutex_t</a> <a class="code hl_variable" href="struct__uv__barrier.html#a9f41f321768dc2db18463da86cd291d4">mutex</a>;</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="struct__uv__barrier.html#aa00189eb23e974bb332a41e6dae2a333">  141</a></span>  <a class="code hl_union" href="unionuv__cond__t.html">uv_cond_t</a> <a class="code hl_variable" href="struct__uv__barrier.html#aa00189eb23e974bb332a41e6dae2a333">cond</a>;</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="struct__uv__barrier.html#a8c810bd66da0b964158f06896c139e2c">  142</a></span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="struct__uv__barrier.html#a8c810bd66da0b964158f06896c139e2c">threshold</a>;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="struct__uv__barrier.html#aebf4cee858f2792fb804e209e8a5af9e">  143</a></span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="struct__uv__barrier.html#aebf4cee858f2792fb804e209e8a5af9e">in</a>;</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="struct__uv__barrier.html#a6ce3e97b1f30ae4da9cdf0ec0a9f385b">  144</a></span>  <span class="keywordtype">unsigned</span> <a class="code hl_variable" href="struct__uv__barrier.html#a6ce3e97b1f30ae4da9cdf0ec0a9f385b">out</a>;</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>};</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="structuv__barrier__t.html">  147</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="structuv__barrier__t.html#a1e3fb897dc63d96a2862037bb06bf36a">  148</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct__uv__barrier.html">_uv_barrier</a>* <a class="code hl_variable" href="structuv__barrier__t.html#a1e3fb897dc63d96a2862037bb06bf36a">b</a>;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="preprocessor"># if defined(PTHREAD_BARRIER_SERIAL_THREAD)</span></div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="comment">/* TODO(bnoordhuis) Remove padding in v2. */</span></div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('unix_8h_source.html',''); initResizabl
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="unix_8h.html#af52ccc482ffbfa0a25d9e3e7619e6b12">  159</a></span><span class="keyword">typedef</span> gid_t <a class="code hl_typedef" href="unix_8h.html#af52ccc482ffbfa0a25d9e3e7619e6b12">uv_gid_t</a>;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="unix_8h.html#a1be2558072d65d0604dbf3ee774c7f17">  160</a></span><span class="keyword">typedef</span> uid_t <a class="code hl_typedef" href="unix_8h.html#a1be2558072d65d0604dbf3ee774c7f17">uv_uid_t</a>;</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="unix_8h.html#a1df4bed90a53f9a485aa145d64b2b5cb">  162</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>dirent <a class="code hl_struct" href="structuv____dirent__s.html">uv__dirent_t</a>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="unix_8h.html#a1df4bed90a53f9a485aa145d64b2b5cb">  162</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>dirent <a class="code hl_typedef" href="unix_8h.html#a1df4bed90a53f9a485aa145d64b2b5cb">uv__dirent_t</a>;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="unix_8h.html#a3bc1655a6fe63952bd28df1320c4bb7b">  164</a></span><span class="preprocessor">#define UV_DIR_PRIVATE_FIELDS \</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">  DIR* dir;</span></div>
@@ -302,9 +302,9 @@ $(document).ready(function(){initNavTree('unix_8h_source.html',''); initResizabl
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">/* Platform-specific definitions for uv_dlopen support. */</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="unix_8h.html#a88979232934ad69e09eb2b8f96cd7a92">  207</a></span><span class="preprocessor">#define UV_DYNAMIC </span><span class="comment">/* empty */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="structuv__lib__t.html">  209</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="structuv__lib__t.html#a324a35f16aeed41ee8f1ce1604998206">  210</a></span>  <span class="keywordtype">void</span>* <a class="code hl_variable" href="structuv__lib__t.html#a324a35f16aeed41ee8f1ce1604998206">handle</a>;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="keywordtype">char</span>* errmsg;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="structuv__lib__t.html#a098655badc5308af959cdac4c2809340">  211</a></span>  <span class="keywordtype">char</span>* <a class="code hl_variable" href="structuv__lib__t.html#a098655badc5308af959cdac4c2809340">errmsg</a>;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>} <a class="code hl_struct" href="structuv__lib__t.html">uv_lib_t</a>;</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="unix_8h.html#ad28718b3c3dedc9b32bb8e5c1ef4672b">  214</a></span><span class="preprocessor">#define UV_LOOP_PRIVATE_FIELDS                                                \</span></div>
@@ -587,7 +587,6 @@ $(document).ready(function(){initNavTree('unix_8h_source.html',''); initResizabl
 <div class="ttc" id="astruct__uv__barrier_html_a9f41f321768dc2db18463da86cd291d4"><div class="ttname"><a href="struct__uv__barrier.html#a9f41f321768dc2db18463da86cd291d4">_uv_barrier::mutex</a></div><div class="ttdeci">uv_mutex_t mutex</div><div class="ttdef"><b>Definition:</b> unix.h:140</div></div>
 <div class="ttc" id="astruct__uv__barrier_html_aa00189eb23e974bb332a41e6dae2a333"><div class="ttname"><a href="struct__uv__barrier.html#aa00189eb23e974bb332a41e6dae2a333">_uv_barrier::cond</a></div><div class="ttdeci">uv_cond_t cond</div><div class="ttdef"><b>Definition:</b> unix.h:141</div></div>
 <div class="ttc" id="astruct__uv__barrier_html_aebf4cee858f2792fb804e209e8a5af9e"><div class="ttname"><a href="struct__uv__barrier.html#aebf4cee858f2792fb804e209e8a5af9e">_uv_barrier::in</a></div><div class="ttdeci">unsigned in</div><div class="ttdef"><b>Definition:</b> unix.h:143</div></div>
-<div class="ttc" id="astructuv____dirent__s_html"><div class="ttname"><a href="structuv____dirent__s.html">uv__dirent_s</a></div><div class="ttdef"><b>Definition:</b> win.h:300</div></div>
 <div class="ttc" id="astructuv____io__s_html"><div class="ttname"><a href="structuv____io__s.html">uv__io_s</a></div><div class="ttdef"><b>Definition:</b> unix.h:87</div></div>
 <div class="ttc" id="astructuv____io__s_html_a155c800db22abfac6c65e717ea5e17cc"><div class="ttname"><a href="structuv____io__s.html#a155c800db22abfac6c65e717ea5e17cc">uv__io_s::cb</a></div><div class="ttdeci">uv__io_cb cb</div><div class="ttdef"><b>Definition:</b> unix.h:88</div></div>
 <div class="ttc" id="astructuv____io__s_html_a28f768761c5a496256263f7677f4be9c"><div class="ttname"><a href="structuv____io__s.html#a28f768761c5a496256263f7677f4be9c">uv__io_s::watcher_queue</a></div><div class="ttdeci">void * watcher_queue[2]</div><div class="ttdef"><b>Definition:</b> unix.h:90</div></div>
@@ -595,18 +594,20 @@ $(document).ready(function(){initNavTree('unix_8h_source.html',''); initResizabl
 <div class="ttc" id="astructuv____io__s_html_a9a8ba3ae3e18355c3341e2e50657c73a"><div class="ttname"><a href="structuv____io__s.html#a9a8ba3ae3e18355c3341e2e50657c73a">uv__io_s::pevents</a></div><div class="ttdeci">unsigned int pevents</div><div class="ttdef"><b>Definition:</b> unix.h:91</div></div>
 <div class="ttc" id="astructuv____io__s_html_a9fd9e9bc633f4a68988d4d11934d834e"><div class="ttname"><a href="structuv____io__s.html#a9fd9e9bc633f4a68988d4d11934d834e">uv__io_s::pending_queue</a></div><div class="ttdeci">void * pending_queue[2]</div><div class="ttdef"><b>Definition:</b> unix.h:89</div></div>
 <div class="ttc" id="astructuv____io__s_html_ad54f5c79beefb3c45d5053968c05950e"><div class="ttname"><a href="structuv____io__s.html#ad54f5c79beefb3c45d5053968c05950e">uv__io_s::fd</a></div><div class="ttdeci">int fd</div><div class="ttdef"><b>Definition:</b> unix.h:93</div></div>
-<div class="ttc" id="astructuv__barrier__t_html"><div class="ttname"><a href="structuv__barrier__t.html">uv_barrier_t</a></div><div class="ttdef"><b>Definition:</b> win.h:277</div></div>
+<div class="ttc" id="astructuv__barrier__t_html"><div class="ttname"><a href="structuv__barrier__t.html">uv_barrier_t</a></div><div class="ttdef"><b>Definition:</b> unix.h:147</div></div>
 <div class="ttc" id="astructuv__barrier__t_html_a1e3fb897dc63d96a2862037bb06bf36a"><div class="ttname"><a href="structuv__barrier__t.html#a1e3fb897dc63d96a2862037bb06bf36a">uv_barrier_t::b</a></div><div class="ttdeci">struct _uv_barrier * b</div><div class="ttdef"><b>Definition:</b> unix.h:148</div></div>
-<div class="ttc" id="astructuv__buf__t_html"><div class="ttname"><a href="structuv__buf__t.html">uv_buf_t</a></div><div class="ttdoc">It should be possible to cast uv_buf_t[] to WSABUF[] see http://msdn.microsoft.com/en-us/library/ms74...</div><div class="ttdef"><b>Definition:</b> win.h:227</div></div>
+<div class="ttc" id="astructuv__buf__t_html"><div class="ttname"><a href="structuv__buf__t.html">uv_buf_t</a></div><div class="ttdoc">It should be possible to cast uv_buf_t[] to WSABUF[] see http://msdn.microsoft.com/en-us/library/ms74...</div><div class="ttdef"><b>Definition:</b> unix.h:114</div></div>
 <div class="ttc" id="astructuv__buf__t_html_a1f258533d380bfb77f226e03f590388d"><div class="ttname"><a href="structuv__buf__t.html#a1f258533d380bfb77f226e03f590388d">uv_buf_t::len</a></div><div class="ttdeci">size_t len</div><div class="ttdef"><b>Definition:</b> unix.h:116</div></div>
-<div class="ttc" id="astructuv__buf__t_html_a40bb714f0ca47b0d0913caf0fd4df44e"><div class="ttname"><a href="structuv__buf__t.html#a40bb714f0ca47b0d0913caf0fd4df44e">uv_buf_t::base</a></div><div class="ttdeci">char * base</div><div class="ttdef"><b>Definition:</b> win.h:229</div></div>
-<div class="ttc" id="astructuv__lib__t_html"><div class="ttname"><a href="structuv__lib__t.html">uv_lib_t</a></div><div class="ttdef"><b>Definition:</b> win.h:321</div></div>
+<div class="ttc" id="astructuv__buf__t_html_a40bb714f0ca47b0d0913caf0fd4df44e"><div class="ttname"><a href="structuv__buf__t.html#a40bb714f0ca47b0d0913caf0fd4df44e">uv_buf_t::base</a></div><div class="ttdeci">char * base</div><div class="ttdef"><b>Definition:</b> unix.h:115</div></div>
+<div class="ttc" id="astructuv__lib__t_html"><div class="ttname"><a href="structuv__lib__t.html">uv_lib_t</a></div><div class="ttdef"><b>Definition:</b> unix.h:209</div></div>
+<div class="ttc" id="astructuv__lib__t_html_a098655badc5308af959cdac4c2809340"><div class="ttname"><a href="structuv__lib__t.html#a098655badc5308af959cdac4c2809340">uv_lib_t::errmsg</a></div><div class="ttdeci">char * errmsg</div><div class="ttdef"><b>Definition:</b> unix.h:211</div></div>
 <div class="ttc" id="astructuv__lib__t_html_a324a35f16aeed41ee8f1ce1604998206"><div class="ttname"><a href="structuv__lib__t.html#a324a35f16aeed41ee8f1ce1604998206">uv_lib_t::handle</a></div><div class="ttdeci">void * handle</div><div class="ttdef"><b>Definition:</b> unix.h:210</div></div>
 <div class="ttc" id="astructuv__loop__s_html"><div class="ttname"><a href="structuv__loop__s.html">uv_loop_s</a></div><div class="ttdef"><b>Definition:</b> uv.h:1644</div></div>
 <div class="ttc" id="athreadpool_8h_html"><div class="ttname"><a href="threadpool_8h.html">threadpool.h</a></div></div>
 <div class="ttc" id="aunionuv__cond__t_html"><div class="ttname"><a href="unionuv__cond__t.html">uv_cond_t</a></div><div class="ttdef"><b>Definition:</b> win.h:250</div></div>
 <div class="ttc" id="aunix_8h_html_a15c9ce3ba708492919fbb11bf27d54db"><div class="ttname"><a href="unix_8h.html#a15c9ce3ba708492919fbb11bf27d54db">uv_cond_t</a></div><div class="ttdeci">pthread_cond_t uv_cond_t</div><div class="ttdef"><b>Definition:</b> unix.h:131</div></div>
 <div class="ttc" id="aunix_8h_html_a1be2558072d65d0604dbf3ee774c7f17"><div class="ttname"><a href="unix_8h.html#a1be2558072d65d0604dbf3ee774c7f17">uv_uid_t</a></div><div class="ttdeci">uid_t uv_uid_t</div><div class="ttdef"><b>Definition:</b> unix.h:160</div></div>
+<div class="ttc" id="aunix_8h_html_a1df4bed90a53f9a485aa145d64b2b5cb"><div class="ttname"><a href="unix_8h.html#a1df4bed90a53f9a485aa145d64b2b5cb">uv__dirent_t</a></div><div class="ttdeci">struct dirent uv__dirent_t</div><div class="ttdef"><b>Definition:</b> unix.h:162</div></div>
 <div class="ttc" id="aunix_8h_html_a28d8d9945fd30a8c37c8557561c682c1"><div class="ttname"><a href="unix_8h.html#a28d8d9945fd30a8c37c8557561c682c1">uv_sem_t</a></div><div class="ttdeci">UV_PLATFORM_SEM_T uv_sem_t</div><div class="ttdef"><b>Definition:</b> unix.h:130</div></div>
 <div class="ttc" id="aunix_8h_html_a2bd121b427ae36738f62b1a74e110378"><div class="ttname"><a href="unix_8h.html#a2bd121b427ae36738f62b1a74e110378">uv_buf_t</a></div><div class="ttdeci">struct uv_buf_t uv_buf_t</div></div>
 <div class="ttc" id="aunix_8h_html_a3e0dacd349e5c9b36895e83499367624"><div class="ttname"><a href="unix_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a></div><div class="ttdeci">int uv_file</div><div class="ttdef"><b>Definition:</b> unix.h:119</div></div>
@@ -622,14 +623,13 @@ $(document).ready(function(){initNavTree('unix_8h_source.html',''); initResizabl
 <div class="ttc" id="aunix_8h_html_af52ccc482ffbfa0a25d9e3e7619e6b12"><div class="ttname"><a href="unix_8h.html#af52ccc482ffbfa0a25d9e3e7619e6b12">uv_gid_t</a></div><div class="ttdeci">gid_t uv_gid_t</div><div class="ttdef"><b>Definition:</b> unix.h:159</div></div>
 <div class="ttc" id="aunix_8h_html_af81628992ec6ef4954b291bf7278a383"><div class="ttname"><a href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a></div><div class="ttdeci">int uv_os_sock_t</div><div class="ttdef"><b>Definition:</b> unix.h:120</div></div>
 <div class="ttc" id="aunix_8h_html_afe492f30ceeb9a47c2dcebe480139634"><div class="ttname"><a href="unix_8h.html#afe492f30ceeb9a47c2dcebe480139634">UV_PLATFORM_SEM_T</a></div><div class="ttdeci">#define UV_PLATFORM_SEM_T</div><div class="ttdef"><b>Definition:</b> unix.h:98</div></div>
-<div class="ttc" id="awin_8h_html_a7b18b934b9c7c7b34064b20afe84bd71"><div class="ttname"><a href="win_8h.html#a7b18b934b9c7c7b34064b20afe84bd71">uv_mutex_t</a></div><div class="ttdeci">CRITICAL_SECTION uv_mutex_t</div><div class="ttdef"><b>Definition:</b> win.h:241</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_087b1a8e0ed1488a006d59bf0cd93b9d.html">libuv</a></li><li class="navelem"><a class="el" href="dir_87a6640707d1b098e35356ebaaac7457.html">include</a></li><li class="navelem"><a class="el" href="dir_34c5f5e54a24c1a85a7bd1a33795e3a6.html">uv</a></li><li class="navelem"><a class="el" href="unix_8h.html">unix.h</a></li>
-    <li class="footer">Generated on Wed Feb 2 2022 04:48:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Feb 27 2022 18:43:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
