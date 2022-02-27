@@ -22,7 +22,7 @@
 <span class="sourceLineNo">010</span><a id="line.10"> * A command that runs a given runnable when it is initialized, and another runnable when it ends.</a>
 <span class="sourceLineNo">011</span><a id="line.11"> * Useful for running and then stopping a motor, or extending and then retracting a solenoid. Has no</a>
 <span class="sourceLineNo">012</span><a id="line.12"> * end condition as-is; either subclass it or use {@link Command#withTimeout(double)} or {@link</a>
-<span class="sourceLineNo">013</span><a id="line.13"> * Command#withInterrupt(java.util.function.BooleanSupplier)} to give it one.</a>
+<span class="sourceLineNo">013</span><a id="line.13"> * Command#until(java.util.function.BooleanSupplier)} to give it one.</a>
 <span class="sourceLineNo">014</span><a id="line.14"> *</a>
 <span class="sourceLineNo">015</span><a id="line.15"> * &lt;p&gt;This class is provided by the NewCommands VendorDep</a>
 <span class="sourceLineNo">016</span><a id="line.16"> */</a>

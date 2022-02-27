@@ -51,10 +51,10 @@
 <span class="sourceLineNo">039</span><a id="line.39">      DoubleSupplier setpointSource,</a>
 <span class="sourceLineNo">040</span><a id="line.40">      DoubleConsumer useOutput,</a>
 <span class="sourceLineNo">041</span><a id="line.41">      Subsystem... requirements) {</a>
-<span class="sourceLineNo">042</span><a id="line.42">    requireNonNullParam(controller, "controller", "SynchronousPIDCommand");</a>
-<span class="sourceLineNo">043</span><a id="line.43">    requireNonNullParam(measurementSource, "measurementSource", "SynchronousPIDCommand");</a>
-<span class="sourceLineNo">044</span><a id="line.44">    requireNonNullParam(setpointSource, "setpointSource", "SynchronousPIDCommand");</a>
-<span class="sourceLineNo">045</span><a id="line.45">    requireNonNullParam(useOutput, "useOutput", "SynchronousPIDCommand");</a>
+<span class="sourceLineNo">042</span><a id="line.42">    requireNonNullParam(controller, "controller", "PIDCommand");</a>
+<span class="sourceLineNo">043</span><a id="line.43">    requireNonNullParam(measurementSource, "measurementSource", "PIDCommand");</a>
+<span class="sourceLineNo">044</span><a id="line.44">    requireNonNullParam(setpointSource, "setpointSource", "PIDCommand");</a>
+<span class="sourceLineNo">045</span><a id="line.45">    requireNonNullParam(useOutput, "useOutput", "PIDCommand");</a>
 <span class="sourceLineNo">046</span><a id="line.46"></a>
 <span class="sourceLineNo">047</span><a id="line.47">    m_controller = controller;</a>
 <span class="sourceLineNo">048</span><a id="line.48">    m_useOutput = useOutput;</a>

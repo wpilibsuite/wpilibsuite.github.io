@@ -21,7 +21,7 @@
 <span class="sourceLineNo">009</span><a id="line.9">/**</a>
 <span class="sourceLineNo">010</span><a id="line.10"> * A command that starts a notifier to run the given runnable periodically in a separate thread. Has</a>
 <span class="sourceLineNo">011</span><a id="line.11"> * no end condition as-is; either subclass it or use {@link Command#withTimeout(double)} or {@link</a>
-<span class="sourceLineNo">012</span><a id="line.12"> * Command#withInterrupt(java.util.function.BooleanSupplier)} to give it one.</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * Command#until(java.util.function.BooleanSupplier)} to give it one.</a>
 <span class="sourceLineNo">013</span><a id="line.13"> *</a>
 <span class="sourceLineNo">014</span><a id="line.14"> * &lt;p&gt;WARNING: Do not use this class unless you are confident in your ability to make the executed</a>
 <span class="sourceLineNo">015</span><a id="line.15"> * code thread-safe. If you do not know what "thread-safe" means, that is a good sign that you</a>

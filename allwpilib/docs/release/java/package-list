@@ -23,6 +23,7 @@ edu.wpi.first.math.util
 edu.wpi.first.networktables
 edu.wpi.first.util
 edu.wpi.first.util.concurrent
+edu.wpi.first.util.datalog
 edu.wpi.first.util.function
 edu.wpi.first.util.net
 edu.wpi.first.util.sendable
