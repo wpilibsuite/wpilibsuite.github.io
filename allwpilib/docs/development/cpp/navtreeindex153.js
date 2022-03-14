@@ -1,5 +1,9 @@
 var NAVTREEINDEX153 =
 {
+"struct_eigen_1_1internal_1_1matrix__exp__compute_u_v.html":[5,0,4,2,698],
+"struct_eigen_1_1internal_1_1matrix__exp__compute_u_v.html#a7847531ae0fccc8ec7648f95846c8adb":[4,0,7,4,700,0],
+"struct_eigen_1_1internal_1_1matrix__exp__compute_u_v.html#a7847531ae0fccc8ec7648f95846c8adb":[5,0,4,2,698,0],
+"struct_eigen_1_1internal_1_1matrix__exp__compute_u_v_3_01_matrix_type_00_01double_01_4.html":[5,0,4,2,699],
 "struct_eigen_1_1internal_1_1matrix__exp__compute_u_v_3_01_matrix_type_00_01double_01_4.html":[4,0,7,4,701],
 "struct_eigen_1_1internal_1_1matrix__exp__compute_u_v_3_01_matrix_type_00_01double_01_4.html#a786cb30991e8e5d01f6c2bc6383ce0e9":[4,0,7,4,701,1],
 "struct_eigen_1_1internal_1_1matrix__exp__compute_u_v_3_01_matrix_type_00_01double_01_4.html#a786cb30991e8e5d01f6c2bc6383ce0e9":[5,0,4,2,699,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX153 =
 "struct_eigen_1_1internal_1_1packet__conditional.html#a3f3e9df8f345cd2bd011797cba463ba6":[4,0,7,4,765,0],
 "struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_full_00_01_t1_00_01_t2_00_01_t3_01_4.html":[4,0,7,4,766],
 "struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_full_00_01_t1_00_01_t2_00_01_t3_01_4.html":[5,0,4,2,764],
-"struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_full_00_01_t1_00_01_t2_00_01_t3_01_4.html#ae469b34c455f5689ef29957c9bbf7277":[4,0,7,4,766,0],
-"struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_full_00_01_t1_00_01_t2_00_01_t3_01_4.html#ae469b34c455f5689ef29957c9bbf7277":[5,0,4,2,764,0],
-"struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_half_00_01_t1_00_01_t2_00_01_t3_01_4.html":[4,0,7,4,767],
-"struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_half_00_01_t1_00_01_t2_00_01_t3_01_4.html":[5,0,4,2,765],
-"struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_half_00_01_t1_00_01_t2_00_01_t3_01_4.html#ab8c4c3ca87a7ee90cacda141f39d37f3":[4,0,7,4,767,0]
+"struct_eigen_1_1internal_1_1packet__conditional_3_01_g_e_b_p_packet_full_00_01_t1_00_01_t2_00_01_t3_01_4.html#ae469b34c455f5689ef29957c9bbf7277":[4,0,7,4,766,0]
 };

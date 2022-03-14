@@ -1,5 +1,9 @@
 var NAVTREEINDEX145 =
 {
+"struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_012_01_4.html#ab7a659a376bebf4b15bbcc6132eaba44":[4,0,7,4,239,0],
+"struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_013_01_4.html":[4,0,7,4,240],
+"struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_013_01_4.html":[5,0,4,2,238],
+"struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_013_01_4.html#a0155dc9ca66d505fb83c02b6aabc3212":[4,0,7,4,240,0],
 "struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_013_01_4.html#a0155dc9ca66d505fb83c02b6aabc3212":[5,0,4,2,238,0],
 "struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_014_01_4.html":[4,0,7,4,241],
 "struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_014_01_4.html":[5,0,4,2,239],
@@ -245,9 +249,5 @@ var NAVTREEINDEX145 =
 "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#adc108f0619a3b127e036bca0ec13ac59":[4,0,7,4,283,0],
 "struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html":[5,0,4,2,282],
 "struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html":[4,0,7,4,284],
-"struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html#a2905600baa8414888bcf26978309c32d":[4,0,7,4,284,9],
-"struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html#a2905600baa8414888bcf26978309c32d":[5,0,4,2,282,9],
-"struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html#a3887f3c37b3f6b2e944620ca628d6760":[5,0,4,2,282,7],
-"struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html#a3887f3c37b3f6b2e944620ca628d6760":[4,0,7,4,284,7],
-"struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html#a3e5b569223036cceb13d67088451f6f7":[4,0,7,4,284,4]
+"struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01_arg_type_00_01_diag_index_01_4_01_4.html#a2905600baa8414888bcf26978309c32d":[4,0,7,4,284,9]
 };

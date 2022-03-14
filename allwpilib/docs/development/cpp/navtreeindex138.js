@@ -1,5 +1,9 @@
 var NAVTREEINDEX138 =
 {
+"struct_eigen_1_1_comma_initializer.html#a0e012d28c281acfd727bf3e99780c919":[3,28,35,11],
+"struct_eigen_1_1_comma_initializer.html#a0fb578ef5537c458150ea8bb7eae63d7":[3,28,35,0],
+"struct_eigen_1_1_comma_initializer.html#a55b185ca858afa95645cbc4e97030cee":[3,28,35,2],
+"struct_eigen_1_1_comma_initializer.html#a7f68d18e7f7069247aaa7ff43dbcdccb":[3,28,35,7],
 "struct_eigen_1_1_comma_initializer.html#a87dd22a8aa63222a264d263a254255b1":[3,28,35,5],
 "struct_eigen_1_1_comma_initializer.html#a9a6ad628399cc4aa31bafe8df7beb850":[3,28,35,9],
 "struct_eigen_1_1_comma_initializer.html#ab31bf5a9a85ca7afd84b7adf4baaaa5a":[3,28,35,8],
@@ -245,9 +249,5 @@ var NAVTREEINDEX138 =
 "struct_eigen_1_1_sparse_shape.html":[5,0,4,188],
 "struct_eigen_1_1_sparse_shape.html#a0a0b77bfa8e396b828d3268abaaadfd9":[4,0,7,191,0],
 "struct_eigen_1_1_sparse_shape.html#a0a0b77bfa8e396b828d3268abaaadfd9":[5,0,4,188,0],
-"struct_eigen_1_1_transpositions_shape.html":[4,0,7,204],
-"struct_eigen_1_1_transpositions_shape.html":[5,0,4,201],
-"struct_eigen_1_1_transpositions_shape.html#afad8fac6c0338e163cca86f04fe12cdb":[5,0,4,201,0],
-"struct_eigen_1_1_transpositions_shape.html#afad8fac6c0338e163cca86f04fe12cdb":[4,0,7,204,0],
-"struct_eigen_1_1_transpositions_storage.html":[5,0,4,202]
+"struct_eigen_1_1_transpositions_shape.html":[4,0,7,204]
 };

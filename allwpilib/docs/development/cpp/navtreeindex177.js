@@ -1,5 +1,9 @@
 var NAVTREEINDEX177 =
 {
+"structwpi_1_1_web_socket_1_1_client_options.html#aa64e8dec5304497458a7b37624809d6a":[4,0,20,194,0,0],
+"structwpi_1_1_web_socket_1_1_client_options.html#aa64e8dec5304497458a7b37624809d6a":[5,0,13,192,0,0],
+"structwpi_1_1_web_socket_server_1_1_server_options.html":[5,0,13,193,0],
+"structwpi_1_1_web_socket_server_1_1_server_options.html":[4,0,20,195,0],
 "structwpi_1_1_web_socket_server_1_1_server_options.html#a2c701fd5cce082c62724827b83593a42":[5,0,13,193,0,1],
 "structwpi_1_1_web_socket_server_1_1_server_options.html#a2c701fd5cce082c62724827b83593a42":[4,0,20,195,0,1],
 "structwpi_1_1_web_socket_server_1_1_server_options.html#a78ae8d53ea1934ed9f11eac3d555091c":[4,0,20,195,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX177 =
 "structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01_real_type_00_01_compatible_object_type_01_4.html#a785bd9fbdc4c6887bfd0f51010cd512b":[4,0,20,0,34,0],
 "structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01_real_type_00_01_compatible_object_type_01_4.html#a785bd9fbdc4c6887bfd0f51010cd512b":[5,0,13,0,34,0],
 "structwpi_1_1detail_1_1is__compatible__type.html":[5,0,13,0,35],
-"structwpi_1_1detail_1_1is__compatible__type.html":[4,0,20,0,35],
-"structwpi_1_1detail_1_1is__complete.html":[4,0,20,0,36],
-"structwpi_1_1detail_1_1is__complete.html":[5,0,13,0,36],
-"structwpi_1_1detail_1_1is__complete_3_01_t_00_01decltype_07sizeof_07_t_08_08_4.html":[4,0,20,0,37],
-"structwpi_1_1detail_1_1is__complete_3_01_t_00_01decltype_07sizeof_07_t_08_08_4.html":[5,0,13,0,37]
+"structwpi_1_1detail_1_1is__compatible__type.html":[4,0,20,0,35]
 };

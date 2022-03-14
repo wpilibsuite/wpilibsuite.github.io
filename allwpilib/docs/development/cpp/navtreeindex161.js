@@ -1,5 +1,9 @@
 var NAVTREEINDEX161 =
 {
+"struct_eigen_1_1internal_1_1solve__traits.html":[4,0,7,4,1131],
+"struct_eigen_1_1internal_1_1solve__traits_3_01_decomposition_00_01_rhs_type_00_01_dense_01_4.html":[5,0,4,2,1130],
+"struct_eigen_1_1internal_1_1solve__traits_3_01_decomposition_00_01_rhs_type_00_01_dense_01_4.html":[4,0,7,4,1132],
+"struct_eigen_1_1internal_1_1solve__traits_3_01_decomposition_00_01_rhs_type_00_01_dense_01_4.html#a367b5e70912bb0645f5e56e751de7b45":[5,0,4,2,1130,0],
 "struct_eigen_1_1internal_1_1solve__traits_3_01_decomposition_00_01_rhs_type_00_01_dense_01_4.html#a367b5e70912bb0645f5e56e751de7b45":[4,0,7,4,1132,0],
 "struct_eigen_1_1internal_1_1sqrt__impl.html":[5,0,4,2,1131],
 "struct_eigen_1_1internal_1_1sqrt__impl.html":[4,0,7,4,1133],
@@ -245,9 +249,5 @@ var NAVTREEINDEX161 =
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#ad3221c7291ce3aeb4fee113040a253e3":[5,0,4,2,1171,1],
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#ad98ca0c9eb73f558a20b7aeec6dfcf4d":[5,0,4,2,1171,10],
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#ad98ca0c9eb73f558a20b7aeec6dfcf4d":[4,0,7,4,1173,10],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#af9e1b1bc6e71e7cd51d0d2e37a954dee":[4,0,7,4,1173,3],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#af9e1b1bc6e71e7cd51d0d2e37a954dee":[5,0,4,2,1171,3],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html":[4,0,7,4,1174],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html":[5,0,4,2,1172],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html#a0dab38d6ea8d87fa71fc30c858034b02":[5,0,4,2,1172,0]
+"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#af9e1b1bc6e71e7cd51d0d2e37a954dee":[4,0,7,4,1173,3]
 };

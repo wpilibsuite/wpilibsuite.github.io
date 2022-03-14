@@ -1,5 +1,9 @@
 var NAVTREEINDEX140 =
 {
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html#a99fcc5348b1bc536a1595c2a2f227112":[5,0,4,2,74,0],
+"struct_eigen_1_1internal_1_1_assignment_kind.html":[4,0,7,4,78],
+"struct_eigen_1_1internal_1_1_assignment_kind.html":[5,0,4,2,76],
+"struct_eigen_1_1internal_1_1_assignment_kind.html#a18fda331c81a14c0764198df6851d6d1":[4,0,7,4,78,0],
 "struct_eigen_1_1internal_1_1_assignment_kind.html#a18fda331c81a14c0764198df6851d6d1":[5,0,4,2,76,0],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_band_shape_01_4.html":[5,0,4,2,77],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_band_shape_01_4.html":[4,0,7,4,79],
@@ -245,9 +249,5 @@ var NAVTREEINDEX140 =
 "struct_eigen_1_1internal_1_1_packet_block_management_3_01_index_00_01_scalar_00_01_packet_00_01nff208c892a9f40bbef360b2fb540448f.html":[5,0,4,2,787],
 "struct_eigen_1_1internal_1_1_packet_block_management_3_01_index_00_01_scalar_00_01_packet_00_01nff208c892a9f40bbef360b2fb540448f.html#a690fad8f392ba2ae10b0fc3448f67cce":[5,0,4,2,787,0],
 "struct_eigen_1_1internal_1_1_packet_block_management_3_01_index_00_01_scalar_00_01_packet_00_01nff208c892a9f40bbef360b2fb540448f.html#a690fad8f392ba2ae10b0fc3448f67cce":[4,0,7,4,789,0],
-"struct_eigen_1_1internal_1_1_quad_packet.html":[4,0,7,4,914],
-"struct_eigen_1_1internal_1_1_quad_packet.html":[5,0,4,2,912],
-"struct_eigen_1_1internal_1_1_quad_packet.html#a37b6aeae4b8b5d38ccbd87fc7b6cc3be":[5,0,4,2,912,0],
-"struct_eigen_1_1internal_1_1_quad_packet.html#a37b6aeae4b8b5d38ccbd87fc7b6cc3be":[4,0,7,4,914,0],
-"struct_eigen_1_1internal_1_1_quad_packet.html#a5982c5989c1592d71f062a67f83ba026":[4,0,7,4,914,1]
+"struct_eigen_1_1internal_1_1_quad_packet.html":[4,0,7,4,914]
 };

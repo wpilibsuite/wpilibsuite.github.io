@@ -1,5 +1,9 @@
 var NAVTREEINDEX115 =
 {
+"group__hal__analogtrigger.html":[3,1,29],
+"group__hal__analogtrigger.html#ga0bea6e6dcf72bcdad4c3450107a4ca13":[3,1,29,0],
+"group__hal__analogtrigger.html#ga3e41157e63a8668277ba24ab716f31d2":[3,1,29,3],
+"group__hal__analogtrigger.html#ga48627e2947670c867be01bbce213e9dc":[3,1,29,10],
 "group__hal__analogtrigger.html#ga5416ba50d2c46ecbc8d3ca2d08ef9573":[3,1,29,9],
 "group__hal__analogtrigger.html#ga69e4c7e259fdd1a79a6ac3c04edb89c5":[3,1,29,11],
 "group__hal__analogtrigger.html#ga741ca0b967f3a37b19f054d8689ab413":[3,1,29,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX115 =
 "group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee":[3,1,15,19],
 "group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40":[3,1,15,9],
 "group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6":[3,1,15,8],
-"group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff":[3,1,15,12],
-"group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106":[3,1,15,0],
-"group__hal__errors.html":[3,1,10],
-"group__hal__errors.html#ga01ecb9d6ea0dc15d38fae6a35fcd71d2":[3,1,10,28],
-"group__hal__errors.html#ga083e21f7fd6914bc430c977ac9fdc519":[3,1,10,69]
+"group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff":[3,1,15,12]
 };

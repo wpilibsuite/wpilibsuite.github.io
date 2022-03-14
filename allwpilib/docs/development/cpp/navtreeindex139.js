@@ -1,5 +1,9 @@
 var NAVTREEINDEX139 =
 {
+"struct_eigen_1_1_transpositions_shape.html":[5,0,4,201],
+"struct_eigen_1_1_transpositions_shape.html#afad8fac6c0338e163cca86f04fe12cdb":[5,0,4,201,0],
+"struct_eigen_1_1_transpositions_shape.html#afad8fac6c0338e163cca86f04fe12cdb":[4,0,7,204,0],
+"struct_eigen_1_1_transpositions_storage.html":[5,0,4,202],
 "struct_eigen_1_1_transpositions_storage.html":[4,0,7,205],
 "struct_eigen_1_1_triangular_shape.html":[5,0,4,205],
 "struct_eigen_1_1_triangular_shape.html":[4,0,7,208],
@@ -245,9 +249,5 @@ var NAVTREEINDEX139 =
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_dense_01_4.html#a931b3b9ca1a40b366c22143993b50f67":[5,0,4,2,73,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html":[4,0,7,4,76],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html":[5,0,4,2,74],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html#a99fcc5348b1bc536a1595c2a2f227112":[4,0,7,4,76,0],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html#a99fcc5348b1bc536a1595c2a2f227112":[5,0,4,2,74,0],
-"struct_eigen_1_1internal_1_1_assignment_kind.html":[4,0,7,4,78],
-"struct_eigen_1_1internal_1_1_assignment_kind.html":[5,0,4,2,76],
-"struct_eigen_1_1internal_1_1_assignment_kind.html#a18fda331c81a14c0764198df6851d6d1":[4,0,7,4,78,0]
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html#a99fcc5348b1bc536a1595c2a2f227112":[4,0,7,4,76,0]
 };

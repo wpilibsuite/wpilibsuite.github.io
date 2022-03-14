@@ -1,5 +1,9 @@
 var NAVTREEINDEX156 =
 {
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html":[4,0,7,4,844],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html#a906505ffb186319872f7c08d884b2885":[5,0,4,2,842,0],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html#a906505ffb186319872f7c08d884b2885":[4,0,7,4,844,0],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_diagonal_shape_00_01_product_tag_01_4.html":[4,0,7,4,845],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_diagonal_shape_00_01_product_tag_01_4.html":[5,0,4,2,843],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_diagonal_shape_00_01_product_tag_01_4.html#acc40c9c92bbe0fa39119e1f13bdf3c7a":[5,0,4,2,843,0],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_diagonal_shape_00_01_product_tag_01_4.html#acc40c9c92bbe0fa39119e1f13bdf3c7a":[4,0,7,4,845,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX156 =
 "struct_eigen_1_1internal_1_1real__default__impl_3_01_scalar_00_01true_01_4.html#ad955f4b83dfa41fa283c7904ad582cdd":[5,0,4,2,925,0],
 "struct_eigen_1_1internal_1_1real__impl.html":[4,0,7,4,928],
 "struct_eigen_1_1internal_1_1real__impl.html":[5,0,4,2,926],
-"struct_eigen_1_1internal_1_1real__ref__impl.html":[4,0,7,4,929],
-"struct_eigen_1_1internal_1_1real__ref__impl.html":[5,0,4,2,927],
-"struct_eigen_1_1internal_1_1real__ref__impl.html#a7f3386fed59f5edd6a24dfe5762df894":[4,0,7,4,929,1],
-"struct_eigen_1_1internal_1_1real__ref__impl.html#a7f3386fed59f5edd6a24dfe5762df894":[5,0,4,2,927,1],
-"struct_eigen_1_1internal_1_1real__ref__impl.html#acb00bb242ddaee8a963fab35fe11b60d":[4,0,7,4,929,2]
+"struct_eigen_1_1internal_1_1real__ref__impl.html":[4,0,7,4,929]
 };

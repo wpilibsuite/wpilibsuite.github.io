@@ -1,5 +1,9 @@
 var NAVTREEINDEX179 =
 {
+"structwpi_1_1sig_1_1detail_1_1_null_mutex.html#a722de0c10dfd88d764d8c1cd994b99df":[5,0,13,6,0,0,3],
+"structwpi_1_1sig_1_1detail_1_1_null_mutex.html#a722de0c10dfd88d764d8c1cd994b99df":[4,0,20,7,0,0,3],
+"structwpi_1_1sig_1_1detail_1_1_null_mutex.html#a80d49667afbc974171e8177c6b354938":[4,0,20,7,0,0,5],
+"structwpi_1_1sig_1_1detail_1_1_null_mutex.html#a80d49667afbc974171e8177c6b354938":[5,0,13,6,0,0,5],
 "structwpi_1_1sig_1_1detail_1_1_null_mutex.html#ac5098c950025a9032199d037b5f1f26d":[4,0,20,7,0,0,6],
 "structwpi_1_1sig_1_1detail_1_1_null_mutex.html#ac5098c950025a9032199d037b5f1f26d":[5,0,13,6,0,0,6],
 "structwpi_1_1sig_1_1detail_1_1_null_mutex.html#ae0003bb1d8be12326659a897f7efc6c0":[4,0,20,7,0,0,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX179 =
 "union_eigen_1_1half__impl_1_1float32__bits.html#ab5c7147d2a8c067dee4a96e86f793bd8":[5,0,4,1,1,1],
 "unionarg__ref_1_1value.html":[5,0,24,0],
 "unionarg__ref_1_1value.html#a42715a96f05b12f681ef9311a8c281cd":[5,0,24,0,2],
-"unionarg__ref_1_1value.html#a89c3aef92ec3965f6f8884252cf5fa04":[5,0,24,0,3],
-"unionarg__ref_1_1value.html#aa60ad8f3f6a895eb17d71d9742b4b9bb":[5,0,24,0,1],
-"unionarg__ref_1_1value.html#ab19f08a79cd30dfd8f1bdf014ed486fc":[5,0,24,0,0],
-"unioncolor__type_1_1color__union.html":[5,0,49,0],
-"unioncolor__type_1_1color__union.html#a84de6ad738e7559ada9b726f96768391":[5,0,49,0,0]
+"unionarg__ref_1_1value.html#a89c3aef92ec3965f6f8884252cf5fa04":[5,0,24,0,3]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX148 =
 {
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__square__op_3_01_scalar_01_4_01_4.html":[4,0,7,4,407],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__square__op_3_01bool_01_4_01_4.html":[5,0,4,2,404],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__square__op_3_01bool_01_4_01_4.html":[4,0,7,4,406],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__sum__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[5,0,4,2,406],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__sum__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[4,0,7,4,408],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__tan__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,407],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__tan__op_3_01_scalar_01_4_01_4.html":[4,0,7,4,409],
@@ -245,9 +249,5 @@ var NAVTREEINDEX148 =
 "struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a2a8afa7992d317ca223bbd7ded473b34":[4,0,7,4,469,11],
 "struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a39566d89c8fce46e83cf1bc5a640130b":[4,0,7,4,469,12],
 "struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a39566d89c8fce46e83cf1bc5a640130b":[5,0,4,2,467,12],
-"struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a3a6b82d6ec8ba5f2217908d3a3c24757":[5,0,4,2,467,9],
-"struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a3a6b82d6ec8ba5f2217908d3a3c24757":[4,0,7,4,469,9],
-"struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a795e8a5a23c15f7b4d069ce1306f9ce0":[5,0,4,2,467,10],
-"struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a795e8a5a23c15f7b4d069ce1306f9ce0":[4,0,7,4,469,10],
-"struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a916acc32b58baf444e8d6705c50ce048":[5,0,4,2,467,5]
+"struct_eigen_1_1internal_1_1general__matrix__vector__product_3_01_index_00_01_lhs_scalar_00_01_l24320a1e63993864008333cadda60258.html#a3a6b82d6ec8ba5f2217908d3a3c24757":[5,0,4,2,467,9]
 };

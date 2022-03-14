@@ -1,5 +1,9 @@
 var NAVTREEINDEX165 =
 {
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint32__t_01_4.html":[4,0,7,4,1364],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint64__t_01_4.html":[4,0,7,4,1365],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint64__t_01_4.html":[5,0,4,2,1363],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint8__t_01_4.html":[4,0,7,4,1366],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint8__t_01_4.html":[5,0,4,2,1364],
 "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop.html":[4,0,7,4,1367],
 "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop.html":[5,0,4,2,1365],
@@ -245,9 +249,5 @@ var NAVTREEINDEX165 =
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html#ab37d65daf774d2a04f2931f493e1c95a":[4,0,7,4,1379,8],
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html#ad5f85b0be160dd4639c86d896978cd80":[5,0,4,2,1377,3],
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html#ad5f85b0be160dd4639c86d896978cd80":[4,0,7,4,1379,3],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html#aef9506dd163d2f0c59da29512949a9d8":[4,0,7,4,1379,4],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html#aef9506dd163d2f0c59da29512949a9d8":[5,0,4,2,1377,4],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html":[5,0,4,2,1378],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html":[4,0,7,4,1380],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html#a3a7729a020a83f999d535d7cc1273164":[5,0,4,2,1378,0]
+"struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html#aef9506dd163d2f0c59da29512949a9d8":[4,0,7,4,1379,4]
 };

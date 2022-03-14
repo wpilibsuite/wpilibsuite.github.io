@@ -1,5 +1,9 @@
 var NAVTREEINDEX155 =
 {
+"struct_eigen_1_1internal_1_1plain__col__type.html":[5,0,4,2,804],
+"struct_eigen_1_1internal_1_1plain__col__type.html#a17712acb2f07a712205370a99a62f402":[4,0,7,4,806,0],
+"struct_eigen_1_1internal_1_1plain__col__type.html#a17712acb2f07a712205370a99a62f402":[5,0,4,2,804,0],
+"struct_eigen_1_1internal_1_1plain__col__type.html#a50d7bd17cb1a08813dc6d2c58cae4261":[5,0,4,2,804,2],
 "struct_eigen_1_1internal_1_1plain__col__type.html#a50d7bd17cb1a08813dc6d2c58cae4261":[4,0,7,4,806,2],
 "struct_eigen_1_1internal_1_1plain__col__type.html#ac75ab0cd71ee5bed5adbd9b77eeba12a":[5,0,4,2,804,1],
 "struct_eigen_1_1internal_1_1plain__col__type.html#ac75ab0cd71ee5bed5adbd9b77eeba12a":[4,0,7,4,806,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX155 =
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html":[4,0,7,4,843],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html#ac3a1efea82c04a784a4a91c24f4a24be":[5,0,4,2,841,0],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html#ac3a1efea82c04a784a4a91c24f4a24be":[4,0,7,4,843,0],
-"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html":[5,0,4,2,842],
-"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html":[4,0,7,4,844],
-"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html#a906505ffb186319872f7c08d884b2885":[5,0,4,2,842,0],
-"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html#a906505ffb186319872f7c08d884b2885":[4,0,7,4,844,0],
-"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_diagonal_shape_00_01_product_tag_01_4.html":[4,0,7,4,845]
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html":[5,0,4,2,842]
 };

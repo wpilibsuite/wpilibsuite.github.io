@@ -1,5 +1,9 @@
 var NAVTREEINDEX167 =
 {
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet8us_01_4.html#a8bff19bd591f693c545e97a3b6ff3a50":[5,0,4,2,1415,1],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01const_01_t_01_4.html":[4,0,7,4,1385],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01const_01_t_01_4.html":[5,0,4,2,1383],
+"struct_eigen_1_1internal_1_1valid__indexed__view__overload.html":[4,0,7,4,1419],
 "struct_eigen_1_1internal_1_1valid__indexed__view__overload.html":[5,0,4,2,1417],
 "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl.html":[4,0,7,4,1425],
 "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl.html":[5,0,4,2,1423],
@@ -245,9 +249,5 @@ var NAVTREEINDEX167 =
 "struct_n_t___connection_info.html":[3,8,13],
 "struct_n_t___connection_info.html#a30da15ce52b23bbbc867a201548e1d48":[3,8,13,3],
 "struct_n_t___connection_info.html#a62e6f419f8918e0e3c72aa2a627685e1":[3,8,13,4],
-"struct_n_t___connection_info.html#a6754d753de9ec8af67339961845d3512":[3,8,13,0],
-"struct_n_t___connection_info.html#a9f03cd89f577238b63383e66c80818ed":[3,8,13,1],
-"struct_n_t___connection_info.html#abc07959851c53c5d378fbd8ac6797bb8":[3,8,13,2],
-"struct_n_t___connection_notification.html":[3,8,19],
-"struct_n_t___connection_notification.html#a46228561287d59ee9191f74270a58967":[3,8,19,0]
+"struct_n_t___connection_info.html#a6754d753de9ec8af67339961845d3512":[3,8,13,0]
 };

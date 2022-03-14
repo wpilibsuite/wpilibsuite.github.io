@@ -1,5 +1,9 @@
 var NAVTREEINDEX163 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html":[5,0,4,2,1211,0],
+"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html#a80261b560ce9ffdd3a0a150a10bfbd57":[4,0,7,4,1213,0,0],
+"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html#a80261b560ce9ffdd3a0a150a10bfbd57":[5,0,4,2,1211,0,0],
+"struct_eigen_1_1internal_1_1traits_3_01_ref_base_3_01_derived_01_4_01_4.html":[5,0,4,2,1212],
 "struct_eigen_1_1internal_1_1traits_3_01_ref_base_3_01_derived_01_4_01_4.html":[4,0,7,4,1214],
 "struct_eigen_1_1internal_1_1traits_3_01_replicate_3_01_matrix_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html":[5,0,4,2,1213],
 "struct_eigen_1_1internal_1_1traits_3_01_replicate_3_01_matrix_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html":[4,0,7,4,1215],
@@ -245,9 +249,5 @@ var NAVTREEINDEX163 =
 "struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_on_the_right_0718422e7095664eb478cc4024fd5b399.html":[4,0,7,4,1260],
 "struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_on_the_right_0718422e7095664eb478cc4024fd5b399.html#a4d4360519cc5aa18ce9a3cd047f18366":[5,0,4,2,1258,0],
 "struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_on_the_right_0718422e7095664eb478cc4024fd5b399.html#a4d4360519cc5aa18ce9a3cd047f18366":[4,0,7,4,1260,0],
-"struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_side_00_01_mod9d4c365fbf3ecd733e3c477f950cfbe8.html":[5,0,4,2,1260],
-"struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_side_00_01_mod9d4c365fbf3ecd733e3c477f950cfbe8.html":[4,0,7,4,1262],
-"struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_side_00_01_mod9d4c365fbf3ecd733e3c477f950cfbe8.html#a4d6166a12a8835cfa49df66753a6d344":[4,0,7,4,1262,1],
-"struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_side_00_01_mod9d4c365fbf3ecd733e3c477f950cfbe8.html#a4d6166a12a8835cfa49df66753a6d344":[5,0,4,2,1260,1],
-"struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_side_00_01_mod9d4c365fbf3ecd733e3c477f950cfbe8.html#a6d6c1e5b5020b6a4ca32cd7a6c98b5f1":[5,0,4,2,1260,2]
+"struct_eigen_1_1internal_1_1triangular__solver__selector_3_01_lhs_00_01_rhs_00_01_side_00_01_mod9d4c365fbf3ecd733e3c477f950cfbe8.html":[5,0,4,2,1260]
 };

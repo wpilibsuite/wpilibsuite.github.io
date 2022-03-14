@@ -1,5 +1,9 @@
 var NAVTREEINDEX168 =
 {
+"struct_n_t___connection_info.html#a9f03cd89f577238b63383e66c80818ed":[3,8,13,1],
+"struct_n_t___connection_info.html#abc07959851c53c5d378fbd8ac6797bb8":[3,8,13,2],
+"struct_n_t___connection_notification.html":[3,8,19],
+"struct_n_t___connection_notification.html#a46228561287d59ee9191f74270a58967":[3,8,19,0],
 "struct_n_t___connection_notification.html#a94cc2f3b8a74683859f14f9d5a9c1ea1":[3,8,19,2],
 "struct_n_t___connection_notification.html#a9f0adeeeb6e0d91b9f9231b8784bf0a0":[3,8,19,1],
 "struct_n_t___entry_info.html":[3,8,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX168 =
 "structchrono__formatter.html#aef9d770b96d40e5cbd05ffc79d312d39":[5,0,48,26],
 "structchrono__formatter.html#afa27c67e4e76322c6f4a02ba4330e5b0":[5,0,48,18],
 "structchrono__formatter.html#afc3b827231b8b904910fd0aac4249885":[5,0,48,23],
-"structchrono__formatter.html#afd808e5eed54ab6f0acb149421a73dd9":[5,0,48,52],
-"structchrono__formatter.html#afef01a6c5bcc3ec8265c1c92625f4e57":[5,0,48,33],
-"structchrono__formatter.html#affba0b48d0655aedfb449264b125433e":[5,0,48,25],
-"structcolor__type.html":[5,0,49],
-"structcolor__type.html#a0d4321deda7a3c7c8c00af9b2c44b909":[5,0,49,1]
+"structchrono__formatter.html#afd808e5eed54ab6f0acb149421a73dd9":[5,0,48,52]
 };

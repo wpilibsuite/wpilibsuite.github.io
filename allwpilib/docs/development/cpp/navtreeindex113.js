@@ -1,5 +1,9 @@
 var NAVTREEINDEX113 =
 {
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a94f36dec8bcf3b15f4bedcf76f4ce1eb":[3,12,30,1],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322aa91f4e9d8fd72a18bfddcb44e8c6c936":[3,12,30,4],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322acd1fea783197c3a5a6a577a98e8f6ff5":[3,12,30,6],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322ad006566272bc582192fe56bd147c59de":[3,12,30,10],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322adee5eaa684a5a52054ad0d74f123a7e9":[3,12,30,7],
 "group__cscore__camera__property__func.html":[3,13,3],
 "group__cscore__camera__property__func.html#ga2dcccaf5617eb8bfd4680e2c67359a24":[3,13,3,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX113 =
 "group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07":[3,12,0,2],
 "group__cscore__usbcamera__cfunc.html":[3,12,5],
 "group__cscore__usbcamera__cfunc.html#ga677c046028ed1f1b8df4970362989d1c":[3,12,5,0],
-"group__cscore__usbcamera__cfunc.html#gade5e1d1755eebf099beba279cfcb87c3":[3,12,5,2],
-"group__cscore__usbcamera__cfunc.html#gaf20e10071bc6485edeaf5b13e8d9fd1b":[3,12,5,1],
-"group__cscore__usbcamera__func.html":[3,13,4],
-"group__cscore__usbcamera__func.html#ga5720a0a76f3bb8bceaa8db89ff4482ab":[3,13,4,0],
-"group__cscore__usbcamera__func.html#gab91d85d1cba9dcf14dc758afb6a0aa7f":[3,13,4,1]
+"group__cscore__usbcamera__cfunc.html#gade5e1d1755eebf099beba279cfcb87c3":[3,12,5,2]
 };

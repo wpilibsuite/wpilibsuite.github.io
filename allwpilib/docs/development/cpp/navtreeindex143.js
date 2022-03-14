@@ -1,5 +1,9 @@
 var NAVTREEINDEX143 =
 {
+"struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_unary_op_3_01scalar__opposite__op_3_01_scalabef74274251827708a3725df034ebf7d.html#ac6f066ce18637fba5bd7392f86343529":[4,0,7,4,115,2],
+"struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_unary_op_3_01scalar__opposite__op_3_01_scalabef74274251827708a3725df034ebf7d.html#ad98da552792b4d5489ca94fe7953eaa8":[5,0,4,2,113,4],
+"struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_unary_op_3_01scalar__opposite__op_3_01_scalabef74274251827708a3725df034ebf7d.html#ad98da552792b4d5489ca94fe7953eaa8":[4,0,7,4,115,4],
+"struct_eigen_1_1internal_1_1blas__traits_3_01_transpose_3_01_nested_xpr_01_4_01_4.html":[5,0,4,2,114],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_transpose_3_01_nested_xpr_01_4_01_4.html":[4,0,7,4,116],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_transpose_3_01_nested_xpr_01_4_01_4.html#a4263fd65419c2513eb9a6e1d45b21b86":[4,0,7,4,116,6],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_transpose_3_01_nested_xpr_01_4_01_4.html#a4263fd65419c2513eb9a6e1d45b21b86":[5,0,4,2,114,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX143 =
 "struct_eigen_1_1internal_1_1conj__helper_3_01_lhs_scalar_00_01_rhs_scalar_00_01true_00_01true_01_4.html#a4e5534a5988aa5ac83007a80d46898eb":[4,0,7,4,175,2],
 "struct_eigen_1_1internal_1_1conj__helper_3_01_lhs_scalar_00_01_rhs_scalar_00_01true_00_01true_01_4.html#a9e7ea32bdc7bd3f4b8d2a7f52a4c8cd1":[5,0,4,2,173,0],
 "struct_eigen_1_1internal_1_1conj__helper_3_01_lhs_scalar_00_01_rhs_scalar_00_01true_00_01true_01_4.html#a9e7ea32bdc7bd3f4b8d2a7f52a4c8cd1":[4,0,7,4,175,0],
-"struct_eigen_1_1internal_1_1conj__helper_3_01_lhs_scalar_00_01_rhs_scalar_00_01true_00_01true_01_4.html#aa1164387e56b59b997ad4edfea7ab921":[5,0,4,2,173,1],
-"struct_eigen_1_1internal_1_1conj__helper_3_01_lhs_scalar_00_01_rhs_scalar_00_01true_00_01true_01_4.html#aa1164387e56b59b997ad4edfea7ab921":[4,0,7,4,175,1],
-"struct_eigen_1_1internal_1_1conj__helper_3_01_packet_00_01_packet_00_01_conj_lhs_00_01_conj_rhs_01_4.html":[4,0,7,4,176],
-"struct_eigen_1_1internal_1_1conj__helper_3_01_packet_00_01_packet_00_01_conj_lhs_00_01_conj_rhs_01_4.html":[5,0,4,2,174],
-"struct_eigen_1_1internal_1_1conj__helper_3_01_packet_00_01_packet_00_01_conj_lhs_00_01_conj_rhs_01_4.html#a31ed0040471958017185eb218606c058":[4,0,7,4,176,2]
+"struct_eigen_1_1internal_1_1conj__helper_3_01_lhs_scalar_00_01_rhs_scalar_00_01true_00_01true_01_4.html#aa1164387e56b59b997ad4edfea7ab921":[5,0,4,2,173,1]
 };

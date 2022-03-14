@@ -1,5 +1,9 @@
 var NAVTREEINDEX137 =
 {
+"numbers.html#ac9f78705d45d38a3d2060f9d779ca0e6":[6,0,14,65,8],
+"numbers.html#ae801296fa079882d00bbb91df46c280e":[6,0,14,65,11],
+"numbers.html#aea3c4e61cb339b0141e859c3a8c4ee85":[6,0,14,65,24],
+"numbers.html#af8072a72d9a5d4d6401a5f4557a8002e":[6,0,14,65,14],
 "os_8h.html":[6,0,4,0,0,8],
 "os_8h.html#a4107274242b7f99d9559aabd297f7534":[6,0,4,0,0,8,8],
 "os_8h.html#a54f7e73fc1fc6ded8358c6339b51bde7":[6,0,4,0,0,8,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX137 =
 "struct_eigen_1_1_cleaned_up_der_type.html#abff14b2f799356961e6cdc67d83fe491":[4,0,7,26,0],
 "struct_eigen_1_1_cleaned_up_der_type.html#abff14b2f799356961e6cdc67d83fe491":[5,0,4,23,0],
 "struct_eigen_1_1_comma_initializer.html":[3,28,35],
-"struct_eigen_1_1_comma_initializer.html#a0b4c51ae41d98320e4ee66e27e6f8dfa":[3,28,35,3],
-"struct_eigen_1_1_comma_initializer.html#a0e012d28c281acfd727bf3e99780c919":[3,28,35,11],
-"struct_eigen_1_1_comma_initializer.html#a0fb578ef5537c458150ea8bb7eae63d7":[3,28,35,0],
-"struct_eigen_1_1_comma_initializer.html#a55b185ca858afa95645cbc4e97030cee":[3,28,35,2],
-"struct_eigen_1_1_comma_initializer.html#a7f68d18e7f7069247aaa7ff43dbcdccb":[3,28,35,7]
+"struct_eigen_1_1_comma_initializer.html#a0b4c51ae41d98320e4ee66e27e6f8dfa":[3,28,35,3]
 };

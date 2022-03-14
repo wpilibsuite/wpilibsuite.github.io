@@ -1,5 +1,9 @@
 var NAVTREEINDEX162 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#af9e1b1bc6e71e7cd51d0d2e37a954dee":[5,0,4,2,1171,3],
+"struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html":[4,0,7,4,1174],
+"struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html":[5,0,4,2,1172],
+"struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html#a0dab38d6ea8d87fa71fc30c858034b02":[5,0,4,2,1172,0],
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html#a0dab38d6ea8d87fa71fc30c858034b02":[4,0,7,4,1174,0],
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html#a2f68010027de6207c504d0c746f79c17":[4,0,7,4,1174,2],
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_unary_op_3_01_unary_op_00_01_xpr_type_01_4_01_4.html#a2f68010027de6207c504d0c746f79c17":[5,0,4,2,1172,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX162 =
 "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4.html#a1a891225ab7bc2b909fe009cb15af8ca":[5,0,4,2,1211,1],
 "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4.html#a3d87abd458a368ce0a3ec13e4c90667a":[5,0,4,2,1211,2],
 "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4.html#a3d87abd458a368ce0a3ec13e4c90667a":[4,0,7,4,1213,2],
-"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html":[4,0,7,4,1213,0],
-"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html":[5,0,4,2,1211,0],
-"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html#a80261b560ce9ffdd3a0a150a10bfbd57":[4,0,7,4,1213,0,0],
-"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html#a80261b560ce9ffdd3a0a150a10bfbd57":[5,0,4,2,1211,0,0],
-"struct_eigen_1_1internal_1_1traits_3_01_ref_base_3_01_derived_01_4_01_4.html":[5,0,4,2,1212]
+"struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html":[4,0,7,4,1213,0]
 };
