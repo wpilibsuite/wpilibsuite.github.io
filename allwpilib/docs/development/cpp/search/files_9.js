@@ -16,13 +16,14 @@ var searchData=
   ['instantcommand_2eh_13',['InstantCommand.h',['../wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_instant_command_8h.html',1,'(Global Namespace)'],['../wpilib_old_commands_2src_2main_2native_2include_2frc_2commands_2_instant_command_8h.html',1,'(Global Namespace)']]],
   ['integralconstant_2eh_14',['IntegralConstant.h',['../_integral_constant_8h.html',1,'']]],
   ['internalbutton_2eh_15',['InternalButton.h',['../_internal_button_8h.html',1,'']]],
-  ['interrupts_2eh_16',['Interrupts.h',['../_interrupts_8h.html',1,'']]],
-  ['inverse_2eh_17',['Inverse.h',['../_inverse_8h.html',1,'']]],
-  ['inverseimpl_2eh_18',['InverseImpl.h',['../_inverse_impl_8h.html',1,'']]],
-  ['inversesize4_2eh_19',['InverseSize4.h',['../_inverse_size4_8h.html',1,'']]],
-  ['io_2eh_20',['IO.h',['../_i_o_8h.html',1,'']]],
-  ['is_5fapprox_5fequal_5fabstol_2eh_21',['is_approx_equal_abstol.h',['../is__approx__equal__abstol_8h.html',1,'']]],
-  ['iterativerobotbase_2eh_22',['IterativeRobotBase.h',['../_iterative_robot_base_8h.html',1,'']]],
-  ['iterator_2eh_23',['iterator.h',['../iterator_8h.html',1,'']]],
-  ['iterator_5frange_2eh_24',['iterator_range.h',['../iterator__range_8h.html',1,'']]]
+  ['interpolating_5fmap_2eh_16',['interpolating_map.h',['../interpolating__map_8h.html',1,'']]],
+  ['interrupts_2eh_17',['Interrupts.h',['../_interrupts_8h.html',1,'']]],
+  ['inverse_2eh_18',['Inverse.h',['../_inverse_8h.html',1,'']]],
+  ['inverseimpl_2eh_19',['InverseImpl.h',['../_inverse_impl_8h.html',1,'']]],
+  ['inversesize4_2eh_20',['InverseSize4.h',['../_inverse_size4_8h.html',1,'']]],
+  ['io_2eh_21',['IO.h',['../_i_o_8h.html',1,'']]],
+  ['is_5fapprox_5fequal_5fabstol_2eh_22',['is_approx_equal_abstol.h',['../is__approx__equal__abstol_8h.html',1,'']]],
+  ['iterativerobotbase_2eh_23',['IterativeRobotBase.h',['../_iterative_robot_base_8h.html',1,'']]],
+  ['iterator_2eh_24',['iterator.h',['../iterator_8h.html',1,'']]],
+  ['iterator_5frange_2eh_25',['iterator_range.h',['../iterator__range_8h.html',1,'']]]
 ];

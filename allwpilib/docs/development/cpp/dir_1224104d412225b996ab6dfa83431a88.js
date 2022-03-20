@@ -98,6 +98,9 @@ var dir_1224104d412225b996ab6dfa83431a88 =
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1_http_web_socket_server_connection.html", "classwpi_1_1_http_web_socket_server_connection" ]
     ] ],
     [ "HttpWebSocketServerConnection.inc", "_http_web_socket_server_connection_8inc.html", "_http_web_socket_server_connection_8inc" ],
+    [ "interpolating_map.h", "interpolating__map_8h.html", [
+      [ "wpi::interpolating_map< Key, Value >", "classwpi_1_1interpolating__map.html", "classwpi_1_1interpolating__map" ]
+    ] ],
     [ "iterator.h", "iterator_8h.html", "iterator_8h" ],
     [ "iterator_range.h", "iterator__range_8h.html", "iterator__range_8h" ],
     [ "jni_util.h", "jni__util_8h.html", "jni__util_8h" ],

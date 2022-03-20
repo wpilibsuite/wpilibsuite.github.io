@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-10-ga2fa5e3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-18-gcdafc72</span>
    </div>
   </td>
  </tr>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('_extended_kalman_filter_8h_source.html
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">   * @param i Row of x-hat.</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classfrc_1_1_extended_kalman_filter.html#afd68484c47143bb0cdddf55120a7e8b5">  200</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classfrc_1_1_extended_kalman_filter.html#afd68484c47143bb0cdddf55120a7e8b5">Xhat</a>(<span class="keywordtype">int</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_xHat(i, 0); }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classfrc_1_1_extended_kalman_filter.html#afd68484c47143bb0cdddf55120a7e8b5">  200</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classfrc_1_1_extended_kalman_filter.html#afd68484c47143bb0cdddf55120a7e8b5">Xhat</a>(<span class="keywordtype">int</span> i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_xHat(i); }</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"></span> </div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">   * Set initial state estimate x-hat.</span></div>
@@ -308,7 +308,7 @@ $(document).ready(function(){initNavTree('_extended_kalman_filter_8h_source.html
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">   * @param i     Row of x-hat.</span></div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">   * @param value Value for element of x-hat.</span></div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classfrc_1_1_extended_kalman_filter.html#a9446ab7a24735306b8a13326b711f8ef">  215</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_extended_kalman_filter.html#a9446ab7a24735306b8a13326b711f8ef">SetXhat</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">double</span> <a class="code hl_class" href="classvalue.html">value</a>) { m_xHat(i, 0) = <a class="code hl_class" href="classvalue.html">value</a>; }</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classfrc_1_1_extended_kalman_filter.html#a9446ab7a24735306b8a13326b711f8ef">  215</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_extended_kalman_filter.html#a9446ab7a24735306b8a13326b711f8ef">SetXhat</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">double</span> <a class="code hl_class" href="classvalue.html">value</a>) { m_xHat(i) = <a class="code hl_class" href="classvalue.html">value</a>; }</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment"></span> </div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">   * Resets the observer.</span></div>
@@ -423,40 +423,44 @@ $(document).ready(function(){initNavTree('_extended_kalman_filter_8h_source.html
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, Rows&gt;</a> K =</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>.transpose().ldlt().solve(C * m_P.transpose()).transpose();</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="comment">// x̂ₖ₊₁⁺ = x̂ₖ₊₁⁻ + K(y − h(x̂ₖ₊₁⁻, uₖ₊₁))</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="comment">// x̂ₖ₊₁⁺ = x̂ₖ₊₁⁻ + Kₖ₊₁(y − h(x̂ₖ₊₁⁻, uₖ₊₁))</span></div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    m_xHat = addFuncX(m_xHat, K * residualFuncY(<a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>, <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>(m_xHat, u)));</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="comment">// Pₖ₊₁⁺ = (I − KC)Pₖ₊₁⁻</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    m_P = (<a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;::Identity</a>() - K * C) * m_P;</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  }</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  std::function&lt;Eigen::Vector&lt;double, States&gt;(</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;&amp;,</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Inputs&gt;&amp;)&gt;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      m_f;</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  std::function&lt;Eigen::Vector&lt;double, Outputs&gt;(</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <span class="comment">// Pₖ₊₁⁺ = (I−Kₖ₊₁C)Pₖ₊₁⁻(I−Kₖ₊₁C)ᵀ + Kₖ₊₁RKₖ₊₁ᵀ</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="comment">// Use Joseph form for numerical stability</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    m_P = (<a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;::Identity</a>() - K * C) * m_P *</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>              (<a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;::Identity</a>() - K * C)</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                  .transpose() +</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>          K * discR * K.transpose();</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  }</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  std::function&lt;Eigen::Vector&lt;double, States&gt;(</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;&amp;,</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Inputs&gt;&amp;)&gt;</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>      m_h;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>      m_f;</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  std::function&lt;Eigen::Vector&lt;double, Outputs&gt;(</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Outputs&gt;&amp;,</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Outputs&gt;)&gt;</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>      m_residualFuncY;</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  std::function&lt;Eigen::Vector&lt;double, States&gt;(</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;&amp;,</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;)&gt;</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>      m_addFuncX;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  Eigen::Vector&lt;double, States&gt; m_xHat;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a> m_P;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a> m_contQ;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, Outputs, Outputs&gt;</a> m_contR;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  units::second_t m_dt;</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a> m_initP;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>};</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;&amp;,</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Inputs&gt;&amp;)&gt;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>      m_h;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  std::function&lt;Eigen::Vector&lt;double, Outputs&gt;(</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Outputs&gt;&amp;,</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Outputs&gt;)&gt;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>      m_residualFuncY;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  std::function&lt;Eigen::Vector&lt;double, States&gt;(</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;&amp;,</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;)&gt;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>      m_addFuncX;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  Eigen::Vector&lt;double, States&gt; m_xHat;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a> m_P;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a> m_contQ;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, Outputs, Outputs&gt;</a> m_contR;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  units::second_t m_dt;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a> m_initP;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>};</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_cholesky_html"><div class="ttname"><a href="_cholesky.html">Cholesky</a></div></div>
 <div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
 <div class="ttc" id="a_discretization_8h_html"><div class="ttname"><a href="_discretization_8h.html">Discretization.h</a></div></div>
@@ -486,7 +490,7 @@ $(document).ready(function(){initNavTree('_extended_kalman_filter_8h_source.html
 <div class="ttc" id="anamespacedrake_1_1math_html_a3472d444e88dbd0ac9a47f4166b3eb8a"><div class="ttname"><a href="namespacedrake_1_1math.html#a3472d444e88dbd0ac9a47f4166b3eb8a">drake::math::DiscreteAlgebraicRiccatiEquation</a></div><div class="ttdeci">WPILIB_DLLEXPORT Eigen::MatrixXd DiscreteAlgebraicRiccatiEquation(const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;A, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;B, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;Q, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;R)</div><div class="ttdoc">Computes the unique stabilizing solution X to the discrete-time algebraic Riccati equation:</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
 <div class="ttc" id="anamespacefrc_html_a362829981d16ca01c86bb52d3df6118b"><div class="ttname"><a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">frc::RK4</a></div><div class="ttdeci">T RK4(F &amp;&amp;f, T x, units::second_t dt)</div><div class="ttdoc">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.</div><div class="ttdef"><b>Definition:</b> NumericalIntegration.h:25</div></div>
-<div class="ttc" id="anamespacefrc_html_abfc33e74861108dcfe356758beee417d"><div class="ttname"><a href="namespacefrc.html#abfc33e74861108dcfe356758beee417d">frc::MakeCovMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:150</div></div>
+<div class="ttc" id="anamespacefrc_html_abfc33e74861108dcfe356758beee417d"><div class="ttname"><a href="namespacefrc.html#abfc33e74861108dcfe356758beee417d">frc::MakeCovMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:156</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a265cdde8bb6f7e63c0945d51d8f45de4"><div class="ttname"><a href="namespaceunits_1_1constants.html#a265cdde8bb6f7e63c0945d51d8f45de4">units::constants::R</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; energy::joules, inverse&lt; temperature::kelvin &gt;, inverse&lt; substance::moles &gt; &gt; &gt; R(8.3144598)</div><div class="ttdoc">Gas constant.</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a88751eee8d448ad7d24121e14fa7582a"><div class="ttname"><a href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">units::constants::h</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; energy::joule, time::seconds &gt; &gt; h(6.626070040e-34)</div><div class="ttdoc">Planck constant.</div></div>
 <div class="ttc" id="anamespaceunits_html_a77b2abc79841f7f67c7bc406b7c5083b"><div class="ttname"><a href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">units::b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
@@ -499,7 +503,7 @@ $(document).ready(function(){initNavTree('_extended_kalman_filter_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_extended_kalman_filter_8h.html">ExtendedKalmanFilter.h</a></li>
-    <li class="footer">Generated on Mon Mar 14 2022 17:13:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Mar 20 2022 03:50:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

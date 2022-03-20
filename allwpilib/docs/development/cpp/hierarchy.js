@@ -1716,6 +1716,7 @@ var hierarchy =
       [ "wpi::hashing::detail::is_hashable_data< std::pair< T, U > >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ]
     ] ],
     [ "wpi::detail::internal_iterator< BasicJsonType >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
+    [ "wpi::interpolating_map< Key, Value >", "classwpi_1_1interpolating__map.html", null ],
     [ "Eigen::internal::inverse_impl< MatrixType >", "struct_eigen_1_1internal_1_1inverse__impl.html", null ],
     [ "Eigen::internal::invoke_result< F, ArgType0, ArgType1, ArgType2 >", "struct_eigen_1_1internal_1_1invoke__result.html", null ],
     [ "Eigen::internal::invoke_result< F, ArgType0, ArgType1, void >", "struct_eigen_1_1internal_1_1invoke__result_3_01_f_00_01_arg_type0_00_01_arg_type1_00_01void_01_4.html", null ],

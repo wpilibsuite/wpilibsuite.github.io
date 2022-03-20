@@ -123,6 +123,7 @@ var namespacewpi =
     [ "HttpRequest", "classwpi_1_1_http_request.html", "classwpi_1_1_http_request" ],
     [ "HttpServerConnection", "classwpi_1_1_http_server_connection.html", "classwpi_1_1_http_server_connection" ],
     [ "HttpWebSocketServerConnection", "classwpi_1_1_http_web_socket_server_connection.html", "classwpi_1_1_http_web_socket_server_connection" ],
+    [ "interpolating_map", "classwpi_1_1interpolating__map.html", "classwpi_1_1interpolating__map" ],
     [ "is_integral_or_enum", "classwpi_1_1is__integral__or__enum.html", "classwpi_1_1is__integral__or__enum" ],
     [ "isPodLike", "structwpi_1_1is_pod_like.html", "structwpi_1_1is_pod_like" ],
     [ "isPodLike< PointerIntPair< PointerTy, IntBits, IntType > >", "structwpi_1_1is_pod_like_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html", "structwpi_1_1is_pod_like_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4" ],

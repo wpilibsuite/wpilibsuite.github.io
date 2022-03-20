@@ -10,7 +10,7 @@ var _state_space_util_8h =
     [ "IsStabilizable< 2, 1 >", "_state_space_util_8h.html#a253ae7788442597498c6dca868892b86", null ],
     [ "IsStabilizableImpl", "_state_space_util_8h.html#afe898c078f5988633750d70d4e14feff", null ],
     [ "MakeCostMatrix", "_state_space_util_8h.html#acb330f4368291811f0a1e568a9a50d70", null ],
-    [ "MakeCostMatrix", "_state_space_util_8h.html#a6e27e6b4c62a659bc699ef54d3a9a543", null ],
+    [ "MakeCostMatrix", "_state_space_util_8h.html#a1895186b293105926cb9dfddec134a78", null ],
     [ "MakeCovMatrix", "_state_space_util_8h.html#a41c8fb1bc91b77b89f45d2a385dd1be3", null ],
     [ "MakeCovMatrix", "_state_space_util_8h.html#abfc33e74861108dcfe356758beee417d", null ],
     [ "MakeMatrix", "_state_space_util_8h.html#ac51fbc126b48788f46f6d42c99bfbee3", null ],

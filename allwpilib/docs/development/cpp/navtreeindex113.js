@@ -1,5 +1,15 @@
 var NAVTREEINDEX113 =
 {
+"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a613fa58ec2070d0de9cf9d6edfb4a3f4":[3,12,29,0],
+"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406addabbd23bf38f9d142709ee69ef28f27":[3,12,29,4],
+"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406aef9691cb2529d8eed45affefd5ce6300":[3,12,29,3],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a06476a540bb2e3f19ef82c11fd328c3c":[3,12,30,3],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a0a86d35502281c64d9e18df3651c2e5f":[3,12,30,9],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a4d128f0ab912d8058113bc3533251a25":[3,12,30,0],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a59979f5aa91069026ee134f9228e7d0c":[3,12,30,5],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a5da7b35b0e18abe776351458b3a326f8":[3,12,30,11],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a6040fb5253a49bb534616abc1bb2eadf":[3,12,30,2],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a7c05f71ef1e74830a77484def90119a1":[3,12,30,8],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a94f36dec8bcf3b15f4bedcf76f4ce1eb":[3,12,30,1],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322aa91f4e9d8fd72a18bfddcb44e8c6c936":[3,12,30,4],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322acd1fea783197c3a5a6a577a98e8f6ff5":[3,12,30,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX113 =
 "group__cscore__telemetry__func.html#ga9e6ec829be56db010ff93731f5e7e60d":[3,13,12,0],
 "group__cscore__telemetry__func.html#gaa50a50d5ab75c1e372aea4db3ceefcac":[3,13,12,3],
 "group__cscore__typedefs.html":[3,12,0],
-"group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0":[3,12,0,6],
-"group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5":[3,12,0,7],
-"group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f":[3,12,0,3],
-"group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377":[3,12,0,4],
-"group__cscore__typedefs.html#ga801a0f9c4b68e600b81395876b4eabd7":[3,12,0,5],
-"group__cscore__typedefs.html#gaaf43d8c8d4ebeddebde752192da90a60":[3,12,0,1],
-"group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c":[3,12,0,0],
-"group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07":[3,12,0,2],
-"group__cscore__usbcamera__cfunc.html":[3,12,5],
-"group__cscore__usbcamera__cfunc.html#ga677c046028ed1f1b8df4970362989d1c":[3,12,5,0],
-"group__cscore__usbcamera__cfunc.html#gade5e1d1755eebf099beba279cfcb87c3":[3,12,5,2]
+"group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0":[3,12,0,6]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-10-ga2fa5e3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-18-gcdafc72</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,7 @@ $(document).ready(function(){initNavTree('_state_space_util_8h.html',''); initRe
 <div class="contents">
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 <code>#include &lt;<a class="el" href="_symbol_exports_8h_source.html">wpi/SymbolExports.h</a>&gt;</code><br />
@@ -138,10 +139,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ac51fbc126b48788f46f6d42c99bfbee3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Cols &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac51fbc126b48788f46f6d42c99bfbee3">frc::MakeMatrix</a> (Ts... elems)</td></tr>
 <tr class="memdesc:ac51fbc126b48788f46f6d42c99bfbee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from the given list of elements.  <a href="namespacefrc.html#ac51fbc126b48788f46f6d42c99bfbee3">More...</a><br /></td></tr>
 <tr class="separator:ac51fbc126b48788f46f6d42c99bfbee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e27e6b4c62a659bc699ef54d3a9a543"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a6e27e6b4c62a659bc699ef54d3a9a543"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a6e27e6b4c62a659bc699ef54d3a9a543">frc::MakeCostMatrix</a> (Ts... costs)</td></tr>
-<tr class="memdesc:a6e27e6b4c62a659bc699ef54d3a9a543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cost matrix from the given vector for use with LQR.  <a href="namespacefrc.html#a6e27e6b4c62a659bc699ef54d3a9a543">More...</a><br /></td></tr>
-<tr class="separator:a6e27e6b4c62a659bc699ef54d3a9a543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1895186b293105926cb9dfddec134a78"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a1895186b293105926cb9dfddec134a78"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1895186b293105926cb9dfddec134a78">frc::MakeCostMatrix</a> (Ts... tolerances)</td></tr>
+<tr class="memdesc:a1895186b293105926cb9dfddec134a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cost matrix from the given vector for use with LQR.  <a href="namespacefrc.html#a1895186b293105926cb9dfddec134a78">More...</a><br /></td></tr>
+<tr class="separator:a1895186b293105926cb9dfddec134a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc33e74861108dcfe356758beee417d"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
 <tr class="memitem:abfc33e74861108dcfe356758beee417d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abfc33e74861108dcfe356758beee417d">frc::MakeCovMatrix</a> (Ts... stdDevs)</td></tr>
 <tr class="memdesc:abfc33e74861108dcfe356758beee417d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a covariance matrix from the given vector for use with Kalman filters.  <a href="namespacefrc.html#abfc33e74861108dcfe356758beee417d">More...</a><br /></td></tr>
@@ -199,7 +200,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="_state_space_util_8h.html">StateSpaceUtil.h</a></li>
-    <li class="footer">Generated on Mon Mar 14 2022 17:13:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Mar 20 2022 03:50:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

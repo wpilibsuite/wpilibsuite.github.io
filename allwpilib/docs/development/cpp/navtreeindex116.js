@@ -1,5 +1,15 @@
 var NAVTREEINDEX116 =
 {
+"group__hal__encoder.html#gaa54c77d5065b82a89317f384a343a706":[3,1,15,1],
+"group__hal__encoder.html#gaa9f4051cb83bcd5ba25031cfab3c59a6":[3,1,15,24],
+"group__hal__encoder.html#gab6488dae8c6071fd9922808afc031cfd":[3,1,15,10],
+"group__hal__encoder.html#gac830c4961d0ddb67cdc02bc6cb52ec12":[3,1,15,3],
+"group__hal__encoder.html#gac8e8b9404204045bc7c4c92070787c17":[3,1,15,7],
+"group__hal__encoder.html#gad859111d75e05ba26d40b958a6a16095":[3,1,15,11],
+"group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee":[3,1,15,19],
+"group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40":[3,1,15,9],
+"group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6":[3,1,15,8],
+"group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff":[3,1,15,12],
 "group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106":[3,1,15,0],
 "group__hal__errors.html":[3,1,10],
 "group__hal__errors.html#ga01ecb9d6ea0dc15d38fae6a35fcd71d2":[3,1,10,28],
@@ -239,15 +249,5 @@ var NAVTREEINDEX116 =
 "group__hal__rev__ph.html#ga62dcb0019475fa52aec1384280b72c17":[3,1,18,26],
 "group__hal__rev__ph.html#ga750af87a7c5278ab2d140bbdbf030811":[3,1,18,23],
 "group__hal__rev__ph.html#ga89b3a2270f41bffb13364dd566d47dc2":[3,1,18,21],
-"group__hal__rev__ph.html#ga8f0ee0b1e961d3d9ada56d00f0467c20":[3,1,18,18],
-"group__hal__rev__ph.html#ga9de4dab344c45367c8534ab8554bbce7":[3,1,18,6],
-"group__hal__rev__ph.html#gaa4825dd1c18d63473d6f98a20b3592d7":[3,1,18,25],
-"group__hal__rev__ph.html#gaa48f2f99050d2baaca3e3d36f2f20d18":[3,1,18,24],
-"group__hal__rev__ph.html#gab1913acd3a66a5d8190bcb6625c36060":[3,1,18,22],
-"group__hal__rev__ph.html#gab20a09d194f38a484f471a342bf9317f":[3,1,18,16],
-"group__hal__rev__ph.html#gab2a94030388297e8fb6be85225f1b8c4":[3,1,18,27],
-"group__hal__rev__ph.html#gab7cb13ace23b86a7fd2608a270907360":[3,1,18,14],
-"group__hal__rev__ph.html#gac1607cec6d5f33453edb4dbc9918378e":[3,1,18,11],
-"group__hal__rev__ph.html#gac493ef38f5557da40d01d4c9490dfbb8":[3,1,18,7],
-"group__hal__rev__ph.html#gad1faefeed625fb6a0c1469577cacecd9":[3,1,18,5]
+"group__hal__rev__ph.html#ga8f0ee0b1e961d3d9ada56d00f0467c20":[3,1,18,18]
 };

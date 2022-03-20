@@ -348,7 +348,7 @@ var namespacefrc =
     [ "IsStabilizable< 1, 1 >", "namespacefrc.html#ae2122df407d022524758481a73157bf4", null ],
     [ "IsStabilizable< 2, 1 >", "namespacefrc.html#a253ae7788442597498c6dca868892b86", null ],
     [ "MakeCostMatrix", "namespacefrc.html#acb330f4368291811f0a1e568a9a50d70", null ],
-    [ "MakeCostMatrix", "namespacefrc.html#a6e27e6b4c62a659bc699ef54d3a9a543", null ],
+    [ "MakeCostMatrix", "namespacefrc.html#a1895186b293105926cb9dfddec134a78", null ],
     [ "MakeCovMatrix", "namespacefrc.html#a41c8fb1bc91b77b89f45d2a385dd1be3", null ],
     [ "MakeCovMatrix", "namespacefrc.html#abfc33e74861108dcfe356758beee417d", null ],
     [ "MakeError", "namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b", null ],
