@@ -1652,6 +1652,7 @@ var hierarchy =
     [ "Eigen::internal::imag_retval< Scalar >", "struct_eigen_1_1internal_1_1imag__retval.html", null ],
     [ "Eigen::internal::image_retval< DecompositionType >", "struct_eigen_1_1internal_1_1image__retval.html", null ],
     [ "ghc::filesystem::directory_iterator::impl", "classghc_1_1filesystem_1_1directory__iterator_1_1impl.html", null ],
+    [ "frc::ImplicitModelFollower< States, Inputs >", "classfrc_1_1_implicit_model_follower.html", null ],
     [ "Eigen::internal::IndexBased", "struct_eigen_1_1internal_1_1_index_based.html", null ],
     [ "Eigen::internal::indexed_based_stl_iterator_base< Derived >", "class_eigen_1_1internal_1_1indexed__based__stl__iterator__base.html", null ],
     [ "Eigen::internal::indexed_based_stl_iterator_base< generic_randaccess_stl_iterator< XprType > >", "class_eigen_1_1internal_1_1indexed__based__stl__iterator__base.html", [

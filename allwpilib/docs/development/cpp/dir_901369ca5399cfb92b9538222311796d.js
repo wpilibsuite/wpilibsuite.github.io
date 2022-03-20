@@ -15,6 +15,9 @@ var dir_901369ca5399cfb92b9538222311796d =
     [ "HolonomicDriveController.h", "_holonomic_drive_controller_8h.html", [
       [ "frc::HolonomicDriveController", "classfrc_1_1_holonomic_drive_controller.html", "classfrc_1_1_holonomic_drive_controller" ]
     ] ],
+    [ "ImplicitModelFollower.h", "_implicit_model_follower_8h.html", [
+      [ "frc::ImplicitModelFollower< States, Inputs >", "classfrc_1_1_implicit_model_follower.html", "classfrc_1_1_implicit_model_follower" ]
+    ] ],
     [ "LinearPlantInversionFeedforward.h", "_linear_plant_inversion_feedforward_8h.html", [
       [ "frc::LinearPlantInversionFeedforward< States, Inputs >", "classfrc_1_1_linear_plant_inversion_feedforward.html", "classfrc_1_1_linear_plant_inversion_feedforward" ]
     ] ],

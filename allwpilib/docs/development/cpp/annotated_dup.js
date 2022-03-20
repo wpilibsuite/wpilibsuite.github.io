@@ -1889,6 +1889,7 @@ var annotated_dup =
       [ "HeldButtonScheduler", "classfrc_1_1_held_button_scheduler.html", "classfrc_1_1_held_button_scheduler" ],
       [ "HolonomicDriveController", "classfrc_1_1_holonomic_drive_controller.html", "classfrc_1_1_holonomic_drive_controller" ],
       [ "I2C", "classfrc_1_1_i2_c.html", "classfrc_1_1_i2_c" ],
+      [ "ImplicitModelFollower", "classfrc_1_1_implicit_model_follower.html", "classfrc_1_1_implicit_model_follower" ],
       [ "InstantCommand", "classfrc_1_1_instant_command.html", "classfrc_1_1_instant_command" ],
       [ "InternalButton", "classfrc_1_1_internal_button.html", "classfrc_1_1_internal_button" ],
       [ "IterativeRobotBase", "classfrc_1_1_iterative_robot_base.html", "classfrc_1_1_iterative_robot_base" ],

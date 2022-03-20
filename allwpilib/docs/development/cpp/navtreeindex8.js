@@ -105,6 +105,8 @@ var NAVTREEINDEX8 =
 "_image_8h.html":[6,0,3,0,0,6,0],
 "_image_8h.html#a626ffea4030fe7858dc958a680c53679":[6,0,3,0,0,6,0,2],
 "_image_8h_source.html":[6,0,3,0,0,6,0],
+"_implicit_model_follower_8h.html":[6,0,7,0,5],
+"_implicit_model_follower_8h_source.html":[6,0,7,0,5],
 "_indexed_classed_handle_resource_8h.html":[6,0,9,1,2],
 "_indexed_classed_handle_resource_8h_source.html":[6,0,9,1,2],
 "_indexed_handle_resource_8h.html":[6,0,9,1,3],
@@ -208,10 +210,10 @@ var NAVTREEINDEX8 =
 "_limited_handle_resource_8h_source.html":[6,0,9,1,5],
 "_linear_filter_8h.html":[6,0,7,2,1],
 "_linear_filter_8h_source.html":[6,0,7,2,1],
-"_linear_plant_inversion_feedforward_8h.html":[6,0,7,0,5],
-"_linear_plant_inversion_feedforward_8h_source.html":[6,0,7,0,5],
-"_linear_quadratic_regulator_8h.html":[6,0,7,0,6],
-"_linear_quadratic_regulator_8h_source.html":[6,0,7,0,6],
+"_linear_plant_inversion_feedforward_8h.html":[6,0,7,0,6],
+"_linear_plant_inversion_feedforward_8h_source.html":[6,0,7,0,6],
+"_linear_quadratic_regulator_8h.html":[6,0,7,0,7],
+"_linear_quadratic_regulator_8h_source.html":[6,0,7,0,7],
 "_linear_system_8h.html":[6,0,7,8,2],
 "_linear_system_8h_source.html":[6,0,7,8,2],
 "_linear_system_id_8h.html":[6,0,7,8,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "_logger_8h_source.html":[6,0,14,49],
 "_loop_8h.html":[6,0,14,3,10],
 "_loop_8h_source.html":[6,0,14,3,10],
-"_macros_8h.html":[6,0,3,0,0,1,3,7],
-"_macros_8h.html#a000d296c3fca8ba6e784bdcc7d01d91d":[6,0,3,0,0,1,3,7,121],
-"_macros_8h.html#a00c0308407d18cb6ea40d217964445d0":[6,0,3,0,0,1,3,7,98]
+"_macros_8h.html":[6,0,3,0,0,1,3,7]
 };
