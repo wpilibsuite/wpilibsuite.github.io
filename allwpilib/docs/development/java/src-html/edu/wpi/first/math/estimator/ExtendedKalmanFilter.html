@@ -145,7 +145,7 @@
 <span class="sourceLineNo">133</span><a id="line.133">    m_addFuncX = addFuncX;</a>
 <span class="sourceLineNo">134</span><a id="line.134"></a>
 <span class="sourceLineNo">135</span><a id="line.135">    m_contQ = StateSpaceUtil.makeCovarianceMatrix(states, stateStdDevs);</a>
-<span class="sourceLineNo">136</span><a id="line.136">    this.m_contR = StateSpaceUtil.makeCovarianceMatrix(outputs, measurementStdDevs);</a>
+<span class="sourceLineNo">136</span><a id="line.136">    m_contR = StateSpaceUtil.makeCovarianceMatrix(outputs, measurementStdDevs);</a>
 <span class="sourceLineNo">137</span><a id="line.137">    m_dtSeconds = dtSeconds;</a>
 <span class="sourceLineNo">138</span><a id="line.138"></a>
 <span class="sourceLineNo">139</span><a id="line.139">    reset();</a>
@@ -378,10 +378,16 @@
 <span class="sourceLineNo">366</span><a id="line.366">    // x̂ₖ₊₁⁺ = x̂ₖ₊₁⁻ + K(y − h(x̂ₖ₊₁⁻, uₖ₊₁))</a>
 <span class="sourceLineNo">367</span><a id="line.367">    m_xHat = addFuncX.apply(m_xHat, K.times(residualFuncY.apply(y, h.apply(m_xHat, u))));</a>
 <span class="sourceLineNo">368</span><a id="line.368"></a>
-<span class="sourceLineNo">369</span><a id="line.369">    // Pₖ₊₁⁺ = (I − KC)Pₖ₊₁⁻</a>
-<span class="sourceLineNo">370</span><a id="line.370">    m_P = Matrix.eye(m_states).minus(K.times(C)).times(m_P);</a>
-<span class="sourceLineNo">371</span><a id="line.371">  }</a>
-<span class="sourceLineNo">372</span><a id="line.372">}</a>
+<span class="sourceLineNo">369</span><a id="line.369">    // Pₖ₊₁⁺ = (I−Kₖ₊₁C)Pₖ₊₁⁻(I−Kₖ₊₁C)ᵀ + Kₖ₊₁RKₖ₊₁ᵀ</a>
+<span class="sourceLineNo">370</span><a id="line.370">    // Use Joseph form for numerical stability</a>
+<span class="sourceLineNo">371</span><a id="line.371">    m_P =</a>
+<span class="sourceLineNo">372</span><a id="line.372">        Matrix.eye(m_states)</a>
+<span class="sourceLineNo">373</span><a id="line.373">            .minus(K.times(C))</a>
+<span class="sourceLineNo">374</span><a id="line.374">            .times(m_P)</a>
+<span class="sourceLineNo">375</span><a id="line.375">            .times(Matrix.eye(m_states).minus(K.times(C)).transpose())</a>
+<span class="sourceLineNo">376</span><a id="line.376">            .plus(K.times(discR).times(K.transpose()));</a>
+<span class="sourceLineNo">377</span><a id="line.377">  }</a>
+<span class="sourceLineNo">378</span><a id="line.378">}</a>
 
 
 
