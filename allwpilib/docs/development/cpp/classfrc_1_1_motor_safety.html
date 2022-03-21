@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-20-g8d79dc8</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-22-gba0dcca</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_motor_safety.html',''); i
 </div><!--header-->
 <div class="contents">
 
-<p>This base class runs a watchdog timer and calls the subclass's <a class="el" href="classfrc_1_1_motor_safety.html#a0269b4f422dd90c886074a41a5f7400a">StopMotor()</a> function if the timeout expires.  
+<p>The Motor Safety feature acts as a watchdog timer for an individual motor.  
  <a href="classfrc_1_1_motor_safety.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_motor_safety_8h_source.html">frc/MotorSafety.h</a>&gt;</code></p>
@@ -175,7 +175,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a2a666ba39461317728e52fbaa9cdca32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This base class runs a watchdog timer and calls the subclass's <a class="el" href="classfrc_1_1_motor_safety.html#a0269b4f422dd90c886074a41a5f7400a">StopMotor()</a> function if the timeout expires. </p>
+<div class="textblock"><p >The Motor Safety feature acts as a watchdog timer for an individual motor. </p>
+<p >It operates by maintaining a timer that tracks how long it has been since the feed() method has been called for that actuator. Code in the Driver Station class initiates a comparison of these timers to the timeout values for any actuator with safety enabled every 5 received packets (100ms nominal).</p>
 <p >The subclass should call <a class="el" href="classfrc_1_1_motor_safety.html#a64f96194caddf9df5e0ab9871fb2b7a3" title="Feed the motor safety object.">Feed()</a> whenever the motor value is updated. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6f4cd35e3bc3caa8fe3120e00b3d3cbd" name="a6f4cd35e3bc3caa8fe3120e00b3d3cbd"></a>
@@ -505,7 +506,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a></li>
-    <li class="footer">Generated on Sun Mar 20 2022 07:39:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Mar 21 2022 05:00:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
