@@ -42,7 +42,7 @@
 <span class="sourceLineNo">030</span><a id="line.30">   *</a>
 <span class="sourceLineNo">031</span><a id="line.31">   * @param name The ligament name.</a>
 <span class="sourceLineNo">032</span><a id="line.32">   * @param length The ligament length.</a>
-<span class="sourceLineNo">033</span><a id="line.33">   * @param angle The ligament angle.</a>
+<span class="sourceLineNo">033</span><a id="line.33">   * @param angle The ligament angle in degrees.</a>
 <span class="sourceLineNo">034</span><a id="line.34">   * @param lineWidth The ligament's line width.</a>
 <span class="sourceLineNo">035</span><a id="line.35">   * @param color The ligament's color.</a>
 <span class="sourceLineNo">036</span><a id="line.36">   */</a>
@@ -60,7 +60,7 @@
 <span class="sourceLineNo">048</span><a id="line.48">   *</a>
 <span class="sourceLineNo">049</span><a id="line.49">   * @param name The ligament's name.</a>
 <span class="sourceLineNo">050</span><a id="line.50">   * @param length The ligament's length.</a>
-<span class="sourceLineNo">051</span><a id="line.51">   * @param angle The ligament's angle relative to its parent.</a>
+<span class="sourceLineNo">051</span><a id="line.51">   * @param angle The ligament's angle relative to its parent in degrees.</a>
 <span class="sourceLineNo">052</span><a id="line.52">   */</a>
 <span class="sourceLineNo">053</span><a id="line.53">  public MechanismLigament2d(String name, double length, double angle) {</a>
 <span class="sourceLineNo">054</span><a id="line.54">    this(name, length, angle, 10, new Color8Bit(235, 137, 52));</a>
@@ -69,7 +69,7 @@
 <span class="sourceLineNo">057</span><a id="line.57">  /**</a>
 <span class="sourceLineNo">058</span><a id="line.58">   * Set the ligament's angle relative to its parent.</a>
 <span class="sourceLineNo">059</span><a id="line.59">   *</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * @param degrees the angle, in degrees</a>
+<span class="sourceLineNo">060</span><a id="line.60">   * @param degrees the angle in degrees</a>
 <span class="sourceLineNo">061</span><a id="line.61">   */</a>
 <span class="sourceLineNo">062</span><a id="line.62">  public synchronized void setAngle(double degrees) {</a>
 <span class="sourceLineNo">063</span><a id="line.63">    m_angle = degrees;</a>
@@ -88,7 +88,7 @@
 <span class="sourceLineNo">076</span><a id="line.76">  /**</a>
 <span class="sourceLineNo">077</span><a id="line.77">   * Get the ligament's angle relative to its parent.</a>
 <span class="sourceLineNo">078</span><a id="line.78">   *</a>
-<span class="sourceLineNo">079</span><a id="line.79">   * @return the angle, in degrees</a>
+<span class="sourceLineNo">079</span><a id="line.79">   * @return the angle in degrees</a>
 <span class="sourceLineNo">080</span><a id="line.80">   */</a>
 <span class="sourceLineNo">081</span><a id="line.81">  public synchronized double getAngle() {</a>
 <span class="sourceLineNo">082</span><a id="line.82">    if (m_angleEntry != null) {</a>
