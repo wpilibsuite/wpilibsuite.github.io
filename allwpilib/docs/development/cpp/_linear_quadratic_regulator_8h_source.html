@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-29-g81c5b41</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-31-g1b26e2d</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('_linear_quadratic_regulator_8h_source.
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="_math_shared_8h.html">wpimath/MathShared.h</a>&quot;</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedetail.html">detail</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacefrc_1_1detail.html">   26</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedetail.html">detail</a> {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * Contains the controller coefficients and logic for a linear-quadratic</span></div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_linear_quadratic_regulator_8h_source.
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    DiscretizeAB&lt;States, Inputs&gt;(A, B, dt, &amp;discA, &amp;discB);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (!IsStabilizable&lt;States, Inputs&gt;(discA, discB)) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      std::string msg = <a class="code hl_function" href="xchar_8h.html#aa0c91f73305f75572aa73b2386063aeb">fmt::format</a>(</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      std::string msg = <a class="code hl_function" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">fmt::format</a>(</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>          <span class="stringliteral">&quot;The system passed to the LQR is uncontrollable!\n\nA =\n{}\nB &quot;</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>          <span class="stringliteral">&quot;=\n{}\n&quot;</span>,</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>          discA, discB);</div>
@@ -603,23 +603,23 @@ $(document).ready(function(){initNavTree('_linear_quadratic_regulator_8h_source.
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="aclasswpi_1_1math_1_1_math_shared_store_html_ab091bae578ff11340651b46e1edd5c47"><div class="ttname"><a href="classwpi_1_1math_1_1_math_shared_store.html#ab091bae578ff11340651b46e1edd5c47">wpi::math::MathSharedStore::ReportError</a></div><div class="ttdeci">static void ReportError(const S &amp;format, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> MathShared.h:57</div></div>
 <div class="ttc" id="adiscrete__algebraic__riccati__equation_8h_html"><div class="ttname"><a href="discrete__algebraic__riccati__equation_8h.html">discrete_algebraic_riccati_equation.h</a></div></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> compile.h:14</div></div>
+<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> chrono.h:301</div></div>
 <div class="ttc" id="anamespacedrake_1_1math_html_a3472d444e88dbd0ac9a47f4166b3eb8a"><div class="ttname"><a href="namespacedrake_1_1math.html#a3472d444e88dbd0ac9a47f4166b3eb8a">drake::math::DiscreteAlgebraicRiccatiEquation</a></div><div class="ttdeci">WPILIB_DLLEXPORT Eigen::MatrixXd DiscreteAlgebraicRiccatiEquation(const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;A, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;B, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;Q, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;R)</div><div class="ttdoc">Computes the unique stabilizing solution X to the discrete-time algebraic Riccati equation:</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="anamespacefrc_html_a1895186b293105926cb9dfddec134a78"><div class="ttname"><a href="namespacefrc.html#a1895186b293105926cb9dfddec134a78">frc::MakeCostMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCostMatrix(Ts... tolerances)</div><div class="ttdoc">Creates a cost matrix from the given vector for use with LQR.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:135</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a265cdde8bb6f7e63c0945d51d8f45de4"><div class="ttname"><a href="namespaceunits_1_1constants.html#a265cdde8bb6f7e63c0945d51d8f45de4">units::constants::R</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; energy::joules, inverse&lt; temperature::kelvin &gt;, inverse&lt; substance::moles &gt; &gt; &gt; R(8.3144598)</div><div class="ttdoc">Gas constant.</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_a8bc48cef3fdfae35910a4bbe5011abcd"><div class="ttname"><a href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">units::math::pow</a></div><div class="ttdeci">auto pow(const UnitType &amp;value) noexcept -&gt; unit_t&lt; typename units::detail::power_of_unit&lt; power, typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;::type, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the value of value raised to the power</div><div class="ttdef"><b>Definition:</b> base.h:2809</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 <div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html_a82134794782845c50b9a960bb191ba30"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a></div><div class="ttdeci">#define S(label, offset, message)</div><div class="ttdef"><b>Definition:</b> Errors.h:119</div></div>
+<div class="ttc" id="awpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdoc">\rst Formats arguments and returns the result as a string using ANSI escape sequences to specify text...</div><div class="ttdef"><b>Definition:</b> color.h:594</div></div>
 <div class="ttc" id="awpiutil_2src_2main_2native_2include_2wpi_2array_8h_html"><div class="ttname"><a href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html">array.h</a></div></div>
-<div class="ttc" id="axchar_8h_html_aa0c91f73305f75572aa73b2386063aeb"><div class="ttname"><a href="xchar_8h.html#aa0c91f73305f75572aa73b2386063aeb">format</a></div><div class="ttdeci">auto format(const S &amp;format_str, Args &amp;&amp;... args) -&gt; std::basic_string&lt; Char &gt;</div><div class="ttdef"><b>Definition:</b> xchar.h:94</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_901369ca5399cfb92b9538222311796d.html">controller</a></li><li class="navelem"><a class="el" href="_linear_quadratic_regulator_8h.html">LinearQuadraticRegulator.h</a></li>
-    <li class="footer">Generated on Thu Mar 31 2022 07:32:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 8 2022 05:04:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

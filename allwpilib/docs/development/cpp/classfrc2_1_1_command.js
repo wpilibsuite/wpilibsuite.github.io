@@ -22,6 +22,7 @@ var classfrc2_1_1_command =
     [ "operator=", "classfrc2_1_1_command.html#ae6a11135027cc8dc6917a6b290c109ea", null ],
     [ "operator=", "classfrc2_1_1_command.html#aa53c83ad502c48906767c8eef16ee096", null ],
     [ "Perpetually", "classfrc2_1_1_command.html#a4e72c5be424accbf416cf35be061c918", null ],
+    [ "Repeat", "classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_command.html#a5113cbf3655ce8679dd48bf22700b2f4", null ],
     [ "Schedule", "classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710", null ],
     [ "Schedule", "classfrc2_1_1_command.html#aa9920c649ab4ac6f37155e19f348145e", null ],

@@ -65,6 +65,9 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "RamseteCommand.h", "_ramsete_command_8h.html", [
       [ "frc2::RamseteCommand", "classfrc2_1_1_ramsete_command.html", "classfrc2_1_1_ramsete_command" ]
     ] ],
+    [ "RepeatCommand.h", "_repeat_command_8h.html", [
+      [ "frc2::RepeatCommand", "classfrc2_1_1_repeat_command.html", "classfrc2_1_1_repeat_command" ]
+    ] ],
     [ "RunCommand.h", "_run_command_8h.html", [
       [ "frc2::RunCommand", "classfrc2_1_1_run_command.html", "classfrc2_1_1_run_command" ]
     ] ],

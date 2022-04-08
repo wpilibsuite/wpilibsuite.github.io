@@ -2079,6 +2079,7 @@ var annotated_dup =
       [ "ProfiledPIDSubsystem", "classfrc2_1_1_profiled_p_i_d_subsystem.html", "classfrc2_1_1_profiled_p_i_d_subsystem" ],
       [ "ProxyScheduleCommand", "classfrc2_1_1_proxy_schedule_command.html", "classfrc2_1_1_proxy_schedule_command" ],
       [ "RamseteCommand", "classfrc2_1_1_ramsete_command.html", "classfrc2_1_1_ramsete_command" ],
+      [ "RepeatCommand", "classfrc2_1_1_repeat_command.html", "classfrc2_1_1_repeat_command" ],
       [ "RunCommand", "classfrc2_1_1_run_command.html", "classfrc2_1_1_run_command" ],
       [ "ScheduleCommand", "classfrc2_1_1_schedule_command.html", "classfrc2_1_1_schedule_command" ],
       [ "SelectCommand", "classfrc2_1_1_select_command.html", "classfrc2_1_1_select_command" ],

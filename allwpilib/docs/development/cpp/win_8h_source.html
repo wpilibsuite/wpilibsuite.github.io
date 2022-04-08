@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-29-g81c5b41</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-31-g1b26e2d</span>
    </div>
   </td>
  </tr>
@@ -350,7 +350,7 @@ $(document).ready(function(){initNavTree('win_8h_source.html',''); initResizable
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="unionuv__cond__t.html#a14e4ccaa018c1ee68abe9e9a81c291c3">  254</a></span>    CRITICAL_SECTION <a class="code hl_variable" href="unionuv__cond__t.html#a14e4ccaa018c1ee68abe9e9a81c291c3">waiters_count_lock</a>;</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="unionuv__cond__t.html#a5857038536c4645fdf50a1a0e161bbbf">  255</a></span>    HANDLE <a class="code hl_variable" href="unionuv__cond__t.html#a5857038536c4645fdf50a1a0e161bbbf">signal_event</a>;</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="unionuv__cond__t.html#aa31cfe0b976adf566a1731b9e2500434">  256</a></span>    HANDLE <a class="code hl_variable" href="unionuv__cond__t.html#aa31cfe0b976adf566a1731b9e2500434">broadcast_event</a>;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="unionuv__cond__t.html#a9450859e709d8e3116816c3c65121bf3">  257</a></span>  } unused_; <span class="comment">/* TODO: retained for ABI compatibility; remove me in v2.x. */</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno"><a class="line" href="unionuv__cond__t.html#a1d7a927fd68ae19faddd27ce97fed831">  257</a></span>  } unused_; <span class="comment">/* TODO: retained for ABI compatibility; remove me in v2.x. */</span></div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>} <a class="code hl_typedef" href="unix_8h.html#a15c9ce3ba708492919fbb11bf27d54db">uv_cond_t</a>;</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html">  260</a></span><span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
@@ -358,16 +358,16 @@ $(document).ready(function(){initNavTree('win_8h_source.html',''); initResizable
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a00d48767aa37f395d8cd862916cd2508">  262</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="unionuv__rwlock__t.html#a00d48767aa37f395d8cd862916cd2508">num_readers_</a>;</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a19279f1288ef8a749054e2da9024bad0">  263</a></span>    CRITICAL_SECTION <a class="code hl_variable" href="unionuv__rwlock__t.html#a19279f1288ef8a749054e2da9024bad0">num_readers_lock_</a>;</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a30c290365076330dcb1743bc08334310">  264</a></span>    HANDLE <a class="code hl_variable" href="unionuv__rwlock__t.html#a30c290365076330dcb1743bc08334310">write_semaphore_</a>;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a76c30fe2a92ae5182a4affa4df486a6c">  265</a></span>  } state_;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a36a29a5429a14edb2c7bc0318585a48b">  265</a></span>  } state_;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="comment">/* TODO: remove me in v2.x. */</span></div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#ab930a64984592b65ea6e361723d4bffd">  268</a></span>    <a class="code hl_typedef" href="win_8h.html#a82f3548b12f3b09915718c1dea862484">SRWLOCK</a> <a class="code hl_variable" href="unionuv__rwlock__t.html#ab930a64984592b65ea6e361723d4bffd">unused_</a>;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a14b0474558af5da5d368666528301875">  269</a></span>  } unused1_;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a76387034f9f9bd23768f7001736a4595">  269</a></span>  } unused1_;</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="comment">/* TODO: remove me in v2.x. */</span></div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#ae4a7b0c92c19739a2be67d2093890e62">  272</a></span>    <a class="code hl_typedef" href="unix_8h.html#a877501d4f3c968ff371bcf56ebbfbc65">uv_mutex_t</a> <a class="code hl_variable" href="unionuv__rwlock__t.html#ae4a7b0c92c19739a2be67d2093890e62">unused1_</a>;</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a7ab7e63121821a45064dce095e075286">  273</a></span>    <a class="code hl_typedef" href="unix_8h.html#a877501d4f3c968ff371bcf56ebbfbc65">uv_mutex_t</a> <a class="code hl_variable" href="unionuv__rwlock__t.html#a7ab7e63121821a45064dce095e075286">unused2_</a>;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a6b8125862e93dd826f65469a33bcdaeb">  274</a></span>  } unused2_;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="unionuv__rwlock__t.html#a69db64566254eb7e2c784d773c4d620a">  274</a></span>  } unused2_;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>} <a class="code hl_typedef" href="unix_8h.html#a47c8a73ac499df4157ebef0b54c8539b">uv_rwlock_t</a>;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
@@ -871,7 +871,7 @@ $(document).ready(function(){initNavTree('win_8h_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_087b1a8e0ed1488a006d59bf0cd93b9d.html">libuv</a></li><li class="navelem"><a class="el" href="dir_87a6640707d1b098e35356ebaaac7457.html">include</a></li><li class="navelem"><a class="el" href="dir_34c5f5e54a24c1a85a7bd1a33795e3a6.html">uv</a></li><li class="navelem"><a class="el" href="win_8h.html">win.h</a></li>
-    <li class="footer">Generated on Thu Mar 31 2022 07:33:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 8 2022 05:04:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

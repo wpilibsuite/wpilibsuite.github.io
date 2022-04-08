@@ -15,7 +15,7 @@ var searchData=
   ['grants_12',['grants',['../_third_party_notices_8txt.html#a5987d8921f9828014c80355981725f91',1,'ThirdPartyNotices.txt']]],
   ['gray_13',['gray',['../namespaceunits.html#a97506102813c18a1aae450f37c341590',1,'units']]],
   ['grays_14',['grays',['../namespaceunits.html#a34ce607bc5674e28cfa6087e7022a02d',1,'units']]],
-  ['green_15',['green',['../classfrc_1_1_color.html#a15b96eac9f0faaf19041c5310e6ac09d',1,'frc::Color::green()'],['../classfrc_1_1_color8_bit.html#aed22be8ac6496e3a6da81c304aff138a',1,'frc::Color8Bit::green()']]],
+  ['green_15',['green',['../classfrc_1_1_color8_bit.html#aed22be8ac6496e3a6da81c304aff138a',1,'frc::Color8Bit::green()'],['../classfrc_1_1_color.html#a15b96eac9f0faaf19041c5310e6ac09d',1,'frc::Color::green()']]],
   ['grouping_16',['grouping',['../structthousands__sep__result.html#a13f0f9dcb49fb782860eb26155a2f682',1,'thousands_sep_result']]],
   ['gy_17',['Gy',['../namespaceunits.html#a7d70c63ad781d8e5db615bc9c71c7786',1,'units']]]
 ];

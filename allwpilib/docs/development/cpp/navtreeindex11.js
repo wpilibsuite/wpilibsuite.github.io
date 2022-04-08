@@ -1,10 +1,9 @@
 var NAVTREEINDEX11 =
 {
 "_memory_buffer_8h.html":[6,0,14,56],
-"_memory_buffer_8h.html#a69bca4cd48a2ac719202f2f290a78bc9":[6,0,14,56,4],
 "_memory_buffer_8h_source.html":[6,0,14,56],
-"_merwe_scaled_sigma_points_8h.html":[6,0,7,1,6],
-"_merwe_scaled_sigma_points_8h_source.html":[6,0,7,1,6],
+"_merwe_scaled_sigma_points_8h.html":[6,0,6,1,6],
+"_merwe_scaled_sigma_points_8h_source.html":[6,0,6,1,6],
 "_meta_8h.html":[6,0,3,0,0,1,3,9],
 "_meta_8h.html#a017bb5f182d0e8afd1fed693649d2436":[6,0,3,0,0,1,3,9,119],
 "_meta_8h.html#a1f6a1aca2368e0dc47d3a2b6b4c221e9":[6,0,3,0,0,1,3,9,127],
@@ -56,13 +55,13 @@ var NAVTREEINDEX11 =
 "_mock_hooks_8h.html#ae860f367ab877285fd32f80c15b995f4":[6,0,9,2,14,9],
 "_mock_hooks_8h.html#af185834ce258a6557b487f2aa6b473a2":[6,0,9,2,14,1],
 "_mock_hooks_8h_source.html":[6,0,9,2,14],
-"_motor_controller_8h.html":[6,0,6,4,2],
-"_motor_controller_8h_source.html":[6,0,6,4,2],
-"_motor_controller_group_8h.html":[6,0,6,4,3],
-"_motor_controller_group_8h_source.html":[6,0,6,4,3],
-"_motor_controller_group_8inc.html":[6,0,6,4,4],
-"_motor_safety_8h.html":[6,0,6,52],
-"_motor_safety_8h_source.html":[6,0,6,52],
+"_motor_controller_8h.html":[6,0,5,4,2],
+"_motor_controller_8h_source.html":[6,0,5,4,2],
+"_motor_controller_group_8h.html":[6,0,5,4,3],
+"_motor_controller_group_8h_source.html":[6,0,5,4,3],
+"_motor_controller_group_8inc.html":[6,0,5,4,4],
+"_motor_safety_8h.html":[6,0,5,52],
+"_motor_safety_8h_source.html":[6,0,5,52],
 "_multicast_service_announcer_8h.html":[6,0,14,59],
 "_multicast_service_announcer_8h.html#a0528929de4f460319ca9ee6846d22afb":[6,0,14,59,2],
 "_multicast_service_announcer_8h.html#a10ae3f8a8153d5e1b6a67384520e0d35":[6,0,14,59,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "_n_e_o_n_2_packet_math_8h.html#a1fbf4999efafba41873d96e133bccf22":[6,0,3,0,0,1,0,2,3,483],
 "_n_e_o_n_2_packet_math_8h.html#a20b4290b14c83139f2ded75e1b86cb0d":[6,0,3,0,0,1,0,2,3,38],
 "_n_e_o_n_2_packet_math_8h.html#a21013b2e7428919e9b41b33aacc7f017":[6,0,3,0,0,1,0,2,3,310],
-"_n_e_o_n_2_packet_math_8h.html#a21e5f86800f61906e01ff31bfe676153":[6,0,3,0,0,1,0,2,3,647]
+"_n_e_o_n_2_packet_math_8h.html#a21e5f86800f61906e01ff31bfe676153":[6,0,3,0,0,1,0,2,3,647],
+"_n_e_o_n_2_packet_math_8h.html#a221c97042b4f532b0eeee48bc34e3314":[6,0,3,0,0,1,0,2,3,198]
 };

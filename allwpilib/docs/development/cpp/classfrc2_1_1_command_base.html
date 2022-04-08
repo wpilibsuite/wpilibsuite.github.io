@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-29-g81c5b41</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-31-g1b26e2d</span>
    </div>
   </td>
  </tr>
@@ -123,15 +123,16 @@ Inheritance diagram for frc2::CommandBase:</div>
 <area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, ProfiledPIDCommand&lt; Distance &gt; &gt;" shape="rect" coords="1022,504,1523,528"/>
 <area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, ProxyScheduleCommand &gt;" shape="rect" coords="1022,560,1523,584"/>
 <area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, RamseteCommand &gt;" shape="rect" coords="1022,616,1523,640"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, RunCommand &gt;" shape="rect" coords="1022,672,1523,696"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, ScheduleCommand &gt;" shape="rect" coords="1022,728,1523,752"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, SelectCommand&lt; Key &gt; &gt;" shape="rect" coords="1022,784,1523,808"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, StartEndCommand &gt;" shape="rect" coords="1022,840,1523,864"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, SwerveControllerCommand&lt; NumModules &gt; &gt;" shape="rect" coords="1022,896,1523,920"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, TrapezoidProfileCommand&lt; Distance &gt; &gt;" shape="rect" coords="1022,952,1523,976"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, WaitCommand &gt;" shape="rect" coords="1022,1008,1523,1032"/>
-<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, WaitUntilCommand &gt;" shape="rect" coords="1022,1064,1523,1088"/>
-<area href="classfrc2_1_1_command_group_base.html" title="A base for CommandGroups." alt="frc2::CommandGroupBase" shape="rect" coords="1022,1120,1523,1144"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, RepeatCommand &gt;" shape="rect" coords="1022,672,1523,696"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, RunCommand &gt;" shape="rect" coords="1022,728,1523,752"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, ScheduleCommand &gt;" shape="rect" coords="1022,784,1523,808"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, SelectCommand&lt; Key &gt; &gt;" shape="rect" coords="1022,840,1523,864"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, StartEndCommand &gt;" shape="rect" coords="1022,896,1523,920"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, SwerveControllerCommand&lt; NumModules &gt; &gt;" shape="rect" coords="1022,952,1523,976"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, TrapezoidProfileCommand&lt; Distance &gt; &gt;" shape="rect" coords="1022,1008,1523,1032"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, WaitCommand &gt;" shape="rect" coords="1022,1064,1523,1088"/>
+<area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandBase, WaitUntilCommand &gt;" shape="rect" coords="1022,1120,1523,1144"/>
+<area href="classfrc2_1_1_command_group_base.html" title="A base for CommandGroups." alt="frc2::CommandGroupBase" shape="rect" coords="1022,1176,1523,1200"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -216,6 +217,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e72c5be424accbf416cf35be061c918 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_perpetual_command.html">PerpetualCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a4e72c5be424accbf416cf35be061c918">Perpetually</a> () &amp;&amp;</td></tr>
 <tr class="memdesc:a4e72c5be424accbf416cf35be061c918 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run perpetually, ignoring its ordinary end conditions.  <a href="classfrc2_1_1_command.html#a4e72c5be424accbf416cf35be061c918">More...</a><br /></td></tr>
 <tr class="separator:a4e72c5be424accbf416cf35be061c918 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f03abf3d59fcd539385e39526751512 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512">Repeat</a> () &amp;&amp;</td></tr>
+<tr class="memdesc:a2f03abf3d59fcd539385e39526751512 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512">More...</a><br /></td></tr>
+<tr class="separator:a2f03abf3d59fcd539385e39526751512 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd847a1c3b2097e9d13cd0c1b00dbacf inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#afd847a1c3b2097e9d13cd0c1b00dbacf">AsProxy</a> ()</td></tr>
 <tr class="memdesc:afd847a1c3b2097e9d13cd0c1b00dbacf inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.  <a href="classfrc2_1_1_command.html#afd847a1c3b2097e9d13cd0c1b00dbacf">More...</a><br /></td></tr>
 <tr class="separator:afd847a1c3b2097e9d13cd0c1b00dbacf inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -639,7 +643,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a></li>
-    <li class="footer">Generated on Thu Mar 31 2022 07:33:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Apr 8 2022 05:04:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

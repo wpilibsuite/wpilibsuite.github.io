@@ -445,6 +445,9 @@ var hierarchy =
         [ "frc2::CommandHelper< CommandBase, RamseteCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::RamseteCommand", "classfrc2_1_1_ramsete_command.html", null ]
         ] ],
+        [ "frc2::CommandHelper< CommandBase, RepeatCommand >", "classfrc2_1_1_command_helper.html", [
+          [ "frc2::RepeatCommand", "classfrc2_1_1_repeat_command.html", null ]
+        ] ],
         [ "frc2::CommandHelper< CommandBase, RunCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::RunCommand", "classfrc2_1_1_run_command.html", null ]
         ] ],
