@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-31-g1b26e2d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-35-gaef4b16</span>
    </div>
   </td>
  </tr>
@@ -952,6 +952,21 @@ Functions</h2></td></tr>
 <tr class="separator:a07fc5d3fd107b59e2d66d799583695bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b5a9b431ae2924414aac97af6c372ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a4b5a9b431ae2924414aac97af6c372ae">from_json</a> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="structfrc_1_1_trajectory_1_1_state.html">Trajectory::State</a> &amp;state)</td></tr>
 <tr class="separator:a4b5a9b431ae2924414aac97af6c372ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956b69d1e5eb6ce39b634a3c4d5a9578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> units::meter_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a956b69d1e5eb6ce39b634a3c4d5a9578">CalculateDistanceToTarget</a> (units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch)</td></tr>
+<tr class="memdesc:a956b69d1e5eb6ce39b634a3c4d5a9578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm from <a href="https://docs.limelightvision.io/en/latest/cs_estimating_distance.html">https://docs.limelightvision.io/en/latest/cs_estimating_distance.html</a> Estimates range to a target using the target's elevation.  <a href="namespacefrc.html#a956b69d1e5eb6ce39b634a3c4d5a9578">More...</a><br /></td></tr>
+<tr class="separator:a956b69d1e5eb6ce39b634a3c4d5a9578"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f892d2bc4012a02e51a6a3c9603340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a49f892d2bc4012a02e51a6a3c9603340">EstimateFieldToRobot</a> (units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;targetYaw, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;cameraToRobot)</td></tr>
+<tr class="memdesc:a49f892d2bc4012a02e51a6a3c9603340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the position of the robot in the field.  <a href="namespacefrc.html#a49f892d2bc4012a02e51a6a3c9603340">More...</a><br /></td></tr>
+<tr class="separator:a49f892d2bc4012a02e51a6a3c9603340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22529d05f9e9f5afb448dc9748cbbcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad22529d05f9e9f5afb448dc9748cbbcf">EstimateFieldToRobot</a> (const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;cameraToRobot)</td></tr>
+<tr class="memdesc:ad22529d05f9e9f5afb448dc9748cbbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera.  <a href="namespacefrc.html#ad22529d05f9e9f5afb448dc9748cbbcf">More...</a><br /></td></tr>
+<tr class="separator:ad22529d05f9e9f5afb448dc9748cbbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abada43f2cb60fe867a9d642a97faf547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abada43f2cb60fe867a9d642a97faf547">EstimateCameraToTarget</a> (const <a class="el" href="classfrc_1_1_translation2d.html">frc::Translation2d</a> &amp;cameraToTargetTranslation, const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;gyroAngle)</td></tr>
+<tr class="memdesc:abada43f2cb60fe867a9d642a97faf547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates a <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">Transform2d</a> that maps the camera position to the target position, using the robot's gyro.  <a href="namespacefrc.html#abada43f2cb60fe867a9d642a97faf547">More...</a><br /></td></tr>
+<tr class="separator:abada43f2cb60fe867a9d642a97faf547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fdae7f8d72a4ef822c606f707cee95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a97fdae7f8d72a4ef822c606f707cee95">EstimateFieldToCamera</a> (const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;fieldToTarget)</td></tr>
+<tr class="memdesc:a97fdae7f8d72a4ef822c606f707cee95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field.  <a href="namespacefrc.html#a97fdae7f8d72a4ef822c606f707cee95">More...</a><br /></td></tr>
+<tr class="separator:a97fdae7f8d72a4ef822c606f707cee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
 <tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">DiscretizeA</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA)</td></tr>
 <tr class="memdesc:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A matrix.  <a href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">More...</a><br /></td></tr>
@@ -2107,6 +2122,59 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
+<a id="a956b69d1e5eb6ce39b634a3c4d5a9578" name="a956b69d1e5eb6ce39b634a3c4d5a9578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956b69d1e5eb6ce39b634a3c4d5a9578">&#9670;&nbsp;</a></span>CalculateDistanceToTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> units::meter_t frc::CalculateDistanceToTarget </td>
+          <td>(</td>
+          <td class="paramtype">units::meter_t&#160;</td>
+          <td class="paramname"><em>cameraHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meter_t&#160;</td>
+          <td class="paramname"><em>targetHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::radian_t&#160;</td>
+          <td class="paramname"><em>cameraPitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::radian_t&#160;</td>
+          <td class="paramname"><em>targetPitch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Algorithm from <a href="https://docs.limelightvision.io/en/latest/cs_estimating_distance.html">https://docs.limelightvision.io/en/latest/cs_estimating_distance.html</a> Estimates range to a target using the target's elevation. </p>
+<p >This method can produce more stable results than SolvePNP when well tuned, if the full 6d robot pose is not required.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraHeight</td><td>The height of the camera off the floor. </td></tr>
+    <tr><td class="paramname">targetHeight</td><td>The height of the target off the floor. </td></tr>
+    <tr><td class="paramname">cameraPitch</td><td>The pitch of the camera from the horizontal plane. Positive values up. </td></tr>
+    <tr><td class="paramname">targetPitch</td><td>The pitch of the target in the camera's lens. Positive values up. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The estimated distance to the target. </dd></dl>
+
+</div>
+</div>
 <a id="a9d415b956c01ca06977fbf98a6446cb2" name="a9d415b956c01ca06977fbf98a6446cb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d415b956c01ca06977fbf98a6446cb2">&#9670;&nbsp;</a></span>ClampInputMaxMagnitude()</h2>
 
@@ -2502,6 +2570,216 @@ template&lt;int Outputs&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abada43f2cb60fe867a9d642a97faf547" name="abada43f2cb60fe867a9d642a97faf547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abada43f2cb60fe867a9d642a97faf547">&#9670;&nbsp;</a></span>EstimateCameraToTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> frc::EstimateCameraToTarget </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_translation2d.html">frc::Translation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>cameraToTargetTranslation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>fieldToTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimates a <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">Transform2d</a> that maps the camera position to the target position, using the robot's gyro. </p>
+<p >Note that the gyro angle provided <em>must</em> line up with the field coordinate system &ndash; that is, it should read zero degrees when pointed towards the opposing alliance station, and increase as the robot rotates CCW.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraToTargetTranslation</td><td>A <a class="el" href="classfrc_1_1_translation2d.html" title="Represents a translation in 2d space.">Translation2d</a> that encodes the x/y position of the target relative to the camera. </td></tr>
+    <tr><td class="paramname">fieldToTarget</td><td>A <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> representing the target position in the field coordinate system. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The current robot gyro angle, likely from odometry. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">Transform2d</a> that takes us from the camera to the target. </dd></dl>
+
+</div>
+</div>
+<a id="a97fdae7f8d72a4ef822c606f707cee95" name="a97fdae7f8d72a4ef822c606f707cee95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97fdae7f8d72a4ef822c606f707cee95">&#9670;&nbsp;</a></span>EstimateFieldToCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> frc::EstimateFieldToCamera </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>cameraToTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>fieldToTarget</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field. </p>
+<p >This <em>only</em> tracks the position of the camera, not the position of the robot itself.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraToTarget</td><td>The position of the target relative to the camera. </td></tr>
+    <tr><td class="paramname">fieldToTarget</td><td>The position of the target in the field. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The position of the camera in the field. </dd></dl>
+
+</div>
+</div>
+<a id="ad22529d05f9e9f5afb448dc9748cbbcf" name="ad22529d05f9e9f5afb448dc9748cbbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22529d05f9e9f5afb448dc9748cbbcf">&#9670;&nbsp;</a></span>EstimateFieldToRobot() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> frc::EstimateFieldToRobot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>cameraToTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>fieldToTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>cameraToRobot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraToTarget</td><td>The position of the target relative to the camera. </td></tr>
+    <tr><td class="paramname">fieldToTarget</td><td>The position of the target in the field. </td></tr>
+    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">frc::Transform2d(3_in, 0_in, 0_deg)</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The position of the robot in the field. </dd></dl>
+
+</div>
+</div>
+<a id="a49f892d2bc4012a02e51a6a3c9603340" name="a49f892d2bc4012a02e51a6a3c9603340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49f892d2bc4012a02e51a6a3c9603340">&#9670;&nbsp;</a></span>EstimateFieldToRobot() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> frc::EstimateFieldToRobot </td>
+          <td>(</td>
+          <td class="paramtype">units::meter_t&#160;</td>
+          <td class="paramname"><em>cameraHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meter_t&#160;</td>
+          <td class="paramname"><em>targetHeight</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::radian_t&#160;</td>
+          <td class="paramname"><em>cameraPitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::radian_t&#160;</td>
+          <td class="paramname"><em>targetPitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>targetYaw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>fieldToTarget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>cameraToRobot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estimate the position of the robot in the field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraHeight</td><td>The physical height of the camera off the floor. </td></tr>
+    <tr><td class="paramname">targetHeight</td><td>The physical height of the target off the floor. This should be the height of whatever is being targeted (i.e. if the targeting region is set to top, this should be the height of the top of the target). </td></tr>
+    <tr><td class="paramname">cameraPitch</td><td>The pitch of the camera from the horizontal plane. Positive values up. </td></tr>
+    <tr><td class="paramname">targetPitch</td><td>The pitch of the target in the camera's lens. Positive values up. </td></tr>
+    <tr><td class="paramname">targetYaw</td><td>The observed yaw of the target. Note that this <em>must</em> be CCW-positive, and Photon returns CW-positive. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The current robot gyro angle, likely from odometry. </td></tr>
+    <tr><td class="paramname">fieldToTarget</td><td>A <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> representing the target position in the field coordinate system. </td></tr>
+    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">frc::Transform2d(3_in, 0_in, 0_deg)</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The position of the robot in the field. </dd></dl>
 
 </div>
 </div>
@@ -4403,7 +4681,7 @@ template&lt;int CovDim, int States&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Fri Apr 8 2022 05:04:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Apr 9 2022 04:35:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

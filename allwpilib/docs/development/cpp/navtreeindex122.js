@@ -1,5 +1,14 @@
 var NAVTREEINDEX122 =
 {
+"namespace_eigen_1_1bfloat16__impl.html#a749a42f528a36c12997edbee69055444":[4,0,7,1,62],
+"namespace_eigen_1_1bfloat16__impl.html#a79c0b3681e7fe43fbe3c2b77dcd47452":[4,0,7,1,39],
+"namespace_eigen_1_1bfloat16__impl.html#a7a2b751ebb59ab676834caa28192a7df":[4,0,7,1,46],
+"namespace_eigen_1_1bfloat16__impl.html#a8030d847201c6fc9880b509319d29990":[4,0,7,1,41],
+"namespace_eigen_1_1bfloat16__impl.html#a818e846be883ba5ebabe688839b861c7":[4,0,7,1,4],
+"namespace_eigen_1_1bfloat16__impl.html#a8464072083c4bf8974351712bcff2536":[4,0,7,1,19],
+"namespace_eigen_1_1bfloat16__impl.html#a89726c0bfa3ecbf0e150fb2cdf869340":[4,0,7,1,18],
+"namespace_eigen_1_1bfloat16__impl.html#a91f80ec08121c58f2c13b90e65a5ea6f":[4,0,7,1,23],
+"namespace_eigen_1_1bfloat16__impl.html#a92229ddb3d6aac502219bec711fd8efc":[4,0,7,1,54],
 "namespace_eigen_1_1bfloat16__impl.html#a969b30922d46547f65a8d7c4ec144fe7":[4,0,7,1,17],
 "namespace_eigen_1_1bfloat16__impl.html#a9b7b1d599a44c4f44ace430248292e35":[4,0,7,1,5],
 "namespace_eigen_1_1bfloat16__impl.html#a9c807b906c22d46c81209d69635b33c2":[4,0,7,1,16],
@@ -240,14 +249,5 @@ var NAVTREEINDEX122 =
 "namespace_eigen_1_1internal.html#a13f376ef0ee6e7a740d37cfb34b6a87a":[4,0,7,4,1441],
 "namespace_eigen_1_1internal.html#a1420f08f3b25299b5268e110dd226401":[4,0,7,4,1843],
 "namespace_eigen_1_1internal.html#a142eb93a704effbcdf9bcd1a80fd7ac4":[4,0,7,4,1727],
-"namespace_eigen_1_1internal.html#a144949b9fa440d5d027791aef25a7fa9":[4,0,7,4,1568],
-"namespace_eigen_1_1internal.html#a147c6f5e7cac6246386be1685cac05f1":[4,0,7,4,2585],
-"namespace_eigen_1_1internal.html#a148063d80a7b17c2d9b3a2eb14ef1869":[4,0,7,4,1476],
-"namespace_eigen_1_1internal.html#a1496dee54d1602fc56d805d9153dd152":[4,0,7,4,3226],
-"namespace_eigen_1_1internal.html#a149d36bb234e01b22f7ecdea9215f8c2":[4,0,7,4,2781],
-"namespace_eigen_1_1internal.html#a14b52c1e9fdb345b85c01e78538b5803":[4,0,7,4,1750],
-"namespace_eigen_1_1internal.html#a1509be4cca946202ccf0b9973a15c7c4":[4,0,7,4,3013],
-"namespace_eigen_1_1internal.html#a15288860143a515b596ae7d4f6e297d0":[4,0,7,4,3105],
-"namespace_eigen_1_1internal.html#a154615435f0cadc804e735e271a1b24d":[4,0,7,4,2736],
-"namespace_eigen_1_1internal.html#a156fc06823e56ace8f0d25017239319d":[4,0,7,4,2925]
+"namespace_eigen_1_1internal.html#a144949b9fa440d5d027791aef25a7fa9":[4,0,7,4,1568]
 };

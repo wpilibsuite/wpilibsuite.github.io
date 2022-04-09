@@ -109,6 +109,13 @@ var NAVTREEINDEX4 =
 "_compressor_config_type_8h.html#a498a2d59993362a6264f53be5572b823ab9f5c797ebbf55adccdd8539a65a0241":[6,0,5,29,0,0],
 "_compressor_config_type_8h.html#a498a2d59993362a6264f53be5572b823afb1b6e23a3767d2a31ef7899e6dd3f1e":[6,0,5,29,0,3],
 "_compressor_config_type_8h_source.html":[6,0,5,29],
+"_computer_vision_util_8h.html":[6,0,6,10],
+"_computer_vision_util_8h.html#a49f892d2bc4012a02e51a6a3c9603340":[6,0,6,10,4],
+"_computer_vision_util_8h.html#a956b69d1e5eb6ce39b634a3c4d5a9578":[6,0,6,10,0],
+"_computer_vision_util_8h.html#a97fdae7f8d72a4ef822c606f707cee95":[6,0,6,10,2],
+"_computer_vision_util_8h.html#abada43f2cb60fe867a9d642a97faf547":[6,0,6,10,1],
+"_computer_vision_util_8h.html#ad22529d05f9e9f5afb448dc9748cbbcf":[6,0,6,10,3],
+"_computer_vision_util_8h_source.html":[6,0,6,10],
 "_concurrent_queue_8h.html":[6,0,14,13],
 "_concurrent_queue_8h_source.html":[6,0,14,13],
 "_condition_estimator_8h.html":[6,0,3,0,0,1,14],
@@ -242,12 +249,5 @@ var NAVTREEINDEX4 =
 "_data_log_8h.html#a1d117294de079965c63555e32e04836caa9807fb4bb21392276078c5bad9209ff":[6,0,14,16,13,2],
 "_data_log_8h_source.html":[6,0,14,16],
 "_data_log_manager_8h.html":[6,0,5,33],
-"_data_log_manager_8h_source.html":[6,0,5,33],
-"_data_log_reader_8h.html":[6,0,14,17],
-"_data_log_reader_8h_source.html":[6,0,14,17],
-"_debouncer_8h.html":[6,0,6,2,0],
-"_debouncer_8h_source.html":[6,0,6,2,0],
-"_default_2_type_casting_8h.html":[6,0,3,0,0,1,0,1,6],
-"_default_2_type_casting_8h_source.html":[6,0,3,0,0,1,0,1,6],
-"_demangle_8h.html":[6,0,14,18]
+"_data_log_manager_8h_source.html":[6,0,5,33]
 };

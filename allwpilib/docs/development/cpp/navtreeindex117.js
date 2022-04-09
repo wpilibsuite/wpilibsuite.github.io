@@ -1,5 +1,14 @@
 var NAVTREEINDEX117 =
 {
+"group__hal__ports.html#gaade8717fd75e3de39ff698b246a7f595":[3,1,31,19],
+"group__hal__ports.html#gac1424cc22f7ade45e9dc863f64125a3e":[3,1,31,12],
+"group__hal__ports.html#gacb1a057d0c6cbbfd1c7329b13bd1d4ea":[3,1,31,22],
+"group__hal__ports.html#gad2640f47afb8191db107a0ca558fc5b0":[3,1,31,15],
+"group__hal__ports.html#gae41833d9f4375b7d7e038bb638720d41":[3,1,31,14],
+"group__hal__ports.html#gafca4607854bbe0c598d7e59d22e625ed":[3,1,31,21],
+"group__hal__power.html":[3,1,30],
+"group__hal__power.html#ga0ffc678a1cce30e7eb7af10a0f53786a":[3,1,30,9],
+"group__hal__power.html#ga3bafe80920775c542d1dc0eada80c548":[3,1,30,13],
 "group__hal__power.html#ga48ee547639beb382aaf30317be5ca6dd":[3,1,30,10],
 "group__hal__power.html#ga52b0f40f1a61e88b50547c8ca611e469":[3,1,30,6],
 "group__hal__power.html#ga54bbd26b5af42f7ee1978681128fbddf":[3,1,30,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX117 =
 "group__node.html#gab11b76ad94a8b758203b3c530af88112":[3,7,50],
 "group__node.html#gab1b0edee199d7a2ed032efe412328a29":[3,7,49],
 "group__node.html#gab54c26f5fc03f73b02070a72610c9127":[3,7,57],
-"group__node.html#gab9a2402b9da984817b0de813562ea8b5":[3,7,83],
-"group__node.html#gabc37f432559b3b4be52e91e66a09f57d":[3,7,26],
-"group__node.html#gabf57acbc8356be8fab13a64f78986fdc":[3,7,66],
-"group__node.html#gabf769643817c3d88f98cc40801fba2eb":[3,7,58],
-"group__node.html#gacb8292add714bdf140793a83469d8e9f":[3,7,11],
-"group__node.html#gad15f3dba3fe1c0b5b7d9ed5d2c34215a":[3,7,10],
-"group__node.html#gad38b07a6bcb0d2d8999a8e03915c96b1":[3,7,25],
-"group__node.html#gad54f9c1d4bfdb0ae572782c4307d475f":[3,7,62],
-"group__node.html#gad67ed9046795fa1ee8e0a646612c6681":[3,7,80],
-"group__node.html#gad8360ae0ff58c0b6fb5c5997297b602c":[3,7,71]
+"group__node.html#gab9a2402b9da984817b0de813562ea8b5":[3,7,83]
 };

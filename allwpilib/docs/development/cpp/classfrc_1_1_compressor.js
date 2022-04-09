@@ -16,6 +16,7 @@ var classfrc_1_1_compressor =
     [ "GetPressure", "classfrc_1_1_compressor.html#a2b2f3f6ca8131945a002fb545ff5e798", null ],
     [ "GetPressureSwitchValue", "classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8", null ],
     [ "InitSendable", "classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774", null ],
+    [ "IsEnabled", "classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26", null ],
     [ "operator=", "classfrc_1_1_compressor.html#af9c8dcd60df772872e90cb8a54f934c8", null ],
     [ "operator=", "classfrc_1_1_compressor.html#a69b170eb04bca7f76bb8fb790395110a", null ],
     [ "Start", "classfrc_1_1_compressor.html#a860fca78ae417ac8af88f10c6030092c", null ],

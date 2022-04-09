@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-31-g1b26e2d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-35-gaef4b16</span>
    </div>
   </td>
  </tr>
@@ -140,6 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae0c0c4e96a8a6c2429c43ab3f99e7cf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">Enabled</a> () const</td></tr>
 <tr class="memdesc:ae0c0c4e96a8a6c2429c43ab3f99e7cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if compressor output is active.  <a href="classfrc_1_1_compressor.html#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">More...</a><br /></td></tr>
 <tr class="separator:ae0c0c4e96a8a6c2429c43ab3f99e7cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49311123c190a0720a82337be711da26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26">IsEnabled</a> () const</td></tr>
+<tr class="memdesc:a49311123c190a0720a82337be711da26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the compressor is active or not.  <a href="classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26">More...</a><br /></td></tr>
+<tr class="separator:a49311123c190a0720a82337be711da26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ae308102dae55c994b4a57f8079dd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8">GetPressureSwitchValue</a> () const</td></tr>
 <tr class="memdesc:a06ae308102dae55c994b4a57f8079dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the pressure switch is triggered.  <a href="classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8">More...</a><br /></td></tr>
 <tr class="separator:a06ae308102dae55c994b4a57f8079dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,7 +448,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if compressor output is active. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the compressor is on </dd></dl>
+<p >To (re)enable the compressor use <a class="el" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c" title="Enable compressor closed loop control using digital input.">EnableDigital()</a> or EnableAnalog(...).</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the compressor is on. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">Deprecated:</a></b></dt><dd>To avoid confusion in thinking this (re)enables the compressor use <a class="el" href="classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26" title="Returns whether the compressor is active or not.">IsEnabled()</a>. </dd></dl>
 
 </div>
 </div>
@@ -641,6 +646,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a49311123c190a0720a82337be711da26" name="a49311123c190a0720a82337be711da26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49311123c190a0720a82337be711da26">&#9670;&nbsp;</a></span>IsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::Compressor::IsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the compressor is active or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the compressor is on - otherwise false. </dd></dl>
+
+</div>
+</div>
 <a id="af9c8dcd60df772872e90cb8a54f934c8" name="af9c8dcd60df772872e90cb8a54f934c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9c8dcd60df772872e90cb8a54f934c8">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -744,7 +769,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_compressor.html">Compressor</a></li>
-    <li class="footer">Generated on Fri Apr 8 2022 05:04:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Apr 9 2022 04:35:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
