@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a64d129224a5377b63e9727479ec987d9":[6,0,9,1,1,1,11],
+"_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a6d5050f7a97e7e2e881a4e09dfbd6087":[6,0,9,1,1,1,19],
 "_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a8449bc264b69c3a0fe8b60361eaf7aeb":[6,0,9,1,1,1,9],
 "_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a87d487f6f605eb96e61be67988e41e6d":[6,0,9,1,1,1,13],
 "_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a920d269f8e1a33f6426ba979ccdfb289":[6,0,9,1,1,1,1],
@@ -63,8 +65,8 @@ var NAVTREEINDEX8 =
 "_held_button_scheduler_8h_source.html":[6,0,7,0,3],
 "_hessenberg_decomposition_8h.html":[6,0,3,0,0,2,5],
 "_hessenberg_decomposition_8h_source.html":[6,0,3,0,0,2,5],
-"_holonomic_drive_controller_8h.html":[6,0,6,0,4],
-"_holonomic_drive_controller_8h_source.html":[6,0,6,0,4],
+"_holonomic_drive_controller_8h.html":[6,0,6,0,5],
+"_holonomic_drive_controller_8h_source.html":[6,0,6,0,5],
 "_householder.html":[6,0,3,0,4],
 "_householder.html#ad9787d843c48e739029389b36afab402":[6,0,3,0,4,0],
 "_householder_8h.html":[6,0,3,0,0,3,1],
@@ -112,8 +114,8 @@ var NAVTREEINDEX8 =
 "_image_8h.html":[6,0,3,0,0,6,0],
 "_image_8h.html#a626ffea4030fe7858dc958a680c53679":[6,0,3,0,0,6,0,2],
 "_image_8h_source.html":[6,0,3,0,0,6,0],
-"_implicit_model_follower_8h.html":[6,0,6,0,5],
-"_implicit_model_follower_8h_source.html":[6,0,6,0,5],
+"_implicit_model_follower_8h.html":[6,0,6,0,6],
+"_implicit_model_follower_8h_source.html":[6,0,6,0,6],
 "_indexed_classed_handle_resource_8h.html":[6,0,9,1,2],
 "_indexed_classed_handle_resource_8h_source.html":[6,0,9,1,2],
 "_indexed_handle_resource_8h.html":[6,0,9,1,3],
@@ -217,10 +219,10 @@ var NAVTREEINDEX8 =
 "_limited_handle_resource_8h_source.html":[6,0,9,1,5],
 "_linear_filter_8h.html":[6,0,6,2,1],
 "_linear_filter_8h_source.html":[6,0,6,2,1],
-"_linear_plant_inversion_feedforward_8h.html":[6,0,6,0,6],
-"_linear_plant_inversion_feedforward_8h_source.html":[6,0,6,0,6],
-"_linear_quadratic_regulator_8h.html":[6,0,6,0,7],
-"_linear_quadratic_regulator_8h_source.html":[6,0,6,0,7],
+"_linear_plant_inversion_feedforward_8h.html":[6,0,6,0,7],
+"_linear_plant_inversion_feedforward_8h_source.html":[6,0,6,0,7],
+"_linear_quadratic_regulator_8h.html":[6,0,6,0,8],
+"_linear_quadratic_regulator_8h_source.html":[6,0,6,0,8],
 "_linear_system_8h.html":[6,0,6,8,2],
 "_linear_system_8h_source.html":[6,0,6,8,2],
 "_linear_system_id_8h.html":[6,0,6,8,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa749ae7790a80d70497b9b873e51737c4":[6,0,14,49,10,6],
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa82615e27834c547fec2af93cf5d4b4a7":[6,0,14,49,10,4],
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aabd6cb7f9e35184593c719b52e3269f2e":[6,0,14,49,10,1],
-"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aac7f7f9988bf8b7a36185cd7a19faa576":[6,0,14,49,10,5],
-"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aae12c0145b954247e75447e15f40ba4e9":[6,0,14,49,10,8],
-"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aae6035e37ce53de5e15e2d11ab3aaa8d2":[6,0,14,49,10,2]
+"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aac7f7f9988bf8b7a36185cd7a19faa576":[6,0,14,49,10,5]
 };

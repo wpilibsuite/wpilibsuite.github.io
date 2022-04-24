@@ -1,5 +1,13 @@
 var NAVTREEINDEX119 =
 {
+"group__ntcore__network__func.html#gadadda84f6937e36ee082a05d448d940a":[3,9,5,1],
+"group__ntcore__network__func.html#gae896b298d75af83c93ea02ef461e21ea":[3,9,5,10],
+"group__ntcore__rpc__cfunc.html":[3,8,4],
+"group__ntcore__rpc__cfunc.html#ga0c09c3003866eed13c9ee6f25ac4aaa4":[3,8,4,9],
+"group__ntcore__rpc__cfunc.html#ga13dac0f3caf774a54c727ddb1ad20c9f":[3,8,4,3],
+"group__ntcore__rpc__cfunc.html#ga2288603e819eafc06b5534e962c53ca3":[3,8,4,14],
+"group__ntcore__rpc__cfunc.html#ga25915112fcb5e7adba02b130629e6093":[3,8,4,7],
+"group__ntcore__rpc__cfunc.html#ga2c4a7216b6faa7307ccb8ea608272ba3":[3,8,4,10],
 "group__ntcore__rpc__cfunc.html#ga58629555482e73bb3d4cf063576461f1":[3,8,4,8],
 "group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc":[3,8,4,0],
 "group__ntcore__rpc__cfunc.html#ga5f1bf3f90885ffaac1bb08f828f10f36":[3,8,4,16],
@@ -241,13 +249,5 @@ var NAVTREEINDEX119 =
 "hal_2src_2main_2native_2include_2hal_2_accelerometer_8h.html":[6,0,9,4],
 "hal_2src_2main_2native_2include_2hal_2_accelerometer_8h_source.html":[6,0,9,4],
 "hal_2src_2main_2native_2include_2hal_2_addressable_l_e_d_8h.html":[6,0,9,5],
-"hal_2src_2main_2native_2include_2hal_2_addressable_l_e_d_8h_source.html":[6,0,9,5],
-"hal_2src_2main_2native_2include_2hal_2_analog_gyro_8h.html":[6,0,9,8],
-"hal_2src_2main_2native_2include_2hal_2_analog_gyro_8h_source.html":[6,0,9,8],
-"hal_2src_2main_2native_2include_2hal_2_analog_input_8h.html":[6,0,9,9],
-"hal_2src_2main_2native_2include_2hal_2_analog_input_8h_source.html":[6,0,9,9],
-"hal_2src_2main_2native_2include_2hal_2_analog_output_8h.html":[6,0,9,10],
-"hal_2src_2main_2native_2include_2hal_2_analog_output_8h_source.html":[6,0,9,10],
-"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html":[6,0,9,11],
-"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h_source.html":[6,0,9,11]
+"hal_2src_2main_2native_2include_2hal_2_addressable_l_e_d_8h_source.html":[6,0,9,5]
 };

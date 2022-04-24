@@ -9,6 +9,10 @@ var dir_901369ca5399cfb92b9538222311796d =
     [ "ControlAffinePlantInversionFeedforward.h", "_control_affine_plant_inversion_feedforward_8h.html", [
       [ "frc::ControlAffinePlantInversionFeedforward< States, Inputs >", "classfrc_1_1_control_affine_plant_inversion_feedforward.html", "classfrc_1_1_control_affine_plant_inversion_feedforward" ]
     ] ],
+    [ "DifferentialDriveAccelerationLimiter.h", "_differential_drive_acceleration_limiter_8h.html", [
+      [ "frc::DifferentialDriveAccelerationLimiter", "classfrc_1_1_differential_drive_acceleration_limiter.html", "classfrc_1_1_differential_drive_acceleration_limiter" ],
+      [ "frc::DifferentialDriveAccelerationLimiter::WheelVoltages", "structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html", "structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages" ]
+    ] ],
     [ "ElevatorFeedforward.h", "_elevator_feedforward_8h.html", [
       [ "frc::ElevatorFeedforward< Distance >", "classfrc_1_1_elevator_feedforward.html", "classfrc_1_1_elevator_feedforward" ]
     ] ],

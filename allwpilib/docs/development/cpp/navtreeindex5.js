@@ -43,6 +43,8 @@ var NAVTREEINDEX5 =
 "_diagonal_product_8h_source.html":[6,0,3,0,0,1,27],
 "_differential_drive_8h.html":[6,0,5,1,0],
 "_differential_drive_8h_source.html":[6,0,5,1,0],
+"_differential_drive_acceleration_limiter_8h.html":[6,0,6,0,3],
+"_differential_drive_acceleration_limiter_8h_source.html":[6,0,6,0,3],
 "_differential_drive_kinematics_8h.html":[6,0,6,6,1],
 "_differential_drive_kinematics_8h_source.html":[6,0,6,6,1],
 "_differential_drive_kinematics_constraint_8h.html":[6,0,6,9,0,1],
@@ -231,8 +233,8 @@ var NAVTREEINDEX5 =
 "_eigen_solver_8h_source.html":[6,0,3,0,0,2,2],
 "_eigenvalues.html":[6,0,3,0,3],
 "_eigenvalues.html#a36393d27f3cfa8f0101f04e50b6a06c8":[6,0,3,0,3,0],
-"_elevator_feedforward_8h.html":[6,0,6,0,3],
-"_elevator_feedforward_8h_source.html":[6,0,6,0,3],
+"_elevator_feedforward_8h.html":[6,0,6,0,4],
+"_elevator_feedforward_8h_source.html":[6,0,6,0,4],
 "_elevator_sim_8h.html":[6,0,5,6,22],
 "_elevator_sim_8h_source.html":[6,0,5,6,22],
 "_elliptical_region_constraint_8h.html":[6,0,6,9,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "_encoder_data_8h.html#a1348279b589d516938635b565042de12":[6,0,9,2,12,45],
 "_encoder_data_8h.html#a174a4316b5d4054abb6b685511337447":[6,0,9,2,12,20],
 "_encoder_data_8h.html#a17dc4bdd985267b5cd53d0b71863e861":[6,0,9,2,12,41],
-"_encoder_data_8h.html#a2548585f0cd4072f03517b9b0b53fd13":[6,0,9,2,12,43],
-"_encoder_data_8h.html#a29bcee60d1765eef2e8ea6d0ace36c5e":[6,0,9,2,12,16],
-"_encoder_data_8h.html#a2ee9d8a1d865493593af779e7c93f736":[6,0,9,2,12,8]
+"_encoder_data_8h.html#a2548585f0cd4072f03517b9b0b53fd13":[6,0,9,2,12,43]
 };

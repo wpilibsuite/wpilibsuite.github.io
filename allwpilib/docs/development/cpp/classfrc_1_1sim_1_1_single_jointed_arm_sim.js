@@ -1,6 +1,6 @@
 var classfrc_1_1sim_1_1_single_jointed_arm_sim =
 [
-    [ "SingleJointedArmSim", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1e97a55a68675fe573b959cb71afefe", null ],
+    [ "SingleJointedArmSim", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1ca4f713b073153f57ea7200c2bc4c7", null ],
     [ "SingleJointedArmSim", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a5c098b486f73274723c3b7296d153323", null ],
     [ "EstimateMOI", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a918266a6e29c7821c2c589f1dbcd3dec", null ],
     [ "GetAngle", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a7b6d6739e5f70492c08475d03a04f9f5", null ],

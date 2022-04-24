@@ -1,7 +1,7 @@
 var classfrc_1_1sim_1_1_elevator_sim =
 [
-    [ "ElevatorSim", "classfrc_1_1sim_1_1_elevator_sim.html#a9624139efa24ee3422865711d8124c27", null ],
-    [ "ElevatorSim", "classfrc_1_1sim_1_1_elevator_sim.html#a8812d76d8e5cb991724e083124007486", null ],
+    [ "ElevatorSim", "classfrc_1_1sim_1_1_elevator_sim.html#a4b0d290a3f19f8741fe820b0436e7b07", null ],
+    [ "ElevatorSim", "classfrc_1_1sim_1_1_elevator_sim.html#af45fc6f632f0a4543e2e2207a7d97520", null ],
     [ "GetCurrentDraw", "classfrc_1_1sim_1_1_elevator_sim.html#a7d3526ff07e87dc537816c5e52ced75d", null ],
     [ "GetPosition", "classfrc_1_1sim_1_1_elevator_sim.html#ae1493b1895504fa6823d6653e8416fde", null ],
     [ "GetVelocity", "classfrc_1_1sim_1_1_elevator_sim.html#a2404a652b1dd5a3f325d27ade90ad9d0", null ],

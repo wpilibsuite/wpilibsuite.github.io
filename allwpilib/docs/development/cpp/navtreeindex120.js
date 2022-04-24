@@ -1,5 +1,13 @@
 var NAVTREEINDEX120 =
 {
+"hal_2src_2main_2native_2include_2hal_2_analog_gyro_8h.html":[6,0,9,8],
+"hal_2src_2main_2native_2include_2hal_2_analog_gyro_8h_source.html":[6,0,9,8],
+"hal_2src_2main_2native_2include_2hal_2_analog_input_8h.html":[6,0,9,9],
+"hal_2src_2main_2native_2include_2hal_2_analog_input_8h_source.html":[6,0,9,9],
+"hal_2src_2main_2native_2include_2hal_2_analog_output_8h.html":[6,0,9,10],
+"hal_2src_2main_2native_2include_2hal_2_analog_output_8h_source.html":[6,0,9,10],
+"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html":[6,0,9,11],
+"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h_source.html":[6,0,9,11],
 "hal_2src_2main_2native_2include_2hal_2_c_a_n_8h.html":[6,0,9,12],
 "hal_2src_2main_2native_2include_2hal_2_c_a_n_8h_source.html":[6,0,9,12],
 "hal_2src_2main_2native_2include_2hal_2_constants_8h.html":[6,0,9,16],
@@ -241,13 +249,5 @@ var NAVTREEINDEX120 =
 "libuv_2include_2uv_2_errno_8h.html#a0b4910a92f913fc4ccb6b8c2fdc15a46":[6,0,10,0,0,3,71],
 "libuv_2include_2uv_2_errno_8h.html#a0cf108c51d596e8e9da4559cd163d12e":[6,0,10,0,0,3,48],
 "libuv_2include_2uv_2_errno_8h.html#a10a759fbc9d75af9012cab741a1b1b3a":[6,0,10,0,0,3,79],
-"libuv_2include_2uv_2_errno_8h.html#a12e1e9afb75d8778b67a78219d26400b":[6,0,10,0,0,3,42],
-"libuv_2include_2uv_2_errno_8h.html#a134ff42c638bfbb8e5d80681236b95ad":[6,0,10,0,0,3,23],
-"libuv_2include_2uv_2_errno_8h.html#a1375ed798999c567d213f2213d80a060":[6,0,10,0,0,3,34],
-"libuv_2include_2uv_2_errno_8h.html#a176c1bd76b26098f12f261fb775918de":[6,0,10,0,0,3,18],
-"libuv_2include_2uv_2_errno_8h.html#a1840cc9cb6856d3df09d90eb379de3f7":[6,0,10,0,0,3,64],
-"libuv_2include_2uv_2_errno_8h.html#a21a4b542fd392822b8ebd0c4848ff18d":[6,0,10,0,0,3,1],
-"libuv_2include_2uv_2_errno_8h.html#a2600c3d69e30d050de741b3694fbd449":[6,0,10,0,0,3,36],
-"libuv_2include_2uv_2_errno_8h.html#a2769151d79aee404cbcdbc0558be81f2":[6,0,10,0,0,3,15],
-"libuv_2include_2uv_2_errno_8h.html#a2933b97fd678d8554803704fd93769cf":[6,0,10,0,0,3,59]
+"libuv_2include_2uv_2_errno_8h.html#a12e1e9afb75d8778b67a78219d26400b":[6,0,10,0,0,3,42]
 };

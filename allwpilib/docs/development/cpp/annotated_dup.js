@@ -1859,6 +1859,7 @@ var annotated_dup =
       [ "DCMotor", "classfrc_1_1_d_c_motor.html", "classfrc_1_1_d_c_motor" ],
       [ "Debouncer", "classfrc_1_1_debouncer.html", "classfrc_1_1_debouncer" ],
       [ "DifferentialDrive", "classfrc_1_1_differential_drive.html", "classfrc_1_1_differential_drive" ],
+      [ "DifferentialDriveAccelerationLimiter", "classfrc_1_1_differential_drive_acceleration_limiter.html", "classfrc_1_1_differential_drive_acceleration_limiter" ],
       [ "DifferentialDriveKinematics", "classfrc_1_1_differential_drive_kinematics.html", "classfrc_1_1_differential_drive_kinematics" ],
       [ "DifferentialDriveKinematicsConstraint", "classfrc_1_1_differential_drive_kinematics_constraint.html", "classfrc_1_1_differential_drive_kinematics_constraint" ],
       [ "DifferentialDriveOdometry", "classfrc_1_1_differential_drive_odometry.html", "classfrc_1_1_differential_drive_odometry" ],

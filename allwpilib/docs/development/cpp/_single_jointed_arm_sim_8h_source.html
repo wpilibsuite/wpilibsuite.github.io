@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-39-gffc69d4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-45-g5ebe911</span>
    </div>
   </td>
  </tr>
@@ -126,14 +126,14 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   * @param armLength          The length of the arm.</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * @param minAngle           The minimum angle that the arm is capable of.</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * @param maxAngle           The maximum angle that the arm is capable of.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * @param mass               The mass of the arm.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * @param measurementStdDevs The standard deviations of the measurements.</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * @param simulateGravity    Whether gravity should be simulated or not.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * @param armMass            The mass of the arm.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * @param simulateGravity    Whether gravity should be simulated or not.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * @param measurementStdDevs The standard deviations of the measurements.</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1e97a55a68675fe573b959cb71afefe">   37</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1e97a55a68675fe573b959cb71afefe">SingleJointedArmSim</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_linear_system.html">LinearSystem&lt;2, 1, 1&gt;</a>&amp; system,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1ca4f713b073153f57ea7200c2bc4c7">   37</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1ca4f713b073153f57ea7200c2bc4c7">SingleJointedArmSim</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_linear_system.html">LinearSystem&lt;2, 1, 1&gt;</a>&amp; system,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                      <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_d_c_motor.html">DCMotor</a>&amp; gearbox, <span class="keywordtype">double</span> gearing,</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                      units::meter_t armLength, units::radian_t minAngle,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                      units::radian_t maxAngle, units::kilogram_t mass,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                      units::radian_t maxAngle, units::kilogram_t armMass,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                      <span class="keywordtype">bool</span> simulateGravity,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                      <span class="keyword">const</span> std::array&lt;double, 1&gt;&amp; measurementStdDevs = {0.0});<span class="comment"></span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">  /**</span></div>
@@ -148,8 +148,8 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * @param minAngle           The minimum angle that the arm is capable of.</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * @param maxAngle           The maximum angle that the arm is capable of.</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * @param mass               The mass of the arm.</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   * @param measurementStdDevs The standard deviation of the measurement noise.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   * @param simulateGravity    Whether gravity should be simulated or not.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   * @param simulateGravity    Whether gravity should be simulated or not.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   * @param measurementStdDevs The standard deviation of the measurement noise.</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a5c098b486f73274723c3b7296d153323">   58</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a5c098b486f73274723c3b7296d153323">SingleJointedArmSim</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_d_c_motor.html">DCMotor</a>&amp; gearbox, <span class="keywordtype">double</span> gearing,</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                      units::kilogram_square_meter_t moi,</div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  units::meter_t m_r;</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  units::radian_t m_minAngle;</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  units::radian_t m_maxAngle;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  units::kilogram_t m_mass;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  units::kilogram_t m_armMass;</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_d_c_motor.html">DCMotor</a> m_gearbox;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordtype">double</span> m_gearing;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordtype">bool</span> m_simulateGravity;</div>
@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a8bc9b2be5b96fd7ad84a0ccf6749f1e5"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8bc9b2be5b96fd7ad84a0ccf6749f1e5">frc::sim::SingleJointedArmSim::GetCurrentDraw</a></div><div class="ttdeci">units::ampere_t GetCurrentDraw() const override</div><div class="ttdoc">Returns the arm current draw.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a8e8acefe09e951103116c3f937128bb3"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8e8acefe09e951103116c3f937128bb3">frc::sim::SingleJointedArmSim::UpdateX</a></div><div class="ttdeci">Eigen::Vector&lt; double, 2 &gt; UpdateX(const Eigen::Vector&lt; double, 2 &gt; &amp;currentXhat, const Eigen::Vector&lt; double, 1 &gt; &amp;u, units::second_t dt) override</div><div class="ttdoc">Updates the state estimate of the arm.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a918266a6e29c7821c2c589f1dbcd3dec"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a918266a6e29c7821c2c589f1dbcd3dec">frc::sim::SingleJointedArmSim::EstimateMOI</a></div><div class="ttdeci">static constexpr units::kilogram_square_meter_t EstimateMOI(units::meter_t length, units::kilogram_t mass)</div><div class="ttdoc">Calculates a rough estimate of the moment of inertia of an arm given its length and mass.</div><div class="ttdef"><b>Definition:</b> SingleJointedArmSim.h:132</div></div>
-<div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_ab1e97a55a68675fe573b959cb71afefe"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1e97a55a68675fe573b959cb71afefe">frc::sim::SingleJointedArmSim::SingleJointedArmSim</a></div><div class="ttdeci">SingleJointedArmSim(const LinearSystem&lt; 2, 1, 1 &gt; &amp;system, const DCMotor &amp;gearbox, double gearing, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t mass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</div><div class="ttdoc">Creates a simulated arm mechanism.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_ab1ca4f713b073153f57ea7200c2bc4c7"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1ca4f713b073153f57ea7200c2bc4c7">frc::sim::SingleJointedArmSim::SingleJointedArmSim</a></div><div class="ttdeci">SingleJointedArmSim(const LinearSystem&lt; 2, 1, 1 &gt; &amp;system, const DCMotor &amp;gearbox, double gearing, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t armMass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</div><div class="ttdoc">Creates a simulated arm mechanism.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_ab76373eedc02d97dca02cc5017a5abae"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab76373eedc02d97dca02cc5017a5abae">frc::sim::SingleJointedArmSim::HasHitUpperLimit</a></div><div class="ttdeci">bool HasHitUpperLimit() const</div><div class="ttdoc">Returns whether the arm has hit the upper limit.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_abc446d399e9fd57573c731bade2e5ae4"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#abc446d399e9fd57573c731bade2e5ae4">frc::sim::SingleJointedArmSim::WouldHitUpperLimit</a></div><div class="ttdeci">bool WouldHitUpperLimit(units::radian_t armAngle) const</div><div class="ttdoc">Returns whether the arm would hit the upper limit.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_acc330cff8accec3e3f49cce7f2630d39"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#acc330cff8accec3e3f49cce7f2630d39">frc::sim::SingleJointedArmSim::HasHitLowerLimit</a></div><div class="ttdeci">bool HasHitLowerLimit() const</div><div class="ttdoc">Returns whether the arm has hit the lower limit.</div></div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_single_jointed_arm_sim_8h.html">SingleJointedArmSim.h</a></li>
-    <li class="footer">Generated on Wed Apr 20 2022 00:13:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 24 2022 14:24:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

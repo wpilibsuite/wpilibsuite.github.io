@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-39-gffc69d4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-45-g5ebe911</span>
    </div>
   </td>
  </tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1sim_1_1_single_jointed_arm
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#af299d4995d6ac6f9f21d4fb17cbda690">SetInput</a>(int row, double value)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8157c4879cd1a27a2048ea729f6f365">SetInputVoltage</a>(units::volt_t voltage)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a9a1bd454408012c639d467ec921f5761">SetState</a>(const Eigen::Vector&lt; double, States &gt; &amp;state)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1e97a55a68675fe573b959cb71afefe">SingleJointedArmSim</a>(const LinearSystem&lt; 2, 1, 1 &gt; &amp;system, const DCMotor &amp;gearbox, double gearing, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t mass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1ca4f713b073153f57ea7200c2bc4c7">SingleJointedArmSim</a>(const LinearSystem&lt; 2, 1, 1 &gt; &amp;system, const DCMotor &amp;gearbox, double gearing, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t armMass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a5c098b486f73274723c3b7296d153323">SingleJointedArmSim</a>(const DCMotor &amp;gearbox, double gearing, units::kilogram_square_meter_t moi, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t mass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a524cd5f6d58620b66c137c3a2d96316d">Update</a>(units::second_t dt)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8e8acefe09e951103116c3f937128bb3">UpdateX</a>(const Eigen::Vector&lt; double, 2 &gt; &amp;currentXhat, const Eigen::Vector&lt; double, 1 &gt; &amp;u, units::second_t dt) override</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1sim_1_1_single_jointed_arm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 20 2022 00:14:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Apr 24 2022 14:25:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
