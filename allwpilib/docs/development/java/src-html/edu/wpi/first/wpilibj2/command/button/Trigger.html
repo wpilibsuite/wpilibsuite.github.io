@@ -360,25 +360,25 @@
 <span class="sourceLineNo">348</span><a id="line.348">  }</a>
 <span class="sourceLineNo">349</span><a id="line.349"></a>
 <span class="sourceLineNo">350</span><a id="line.350">  /**</a>
-<span class="sourceLineNo">351</span><a id="line.351">   * Composes this trigger with another trigger, returning a new trigger that is active when both</a>
+<span class="sourceLineNo">351</span><a id="line.351">   * Composes this trigger with a boolean supplier, returning a new trigger that is active when both</a>
 <span class="sourceLineNo">352</span><a id="line.352">   * triggers are active.</a>
 <span class="sourceLineNo">353</span><a id="line.353">   *</a>
-<span class="sourceLineNo">354</span><a id="line.354">   * @param trigger the trigger to compose with</a>
+<span class="sourceLineNo">354</span><a id="line.354">   * @param booleanSupplier the boolean supplier to compose with</a>
 <span class="sourceLineNo">355</span><a id="line.355">   * @return the trigger that is active when both triggers are active</a>
 <span class="sourceLineNo">356</span><a id="line.356">   */</a>
-<span class="sourceLineNo">357</span><a id="line.357">  public Trigger and(Trigger trigger) {</a>
-<span class="sourceLineNo">358</span><a id="line.358">    return new Trigger(() -&gt; get() &amp;&amp; trigger.get());</a>
+<span class="sourceLineNo">357</span><a id="line.357">  public Trigger and(BooleanSupplier booleanSupplier) {</a>
+<span class="sourceLineNo">358</span><a id="line.358">    return new Trigger(() -&gt; get() &amp;&amp; booleanSupplier.getAsBoolean());</a>
 <span class="sourceLineNo">359</span><a id="line.359">  }</a>
 <span class="sourceLineNo">360</span><a id="line.360"></a>
 <span class="sourceLineNo">361</span><a id="line.361">  /**</a>
-<span class="sourceLineNo">362</span><a id="line.362">   * Composes this trigger with another trigger, returning a new trigger that is active when either</a>
-<span class="sourceLineNo">363</span><a id="line.363">   * trigger is active.</a>
+<span class="sourceLineNo">362</span><a id="line.362">   * Composes this trigger with a boolean supplier, returning a new trigger that is active when</a>
+<span class="sourceLineNo">363</span><a id="line.363">   * either trigger is active.</a>
 <span class="sourceLineNo">364</span><a id="line.364">   *</a>
-<span class="sourceLineNo">365</span><a id="line.365">   * @param trigger the trigger to compose with</a>
+<span class="sourceLineNo">365</span><a id="line.365">   * @param booleanSupplier the boolean supplier to compose with</a>
 <span class="sourceLineNo">366</span><a id="line.366">   * @return the trigger that is active when either trigger is active</a>
 <span class="sourceLineNo">367</span><a id="line.367">   */</a>
-<span class="sourceLineNo">368</span><a id="line.368">  public Trigger or(Trigger trigger) {</a>
-<span class="sourceLineNo">369</span><a id="line.369">    return new Trigger(() -&gt; get() || trigger.get());</a>
+<span class="sourceLineNo">368</span><a id="line.368">  public Trigger or(BooleanSupplier booleanSupplier) {</a>
+<span class="sourceLineNo">369</span><a id="line.369">    return new Trigger(() -&gt; get() || booleanSupplier.getAsBoolean());</a>
 <span class="sourceLineNo">370</span><a id="line.370">  }</a>
 <span class="sourceLineNo">371</span><a id="line.371"></a>
 <span class="sourceLineNo">372</span><a id="line.372">  /**</a>
