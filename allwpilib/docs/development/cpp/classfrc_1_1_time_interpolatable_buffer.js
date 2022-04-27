@@ -5,5 +5,5 @@ var classfrc_1_1_time_interpolatable_buffer =
     [ "TimeInterpolatableBuffer", "classfrc_1_1_time_interpolatable_buffer.html#a1e28d8c1b79be4d473ff9a295c033d14", null ],
     [ "AddSample", "classfrc_1_1_time_interpolatable_buffer.html#aff276cdba727dd7cb535e0923cb9939b", null ],
     [ "Clear", "classfrc_1_1_time_interpolatable_buffer.html#a4baab5a7701ea70fe2269e6e906a633e", null ],
-    [ "Sample", "classfrc_1_1_time_interpolatable_buffer.html#a0c380984fdd724f50623f85456fa7e51", null ]
+    [ "Sample", "classfrc_1_1_time_interpolatable_buffer.html#ae2d477d35ed3df1037e14399e1393a3f", null ]
 ];
