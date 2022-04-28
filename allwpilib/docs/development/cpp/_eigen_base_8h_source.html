@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-49-ga06b3f0</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-50-gf7ca72f</span>
    </div>
   </td>
  </tr>
@@ -166,9 +166,9 @@ $(document).ready(function(){initNavTree('_eigen_base_8h_source.html',''); initR
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Dest&gt;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <a class="code hl_define" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct_eigen_1_1_eigen_base.html#a991b21b79bb613171a53271933c53cab">   72</a></span>  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#a991b21b79bb613171a53271933c53cab">evalTo</a>(Dest&amp; dst)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="class_eigen_1_1_array_base.html#a6462697d5a6fa3104f5f1213fdf9ff12">   73</a></span><span class="keyword">  </span>{ <a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a>().evalTo(dst); }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_eigen_1_1_array_base.html#a8fdd498a76ab5e136e3c55b1412cd8c4">   74</a></span><span class="comment"></span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_eigen_1_1_array_base.html#a5ce384b60166efd51356eb738f534144">   75</a></span><span class="comment">  /** \internal Don&#39;t use it, but do the equivalent: \code dst += *this; \endcode */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">  </span>{ <a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a>().evalTo(dst); }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"></span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">  /** \internal Don&#39;t use it, but do the equivalent: \code dst += *this; \endcode */</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Dest&gt;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_define" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="struct_eigen_1_1_eigen_base.html#ad4300dbb47b34596d8ce6b2361c07b52">   78</a></span>  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#ad4300dbb47b34596d8ce6b2361c07b52">addTo</a>(Dest&amp; dst)<span class="keyword"> const</span></div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('_eigen_base_8h_source.html',''); initR
 <div class="ttc" id="aclass_eigen_1_1_dense_base_html_a5ce384b60166efd51356eb738f534144"><div class="ttname"><a href="class_eigen_1_1_dense_base.html#a5ce384b60166efd51356eb738f534144">Eigen::DenseBase::operator-=</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC Derived &amp; operator-=(const EigenBase&lt; OtherDerived &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> EigenBase.h:152</div></div>
 <div class="ttc" id="aclass_eigen_1_1_dense_base_html_a8fdd498a76ab5e136e3c55b1412cd8c4"><div class="ttname"><a href="class_eigen_1_1_dense_base.html#a8fdd498a76ab5e136e3c55b1412cd8c4">Eigen::DenseBase::operator+=</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC Derived &amp; operator+=(const EigenBase&lt; OtherDerived &gt; &amp;other)</div><div class="ttdef"><b>Definition:</b> EigenBase.h:143</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a77793e4b74b9919e35295c839f2659b2"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a77793e4b74b9919e35295c839f2659b2">Eigen::internal::call_assignment</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE void call_assignment(Dst &amp;dst, const Src &amp;src)</div><div class="ttdef"><b>Definition:</b> AssignEvaluator.h:834</div></div>
-<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> AutoDiff:13</div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> Core:141</div></div>
 <div class="ttc" id="anamespace_eigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
 <div class="ttc" id="astruct_eigen_1_1_eigen_base_html"><div class="ttname"><a href="struct_eigen_1_1_eigen_base.html">Eigen::EigenBase</a></div><div class="ttdoc">Common base class for all classes T such that MatrixBase has an operator=(T) and a constructor Matrix...</div><div class="ttdef"><b>Definition:</b> EigenBase.h:30</div></div>
 <div class="ttc" id="astruct_eigen_1_1_eigen_base_html_a23248b545ee580f3ddb8150cd3d032a3"><div class="ttname"><a href="struct_eigen_1_1_eigen_base.html#a23248b545ee580f3ddb8150cd3d032a3">Eigen::EigenBase::const_cast_derived</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC Derived &amp; const_cast_derived() const</div><div class="ttdef"><b>Definition:</b> EigenBase.h:52</div></div>
@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('_eigen_base_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><a class="el" href="_eigen_base_8h.html">EigenBase.h</a></li>
-    <li class="footer">Generated on Wed Apr 27 2022 04:56:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Apr 28 2022 16:41:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

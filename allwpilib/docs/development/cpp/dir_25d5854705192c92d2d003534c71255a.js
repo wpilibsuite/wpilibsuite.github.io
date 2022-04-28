@@ -20,6 +20,9 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "ConditionalCommand.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_conditional_command_8h.html", [
       [ "frc2::ConditionalCommand", "classfrc2_1_1_conditional_command.html", "classfrc2_1_1_conditional_command" ]
     ] ],
+    [ "EndlessCommand.h", "_endless_command_8h.html", [
+      [ "frc2::EndlessCommand", "classfrc2_1_1_endless_command.html", "classfrc2_1_1_endless_command" ]
+    ] ],
     [ "FunctionalCommand.h", "_functional_command_8h.html", [
       [ "frc2::FunctionalCommand", "classfrc2_1_1_functional_command.html", "classfrc2_1_1_functional_command" ]
     ] ],

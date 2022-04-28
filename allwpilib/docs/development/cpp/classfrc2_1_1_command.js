@@ -11,6 +11,7 @@ var classfrc2_1_1_command =
     [ "BeforeStarting", "classfrc2_1_1_command.html#ab8d1d6ccf24f90ffa9be270544dd7162", null ],
     [ "Cancel", "classfrc2_1_1_command.html#a0530e175903b9e2721600d728aa251f5", null ],
     [ "End", "classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c", null ],
+    [ "Endlessly", "classfrc2_1_1_command.html#a74d3779fc3928e9b2d649f29bf42faf9", null ],
     [ "Execute", "classfrc2_1_1_command.html#a7d7ea1271f7dcc65c0ba3221d179b510", null ],
     [ "GetName", "classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b", null ],
     [ "GetRequirements", "classfrc2_1_1_command.html#a4830db450b1382e0b7395143e457ddc6", null ],

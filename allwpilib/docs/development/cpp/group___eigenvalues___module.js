@@ -7,13 +7,6 @@ var group___eigenvalues___module =
       [ "rows", "struct_eigen_1_1internal_1_1_hessenberg_decomposition_matrix_h_return_type.html#ad0a6e19c33a4feb42b7ced19ea9aa28b", null ],
       [ "m_hess", "struct_eigen_1_1internal_1_1_hessenberg_decomposition_matrix_h_return_type.html#accffcc918345d174926e679a82e371e7", null ]
     ] ],
-    [ "Eigen::GeneralizedSelfAdjointEigenSolver< _MatrixType >", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html", [
-      [ "MatrixType", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#a8e85caf68c29edc0693fad978d0dff7d", null ],
-      [ "GeneralizedSelfAdjointEigenSolver", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#a501effdbf722c0609ea05ff3fd4cc721", null ],
-      [ "GeneralizedSelfAdjointEigenSolver", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#aac849f01a8c6148c645acd10bd3a9b0e", null ],
-      [ "GeneralizedSelfAdjointEigenSolver", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#addc0409c9cb1a5ac9cbbd00efe68908e", null ],
-      [ "compute", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#a724764fe196612b752042692156ed023", null ]
-    ] ],
     [ "Eigen::ComplexSchur< _MatrixType >", "class_eigen_1_1_complex_schur.html", [
       [ "ComplexMatrixType", "class_eigen_1_1_complex_schur.html#af61fe57877d51cfb50178f78534042f0", null ],
       [ "ComplexScalar", "class_eigen_1_1_complex_schur.html#ae1a4713b53f821867fbad617e426832a", null ],
@@ -41,6 +34,13 @@ var group___eigenvalues___module =
       [ "m_matUisUptodate", "class_eigen_1_1_complex_schur.html#a8a6b06445c8c2a10191052880cadb7cd", null ],
       [ "m_maxIterationsPerRow", "class_eigen_1_1_complex_schur.html#ad37ef6058ce690a1fac4cc524b70cbf0", null ],
       [ "m_maxIters", "class_eigen_1_1_complex_schur.html#a2e55a5d20381f8f898872f318d591785", null ]
+    ] ],
+    [ "Eigen::GeneralizedSelfAdjointEigenSolver< _MatrixType >", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html", [
+      [ "MatrixType", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#a8e85caf68c29edc0693fad978d0dff7d", null ],
+      [ "GeneralizedSelfAdjointEigenSolver", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#a501effdbf722c0609ea05ff3fd4cc721", null ],
+      [ "GeneralizedSelfAdjointEigenSolver", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#aac849f01a8c6148c645acd10bd3a9b0e", null ],
+      [ "GeneralizedSelfAdjointEigenSolver", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#addc0409c9cb1a5ac9cbbd00efe68908e", null ],
+      [ "compute", "class_eigen_1_1_generalized_self_adjoint_eigen_solver.html#a724764fe196612b752042692156ed023", null ]
     ] ],
     [ "Eigen::RealSchur< _MatrixType >", "class_eigen_1_1_real_schur.html", [
       [ "ColumnVectorType", "class_eigen_1_1_real_schur.html#ad7d4f7f6f061e66838a4a1c7666efa52", null ],
@@ -93,34 +93,23 @@ var group___eigenvalues___module =
       [ "m_realSchur", "class_eigen_1_1_eigen_solver.html#a432c1f3365d961ea08e50dad0d0ffd7e", null ],
       [ "m_tmp", "class_eigen_1_1_eigen_solver.html#a087a17e0d15ccaed513eb66e492f3cd6", null ]
     ] ],
-    [ "Eigen::GeneralizedEigenSolver< _MatrixType >", "class_eigen_1_1_generalized_eigen_solver.html", [
-      [ "ComplexScalar", "class_eigen_1_1_generalized_eigen_solver.html#abdec07af91db1345bb4c74066e3d0ea7", null ],
-      [ "ComplexVectorType", "class_eigen_1_1_generalized_eigen_solver.html#acfd144329aca76882069da2fc5d53ef5", null ],
-      [ "EigenvalueType", "class_eigen_1_1_generalized_eigen_solver.html#ad59af178acc401f1bc4e330ef80f286d", null ],
-      [ "EigenvectorsType", "class_eigen_1_1_generalized_eigen_solver.html#afffec018dbb2d87b4c09b6acecbb79cd", null ],
-      [ "Index", "class_eigen_1_1_generalized_eigen_solver.html#a46a0ff3841059479ec314e56a5645302", null ],
-      [ "MatrixType", "class_eigen_1_1_generalized_eigen_solver.html#a56f4b9823bb9a267de3aaf48428cd247", null ],
-      [ "RealScalar", "class_eigen_1_1_generalized_eigen_solver.html#a2fb7acd2ce5c1e73025a1d2d4bb27107", null ],
-      [ "Scalar", "class_eigen_1_1_generalized_eigen_solver.html#afb318d0b097ff8dd5a7410d31317ca47", null ],
-      [ "VectorType", "class_eigen_1_1_generalized_eigen_solver.html#a5aa3d1390c2b0d455c1c9b8b3101b119", null ],
-      [ "GeneralizedEigenSolver", "class_eigen_1_1_generalized_eigen_solver.html#ae745f39da43f9df192cc2875d82b4cf1", null ],
-      [ "GeneralizedEigenSolver", "class_eigen_1_1_generalized_eigen_solver.html#aab6423ded30275cd4cdd31758c278694", null ],
-      [ "GeneralizedEigenSolver", "class_eigen_1_1_generalized_eigen_solver.html#a2a3528cbf75f66d3a60af9dc7b12ff65", null ],
-      [ "alphas", "class_eigen_1_1_generalized_eigen_solver.html#a82b1bc41267f46e5c5899d5b084a73bb", null ],
-      [ "betas", "class_eigen_1_1_generalized_eigen_solver.html#abeaa6f56cee367b83fd09d428462ca0c", null ],
-      [ "check_template_parameters", "class_eigen_1_1_generalized_eigen_solver.html#a8540388c4be7dbdd1da819e1a84d3a64", null ],
-      [ "compute", "class_eigen_1_1_generalized_eigen_solver.html#a275910b47dfe5f40211dcb59cfd68f3c", null ],
-      [ "eigenvalues", "class_eigen_1_1_generalized_eigen_solver.html#a62f01cd78271efd5e39bcb24e0fe1a58", null ],
-      [ "eigenvectors", "class_eigen_1_1_generalized_eigen_solver.html#a33a89a59e7e49f0752c55f6c6cb65754", null ],
-      [ "info", "class_eigen_1_1_generalized_eigen_solver.html#aad204fd80e2633d5693b78916bcda40c", null ],
-      [ "setMaxIterations", "class_eigen_1_1_generalized_eigen_solver.html#a37e96ef5f16e25bcc6a56da7b3c961f5", null ],
-      [ "m_alphas", "class_eigen_1_1_generalized_eigen_solver.html#ae4f4f35f075f560d0dd8fa3232f1e373", null ],
-      [ "m_betas", "class_eigen_1_1_generalized_eigen_solver.html#a4aae221212023896bed1e6d944a1a818", null ],
-      [ "m_eivec", "class_eigen_1_1_generalized_eigen_solver.html#a9fc45b1d8672cd8a58aa9235ce95708b", null ],
-      [ "m_realQZ", "class_eigen_1_1_generalized_eigen_solver.html#a27485847df46bdfc2e441eea512f6fee", null ],
-      [ "m_tmp", "class_eigen_1_1_generalized_eigen_solver.html#a6873c633a5deb0c2f7f7df532e17e36a", null ],
-      [ "m_valuesOkay", "class_eigen_1_1_generalized_eigen_solver.html#a11ddb55169b74cf117c6e17b72cd4930", null ],
-      [ "m_vectorsOkay", "class_eigen_1_1_generalized_eigen_solver.html#a24629d861f616b5d22a36aa4c2e556b6", null ]
+    [ "Eigen::RealQZ< _MatrixType >", "class_eigen_1_1_real_q_z.html", [
+      [ "ColumnVectorType", "class_eigen_1_1_real_q_z.html#a9881cece39bdf8c3e3cf46358b26dacf", null ],
+      [ "ComplexScalar", "class_eigen_1_1_real_q_z.html#a2788cf1defe2e6a0116f43efba689373", null ],
+      [ "EigenvalueType", "class_eigen_1_1_real_q_z.html#afbbe25cec217b5e046a5c30ff5cd06a9", null ],
+      [ "Index", "class_eigen_1_1_real_q_z.html#a6201e534e901b5f4e66f72c176b534a3", null ],
+      [ "MatrixType", "class_eigen_1_1_real_q_z.html#a78d0d6fe0e8a689523cf2da3f35abe1d", null ],
+      [ "Scalar", "class_eigen_1_1_real_q_z.html#a06ae61ee5b81d0539fae804f91cd7acb", null ],
+      [ "RealQZ", "class_eigen_1_1_real_q_z.html#ad8fb9235870a8361a2fdd8dcc2e80d01", null ],
+      [ "RealQZ", "class_eigen_1_1_real_q_z.html#ac6e41c839f8dae31c9a3906ea7540119", null ],
+      [ "compute", "class_eigen_1_1_real_q_z.html#a2b6847964d9f1903193cc3e67c196849", null ],
+      [ "info", "class_eigen_1_1_real_q_z.html#a36bd77afed89f3f5c110a715e69e4c64", null ],
+      [ "iterations", "class_eigen_1_1_real_q_z.html#afbecc6d0ab1de42be9db79428da48ab6", null ],
+      [ "matrixQ", "class_eigen_1_1_real_q_z.html#a11cf08e1665270e3fff79d3d2dab2808", null ],
+      [ "matrixS", "class_eigen_1_1_real_q_z.html#ad9853b7d5692329aec3d3dd369c91f3c", null ],
+      [ "matrixT", "class_eigen_1_1_real_q_z.html#a8ee4a24f52d983c86b6b3e62f2f9c3cd", null ],
+      [ "matrixZ", "class_eigen_1_1_real_q_z.html#ae7079c9a47adad4481f725b34b128224", null ],
+      [ "setMaxIterations", "class_eigen_1_1_real_q_z.html#ab23916e1b60f0787cb3eb59a92d9c62b", null ]
     ] ],
     [ "Eigen::ComplexEigenSolver< _MatrixType >", "class_eigen_1_1_complex_eigen_solver.html", [
       [ "ComplexScalar", "class_eigen_1_1_complex_eigen_solver.html#a3604c99a69fac3bee42c88cb2b589143", null ],
@@ -180,24 +169,6 @@ var group___eigenvalues___module =
       [ "m_maxIterations", "class_eigen_1_1_self_adjoint_eigen_solver.html#a9ba10b83f095b18dbea345db7304acfa", null ],
       [ "m_subdiag", "class_eigen_1_1_self_adjoint_eigen_solver.html#a5da95aa467ce0555d01a69ba357f62bb", null ]
     ] ],
-    [ "Eigen::RealQZ< _MatrixType >", "class_eigen_1_1_real_q_z.html", [
-      [ "ColumnVectorType", "class_eigen_1_1_real_q_z.html#a9881cece39bdf8c3e3cf46358b26dacf", null ],
-      [ "ComplexScalar", "class_eigen_1_1_real_q_z.html#a2788cf1defe2e6a0116f43efba689373", null ],
-      [ "EigenvalueType", "class_eigen_1_1_real_q_z.html#afbbe25cec217b5e046a5c30ff5cd06a9", null ],
-      [ "Index", "class_eigen_1_1_real_q_z.html#a6201e534e901b5f4e66f72c176b534a3", null ],
-      [ "MatrixType", "class_eigen_1_1_real_q_z.html#a78d0d6fe0e8a689523cf2da3f35abe1d", null ],
-      [ "Scalar", "class_eigen_1_1_real_q_z.html#a06ae61ee5b81d0539fae804f91cd7acb", null ],
-      [ "RealQZ", "class_eigen_1_1_real_q_z.html#ad8fb9235870a8361a2fdd8dcc2e80d01", null ],
-      [ "RealQZ", "class_eigen_1_1_real_q_z.html#ac6e41c839f8dae31c9a3906ea7540119", null ],
-      [ "compute", "class_eigen_1_1_real_q_z.html#a2b6847964d9f1903193cc3e67c196849", null ],
-      [ "info", "class_eigen_1_1_real_q_z.html#a36bd77afed89f3f5c110a715e69e4c64", null ],
-      [ "iterations", "class_eigen_1_1_real_q_z.html#afbecc6d0ab1de42be9db79428da48ab6", null ],
-      [ "matrixQ", "class_eigen_1_1_real_q_z.html#a11cf08e1665270e3fff79d3d2dab2808", null ],
-      [ "matrixS", "class_eigen_1_1_real_q_z.html#ad9853b7d5692329aec3d3dd369c91f3c", null ],
-      [ "matrixT", "class_eigen_1_1_real_q_z.html#a8ee4a24f52d983c86b6b3e62f2f9c3cd", null ],
-      [ "matrixZ", "class_eigen_1_1_real_q_z.html#ae7079c9a47adad4481f725b34b128224", null ],
-      [ "setMaxIterations", "class_eigen_1_1_real_q_z.html#ab23916e1b60f0787cb3eb59a92d9c62b", null ]
-    ] ],
     [ "Eigen::HessenbergDecomposition< _MatrixType >", "class_eigen_1_1_hessenberg_decomposition.html", [
       [ "CoeffVectorType", "class_eigen_1_1_hessenberg_decomposition.html#a567f99f3770365777b67bf9832b6fac1", null ],
       [ "HouseholderSequenceType", "class_eigen_1_1_hessenberg_decomposition.html#a7c1188cd5d8f550c8941df75a50a7d08", null ],
@@ -242,5 +213,34 @@ var group___eigenvalues___module =
       [ "m_hCoeffs", "class_eigen_1_1_tridiagonalization.html#a78512d647c0ab9ee6271f7afa5d25140", null ],
       [ "m_isInitialized", "class_eigen_1_1_tridiagonalization.html#acc6410d0df0ef3deba95d9cdfcd7fd65", null ],
       [ "m_matrix", "class_eigen_1_1_tridiagonalization.html#ad42459daade3a276a0bb2846e18fabf6", null ]
+    ] ],
+    [ "Eigen::GeneralizedEigenSolver< _MatrixType >", "class_eigen_1_1_generalized_eigen_solver.html", [
+      [ "ComplexScalar", "class_eigen_1_1_generalized_eigen_solver.html#abdec07af91db1345bb4c74066e3d0ea7", null ],
+      [ "ComplexVectorType", "class_eigen_1_1_generalized_eigen_solver.html#acfd144329aca76882069da2fc5d53ef5", null ],
+      [ "EigenvalueType", "class_eigen_1_1_generalized_eigen_solver.html#ad59af178acc401f1bc4e330ef80f286d", null ],
+      [ "EigenvectorsType", "class_eigen_1_1_generalized_eigen_solver.html#afffec018dbb2d87b4c09b6acecbb79cd", null ],
+      [ "Index", "class_eigen_1_1_generalized_eigen_solver.html#a46a0ff3841059479ec314e56a5645302", null ],
+      [ "MatrixType", "class_eigen_1_1_generalized_eigen_solver.html#a56f4b9823bb9a267de3aaf48428cd247", null ],
+      [ "RealScalar", "class_eigen_1_1_generalized_eigen_solver.html#a2fb7acd2ce5c1e73025a1d2d4bb27107", null ],
+      [ "Scalar", "class_eigen_1_1_generalized_eigen_solver.html#afb318d0b097ff8dd5a7410d31317ca47", null ],
+      [ "VectorType", "class_eigen_1_1_generalized_eigen_solver.html#a5aa3d1390c2b0d455c1c9b8b3101b119", null ],
+      [ "GeneralizedEigenSolver", "class_eigen_1_1_generalized_eigen_solver.html#ae745f39da43f9df192cc2875d82b4cf1", null ],
+      [ "GeneralizedEigenSolver", "class_eigen_1_1_generalized_eigen_solver.html#aab6423ded30275cd4cdd31758c278694", null ],
+      [ "GeneralizedEigenSolver", "class_eigen_1_1_generalized_eigen_solver.html#a2a3528cbf75f66d3a60af9dc7b12ff65", null ],
+      [ "alphas", "class_eigen_1_1_generalized_eigen_solver.html#a82b1bc41267f46e5c5899d5b084a73bb", null ],
+      [ "betas", "class_eigen_1_1_generalized_eigen_solver.html#abeaa6f56cee367b83fd09d428462ca0c", null ],
+      [ "check_template_parameters", "class_eigen_1_1_generalized_eigen_solver.html#a8540388c4be7dbdd1da819e1a84d3a64", null ],
+      [ "compute", "class_eigen_1_1_generalized_eigen_solver.html#a275910b47dfe5f40211dcb59cfd68f3c", null ],
+      [ "eigenvalues", "class_eigen_1_1_generalized_eigen_solver.html#a62f01cd78271efd5e39bcb24e0fe1a58", null ],
+      [ "eigenvectors", "class_eigen_1_1_generalized_eigen_solver.html#a33a89a59e7e49f0752c55f6c6cb65754", null ],
+      [ "info", "class_eigen_1_1_generalized_eigen_solver.html#aad204fd80e2633d5693b78916bcda40c", null ],
+      [ "setMaxIterations", "class_eigen_1_1_generalized_eigen_solver.html#a37e96ef5f16e25bcc6a56da7b3c961f5", null ],
+      [ "m_alphas", "class_eigen_1_1_generalized_eigen_solver.html#ae4f4f35f075f560d0dd8fa3232f1e373", null ],
+      [ "m_betas", "class_eigen_1_1_generalized_eigen_solver.html#a4aae221212023896bed1e6d944a1a818", null ],
+      [ "m_eivec", "class_eigen_1_1_generalized_eigen_solver.html#a9fc45b1d8672cd8a58aa9235ce95708b", null ],
+      [ "m_realQZ", "class_eigen_1_1_generalized_eigen_solver.html#a27485847df46bdfc2e441eea512f6fee", null ],
+      [ "m_tmp", "class_eigen_1_1_generalized_eigen_solver.html#a6873c633a5deb0c2f7f7df532e17e36a", null ],
+      [ "m_valuesOkay", "class_eigen_1_1_generalized_eigen_solver.html#a11ddb55169b74cf117c6e17b72cd4930", null ],
+      [ "m_vectorsOkay", "class_eigen_1_1_generalized_eigen_solver.html#a24629d861f616b5d22a36aa4c2e556b6", null ]
     ] ]
 ];
