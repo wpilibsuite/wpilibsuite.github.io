@@ -11,6 +11,7 @@ var dir_4d863b529094b8a59afd2a32ef89b8cd =
     [ "system", "dir_6a6d4dbfd7def32c812c83ce511abb63.html", "dir_6a6d4dbfd7def32c812c83ce511abb63" ],
     [ "trajectory", "dir_b42dbd3ffe797209985ac3b5870ef1e5.html", "dir_b42dbd3ffe797209985ac3b5870ef1e5" ],
     [ "ComputerVisionUtil.h", "_computer_vision_util_8h.html", "_computer_vision_util_8h" ],
+    [ "EigenCore.h", "_eigen_core_8h.html", "_eigen_core_8h" ],
     [ "MathUtil.h", "_math_util_8h.html", "_math_util_8h" ],
     [ "StateSpaceUtil.h", "_state_space_util_8h.html", "_state_space_util_8h" ]
 ];

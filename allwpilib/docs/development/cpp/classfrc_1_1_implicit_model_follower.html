@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-55-g09cf6ee</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_implicit_model_follower.h
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1_implicit_model_follower-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc::ImplicitModelFollower&lt; States, Inputs &gt; Class Template Reference</div></div>
@@ -103,34 +104,74 @@ $(document).ready(function(){initNavTree('classfrc_1_1_implicit_model_follower.h
 
 <p><code>#include &lt;<a class="el" href="_implicit_model_follower_8h_source.html">frc/controller/ImplicitModelFollower.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aabd5b9070d25b5457417db41b0a6c080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#aabd5b9070d25b5457417db41b0a6c080">StateVector</a> = <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;</td></tr>
+<tr class="separator:aabd5b9070d25b5457417db41b0a6c080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7161fda66bd423a3d17b9f5dcc446d06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> = <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt;</td></tr>
+<tr class="separator:a7161fda66bd423a3d17b9f5dcc446d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeba1f741d0732f3813ee9aa794f102b4"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
 <tr class="memitem:aeba1f741d0732f3813ee9aa794f102b4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#aeba1f741d0732f3813ee9aa794f102b4">ImplicitModelFollower</a> (const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plantRef)</td></tr>
 <tr class="memdesc:aeba1f741d0732f3813ee9aa794f102b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_implicit_model_follower.html#aeba1f741d0732f3813ee9aa794f102b4">More...</a><br /></td></tr>
 <tr class="separator:aeba1f741d0732f3813ee9aa794f102b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae484c7060ae07eece8c84daa34f9ac24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#ae484c7060ae07eece8c84daa34f9ac24">ImplicitModelFollower</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;Aref, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;Bref)</td></tr>
-<tr class="memdesc:ae484c7060ae07eece8c84daa34f9ac24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_implicit_model_follower.html#ae484c7060ae07eece8c84daa34f9ac24">More...</a><br /></td></tr>
-<tr class="separator:ae484c7060ae07eece8c84daa34f9ac24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35f7f76d4c7aa77596f08d6293dcb469"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a35f7f76d4c7aa77596f08d6293dcb469">U</a> () const</td></tr>
-<tr class="memdesc:a35f7f76d4c7aa77596f08d6293dcb469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the control input vector u.  <a href="classfrc_1_1_implicit_model_follower.html#a35f7f76d4c7aa77596f08d6293dcb469">More...</a><br /></td></tr>
-<tr class="separator:a35f7f76d4c7aa77596f08d6293dcb469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbcd82b8836d507be1ec1327ded579d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#afdbcd82b8836d507be1ec1327ded579d">ImplicitModelFollower</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;B, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;Aref, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;Bref)</td></tr>
+<tr class="memdesc:afdbcd82b8836d507be1ec1327ded579d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_implicit_model_follower.html#afdbcd82b8836d507be1ec1327ded579d">More...</a><br /></td></tr>
+<tr class="separator:afdbcd82b8836d507be1ec1327ded579d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8b71127c1c1b48dad4c22eeaf2a979"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a2d8b71127c1c1b48dad4c22eeaf2a979">U</a> () const</td></tr>
+<tr class="memdesc:a2d8b71127c1c1b48dad4c22eeaf2a979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the control input vector u.  <a href="classfrc_1_1_implicit_model_follower.html#a2d8b71127c1c1b48dad4c22eeaf2a979">More...</a><br /></td></tr>
+<tr class="separator:a2d8b71127c1c1b48dad4c22eeaf2a979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a969425e856bc264a211ef7a1cf400156"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a969425e856bc264a211ef7a1cf400156">U</a> (int i) const</td></tr>
 <tr class="memdesc:a969425e856bc264a211ef7a1cf400156"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the control input vector u.  <a href="classfrc_1_1_implicit_model_follower.html#a969425e856bc264a211ef7a1cf400156">More...</a><br /></td></tr>
 <tr class="separator:a969425e856bc264a211ef7a1cf400156"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87deafd5153efd565649f5d2c3461e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#aa87deafd5153efd565649f5d2c3461e0">Reset</a> ()</td></tr>
 <tr class="memdesc:aa87deafd5153efd565649f5d2c3461e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the controller.  <a href="classfrc_1_1_implicit_model_follower.html#aa87deafd5153efd565649f5d2c3461e0">More...</a><br /></td></tr>
 <tr class="separator:aa87deafd5153efd565649f5d2c3461e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a104c80df04aaefbbea2b84e21f0fa89c"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a104c80df04aaefbbea2b84e21f0fa89c">Calculate</a> (const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;u)</td></tr>
-<tr class="memdesc:a104c80df04aaefbbea2b84e21f0fa89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next output of the controller.  <a href="classfrc_1_1_implicit_model_follower.html#a104c80df04aaefbbea2b84e21f0fa89c">More...</a><br /></td></tr>
-<tr class="separator:a104c80df04aaefbbea2b84e21f0fa89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4625e2b67afa4dd66e16dad5c5b5435"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_implicit_model_follower.html#ad4625e2b67afa4dd66e16dad5c5b5435">Calculate</a> (const <a class="el" href="classfrc_1_1_implicit_model_follower.html#aabd5b9070d25b5457417db41b0a6c080">StateVector</a> &amp;x, const <a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> &amp;u)</td></tr>
+<tr class="memdesc:ad4625e2b67afa4dd66e16dad5c5b5435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next output of the controller.  <a href="classfrc_1_1_implicit_model_follower.html#ad4625e2b67afa4dd66e16dad5c5b5435">More...</a><br /></td></tr>
+<tr class="separator:ad4625e2b67afa4dd66e16dad5c5b5435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;int States, int Inputs&gt;<br />
 class frc::ImplicitModelFollower&lt; States, Inputs &gt;</div><p >Contains the controller coefficients and logic for an implicit model follower. </p>
 <p >Implicit model following lets us design a feedback controller that erases the dynamics of our system and makes it behave like some other system. This can be used to make a drivetrain more controllable during teleop driving by making it behave like a slower or more benign drivetrain.</p>
 <p >For more on the underlying math, read appendix B.3 in <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a>. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7161fda66bd423a3d17b9f5dcc446d06" name="a7161fda66bd423a3d17b9f5dcc446d06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7161fda66bd423a3d17b9f5dcc446d06">&#9670;&nbsp;</a></span>InputVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> =  <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt;Inputs&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabd5b9070d25b5457417db41b0a6c080" name="aabd5b9070d25b5457417db41b0a6c080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd5b9070d25b5457417db41b0a6c080">&#9670;&nbsp;</a></span>StateVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_implicit_model_follower.html#aabd5b9070d25b5457417db41b0a6c080">StateVector</a> =  <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt;States&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeba1f741d0732f3813ee9aa794f102b4" name="aeba1f741d0732f3813ee9aa794f102b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeba1f741d0732f3813ee9aa794f102b4">&#9670;&nbsp;</a></span>ImplicitModelFollower() <span class="overload">[1/2]</span></h2>
 
@@ -180,8 +221,8 @@ template&lt;int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="ae484c7060ae07eece8c84daa34f9ac24" name="ae484c7060ae07eece8c84daa34f9ac24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae484c7060ae07eece8c84daa34f9ac24">&#9670;&nbsp;</a></span>ImplicitModelFollower() <span class="overload">[2/2]</span></h2>
+<a id="afdbcd82b8836d507be1ec1327ded579d" name="afdbcd82b8836d507be1ec1327ded579d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbcd82b8836d507be1ec1327ded579d">&#9670;&nbsp;</a></span>ImplicitModelFollower() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,25 +235,25 @@ template&lt;int States, int Inputs&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_implicit_model_follower.html">ImplicitModelFollower</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>Aref</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>Bref</em>&#160;</td>
         </tr>
         <tr>
@@ -242,8 +283,8 @@ template&lt;int States, int Inputs&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a104c80df04aaefbbea2b84e21f0fa89c" name="a104c80df04aaefbbea2b84e21f0fa89c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a104c80df04aaefbbea2b84e21f0fa89c">&#9670;&nbsp;</a></span>Calculate()</h2>
+<a id="ad4625e2b67afa4dd66e16dad5c5b5435" name="ad4625e2b67afa4dd66e16dad5c5b5435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4625e2b67afa4dd66e16dad5c5b5435">&#9670;&nbsp;</a></span>Calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,15 +295,15 @@ template&lt;int States, int Inputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, Inputs &gt; <a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower</a>&lt; States, Inputs &gt;::Calculate </td>
+          <td class="memname"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> <a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower</a>&lt; States, Inputs &gt;::Calculate </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_implicit_model_follower.html#aabd5b9070d25b5457417db41b0a6c080">StateVector</a> &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> &amp;&#160;</td>
           <td class="paramname"><em>u</em>&#160;</td>
         </tr>
         <tr>
@@ -318,8 +359,8 @@ template&lt;int States, int Inputs&gt; </div>
 
 </div>
 </div>
-<a id="a35f7f76d4c7aa77596f08d6293dcb469" name="a35f7f76d4c7aa77596f08d6293dcb469"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35f7f76d4c7aa77596f08d6293dcb469">&#9670;&nbsp;</a></span>U() <span class="overload">[1/2]</span></h2>
+<a id="a2d8b71127c1c1b48dad4c22eeaf2a979" name="a2d8b71127c1c1b48dad4c22eeaf2a979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8b71127c1c1b48dad4c22eeaf2a979">&#9670;&nbsp;</a></span>U() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,7 +371,7 @@ template&lt;int States, int Inputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::Vector&lt; double, Inputs &gt; &amp; <a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower</a>&lt; States, Inputs &gt;::U </td>
+          <td class="memname">const <a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> &amp; <a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower</a>&lt; States, Inputs &gt;::U </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -394,7 +435,7 @@ template&lt;int States, int Inputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_implicit_model_follower.html">ImplicitModelFollower</a></li>
-    <li class="footer">Generated on Sun May 1 2022 03:32:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 03:42:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-55-g09cf6ee</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
    </div>
   </td>
  </tr>
@@ -111,18 +111,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a15c06c71c78144ba7d589bdbdfccf404"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">NumSigmas</a> ()</td></tr>
 <tr class="memdesc:a15c06c71c78144ba7d589bdbdfccf404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of sigma points for each variable in the state x.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">More...</a><br /></td></tr>
 <tr class="separator:a15c06c71c78144ba7d589bdbdfccf404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ca0a2d65f0443c01718733781dc6027"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, 2 *States+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#a3ca0a2d65f0443c01718733781dc6027">SigmaPoints</a> (const Eigen::Vector&lt; double, States &gt; &amp;x, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;P)</td></tr>
-<tr class="memdesc:a3ca0a2d65f0443c01718733781dc6027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sigma points for an unscented Kalman filter given the mean (x) and covariance(P) of the filter.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#a3ca0a2d65f0443c01718733781dc6027">More...</a><br /></td></tr>
-<tr class="separator:a3ca0a2d65f0443c01718733781dc6027"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90ebf79cc56a140b928504b576b0006f"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#a90ebf79cc56a140b928504b576b0006f">Wm</a> () const</td></tr>
-<tr class="memdesc:a90ebf79cc56a140b928504b576b0006f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the mean.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#a90ebf79cc56a140b928504b576b0006f">More...</a><br /></td></tr>
-<tr class="separator:a90ebf79cc56a140b928504b576b0006f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae320add2fbb1b0425560b17eec6f34d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, 2 *States+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#ae320add2fbb1b0425560b17eec6f34d1">SigmaPoints</a> (const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;x, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;P)</td></tr>
+<tr class="memdesc:ae320add2fbb1b0425560b17eec6f34d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sigma points for an unscented Kalman filter given the mean (x) and covariance(P) of the filter.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#ae320add2fbb1b0425560b17eec6f34d1">More...</a><br /></td></tr>
+<tr class="separator:ae320add2fbb1b0425560b17eec6f34d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b404b28762c849c7b9cbfbf4ff6205"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#a93b404b28762c849c7b9cbfbf4ff6205">Wm</a> () const</td></tr>
+<tr class="memdesc:a93b404b28762c849c7b9cbfbf4ff6205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the mean.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#a93b404b28762c849c7b9cbfbf4ff6205">More...</a><br /></td></tr>
+<tr class="separator:a93b404b28762c849c7b9cbfbf4ff6205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e4bd5990975d8d226f92460094ef071"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#a7e4bd5990975d8d226f92460094ef071">Wm</a> (int i) const</td></tr>
 <tr class="memdesc:a7e4bd5990975d8d226f92460094ef071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the weight for each sigma point for the mean.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#a7e4bd5990975d8d226f92460094ef071">More...</a><br /></td></tr>
 <tr class="separator:a7e4bd5990975d8d226f92460094ef071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9c07099095aa4558c0adfa94d22e4c"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a9c07099095aa4558c0adfa94d22e4c">Wc</a> () const</td></tr>
-<tr class="memdesc:a2a9c07099095aa4558c0adfa94d22e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the covariance.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a9c07099095aa4558c0adfa94d22e4c">More...</a><br /></td></tr>
-<tr class="separator:a2a9c07099095aa4558c0adfa94d22e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06bc30f985bb64ecf863b63feb2be03"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#aa06bc30f985bb64ecf863b63feb2be03">Wc</a> () const</td></tr>
+<tr class="memdesc:aa06bc30f985bb64ecf863b63feb2be03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the covariance.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#aa06bc30f985bb64ecf863b63feb2be03">More...</a><br /></td></tr>
+<tr class="separator:aa06bc30f985bb64ecf863b63feb2be03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a539ed39d0c09683d022e072796696cf0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html#a539ed39d0c09683d022e072796696cf0">Wc</a> (int i) const</td></tr>
 <tr class="memdesc:a539ed39d0c09683d022e072796696cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the weight for each sigma point for the covariance.  <a href="classfrc_1_1_merwe_scaled_sigma_points.html#a539ed39d0c09683d022e072796696cf0">More...</a><br /></td></tr>
 <tr class="separator:a539ed39d0c09683d022e072796696cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,8 +224,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="a3ca0a2d65f0443c01718733781dc6027" name="a3ca0a2d65f0443c01718733781dc6027"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ca0a2d65f0443c01718733781dc6027">&#9670;&nbsp;</a></span>SigmaPoints()</h2>
+<a id="ae320add2fbb1b0425560b17eec6f34d1" name="ae320add2fbb1b0425560b17eec6f34d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae320add2fbb1b0425560b17eec6f34d1">&#9670;&nbsp;</a></span>SigmaPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,15 +236,15 @@ template&lt;int States&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, 2 *States+1 &gt; <a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a>&lt; States &gt;::SigmaPoints </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, 2 *States+1 &gt; <a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a>&lt; States &gt;::SigmaPoints </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>P</em>&#160;</td>
         </tr>
         <tr>
@@ -272,8 +272,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="a2a9c07099095aa4558c0adfa94d22e4c" name="a2a9c07099095aa4558c0adfa94d22e4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a9c07099095aa4558c0adfa94d22e4c">&#9670;&nbsp;</a></span>Wc() <span class="overload">[1/2]</span></h2>
+<a id="aa06bc30f985bb64ecf863b63feb2be03" name="aa06bc30f985bb64ecf863b63feb2be03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa06bc30f985bb64ecf863b63feb2be03">&#9670;&nbsp;</a></span>Wc() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +284,7 @@ template&lt;int States&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp; <a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a>&lt; States &gt;::Wc </td>
+          <td class="memname">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp; <a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a>&lt; States &gt;::Wc </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -337,8 +337,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="a90ebf79cc56a140b928504b576b0006f" name="a90ebf79cc56a140b928504b576b0006f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90ebf79cc56a140b928504b576b0006f">&#9670;&nbsp;</a></span>Wm() <span class="overload">[1/2]</span></h2>
+<a id="a93b404b28762c849c7b9cbfbf4ff6205" name="a93b404b28762c849c7b9cbfbf4ff6205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b404b28762c849c7b9cbfbf4ff6205">&#9670;&nbsp;</a></span>Wm() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +349,7 @@ template&lt;int States&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp; <a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a>&lt; States &gt;::Wm </td>
+          <td class="memname">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp; <a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a>&lt; States &gt;::Wm </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -411,7 +411,7 @@ template&lt;int States&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_merwe_scaled_sigma_points.html">MerweScaledSigmaPoints</a></li>
-    <li class="footer">Generated on Sun May 1 2022 03:32:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 03:42:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

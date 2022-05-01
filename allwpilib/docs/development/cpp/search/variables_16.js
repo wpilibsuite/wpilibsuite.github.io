@@ -4,7 +4,7 @@ var searchData=
   ['waiters_5fcount_5flock_1',['waiters_count_lock',['../unionuv__cond__t.html#a14e4ccaa018c1ee68abe9e9a81c291c3',1,'uv_cond_t']]],
   ['waittimevalid_2',['waitTimeValid',['../struct_h_a_l_s_i_m___notifier_info.html#a93ce2bd03109340999793b49d47fc5c1',1,'HALSIM_NotifierInfo']]],
   ['wakeup_3',['wakeup',['../classwpi_1_1uv_1_1_async.html#aeec2110ed2876d16430fe06fa1ea5294',1,'wpi::uv::Async::wakeup()'],['../classwpi_1_1uv_1_1_async_3_4.html#a19ff7b471dc4bcd85e5b245adc59b5ae',1,'wpi::uv::Async&lt;&gt;::wakeup()'],['../classwpi_1_1uv_1_1_async_function_3_01_r_07_t_8_8_8_08_4.html#a1c8139d68e3fcc1e659beaa0ef2d8f23',1,'wpi::uv::AsyncFunction&lt; R(T...)&gt;::wakeup()']]],
-  ['warranties_4',['WARRANTIES',['../_third_party_notices_8txt.html#a99ef872a03cf3fb0160b987431d0ed8c',1,'ThirdPartyNotices.txt']]],
+  ['warranties_4',['WARRANTIES',['../_third_party_notices_8txt.html#a5d7804e53e17eae311aac4335a4d41d7',1,'ThirdPartyNotices.txt']]],
   ['warranty_5',['warranty',['../_third_party_notices_8txt.html#a3057eff3748bce4c388b6eba44cb7e85',1,'ThirdPartyNotices.txt']]],
   ['watcher_5fqueue_6',['watcher_queue',['../structuv____io__s.html#a28f768761c5a496256263f7677f4be9c',1,'uv__io_s']]],
   ['watt_5fhour_7',['watt_hour',['../namespaceunits.html#a5759d6489c63c344c378b43c0541a026',1,'units']]],

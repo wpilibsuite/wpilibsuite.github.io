@@ -31,7 +31,7 @@ var searchData=
   ['digits_28',['digits',['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a91b8bad7187ffaf230ef371991797928',1,'std::numeric_limits&lt; Eigen::half &gt;::digits()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#ab317215b9bcdb33d87dcb230b7103fee',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::digits()']]],
   ['digits10_29',['digits10',['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a7b371870b43b6b4c3a3e1cb07e3dbe60',1,'std::numeric_limits&lt; Eigen::half &gt;::digits10()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#aad9076bd155630e569a3987d523a7d16',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::digits10()']]],
   ['direct_30',['direct',['../_third_party_notices_8txt.html#aab03bf41e5e9a36f8efd5c82fa86167d',1,'ThirdPartyNotices.txt']]],
-  ['direct_31',['DIRECT',['../_third_party_notices_8txt.html#a8f571c7653de978646fd75ccf641c925',1,'ThirdPartyNotices.txt']]],
+  ['direct_31',['DIRECT',['../_third_party_notices_8txt.html#a19ccb78f3d1ab3521db7b2bfc7e21682',1,'ThirdPartyNotices.txt']]],
   ['directaccessbit_32',['DirectAccessBit',['../group__flags.html#gabf1e9d0516a933445a4c307ad8f14915',1,'Eigen']]],
   ['dirents_33',['dirents',['../structuv__dir__s.html#a04e59d264a45eb2ad3831ce5d4a701b8',1,'uv_dir_s']]],
   ['disclaimer_34',['disclaimer',['../_third_party_notices_8txt.html#a1b89d49c599ec3969c2d7acd55d99e96',1,'ThirdPartyNotices.txt']]],

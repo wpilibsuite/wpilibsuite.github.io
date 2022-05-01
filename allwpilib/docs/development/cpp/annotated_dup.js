@@ -1765,8 +1765,6 @@ var annotated_dup =
     ] ],
     [ "frc", "namespacefrc.html", [
       [ "detail", "namespacefrc_1_1detail.html", [
-        [ "KalmanFilterImpl", "classfrc_1_1detail_1_1_kalman_filter_impl.html", "classfrc_1_1detail_1_1_kalman_filter_impl" ],
-        [ "LinearQuadraticRegulatorImpl", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl" ],
         [ "ListenerExecutor", "classfrc_1_1detail_1_1_listener_executor.html", "classfrc_1_1detail_1_1_listener_executor" ],
         [ "RecordingController", "classfrc_1_1detail_1_1_recording_controller.html", "classfrc_1_1detail_1_1_recording_controller" ],
         [ "ShuffleboardInstance", "classfrc_1_1detail_1_1_shuffleboard_instance.html", "classfrc_1_1detail_1_1_shuffleboard_instance" ]
@@ -1898,17 +1896,12 @@ var annotated_dup =
       [ "Joystick", "classfrc_1_1_joystick.html", "classfrc_1_1_joystick" ],
       [ "JoystickButton", "classfrc_1_1_joystick_button.html", "classfrc_1_1_joystick_button" ],
       [ "KalmanFilter", "classfrc_1_1_kalman_filter.html", "classfrc_1_1_kalman_filter" ],
-      [ "KalmanFilter< 1, 1, 1 >", "classfrc_1_1_kalman_filter_3_011_00_011_00_011_01_4.html", "classfrc_1_1_kalman_filter_3_011_00_011_00_011_01_4" ],
-      [ "KalmanFilter< 2, 1, 1 >", "classfrc_1_1_kalman_filter_3_012_00_011_00_011_01_4.html", "classfrc_1_1_kalman_filter_3_012_00_011_00_011_01_4" ],
       [ "KalmanFilterLatencyCompensator", "classfrc_1_1_kalman_filter_latency_compensator.html", "classfrc_1_1_kalman_filter_latency_compensator" ],
       [ "KilloughDrive", "classfrc_1_1_killough_drive.html", "classfrc_1_1_killough_drive" ],
       [ "LayoutType", "classfrc_1_1_layout_type.html", "classfrc_1_1_layout_type" ],
       [ "LinearFilter", "classfrc_1_1_linear_filter.html", "classfrc_1_1_linear_filter" ],
       [ "LinearPlantInversionFeedforward", "classfrc_1_1_linear_plant_inversion_feedforward.html", "classfrc_1_1_linear_plant_inversion_feedforward" ],
       [ "LinearQuadraticRegulator", "classfrc_1_1_linear_quadratic_regulator.html", "classfrc_1_1_linear_quadratic_regulator" ],
-      [ "LinearQuadraticRegulator< 1, 1 >", "classfrc_1_1_linear_quadratic_regulator_3_011_00_011_01_4.html", "classfrc_1_1_linear_quadratic_regulator_3_011_00_011_01_4" ],
-      [ "LinearQuadraticRegulator< 2, 1 >", "classfrc_1_1_linear_quadratic_regulator_3_012_00_011_01_4.html", "classfrc_1_1_linear_quadratic_regulator_3_012_00_011_01_4" ],
-      [ "LinearQuadraticRegulator< 2, 2 >", "classfrc_1_1_linear_quadratic_regulator_3_012_00_012_01_4.html", "classfrc_1_1_linear_quadratic_regulator_3_012_00_012_01_4" ],
       [ "LinearSystem", "classfrc_1_1_linear_system.html", "classfrc_1_1_linear_system" ],
       [ "LinearSystemId", "classfrc_1_1_linear_system_id.html", "classfrc_1_1_linear_system_id" ],
       [ "LinearSystemLoop", "classfrc_1_1_linear_system_loop.html", "classfrc_1_1_linear_system_loop" ],

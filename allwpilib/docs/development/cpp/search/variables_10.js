@@ -72,9 +72,9 @@ var searchData=
   ['propertyhandle_69',['propertyHandle',['../structcs_1_1_raw_event.html#a6b0fe3b3119f4847109f18dff338f19d',1,'cs::RawEvent']]],
   ['propertykind_70',['propertyKind',['../struct_c_s___event.html#a815e0c8d49a0b452bf7af0627ffaa731',1,'CS_Event::propertyKind()'],['../structcs_1_1_raw_event.html#abbb861b2dd2b3cc770f5d5a285c12739',1,'cs::RawEvent::propertyKind()']]],
   ['protocol_5fversion_71',['protocol_version',['../structnt_1_1_connection_info.html#a273236525633a820193505cd4529cf70',1,'nt::ConnectionInfo::protocol_version()'],['../struct_n_t___connection_info.html#a9f03cd89f577238b63383e66c80818ed',1,'NT_ConnectionInfo::protocol_version()']]],
-  ['ptr_72',['Ptr',['../classwpi_1_1_string_map_iter_base.html#ad16147ba833b73b0ddb12ac41a1efe68',1,'wpi::StringMapIterBase']]],
-  ['ptr_73',['ptr',['../structwpi_1_1detail_1_1span__storage.html#ab3171deea4ba8e43a8f781f0b7ad63cb',1,'wpi::detail::span_storage::ptr()'],['../structwpi_1_1detail_1_1span__storage_3_01_e_00_01dynamic__extent_01_4.html#a4685de1ab5084d7ee102ef24f7d59351',1,'wpi::detail::span_storage&lt; E, dynamic_extent &gt;::ptr()'],['../structuv__fs__s.html#a3cf0871cfa7fc20b6bb7e1782e1fc3eb',1,'uv_fs_s::ptr()']]],
-  ['ptr_74',['Ptr',['../classwpi_1_1_managed_static_base.html#afcb41212f82e31d06b6a9a5fad64ffaf',1,'wpi::ManagedStaticBase']]],
+  ['ptr_72',['ptr',['../structwpi_1_1detail_1_1span__storage_3_01_e_00_01dynamic__extent_01_4.html#a4685de1ab5084d7ee102ef24f7d59351',1,'wpi::detail::span_storage&lt; E, dynamic_extent &gt;']]],
+  ['ptr_73',['Ptr',['../classwpi_1_1_string_map_iter_base.html#ad16147ba833b73b0ddb12ac41a1efe68',1,'wpi::StringMapIterBase::Ptr()'],['../classwpi_1_1_managed_static_base.html#afcb41212f82e31d06b6a9a5fad64ffaf',1,'wpi::ManagedStaticBase::Ptr()']]],
+  ['ptr_74',['ptr',['../structwpi_1_1detail_1_1span__storage.html#ab3171deea4ba8e43a8f781f0b7ad63cb',1,'wpi::detail::span_storage::ptr()'],['../structuv__fs__s.html#a3cf0871cfa7fc20b6bb7e1782e1fc3eb',1,'uv_fs_s::ptr()']]],
   ['publish_75',['publish',['../_third_party_notices_8txt.html#aaa7db7db7fa25159631d7732435b49af',1,'ThirdPartyNotices.txt']]],
   ['purpose_76',['PURPOSE',['../_third_party_notices_8txt.html#a5a25fc24ed6c15543661a8d9f619844d',1,'ThirdPartyNotices.txt']]]
 ];

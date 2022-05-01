@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-55-g09cf6ee</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('_angle_statistics_8h.html',''); initRe
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="numbers.html">wpi/numbers</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="_core.html">Eigen/Core</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_eigen_core_8h_source.html">frc/EigenCore.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_math_util_8h_source.html">frc/MathUtil.h</a>&quot;</code><br />
 </div>
 <p><a href="_angle_statistics_8h_source.html">Go to the source code of this file.</a></p>
@@ -110,30 +110,30 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aae5520badaf7b2cea7920648d7183d1a"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:aae5520badaf7b2cea7920648d7183d1a"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aae5520badaf7b2cea7920648d7183d1a">frc::AngleResidual</a> (const Eigen::Vector&lt; double, States &gt; &amp;a, const Eigen::Vector&lt; double, States &gt; &amp;b, int angleStateIdx)</td></tr>
-<tr class="memdesc:aae5520badaf7b2cea7920648d7183d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a and b while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#aae5520badaf7b2cea7920648d7183d1a">More...</a><br /></td></tr>
-<tr class="separator:aae5520badaf7b2cea7920648d7183d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763e6ef8316b55150cc23aa01a9ca752"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a763e6ef8316b55150cc23aa01a9ca752"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a763e6ef8316b55150cc23aa01a9ca752">frc::AngleResidual</a> (int angleStateIdx)</td></tr>
-<tr class="memdesc:a763e6ef8316b55150cc23aa01a9ca752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that subtracts two vectors while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#a763e6ef8316b55150cc23aa01a9ca752">More...</a><br /></td></tr>
-<tr class="separator:a763e6ef8316b55150cc23aa01a9ca752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a39b4e8d7bbb491df7d73f6c6509c6498">frc::AngleAdd</a> (const Eigen::Vector&lt; double, States &gt; &amp;a, const Eigen::Vector&lt; double, States &gt; &amp;b, int angleStateIdx)</td></tr>
-<tr class="memdesc:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a and b while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#a39b4e8d7bbb491df7d73f6c6509c6498">More...</a><br /></td></tr>
-<tr class="separator:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8246b76a68e53426c5f1627c0f74ebf"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:ac8246b76a68e53426c5f1627c0f74ebf"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac8246b76a68e53426c5f1627c0f74ebf">frc::AngleAdd</a> (int angleStateIdx)</td></tr>
-<tr class="memdesc:ac8246b76a68e53426c5f1627c0f74ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that adds two vectors while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#ac8246b76a68e53426c5f1627c0f74ebf">More...</a><br /></td></tr>
-<tr class="separator:ac8246b76a68e53426c5f1627c0f74ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45afbc9970b08b8e35a71118b82afee3"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
-<tr class="memitem:a45afbc9970b08b8e35a71118b82afee3"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, CovDim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a45afbc9970b08b8e35a71118b82afee3">frc::AngleMean</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;sigmas, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;Wm, int angleStatesIdx)</td></tr>
-<tr class="memdesc:a45afbc9970b08b8e35a71118b82afee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#a45afbc9970b08b8e35a71118b82afee3">More...</a><br /></td></tr>
-<tr class="separator:a45afbc9970b08b8e35a71118b82afee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b7c3daf16191b9bab1146e6151f0a21"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
-<tr class="memitem:a2b7c3daf16191b9bab1146e6151f0a21"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector&lt; double, CovDim &gt;(const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2b7c3daf16191b9bab1146e6151f0a21">frc::AngleMean</a> (int angleStateIdx)</td></tr>
-<tr class="memdesc:a2b7c3daf16191b9bab1146e6151f0a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#a2b7c3daf16191b9bab1146e6151f0a21">More...</a><br /></td></tr>
-<tr class="separator:a2b7c3daf16191b9bab1146e6151f0a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a51ea5d38bc408070e95e2b17796f3b"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a7a51ea5d38bc408070e95e2b17796f3b"><td class="memTemplItemLeft" align="right" valign="top">Vectord&lt; States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7a51ea5d38bc408070e95e2b17796f3b">frc::AngleResidual</a> (const Vectord&lt; States &gt; &amp;a, const Vectord&lt; States &gt; &amp;b, int angleStateIdx)</td></tr>
+<tr class="memdesc:a7a51ea5d38bc408070e95e2b17796f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a and b while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#a7a51ea5d38bc408070e95e2b17796f3b">More...</a><br /></td></tr>
+<tr class="separator:a7a51ea5d38bc408070e95e2b17796f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f0857d64cbff0cee928c9a3902b2aa"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a10f0857d64cbff0cee928c9a3902b2aa"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Vectord&lt; States &gt;(const Vectord&lt; States &gt; &amp;, const Vectord&lt; States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a10f0857d64cbff0cee928c9a3902b2aa">frc::AngleResidual</a> (int angleStateIdx)</td></tr>
+<tr class="memdesc:a10f0857d64cbff0cee928c9a3902b2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that subtracts two vectors while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#a10f0857d64cbff0cee928c9a3902b2aa">More...</a><br /></td></tr>
+<tr class="separator:a10f0857d64cbff0cee928c9a3902b2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="memTemplItemLeft" align="right" valign="top">Vectord&lt; States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a10937b90d6bc6f2d2d8a5aee156f1e57">frc::AngleAdd</a> (const Vectord&lt; States &gt; &amp;a, const Vectord&lt; States &gt; &amp;b, int angleStateIdx)</td></tr>
+<tr class="memdesc:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a and b while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#a10937b90d6bc6f2d2d8a5aee156f1e57">More...</a><br /></td></tr>
+<tr class="separator:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Vectord&lt; States &gt;(const Vectord&lt; States &gt; &amp;, const Vectord&lt; States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a747d332e3a62b6b01b41561f0f1a3ff3">frc::AngleAdd</a> (int angleStateIdx)</td></tr>
+<tr class="memdesc:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that adds two vectors while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#a747d332e3a62b6b01b41561f0f1a3ff3">More...</a><br /></td></tr>
+<tr class="separator:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa909dfc4ca242c2f2950d5b95d558e15"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
+<tr class="memitem:aa909dfc4ca242c2f2950d5b95d558e15"><td class="memTemplItemLeft" align="right" valign="top">Vectord&lt; CovDim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa909dfc4ca242c2f2950d5b95d558e15">frc::AngleMean</a> (const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;sigmas, const Vectord&lt; 2 *States+1 &gt; &amp;Wm, int angleStatesIdx)</td></tr>
+<tr class="memdesc:aa909dfc4ca242c2f2950d5b95d558e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#aa909dfc4ca242c2f2950d5b95d558e15">More...</a><br /></td></tr>
+<tr class="separator:aa909dfc4ca242c2f2950d5b95d558e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
+<tr class="memitem:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Vectord&lt; CovDim &gt;(const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;, const Vectord&lt; 2 *States+1 &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae4ef754fe0bc4e3e1b49b575d4644b09">frc::AngleMean</a> (int angleStateIdx)</td></tr>
+<tr class="memdesc:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#ae4ef754fe0bc4e3e1b49b575d4644b09">More...</a><br /></td></tr>
+<tr class="separator:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_angle_statistics_8h.html">AngleStatistics.h</a></li>
-    <li class="footer">Generated on Sun May 1 2022 03:32:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 03:42:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

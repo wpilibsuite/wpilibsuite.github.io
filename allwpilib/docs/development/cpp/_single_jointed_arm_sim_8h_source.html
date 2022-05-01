@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-55-g09cf6ee</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
    </div>
   </td>
  </tr>
@@ -238,20 +238,19 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">   * @param u           The system inputs (voltage).</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">   * @param dt          The time difference between controller updates.</span></div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8e8acefe09e951103116c3f937128bb3">  145</a></span>  Eigen::Vector&lt;double, 2&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8e8acefe09e951103116c3f937128bb3">UpdateX</a>(<span class="keyword">const</span> Eigen::Vector&lt;double, 2&gt;&amp; currentXhat,</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                                   <span class="keyword">const</span> Eigen::Vector&lt;double, 1&gt;&amp; u,</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                                   units::second_t dt) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  units::meter_t m_r;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  units::radian_t m_minAngle;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  units::radian_t m_maxAngle;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  units::kilogram_t m_armMass;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_d_c_motor.html">DCMotor</a> m_gearbox;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordtype">double</span> m_gearing;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordtype">bool</span> m_simulateGravity;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>};</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}  <span class="comment">// namespace frc::sim</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8907fe685358a192e550448c09fc5e9">  145</a></span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2&gt;</a> <a class="code hl_function" href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8907fe685358a192e550448c09fc5e9">UpdateX</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2&gt;</a>&amp; currentXhat, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;1&gt;</a>&amp; u,</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                     units::second_t dt) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  units::meter_t m_r;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  units::radian_t m_minAngle;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  units::radian_t m_maxAngle;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  units::kilogram_t m_armMass;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_d_c_motor.html">DCMotor</a> m_gearbox;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keywordtype">double</span> m_gearing;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordtype">bool</span> m_simulateGravity;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>};</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}  <span class="comment">// namespace frc::sim</span></div>
 <div class="ttc" id="a_d_c_motor_8h_html"><div class="ttname"><a href="_d_c_motor_8h.html">DCMotor.h</a></div></div>
 <div class="ttc" id="a_linear_system_sim_8h_html"><div class="ttname"><a href="_linear_system_sim_8h.html">LinearSystemSim.h</a></div></div>
 <div class="ttc" id="aangle_8h_html"><div class="ttname"><a href="angle_8h.html">angle.h</a></div></div>
@@ -264,24 +263,25 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a5c098b486f73274723c3b7296d153323"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a5c098b486f73274723c3b7296d153323">frc::sim::SingleJointedArmSim::SingleJointedArmSim</a></div><div class="ttdeci">SingleJointedArmSim(const DCMotor &amp;gearbox, double gearing, units::kilogram_square_meter_t moi, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t mass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</div><div class="ttdoc">Creates a simulated arm mechanism.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a7b6d6739e5f70492c08475d03a04f9f5"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a7b6d6739e5f70492c08475d03a04f9f5">frc::sim::SingleJointedArmSim::GetAngle</a></div><div class="ttdeci">units::radian_t GetAngle() const</div><div class="ttdoc">Returns the current arm angle.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a8bc9b2be5b96fd7ad84a0ccf6749f1e5"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8bc9b2be5b96fd7ad84a0ccf6749f1e5">frc::sim::SingleJointedArmSim::GetCurrentDraw</a></div><div class="ttdeci">units::ampere_t GetCurrentDraw() const override</div><div class="ttdoc">Returns the arm current draw.</div></div>
-<div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a8e8acefe09e951103116c3f937128bb3"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8e8acefe09e951103116c3f937128bb3">frc::sim::SingleJointedArmSim::UpdateX</a></div><div class="ttdeci">Eigen::Vector&lt; double, 2 &gt; UpdateX(const Eigen::Vector&lt; double, 2 &gt; &amp;currentXhat, const Eigen::Vector&lt; double, 1 &gt; &amp;u, units::second_t dt) override</div><div class="ttdoc">Updates the state estimate of the arm.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a918266a6e29c7821c2c589f1dbcd3dec"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a918266a6e29c7821c2c589f1dbcd3dec">frc::sim::SingleJointedArmSim::EstimateMOI</a></div><div class="ttdeci">static constexpr units::kilogram_square_meter_t EstimateMOI(units::meter_t length, units::kilogram_t mass)</div><div class="ttdoc">Calculates a rough estimate of the moment of inertia of an arm given its length and mass.</div><div class="ttdef"><b>Definition:</b> SingleJointedArmSim.h:132</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_ab1ca4f713b073153f57ea7200c2bc4c7"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab1ca4f713b073153f57ea7200c2bc4c7">frc::sim::SingleJointedArmSim::SingleJointedArmSim</a></div><div class="ttdeci">SingleJointedArmSim(const LinearSystem&lt; 2, 1, 1 &gt; &amp;system, const DCMotor &amp;gearbox, double gearing, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t armMass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</div><div class="ttdoc">Creates a simulated arm mechanism.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_ab76373eedc02d97dca02cc5017a5abae"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab76373eedc02d97dca02cc5017a5abae">frc::sim::SingleJointedArmSim::HasHitUpperLimit</a></div><div class="ttdeci">bool HasHitUpperLimit() const</div><div class="ttdoc">Returns whether the arm has hit the upper limit.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_abc446d399e9fd57573c731bade2e5ae4"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#abc446d399e9fd57573c731bade2e5ae4">frc::sim::SingleJointedArmSim::WouldHitUpperLimit</a></div><div class="ttdeci">bool WouldHitUpperLimit(units::radian_t armAngle) const</div><div class="ttdoc">Returns whether the arm would hit the upper limit.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_acc330cff8accec3e3f49cce7f2630d39"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#acc330cff8accec3e3f49cce7f2630d39">frc::sim::SingleJointedArmSim::HasHitLowerLimit</a></div><div class="ttdeci">bool HasHitLowerLimit() const</div><div class="ttdoc">Returns whether the arm has hit the lower limit.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_af8157c4879cd1a27a2048ea729f6f365"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8157c4879cd1a27a2048ea729f6f365">frc::sim::SingleJointedArmSim::SetInputVoltage</a></div><div class="ttdeci">void SetInputVoltage(units::volt_t voltage)</div><div class="ttdoc">Sets the input voltage for the arm.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_af8907fe685358a192e550448c09fc5e9"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8907fe685358a192e550448c09fc5e9">frc::sim::SingleJointedArmSim::UpdateX</a></div><div class="ttdeci">Vectord&lt; 2 &gt; UpdateX(const Vectord&lt; 2 &gt; &amp;currentXhat, const Vectord&lt; 1 &gt; &amp;u, units::second_t dt) override</div><div class="ttdoc">Updates the state estimate of the arm.</div></div>
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="amass_8h_html"><div class="ttname"><a href="mass_8h.html">mass.h</a></div></div>
 <div class="ttc" id="amoment__of__inertia_8h_html"><div class="ttname"><a href="moment__of__inertia_8h.html">moment_of_inertia.h</a></div></div>
 <div class="ttc" id="anamespacefrc_1_1sim_html"><div class="ttname"><a href="namespacefrc_1_1sim.html">frc::sim</a></div><div class="ttdef"><b>Definition:</b> ADXRS450_GyroSim.h:17</div></div>
+<div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_single_jointed_arm_sim_8h.html">SingleJointedArmSim.h</a></li>
-    <li class="footer">Generated on Sun May 1 2022 03:32:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 03:41:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

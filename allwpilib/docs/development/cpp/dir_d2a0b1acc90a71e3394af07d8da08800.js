@@ -21,13 +21,9 @@ var dir_d2a0b1acc90a71e3394af07d8da08800 =
     [ "MecanumDriveWheelSpeeds.h", "_mecanum_drive_wheel_speeds_8h.html", [
       [ "frc::MecanumDriveWheelSpeeds", "structfrc_1_1_mecanum_drive_wheel_speeds.html", "structfrc_1_1_mecanum_drive_wheel_speeds" ]
     ] ],
-    [ "SwerveDriveKinematics.h", "_swerve_drive_kinematics_8h.html", [
-      [ "frc::SwerveDriveKinematics< NumModules >", "classfrc_1_1_swerve_drive_kinematics.html", "classfrc_1_1_swerve_drive_kinematics" ]
-    ] ],
+    [ "SwerveDriveKinematics.h", "_swerve_drive_kinematics_8h.html", "_swerve_drive_kinematics_8h" ],
     [ "SwerveDriveKinematics.inc", "_swerve_drive_kinematics_8inc.html", "_swerve_drive_kinematics_8inc" ],
-    [ "SwerveDriveOdometry.h", "_swerve_drive_odometry_8h.html", [
-      [ "frc::SwerveDriveOdometry< NumModules >", "classfrc_1_1_swerve_drive_odometry.html", "classfrc_1_1_swerve_drive_odometry" ]
-    ] ],
+    [ "SwerveDriveOdometry.h", "_swerve_drive_odometry_8h.html", "_swerve_drive_odometry_8h" ],
     [ "SwerveDriveOdometry.inc", "_swerve_drive_odometry_8inc.html", null ],
     [ "SwerveModuleState.h", "_swerve_module_state_8h.html", [
       [ "frc::SwerveModuleState", "structfrc_1_1_swerve_module_state.html", "structfrc_1_1_swerve_module_state" ]

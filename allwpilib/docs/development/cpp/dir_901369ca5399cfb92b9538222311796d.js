@@ -25,13 +25,8 @@ var dir_901369ca5399cfb92b9538222311796d =
     [ "LinearPlantInversionFeedforward.h", "_linear_plant_inversion_feedforward_8h.html", [
       [ "frc::LinearPlantInversionFeedforward< States, Inputs >", "classfrc_1_1_linear_plant_inversion_feedforward.html", "classfrc_1_1_linear_plant_inversion_feedforward" ]
     ] ],
-    [ "LinearQuadraticRegulator.h", "_linear_quadratic_regulator_8h.html", [
-      [ "frc::detail::LinearQuadraticRegulatorImpl< States, Inputs >", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl" ],
-      [ "frc::LinearQuadraticRegulator< States, Inputs >", "classfrc_1_1_linear_quadratic_regulator.html", "classfrc_1_1_linear_quadratic_regulator" ],
-      [ "frc::LinearQuadraticRegulator< 1, 1 >", "classfrc_1_1_linear_quadratic_regulator_3_011_00_011_01_4.html", "classfrc_1_1_linear_quadratic_regulator_3_011_00_011_01_4" ],
-      [ "frc::LinearQuadraticRegulator< 2, 1 >", "classfrc_1_1_linear_quadratic_regulator_3_012_00_011_01_4.html", "classfrc_1_1_linear_quadratic_regulator_3_012_00_011_01_4" ],
-      [ "frc::LinearQuadraticRegulator< 2, 2 >", "classfrc_1_1_linear_quadratic_regulator_3_012_00_012_01_4.html", "classfrc_1_1_linear_quadratic_regulator_3_012_00_012_01_4" ]
-    ] ],
+    [ "LinearQuadraticRegulator.h", "_linear_quadratic_regulator_8h.html", "_linear_quadratic_regulator_8h" ],
+    [ "LinearQuadraticRegulator.inc", "_linear_quadratic_regulator_8inc.html", null ],
     [ "PIDController.h", "wpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h.html", [
       [ "frc2::PIDController", "classfrc2_1_1_p_i_d_controller.html", "classfrc2_1_1_p_i_d_controller" ]
     ] ],

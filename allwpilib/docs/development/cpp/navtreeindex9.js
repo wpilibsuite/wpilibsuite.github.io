@@ -1,5 +1,15 @@
 var NAVTREEINDEX9 =
 {
+"_logger_8h.html#a4ce13c5b08c1896ab6851bf6bfa01266":[6,0,14,49,7],
+"_logger_8h.html#a764752c80c489a5988892ca7b2a4f224":[6,0,14,49,8],
+"_logger_8h.html#a84b03a5f502a9c57849b868c7af38941":[6,0,14,49,6],
+"_logger_8h.html#a98e71a30259e64b19be6a45c86e8cf2c":[6,0,14,49,9],
+"_logger_8h.html#aad8022c350e929e387baad81ebee77ba":[6,0,14,49,5],
+"_logger_8h.html#acd779c893ef6da95978a539f450bcb6b":[6,0,14,49,1],
+"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88a":[6,0,14,49,10],
+"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa4eaaa435255d53d8ee1ad804ac2fde9d":[6,0,14,49,10,0],
+"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa749ae7790a80d70497b9b873e51737c4":[6,0,14,49,10,6],
+"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa82615e27834c547fec2af93cf5d4b4a7":[6,0,14,49,10,4],
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aabd6cb7f9e35184593c719b52e3269f2e":[6,0,14,49,10,1],
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aac7f7f9988bf8b7a36185cd7a19faa576":[6,0,14,49,10,5],
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aae12c0145b954247e75447e15f40ba4e9":[6,0,14,49,10,8],
@@ -239,15 +249,5 @@ var NAVTREEINDEX9 =
 "_math_extras_8h.html#ae892922c9d93c91d358b554fec2b6505":[6,0,14,54,73],
 "_math_extras_8h.html#ae8bb82c95f37cf16eafb659ab0bace65":[6,0,14,54,32],
 "_math_extras_8h.html#aeb722826475651bd5c1df0f02dff8948":[6,0,14,54,20],
-"_math_extras_8h.html#aed916b5acc65b9b7f1ff971ffc096030":[6,0,14,54,57],
-"_math_extras_8h.html#aee54309381fae56b81e91ad5f1b2c25a":[6,0,14,54,19],
-"_math_extras_8h.html#aee901fdda29348c529bfedbc5d76a714":[6,0,14,54,13],
-"_math_extras_8h.html#af3568938669eceec8a2a2e8060cf7550":[6,0,14,54,29],
-"_math_extras_8h.html#af5ceead4d80776d6071e511d8f5d9353":[6,0,14,54,24],
-"_math_extras_8h.html#af771a1ba991555e3aebf4b0b43fa270b":[6,0,14,54,45],
-"_math_extras_8h.html#af7868b72f26477d7e06a655a552b8886":[6,0,14,54,35],
-"_math_extras_8h.html#af96597787b5255d8569295b2a87d33cf":[6,0,14,54,12],
-"_math_extras_8h.html#afbebaa97b07821ea177293fdfa1831ac":[6,0,14,54,10],
-"_math_extras_8h_source.html":[6,0,14,54],
-"_math_functions_8h.html":[6,0,3,0,0,1,40]
+"_math_extras_8h.html#aed916b5acc65b9b7f1ff971ffc096030":[6,0,14,54,57]
 };

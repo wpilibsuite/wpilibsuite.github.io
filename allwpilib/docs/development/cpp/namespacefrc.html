@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-55-g09cf6ee</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
    </div>
   </td>
  </tr>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('namespacefrc.html',''); initResizable(
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -365,10 +366,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classfrc_1_1_button.html" title="This class provides an easy way to link commands to OI inputs.">Button</a>} that gets its state from a <a class="el" href="classfrc_1_1_generic_h_i_d.html" title="Handle input from standard HID devices connected to the Driver Station.">GenericHID</a>.  <a href="classfrc_1_1_joystick_button.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_3_011_00_011_00_011_01_4.html">KalmanFilter&lt; 1, 1, 1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_3_012_00_011_00_011_01_4.html">KalmanFilter&lt; 2, 1, 1 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Kalman filter combines predictions from a model and measurements to give an estimate of the true system state.  <a href="classfrc_1_1_kalman_filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html">KalmanFilterLatencyCompensator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,12 +383,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a plant inversion model-based feedforward from a <a class="el" href="classfrc_1_1_linear_system.html" title="A plant defined using state-space notation.">LinearSystem</a>.  <a href="classfrc_1_1_linear_plant_inversion_feedforward.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator_3_011_00_011_01_4.html">LinearQuadraticRegulator&lt; 1, 1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator_3_012_00_011_01_4.html">LinearQuadraticRegulator&lt; 2, 1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator_3_012_00_012_01_4.html">LinearQuadraticRegulator&lt; 2, 2 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the controller coefficients and logic for a linear-quadratic regulator (LQR).  <a href="classfrc_1_1_linear_quadratic_regulator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A plant defined using state-space notation.  <a href="classfrc_1_1_linear_system.html#details">More...</a><br /></td></tr>
@@ -804,6 +797,15 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle input from Xbox 360 or Xbox One controllers connected to the Driver Station.  <a href="classfrc_1_1_xbox_controller.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a36df1b7ffbc00aa01634281fe8039e4e"><td class="memTemplParams" colspan="2">template&lt;int Size&gt; </td></tr>
+<tr class="memitem:a36df1b7ffbc00aa01634281fe8039e4e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a> = Eigen::Vector&lt; double, Size &gt;</td></tr>
+<tr class="separator:a36df1b7ffbc00aa01634281fe8039e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172bf091f4aff89b71521ade21da546f"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, int Options = Eigen::AutoAlign | ((Rows == 1 &amp;&amp; Cols != 1) ? Eigen::RowMajor                         : (Cols == 1 &amp;&amp; Rows != 1)                             ? Eigen::ColMajor                             : EIGEN_DEFAULT_MATRIX_STORAGE_ORDER_OPTION), int MaxRows = Rows, int MaxCols = Cols&gt; </td></tr>
+<tr class="memitem:a172bf091f4aff89b71521ade21da546f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a> = <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Cols, Options, MaxRows, MaxCols &gt;</td></tr>
+<tr class="separator:a172bf091f4aff89b71521ade21da546f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ad678d767ab62c6e84bc2fcac7655a725"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">PneumaticsModuleType</a> { <a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725a22912d4fe610d46be1769655dfdc08a6">CTREPCM</a>
@@ -909,18 +911,20 @@ Functions</h2></td></tr>
 <tr class="separator:a3e552b5d2528819c1ed371cdad15173a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2e4b5dc83f17f67fb1791096fb5d376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa2e4b5dc83f17f67fb1791096fb5d376">from_json</a> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;rotation)</td></tr>
 <tr class="separator:aa2e4b5dc83f17f67fb1791096fb5d376"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename F &gt; </td></tr>
-<tr class="memitem:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0c0a5c1b9e1e5955a5db862bb4774228">NumericalJacobian</a> (F &amp;&amp;f, const Eigen::Vector&lt; double, Cols &gt; &amp;x)</td></tr>
-<tr class="memdesc:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x).  <a href="namespacefrc.html#a0c0a5c1b9e1e5955a5db862bb4774228">More...</a><br /></td></tr>
-<tr class="separator:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38be2266b752195a2810857834381f9"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
-<tr class="memitem:af38be2266b752195a2810857834381f9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af38be2266b752195a2810857834381f9">NumericalJacobianX</a> (F &amp;&amp;f, const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:af38be2266b752195a2810857834381f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x, u, ...).  <a href="namespacefrc.html#af38be2266b752195a2810857834381f9">More...</a><br /></td></tr>
-<tr class="separator:af38be2266b752195a2810857834381f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107358984ffd547e92c280dde5aeb81a"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
-<tr class="memitem:a107358984ffd547e92c280dde5aeb81a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a107358984ffd547e92c280dde5aeb81a">NumericalJacobianU</a> (F &amp;&amp;f, const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a107358984ffd547e92c280dde5aeb81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to u for f(x, u, ...).  <a href="namespacefrc.html#a107358984ffd547e92c280dde5aeb81a">More...</a><br /></td></tr>
-<tr class="separator:a107358984ffd547e92c280dde5aeb81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990dc912ad72317aa1038151ccdec7ee"><td class="memItemLeft" align="right" valign="top">template class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a990dc912ad72317aa1038151ccdec7ee">EXPORT_TEMPLATE_DECLARE</a> (<a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a>) <a class="el" href="classfrc_1_1_linear_system_loop.html">LinearSystemLoop</a>&lt; 1</td></tr>
+<tr class="separator:a990dc912ad72317aa1038151ccdec7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename F &gt; </td></tr>
+<tr class="memitem:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2bb99df52b01ecbd7a1ba4e33572dc57">NumericalJacobian</a> (F &amp;&amp;f, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Cols &gt; &amp;x)</td></tr>
+<tr class="memdesc:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x).  <a href="namespacefrc.html#a2bb99df52b01ecbd7a1ba4e33572dc57">More...</a><br /></td></tr>
+<tr class="separator:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43b907b7ccd7490353e004cd75b25ac"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:ae43b907b7ccd7490353e004cd75b25ac"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae43b907b7ccd7490353e004cd75b25ac">NumericalJacobianX</a> (F &amp;&amp;f, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;x, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ae43b907b7ccd7490353e004cd75b25ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x, u, ...).  <a href="namespacefrc.html#ae43b907b7ccd7490353e004cd75b25ac">More...</a><br /></td></tr>
+<tr class="separator:ae43b907b7ccd7490353e004cd75b25ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14572ce36a3df1d92fbc762cef76770"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:ac14572ce36a3df1d92fbc762cef76770"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac14572ce36a3df1d92fbc762cef76770">NumericalJacobianU</a> (F &amp;&amp;f, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;x, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ac14572ce36a3df1d92fbc762cef76770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to u for f(x, u, ...).  <a href="namespacefrc.html#ac14572ce36a3df1d92fbc762cef76770">More...</a><br /></td></tr>
+<tr class="separator:ac14572ce36a3df1d92fbc762cef76770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
 <tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">RK4</a> (F &amp;&amp;f, T x, units::second_t dt)</td></tr>
 <tr class="memdesc:a362829981d16ca01c86bb52d3df6118b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.  <a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">More...</a><br /></td></tr>
@@ -937,26 +941,26 @@ Functions</h2></td></tr>
 <tr class="memitem:af81b951f5d542b8247edd00243513ec8"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af81b951f5d542b8247edd00243513ec8">RKDP</a> (F &amp;&amp;f, T x, U u, units::second_t dt, double maxError=1e-6)</td></tr>
 <tr class="memdesc:af81b951f5d542b8247edd00243513ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs adaptive Dormand-Prince integration of dx/dt = f(x, u) for dt.  <a href="namespacefrc.html#af81b951f5d542b8247edd00243513ec8">More...</a><br /></td></tr>
 <tr class="separator:af81b951f5d542b8247edd00243513ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">DiscretizeA</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA)</td></tr>
-<tr class="memdesc:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A matrix.  <a href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">More...</a><br /></td></tr>
-<tr class="separator:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
-<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">DiscretizeAB</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;contB, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; *discB)</td></tr>
-<tr class="memdesc:ab0e1ca87aa1e11ff912712afe34f8803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and B matrices.  <a href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">More...</a><br /></td></tr>
-<tr class="separator:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">DiscretizeAQ</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contQ, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discQ)</td></tr>
-<tr class="memdesc:a0f7a16592525baf3b04f68f7b308a153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">More...</a><br /></td></tr>
-<tr class="separator:a0f7a16592525baf3b04f68f7b308a153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">DiscretizeAQTaylor</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contQ, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discQ)</td></tr>
-<tr class="memdesc:a21e6884091fc969f4d10fd01c1b26857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">More...</a><br /></td></tr>
-<tr class="separator:a21e6884091fc969f4d10fd01c1b26857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffb6b5b00047c6f384f8fdf425db078"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
-<tr class="memitem:aaffb6b5b00047c6f384f8fdf425db078"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, Outputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aaffb6b5b00047c6f384f8fdf425db078">DiscretizeR</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, Outputs &gt; &amp;R, units::second_t dt)</td></tr>
-<tr class="memdesc:aaffb6b5b00047c6f384f8fdf425db078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a discretized version of the provided continuous measurement noise covariance matrix.  <a href="namespacefrc.html#aaffb6b5b00047c6f384f8fdf425db078">More...</a><br /></td></tr>
-<tr class="separator:aaffb6b5b00047c6f384f8fdf425db078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad531dbb16c14307f2618e0da8b3501e3"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:ad531dbb16c14307f2618e0da8b3501e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad531dbb16c14307f2618e0da8b3501e3">DiscretizeA</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;contA, units::second_t dt, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *discA)</td></tr>
+<tr class="memdesc:ad531dbb16c14307f2618e0da8b3501e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A matrix.  <a href="namespacefrc.html#ad531dbb16c14307f2618e0da8b3501e3">More...</a><br /></td></tr>
+<tr class="separator:ad531dbb16c14307f2618e0da8b3501e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e837ac1ee1494fa938b76be926e6a4"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
+<tr class="memitem:a42e837ac1ee1494fa938b76be926e6a4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a42e837ac1ee1494fa938b76be926e6a4">DiscretizeAB</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;contA, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;contB, units::second_t dt, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *discA, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; *discB)</td></tr>
+<tr class="memdesc:a42e837ac1ee1494fa938b76be926e6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and B matrices.  <a href="namespacefrc.html#a42e837ac1ee1494fa938b76be926e6a4">More...</a><br /></td></tr>
+<tr class="separator:a42e837ac1ee1494fa938b76be926e6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a38a90b29f28a2d7aaa21c407c35c8b26">DiscretizeAQ</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;contA, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;contQ, units::second_t dt, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *discA, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *discQ)</td></tr>
+<tr class="memdesc:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a38a90b29f28a2d7aaa21c407c35c8b26">More...</a><br /></td></tr>
+<tr class="separator:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373755b380d47d8dd2c42d78ad346adc"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a373755b380d47d8dd2c42d78ad346adc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a373755b380d47d8dd2c42d78ad346adc">DiscretizeAQTaylor</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;contA, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;contQ, units::second_t dt, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *discA, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *discQ)</td></tr>
+<tr class="memdesc:a373755b380d47d8dd2c42d78ad346adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a373755b380d47d8dd2c42d78ad346adc">More...</a><br /></td></tr>
+<tr class="separator:a373755b380d47d8dd2c42d78ad346adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
+<tr class="memitem:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Outputs, Outputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a89e7eb3221aa4a2af651bba4c4d3b7f1">DiscretizeR</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Outputs, Outputs &gt; &amp;R, units::second_t dt)</td></tr>
+<tr class="memdesc:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a discretized version of the provided continuous measurement noise covariance matrix.  <a href="namespacefrc.html#a89e7eb3221aa4a2af651bba4c4d3b7f1">More...</a><br /></td></tr>
+<tr class="separator:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a55e5d7e329c0937444a309366aa386"><td class="memTemplParams" colspan="2">template&lt;typename T , typename  = std::enable_if_t&lt;std::disjunction_v&lt;              std::is_floating_point&lt;T&gt;, units::traits::is_unit_t&lt;T&gt;&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a9a55e5d7e329c0937444a309366aa386"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9a55e5d7e329c0937444a309366aa386">ApplyDeadband</a> (T <a class="el" href="classvalue.html">value</a>, T deadband, T maxMagnitude=T{1.0})</td></tr>
 <tr class="memdesc:a9a55e5d7e329c0937444a309366aa386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0.0 if the given value is within the specified range around zero.  <a href="namespacefrc.html#a9a55e5d7e329c0937444a309366aa386">More...</a><br /></td></tr>
@@ -971,34 +975,34 @@ Functions</h2></td></tr>
 <tr class="memitem:acf032b8adc55f3de1e6828f68f86b409"><td class="memTemplParams" colspan="2">template&lt;class... Wheels&gt; </td></tr>
 <tr class="memitem:acf032b8adc55f3de1e6828f68f86b409"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acf032b8adc55f3de1e6828f68f86b409">SwerveDriveKinematics</a> (<a class="el" href="classfrc_1_1_translation2d.html">Translation2d</a>, Wheels...) -&gt; <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; 1+sizeof...(Wheels)&gt;</td></tr>
 <tr class="separator:acf032b8adc55f3de1e6828f68f86b409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5841f163162669ca1ef64fbdd24dcca2"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
-<tr class="memitem:a5841f163162669ca1ef64fbdd24dcca2"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; Eigen::Vector&lt; double, CovDim &gt;, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, CovDim &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5841f163162669ca1ef64fbdd24dcca2">UnscentedTransform</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;sigmas, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;Wm, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;Wc, std::function&lt; Eigen::Vector&lt; double, CovDim &gt;(const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;)&gt; meanFunc, std::function&lt; Eigen::Vector&lt; double, CovDim &gt;(const Eigen::Vector&lt; double, CovDim &gt; &amp;, const Eigen::Vector&lt; double, CovDim &gt; &amp;)&gt; residualFunc)</td></tr>
-<tr class="memdesc:a5841f163162669ca1ef64fbdd24dcca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes unscented transform of a set of sigma points and weights.  <a href="namespacefrc.html#a5841f163162669ca1ef64fbdd24dcca2">More...</a><br /></td></tr>
-<tr class="separator:a5841f163162669ca1ef64fbdd24dcca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5520badaf7b2cea7920648d7183d1a"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:aae5520badaf7b2cea7920648d7183d1a"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aae5520badaf7b2cea7920648d7183d1a">AngleResidual</a> (const Eigen::Vector&lt; double, States &gt; &amp;a, const Eigen::Vector&lt; double, States &gt; &amp;b, int angleStateIdx)</td></tr>
-<tr class="memdesc:aae5520badaf7b2cea7920648d7183d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a and b while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#aae5520badaf7b2cea7920648d7183d1a">More...</a><br /></td></tr>
-<tr class="separator:aae5520badaf7b2cea7920648d7183d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a763e6ef8316b55150cc23aa01a9ca752"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a763e6ef8316b55150cc23aa01a9ca752"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a763e6ef8316b55150cc23aa01a9ca752">AngleResidual</a> (int angleStateIdx)</td></tr>
-<tr class="memdesc:a763e6ef8316b55150cc23aa01a9ca752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that subtracts two vectors while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#a763e6ef8316b55150cc23aa01a9ca752">More...</a><br /></td></tr>
-<tr class="separator:a763e6ef8316b55150cc23aa01a9ca752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a39b4e8d7bbb491df7d73f6c6509c6498">AngleAdd</a> (const Eigen::Vector&lt; double, States &gt; &amp;a, const Eigen::Vector&lt; double, States &gt; &amp;b, int angleStateIdx)</td></tr>
-<tr class="memdesc:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a and b while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#a39b4e8d7bbb491df7d73f6c6509c6498">More...</a><br /></td></tr>
-<tr class="separator:a39b4e8d7bbb491df7d73f6c6509c6498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8246b76a68e53426c5f1627c0f74ebf"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:ac8246b76a68e53426c5f1627c0f74ebf"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac8246b76a68e53426c5f1627c0f74ebf">AngleAdd</a> (int angleStateIdx)</td></tr>
-<tr class="memdesc:ac8246b76a68e53426c5f1627c0f74ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that adds two vectors while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#ac8246b76a68e53426c5f1627c0f74ebf">More...</a><br /></td></tr>
-<tr class="separator:ac8246b76a68e53426c5f1627c0f74ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45afbc9970b08b8e35a71118b82afee3"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
-<tr class="memitem:a45afbc9970b08b8e35a71118b82afee3"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, CovDim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a45afbc9970b08b8e35a71118b82afee3">AngleMean</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;sigmas, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;Wm, int angleStatesIdx)</td></tr>
-<tr class="memdesc:a45afbc9970b08b8e35a71118b82afee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#a45afbc9970b08b8e35a71118b82afee3">More...</a><br /></td></tr>
-<tr class="separator:a45afbc9970b08b8e35a71118b82afee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b7c3daf16191b9bab1146e6151f0a21"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
-<tr class="memitem:a2b7c3daf16191b9bab1146e6151f0a21"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector&lt; double, CovDim &gt;(const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2b7c3daf16191b9bab1146e6151f0a21">AngleMean</a> (int angleStateIdx)</td></tr>
-<tr class="memdesc:a2b7c3daf16191b9bab1146e6151f0a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#a2b7c3daf16191b9bab1146e6151f0a21">More...</a><br /></td></tr>
-<tr class="separator:a2b7c3daf16191b9bab1146e6151f0a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63048f4802b541ebccfd7e9982a688a"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
+<tr class="memitem:ab63048f4802b541ebccfd7e9982a688a"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, CovDim &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab63048f4802b541ebccfd7e9982a688a">UnscentedTransform</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;sigmas, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;Wm, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;Wc, std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;(const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;)&gt; meanFunc, std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt; &amp;)&gt; residualFunc)</td></tr>
+<tr class="memdesc:ab63048f4802b541ebccfd7e9982a688a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes unscented transform of a set of sigma points and weights.  <a href="namespacefrc.html#ab63048f4802b541ebccfd7e9982a688a">More...</a><br /></td></tr>
+<tr class="separator:ab63048f4802b541ebccfd7e9982a688a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a51ea5d38bc408070e95e2b17796f3b"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a7a51ea5d38bc408070e95e2b17796f3b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7a51ea5d38bc408070e95e2b17796f3b">AngleResidual</a> (const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;a, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;b, int angleStateIdx)</td></tr>
+<tr class="memdesc:a7a51ea5d38bc408070e95e2b17796f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a and b while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#a7a51ea5d38bc408070e95e2b17796f3b">More...</a><br /></td></tr>
+<tr class="separator:a7a51ea5d38bc408070e95e2b17796f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f0857d64cbff0cee928c9a3902b2aa"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a10f0857d64cbff0cee928c9a3902b2aa"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a10f0857d64cbff0cee928c9a3902b2aa">AngleResidual</a> (int angleStateIdx)</td></tr>
+<tr class="memdesc:a10f0857d64cbff0cee928c9a3902b2aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that subtracts two vectors while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#a10f0857d64cbff0cee928c9a3902b2aa">More...</a><br /></td></tr>
+<tr class="separator:a10f0857d64cbff0cee928c9a3902b2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a10937b90d6bc6f2d2d8a5aee156f1e57">AngleAdd</a> (const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;a, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;b, int angleStateIdx)</td></tr>
+<tr class="memdesc:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a and b while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#a10937b90d6bc6f2d2d8a5aee156f1e57">More...</a><br /></td></tr>
+<tr class="separator:a10937b90d6bc6f2d2d8a5aee156f1e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a747d332e3a62b6b01b41561f0f1a3ff3">AngleAdd</a> (int angleStateIdx)</td></tr>
+<tr class="memdesc:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that adds two vectors while normalizing the resulting value in the selected row as an angle.  <a href="namespacefrc.html#a747d332e3a62b6b01b41561f0f1a3ff3">More...</a><br /></td></tr>
+<tr class="separator:a747d332e3a62b6b01b41561f0f1a3ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa909dfc4ca242c2f2950d5b95d558e15"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
+<tr class="memitem:aa909dfc4ca242c2f2950d5b95d558e15"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa909dfc4ca242c2f2950d5b95d558e15">AngleMean</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;sigmas, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;Wm, int angleStatesIdx)</td></tr>
+<tr class="memdesc:aa909dfc4ca242c2f2950d5b95d558e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#aa909dfc4ca242c2f2950d5b95d558e15">More...</a><br /></td></tr>
+<tr class="separator:aa909dfc4ca242c2f2950d5b95d558e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="memTemplParams" colspan="2">template&lt;int CovDim, int States&gt; </td></tr>
+<tr class="memitem:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;(const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae4ef754fe0bc4e3e1b49b575d4644b09">AngleMean</a> (int angleStateIdx)</td></tr>
+<tr class="memdesc:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#ae4ef754fe0bc4e3e1b49b575d4644b09">More...</a><br /></td></tr>
+<tr class="separator:ae4ef754fe0bc4e3e1b49b575d4644b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956b69d1e5eb6ce39b634a3c4d5a9578"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> units::meter_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a956b69d1e5eb6ce39b634a3c4d5a9578">CalculateDistanceToTarget</a> (units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch)</td></tr>
 <tr class="memdesc:a956b69d1e5eb6ce39b634a3c4d5a9578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm from <a href="https://docs.limelightvision.io/en/latest/cs_estimating_distance.html">https://docs.limelightvision.io/en/latest/cs_estimating_distance.html</a> Estimates range to a target using the target's elevation.  <a href="namespacefrc.html#a956b69d1e5eb6ce39b634a3c4d5a9578">More...</a><br /></td></tr>
 <tr class="separator:a956b69d1e5eb6ce39b634a3c4d5a9578"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1014,64 +1018,64 @@ Functions</h2></td></tr>
 <tr class="memitem:a97fdae7f8d72a4ef822c606f707cee95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a97fdae7f8d72a4ef822c606f707cee95">EstimateFieldToCamera</a> (const <a class="el" href="classfrc_1_1_transform2d.html">frc::Transform2d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose2d.html">frc::Pose2d</a> &amp;fieldToTarget)</td></tr>
 <tr class="memdesc:a97fdae7f8d72a4ef822c606f707cee95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field.  <a href="namespacefrc.html#a97fdae7f8d72a4ef822c606f707cee95">More...</a><br /></td></tr>
 <tr class="separator:a97fdae7f8d72a4ef822c606f707cee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51fbc126b48788f46f6d42c99bfbee3"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename... Ts, typename  = std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:ac51fbc126b48788f46f6d42c99bfbee3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Cols &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac51fbc126b48788f46f6d42c99bfbee3">MakeMatrix</a> (Ts... elems)</td></tr>
-<tr class="memdesc:ac51fbc126b48788f46f6d42c99bfbee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from the given list of elements.  <a href="namespacefrc.html#ac51fbc126b48788f46f6d42c99bfbee3">More...</a><br /></td></tr>
-<tr class="separator:ac51fbc126b48788f46f6d42c99bfbee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1895186b293105926cb9dfddec134a78"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a1895186b293105926cb9dfddec134a78"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1895186b293105926cb9dfddec134a78">MakeCostMatrix</a> (Ts... tolerances)</td></tr>
-<tr class="memdesc:a1895186b293105926cb9dfddec134a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cost matrix from the given vector for use with LQR.  <a href="namespacefrc.html#a1895186b293105926cb9dfddec134a78">More...</a><br /></td></tr>
-<tr class="separator:a1895186b293105926cb9dfddec134a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc33e74861108dcfe356758beee417d"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:abfc33e74861108dcfe356758beee417d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abfc33e74861108dcfe356758beee417d">MakeCovMatrix</a> (Ts... stdDevs)</td></tr>
-<tr class="memdesc:abfc33e74861108dcfe356758beee417d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a covariance matrix from the given vector for use with Kalman filters.  <a href="namespacefrc.html#abfc33e74861108dcfe356758beee417d">More...</a><br /></td></tr>
-<tr class="separator:abfc33e74861108dcfe356758beee417d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb330f4368291811f0a1e568a9a50d70"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:acb330f4368291811f0a1e568a9a50d70"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, N, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acb330f4368291811f0a1e568a9a50d70">MakeCostMatrix</a> (const std::array&lt; double, N &gt; &amp;costs)</td></tr>
-<tr class="memdesc:acb330f4368291811f0a1e568a9a50d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cost matrix from the given vector for use with LQR.  <a href="namespacefrc.html#acb330f4368291811f0a1e568a9a50d70">More...</a><br /></td></tr>
-<tr class="separator:acb330f4368291811f0a1e568a9a50d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c8fb1bc91b77b89f45d2a385dd1be3"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr class="memitem:a41c8fb1bc91b77b89f45d2a385dd1be3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, N, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a41c8fb1bc91b77b89f45d2a385dd1be3">MakeCovMatrix</a> (const std::array&lt; double, N &gt; &amp;stdDevs)</td></tr>
-<tr class="memdesc:a41c8fb1bc91b77b89f45d2a385dd1be3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a covariance matrix from the given vector for use with Kalman filters.  <a href="namespacefrc.html#a41c8fb1bc91b77b89f45d2a385dd1be3">More...</a><br /></td></tr>
-<tr class="separator:a41c8fb1bc91b77b89f45d2a385dd1be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0163f456e5858ac71a87bb405126206f"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a0163f456e5858ac71a87bb405126206f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0163f456e5858ac71a87bb405126206f">MakeWhiteNoiseVector</a> (Ts... stdDevs)</td></tr>
-<tr class="separator:a0163f456e5858ac71a87bb405126206f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bf1c9e4062f1ad4c950b6117013f8d4"><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
-<tr class="memitem:a8bf1c9e4062f1ad4c950b6117013f8d4"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a8bf1c9e4062f1ad4c950b6117013f8d4">MakeWhiteNoiseVector</a> (const std::array&lt; double, N &gt; &amp;stdDevs)</td></tr>
-<tr class="memdesc:a8bf1c9e4062f1ad4c950b6117013f8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a vector of normally distributed white noise with the given noise intensities for each element.  <a href="namespacefrc.html#a8bf1c9e4062f1ad4c950b6117013f8d4">More...</a><br /></td></tr>
-<tr class="separator:a8bf1c9e4062f1ad4c950b6117013f8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9649ab8174818f97cc199229adc9b11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> Eigen::Vector&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae9649ab8174818f97cc199229adc9b11">PoseTo3dVector</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
-<tr class="memdesc:ae9649ab8174818f97cc199229adc9b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> into a vector of [x, y, theta].  <a href="namespacefrc.html#ae9649ab8174818f97cc199229adc9b11">More...</a><br /></td></tr>
-<tr class="separator:ae9649ab8174818f97cc199229adc9b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7783ea1523004c8f395b72eb91578269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> Eigen::Vector&lt; double, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7783ea1523004c8f395b72eb91578269">PoseTo4dVector</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
-<tr class="memdesc:a7783ea1523004c8f395b72eb91578269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> into a vector of [x, y, std::cos(theta), std::sin(theta)].  <a href="namespacefrc.html#a7783ea1523004c8f395b72eb91578269">More...</a><br /></td></tr>
-<tr class="separator:a7783ea1523004c8f395b72eb91578269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08cf48f6116958b58d6479809625bf56"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
-<tr class="memitem:a08cf48f6116958b58d6479809625bf56"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a08cf48f6116958b58d6479809625bf56">IsStabilizable</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B)</td></tr>
-<tr class="memdesc:a08cf48f6116958b58d6479809625bf56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if (A, B) is a stabilizable pair.  <a href="namespacefrc.html#a08cf48f6116958b58d6479809625bf56">More...</a><br /></td></tr>
-<tr class="separator:a08cf48f6116958b58d6479809625bf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6870b734e018e259eecaf096ebb3ce5f"><td class="memTemplParams" colspan="2">template&lt;int States, int Outputs&gt; </td></tr>
-<tr class="memitem:a6870b734e018e259eecaf096ebb3ce5f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a6870b734e018e259eecaf096ebb3ce5f">IsDetectable</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, States &gt; &amp;C)</td></tr>
-<tr class="memdesc:a6870b734e018e259eecaf096ebb3ce5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if (A, C) is a detectable pair.  <a href="namespacefrc.html#a6870b734e018e259eecaf096ebb3ce5f">More...</a><br /></td></tr>
-<tr class="separator:a6870b734e018e259eecaf096ebb3ce5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2122df407d022524758481a73157bf4"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:ae2122df407d022524758481a73157bf4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae2122df407d022524758481a73157bf4">IsStabilizable&lt; 1, 1 &gt;</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 1, 1 &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 1, 1 &gt; &amp;B)</td></tr>
-<tr class="separator:ae2122df407d022524758481a73157bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a253ae7788442597498c6dca868892b86"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a253ae7788442597498c6dca868892b86"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a253ae7788442597498c6dca868892b86">IsStabilizable&lt; 2, 1 &gt;</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 2, 2 &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 2, 1 &gt; &amp;B)</td></tr>
-<tr class="separator:a253ae7788442597498c6dca868892b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa11fe5284762b75c698d368e381487"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> Eigen::Vector&lt; double, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abfa11fe5284762b75c698d368e381487">PoseToVector</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
-<tr class="memdesc:abfa11fe5284762b75c698d368e381487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> into a vector of [x, y, theta].  <a href="namespacefrc.html#abfa11fe5284762b75c698d368e381487">More...</a><br /></td></tr>
-<tr class="separator:abfa11fe5284762b75c698d368e381487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d415b956c01ca06977fbf98a6446cb2"><td class="memTemplParams" colspan="2">template&lt;int Inputs&gt; </td></tr>
-<tr class="memitem:a9d415b956c01ca06977fbf98a6446cb2"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9d415b956c01ca06977fbf98a6446cb2">ClampInputMaxMagnitude</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Inputs &gt; &amp;umin, const Eigen::Vector&lt; double, Inputs &gt; &amp;umax)</td></tr>
-<tr class="memdesc:a9d415b956c01ca06977fbf98a6446cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps input vector between system's minimum and maximum allowable input.  <a href="namespacefrc.html#a9d415b956c01ca06977fbf98a6446cb2">More...</a><br /></td></tr>
-<tr class="separator:a9d415b956c01ca06977fbf98a6446cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa605e370d18bb9a8aab8669abc5a5cb6"><td class="memTemplParams" colspan="2">template&lt;int Inputs&gt; </td></tr>
-<tr class="memitem:aa605e370d18bb9a8aab8669abc5a5cb6"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa605e370d18bb9a8aab8669abc5a5cb6">DesaturateInputVector</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u, double maxMagnitude)</td></tr>
-<tr class="memdesc:aa605e370d18bb9a8aab8669abc5a5cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renormalize all inputs if any exceeds the maximum magnitude.  <a href="namespacefrc.html#aa605e370d18bb9a8aab8669abc5a5cb6">More...</a><br /></td></tr>
-<tr class="separator:aa605e370d18bb9a8aab8669abc5a5cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15e8b45b2071c9295015571980520cd"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename... Ts, typename  = std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
+<tr class="memitem:aa15e8b45b2071c9295015571980520cd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Rows, Cols &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa15e8b45b2071c9295015571980520cd">MakeMatrix</a> (Ts... elems)</td></tr>
+<tr class="memdesc:aa15e8b45b2071c9295015571980520cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from the given list of elements.  <a href="namespacefrc.html#aa15e8b45b2071c9295015571980520cd">More...</a><br /></td></tr>
+<tr class="separator:aa15e8b45b2071c9295015571980520cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b992ad34579cda928ded108eb31c3c"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a24b992ad34579cda928ded108eb31c3c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; sizeof...(Ts), sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">MakeCostMatrix</a> (Ts... tolerances)</td></tr>
+<tr class="memdesc:a24b992ad34579cda928ded108eb31c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cost matrix from the given vector for use with LQR.  <a href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">More...</a><br /></td></tr>
+<tr class="separator:a24b992ad34579cda928ded108eb31c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2fe197c41c45cb9ee6084cf586b221"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a2b2fe197c41c45cb9ee6084cf586b221"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; sizeof...(Ts), sizeof...(Ts)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">MakeCovMatrix</a> (Ts... stdDevs)</td></tr>
+<tr class="memdesc:a2b2fe197c41c45cb9ee6084cf586b221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a covariance matrix from the given vector for use with Kalman filters.  <a href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">More...</a><br /></td></tr>
+<tr class="separator:a2b2fe197c41c45cb9ee6084cf586b221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24cbbfe2d7c69ba9f4b6955d48d60226"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:a24cbbfe2d7c69ba9f4b6955d48d60226"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; N, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a24cbbfe2d7c69ba9f4b6955d48d60226">MakeCostMatrix</a> (const std::array&lt; double, N &gt; &amp;costs)</td></tr>
+<tr class="memdesc:a24cbbfe2d7c69ba9f4b6955d48d60226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a cost matrix from the given vector for use with LQR.  <a href="namespacefrc.html#a24cbbfe2d7c69ba9f4b6955d48d60226">More...</a><br /></td></tr>
+<tr class="separator:a24cbbfe2d7c69ba9f4b6955d48d60226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabe1315c6b023c833c8553b2937cbd64"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
+<tr class="memitem:aabe1315c6b023c833c8553b2937cbd64"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; N, N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aabe1315c6b023c833c8553b2937cbd64">MakeCovMatrix</a> (const std::array&lt; double, N &gt; &amp;stdDevs)</td></tr>
+<tr class="memdesc:aabe1315c6b023c833c8553b2937cbd64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a covariance matrix from the given vector for use with Kalman filters.  <a href="namespacefrc.html#aabe1315c6b023c833c8553b2937cbd64">More...</a><br /></td></tr>
+<tr class="separator:aabe1315c6b023c833c8553b2937cbd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc44757ccea3687bc062e549d26b30b"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
+<tr class="memitem:aedc44757ccea3687bc062e549d26b30b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; sizeof...(Ts), 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">MakeWhiteNoiseVector</a> (Ts... stdDevs)</td></tr>
+<tr class="separator:aedc44757ccea3687bc062e549d26b30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fc31b3575bb922397dca49b2387805"><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
+<tr class="memitem:a16fc31b3575bb922397dca49b2387805"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; N &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a16fc31b3575bb922397dca49b2387805">MakeWhiteNoiseVector</a> (const std::array&lt; double, N &gt; &amp;stdDevs)</td></tr>
+<tr class="memdesc:a16fc31b3575bb922397dca49b2387805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a vector of normally distributed white noise with the given noise intensities for each element.  <a href="namespacefrc.html#a16fc31b3575bb922397dca49b2387805">More...</a><br /></td></tr>
+<tr class="separator:a16fc31b3575bb922397dca49b2387805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac339c0933066b20131a6e2f13ec1118c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">PoseTo3dVector</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
+<tr class="memdesc:ac339c0933066b20131a6e2f13ec1118c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> into a vector of [x, y, theta].  <a href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">More...</a><br /></td></tr>
+<tr class="separator:ac339c0933066b20131a6e2f13ec1118c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089ed0e9037f3940cf5a15c29c20140c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a089ed0e9037f3940cf5a15c29c20140c">PoseTo4dVector</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
+<tr class="memdesc:a089ed0e9037f3940cf5a15c29c20140c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> into a vector of [x, y, std::cos(theta), std::sin(theta)].  <a href="namespacefrc.html#a089ed0e9037f3940cf5a15c29c20140c">More...</a><br /></td></tr>
+<tr class="separator:a089ed0e9037f3940cf5a15c29c20140c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b5d3242f01cf66380e19ea14d25252"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
+<tr class="memitem:a74b5d3242f01cf66380e19ea14d25252"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">IsStabilizable</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;B)</td></tr>
+<tr class="memdesc:a74b5d3242f01cf66380e19ea14d25252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if (A, B) is a stabilizable pair.  <a href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">More...</a><br /></td></tr>
+<tr class="separator:a74b5d3242f01cf66380e19ea14d25252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca4d9dfc07090b63c9960acaff4120a"><td class="memTemplParams" colspan="2">template&lt;int States, int Outputs&gt; </td></tr>
+<tr class="memitem:abca4d9dfc07090b63c9960acaff4120a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">IsDetectable</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Outputs, States &gt; &amp;C)</td></tr>
+<tr class="memdesc:abca4d9dfc07090b63c9960acaff4120a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if (A, C) is a detectable pair.  <a href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">More...</a><br /></td></tr>
+<tr class="separator:abca4d9dfc07090b63c9960acaff4120a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be056b7ad60b328c32d04126e581a72"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a3be056b7ad60b328c32d04126e581a72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3be056b7ad60b328c32d04126e581a72">IsStabilizable&lt; 1, 1 &gt;</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 1, 1 &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 1, 1 &gt; &amp;B)</td></tr>
+<tr class="separator:a3be056b7ad60b328c32d04126e581a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d7901da158c6e00cd1864181112323"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a17d7901da158c6e00cd1864181112323"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a17d7901da158c6e00cd1864181112323">IsStabilizable&lt; 2, 1 &gt;</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 2, 2 &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 2, 1 &gt; &amp;B)</td></tr>
+<tr class="separator:a17d7901da158c6e00cd1864181112323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc342e07180f2f57097a60269fd97288"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abc342e07180f2f57097a60269fd97288">PoseToVector</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
+<tr class="memdesc:abc342e07180f2f57097a60269fd97288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> into a vector of [x, y, theta].  <a href="namespacefrc.html#abc342e07180f2f57097a60269fd97288">More...</a><br /></td></tr>
+<tr class="separator:abc342e07180f2f57097a60269fd97288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a402cc4a794a3ea4e084fc271c24351fe"><td class="memTemplParams" colspan="2">template&lt;int Inputs&gt; </td></tr>
+<tr class="memitem:a402cc4a794a3ea4e084fc271c24351fe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">ClampInputMaxMagnitude</a> (const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;u, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;umin, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;umax)</td></tr>
+<tr class="memdesc:a402cc4a794a3ea4e084fc271c24351fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps input vector between system's minimum and maximum allowable input.  <a href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">More...</a><br /></td></tr>
+<tr class="separator:a402cc4a794a3ea4e084fc271c24351fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade486733c402318e087e67b4c99fdaf3"><td class="memTemplParams" colspan="2">template&lt;int Inputs&gt; </td></tr>
+<tr class="memitem:ade486733c402318e087e67b4c99fdaf3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">DesaturateInputVector</a> (const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;u, double maxMagnitude)</td></tr>
+<tr class="memdesc:ade486733c402318e087e67b4c99fdaf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renormalize all inputs if any exceeds the maximum magnitude.  <a href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">More...</a><br /></td></tr>
+<tr class="separator:ade486733c402318e087e67b4c99fdaf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">GetThreadPriority</a> (std::thread &amp;thread, bool *isRealTime)</td></tr>
 <tr class="memdesc:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread priority for the specified thread.  <a href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">More...</a><br /></td></tr>
 <tr class="separator:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1125,6 +1129,39 @@ Variables</h2></td></tr>
 <tr class="memitem:a6bd6f612dd62c1c703e83570f282ce38"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a6bd6f612dd62c1c703e83570f282ce38">Pose2d</a></td></tr>
 <tr class="separator:a6bd6f612dd62c1c703e83570f282ce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a172bf091f4aff89b71521ade21da546f" name="a172bf091f4aff89b71521ade21da546f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172bf091f4aff89b71521ade21da546f">&#9670;&nbsp;</a></span>Matrixd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int Rows, int Cols, int Options = Eigen::AutoAlign | ((Rows == 1 &amp;&amp; Cols != 1) ? Eigen::RowMajor                         : (Cols == 1 &amp;&amp; Rows != 1)                             ? Eigen::ColMajor                             : EIGEN_DEFAULT_MATRIX_STORAGE_ORDER_OPTION), int MaxRows = Rows, int MaxCols = Cols&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">frc::Matrixd</a> = typedef <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt;double, Rows, Cols, Options, MaxRows, MaxCols&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36df1b7ffbc00aa01634281fe8039e4e" name="a36df1b7ffbc00aa01634281fe8039e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36df1b7ffbc00aa01634281fe8039e4e">&#9670;&nbsp;</a></span>Vectord</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int Size&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a> = typedef Eigen::Vector&lt;double, Size&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a76b4c6f0018b90c1ef0089c6ab4e1e84" name="a76b4c6f0018b90c1ef0089c6ab4e1e84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76b4c6f0018b90c1ef0089c6ab4e1e84">&#9670;&nbsp;</a></span>AnalogTriggerType</h2>
@@ -1794,8 +1831,8 @@ Custom properties: </p><table class="doxtable">
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a39b4e8d7bbb491df7d73f6c6509c6498" name="a39b4e8d7bbb491df7d73f6c6509c6498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39b4e8d7bbb491df7d73f6c6509c6498">&#9670;&nbsp;</a></span>AngleAdd() <span class="overload">[1/2]</span></h2>
+<a id="a10937b90d6bc6f2d2d8a5aee156f1e57" name="a10937b90d6bc6f2d2d8a5aee156f1e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10937b90d6bc6f2d2d8a5aee156f1e57">&#9670;&nbsp;</a></span>AngleAdd() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1803,15 +1840,15 @@ Custom properties: </p><table class="doxtable">
 template&lt;int States&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, States &gt; frc::AngleAdd </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; frc::AngleAdd </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -1846,8 +1883,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="ac8246b76a68e53426c5f1627c0f74ebf" name="ac8246b76a68e53426c5f1627c0f74ebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8246b76a68e53426c5f1627c0f74ebf">&#9670;&nbsp;</a></span>AngleAdd() <span class="overload">[2/2]</span></h2>
+<a id="a747d332e3a62b6b01b41561f0f1a3ff3" name="a747d332e3a62b6b01b41561f0f1a3ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a747d332e3a62b6b01b41561f0f1a3ff3">&#9670;&nbsp;</a></span>AngleAdd() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1855,7 +1892,7 @@ template&lt;int States&gt; </div>
 template&lt;int States&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt; Eigen::Vector&lt; double, States &gt;( const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt; &amp;)&gt; frc::AngleAdd </td>
+          <td class="memname">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;)&gt; frc::AngleAdd </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>angleStateIdx</em></td><td>)</td>
@@ -1880,8 +1917,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="a45afbc9970b08b8e35a71118b82afee3" name="a45afbc9970b08b8e35a71118b82afee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45afbc9970b08b8e35a71118b82afee3">&#9670;&nbsp;</a></span>AngleMean() <span class="overload">[1/2]</span></h2>
+<a id="aa909dfc4ca242c2f2950d5b95d558e15" name="aa909dfc4ca242c2f2950d5b95d558e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa909dfc4ca242c2f2950d5b95d558e15">&#9670;&nbsp;</a></span>AngleMean() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1889,15 +1926,15 @@ template&lt;int States&gt; </div>
 template&lt;int CovDim, int States&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, CovDim &gt; frc::AngleMean </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt; frc::AngleMean </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>sigmas</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>Wm</em>, </td>
         </tr>
         <tr>
@@ -1933,8 +1970,8 @@ template&lt;int CovDim, int States&gt; </div>
 
 </div>
 </div>
-<a id="a2b7c3daf16191b9bab1146e6151f0a21" name="a2b7c3daf16191b9bab1146e6151f0a21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b7c3daf16191b9bab1146e6151f0a21">&#9670;&nbsp;</a></span>AngleMean() <span class="overload">[2/2]</span></h2>
+<a id="ae4ef754fe0bc4e3e1b49b575d4644b09" name="ae4ef754fe0bc4e3e1b49b575d4644b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ef754fe0bc4e3e1b49b575d4644b09">&#9670;&nbsp;</a></span>AngleMean() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1942,7 +1979,7 @@ template&lt;int CovDim, int States&gt; </div>
 template&lt;int CovDim, int States&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt; Eigen::Vector&lt; double, CovDim &gt;( const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;)&gt; frc::AngleMean </td>
+          <td class="memname">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;(const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;)&gt; frc::AngleMean </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>angleStateIdx</em></td><td>)</td>
@@ -2002,8 +2039,8 @@ template&lt;int CovDim, int States&gt; </div>
 
 </div>
 </div>
-<a id="aae5520badaf7b2cea7920648d7183d1a" name="aae5520badaf7b2cea7920648d7183d1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5520badaf7b2cea7920648d7183d1a">&#9670;&nbsp;</a></span>AngleResidual() <span class="overload">[1/2]</span></h2>
+<a id="a7a51ea5d38bc408070e95e2b17796f3b" name="a7a51ea5d38bc408070e95e2b17796f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a51ea5d38bc408070e95e2b17796f3b">&#9670;&nbsp;</a></span>AngleResidual() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2011,15 +2048,15 @@ template&lt;int CovDim, int States&gt; </div>
 template&lt;int States&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, States &gt; frc::AngleResidual </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; frc::AngleResidual </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -2054,8 +2091,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="a763e6ef8316b55150cc23aa01a9ca752" name="a763e6ef8316b55150cc23aa01a9ca752"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a763e6ef8316b55150cc23aa01a9ca752">&#9670;&nbsp;</a></span>AngleResidual() <span class="overload">[2/2]</span></h2>
+<a id="a10f0857d64cbff0cee928c9a3902b2aa" name="a10f0857d64cbff0cee928c9a3902b2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f0857d64cbff0cee928c9a3902b2aa">&#9670;&nbsp;</a></span>AngleResidual() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2063,7 +2100,7 @@ template&lt;int States&gt; </div>
 template&lt;int States&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt; Eigen::Vector&lt; double, States &gt;( const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt; &amp;)&gt; frc::AngleResidual </td>
+          <td class="memname">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;)&gt; frc::AngleResidual </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>angleStateIdx</em></td><td>)</td>
@@ -2189,8 +2226,8 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::disjunction_v&lt; 
 
 </div>
 </div>
-<a id="a9d415b956c01ca06977fbf98a6446cb2" name="a9d415b956c01ca06977fbf98a6446cb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d415b956c01ca06977fbf98a6446cb2">&#9670;&nbsp;</a></span>ClampInputMaxMagnitude()</h2>
+<a id="a402cc4a794a3ea4e084fc271c24351fe" name="a402cc4a794a3ea4e084fc271c24351fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a402cc4a794a3ea4e084fc271c24351fe">&#9670;&nbsp;</a></span>ClampInputMaxMagnitude()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2198,21 +2235,21 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::disjunction_v&lt; 
 template&lt;int Inputs&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, Inputs &gt; frc::ClampInputMaxMagnitude </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; frc::ClampInputMaxMagnitude </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>umin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>umax</em>&#160;</td>
         </tr>
         <tr>
@@ -2242,8 +2279,8 @@ template&lt;int Inputs&gt; </div>
 
 </div>
 </div>
-<a id="aa605e370d18bb9a8aab8669abc5a5cb6" name="aa605e370d18bb9a8aab8669abc5a5cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa605e370d18bb9a8aab8669abc5a5cb6">&#9670;&nbsp;</a></span>DesaturateInputVector()</h2>
+<a id="ade486733c402318e087e67b4c99fdaf3" name="ade486733c402318e087e67b4c99fdaf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade486733c402318e087e67b4c99fdaf3">&#9670;&nbsp;</a></span>DesaturateInputVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2251,9 +2288,9 @@ template&lt;int Inputs&gt; </div>
 template&lt;int Inputs&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, Inputs &gt; frc::DesaturateInputVector </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; frc::DesaturateInputVector </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
@@ -2289,8 +2326,8 @@ template&lt;int Inputs&gt; </div>
 
 </div>
 </div>
-<a id="acbcc27ca7c9f88e13d7c4da520d4a6cb" name="acbcc27ca7c9f88e13d7c4da520d4a6cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbcc27ca7c9f88e13d7c4da520d4a6cb">&#9670;&nbsp;</a></span>DiscretizeA()</h2>
+<a id="ad531dbb16c14307f2618e0da8b3501e3" name="ad531dbb16c14307f2618e0da8b3501e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad531dbb16c14307f2618e0da8b3501e3">&#9670;&nbsp;</a></span>DiscretizeA()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2300,7 +2337,7 @@ template&lt;int States&gt; </div>
         <tr>
           <td class="memname">void frc::DiscretizeA </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>contA</em>, </td>
         </tr>
         <tr>
@@ -2312,7 +2349,7 @@ template&lt;int States&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *&#160;</td>
           <td class="paramname"><em>discA</em>&#160;</td>
         </tr>
         <tr>
@@ -2341,8 +2378,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="ab0e1ca87aa1e11ff912712afe34f8803" name="ab0e1ca87aa1e11ff912712afe34f8803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0e1ca87aa1e11ff912712afe34f8803">&#9670;&nbsp;</a></span>DiscretizeAB()</h2>
+<a id="a42e837ac1ee1494fa938b76be926e6a4" name="a42e837ac1ee1494fa938b76be926e6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42e837ac1ee1494fa938b76be926e6a4">&#9670;&nbsp;</a></span>DiscretizeAB()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2352,13 +2389,13 @@ template&lt;int States, int Inputs&gt; </div>
         <tr>
           <td class="memname">void frc::DiscretizeAB </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>contA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>contB</em>, </td>
         </tr>
         <tr>
@@ -2370,13 +2407,13 @@ template&lt;int States, int Inputs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *&#160;</td>
           <td class="paramname"><em>discA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; *&#160;</td>
           <td class="paramname"><em>discB</em>&#160;</td>
         </tr>
         <tr>
@@ -2408,8 +2445,8 @@ template&lt;int States, int Inputs&gt; </div>
 
 </div>
 </div>
-<a id="a0f7a16592525baf3b04f68f7b308a153" name="a0f7a16592525baf3b04f68f7b308a153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f7a16592525baf3b04f68f7b308a153">&#9670;&nbsp;</a></span>DiscretizeAQ()</h2>
+<a id="a38a90b29f28a2d7aaa21c407c35c8b26" name="a38a90b29f28a2d7aaa21c407c35c8b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38a90b29f28a2d7aaa21c407c35c8b26">&#9670;&nbsp;</a></span>DiscretizeAQ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2419,13 +2456,13 @@ template&lt;int States&gt; </div>
         <tr>
           <td class="memname">void frc::DiscretizeAQ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>contA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>contQ</em>, </td>
         </tr>
         <tr>
@@ -2437,13 +2474,13 @@ template&lt;int States&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *&#160;</td>
           <td class="paramname"><em>discA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *&#160;</td>
           <td class="paramname"><em>discQ</em>&#160;</td>
         </tr>
         <tr>
@@ -2474,8 +2511,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="a21e6884091fc969f4d10fd01c1b26857" name="a21e6884091fc969f4d10fd01c1b26857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e6884091fc969f4d10fd01c1b26857">&#9670;&nbsp;</a></span>DiscretizeAQTaylor()</h2>
+<a id="a373755b380d47d8dd2c42d78ad346adc" name="a373755b380d47d8dd2c42d78ad346adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a373755b380d47d8dd2c42d78ad346adc">&#9670;&nbsp;</a></span>DiscretizeAQTaylor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2485,13 +2522,13 @@ template&lt;int States&gt; </div>
         <tr>
           <td class="memname">void frc::DiscretizeAQTaylor </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>contA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>contQ</em>, </td>
         </tr>
         <tr>
@@ -2503,13 +2540,13 @@ template&lt;int States&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *&#160;</td>
           <td class="paramname"><em>discA</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; *&#160;</td>
           <td class="paramname"><em>discQ</em>&#160;</td>
         </tr>
         <tr>
@@ -2521,7 +2558,7 @@ template&lt;int States&gt; </div>
 </div><div class="memdoc">
 
 <p>Discretizes the given continuous A and Q matrices. </p>
-<p >Rather than solving a 2N x 2N matrix exponential like in <a class="el" href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153" title="Discretizes the given continuous A and Q matrices.">DiscretizeAQ()</a> (which is expensive), we take advantage of the structure of the block matrix of A and Q.</p>
+<p >Rather than solving a 2N x 2N matrix exponential like in <a class="el" href="namespacefrc.html#a38a90b29f28a2d7aaa21c407c35c8b26" title="Discretizes the given continuous A and Q matrices.">DiscretizeAQ()</a> (which is expensive), we take advantage of the structure of the block matrix of A and Q.</p>
 <p >1) The exponential of A*t, which is only N x N, is relatively cheap. 2) The upper-right quarter of the 2N x 2N matrix, which we can approximate using a taylor series to several terms and still be substantially cheaper than taking the big exponential.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -2542,8 +2579,8 @@ template&lt;int States&gt; </div>
 
 </div>
 </div>
-<a id="aaffb6b5b00047c6f384f8fdf425db078" name="aaffb6b5b00047c6f384f8fdf425db078"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaffb6b5b00047c6f384f8fdf425db078">&#9670;&nbsp;</a></span>DiscretizeR()</h2>
+<a id="a89e7eb3221aa4a2af651bba4c4d3b7f1" name="a89e7eb3221aa4a2af651bba4c4d3b7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e7eb3221aa4a2af651bba4c4d3b7f1">&#9670;&nbsp;</a></span>DiscretizeR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2551,9 +2588,9 @@ template&lt;int States&gt; </div>
 template&lt;int Outputs&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, Outputs &gt; frc::DiscretizeR </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Outputs, Outputs &gt; frc::DiscretizeR </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, Outputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Outputs, Outputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
@@ -2794,6 +2831,24 @@ template&lt;int Outputs&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The position of the robot in the field. </dd></dl>
+
+</div>
+</div>
+<a id="a990dc912ad72317aa1038151ccdec7ee" name="a990dc912ad72317aa1038151ccdec7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990dc912ad72317aa1038151ccdec7ee">&#9670;&nbsp;</a></span>EXPORT_TEMPLATE_DECLARE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">template class template class frc::EXPORT_TEMPLATE_DECLARE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -3085,8 +3140,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a6870b734e018e259eecaf096ebb3ce5f" name="a6870b734e018e259eecaf096ebb3ce5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6870b734e018e259eecaf096ebb3ce5f">&#9670;&nbsp;</a></span>IsDetectable()</h2>
+<a id="abca4d9dfc07090b63c9960acaff4120a" name="abca4d9dfc07090b63c9960acaff4120a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abca4d9dfc07090b63c9960acaff4120a">&#9670;&nbsp;</a></span>IsDetectable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3096,13 +3151,13 @@ template&lt;int States, int Outputs&gt; </div>
         <tr>
           <td class="memname">bool frc::IsDetectable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Outputs, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>C</em>&#160;</td>
         </tr>
         <tr>
@@ -3132,8 +3187,8 @@ template&lt;int States, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a08cf48f6116958b58d6479809625bf56" name="a08cf48f6116958b58d6479809625bf56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08cf48f6116958b58d6479809625bf56">&#9670;&nbsp;</a></span>IsStabilizable()</h2>
+<a id="a74b5d3242f01cf66380e19ea14d25252" name="a74b5d3242f01cf66380e19ea14d25252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b5d3242f01cf66380e19ea14d25252">&#9670;&nbsp;</a></span>IsStabilizable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3143,13 +3198,13 @@ template&lt;int States, int Inputs&gt; </div>
         <tr>
           <td class="memname">bool frc::IsStabilizable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>&#160;</td>
         </tr>
         <tr>
@@ -3179,8 +3234,8 @@ template&lt;int States, int Inputs&gt; </div>
 
 </div>
 </div>
-<a id="ae2122df407d022524758481a73157bf4" name="ae2122df407d022524758481a73157bf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2122df407d022524758481a73157bf4">&#9670;&nbsp;</a></span>IsStabilizable&lt; 1, 1 &gt;()</h2>
+<a id="a3be056b7ad60b328c32d04126e581a72" name="a3be056b7ad60b328c32d04126e581a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be056b7ad60b328c32d04126e581a72">&#9670;&nbsp;</a></span>IsStabilizable&lt; 1, 1 &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3188,15 +3243,15 @@ template&lt;int States, int Inputs&gt; </div>
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool <a class="el" href="namespacefrc.html#a08cf48f6116958b58d6479809625bf56">frc::IsStabilizable</a>&lt; 1, 1 &gt; </td>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool <a class="el" href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">frc::IsStabilizable</a>&lt; 1, 1 &gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 1, 1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 1, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 1, 1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>&#160;</td>
         </tr>
         <tr>
@@ -3209,8 +3264,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a253ae7788442597498c6dca868892b86" name="a253ae7788442597498c6dca868892b86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a253ae7788442597498c6dca868892b86">&#9670;&nbsp;</a></span>IsStabilizable&lt; 2, 1 &gt;()</h2>
+<a id="a17d7901da158c6e00cd1864181112323" name="a17d7901da158c6e00cd1864181112323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d7901da158c6e00cd1864181112323">&#9670;&nbsp;</a></span>IsStabilizable&lt; 2, 1 &gt;()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3218,15 +3273,15 @@ template&lt;&gt; </div>
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool <a class="el" href="namespacefrc.html#a08cf48f6116958b58d6479809625bf56">frc::IsStabilizable</a>&lt; 2, 1 &gt; </td>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> bool <a class="el" href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">frc::IsStabilizable</a>&lt; 2, 1 &gt; </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 2, 2 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 2, 2 &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, 2, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 2, 1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>&#160;</td>
         </tr>
         <tr>
@@ -3239,8 +3294,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="acb330f4368291811f0a1e568a9a50d70" name="acb330f4368291811f0a1e568a9a50d70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb330f4368291811f0a1e568a9a50d70">&#9670;&nbsp;</a></span>MakeCostMatrix() <span class="overload">[1/2]</span></h2>
+<a id="a24cbbfe2d7c69ba9f4b6955d48d60226" name="a24cbbfe2d7c69ba9f4b6955d48d60226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24cbbfe2d7c69ba9f4b6955d48d60226">&#9670;&nbsp;</a></span>MakeCostMatrix() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3248,7 +3303,7 @@ template&lt;&gt; </div>
 template&lt;size_t N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, N, N &gt; frc::MakeCostMatrix </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; N, N &gt; frc::MakeCostMatrix </td>
           <td>(</td>
           <td class="paramtype">const std::array&lt; double, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>costs</em></td><td>)</td>
@@ -3269,8 +3324,8 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="a1895186b293105926cb9dfddec134a78" name="a1895186b293105926cb9dfddec134a78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1895186b293105926cb9dfddec134a78">&#9670;&nbsp;</a></span>MakeCostMatrix() <span class="overload">[2/2]</span></h2>
+<a id="a24b992ad34579cda928ded108eb31c3c" name="a24b992ad34579cda928ded108eb31c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b992ad34579cda928ded108eb31c3c">&#9670;&nbsp;</a></span>MakeCostMatrix() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3278,7 +3333,7 @@ template&lt;size_t N&gt; </div>
 template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; frc::MakeCostMatrix </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; sizeof...(Ts), sizeof...(Ts)&gt; frc::MakeCostMatrix </td>
           <td>(</td>
           <td class="paramtype">Ts...&#160;</td>
           <td class="paramname"><em>tolerances</em></td><td>)</td>
@@ -3299,8 +3354,8 @@ template&lt;typename... Ts, typename  = std::enable_if_t&lt;                    
 
 </div>
 </div>
-<a id="a41c8fb1bc91b77b89f45d2a385dd1be3" name="a41c8fb1bc91b77b89f45d2a385dd1be3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41c8fb1bc91b77b89f45d2a385dd1be3">&#9670;&nbsp;</a></span>MakeCovMatrix() <span class="overload">[1/2]</span></h2>
+<a id="aabe1315c6b023c833c8553b2937cbd64" name="aabe1315c6b023c833c8553b2937cbd64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabe1315c6b023c833c8553b2937cbd64">&#9670;&nbsp;</a></span>MakeCovMatrix() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3308,7 +3363,7 @@ template&lt;typename... Ts, typename  = std::enable_if_t&lt;                    
 template&lt;size_t N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, N, N &gt; frc::MakeCovMatrix </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; N, N &gt; frc::MakeCovMatrix </td>
           <td>(</td>
           <td class="paramtype">const std::array&lt; double, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>stdDevs</em></td><td>)</td>
@@ -3329,8 +3384,8 @@ template&lt;size_t N&gt; </div>
 
 </div>
 </div>
-<a id="abfc33e74861108dcfe356758beee417d" name="abfc33e74861108dcfe356758beee417d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfc33e74861108dcfe356758beee417d">&#9670;&nbsp;</a></span>MakeCovMatrix() <span class="overload">[2/2]</span></h2>
+<a id="a2b2fe197c41c45cb9ee6084cf586b221" name="a2b2fe197c41c45cb9ee6084cf586b221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2fe197c41c45cb9ee6084cf586b221">&#9670;&nbsp;</a></span>MakeCovMatrix() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3338,7 +3393,7 @@ template&lt;size_t N&gt; </div>
 template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; frc::MakeCovMatrix </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; sizeof...(Ts), sizeof...(Ts)&gt; frc::MakeCovMatrix </td>
           <td>(</td>
           <td class="paramtype">Ts...&#160;</td>
           <td class="paramname"><em>stdDevs</em></td><td>)</td>
@@ -3488,8 +3543,8 @@ template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2fr
 
 </div>
 </div>
-<a id="ac51fbc126b48788f46f6d42c99bfbee3" name="ac51fbc126b48788f46f6d42c99bfbee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac51fbc126b48788f46f6d42c99bfbee3">&#9670;&nbsp;</a></span>MakeMatrix()</h2>
+<a id="aa15e8b45b2071c9295015571980520cd" name="aa15e8b45b2071c9295015571980520cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15e8b45b2071c9295015571980520cd">&#9670;&nbsp;</a></span>MakeMatrix()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3497,7 +3552,7 @@ template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2fr
 template&lt;int Rows, int Cols, typename... Ts, typename  = std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Cols &gt; frc::MakeMatrix </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Rows, Cols &gt; frc::MakeMatrix </td>
           <td>(</td>
           <td class="paramtype">Ts...&#160;</td>
           <td class="paramname"><em>elems</em></td><td>)</td>
@@ -3519,8 +3574,8 @@ template&lt;int Rows, int Cols, typename... Ts, typename  = std::enable_if_t&lt;
 
 </div>
 </div>
-<a id="a8bf1c9e4062f1ad4c950b6117013f8d4" name="a8bf1c9e4062f1ad4c950b6117013f8d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bf1c9e4062f1ad4c950b6117013f8d4">&#9670;&nbsp;</a></span>MakeWhiteNoiseVector() <span class="overload">[1/2]</span></h2>
+<a id="a16fc31b3575bb922397dca49b2387805" name="a16fc31b3575bb922397dca49b2387805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16fc31b3575bb922397dca49b2387805">&#9670;&nbsp;</a></span>MakeWhiteNoiseVector() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3528,7 +3583,7 @@ template&lt;int Rows, int Cols, typename... Ts, typename  = std::enable_if_t&lt;
 template&lt;int N&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, N &gt; frc::MakeWhiteNoiseVector </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; N &gt; frc::MakeWhiteNoiseVector </td>
           <td>(</td>
           <td class="paramtype">const std::array&lt; double, N &gt; &amp;&#160;</td>
           <td class="paramname"><em>stdDevs</em></td><td>)</td>
@@ -3548,8 +3603,8 @@ template&lt;int N&gt; </div>
 
 </div>
 </div>
-<a id="a0163f456e5858ac71a87bb405126206f" name="a0163f456e5858ac71a87bb405126206f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0163f456e5858ac71a87bb405126206f">&#9670;&nbsp;</a></span>MakeWhiteNoiseVector() <span class="overload">[2/2]</span></h2>
+<a id="aedc44757ccea3687bc062e549d26b30b" name="aedc44757ccea3687bc062e549d26b30b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc44757ccea3687bc062e549d26b30b">&#9670;&nbsp;</a></span>MakeWhiteNoiseVector() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3557,7 +3612,7 @@ template&lt;int N&gt; </div>
 template&lt;typename... Ts, typename  = std::enable_if_t&lt;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, sizeof...(Ts), 1 &gt; frc::MakeWhiteNoiseVector </td>
+          <td class="memname"><a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; sizeof...(Ts), 1 &gt; frc::MakeWhiteNoiseVector </td>
           <td>(</td>
           <td class="paramtype">Ts...&#160;</td>
           <td class="paramname"><em>stdDevs</em></td><td>)</td>
@@ -3568,8 +3623,8 @@ template&lt;typename... Ts, typename  = std::enable_if_t&lt;                    
 
 </div>
 </div>
-<a id="a0c0a5c1b9e1e5955a5db862bb4774228" name="a0c0a5c1b9e1e5955a5db862bb4774228"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c0a5c1b9e1e5955a5db862bb4774228">&#9670;&nbsp;</a></span>NumericalJacobian()</h2>
+<a id="a2bb99df52b01ecbd7a1ba4e33572dc57" name="a2bb99df52b01ecbd7a1ba4e33572dc57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb99df52b01ecbd7a1ba4e33572dc57">&#9670;&nbsp;</a></span>NumericalJacobian()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3585,7 +3640,7 @@ template&lt;int Rows, int Cols, typename F &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Cols &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Cols &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>&#160;</td>
         </tr>
         <tr>
@@ -3614,8 +3669,8 @@ template&lt;int Rows, int Cols, typename F &gt; </div>
 
 </div>
 </div>
-<a id="a107358984ffd547e92c280dde5aeb81a" name="a107358984ffd547e92c280dde5aeb81a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a107358984ffd547e92c280dde5aeb81a">&#9670;&nbsp;</a></span>NumericalJacobianU()</h2>
+<a id="ac14572ce36a3df1d92fbc762cef76770" name="ac14572ce36a3df1d92fbc762cef76770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14572ce36a3df1d92fbc762cef76770">&#9670;&nbsp;</a></span>NumericalJacobianU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3631,13 +3686,13 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
@@ -3677,8 +3732,8 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 
 </div>
 </div>
-<a id="af38be2266b752195a2810857834381f9" name="af38be2266b752195a2810857834381f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af38be2266b752195a2810857834381f9">&#9670;&nbsp;</a></span>NumericalJacobianX()</h2>
+<a id="ae43b907b7ccd7490353e004cd75b25ac" name="ae43b907b7ccd7490353e004cd75b25ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43b907b7ccd7490353e004cd75b25ac">&#9670;&nbsp;</a></span>NumericalJacobianX()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3694,13 +3749,13 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
@@ -3848,14 +3903,14 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 
 </div>
 </div>
-<a id="ae9649ab8174818f97cc199229adc9b11" name="ae9649ab8174818f97cc199229adc9b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9649ab8174818f97cc199229adc9b11">&#9670;&nbsp;</a></span>PoseTo3dVector()</h2>
+<a id="ac339c0933066b20131a6e2f13ec1118c" name="ac339c0933066b20131a6e2f13ec1118c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac339c0933066b20131a6e2f13ec1118c">&#9670;&nbsp;</a></span>PoseTo3dVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> Eigen::Vector&lt; double, 3 &gt; frc::PoseTo3dVector </td>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 3 &gt; frc::PoseTo3dVector </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
           <td class="paramname"><em>pose</em></td><td>)</td>
@@ -3875,14 +3930,14 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 
 </div>
 </div>
-<a id="a7783ea1523004c8f395b72eb91578269" name="a7783ea1523004c8f395b72eb91578269"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7783ea1523004c8f395b72eb91578269">&#9670;&nbsp;</a></span>PoseTo4dVector()</h2>
+<a id="a089ed0e9037f3940cf5a15c29c20140c" name="a089ed0e9037f3940cf5a15c29c20140c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089ed0e9037f3940cf5a15c29c20140c">&#9670;&nbsp;</a></span>PoseTo4dVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> Eigen::Vector&lt; double, 4 &gt; frc::PoseTo4dVector </td>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 4 &gt; frc::PoseTo4dVector </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
           <td class="paramname"><em>pose</em></td><td>)</td>
@@ -3902,14 +3957,14 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 
 </div>
 </div>
-<a id="abfa11fe5284762b75c698d368e381487" name="abfa11fe5284762b75c698d368e381487"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfa11fe5284762b75c698d368e381487">&#9670;&nbsp;</a></span>PoseToVector()</h2>
+<a id="abc342e07180f2f57097a60269fd97288" name="abc342e07180f2f57097a60269fd97288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc342e07180f2f57097a60269fd97288">&#9670;&nbsp;</a></span>PoseToVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> Eigen::Vector&lt; double, 3 &gt; frc::PoseToVector </td>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 3 &gt; frc::PoseToVector </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
           <td class="paramname"><em>pose</em></td><td>)</td>
@@ -4577,8 +4632,8 @@ template&lt;class... Wheels&gt; </div>
 
 </div>
 </div>
-<a id="a5841f163162669ca1ef64fbdd24dcca2" name="a5841f163162669ca1ef64fbdd24dcca2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5841f163162669ca1ef64fbdd24dcca2">&#9670;&nbsp;</a></span>UnscentedTransform()</h2>
+<a id="ab63048f4802b541ebccfd7e9982a688a" name="ab63048f4802b541ebccfd7e9982a688a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63048f4802b541ebccfd7e9982a688a">&#9670;&nbsp;</a></span>UnscentedTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4586,33 +4641,33 @@ template&lt;class... Wheels&gt; </div>
 template&lt;int CovDim, int States&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::tuple&lt; Eigen::Vector&lt; double, CovDim &gt;, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, CovDim &gt; &gt; frc::UnscentedTransform </td>
+          <td class="memname">std::tuple&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;, <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, CovDim &gt; &gt; frc::UnscentedTransform </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>sigmas</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>Wm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;&#160;</td>
           <td class="paramname"><em>Wc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; Eigen::Vector&lt; double, CovDim &gt;(const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;(const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; CovDim, 2 *States+1 &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 2 *States+1 &gt; &amp;)&gt;&#160;</td>
           <td class="paramname"><em>meanFunc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; Eigen::Vector&lt; double, CovDim &gt;(const Eigen::Vector&lt; double, CovDim &gt; &amp;, const Eigen::Vector&lt; double, CovDim &gt; &amp;)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt;(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt; &amp;, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; CovDim &gt; &amp;)&gt;&#160;</td>
           <td class="paramname"><em>residualFunc</em>&#160;</td>
         </tr>
         <tr>
@@ -4695,7 +4750,7 @@ template&lt;int CovDim, int States&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Sun May 1 2022 03:32:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 03:42:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

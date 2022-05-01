@@ -9,7 +9,7 @@ var classfrc_1_1sim_1_1_single_jointed_arm_sim =
     [ "HasHitLowerLimit", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#acc330cff8accec3e3f49cce7f2630d39", null ],
     [ "HasHitUpperLimit", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#ab76373eedc02d97dca02cc5017a5abae", null ],
     [ "SetInputVoltage", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8157c4879cd1a27a2048ea729f6f365", null ],
-    [ "UpdateX", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a8e8acefe09e951103116c3f937128bb3", null ],
+    [ "UpdateX", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8907fe685358a192e550448c09fc5e9", null ],
     [ "WouldHitLowerLimit", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a0a809cf9543fc9c601df912cdfd2a13d", null ],
     [ "WouldHitUpperLimit", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html#abc446d399e9fd57573c731bade2e5ae4", null ]
 ];

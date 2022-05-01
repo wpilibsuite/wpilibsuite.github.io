@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-55-g09cf6ee</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
    </div>
   </td>
  </tr>
@@ -97,18 +97,20 @@ $(document).ready(function(){initNavTree('classfrc_1_1_implicit_model_follower.h
 
 <p>This is the complete list of members for <a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a104c80df04aaefbbea2b84e21f0fa89c">Calculate</a>(const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;u)</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#ad4625e2b67afa4dd66e16dad5c5b5435">Calculate</a>(const StateVector &amp;x, const InputVector &amp;u)</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#aeba1f741d0732f3813ee9aa794f102b4">ImplicitModelFollower</a>(const LinearSystem&lt; States, Inputs, Outputs &gt; &amp;plant, const LinearSystem&lt; States, Inputs, Outputs &gt; &amp;plantRef)</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#ae484c7060ae07eece8c84daa34f9ac24">ImplicitModelFollower</a>(const Eigen::Matrix&lt; double, States, States &gt; &amp;A, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;B, const Eigen::Matrix&lt; double, States, States &gt; &amp;Aref, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;Bref)</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#aa87deafd5153efd565649f5d2c3461e0">Reset</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a35f7f76d4c7aa77596f08d6293dcb469">U</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#afdbcd82b8836d507be1ec1327ded579d">ImplicitModelFollower</a>(const Matrixd&lt; States, States &gt; &amp;A, const Matrixd&lt; States, Inputs &gt; &amp;B, const Matrixd&lt; States, States &gt; &amp;Aref, const Matrixd&lt; States, Inputs &gt; &amp;Bref)</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a7161fda66bd423a3d17b9f5dcc446d06">InputVector</a> typedef</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#aa87deafd5153efd565649f5d2c3461e0">Reset</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#aabd5b9070d25b5457417db41b0a6c080">StateVector</a> typedef</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a2d8b71127c1c1b48dad4c22eeaf2a979">U</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html#a969425e856bc264a211ef7a1cf400156">U</a>(int i) const</td><td class="entry"><a class="el" href="classfrc_1_1_implicit_model_follower.html">frc::ImplicitModelFollower&lt; States, Inputs &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 1 2022 03:32:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 03:42:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

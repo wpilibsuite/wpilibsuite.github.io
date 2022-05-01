@@ -1,8 +1,8 @@
 var _discretization_8h =
 [
-    [ "DiscretizeA", "_discretization_8h.html#acbcc27ca7c9f88e13d7c4da520d4a6cb", null ],
-    [ "DiscretizeAB", "_discretization_8h.html#ab0e1ca87aa1e11ff912712afe34f8803", null ],
-    [ "DiscretizeAQ", "_discretization_8h.html#a0f7a16592525baf3b04f68f7b308a153", null ],
-    [ "DiscretizeAQTaylor", "_discretization_8h.html#a21e6884091fc969f4d10fd01c1b26857", null ],
-    [ "DiscretizeR", "_discretization_8h.html#aaffb6b5b00047c6f384f8fdf425db078", null ]
+    [ "DiscretizeA", "_discretization_8h.html#ad531dbb16c14307f2618e0da8b3501e3", null ],
+    [ "DiscretizeAB", "_discretization_8h.html#a42e837ac1ee1494fa938b76be926e6a4", null ],
+    [ "DiscretizeAQ", "_discretization_8h.html#a38a90b29f28a2d7aaa21c407c35c8b26", null ],
+    [ "DiscretizeAQTaylor", "_discretization_8h.html#a373755b380d47d8dd2c42d78ad346adc", null ],
+    [ "DiscretizeR", "_discretization_8h.html#a89e7eb3221aa4a2af651bba4c4d3b7f1", null ]
 ];

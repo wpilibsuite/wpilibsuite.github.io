@@ -1889,15 +1889,7 @@ var hierarchy =
     [ "wpi::json_pointer", "classwpi_1_1json__pointer.html", null ],
     [ "wpi::detail::json_ref< BasicJsonType >", "classwpi_1_1detail_1_1json__ref.html", null ],
     [ "wpi::java::JStringRef", "classwpi_1_1java_1_1_j_string_ref.html", null ],
-    [ "frc::detail::KalmanFilterImpl< States, Inputs, Outputs >", "classfrc_1_1detail_1_1_kalman_filter_impl.html", [
-      [ "frc::KalmanFilter< States, Inputs, Outputs >", "classfrc_1_1_kalman_filter.html", null ]
-    ] ],
-    [ "frc::detail::KalmanFilterImpl< 1, 1, 1 >", "classfrc_1_1detail_1_1_kalman_filter_impl.html", [
-      [ "frc::KalmanFilter< 1, 1, 1 >", "classfrc_1_1_kalman_filter_3_011_00_011_00_011_01_4.html", null ]
-    ] ],
-    [ "frc::detail::KalmanFilterImpl< 2, 1, 1 >", "classfrc_1_1detail_1_1_kalman_filter_impl.html", [
-      [ "frc::KalmanFilter< 2, 1, 1 >", "classfrc_1_1_kalman_filter_3_012_00_011_00_011_01_4.html", null ]
-    ] ],
+    [ "frc::KalmanFilter< States, Inputs, Outputs >", "classfrc_1_1_kalman_filter.html", null ],
     [ "frc::KalmanFilterLatencyCompensator< States, Inputs, Outputs, KalmanFilterType >", "classfrc_1_1_kalman_filter_latency_compensator.html", null ],
     [ "Eigen::internal::kernel_retval< DecompositionType >", "struct_eigen_1_1internal_1_1kernel__retval.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::KitbotGearing", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_kitbot_gearing.html", null ],
@@ -1937,18 +1929,7 @@ var hierarchy =
     ] ],
     [ "frc::LinearFilter< T >", "classfrc_1_1_linear_filter.html", null ],
     [ "frc::LinearPlantInversionFeedforward< States, Inputs >", "classfrc_1_1_linear_plant_inversion_feedforward.html", null ],
-    [ "frc::detail::LinearQuadraticRegulatorImpl< States, Inputs >", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html", [
-      [ "frc::LinearQuadraticRegulator< States, Inputs >", "classfrc_1_1_linear_quadratic_regulator.html", null ]
-    ] ],
-    [ "frc::detail::LinearQuadraticRegulatorImpl< 1, 1 >", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html", [
-      [ "frc::LinearQuadraticRegulator< 1, 1 >", "classfrc_1_1_linear_quadratic_regulator_3_011_00_011_01_4.html", null ]
-    ] ],
-    [ "frc::detail::LinearQuadraticRegulatorImpl< 2, 1 >", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html", [
-      [ "frc::LinearQuadraticRegulator< 2, 1 >", "classfrc_1_1_linear_quadratic_regulator_3_012_00_011_01_4.html", null ]
-    ] ],
-    [ "frc::detail::LinearQuadraticRegulatorImpl< 2, 2 >", "classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html", [
-      [ "frc::LinearQuadraticRegulator< 2, 2 >", "classfrc_1_1_linear_quadratic_regulator_3_012_00_012_01_4.html", null ]
-    ] ],
+    [ "frc::LinearQuadraticRegulator< States, Inputs >", "classfrc_1_1_linear_quadratic_regulator.html", null ],
     [ "frc::LinearSystem< States, Inputs, Outputs >", "classfrc_1_1_linear_system.html", null ],
     [ "frc::LinearSystemId", "classfrc_1_1_linear_system_id.html", null ],
     [ "frc::LinearSystemLoop< States, Inputs, Outputs >", "classfrc_1_1_linear_system_loop.html", null ],
@@ -3639,7 +3620,8 @@ var hierarchy =
         [ "Eigen::Matrix< Scalar, RowsAtCompileTime, RowsAtCompileTime, MatrixOptions, MaxRowsAtCompileTime, MaxRowsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
         [ "Eigen::Matrix< Scalar, ColsAtCompileTime, ColsAtCompileTime, MatrixOptions, MaxColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
         [ "Eigen::Matrix< Scalar, Size, Size, ColMajor, MaxColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, 1, RowsAtCompileTime, RowMajor, 1, MaxRowsAtCompileTime >", "class_eigen_1_1_matrix.html", null ]
+        [ "Eigen::Matrix< Scalar, 1, RowsAtCompileTime, RowMajor, 1, MaxRowsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< States, States >", "class_eigen_1_1_matrix.html", null ]
       ] ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [

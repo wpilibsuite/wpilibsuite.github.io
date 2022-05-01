@@ -6,7 +6,7 @@ var classfrc_1_1_spline =
     [ "Spline", "classfrc_1_1_spline.html#a7fc80eb16fa7970e56bd4277d302a1b8", null ],
     [ "Spline", "classfrc_1_1_spline.html#ae0b60a3f29b06993c46973de88fe119f", null ],
     [ "~Spline", "classfrc_1_1_spline.html#a083284ba10b2c1d6c62928727b4217be", null ],
-    [ "Coefficients", "classfrc_1_1_spline.html#a89bef9565334b0a3e4941dc82f7e6c47", null ],
+    [ "Coefficients", "classfrc_1_1_spline.html#a0e26c7c4de90c14f70487c121842340b", null ],
     [ "FromVector", "classfrc_1_1_spline.html#a388b2c4c4c73b480c9cbb7fb4217c07e", null ],
     [ "GetPoint", "classfrc_1_1_spline.html#a414636d94c374730d41eddcce38324c9", null ],
     [ "operator=", "classfrc_1_1_spline.html#a5bce6dcfe6a49efcbf9a01793e04407b", null ],

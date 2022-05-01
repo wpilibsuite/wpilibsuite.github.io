@@ -5,9 +5,7 @@ var dir_6a6d4dbfd7def32c812c83ce511abb63 =
     [ "LinearSystem.h", "_linear_system_8h.html", [
       [ "frc::LinearSystem< States, Inputs, Outputs >", "classfrc_1_1_linear_system.html", "classfrc_1_1_linear_system" ]
     ] ],
-    [ "LinearSystemLoop.h", "_linear_system_loop_8h.html", [
-      [ "frc::LinearSystemLoop< States, Inputs, Outputs >", "classfrc_1_1_linear_system_loop.html", "classfrc_1_1_linear_system_loop" ]
-    ] ],
+    [ "LinearSystemLoop.h", "_linear_system_loop_8h.html", "_linear_system_loop_8h" ],
     [ "NumericalIntegration.h", "_numerical_integration_8h.html", "_numerical_integration_8h" ],
     [ "NumericalJacobian.h", "_numerical_jacobian_8h.html", "_numerical_jacobian_8h" ]
 ];

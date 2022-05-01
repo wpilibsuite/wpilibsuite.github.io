@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-55-g09cf6ee</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
    </div>
   </td>
  </tr>
@@ -157,22 +157,22 @@ $(document).ready(function(){initNavTree('_async_8h_source.html',''); initResiza
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @param loop Loop object where this handle runs.</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_async.html#a6358281ceacfc12a21a00f2e64340128">   63</a></span>  <span class="keyword">static</span> std::shared_ptr&lt;Async&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1_async.html#a6358281ceacfc12a21a00f2e64340128">Create</a>(<span class="keyword">const</span> std::shared_ptr&lt;Loop&gt;&amp; loop) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span> <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> = std::make_shared&lt;Async&gt;(loop, private_init{});</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="_third_party_notices_8txt.html#a2f221bff5cc80244f63ad73e68bc915e">h</a> = std::make_shared&lt;Async&gt;(loop, private_init{});</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">int</span> err =</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_function" href="uv_8h.html#acbf51744899299ab372c578108bd0874">uv_async_init</a>(loop-&gt;GetRaw(), <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>-&gt;GetRaw(), [](<a class="code hl_struct" href="structuv__async__s.html">uv_async_t</a>* handle) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_function" href="uv_8h.html#acbf51744899299ab372c578108bd0874">uv_async_init</a>(loop-&gt;GetRaw(), <a class="code hl_variable" href="_third_party_notices_8txt.html#a2f221bff5cc80244f63ad73e68bc915e">h</a>-&gt;GetRaw(), [](<a class="code hl_struct" href="structuv__async__s.html">uv_async_t</a>* handle) {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>          auto&amp; h = *static_cast&lt;Async*&gt;(handle-&gt;data);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>          std::scoped_lock lock(h.m_mutex);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>          for (auto&amp;&amp; v : h.m_data) {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            std::apply(h.wakeup, v);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>          <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>.m_data.clear();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>          <a class="code hl_variable" href="_third_party_notices_8txt.html#a2f221bff5cc80244f63ad73e68bc915e">h</a>.m_data.clear();</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        });</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span> (err &lt; 0) {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      loop-&gt;ReportError(err);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>-&gt;Keep();</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_variable" href="_third_party_notices_8txt.html#a2f221bff5cc80244f63ad73e68bc915e">h</a>-&gt;Keep();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="_third_party_notices_8txt.html#a2f221bff5cc80244f63ad73e68bc915e">h</a>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">  /**</span></div>
@@ -271,6 +271,7 @@ $(document).ready(function(){initNavTree('_async_8h_source.html',''); initResiza
 <div class="ttc" id="a_handle_8h_html"><div class="ttname"><a href="_handle_8h.html">Handle.h</a></div></div>
 <div class="ttc" id="a_loop_8h_html"><div class="ttname"><a href="_loop_8h.html">Loop.h</a></div></div>
 <div class="ttc" id="a_signal_8h_html"><div class="ttname"><a href="_signal_8h.html">Signal.h</a></div></div>
+<div class="ttc" id="a_third_party_notices_8txt_html_a2f221bff5cc80244f63ad73e68bc915e"><div class="ttname"><a href="_third_party_notices_8txt.html#a2f221bff5cc80244f63ad73e68bc915e">h</a></div><div class="ttdeci">and restrictions which apply to each piece of software is included later in this file and or inside of the individual applicable source files The disclaimer of warranty in the WPILib license above applies to all code in and nothing in any of the other licenses gives permission to use the names of FIRST nor the names of the WPILib contributors to endorse or promote products derived from this software The following pieces of software have additional or alternate and or Acceptor cpp wpiutil src main native include wpi TCP *h MPack wpiutil src main native include mpack h wpiutil src main native cpp mpack cpp Bootstrap wpiutil src main native resources bootstrap *CoreUI wpiutil src main native resources coreui *Feather Icons wpiutil src main native resources feather *jQuery wpiutil src main native resources jquery *popper js wpiutil src main native resources popper *units wpimath src main native include units Eigen wpimath src main native eigeninclude wpimath src main native include unsupported StackWalker wpiutil src main native windows StackWalker *TCB span wpiutil src main native include wpi span h wpiutil src test native cpp span GHC filesystem wpiutil src main native include wpi ghc Team Library wpilibj src main java edu wpi first wpilibj spline SplineParameterizer java wpilibj src main java edu wpi first wpilibj trajectory TrajectoryParameterizer java wpilibc src main native include spline SplineParameterizer h wpilibc src main native include trajectory TrajectoryParameterizer h wpilibc src main native cpp trajectory TrajectoryParameterizer cpp Portable File Dialogs wpigui src main native include portable file dialogs h Drake wpimath src main native cpp drake common drake_assert_and_throw cpp wpimath src main native cpp drake math discrete_algebraic_riccati_equation cpp V8 export template wpiutil src main native include wpi SymbolExports h</div><div class="ttdef"><b>Definition:</b> ThirdPartyNotices.txt:59</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1_signal_base_html"><div class="ttname"><a href="classwpi_1_1sig_1_1_signal_base.html">wpi::sig::SignalBase</a></div><div class="ttdoc">SignalBase is an implementation of the observer pattern, through the use of an emitting object and sl...</div><div class="ttdef"><b>Definition:</b> Signal.h:495</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_async_3_4_html_a19ff7b471dc4bcd85e5b245adc59b5ae"><div class="ttname"><a href="classwpi_1_1uv_1_1_async_3_4.html#a19ff7b471dc4bcd85e5b245adc59b5ae">wpi::uv::Async&lt;&gt;::wakeup</a></div><div class="ttdeci">sig::Signal wakeup</div><div class="ttdoc">Signal generated (on event loop thread) when the async event occurs.</div><div class="ttdef"><b>Definition:</b> Async.h:166</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_async_3_4_html_a946e0f8e4c1263eca381df03da98744e"><div class="ttname"><a href="classwpi_1_1uv_1_1_async_3_4.html#a946e0f8e4c1263eca381df03da98744e">wpi::uv::Async&lt;&gt;::Send</a></div><div class="ttdeci">void Send()</div><div class="ttdoc">Wakeup the event loop and emit the event.</div><div class="ttdef"><b>Definition:</b> Async.h:152</div></div>
@@ -290,7 +291,6 @@ $(document).ready(function(){initNavTree('_async_8h_source.html',''); initResiza
 <div class="ttc" id="aclasswpi_1_1uv_1_1_loop_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_loop.html">wpi::uv::Loop</a></div><div class="ttdoc">Event loop.</div><div class="ttdef"><b>Definition:</b> Loop.h:36</div></div>
 <div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> json.h:8010</div></div>
-<div class="ttc" id="anamespaceunits_1_1constants_html_a88751eee8d448ad7d24121e14fa7582a"><div class="ttname"><a href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">units::constants::h</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; energy::joule, time::seconds &gt; &gt; h(6.626070040e-34)</div><div class="ttdoc">Planck constant.</div></div>
 <div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> DsClient.h:17</div></div>
 <div class="ttc" id="anamespacewpi_html_a59819be5b11c0fbbc0b8e07c7638af24"><div class="ttname"><a href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a></div><div class="ttdeci">::std::mutex mutex</div><div class="ttdef"><b>Definition:</b> mutex.h:17</div></div>
 <div class="ttc" id="astructuv__async__s_html"><div class="ttname"><a href="structuv__async__s.html">uv_async_s</a></div><div class="ttdef"><b>Definition:</b> uv.h:777</div></div>
@@ -303,7 +303,7 @@ $(document).ready(function(){initNavTree('_async_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><a class="el" href="_async_8h.html">Async.h</a></li>
-    <li class="footer">Generated on Sun May 1 2022 03:32:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 03:42:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
