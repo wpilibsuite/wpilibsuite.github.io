@@ -10,8 +10,10 @@ var dir_901369ca5399cfb92b9538222311796d =
       [ "frc::ControlAffinePlantInversionFeedforward< States, Inputs >", "classfrc_1_1_control_affine_plant_inversion_feedforward.html", "classfrc_1_1_control_affine_plant_inversion_feedforward" ]
     ] ],
     [ "DifferentialDriveAccelerationLimiter.h", "_differential_drive_acceleration_limiter_8h.html", [
-      [ "frc::DifferentialDriveAccelerationLimiter", "classfrc_1_1_differential_drive_acceleration_limiter.html", "classfrc_1_1_differential_drive_acceleration_limiter" ],
-      [ "frc::DifferentialDriveAccelerationLimiter::WheelVoltages", "structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html", "structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages" ]
+      [ "frc::DifferentialDriveAccelerationLimiter", "classfrc_1_1_differential_drive_acceleration_limiter.html", "classfrc_1_1_differential_drive_acceleration_limiter" ]
+    ] ],
+    [ "DifferentialDriveWheelVoltages.h", "_differential_drive_wheel_voltages_8h.html", [
+      [ "frc::DifferentialDriveWheelVoltages", "structfrc_1_1_differential_drive_wheel_voltages.html", "structfrc_1_1_differential_drive_wheel_voltages" ]
     ] ],
     [ "ElevatorFeedforward.h", "_elevator_feedforward_8h.html", [
       [ "frc::ElevatorFeedforward< Distance >", "classfrc_1_1_elevator_feedforward.html", "classfrc_1_1_elevator_feedforward" ]
@@ -28,8 +30,7 @@ var dir_901369ca5399cfb92b9538222311796d =
     [ "LinearQuadraticRegulator.h", "_linear_quadratic_regulator_8h.html", "_linear_quadratic_regulator_8h" ],
     [ "LinearQuadraticRegulator.inc", "_linear_quadratic_regulator_8inc.html", null ],
     [ "LTVDifferentialDriveController.h", "_l_t_v_differential_drive_controller_8h.html", [
-      [ "frc::LTVDifferentialDriveController", "classfrc_1_1_l_t_v_differential_drive_controller.html", "classfrc_1_1_l_t_v_differential_drive_controller" ],
-      [ "frc::LTVDifferentialDriveController::WheelVoltages", "structfrc_1_1_l_t_v_differential_drive_controller_1_1_wheel_voltages.html", "structfrc_1_1_l_t_v_differential_drive_controller_1_1_wheel_voltages" ]
+      [ "frc::LTVDifferentialDriveController", "classfrc_1_1_l_t_v_differential_drive_controller.html", "classfrc_1_1_l_t_v_differential_drive_controller" ]
     ] ],
     [ "LTVUnicycleController.h", "_l_t_v_unicycle_controller_8h.html", [
       [ "frc::LTVUnicycleController", "classfrc_1_1_l_t_v_unicycle_controller.html", "classfrc_1_1_l_t_v_unicycle_controller" ]

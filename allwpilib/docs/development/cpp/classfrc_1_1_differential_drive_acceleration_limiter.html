@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-66-g87bf70f</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-67-gce1a7d6</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('classfrc_1_1_differential_drive_accele
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1_differential_drive_acceleration_limiter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc::DifferentialDriveAccelerationLimiter Class Reference</div></div>
@@ -104,20 +103,14 @@ $(document).ready(function(){initNavTree('classfrc_1_1_differential_drive_accele
 
 <p><code>#include &lt;<a class="el" href="_differential_drive_acceleration_limiter_8h_source.html">frc/controller/DifferentialDriveAccelerationLimiter.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html">WheelVoltages</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motor voltages for a differential drive.  <a href="structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aef5c2c2c9e4127c49a3797f2e5e708b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html#aef5c2c2c9e4127c49a3797f2e5e708b2">DifferentialDriveAccelerationLimiter</a> (<a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; 2, 2, 2 &gt; system, units::meter_t trackwidth, units::meters_per_second_squared_t maxLinearAccel, units::radians_per_second_squared_t maxAngularAccel)</td></tr>
 <tr class="memdesc:aef5c2c2c9e4127c49a3797f2e5e708b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html" title="Filters the provided voltages to limit a differential drive&#39;s linear and angular acceleration.">DifferentialDriveAccelerationLimiter</a>.  <a href="classfrc_1_1_differential_drive_acceleration_limiter.html#aef5c2c2c9e4127c49a3797f2e5e708b2">More...</a><br /></td></tr>
 <tr class="separator:aef5c2c2c9e4127c49a3797f2e5e708b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1cdd7f40c10c55512fc4a879a33223d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html">WheelVoltages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html#ad1cdd7f40c10c55512fc4a879a33223d">Calculate</a> (units::meters_per_second_t leftVelocity, units::meters_per_second_t rightVelocity, units::volt_t leftVoltage, units::volt_t rightVoltage)</td></tr>
-<tr class="memdesc:ad1cdd7f40c10c55512fc4a879a33223d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next voltage pair subject to acceleraiton constraints.  <a href="classfrc_1_1_differential_drive_acceleration_limiter.html#ad1cdd7f40c10c55512fc4a879a33223d">More...</a><br /></td></tr>
-<tr class="separator:ad1cdd7f40c10c55512fc4a879a33223d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd5a9c294e11114b653cb7e7e776c20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_differential_drive_wheel_voltages.html">DifferentialDriveWheelVoltages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">Calculate</a> (units::meters_per_second_t leftVelocity, units::meters_per_second_t rightVelocity, units::volt_t leftVoltage, units::volt_t rightVoltage)</td></tr>
+<tr class="memdesc:a8cd5a9c294e11114b653cb7e7e776c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next voltage pair subject to acceleraiton constraints.  <a href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">More...</a><br /></td></tr>
+<tr class="separator:a8cd5a9c294e11114b653cb7e7e776c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Filters the provided voltages to limit a differential drive's linear and angular acceleration. </p>
@@ -175,14 +168,14 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad1cdd7f40c10c55512fc4a879a33223d" name="ad1cdd7f40c10c55512fc4a879a33223d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1cdd7f40c10c55512fc4a879a33223d">&#9670;&nbsp;</a></span>Calculate()</h2>
+<a id="a8cd5a9c294e11114b653cb7e7e776c20" name="a8cd5a9c294e11114b653cb7e7e776c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd5a9c294e11114b653cb7e7e776c20">&#9670;&nbsp;</a></span>Calculate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html">WheelVoltages</a> frc::DifferentialDriveAccelerationLimiter::Calculate </td>
+          <td class="memname"><a class="el" href="structfrc_1_1_differential_drive_wheel_voltages.html">DifferentialDriveWheelVoltages</a> frc::DifferentialDriveAccelerationLimiter::Calculate </td>
           <td>(</td>
           <td class="paramtype">units::meters_per_second_t&#160;</td>
           <td class="paramname"><em>leftVelocity</em>, </td>
@@ -236,7 +229,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html">DifferentialDriveAccelerationLimiter</a></li>
-    <li class="footer">Generated on Sun May 1 2022 05:57:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 18:04:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

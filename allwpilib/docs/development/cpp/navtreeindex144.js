@@ -1,5 +1,7 @@
 var NAVTREEINDEX144 =
 {
+"struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_dynamic_key_01_4_00_01_dynamic_key_01_4.html#a3ba03b9d3facacb4887cd0322d80764d":[5,0,4,2,142,0],
+"struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_dynamic_key_01_4.html":[5,0,4,2,143],
 "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_dynamic_key_01_4.html":[4,0,7,4,145],
 "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_dynamic_key_01_4.html#a0ddd2d8279004f370584479058feac37":[4,0,7,4,145,0],
 "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_dynamic_key_01_4.html#a0ddd2d8279004f370584479058feac37":[5,0,4,2,143,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX144 =
 "struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html#aaba77950701aef241d3f7e51e11a8c8a":[5,0,4,2,195,2],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html#af9dc04a1c6ce0fece31652de6c20924e":[4,0,7,4,197,1],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html#af9dc04a1c6ce0fece31652de6c20924e":[5,0,4,2,195,1],
-"struct_eigen_1_1internal_1_1cwise__promote__storage__order.html":[5,0,4,2,196],
-"struct_eigen_1_1internal_1_1cwise__promote__storage__order.html":[4,0,7,4,198],
-"struct_eigen_1_1internal_1_1cwise__promote__storage__order_3_01_lhs_kind_00_01_sparse_00_01_lhs_order_00_01_rhs_order_01_4.html":[4,0,7,4,199]
+"struct_eigen_1_1internal_1_1cwise__promote__storage__order.html":[5,0,4,2,196]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"_settings_8h.html#a416c3ae8bf5d5f519604b330d8222230":[6,0,3,0,0,1,0,1,5,2],
+"_settings_8h.html#a82cebcbf6c1138bd0f956d10fc46ef75":[6,0,3,0,0,1,0,1,5,3],
 "_settings_8h.html#a97d0981515c4e49cdf6bd537d80d0e7f":[6,0,3,0,0,1,0,1,5,0],
 "_settings_8h.html#ae36b255e934bcfd689e729d9e5ae98c5":[6,0,3,0,0,1,0,1,5,1],
 "_settings_8h_source.html":[6,0,3,0,0,1,0,1,5],
@@ -102,8 +104,8 @@ var NAVTREEINDEX19 =
 "_sim_hooks_8h.html#ac09f26e5ce7608caea0c66d9079ac6e7":[6,0,7,6,35,1],
 "_sim_hooks_8h.html#af003740fea45a46eb7f7bb619bddf31c":[6,0,7,6,35,9],
 "_sim_hooks_8h_source.html":[6,0,7,6,35],
-"_simple_motor_feedforward_8h.html":[6,0,6,0,15],
-"_simple_motor_feedforward_8h_source.html":[6,0,6,0,15],
+"_simple_motor_feedforward_8h.html":[6,0,6,0,16],
+"_simple_motor_feedforward_8h_source.html":[6,0,6,0,16],
 "_simple_widget_8h.html":[6,0,7,5,18],
 "_simple_widget_8h_source.html":[6,0,7,5,18],
 "_single_jointed_arm_sim_8h.html":[6,0,7,6,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "_string_extras_8h.html":[6,0,14,94],
 "_string_extras_8h.html#a025d8760b23ac3786c52b2cc7d72f5eb":[6,0,14,94,25],
 "_string_extras_8h.html#a0f22fd8158dd46fe207d828ab907c6a9":[6,0,14,94,47],
-"_string_extras_8h.html#a0f9d3d4eb9461ff65cb2743afa9fd08a":[6,0,14,94,48],
-"_string_extras_8h.html#a135363b62874f7e1527b3ee317063f28":[6,0,14,94,0],
-"_string_extras_8h.html#a1426c18248d3c2ba9769800334f2c596":[6,0,14,94,5]
+"_string_extras_8h.html#a0f9d3d4eb9461ff65cb2743afa9fd08a":[6,0,14,94,48]
 };

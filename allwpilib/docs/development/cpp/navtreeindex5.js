@@ -57,6 +57,8 @@ var NAVTREEINDEX5 =
 "_differential_drive_voltage_constraint_8h_source.html":[6,0,6,9,0,2],
 "_differential_drive_wheel_speeds_8h.html":[6,0,6,6,3],
 "_differential_drive_wheel_speeds_8h_source.html":[6,0,6,6,3],
+"_differential_drive_wheel_voltages_8h.html":[6,0,6,0,4],
+"_differential_drive_wheel_voltages_8h_source.html":[6,0,6,0,4],
 "_differential_drivetrain_sim_8h.html":[6,0,7,6,16],
 "_differential_drivetrain_sim_8h_source.html":[6,0,7,6,16],
 "_digital_glitch_filter_8h.html":[6,0,7,34],
@@ -237,8 +239,8 @@ var NAVTREEINDEX5 =
 "_eigen_solver_8h_source.html":[6,0,3,0,0,2,2],
 "_eigenvalues.html":[6,0,3,0,3],
 "_eigenvalues.html#a36393d27f3cfa8f0101f04e50b6a06c8":[6,0,3,0,3,0],
-"_elevator_feedforward_8h.html":[6,0,6,0,4],
-"_elevator_feedforward_8h_source.html":[6,0,6,0,4],
+"_elevator_feedforward_8h.html":[6,0,6,0,5],
+"_elevator_feedforward_8h_source.html":[6,0,6,0,5],
 "_elevator_sim_8h.html":[6,0,7,6,22],
 "_elevator_sim_8h_source.html":[6,0,7,6,22],
 "_elliptical_region_constraint_8h.html":[6,0,6,9,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "_encoder_data_8h.html#a076772612ad3dad1062c3b77372b9115":[6,0,9,2,12,21],
 "_encoder_data_8h.html#a0abc4fce3224730fbe0c1bd453e5a2d2":[6,0,9,2,12,7],
 "_encoder_data_8h.html#a0aec82171aee31df959ac19cf05adfbe":[6,0,9,2,12,37],
-"_encoder_data_8h.html#a0d8d2ae028b8cabfac058d1b39b2c7f9":[6,0,9,2,12,22],
-"_encoder_data_8h.html#a11b838d96f40a0471f38b1b73e0f1b82":[6,0,9,2,12,5],
-"_encoder_data_8h.html#a1236454917c2d4b3dad81e7fc34ce96b":[6,0,9,2,12,26]
+"_encoder_data_8h.html#a0d8d2ae028b8cabfac058d1b39b2c7f9":[6,0,9,2,12,22]
 };

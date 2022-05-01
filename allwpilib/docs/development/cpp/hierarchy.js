@@ -781,6 +781,7 @@ var hierarchy =
     [ "frc::DifferentialDrivePoseEstimator", "classfrc_1_1_differential_drive_pose_estimator.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim", "classfrc_1_1sim_1_1_differential_drivetrain_sim.html", null ],
     [ "frc::DifferentialDriveWheelSpeeds", "structfrc_1_1_differential_drive_wheel_speeds.html", null ],
+    [ "frc::DifferentialDriveWheelVoltages", "structfrc_1_1_differential_drive_wheel_voltages.html", null ],
     [ "digit_grouping< Char >", "classdigit__grouping.html", null ],
     [ "frc::sim::DigitalPWMSim", "classfrc_1_1sim_1_1_digital_p_w_m_sim.html", null ],
     [ "frc::DigitalSource", "classfrc_1_1_digital_source.html", [
@@ -4109,8 +4110,6 @@ var hierarchy =
     [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1_differential_drive_1_1_wheel_speeds.html", null ],
     [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1_killough_drive_1_1_wheel_speeds.html", null ],
     [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html", null ],
-    [ "frc::DifferentialDriveAccelerationLimiter::WheelVoltages", "structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html", null ],
-    [ "frc::LTVDifferentialDriveController::WheelVoltages", "structfrc_1_1_l_t_v_differential_drive_controller_1_1_wheel_voltages.html", null ],
     [ "frc::WidgetType", "classfrc_1_1_widget_type.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "Eigen::WithFormat< ExpressionType >", "class_eigen_1_1_with_format.html", null ],

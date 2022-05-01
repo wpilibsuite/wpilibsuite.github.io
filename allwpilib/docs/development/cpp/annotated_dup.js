@@ -1864,6 +1864,7 @@ var annotated_dup =
       [ "DifferentialDrivePoseEstimator", "classfrc_1_1_differential_drive_pose_estimator.html", "classfrc_1_1_differential_drive_pose_estimator" ],
       [ "DifferentialDriveVoltageConstraint", "classfrc_1_1_differential_drive_voltage_constraint.html", "classfrc_1_1_differential_drive_voltage_constraint" ],
       [ "DifferentialDriveWheelSpeeds", "structfrc_1_1_differential_drive_wheel_speeds.html", "structfrc_1_1_differential_drive_wheel_speeds" ],
+      [ "DifferentialDriveWheelVoltages", "structfrc_1_1_differential_drive_wheel_voltages.html", "structfrc_1_1_differential_drive_wheel_voltages" ],
       [ "DigitalGlitchFilter", "classfrc_1_1_digital_glitch_filter.html", "classfrc_1_1_digital_glitch_filter" ],
       [ "DigitalInput", "classfrc_1_1_digital_input.html", "classfrc_1_1_digital_input" ],
       [ "DigitalOutput", "classfrc_1_1_digital_output.html", "classfrc_1_1_digital_output" ],

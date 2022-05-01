@@ -1,5 +1,7 @@
 var NAVTREEINDEX138 =
 {
+"ranges_8h.html#a599d5321ed71a7ef9a5ce331f1330f43":[6,0,4,0,0,11,33],
+"ranges_8h.html#a613a357694355883872e8a7e90acf846":[6,0,4,0,0,11,34],
 "ranges_8h.html#a63faf010886670e43cbab60044df7e82":[6,0,4,0,0,11,55],
 "ranges_8h.html#a6b8ad3154e57e8900f133668b2d9ab15":[6,0,4,0,0,11,57],
 "ranges_8h.html#a740185868c4e97a6e659d7e875a2e4ac":[6,0,4,0,0,11,39],
@@ -247,7 +249,5 @@ var NAVTREEINDEX138 =
 "struct_eigen_1_1_num_traits_3_01_auto_diff_scalar_3_01_der_type_01_4_01_4.html#ada3e807a032847e41f78cdc845b68572":[5,0,4,121,2],
 "struct_eigen_1_1_num_traits_3_01_auto_diff_scalar_3_01_der_type_01_4_01_4.html#ada3e807a032847e41f78cdc845b68572":[4,0,7,124,2],
 "struct_eigen_1_1_num_traits_3_01_auto_diff_scalar_3_01_der_type_01_4_01_4.html#afa444d6af438e78c37c2089492f0f1a7":[4,0,7,124,4],
-"struct_eigen_1_1_num_traits_3_01_auto_diff_scalar_3_01_der_type_01_4_01_4.html#afa444d6af438e78c37c2089492f0f1a7":[5,0,4,121,4],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html":[4,0,7,127],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html":[5,0,4,124]
+"struct_eigen_1_1_num_traits_3_01_auto_diff_scalar_3_01_der_type_01_4_01_4.html#afa444d6af438e78c37c2089492f0f1a7":[5,0,4,121,4]
 };

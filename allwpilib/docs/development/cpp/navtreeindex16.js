@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"_p_s4_controller_8h_source.html":[6,0,7,60],
+"_p_s4_controller_sim_8h.html":[6,0,7,6,29],
 "_p_s4_controller_sim_8h_source.html":[6,0,7,6,29],
 "_p_w_m_data_8h.html":[6,0,9,2,18],
 "_p_w_m_data_8h.html#a0716680813a110878c7523afe1baa337":[6,0,9,2,18,22],
@@ -156,9 +158,9 @@ var NAVTREEINDEX16 =
 "_product_evaluators_8h_source.html":[6,0,3,0,0,1,51],
 "_profiled_p_i_d_command_8h.html":[6,0,8,0,20],
 "_profiled_p_i_d_command_8h_source.html":[6,0,8,0,20],
-"_profiled_p_i_d_controller_8h.html":[6,0,6,0,13],
-"_profiled_p_i_d_controller_8h.html#a75e5c7b8bb87c120bcd0d5f61f45d6c0":[6,0,6,0,13,1],
-"_profiled_p_i_d_controller_8h_source.html":[6,0,6,0,13],
+"_profiled_p_i_d_controller_8h.html":[6,0,6,0,14],
+"_profiled_p_i_d_controller_8h.html#a75e5c7b8bb87c120bcd0d5f61f45d6c0":[6,0,6,0,14,1],
+"_profiled_p_i_d_controller_8h_source.html":[6,0,6,0,14],
 "_profiled_p_i_d_subsystem_8h.html":[6,0,8,0,21],
 "_profiled_p_i_d_subsystem_8h_source.html":[6,0,8,0,21],
 "_proxy_schedule_command_8h.html":[6,0,8,0,22],
@@ -204,8 +206,8 @@ var NAVTREEINDEX16 =
 "_r_e_v_p_h_sim_8h_source.html":[6,0,7,6,32],
 "_ramsete_command_8h.html":[6,0,8,0,23],
 "_ramsete_command_8h_source.html":[6,0,8,0,23],
-"_ramsete_controller_8h.html":[6,0,6,0,14],
-"_ramsete_controller_8h_source.html":[6,0,6,0,14],
+"_ramsete_controller_8h.html":[6,0,6,0,15],
+"_ramsete_controller_8h_source.html":[6,0,6,0,15],
 "_random_8h.html":[6,0,3,0,0,1,52],
 "_random_8h_source.html":[6,0,3,0,0,1,52],
 "_real_q_z_8h.html":[6,0,3,0,0,2,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "_relay_data_8h_source.html":[6,0,9,2,19],
 "_relay_sim_8h.html":[6,0,7,6,31],
 "_relay_sim_8h_source.html":[6,0,7,6,31],
-"_released_button_scheduler_8h.html":[6,0,5,0,9],
-"_released_button_scheduler_8h_source.html":[6,0,5,0,9],
-"_repeat_command_8h.html":[6,0,8,0,24]
+"_released_button_scheduler_8h.html":[6,0,5,0,9]
 };
