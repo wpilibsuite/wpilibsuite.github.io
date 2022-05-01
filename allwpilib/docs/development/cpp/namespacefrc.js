@@ -327,7 +327,7 @@ var namespacefrc =
     [ "AngleModulus", "namespacefrc.html#a7270bc5006a5a8b905ba4b8a9616c3c8", null ],
     [ "AngleResidual", "namespacefrc.html#aae5520badaf7b2cea7920648d7183d1a", null ],
     [ "AngleResidual", "namespacefrc.html#a763e6ef8316b55150cc23aa01a9ca752", null ],
-    [ "ApplyDeadband", "namespacefrc.html#a820b4b4c024492a66ad53eb17952d2b5", null ],
+    [ "ApplyDeadband", "namespacefrc.html#a9a55e5d7e329c0937444a309366aa386", null ],
     [ "CalculateDistanceToTarget", "namespacefrc.html#a956b69d1e5eb6ce39b634a3c4d5a9578", null ],
     [ "ClampInputMaxMagnitude", "namespacefrc.html#a9d415b956c01ca06977fbf98a6446cb2", null ],
     [ "DesaturateInputVector", "namespacefrc.html#aa605e370d18bb9a8aab8669abc5a5cb6", null ],
