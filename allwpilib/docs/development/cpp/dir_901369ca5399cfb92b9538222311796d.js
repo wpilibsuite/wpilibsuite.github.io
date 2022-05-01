@@ -27,6 +27,13 @@ var dir_901369ca5399cfb92b9538222311796d =
     ] ],
     [ "LinearQuadraticRegulator.h", "_linear_quadratic_regulator_8h.html", "_linear_quadratic_regulator_8h" ],
     [ "LinearQuadraticRegulator.inc", "_linear_quadratic_regulator_8inc.html", null ],
+    [ "LTVDifferentialDriveController.h", "_l_t_v_differential_drive_controller_8h.html", [
+      [ "frc::LTVDifferentialDriveController", "classfrc_1_1_l_t_v_differential_drive_controller.html", "classfrc_1_1_l_t_v_differential_drive_controller" ],
+      [ "frc::LTVDifferentialDriveController::WheelVoltages", "structfrc_1_1_l_t_v_differential_drive_controller_1_1_wheel_voltages.html", "structfrc_1_1_l_t_v_differential_drive_controller_1_1_wheel_voltages" ]
+    ] ],
+    [ "LTVUnicycleController.h", "_l_t_v_unicycle_controller_8h.html", [
+      [ "frc::LTVUnicycleController", "classfrc_1_1_l_t_v_unicycle_controller.html", "classfrc_1_1_l_t_v_unicycle_controller" ]
+    ] ],
     [ "PIDController.h", "wpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h.html", [
       [ "frc2::PIDController", "classfrc2_1_1_p_i_d_controller.html", "classfrc2_1_1_p_i_d_controller" ]
     ] ],

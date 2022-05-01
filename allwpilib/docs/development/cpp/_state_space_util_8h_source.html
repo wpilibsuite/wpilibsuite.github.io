@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-64-ge28776d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-66-g87bf70f</span>
    </div>
   </td>
  </tr>
@@ -190,268 +190,244 @@ $(document).ready(function(){initNavTree('_state_space_util_8h_source.html','');
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}  <span class="comment">// namespace detail</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"></span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * Creates a matrix from the given list of elements.</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> * Creates a cost matrix from the given vector for use with LQR.</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * The elements of the matrix are filled in in row-major order.</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * @param elems An array of elements in the matrix.</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * @return A matrix containing the given elements.</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * @deprecated Use Eigen::Matrix or Eigen::Vector initializer list constructor.</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">typename</span>... Ts,</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>          <span class="keyword">typename</span> =</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>              std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>WPI_DEPRECATED(</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="stringliteral">&quot;Use Eigen::Matrix or Eigen::Vector initializer list constructor&quot;</span>)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="namespacefrc.html#aa15e8b45b2071c9295015571980520cd">  110</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;Rows, Cols&gt; <a class="code hl_function" href="namespacefrc.html#aa15e8b45b2071c9295015571980520cd">MakeMatrix</a>(Ts... elems) {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      <span class="keyword">sizeof</span>...(elems) == Rows * Cols,</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      <span class="stringliteral">&quot;Number of provided elements doesn&#39;t match matrix dimensionality&quot;</span>);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;Rows, Cols&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  detail::MatrixImpl&lt;Rows, Cols&gt;(<a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>, elems...);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"></span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * Creates a cost matrix from the given vector for use with LQR.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * The cost matrix is constructed using Bryson&#39;s rule. The inverse square of</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * each tolerance is placed on the cost matrix diagonal. If a tolerance is</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * infinity, its cost matrix entry is set to zero.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * @param tolerances An array. For a Q matrix, its elements are the maximum</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> *                   allowed excursions of the states from the reference. For an</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> *                   R matrix, its elements are the maximum allowed excursions</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> *                   of the control inputs from no actuation.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> * @return State excursion or control effort cost matrix.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">  111</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_function" href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">MakeCostMatrix</a>(Ts... tolerances) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix</a>&lt;double, <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_function" href="namespacefrc_1_1detail.html#a530fee08ed7a7804fd260e51d989f2be">detail::CostMatrixImpl</a>(<a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal(), tolerances...);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"></span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> * Creates a covariance matrix from the given vector for use with Kalman</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> * filters.</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"> * Each element is squared and placed on the covariance matrix diagonal.</span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * The cost matrix is constructed using Bryson&#39;s rule. The inverse square of</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> * each tolerance is placed on the cost matrix diagonal. If a tolerance is</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> * infinity, its cost matrix entry is set to zero.</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> * @param tolerances An array. For a Q matrix, its elements are the maximum</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> *                   allowed excursions of the states from the reference. For an</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"> *                   R matrix, its elements are the maximum allowed excursions</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"> *                   of the control inputs from no actuation.</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"> * @return State excursion or control effort cost matrix.</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">  135</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_function" href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">MakeCostMatrix</a>(Ts... tolerances) {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix</a>&lt;double, <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <a class="code hl_function" href="namespacefrc_1_1detail.html#a530fee08ed7a7804fd260e51d989f2be">detail::CostMatrixImpl</a>(<a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal(), tolerances...);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"></span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> * Creates a covariance matrix from the given vector for use with Kalman</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * filters.</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> * Each element is squared and placed on the covariance matrix diagonal.</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * @param stdDevs An array. For a Q matrix, its elements are the standard</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> *                deviations of each state from how the model behaves. For an R</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment"> *                matrix, its elements are the standard deviations for each</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"> *                output measurement.</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"> * @return Process noise or measurement noise covariance matrix.</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">  155</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_function" href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">MakeCovMatrix</a>(Ts... stdDevs) {</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix</a>&lt;double, <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <a class="code hl_function" href="namespacefrc_1_1detail.html#aaf6ecb62b9892589de8df8fdea82ce0a">detail::CovMatrixImpl</a>(<a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal(), stdDevs...);</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>}</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment"></span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"> * Creates a cost matrix from the given vector for use with LQR.</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment"> * The cost matrix is constructed using Bryson&#39;s rule. The inverse square of</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment"> * each element in the input is taken and placed on the cost matrix diagonal.</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"> * @param costs An array. For a Q matrix, its elements are the maximum allowed</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"> *              excursions of the states from the reference. For an R matrix,</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"> *              its elements are the maximum allowed excursions of the control</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"> *              inputs from no actuation.</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"> * @return State excursion or control effort cost matrix.</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="namespacefrc.html#a24cbbfe2d7c69ba9f4b6955d48d60226">  174</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;N, N&gt;</a> <a class="code hl_function" href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">MakeCostMatrix</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; costs) {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix&lt;double, N&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keyword">auto</span>&amp; diag = <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal();</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; ++i) {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    diag(i) = 1.0 / <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(costs[i], 2);</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  }</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"></span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"> * Creates a covariance matrix from the given vector for use with Kalman</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment"> * filters.</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"> * Each element is squared and placed on the covariance matrix diagonal.</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"> * @param stdDevs An array. For a Q matrix, its elements are the standard</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"> *                deviations of each state from how the model behaves. For an R</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"> *                matrix, its elements are the standard deviations for each</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"> *                output measurement.</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"> * @return Process noise or measurement noise covariance matrix.</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="namespacefrc.html#aabe1315c6b023c833c8553b2937cbd64">  196</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;N, N&gt;</a> <a class="code hl_function" href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">MakeCovMatrix</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; stdDevs) {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix&lt;double, N&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">auto</span>&amp; diag = <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; ++i) {</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    diag(i) = <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(stdDevs[i], 2);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  }</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>}</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">  207</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), 1&gt; <a class="code hl_function" href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">MakeWhiteNoiseVector</a>(Ts... stdDevs) {</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), 1&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <a class="code hl_function" href="namespacefrc_1_1detail.html#a6d3a59fd5b5aa6fd9b6d39ec9bc4371a">detail::WhiteNoiseVectorImpl</a>(<a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>, stdDevs...);</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment"></span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment"> * Creates a vector of normally distributed white noise with the given noise</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment"> * intensities for each element.</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment"> * @param stdDevs An array whose elements are the standard deviations of each</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment"> *                element of the noise vector.</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment"> * @return White noise vector.</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="namespacefrc.html#a16fc31b3575bb922397dca49b2387805">  222</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;N&gt;</a> <a class="code hl_function" href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">MakeWhiteNoiseVector</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; stdDevs) {</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  std::random_device <a class="code hl_variable" href="namespaceunits.html#a1771e96618514d3b4eb5510397d618ba">rd</a>;</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  std::mt19937 gen{<a class="code hl_variable" href="namespaceunits.html#a1771e96618514d3b4eb5510397d618ba">rd</a>()};</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;N&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; ++i) {</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="comment">// Passing a standard deviation of 0.0 to std::normal_distribution is</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">// undefined behavior</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">if</span> (stdDevs[i] == 0.0) {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>(i) = 0.0;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      std::normal_distribution distr{0.0, stdDevs[i]};</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>(i) = distr(gen);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    }</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  }</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment"></span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment"> * Converts a Pose2d into a vector of [x, y, theta].</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"> * @param stdDevs An array. For a Q matrix, its elements are the standard</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"> *                deviations of each state from how the model behaves. For an R</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"> *                matrix, its elements are the standard deviations for each</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"> *                output measurement.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> * @return Process noise or measurement noise covariance matrix.</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">  131</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_function" href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">MakeCovMatrix</a>(Ts... stdDevs) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix</a>&lt;double, <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_function" href="namespacefrc_1_1detail.html#aaf6ecb62b9892589de8df8fdea82ce0a">detail::CovMatrixImpl</a>(<a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal(), stdDevs...);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>}</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"></span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"> * Creates a cost matrix from the given vector for use with LQR.</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"> * The cost matrix is constructed using Bryson&#39;s rule. The inverse square of</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"> * each element in the input is taken and placed on the cost matrix diagonal.</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"> * @param costs An array. For a Q matrix, its elements are the maximum allowed</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment"> *              excursions of the states from the reference. For an R matrix,</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"> *              its elements are the maximum allowed excursions of the control</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"> *              inputs from no actuation.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"> * @return State excursion or control effort cost matrix.</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="namespacefrc.html#a24cbbfe2d7c69ba9f4b6955d48d60226">  150</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;N, N&gt;</a> <a class="code hl_function" href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">MakeCostMatrix</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; costs) {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix&lt;double, N&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keyword">auto</span>&amp; diag = <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal();</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; ++i) {</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    diag(i) = 1.0 / <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(costs[i], 2);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment"></span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment"> * Creates a covariance matrix from the given vector for use with Kalman</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment"> * filters.</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment"> * Each element is squared and placed on the covariance matrix diagonal.</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment"> * @param stdDevs An array. For a Q matrix, its elements are the standard</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment"> *                deviations of each state from how the model behaves. For an R</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"> *                matrix, its elements are the standard deviations for each</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"> *                output measurement.</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"> * @return Process noise or measurement noise covariance matrix.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="namespacefrc.html#aabe1315c6b023c833c8553b2937cbd64">  172</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;N, N&gt;</a> <a class="code hl_function" href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">MakeCovMatrix</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; stdDevs) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix&lt;double, N&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keyword">auto</span>&amp; diag = <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.diagonal();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; ++i) {</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    diag(i) = <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(stdDevs[i], 2);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>}</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">  183</a></span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), 1&gt; <a class="code hl_function" href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">MakeWhiteNoiseVector</a>(Ts... stdDevs) {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd</a>&lt;<span class="keyword">sizeof</span>...(Ts), 1&gt; <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <a class="code hl_function" href="namespacefrc_1_1detail.html#a6d3a59fd5b5aa6fd9b6d39ec9bc4371a">detail::WhiteNoiseVectorImpl</a>(<a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>, stdDevs...);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"></span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"> * Creates a vector of normally distributed white noise with the given noise</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"> * intensities for each element.</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"> * @param stdDevs An array whose elements are the standard deviations of each</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> *                element of the noise vector.</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"> * @return White noise vector.</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="namespacefrc.html#a16fc31b3575bb922397dca49b2387805">  198</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;N&gt;</a> <a class="code hl_function" href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">MakeWhiteNoiseVector</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; stdDevs) {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  std::random_device <a class="code hl_variable" href="namespaceunits.html#a1771e96618514d3b4eb5510397d618ba">rd</a>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  std::mt19937 gen{<a class="code hl_variable" href="namespaceunits.html#a1771e96618514d3b4eb5510397d618ba">rd</a>()};</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;N&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; N; ++i) {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="comment">// Passing a standard deviation of 0.0 to std::normal_distribution is</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="comment">// undefined behavior</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordflow">if</span> (stdDevs[i] == 0.0) {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>(i) = 0.0;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      std::normal_distribution distr{0.0, stdDevs[i]};</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>(i) = distr(gen);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  }</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment"></span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment"> * Converts a Pose2d into a vector of [x, y, theta].</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment"> * @param pose The pose that is being represented.</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment"> * @return The vector.</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">  224</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a> <a class="code hl_function" href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">PoseTo3dVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment"></span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment"> * Converts a Pose2d into a vector of [x, y, std::cos(theta), std::sin(theta)].</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment"> * @param pose The pose that is being represented.</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment"> * @return The vector.</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno"><a class="line" href="namespacefrc.html#a089ed0e9037f3940cf5a15c29c20140c">  234</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;4&gt;</a> <a class="code hl_function" href="namespacefrc.html#a089ed0e9037f3940cf5a15c29c20140c">PoseTo4dVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment"></span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment"> * Returns true if (A, B) is a stabilizable pair.</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment"> * (A, B) is stabilizable if and only if the uncontrollable eigenvalues of A, if</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment"> * any, have absolute values less than one, where an eigenvalue is</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment"> * uncontrollable if rank(λI - A, B) &lt; n where n is the number of states.</span></div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment"> * @param pose The pose that is being represented.</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment"> * @return The vector.</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">  248</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a> <a class="code hl_function" href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">PoseTo3dVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment"></span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment"> * Converts a Pose2d into a vector of [x, y, std::cos(theta), std::sin(theta)].</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment"> * @param pose The pose that is being represented.</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment"> * @return The vector.</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="namespacefrc.html#a089ed0e9037f3940cf5a15c29c20140c">  258</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;4&gt;</a> <a class="code hl_function" href="namespacefrc.html#a089ed0e9037f3940cf5a15c29c20140c">PoseTo4dVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment"></span> </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment"> * Returns true if (A, B) is a stabilizable pair.</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment"> * (A, B) is stabilizable if and only if the uncontrollable eigenvalues of A, if</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment"> * any, have absolute values less than one, where an eigenvalue is</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment"> * uncontrollable if rank(λI - A, B) &lt; n where n is the number of states.</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment"> * @tparam States The number of states.</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment"> * @tparam Inputs The number of inputs.</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment"> * @param A System matrix.</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment"> * @param B Input matrix.</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs&gt;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">  273</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">IsStabilizable</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a>&amp; A,</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, Inputs&gt;</a>&amp; B) {</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <span class="keywordflow">return</span> detail::IsStabilizableImpl&lt;States, Inputs&gt;(A, B);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment"></span> </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment"> * Returns true if (A, C) is a detectable pair.</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment"> * (A, C) is detectable if and only if the unobservable eigenvalues of A, if</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment"> * any, have absolute values less than one, where an eigenvalue is unobservable</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment"> * if rank(λI - A; C) &lt; n where n is the number of states.</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment"> * @tparam States The number of states.</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment"> * @tparam Outputs The number of outputs.</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment"> * @param A System matrix.</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment"> * @param C Output matrix.</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Outputs&gt;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">  291</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">IsDetectable</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a>&amp; A,</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                  <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;Outputs, States&gt;</a>&amp; C) {</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  <span class="keywordflow">return</span> detail::IsStabilizableImpl&lt;States, Outputs&gt;(A.transpose(),</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                                                     C.transpose());</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>}</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment">// Template specializations are used here to make common state-input pairs</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment">// compile faster.</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="namespacefrc.html#a3be056b7ad60b328c32d04126e581a72">  300</a></span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#a3be056b7ad60b328c32d04126e581a72">IsStabilizable&lt;1, 1&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;1, 1&gt;</a>&amp; A,</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                                           <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;1, 1&gt;</a>&amp; B);</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">// Template specializations are used here to make common state-input pairs</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">// compile faster.</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno"><a class="line" href="namespacefrc.html#a17d7901da158c6e00cd1864181112323">  306</a></span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#a17d7901da158c6e00cd1864181112323">IsStabilizable&lt;2, 1&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;2, 2&gt;</a>&amp; A,</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                                           <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;2, 1&gt;</a>&amp; B);</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="comment"></span> </div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment"> * Converts a Pose2d into a vector of [x, y, theta].</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment"> * @param pose The pose that is being represented.</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment"> * @return The vector.</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="namespacefrc.html#abc342e07180f2f57097a60269fd97288">  317</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a> <a class="code hl_function" href="namespacefrc.html#abc342e07180f2f57097a60269fd97288">PoseToVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose);</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment"></span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment"> * Clamps input vector between system&#39;s minimum and maximum allowable input.</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment"> * @tparam Inputs The number of inputs.</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment"> * @param u Input vector to clamp.</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment"> * @param umin The minimum input magnitude.</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment"> * @param umax The maximum input magnitude.</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment"> * @return Clamped input vector.</span></div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Inputs&gt;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">  329</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a> <a class="code hl_function" href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">ClampInputMaxMagnitude</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; u,</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                                       <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; umin,</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                                       <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; umax) {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Inputs; ++i) {</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>(i) = std::clamp(u(i), umin(i), umax(i));</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  }</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>}</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="comment"></span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment"> * Renormalize all inputs if any exceeds the maximum magnitude. Useful for</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="comment"> * systems such as differential drivetrains.</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="comment"> * @tparam Inputs      The number of inputs.</span></div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="comment"> * @param u            The input vector.</span></div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment"> * @param maxMagnitude The maximum magnitude any input can have.</span></div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment"> * @return The normalizedInput</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Inputs&gt;</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">  349</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a> <a class="code hl_function" href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">DesaturateInputVector</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; u,</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                                      <span class="keywordtype">double</span> maxMagnitude) {</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">double</span> maxValue = u.template lpNorm&lt;Eigen::Infinity&gt;();</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <span class="keywordflow">if</span> (maxValue &gt; maxMagnitude) {</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="keywordflow">return</span> u * maxMagnitude / maxValue;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  }</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="keywordflow">return</span> u;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>}</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment"> * @tparam States The number of states.</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment"> * @tparam Inputs The number of inputs.</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment"> * @param A System matrix.</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment"> * @param B Input matrix.</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs&gt;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">  249</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">IsStabilizable</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a>&amp; A,</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, Inputs&gt;</a>&amp; B) {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <span class="keywordflow">return</span> detail::IsStabilizableImpl&lt;States, Inputs&gt;(A, B);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>}</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment"></span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment"> * Returns true if (A, C) is a detectable pair.</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment"> * (A, C) is detectable if and only if the unobservable eigenvalues of A, if</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment"> * any, have absolute values less than one, where an eigenvalue is unobservable</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment"> * if rank(λI - A; C) &lt; n where n is the number of states.</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment"> * @tparam States The number of states.</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment"> * @tparam Outputs The number of outputs.</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment"> * @param A System matrix.</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment"> * @param C Output matrix.</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Outputs&gt;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">  267</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">IsDetectable</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a>&amp; A,</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                  <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;Outputs, States&gt;</a>&amp; C) {</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordflow">return</span> detail::IsStabilizableImpl&lt;States, Outputs&gt;(A.transpose(),</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                                                     C.transpose());</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">// Template specializations are used here to make common state-input pairs</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">// compile faster.</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="namespacefrc.html#a3be056b7ad60b328c32d04126e581a72">  276</a></span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#a3be056b7ad60b328c32d04126e581a72">IsStabilizable&lt;1, 1&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;1, 1&gt;</a>&amp; A,</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                                           <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;1, 1&gt;</a>&amp; B);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">// Template specializations are used here to make common state-input pairs</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">// compile faster.</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="namespacefrc.html#a17d7901da158c6e00cd1864181112323">  282</a></span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc.html#a17d7901da158c6e00cd1864181112323">IsStabilizable&lt;2, 1&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;2, 2&gt;</a>&amp; A,</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                                           <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;2, 1&gt;</a>&amp; B);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment"></span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment"> * Converts a Pose2d into a vector of [x, y, theta].</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment"> * @param pose The pose that is being represented.</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment"> * @return The vector.</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="namespacefrc.html#abc342e07180f2f57097a60269fd97288">  293</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a> <a class="code hl_function" href="namespacefrc.html#abc342e07180f2f57097a60269fd97288">PoseToVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment"></span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment"> * Clamps input vector between system&#39;s minimum and maximum allowable input.</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"> * @tparam Inputs The number of inputs.</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment"> * @param u Input vector to clamp.</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment"> * @param umin The minimum input magnitude.</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment"> * @param umax The maximum input magnitude.</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment"> * @return Clamped input vector.</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Inputs&gt;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">  305</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a> <a class="code hl_function" href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">ClampInputMaxMagnitude</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; u,</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                                       <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; umin,</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                                       <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; umax) {</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Inputs; ++i) {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>(i) = std::clamp(u(i), umin(i), umax(i));</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  }</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>}</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment"></span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment"> * Renormalize all inputs if any exceeds the maximum magnitude. Useful for</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment"> * systems such as differential drivetrains.</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment"> * @tparam Inputs      The number of inputs.</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment"> * @param u            The input vector.</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment"> * @param maxMagnitude The maximum magnitude any input can have.</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment"> * @return The normalizedInput</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Inputs&gt;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">  325</a></span><a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a> <a class="code hl_function" href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">DesaturateInputVector</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a>&amp; u,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                                      <span class="keywordtype">double</span> maxMagnitude) {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <span class="keywordtype">double</span> maxValue = u.template lpNorm&lt;Eigen::Infinity&gt;();</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  <span class="keywordflow">if</span> (maxValue &gt; maxMagnitude) {</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keywordflow">return</span> u * maxMagnitude / maxValue;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  }</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <span class="keywordflow">return</span> u;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>}</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="a_eigenvalues_html"><div class="ttname"><a href="_eigenvalues.html">Eigenvalues</a></div></div>
 <div class="ttc" id="a_pose2d_8h_html"><div class="ttname"><a href="_pose2d_8h.html">Pose2d.h</a></div></div>
@@ -476,18 +452,17 @@ $(document).ready(function(){initNavTree('_state_space_util_8h_source.html','');
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="anamespacefrc_html_a089ed0e9037f3940cf5a15c29c20140c"><div class="ttname"><a href="namespacefrc.html#a089ed0e9037f3940cf5a15c29c20140c">frc::PoseTo4dVector</a></div><div class="ttdeci">WPILIB_DLLEXPORT Vectord&lt; 4 &gt; PoseTo4dVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, std::cos(theta), std::sin(theta)].</div></div>
 <div class="ttc" id="anamespacefrc_html_a17d7901da158c6e00cd1864181112323"><div class="ttname"><a href="namespacefrc.html#a17d7901da158c6e00cd1864181112323">frc::IsStabilizable&lt; 2, 1 &gt;</a></div><div class="ttdeci">WPILIB_DLLEXPORT bool IsStabilizable&lt; 2, 1 &gt;(const Matrixd&lt; 2, 2 &gt; &amp;A, const Matrixd&lt; 2, 1 &gt; &amp;B)</div></div>
-<div class="ttc" id="anamespacefrc_html_a24b992ad34579cda928ded108eb31c3c"><div class="ttname"><a href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">frc::MakeCostMatrix</a></div><div class="ttdeci">Matrixd&lt; sizeof...(Ts), sizeof...(Ts)&gt; MakeCostMatrix(Ts... tolerances)</div><div class="ttdoc">Creates a cost matrix from the given vector for use with LQR.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:135</div></div>
-<div class="ttc" id="anamespacefrc_html_a2b2fe197c41c45cb9ee6084cf586b221"><div class="ttname"><a href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">frc::MakeCovMatrix</a></div><div class="ttdeci">Matrixd&lt; sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:155</div></div>
+<div class="ttc" id="anamespacefrc_html_a24b992ad34579cda928ded108eb31c3c"><div class="ttname"><a href="namespacefrc.html#a24b992ad34579cda928ded108eb31c3c">frc::MakeCostMatrix</a></div><div class="ttdeci">Matrixd&lt; sizeof...(Ts), sizeof...(Ts)&gt; MakeCostMatrix(Ts... tolerances)</div><div class="ttdoc">Creates a cost matrix from the given vector for use with LQR.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:111</div></div>
+<div class="ttc" id="anamespacefrc_html_a2b2fe197c41c45cb9ee6084cf586b221"><div class="ttname"><a href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">frc::MakeCovMatrix</a></div><div class="ttdeci">Matrixd&lt; sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:131</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
 <div class="ttc" id="anamespacefrc_html_a3be056b7ad60b328c32d04126e581a72"><div class="ttname"><a href="namespacefrc.html#a3be056b7ad60b328c32d04126e581a72">frc::IsStabilizable&lt; 1, 1 &gt;</a></div><div class="ttdeci">WPILIB_DLLEXPORT bool IsStabilizable&lt; 1, 1 &gt;(const Matrixd&lt; 1, 1 &gt; &amp;A, const Matrixd&lt; 1, 1 &gt; &amp;B)</div></div>
-<div class="ttc" id="anamespacefrc_html_a402cc4a794a3ea4e084fc271c24351fe"><div class="ttname"><a href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">frc::ClampInputMaxMagnitude</a></div><div class="ttdeci">Vectord&lt; Inputs &gt; ClampInputMaxMagnitude(const Vectord&lt; Inputs &gt; &amp;u, const Vectord&lt; Inputs &gt; &amp;umin, const Vectord&lt; Inputs &gt; &amp;umax)</div><div class="ttdoc">Clamps input vector between system's minimum and maximum allowable input.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:329</div></div>
-<div class="ttc" id="anamespacefrc_html_a74b5d3242f01cf66380e19ea14d25252"><div class="ttname"><a href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">frc::IsStabilizable</a></div><div class="ttdeci">bool IsStabilizable(const Matrixd&lt; States, States &gt; &amp;A, const Matrixd&lt; States, Inputs &gt; &amp;B)</div><div class="ttdoc">Returns true if (A, B) is a stabilizable pair.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:273</div></div>
-<div class="ttc" id="anamespacefrc_html_aa15e8b45b2071c9295015571980520cd"><div class="ttname"><a href="namespacefrc.html#aa15e8b45b2071c9295015571980520cd">frc::MakeMatrix</a></div><div class="ttdeci">Matrixd&lt; Rows, Cols &gt; MakeMatrix(Ts... elems)</div><div class="ttdoc">Creates a matrix from the given list of elements.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:110</div></div>
+<div class="ttc" id="anamespacefrc_html_a402cc4a794a3ea4e084fc271c24351fe"><div class="ttname"><a href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">frc::ClampInputMaxMagnitude</a></div><div class="ttdeci">Vectord&lt; Inputs &gt; ClampInputMaxMagnitude(const Vectord&lt; Inputs &gt; &amp;u, const Vectord&lt; Inputs &gt; &amp;umin, const Vectord&lt; Inputs &gt; &amp;umax)</div><div class="ttdoc">Clamps input vector between system's minimum and maximum allowable input.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:305</div></div>
+<div class="ttc" id="anamespacefrc_html_a74b5d3242f01cf66380e19ea14d25252"><div class="ttname"><a href="namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252">frc::IsStabilizable</a></div><div class="ttdeci">bool IsStabilizable(const Matrixd&lt; States, States &gt; &amp;A, const Matrixd&lt; States, Inputs &gt; &amp;B)</div><div class="ttdoc">Returns true if (A, B) is a stabilizable pair.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:249</div></div>
 <div class="ttc" id="anamespacefrc_html_abc342e07180f2f57097a60269fd97288"><div class="ttname"><a href="namespacefrc.html#abc342e07180f2f57097a60269fd97288">frc::PoseToVector</a></div><div class="ttdeci">WPILIB_DLLEXPORT Vectord&lt; 3 &gt; PoseToVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, theta].</div></div>
-<div class="ttc" id="anamespacefrc_html_abca4d9dfc07090b63c9960acaff4120a"><div class="ttname"><a href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">frc::IsDetectable</a></div><div class="ttdeci">bool IsDetectable(const Matrixd&lt; States, States &gt; &amp;A, const Matrixd&lt; Outputs, States &gt; &amp;C)</div><div class="ttdoc">Returns true if (A, C) is a detectable pair.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:291</div></div>
+<div class="ttc" id="anamespacefrc_html_abca4d9dfc07090b63c9960acaff4120a"><div class="ttname"><a href="namespacefrc.html#abca4d9dfc07090b63c9960acaff4120a">frc::IsDetectable</a></div><div class="ttdeci">bool IsDetectable(const Matrixd&lt; States, States &gt; &amp;A, const Matrixd&lt; Outputs, States &gt; &amp;C)</div><div class="ttdoc">Returns true if (A, C) is a detectable pair.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:267</div></div>
 <div class="ttc" id="anamespacefrc_html_ac339c0933066b20131a6e2f13ec1118c"><div class="ttname"><a href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">frc::PoseTo3dVector</a></div><div class="ttdeci">WPILIB_DLLEXPORT Vectord&lt; 3 &gt; PoseTo3dVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, theta].</div></div>
-<div class="ttc" id="anamespacefrc_html_ade486733c402318e087e67b4c99fdaf3"><div class="ttname"><a href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">frc::DesaturateInputVector</a></div><div class="ttdeci">Vectord&lt; Inputs &gt; DesaturateInputVector(const Vectord&lt; Inputs &gt; &amp;u, double maxMagnitude)</div><div class="ttdoc">Renormalize all inputs if any exceeds the maximum magnitude.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:349</div></div>
-<div class="ttc" id="anamespacefrc_html_aedc44757ccea3687bc062e549d26b30b"><div class="ttname"><a href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">frc::MakeWhiteNoiseVector</a></div><div class="ttdeci">Matrixd&lt; sizeof...(Ts), 1 &gt; MakeWhiteNoiseVector(Ts... stdDevs)</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:207</div></div>
+<div class="ttc" id="anamespacefrc_html_ade486733c402318e087e67b4c99fdaf3"><div class="ttname"><a href="namespacefrc.html#ade486733c402318e087e67b4c99fdaf3">frc::DesaturateInputVector</a></div><div class="ttdeci">Vectord&lt; Inputs &gt; DesaturateInputVector(const Vectord&lt; Inputs &gt; &amp;u, double maxMagnitude)</div><div class="ttdoc">Renormalize all inputs if any exceeds the maximum magnitude.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:325</div></div>
+<div class="ttc" id="anamespacefrc_html_aedc44757ccea3687bc062e549d26b30b"><div class="ttname"><a href="namespacefrc.html#aedc44757ccea3687bc062e549d26b30b">frc::MakeWhiteNoiseVector</a></div><div class="ttdeci">Matrixd&lt; sizeof...(Ts), 1 &gt; MakeWhiteNoiseVector(Ts... stdDevs)</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:183</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_a8bc48cef3fdfae35910a4bbe5011abcd"><div class="ttname"><a href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">units::math::pow</a></div><div class="ttdeci">auto pow(const UnitType &amp;value) noexcept -&gt; unit_t&lt; typename units::detail::power_of_unit&lt; power, typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;::type, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the value of value raised to the power</div><div class="ttdef"><b>Definition:</b> base.h:2809</div></div>
 <div class="ttc" id="anamespaceunits_html_a1771e96618514d3b4eb5510397d618ba"><div class="ttname"><a href="namespaceunits.html#a1771e96618514d3b4eb5510397d618ba">units::rd</a></div><div class="ttdeci">compound_unit&lt; energy::joules, inverse&lt; mass::kilogram &gt; &gt; rd</div><div class="ttdef"><b>Definition:</b> radiation.h:61</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -496,7 +471,7 @@ $(document).ready(function(){initNavTree('_state_space_util_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="_state_space_util_8h.html">StateSpaceUtil.h</a></li>
-    <li class="footer">Generated on Sun May 1 2022 03:42:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 1 2022 05:57:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

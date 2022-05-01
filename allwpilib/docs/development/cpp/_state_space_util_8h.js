@@ -13,7 +13,6 @@ var _state_space_util_8h =
     [ "MakeCostMatrix", "_state_space_util_8h.html#a24b992ad34579cda928ded108eb31c3c", null ],
     [ "MakeCovMatrix", "_state_space_util_8h.html#aabe1315c6b023c833c8553b2937cbd64", null ],
     [ "MakeCovMatrix", "_state_space_util_8h.html#a2b2fe197c41c45cb9ee6084cf586b221", null ],
-    [ "MakeMatrix", "_state_space_util_8h.html#aa15e8b45b2071c9295015571980520cd", null ],
     [ "MakeWhiteNoiseVector", "_state_space_util_8h.html#a16fc31b3575bb922397dca49b2387805", null ],
     [ "MakeWhiteNoiseVector", "_state_space_util_8h.html#aedc44757ccea3687bc062e549d26b30b", null ],
     [ "MatrixImpl", "_state_space_util_8h.html#a80fc33d4dfc8fc728514918200eaf939", null ],

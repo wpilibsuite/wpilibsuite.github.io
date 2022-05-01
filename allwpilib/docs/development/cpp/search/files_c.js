@@ -22,7 +22,9 @@ var searchData=
   ['locale_2eh_19',['locale.h',['../locale_8h.html',1,'']]],
   ['logger_2eh_20',['Logger.h',['../_logger_8h.html',1,'']]],
   ['loop_2eh_21',['Loop.h',['../_loop_8h.html',1,'']]],
-  ['lu_22',['LU',['../_l_u.html',1,'']]],
-  ['luminous_5fflux_2eh_23',['luminous_flux.h',['../luminous__flux_8h.html',1,'']]],
-  ['luminous_5fintensity_2eh_24',['luminous_intensity.h',['../luminous__intensity_8h.html',1,'']]]
+  ['ltvdifferentialdrivecontroller_2eh_22',['LTVDifferentialDriveController.h',['../_l_t_v_differential_drive_controller_8h.html',1,'']]],
+  ['ltvunicyclecontroller_2eh_23',['LTVUnicycleController.h',['../_l_t_v_unicycle_controller_8h.html',1,'']]],
+  ['lu_24',['LU',['../_l_u.html',1,'']]],
+  ['luminous_5fflux_2eh_25',['luminous_flux.h',['../luminous__flux_8h.html',1,'']]],
+  ['luminous_5fintensity_2eh_26',['luminous_intensity.h',['../luminous__intensity_8h.html',1,'']]]
 ];

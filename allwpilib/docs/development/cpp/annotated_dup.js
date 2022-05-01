@@ -1906,6 +1906,8 @@ var annotated_dup =
       [ "LinearSystemId", "classfrc_1_1_linear_system_id.html", "classfrc_1_1_linear_system_id" ],
       [ "LinearSystemLoop", "classfrc_1_1_linear_system_loop.html", "classfrc_1_1_linear_system_loop" ],
       [ "LiveWindow", "classfrc_1_1_live_window.html", "classfrc_1_1_live_window" ],
+      [ "LTVDifferentialDriveController", "classfrc_1_1_l_t_v_differential_drive_controller.html", "classfrc_1_1_l_t_v_differential_drive_controller" ],
+      [ "LTVUnicycleController", "classfrc_1_1_l_t_v_unicycle_controller.html", "classfrc_1_1_l_t_v_unicycle_controller" ],
       [ "MaxVelocityConstraint", "classfrc_1_1_max_velocity_constraint.html", "classfrc_1_1_max_velocity_constraint" ],
       [ "MecanumDrive", "classfrc_1_1_mecanum_drive.html", "classfrc_1_1_mecanum_drive" ],
       [ "MecanumDriveKinematics", "classfrc_1_1_mecanum_drive_kinematics.html", "classfrc_1_1_mecanum_drive_kinematics" ],

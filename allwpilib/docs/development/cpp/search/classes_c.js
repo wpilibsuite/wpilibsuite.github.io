@@ -59,5 +59,7 @@ var searchData=
   ['lpnorm_5fselector_3c_20derived_2c_201_20_3e_56',['lpNorm_selector&lt; Derived, 1 &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_011_01_4.html',1,'Eigen::internal']]],
   ['lpnorm_5fselector_3c_20derived_2c_202_20_3e_57',['lpNorm_selector&lt; Derived, 2 &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_012_01_4.html',1,'Eigen::internal']]],
   ['lpnorm_5fselector_3c_20derived_2c_20infinity_20_3e_58',['lpNorm_selector&lt; Derived, Infinity &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_01_infinity_01_4.html',1,'Eigen::internal']]],
-  ['lpnormreturntype_59',['LpNormReturnType',['../struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html',1,'Eigen::VectorwiseOp']]]
+  ['lpnormreturntype_59',['LpNormReturnType',['../struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html',1,'Eigen::VectorwiseOp']]],
+  ['ltvdifferentialdrivecontroller_60',['LTVDifferentialDriveController',['../classfrc_1_1_l_t_v_differential_drive_controller.html',1,'frc']]],
+  ['ltvunicyclecontroller_61',['LTVUnicycleController',['../classfrc_1_1_l_t_v_unicycle_controller.html',1,'frc']]]
 ];

@@ -218,6 +218,10 @@ var NAVTREEINDEX8 =
 "_l_l_t_8h.html":[6,0,3,0,0,0,1],
 "_l_l_t_8h.html#a20afbac78b1a352482336e9047fe4ec2":[6,0,3,0,0,0,1,5],
 "_l_l_t_8h_source.html":[6,0,3,0,0,0,1],
+"_l_t_v_differential_drive_controller_8h.html":[6,0,6,0,10],
+"_l_t_v_differential_drive_controller_8h_source.html":[6,0,6,0,10],
+"_l_t_v_unicycle_controller_8h.html":[6,0,6,0,11],
+"_l_t_v_unicycle_controller_8h_source.html":[6,0,6,0,11],
 "_l_u.html":[6,0,3,0,6],
 "_l_u.html#ad504c096572618ded0b51cb5686fada8":[6,0,3,0,6,0],
 "_layout_type_8h.html":[6,0,7,5,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "_linear_system_sim_8h_source.html":[6,0,7,6,27],
 "_listener_executor_8h.html":[6,0,7,7,2],
 "_listener_executor_8h_source.html":[6,0,7,7,2],
-"_live_window_8h.html":[6,0,7,3,0],
-"_live_window_8h_source.html":[6,0,7,3,0],
-"_logger_8h.html":[6,0,14,49],
-"_logger_8h.html#a40ea17cecb3b1a843a37cf6bd2b5c058":[6,0,14,49,4],
-"_logger_8h.html#a42ba2d8ce6c0a9edfef22cb33e10668d":[6,0,14,49,2]
+"_live_window_8h.html":[6,0,7,3,0]
 };

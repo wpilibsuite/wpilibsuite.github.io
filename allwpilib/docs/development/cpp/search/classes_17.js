@@ -9,7 +9,7 @@ var searchData=
   ['websocketserverhelper_6',['WebSocketServerHelper',['../classwpi_1_1_web_socket_server_helper.html',1,'wpi']]],
   ['weekday_7',['weekday',['../classweekday.html',1,'']]],
   ['wheelspeeds_8',['WheelSpeeds',['../structfrc_1_1_differential_drive_1_1_wheel_speeds.html',1,'frc::DifferentialDrive::WheelSpeeds'],['../structfrc_1_1_killough_drive_1_1_wheel_speeds.html',1,'frc::KilloughDrive::WheelSpeeds'],['../structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html',1,'frc::MecanumDrive::WheelSpeeds']]],
-  ['wheelvoltages_9',['WheelVoltages',['../structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html',1,'frc::DifferentialDriveAccelerationLimiter']]],
+  ['wheelvoltages_9',['WheelVoltages',['../structfrc_1_1_differential_drive_acceleration_limiter_1_1_wheel_voltages.html',1,'frc::DifferentialDriveAccelerationLimiter::WheelVoltages'],['../structfrc_1_1_l_t_v_differential_drive_controller_1_1_wheel_voltages.html',1,'frc::LTVDifferentialDriveController::WheelVoltages']]],
   ['widgettype_10',['WidgetType',['../classfrc_1_1_widget_type.html',1,'frc']]],
   ['width_5fchecker_11',['width_checker',['../classwidth__checker.html',1,'']]],
   ['withformat_12',['WithFormat',['../class_eigen_1_1_with_format.html',1,'Eigen']]],
