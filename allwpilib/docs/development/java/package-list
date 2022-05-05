@@ -41,7 +41,6 @@ edu.wpi.first.wpilibj.shuffleboard
 edu.wpi.first.wpilibj.simulation
 edu.wpi.first.wpilibj.smartdashboard
 edu.wpi.first.wpilibj.util
-edu.wpi.first.wpilibj.vision
 edu.wpi.first.wpilibj2.command
 edu.wpi.first.wpilibj2.command.button
 org.opencv.calib3d
