@@ -29,14 +29,11 @@ edu.wpi.first.util.net
 edu.wpi.first.util.sendable
 edu.wpi.first.vision
 edu.wpi.first.wpilibj
-edu.wpi.first.wpilibj.buttons
-edu.wpi.first.wpilibj.command
 edu.wpi.first.wpilibj.counter
 edu.wpi.first.wpilibj.drive
 edu.wpi.first.wpilibj.interfaces
 edu.wpi.first.wpilibj.livewindow
 edu.wpi.first.wpilibj.motorcontrol
-edu.wpi.first.wpilibj.pidwrappers
 edu.wpi.first.wpilibj.shuffleboard
 edu.wpi.first.wpilibj.simulation
 edu.wpi.first.wpilibj.smartdashboard
