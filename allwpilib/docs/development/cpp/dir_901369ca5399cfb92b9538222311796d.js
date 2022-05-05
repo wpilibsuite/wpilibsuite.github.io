@@ -35,7 +35,7 @@ var dir_901369ca5399cfb92b9538222311796d =
     [ "LTVUnicycleController.h", "_l_t_v_unicycle_controller_8h.html", [
       [ "frc::LTVUnicycleController", "classfrc_1_1_l_t_v_unicycle_controller.html", "classfrc_1_1_l_t_v_unicycle_controller" ]
     ] ],
-    [ "PIDController.h", "wpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h.html", [
+    [ "PIDController.h", "_p_i_d_controller_8h.html", [
       [ "frc2::PIDController", "classfrc2_1_1_p_i_d_controller.html", "classfrc2_1_1_p_i_d_controller" ]
     ] ],
     [ "ProfiledPIDController.h", "_profiled_p_i_d_controller_8h.html", "_profiled_p_i_d_controller_8h" ],

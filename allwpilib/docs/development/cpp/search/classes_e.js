@@ -9,7 +9,7 @@ var searchData=
   ['nested_5feval_6',['nested_eval',['../struct_eigen_1_1internal_1_1nested__eval.html',1,'Eigen::internal']]],
   ['nested_5feval_3c_20returnbyvalue_3c_20derived_20_3e_2c_20n_2c_20plainobject_20_3e_7',['nested_eval&lt; ReturnByValue&lt; Derived &gt;, n, PlainObject &gt;',['../struct_eigen_1_1internal_1_1nested__eval_3_01_return_by_value_3_01_derived_01_4_00_01n_00_01_plain_object_01_4.html',1,'Eigen::internal']]],
   ['networkacceptor_8',['NetworkAcceptor',['../classwpi_1_1_network_acceptor.html',1,'wpi']]],
-  ['networkbutton_9',['NetworkButton',['../classfrc2_1_1_network_button.html',1,'frc2::NetworkButton'],['../classfrc_1_1_network_button.html',1,'frc::NetworkButton']]],
+  ['networkbutton_9',['NetworkButton',['../classfrc2_1_1_network_button.html',1,'frc2']]],
   ['networkstream_10',['NetworkStream',['../classwpi_1_1_network_stream.html',1,'wpi::NetworkStream'],['../classwpi_1_1uv_1_1_network_stream.html',1,'wpi::uv::NetworkStream']]],
   ['networkstreamimpl_11',['NetworkStreamImpl',['../classwpi_1_1uv_1_1_network_stream_impl.html',1,'wpi::uv']]],
   ['networkstreamimpl_3c_20pipe_2c_20uv_5fpipe_5ft_20_3e_12',['NetworkStreamImpl&lt; Pipe, uv_pipe_t &gt;',['../classwpi_1_1uv_1_1_network_stream_impl.html',1,'wpi::uv']]],

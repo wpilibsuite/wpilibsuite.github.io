@@ -1,7 +1,7 @@
 var dir_25d5854705192c92d2d003534c71255a =
 [
     [ "button", "dir_56e1b1ed12101820b621b810be7ef57a.html", "dir_56e1b1ed12101820b621b810be7ef57a" ],
-    [ "Command.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_command_8h.html", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_command_8h" ],
+    [ "Command.h", "_command_8h.html", "_command_8h" ],
     [ "CommandBase.h", "_command_base_8h.html", [
       [ "frc2::CommandBase", "classfrc2_1_1_command_base.html", "classfrc2_1_1_command_base" ]
     ] ],
@@ -17,7 +17,7 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "CommandState.h", "_command_state_8h.html", [
       [ "frc2::CommandState", "classfrc2_1_1_command_state.html", "classfrc2_1_1_command_state" ]
     ] ],
-    [ "ConditionalCommand.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_conditional_command_8h.html", [
+    [ "ConditionalCommand.h", "_conditional_command_8h.html", [
       [ "frc2::ConditionalCommand", "classfrc2_1_1_conditional_command.html", "classfrc2_1_1_conditional_command" ]
     ] ],
     [ "EndlessCommand.h", "_endless_command_8h.html", [
@@ -26,7 +26,7 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "FunctionalCommand.h", "_functional_command_8h.html", [
       [ "frc2::FunctionalCommand", "classfrc2_1_1_functional_command.html", "classfrc2_1_1_functional_command" ]
     ] ],
-    [ "InstantCommand.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_instant_command_8h.html", [
+    [ "InstantCommand.h", "_instant_command_8h.html", [
       [ "frc2::InstantCommand", "classfrc2_1_1_instant_command.html", "classfrc2_1_1_instant_command" ]
     ] ],
     [ "MecanumControllerCommand.h", "_mecanum_controller_command_8h.html", [
@@ -47,13 +47,13 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "PerpetualCommand.h", "_perpetual_command_8h.html", [
       [ "frc2::PerpetualCommand", "classfrc2_1_1_perpetual_command.html", "classfrc2_1_1_perpetual_command" ]
     ] ],
-    [ "PIDCommand.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_p_i_d_command_8h.html", [
+    [ "PIDCommand.h", "_p_i_d_command_8h.html", [
       [ "frc2::PIDCommand", "classfrc2_1_1_p_i_d_command.html", "classfrc2_1_1_p_i_d_command" ]
     ] ],
-    [ "PIDSubsystem.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_p_i_d_subsystem_8h.html", [
+    [ "PIDSubsystem.h", "_p_i_d_subsystem_8h.html", [
       [ "frc2::PIDSubsystem", "classfrc2_1_1_p_i_d_subsystem.html", "classfrc2_1_1_p_i_d_subsystem" ]
     ] ],
-    [ "PrintCommand.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_print_command_8h.html", [
+    [ "PrintCommand.h", "_print_command_8h.html", [
       [ "frc2::PrintCommand", "classfrc2_1_1_print_command.html", "classfrc2_1_1_print_command" ]
     ] ],
     [ "ProfiledPIDCommand.h", "_profiled_p_i_d_command_8h.html", [
@@ -85,7 +85,7 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "StartEndCommand.h", "_start_end_command_8h.html", [
       [ "frc2::StartEndCommand", "classfrc2_1_1_start_end_command.html", "classfrc2_1_1_start_end_command" ]
     ] ],
-    [ "Subsystem.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_subsystem_8h.html", [
+    [ "Subsystem.h", "_subsystem_8h.html", [
       [ "frc2::Subsystem", "classfrc2_1_1_subsystem.html", "classfrc2_1_1_subsystem" ]
     ] ],
     [ "SubsystemBase.h", "_subsystem_base_8h.html", [
@@ -101,10 +101,10 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "TrapezoidProfileSubsystem.h", "_trapezoid_profile_subsystem_8h.html", [
       [ "frc2::TrapezoidProfileSubsystem< Distance >", "classfrc2_1_1_trapezoid_profile_subsystem.html", "classfrc2_1_1_trapezoid_profile_subsystem" ]
     ] ],
-    [ "WaitCommand.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_wait_command_8h.html", [
+    [ "WaitCommand.h", "_wait_command_8h.html", [
       [ "frc2::WaitCommand", "classfrc2_1_1_wait_command.html", "classfrc2_1_1_wait_command" ]
     ] ],
-    [ "WaitUntilCommand.h", "wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_wait_until_command_8h.html", [
+    [ "WaitUntilCommand.h", "_wait_until_command_8h.html", [
       [ "frc2::WaitUntilCommand", "classfrc2_1_1_wait_until_command.html", "classfrc2_1_1_wait_until_command" ]
     ] ]
 ];

@@ -102,8 +102,7 @@ var searchData=
   ['buffered_5ffile_99',['buffered_file',['../classbuffered__file.html',1,'']]],
   ['builtinaccelerometer_100',['BuiltInAccelerometer',['../classfrc_1_1_built_in_accelerometer.html',1,'frc']]],
   ['builtinaccelerometersim_101',['BuiltInAccelerometerSim',['../classfrc_1_1sim_1_1_built_in_accelerometer_sim.html',1,'frc::sim']]],
-  ['button_102',['Button',['../classfrc2_1_1_button.html',1,'frc2::Button'],['../classfrc_1_1_button.html',1,'frc::Button'],['../structfrc_1_1_p_s4_controller_1_1_button.html',1,'frc::PS4Controller::Button'],['../structfrc_1_1_xbox_controller_1_1_button.html',1,'frc::XboxController::Button']]],
-  ['buttonscheduler_103',['ButtonScheduler',['../classfrc_1_1_button_scheduler.html',1,'frc']]],
-  ['bytes_104',['bytes',['../classbytes.html',1,'']]],
-  ['bytewise_5fbitwise_5fhelper_105',['bytewise_bitwise_helper',['../struct_eigen_1_1internal_1_1bytewise__bitwise__helper.html',1,'Eigen::internal']]]
+  ['button_102',['Button',['../classfrc2_1_1_button.html',1,'frc2::Button'],['../structfrc_1_1_p_s4_controller_1_1_button.html',1,'frc::PS4Controller::Button'],['../structfrc_1_1_xbox_controller_1_1_button.html',1,'frc::XboxController::Button']]],
+  ['bytes_103',['bytes',['../classbytes.html',1,'']]],
+  ['bytewise_5fbitwise_5fhelper_104',['bytewise_bitwise_helper',['../struct_eigen_1_1internal_1_1bytewise__bitwise__helper.html',1,'Eigen::internal']]]
 ];

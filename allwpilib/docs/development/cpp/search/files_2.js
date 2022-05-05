@@ -19,6 +19,5 @@ var searchData=
   ['builtinaccelerometersim_2eh_16',['BuiltInAccelerometerSim.h',['../_built_in_accelerometer_sim_8h.html',1,'']]],
   ['builtinlayouts_2eh_17',['BuiltInLayouts.h',['../_built_in_layouts_8h.html',1,'']]],
   ['builtinwidgets_2eh_18',['BuiltInWidgets.h',['../_built_in_widgets_8h.html',1,'']]],
-  ['button_2eh_19',['Button.h',['../wpilib_old_commands_2src_2main_2native_2include_2frc_2buttons_2_button_8h.html',1,'(Global Namespace)'],['../wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2button_2_button_8h.html',1,'(Global Namespace)']]],
-  ['buttonscheduler_2eh_20',['ButtonScheduler.h',['../_button_scheduler_8h.html',1,'']]]
+  ['button_2eh_19',['Button.h',['../_button_8h.html',1,'']]]
 ];
