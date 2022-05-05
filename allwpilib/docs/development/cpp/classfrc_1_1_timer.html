@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-67-gce1a7d6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-68-gee03a7a</span>
    </div>
   </td>
  </tr>
@@ -134,9 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f2deb1a8f4fbaa7ba147706a38c4cd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_timer.html#a3f2deb1a8f4fbaa7ba147706a38c4cd7">HasElapsed</a> (units::second_t period) const</td></tr>
 <tr class="memdesc:a3f2deb1a8f4fbaa7ba147706a38c4cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the period specified has passed.  <a href="classfrc_1_1_timer.html#a3f2deb1a8f4fbaa7ba147706a38c4cd7">More...</a><br /></td></tr>
 <tr class="separator:a3f2deb1a8f4fbaa7ba147706a38c4cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2478b711ccf54ee0dc208cd7078c3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_timer.html#a0a2478b711ccf54ee0dc208cd7078c3d">HasPeriodPassed</a> (units::second_t period)</td></tr>
-<tr class="memdesc:a0a2478b711ccf54ee0dc208cd7078c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the period specified has passed and if it has, advance the start time by that period.  <a href="classfrc_1_1_timer.html#a0a2478b711ccf54ee0dc208cd7078c3d">More...</a><br /></td></tr>
-<tr class="separator:a0a2478b711ccf54ee0dc208cd7078c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee15601a96a9539926848ab7bc33611"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_timer.html#a1ee15601a96a9539926848ab7bc33611">AdvanceIfElapsed</a> (units::second_t period)</td></tr>
 <tr class="memdesc:a1ee15601a96a9539926848ab7bc33611"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the period specified has passed and if it has, advance the start time by that period.  <a href="classfrc_1_1_timer.html#a1ee15601a96a9539926848ab7bc33611">More...</a><br /></td></tr>
 <tr class="separator:a1ee15601a96a9539926848ab7bc33611"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,35 +385,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0a2478b711ccf54ee0dc208cd7078c3d" name="a0a2478b711ccf54ee0dc208cd7078c3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2478b711ccf54ee0dc208cd7078c3d">&#9670;&nbsp;</a></span>HasPeriodPassed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool frc::Timer::HasPeriodPassed </td>
-          <td>(</td>
-          <td class="paramtype">units::second_t&#160;</td>
-          <td class="paramname"><em>period</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check if the period specified has passed and if it has, advance the start time by that period. </p>
-<p >This is useful to decide if it's time to do periodic work without drifting later by the time it took to get around to checking.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">period</td><td>The period to check for. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the period has passed. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_timer.html#a1ee15601a96a9539926848ab7bc33611" title="Check if the period specified has passed and if it has, advance the start time by that period.">AdvanceIfElapsed()</a> instead. </dd></dl>
-
-</div>
-</div>
 <a id="acefab93da54899fc4bb41043931477ca" name="acefab93da54899fc4bb41043931477ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acefab93da54899fc4bb41043931477ca">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -538,7 +506,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_timer.html">Timer</a></li>
-    <li class="footer">Generated on Sun May 1 2022 18:04:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu May 5 2022 03:40:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

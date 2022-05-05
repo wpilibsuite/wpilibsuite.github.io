@@ -9,7 +9,6 @@ var classfrc_1_1_timer =
     [ "GetFPGATimestamp", "classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c", null ],
     [ "GetMatchTime", "classfrc_1_1_timer.html#a79c185032dcc8dd906bab83262b349c6", null ],
     [ "HasElapsed", "classfrc_1_1_timer.html#a3f2deb1a8f4fbaa7ba147706a38c4cd7", null ],
-    [ "HasPeriodPassed", "classfrc_1_1_timer.html#a0a2478b711ccf54ee0dc208cd7078c3d", null ],
     [ "operator=", "classfrc_1_1_timer.html#acefab93da54899fc4bb41043931477ca", null ],
     [ "operator=", "classfrc_1_1_timer.html#a8336c12d2859f83eb70ef24a2115cbb4", null ],
     [ "Reset", "classfrc_1_1_timer.html#a5950fe350497fb7040832120fe836ac7", null ],

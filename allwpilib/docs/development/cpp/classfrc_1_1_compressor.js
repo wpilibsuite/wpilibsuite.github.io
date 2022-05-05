@@ -18,7 +18,5 @@ var classfrc_1_1_compressor =
     [ "InitSendable", "classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774", null ],
     [ "IsEnabled", "classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26", null ],
     [ "operator=", "classfrc_1_1_compressor.html#af9c8dcd60df772872e90cb8a54f934c8", null ],
-    [ "operator=", "classfrc_1_1_compressor.html#a69b170eb04bca7f76bb8fb790395110a", null ],
-    [ "Start", "classfrc_1_1_compressor.html#a860fca78ae417ac8af88f10c6030092c", null ],
-    [ "Stop", "classfrc_1_1_compressor.html#af4157c3eb17f69a5eea66356c2bfcdc2", null ]
+    [ "operator=", "classfrc_1_1_compressor.html#a69b170eb04bca7f76bb8fb790395110a", null ]
 ];

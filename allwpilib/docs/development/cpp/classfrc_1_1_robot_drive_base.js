@@ -12,7 +12,6 @@ var classfrc_1_1_robot_drive_base =
     [ "RobotDriveBase", "classfrc_1_1_robot_drive_base.html#ad796a29767020626aa35b2a42fba8264", null ],
     [ "~RobotDriveBase", "classfrc_1_1_robot_drive_base.html#a821b770d27682489c54eeb76b52aad00", null ],
     [ "RobotDriveBase", "classfrc_1_1_robot_drive_base.html#ae011f3027be53e5d24b38ea976139c56", null ],
-    [ "ApplyDeadband", "classfrc_1_1_robot_drive_base.html#ad34521ec9f278ec4625c0c0e313fafa1", null ],
     [ "Desaturate", "classfrc_1_1_robot_drive_base.html#a87e9b63abbb395f8a0bac5c14129e6d6", null ],
     [ "FeedWatchdog", "classfrc_1_1_robot_drive_base.html#ac407bc60830a0d639de96bdc53d58a0f", null ],
     [ "GetDescription", "classfrc_1_1_robot_drive_base.html#a5b8e78f04144ecdd389e9aeeea111bff", null ],

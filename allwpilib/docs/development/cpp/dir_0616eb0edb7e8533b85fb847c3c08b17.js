@@ -201,13 +201,6 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "Solenoid.h", "_solenoid_8h.html", [
       [ "frc::Solenoid", "classfrc_1_1_solenoid.html", "classfrc_1_1_solenoid" ]
     ] ],
-    [ "SpeedController.h", "_speed_controller_8h.html", [
-      [ "frc::SpeedController", "classfrc_1_1_speed_controller.html", "classfrc_1_1_speed_controller" ]
-    ] ],
-    [ "SpeedControllerGroup.h", "_speed_controller_group_8h.html", [
-      [ "frc::SpeedControllerGroup", "classfrc_1_1_speed_controller_group.html", "classfrc_1_1_speed_controller_group" ]
-    ] ],
-    [ "SpeedControllerGroup.inc", "_speed_controller_group_8inc.html", null ],
     [ "SPI.h", "wpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h.html", [
       [ "frc::SPI", "classfrc_1_1_s_p_i.html", "classfrc_1_1_s_p_i" ]
     ] ],

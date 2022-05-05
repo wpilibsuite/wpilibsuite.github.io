@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-67-gce1a7d6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-68-gee03a7a</span>
    </div>
   </td>
  </tr>
@@ -106,9 +106,6 @@ $(document).ready(function(){initNavTree('classfrc_1_1_camera_server.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a042b8f65f2fcfe1a753db8239fbb9070"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_camera_server.html">CameraServer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server.html#a042b8f65f2fcfe1a753db8239fbb9070">GetInstance</a> ()</td></tr>
-<tr class="memdesc:a042b8f65f2fcfe1a753db8239fbb9070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classfrc_1_1_camera_server.html" title="Singleton class for creating and keeping camera servers.">CameraServer</a> instance.  <a href="classfrc_1_1_camera_server.html#a042b8f65f2fcfe1a753db8239fbb9070">More...</a><br /></td></tr>
-<tr class="separator:a042b8f65f2fcfe1a753db8239fbb9070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eb9f7657053544a951403086f178f2e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classcs_1_1_usb_camera.html">cs::UsbCamera</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server.html#a0eb9f7657053544a951403086f178f2e">StartAutomaticCapture</a> ()</td></tr>
 <tr class="memdesc:a0eb9f7657053544a951403086f178f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start automatically capturing images to send to the dashboard.  <a href="classfrc_1_1_camera_server.html#a0eb9f7657053544a951403086f178f2e">More...</a><br /></td></tr>
 <tr class="separator:a0eb9f7657053544a951403086f178f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -794,34 +791,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a042b8f65f2fcfe1a753db8239fbb9070" name="a042b8f65f2fcfe1a753db8239fbb9070"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a042b8f65f2fcfe1a753db8239fbb9070">&#9670;&nbsp;</a></span>GetInstance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classfrc_1_1_camera_server.html">CameraServer</a> * frc::CameraServer::GetInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the <a class="el" href="classfrc_1_1_camera_server.html" title="Singleton class for creating and keeping camera servers.">CameraServer</a> instance. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>Use the static methods </dd></dl>
-
-</div>
-</div>
 <a id="aed7ae0275f068c641f8c48d73c362b6c" name="aed7ae0275f068c641f8c48d73c362b6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed7ae0275f068c641f8c48d73c362b6c">&#9670;&nbsp;</a></span>GetServer() <span class="overload">[1/2]</span></h2>
 
@@ -1130,7 +1099,7 @@ template&lt;typename T &gt; </div>
 
 <p>Sets the size of the image to use. </p>
 <p >Use the public kSize constants to set the correct mode, or set it directly on a camera and call the appropriate StartAutomaticCapture method.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1_camera_server.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1_camera_server.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>The size to use </td></tr>
@@ -1428,7 +1397,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_camera_server.html">CameraServer</a></li>
-    <li class="footer">Generated on Sun May 1 2022 18:04:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu May 5 2022 03:40:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
