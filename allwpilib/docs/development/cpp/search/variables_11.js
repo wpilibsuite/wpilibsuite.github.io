@@ -15,8 +15,8 @@ var searchData=
   ['red_12',['red',['../classfrc_1_1_color8_bit.html#a7508647820b675aa4d66c459d3095934',1,'frc::Color8Bit::red()'],['../classfrc_1_1_color.html#a6290b5dcd4c34a0f6a43b2e3372dc31a',1,'frc::Color::red()']]],
   ['release_13',['release',['../structuv__utsname__s.html#a9195aedd09aac76e3623bf6b11e68110',1,'uv_utsname_s']]],
   ['remote_5fid_14',['remote_id',['../structnt_1_1_connection_info.html#abd6756b834c10c0b0ddbef85003d4efc',1,'nt::ConnectionInfo::remote_id()'],['../struct_n_t___connection_info.html#abc07959851c53c5d378fbd8ac6797bb8',1,'NT_ConnectionInfo::remote_id()']]],
-  ['remote_5fip_15',['remote_ip',['../struct_n_t___connection_info.html#a30da15ce52b23bbbc867a201548e1d48',1,'NT_ConnectionInfo::remote_ip()'],['../structnt_1_1_connection_info.html#ac68ecd3cbafe77f22de289bd2b0f79ce',1,'nt::ConnectionInfo::remote_ip()']]],
-  ['remote_5fport_16',['remote_port',['../struct_n_t___connection_info.html#a62e6f419f8918e0e3c72aa2a627685e1',1,'NT_ConnectionInfo::remote_port()'],['../structnt_1_1_connection_info.html#a374d9048e0a8f8b877ec15ce4f20ec02',1,'nt::ConnectionInfo::remote_port()']]],
+  ['remote_5fip_15',['remote_ip',['../structnt_1_1_connection_info.html#ac68ecd3cbafe77f22de289bd2b0f79ce',1,'nt::ConnectionInfo::remote_ip()'],['../struct_n_t___connection_info.html#a30da15ce52b23bbbc867a201548e1d48',1,'NT_ConnectionInfo::remote_ip()']]],
+  ['remote_5fport_16',['remote_port',['../structnt_1_1_connection_info.html#a374d9048e0a8f8b877ec15ce4f20ec02',1,'nt::ConnectionInfo::remote_port()'],['../struct_n_t___connection_info.html#a62e6f419f8918e0e3c72aa2a627685e1',1,'NT_ConnectionInfo::remote_port()']]],
   ['repair_17',['repair',['../_third_party_notices_8txt.html#a3e7d4641543facc3636610e6931531d0',1,'ThirdPartyNotices.txt']]],
   ['replaynumber_18',['replayNumber',['../struct_h_a_l___match_info.html#af51a5019e4855d652c759b1462fa9ad6',1,'HAL_MatchInfo']]],
   ['reproduce_19',['reproduce',['../_third_party_notices_8txt.html#a785699b18e0dfd475a5b7265827c8a8f',1,'ThirdPartyNotices.txt']]],
@@ -32,7 +32,7 @@ var searchData=
   ['rgb_5fcolor_29',['rgb_color',['../unioncolor__type_1_1color__union.html#a84de6ad738e7559ada9b726f96768391',1,'color_type::color_union']]],
   ['rhsimpl_30',['rhsImpl',['../struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a4db03a8b189bf8f576fcd065f1ff742a',1,'Eigen::internal::binary_evaluator&lt; CwiseBinaryOp&lt; BinaryOp, Lhs, Rhs &gt;, IndexBased, IndexBased &gt;::Data']]],
   ['rhspacketx4_31',['RhsPacketx4',['../struct_eigen_1_1internal_1_1_rhs_panel_helper.html#ade10b9e7851fa1f338d096146a84c6ee',1,'Eigen::internal::RhsPanelHelper']]],
-  ['right_32',['right',['../structfrc_1_1_differential_drive_1_1_wheel_speeds.html#a51b18f50f0ed05cbcfe1f78f2422819f',1,'frc::DifferentialDrive::WheelSpeeds::right()'],['../structfrc_1_1_differential_drive_wheel_speeds.html#ae705f1cdac4e5bca951472a1a28ff671',1,'frc::DifferentialDriveWheelSpeeds::right()'],['../structfrc_1_1_killough_drive_1_1_wheel_speeds.html#a5fea4e4410679aa363d45f98421c04be',1,'frc::KilloughDrive::WheelSpeeds::right()'],['../structfrc_1_1_differential_drive_wheel_voltages.html#a228f1f3cfa21caa5943417d12c2473c7',1,'frc::DifferentialDriveWheelVoltages::right()']]],
+  ['right_32',['right',['../structfrc_1_1_differential_drive_wheel_voltages.html#a228f1f3cfa21caa5943417d12c2473c7',1,'frc::DifferentialDriveWheelVoltages::right()'],['../structfrc_1_1_differential_drive_wheel_speeds.html#ae705f1cdac4e5bca951472a1a28ff671',1,'frc::DifferentialDriveWheelSpeeds::right()'],['../structfrc_1_1_killough_drive_1_1_wheel_speeds.html#a5fea4e4410679aa363d45f98421c04be',1,'frc::KilloughDrive::WheelSpeeds::right()'],['../structfrc_1_1_differential_drive_1_1_wheel_speeds.html#a51b18f50f0ed05cbcfe1f78f2422819f',1,'frc::DifferentialDrive::WheelSpeeds::right()']]],
   ['round_5fstyle_33',['round_style',['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a18bfe69b2d6c764f391f11813f44c1a4',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::round_style()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a34e3af89fb70b7e14191f852e5a43d38',1,'std::numeric_limits&lt; Eigen::half &gt;::round_style()']]],
   ['row_34',['row',['../struct_eigen_1_1internal_1_1coeff__visitor.html#aaec19026273c975a85b1d539d4b7dbab',1,'Eigen::internal::coeff_visitor']]],
   ['rowmajorbit_35',['RowMajorBit',['../group__flags.html#gae4f56c2a60bbe4bd2e44c5b19cbe8762',1,'Eigen']]],
@@ -59,5 +59,8 @@ var searchData=
   ['ru_5fstime_56',['ru_stime',['../structuv__rusage__t.html#a50f0ca2be92785fe32d90723a84aad69',1,'uv_rusage_t']]],
   ['ru_5futime_57',['ru_utime',['../structuv__rusage__t.html#a2c1e5354f027137bdbac16331ea8b9c1',1,'uv_rusage_t']]],
   ['rutherford_58',['rutherford',['../namespaceunits.html#abf68555ff774a731596d78d548feafb7',1,'units']]],
-  ['rutherfords_59',['rutherfords',['../namespaceunits.html#af787df817626e177374bd13607be9a1f',1,'units']]]
+  ['rutherfords_59',['rutherfords',['../namespaceunits.html#af787df817626e177374bd13607be9a1f',1,'units']]],
+  ['rx_60',['rx',['../structfrc_1_1_twist3d.html#ade81b3a9c20fb20f306d90d659d963e4',1,'frc::Twist3d']]],
+  ['ry_61',['ry',['../structfrc_1_1_twist3d.html#a42f749cce4a30707935cb78e9518738c',1,'frc::Twist3d']]],
+  ['rz_62',['rz',['../structfrc_1_1_twist3d.html#ac8e4db2c83b18fa30b8dab01bcd17f36',1,'frc::Twist3d']]]
 ];

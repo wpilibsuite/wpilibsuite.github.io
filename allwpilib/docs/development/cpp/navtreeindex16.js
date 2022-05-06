@@ -96,6 +96,8 @@ var NAVTREEINDEX16 =
 "_pose2d_8h.html#a110eb6adc14c3cffe104abc63ea380c6":[6,0,6,4,0,1],
 "_pose2d_8h.html#aa084f2ee573258a862b973c9343ee02e":[6,0,6,4,0,2],
 "_pose2d_8h_source.html":[6,0,6,4,0],
+"_pose3d_8h.html":[6,0,6,4,1],
+"_pose3d_8h_source.html":[6,0,6,4,1],
 "_power_distribution_data_8h.html":[6,0,8,2,17],
 "_power_distribution_data_8h.html#a062e2a403ab8d96119e9345244286a99":[6,0,8,2,17,3],
 "_power_distribution_data_8h.html#a0d05e200fd0304be07a71aabee5d2fc1":[6,0,8,2,17,8],
@@ -152,6 +154,8 @@ var NAVTREEINDEX16 =
 "_proxy_schedule_command_8h_source.html":[6,0,7,0,22],
 "_q_r.html":[6,0,3,0,7],
 "_q_r.html#a4228aa0cc19e998982001afeb05f38dd":[6,0,3,0,7,0],
+"_quaternion_8h.html":[6,0,6,4,2],
+"_quaternion_8h_source.html":[6,0,6,4,2],
 "_quintic_hermite_spline_8h.html":[6,0,6,7,1],
 "_quintic_hermite_spline_8h_source.html":[6,0,6,7,1],
 "_r_e_v_p_h_8h.html":[6,0,8,39],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "_reshaped_helper_8h.html":[6,0,3,0,0,1,3,11],
 "_reshaped_helper_8h.html#a15e60c6e705186dfa2364e87ed110dff":[6,0,3,0,0,1,3,11,5],
 "_reshaped_helper_8h.html#a437637e1c1c90f4b96393827888b40ff":[6,0,3,0,0,1,3,11,4],
-"_reshaped_helper_8h.html#a7cbdfe304a8319af94184bc781f583be":[6,0,3,0,0,1,3,11,6],
-"_reshaped_helper_8h.html#aa6641573852afb7812d40effdb102dc0":[6,0,3,0,0,1,3,11,3],
-"_reshaped_helper_8h.html#aa6641573852afb7812d40effdb102dc0adc20cb6a2514f0a7c3504ede517cc268":[6,0,3,0,0,1,3,11,3,0],
-"_reshaped_helper_8h_source.html":[6,0,3,0,0,1,3,11],
-"_reshaped_methods_8h.html":[6,0,3,0,0,7,8]
+"_reshaped_helper_8h.html#a7cbdfe304a8319af94184bc781f583be":[6,0,3,0,0,1,3,11,6]
 };

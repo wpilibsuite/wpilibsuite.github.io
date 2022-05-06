@@ -41,8 +41,9 @@ var searchData=
   ['robotdrivebase_2eh_38',['RobotDriveBase.h',['../_robot_drive_base_8h.html',1,'']]],
   ['robotstate_2eh_39',['RobotState.h',['../_robot_state_8h.html',1,'']]],
   ['rotation2d_2eh_40',['Rotation2d.h',['../_rotation2d_8h.html',1,'']]],
-  ['rpccall_2eh_41',['RpcCall.h',['../_rpc_call_8h.html',1,'']]],
-  ['rpccall_2einc_42',['RpcCall.inc',['../_rpc_call_8inc.html',1,'']]],
-  ['runcommand_2eh_43',['RunCommand.h',['../_run_command_8h.html',1,'']]],
-  ['runtimetype_2eh_44',['RuntimeType.h',['../_runtime_type_8h.html',1,'']]]
+  ['rotation3d_2eh_41',['Rotation3d.h',['../_rotation3d_8h.html',1,'']]],
+  ['rpccall_2eh_42',['RpcCall.h',['../_rpc_call_8h.html',1,'']]],
+  ['rpccall_2einc_43',['RpcCall.inc',['../_rpc_call_8inc.html',1,'']]],
+  ['runcommand_2eh_44',['RunCommand.h',['../_run_command_8h.html',1,'']]],
+  ['runtimetype_2eh_45',['RuntimeType.h',['../_runtime_type_8h.html',1,'']]]
 ];

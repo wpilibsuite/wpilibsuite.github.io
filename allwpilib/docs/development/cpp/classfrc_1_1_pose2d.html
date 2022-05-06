@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-71-gb1abf45</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-76-g99424ad</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_pose2d.html',''); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a 2d pose containing translational and rotational elements.  
+<p>Represents a 2D pose containing translational and rotational elements.  
  <a href="classfrc_1_1_pose2d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_pose2d_8h_source.html">frc/geometry/Pose2d.h</a>&gt;</code></p>
@@ -112,7 +112,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abc3533e4d07108d85642d7e752f4c312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a pose with the specified translation and rotation.  <a href="classfrc_1_1_pose2d.html#abc3533e4d07108d85642d7e752f4c312">More...</a><br /></td></tr>
 <tr class="separator:abc3533e4d07108d85642d7e752f4c312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a327b6932b0eec4f08ce06904c939434b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose2d.html#a327b6932b0eec4f08ce06904c939434b">Pose2d</a> (units::meter_t x, units::meter_t y, <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> rotation)</td></tr>
-<tr class="memdesc:a327b6932b0eec4f08ce06904c939434b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience constructors that takes in x and y values directly instead of having to construct a <a class="el" href="classfrc_1_1_translation2d.html" title="Represents a translation in 2d space.">Translation2d</a>.  <a href="classfrc_1_1_pose2d.html#a327b6932b0eec4f08ce06904c939434b">More...</a><br /></td></tr>
+<tr class="memdesc:a327b6932b0eec4f08ce06904c939434b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a pose with x and y translations instead of a separate <a class="el" href="classfrc_1_1_translation2d.html" title="Represents a translation in 2D space.">Translation2d</a>.  <a href="classfrc_1_1_pose2d.html#a327b6932b0eec4f08ce06904c939434b">More...</a><br /></td></tr>
 <tr class="separator:a327b6932b0eec4f08ce06904c939434b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f5c1faa456c95579a9d0369da15f203"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose2d.html#a1f5c1faa456c95579a9d0369da15f203">operator+</a> (const <a class="el" href="classfrc_1_1_transform2d.html">Transform2d</a> &amp;other) const</td></tr>
 <tr class="memdesc:a1f5c1faa456c95579a9d0369da15f203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the pose by the given transformation and returns the new transformed pose.  <a href="classfrc_1_1_pose2d.html#a1f5c1faa456c95579a9d0369da15f203">More...</a><br /></td></tr>
@@ -121,10 +121,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a08e349adffdba4f7a2fc1f9861b8040d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">Transform2d</a> that maps the one pose to another.  <a href="classfrc_1_1_pose2d.html#a08e349adffdba4f7a2fc1f9861b8040d">More...</a><br /></td></tr>
 <tr class="separator:a08e349adffdba4f7a2fc1f9861b8040d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fae46630528c38f60c221e481fb5f34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose2d.html#a5fae46630528c38f60c221e481fb5f34">operator==</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;other) const</td></tr>
-<tr class="memdesc:a5fae46630528c38f60c221e481fb5f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks equality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> and another object.  <a href="classfrc_1_1_pose2d.html#a5fae46630528c38f60c221e481fb5f34">More...</a><br /></td></tr>
+<tr class="memdesc:a5fae46630528c38f60c221e481fb5f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks equality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a> and another object.  <a href="classfrc_1_1_pose2d.html#a5fae46630528c38f60c221e481fb5f34">More...</a><br /></td></tr>
 <tr class="separator:a5fae46630528c38f60c221e481fb5f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9640e9ef27bca8448c969490342d5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose2d.html#a4e9640e9ef27bca8448c969490342d5d">operator!=</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;other) const</td></tr>
-<tr class="memdesc:a4e9640e9ef27bca8448c969490342d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks inequality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> and another object.  <a href="classfrc_1_1_pose2d.html#a4e9640e9ef27bca8448c969490342d5d">More...</a><br /></td></tr>
+<tr class="memdesc:a4e9640e9ef27bca8448c969490342d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks inequality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a> and another object.  <a href="classfrc_1_1_pose2d.html#a4e9640e9ef27bca8448c969490342d5d">More...</a><br /></td></tr>
 <tr class="separator:a4e9640e9ef27bca8448c969490342d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94d982c067ee1e27a817e25a966805a6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_translation2d.html">Translation2d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose2d.html#a94d982c067ee1e27a817e25a966805a6">Translation</a> () const</td></tr>
 <tr class="memdesc:a94d982c067ee1e27a817e25a966805a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying translation.  <a href="classfrc_1_1_pose2d.html#a94d982c067ee1e27a817e25a966805a6">More...</a><br /></td></tr>
@@ -145,14 +145,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab922c422989dfa732d5059b6ef787e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the other pose relative to the current pose.  <a href="classfrc_1_1_pose2d.html#ab922c422989dfa732d5059b6ef787e91">More...</a><br /></td></tr>
 <tr class="separator:ab922c422989dfa732d5059b6ef787e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a3cfff8496785a2e521bc066ef20fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose2d.html#a6a3cfff8496785a2e521bc066ef20fb2">Exp</a> (const <a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a> &amp;twist) const</td></tr>
-<tr class="memdesc:a6a3cfff8496785a2e521bc066ef20fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a new <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> from a (constant curvature) velocity.  <a href="classfrc_1_1_pose2d.html#a6a3cfff8496785a2e521bc066ef20fb2">More...</a><br /></td></tr>
+<tr class="memdesc:a6a3cfff8496785a2e521bc066ef20fb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a new <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a> from a (constant curvature) velocity.  <a href="classfrc_1_1_pose2d.html#a6a3cfff8496785a2e521bc066ef20fb2">More...</a><br /></td></tr>
 <tr class="separator:a6a3cfff8496785a2e521bc066ef20fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a230f05ea41c4fa44ff24622638aa20c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose2d.html#a230f05ea41c4fa44ff24622638aa20c7">Log</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;end) const</td></tr>
-<tr class="memdesc:a230f05ea41c4fa44ff24622638aa20c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along arc since the last pose update.">Twist2d</a> that maps this pose to the end pose.  <a href="classfrc_1_1_pose2d.html#a230f05ea41c4fa44ff24622638aa20c7">More...</a><br /></td></tr>
+<tr class="memdesc:a230f05ea41c4fa44ff24622638aa20c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a> that maps this pose to the end pose.  <a href="classfrc_1_1_pose2d.html#a230f05ea41c4fa44ff24622638aa20c7">More...</a><br /></td></tr>
 <tr class="separator:a230f05ea41c4fa44ff24622638aa20c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Represents a 2d pose containing translational and rotational elements. </p>
+<div class="textblock"><p >Represents a 2D pose containing translational and rotational elements. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2602351065049e16f8e3cc19956eb85d" name="a2602351065049e16f8e3cc19956eb85d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2602351065049e16f8e3cc19956eb85d">&#9670;&nbsp;</a></span>Pose2d() <span class="overload">[1/3]</span></h2>
@@ -178,7 +178,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a pose at the origin facing toward the positive X axis. </p>
-<p >(<a class="el" href="classfrc_1_1_translation2d.html" title="Represents a translation in 2d space.">Translation2d</a>{0, 0} and Rotation{0}) </p>
 
 </div>
 </div>
@@ -251,7 +250,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convenience constructors that takes in x and y values directly instead of having to construct a <a class="el" href="classfrc_1_1_translation2d.html" title="Represents a translation in 2d space.">Translation2d</a>. </p>
+<p>Constructs a pose with x and y translations instead of a separate <a class="el" href="classfrc_1_1_translation2d.html" title="Represents a translation in 2D space.">Translation2d</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>The x component of the translational component of the pose. </td></tr>
@@ -280,13 +279,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Obtain a new <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> from a (constant curvature) velocity. </p>
+<p>Obtain a new <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a> from a (constant curvature) velocity. </p>
 <p >See <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a> section 10.2 "Pose exponential" for a derivation.</p>
 <p >The twist is a change in pose in the robot's coordinate frame since the previous pose update. When the user runs <a class="el" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2" title="Compute exponential function.">exp()</a> on the previous known field-relative pose with the argument being the twist, the user will receive the new field-relative pose.</p>
 <p >"Exp" represents the pose exponential, which is solving a differential equation moving the pose forward in time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">twist</td><td>The change in pose in the robot's coordinate frame since the previous pose update. For example, if a non-holonomic robot moves forward 0.01 meters and changes angle by 0.5 degrees since the previous pose update, the twist would be <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along arc since the last pose update.">Twist2d</a>{0.01, 0.0, toRadians(0.5)}</td></tr>
+    <tr><td class="paramname">twist</td><td>The change in pose in the robot's coordinate frame since the previous pose update. For example, if a non-holonomic robot moves forward 0.01 meters and changes angle by 0.5 degrees since the previous pose update, the twist would be <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a>{0.01_m, 0_m, 0.5_deg}.</td></tr>
   </table>
   </dd>
 </dl>
@@ -310,7 +309,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along arc since the last pose update.">Twist2d</a> that maps this pose to the end pose. </p>
+<p>Returns a <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a> that maps this pose to the end pose. </p>
 <p >If c is the output of a.Log(b), then a.Exp(c) would yield b.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -338,7 +337,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks inequality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> and another object. </p>
+<p>Checks inequality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a> and another object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>The other object. </td></tr>
@@ -366,8 +365,11 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Transforms the pose by the given transformation and returns the new transformed pose. </p>
-<p >[x_new] [cos, -sin, 0][transform.x] [y_new] += [sin, cos, 0][transform.y] [t_new] [0, 0, 1][transform.t]</p>
-<dl class="params"><dt>Parameters</dt><dd>
+<pre>
+[x_new]    [cos, -sin, 0][transform.x]
+[y_new] += [sin,  cos, 0][transform.y]
+[t_new]    [  0,    0, 1][transform.t]
+</pre><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>The transform to transform the pose by.</td></tr>
   </table>
@@ -420,7 +422,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks equality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> and another object. </p>
+<p>Checks equality between this <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a> and another object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>The other object. </td></tr>
@@ -608,7 +610,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a></li>
-    <li class="footer">Generated on Thu May 5 2022 05:09:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 6 2022 15:48:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
