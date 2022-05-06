@@ -350,19 +350,21 @@
 <span class="sourceLineNo">338</span><a id="line.338"></a>
 <span class="sourceLineNo">339</span><a id="line.339">  /** Resets the previous error and the integral term. */</a>
 <span class="sourceLineNo">340</span><a id="line.340">  public void reset() {</a>
-<span class="sourceLineNo">341</span><a id="line.341">    m_prevError = 0;</a>
-<span class="sourceLineNo">342</span><a id="line.342">    m_totalError = 0;</a>
-<span class="sourceLineNo">343</span><a id="line.343">  }</a>
-<span class="sourceLineNo">344</span><a id="line.344"></a>
-<span class="sourceLineNo">345</span><a id="line.345">  @Override</a>
-<span class="sourceLineNo">346</span><a id="line.346">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">347</span><a id="line.347">    builder.setSmartDashboardType("PIDController");</a>
-<span class="sourceLineNo">348</span><a id="line.348">    builder.addDoubleProperty("p", this::getP, this::setP);</a>
-<span class="sourceLineNo">349</span><a id="line.349">    builder.addDoubleProperty("i", this::getI, this::setI);</a>
-<span class="sourceLineNo">350</span><a id="line.350">    builder.addDoubleProperty("d", this::getD, this::setD);</a>
-<span class="sourceLineNo">351</span><a id="line.351">    builder.addDoubleProperty("setpoint", this::getSetpoint, this::setSetpoint);</a>
-<span class="sourceLineNo">352</span><a id="line.352">  }</a>
-<span class="sourceLineNo">353</span><a id="line.353">}</a>
+<span class="sourceLineNo">341</span><a id="line.341">    m_positionError = 0;</a>
+<span class="sourceLineNo">342</span><a id="line.342">    m_prevError = 0;</a>
+<span class="sourceLineNo">343</span><a id="line.343">    m_totalError = 0;</a>
+<span class="sourceLineNo">344</span><a id="line.344">    m_velocityError = 0;</a>
+<span class="sourceLineNo">345</span><a id="line.345">  }</a>
+<span class="sourceLineNo">346</span><a id="line.346"></a>
+<span class="sourceLineNo">347</span><a id="line.347">  @Override</a>
+<span class="sourceLineNo">348</span><a id="line.348">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">349</span><a id="line.349">    builder.setSmartDashboardType("PIDController");</a>
+<span class="sourceLineNo">350</span><a id="line.350">    builder.addDoubleProperty("p", this::getP, this::setP);</a>
+<span class="sourceLineNo">351</span><a id="line.351">    builder.addDoubleProperty("i", this::getI, this::setI);</a>
+<span class="sourceLineNo">352</span><a id="line.352">    builder.addDoubleProperty("d", this::getD, this::setD);</a>
+<span class="sourceLineNo">353</span><a id="line.353">    builder.addDoubleProperty("setpoint", this::getSetpoint, this::setSetpoint);</a>
+<span class="sourceLineNo">354</span><a id="line.354">  }</a>
+<span class="sourceLineNo">355</span><a id="line.355">}</a>
 
 
 
