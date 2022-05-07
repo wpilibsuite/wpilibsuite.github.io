@@ -6,5 +6,6 @@ var searchData=
   ['completeorthogonaldecomposition_3c_20matrixtype_20_3e_3',['CompleteOrthogonalDecomposition&lt; MatrixType &gt;',['../class_eigen_1_1_col_piv_householder_q_r.html#a6c741054e65697365ce75f1bbec5802b',1,'Eigen::ColPivHouseholderQR']]],
   ['connection_4',['Connection',['../classwpi_1_1sig_1_1_connection_blocker.html#a54a11fdc71e1679a42fa0c0e3856673d',1,'wpi::sig::ConnectionBlocker']]],
   ['constbuffercallbackstorethunk_5',['ConstBufferCallbackStoreThunk',['../classfrc_1_1sim_1_1_callback_store.html#af802c1e1195fa63820eeb02b8c300c1a',1,'frc::sim::CallbackStore']]],
-  ['cubichermitesplinetest_6',['CubicHermiteSplineTest',['../classfrc_1_1_spline_parameterizer.html#af4af9bb9a43b7a7c2bc0423790f7130e',1,'frc::SplineParameterizer']]]
+  ['coordinatesystem_6',['CoordinateSystem',['../classfrc_1_1_coordinate_axis.html#a774564eead5b09383aa5baf3ea56af05',1,'frc::CoordinateAxis']]],
+  ['cubichermitesplinetest_7',['CubicHermiteSplineTest',['../classfrc_1_1_spline_parameterizer.html#af4af9bb9a43b7a7c2bc0423790f7130e',1,'frc::SplineParameterizer']]]
 ];

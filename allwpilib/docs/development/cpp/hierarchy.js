@@ -566,6 +566,8 @@ var hierarchy =
     [ "frc::Spline< Degree >::ControlVector", "structfrc_1_1_spline_1_1_control_vector.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, bool >", "structwpi_1_1java_1_1detail_1_1_convert_int_array.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, true >", "structwpi_1_1java_1_1detail_1_1_convert_int_array_3_01_t_00_01true_01_4.html", null ],
+    [ "frc::CoordinateAxis", "classfrc_1_1_coordinate_axis.html", null ],
+    [ "frc::CoordinateSystem", "classfrc_1_1_coordinate_system.html", null ],
     [ "Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling< Kernel, Index, Stop >", "struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html", null ],
     [ "Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling< Kernel, Stop, Stop >", "struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling_3_01c1b4c78ce0d389049a18ce1f9fdd8138.html", null ],
     [ "Eigen::internal::copy_using_evaluator_DefaultTraversal_InnerUnrolling< Kernel, Index_, Stop >", "struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___inner_unrolling.html", null ],

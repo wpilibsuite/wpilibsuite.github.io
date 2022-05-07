@@ -1,5 +1,11 @@
 var dir_9cba4c2fd20eab804c2f7cd73063f328 =
 [
+    [ "CoordinateAxis.h", "_coordinate_axis_8h.html", [
+      [ "frc::CoordinateAxis", "classfrc_1_1_coordinate_axis.html", "classfrc_1_1_coordinate_axis" ]
+    ] ],
+    [ "CoordinateSystem.h", "_coordinate_system_8h.html", [
+      [ "frc::CoordinateSystem", "classfrc_1_1_coordinate_system.html", "classfrc_1_1_coordinate_system" ]
+    ] ],
     [ "Pose2d.h", "_pose2d_8h.html", "_pose2d_8h" ],
     [ "Pose3d.h", "_pose3d_8h.html", [
       [ "frc::Pose3d", "classfrc_1_1_pose3d.html", "classfrc_1_1_pose3d" ]

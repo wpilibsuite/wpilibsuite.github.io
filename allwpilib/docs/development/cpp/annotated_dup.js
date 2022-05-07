@@ -1843,6 +1843,8 @@ var annotated_dup =
       [ "Compressor", "classfrc_1_1_compressor.html", "classfrc_1_1_compressor" ],
       [ "ControlAffinePlantInversionFeedforward", "classfrc_1_1_control_affine_plant_inversion_feedforward.html", "classfrc_1_1_control_affine_plant_inversion_feedforward" ],
       [ "Controller", "classfrc_1_1_controller.html", "classfrc_1_1_controller" ],
+      [ "CoordinateAxis", "classfrc_1_1_coordinate_axis.html", "classfrc_1_1_coordinate_axis" ],
+      [ "CoordinateSystem", "classfrc_1_1_coordinate_system.html", "classfrc_1_1_coordinate_system" ],
       [ "Counter", "classfrc_1_1_counter.html", "classfrc_1_1_counter" ],
       [ "CounterBase", "classfrc_1_1_counter_base.html", "classfrc_1_1_counter_base" ],
       [ "CubicHermiteSpline", "classfrc_1_1_cubic_hermite_spline.html", "classfrc_1_1_cubic_hermite_spline" ],
