@@ -108,12 +108,10 @@ var searchData=
   ['get_5ffixed_5fvalue_3c_20variable_5fif_5fdynamic_3c_20t_2c_20n_20_3e_2c_20default_20_3e_105',['get_fixed_value&lt; variable_if_dynamic&lt; T, N &gt;, Default &gt;',['../struct_eigen_1_1internal_1_1get__fixed__value_3_01variable__if__dynamic_3_01_t_00_01_n_01_4_00_01_default_01_4.html',1,'Eigen::internal']]],
   ['get_5ffixed_5fvalue_3c_20variableandfixedint_3c_20n_20_3e_2c_20default_20_3e_106',['get_fixed_value&lt; VariableAndFixedInt&lt; N &gt;, Default &gt;',['../struct_eigen_1_1internal_1_1get__fixed__value_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_default_01_4.html',1,'Eigen::internal']]],
   ['get_5flocale_107',['get_locale',['../classget__locale.html',1,'']]],
-  ['getaddrinforeq_108',['GetAddrInfoReq',['../classwpi_1_1uv_1_1_get_addr_info_req.html',1,'wpi::uv']]],
-  ['getnameinforeq_109',['GetNameInfoReq',['../classwpi_1_1uv_1_1_get_name_info_req.html',1,'wpi::uv']]],
-  ['global_5fmath_5ffunctions_5ffiltering_5fbase_110',['global_math_functions_filtering_base',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base.html',1,'Eigen::internal']]],
-  ['global_5fmath_5ffunctions_5ffiltering_5fbase_3c_20t_2c_20typename_20always_5fvoid_3c_20typename_20t_3a_3aeigen_5fbaseclassforspecializationofglobalmathfuncimpl_20_3e_3a_3atype_20_3e_111',['global_math_functions_filtering_base&lt; T, typename always_void&lt; typename T::Eigen_BaseClassForSpecializationOfGlobalMathFuncImpl &gt;::type &gt;',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base_3_01_t_00_01typename_01alwa3a21a82d868fc50f3fc9fd9dd230c694.html',1,'Eigen::internal']]],
-  ['glue_5fshapes_112',['glue_shapes',['../struct_eigen_1_1internal_1_1glue__shapes.html',1,'Eigen::internal']]],
-  ['glue_5fshapes_3c_20denseshape_2c_20triangularshape_20_3e_113',['glue_shapes&lt; DenseShape, TriangularShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_dense_shape_00_01_triangular_shape_01_4.html',1,'Eigen::internal']]],
-  ['group_5fdigits_5fview_114',['group_digits_view',['../structgroup__digits__view.html',1,'']]],
-  ['gyro_115',['Gyro',['../classfrc_1_1_gyro.html',1,'frc']]]
+  ['global_5fmath_5ffunctions_5ffiltering_5fbase_108',['global_math_functions_filtering_base',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base.html',1,'Eigen::internal']]],
+  ['global_5fmath_5ffunctions_5ffiltering_5fbase_3c_20t_2c_20typename_20always_5fvoid_3c_20typename_20t_3a_3aeigen_5fbaseclassforspecializationofglobalmathfuncimpl_20_3e_3a_3atype_20_3e_109',['global_math_functions_filtering_base&lt; T, typename always_void&lt; typename T::Eigen_BaseClassForSpecializationOfGlobalMathFuncImpl &gt;::type &gt;',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base_3_01_t_00_01typename_01alwa3a21a82d868fc50f3fc9fd9dd230c694.html',1,'Eigen::internal']]],
+  ['glue_5fshapes_110',['glue_shapes',['../struct_eigen_1_1internal_1_1glue__shapes.html',1,'Eigen::internal']]],
+  ['glue_5fshapes_3c_20denseshape_2c_20triangularshape_20_3e_111',['glue_shapes&lt; DenseShape, TriangularShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_dense_shape_00_01_triangular_shape_01_4.html',1,'Eigen::internal']]],
+  ['group_5fdigits_5fview_112',['group_digits_view',['../structgroup__digits__view.html',1,'']]],
+  ['gyro_113',['Gyro',['../classfrc_1_1_gyro.html',1,'frc']]]
 ];

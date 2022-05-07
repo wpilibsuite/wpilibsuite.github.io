@@ -12,6 +12,5 @@ var searchData=
   ['support_9',['support',['../namespacewpi_1_1support.html',1,'wpi']]],
   ['sys_10',['sys',['../namespacewpi_1_1sys.html',1,'wpi']]],
   ['trait_11',['trait',['../namespacewpi_1_1sig_1_1trait.html',1,'wpi::sig']]],
-  ['uv_12',['uv',['../namespacewpi_1_1uv.html',1,'wpi']]],
-  ['wpi_13',['wpi',['../namespacewpi.html',1,'']]]
+  ['wpi_12',['wpi',['../namespacewpi.html',1,'']]]
 ];

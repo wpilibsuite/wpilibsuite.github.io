@@ -3,7 +3,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "fmt", "dir_01760b1104b35a6fd322a027d9259ea5.html", "dir_01760b1104b35a6fd322a027d9259ea5" ],
     [ "ghc", "dir_1e83498808adc8ad9629ea2e4946666a.html", "dir_1e83498808adc8ad9629ea2e4946666a" ],
     [ "sendable", "dir_66b42d2eb6c651d815a5f70399c9ed10.html", "dir_66b42d2eb6c651d815a5f70399c9ed10" ],
-    [ "uv", "dir_25302867c2307ab8d43a1b1d664c1ea4.html", "dir_25302867c2307ab8d43a1b1d664c1ea4" ],
     [ "Algorithm.h", "_algorithm_8h.html", "_algorithm_8h" ],
     [ "AlignOf.h", "_align_of_8h.html", [
       [ "wpi::AlignedCharArray< Alignment, Size >", "structwpi_1_1_aligned_char_array.html", "structwpi_1_1_aligned_char_array" ],
@@ -60,20 +59,14 @@ var dir_1224104d412225b996ab6dfa83431a88 =
       [ "wpi::DenseMapInfo< hash_code >", "structwpi_1_1_dense_map_info_3_01hash__code_01_4.html", "structwpi_1_1_dense_map_info_3_01hash__code_01_4" ]
     ] ],
     [ "deprecated.h", "deprecated_8h.html", null ],
-    [ "DsClient.h", "_ds_client_8h.html", [
-      [ "wpi::DsClient", "classwpi_1_1_ds_client.html", "classwpi_1_1_ds_client" ]
-    ] ],
     [ "Endian.h", "_endian_8h.html", "_endian_8h" ],
     [ "EpochTracker.h", "_epoch_tracker_8h.html", [
       [ "wpi::DebugEpochBase", "classwpi_1_1_debug_epoch_base.html", "classwpi_1_1_debug_epoch_base" ],
       [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1_debug_epoch_base_1_1_handle_base.html", "classwpi_1_1_debug_epoch_base_1_1_handle_base" ]
     ] ],
     [ "Errc.h", "_errc_8h.html", "_errc_8h" ],
-    [ "Errno.h", "include_2wpi_2_errno_8h.html", "include_2wpi_2_errno_8h" ],
+    [ "Errno.h", "_errno_8h.html", "_errno_8h" ],
     [ "ErrorHandling.h", "_error_handling_8h.html", "_error_handling_8h" ],
-    [ "EventLoopRunner.h", "_event_loop_runner_8h.html", [
-      [ "wpi::EventLoopRunner", "classwpi_1_1_event_loop_runner.html", "classwpi_1_1_event_loop_runner" ]
-    ] ],
     [ "fs.h", "fs_8h.html", "fs_8h" ],
     [ "function_ref.h", "function__ref_8h.html", [
       [ "wpi::function_ref< Ret(Params...)>", "classwpi_1_1function__ref_3_01_ret_07_params_8_8_8_08_4.html", "classwpi_1_1function__ref_3_01_ret_07_params_8_8_8_08_4" ]
@@ -84,20 +77,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     ] ],
     [ "future.h", "future_8h.html", "future_8h" ],
     [ "Hashing.h", "_hashing_8h.html", "_hashing_8h" ],
-    [ "hostname.h", "hostname_8h.html", "hostname_8h" ],
-    [ "http_parser.h", "http__parser_8h.html", "http__parser_8h" ],
-    [ "HttpParser.h", "_http_parser_8h.html", [
-      [ "wpi::HttpParser", "classwpi_1_1_http_parser.html", "classwpi_1_1_http_parser" ]
-    ] ],
-    [ "HttpServerConnection.h", "_http_server_connection_8h.html", [
-      [ "wpi::HttpServerConnection", "classwpi_1_1_http_server_connection.html", "classwpi_1_1_http_server_connection" ]
-    ] ],
-    [ "HttpUtil.h", "_http_util_8h.html", "_http_util_8h" ],
-    [ "HttpUtil.inc", "_http_util_8inc.html", "_http_util_8inc" ],
-    [ "HttpWebSocketServerConnection.h", "_http_web_socket_server_connection_8h.html", [
-      [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1_http_web_socket_server_connection.html", "classwpi_1_1_http_web_socket_server_connection" ]
-    ] ],
-    [ "HttpWebSocketServerConnection.inc", "_http_web_socket_server_connection_8inc.html", "_http_web_socket_server_connection_8inc" ],
     [ "interpolating_map.h", "interpolating__map_8h.html", [
       [ "wpi::interpolating_map< Key, Value >", "classwpi_1_1interpolating__map.html", "classwpi_1_1interpolating__map" ]
     ] ],
@@ -122,25 +101,13 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "MathExtras.h", "_math_extras_8h.html", "_math_extras_8h" ],
     [ "MemAlloc.h", "_mem_alloc_8h.html", "_mem_alloc_8h" ],
     [ "MemoryBuffer.h", "_memory_buffer_8h.html", "_memory_buffer_8h" ],
-    [ "MimeTypes.h", "_mime_types_8h.html", "_mime_types_8h" ],
     [ "mpack.h", "mpack_8h.html", "mpack_8h" ],
-    [ "MulticastServiceAnnouncer.h", "_multicast_service_announcer_8h.html", "_multicast_service_announcer_8h" ],
-    [ "MulticastServiceResolver.h", "_multicast_service_resolver_8h.html", "_multicast_service_resolver_8h" ],
     [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
-    [ "NetworkAcceptor.h", "_network_acceptor_8h.html", [
-      [ "wpi::NetworkAcceptor", "classwpi_1_1_network_acceptor.html", "classwpi_1_1_network_acceptor" ]
-    ] ],
-    [ "NetworkStream.h", "_network_stream_8h.html", [
-      [ "wpi::NetworkStream", "classwpi_1_1_network_stream.html", "classwpi_1_1_network_stream" ]
-    ] ],
     [ "nodiscard.h", "nodiscard_8h.html", null ],
     [ "NullDeleter.h", "_null_deleter_8h.html", [
       [ "wpi::NullDeleter< T >", "structwpi_1_1_null_deleter.html", "structwpi_1_1_null_deleter" ]
     ] ],
     [ "numbers", "numbers.html", "numbers" ],
-    [ "ParallelTcpConnector.h", "_parallel_tcp_connector_8h.html", [
-      [ "wpi::ParallelTcpConnector", "classwpi_1_1_parallel_tcp_connector.html", "classwpi_1_1_parallel_tcp_connector" ]
-    ] ],
     [ "PointerIntPair.h", "_pointer_int_pair_8h.html", [
       [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1_pointer_int_pair.html", "classwpi_1_1_pointer_int_pair" ],
       [ "wpi::PointerIntPairInfo< PointerT, IntBits, PtrTraits >", "structwpi_1_1_pointer_int_pair_info.html", "structwpi_1_1_pointer_int_pair_info" ],
@@ -164,9 +131,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
       [ "wpi::PointerLikeTypeTraits< ReturnT(*)(ParamTs...)>", "structwpi_1_1_pointer_like_type_traits_3_01_return_t_07_5_08_07_param_ts_8_8_8_08_4.html", null ]
     ] ],
     [ "PointerUnion.h", "_pointer_union_8h.html", "_pointer_union_8h" ],
-    [ "PortForwarder.h", "_port_forwarder_8h.html", [
-      [ "wpi::PortForwarder", "classwpi_1_1_port_forwarder.html", "classwpi_1_1_port_forwarder" ]
-    ] ],
     [ "priority_mutex.h", "priority__mutex_8h.html", null ],
     [ "priority_queue.h", "priority__queue_8h.html", [
       [ "wpi::priority_queue< T, Sequence, Compare >", "classwpi_1_1priority__queue.html", "classwpi_1_1priority__queue" ]
@@ -180,15 +144,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
       [ "wpi::raw_os_ostream", "classwpi_1_1raw__os__ostream.html", "classwpi_1_1raw__os__ostream" ]
     ] ],
     [ "raw_ostream.h", "raw__ostream_8h.html", "raw__ostream_8h" ],
-    [ "raw_socket_istream.h", "raw__socket__istream_8h.html", [
-      [ "wpi::raw_socket_istream", "classwpi_1_1raw__socket__istream.html", "classwpi_1_1raw__socket__istream" ]
-    ] ],
-    [ "raw_socket_ostream.h", "raw__socket__ostream_8h.html", [
-      [ "wpi::raw_socket_ostream", "classwpi_1_1raw__socket__ostream.html", "classwpi_1_1raw__socket__ostream" ]
-    ] ],
-    [ "raw_uv_ostream.h", "raw__uv__ostream_8h.html", [
-      [ "wpi::raw_uv_ostream", "classwpi_1_1raw__uv__ostream.html", "classwpi_1_1raw__uv__ostream" ]
-    ] ],
     [ "SafeThread.h", "_safe_thread_8h.html", "_safe_thread_8h" ],
     [ "sha1.h", "sha1_8h.html", [
       [ "wpi::SHA1", "classwpi_1_1_s_h_a1.html", "classwpi_1_1_s_h_a1" ]
@@ -207,7 +162,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "SmallVectorMemoryBuffer.h", "_small_vector_memory_buffer_8h.html", [
       [ "wpi::SmallVectorMemoryBuffer", "classwpi_1_1_small_vector_memory_buffer.html", "classwpi_1_1_small_vector_memory_buffer" ]
     ] ],
-    [ "SocketError.h", "_socket_error_8h.html", "_socket_error_8h" ],
     [ "span.h", "span_8h.html", "span_8h" ],
     [ "SpanExtras.h", "_span_extras_8h.html", "_span_extras_8h" ],
     [ "spinlock.h", "spinlock_8h.html", "spinlock_8h" ],
@@ -222,39 +176,14 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "SwapByteOrder.h", "_swap_byte_order_8h.html", "_swap_byte_order_8h" ],
     [ "SymbolExports.h", "_symbol_exports_8h.html", "_symbol_exports_8h" ],
     [ "Synchronization.h", "_synchronization_8h.html", "_synchronization_8h" ],
-    [ "TCPAcceptor.h", "_t_c_p_acceptor_8h.html", [
-      [ "wpi::TCPAcceptor", "classwpi_1_1_t_c_p_acceptor.html", "classwpi_1_1_t_c_p_acceptor" ]
-    ] ],
-    [ "TCPConnector.h", "_t_c_p_connector_8h.html", [
-      [ "wpi::TCPConnector", "classwpi_1_1_t_c_p_connector.html", "classwpi_1_1_t_c_p_connector" ]
-    ] ],
-    [ "TCPStream.h", "_t_c_p_stream_8h.html", [
-      [ "wpi::TCPStream", "classwpi_1_1_t_c_p_stream.html", "classwpi_1_1_t_c_p_stream" ]
-    ] ],
     [ "timestamp.h", "timestamp_8h.html", "timestamp_8h" ],
     [ "type_traits.h", "type__traits_8h.html", "type__traits_8h" ],
-    [ "UDPClient.h", "_u_d_p_client_8h.html", [
-      [ "wpi::UDPClient", "classwpi_1_1_u_d_p_client.html", "classwpi_1_1_u_d_p_client" ]
-    ] ],
     [ "UidVector.h", "_uid_vector_8h.html", [
       [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1_uid_vector_iterator.html", "classwpi_1_1impl_1_1_uid_vector_iterator" ],
       [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1_uid_vector.html", "classwpi_1_1_uid_vector" ]
     ] ],
-    [ "UrlParser.h", "_url_parser_8h.html", [
-      [ "wpi::UrlParser", "classwpi_1_1_url_parser.html", "classwpi_1_1_url_parser" ]
-    ] ],
     [ "VersionTuple.h", "_version_tuple_8h.html", [
       [ "wpi::VersionTuple", "classwpi_1_1_version_tuple.html", "classwpi_1_1_version_tuple" ]
     ] ],
-    [ "WebSocket.h", "_web_socket_8h.html", [
-      [ "wpi::WebSocket", "classwpi_1_1_web_socket.html", "classwpi_1_1_web_socket" ],
-      [ "wpi::WebSocket::ClientOptions", "structwpi_1_1_web_socket_1_1_client_options.html", "structwpi_1_1_web_socket_1_1_client_options" ]
-    ] ],
-    [ "WebSocketServer.h", "_web_socket_server_8h.html", [
-      [ "wpi::WebSocketServerHelper", "classwpi_1_1_web_socket_server_helper.html", "classwpi_1_1_web_socket_server_helper" ],
-      [ "wpi::WebSocketServer", "classwpi_1_1_web_socket_server.html", "classwpi_1_1_web_socket_server" ],
-      [ "wpi::WebSocketServer::ServerOptions", "structwpi_1_1_web_socket_server_1_1_server_options.html", "structwpi_1_1_web_socket_server_1_1_server_options" ]
-    ] ],
-    [ "WindowsError.h", "_windows_error_8h.html", "_windows_error_8h" ],
-    [ "WorkerThread.h", "_worker_thread_8h.html", "_worker_thread_8h" ]
+    [ "WindowsError.h", "_windows_error_8h.html", "_windows_error_8h" ]
 ];

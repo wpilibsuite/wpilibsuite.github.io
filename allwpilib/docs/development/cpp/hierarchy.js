@@ -10,8 +10,6 @@ var hierarchy =
         [ "Eigen::half", "struct_eigen_1_1half.html", null ]
       ] ]
     ] ],
-    [ "_AFD_POLL_HANDLE_INFO", "struct___a_f_d___p_o_l_l___h_a_n_d_l_e___i_n_f_o.html", null ],
-    [ "_AFD_POLL_INFO", "struct___a_f_d___p_o_l_l___i_n_f_o.html", null ],
     [ "units::detail::_base_unit_t", null, [
       [ "units::base_unit< Meter, Kilogram, Second, Radian, Ampere, Kelvin, Mole, Candela, Byte >", "structunits_1_1base__unit.html", null ]
     ] ],
@@ -38,7 +36,6 @@ var hierarchy =
       [ "units::unit_value_subtract< U1, U2 >", "structunits_1_1unit__value__subtract.html", null ],
       [ "units::unit_value_t< Units, Num, Denom >", "structunits_1_1unit__value__t.html", null ]
     ] ],
-    [ "_uv_barrier", "struct__uv__barrier.html", null ],
     [ "Eigen::internal::abs2_impl< Scalar >", "struct_eigen_1_1internal_1_1abs2__impl.html", null ],
     [ "Eigen::internal::abs2_impl_default< Scalar, IsComplex >", "struct_eigen_1_1internal_1_1abs2__impl__default.html", null ],
     [ "Eigen::internal::abs2_impl_default< Scalar, true >", "struct_eigen_1_1internal_1_1abs2__impl__default_3_01_scalar_00_01true_01_4.html", null ],
@@ -179,7 +176,6 @@ var hierarchy =
     [ "Eigen::internal::AssignmentKind< DenseShape, TriangularShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_triangular_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< TriangularShape, DenseShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_dense_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< TriangularShape, TriangularShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_triangular_shape_01_4.html", null ],
-    [ "wpi::uv::AsyncFunction< T >", "classwpi_1_1uv_1_1_async_function.html", null ],
     [ "frc::AsynchronousInterrupt", "classfrc_1_1_asynchronous_interrupt.html", null ],
     [ "Eigen::internal::auto_diff_special_op< DerivativeType, Enable >", "struct_eigen_1_1internal_1_1auto__diff__special__op.html", null ],
     [ "Eigen::internal::auto_diff_special_op< DerivativeType, !internal::is_same< internal::traits< internal::remove_all< DerivativeType >::type >::Scalar, NumTraits< internal::traits< internal::remove_all< DerivativeType >::type >::Scalar >::Real >::value >", "struct_eigen_1_1internal_1_1auto__diff__special__op.html", [
@@ -385,7 +381,6 @@ var hierarchy =
     [ "Eigen::internal::cleanup_index_type< VariableAndFixedInt< DynamicKey >, DynamicKey >", "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_dynamic_key_01_4_00_01_dynamic_key_01_4.html", null ],
     [ "Eigen::internal::cleanup_index_type< VariableAndFixedInt< N >, DynamicKey >", "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_dynamic_key_01_4.html", null ],
     [ "Eigen::internal::cleanup_seq_incr< T >", "struct_eigen_1_1internal_1_1cleanup__seq__incr.html", null ],
-    [ "wpi::WebSocket::ClientOptions", "structwpi_1_1_web_socket_1_1_client_options.html", null ],
     [ "detail::codecvt_result< CodeUnit >", "structdetail_1_1codecvt__result.html", null ],
     [ "Eigen::internal::coeff_visitor< Derived >", "struct_eigen_1_1internal_1_1coeff__visitor.html", [
       [ "Eigen::internal::max_coeff_visitor< Derived, NaNPropagation >", "struct_eigen_1_1internal_1_1max__coeff__visitor.html", null ],
@@ -912,101 +907,11 @@ var hierarchy =
     [ "Eigen::internal::enable_if< true, T >", "struct_eigen_1_1internal_1_1enable__if_3_01true_00_01_t_01_4.html", null ],
     [ "Eigen::internal::enable_if_ref< T, Derived >", "struct_eigen_1_1internal_1_1enable__if__ref.html", null ],
     [ "Eigen::internal::enable_if_ref< Ref< T >, Derived >", "struct_eigen_1_1internal_1_1enable__if__ref_3_01_ref_3_01_t_01_4_00_01_derived_01_4.html", null ],
-    [ "std::enable_shared_from_this", null, [
-      [ "wpi::DsClient", "classwpi_1_1_ds_client.html", null ],
-      [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1_http_web_socket_server_connection.html", null ],
-      [ "wpi::ParallelTcpConnector", "classwpi_1_1_parallel_tcp_connector.html", null ],
-      [ "wpi::WebSocket", "classwpi_1_1_web_socket.html", null ],
-      [ "wpi::WebSocketServer", "classwpi_1_1_web_socket_server.html", null ],
-      [ "wpi::uv::Handle", "classwpi_1_1uv_1_1_handle.html", [
-        [ "wpi::uv::HandleImpl< Async< T... >, uv_async_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Async< T >", "classwpi_1_1uv_1_1_async.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Async<>, uv_async_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Async<>", "classwpi_1_1uv_1_1_async_3_4.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< AsyncFunction< R(T...)>, uv_async_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::AsyncFunction< R(T...)>", "classwpi_1_1uv_1_1_async_function_3_01_r_07_t_8_8_8_08_4.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Check, uv_check_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Check", "classwpi_1_1uv_1_1_check.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< FsEvent, uv_fs_event_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::FsEvent", "classwpi_1_1uv_1_1_fs_event.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Idle, uv_idle_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Idle", "classwpi_1_1uv_1_1_idle.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Poll, uv_poll_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Poll", "classwpi_1_1uv_1_1_poll.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Prepare, uv_prepare_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Prepare", "classwpi_1_1uv_1_1_prepare.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Process, uv_process_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Process", "classwpi_1_1uv_1_1_process.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Signal, uv_signal_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Signal", "classwpi_1_1uv_1_1_signal.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Timer, uv_timer_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Timer", "classwpi_1_1uv_1_1_timer.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< Udp, uv_udp_t >", "classwpi_1_1uv_1_1_handle_impl.html", [
-          [ "wpi::uv::Udp", "classwpi_1_1uv_1_1_udp.html", null ]
-        ] ],
-        [ "wpi::uv::HandleImpl< T, U >", "classwpi_1_1uv_1_1_handle_impl.html", null ],
-        [ "wpi::uv::Stream", "classwpi_1_1uv_1_1_stream.html", [
-          [ "wpi::uv::StreamImpl< Tty, uv_tty_t >", "classwpi_1_1uv_1_1_stream_impl.html", [
-            [ "wpi::uv::Tty", "classwpi_1_1uv_1_1_tty.html", null ]
-          ] ],
-          [ "wpi::uv::NetworkStream", "classwpi_1_1uv_1_1_network_stream.html", [
-            [ "wpi::uv::NetworkStreamImpl< Pipe, uv_pipe_t >", "classwpi_1_1uv_1_1_network_stream_impl.html", [
-              [ "wpi::uv::Pipe", "classwpi_1_1uv_1_1_pipe.html", null ]
-            ] ],
-            [ "wpi::uv::NetworkStreamImpl< Tcp, uv_tcp_t >", "classwpi_1_1uv_1_1_network_stream_impl.html", [
-              [ "wpi::uv::Tcp", "classwpi_1_1uv_1_1_tcp.html", null ]
-            ] ],
-            [ "wpi::uv::NetworkStreamImpl< T, U >", "classwpi_1_1uv_1_1_network_stream_impl.html", null ]
-          ] ],
-          [ "wpi::uv::StreamImpl< T, U >", "classwpi_1_1uv_1_1_stream_impl.html", null ]
-        ] ]
-      ] ],
-      [ "wpi::uv::Loop", "classwpi_1_1uv_1_1_loop.html", null ],
-      [ "wpi::uv::Request", "classwpi_1_1uv_1_1_request.html", [
-        [ "wpi::uv::RequestImpl< ConnectReq, uv_connect_t >", "classwpi_1_1uv_1_1_request_impl.html", [
-          [ "wpi::uv::ConnectReq", "classwpi_1_1uv_1_1_connect_req.html", [
-            [ "wpi::uv::PipeConnectReq", "classwpi_1_1uv_1_1_pipe_connect_req.html", null ],
-            [ "wpi::uv::TcpConnectReq", "classwpi_1_1uv_1_1_tcp_connect_req.html", null ]
-          ] ]
-        ] ],
-        [ "wpi::uv::RequestImpl< GetAddrInfoReq, uv_getaddrinfo_t >", "classwpi_1_1uv_1_1_request_impl.html", [
-          [ "wpi::uv::GetAddrInfoReq", "classwpi_1_1uv_1_1_get_addr_info_req.html", null ]
-        ] ],
-        [ "wpi::uv::RequestImpl< GetNameInfoReq, uv_getnameinfo_t >", "classwpi_1_1uv_1_1_request_impl.html", [
-          [ "wpi::uv::GetNameInfoReq", "classwpi_1_1uv_1_1_get_name_info_req.html", null ]
-        ] ],
-        [ "wpi::uv::RequestImpl< ShutdownReq, uv_shutdown_t >", "classwpi_1_1uv_1_1_request_impl.html", [
-          [ "wpi::uv::ShutdownReq", "classwpi_1_1uv_1_1_shutdown_req.html", null ]
-        ] ],
-        [ "wpi::uv::RequestImpl< UdpSendReq, uv_udp_send_t >", "classwpi_1_1uv_1_1_request_impl.html", [
-          [ "wpi::uv::UdpSendReq", "classwpi_1_1uv_1_1_udp_send_req.html", null ]
-        ] ],
-        [ "wpi::uv::RequestImpl< WorkReq, uv_work_t >", "classwpi_1_1uv_1_1_request_impl.html", [
-          [ "wpi::uv::WorkReq", "classwpi_1_1uv_1_1_work_req.html", null ]
-        ] ],
-        [ "wpi::uv::RequestImpl< WriteReq, uv_write_t >", "classwpi_1_1uv_1_1_request_impl.html", [
-          [ "wpi::uv::WriteReq", "classwpi_1_1uv_1_1_write_req.html", null ]
-        ] ],
-        [ "wpi::uv::RequestImpl< T, U >", "classwpi_1_1uv_1_1_request_impl.html", null ]
-      ] ]
-    ] ],
     [ "Eigen::internal::EnableIf< bool >", "struct_eigen_1_1internal_1_1_enable_if.html", null ],
     [ "frc::sim::EncoderSim", "classfrc_1_1sim_1_1_encoder_sim.html", null ],
     [ "nt::EntryInfo", "structnt_1_1_entry_info.html", null ],
     [ "nt::EntryNotification", "classnt_1_1_entry_notification.html", null ],
     [ "Eigen::numext::equal_to< T >", "struct_eigen_1_1numext_1_1equal__to.html", null ],
-    [ "wpi::uv::Error", "classwpi_1_1uv_1_1_error.html", null ],
     [ "detail::error_handler", null, [
       [ "basic_format_parse_context< Char, ErrorHandler >", "classbasic__format__parse__context.html", [
         [ "compile_parse_context< Char, ErrorHandler >", "classcompile__parse__context.html", null ],
@@ -1131,7 +1036,6 @@ var hierarchy =
     [ "Eigen::internal::evaluator_traits_base< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits__base.html", [
       [ "Eigen::internal::evaluator_traits< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_householder_sequence_3_01_vectors_type_00_01_5d5adf52607be62fe2f73ff93bacbb36.html", null ]
     ] ],
-    [ "wpi::EventLoopRunner", "classwpi_1_1_event_loop_runner.html", null ],
     [ "std::exception", null, [
       [ "wpi::detail::exception", "classwpi_1_1detail_1_1exception.html", [
         [ "wpi::detail::invalid_iterator", "classwpi_1_1detail_1_1invalid__iterator.html", null ],
@@ -1616,25 +1520,10 @@ var hierarchy =
     [ "Eigen::internal::HouseholderSequenceShape", "struct_eigen_1_1internal_1_1_householder_sequence_shape.html", null ],
     [ "Eigen::internal::hseq_side_dependent_impl< VectorsType, CoeffsType, Side >", "struct_eigen_1_1internal_1_1hseq__side__dependent__impl.html", null ],
     [ "Eigen::internal::hseq_side_dependent_impl< VectorsType, CoeffsType, OnTheRight >", "struct_eigen_1_1internal_1_1hseq__side__dependent__impl_3_01_vectors_type_00_01_coeffs_type_00_01_on_the_right_01_4.html", null ],
-    [ "wpi::http_parser", "structwpi_1_1http__parser.html", null ],
-    [ "wpi::http_parser_settings", "structwpi_1_1http__parser__settings.html", null ],
-    [ "wpi::http_parser_url", "structwpi_1_1http__parser__url.html", null ],
-    [ "wpi::HttpConnection", "classwpi_1_1_http_connection.html", null ],
-    [ "wpi::HttpLocation", "classwpi_1_1_http_location.html", null ],
-    [ "wpi::HttpMultipartScanner", "classwpi_1_1_http_multipart_scanner.html", null ],
-    [ "wpi::HttpParser", "classwpi_1_1_http_parser.html", null ],
-    [ "wpi::HttpPath", "classwpi_1_1_http_path.html", null ],
-    [ "wpi::HttpPathRef", "classwpi_1_1_http_path_ref.html", null ],
-    [ "wpi::HttpQueryMap", "classwpi_1_1_http_query_map.html", null ],
-    [ "wpi::HttpRequest", "classwpi_1_1_http_request.html", null ],
-    [ "wpi::HttpServerConnection", "classwpi_1_1_http_server_connection.html", [
-      [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1_http_web_socket_server_connection.html", null ]
-    ] ],
     [ "Eigen::Hyperplane< _Scalar, _AmbientDim, Options >", "class_eigen_1_1_hyperplane.html", null ],
     [ "Eigen::internal::hypot_impl< Scalar >", "struct_eigen_1_1internal_1_1hypot__impl.html", null ],
     [ "Eigen::internal::hypot_retval< Scalar >", "struct_eigen_1_1internal_1_1hypot__retval.html", null ],
     [ "frc::I2C", "classfrc_1_1_i2_c.html", null ],
-    [ "ifaddrs", "structifaddrs.html", null ],
     [ "Eigen::internal::imag_default_impl< Scalar, IsComplex >", "struct_eigen_1_1internal_1_1imag__default__impl.html", [
       [ "Eigen::internal::imag_impl< Scalar >", "struct_eigen_1_1internal_1_1imag__impl.html", null ]
     ] ],
@@ -2111,12 +2000,6 @@ var hierarchy =
     [ "NColsBlockXpr< N >", "struct_n_cols_block_xpr.html", null ],
     [ "Eigen::internal::nested_eval< T, n, PlainObject >", "struct_eigen_1_1internal_1_1nested__eval.html", null ],
     [ "Eigen::internal::nested_eval< ReturnByValue< Derived >, n, PlainObject >", "struct_eigen_1_1internal_1_1nested__eval_3_01_return_by_value_3_01_derived_01_4_00_01n_00_01_plain_object_01_4.html", null ],
-    [ "wpi::NetworkAcceptor", "classwpi_1_1_network_acceptor.html", [
-      [ "wpi::TCPAcceptor", "classwpi_1_1_t_c_p_acceptor.html", null ]
-    ] ],
-    [ "wpi::NetworkStream", "classwpi_1_1_network_stream.html", [
-      [ "wpi::TCPStream", "classwpi_1_1_t_c_p_stream.html", null ]
-    ] ],
     [ "nt::NetworkTable", "classnt_1_1_network_table.html", null ],
     [ "nt::NetworkTableEntry", "classnt_1_1_network_table_entry.html", null ],
     [ "nt::NetworkTableInstance", "classnt_1_1_network_table_instance.html", null ],
@@ -2243,7 +2126,6 @@ var hierarchy =
       [ "Eigen::internal::bitwise_helper< T, typename internal::enable_if< is_scalar< T >::value &&(NumTraits< T >::IsInteger||NumTraits< T >::RequireInitialization)>::type >", "struct_eigen_1_1internal_1_1bitwise__helper_3_01_t_00_01typename_01internal_1_1enable__if_3_01is511f9b17390a86cf8902d79021239f89.html", null ]
     ] ],
     [ "Eigen::VectorwiseOp< ExpressionType, Direction >::OppositeExtendedType< OtherDerived >", "struct_eigen_1_1_vectorwise_op_1_1_opposite_extended_type.html", null ],
-    [ "wpi::uv::Process::Option", "structwpi_1_1uv_1_1_process_1_1_option.html", null ],
     [ "Eigen::internal::outer_stride_at_compile_time< Derived, HasDirectAccess >", "struct_eigen_1_1internal_1_1outer__stride__at__compile__time.html", null ],
     [ "Eigen::internal::outer_stride_at_compile_time< Derived, false >", "struct_eigen_1_1internal_1_1outer__stride__at__compile__time_3_01_derived_00_01false_01_4.html", null ],
     [ "wpi::unique_function< ReturnT(ParamTs...)>::StorageUnionT::OutOfLineStorageT", "structwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4_1_1_storage_union_t_1_1_out_of_line_storage_t.html", null ],
@@ -2346,7 +2228,6 @@ var hierarchy =
     [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >::Poller", "structwpi_1_1_callback_thread_1_1_poller.html", null ],
     [ "wpi::detail::PopulationCounter< T, SizeOfT >", "structwpi_1_1detail_1_1_population_counter.html", null ],
     [ "wpi::detail::PopulationCounter< T, 8 >", "structwpi_1_1detail_1_1_population_counter_3_01_t_00_018_01_4.html", null ],
-    [ "wpi::PortForwarder", "classwpi_1_1_port_forwarder.html", null ],
     [ "frc::Pose2d", "classfrc_1_1_pose2d.html", null ],
     [ "frc::Pose3d", "classfrc_1_1_pose3d.html", null ],
     [ "Eigen::internal::possibly_same_dense< T1, T2 >", "struct_eigen_1_1internal_1_1possibly__same__dense.html", null ],
@@ -2478,8 +2359,7 @@ var hierarchy =
     [ "Eigen::internal::random_retval< Scalar >", "struct_eigen_1_1internal_1_1random__retval.html", null ],
     [ "wpi::raw_istream", "classwpi_1_1raw__istream.html", [
       [ "wpi::raw_fd_istream", "classwpi_1_1raw__fd__istream.html", null ],
-      [ "wpi::raw_mem_istream", "classwpi_1_1raw__mem__istream.html", null ],
-      [ "wpi::raw_socket_istream", "classwpi_1_1raw__socket__istream.html", null ]
+      [ "wpi::raw_mem_istream", "classwpi_1_1raw__mem__istream.html", null ]
     ] ],
     [ "wpi::raw_ostream", "classwpi_1_1raw__ostream.html", [
       [ "wpi::raw_os_ostream", "classwpi_1_1raw__os__ostream.html", null ],
@@ -2493,9 +2373,7 @@ var hierarchy =
         [ "wpi::raw_uvector_ostream", "classwpi_1_1raw__uvector__ostream.html", null ],
         [ "wpi::raw_vector_ostream", "classwpi_1_1raw__vector__ostream.html", null ]
       ] ],
-      [ "wpi::raw_socket_ostream", "classwpi_1_1raw__socket__ostream.html", null ],
-      [ "wpi::raw_string_ostream", "classwpi_1_1raw__string__ostream.html", null ],
-      [ "wpi::raw_uv_ostream", "classwpi_1_1raw__uv__ostream.html", null ]
+      [ "wpi::raw_string_ostream", "classwpi_1_1raw__string__ostream.html", null ]
     ] ],
     [ "cs::RawEvent", "structcs_1_1_raw_event.html", [
       [ "cs::VideoEvent", "classcs_1_1_video_event.html", null ]
@@ -2643,7 +2521,6 @@ var hierarchy =
     ] ],
     [ "wpi::SafeThread", "classwpi_1_1_safe_thread.html", [
       [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >", "classwpi_1_1_callback_thread.html", null ],
-      [ "wpi::detail::WorkerThreadThread< R, T >", "classwpi_1_1detail_1_1_worker_thread_thread.html", null ],
       [ "wpi::java::JCallbackThread< T >", "classwpi_1_1java_1_1_j_callback_thread.html", null ]
     ] ],
     [ "wpi::detail::SafeThreadOwnerBase", "classwpi_1_1detail_1_1_safe_thread_owner_base.html", [
@@ -3006,7 +2883,6 @@ var hierarchy =
     [ "hal::SerialHelper", "classhal_1_1_serial_helper.html", null ],
     [ "wpi::json::serializer", "classwpi_1_1json_1_1serializer.html", null ],
     [ "frc::SerialPort", "classfrc_1_1_serial_port.html", null ],
-    [ "wpi::WebSocketServer::ServerOptions", "structwpi_1_1_web_socket_server_1_1_server_options.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, DenseShape, OuterProduct >::set", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_de53b08926de0225703046b27d8aadeb7a.html", null ],
     [ "Eigen::internal::setIdentity_impl< Derived, Big >", "struct_eigen_1_1internal_1_1set_identity__impl.html", null ],
     [ "Eigen::internal::setIdentity_impl< Derived, true >", "struct_eigen_1_1internal_1_1set_identity__impl_3_01_derived_00_01true_01_4.html", null ],
@@ -3050,7 +2926,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "frc::sim::SimDeviceSim", "classfrc_1_1sim_1_1_sim_device_sim.html", null ],
-    [ "wpi::uv::SimpleBufferPool< DEPTH >", "classwpi_1_1uv_1_1_simple_buffer_pool.html", null ],
     [ "frc::SimpleMotorFeedforward< Distance >", "classfrc_1_1_simple_motor_feedforward.html", null ],
     [ "Eigen::internal::SingleRange", "struct_eigen_1_1internal_1_1_single_range.html", null ],
     [ "detail::singleton", "structdetail_1_1singleton.html", null ],
@@ -3217,7 +3092,6 @@ var hierarchy =
     [ "std::system_error", null, [
       [ "ghc::filesystem::filesystem_error", "classghc_1_1filesystem_1_1filesystem__error.html", null ]
     ] ],
-    [ "wpi::TCPConnector", "classwpi_1_1_t_c_p_connector.html", null ],
     [ "Eigen::internal::ternary_evaluator< T, Arg1Kind, Arg2Kind, Arg3Kind, Arg1Scalar, Arg2Scalar, Arg3Scalar >", "struct_eigen_1_1internal_1_1ternary__evaluator.html", null ],
     [ "Eigen::internal::ternary_evaluator< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 > >", "struct_eigen_1_1internal_1_1ternary__evaluator.html", [
       [ "Eigen::internal::evaluator< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 > >", "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html", null ]
@@ -3793,7 +3667,6 @@ var hierarchy =
     [ "type_identity< T >", "structtype__identity.html", null ],
     [ "wpi::sig::trait::typelist<... >", "structwpi_1_1sig_1_1trait_1_1typelist.html", null ],
     [ "ghc::filesystem::u8arguments", "classghc_1_1filesystem_1_1u8arguments.html", null ],
-    [ "wpi::UDPClient", "classwpi_1_1_u_d_p_client.html", null ],
     [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1_uid_vector.html", null ],
     [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1_uid_vector_iterator.html", null ],
     [ "detail::uint128_wrapper", "structdetail_1_1uint128__wrapper.html", null ],
@@ -3905,64 +3778,8 @@ var hierarchy =
     [ "frc::UnscentedKalmanFilter< States, Inputs, Outputs >", "classfrc_1_1_unscented_kalman_filter.html", null ],
     [ "Eigen::ReturnByValue< Derived >::Unusable", "class_eigen_1_1_return_by_value_1_1_unusable.html", null ],
     [ "Eigen::internal::UpperBidiagonalization< _MatrixType >", "class_eigen_1_1internal_1_1_upper_bidiagonalization.html", null ],
-    [ "wpi::UrlParser", "classwpi_1_1_url_parser.html", null ],
     [ "cs::UsbCameraInfo", "structcs_1_1_usb_camera_info.html", null ],
     [ "utf8_to_utf16", "classutf8__to__utf16.html", null ],
-    [ "uv__dirent_s", "structuv____dirent__s.html", null ],
-    [ "uv__io_s", "structuv____io__s.html", null ],
-    [ "uv__work", "structuv____work.html", null ],
-    [ "uv_any_handle", "unionuv__any__handle.html", null ],
-    [ "uv_any_req", "unionuv__any__req.html", null ],
-    [ "uv_async_s", "structuv__async__s.html", null ],
-    [ "uv_barrier_t", "structuv__barrier__t.html", null ],
-    [ "uv_buf_t", "structuv__buf__t.html", [
-      [ "wpi::uv::Buffer", "classwpi_1_1uv_1_1_buffer.html", null ]
-    ] ],
-    [ "uv_check_s", "structuv__check__s.html", null ],
-    [ "uv_cond_t", "unionuv__cond__t.html", null ],
-    [ "uv_connect_s", "structuv__connect__s.html", null ],
-    [ "uv_cpu_info_s", "structuv__cpu__info__s.html", null ],
-    [ "uv_cpu_times_s", "structuv__cpu__times__s.html", null ],
-    [ "uv_dir_s", "structuv__dir__s.html", null ],
-    [ "uv_dirent_s", "structuv__dirent__s.html", null ],
-    [ "uv_fs_event_s", "structuv__fs__event__s.html", null ],
-    [ "uv_fs_poll_s", "structuv__fs__poll__s.html", null ],
-    [ "uv_fs_s", "structuv__fs__s.html", null ],
-    [ "uv_getaddrinfo_s", "structuv__getaddrinfo__s.html", null ],
-    [ "uv_getnameinfo_s", "structuv__getnameinfo__s.html", null ],
-    [ "uv_handle_s", "structuv__handle__s.html", null ],
-    [ "uv_idle_s", "structuv__idle__s.html", null ],
-    [ "uv_interface_address_s", "structuv__interface__address__s.html", null ],
-    [ "uv_key_t", "structuv__key__t.html", null ],
-    [ "uv_lib_t", "structuv__lib__t.html", null ],
-    [ "uv_loop_s", "structuv__loop__s.html", null ],
-    [ "uv_once_s", "structuv__once__s.html", null ],
-    [ "uv_passwd_s", "structuv__passwd__s.html", null ],
-    [ "uv_pipe_s", "structuv__pipe__s.html", null ],
-    [ "uv_poll_s", "structuv__poll__s.html", null ],
-    [ "uv_prepare_s", "structuv__prepare__s.html", null ],
-    [ "uv_process_options_s", "structuv__process__options__s.html", null ],
-    [ "uv_process_s", "structuv__process__s.html", null ],
-    [ "uv_req_s", "structuv__req__s.html", null ],
-    [ "uv_rusage_t", "structuv__rusage__t.html", null ],
-    [ "uv_rwlock_t", "unionuv__rwlock__t.html", null ],
-    [ "uv_shutdown_s", "structuv__shutdown__s.html", null ],
-    [ "uv_signal_s", "structuv__signal__s.html", null ],
-    [ "uv_stat_t", "structuv__stat__t.html", null ],
-    [ "uv_stdio_container_s", "structuv__stdio__container__s.html", null ],
-    [ "uv_stream_s", "structuv__stream__s.html", null ],
-    [ "uv_tcp_s", "structuv__tcp__s.html", null ],
-    [ "uv_thread_options_s", "structuv__thread__options__s.html", null ],
-    [ "uv_timer_s", "structuv__timer__s.html", null ],
-    [ "uv_timespec_t", "structuv__timespec__t.html", null ],
-    [ "uv_timeval64_t", "structuv__timeval64__t.html", null ],
-    [ "uv_timeval_t", "structuv__timeval__t.html", null ],
-    [ "uv_tty_s", "structuv__tty__s.html", null ],
-    [ "uv_udp_s", "structuv__udp__s.html", null ],
-    [ "uv_udp_send_s", "structuv__udp__send__s.html", null ],
-    [ "uv_utsname_s", "structuv__utsname__s.html", null ],
-    [ "uv_work_s", "structuv__work__s.html", null ],
-    [ "uv_write_s", "structuv__write__s.html", null ],
     [ "Eigen::internal::valid_indexed_view_overload< RowIndices, ColIndices >", "struct_eigen_1_1internal_1_1valid__indexed__view__overload.html", null ],
     [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
     [ "nt::Value", "classnt_1_1_value.html", null ],
@@ -4019,7 +3836,6 @@ var hierarchy =
     [ "Eigen::internal::visitor_impl< Visitor, Derived, Dynamic >", "struct_eigen_1_1internal_1_1visitor__impl_3_01_visitor_00_01_derived_00_01_dynamic_01_4.html", null ],
     [ "wpi::sig::trait::detail::voider<... >", "structwpi_1_1sig_1_1trait_1_1detail_1_1voider.html", null ],
     [ "frc::Watchdog", "classfrc_1_1_watchdog.html", null ],
-    [ "wpi::WebSocketServerHelper", "classwpi_1_1_web_socket_server_helper.html", null ],
     [ "weekday", "classweekday.html", null ],
     [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1_differential_drive_1_1_wheel_speeds.html", null ],
     [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1_killough_drive_1_1_wheel_speeds.html", null ],
@@ -4027,12 +3843,6 @@ var hierarchy =
     [ "frc::WidgetType", "classfrc_1_1_widget_type.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "Eigen::WithFormat< ExpressionType >", "class_eigen_1_1_with_format.html", null ],
-    [ "wpi::WorkerThread< T >", "classwpi_1_1_worker_thread.html", null ],
-    [ "wpi::WorkerThread< R(T...)>", "classwpi_1_1_worker_thread_3_01_r_07_t_8_8_8_08_4.html", null ],
-    [ "wpi::detail::WorkerThreadAsync< R >", "structwpi_1_1detail_1_1_worker_thread_async.html", null ],
-    [ "wpi::detail::WorkerThreadAsync< void >", "structwpi_1_1detail_1_1_worker_thread_async_3_01void_01_4.html", null ],
-    [ "wpi::detail::WorkerThreadRequest< R, T >", "structwpi_1_1detail_1_1_worker_thread_request.html", null ],
-    [ "WPI_ServiceData", "struct_w_p_i___service_data.html", null ],
     [ "wpi::wpi_shutdown_obj", "structwpi_1_1wpi__shutdown__obj.html", null ],
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
     [ "write_int_data< Char >", "structwrite__int__data.html", null ],

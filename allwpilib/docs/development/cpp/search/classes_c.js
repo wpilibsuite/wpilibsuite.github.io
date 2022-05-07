@@ -54,12 +54,11 @@ var searchData=
   ['log_5fimpl_3c_20std_3a_3acomplex_3c_20scalar_20_3e_20_3e_51',['log_impl&lt; std::complex&lt; Scalar &gt; &gt;',['../struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html',1,'Eigen::internal']]],
   ['logger_52',['Logger',['../classwpi_1_1_logger.html',1,'wpi']]],
   ['logmessage_53',['LogMessage',['../classnt_1_1_log_message.html',1,'nt']]],
-  ['loop_54',['Loop',['../classwpi_1_1uv_1_1_loop.html',1,'wpi::uv']]],
-  ['lpnorm_5fselector_55',['lpNorm_selector',['../struct_eigen_1_1internal_1_1lp_norm__selector.html',1,'Eigen::internal']]],
-  ['lpnorm_5fselector_3c_20derived_2c_201_20_3e_56',['lpNorm_selector&lt; Derived, 1 &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_011_01_4.html',1,'Eigen::internal']]],
-  ['lpnorm_5fselector_3c_20derived_2c_202_20_3e_57',['lpNorm_selector&lt; Derived, 2 &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_012_01_4.html',1,'Eigen::internal']]],
-  ['lpnorm_5fselector_3c_20derived_2c_20infinity_20_3e_58',['lpNorm_selector&lt; Derived, Infinity &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_01_infinity_01_4.html',1,'Eigen::internal']]],
-  ['lpnormreturntype_59',['LpNormReturnType',['../struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html',1,'Eigen::VectorwiseOp']]],
-  ['ltvdifferentialdrivecontroller_60',['LTVDifferentialDriveController',['../classfrc_1_1_l_t_v_differential_drive_controller.html',1,'frc']]],
-  ['ltvunicyclecontroller_61',['LTVUnicycleController',['../classfrc_1_1_l_t_v_unicycle_controller.html',1,'frc']]]
+  ['lpnorm_5fselector_54',['lpNorm_selector',['../struct_eigen_1_1internal_1_1lp_norm__selector.html',1,'Eigen::internal']]],
+  ['lpnorm_5fselector_3c_20derived_2c_201_20_3e_55',['lpNorm_selector&lt; Derived, 1 &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_011_01_4.html',1,'Eigen::internal']]],
+  ['lpnorm_5fselector_3c_20derived_2c_202_20_3e_56',['lpNorm_selector&lt; Derived, 2 &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_012_01_4.html',1,'Eigen::internal']]],
+  ['lpnorm_5fselector_3c_20derived_2c_20infinity_20_3e_57',['lpNorm_selector&lt; Derived, Infinity &gt;',['../struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_01_infinity_01_4.html',1,'Eigen::internal']]],
+  ['lpnormreturntype_58',['LpNormReturnType',['../struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html',1,'Eigen::VectorwiseOp']]],
+  ['ltvdifferentialdrivecontroller_59',['LTVDifferentialDriveController',['../classfrc_1_1_l_t_v_differential_drive_controller.html',1,'frc']]],
+  ['ltvunicyclecontroller_60',['LTVUnicycleController',['../classfrc_1_1_l_t_v_unicycle_controller.html',1,'frc']]]
 ];

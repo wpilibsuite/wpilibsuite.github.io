@@ -211,7 +211,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "TimedRobot.h", "_timed_robot_8h.html", [
       [ "frc::TimedRobot", "classfrc_1_1_timed_robot.html", "classfrc_1_1_timed_robot" ]
     ] ],
-    [ "Timer.h", "wpilibc_2src_2main_2native_2include_2frc_2_timer_8h.html", "wpilibc_2src_2main_2native_2include_2frc_2_timer_8h" ],
+    [ "Timer.h", "_timer_8h.html", "_timer_8h" ],
     [ "TimesliceRobot.h", "_timeslice_robot_8h.html", [
       [ "frc::TimesliceRobot", "classfrc_1_1_timeslice_robot.html", "classfrc_1_1_timeslice_robot" ]
     ] ],

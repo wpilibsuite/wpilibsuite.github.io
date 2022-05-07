@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-77-gb33715d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-78-gd673ead</span>
    </div>
   </td>
  </tr>
@@ -528,7 +528,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="comment"> * @param entry     entry handle</span></div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="comment"> * @param flags     flags value (bitmask of NT_EntryFlags)</span></div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno"><a class="line" href="group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0">  435</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0">SetEntryFlags</a>(<a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>);</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno"><a class="line" href="group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0">  435</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0">SetEntryFlags</a>(<a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span><span class="comment"></span> </div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="comment"> * Get Entry Flags.</span></div>
@@ -617,7 +617,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno"><a class="line" href="group__ntcore__entrylistener__func.html#ga8778e05d0047e7aae6cbb59680fa1742">  522</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="group__ntcore__entrylistener__func.html#ga8778e05d0047e7aae6cbb59680fa1742">EntryListenerCallback</a> =</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    std::function&lt;void(<a class="code hl_typedef" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> entry_listener, <a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name,</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                       std::shared_ptr&lt;Value&gt; <a class="code hl_class" href="classvalue.html">value</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>)&gt;;</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                       std::shared_ptr&lt;Value&gt; <a class="code hl_class" href="classvalue.html">value</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags)&gt;;</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="comment"></span> </div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="comment"> * Add a listener for all entries starting with a certain prefix.</span></div>
@@ -631,7 +631,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno"><a class="line" href="group__ntcore__entrylistener__func.html#ga694f8f8b8b137b51286db56ac9be9720">  535</a></span><a class="code hl_typedef" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> <a class="code hl_function" href="group__ntcore__entrylistener__func.html#ga694f8f8b8b137b51286db56ac9be9720">AddEntryListener</a>(</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>    <a class="code hl_typedef" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, <a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix,</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code hl_class" href="classnt_1_1_entry_notification.html">EntryNotification</a>&amp; event)&gt; callback,</div>
-<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>);</div>
+<div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span><span class="comment"></span> </div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="comment"> * Add a listener for a single entry.</span></div>
@@ -644,7 +644,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno"><a class="line" href="group__ntcore__entrylistener__func.html#ga1a6be4e3e2330ea4c1107b62d9b9af53">  548</a></span><a class="code hl_typedef" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> <a class="code hl_function" href="group__ntcore__entrylistener__func.html#ga694f8f8b8b137b51286db56ac9be9720">AddEntryListener</a>(</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    <a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry,</div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code hl_class" href="classnt_1_1_entry_notification.html">EntryNotification</a>&amp; event)&gt; callback,</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>);</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="comment"></span> </div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="comment"> * Create a entry listener poller.</span></div>
@@ -678,7 +678,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno"><a class="line" href="group__ntcore__entrylistener__func.html#ga5c0fbbdc39ba24c58ab8fb5cdc573f5a">  583</a></span><a class="code hl_typedef" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> <a class="code hl_function" href="group__ntcore__entrylistener__func.html#ga5c0fbbdc39ba24c58ab8fb5cdc573f5a">AddPolledEntryListener</a>(<a class="code hl_typedef" href="group__ntcore__c__api.html#gafa4c8268446080c1f804d42261a173ba">NT_EntryListenerPoller</a> poller,</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                                        <a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix,</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>);</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="comment"></span> </div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="comment"> * Create a polled entry listener.</span></div>
@@ -690,7 +690,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment"> * @return Listener handle</span></div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno"><a class="line" href="group__ntcore__entrylistener__func.html#ga92fc7fa2cf9b8d88accf4fc23846af98">  596</a></span><a class="code hl_typedef" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> <a class="code hl_function" href="group__ntcore__entrylistener__func.html#ga5c0fbbdc39ba24c58ab8fb5cdc573f5a">AddPolledEntryListener</a>(<a class="code hl_typedef" href="group__ntcore__c__api.html#gafa4c8268446080c1f804d42261a173ba">NT_EntryListenerPoller</a> poller,</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>                                        <a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>);</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>                                        <a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment"></span> </div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment"> * Get the next entry listener event.  This blocks until the next event occurs.</span></div>
@@ -1645,7 +1645,6 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> json.h:8010</div></div>
 <div class="ttc" id="anamespacestd_html_a8de3b111383ccb7c625398925d4c7add"><div class="ttname"><a href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallVectorImpl&lt; T &gt; &amp;LHS, wpi::SmallVectorImpl&lt; T &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallVector swap.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:936</div></div>
 <div class="ttc" id="anamespacewpi_1_1log_html"><div class="ttname"><a href="namespacewpi_1_1log.html">wpi::log</a></div><div class="ttdef"><b>Definition:</b> DataLog.h:27</div></div>
-<div class="ttc" id="anamespacewpi_html_a7b0000b45b0b55789f757f1c3d2461cb"><div class="ttname"><a href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">wpi::flags</a></div><div class="ttdeci">flags</div><div class="ttdef"><b>Definition:</b> http_parser.h:206</div></div>
 <div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 <div class="ttc" id="astructnt_1_1_connection_info_html"><div class="ttname"><a href="structnt_1_1_connection_info.html">nt::ConnectionInfo</a></div><div class="ttdoc">NetworkTables Connection Information.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:66</div></div>
 <div class="ttc" id="astructnt_1_1_connection_info_html_a273236525633a820193505cd4529cf70"><div class="ttname"><a href="structnt_1_1_connection_info.html#a273236525633a820193505cd4529cf70">nt::ConnectionInfo::protocol_version</a></div><div class="ttdeci">unsigned int protocol_version</div><div class="ttdoc">The protocol version being used for this connection.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:89</div></div>
@@ -1682,7 +1681,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="ntcore__cpp_8h.html">ntcore_cpp.h</a></li>
-    <li class="footer">Generated on Sat May 7 2022 17:27:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 7 2022 17:56:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

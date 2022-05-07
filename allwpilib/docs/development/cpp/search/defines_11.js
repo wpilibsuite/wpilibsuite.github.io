@@ -1,11 +1,17 @@
 var searchData=
 [
-  ['vec2d_5fduplane_0',['vec2d_duplane',['../_s_s_e_2_packet_math_8h.html#a82105f8a0e30fae094a3f12d6a0c5b40',1,'PacketMath.h']]],
-  ['vec2d_5fswizzle1_1',['vec2d_swizzle1',['../_s_s_e_2_packet_math_8h.html#a5ba6bdb2b469d927d9fa06f5d1bfa6d2',1,'PacketMath.h']]],
-  ['vec2d_5fswizzle2_2',['vec2d_swizzle2',['../_s_s_e_2_packet_math_8h.html#aa7ad27c50bafd0959091663d5a475586',1,'PacketMath.h']]],
-  ['vec4f_5fduplane_3',['vec4f_duplane',['../_n_e_o_n_2_packet_math_8h.html#a20b4290b14c83139f2ded75e1b86cb0d',1,'vec4f_duplane():&#160;PacketMath.h'],['../_s_s_e_2_packet_math_8h.html#a20b4290b14c83139f2ded75e1b86cb0d',1,'vec4f_duplane():&#160;PacketMath.h']]],
-  ['vec4f_5fswizzle1_4',['vec4f_swizzle1',['../_s_s_e_2_packet_math_8h.html#a387a69c0be53c7bd70e93cf4a54c16b2',1,'PacketMath.h']]],
-  ['vec4f_5fswizzle2_5',['vec4f_swizzle2',['../_s_s_e_2_packet_math_8h.html#a1ec65d254d25d48c68fbd7fadb9cd5b3',1,'PacketMath.h']]],
-  ['vec4i_5fswizzle1_6',['vec4i_swizzle1',['../_s_s_e_2_packet_math_8h.html#aa119a02009b26db7723ad850b7a5b17f',1,'PacketMath.h']]],
-  ['vec4i_5fswizzle2_7',['vec4i_swizzle2',['../_s_s_e_2_packet_math_8h.html#af51b8f5c0d4f6a33879d35685f2cac64',1,'PacketMath.h']]]
+  ['wpi_5fdebug_0',['WPI_DEBUG',['../_logger_8h.html#acd779c893ef6da95978a539f450bcb6b',1,'Logger.h']]],
+  ['wpi_5fdebug1_1',['WPI_DEBUG1',['../_logger_8h.html#a42ba2d8ce6c0a9edfef22cb33e10668d',1,'Logger.h']]],
+  ['wpi_5fdebug2_2',['WPI_DEBUG2',['../_logger_8h.html#af2c8967976fddb93d2eb6b4d2833053a',1,'Logger.h']]],
+  ['wpi_5fdebug3_3',['WPI_DEBUG3',['../_logger_8h.html#a40ea17cecb3b1a843a37cf6bd2b5c058',1,'Logger.h']]],
+  ['wpi_5fdebug4_4',['WPI_DEBUG4',['../_logger_8h.html#aad8022c350e929e387baad81ebee77ba',1,'Logger.h']]],
+  ['wpi_5fdefined_5fhas_5ffeature_5',['WPI_DEFINED_HAS_FEATURE',['../type__traits_8h.html#ae8c0a2e22a8867db008492b6a0d66b84',1,'type_traits.h']]],
+  ['wpi_5ferror_6',['WPI_ERROR',['../_logger_8h.html#a84b03a5f502a9c57849b868c7af38941',1,'Logger.h']]],
+  ['wpi_5finfo_7',['WPI_INFO',['../_logger_8h.html#a4ce13c5b08c1896ab6851bf6bfa01266',1,'Logger.h']]],
+  ['wpi_5fjni_5fjarrayref_8',['WPI_JNI_JARRAYREF',['../jni__util_8h.html#ae1433881cfb347d7a3f57ab856a33eb8',1,'jni_util.h']]],
+  ['wpi_5fjni_5fmakejarray_9',['WPI_JNI_MAKEJARRAY',['../jni__util_8h.html#aafc303a924487df6025254f3fe0b6a4e',1,'jni_util.h']]],
+  ['wpi_5flog_10',['WPI_LOG',['../_logger_8h.html#a764752c80c489a5988892ca7b2a4f224',1,'Logger.h']]],
+  ['wpi_5funreachable_11',['wpi_unreachable',['../_error_handling_8h.html#a3b07a7b38e27f4ae28526628684552d6',1,'ErrorHandling.h']]],
+  ['wpi_5fwarning_12',['WPI_WARNING',['../_logger_8h.html#a98e71a30259e64b19be6a45c86e8cf2c',1,'Logger.h']]],
+  ['wpilib_5fdllexport_13',['WPILIB_DLLEXPORT',['../_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e',1,'SymbolExports.h']]]
 ];
