@@ -90,47 +90,53 @@
 <span class="sourceLineNo">078</span><a id="line.78">  }</a>
 <span class="sourceLineNo">079</span><a id="line.79"></a>
 <span class="sourceLineNo">080</span><a id="line.80">  /**</a>
-<span class="sourceLineNo">081</span><a id="line.81">   * Returns an instance of the NWU coordinate system.</a>
+<span class="sourceLineNo">081</span><a id="line.81">   * Returns an instance of the North-West-Up (NWU) coordinate system.</a>
 <span class="sourceLineNo">082</span><a id="line.82">   *</a>
-<span class="sourceLineNo">083</span><a id="line.83">   * @return An instance of the NWU coordinate system.</a>
-<span class="sourceLineNo">084</span><a id="line.84">   */</a>
-<span class="sourceLineNo">085</span><a id="line.85">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">086</span><a id="line.86">  public static CoordinateSystem NWU() {</a>
-<span class="sourceLineNo">087</span><a id="line.87">    return new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.W(), CoordinateAxis.U());</a>
-<span class="sourceLineNo">088</span><a id="line.88">  }</a>
-<span class="sourceLineNo">089</span><a id="line.89"></a>
-<span class="sourceLineNo">090</span><a id="line.90">  /**</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * Returns an instance of the EDN coordinate system.</a>
-<span class="sourceLineNo">092</span><a id="line.92">   *</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * @return An instance of the EDN coordinate system.</a>
-<span class="sourceLineNo">094</span><a id="line.94">   */</a>
-<span class="sourceLineNo">095</span><a id="line.95">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">096</span><a id="line.96">  public static CoordinateSystem EDN() {</a>
-<span class="sourceLineNo">097</span><a id="line.97">    return new CoordinateSystem(CoordinateAxis.E(), CoordinateAxis.D(), CoordinateAxis.N());</a>
-<span class="sourceLineNo">098</span><a id="line.98">  }</a>
-<span class="sourceLineNo">099</span><a id="line.99"></a>
-<span class="sourceLineNo">100</span><a id="line.100">  /**</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * Returns an instance of the NED coordinate system.</a>
-<span class="sourceLineNo">102</span><a id="line.102">   *</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * @return An instance of the NED coordinate system.</a>
-<span class="sourceLineNo">104</span><a id="line.104">   */</a>
-<span class="sourceLineNo">105</span><a id="line.105">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">106</span><a id="line.106">  public static CoordinateSystem NED() {</a>
-<span class="sourceLineNo">107</span><a id="line.107">    return new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.E(), CoordinateAxis.D());</a>
-<span class="sourceLineNo">108</span><a id="line.108">  }</a>
-<span class="sourceLineNo">109</span><a id="line.109"></a>
-<span class="sourceLineNo">110</span><a id="line.110">  /**</a>
-<span class="sourceLineNo">111</span><a id="line.111">   * Converts the given pose from one coordinate system to another.</a>
-<span class="sourceLineNo">112</span><a id="line.112">   *</a>
-<span class="sourceLineNo">113</span><a id="line.113">   * @param pose The pose to convert.</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * @param from The coordinate system the pose starts in.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   * @param to The coordinate system to which to convert.</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * @return The given pose in the desired coordinate system.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   */</a>
-<span class="sourceLineNo">118</span><a id="line.118">  public static Pose3d convert(Pose3d pose, CoordinateSystem from, CoordinateSystem to) {</a>
-<span class="sourceLineNo">119</span><a id="line.119">    return pose.relativeTo(new Pose3d(new Translation3d(), to.m_rotation.minus(from.m_rotation)));</a>
-<span class="sourceLineNo">120</span><a id="line.120">  }</a>
-<span class="sourceLineNo">121</span><a id="line.121">}</a>
+<span class="sourceLineNo">083</span><a id="line.83">   * &lt;p&gt;The +X axis is north, the +Y axis is west, and the +Z axis is up.</a>
+<span class="sourceLineNo">084</span><a id="line.84">   *</a>
+<span class="sourceLineNo">085</span><a id="line.85">   * @return An instance of the North-West-Up (NWU) coordinate system.</a>
+<span class="sourceLineNo">086</span><a id="line.86">   */</a>
+<span class="sourceLineNo">087</span><a id="line.87">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">088</span><a id="line.88">  public static CoordinateSystem NWU() {</a>
+<span class="sourceLineNo">089</span><a id="line.89">    return new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.W(), CoordinateAxis.U());</a>
+<span class="sourceLineNo">090</span><a id="line.90">  }</a>
+<span class="sourceLineNo">091</span><a id="line.91"></a>
+<span class="sourceLineNo">092</span><a id="line.92">  /**</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * Returns an instance of the East-Down-North (EDN) coordinate system.</a>
+<span class="sourceLineNo">094</span><a id="line.94">   *</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * &lt;p&gt;The +X axis is east, the +Y axis is down, and the +Z axis is north.</a>
+<span class="sourceLineNo">096</span><a id="line.96">   *</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * @return An instance of the East-Down-North (EDN) coordinate system.</a>
+<span class="sourceLineNo">098</span><a id="line.98">   */</a>
+<span class="sourceLineNo">099</span><a id="line.99">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">100</span><a id="line.100">  public static CoordinateSystem EDN() {</a>
+<span class="sourceLineNo">101</span><a id="line.101">    return new CoordinateSystem(CoordinateAxis.E(), CoordinateAxis.D(), CoordinateAxis.N());</a>
+<span class="sourceLineNo">102</span><a id="line.102">  }</a>
+<span class="sourceLineNo">103</span><a id="line.103"></a>
+<span class="sourceLineNo">104</span><a id="line.104">  /**</a>
+<span class="sourceLineNo">105</span><a id="line.105">   * Returns an instance of the North-East-Down (NED) coordinate system.</a>
+<span class="sourceLineNo">106</span><a id="line.106">   *</a>
+<span class="sourceLineNo">107</span><a id="line.107">   * &lt;p&gt;The +X axis is north, the +Y axis is east, and the +Z axis is down.</a>
+<span class="sourceLineNo">108</span><a id="line.108">   *</a>
+<span class="sourceLineNo">109</span><a id="line.109">   * @return An instance of the North-East-Down (NED) coordinate system.</a>
+<span class="sourceLineNo">110</span><a id="line.110">   */</a>
+<span class="sourceLineNo">111</span><a id="line.111">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">112</span><a id="line.112">  public static CoordinateSystem NED() {</a>
+<span class="sourceLineNo">113</span><a id="line.113">    return new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.E(), CoordinateAxis.D());</a>
+<span class="sourceLineNo">114</span><a id="line.114">  }</a>
+<span class="sourceLineNo">115</span><a id="line.115"></a>
+<span class="sourceLineNo">116</span><a id="line.116">  /**</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * Converts the given pose from one coordinate system to another.</a>
+<span class="sourceLineNo">118</span><a id="line.118">   *</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * @param pose The pose to convert.</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param from The coordinate system the pose starts in.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * @param to The coordinate system to which to convert.</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @return The given pose in the desired coordinate system.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   */</a>
+<span class="sourceLineNo">124</span><a id="line.124">  public static Pose3d convert(Pose3d pose, CoordinateSystem from, CoordinateSystem to) {</a>
+<span class="sourceLineNo">125</span><a id="line.125">    return pose.relativeTo(new Pose3d(new Translation3d(), to.m_rotation.minus(from.m_rotation)));</a>
+<span class="sourceLineNo">126</span><a id="line.126">  }</a>
+<span class="sourceLineNo">127</span><a id="line.127">}</a>
 
 
 
