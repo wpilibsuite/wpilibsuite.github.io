@@ -1,5 +1,12 @@
 var NAVTREEINDEX158 =
 {
+"structarg__formatter.html#a7564446a13d037cd4e415f17d4ae8214":[5,0,19,4],
+"structarg__formatter.html#a812825d096745167b0b12e87209938b8":[5,0,19,5],
+"structarg__formatter.html#a9cefc9d64ed03494749cb68d70db6292":[5,0,19,1],
+"structarg__mapper.html":[5,0,20],
+"structarg__mapper.html#a0e5fd42160aa65adb46c50c3d04920c8":[5,0,20,22],
+"structarg__mapper.html#a14ab65add041093bc6f20890e96bff85":[5,0,20,20],
+"structarg__mapper.html#a1682c2443b7892553ebb2c67b3ff76b7":[5,0,20,25],
 "structarg__mapper.html#a18e6814ea7234f853ea650a5c93ed71c":[5,0,20,24],
 "structarg__mapper.html#a1f0e3fe09ce54e45f4e63d7a902bde08":[5,0,20,17],
 "structarg__mapper.html#a1f8474167b9620300909fe20a6a2dcc5":[5,0,20,41],
@@ -23,8 +30,8 @@ var NAVTREEINDEX158 =
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[5,0,20,6],
 "structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,20,40],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,20,15],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,20,13],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,20,14],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,20,13],
 "structarg__mapper.html#ab0ca23b1107e95c90038a32db2611dd6":[5,0,20,16],
 "structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16":[5,0,20,42],
 "structarg__mapper.html#aba49e677ad2ec1ce1e49fb888a6df858":[5,0,20,38],
@@ -241,13 +248,6 @@ var NAVTREEINDEX158 =
 "structdetail_1_1accumulator.html#abc770436f2cbafae8ee59117f35391a1":[4,0,3,2,3],
 "structdetail_1_1accumulator.html#acfb4854c0ca74f1198ea51a2400e14e3":[5,0,1,1,1],
 "structdetail_1_1accumulator.html#acfb4854c0ca74f1198ea51a2400e14e3":[4,0,3,2,1],
-"structdetail_1_1accumulator.html#af1d28cd146ada3a5273c4280f4d9ff15":[5,0,1,1,0],
 "structdetail_1_1accumulator.html#af1d28cd146ada3a5273c4280f4d9ff15":[4,0,3,2,0],
-"structdetail_1_1accumulator.html#afa4c8b84cd1e7c1381b45f340f5b8494":[5,0,1,1,4],
-"structdetail_1_1accumulator.html#afa4c8b84cd1e7c1381b45f340f5b8494":[4,0,3,2,4],
-"structdetail_1_1basic__impl__data.html":[5,0,1,2],
-"structdetail_1_1basic__impl__data.html":[4,0,3,3],
-"structdetail_1_1basic__impl__data.html#a2cd03a390055efeadef93325c052d7bf":[5,0,1,2,0],
-"structdetail_1_1basic__impl__data.html#a2cd03a390055efeadef93325c052d7bf":[4,0,3,3,0],
-"structdetail_1_1basic__impl__data.html#a4b9fd2811ed94d74a9a0130e6869c2b5":[4,0,3,3,1]
+"structdetail_1_1accumulator.html#af1d28cd146ada3a5273c4280f4d9ff15":[5,0,1,1,0]
 };

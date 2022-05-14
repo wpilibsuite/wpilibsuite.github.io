@@ -1,7 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"_pointer_union_8h.html#aabd42859bd71a8e8216b38de777c629a":[6,0,12,53,14],
-"_pointer_union_8h.html#ab5000c9a8029f54264122dadfd414ef0":[6,0,12,53,13],
 "_pointer_union_8h.html#aed7d9ed074dc21ffb99b2f264efd7c49":[6,0,12,53,15],
 "_pointer_union_8h_source.html":[6,0,12,53],
 "_ports_8h.html":[6,0,8,34],
@@ -249,5 +247,7 @@ var NAVTREEINDEX16 =
 "_robot_base_8h.html#a34e168565dec463c0b67d584e80c2c0d":[6,0,6,64,3],
 "_robot_base_8h.html#a8d83e7ec5a444cd625593917680b750c":[6,0,6,64,1],
 "_robot_base_8h.html#ab27ebebfd151bdd128c4876ca9f195f6":[6,0,6,64,2],
-"_robot_base_8h_source.html":[6,0,6,64]
+"_robot_base_8h_source.html":[6,0,6,64],
+"_robot_controller_8h.html":[6,0,6,65],
+"_robot_controller_8h_source.html":[6,0,6,65]
 };

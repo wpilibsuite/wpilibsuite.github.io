@@ -303,7 +303,7 @@ var namespacefrc =
     [ "EstimateFieldToCamera", "namespacefrc.html#a97fdae7f8d72a4ef822c606f707cee95", null ],
     [ "EstimateFieldToRobot", "namespacefrc.html#ad22529d05f9e9f5afb448dc9748cbbcf", null ],
     [ "EstimateFieldToRobot", "namespacefrc.html#a49f892d2bc4012a02e51a6a3c9603340", null ],
-    [ "EXPORT_TEMPLATE_DECLARE", "namespacefrc.html#a990dc912ad72317aa1038151ccdec7ee", null ],
+    [ "EXPORT_TEMPLATE_DECLARE", "namespacefrc.html#a9887b682604801053f103bda680fe9de", null ],
     [ "from_json", "namespacefrc.html#a110eb6adc14c3cffe104abc63ea380c6", null ],
     [ "from_json", "namespacefrc.html#aa2e4b5dc83f17f67fb1791096fb5d376", null ],
     [ "from_json", "namespacefrc.html#a4b5a9b431ae2924414aac97af6c372ae", null ],
