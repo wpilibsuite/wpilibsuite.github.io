@@ -110,117 +110,126 @@
 <span class="sourceLineNo">098</span><a id="line.98">  }</a>
 <span class="sourceLineNo">099</span><a id="line.99"></a>
 <span class="sourceLineNo">100</span><a id="line.100">  /**</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * Applies a rotation to the translation in 2D space.</a>
+<span class="sourceLineNo">101</span><a id="line.101">   * Returns the angle this translation forms with the positive X axis.</a>
 <span class="sourceLineNo">102</span><a id="line.102">   *</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * &lt;p&gt;This multiplies the translation vector by a counterclockwise rotation matrix of the given</a>
-<span class="sourceLineNo">104</span><a id="line.104">   * angle.</a>
-<span class="sourceLineNo">105</span><a id="line.105">   *</a>
-<span class="sourceLineNo">106</span><a id="line.106">   * &lt;pre&gt;</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * [x_new]   [other.cos, -other.sin][x]</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * [y_new] = [other.sin,  other.cos][y]</a>
-<span class="sourceLineNo">109</span><a id="line.109">   * &lt;/pre&gt;</a>
-<span class="sourceLineNo">110</span><a id="line.110">   *</a>
-<span class="sourceLineNo">111</span><a id="line.111">   * &lt;p&gt;For example, rotating a Translation2d of &amp;lt;2, 0&amp;gt; by 90 degrees will return a</a>
-<span class="sourceLineNo">112</span><a id="line.112">   * Translation2d of &amp;lt;0, 2&amp;gt;.</a>
-<span class="sourceLineNo">113</span><a id="line.113">   *</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * @param other The rotation to rotate the translation by.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   * @return The new rotated translation.</a>
-<span class="sourceLineNo">116</span><a id="line.116">   */</a>
-<span class="sourceLineNo">117</span><a id="line.117">  public Translation2d rotateBy(Rotation2d other) {</a>
-<span class="sourceLineNo">118</span><a id="line.118">    return new Translation2d(</a>
-<span class="sourceLineNo">119</span><a id="line.119">        m_x * other.getCos() - m_y * other.getSin(), m_x * other.getSin() + m_y * other.getCos());</a>
-<span class="sourceLineNo">120</span><a id="line.120">  }</a>
-<span class="sourceLineNo">121</span><a id="line.121"></a>
-<span class="sourceLineNo">122</span><a id="line.122">  /**</a>
-<span class="sourceLineNo">123</span><a id="line.123">   * Returns the sum of two translations in 2D space.</a>
-<span class="sourceLineNo">124</span><a id="line.124">   *</a>
-<span class="sourceLineNo">125</span><a id="line.125">   * &lt;p&gt;For example, Translation3d(1.0, 2.5) + Translation3d(2.0, 5.5) = Translation3d{3.0, 8.0).</a>
-<span class="sourceLineNo">126</span><a id="line.126">   *</a>
-<span class="sourceLineNo">127</span><a id="line.127">   * @param other The translation to add.</a>
-<span class="sourceLineNo">128</span><a id="line.128">   * @return The sum of the translations.</a>
-<span class="sourceLineNo">129</span><a id="line.129">   */</a>
-<span class="sourceLineNo">130</span><a id="line.130">  public Translation2d plus(Translation2d other) {</a>
-<span class="sourceLineNo">131</span><a id="line.131">    return new Translation2d(m_x + other.m_x, m_y + other.m_y);</a>
-<span class="sourceLineNo">132</span><a id="line.132">  }</a>
-<span class="sourceLineNo">133</span><a id="line.133"></a>
-<span class="sourceLineNo">134</span><a id="line.134">  /**</a>
-<span class="sourceLineNo">135</span><a id="line.135">   * Returns the difference between two translations.</a>
-<span class="sourceLineNo">136</span><a id="line.136">   *</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * &lt;p&gt;For example, Translation2d(5.0, 4.0) - Translation2d(1.0, 2.0) = Translation2d(4.0, 2.0).</a>
-<span class="sourceLineNo">138</span><a id="line.138">   *</a>
-<span class="sourceLineNo">139</span><a id="line.139">   * @param other The translation to subtract.</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * @return The difference between the two translations.</a>
-<span class="sourceLineNo">141</span><a id="line.141">   */</a>
-<span class="sourceLineNo">142</span><a id="line.142">  public Translation2d minus(Translation2d other) {</a>
-<span class="sourceLineNo">143</span><a id="line.143">    return new Translation2d(m_x - other.m_x, m_y - other.m_y);</a>
-<span class="sourceLineNo">144</span><a id="line.144">  }</a>
-<span class="sourceLineNo">145</span><a id="line.145"></a>
-<span class="sourceLineNo">146</span><a id="line.146">  /**</a>
-<span class="sourceLineNo">147</span><a id="line.147">   * Returns the inverse of the current translation. This is equivalent to rotating by 180 degrees,</a>
-<span class="sourceLineNo">148</span><a id="line.148">   * flipping the point over both axes, or negating all components of the translation.</a>
-<span class="sourceLineNo">149</span><a id="line.149">   *</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * @return The inverse of the current translation.</a>
-<span class="sourceLineNo">151</span><a id="line.151">   */</a>
-<span class="sourceLineNo">152</span><a id="line.152">  public Translation2d unaryMinus() {</a>
-<span class="sourceLineNo">153</span><a id="line.153">    return new Translation2d(-m_x, -m_y);</a>
-<span class="sourceLineNo">154</span><a id="line.154">  }</a>
-<span class="sourceLineNo">155</span><a id="line.155"></a>
-<span class="sourceLineNo">156</span><a id="line.156">  /**</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * Returns the translation multiplied by a scalar.</a>
+<span class="sourceLineNo">103</span><a id="line.103">   * @return The angle of the translation</a>
+<span class="sourceLineNo">104</span><a id="line.104">   */</a>
+<span class="sourceLineNo">105</span><a id="line.105">  public Rotation2d getAngle() {</a>
+<span class="sourceLineNo">106</span><a id="line.106">    return new Rotation2d(m_x, m_y);</a>
+<span class="sourceLineNo">107</span><a id="line.107">  }</a>
+<span class="sourceLineNo">108</span><a id="line.108"></a>
+<span class="sourceLineNo">109</span><a id="line.109">  /**</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * Applies a rotation to the translation in 2D space.</a>
+<span class="sourceLineNo">111</span><a id="line.111">   *</a>
+<span class="sourceLineNo">112</span><a id="line.112">   * &lt;p&gt;This multiplies the translation vector by a counterclockwise rotation matrix of the given</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * angle.</a>
+<span class="sourceLineNo">114</span><a id="line.114">   *</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * &lt;pre&gt;</a>
+<span class="sourceLineNo">116</span><a id="line.116">   * [x_new]   [other.cos, -other.sin][x]</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * [y_new] = [other.sin,  other.cos][y]</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * &lt;/pre&gt;</a>
+<span class="sourceLineNo">119</span><a id="line.119">   *</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * &lt;p&gt;For example, rotating a Translation2d of &amp;lt;2, 0&amp;gt; by 90 degrees will return a</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * Translation2d of &amp;lt;0, 2&amp;gt;.</a>
+<span class="sourceLineNo">122</span><a id="line.122">   *</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @param other The rotation to rotate the translation by.</a>
+<span class="sourceLineNo">124</span><a id="line.124">   * @return The new rotated translation.</a>
+<span class="sourceLineNo">125</span><a id="line.125">   */</a>
+<span class="sourceLineNo">126</span><a id="line.126">  public Translation2d rotateBy(Rotation2d other) {</a>
+<span class="sourceLineNo">127</span><a id="line.127">    return new Translation2d(</a>
+<span class="sourceLineNo">128</span><a id="line.128">        m_x * other.getCos() - m_y * other.getSin(), m_x * other.getSin() + m_y * other.getCos());</a>
+<span class="sourceLineNo">129</span><a id="line.129">  }</a>
+<span class="sourceLineNo">130</span><a id="line.130"></a>
+<span class="sourceLineNo">131</span><a id="line.131">  /**</a>
+<span class="sourceLineNo">132</span><a id="line.132">   * Returns the sum of two translations in 2D space.</a>
+<span class="sourceLineNo">133</span><a id="line.133">   *</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * &lt;p&gt;For example, Translation3d(1.0, 2.5) + Translation3d(2.0, 5.5) = Translation3d{3.0, 8.0).</a>
+<span class="sourceLineNo">135</span><a id="line.135">   *</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * @param other The translation to add.</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * @return The sum of the translations.</a>
+<span class="sourceLineNo">138</span><a id="line.138">   */</a>
+<span class="sourceLineNo">139</span><a id="line.139">  public Translation2d plus(Translation2d other) {</a>
+<span class="sourceLineNo">140</span><a id="line.140">    return new Translation2d(m_x + other.m_x, m_y + other.m_y);</a>
+<span class="sourceLineNo">141</span><a id="line.141">  }</a>
+<span class="sourceLineNo">142</span><a id="line.142"></a>
+<span class="sourceLineNo">143</span><a id="line.143">  /**</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * Returns the difference between two translations.</a>
+<span class="sourceLineNo">145</span><a id="line.145">   *</a>
+<span class="sourceLineNo">146</span><a id="line.146">   * &lt;p&gt;For example, Translation2d(5.0, 4.0) - Translation2d(1.0, 2.0) = Translation2d(4.0, 2.0).</a>
+<span class="sourceLineNo">147</span><a id="line.147">   *</a>
+<span class="sourceLineNo">148</span><a id="line.148">   * @param other The translation to subtract.</a>
+<span class="sourceLineNo">149</span><a id="line.149">   * @return The difference between the two translations.</a>
+<span class="sourceLineNo">150</span><a id="line.150">   */</a>
+<span class="sourceLineNo">151</span><a id="line.151">  public Translation2d minus(Translation2d other) {</a>
+<span class="sourceLineNo">152</span><a id="line.152">    return new Translation2d(m_x - other.m_x, m_y - other.m_y);</a>
+<span class="sourceLineNo">153</span><a id="line.153">  }</a>
+<span class="sourceLineNo">154</span><a id="line.154"></a>
+<span class="sourceLineNo">155</span><a id="line.155">  /**</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * Returns the inverse of the current translation. This is equivalent to rotating by 180 degrees,</a>
+<span class="sourceLineNo">157</span><a id="line.157">   * flipping the point over both axes, or negating all components of the translation.</a>
 <span class="sourceLineNo">158</span><a id="line.158">   *</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * &lt;p&gt;For example, Translation2d(2.0, 2.5) * 2 = Translation2d(4.0, 5.0).</a>
-<span class="sourceLineNo">160</span><a id="line.160">   *</a>
-<span class="sourceLineNo">161</span><a id="line.161">   * @param scalar The scalar to multiply by.</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @return The scaled translation.</a>
-<span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  public Translation2d times(double scalar) {</a>
-<span class="sourceLineNo">165</span><a id="line.165">    return new Translation2d(m_x * scalar, m_y * scalar);</a>
-<span class="sourceLineNo">166</span><a id="line.166">  }</a>
-<span class="sourceLineNo">167</span><a id="line.167"></a>
-<span class="sourceLineNo">168</span><a id="line.168">  /**</a>
-<span class="sourceLineNo">169</span><a id="line.169">   * Returns the translation divided by a scalar.</a>
-<span class="sourceLineNo">170</span><a id="line.170">   *</a>
-<span class="sourceLineNo">171</span><a id="line.171">   * &lt;p&gt;For example, Translation3d(2.0, 2.5) / 2 = Translation3d(1.0, 1.25).</a>
-<span class="sourceLineNo">172</span><a id="line.172">   *</a>
-<span class="sourceLineNo">173</span><a id="line.173">   * @param scalar The scalar to multiply by.</a>
-<span class="sourceLineNo">174</span><a id="line.174">   * @return The reference to the new mutated object.</a>
-<span class="sourceLineNo">175</span><a id="line.175">   */</a>
-<span class="sourceLineNo">176</span><a id="line.176">  public Translation2d div(double scalar) {</a>
-<span class="sourceLineNo">177</span><a id="line.177">    return new Translation2d(m_x / scalar, m_y / scalar);</a>
-<span class="sourceLineNo">178</span><a id="line.178">  }</a>
-<span class="sourceLineNo">179</span><a id="line.179"></a>
-<span class="sourceLineNo">180</span><a id="line.180">  @Override</a>
-<span class="sourceLineNo">181</span><a id="line.181">  public String toString() {</a>
-<span class="sourceLineNo">182</span><a id="line.182">    return String.format("Translation2d(X: %.2f, Y: %.2f)", m_x, m_y);</a>
-<span class="sourceLineNo">183</span><a id="line.183">  }</a>
-<span class="sourceLineNo">184</span><a id="line.184"></a>
-<span class="sourceLineNo">185</span><a id="line.185">  /**</a>
-<span class="sourceLineNo">186</span><a id="line.186">   * Checks equality between this Translation2d and another object.</a>
-<span class="sourceLineNo">187</span><a id="line.187">   *</a>
-<span class="sourceLineNo">188</span><a id="line.188">   * @param obj The other object.</a>
-<span class="sourceLineNo">189</span><a id="line.189">   * @return Whether the two objects are equal or not.</a>
-<span class="sourceLineNo">190</span><a id="line.190">   */</a>
-<span class="sourceLineNo">191</span><a id="line.191">  @Override</a>
-<span class="sourceLineNo">192</span><a id="line.192">  public boolean equals(Object obj) {</a>
-<span class="sourceLineNo">193</span><a id="line.193">    if (obj instanceof Translation2d) {</a>
-<span class="sourceLineNo">194</span><a id="line.194">      return Math.abs(((Translation2d) obj).m_x - m_x) &lt; 1E-9</a>
-<span class="sourceLineNo">195</span><a id="line.195">          &amp;&amp; Math.abs(((Translation2d) obj).m_y - m_y) &lt; 1E-9;</a>
-<span class="sourceLineNo">196</span><a id="line.196">    }</a>
-<span class="sourceLineNo">197</span><a id="line.197">    return false;</a>
-<span class="sourceLineNo">198</span><a id="line.198">  }</a>
-<span class="sourceLineNo">199</span><a id="line.199"></a>
+<span class="sourceLineNo">159</span><a id="line.159">   * @return The inverse of the current translation.</a>
+<span class="sourceLineNo">160</span><a id="line.160">   */</a>
+<span class="sourceLineNo">161</span><a id="line.161">  public Translation2d unaryMinus() {</a>
+<span class="sourceLineNo">162</span><a id="line.162">    return new Translation2d(-m_x, -m_y);</a>
+<span class="sourceLineNo">163</span><a id="line.163">  }</a>
+<span class="sourceLineNo">164</span><a id="line.164"></a>
+<span class="sourceLineNo">165</span><a id="line.165">  /**</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * Returns the translation multiplied by a scalar.</a>
+<span class="sourceLineNo">167</span><a id="line.167">   *</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * &lt;p&gt;For example, Translation2d(2.0, 2.5) * 2 = Translation2d(4.0, 5.0).</a>
+<span class="sourceLineNo">169</span><a id="line.169">   *</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * @param scalar The scalar to multiply by.</a>
+<span class="sourceLineNo">171</span><a id="line.171">   * @return The scaled translation.</a>
+<span class="sourceLineNo">172</span><a id="line.172">   */</a>
+<span class="sourceLineNo">173</span><a id="line.173">  public Translation2d times(double scalar) {</a>
+<span class="sourceLineNo">174</span><a id="line.174">    return new Translation2d(m_x * scalar, m_y * scalar);</a>
+<span class="sourceLineNo">175</span><a id="line.175">  }</a>
+<span class="sourceLineNo">176</span><a id="line.176"></a>
+<span class="sourceLineNo">177</span><a id="line.177">  /**</a>
+<span class="sourceLineNo">178</span><a id="line.178">   * Returns the translation divided by a scalar.</a>
+<span class="sourceLineNo">179</span><a id="line.179">   *</a>
+<span class="sourceLineNo">180</span><a id="line.180">   * &lt;p&gt;For example, Translation3d(2.0, 2.5) / 2 = Translation3d(1.0, 1.25).</a>
+<span class="sourceLineNo">181</span><a id="line.181">   *</a>
+<span class="sourceLineNo">182</span><a id="line.182">   * @param scalar The scalar to multiply by.</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * @return The reference to the new mutated object.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   */</a>
+<span class="sourceLineNo">185</span><a id="line.185">  public Translation2d div(double scalar) {</a>
+<span class="sourceLineNo">186</span><a id="line.186">    return new Translation2d(m_x / scalar, m_y / scalar);</a>
+<span class="sourceLineNo">187</span><a id="line.187">  }</a>
+<span class="sourceLineNo">188</span><a id="line.188"></a>
+<span class="sourceLineNo">189</span><a id="line.189">  @Override</a>
+<span class="sourceLineNo">190</span><a id="line.190">  public String toString() {</a>
+<span class="sourceLineNo">191</span><a id="line.191">    return String.format("Translation2d(X: %.2f, Y: %.2f)", m_x, m_y);</a>
+<span class="sourceLineNo">192</span><a id="line.192">  }</a>
+<span class="sourceLineNo">193</span><a id="line.193"></a>
+<span class="sourceLineNo">194</span><a id="line.194">  /**</a>
+<span class="sourceLineNo">195</span><a id="line.195">   * Checks equality between this Translation2d and another object.</a>
+<span class="sourceLineNo">196</span><a id="line.196">   *</a>
+<span class="sourceLineNo">197</span><a id="line.197">   * @param obj The other object.</a>
+<span class="sourceLineNo">198</span><a id="line.198">   * @return Whether the two objects are equal or not.</a>
+<span class="sourceLineNo">199</span><a id="line.199">   */</a>
 <span class="sourceLineNo">200</span><a id="line.200">  @Override</a>
-<span class="sourceLineNo">201</span><a id="line.201">  public int hashCode() {</a>
-<span class="sourceLineNo">202</span><a id="line.202">    return Objects.hash(m_x, m_y);</a>
-<span class="sourceLineNo">203</span><a id="line.203">  }</a>
-<span class="sourceLineNo">204</span><a id="line.204"></a>
-<span class="sourceLineNo">205</span><a id="line.205">  @Override</a>
-<span class="sourceLineNo">206</span><a id="line.206">  public Translation2d interpolate(Translation2d endValue, double t) {</a>
-<span class="sourceLineNo">207</span><a id="line.207">    return new Translation2d(</a>
-<span class="sourceLineNo">208</span><a id="line.208">        MathUtil.interpolate(this.getX(), endValue.getX(), t),</a>
-<span class="sourceLineNo">209</span><a id="line.209">        MathUtil.interpolate(this.getY(), endValue.getY(), t));</a>
-<span class="sourceLineNo">210</span><a id="line.210">  }</a>
-<span class="sourceLineNo">211</span><a id="line.211">}</a>
+<span class="sourceLineNo">201</span><a id="line.201">  public boolean equals(Object obj) {</a>
+<span class="sourceLineNo">202</span><a id="line.202">    if (obj instanceof Translation2d) {</a>
+<span class="sourceLineNo">203</span><a id="line.203">      return Math.abs(((Translation2d) obj).m_x - m_x) &lt; 1E-9</a>
+<span class="sourceLineNo">204</span><a id="line.204">          &amp;&amp; Math.abs(((Translation2d) obj).m_y - m_y) &lt; 1E-9;</a>
+<span class="sourceLineNo">205</span><a id="line.205">    }</a>
+<span class="sourceLineNo">206</span><a id="line.206">    return false;</a>
+<span class="sourceLineNo">207</span><a id="line.207">  }</a>
+<span class="sourceLineNo">208</span><a id="line.208"></a>
+<span class="sourceLineNo">209</span><a id="line.209">  @Override</a>
+<span class="sourceLineNo">210</span><a id="line.210">  public int hashCode() {</a>
+<span class="sourceLineNo">211</span><a id="line.211">    return Objects.hash(m_x, m_y);</a>
+<span class="sourceLineNo">212</span><a id="line.212">  }</a>
+<span class="sourceLineNo">213</span><a id="line.213"></a>
+<span class="sourceLineNo">214</span><a id="line.214">  @Override</a>
+<span class="sourceLineNo">215</span><a id="line.215">  public Translation2d interpolate(Translation2d endValue, double t) {</a>
+<span class="sourceLineNo">216</span><a id="line.216">    return new Translation2d(</a>
+<span class="sourceLineNo">217</span><a id="line.217">        MathUtil.interpolate(this.getX(), endValue.getX(), t),</a>
+<span class="sourceLineNo">218</span><a id="line.218">        MathUtil.interpolate(this.getY(), endValue.getY(), t));</a>
+<span class="sourceLineNo">219</span><a id="line.219">  }</a>
+<span class="sourceLineNo">220</span><a id="line.220">}</a>
 
 
 
