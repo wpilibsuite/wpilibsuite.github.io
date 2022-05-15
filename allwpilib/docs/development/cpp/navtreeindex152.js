@@ -1,5 +1,7 @@
 var NAVTREEINDEX152 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a9ede8dfbf4a63e58b5a9b1c18a545ace":[4,0,7,4,1186,0],
+"struct_eigen_1_1internal_1_1traits_3_01_indexed_view_3_01_xpr_type_00_01_row_indices_00_01_col_indices_01_4_01_4.html":[5,0,4,2,1186],
 "struct_eigen_1_1internal_1_1traits_3_01_indexed_view_3_01_xpr_type_00_01_row_indices_00_01_col_indices_01_4_01_4.html":[4,0,7,4,1188],
 "struct_eigen_1_1internal_1_1traits_3_01_indexed_view_3_01_xpr_type_00_01_row_indices_00_01_col_indices_01_4_01_4.html#afb5005f5a859693876e722e4da049ebb":[5,0,4,2,1186,0],
 "struct_eigen_1_1internal_1_1traits_3_01_indexed_view_3_01_xpr_type_00_01_row_indices_00_01_col_indices_01_4_01_4.html#afb5005f5a859693876e722e4da049ebb":[4,0,7,4,1188,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX152 =
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b":[4,0,7,4,1223,1],
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[5,0,4,2,1221,0],
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[4,0,7,4,1223,0],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_transpositions_base_3_01_derived_01_4_01_4_01_4.html":[4,0,7,4,1224],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_transpositions_base_3_01_derived_01_4_01_4_01_4.html":[5,0,4,2,1222],
-"struct_eigen_1_1internal_1_1traits_3_01_transpositions_3_01_size_at_compile_time_00_01_max_size_a3e3a58d21bfa7053a385355887ee81d.html":[4,0,7,4,1225]
+"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_transpositions_base_3_01_derived_01_4_01_4_01_4.html":[4,0,7,4,1224]
 };

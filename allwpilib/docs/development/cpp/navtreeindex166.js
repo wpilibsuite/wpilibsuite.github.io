@@ -1,5 +1,7 @@
 var NAVTREEINDEX166 =
 {
+"structwpi_1_1detail_1_1_constant_log2.html":[4,0,20,0,1],
+"structwpi_1_1detail_1_1_constant_log2_3_011_01_4.html":[5,0,13,0,2],
 "structwpi_1_1detail_1_1_constant_log2_3_011_01_4.html":[4,0,20,0,2],
 "structwpi_1_1detail_1_1_dense_map_pair.html":[4,0,20,0,3],
 "structwpi_1_1detail_1_1_dense_map_pair.html":[5,0,13,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX166 =
 "structwpi_1_1hashing_1_1detail_1_1hash__combine__recursive__helper.html#adaee158ae7fbd82704d02d5da78db3fc":[4,0,20,1,0,0,4],
 "structwpi_1_1hashing_1_1detail_1_1hash__combine__recursive__helper.html#af9f79479ab5910674c8d9bf2b843b42a":[4,0,20,1,0,0,0],
 "structwpi_1_1hashing_1_1detail_1_1hash__combine__recursive__helper.html#af9f79479ab5910674c8d9bf2b843b42a":[5,0,13,1,0,0,0],
-"structwpi_1_1hashing_1_1detail_1_1hash__state.html":[5,0,13,1,0,1],
-"structwpi_1_1hashing_1_1detail_1_1hash__state.html":[4,0,20,1,0,1],
-"structwpi_1_1hashing_1_1detail_1_1hash__state.html#a1ee632eb5a2376298adeccb4233747d7":[5,0,13,1,0,1,0]
+"structwpi_1_1hashing_1_1detail_1_1hash__state.html":[5,0,13,1,0,1]
 };

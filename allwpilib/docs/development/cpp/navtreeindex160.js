@@ -1,5 +1,7 @@
 var NAVTREEINDEX160 =
 {
+"structdragonbox_1_1float__info_3_01double_01_4.html#ae06a21434fe45b1bf1a939657bd85c77":[4,0,5,2,9],
+"structdragonbox_1_1float__info_3_01double_01_4.html#ae06a21434fe45b1bf1a939657bd85c77":[5,0,2,2,9],
 "structdragonbox_1_1float__info_3_01double_01_4.html#af009b85a54bd0a3c14a7777d16e40ccb":[4,0,5,2,14],
 "structdragonbox_1_1float__info_3_01double_01_4.html#af009b85a54bd0a3c14a7777d16e40ccb":[5,0,2,2,14],
 "structdragonbox_1_1float__info_3_01float_01_4.html":[4,0,5,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX160 =
 "structfrc_1_1_killough_drive_1_1_wheel_speeds.html#a77b831546f1f031ab36a271ed8065728":[4,0,9,85,0,0],
 "structfrc_1_1_killough_drive_1_1_wheel_speeds.html#ad15deace5c6202943fb317c7d1a572e1":[5,0,6,81,0,1],
 "structfrc_1_1_killough_drive_1_1_wheel_speeds.html#ad15deace5c6202943fb317c7d1a572e1":[4,0,9,85,0,1],
-"structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html":[5,0,6,93,0],
-"structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html":[4,0,9,97,0],
-"structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html#a00753652871e229b01010e1e2ef09544":[5,0,6,93,0,3]
+"structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html":[5,0,6,93,0]
 };

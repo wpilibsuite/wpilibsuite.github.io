@@ -1,5 +1,7 @@
 var NAVTREEINDEX144 =
 {
+"struct_eigen_1_1internal_1_1packet__traits_3_01int_01_4.html#a4c035d9ce275515f3eabf2934623190b":[5,0,4,2,773,1],
+"struct_eigen_1_1internal_1_1packet__traits_3_01int_01_4.html#abcd1d398b42e5452213afe6652f7cebb":[4,0,7,4,775,0],
 "struct_eigen_1_1internal_1_1packet__traits_3_01int_01_4.html#abcd1d398b42e5452213afe6652f7cebb":[5,0,4,2,773,0],
 "struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01double_01_4_01_4.html":[5,0,4,2,778],
 "struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01double_01_4_01_4.html":[4,0,7,4,780],
@@ -247,7 +249,5 @@ var NAVTREEINDEX144 =
 "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_na_n_01_4.html#af1f951bb990af52735433b3a25f961be":[4,0,7,4,824,0],
 "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html":[5,0,4,2,823],
 "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html":[4,0,7,4,825],
-"struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html#a04f8725e33f086a9cca1fbeed1e3c9ee":[5,0,4,2,823,0],
-"struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html#a04f8725e33f086a9cca1fbeed1e3c9ee":[4,0,7,4,825,0],
-"struct_eigen_1_1internal_1_1possibly__same__dense.html":[5,0,4,2,825]
+"struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html#a04f8725e33f086a9cca1fbeed1e3c9ee":[5,0,4,2,823,0]
 };

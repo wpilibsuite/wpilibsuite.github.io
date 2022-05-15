@@ -1,5 +1,7 @@
 var NAVTREEINDEX157 =
 {
+"struct_h_a_l___control_word.html#a9b255b89bcc7e8424ca3e10f90fd80c4":[3,1,1,0,6],
+"struct_h_a_l___control_word.html#aa5146867026c3bc59f2805818df7fa5b":[3,1,1,0,1],
 "struct_h_a_l___control_word.html#aa7bceb7e1043daf93f3d0bd303738246":[3,1,1,0,5],
 "struct_h_a_l___d_m_a_sample.html":[3,1,10,0],
 "struct_h_a_l___d_m_a_sample.html#a62aebb716df39c2402a5c84dbc64ca74":[3,1,10,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX157 =
 "structarg__data_3_01_t_00_01_char_00_01_n_u_m___a_r_g_s_00_010_01_4.html#ada261be8a267069cabe5c056e43caaf4":[5,0,18,0],
 "structarg__formatter.html":[5,0,19],
 "structarg__formatter.html#a2760e4ef8eff76fd158743e830a15da3":[5,0,19,2],
-"structarg__formatter.html#a370a39ceab731acd690fe36a1cbcf920":[5,0,19,0],
-"structarg__formatter.html#a55ad5bf4952eea89d8ad91ab70a1a71f":[5,0,19,6],
-"structarg__formatter.html#a672a78bc78c31cac247dda3ee49645d6":[5,0,19,3]
+"structarg__formatter.html#a370a39ceab731acd690fe36a1cbcf920":[5,0,19,0]
 };
