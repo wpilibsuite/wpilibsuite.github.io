@@ -22,80 +22,87 @@
 <span class="sourceLineNo">010</span><a id="line.10"></a>
 <span class="sourceLineNo">011</span><a id="line.11">/** A class representing a coordinate system axis within the NWU coordinate system. */</a>
 <span class="sourceLineNo">012</span><a id="line.12">public class CoordinateAxis {</a>
-<span class="sourceLineNo">013</span><a id="line.13">  final Vector&lt;N3&gt; m_axis;</a>
-<span class="sourceLineNo">014</span><a id="line.14"></a>
-<span class="sourceLineNo">015</span><a id="line.15">  /**</a>
-<span class="sourceLineNo">016</span><a id="line.16">   * Constructs a coordinate system axis within the NWU coordinate system and normalizes it.</a>
-<span class="sourceLineNo">017</span><a id="line.17">   *</a>
-<span class="sourceLineNo">018</span><a id="line.18">   * @param x The x component.</a>
-<span class="sourceLineNo">019</span><a id="line.19">   * @param y The y component.</a>
-<span class="sourceLineNo">020</span><a id="line.20">   * @param z The z component.</a>
-<span class="sourceLineNo">021</span><a id="line.21">   */</a>
-<span class="sourceLineNo">022</span><a id="line.22">  public CoordinateAxis(double x, double y, double z) {</a>
-<span class="sourceLineNo">023</span><a id="line.23">    double norm = Math.sqrt(x * x + y * y + z * z);</a>
-<span class="sourceLineNo">024</span><a id="line.24">    m_axis = VecBuilder.fill(x / norm, y / norm, z / norm);</a>
-<span class="sourceLineNo">025</span><a id="line.25">  }</a>
-<span class="sourceLineNo">026</span><a id="line.26"></a>
-<span class="sourceLineNo">027</span><a id="line.27">  /**</a>
-<span class="sourceLineNo">028</span><a id="line.28">   * Returns a coordinate axis corresponding to +X in the NWU coordinate system.</a>
-<span class="sourceLineNo">029</span><a id="line.29">   *</a>
-<span class="sourceLineNo">030</span><a id="line.30">   * @return A coordinate axis corresponding to +X in the NWU coordinate system.</a>
-<span class="sourceLineNo">031</span><a id="line.31">   */</a>
-<span class="sourceLineNo">032</span><a id="line.32">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">033</span><a id="line.33">  public static CoordinateAxis N() {</a>
-<span class="sourceLineNo">034</span><a id="line.34">    return new CoordinateAxis(1.0, 0.0, 0.0);</a>
-<span class="sourceLineNo">035</span><a id="line.35">  }</a>
-<span class="sourceLineNo">036</span><a id="line.36"></a>
-<span class="sourceLineNo">037</span><a id="line.37">  /**</a>
-<span class="sourceLineNo">038</span><a id="line.38">   * Returns a coordinate axis corresponding to -X in the NWU coordinate system.</a>
-<span class="sourceLineNo">039</span><a id="line.39">   *</a>
-<span class="sourceLineNo">040</span><a id="line.40">   * @return A coordinate axis corresponding to -X in the NWU coordinate system.</a>
-<span class="sourceLineNo">041</span><a id="line.41">   */</a>
-<span class="sourceLineNo">042</span><a id="line.42">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">043</span><a id="line.43">  public static CoordinateAxis S() {</a>
-<span class="sourceLineNo">044</span><a id="line.44">    return new CoordinateAxis(-1.0, 0.0, 0.0);</a>
-<span class="sourceLineNo">045</span><a id="line.45">  }</a>
-<span class="sourceLineNo">046</span><a id="line.46"></a>
-<span class="sourceLineNo">047</span><a id="line.47">  /**</a>
-<span class="sourceLineNo">048</span><a id="line.48">   * Returns a coordinate axis corresponding to -Y in the NWU coordinate system.</a>
-<span class="sourceLineNo">049</span><a id="line.49">   *</a>
-<span class="sourceLineNo">050</span><a id="line.50">   * @return A coordinate axis corresponding to -Y in the NWU coordinate system.</a>
-<span class="sourceLineNo">051</span><a id="line.51">   */</a>
-<span class="sourceLineNo">052</span><a id="line.52">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">053</span><a id="line.53">  public static CoordinateAxis E() {</a>
-<span class="sourceLineNo">054</span><a id="line.54">    return new CoordinateAxis(0.0, -1.0, 0.0);</a>
-<span class="sourceLineNo">055</span><a id="line.55">  }</a>
-<span class="sourceLineNo">056</span><a id="line.56"></a>
-<span class="sourceLineNo">057</span><a id="line.57">  /**</a>
-<span class="sourceLineNo">058</span><a id="line.58">   * Returns a coordinate axis corresponding to +Y in the NWU coordinate system.</a>
-<span class="sourceLineNo">059</span><a id="line.59">   *</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * @return A coordinate axis corresponding to +Y in the NWU coordinate system.</a>
-<span class="sourceLineNo">061</span><a id="line.61">   */</a>
-<span class="sourceLineNo">062</span><a id="line.62">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">063</span><a id="line.63">  public static CoordinateAxis W() {</a>
-<span class="sourceLineNo">064</span><a id="line.64">    return new CoordinateAxis(0.0, 1.0, 0.0);</a>
-<span class="sourceLineNo">065</span><a id="line.65">  }</a>
-<span class="sourceLineNo">066</span><a id="line.66"></a>
-<span class="sourceLineNo">067</span><a id="line.67">  /**</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * Returns a coordinate axis corresponding to +Z in the NWU coordinate system.</a>
-<span class="sourceLineNo">069</span><a id="line.69">   *</a>
-<span class="sourceLineNo">070</span><a id="line.70">   * @return A coordinate axis corresponding to +Z in the NWU coordinate system.</a>
-<span class="sourceLineNo">071</span><a id="line.71">   */</a>
-<span class="sourceLineNo">072</span><a id="line.72">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">073</span><a id="line.73">  public static CoordinateAxis U() {</a>
-<span class="sourceLineNo">074</span><a id="line.74">    return new CoordinateAxis(0.0, 0.0, 1.0);</a>
-<span class="sourceLineNo">075</span><a id="line.75">  }</a>
-<span class="sourceLineNo">076</span><a id="line.76"></a>
-<span class="sourceLineNo">077</span><a id="line.77">  /**</a>
-<span class="sourceLineNo">078</span><a id="line.78">   * Returns a coordinate axis corresponding to -Z in the NWU coordinate system.</a>
-<span class="sourceLineNo">079</span><a id="line.79">   *</a>
-<span class="sourceLineNo">080</span><a id="line.80">   * @return A coordinate axis corresponding to -Z in the NWU coordinate system.</a>
-<span class="sourceLineNo">081</span><a id="line.81">   */</a>
-<span class="sourceLineNo">082</span><a id="line.82">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">083</span><a id="line.83">  public static CoordinateAxis D() {</a>
-<span class="sourceLineNo">084</span><a id="line.84">    return new CoordinateAxis(0.0, 0.0, -1.0);</a>
-<span class="sourceLineNo">085</span><a id="line.85">  }</a>
-<span class="sourceLineNo">086</span><a id="line.86">}</a>
+<span class="sourceLineNo">013</span><a id="line.13">  private static final CoordinateAxis m_n = new CoordinateAxis(1.0, 0.0, 0.0);</a>
+<span class="sourceLineNo">014</span><a id="line.14">  private static final CoordinateAxis m_s = new CoordinateAxis(-1.0, 0.0, 0.0);</a>
+<span class="sourceLineNo">015</span><a id="line.15">  private static final CoordinateAxis m_e = new CoordinateAxis(0.0, -1.0, 0.0);</a>
+<span class="sourceLineNo">016</span><a id="line.16">  private static final CoordinateAxis m_w = new CoordinateAxis(0.0, 1.0, 0.0);</a>
+<span class="sourceLineNo">017</span><a id="line.17">  private static final CoordinateAxis m_u = new CoordinateAxis(0.0, 0.0, 1.0);</a>
+<span class="sourceLineNo">018</span><a id="line.18">  private static final CoordinateAxis m_d = new CoordinateAxis(0.0, 0.0, -1.0);</a>
+<span class="sourceLineNo">019</span><a id="line.19"></a>
+<span class="sourceLineNo">020</span><a id="line.20">  final Vector&lt;N3&gt; m_axis;</a>
+<span class="sourceLineNo">021</span><a id="line.21"></a>
+<span class="sourceLineNo">022</span><a id="line.22">  /**</a>
+<span class="sourceLineNo">023</span><a id="line.23">   * Constructs a coordinate system axis within the NWU coordinate system and normalizes it.</a>
+<span class="sourceLineNo">024</span><a id="line.24">   *</a>
+<span class="sourceLineNo">025</span><a id="line.25">   * @param x The x component.</a>
+<span class="sourceLineNo">026</span><a id="line.26">   * @param y The y component.</a>
+<span class="sourceLineNo">027</span><a id="line.27">   * @param z The z component.</a>
+<span class="sourceLineNo">028</span><a id="line.28">   */</a>
+<span class="sourceLineNo">029</span><a id="line.29">  public CoordinateAxis(double x, double y, double z) {</a>
+<span class="sourceLineNo">030</span><a id="line.30">    double norm = Math.sqrt(x * x + y * y + z * z);</a>
+<span class="sourceLineNo">031</span><a id="line.31">    m_axis = VecBuilder.fill(x / norm, y / norm, z / norm);</a>
+<span class="sourceLineNo">032</span><a id="line.32">  }</a>
+<span class="sourceLineNo">033</span><a id="line.33"></a>
+<span class="sourceLineNo">034</span><a id="line.34">  /**</a>
+<span class="sourceLineNo">035</span><a id="line.35">   * Returns a coordinate axis corresponding to +X in the NWU coordinate system.</a>
+<span class="sourceLineNo">036</span><a id="line.36">   *</a>
+<span class="sourceLineNo">037</span><a id="line.37">   * @return A coordinate axis corresponding to +X in the NWU coordinate system.</a>
+<span class="sourceLineNo">038</span><a id="line.38">   */</a>
+<span class="sourceLineNo">039</span><a id="line.39">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">040</span><a id="line.40">  public static CoordinateAxis N() {</a>
+<span class="sourceLineNo">041</span><a id="line.41">    return m_n;</a>
+<span class="sourceLineNo">042</span><a id="line.42">  }</a>
+<span class="sourceLineNo">043</span><a id="line.43"></a>
+<span class="sourceLineNo">044</span><a id="line.44">  /**</a>
+<span class="sourceLineNo">045</span><a id="line.45">   * Returns a coordinate axis corresponding to -X in the NWU coordinate system.</a>
+<span class="sourceLineNo">046</span><a id="line.46">   *</a>
+<span class="sourceLineNo">047</span><a id="line.47">   * @return A coordinate axis corresponding to -X in the NWU coordinate system.</a>
+<span class="sourceLineNo">048</span><a id="line.48">   */</a>
+<span class="sourceLineNo">049</span><a id="line.49">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">050</span><a id="line.50">  public static CoordinateAxis S() {</a>
+<span class="sourceLineNo">051</span><a id="line.51">    return m_s;</a>
+<span class="sourceLineNo">052</span><a id="line.52">  }</a>
+<span class="sourceLineNo">053</span><a id="line.53"></a>
+<span class="sourceLineNo">054</span><a id="line.54">  /**</a>
+<span class="sourceLineNo">055</span><a id="line.55">   * Returns a coordinate axis corresponding to -Y in the NWU coordinate system.</a>
+<span class="sourceLineNo">056</span><a id="line.56">   *</a>
+<span class="sourceLineNo">057</span><a id="line.57">   * @return A coordinate axis corresponding to -Y in the NWU coordinate system.</a>
+<span class="sourceLineNo">058</span><a id="line.58">   */</a>
+<span class="sourceLineNo">059</span><a id="line.59">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">060</span><a id="line.60">  public static CoordinateAxis E() {</a>
+<span class="sourceLineNo">061</span><a id="line.61">    return m_e;</a>
+<span class="sourceLineNo">062</span><a id="line.62">  }</a>
+<span class="sourceLineNo">063</span><a id="line.63"></a>
+<span class="sourceLineNo">064</span><a id="line.64">  /**</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * Returns a coordinate axis corresponding to +Y in the NWU coordinate system.</a>
+<span class="sourceLineNo">066</span><a id="line.66">   *</a>
+<span class="sourceLineNo">067</span><a id="line.67">   * @return A coordinate axis corresponding to +Y in the NWU coordinate system.</a>
+<span class="sourceLineNo">068</span><a id="line.68">   */</a>
+<span class="sourceLineNo">069</span><a id="line.69">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">070</span><a id="line.70">  public static CoordinateAxis W() {</a>
+<span class="sourceLineNo">071</span><a id="line.71">    return m_w;</a>
+<span class="sourceLineNo">072</span><a id="line.72">  }</a>
+<span class="sourceLineNo">073</span><a id="line.73"></a>
+<span class="sourceLineNo">074</span><a id="line.74">  /**</a>
+<span class="sourceLineNo">075</span><a id="line.75">   * Returns a coordinate axis corresponding to +Z in the NWU coordinate system.</a>
+<span class="sourceLineNo">076</span><a id="line.76">   *</a>
+<span class="sourceLineNo">077</span><a id="line.77">   * @return A coordinate axis corresponding to +Z in the NWU coordinate system.</a>
+<span class="sourceLineNo">078</span><a id="line.78">   */</a>
+<span class="sourceLineNo">079</span><a id="line.79">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">080</span><a id="line.80">  public static CoordinateAxis U() {</a>
+<span class="sourceLineNo">081</span><a id="line.81">    return m_u;</a>
+<span class="sourceLineNo">082</span><a id="line.82">  }</a>
+<span class="sourceLineNo">083</span><a id="line.83"></a>
+<span class="sourceLineNo">084</span><a id="line.84">  /**</a>
+<span class="sourceLineNo">085</span><a id="line.85">   * Returns a coordinate axis corresponding to -Z in the NWU coordinate system.</a>
+<span class="sourceLineNo">086</span><a id="line.86">   *</a>
+<span class="sourceLineNo">087</span><a id="line.87">   * @return A coordinate axis corresponding to -Z in the NWU coordinate system.</a>
+<span class="sourceLineNo">088</span><a id="line.88">   */</a>
+<span class="sourceLineNo">089</span><a id="line.89">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">090</span><a id="line.90">  public static CoordinateAxis D() {</a>
+<span class="sourceLineNo">091</span><a id="line.91">    return m_d;</a>
+<span class="sourceLineNo">092</span><a id="line.92">  }</a>
+<span class="sourceLineNo">093</span><a id="line.93">}</a>
 
 
 

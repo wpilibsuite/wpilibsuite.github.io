@@ -21,122 +21,129 @@
 <span class="sourceLineNo">009</span><a id="line.9"></a>
 <span class="sourceLineNo">010</span><a id="line.10">/** A helper class that converts Pose3d objects between different standard coordinate frames. */</a>
 <span class="sourceLineNo">011</span><a id="line.11">public class CoordinateSystem {</a>
-<span class="sourceLineNo">012</span><a id="line.12">  // Rotation from this coordinate system to NWU coordinate system</a>
-<span class="sourceLineNo">013</span><a id="line.13">  private final Rotation3d m_rotation;</a>
-<span class="sourceLineNo">014</span><a id="line.14"></a>
-<span class="sourceLineNo">015</span><a id="line.15">  /**</a>
-<span class="sourceLineNo">016</span><a id="line.16">   * Constructs a coordinate system with the given cardinal directions for each axis.</a>
-<span class="sourceLineNo">017</span><a id="line.17">   *</a>
-<span class="sourceLineNo">018</span><a id="line.18">   * @param positiveX The cardinal direction of the positive x-axis.</a>
-<span class="sourceLineNo">019</span><a id="line.19">   * @param positiveY The cardinal direction of the positive y-axis.</a>
-<span class="sourceLineNo">020</span><a id="line.20">   * @param positiveZ The cardinal direction of the positive z-axis.</a>
-<span class="sourceLineNo">021</span><a id="line.21">   * @throws IllegalArgumentException if the coordinate system isn't special orthogonal</a>
-<span class="sourceLineNo">022</span><a id="line.22">   */</a>
-<span class="sourceLineNo">023</span><a id="line.23">  public CoordinateSystem(</a>
-<span class="sourceLineNo">024</span><a id="line.24">      CoordinateAxis positiveX, CoordinateAxis positiveY, CoordinateAxis positiveZ) {</a>
-<span class="sourceLineNo">025</span><a id="line.25">    // Construct a change of basis matrix from the source coordinate system to the</a>
-<span class="sourceLineNo">026</span><a id="line.26">    // NWU coordinate system. Each column vector in the change of basis matrix is</a>
-<span class="sourceLineNo">027</span><a id="line.27">    // one of the old basis vectors mapped to its representation in the new basis.</a>
-<span class="sourceLineNo">028</span><a id="line.28">    @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">029</span><a id="line.29">    var R = new Matrix&lt;&gt;(Nat.N3(), Nat.N3());</a>
-<span class="sourceLineNo">030</span><a id="line.30">    R.assignBlock(0, 0, positiveX.m_axis);</a>
-<span class="sourceLineNo">031</span><a id="line.31">    R.assignBlock(0, 1, positiveY.m_axis);</a>
-<span class="sourceLineNo">032</span><a id="line.32">    R.assignBlock(0, 2, positiveZ.m_axis);</a>
-<span class="sourceLineNo">033</span><a id="line.33"></a>
-<span class="sourceLineNo">034</span><a id="line.34">    // Require that the change of basis matrix is special orthogonal. This is true</a>
-<span class="sourceLineNo">035</span><a id="line.35">    // if the axes used are orthogonal and normalized. The Axis class already</a>
-<span class="sourceLineNo">036</span><a id="line.36">    // normalizes itself, so we just need to check for orthogonality.</a>
-<span class="sourceLineNo">037</span><a id="line.37">    if (!R.times(R.transpose()).equals(Matrix.eye(Nat.N3()))) {</a>
-<span class="sourceLineNo">038</span><a id="line.38">      throw new IllegalArgumentException("Coordinate system isn't special orthogonal");</a>
-<span class="sourceLineNo">039</span><a id="line.39">    }</a>
+<span class="sourceLineNo">012</span><a id="line.12">  private static final CoordinateSystem m_nwu =</a>
+<span class="sourceLineNo">013</span><a id="line.13">      new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.W(), CoordinateAxis.U());</a>
+<span class="sourceLineNo">014</span><a id="line.14">  private static final CoordinateSystem m_edn =</a>
+<span class="sourceLineNo">015</span><a id="line.15">      new CoordinateSystem(CoordinateAxis.E(), CoordinateAxis.D(), CoordinateAxis.N());</a>
+<span class="sourceLineNo">016</span><a id="line.16">  private static final CoordinateSystem m_ned =</a>
+<span class="sourceLineNo">017</span><a id="line.17">      new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.E(), CoordinateAxis.D());</a>
+<span class="sourceLineNo">018</span><a id="line.18"></a>
+<span class="sourceLineNo">019</span><a id="line.19">  // Rotation from this coordinate system to NWU coordinate system</a>
+<span class="sourceLineNo">020</span><a id="line.20">  private final Rotation3d m_rotation;</a>
+<span class="sourceLineNo">021</span><a id="line.21"></a>
+<span class="sourceLineNo">022</span><a id="line.22">  /**</a>
+<span class="sourceLineNo">023</span><a id="line.23">   * Constructs a coordinate system with the given cardinal directions for each axis.</a>
+<span class="sourceLineNo">024</span><a id="line.24">   *</a>
+<span class="sourceLineNo">025</span><a id="line.25">   * @param positiveX The cardinal direction of the positive x-axis.</a>
+<span class="sourceLineNo">026</span><a id="line.26">   * @param positiveY The cardinal direction of the positive y-axis.</a>
+<span class="sourceLineNo">027</span><a id="line.27">   * @param positiveZ The cardinal direction of the positive z-axis.</a>
+<span class="sourceLineNo">028</span><a id="line.28">   * @throws IllegalArgumentException if the coordinate system isn't special orthogonal</a>
+<span class="sourceLineNo">029</span><a id="line.29">   */</a>
+<span class="sourceLineNo">030</span><a id="line.30">  public CoordinateSystem(</a>
+<span class="sourceLineNo">031</span><a id="line.31">      CoordinateAxis positiveX, CoordinateAxis positiveY, CoordinateAxis positiveZ) {</a>
+<span class="sourceLineNo">032</span><a id="line.32">    // Construct a change of basis matrix from the source coordinate system to the</a>
+<span class="sourceLineNo">033</span><a id="line.33">    // NWU coordinate system. Each column vector in the change of basis matrix is</a>
+<span class="sourceLineNo">034</span><a id="line.34">    // one of the old basis vectors mapped to its representation in the new basis.</a>
+<span class="sourceLineNo">035</span><a id="line.35">    @SuppressWarnings("LocalVariableName")</a>
+<span class="sourceLineNo">036</span><a id="line.36">    var R = new Matrix&lt;&gt;(Nat.N3(), Nat.N3());</a>
+<span class="sourceLineNo">037</span><a id="line.37">    R.assignBlock(0, 0, positiveX.m_axis);</a>
+<span class="sourceLineNo">038</span><a id="line.38">    R.assignBlock(0, 1, positiveY.m_axis);</a>
+<span class="sourceLineNo">039</span><a id="line.39">    R.assignBlock(0, 2, positiveZ.m_axis);</a>
 <span class="sourceLineNo">040</span><a id="line.40"></a>
-<span class="sourceLineNo">041</span><a id="line.41">    // Turn change of basis matrix into a quaternion since it's a pure rotation</a>
-<span class="sourceLineNo">042</span><a id="line.42">    // https://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/</a>
-<span class="sourceLineNo">043</span><a id="line.43">    double trace = R.get(0, 0) + R.get(1, 1) + R.get(2, 2);</a>
-<span class="sourceLineNo">044</span><a id="line.44">    double w;</a>
-<span class="sourceLineNo">045</span><a id="line.45">    double x;</a>
-<span class="sourceLineNo">046</span><a id="line.46">    double y;</a>
-<span class="sourceLineNo">047</span><a id="line.47">    double z;</a>
-<span class="sourceLineNo">048</span><a id="line.48"></a>
-<span class="sourceLineNo">049</span><a id="line.49">    if (trace &gt; 0.0) {</a>
-<span class="sourceLineNo">050</span><a id="line.50">      double s = 0.5 / Math.sqrt(trace + 1.0);</a>
-<span class="sourceLineNo">051</span><a id="line.51">      w = 0.25 / s;</a>
-<span class="sourceLineNo">052</span><a id="line.52">      x = (R.get(2, 1) - R.get(1, 2)) * s;</a>
-<span class="sourceLineNo">053</span><a id="line.53">      y = (R.get(0, 2) - R.get(2, 0)) * s;</a>
-<span class="sourceLineNo">054</span><a id="line.54">      z = (R.get(1, 0) - R.get(0, 1)) * s;</a>
-<span class="sourceLineNo">055</span><a id="line.55">    } else {</a>
-<span class="sourceLineNo">056</span><a id="line.56">      if (R.get(0, 0) &gt; R.get(1, 1) &amp;&amp; R.get(0, 0) &gt; R.get(2, 2)) {</a>
-<span class="sourceLineNo">057</span><a id="line.57">        double s = 2.0 * Math.sqrt(1.0 + R.get(0, 0) - R.get(1, 1) - R.get(2, 2));</a>
-<span class="sourceLineNo">058</span><a id="line.58">        w = (R.get(2, 1) - R.get(1, 2)) / s;</a>
-<span class="sourceLineNo">059</span><a id="line.59">        x = 0.25 * s;</a>
-<span class="sourceLineNo">060</span><a id="line.60">        y = (R.get(0, 1) + R.get(1, 0)) / s;</a>
-<span class="sourceLineNo">061</span><a id="line.61">        z = (R.get(0, 2) + R.get(2, 0)) / s;</a>
-<span class="sourceLineNo">062</span><a id="line.62">      } else if (R.get(1, 1) &gt; R.get(2, 2)) {</a>
-<span class="sourceLineNo">063</span><a id="line.63">        double s = 2.0 * Math.sqrt(1.0 + R.get(1, 1) - R.get(0, 0) - R.get(2, 2));</a>
-<span class="sourceLineNo">064</span><a id="line.64">        w = (R.get(0, 2) - R.get(2, 0)) / s;</a>
-<span class="sourceLineNo">065</span><a id="line.65">        x = (R.get(0, 1) + R.get(1, 0)) / s;</a>
-<span class="sourceLineNo">066</span><a id="line.66">        y = 0.25 * s;</a>
-<span class="sourceLineNo">067</span><a id="line.67">        z = (R.get(1, 2) + R.get(2, 1)) / s;</a>
-<span class="sourceLineNo">068</span><a id="line.68">      } else {</a>
-<span class="sourceLineNo">069</span><a id="line.69">        double s = 2.0 * Math.sqrt(1.0 + R.get(2, 2) - R.get(0, 0) - R.get(1, 1));</a>
-<span class="sourceLineNo">070</span><a id="line.70">        w = (R.get(1, 0) - R.get(0, 1)) / s;</a>
-<span class="sourceLineNo">071</span><a id="line.71">        x = (R.get(0, 2) + R.get(2, 0)) / s;</a>
-<span class="sourceLineNo">072</span><a id="line.72">        y = (R.get(1, 2) + R.get(2, 1)) / s;</a>
-<span class="sourceLineNo">073</span><a id="line.73">        z = 0.25 * s;</a>
-<span class="sourceLineNo">074</span><a id="line.74">      }</a>
-<span class="sourceLineNo">075</span><a id="line.75">    }</a>
-<span class="sourceLineNo">076</span><a id="line.76"></a>
-<span class="sourceLineNo">077</span><a id="line.77">    m_rotation = new Rotation3d(new Quaternion(w, x, y, z));</a>
-<span class="sourceLineNo">078</span><a id="line.78">  }</a>
-<span class="sourceLineNo">079</span><a id="line.79"></a>
-<span class="sourceLineNo">080</span><a id="line.80">  /**</a>
-<span class="sourceLineNo">081</span><a id="line.81">   * Returns an instance of the North-West-Up (NWU) coordinate system.</a>
-<span class="sourceLineNo">082</span><a id="line.82">   *</a>
-<span class="sourceLineNo">083</span><a id="line.83">   * &lt;p&gt;The +X axis is north, the +Y axis is west, and the +Z axis is up.</a>
-<span class="sourceLineNo">084</span><a id="line.84">   *</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * @return An instance of the North-West-Up (NWU) coordinate system.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   */</a>
-<span class="sourceLineNo">087</span><a id="line.87">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">088</span><a id="line.88">  public static CoordinateSystem NWU() {</a>
-<span class="sourceLineNo">089</span><a id="line.89">    return new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.W(), CoordinateAxis.U());</a>
-<span class="sourceLineNo">090</span><a id="line.90">  }</a>
-<span class="sourceLineNo">091</span><a id="line.91"></a>
-<span class="sourceLineNo">092</span><a id="line.92">  /**</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * Returns an instance of the East-Down-North (EDN) coordinate system.</a>
-<span class="sourceLineNo">094</span><a id="line.94">   *</a>
-<span class="sourceLineNo">095</span><a id="line.95">   * &lt;p&gt;The +X axis is east, the +Y axis is down, and the +Z axis is north.</a>
-<span class="sourceLineNo">096</span><a id="line.96">   *</a>
-<span class="sourceLineNo">097</span><a id="line.97">   * @return An instance of the East-Down-North (EDN) coordinate system.</a>
-<span class="sourceLineNo">098</span><a id="line.98">   */</a>
-<span class="sourceLineNo">099</span><a id="line.99">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">100</span><a id="line.100">  public static CoordinateSystem EDN() {</a>
-<span class="sourceLineNo">101</span><a id="line.101">    return new CoordinateSystem(CoordinateAxis.E(), CoordinateAxis.D(), CoordinateAxis.N());</a>
-<span class="sourceLineNo">102</span><a id="line.102">  }</a>
-<span class="sourceLineNo">103</span><a id="line.103"></a>
-<span class="sourceLineNo">104</span><a id="line.104">  /**</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * Returns an instance of the North-East-Down (NED) coordinate system.</a>
-<span class="sourceLineNo">106</span><a id="line.106">   *</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * &lt;p&gt;The +X axis is north, the +Y axis is east, and the +Z axis is down.</a>
-<span class="sourceLineNo">108</span><a id="line.108">   *</a>
-<span class="sourceLineNo">109</span><a id="line.109">   * @return An instance of the North-East-Down (NED) coordinate system.</a>
-<span class="sourceLineNo">110</span><a id="line.110">   */</a>
-<span class="sourceLineNo">111</span><a id="line.111">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">112</span><a id="line.112">  public static CoordinateSystem NED() {</a>
-<span class="sourceLineNo">113</span><a id="line.113">    return new CoordinateSystem(CoordinateAxis.N(), CoordinateAxis.E(), CoordinateAxis.D());</a>
-<span class="sourceLineNo">114</span><a id="line.114">  }</a>
-<span class="sourceLineNo">115</span><a id="line.115"></a>
-<span class="sourceLineNo">116</span><a id="line.116">  /**</a>
-<span class="sourceLineNo">117</span><a id="line.117">   * Converts the given pose from one coordinate system to another.</a>
-<span class="sourceLineNo">118</span><a id="line.118">   *</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * @param pose The pose to convert.</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * @param from The coordinate system the pose starts in.</a>
-<span class="sourceLineNo">121</span><a id="line.121">   * @param to The coordinate system to which to convert.</a>
-<span class="sourceLineNo">122</span><a id="line.122">   * @return The given pose in the desired coordinate system.</a>
-<span class="sourceLineNo">123</span><a id="line.123">   */</a>
-<span class="sourceLineNo">124</span><a id="line.124">  public static Pose3d convert(Pose3d pose, CoordinateSystem from, CoordinateSystem to) {</a>
-<span class="sourceLineNo">125</span><a id="line.125">    return pose.relativeTo(new Pose3d(new Translation3d(), to.m_rotation.minus(from.m_rotation)));</a>
-<span class="sourceLineNo">126</span><a id="line.126">  }</a>
-<span class="sourceLineNo">127</span><a id="line.127">}</a>
+<span class="sourceLineNo">041</span><a id="line.41">    // Require that the change of basis matrix is special orthogonal. This is true</a>
+<span class="sourceLineNo">042</span><a id="line.42">    // if the axes used are orthogonal and normalized. The Axis class already</a>
+<span class="sourceLineNo">043</span><a id="line.43">    // normalizes itself, so we just need to check for orthogonality.</a>
+<span class="sourceLineNo">044</span><a id="line.44">    if (!R.times(R.transpose()).equals(Matrix.eye(Nat.N3()))) {</a>
+<span class="sourceLineNo">045</span><a id="line.45">      throw new IllegalArgumentException("Coordinate system isn't special orthogonal");</a>
+<span class="sourceLineNo">046</span><a id="line.46">    }</a>
+<span class="sourceLineNo">047</span><a id="line.47"></a>
+<span class="sourceLineNo">048</span><a id="line.48">    // Turn change of basis matrix into a quaternion since it's a pure rotation</a>
+<span class="sourceLineNo">049</span><a id="line.49">    // https://www.euclideanspace.com/maths/geometry/rotations/conversions/matrixToQuaternion/</a>
+<span class="sourceLineNo">050</span><a id="line.50">    double trace = R.get(0, 0) + R.get(1, 1) + R.get(2, 2);</a>
+<span class="sourceLineNo">051</span><a id="line.51">    double w;</a>
+<span class="sourceLineNo">052</span><a id="line.52">    double x;</a>
+<span class="sourceLineNo">053</span><a id="line.53">    double y;</a>
+<span class="sourceLineNo">054</span><a id="line.54">    double z;</a>
+<span class="sourceLineNo">055</span><a id="line.55"></a>
+<span class="sourceLineNo">056</span><a id="line.56">    if (trace &gt; 0.0) {</a>
+<span class="sourceLineNo">057</span><a id="line.57">      double s = 0.5 / Math.sqrt(trace + 1.0);</a>
+<span class="sourceLineNo">058</span><a id="line.58">      w = 0.25 / s;</a>
+<span class="sourceLineNo">059</span><a id="line.59">      x = (R.get(2, 1) - R.get(1, 2)) * s;</a>
+<span class="sourceLineNo">060</span><a id="line.60">      y = (R.get(0, 2) - R.get(2, 0)) * s;</a>
+<span class="sourceLineNo">061</span><a id="line.61">      z = (R.get(1, 0) - R.get(0, 1)) * s;</a>
+<span class="sourceLineNo">062</span><a id="line.62">    } else {</a>
+<span class="sourceLineNo">063</span><a id="line.63">      if (R.get(0, 0) &gt; R.get(1, 1) &amp;&amp; R.get(0, 0) &gt; R.get(2, 2)) {</a>
+<span class="sourceLineNo">064</span><a id="line.64">        double s = 2.0 * Math.sqrt(1.0 + R.get(0, 0) - R.get(1, 1) - R.get(2, 2));</a>
+<span class="sourceLineNo">065</span><a id="line.65">        w = (R.get(2, 1) - R.get(1, 2)) / s;</a>
+<span class="sourceLineNo">066</span><a id="line.66">        x = 0.25 * s;</a>
+<span class="sourceLineNo">067</span><a id="line.67">        y = (R.get(0, 1) + R.get(1, 0)) / s;</a>
+<span class="sourceLineNo">068</span><a id="line.68">        z = (R.get(0, 2) + R.get(2, 0)) / s;</a>
+<span class="sourceLineNo">069</span><a id="line.69">      } else if (R.get(1, 1) &gt; R.get(2, 2)) {</a>
+<span class="sourceLineNo">070</span><a id="line.70">        double s = 2.0 * Math.sqrt(1.0 + R.get(1, 1) - R.get(0, 0) - R.get(2, 2));</a>
+<span class="sourceLineNo">071</span><a id="line.71">        w = (R.get(0, 2) - R.get(2, 0)) / s;</a>
+<span class="sourceLineNo">072</span><a id="line.72">        x = (R.get(0, 1) + R.get(1, 0)) / s;</a>
+<span class="sourceLineNo">073</span><a id="line.73">        y = 0.25 * s;</a>
+<span class="sourceLineNo">074</span><a id="line.74">        z = (R.get(1, 2) + R.get(2, 1)) / s;</a>
+<span class="sourceLineNo">075</span><a id="line.75">      } else {</a>
+<span class="sourceLineNo">076</span><a id="line.76">        double s = 2.0 * Math.sqrt(1.0 + R.get(2, 2) - R.get(0, 0) - R.get(1, 1));</a>
+<span class="sourceLineNo">077</span><a id="line.77">        w = (R.get(1, 0) - R.get(0, 1)) / s;</a>
+<span class="sourceLineNo">078</span><a id="line.78">        x = (R.get(0, 2) + R.get(2, 0)) / s;</a>
+<span class="sourceLineNo">079</span><a id="line.79">        y = (R.get(1, 2) + R.get(2, 1)) / s;</a>
+<span class="sourceLineNo">080</span><a id="line.80">        z = 0.25 * s;</a>
+<span class="sourceLineNo">081</span><a id="line.81">      }</a>
+<span class="sourceLineNo">082</span><a id="line.82">    }</a>
+<span class="sourceLineNo">083</span><a id="line.83"></a>
+<span class="sourceLineNo">084</span><a id="line.84">    m_rotation = new Rotation3d(new Quaternion(w, x, y, z));</a>
+<span class="sourceLineNo">085</span><a id="line.85">  }</a>
+<span class="sourceLineNo">086</span><a id="line.86"></a>
+<span class="sourceLineNo">087</span><a id="line.87">  /**</a>
+<span class="sourceLineNo">088</span><a id="line.88">   * Returns an instance of the North-West-Up (NWU) coordinate system.</a>
+<span class="sourceLineNo">089</span><a id="line.89">   *</a>
+<span class="sourceLineNo">090</span><a id="line.90">   * &lt;p&gt;The +X axis is north, the +Y axis is west, and the +Z axis is up.</a>
+<span class="sourceLineNo">091</span><a id="line.91">   *</a>
+<span class="sourceLineNo">092</span><a id="line.92">   * @return An instance of the North-West-Up (NWU) coordinate system.</a>
+<span class="sourceLineNo">093</span><a id="line.93">   */</a>
+<span class="sourceLineNo">094</span><a id="line.94">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">095</span><a id="line.95">  public static CoordinateSystem NWU() {</a>
+<span class="sourceLineNo">096</span><a id="line.96">    return m_nwu;</a>
+<span class="sourceLineNo">097</span><a id="line.97">  }</a>
+<span class="sourceLineNo">098</span><a id="line.98"></a>
+<span class="sourceLineNo">099</span><a id="line.99">  /**</a>
+<span class="sourceLineNo">100</span><a id="line.100">   * Returns an instance of the East-Down-North (EDN) coordinate system.</a>
+<span class="sourceLineNo">101</span><a id="line.101">   *</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * &lt;p&gt;The +X axis is east, the +Y axis is down, and the +Z axis is north.</a>
+<span class="sourceLineNo">103</span><a id="line.103">   *</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * @return An instance of the East-Down-North (EDN) coordinate system.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   */</a>
+<span class="sourceLineNo">106</span><a id="line.106">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">107</span><a id="line.107">  public static CoordinateSystem EDN() {</a>
+<span class="sourceLineNo">108</span><a id="line.108">    return m_edn;</a>
+<span class="sourceLineNo">109</span><a id="line.109">  }</a>
+<span class="sourceLineNo">110</span><a id="line.110"></a>
+<span class="sourceLineNo">111</span><a id="line.111">  /**</a>
+<span class="sourceLineNo">112</span><a id="line.112">   * Returns an instance of the North-East-Down (NED) coordinate system.</a>
+<span class="sourceLineNo">113</span><a id="line.113">   *</a>
+<span class="sourceLineNo">114</span><a id="line.114">   * &lt;p&gt;The +X axis is north, the +Y axis is east, and the +Z axis is down.</a>
+<span class="sourceLineNo">115</span><a id="line.115">   *</a>
+<span class="sourceLineNo">116</span><a id="line.116">   * @return An instance of the North-East-Down (NED) coordinate system.</a>
+<span class="sourceLineNo">117</span><a id="line.117">   */</a>
+<span class="sourceLineNo">118</span><a id="line.118">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">119</span><a id="line.119">  public static CoordinateSystem NED() {</a>
+<span class="sourceLineNo">120</span><a id="line.120">    return m_ned;</a>
+<span class="sourceLineNo">121</span><a id="line.121">  }</a>
+<span class="sourceLineNo">122</span><a id="line.122"></a>
+<span class="sourceLineNo">123</span><a id="line.123">  /**</a>
+<span class="sourceLineNo">124</span><a id="line.124">   * Converts the given pose from one coordinate system to another.</a>
+<span class="sourceLineNo">125</span><a id="line.125">   *</a>
+<span class="sourceLineNo">126</span><a id="line.126">   * @param pose The pose to convert.</a>
+<span class="sourceLineNo">127</span><a id="line.127">   * @param from The coordinate system the pose starts in.</a>
+<span class="sourceLineNo">128</span><a id="line.128">   * @param to The coordinate system to which to convert.</a>
+<span class="sourceLineNo">129</span><a id="line.129">   * @return The given pose in the desired coordinate system.</a>
+<span class="sourceLineNo">130</span><a id="line.130">   */</a>
+<span class="sourceLineNo">131</span><a id="line.131">  public static Pose3d convert(Pose3d pose, CoordinateSystem from, CoordinateSystem to) {</a>
+<span class="sourceLineNo">132</span><a id="line.132">    return pose.relativeTo(new Pose3d(new Translation3d(), to.m_rotation.minus(from.m_rotation)));</a>
+<span class="sourceLineNo">133</span><a id="line.133">  }</a>
+<span class="sourceLineNo">134</span><a id="line.134">}</a>
 
 
 
