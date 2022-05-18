@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-91-g8bd614b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-93-g65b23ac</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,15 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a2e3880c63424f48dd2ca35076e86b00c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a2e3880c63424f48dd2ca35076e86b00c">toTimeT</a> (<a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt;&gt; TP)</td></tr>
+<tr class="memdesc:a2e3880c63424f48dd2ca35076e86b00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a TimePoint to std::time_t.  <a href="namespacewpi_1_1sys.html#a2e3880c63424f48dd2ca35076e86b00c">More...</a><br /></td></tr>
+<tr class="separator:a2e3880c63424f48dd2ca35076e86b00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17444a3da59200223bbf5987e31c6f8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a17444a3da59200223bbf5987e31c6f8e">toTimePoint</a> (std::time_t T)</td></tr>
+<tr class="memdesc:a17444a3da59200223bbf5987e31c6f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t to a TimePoint.  <a href="namespacewpi_1_1sys.html#a17444a3da59200223bbf5987e31c6f8e">More...</a><br /></td></tr>
+<tr class="separator:a17444a3da59200223bbf5987e31c6f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b23f0e126d56f33d263a7f26621c767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a2b23f0e126d56f33d263a7f26621c767">toTimePoint</a> (std::time_t T, uint32_t nsec)</td></tr>
+<tr class="memdesc:a2b23f0e126d56f33d263a7f26621c767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t + nanoseconds to a TimePoint.  <a href="namespacewpi_1_1sys.html#a2b23f0e126d56f33d263a7f26621c767">More...</a><br /></td></tr>
+<tr class="separator:a2b23f0e126d56f33d263a7f26621c767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73200f3186fc5706331d8460ead59657"><td class="memTemplParams" colspan="2">template&lt;typename FailT , typename Fun , typename... Args&gt; </td></tr>
 <tr class="memitem:a73200f3186fc5706331d8460ead59657"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a73200f3186fc5706331d8460ead59657">RetryAfterSignal</a> (const FailT &amp;Fail, const Fun &amp;F, const Args &amp;... As) -&gt; decltype(F(As...))</td></tr>
 <tr class="separator:a73200f3186fc5706331d8460ead59657"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,15 +157,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a103e28fdca610111cb2572b14facecc3">swapByteOrder</a> (T &amp;Value)</td></tr>
 <tr class="separator:a103e28fdca610111cb2572b14facecc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3880c63424f48dd2ca35076e86b00c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a2e3880c63424f48dd2ca35076e86b00c">toTimeT</a> (<a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt;&gt; TP)</td></tr>
-<tr class="memdesc:a2e3880c63424f48dd2ca35076e86b00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a TimePoint to std::time_t.  <a href="namespacewpi_1_1sys.html#a2e3880c63424f48dd2ca35076e86b00c">More...</a><br /></td></tr>
-<tr class="separator:a2e3880c63424f48dd2ca35076e86b00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17444a3da59200223bbf5987e31c6f8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a17444a3da59200223bbf5987e31c6f8e">toTimePoint</a> (std::time_t T)</td></tr>
-<tr class="memdesc:a17444a3da59200223bbf5987e31c6f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t to a TimePoint.  <a href="namespacewpi_1_1sys.html#a17444a3da59200223bbf5987e31c6f8e">More...</a><br /></td></tr>
-<tr class="separator:a17444a3da59200223bbf5987e31c6f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b23f0e126d56f33d263a7f26621c767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a2b23f0e126d56f33d263a7f26621c767">toTimePoint</a> (std::time_t T, uint32_t nsec)</td></tr>
-<tr class="memdesc:a2b23f0e126d56f33d263a7f26621c767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t + nanoseconds to a TimePoint.  <a href="namespacewpi_1_1sys.html#a2b23f0e126d56f33d263a7f26621c767">More...</a><br /></td></tr>
-<tr class="separator:a2b23f0e126d56f33d263a7f26621c767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a26b4c3769d9f1b9f371d2bf4c07e1946" name="a26b4c3769d9f1b9f371d2bf4c07e1946"></a>
@@ -752,7 +752,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1sys.html">sys</a></li>
-    <li class="footer">Generated on Wed May 18 2022 19:27:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed May 18 2022 21:39:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
