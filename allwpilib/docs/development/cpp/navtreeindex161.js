@@ -1,5 +1,9 @@
 var NAVTREEINDEX161 =
 {
+"structfrc_1_1_killough_drive_1_1_wheel_speeds.html#a77b831546f1f031ab36a271ed8065728":[4,0,9,85,0,0],
+"structfrc_1_1_killough_drive_1_1_wheel_speeds.html#ad15deace5c6202943fb317c7d1a572e1":[5,0,6,81,0,1],
+"structfrc_1_1_killough_drive_1_1_wheel_speeds.html#ad15deace5c6202943fb317c7d1a572e1":[4,0,9,85,0,1],
+"structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html":[5,0,6,93,0],
 "structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html":[4,0,9,97,0],
 "structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html#a00753652871e229b01010e1e2ef09544":[5,0,6,93,0,3],
 "structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html#a00753652871e229b01010e1e2ef09544":[4,0,9,97,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX161 =
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#adc57c1e1f43488b767a42943861e0567":[4,0,9,119,1,27],
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#ae42471c4f6426722446cb9b7d450f7f2":[4,0,9,119,1,1],
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#ae42471c4f6426722446cb9b7d450f7f2":[5,0,6,115,1,1],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#aecaaafeef48d2953c0c016921366ea2e":[4,0,9,119,1,16],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#aecaaafeef48d2953c0c016921366ea2e":[5,0,6,115,1,16],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#aee9880a4afc1679a760e77d8371deaf2":[5,0,6,115,1,26],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#aee9880a4afc1679a760e77d8371deaf2":[4,0,9,119,1,26],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#aeffd70c283cba95d16dec1b5a617c0ba":[4,0,9,119,1,2]
+"structfrc_1_1_power_distribution_1_1_sticky_faults.html#aecaaafeef48d2953c0c016921366ea2e":[4,0,9,119,1,16]
 };

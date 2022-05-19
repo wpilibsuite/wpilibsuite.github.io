@@ -1,5 +1,9 @@
 var NAVTREEINDEX158 =
 {
+"structarg__data_3_01_t_00_01_char_00_01_n_u_m___a_r_g_s_00_010_01_4.html#ada261be8a267069cabe5c056e43caaf4":[5,0,18,0],
+"structarg__formatter.html":[5,0,19],
+"structarg__formatter.html#a2760e4ef8eff76fd158743e830a15da3":[5,0,19,2],
+"structarg__formatter.html#a370a39ceab731acd690fe36a1cbcf920":[5,0,19,0],
 "structarg__formatter.html#a55ad5bf4952eea89d8ad91ab70a1a71f":[5,0,19,6],
 "structarg__formatter.html#a672a78bc78c31cac247dda3ee49645d6":[5,0,19,3],
 "structarg__formatter.html#a7564446a13d037cd4e415f17d4ae8214":[5,0,19,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX158 =
 "structdetail_1_1accumulator.html#a03dfd4b7f01ae786012dea3d7fbbce2a":[5,0,1,1,5],
 "structdetail_1_1accumulator.html#a03dfd4b7f01ae786012dea3d7fbbce2a":[4,0,3,2,5],
 "structdetail_1_1accumulator.html#a2c91f36c17369bba02b1294dd5717ee5":[5,0,1,1,2],
-"structdetail_1_1accumulator.html#a2c91f36c17369bba02b1294dd5717ee5":[4,0,3,2,2],
-"structdetail_1_1accumulator.html#abc770436f2cbafae8ee59117f35391a1":[5,0,1,1,3],
-"structdetail_1_1accumulator.html#abc770436f2cbafae8ee59117f35391a1":[4,0,3,2,3],
-"structdetail_1_1accumulator.html#acfb4854c0ca74f1198ea51a2400e14e3":[5,0,1,1,1],
-"structdetail_1_1accumulator.html#acfb4854c0ca74f1198ea51a2400e14e3":[4,0,3,2,1]
+"structdetail_1_1accumulator.html#a2c91f36c17369bba02b1294dd5717ee5":[4,0,3,2,2]
 };

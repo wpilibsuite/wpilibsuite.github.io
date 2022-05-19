@@ -1,5 +1,9 @@
 var NAVTREEINDEX151 =
 {
+"struct_eigen_1_1internal_1_1swap__assign__op.html#ab1fe79d889055ac656e96f7c7a51b11c":[4,0,7,4,1152,0],
+"struct_eigen_1_1internal_1_1symbolic__last__tag.html":[5,0,4,2,1151],
+"struct_eigen_1_1internal_1_1symbolic__last__tag.html":[4,0,7,4,1153],
+"struct_eigen_1_1internal_1_1symm__pack__lhs.html":[5,0,4,2,1152],
 "struct_eigen_1_1internal_1_1symm__pack__lhs.html":[4,0,7,4,1154],
 "struct_eigen_1_1internal_1_1symm__pack__lhs.html#aad8bf0f72a54a95ee37e79f74c603fd5":[4,0,7,4,1154,1],
 "struct_eigen_1_1internal_1_1symm__pack__lhs.html#aad8bf0f72a54a95ee37e79f74c603fd5":[5,0,4,2,1152,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX151 =
 "struct_eigen_1_1internal_1_1traits_3_01_householder_q_r_3_01___matrix_type_01_4_01_4.html#af2acaab694c7805b238f85d353967333":[4,0,7,4,1185,1],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html":[4,0,7,4,1186],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html":[5,0,4,2,1184],
-"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a178edf36545f29db3ec5052a7a79d33d":[5,0,4,2,1184,1],
-"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a178edf36545f29db3ec5052a7a79d33d":[4,0,7,4,1186,1],
-"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a270a1e2a935fb1e006b2eca85157cf7b":[5,0,4,2,1184,2],
-"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a270a1e2a935fb1e006b2eca85157cf7b":[4,0,7,4,1186,2],
-"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a9ede8dfbf4a63e58b5a9b1c18a545ace":[5,0,4,2,1184,0]
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a178edf36545f29db3ec5052a7a79d33d":[5,0,4,2,1184,1]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX135 =
 {
+"struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#a26fd72a7f24a74dd63d13268b05458a4":[5,0,4,2,247,2],
+"struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#adcd4282d8e49e661ed8e123f92bdb308":[4,0,7,4,249,1],
+"struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#adcd4282d8e49e661ed8e123f92bdb308":[5,0,4,2,247,1],
+"struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#af46c6f58464fb29fbf8da63fd2f12f8a":[4,0,7,4,249,0],
 "struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#af46c6f58464fb29fbf8da63fd2f12f8a":[5,0,4,2,247,0],
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html":[4,0,7,4,251],
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html":[5,0,4,2,249],
@@ -245,9 +249,5 @@ var NAVTREEINDEX135 =
 "struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a5fe727d25f7814f608d734f57d8511a4":[5,0,4,2,288,10],
 "struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a600b11188fd3548b6b04d0ceeae9e5c9":[5,0,4,2,288,4],
 "struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a600b11188fd3548b6b04d0ceeae9e5c9":[4,0,7,4,290,4],
-"struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a67698eb7809030ca9ef978fae390c434":[5,0,4,2,288,13],
-"struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a67698eb7809030ca9ef978fae390c434":[4,0,7,4,290,13],
-"struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a93f4e6c7a396450f3257059d75501655":[4,0,7,4,290,11],
-"struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a93f4e6c7a396450f3257059d75501655":[5,0,4,2,288,11],
-"struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a9436b5cbe9815a7a80d3222cd40fb8d7":[4,0,7,4,290,9]
+"struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#a67698eb7809030ca9ef978fae390c434":[5,0,4,2,288,13]
 };

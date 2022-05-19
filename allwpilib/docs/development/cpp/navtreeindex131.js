@@ -1,5 +1,9 @@
 var NAVTREEINDEX131 =
 {
+"struct_eigen_1_1internal_1_1abs2__impl__default_3_01_scalar_00_01true_01_4.html#a36a5b9f72f5956e9e52abf4fdaf00c75":[5,0,4,2,2,0],
+"struct_eigen_1_1internal_1_1abs2__retval.html":[4,0,7,4,5],
+"struct_eigen_1_1internal_1_1abs2__retval.html":[5,0,4,2,3],
+"struct_eigen_1_1internal_1_1abs2__retval.html#a9c58d3ea1a60822c36ecae2c55d7a46a":[4,0,7,4,5,0],
 "struct_eigen_1_1internal_1_1abs2__retval.html#a9c58d3ea1a60822c36ecae2c55d7a46a":[5,0,4,2,3,0],
 "struct_eigen_1_1internal_1_1abs__knowing__score.html":[5,0,4,2,4],
 "struct_eigen_1_1internal_1_1abs__knowing__score.html":[4,0,7,4,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX131 =
 "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html":[5,0,4,2,92,0],
 "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a0ea22034cd21b01d4083f9ad25e74fd5":[5,0,4,2,92,0,2],
 "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a0ea22034cd21b01d4083f9ad25e74fd5":[4,0,7,4,94,0,2],
-"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a4db03a8b189bf8f576fcd065f1ff742a":[4,0,7,4,94,0,4],
-"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a4db03a8b189bf8f576fcd065f1ff742a":[5,0,4,2,92,0,4],
-"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a8419fa6c6f6a0805f6f079a1b38bcadc":[5,0,4,2,92,0,3],
-"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a8419fa6c6f6a0805f6f079a1b38bcadc":[4,0,7,4,94,0,3],
-"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a877ef466033344cb98b1bbc920352610":[4,0,7,4,94,0,0]
+"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#a4db03a8b189bf8f576fcd065f1ff742a":[4,0,7,4,94,0,4]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX129 =
 {
+"struct_eigen_1_1half.html#aacb6df329abd1321499f6ed3ddd3ee1e":[5,0,4,78,7],
+"struct_eigen_1_1half.html#ae5731ae372b4657adfe63fedfa1c2e5f":[4,0,7,81,2],
+"struct_eigen_1_1half.html#ae5731ae372b4657adfe63fedfa1c2e5f":[5,0,4,78,2],
+"struct_eigen_1_1half__impl_1_1____half__raw.html":[5,0,4,1,0],
 "struct_eigen_1_1half__impl_1_1____half__raw.html":[4,0,7,2,0],
 "struct_eigen_1_1half__impl_1_1____half__raw.html#a1e5a15ab21f5d4b0e67dbd568565e86c":[4,0,7,2,0,1],
 "struct_eigen_1_1half__impl_1_1____half__raw.html#a1e5a15ab21f5d4b0e67dbd568565e86c":[5,0,4,1,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX129 =
 "struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html#aeca3ef83807e4dd6b4fdc73ac20dc000":[3,28,0,6],
 "struct_eigen_1_1internal_1_1_gemm_parallel_info.html":[4,0,7,4,446],
 "struct_eigen_1_1internal_1_1_gemm_parallel_info.html":[5,0,4,2,444],
-"struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a667052537d47851e8561ce8c8679a5de":[5,0,4,2,444,0],
-"struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a667052537d47851e8561ce8c8679a5de":[4,0,7,4,446,0],
-"struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a6709199f56602a45662c9eb6c1178dd2":[5,0,4,2,444,1],
-"struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a6709199f56602a45662c9eb6c1178dd2":[4,0,7,4,446,1],
-"struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a7a6a21f9b9b4a9fa4833659509333fdb":[5,0,4,2,444,2]
+"struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a667052537d47851e8561ce8c8679a5de":[5,0,4,2,444,0]
 };
