@@ -335,7 +335,7 @@
 <span class="sourceLineNo">323</span><a id="line.323">    var B = new Matrix&lt;&gt;(Nat.N4(), Nat.N2());</a>
 <span class="sourceLineNo">324</span><a id="line.324">    B.assignBlock(0, 0, m_plant.getB().times(this.m_currentGearing / this.m_originalGearing));</a>
 <span class="sourceLineNo">325</span><a id="line.325"></a>
-<span class="sourceLineNo">326</span><a id="line.326">    // Because G^2 can be factored out of A, we can divide by the old ratio squared and multiply</a>
+<span class="sourceLineNo">326</span><a id="line.326">    // Because G² can be factored out of A, we can divide by the old ratio squared and multiply</a>
 <span class="sourceLineNo">327</span><a id="line.327">    // by the new ratio squared to get a new drivetrain model.</a>
 <span class="sourceLineNo">328</span><a id="line.328">    var A = new Matrix&lt;&gt;(Nat.N4(), Nat.N4());</a>
 <span class="sourceLineNo">329</span><a id="line.329">    A.assignBlock(</a>
@@ -467,7 +467,7 @@
 <span class="sourceLineNo">455</span><a id="line.455">      KitbotGearing gearing,</a>
 <span class="sourceLineNo">456</span><a id="line.456">      KitbotWheelSize wheelSize,</a>
 <span class="sourceLineNo">457</span><a id="line.457">      Matrix&lt;N7, N1&gt; measurementStdDevs) {</a>
-<span class="sourceLineNo">458</span><a id="line.458">    // MOI estimation -- note that I = m r^2 for point masses</a>
+<span class="sourceLineNo">458</span><a id="line.458">    // MOI estimation -- note that I = mr² for point masses</a>
 <span class="sourceLineNo">459</span><a id="line.459">    var batteryMoi = 12.5 / 2.2 * Math.pow(Units.inchesToMeters(10), 2);</a>
 <span class="sourceLineNo">460</span><a id="line.460">    var gearboxMoi =</a>
 <span class="sourceLineNo">461</span><a id="line.461">        (2.8 /* CIM motor */ * 2 / 2.2 + 2.0 /* Toughbox Mini- ish */)</a>
