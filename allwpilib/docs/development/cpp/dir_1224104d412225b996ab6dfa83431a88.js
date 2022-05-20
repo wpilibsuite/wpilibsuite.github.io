@@ -5,10 +5,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "sendable", "dir_66b42d2eb6c651d815a5f70399c9ed10.html", "dir_66b42d2eb6c651d815a5f70399c9ed10" ],
     [ "Algorithm.h", "_algorithm_8h.html", "_algorithm_8h" ],
     [ "AlignOf.h", "_align_of_8h.html", [
-      [ "wpi::AlignedCharArray< Alignment, Size >", "structwpi_1_1_aligned_char_array.html", "structwpi_1_1_aligned_char_array" ],
-      [ "wpi::detail::AlignerImpl< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "classwpi_1_1detail_1_1_aligner_impl.html", null ],
-      [ "wpi::detail::SizerImpl< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "unionwpi_1_1detail_1_1_sizer_impl.html", "unionwpi_1_1detail_1_1_sizer_impl" ],
-      [ "wpi::AlignedCharArrayUnion< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "structwpi_1_1_aligned_char_array_union.html", null ]
+      [ "wpi::AlignedCharArrayUnion< T, Ts >", "structwpi_1_1_aligned_char_array_union.html", "structwpi_1_1_aligned_char_array_union" ]
     ] ],
     [ "array.h", "wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html", "wpiutil_2src_2main_2native_2include_2wpi_2array_8h" ],
     [ "Base64.h", "_base64_8h.html", "_base64_8h" ],
@@ -41,23 +38,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     ] ],
     [ "Demangle.h", "_demangle_8h.html", "_demangle_8h" ],
     [ "DenseMap.h", "_dense_map_8h.html", "_dense_map_8h" ],
-    [ "DenseMapInfo.h", "_dense_map_info_8h.html", [
-      [ "wpi::DenseMapInfo< T >", "structwpi_1_1_dense_map_info.html", null ],
-      [ "wpi::DenseMapInfo< T * >", "structwpi_1_1_dense_map_info_3_01_t_01_5_01_4.html", "structwpi_1_1_dense_map_info_3_01_t_01_5_01_4" ],
-      [ "wpi::DenseMapInfo< char >", "structwpi_1_1_dense_map_info_3_01char_01_4.html", "structwpi_1_1_dense_map_info_3_01char_01_4" ],
-      [ "wpi::DenseMapInfo< unsigned short >", "structwpi_1_1_dense_map_info_3_01unsigned_01short_01_4.html", "structwpi_1_1_dense_map_info_3_01unsigned_01short_01_4" ],
-      [ "wpi::DenseMapInfo< unsigned >", "structwpi_1_1_dense_map_info_3_01unsigned_01_4.html", "structwpi_1_1_dense_map_info_3_01unsigned_01_4" ],
-      [ "wpi::DenseMapInfo< unsigned long >", "structwpi_1_1_dense_map_info_3_01unsigned_01long_01_4.html", "structwpi_1_1_dense_map_info_3_01unsigned_01long_01_4" ],
-      [ "wpi::DenseMapInfo< unsigned long long >", "structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4.html", "structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4" ],
-      [ "wpi::DenseMapInfo< short >", "structwpi_1_1_dense_map_info_3_01short_01_4.html", "structwpi_1_1_dense_map_info_3_01short_01_4" ],
-      [ "wpi::DenseMapInfo< int >", "structwpi_1_1_dense_map_info_3_01int_01_4.html", "structwpi_1_1_dense_map_info_3_01int_01_4" ],
-      [ "wpi::DenseMapInfo< long >", "structwpi_1_1_dense_map_info_3_01long_01_4.html", "structwpi_1_1_dense_map_info_3_01long_01_4" ],
-      [ "wpi::DenseMapInfo< long long >", "structwpi_1_1_dense_map_info_3_01long_01long_01_4.html", "structwpi_1_1_dense_map_info_3_01long_01long_01_4" ],
-      [ "wpi::DenseMapInfo< std::pair< T, U > >", "structwpi_1_1_dense_map_info_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", "structwpi_1_1_dense_map_info_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4" ],
-      [ "wpi::DenseMapInfo< std::string_view >", "structwpi_1_1_dense_map_info_3_01std_1_1string__view_01_4.html", "structwpi_1_1_dense_map_info_3_01std_1_1string__view_01_4" ],
-      [ "wpi::DenseMapInfo< span< T > >", "structwpi_1_1_dense_map_info_3_01span_3_01_t_01_4_01_4.html", "structwpi_1_1_dense_map_info_3_01span_3_01_t_01_4_01_4" ],
-      [ "wpi::DenseMapInfo< hash_code >", "structwpi_1_1_dense_map_info_3_01hash__code_01_4.html", "structwpi_1_1_dense_map_info_3_01hash__code_01_4" ]
-    ] ],
+    [ "DenseMapInfo.h", "_dense_map_info_8h.html", "_dense_map_info_8h" ],
     [ "deprecated.h", "deprecated_8h.html", null ],
     [ "Endian.h", "_endian_8h.html", "_endian_8h" ],
     [ "EpochTracker.h", "_epoch_tracker_8h.html", [
@@ -71,10 +52,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "function_ref.h", "function__ref_8h.html", [
       [ "wpi::function_ref< Ret(Params...)>", "classwpi_1_1function__ref_3_01_ret_07_params_8_8_8_08_4.html", "classwpi_1_1function__ref_3_01_ret_07_params_8_8_8_08_4" ]
     ] ],
-    [ "FunctionExtras.h", "_function_extras_8h.html", [
-      [ "wpi::unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4.html", "classwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4" ],
-      [ "wpi::unique_function< ReturnT(ParamTs...)>::StorageUnionT::OutOfLineStorageT", "structwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4_1_1_storage_union_t_1_1_out_of_line_storage_t.html", "structwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4_1_1_storage_union_t_1_1_out_of_line_storage_t" ]
-    ] ],
+    [ "FunctionExtras.h", "_function_extras_8h.html", "_function_extras_8h" ],
     [ "future.h", "future_8h.html", "future_8h" ],
     [ "Hashing.h", "_hashing_8h.html", "_hashing_8h" ],
     [ "interpolating_map.h", "interpolating__map_8h.html", [
@@ -116,7 +94,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "PointerIntPair.h", "_pointer_int_pair_8h.html", [
       [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1_pointer_int_pair.html", "classwpi_1_1_pointer_int_pair" ],
       [ "wpi::PointerIntPairInfo< PointerT, IntBits, PtrTraits >", "structwpi_1_1_pointer_int_pair_info.html", "structwpi_1_1_pointer_int_pair_info" ],
-      [ "wpi::isPodLike< PointerIntPair< PointerTy, IntBits, IntType > >", "structwpi_1_1is_pod_like_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html", "structwpi_1_1is_pod_like_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4" ],
       [ "wpi::DenseMapInfo< PointerIntPair< PointerTy, IntBits, IntType > >", "structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html", "structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4" ],
       [ "wpi::PointerLikeTypeTraits< PointerIntPair< PointerTy, IntBits, IntType, PtrTraits > >", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_07d15f14192fcce1c1fa879f2bfdb0181.html", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_07d15f14192fcce1c1fa879f2bfdb0181" ]
     ] ],
@@ -155,11 +132,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     ] ],
     [ "Signal.h", "_signal_8h.html", "_signal_8h" ],
     [ "SmallPtrSet.h", "_small_ptr_set_8h.html", "_small_ptr_set_8h" ],
-    [ "SmallSet.h", "_small_set_8h.html", [
-      [ "wpi::SmallSetIterator< T, N, C >", "classwpi_1_1_small_set_iterator.html", "classwpi_1_1_small_set_iterator" ],
-      [ "wpi::SmallSet< T, N, C >", "classwpi_1_1_small_set.html", "classwpi_1_1_small_set" ],
-      [ "wpi::SmallSet< PointeeType *, N >", "classwpi_1_1_small_set_3_01_pointee_type_01_5_00_01_n_01_4.html", null ]
-    ] ],
+    [ "SmallSet.h", "_small_set_8h.html", "_small_set_8h" ],
     [ "SmallString.h", "_small_string_8h.html", [
       [ "wpi::SmallString< InternalLen >", "classwpi_1_1_small_string.html", "classwpi_1_1_small_string" ]
     ] ],
@@ -176,8 +149,15 @@ var dir_1224104d412225b996ab6dfa83431a88 =
       [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", "classwpi_1_1static__circular__buffer_1_1iterator" ],
       [ "wpi::static_circular_buffer< T, N >::const_iterator", "classwpi_1_1static__circular__buffer_1_1const__iterator.html", "classwpi_1_1static__circular__buffer_1_1const__iterator" ]
     ] ],
+    [ "STLForwardCompat.h", "_s_t_l_forward_compat_8h.html", "_s_t_l_forward_compat_8h" ],
     [ "StringExtras.h", "_string_extras_8h.html", "_string_extras_8h" ],
     [ "StringMap.h", "_string_map_8h.html", "_string_map_8h" ],
+    [ "StringMapEntry.h", "_string_map_entry_8h.html", [
+      [ "wpi::StringMapEntryBase", "classwpi_1_1_string_map_entry_base.html", "classwpi_1_1_string_map_entry_base" ],
+      [ "wpi::StringMapEntryStorage< ValueTy >", "classwpi_1_1_string_map_entry_storage.html", "classwpi_1_1_string_map_entry_storage" ],
+      [ "wpi::StringMapEntryStorage< std::nullopt_t >", "classwpi_1_1_string_map_entry_storage_3_01std_1_1nullopt__t_01_4.html", "classwpi_1_1_string_map_entry_storage_3_01std_1_1nullopt__t_01_4" ],
+      [ "wpi::StringMapEntry< ValueTy >", "classwpi_1_1_string_map_entry.html", "classwpi_1_1_string_map_entry" ]
+    ] ],
     [ "SwapByteOrder.h", "_swap_byte_order_8h.html", "_swap_byte_order_8h" ],
     [ "SymbolExports.h", "_symbol_exports_8h.html", "_symbol_exports_8h" ],
     [ "Synchronization.h", "_synchronization_8h.html", "_synchronization_8h" ],

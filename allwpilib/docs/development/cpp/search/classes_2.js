@@ -98,10 +98,11 @@ var searchData=
   ['buffer_3c_20container_3a_3avalue_5ftype_20_3e_95',['buffer&lt; Container::value_type &gt;',['../classbuffer.html',1,'']]],
   ['buffer_5fostream_96',['buffer_ostream',['../classwpi_1_1buffer__ostream.html',1,'wpi']]],
   ['buffer_5ftraits_97',['buffer_traits',['../structbuffer__traits.html',1,'']]],
-  ['buffered_5ffile_98',['buffered_file',['../classbuffered__file.html',1,'']]],
-  ['builtinaccelerometer_99',['BuiltInAccelerometer',['../classfrc_1_1_built_in_accelerometer.html',1,'frc']]],
-  ['builtinaccelerometersim_100',['BuiltInAccelerometerSim',['../classfrc_1_1sim_1_1_built_in_accelerometer_sim.html',1,'frc::sim']]],
-  ['button_101',['Button',['../classfrc2_1_1_button.html',1,'frc2::Button'],['../structfrc_1_1_p_s4_controller_1_1_button.html',1,'frc::PS4Controller::Button'],['../structfrc_1_1_xbox_controller_1_1_button.html',1,'frc::XboxController::Button']]],
-  ['bytes_102',['bytes',['../classbytes.html',1,'']]],
-  ['bytewise_5fbitwise_5fhelper_103',['bytewise_bitwise_helper',['../struct_eigen_1_1internal_1_1bytewise__bitwise__helper.html',1,'Eigen::internal']]]
+  ['buffer_5funique_5fostream_98',['buffer_unique_ostream',['../classwpi_1_1buffer__unique__ostream.html',1,'wpi']]],
+  ['buffered_5ffile_99',['buffered_file',['../classbuffered__file.html',1,'']]],
+  ['builtinaccelerometer_100',['BuiltInAccelerometer',['../classfrc_1_1_built_in_accelerometer.html',1,'frc']]],
+  ['builtinaccelerometersim_101',['BuiltInAccelerometerSim',['../classfrc_1_1sim_1_1_built_in_accelerometer_sim.html',1,'frc::sim']]],
+  ['button_102',['Button',['../classfrc2_1_1_button.html',1,'frc2::Button'],['../structfrc_1_1_p_s4_controller_1_1_button.html',1,'frc::PS4Controller::Button'],['../structfrc_1_1_xbox_controller_1_1_button.html',1,'frc::XboxController::Button']]],
+  ['bytes_103',['bytes',['../classbytes.html',1,'']]],
+  ['bytewise_5fbitwise_5fhelper_104',['bytewise_bitwise_helper',['../struct_eigen_1_1internal_1_1bytewise__bitwise__helper.html',1,'Eigen::internal']]]
 ];

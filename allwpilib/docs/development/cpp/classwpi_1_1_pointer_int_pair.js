@@ -10,15 +10,15 @@ var classwpi_1_1_pointer_int_pair =
     [ "getInt", "classwpi_1_1_pointer_int_pair.html#a9cb2af8603f2eeccd4866249f207654f", null ],
     [ "getOpaqueValue", "classwpi_1_1_pointer_int_pair.html#a8af8cc4d830a70288e021cbb89612579", null ],
     [ "getPointer", "classwpi_1_1_pointer_int_pair.html#ab31674b0ee6a50f1ae60af86b5a4f8c3", null ],
-    [ "initWithPointer", "classwpi_1_1_pointer_int_pair.html#a3aa67e4cbcde1c136320d0aa055f484a", null ],
+    [ "initWithPointer", "classwpi_1_1_pointer_int_pair.html#ae3bf15702385dd5699082df016026a2f", null ],
     [ "operator!=", "classwpi_1_1_pointer_int_pair.html#ae53638393a7b6b95495670dc5e21281f", null ],
     [ "operator<", "classwpi_1_1_pointer_int_pair.html#a3f3866c28ab88c6b0f7410e86f444ee8", null ],
     [ "operator<=", "classwpi_1_1_pointer_int_pair.html#afd4895917fbf15ec41e3445b72f1f40d", null ],
     [ "operator==", "classwpi_1_1_pointer_int_pair.html#a87ae38b72ed782cf25cbbf5c7699ae98", null ],
     [ "operator>", "classwpi_1_1_pointer_int_pair.html#a7fb88f288b01ad24c2bdf00ed2e21522", null ],
     [ "operator>=", "classwpi_1_1_pointer_int_pair.html#a20994dbc2717f4da6235614c241ed57b", null ],
-    [ "setFromOpaqueValue", "classwpi_1_1_pointer_int_pair.html#a1808bfb1e5bb86f687efa9fa3ac2e4e4", null ],
-    [ "setInt", "classwpi_1_1_pointer_int_pair.html#acfac1f5ec2ee8c4da54c6bbf83365244", null ],
-    [ "setPointer", "classwpi_1_1_pointer_int_pair.html#ac01e4e9ccf36d559484ad2f8234999ae", null ],
-    [ "setPointerAndInt", "classwpi_1_1_pointer_int_pair.html#ac1f9a247af2b1d845bcc583a92db3ffd", null ]
+    [ "setFromOpaqueValue", "classwpi_1_1_pointer_int_pair.html#a9059f7daf1b5165437ad1a83df531825", null ],
+    [ "setInt", "classwpi_1_1_pointer_int_pair.html#aff9b2bc859a2c2f2b301dfea6fc771be", null ],
+    [ "setPointer", "classwpi_1_1_pointer_int_pair.html#a18c8140eb746a191c6c48e26d7142c16", null ],
+    [ "setPointerAndInt", "classwpi_1_1_pointer_int_pair.html#a1fe28093ab305f97d77b347a8ad7b276", null ]
 ];

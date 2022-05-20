@@ -10,6 +10,5 @@ var searchData=
   ['out_5fof_5frange_7',['out_of_range',['../classwpi_1_1detail_1_1out__of__range.html',1,'wpi::detail']]],
   ['outer_5fstride_5fat_5fcompile_5ftime_8',['outer_stride_at_compile_time',['../struct_eigen_1_1internal_1_1outer__stride__at__compile__time.html',1,'Eigen::internal']]],
   ['outer_5fstride_5fat_5fcompile_5ftime_3c_20derived_2c_20false_20_3e_9',['outer_stride_at_compile_time&lt; Derived, false &gt;',['../struct_eigen_1_1internal_1_1outer__stride__at__compile__time_3_01_derived_00_01false_01_4.html',1,'Eigen::internal']]],
-  ['outerstride_10',['OuterStride',['../class_eigen_1_1_outer_stride.html',1,'Eigen']]],
-  ['outoflinestoraget_11',['OutOfLineStorageT',['../structwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4_1_1_storage_union_t_1_1_out_of_line_storage_t.html',1,'wpi::unique_function&lt; ReturnT(ParamTs...)&gt;::StorageUnionT']]]
+  ['outerstride_10',['OuterStride',['../class_eigen_1_1_outer_stride.html',1,'Eigen']]]
 ];

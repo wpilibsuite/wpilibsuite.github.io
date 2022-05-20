@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: wpi::PointerUnion&lt; PT1, PT2 &gt; Class Template Reference</title>
+<title>WPILibC++: wpi::PointerUnion&lt; PTs &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-97-g5aa67f5</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-98-gc3b223c</span>
    </div>
   </td>
  </tr>
@@ -92,108 +92,86 @@ $(document).ready(function(){initNavTree('classwpi_1_1_pointer_union.html',''); 
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classwpi_1_1_pointer_union-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">wpi::PointerUnion&lt; PT1, PT2 &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">wpi::PointerUnion&lt; PTs &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>A discriminated union of two pointer types, with the discriminator in the low bit of the pointer.  
+<p>A discriminated union of two or more pointer types, with the discriminator in the low bit of the pointer.  
  <a href="classwpi_1_1_pointer_union.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_pointer_union_8h_source.html">wpi/PointerUnion.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for wpi::PointerUnion&lt; PTs &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classwpi_1_1_pointer_union.png" usemap="#wpi::PointerUnion_3C_20PTs_20_3E_map" alt=""/>
+  <map id="wpi::PointerUnion_3C_20PTs_20_3E_map" name="wpi::PointerUnion_3C_20PTs_20_3E_map">
+<area href="classwpi_1_1pointer__union__detail_1_1_pointer_union_members.html" alt="wpi::pointer_union_detail::PointerUnionMembers&lt; PointerUnion&lt; PTs... &gt;, PointerIntPair&lt; void *, pointer_union_detail::bitsRequired(sizeof...(PTs)), int, pointer_union_detail::PointerUnionUIntTraits&lt; PTs... &gt; &gt;, 0, PTs... &gt;" shape="rect" coords="0,0,1249,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a45271ae9b2f638881eac3a14d251a2f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a45271ae9b2f638881eac3a14d251a2f2">ValTy</a> = <a class="el" href="classwpi_1_1_pointer_int_pair.html">PointerIntPair</a>&lt; void *, 1, bool, <a class="el" href="classwpi_1_1_pointer_union_u_int_traits.html">PointerUnionUIntTraits</a>&lt; PT1, PT2 &gt; &gt;</td></tr>
-<tr class="separator:a45271ae9b2f638881eac3a14d251a2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab766ed8de683ef42e8d45eec26173dd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#ab766ed8de683ef42e8d45eec26173dd1">PointerUnion</a> ()=default</td></tr>
-<tr class="separator:ab766ed8de683ef42e8d45eec26173dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e38761d889de664f2a6d4b8610a6214"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a8e38761d889de664f2a6d4b8610a6214">PointerUnion</a> (PT1 V)</td></tr>
-<tr class="separator:a8e38761d889de664f2a6d4b8610a6214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a170b51c0cc701853168d146496a18896"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a170b51c0cc701853168d146496a18896">PointerUnion</a> (PT2 V)</td></tr>
-<tr class="separator:a170b51c0cc701853168d146496a18896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3294dea770178f7210bb5531f8dd19b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a3294dea770178f7210bb5531f8dd19b5">isNull</a> () const</td></tr>
-<tr class="memdesc:a3294dea770178f7210bb5531f8dd19b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if the pointer held in the union is null, regardless of which type it is.  <a href="classwpi_1_1_pointer_union.html#a3294dea770178f7210bb5531f8dd19b5">More...</a><br /></td></tr>
-<tr class="separator:a3294dea770178f7210bb5531f8dd19b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f9bdfb766e06994ebcae070db35806"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#aa7f9bdfb766e06994ebcae070db35806">operator bool</a> () const</td></tr>
-<tr class="separator:aa7f9bdfb766e06994ebcae070db35806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45c2ddb477954048d9613d87d7ee90e4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a45c2ddb477954048d9613d87d7ee90e4"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a45c2ddb477954048d9613d87d7ee90e4">is</a> () const</td></tr>
-<tr class="memdesc:a45c2ddb477954048d9613d87d7ee90e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if the Union currently holds the type matching T.  <a href="classwpi_1_1_pointer_union.html#a45c2ddb477954048d9613d87d7ee90e4">More...</a><br /></td></tr>
-<tr class="separator:a45c2ddb477954048d9613d87d7ee90e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedaf22ea52594ef8e35e6ffe9a1f76a5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aedaf22ea52594ef8e35e6ffe9a1f76a5"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#aedaf22ea52594ef8e35e6ffe9a1f76a5">get</a> () const</td></tr>
-<tr class="memdesc:aedaf22ea52594ef8e35e6ffe9a1f76a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the specified pointer type.  <a href="classwpi_1_1_pointer_union.html#aedaf22ea52594ef8e35e6ffe9a1f76a5">More...</a><br /></td></tr>
-<tr class="separator:aedaf22ea52594ef8e35e6ffe9a1f76a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3db09d103afdee6d83a5365fccb6b24a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3db09d103afdee6d83a5365fccb6b24a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a3db09d103afdee6d83a5365fccb6b24a">dyn_cast</a> () const</td></tr>
-<tr class="memdesc:a3db09d103afdee6d83a5365fccb6b24a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current pointer if it is of the specified pointer type, otherwises returns null.  <a href="classwpi_1_1_pointer_union.html#a3db09d103afdee6d83a5365fccb6b24a">More...</a><br /></td></tr>
-<tr class="separator:a3db09d103afdee6d83a5365fccb6b24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d846bec5934d2744637eb4e0b5ed29"><td class="memItemLeft" align="right" valign="top">PT1 const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a20d846bec5934d2744637eb4e0b5ed29">getAddrOfPtr1</a> () const</td></tr>
-<tr class="memdesc:a20d846bec5934d2744637eb4e0b5ed29"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the union is set to the first pointer type get an address pointing to it.  <a href="classwpi_1_1_pointer_union.html#a20d846bec5934d2744637eb4e0b5ed29">More...</a><br /></td></tr>
-<tr class="separator:a20d846bec5934d2744637eb4e0b5ed29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaca1aa072ff10d800acf0c6fda62c75"><td class="memItemLeft" align="right" valign="top">PT1 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#aaaca1aa072ff10d800acf0c6fda62c75">getAddrOfPtr1</a> ()</td></tr>
-<tr class="memdesc:aaaca1aa072ff10d800acf0c6fda62c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the union is set to the first pointer type get an address pointing to it.  <a href="classwpi_1_1_pointer_union.html#aaaca1aa072ff10d800acf0c6fda62c75">More...</a><br /></td></tr>
-<tr class="separator:aaaca1aa072ff10d800acf0c6fda62c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd32f3ead74244e8a053044dbb28850a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#abd32f3ead74244e8a053044dbb28850a">operator=</a> (std::nullptr_t)</td></tr>
-<tr class="memdesc:abd32f3ead74244e8a053044dbb28850a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment from nullptr which just clears the union.  <a href="classwpi_1_1_pointer_union.html#abd32f3ead74244e8a053044dbb28850a">More...</a><br /></td></tr>
-<tr class="separator:abd32f3ead74244e8a053044dbb28850a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a691866547ba55e08954009298e00c32d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a691866547ba55e08954009298e00c32d">operator=</a> (const PT1 &amp;RHS)</td></tr>
-<tr class="memdesc:a691866547ba55e08954009298e00c32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operators - Allow assigning into this union from either pointer type, setting the discriminator to remember what it came from.  <a href="classwpi_1_1_pointer_union.html#a691866547ba55e08954009298e00c32d">More...</a><br /></td></tr>
-<tr class="separator:a691866547ba55e08954009298e00c32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dbe81e9b4bfc046ec793cb03448b0dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a4dbe81e9b4bfc046ec793cb03448b0dd">operator=</a> (const PT2 &amp;RHS)</td></tr>
-<tr class="separator:a4dbe81e9b4bfc046ec793cb03448b0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebe236b262ae73a127925141deb2dce8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#aebe236b262ae73a127925141deb2dce8">getOpaqueValue</a> () const</td></tr>
-<tr class="separator:aebe236b262ae73a127925141deb2dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32071ca412d94655b5266e537fa9f63d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a32071ca412d94655b5266e537fa9f63d">PointerUnion</a> ()=default</td></tr>
+<tr class="separator:a32071ca412d94655b5266e537fa9f63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a842bd1cee81089a353d965827512d918"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a842bd1cee81089a353d965827512d918">PointerUnion</a> (std::nullptr_t)</td></tr>
+<tr class="separator:a842bd1cee81089a353d965827512d918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6a1925a946b98188ec124780ab26fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#adc6a1925a946b98188ec124780ab26fa">isNull</a> () const</td></tr>
+<tr class="memdesc:adc6a1925a946b98188ec124780ab26fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if the pointer held in the union is null, regardless of which type it is.  <a href="classwpi_1_1_pointer_union.html#adc6a1925a946b98188ec124780ab26fa">More...</a><br /></td></tr>
+<tr class="separator:adc6a1925a946b98188ec124780ab26fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99222f4568f1071ac1cebf7c6415139e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a99222f4568f1071ac1cebf7c6415139e">operator bool</a> () const</td></tr>
+<tr class="separator:a99222f4568f1071ac1cebf7c6415139e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0dafc3d7934691652db021fb7bc6fe8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af0dafc3d7934691652db021fb7bc6fe8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#af0dafc3d7934691652db021fb7bc6fe8">is</a> () const</td></tr>
+<tr class="memdesc:af0dafc3d7934691652db021fb7bc6fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if the Union currently holds the type matching T.  <a href="classwpi_1_1_pointer_union.html#af0dafc3d7934691652db021fb7bc6fe8">More...</a><br /></td></tr>
+<tr class="separator:af0dafc3d7934691652db021fb7bc6fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adba45bc0c16e77c0c405efe61de09212"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adba45bc0c16e77c0c405efe61de09212"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#adba45bc0c16e77c0c405efe61de09212">get</a> () const</td></tr>
+<tr class="memdesc:adba45bc0c16e77c0c405efe61de09212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of the specified pointer type.  <a href="classwpi_1_1_pointer_union.html#adba45bc0c16e77c0c405efe61de09212">More...</a><br /></td></tr>
+<tr class="separator:adba45bc0c16e77c0c405efe61de09212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c9a920846ff818d70bb6b76e26347f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a43c9a920846ff818d70bb6b76e26347f"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a43c9a920846ff818d70bb6b76e26347f">dyn_cast</a> () const</td></tr>
+<tr class="memdesc:a43c9a920846ff818d70bb6b76e26347f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current pointer if it is of the specified pointer type, otherwise returns null.  <a href="classwpi_1_1_pointer_union.html#a43c9a920846ff818d70bb6b76e26347f">More...</a><br /></td></tr>
+<tr class="separator:a43c9a920846ff818d70bb6b76e26347f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9430af560df82fb2f72acb697d60cd0"><td class="memItemLeft" align="right" valign="top">First const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#aa9430af560df82fb2f72acb697d60cd0">getAddrOfPtr1</a> () const</td></tr>
+<tr class="memdesc:aa9430af560df82fb2f72acb697d60cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the union is set to the first pointer type get an address pointing to it.  <a href="classwpi_1_1_pointer_union.html#aa9430af560df82fb2f72acb697d60cd0">More...</a><br /></td></tr>
+<tr class="separator:aa9430af560df82fb2f72acb697d60cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586c50b417cbea7e0c0e6b436eb30fa0"><td class="memItemLeft" align="right" valign="top">First *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a586c50b417cbea7e0c0e6b436eb30fa0">getAddrOfPtr1</a> ()</td></tr>
+<tr class="memdesc:a586c50b417cbea7e0c0e6b436eb30fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the union is set to the first pointer type get an address pointing to it.  <a href="classwpi_1_1_pointer_union.html#a586c50b417cbea7e0c0e6b436eb30fa0">More...</a><br /></td></tr>
+<tr class="separator:a586c50b417cbea7e0c0e6b436eb30fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49d9caa3044337177ab9d0cc6559a68"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#ab49d9caa3044337177ab9d0cc6559a68">operator=</a> (std::nullptr_t)</td></tr>
+<tr class="memdesc:ab49d9caa3044337177ab9d0cc6559a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment from nullptr which just clears the union.  <a href="classwpi_1_1_pointer_union.html#ab49d9caa3044337177ab9d0cc6559a68">More...</a><br /></td></tr>
+<tr class="separator:ab49d9caa3044337177ab9d0cc6559a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47381b056fe0b6707727c6b02f6d7b98"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a47381b056fe0b6707727c6b02f6d7b98">getOpaqueValue</a> () const</td></tr>
+<tr class="separator:a47381b056fe0b6707727c6b02f6d7b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af6e0ff5c2d9893e79191afcfef61ebe2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#af6e0ff5c2d9893e79191afcfef61ebe2">getFromOpaqueValue</a> (void *VP)</td></tr>
-<tr class="separator:af6e0ff5c2d9893e79191afcfef61ebe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0986b7b1537ca3766de410d401f4316b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html#a0986b7b1537ca3766de410d401f4316b">getFromOpaqueValue</a> (void *VP)</td></tr>
+<tr class="separator:a0986b7b1537ca3766de410d401f4316b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename PT1, typename PT2&gt;<br />
-class wpi::PointerUnion&lt; PT1, PT2 &gt;</div><p >A discriminated union of two pointer types, with the discriminator in the low bit of the pointer. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename... PTs&gt;<br />
+class wpi::PointerUnion&lt; PTs &gt;</div><p >A discriminated union of two or more pointer types, with the discriminator in the low bit of the pointer. </p>
 <p >This implementation is extremely efficient in space due to leveraging the low bits of the pointer, while exposing a natural and type-safe API.</p>
 <p >Common use patterns would be something like this: PointerUnion&lt;int*, float*&gt; P; P = (int*)0; printf("%d %d", P.is&lt;int*&gt;(), P.is&lt;float*&gt;()); // prints "1 0" X = <a class="el" href="namespacewpi.html#a642b2450b4eef7de6728e218adde13b5">P.get&lt;int*&gt;()</a>; // ok. Y = <a class="el" href="namespacewpi.html#a642b2450b4eef7de6728e218adde13b5">P.get&lt;float*&gt;()</a>; // runtime assertion failure. Z = <a class="el" href="namespacewpi.html#a642b2450b4eef7de6728e218adde13b5">P.get&lt;double*&gt;()</a>; // compile time failure. P = (float*)0; Y = <a class="el" href="namespacewpi.html#a642b2450b4eef7de6728e218adde13b5">P.get&lt;float*&gt;()</a>; // ok. X = <a class="el" href="namespacewpi.html#a642b2450b4eef7de6728e218adde13b5">P.get&lt;int*&gt;()</a>; // runtime assertion failure. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a45271ae9b2f638881eac3a14d251a2f2" name="a45271ae9b2f638881eac3a14d251a2f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45271ae9b2f638881eac3a14d251a2f2">&#9670;&nbsp;</a></span>ValTy</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a32071ca412d94655b5266e537fa9f63d" name="a32071ca412d94655b5266e537fa9f63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32071ca412d94655b5266e537fa9f63d">&#9670;&nbsp;</a></span>PointerUnion() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::<a class="el" href="classwpi_1_1_pointer_union.html#a45271ae9b2f638881eac3a14d251a2f2">ValTy</a> =  <a class="el" href="classwpi_1_1_pointer_int_pair.html">PointerIntPair</a>&lt;void *, 1, bool, <a class="el" href="classwpi_1_1_pointer_union_u_int_traits.html">PointerUnionUIntTraits</a>&lt;PT1, PT2&gt; &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab766ed8de683ef42e8d45eec26173dd1" name="ab766ed8de683ef42e8d45eec26173dd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab766ed8de683ef42e8d45eec26173dd1">&#9670;&nbsp;</a></span>PointerUnion() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::<a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> </td>
+          <td class="memname"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::<a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -208,50 +186,22 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 
 </div>
 </div>
-<a id="a8e38761d889de664f2a6d4b8610a6214" name="a8e38761d889de664f2a6d4b8610a6214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e38761d889de664f2a6d4b8610a6214">&#9670;&nbsp;</a></span>PointerUnion() <span class="overload">[2/3]</span></h2>
+<a id="a842bd1cee81089a353d965827512d918" name="a842bd1cee81089a353d965827512d918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a842bd1cee81089a353d965827512d918">&#9670;&nbsp;</a></span>PointerUnion() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::<a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> </td>
+          <td class="memname"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::<a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> </td>
           <td>(</td>
-          <td class="paramtype">PT1&#160;</td>
-          <td class="paramname"><em>V</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a170b51c0cc701853168d146496a18896" name="a170b51c0cc701853168d146496a18896"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a170b51c0cc701853168d146496a18896">&#9670;&nbsp;</a></span>PointerUnion() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::<a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> </td>
-          <td>(</td>
-          <td class="paramtype">PT2&#160;</td>
-          <td class="paramname"><em>V</em></td><td>)</td>
+          <td class="paramtype">std::nullptr_t&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -265,13 +215,13 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3db09d103afdee6d83a5365fccb6b24a" name="a3db09d103afdee6d83a5365fccb6b24a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3db09d103afdee6d83a5365fccb6b24a">&#9670;&nbsp;</a></span>dyn_cast()</h2>
+<a id="a43c9a920846ff818d70bb6b76e26347f" name="a43c9a920846ff818d70bb6b76e26347f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c9a920846ff818d70bb6b76e26347f">&#9670;&nbsp;</a></span>dyn_cast()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -279,7 +229,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::dyn_cast </td>
+          <td class="memname">T <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::dyn_cast </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -292,17 +242,17 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the current pointer if it is of the specified pointer type, otherwises returns null. </p>
+<p>Returns the current pointer if it is of the specified pointer type, otherwise returns null. </p>
 
 </div>
 </div>
-<a id="aedaf22ea52594ef8e35e6ffe9a1f76a5" name="aedaf22ea52594ef8e35e6ffe9a1f76a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedaf22ea52594ef8e35e6ffe9a1f76a5">&#9670;&nbsp;</a></span>get()</h2>
+<a id="adba45bc0c16e77c0c405efe61de09212" name="adba45bc0c16e77c0c405efe61de09212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adba45bc0c16e77c0c405efe61de09212">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -310,7 +260,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::get </td>
+          <td class="memname">T <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -328,19 +278,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="aaaca1aa072ff10d800acf0c6fda62c75" name="aaaca1aa072ff10d800acf0c6fda62c75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaca1aa072ff10d800acf0c6fda62c75">&#9670;&nbsp;</a></span>getAddrOfPtr1() <span class="overload">[1/2]</span></h2>
+<a id="a586c50b417cbea7e0c0e6b436eb30fa0" name="a586c50b417cbea7e0c0e6b436eb30fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586c50b417cbea7e0c0e6b436eb30fa0">&#9670;&nbsp;</a></span>getAddrOfPtr1() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PT1 * <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::getAddrOfPtr1 </td>
+          <td class="memname">First * <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::getAddrOfPtr1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -357,19 +307,19 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 
 </div>
 </div>
-<a id="a20d846bec5934d2744637eb4e0b5ed29" name="a20d846bec5934d2744637eb4e0b5ed29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20d846bec5934d2744637eb4e0b5ed29">&#9670;&nbsp;</a></span>getAddrOfPtr1() <span class="overload">[2/2]</span></h2>
+<a id="aa9430af560df82fb2f72acb697d60cd0" name="aa9430af560df82fb2f72acb697d60cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9430af560df82fb2f72acb697d60cd0">&#9670;&nbsp;</a></span>getAddrOfPtr1() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PT1 const  * <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::getAddrOfPtr1 </td>
+          <td class="memname">First const  * <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::getAddrOfPtr1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -386,19 +336,19 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 
 </div>
 </div>
-<a id="af6e0ff5c2d9893e79191afcfef61ebe2" name="af6e0ff5c2d9893e79191afcfef61ebe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6e0ff5c2d9893e79191afcfef61ebe2">&#9670;&nbsp;</a></span>getFromOpaqueValue()</h2>
+<a id="a0986b7b1537ca3766de410d401f4316b" name="a0986b7b1537ca3766de410d401f4316b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0986b7b1537ca3766de410d401f4316b">&#9670;&nbsp;</a></span>getFromOpaqueValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::getFromOpaqueValue </td>
+          <td class="memname">static <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::getFromOpaqueValue </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>VP</em></td><td>)</td>
@@ -414,19 +364,19 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 
 </div>
 </div>
-<a id="aebe236b262ae73a127925141deb2dce8" name="aebe236b262ae73a127925141deb2dce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebe236b262ae73a127925141deb2dce8">&#9670;&nbsp;</a></span>getOpaqueValue()</h2>
+<a id="a47381b056fe0b6707727c6b02f6d7b98" name="a47381b056fe0b6707727c6b02f6d7b98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47381b056fe0b6707727c6b02f6d7b98">&#9670;&nbsp;</a></span>getOpaqueValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void * <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::getOpaqueValue </td>
+          <td class="memname">void * <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::getOpaqueValue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -441,13 +391,13 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 
 </div>
 </div>
-<a id="a45c2ddb477954048d9613d87d7ee90e4" name="a45c2ddb477954048d9613d87d7ee90e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45c2ddb477954048d9613d87d7ee90e4">&#9670;&nbsp;</a></span>is()</h2>
+<a id="af0dafc3d7934691652db021fb7bc6fe8" name="af0dafc3d7934691652db021fb7bc6fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0dafc3d7934691652db021fb7bc6fe8">&#9670;&nbsp;</a></span>is()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -455,7 +405,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::is </td>
+          <td class="memname">bool <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::is </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -472,19 +422,19 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a3294dea770178f7210bb5531f8dd19b5" name="a3294dea770178f7210bb5531f8dd19b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3294dea770178f7210bb5531f8dd19b5">&#9670;&nbsp;</a></span>isNull()</h2>
+<a id="adc6a1925a946b98188ec124780ab26fa" name="adc6a1925a946b98188ec124780ab26fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6a1925a946b98188ec124780ab26fa">&#9670;&nbsp;</a></span>isNull()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::isNull </td>
+          <td class="memname">bool <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::isNull </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -501,19 +451,19 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 
 </div>
 </div>
-<a id="aa7f9bdfb766e06994ebcae070db35806" name="aa7f9bdfb766e06994ebcae070db35806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7f9bdfb766e06994ebcae070db35806">&#9670;&nbsp;</a></span>operator bool()</h2>
+<a id="a99222f4568f1071ac1cebf7c6415139e" name="a99222f4568f1071ac1cebf7c6415139e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99222f4568f1071ac1cebf7c6415139e">&#9670;&nbsp;</a></span>operator bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::operator bool </td>
+          <td class="memname"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::operator bool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -528,77 +478,19 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 
 </div>
 </div>
-<a id="a691866547ba55e08954009298e00c32d" name="a691866547ba55e08954009298e00c32d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a691866547ba55e08954009298e00c32d">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/3]</span></h2>
+<a id="ab49d9caa3044337177ab9d0cc6559a68" name="ab49d9caa3044337177ab9d0cc6559a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49d9caa3044337177ab9d0cc6559a68">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
+template&lt;typename... PTs&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp; <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const PT1 &amp;&#160;</td>
-          <td class="paramname"><em>RHS</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Assignment operators - Allow assigning into this union from either pointer type, setting the discriminator to remember what it came from. </p>
-
-</div>
-</div>
-<a id="a4dbe81e9b4bfc046ec793cb03448b0dd" name="a4dbe81e9b4bfc046ec793cb03448b0dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dbe81e9b4bfc046ec793cb03448b0dd">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp; <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const PT2 &amp;&#160;</td>
-          <td class="paramname"><em>RHS</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abd32f3ead74244e8a053044dbb28850a" name="abd32f3ead74244e8a053044dbb28850a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd32f3ead74244e8a053044dbb28850a">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PT1 , typename PT2 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp; <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PT1, PT2 &gt;::operator= </td>
+          <td class="memname">const <a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a> &amp; <a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion</a>&lt; PTs &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">std::nullptr_t&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -625,7 +517,7 @@ template&lt;typename PT1 , typename PT2 &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a></li>
-    <li class="footer">Generated on Fri May 20 2022 22:19:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 20 2022 23:02:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -273,12 +273,12 @@ var group__ntcore__cpp__api =
     [ "nt::NetworkTableValue", "group__ntcore__cpp__api.html#ga2bdfee8c11f9a4cfb1951cc824428725", null ],
     [ "nt::TableEntryListener", "group__ntcore__cpp__api.html#ga2803a8887ee10b29350d4cd1301937fc", null ],
     [ "nt::TableListener", "group__ntcore__cpp__api.html#gabefa1316ff1efa7c7bf48d855a8a7ea3", [
-      [ "nt::EntryListenerFlags::kImmediate", "group__ntcore__cpp__api.html#gga32564cce25a69f7ed1e8fbf496b19fe1aa637552032d3e89f0db0e302122b691d", null ],
-      [ "nt::EntryListenerFlags::kLocal", "group__ntcore__cpp__api.html#gga32564cce25a69f7ed1e8fbf496b19fe1aa4fd4805f919234abe0f9a8750d3eebe", null ],
-      [ "nt::EntryListenerFlags::kNew", "group__ntcore__cpp__api.html#gga32564cce25a69f7ed1e8fbf496b19fe1aeb1c99cf2cfb3074c4d21f3297b81167", null ],
-      [ "nt::EntryListenerFlags::kDelete", "group__ntcore__cpp__api.html#gga32564cce25a69f7ed1e8fbf496b19fe1ab598151d1b91de678e6b01cf3eb58ff9", null ],
-      [ "nt::EntryListenerFlags::kUpdate", "group__ntcore__cpp__api.html#gga32564cce25a69f7ed1e8fbf496b19fe1a0ccb0be5fa05a46c301a4f70d2a036cd", null ],
-      [ "nt::EntryListenerFlags::kFlags", "group__ntcore__cpp__api.html#gga32564cce25a69f7ed1e8fbf496b19fe1afc5104febfc8a08878f3b5b589298a18", null ]
+      [ "nt::EntryListenerFlags::kImmediate", "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4aa637552032d3e89f0db0e302122b691d", null ],
+      [ "nt::EntryListenerFlags::kLocal", "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4aa4fd4805f919234abe0f9a8750d3eebe", null ],
+      [ "nt::EntryListenerFlags::kNew", "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4aeb1c99cf2cfb3074c4d21f3297b81167", null ],
+      [ "nt::EntryListenerFlags::kDelete", "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4ab598151d1b91de678e6b01cf3eb58ff9", null ],
+      [ "nt::EntryListenerFlags::kUpdate", "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4a0ccb0be5fa05a46c301a4f70d2a036cd", null ],
+      [ "nt::EntryListenerFlags::kFlags", "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4afc5104febfc8a08878f3b5b589298a18", null ]
     ] ],
     [ "nt::NetworkTableType", "group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c", [
       [ "nt::NetworkTableType::kUnassigned", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca41ba12ed492ce20c3ff503a553ae85ea", null ],

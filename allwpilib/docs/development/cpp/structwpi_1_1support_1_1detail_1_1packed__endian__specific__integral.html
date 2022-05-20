@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: wpi::support::detail::packed_endian_specific_integral&lt; value_type, endian, alignment &gt; Struct Template Reference</title>
+<title>WPILibC++: wpi::support::detail::packed_endian_specific_integral&lt; ValueType, Endian, Alignment, ALIGN &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-97-g5aa67f5</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-98-gc3b223c</span>
    </div>
   </td>
  </tr>
@@ -93,9 +93,11 @@ $(document).ready(function(){initNavTree('structwpi_1_1support_1_1detail_1_1pack
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">wpi::support::detail::packed_endian_specific_integral&lt; value_type, endian, alignment &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">wpi::support::detail::packed_endian_specific_integral&lt; ValueType, Endian, Alignment, ALIGN &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -106,39 +108,68 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_1_1ref.html">ref</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad889b4ed595ad7a4c0383b680f5a94f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> = ValueType</td></tr>
+<tr class="separator:ad889b4ed595ad7a4c0383b680f5a94f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac479bc6519a52cc099b9c44b032adcf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ac479bc6519a52cc099b9c44b032adcf4">packed_endian_specific_integral</a> ()=default</td></tr>
-<tr class="separator:ac479bc6519a52cc099b9c44b032adcf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969a60fd304e6d051d76fedbf2b0cead"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a969a60fd304e6d051d76fedbf2b0cead">packed_endian_specific_integral</a> (value_type val)</td></tr>
-<tr class="separator:a969a60fd304e6d051d76fedbf2b0cead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa983f4cd33b8899a127acbd16eafb15d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#aa983f4cd33b8899a127acbd16eafb15d">operator value_type</a> () const</td></tr>
-<tr class="separator:aa983f4cd33b8899a127acbd16eafb15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab32b4533f97be574ed4c77d8dc9c553d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ab32b4533f97be574ed4c77d8dc9c553d">operator=</a> (value_type newValue)</td></tr>
-<tr class="separator:ab32b4533f97be574ed4c77d8dc9c553d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2013b39b2a8fe23367737e226ecb9a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#aa2013b39b2a8fe23367737e226ecb9a4">operator+=</a> (value_type newValue)</td></tr>
-<tr class="separator:aa2013b39b2a8fe23367737e226ecb9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c3b37c993d8bb27260e5e91dddc95a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a4c3b37c993d8bb27260e5e91dddc95a6">operator-=</a> (value_type newValue)</td></tr>
-<tr class="separator:a4c3b37c993d8bb27260e5e91dddc95a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad31469d708b660b86dd5072751c8978d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad31469d708b660b86dd5072751c8978d">operator|=</a> (value_type newValue)</td></tr>
-<tr class="separator:ad31469d708b660b86dd5072751c8978d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7756deeb0517bfe9e67383b3f45b7466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a7756deeb0517bfe9e67383b3f45b7466">operator&amp;=</a> (value_type newValue)</td></tr>
-<tr class="separator:a7756deeb0517bfe9e67383b3f45b7466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed87a39420ff6ad376339148feb679ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#aed87a39420ff6ad376339148feb679ad">packed_endian_specific_integral</a> ()=default</td></tr>
+<tr class="separator:aed87a39420ff6ad376339148feb679ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40bb3dd871b6f347a42c54429b3dbc2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a40bb3dd871b6f347a42c54429b3dbc2a">packed_endian_specific_integral</a> (<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> val)</td></tr>
+<tr class="separator:a40bb3dd871b6f347a42c54429b3dbc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e81b36227ffed22c7e873093bc2611f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a6e81b36227ffed22c7e873093bc2611f">operator value_type</a> () const</td></tr>
+<tr class="separator:a6e81b36227ffed22c7e873093bc2611f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a996d35bf4f5ff6bcd42850f874b8b9a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a996d35bf4f5ff6bcd42850f874b8b9a3">operator=</a> (<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> newValue)</td></tr>
+<tr class="separator:a996d35bf4f5ff6bcd42850f874b8b9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c935df16355381c8226764400b7bd74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a8c935df16355381c8226764400b7bd74">operator+=</a> (<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> newValue)</td></tr>
+<tr class="separator:a8c935df16355381c8226764400b7bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5112a0264179023b5ab67d096e95b4ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a5112a0264179023b5ab67d096e95b4ce">operator-=</a> (<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> newValue)</td></tr>
+<tr class="separator:a5112a0264179023b5ab67d096e95b4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252966bed3f26fab4bb49327e424b7c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a252966bed3f26fab4bb49327e424b7c7">operator|=</a> (<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> newValue)</td></tr>
+<tr class="separator:a252966bed3f26fab4bb49327e424b7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41690a9dc199878ec7959ef61207fc60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a41690a9dc199878ec7959ef61207fc60">operator&amp;=</a> (<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> newValue)</td></tr>
+<tr class="separator:a41690a9dc199878ec7959ef61207fc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a4ed6313a24316ec9ac4f09677f95804b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a4ed6313a24316ec9ac4f09677f95804b">endian</a> = Endian</td></tr>
+<tr class="separator:a4ed6313a24316ec9ac4f09677f95804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f585cf92988f6a2291b56581fe1274"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a38f585cf92988f6a2291b56581fe1274">alignment</a> = Alignment</td></tr>
+<tr class="separator:a38f585cf92988f6a2291b56581fe1274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac479bc6519a52cc099b9c44b032adcf4" name="ac479bc6519a52cc099b9c44b032adcf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac479bc6519a52cc099b9c44b032adcf4">&#9670;&nbsp;</a></span>packed_endian_specific_integral() <span class="overload">[1/2]</span></h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ad889b4ed595ad7a4c0383b680f5a94f7" name="ad889b4ed595ad7a4c0383b680f5a94f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad889b4ed595ad7a4c0383b680f5a94f7">&#9670;&nbsp;</a></span>value_type</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> =  ValueType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aed87a39420ff6ad376339148feb679ad" name="aed87a39420ff6ad376339148feb679ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed87a39420ff6ad376339148feb679ad">&#9670;&nbsp;</a></span>packed_endian_specific_integral() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> </td>
+          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -153,21 +184,21 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 
 </div>
 </div>
-<a id="a969a60fd304e6d051d76fedbf2b0cead" name="a969a60fd304e6d051d76fedbf2b0cead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a969a60fd304e6d051d76fedbf2b0cead">&#9670;&nbsp;</a></span>packed_endian_specific_integral() <span class="overload">[2/2]</span></h2>
+<a id="a40bb3dd871b6f347a42c54429b3dbc2a" name="a40bb3dd871b6f347a42c54429b3dbc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40bb3dd871b6f347a42c54429b3dbc2a">&#9670;&nbsp;</a></span>packed_endian_specific_integral() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> </td>
+          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> </td>
           <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a>&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
           <td></td>
         </tr>
@@ -182,19 +213,19 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa983f4cd33b8899a127acbd16eafb15d" name="aa983f4cd33b8899a127acbd16eafb15d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa983f4cd33b8899a127acbd16eafb15d">&#9670;&nbsp;</a></span>operator value_type()</h2>
+<a id="a6e81b36227ffed22c7e873093bc2611f" name="a6e81b36227ffed22c7e873093bc2611f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e81b36227ffed22c7e873093bc2611f">&#9670;&nbsp;</a></span>operator value_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::operator value_type </td>
+          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::operator <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -209,21 +240,21 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 
 </div>
 </div>
-<a id="a7756deeb0517bfe9e67383b3f45b7466" name="a7756deeb0517bfe9e67383b3f45b7466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7756deeb0517bfe9e67383b3f45b7466">&#9670;&nbsp;</a></span>operator&amp;=()</h2>
+<a id="a41690a9dc199878ec7959ef61207fc60" name="a41690a9dc199878ec7959ef61207fc60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41690a9dc199878ec7959ef61207fc60">&#9670;&nbsp;</a></span>operator&amp;=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::operator&amp;= </td>
+          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::operator&amp;= </td>
           <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a>&#160;</td>
           <td class="paramname"><em>newValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -237,21 +268,21 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 
 </div>
 </div>
-<a id="aa2013b39b2a8fe23367737e226ecb9a4" name="aa2013b39b2a8fe23367737e226ecb9a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2013b39b2a8fe23367737e226ecb9a4">&#9670;&nbsp;</a></span>operator+=()</h2>
+<a id="a8c935df16355381c8226764400b7bd74" name="a8c935df16355381c8226764400b7bd74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c935df16355381c8226764400b7bd74">&#9670;&nbsp;</a></span>operator+=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::operator+= </td>
+          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::operator+= </td>
           <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a>&#160;</td>
           <td class="paramname"><em>newValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -265,21 +296,21 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 
 </div>
 </div>
-<a id="a4c3b37c993d8bb27260e5e91dddc95a6" name="a4c3b37c993d8bb27260e5e91dddc95a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c3b37c993d8bb27260e5e91dddc95a6">&#9670;&nbsp;</a></span>operator-=()</h2>
+<a id="a5112a0264179023b5ab67d096e95b4ce" name="a5112a0264179023b5ab67d096e95b4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5112a0264179023b5ab67d096e95b4ce">&#9670;&nbsp;</a></span>operator-=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::operator-= </td>
+          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::operator-= </td>
           <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a>&#160;</td>
           <td class="paramname"><em>newValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -293,21 +324,21 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 
 </div>
 </div>
-<a id="ab32b4533f97be574ed4c77d8dc9c553d" name="ab32b4533f97be574ed4c77d8dc9c553d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab32b4533f97be574ed4c77d8dc9c553d">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a996d35bf4f5ff6bcd42850f874b8b9a3" name="a996d35bf4f5ff6bcd42850f874b8b9a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996d35bf4f5ff6bcd42850f874b8b9a3">&#9670;&nbsp;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::operator= </td>
+          <td class="memname">void <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::operator= </td>
           <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a>&#160;</td>
           <td class="paramname"><em>newValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -321,21 +352,21 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 
 </div>
 </div>
-<a id="ad31469d708b660b86dd5072751c8978d" name="ad31469d708b660b86dd5072751c8978d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad31469d708b660b86dd5072751c8978d">&#9670;&nbsp;</a></span>operator|=()</h2>
+<a id="a252966bed3f26fab4bb49327e424b7c7" name="a252966bed3f26fab4bb49327e424b7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252966bed3f26fab4bb49327e424b7c7">&#9670;&nbsp;</a></span>operator|=()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> endian, std::size_t alignment&gt; </div>
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; value_type, endian, alignment &gt;::operator|= </td>
+          <td class="memname"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a> &amp; <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::operator|= </td>
           <td>(</td>
-          <td class="paramtype">value_type&#160;</td>
+          <td class="paramtype"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a>&#160;</td>
           <td class="paramname"><em>newValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -343,6 +374,71 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a38f585cf92988f6a2291b56581fe1274" name="a38f585cf92988f6a2291b56581fe1274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f585cf92988f6a2291b56581fe1274">&#9670;&nbsp;</a></span>alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::alignment = Alignment</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a158037ff653d6678720c370cee32f5f3" name="a158037ff653d6678720c370cee32f5f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a158037ff653d6678720c370cee32f5f3">&#9670;&nbsp;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::<a class="el" href="classbuffer.html">buffer</a>[sizeof(<a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#ad889b4ed595ad7a4c0383b680f5a94f7">value_type</a>)]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ed6313a24316ec9ac4f09677f95804b" name="a4ed6313a24316ec9ac4f09677f95804b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed6313a24316ec9ac4f09677f95804b">&#9670;&nbsp;</a></span>endian</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueType , <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> Endian, std::size_t Alignment, std::size_t ALIGN = PickAlignment&lt;ValueType, Alignment&gt;::value&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a">endianness</a> <a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a>&lt; ValueType, Endian, Alignment, ALIGN &gt;::endian = Endian</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -358,7 +454,7 @@ template&lt;typename value_type , <a class="el" href="namespacewpi_1_1support.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1support.html">support</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1support_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">packed_endian_specific_integral</a></li>
-    <li class="footer">Generated on Fri May 20 2022 22:19:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 20 2022 23:02:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -8,7 +8,7 @@ var _error_handling_8h =
     [ "install_out_of_memory_new_handler", "_error_handling_8h.html#ad97e6b598cd8e5fe3f4d4e75e83dbb9e", null ],
     [ "remove_bad_alloc_error_handler", "_error_handling_8h.html#a69094b92cf05fe59b51ae012a03d9474", null ],
     [ "remove_fatal_error_handler", "_error_handling_8h.html#a08d89324acbf36872064573065959d20", null ],
-    [ "report_bad_alloc_error", "_error_handling_8h.html#a6e3cd886beda7a2289aa18773f3aa103", null ],
+    [ "report_bad_alloc_error", "_error_handling_8h.html#a465fd61d6724137daddb9477fea8b57b", null ],
     [ "report_fatal_error", "_error_handling_8h.html#ad4e57280c0aca853e1938bc5318c7b1e", null ],
     [ "report_fatal_error", "_error_handling_8h.html#ae5138167e4448b97cdea5ac04838bd4c", null ],
     [ "report_fatal_error", "_error_handling_8h.html#ae217f4a23d9e6957bd7e67f2630807ca", null ],

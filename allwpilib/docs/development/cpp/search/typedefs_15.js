@@ -20,10 +20,11 @@ var searchData=
   ['unaligned_5fuint64_5ft_17',['unaligned_uint64_t',['../namespacewpi_1_1support.html#ae3a964312ad66b3de9d35c88aadbc42d',1,'wpi::support']]],
   ['uncvref_5ft_18',['uncvref_t',['../namespacewpi_1_1detail.html#ad7989691524c4283ec6ef011a57486f4',1,'wpi::detail']]],
   ['underlying_5ftype_19',['underlying_type',['../classunits_1_1unit__t.html#af3f88305faf59e0c71e8e616a2877ceb',1,'units::unit_t']]],
-  ['unit_5ft_20',['Unit_t',['../classfrc_1_1_slew_rate_limiter.html#ac8f8cf1a09860bc0f70db91bf14d1285',1,'frc::SlewRateLimiter']]],
-  ['unit_5ftype_21',['unit_type',['../structunits_1_1unit__value__t.html#a075e5bcccba668f3852a25f88e13a2a7',1,'units::unit_value_t::unit_type()'],['../classunits_1_1unit__t.html#a97925b5862ffd961071a8060d0f036b3',1,'units::unit_t::unit_type()']]],
-  ['userinfo_22',['UserInfo',['../classwpi_1_1_callback_thread.html#a508a7c4f1e659cd5d22fbadb580cd256',1,'wpi::CallbackThread']]],
-  ['utf16_23',['UTF16',['../namespacewpi.html#a45f45c50238ed154108c2d79c37d19ab',1,'wpi']]],
-  ['utf32_24',['UTF32',['../namespacewpi.html#ab31f8b5d3b4b5750e308b9486c8063cf',1,'wpi']]],
-  ['utf8_25',['UTF8',['../namespacewpi.html#a37bbc3b1e95b6409a042b8089d3d8c00',1,'wpi']]]
+  ['union_20',['Union',['../structwpi_1_1_dense_map_info_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html#a4432a9eceada29897c75ada5c79decdb',1,'wpi::DenseMapInfo&lt; PointerUnion&lt; PTs... &gt; &gt;']]],
+  ['unit_5ft_21',['Unit_t',['../classfrc_1_1_slew_rate_limiter.html#ac8f8cf1a09860bc0f70db91bf14d1285',1,'frc::SlewRateLimiter']]],
+  ['unit_5ftype_22',['unit_type',['../structunits_1_1unit__value__t.html#a075e5bcccba668f3852a25f88e13a2a7',1,'units::unit_value_t::unit_type()'],['../classunits_1_1unit__t.html#a97925b5862ffd961071a8060d0f036b3',1,'units::unit_t::unit_type()']]],
+  ['userinfo_23',['UserInfo',['../classwpi_1_1_callback_thread.html#a508a7c4f1e659cd5d22fbadb580cd256',1,'wpi::CallbackThread']]],
+  ['utf16_24',['UTF16',['../namespacewpi.html#a45f45c50238ed154108c2d79c37d19ab',1,'wpi']]],
+  ['utf32_25',['UTF32',['../namespacewpi.html#ab31f8b5d3b4b5750e308b9486c8063cf',1,'wpi']]],
+  ['utf8_26',['UTF8',['../namespacewpi.html#a37bbc3b1e95b6409a042b8089d3d8c00',1,'wpi']]]
 ];

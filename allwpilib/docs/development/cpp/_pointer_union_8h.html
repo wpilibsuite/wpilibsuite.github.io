@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-97-g5aa67f5</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-98-gc3b223c</span>
    </div>
   </td>
  </tr>
@@ -118,46 +118,54 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_union_type_selector_return_3_01_pointer_union_type_selector_3_01_t1_00_01_cc46ca047b721b68409be4a9f45bfaff.html">wpi::PointerUnionTypeSelectorReturn&lt; PointerUnionTypeSelector&lt; T1, T2, RET_EQ, RET_NE &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union_u_int_traits.html">wpi::PointerUnionUIntTraits&lt; PT1, PT2 &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide <a class="el" href="structwpi_1_1_pointer_like_type_traits.html" title="A traits type that is used to handle pointer types and things that are just wrappers for pointers as ...">PointerLikeTypeTraits</a> for void* that is used by <a class="el" href="classwpi_1_1_pointer_union.html" title="A discriminated union of two pointer types, with the discriminator in the low bit of the pointer.">PointerUnion</a> for the two template arguments.  <a href="classwpi_1_1_pointer_union_u_int_traits.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html">wpi::pointer_union_detail::TypeIndex&lt; T, T, Us... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion&lt; PT1, PT2 &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A discriminated union of two pointer types, with the discriminator in the low bit of the pointer.  <a href="classwpi_1_1_pointer_union.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html">wpi::pointer_union_detail::TypeIndex&lt; T, U, Us... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_like_type_traits_3_01_pointer_union_3_01_p_t1_00_01_p_t2_01_4_01_4.html">wpi::PointerLikeTypeTraits&lt; PointerUnion&lt; PT1, PT2 &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_01_4.html">wpi::pointer_union_detail::TypeIndex&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union3.html">wpi::PointerUnion3&lt; PT1, PT2, PT3 &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer union of three pointer types.  <a href="classwpi_1_1_pointer_union3.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1pointer__union__detail_1_1_get_first_type.html">wpi::pointer_union_detail::GetFirstType&lt; T,... &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the first type in a list of types.  <a href="structwpi_1_1pointer__union__detail_1_1_get_first_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_like_type_traits_3_01_pointer_union3_3_01_p_t1_00_01_p_t2_00_01_p_t3_01_4_01_4.html">wpi::PointerLikeTypeTraits&lt; PointerUnion3&lt; PT1, PT2, PT3 &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1pointer__union__detail_1_1_pointer_union_u_int_traits.html">wpi::pointer_union_detail::PointerUnionUIntTraits&lt; PTs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide <a class="el" href="structwpi_1_1_pointer_like_type_traits.html" title="A traits type that is used to handle pointer types and things that are just wrappers for pointers as ...">PointerLikeTypeTraits</a> for void* that is used by <a class="el" href="classwpi_1_1_pointer_union.html" title="A discriminated union of two or more pointer types, with the discriminator in the low bit of the poin...">PointerUnion</a> for the template arguments.  <a href="classwpi_1_1pointer__union__detail_1_1_pointer_union_u_int_traits.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union4.html">wpi::PointerUnion4&lt; PT1, PT2, PT3, PT4 &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer union of four pointer types.  <a href="classwpi_1_1_pointer_union4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_00_01_i_01_4.html">wpi::pointer_union_detail::PointerUnionMembers&lt; Derived, ValTy, I &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_like_type_traits_3_01_pointer_union4_3_01_p_t1_00_01_p_t2_00_01_p_t3_00_01_p_t4_01_4_01_4.html">wpi::PointerLikeTypeTraits&lt; PointerUnion4&lt; PT1, PT2, PT3, PT4 &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_00_01_i_06bb8b0c0f4d8e81bebbe85401b3616d6.html">wpi::pointer_union_detail::PointerUnionMembers&lt; Derived, ValTy, I, Type, Types... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01_pointer_union_3_01_t_00_01_u_01_4_01_4.html">wpi::DenseMapInfo&lt; PointerUnion&lt; T, U &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html">wpi::PointerUnion&lt; PTs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A discriminated union of two or more pointer types, with the discriminator in the low bit of the pointer.  <a href="classwpi_1_1_pointer_union.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_like_type_traits_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html">wpi::PointerLikeTypeTraits&lt; PointerUnion&lt; PTs... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html">wpi::DenseMapInfo&lt; PointerUnion&lt; PTs... &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacewpi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html">wpi</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacewpi_1_1pointer__union__detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1pointer__union__detail.html">wpi::pointer_union_detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aed7d9ed074dc21ffb99b2f264efd7c49"><td class="memTemplParams" colspan="2">template&lt;typename PT1 , typename PT2 &gt; </td></tr>
-<tr class="memitem:aed7d9ed074dc21ffb99b2f264efd7c49"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aed7d9ed074dc21ffb99b2f264efd7c49">wpi::operator==</a> (PointerUnion&lt; PT1, PT2 &gt; lhs, PointerUnion&lt; PT1, PT2 &gt; rhs)</td></tr>
-<tr class="separator:aed7d9ed074dc21ffb99b2f264efd7c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16dde305cbf9a1ef5e490ca5bfd54dfe"><td class="memTemplParams" colspan="2">template&lt;typename PT1 , typename PT2 &gt; </td></tr>
-<tr class="memitem:a16dde305cbf9a1ef5e490ca5bfd54dfe"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a16dde305cbf9a1ef5e490ca5bfd54dfe">wpi::operator!=</a> (PointerUnion&lt; PT1, PT2 &gt; lhs, PointerUnion&lt; PT1, PT2 &gt; rhs)</td></tr>
-<tr class="separator:a16dde305cbf9a1ef5e490ca5bfd54dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabd42859bd71a8e8216b38de777c629a"><td class="memTemplParams" colspan="2">template&lt;typename PT1 , typename PT2 &gt; </td></tr>
-<tr class="memitem:aabd42859bd71a8e8216b38de777c629a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aabd42859bd71a8e8216b38de777c629a">wpi::operator&lt;</a> (PointerUnion&lt; PT1, PT2 &gt; lhs, PointerUnion&lt; PT1, PT2 &gt; rhs)</td></tr>
-<tr class="separator:aabd42859bd71a8e8216b38de777c629a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5000c9a8029f54264122dadfd414ef0"><td class="memTemplParams" colspan="2">template&lt;typename PT1 , typename PT2 , typename PT3 &gt; </td></tr>
-<tr class="memitem:ab5000c9a8029f54264122dadfd414ef0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab5000c9a8029f54264122dadfd414ef0">wpi::operator&lt;</a> (PointerUnion3&lt; PT1, PT2, PT3 &gt; lhs, PointerUnion3&lt; PT1, PT2, PT3 &gt; rhs)</td></tr>
-<tr class="separator:ab5000c9a8029f54264122dadfd414ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19b8c6710f3ec86f025ae6d3d1fd712"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1pointer__union__detail.html#ae19b8c6710f3ec86f025ae6d3d1fd712">wpi::pointer_union_detail::bitsRequired</a> (unsigned n)</td></tr>
+<tr class="memdesc:ae19b8c6710f3ec86f025ae6d3d1fd712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the number of bits required to store integers with values &lt; n.  <a href="namespacewpi_1_1pointer__union__detail.html#ae19b8c6710f3ec86f025ae6d3d1fd712">More...</a><br /></td></tr>
+<tr class="separator:ae19b8c6710f3ec86f025ae6d3d1fd712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4ab8b1f4c09528021435e2e857ceb93"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:ab4ab8b1f4c09528021435e2e857ceb93"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1pointer__union__detail.html#ab4ab8b1f4c09528021435e2e857ceb93">wpi::pointer_union_detail::lowBitsAvailable</a> ()</td></tr>
+<tr class="separator:ab4ab8b1f4c09528021435e2e857ceb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3287d2b8e67eaf00c1f275eb1d2b1fd8"><td class="memTemplParams" colspan="2">template&lt;typename ... PTs&gt; </td></tr>
+<tr class="memitem:a3287d2b8e67eaf00c1f275eb1d2b1fd8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3287d2b8e67eaf00c1f275eb1d2b1fd8">wpi::operator==</a> (PointerUnion&lt; PTs... &gt; lhs, PointerUnion&lt; PTs... &gt; rhs)</td></tr>
+<tr class="separator:a3287d2b8e67eaf00c1f275eb1d2b1fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088be308371a5cee44b52aedf5a619e7"><td class="memTemplParams" colspan="2">template&lt;typename ... PTs&gt; </td></tr>
+<tr class="memitem:a088be308371a5cee44b52aedf5a619e7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a088be308371a5cee44b52aedf5a619e7">wpi::operator!=</a> (PointerUnion&lt; PTs... &gt; lhs, PointerUnion&lt; PTs... &gt; rhs)</td></tr>
+<tr class="separator:a088be308371a5cee44b52aedf5a619e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e03174a92e237c3b5544c57d3dee498"><td class="memTemplParams" colspan="2">template&lt;typename ... PTs&gt; </td></tr>
+<tr class="memitem:a4e03174a92e237c3b5544c57d3dee498"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a4e03174a92e237c3b5544c57d3dee498">wpi::operator&lt;</a> (PointerUnion&lt; PTs... &gt; lhs, PointerUnion&lt; PTs... &gt; rhs)</td></tr>
+<tr class="separator:a4e03174a92e237c3b5544c57d3dee498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -165,7 +173,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_pointer_union_8h.html">PointerUnion.h</a></li>
-    <li class="footer">Generated on Fri May 20 2022 22:19:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 20 2022 23:02:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

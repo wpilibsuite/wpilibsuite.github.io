@@ -1,5 +1,0 @@
-var structwpi_1_1_pointer_like_type_traits_3_01_pointer_union4_3_01_p_t1_00_01_p_t2_00_01_p_t3_00_01_p_t4_01_4_01_4 =
-[
-    [ "getAsVoidPointer", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_union4_3_01_p_t1_00_01_p_t2_00_01_p_t3_00_01_p_t4_01_4_01_4.html#a084d5486b26b6f0c95f41498a82933ac", null ],
-    [ "getFromVoidPointer", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_union4_3_01_p_t1_00_01_p_t2_00_01_p_t3_00_01_p_t4_01_4_01_4.html#ab036533d641b072aad945b1f6734fc62", null ]
-];

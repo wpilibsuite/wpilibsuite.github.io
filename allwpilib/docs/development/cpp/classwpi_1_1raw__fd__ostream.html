@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-97-g5aa67f5</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-98-gc3b223c</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1raw__fd__ostream.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classwpi_1_1raw__fd__ostream-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wpi::raw_fd_ostream Class Reference</div></div>
 </div><!--header-->
@@ -110,6 +111,7 @@ Inheritance diagram for wpi::raw_fd_ostream:</div>
   <map id="wpi::raw_5Ffd_5Fostream_map" name="wpi::raw_5Ffd_5Fostream_map">
 <area href="classwpi_1_1raw__pwrite__stream.html" title="An abstract base class for streams implementations that also support a pwrite operation." alt="wpi::raw_pwrite_stream" shape="rect" coords="0,56,143,80"/>
 <area href="classwpi_1_1raw__ostream.html" title="This class implements an extremely fast bulk output stream that can only output to a stream." alt="wpi::raw_ostream" shape="rect" coords="0,0,143,24"/>
+<area href="classwpi_1_1raw__fd__stream.html" title="A raw_ostream of a file for reading/writing/seeking." alt="wpi::raw_fd_stream" shape="rect" coords="0,168,143,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -126,16 +128,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a82dae1072d9c8a52e0aa4686d668443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad82b7c514fa0000bc27ab0cb51817c76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#ad82b7c514fa0000bc27ab0cb51817c76">raw_fd_ostream</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Filename, std::error_code &amp;EC, <a class="el" href="namespacefs.html#a685b73b8c3b15a4105a73cbe08a01c82">fs::CreationDisposition</a> Disp, <a class="el" href="namespacefs.html#a2c0f4f5367f7ca7990e6fe9d6ffc845f">fs::FileAccess</a> Access, <a class="el" href="namespacefs.html#a298a018a80dec5d5368684731c45ae4c">fs::OpenFlags</a> Flags)</td></tr>
 <tr class="separator:ad82b7c514fa0000bc27ab0cb51817c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0f130f5a047d1619312a39f483d5390"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#ae0f130f5a047d1619312a39f483d5390">raw_fd_ostream</a> (int fd, bool shouldClose, bool unbuffered=false)</td></tr>
-<tr class="memdesc:ae0f130f5a047d1619312a39f483d5390"><td class="mdescLeft">&#160;</td><td class="mdescRight">FD is the file descriptor that this writes to.  <a href="classwpi_1_1raw__fd__ostream.html#ae0f130f5a047d1619312a39f483d5390">More...</a><br /></td></tr>
-<tr class="separator:ae0f130f5a047d1619312a39f483d5390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb526f07528c3d09935d43fe49effcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#abfb526f07528c3d09935d43fe49effcd">raw_fd_ostream</a> (int fd, bool shouldClose, bool unbuffered=false, <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a> K=<a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OStreamKind::OK_OStream</a>)</td></tr>
+<tr class="memdesc:abfb526f07528c3d09935d43fe49effcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">FD is the file descriptor that this writes to.  <a href="classwpi_1_1raw__fd__ostream.html#abfb526f07528c3d09935d43fe49effcd">More...</a><br /></td></tr>
+<tr class="separator:abfb526f07528c3d09935d43fe49effcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a708344c08b93f0100dafbbf525f69331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#a708344c08b93f0100dafbbf525f69331">~raw_fd_ostream</a> () override</td></tr>
 <tr class="separator:a708344c08b93f0100dafbbf525f69331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff34cdd5e4047f9cbdd05f1b176521b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#a5ff34cdd5e4047f9cbdd05f1b176521b">close</a> ()</td></tr>
 <tr class="memdesc:a5ff34cdd5e4047f9cbdd05f1b176521b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually flush the stream and close the file.  <a href="classwpi_1_1raw__fd__ostream.html#a5ff34cdd5e4047f9cbdd05f1b176521b">More...</a><br /></td></tr>
 <tr class="separator:a5ff34cdd5e4047f9cbdd05f1b176521b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb09d5e19b6308603e28279a169fc302"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#aeb09d5e19b6308603e28279a169fc302">supportsSeeking</a> ()</td></tr>
-<tr class="separator:aeb09d5e19b6308603e28279a169fc302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22705d7c4037220de77daf7652c8944"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#ad22705d7c4037220de77daf7652c8944">supportsSeeking</a> () const</td></tr>
+<tr class="separator:ad22705d7c4037220de77daf7652c8944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa105a83b5f8979e72b3f7e2547ab275e"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#aa105a83b5f8979e72b3f7e2547ab275e">seek</a> (uint64_t off)</td></tr>
 <tr class="memdesc:aa105a83b5f8979e72b3f7e2547ab275e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes the stream and repositions the underlying file descriptor position to the offset specified from the beginning of the file.  <a href="classwpi_1_1raw__fd__ostream.html#aa105a83b5f8979e72b3f7e2547ab275e">More...</a><br /></td></tr>
 <tr class="separator:aa105a83b5f8979e72b3f7e2547ab275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,13 +150,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adef0fd6fdfb312f07ec11864e93768b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the flag read by <a class="el" href="classwpi_1_1raw__fd__ostream.html#aa9bbb0966b6684ffc0e96371d258a153" title="Return the value of the flag in this raw_fd_ostream indicating whether an output error has been encou...">has_error()</a> to false.  <a href="classwpi_1_1raw__fd__ostream.html#adef0fd6fdfb312f07ec11864e93768b9">More...</a><br /></td></tr>
 <tr class="separator:adef0fd6fdfb312f07ec11864e93768b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1raw__pwrite__stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1raw__pwrite__stream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1raw__pwrite__stream.html">wpi::raw_pwrite_stream</a></td></tr>
-<tr class="memitem:a04c0b5833185421348f79194220f9c5a inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__pwrite__stream.html#a04c0b5833185421348f79194220f9c5a">raw_pwrite_stream</a> (bool Unbuffered=false)</td></tr>
-<tr class="separator:a04c0b5833185421348f79194220f9c5a inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a9df0ec9329f87cf42098a19ebd8d81 inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__pwrite__stream.html#a8a9df0ec9329f87cf42098a19ebd8d81">raw_pwrite_stream</a> (bool Unbuffered=false, <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a> K=<a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OStreamKind::OK_OStream</a>)</td></tr>
+<tr class="separator:a8a9df0ec9329f87cf42098a19ebd8d81 inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b862f1be11accd6d49fd78b4a9b54f2 inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__pwrite__stream.html#a1b862f1be11accd6d49fd78b4a9b54f2">pwrite</a> (const char *Ptr, size_t Size, uint64_t Offset)</td></tr>
 <tr class="separator:a1b862f1be11accd6d49fd78b4a9b54f2 inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1raw__ostream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1raw__ostream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></td></tr>
-<tr class="memitem:a159ee83950187660cf1ef9719a77a495 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a159ee83950187660cf1ef9719a77a495">raw_ostream</a> (bool unbuffered=false)</td></tr>
-<tr class="separator:a159ee83950187660cf1ef9719a77a495 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9a99b5196d282e28f19ce12dba3ce1 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a9b9a99b5196d282e28f19ce12dba3ce1">raw_ostream</a> (bool unbuffered=false, <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a> K=<a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OStreamKind::OK_OStream</a>)</td></tr>
+<tr class="separator:a9b9a99b5196d282e28f19ce12dba3ce1 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a1c461a49e3baf15ffec06d4210d93 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a43a1c461a49e3baf15ffec06d4210d93">raw_ostream</a> (const <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;)=delete</td></tr>
 <tr class="separator:a43a1c461a49e3baf15ffec06d4210d93 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade3e8c19aa6404e634869430536a757b inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ade3e8c19aa6404e634869430536a757b">operator=</a> (const <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;)=delete</td></tr>
@@ -164,6 +166,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada0ea5133f01a499bd9d74d2874a29ae inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ada0ea5133f01a499bd9d74d2874a29ae">tell</a> () const</td></tr>
 <tr class="memdesc:ada0ea5133f01a499bd9d74d2874a29ae inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">tell - Return the current offset with the file.  <a href="classwpi_1_1raw__ostream.html#ada0ea5133f01a499bd9d74d2874a29ae">More...</a><br /></td></tr>
 <tr class="separator:ada0ea5133f01a499bd9d74d2874a29ae inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc3fe1570f5434ae5d0bf6147c6c4b0 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a0dc3fe1570f5434ae5d0bf6147c6c4b0">get_kind</a> () const</td></tr>
+<tr class="separator:a0dc3fe1570f5434ae5d0bf6147c6c4b0 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ee344340953e369975eebe7e7ecfde inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a32ee344340953e369975eebe7e7ecfde">reserveExtraSpace</a> (uint64_t ExtraSize)</td></tr>
+<tr class="memdesc:a32ee344340953e369975eebe7e7ecfde inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">If possible, pre-allocate <code>ExtraSize</code> bytes for stream data.  <a href="classwpi_1_1raw__ostream.html#a32ee344340953e369975eebe7e7ecfde">More...</a><br /></td></tr>
+<tr class="separator:a32ee344340953e369975eebe7e7ecfde inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d02fa22e49bde41273c155cee368acf inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a5d02fa22e49bde41273c155cee368acf">SetBuffered</a> ()</td></tr>
 <tr class="memdesc:a5d02fa22e49bde41273c155cee368acf inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to be buffered, with an automatically determined buffer size.  <a href="classwpi_1_1raw__ostream.html#a5d02fa22e49bde41273c155cee368acf">More...</a><br /></td></tr>
 <tr class="separator:a5d02fa22e49bde41273c155cee368acf inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,25 +237,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ca4c5a5b636b56acc32e169a8a332f1 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a4ca4c5a5b636b56acc32e169a8a332f1">has_colors</a> () const</td></tr>
 <tr class="memdesc:a4ca4c5a5b636b56acc32e169a8a332f1 inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function determines if this stream is displayed and supports colors.  <a href="classwpi_1_1raw__ostream.html#a4ca4c5a5b636b56acc32e169a8a332f1">More...</a><br /></td></tr>
 <tr class="separator:a4ca4c5a5b636b56acc32e169a8a332f1 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bec2e621488ef27afe5fd2145ca1adb inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a1bec2e621488ef27afe5fd2145ca1adb">enable_colors</a> (bool)</td></tr>
+<tr class="separator:a1bec2e621488ef27afe5fd2145ca1adb inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bdb5e93cd0b0a3df806527ea9ae937 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a70bdb5e93cd0b0a3df806527ea9ae937">tie</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> *TieTo)</td></tr>
+<tr class="memdesc:a70bdb5e93cd0b0a3df806527ea9ae937 inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tie this stream to the specified stream.  <a href="classwpi_1_1raw__ostream.html#a70bdb5e93cd0b0a3df806527ea9ae937">More...</a><br /></td></tr>
+<tr class="separator:a70bdb5e93cd0b0a3df806527ea9ae937 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classwpi_1_1raw__ostream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwpi_1_1raw__ostream')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></td></tr>
-<tr class="memitem:ad198c8e10001e9e8747c50bcbe175631 inherit pub_types_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> { <br />
-&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a1431d2d047b21aa9dcd6c4a3289f8e31">BLACK</a> = 0
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a4baf838e3d705afcb6f4aa75ee6df99c">RED</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a303c195beced10c2ac6955347d67587c">GREEN</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a6c85750cfeb69d17b1a3a0ccc4b63238">YELLOW</a>
-, <br />
-&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a80b91ebb75bff4bbd36f1095a550c00f">BLUE</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a4102b19e4c74aa7104ffbaa61c84b31b">MAGENTA</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a458abd5e86a7d3b41fec7a77b58c80ff">CYAN</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab674dd70b0802e7e3c097473157b5d39">WHITE</a>
-, <br />
-&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a3769503beca75af0fe29b4d88b5ade7c">SAVEDCOLOR</a>
-<br />
- }</td></tr>
-<tr class="separator:ad198c8e10001e9e8747c50bcbe175631 inherit pub_types_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af4e0b8939c01eb660e340dd41a3ede0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#af4e0b8939c01eb660e340dd41a3ede0e">error_detected</a> (std::error_code EC)</td></tr>
+<tr class="memdesc:af4e0b8939c01eb660e340dd41a3ede0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the flag indicating that an output error has been encountered.  <a href="classwpi_1_1raw__fd__ostream.html#af4e0b8939c01eb660e340dd41a3ede0e">More...</a><br /></td></tr>
+<tr class="separator:af4e0b8939c01eb660e340dd41a3ede0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bf5dfe9dfc7cff17d291c03969323e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#a94bf5dfe9dfc7cff17d291c03969323e">get_fd</a> () const</td></tr>
+<tr class="memdesc:a94bf5dfe9dfc7cff17d291c03969323e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file descriptor.  <a href="classwpi_1_1raw__fd__ostream.html#a94bf5dfe9dfc7cff17d291c03969323e">More...</a><br /></td></tr>
+<tr class="separator:a94bf5dfe9dfc7cff17d291c03969323e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5b82db54fe48bc4f72593544949219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__fd__ostream.html#a5e5b82db54fe48bc4f72593544949219">inc_pos</a> (uint64_t Delta)</td></tr>
+<tr class="separator:a5e5b82db54fe48bc4f72593544949219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1raw__ostream"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1raw__ostream')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></td></tr>
 <tr class="memitem:a604d7ccd1ab7623329c6743c62db5ef6 inherit pro_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a604d7ccd1ab7623329c6743c62db5ef6">SetBuffer</a> (char *BufferStart, size_t Size)</td></tr>
 <tr class="memdesc:a604d7ccd1ab7623329c6743c62db5ef6 inherit pro_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the provided buffer as the <a class="el" href="classwpi_1_1raw__ostream.html" title="This class implements an extremely fast bulk output stream that can only output to a stream.">raw_ostream</a> buffer.  <a href="classwpi_1_1raw__ostream.html#a604d7ccd1ab7623329c6743c62db5ef6">More...</a><br /></td></tr>
@@ -256,6 +260,51 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2a0d0493db5dff918e9d3673710ca13d inherit pro_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a2a0d0493db5dff918e9d3673710ca13d">getBufferStart</a> () const</td></tr>
 <tr class="memdesc:a2a0d0493db5dff918e9d3673710ca13d inherit pro_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the beginning of the current stream buffer, or 0 if the stream is unbuffered.  <a href="classwpi_1_1raw__ostream.html#a2a0d0493db5dff918e9d3673710ca13d">More...</a><br /></td></tr>
 <tr class="separator:a2a0d0493db5dff918e9d3673710ca13d inherit pro_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classwpi_1_1raw__ostream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwpi_1_1raw__ostream')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></td></tr>
+<tr class="memitem:abcc763198eb5d01c038ad585513bb49a inherit pub_types_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a> { <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OK_OStream</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa8dfae711fb29865c49b78c8ea1a6f782">OK_FDStream</a>
+ }</td></tr>
+<tr class="separator:abcc763198eb5d01c038ad585513bb49a inherit pub_types_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad198c8e10001e9e8747c50bcbe175631 inherit pub_types_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> { <br />
+&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a08d0012388564e95c3b4a7407cf04965">BLACK</a> = 0
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631aa2d9547b5d3dd9f05984475f7c926da0">RED</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a9de0e5dd94e861317e74964bed179fa0">GREEN</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a8a568e5f41b7e4da88fe5c4a00aad34e">YELLOW</a>
+, <br />
+&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a1b3e1ee9bff86431dea6b181365ba65f">BLUE</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ac634ffea7195608364671ac52ee59a61">MAGENTA</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a344dd8cd533280795b9db82ef0c92749">CYAN</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab5bf627e448384cf3a4c35121ca6008d">WHITE</a>
+, <br />
+&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631abd8a983d726207f3d1ba3ea7e2cfdf2a">SAVEDCOLOR</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab5859d8721cfdc0312b2838b9c985bc1">RESET</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad198c8e10001e9e8747c50bcbe175631 inherit pub_types_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classwpi_1_1raw__ostream"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classwpi_1_1raw__ostream')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></td></tr>
+<tr class="memitem:a05f91a45bd7e210a6693d5f8e963ef15 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a05f91a45bd7e210a6693d5f8e963ef15">BLACK</a> = Colors::BLACK</td></tr>
+<tr class="separator:a05f91a45bd7e210a6693d5f8e963ef15 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f396a7b12336030e7e4a62799fccfb inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#af9f396a7b12336030e7e4a62799fccfb">RED</a> = Colors::RED</td></tr>
+<tr class="separator:af9f396a7b12336030e7e4a62799fccfb inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d47c1520819af2704f42c35e84d01c inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#aa7d47c1520819af2704f42c35e84d01c">GREEN</a> = Colors::GREEN</td></tr>
+<tr class="separator:aa7d47c1520819af2704f42c35e84d01c inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb32362b8f45d0ac10889d50d60a3312 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#abb32362b8f45d0ac10889d50d60a3312">YELLOW</a> = Colors::YELLOW</td></tr>
+<tr class="separator:abb32362b8f45d0ac10889d50d60a3312 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42bd9703a6054eac69fcf157252e957 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ab42bd9703a6054eac69fcf157252e957">BLUE</a> = Colors::BLUE</td></tr>
+<tr class="separator:ab42bd9703a6054eac69fcf157252e957 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2d34540c9a14a7832ad08c07b48a20 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a0e2d34540c9a14a7832ad08c07b48a20">MAGENTA</a> = Colors::MAGENTA</td></tr>
+<tr class="separator:a0e2d34540c9a14a7832ad08c07b48a20 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d13c742e2a49b9877eb56a2f44471b inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a14d13c742e2a49b9877eb56a2f44471b">CYAN</a> = Colors::CYAN</td></tr>
+<tr class="separator:a14d13c742e2a49b9877eb56a2f44471b inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ede8baa5cb4c5364d15d8a70b87d931 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a6ede8baa5cb4c5364d15d8a70b87d931">WHITE</a> = Colors::WHITE</td></tr>
+<tr class="separator:a6ede8baa5cb4c5364d15d8a70b87d931 inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe78e79a628c103e175ac29a55db1d0c inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#abe78e79a628c103e175ac29a55db1d0c">SAVEDCOLOR</a> = Colors::SAVEDCOLOR</td></tr>
+<tr class="separator:abe78e79a628c103e175ac29a55db1d0c inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf3d43722659ffc06ac12e93604c93b inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a5cf3d43722659ffc06ac12e93604c93b">RESET</a> = Colors::RESET</td></tr>
+<tr class="separator:a5cf3d43722659ffc06ac12e93604c93b inherit pub_static_attribs_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A <a class="el" href="classwpi_1_1raw__ostream.html" title="This class implements an extremely fast bulk output stream that can only output to a stream.">raw_ostream</a> that writes to a file descriptor. </p>
@@ -440,8 +489,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0f130f5a047d1619312a39f483d5390" name="ae0f130f5a047d1619312a39f483d5390"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0f130f5a047d1619312a39f483d5390">&#9670;&nbsp;</a></span>raw_fd_ostream() <span class="overload">[6/6]</span></h2>
+<a id="abfb526f07528c3d09935d43fe49effcd" name="abfb526f07528c3d09935d43fe49effcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb526f07528c3d09935d43fe49effcd">&#9670;&nbsp;</a></span>raw_fd_ostream() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -462,7 +511,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>unbuffered</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>unbuffered</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a>&#160;</td>
+          <td class="paramname"><em>K</em> = <code><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OStreamKind::OK_OStream</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -580,6 +635,61 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af4e0b8939c01eb660e340dd41a3ede0e" name="af4e0b8939c01eb660e340dd41a3ede0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4e0b8939c01eb660e340dd41a3ede0e">&#9670;&nbsp;</a></span>error_detected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::raw_fd_ostream::error_detected </td>
+          <td>(</td>
+          <td class="paramtype">std::error_code&#160;</td>
+          <td class="paramname"><em>EC</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the flag indicating that an output error has been encountered. </p>
+
+</div>
+</div>
+<a id="a94bf5dfe9dfc7cff17d291c03969323e" name="a94bf5dfe9dfc7cff17d291c03969323e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bf5dfe9dfc7cff17d291c03969323e">&#9670;&nbsp;</a></span>get_fd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::raw_fd_ostream::get_fd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the file descriptor. </p>
+
+</div>
+</div>
 <a id="aa9bbb0966b6684ffc0e96371d258a153" name="aa9bbb0966b6684ffc0e96371d258a153"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9bbb0966b6684ffc0e96371d258a153">&#9670;&nbsp;</a></span>has_error()</h2>
 
@@ -608,6 +718,32 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a5e5b82db54fe48bc4f72593544949219" name="a5e5b82db54fe48bc4f72593544949219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e5b82db54fe48bc4f72593544949219">&#9670;&nbsp;</a></span>inc_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::raw_fd_ostream::inc_pos </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>Delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa105a83b5f8979e72b3f7e2547ab275e" name="aa105a83b5f8979e72b3f7e2547ab275e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa105a83b5f8979e72b3f7e2547ab275e">&#9670;&nbsp;</a></span>seek()</h2>
 
@@ -628,8 +764,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb09d5e19b6308603e28279a169fc302" name="aeb09d5e19b6308603e28279a169fc302"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb09d5e19b6308603e28279a169fc302">&#9670;&nbsp;</a></span>supportsSeeking()</h2>
+<a id="ad22705d7c4037220de77daf7652c8944" name="ad22705d7c4037220de77daf7652c8944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22705d7c4037220de77daf7652c8944">&#9670;&nbsp;</a></span>supportsSeeking()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -641,7 +777,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool wpi::raw_fd_ostream::supportsSeeking </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -662,7 +798,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1raw__fd__ostream.html">raw_fd_ostream</a></li>
-    <li class="footer">Generated on Fri May 20 2022 22:19:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 20 2022 23:02:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

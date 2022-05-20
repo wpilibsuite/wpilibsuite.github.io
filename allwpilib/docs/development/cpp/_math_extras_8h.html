@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-97-g5aa67f5</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-98-gc3b223c</span>
    </div>
   </td>
  </tr>
@@ -102,11 +102,10 @@ $(document).ready(function(){initNavTree('_math_extras_8h.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_compiler_8h_source.html">wpi/Compiler.h</a>&quot;</code><br />
-<code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;climits&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
@@ -122,11 +121,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1_population_counter.html">wpi::detail::PopulationCounter&lt; T, SizeOfT &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1_population_counter_3_01_t_00_018_01_4.html">wpi::detail::PopulationCounter&lt; T, 8 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_align_to.html">wpi::AlignTo&lt; Align &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>alignTo</code> for contexts where a constant expression is required.  <a href="structwpi_1_1_align_to.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_align_to_1_1from__value.html">wpi::AlignTo&lt; Align &gt;::from_value&lt; Value &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -157,14 +151,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad9f525bbdc00952b90633eb8af8442c2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad9f525bbdc00952b90633eb8af8442c2"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad9f525bbdc00952b90633eb8af8442c2">wpi::countTrailingZeros</a> (T Val, ZeroBehavior ZB=ZB_Width)</td></tr>
-<tr class="memdesc:ad9f525bbdc00952b90633eb8af8442c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of 0's from the least significant bit to the most stopping at the first 1.  <a href="namespacewpi.html#ad9f525bbdc00952b90633eb8af8442c2">More...</a><br /></td></tr>
-<tr class="separator:ad9f525bbdc00952b90633eb8af8442c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee54309381fae56b81e91ad5f1b2c25a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aee54309381fae56b81e91ad5f1b2c25a"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aee54309381fae56b81e91ad5f1b2c25a">wpi::countLeadingZeros</a> (T Val, ZeroBehavior ZB=ZB_Width)</td></tr>
-<tr class="memdesc:aee54309381fae56b81e91ad5f1b2c25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of 0's from the most significant bit to the least stopping at the first 1.  <a href="namespacewpi.html#aee54309381fae56b81e91ad5f1b2c25a">More...</a><br /></td></tr>
-<tr class="separator:aee54309381fae56b81e91ad5f1b2c25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e2eb77f5b39477413026df59b92032"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a10e2eb77f5b39477413026df59b92032"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a10e2eb77f5b39477413026df59b92032">wpi::countTrailingZeros</a> (T Val, ZeroBehavior ZB=ZB_Width)</td></tr>
+<tr class="memdesc:a10e2eb77f5b39477413026df59b92032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of 0's from the least significant bit to the most stopping at the first 1.  <a href="namespacewpi.html#a10e2eb77f5b39477413026df59b92032">More...</a><br /></td></tr>
+<tr class="separator:a10e2eb77f5b39477413026df59b92032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2b5dfad335d4ed298cf53a9abdfa07"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2c2b5dfad335d4ed298cf53a9abdfa07"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a2c2b5dfad335d4ed298cf53a9abdfa07">wpi::countLeadingZeros</a> (T Val, ZeroBehavior ZB=ZB_Width)</td></tr>
+<tr class="memdesc:a2c2b5dfad335d4ed298cf53a9abdfa07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of 0's from the most significant bit to the least stopping at the first 1.  <a href="namespacewpi.html#a2c2b5dfad335d4ed298cf53a9abdfa07">More...</a><br /></td></tr>
+<tr class="separator:a2c2b5dfad335d4ed298cf53a9abdfa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b142bef5a5b68ba5def7d5428653014"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3b142bef5a5b68ba5def7d5428653014"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3b142bef5a5b68ba5def7d5428653014">wpi::findFirstSet</a> (T Val, ZeroBehavior ZB=ZB_Max)</td></tr>
 <tr class="memdesc:a3b142bef5a5b68ba5def7d5428653014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the index of the first set bit starting from the least significant bit.  <a href="namespacewpi.html#a3b142bef5a5b68ba5def7d5428653014">More...</a><br /></td></tr>
@@ -219,10 +213,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a3b38a6d85f09021ac8f5a253764011fb"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3b38a6d85f09021ac8f5a253764011fb">wpi::isShiftedInt</a> (int64_t x)</td></tr>
 <tr class="memdesc:a3b38a6d85f09021ac8f5a253764011fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a signed integer is an N bit number shifted left by S.  <a href="namespacewpi.html#a3b38a6d85f09021ac8f5a253764011fb">More...</a><br /></td></tr>
 <tr class="separator:a3b38a6d85f09021ac8f5a253764011fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2a227c8d2e1c6a0edb79ad2d7453b05"><td class="memTemplParams" colspan="2">template&lt;unsigned N&gt; </td></tr>
-<tr class="memitem:ab2a227c8d2e1c6a0edb79ad2d7453b05"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::enable_if&lt;(N&lt; 64), bool &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab2a227c8d2e1c6a0edb79ad2d7453b05">wpi::isUInt</a> (uint64_t X)</td></tr>
-<tr class="memdesc:ab2a227c8d2e1c6a0edb79ad2d7453b05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an unsigned integer fits into the given bit width.  <a href="namespacewpi.html#ab2a227c8d2e1c6a0edb79ad2d7453b05">More...</a><br /></td></tr>
-<tr class="separator:ab2a227c8d2e1c6a0edb79ad2d7453b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2835f8a9f73c7d77f107f73df4b643"><td class="memTemplParams" colspan="2">template&lt;unsigned N&gt; </td></tr>
+<tr class="memitem:adc2835f8a9f73c7d77f107f73df4b643"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;(N&lt; 64), bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#adc2835f8a9f73c7d77f107f73df4b643">wpi::isUInt</a> (uint64_t X)</td></tr>
+<tr class="memdesc:adc2835f8a9f73c7d77f107f73df4b643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if an unsigned integer fits into the given bit width.  <a href="namespacewpi.html#adc2835f8a9f73c7d77f107f73df4b643">More...</a><br /></td></tr>
+<tr class="separator:adc2835f8a9f73c7d77f107f73df4b643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f73ffa4ad91e9c389e85ebb69d072ce"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
 <tr class="memitem:a7f73ffa4ad91e9c389e85ebb69d072ce"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7f73ffa4ad91e9c389e85ebb69d072ce">wpi::isUInt&lt; 8 &gt;</a> (uint64_t x)</td></tr>
 <tr class="separator:a7f73ffa4ad91e9c389e85ebb69d072ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,18 +263,25 @@ Functions</h2></td></tr>
 <tr class="memitem:ab337d9f021792437e222ab8de869770c"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab337d9f021792437e222ab8de869770c">wpi::isPowerOf2_64</a> (uint64_t Value)</td></tr>
 <tr class="memdesc:ab337d9f021792437e222ab8de869770c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the argument is a power of two &gt; 0 (64 bit edition.)  <a href="namespacewpi.html#ab337d9f021792437e222ab8de869770c">More...</a><br /></td></tr>
 <tr class="separator:ab337d9f021792437e222ab8de869770c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaca62eea75750bf6b080d96ade205fa2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aaca62eea75750bf6b080d96ade205fa2"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aaca62eea75750bf6b080d96ade205fa2">wpi::countLeadingOnes</a> (T Value, ZeroBehavior ZB=ZB_Width)</td></tr>
-<tr class="memdesc:aaca62eea75750bf6b080d96ade205fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of ones from the most significant bit to the first zero bit.  <a href="namespacewpi.html#aaca62eea75750bf6b080d96ade205fa2">More...</a><br /></td></tr>
-<tr class="separator:aaca62eea75750bf6b080d96ade205fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8620da8ae3d73cb976795805f7f2e7c5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8620da8ae3d73cb976795805f7f2e7c5"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8620da8ae3d73cb976795805f7f2e7c5">wpi::countTrailingOnes</a> (T Value, ZeroBehavior ZB=ZB_Width)</td></tr>
-<tr class="memdesc:a8620da8ae3d73cb976795805f7f2e7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of ones from the least significant bit to the first zero bit.  <a href="namespacewpi.html#a8620da8ae3d73cb976795805f7f2e7c5">More...</a><br /></td></tr>
-<tr class="separator:a8620da8ae3d73cb976795805f7f2e7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf0e41abe6919730147bff8b43e321e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7bf0e41abe6919730147bff8b43e321e"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7bf0e41abe6919730147bff8b43e321e">wpi::countLeadingOnes</a> (T Value, ZeroBehavior ZB=ZB_Width)</td></tr>
+<tr class="memdesc:a7bf0e41abe6919730147bff8b43e321e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of ones from the most significant bit to the first zero bit.  <a href="namespacewpi.html#a7bf0e41abe6919730147bff8b43e321e">More...</a><br /></td></tr>
+<tr class="separator:a7bf0e41abe6919730147bff8b43e321e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d3b71dd4da9a85a35767dfe54e8c84"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a90d3b71dd4da9a85a35767dfe54e8c84"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a90d3b71dd4da9a85a35767dfe54e8c84">wpi::countTrailingOnes</a> (T Value, ZeroBehavior ZB=ZB_Width)</td></tr>
+<tr class="memdesc:a90d3b71dd4da9a85a35767dfe54e8c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of ones from the least significant bit to the first zero bit.  <a href="namespacewpi.html#a90d3b71dd4da9a85a35767dfe54e8c84">More...</a><br /></td></tr>
+<tr class="separator:a90d3b71dd4da9a85a35767dfe54e8c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb722826475651bd5c1df0f02dff8948"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aeb722826475651bd5c1df0f02dff8948"><td class="memTemplItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aeb722826475651bd5c1df0f02dff8948">wpi::countPopulation</a> (T Value)</td></tr>
 <tr class="memdesc:aeb722826475651bd5c1df0f02dff8948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of set bits in a value.  <a href="namespacewpi.html#aeb722826475651bd5c1df0f02dff8948">More...</a><br /></td></tr>
 <tr class="separator:aeb722826475651bd5c1df0f02dff8948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5847649747d23028195684c90de9cfa1"><td class="memTemplParams" colspan="2">template&lt;size_t kValue&gt; </td></tr>
+<tr class="memitem:a5847649747d23028195684c90de9cfa1"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a5847649747d23028195684c90de9cfa1">wpi::CTLog2</a> ()</td></tr>
+<tr class="memdesc:a5847649747d23028195684c90de9cfa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile time Log2.  <a href="namespacewpi.html#a5847649747d23028195684c90de9cfa1">More...</a><br /></td></tr>
+<tr class="separator:a5847649747d23028195684c90de9cfa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a3d85b513c921ffa14928e047294b6"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a72a3d85b513c921ffa14928e047294b6"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a72a3d85b513c921ffa14928e047294b6">wpi::CTLog2&lt; 1 &gt;</a> ()</td></tr>
+<tr class="separator:a72a3d85b513c921ffa14928e047294b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1196434a670e3e907e365ee77a26479c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a1196434a670e3e907e365ee77a26479c">wpi::Log2</a> (double Value)</td></tr>
 <tr class="memdesc:a1196434a670e3e907e365ee77a26479c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the log base 2 of the specified value.  <a href="namespacewpi.html#a1196434a670e3e907e365ee77a26479c">More...</a><br /></td></tr>
 <tr class="separator:a1196434a670e3e907e365ee77a26479c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,8 +297,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ae6b43a321203f7b23732402ef5dc9709"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae6b43a321203f7b23732402ef5dc9709">wpi::Log2_64_Ceil</a> (uint64_t Value)</td></tr>
 <tr class="memdesc:ae6b43a321203f7b23732402ef5dc9709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the ceil log base 2 of the specified value, 64 if the value is zero.  <a href="namespacewpi.html#ae6b43a321203f7b23732402ef5dc9709">More...</a><br /></td></tr>
 <tr class="separator:ae6b43a321203f7b23732402ef5dc9709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2c9609d87a3fc56aef5f6f14b5f701"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5d2c9609d87a3fc56aef5f6f14b5f701"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a5d2c9609d87a3fc56aef5f6f14b5f701">wpi::greatestCommonDivisor</a> (T A, T B)</td></tr>
+<tr class="memdesc:a5d2c9609d87a3fc56aef5f6f14b5f701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the greatest common divisor of the values using Euclid's algorithm.  <a href="namespacewpi.html#a5d2c9609d87a3fc56aef5f6f14b5f701">More...</a><br /></td></tr>
+<tr class="separator:a5d2c9609d87a3fc56aef5f6f14b5f701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9258c13f90593d3af2d92dde80a79e9b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9258c13f90593d3af2d92dde80a79e9b">wpi::GreatestCommonDivisor64</a> (uint64_t A, uint64_t B)</td></tr>
-<tr class="memdesc:a9258c13f90593d3af2d92dde80a79e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the greatest common divisor of the values using Euclid's algorithm.  <a href="namespacewpi.html#a9258c13f90593d3af2d92dde80a79e9b">More...</a><br /></td></tr>
 <tr class="separator:a9258c13f90593d3af2d92dde80a79e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc0832dfca121b25b2bafc62df9bf0fa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#abc0832dfca121b25b2bafc62df9bf0fa">wpi::BitsToDouble</a> (uint64_t Bits)</td></tr>
 <tr class="memdesc:abc0832dfca121b25b2bafc62df9bf0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function takes a 64-bit integer and returns the bit equivalent double.  <a href="namespacewpi.html#abc0832dfca121b25b2bafc62df9bf0fa">More...</a><br /></td></tr>
@@ -314,12 +318,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aaf2c49962110e8c4bf54b763aac045c8"><td class="memItemLeft" align="right" valign="top">constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aaf2c49962110e8c4bf54b763aac045c8">wpi::MinAlign</a> (uint64_t A, uint64_t B)</td></tr>
 <tr class="memdesc:aaf2c49962110e8c4bf54b763aac045c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A and B are either alignments or offsets.  <a href="namespacewpi.html#aaf2c49962110e8c4bf54b763aac045c8">More...</a><br /></td></tr>
 <tr class="separator:aaf2c49962110e8c4bf54b763aac045c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa469febfc331bcd988b84655cf8b84ed"><td class="memItemLeft" align="right" valign="top">uintptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa469febfc331bcd988b84655cf8b84ed">wpi::alignAddr</a> (const void *Addr, size_t Alignment)</td></tr>
-<tr class="memdesc:aa469febfc331bcd988b84655cf8b84ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aligns <code>Addr</code> to <code>Alignment</code> bytes, rounding up.  <a href="namespacewpi.html#aa469febfc331bcd988b84655cf8b84ed">More...</a><br /></td></tr>
-<tr class="separator:aa469febfc331bcd988b84655cf8b84ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee901fdda29348c529bfedbc5d76a714"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aee901fdda29348c529bfedbc5d76a714">wpi::alignmentAdjustment</a> (const void *Ptr, size_t Alignment)</td></tr>
-<tr class="memdesc:aee901fdda29348c529bfedbc5d76a714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the necessary adjustment for aligning <code>Ptr</code> to <code>Alignment</code> bytes, rounding up.  <a href="namespacewpi.html#aee901fdda29348c529bfedbc5d76a714">More...</a><br /></td></tr>
-<tr class="separator:aee901fdda29348c529bfedbc5d76a714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c11fbdfabf91b962c2d6d49a243207"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a70c11fbdfabf91b962c2d6d49a243207">wpi::NextPowerOf2</a> (uint64_t A)</td></tr>
 <tr class="memdesc:a70c11fbdfabf91b962c2d6d49a243207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next power of two (in 64-bits) that is strictly greater than A.  <a href="namespacewpi.html#a70c11fbdfabf91b962c2d6d49a243207">More...</a><br /></td></tr>
 <tr class="separator:a70c11fbdfabf91b962c2d6d49a243207"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,12 +337,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a86598beceb2a41ea10f4335f8d5b99e4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a86598beceb2a41ea10f4335f8d5b99e4">wpi::divideCeil</a> (uint64_t Numerator, uint64_t Denominator)</td></tr>
 <tr class="memdesc:a86598beceb2a41ea10f4335f8d5b99e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integer ceil(Numerator / Denominator).  <a href="namespacewpi.html#a86598beceb2a41ea10f4335f8d5b99e4">More...</a><br /></td></tr>
 <tr class="separator:a86598beceb2a41ea10f4335f8d5b99e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75514d8e686b9790882d92c4efc0c8f3"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a75514d8e686b9790882d92c4efc0c8f3">wpi::divideNearest</a> (uint64_t Numerator, uint64_t Denominator)</td></tr>
+<tr class="memdesc:a75514d8e686b9790882d92c4efc0c8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the integer nearest(Numerator / Denominator).  <a href="namespacewpi.html#a75514d8e686b9790882d92c4efc0c8f3">More...</a><br /></td></tr>
+<tr class="separator:a75514d8e686b9790882d92c4efc0c8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af96597787b5255d8569295b2a87d33cf"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af96597787b5255d8569295b2a87d33cf">wpi::alignDown</a> (uint64_t Value, uint64_t Align, uint64_t Skew=0)</td></tr>
 <tr class="memdesc:af96597787b5255d8569295b2a87d33cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the largest uint64_t less than or equal to <code>Value</code> and is <code>Skew</code> mod <code>Align</code>.  <a href="namespacewpi.html#af96597787b5255d8569295b2a87d33cf">More...</a><br /></td></tr>
 <tr class="separator:af96597787b5255d8569295b2a87d33cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad95793ff468beeba42d8fc1da7cf3a37"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad95793ff468beeba42d8fc1da7cf3a37">wpi::OffsetToAlignment</a> (uint64_t Value, uint64_t Align)</td></tr>
-<tr class="memdesc:ad95793ff468beeba42d8fc1da7cf3a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the offset to the next integer (mod 2**64) that is greater than or equal to <code>Value</code> and is a multiple of <code>Align</code>.  <a href="namespacewpi.html#ad95793ff468beeba42d8fc1da7cf3a37">More...</a><br /></td></tr>
-<tr class="separator:ad95793ff468beeba42d8fc1da7cf3a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae892922c9d93c91d358b554fec2b6505"><td class="memTemplParams" colspan="2">template&lt;unsigned B&gt; </td></tr>
 <tr class="memitem:ae892922c9d93c91d358b554fec2b6505"><td class="memTemplItemLeft" align="right" valign="top">constexpr int32_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae892922c9d93c91d358b554fec2b6505">wpi::SignExtend32</a> (uint32_t X)</td></tr>
 <tr class="memdesc:ae892922c9d93c91d358b554fec2b6505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign-extend the number in the bottom B bits of X to a 32-bit integer.  <a href="namespacewpi.html#ae892922c9d93c91d358b554fec2b6505">More...</a><br /></td></tr>
@@ -359,22 +357,34 @@ Functions</h2></td></tr>
 <tr class="memitem:a2540c26db383c900eae86f2c67c41ce0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a2540c26db383c900eae86f2c67c41ce0">wpi::SignExtend64</a> (uint64_t X, unsigned B)</td></tr>
 <tr class="memdesc:a2540c26db383c900eae86f2c67c41ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sign-extend the number in the bottom B bits of X to a 64-bit integer.  <a href="namespacewpi.html#a2540c26db383c900eae86f2c67c41ce0">More...</a><br /></td></tr>
 <tr class="separator:a2540c26db383c900eae86f2c67c41ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbebaa97b07821ea177293fdfa1831ac"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afbebaa97b07821ea177293fdfa1831ac"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#afbebaa97b07821ea177293fdfa1831ac">wpi::AbsoluteDifference</a> (T X, T Y)</td></tr>
-<tr class="memdesc:afbebaa97b07821ea177293fdfa1831ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract two unsigned integers, X and Y, of type T and return the absolute value of the result.  <a href="namespacewpi.html#afbebaa97b07821ea177293fdfa1831ac">More...</a><br /></td></tr>
-<tr class="separator:afbebaa97b07821ea177293fdfa1831ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef0355984b202a0107b58bdbcbda7b4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a4ef0355984b202a0107b58bdbcbda7b4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a4ef0355984b202a0107b58bdbcbda7b4">wpi::SaturatingAdd</a> (T X, T Y, bool *ResultOverflowed=nullptr)</td></tr>
-<tr class="memdesc:a4ef0355984b202a0107b58bdbcbda7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two unsigned integers, X and Y, of type T.  <a href="namespacewpi.html#a4ef0355984b202a0107b58bdbcbda7b4">More...</a><br /></td></tr>
-<tr class="separator:a4ef0355984b202a0107b58bdbcbda7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c94df951b149f399ec04785a7864b3b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2c94df951b149f399ec04785a7864b3b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a2c94df951b149f399ec04785a7864b3b">wpi::SaturatingMultiply</a> (T X, T Y, bool *ResultOverflowed=nullptr)</td></tr>
-<tr class="memdesc:a2c94df951b149f399ec04785a7864b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply two unsigned integers, X and Y, of type T.  <a href="namespacewpi.html#a2c94df951b149f399ec04785a7864b3b">More...</a><br /></td></tr>
-<tr class="separator:a2c94df951b149f399ec04785a7864b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9655a7ee20b8dd71819cee2a13c5c359"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9655a7ee20b8dd71819cee2a13c5c359"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9655a7ee20b8dd71819cee2a13c5c359">wpi::SaturatingMultiplyAdd</a> (T X, T Y, T A, bool *ResultOverflowed=nullptr)</td></tr>
-<tr class="memdesc:a9655a7ee20b8dd71819cee2a13c5c359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply two unsigned integers, X and Y, and add the unsigned integer, A to the product.  <a href="namespacewpi.html#a9655a7ee20b8dd71819cee2a13c5c359">More...</a><br /></td></tr>
-<tr class="separator:a9655a7ee20b8dd71819cee2a13c5c359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6656e2d5f5ef57e67a1c35a3ed4b7f70"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6656e2d5f5ef57e67a1c35a3ed4b7f70"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6656e2d5f5ef57e67a1c35a3ed4b7f70">wpi::AbsoluteDifference</a> (T X, T Y)</td></tr>
+<tr class="memdesc:a6656e2d5f5ef57e67a1c35a3ed4b7f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract two unsigned integers, X and Y, of type T and return the absolute value of the result.  <a href="namespacewpi.html#a6656e2d5f5ef57e67a1c35a3ed4b7f70">More...</a><br /></td></tr>
+<tr class="separator:a6656e2d5f5ef57e67a1c35a3ed4b7f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c5ce165d2bf0db00fbcbfe8450c562"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac5c5ce165d2bf0db00fbcbfe8450c562"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ac5c5ce165d2bf0db00fbcbfe8450c562">wpi::SaturatingAdd</a> (T X, T Y, bool *ResultOverflowed=nullptr)</td></tr>
+<tr class="memdesc:ac5c5ce165d2bf0db00fbcbfe8450c562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two unsigned integers, X and Y, of type T.  <a href="namespacewpi.html#ac5c5ce165d2bf0db00fbcbfe8450c562">More...</a><br /></td></tr>
+<tr class="separator:ac5c5ce165d2bf0db00fbcbfe8450c562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2396f98cc1c4e416c09a535bceb9f732"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2396f98cc1c4e416c09a535bceb9f732"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a2396f98cc1c4e416c09a535bceb9f732">wpi::SaturatingMultiply</a> (T X, T Y, bool *ResultOverflowed=nullptr)</td></tr>
+<tr class="memdesc:a2396f98cc1c4e416c09a535bceb9f732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply two unsigned integers, X and Y, of type T.  <a href="namespacewpi.html#a2396f98cc1c4e416c09a535bceb9f732">More...</a><br /></td></tr>
+<tr class="separator:a2396f98cc1c4e416c09a535bceb9f732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3fbc7000c2b2e339238d6aff6b448e0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac3fbc7000c2b2e339238d6aff6b448e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_unsigned&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ac3fbc7000c2b2e339238d6aff6b448e0">wpi::SaturatingMultiplyAdd</a> (T X, T Y, T A, bool *ResultOverflowed=nullptr)</td></tr>
+<tr class="memdesc:ac3fbc7000c2b2e339238d6aff6b448e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply two unsigned integers, X and Y, and add the unsigned integer, A to the product.  <a href="namespacewpi.html#ac3fbc7000c2b2e339238d6aff6b448e0">More...</a><br /></td></tr>
+<tr class="separator:ac3fbc7000c2b2e339238d6aff6b448e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c94ed7f2d7c45d0edf41ce8527c38f2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3c94ed7f2d7c45d0edf41ce8527c38f2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; <a class="el" href="format_8h.html#aebd8826912defda6bd2c1c87bdba4f55">std::is_signed</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3c94ed7f2d7c45d0edf41ce8527c38f2">wpi::AddOverflow</a> (T X, T Y, T &amp;Result)</td></tr>
+<tr class="memdesc:a3c94ed7f2d7c45d0edf41ce8527c38f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add two signed integers, computing the two's complement truncated result, returning true if overflow occured.  <a href="namespacewpi.html#a3c94ed7f2d7c45d0edf41ce8527c38f2">More...</a><br /></td></tr>
+<tr class="separator:a3c94ed7f2d7c45d0edf41ce8527c38f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a802f3b89f5be2d7575a84558dc56b169"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a802f3b89f5be2d7575a84558dc56b169"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; <a class="el" href="format_8h.html#aebd8826912defda6bd2c1c87bdba4f55">std::is_signed</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a802f3b89f5be2d7575a84558dc56b169">wpi::SubOverflow</a> (T X, T Y, T &amp;Result)</td></tr>
+<tr class="memdesc:a802f3b89f5be2d7575a84558dc56b169"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract two signed integers, computing the two's complement truncated result, returning true if an overflow ocurred.  <a href="namespacewpi.html#a802f3b89f5be2d7575a84558dc56b169">More...</a><br /></td></tr>
+<tr class="separator:a802f3b89f5be2d7575a84558dc56b169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cdb620d2807ab13e9c16c8867cf081a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6cdb620d2807ab13e9c16c8867cf081a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; <a class="el" href="format_8h.html#aebd8826912defda6bd2c1c87bdba4f55">std::is_signed</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6cdb620d2807ab13e9c16c8867cf081a">wpi::MulOverflow</a> (T X, T Y, T &amp;Result)</td></tr>
+<tr class="memdesc:a6cdb620d2807ab13e9c16c8867cf081a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply two signed integers, computing the two's complement truncated result, returning true if an overflow ocurred.  <a href="namespacewpi.html#a6cdb620d2807ab13e9c16c8867cf081a">More...</a><br /></td></tr>
+<tr class="separator:a6cdb620d2807ab13e9c16c8867cf081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dca6ddf9e17f10ec7699c29819b6c18"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0dca6ddf9e17f10ec7699c29819b6c18"><td class="memTemplItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0dca6ddf9e17f10ec7699c29819b6c18">wpi::sgn</a> (T val)</td></tr>
 <tr class="separator:a0dca6ddf9e17f10ec7699c29819b6c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,6 +398,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a096e48bf0264a255eb2ff954146cc85b"><td class="memItemLeft" align="right" valign="top">static const unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a096e48bf0264a255eb2ff954146cc85b">wpi::BitReverseTable256</a> [256]</td></tr>
 <tr class="memdesc:a096e48bf0264a255eb2ff954146cc85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro compressed bit reversal table for 256 bits.  <a href="namespacewpi.html#a096e48bf0264a255eb2ff954146cc85b">More...</a><br /></td></tr>
 <tr class="separator:a096e48bf0264a255eb2ff954146cc85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68147e630fcf898faec5b0f4cacd7214"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a68147e630fcf898faec5b0f4cacd7214">wpi::huge_valf</a></td></tr>
+<tr class="memdesc:a68147e630fcf898faec5b0f4cacd7214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this rather than HUGE_VALF; the latter causes warnings on MSVC.  <a href="namespacewpi.html#a68147e630fcf898faec5b0f4cacd7214">More...</a><br /></td></tr>
+<tr class="separator:a68147e630fcf898faec5b0f4cacd7214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9211f62d8e1e6de999eaa63ec0f6ae02" name="a9211f62d8e1e6de999eaa63ec0f6ae02"></a>
@@ -450,7 +463,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_math_extras_8h.html">MathExtras.h</a></li>
-    <li class="footer">Generated on Fri May 20 2022 22:19:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 20 2022 23:02:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

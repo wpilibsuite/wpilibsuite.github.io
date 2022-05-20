@@ -144,5 +144,6 @@ var searchData=
   ['motorcontroller_141',['MotorController',['../classfrc_1_1_motor_controller.html',1,'frc']]],
   ['motorcontrollergroup_142',['MotorControllerGroup',['../classfrc_1_1_motor_controller_group.html',1,'frc']]],
   ['motorsafety_143',['MotorSafety',['../classfrc_1_1_motor_safety.html',1,'frc']]],
-  ['mul_5fassign_5fop_144',['mul_assign_op',['../struct_eigen_1_1internal_1_1mul__assign__op.html',1,'Eigen::internal']]]
+  ['move_5fconstruction_5ftriviality_5fhelper_144',['move_construction_triviality_helper',['../unionwpi_1_1detail_1_1move__construction__triviality__helper.html',1,'wpi::detail']]],
+  ['mul_5fassign_5fop_145',['mul_assign_op',['../struct_eigen_1_1internal_1_1mul__assign__op.html',1,'Eigen::internal']]]
 ];

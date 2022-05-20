@@ -1,8 +1,6 @@
 var _string_map_8h =
 [
-    [ "wpi::StringMapEntryBase", "classwpi_1_1_string_map_entry_base.html", "classwpi_1_1_string_map_entry_base" ],
     [ "wpi::StringMapImpl", "classwpi_1_1_string_map_impl.html", "classwpi_1_1_string_map_impl" ],
-    [ "wpi::StringMapEntry< ValueTy >", "classwpi_1_1_string_map_entry.html", "classwpi_1_1_string_map_entry" ],
     [ "wpi::StringMap< ValueTy >", "classwpi_1_1_string_map.html", "classwpi_1_1_string_map" ],
     [ "wpi::StringMapIterBase< DerivedTy, ValueTy >", "classwpi_1_1_string_map_iter_base.html", "classwpi_1_1_string_map_iter_base" ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1_string_map_const_iterator.html", "classwpi_1_1_string_map_const_iterator" ],
