@@ -100,7 +100,12 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "math", "math.html", null ],
     [ "MathExtras.h", "_math_extras_8h.html", "_math_extras_8h" ],
     [ "MemAlloc.h", "_mem_alloc_8h.html", "_mem_alloc_8h" ],
-    [ "MemoryBuffer.h", "_memory_buffer_8h.html", "_memory_buffer_8h" ],
+    [ "MemoryBuffer.h", "_memory_buffer_8h.html", [
+      [ "wpi::MemoryBuffer", "classwpi_1_1_memory_buffer.html", "classwpi_1_1_memory_buffer" ],
+      [ "wpi::WritableMemoryBuffer", "classwpi_1_1_writable_memory_buffer.html", "classwpi_1_1_writable_memory_buffer" ],
+      [ "wpi::WriteThroughMemoryBuffer", "classwpi_1_1_write_through_memory_buffer.html", "classwpi_1_1_write_through_memory_buffer" ],
+      [ "wpi::MemoryBufferRef", "classwpi_1_1_memory_buffer_ref.html", "classwpi_1_1_memory_buffer_ref" ]
+    ] ],
     [ "mpack.h", "mpack_8h.html", "mpack_8h" ],
     [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
     [ "nodiscard.h", "nodiscard_8h.html", null ],

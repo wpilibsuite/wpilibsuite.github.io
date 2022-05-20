@@ -1,6 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"_simple_motor_feedforward_8h_source.html":[6,0,5,0,16],
 "_simple_widget_8h.html":[6,0,6,5,18],
 "_simple_widget_8h_source.html":[6,0,6,5,18],
 "_single_jointed_arm_sim_8h.html":[6,0,6,6,36],
@@ -234,7 +233,7 @@ var NAVTREEINDEX19 =
 "_swerve_controller_command_8h_source.html":[6,0,7,0,33],
 "_swerve_controller_command_8inc.html":[6,0,7,0,34],
 "_swerve_drive_kinematics_8h.html":[6,0,5,6,7],
-"_swerve_drive_kinematics_8h.html#a9887b682604801053f103bda680fe9de":[6,0,5,6,7,1],
+"_swerve_drive_kinematics_8h.html#a22173a31a2259955f69374891ce306d0":[6,0,5,6,7,1],
 "_swerve_drive_kinematics_8h_source.html":[6,0,5,6,7],
 "_swerve_drive_kinematics_8inc.html":[6,0,5,6,8],
 "_swerve_drive_kinematics_8inc.html#acf032b8adc55f3de1e6828f68f86b409":[6,0,5,6,8,0],
@@ -242,12 +241,13 @@ var NAVTREEINDEX19 =
 "_swerve_drive_kinematics_constraint_8h_source.html":[6,0,5,9,0,7],
 "_swerve_drive_kinematics_constraint_8inc.html":[6,0,5,9,0,8],
 "_swerve_drive_odometry_8h.html":[6,0,5,6,9],
-"_swerve_drive_odometry_8h.html#a9887b682604801053f103bda680fe9de":[6,0,5,6,9,1],
+"_swerve_drive_odometry_8h.html#a22173a31a2259955f69374891ce306d0":[6,0,5,6,9,1],
 "_swerve_drive_odometry_8h_source.html":[6,0,5,6,9],
 "_swerve_drive_odometry_8inc.html":[6,0,5,6,10],
 "_swerve_drive_pose_estimator_8h.html":[6,0,5,1,9],
-"_swerve_drive_pose_estimator_8h.html#a9887b682604801053f103bda680fe9de":[6,0,5,1,9,1],
+"_swerve_drive_pose_estimator_8h.html#a22173a31a2259955f69374891ce306d0":[6,0,5,1,9,1],
 "_swerve_drive_pose_estimator_8h_source.html":[6,0,5,1,9],
 "_swerve_module_state_8h.html":[6,0,5,6,11],
-"_swerve_module_state_8h_source.html":[6,0,5,6,11]
+"_swerve_module_state_8h_source.html":[6,0,5,6,11],
+"_symbol_exports_8h.html":[6,0,12,75]
 };
