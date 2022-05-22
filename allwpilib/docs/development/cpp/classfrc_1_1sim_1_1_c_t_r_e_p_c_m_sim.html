@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-101-g046c2c8</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-102-g816aa4e</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,15 @@ $(document).ready(function(){initNavTree('classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.
  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_c_t_r_e_p_c_m_sim_8h_source.html">frc/simulation/CTREPCMSim.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for frc::sim::CTREPCMSim:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.png" usemap="#frc::sim::CTREPCMSim_map" alt=""/>
+  <map id="frc::sim::CTREPCMSim_map" name="frc::sim::CTREPCMSim_map">
+<area href="classfrc_1_1sim_1_1_pneumatics_base_sim.html" alt="frc::sim::PneumaticsBaseSim" shape="rect" coords="0,0,170,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -113,33 +122,35 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9140141d59f1e49db9beef8e5a23465d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf45a9ad6fde1191161afb029a14839"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a6cf45a9ad6fde1191161afb029a14839">CTREPCMSim</a> (const <a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a> &amp;pneumatics)</td></tr>
 <tr class="separator:a6cf45a9ad6fde1191161afb029a14839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae72134ba05e4769817b1228dd9eb0072"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ae72134ba05e4769817b1228dd9eb0072">RegisterInitializedCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify)</td></tr>
-<tr class="memdesc:ae72134ba05e4769817b1228dd9eb0072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run when a solenoid is initialized on a channel.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ae72134ba05e4769817b1228dd9eb0072">More...</a><br /></td></tr>
-<tr class="separator:ae72134ba05e4769817b1228dd9eb0072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ab02b7f909498415a407b13ddfa32dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a9ab02b7f909498415a407b13ddfa32dc">GetInitialized</a> () const</td></tr>
-<tr class="memdesc:a9ab02b7f909498415a407b13ddfa32dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a solenoid has been initialized on a specific channel.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a9ab02b7f909498415a407b13ddfa32dc">More...</a><br /></td></tr>
-<tr class="separator:a9ab02b7f909498415a407b13ddfa32dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc53a86c8bfeab81be68ee430571e7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a3dc53a86c8bfeab81be68ee430571e7d">SetInitialized</a> (bool solenoidInitialized)</td></tr>
-<tr class="memdesc:a3dc53a86c8bfeab81be68ee430571e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define whether a solenoid has been initialized on a specific channel.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a3dc53a86c8bfeab81be68ee430571e7d">More...</a><br /></td></tr>
-<tr class="separator:a3dc53a86c8bfeab81be68ee430571e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6638db8ae747020112bc864ba4767135"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a6638db8ae747020112bc864ba4767135">RegisterSolenoidOutputCallback</a> (int channel, <a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify)</td></tr>
-<tr class="memdesc:a6638db8ae747020112bc864ba4767135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run when the solenoid output on a channel changes.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a6638db8ae747020112bc864ba4767135">More...</a><br /></td></tr>
-<tr class="separator:a6638db8ae747020112bc864ba4767135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd6227db78e996493e449668724485f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a4cd6227db78e996493e449668724485f">GetSolenoidOutput</a> (int channel) const</td></tr>
-<tr class="memdesc:a4cd6227db78e996493e449668724485f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the solenoid output on a specific channel.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a4cd6227db78e996493e449668724485f">More...</a><br /></td></tr>
-<tr class="separator:a4cd6227db78e996493e449668724485f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f27895126ae9baa20a2997b6c2a883f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8f27895126ae9baa20a2997b6c2a883f">SetSolenoidOutput</a> (int channel, bool solenoidOutput)</td></tr>
-<tr class="memdesc:a8f27895126ae9baa20a2997b6c2a883f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the solenoid output on a specific channel.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8f27895126ae9baa20a2997b6c2a883f">More...</a><br /></td></tr>
-<tr class="separator:a8f27895126ae9baa20a2997b6c2a883f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06551948e01497a63d08da798b158b66"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a06551948e01497a63d08da798b158b66">RegisterCompressorOnCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify)</td></tr>
-<tr class="memdesc:a06551948e01497a63d08da798b158b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run when the compressor activates.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a06551948e01497a63d08da798b158b66">More...</a><br /></td></tr>
-<tr class="separator:a06551948e01497a63d08da798b158b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c9d727e8b516ba2d20223d4c78f11b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a06c9d727e8b516ba2d20223d4c78f11b">GetCompressorOn</a> () const</td></tr>
-<tr class="memdesc:a06c9d727e8b516ba2d20223d4c78f11b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the compressor is on.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a06c9d727e8b516ba2d20223d4c78f11b">More...</a><br /></td></tr>
-<tr class="separator:a06c9d727e8b516ba2d20223d4c78f11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1291053eeb76023e7a118be99b17419"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ad1291053eeb76023e7a118be99b17419">SetCompressorOn</a> (bool compressorOn)</td></tr>
-<tr class="memdesc:ad1291053eeb76023e7a118be99b17419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the compressor is active.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ad1291053eeb76023e7a118be99b17419">More...</a><br /></td></tr>
-<tr class="separator:ad1291053eeb76023e7a118be99b17419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a47c8532d64d6b6ee65739a1bf3b9d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a5a47c8532d64d6b6ee65739a1bf3b9d9">~CTREPCMSim</a> () override=default</td></tr>
+<tr class="separator:a5a47c8532d64d6b6ee65739a1bf3b9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aec288b62d7b442f93ae6e6dbc69ac6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a7aec288b62d7b442f93ae6e6dbc69ac6">RegisterInitializedCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify) override</td></tr>
+<tr class="memdesc:a7aec288b62d7b442f93ae6e6dbc69ac6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run when the PCM/PH is initialized.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a7aec288b62d7b442f93ae6e6dbc69ac6">More...</a><br /></td></tr>
+<tr class="separator:a7aec288b62d7b442f93ae6e6dbc69ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7c625fa449a1b9a48874de6ffb7d16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8b7c625fa449a1b9a48874de6ffb7d16">GetInitialized</a> () const override</td></tr>
+<tr class="memdesc:a8b7c625fa449a1b9a48874de6ffb7d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the PCM/PH has been initialized.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8b7c625fa449a1b9a48874de6ffb7d16">More...</a><br /></td></tr>
+<tr class="separator:a8b7c625fa449a1b9a48874de6ffb7d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d6cbd7177456aa3d71c070d6ef1d58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aa3d6cbd7177456aa3d71c070d6ef1d58">SetInitialized</a> (bool initialized) override</td></tr>
+<tr class="memdesc:aa3d6cbd7177456aa3d71c070d6ef1d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define whether the PCM/PH has been initialized.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aa3d6cbd7177456aa3d71c070d6ef1d58">More...</a><br /></td></tr>
+<tr class="separator:aa3d6cbd7177456aa3d71c070d6ef1d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156ea2f972d2259c12a83c063ef15232"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a156ea2f972d2259c12a83c063ef15232">RegisterSolenoidOutputCallback</a> (int channel, <a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify) override</td></tr>
+<tr class="memdesc:a156ea2f972d2259c12a83c063ef15232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run when the solenoid output on a channel changes.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a156ea2f972d2259c12a83c063ef15232">More...</a><br /></td></tr>
+<tr class="separator:a156ea2f972d2259c12a83c063ef15232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5caf06de6673e89f736c46986c0988c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aa5caf06de6673e89f736c46986c0988c">GetSolenoidOutput</a> (int channel) const override</td></tr>
+<tr class="memdesc:aa5caf06de6673e89f736c46986c0988c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the solenoid output on a specific channel.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aa5caf06de6673e89f736c46986c0988c">More...</a><br /></td></tr>
+<tr class="separator:aa5caf06de6673e89f736c46986c0988c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370f9f4fd87a4432ea6d646017d40201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a370f9f4fd87a4432ea6d646017d40201">SetSolenoidOutput</a> (int channel, bool solenoidOutput) override</td></tr>
+<tr class="memdesc:a370f9f4fd87a4432ea6d646017d40201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the solenoid output on a specific channel.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a370f9f4fd87a4432ea6d646017d40201">More...</a><br /></td></tr>
+<tr class="separator:a370f9f4fd87a4432ea6d646017d40201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d24604291ceb5051bf860faf3e3ae59"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8d24604291ceb5051bf860faf3e3ae59">RegisterCompressorOnCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify) override</td></tr>
+<tr class="memdesc:a8d24604291ceb5051bf860faf3e3ae59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run when the compressor activates.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8d24604291ceb5051bf860faf3e3ae59">More...</a><br /></td></tr>
+<tr class="separator:a8d24604291ceb5051bf860faf3e3ae59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78f18accac7f43358c5760da0f58637"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ae78f18accac7f43358c5760da0f58637">GetCompressorOn</a> () const override</td></tr>
+<tr class="memdesc:ae78f18accac7f43358c5760da0f58637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the compressor is on.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ae78f18accac7f43358c5760da0f58637">More...</a><br /></td></tr>
+<tr class="separator:ae78f18accac7f43358c5760da0f58637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441148d68a251d9b1d17733ae60355db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a441148d68a251d9b1d17733ae60355db">SetCompressorOn</a> (bool compressorOn) override</td></tr>
+<tr class="memdesc:a441148d68a251d9b1d17733ae60355db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the compressor is active.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a441148d68a251d9b1d17733ae60355db">More...</a><br /></td></tr>
+<tr class="separator:a441148d68a251d9b1d17733ae60355db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af250a86af36c968e43b52237060d733c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#af250a86af36c968e43b52237060d733c">RegisterClosedLoopEnabledCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify)</td></tr>
 <tr class="memdesc:af250a86af36c968e43b52237060d733c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run whenever the closed loop state changes.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#af250a86af36c968e43b52237060d733c">More...</a><br /></td></tr>
 <tr class="separator:af250a86af36c968e43b52237060d733c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,33 +160,50 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4018ce013325491666899aa91daa3abe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a4018ce013325491666899aa91daa3abe">SetClosedLoopEnabled</a> (bool closedLoopEnabled)</td></tr>
 <tr class="memdesc:a4018ce013325491666899aa91daa3abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on/off the closed loop control of the compressor.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a4018ce013325491666899aa91daa3abe">More...</a><br /></td></tr>
 <tr class="separator:a4018ce013325491666899aa91daa3abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab13dacbdde1708157f5394c5306b4505"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ab13dacbdde1708157f5394c5306b4505">RegisterPressureSwitchCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify)</td></tr>
-<tr class="memdesc:ab13dacbdde1708157f5394c5306b4505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run whenever the pressure switch value changes.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ab13dacbdde1708157f5394c5306b4505">More...</a><br /></td></tr>
-<tr class="separator:ab13dacbdde1708157f5394c5306b4505"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78268298e72c8fb13d91491ceb2a5fe5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a78268298e72c8fb13d91491ceb2a5fe5">GetPressureSwitch</a> () const</td></tr>
-<tr class="memdesc:a78268298e72c8fb13d91491ceb2a5fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the value of the pressure switch.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a78268298e72c8fb13d91491ceb2a5fe5">More...</a><br /></td></tr>
-<tr class="separator:a78268298e72c8fb13d91491ceb2a5fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f57b107f4482a2b004e1c23f3910bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ae6f57b107f4482a2b004e1c23f3910bf">SetPressureSwitch</a> (bool pressureSwitch)</td></tr>
-<tr class="memdesc:ae6f57b107f4482a2b004e1c23f3910bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the pressure switch.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ae6f57b107f4482a2b004e1c23f3910bf">More...</a><br /></td></tr>
-<tr class="separator:ae6f57b107f4482a2b004e1c23f3910bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880d8c66f0c9c7a510eef278e25ffc64"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a880d8c66f0c9c7a510eef278e25ffc64">RegisterCompressorCurrentCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify)</td></tr>
-<tr class="memdesc:a880d8c66f0c9c7a510eef278e25ffc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run whenever the compressor current changes.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a880d8c66f0c9c7a510eef278e25ffc64">More...</a><br /></td></tr>
-<tr class="separator:a880d8c66f0c9c7a510eef278e25ffc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a98178e8bb84f2720808d55dcfc82b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ab8a98178e8bb84f2720808d55dcfc82b">GetCompressorCurrent</a> () const</td></tr>
-<tr class="memdesc:ab8a98178e8bb84f2720808d55dcfc82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the compressor current.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ab8a98178e8bb84f2720808d55dcfc82b">More...</a><br /></td></tr>
-<tr class="separator:ab8a98178e8bb84f2720808d55dcfc82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1322f337502f5c08cffd516dd6c8ea5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a1322f337502f5c08cffd516dd6c8ea5e">SetCompressorCurrent</a> (double compressorCurrent)</td></tr>
-<tr class="memdesc:a1322f337502f5c08cffd516dd6c8ea5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the compressor current.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a1322f337502f5c08cffd516dd6c8ea5e">More...</a><br /></td></tr>
-<tr class="separator:a1322f337502f5c08cffd516dd6c8ea5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e1bc0879bf026f0c6180d86cc402170"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a9e1bc0879bf026f0c6180d86cc402170">GetAllSolenoidOutputs</a> () const</td></tr>
-<tr class="memdesc:a9e1bc0879bf026f0c6180d86cc402170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of all solenoid outputs.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a9e1bc0879bf026f0c6180d86cc402170">More...</a><br /></td></tr>
-<tr class="separator:a9e1bc0879bf026f0c6180d86cc402170"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab5f18ceee60b164dc884095a8041afc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aab5f18ceee60b164dc884095a8041afc">SetAllSolenoidOutputs</a> (uint8_t outputs)</td></tr>
-<tr class="memdesc:aab5f18ceee60b164dc884095a8041afc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change all of the solenoid outputs.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aab5f18ceee60b164dc884095a8041afc">More...</a><br /></td></tr>
-<tr class="separator:aab5f18ceee60b164dc884095a8041afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c7b91822ee29c39c3153de260aa0b8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a6c7b91822ee29c39c3153de260aa0b8a">ResetData</a> ()</td></tr>
-<tr class="memdesc:a6c7b91822ee29c39c3153de260aa0b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all simulation data for this object.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a6c7b91822ee29c39c3153de260aa0b8a">More...</a><br /></td></tr>
-<tr class="separator:a6c7b91822ee29c39c3153de260aa0b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465e88da029183b0057389f98a4e259a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a465e88da029183b0057389f98a4e259a">RegisterPressureSwitchCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify) override</td></tr>
+<tr class="memdesc:a465e88da029183b0057389f98a4e259a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run whenever the pressure switch value changes.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a465e88da029183b0057389f98a4e259a">More...</a><br /></td></tr>
+<tr class="separator:a465e88da029183b0057389f98a4e259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd93604ce8d3efaca81b8c39c2f216a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8cd93604ce8d3efaca81b8c39c2f216a">GetPressureSwitch</a> () const override</td></tr>
+<tr class="memdesc:a8cd93604ce8d3efaca81b8c39c2f216a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the value of the pressure switch.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8cd93604ce8d3efaca81b8c39c2f216a">More...</a><br /></td></tr>
+<tr class="separator:a8cd93604ce8d3efaca81b8c39c2f216a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80f7c44eb4057492a37af97f745c6f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a80f7c44eb4057492a37af97f745c6f53">SetPressureSwitch</a> (bool pressureSwitch) override</td></tr>
+<tr class="memdesc:a80f7c44eb4057492a37af97f745c6f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the pressure switch.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a80f7c44eb4057492a37af97f745c6f53">More...</a><br /></td></tr>
+<tr class="separator:a80f7c44eb4057492a37af97f745c6f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8419c6bddf1e1707d6358e9ee8661deb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8419c6bddf1e1707d6358e9ee8661deb">RegisterCompressorCurrentCallback</a> (<a class="el" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, bool initialNotify) override</td></tr>
+<tr class="memdesc:a8419c6bddf1e1707d6358e9ee8661deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run whenever the compressor current changes.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a8419c6bddf1e1707d6358e9ee8661deb">More...</a><br /></td></tr>
+<tr class="separator:a8419c6bddf1e1707d6358e9ee8661deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe665127ace01ffd345f578ee1bf9a0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a3fe665127ace01ffd345f578ee1bf9a0">GetCompressorCurrent</a> () const override</td></tr>
+<tr class="memdesc:a3fe665127ace01ffd345f578ee1bf9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the compressor current.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a3fe665127ace01ffd345f578ee1bf9a0">More...</a><br /></td></tr>
+<tr class="separator:a3fe665127ace01ffd345f578ee1bf9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe6b1ec2ae4d80ea39fde39a2f6a95e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#abbe6b1ec2ae4d80ea39fde39a2f6a95e">SetCompressorCurrent</a> (double compressorCurrent) override</td></tr>
+<tr class="memdesc:abbe6b1ec2ae4d80ea39fde39a2f6a95e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the compressor current.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#abbe6b1ec2ae4d80ea39fde39a2f6a95e">More...</a><br /></td></tr>
+<tr class="separator:abbe6b1ec2ae4d80ea39fde39a2f6a95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc7c6abb2cbacee28597967dcd2f019"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a2dc7c6abb2cbacee28597967dcd2f019">GetAllSolenoidOutputs</a> () const override</td></tr>
+<tr class="memdesc:a2dc7c6abb2cbacee28597967dcd2f019"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of all solenoid outputs.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a2dc7c6abb2cbacee28597967dcd2f019">More...</a><br /></td></tr>
+<tr class="separator:a2dc7c6abb2cbacee28597967dcd2f019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424eecb482ffacdc2a46d65f522e9e0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a424eecb482ffacdc2a46d65f522e9e0d">SetAllSolenoidOutputs</a> (uint8_t outputs) override</td></tr>
+<tr class="memdesc:a424eecb482ffacdc2a46d65f522e9e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change all of the solenoid outputs.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a424eecb482ffacdc2a46d65f522e9e0d">More...</a><br /></td></tr>
+<tr class="separator:a424eecb482ffacdc2a46d65f522e9e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8f821e9cac904e104494d0a2c078da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aee8f821e9cac904e104494d0a2c078da">ResetData</a> () override</td></tr>
+<tr class="memdesc:aee8f821e9cac904e104494d0a2c078da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all simulation data for this object.  <a href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#aee8f821e9cac904e104494d0a2c078da">More...</a><br /></td></tr>
+<tr class="separator:aee8f821e9cac904e104494d0a2c078da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1sim_1_1_pneumatics_base_sim')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html">frc::sim::PneumaticsBaseSim</a></td></tr>
+<tr class="memitem:a0093e3b29617c5e6b3596772211304ba inherit pub_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a0093e3b29617c5e6b3596772211304ba">~PneumaticsBaseSim</a> ()=default</td></tr>
+<tr class="separator:a0093e3b29617c5e6b3596772211304ba inherit pub_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrc_1_1sim_1_1_pneumatics_base_sim')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html">frc::sim::PneumaticsBaseSim</a></td></tr>
+<tr class="memitem:ae28a94cf1d15e71646ebf0edb91f5d89 inherit pub_static_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html">PneumaticsBaseSim</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#ae28a94cf1d15e71646ebf0edb91f5d89">GetForType</a> (int module, <a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">PneumaticsModuleType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr class="separator:ae28a94cf1d15e71646ebf0edb91f5d89 inherit pub_static_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc_1_1sim_1_1_pneumatics_base_sim')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html">frc::sim::PneumaticsBaseSim</a></td></tr>
+<tr class="memitem:a3c23a7ab457393aab31da1d3f76ddccd inherit pro_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a3c23a7ab457393aab31da1d3f76ddccd">PneumaticsBaseSim</a> (const <a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a> &amp;module)</td></tr>
+<tr class="separator:a3c23a7ab457393aab31da1d3f76ddccd inherit pro_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e9cf85e37754deec1769231fda251c inherit pro_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a98e9cf85e37754deec1769231fda251c">PneumaticsBaseSim</a> (const int index)</td></tr>
+<tr class="separator:a98e9cf85e37754deec1769231fda251c inherit pro_methods_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classfrc_1_1sim_1_1_pneumatics_base_sim"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc_1_1sim_1_1_pneumatics_base_sim')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html">frc::sim::PneumaticsBaseSim</a></td></tr>
+<tr class="memitem:adf8bf4ea4dc6e06b5af9e2a1eedfac5a inherit pro_attribs_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#adf8bf4ea4dc6e06b5af9e2a1eedfac5a">m_index</a></td></tr>
+<tr class="separator:adf8bf4ea4dc6e06b5af9e2a1eedfac5a inherit pro_attribs_classfrc_1_1sim_1_1_pneumatics_base_sim"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class to control a simulated Pneumatic Control Module (PCM). </p>
@@ -259,12 +287,40 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9e1bc0879bf026f0c6180d86cc402170" name="a9e1bc0879bf026f0c6180d86cc402170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e1bc0879bf026f0c6180d86cc402170">&#9670;&nbsp;</a></span>GetAllSolenoidOutputs()</h2>
+<a id="a5a47c8532d64d6b6ee65739a1bf3b9d9" name="a5a47c8532d64d6b6ee65739a1bf3b9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a47c8532d64d6b6ee65739a1bf3b9d9">&#9670;&nbsp;</a></span>~CTREPCMSim()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::sim::CTREPCMSim::~CTREPCMSim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2dc7c6abb2cbacee28597967dcd2f019" name="a2dc7c6abb2cbacee28597967dcd2f019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc7c6abb2cbacee28597967dcd2f019">&#9670;&nbsp;</a></span>GetAllSolenoidOutputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint8_t frc::sim::CTREPCMSim::GetAllSolenoidOutputs </td>
@@ -273,10 +329,17 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get the current value of all solenoid outputs. </p>
 <dl class="section return"><dt>Returns</dt><dd>the solenoid outputs (1 bit per output) </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#ab7cd51eb8563609d2aa12ef125c7b015">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
@@ -300,11 +363,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab8a98178e8bb84f2720808d55dcfc82b" name="ab8a98178e8bb84f2720808d55dcfc82b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8a98178e8bb84f2720808d55dcfc82b">&#9670;&nbsp;</a></span>GetCompressorCurrent()</h2>
+<a id="a3fe665127ace01ffd345f578ee1bf9a0" name="a3fe665127ace01ffd345f578ee1bf9a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe665127ace01ffd345f578ee1bf9a0">&#9670;&nbsp;</a></span>GetCompressorCurrent()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double frc::sim::CTREPCMSim::GetCompressorCurrent </td>
@@ -313,18 +379,28 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Read the compressor current. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current of the compressor connected to this module </dd></dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a0743f4e692901d56fbc1fe87aedeb938">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="a06c9d727e8b516ba2d20223d4c78f11b" name="a06c9d727e8b516ba2d20223d4c78f11b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06c9d727e8b516ba2d20223d4c78f11b">&#9670;&nbsp;</a></span>GetCompressorOn()</h2>
+<a id="ae78f18accac7f43358c5760da0f58637" name="ae78f18accac7f43358c5760da0f58637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78f18accac7f43358c5760da0f58637">&#9670;&nbsp;</a></span>GetCompressorOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool frc::sim::CTREPCMSim::GetCompressorOn </td>
@@ -333,18 +409,28 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check if the compressor is on. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if the compressor is active </dd></dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a0794c236f1bd6ed158279ac600c7e24b">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="a9ab02b7f909498415a407b13ddfa32dc" name="a9ab02b7f909498415a407b13ddfa32dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ab02b7f909498415a407b13ddfa32dc">&#9670;&nbsp;</a></span>GetInitialized()</h2>
+<a id="a8b7c625fa449a1b9a48874de6ffb7d16" name="a8b7c625fa449a1b9a48874de6ffb7d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7c625fa449a1b9a48874de6ffb7d16">&#9670;&nbsp;</a></span>GetInitialized()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool frc::sim::CTREPCMSim::GetInitialized </td>
@@ -353,18 +439,28 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Check if a solenoid has been initialized on a specific channel. </p>
+<p>Check whether the PCM/PH has been initialized. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if initialized </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#ae1dff98dc47cebbf0b489aa0080968fb">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
-<a id="a78268298e72c8fb13d91491ceb2a5fe5" name="a78268298e72c8fb13d91491ceb2a5fe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78268298e72c8fb13d91491ceb2a5fe5">&#9670;&nbsp;</a></span>GetPressureSwitch()</h2>
+<a id="a8cd93604ce8d3efaca81b8c39c2f216a" name="a8cd93604ce8d3efaca81b8c39c2f216a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd93604ce8d3efaca81b8c39c2f216a">&#9670;&nbsp;</a></span>GetPressureSwitch()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool frc::sim::CTREPCMSim::GetPressureSwitch </td>
@@ -373,18 +469,28 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check the value of the pressure switch. </p>
 <dl class="section return"><dt>Returns</dt><dd>the pressure switch value </dd></dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#aa914ff16b55ef8fa7ef70e9535bbe1e8">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="a4cd6227db78e996493e449668724485f" name="a4cd6227db78e996493e449668724485f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd6227db78e996493e449668724485f">&#9670;&nbsp;</a></span>GetSolenoidOutput()</h2>
+<a id="aa5caf06de6673e89f736c46986c0988c" name="aa5caf06de6673e89f736c46986c0988c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5caf06de6673e89f736c46986c0988c">&#9670;&nbsp;</a></span>GetSolenoidOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool frc::sim::CTREPCMSim::GetSolenoidOutput </td>
@@ -394,6 +500,11 @@ Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check the solenoid output on a specific channel. </p>
@@ -404,6 +515,8 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the solenoid output </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#abb871337b8b27c691b569d248cf11da8">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
@@ -445,11 +558,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a880d8c66f0c9c7a510eef278e25ffc64" name="a880d8c66f0c9c7a510eef278e25ffc64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880d8c66f0c9c7a510eef278e25ffc64">&#9670;&nbsp;</a></span>RegisterCompressorCurrentCallback()</h2>
+<a id="a8419c6bddf1e1707d6358e9ee8661deb" name="a8419c6bddf1e1707d6358e9ee8661deb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8419c6bddf1e1707d6358e9ee8661deb">&#9670;&nbsp;</a></span>RegisterCompressorCurrentCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt; frc::sim::CTREPCMSim::RegisterCompressorCurrentCallback </td>
@@ -469,6 +585,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Register a callback to be run whenever the compressor current changes. </p>
@@ -481,13 +602,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html" title="Manages simulation callbacks; each object is associated with a callback.">CallbackStore</a> object associated with this callback </dd></dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#acc327c5fc38ebec044973463e2286ff4">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="a06551948e01497a63d08da798b158b66" name="a06551948e01497a63d08da798b158b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06551948e01497a63d08da798b158b66">&#9670;&nbsp;</a></span>RegisterCompressorOnCallback()</h2>
+<a id="a8d24604291ceb5051bf860faf3e3ae59" name="a8d24604291ceb5051bf860faf3e3ae59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d24604291ceb5051bf860faf3e3ae59">&#9670;&nbsp;</a></span>RegisterCompressorOnCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt; frc::sim::CTREPCMSim::RegisterCompressorOnCallback </td>
@@ -507,6 +633,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Register a callback to be run when the compressor activates. </p>
@@ -517,15 +648,20 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html" title="Manages simulation callbacks; each object is associated with a callback.">CallbackStore</a> object associated with this callback </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> object associated with this callback. Save a reference to this object; it being deconstructed cancels the callback. </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#add6c9fdc6bfdd93f3316d414fcd08140">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
-<a id="ae72134ba05e4769817b1228dd9eb0072" name="ae72134ba05e4769817b1228dd9eb0072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae72134ba05e4769817b1228dd9eb0072">&#9670;&nbsp;</a></span>RegisterInitializedCallback()</h2>
+<a id="a7aec288b62d7b442f93ae6e6dbc69ac6" name="a7aec288b62d7b442f93ae6e6dbc69ac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aec288b62d7b442f93ae6e6dbc69ac6">&#9670;&nbsp;</a></span>RegisterInitializedCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt; frc::sim::CTREPCMSim::RegisterInitializedCallback </td>
@@ -545,25 +681,35 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Register a callback to be run when a solenoid is initialized on a channel. </p>
+<p>Register a callback to be run when the PCM/PH is initialized. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>the callback </td></tr>
-    <tr><td class="paramname">initialNotify</td><td>should the callback be run with the initial state </td></tr>
+    <tr><td class="paramname">initialNotify</td><td>whether to run the callback with the initial state </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html" title="Manages simulation callbacks; each object is associated with a callback.">CallbackStore</a> object associated with this callback </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> object associated with this callback. Save a reference to this object; it being deconstructed cancels the callback. </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a5db543ab5c093f8093a0f32808017ccb">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
-<a id="ab13dacbdde1708157f5394c5306b4505" name="ab13dacbdde1708157f5394c5306b4505"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab13dacbdde1708157f5394c5306b4505">&#9670;&nbsp;</a></span>RegisterPressureSwitchCallback()</h2>
+<a id="a465e88da029183b0057389f98a4e259a" name="a465e88da029183b0057389f98a4e259a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465e88da029183b0057389f98a4e259a">&#9670;&nbsp;</a></span>RegisterPressureSwitchCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt; frc::sim::CTREPCMSim::RegisterPressureSwitchCallback </td>
@@ -583,6 +729,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Register a callback to be run whenever the pressure switch value changes. </p>
@@ -595,13 +746,18 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html" title="Manages simulation callbacks; each object is associated with a callback.">CallbackStore</a> object associated with this callback </dd></dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#aedf0703ada4f8b01b10a35ae8b8b595f">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="a6638db8ae747020112bc864ba4767135" name="a6638db8ae747020112bc864ba4767135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6638db8ae747020112bc864ba4767135">&#9670;&nbsp;</a></span>RegisterSolenoidOutputCallback()</h2>
+<a id="a156ea2f972d2259c12a83c063ef15232" name="a156ea2f972d2259c12a83c063ef15232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156ea2f972d2259c12a83c063ef15232">&#9670;&nbsp;</a></span>RegisterSolenoidOutputCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> &gt; frc::sim::CTREPCMSim::RegisterSolenoidOutputCallback </td>
@@ -627,6 +783,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Register a callback to be run when the solenoid output on a channel changes. </p>
@@ -638,15 +799,20 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html" title="Manages simulation callbacks; each object is associated with a callback.">CallbackStore</a> object associated with this callback </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1_callback_store.html">CallbackStore</a> object associated with this callback. Save a reference to this object; it being deconstructed cancels the callback. </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a0f0a622c48955362cf9afc4742b6f312">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
-<a id="a6c7b91822ee29c39c3153de260aa0b8a" name="a6c7b91822ee29c39c3153de260aa0b8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c7b91822ee29c39c3153de260aa0b8a">&#9670;&nbsp;</a></span>ResetData()</h2>
+<a id="aee8f821e9cac904e104494d0a2c078da" name="aee8f821e9cac904e104494d0a2c078da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8f821e9cac904e104494d0a2c078da">&#9670;&nbsp;</a></span>ResetData()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::sim::CTREPCMSim::ResetData </td>
@@ -655,17 +821,27 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Reset all simulation data for this object. </p>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a62536c37a7788128825f940ef2a34c78">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="aab5f18ceee60b164dc884095a8041afc" name="aab5f18ceee60b164dc884095a8041afc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab5f18ceee60b164dc884095a8041afc">&#9670;&nbsp;</a></span>SetAllSolenoidOutputs()</h2>
+<a id="a424eecb482ffacdc2a46d65f522e9e0d" name="a424eecb482ffacdc2a46d65f522e9e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424eecb482ffacdc2a46d65f522e9e0d">&#9670;&nbsp;</a></span>SetAllSolenoidOutputs()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::sim::CTREPCMSim::SetAllSolenoidOutputs </td>
@@ -675,6 +851,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Change all of the solenoid outputs. </p>
@@ -684,6 +865,8 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a26d7f49f8e71c10356c33345f749133b">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
@@ -713,11 +896,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1322f337502f5c08cffd516dd6c8ea5e" name="a1322f337502f5c08cffd516dd6c8ea5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1322f337502f5c08cffd516dd6c8ea5e">&#9670;&nbsp;</a></span>SetCompressorCurrent()</h2>
+<a id="abbe6b1ec2ae4d80ea39fde39a2f6a95e" name="abbe6b1ec2ae4d80ea39fde39a2f6a95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe6b1ec2ae4d80ea39fde39a2f6a95e">&#9670;&nbsp;</a></span>SetCompressorCurrent()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::sim::CTREPCMSim::SetCompressorCurrent </td>
@@ -727,6 +913,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Set the compressor current. </p>
@@ -737,13 +928,18 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a9007190625a8d093997a2e08200564c7">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="ad1291053eeb76023e7a118be99b17419" name="ad1291053eeb76023e7a118be99b17419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1291053eeb76023e7a118be99b17419">&#9670;&nbsp;</a></span>SetCompressorOn()</h2>
+<a id="a441148d68a251d9b1d17733ae60355db" name="a441148d68a251d9b1d17733ae60355db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a441148d68a251d9b1d17733ae60355db">&#9670;&nbsp;</a></span>SetCompressorOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::sim::CTREPCMSim::SetCompressorOn </td>
@@ -753,6 +949,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Set whether the compressor is active. </p>
@@ -763,39 +964,54 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#ae80b6a89b267b289bb926cac884577b6">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="a3dc53a86c8bfeab81be68ee430571e7d" name="a3dc53a86c8bfeab81be68ee430571e7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dc53a86c8bfeab81be68ee430571e7d">&#9670;&nbsp;</a></span>SetInitialized()</h2>
+<a id="aa3d6cbd7177456aa3d71c070d6ef1d58" name="aa3d6cbd7177456aa3d71c070d6ef1d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3d6cbd7177456aa3d71c070d6ef1d58">&#9670;&nbsp;</a></span>SetInitialized()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::sim::CTREPCMSim::SetInitialized </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>solenoidInitialized</em></td><td>)</td>
+          <td class="paramname"><em>initialized</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Define whether a solenoid has been initialized on a specific channel. </p>
+<p>Define whether the PCM/PH has been initialized. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">solenoidInitialized</td><td>is there a solenoid initialized on that channel </td></tr>
+    <tr><td class="paramname">initialized</td><td>true for initialized </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a48528e61cdf35acd586655f9f560c726">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="ae6f57b107f4482a2b004e1c23f3910bf" name="ae6f57b107f4482a2b004e1c23f3910bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6f57b107f4482a2b004e1c23f3910bf">&#9670;&nbsp;</a></span>SetPressureSwitch()</h2>
+<a id="a80f7c44eb4057492a37af97f745c6f53" name="a80f7c44eb4057492a37af97f745c6f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80f7c44eb4057492a37af97f745c6f53">&#9670;&nbsp;</a></span>SetPressureSwitch()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::sim::CTREPCMSim::SetPressureSwitch </td>
@@ -805,6 +1021,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Set the value of the pressure switch. </p>
@@ -815,13 +1036,18 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a351ee7513af59589f003798d0212a74b">frc::sim::PneumaticsBaseSim</a>.</p>
+
 </div>
 </div>
-<a id="a8f27895126ae9baa20a2997b6c2a883f" name="a8f27895126ae9baa20a2997b6c2a883f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f27895126ae9baa20a2997b6c2a883f">&#9670;&nbsp;</a></span>SetSolenoidOutput()</h2>
+<a id="a370f9f4fd87a4432ea6d646017d40201" name="a370f9f4fd87a4432ea6d646017d40201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370f9f4fd87a4432ea6d646017d40201">&#9670;&nbsp;</a></span>SetSolenoidOutput()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::sim::CTREPCMSim::SetSolenoidOutput </td>
@@ -841,6 +1067,11 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Change the solenoid output on a specific channel. </p>
@@ -851,6 +1082,8 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implements <a class="el" href="classfrc_1_1sim_1_1_pneumatics_base_sim.html#a1dffcb0d850dfd63afcb0b735daa9efe">frc::sim::PneumaticsBaseSim</a>.</p>
 
 </div>
 </div>
@@ -863,7 +1096,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="namespacefrc_1_1sim.html">sim</a></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html">CTREPCMSim</a></li>
-    <li class="footer">Generated on Sat May 21 2022 23:23:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun May 22 2022 14:24:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

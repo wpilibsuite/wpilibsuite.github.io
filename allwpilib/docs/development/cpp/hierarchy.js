@@ -598,7 +598,6 @@ var hierarchy =
     [ "CS_VideoMode", "struct_c_s___video_mode.html", [
       [ "cs::VideoMode", "structcs_1_1_video_mode.html", null ]
     ] ],
-    [ "frc::sim::CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html", null ],
     [ "custom_formatter< Char >", "structcustom__formatter.html", null ],
     [ "custom_value< Context >", "structcustom__value.html", null ],
     [ "Eigen::internal::cwise_promote_storage_order< LhsKind, RhsKind, LhsOrder, RhsOrder >", "struct_eigen_1_1internal_1_1cwise__promote__storage__order.html", null ],
@@ -796,6 +795,7 @@ var hierarchy =
     [ "Eigen::internal::dot_nocheck< T, U, NeedToTranspose >", "struct_eigen_1_1internal_1_1dot__nocheck.html", null ],
     [ "Eigen::internal::dot_nocheck< T, U, true >", "struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html", null ],
     [ "Eigen::internal::DoublePacket< Packet >", "struct_eigen_1_1internal_1_1_double_packet.html", null ],
+    [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1_double_solenoid_sim.html", null ],
     [ "frc::DriverStation", "classfrc_1_1_driver_station.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1_driver_station_sim.html", null ],
     [ "frc::DSControlWord", "classfrc_1_1_d_s_control_word.html", null ],
@@ -2209,6 +2209,10 @@ var hierarchy =
       [ "frc::PneumaticHub", "classfrc_1_1_pneumatic_hub.html", null ],
       [ "frc::PneumaticsControlModule", "classfrc_1_1_pneumatics_control_module.html", null ]
     ] ],
+    [ "frc::sim::PneumaticsBaseSim", "classfrc_1_1sim_1_1_pneumatics_base_sim.html", [
+      [ "frc::sim::CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html", null ],
+      [ "frc::sim::REVPHSim", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html", null ]
+    ] ],
     [ "Eigen::internal::pointer_based_stl_iterator< XprType >", "class_eigen_1_1internal_1_1pointer__based__stl__iterator.html", null ],
     [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1_pointer_int_pair.html", null ],
     [ "wpi::PointerIntPairInfo< PointerT, IntBits, PtrTraits >", "structwpi_1_1_pointer_int_pair_info.html", null ],
@@ -2484,7 +2488,6 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::reverse_packet_cond< PacketType, ReversePacket >", "struct_eigen_1_1internal_1_1reverse__packet__cond.html", null ],
     [ "Eigen::internal::reverse_packet_cond< PacketType, false >", "struct_eigen_1_1internal_1_1reverse__packet__cond_3_01_packet_type_00_01false_01_4.html", null ],
-    [ "frc::sim::REVPHSim", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html", null ],
     [ "rgb", "structrgb.html", null ],
     [ "Eigen::internal::RhsPanelHelper< RhsPacket, RhsPacketx4, registers_taken >", "struct_eigen_1_1internal_1_1_rhs_panel_helper.html", null ],
     [ "Eigen::internal::rint_impl< Scalar >", "struct_eigen_1_1internal_1_1rint__impl.html", null ],
@@ -3000,6 +3003,7 @@ var hierarchy =
     [ "Eigen::internal::smart_memmove_helper< T, false >", "struct_eigen_1_1internal_1_1smart__memmove__helper_3_01_t_00_01false_01_4.html", null ],
     [ "Eigen::internal::smart_memmove_helper< T, true >", "struct_eigen_1_1internal_1_1smart__memmove__helper_3_01_t_00_01true_01_4.html", null ],
     [ "frc::SmartDashboard", "classfrc_1_1_smart_dashboard.html", null ],
+    [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1_solenoid_sim.html", null ],
     [ "Eigen::internal::solve_assertion< Derived >", "struct_eigen_1_1internal_1_1solve__assertion.html", null ],
     [ "Eigen::internal::solve_assertion< CwiseUnaryOp< Eigen::internal::scalar_conjugate_op< Scalar >, const Transpose< Derived > > >", "struct_eigen_1_1internal_1_1solve__assertion_3_01_cwise_unary_op_3_01_eigen_1_1internal_1_1scalab4d735985c1c135f64fbef11fc46eea1.html", null ],
     [ "Eigen::internal::solve_assertion< Transpose< Derived > >", "struct_eigen_1_1internal_1_1solve__assertion_3_01_transpose_3_01_derived_01_4_01_4.html", null ],

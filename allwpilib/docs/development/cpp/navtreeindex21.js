@@ -1,5 +1,11 @@
 var NAVTREEINDEX21 =
 {
+"_vectorwise_op_8h.html#a5aa49c0ad0ba41a6fa7e0900181a0364":[6,0,3,0,0,1,73,16],
+"_vectorwise_op_8h.html#a679d4a1ffba4b41232f135265bfeed29":[6,0,3,0,0,1,73,18],
+"_vectorwise_op_8h.html#a6bb963b8c61914561f26ad3cef3fde15":[6,0,3,0,0,1,73,19],
+"_vectorwise_op_8h.html#a86253cd67c16821514cc4fbf30f9eb6b":[6,0,3,0,0,1,73,11],
+"_vectorwise_op_8h.html#a988e8c367db47dcf2de8007b672e0a3d":[6,0,3,0,0,1,73,17],
+"_vectorwise_op_8h.html#ab7943650023e294c807285688f9ed714":[6,0,3,0,0,1,73,13],
 "_vectorwise_op_8h.html#aba307df48bf366dbd67f8874a8c17834":[6,0,3,0,0,1,73,22],
 "_vectorwise_op_8h.html#ac6e1a194a1588d270eef6efa247c2991":[6,0,3,0,0,1,73,10],
 "_vectorwise_op_8h.html#af0728ee4134f879abe9121af16def656":[6,0,3,0,0,1,73,21],
@@ -35,8 +41,8 @@ var NAVTREEINDEX21 =
 "_windows_error_8h_source.html":[6,0,12,83],
 "_xbox_controller_8h.html":[6,0,6,84],
 "_xbox_controller_8h_source.html":[6,0,6,84],
-"_xbox_controller_sim_8h.html":[6,0,6,6,39],
-"_xbox_controller_sim_8h_source.html":[6,0,6,6,39],
+"_xbox_controller_sim_8h.html":[6,0,6,6,42],
+"_xbox_controller_sim_8h_source.html":[6,0,6,6,42],
 "_xpr_helper_8h.html":[6,0,3,0,0,1,3,14],
 "_xpr_helper_8h.html#a4363bfa78f2780a0714888ec373b2673":[6,0,3,0,0,1,3,14,93],
 "_xpr_helper_8h.html#a53454178d54621169eded201cec9f05e":[6,0,3,0,0,1,3,14,94],
@@ -243,11 +249,5 @@ var NAVTREEINDEX21 =
 "base_8h.html#add3d43d1395f155226a4c70e33f2e4a2":[6,0,10,5,142],
 "base_8h.html#add5d88c54ed9bf15ebfc5b54fad4a226":[6,0,10,5,122],
 "base_8h.html#adf37aecb5ffd5d1990e43ac25891d0a9":[6,0,10,5,23],
-"base_8h.html#ae0e5766d8297c69e324996f9a008ff60":[6,0,10,5,104],
-"base_8h.html#ae149d36dcf39ce19af1bc6e0538415a2":[6,0,10,5,103],
-"base_8h.html#ae23b54e3a6efd89baa3daa8f9369b59f":[6,0,10,5,36],
-"base_8h.html#ae711d874dd08cedb282879b1ad47df6a":[6,0,10,5,125],
-"base_8h.html#ae7756e0f6e8322f5c6150be2b871e544":[6,0,10,5,27],
-"base_8h.html#ae9f8f59df111748817588a056678942b":[6,0,10,5,99],
-"base_8h.html#aede70a4c0594d33f56f2390430dca1ed":[6,0,10,5,133]
+"base_8h.html#ae0e5766d8297c69e324996f9a008ff60":[6,0,10,5,104]
 };

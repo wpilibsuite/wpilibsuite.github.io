@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a14f5eb6cd81b5d77e4b60bfbb3586421":[6,0,8,1,1,1,20],
+"_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a1ce92afa20b1c7f6a4e5d0dc73e5c92a":[6,0,8,1,1,1,4],
 "_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a22912d4fe610d46be1769655dfdc08a6":[6,0,8,1,1,1,24],
 "_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949":[6,0,8,1,1,1,22],
 "_handles_internal_8h.html#a2e846f89b7ea1bed682347804f2c9cc9a34c4c50fc7bdd0394f3954f73f2be34d":[6,0,8,1,1,1,8],
@@ -179,8 +181,8 @@ var NAVTREEINDEX8 =
 "_joystick_8h_source.html":[6,0,6,51],
 "_joystick_button_8h.html":[6,0,7,0,0,1],
 "_joystick_button_8h_source.html":[6,0,7,0,0,1],
-"_joystick_sim_8h.html":[6,0,6,6,26],
-"_joystick_sim_8h_source.html":[6,0,6,6,26],
+"_joystick_sim_8h.html":[6,0,6,6,27],
+"_joystick_sim_8h_source.html":[6,0,6,6,27],
 "_kalman_filter_8h.html":[6,0,5,1,4],
 "_kalman_filter_8h.html#a22173a31a2259955f69374891ce306d0":[6,0,5,1,4,1],
 "_kalman_filter_8h_source.html":[6,0,5,1,4],
@@ -229,8 +231,8 @@ var NAVTREEINDEX8 =
 "_linear_system_loop_8h.html":[6,0,5,8,3],
 "_linear_system_loop_8h.html#a22173a31a2259955f69374891ce306d0":[6,0,5,8,3,1],
 "_linear_system_loop_8h_source.html":[6,0,5,8,3],
-"_linear_system_sim_8h.html":[6,0,6,6,27],
-"_linear_system_sim_8h_source.html":[6,0,6,6,27],
+"_linear_system_sim_8h.html":[6,0,6,6,28],
+"_linear_system_sim_8h_source.html":[6,0,6,6,28],
 "_listener_executor_8h.html":[6,0,6,7,2],
 "_listener_executor_8h_source.html":[6,0,6,7,2],
 "_live_window_8h.html":[6,0,6,3,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88a":[6,0,12,38,10],
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa4eaaa435255d53d8ee1ad804ac2fde9d":[6,0,12,38,10,0],
 "_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa749ae7790a80d70497b9b873e51737c4":[6,0,12,38,10,6],
-"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa82615e27834c547fec2af93cf5d4b4a7":[6,0,12,38,10,4],
-"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aabd6cb7f9e35184593c719b52e3269f2e":[6,0,12,38,10,1],
-"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aac7f7f9988bf8b7a36185cd7a19faa576":[6,0,12,38,10,5]
+"_logger_8h.html#ae00dc51f60e3a7f50eea48b914e9f88aa82615e27834c547fec2af93cf5d4b4a7":[6,0,12,38,10,4]
 };

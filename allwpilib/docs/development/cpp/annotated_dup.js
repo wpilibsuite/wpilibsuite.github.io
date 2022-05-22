@@ -1789,6 +1789,7 @@ var annotated_dup =
         [ "DifferentialDrivetrainSim", "classfrc_1_1sim_1_1_differential_drivetrain_sim.html", "classfrc_1_1sim_1_1_differential_drivetrain_sim" ],
         [ "DigitalPWMSim", "classfrc_1_1sim_1_1_digital_p_w_m_sim.html", "classfrc_1_1sim_1_1_digital_p_w_m_sim" ],
         [ "DIOSim", "classfrc_1_1sim_1_1_d_i_o_sim.html", "classfrc_1_1sim_1_1_d_i_o_sim" ],
+        [ "DoubleSolenoidSim", "classfrc_1_1sim_1_1_double_solenoid_sim.html", "classfrc_1_1sim_1_1_double_solenoid_sim" ],
         [ "DriverStationSim", "classfrc_1_1sim_1_1_driver_station_sim.html", "classfrc_1_1sim_1_1_driver_station_sim" ],
         [ "DutyCycleEncoderSim", "classfrc_1_1sim_1_1_duty_cycle_encoder_sim.html", "classfrc_1_1sim_1_1_duty_cycle_encoder_sim" ],
         [ "DutyCycleSim", "classfrc_1_1sim_1_1_duty_cycle_sim.html", "classfrc_1_1sim_1_1_duty_cycle_sim" ],
@@ -1798,6 +1799,7 @@ var annotated_dup =
         [ "GenericHIDSim", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html", "classfrc_1_1sim_1_1_generic_h_i_d_sim" ],
         [ "JoystickSim", "classfrc_1_1sim_1_1_joystick_sim.html", "classfrc_1_1sim_1_1_joystick_sim" ],
         [ "LinearSystemSim", "classfrc_1_1sim_1_1_linear_system_sim.html", "classfrc_1_1sim_1_1_linear_system_sim" ],
+        [ "PneumaticsBaseSim", "classfrc_1_1sim_1_1_pneumatics_base_sim.html", "classfrc_1_1sim_1_1_pneumatics_base_sim" ],
         [ "PowerDistributionSim", "classfrc_1_1sim_1_1_power_distribution_sim.html", "classfrc_1_1sim_1_1_power_distribution_sim" ],
         [ "PS4ControllerSim", "classfrc_1_1sim_1_1_p_s4_controller_sim.html", "classfrc_1_1sim_1_1_p_s4_controller_sim" ],
         [ "PWMSim", "classfrc_1_1sim_1_1_p_w_m_sim.html", "classfrc_1_1sim_1_1_p_w_m_sim" ],
@@ -1806,6 +1808,7 @@ var annotated_dup =
         [ "RoboRioSim", "classfrc_1_1sim_1_1_robo_rio_sim.html", "classfrc_1_1sim_1_1_robo_rio_sim" ],
         [ "SimDeviceSim", "classfrc_1_1sim_1_1_sim_device_sim.html", "classfrc_1_1sim_1_1_sim_device_sim" ],
         [ "SingleJointedArmSim", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html", "classfrc_1_1sim_1_1_single_jointed_arm_sim" ],
+        [ "SolenoidSim", "classfrc_1_1sim_1_1_solenoid_sim.html", "classfrc_1_1sim_1_1_solenoid_sim" ],
         [ "SPIAccelerometerSim", "classfrc_1_1sim_1_1_s_p_i_accelerometer_sim.html", "classfrc_1_1sim_1_1_s_p_i_accelerometer_sim" ],
         [ "UltrasonicSim", "classfrc_1_1sim_1_1_ultrasonic_sim.html", "classfrc_1_1sim_1_1_ultrasonic_sim" ],
         [ "XboxControllerSim", "classfrc_1_1sim_1_1_xbox_controller_sim.html", "classfrc_1_1sim_1_1_xbox_controller_sim" ]
