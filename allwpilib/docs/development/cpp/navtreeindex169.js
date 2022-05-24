@@ -1,5 +1,7 @@
 var NAVTREEINDEX169 =
 {
+"structwpi_1_1java_1_1_j_class_init.html#a81f286f7363b7b1635cd88c700721e4d":[4,0,20,3,4,0],
+"structwpi_1_1java_1_1_j_class_init.html#a81f286f7363b7b1635cd88c700721e4d":[5,0,13,3,4,0],
 "structwpi_1_1java_1_1_j_exception_init.html":[4,0,20,3,6],
 "structwpi_1_1java_1_1_j_exception_init.html":[5,0,13,3,6],
 "structwpi_1_1java_1_1_j_exception_init.html#a2e7f3d47c015761b79ed33a2c8cccc26":[5,0,13,3,6,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX169 =
 "velocity_8h.html#ad98ab5cc355a6d8434e036656fd02443":[6,0,10,40,3],
 "velocity_8h.html#aead6db2bdcbf9360007e269cbe66eedc":[6,0,10,40,2],
 "velocity_8h.html#afd31a9fb3134a229633b92e5023e0c74":[6,0,10,40,1],
-"velocity_8h_source.html":[6,0,10,40],
-"voltage_8h.html":[6,0,10,41],
-"voltage_8h.html#a419d9b7804f68ca52937dc889b82f94b":[6,0,10,41,2]
+"velocity_8h_source.html":[6,0,10,40]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX108 =
 {
+"group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a":[3,1,19,6],
+"group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4":[3,1,19,7],
 "group__hal__dutycycle.html#gab44e1f3fef711037c935565e6b3a45c0":[3,1,19,2],
 "group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e":[3,1,19,4],
 "group__hal__encoder.html":[3,1,22],
@@ -247,7 +249,5 @@ var NAVTREEINDEX108 =
 "group__hal__pwm.html#gaddbb9336957cd263eec26ffdded00aba":[3,1,12,4],
 "group__hal__relay.html":[3,1,4],
 "group__hal__relay.html#ga1ab2f99d2538c74bd115f5db4d6fb9b7":[3,1,4,8],
-"group__hal__relay.html#ga33919830acbc5776776d69ee4569abfc":[3,1,4,2],
-"group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543":[3,1,4,6],
-"group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90":[3,1,4,7]
+"group__hal__relay.html#ga33919830acbc5776776d69ee4569abfc":[3,1,4,2]
 };

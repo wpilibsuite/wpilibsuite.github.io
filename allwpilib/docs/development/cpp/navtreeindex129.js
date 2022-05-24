@@ -1,5 +1,7 @@
 var NAVTREEINDEX129 =
 {
+"span_8h.html#a642b2450b4eef7de6728e218adde13b5":[6,0,12,67,20],
+"span_8h.html#a69cf9bbb4260087299a39334b54ca9a9":[6,0,12,67,22],
 "span_8h.html#a70214806b2200e893f4f33e54fb6166a":[6,0,12,67,19],
 "span_8h.html#ab606cdff09cfdd6ab575a6f9e777905a":[6,0,12,67,23],
 "span_8h.html#ad5aec138436459518e03b347be4a9561":[6,0,12,67,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX129 =
 "struct_eigen_1_1_permutation_shape.html":[4,0,7,141],
 "struct_eigen_1_1_permutation_shape.html#a5e7ccddac22d76e40150fe848522b5b1":[5,0,4,138,0],
 "struct_eigen_1_1_permutation_shape.html#a5e7ccddac22d76e40150fe848522b5b1":[4,0,7,141,0],
-"struct_eigen_1_1_permutation_storage.html":[5,0,4,139],
-"struct_eigen_1_1_permutation_storage.html":[4,0,7,142],
-"struct_eigen_1_1_plain_object_base_1_1_strided_aligned_map_type.html":[4,0,7,144,0]
+"struct_eigen_1_1_permutation_storage.html":[5,0,4,139]
 };

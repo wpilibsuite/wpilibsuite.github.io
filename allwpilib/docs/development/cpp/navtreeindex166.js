@@ -1,5 +1,7 @@
 var NAVTREEINDEX166 =
 {
+"structunits_1_1traits_1_1is__nonlinear__scale.html":[3,21,4],
+"structunits_1_1traits_1_1is__ratio.html":[4,0,19,39,7],
 "structunits_1_1traits_1_1is__ratio.html":[5,0,12,0,7],
 "structunits_1_1traits_1_1is__same__scale.html":[3,21,9],
 "structunits_1_1traits_1_1is__unit.html":[3,21,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX166 =
 "structwpi_1_1_function_pointer_like_type_traits.html":[5,0,13,56],
 "structwpi_1_1_function_pointer_like_type_traits.html":[4,0,20,58],
 "structwpi_1_1_function_pointer_like_type_traits.html#a25e7aafc25d0aab10e7bdf93c991e73f":[4,0,20,58,1],
-"structwpi_1_1_function_pointer_like_type_traits.html#a25e7aafc25d0aab10e7bdf93c991e73f":[5,0,13,56,1],
-"structwpi_1_1_function_pointer_like_type_traits.html#a4dac9c5d9909daef3a4b4f83a63b6a9f":[4,0,20,58,0],
-"structwpi_1_1_function_pointer_like_type_traits.html#a4dac9c5d9909daef3a4b4f83a63b6a9f":[5,0,13,56,0]
+"structwpi_1_1_function_pointer_like_type_traits.html#a25e7aafc25d0aab10e7bdf93c991e73f":[5,0,13,56,1]
 };

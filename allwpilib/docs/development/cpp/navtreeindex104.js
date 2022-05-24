@@ -1,18 +1,20 @@
 var NAVTREEINDEX104 =
 {
-"group___matrix_functions___module.html#matrixbase_pow":[3,23,13,0,0,4],
+"group___matrix_functions___module.html#matrixbase_matrixfunction":[0,5],
 "group___matrix_functions___module.html#matrixbase_pow":[0,4],
-"group___matrix_functions___module.html#matrixbase_sin":[3,23,13,0,6],
+"group___matrix_functions___module.html#matrixbase_pow":[3,23,13,0,4],
+"group___matrix_functions___module.html#matrixbase_pow":[3,23,13,0,0,4],
 "group___matrix_functions___module.html#matrixbase_sin":[0,6],
 "group___matrix_functions___module.html#matrixbase_sin":[3,23,13,0,0,6],
+"group___matrix_functions___module.html#matrixbase_sin":[3,23,13,0,6],
 "group___matrix_functions___module.html#matrixbase_sinh":[3,23,13,0,7],
-"group___matrix_functions___module.html#matrixbase_sinh":[3,23,13,0,0,7],
 "group___matrix_functions___module.html#matrixbase_sinh":[0,7],
-"group___matrix_functions___module.html#matrixbase_sqrt":[3,23,13,0,0,8],
+"group___matrix_functions___module.html#matrixbase_sinh":[3,23,13,0,0,7],
 "group___matrix_functions___module.html#matrixbase_sqrt":[0,8],
 "group___matrix_functions___module.html#matrixbase_sqrt":[3,23,13,0,8],
-"group___matrix_functions___module.html#matrixbaseextra":[3,23,13,0,0],
+"group___matrix_functions___module.html#matrixbase_sqrt":[3,23,13,0,0,8],
 "group___matrix_functions___module.html#matrixbaseextra":[0],
+"group___matrix_functions___module.html#matrixbaseextra":[3,23,13,0,0],
 "group___matrix_functions___module.html#matrixbaseextra":[3,23,13,0],
 "group___matrix_functions___module.html#matrixbaseextra_page":[3,23,13],
 "group___q_r___module.html":[3,26],
@@ -247,7 +249,5 @@ var NAVTREEINDEX104 =
 "group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aa3659cfb297635baec275e2d03fe61347":[3,11,24,1],
 "group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aa38ad8566d838beb5687ce1d93df4b15e":[3,11,24,2],
 "group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aad5d50238e7d5806819d2f605670cc8e2":[3,11,24,0],
-"group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aaf06ad2e731561f9743538e8e95542ea6":[3,11,24,3],
-"group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22ea95f3e1369d580248f00f714485ea48fc":[3,11,27,4],
-"group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22eac7f082aac24441ac645e6a7c6c0f6911":[3,11,27,0]
+"group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aaf06ad2e731561f9743538e8e95542ea6":[3,11,24,3]
 };

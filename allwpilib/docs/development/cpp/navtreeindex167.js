@@ -1,5 +1,7 @@
 var NAVTREEINDEX167 =
 {
+"structwpi_1_1_function_pointer_like_type_traits.html#a4dac9c5d9909daef3a4b4f83a63b6a9f":[4,0,20,58,0],
+"structwpi_1_1_function_pointer_like_type_traits.html#a4dac9c5d9909daef3a4b4f83a63b6a9f":[5,0,13,56,0],
 "structwpi_1_1_function_pointer_like_type_traits.html#a5d99be3e214cbacaaab7717ab5ecef46":[4,0,20,58,2],
 "structwpi_1_1_function_pointer_like_type_traits.html#a5d99be3e214cbacaaab7717ab5ecef46":[5,0,13,56,2],
 "structwpi_1_1_null_deleter.html":[4,0,20,80],
@@ -247,7 +249,5 @@ var NAVTREEINDEX167 =
 "structwpi_1_1detail_1_1_trailing_zeros_counter.html":[4,0,20,0,74],
 "structwpi_1_1detail_1_1_trailing_zeros_counter.html":[5,0,13,0,74],
 "structwpi_1_1detail_1_1_trailing_zeros_counter.html#aedd4fb05062126eb29ec9826ad7843f0":[5,0,13,0,74,0],
-"structwpi_1_1detail_1_1_trailing_zeros_counter.html#aedd4fb05062126eb29ec9826ad7843f0":[4,0,20,0,74,0],
-"structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html":[4,0,20,0,77,0],
-"structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html":[5,0,13,0,77,0]
+"structwpi_1_1detail_1_1_trailing_zeros_counter.html#aedd4fb05062126eb29ec9826ad7843f0":[4,0,20,0,74,0]
 };

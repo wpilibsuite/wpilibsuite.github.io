@@ -1,5 +1,7 @@
 var NAVTREEINDEX159 =
 {
+"struct_h_a_l___power_distribution_version.html#a87f3e4033296aa6dfec7d7703427a772":[3,1,2,0,0],
+"struct_h_a_l___power_distribution_version.html#a9e76ab577b3f725d01a8757276f92b75":[3,1,2,0,5],
 "struct_h_a_l___r_e_v_p_h_compressor_config.html":[3,1,21,1],
 "struct_h_a_l___r_e_v_p_h_compressor_config.html#a43bd62133d489ba0c6d7c5f5cf8baeb6":[3,1,21,1,1],
 "struct_h_a_l___r_e_v_p_h_compressor_config.html#a525d5a079d74565301ab6ff489ec96b6":[3,1,21,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX159 =
 "structchrono__format__checker.html#a86e6e2fd43d82f1389ca8510ed9608f2":[5,0,44,9],
 "structchrono__format__checker.html#aa0a07c5e4f065cddeae5b06e96dd2747":[5,0,44,1],
 "structchrono__format__checker.html#af555dc4252644bc4be856b9737cf009a":[5,0,44,10],
-"structchrono__formatter.html":[5,0,45],
-"structchrono__formatter.html#a0127283ba8d97504f0b6337f34d7737e":[5,0,45,44],
-"structchrono__formatter.html#a04b603d068a368e2bdbe322ef310536f":[5,0,45,30]
+"structchrono__formatter.html":[5,0,45]
 };

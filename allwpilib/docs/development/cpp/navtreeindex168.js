@@ -1,5 +1,7 @@
 var NAVTREEINDEX168 =
 {
+"structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html":[4,0,20,0,77,0],
+"structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html":[5,0,13,0,77,0],
 "structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html#af0cf3c111f1197ac3f49a9395a68d977":[5,0,13,0,77,0,0],
 "structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html#af0cf3c111f1197ac3f49a9395a68d977":[4,0,20,0,77,0,0],
 "structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder_3_01_callable_t_00_01_called_ab0cbade8ac95d4737d2a9628391544e7.html":[5,0,13,0,77,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX168 =
 "structwpi_1_1java_1_1_j_class_init.html":[4,0,20,3,4],
 "structwpi_1_1java_1_1_j_class_init.html":[5,0,13,3,4],
 "structwpi_1_1java_1_1_j_class_init.html#a04688ae9ed0ddc0d80da17568a9d9082":[4,0,20,3,4,1],
-"structwpi_1_1java_1_1_j_class_init.html#a04688ae9ed0ddc0d80da17568a9d9082":[5,0,13,3,4,1],
-"structwpi_1_1java_1_1_j_class_init.html#a81f286f7363b7b1635cd88c700721e4d":[4,0,20,3,4,0],
-"structwpi_1_1java_1_1_j_class_init.html#a81f286f7363b7b1635cd88c700721e4d":[5,0,13,3,4,0]
+"structwpi_1_1java_1_1_j_class_init.html#a04688ae9ed0ddc0d80da17568a9d9082":[5,0,13,3,4,1]
 };

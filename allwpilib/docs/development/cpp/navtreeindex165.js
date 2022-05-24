@@ -1,5 +1,7 @@
 var NAVTREEINDEX165 =
 {
+"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a134ac6a90be592acb22d6c9e401ca859":[4,0,18,11,19],
+"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a134ac6a90be592acb22d6c9e401ca859":[5,0,11,11,19],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a18bfe69b2d6c764f391f11813f44c1a4":[5,0,11,11,29],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a18bfe69b2d6c764f391f11813f44c1a4":[4,0,18,11,29],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a204b95959cbfed10e9dcda70a1aa1107":[5,0,11,11,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX165 =
 "structunits_1_1traits_1_1is__convertible__unit.html":[3,21,3],
 "structunits_1_1traits_1_1is__convertible__unit__t.html":[3,21,5],
 "structunits_1_1traits_1_1is__dimensionless__unit.html":[5,0,12,0,5],
-"structunits_1_1traits_1_1is__dimensionless__unit.html":[4,0,19,39,5],
-"structunits_1_1traits_1_1is__nonlinear__scale.html":[3,21,4],
-"structunits_1_1traits_1_1is__ratio.html":[4,0,19,39,7]
+"structunits_1_1traits_1_1is__dimensionless__unit.html":[4,0,19,39,5]
 };

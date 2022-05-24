@@ -29,6 +29,7 @@ var classfrc2_1_1_command =
     [ "Schedule", "classfrc2_1_1_command.html#aa9920c649ab4ac6f37155e19f348145e", null ],
     [ "SetGrouped", "classfrc2_1_1_command.html#a8c3e7ee729136e7e7e18e1e3a48a079a", null ],
     [ "TransferOwnership", "classfrc2_1_1_command.html#af4c5f5b02b388017df79f36354a43bf2", null ],
+    [ "Unless", "classfrc2_1_1_command.html#a61630f22b45df20ede2e14f14cfd2708", null ],
     [ "Until", "classfrc2_1_1_command.html#a1617d60548cc8a75c12f5ddfe8e3c38c", null ],
     [ "WithInterrupt", "classfrc2_1_1_command.html#ad5d6a753ec2790f274bc7b884e9e305b", null ],
     [ "WithTimeout", "classfrc2_1_1_command.html#a7d1ba6905ebca2f7e000942b318b59ae", null ],

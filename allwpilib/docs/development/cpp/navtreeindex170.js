@@ -1,5 +1,7 @@
 var NAVTREEINDEX170 =
 {
+"voltage_8h.html":[6,0,10,41],
+"voltage_8h.html#a419d9b7804f68ca52937dc889b82f94b":[6,0,10,41,2],
 "voltage_8h.html#a5152d55c3a0604db8cf531ea9cb3c1f6":[6,0,10,41,3],
 "voltage_8h.html#a93ca94d0ff66352813800bd6dcb1bb0b":[6,0,10,41,1],
 "voltage_8h.html#ab400400a018a933ea864ff4bb062b968":[6,0,10,41,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX170 =
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca3efea3cccdbed48be1f1db03de4fa20e":[6,0,4,0,0,2,6,14],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca4108cee2c1205de0bba7a8f3f55ba48b":[6,0,4,0,0,2,6,116],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca4109165af5329dd59f9bd749c5a55846":[6,0,4,0,0,2,6,61],
-"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca486c9b835e518cd7b0c998ca7a37c893":[6,0,4,0,0,2,6,34],
-"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca48d6215903dff56238e52e8891380c8f":[6,0,4,0,0,2,6,9],
-"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca49dba686026a18435dd23b5e83eb5cfd":[6,0,4,0,0,2,6,24]
+"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca486c9b835e518cd7b0c998ca7a37c893":[6,0,4,0,0,2,6,34]
 };

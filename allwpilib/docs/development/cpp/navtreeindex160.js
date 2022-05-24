@@ -1,5 +1,7 @@
 var NAVTREEINDEX160 =
 {
+"structchrono__formatter.html#a0127283ba8d97504f0b6337f34d7737e":[5,0,45,44],
+"structchrono__formatter.html#a04b603d068a368e2bdbe322ef310536f":[5,0,45,30],
 "structchrono__formatter.html#a0556c9d7242a429ded06802da2ab46c9":[5,0,45,45],
 "structchrono__formatter.html#a09059647539ca59eec615bee24210c23":[5,0,45,4],
 "structchrono__formatter.html#a14a5e760695d11a3e0435ab7fff9ba51":[5,0,45,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX160 =
 "structdetail_1_1fallback__uintptr.html#aa801da8a7b2110d75442375f26a0b186":[5,0,1,11,1],
 "structdetail_1_1find__escape__result.html":[4,0,3,13],
 "structdetail_1_1find__escape__result.html":[5,0,1,12],
-"structdetail_1_1find__escape__result.html#a16b4900274c89381dd99dc68518cd9e6":[5,0,1,12,2],
-"structdetail_1_1find__escape__result.html#a16b4900274c89381dd99dc68518cd9e6":[4,0,3,13,2],
-"structdetail_1_1find__escape__result.html#a48c5da0f037d83314fd58f34330ffad1":[4,0,3,13,0]
+"structdetail_1_1find__escape__result.html#a16b4900274c89381dd99dc68518cd9e6":[5,0,1,12,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX107 =
 {
+"group__hal__analoggyro.html#gabb9894fce3ebfed40aab914a56f58e85":[3,1,5,6],
+"group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb":[3,1,5,8],
 "group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,1,5,9],
 "group__hal__analoginput.html":[3,1,28],
 "group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452":[3,1,28,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX107 =
 "group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc":[3,1,19,3],
 "group__hal__dutycycle.html#ga38fedf88c5a13aaf2c8a087f56a551e2":[3,1,19,1],
 "group__hal__dutycycle.html#ga749fddc16c0a0e1fb3264d1dc0c51b68":[3,1,19,0],
-"group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f":[3,1,19,5],
-"group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a":[3,1,19,6],
-"group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4":[3,1,19,7]
+"group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f":[3,1,19,5]
 };
