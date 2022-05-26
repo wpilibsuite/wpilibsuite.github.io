@@ -177,14 +177,7 @@ var hierarchy =
     [ "Eigen::internal::AssignmentKind< TriangularShape, DenseShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_dense_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< TriangularShape, TriangularShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_triangular_shape_01_4.html", null ],
     [ "frc::AsynchronousInterrupt", "classfrc_1_1_asynchronous_interrupt.html", null ],
-    [ "Eigen::internal::auto_diff_special_op< DerivativeType, Enable >", "struct_eigen_1_1internal_1_1auto__diff__special__op.html", null ],
-    [ "Eigen::internal::auto_diff_special_op< DerivativeType, !internal::is_same< internal::traits< internal::remove_all< DerivativeType >::type >::Scalar, NumTraits< internal::traits< internal::remove_all< DerivativeType >::type >::Scalar >::Real >::value >", "struct_eigen_1_1internal_1_1auto__diff__special__op.html", [
-      [ "Eigen::AutoDiffScalar< DerivativeType >", "class_eigen_1_1_auto_diff_scalar.html", null ]
-    ] ],
-    [ "Eigen::internal::auto_diff_special_op< DerivativeType, false >", "struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01false_01_4.html", null ],
-    [ "Eigen::internal::auto_diff_special_op< DerivativeType, true >", "struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html", null ],
     [ "auto_id", "structauto__id.html", null ],
-    [ "Eigen::AutoDiffVector< ValueType, JacobianType >", "class_eigen_1_1_auto_diff_vector.html", null ],
     [ "frc::PS4Controller::Axis", "structfrc_1_1_p_s4_controller_1_1_axis.html", null ],
     [ "frc::XboxController::Axis", "structfrc_1_1_xbox_controller_1_1_axis.html", null ],
     [ "B1", null, [
@@ -382,7 +375,6 @@ var hierarchy =
     [ "Eigen::internal::checkTransposeAliasing_impl< Derived, OtherDerived, false >", "struct_eigen_1_1internal_1_1check_transpose_aliasing__impl_3_01_derived_00_01_other_derived_00_01false_01_4.html", null ],
     [ "chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structchrono__formatter.html", null ],
     [ "wpi::circular_buffer< T >", "classwpi_1_1circular__buffer.html", null ],
-    [ "Eigen::CleanedUpDerType< DerType >", "struct_eigen_1_1_cleaned_up_der_type.html", null ],
     [ "Eigen::internal::cleanup_index_type< T, DynamicKey, EnableIf >", "struct_eigen_1_1internal_1_1cleanup__index__type.html", null ],
     [ "Eigen::internal::cleanup_index_type< FixedInt< N >(*)(), DynamicKey >", "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_fixed_int_3_01_n_01_4_07_5_08_07_08_00_01_dynamic_key_01_4.html", null ],
     [ "Eigen::internal::cleanup_index_type< T, DynamicKey, typename internal::enable_if< internal::is_integral< T >::value >::type >", "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_t_00_01_dynamic_key_00_01typename_01intern7a7826e4073bb8eff1a4ab6dce53d0cf.html", null ],
@@ -1183,9 +1175,6 @@ var hierarchy =
     [ "wpi::FunctionPointerLikeTypeTraits< 4, ReturnT(*)(ParamTs...)>", "structwpi_1_1_function_pointer_like_type_traits.html", [
       [ "wpi::PointerLikeTypeTraits< ReturnT(*)(ParamTs...)>", "structwpi_1_1_pointer_like_type_traits_3_01_return_t_07_5_08_07_param_ts_8_8_8_08_4.html", null ]
     ] ],
-    [ "Functor", null, [
-      [ "Eigen::AutoDiffJacobian< Functor >", "class_eigen_1_1_auto_diff_jacobian.html", null ]
-    ] ],
     [ "Eigen::internal::functor_has_linear_access< Functor >", "struct_eigen_1_1internal_1_1functor__has__linear__access.html", null ],
     [ "Eigen::internal::functor_traits< T >", "struct_eigen_1_1internal_1_1functor__traits.html", null ],
     [ "Eigen::internal::functor_traits< add_assign_op< DstScalar, SrcScalar > >", "struct_eigen_1_1internal_1_1functor__traits_3_01add__assign__op_3_01_dst_scalar_00_01_src_scalar_01_4_01_4.html", null ],
@@ -1401,9 +1390,6 @@ var hierarchy =
       [ "frc::sim::XboxControllerSim", "classfrc_1_1sim_1_1_xbox_controller_sim.html", null ]
     ] ],
     [ "Eigen::GenericNumTraits< T >", "struct_eigen_1_1_generic_num_traits.html", [
-      [ "Eigen::NumTraits< NumTraits< internal::remove_all< DerType >::type::Scalar >::Real >", "struct_eigen_1_1_num_traits.html", [
-        [ "Eigen::NumTraits< AutoDiffScalar< DerType > >", "struct_eigen_1_1_num_traits_3_01_auto_diff_scalar_3_01_der_type_01_4_01_4.html", null ]
-      ] ],
       [ "Eigen::NumTraits< typenameMatrixType::Scalar >", "struct_eigen_1_1_num_traits.html", null ],
       [ "Eigen::NumTraits< T >", "struct_eigen_1_1_num_traits.html", null ]
     ] ],
@@ -1865,10 +1851,6 @@ var hierarchy =
     [ "Eigen::VectorwiseOp< ExpressionType, Direction >::LpNormReturnType< p >", "struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html", null ],
     [ "frc::LTVDifferentialDriveController", "classfrc_1_1_l_t_v_differential_drive_controller.html", null ],
     [ "frc::LTVUnicycleController", "classfrc_1_1_l_t_v_unicycle_controller.html", null ],
-    [ "Eigen::internal::make_coherent_impl< A, B >", "struct_eigen_1_1internal_1_1make__coherent__impl.html", null ],
-    [ "Eigen::internal::make_coherent_impl< A, Matrix< B_Scalar, B_Rows, B_Cols, B_Options, B_MaxRows, B_MaxCols > >", "struct_eigen_1_1internal_1_1make__coherent__impl_3_01_a_00_01_matrix_3_01_b___scalar_00_01_b___r2332686f3180c2f2d848d1b5e8319450.html", null ],
-    [ "Eigen::internal::make_coherent_impl< Matrix< A_Scalar, A_Rows, A_Cols, A_Options, A_MaxRows, A_MaxCols >, B >", "struct_eigen_1_1internal_1_1make__coherent__impl_3_01_matrix_3_01_a___scalar_00_01_a___rows_00_0aa8f55819fa60ac5751cc2cbbaa58000.html", null ],
-    [ "Eigen::internal::make_coherent_impl< Matrix< A_Scalar, A_Rows, A_Cols, A_Options, A_MaxRows, A_MaxCols >, Matrix< B_Scalar, B_Rows, B_Cols, B_Options, B_MaxRows, B_MaxCols > >", "struct_eigen_1_1internal_1_1make__coherent__impl_3_01_matrix_3_01_a___scalar_00_01_a___rows_00_02c107ffcc218caac688e11f3e382ff61.html", null ],
     [ "Eigen::internal::make_integer< T >", "struct_eigen_1_1internal_1_1make__integer.html", null ],
     [ "Eigen::internal::make_integer< bfloat16 >", "struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html", null ],
     [ "Eigen::internal::make_integer< double >", "struct_eigen_1_1internal_1_1make__integer_3_01double_01_4.html", null ],
@@ -2448,7 +2430,6 @@ var hierarchy =
     [ "frc::sim::RelaySim", "classfrc_1_1sim_1_1_relay_sim.html", null ],
     [ "Eigen::internal::remove_all< T >", "struct_eigen_1_1internal_1_1remove__all.html", null ],
     [ "Eigen::internal::remove_all< const T >", "struct_eigen_1_1internal_1_1remove__all_3_01const_01_t_01_4.html", null ],
-    [ "Eigen::internal::remove_all< DerivativeType >", "struct_eigen_1_1internal_1_1remove__all.html", null ],
     [ "Eigen::internal::remove_all< T & >", "struct_eigen_1_1internal_1_1remove__all_3_01_t_01_6_01_4.html", null ],
     [ "Eigen::internal::remove_all< T * >", "struct_eigen_1_1internal_1_1remove__all_3_01_t_01_5_01_4.html", null ],
     [ "Eigen::internal::remove_all< T const & >", "struct_eigen_1_1internal_1_1remove__all_3_01_t_01const_01_6_01_4.html", null ],
@@ -2653,11 +2634,9 @@ var hierarchy =
     [ "Eigen::internal::scalar_tan_op< Scalar >", "struct_eigen_1_1internal_1_1scalar__tan__op.html", null ],
     [ "Eigen::internal::scalar_tanh_op< Scalar >", "struct_eigen_1_1internal_1_1scalar__tanh__op.html", null ],
     [ "Eigen::internal::scalar_zeta_op< Scalar >", "struct_eigen_1_1internal_1_1scalar__zeta__op.html", null ],
-    [ "Eigen::ScalarBinaryOpTraits< AutoDiffScalar< DerType >, typename DerType::Scalar, BinOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01_auto_diff_scalar_3_01_der_type_01_4_00_01typename_8029eb4becd448e88ba5e4cb75a4dd2b.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< T, T, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01_t_00_01_t_00_01_binary_op_01_4.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< T, typename NumTraits< typename internal::enable_if< NumTraits< T >::IsComplex, T >::type >::Real, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01_t_00_01typename_01_num_traits_3_01typename_01inter6d9b2ba43c8f599c26e1e5ea9727da7f.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< T, void, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01_t_00_01void_00_01_binary_op_01_4.html", null ],
-    [ "Eigen::ScalarBinaryOpTraits< typename DerType::Scalar, AutoDiffScalar< DerType >, BinOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01typename_01_der_type_1_1_scalar_00_01_auto_diff_sca5c26207d328bbaa3069a04f38248d36b.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< typename NumTraits< typename internal::enable_if< NumTraits< T >::IsComplex, T >::type >::Real, T, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01typename_01_num_traits_3_01typename_01internal_1_1e682c29bad5c4221eece44bbf2be041d0.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< void, T, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01void_00_01_t_00_01_binary_op_01_4.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< void, void, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01void_00_01void_00_01_binary_op_01_4.html", null ],
@@ -3160,7 +3139,6 @@ var hierarchy =
       [ "Eigen::internal::traits< SVDBase< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_s_v_d_base_3_01_derived_01_4_01_4.html", null ],
       [ "Eigen::internal::traits< Transpose< TranspositionsBase< Derived > > >", "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_transpositions_base_3_01_derived_01_4_01_4_01_4.html", null ]
     ] ],
-    [ "Eigen::internal::traits< DerType >", "struct_eigen_1_1internal_1_1traits.html", null ],
     [ "Eigen::internal::traits< DiagonalMatrix >", "struct_eigen_1_1internal_1_1traits.html", null ],
     [ "Eigen::internal::traits< DiagonalWrapper< _DiagonalVectorType > >", "struct_eigen_1_1internal_1_1traits_3_01_diagonal_wrapper_3_01___diagonal_vector_type_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< ExpressionType >", "struct_eigen_1_1internal_1_1traits.html", [
@@ -3879,9 +3857,5 @@ var hierarchy =
     [ "wpi::wpi_shutdown_obj", "structwpi_1_1wpi__shutdown__obj.html", null ],
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
     [ "write_int_data< Char >", "structwrite__int__data.html", null ],
-    [ "year_month_day", "classyear__month__day.html", null ],
-    [ "numeric_limits", null, [
-      [ "std::numeric_limits< Eigen::AutoDiffScalar< T & > >", "classstd_1_1numeric__limits_3_01_eigen_1_1_auto_diff_scalar_3_01_t_01_6_01_4_01_4.html", null ],
-      [ "std::numeric_limits< Eigen::AutoDiffScalar< T > >", "classstd_1_1numeric__limits_3_01_eigen_1_1_auto_diff_scalar_3_01_t_01_4_01_4.html", null ]
-    ] ]
+    [ "year_month_day", "classyear__month__day.html", null ]
 ];

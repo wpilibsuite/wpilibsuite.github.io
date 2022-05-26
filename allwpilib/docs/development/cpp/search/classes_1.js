@@ -147,14 +147,7 @@ var searchData=
   ['assignmentkind_3c_20triangularshape_2c_20denseshape_20_3e_144',['AssignmentKind&lt; TriangularShape, DenseShape &gt;',['../struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_dense_shape_01_4.html',1,'Eigen::internal']]],
   ['assignmentkind_3c_20triangularshape_2c_20triangularshape_20_3e_145',['AssignmentKind&lt; TriangularShape, TriangularShape &gt;',['../struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_triangular_shape_01_4.html',1,'Eigen::internal']]],
   ['asynchronousinterrupt_146',['AsynchronousInterrupt',['../classfrc_1_1_asynchronous_interrupt.html',1,'frc']]],
-  ['auto_5fdiff_5fspecial_5fop_147',['auto_diff_special_op',['../struct_eigen_1_1internal_1_1auto__diff__special__op.html',1,'Eigen::internal']]],
-  ['auto_5fdiff_5fspecial_5fop_3c_20derivativetype_2c_20_21internal_3a_3ais_5fsame_3c_20internal_3a_3atraits_3c_20internal_3a_3aremove_5fall_3c_20derivativetype_20_3e_3a_3atype_20_3e_3a_3ascalar_2c_20numtraits_3c_20internal_3a_3atraits_3c_20internal_3a_3aremove_5fall_3c_20derivativetype_20_3e_3a_3atype_20_3e_3a_3ascalar_20_3e_3a_3areal_20_3e_3a_3avalue_20_3e_148',['auto_diff_special_op&lt; DerivativeType, !internal::is_same&lt; internal::traits&lt; internal::remove_all&lt; DerivativeType &gt;::type &gt;::Scalar, NumTraits&lt; internal::traits&lt; internal::remove_all&lt; DerivativeType &gt;::type &gt;::Scalar &gt;::Real &gt;::value &gt;',['../struct_eigen_1_1internal_1_1auto__diff__special__op.html',1,'Eigen::internal']]],
-  ['auto_5fdiff_5fspecial_5fop_3c_20derivativetype_2c_20false_20_3e_149',['auto_diff_special_op&lt; DerivativeType, false &gt;',['../struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01false_01_4.html',1,'Eigen::internal']]],
-  ['auto_5fdiff_5fspecial_5fop_3c_20derivativetype_2c_20true_20_3e_150',['auto_diff_special_op&lt; DerivativeType, true &gt;',['../struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html',1,'Eigen::internal']]],
-  ['auto_5fid_151',['auto_id',['../structauto__id.html',1,'']]],
-  ['autodiffjacobian_152',['AutoDiffJacobian',['../class_eigen_1_1_auto_diff_jacobian.html',1,'Eigen']]],
-  ['autodiffscalar_153',['AutoDiffScalar',['../class_eigen_1_1_auto_diff_scalar.html',1,'Eigen']]],
-  ['autodiffvector_154',['AutoDiffVector',['../class_eigen_1_1_auto_diff_vector.html',1,'Eigen']]],
-  ['axis_155',['Axis',['../structfrc_1_1_p_s4_controller_1_1_axis.html',1,'frc::PS4Controller::Axis'],['../structfrc_1_1_xbox_controller_1_1_axis.html',1,'frc::XboxController::Axis']]],
-  ['axiscamera_156',['AxisCamera',['../classcs_1_1_axis_camera.html',1,'cs']]]
+  ['auto_5fid_147',['auto_id',['../structauto__id.html',1,'']]],
+  ['axis_148',['Axis',['../structfrc_1_1_p_s4_controller_1_1_axis.html',1,'frc::PS4Controller::Axis'],['../structfrc_1_1_xbox_controller_1_1_axis.html',1,'frc::XboxController::Axis']]],
+  ['axiscamera_149',['AxisCamera',['../classcs_1_1_axis_camera.html',1,'cs']]]
 ];

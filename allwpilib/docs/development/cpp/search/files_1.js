@@ -34,7 +34,7 @@ var searchData=
   ['analogoutput_2eh_31',['AnalogOutput.h',['../hal_2src_2main_2native_2include_2hal_2_analog_output_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_analog_output_8h.html',1,'(Global Namespace)']]],
   ['analogoutputsim_2eh_32',['AnalogOutputSim.h',['../_analog_output_sim_8h.html',1,'']]],
   ['analogpotentiometer_2eh_33',['AnalogPotentiometer.h',['../_analog_potentiometer_8h.html',1,'']]],
-  ['analogtrigger_2eh_34',['AnalogTrigger.h',['../hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_analog_trigger_8h.html',1,'(Global Namespace)']]],
+  ['analogtrigger_2eh_34',['AnalogTrigger.h',['../wpilibc_2src_2main_2native_2include_2frc_2_analog_trigger_8h.html',1,'(Global Namespace)'],['../hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html',1,'(Global Namespace)']]],
   ['analogtriggerdata_2eh_35',['AnalogTriggerData.h',['../_analog_trigger_data_8h.html',1,'']]],
   ['analogtriggeroutput_2eh_36',['AnalogTriggerOutput.h',['../_analog_trigger_output_8h.html',1,'']]],
   ['analogtriggersim_2eh_37',['AnalogTriggerSim.h',['../_analog_trigger_sim_8h.html',1,'']]],
@@ -47,8 +47,8 @@ var searchData=
   ['args_2eh_44',['args.h',['../args_8h.html',1,'']]],
   ['arithmeticsequence_2eh_45',['ArithmeticSequence.h',['../_arithmetic_sequence_8h.html',1,'']]],
   ['armfeedforward_2eh_46',['ArmFeedforward.h',['../_arm_feedforward_8h.html',1,'']]],
-  ['array_2eh_47',['array.h',['../wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html',1,'']]],
-  ['array_2eh_48',['Array.h',['../wpimath_2src_2main_2native_2eigeninclude_2_eigen_2src_2_core_2array_8h.html',1,'']]],
+  ['array_2eh_47',['Array.h',['../wpimath_2src_2main_2native_2eigeninclude_2_eigen_2src_2_core_2array_8h.html',1,'']]],
+  ['array_2eh_48',['array.h',['../wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html',1,'']]],
   ['arraybase_2eh_49',['ArrayBase.h',['../_array_base_8h.html',1,'']]],
   ['arraycwisebinaryops_2eh_50',['ArrayCwiseBinaryOps.h',['../_array_cwise_binary_ops_8h.html',1,'']]],
   ['arraycwiseunaryops_2eh_51',['ArrayCwiseUnaryOps.h',['../_array_cwise_unary_ops_8h.html',1,'']]],
@@ -56,9 +56,5 @@ var searchData=
   ['assign_2eh_53',['Assign.h',['../_assign_8h.html',1,'']]],
   ['assignevaluator_2eh_54',['AssignEvaluator.h',['../_assign_evaluator_8h.html',1,'']]],
   ['assignmentfunctors_2eh_55',['AssignmentFunctors.h',['../_assignment_functors_8h.html',1,'']]],
-  ['asynchronousinterrupt_2eh_56',['AsynchronousInterrupt.h',['../_asynchronous_interrupt_8h.html',1,'']]],
-  ['autodiff_57',['AutoDiff',['../_auto_diff.html',1,'']]],
-  ['autodiffjacobian_2eh_58',['AutoDiffJacobian.h',['../_auto_diff_jacobian_8h.html',1,'']]],
-  ['autodiffscalar_2eh_59',['AutoDiffScalar.h',['../_auto_diff_scalar_8h.html',1,'']]],
-  ['autodiffvector_2eh_60',['AutoDiffVector.h',['../_auto_diff_vector_8h.html',1,'']]]
+  ['asynchronousinterrupt_2eh_56',['AsynchronousInterrupt.h',['../_asynchronous_interrupt_8h.html',1,'']]]
 ];

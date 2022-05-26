@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-109-g553b2a3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-111-gdb2e1d1</span>
    </div>
   </td>
  </tr>
@@ -948,7 +948,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>  <span class="keyword">static_assert</span>(<a class="code hl_function" href="namespacewpi.html#ab337d9f021792437e222ab8de869770c">isPowerOf2_64</a>(InlineBuckets),</div>
 <div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>                <span class="stringliteral">&quot;InlineBuckets must be a power of 2.&quot;</span>);</div>
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>  <span class="keywordtype">unsigned</span> <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> : 1;</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>  <span class="keywordtype">unsigned</span> <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> : 1;</div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  <span class="keywordtype">unsigned</span> NumEntries : 31;</div>
 <div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>  <span class="keywordtype">unsigned</span> NumTombstones;</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span> </div>
@@ -998,7 +998,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span> </div>
 <div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>    <span class="keyword">const</span> KeyT EmptyKey = this-&gt;<a class="code hl_function" href="classwpi_1_1_dense_map_base.html#a312a1f7763a65efacc382514ae815879">getEmptyKey</a>();</div>
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>    <span class="keyword">const</span> KeyT TombstoneKey = this-&gt;<a class="code hl_function" href="classwpi_1_1_dense_map_base.html#abdb999a6a7436eb015e2212d4a030c00">getTombstoneKey</a>();</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; RHS.Small) {</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; RHS.Small) {</div>
 <div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>      <span class="comment">// If we&#39;re swapping inline bucket arrays, we have to cope with some of</span></div>
 <div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>      <span class="comment">// the tricky bits of DenseMap&#39;s storage system: the buckets are not</span></div>
 <div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>      <span class="comment">// fully initialized. Thus we swap every key, but we may have</span></div>
@@ -1027,14 +1027,14 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>      }</div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    }</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; !RHS.Small) {</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    <span class="keywordflow">if</span> (!<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; !RHS.Small) {</div>
 <div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>      <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(getLargeRep()-&gt;Buckets, RHS.getLargeRep()-&gt;Buckets);</div>
 <div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>      <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(getLargeRep()-&gt;NumBuckets, RHS.getLargeRep()-&gt;NumBuckets);</div>
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    }</div>
 <div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span> </div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a> &amp;SmallSide = <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> ? *this : RHS;</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a> &amp;LargeSide = <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> ? RHS : *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a> &amp;SmallSide = <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> ? *this : RHS;</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a> &amp;LargeSide = <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> ? RHS : *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span> </div>
 <div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    <span class="comment">// First stash the large side&#39;s rep and move the small side across.</span></div>
 <div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    LargeRep TmpRep = std::move(*LargeSide.getLargeRep());</div>
@@ -1079,18 +1079,18 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_dense_map.html#a7bc235875a23bb89acd0da496d95f3d1">  983</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_dense_map.html#a7bc235875a23bb89acd0da496d95f3d1">copyFrom</a>(<span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a>&amp; other) {</div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    this-&gt;<a class="code hl_function" href="classwpi_1_1_dense_map_base.html#a9187c05b9adf372f4adf3d2ce4bf407f">destroyAll</a>();</div>
 <div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    deallocateBuckets();</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>    <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>    <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>    <span class="keywordflow">if</span> (other.getNumBuckets() &gt; InlineBuckets) {</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>      <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>      <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>      <span class="keyword">new</span> (getLargeRep()) LargeRep(allocateBuckets(other.getNumBuckets()));</div>
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>    }</div>
 <div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>    this-&gt;BaseT::copyFrom(other);</div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>  }</div>
 <div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span> </div>
 <div class="line"><a id="l00994" name="l00994"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_dense_map.html#a7f898c92bb76336e8a909ada0c9be720">  994</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_dense_map.html#a7f898c92bb76336e8a909ada0c9be720">init</a>(<span class="keywordtype">unsigned</span> InitBuckets) {</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>    <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>    <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>    <span class="keywordflow">if</span> (InitBuckets &gt; InlineBuckets) {</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>      <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>      <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>      <span class="keyword">new</span> (getLargeRep()) LargeRep(allocateBuckets(InitBuckets));</div>
 <div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>    }</div>
 <div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    this-&gt;BaseT::initEmpty();</div>
@@ -1100,7 +1100,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    <span class="keywordflow">if</span> (AtLeast &gt; InlineBuckets)</div>
 <div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>      AtLeast = std::max&lt;unsigned&gt;(64, <a class="code hl_function" href="namespacewpi.html#a70c11fbdfabf91b962c2d6d49a243207">NextPowerOf2</a>(AtLeast-1));</div>
 <div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span> </div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a>) {</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a>) {</div>
 <div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>      <span class="comment">// First move the inline buckets into a temporary storage.</span></div>
 <div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>      <a class="code hl_struct" href="structwpi_1_1_aligned_char_array_union.html">AlignedCharArrayUnion&lt;BucketT[InlineBuckets]&gt;</a> TmpStorage;</div>
 <div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>      BucketT *TmpBegin = <span class="keyword">reinterpret_cast&lt;</span>BucketT *<span class="keyword">&gt;</span>(&amp;TmpStorage);</div>
@@ -1127,7 +1127,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>      <span class="comment">// and grow() is used to remove them. Usually we always switch to the</span></div>
 <div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>      <span class="comment">// large rep here.</span></div>
 <div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>      <span class="keywordflow">if</span> (AtLeast &gt; InlineBuckets) {</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>        <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>        <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>        <span class="keyword">new</span> (getLargeRep()) LargeRep(allocateBuckets(AtLeast));</div>
 <div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>      }</div>
 <div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>      this-&gt;<a class="code hl_function" href="classwpi_1_1_dense_map_base.html#ab9085ad7fa5e6feee060a76a83356d97">moveFromOldBuckets</a>(TmpBegin, TmpEnd);</div>
@@ -1137,7 +1137,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>    LargeRep OldRep = std::move(*getLargeRep());</div>
 <div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>    getLargeRep()-&gt;~LargeRep();</div>
 <div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>    <span class="keywordflow">if</span> (AtLeast &lt;= InlineBuckets) {</div>
-<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>      <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>      <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>      <span class="keyword">new</span> (getLargeRep()) LargeRep(allocateBuckets(AtLeast));</div>
 <div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>    }</div>
@@ -1160,8 +1160,8 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>      <span class="keywordflow">if</span> (NewNumBuckets &gt; InlineBuckets &amp;&amp; NewNumBuckets &lt; 64u)</div>
 <div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>        NewNumBuckets = 64;</div>
 <div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>    }</div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    <span class="keywordflow">if</span> ((<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; NewNumBuckets &lt;= InlineBuckets) ||</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>        (!<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; NewNumBuckets == getLargeRep()-&gt;NumBuckets)) {</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    <span class="keywordflow">if</span> ((<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; NewNumBuckets &lt;= InlineBuckets) ||</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>        (!<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> &amp;&amp; NewNumBuckets == getLargeRep()-&gt;NumBuckets)) {</div>
 <div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>      this-&gt;BaseT::initEmpty();</div>
 <div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    }</div>
@@ -1190,7 +1190,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>  }</div>
 <div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span> </div>
 <div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>  <span class="keyword">const</span> BucketT *getInlineBuckets()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    assert(<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a>);</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    assert(<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a>);</div>
 <div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>    <span class="comment">// Note that this cast does not violate aliasing rules as we assert that</span></div>
 <div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    <span class="comment">// the memory&#39;s dynamic type is the small, inline bucket buffer, and the</span></div>
 <div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>    <span class="comment">// &#39;storage&#39; is a POD containing a char buffer.</span></div>
@@ -1203,7 +1203,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>  }</div>
 <div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span> </div>
 <div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>  <span class="keyword">const</span> LargeRep *getLargeRep()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    assert(!<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a>);</div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    assert(!<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a>);</div>
 <div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>    <span class="comment">// Note, same rule about aliasing as with getInlineBuckets.</span></div>
 <div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>LargeRep *<span class="keyword">&gt;</span>(&amp;storage);</div>
 <div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>  }</div>
@@ -1214,7 +1214,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>  }</div>
 <div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span> </div>
 <div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>  <span class="keyword">const</span> BucketT *getBuckets()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> ? getInlineBuckets() : getLargeRep()-&gt;Buckets;</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> ? getInlineBuckets() : getLargeRep()-&gt;Buckets;</div>
 <div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>  }</div>
 <div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span> </div>
 <div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>  BucketT *getBuckets() {</div>
@@ -1223,11 +1223,11 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>  }</div>
 <div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span> </div>
 <div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>  <span class="keywordtype">unsigned</span> getNumBuckets()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a> ? InlineBuckets : getLargeRep()-&gt;NumBuckets;</div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a> ? InlineBuckets : getLargeRep()-&gt;NumBuckets;</div>
 <div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>  }</div>
 <div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span> </div>
 <div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>  <span class="keywordtype">void</span> deallocateBuckets() {</div>
-<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Small</a>)</div>
+<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>    <span class="keywordflow">if</span> (<a class="code hl_enumvalue" href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Small</a>)</div>
 <div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span> </div>
 <div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>    <a class="code hl_function" href="namespacewpi.html#a693165287d8a8a5159fd739216188620">deallocate_buffer</a>(getLargeRep()-&gt;Buckets,</div>
@@ -1452,7 +1452,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="ttc" id="aclasswpi_1_1_small_dense_map_html_ae912a1913db2d2f3539f557a1bbb4955"><div class="ttname"><a href="classwpi_1_1_small_dense_map.html#ae912a1913db2d2f3539f557a1bbb4955">wpi::SmallDenseMap::SmallDenseMap</a></div><div class="ttdeci">SmallDenseMap(std::initializer_list&lt; typename BaseT::value_type &gt; Vals)</div><div class="ttdef"><b>Definition:</b> DenseMap.h:889</div></div>
 <div class="ttc" id="aclasswpi_1_1_small_dense_map_html_af58026debb7850b8ef2fecc5afc514c6"><div class="ttname"><a href="classwpi_1_1_small_dense_map.html#af58026debb7850b8ef2fecc5afc514c6">wpi::SmallDenseMap::operator=</a></div><div class="ttdeci">SmallDenseMap &amp; operator=(const SmallDenseMap &amp;other)</div><div class="ttdef"><b>Definition:</b> DenseMap.h:969</div></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1131</div></div>
-<div class="ttc" id="anamespace_eigen_html_a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d"><div class="ttname"><a href="namespace_eigen.html#a33f3298b62cddbfb83bcd016d79680aaa8366c3345cf750dd60bc6d25aa98149d">Eigen::Small</a></div><div class="ttdeci">@ Small</div><div class="ttdef"><b>Definition:</b> GeneralProduct.h:18</div></div>
+<div class="ttc" id="anamespace_eigen_html_a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d"><div class="ttname"><a href="namespace_eigen.html#a1f75e264ccdb919d98d69f6c3df0b5f3a8366c3345cf750dd60bc6d25aa98149d">Eigen::Small</a></div><div class="ttdeci">@ Small</div><div class="ttdef"><b>Definition:</b> GeneralProduct.h:18</div></div>
 <div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> compile.h:14</div></div>
 <div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:178</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Errc.h:83</div></div>
@@ -1482,7 +1482,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_dense_map_8h.html">DenseMap.h</a></li>
-    <li class="footer">Generated on Wed May 25 2022 04:54:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu May 26 2022 16:06:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

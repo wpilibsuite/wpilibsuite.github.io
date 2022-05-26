@@ -32,7 +32,6 @@ var modules =
     [ "Unit Math", "group___unit_math.html", "group___unit_math" ],
     [ "Explicit Conversion", "group___conversion.html", "group___conversion" ],
     [ "Type Traits", "group___type_traits.html", "group___type_traits" ],
-    [ "Auto Diff module", "group___auto_diff___module.html", null ],
     [ "Matrix functions module", "group___matrix_functions___module.html", "group___matrix_functions___module" ],
     [ "Cholesky module", "group___cholesky___module.html", "group___cholesky___module" ],
     [ "Jacobi module", "group___jacobi___module.html", "group___jacobi___module" ],
