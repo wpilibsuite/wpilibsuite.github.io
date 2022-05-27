@@ -1,7 +1,7 @@
 var classwpi_1_1_string_map_entry =
 [
-    [ "Create", "classwpi_1_1_string_map_entry.html#a19c3a65954fbbd9ecae76510ba5f6e26", null ],
-    [ "Destroy", "classwpi_1_1_string_map_entry.html#ae54c7e2deb581ab1b6a445f9f4ed923f", null ],
+    [ "Create", "classwpi_1_1_string_map_entry.html#a0b5bf543ae33139622ddb505098abfb6", null ],
+    [ "Destroy", "classwpi_1_1_string_map_entry.html#afbd39775993c0b9fa7c8c0b42b0bb73c", null ],
     [ "first", "classwpi_1_1_string_map_entry.html#a277954f6b1482cc07df924743eafdfe5", null ],
     [ "getKey", "classwpi_1_1_string_map_entry.html#a975b1de6660bc4fef0a4e6456a1dbcdf", null ],
     [ "getKeyData", "classwpi_1_1_string_map_entry.html#a6747815a19e25fc1bd91193608643cbd", null ],

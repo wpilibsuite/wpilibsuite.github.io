@@ -7,6 +7,10 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "AlignOf.h", "_align_of_8h.html", [
       [ "wpi::AlignedCharArrayUnion< T, Ts >", "structwpi_1_1_aligned_char_array_union.html", "structwpi_1_1_aligned_char_array_union" ]
     ] ],
+    [ "AllocatorBase.h", "_allocator_base_8h.html", [
+      [ "wpi::AllocatorBase< DerivedT >", "classwpi_1_1_allocator_base.html", "classwpi_1_1_allocator_base" ],
+      [ "wpi::MallocAllocator", "classwpi_1_1_malloc_allocator.html", "classwpi_1_1_malloc_allocator" ]
+    ] ],
     [ "array.h", "wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html", "wpiutil_2src_2main_2native_2include_2wpi_2array_8h" ],
     [ "Base64.h", "_base64_8h.html", "_base64_8h" ],
     [ "CallbackManager.h", "_callback_manager_8h.html", [
@@ -40,6 +44,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "DenseMap.h", "_dense_map_8h.html", "_dense_map_8h" ],
     [ "DenseMapInfo.h", "_dense_map_info_8h.html", "_dense_map_info_8h" ],
     [ "deprecated.h", "deprecated_8h.html", null ],
+    [ "DJB.h", "_d_j_b_8h.html", "_d_j_b_8h" ],
     [ "Endian.h", "_endian_8h.html", "_endian_8h" ],
     [ "EpochTracker.h", "_epoch_tracker_8h.html", [
       [ "wpi::DebugEpochBase", "classwpi_1_1_debug_epoch_base.html", "classwpi_1_1_debug_epoch_base" ],
@@ -126,6 +131,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
       [ "wpi::raw_os_ostream", "classwpi_1_1raw__os__ostream.html", "classwpi_1_1raw__os__ostream" ]
     ] ],
     [ "raw_ostream.h", "raw__ostream_8h.html", "raw__ostream_8h" ],
+    [ "ReverseIteration.h", "_reverse_iteration_8h.html", "_reverse_iteration_8h" ],
     [ "SafeThread.h", "_safe_thread_8h.html", "_safe_thread_8h" ],
     [ "sha1.h", "sha1_8h.html", [
       [ "wpi::SHA1", "classwpi_1_1_s_h_a1.html", "classwpi_1_1_s_h_a1" ]

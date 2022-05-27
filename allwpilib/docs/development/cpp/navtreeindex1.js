@@ -133,6 +133,8 @@ var NAVTREEINDEX1 =
 "_algorithm_8h_source.html":[6,0,12,3],
 "_align_of_8h.html":[6,0,12,4],
 "_align_of_8h_source.html":[6,0,12,4],
+"_allocator_base_8h.html":[6,0,12,5],
+"_allocator_base_8h_source.html":[6,0,12,5],
 "_analog_accelerometer_8h.html":[6,0,6,16],
 "_analog_accelerometer_8h_source.html":[6,0,6,16],
 "_analog_accumulator_8h.html":[6,0,8,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "_analog_trigger_output_8h.html":[6,0,6,23],
 "_analog_trigger_output_8h_source.html":[6,0,6,23],
 "_analog_trigger_sim_8h.html":[6,0,6,6,10],
-"_analog_trigger_sim_8h_source.html":[6,0,6,6,10],
-"_analog_trigger_type_8h.html":[6,0,6,24],
-"_analog_trigger_type_8h.html#a76b4c6f0018b90c1ef0089c6ab4e1e84":[6,0,6,24,0]
+"_analog_trigger_sim_8h_source.html":[6,0,6,6,10]
 };

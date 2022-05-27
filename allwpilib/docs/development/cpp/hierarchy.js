@@ -95,6 +95,10 @@ var hierarchy =
     [ "std::allocator", null, [
       [ "Eigen::aligned_allocator< T >", "class_eigen_1_1aligned__allocator.html", null ]
     ] ],
+    [ "wpi::AllocatorBase< DerivedT >", "classwpi_1_1_allocator_base.html", null ],
+    [ "wpi::AllocatorBase< MallocAllocator >", "classwpi_1_1_allocator_base.html", [
+      [ "wpi::MallocAllocator", "classwpi_1_1_malloc_allocator.html", null ]
+    ] ],
     [ "Eigen::internal::AllRange< XprSize >", "struct_eigen_1_1internal_1_1_all_range.html", null ],
     [ "Eigen::internal::always_void< T >", "struct_eigen_1_1internal_1_1always__void.html", null ],
     [ "frc::sim::AnalogEncoderSim", "classfrc_1_1sim_1_1_analog_encoder_sim.html", null ],
@@ -636,6 +640,14 @@ var hierarchy =
       ] ],
       [ "wpi::DenseMapBase< DerivedT, KeyT, ValueT, KeyInfoT, BucketT >", "classwpi_1_1_dense_map_base.html", [
         [ "wpi::DenseMap< KeyT, unsigned >", "classwpi_1_1_dense_map.html", null ]
+      ] ],
+      [ "wpi::SmallPtrSetImplBase", "classwpi_1_1_small_ptr_set_impl_base.html", [
+        [ "wpi::SmallPtrSetImpl< PtrType >", "classwpi_1_1_small_ptr_set_impl.html", [
+          [ "wpi::SmallPtrSet< PointeeType *, N >", "classwpi_1_1_small_ptr_set.html", [
+            [ "wpi::SmallSet< PointeeType *, N >", "classwpi_1_1_small_set_3_01_pointee_type_01_5_00_01_n_01_4.html", null ]
+          ] ],
+          [ "wpi::SmallPtrSet< PtrType, SmallSize >", "classwpi_1_1_small_ptr_set.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "units::decibel_scale< T >", "structunits_1_1decibel__scale.html", null ],
@@ -1475,7 +1487,8 @@ var hierarchy =
       [ "hal::UnlimitedHandleResource< THandle, TStruct, enumValue >", "classhal_1_1_unlimited_handle_resource.html", null ]
     ] ],
     [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1_debug_epoch_base_1_1_handle_base.html", [
-      [ "wpi::DenseMapIterator< KeyT, ValueT, KeyInfoT, Bucket, IsConst >", "classwpi_1_1_dense_map_iterator.html", null ]
+      [ "wpi::DenseMapIterator< KeyT, ValueT, KeyInfoT, Bucket, IsConst >", "classwpi_1_1_dense_map_iterator.html", null ],
+      [ "wpi::SmallPtrSetIterator< PtrTy >", "classwpi_1_1_small_ptr_set_iterator.html", null ]
     ] ],
     [ "Handler", null, [
       [ "specs_checker< Handler >", "classspecs__checker.html", null ]
@@ -2940,14 +2953,6 @@ var hierarchy =
       [ "wpi::sig::detail::SlotBase< Args >", "classwpi_1_1sig_1_1detail_1_1_slot_base.html", null ]
     ] ],
     [ "wpi::sig::detail::SlotTracked< typename, typename,... >", "classwpi_1_1sig_1_1detail_1_1_slot_tracked.html", null ],
-    [ "wpi::SmallPtrSetImplBase", "classwpi_1_1_small_ptr_set_impl_base.html", [
-      [ "wpi::SmallPtrSetImpl< PtrType >", "classwpi_1_1_small_ptr_set_impl.html", [
-        [ "wpi::SmallPtrSet< PointeeType *, N >", "classwpi_1_1_small_ptr_set.html", [
-          [ "wpi::SmallSet< PointeeType *, N >", "classwpi_1_1_small_set_3_01_pointee_type_01_5_00_01_n_01_4.html", null ]
-        ] ],
-        [ "wpi::SmallPtrSet< PtrType, SmallSize >", "classwpi_1_1_small_ptr_set.html", null ]
-      ] ]
-    ] ],
     [ "wpi::SmallPtrSetIteratorImpl", "classwpi_1_1_small_ptr_set_iterator_impl.html", [
       [ "wpi::SmallPtrSetIterator< PtrTy >", "classwpi_1_1_small_ptr_set_iterator.html", null ]
     ] ],
@@ -3068,7 +3073,7 @@ var hierarchy =
       [ "wpi::StringMapEntryStorage< std::nullopt_t >", "classwpi_1_1_string_map_entry_storage_3_01std_1_1nullopt__t_01_4.html", null ]
     ] ],
     [ "wpi::StringMapImpl", "classwpi_1_1_string_map_impl.html", [
-      [ "wpi::StringMap< ValueTy >", "classwpi_1_1_string_map.html", null ]
+      [ "wpi::StringMap< ValueTy, AllocatorTy >", "classwpi_1_1_string_map.html", null ]
     ] ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, DenseShape, OuterProduct >::sub", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_de81a9bc57ab96e388cf835587b3174f05.html", null ],
     [ "Eigen::internal::sub_assign_op< DstScalar, SrcScalar >", "struct_eigen_1_1internal_1_1sub__assign__op.html", null ],

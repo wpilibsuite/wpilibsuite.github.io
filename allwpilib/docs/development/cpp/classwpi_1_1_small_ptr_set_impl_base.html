@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-111-gdb2e1d1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-112-g3e94805</span>
    </div>
   </td>
  </tr>
@@ -113,10 +113,11 @@ Inheritance diagram for wpi::SmallPtrSetImplBase:</div>
  <div class="center">
   <img src="classwpi_1_1_small_ptr_set_impl_base.png" usemap="#wpi::SmallPtrSetImplBase_map" alt=""/>
   <map id="wpi::SmallPtrSetImplBase_map" name="wpi::SmallPtrSetImplBase_map">
-<area href="classwpi_1_1_small_ptr_set_impl.html" title="A templated base class for SmallPtrSet which provides the typesafe interface that is common across al..." alt="wpi::SmallPtrSetImpl&lt; PtrType &gt;" shape="rect" coords="121,56,353,80"/>
-<area href="classwpi_1_1_small_ptr_set.html" alt="wpi::SmallPtrSet&lt; PointeeType *, N &gt;" shape="rect" coords="0,112,232,136"/>
-<area href="classwpi_1_1_small_ptr_set.html" title="SmallPtrSet - This class implements a set which is optimized for holding SmallSize or less elements." alt="wpi::SmallPtrSet&lt; PtrType, SmallSize &gt;" shape="rect" coords="242,112,474,136"/>
-<area href="classwpi_1_1_small_set_3_01_pointee_type_01_5_00_01_n_01_4.html" title="If this set is of pointer values, transparently switch over to using SmallPtrSet for performance." alt="wpi::SmallSet&lt; PointeeType *, N &gt;" shape="rect" coords="0,168,232,192"/>
+<area href="classwpi_1_1_debug_epoch_base.html" title="A base class for data structure classes wishing to make iterators (&quot;handles&quot;) pointing into themselve..." alt="wpi::DebugEpochBase" shape="rect" coords="121,0,353,24"/>
+<area href="classwpi_1_1_small_ptr_set_impl.html" title="A templated base class for SmallPtrSet which provides the typesafe interface that is common across al..." alt="wpi::SmallPtrSetImpl&lt; PtrType &gt;" shape="rect" coords="121,112,353,136"/>
+<area href="classwpi_1_1_small_ptr_set.html" alt="wpi::SmallPtrSet&lt; PointeeType *, N &gt;" shape="rect" coords="0,168,232,192"/>
+<area href="classwpi_1_1_small_ptr_set.html" title="SmallPtrSet - This class implements a set which is optimized for holding SmallSize or less elements." alt="wpi::SmallPtrSet&lt; PtrType, SmallSize &gt;" shape="rect" coords="242,168,474,192"/>
+<area href="classwpi_1_1_small_set_3_01_pointee_type_01_5_00_01_n_01_4.html" title="If this set is of pointer values, transparently switch over to using SmallPtrSet for performance." alt="wpi::SmallSet&lt; PointeeType *, N &gt;" shape="rect" coords="0,224,232,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -135,6 +136,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac7341a97d0cb21b09f2c772329860bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3ae2856d37571b938b59219ce0aff49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_ptr_set_impl_base.html#ac3ae2856d37571b938b59219ce0aff49">clear</a> ()</td></tr>
 <tr class="separator:ac3ae2856d37571b938b59219ce0aff49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwpi_1_1_debug_epoch_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_debug_epoch_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_debug_epoch_base.html">wpi::DebugEpochBase</a></td></tr>
+<tr class="memitem:a56c7baf9700920d0c6243b5dea37eb1e inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_debug_epoch_base.html#a56c7baf9700920d0c6243b5dea37eb1e">DebugEpochBase</a> ()</td></tr>
+<tr class="separator:a56c7baf9700920d0c6243b5dea37eb1e inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a152a9f2839bd8c3b275520902cdf8944 inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_debug_epoch_base.html#a152a9f2839bd8c3b275520902cdf8944">incrementEpoch</a> ()</td></tr>
+<tr class="memdesc:a152a9f2839bd8c3b275520902cdf8944 inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calling incrementEpoch invalidates all handles pointing into the calling instance.  <a href="classwpi_1_1_debug_epoch_base.html#a152a9f2839bd8c3b275520902cdf8944">More...</a><br /></td></tr>
+<tr class="separator:a152a9f2839bd8c3b275520902cdf8944 inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54237a8793e15f16f377a6a0333abcad inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_debug_epoch_base.html#a54237a8793e15f16f377a6a0333abcad">~DebugEpochBase</a> ()</td></tr>
+<tr class="memdesc:a54237a8793e15f16f377a6a0333abcad inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor calls incrementEpoch to make use-after-free bugs more likely to crash deterministically.  <a href="classwpi_1_1_debug_epoch_base.html#a54237a8793e15f16f377a6a0333abcad">More...</a><br /></td></tr>
+<tr class="separator:a54237a8793e15f16f377a6a0333abcad inherit pub_methods_classwpi_1_1_debug_epoch_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -865,7 +875,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_small_ptr_set_impl_base.html">SmallPtrSetImplBase</a></li>
-    <li class="footer">Generated on Thu May 26 2022 16:06:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 27 2022 20:44:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

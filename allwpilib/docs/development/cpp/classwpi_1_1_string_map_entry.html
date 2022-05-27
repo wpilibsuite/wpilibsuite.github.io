@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-111-gdb2e1d1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.4.1-112-g3e94805</span>
    </div>
   </td>
  </tr>
@@ -123,9 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6747815a19e25fc1bd91193608643cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a277954f6b1482cc07df924743eafdfe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry.html#a277954f6b1482cc07df924743eafdfe5">first</a> () const</td></tr>
 <tr class="separator:a277954f6b1482cc07df924743eafdfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae54c7e2deb581ab1b6a445f9f4ed923f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry.html#ae54c7e2deb581ab1b6a445f9f4ed923f">Destroy</a> ()</td></tr>
-<tr class="memdesc:ae54c7e2deb581ab1b6a445f9f4ed923f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy - Destroy this <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a>, releasing memory back to the specified allocator.  <a href="classwpi_1_1_string_map_entry.html#ae54c7e2deb581ab1b6a445f9f4ed923f">More...</a><br /></td></tr>
-<tr class="separator:ae54c7e2deb581ab1b6a445f9f4ed923f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd39775993c0b9fa7c8c0b42b0bb73c"><td class="memTemplParams" colspan="2">template&lt;typename AllocatorTy &gt; </td></tr>
+<tr class="memitem:afbd39775993c0b9fa7c8c0b42b0bb73c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry.html#afbd39775993c0b9fa7c8c0b42b0bb73c">Destroy</a> (AllocatorTy &amp;allocator)</td></tr>
+<tr class="memdesc:afbd39775993c0b9fa7c8c0b42b0bb73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy - Destroy this <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a>, releasing memory back to the specified allocator.  <a href="classwpi_1_1_string_map_entry.html#afbd39775993c0b9fa7c8c0b42b0bb73c">More...</a><br /></td></tr>
+<tr class="separator:afbd39775993c0b9fa7c8c0b42b0bb73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_string_map_entry_storage"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_string_map_entry_storage')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_string_map_entry_storage.html">wpi::StringMapEntryStorage&lt; ValueTy &gt;</a></td></tr>
 <tr class="memitem:a4a94d60b31797dc0458e00f84c110d75 inherit pub_methods_classwpi_1_1_string_map_entry_storage"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry_storage.html#a4a94d60b31797dc0458e00f84c110d75">StringMapEntryStorage</a> (size_t keyLength)</td></tr>
 <tr class="separator:a4a94d60b31797dc0458e00f84c110d75 inherit pub_methods_classwpi_1_1_string_map_entry_storage"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +149,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a19c3a65954fbbd9ecae76510ba5f6e26"><td class="memTemplParams" colspan="2">template&lt;typename... InitTy&gt; </td></tr>
-<tr class="memitem:a19c3a65954fbbd9ecae76510ba5f6e26"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry.html#a19c3a65954fbbd9ecae76510ba5f6e26">Create</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, InitTy &amp;&amp;... initVals)</td></tr>
-<tr class="memdesc:a19c3a65954fbbd9ecae76510ba5f6e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key construct the value using <code>InitiVals</code>.  <a href="classwpi_1_1_string_map_entry.html#a19c3a65954fbbd9ecae76510ba5f6e26">More...</a><br /></td></tr>
-<tr class="separator:a19c3a65954fbbd9ecae76510ba5f6e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5bf543ae33139622ddb505098abfb6"><td class="memTemplParams" colspan="2">template&lt;typename AllocatorTy , typename... InitTy&gt; </td></tr>
+<tr class="memitem:a0b5bf543ae33139622ddb505098abfb6"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry.html#a0b5bf543ae33139622ddb505098abfb6">Create</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, AllocatorTy &amp;allocator, InitTy &amp;&amp;... initVals)</td></tr>
+<tr class="memdesc:a0b5bf543ae33139622ddb505098abfb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key construct the value using <code>InitiVals</code>.  <a href="classwpi_1_1_string_map_entry.html#a0b5bf543ae33139622ddb505098abfb6">More...</a><br /></td></tr>
+<tr class="separator:a0b5bf543ae33139622ddb505098abfb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07f5c4ec4fe290b04b6e9c1a80c26679"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry.html#a07f5c4ec4fe290b04b6e9c1a80c26679">GetStringMapEntryFromKeyData</a> (const char *keyData)</td></tr>
 <tr class="memdesc:a07f5c4ec4fe290b04b6e9c1a80c26679"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetStringMapEntryFromKeyData - Given key data that is known to be embedded into a <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a>, return the <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> itself.  <a href="classwpi_1_1_string_map_entry.html#a07f5c4ec4fe290b04b6e9c1a80c26679">More...</a><br /></td></tr>
 <tr class="separator:a07f5c4ec4fe290b04b6e9c1a80c26679"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,24 +163,25 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ad539f51bb60fc9a310b8a14141131200 inherit pub_attribs_classwpi_1_1_string_map_entry_storage"><td class="memItemLeft" align="right" valign="top">ValueTy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry_storage.html#ad539f51bb60fc9a310b8a14141131200">second</a></td></tr>
 <tr class="separator:ad539f51bb60fc9a310b8a14141131200 inherit pub_attribs_classwpi_1_1_string_map_entry_storage"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classwpi_1_1_string_map_entry_base"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classwpi_1_1_string_map_entry_base')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classwpi_1_1_string_map_entry_base.html">wpi::StringMapEntryBase</a></td></tr>
-<tr class="memitem:a39a4443812ffa92f289e75ce6091bd8a inherit pro_static_methods_classwpi_1_1_string_map_entry_base"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry_base.html#a39a4443812ffa92f289e75ce6091bd8a">allocateWithKey</a> (size_t EntrySize, size_t EntryAlign, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key)</td></tr>
-<tr class="memdesc:a39a4443812ffa92f289e75ce6091bd8a inherit pro_static_methods_classwpi_1_1_string_map_entry_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to tail-allocate <code>Key</code>.  <a href="classwpi_1_1_string_map_entry_base.html#a39a4443812ffa92f289e75ce6091bd8a">More...</a><br /></td></tr>
-<tr class="separator:a39a4443812ffa92f289e75ce6091bd8a inherit pro_static_methods_classwpi_1_1_string_map_entry_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e42191ad1901eaf055d05e9895e4c8a inherit pro_static_methods_classwpi_1_1_string_map_entry_base"><td class="memTemplParams" colspan="2">template&lt;typename AllocatorTy &gt; </td></tr>
+<tr class="memitem:a2e42191ad1901eaf055d05e9895e4c8a inherit pro_static_methods_classwpi_1_1_string_map_entry_base"><td class="memTemplItemLeft" align="right" valign="top">static void *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_entry_base.html#a2e42191ad1901eaf055d05e9895e4c8a">allocateWithKey</a> (size_t EntrySize, size_t EntryAlign, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key, AllocatorTy &amp;Allocator)</td></tr>
+<tr class="memdesc:a2e42191ad1901eaf055d05e9895e4c8a inherit pro_static_methods_classwpi_1_1_string_map_entry_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to tail-allocate <code>Key</code>.  <a href="classwpi_1_1_string_map_entry_base.html#a2e42191ad1901eaf055d05e9895e4c8a">More...</a><br /></td></tr>
+<tr class="separator:a2e42191ad1901eaf055d05e9895e4c8a inherit pro_static_methods_classwpi_1_1_string_map_entry_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ValueTy&gt;<br />
 class wpi::StringMapEntry&lt; ValueTy &gt;</div><p ><a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> - This is used to represent one value that is inserted into a <a class="el" href="classwpi_1_1_string_map.html" title="StringMap - This is an unconventional map that is specialized for handling keys that are &quot;strings&quot;,...">StringMap</a>. </p>
 <p >It contains the Value itself and the key: the string length and data. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a19c3a65954fbbd9ecae76510ba5f6e26" name="a19c3a65954fbbd9ecae76510ba5f6e26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19c3a65954fbbd9ecae76510ba5f6e26">&#9670;&nbsp;</a></span>Create()</h2>
+<a id="a0b5bf543ae33139622ddb505098abfb6" name="a0b5bf543ae33139622ddb505098abfb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5bf543ae33139622ddb505098abfb6">&#9670;&nbsp;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ValueTy &gt; </div>
 <div class="memtemplate">
-template&lt;typename... InitTy&gt; </div>
+template&lt;typename AllocatorTy , typename... InitTy&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -189,6 +191,12 @@ template&lt;typename... InitTy&gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AllocatorTy &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -213,13 +221,15 @@ template&lt;typename... InitTy&gt; </div>
 
 </div>
 </div>
-<a id="ae54c7e2deb581ab1b6a445f9f4ed923f" name="ae54c7e2deb581ab1b6a445f9f4ed923f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae54c7e2deb581ab1b6a445f9f4ed923f">&#9670;&nbsp;</a></span>Destroy()</h2>
+<a id="afbd39775993c0b9fa7c8c0b42b0bb73c" name="afbd39775993c0b9fa7c8c0b42b0bb73c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd39775993c0b9fa7c8c0b42b0bb73c">&#9670;&nbsp;</a></span>Destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename ValueTy &gt; </div>
+<div class="memtemplate">
+template&lt;typename AllocatorTy &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -227,7 +237,8 @@ template&lt;typename ValueTy &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classwpi_1_1_string_map_entry.html">wpi::StringMapEntry</a>&lt; ValueTy &gt;::Destroy </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">AllocatorTy &amp;&#160;</td>
+          <td class="paramname"><em>allocator</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -365,7 +376,7 @@ template&lt;typename ValueTy &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a></li>
-    <li class="footer">Generated on Thu May 26 2022 16:06:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri May 27 2022 20:44:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
