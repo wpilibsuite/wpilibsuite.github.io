@@ -9,8 +9,6 @@ var namespacestd =
     [ "numeric_limits< const Eigen::half >", "structstd_1_1numeric__limits_3_01const_01_eigen_1_1half_01_4.html", null ],
     [ "numeric_limits< const volatile Eigen::bfloat16 >", "structstd_1_1numeric__limits_3_01const_01volatile_01_eigen_1_1bfloat16_01_4.html", null ],
     [ "numeric_limits< const volatile Eigen::half >", "structstd_1_1numeric__limits_3_01const_01volatile_01_eigen_1_1half_01_4.html", null ],
-    [ "numeric_limits< Eigen::AutoDiffScalar< T & > >", "classstd_1_1numeric__limits_3_01_eigen_1_1_auto_diff_scalar_3_01_t_01_6_01_4_01_4.html", null ],
-    [ "numeric_limits< Eigen::AutoDiffScalar< T > >", "classstd_1_1numeric__limits_3_01_eigen_1_1_auto_diff_scalar_3_01_t_01_4_01_4.html", null ],
     [ "numeric_limits< Eigen::bfloat16 >", "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html", "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4" ],
     [ "numeric_limits< Eigen::half >", "structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html", "structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4" ],
     [ "numeric_limits< volatile Eigen::bfloat16 >", "structstd_1_1numeric__limits_3_01volatile_01_eigen_1_1bfloat16_01_4.html", null ],

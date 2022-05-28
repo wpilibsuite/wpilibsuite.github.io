@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,6 @@ Inheritance diagram for frc::Encoder:</div>
 <area href="classfrc_1_1_counter_base.html" title="Interface for counting the number of ticks on a digital input channel." alt="frc::CounterBase" shape="rect" coords="0,0,200,24"/>
 <area href="classwpi_1_1_sendable.html" title="Interface for Sendable objects." alt="wpi::Sendable" shape="rect" coords="210,0,410,24"/>
 <area href="classwpi_1_1_sendable_helper.html" alt="wpi::SendableHelper&lt; Encoder &gt;" shape="rect" coords="420,0,620,24"/>
-<area href="classfrc_1_1_p_i_d_encoder.html" title="Wrapper so that PIDSource is implemented for Encoder for old PIDController." alt="frc::PIDEncoder" shape="rect" coords="210,112,410,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -202,7 +201,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac602f41b49cff5c30f7d80c748e15e89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_encoder.html#ac602f41b49cff5c30f7d80c748e15e89">SetIndexSource</a> (int channel, <a class="el" href="classfrc_1_1_encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485">IndexingType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=<a class="el" href="classfrc_1_1_encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485aa3f0a3fb4eb893975726257603f3d615">kResetOnRisingEdge</a>)</td></tr>
 <tr class="memdesc:ac602f41b49cff5c30f7d80c748e15e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the index source for the encoder.  <a href="classfrc_1_1_encoder.html#ac602f41b49cff5c30f7d80c748e15e89">More...</a><br /></td></tr>
 <tr class="separator:ac602f41b49cff5c30f7d80c748e15e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fe013532d791113feb16bb9e2355f3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_encoder.html#a3fe013532d791113feb16bb9e2355f3a">SetIndexSource</a> (const <a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &amp;source, <a class="el" href="classfrc_1_1_encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485">IndexingType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=<a class="el" href="classfrc_1_1_encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485aa3f0a3fb4eb893975726257603f3d615">kResetOnRisingEdge</a>)</td></tr>
+<tr class="memitem:a3fe013532d791113feb16bb9e2355f3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_encoder.html#a3fe013532d791113feb16bb9e2355f3a">SetIndexSource</a> (const <a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &amp;<a class="el" href="_third_party_notices_8txt.html#ae6d5d1b5be9d00fb9439a005fd7c7ce1">source</a>, <a class="el" href="classfrc_1_1_encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485">IndexingType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=<a class="el" href="classfrc_1_1_encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485aa3f0a3fb4eb893975726257603f3d615">kResetOnRisingEdge</a>)</td></tr>
 <tr class="memdesc:a3fe013532d791113feb16bb9e2355f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the index source for the encoder.  <a href="classfrc_1_1_encoder.html#a3fe013532d791113feb16bb9e2355f3a">More...</a><br /></td></tr>
 <tr class="separator:a3fe013532d791113feb16bb9e2355f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0a1b07f1426dd0e4efafe68adef283"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_encoder.html#aaa0a1b07f1426dd0e4efafe68adef283">SetSimDevice</a> (<a class="el" href="group__hal__types.html#ga98fa2df487adcab74d30a15d55725cc9">HAL_SimDeviceHandle</a> device)</td></tr>
@@ -234,21 +233,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">GetName</a> () const</td></tr>
-<tr class="memdesc:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">More...</a><br /></td></tr>
-<tr class="separator:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
-<tr class="memdesc:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">More...</a><br /></td></tr>
-<tr class="separator:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
-<tr class="memdesc:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">More...</a><br /></td></tr>
-<tr class="separator:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">GetSubsystem</a> () const</td></tr>
-<tr class="memdesc:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">More...</a><br /></td></tr>
-<tr class="separator:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
-<tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
-<tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -264,18 +248,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; Encoder &gt;</a></td></tr>
 <tr class="memitem:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a> ()=default</td></tr>
 <tr class="separator:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int channel)</td></tr>
-<tr class="memdesc:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">More...</a><br /></td></tr>
-<tr class="separator:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int moduleNumber, int channel)</td></tr>
-<tr class="memdesc:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">More...</a><br /></td></tr>
-<tr class="separator:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_sendable.html">Sendable</a> &gt; child)</td></tr>
-<tr class="memdesc:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">More...</a><br /></td></tr>
-<tr class="separator:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">AddChild</a> (void *child)</td></tr>
-<tr class="memdesc:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">More...</a><br /></td></tr>
-<tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a> ()</td></tr>
 <tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -721,6 +693,7 @@ Additional Inherited Members</h2></td></tr>
 <p >Returns the period of the most recent <a class="el" href="classfrc_1_1_encoder.html" title="Class to read quad encoders.">Encoder</a> pulse in seconds. This method compensates for the decoding type.</p>
 <p >Warning: This returns unscaled periods. Use <a class="el" href="classfrc_1_1_encoder.html#aa1416f313ea0a6685161d00010079018" title="Get the current rate of the encoder.">GetRate()</a> for rates that are scaled using the value from <a class="el" href="classfrc_1_1_encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>Period in seconds of the most recent pulse. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>Use getRate() in favor of this method. </dd></dl>
 
 <p>Implements <a class="el" href="classfrc_1_1_counter_base.html#a067ce47868a37e264a875fc2a36576df">frc::CounterBase</a>.</p>
 
@@ -1044,13 +1017,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Sets the maximum period for stopped detection. </p>
 <p >Sets the value that represents the maximum period of the <a class="el" href="classfrc_1_1_encoder.html" title="Class to read quad encoders.">Encoder</a> before it will assume that the attached device is stopped. This timeout allows users to determine if the wheels or other shaft has stopped rotating. This method compensates for the decoding type.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1_encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">maxPeriod</td><td>The maximum time between rising and falling edges before the FPGA will report the device stopped. This is expressed in seconds. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1_encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>. </dd></dl>
 
 <p>Implements <a class="el" href="classfrc_1_1_counter_base.html#ac49861297aab49bb027022337a266ea6">frc::CounterBase</a>.</p>
 
@@ -1238,7 +1211,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_encoder.html">Encoder</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

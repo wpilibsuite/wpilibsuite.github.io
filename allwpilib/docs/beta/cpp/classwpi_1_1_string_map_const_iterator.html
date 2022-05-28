@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('classwpi_1_1_string_map_const_iterator
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classwpi_1_1_string_map_const_iterator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wpi::StringMapConstIterator&lt; ValueTy &gt; Class Template Reference</div></div>
@@ -106,24 +105,19 @@ Inheritance diagram for wpi::StringMapConstIterator&lt; ValueTy &gt;:</div>
  <div class="center">
   <img src="classwpi_1_1_string_map_const_iterator.png" usemap="#wpi::StringMapConstIterator_3C_20ValueTy_20_3E_map" alt=""/>
   <map id="wpi::StringMapConstIterator_3C_20ValueTy_20_3E_map" name="wpi::StringMapConstIterator_3C_20ValueTy_20_3E_map">
-<area href="classwpi_1_1_string_map_iter_base.html" alt="wpi::StringMapIterBase&lt; StringMapConstIterator&lt; ValueTy &gt;, const StringMapEntry&lt; ValueTy &gt; &gt;" shape="rect" coords="0,112,731,136"/>
-<area href="classwpi_1_1iterator__facade__base.html" title="CRTP base class which implements the entire standard iterator facade in terms of a minimal subset of ..." alt="wpi::iterator_facade_base&lt; DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT &gt;" shape="rect" coords="0,56,731,80"/>
+<area href="classwpi_1_1_string_map_iter_base.html" alt="wpi::StringMapIterBase&lt; StringMapConstIterator&lt; ValueTy &gt;, const StringMapEntry&lt; ValueTy &gt; &gt;" shape="rect" coords="0,56,731,80"/>
+<area href="classwpi_1_1iterator__facade__base.html" title="CRTP base class which implements the entire standard iterator facade in terms of a minimal subset of ..." alt="wpi::iterator_facade_base&lt; DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT &gt;" shape="rect" coords="0,0,731,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:adee02da3cb13dab1d62e460a50b338a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_const_iterator.html#adee02da3cb13dab1d62e460a50b338a9">value_type</a> = const <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt; ValueTy &gt;</td></tr>
-<tr class="separator:adee02da3cb13dab1d62e460a50b338a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a437e9e0ab5cc574a2eb89fc2016a30be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_const_iterator.html#a437e9e0ab5cc574a2eb89fc2016a30be">StringMapConstIterator</a> ()=default</td></tr>
 <tr class="separator:a437e9e0ab5cc574a2eb89fc2016a30be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a653f110250ac425af98486a0ebce9ed2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_const_iterator.html#a653f110250ac425af98486a0ebce9ed2">StringMapConstIterator</a> (<a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> **Bucket, bool NoAdvance=false)</td></tr>
 <tr class="separator:a653f110250ac425af98486a0ebce9ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65e7b1c20811f7a64b84151dd1fd0708"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_const_iterator.html#adee02da3cb13dab1d62e460a50b338a9">value_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_const_iterator.html#a65e7b1c20811f7a64b84151dd1fd0708">operator*</a> () const</td></tr>
-<tr class="separator:a65e7b1c20811f7a64b84151dd1fd0708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2804b5494bf6a07ec8a653f6fdf1ceb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt; ValueTy &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_const_iterator.html#ad2804b5494bf6a07ec8a653f6fdf1ceb">operator*</a> () const</td></tr>
+<tr class="separator:ad2804b5494bf6a07ec8a653f6fdf1ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_string_map_iter_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_string_map_iter_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_string_map_iter_base.html">wpi::StringMapIterBase&lt; StringMapConstIterator&lt; ValueTy &gt;, const StringMapEntry&lt; ValueTy &gt; &gt;</a></td></tr>
 <tr class="memitem:ac61b30520bc59ea3fab7ccd801f6a559 inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_iter_base.html#ac61b30520bc59ea3fab7ccd801f6a559">StringMapIterBase</a> ()=default</td></tr>
 <tr class="separator:ac61b30520bc59ea3fab7ccd801f6a559 inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,8 +125,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a320eafe033bd08d45b6d8470e002c371 inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b879b83ef2bb9d578a79284f1724ca inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt; ValueTy &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_iter_base.html#a90b879b83ef2bb9d578a79284f1724ca">operator=</a> (const <a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt; ValueTy &gt; &amp;Other)</td></tr>
 <tr class="separator:a90b879b83ef2bb9d578a79284f1724ca inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20b44c950322f0a90e91551e5e71a84c inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_iter_base.html#a20b44c950322f0a90e91551e5e71a84c">operator==</a> (const <a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt; ValueTy &gt; &amp;RHS) const</td></tr>
-<tr class="separator:a20b44c950322f0a90e91551e5e71a84c inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ccb44aad07a83defe8ba6f7019c167 inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt; ValueTy &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_iter_base.html#a93ccb44aad07a83defe8ba6f7019c167">operator++</a> ()</td></tr>
 <tr class="separator:a93ccb44aad07a83defe8ba6f7019c167 inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b0b441d4d9653164032cc4e956f2e0 inherit pub_methods_classwpi_1_1_string_map_iter_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt; ValueTy &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_iter_base.html#a93b0b441d4d9653164032cc4e956f2e0">operator++</a> (int)</td></tr>
@@ -173,32 +165,26 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classwpi_1_1iterator__facade__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classwpi_1_1iterator__facade__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classwpi_1_1iterator__facade__base.html">wpi::iterator_facade_base&lt; DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT &gt;</a></td></tr>
+<tr class="memitem:a98eefc147893f803258c2c03d813abf4 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1iterator__facade__base.html#a98eefc147893f803258c2c03d813abf4">iterator_category</a> = IteratorCategoryT</td></tr>
+<tr class="separator:a98eefc147893f803258c2c03d813abf4 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3fcaf02cf457e1a11f52a4d64ee510 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1iterator__facade__base.html#aae3fcaf02cf457e1a11f52a4d64ee510">value_type</a> = T</td></tr>
+<tr class="separator:aae3fcaf02cf457e1a11f52a4d64ee510 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e3c5092b57d1a4b094fb9cba22f4672 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1iterator__facade__base.html#a7e3c5092b57d1a4b094fb9cba22f4672">difference_type</a> = DifferenceTypeT</td></tr>
+<tr class="separator:a7e3c5092b57d1a4b094fb9cba22f4672 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263a01ba71f6b29cc67bf73177908f71 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1iterator__facade__base.html#a263a01ba71f6b29cc67bf73177908f71">pointer</a> = PointerT</td></tr>
+<tr class="separator:a263a01ba71f6b29cc67bf73177908f71 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8db9ca90eb35357f0ba5183448b0a184 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1iterator__facade__base.html#a8db9ca90eb35357f0ba5183448b0a184">reference</a> = ReferenceT</td></tr>
+<tr class="separator:a8db9ca90eb35357f0ba5183448b0a184 inherit pub_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_types_classwpi_1_1iterator__facade__base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classwpi_1_1iterator__facade__base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classwpi_1_1iterator__facade__base.html">wpi::iterator_facade_base&lt; DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT &gt;</a></td></tr>
-<tr class="memitem:a47c7ffb9f60d96f423e7448cf446ac20 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classwpi_1_1iterator__facade__base.html#a47c7ffb9f60d96f423e7448cf446ac20acfc903a00519f6a6735cda38c69cf415">IsRandomAccess</a>
-, <a class="el" href="classwpi_1_1iterator__facade__base.html#a47c7ffb9f60d96f423e7448cf446ac20a2a8b20fbd803bbe6415bd16fc1c7ccde">IsBidirectional</a>
+<tr class="memitem:a3449f7652bfaa91f9b68252f9d179352 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classwpi_1_1iterator__facade__base.html#a3449f7652bfaa91f9b68252f9d179352acfc903a00519f6a6735cda38c69cf415">IsRandomAccess</a>
+, <a class="el" href="classwpi_1_1iterator__facade__base.html#a3449f7652bfaa91f9b68252f9d179352a2a8b20fbd803bbe6415bd16fc1c7ccde">IsBidirectional</a>
  }</td></tr>
-<tr class="separator:a47c7ffb9f60d96f423e7448cf446ac20 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3449f7652bfaa91f9b68252f9d179352 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classwpi_1_1_string_map_iter_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwpi_1_1_string_map_iter_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classwpi_1_1_string_map_iter_base.html">wpi::StringMapIterBase&lt; StringMapConstIterator&lt; ValueTy &gt;, const StringMapEntry&lt; ValueTy &gt; &gt;</a></td></tr>
 <tr class="memitem:ad16147ba833b73b0ddb12ac41a1efe68 inherit pro_attribs_classwpi_1_1_string_map_iter_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_iter_base.html#ad16147ba833b73b0ddb12ac41a1efe68">Ptr</a></td></tr>
 <tr class="separator:ad16147ba833b73b0ddb12ac41a1efe68 inherit pro_attribs_classwpi_1_1_string_map_iter_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="adee02da3cb13dab1d62e460a50b338a9" name="adee02da3cb13dab1d62e460a50b338a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adee02da3cb13dab1d62e460a50b338a9">&#9670;&nbsp;</a></span>value_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ValueTy &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map_const_iterator.html">wpi::StringMapConstIterator</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map_const_iterator.html#adee02da3cb13dab1d62e460a50b338a9">value_type</a> =  const <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt;ValueTy&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a437e9e0ab5cc574a2eb89fc2016a30be" name="a437e9e0ab5cc574a2eb89fc2016a30be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a437e9e0ab5cc574a2eb89fc2016a30be">&#9670;&nbsp;</a></span>StringMapConstIterator() <span class="overload">[1/2]</span></h2>
@@ -266,8 +252,8 @@ template&lt;typename ValueTy &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a65e7b1c20811f7a64b84151dd1fd0708" name="a65e7b1c20811f7a64b84151dd1fd0708"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65e7b1c20811f7a64b84151dd1fd0708">&#9670;&nbsp;</a></span>operator*()</h2>
+<a id="ad2804b5494bf6a07ec8a653f6fdf1ceb" name="ad2804b5494bf6a07ec8a653f6fdf1ceb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2804b5494bf6a07ec8a653f6fdf1ceb">&#9670;&nbsp;</a></span>operator*()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +264,7 @@ template&lt;typename ValueTy &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1_string_map_const_iterator.html#adee02da3cb13dab1d62e460a50b338a9">value_type</a> &amp; <a class="el" href="classwpi_1_1_string_map_const_iterator.html">wpi::StringMapConstIterator</a>&lt; ValueTy &gt;::operator* </td>
+          <td class="memname">const <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt; ValueTy &gt; &amp; <a class="el" href="classwpi_1_1_string_map_const_iterator.html">wpi::StringMapConstIterator</a>&lt; ValueTy &gt;::operator* </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -302,7 +288,7 @@ template&lt;typename ValueTy &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

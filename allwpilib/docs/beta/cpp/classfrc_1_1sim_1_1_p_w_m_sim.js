@@ -1,6 +1,7 @@
 var classfrc_1_1sim_1_1_p_w_m_sim =
 [
     [ "PWMSim", "classfrc_1_1sim_1_1_p_w_m_sim.html#a17b2983cd6dd5077e0e8ed9a0a01e1ad", null ],
+    [ "PWMSim", "classfrc_1_1sim_1_1_p_w_m_sim.html#a5d9ed19a134e0f4e207fcc246c68774c", null ],
     [ "PWMSim", "classfrc_1_1sim_1_1_p_w_m_sim.html#ab63003dec6b71a53c0d6086f28150afa", null ],
     [ "GetInitialized", "classfrc_1_1sim_1_1_p_w_m_sim.html#a214aa83542f24b4b7b5fb74420750b7e", null ],
     [ "GetPeriodScale", "classfrc_1_1sim_1_1_p_w_m_sim.html#a9c384210775c26ad79825bcff1168c71", null ],

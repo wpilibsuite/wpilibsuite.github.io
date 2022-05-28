@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_linear_system_loop.html',
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
@@ -105,51 +106,60 @@ $(document).ready(function(){initNavTree('classfrc_1_1_linear_system_loop.html',
 
 <p><code>#include &lt;<a class="el" href="_linear_system_loop_8h_source.html">frc/system/LinearSystemLoop.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a44ba67f8a549552d052177762227c85a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> = <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;</td></tr>
+<tr class="separator:a44ba67f8a549552d052177762227c85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edb592f4ca7aa5d943b852c3bfa5d21"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> = <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt;</td></tr>
+<tr class="separator:a5edb592f4ca7aa5d943b852c3bfa5d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7391fff723d51524f0ee21baa99966a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a7391fff723d51524f0ee21baa99966a1">OutputVector</a> = <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Outputs &gt;</td></tr>
+<tr class="separator:a7391fff723d51524f0ee21baa99966a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a425e87d4f241ca0bd9abf7cc164a3279"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a425e87d4f241ca0bd9abf7cc164a3279">LinearSystemLoop</a> (<a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt; &amp;controller, <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; &amp;observer, units::volt_t maxVoltage, units::second_t dt)</td></tr>
 <tr class="memdesc:a425e87d4f241ca0bd9abf7cc164a3279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space loop with the given plant, controller, and observer.  <a href="classfrc_1_1_linear_system_loop.html#a425e87d4f241ca0bd9abf7cc164a3279">More...</a><br /></td></tr>
 <tr class="separator:a425e87d4f241ca0bd9abf7cc164a3279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a1896a5083aabc02061915322776a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a60a1896a5083aabc02061915322776a1">LinearSystemLoop</a> (<a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt; &amp;controller, <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; &amp;observer, std::function&lt; Eigen::Vector&lt; double, Inputs &gt;(const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; clampFunction, units::second_t dt)</td></tr>
-<tr class="memdesc:a60a1896a5083aabc02061915322776a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space loop with the given plant, controller, and observer.  <a href="classfrc_1_1_linear_system_loop.html#a60a1896a5083aabc02061915322776a1">More...</a><br /></td></tr>
-<tr class="separator:a60a1896a5083aabc02061915322776a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6631d74b9e3873b866eaebbfb57694"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a3c6631d74b9e3873b866eaebbfb57694">LinearSystemLoop</a> (<a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt; &amp;controller, <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; &amp;observer, std::function&lt; <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>(const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> &amp;)&gt; clampFunction, units::second_t dt)</td></tr>
+<tr class="memdesc:a3c6631d74b9e3873b866eaebbfb57694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space loop with the given plant, controller, and observer.  <a href="classfrc_1_1_linear_system_loop.html#a3c6631d74b9e3873b866eaebbfb57694">More...</a><br /></td></tr>
+<tr class="separator:a3c6631d74b9e3873b866eaebbfb57694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede4cee0a287d2bfef41fb498f5755bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#aede4cee0a287d2bfef41fb498f5755bb">LinearSystemLoop</a> (<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt; &amp;controller, const <a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html">LinearPlantInversionFeedforward</a>&lt; States, Inputs &gt; &amp;feedforward, <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; &amp;observer, units::volt_t maxVoltage)</td></tr>
 <tr class="memdesc:aede4cee0a287d2bfef41fb498f5755bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space loop with the given controller, feedforward and observer.  <a href="classfrc_1_1_linear_system_loop.html#aede4cee0a287d2bfef41fb498f5755bb">More...</a><br /></td></tr>
 <tr class="separator:aede4cee0a287d2bfef41fb498f5755bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf26ae1f142b5a22a9cd6036b5339f22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#aaf26ae1f142b5a22a9cd6036b5339f22">LinearSystemLoop</a> (<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt; &amp;controller, const <a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html">LinearPlantInversionFeedforward</a>&lt; States, Inputs &gt; &amp;feedforward, <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; &amp;observer, std::function&lt; Eigen::Vector&lt; double, Inputs &gt;(const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; clampFunction)</td></tr>
-<tr class="memdesc:aaf26ae1f142b5a22a9cd6036b5339f22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space loop with the given controller, feedforward, observer and clamp function.  <a href="classfrc_1_1_linear_system_loop.html#aaf26ae1f142b5a22a9cd6036b5339f22">More...</a><br /></td></tr>
-<tr class="separator:aaf26ae1f142b5a22a9cd6036b5339f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a00676586579d0ad7eff4e7e006d72b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a6a00676586579d0ad7eff4e7e006d72b">LinearSystemLoop</a> (<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt; &amp;controller, const <a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html">LinearPlantInversionFeedforward</a>&lt; States, Inputs &gt; &amp;feedforward, <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; &amp;observer, std::function&lt; <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>(const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> &amp;)&gt; clampFunction)</td></tr>
+<tr class="memdesc:a6a00676586579d0ad7eff4e7e006d72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space loop with the given controller, feedforward, observer and clamp function.  <a href="classfrc_1_1_linear_system_loop.html#a6a00676586579d0ad7eff4e7e006d72b">More...</a><br /></td></tr>
+<tr class="separator:a6a00676586579d0ad7eff4e7e006d72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5497d0e8d9c7c93ae40fa87afc763e15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a5497d0e8d9c7c93ae40fa87afc763e15">LinearSystemLoop</a> (<a class="el" href="classfrc_1_1_linear_system_loop.html">LinearSystemLoop</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a5497d0e8d9c7c93ae40fa87afc763e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d481f4cda75549fc241d72ea531579"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_system_loop.html">LinearSystemLoop</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a96d481f4cda75549fc241d72ea531579">operator=</a> (<a class="el" href="classfrc_1_1_linear_system_loop.html">LinearSystemLoop</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a96d481f4cda75549fc241d72ea531579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d42b23cd9d877458aa0938e5e341819"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a7d42b23cd9d877458aa0938e5e341819">Xhat</a> () const</td></tr>
-<tr class="memdesc:a7d42b23cd9d877458aa0938e5e341819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the observer's state estimate x-hat.  <a href="classfrc_1_1_linear_system_loop.html#a7d42b23cd9d877458aa0938e5e341819">More...</a><br /></td></tr>
-<tr class="separator:a7d42b23cd9d877458aa0938e5e341819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ec0432e89930cc7e3926730c939602"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ab8ec0432e89930cc7e3926730c939602">Xhat</a> () const</td></tr>
+<tr class="memdesc:ab8ec0432e89930cc7e3926730c939602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the observer's state estimate x-hat.  <a href="classfrc_1_1_linear_system_loop.html#ab8ec0432e89930cc7e3926730c939602">More...</a><br /></td></tr>
+<tr class="separator:ab8ec0432e89930cc7e3926730c939602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92694759ac399947256422c0b678554e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a92694759ac399947256422c0b678554e">Xhat</a> (int i) const</td></tr>
 <tr class="memdesc:a92694759ac399947256422c0b678554e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the observer's state estimate x-hat.  <a href="classfrc_1_1_linear_system_loop.html#a92694759ac399947256422c0b678554e">More...</a><br /></td></tr>
 <tr class="separator:a92694759ac399947256422c0b678554e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0f199462cce2c6fd57be1cac58c0704"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#aa0f199462cce2c6fd57be1cac58c0704">NextR</a> () const</td></tr>
-<tr class="memdesc:aa0f199462cce2c6fd57be1cac58c0704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the controller's next reference r.  <a href="classfrc_1_1_linear_system_loop.html#aa0f199462cce2c6fd57be1cac58c0704">More...</a><br /></td></tr>
-<tr class="separator:aa0f199462cce2c6fd57be1cac58c0704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72104e1c9fdc5f92c336c663de6f1e4"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#aa72104e1c9fdc5f92c336c663de6f1e4">NextR</a> () const</td></tr>
+<tr class="memdesc:aa72104e1c9fdc5f92c336c663de6f1e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the controller's next reference r.  <a href="classfrc_1_1_linear_system_loop.html#aa72104e1c9fdc5f92c336c663de6f1e4">More...</a><br /></td></tr>
+<tr class="separator:aa72104e1c9fdc5f92c336c663de6f1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cebf7b7e36ea1d7930eb6bf05121b1a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a1cebf7b7e36ea1d7930eb6bf05121b1a">NextR</a> (int i) const</td></tr>
 <tr class="memdesc:a1cebf7b7e36ea1d7930eb6bf05121b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the controller's next reference r.  <a href="classfrc_1_1_linear_system_loop.html#a1cebf7b7e36ea1d7930eb6bf05121b1a">More...</a><br /></td></tr>
 <tr class="separator:a1cebf7b7e36ea1d7930eb6bf05121b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba52ab08d7aee4758259766901109e2"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a6ba52ab08d7aee4758259766901109e2">U</a> () const</td></tr>
-<tr class="memdesc:a6ba52ab08d7aee4758259766901109e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the controller's calculated control input u.  <a href="classfrc_1_1_linear_system_loop.html#a6ba52ab08d7aee4758259766901109e2">More...</a><br /></td></tr>
-<tr class="separator:a6ba52ab08d7aee4758259766901109e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cd7414ed62a90440a4d5bdd43f43ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a23cd7414ed62a90440a4d5bdd43f43ab">U</a> () const</td></tr>
+<tr class="memdesc:a23cd7414ed62a90440a4d5bdd43f43ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the controller's calculated control input u.  <a href="classfrc_1_1_linear_system_loop.html#a23cd7414ed62a90440a4d5bdd43f43ab">More...</a><br /></td></tr>
+<tr class="separator:a23cd7414ed62a90440a4d5bdd43f43ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db8f1b0117a9c424973a5b40b56af80"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a9db8f1b0117a9c424973a5b40b56af80">U</a> (int i) const</td></tr>
 <tr class="memdesc:a9db8f1b0117a9c424973a5b40b56af80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the controller's calculated control input u.  <a href="classfrc_1_1_linear_system_loop.html#a9db8f1b0117a9c424973a5b40b56af80">More...</a><br /></td></tr>
 <tr class="separator:a9db8f1b0117a9c424973a5b40b56af80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84942c5eb5198d959612a5cd543da7d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a84942c5eb5198d959612a5cd543da7d0">SetXhat</a> (const Eigen::Vector&lt; double, States &gt; &amp;xHat)</td></tr>
-<tr class="memdesc:a84942c5eb5198d959612a5cd543da7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial state estimate x-hat.  <a href="classfrc_1_1_linear_system_loop.html#a84942c5eb5198d959612a5cd543da7d0">More...</a><br /></td></tr>
-<tr class="separator:a84942c5eb5198d959612a5cd543da7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fe51fc0aa03111de5d34a9e7cb45173"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a2fe51fc0aa03111de5d34a9e7cb45173">SetXhat</a> (const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;xHat)</td></tr>
+<tr class="memdesc:a2fe51fc0aa03111de5d34a9e7cb45173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial state estimate x-hat.  <a href="classfrc_1_1_linear_system_loop.html#a2fe51fc0aa03111de5d34a9e7cb45173">More...</a><br /></td></tr>
+<tr class="separator:a2fe51fc0aa03111de5d34a9e7cb45173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae015a57142458c29b5ea75a533c3f993"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ae015a57142458c29b5ea75a533c3f993">SetXhat</a> (int i, double <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:ae015a57142458c29b5ea75a533c3f993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an element of the initial state estimate x-hat.  <a href="classfrc_1_1_linear_system_loop.html#ae015a57142458c29b5ea75a533c3f993">More...</a><br /></td></tr>
 <tr class="separator:ae015a57142458c29b5ea75a533c3f993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2db16401eac669f9314b51a522521f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ad2db16401eac669f9314b51a522521f0">SetNextR</a> (const Eigen::Vector&lt; double, States &gt; &amp;nextR)</td></tr>
-<tr class="memdesc:ad2db16401eac669f9314b51a522521f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next reference r.  <a href="classfrc_1_1_linear_system_loop.html#ad2db16401eac669f9314b51a522521f0">More...</a><br /></td></tr>
-<tr class="separator:ad2db16401eac669f9314b51a522521f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de34825d42b281e8f087dd6dc2dd068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a6de34825d42b281e8f087dd6dc2dd068">SetNextR</a> (const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;nextR)</td></tr>
+<tr class="memdesc:a6de34825d42b281e8f087dd6dc2dd068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the next reference r.  <a href="classfrc_1_1_linear_system_loop.html#a6de34825d42b281e8f087dd6dc2dd068">More...</a><br /></td></tr>
+<tr class="separator:a6de34825d42b281e8f087dd6dc2dd068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44bb7af8559e0175912bd7e81f7c75ff"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a44bb7af8559e0175912bd7e81f7c75ff">Controller</a> () const</td></tr>
 <tr class="memdesc:a44bb7af8559e0175912bd7e81f7c75ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the controller used internally.  <a href="classfrc_1_1_linear_system_loop.html#a44bb7af8559e0175912bd7e81f7c75ff">More...</a><br /></td></tr>
 <tr class="separator:a44bb7af8559e0175912bd7e81f7c75ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,21 +169,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2ee65c024b9dbc07f187cde3b720709"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ab2ee65c024b9dbc07f187cde3b720709">Observer</a> () const</td></tr>
 <tr class="memdesc:ab2ee65c024b9dbc07f187cde3b720709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the observer used internally.  <a href="classfrc_1_1_linear_system_loop.html#ab2ee65c024b9dbc07f187cde3b720709">More...</a><br /></td></tr>
 <tr class="separator:ab2ee65c024b9dbc07f187cde3b720709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a04b0fd10444611fb4c8b2405fa010d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a4a04b0fd10444611fb4c8b2405fa010d">Reset</a> (const Eigen::Vector&lt; double, States &gt; &amp;initialState)</td></tr>
-<tr class="memdesc:a4a04b0fd10444611fb4c8b2405fa010d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeroes reference r and controller output u.  <a href="classfrc_1_1_linear_system_loop.html#a4a04b0fd10444611fb4c8b2405fa010d">More...</a><br /></td></tr>
-<tr class="separator:a4a04b0fd10444611fb4c8b2405fa010d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c850b118144403cb4a3a86e2cae92fd"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a1c850b118144403cb4a3a86e2cae92fd">Error</a> () const</td></tr>
-<tr class="memdesc:a1c850b118144403cb4a3a86e2cae92fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns difference between reference r and current state x-hat.  <a href="classfrc_1_1_linear_system_loop.html#a1c850b118144403cb4a3a86e2cae92fd">More...</a><br /></td></tr>
-<tr class="separator:a1c850b118144403cb4a3a86e2cae92fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a768120fa035a27a1ffe4f0c534c6694d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a768120fa035a27a1ffe4f0c534c6694d">Correct</a> (const Eigen::Vector&lt; double, Outputs &gt; &amp;y)</td></tr>
-<tr class="memdesc:a768120fa035a27a1ffe4f0c534c6694d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct the state estimate x-hat using the measurements in y.  <a href="classfrc_1_1_linear_system_loop.html#a768120fa035a27a1ffe4f0c534c6694d">More...</a><br /></td></tr>
-<tr class="separator:a768120fa035a27a1ffe4f0c534c6694d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0517cc46487593774e5dd489253305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a3d0517cc46487593774e5dd489253305">Reset</a> (const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;initialState)</td></tr>
+<tr class="memdesc:a3d0517cc46487593774e5dd489253305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zeroes reference r and controller output u.  <a href="classfrc_1_1_linear_system_loop.html#a3d0517cc46487593774e5dd489253305">More...</a><br /></td></tr>
+<tr class="separator:a3d0517cc46487593774e5dd489253305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f596e1259cd7e0701475aa4a16877f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ae8f596e1259cd7e0701475aa4a16877f">Error</a> () const</td></tr>
+<tr class="memdesc:ae8f596e1259cd7e0701475aa4a16877f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns difference between reference r and current state x-hat.  <a href="classfrc_1_1_linear_system_loop.html#ae8f596e1259cd7e0701475aa4a16877f">More...</a><br /></td></tr>
+<tr class="separator:ae8f596e1259cd7e0701475aa4a16877f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e9fe9e41652a5b6e3e2ec9c45240b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a0e9fe9e41652a5b6e3e2ec9c45240b8b">Correct</a> (const <a class="el" href="classfrc_1_1_linear_system_loop.html#a7391fff723d51524f0ee21baa99966a1">OutputVector</a> &amp;y)</td></tr>
+<tr class="memdesc:a0e9fe9e41652a5b6e3e2ec9c45240b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct the state estimate x-hat using the measurements in y.  <a href="classfrc_1_1_linear_system_loop.html#a0e9fe9e41652a5b6e3e2ec9c45240b8b">More...</a><br /></td></tr>
+<tr class="separator:a0e9fe9e41652a5b6e3e2ec9c45240b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8be82927549b755bc70d78807b1c577c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a8be82927549b755bc70d78807b1c577c">Predict</a> (units::second_t dt)</td></tr>
 <tr class="memdesc:a8be82927549b755bc70d78807b1c577c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets new controller output, projects model forward, and runs observer prediction.  <a href="classfrc_1_1_linear_system_loop.html#a8be82927549b755bc70d78807b1c577c">More...</a><br /></td></tr>
 <tr class="separator:a8be82927549b755bc70d78807b1c577c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad17066d165f14329d4dc6c6bad6ae73a"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ad17066d165f14329d4dc6c6bad6ae73a">ClampInput</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u) const</td></tr>
-<tr class="memdesc:ad17066d165f14329d4dc6c6bad6ae73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps input vector between system's minimum and maximum allowable input.  <a href="classfrc_1_1_linear_system_loop.html#ad17066d165f14329d4dc6c6bad6ae73a">More...</a><br /></td></tr>
-<tr class="separator:ad17066d165f14329d4dc6c6bad6ae73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02a2589ed7b6084a675462f12e5bd0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ac02a2589ed7b6084a675462f12e5bd0f">ClampInput</a> (const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> &amp;u) const</td></tr>
+<tr class="memdesc:ac02a2589ed7b6084a675462f12e5bd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps input vector between system's minimum and maximum allowable input.  <a href="classfrc_1_1_linear_system_loop.html#ac02a2589ed7b6084a675462f12e5bd0f">More...</a><br /></td></tr>
+<tr class="separator:ac02a2589ed7b6084a675462f12e5bd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -183,11 +193,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ab57d68c167b67b4f27ee4ac0ec30bd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae875e50eac850486440c3e61bc000776"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a>&lt; States, Inputs, Outputs &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#ae875e50eac850486440c3e61bc000776">m_observer</a></td></tr>
 <tr class="separator:ae875e50eac850486440c3e61bc000776"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dd25f25df422ef1c0771457bd83eb1b"><td class="memItemLeft" align="right" valign="top">std::function&lt; Eigen::Vector&lt; double, Inputs &gt;(const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a3dd25f25df422ef1c0771457bd83eb1b">m_clampFunc</a></td></tr>
-<tr class="memdesc:a3dd25f25df422ef1c0771457bd83eb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamping function.  <a href="classfrc_1_1_linear_system_loop.html#a3dd25f25df422ef1c0771457bd83eb1b">More...</a><br /></td></tr>
-<tr class="separator:a3dd25f25df422ef1c0771457bd83eb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea59e15dd353cbb439d5c41de25edf68"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#aea59e15dd353cbb439d5c41de25edf68">m_nextR</a></td></tr>
-<tr class="separator:aea59e15dd353cbb439d5c41de25edf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93e4e7658527e0508c06e279cc2a570"><td class="memItemLeft" align="right" valign="top">std::function&lt; <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>(const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#aa93e4e7658527e0508c06e279cc2a570">m_clampFunc</a></td></tr>
+<tr class="memdesc:aa93e4e7658527e0508c06e279cc2a570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamping function.  <a href="classfrc_1_1_linear_system_loop.html#aa93e4e7658527e0508c06e279cc2a570">More...</a><br /></td></tr>
+<tr class="separator:aa93e4e7658527e0508c06e279cc2a570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d6d26a4a1104a197723f5649889d34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_loop.html#a58d6d26a4a1104a197723f5649889d34">m_nextR</a></td></tr>
+<tr class="separator:a58d6d26a4a1104a197723f5649889d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -211,7 +221,56 @@ class frc::LinearSystemLoop&lt; States, Inputs, Outputs &gt;</div><p >Combines a
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a5edb592f4ca7aa5d943b852c3bfa5d21" name="a5edb592f4ca7aa5d943b852c3bfa5d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edb592f4ca7aa5d943b852c3bfa5d21">&#9670;&nbsp;</a></span>InputVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::<a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> =  <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt;Inputs&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7391fff723d51524f0ee21baa99966a1" name="a7391fff723d51524f0ee21baa99966a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7391fff723d51524f0ee21baa99966a1">&#9670;&nbsp;</a></span>OutputVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::<a class="el" href="classfrc_1_1_linear_system_loop.html#a7391fff723d51524f0ee21baa99966a1">OutputVector</a> =  <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt;Outputs&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44ba67f8a549552d052177762227c85a" name="a44ba67f8a549552d052177762227c85a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ba67f8a549552d052177762227c85a">&#9670;&nbsp;</a></span>StateVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::<a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> =  <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt;States&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a425e87d4f241ca0bd9abf7cc164a3279" name="a425e87d4f241ca0bd9abf7cc164a3279"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a425e87d4f241ca0bd9abf7cc164a3279">&#9670;&nbsp;</a></span>LinearSystemLoop() <span class="overload">[1/5]</span></h2>
 
@@ -281,8 +340,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a60a1896a5083aabc02061915322776a1" name="a60a1896a5083aabc02061915322776a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60a1896a5083aabc02061915322776a1">&#9670;&nbsp;</a></span>LinearSystemLoop() <span class="overload">[2/5]</span></h2>
+<a id="a3c6631d74b9e3873b866eaebbfb57694" name="a3c6631d74b9e3873b866eaebbfb57694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c6631d74b9e3873b866eaebbfb57694">&#9670;&nbsp;</a></span>LinearSystemLoop() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +372,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; Eigen::Vector&lt; double, Inputs &gt;(const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>(const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> &amp;)&gt;&#160;</td>
           <td class="paramname"><em>clampFunction</em>, </td>
         </tr>
         <tr>
@@ -412,8 +471,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="aaf26ae1f142b5a22a9cd6036b5339f22" name="aaf26ae1f142b5a22a9cd6036b5339f22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf26ae1f142b5a22a9cd6036b5339f22">&#9670;&nbsp;</a></span>LinearSystemLoop() <span class="overload">[4/5]</span></h2>
+<a id="a6a00676586579d0ad7eff4e7e006d72b" name="a6a00676586579d0ad7eff4e7e006d72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a00676586579d0ad7eff4e7e006d72b">&#9670;&nbsp;</a></span>LinearSystemLoop() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +503,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; Eigen::Vector&lt; double, Inputs &gt;(const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>(const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> &amp;)&gt;&#160;</td>
           <td class="paramname"><em>clampFunction</em>&#160;</td>
         </tr>
         <tr>
@@ -503,8 +562,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad17066d165f14329d4dc6c6bad6ae73a" name="ad17066d165f14329d4dc6c6bad6ae73a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad17066d165f14329d4dc6c6bad6ae73a">&#9670;&nbsp;</a></span>ClampInput()</h2>
+<a id="ac02a2589ed7b6084a675462f12e5bd0f" name="ac02a2589ed7b6084a675462f12e5bd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02a2589ed7b6084a675462f12e5bd0f">&#9670;&nbsp;</a></span>ClampInput()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -515,9 +574,9 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, Inputs &gt; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::ClampInput </td>
+          <td class="memname"><a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::ClampInput </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -569,8 +628,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a768120fa035a27a1ffe4f0c534c6694d" name="a768120fa035a27a1ffe4f0c534c6694d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a768120fa035a27a1ffe4f0c534c6694d">&#9670;&nbsp;</a></span>Correct()</h2>
+<a id="a0e9fe9e41652a5b6e3e2ec9c45240b8b" name="a0e9fe9e41652a5b6e3e2ec9c45240b8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e9fe9e41652a5b6e3e2ec9c45240b8b">&#9670;&nbsp;</a></span>Correct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +642,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::Correct </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, Outputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a7391fff723d51524f0ee21baa99966a1">OutputVector</a> &amp;&#160;</td>
           <td class="paramname"><em>y</em></td><td>)</td>
           <td></td>
         </tr>
@@ -605,8 +664,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a1c850b118144403cb4a3a86e2cae92fd" name="a1c850b118144403cb4a3a86e2cae92fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c850b118144403cb4a3a86e2cae92fd">&#9670;&nbsp;</a></span>Error()</h2>
+<a id="ae8f596e1259cd7e0701475aa4a16877f" name="ae8f596e1259cd7e0701475aa4a16877f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f596e1259cd7e0701475aa4a16877f">&#9670;&nbsp;</a></span>Error()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,7 +676,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, States &gt; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::Error </td>
+          <td class="memname"><a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::Error </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -664,8 +723,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="aa0f199462cce2c6fd57be1cac58c0704" name="aa0f199462cce2c6fd57be1cac58c0704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0f199462cce2c6fd57be1cac58c0704">&#9670;&nbsp;</a></span>NextR() <span class="overload">[1/2]</span></h2>
+<a id="aa72104e1c9fdc5f92c336c663de6f1e4" name="aa72104e1c9fdc5f92c336c663de6f1e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72104e1c9fdc5f92c336c663de6f1e4">&#9670;&nbsp;</a></span>NextR() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -676,7 +735,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::Vector&lt; double, States &gt; &amp; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::NextR </td>
+          <td class="memname">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::NextR </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -823,8 +882,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a4a04b0fd10444611fb4c8b2405fa010d" name="a4a04b0fd10444611fb4c8b2405fa010d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a04b0fd10444611fb4c8b2405fa010d">&#9670;&nbsp;</a></span>Reset()</h2>
+<a id="a3d0517cc46487593774e5dd489253305" name="a3d0517cc46487593774e5dd489253305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0517cc46487593774e5dd489253305">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -837,7 +896,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::Reset </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;&#160;</td>
           <td class="paramname"><em>initialState</em></td><td>)</td>
           <td></td>
         </tr>
@@ -850,7 +909,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 </div><div class="memdoc">
 
 <p>Zeroes reference r and controller output u. </p>
-<p >The previous reference of the PlantInversionFeedforward and the initial state estimate of the <a class="el" href="classfrc_1_1_kalman_filter.html">KalmanFilter</a> are set to the initial state provided.</p>
+<p >The previous reference of the PlantInversionFeedforward and the initial state estimate of the <a class="el" href="classfrc_1_1_kalman_filter.html" title="A Kalman filter combines predictions from a model and measurements to give an estimate of the true sy...">KalmanFilter</a> are set to the initial state provided.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initialState</td><td>The initial state. </td></tr>
@@ -860,8 +919,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="ad2db16401eac669f9314b51a522521f0" name="ad2db16401eac669f9314b51a522521f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2db16401eac669f9314b51a522521f0">&#9670;&nbsp;</a></span>SetNextR()</h2>
+<a id="a6de34825d42b281e8f087dd6dc2dd068" name="a6de34825d42b281e8f087dd6dc2dd068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de34825d42b281e8f087dd6dc2dd068">&#9670;&nbsp;</a></span>SetNextR()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -874,7 +933,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::SetNextR </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;&#160;</td>
           <td class="paramname"><em>nextR</em></td><td>)</td>
           <td></td>
         </tr>
@@ -896,8 +955,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a84942c5eb5198d959612a5cd543da7d0" name="a84942c5eb5198d959612a5cd543da7d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84942c5eb5198d959612a5cd543da7d0">&#9670;&nbsp;</a></span>SetXhat() <span class="overload">[1/2]</span></h2>
+<a id="a2fe51fc0aa03111de5d34a9e7cb45173" name="a2fe51fc0aa03111de5d34a9e7cb45173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fe51fc0aa03111de5d34a9e7cb45173">&#9670;&nbsp;</a></span>SetXhat() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -910,7 +969,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::SetXhat </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp;&#160;</td>
           <td class="paramname"><em>xHat</em></td><td>)</td>
           <td></td>
         </tr>
@@ -979,8 +1038,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a6ba52ab08d7aee4758259766901109e2" name="a6ba52ab08d7aee4758259766901109e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ba52ab08d7aee4758259766901109e2">&#9670;&nbsp;</a></span>U() <span class="overload">[1/2]</span></h2>
+<a id="a23cd7414ed62a90440a4d5bdd43f43ab" name="a23cd7414ed62a90440a4d5bdd43f43ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23cd7414ed62a90440a4d5bdd43f43ab">&#9670;&nbsp;</a></span>U() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -991,7 +1050,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt; double, Inputs &gt; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::U </td>
+          <td class="memname"><a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a> <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::U </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1044,8 +1103,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a7d42b23cd9d877458aa0938e5e341819" name="a7d42b23cd9d877458aa0938e5e341819"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d42b23cd9d877458aa0938e5e341819">&#9670;&nbsp;</a></span>Xhat() <span class="overload">[1/2]</span></h2>
+<a id="ab8ec0432e89930cc7e3926730c939602" name="ab8ec0432e89930cc7e3926730c939602"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8ec0432e89930cc7e3926730c939602">&#9670;&nbsp;</a></span>Xhat() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1056,7 +1115,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const Eigen::Vector&lt; double, States &gt; &amp; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::Xhat </td>
+          <td class="memname">const <a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> &amp; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::Xhat </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1182,8 +1241,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a3dd25f25df422ef1c0771457bd83eb1b" name="a3dd25f25df422ef1c0771457bd83eb1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dd25f25df422ef1c0771457bd83eb1b">&#9670;&nbsp;</a></span>m_clampFunc</h2>
+<a id="aa93e4e7658527e0508c06e279cc2a570" name="aa93e4e7658527e0508c06e279cc2a570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93e4e7658527e0508c06e279cc2a570">&#9670;&nbsp;</a></span>m_clampFunc</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1194,7 +1253,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;Eigen::Vector&lt;double, Inputs&gt;( const Eigen::Vector&lt;double, Inputs&gt;&amp;)&gt; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::m_clampFunc</td>
+          <td class="memname">std::function&lt;<a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>(const <a class="el" href="classfrc_1_1_linear_system_loop.html#a5edb592f4ca7aa5d943b852c3bfa5d21">InputVector</a>&amp;)&gt; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::m_clampFunc</td>
         </tr>
       </table>
   </td>
@@ -1256,8 +1315,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="aea59e15dd353cbb439d5c41de25edf68" name="aea59e15dd353cbb439d5c41de25edf68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea59e15dd353cbb439d5c41de25edf68">&#9670;&nbsp;</a></span>m_nextR</h2>
+<a id="a58d6d26a4a1104a197723f5649889d34" name="a58d6d26a4a1104a197723f5649889d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d6d26a4a1104a197723f5649889d34">&#9670;&nbsp;</a></span>m_nextR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1268,7 +1327,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Vector&lt;double, States&gt; <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::m_nextR</td>
+          <td class="memname"><a class="el" href="classfrc_1_1_linear_system_loop.html#a44ba67f8a549552d052177762227c85a">StateVector</a> <a class="el" href="classfrc_1_1_linear_system_loop.html">frc::LinearSystemLoop</a>&lt; States, Inputs, Outputs &gt;::m_nextR</td>
         </tr>
       </table>
   </td>
@@ -1313,7 +1372,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_linear_system_loop.html">LinearSystemLoop</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

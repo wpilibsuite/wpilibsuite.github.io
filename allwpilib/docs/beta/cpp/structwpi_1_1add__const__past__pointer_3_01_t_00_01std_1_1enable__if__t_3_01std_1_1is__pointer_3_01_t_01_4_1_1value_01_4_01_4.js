@@ -1,0 +1,4 @@
+var structwpi_1_1add__const__past__pointer_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__pointer_3_01_t_01_4_1_1value_01_4_01_4 =
+[
+    [ "type", "structwpi_1_1add__const__past__pointer_3_01_t_00_01std_1_1enable__if__t_3_01std_1_1is__pointer_3_01_t_01_4_1_1value_01_4_01_4.html#ad5e82e7423a28ebe15014cb202aec2c9", null ]
+];

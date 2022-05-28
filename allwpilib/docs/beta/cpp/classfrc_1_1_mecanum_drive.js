@@ -1,7 +1,7 @@
 var classfrc_1_1_mecanum_drive =
 [
     [ "WheelSpeeds", "structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html", "structfrc_1_1_mecanum_drive_1_1_wheel_speeds" ],
-    [ "MecanumDrive", "classfrc_1_1_mecanum_drive.html#a36a2305d3552c82ffc92943f1db7a507", null ],
+    [ "MecanumDrive", "classfrc_1_1_mecanum_drive.html#a067aeaf5f8b7c0a8abba20c111ed5b03", null ],
     [ "~MecanumDrive", "classfrc_1_1_mecanum_drive.html#adf57049414bfa6d2a7373d0e7cd92d6d", null ],
     [ "MecanumDrive", "classfrc_1_1_mecanum_drive.html#a1e4cea8ae3a05ef1bcfdc48095cde5b6", null ],
     [ "DriveCartesian", "classfrc_1_1_mecanum_drive.html#a7801f779e6486dfd7f6f101d51d5e1f5", null ],

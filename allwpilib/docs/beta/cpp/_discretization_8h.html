@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('_discretization_8h.html',''); initResi
   <div class="headertitle"><div class="title">Discretization.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_core.html">Eigen/Core</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_eigen_core_8h_source.html">frc/EigenCore.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="time_8h_source.html">units/time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_matrix_functions.html">unsupported/Eigen/MatrixFunctions</a>&quot;</code><br />
 </div>
@@ -110,26 +110,26 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">frc::DiscretizeA</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA)</td></tr>
-<tr class="memdesc:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A matrix.  <a href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">More...</a><br /></td></tr>
-<tr class="separator:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
-<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">frc::DiscretizeAB</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;contB, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; *discB)</td></tr>
-<tr class="memdesc:ab0e1ca87aa1e11ff912712afe34f8803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and B matrices.  <a href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">More...</a><br /></td></tr>
-<tr class="separator:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">frc::DiscretizeAQ</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contQ, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discQ)</td></tr>
-<tr class="memdesc:a0f7a16592525baf3b04f68f7b308a153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">More...</a><br /></td></tr>
-<tr class="separator:a0f7a16592525baf3b04f68f7b308a153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">frc::DiscretizeAQTaylor</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contA, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;contQ, units::second_t dt, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discA, <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; *discQ)</td></tr>
-<tr class="memdesc:a21e6884091fc969f4d10fd01c1b26857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">More...</a><br /></td></tr>
-<tr class="separator:a21e6884091fc969f4d10fd01c1b26857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaffb6b5b00047c6f384f8fdf425db078"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
-<tr class="memitem:aaffb6b5b00047c6f384f8fdf425db078"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, Outputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aaffb6b5b00047c6f384f8fdf425db078">frc::DiscretizeR</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Outputs, Outputs &gt; &amp;R, units::second_t dt)</td></tr>
-<tr class="memdesc:aaffb6b5b00047c6f384f8fdf425db078"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a discretized version of the provided continuous measurement noise covariance matrix.  <a href="namespacefrc.html#aaffb6b5b00047c6f384f8fdf425db078">More...</a><br /></td></tr>
-<tr class="separator:aaffb6b5b00047c6f384f8fdf425db078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad531dbb16c14307f2618e0da8b3501e3"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:ad531dbb16c14307f2618e0da8b3501e3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad531dbb16c14307f2618e0da8b3501e3">frc::DiscretizeA</a> (const Matrixd&lt; States, States &gt; &amp;contA, units::second_t dt, Matrixd&lt; States, States &gt; *discA)</td></tr>
+<tr class="memdesc:ad531dbb16c14307f2618e0da8b3501e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A matrix.  <a href="namespacefrc.html#ad531dbb16c14307f2618e0da8b3501e3">More...</a><br /></td></tr>
+<tr class="separator:ad531dbb16c14307f2618e0da8b3501e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e837ac1ee1494fa938b76be926e6a4"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
+<tr class="memitem:a42e837ac1ee1494fa938b76be926e6a4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a42e837ac1ee1494fa938b76be926e6a4">frc::DiscretizeAB</a> (const Matrixd&lt; States, States &gt; &amp;contA, const Matrixd&lt; States, Inputs &gt; &amp;contB, units::second_t dt, Matrixd&lt; States, States &gt; *discA, Matrixd&lt; States, Inputs &gt; *discB)</td></tr>
+<tr class="memdesc:a42e837ac1ee1494fa938b76be926e6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and B matrices.  <a href="namespacefrc.html#a42e837ac1ee1494fa938b76be926e6a4">More...</a><br /></td></tr>
+<tr class="separator:a42e837ac1ee1494fa938b76be926e6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a38a90b29f28a2d7aaa21c407c35c8b26">frc::DiscretizeAQ</a> (const Matrixd&lt; States, States &gt; &amp;contA, const Matrixd&lt; States, States &gt; &amp;contQ, units::second_t dt, Matrixd&lt; States, States &gt; *discA, Matrixd&lt; States, States &gt; *discQ)</td></tr>
+<tr class="memdesc:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a38a90b29f28a2d7aaa21c407c35c8b26">More...</a><br /></td></tr>
+<tr class="separator:a38a90b29f28a2d7aaa21c407c35c8b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373755b380d47d8dd2c42d78ad346adc"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a373755b380d47d8dd2c42d78ad346adc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a373755b380d47d8dd2c42d78ad346adc">frc::DiscretizeAQTaylor</a> (const Matrixd&lt; States, States &gt; &amp;contA, const Matrixd&lt; States, States &gt; &amp;contQ, units::second_t dt, Matrixd&lt; States, States &gt; *discA, Matrixd&lt; States, States &gt; *discQ)</td></tr>
+<tr class="memdesc:a373755b380d47d8dd2c42d78ad346adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a373755b380d47d8dd2c42d78ad346adc">More...</a><br /></td></tr>
+<tr class="separator:a373755b380d47d8dd2c42d78ad346adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
+<tr class="memitem:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="memTemplItemLeft" align="right" valign="top">Matrixd&lt; Outputs, Outputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a89e7eb3221aa4a2af651bba4c4d3b7f1">frc::DiscretizeR</a> (const Matrixd&lt; Outputs, Outputs &gt; &amp;R, units::second_t dt)</td></tr>
+<tr class="memdesc:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a discretized version of the provided continuous measurement noise covariance matrix.  <a href="namespacefrc.html#a89e7eb3221aa4a2af651bba4c4d3b7f1">More...</a><br /></td></tr>
+<tr class="separator:a89e7eb3221aa4a2af651bba4c4d3b7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_6a6d4dbfd7def32c812c83ce511abb63.html">system</a></li><li class="navelem"><a class="el" href="_discretization_8h.html">Discretization.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

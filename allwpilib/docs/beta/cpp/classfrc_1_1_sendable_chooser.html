@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -131,12 +131,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a347cd324e81176fa4e32f2a0f7a77158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158">SetDefaultOption</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, T object)</td></tr>
 <tr class="memdesc:a347cd324e81176fa4e32f2a0f7a77158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given object to the list of options and marks it as the default.  <a href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158">More...</a><br /></td></tr>
 <tr class="separator:a347cd324e81176fa4e32f2a0f7a77158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab01426bbcb86a824bd0e9af426b47ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">AddObject</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, T object)</td></tr>
-<tr class="memdesc:ab01426bbcb86a824bd0e9af426b47ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given object to the list of options.  <a href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">More...</a><br /></td></tr>
-<tr class="separator:ab01426bbcb86a824bd0e9af426b47ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d0bcabbab460e10f846abe03865641e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">AddDefault</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, T object)</td></tr>
-<tr class="memdesc:a6d0bcabbab460e10f846abe03865641e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the given object to the list of options and marks it as the default.  <a href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">More...</a><br /></td></tr>
-<tr class="separator:a6d0bcabbab460e10f846abe03865641e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80e334966831bfc40c0498e256dbf739"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser.html#a80e334966831bfc40c0498e256dbf739">GetSelected</a> () -&gt; decltype(_unwrap_smart_ptr(m_choices[&quot;&quot;]))</td></tr>
 <tr class="memdesc:a80e334966831bfc40c0498e256dbf739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of the selected option (a raw pointer U* if T = std::unique_ptr&lt;U&gt; or a std::weak_ptr&lt;U&gt; if T = std::shared_ptr&lt;U&gt;).  <a href="classfrc_1_1_sendable_chooser.html#a80e334966831bfc40c0498e256dbf739">More...</a><br /></td></tr>
 <tr class="separator:a80e334966831bfc40c0498e256dbf739"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,39 +162,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">GetName</a> () const</td></tr>
-<tr class="memdesc:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">More...</a><br /></td></tr>
-<tr class="separator:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
-<tr class="memdesc:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">More...</a><br /></td></tr>
-<tr class="separator:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
-<tr class="memdesc:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">More...</a><br /></td></tr>
-<tr class="separator:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">GetSubsystem</a> () const</td></tr>
-<tr class="memdesc:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">More...</a><br /></td></tr>
-<tr class="separator:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
-<tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
-<tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; SendableChooserBase &gt;</a></td></tr>
 <tr class="memitem:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a> ()=default</td></tr>
 <tr class="separator:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int channel)</td></tr>
-<tr class="memdesc:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">More...</a><br /></td></tr>
-<tr class="separator:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int moduleNumber, int channel)</td></tr>
-<tr class="memdesc:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">More...</a><br /></td></tr>
-<tr class="separator:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_sendable.html">Sendable</a> &gt; child)</td></tr>
-<tr class="memdesc:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">More...</a><br /></td></tr>
-<tr class="separator:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">AddChild</a> (void *child)</td></tr>
-<tr class="memdesc:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">More...</a><br /></td></tr>
-<tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a> ()</td></tr>
 <tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classfrc_1_1_sendable_chooser_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc_1_1_sendable_chooser_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc_1_1_sendable_chooser_base.html">frc::SendableChooserBase</a></td></tr>
@@ -233,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
 class frc::SendableChooser&lt; T &gt;</div><p >The <a class="el" href="classfrc_1_1_sendable_chooser.html" title="The SendableChooser class is a useful tool for presenting a selection of options to the SmartDashboar...">SendableChooser</a> class is a useful tool for presenting a selection of options to the <a class="el" href="classfrc_1_1_smart_dashboard.html">SmartDashboard</a>. </p>
-<p >For instance, you may wish to be able to select between multiple autonomous modes. You can do this by putting every possible <a class="el" href="classfrc_1_1_command.html" title="The Command class is at the very core of the entire command framework.">Command</a> you want to run as an autonomous into a <a class="el" href="classfrc_1_1_sendable_chooser.html" title="The SendableChooser class is a useful tool for presenting a selection of options to the SmartDashboar...">SendableChooser</a> and then put it into the <a class="el" href="classfrc_1_1_smart_dashboard.html">SmartDashboard</a> to have a list of options appear on the laptop. Once autonomous starts, simply ask the <a class="el" href="classfrc_1_1_sendable_chooser.html" title="The SendableChooser class is a useful tool for presenting a selection of options to the SmartDashboar...">SendableChooser</a> what the selected value is.</p>
+<p >For instance, you may wish to be able to select between multiple autonomous modes. You can do this by putting every possible Command you want to run as an autonomous into a <a class="el" href="classfrc_1_1_sendable_chooser.html" title="The SendableChooser class is a useful tool for presenting a selection of options to the SmartDashboar...">SendableChooser</a> and then put it into the <a class="el" href="classfrc_1_1_smart_dashboard.html">SmartDashboard</a> to have a list of options appear on the laptop. Once autonomous starts, simply ask the <a class="el" href="classfrc_1_1_sendable_chooser.html" title="The SendableChooser class is a useful tool for presenting a selection of options to the SmartDashboar...">SendableChooser</a> what the selected value is.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>The type of values to be stored </td></tr>
@@ -325,104 +292,6 @@ template&lt;class T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6d0bcabbab460e10f846abe03865641e" name="a6d0bcabbab460e10f846abe03865641e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d0bcabbab460e10f846abe03865641e">&#9670;&nbsp;</a></span>AddDefault()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classfrc_1_1_sendable_chooser.html">frc::SendableChooser</a>&lt; T &gt;::AddDefault </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>object</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add the given object to the list of options and marks it as the default. </p>
-<p >Functionally, this is very close to <a class="el" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption()</a> except that it will use this as the default option if none other is explicitly selected.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>use <a class="el" href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>the name of the option </td></tr>
-    <tr><td class="paramname">object</td><td>the option </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab01426bbcb86a824bd0e9af426b47ba0" name="ab01426bbcb86a824bd0e9af426b47ba0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab01426bbcb86a824bd0e9af426b47ba0">&#9670;&nbsp;</a></span>AddObject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classfrc_1_1_sendable_chooser.html">frc::SendableChooser</a>&lt; T &gt;::AddObject </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>object</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds the given object to the list of options. </p>
-<p >On the <a class="el" href="classfrc_1_1_smart_dashboard.html">SmartDashboard</a> on the desktop, the object will appear as the given name.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>use <a class="el" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>the name of the option </td></tr>
-    <tr><td class="paramname">object</td><td>the option </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aaa1f52d5ecc0929bffcefb2801b1c3cf" name="aaa1f52d5ecc0929bffcefb2801b1c3cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa1f52d5ecc0929bffcefb2801b1c3cf">&#9670;&nbsp;</a></span>AddOption()</h2>
 
@@ -599,7 +468,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -93,13 +93,15 @@ $(document).ready(function(){initNavTree('_swap_byte_order_8h.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">SwapByteOrder.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_compiler_8h_source.html">wpi/Compiler.h</a>&quot;</code><br />
-<code>#include &lt;cstddef&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;machine/endian.h&gt;</code><br />
 </div>
 <p><a href="_swap_byte_order_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -112,15 +114,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac32c01ac6fed2987aed5be727293fe71"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#ac32c01ac6fed2987aed5be727293fe71">wpi::sys::SwapByteOrder_16</a> (uint16_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ac32c01ac6fed2987aed5be727293fe71"><td class="mdescLeft">&#160;</td><td class="mdescRight">SwapByteOrder_16 - This function returns a byte-swapped representation of the 16-bit argument.  <a href="namespacewpi_1_1sys.html#ac32c01ac6fed2987aed5be727293fe71">More...</a><br /></td></tr>
-<tr class="separator:ac32c01ac6fed2987aed5be727293fe71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba132b15965913fb286efc9e2768eb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#abba132b15965913fb286efc9e2768eb9">wpi::sys::SwapByteOrder_32</a> (uint32_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:abba132b15965913fb286efc9e2768eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SwapByteOrder_32 - This function returns a byte-swapped representation of the 32-bit argument.  <a href="namespacewpi_1_1sys.html#abba132b15965913fb286efc9e2768eb9">More...</a><br /></td></tr>
-<tr class="separator:abba132b15965913fb286efc9e2768eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0de900b80b3efb5a5be270662d0907"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aee0de900b80b3efb5a5be270662d0907">wpi::sys::SwapByteOrder_64</a> (uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:aee0de900b80b3efb5a5be270662d0907"><td class="mdescLeft">&#160;</td><td class="mdescRight">SwapByteOrder_64 - This function returns a byte-swapped representation of the 64-bit argument.  <a href="namespacewpi_1_1sys.html#aee0de900b80b3efb5a5be270662d0907">More...</a><br /></td></tr>
-<tr class="separator:aee0de900b80b3efb5a5be270662d0907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2da1fed2899fcfbd9f07d967326a525"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af2da1fed2899fcfbd9f07d967326a525">wpi::ByteSwap_16</a> (uint16_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:af2da1fed2899fcfbd9f07d967326a525"><td class="mdescLeft">&#160;</td><td class="mdescRight">ByteSwap_16 - This function returns a byte-swapped representation of the 16-bit argument.  <a href="namespacewpi.html#af2da1fed2899fcfbd9f07d967326a525">More...</a><br /></td></tr>
+<tr class="separator:af2da1fed2899fcfbd9f07d967326a525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1253127a996aadeccdec1c291d6ab1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0b1253127a996aadeccdec1c291d6ab1">wpi::ByteSwap_32</a> (uint32_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a0b1253127a996aadeccdec1c291d6ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a byte-swapped representation of the 32-bit argument.  <a href="namespacewpi.html#a0b1253127a996aadeccdec1c291d6ab1">More...</a><br /></td></tr>
+<tr class="separator:a0b1253127a996aadeccdec1c291d6ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580a8d7ed139da4a7e9b6685138df8fa"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a580a8d7ed139da4a7e9b6685138df8fa">wpi::ByteSwap_64</a> (uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a580a8d7ed139da4a7e9b6685138df8fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns a byte-swapped representation of the 64-bit argument.  <a href="namespacewpi.html#a580a8d7ed139da4a7e9b6685138df8fa">More...</a><br /></td></tr>
+<tr class="separator:a580a8d7ed139da4a7e9b6685138df8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f28c05961db8438f65c1feee86e27b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aa9f28c05961db8438f65c1feee86e27b">wpi::sys::getSwappedBytes</a> (unsigned char C)</td></tr>
 <tr class="separator:aa9f28c05961db8438f65c1feee86e27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e49d61d0829edd426eb4517f4aa0ac"><td class="memItemLeft" align="right" valign="top">signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a98e49d61d0829edd426eb4517f4aa0ac">wpi::sys::getSwappedBytes</a> (signed char C)</td></tr>
@@ -147,9 +149,19 @@ Functions</h2></td></tr>
 <tr class="separator:a46d6bfbed50c6310a6b68d5c3559dc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d15371853e713389225e864846b625"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a57d15371853e713389225e864846b625">wpi::sys::getSwappedBytes</a> (double C)</td></tr>
 <tr class="separator:a57d15371853e713389225e864846b625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767b25356b7e3330efb9e64105ed8b0f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a767b25356b7e3330efb9e64105ed8b0f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a767b25356b7e3330efb9e64105ed8b0f">wpi::sys::getSwappedBytes</a> (T C)</td></tr>
+<tr class="separator:a767b25356b7e3330efb9e64105ed8b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a103e28fdca610111cb2572b14facecc3">wpi::sys::swapByteOrder</a> (T &amp;Value)</td></tr>
 <tr class="separator:a103e28fdca610111cb2572b14facecc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a46e48b8084b9b38d114a719b527ba903"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a46e48b8084b9b38d114a719b527ba903">wpi::sys::IsBigEndianHost</a> = false</td></tr>
+<tr class="separator:a46e48b8084b9b38d114a719b527ba903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac198a062390d3fbe35dd0853ff612771"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#ac198a062390d3fbe35dd0853ff612771">wpi::sys::IsLittleEndianHost</a> = !IsBigEndianHost</td></tr>
+<tr class="separator:ac198a062390d3fbe35dd0853ff612771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -157,7 +169,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_swap_byte_order_8h.html">SwapByteOrder.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

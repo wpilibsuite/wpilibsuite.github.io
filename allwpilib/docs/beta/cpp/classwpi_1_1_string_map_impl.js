@@ -19,5 +19,6 @@ var classwpi_1_1_string_map_impl =
     [ "NumBuckets", "classwpi_1_1_string_map_impl.html#a623638342c905f80702de4f1f06102a9", null ],
     [ "NumItems", "classwpi_1_1_string_map_impl.html#a8aa1217bbf965e08395bd5c1b9994a56", null ],
     [ "NumTombstones", "classwpi_1_1_string_map_impl.html#a627bc80564917174b0bea8724a30b7e1", null ],
-    [ "TheTable", "classwpi_1_1_string_map_impl.html#a4f6743330a64e2007e138a725b1a400b", null ]
+    [ "TheTable", "classwpi_1_1_string_map_impl.html#a4f6743330a64e2007e138a725b1a400b", null ],
+    [ "TombstoneIntVal", "classwpi_1_1_string_map_impl.html#af614ed948fcb9fbf698c4285f45a94b4", null ]
 ];

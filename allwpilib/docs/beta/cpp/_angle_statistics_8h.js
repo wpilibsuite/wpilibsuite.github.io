@@ -1,9 +1,9 @@
 var _angle_statistics_8h =
 [
-    [ "AngleAdd", "_angle_statistics_8h.html#a39b4e8d7bbb491df7d73f6c6509c6498", null ],
-    [ "AngleAdd", "_angle_statistics_8h.html#ac8246b76a68e53426c5f1627c0f74ebf", null ],
-    [ "AngleMean", "_angle_statistics_8h.html#a45afbc9970b08b8e35a71118b82afee3", null ],
-    [ "AngleMean", "_angle_statistics_8h.html#a2b7c3daf16191b9bab1146e6151f0a21", null ],
-    [ "AngleResidual", "_angle_statistics_8h.html#aae5520badaf7b2cea7920648d7183d1a", null ],
-    [ "AngleResidual", "_angle_statistics_8h.html#a763e6ef8316b55150cc23aa01a9ca752", null ]
+    [ "AngleAdd", "_angle_statistics_8h.html#a10937b90d6bc6f2d2d8a5aee156f1e57", null ],
+    [ "AngleAdd", "_angle_statistics_8h.html#a747d332e3a62b6b01b41561f0f1a3ff3", null ],
+    [ "AngleMean", "_angle_statistics_8h.html#aa909dfc4ca242c2f2950d5b95d558e15", null ],
+    [ "AngleMean", "_angle_statistics_8h.html#ae4ef754fe0bc4e3e1b49b575d4644b09", null ],
+    [ "AngleResidual", "_angle_statistics_8h.html#a7a51ea5d38bc408070e95e2b17796f3b", null ],
+    [ "AngleResidual", "_angle_statistics_8h.html#a10f0857d64cbff0cee928c9a3902b2aa", null ]
 ];

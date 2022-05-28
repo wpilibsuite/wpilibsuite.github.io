@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,9 @@ $(document).ready(function(){initNavTree('classformat__arg__store.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a191fd70a63bba0bbc4b0735c1d25a39c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classformat__arg__store.html#a191fd70a63bba0bbc4b0735c1d25a39c">format_arg_store</a> (const Args &amp;... args)</td></tr>
-<tr class="separator:a191fd70a63bba0bbc4b0735c1d25a39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1136b4b260864c5ae7b22900b0ca7ee9"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a1136b4b260864c5ae7b22900b0ca7ee9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classformat__arg__store.html#a1136b4b260864c5ae7b22900b0ca7ee9">format_arg_store</a> (T &amp;&amp;... args)</td></tr>
+<tr class="separator:a1136b4b260864c5ae7b22900b0ca7ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -117,15 +118,17 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Context, typename... Args&gt;<br />
 class format_arg_store&lt; Context, Args &gt;</div><p >\rst An array of references to arguments. </p>
-<p >It can be implicitly converted into <code>~fmt<a class="el" href="classbasic__format__args.html" title="\rst A view of a collection of formatting arguments.">basic_format_args</a></code> for passing into type-erased formatting functions such as <code>~fmt<a class="el" href="xchar_8h.html#a240b345af98fec48e13a5e2bc4e9e167">vformat</a></code>. \endrst </p>
+<p >It can be implicitly converted into <code>~fmt<a class="el" href="classbasic__format__args.html" title="\rst A view of a collection of formatting arguments.">basic_format_args</a></code> for passing into type-erased formatting functions such as <code>~fmt<a class="el" href="format-inl_8h.html#acf8fb67486c1bfcf6a1b50b9dae1ea16">vformat</a></code>. \endrst </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a191fd70a63bba0bbc4b0735c1d25a39c" name="a191fd70a63bba0bbc4b0735c1d25a39c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a191fd70a63bba0bbc4b0735c1d25a39c">&#9670;&nbsp;</a></span>format_arg_store()</h2>
+<a id="a1136b4b260864c5ae7b22900b0ca7ee9" name="a1136b4b260864c5ae7b22900b0ca7ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1136b4b260864c5ae7b22900b0ca7ee9">&#9670;&nbsp;</a></span>format_arg_store()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Context , typename... Args&gt; </div>
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -133,7 +136,7 @@ template&lt;typename Context , typename... Args&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; Context, Args &gt;::<a class="el" href="classformat__arg__store.html">format_arg_store</a> </td>
           <td>(</td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramtype">T &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
@@ -181,7 +184,7 @@ template&lt;typename Context , typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classformat__arg__store.html">format_arg_store</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -7,7 +7,7 @@ var dir_d0a9c1f552287e8d1bf6d4228ef74d88 =
       [ "frc::Jaguar", "classfrc_1_1_jaguar.html", "classfrc_1_1_jaguar" ]
     ] ],
     [ "MotorController.h", "_motor_controller_8h.html", [
-      [ "frc::MotorController", "classfrc_1_1_motor_controller.html", null ]
+      [ "frc::MotorController", "classfrc_1_1_motor_controller.html", "classfrc_1_1_motor_controller" ]
     ] ],
     [ "MotorControllerGroup.h", "_motor_controller_group_8h.html", [
       [ "frc::MotorControllerGroup", "classfrc_1_1_motor_controller_group.html", "classfrc_1_1_motor_controller_group" ]

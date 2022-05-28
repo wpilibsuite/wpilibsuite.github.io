@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -92,8 +92,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_motor_controller.html',''
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1_motor_controller-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">frc::MotorController Class Reference</div></div>
+  <div class="headertitle"><div class="title">frc::MotorController Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -107,57 +108,306 @@ Inheritance diagram for frc::MotorController:</div>
  <div class="center">
   <img src="classfrc_1_1_motor_controller.png" usemap="#frc::MotorController_map" alt=""/>
   <map id="frc::MotorController_map" name="frc::MotorController_map">
-<area href="classfrc_1_1_speed_controller.html" title="Interface for speed controlling devices." alt="frc::SpeedController" shape="rect" coords="342,0,503,24"/>
-<area href="classfrc_1_1_motor_controller_group.html" title="Allows multiple MotorController objects to be linked together." alt="frc::MotorControllerGroup" shape="rect" coords="0,112,161,136"/>
-<area href="classfrc_1_1_nidec_brushless.html" title="Nidec Brushless Motor." alt="frc::NidecBrushless" shape="rect" coords="171,112,332,136"/>
-<area href="classfrc_1_1_p_i_d_motor_controller.html" title="Wrapper so that PIDOutput is implemented for MotorController for old PIDController." alt="frc::PIDMotorController" shape="rect" coords="342,112,503,136"/>
-<area href="classfrc_1_1_p_w_m_motor_controller.html" title="Common base class for all PWM Motor Controllers." alt="frc::PWMMotorController" shape="rect" coords="513,112,674,136"/>
-<area href="classfrc_1_1_speed_controller_group.html" title="Allows multiple SpeedController objects to be linked together." alt="frc::SpeedControllerGroup" shape="rect" coords="684,112,845,136"/>
-<area href="classfrc_1_1_d_m_c60.html" title="Digilent DMC 60 Motor Controller." alt="frc::DMC60" shape="rect" coords="684,168,845,192"/>
-<area href="classfrc_1_1_jaguar.html" title="Luminary Micro / Vex Robotics Jaguar Motor Controller with PWM control." alt="frc::Jaguar" shape="rect" coords="684,224,845,248"/>
-<area href="classfrc_1_1_p_w_m_spark_max.html" title="REV Robotics SPARK MAX Motor Controller." alt="frc::PWMSparkMax" shape="rect" coords="684,280,845,304"/>
-<area href="classfrc_1_1_p_w_m_talon_f_x.html" title="Cross the Road Electronics (CTRE) Talon FX Motor Controller with PWM control." alt="frc::PWMTalonFX" shape="rect" coords="684,336,845,360"/>
-<area href="classfrc_1_1_p_w_m_talon_s_r_x.html" title="Cross the Road Electronics (CTRE) Talon SRX Motor Controller with PWM control." alt="frc::PWMTalonSRX" shape="rect" coords="684,392,845,416"/>
-<area href="classfrc_1_1_p_w_m_venom.html" title="Playing with Fusion Venom Smart Motor with PWM control." alt="frc::PWMVenom" shape="rect" coords="684,448,845,472"/>
-<area href="classfrc_1_1_p_w_m_victor_s_p_x.html" title="Cross the Road Electronics (CTRE) Victor SPX Motor Controller with PWM control." alt="frc::PWMVictorSPX" shape="rect" coords="684,504,845,528"/>
-<area href="classfrc_1_1_s_d540.html" title="Mindsensors SD540 Motor Controller." alt="frc::SD540" shape="rect" coords="684,560,845,584"/>
-<area href="classfrc_1_1_spark.html" title="REV Robotics SPARK Motor Controller." alt="frc::Spark" shape="rect" coords="684,616,845,640"/>
-<area href="classfrc_1_1_talon.html" title="Cross the Road Electronics (CTRE) Talon and Talon SR Motor Controller." alt="frc::Talon" shape="rect" coords="684,672,845,696"/>
-<area href="classfrc_1_1_victor.html" title="Vex Robotics Victor 888 Motor Controller." alt="frc::Victor" shape="rect" coords="684,728,845,752"/>
-<area href="classfrc_1_1_victor_s_p.html" title="Vex Robotics Victor SP Motor Controller." alt="frc::VictorSP" shape="rect" coords="684,784,845,808"/>
+<area href="classfrc_1_1_motor_controller_group.html" title="Allows multiple MotorController objects to be linked together." alt="frc::MotorControllerGroup" shape="rect" coords="0,56,158,80"/>
+<area href="classfrc_1_1_nidec_brushless.html" title="Nidec Brushless Motor." alt="frc::NidecBrushless" shape="rect" coords="168,56,326,80"/>
+<area href="classfrc_1_1_p_w_m_motor_controller.html" title="Common base class for all PWM Motor Controllers." alt="frc::PWMMotorController" shape="rect" coords="336,56,494,80"/>
+<area href="classfrc_1_1_d_m_c60.html" title="Digilent DMC 60 Motor Controller." alt="frc::DMC60" shape="rect" coords="504,112,662,136"/>
+<area href="classfrc_1_1_jaguar.html" title="Luminary Micro / Vex Robotics Jaguar Motor Controller with PWM control." alt="frc::Jaguar" shape="rect" coords="504,168,662,192"/>
+<area href="classfrc_1_1_p_w_m_spark_max.html" title="REV Robotics SPARK MAX Motor Controller." alt="frc::PWMSparkMax" shape="rect" coords="504,224,662,248"/>
+<area href="classfrc_1_1_p_w_m_talon_f_x.html" title="Cross the Road Electronics (CTRE) Talon FX Motor Controller with PWM control." alt="frc::PWMTalonFX" shape="rect" coords="504,280,662,304"/>
+<area href="classfrc_1_1_p_w_m_talon_s_r_x.html" title="Cross the Road Electronics (CTRE) Talon SRX Motor Controller with PWM control." alt="frc::PWMTalonSRX" shape="rect" coords="504,336,662,360"/>
+<area href="classfrc_1_1_p_w_m_venom.html" title="Playing with Fusion Venom Smart Motor with PWM control." alt="frc::PWMVenom" shape="rect" coords="504,392,662,416"/>
+<area href="classfrc_1_1_p_w_m_victor_s_p_x.html" title="Cross the Road Electronics (CTRE) Victor SPX Motor Controller with PWM control." alt="frc::PWMVictorSPX" shape="rect" coords="504,448,662,472"/>
+<area href="classfrc_1_1_s_d540.html" title="Mindsensors SD540 Motor Controller." alt="frc::SD540" shape="rect" coords="504,504,662,528"/>
+<area href="classfrc_1_1_spark.html" title="REV Robotics SPARK Motor Controller." alt="frc::Spark" shape="rect" coords="504,560,662,584"/>
+<area href="classfrc_1_1_talon.html" title="Cross the Road Electronics (CTRE) Talon and Talon SR Motor Controller." alt="frc::Talon" shape="rect" coords="504,616,662,640"/>
+<area href="classfrc_1_1_victor.html" title="Vex Robotics Victor 888 Motor Controller." alt="frc::Victor" shape="rect" coords="504,672,662,696"/>
+<area href="classfrc_1_1_victor_s_p.html" title="Vex Robotics Victor SP Motor Controller." alt="frc::VictorSP" shape="rect" coords="504,728,662,752"/>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_methods_classfrc_1_1_speed_controller"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1_speed_controller')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1_speed_controller.html">frc::SpeedController</a></td></tr>
-<tr class="memitem:a4ef9f2180123f5dddb586b1759e85fa8 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a4ef9f2180123f5dddb586b1759e85fa8">~SpeedController</a> ()=default</td></tr>
-<tr class="separator:a4ef9f2180123f5dddb586b1759e85fa8 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f0cefeb5a3ab00111b472bfaaf55ab7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a3f0cefeb5a3ab00111b472bfaaf55ab7">Set</a> (double speed)=0</td></tr>
-<tr class="memdesc:a3f0cefeb5a3ab00111b472bfaaf55ab7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for setting the speed of a speed controller.  <a href="classfrc_1_1_speed_controller.html#a3f0cefeb5a3ab00111b472bfaaf55ab7">More...</a><br /></td></tr>
-<tr class="separator:a3f0cefeb5a3ab00111b472bfaaf55ab7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a8252b1dbd027218c7966b15d0f9faff7">SetVoltage</a> (units::volt_t output)</td></tr>
-<tr class="memdesc:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voltage output of the <a class="el" href="classfrc_1_1_speed_controller.html" title="Interface for speed controlling devices.">SpeedController</a>.  <a href="classfrc_1_1_speed_controller.html#a8252b1dbd027218c7966b15d0f9faff7">More...</a><br /></td></tr>
-<tr class="separator:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af00a4289ba5a5e42cabd3d9a310300 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a6af00a4289ba5a5e42cabd3d9a310300">Get</a> () const =0</td></tr>
-<tr class="memdesc:a6af00a4289ba5a5e42cabd3d9a310300 inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for getting the current set speed of a speed controller.  <a href="classfrc_1_1_speed_controller.html#a6af00a4289ba5a5e42cabd3d9a310300">More...</a><br /></td></tr>
-<tr class="separator:a6af00a4289ba5a5e42cabd3d9a310300 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe6f8c159ce44424201ec2f108261223 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#abe6f8c159ce44424201ec2f108261223">SetInverted</a> (bool isInverted)=0</td></tr>
-<tr class="memdesc:abe6f8c159ce44424201ec2f108261223 inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for inverting direction of a speed controller.  <a href="classfrc_1_1_speed_controller.html#abe6f8c159ce44424201ec2f108261223">More...</a><br /></td></tr>
-<tr class="separator:abe6f8c159ce44424201ec2f108261223 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae717573b01e70fda23468bbf4c843d05 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#ae717573b01e70fda23468bbf4c843d05">GetInverted</a> () const =0</td></tr>
-<tr class="memdesc:ae717573b01e70fda23468bbf4c843d05 inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for returning the inversion state of a speed controller.  <a href="classfrc_1_1_speed_controller.html#ae717573b01e70fda23468bbf4c843d05">More...</a><br /></td></tr>
-<tr class="separator:ae717573b01e70fda23468bbf4c843d05 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a707b81e11fb0258c9ce7d969a6cdb60a inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a707b81e11fb0258c9ce7d969a6cdb60a">Disable</a> ()=0</td></tr>
-<tr class="memdesc:a707b81e11fb0258c9ce7d969a6cdb60a inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for disabling a motor.  <a href="classfrc_1_1_speed_controller.html#a707b81e11fb0258c9ce7d969a6cdb60a">More...</a><br /></td></tr>
-<tr class="separator:a707b81e11fb0258c9ce7d969a6cdb60a inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa339a5be84fccf629148933676da9fff inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#aa339a5be84fccf629148933676da9fff">StopMotor</a> ()=0</td></tr>
-<tr class="memdesc:aa339a5be84fccf629148933676da9fff inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface to stop the motor until Set is called again.  <a href="classfrc_1_1_speed_controller.html#aa339a5be84fccf629148933676da9fff">More...</a><br /></td></tr>
-<tr class="separator:aa339a5be84fccf629148933676da9fff inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0eb92efc037a524db9d8982ed0d61c28"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#a0eb92efc037a524db9d8982ed0d61c28">~MotorController</a> ()=default</td></tr>
+<tr class="separator:a0eb92efc037a524db9d8982ed0d61c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3503fdec17aee39377815ef1d252b239"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#a3503fdec17aee39377815ef1d252b239">Set</a> (double speed)=0</td></tr>
+<tr class="memdesc:a3503fdec17aee39377815ef1d252b239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for setting the speed of a motor controller.  <a href="classfrc_1_1_motor_controller.html#a3503fdec17aee39377815ef1d252b239">More...</a><br /></td></tr>
+<tr class="separator:a3503fdec17aee39377815ef1d252b239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613c23a3336e103876e433bcb8b5ad3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#a613c23a3336e103876e433bcb8b5ad3e">SetVoltage</a> (units::volt_t output)</td></tr>
+<tr class="memdesc:a613c23a3336e103876e433bcb8b5ad3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voltage output of the SpeedController.  <a href="classfrc_1_1_motor_controller.html#a613c23a3336e103876e433bcb8b5ad3e">More...</a><br /></td></tr>
+<tr class="separator:a613c23a3336e103876e433bcb8b5ad3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf93830f33e4867adfa87624f4257fb"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#abcf93830f33e4867adfa87624f4257fb">Get</a> () const =0</td></tr>
+<tr class="memdesc:abcf93830f33e4867adfa87624f4257fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for getting the current set speed of a motor controller.  <a href="classfrc_1_1_motor_controller.html#abcf93830f33e4867adfa87624f4257fb">More...</a><br /></td></tr>
+<tr class="separator:abcf93830f33e4867adfa87624f4257fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc030e926e929eeca97d812c603473c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#a3dc030e926e929eeca97d812c603473c">SetInverted</a> (bool isInverted)=0</td></tr>
+<tr class="memdesc:a3dc030e926e929eeca97d812c603473c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for inverting direction of a motor controller.  <a href="classfrc_1_1_motor_controller.html#a3dc030e926e929eeca97d812c603473c">More...</a><br /></td></tr>
+<tr class="separator:a3dc030e926e929eeca97d812c603473c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebc615a0549f255b8a002fde8972cb1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#acebc615a0549f255b8a002fde8972cb1">GetInverted</a> () const =0</td></tr>
+<tr class="memdesc:acebc615a0549f255b8a002fde8972cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for returning the inversion state of a motor controller.  <a href="classfrc_1_1_motor_controller.html#acebc615a0549f255b8a002fde8972cb1">More...</a><br /></td></tr>
+<tr class="separator:acebc615a0549f255b8a002fde8972cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362047a8c830e3a436cd944216459614"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#a362047a8c830e3a436cd944216459614">Disable</a> ()=0</td></tr>
+<tr class="memdesc:a362047a8c830e3a436cd944216459614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for disabling a motor.  <a href="classfrc_1_1_motor_controller.html#a362047a8c830e3a436cd944216459614">More...</a><br /></td></tr>
+<tr class="separator:a362047a8c830e3a436cd944216459614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ee5f38bb4211492c94253d27538c54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#a80ee5f38bb4211492c94253d27538c54">StopMotor</a> ()=0</td></tr>
+<tr class="memdesc:a80ee5f38bb4211492c94253d27538c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface to stop the motor until Set is called again.  <a href="classfrc_1_1_motor_controller.html#a80ee5f38bb4211492c94253d27538c54">More...</a><br /></td></tr>
+<tr class="separator:a80ee5f38bb4211492c94253d27538c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Interface for motor controlling devices. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0eb92efc037a524db9d8982ed0d61c28" name="a0eb92efc037a524db9d8982ed0d61c28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb92efc037a524db9d8982ed0d61c28">&#9670;&nbsp;</a></span>~MotorController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual frc::MotorController::~MotorController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a362047a8c830e3a436cd944216459614" name="a362047a8c830e3a436cd944216459614"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362047a8c830e3a436cd944216459614">&#9670;&nbsp;</a></span>Disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::MotorController::Disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface for disabling a motor. </p>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#affa672f42c667d3ceac2b978540cacb2">frc::MotorControllerGroup</a>, <a class="el" href="classfrc_1_1_nidec_brushless.html#ae396f15c6cf40a360c82a35fc99bfa93">frc::NidecBrushless</a>, and <a class="el" href="classfrc_1_1_p_w_m_motor_controller.html#a0910c229495436a8dc94dcbd478c0bae">frc::PWMMotorController</a>.</p>
+
+</div>
+</div>
+<a id="abcf93830f33e4867adfa87624f4257fb" name="abcf93830f33e4867adfa87624f4257fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf93830f33e4867adfa87624f4257fb">&#9670;&nbsp;</a></span>Get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double frc::MotorController::Get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface for getting the current set speed of a motor controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current set speed. Value is between -1.0 and 1.0. </dd></dl>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#a0666a9ab6022a9c6c6a7b31c23b5216a">frc::MotorControllerGroup</a>, <a class="el" href="classfrc_1_1_nidec_brushless.html#a204be39f9fd6ac3e08477c5dcc71041a">frc::NidecBrushless</a>, and <a class="el" href="classfrc_1_1_p_w_m_motor_controller.html#abdf28e68ae00418333a3ece09627a037">frc::PWMMotorController</a>.</p>
+
+</div>
+</div>
+<a id="acebc615a0549f255b8a002fde8972cb1" name="acebc615a0549f255b8a002fde8972cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebc615a0549f255b8a002fde8972cb1">&#9670;&nbsp;</a></span>GetInverted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool frc::MotorController::GetInverted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface for returning the inversion state of a motor controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>isInverted The state of inversion, true is inverted. </dd></dl>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#a927bec9e678a96b162ebb469c7ebf620">frc::MotorControllerGroup</a>, <a class="el" href="classfrc_1_1_nidec_brushless.html#adbfd4b9f2ed0a9556d303fd3aab18631">frc::NidecBrushless</a>, and <a class="el" href="classfrc_1_1_p_w_m_motor_controller.html#a3274a2293ee6990bcd15cc0dd8f33282">frc::PWMMotorController</a>.</p>
+
+</div>
+</div>
+<a id="a3503fdec17aee39377815ef1d252b239" name="a3503fdec17aee39377815ef1d252b239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3503fdec17aee39377815ef1d252b239">&#9670;&nbsp;</a></span>Set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::MotorController::Set </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>speed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface for setting the speed of a motor controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">speed</td><td>The speed to set. Value should be between -1.0 and 1.0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#a87d2d50dbdebbc4ed2da85d20d7a7607">frc::MotorControllerGroup</a>, <a class="el" href="classfrc_1_1_nidec_brushless.html#ad0fbeb8d79bbb8930b413b571abf255b">frc::NidecBrushless</a>, and <a class="el" href="classfrc_1_1_p_w_m_motor_controller.html#aad5957bc21f8549f5f6cbc9c1bd5afaf">frc::PWMMotorController</a>.</p>
+
+</div>
+</div>
+<a id="a3dc030e926e929eeca97d812c603473c" name="a3dc030e926e929eeca97d812c603473c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dc030e926e929eeca97d812c603473c">&#9670;&nbsp;</a></span>SetInverted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::MotorController::SetInverted </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isInverted</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface for inverting direction of a motor controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isInverted</td><td>The state of inversion, true is inverted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#afa117b6a610daf923e7ae77eb2e0e19e">frc::MotorControllerGroup</a>, <a class="el" href="classfrc_1_1_nidec_brushless.html#afe6ecb3d622f3b410043eabae0a1efe8">frc::NidecBrushless</a>, and <a class="el" href="classfrc_1_1_p_w_m_motor_controller.html#afcc5f0358caacf37c8eb817368a37df7">frc::PWMMotorController</a>.</p>
+
+</div>
+</div>
+<a id="a613c23a3336e103876e433bcb8b5ad3e" name="a613c23a3336e103876e433bcb8b5ad3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a613c23a3336e103876e433bcb8b5ad3e">&#9670;&nbsp;</a></span>SetVoltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::MotorController::SetVoltage </td>
+          <td>(</td>
+          <td class="paramtype">units::volt_t&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the voltage output of the SpeedController. </p>
+<p >Compensates for the current bus voltage to ensure that the desired voltage is output even if the battery voltage is below 12V - highly useful when the voltage outputs are "meaningful" (e.g. they come from a feedforward calculation).</p>
+<p >NOTE: This function <em>must</em> be called regularly in order for voltage compensation to work properly - unlike the ordinary set function, it is not "set it and forget it."</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>The voltage to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80ee5f38bb4211492c94253d27538c54" name="a80ee5f38bb4211492c94253d27538c54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ee5f38bb4211492c94253d27538c54">&#9670;&nbsp;</a></span>StopMotor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::MotorController::StopMotor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface to stop the motor until Set is called again. </p>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#a1018f6fa8af739eb2527ab5edbdca8b2">frc::MotorControllerGroup</a>, <a class="el" href="classfrc_1_1_nidec_brushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c">frc::NidecBrushless</a>, and <a class="el" href="classfrc_1_1_p_w_m_motor_controller.html#a7d268832fe2fc1a6a5dde3f27095a026">frc::PWMMotorController</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/motorcontrol/<a class="el" href="_motor_controller_8h_source.html">MotorController.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -166,7 +416,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_motor_controller.html">MotorController</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1raw__ostream.html',''); in
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classwpi_1_1raw__ostream-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wpi::raw_ostream Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
@@ -110,43 +111,48 @@ Inheritance diagram for wpi::raw_ostream:</div>
  <div class="center">
   <img src="classwpi_1_1raw__ostream.png" usemap="#wpi::raw_5Fostream_map" alt=""/>
   <map id="wpi::raw_5Fostream_map" name="wpi::raw_5Fostream_map">
-<area href="classwpi_1_1raw__os__ostream.html" title="raw_os_ostream - A raw_ostream that writes to an std::ostream." alt="wpi::raw_os_ostream" shape="rect" coords="0,56,165,80"/>
-<area href="classwpi_1_1raw__pwrite__stream.html" title="An abstract base class for streams implementations that also support a pwrite operation." alt="wpi::raw_pwrite_stream" shape="rect" coords="437,56,602,80"/>
-<area href="classwpi_1_1raw__socket__ostream.html" alt="wpi::raw_socket_ostream" shape="rect" coords="612,56,777,80"/>
-<area href="classwpi_1_1raw__string__ostream.html" title="A raw_ostream that writes to an std::string." alt="wpi::raw_string_ostream" shape="rect" coords="787,56,952,80"/>
-<area href="classwpi_1_1raw__uv__ostream.html" title="raw_ostream style output to a SmallVector of uv::Buffer buffers." alt="wpi::raw_uv_ostream" shape="rect" coords="962,56,1127,80"/>
-<area href="classwpi_1_1raw__fd__ostream.html" title="A raw_ostream that writes to a file descriptor." alt="wpi::raw_fd_ostream" shape="rect" coords="0,112,165,136"/>
-<area href="classwpi_1_1raw__null__ostream.html" title="A raw_ostream that discards all output." alt="wpi::raw_null_ostream" shape="rect" coords="175,112,340,136"/>
-<area href="classwpi_1_1raw__svector__ostream.html" title="A raw_ostream that writes to an SmallVector or SmallString." alt="wpi::raw_svector_ostream" shape="rect" coords="350,112,515,136"/>
-<area href="classwpi_1_1raw__usvector__ostream.html" title="A raw_ostream that writes to an SmallVector or SmallString." alt="wpi::raw_usvector_ostream" shape="rect" coords="525,112,690,136"/>
-<area href="classwpi_1_1raw__uvector__ostream.html" title="A raw_ostream that writes to a vector." alt="wpi::raw_uvector_ostream" shape="rect" coords="700,112,865,136"/>
-<area href="classwpi_1_1raw__vector__ostream.html" title="A raw_ostream that writes to a vector." alt="wpi::raw_vector_ostream" shape="rect" coords="875,112,1040,136"/>
-<area href="classwpi_1_1buffer__ostream.html" alt="wpi::buffer_ostream" shape="rect" coords="350,168,515,192"/>
+<area href="classwpi_1_1raw__os__ostream.html" title="raw_os_ostream - A raw_ostream that writes to an std::ostream." alt="wpi::raw_os_ostream" shape="rect" coords="0,56,166,80"/>
+<area href="classwpi_1_1raw__pwrite__stream.html" title="An abstract base class for streams implementations that also support a pwrite operation." alt="wpi::raw_pwrite_stream" shape="rect" coords="440,56,606,80"/>
+<area href="classwpi_1_1raw__string__ostream.html" title="A raw_ostream that writes to an std::string." alt="wpi::raw_string_ostream" shape="rect" coords="616,56,782,80"/>
+<area href="classwpi_1_1raw__fd__ostream.html" title="A raw_ostream that writes to a file descriptor." alt="wpi::raw_fd_ostream" shape="rect" coords="0,112,166,136"/>
+<area href="classwpi_1_1raw__null__ostream.html" title="A raw_ostream that discards all output." alt="wpi::raw_null_ostream" shape="rect" coords="176,112,342,136"/>
+<area href="classwpi_1_1raw__svector__ostream.html" title="A raw_ostream that writes to an SmallVector or SmallString." alt="wpi::raw_svector_ostream" shape="rect" coords="352,112,518,136"/>
+<area href="classwpi_1_1raw__usvector__ostream.html" title="A raw_ostream that writes to an SmallVector or SmallString." alt="wpi::raw_usvector_ostream" shape="rect" coords="528,112,694,136"/>
+<area href="classwpi_1_1raw__uvector__ostream.html" title="A raw_ostream that writes to a vector." alt="wpi::raw_uvector_ostream" shape="rect" coords="704,112,870,136"/>
+<area href="classwpi_1_1raw__vector__ostream.html" title="A raw_ostream that writes to a vector." alt="wpi::raw_vector_ostream" shape="rect" coords="880,112,1046,136"/>
+<area href="classwpi_1_1raw__fd__stream.html" title="A raw_ostream of a file for reading/writing/seeking." alt="wpi::raw_fd_stream" shape="rect" coords="0,168,166,192"/>
+<area href="classwpi_1_1buffer__ostream.html" alt="wpi::buffer_ostream" shape="rect" coords="264,168,430,192"/>
+<area href="classwpi_1_1buffer__unique__ostream.html" alt="wpi::buffer_unique_ostream" shape="rect" coords="440,168,606,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad198c8e10001e9e8747c50bcbe175631"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> { <br />
-&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a1431d2d047b21aa9dcd6c4a3289f8e31">BLACK</a> = 0
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a4baf838e3d705afcb6f4aa75ee6df99c">RED</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a303c195beced10c2ac6955347d67587c">GREEN</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a6c85750cfeb69d17b1a3a0ccc4b63238">YELLOW</a>
+<tr class="memitem:abcc763198eb5d01c038ad585513bb49a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a> { <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OK_OStream</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa8dfae711fb29865c49b78c8ea1a6f782">OK_FDStream</a>
+ }</td></tr>
+<tr class="separator:abcc763198eb5d01c038ad585513bb49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad198c8e10001e9e8747c50bcbe175631"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> { <br />
+&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a08d0012388564e95c3b4a7407cf04965">BLACK</a> = 0
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631aa2d9547b5d3dd9f05984475f7c926da0">RED</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a9de0e5dd94e861317e74964bed179fa0">GREEN</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a8a568e5f41b7e4da88fe5c4a00aad34e">YELLOW</a>
 , <br />
-&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a80b91ebb75bff4bbd36f1095a550c00f">BLUE</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a4102b19e4c74aa7104ffbaa61c84b31b">MAGENTA</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a458abd5e86a7d3b41fec7a77b58c80ff">CYAN</a>
-, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab674dd70b0802e7e3c097473157b5d39">WHITE</a>
+&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a1b3e1ee9bff86431dea6b181365ba65f">BLUE</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ac634ffea7195608364671ac52ee59a61">MAGENTA</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a344dd8cd533280795b9db82ef0c92749">CYAN</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab5bf627e448384cf3a4c35121ca6008d">WHITE</a>
 , <br />
-&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a3769503beca75af0fe29b4d88b5ade7c">SAVEDCOLOR</a>
+&#160;&#160;<a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631abd8a983d726207f3d1ba3ea7e2cfdf2a">SAVEDCOLOR</a>
+, <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab5859d8721cfdc0312b2838b9c985bc1">RESET</a>
 <br />
  }</td></tr>
 <tr class="separator:ad198c8e10001e9e8747c50bcbe175631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a159ee83950187660cf1ef9719a77a495"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a159ee83950187660cf1ef9719a77a495">raw_ostream</a> (bool unbuffered=false)</td></tr>
-<tr class="separator:a159ee83950187660cf1ef9719a77a495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9a99b5196d282e28f19ce12dba3ce1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a9b9a99b5196d282e28f19ce12dba3ce1">raw_ostream</a> (bool unbuffered=false, <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a> K=<a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OStreamKind::OK_OStream</a>)</td></tr>
+<tr class="separator:a9b9a99b5196d282e28f19ce12dba3ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a1c461a49e3baf15ffec06d4210d93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a43a1c461a49e3baf15ffec06d4210d93">raw_ostream</a> (const <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;)=delete</td></tr>
 <tr class="separator:a43a1c461a49e3baf15ffec06d4210d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade3e8c19aa6404e634869430536a757b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ade3e8c19aa6404e634869430536a757b">operator=</a> (const <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;)=delete</td></tr>
@@ -156,6 +162,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada0ea5133f01a499bd9d74d2874a29ae"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ada0ea5133f01a499bd9d74d2874a29ae">tell</a> () const</td></tr>
 <tr class="memdesc:ada0ea5133f01a499bd9d74d2874a29ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">tell - Return the current offset with the file.  <a href="classwpi_1_1raw__ostream.html#ada0ea5133f01a499bd9d74d2874a29ae">More...</a><br /></td></tr>
 <tr class="separator:ada0ea5133f01a499bd9d74d2874a29ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc3fe1570f5434ae5d0bf6147c6c4b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a0dc3fe1570f5434ae5d0bf6147c6c4b0">get_kind</a> () const</td></tr>
+<tr class="separator:a0dc3fe1570f5434ae5d0bf6147c6c4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ee344340953e369975eebe7e7ecfde"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a32ee344340953e369975eebe7e7ecfde">reserveExtraSpace</a> (uint64_t ExtraSize)</td></tr>
+<tr class="memdesc:a32ee344340953e369975eebe7e7ecfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">If possible, pre-allocate <code>ExtraSize</code> bytes for stream data.  <a href="classwpi_1_1raw__ostream.html#a32ee344340953e369975eebe7e7ecfde">More...</a><br /></td></tr>
+<tr class="separator:a32ee344340953e369975eebe7e7ecfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d02fa22e49bde41273c155cee368acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a5d02fa22e49bde41273c155cee368acf">SetBuffered</a> ()</td></tr>
 <tr class="memdesc:a5d02fa22e49bde41273c155cee368acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the stream to be buffered, with an automatically determined buffer size.  <a href="classwpi_1_1raw__ostream.html#a5d02fa22e49bde41273c155cee368acf">More...</a><br /></td></tr>
 <tr class="separator:a5d02fa22e49bde41273c155cee368acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,6 +233,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ca4c5a5b636b56acc32e169a8a332f1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a4ca4c5a5b636b56acc32e169a8a332f1">has_colors</a> () const</td></tr>
 <tr class="memdesc:a4ca4c5a5b636b56acc32e169a8a332f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function determines if this stream is displayed and supports colors.  <a href="classwpi_1_1raw__ostream.html#a4ca4c5a5b636b56acc32e169a8a332f1">More...</a><br /></td></tr>
 <tr class="separator:a4ca4c5a5b636b56acc32e169a8a332f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bec2e621488ef27afe5fd2145ca1adb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a1bec2e621488ef27afe5fd2145ca1adb">enable_colors</a> (bool)</td></tr>
+<tr class="separator:a1bec2e621488ef27afe5fd2145ca1adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bdb5e93cd0b0a3df806527ea9ae937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a70bdb5e93cd0b0a3df806527ea9ae937">tie</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> *TieTo)</td></tr>
+<tr class="memdesc:a70bdb5e93cd0b0a3df806527ea9ae937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tie this stream to the specified stream.  <a href="classwpi_1_1raw__ostream.html#a70bdb5e93cd0b0a3df806527ea9ae937">More...</a><br /></td></tr>
+<tr class="separator:a70bdb5e93cd0b0a3df806527ea9ae937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a05f91a45bd7e210a6693d5f8e963ef15"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a05f91a45bd7e210a6693d5f8e963ef15">BLACK</a> = Colors::BLACK</td></tr>
+<tr class="separator:a05f91a45bd7e210a6693d5f8e963ef15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f396a7b12336030e7e4a62799fccfb"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#af9f396a7b12336030e7e4a62799fccfb">RED</a> = Colors::RED</td></tr>
+<tr class="separator:af9f396a7b12336030e7e4a62799fccfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d47c1520819af2704f42c35e84d01c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#aa7d47c1520819af2704f42c35e84d01c">GREEN</a> = Colors::GREEN</td></tr>
+<tr class="separator:aa7d47c1520819af2704f42c35e84d01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb32362b8f45d0ac10889d50d60a3312"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#abb32362b8f45d0ac10889d50d60a3312">YELLOW</a> = Colors::YELLOW</td></tr>
+<tr class="separator:abb32362b8f45d0ac10889d50d60a3312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42bd9703a6054eac69fcf157252e957"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ab42bd9703a6054eac69fcf157252e957">BLUE</a> = Colors::BLUE</td></tr>
+<tr class="separator:ab42bd9703a6054eac69fcf157252e957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2d34540c9a14a7832ad08c07b48a20"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a0e2d34540c9a14a7832ad08c07b48a20">MAGENTA</a> = Colors::MAGENTA</td></tr>
+<tr class="separator:a0e2d34540c9a14a7832ad08c07b48a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d13c742e2a49b9877eb56a2f44471b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a14d13c742e2a49b9877eb56a2f44471b">CYAN</a> = Colors::CYAN</td></tr>
+<tr class="separator:a14d13c742e2a49b9877eb56a2f44471b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ede8baa5cb4c5364d15d8a70b87d931"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a6ede8baa5cb4c5364d15d8a70b87d931">WHITE</a> = Colors::WHITE</td></tr>
+<tr class="separator:a6ede8baa5cb4c5364d15d8a70b87d931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe78e79a628c103e175ac29a55db1d0c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#abe78e79a628c103e175ac29a55db1d0c">SAVEDCOLOR</a> = Colors::SAVEDCOLOR</td></tr>
+<tr class="separator:abe78e79a628c103e175ac29a55db1d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf3d43722659ffc06ac12e93604c93b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a5cf3d43722659ffc06ac12e93604c93b">RESET</a> = Colors::RESET</td></tr>
+<tr class="separator:a5cf3d43722659ffc06ac12e93604c93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -244,29 +283,64 @@ Protected Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">wpi::raw_ostream::Colors</a></td>
+          <td class="memname">enum class <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">wpi::raw_ostream::Colors</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a1431d2d047b21aa9dcd6c4a3289f8e31" name="ad198c8e10001e9e8747c50bcbe175631a1431d2d047b21aa9dcd6c4a3289f8e31"></a>BLACK&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a4baf838e3d705afcb6f4aa75ee6df99c" name="ad198c8e10001e9e8747c50bcbe175631a4baf838e3d705afcb6f4aa75ee6df99c"></a>RED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a303c195beced10c2ac6955347d67587c" name="ad198c8e10001e9e8747c50bcbe175631a303c195beced10c2ac6955347d67587c"></a>GREEN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a6c85750cfeb69d17b1a3a0ccc4b63238" name="ad198c8e10001e9e8747c50bcbe175631a6c85750cfeb69d17b1a3a0ccc4b63238"></a>YELLOW&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a80b91ebb75bff4bbd36f1095a550c00f" name="ad198c8e10001e9e8747c50bcbe175631a80b91ebb75bff4bbd36f1095a550c00f"></a>BLUE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a4102b19e4c74aa7104ffbaa61c84b31b" name="ad198c8e10001e9e8747c50bcbe175631a4102b19e4c74aa7104ffbaa61c84b31b"></a>MAGENTA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a458abd5e86a7d3b41fec7a77b58c80ff" name="ad198c8e10001e9e8747c50bcbe175631a458abd5e86a7d3b41fec7a77b58c80ff"></a>CYAN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631ab674dd70b0802e7e3c097473157b5d39" name="ad198c8e10001e9e8747c50bcbe175631ab674dd70b0802e7e3c097473157b5d39"></a>WHITE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a3769503beca75af0fe29b4d88b5ade7c" name="ad198c8e10001e9e8747c50bcbe175631a3769503beca75af0fe29b4d88b5ade7c"></a>SAVEDCOLOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a08d0012388564e95c3b4a7407cf04965" name="ad198c8e10001e9e8747c50bcbe175631a08d0012388564e95c3b4a7407cf04965"></a>BLACK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631aa2d9547b5d3dd9f05984475f7c926da0" name="ad198c8e10001e9e8747c50bcbe175631aa2d9547b5d3dd9f05984475f7c926da0"></a>RED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a9de0e5dd94e861317e74964bed179fa0" name="ad198c8e10001e9e8747c50bcbe175631a9de0e5dd94e861317e74964bed179fa0"></a>GREEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a8a568e5f41b7e4da88fe5c4a00aad34e" name="ad198c8e10001e9e8747c50bcbe175631a8a568e5f41b7e4da88fe5c4a00aad34e"></a>YELLOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a1b3e1ee9bff86431dea6b181365ba65f" name="ad198c8e10001e9e8747c50bcbe175631a1b3e1ee9bff86431dea6b181365ba65f"></a>BLUE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631ac634ffea7195608364671ac52ee59a61" name="ad198c8e10001e9e8747c50bcbe175631ac634ffea7195608364671ac52ee59a61"></a>MAGENTA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631a344dd8cd533280795b9db82ef0c92749" name="ad198c8e10001e9e8747c50bcbe175631a344dd8cd533280795b9db82ef0c92749"></a>CYAN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631ab5bf627e448384cf3a4c35121ca6008d" name="ad198c8e10001e9e8747c50bcbe175631ab5bf627e448384cf3a4c35121ca6008d"></a>WHITE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631abd8a983d726207f3d1ba3ea7e2cfdf2a" name="ad198c8e10001e9e8747c50bcbe175631abd8a983d726207f3d1ba3ea7e2cfdf2a"></a>SAVEDCOLOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad198c8e10001e9e8747c50bcbe175631ab5859d8721cfdc0312b2838b9c985bc1" name="ad198c8e10001e9e8747c50bcbe175631ab5859d8721cfdc0312b2838b9c985bc1"></a>RESET&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abcc763198eb5d01c038ad585513bb49a" name="abcc763198eb5d01c038ad585513bb49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc763198eb5d01c038ad585513bb49a">&#9670;&nbsp;</a></span>OStreamKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">wpi::raw_ostream::OStreamKind</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b" name="abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b"></a>OK_OStream&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abcc763198eb5d01c038ad585513bb49aa8dfae711fb29865c49b78c8ea1a6f782" name="abcc763198eb5d01c038ad585513bb49aa8dfae711fb29865c49b78c8ea1a6f782"></a>OK_FDStream&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a159ee83950187660cf1ef9719a77a495" name="a159ee83950187660cf1ef9719a77a495"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a159ee83950187660cf1ef9719a77a495">&#9670;&nbsp;</a></span>raw_ostream() <span class="overload">[1/2]</span></h2>
+<a id="a9b9a99b5196d282e28f19ce12dba3ce1" name="a9b9a99b5196d282e28f19ce12dba3ce1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9a99b5196d282e28f19ce12dba3ce1">&#9670;&nbsp;</a></span>raw_ostream() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,8 +352,18 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">wpi::raw_ostream::raw_ostream </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>unbuffered</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"><em>unbuffered</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a>&#160;</td>
+          <td class="paramname"><em>K</em> = <code><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b">OStreamKind::OK_OStream</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -396,6 +480,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1bec2e621488ef27afe5fd2145ca1adb" name="a1bec2e621488ef27afe5fd2145ca1adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bec2e621488ef27afe5fd2145ca1adb">&#9670;&nbsp;</a></span>enable_colors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::raw_ostream::enable_colors </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a209f3bcca8657748af3db4bab3ca6f53" name="a209f3bcca8657748af3db4bab3ca6f53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a209f3bcca8657748af3db4bab3ca6f53">&#9670;&nbsp;</a></span>flush()</h2>
 
@@ -410,6 +520,31 @@ Protected Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dc3fe1570f5434ae5d0bf6147c6c4b0" name="a0dc3fe1570f5434ae5d0bf6147c6c4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc3fe1570f5434ae5d0bf6147c6c4b0">&#9670;&nbsp;</a></span>get_kind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a">OStreamKind</a> wpi::raw_ostream::get_kind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -522,6 +657,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function determines if this stream is displayed and supports colors. </p>
+<p >The result is unaffected by calls to enable_color(). </p>
 
 </div>
 </div>
@@ -886,6 +1022,37 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a32ee344340953e369975eebe7e7ecfde" name="a32ee344340953e369975eebe7e7ecfde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ee344340953e369975eebe7e7ecfde">&#9670;&nbsp;</a></span>reserveExtraSpace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::raw_ostream::reserveExtraSpace </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>ExtraSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If possible, pre-allocate <code>ExtraSize</code> bytes for stream data. </p>
+<p >i.e. it extends internal buffers to keep additional ExtraSize bytes. So that the stream could keep at least <a class="el" href="classwpi_1_1raw__ostream.html#ada0ea5133f01a499bd9d74d2874a29ae" title="tell - Return the current offset with the file.">tell()</a> + ExtraSize bytes without re-allocations. <a class="el" href="classwpi_1_1raw__ostream.html#a32ee344340953e369975eebe7e7ecfde" title="If possible, pre-allocate ExtraSize bytes for stream data.">reserveExtraSpace()</a> does not change the size/data of the stream. </p>
+
+<p>Reimplemented in <a class="el" href="classwpi_1_1raw__string__ostream.html#a6e601042b59d772c5ab012c806d4a519">wpi::raw_string_ostream</a>, and <a class="el" href="classwpi_1_1raw__svector__ostream.html#aee96100bc3bc216af534d181d002f15b">wpi::raw_svector_ostream</a>.</p>
+
+</div>
+</div>
 <a id="ad78f21707a8d41caa3e5437dca89cc56" name="ad78f21707a8d41caa3e5437dca89cc56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad78f21707a8d41caa3e5437dca89cc56">&#9670;&nbsp;</a></span>resetColor()</h2>
 
@@ -1082,6 +1249,35 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a70bdb5e93cd0b0a3df806527ea9ae937" name="a70bdb5e93cd0b0a3df806527ea9ae937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70bdb5e93cd0b0a3df806527ea9ae937">&#9670;&nbsp;</a></span>tie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::raw_ostream::tie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> *&#160;</td>
+          <td class="paramname"><em>TieTo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tie this stream to the specified stream. </p>
+<p >Replaces any existing tied-to stream. Specifying a nullptr unties the stream. </p>
+
+</div>
+</div>
 <a id="a27bd39363ae68e667f1f54f2207bec3d" name="a27bd39363ae68e667f1f54f2207bec3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27bd39363ae68e667f1f54f2207bec3d">&#9670;&nbsp;</a></span>write() <span class="overload">[1/3]</span></h2>
 
@@ -1215,6 +1411,227 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a05f91a45bd7e210a6693d5f8e963ef15" name="a05f91a45bd7e210a6693d5f8e963ef15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f91a45bd7e210a6693d5f8e963ef15">&#9670;&nbsp;</a></span>BLACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::BLACK = Colors::BLACK</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab42bd9703a6054eac69fcf157252e957" name="ab42bd9703a6054eac69fcf157252e957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42bd9703a6054eac69fcf157252e957">&#9670;&nbsp;</a></span>BLUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::BLUE = Colors::BLUE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14d13c742e2a49b9877eb56a2f44471b" name="a14d13c742e2a49b9877eb56a2f44471b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d13c742e2a49b9877eb56a2f44471b">&#9670;&nbsp;</a></span>CYAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::CYAN = Colors::CYAN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7d47c1520819af2704f42c35e84d01c" name="aa7d47c1520819af2704f42c35e84d01c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d47c1520819af2704f42c35e84d01c">&#9670;&nbsp;</a></span>GREEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::GREEN = Colors::GREEN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e2d34540c9a14a7832ad08c07b48a20" name="a0e2d34540c9a14a7832ad08c07b48a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2d34540c9a14a7832ad08c07b48a20">&#9670;&nbsp;</a></span>MAGENTA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::MAGENTA = Colors::MAGENTA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9f396a7b12336030e7e4a62799fccfb" name="af9f396a7b12336030e7e4a62799fccfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f396a7b12336030e7e4a62799fccfb">&#9670;&nbsp;</a></span>RED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::RED = Colors::RED</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cf3d43722659ffc06ac12e93604c93b" name="a5cf3d43722659ffc06ac12e93604c93b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf3d43722659ffc06ac12e93604c93b">&#9670;&nbsp;</a></span>RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::RESET = Colors::RESET</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe78e79a628c103e175ac29a55db1d0c" name="abe78e79a628c103e175ac29a55db1d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe78e79a628c103e175ac29a55db1d0c">&#9670;&nbsp;</a></span>SAVEDCOLOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::SAVEDCOLOR = Colors::SAVEDCOLOR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ede8baa5cb4c5364d15d8a70b87d931" name="a6ede8baa5cb4c5364d15d8a70b87d931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ede8baa5cb4c5364d15d8a70b87d931">&#9670;&nbsp;</a></span>WHITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::WHITE = Colors::WHITE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb32362b8f45d0ac10889d50d60a3312" name="abb32362b8f45d0ac10889d50d60a3312"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb32362b8f45d0ac10889d50d60a3312">&#9670;&nbsp;</a></span>YELLOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631">Colors</a> wpi::raw_ostream::YELLOW = Colors::YELLOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="raw__ostream_8h_source.html">raw_ostream.h</a></li>
 </ul>
@@ -1224,7 +1641,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

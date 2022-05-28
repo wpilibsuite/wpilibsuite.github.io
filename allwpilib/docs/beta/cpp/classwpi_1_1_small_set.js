@@ -5,6 +5,7 @@ var classwpi_1_1_small_set =
     [ "SmallSet", "classwpi_1_1_small_set.html#a8355633677918e525400e554bf9d4223", null ],
     [ "begin", "classwpi_1_1_small_set.html#af35cfde6f0fc189aed4bf96afe57afc4", null ],
     [ "clear", "classwpi_1_1_small_set.html#aef2000b6a8ae6c2a6db3404f138d8bd3", null ],
+    [ "contains", "classwpi_1_1_small_set.html#a4fa5ee2c2af9242f934eb978e60e506b", null ],
     [ "count", "classwpi_1_1_small_set.html#a67b662173701e8a220bf42f024bdd64a", null ],
     [ "empty", "classwpi_1_1_small_set.html#a7aab06a83a430a921b6b7beee365adaf", null ],
     [ "end", "classwpi_1_1_small_set.html#a101725625a7fbbf09cae50c683ecd000", null ],

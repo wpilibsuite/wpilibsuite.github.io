@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('_numerical_jacobian_8h.html',''); init
   <div class="headertitle"><div class="title">NumericalJacobian.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_core.html">Eigen/Core</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_eigen_core_8h_source.html">frc/EigenCore.h</a>&quot;</code><br />
 </div>
 <p><a href="_numerical_jacobian_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -108,18 +108,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename F &gt; </td></tr>
-<tr class="memitem:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0c0a5c1b9e1e5955a5db862bb4774228">frc::NumericalJacobian</a> (F &amp;&amp;f, const Eigen::Vector&lt; double, Cols &gt; &amp;x)</td></tr>
-<tr class="memdesc:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x).  <a href="namespacefrc.html#a0c0a5c1b9e1e5955a5db862bb4774228">More...</a><br /></td></tr>
-<tr class="separator:a0c0a5c1b9e1e5955a5db862bb4774228"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af38be2266b752195a2810857834381f9"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
-<tr class="memitem:af38be2266b752195a2810857834381f9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af38be2266b752195a2810857834381f9">frc::NumericalJacobianX</a> (F &amp;&amp;f, const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:af38be2266b752195a2810857834381f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x, u, ...).  <a href="namespacefrc.html#af38be2266b752195a2810857834381f9">More...</a><br /></td></tr>
-<tr class="separator:af38be2266b752195a2810857834381f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107358984ffd547e92c280dde5aeb81a"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
-<tr class="memitem:a107358984ffd547e92c280dde5aeb81a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a107358984ffd547e92c280dde5aeb81a">frc::NumericalJacobianU</a> (F &amp;&amp;f, const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a107358984ffd547e92c280dde5aeb81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to u for f(x, u, ...).  <a href="namespacefrc.html#a107358984ffd547e92c280dde5aeb81a">More...</a><br /></td></tr>
-<tr class="separator:a107358984ffd547e92c280dde5aeb81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename F &gt; </td></tr>
+<tr class="memitem:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2bb99df52b01ecbd7a1ba4e33572dc57">frc::NumericalJacobian</a> (F &amp;&amp;f, const Vectord&lt; Cols &gt; &amp;x)</td></tr>
+<tr class="memdesc:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x).  <a href="namespacefrc.html#a2bb99df52b01ecbd7a1ba4e33572dc57">More...</a><br /></td></tr>
+<tr class="separator:a2bb99df52b01ecbd7a1ba4e33572dc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43b907b7ccd7490353e004cd75b25ac"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:ae43b907b7ccd7490353e004cd75b25ac"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae43b907b7ccd7490353e004cd75b25ac">frc::NumericalJacobianX</a> (F &amp;&amp;f, const Vectord&lt; States &gt; &amp;x, const Vectord&lt; Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ae43b907b7ccd7490353e004cd75b25ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x, u, ...).  <a href="namespacefrc.html#ae43b907b7ccd7490353e004cd75b25ac">More...</a><br /></td></tr>
+<tr class="separator:ae43b907b7ccd7490353e004cd75b25ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac14572ce36a3df1d92fbc762cef76770"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:ac14572ce36a3df1d92fbc762cef76770"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac14572ce36a3df1d92fbc762cef76770">frc::NumericalJacobianU</a> (F &amp;&amp;f, const Vectord&lt; States &gt; &amp;x, const Vectord&lt; Inputs &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ac14572ce36a3df1d92fbc762cef76770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to u for f(x, u, ...).  <a href="namespacefrc.html#ac14572ce36a3df1d92fbc762cef76770">More...</a><br /></td></tr>
+<tr class="separator:ac14572ce36a3df1d92fbc762cef76770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -127,7 +127,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_6a6d4dbfd7def32c812c83ce511abb63.html">system</a></li><li class="navelem"><a class="el" href="_numerical_jacobian_8h.html">NumericalJacobian.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

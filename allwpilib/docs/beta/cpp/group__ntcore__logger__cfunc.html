@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -100,13 +100,13 @@ $(document).ready(function(){initNavTree('group__ntcore__logger__cfunc.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0a9c5c32c23466b02558b2dd5aae593b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">NT_LogFunc</a>) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *msg)</td></tr>
+<tr class="memitem:ga0a9c5c32c23466b02558b2dd5aae593b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">NT_LogFunc</a>) (void *data, const struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *msg)</td></tr>
 <tr class="memdesc:ga0a9c5c32c23466b02558b2dd5aae593b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log function.  <a href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">More...</a><br /></td></tr>
 <tr class="separator:ga0a9c5c32c23466b02558b2dd5aae593b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga28678881c133ffe87f91f621b5558cee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee">NT_AddLogger</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, void *<a class="el" href="structdata.html">data</a>, <a class="el" href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">NT_LogFunc</a> func, unsigned int min_level, unsigned int max_level)</td></tr>
+<tr class="memitem:ga28678881c133ffe87f91f621b5558cee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee">NT_AddLogger</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, void *data, <a class="el" href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">NT_LogFunc</a> func, unsigned int min_level, unsigned int max_level)</td></tr>
 <tr class="memdesc:ga28678881c133ffe87f91f621b5558cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee">More...</a><br /></td></tr>
 <tr class="separator:ga28678881c133ffe87f91f621b5558cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab73de0e404687276b238f4a028606a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gab73de0e404687276b238f4a028606a49">NT_CreateLoggerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
@@ -143,7 +143,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* NT_LogFunc) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *msg)</td>
+          <td class="memname">typedef void(* NT_LogFunc) (void *data, const struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *msg)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -510,7 +510,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

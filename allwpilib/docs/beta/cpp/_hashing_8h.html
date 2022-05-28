@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -99,15 +99,14 @@ $(document).ready(function(){initNavTree('_hashing_8h.html',''); initResizable()
   <div class="headertitle"><div class="title">Hashing.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_endian_8h_source.html">wpi/Endian.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_error_handling_8h_source.html">wpi/ErrorHandling.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_swap_byte_order_8h_source.html">wpi/SwapByteOrder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="type__traits_8h_source.html">wpi/type_traits.h</a>&quot;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 </div>
 <p><a href="_hashing_8h_source.html">Go to the source code of this file.</a></p>
@@ -140,10 +139,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a623aaf71d4a135fb4a86bee53b8ce29b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a623aaf71d4a135fb4a86bee53b8ce29b"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_integral_or_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, hash_code &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a623aaf71d4a135fb4a86bee53b8ce29b">wpi::hash_value</a> (T <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a623aaf71d4a135fb4a86bee53b8ce29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for any integer value.  <a href="namespacewpi.html#a623aaf71d4a135fb4a86bee53b8ce29b">More...</a><br /></td></tr>
-<tr class="separator:a623aaf71d4a135fb4a86bee53b8ce29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95acb3c2c107b75867a237c1701577c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa95acb3c2c107b75867a237c1701577c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; is_integral_or_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, hash_code &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa95acb3c2c107b75867a237c1701577c">wpi::hash_value</a> (T <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:aa95acb3c2c107b75867a237c1701577c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for any integer value.  <a href="namespacewpi.html#aa95acb3c2c107b75867a237c1701577c">More...</a><br /></td></tr>
+<tr class="separator:aa95acb3c2c107b75867a237c1701577c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eb96f94c028542a238feaf8cabb44dc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8eb96f94c028542a238feaf8cabb44dc"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8eb96f94c028542a238feaf8cabb44dc">wpi::hash_value</a> (const T *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>)</td></tr>
 <tr class="memdesc:a8eb96f94c028542a238feaf8cabb44dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a pointer's address.  <a href="namespacewpi.html#a8eb96f94c028542a238feaf8cabb44dc">More...</a><br /></td></tr>
@@ -152,6 +151,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a6b9238bfb621b5c47abfc9480889408e"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6b9238bfb621b5c47abfc9480889408e">wpi::hash_value</a> (const std::pair&lt; T, U &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
 <tr class="memdesc:a6b9238bfb621b5c47abfc9480889408e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a pair of objects.  <a href="namespacewpi.html#a6b9238bfb621b5c47abfc9480889408e">More...</a><br /></td></tr>
 <tr class="separator:a6b9238bfb621b5c47abfc9480889408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a09058a5e42b0bee35ae7f6d7bf0822a0">wpi::hash_value</a> (const std::tuple&lt; Ts... &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
+<tr class="memdesc:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a tuple.  <a href="namespacewpi.html#a09058a5e42b0bee35ae7f6d7bf0822a0">More...</a><br /></td></tr>
+<tr class="separator:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8e2f8fc1e0870f5b219a8bc1d3654ecc">wpi::hash_value</a> (const std::basic_string&lt; T &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
 <tr class="memdesc:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a standard string.  <a href="namespacewpi.html#a8e2f8fc1e0870f5b219a8bc1d3654ecc">More...</a><br /></td></tr>
@@ -184,14 +187,14 @@ Functions</h2></td></tr>
 <tr class="separator:af92f08c0ae85e093aafeeb2791efb0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3abec1803a0ccab070f60874811d24b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#ae3abec1803a0ccab070f60874811d24b">wpi::hashing::detail::get_execution_seed</a> ()</td></tr>
 <tr class="separator:ae3abec1803a0ccab070f60874811d24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2acecc42600e73f0064b6f513ead6aa2"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2acecc42600e73f0064b6f513ead6aa2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_hashable_data&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a2acecc42600e73f0064b6f513ead6aa2">wpi::hashing::detail::get_hashable_data</a> (const T &amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a2acecc42600e73f0064b6f513ead6aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get the hashable data representation for a type.  <a href="namespacewpi_1_1hashing_1_1detail.html#a2acecc42600e73f0064b6f513ead6aa2">More...</a><br /></td></tr>
-<tr class="separator:a2acecc42600e73f0064b6f513ead6aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41dc9579ff4402ebc962c84078c39ff"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa41dc9579ff4402ebc962c84078c39ff"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!is_hashable_data&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, size_t &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#aa41dc9579ff4402ebc962c84078c39ff">wpi::hashing::detail::get_hashable_data</a> (const T &amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:aa41dc9579ff4402ebc962c84078c39ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get the hashable data representation for a type.  <a href="namespacewpi_1_1hashing_1_1detail.html#aa41dc9579ff4402ebc962c84078c39ff">More...</a><br /></td></tr>
-<tr class="separator:aa41dc9579ff4402ebc962c84078c39ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a398b619f230ce7970823f4630ff66"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a99a398b619f230ce7970823f4630ff66"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; is_hashable_data&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a99a398b619f230ce7970823f4630ff66">wpi::hashing::detail::get_hashable_data</a> (const T &amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a99a398b619f230ce7970823f4630ff66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get the hashable data representation for a type.  <a href="namespacewpi_1_1hashing_1_1detail.html#a99a398b619f230ce7970823f4630ff66">More...</a><br /></td></tr>
+<tr class="separator:a99a398b619f230ce7970823f4630ff66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbca8e6fdbb5f5cd890370d143039230"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acbca8e6fdbb5f5cd890370d143039230"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;!is_hashable_data&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, size_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#acbca8e6fdbb5f5cd890370d143039230">wpi::hashing::detail::get_hashable_data</a> (const T &amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:acbca8e6fdbb5f5cd890370d143039230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to get the hashable data representation for a type.  <a href="namespacewpi_1_1hashing_1_1detail.html#acbca8e6fdbb5f5cd890370d143039230">More...</a><br /></td></tr>
+<tr class="separator:acbca8e6fdbb5f5cd890370d143039230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae648ac591eccd4dee577c45396194a9e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae648ac591eccd4dee577c45396194a9e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#ae648ac591eccd4dee577c45396194a9e">wpi::hashing::detail::store_and_advance</a> (char *&amp;buffer_ptr, char *buffer_end, const T &amp;<a class="el" href="classvalue.html">value</a>, size_t offset=0)</td></tr>
 <tr class="memdesc:ae648ac591eccd4dee577c45396194a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to store data from a value into a buffer and advance the pointer into that buffer.  <a href="namespacewpi_1_1hashing_1_1detail.html#ae648ac591eccd4dee577c45396194a9e">More...</a><br /></td></tr>
@@ -200,10 +203,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a5c114fb3c3338fcd0f65f2334a5512a3"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a5c114fb3c3338fcd0f65f2334a5512a3">wpi::hashing::detail::hash_combine_range_impl</a> (InputIteratorT first, InputIteratorT last)</td></tr>
 <tr class="memdesc:a5c114fb3c3338fcd0f65f2334a5512a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the combining of integral values into a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a>.  <a href="namespacewpi_1_1hashing_1_1detail.html#a5c114fb3c3338fcd0f65f2334a5512a3">More...</a><br /></td></tr>
 <tr class="separator:a5c114fb3c3338fcd0f65f2334a5512a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c90ffbf275e68e1036e080fcb0815e2"><td class="memTemplParams" colspan="2">template&lt;typename ValueT &gt; </td></tr>
-<tr class="memitem:a5c90ffbf275e68e1036e080fcb0815e2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; is_hashable_data&lt; ValueT &gt;::<a class="el" href="classvalue.html">value</a>, hash_code &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a5c90ffbf275e68e1036e080fcb0815e2">wpi::hashing::detail::hash_combine_range_impl</a> (ValueT *first, ValueT *last)</td></tr>
-<tr class="memdesc:a5c90ffbf275e68e1036e080fcb0815e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the combining of integral values into a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a>.  <a href="namespacewpi_1_1hashing_1_1detail.html#a5c90ffbf275e68e1036e080fcb0815e2">More...</a><br /></td></tr>
-<tr class="separator:a5c90ffbf275e68e1036e080fcb0815e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446f17343d541c361f2b55c32533bf31"><td class="memTemplParams" colspan="2">template&lt;typename ValueT &gt; </td></tr>
+<tr class="memitem:a446f17343d541c361f2b55c32533bf31"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; is_hashable_data&lt; ValueT &gt;::<a class="el" href="classvalue.html">value</a>, hash_code &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a446f17343d541c361f2b55c32533bf31">wpi::hashing::detail::hash_combine_range_impl</a> (ValueT *first, ValueT *last)</td></tr>
+<tr class="memdesc:a446f17343d541c361f2b55c32533bf31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the combining of integral values into a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a>.  <a href="namespacewpi_1_1hashing_1_1detail.html#a446f17343d541c361f2b55c32533bf31">More...</a><br /></td></tr>
+<tr class="separator:a446f17343d541c361f2b55c32533bf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a583ca8bbb8e3ee49e8f65df91a6ecaaf"><td class="memTemplParams" colspan="2">template&lt;typename InputIteratorT &gt; </td></tr>
 <tr class="memitem:a583ca8bbb8e3ee49e8f65df91a6ecaaf"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a583ca8bbb8e3ee49e8f65df91a6ecaaf">wpi::hash_combine_range</a> (InputIteratorT first, InputIteratorT last)</td></tr>
 <tr class="memdesc:a583ca8bbb8e3ee49e8f65df91a6ecaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a sequence of values.  <a href="namespacewpi.html#a583ca8bbb8e3ee49e8f65df91a6ecaaf">More...</a><br /></td></tr>
@@ -215,21 +218,21 @@ Functions</h2></td></tr>
 <tr class="memitem:a26c1390b275d6080f5136db6cc67f76a"><td class="memItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a26c1390b275d6080f5136db6cc67f76a">wpi::hashing::detail::hash_integer_value</a> (uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a26c1390b275d6080f5136db6cc67f76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to hash the value of a single integer.  <a href="namespacewpi_1_1hashing_1_1detail.html#a26c1390b275d6080f5136db6cc67f76a">More...</a><br /></td></tr>
 <tr class="separator:a26c1390b275d6080f5136db6cc67f76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af09e8597a2987e4b39b413b5ba579d6e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af09e8597a2987e4b39b413b5ba579d6e"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af09e8597a2987e4b39b413b5ba579d6e">wpi::hash_value</a> (const std::basic_string_view&lt; T &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
-<tr class="separator:af09e8597a2987e4b39b413b5ba579d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4556e9d0bd2d8a93250f49d11f4685d3"><td class="memTemplParams" colspan="2">template&lt;typename... Ts, std::size_t... Indices&gt; </td></tr>
+<tr class="memitem:a4556e9d0bd2d8a93250f49d11f4685d3"><td class="memTemplItemLeft" align="right" valign="top">hash_code&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a4556e9d0bd2d8a93250f49d11f4685d3">wpi::hashing::detail::hash_value_tuple_helper</a> (const std::tuple&lt; Ts... &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>, std::index_sequence&lt; Indices... &gt;)</td></tr>
+<tr class="separator:a4556e9d0bd2d8a93250f49d11f4685d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a71c276aa24423d63f6ca828b9271e68b"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a71c276aa24423d63f6ca828b9271e68b">wpi::hashing::detail::k0</a> = 0xc3a5c85c97cb3127ULL</td></tr>
-<tr class="memdesc:a71c276aa24423d63f6ca828b9271e68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some primes between 2^63 and 2^64 for various uses.  <a href="namespacewpi_1_1hashing_1_1detail.html#a71c276aa24423d63f6ca828b9271e68b">More...</a><br /></td></tr>
-<tr class="separator:a71c276aa24423d63f6ca828b9271e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05c9062372910aace422924b08ccc1fa"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a05c9062372910aace422924b08ccc1fa">wpi::hashing::detail::k1</a> = 0xb492b66fbe98f273ULL</td></tr>
-<tr class="separator:a05c9062372910aace422924b08ccc1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ad97857162781092a8b0398ebd3d82f"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a5ad97857162781092a8b0398ebd3d82f">wpi::hashing::detail::k2</a> = 0x9ae16a3b2f90404fULL</td></tr>
-<tr class="separator:a5ad97857162781092a8b0398ebd3d82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6de7c05013e8be20427390bddc9bdf60"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a6de7c05013e8be20427390bddc9bdf60">wpi::hashing::detail::k3</a> = 0xc949d7c7509e6557ULL</td></tr>
-<tr class="separator:a6de7c05013e8be20427390bddc9bdf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c8eb5f04ccbb969c14db3f312c2000"><td class="memItemLeft" align="right" valign="top">static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a93c8eb5f04ccbb969c14db3f312c2000">wpi::hashing::detail::k0</a> = 0xc3a5c85c97cb3127ULL</td></tr>
+<tr class="memdesc:a93c8eb5f04ccbb969c14db3f312c2000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some primes between 2^63 and 2^64 for various uses.  <a href="namespacewpi_1_1hashing_1_1detail.html#a93c8eb5f04ccbb969c14db3f312c2000">More...</a><br /></td></tr>
+<tr class="separator:a93c8eb5f04ccbb969c14db3f312c2000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03097c3fe12aebe7428417767a2a146a"><td class="memItemLeft" align="right" valign="top">static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a03097c3fe12aebe7428417767a2a146a">wpi::hashing::detail::k1</a> = 0xb492b66fbe98f273ULL</td></tr>
+<tr class="separator:a03097c3fe12aebe7428417767a2a146a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a7f60bac2688b9b66f5bac6dc7c797"><td class="memItemLeft" align="right" valign="top">static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a84a7f60bac2688b9b66f5bac6dc7c797">wpi::hashing::detail::k2</a> = 0x9ae16a3b2f90404fULL</td></tr>
+<tr class="separator:a84a7f60bac2688b9b66f5bac6dc7c797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d92e356817689e52b821a755601f4c4"><td class="memItemLeft" align="right" valign="top">static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a7d92e356817689e52b821a755601f4c4">wpi::hashing::detail::k3</a> = 0xc949d7c7509e6557ULL</td></tr>
+<tr class="separator:a7d92e356817689e52b821a755601f4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86da6ba7496d775142bfd96d3140d104"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1hashing_1_1detail.html#a86da6ba7496d775142bfd96d3140d104">wpi::hashing::detail::fixed_seed_override</a></td></tr>
 <tr class="memdesc:a86da6ba7496d775142bfd96d3140d104"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global, fixed seed-override variable.  <a href="namespacewpi_1_1hashing_1_1detail.html#a86da6ba7496d775142bfd96d3140d104">More...</a><br /></td></tr>
 <tr class="separator:a86da6ba7496d775142bfd96d3140d104"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,7 +243,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_hashing_8h.html">Hashing.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -12,16 +12,5 @@ var searchData=
   ['hal_5fsimdatavalue_5fdefine_5fname_9',['HAL_SIMDATAVALUE_DEFINE_NAME',['../_sim_data_value_8h.html#a080bd64c0d9ce8bb2ec646282e08ebe4',1,'SimDataValue.h']]],
   ['hal_5fsimdatavalue_5fstub_5fcapi_10',['HAL_SIMDATAVALUE_STUB_CAPI',['../_sim_data_value_8h.html#a56149cbf5578a42bc60e6b1c2547e377',1,'SimDataValue.h']]],
   ['hal_5fsimdatavalue_5fstub_5fcapi_5fchannel_11',['HAL_SIMDATAVALUE_STUB_CAPI_CHANNEL',['../_sim_data_value_8h.html#a48fc32a2aeb367594e80929239d1cc97',1,'SimDataValue.h']]],
-  ['hal_5fsimdatavalue_5fstub_5fcapi_5fnoindex_12',['HAL_SIMDATAVALUE_STUB_CAPI_NOINDEX',['../_sim_data_value_8h.html#a6c82a9e890914b0c16334da2d5ed9424',1,'SimDataValue.h']]],
-  ['have_5fdirent_5ftypes_13',['HAVE_DIRENT_TYPES',['../win_8h.html#afa1e036f5dc10bd7ffe915f334049324',1,'win.h']]],
-  ['http_5ferrno_5fgen_14',['HTTP_ERRNO_GEN',['../http__parser_8h.html#a686e9a27372975330d034ecb3ead862c',1,'http_parser.h']]],
-  ['http_5ferrno_5fmap_15',['HTTP_ERRNO_MAP',['../http__parser_8h.html#a50da2aea232a876bcafc5ea85b465912',1,'http_parser.h']]],
-  ['http_5fmax_5fheader_5fsize_16',['HTTP_MAX_HEADER_SIZE',['../http__parser_8h.html#a6272a7f92e0f1b66e07680f32f6f21b6',1,'http_parser.h']]],
-  ['http_5fmethod_5fmap_17',['HTTP_METHOD_MAP',['../http__parser_8h.html#a062873fd30d66c26468d4f1bd73e2976',1,'http_parser.h']]],
-  ['http_5fparser_5ferrno_18',['HTTP_PARSER_ERRNO',['../http__parser_8h.html#a356ebaa93536e6f94c2948a1416697c7',1,'http_parser.h']]],
-  ['http_5fparser_5fstrict_19',['HTTP_PARSER_STRICT',['../http__parser_8h.html#a7daf883828d97fafe5726998f0e05146',1,'http_parser.h']]],
-  ['http_5fparser_5fversion_5fmajor_20',['HTTP_PARSER_VERSION_MAJOR',['../http__parser_8h.html#abfeef6f3e39791acc311791feda09d27',1,'http_parser.h']]],
-  ['http_5fparser_5fversion_5fminor_21',['HTTP_PARSER_VERSION_MINOR',['../http__parser_8h.html#ab8479153443ca4fe95b3de5adb0224de',1,'http_parser.h']]],
-  ['http_5fparser_5fversion_5fpatch_22',['HTTP_PARSER_VERSION_PATCH',['../http__parser_8h.html#afb999672cce2ebd7f952bd3f28d8f5e5',1,'http_parser.h']]],
-  ['http_5fstatus_5fmap_23',['HTTP_STATUS_MAP',['../http__parser_8h.html#acbba37710a56ceabef05d8e3e7ed5939',1,'http_parser.h']]]
+  ['hal_5fsimdatavalue_5fstub_5fcapi_5fnoindex_12',['HAL_SIMDATAVALUE_STUB_CAPI_NOINDEX',['../_sim_data_value_8h.html#a6c82a9e890914b0c16334da2d5ed9424',1,'SimDataValue.h']]]
 ];

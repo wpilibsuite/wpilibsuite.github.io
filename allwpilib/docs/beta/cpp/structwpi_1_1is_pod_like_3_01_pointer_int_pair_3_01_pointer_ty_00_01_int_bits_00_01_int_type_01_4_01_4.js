@@ -1,4 +1,0 @@
-var structwpi_1_1is_pod_like_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4 =
-[
-    [ "value", "structwpi_1_1is_pod_like_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#aeb019118b3cc9e7774a329815bde9e19", null ]
-];

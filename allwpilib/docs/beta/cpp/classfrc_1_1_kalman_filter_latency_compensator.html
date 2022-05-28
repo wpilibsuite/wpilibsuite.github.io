@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -111,17 +111,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fd858c67952d32c89d6b35f0d241ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html#a2fd858c67952d32c89d6b35f0d241ab1">Reset</a> ()</td></tr>
 <tr class="memdesc:a2fd858c67952d32c89d6b35f0d241ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the observer snapshot buffer.  <a href="classfrc_1_1_kalman_filter_latency_compensator.html#a2fd858c67952d32c89d6b35f0d241ab1">More...</a><br /></td></tr>
 <tr class="separator:a2fd858c67952d32c89d6b35f0d241ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef84fb6a12305d76a60d40550aaa870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html#afef84fb6a12305d76a60d40550aaa870">AddObserverState</a> (const KalmanFilterType &amp;observer, Eigen::Vector&lt; double, Inputs &gt; u, Eigen::Vector&lt; double, Outputs &gt; localY, units::second_t timestamp)</td></tr>
-<tr class="memdesc:afef84fb6a12305d76a60d40550aaa870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add past observer states to the observer snapshots list.  <a href="classfrc_1_1_kalman_filter_latency_compensator.html#afef84fb6a12305d76a60d40550aaa870">More...</a><br /></td></tr>
-<tr class="separator:afef84fb6a12305d76a60d40550aaa870"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5214515852510e16d2195261a784b13c"><td class="memTemplParams" colspan="2">template&lt;int Rows&gt; </td></tr>
-<tr class="memitem:a5214515852510e16d2195261a784b13c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html#a5214515852510e16d2195261a784b13c">ApplyPastGlobalMeasurement</a> (KalmanFilterType *observer, units::second_t nominalDt, Eigen::Vector&lt; double, Rows &gt; y, std::function&lt; void(const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Rows &gt; &amp;y)&gt; globalMeasurementCorrect, units::second_t timestamp)</td></tr>
-<tr class="memdesc:a5214515852510e16d2195261a784b13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add past global measurements (such as from vision)to the estimator.  <a href="classfrc_1_1_kalman_filter_latency_compensator.html#a5214515852510e16d2195261a784b13c">More...</a><br /></td></tr>
-<tr class="separator:a5214515852510e16d2195261a784b13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6d2dea5f2701a21f5267ed5cab9f74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html#aeb6d2dea5f2701a21f5267ed5cab9f74">AddObserverState</a> (const KalmanFilterType &amp;observer, <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; u, <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Outputs &gt; localY, units::second_t timestamp)</td></tr>
+<tr class="memdesc:aeb6d2dea5f2701a21f5267ed5cab9f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add past observer states to the observer snapshots list.  <a href="classfrc_1_1_kalman_filter_latency_compensator.html#aeb6d2dea5f2701a21f5267ed5cab9f74">More...</a><br /></td></tr>
+<tr class="separator:aeb6d2dea5f2701a21f5267ed5cab9f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c3fd672542d1ae3d947d48bfe237913"><td class="memTemplParams" colspan="2">template&lt;int Rows&gt; </td></tr>
+<tr class="memitem:a2c3fd672542d1ae3d947d48bfe237913"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html#a2c3fd672542d1ae3d947d48bfe237913">ApplyPastGlobalMeasurement</a> (KalmanFilterType *observer, units::second_t nominalDt, <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Rows &gt; y, std::function&lt; void(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;u, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Rows &gt; &amp;y)&gt; globalMeasurementCorrect, units::second_t timestamp)</td></tr>
+<tr class="memdesc:a2c3fd672542d1ae3d947d48bfe237913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add past global measurements (such as from vision)to the estimator.  <a href="classfrc_1_1_kalman_filter_latency_compensator.html#a2c3fd672542d1ae3d947d48bfe237913">More...</a><br /></td></tr>
+<tr class="separator:a2c3fd672542d1ae3d947d48bfe237913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afef84fb6a12305d76a60d40550aaa870" name="afef84fb6a12305d76a60d40550aaa870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afef84fb6a12305d76a60d40550aaa870">&#9670;&nbsp;</a></span>AddObserverState()</h2>
+<a id="aeb6d2dea5f2701a21f5267ed5cab9f74" name="aeb6d2dea5f2701a21f5267ed5cab9f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6d2dea5f2701a21f5267ed5cab9f74">&#9670;&nbsp;</a></span>AddObserverState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,13 +140,13 @@ template&lt;int States, int Inputs, int Outputs, typename KalmanFilterType &gt; 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; double, Inputs &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt;&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; double, Outputs &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Outputs &gt;&#160;</td>
           <td class="paramname"><em>localY</em>, </td>
         </tr>
         <tr>
@@ -181,8 +181,8 @@ template&lt;int States, int Inputs, int Outputs, typename KalmanFilterType &gt; 
 
 </div>
 </div>
-<a id="a5214515852510e16d2195261a784b13c" name="a5214515852510e16d2195261a784b13c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5214515852510e16d2195261a784b13c">&#9670;&nbsp;</a></span>ApplyPastGlobalMeasurement()</h2>
+<a id="a2c3fd672542d1ae3d947d48bfe237913" name="a2c3fd672542d1ae3d947d48bfe237913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c3fd672542d1ae3d947d48bfe237913">&#9670;&nbsp;</a></span>ApplyPastGlobalMeasurement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,13 +209,13 @@ template&lt;int Rows&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Eigen::Vector&lt; double, Rows &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Rows &gt;&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Rows &gt; &amp;y)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt; &amp;u, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Rows &gt; &amp;y)&gt;&#160;</td>
           <td class="paramname"><em>globalMeasurementCorrect</em>, </td>
         </tr>
         <tr>
@@ -289,7 +289,7 @@ template&lt;int States, int Inputs, int Outputs, typename KalmanFilterType &gt; 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html">KalmanFilterLatencyCompensator</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

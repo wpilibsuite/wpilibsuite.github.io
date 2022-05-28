@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,8 @@ $(document).ready(function(){initNavTree('core_8h.html',''); initResizable(); })
   <div class="headertitle"><div class="title">core.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdio&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;cstdio&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
@@ -157,6 +158,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiterator__buffer.html">iterator_buffer&lt; OutputIt, T, Traits &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiterator__buffer_3_01_t_01_5_00_01_t_00_01fixed__buffer__traits_01_4.html">iterator_buffer&lt; T *, T, fixed_buffer_traits &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiterator__buffer_3_01_t_01_5_00_01_t_01_4.html">iterator_buffer&lt; T *, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classiterator__buffer_3_01std_1_1back__insert__iterator_3_01_container_01_4_00_01enable__if__t_3f9dd5967f8d169dc7f82f3e912e020ba.html">iterator_buffer&lt; std::back_insert_iterator&lt; Container &gt;, enable_if_t&lt; is_contiguous&lt; Container &gt;::value, typename Container::value_type &gt; &gt;</a></td></tr>
@@ -183,6 +186,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtype__constant.html">type_constant&lt; T, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunformattable.html">unformattable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunformattable__char.html">unformattable_char</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunformattable__const.html">unformattable_const</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunformattable__pointer.html">unformattable_pointer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstring__value.html">string_value&lt; Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnamed__arg__value.html">named_arg_value&lt; Char &gt;</a></td></tr>
@@ -191,9 +202,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvalue.html">value&lt; Context &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunformattable.html">unformattable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper.html">arg_mapper&lt; Context &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarg__mapper_1_1formattable.html">arg_mapper&lt; Context &gt;::formattable&lt; T, U &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classappender.html">appender</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -254,6 +265,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasic__runtime.html">basic_runtime&lt; Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__string.html">basic_format_string&lt; Char, Args &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A compile-time format string.  <a href="classbasic__format__string.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformat__to__n__result.html">format_to_n_result&lt; OutputIt &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,7 +279,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a1a322107307b020b6eac933958da94f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a1a322107307b020b6eac933958da94f6">FMT_VERSION</a>&#160;&#160;&#160;80001</td></tr>
+<tr class="memitem:a1a322107307b020b6eac933958da94f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a1a322107307b020b6eac933958da94f6">FMT_VERSION</a>&#160;&#160;&#160;80101</td></tr>
 <tr class="separator:a1a322107307b020b6eac933958da94f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a058e2c3eea88d232a1056a0bc6487e37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a058e2c3eea88d232a1056a0bc6487e37">FMT_CLANG_VERSION</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a058e2c3eea88d232a1056a0bc6487e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,8 +287,6 @@ Macros</h2></td></tr>
 <tr class="separator:a4f5db4f97e31a127b1236d1ff412bb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a650e97dce87ef8442c0e92d42ae4f614"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a650e97dce87ef8442c0e92d42ae4f614">FMT_GCC_PRAGMA</a>(<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
 <tr class="separator:a650e97dce87ef8442c0e92d42ae4f614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3ffe834c427bc295b6880efcd17976"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a1e3ffe834c427bc295b6880efcd17976">FMT_HAS_GXX_CXX11</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a1e3ffe834c427bc295b6880efcd17976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a061a90c1c2008acd7b0161cde41c1a11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a061a90c1c2008acd7b0161cde41c1a11">FMT_ICC_VERSION</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a061a90c1c2008acd7b0161cde41c1a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52376c1ced87b19c8b3ece64cc64f22e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e">FMT_NVCC</a>&#160;&#160;&#160;0</td></tr>
@@ -291,9 +301,11 @@ Macros</h2></td></tr>
 <tr class="separator:afa144e698f8df527d6e51688eb9abbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d7b78b0300ddda018f77208e80f3e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(x)&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a55d7b78b0300ddda018f77208e80f3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2766aa9d7506047bc81bd56a766f3ab3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a2766aa9d7506047bc81bd56a766f3ab3">FMT_HAS_CPP14_ATTRIBUTE</a>(attribute)&#160;&#160;&#160;  (__cplusplus &gt;= 201402L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td></tr>
+<tr class="memitem:ac80313a502c4d9c77c9a0531cb682a99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ac80313a502c4d9c77c9a0531cb682a99">FMT_CPLUSPLUS</a>&#160;&#160;&#160;__cplusplus</td></tr>
+<tr class="separator:ac80313a502c4d9c77c9a0531cb682a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2766aa9d7506047bc81bd56a766f3ab3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a2766aa9d7506047bc81bd56a766f3ab3">FMT_HAS_CPP14_ATTRIBUTE</a>(attribute)&#160;&#160;&#160;  (<a class="el" href="core_8h.html#ac80313a502c4d9c77c9a0531cb682a99">FMT_CPLUSPLUS</a> &gt;= 201402L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td></tr>
 <tr class="separator:a2766aa9d7506047bc81bd56a766f3ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f0f9ef09a5242ac73edf22e57578edf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a8f0f9ef09a5242ac73edf22e57578edf">FMT_HAS_CPP17_ATTRIBUTE</a>(attribute)&#160;&#160;&#160;  (__cplusplus &gt;= 201703L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td></tr>
+<tr class="memitem:a8f0f9ef09a5242ac73edf22e57578edf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a8f0f9ef09a5242ac73edf22e57578edf">FMT_HAS_CPP17_ATTRIBUTE</a>(attribute)&#160;&#160;&#160;  (<a class="el" href="core_8h.html#ac80313a502c4d9c77c9a0531cb682a99">FMT_CPLUSPLUS</a> &gt;= 201703L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td></tr>
 <tr class="separator:a8f0f9ef09a5242ac73edf22e57578edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a739a7ff96b6dfd65a4de8fe003f5b233"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a739a7ff96b6dfd65a4de8fe003f5b233">FMT_USE_CONSTEXPR</a></td></tr>
 <tr class="separator:a739a7ff96b6dfd65a4de8fe003f5b233"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,10 +313,10 @@ Macros</h2></td></tr>
 <tr class="separator:a69201cb276383873487bf68b4ef8b4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4388801466a5994a363d6005616371a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a></td></tr>
 <tr class="separator:af4388801466a5994a363d6005616371a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebe0f930dd6aecc374db251062e9d10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#acebe0f930dd6aecc374db251062e9d10">FMT_CONSTEXPR20</a></td></tr>
+<tr class="separator:acebe0f930dd6aecc374db251062e9d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93c46c5456b5163b059f017d5905ffe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ab93c46c5456b5163b059f017d5905ffe">FMT_CONSTEXPR_CHAR_TRAITS</a></td></tr>
 <tr class="separator:ab93c46c5456b5163b059f017d5905ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a023c6c178e254d81d578b90921804b1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a023c6c178e254d81d578b90921804b1c">FMT_OVERRIDE</a></td></tr>
-<tr class="separator:a023c6c178e254d81d578b90921804b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3b416a99857b69e3b7de8e88c71ff3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a5d3b416a99857b69e3b7de8e88c71ff3">FMT_EXCEPTIONS</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a5d3b416a99857b69e3b7de8e88c71ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65490b89e8bd22fd0b8ae4491643d60c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a65490b89e8bd22fd0b8ae4491643d60c">FMT_USE_NOEXCEPT</a>&#160;&#160;&#160;0</td></tr>
@@ -317,10 +329,10 @@ Macros</h2></td></tr>
 <tr class="separator:aef128913e8400683b1cbd1a3a2e11df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9411ed6305aee71472718fa55fcc352"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ac9411ed6305aee71472718fa55fcc352">FMT_NORETURN</a></td></tr>
 <tr class="separator:ac9411ed6305aee71472718fa55fcc352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df1fbe4814ecdaf28b17b6546f80d25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a5df1fbe4814ecdaf28b17b6546f80d25">FMT_MAYBE_UNUSED</a></td></tr>
-<tr class="separator:a5df1fbe4814ecdaf28b17b6546f80d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35d4bc2bf717ac7731de7713c54175bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a35d4bc2bf717ac7731de7713c54175bb">FMT_FALLTHROUGH</a></td></tr>
 <tr class="separator:a35d4bc2bf717ac7731de7713c54175bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e9e5fe4b5f536b45979411c2568232"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a37e9e5fe4b5f536b45979411c2568232">FMT_NODISCARD</a></td></tr>
+<tr class="separator:a37e9e5fe4b5f536b45979411c2568232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a446fd9514a10077873710caef73120aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a446fd9514a10077873710caef73120aa">FMT_USE_FLOAT</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a446fd9514a10077873710caef73120aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2a9cd15dd7f657a176f36d546333a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ade2a9cd15dd7f657a176f36d546333a5">FMT_USE_DOUBLE</a>&#160;&#160;&#160;1</td></tr>
@@ -329,14 +341,12 @@ Macros</h2></td></tr>
 <tr class="separator:a146d2f76f42b33f8fc7264f25a961d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4c375a41fe80858992762b3bc5c75e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a>&#160;&#160;&#160;inline</td></tr>
 <tr class="separator:aba4c375a41fe80858992762b3bc5c75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b8b7cbc0031ac8e372c9639b8e1b62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a74b8b7cbc0031ac8e372c9639b8e1b62">FMT_USE_INLINE_NAMESPACES</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a74b8b7cbc0031ac8e372c9639b8e1b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750d1276ba35fb73b8f2998389a5f8c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a750d1276ba35fb73b8f2998389a5f8c6">FMT_INLINE_NAMESPACE</a>&#160;&#160;&#160;namespace</td></tr>
-<tr class="separator:a750d1276ba35fb73b8f2998389a5f8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d2fbdf031547a949fc7e1c0b3c97f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ae0d2fbdf031547a949fc7e1c0b3c97f1">FMT_END_NAMESPACE</a></td></tr>
-<tr class="separator:ae0d2fbdf031547a949fc7e1c0b3c97f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aba8a78c514e176e0dd0a159de7a369"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a>&#160;&#160;&#160;/* deprecated */</td></tr>
+<tr class="separator:a8aba8a78c514e176e0dd0a159de7a369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a887c191adf8cfaf06ed40b5c4d487343"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a887c191adf8cfaf06ed40b5c4d487343">FMT_BEGIN_NAMESPACE</a></td></tr>
 <tr class="separator:a887c191adf8cfaf06ed40b5c4d487343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0d2fbdf031547a949fc7e1c0b3c97f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ae0d2fbdf031547a949fc7e1c0b3c97f1">FMT_END_NAMESPACE</a></td></tr>
+<tr class="separator:ae0d2fbdf031547a949fc7e1c0b3c97f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d845f93bbf31e93277429b48e36a1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a89d845f93bbf31e93277429b48e36a1e">FMT_MODULE_EXPORT</a></td></tr>
 <tr class="separator:a89d845f93bbf31e93277429b48e36a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405a25ede2658f5f1bd426ce7d10f3ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a405a25ede2658f5f1bd426ce7d10f3ee">FMT_MODULE_EXPORT_BEGIN</a></td></tr>
@@ -351,8 +361,6 @@ Macros</h2></td></tr>
 <tr class="separator:a60c618bb53b658cf4c0cb959b69d67ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a4960b70582ed2620911a0b75dce0b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a></td></tr>
 <tr class="separator:a9a4960b70582ed2620911a0b75dce0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65e1bbcd941d957e3bc12befcdc726f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a65e1bbcd941d957e3bc12befcdc726f3">FMT_GCC_VISIBILITY_HIDDEN</a></td></tr>
-<tr class="separator:a65e1bbcd941d957e3bc12befcdc726f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24004c4d3ba31dd35664e85862d20061"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a24004c4d3ba31dd35664e85862d20061">FMT_UNICODE</a>&#160;&#160;&#160;!<a class="el" href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a></td></tr>
 <tr class="separator:a24004c4d3ba31dd35664e85862d20061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adadf095006629612166782177c39f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a1adadf095006629612166782177c39f2">FMT_CONSTEVAL</a></td></tr>
@@ -373,73 +381,78 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a012819c9e8b5e04872a271f50f8b8196"><td class="memTemplParams" colspan="2">template&lt;bool B, typename T  = void&gt; </td></tr>
-<tr class="memitem:a012819c9e8b5e04872a271f50f8b8196"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a> = typename std::enable_if&lt; B, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="memitem:a012819c9e8b5e04872a271f50f8b8196"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a> = typename std::enable_if&lt; B, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
 <tr class="separator:a012819c9e8b5e04872a271f50f8b8196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdb0eff728aec08ed6fff07d2885ea9d"><td class="memTemplParams" colspan="2">template&lt;bool B, typename T , typename F &gt; </td></tr>
-<tr class="memitem:acdb0eff728aec08ed6fff07d2885ea9d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a> = typename std::conditional&lt; B, T, F &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="memitem:acdb0eff728aec08ed6fff07d2885ea9d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a> = typename std::conditional&lt; B, T, F &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
 <tr class="separator:acdb0eff728aec08ed6fff07d2885ea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d337b508cc2fb5a92d8e72db201e53b"><td class="memTemplParams" colspan="2">template&lt;bool B&gt; </td></tr>
-<tr class="memitem:a0d337b508cc2fb5a92d8e72db201e53b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a> = std::integral_constant&lt; bool, B &gt;</td></tr>
+<tr class="memitem:a0d337b508cc2fb5a92d8e72db201e53b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a> = std::integral_constant&lt; bool, B &gt;</td></tr>
 <tr class="separator:a0d337b508cc2fb5a92d8e72db201e53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a08cea569e6926ac8d7d74dd7178b5f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a3a08cea569e6926ac8d7d74dd7178b5f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a> = typename std::remove_reference&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="memitem:a3a08cea569e6926ac8d7d74dd7178b5f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a> = typename std::remove_reference&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
 <tr class="separator:a3a08cea569e6926ac8d7d74dd7178b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ee6e9231fa50c7fdd7292f0c45f13e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a31ee6e9231fa50c7fdd7292f0c45f13e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a31ee6e9231fa50c7fdd7292f0c45f13e">remove_const_t</a> = typename std::remove_const&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="separator:a31ee6e9231fa50c7fdd7292f0c45f13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada5b2a956a74d40f6afec72d7d0adc27"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ada5b2a956a74d40f6afec72d7d0adc27"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a> = typename std::remove_cv&lt; <a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a>&lt; T &gt; &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="memitem:ada5b2a956a74d40f6afec72d7d0adc27"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a> = typename std::remove_cv&lt; <a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a>&lt; T &gt; &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
 <tr class="separator:ada5b2a956a74d40f6afec72d7d0adc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca42c1976d1b12998afcabf8f39e8c23"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aca42c1976d1b12998afcabf8f39e8c23"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a> = typename <a class="el" href="structtype__identity.html">type_identity</a>&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="memitem:aca42c1976d1b12998afcabf8f39e8c23"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a> = typename <a class="el" href="structtype__identity.html">type_identity</a>&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
 <tr class="separator:aca42c1976d1b12998afcabf8f39e8c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a204ca715c2febee035464fa53dfc50c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> = <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; char &gt;</td></tr>
+<tr class="memitem:a204ca715c2febee035464fa53dfc50c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> = <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; char &gt;</td></tr>
 <tr class="separator:a204ca715c2febee035464fa53dfc50c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c674f92fe25aa74e8d3d5449ec85efb"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt; </td></tr>
-<tr class="memitem:a3c674f92fe25aa74e8d3d5449ec85efb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a> = typename detail::char_t_impl&lt; <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="memitem:a3c674f92fe25aa74e8d3d5449ec85efb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a> = typename detail::char_t_impl&lt; <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
 <tr class="memdesc:a3c674f92fe25aa74e8d3d5449ec85efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">String's character type.  <a href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">More...</a><br /></td></tr>
 <tr class="separator:a3c674f92fe25aa74e8d3d5449ec85efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f31f076b2eb408741895533f9222baa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a7f31f076b2eb408741895533f9222baa">format_parse_context</a> = <a class="el" href="classbasic__format__parse__context.html">basic_format_parse_context</a>&lt; char &gt;</td></tr>
+<tr class="memitem:a7f31f076b2eb408741895533f9222baa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a7f31f076b2eb408741895533f9222baa">format_parse_context</a> = <a class="el" href="classbasic__format__parse__context.html">basic_format_parse_context</a>&lt; char &gt;</td></tr>
 <tr class="separator:a7f31f076b2eb408741895533f9222baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c7602dbb427c519ab26d4feecf9149"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Context &gt; </td></tr>
-<tr class="memitem:a74c7602dbb427c519ab26d4feecf9149"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a> = std::is_constructible&lt; typename Context::template formatter_type&lt; T &gt; &gt;</td></tr>
+<tr class="memitem:a74c7602dbb427c519ab26d4feecf9149"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a> = std::is_constructible&lt; typename Context::template formatter_type&lt; T &gt; &gt;</td></tr>
 <tr class="separator:a74c7602dbb427c519ab26d4feecf9149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91f761428845b1b6d78bb83c6c69557"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa91f761428845b1b6d78bb83c6c69557"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">buffer_appender</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; std::is_same&lt; T, char &gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classappender.html">appender</a>, std::back_insert_iterator&lt; <a class="el" href="classbuffer.html">buffer</a>&lt; T &gt; &gt; &gt;</td></tr>
+<tr class="memitem:aa91f761428845b1b6d78bb83c6c69557"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">buffer_appender</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; std::is_same&lt; T, char &gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classappender.html">appender</a>, std::back_insert_iterator&lt; <a class="el" href="classbuffer.html">buffer</a>&lt; T &gt; &gt; &gt;</td></tr>
 <tr class="separator:aa91f761428845b1b6d78bb83c6c69557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad017e68fdc62329b58d9acc5efa45867"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Char &gt; </td></tr>
-<tr class="memitem:ad017e68fdc62329b58d9acc5efa45867"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a> = std::is_constructible&lt; <a class="el" href="structfallback__formatter.html">fallback_formatter</a>&lt; T, Char &gt; &gt;</td></tr>
+<tr class="memitem:ad017e68fdc62329b58d9acc5efa45867"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a> = std::is_constructible&lt; <a class="el" href="structfallback__formatter.html">fallback_formatter</a>&lt; T, Char &gt; &gt;</td></tr>
 <tr class="separator:ad017e68fdc62329b58d9acc5efa45867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9174fa0aac401969efb266e326f42951"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#a2970898e8a43ce21e1cc510d49f1b89daa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long &gt;</td></tr>
+<tr class="memitem:a9174fa0aac401969efb266e326f42951"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#aaf105ae5beaca1dee30ae54530691fceaa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long &gt;</td></tr>
 <tr class="separator:a9174fa0aac401969efb266e326f42951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e24c039447f0eda42b5a1185f0dd743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#a2970898e8a43ce21e1cc510d49f1b89daa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long &gt;</td></tr>
+<tr class="memitem:a2e24c039447f0eda42b5a1185f0dd743"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#aaf105ae5beaca1dee30ae54530691fceaa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long &gt;</td></tr>
 <tr class="separator:a2e24c039447f0eda42b5a1185f0dd743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4b00dc3259d8fce83f914a5b38f354"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Context &gt; </td></tr>
-<tr class="memitem:adc4b00dc3259d8fce83f914a5b38f354"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#adc4b00dc3259d8fce83f914a5b38f354">mapped_type_constant</a> = <a class="el" href="structtype__constant.html">type_constant</a>&lt; decltype(<a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;().map(std::declval&lt; const T &amp; &gt;())), typename <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">Context::char_type</a> &gt;</td></tr>
+<tr class="memitem:adc4b00dc3259d8fce83f914a5b38f354"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#adc4b00dc3259d8fce83f914a5b38f354">mapped_type_constant</a> = <a class="el" href="structtype__constant.html">type_constant</a>&lt; decltype(<a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;().map(std::declval&lt; const T &amp; &gt;())), typename <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">Context::char_type</a> &gt;</td></tr>
 <tr class="separator:adc4b00dc3259d8fce83f914a5b38f354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memTemplParams" colspan="2">template&lt;typename... &gt; </td></tr>
-<tr class="memitem:ab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a> = void</td></tr>
+<tr class="memitem:ab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a> = void</td></tr>
 <tr class="separator:ab8ddf9531fc4ac7ce28574db20c8f20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaef905b4cc5da6969d9ee839d668406"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
-<tr class="memitem:aaaef905b4cc5da6969d9ee839d668406"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a> = <a class="el" href="classbasic__format__context.html">basic_format_context</a>&lt; <a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">detail::buffer_appender</a>&lt; Char &gt;, Char &gt;</td></tr>
+<tr class="memitem:aaaef905b4cc5da6969d9ee839d668406"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a> = <a class="el" href="classbasic__format__context.html">basic_format_context</a>&lt; <a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">detail::buffer_appender</a>&lt; Char &gt;, Char &gt;</td></tr>
 <tr class="separator:aaaef905b4cc5da6969d9ee839d668406"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e6224930832371a8c75d3e519873a9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a> = <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; char &gt;</td></tr>
+<tr class="memitem:a3e6224930832371a8c75d3e519873a9e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a> = <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; char &gt;</td></tr>
 <tr class="separator:a3e6224930832371a8c75d3e519873a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc7ddbfd7f5e6844fbded32071498c69"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Char  = char&gt; </td></tr>
-<tr class="memitem:afc7ddbfd7f5e6844fbded32071498c69"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#afc7ddbfd7f5e6844fbded32071498c69">is_formattable</a> = <a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a>&lt; !std::is_same&lt; decltype(detail::arg_mapper&lt; <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; Char &gt; &gt;().map(std::declval&lt; T &gt;())), detail::unformattable &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">detail::has_fallback_formatter</a>&lt; T, Char &gt;::<a class="el" href="classvalue.html">value</a> &gt;</td></tr>
-<tr class="separator:afc7ddbfd7f5e6844fbded32071498c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd8c737296655b44480da4fb422add24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> = <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a> &gt;</td></tr>
+<tr class="memitem:a887ba223931b931af78809677a4df3fb"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Char  = char&gt; </td></tr>
+<tr class="memitem:a887ba223931b931af78809677a4df3fb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a887ba223931b931af78809677a4df3fb">is_formattable</a> = <a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a>&lt; !std::is_base_of&lt; detail::unformattable, decltype(detail::arg_mapper&lt; <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; Char &gt; &gt;().map(std::declval&lt; T &gt;()))&gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;!<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">detail::has_fallback_formatter</a>&lt; T, Char &gt;::<a class="el" href="classvalue.html">value</a> &gt;</td></tr>
+<tr class="separator:a887ba223931b931af78809677a4df3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8c737296655b44480da4fb422add24"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> = <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a> &gt;</td></tr>
 <tr class="memdesc:abd8c737296655b44480da4fb422add24"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alias to <code><a class="el" href="classbasic__format__args.html" title="\rst A view of a collection of formatting arguments.">basic_format_args</a>&lt;format_context&gt;</code>.  <a href="core_8h.html#abd8c737296655b44480da4fb422add24">More...</a><br /></td></tr>
 <tr class="separator:abd8c737296655b44480da4fb422add24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287c722ae78d5cb37bb7887b87e8f769"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a287c722ae78d5cb37bb7887b87e8f769">align_t</a> = <a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759">align::type</a></td></tr>
+<tr class="memitem:a287c722ae78d5cb37bb7887b87e8f769"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a287c722ae78d5cb37bb7887b87e8f769">align_t</a> = <a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759">align::type</a></td></tr>
 <tr class="separator:a287c722ae78d5cb37bb7887b87e8f769"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65908bd5d03f057bd2009ce3f40f9f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ad65908bd5d03f057bd2009ce3f40f9f3">sign_t</a> = <a class="el" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8">sign::type</a></td></tr>
+<tr class="memitem:ad65908bd5d03f057bd2009ce3f40f9f3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ad65908bd5d03f057bd2009ce3f40f9f3">sign_t</a> = <a class="el" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8">sign::type</a></td></tr>
 <tr class="separator:ad65908bd5d03f057bd2009ce3f40f9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e212323f243ceed8554e67489039d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a92e212323f243ceed8554e67489039d3">format_specs</a> = <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; char &gt;</td></tr>
+<tr class="memitem:a92e212323f243ceed8554e67489039d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a92e212323f243ceed8554e67489039d3">format_specs</a> = <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; char &gt;</td></tr>
 <tr class="separator:a92e212323f243ceed8554e67489039d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56a828fb91283babdb0eef8e0d9010cb"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a56a828fb91283babdb0eef8e0d9010cb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a> = <a class="el" href="classbasic__format__string.html">basic_format_string</a>&lt; char, <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Args &gt;... &gt;</td></tr>
+<tr class="memitem:a56a828fb91283babdb0eef8e0d9010cb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a> = <a class="el" href="classbasic__format__string.html">basic_format_string</a>&lt; char, <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Args &gt;... &gt;</td></tr>
 <tr class="separator:a56a828fb91283babdb0eef8e0d9010cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a57d5661a9537aa419c8ebc24667a96e9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a57d5661a9537aa419c8ebc24667a96e9">byte</a> : unsigned char </td></tr>
+<tr class="separator:a57d5661a9537aa419c8ebc24667a96e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af569c2ccf030fa7d40b7be3495c70b06"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#af569c2ccf030fa7d40b7be3495c70b06">int128_t</a> </td></tr>
 <tr class="separator:af569c2ccf030fa7d40b7be3495c70b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6093adda0d3b4c981a52cecc7174053"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#af6093adda0d3b4c981a52cecc7174053">uint128_t</a> </td></tr>
@@ -470,21 +483,21 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a7aead736a07eaf25623ad7bfa1f0ee2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2970898e8a43ce21e1cc510d49f1b89d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#a2970898e8a43ce21e1cc510d49f1b89daa78c25a5df184172695de374af97f6a7">long_short</a> = sizeof(long) == sizeof(int)
+<tr class="memitem:aaf105ae5beaca1dee30ae54530691fce"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#aaf105ae5beaca1dee30ae54530691fceaa78c25a5df184172695de374af97f6a7">long_short</a> = sizeof(long) == sizeof(int)
  }</td></tr>
-<tr class="separator:a2970898e8a43ce21e1cc510d49f1b89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa231099d07583c3ed0981e0bb665f55"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#afa231099d07583c3ed0981e0bb665f55a20ec9c2d5cac838e8e340c1b371ae6db">packed_arg_bits</a> = 4
+<tr class="separator:aaf105ae5beaca1dee30ae54530691fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80155586fa275b28773c9b203f52caba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#a80155586fa275b28773c9b203f52cabaa20ec9c2d5cac838e8e340c1b371ae6db">packed_arg_bits</a> = 4
  }</td></tr>
-<tr class="separator:afa231099d07583c3ed0981e0bb665f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394b3903fbf00ba2b6243f60689a5a5f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#a394b3903fbf00ba2b6243f60689a5a5faa2aec61a0142d05c79e16212132aa26b">max_packed_args</a> = 62 / packed_arg_bits
+<tr class="separator:a80155586fa275b28773c9b203f52caba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7b47dd702d9e331586d485013fd1ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#a6b7b47dd702d9e331586d485013fd1eaaa2aec61a0142d05c79e16212132aa26b">max_packed_args</a> = 62 / packed_arg_bits
  }</td></tr>
-<tr class="separator:a394b3903fbf00ba2b6243f60689a5a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57f86410d09f09422066a474bfccd4c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#ac57f86410d09f09422066a474bfccd4ca144043c49b42deecce880eb6ba67fd4d">is_unpacked_bit</a> = 1ULL &lt;&lt; 63
+<tr class="separator:a6b7b47dd702d9e331586d485013fd1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ba51ad4af3d23e746ddd8fed080975"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#ae8ba51ad4af3d23e746ddd8fed080975a144043c49b42deecce880eb6ba67fd4d">is_unpacked_bit</a> = 1ULL &lt;&lt; 63
  }</td></tr>
-<tr class="separator:ac57f86410d09f09422066a474bfccd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a499e22117783637ba5841719bd4898fd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#a499e22117783637ba5841719bd4898fda3d9e0b7b59aae7e5693ae2b8da34cabe">has_named_args_bit</a> = 1ULL &lt;&lt; 62
+<tr class="separator:ae8ba51ad4af3d23e746ddd8fed080975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec3818af74da83bcaa5e22b50d1d02c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#aeec3818af74da83bcaa5e22b50d1d02ca3d9e0b7b59aae7e5693ae2b8da34cabe">has_named_args_bit</a> = 1ULL &lt;&lt; 62
  }</td></tr>
-<tr class="separator:a499e22117783637ba5841719bd4898fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aeec3818af74da83bcaa5e22b50d1d02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff2772e23f6ac91520e57d4b3ac0c759"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759">align::type</a> { <br />
 &#160;&#160;<a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a4ba1498ecf6f0de5baac670a264e43eb">align::none</a>
 , <a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">align::left</a>
@@ -501,6 +514,32 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d">sign::space</a>
  }</td></tr>
 <tr class="separator:a15b7528752011adf8078cdaf330a21a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa139c9a1902753b3696794759b2c48"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> : unsigned char { <br />
+&#160;&#160;<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a1feea25ecb958229287f885aebe7c49b">dec</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a1cdbdf89f2d1bd3dd9e698b2b320cb86">oct</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ad760bcac7fbf52a418de91c27c14d68f">hex_lower</a>
+, <br />
+&#160;&#160;<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48af12799540739d60381b627d662b5bf6c">hex_upper</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a2e9d2820a44d3b4e9677aa880694ae1d">bin_lower</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a76681d3b581bdd3d96a61d9ee68a2f0e">bin_upper</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a66ce284aa83a6a1ef3be40f84306d126">hexfloat_lower</a>
+, <br />
+&#160;&#160;<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a357a3ac50fe49a6d66acad03ae376064">hexfloat_upper</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a157555f731870b580669d4ae2e789292">exp_lower</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ae1b1fd27ead9e496ec42c0e7fa19effc">exp_upper</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a1029c89672ee8198610d395987e71114">fixed_lower</a>
+, <br />
+&#160;&#160;<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a73ae375863f4a035518a76b2934fed84">fixed_upper</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab13d73a11320f7d1f83412f9b8b67eb2">general_lower</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a38a425448fb167f44965e8edb6943ae0">general_upper</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a599e41d8cd8cf1ea79e494df54ede29a">chr</a>
+, <br />
+&#160;&#160;<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21">string</a>
+, <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48accac8a66d468e2522611be86933cc0d9">pointer</a>
+<br />
+ }</td></tr>
+<tr class="separator:adfa139c9a1902753b3696794759b2c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc0249f0f8ba720115d2430f5b86cba"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cba">arg_id_kind</a> { <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>
 , <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>
@@ -515,15 +554,15 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a039aa82d5bc3557c97ae98da6aec04ce"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a039aa82d5bc3557c97ae98da6aec04ce"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a039aa82d5bc3557c97ae98da6aec04ce">ignore_unused</a> (const T &amp;...)</td></tr>
-<tr class="separator:a039aa82d5bc3557c97ae98da6aec04ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17143cce8406f8fc161d24f1967f7e1e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a17143cce8406f8fc161d24f1967f7e1e">is_constant_evaluated</a> () <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a> -&gt; bool</td></tr>
-<tr class="separator:a17143cce8406f8fc161d24f1967f7e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9914f7bd9cf9ddc2120e75397d11b538"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9914f7bd9cf9ddc2120e75397d11b538"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a9914f7bd9cf9ddc2120e75397d11b538">const_check</a> (T <a class="el" href="classvalue.html">value</a>) -&gt; T</td></tr>
-<tr class="separator:a9914f7bd9cf9ddc2120e75397d11b538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83171a94d099c61981453a40b3f63691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#ac9411ed6305aee71472718fa55fcc352">FMT_NORETURN</a> <a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a83171a94d099c61981453a40b3f63691">assert_fail</a> (const char *<a class="el" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>, int line, const char *message)</td></tr>
+<tr class="memitem:aa2c46459e52094a4dd8501aebcbefa80"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:aa2c46459e52094a4dd8501aebcbefa80"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> <a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aa2c46459e52094a4dd8501aebcbefa80">ignore_unused</a> (const T &amp;...)</td></tr>
+<tr class="separator:aa2c46459e52094a4dd8501aebcbefa80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a45c39fb6710745256cf0f73b8858a"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a28a45c39fb6710745256cf0f73b8858a">is_constant_evaluated</a> (bool default_value=false) <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a> -&gt; bool</td></tr>
+<tr class="separator:a28a45c39fb6710745256cf0f73b8858a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0290cb3baf281d15619c15fe252ea48c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a0290cb3baf281d15619c15fe252ea48c"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a0290cb3baf281d15619c15fe252ea48c">const_check</a> (T <a class="el" href="classvalue.html">value</a>) -&gt; T</td></tr>
+<tr class="separator:a0290cb3baf281d15619c15fe252ea48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83171a94d099c61981453a40b3f63691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#ac9411ed6305aee71472718fa55fcc352">FMT_NORETURN</a> <a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a83171a94d099c61981453a40b3f63691">assert_fail</a> (const char *<a class="el" href="_third_party_notices_8txt.html#a54c3aaa43358b77e4f57f4f72cbe56c6">file</a>, int line, const char *message)</td></tr>
 <tr class="separator:a83171a94d099c61981453a40b3f63691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5962a4a6f975968fe6950f78e57b52"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:abe5962a4a6f975968fe6950f78e57b52"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#abe5962a4a6f975968fe6950f78e57b52">convert_for_visit</a> (T) -&gt; <a class="el" href="structmonostate.html">monostate</a></td></tr>
@@ -558,15 +597,26 @@ Functions</h2></td></tr>
 <tr class="memitem:a1663e9bcddba002ba86aeba2eef5d054"><td class="memTemplParams" colspan="2">template&lt;typename... , typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="structis__compile__string.html">is_compile_string</a>&lt; <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:a1663e9bcddba002ba86aeba2eef5d054"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a1663e9bcddba002ba86aeba2eef5d054">check_format_string</a> (<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>)</td></tr>
 <tr class="separator:a1663e9bcddba002ba86aeba2eef5d054"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa42a60eda7a70557cbc4b75b40d5e479"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
-<tr class="memitem:aa42a60eda7a70557cbc4b75b40d5e479"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aa42a60eda7a70557cbc4b75b40d5e479">get_container</a> (std::back_insert_iterator&lt; Container &gt; it) -&gt; Container &amp;</td></tr>
-<tr class="separator:aa42a60eda7a70557cbc4b75b40d5e479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2dddff5c4f81bcda40833bc485853b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#ac9411ed6305aee71472718fa55fcc352">FMT_NORETURN</a> <a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ac2dddff5c4f81bcda40833bc485853b5">throw_format_error</a> (const char *message)</td></tr>
+<tr class="separator:ac2dddff5c4f81bcda40833bc485853b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61cb94144cf48d21c29bc3343e9c11f9"><td class="memTemplParams" colspan="2">template&lt;typename Context , typename T &gt; </td></tr>
+<tr class="memitem:a61cb94144cf48d21c29bc3343e9c11f9"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a61cb94144cf48d21c29bc3343e9c11f9">has_const_formatter_impl</a> (T *) -&gt; decltype(typename Context::template formatter_type&lt; T &gt;().<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>(std::declval&lt; const T &amp; &gt;(), std::declval&lt; Context &amp; &gt;()), true)</td></tr>
+<tr class="separator:a61cb94144cf48d21c29bc3343e9c11f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceece8f2dee76c77ba701a68e72c4496"><td class="memTemplParams" colspan="2">template&lt;typename Context &gt; </td></tr>
+<tr class="memitem:aceece8f2dee76c77ba701a68e72c4496"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aceece8f2dee76c77ba701a68e72c4496">has_const_formatter_impl</a> (...) -&gt; bool</td></tr>
+<tr class="separator:aceece8f2dee76c77ba701a68e72c4496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bd84ed55d3f25b69a382e0e6252131"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Context &gt; </td></tr>
+<tr class="memitem:af1bd84ed55d3f25b69a382e0e6252131"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#af1bd84ed55d3f25b69a382e0e6252131">has_const_formatter</a> () -&gt; bool</td></tr>
+<tr class="separator:af1bd84ed55d3f25b69a382e0e6252131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad107c89b3560dbdb447bd42976dfd2d6"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:ad107c89b3560dbdb447bd42976dfd2d6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ad107c89b3560dbdb447bd42976dfd2d6">get_container</a> (std::back_insert_iterator&lt; Container &gt; it) -&gt; Container &amp;</td></tr>
+<tr class="separator:ad107c89b3560dbdb447bd42976dfd2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a060ff34574606b33db21d39b17152349"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename InputIt , typename OutputIt &gt; </td></tr>
 <tr class="memitem:a060ff34574606b33db21d39b17152349"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a060ff34574606b33db21d39b17152349">copy_str</a> (InputIt begin, InputIt end, OutputIt out) -&gt; OutputIt</td></tr>
 <tr class="separator:a060ff34574606b33db21d39b17152349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ed6bc96f0cb6093aabdfa147578568e"><td class="memTemplParams" colspan="2">template&lt;typename Char , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_same&lt; Char, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a7ed6bc96f0cb6093aabdfa147578568e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a7ed6bc96f0cb6093aabdfa147578568e">copy_str</a> (const Char *begin, const Char *end, Char *out) -&gt; Char *</td></tr>
-<tr class="separator:a7ed6bc96f0cb6093aabdfa147578568e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6669f12174479094569a124472989b24"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename T , typename U , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_same&lt; <a class="el" href="core_8h.html#a31ee6e9231fa50c7fdd7292f0c45f13e">remove_const_t</a>&lt; T &gt;, U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;<a class="el" href="structis__char.html">is_char</a>&lt; U &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a6669f12174479094569a124472989b24"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a6669f12174479094569a124472989b24">copy_str</a> (T *begin, T *end, U *out) -&gt; U *</td></tr>
+<tr class="separator:a6669f12174479094569a124472989b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaecdbbf70c37826c908a21204c7328aa"><td class="memTemplParams" colspan="2">template&lt;typename T , typename OutputIt &gt; </td></tr>
 <tr class="memitem:aaecdbbf70c37826c908a21204c7328aa"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aaecdbbf70c37826c908a21204c7328aa">get_buffer</a> (OutputIt out) -&gt; <a class="el" href="classiterator__buffer.html">iterator_buffer</a>&lt; OutputIt, T &gt;</td></tr>
 <tr class="separator:aaecdbbf70c37826c908a21204c7328aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -594,6 +644,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5bb1750c4eb31fcbaeee9cffcc65040d"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a5bb1750c4eb31fcbaeee9cffcc65040d"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a5bb1750c4eb31fcbaeee9cffcc65040d">count_named_args</a> () -&gt; size_t</td></tr>
 <tr class="separator:a5bb1750c4eb31fcbaeee9cffcc65040d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf91a6a3b2e298235c8d45bec2854878"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aaf91a6a3b2e298235c8d45bec2854878"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aaf91a6a3b2e298235c8d45bec2854878">count_statically_named_args</a> () -&gt; size_t</td></tr>
+<tr class="separator:aaf91a6a3b2e298235c8d45bec2854878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28a0b194200ca87b7ede510532a62c8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a28a0b194200ca87b7ede510532a62c8d">FMT_TYPE_CONSTANT</a> (int, int_type)</td></tr>
 <tr class="separator:a28a0b194200ca87b7ede510532a62c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2acc96773ff46dd16e5cb99500f0ffdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a2acc96773ff46dd16e5cb99500f0ffdb">FMT_TYPE_CONSTANT</a> (unsigned, uint_type)</td></tr>
@@ -642,22 +695,20 @@ Functions</h2></td></tr>
 <tr class="memitem:abbd123930c75c297da923d49a59d3515"><td class="memTemplParams" colspan="2">template&lt;typename Context , typename Arg , typename... Args&gt; </td></tr>
 <tr class="memitem:abbd123930c75c297da923d49a59d3515"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#abbd123930c75c297da923d49a59d3515">encode_types</a> () -&gt; unsigned long long</td></tr>
 <tr class="separator:abbd123930c75c297da923d49a59d3515"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a335b63db731e9d9189e3e81f5ba19f05"><td class="memTemplParams" colspan="2">template&lt;bool IS_PACKED, typename Context , <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> , typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(IS_PACKED) &gt; </td></tr>
-<tr class="memitem:a335b63db731e9d9189e3e81f5ba19f05"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a335b63db731e9d9189e3e81f5ba19f05">make_arg</a> (const T &amp;val) -&gt; <a class="el" href="classvalue.html">value</a>&lt; Context &gt;</td></tr>
-<tr class="separator:a335b63db731e9d9189e3e81f5ba19f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1f225f5aa4925954c941e3c19a532e"><td class="memTemplParams" colspan="2">template&lt;bool IS_PACKED, typename Context , <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> , typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(IS_PACKED) &gt; </td></tr>
+<tr class="memitem:a6b1f225f5aa4925954c941e3c19a532e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a6b1f225f5aa4925954c941e3c19a532e">make_arg</a> (T &amp;&amp;val) -&gt; <a class="el" href="classvalue.html">value</a>&lt; Context &gt;</td></tr>
+<tr class="separator:a6b1f225f5aa4925954c941e3c19a532e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f2d4bf9b52be21037c502aa30f0e6e8"><td class="memTemplParams" colspan="2">template&lt;bool IS_PACKED, typename Context , <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> , typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!IS_PACKED) &gt; </td></tr>
 <tr class="memitem:a8f2d4bf9b52be21037c502aa30f0e6e8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a8f2d4bf9b52be21037c502aa30f0e6e8">make_arg</a> (const T &amp;<a class="el" href="classvalue.html">value</a>) -&gt; <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; Context &gt;</td></tr>
 <tr class="separator:a8f2d4bf9b52be21037c502aa30f0e6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6ceaba4c5b391e1f839ce80092329ae"><td class="memTemplParams" colspan="2">template&lt;typename Context  = format_context, typename... Args&gt; </td></tr>
-<tr class="memitem:ad6ceaba4c5b391e1f839ce80092329ae"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ad6ceaba4c5b391e1f839ce80092329ae">make_format_args</a> (const Args &amp;... args) -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; Context, Args... &gt;</td></tr>
-<tr class="memdesc:ad6ceaba4c5b391e1f839ce80092329ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Constructs a <code>~fmt<a class="el" href="classformat__arg__store.html" title="\rst An array of references to arguments.">format_arg_store</a></code> object that contains references to arguments and can be implicitly converted to <code>~fmt<a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24" title="An alias to basic_format_args&lt;format_context&gt;.">format_args</a></code>.  <a href="core_8h.html#ad6ceaba4c5b391e1f839ce80092329ae">More...</a><br /></td></tr>
-<tr class="separator:ad6ceaba4c5b391e1f839ce80092329ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61919fb242708a0cc41b106d850b67b5"><td class="memTemplParams" colspan="2">template&lt;typename Context  = format_context, typename... Args&gt; </td></tr>
+<tr class="memitem:a61919fb242708a0cc41b106d850b67b5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a61919fb242708a0cc41b106d850b67b5">make_format_args</a> (Args &amp;&amp;... args) -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; Context, <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; Args &gt;... &gt;</td></tr>
+<tr class="memdesc:a61919fb242708a0cc41b106d850b67b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Constructs a <code>~fmt<a class="el" href="classformat__arg__store.html" title="\rst An array of references to arguments.">format_arg_store</a></code> object that contains references to arguments and can be implicitly converted to <code>~fmt<a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24" title="An alias to basic_format_args&lt;format_context&gt;.">format_args</a></code>.  <a href="core_8h.html#a61919fb242708a0cc41b106d850b67b5">More...</a><br /></td></tr>
+<tr class="separator:a61919fb242708a0cc41b106d850b67b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8e80c1b1c8b7747e99b8e9a24a0429"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename T &gt; </td></tr>
 <tr class="memitem:a2c8e80c1b1c8b7747e99b8e9a24a0429"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a> (const Char *name, const T &amp;arg) -&gt; detail::named_arg&lt; Char, T &gt;</td></tr>
 <tr class="memdesc:a2c8e80c1b1c8b7747e99b8e9a24a0429"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Returns a named argument to be used in a formatting function.  <a href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">More...</a><br /></td></tr>
 <tr class="separator:a2c8e80c1b1c8b7747e99b8e9a24a0429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf205d15a49e2b69e87968f23dd3ae6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#aadf205d15a49e2b69e87968f23dd3ae6">throw_format_error</a> (const char *message)</td></tr>
-<tr class="separator:aadf205d15a49e2b69e87968f23dd3ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d2097aafa5a771a9df557e1179ca795"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
 <tr class="memitem:a1d2097aafa5a771a9df557e1179ca795"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a1d2097aafa5a771a9df557e1179ca795">is_ascii_letter</a> (Char c)</td></tr>
 <tr class="separator:a1d2097aafa5a771a9df557e1179ca795"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -694,6 +745,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a45c3c961ad59bc2badc4e96c9a2848f4"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Handler &gt; </td></tr>
 <tr class="memitem:a45c3c961ad59bc2badc4e96c9a2848f4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a45c3c961ad59bc2badc4e96c9a2848f4">parse_precision</a> (const Char *begin, const Char *end, Handler &amp;&amp;handler) -&gt; const Char *</td></tr>
 <tr class="separator:a45c3c961ad59bc2badc4e96c9a2848f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5396fe922be0e52d1244d53543663246"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
+<tr class="memitem:a5396fe922be0e52d1244d53543663246"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a5396fe922be0e52d1244d53543663246">parse_presentation_type</a> (Char <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>) -&gt; <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a></td></tr>
+<tr class="separator:a5396fe922be0e52d1244d53543663246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ecf40311aefa39e7687042008ad9f0"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename SpecHandler &gt; </td></tr>
 <tr class="memitem:a08ecf40311aefa39e7687042008ad9f0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a08ecf40311aefa39e7687042008ad9f0">parse_format_specs</a> (const Char *begin, const Char *end, SpecHandler &amp;&amp;handler) -&gt; const Char *</td></tr>
 <tr class="separator:a08ecf40311aefa39e7687042008ad9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -706,24 +760,24 @@ Functions</h2></td></tr>
 <tr class="memitem:a231d5356fa71cf67e1383f18affdb95e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ParseContext &gt; </td></tr>
 <tr class="memitem:a231d5356fa71cf67e1383f18affdb95e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a231d5356fa71cf67e1383f18affdb95e">parse_format_specs</a> (ParseContext &amp;ctx) -&gt; decltype(ctx.begin())</td></tr>
 <tr class="separator:a231d5356fa71cf67e1383f18affdb95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad441459a530ef6056fa588ff973e2368"><td class="memTemplParams" colspan="2">template&lt;typename ErrorHandler &gt; </td></tr>
-<tr class="memitem:ad441459a530ef6056fa588ff973e2368"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ad441459a530ef6056fa588ff973e2368">check_int_type_spec</a> (char spec, ErrorHandler &amp;&amp;eh)</td></tr>
-<tr class="separator:ad441459a530ef6056fa588ff973e2368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87452f7297edb4e77df49d428fab96e0"><td class="memTemplParams" colspan="2">template&lt;typename ErrorHandler &gt; </td></tr>
+<tr class="memitem:a87452f7297edb4e77df49d428fab96e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a87452f7297edb4e77df49d428fab96e0">check_int_type_spec</a> (<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, ErrorHandler &amp;&amp;eh)</td></tr>
+<tr class="separator:a87452f7297edb4e77df49d428fab96e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ee3e169ebb4dd11af57bac8fb7d3e12"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename ErrorHandler  = error_handler&gt; </td></tr>
 <tr class="memitem:a2ee3e169ebb4dd11af57bac8fb7d3e12"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a2ee3e169ebb4dd11af57bac8fb7d3e12">check_char_specs</a> (const <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; Char &gt; &amp;specs, ErrorHandler &amp;&amp;eh={}) -&gt; bool</td></tr>
 <tr class="separator:a2ee3e169ebb4dd11af57bac8fb7d3e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af402a8945eb3b523a09d4ddb1a080a45"><td class="memTemplParams" colspan="2">template&lt;typename ErrorHandler  = error_handler, typename Char &gt; </td></tr>
 <tr class="memitem:af402a8945eb3b523a09d4ddb1a080a45"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#af402a8945eb3b523a09d4ddb1a080a45">parse_float_type_spec</a> (const <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt; Char &gt; &amp;specs, ErrorHandler &amp;&amp;eh={}) -&gt; <a class="el" href="structfloat__specs.html">float_specs</a></td></tr>
 <tr class="separator:af402a8945eb3b523a09d4ddb1a080a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52125d1181ef870093da840070cb7142"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename ErrorHandler  = error_handler&gt; </td></tr>
-<tr class="memitem:a52125d1181ef870093da840070cb7142"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a52125d1181ef870093da840070cb7142">check_cstring_type_spec</a> (Char spec, ErrorHandler &amp;&amp;eh={}) -&gt; bool</td></tr>
-<tr class="separator:a52125d1181ef870093da840070cb7142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a350ca8595dd23f92615a73c71aec3d66"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename ErrorHandler  = error_handler&gt; </td></tr>
-<tr class="memitem:a350ca8595dd23f92615a73c71aec3d66"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a350ca8595dd23f92615a73c71aec3d66">check_string_type_spec</a> (Char spec, ErrorHandler &amp;&amp;eh={})</td></tr>
-<tr class="separator:a350ca8595dd23f92615a73c71aec3d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8135eff565ec736204c8b499b90543ed"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename ErrorHandler &gt; </td></tr>
-<tr class="memitem:a8135eff565ec736204c8b499b90543ed"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a8135eff565ec736204c8b499b90543ed">check_pointer_type_spec</a> (Char spec, ErrorHandler &amp;&amp;eh)</td></tr>
-<tr class="separator:a8135eff565ec736204c8b499b90543ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab044179d86d2046d8277ee07a0e3837"><td class="memTemplParams" colspan="2">template&lt;typename ErrorHandler  = error_handler&gt; </td></tr>
+<tr class="memitem:aab044179d86d2046d8277ee07a0e3837"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aab044179d86d2046d8277ee07a0e3837">check_cstring_type_spec</a> (<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, ErrorHandler &amp;&amp;eh={}) -&gt; bool</td></tr>
+<tr class="separator:aab044179d86d2046d8277ee07a0e3837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e043de59a6d4d807f45ceecd6cc9ccd"><td class="memTemplParams" colspan="2">template&lt;typename ErrorHandler  = error_handler&gt; </td></tr>
+<tr class="memitem:a4e043de59a6d4d807f45ceecd6cc9ccd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a4e043de59a6d4d807f45ceecd6cc9ccd">check_string_type_spec</a> (<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, ErrorHandler &amp;&amp;eh={})</td></tr>
+<tr class="separator:a4e043de59a6d4d807f45ceecd6cc9ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769653db0f7b114092edb39237877070"><td class="memTemplParams" colspan="2">template&lt;typename ErrorHandler &gt; </td></tr>
+<tr class="memitem:a769653db0f7b114092edb39237877070"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a769653db0f7b114092edb39237877070">check_pointer_type_spec</a> (<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, ErrorHandler &amp;&amp;eh)</td></tr>
+<tr class="separator:a769653db0f7b114092edb39237877070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7c992232fc1487f47dd2cf18fa997d"><td class="memTemplParams" colspan="2">template&lt;typename... Args, typename Char &gt; </td></tr>
 <tr class="memitem:afc7c992232fc1487f47dd2cf18fa997d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#afc7c992232fc1487f47dd2cf18fa997d">get_arg_index_by_name</a> (<a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; name) -&gt; int</td></tr>
 <tr class="separator:afc7c992232fc1487f47dd2cf18fa997d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -734,13 +788,14 @@ Functions</h2></td></tr>
 <tr class="separator:a4e0222b1158d1d1997662e32d985d72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495f03845608df33e628ac790e76f713"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt; </td></tr>
 <tr class="memitem:a495f03845608df33e628ac790e76f713"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a495f03845608df33e628ac790e76f713">runtime</a> (const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;s) -&gt; <a class="el" href="structbasic__runtime.html">basic_runtime</a>&lt; <a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a>&lt; <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a495f03845608df33e628ac790e76f713"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Creates a runtime format string.  <a href="core_8h.html#a495f03845608df33e628ac790e76f713">More...</a><br /></td></tr>
 <tr class="separator:a495f03845608df33e628ac790e76f713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af648791a5d0b00e0852dfdc69c929641"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#af648791a5d0b00e0852dfdc69c929641">vformat</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> fmt, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args) -&gt; std::string</td></tr>
 <tr class="separator:af648791a5d0b00e0852dfdc69c929641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67a186790128b6b0810bccb5d1e91a72"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a67a186790128b6b0810bccb5d1e91a72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a67a186790128b6b0810bccb5d1e91a72">format</a> (<a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::string</td></tr>
-<tr class="memdesc:a67a186790128b6b0810bccb5d1e91a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Formats <code>args</code> according to specifications in <code>fmt</code> and returns the result as a string.  <a href="core_8h.html#a67a186790128b6b0810bccb5d1e91a72">More...</a><br /></td></tr>
-<tr class="separator:a67a186790128b6b0810bccb5d1e91a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040af707f7f42f401696d0e7263d07cf"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a040af707f7f42f401696d0e7263d07cf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a37e9e5fe4b5f536b45979411c2568232">FMT_NODISCARD</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a> (<a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::string</td></tr>
+<tr class="memdesc:a040af707f7f42f401696d0e7263d07cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Formats <code>args</code> according to specifications in <code>fmt</code> and returns the result as a string.  <a href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">More...</a><br /></td></tr>
+<tr class="separator:a040af707f7f42f401696d0e7263d07cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91ecf3a785a511067ba5a78adb0cec1"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_output_iterator&lt; OutputIt, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:aa91ecf3a785a511067ba5a78adb0cec1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aa91ecf3a785a511067ba5a78adb0cec1">vformat_to</a> (OutputIt out, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> fmt, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args) -&gt; OutputIt</td></tr>
 <tr class="memdesc:aa91ecf3a785a511067ba5a78adb0cec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a string and writes the output to <code>out</code>.  <a href="core_8h.html#aa91ecf3a785a511067ba5a78adb0cec1">More...</a><br /></td></tr>
@@ -752,14 +807,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a45a3c74fd5764c3be13025cacbcb02b2"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt , typename... T, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_output_iterator&lt; OutputIt, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:a45a3c74fd5764c3be13025cacbcb02b2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a45a3c74fd5764c3be13025cacbcb02b2">vformat_to_n</a> (OutputIt out, size_t n, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> fmt, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args) -&gt; <a class="el" href="structformat__to__n__result.html">format_to_n_result</a>&lt; OutputIt &gt;</td></tr>
 <tr class="separator:a45a3c74fd5764c3be13025cacbcb02b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107ee6128089f0edb552549c609e09ea"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt , typename... T, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_output_iterator&lt; OutputIt, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a107ee6128089f0edb552549c609e09ea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a107ee6128089f0edb552549c609e09ea">format_to_n</a> (OutputIt out, size_t n, <a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt; fmt, const T &amp;... args) -&gt; <a class="el" href="structformat__to__n__result.html">format_to_n_result</a>&lt; OutputIt &gt;</td></tr>
-<tr class="memdesc:a107ee6128089f0edb552549c609e09ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Formats <code>args</code> according to specifications in <code>fmt</code>, writes up to <code>n</code> characters of the result to the output iterator <code>out</code> and returns the total (not truncated) output size and the iterator past the end of the output range.  <a href="core_8h.html#a107ee6128089f0edb552549c609e09ea">More...</a><br /></td></tr>
-<tr class="separator:a107ee6128089f0edb552549c609e09ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40d25d01e2634449350403a982199407"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
-<tr class="memitem:a40d25d01e2634449350403a982199407"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a40d25d01e2634449350403a982199407">formatted_size</a> (<a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; size_t</td></tr>
-<tr class="memdesc:a40d25d01e2634449350403a982199407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of chars in the output of <code>format(fmt, args...)</code>.  <a href="core_8h.html#a40d25d01e2634449350403a982199407">More...</a><br /></td></tr>
-<tr class="separator:a40d25d01e2634449350403a982199407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8774a69f055bd85de86ff0e85b2e22f"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt , typename... T, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_output_iterator&lt; OutputIt, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:ab8774a69f055bd85de86ff0e85b2e22f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ab8774a69f055bd85de86ff0e85b2e22f">format_to_n</a> (OutputIt out, size_t n, <a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; <a class="el" href="structformat__to__n__result.html">format_to_n_result</a>&lt; OutputIt &gt;</td></tr>
+<tr class="memdesc:ab8774a69f055bd85de86ff0e85b2e22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Formats <code>args</code> according to specifications in <code>fmt</code>, writes up to <code>n</code> characters of the result to the output iterator <code>out</code> and returns the total (not truncated) output size and the iterator past the end of the output range.  <a href="core_8h.html#ab8774a69f055bd85de86ff0e85b2e22f">More...</a><br /></td></tr>
+<tr class="separator:ab8774a69f055bd85de86ff0e85b2e22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9a011c5e8bf359e75651cbdc411941"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a0f9a011c5e8bf359e75651cbdc411941"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a37e9e5fe4b5f536b45979411c2568232">FMT_NODISCARD</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a0f9a011c5e8bf359e75651cbdc411941">formatted_size</a> (<a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; size_t</td></tr>
+<tr class="memdesc:a0f9a011c5e8bf359e75651cbdc411941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of chars in the output of <code>format(fmt, args...)</code>.  <a href="core_8h.html#a0f9a011c5e8bf359e75651cbdc411941">More...</a><br /></td></tr>
+<tr class="separator:a0f9a011c5e8bf359e75651cbdc411941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a429465d7a760d1cdc8380415d815d41d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a429465d7a760d1cdc8380415d815d41d">vprint</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> fmt, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args)</td></tr>
 <tr class="separator:a429465d7a760d1cdc8380415d815d41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ecd9e6c1688eb3aa54cdf85a873103c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a9ecd9e6c1688eb3aa54cdf85a873103c">vprint</a> (std::FILE *f, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> fmt, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args)</td></tr>
@@ -851,7 +906,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">namespace </span>fmt {           \</div>
-<div class="line">    FMT_INLINE_NAMESPACE v8 {</div>
+<div class="line">    inline <span class="keyword">namespace </span>v8 {</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -929,6 +984,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="acebe0f930dd6aecc374db251062e9d10" name="acebe0f930dd6aecc374db251062e9d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebe0f930dd6aecc374db251062e9d10">&#9670;&nbsp;</a></span>FMT_CONSTEXPR20</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_CONSTEXPR20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab93c46c5456b5163b059f017d5905ffe" name="ab93c46c5456b5163b059f017d5905ffe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab93c46c5456b5163b059f017d5905ffe">&#9670;&nbsp;</a></span>FMT_CONSTEXPR_CHAR_TRAITS</h2>
 
@@ -951,6 +1020,34 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define FMT_CONSTEXPR_DECL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac80313a502c4d9c77c9a0531cb682a99" name="ac80313a502c4d9c77c9a0531cb682a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac80313a502c4d9c77c9a0531cb682a99">&#9670;&nbsp;</a></span>FMT_CPLUSPLUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_CPLUSPLUS&#160;&#160;&#160;__cplusplus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8aba8a78c514e176e0dd0a159de7a369" name="a8aba8a78c514e176e0dd0a159de7a369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aba8a78c514e176e0dd0a159de7a369">&#9670;&nbsp;</a></span>FMT_DEPRECATED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_DEPRECATED&#160;&#160;&#160;/* deprecated */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1014,9 +1111,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">      }                       \</div>
-<div class="line">      using <span class="keyword">namespace </span>v8;     \</div>
-<div class="line">      }</div>
+<b>Value:</b><div class="fragment"><div class="line">    }                       \</div>
+<div class="line">    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1080,20 +1176,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a65e1bbcd941d957e3bc12befcdc726f3" name="a65e1bbcd941d957e3bc12befcdc726f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65e1bbcd941d957e3bc12befcdc726f3">&#9670;&nbsp;</a></span>FMT_GCC_VISIBILITY_HIDDEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FMT_GCC_VISIBILITY_HIDDEN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2766aa9d7506047bc81bd56a766f3ab3" name="a2766aa9d7506047bc81bd56a766f3ab3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2766aa9d7506047bc81bd56a766f3ab3">&#9670;&nbsp;</a></span>FMT_HAS_CPP14_ATTRIBUTE</h2>
 
@@ -1105,7 +1187,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">attribute</td><td>)</td>
-          <td>&#160;&#160;&#160;  (__cplusplus &gt;= 201402L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td>
+          <td>&#160;&#160;&#160;  (<a class="el" href="core_8h.html#ac80313a502c4d9c77c9a0531cb682a99">FMT_CPLUSPLUS</a> &gt;= 201402L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1123,7 +1205,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">attribute</td><td>)</td>
-          <td>&#160;&#160;&#160;  (__cplusplus &gt;= 201703L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td>
+          <td>&#160;&#160;&#160;  (<a class="el" href="core_8h.html#ac80313a502c4d9c77c9a0531cb682a99">FMT_CPLUSPLUS</a> &gt;= 201703L &amp;&amp; <a class="el" href="core_8h.html#a55d7b78b0300ddda018f77208e80f3e9">FMT_HAS_CPP_ATTRIBUTE</a>(attribute))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1180,20 +1262,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e3ffe834c427bc295b6880efcd17976" name="a1e3ffe834c427bc295b6880efcd17976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e3ffe834c427bc295b6880efcd17976">&#9670;&nbsp;</a></span>FMT_HAS_GXX_CXX11</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FMT_HAS_GXX_CXX11&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="afa144e698f8df527d6e51688eb9abbd1" name="afa144e698f8df527d6e51688eb9abbd1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa144e698f8df527d6e51688eb9abbd1">&#9670;&nbsp;</a></span>FMT_HAS_INCLUDE</h2>
 
@@ -1234,34 +1302,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define FMT_INLINE&#160;&#160;&#160;inline</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a750d1276ba35fb73b8f2998389a5f8c6" name="a750d1276ba35fb73b8f2998389a5f8c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a750d1276ba35fb73b8f2998389a5f8c6">&#9670;&nbsp;</a></span>FMT_INLINE_NAMESPACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FMT_INLINE_NAMESPACE&#160;&#160;&#160;namespace</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5df1fbe4814ecdaf28b17b6546f80d25" name="a5df1fbe4814ecdaf28b17b6546f80d25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5df1fbe4814ecdaf28b17b6546f80d25">&#9670;&nbsp;</a></span>FMT_MAYBE_UNUSED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FMT_MAYBE_UNUSED</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1342,6 +1382,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a37e9e5fe4b5f536b45979411c2568232" name="a37e9e5fe4b5f536b45979411c2568232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e9e5fe4b5f536b45979411c2568232">&#9670;&nbsp;</a></span>FMT_NODISCARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FMT_NODISCARD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aef128913e8400683b1cbd1a3a2e11df3" name="aef128913e8400683b1cbd1a3a2e11df3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef128913e8400683b1cbd1a3a2e11df3">&#9670;&nbsp;</a></span>FMT_NOEXCEPT</h2>
 
@@ -1384,20 +1438,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a023c6c178e254d81d578b90921804b1c" name="a023c6c178e254d81d578b90921804b1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a023c6c178e254d81d578b90921804b1c">&#9670;&nbsp;</a></span>FMT_OVERRIDE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FMT_OVERRIDE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1b33b94a68ab12b7b4e7051da8a361f5" name="a1b33b94a68ab12b7b4e7051da8a361f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b33b94a68ab12b7b4e7051da8a361f5">&#9670;&nbsp;</a></span>FMT_TYPE_CONSTANT</h2>
 
@@ -1426,7 +1466,7 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Char&gt;                \</div>
 <div class="line">  struct <a class="code hl_struct" href="structtype__constant.html">type_constant&lt;Type, Char&gt;</a>        \</div>
 <div class="line">      : std::integral_constant&lt;type, type::constant&gt; {}</div>
-<div class="ttc" id="astructtype__constant_html"><div class="ttname"><a href="structtype__constant.html">type_constant</a></div><div class="ttdef"><b>Definition:</b> core.h:1073</div></div>
+<div class="ttc" id="astructtype__constant_html"><div class="ttname"><a href="structtype__constant.html">type_constant</a></div><div class="ttdef"><b>Definition:</b> core.h:1156</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1455,14 +1495,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    (<a class="code hl_define" href="core_8h.html#a749169f277bb21ccf12b1c665e68e88a">FMT_HAS_FEATURE</a>(cxx_relaxed_constexpr) || <a class="code hl_define" href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a> &gt;= 1910 || \</div>
+<b>Value:</b><div class="fragment"><div class="line">    (<a class="code hl_define" href="core_8h.html#a749169f277bb21ccf12b1c665e68e88a">FMT_HAS_FEATURE</a>(cxx_relaxed_constexpr) || <a class="code hl_define" href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a> &gt;= 1912 || \</div>
 <div class="line">     (<a class="code hl_define" href="core_8h.html#a4f5db4f97e31a127b1236d1ff412bb0c">FMT_GCC_VERSION</a> &gt;= 600 &amp;&amp; __cplusplus &gt;= 201402L)) &amp;&amp;           \</div>
 <div class="line">        !<a class="code hl_define" href="core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e">FMT_NVCC</a> &amp;&amp; !<a class="code hl_define" href="core_8h.html#a061a90c1c2008acd7b0161cde41c1a11">FMT_ICC_VERSION</a></div>
-<div class="ttc" id="acore_8h_html_a061a90c1c2008acd7b0161cde41c1a11"><div class="ttname"><a href="core_8h.html#a061a90c1c2008acd7b0161cde41c1a11">FMT_ICC_VERSION</a></div><div class="ttdeci">#define FMT_ICC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:44</div></div>
-<div class="ttc" id="acore_8h_html_a363cb0623e6975ff2b357a52a03e4728"><div class="ttname"><a href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a></div><div class="ttdeci">#define FMT_MSC_VER</div><div class="ttdef"><b>Definition:</b> core.h:57</div></div>
-<div class="ttc" id="acore_8h_html_a4f5db4f97e31a127b1236d1ff412bb0c"><div class="ttname"><a href="core_8h.html#a4f5db4f97e31a127b1236d1ff412bb0c">FMT_GCC_VERSION</a></div><div class="ttdeci">#define FMT_GCC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:31</div></div>
-<div class="ttc" id="acore_8h_html_a52376c1ced87b19c8b3ece64cc64f22e"><div class="ttname"><a href="core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e">FMT_NVCC</a></div><div class="ttdeci">#define FMT_NVCC</div><div class="ttdef"><b>Definition:</b> core.h:50</div></div>
-<div class="ttc" id="acore_8h_html_a749169f277bb21ccf12b1c665e68e88a"><div class="ttname"><a href="core_8h.html#a749169f277bb21ccf12b1c665e68e88a">FMT_HAS_FEATURE</a></div><div class="ttdeci">#define FMT_HAS_FEATURE(x)</div><div class="ttdef"><b>Definition:</b> core.h:64</div></div>
+<div class="ttc" id="acore_8h_html_a061a90c1c2008acd7b0161cde41c1a11"><div class="ttname"><a href="core_8h.html#a061a90c1c2008acd7b0161cde41c1a11">FMT_ICC_VERSION</a></div><div class="ttdeci">#define FMT_ICC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:49</div></div>
+<div class="ttc" id="acore_8h_html_a363cb0623e6975ff2b357a52a03e4728"><div class="ttname"><a href="core_8h.html#a363cb0623e6975ff2b357a52a03e4728">FMT_MSC_VER</a></div><div class="ttdeci">#define FMT_MSC_VER</div><div class="ttdef"><b>Definition:</b> core.h:62</div></div>
+<div class="ttc" id="acore_8h_html_a4f5db4f97e31a127b1236d1ff412bb0c"><div class="ttname"><a href="core_8h.html#a4f5db4f97e31a127b1236d1ff412bb0c">FMT_GCC_VERSION</a></div><div class="ttdeci">#define FMT_GCC_VERSION</div><div class="ttdef"><b>Definition:</b> core.h:32</div></div>
+<div class="ttc" id="acore_8h_html_a52376c1ced87b19c8b3ece64cc64f22e"><div class="ttname"><a href="core_8h.html#a52376c1ced87b19c8b3ece64cc64f22e">FMT_NVCC</a></div><div class="ttdeci">#define FMT_NVCC</div><div class="ttdef"><b>Definition:</b> core.h:55</div></div>
+<div class="ttc" id="acore_8h_html_a749169f277bb21ccf12b1c665e68e88a"><div class="ttname"><a href="core_8h.html#a749169f277bb21ccf12b1c665e68e88a">FMT_HAS_FEATURE</a></div><div class="ttdeci">#define FMT_HAS_FEATURE(x)</div><div class="ttdef"><b>Definition:</b> core.h:69</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1488,20 +1528,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define FMT_USE_FLOAT&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a74b8b7cbc0031ac8e372c9639b8e1b62" name="a74b8b7cbc0031ac8e372c9639b8e1b62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74b8b7cbc0031ac8e372c9639b8e1b62">&#9670;&nbsp;</a></span>FMT_USE_INLINE_NAMESPACES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FMT_USE_INLINE_NAMESPACES&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1571,7 +1597,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FMT_VERSION&#160;&#160;&#160;80001</td>
+          <td class="memname">#define FMT_VERSION&#160;&#160;&#160;80101</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1586,7 +1612,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759">align_t</a> =  <a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759">align::type</a></td>
+          <td class="memname">using <a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759">align_t</a> =  <a class="el" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759">align::type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1602,7 +1628,7 @@ Variables</h2></td></tr>
 template&lt;bool B&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a> =  std::integral_constant&lt;bool, B&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a> =  std::integral_constant&lt;bool, B&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1618,7 +1644,7 @@ template&lt;bool B&gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">buffer_appender</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;std::is_same&lt;T, char&gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classappender.html">appender</a>, std::back_insert_iterator&lt;<a class="el" href="classbuffer.html">buffer</a>&lt;T&gt; &gt;&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">buffer_appender</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;std::is_same&lt;T, char&gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classappender.html">appender</a>, std::back_insert_iterator&lt;<a class="el" href="classbuffer.html">buffer</a>&lt;T&gt; &gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1634,7 +1660,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename Char &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a> =  <a class="el" href="classbasic__format__context.html">basic_format_context</a>&lt;<a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">detail::buffer_appender</a>&lt;Char&gt;, Char&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a> =  <a class="el" href="classbasic__format__context.html">basic_format_context</a>&lt;<a class="el" href="core_8h.html#aa91f761428845b1b6d78bb83c6c69557">detail::buffer_appender</a>&lt;Char&gt;, Char&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1650,7 +1676,7 @@ template&lt;typename Char &gt; </div>
 template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a> =  typename detail::char_t_impl&lt;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
+          <td class="memname">using <a class="el" href="core_8h.html#a3c674f92fe25aa74e8d3d5449ec85efb">char_t</a> =  typename detail::char_t_impl&lt;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1668,7 +1694,7 @@ template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2fr
 template&lt;bool B, typename T , typename F &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a> =  typename std::conditional&lt;B, T, F&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
+          <td class="memname">using <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a> =  typename std::conditional&lt;B, T, F&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1684,7 +1710,7 @@ template&lt;bool B, typename T , typename F &gt; </div>
 template&lt;bool B, typename T  = void&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a> =  typename std::enable_if&lt;B, T&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
+          <td class="memname">using <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a> =  typename std::enable_if&lt;B, T&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1698,7 +1724,7 @@ template&lt;bool B, typename T  = void&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> =  <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt;<a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a>&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> =  <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt;<a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1714,7 +1740,7 @@ template&lt;bool B, typename T  = void&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a> =  <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt;char&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a3e6224930832371a8c75d3e519873a9e">format_context</a> =  <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt;char&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1728,7 +1754,7 @@ template&lt;bool B, typename T  = void&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a7f31f076b2eb408741895533f9222baa">format_parse_context</a> =  <a class="el" href="classbasic__format__parse__context.html">basic_format_parse_context</a>&lt;char&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a7f31f076b2eb408741895533f9222baa">format_parse_context</a> =  <a class="el" href="classbasic__format__parse__context.html">basic_format_parse_context</a>&lt;char&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1742,7 +1768,7 @@ template&lt;bool B, typename T  = void&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a92e212323f243ceed8554e67489039d3">format_specs</a> =  <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt;char&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a92e212323f243ceed8554e67489039d3">format_specs</a> =  <a class="el" href="structbasic__format__specs.html">basic_format_specs</a>&lt;char&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1758,7 +1784,7 @@ template&lt;bool B, typename T  = void&gt; </div>
 template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a> =  <a class="el" href="classbasic__format__string.html">basic_format_string</a>&lt;char, <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt;Args&gt;...&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a> =  <a class="el" href="classbasic__format__string.html">basic_format_string</a>&lt;char, <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt;Args&gt;...&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1774,7 +1800,7 @@ template&lt;typename... Args&gt; </div>
 template&lt;typename T , typename Char &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a> =  std::is_constructible&lt;<a class="el" href="structfallback__formatter.html">fallback_formatter</a>&lt;T, Char&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">has_fallback_formatter</a> =  std::is_constructible&lt;<a class="el" href="structfallback__formatter.html">fallback_formatter</a>&lt;T, Char&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1790,15 +1816,15 @@ template&lt;typename T , typename Char &gt; </div>
 template&lt;typename T , typename Context &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a> =  std::is_constructible&lt;typename Context::template formatter_type&lt;T&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a74c7602dbb427c519ab26d4feecf9149">has_formatter</a> =  std::is_constructible&lt;typename Context::template formatter_type&lt;T&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="afc7ddbfd7f5e6844fbded32071498c69" name="afc7ddbfd7f5e6844fbded32071498c69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc7ddbfd7f5e6844fbded32071498c69">&#9670;&nbsp;</a></span>is_formattable</h2>
+<a id="a887ba223931b931af78809677a4df3fb" name="a887ba223931b931af78809677a4df3fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887ba223931b931af78809677a4df3fb">&#9670;&nbsp;</a></span>is_formattable</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1806,7 +1832,7 @@ template&lt;typename T , typename Context &gt; </div>
 template&lt;typename T , typename Char  = char&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#afc7ddbfd7f5e6844fbded32071498c69">is_formattable</a> =  <a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a>&lt; !std::is_same&lt;decltype(detail::arg_mapper&lt;<a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt;Char&gt; &gt;().map( std::declval&lt;T&gt;())), detail::unformattable&gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">detail::has_fallback_formatter</a>&lt;T, Char&gt;::<a class="el" href="classvalue.html">value</a>&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a887ba223931b931af78809677a4df3fb">is_formattable</a> =  <a class="el" href="core_8h.html#a0d337b508cc2fb5a92d8e72db201e53b">bool_constant</a>&lt; !std::is_base_of&lt;detail::unformattable, decltype(detail::arg_mapper&lt;<a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt;Char&gt; &gt;().map( std::declval&lt;T&gt;()))&gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; !<a class="el" href="core_8h.html#ad017e68fdc62329b58d9acc5efa45867">detail::has_fallback_formatter</a>&lt;T, Char&gt;::<a class="el" href="classvalue.html">value</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1820,7 +1846,7 @@ template&lt;typename T , typename Char  = char&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#a2970898e8a43ce21e1cc510d49f1b89daa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#aaf105ae5beaca1dee30ae54530691fceaa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1836,7 +1862,23 @@ template&lt;typename T , typename Char  = char&gt; </div>
 template&lt;typename T , typename Context &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#adc4b00dc3259d8fce83f914a5b38f354">mapped_type_constant</a> =  <a class="el" href="structtype__constant.html">type_constant</a>&lt;decltype(<a class="el" href="structarg__mapper.html">arg_mapper</a>&lt;Context&gt;().map(std::declval&lt;const T&amp;&gt;())), typename <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">Context::char_type</a>&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#adc4b00dc3259d8fce83f914a5b38f354">mapped_type_constant</a> =  <a class="el" href="structtype__constant.html">type_constant</a>&lt;decltype(<a class="el" href="structarg__mapper.html">arg_mapper</a>&lt;Context&gt;().map(std::declval&lt;const T&amp;&gt;())), typename <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">Context::char_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31ee6e9231fa50c7fdd7292f0c45f13e" name="a31ee6e9231fa50c7fdd7292f0c45f13e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31ee6e9231fa50c7fdd7292f0c45f13e">&#9670;&nbsp;</a></span>remove_const_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="core_8h.html#a31ee6e9231fa50c7fdd7292f0c45f13e">remove_const_t</a> =  typename std::remove_const&lt;T&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1852,7 +1894,7 @@ template&lt;typename T , typename Context &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a> =  typename std::remove_cv&lt;<a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a>&lt;T&gt; &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
+          <td class="memname">using <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a> =  typename std::remove_cv&lt;<a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a>&lt;T&gt; &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1868,7 +1910,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a> =  typename std::remove_reference&lt;T&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
+          <td class="memname">using <a class="el" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a> =  typename std::remove_reference&lt;T&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1882,7 +1924,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8">sign_t</a> =  <a class="el" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8">sign::type</a></td>
+          <td class="memname">using <a class="el" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8">sign_t</a> =  <a class="el" href="namespacesign.html#a15b7528752011adf8078cdaf330a21a8">sign::type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1896,7 +1938,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> =  <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt;char&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> =  <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt;char&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1912,7 +1954,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a> =  typename <a class="el" href="structtype__identity.html">type_identity</a>&lt;T&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
+          <td class="memname">using <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a> =  typename <a class="el" href="structtype__identity.html">type_identity</a>&lt;T&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1926,7 +1968,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#a2970898e8a43ce21e1cc510d49f1b89daa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#aaf105ae5beaca1dee30ae54530691fceaa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1942,7 +1984,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename... &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="core_8h.html#ab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a> =  void</td>
+          <td class="memname">using <a class="el" href="core_8h.html#ab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a> =  void</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1950,8 +1992,8 @@ template&lt;typename... &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a2970898e8a43ce21e1cc510d49f1b89d" name="a2970898e8a43ce21e1cc510d49f1b89d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2970898e8a43ce21e1cc510d49f1b89d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aaf105ae5beaca1dee30ae54530691fce" name="aaf105ae5beaca1dee30ae54530691fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf105ae5beaca1dee30ae54530691fce">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1962,13 +2004,13 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2970898e8a43ce21e1cc510d49f1b89daa78c25a5df184172695de374af97f6a7" name="a2970898e8a43ce21e1cc510d49f1b89daa78c25a5df184172695de374af97f6a7"></a>long_short&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fceaa78c25a5df184172695de374af97f6a7" name="aaf105ae5beaca1dee30ae54530691fceaa78c25a5df184172695de374af97f6a7"></a>long_short&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="afa231099d07583c3ed0981e0bb665f55" name="afa231099d07583c3ed0981e0bb665f55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa231099d07583c3ed0981e0bb665f55">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a80155586fa275b28773c9b203f52caba" name="a80155586fa275b28773c9b203f52caba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80155586fa275b28773c9b203f52caba">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1979,13 +2021,13 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afa231099d07583c3ed0981e0bb665f55a20ec9c2d5cac838e8e340c1b371ae6db" name="afa231099d07583c3ed0981e0bb665f55a20ec9c2d5cac838e8e340c1b371ae6db"></a>packed_arg_bits&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a80155586fa275b28773c9b203f52cabaa20ec9c2d5cac838e8e340c1b371ae6db" name="a80155586fa275b28773c9b203f52cabaa20ec9c2d5cac838e8e340c1b371ae6db"></a>packed_arg_bits&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a394b3903fbf00ba2b6243f60689a5a5f" name="a394b3903fbf00ba2b6243f60689a5a5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a394b3903fbf00ba2b6243f60689a5a5f">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a6b7b47dd702d9e331586d485013fd1ea" name="a6b7b47dd702d9e331586d485013fd1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7b47dd702d9e331586d485013fd1ea">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1996,13 +2038,13 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a394b3903fbf00ba2b6243f60689a5a5faa2aec61a0142d05c79e16212132aa26b" name="a394b3903fbf00ba2b6243f60689a5a5faa2aec61a0142d05c79e16212132aa26b"></a>max_packed_args&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b7b47dd702d9e331586d485013fd1eaaa2aec61a0142d05c79e16212132aa26b" name="a6b7b47dd702d9e331586d485013fd1eaaa2aec61a0142d05c79e16212132aa26b"></a>max_packed_args&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="ac57f86410d09f09422066a474bfccd4c" name="ac57f86410d09f09422066a474bfccd4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac57f86410d09f09422066a474bfccd4c">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ae8ba51ad4af3d23e746ddd8fed080975" name="ae8ba51ad4af3d23e746ddd8fed080975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ba51ad4af3d23e746ddd8fed080975">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2013,13 +2055,13 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac57f86410d09f09422066a474bfccd4ca144043c49b42deecce880eb6ba67fd4d" name="ac57f86410d09f09422066a474bfccd4ca144043c49b42deecce880eb6ba67fd4d"></a>is_unpacked_bit&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae8ba51ad4af3d23e746ddd8fed080975a144043c49b42deecce880eb6ba67fd4d" name="ae8ba51ad4af3d23e746ddd8fed080975a144043c49b42deecce880eb6ba67fd4d"></a>is_unpacked_bit&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a499e22117783637ba5841719bd4898fd" name="a499e22117783637ba5841719bd4898fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a499e22117783637ba5841719bd4898fd">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aeec3818af74da83bcaa5e22b50d1d02c" name="aeec3818af74da83bcaa5e22b50d1d02c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec3818af74da83bcaa5e22b50d1d02c">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2030,7 +2072,7 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a499e22117783637ba5841719bd4898fda3d9e0b7b59aae7e5693ae2b8da34cabe" name="a499e22117783637ba5841719bd4898fda3d9e0b7b59aae7e5693ae2b8da34cabe"></a>has_named_args_bit&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aeec3818af74da83bcaa5e22b50d1d02ca3d9e0b7b59aae7e5693ae2b8da34cabe" name="aeec3818af74da83bcaa5e22b50d1d02ca3d9e0b7b59aae7e5693ae2b8da34cabe"></a>has_named_args_bit&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2059,6 +2101,28 @@ template&lt;typename... &gt; </div>
 <tr><td class="fieldname"><a id="a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86" name="a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86"></a>index&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297" name="a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297"></a>name&#160;</td><td class="fielddoc"></td></tr>
 </table>
+
+</div>
+</div>
+<a id="a57d5661a9537aa419c8ebc24667a96e9" name="a57d5661a9537aa419c8ebc24667a96e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d5661a9537aa419c8ebc24667a96e9">&#9670;&nbsp;</a></span>byte</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="core_8h.html#a57d5661a9537aa419c8ebc24667a96e9">byte</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2109,6 +2173,48 @@ template&lt;typename... &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfa139c9a1902753b3696794759b2c48" name="adfa139c9a1902753b3696794759b2c48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa139c9a1902753b3696794759b2c48">&#9670;&nbsp;</a></span>presentation_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> : unsigned char</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a334c4a4c42fdb79d7ebc3e73b517e6f8" name="adfa139c9a1902753b3696794759b2c48a334c4a4c42fdb79d7ebc3e73b517e6f8"></a>none&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a1feea25ecb958229287f885aebe7c49b" name="adfa139c9a1902753b3696794759b2c48a1feea25ecb958229287f885aebe7c49b"></a>dec&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a1cdbdf89f2d1bd3dd9e698b2b320cb86" name="adfa139c9a1902753b3696794759b2c48a1cdbdf89f2d1bd3dd9e698b2b320cb86"></a>oct&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48ad760bcac7fbf52a418de91c27c14d68f" name="adfa139c9a1902753b3696794759b2c48ad760bcac7fbf52a418de91c27c14d68f"></a>hex_lower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48af12799540739d60381b627d662b5bf6c" name="adfa139c9a1902753b3696794759b2c48af12799540739d60381b627d662b5bf6c"></a>hex_upper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a2e9d2820a44d3b4e9677aa880694ae1d" name="adfa139c9a1902753b3696794759b2c48a2e9d2820a44d3b4e9677aa880694ae1d"></a>bin_lower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a76681d3b581bdd3d96a61d9ee68a2f0e" name="adfa139c9a1902753b3696794759b2c48a76681d3b581bdd3d96a61d9ee68a2f0e"></a>bin_upper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a66ce284aa83a6a1ef3be40f84306d126" name="adfa139c9a1902753b3696794759b2c48a66ce284aa83a6a1ef3be40f84306d126"></a>hexfloat_lower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a357a3ac50fe49a6d66acad03ae376064" name="adfa139c9a1902753b3696794759b2c48a357a3ac50fe49a6d66acad03ae376064"></a>hexfloat_upper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a157555f731870b580669d4ae2e789292" name="adfa139c9a1902753b3696794759b2c48a157555f731870b580669d4ae2e789292"></a>exp_lower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48ae1b1fd27ead9e496ec42c0e7fa19effc" name="adfa139c9a1902753b3696794759b2c48ae1b1fd27ead9e496ec42c0e7fa19effc"></a>exp_upper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a1029c89672ee8198610d395987e71114" name="adfa139c9a1902753b3696794759b2c48a1029c89672ee8198610d395987e71114"></a>fixed_lower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a73ae375863f4a035518a76b2934fed84" name="adfa139c9a1902753b3696794759b2c48a73ae375863f4a035518a76b2934fed84"></a>fixed_upper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48ab13d73a11320f7d1f83412f9b8b67eb2" name="adfa139c9a1902753b3696794759b2c48ab13d73a11320f7d1f83412f9b8b67eb2"></a>general_lower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a38a425448fb167f44965e8edb6943ae0" name="adfa139c9a1902753b3696794759b2c48a38a425448fb167f44965e8edb6943ae0"></a>general_upper&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48a599e41d8cd8cf1ea79e494df54ede29a" name="adfa139c9a1902753b3696794759b2c48a599e41d8cd8cf1ea79e494df54ede29a"></a>chr&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21" name="adfa139c9a1902753b3696794759b2c48ab45cffe084dd3d20d928bee85e7b0f21"></a>string&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adfa139c9a1902753b3696794759b2c48accac8a66d468e2522611be86933cc0d9" name="adfa139c9a1902753b3696794759b2c48accac8a66d468e2522611be86933cc0d9"></a>pointer&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -2284,19 +2390,19 @@ template&lt;typename Char , typename ErrorHandler  = error_handler&gt; </div>
 
 </div>
 </div>
-<a id="a52125d1181ef870093da840070cb7142" name="a52125d1181ef870093da840070cb7142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52125d1181ef870093da840070cb7142">&#9670;&nbsp;</a></span>check_cstring_type_spec()</h2>
+<a id="aab044179d86d2046d8277ee07a0e3837" name="aab044179d86d2046d8277ee07a0e3837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab044179d86d2046d8277ee07a0e3837">&#9670;&nbsp;</a></span>check_cstring_type_spec()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Char , typename ErrorHandler  = error_handler&gt; </div>
+template&lt;typename ErrorHandler  = error_handler&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto check_cstring_type_spec </td>
           <td>(</td>
-          <td class="paramtype">Char&#160;</td>
-          <td class="paramname"><em>spec</em>, </td>
+          <td class="paramtype"><a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2354,8 +2460,8 @@ template&lt;typename... , typename <a class="el" href="wpilibc_2src_2main_2nativ
 
 </div>
 </div>
-<a id="ad441459a530ef6056fa588ff973e2368" name="ad441459a530ef6056fa588ff973e2368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad441459a530ef6056fa588ff973e2368">&#9670;&nbsp;</a></span>check_int_type_spec()</h2>
+<a id="a87452f7297edb4e77df49d428fab96e0" name="a87452f7297edb4e77df49d428fab96e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87452f7297edb4e77df49d428fab96e0">&#9670;&nbsp;</a></span>check_int_type_spec()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2365,8 +2471,8 @@ template&lt;typename ErrorHandler &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void check_int_type_spec </td>
           <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>spec</em>, </td>
+          <td class="paramtype"><a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2384,19 +2490,19 @@ template&lt;typename ErrorHandler &gt; </div>
 
 </div>
 </div>
-<a id="a8135eff565ec736204c8b499b90543ed" name="a8135eff565ec736204c8b499b90543ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8135eff565ec736204c8b499b90543ed">&#9670;&nbsp;</a></span>check_pointer_type_spec()</h2>
+<a id="a769653db0f7b114092edb39237877070" name="a769653db0f7b114092edb39237877070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769653db0f7b114092edb39237877070">&#9670;&nbsp;</a></span>check_pointer_type_spec()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Char , typename ErrorHandler &gt; </div>
+template&lt;typename ErrorHandler &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void check_pointer_type_spec </td>
           <td>(</td>
-          <td class="paramtype">Char&#160;</td>
-          <td class="paramname"><em>spec</em>, </td>
+          <td class="paramtype"><a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2414,19 +2520,19 @@ template&lt;typename Char , typename ErrorHandler &gt; </div>
 
 </div>
 </div>
-<a id="a350ca8595dd23f92615a73c71aec3d66" name="a350ca8595dd23f92615a73c71aec3d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a350ca8595dd23f92615a73c71aec3d66">&#9670;&nbsp;</a></span>check_string_type_spec()</h2>
+<a id="a4e043de59a6d4d807f45ceecd6cc9ccd" name="a4e043de59a6d4d807f45ceecd6cc9ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e043de59a6d4d807f45ceecd6cc9ccd">&#9670;&nbsp;</a></span>check_string_type_spec()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Char , typename ErrorHandler  = error_handler&gt; </div>
+template&lt;typename ErrorHandler  = error_handler&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void check_string_type_spec </td>
           <td>(</td>
-          <td class="paramtype">Char&#160;</td>
-          <td class="paramname"><em>spec</em>, </td>
+          <td class="paramtype"><a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2464,8 +2570,8 @@ template&lt;typename Char &gt; </div>
 
 </div>
 </div>
-<a id="a9914f7bd9cf9ddc2120e75397d11b538" name="a9914f7bd9cf9ddc2120e75397d11b538"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9914f7bd9cf9ddc2120e75397d11b538">&#9670;&nbsp;</a></span>const_check()</h2>
+<a id="a0290cb3baf281d15619c15fe252ea48c" name="a0290cb3baf281d15619c15fe252ea48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0290cb3baf281d15619c15fe252ea48c">&#9670;&nbsp;</a></span>const_check()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2476,7 +2582,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto const_check </td>
+          <td class="memname">constexpr <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto const_check </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -2520,44 +2626,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a7ed6bc96f0cb6093aabdfa147578568e" name="a7ed6bc96f0cb6093aabdfa147578568e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ed6bc96f0cb6093aabdfa147578568e">&#9670;&nbsp;</a></span>copy_str() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Char , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_same&lt; Char, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto copy_str </td>
-          <td>(</td>
-          <td class="paramtype">const Char *&#160;</td>
-          <td class="paramname"><em>begin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Char *&#160;</td>
-          <td class="paramname"><em>end</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Char *&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; Char* </td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6b13306dfd0dee2fa4fd36de9e973541" name="a6b13306dfd0dee2fa4fd36de9e973541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b13306dfd0dee2fa4fd36de9e973541">&#9670;&nbsp;</a></span>copy_str() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b13306dfd0dee2fa4fd36de9e973541">&#9670;&nbsp;</a></span>copy_str() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2593,7 +2663,7 @@ template&lt;typename Char , typename InputIt &gt; </div>
 </div>
 </div>
 <a id="a060ff34574606b33db21d39b17152349" name="a060ff34574606b33db21d39b17152349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a060ff34574606b33db21d39b17152349">&#9670;&nbsp;</a></span>copy_str() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a060ff34574606b33db21d39b17152349">&#9670;&nbsp;</a></span>copy_str() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2622,6 +2692,42 @@ template&lt;typename Char , typename InputIt , typename OutputIt &gt; </div>
           <td></td>
           <td>)</td>
           <td></td><td> -&gt; OutputIt </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6669f12174479094569a124472989b24" name="a6669f12174479094569a124472989b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6669f12174479094569a124472989b24">&#9670;&nbsp;</a></span>copy_str() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename T , typename U , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>( std::is_same&lt; <a class="el" href="core_8h.html#a31ee6e9231fa50c7fdd7292f0c45f13e">remove_const_t</a>&lt; T &gt;, U &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp;<a class="el" href="structis__char.html">is_char</a>&lt; U &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto copy_str </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>begin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U *&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; U* </td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2695,6 +2801,33 @@ template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">constexpr auto count_named_args </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; size_t </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf91a6a3b2e298235c8d45bec2854878" name="aaf91a6a3b2e298235c8d45bec2854878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf91a6a3b2e298235c8d45bec2854878">&#9670;&nbsp;</a></span>count_statically_named_args()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto count_statically_named_args </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> -&gt; size_t </td>
@@ -3301,8 +3434,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a67a186790128b6b0810bccb5d1e91a72" name="a67a186790128b6b0810bccb5d1e91a72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67a186790128b6b0810bccb5d1e91a72">&#9670;&nbsp;</a></span>format()</h2>
+<a id="a040af707f7f42f401696d0e7263d07cf" name="a040af707f7f42f401696d0e7263d07cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040af707f7f42f401696d0e7263d07cf">&#9670;&nbsp;</a></span>format()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3310,7 +3443,7 @@ template&lt;&gt; </div>
 template&lt;typename... T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto format </td>
+          <td class="memname"><a class="el" href="core_8h.html#a37e9e5fe4b5f536b45979411c2568232">FMT_NODISCARD</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto format </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt;&#160;</td>
           <td class="paramname"><em>fmt</em>, </td>
@@ -3331,7 +3464,7 @@ template&lt;typename... T&gt; </div>
 
 <p>\rst Formats <code>args</code> according to specifications in <code>fmt</code> and returns the result as a string. </p>
 <p >Example**::</p>
-<p >#include &lt;<a class="el" href="core_8h.html">fmt/core.h</a>&gt; std::string message = fmt::format("The answer is {}", 42); \endrst </p>
+<p >#include &lt;fmt/core.h&gt; std::string message = fmt::format("The answer is {}.", 42); \endrst </p>
 
 </div>
 </div>
@@ -3370,13 +3503,14 @@ template&lt;typename OutputIt , typename... T, <a class="el" href="core_8h.html#
 </div><div class="memdoc">
 
 <p>\rst Formats <code>args</code> according to specifications in <code>fmt</code>, writes the result to the output iterator <code>out</code> and returns the iterator past the end of the output range. </p>
+<p ><code>format_to</code> does not append a terminating null character.</p>
 <p >Example**::</p>
 <p >auto out = std::vector&lt;char&gt;(); fmt::format_to(std::back_inserter(out), "{}", 42); \endrst </p>
 
 </div>
 </div>
-<a id="a107ee6128089f0edb552549c609e09ea" name="a107ee6128089f0edb552549c609e09ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a107ee6128089f0edb552549c609e09ea">&#9670;&nbsp;</a></span>format_to_n()</h2>
+<a id="ab8774a69f055bd85de86ff0e85b2e22f" name="ab8774a69f055bd85de86ff0e85b2e22f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8774a69f055bd85de86ff0e85b2e22f">&#9670;&nbsp;</a></span>format_to_n()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3404,7 +3538,7 @@ template&lt;typename OutputIt , typename... T, <a class="el" href="core_8h.html#
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const T &amp;...&#160;</td>
+          <td class="paramtype">T &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -3416,12 +3550,12 @@ template&lt;typename OutputIt , typename... T, <a class="el" href="core_8h.html#
 </div><div class="memdoc">
 
 <p>\rst Formats <code>args</code> according to specifications in <code>fmt</code>, writes up to <code>n</code> characters of the result to the output iterator <code>out</code> and returns the total (not truncated) output size and the iterator past the end of the output range. </p>
-<p >\endrst </p>
+<p ><code>format_to_n</code> does not append a terminating null character. \endrst </p>
 
 </div>
 </div>
-<a id="a40d25d01e2634449350403a982199407" name="a40d25d01e2634449350403a982199407"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40d25d01e2634449350403a982199407">&#9670;&nbsp;</a></span>formatted_size()</h2>
+<a id="a0f9a011c5e8bf359e75651cbdc411941" name="a0f9a011c5e8bf359e75651cbdc411941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f9a011c5e8bf359e75651cbdc411941">&#9670;&nbsp;</a></span>formatted_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3429,7 +3563,7 @@ template&lt;typename OutputIt , typename... T, <a class="el" href="core_8h.html#
 template&lt;typename... T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto formatted_size </td>
+          <td class="memname"><a class="el" href="core_8h.html#a37e9e5fe4b5f536b45979411c2568232">FMT_NODISCARD</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto formatted_size </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a56a828fb91283babdb0eef8e0d9010cb">format_string</a>&lt; T... &gt;&#160;</td>
           <td class="paramname"><em>fmt</em>, </td>
@@ -3492,8 +3626,8 @@ template&lt;typename T , typename OutputIt &gt; </div>
 
 </div>
 </div>
-<a id="aa42a60eda7a70557cbc4b75b40d5e479" name="aa42a60eda7a70557cbc4b75b40d5e479"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa42a60eda7a70557cbc4b75b40d5e479">&#9670;&nbsp;</a></span>get_container()</h2>
+<a id="ad107c89b3560dbdb447bd42976dfd2d6" name="ad107c89b3560dbdb447bd42976dfd2d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad107c89b3560dbdb447bd42976dfd2d6">&#9670;&nbsp;</a></span>get_container()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3504,7 +3638,7 @@ template&lt;typename Container &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> auto get_container </td>
+          <td class="memname">auto get_container </td>
           <td>(</td>
           <td class="paramtype">std::back_insert_iterator&lt; Container &gt;&#160;</td>
           <td class="paramname"><em>it</em></td><td>)</td>
@@ -3560,8 +3694,93 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a039aa82d5bc3557c97ae98da6aec04ce" name="a039aa82d5bc3557c97ae98da6aec04ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a039aa82d5bc3557c97ae98da6aec04ce">&#9670;&nbsp;</a></span>ignore_unused()</h2>
+<a id="af1bd84ed55d3f25b69a382e0e6252131" name="af1bd84ed55d3f25b69a382e0e6252131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1bd84ed55d3f25b69a382e0e6252131">&#9670;&nbsp;</a></span>has_const_formatter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Context &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto has_const_formatter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aceece8f2dee76c77ba701a68e72c4496" name="aceece8f2dee76c77ba701a68e72c4496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceece8f2dee76c77ba701a68e72c4496">&#9670;&nbsp;</a></span>has_const_formatter_impl() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto has_const_formatter_impl </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td> -&gt; bool </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61cb94144cf48d21c29bc3343e9c11f9" name="a61cb94144cf48d21c29bc3343e9c11f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cb94144cf48d21c29bc3343e9c11f9">&#9670;&nbsp;</a></span>has_const_formatter_impl() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context , typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> auto has_const_formatter_impl </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; decltype(typename Context::template formatter_type&lt;T&gt;().<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>(
+                    std::declval&lt;const T&amp;&gt;(), std::declval&lt;Context&amp;&gt;()),
+                true) </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2c46459e52094a4dd8501aebcbefa80" name="aa2c46459e52094a4dd8501aebcbefa80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2c46459e52094a4dd8501aebcbefa80">&#9670;&nbsp;</a></span>ignore_unused()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3569,7 +3788,7 @@ template&lt;typename T &gt; </div>
 template&lt;typename... T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void ignore_unused </td>
+          <td class="memname"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> <a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> void ignore_unused </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
@@ -3768,8 +3987,8 @@ template&lt;typename Char &gt; </div>
 
 </div>
 </div>
-<a id="a17143cce8406f8fc161d24f1967f7e1e" name="a17143cce8406f8fc161d24f1967f7e1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17143cce8406f8fc161d24f1967f7e1e">&#9670;&nbsp;</a></span>is_constant_evaluated()</h2>
+<a id="a28a45c39fb6710745256cf0f73b8858a" name="a28a45c39fb6710745256cf0f73b8858a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a45c39fb6710745256cf0f73b8858a">&#9670;&nbsp;</a></span>is_constant_evaluated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3778,9 +3997,10 @@ template&lt;typename Char &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto is_constant_evaluated </td>
+          <td class="memname">constexpr <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto is_constant_evaluated </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>default_value</em> = <code>false</code></td><td>)</td>
           <td> -&gt; bool </td>
         </tr>
       </table>
@@ -3864,28 +4084,8 @@ template&lt;typename Char &gt; </div>
 
 </div>
 </div>
-<a id="a335b63db731e9d9189e3e81f5ba19f05" name="a335b63db731e9d9189e3e81f5ba19f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a335b63db731e9d9189e3e81f5ba19f05">&#9670;&nbsp;</a></span>make_arg() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;bool IS_PACKED, typename Context , <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> , typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(IS_PACKED) &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto make_arg </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="classvalue.html">value</a>&lt;Context&gt; </td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aef082bed5a0764bf11135801ae7c5a7b" name="aef082bed5a0764bf11135801ae7c5a7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef082bed5a0764bf11135801ae7c5a7b">&#9670;&nbsp;</a></span>make_arg() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef082bed5a0764bf11135801ae7c5a7b">&#9670;&nbsp;</a></span>make_arg() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3905,7 +4105,7 @@ template&lt;typename Context , typename T &gt; </div>
 </div>
 </div>
 <a id="a8f2d4bf9b52be21037c502aa30f0e6e8" name="a8f2d4bf9b52be21037c502aa30f0e6e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f2d4bf9b52be21037c502aa30f0e6e8">&#9670;&nbsp;</a></span>make_arg() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2d4bf9b52be21037c502aa30f0e6e8">&#9670;&nbsp;</a></span>make_arg() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3932,8 +4132,28 @@ template&lt;bool IS_PACKED, typename Context , <a class="el" href="core_8h.html#
 
 </div>
 </div>
-<a id="ad6ceaba4c5b391e1f839ce80092329ae" name="ad6ceaba4c5b391e1f839ce80092329ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6ceaba4c5b391e1f839ce80092329ae">&#9670;&nbsp;</a></span>make_format_args()</h2>
+<a id="a6b1f225f5aa4925954c941e3c19a532e" name="a6b1f225f5aa4925954c941e3c19a532e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1f225f5aa4925954c941e3c19a532e">&#9670;&nbsp;</a></span>make_arg() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool IS_PACKED, typename Context , <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> , typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(IS_PACKED) &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> auto make_arg </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="classvalue.html">value</a>&lt;Context&gt; </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61919fb242708a0cc41b106d850b67b5" name="a61919fb242708a0cc41b106d850b67b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61919fb242708a0cc41b106d850b67b5">&#9670;&nbsp;</a></span>make_format_args()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3946,9 +4166,9 @@ template&lt;typename Context  = format_context, typename... Args&gt; </div>
         <tr>
           <td class="memname">constexpr auto make_format_args </td>
           <td>(</td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em></td><td>)</td>
-          <td> -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt;Context, Args...&gt; </td>
+          <td> -&gt; <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt;Context, <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt;Args&gt;...&gt; </td>
         </tr>
       </table>
   </td>
@@ -4231,6 +4451,26 @@ template&lt;typename Char , typename Handler &gt; </div>
 
 </div>
 </div>
+<a id="a5396fe922be0e52d1244d53543663246" name="a5396fe922be0e52d1244d53543663246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5396fe922be0e52d1244d53543663246">&#9670;&nbsp;</a></span>parse_presentation_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto parse_presentation_type </td>
+          <td>(</td>
+          <td class="paramtype">Char&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td> -&gt; <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a20ef5c2b6156c3892c678d6f28c7c015" name="a20ef5c2b6156c3892c678d6f28c7c015"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20ef5c2b6156c3892c678d6f28c7c015">&#9670;&nbsp;</a></span>parse_replacement_field()</h2>
 
@@ -4395,30 +4635,26 @@ template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2fr
       </table>
 </div><div class="memdoc">
 
+<p>\rst Creates a runtime format string. </p>
+<p >Example**::</p>
+<p >Check format string at runtime instead of compile-time. fmt::print(fmt::runtime("{:d}"), "I am not a number"); \endrst </p>
+
 </div>
 </div>
-<a id="aadf205d15a49e2b69e87968f23dd3ae6" name="aadf205d15a49e2b69e87968f23dd3ae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadf205d15a49e2b69e87968f23dd3ae6">&#9670;&nbsp;</a></span>throw_format_error()</h2>
+<a id="ac2dddff5c4f81bcda40833bc485853b5" name="ac2dddff5c4f81bcda40833bc485853b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2dddff5c4f81bcda40833bc485853b5">&#9670;&nbsp;</a></span>throw_format_error()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> void throw_format_error </td>
+          <td class="memname"><a class="el" href="core_8h.html#ac9411ed6305aee71472718fa55fcc352">FMT_NORETURN</a> <a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> void throw_format_error </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -4937,7 +5173,7 @@ template&lt;typename Visitor , typename Context &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><a class="el" href="core_8h.html">core.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

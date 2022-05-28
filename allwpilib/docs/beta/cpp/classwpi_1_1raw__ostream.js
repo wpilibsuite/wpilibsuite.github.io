@@ -1,21 +1,28 @@
 var classwpi_1_1raw__ostream =
 [
     [ "Colors", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631", [
-      [ "BLACK", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a1431d2d047b21aa9dcd6c4a3289f8e31", null ],
-      [ "RED", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a4baf838e3d705afcb6f4aa75ee6df99c", null ],
-      [ "GREEN", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a303c195beced10c2ac6955347d67587c", null ],
-      [ "YELLOW", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a6c85750cfeb69d17b1a3a0ccc4b63238", null ],
-      [ "BLUE", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a80b91ebb75bff4bbd36f1095a550c00f", null ],
-      [ "MAGENTA", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a4102b19e4c74aa7104ffbaa61c84b31b", null ],
-      [ "CYAN", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a458abd5e86a7d3b41fec7a77b58c80ff", null ],
-      [ "WHITE", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab674dd70b0802e7e3c097473157b5d39", null ],
-      [ "SAVEDCOLOR", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a3769503beca75af0fe29b4d88b5ade7c", null ]
+      [ "BLACK", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a08d0012388564e95c3b4a7407cf04965", null ],
+      [ "RED", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631aa2d9547b5d3dd9f05984475f7c926da0", null ],
+      [ "GREEN", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a9de0e5dd94e861317e74964bed179fa0", null ],
+      [ "YELLOW", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a8a568e5f41b7e4da88fe5c4a00aad34e", null ],
+      [ "BLUE", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a1b3e1ee9bff86431dea6b181365ba65f", null ],
+      [ "MAGENTA", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ac634ffea7195608364671ac52ee59a61", null ],
+      [ "CYAN", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631a344dd8cd533280795b9db82ef0c92749", null ],
+      [ "WHITE", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab5bf627e448384cf3a4c35121ca6008d", null ],
+      [ "SAVEDCOLOR", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631abd8a983d726207f3d1ba3ea7e2cfdf2a", null ],
+      [ "RESET", "classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631ab5859d8721cfdc0312b2838b9c985bc1", null ]
     ] ],
-    [ "raw_ostream", "classwpi_1_1raw__ostream.html#a159ee83950187660cf1ef9719a77a495", null ],
+    [ "OStreamKind", "classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49a", [
+      [ "OK_OStream", "classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa2bdd687fb19e606203cb02f5c50bf07b", null ],
+      [ "OK_FDStream", "classwpi_1_1raw__ostream.html#abcc763198eb5d01c038ad585513bb49aa8dfae711fb29865c49b78c8ea1a6f782", null ]
+    ] ],
+    [ "raw_ostream", "classwpi_1_1raw__ostream.html#a9b9a99b5196d282e28f19ce12dba3ce1", null ],
     [ "raw_ostream", "classwpi_1_1raw__ostream.html#a43a1c461a49e3baf15ffec06d4210d93", null ],
     [ "~raw_ostream", "classwpi_1_1raw__ostream.html#aeaa8016973e5e7e97b89c63e2e10cf75", null ],
     [ "changeColor", "classwpi_1_1raw__ostream.html#ae838a9a8e7aaa17d56329af887231131", null ],
+    [ "enable_colors", "classwpi_1_1raw__ostream.html#a1bec2e621488ef27afe5fd2145ca1adb", null ],
     [ "flush", "classwpi_1_1raw__ostream.html#a209f3bcca8657748af3db4bab3ca6f53", null ],
+    [ "get_kind", "classwpi_1_1raw__ostream.html#a0dc3fe1570f5434ae5d0bf6147c6c4b0", null ],
     [ "GetBufferSize", "classwpi_1_1raw__ostream.html#acaad6465ecaf1e80d800acc40c6292c7", null ],
     [ "getBufferStart", "classwpi_1_1raw__ostream.html#a2a0d0493db5dff918e9d3673710ca13d", null ],
     [ "GetNumBytesInBuffer", "classwpi_1_1raw__ostream.html#a503eb221d2e2f618e6aa1b842eced7f7", null ],
@@ -34,6 +41,7 @@ var classwpi_1_1raw__ostream =
     [ "operator<<", "classwpi_1_1raw__ostream.html#a3c3cd28ac9e6328793bfae4d62f7d614", null ],
     [ "operator=", "classwpi_1_1raw__ostream.html#ade3e8c19aa6404e634869430536a757b", null ],
     [ "preferred_buffer_size", "classwpi_1_1raw__ostream.html#a6ba429d403e231d08fe4d5fb4bf2da7c", null ],
+    [ "reserveExtraSpace", "classwpi_1_1raw__ostream.html#a32ee344340953e369975eebe7e7ecfde", null ],
     [ "resetColor", "classwpi_1_1raw__ostream.html#ad78f21707a8d41caa3e5437dca89cc56", null ],
     [ "reverseColor", "classwpi_1_1raw__ostream.html#ae2040ef994742d3904a2e00c3f272044", null ],
     [ "SetBuffer", "classwpi_1_1raw__ostream.html#a604d7ccd1ab7623329c6743c62db5ef6", null ],
@@ -41,9 +49,20 @@ var classwpi_1_1raw__ostream =
     [ "SetBufferSize", "classwpi_1_1raw__ostream.html#a2f01932091b0aeeea6adfd3eaa7cec92", null ],
     [ "SetUnbuffered", "classwpi_1_1raw__ostream.html#aa4a39ffb16e40a429eb314efedf74e69", null ],
     [ "tell", "classwpi_1_1raw__ostream.html#ada0ea5133f01a499bd9d74d2874a29ae", null ],
+    [ "tie", "classwpi_1_1raw__ostream.html#a70bdb5e93cd0b0a3df806527ea9ae937", null ],
     [ "write", "classwpi_1_1raw__ostream.html#a27bd39363ae68e667f1f54f2207bec3d", null ],
     [ "write", "classwpi_1_1raw__ostream.html#a55076f88425fc53707f215e4ab90ff06", null ],
     [ "write", "classwpi_1_1raw__ostream.html#ad9bad0857785ecde1a5684d3cc732405", null ],
     [ "write_escaped", "classwpi_1_1raw__ostream.html#a623db24f216428b1b9f695435ddcaad4", null ],
-    [ "write_zeros", "classwpi_1_1raw__ostream.html#a8b78249e0f8b52fa03c1cee03d734c60", null ]
+    [ "write_zeros", "classwpi_1_1raw__ostream.html#a8b78249e0f8b52fa03c1cee03d734c60", null ],
+    [ "BLACK", "classwpi_1_1raw__ostream.html#a05f91a45bd7e210a6693d5f8e963ef15", null ],
+    [ "BLUE", "classwpi_1_1raw__ostream.html#ab42bd9703a6054eac69fcf157252e957", null ],
+    [ "CYAN", "classwpi_1_1raw__ostream.html#a14d13c742e2a49b9877eb56a2f44471b", null ],
+    [ "GREEN", "classwpi_1_1raw__ostream.html#aa7d47c1520819af2704f42c35e84d01c", null ],
+    [ "MAGENTA", "classwpi_1_1raw__ostream.html#a0e2d34540c9a14a7832ad08c07b48a20", null ],
+    [ "RED", "classwpi_1_1raw__ostream.html#af9f396a7b12336030e7e4a62799fccfb", null ],
+    [ "RESET", "classwpi_1_1raw__ostream.html#a5cf3d43722659ffc06ac12e93604c93b", null ],
+    [ "SAVEDCOLOR", "classwpi_1_1raw__ostream.html#abe78e79a628c103e175ac29a55db1d0c", null ],
+    [ "WHITE", "classwpi_1_1raw__ostream.html#a6ede8baa5cb4c5364d15d8a70b87d931", null ],
+    [ "YELLOW", "classwpi_1_1raw__ostream.html#abb32362b8f45d0ac10889d50d60a3312", null ]
 ];

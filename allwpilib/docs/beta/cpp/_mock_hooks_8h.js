@@ -3,6 +3,7 @@ var _mock_hooks_8h =
     [ "HALSIM_SendConsoleLineHandler", "_mock_hooks_8h.html#a00476d77d12a0bc51e5cc3d13da4a347", null ],
     [ "HALSIM_SendErrorHandler", "_mock_hooks_8h.html#af185834ce258a6557b487f2aa6b473a2", null ],
     [ "HALSIM_SimPeriodicCallback", "_mock_hooks_8h.html#aa0ba707a7884888d2722bb29ae3d4931", null ],
+    [ "HALSIM_CancelAllSimPeriodicCallbacks", "_mock_hooks_8h.html#ae2b6076c6710b37f6fa89ce7654bc9de", null ],
     [ "HALSIM_CancelSimPeriodicAfterCallback", "_mock_hooks_8h.html#ae17c3b9843c68b32c8218938ea9e14aa", null ],
     [ "HALSIM_CancelSimPeriodicBeforeCallback", "_mock_hooks_8h.html#a6ed1f2a8c716b82334ff0d3347b8e781", null ],
     [ "HALSIM_GetProgramStarted", "_mock_hooks_8h.html#a59a202421a946810c149c2716333deb2", null ],

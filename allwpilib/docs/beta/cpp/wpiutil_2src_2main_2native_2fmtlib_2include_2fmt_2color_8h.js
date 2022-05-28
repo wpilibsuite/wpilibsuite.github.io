@@ -151,8 +151,12 @@ var wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h =
     ] ],
     [ "emphasis", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91ba", [
       [ "bold", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa69dcab4a73aeec2113f69b61e6263da8", null ],
+      [ "faint", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baaa2f30af159c87a8828f7d9581ca9e8c8", null ],
       [ "italic", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa030c5b6d1e5715105943ac111d9671bf", null ],
       [ "underline", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa6dc7b4483f8c2c701a48e42db552806d", null ],
+      [ "blink", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa40652ee9ae143f1c1c830f01a5449ecb", null ],
+      [ "reverse", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa4d9c2073afa3c2abb817dceb22c34de6", null ],
+      [ "conceal", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baaa27efeecfcdb7794476cafb0b362835e", null ],
       [ "strikethrough", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baaae9a363b2dfa9181da7ffde8e37813b5", null ]
     ] ],
     [ "terminal_color", "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a76f7aa9aae46c2ea7333dae7b531d6ac", [

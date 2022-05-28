@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -94,13 +94,14 @@ $(document).ready(function(){initNavTree('classwpi_1_1_small_vector_base.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classwpi_1_1_small_vector_base-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">wpi::SmallVectorBase Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is all the non-templated stuff common to all SmallVectors.  
+<p>This is all the stuff common to all SmallVectors.  
  <a href="classwpi_1_1_small_vector_base.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_small_vector_8h_source.html">wpi/SmallVector.h</a>&gt;</code></p>
@@ -110,37 +111,47 @@ Inheritance diagram for wpi::SmallVectorBase:</div>
  <div class="center">
   <img src="classwpi_1_1_small_vector_base.png" usemap="#wpi::SmallVectorBase_map" alt=""/>
   <map id="wpi::SmallVectorBase_map" name="wpi::SmallVectorBase_map">
-<area href="classwpi_1_1_small_vector_template_common.html" title="This is the part of SmallVectorTemplateBase which does not depend on whether the type T is a POD." alt="wpi::SmallVectorTemplateCommon&lt; T, typename &gt;" shape="rect" coords="307,56,604,80"/>
-<area href="classwpi_1_1_small_vector_template_base.html" title="SmallVectorTemplateBase&lt;isPodLike = false&gt; - This is where we put method implementations that are des..." alt="wpi::SmallVectorTemplateBase&lt; T, bool &gt;" shape="rect" coords="153,112,450,136"/>
-<area href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html" title="SmallVectorTemplateBase&lt;isPodLike = true&gt; - This is where we put method implementations that are desi..." alt="wpi::SmallVectorTemplateBase&lt; T, true &gt;" shape="rect" coords="460,112,757,136"/>
-<area href="classwpi_1_1_small_vector_impl.html" title="This class consists of common code factored out of the SmallVector class to reduce code duplication b..." alt="wpi::SmallVectorImpl&lt; T &gt;" shape="rect" coords="153,168,450,192"/>
+<area href="classwpi_1_1_small_vector_template_common.html" title="This is the part of SmallVectorTemplateBase which does not depend on whether the type T is a POD." alt="wpi::SmallVectorTemplateCommon&lt; T, typename &gt;" shape="rect" coords="460,56,757,80"/>
+<area href="classwpi_1_1_small_vector_template_base.html" title="SmallVectorTemplateBase&lt;TriviallyCopyable = false&gt; - This is where we put method implementations that..." alt="wpi::SmallVectorTemplateBase&lt; T, bool &gt;" shape="rect" coords="307,112,604,136"/>
+<area href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html" title="SmallVectorTemplateBase&lt;TriviallyCopyable = true&gt; - This is where we put method implementations that ..." alt="wpi::SmallVectorTemplateBase&lt; T, true &gt;" shape="rect" coords="614,112,911,136"/>
+<area href="classwpi_1_1_small_vector_impl.html" title="This class consists of common code factored out of the SmallVector class to reduce code duplication b..." alt="wpi::SmallVectorImpl&lt; T &gt;" shape="rect" coords="307,168,604,192"/>
 <area href="classwpi_1_1_small_vector.html" alt="wpi::SmallVector&lt; char, InternalLen &gt;" shape="rect" coords="0,224,297,248"/>
-<area href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small." alt="wpi::SmallVector&lt; T, N &gt;" shape="rect" coords="307,224,604,248"/>
+<area href="classwpi_1_1_small_vector.html" alt="wpi::SmallVector&lt; T, N &gt;" shape="rect" coords="307,224,604,248"/>
+<area href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small." alt="wpi::SmallVector&lt; T, N &gt;" shape="rect" coords="614,224,911,248"/>
 <area href="classwpi_1_1_small_string.html" title="SmallString - A SmallString is just a SmallVector with methods and accessors that make it work better..." alt="wpi::SmallString&lt; InternalLen &gt;" shape="rect" coords="0,280,297,304"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1ee683b2719bf7811392b85fd5da4b29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a1ee683b2719bf7811392b85fd5da4b29">size</a> () const</td></tr>
-<tr class="separator:a1ee683b2719bf7811392b85fd5da4b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca5113ee3a551e00b740e0607d9cf4fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#aca5113ee3a551e00b740e0607d9cf4fc">capacity</a> () const</td></tr>
-<tr class="separator:aca5113ee3a551e00b740e0607d9cf4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0496cb24ce10200238901613bf8676"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a1e0496cb24ce10200238901613bf8676">size</a> () const</td></tr>
+<tr class="separator:a1e0496cb24ce10200238901613bf8676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412757d92466076145b58eae427016ee"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a412757d92466076145b58eae427016ee">capacity</a> () const</td></tr>
+<tr class="separator:a412757d92466076145b58eae427016ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c11d37314eb4419dabf218c8ccf7918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a8ce3b3743bf423cf00a9eb18a3f0f139">LLVM_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a3c11d37314eb4419dabf218c8ccf7918">empty</a> () const</td></tr>
 <tr class="separator:a3c11d37314eb4419dabf218c8ccf7918"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc0a148799a86f4c1569e5d364d2f30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">set_size</a> (size_t <a class="el" href="classwpi_1_1_small_vector_base.html#a254eea40b23eef337293526530965f47">Size</a>)</td></tr>
-<tr class="memdesc:adc0a148799a86f4c1569e5d364d2f30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the array size to <code>N</code>, which the current array must have enough capacity for.  <a href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">More...</a><br /></td></tr>
-<tr class="separator:adc0a148799a86f4c1569e5d364d2f30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef8ec092bffa02a109894bf871821c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#aeef8ec092bffa02a109894bf871821c5">set_size</a> (size_t N)</td></tr>
+<tr class="memdesc:aeef8ec092bffa02a109894bf871821c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the array size to <code>N</code>, which the current array must have enough capacity for.  <a href="classwpi_1_1_small_vector_base.html#aeef8ec092bffa02a109894bf871821c5">More...</a><br /></td></tr>
+<tr class="separator:aeef8ec092bffa02a109894bf871821c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a94893ea37c1aefc6f6b066925fad3497"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a94893ea37c1aefc6f6b066925fad3497">SmallVectorBase</a> ()=delete</td></tr>
 <tr class="separator:a94893ea37c1aefc6f6b066925fad3497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb4169c16934ca377b957885955d037"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a9fb4169c16934ca377b957885955d037">SmallVectorBase</a> (void *FirstEl, size_t <a class="el" href="classwpi_1_1_small_vector_base.html#a24b75f3a3a60150805bdb1c92779c4d5">Capacity</a>)</td></tr>
-<tr class="separator:a9fb4169c16934ca377b957885955d037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a122197c35d81153116836ebc575eb75e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a122197c35d81153116836ebc575eb75e">grow_pod</a> (void *FirstEl, size_t MinCapacity, size_t TSize)</td></tr>
-<tr class="memdesc:a122197c35d81153116836ebc575eb75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the grow() method which only works on POD-like data types and is out of line to reduce code duplication.  <a href="classwpi_1_1_small_vector_base.html#a122197c35d81153116836ebc575eb75e">More...</a><br /></td></tr>
-<tr class="separator:a122197c35d81153116836ebc575eb75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb02e1c1217f76f74559d233dd8ba3d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#acb02e1c1217f76f74559d233dd8ba3d4">SmallVectorBase</a> (void *FirstEl, size_t TotalCapacity)</td></tr>
+<tr class="separator:acb02e1c1217f76f74559d233dd8ba3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa5b2bbfae71e6872164f12e60dea98"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a7fa5b2bbfae71e6872164f12e60dea98">mallocForGrow</a> (size_t MinSize, size_t TSize, size_t &amp;NewCapacity)</td></tr>
+<tr class="memdesc:a7fa5b2bbfae71e6872164f12e60dea98"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a helper for <em>grow()</em> that's out of line to reduce code duplication.  <a href="classwpi_1_1_small_vector_base.html#a7fa5b2bbfae71e6872164f12e60dea98">More...</a><br /></td></tr>
+<tr class="separator:a7fa5b2bbfae71e6872164f12e60dea98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817168112d7d7dedacf0e73bd2f9812e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a817168112d7d7dedacf0e73bd2f9812e">grow_pod</a> (void *FirstEl, size_t MinSize, size_t TSize)</td></tr>
+<tr class="memdesc:a817168112d7d7dedacf0e73bd2f9812e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the grow() method which only works on POD-like data types and is out of line to reduce code duplication.  <a href="classwpi_1_1_small_vector_base.html#a817168112d7d7dedacf0e73bd2f9812e">More...</a><br /></td></tr>
+<tr class="separator:a817168112d7d7dedacf0e73bd2f9812e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6e579136c9d154e2a4a8af5cc40e323a"><td class="memItemLeft" align="right" valign="top">static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a6e579136c9d154e2a4a8af5cc40e323a">SizeTypeMax</a> ()</td></tr>
+<tr class="memdesc:a6e579136c9d154e2a4a8af5cc40e323a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value of the Size_T used.  <a href="classwpi_1_1_small_vector_base.html#a6e579136c9d154e2a4a8af5cc40e323a">More...</a><br /></td></tr>
+<tr class="separator:a6e579136c9d154e2a4a8af5cc40e323a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -152,7 +163,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a24b75f3a3a60150805bdb1c92779c4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This is all the non-templated stuff common to all SmallVectors. </p>
+<div class="textblock"><p >This is all the stuff common to all SmallVectors. </p>
+<p >The template parameter specifies the type which should be used to hold the Size and Capacity of the <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a>, so it can be adjusted. Using 32 bit size is desirable to shrink the size of the <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a>. Using 64 bit size is desirable for cases like SmallVector&lt;char&gt;, where a 32 bit size would limit the vector to ~4GB. SmallVectors are used for buffering bitcode output - which can exceed 4GB. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a94893ea37c1aefc6f6b066925fad3497" name="a94893ea37c1aefc6f6b066925fad3497"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94893ea37c1aefc6f6b066925fad3497">&#9670;&nbsp;</a></span>SmallVectorBase() <span class="overload">[1/2]</span></h2>
@@ -179,8 +191,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9fb4169c16934ca377b957885955d037" name="a9fb4169c16934ca377b957885955d037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fb4169c16934ca377b957885955d037">&#9670;&nbsp;</a></span>SmallVectorBase() <span class="overload">[2/2]</span></h2>
+<a id="acb02e1c1217f76f74559d233dd8ba3d4" name="acb02e1c1217f76f74559d233dd8ba3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb02e1c1217f76f74559d233dd8ba3d4">&#9670;&nbsp;</a></span>SmallVectorBase() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +210,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>Capacity</em>&#160;</td>
+          <td class="paramname"><em>TotalCapacity</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -216,8 +228,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aca5113ee3a551e00b740e0607d9cf4fc" name="aca5113ee3a551e00b740e0607d9cf4fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca5113ee3a551e00b740e0607d9cf4fc">&#9670;&nbsp;</a></span>capacity()</h2>
+<a id="a412757d92466076145b58eae427016ee" name="a412757d92466076145b58eae427016ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412757d92466076145b58eae427016ee">&#9670;&nbsp;</a></span>capacity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +238,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> size_t wpi::SmallVectorBase::capacity </td>
+          <td class="memname">size_t wpi::SmallVectorBase::capacity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -266,8 +278,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a122197c35d81153116836ebc575eb75e" name="a122197c35d81153116836ebc575eb75e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a122197c35d81153116836ebc575eb75e">&#9670;&nbsp;</a></span>grow_pod()</h2>
+<a id="a817168112d7d7dedacf0e73bd2f9812e" name="a817168112d7d7dedacf0e73bd2f9812e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817168112d7d7dedacf0e73bd2f9812e">&#9670;&nbsp;</a></span>grow_pod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,7 +297,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>MinCapacity</em>, </td>
+          <td class="paramname"><em>MinSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -307,11 +319,57 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This is an implementation of the grow() method which only works on POD-like data types and is out of line to reduce code duplication. </p>
+<p >This function will report a fatal error if it cannot increase capacity. </p>
 
 </div>
 </div>
-<a id="adc0a148799a86f4c1569e5d364d2f30e" name="adc0a148799a86f4c1569e5d364d2f30e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc0a148799a86f4c1569e5d364d2f30e">&#9670;&nbsp;</a></span>set_size()</h2>
+<a id="a7fa5b2bbfae71e6872164f12e60dea98" name="a7fa5b2bbfae71e6872164f12e60dea98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fa5b2bbfae71e6872164f12e60dea98">&#9670;&nbsp;</a></span>mallocForGrow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * wpi::SmallVectorBase::mallocForGrow </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>MinSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>TSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>NewCapacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This is a helper for <em>grow()</em> that's out of line to reduce code duplication. </p>
+<p >This function will report a fatal error if it can't grow at least to <code>MinSize</code>. </p>
+
+</div>
+</div>
+<a id="aeef8ec092bffa02a109894bf871821c5" name="aeef8ec092bffa02a109894bf871821c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef8ec092bffa02a109894bf871821c5">&#9670;&nbsp;</a></span>set_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +381,7 @@ Protected Attributes</h2></td></tr>
           <td class="memname">void wpi::SmallVectorBase::set_size </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>Size</em></td><td>)</td>
+          <td class="paramname"><em>N</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -336,12 +394,12 @@ Protected Attributes</h2></td></tr>
 
 <p>Set the array size to <code>N</code>, which the current array must have enough capacity for. </p>
 <p >This does not construct or destroy any elements in the vector.</p>
-<p >Clients can use this in conjunction with <a class="el" href="classwpi_1_1_small_vector_base.html#aca5113ee3a551e00b740e0607d9cf4fc">capacity()</a> to write past the end of the buffer when they know that more elements are available, and only update the size later. This avoids the cost of value initializing elements which will only be overwritten. </p>
+<p >Clients can use this in conjunction with <a class="el" href="classwpi_1_1_small_vector_base.html#a412757d92466076145b58eae427016ee">capacity()</a> to write past the end of the buffer when they know that more elements are available, and only update the size later. This avoids the cost of value initializing elements which will only be overwritten. </p>
 
 </div>
 </div>
-<a id="a1ee683b2719bf7811392b85fd5da4b29" name="a1ee683b2719bf7811392b85fd5da4b29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ee683b2719bf7811392b85fd5da4b29">&#9670;&nbsp;</a></span>size()</h2>
+<a id="a1e0496cb24ce10200238901613bf8676" name="a1e0496cb24ce10200238901613bf8676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e0496cb24ce10200238901613bf8676">&#9670;&nbsp;</a></span>size()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -350,7 +408,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> size_t wpi::SmallVectorBase::size </td>
+          <td class="memname">size_t wpi::SmallVectorBase::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -362,6 +420,33 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e579136c9d154e2a4a8af5cc40e323a" name="a6e579136c9d154e2a4a8af5cc40e323a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e579136c9d154e2a4a8af5cc40e323a">&#9670;&nbsp;</a></span>SizeTypeMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr size_t wpi::SmallVectorBase::SizeTypeMax </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The maximum value of the Size_T used. </p>
 
 </div>
 </div>
@@ -441,7 +526,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_small_vector_base.html">SmallVectorBase</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

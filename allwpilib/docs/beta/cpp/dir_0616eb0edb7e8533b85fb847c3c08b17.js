@@ -13,6 +13,12 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
       [ "frc::AddressableLED", "classfrc_1_1_addressable_l_e_d.html", "classfrc_1_1_addressable_l_e_d" ],
       [ "frc::AddressableLED::LEDData", "classfrc_1_1_addressable_l_e_d_1_1_l_e_d_data.html", "classfrc_1_1_addressable_l_e_d_1_1_l_e_d_data" ]
     ] ],
+    [ "ADIS16448_IMU.h", "_a_d_i_s16448___i_m_u_8h.html", [
+      [ "frc::ADIS16448_IMU", "classfrc_1_1_a_d_i_s16448___i_m_u.html", "classfrc_1_1_a_d_i_s16448___i_m_u" ]
+    ] ],
+    [ "ADIS16470_IMU.h", "_a_d_i_s16470___i_m_u_8h.html", [
+      [ "frc::ADIS16470_IMU", "classfrc_1_1_a_d_i_s16470___i_m_u.html", "classfrc_1_1_a_d_i_s16470___i_m_u" ]
+    ] ],
     [ "ADXL345_I2C.h", "_a_d_x_l345___i2_c_8h.html", [
       [ "frc::ADXL345_I2C", "classfrc_1_1_a_d_x_l345___i2_c.html", "classfrc_1_1_a_d_x_l345___i2_c" ],
       [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1_a_d_x_l345___i2_c_1_1_all_axes.html", "structfrc_1_1_a_d_x_l345___i2_c_1_1_all_axes" ]
@@ -76,8 +82,8 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "CounterBase.h", "_counter_base_8h.html", [
       [ "frc::CounterBase", "classfrc_1_1_counter_base.html", "classfrc_1_1_counter_base" ]
     ] ],
-    [ "Debouncer.h", "_debouncer_8h.html", [
-      [ "frc::Debouncer", "classfrc_1_1_debouncer.html", "classfrc_1_1_debouncer" ]
+    [ "DataLogManager.h", "_data_log_manager_8h.html", [
+      [ "frc::DataLogManager", "classfrc_1_1_data_log_manager.html", "classfrc_1_1_data_log_manager" ]
     ] ],
     [ "DigitalGlitchFilter.h", "_digital_glitch_filter_8h.html", [
       [ "frc::DigitalGlitchFilter", "classfrc_1_1_digital_glitch_filter.html", "classfrc_1_1_digital_glitch_filter" ]
@@ -195,13 +201,6 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "Solenoid.h", "_solenoid_8h.html", [
       [ "frc::Solenoid", "classfrc_1_1_solenoid.html", "classfrc_1_1_solenoid" ]
     ] ],
-    [ "SpeedController.h", "_speed_controller_8h.html", [
-      [ "frc::SpeedController", "classfrc_1_1_speed_controller.html", "classfrc_1_1_speed_controller" ]
-    ] ],
-    [ "SpeedControllerGroup.h", "_speed_controller_group_8h.html", [
-      [ "frc::SpeedControllerGroup", "classfrc_1_1_speed_controller_group.html", "classfrc_1_1_speed_controller_group" ]
-    ] ],
-    [ "SpeedControllerGroup.inc", "_speed_controller_group_8inc.html", null ],
     [ "SPI.h", "wpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h.html", [
       [ "frc::SPI", "classfrc_1_1_s_p_i.html", "classfrc_1_1_s_p_i" ]
     ] ],
@@ -212,7 +211,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "TimedRobot.h", "_timed_robot_8h.html", [
       [ "frc::TimedRobot", "classfrc_1_1_timed_robot.html", "classfrc_1_1_timed_robot" ]
     ] ],
-    [ "Timer.h", "wpilibc_2src_2main_2native_2include_2frc_2_timer_8h.html", "wpilibc_2src_2main_2native_2include_2frc_2_timer_8h" ],
+    [ "Timer.h", "_timer_8h.html", "_timer_8h" ],
     [ "TimesliceRobot.h", "_timeslice_robot_8h.html", [
       [ "frc::TimesliceRobot", "classfrc_1_1_timeslice_robot.html", "classfrc_1_1_timeslice_robot" ]
     ] ],

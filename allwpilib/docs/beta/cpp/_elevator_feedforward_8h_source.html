@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('_elevator_feedforward_8h_source.html',
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * @param kS The static gain, in volts.</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * @param kG The gravity gain, in volts.</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * @param kV The velocity gain, in volt seconds per distance.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param kA The acceleration gain, in volt seconds^2 per distance.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param kA The acceleration gain, in volt seconds² per distance.</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classfrc_1_1_elevator_feedforward.html#a3c3ea34e0f20d0b58ce0fa73cb92106f">   38</a></span>  <span class="keyword">constexpr</span> <a class="code hl_function" href="classfrc_1_1_elevator_feedforward.html#a3c3ea34e0f20d0b58ce0fa73cb92106f">ElevatorFeedforward</a>(</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      units::volt_t <a class="code hl_variable" href="classfrc_1_1_elevator_feedforward.html#a5f612929d669d64809f670557b194a66">kS</a>, units::volt_t <a class="code hl_variable" href="classfrc_1_1_elevator_feedforward.html#ae39e57aaa304d49985853353c39c6380">kG</a>, <a class="code hl_class" href="classunits_1_1unit__t.html">units::unit_t&lt;kv_unit&gt;</a> <a class="code hl_variable" href="classfrc_1_1_elevator_feedforward.html#aba5ec71554befafc8dd9c8560eecb463">kV</a>,</div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('_elevator_feedforward_8h_source.html',
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * Calculates the feedforward from the gains and setpoints.</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param velocity     The velocity setpoint, in distance per second.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param acceleration The acceleration setpoint, in distance per second^2.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param acceleration The acceleration setpoint, in distance per second².</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   * @return The computed feedforward, in volts.</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classfrc_1_1_elevator_feedforward.html#a5eef769a83b9b8dbda7b605444f03d9c">   50</a></span>  <span class="keyword">constexpr</span> units::volt_t <a class="code hl_function" href="classfrc_1_1_elevator_feedforward.html#a5eef769a83b9b8dbda7b605444f03d9c">Calculate</a>(<a class="code hl_class" href="classunits_1_1unit__t.html">units::unit_t&lt;Velocity&gt;</a> velocity,</div>
@@ -243,8 +243,8 @@ $(document).ready(function(){initNavTree('_elevator_feedforward_8h_source.html',
 <div class="ttc" id="aclassfrc_1_1_elevator_feedforward_html_afcd91ca93ccb0b7ffc09d1f0425f9be6"><div class="ttname"><a href="classfrc_1_1_elevator_feedforward.html#afcd91ca93ccb0b7ffc09d1f0425f9be6">frc::ElevatorFeedforward::ElevatorFeedforward</a></div><div class="ttdeci">ElevatorFeedforward()=default</div></div>
 <div class="ttc" id="aclassunits_1_1unit__t_html"><div class="ttname"><a href="classunits_1_1unit__t.html">units::unit_t</a></div><div class="ttdoc">Container for values which represent quantities of a given unit.</div><div class="ttdef"><b>Definition:</b> base.h:1929</div></div>
 <div class="ttc" id="agroup___unit_types_html_ga36d8b8cf508bd5ac7854d15f6eaf2d7c"><div class="ttname"><a href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a></div><div class="ttdeci">typename units::detail::compound_impl&lt; U, Us... &gt;::type compound_unit</div><div class="ttdoc">Represents a unit type made up from other units.</div><div class="ttdef"><b>Definition:</b> base.h:1437</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
-<div class="ttc" id="anamespacewpi_html_a0dca6ddf9e17f10ec7699c29819b6c18"><div class="ttname"><a href="namespacewpi.html#a0dca6ddf9e17f10ec7699c29819b6c18">wpi::sgn</a></div><div class="ttdeci">constexpr int sgn(T val)</div><div class="ttdef"><b>Definition:</b> MathExtras.h:844</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacewpi_html_a0dca6ddf9e17f10ec7699c29819b6c18"><div class="ttname"><a href="namespacewpi.html#a0dca6ddf9e17f10ec7699c29819b6c18">wpi::sgn</a></div><div class="ttdeci">constexpr int sgn(T val)</div><div class="ttdef"><b>Definition:</b> MathExtras.h:936</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 <div class="ttc" id="avoltage_8h_html"><div class="ttname"><a href="voltage_8h.html">voltage.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -253,7 +253,7 @@ $(document).ready(function(){initNavTree('_elevator_feedforward_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_901369ca5399cfb92b9538222311796d.html">controller</a></li><li class="navelem"><a class="el" href="_elevator_feedforward_8h.html">ElevatorFeedforward.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

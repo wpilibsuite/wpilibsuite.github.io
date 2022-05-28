@@ -2,9 +2,11 @@ var ntcore__c_8h =
 [
     [ "NT_DEFAULT_PORT", "group__ntcore__c__api.html#gaca5ac35ca784df4518df6fec4c3f82ad", null ],
     [ "NT_Bool", "group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0", null ],
+    [ "NT_ConnectionDataLogger", "group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b", null ],
     [ "NT_ConnectionListener", "group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17", null ],
     [ "NT_ConnectionListenerCallback", "group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697", null ],
     [ "NT_ConnectionListenerPoller", "group__ntcore__c__api.html#ga2482a18d8ea87cb75f5e3738759a717f", null ],
+    [ "NT_DataLogger", "group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e", null ],
     [ "NT_Entry", "group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09", null ],
     [ "NT_EntryListener", "group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d", null ],
     [ "NT_EntryListenerCallback", "group__ntcore__entrylistener__cfunc.html#gacc828ac553654287bcc856135f79fdcd", null ],

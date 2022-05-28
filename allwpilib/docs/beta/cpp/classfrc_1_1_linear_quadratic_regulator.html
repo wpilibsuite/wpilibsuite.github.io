@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -92,95 +92,160 @@ $(document).ready(function(){initNavTree('classfrc_1_1_linear_quadratic_regulato
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1_linear_quadratic_regulator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc::LinearQuadraticRegulator&lt; States, Inputs &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>Contains the controller coefficients and logic for a linear-quadratic regulator (LQR).  
+ <a href="classfrc_1_1_linear_quadratic_regulator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_linear_quadratic_regulator_8h_source.html">frc/controller/LinearQuadraticRegulator.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for frc::LinearQuadraticRegulator&lt; States, Inputs &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classfrc_1_1_linear_quadratic_regulator.png" usemap="#frc::LinearQuadraticRegulator_3C_20States_2C_20Inputs_20_3E_map" alt=""/>
-  <map id="frc::LinearQuadraticRegulator_3C_20States_2C_20Inputs_20_3E_map" name="frc::LinearQuadraticRegulator_3C_20States_2C_20Inputs_20_3E_map">
-<area href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html" title="Contains the controller coefficients and logic for a linear-quadratic regulator (LQR)." alt="frc::detail::LinearQuadraticRegulatorImpl&lt; States, Inputs &gt;" shape="rect" coords="0,0,338,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0cec4c190031dacff44f07b76c60456c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> = <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; States &gt;</td></tr>
+<tr class="separator:a0cec4c190031dacff44f07b76c60456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b72f0a7212421f6c1017103189bb0b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a> = <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; Inputs &gt;</td></tr>
+<tr class="separator:a9b72f0a7212421f6c1017103189bb0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4e55210719a94bd0690216874b7043d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ac4e55210719a94bd0690216874b7043d">StateArray</a> = <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt;</td></tr>
+<tr class="separator:ac4e55210719a94bd0690216874b7043d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e4c34803e9c9eb5aad2c8ca6386ffdc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a3e4c34803e9c9eb5aad2c8ca6386ffdc">InputArray</a> = <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Inputs &gt;</td></tr>
+<tr class="separator:a3e4c34803e9c9eb5aad2c8ca6386ffdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af6c8545995717be6580c31adc48f5c9c"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
-<tr class="memitem:af6c8545995717be6580c31adc48f5c9c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#af6c8545995717be6580c31adc48f5c9c">LinearQuadraticRegulator</a> (const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;Qelems, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Inputs &gt; &amp;Relems, units::second_t dt)</td></tr>
-<tr class="memdesc:af6c8545995717be6580c31adc48f5c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#af6c8545995717be6580c31adc48f5c9c">More...</a><br /></td></tr>
-<tr class="separator:af6c8545995717be6580c31adc48f5c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aaadec94d7f2c1e5289211b7e236e7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9aaadec94d7f2c1e5289211b7e236e7a">LinearQuadraticRegulator</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;Qelems, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Inputs &gt; &amp;Relems, units::second_t dt)</td></tr>
-<tr class="memdesc:a9aaadec94d7f2c1e5289211b7e236e7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a9aaadec94d7f2c1e5289211b7e236e7a">More...</a><br /></td></tr>
-<tr class="separator:a9aaadec94d7f2c1e5289211b7e236e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdcb518fa5853463e06aeb810a11e25e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#abdcb518fa5853463e06aeb810a11e25e">LinearQuadraticRegulator</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;Q, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Inputs, Inputs &gt; &amp;<a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a07c9d6554ce43bc20046d54d3c91f52c">R</a>, units::second_t dt)</td></tr>
-<tr class="memdesc:abdcb518fa5853463e06aeb810a11e25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#abdcb518fa5853463e06aeb810a11e25e">More...</a><br /></td></tr>
-<tr class="separator:abdcb518fa5853463e06aeb810a11e25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7890223e46ee2ee203b8eb7309b75331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a7890223e46ee2ee203b8eb7309b75331">LinearQuadraticRegulator</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;Q, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Inputs, Inputs &gt; &amp;<a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a07c9d6554ce43bc20046d54d3c91f52c">R</a>, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;N, units::second_t dt)</td></tr>
-<tr class="memdesc:a7890223e46ee2ee203b8eb7309b75331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a7890223e46ee2ee203b8eb7309b75331">More...</a><br /></td></tr>
-<tr class="separator:a7890223e46ee2ee203b8eb7309b75331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67dc4ac0aad044a3ae7a72410e4e0610"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
+<tr class="memitem:a67dc4ac0aad044a3ae7a72410e4e0610"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a67dc4ac0aad044a3ae7a72410e4e0610">LinearQuadraticRegulator</a> (const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ac4e55210719a94bd0690216874b7043d">StateArray</a> &amp;Qelems, const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a3e4c34803e9c9eb5aad2c8ca6386ffdc">InputArray</a> &amp;Relems, units::second_t dt)</td></tr>
+<tr class="memdesc:a67dc4ac0aad044a3ae7a72410e4e0610"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a67dc4ac0aad044a3ae7a72410e4e0610">More...</a><br /></td></tr>
+<tr class="separator:a67dc4ac0aad044a3ae7a72410e4e0610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353c7184eb6aca4ed5a14d7fff0c2bfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a353c7184eb6aca4ed5a14d7fff0c2bfb">LinearQuadraticRegulator</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;B, const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ac4e55210719a94bd0690216874b7043d">StateArray</a> &amp;Qelems, const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a3e4c34803e9c9eb5aad2c8ca6386ffdc">InputArray</a> &amp;Relems, units::second_t dt)</td></tr>
+<tr class="memdesc:a353c7184eb6aca4ed5a14d7fff0c2bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a353c7184eb6aca4ed5a14d7fff0c2bfb">More...</a><br /></td></tr>
+<tr class="separator:a353c7184eb6aca4ed5a14d7fff0c2bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0734e1bbde46f682bed94221923700a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ab0734e1bbde46f682bed94221923700a">LinearQuadraticRegulator</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;B, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;Q, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Inputs, Inputs &gt; &amp;<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#aca7871970995584dd14361f416b64971">R</a>, units::second_t dt)</td></tr>
+<tr class="memdesc:ab0734e1bbde46f682bed94221923700a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#ab0734e1bbde46f682bed94221923700a">More...</a><br /></td></tr>
+<tr class="separator:ab0734e1bbde46f682bed94221923700a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad014c8fb924350144953323e77cb4f92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ad014c8fb924350144953323e77cb4f92">LinearQuadraticRegulator</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;A, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;B, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;Q, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Inputs, Inputs &gt; &amp;<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#aca7871970995584dd14361f416b64971">R</a>, const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;N, units::second_t dt)</td></tr>
+<tr class="memdesc:ad014c8fb924350144953323e77cb4f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1_linear_quadratic_regulator.html#ad014c8fb924350144953323e77cb4f92">More...</a><br /></td></tr>
+<tr class="separator:ad014c8fb924350144953323e77cb4f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35ac6b8d96b32cc3f11c6f07a0d207bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a35ac6b8d96b32cc3f11c6f07a0d207bb">LinearQuadraticRegulator</a> (<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a35ac6b8d96b32cc3f11c6f07a0d207bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d6a00b316bd6771bb1d06413657022"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a25d6a00b316bd6771bb1d06413657022">operator=</a> (<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a25d6a00b316bd6771bb1d06413657022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html">frc::detail::LinearQuadraticRegulatorImpl&lt; States, Inputs &gt;</a></td></tr>
-<tr class="memitem:a9e04bab9215fd029fb6e7a2f3dfc9942 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
-<tr class="memitem:a9e04bab9215fd029fb6e7a2f3dfc9942 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a9e04bab9215fd029fb6e7a2f3dfc9942">LinearQuadraticRegulatorImpl</a> (const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;Qelems, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Inputs &gt; &amp;Relems, units::second_t dt)</td></tr>
-<tr class="memdesc:a9e04bab9215fd029fb6e7a2f3dfc9942 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a9e04bab9215fd029fb6e7a2f3dfc9942">More...</a><br /></td></tr>
-<tr class="separator:a9e04bab9215fd029fb6e7a2f3dfc9942 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1df8c1f568e44b40289a7cff19c9c8 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a8d1df8c1f568e44b40289a7cff19c9c8">LinearQuadraticRegulatorImpl</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;Qelems, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Inputs &gt; &amp;Relems, units::second_t dt)</td></tr>
-<tr class="memdesc:a8d1df8c1f568e44b40289a7cff19c9c8 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a8d1df8c1f568e44b40289a7cff19c9c8">More...</a><br /></td></tr>
-<tr class="separator:a8d1df8c1f568e44b40289a7cff19c9c8 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f0623a25a1e1720d0bc9537bc9cef63 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a1f0623a25a1e1720d0bc9537bc9cef63">LinearQuadraticRegulatorImpl</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;Q, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Inputs, Inputs &gt; &amp;<a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a07c9d6554ce43bc20046d54d3c91f52c">R</a>, units::second_t dt)</td></tr>
-<tr class="memdesc:a1f0623a25a1e1720d0bc9537bc9cef63 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a1f0623a25a1e1720d0bc9537bc9cef63">More...</a><br /></td></tr>
-<tr class="separator:a1f0623a25a1e1720d0bc9537bc9cef63 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da074cb9c32fe1eff58d7e9f2a76eda inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a3da074cb9c32fe1eff58d7e9f2a76eda">LinearQuadraticRegulatorImpl</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;A, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;B, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;Q, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Inputs, Inputs &gt; &amp;<a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a07c9d6554ce43bc20046d54d3c91f52c">R</a>, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;N, units::second_t dt)</td></tr>
-<tr class="memdesc:a3da074cb9c32fe1eff58d7e9f2a76eda inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a controller with the given coefficients and plant.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a3da074cb9c32fe1eff58d7e9f2a76eda">More...</a><br /></td></tr>
-<tr class="separator:a3da074cb9c32fe1eff58d7e9f2a76eda inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7285f66a89d875a70d7dee89ebb878d inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#ae7285f66a89d875a70d7dee89ebb878d">LinearQuadraticRegulatorImpl</a> (<a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html">LinearQuadraticRegulatorImpl</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:ae7285f66a89d875a70d7dee89ebb878d inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a711667eb4061700b04df8cb741b38 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html">LinearQuadraticRegulatorImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a33a711667eb4061700b04df8cb741b38">operator=</a> (<a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html">LinearQuadraticRegulatorImpl</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a33a711667eb4061700b04df8cb741b38 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b3159dfe0d60b804a586ec6a311e611 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Inputs, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a1b3159dfe0d60b804a586ec6a311e611">K</a> () const</td></tr>
-<tr class="memdesc:a1b3159dfe0d60b804a586ec6a311e611 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the controller matrix K.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a1b3159dfe0d60b804a586ec6a311e611">More...</a><br /></td></tr>
-<tr class="separator:a1b3159dfe0d60b804a586ec6a311e611 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51fa24fab411efb64d11f9827e178770 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a51fa24fab411efb64d11f9827e178770">K</a> (int i, int j) const</td></tr>
-<tr class="memdesc:a51fa24fab411efb64d11f9827e178770 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the controller matrix K.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a51fa24fab411efb64d11f9827e178770">More...</a><br /></td></tr>
-<tr class="separator:a51fa24fab411efb64d11f9827e178770 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c9d6554ce43bc20046d54d3c91f52c inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a07c9d6554ce43bc20046d54d3c91f52c">R</a> () const</td></tr>
-<tr class="memdesc:a07c9d6554ce43bc20046d54d3c91f52c inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reference vector r.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a07c9d6554ce43bc20046d54d3c91f52c">More...</a><br /></td></tr>
-<tr class="separator:a07c9d6554ce43bc20046d54d3c91f52c inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac098214a4f791996b8968f3da1aa65e0 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#ac098214a4f791996b8968f3da1aa65e0">R</a> (int i) const</td></tr>
-<tr class="memdesc:ac098214a4f791996b8968f3da1aa65e0 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the reference vector r.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#ac098214a4f791996b8968f3da1aa65e0">More...</a><br /></td></tr>
-<tr class="separator:ac098214a4f791996b8968f3da1aa65e0 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee3e831925f617f9a8ee200ad9826ff inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#aaee3e831925f617f9a8ee200ad9826ff">U</a> () const</td></tr>
-<tr class="memdesc:aaee3e831925f617f9a8ee200ad9826ff inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the control input vector u.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#aaee3e831925f617f9a8ee200ad9826ff">More...</a><br /></td></tr>
-<tr class="separator:aaee3e831925f617f9a8ee200ad9826ff inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd1ec7de03fdf803482bdedf1472b6fd inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#acd1ec7de03fdf803482bdedf1472b6fd">U</a> (int i) const</td></tr>
-<tr class="memdesc:acd1ec7de03fdf803482bdedf1472b6fd inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the control input vector u.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#acd1ec7de03fdf803482bdedf1472b6fd">More...</a><br /></td></tr>
-<tr class="separator:acd1ec7de03fdf803482bdedf1472b6fd inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac46cbf2ca057d758eda7f8bdaedd712e inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#ac46cbf2ca057d758eda7f8bdaedd712e">Reset</a> ()</td></tr>
-<tr class="memdesc:ac46cbf2ca057d758eda7f8bdaedd712e inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the controller.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#ac46cbf2ca057d758eda7f8bdaedd712e">More...</a><br /></td></tr>
-<tr class="separator:ac46cbf2ca057d758eda7f8bdaedd712e inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cbca015ac047e86ea1906b5110a6cb3 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a6cbca015ac047e86ea1906b5110a6cb3">Calculate</a> (const Eigen::Vector&lt; double, States &gt; &amp;x)</td></tr>
-<tr class="memdesc:a6cbca015ac047e86ea1906b5110a6cb3 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next output of the controller.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a6cbca015ac047e86ea1906b5110a6cb3">More...</a><br /></td></tr>
-<tr class="separator:a6cbca015ac047e86ea1906b5110a6cb3 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a1f17680b73b220d79df65ec3dacd0 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a49a1f17680b73b220d79df65ec3dacd0">Calculate</a> (const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, States &gt; &amp;nextR)</td></tr>
-<tr class="memdesc:a49a1f17680b73b220d79df65ec3dacd0 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next output of the controller.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#a49a1f17680b73b220d79df65ec3dacd0">More...</a><br /></td></tr>
-<tr class="separator:a49a1f17680b73b220d79df65ec3dacd0 inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2dc9ca0e9e30311d447c8d66b4da8db inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
-<tr class="memitem:af2dc9ca0e9e30311d447c8d66b4da8db inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#af2dc9ca0e9e30311d447c8d66b4da8db">LatencyCompensate</a> (const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, units::second_t dt, units::second_t inputDelay)</td></tr>
-<tr class="memdesc:af2dc9ca0e9e30311d447c8d66b4da8db inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts LQR controller gain to compensate for a pure time delay in the input.  <a href="classfrc_1_1detail_1_1_linear_quadratic_regulator_impl.html#af2dc9ca0e9e30311d447c8d66b4da8db">More...</a><br /></td></tr>
-<tr class="separator:af2dc9ca0e9e30311d447c8d66b4da8db inherit pub_methods_classfrc_1_1detail_1_1_linear_quadratic_regulator_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592f93f124c21f168e0992ce83a8d807"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Inputs, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a592f93f124c21f168e0992ce83a8d807">K</a> () const</td></tr>
+<tr class="memdesc:a592f93f124c21f168e0992ce83a8d807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the controller matrix K.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a592f93f124c21f168e0992ce83a8d807">More...</a><br /></td></tr>
+<tr class="separator:a592f93f124c21f168e0992ce83a8d807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abef2cecef0eb81d521fa1680dda65fa0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#abef2cecef0eb81d521fa1680dda65fa0">K</a> (int i, int j) const</td></tr>
+<tr class="memdesc:abef2cecef0eb81d521fa1680dda65fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the controller matrix K.  <a href="classfrc_1_1_linear_quadratic_regulator.html#abef2cecef0eb81d521fa1680dda65fa0">More...</a><br /></td></tr>
+<tr class="separator:abef2cecef0eb81d521fa1680dda65fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca7871970995584dd14361f416b64971"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#aca7871970995584dd14361f416b64971">R</a> () const</td></tr>
+<tr class="memdesc:aca7871970995584dd14361f416b64971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reference vector r.  <a href="classfrc_1_1_linear_quadratic_regulator.html#aca7871970995584dd14361f416b64971">More...</a><br /></td></tr>
+<tr class="separator:aca7871970995584dd14361f416b64971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffb6e388cff48b13b67a8fbfa93a0cd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#adffb6e388cff48b13b67a8fbfa93a0cd">R</a> (int i) const</td></tr>
+<tr class="memdesc:adffb6e388cff48b13b67a8fbfa93a0cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the reference vector r.  <a href="classfrc_1_1_linear_quadratic_regulator.html#adffb6e388cff48b13b67a8fbfa93a0cd">More...</a><br /></td></tr>
+<tr class="separator:adffb6e388cff48b13b67a8fbfa93a0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57293260a9a906a2784a1178686a33ff"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a57293260a9a906a2784a1178686a33ff">U</a> () const</td></tr>
+<tr class="memdesc:a57293260a9a906a2784a1178686a33ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the control input vector u.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a57293260a9a906a2784a1178686a33ff">More...</a><br /></td></tr>
+<tr class="separator:a57293260a9a906a2784a1178686a33ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c35f9cd35b5cfa2efeb4c8d7cb85b1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ac4c35f9cd35b5cfa2efeb4c8d7cb85b1">U</a> (int i) const</td></tr>
+<tr class="memdesc:ac4c35f9cd35b5cfa2efeb4c8d7cb85b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the control input vector u.  <a href="classfrc_1_1_linear_quadratic_regulator.html#ac4c35f9cd35b5cfa2efeb4c8d7cb85b1">More...</a><br /></td></tr>
+<tr class="separator:ac4c35f9cd35b5cfa2efeb4c8d7cb85b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a155ec6d6210d0af1651476a66ccbd91d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a155ec6d6210d0af1651476a66ccbd91d">Reset</a> ()</td></tr>
+<tr class="memdesc:a155ec6d6210d0af1651476a66ccbd91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the controller.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a155ec6d6210d0af1651476a66ccbd91d">More...</a><br /></td></tr>
+<tr class="separator:a155ec6d6210d0af1651476a66ccbd91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9737726e56da224fa0a8c33b77c2518f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9737726e56da224fa0a8c33b77c2518f">Calculate</a> (const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp;x)</td></tr>
+<tr class="memdesc:a9737726e56da224fa0a8c33b77c2518f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next output of the controller.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a9737726e56da224fa0a8c33b77c2518f">More...</a><br /></td></tr>
+<tr class="separator:a9737726e56da224fa0a8c33b77c2518f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774896119b626783be65a81e74afced6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a774896119b626783be65a81e74afced6">Calculate</a> (const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp;x, const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp;nextR)</td></tr>
+<tr class="memdesc:a774896119b626783be65a81e74afced6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next output of the controller.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a774896119b626783be65a81e74afced6">More...</a><br /></td></tr>
+<tr class="separator:a774896119b626783be65a81e74afced6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3997018f75f872a3773feab65526c641"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
+<tr class="memitem:a3997018f75f872a3773feab65526c641"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a3997018f75f872a3773feab65526c641">LatencyCompensate</a> (const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, units::second_t dt, units::second_t inputDelay)</td></tr>
+<tr class="memdesc:a3997018f75f872a3773feab65526c641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adjusts LQR controller gain to compensate for a pure time delay in the input.  <a href="classfrc_1_1_linear_quadratic_regulator.html#a3997018f75f872a3773feab65526c641">More...</a><br /></td></tr>
+<tr class="separator:a3997018f75f872a3773feab65526c641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int States, int Inputs&gt;<br />
+class frc::LinearQuadraticRegulator&lt; States, Inputs &gt;</div><p >Contains the controller coefficients and logic for a linear-quadratic regulator (LQR). </p>
+<p >LQRs use the control law u = K(r - x).</p>
+<p >For more on the underlying math, read <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">States</td><td>Number of states. </td></tr>
+    <tr><td class="paramname">Inputs</td><td>Number of inputs. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3e4c34803e9c9eb5aad2c8ca6386ffdc" name="a3e4c34803e9c9eb5aad2c8ca6386ffdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e4c34803e9c9eb5aad2c8ca6386ffdc">&#9670;&nbsp;</a></span>InputArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a3e4c34803e9c9eb5aad2c8ca6386ffdc">InputArray</a> =  <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt;double, Inputs&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b72f0a7212421f6c1017103189bb0b1" name="a9b72f0a7212421f6c1017103189bb0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b72f0a7212421f6c1017103189bb0b1">&#9670;&nbsp;</a></span>InputVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a> =  <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt;Inputs&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4e55210719a94bd0690216874b7043d" name="ac4e55210719a94bd0690216874b7043d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4e55210719a94bd0690216874b7043d">&#9670;&nbsp;</a></span>StateArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ac4e55210719a94bd0690216874b7043d">StateArray</a> =  <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt;double, States&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cec4c190031dacff44f07b76c60456c" name="a0cec4c190031dacff44f07b76c60456c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cec4c190031dacff44f07b76c60456c">&#9670;&nbsp;</a></span>StateVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> =  <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt;States&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af6c8545995717be6580c31adc48f5c9c" name="af6c8545995717be6580c31adc48f5c9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6c8545995717be6580c31adc48f5c9c">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[1/5]</span></h2>
+<a id="a67dc4ac0aad044a3ae7a72410e4e0610" name="a67dc4ac0aad044a3ae7a72410e4e0610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67dc4ac0aad044a3ae7a72410e4e0610">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,9 +253,6 @@ Public Member Functions</h2></td></tr>
 template&lt;int States, int Inputs&gt; </div>
 <div class="memtemplate">
 template&lt;int Outputs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a> </td>
@@ -201,13 +263,13 @@ template&lt;int Outputs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ac4e55210719a94bd0690216874b7043d">StateArray</a> &amp;&#160;</td>
           <td class="paramname"><em>Qelems</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a3e4c34803e9c9eb5aad2c8ca6386ffdc">InputArray</a> &amp;&#160;</td>
           <td class="paramname"><em>Relems</em>, </td>
         </tr>
         <tr>
@@ -222,20 +284,9 @@ template&lt;int Outputs&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructs a controller with the given coefficients and plant. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Outputs</td><td>The number of outputs. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">plant</td><td>The plant being controlled. </td></tr>
@@ -248,39 +299,36 @@ template&lt;int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a9aaadec94d7f2c1e5289211b7e236e7a" name="a9aaadec94d7f2c1e5289211b7e236e7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aaadec94d7f2c1e5289211b7e236e7a">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[2/5]</span></h2>
+<a id="a353c7184eb6aca4ed5a14d7fff0c2bfb" name="a353c7184eb6aca4ed5a14d7fff0c2bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353c7184eb6aca4ed5a14d7fff0c2bfb">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int States, int Inputs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#ac4e55210719a94bd0690216874b7043d">StateArray</a> &amp;&#160;</td>
           <td class="paramname"><em>Qelems</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a3e4c34803e9c9eb5aad2c8ca6386ffdc">InputArray</a> &amp;&#160;</td>
           <td class="paramname"><em>Relems</em>, </td>
         </tr>
         <tr>
@@ -295,11 +343,6 @@ template&lt;int States, int Inputs&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructs a controller with the given coefficients and plant. </p>
@@ -316,39 +359,36 @@ template&lt;int States, int Inputs&gt; </div>
 
 </div>
 </div>
-<a id="abdcb518fa5853463e06aeb810a11e25e" name="abdcb518fa5853463e06aeb810a11e25e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdcb518fa5853463e06aeb810a11e25e">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[3/5]</span></h2>
+<a id="ab0734e1bbde46f682bed94221923700a" name="ab0734e1bbde46f682bed94221923700a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0734e1bbde46f682bed94221923700a">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int States, int Inputs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>Q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Inputs, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Inputs, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
@@ -363,11 +403,6 @@ template&lt;int States, int Inputs&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructs a controller with the given coefficients and plant. </p>
@@ -384,45 +419,42 @@ template&lt;int States, int Inputs&gt; </div>
 
 </div>
 </div>
-<a id="a7890223e46ee2ee203b8eb7309b75331" name="a7890223e46ee2ee203b8eb7309b75331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7890223e46ee2ee203b8eb7309b75331">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[4/5]</span></h2>
+<a id="ad014c8fb924350144953323e77cb4f92" name="ad014c8fb924350144953323e77cb4f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad014c8fb924350144953323e77cb4f92">&#9670;&nbsp;</a></span>LinearQuadraticRegulator() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int States, int Inputs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>B</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>Q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Inputs, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Inputs, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, Inputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; States, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>N</em>, </td>
         </tr>
         <tr>
@@ -437,11 +469,6 @@ template&lt;int States, int Inputs&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructs a controller with the given coefficients and plant. </p>
@@ -488,6 +515,199 @@ template&lt;int States, int Inputs&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9737726e56da224fa0a8c33b77c2518f" name="a9737726e56da224fa0a8c33b77c2518f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9737726e56da224fa0a8c33b77c2518f">&#9670;&nbsp;</a></span>Calculate() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a> <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::Calculate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the next output of the controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The current state x. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a774896119b626783be65a81e74afced6" name="a774896119b626783be65a81e74afced6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774896119b626783be65a81e74afced6">&#9670;&nbsp;</a></span>Calculate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::<a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a> <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::Calculate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp;&#160;</td>
+          <td class="paramname"><em>nextR</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the next output of the controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The current state x. </td></tr>
+    <tr><td class="paramname">nextR</td><td>The next reference vector r. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a592f93f124c21f168e0992ce83a8d807" name="a592f93f124c21f168e0992ce83a8d807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592f93f124c21f168e0992ce83a8d807">&#9670;&nbsp;</a></span>K() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; Inputs, States &gt; &amp; <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::K </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the controller matrix K. </p>
+
+</div>
+</div>
+<a id="abef2cecef0eb81d521fa1680dda65fa0" name="abef2cecef0eb81d521fa1680dda65fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef2cecef0eb81d521fa1680dda65fa0">&#9670;&nbsp;</a></span>K() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::K </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an element of the controller matrix K. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Row of K. </td></tr>
+    <tr><td class="paramname">j</td><td>Column of K. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3997018f75f872a3773feab65526c641" name="a3997018f75f872a3773feab65526c641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3997018f75f872a3773feab65526c641">&#9670;&nbsp;</a></span>LatencyCompensate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<div class="memtemplate">
+template&lt;int Outputs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::LatencyCompensate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;&#160;</td>
+          <td class="paramname"><em>plant</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>inputDelay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adjusts LQR controller gain to compensate for a pure time delay in the input. </p>
+<p >Linear-Quadratic regulator controller gains tend to be aggressive. If sensor measurements are time-delayed too long, the LQR may be unstable. However, if we know the amount of delay, we can compute the control based on where the system will be after the time delay.</p>
+<p >See <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a> appendix C.4 for a derivation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plant</td><td>The plant being controlled. </td></tr>
+    <tr><td class="paramname">dt</td><td>Discretization timestep. </td></tr>
+    <tr><td class="paramname">inputDelay</td><td>Input time delay. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a25d6a00b316bd6771bb1d06413657022" name="a25d6a00b316bd6771bb1d06413657022"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25d6a00b316bd6771bb1d06413657022">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -516,8 +736,172 @@ template&lt;int States, int Inputs&gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="aca7871970995584dd14361f416b64971" name="aca7871970995584dd14361f416b64971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca7871970995584dd14361f416b64971">&#9670;&nbsp;</a></span>R() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a0cec4c190031dacff44f07b76c60456c">StateVector</a> &amp; <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::R </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the reference vector r. </p>
+<dl class="section return"><dt>Returns</dt><dd>The reference vector. </dd></dl>
+
+</div>
+</div>
+<a id="adffb6e388cff48b13b67a8fbfa93a0cd" name="adffb6e388cff48b13b67a8fbfa93a0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffb6e388cff48b13b67a8fbfa93a0cd">&#9670;&nbsp;</a></span>R() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::R </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an element of the reference vector r. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Row of r.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The row of the reference vector. </dd></dl>
+
+</div>
+</div>
+<a id="a155ec6d6210d0af1651476a66ccbd91d" name="a155ec6d6210d0af1651476a66ccbd91d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a155ec6d6210d0af1651476a66ccbd91d">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the controller. </p>
+
+</div>
+</div>
+<a id="a57293260a9a906a2784a1178686a33ff" name="a57293260a9a906a2784a1178686a33ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57293260a9a906a2784a1178686a33ff">&#9670;&nbsp;</a></span>U() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html#a9b72f0a7212421f6c1017103189bb0b1">InputVector</a> &amp; <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::U </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the control input vector u. </p>
+<dl class="section return"><dt>Returns</dt><dd>The control input. </dd></dl>
+
+</div>
+</div>
+<a id="ac4c35f9cd35b5cfa2efeb4c8d7cb85b1" name="ac4c35f9cd35b5cfa2efeb4c8d7cb85b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4c35f9cd35b5cfa2efeb4c8d7cb85b1">&#9670;&nbsp;</a></span>U() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">frc::LinearQuadraticRegulator</a>&lt; States, Inputs &gt;::U </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an element of the control input vector u. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>Row of u.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The row of the control input vector. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>frc/controller/<a class="el" href="_linear_quadratic_regulator_8h_source.html">LinearQuadraticRegulator.h</a></li>
+<li>frc/controller/<a class="el" href="_linear_quadratic_regulator_8inc.html">LinearQuadraticRegulator.inc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -525,7 +909,7 @@ template&lt;int States, int Inputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_linear_quadratic_regulator.html">LinearQuadraticRegulator</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

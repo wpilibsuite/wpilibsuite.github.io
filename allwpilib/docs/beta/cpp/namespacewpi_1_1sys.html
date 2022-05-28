@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,8 @@ $(document).ready(function(){initNavTree('namespacewpi_1_1sys.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">wpi::sys Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -101,24 +102,15 @@ $(document).ready(function(){initNavTree('namespacewpi_1_1sys.html',''); initRes
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a26b4c3769d9f1b9f371d2bf4c07e1946"><td class="memTemplParams" colspan="2">template&lt;typename D  = std::chrono::nanoseconds&gt; </td></tr>
-<tr class="memitem:a26b4c3769d9f1b9f371d2bf4c07e1946"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a> = std::chrono::time_point&lt; std::chrono::system_clock, D &gt;</td></tr>
+<tr class="memitem:a26b4c3769d9f1b9f371d2bf4c07e1946"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a> = std::chrono::time_point&lt; std::chrono::system_clock, D &gt;</td></tr>
 <tr class="memdesc:a26b4c3769d9f1b9f371d2bf4c07e1946"><td class="mdescLeft">&#160;</td><td class="mdescRight">A time point on the system clock.  <a href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">More...</a><br /></td></tr>
 <tr class="separator:a26b4c3769d9f1b9f371d2bf4c07e1946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a73200f3186fc5706331d8460ead59657"><td class="memTemplParams" colspan="2">template&lt;typename FailT , typename Fun , typename... Args&gt; </td></tr>
-<tr class="memitem:a73200f3186fc5706331d8460ead59657"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a73200f3186fc5706331d8460ead59657">RetryAfterSignal</a> (const FailT &amp;Fail, const Fun &amp;F, const Args &amp;... As) -&gt; decltype(F(As...))</td></tr>
-<tr class="separator:a73200f3186fc5706331d8460ead59657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac32c01ac6fed2987aed5be727293fe71"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#ac32c01ac6fed2987aed5be727293fe71">SwapByteOrder_16</a> (uint16_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ac32c01ac6fed2987aed5be727293fe71"><td class="mdescLeft">&#160;</td><td class="mdescRight">SwapByteOrder_16 - This function returns a byte-swapped representation of the 16-bit argument.  <a href="namespacewpi_1_1sys.html#ac32c01ac6fed2987aed5be727293fe71">More...</a><br /></td></tr>
-<tr class="separator:ac32c01ac6fed2987aed5be727293fe71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba132b15965913fb286efc9e2768eb9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#abba132b15965913fb286efc9e2768eb9">SwapByteOrder_32</a> (uint32_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:abba132b15965913fb286efc9e2768eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">SwapByteOrder_32 - This function returns a byte-swapped representation of the 32-bit argument.  <a href="namespacewpi_1_1sys.html#abba132b15965913fb286efc9e2768eb9">More...</a><br /></td></tr>
-<tr class="separator:abba132b15965913fb286efc9e2768eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0de900b80b3efb5a5be270662d0907"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aee0de900b80b3efb5a5be270662d0907">SwapByteOrder_64</a> (uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:aee0de900b80b3efb5a5be270662d0907"><td class="mdescLeft">&#160;</td><td class="mdescRight">SwapByteOrder_64 - This function returns a byte-swapped representation of the 64-bit argument.  <a href="namespacewpi_1_1sys.html#aee0de900b80b3efb5a5be270662d0907">More...</a><br /></td></tr>
-<tr class="separator:aee0de900b80b3efb5a5be270662d0907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplParams" colspan="2">template&lt;typename FailT , typename Fun , typename... Args&gt; </td></tr>
+<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#abf2d0058ae07830ebe9b59a657312f46">RetryAfterSignal</a> (const FailT &amp;Fail, const Fun &amp;F, const Args &amp;... As)</td></tr>
+<tr class="separator:abf2d0058ae07830ebe9b59a657312f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f28c05961db8438f65c1feee86e27b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aa9f28c05961db8438f65c1feee86e27b">getSwappedBytes</a> (unsigned char C)</td></tr>
 <tr class="separator:aa9f28c05961db8438f65c1feee86e27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e49d61d0829edd426eb4517f4aa0ac"><td class="memItemLeft" align="right" valign="top">signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a98e49d61d0829edd426eb4517f4aa0ac">getSwappedBytes</a> (signed char C)</td></tr>
@@ -145,18 +137,28 @@ Functions</h2></td></tr>
 <tr class="separator:a46d6bfbed50c6310a6b68d5c3559dc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d15371853e713389225e864846b625"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a57d15371853e713389225e864846b625">getSwappedBytes</a> (double C)</td></tr>
 <tr class="separator:a57d15371853e713389225e864846b625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767b25356b7e3330efb9e64105ed8b0f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a767b25356b7e3330efb9e64105ed8b0f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a767b25356b7e3330efb9e64105ed8b0f">getSwappedBytes</a> (T C)</td></tr>
+<tr class="separator:a767b25356b7e3330efb9e64105ed8b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a103e28fdca610111cb2572b14facecc3">swapByteOrder</a> (T &amp;Value)</td></tr>
 <tr class="separator:a103e28fdca610111cb2572b14facecc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3880c63424f48dd2ca35076e86b00c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a2e3880c63424f48dd2ca35076e86b00c">toTimeT</a> (<a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt;&gt; TP)</td></tr>
-<tr class="memdesc:a2e3880c63424f48dd2ca35076e86b00c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a TimePoint to std::time_t.  <a href="namespacewpi_1_1sys.html#a2e3880c63424f48dd2ca35076e86b00c">More...</a><br /></td></tr>
-<tr class="separator:a2e3880c63424f48dd2ca35076e86b00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17444a3da59200223bbf5987e31c6f8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a17444a3da59200223bbf5987e31c6f8e">toTimePoint</a> (std::time_t T)</td></tr>
-<tr class="memdesc:a17444a3da59200223bbf5987e31c6f8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t to a TimePoint.  <a href="namespacewpi_1_1sys.html#a17444a3da59200223bbf5987e31c6f8e">More...</a><br /></td></tr>
-<tr class="separator:a17444a3da59200223bbf5987e31c6f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b23f0e126d56f33d263a7f26621c767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a2b23f0e126d56f33d263a7f26621c767">toTimePoint</a> (std::time_t T, uint32_t nsec)</td></tr>
-<tr class="memdesc:a2b23f0e126d56f33d263a7f26621c767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t + nanoseconds to a TimePoint.  <a href="namespacewpi_1_1sys.html#a2b23f0e126d56f33d263a7f26621c767">More...</a><br /></td></tr>
-<tr class="separator:a2b23f0e126d56f33d263a7f26621c767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20407ea1409da137e52f3169d54aec8"><td class="memItemLeft" align="right" valign="top">std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#ab20407ea1409da137e52f3169d54aec8">toTimeT</a> (<a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt;&gt; TP)</td></tr>
+<tr class="memdesc:ab20407ea1409da137e52f3169d54aec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a TimePoint to std::time_t.  <a href="namespacewpi_1_1sys.html#ab20407ea1409da137e52f3169d54aec8">More...</a><br /></td></tr>
+<tr class="separator:ab20407ea1409da137e52f3169d54aec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa144149b38cf444887a3f36ce92215e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aa144149b38cf444887a3f36ce92215e0">toTimePoint</a> (std::time_t T)</td></tr>
+<tr class="memdesc:aa144149b38cf444887a3f36ce92215e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t to a TimePoint.  <a href="namespacewpi_1_1sys.html#aa144149b38cf444887a3f36ce92215e0">More...</a><br /></td></tr>
+<tr class="separator:aa144149b38cf444887a3f36ce92215e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c40676d5469b1565a26039b3fd69ff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a7c40676d5469b1565a26039b3fd69ff2">toTimePoint</a> (std::time_t T, uint32_t nsec)</td></tr>
+<tr class="memdesc:a7c40676d5469b1565a26039b3fd69ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t + nanoseconds to a TimePoint.  <a href="namespacewpi_1_1sys.html#a7c40676d5469b1565a26039b3fd69ff2">More...</a><br /></td></tr>
+<tr class="separator:a7c40676d5469b1565a26039b3fd69ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a46e48b8084b9b38d114a719b527ba903"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a46e48b8084b9b38d114a719b527ba903">IsBigEndianHost</a> = false</td></tr>
+<tr class="separator:a46e48b8084b9b38d114a719b527ba903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac198a062390d3fbe35dd0853ff612771"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#ac198a062390d3fbe35dd0853ff612771">IsLittleEndianHost</a> = !<a class="el" href="namespacewpi_1_1sys.html#a46e48b8084b9b38d114a719b527ba903">IsBigEndianHost</a></td></tr>
+<tr class="separator:ac198a062390d3fbe35dd0853ff612771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a26b4c3769d9f1b9f371d2bf4c07e1946" name="a26b4c3769d9f1b9f371d2bf4c07e1946"></a>
@@ -168,7 +170,7 @@ Functions</h2></td></tr>
 template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">wpi::sys::TimePoint</a> = typedef std::chrono::time_point&lt;std::chrono::system_clock, D&gt;</td>
+          <td class="memname">using <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">wpi::sys::TimePoint</a> = typedef std::chrono::time_point&lt;std::chrono::system_clock, D&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,7 +185,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5ae67474d1d4d864f6a677ede5b6fce6" name="a5ae67474d1d4d864f6a677ede5b6fce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae67474d1d4d864f6a677ede5b6fce6">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[1/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae67474d1d4d864f6a677ede5b6fce6">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[1/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,7 +211,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a57d15371853e713389225e864846b625" name="a57d15371853e713389225e864846b625"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57d15371853e713389225e864846b625">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[2/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d15371853e713389225e864846b625">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[2/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +237,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a46d6bfbed50c6310a6b68d5c3559dc92" name="a46d6bfbed50c6310a6b68d5c3559dc92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46d6bfbed50c6310a6b68d5c3559dc92">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[3/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d6bfbed50c6310a6b68d5c3559dc92">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[3/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +263,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a98e49d61d0829edd426eb4517f4aa0ac" name="a98e49d61d0829edd426eb4517f4aa0ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98e49d61d0829edd426eb4517f4aa0ac">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[4/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e49d61d0829edd426eb4517f4aa0ac">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[4/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,7 +289,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="aa43664043ac6bf01d5a84b6a4fbe7f0c" name="aa43664043ac6bf01d5a84b6a4fbe7f0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa43664043ac6bf01d5a84b6a4fbe7f0c">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[5/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43664043ac6bf01d5a84b6a4fbe7f0c">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[5/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +315,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a452e9630d0f5a6f327f27cd2682fd854" name="a452e9630d0f5a6f327f27cd2682fd854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a452e9630d0f5a6f327f27cd2682fd854">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[6/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a452e9630d0f5a6f327f27cd2682fd854">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[6/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,7 +341,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a4c92885f04f71f01c8e6d896901d1a20" name="a4c92885f04f71f01c8e6d896901d1a20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c92885f04f71f01c8e6d896901d1a20">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[7/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c92885f04f71f01c8e6d896901d1a20">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[7/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +367,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="af086f84298f8f147abd515693c2de1d9" name="af086f84298f8f147abd515693c2de1d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af086f84298f8f147abd515693c2de1d9">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[8/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af086f84298f8f147abd515693c2de1d9">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[8/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,8 +392,36 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 
 </div>
 </div>
+<a id="a767b25356b7e3330efb9e64105ed8b0f" name="a767b25356b7e3330efb9e64105ed8b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767b25356b7e3330efb9e64105ed8b0f">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[9/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_enum&lt; T &gt;::<a class="el" href="classvalue.html">value</a>, T &gt; wpi::sys::getSwappedBytes </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>C</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa9f28c05961db8438f65c1feee86e27b" name="aa9f28c05961db8438f65c1feee86e27b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9f28c05961db8438f65c1feee86e27b">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[9/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f28c05961db8438f65c1feee86e27b">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[10/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -417,7 +447,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a3fb0e3f26fe0f0859d7811e2761f8414" name="a3fb0e3f26fe0f0859d7811e2761f8414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb0e3f26fe0f0859d7811e2761f8414">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[10/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb0e3f26fe0f0859d7811e2761f8414">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[11/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,7 +473,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="af5ca35c413018f88ac3317710835c53b" name="af5ca35c413018f88ac3317710835c53b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ca35c413018f88ac3317710835c53b">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[11/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ca35c413018f88ac3317710835c53b">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[12/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -469,7 +499,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a8a92276cbb439d8d2a147c4c3b728e40" name="a8a92276cbb439d8d2a147c4c3b728e40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a92276cbb439d8d2a147c4c3b728e40">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[12/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a92276cbb439d8d2a147c4c3b728e40">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[13/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -495,7 +525,7 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 </div>
 </div>
 <a id="a580ca339d813925a681c88aec47119ce" name="a580ca339d813925a681c88aec47119ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a580ca339d813925a681c88aec47119ce">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[13/13]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a580ca339d813925a681c88aec47119ce">&#9670;&nbsp;</a></span>getSwappedBytes() <span class="overload">[14/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,8 +550,8 @@ template&lt;typename D  = std::chrono::nanoseconds&gt; </div>
 
 </div>
 </div>
-<a id="a73200f3186fc5706331d8460ead59657" name="a73200f3186fc5706331d8460ead59657"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73200f3186fc5706331d8460ead59657">&#9670;&nbsp;</a></span>RetryAfterSignal()</h2>
+<a id="abf2d0058ae07830ebe9b59a657312f46" name="abf2d0058ae07830ebe9b59a657312f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf2d0058ae07830ebe9b59a657312f46">&#9670;&nbsp;</a></span>RetryAfterSignal()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +562,7 @@ template&lt;typename FailT , typename Fun , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto wpi::sys::RetryAfterSignal </td>
+          <td class="memname">decltype(auto) wpi::sys::RetryAfterSignal </td>
           <td>(</td>
           <td class="paramtype">const FailT &amp;&#160;</td>
           <td class="paramname"><em>Fail</em>, </td>
@@ -552,7 +582,7 @@ template&lt;typename FailT , typename Fun , typename... Args&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; decltype(F(As...)) </td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -592,8 +622,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac32c01ac6fed2987aed5be727293fe71" name="ac32c01ac6fed2987aed5be727293fe71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac32c01ac6fed2987aed5be727293fe71">&#9670;&nbsp;</a></span>SwapByteOrder_16()</h2>
+<a id="aa144149b38cf444887a3f36ce92215e0" name="aa144149b38cf444887a3f36ce92215e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa144149b38cf444887a3f36ce92215e0">&#9670;&nbsp;</a></span>toTimePoint() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -602,108 +632,35 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t wpi::sys::SwapByteOrder_16 </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>SwapByteOrder_16 - This function returns a byte-swapped representation of the 16-bit argument. </p>
-
-</div>
-</div>
-<a id="abba132b15965913fb286efc9e2768eb9" name="abba132b15965913fb286efc9e2768eb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abba132b15965913fb286efc9e2768eb9">&#9670;&nbsp;</a></span>SwapByteOrder_32()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t wpi::sys::SwapByteOrder_32 </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>SwapByteOrder_32 - This function returns a byte-swapped representation of the 32-bit argument. </p>
-
-</div>
-</div>
-<a id="aee0de900b80b3efb5a5be270662d0907" name="aee0de900b80b3efb5a5be270662d0907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee0de900b80b3efb5a5be270662d0907">&#9670;&nbsp;</a></span>SwapByteOrder_64()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint64_t wpi::sys::SwapByteOrder_64 </td>
-          <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>SwapByteOrder_64 - This function returns a byte-swapped representation of the 64-bit argument. </p>
-
-</div>
-</div>
-<a id="a17444a3da59200223bbf5987e31c6f8e" name="a17444a3da59200223bbf5987e31c6f8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17444a3da59200223bbf5987e31c6f8e">&#9670;&nbsp;</a></span>toTimePoint() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt; wpi::sys::toTimePoint </td>
+          <td class="memname"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt; wpi::sys::toTimePoint </td>
           <td>(</td>
           <td class="paramtype">std::time_t&#160;</td>
           <td class="paramname"><em>T</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Convert a std::time_t to a TimePoint. </p>
 
 </div>
 </div>
-<a id="a2b23f0e126d56f33d263a7f26621c767" name="a2b23f0e126d56f33d263a7f26621c767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b23f0e126d56f33d263a7f26621c767">&#9670;&nbsp;</a></span>toTimePoint() <span class="overload">[2/2]</span></h2>
+<a id="a7c40676d5469b1565a26039b3fd69ff2" name="a7c40676d5469b1565a26039b3fd69ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c40676d5469b1565a26039b3fd69ff2">&#9670;&nbsp;</a></span>toTimePoint() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> <a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a> wpi::sys::toTimePoint </td>
+          <td class="memname"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a> wpi::sys::toTimePoint </td>
           <td>(</td>
           <td class="paramtype">std::time_t&#160;</td>
           <td class="paramname"><em>T</em>, </td>
@@ -720,29 +677,87 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Convert a std::time_t + nanoseconds to a TimePoint. </p>
 
 </div>
 </div>
-<a id="a2e3880c63424f48dd2ca35076e86b00c" name="a2e3880c63424f48dd2ca35076e86b00c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e3880c63424f48dd2ca35076e86b00c">&#9670;&nbsp;</a></span>toTimeT()</h2>
+<a id="ab20407ea1409da137e52f3169d54aec8" name="ab20407ea1409da137e52f3169d54aec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab20407ea1409da137e52f3169d54aec8">&#9670;&nbsp;</a></span>toTimeT()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#a338bdf98e9e600f582b7bef274bc9388">LLVM_ATTRIBUTE_ALWAYS_INLINE</a> std::time_t wpi::sys::toTimeT </td>
+          <td class="memname">std::time_t wpi::sys::toTimeT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt;&gt;&#160;</td>
           <td class="paramname"><em>TP</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Convert a TimePoint to std::time_t. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a46e48b8084b9b38d114a719b527ba903" name="a46e48b8084b9b38d114a719b527ba903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46e48b8084b9b38d114a719b527ba903">&#9670;&nbsp;</a></span>IsBigEndianHost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool wpi::sys::IsBigEndianHost = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac198a062390d3fbe35dd0853ff612771" name="ac198a062390d3fbe35dd0853ff612771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac198a062390d3fbe35dd0853ff612771">&#9670;&nbsp;</a></span>IsLittleEndianHost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool wpi::sys::IsLittleEndianHost = !<a class="el" href="namespacewpi_1_1sys.html#a46e48b8084b9b38d114a719b527ba903">IsBigEndianHost</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -752,7 +767,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1sys.html">sys</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

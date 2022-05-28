@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -131,15 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a92f9f9ca25f12a425e00a584f6e3033b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9c8dcd60df772872e90cb8a54f934c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_compressor.html">Compressor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#af9c8dcd60df772872e90cb8a54f934c8">operator=</a> (<a class="el" href="classfrc_1_1_compressor.html">Compressor</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:af9c8dcd60df772872e90cb8a54f934c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a860fca78ae417ac8af88f10c6030092c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a860fca78ae417ac8af88f10c6030092c">Start</a> ()</td></tr>
-<tr class="memdesc:a860fca78ae417ac8af88f10c6030092c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts closed-loop control.  <a href="classfrc_1_1_compressor.html#a860fca78ae417ac8af88f10c6030092c">More...</a><br /></td></tr>
-<tr class="separator:a860fca78ae417ac8af88f10c6030092c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4157c3eb17f69a5eea66356c2bfcdc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#af4157c3eb17f69a5eea66356c2bfcdc2">Stop</a> ()</td></tr>
-<tr class="memdesc:af4157c3eb17f69a5eea66356c2bfcdc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops closed-loop control.  <a href="classfrc_1_1_compressor.html#af4157c3eb17f69a5eea66356c2bfcdc2">More...</a><br /></td></tr>
-<tr class="separator:af4157c3eb17f69a5eea66356c2bfcdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0c0c4e96a8a6c2429c43ab3f99e7cf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">Enabled</a> () const</td></tr>
 <tr class="memdesc:ae0c0c4e96a8a6c2429c43ab3f99e7cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if compressor output is active.  <a href="classfrc_1_1_compressor.html#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">More...</a><br /></td></tr>
 <tr class="separator:ae0c0c4e96a8a6c2429c43ab3f99e7cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49311123c190a0720a82337be711da26"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26">IsEnabled</a> () const</td></tr>
+<tr class="memdesc:a49311123c190a0720a82337be711da26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the compressor is active or not.  <a href="classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26">More...</a><br /></td></tr>
+<tr class="separator:a49311123c190a0720a82337be711da26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06ae308102dae55c994b4a57f8079dd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8">GetPressureSwitchValue</a> () const</td></tr>
 <tr class="memdesc:a06ae308102dae55c994b4a57f8079dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the pressure switch is triggered.  <a href="classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8">More...</a><br /></td></tr>
 <tr class="separator:a06ae308102dae55c994b4a57f8079dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,18 +146,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27a99d6f58aef9128742a839c5c583b1"><td class="memItemLeft" align="right" valign="top">units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a27a99d6f58aef9128742a839c5c583b1">GetAnalogVoltage</a> () const</td></tr>
 <tr class="memdesc:a27a99d6f58aef9128742a839c5c583b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the analog input voltage (on channel 0) (if supported).  <a href="classfrc_1_1_compressor.html#a27a99d6f58aef9128742a839c5c583b1">More...</a><br /></td></tr>
 <tr class="separator:a27a99d6f58aef9128742a839c5c583b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2f3f6ca8131945a002fb545ff5e798"><td class="memItemLeft" align="right" valign="top">units::pounds_per_square_inch_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a2b2f3f6ca8131945a002fb545ff5e798">GetPressure</a> () const</td></tr>
+<tr class="memdesc:a2b2f3f6ca8131945a002fb545ff5e798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the analog sensor pressure (on channel 0) (if supported).  <a href="classfrc_1_1_compressor.html#a2b2f3f6ca8131945a002fb545ff5e798">More...</a><br /></td></tr>
+<tr class="separator:a2b2f3f6ca8131945a002fb545ff5e798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcd369cad107fa0c1dc6139ad498fa5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">Disable</a> ()</td></tr>
 <tr class="memdesc:afcd369cad107fa0c1dc6139ad498fa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the compressor.  <a href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">More...</a><br /></td></tr>
 <tr class="separator:afcd369cad107fa0c1dc6139ad498fa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07cc62fe68f8cd47af3b61517bae3e9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">EnableDigital</a> ()</td></tr>
 <tr class="memdesc:a07cc62fe68f8cd47af3b61517bae3e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using digital input.  <a href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">More...</a><br /></td></tr>
 <tr class="separator:a07cc62fe68f8cd47af3b61517bae3e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8f29c0745e0484cb04baa46ced69c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a3f8f29c0745e0484cb04baa46ced69c4">EnableAnalog</a> (units::volt_t minAnalogVoltage, units::volt_t maxAnalogVoltage)</td></tr>
-<tr class="memdesc:a3f8f29c0745e0484cb04baa46ced69c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using analog input.  <a href="classfrc_1_1_compressor.html#a3f8f29c0745e0484cb04baa46ced69c4">More...</a><br /></td></tr>
-<tr class="separator:a3f8f29c0745e0484cb04baa46ced69c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54524a318ceb20815e33dac55ac34b66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a54524a318ceb20815e33dac55ac34b66">EnableHybrid</a> (units::volt_t minAnalogVoltage, units::volt_t maxAnalogVoltage)</td></tr>
-<tr class="memdesc:a54524a318ceb20815e33dac55ac34b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using hybrid input.  <a href="classfrc_1_1_compressor.html#a54524a318ceb20815e33dac55ac34b66">More...</a><br /></td></tr>
-<tr class="separator:a54524a318ceb20815e33dac55ac34b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc6669103f5f32add7b2a716ab6be9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#abdc6669103f5f32add7b2a716ab6be9e">EnableAnalog</a> (units::pounds_per_square_inch_t minPressure, units::pounds_per_square_inch_t maxPressure)</td></tr>
+<tr class="memdesc:abdc6669103f5f32add7b2a716ab6be9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using analog input.  <a href="classfrc_1_1_compressor.html#abdc6669103f5f32add7b2a716ab6be9e">More...</a><br /></td></tr>
+<tr class="separator:abdc6669103f5f32add7b2a716ab6be9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9e7194d6f03b4f8b9fefe597fb620b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a9c9e7194d6f03b4f8b9fefe597fb620b">EnableHybrid</a> (units::pounds_per_square_inch_t minPressure, units::pounds_per_square_inch_t maxPressure)</td></tr>
+<tr class="memdesc:a9c9e7194d6f03b4f8b9fefe597fb620b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using hybrid input.  <a href="classfrc_1_1_compressor.html#a9c9e7194d6f03b4f8b9fefe597fb620b">More...</a><br /></td></tr>
+<tr class="separator:a9c9e7194d6f03b4f8b9fefe597fb620b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2bbef2ea2972adb6109d264e915a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a3e2bbef2ea2972adb6109d264e915a99">GetConfigType</a> () const</td></tr>
 <tr class="separator:a3e2bbef2ea2972adb6109d264e915a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c5a691c412a71d37e890aa59512774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">InitSendable</a> (<a class="el" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a> &amp;builder) override</td></tr>
@@ -178,39 +178,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">GetName</a> () const</td></tr>
-<tr class="memdesc:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">More...</a><br /></td></tr>
-<tr class="separator:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
-<tr class="memdesc:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">More...</a><br /></td></tr>
-<tr class="separator:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
-<tr class="memdesc:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">More...</a><br /></td></tr>
-<tr class="separator:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">GetSubsystem</a> () const</td></tr>
-<tr class="memdesc:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">More...</a><br /></td></tr>
-<tr class="separator:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
-<tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
-<tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; Compressor &gt;</a></td></tr>
 <tr class="memitem:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a> ()=default</td></tr>
 <tr class="separator:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int channel)</td></tr>
-<tr class="memdesc:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">More...</a><br /></td></tr>
-<tr class="separator:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int moduleNumber, int channel)</td></tr>
-<tr class="memdesc:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">More...</a><br /></td></tr>
-<tr class="separator:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_sendable.html">Sendable</a> &gt; child)</td></tr>
-<tr class="memdesc:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">More...</a><br /></td></tr>
-<tr class="separator:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">AddChild</a> (void *child)</td></tr>
-<tr class="memdesc:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">More...</a><br /></td></tr>
-<tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a> ()</td></tr>
 <tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -387,8 +360,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f8f29c0745e0484cb04baa46ced69c4" name="a3f8f29c0745e0484cb04baa46ced69c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f8f29c0745e0484cb04baa46ced69c4">&#9670;&nbsp;</a></span>EnableAnalog()</h2>
+<a id="abdc6669103f5f32add7b2a716ab6be9e" name="abdc6669103f5f32add7b2a716ab6be9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc6669103f5f32add7b2a716ab6be9e">&#9670;&nbsp;</a></span>EnableAnalog()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,14 +369,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void frc::Compressor::EnableAnalog </td>
           <td>(</td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>minPressure</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>maxPressure</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -414,11 +387,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enable compressor closed loop control using analog input. </p>
+<p >Note this is only for use with the REV Analog Pressure Sensor.</p>
 <p >On CTRE PCM, this will enable digital control.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">minAnalogVoltage</td><td>The minimum voltage to enable compressor </td></tr>
-    <tr><td class="paramname">maxAnalogVoltage</td><td>The maximum voltage to disable compressor </td></tr>
+    <tr><td class="paramname">minPressure</td><td>The minimum pressure in PSI to enable compressor </td></tr>
+    <tr><td class="paramname">maxPressure</td><td>The maximum pressure in PSI to disable compressor </td></tr>
   </table>
   </dd>
 </dl>
@@ -441,7 +415,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if compressor output is active. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the compressor is on </dd></dl>
+<p >To (re)enable the compressor use <a class="el" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c" title="Enable compressor closed loop control using digital input.">EnableDigital()</a> or EnableAnalog(...).</p>
+<dl class="section return"><dt>Returns</dt><dd>true if the compressor is on. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>To avoid confusion in thinking this (re)enables the compressor use <a class="el" href="classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26" title="Returns whether the compressor is active or not.">IsEnabled()</a>. </dd></dl>
 
 </div>
 </div>
@@ -464,8 +440,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a54524a318ceb20815e33dac55ac34b66" name="a54524a318ceb20815e33dac55ac34b66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54524a318ceb20815e33dac55ac34b66">&#9670;&nbsp;</a></span>EnableHybrid()</h2>
+<a id="a9c9e7194d6f03b4f8b9fefe597fb620b" name="a9c9e7194d6f03b4f8b9fefe597fb620b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9e7194d6f03b4f8b9fefe597fb620b">&#9670;&nbsp;</a></span>EnableHybrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -473,14 +449,14 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void frc::Compressor::EnableHybrid </td>
           <td>(</td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>minPressure</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>maxPressure</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -491,11 +467,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enable compressor closed loop control using hybrid input. </p>
+<p >Note this is only for use with the REV Analog Pressure Sensor.</p>
 <p >On CTRE PCM, this will enable digital control.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">minAnalogVoltage</td><td>The minimum voltage to enable compressor </td></tr>
-    <tr><td class="paramname">maxAnalogVoltage</td><td>The maximum voltage to disable compressor </td></tr>
+    <tr><td class="paramname">minPressure</td><td>The minimum pressure in PSI to enable compressor </td></tr>
+    <tr><td class="paramname">maxPressure</td><td>The maximum pressure in PSI to disable compressor </td></tr>
   </table>
   </dd>
 </dl>
@@ -559,6 +536,27 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a2b2f3f6ca8131945a002fb545ff5e798" name="a2b2f3f6ca8131945a002fb545ff5e798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2f3f6ca8131945a002fb545ff5e798">&#9670;&nbsp;</a></span>GetPressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::pounds_per_square_inch_t frc::Compressor::GetPressure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query the analog sensor pressure (on channel 0) (if supported). </p>
+<p >Note this is only for use with the REV Analog Pressure Sensor.</p>
+<dl class="section return"><dt>Returns</dt><dd>The analog sensor pressure, in PSI </dd></dl>
+
+</div>
+</div>
 <a id="a06ae308102dae55c994b4a57f8079dd8" name="a06ae308102dae55c994b4a57f8079dd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06ae308102dae55c994b4a57f8079dd8">&#9670;&nbsp;</a></span>GetPressureSwitchValue()</h2>
 
@@ -615,6 +613,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a49311123c190a0720a82337be711da26" name="a49311123c190a0720a82337be711da26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49311123c190a0720a82337be711da26">&#9670;&nbsp;</a></span>IsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::Compressor::IsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the compressor is active or not. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the compressor is on - otherwise false. </dd></dl>
+
+</div>
+</div>
 <a id="af9c8dcd60df772872e90cb8a54f934c8" name="af9c8dcd60df772872e90cb8a54f934c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9c8dcd60df772872e90cb8a54f934c8">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -667,48 +685,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a860fca78ae417ac8af88f10c6030092c" name="a860fca78ae417ac8af88f10c6030092c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a860fca78ae417ac8af88f10c6030092c">&#9670;&nbsp;</a></span>Start()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Compressor::Start </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Starts closed-loop control. </p>
-<p >Note that closed loop control is enabled by default.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c" title="Enable compressor closed loop control using digital input.">EnableDigital()</a> instead. </dd></dl>
-
-</div>
-</div>
-<a id="af4157c3eb17f69a5eea66356c2bfcdc2" name="af4157c3eb17f69a5eea66356c2bfcdc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4157c3eb17f69a5eea66356c2bfcdc2">&#9670;&nbsp;</a></span>Stop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Compressor::Stop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stops closed-loop control. </p>
-<p >Note that closed loop control is enabled by default.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e" title="Disable the compressor.">Disable()</a> instead. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/<a class="el" href="_compressor_8h_source.html">Compressor.h</a></li>
 </ul>
@@ -718,7 +694,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_compressor.html">Compressor</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

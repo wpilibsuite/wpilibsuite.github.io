@@ -1,6 +1,5 @@
 var classfrc_1_1_timed_robot =
 [
-    [ "TimedRobot", "classfrc_1_1_timed_robot.html#a70890d7283a8afc101de444e99b6fb7a", null ],
     [ "TimedRobot", "classfrc_1_1_timed_robot.html#a622f35ae5205eed127b5016b189ec274", null ],
     [ "~TimedRobot", "classfrc_1_1_timed_robot.html#ad428dfd00a106fc91e09b4f4f0b6159b", null ],
     [ "TimedRobot", "classfrc_1_1_timed_robot.html#a7b8b9066deac4292f99982c1471003dd", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -114,29 +114,29 @@ Inheritance diagram for Eigen::internal::diagonal_product_evaluator_base&lt; Mat
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aab265237758d0322361eb46ebc10a84a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa45dabee78e332b246770d16d5f5c7873">CoeffReadCost</a> = int(NumTraits&lt;Scalar&gt;::MulCost) + int(evaluator&lt;MatrixType&gt;::CoeffReadCost) + int(evaluator&lt;DiagonalType&gt;::CoeffReadCost)
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aace354e6dc6d2a2026bba105f80530b07">MatrixFlags</a> = evaluator&lt;MatrixType&gt;::Flags
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa3a996eab81b9587f307342a9477b3356">DiagFlags</a> = evaluator&lt;DiagonalType&gt;::Flags
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa820b7c5310246b84df40ba74a4edf16f">_StorageOrder</a>
+<tr class="memitem:aae54fd204bf9e4a3dc89ffef4a3e392f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa45dabee78e332b246770d16d5f5c7873">CoeffReadCost</a> = int(NumTraits&lt;Scalar&gt;::MulCost) + int(evaluator&lt;MatrixType&gt;::CoeffReadCost) + int(evaluator&lt;DiagonalType&gt;::CoeffReadCost)
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392face354e6dc6d2a2026bba105f80530b07">MatrixFlags</a> = evaluator&lt;MatrixType&gt;::Flags
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa3a996eab81b9587f307342a9477b3356">DiagFlags</a> = evaluator&lt;DiagonalType&gt;::Flags
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa820b7c5310246b84df40ba74a4edf16f">_StorageOrder</a>
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa33b24a784b8d66638a83f7fdd34600fc">_SameStorageOrder</a> = _StorageOrder == (MatrixFlags &amp; RowMajorBit ? RowMajor : ColMajor)
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aab664e0c2fae22a26e7b58888a2c4bb8d">_ScalarAccessOnDiag</a>
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa83cb6fdb248de52175593c42c78c02fb">_SameTypes</a> = is_same&lt;typename MatrixType::Scalar, typename DiagonalType::Scalar&gt;::value
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa82ac69ac3849d629b9ea3aa436787fb7">_Vectorizable</a>
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa33b24a784b8d66638a83f7fdd34600fc">_SameStorageOrder</a> = _StorageOrder == (MatrixFlags &amp; RowMajorBit ? RowMajor : ColMajor)
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fab664e0c2fae22a26e7b58888a2c4bb8d">_ScalarAccessOnDiag</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa83cb6fdb248de52175593c42c78c02fb">_SameTypes</a> = is_same&lt;typename MatrixType::Scalar, typename DiagonalType::Scalar&gt;::value
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa82ac69ac3849d629b9ea3aa436787fb7">_Vectorizable</a>
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa35fbbe4b51d959b61df1c3b47b2c516a">_LinearAccessMask</a> = (MatrixType::RowsAtCompileTime==1 || MatrixType::ColsAtCompileTime==1) ? LinearAccessBit : 0
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa49ea9afe72cfbb3a97160cd5258899e6">Flags</a> = ((HereditaryBits|_LinearAccessMask) &amp; (unsigned int)(MatrixFlags)) | (_Vectorizable ? PacketAccessBit : 0)
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aacdeb3784ea7f8959ff6dfce78ea85dd5">Alignment</a> = evaluator&lt;MatrixType&gt;::Alignment
-, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aab265237758d0322361eb46ebc10a84aa80944af05808f18d1f551af2e4f669f5">AsScalarProduct</a>
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa35fbbe4b51d959b61df1c3b47b2c516a">_LinearAccessMask</a> = (MatrixType::RowsAtCompileTime==1 || MatrixType::ColsAtCompileTime==1) ? LinearAccessBit : 0
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa49ea9afe72cfbb3a97160cd5258899e6">Flags</a> = ((HereditaryBits|_LinearAccessMask) &amp; (unsigned int)(MatrixFlags)) | (_Vectorizable ? PacketAccessBit : 0)
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392facdeb3784ea7f8959ff6dfce78ea85dd5">Alignment</a> = evaluator&lt;MatrixType&gt;::Alignment
+, <a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#aae54fd204bf9e4a3dc89ffef4a3e392fa80944af05808f18d1f551af2e4f669f5">AsScalarProduct</a>
 <br />
  }</td></tr>
-<tr class="separator:aab265237758d0322361eb46ebc10a84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aae54fd204bf9e4a3dc89ffef4a3e392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9d1b7eee123fb331d7571b4d23a2405"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a>&lt; typenameMatrixType::Scalar, typenameDiagonalType::Scalar &gt;::ReturnType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html#ac9d1b7eee123fb331d7571b4d23a2405">Scalar</a></td></tr>
 <tr class="separator:ac9d1b7eee123fb331d7571b4d23a2405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_eigen_1_1internal_1_1evaluator__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html">Eigen::internal::evaluator_base&lt; Derived &gt;</a></td></tr>
-<tr class="memitem:a07219bc194a7fb4ca46cd13c3ee77ae2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a07219bc194a7fb4ca46cd13c3ee77ae2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affee6870ef456715be89f28a07f5d2e2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:affee6870ef456715be89f28a07f5d2e2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; Derived &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html#acb94884a759bb59a96c8c3eea1e50c10">ExpressionTraits</a></td></tr>
 <tr class="separator:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -186,8 +186,8 @@ template&lt;typename MatrixType , typename DiagonalType , typename Derived , int
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aab265237758d0322361eb46ebc10a84a" name="aab265237758d0322361eb46ebc10a84a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab265237758d0322361eb46ebc10a84a">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aae54fd204bf9e4a3dc89ffef4a3e392f" name="aae54fd204bf9e4a3dc89ffef4a3e392f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae54fd204bf9e4a3dc89ffef4a3e392f">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,18 +200,18 @@ template&lt;typename MatrixType , typename DiagonalType , typename Derived , int
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa45dabee78e332b246770d16d5f5c7873" name="aab265237758d0322361eb46ebc10a84aa45dabee78e332b246770d16d5f5c7873"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aace354e6dc6d2a2026bba105f80530b07" name="aab265237758d0322361eb46ebc10a84aace354e6dc6d2a2026bba105f80530b07"></a>MatrixFlags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa3a996eab81b9587f307342a9477b3356" name="aab265237758d0322361eb46ebc10a84aa3a996eab81b9587f307342a9477b3356"></a>DiagFlags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa820b7c5310246b84df40ba74a4edf16f" name="aab265237758d0322361eb46ebc10a84aa820b7c5310246b84df40ba74a4edf16f"></a>_StorageOrder&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa33b24a784b8d66638a83f7fdd34600fc" name="aab265237758d0322361eb46ebc10a84aa33b24a784b8d66638a83f7fdd34600fc"></a>_SameStorageOrder&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aab664e0c2fae22a26e7b58888a2c4bb8d" name="aab265237758d0322361eb46ebc10a84aab664e0c2fae22a26e7b58888a2c4bb8d"></a>_ScalarAccessOnDiag&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa83cb6fdb248de52175593c42c78c02fb" name="aab265237758d0322361eb46ebc10a84aa83cb6fdb248de52175593c42c78c02fb"></a>_SameTypes&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa82ac69ac3849d629b9ea3aa436787fb7" name="aab265237758d0322361eb46ebc10a84aa82ac69ac3849d629b9ea3aa436787fb7"></a>_Vectorizable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa35fbbe4b51d959b61df1c3b47b2c516a" name="aab265237758d0322361eb46ebc10a84aa35fbbe4b51d959b61df1c3b47b2c516a"></a>_LinearAccessMask&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa49ea9afe72cfbb3a97160cd5258899e6" name="aab265237758d0322361eb46ebc10a84aa49ea9afe72cfbb3a97160cd5258899e6"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aacdeb3784ea7f8959ff6dfce78ea85dd5" name="aab265237758d0322361eb46ebc10a84aacdeb3784ea7f8959ff6dfce78ea85dd5"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aab265237758d0322361eb46ebc10a84aa80944af05808f18d1f551af2e4f669f5" name="aab265237758d0322361eb46ebc10a84aa80944af05808f18d1f551af2e4f669f5"></a>AsScalarProduct&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa45dabee78e332b246770d16d5f5c7873" name="aae54fd204bf9e4a3dc89ffef4a3e392fa45dabee78e332b246770d16d5f5c7873"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392face354e6dc6d2a2026bba105f80530b07" name="aae54fd204bf9e4a3dc89ffef4a3e392face354e6dc6d2a2026bba105f80530b07"></a>MatrixFlags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa3a996eab81b9587f307342a9477b3356" name="aae54fd204bf9e4a3dc89ffef4a3e392fa3a996eab81b9587f307342a9477b3356"></a>DiagFlags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa820b7c5310246b84df40ba74a4edf16f" name="aae54fd204bf9e4a3dc89ffef4a3e392fa820b7c5310246b84df40ba74a4edf16f"></a>_StorageOrder&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa33b24a784b8d66638a83f7fdd34600fc" name="aae54fd204bf9e4a3dc89ffef4a3e392fa33b24a784b8d66638a83f7fdd34600fc"></a>_SameStorageOrder&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fab664e0c2fae22a26e7b58888a2c4bb8d" name="aae54fd204bf9e4a3dc89ffef4a3e392fab664e0c2fae22a26e7b58888a2c4bb8d"></a>_ScalarAccessOnDiag&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa83cb6fdb248de52175593c42c78c02fb" name="aae54fd204bf9e4a3dc89ffef4a3e392fa83cb6fdb248de52175593c42c78c02fb"></a>_SameTypes&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa82ac69ac3849d629b9ea3aa436787fb7" name="aae54fd204bf9e4a3dc89ffef4a3e392fa82ac69ac3849d629b9ea3aa436787fb7"></a>_Vectorizable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa35fbbe4b51d959b61df1c3b47b2c516a" name="aae54fd204bf9e4a3dc89ffef4a3e392fa35fbbe4b51d959b61df1c3b47b2c516a"></a>_LinearAccessMask&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa49ea9afe72cfbb3a97160cd5258899e6" name="aae54fd204bf9e4a3dc89ffef4a3e392fa49ea9afe72cfbb3a97160cd5258899e6"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392facdeb3784ea7f8959ff6dfce78ea85dd5" name="aae54fd204bf9e4a3dc89ffef4a3e392facdeb3784ea7f8959ff6dfce78ea85dd5"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae54fd204bf9e4a3dc89ffef4a3e392fa80944af05808f18d1f551af2e4f669f5" name="aae54fd204bf9e4a3dc89ffef4a3e392fa80944af05808f18d1f551af2e4f669f5"></a>AsScalarProduct&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -446,7 +446,7 @@ template&lt;typename MatrixType , typename DiagonalType , typename Derived , int
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html">diagonal_product_evaluator_base</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

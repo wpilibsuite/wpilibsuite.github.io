@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -125,10 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a49e29f7f37ca4d541f01919ed5c277da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6424bfb2cf5c7cd777f886abe7d53903"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a6424bfb2cf5c7cd777f886abe7d53903">EnableCompressorDigital</a> ()=0</td></tr>
 <tr class="separator:a6424bfb2cf5c7cd777f886abe7d53903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac32a72371f9fedd5e1a42e40afd168e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#ac32a72371f9fedd5e1a42e40afd168e8">EnableCompressorAnalog</a> (units::volt_t minAnalogVoltage, units::volt_t maxAnalogVoltage)=0</td></tr>
-<tr class="separator:ac32a72371f9fedd5e1a42e40afd168e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db3b2ef65bfa743e61df4c9090a76e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a5db3b2ef65bfa743e61df4c9090a76e5">EnableCompressorHybrid</a> (units::volt_t minAnalogVoltage, units::volt_t maxAnalogVoltage)=0</td></tr>
-<tr class="separator:a5db3b2ef65bfa743e61df4c9090a76e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b30a84d92f3d6d3361c2a8153fee857"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a2b30a84d92f3d6d3361c2a8153fee857">EnableCompressorAnalog</a> (units::pounds_per_square_inch_t minPressure, units::pounds_per_square_inch_t maxPressure)=0</td></tr>
+<tr class="separator:a2b30a84d92f3d6d3361c2a8153fee857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948942a6306cd829ef26d58a3628bcb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a948942a6306cd829ef26d58a3628bcb5">EnableCompressorHybrid</a> (units::pounds_per_square_inch_t minPressure, units::pounds_per_square_inch_t maxPressure)=0</td></tr>
+<tr class="separator:a948942a6306cd829ef26d58a3628bcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3bef158c253774e76b9fa65f3ed2d77"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#ac3bef158c253774e76b9fa65f3ed2d77">GetCompressorConfigType</a> () const =0</td></tr>
 <tr class="separator:ac3bef158c253774e76b9fa65f3ed2d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b5fdac79320553254cabc15118e1298"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a0b5fdac79320553254cabc15118e1298">SetSolenoids</a> (int mask, int values)=0</td></tr>
@@ -155,6 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f31953cb4f841ffb3a2c7458587ad8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e41da9d4fbfc760af6c6dbe559a07d"><td class="memItemLeft" align="right" valign="top">virtual units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a74e41da9d4fbfc760af6c6dbe559a07d">GetAnalogVoltage</a> (int channel) const =0</td></tr>
 <tr class="separator:a74e41da9d4fbfc760af6c6dbe559a07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2f4cee38367de1110075d4a69259c4"><td class="memItemLeft" align="right" valign="top">virtual units::pounds_per_square_inch_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a7d2f4cee38367de1110075d4a69259c4">GetPressure</a> (int channel) const =0</td></tr>
+<tr class="separator:a7d2f4cee38367de1110075d4a69259c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133fe2675cd72936a6f59dc2fa4803b0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1_solenoid.html">Solenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a133fe2675cd72936a6f59dc2fa4803b0">MakeSolenoid</a> (int channel)=0</td></tr>
 <tr class="separator:a133fe2675cd72936a6f59dc2fa4803b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d30e25a22b0520683f3399f9550dd0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1_double_solenoid.html">DoubleSolenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a04d30e25a22b0520683f3399f9550dd0">MakeDoubleSolenoid</a> (int forwardChannel, int reverseChannel)=0</td></tr>
@@ -279,8 +281,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac32a72371f9fedd5e1a42e40afd168e8" name="ac32a72371f9fedd5e1a42e40afd168e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac32a72371f9fedd5e1a42e40afd168e8">&#9670;&nbsp;</a></span>EnableCompressorAnalog()</h2>
+<a id="a2b30a84d92f3d6d3361c2a8153fee857" name="a2b30a84d92f3d6d3361c2a8153fee857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b30a84d92f3d6d3361c2a8153fee857">&#9670;&nbsp;</a></span>EnableCompressorAnalog()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,14 +293,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void frc::PneumaticsBase::EnableCompressorAnalog </td>
           <td>(</td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>minPressure</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>maxPressure</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,7 +315,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a4c28715fd70f8852b002203031289073">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a34e4f9779e3456e9a2634fd0e17fecf8">frc::PneumaticsControlModule</a>.</p>
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a802c337af79a4863db1587c6337e1d6a">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#ac65e7d06c281827f2dcc7f360f7cee28">frc::PneumaticsControlModule</a>.</p>
 
 </div>
 </div>
@@ -344,8 +346,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5db3b2ef65bfa743e61df4c9090a76e5" name="a5db3b2ef65bfa743e61df4c9090a76e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db3b2ef65bfa743e61df4c9090a76e5">&#9670;&nbsp;</a></span>EnableCompressorHybrid()</h2>
+<a id="a948942a6306cd829ef26d58a3628bcb5" name="a948942a6306cd829ef26d58a3628bcb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a948942a6306cd829ef26d58a3628bcb5">&#9670;&nbsp;</a></span>EnableCompressorHybrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,14 +358,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void frc::PneumaticsBase::EnableCompressorHybrid </td>
           <td>(</td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>minPressure</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">units::volt_t&#160;</td>
-          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+          <td class="paramtype">units::pounds_per_square_inch_t&#160;</td>
+          <td class="paramname"><em>maxPressure</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -378,7 +380,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ade9b3890e4f31d34689be4a2e8797704">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a2b7259b22bbf358c8f3a5f87af2f2ced">frc::PneumaticsControlModule</a>.</p>
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a368993bcb9c334b05e9feee2fb361581">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a7af8248892b74ad5f6be9a9950aeb6b0">frc::PneumaticsControlModule</a>.</p>
 
 </div>
 </div>
@@ -605,6 +607,34 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a6628d20cac249aa3e8b06c07d096640b">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a6960fa8d5f358f78e4ce77997166adf6">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a7d2f4cee38367de1110075d4a69259c4" name="a7d2f4cee38367de1110075d4a69259c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d2f4cee38367de1110075d4a69259c4">&#9670;&nbsp;</a></span>GetPressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual units::pounds_per_square_inch_t frc::PneumaticsBase::GetPressure </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a0729520ef6d72338300967b7111fad40">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#aed82cbdc2ea013b3f47acfc2c59e68b4">frc::PneumaticsControlModule</a>.</p>
 
 </div>
 </div>
@@ -949,7 +979,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

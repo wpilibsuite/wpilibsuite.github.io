@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -93,17 +93,15 @@ $(document).ready(function(){initNavTree('_dense_map_info_8h.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">DenseMapInfo.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_hashing_8h_source.html">wpi/Hashing.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_pointer_like_type_traits_8h_source.html">wpi/PointerLikeTypeTraits.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="span_8h_source.html">wpi/span.h</a>&quot;</code><br />
 <code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;string_view&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
 </div>
 <p><a href="_dense_map_info_8h_source.html">Go to the source code of this file.</a></p>
@@ -115,6 +113,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01_t_01_5_01_4.html">wpi::DenseMapInfo&lt; T * &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01char_01_4.html">wpi::DenseMapInfo&lt; char &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01unsigned_01char_01_4.html">wpi::DenseMapInfo&lt; unsigned char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01unsigned_01short_01_4.html">wpi::DenseMapInfo&lt; unsigned short &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,9 +134,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html">wpi::DenseMapInfo&lt; std::pair&lt; T, U &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01std_1_1string__view_01_4.html">wpi::DenseMapInfo&lt; std::string_view &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01span_3_01_t_01_4_01_4.html">wpi::DenseMapInfo&lt; span&lt; T &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01std_1_1tuple_3_01_ts_8_8_8_01_4_01_4.html">wpi::DenseMapInfo&lt; std::tuple&lt; Ts... &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01hash__code_01_4.html">wpi::DenseMapInfo&lt; hash_code &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +143,15 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacewpi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html">wpi</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacewpi_1_1detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html">wpi::detail</a></td></tr>
+<tr class="memdesc:namespacewpi_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">detail namespace with internal helper functions <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a333649a1789bc79e44f927ee73c60c25"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#a333649a1789bc79e44f927ee73c60c25">wpi::detail::combineHashValue</a> (unsigned a, unsigned b)</td></tr>
+<tr class="memdesc:a333649a1789bc79e44f927ee73c60c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simplistic combination of 32-bit hash values into 32-bit hash values.  <a href="namespacewpi_1_1detail.html#a333649a1789bc79e44f927ee73c60c25">More...</a><br /></td></tr>
+<tr class="separator:a333649a1789bc79e44f927ee73c60c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -152,7 +159,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_dense_map_info_8h.html">DenseMapInfo.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

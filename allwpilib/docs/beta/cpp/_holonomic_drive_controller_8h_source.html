@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('_holonomic_drive_controller_8h_source.
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_symbol_exports_8h.html">wpi/SymbolExports.h</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="wpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h.html">frc/controller/PIDController.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_p_i_d_controller_8h.html">frc/controller/PIDController.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_profiled_p_i_d_controller_8h.html">frc/controller/ProfiledPIDController.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_pose2d_8h.html">frc/geometry/Pose2d.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_rotation2d_8h.html">frc/geometry/Rotation2d.h</a>&quot;</span></div>
@@ -207,11 +207,12 @@ $(document).ready(function(){initNavTree('_holonomic_drive_controller_8h_source.
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>};</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_chassis_speeds_8h_html"><div class="ttname"><a href="_chassis_speeds_8h.html">ChassisSpeeds.h</a></div></div>
+<div class="ttc" id="a_p_i_d_controller_8h_html"><div class="ttname"><a href="_p_i_d_controller_8h.html">PIDController.h</a></div></div>
 <div class="ttc" id="a_pose2d_8h_html"><div class="ttname"><a href="_pose2d_8h.html">Pose2d.h</a></div></div>
 <div class="ttc" id="a_profiled_p_i_d_controller_8h_html"><div class="ttname"><a href="_profiled_p_i_d_controller_8h.html">ProfiledPIDController.h</a></div></div>
 <div class="ttc" id="a_rotation2d_8h_html"><div class="ttname"><a href="_rotation2d_8h.html">Rotation2d.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
-<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
+<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
 <div class="ttc" id="a_trajectory_8h_html"><div class="ttname"><a href="_trajectory_8h.html">Trajectory.h</a></div></div>
 <div class="ttc" id="aangle_8h_html"><div class="ttname"><a href="angle_8h.html">angle.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_controller_html"><div class="ttname"><a href="classfrc2_1_1_p_i_d_controller.html">frc2::PIDController</a></div><div class="ttdoc">Implements a PID control loop.</div><div class="ttdef"><b>Definition:</b> PIDController.h:23</div></div>
@@ -222,21 +223,20 @@ $(document).ready(function(){initNavTree('_holonomic_drive_controller_8h_source.
 <div class="ttc" id="aclassfrc_1_1_holonomic_drive_controller_html_a50694abd7f07c2a99f5166347360bb01"><div class="ttname"><a href="classfrc_1_1_holonomic_drive_controller.html#a50694abd7f07c2a99f5166347360bb01">frc::HolonomicDriveController::Calculate</a></div><div class="ttdeci">ChassisSpeeds Calculate(const Pose2d &amp;currentPose, const Pose2d &amp;poseRef, units::meters_per_second_t linearVelocityRef, const Rotation2d &amp;angleRef)</div><div class="ttdoc">Returns the next output of the holonomic drive controller.</div></div>
 <div class="ttc" id="aclassfrc_1_1_holonomic_drive_controller_html_a541440376f1de7e2ca3b98a38f90d699"><div class="ttname"><a href="classfrc_1_1_holonomic_drive_controller.html#a541440376f1de7e2ca3b98a38f90d699">frc::HolonomicDriveController::AtReference</a></div><div class="ttdeci">bool AtReference() const</div><div class="ttdoc">Returns true if the pose error is within tolerance of the reference.</div></div>
 <div class="ttc" id="aclassfrc_1_1_holonomic_drive_controller_html_ac79f6e63d499f28f8952a2c075c9d18b"><div class="ttname"><a href="classfrc_1_1_holonomic_drive_controller.html#ac79f6e63d499f28f8952a2c075c9d18b">frc::HolonomicDriveController::Calculate</a></div><div class="ttdeci">ChassisSpeeds Calculate(const Pose2d &amp;currentPose, const Trajectory::State &amp;desiredState, const Rotation2d &amp;angleRef)</div><div class="ttdoc">Returns the next output of the holonomic drive controller.</div></div>
-<div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
+<div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_profiled_p_i_d_controller_html"><div class="ttname"><a href="classfrc_1_1_profiled_p_i_d_controller.html">frc::ProfiledPIDController</a></div><div class="ttdoc">Implements a PID control loop whose setpoint is constrained by a trapezoid profile.</div><div class="ttdef"><b>Definition:</b> ProfiledPIDController.h:35</div></div>
-<div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="astructfrc_1_1_chassis_speeds_html"><div class="ttname"><a href="structfrc_1_1_chassis_speeds.html">frc::ChassisSpeeds</a></div><div class="ttdoc">Represents the speed of a robot chassis.</div><div class="ttdef"><b>Definition:</b> ChassisSpeeds.h:25</div></div>
 <div class="ttc" id="astructfrc_1_1_trajectory_1_1_state_html"><div class="ttname"><a href="structfrc_1_1_trajectory_1_1_state.html">frc::Trajectory::State</a></div><div class="ttdoc">Represents one point on the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:33</div></div>
 <div class="ttc" id="avelocity_8h_html"><div class="ttname"><a href="velocity_8h.html">velocity.h</a></div></div>
-<div class="ttc" id="awpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h_html"><div class="ttname"><a href="wpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h.html">PIDController.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_901369ca5399cfb92b9538222311796d.html">controller</a></li><li class="navelem"><a class="el" href="_holonomic_drive_controller_8h.html">HolonomicDriveController.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -120,25 +120,27 @@ $(document).ready(function(){initNavTree('_differential_drive_wheel_speeds_8h_so
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structfrc_1_1_differential_drive_wheel_speeds.html#ae705f1cdac4e5bca951472a1a28ff671">   24</a></span>  units::meters_per_second_t <a class="code hl_enumvalue" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">right</a> = 0_mps;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"></span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   * Normalizes the wheel speeds using some max attainable speed. Sometimes,</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   * after inverse kinematics, the requested speed from a/several modules may be</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * above the max attainable speed for the driving motor on that module. To fix</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   * this issue, one can &quot;normalize&quot; all the wheel speeds to make sure that all</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * requested module speeds are below the absolute threshold, while maintaining</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * the ratio of speeds between modules.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * @param attainableMaxSpeed The absolute max speed that a wheel can reach.</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structfrc_1_1_differential_drive_wheel_speeds.html#aabb78b11d42e39142a4accb224ddb7f1">   36</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structfrc_1_1_differential_drive_wheel_speeds.html#aabb78b11d42e39142a4accb224ddb7f1">Normalize</a>(units::meters_per_second_t attainableMaxSpeed);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   * Renormalizes the wheel speeds if either side is above the specified</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   * maximum.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   * Sometimes, after inverse kinematics, the requested speed from one or more</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * wheels may be above the max attainable speed for the driving motor on that</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * wheel. To fix this issue, one can reduce all the wheel speeds to make sure</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * that all requested module speeds are at-or-below the absolute threshold,</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * while maintaining the ratio of speeds between wheels.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param attainableMaxSpeed The absolute max speed that a wheel can reach.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structfrc_1_1_differential_drive_wheel_speeds.html#a50ef494cb91c016bfc865dc0a3c95a69">   38</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structfrc_1_1_differential_drive_wheel_speeds.html#a50ef494cb91c016bfc865dc0a3c95a69">Desaturate</a>(units::meters_per_second_t attainableMaxSpeed);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
-<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd"><div class="ttname"><a href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">align::left</a></div><div class="ttdeci">@ left</div><div class="ttdef"><b>Definition:</b> core.h:1859</div></div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79"><div class="ttname"><a href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">align::right</a></div><div class="ttdeci">@ right</div><div class="ttdef"><b>Definition:</b> core.h:1859</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
+<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd"><div class="ttname"><a href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">align::left</a></div><div class="ttdeci">@ left</div><div class="ttdef"><b>Definition:</b> core.h:2021</div></div>
+<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79"><div class="ttname"><a href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">align::right</a></div><div class="ttdeci">@ right</div><div class="ttdef"><b>Definition:</b> core.h:2021</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="astructfrc_1_1_differential_drive_wheel_speeds_html"><div class="ttname"><a href="structfrc_1_1_differential_drive_wheel_speeds.html">frc::DifferentialDriveWheelSpeeds</a></div><div class="ttdoc">Represents the wheel speeds for a differential drive drivetrain.</div><div class="ttdef"><b>Definition:</b> DifferentialDriveWheelSpeeds.h:15</div></div>
-<div class="ttc" id="astructfrc_1_1_differential_drive_wheel_speeds_html_aabb78b11d42e39142a4accb224ddb7f1"><div class="ttname"><a href="structfrc_1_1_differential_drive_wheel_speeds.html#aabb78b11d42e39142a4accb224ddb7f1">frc::DifferentialDriveWheelSpeeds::Normalize</a></div><div class="ttdeci">void Normalize(units::meters_per_second_t attainableMaxSpeed)</div><div class="ttdoc">Normalizes the wheel speeds using some max attainable speed.</div></div>
+<div class="ttc" id="astructfrc_1_1_differential_drive_wheel_speeds_html_a50ef494cb91c016bfc865dc0a3c95a69"><div class="ttname"><a href="structfrc_1_1_differential_drive_wheel_speeds.html#a50ef494cb91c016bfc865dc0a3c95a69">frc::DifferentialDriveWheelSpeeds::Desaturate</a></div><div class="ttdeci">void Desaturate(units::meters_per_second_t attainableMaxSpeed)</div><div class="ttdoc">Renormalizes the wheel speeds if either side is above the specified maximum.</div></div>
 <div class="ttc" id="avelocity_8h_html"><div class="ttname"><a href="velocity_8h.html">velocity.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -146,7 +148,7 @@ $(document).ready(function(){initNavTree('_differential_drive_wheel_speeds_8h_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><a class="el" href="_differential_drive_wheel_speeds_8h.html">DifferentialDriveWheelSpeeds.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

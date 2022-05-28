@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -105,11 +105,11 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_symbol_exports_8h.html">wpi/SymbolExports.h</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html">wpi/array.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_core.html">Eigen/Core</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_kalman_filter_latency_compensator_8h.html">frc/estimator/KalmanFilterLatencyCompensator.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_unscented_kalman_filter_8h.html">frc/estimator/UnscentedKalmanFilter.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_pose2d_8h.html">frc/geometry/Pose2d.h</a>&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_rotation2d_8h.html">frc/geometry/Rotation2d.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_eigen_core_8h.html">frc/EigenCore.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_unscented_kalman_filter_8h.html">frc/estimator/UnscentedKalmanFilter.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_pose2d_8h.html">frc/geometry/Pose2d.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_rotation2d_8h.html">frc/geometry/Rotation2d.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_time_interpolatable_buffer_8h.html">frc/interpolation/TimeInterpolatableBuffer.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="_mecanum_drive_kinematics_8h.html">frc/kinematics/MecanumDriveKinematics.h</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">units/time.h</a>&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
@@ -134,8 +134,8 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * &lt;strong&gt; x = [x, y, theta]ᵀ &lt;/strong&gt; in the field coordinate system</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * containing x position, y position, and heading.</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * &lt;strong&gt; u = [v_l, v_r, dtheta]ᵀ &lt;/strong&gt; containing left wheel velocity,</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * right wheel velocity, and change in gyro heading.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * &lt;strong&gt; u = [v_x, v_y, omega]ᵀ &lt;/strong&gt; containing x velocity, y velocity,</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * and angular velocity in the field coordinate system.</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * &lt;strong&gt; y = [x, y, theta]ᵀ &lt;/strong&gt; from vision containing x position, y</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * position, and heading; or &lt;strong&gt; y = [theta]ᵀ &lt;/strong&gt; containing gyro</span></div>
@@ -155,203 +155,208 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   *                                 model&#39;s state estimates less. This matrix</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   *                                 is in the form [x, y, theta]ᵀ, with units</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   *                                 in meters and radians.</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   * @param localMeasurementStdDevs  Standard deviations of the encoder and gyro</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   *                                 measurements. Increase these numbers to</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   *                                 trust sensor readings from encoders</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   *                                 and gyros less. This matrix is in the form</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   *                                 [theta], with units in radians.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * @param visionMeasurementStdDevs Standard deviations of the vision</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   *                                 measurements. Increase these numbers to</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   *                                 trust global measurements from vision</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   *                                 less. This matrix is in the form</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   *                                 [x, y, theta]ᵀ, with units in meters and</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   *                                 radians.</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   * @param nominalDt                The time in seconds between each robot</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   *                                 loop.</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">   76</a></span>  <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">MecanumDrivePoseEstimator</a>(</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; initialPose,</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <a class="code hl_class" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; stateStdDevs,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 1&gt;</a>&amp; localMeasurementStdDevs,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      units::second_t nominalDt = 0.02_s);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * Sets the pose estimator&#39;s trust of global measurements. This might be used</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   * to change trust in vision measurements after the autonomous period, or to</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">   * change trust as distance to a vision target increases.</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">   * @param visionMeasurementStdDevs Standard deviations of the vision</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">   *                                 measurements. Increase these numbers to</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">   *                                 trust global measurements from vision</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">   *                                 less. This matrix is in the form</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">   *                                 [x, y, theta]ᵀ, with units in meters and</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">   *                                 radians.</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">   96</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">SetVisionMeasurementStdDevs</a>(</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"></span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   * Resets the robot&#39;s position on the field.</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">   * &lt;p&gt;You NEED to reset your encoders (to zero) when calling this method.</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   * &lt;p&gt;The gyroscope angle does not need to be reset in the user&#39;s robot code.</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   * The library automatically takes care of offsetting the gyro angle.</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   * @param pose      The position on the field that your robot is at.</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   * @param gyroAngle The angle reported by the gyroscope.</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a17b01865794677d966567bd5eb947935">  110</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a17b01865794677d966567bd5eb947935">ResetPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"></span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * Gets the pose of the robot at the current time as estimated by the Extended</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   * Kalman Filter.</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   * @return The estimated robot pose in meters.</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">  118</a></span>  <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">GetEstimatedPosition</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"></span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   * Add a vision measurement to the Unscented Kalman Filter. This will correct</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   * the odometry pose estimate while still accounting for measurement noise.</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   * This method can be called as infrequently as you want, as long as you are</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   * calling Update() every loop.</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   * @param visionRobotPose The pose of the robot as measured by the vision</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">   *                        camera.</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   * @param timestamp       The timestamp of the vision measurement in seconds.</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   *                        Note that if you don&#39;t use your own time source by</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   *                        calling UpdateWithTime() then you must use a</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">   *                        timestamp with an epoch since FPGA startup</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">   *                        (i.e. the epoch of this timestamp is the same</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">   *                        epoch as Timer#GetFPGATimestamp.) This means</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   *                        that you should use Timer#GetFPGATimestamp as your</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">   *                        time source or sync the epochs.</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad561f6f2261695854f797b7851bfe949">  138</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad561f6f2261695854f797b7851bfe949">AddVisionMeasurement</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; visionRobotPose,</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                            units::second_t timestamp);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"></span> </div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">   * Adds a vision measurement to the Unscented Kalman Filter. This will correct</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">   * the odometry pose estimate while still accounting for measurement noise.</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   * This method can be called as infrequently as you want, as long as you are</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">   * calling Update() every loop.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   * @param localMeasurementStdDevs  Standard deviation of the gyro measurement.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   *                                 Increase this number to trust sensor</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   *                                 readings from the gyro less. This matrix is</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   *                                 in the form [theta], with units in radians.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * @param visionMeasurementStdDevs Standard deviations of the vision</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   *                                 measurements. Increase these numbers to</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   *                                 trust global measurements from vision</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   *                                 less. This matrix is in the form</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   *                                 [x, y, theta]ᵀ, with units in meters and</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   *                                 radians.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   * @param nominalDt                The time in seconds between each robot</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   *                                 loop.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">   75</a></span>  <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">MecanumDrivePoseEstimator</a>(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; initialPose,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <a class="code hl_class" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; stateStdDevs,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 1&gt;</a>&amp; localMeasurementStdDevs,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      units::second_t nominalDt = 0.02_s);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"></span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">   * Sets the pose estimator&#39;s trust of global measurements. This might be used</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * to change trust in vision measurements after the autonomous period, or to</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   * change trust as distance to a vision target increases.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">   * @param visionMeasurementStdDevs Standard deviations of the vision</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">   *                                 measurements. Increase these numbers to</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">   *                                 trust global measurements from vision</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">   *                                 less. This matrix is in the form</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">   *                                 [x, y, theta]ᵀ, with units in meters and</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">   *                                 radians.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">   95</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">SetVisionMeasurementStdDevs</a>(</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"></span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">   * Resets the robot&#39;s position on the field.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   * &lt;p&gt;You NEED to reset your encoders (to zero) when calling this method.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   * &lt;p&gt;The gyroscope angle does not need to be reset in the user&#39;s robot code.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   * The library automatically takes care of offsetting the gyro angle.</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   * @param pose      The position on the field that your robot is at.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   * @param gyroAngle The angle reported by the gyroscope.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a17b01865794677d966567bd5eb947935">  109</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a17b01865794677d966567bd5eb947935">ResetPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"></span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">   * Gets the pose of the robot at the current time as estimated by the Extended</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * Kalman Filter.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * @return The estimated robot pose in meters.</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">  117</a></span>  <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">GetEstimatedPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"></span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * Add a vision measurement to the Unscented Kalman Filter. This will correct</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   * the odometry pose estimate while still accounting for measurement noise.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   * This method can be called as infrequently as you want, as long as you are</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   * calling Update() every loop.</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">   * To promote stability of the pose estimate and make it robust to bad vision</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   * data, we recommend only adding vision measurements that are already within</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">   * one meter or so of the current pose estimate.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   * @param visionRobotPose The pose of the robot as measured by the vision</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   *                        camera.</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">   * @param timestamp       The timestamp of the vision measurement in seconds.</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">   *                        Note that if you don&#39;t use your own time source by</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">   *                        calling UpdateWithTime() then you must use a</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   *                        timestamp with an epoch since FPGA startup</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">   *                        (i.e. the epoch of this timestamp is the same</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">   *                        epoch as Timer#GetFPGATimestamp.) This means</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">   *                        that you should use Timer#GetFPGATimestamp as your</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">   *                        time source or sync the epochs.</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad561f6f2261695854f797b7851bfe949">  141</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad561f6f2261695854f797b7851bfe949">AddVisionMeasurement</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; visionRobotPose,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                            units::second_t timestamp);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"></span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   * Adds a vision measurement to the Unscented Kalman Filter. This will correct</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">   * the odometry pose estimate while still accounting for measurement noise.</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">   * Note that the vision measurement standard deviations passed into this</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">   * method will continue to apply to future measurements until a subsequent</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">   * call to SetVisionMeasurementStdDevs() or this method.</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">   * @param visionRobotPose          The pose of the robot as measured by the</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">   *                                 vision camera.</span></div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">   * @param timestamp                The timestamp of the vision measurement in</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">   *                                 seconds. Note that if you don&#39;t use your</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   *                                 own time source by calling</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   *                                 UpdateWithTime(), then you must use a</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   *                                 timestamp with an epoch since FPGA startup</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">   *                                 (i.e. the epoch of this timestamp is the</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">   *                                 same epoch as</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">   *                                 frc::Timer::GetFPGATimestamp(). This means</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">   *                                 that you should use</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">   *                                 frc::Timer::GetFPGATimestamp() as your</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">   *                                 time source in this case.</span></div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">   * @param visionMeasurementStdDevs Standard deviations of the vision</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">   *                                 measurements. Increase these numbers to</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">   *                                 trust global measurements from vision</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">   *                                 less. This matrix is in the form</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">   *                                 [x, y, theta]ᵀ, with units in meters and</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">   *                                 radians.</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a41f151125d9e8e623a67a3b32f943e2d">  172</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a41f151125d9e8e623a67a3b32f943e2d">AddVisionMeasurement</a>(</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; visionRobotPose, units::second_t timestamp,</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs) {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    SetVisionMeasurementStdDevs(visionMeasurementStdDevs);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    AddVisionMeasurement(visionRobotPose, timestamp);</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment"></span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">   * Updates the the Unscented Kalman Filter using only wheel encoder</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">   * information. This should be called every loop, and the correct loop period</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">   * must be passed into the constructor of this class.</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">   * @param gyroAngle   The current gyro angle.</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">   * @return The estimated pose of the robot in meters.</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4">  188</a></span>  <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4">Update</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_mecanum_drive_wheel_speeds.html">MecanumDriveWheelSpeeds</a>&amp; wheelSpeeds);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"></span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">   * Updates the the Unscented Kalman Filter using only wheel encoder</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">   * information. This should be called every loop, and the correct loop period</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">   * must be passed into the constructor of this class.</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">   * @param currentTime Time at which this method was called, in seconds.</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">   * @param gyroAngle   The current gyroscope angle.</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">   * @return The estimated pose of the robot in meters.</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ac44bd596cc67920ca5792203711c1c25">  201</a></span>  <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ac44bd596cc67920ca5792203711c1c25">UpdateWithTime</a>(units::second_t currentTime,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                        <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                        <span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_mecanum_drive_wheel_speeds.html">MecanumDriveWheelSpeeds</a>&amp; wheelSpeeds);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <a class="code hl_class" href="classfrc_1_1_unscented_kalman_filter.html">UnscentedKalmanFilter&lt;3, 3, 1&gt;</a> m_observer;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <a class="code hl_class" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> m_kinematics;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <a class="code hl_class" href="classfrc_1_1_kalman_filter_latency_compensator.html">KalmanFilterLatencyCompensator&lt;3, 3, 1, UnscentedKalmanFilter&lt;3, 3, 1&gt;</a>&gt;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      m_latencyCompensator;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  std::function&lt;void(<span class="keyword">const</span> Eigen::Vector&lt;double, 3&gt;&amp; u,</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                     <span class="keyword">const</span> Eigen::Vector&lt;double, 3&gt;&amp; <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>)&gt;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      m_visionCorrect;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  Eigen::Matrix3d m_visionContR;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  units::second_t m_nominalDt;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  units::second_t m_prevTime = -1_s;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_gyroOffset;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_previousAngle;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Dim&gt;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keyword">static</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> StdDevMatrixToArray(</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Dim&gt;&amp; vector) {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> array;</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; Dim; ++i) {</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>      array[i] = vector(i);</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    }</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keywordflow">return</span> array;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  }</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>};</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>}  <span class="comment">// namespace frc</span></div>
-<div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
-<div class="ttc" id="a_kalman_filter_latency_compensator_8h_html"><div class="ttname"><a href="_kalman_filter_latency_compensator_8h.html">KalmanFilterLatencyCompensator.h</a></div></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">   * This method can be called as infrequently as you want, as long as you are</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">   * calling Update() every loop.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">   * To promote stability of the pose estimate and make it robust to bad vision</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">   * data, we recommend only adding vision measurements that are already within</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">   * one meter or so of the current pose estimate.</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">   * Note that the vision measurement standard deviations passed into this</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   * method will continue to apply to future measurements until a subsequent</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   * call to SetVisionMeasurementStdDevs() or this method.</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">   * @param visionRobotPose          The pose of the robot as measured by the</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">   *                                 vision camera.</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">   * @param timestamp                The timestamp of the vision measurement in</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">   *                                 seconds. Note that if you don&#39;t use your</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">   *                                 own time source by calling</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">   *                                 UpdateWithTime(), then you must use a</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">   *                                 timestamp with an epoch since FPGA startup</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">   *                                 (i.e. the epoch of this timestamp is the</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">   *                                 same epoch as</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">   *                                 frc::Timer::GetFPGATimestamp(). This means</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">   *                                 that you should use</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">   *                                 frc::Timer::GetFPGATimestamp() as your</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">   *                                 time source in this case.</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">   * @param visionMeasurementStdDevs Standard deviations of the vision</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">   *                                 measurements. Increase these numbers to</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">   *                                 trust global measurements from vision</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">   *                                 less. This matrix is in the form</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">   *                                 [x, y, theta]ᵀ, with units in meters and</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">   *                                 radians.</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a41f151125d9e8e623a67a3b32f943e2d">  179</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a41f151125d9e8e623a67a3b32f943e2d">AddVisionMeasurement</a>(</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; visionRobotPose, units::second_t timestamp,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs) {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    SetVisionMeasurementStdDevs(visionMeasurementStdDevs);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    AddVisionMeasurement(visionRobotPose, timestamp);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  }</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment"></span> </div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">   * Updates the the Unscented Kalman Filter using only wheel encoder</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">   * information. This should be called every loop, and the correct loop period</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">   * must be passed into the constructor of this class.</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">   * @param gyroAngle   The current gyro angle.</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">   * @return The estimated pose of the robot in meters.</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4">  195</a></span>  <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4">Update</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_mecanum_drive_wheel_speeds.html">MecanumDriveWheelSpeeds</a>&amp; wheelSpeeds);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"></span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">   * Updates the the Unscented Kalman Filter using only wheel encoder</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">   * information. This should be called every loop, and the correct loop period</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">   * must be passed into the constructor of this class.</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">   * @param currentTime Time at which this method was called, in seconds.</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">   * @param gyroAngle   The current gyroscope angle.</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">   * @return The estimated pose of the robot in meters.</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ac44bd596cc67920ca5792203711c1c25">  208</a></span>  <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ac44bd596cc67920ca5792203711c1c25">UpdateWithTime</a>(units::second_t currentTime,</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                        <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>                        <span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_mecanum_drive_wheel_speeds.html">MecanumDriveWheelSpeeds</a>&amp; wheelSpeeds);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <a class="code hl_class" href="classfrc_1_1_unscented_kalman_filter.html">UnscentedKalmanFilter&lt;3, 3, 1&gt;</a> m_observer;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <a class="code hl_class" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> m_kinematics;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <a class="code hl_class" href="classfrc_1_1_time_interpolatable_buffer.html">TimeInterpolatableBuffer&lt;Pose2d&gt;</a> m_poseBuffer{1.5_s};</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  std::function&lt;void(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a>&amp; u, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a>&amp; <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>)&gt; m_visionCorrect;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  Eigen::Matrix3d m_visionContR;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  units::second_t m_nominalDt;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  units::second_t m_prevTime = -1_s;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_gyroOffset;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_previousAngle;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Dim&gt;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keyword">static</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> StdDevMatrixToArray(</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Dim&gt;</a>&amp; vector) {</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> array;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; Dim; ++i) {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      array[i] = vector(i);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">return</span> array;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>};</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="a_mecanum_drive_kinematics_8h_html"><div class="ttname"><a href="_mecanum_drive_kinematics_8h.html">MecanumDriveKinematics.h</a></div></div>
 <div class="ttc" id="a_pose2d_8h_html"><div class="ttname"><a href="_pose2d_8h.html">Pose2d.h</a></div></div>
 <div class="ttc" id="a_rotation2d_8h_html"><div class="ttname"><a href="_rotation2d_8h.html">Rotation2d.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
-<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
+<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
+<div class="ttc" id="a_time_interpolatable_buffer_8h_html"><div class="ttname"><a href="_time_interpolatable_buffer_8h.html">TimeInterpolatableBuffer.h</a></div></div>
 <div class="ttc" id="a_unscented_kalman_filter_8h_html"><div class="ttname"><a href="_unscented_kalman_filter_8h.html">UnscentedKalmanFilter.h</a></div></div>
-<div class="ttc" id="aclassfrc_1_1_kalman_filter_latency_compensator_html"><div class="ttname"><a href="classfrc_1_1_kalman_filter_latency_compensator.html">frc::KalmanFilterLatencyCompensator</a></div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_kinematics_html"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_kinematics.html">frc::MecanumDriveKinematics</a></div><div class="ttdoc">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual wheel s...</div><div class="ttdef"><b>Definition:</b> MecanumDriveKinematics.h:40</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html">frc::MecanumDrivePoseEstimator</a></div><div class="ttdoc">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with meca...</div><div class="ttdef"><b>Definition:</b> MecanumDrivePoseEstimator.h:48</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a09d595a66bbb8e8779e204003de430f1"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">frc::MecanumDrivePoseEstimator::SetVisionMeasurementStdDevs</a></div><div class="ttdeci">void SetVisionMeasurementStdDevs(const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</div><div class="ttdoc">Sets the pose estimator's trust of global measurements.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a0f8251909256df2c00a750881ed4aee4"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4">frc::MecanumDrivePoseEstimator::Update</a></div><div class="ttdeci">Pose2d Update(const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a17b01865794677d966567bd5eb947935"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a17b01865794677d966567bd5eb947935">frc::MecanumDrivePoseEstimator::ResetPosition</a></div><div class="ttdeci">void ResetPosition(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</div><div class="ttdoc">Resets the robot's position on the field.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a1d58ad2d5e0a0d7a1cfcea46583afe40"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">frc::MecanumDrivePoseEstimator::MecanumDrivePoseEstimator</a></div><div class="ttdeci">MecanumDrivePoseEstimator(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, MecanumDriveKinematics kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</div><div class="ttdoc">Constructs a MecanumDrivePoseEstimator.</div></div>
-<div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a41f151125d9e8e623a67a3b32f943e2d"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a41f151125d9e8e623a67a3b32f943e2d">frc::MecanumDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</div><div class="ttdoc">Adds a vision measurement to the Unscented Kalman Filter.</div><div class="ttdef"><b>Definition:</b> MecanumDrivePoseEstimator.h:172</div></div>
+<div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a41f151125d9e8e623a67a3b32f943e2d"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a41f151125d9e8e623a67a3b32f943e2d">frc::MecanumDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</div><div class="ttdoc">Adds a vision measurement to the Unscented Kalman Filter.</div><div class="ttdef"><b>Definition:</b> MecanumDrivePoseEstimator.h:179</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_ab1aa41030fde5363102bba79146747cb"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">frc::MecanumDrivePoseEstimator::GetEstimatedPosition</a></div><div class="ttdeci">Pose2d GetEstimatedPosition() const</div><div class="ttdoc">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_ac44bd596cc67920ca5792203711c1c25"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ac44bd596cc67920ca5792203711c1c25">frc::MecanumDrivePoseEstimator::UpdateWithTime</a></div><div class="ttdeci">Pose2d UpdateWithTime(units::second_t currentTime, const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_ad561f6f2261695854f797b7851bfe949"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad561f6f2261695854f797b7851bfe949">frc::MecanumDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp)</div><div class="ttdoc">Add a vision measurement to the Unscented Kalman Filter.</div></div>
-<div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
-<div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
-<div class="ttc" id="aclassfrc_1_1_unscented_kalman_filter_html"><div class="ttname"><a href="classfrc_1_1_unscented_kalman_filter.html">frc::UnscentedKalmanFilter</a></div><div class="ttdoc">A Kalman filter combines predictions from a model and measurements to give an estimate of the true sy...</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:48</div></div>
+<div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
+<div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
+<div class="ttc" id="aclassfrc_1_1_time_interpolatable_buffer_html"><div class="ttname"><a href="classfrc_1_1_time_interpolatable_buffer.html">frc::TimeInterpolatableBuffer</a></div><div class="ttdoc">The TimeInterpolatableBuffer provides an easy way to estimate past measurements.</div><div class="ttdef"><b>Definition:</b> TimeInterpolatableBuffer.h:36</div></div>
+<div class="ttc" id="aclassfrc_1_1_unscented_kalman_filter_html"><div class="ttname"><a href="classfrc_1_1_unscented_kalman_filter.html">frc::UnscentedKalmanFilter</a></div><div class="ttdoc">A Kalman filter combines predictions from a model and measurements to give an estimate of the true sy...</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:43</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
 <div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_speeds_html"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_speeds.html">frc::MecanumDriveWheelSpeeds</a></div><div class="ttdoc">Represents the wheel speeds for a mecanum drive drivetrain.</div><div class="ttdef"><b>Definition:</b> MecanumDriveWheelSpeeds.h:15</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 <div class="ttc" id="awpiutil_2src_2main_2native_2include_2wpi_2array_8h_html"><div class="ttname"><a href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html">array.h</a></div></div>
@@ -361,7 +366,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_mecanum_drive_pose_estimator_8h.html">MecanumDrivePoseEstimator.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

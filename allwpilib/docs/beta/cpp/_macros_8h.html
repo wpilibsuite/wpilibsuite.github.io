@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -331,7 +331,7 @@ Macros</h2></td></tr>
 <tr class="separator:acb1e4e2de56103873d2de3c77c9c9373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b0ae667a0abd9a1dfb6e81fd3a7743"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a30b0ae667a0abd9a1dfb6e81fd3a7743">EIGEN_EMPTY</a></td></tr>
 <tr class="separator:a30b0ae667a0abd9a1dfb6e81fd3a7743"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f979bbb7bb48bdd9486d46c53f461a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a25f979bbb7bb48bdd9486d46c53f461a">EIGEN_USING_STD</a>(FUNC)&#160;&#160;&#160;<a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> std::FUNC;</td></tr>
+<tr class="memitem:a25f979bbb7bb48bdd9486d46c53f461a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a25f979bbb7bb48bdd9486d46c53f461a">EIGEN_USING_STD</a>(FUNC)&#160;&#160;&#160;using std::FUNC;</td></tr>
 <tr class="separator:a25f979bbb7bb48bdd9486d46c53f461a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38acd33b693efd3da0650e097d9a494f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a38acd33b693efd3da0650e097d9a494f">EIGEN_INHERIT_ASSIGNMENT_EQUAL_OPERATOR</a>(Derived)</td></tr>
 <tr class="separator:a38acd33b693efd3da0650e097d9a494f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -384,7 +384,7 @@ Macros</h2></td></tr>
 <tr class="separator:affd73ff76188dafd9367852f91d0ce42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42d4b7cca6845685cea0bed006fe4b04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a42d4b7cca6845685cea0bed006fe4b04">EIGEN_THROW</a>&#160;&#160;&#160;std::abort()</td></tr>
 <tr class="separator:a42d4b7cca6845685cea0bed006fe4b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ceaf167edc5192421db3f6d310479a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a6ceaf167edc5192421db3f6d310479a6">EIGEN_TRY</a>&#160;&#160;&#160;if (true)</td></tr>
+<tr class="memitem:a6ceaf167edc5192421db3f6d310479a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a6ceaf167edc5192421db3f6d310479a6">EIGEN_TRY</a>&#160;&#160;&#160;<a class="el" href="_third_party_notices_8txt.html#a073cc636a4a3b099f4c7946d4eae4f48">if</a> (true)</td></tr>
 <tr class="separator:a6ceaf167edc5192421db3f6d310479a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c7d602f9e4ee3644492da1f65954f22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_macros_8h.html#a3c7d602f9e4ee3644492da1f65954f22">EIGEN_CATCH</a>(X)&#160;&#160;&#160;else</td></tr>
 <tr class="separator:a3c7d602f9e4ee3644492da1f65954f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1317,7 +1317,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  CwiseBinaryOp&lt;<a class="code hl_define" href="_macros_8h.html#af2a38e93e667edab1c0da2dc95ce2e31">EIGEN_CAT</a>(<a class="code hl_define" href="_macros_8h.html#af2a38e93e667edab1c0da2dc95ce2e31">EIGEN_CAT</a>(internal::scalar_,OPNAME),_op)&lt;<span class="keyword">typename</span> internal::traits&lt;EXPR&gt;::Scalar,SCALAR&gt;, <span class="keyword">const</span> EXPR, \</div>
 <div class="line">                const <span class="keyword">typename</span> <a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">internal::plain_constant_type&lt;EXPR,SCALAR&gt;::type</a>&gt;</div>
-<div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1048</div></div>
+<div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1131</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2836,7 +2836,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define EIGEN_TRY&#160;&#160;&#160;if (true)</td>
+          <td class="memname">#define EIGEN_TRY&#160;&#160;&#160;<a class="el" href="_third_party_notices_8txt.html#a073cc636a4a3b099f4c7946d4eae4f48">if</a> (true)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2900,7 +2900,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">FUNC</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> std::FUNC;</td>
+          <td>&#160;&#160;&#160;using std::FUNC;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2967,7 +2967,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><a class="el" href="dir_0e042f599448b2c33df19dc2eb4b18db.html">util</a></li><li class="navelem"><a class="el" href="_macros_8h.html">Macros.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

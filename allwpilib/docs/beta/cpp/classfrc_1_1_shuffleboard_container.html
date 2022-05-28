@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -145,6 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad538e3cd69d1047587bbda71bc785fb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_complex_widget.html">ComplexWidget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_container.html#ad538e3cd69d1047587bbda71bc785fb8">Add</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> title, const <a class="el" href="classcs_1_1_video_source.html">cs::VideoSource</a> &amp;video)</td></tr>
 <tr class="memdesc:ad538e3cd69d1047587bbda71bc785fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a widget to this container to display the given video stream.  <a href="classfrc_1_1_shuffleboard_container.html#ad538e3cd69d1047587bbda71bc785fb8">More...</a><br /></td></tr>
 <tr class="separator:ad538e3cd69d1047587bbda71bc785fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a207fdd571bc73df0cccc5e4b6641e4e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_complex_widget.html">ComplexWidget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_container.html#a207fdd571bc73df0cccc5e4b6641e4e2">AddCamera</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> title, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> cameraName, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; cameraUrls)</td></tr>
+<tr class="memdesc:a207fdd571bc73df0cccc5e4b6641e4e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a widget to this container to display a video stream.  <a href="classfrc_1_1_shuffleboard_container.html#a207fdd571bc73df0cccc5e4b6641e4e2">More...</a><br /></td></tr>
+<tr class="separator:a207fdd571bc73df0cccc5e4b6641e4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2ffcff409cd270a928ff6ac63c9aa1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_complex_widget.html">ComplexWidget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_container.html#ace2ffcff409cd270a928ff6ac63c9aa1">Add</a> (<a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a> &amp;sendable)</td></tr>
 <tr class="memdesc:ace2ffcff409cd270a928ff6ac63c9aa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a widget to this container to display the given sendable.  <a href="classfrc_1_1_shuffleboard_container.html#ace2ffcff409cd270a928ff6ac63c9aa1">More...</a><br /></td></tr>
 <tr class="separator:ace2ffcff409cd270a928ff6ac63c9aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -989,6 +992,59 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a207fdd571bc73df0cccc5e4b6641e4e2" name="a207fdd571bc73df0cccc5e4b6641e4e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a207fdd571bc73df0cccc5e4b6641e4e2">&#9670;&nbsp;</a></span>AddCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_complex_widget.html">frc::ComplexWidget</a> &amp; frc::ShuffleboardContainer::AddCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>cameraName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;&#160;</td>
+          <td class="paramname"><em>cameraUrls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a widget to this container to display a video stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>the title of the widget </td></tr>
+    <tr><td class="paramname">cameraName</td><td>the name of the streamed camera </td></tr>
+    <tr><td class="paramname">cameraUrls</td><td>the URLs with which the dashboard can access the camera stream </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a widget to display the camera stream </dd></dl>
+
+</div>
+</div>
 <a id="a185b3a0483508b904578d3605194e491" name="a185b3a0483508b904578d3605194e491"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a185b3a0483508b904578d3605194e491">&#9670;&nbsp;</a></span>AddNumber()</h2>
 
@@ -1803,7 +1859,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_shuffleboard_container.html">ShuffleboardContainer</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

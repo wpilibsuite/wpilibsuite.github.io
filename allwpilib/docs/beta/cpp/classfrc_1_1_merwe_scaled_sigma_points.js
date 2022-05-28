@@ -2,9 +2,9 @@ var classfrc_1_1_merwe_scaled_sigma_points =
 [
     [ "MerweScaledSigmaPoints", "classfrc_1_1_merwe_scaled_sigma_points.html#a2a376a61a41f7e2cd5bae21588aa7560", null ],
     [ "NumSigmas", "classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404", null ],
-    [ "SigmaPoints", "classfrc_1_1_merwe_scaled_sigma_points.html#a3ca0a2d65f0443c01718733781dc6027", null ],
-    [ "Wc", "classfrc_1_1_merwe_scaled_sigma_points.html#a2a9c07099095aa4558c0adfa94d22e4c", null ],
+    [ "SigmaPoints", "classfrc_1_1_merwe_scaled_sigma_points.html#ae320add2fbb1b0425560b17eec6f34d1", null ],
+    [ "Wc", "classfrc_1_1_merwe_scaled_sigma_points.html#aa06bc30f985bb64ecf863b63feb2be03", null ],
     [ "Wc", "classfrc_1_1_merwe_scaled_sigma_points.html#a539ed39d0c09683d022e072796696cf0", null ],
-    [ "Wm", "classfrc_1_1_merwe_scaled_sigma_points.html#a90ebf79cc56a140b928504b576b0006f", null ],
+    [ "Wm", "classfrc_1_1_merwe_scaled_sigma_points.html#a93b404b28762c849c7b9cbfbf4ff6205", null ],
     [ "Wm", "classfrc_1_1_merwe_scaled_sigma_points.html#a7e4bd5990975d8d226f92460094ef071", null ]
 ];

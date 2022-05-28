@@ -4,6 +4,7 @@ var classwpi_1_1_small_dense_map =
     [ "SmallDenseMap", "classwpi_1_1_small_dense_map.html#a925bec4f7450af6a8b26de3c97f44dec", null ],
     [ "SmallDenseMap", "classwpi_1_1_small_dense_map.html#aa60129ae3bcf2198eba79c6383cb2a61", null ],
     [ "SmallDenseMap", "classwpi_1_1_small_dense_map.html#aaedfba79ff2fc0be9f394c6068634544", null ],
+    [ "SmallDenseMap", "classwpi_1_1_small_dense_map.html#ae912a1913db2d2f3539f557a1bbb4955", null ],
     [ "~SmallDenseMap", "classwpi_1_1_small_dense_map.html#a4167d558653e514e9ec9cc0c63ba57be", null ],
     [ "copyFrom", "classwpi_1_1_small_dense_map.html#a7bc235875a23bb89acd0da496d95f3d1", null ],
     [ "grow", "classwpi_1_1_small_dense_map.html#aabc16c7da4fae46ae6fd94ccca5b6e3c", null ],

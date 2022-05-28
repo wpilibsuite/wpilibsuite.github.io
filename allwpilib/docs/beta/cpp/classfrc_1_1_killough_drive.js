@@ -1,8 +1,8 @@
 var classfrc_1_1_killough_drive =
 [
     [ "WheelSpeeds", "structfrc_1_1_killough_drive_1_1_wheel_speeds.html", "structfrc_1_1_killough_drive_1_1_wheel_speeds" ],
-    [ "KilloughDrive", "classfrc_1_1_killough_drive.html#adea3cb7726b060064c5e482a7851be2e", null ],
-    [ "KilloughDrive", "classfrc_1_1_killough_drive.html#a8d0aede16c565d25f9ab925760af9d6d", null ],
+    [ "KilloughDrive", "classfrc_1_1_killough_drive.html#a830b3e9cd20d39a823fc19c672dc5ff7", null ],
+    [ "KilloughDrive", "classfrc_1_1_killough_drive.html#ad997781bb1755cb6a8f15faa0ed7e2ad", null ],
     [ "~KilloughDrive", "classfrc_1_1_killough_drive.html#ab2ab5192480ffd8f56353bad5372aeb2", null ],
     [ "KilloughDrive", "classfrc_1_1_killough_drive.html#aeb2826b7c1c6748f9e6250146b51a077", null ],
     [ "DriveCartesian", "classfrc_1_1_killough_drive.html#a8ee2eff3194584b379017f7ba800669a", null ],

@@ -9,8 +9,8 @@ var classwpi_1_1_small_vector =
     [ "SmallVector", "classwpi_1_1_small_vector.html#ac3b7ba67604cbc011a48ca41848cecb7", null ],
     [ "SmallVector", "classwpi_1_1_small_vector.html#ae9768e1aa7b03312288fa974e497a57c", null ],
     [ "SmallVector", "classwpi_1_1_small_vector.html#a7f534aad8a2005d17afa5495264235ee", null ],
-    [ "operator=", "classwpi_1_1_small_vector.html#a837f364b5e99a9bb30cb4e8c729fc205", null ],
-    [ "operator=", "classwpi_1_1_small_vector.html#a92f174b77f80f08d81f359fb2b39aa77", null ],
-    [ "operator=", "classwpi_1_1_small_vector.html#a3ade54899449b29fb981f97c83f6e66e", null ],
-    [ "operator=", "classwpi_1_1_small_vector.html#a3d9fea22989528a22f6c5046cda2adae", null ]
+    [ "operator=", "classwpi_1_1_small_vector.html#ae0d7c419d52b85b5435768776f696067", null ],
+    [ "operator=", "classwpi_1_1_small_vector.html#ad1244dfd6d73d6a4cfbb2e0862238532", null ],
+    [ "operator=", "classwpi_1_1_small_vector.html#a95dfe71a306bec9bd3e2b85120badac1", null ],
+    [ "operator=", "classwpi_1_1_small_vector.html#aff27059024c8ab48f5af26206391e3b4", null ]
 ];

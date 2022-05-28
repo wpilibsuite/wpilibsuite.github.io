@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('_addressable_l_e_d_sim_8h_source.html'
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">   * @param data output parameter to fill with LED data</span></div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">   * @return the length of the LED data</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a539e6ff6c5ac2cc67398f66bd12d098a">  172</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a539e6ff6c5ac2cc67398f66bd12d098a">GetData</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="struct_h_a_l___addressable_l_e_d_data.html">HAL_AddressableLEDData</a>* <a class="code hl_struct" href="structdata.html">data</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a539e6ff6c5ac2cc67398f66bd12d098a">  172</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a539e6ff6c5ac2cc67398f66bd12d098a">GetData</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="struct_h_a_l___addressable_l_e_d_data.html">HAL_AddressableLEDData</a>* data) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"></span> </div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">   * Change the LED data.</span></div>
@@ -273,7 +273,7 @@ $(document).ready(function(){initNavTree('_addressable_l_e_d_sim_8h_source.html'
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">   * @param data the new data</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">   * @param length the length of the LED data</span></div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a9bc9082d5e413083002a3818c84af5a0">  180</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a9bc9082d5e413083002a3818c84af5a0">SetData</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="struct_h_a_l___addressable_l_e_d_data.html">HAL_AddressableLEDData</a>* <a class="code hl_struct" href="structdata.html">data</a>, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a9bc9082d5e413083002a3818c84af5a0">  180</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a9bc9082d5e413083002a3818c84af5a0">SetData</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="struct_h_a_l___addressable_l_e_d_data.html">HAL_AddressableLEDData</a>* data, <span class="keywordtype">int</span> length);</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_addressable_l_e_d_sim.html#a391935567d580c385819ceab0f558148">AddressableLEDSim</a>(<span class="keywordtype">int</span> index) : m_index{<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>} {}</div>
@@ -307,17 +307,16 @@ $(document).ready(function(){initNavTree('_addressable_l_e_d_sim_8h_source.html'
 <div class="ttc" id="acore_8h_html_a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86"><div class="ttname"><a href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">arg_id_kind::index</a></div><div class="ttdeci">@ index</div></div>
 <div class="ttc" id="anamespacefrc_1_1sim_html_a604608132ea82a136a9bc8a1c1c9db45"><div class="ttname"><a href="namespacefrc_1_1sim.html#a604608132ea82a136a9bc8a1c1c9db45">frc::sim::ConstBufferCallback</a></div><div class="ttdeci">std::function&lt; void(std::string_view, const unsigned char *buffer, unsigned int count)&gt; ConstBufferCallback</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:16</div></div>
 <div class="ttc" id="anamespacefrc_1_1sim_html_ae1c49733c190593b52d487461bac9083"><div class="ttname"><a href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">frc::sim::NotifyCallback</a></div><div class="ttdeci">std::function&lt; void(std::string_view, const HAL_Value *)&gt; NotifyCallback</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:14</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="anamespacehal_html_a2e846f89b7ea1bed682347804f2c9cc9ae21208902b69a2005c5aac085887b0b9"><div class="ttname"><a href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9ae21208902b69a2005c5aac085887b0b9">hal::HAL_HandleEnum::AddressableLED</a></div><div class="ttdeci">@ AddressableLED</div></div>
 <div class="ttc" id="astruct_h_a_l___addressable_l_e_d_data_html"><div class="ttname"><a href="struct_h_a_l___addressable_l_e_d_data.html">HAL_AddressableLEDData</a></div><div class="ttdef"><b>Definition:</b> AddressableLEDTypes.h:11</div></div>
-<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:897</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_addressable_l_e_d_sim_8h.html">AddressableLEDSim.h</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

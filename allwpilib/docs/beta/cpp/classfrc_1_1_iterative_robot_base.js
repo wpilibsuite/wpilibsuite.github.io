@@ -1,6 +1,5 @@
 var classfrc_1_1_iterative_robot_base =
 [
-    [ "IterativeRobotBase", "classfrc_1_1_iterative_robot_base.html#adaad67b57154bd85fef26a742d9c66b2", null ],
     [ "IterativeRobotBase", "classfrc_1_1_iterative_robot_base.html#afee5b7301bc0f4579d76f840a18f2cca", null ],
     [ "~IterativeRobotBase", "classfrc_1_1_iterative_robot_base.html#ad9881dc318ce4ff318d9ede0a57f60bd", null ],
     [ "IterativeRobotBase", "classfrc_1_1_iterative_robot_base.html#ad98a8afddf5b2718f23e61dde77fd160", null ],

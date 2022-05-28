@@ -4,7 +4,7 @@ var classfrc2_1_1_trigger =
     [ "Trigger", "classfrc2_1_1_trigger.html#a381e99fad0b62ac634ce50816f96ed7a", null ],
     [ "Trigger", "classfrc2_1_1_trigger.html#aac25ecb356633650dc86369223641f70", null ],
     [ "CancelWhenActive", "classfrc2_1_1_trigger.html#a4815e370d32b42e34f1bb42d33f4a81f", null ],
-    [ "Debounce", "classfrc2_1_1_trigger.html#ae50a85b2471b1bc5562a7bf77a73e5b8", null ],
+    [ "Debounce", "classfrc2_1_1_trigger.html#a8d6d3cda00f72b19187f94c0590ebc01", null ],
     [ "operator!", "classfrc2_1_1_trigger.html#a4c0e51e2f40a2c22b5f6e0599e195cfb", null ],
     [ "operator&&", "classfrc2_1_1_trigger.html#a70cfb7d97fdf3cda179ca89da276a240", null ],
     [ "operator||", "classfrc2_1_1_trigger.html#ab6858b5f46b35afcd0989c2c1fdc789b", null ],

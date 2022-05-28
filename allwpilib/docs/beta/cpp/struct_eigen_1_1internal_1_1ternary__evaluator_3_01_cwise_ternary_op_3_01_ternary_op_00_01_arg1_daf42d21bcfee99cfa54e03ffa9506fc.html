@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -119,28 +119,28 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abd12cbb7a85a4ed5f841e0cd86a729bd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bda799a5560061498fcfa79c8387d4116df">CoeffReadCost</a> = int(evaluator&lt;Arg1&gt;::CoeffReadCost) + int(evaluator&lt;Arg2&gt;::CoeffReadCost) + int(evaluator&lt;Arg3&gt;::CoeffReadCost) + int(functor_traits&lt;TernaryOp&gt;::Cost)
-, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bda11521f7cde1ffc92aaf8271fae6537b1">Arg1Flags</a> = evaluator&lt;Arg1&gt;::Flags
-, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bdaf395a4d4798f641c2612417bbf44a231">Arg2Flags</a> = evaluator&lt;Arg2&gt;::Flags
-, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bda9c9c84e8823a67df87f60cf526f706b2">Arg3Flags</a> = evaluator&lt;Arg3&gt;::Flags
+<tr class="memitem:aa8df3dda6712ea997877c382906a82cf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfa799a5560061498fcfa79c8387d4116df">CoeffReadCost</a> = int(evaluator&lt;Arg1&gt;::CoeffReadCost) + int(evaluator&lt;Arg2&gt;::CoeffReadCost) + int(evaluator&lt;Arg3&gt;::CoeffReadCost) + int(functor_traits&lt;TernaryOp&gt;::Cost)
+, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfa11521f7cde1ffc92aaf8271fae6537b1">Arg1Flags</a> = evaluator&lt;Arg1&gt;::Flags
+, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfaf395a4d4798f641c2612417bbf44a231">Arg2Flags</a> = evaluator&lt;Arg2&gt;::Flags
+, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfa9c9c84e8823a67df87f60cf526f706b2">Arg3Flags</a> = evaluator&lt;Arg3&gt;::Flags
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bda9b708db36ca3838ac42737e23fda1968">SameType</a> = is_same&lt;typename Arg1::Scalar,typename Arg2::Scalar&gt;::value &amp;&amp; is_same&lt;typename Arg1::Scalar,typename Arg3::Scalar&gt;::value
-, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bdab07603149913b8760ba4f73d126fdca9">StorageOrdersAgree</a> = (int(Arg1Flags)&amp;RowMajorBit)==(int(Arg2Flags)&amp;RowMajorBit) &amp;&amp; (int(Arg1Flags)&amp;RowMajorBit)==(int(Arg3Flags)&amp;RowMajorBit)
-, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bda37f48aaf7a62a940817d2b0b048b2a8c">Flags0</a>
-, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bda3ac6f59af34efd8f7a0f42bb95ea0e45">Flags</a> = (Flags0 &amp; ~RowMajorBit) | (Arg1Flags &amp; RowMajorBit)
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfa9b708db36ca3838ac42737e23fda1968">SameType</a> = is_same&lt;typename Arg1::Scalar,typename Arg2::Scalar&gt;::value &amp;&amp; is_same&lt;typename Arg1::Scalar,typename Arg3::Scalar&gt;::value
+, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfab07603149913b8760ba4f73d126fdca9">StorageOrdersAgree</a> = (int(Arg1Flags)&amp;RowMajorBit)==(int(Arg2Flags)&amp;RowMajorBit) &amp;&amp; (int(Arg1Flags)&amp;RowMajorBit)==(int(Arg3Flags)&amp;RowMajorBit)
+, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfa37f48aaf7a62a940817d2b0b048b2a8c">Flags0</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfa3ac6f59af34efd8f7a0f42bb95ea0e45">Flags</a> = (Flags0 &amp; ~RowMajorBit) | (Arg1Flags &amp; RowMajorBit)
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#abd12cbb7a85a4ed5f841e0cd86a729bda998bc0bcbf0b6834da7c68ab782d32c7">Alignment</a>
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#aa8df3dda6712ea997877c382906a82cfa998bc0bcbf0b6834da7c68ab782d32c7">Alignment</a>
 <br />
  }</td></tr>
-<tr class="separator:abd12cbb7a85a4ed5f841e0cd86a729bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa8df3dda6712ea997877c382906a82cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caf670eb51af4cb632e03e3b7a910f9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_cwise_ternary_op.html">CwiseTernaryOp</a>&lt; TernaryOp, Arg1, Arg2, Arg3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#a0caf670eb51af4cb632e03e3b7a910f9">XprType</a></td></tr>
 <tr class="separator:a0caf670eb51af4cb632e03e3b7a910f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73724cae680d9ce3cdbe1dd4427274e6"><td class="memItemLeft" align="right" valign="top">typedef XprType::CoeffReturnType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#a73724cae680d9ce3cdbe1dd4427274e6">CoeffReturnType</a></td></tr>
 <tr class="separator:a73724cae680d9ce3cdbe1dd4427274e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_eigen_1_1internal_1_1evaluator__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html">Eigen::internal::evaluator_base&lt; CwiseTernaryOp&lt; TernaryOp, Arg1, Arg2, Arg3 &gt; &gt;</a></td></tr>
-<tr class="memitem:a07219bc194a7fb4ca46cd13c3ee77ae2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a07219bc194a7fb4ca46cd13c3ee77ae2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affee6870ef456715be89f28a07f5d2e2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:affee6870ef456715be89f28a07f5d2e2 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; <a class="el" href="class_eigen_1_1_cwise_ternary_op.html">CwiseTernaryOp</a>&lt; TernaryOp, Arg1, Arg2, Arg3 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html#acb94884a759bb59a96c8c3eea1e50c10">ExpressionTraits</a></td></tr>
 <tr class="separator:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -203,8 +203,8 @@ template&lt;typename TernaryOp , typename Arg1 , typename Arg2 , typename Arg3 &
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="abd12cbb7a85a4ed5f841e0cd86a729bd" name="abd12cbb7a85a4ed5f841e0cd86a729bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd12cbb7a85a4ed5f841e0cd86a729bd">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aa8df3dda6712ea997877c382906a82cf" name="aa8df3dda6712ea997877c382906a82cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8df3dda6712ea997877c382906a82cf">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,15 +217,15 @@ template&lt;typename TernaryOp , typename Arg1 , typename Arg2 , typename Arg3 &
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bda799a5560061498fcfa79c8387d4116df" name="abd12cbb7a85a4ed5f841e0cd86a729bda799a5560061498fcfa79c8387d4116df"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bda11521f7cde1ffc92aaf8271fae6537b1" name="abd12cbb7a85a4ed5f841e0cd86a729bda11521f7cde1ffc92aaf8271fae6537b1"></a>Arg1Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bdaf395a4d4798f641c2612417bbf44a231" name="abd12cbb7a85a4ed5f841e0cd86a729bdaf395a4d4798f641c2612417bbf44a231"></a>Arg2Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bda9c9c84e8823a67df87f60cf526f706b2" name="abd12cbb7a85a4ed5f841e0cd86a729bda9c9c84e8823a67df87f60cf526f706b2"></a>Arg3Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bda9b708db36ca3838ac42737e23fda1968" name="abd12cbb7a85a4ed5f841e0cd86a729bda9b708db36ca3838ac42737e23fda1968"></a>SameType&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bdab07603149913b8760ba4f73d126fdca9" name="abd12cbb7a85a4ed5f841e0cd86a729bdab07603149913b8760ba4f73d126fdca9"></a>StorageOrdersAgree&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bda37f48aaf7a62a940817d2b0b048b2a8c" name="abd12cbb7a85a4ed5f841e0cd86a729bda37f48aaf7a62a940817d2b0b048b2a8c"></a>Flags0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bda3ac6f59af34efd8f7a0f42bb95ea0e45" name="abd12cbb7a85a4ed5f841e0cd86a729bda3ac6f59af34efd8f7a0f42bb95ea0e45"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd12cbb7a85a4ed5f841e0cd86a729bda998bc0bcbf0b6834da7c68ab782d32c7" name="abd12cbb7a85a4ed5f841e0cd86a729bda998bc0bcbf0b6834da7c68ab782d32c7"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfa799a5560061498fcfa79c8387d4116df" name="aa8df3dda6712ea997877c382906a82cfa799a5560061498fcfa79c8387d4116df"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfa11521f7cde1ffc92aaf8271fae6537b1" name="aa8df3dda6712ea997877c382906a82cfa11521f7cde1ffc92aaf8271fae6537b1"></a>Arg1Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfaf395a4d4798f641c2612417bbf44a231" name="aa8df3dda6712ea997877c382906a82cfaf395a4d4798f641c2612417bbf44a231"></a>Arg2Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfa9c9c84e8823a67df87f60cf526f706b2" name="aa8df3dda6712ea997877c382906a82cfa9c9c84e8823a67df87f60cf526f706b2"></a>Arg3Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfa9b708db36ca3838ac42737e23fda1968" name="aa8df3dda6712ea997877c382906a82cfa9b708db36ca3838ac42737e23fda1968"></a>SameType&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfab07603149913b8760ba4f73d126fdca9" name="aa8df3dda6712ea997877c382906a82cfab07603149913b8760ba4f73d126fdca9"></a>StorageOrdersAgree&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfa37f48aaf7a62a940817d2b0b048b2a8c" name="aa8df3dda6712ea997877c382906a82cfa37f48aaf7a62a940817d2b0b048b2a8c"></a>Flags0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfa3ac6f59af34efd8f7a0f42bb95ea0e45" name="aa8df3dda6712ea997877c382906a82cfa3ac6f59af34efd8f7a0f42bb95ea0e45"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa8df3dda6712ea997877c382906a82cfa998bc0bcbf0b6834da7c68ab782d32c7" name="aa8df3dda6712ea997877c382906a82cfa998bc0bcbf0b6834da7c68ab782d32c7"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -430,7 +430,7 @@ template&lt;typename TernaryOp , typename Arg1 , typename Arg2 , typename Arg3 &
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html">ternary_evaluator&lt; CwiseTernaryOp&lt; TernaryOp, Arg1, Arg2, Arg3 &gt;, IndexBased, IndexBased &gt;</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

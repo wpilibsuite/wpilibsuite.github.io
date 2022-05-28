@@ -3,6 +3,12 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "AddressableLEDSim.h", "_addressable_l_e_d_sim_8h.html", [
       [ "frc::sim::AddressableLEDSim", "classfrc_1_1sim_1_1_addressable_l_e_d_sim.html", "classfrc_1_1sim_1_1_addressable_l_e_d_sim" ]
     ] ],
+    [ "ADIS16448_IMUSim.h", "_a_d_i_s16448___i_m_u_sim_8h.html", [
+      [ "frc::sim::ADIS16448_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim" ]
+    ] ],
+    [ "ADIS16470_IMUSim.h", "_a_d_i_s16470___i_m_u_sim_8h.html", [
+      [ "frc::sim::ADIS16470_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16470___i_m_u_sim.html", "classfrc_1_1sim_1_1_a_d_i_s16470___i_m_u_sim" ]
+    ] ],
     [ "ADXL345Sim.h", "_a_d_x_l345_sim_8h.html", [
       [ "frc::sim::ADXL345Sim", "classfrc_1_1sim_1_1_a_d_x_l345_sim.html", "classfrc_1_1sim_1_1_a_d_x_l345_sim" ]
     ] ],
@@ -37,6 +43,9 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "CTREPCMSim.h", "_c_t_r_e_p_c_m_sim_8h.html", [
       [ "frc::sim::CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim" ]
     ] ],
+    [ "DCMotorSim.h", "_d_c_motor_sim_8h.html", [
+      [ "frc::sim::DCMotorSim", "classfrc_1_1sim_1_1_d_c_motor_sim.html", "classfrc_1_1sim_1_1_d_c_motor_sim" ]
+    ] ],
     [ "DifferentialDrivetrainSim.h", "_differential_drivetrain_sim_8h.html", [
       [ "frc::sim::DifferentialDrivetrainSim", "classfrc_1_1sim_1_1_differential_drivetrain_sim.html", "classfrc_1_1sim_1_1_differential_drivetrain_sim" ],
       [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_state.html", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_state" ],
@@ -49,6 +58,9 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     ] ],
     [ "DIOSim.h", "_d_i_o_sim_8h.html", [
       [ "frc::sim::DIOSim", "classfrc_1_1sim_1_1_d_i_o_sim.html", "classfrc_1_1sim_1_1_d_i_o_sim" ]
+    ] ],
+    [ "DoubleSolenoidSim.h", "_double_solenoid_sim_8h.html", [
+      [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1_double_solenoid_sim.html", "classfrc_1_1sim_1_1_double_solenoid_sim" ]
     ] ],
     [ "DriverStationSim.h", "_driver_station_sim_8h.html", [
       [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1_driver_station_sim.html", "classfrc_1_1sim_1_1_driver_station_sim" ]
@@ -77,6 +89,9 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "LinearSystemSim.h", "_linear_system_sim_8h.html", [
       [ "frc::sim::LinearSystemSim< States, Inputs, Outputs >", "classfrc_1_1sim_1_1_linear_system_sim.html", "classfrc_1_1sim_1_1_linear_system_sim" ]
     ] ],
+    [ "PneumaticsBaseSim.h", "_pneumatics_base_sim_8h.html", [
+      [ "frc::sim::PneumaticsBaseSim", "classfrc_1_1sim_1_1_pneumatics_base_sim.html", "classfrc_1_1sim_1_1_pneumatics_base_sim" ]
+    ] ],
     [ "PowerDistributionSim.h", "_power_distribution_sim_8h.html", [
       [ "frc::sim::PowerDistributionSim", "classfrc_1_1sim_1_1_power_distribution_sim.html", "classfrc_1_1sim_1_1_power_distribution_sim" ]
     ] ],
@@ -101,6 +116,9 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "SimHooks.h", "_sim_hooks_8h.html", "_sim_hooks_8h" ],
     [ "SingleJointedArmSim.h", "_single_jointed_arm_sim_8h.html", [
       [ "frc::sim::SingleJointedArmSim", "classfrc_1_1sim_1_1_single_jointed_arm_sim.html", "classfrc_1_1sim_1_1_single_jointed_arm_sim" ]
+    ] ],
+    [ "SolenoidSim.h", "_solenoid_sim_8h.html", [
+      [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1_solenoid_sim.html", "classfrc_1_1sim_1_1_solenoid_sim" ]
     ] ],
     [ "SPIAccelerometerSim.h", "_s_p_i_accelerometer_sim_8h.html", [
       [ "frc::sim::SPIAccelerometerSim", "classfrc_1_1sim_1_1_s_p_i_accelerometer_sim.html", "classfrc_1_1sim_1_1_s_p_i_accelerometer_sim" ]

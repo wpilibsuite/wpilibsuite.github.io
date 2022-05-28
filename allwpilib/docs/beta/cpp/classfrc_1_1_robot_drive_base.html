@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ Inheritance diagram for frc::RobotDriveBase:</div>
  <div class="center">
   <img src="classfrc_1_1_robot_drive_base.png" usemap="#frc::RobotDriveBase_map" alt=""/>
   <map id="frc::RobotDriveBase_map" name="frc::RobotDriveBase_map">
-<area href="classfrc_1_1_motor_safety.html" title="This base class runs a watchdog timer and calls the subclass&#39;s StopMotor() function if the timeout ex..." alt="frc::MotorSafety" shape="rect" coords="137,0,264,24"/>
+<area href="classfrc_1_1_motor_safety.html" title="The Motor Safety feature acts as a watchdog timer for an individual motor." alt="frc::MotorSafety" shape="rect" coords="137,0,264,24"/>
 <area href="classfrc_1_1_differential_drive.html" title="A class for driving differential drive/skid-steer drive platforms such as the Kit of Parts drive base..." alt="frc::DifferentialDrive" shape="rect" coords="0,112,127,136"/>
 <area href="classfrc_1_1_killough_drive.html" title="A class for driving Killough drive platforms." alt="frc::KilloughDrive" shape="rect" coords="137,112,264,136"/>
 <area href="classfrc_1_1_mecanum_drive.html" title="A class for driving Mecanum drive platforms." alt="frc::MecanumDrive" shape="rect" coords="274,112,401,136"/>
@@ -156,6 +156,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a463d317b667cef70681fb58ab5a27662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_robot_drive_base.html#a463d317b667cef70681fb58ab5a27662">StopMotor</a> () override=0</td></tr>
 <tr class="separator:a463d317b667cef70681fb58ab5a27662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b8e78f04144ecdd389e9aeeea111bff"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_robot_drive_base.html#a5b8e78f04144ecdd389e9aeeea111bff">GetDescription</a> () const override=0</td></tr>
+<tr class="memdesc:a5b8e78f04144ecdd389e9aeeea111bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The return value from this method is printed out when an error occurs.  <a href="classfrc_1_1_robot_drive_base.html#a5b8e78f04144ecdd389e9aeeea111bff">More...</a><br /></td></tr>
 <tr class="separator:a5b8e78f04144ecdd389e9aeeea111bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1_motor_safety"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1_motor_safety')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></td></tr>
 <tr class="memitem:a6f4cd35e3bc3caa8fe3120e00b3d3cbd inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#a6f4cd35e3bc3caa8fe3120e00b3d3cbd">MotorSafety</a> ()</td></tr>
@@ -190,12 +191,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:ad34521ec9f278ec4625c0c0e313fafa1"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_robot_drive_base.html#ad34521ec9f278ec4625c0c0e313fafa1">ApplyDeadband</a> (double <a class="el" href="classvalue.html">value</a>, double deadband)</td></tr>
-<tr class="memdesc:ad34521ec9f278ec4625c0c0e313fafa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0.0 if the given value is within the specified range around zero.  <a href="classfrc_1_1_robot_drive_base.html#ad34521ec9f278ec4625c0c0e313fafa1">More...</a><br /></td></tr>
-<tr class="separator:ad34521ec9f278ec4625c0c0e313fafa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa50f4e60de47a159179570acf64cb68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_robot_drive_base.html#aaa50f4e60de47a159179570acf64cb68">Normalize</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; double &gt; wheelSpeeds)</td></tr>
-<tr class="memdesc:aaa50f4e60de47a159179570acf64cb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize all wheel speeds if the magnitude of any wheel is greater than 1.0.  <a href="classfrc_1_1_robot_drive_base.html#aaa50f4e60de47a159179570acf64cb68">More...</a><br /></td></tr>
-<tr class="separator:aaa50f4e60de47a159179570acf64cb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e9b63abbb395f8a0bac5c14129e6d6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_robot_drive_base.html#a87e9b63abbb395f8a0bac5c14129e6d6">Desaturate</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; double &gt; wheelSpeeds)</td></tr>
+<tr class="memdesc:a87e9b63abbb395f8a0bac5c14129e6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renormalize all wheel speeds if the magnitude of any wheel is greater than 1.0.  <a href="classfrc_1_1_robot_drive_base.html#a87e9b63abbb395f8a0bac5c14129e6d6">More...</a><br /></td></tr>
+<tr class="separator:a87e9b63abbb395f8a0bac5c14129e6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -213,6 +211,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Common base class for drive platforms. </p>
+<p ><a class="el" href="classfrc_1_1_motor_safety.html" title="The Motor Safety feature acts as a watchdog timer for an individual motor.">MotorSafety</a> is enabled by default. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a91bbe6376ee340272ae36ea20b608754" name="a91bbe6376ee340272ae36ea20b608754"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91bbe6376ee340272ae36ea20b608754">&#9670;&nbsp;</a></span>MotorType</h2>
@@ -309,8 +308,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad34521ec9f278ec4625c0c0e313fafa1" name="ad34521ec9f278ec4625c0c0e313fafa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad34521ec9f278ec4625c0c0e313fafa1">&#9670;&nbsp;</a></span>ApplyDeadband()</h2>
+<a id="a87e9b63abbb395f8a0bac5c14129e6d6" name="a87e9b63abbb395f8a0bac5c14129e6d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e9b63abbb395f8a0bac5c14129e6d6">&#9670;&nbsp;</a></span>Desaturate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,21 +318,11 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static double frc::RobotDriveBase::ApplyDeadband </td>
+          <td class="memname">static void frc::RobotDriveBase::Desaturate </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>wheelSpeeds</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>deadband</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -343,16 +332,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns 0.0 if the given value is within the specified range around zero. </p>
-<p >The remaining range between the deadband and 1.0 is scaled from 0.0 to 1.0.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>value to clip </td></tr>
-    <tr><td class="paramname">deadband</td><td>range around zero </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000055">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_robot_drive_base.html#ad34521ec9f278ec4625c0c0e313fafa1" title="Returns 0.0 if the given value is within the specified range around zero.">ApplyDeadband()</a> in <a class="el" href="_math_util_8h.html">frc/MathUtil.h</a>. </dd></dl>
+<p>Renormalize all wheel speeds if the magnitude of any wheel is greater than 1.0. </p>
 
 </div>
 </div>
@@ -400,37 +380,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The return value from this method is printed out when an error occurs. </p>
+<p >This method must not throw! </p>
+
 <p>Implements <a class="el" href="classfrc_1_1_motor_safety.html#a601228c7ebc676162bdecedeba071c58">frc::MotorSafety</a>.</p>
 
 <p>Implemented in <a class="el" href="classfrc_1_1_differential_drive.html#a29a245a2ca23ddce38e6f9876ba5b0c8">frc::DifferentialDrive</a>, <a class="el" href="classfrc_1_1_killough_drive.html#a065cd8af0902e3c5ba451b706195b877">frc::KilloughDrive</a>, and <a class="el" href="classfrc_1_1_mecanum_drive.html#ac49f911dea1276792bb84f6ba4f4b0fd">frc::MecanumDrive</a>.</p>
-
-</div>
-</div>
-<a id="aaa50f4e60de47a159179570acf64cb68" name="aaa50f4e60de47a159179570acf64cb68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa50f4e60de47a159179570acf64cb68">&#9670;&nbsp;</a></span>Normalize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void frc::RobotDriveBase::Normalize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; double &gt;&#160;</td>
-          <td class="paramname"><em>wheelSpeeds</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Normalize all wheel speeds if the magnitude of any wheel is greater than 1.0. </p>
 
 </div>
 </div>
@@ -477,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the deadband applied to the drive inputs (e.g., joystick values). </p>
-<p >The default value is 0.02. Inputs smaller than the deadband are set to 0.0 while inputs larger than the deadband are scaled from 0.0 to 1.0. See <a class="el" href="namespacefrc.html#a820b4b4c024492a66ad53eb17952d2b5" title="Returns 0.0 if the given value is within the specified range around zero.">frc::ApplyDeadband()</a>.</p>
+<p >The default value is 0.02. Inputs smaller than the deadband are set to 0.0 while inputs larger than the deadband are scaled from 0.0 to 1.0. See <a class="el" href="namespacefrc.html#a9a55e5d7e329c0937444a309366aa386" title="Returns 0.0 if the given value is within the specified range around zero.">frc::ApplyDeadband()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deadband</td><td>The deadband to set. </td></tr>
@@ -596,7 +551,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_robot_drive_base.html">RobotDriveBase</a></li>
-    <li class="footer">Generated on Mon Dec 20 2021 04:37:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat May 28 2022 18:27:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
