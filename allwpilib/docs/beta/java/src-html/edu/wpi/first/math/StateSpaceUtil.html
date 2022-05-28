@@ -73,145 +73,150 @@
 <span class="sourceLineNo">061</span><a id="line.61">  /**</a>
 <span class="sourceLineNo">062</span><a id="line.62">   * Creates a cost matrix from the given vector for use with LQR.</a>
 <span class="sourceLineNo">063</span><a id="line.63">   *</a>
-<span class="sourceLineNo">064</span><a id="line.64">   * &lt;p&gt;The cost matrix is constructed using Bryson's rule. The inverse square of each element in</a>
-<span class="sourceLineNo">065</span><a id="line.65">   * the input is taken and placed on the cost matrix diagonal.</a>
-<span class="sourceLineNo">066</span><a id="line.66">   *</a>
-<span class="sourceLineNo">067</span><a id="line.67">   * @param &lt;States&gt; Nat representing the states of the system.</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * @param costs An array. For a Q matrix, its elements are the maximum allowed excursions of the</a>
-<span class="sourceLineNo">069</span><a id="line.69">   *     states from the reference. For an R matrix, its elements are the maximum allowed excursions</a>
-<span class="sourceLineNo">070</span><a id="line.70">   *     of the control inputs from no actuation.</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * @return State excursion or control effort cost matrix.</a>
-<span class="sourceLineNo">072</span><a id="line.72">   */</a>
-<span class="sourceLineNo">073</span><a id="line.73">  @SuppressWarnings("MethodTypeParameterName")</a>
-<span class="sourceLineNo">074</span><a id="line.74">  public static &lt;States extends Num&gt; Matrix&lt;States, States&gt; makeCostMatrix(</a>
-<span class="sourceLineNo">075</span><a id="line.75">      Matrix&lt;States, N1&gt; costs) {</a>
-<span class="sourceLineNo">076</span><a id="line.76">    Matrix&lt;States, States&gt; result =</a>
-<span class="sourceLineNo">077</span><a id="line.77">        new Matrix&lt;&gt;(new SimpleMatrix(costs.getNumRows(), costs.getNumRows()));</a>
-<span class="sourceLineNo">078</span><a id="line.78">    result.fill(0.0);</a>
-<span class="sourceLineNo">079</span><a id="line.79"></a>
-<span class="sourceLineNo">080</span><a id="line.80">    for (int i = 0; i &lt; costs.getNumRows(); i++) {</a>
-<span class="sourceLineNo">081</span><a id="line.81">      result.set(i, i, 1.0 / (Math.pow(costs.get(i, 0), 2)));</a>
-<span class="sourceLineNo">082</span><a id="line.82">    }</a>
-<span class="sourceLineNo">083</span><a id="line.83"></a>
-<span class="sourceLineNo">084</span><a id="line.84">    return result;</a>
-<span class="sourceLineNo">085</span><a id="line.85">  }</a>
-<span class="sourceLineNo">086</span><a id="line.86"></a>
-<span class="sourceLineNo">087</span><a id="line.87">  /**</a>
-<span class="sourceLineNo">088</span><a id="line.88">   * Returns true if (A, B) is a stabilizable pair.</a>
-<span class="sourceLineNo">089</span><a id="line.89">   *</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * &lt;p&gt;(A, B) is stabilizable if and only if the uncontrollable eigenvalues of A, if any, have</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * absolute values less than one, where an eigenvalue is uncontrollable if rank(λI - A, B) %3C n</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * where n is the number of states.</a>
-<span class="sourceLineNo">093</span><a id="line.93">   *</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * @param &lt;States&gt; Num representing the size of A.</a>
-<span class="sourceLineNo">095</span><a id="line.95">   * @param &lt;Inputs&gt; Num representing the columns of B.</a>
-<span class="sourceLineNo">096</span><a id="line.96">   * @param A System matrix.</a>
-<span class="sourceLineNo">097</span><a id="line.97">   * @param B Input matrix.</a>
-<span class="sourceLineNo">098</span><a id="line.98">   * @return If the system is stabilizable.</a>
-<span class="sourceLineNo">099</span><a id="line.99">   */</a>
-<span class="sourceLineNo">100</span><a id="line.100">  @SuppressWarnings("MethodTypeParameterName")</a>
-<span class="sourceLineNo">101</span><a id="line.101">  public static &lt;States extends Num, Inputs extends Num&gt; boolean isStabilizable(</a>
-<span class="sourceLineNo">102</span><a id="line.102">      Matrix&lt;States, States&gt; A, Matrix&lt;States, Inputs&gt; B) {</a>
-<span class="sourceLineNo">103</span><a id="line.103">    return WPIMathJNI.isStabilizable(A.getNumRows(), B.getNumCols(), A.getData(), B.getData());</a>
-<span class="sourceLineNo">104</span><a id="line.104">  }</a>
-<span class="sourceLineNo">105</span><a id="line.105"></a>
-<span class="sourceLineNo">106</span><a id="line.106">  /**</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * Returns true if (A, C) is a detectable pair.</a>
-<span class="sourceLineNo">108</span><a id="line.108">   *</a>
-<span class="sourceLineNo">109</span><a id="line.109">   * &lt;p&gt;(A, C) is detectable if and only if the unobservable eigenvalues of A, if any, have absolute</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * values less than one, where an eigenvalue is unobservable if rank(λI - A; C) %3C n where n is</a>
-<span class="sourceLineNo">111</span><a id="line.111">   * the number of states.</a>
-<span class="sourceLineNo">112</span><a id="line.112">   *</a>
-<span class="sourceLineNo">113</span><a id="line.113">   * @param &lt;States&gt; Num representing the size of A.</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * @param &lt;Outputs&gt; Num representing the rows of C.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   * @param A System matrix.</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * @param C Output matrix.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   * @return If the system is detectable.</a>
-<span class="sourceLineNo">118</span><a id="line.118">   */</a>
-<span class="sourceLineNo">119</span><a id="line.119">  @SuppressWarnings("MethodTypeParameterName")</a>
-<span class="sourceLineNo">120</span><a id="line.120">  public static &lt;States extends Num, Outputs extends Num&gt; boolean isDetectable(</a>
-<span class="sourceLineNo">121</span><a id="line.121">      Matrix&lt;States, States&gt; A, Matrix&lt;Outputs, States&gt; C) {</a>
-<span class="sourceLineNo">122</span><a id="line.122">    return WPIMathJNI.isStabilizable(</a>
-<span class="sourceLineNo">123</span><a id="line.123">        A.getNumRows(), C.getNumRows(), A.transpose().getData(), C.transpose().getData());</a>
-<span class="sourceLineNo">124</span><a id="line.124">  }</a>
-<span class="sourceLineNo">125</span><a id="line.125"></a>
-<span class="sourceLineNo">126</span><a id="line.126">  /**</a>
-<span class="sourceLineNo">127</span><a id="line.127">   * Convert a {@link Pose2d} to a vector of [x, y, theta], where theta is in radians.</a>
-<span class="sourceLineNo">128</span><a id="line.128">   *</a>
-<span class="sourceLineNo">129</span><a id="line.129">   * @param pose A pose to convert to a vector.</a>
-<span class="sourceLineNo">130</span><a id="line.130">   * @return The given pose in vector form, with the third element, theta, in radians.</a>
-<span class="sourceLineNo">131</span><a id="line.131">   */</a>
-<span class="sourceLineNo">132</span><a id="line.132">  public static Matrix&lt;N3, N1&gt; poseToVector(Pose2d pose) {</a>
-<span class="sourceLineNo">133</span><a id="line.133">    return VecBuilder.fill(pose.getX(), pose.getY(), pose.getRotation().getRadians());</a>
-<span class="sourceLineNo">134</span><a id="line.134">  }</a>
-<span class="sourceLineNo">135</span><a id="line.135"></a>
-<span class="sourceLineNo">136</span><a id="line.136">  /**</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * Clamp the input u to the min and max.</a>
-<span class="sourceLineNo">138</span><a id="line.138">   *</a>
-<span class="sourceLineNo">139</span><a id="line.139">   * @param u The input to clamp.</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * @param umin The minimum input magnitude.</a>
-<span class="sourceLineNo">141</span><a id="line.141">   * @param umax The maximum input magnitude.</a>
-<span class="sourceLineNo">142</span><a id="line.142">   * @param &lt;I&gt; The number of inputs.</a>
-<span class="sourceLineNo">143</span><a id="line.143">   * @return The clamped input.</a>
-<span class="sourceLineNo">144</span><a id="line.144">   */</a>
-<span class="sourceLineNo">145</span><a id="line.145">  @SuppressWarnings({"ParameterName", "LocalVariableName"})</a>
-<span class="sourceLineNo">146</span><a id="line.146">  public static &lt;I extends Num&gt; Matrix&lt;I, N1&gt; clampInputMaxMagnitude(</a>
-<span class="sourceLineNo">147</span><a id="line.147">      Matrix&lt;I, N1&gt; u, Matrix&lt;I, N1&gt; umin, Matrix&lt;I, N1&gt; umax) {</a>
-<span class="sourceLineNo">148</span><a id="line.148">    var result = new Matrix&lt;I, N1&gt;(new SimpleMatrix(u.getNumRows(), 1));</a>
-<span class="sourceLineNo">149</span><a id="line.149">    for (int i = 0; i &lt; u.getNumRows(); i++) {</a>
-<span class="sourceLineNo">150</span><a id="line.150">      result.set(i, 0, MathUtil.clamp(u.get(i, 0), umin.get(i, 0), umax.get(i, 0)));</a>
-<span class="sourceLineNo">151</span><a id="line.151">    }</a>
-<span class="sourceLineNo">152</span><a id="line.152">    return result;</a>
-<span class="sourceLineNo">153</span><a id="line.153">  }</a>
-<span class="sourceLineNo">154</span><a id="line.154"></a>
-<span class="sourceLineNo">155</span><a id="line.155">  /**</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * Normalize all inputs if any excedes the maximum magnitude. Useful for systems such as</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * differential drivetrains.</a>
-<span class="sourceLineNo">158</span><a id="line.158">   *</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * @param u The input vector.</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * @param maxMagnitude The maximum magnitude any input can have.</a>
-<span class="sourceLineNo">161</span><a id="line.161">   * @param &lt;I&gt; The number of inputs.</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @return The normalizedInput</a>
-<span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  public static &lt;I extends Num&gt; Matrix&lt;I, N1&gt; normalizeInputVector(</a>
-<span class="sourceLineNo">165</span><a id="line.165">      Matrix&lt;I, N1&gt; u, double maxMagnitude) {</a>
-<span class="sourceLineNo">166</span><a id="line.166">    double maxValue = u.maxAbs();</a>
-<span class="sourceLineNo">167</span><a id="line.167">    boolean isCapped = maxValue &gt; maxMagnitude;</a>
-<span class="sourceLineNo">168</span><a id="line.168"></a>
-<span class="sourceLineNo">169</span><a id="line.169">    if (isCapped) {</a>
-<span class="sourceLineNo">170</span><a id="line.170">      return u.times(maxMagnitude / maxValue);</a>
-<span class="sourceLineNo">171</span><a id="line.171">    }</a>
-<span class="sourceLineNo">172</span><a id="line.172">    return u;</a>
-<span class="sourceLineNo">173</span><a id="line.173">  }</a>
-<span class="sourceLineNo">174</span><a id="line.174"></a>
-<span class="sourceLineNo">175</span><a id="line.175">  /**</a>
-<span class="sourceLineNo">176</span><a id="line.176">   * Convert a {@link Pose2d} to a vector of [x, y, cos(theta), sin(theta)], where theta is in</a>
-<span class="sourceLineNo">177</span><a id="line.177">   * radians.</a>
-<span class="sourceLineNo">178</span><a id="line.178">   *</a>
-<span class="sourceLineNo">179</span><a id="line.179">   * @param pose A pose to convert to a vector.</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * @return The given pose in as a 4x1 vector of x, y, cos(theta), and sin(theta).</a>
-<span class="sourceLineNo">181</span><a id="line.181">   */</a>
-<span class="sourceLineNo">182</span><a id="line.182">  public static Matrix&lt;N4, N1&gt; poseTo4dVector(Pose2d pose) {</a>
-<span class="sourceLineNo">183</span><a id="line.183">    return VecBuilder.fill(</a>
-<span class="sourceLineNo">184</span><a id="line.184">        pose.getTranslation().getX(),</a>
-<span class="sourceLineNo">185</span><a id="line.185">        pose.getTranslation().getY(),</a>
-<span class="sourceLineNo">186</span><a id="line.186">        pose.getRotation().getCos(),</a>
-<span class="sourceLineNo">187</span><a id="line.187">        pose.getRotation().getSin());</a>
-<span class="sourceLineNo">188</span><a id="line.188">  }</a>
-<span class="sourceLineNo">189</span><a id="line.189"></a>
-<span class="sourceLineNo">190</span><a id="line.190">  /**</a>
-<span class="sourceLineNo">191</span><a id="line.191">   * Convert a {@link Pose2d} to a vector of [x, y, theta], where theta is in radians.</a>
-<span class="sourceLineNo">192</span><a id="line.192">   *</a>
-<span class="sourceLineNo">193</span><a id="line.193">   * @param pose A pose to convert to a vector.</a>
-<span class="sourceLineNo">194</span><a id="line.194">   * @return The given pose in vector form, with the third element, theta, in radians.</a>
-<span class="sourceLineNo">195</span><a id="line.195">   */</a>
-<span class="sourceLineNo">196</span><a id="line.196">  public static Matrix&lt;N3, N1&gt; poseTo3dVector(Pose2d pose) {</a>
-<span class="sourceLineNo">197</span><a id="line.197">    return VecBuilder.fill(</a>
-<span class="sourceLineNo">198</span><a id="line.198">        pose.getTranslation().getX(),</a>
-<span class="sourceLineNo">199</span><a id="line.199">        pose.getTranslation().getY(),</a>
-<span class="sourceLineNo">200</span><a id="line.200">        pose.getRotation().getRadians());</a>
-<span class="sourceLineNo">201</span><a id="line.201">  }</a>
-<span class="sourceLineNo">202</span><a id="line.202">}</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * &lt;p&gt;The cost matrix is constructed using Bryson's rule. The inverse square of each tolerance is</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * placed on the cost matrix diagonal. If a tolerance is infinity, its cost matrix entry is set to</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * zero.</a>
+<span class="sourceLineNo">067</span><a id="line.67">   *</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * @param &lt;Elements&gt; Nat representing the number of system states or inputs.</a>
+<span class="sourceLineNo">069</span><a id="line.69">   * @param tolerances An array. For a Q matrix, its elements are the maximum allowed excursions of</a>
+<span class="sourceLineNo">070</span><a id="line.70">   *     the states from the reference. For an R matrix, its elements are the maximum allowed</a>
+<span class="sourceLineNo">071</span><a id="line.71">   *     excursions of the control inputs from no actuation.</a>
+<span class="sourceLineNo">072</span><a id="line.72">   * @return State excursion or control effort cost matrix.</a>
+<span class="sourceLineNo">073</span><a id="line.73">   */</a>
+<span class="sourceLineNo">074</span><a id="line.74">  @SuppressWarnings("MethodTypeParameterName")</a>
+<span class="sourceLineNo">075</span><a id="line.75">  public static &lt;Elements extends Num&gt; Matrix&lt;Elements, Elements&gt; makeCostMatrix(</a>
+<span class="sourceLineNo">076</span><a id="line.76">      Matrix&lt;Elements, N1&gt; tolerances) {</a>
+<span class="sourceLineNo">077</span><a id="line.77">    Matrix&lt;Elements, Elements&gt; result =</a>
+<span class="sourceLineNo">078</span><a id="line.78">        new Matrix&lt;&gt;(new SimpleMatrix(tolerances.getNumRows(), tolerances.getNumRows()));</a>
+<span class="sourceLineNo">079</span><a id="line.79">    result.fill(0.0);</a>
+<span class="sourceLineNo">080</span><a id="line.80"></a>
+<span class="sourceLineNo">081</span><a id="line.81">    for (int i = 0; i &lt; tolerances.getNumRows(); i++) {</a>
+<span class="sourceLineNo">082</span><a id="line.82">      if (tolerances.get(i, 0) == Double.POSITIVE_INFINITY) {</a>
+<span class="sourceLineNo">083</span><a id="line.83">        result.set(i, i, 0.0);</a>
+<span class="sourceLineNo">084</span><a id="line.84">      } else {</a>
+<span class="sourceLineNo">085</span><a id="line.85">        result.set(i, i, 1.0 / (Math.pow(tolerances.get(i, 0), 2)));</a>
+<span class="sourceLineNo">086</span><a id="line.86">      }</a>
+<span class="sourceLineNo">087</span><a id="line.87">    }</a>
+<span class="sourceLineNo">088</span><a id="line.88"></a>
+<span class="sourceLineNo">089</span><a id="line.89">    return result;</a>
+<span class="sourceLineNo">090</span><a id="line.90">  }</a>
+<span class="sourceLineNo">091</span><a id="line.91"></a>
+<span class="sourceLineNo">092</span><a id="line.92">  /**</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * Returns true if (A, B) is a stabilizable pair.</a>
+<span class="sourceLineNo">094</span><a id="line.94">   *</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * &lt;p&gt;(A, B) is stabilizable if and only if the uncontrollable eigenvalues of A, if any, have</a>
+<span class="sourceLineNo">096</span><a id="line.96">   * absolute values less than one, where an eigenvalue is uncontrollable if rank(λI - A, B) %3C n</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * where n is the number of states.</a>
+<span class="sourceLineNo">098</span><a id="line.98">   *</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * @param &lt;States&gt; Num representing the size of A.</a>
+<span class="sourceLineNo">100</span><a id="line.100">   * @param &lt;Inputs&gt; Num representing the columns of B.</a>
+<span class="sourceLineNo">101</span><a id="line.101">   * @param A System matrix.</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * @param B Input matrix.</a>
+<span class="sourceLineNo">103</span><a id="line.103">   * @return If the system is stabilizable.</a>
+<span class="sourceLineNo">104</span><a id="line.104">   */</a>
+<span class="sourceLineNo">105</span><a id="line.105">  @SuppressWarnings("MethodTypeParameterName")</a>
+<span class="sourceLineNo">106</span><a id="line.106">  public static &lt;States extends Num, Inputs extends Num&gt; boolean isStabilizable(</a>
+<span class="sourceLineNo">107</span><a id="line.107">      Matrix&lt;States, States&gt; A, Matrix&lt;States, Inputs&gt; B) {</a>
+<span class="sourceLineNo">108</span><a id="line.108">    return WPIMathJNI.isStabilizable(A.getNumRows(), B.getNumCols(), A.getData(), B.getData());</a>
+<span class="sourceLineNo">109</span><a id="line.109">  }</a>
+<span class="sourceLineNo">110</span><a id="line.110"></a>
+<span class="sourceLineNo">111</span><a id="line.111">  /**</a>
+<span class="sourceLineNo">112</span><a id="line.112">   * Returns true if (A, C) is a detectable pair.</a>
+<span class="sourceLineNo">113</span><a id="line.113">   *</a>
+<span class="sourceLineNo">114</span><a id="line.114">   * &lt;p&gt;(A, C) is detectable if and only if the unobservable eigenvalues of A, if any, have absolute</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * values less than one, where an eigenvalue is unobservable if rank(λI - A; C) %3C n where n is</a>
+<span class="sourceLineNo">116</span><a id="line.116">   * the number of states.</a>
+<span class="sourceLineNo">117</span><a id="line.117">   *</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * @param &lt;States&gt; Num representing the size of A.</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * @param &lt;Outputs&gt; Num representing the rows of C.</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param A System matrix.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * @param C Output matrix.</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @return If the system is detectable.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   */</a>
+<span class="sourceLineNo">124</span><a id="line.124">  @SuppressWarnings("MethodTypeParameterName")</a>
+<span class="sourceLineNo">125</span><a id="line.125">  public static &lt;States extends Num, Outputs extends Num&gt; boolean isDetectable(</a>
+<span class="sourceLineNo">126</span><a id="line.126">      Matrix&lt;States, States&gt; A, Matrix&lt;Outputs, States&gt; C) {</a>
+<span class="sourceLineNo">127</span><a id="line.127">    return WPIMathJNI.isStabilizable(</a>
+<span class="sourceLineNo">128</span><a id="line.128">        A.getNumRows(), C.getNumRows(), A.transpose().getData(), C.transpose().getData());</a>
+<span class="sourceLineNo">129</span><a id="line.129">  }</a>
+<span class="sourceLineNo">130</span><a id="line.130"></a>
+<span class="sourceLineNo">131</span><a id="line.131">  /**</a>
+<span class="sourceLineNo">132</span><a id="line.132">   * Convert a {@link Pose2d} to a vector of [x, y, theta], where theta is in radians.</a>
+<span class="sourceLineNo">133</span><a id="line.133">   *</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * @param pose A pose to convert to a vector.</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * @return The given pose in vector form, with the third element, theta, in radians.</a>
+<span class="sourceLineNo">136</span><a id="line.136">   */</a>
+<span class="sourceLineNo">137</span><a id="line.137">  public static Matrix&lt;N3, N1&gt; poseToVector(Pose2d pose) {</a>
+<span class="sourceLineNo">138</span><a id="line.138">    return VecBuilder.fill(pose.getX(), pose.getY(), pose.getRotation().getRadians());</a>
+<span class="sourceLineNo">139</span><a id="line.139">  }</a>
+<span class="sourceLineNo">140</span><a id="line.140"></a>
+<span class="sourceLineNo">141</span><a id="line.141">  /**</a>
+<span class="sourceLineNo">142</span><a id="line.142">   * Clamp the input u to the min and max.</a>
+<span class="sourceLineNo">143</span><a id="line.143">   *</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * @param u The input to clamp.</a>
+<span class="sourceLineNo">145</span><a id="line.145">   * @param umin The minimum input magnitude.</a>
+<span class="sourceLineNo">146</span><a id="line.146">   * @param umax The maximum input magnitude.</a>
+<span class="sourceLineNo">147</span><a id="line.147">   * @param &lt;I&gt; The number of inputs.</a>
+<span class="sourceLineNo">148</span><a id="line.148">   * @return The clamped input.</a>
+<span class="sourceLineNo">149</span><a id="line.149">   */</a>
+<span class="sourceLineNo">150</span><a id="line.150">  @SuppressWarnings({"ParameterName", "LocalVariableName"})</a>
+<span class="sourceLineNo">151</span><a id="line.151">  public static &lt;I extends Num&gt; Matrix&lt;I, N1&gt; clampInputMaxMagnitude(</a>
+<span class="sourceLineNo">152</span><a id="line.152">      Matrix&lt;I, N1&gt; u, Matrix&lt;I, N1&gt; umin, Matrix&lt;I, N1&gt; umax) {</a>
+<span class="sourceLineNo">153</span><a id="line.153">    var result = new Matrix&lt;I, N1&gt;(new SimpleMatrix(u.getNumRows(), 1));</a>
+<span class="sourceLineNo">154</span><a id="line.154">    for (int i = 0; i &lt; u.getNumRows(); i++) {</a>
+<span class="sourceLineNo">155</span><a id="line.155">      result.set(i, 0, MathUtil.clamp(u.get(i, 0), umin.get(i, 0), umax.get(i, 0)));</a>
+<span class="sourceLineNo">156</span><a id="line.156">    }</a>
+<span class="sourceLineNo">157</span><a id="line.157">    return result;</a>
+<span class="sourceLineNo">158</span><a id="line.158">  }</a>
+<span class="sourceLineNo">159</span><a id="line.159"></a>
+<span class="sourceLineNo">160</span><a id="line.160">  /**</a>
+<span class="sourceLineNo">161</span><a id="line.161">   * Renormalize all inputs if any exceeds the maximum magnitude. Useful for systems such as</a>
+<span class="sourceLineNo">162</span><a id="line.162">   * differential drivetrains.</a>
+<span class="sourceLineNo">163</span><a id="line.163">   *</a>
+<span class="sourceLineNo">164</span><a id="line.164">   * @param u The input vector.</a>
+<span class="sourceLineNo">165</span><a id="line.165">   * @param maxMagnitude The maximum magnitude any input can have.</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * @param &lt;I&gt; The number of inputs.</a>
+<span class="sourceLineNo">167</span><a id="line.167">   * @return The normalizedInput</a>
+<span class="sourceLineNo">168</span><a id="line.168">   */</a>
+<span class="sourceLineNo">169</span><a id="line.169">  public static &lt;I extends Num&gt; Matrix&lt;I, N1&gt; desaturateInputVector(</a>
+<span class="sourceLineNo">170</span><a id="line.170">      Matrix&lt;I, N1&gt; u, double maxMagnitude) {</a>
+<span class="sourceLineNo">171</span><a id="line.171">    double maxValue = u.maxAbs();</a>
+<span class="sourceLineNo">172</span><a id="line.172">    boolean isCapped = maxValue &gt; maxMagnitude;</a>
+<span class="sourceLineNo">173</span><a id="line.173"></a>
+<span class="sourceLineNo">174</span><a id="line.174">    if (isCapped) {</a>
+<span class="sourceLineNo">175</span><a id="line.175">      return u.times(maxMagnitude / maxValue);</a>
+<span class="sourceLineNo">176</span><a id="line.176">    }</a>
+<span class="sourceLineNo">177</span><a id="line.177">    return u;</a>
+<span class="sourceLineNo">178</span><a id="line.178">  }</a>
+<span class="sourceLineNo">179</span><a id="line.179"></a>
+<span class="sourceLineNo">180</span><a id="line.180">  /**</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * Convert a {@link Pose2d} to a vector of [x, y, cos(theta), sin(theta)], where theta is in</a>
+<span class="sourceLineNo">182</span><a id="line.182">   * radians.</a>
+<span class="sourceLineNo">183</span><a id="line.183">   *</a>
+<span class="sourceLineNo">184</span><a id="line.184">   * @param pose A pose to convert to a vector.</a>
+<span class="sourceLineNo">185</span><a id="line.185">   * @return The given pose in as a 4x1 vector of x, y, cos(theta), and sin(theta).</a>
+<span class="sourceLineNo">186</span><a id="line.186">   */</a>
+<span class="sourceLineNo">187</span><a id="line.187">  public static Matrix&lt;N4, N1&gt; poseTo4dVector(Pose2d pose) {</a>
+<span class="sourceLineNo">188</span><a id="line.188">    return VecBuilder.fill(</a>
+<span class="sourceLineNo">189</span><a id="line.189">        pose.getTranslation().getX(),</a>
+<span class="sourceLineNo">190</span><a id="line.190">        pose.getTranslation().getY(),</a>
+<span class="sourceLineNo">191</span><a id="line.191">        pose.getRotation().getCos(),</a>
+<span class="sourceLineNo">192</span><a id="line.192">        pose.getRotation().getSin());</a>
+<span class="sourceLineNo">193</span><a id="line.193">  }</a>
+<span class="sourceLineNo">194</span><a id="line.194"></a>
+<span class="sourceLineNo">195</span><a id="line.195">  /**</a>
+<span class="sourceLineNo">196</span><a id="line.196">   * Convert a {@link Pose2d} to a vector of [x, y, theta], where theta is in radians.</a>
+<span class="sourceLineNo">197</span><a id="line.197">   *</a>
+<span class="sourceLineNo">198</span><a id="line.198">   * @param pose A pose to convert to a vector.</a>
+<span class="sourceLineNo">199</span><a id="line.199">   * @return The given pose in vector form, with the third element, theta, in radians.</a>
+<span class="sourceLineNo">200</span><a id="line.200">   */</a>
+<span class="sourceLineNo">201</span><a id="line.201">  public static Matrix&lt;N3, N1&gt; poseTo3dVector(Pose2d pose) {</a>
+<span class="sourceLineNo">202</span><a id="line.202">    return VecBuilder.fill(</a>
+<span class="sourceLineNo">203</span><a id="line.203">        pose.getTranslation().getX(),</a>
+<span class="sourceLineNo">204</span><a id="line.204">        pose.getTranslation().getY(),</a>
+<span class="sourceLineNo">205</span><a id="line.205">        pose.getRotation().getRadians());</a>
+<span class="sourceLineNo">206</span><a id="line.206">  }</a>
+<span class="sourceLineNo">207</span><a id="line.207">}</a>
 
 
 

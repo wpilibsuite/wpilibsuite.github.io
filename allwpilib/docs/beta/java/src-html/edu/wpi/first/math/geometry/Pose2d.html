@@ -20,56 +20,56 @@
 <span class="sourceLineNo">008</span><a id="line.8">import com.fasterxml.jackson.annotation.JsonCreator;</a>
 <span class="sourceLineNo">009</span><a id="line.9">import com.fasterxml.jackson.annotation.JsonIgnoreProperties;</a>
 <span class="sourceLineNo">010</span><a id="line.10">import com.fasterxml.jackson.annotation.JsonProperty;</a>
-<span class="sourceLineNo">011</span><a id="line.11">import java.util.Objects;</a>
-<span class="sourceLineNo">012</span><a id="line.12"></a>
-<span class="sourceLineNo">013</span><a id="line.13">/** Represents a 2d pose containing translational and rotational elements. */</a>
-<span class="sourceLineNo">014</span><a id="line.14">@JsonIgnoreProperties(ignoreUnknown = true)</a>
-<span class="sourceLineNo">015</span><a id="line.15">@JsonAutoDetect(getterVisibility = JsonAutoDetect.Visibility.NONE)</a>
-<span class="sourceLineNo">016</span><a id="line.16">public class Pose2d {</a>
-<span class="sourceLineNo">017</span><a id="line.17">  private final Translation2d m_translation;</a>
-<span class="sourceLineNo">018</span><a id="line.18">  private final Rotation2d m_rotation;</a>
-<span class="sourceLineNo">019</span><a id="line.19"></a>
-<span class="sourceLineNo">020</span><a id="line.20">  /**</a>
-<span class="sourceLineNo">021</span><a id="line.21">   * Constructs a pose at the origin facing toward the positive X axis. (Translation2d{0, 0} and</a>
-<span class="sourceLineNo">022</span><a id="line.22">   * Rotation{0})</a>
-<span class="sourceLineNo">023</span><a id="line.23">   */</a>
-<span class="sourceLineNo">024</span><a id="line.24">  public Pose2d() {</a>
-<span class="sourceLineNo">025</span><a id="line.25">    m_translation = new Translation2d();</a>
-<span class="sourceLineNo">026</span><a id="line.26">    m_rotation = new Rotation2d();</a>
-<span class="sourceLineNo">027</span><a id="line.27">  }</a>
-<span class="sourceLineNo">028</span><a id="line.28"></a>
-<span class="sourceLineNo">029</span><a id="line.29">  /**</a>
-<span class="sourceLineNo">030</span><a id="line.30">   * Constructs a pose with the specified translation and rotation.</a>
-<span class="sourceLineNo">031</span><a id="line.31">   *</a>
-<span class="sourceLineNo">032</span><a id="line.32">   * @param translation The translational component of the pose.</a>
-<span class="sourceLineNo">033</span><a id="line.33">   * @param rotation The rotational component of the pose.</a>
-<span class="sourceLineNo">034</span><a id="line.34">   */</a>
-<span class="sourceLineNo">035</span><a id="line.35">  @JsonCreator</a>
-<span class="sourceLineNo">036</span><a id="line.36">  public Pose2d(</a>
-<span class="sourceLineNo">037</span><a id="line.37">      @JsonProperty(required = true, value = "translation") Translation2d translation,</a>
-<span class="sourceLineNo">038</span><a id="line.38">      @JsonProperty(required = true, value = "rotation") Rotation2d rotation) {</a>
-<span class="sourceLineNo">039</span><a id="line.39">    m_translation = translation;</a>
-<span class="sourceLineNo">040</span><a id="line.40">    m_rotation = rotation;</a>
-<span class="sourceLineNo">041</span><a id="line.41">  }</a>
-<span class="sourceLineNo">042</span><a id="line.42"></a>
-<span class="sourceLineNo">043</span><a id="line.43">  /**</a>
-<span class="sourceLineNo">044</span><a id="line.44">   * Convenience constructors that takes in x and y values directly instead of having to construct a</a>
-<span class="sourceLineNo">045</span><a id="line.45">   * Translation2d.</a>
-<span class="sourceLineNo">046</span><a id="line.46">   *</a>
-<span class="sourceLineNo">047</span><a id="line.47">   * @param x The x component of the translational component of the pose.</a>
-<span class="sourceLineNo">048</span><a id="line.48">   * @param y The y component of the translational component of the pose.</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * @param rotation The rotational component of the pose.</a>
-<span class="sourceLineNo">050</span><a id="line.50">   */</a>
-<span class="sourceLineNo">051</span><a id="line.51">  public Pose2d(double x, double y, Rotation2d rotation) {</a>
-<span class="sourceLineNo">052</span><a id="line.52">    m_translation = new Translation2d(x, y);</a>
-<span class="sourceLineNo">053</span><a id="line.53">    m_rotation = rotation;</a>
-<span class="sourceLineNo">054</span><a id="line.54">  }</a>
-<span class="sourceLineNo">055</span><a id="line.55"></a>
-<span class="sourceLineNo">056</span><a id="line.56">  /**</a>
-<span class="sourceLineNo">057</span><a id="line.57">   * Transforms the pose by the given transformation and returns the new transformed pose.</a>
-<span class="sourceLineNo">058</span><a id="line.58">   *</a>
-<span class="sourceLineNo">059</span><a id="line.59">   * &lt;p&gt;The matrix multiplication is as follows [x_new] [cos, -sin, 0][transform.x] [y_new] += [sin,</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * cos, 0][transform.y] [t_new] [0, 0, 1][transform.t]</a>
+<span class="sourceLineNo">011</span><a id="line.11">import edu.wpi.first.math.interpolation.Interpolatable;</a>
+<span class="sourceLineNo">012</span><a id="line.12">import java.util.Objects;</a>
+<span class="sourceLineNo">013</span><a id="line.13"></a>
+<span class="sourceLineNo">014</span><a id="line.14">/** Represents a 2D pose containing translational and rotational elements. */</a>
+<span class="sourceLineNo">015</span><a id="line.15">@JsonIgnoreProperties(ignoreUnknown = true)</a>
+<span class="sourceLineNo">016</span><a id="line.16">@JsonAutoDetect(getterVisibility = JsonAutoDetect.Visibility.NONE)</a>
+<span class="sourceLineNo">017</span><a id="line.17">public class Pose2d implements Interpolatable&lt;Pose2d&gt; {</a>
+<span class="sourceLineNo">018</span><a id="line.18">  private final Translation2d m_translation;</a>
+<span class="sourceLineNo">019</span><a id="line.19">  private final Rotation2d m_rotation;</a>
+<span class="sourceLineNo">020</span><a id="line.20"></a>
+<span class="sourceLineNo">021</span><a id="line.21">  /** Constructs a pose at the origin facing toward the positive X axis. */</a>
+<span class="sourceLineNo">022</span><a id="line.22">  public Pose2d() {</a>
+<span class="sourceLineNo">023</span><a id="line.23">    m_translation = new Translation2d();</a>
+<span class="sourceLineNo">024</span><a id="line.24">    m_rotation = new Rotation2d();</a>
+<span class="sourceLineNo">025</span><a id="line.25">  }</a>
+<span class="sourceLineNo">026</span><a id="line.26"></a>
+<span class="sourceLineNo">027</span><a id="line.27">  /**</a>
+<span class="sourceLineNo">028</span><a id="line.28">   * Constructs a pose with the specified translation and rotation.</a>
+<span class="sourceLineNo">029</span><a id="line.29">   *</a>
+<span class="sourceLineNo">030</span><a id="line.30">   * @param translation The translational component of the pose.</a>
+<span class="sourceLineNo">031</span><a id="line.31">   * @param rotation The rotational component of the pose.</a>
+<span class="sourceLineNo">032</span><a id="line.32">   */</a>
+<span class="sourceLineNo">033</span><a id="line.33">  @JsonCreator</a>
+<span class="sourceLineNo">034</span><a id="line.34">  public Pose2d(</a>
+<span class="sourceLineNo">035</span><a id="line.35">      @JsonProperty(required = true, value = "translation") Translation2d translation,</a>
+<span class="sourceLineNo">036</span><a id="line.36">      @JsonProperty(required = true, value = "rotation") Rotation2d rotation) {</a>
+<span class="sourceLineNo">037</span><a id="line.37">    m_translation = translation;</a>
+<span class="sourceLineNo">038</span><a id="line.38">    m_rotation = rotation;</a>
+<span class="sourceLineNo">039</span><a id="line.39">  }</a>
+<span class="sourceLineNo">040</span><a id="line.40"></a>
+<span class="sourceLineNo">041</span><a id="line.41">  /**</a>
+<span class="sourceLineNo">042</span><a id="line.42">   * Constructs a pose with x and y translations instead of a separate Translation2d.</a>
+<span class="sourceLineNo">043</span><a id="line.43">   *</a>
+<span class="sourceLineNo">044</span><a id="line.44">   * @param x The x component of the translational component of the pose.</a>
+<span class="sourceLineNo">045</span><a id="line.45">   * @param y The y component of the translational component of the pose.</a>
+<span class="sourceLineNo">046</span><a id="line.46">   * @param rotation The rotational component of the pose.</a>
+<span class="sourceLineNo">047</span><a id="line.47">   */</a>
+<span class="sourceLineNo">048</span><a id="line.48">  public Pose2d(double x, double y, Rotation2d rotation) {</a>
+<span class="sourceLineNo">049</span><a id="line.49">    m_translation = new Translation2d(x, y);</a>
+<span class="sourceLineNo">050</span><a id="line.50">    m_rotation = rotation;</a>
+<span class="sourceLineNo">051</span><a id="line.51">  }</a>
+<span class="sourceLineNo">052</span><a id="line.52"></a>
+<span class="sourceLineNo">053</span><a id="line.53">  /**</a>
+<span class="sourceLineNo">054</span><a id="line.54">   * Transforms the pose by the given transformation and returns the new transformed pose.</a>
+<span class="sourceLineNo">055</span><a id="line.55">   *</a>
+<span class="sourceLineNo">056</span><a id="line.56">   * &lt;pre&gt;</a>
+<span class="sourceLineNo">057</span><a id="line.57">   * [x_new]    [cos, -sin, 0][transform.x]</a>
+<span class="sourceLineNo">058</span><a id="line.58">   * [y_new] += [sin,  cos, 0][transform.y]</a>
+<span class="sourceLineNo">059</span><a id="line.59">   * [t_new]    [  0,    0, 1][transform.t]</a>
+<span class="sourceLineNo">060</span><a id="line.60">   * &lt;/pre&gt;</a>
 <span class="sourceLineNo">061</span><a id="line.61">   *</a>
 <span class="sourceLineNo">062</span><a id="line.62">   * @param other The transform to transform the pose by.</a>
 <span class="sourceLineNo">063</span><a id="line.63">   * @return The transformed pose.</a>
@@ -171,8 +171,8 @@
 <span class="sourceLineNo">159</span><a id="line.159">   *</a>
 <span class="sourceLineNo">160</span><a id="line.160">   * @param twist The change in pose in the robot's coordinate frame since the previous pose update.</a>
 <span class="sourceLineNo">161</span><a id="line.161">   *     For example, if a non-holonomic robot moves forward 0.01 meters and changes angle by 0.5</a>
-<span class="sourceLineNo">162</span><a id="line.162">   *     degrees since the previous pose update, the twist would be Twist2d{0.01, 0.0,</a>
-<span class="sourceLineNo">163</span><a id="line.163">   *     toRadians(0.5)}</a>
+<span class="sourceLineNo">162</span><a id="line.162">   *     degrees since the previous pose update, the twist would be Twist2d(0.01, 0.0,</a>
+<span class="sourceLineNo">163</span><a id="line.163">   *     Units.degreesToRadians(0.5)).</a>
 <span class="sourceLineNo">164</span><a id="line.164">   * @return The new pose of the robot.</a>
 <span class="sourceLineNo">165</span><a id="line.165">   */</a>
 <span class="sourceLineNo">166</span><a id="line.166">  public Pose2d exp(Twist2d twist) {</a>
@@ -254,7 +254,21 @@
 <span class="sourceLineNo">242</span><a id="line.242">  public int hashCode() {</a>
 <span class="sourceLineNo">243</span><a id="line.243">    return Objects.hash(m_translation, m_rotation);</a>
 <span class="sourceLineNo">244</span><a id="line.244">  }</a>
-<span class="sourceLineNo">245</span><a id="line.245">}</a>
+<span class="sourceLineNo">245</span><a id="line.245"></a>
+<span class="sourceLineNo">246</span><a id="line.246">  @Override</a>
+<span class="sourceLineNo">247</span><a id="line.247">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">248</span><a id="line.248">  public Pose2d interpolate(Pose2d endValue, double t) {</a>
+<span class="sourceLineNo">249</span><a id="line.249">    if (t &lt; 0) {</a>
+<span class="sourceLineNo">250</span><a id="line.250">      return this;</a>
+<span class="sourceLineNo">251</span><a id="line.251">    } else if (t &gt;= 1) {</a>
+<span class="sourceLineNo">252</span><a id="line.252">      return endValue;</a>
+<span class="sourceLineNo">253</span><a id="line.253">    } else {</a>
+<span class="sourceLineNo">254</span><a id="line.254">      var twist = this.log(endValue);</a>
+<span class="sourceLineNo">255</span><a id="line.255">      var scaledTwist = new Twist2d(twist.dx * t, twist.dy * t, twist.dtheta * t);</a>
+<span class="sourceLineNo">256</span><a id="line.256">      return this.exp(scaledTwist);</a>
+<span class="sourceLineNo">257</span><a id="line.257">    }</a>
+<span class="sourceLineNo">258</span><a id="line.258">  }</a>
+<span class="sourceLineNo">259</span><a id="line.259">}</a>
 
 
 

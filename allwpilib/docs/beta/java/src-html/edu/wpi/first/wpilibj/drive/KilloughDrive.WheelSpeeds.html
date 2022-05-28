@@ -25,7 +25,7 @@
 <span class="sourceLineNo">013</span><a id="line.13">import edu.wpi.first.util.sendable.Sendable;</a>
 <span class="sourceLineNo">014</span><a id="line.14">import edu.wpi.first.util.sendable.SendableBuilder;</a>
 <span class="sourceLineNo">015</span><a id="line.15">import edu.wpi.first.util.sendable.SendableRegistry;</a>
-<span class="sourceLineNo">016</span><a id="line.16">import edu.wpi.first.wpilibj.SpeedController;</a>
+<span class="sourceLineNo">016</span><a id="line.16">import edu.wpi.first.wpilibj.motorcontrol.MotorController;</a>
 <span class="sourceLineNo">017</span><a id="line.17"></a>
 <span class="sourceLineNo">018</span><a id="line.18">/**</a>
 <span class="sourceLineNo">019</span><a id="line.19"> * A class for driving Killough drive platforms.</a>
@@ -51,255 +51,279 @@
 <span class="sourceLineNo">039</span><a id="line.39"> * &lt;p&gt;The positive X axis points ahead, the positive Y axis points right, and the positive Z axis</a>
 <span class="sourceLineNo">040</span><a id="line.40"> * points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is</a>
 <span class="sourceLineNo">041</span><a id="line.41"> * positive.</a>
-<span class="sourceLineNo">042</span><a id="line.42"> */</a>
-<span class="sourceLineNo">043</span><a id="line.43">@SuppressWarnings("removal")</a>
-<span class="sourceLineNo">044</span><a id="line.44">public class KilloughDrive extends RobotDriveBase implements Sendable, AutoCloseable {</a>
-<span class="sourceLineNo">045</span><a id="line.45">  public static final double kDefaultLeftMotorAngle = 60.0;</a>
-<span class="sourceLineNo">046</span><a id="line.46">  public static final double kDefaultRightMotorAngle = 120.0;</a>
-<span class="sourceLineNo">047</span><a id="line.47">  public static final double kDefaultBackMotorAngle = 270.0;</a>
-<span class="sourceLineNo">048</span><a id="line.48"></a>
-<span class="sourceLineNo">049</span><a id="line.49">  private static int instances;</a>
+<span class="sourceLineNo">042</span><a id="line.42"> *</a>
+<span class="sourceLineNo">043</span><a id="line.43"> * &lt;p&gt;{@link edu.wpi.first.wpilibj.MotorSafety} is enabled by default. The driveCartesian or</a>
+<span class="sourceLineNo">044</span><a id="line.44"> * drivePolar methods should be called periodically to avoid Motor Safety timeouts.</a>
+<span class="sourceLineNo">045</span><a id="line.45"> */</a>
+<span class="sourceLineNo">046</span><a id="line.46">public class KilloughDrive extends RobotDriveBase implements Sendable, AutoCloseable {</a>
+<span class="sourceLineNo">047</span><a id="line.47">  public static final double kDefaultLeftMotorAngle = 60.0;</a>
+<span class="sourceLineNo">048</span><a id="line.48">  public static final double kDefaultRightMotorAngle = 120.0;</a>
+<span class="sourceLineNo">049</span><a id="line.49">  public static final double kDefaultBackMotorAngle = 270.0;</a>
 <span class="sourceLineNo">050</span><a id="line.50"></a>
-<span class="sourceLineNo">051</span><a id="line.51">  private SpeedController m_leftMotor;</a>
-<span class="sourceLineNo">052</span><a id="line.52">  private SpeedController m_rightMotor;</a>
-<span class="sourceLineNo">053</span><a id="line.53">  private SpeedController m_backMotor;</a>
-<span class="sourceLineNo">054</span><a id="line.54"></a>
-<span class="sourceLineNo">055</span><a id="line.55">  private Vector2d m_leftVec;</a>
-<span class="sourceLineNo">056</span><a id="line.56">  private Vector2d m_rightVec;</a>
-<span class="sourceLineNo">057</span><a id="line.57">  private Vector2d m_backVec;</a>
-<span class="sourceLineNo">058</span><a id="line.58"></a>
-<span class="sourceLineNo">059</span><a id="line.59">  private boolean m_reported;</a>
+<span class="sourceLineNo">051</span><a id="line.51">  private static int instances;</a>
+<span class="sourceLineNo">052</span><a id="line.52"></a>
+<span class="sourceLineNo">053</span><a id="line.53">  private MotorController m_leftMotor;</a>
+<span class="sourceLineNo">054</span><a id="line.54">  private MotorController m_rightMotor;</a>
+<span class="sourceLineNo">055</span><a id="line.55">  private MotorController m_backMotor;</a>
+<span class="sourceLineNo">056</span><a id="line.56"></a>
+<span class="sourceLineNo">057</span><a id="line.57">  private Vector2d m_leftVec;</a>
+<span class="sourceLineNo">058</span><a id="line.58">  private Vector2d m_rightVec;</a>
+<span class="sourceLineNo">059</span><a id="line.59">  private Vector2d m_backVec;</a>
 <span class="sourceLineNo">060</span><a id="line.60"></a>
-<span class="sourceLineNo">061</span><a id="line.61">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">062</span><a id="line.62">  public static class WheelSpeeds {</a>
-<span class="sourceLineNo">063</span><a id="line.63">    public double left;</a>
-<span class="sourceLineNo">064</span><a id="line.64">    public double right;</a>
-<span class="sourceLineNo">065</span><a id="line.65">    public double back;</a>
-<span class="sourceLineNo">066</span><a id="line.66"></a>
-<span class="sourceLineNo">067</span><a id="line.67">    /** Constructs a WheelSpeeds with zeroes for left, right, and back speeds. */</a>
-<span class="sourceLineNo">068</span><a id="line.68">    public WheelSpeeds() {}</a>
-<span class="sourceLineNo">069</span><a id="line.69"></a>
-<span class="sourceLineNo">070</span><a id="line.70">    /**</a>
-<span class="sourceLineNo">071</span><a id="line.71">     * Constructs a WheelSpeeds.</a>
-<span class="sourceLineNo">072</span><a id="line.72">     *</a>
-<span class="sourceLineNo">073</span><a id="line.73">     * @param left The left speed.</a>
-<span class="sourceLineNo">074</span><a id="line.74">     * @param right The right speed.</a>
-<span class="sourceLineNo">075</span><a id="line.75">     * @param back The back speed.</a>
-<span class="sourceLineNo">076</span><a id="line.76">     */</a>
-<span class="sourceLineNo">077</span><a id="line.77">    public WheelSpeeds(double left, double right, double back) {</a>
-<span class="sourceLineNo">078</span><a id="line.78">      this.left = left;</a>
-<span class="sourceLineNo">079</span><a id="line.79">      this.right = right;</a>
-<span class="sourceLineNo">080</span><a id="line.80">      this.back = back;</a>
-<span class="sourceLineNo">081</span><a id="line.81">    }</a>
-<span class="sourceLineNo">082</span><a id="line.82">  }</a>
-<span class="sourceLineNo">083</span><a id="line.83"></a>
-<span class="sourceLineNo">084</span><a id="line.84">  /**</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * Construct a Killough drive with the given motors and default motor angles.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   *</a>
-<span class="sourceLineNo">087</span><a id="line.87">   * &lt;p&gt;The default motor angles make the wheels on each corner parallel to their respective</a>
-<span class="sourceLineNo">088</span><a id="line.88">   * opposite sides.</a>
-<span class="sourceLineNo">089</span><a id="line.89">   *</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * &lt;p&gt;If a motor needs to be inverted, do so before passing it in.</a>
-<span class="sourceLineNo">091</span><a id="line.91">   *</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * @param leftMotor The motor on the left corner.</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * @param rightMotor The motor on the right corner.</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * @param backMotor The motor on the back corner.</a>
-<span class="sourceLineNo">095</span><a id="line.95">   */</a>
-<span class="sourceLineNo">096</span><a id="line.96">  public KilloughDrive(</a>
-<span class="sourceLineNo">097</span><a id="line.97">      SpeedController leftMotor, SpeedController rightMotor, SpeedController backMotor) {</a>
-<span class="sourceLineNo">098</span><a id="line.98">    this(</a>
-<span class="sourceLineNo">099</span><a id="line.99">        leftMotor,</a>
-<span class="sourceLineNo">100</span><a id="line.100">        rightMotor,</a>
-<span class="sourceLineNo">101</span><a id="line.101">        backMotor,</a>
-<span class="sourceLineNo">102</span><a id="line.102">        kDefaultLeftMotorAngle,</a>
-<span class="sourceLineNo">103</span><a id="line.103">        kDefaultRightMotorAngle,</a>
-<span class="sourceLineNo">104</span><a id="line.104">        kDefaultBackMotorAngle);</a>
-<span class="sourceLineNo">105</span><a id="line.105">  }</a>
-<span class="sourceLineNo">106</span><a id="line.106"></a>
-<span class="sourceLineNo">107</span><a id="line.107">  /**</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * Construct a Killough drive with the given motors.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   *</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * &lt;p&gt;Angles are measured in degrees clockwise from the positive X axis.</a>
-<span class="sourceLineNo">111</span><a id="line.111">   *</a>
-<span class="sourceLineNo">112</span><a id="line.112">   * @param leftMotor The motor on the left corner.</a>
-<span class="sourceLineNo">113</span><a id="line.113">   * @param rightMotor The motor on the right corner.</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * @param backMotor The motor on the back corner.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   * @param leftMotorAngle The angle of the left wheel's forward direction of travel.</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * @param rightMotorAngle The angle of the right wheel's forward direction of travel.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   * @param backMotorAngle The angle of the back wheel's forward direction of travel.</a>
-<span class="sourceLineNo">118</span><a id="line.118">   */</a>
-<span class="sourceLineNo">119</span><a id="line.119">  public KilloughDrive(</a>
-<span class="sourceLineNo">120</span><a id="line.120">      SpeedController leftMotor,</a>
-<span class="sourceLineNo">121</span><a id="line.121">      SpeedController rightMotor,</a>
-<span class="sourceLineNo">122</span><a id="line.122">      SpeedController backMotor,</a>
-<span class="sourceLineNo">123</span><a id="line.123">      double leftMotorAngle,</a>
-<span class="sourceLineNo">124</span><a id="line.124">      double rightMotorAngle,</a>
-<span class="sourceLineNo">125</span><a id="line.125">      double backMotorAngle) {</a>
-<span class="sourceLineNo">126</span><a id="line.126">    requireNonNull(leftMotor, "Left motor cannot be null");</a>
-<span class="sourceLineNo">127</span><a id="line.127">    requireNonNull(rightMotor, "Right motor cannot be null");</a>
-<span class="sourceLineNo">128</span><a id="line.128">    requireNonNull(backMotor, "Back motor cannot be null");</a>
-<span class="sourceLineNo">129</span><a id="line.129"></a>
-<span class="sourceLineNo">130</span><a id="line.130">    m_leftMotor = leftMotor;</a>
-<span class="sourceLineNo">131</span><a id="line.131">    m_rightMotor = rightMotor;</a>
-<span class="sourceLineNo">132</span><a id="line.132">    m_backMotor = backMotor;</a>
-<span class="sourceLineNo">133</span><a id="line.133">    m_leftVec =</a>
-<span class="sourceLineNo">134</span><a id="line.134">        new Vector2d(</a>
-<span class="sourceLineNo">135</span><a id="line.135">            Math.cos(leftMotorAngle * (Math.PI / 180.0)),</a>
-<span class="sourceLineNo">136</span><a id="line.136">            Math.sin(leftMotorAngle * (Math.PI / 180.0)));</a>
-<span class="sourceLineNo">137</span><a id="line.137">    m_rightVec =</a>
-<span class="sourceLineNo">138</span><a id="line.138">        new Vector2d(</a>
-<span class="sourceLineNo">139</span><a id="line.139">            Math.cos(rightMotorAngle * (Math.PI / 180.0)),</a>
-<span class="sourceLineNo">140</span><a id="line.140">            Math.sin(rightMotorAngle * (Math.PI / 180.0)));</a>
-<span class="sourceLineNo">141</span><a id="line.141">    m_backVec =</a>
-<span class="sourceLineNo">142</span><a id="line.142">        new Vector2d(</a>
-<span class="sourceLineNo">143</span><a id="line.143">            Math.cos(backMotorAngle * (Math.PI / 180.0)),</a>
-<span class="sourceLineNo">144</span><a id="line.144">            Math.sin(backMotorAngle * (Math.PI / 180.0)));</a>
-<span class="sourceLineNo">145</span><a id="line.145">    SendableRegistry.addChild(this, m_leftMotor);</a>
-<span class="sourceLineNo">146</span><a id="line.146">    SendableRegistry.addChild(this, m_rightMotor);</a>
-<span class="sourceLineNo">147</span><a id="line.147">    SendableRegistry.addChild(this, m_backMotor);</a>
-<span class="sourceLineNo">148</span><a id="line.148">    instances++;</a>
-<span class="sourceLineNo">149</span><a id="line.149">    SendableRegistry.addLW(this, "KilloughDrive", instances);</a>
-<span class="sourceLineNo">150</span><a id="line.150">  }</a>
-<span class="sourceLineNo">151</span><a id="line.151"></a>
-<span class="sourceLineNo">152</span><a id="line.152">  @Override</a>
-<span class="sourceLineNo">153</span><a id="line.153">  public void close() {</a>
-<span class="sourceLineNo">154</span><a id="line.154">    SendableRegistry.remove(this);</a>
-<span class="sourceLineNo">155</span><a id="line.155">  }</a>
-<span class="sourceLineNo">156</span><a id="line.156"></a>
-<span class="sourceLineNo">157</span><a id="line.157">  /**</a>
-<span class="sourceLineNo">158</span><a id="line.158">   * Drive method for Killough platform.</a>
-<span class="sourceLineNo">159</span><a id="line.159">   *</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
-<span class="sourceLineNo">161</span><a id="line.161">   * from its angle or rotation rate.</a>
-<span class="sourceLineNo">162</span><a id="line.162">   *</a>
-<span class="sourceLineNo">163</span><a id="line.163">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
-<span class="sourceLineNo">164</span><a id="line.164">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">165</span><a id="line.165">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
-<span class="sourceLineNo">166</span><a id="line.166">   *     positive.</a>
-<span class="sourceLineNo">167</span><a id="line.167">   */</a>
-<span class="sourceLineNo">168</span><a id="line.168">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">169</span><a id="line.169">  public void driveCartesian(double ySpeed, double xSpeed, double zRotation) {</a>
-<span class="sourceLineNo">170</span><a id="line.170">    driveCartesian(ySpeed, xSpeed, zRotation, 0.0);</a>
-<span class="sourceLineNo">171</span><a id="line.171">  }</a>
-<span class="sourceLineNo">172</span><a id="line.172"></a>
-<span class="sourceLineNo">173</span><a id="line.173">  /**</a>
-<span class="sourceLineNo">174</span><a id="line.174">   * Drive method for Killough platform.</a>
-<span class="sourceLineNo">175</span><a id="line.175">   *</a>
-<span class="sourceLineNo">176</span><a id="line.176">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
-<span class="sourceLineNo">177</span><a id="line.177">   * from its angle or rotation rate.</a>
-<span class="sourceLineNo">178</span><a id="line.178">   *</a>
-<span class="sourceLineNo">179</span><a id="line.179">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">181</span><a id="line.181">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
-<span class="sourceLineNo">182</span><a id="line.182">   *     positive.</a>
-<span class="sourceLineNo">183</span><a id="line.183">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
-<span class="sourceLineNo">184</span><a id="line.184">   *     to implement field-oriented controls.</a>
-<span class="sourceLineNo">185</span><a id="line.185">   */</a>
-<span class="sourceLineNo">186</span><a id="line.186">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">187</span><a id="line.187">  public void driveCartesian(double ySpeed, double xSpeed, double zRotation, double gyroAngle) {</a>
-<span class="sourceLineNo">188</span><a id="line.188">    if (!m_reported) {</a>
-<span class="sourceLineNo">189</span><a id="line.189">      HAL.report(</a>
-<span class="sourceLineNo">190</span><a id="line.190">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_KilloughCartesian, 3);</a>
-<span class="sourceLineNo">191</span><a id="line.191">      m_reported = true;</a>
-<span class="sourceLineNo">192</span><a id="line.192">    }</a>
-<span class="sourceLineNo">193</span><a id="line.193"></a>
-<span class="sourceLineNo">194</span><a id="line.194">    ySpeed = MathUtil.applyDeadband(ySpeed, m_deadband);</a>
-<span class="sourceLineNo">195</span><a id="line.195">    xSpeed = MathUtil.applyDeadband(xSpeed, m_deadband);</a>
-<span class="sourceLineNo">196</span><a id="line.196"></a>
-<span class="sourceLineNo">197</span><a id="line.197">    var speeds = driveCartesianIK(ySpeed, xSpeed, zRotation, gyroAngle);</a>
-<span class="sourceLineNo">198</span><a id="line.198"></a>
-<span class="sourceLineNo">199</span><a id="line.199">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
-<span class="sourceLineNo">200</span><a id="line.200">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
-<span class="sourceLineNo">201</span><a id="line.201">    m_backMotor.set(speeds.back * m_maxOutput);</a>
-<span class="sourceLineNo">202</span><a id="line.202"></a>
-<span class="sourceLineNo">203</span><a id="line.203">    feed();</a>
-<span class="sourceLineNo">204</span><a id="line.204">  }</a>
+<span class="sourceLineNo">061</span><a id="line.61">  private boolean m_reported;</a>
+<span class="sourceLineNo">062</span><a id="line.62"></a>
+<span class="sourceLineNo">063</span><a id="line.63">  /**</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * Wheel speeds for a Killough drive.</a>
+<span class="sourceLineNo">065</span><a id="line.65">   *</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * &lt;p&gt;Uses normalized voltage [-1.0..1.0].</a>
+<span class="sourceLineNo">067</span><a id="line.67">   */</a>
+<span class="sourceLineNo">068</span><a id="line.68">  @SuppressWarnings("MemberName")</a>
+<span class="sourceLineNo">069</span><a id="line.69">  public static class WheelSpeeds {</a>
+<span class="sourceLineNo">070</span><a id="line.70">    public double left;</a>
+<span class="sourceLineNo">071</span><a id="line.71">    public double right;</a>
+<span class="sourceLineNo">072</span><a id="line.72">    public double back;</a>
+<span class="sourceLineNo">073</span><a id="line.73"></a>
+<span class="sourceLineNo">074</span><a id="line.74">    /** Constructs a WheelSpeeds with zeroes for left, right, and back speeds. */</a>
+<span class="sourceLineNo">075</span><a id="line.75">    public WheelSpeeds() {}</a>
+<span class="sourceLineNo">076</span><a id="line.76"></a>
+<span class="sourceLineNo">077</span><a id="line.77">    /**</a>
+<span class="sourceLineNo">078</span><a id="line.78">     * Constructs a WheelSpeeds.</a>
+<span class="sourceLineNo">079</span><a id="line.79">     *</a>
+<span class="sourceLineNo">080</span><a id="line.80">     * @param left The left speed [-1.0..1.0].</a>
+<span class="sourceLineNo">081</span><a id="line.81">     * @param right The right speed [-1.0..1.0].</a>
+<span class="sourceLineNo">082</span><a id="line.82">     * @param back The back speed [-1.0..1.0].</a>
+<span class="sourceLineNo">083</span><a id="line.83">     */</a>
+<span class="sourceLineNo">084</span><a id="line.84">    public WheelSpeeds(double left, double right, double back) {</a>
+<span class="sourceLineNo">085</span><a id="line.85">      this.left = left;</a>
+<span class="sourceLineNo">086</span><a id="line.86">      this.right = right;</a>
+<span class="sourceLineNo">087</span><a id="line.87">      this.back = back;</a>
+<span class="sourceLineNo">088</span><a id="line.88">    }</a>
+<span class="sourceLineNo">089</span><a id="line.89">  }</a>
+<span class="sourceLineNo">090</span><a id="line.90"></a>
+<span class="sourceLineNo">091</span><a id="line.91">  /**</a>
+<span class="sourceLineNo">092</span><a id="line.92">   * Construct a Killough drive with the given motors and default motor angles.</a>
+<span class="sourceLineNo">093</span><a id="line.93">   *</a>
+<span class="sourceLineNo">094</span><a id="line.94">   * &lt;p&gt;The default motor angles make the wheels on each corner parallel to their respective</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * opposite sides.</a>
+<span class="sourceLineNo">096</span><a id="line.96">   *</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * &lt;p&gt;If a motor needs to be inverted, do so before passing it in.</a>
+<span class="sourceLineNo">098</span><a id="line.98">   *</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * @param leftMotor The motor on the left corner.</a>
+<span class="sourceLineNo">100</span><a id="line.100">   * @param rightMotor The motor on the right corner.</a>
+<span class="sourceLineNo">101</span><a id="line.101">   * @param backMotor The motor on the back corner.</a>
+<span class="sourceLineNo">102</span><a id="line.102">   */</a>
+<span class="sourceLineNo">103</span><a id="line.103">  public KilloughDrive(</a>
+<span class="sourceLineNo">104</span><a id="line.104">      MotorController leftMotor, MotorController rightMotor, MotorController backMotor) {</a>
+<span class="sourceLineNo">105</span><a id="line.105">    this(</a>
+<span class="sourceLineNo">106</span><a id="line.106">        leftMotor,</a>
+<span class="sourceLineNo">107</span><a id="line.107">        rightMotor,</a>
+<span class="sourceLineNo">108</span><a id="line.108">        backMotor,</a>
+<span class="sourceLineNo">109</span><a id="line.109">        kDefaultLeftMotorAngle,</a>
+<span class="sourceLineNo">110</span><a id="line.110">        kDefaultRightMotorAngle,</a>
+<span class="sourceLineNo">111</span><a id="line.111">        kDefaultBackMotorAngle);</a>
+<span class="sourceLineNo">112</span><a id="line.112">  }</a>
+<span class="sourceLineNo">113</span><a id="line.113"></a>
+<span class="sourceLineNo">114</span><a id="line.114">  /**</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * Construct a Killough drive with the given motors.</a>
+<span class="sourceLineNo">116</span><a id="line.116">   *</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * &lt;p&gt;Angles are measured in degrees clockwise from the positive X axis.</a>
+<span class="sourceLineNo">118</span><a id="line.118">   *</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * @param leftMotor The motor on the left corner.</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param rightMotor The motor on the right corner.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * @param backMotor The motor on the back corner.</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @param leftMotorAngle The angle of the left wheel's forward direction of travel.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @param rightMotorAngle The angle of the right wheel's forward direction of travel.</a>
+<span class="sourceLineNo">124</span><a id="line.124">   * @param backMotorAngle The angle of the back wheel's forward direction of travel.</a>
+<span class="sourceLineNo">125</span><a id="line.125">   */</a>
+<span class="sourceLineNo">126</span><a id="line.126">  public KilloughDrive(</a>
+<span class="sourceLineNo">127</span><a id="line.127">      MotorController leftMotor,</a>
+<span class="sourceLineNo">128</span><a id="line.128">      MotorController rightMotor,</a>
+<span class="sourceLineNo">129</span><a id="line.129">      MotorController backMotor,</a>
+<span class="sourceLineNo">130</span><a id="line.130">      double leftMotorAngle,</a>
+<span class="sourceLineNo">131</span><a id="line.131">      double rightMotorAngle,</a>
+<span class="sourceLineNo">132</span><a id="line.132">      double backMotorAngle) {</a>
+<span class="sourceLineNo">133</span><a id="line.133">    requireNonNull(leftMotor, "Left motor cannot be null");</a>
+<span class="sourceLineNo">134</span><a id="line.134">    requireNonNull(rightMotor, "Right motor cannot be null");</a>
+<span class="sourceLineNo">135</span><a id="line.135">    requireNonNull(backMotor, "Back motor cannot be null");</a>
+<span class="sourceLineNo">136</span><a id="line.136"></a>
+<span class="sourceLineNo">137</span><a id="line.137">    m_leftMotor = leftMotor;</a>
+<span class="sourceLineNo">138</span><a id="line.138">    m_rightMotor = rightMotor;</a>
+<span class="sourceLineNo">139</span><a id="line.139">    m_backMotor = backMotor;</a>
+<span class="sourceLineNo">140</span><a id="line.140">    m_leftVec =</a>
+<span class="sourceLineNo">141</span><a id="line.141">        new Vector2d(</a>
+<span class="sourceLineNo">142</span><a id="line.142">            Math.cos(leftMotorAngle * (Math.PI / 180.0)),</a>
+<span class="sourceLineNo">143</span><a id="line.143">            Math.sin(leftMotorAngle * (Math.PI / 180.0)));</a>
+<span class="sourceLineNo">144</span><a id="line.144">    m_rightVec =</a>
+<span class="sourceLineNo">145</span><a id="line.145">        new Vector2d(</a>
+<span class="sourceLineNo">146</span><a id="line.146">            Math.cos(rightMotorAngle * (Math.PI / 180.0)),</a>
+<span class="sourceLineNo">147</span><a id="line.147">            Math.sin(rightMotorAngle * (Math.PI / 180.0)));</a>
+<span class="sourceLineNo">148</span><a id="line.148">    m_backVec =</a>
+<span class="sourceLineNo">149</span><a id="line.149">        new Vector2d(</a>
+<span class="sourceLineNo">150</span><a id="line.150">            Math.cos(backMotorAngle * (Math.PI / 180.0)),</a>
+<span class="sourceLineNo">151</span><a id="line.151">            Math.sin(backMotorAngle * (Math.PI / 180.0)));</a>
+<span class="sourceLineNo">152</span><a id="line.152">    SendableRegistry.addChild(this, m_leftMotor);</a>
+<span class="sourceLineNo">153</span><a id="line.153">    SendableRegistry.addChild(this, m_rightMotor);</a>
+<span class="sourceLineNo">154</span><a id="line.154">    SendableRegistry.addChild(this, m_backMotor);</a>
+<span class="sourceLineNo">155</span><a id="line.155">    instances++;</a>
+<span class="sourceLineNo">156</span><a id="line.156">    SendableRegistry.addLW(this, "KilloughDrive", instances);</a>
+<span class="sourceLineNo">157</span><a id="line.157">  }</a>
+<span class="sourceLineNo">158</span><a id="line.158"></a>
+<span class="sourceLineNo">159</span><a id="line.159">  @Override</a>
+<span class="sourceLineNo">160</span><a id="line.160">  public void close() {</a>
+<span class="sourceLineNo">161</span><a id="line.161">    SendableRegistry.remove(this);</a>
+<span class="sourceLineNo">162</span><a id="line.162">  }</a>
+<span class="sourceLineNo">163</span><a id="line.163"></a>
+<span class="sourceLineNo">164</span><a id="line.164">  /**</a>
+<span class="sourceLineNo">165</span><a id="line.165">   * Drive method for Killough platform.</a>
+<span class="sourceLineNo">166</span><a id="line.166">   *</a>
+<span class="sourceLineNo">167</span><a id="line.167">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * from its angle or rotation rate.</a>
+<span class="sourceLineNo">169</span><a id="line.169">   *</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
+<span class="sourceLineNo">171</span><a id="line.171">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">172</span><a id="line.172">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">173</span><a id="line.173">   *     positive.</a>
+<span class="sourceLineNo">174</span><a id="line.174">   */</a>
+<span class="sourceLineNo">175</span><a id="line.175">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">176</span><a id="line.176">  public void driveCartesian(double ySpeed, double xSpeed, double zRotation) {</a>
+<span class="sourceLineNo">177</span><a id="line.177">    driveCartesian(ySpeed, xSpeed, zRotation, 0.0);</a>
+<span class="sourceLineNo">178</span><a id="line.178">  }</a>
+<span class="sourceLineNo">179</span><a id="line.179"></a>
+<span class="sourceLineNo">180</span><a id="line.180">  /**</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * Drive method for Killough platform.</a>
+<span class="sourceLineNo">182</span><a id="line.182">   *</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
+<span class="sourceLineNo">184</span><a id="line.184">   * from its angle or rotation rate.</a>
+<span class="sourceLineNo">185</span><a id="line.185">   *</a>
+<span class="sourceLineNo">186</span><a id="line.186">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
+<span class="sourceLineNo">187</span><a id="line.187">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">188</span><a id="line.188">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">189</span><a id="line.189">   *     positive.</a>
+<span class="sourceLineNo">190</span><a id="line.190">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
+<span class="sourceLineNo">191</span><a id="line.191">   *     to implement field-oriented controls.</a>
+<span class="sourceLineNo">192</span><a id="line.192">   */</a>
+<span class="sourceLineNo">193</span><a id="line.193">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">194</span><a id="line.194">  public void driveCartesian(double ySpeed, double xSpeed, double zRotation, double gyroAngle) {</a>
+<span class="sourceLineNo">195</span><a id="line.195">    if (!m_reported) {</a>
+<span class="sourceLineNo">196</span><a id="line.196">      HAL.report(</a>
+<span class="sourceLineNo">197</span><a id="line.197">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_KilloughCartesian, 3);</a>
+<span class="sourceLineNo">198</span><a id="line.198">      m_reported = true;</a>
+<span class="sourceLineNo">199</span><a id="line.199">    }</a>
+<span class="sourceLineNo">200</span><a id="line.200"></a>
+<span class="sourceLineNo">201</span><a id="line.201">    ySpeed = MathUtil.applyDeadband(ySpeed, m_deadband);</a>
+<span class="sourceLineNo">202</span><a id="line.202">    xSpeed = MathUtil.applyDeadband(xSpeed, m_deadband);</a>
+<span class="sourceLineNo">203</span><a id="line.203"></a>
+<span class="sourceLineNo">204</span><a id="line.204">    var speeds = driveCartesianIK(ySpeed, xSpeed, zRotation, gyroAngle);</a>
 <span class="sourceLineNo">205</span><a id="line.205"></a>
-<span class="sourceLineNo">206</span><a id="line.206">  /**</a>
-<span class="sourceLineNo">207</span><a id="line.207">   * Drive method for Killough platform.</a>
-<span class="sourceLineNo">208</span><a id="line.208">   *</a>
-<span class="sourceLineNo">209</span><a id="line.209">   * &lt;p&gt;Angles are measured counter-clockwise from straight ahead. The speed at which the robot</a>
-<span class="sourceLineNo">210</span><a id="line.210">   * drives (translation) is independent from its angle or rotation rate.</a>
-<span class="sourceLineNo">211</span><a id="line.211">   *</a>
-<span class="sourceLineNo">212</span><a id="line.212">   * @param magnitude The robot's speed at a given angle [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">213</span><a id="line.213">   * @param angle The angle around the Z axis at which the robot drives in degrees [-180..180].</a>
-<span class="sourceLineNo">214</span><a id="line.214">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
-<span class="sourceLineNo">215</span><a id="line.215">   *     positive.</a>
-<span class="sourceLineNo">216</span><a id="line.216">   */</a>
-<span class="sourceLineNo">217</span><a id="line.217">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">218</span><a id="line.218">  public void drivePolar(double magnitude, double angle, double zRotation) {</a>
-<span class="sourceLineNo">219</span><a id="line.219">    if (!m_reported) {</a>
-<span class="sourceLineNo">220</span><a id="line.220">      HAL.report(tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_KilloughPolar, 3);</a>
-<span class="sourceLineNo">221</span><a id="line.221">      m_reported = true;</a>
-<span class="sourceLineNo">222</span><a id="line.222">    }</a>
-<span class="sourceLineNo">223</span><a id="line.223"></a>
-<span class="sourceLineNo">224</span><a id="line.224">    driveCartesian(</a>
-<span class="sourceLineNo">225</span><a id="line.225">        magnitude * Math.sin(angle * (Math.PI / 180.0)),</a>
-<span class="sourceLineNo">226</span><a id="line.226">        magnitude * Math.cos(angle * (Math.PI / 180.0)),</a>
-<span class="sourceLineNo">227</span><a id="line.227">        zRotation,</a>
-<span class="sourceLineNo">228</span><a id="line.228">        0.0);</a>
-<span class="sourceLineNo">229</span><a id="line.229">  }</a>
+<span class="sourceLineNo">206</span><a id="line.206">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
+<span class="sourceLineNo">207</span><a id="line.207">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
+<span class="sourceLineNo">208</span><a id="line.208">    m_backMotor.set(speeds.back * m_maxOutput);</a>
+<span class="sourceLineNo">209</span><a id="line.209"></a>
+<span class="sourceLineNo">210</span><a id="line.210">    feed();</a>
+<span class="sourceLineNo">211</span><a id="line.211">  }</a>
+<span class="sourceLineNo">212</span><a id="line.212"></a>
+<span class="sourceLineNo">213</span><a id="line.213">  /**</a>
+<span class="sourceLineNo">214</span><a id="line.214">   * Drive method for Killough platform.</a>
+<span class="sourceLineNo">215</span><a id="line.215">   *</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * &lt;p&gt;Angles are measured counter-clockwise from straight ahead. The speed at which the robot</a>
+<span class="sourceLineNo">217</span><a id="line.217">   * drives (translation) is independent from its angle or rotation rate.</a>
+<span class="sourceLineNo">218</span><a id="line.218">   *</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * @param magnitude The robot's speed at a given angle [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">220</span><a id="line.220">   * @param angle The angle around the Z axis at which the robot drives in degrees [-180..180].</a>
+<span class="sourceLineNo">221</span><a id="line.221">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">222</span><a id="line.222">   *     positive.</a>
+<span class="sourceLineNo">223</span><a id="line.223">   */</a>
+<span class="sourceLineNo">224</span><a id="line.224">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">225</span><a id="line.225">  public void drivePolar(double magnitude, double angle, double zRotation) {</a>
+<span class="sourceLineNo">226</span><a id="line.226">    if (!m_reported) {</a>
+<span class="sourceLineNo">227</span><a id="line.227">      HAL.report(tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_KilloughPolar, 3);</a>
+<span class="sourceLineNo">228</span><a id="line.228">      m_reported = true;</a>
+<span class="sourceLineNo">229</span><a id="line.229">    }</a>
 <span class="sourceLineNo">230</span><a id="line.230"></a>
-<span class="sourceLineNo">231</span><a id="line.231">  /**</a>
-<span class="sourceLineNo">232</span><a id="line.232">   * Cartesian inverse kinematics for Killough platform.</a>
-<span class="sourceLineNo">233</span><a id="line.233">   *</a>
-<span class="sourceLineNo">234</span><a id="line.234">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
-<span class="sourceLineNo">235</span><a id="line.235">   * from its angle or rotation rate.</a>
-<span class="sourceLineNo">236</span><a id="line.236">   *</a>
-<span class="sourceLineNo">237</span><a id="line.237">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
-<span class="sourceLineNo">238</span><a id="line.238">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">239</span><a id="line.239">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
-<span class="sourceLineNo">240</span><a id="line.240">   *     positive.</a>
-<span class="sourceLineNo">241</span><a id="line.241">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
-<span class="sourceLineNo">242</span><a id="line.242">   *     to implement field-oriented controls.</a>
-<span class="sourceLineNo">243</span><a id="line.243">   * @return Wheel speeds.</a>
-<span class="sourceLineNo">244</span><a id="line.244">   */</a>
-<span class="sourceLineNo">245</span><a id="line.245">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">246</span><a id="line.246">  public WheelSpeeds driveCartesianIK(</a>
-<span class="sourceLineNo">247</span><a id="line.247">      double ySpeed, double xSpeed, double zRotation, double gyroAngle) {</a>
-<span class="sourceLineNo">248</span><a id="line.248">    ySpeed = MathUtil.clamp(ySpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">249</span><a id="line.249">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">250</span><a id="line.250"></a>
-<span class="sourceLineNo">251</span><a id="line.251">    // Compensate for gyro angle.</a>
-<span class="sourceLineNo">252</span><a id="line.252">    Vector2d input = new Vector2d(ySpeed, xSpeed);</a>
-<span class="sourceLineNo">253</span><a id="line.253">    input.rotate(-gyroAngle);</a>
+<span class="sourceLineNo">231</span><a id="line.231">    driveCartesian(</a>
+<span class="sourceLineNo">232</span><a id="line.232">        magnitude * Math.sin(angle * (Math.PI / 180.0)),</a>
+<span class="sourceLineNo">233</span><a id="line.233">        magnitude * Math.cos(angle * (Math.PI / 180.0)),</a>
+<span class="sourceLineNo">234</span><a id="line.234">        zRotation,</a>
+<span class="sourceLineNo">235</span><a id="line.235">        0.0);</a>
+<span class="sourceLineNo">236</span><a id="line.236">  }</a>
+<span class="sourceLineNo">237</span><a id="line.237"></a>
+<span class="sourceLineNo">238</span><a id="line.238">  /**</a>
+<span class="sourceLineNo">239</span><a id="line.239">   * Cartesian inverse kinematics for Killough platform.</a>
+<span class="sourceLineNo">240</span><a id="line.240">   *</a>
+<span class="sourceLineNo">241</span><a id="line.241">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
+<span class="sourceLineNo">242</span><a id="line.242">   * from its angle or rotation rate.</a>
+<span class="sourceLineNo">243</span><a id="line.243">   *</a>
+<span class="sourceLineNo">244</span><a id="line.244">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
+<span class="sourceLineNo">245</span><a id="line.245">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">247</span><a id="line.247">   *     positive.</a>
+<span class="sourceLineNo">248</span><a id="line.248">   * @return Wheel speeds [-1.0..1.0].</a>
+<span class="sourceLineNo">249</span><a id="line.249">   */</a>
+<span class="sourceLineNo">250</span><a id="line.250">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">251</span><a id="line.251">  public WheelSpeeds driveCartesianIK(double ySpeed, double xSpeed, double zRotation) {</a>
+<span class="sourceLineNo">252</span><a id="line.252">    return driveCartesianIK(ySpeed, xSpeed, zRotation, 0.0);</a>
+<span class="sourceLineNo">253</span><a id="line.253">  }</a>
 <span class="sourceLineNo">254</span><a id="line.254"></a>
-<span class="sourceLineNo">255</span><a id="line.255">    double[] wheelSpeeds = new double[3];</a>
-<span class="sourceLineNo">256</span><a id="line.256">    wheelSpeeds[MotorType.kLeft.value] = input.scalarProject(m_leftVec) + zRotation;</a>
-<span class="sourceLineNo">257</span><a id="line.257">    wheelSpeeds[MotorType.kRight.value] = input.scalarProject(m_rightVec) + zRotation;</a>
-<span class="sourceLineNo">258</span><a id="line.258">    wheelSpeeds[MotorType.kBack.value] = input.scalarProject(m_backVec) + zRotation;</a>
-<span class="sourceLineNo">259</span><a id="line.259"></a>
-<span class="sourceLineNo">260</span><a id="line.260">    normalize(wheelSpeeds);</a>
-<span class="sourceLineNo">261</span><a id="line.261"></a>
-<span class="sourceLineNo">262</span><a id="line.262">    return new WheelSpeeds(</a>
-<span class="sourceLineNo">263</span><a id="line.263">        wheelSpeeds[MotorType.kLeft.value],</a>
-<span class="sourceLineNo">264</span><a id="line.264">        wheelSpeeds[MotorType.kRight.value],</a>
-<span class="sourceLineNo">265</span><a id="line.265">        wheelSpeeds[MotorType.kBack.value]);</a>
-<span class="sourceLineNo">266</span><a id="line.266">  }</a>
-<span class="sourceLineNo">267</span><a id="line.267"></a>
-<span class="sourceLineNo">268</span><a id="line.268">  @Override</a>
-<span class="sourceLineNo">269</span><a id="line.269">  public void stopMotor() {</a>
-<span class="sourceLineNo">270</span><a id="line.270">    m_leftMotor.stopMotor();</a>
-<span class="sourceLineNo">271</span><a id="line.271">    m_rightMotor.stopMotor();</a>
-<span class="sourceLineNo">272</span><a id="line.272">    m_backMotor.stopMotor();</a>
-<span class="sourceLineNo">273</span><a id="line.273">    feed();</a>
-<span class="sourceLineNo">274</span><a id="line.274">  }</a>
-<span class="sourceLineNo">275</span><a id="line.275"></a>
-<span class="sourceLineNo">276</span><a id="line.276">  @Override</a>
-<span class="sourceLineNo">277</span><a id="line.277">  public String getDescription() {</a>
-<span class="sourceLineNo">278</span><a id="line.278">    return "KilloughDrive";</a>
-<span class="sourceLineNo">279</span><a id="line.279">  }</a>
-<span class="sourceLineNo">280</span><a id="line.280"></a>
-<span class="sourceLineNo">281</span><a id="line.281">  @Override</a>
-<span class="sourceLineNo">282</span><a id="line.282">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">283</span><a id="line.283">    builder.setSmartDashboardType("KilloughDrive");</a>
-<span class="sourceLineNo">284</span><a id="line.284">    builder.setActuator(true);</a>
-<span class="sourceLineNo">285</span><a id="line.285">    builder.setSafeState(this::stopMotor);</a>
-<span class="sourceLineNo">286</span><a id="line.286">    builder.addDoubleProperty("Left Motor Speed", m_leftMotor::get, m_leftMotor::set);</a>
-<span class="sourceLineNo">287</span><a id="line.287">    builder.addDoubleProperty("Right Motor Speed", m_rightMotor::get, m_rightMotor::set);</a>
-<span class="sourceLineNo">288</span><a id="line.288">    builder.addDoubleProperty("Back Motor Speed", m_backMotor::get, m_backMotor::set);</a>
-<span class="sourceLineNo">289</span><a id="line.289">  }</a>
-<span class="sourceLineNo">290</span><a id="line.290">}</a>
+<span class="sourceLineNo">255</span><a id="line.255">  /**</a>
+<span class="sourceLineNo">256</span><a id="line.256">   * Cartesian inverse kinematics for Killough platform.</a>
+<span class="sourceLineNo">257</span><a id="line.257">   *</a>
+<span class="sourceLineNo">258</span><a id="line.258">   * &lt;p&gt;Angles are measured clockwise from the positive X axis. The robot's speed is independent</a>
+<span class="sourceLineNo">259</span><a id="line.259">   * from its angle or rotation rate.</a>
+<span class="sourceLineNo">260</span><a id="line.260">   *</a>
+<span class="sourceLineNo">261</span><a id="line.261">   * @param ySpeed The robot's speed along the Y axis [-1.0..1.0]. Right is positive.</a>
+<span class="sourceLineNo">262</span><a id="line.262">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">263</span><a id="line.263">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">264</span><a id="line.264">   *     positive.</a>
+<span class="sourceLineNo">265</span><a id="line.265">   * @param gyroAngle The current angle reading from the gyro in degrees around the Z axis. Use this</a>
+<span class="sourceLineNo">266</span><a id="line.266">   *     to implement field-oriented controls.</a>
+<span class="sourceLineNo">267</span><a id="line.267">   * @return Wheel speeds [-1.0..1.0].</a>
+<span class="sourceLineNo">268</span><a id="line.268">   */</a>
+<span class="sourceLineNo">269</span><a id="line.269">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">270</span><a id="line.270">  public WheelSpeeds driveCartesianIK(</a>
+<span class="sourceLineNo">271</span><a id="line.271">      double ySpeed, double xSpeed, double zRotation, double gyroAngle) {</a>
+<span class="sourceLineNo">272</span><a id="line.272">    ySpeed = MathUtil.clamp(ySpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">273</span><a id="line.273">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">274</span><a id="line.274"></a>
+<span class="sourceLineNo">275</span><a id="line.275">    // Compensate for gyro angle.</a>
+<span class="sourceLineNo">276</span><a id="line.276">    Vector2d input = new Vector2d(ySpeed, xSpeed);</a>
+<span class="sourceLineNo">277</span><a id="line.277">    input.rotate(-gyroAngle);</a>
+<span class="sourceLineNo">278</span><a id="line.278"></a>
+<span class="sourceLineNo">279</span><a id="line.279">    double[] wheelSpeeds = new double[3];</a>
+<span class="sourceLineNo">280</span><a id="line.280">    wheelSpeeds[MotorType.kLeft.value] = input.scalarProject(m_leftVec) + zRotation;</a>
+<span class="sourceLineNo">281</span><a id="line.281">    wheelSpeeds[MotorType.kRight.value] = input.scalarProject(m_rightVec) + zRotation;</a>
+<span class="sourceLineNo">282</span><a id="line.282">    wheelSpeeds[MotorType.kBack.value] = input.scalarProject(m_backVec) + zRotation;</a>
+<span class="sourceLineNo">283</span><a id="line.283"></a>
+<span class="sourceLineNo">284</span><a id="line.284">    normalize(wheelSpeeds);</a>
+<span class="sourceLineNo">285</span><a id="line.285"></a>
+<span class="sourceLineNo">286</span><a id="line.286">    return new WheelSpeeds(</a>
+<span class="sourceLineNo">287</span><a id="line.287">        wheelSpeeds[MotorType.kLeft.value],</a>
+<span class="sourceLineNo">288</span><a id="line.288">        wheelSpeeds[MotorType.kRight.value],</a>
+<span class="sourceLineNo">289</span><a id="line.289">        wheelSpeeds[MotorType.kBack.value]);</a>
+<span class="sourceLineNo">290</span><a id="line.290">  }</a>
+<span class="sourceLineNo">291</span><a id="line.291"></a>
+<span class="sourceLineNo">292</span><a id="line.292">  @Override</a>
+<span class="sourceLineNo">293</span><a id="line.293">  public void stopMotor() {</a>
+<span class="sourceLineNo">294</span><a id="line.294">    m_leftMotor.stopMotor();</a>
+<span class="sourceLineNo">295</span><a id="line.295">    m_rightMotor.stopMotor();</a>
+<span class="sourceLineNo">296</span><a id="line.296">    m_backMotor.stopMotor();</a>
+<span class="sourceLineNo">297</span><a id="line.297">    feed();</a>
+<span class="sourceLineNo">298</span><a id="line.298">  }</a>
+<span class="sourceLineNo">299</span><a id="line.299"></a>
+<span class="sourceLineNo">300</span><a id="line.300">  @Override</a>
+<span class="sourceLineNo">301</span><a id="line.301">  public String getDescription() {</a>
+<span class="sourceLineNo">302</span><a id="line.302">    return "KilloughDrive";</a>
+<span class="sourceLineNo">303</span><a id="line.303">  }</a>
+<span class="sourceLineNo">304</span><a id="line.304"></a>
+<span class="sourceLineNo">305</span><a id="line.305">  @Override</a>
+<span class="sourceLineNo">306</span><a id="line.306">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">307</span><a id="line.307">    builder.setSmartDashboardType("KilloughDrive");</a>
+<span class="sourceLineNo">308</span><a id="line.308">    builder.setActuator(true);</a>
+<span class="sourceLineNo">309</span><a id="line.309">    builder.setSafeState(this::stopMotor);</a>
+<span class="sourceLineNo">310</span><a id="line.310">    builder.addDoubleProperty("Left Motor Speed", m_leftMotor::get, m_leftMotor::set);</a>
+<span class="sourceLineNo">311</span><a id="line.311">    builder.addDoubleProperty("Right Motor Speed", m_rightMotor::get, m_rightMotor::set);</a>
+<span class="sourceLineNo">312</span><a id="line.312">    builder.addDoubleProperty("Back Motor Speed", m_backMotor::get, m_backMotor::set);</a>
+<span class="sourceLineNo">313</span><a id="line.313">  }</a>
+<span class="sourceLineNo">314</span><a id="line.314">}</a>
 
 
 

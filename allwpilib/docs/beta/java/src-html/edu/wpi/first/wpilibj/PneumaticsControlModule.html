@@ -247,12 +247,12 @@
 <span class="sourceLineNo">235</span><a id="line.235">  }</a>
 <span class="sourceLineNo">236</span><a id="line.236"></a>
 <span class="sourceLineNo">237</span><a id="line.237">  @Override</a>
-<span class="sourceLineNo">238</span><a id="line.238">  public void enableCompressorAnalog(double minAnalogVoltage, double maxAnalogVoltage) {</a>
+<span class="sourceLineNo">238</span><a id="line.238">  public void enableCompressorAnalog(double minPressure, double maxPressure) {</a>
 <span class="sourceLineNo">239</span><a id="line.239">    CTREPCMJNI.setClosedLoopControl(m_handle, false);</a>
 <span class="sourceLineNo">240</span><a id="line.240">  }</a>
 <span class="sourceLineNo">241</span><a id="line.241"></a>
 <span class="sourceLineNo">242</span><a id="line.242">  @Override</a>
-<span class="sourceLineNo">243</span><a id="line.243">  public void enableCompressorHybrid(double minAnalogVoltage, double maxAnalogVoltage) {</a>
+<span class="sourceLineNo">243</span><a id="line.243">  public void enableCompressorHybrid(double minPressure, double maxPressure) {</a>
 <span class="sourceLineNo">244</span><a id="line.244">    CTREPCMJNI.setClosedLoopControl(m_handle, false);</a>
 <span class="sourceLineNo">245</span><a id="line.245">  }</a>
 <span class="sourceLineNo">246</span><a id="line.246"></a>
@@ -267,7 +267,12 @@
 <span class="sourceLineNo">255</span><a id="line.255">  public double getAnalogVoltage(int channel) {</a>
 <span class="sourceLineNo">256</span><a id="line.256">    return 0;</a>
 <span class="sourceLineNo">257</span><a id="line.257">  }</a>
-<span class="sourceLineNo">258</span><a id="line.258">}</a>
+<span class="sourceLineNo">258</span><a id="line.258"></a>
+<span class="sourceLineNo">259</span><a id="line.259">  @Override</a>
+<span class="sourceLineNo">260</span><a id="line.260">  public double getPressure(int channel) {</a>
+<span class="sourceLineNo">261</span><a id="line.261">    return 0;</a>
+<span class="sourceLineNo">262</span><a id="line.262">  }</a>
+<span class="sourceLineNo">263</span><a id="line.263">}</a>
 
 
 

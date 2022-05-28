@@ -102,7 +102,7 @@
 <span class="sourceLineNo">090</span><a id="line.90">      // acceleration, since acceleration limits may be a function of velocity.</a>
 <span class="sourceLineNo">091</span><a id="line.91">      while (true) {</a>
 <span class="sourceLineNo">092</span><a id="line.92">        // Enforce global max velocity and max reachable velocity by global</a>
-<span class="sourceLineNo">093</span><a id="line.93">        // acceleration limit. vf = std::sqrt(vi^2 + 2*a*d).</a>
+<span class="sourceLineNo">093</span><a id="line.93">        // acceleration limit. v_f = √(v_i² + 2ad).</a>
 <span class="sourceLineNo">094</span><a id="line.94">        constrainedState.maxVelocityMetersPerSecond =</a>
 <span class="sourceLineNo">095</span><a id="line.95">            Math.min(</a>
 <span class="sourceLineNo">096</span><a id="line.96">                maxVelocityMetersPerSecond,</a>
@@ -176,7 +176,7 @@
 <span class="sourceLineNo">164</span><a id="line.164"></a>
 <span class="sourceLineNo">165</span><a id="line.165">      while (true) {</a>
 <span class="sourceLineNo">166</span><a id="line.166">        // Enforce max velocity limit (reverse)</a>
-<span class="sourceLineNo">167</span><a id="line.167">        // vf = std::sqrt(vi^2 + 2*a*d), where vi = successor.</a>
+<span class="sourceLineNo">167</span><a id="line.167">        // v_f = √(v_i² + 2ad), where v_i = successor.</a>
 <span class="sourceLineNo">168</span><a id="line.168">        double newMaxVelocity =</a>
 <span class="sourceLineNo">169</span><a id="line.169">            Math.sqrt(</a>
 <span class="sourceLineNo">170</span><a id="line.170">                successor.maxVelocityMetersPerSecond * successor.maxVelocityMetersPerSecond</a>

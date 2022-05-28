@@ -82,31 +82,32 @@
 <span class="sourceLineNo">070</span><a id="line.70">  public synchronized void setPosition(double x, double y) {</a>
 <span class="sourceLineNo">071</span><a id="line.71">    m_x = x;</a>
 <span class="sourceLineNo">072</span><a id="line.72">    m_y = y;</a>
-<span class="sourceLineNo">073</span><a id="line.73">  }</a>
-<span class="sourceLineNo">074</span><a id="line.74"></a>
-<span class="sourceLineNo">075</span><a id="line.75">  synchronized void update(NetworkTable table) {</a>
-<span class="sourceLineNo">076</span><a id="line.76">    m_table = table;</a>
-<span class="sourceLineNo">077</span><a id="line.77">    m_xEntry = m_table.getEntry("x");</a>
-<span class="sourceLineNo">078</span><a id="line.78">    m_yEntry = m_table.getEntry("y");</a>
-<span class="sourceLineNo">079</span><a id="line.79">    flush();</a>
-<span class="sourceLineNo">080</span><a id="line.80">    for (MechanismObject2d obj : m_objects.values()) {</a>
-<span class="sourceLineNo">081</span><a id="line.81">      obj.update(m_table.getSubTable(obj.getName()));</a>
-<span class="sourceLineNo">082</span><a id="line.82">    }</a>
-<span class="sourceLineNo">083</span><a id="line.83">  }</a>
-<span class="sourceLineNo">084</span><a id="line.84"></a>
-<span class="sourceLineNo">085</span><a id="line.85">  public String getName() {</a>
-<span class="sourceLineNo">086</span><a id="line.86">    return m_name;</a>
-<span class="sourceLineNo">087</span><a id="line.87">  }</a>
-<span class="sourceLineNo">088</span><a id="line.88"></a>
-<span class="sourceLineNo">089</span><a id="line.89">  private void flush() {</a>
-<span class="sourceLineNo">090</span><a id="line.90">    if (m_xEntry != null) {</a>
-<span class="sourceLineNo">091</span><a id="line.91">      m_xEntry.setDouble(m_x);</a>
-<span class="sourceLineNo">092</span><a id="line.92">    }</a>
-<span class="sourceLineNo">093</span><a id="line.93">    if (m_yEntry != null) {</a>
-<span class="sourceLineNo">094</span><a id="line.94">      m_yEntry.setDouble(m_y);</a>
-<span class="sourceLineNo">095</span><a id="line.95">    }</a>
-<span class="sourceLineNo">096</span><a id="line.96">  }</a>
-<span class="sourceLineNo">097</span><a id="line.97">}</a>
+<span class="sourceLineNo">073</span><a id="line.73">    flush();</a>
+<span class="sourceLineNo">074</span><a id="line.74">  }</a>
+<span class="sourceLineNo">075</span><a id="line.75"></a>
+<span class="sourceLineNo">076</span><a id="line.76">  synchronized void update(NetworkTable table) {</a>
+<span class="sourceLineNo">077</span><a id="line.77">    m_table = table;</a>
+<span class="sourceLineNo">078</span><a id="line.78">    m_xEntry = m_table.getEntry("x");</a>
+<span class="sourceLineNo">079</span><a id="line.79">    m_yEntry = m_table.getEntry("y");</a>
+<span class="sourceLineNo">080</span><a id="line.80">    flush();</a>
+<span class="sourceLineNo">081</span><a id="line.81">    for (MechanismObject2d obj : m_objects.values()) {</a>
+<span class="sourceLineNo">082</span><a id="line.82">      obj.update(m_table.getSubTable(obj.getName()));</a>
+<span class="sourceLineNo">083</span><a id="line.83">    }</a>
+<span class="sourceLineNo">084</span><a id="line.84">  }</a>
+<span class="sourceLineNo">085</span><a id="line.85"></a>
+<span class="sourceLineNo">086</span><a id="line.86">  public String getName() {</a>
+<span class="sourceLineNo">087</span><a id="line.87">    return m_name;</a>
+<span class="sourceLineNo">088</span><a id="line.88">  }</a>
+<span class="sourceLineNo">089</span><a id="line.89"></a>
+<span class="sourceLineNo">090</span><a id="line.90">  private void flush() {</a>
+<span class="sourceLineNo">091</span><a id="line.91">    if (m_xEntry != null) {</a>
+<span class="sourceLineNo">092</span><a id="line.92">      m_xEntry.setDouble(m_x);</a>
+<span class="sourceLineNo">093</span><a id="line.93">    }</a>
+<span class="sourceLineNo">094</span><a id="line.94">    if (m_yEntry != null) {</a>
+<span class="sourceLineNo">095</span><a id="line.95">      m_yEntry.setDouble(m_y);</a>
+<span class="sourceLineNo">096</span><a id="line.96">    }</a>
+<span class="sourceLineNo">097</span><a id="line.97">  }</a>
+<span class="sourceLineNo">098</span><a id="line.98">}</a>
 
 
 

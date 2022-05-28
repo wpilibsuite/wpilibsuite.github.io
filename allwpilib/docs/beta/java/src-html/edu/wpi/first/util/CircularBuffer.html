@@ -43,7 +43,7 @@
 <span class="sourceLineNo">031</span><a id="line.31">   *</a>
 <span class="sourceLineNo">032</span><a id="line.32">   * @return number of elements in buffer</a>
 <span class="sourceLineNo">033</span><a id="line.33">   */</a>
-<span class="sourceLineNo">034</span><a id="line.34">  double size() {</a>
+<span class="sourceLineNo">034</span><a id="line.34">  public int size() {</a>
 <span class="sourceLineNo">035</span><a id="line.35">    return m_length;</a>
 <span class="sourceLineNo">036</span><a id="line.36">  }</a>
 <span class="sourceLineNo">037</span><a id="line.37"></a>
@@ -52,7 +52,7 @@
 <span class="sourceLineNo">040</span><a id="line.40">   *</a>
 <span class="sourceLineNo">041</span><a id="line.41">   * @return value at front of buffer</a>
 <span class="sourceLineNo">042</span><a id="line.42">   */</a>
-<span class="sourceLineNo">043</span><a id="line.43">  double getFirst() {</a>
+<span class="sourceLineNo">043</span><a id="line.43">  public double getFirst() {</a>
 <span class="sourceLineNo">044</span><a id="line.44">    return m_data[m_front];</a>
 <span class="sourceLineNo">045</span><a id="line.45">  }</a>
 <span class="sourceLineNo">046</span><a id="line.46"></a>
@@ -61,7 +61,7 @@
 <span class="sourceLineNo">049</span><a id="line.49">   *</a>
 <span class="sourceLineNo">050</span><a id="line.50">   * @return value at back of buffer</a>
 <span class="sourceLineNo">051</span><a id="line.51">   */</a>
-<span class="sourceLineNo">052</span><a id="line.52">  double getLast() {</a>
+<span class="sourceLineNo">052</span><a id="line.52">  public double getLast() {</a>
 <span class="sourceLineNo">053</span><a id="line.53">    // If there are no elements in the buffer, do nothing</a>
 <span class="sourceLineNo">054</span><a id="line.54">    if (m_length == 0) {</a>
 <span class="sourceLineNo">055</span><a id="line.55">      return 0.0;</a>
@@ -150,7 +150,7 @@
 <span class="sourceLineNo">138</span><a id="line.138">   *</a>
 <span class="sourceLineNo">139</span><a id="line.139">   * @param size New buffer size.</a>
 <span class="sourceLineNo">140</span><a id="line.140">   */</a>
-<span class="sourceLineNo">141</span><a id="line.141">  void resize(int size) {</a>
+<span class="sourceLineNo">141</span><a id="line.141">  public void resize(int size) {</a>
 <span class="sourceLineNo">142</span><a id="line.142">    double[] newBuffer = new double[size];</a>
 <span class="sourceLineNo">143</span><a id="line.143">    m_length = Math.min(m_length, size);</a>
 <span class="sourceLineNo">144</span><a id="line.144">    for (int i = 0; i &lt; m_length; i++) {</a>

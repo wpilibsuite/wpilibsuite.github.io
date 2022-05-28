@@ -22,36 +22,38 @@
 <span class="sourceLineNo">010</span><a id="line.10"> * Schedules the given commands when this command is initialized. Useful for forking off from</a>
 <span class="sourceLineNo">011</span><a id="line.11"> * CommandGroups. Note that if run from a CommandGroup, the group will not know about the status of</a>
 <span class="sourceLineNo">012</span><a id="line.12"> * the scheduled commands, and will treat this command as finishing instantly.</a>
-<span class="sourceLineNo">013</span><a id="line.13"> */</a>
-<span class="sourceLineNo">014</span><a id="line.14">public class ScheduleCommand extends CommandBase {</a>
-<span class="sourceLineNo">015</span><a id="line.15">  private final Set&lt;Command&gt; m_toSchedule;</a>
-<span class="sourceLineNo">016</span><a id="line.16"></a>
-<span class="sourceLineNo">017</span><a id="line.17">  /**</a>
-<span class="sourceLineNo">018</span><a id="line.18">   * Creates a new ScheduleCommand that schedules the given commands when initialized.</a>
-<span class="sourceLineNo">019</span><a id="line.19">   *</a>
-<span class="sourceLineNo">020</span><a id="line.20">   * @param toSchedule the commands to schedule</a>
-<span class="sourceLineNo">021</span><a id="line.21">   */</a>
-<span class="sourceLineNo">022</span><a id="line.22">  public ScheduleCommand(Command... toSchedule) {</a>
-<span class="sourceLineNo">023</span><a id="line.23">    m_toSchedule = Set.of(toSchedule);</a>
-<span class="sourceLineNo">024</span><a id="line.24">  }</a>
-<span class="sourceLineNo">025</span><a id="line.25"></a>
-<span class="sourceLineNo">026</span><a id="line.26">  @Override</a>
-<span class="sourceLineNo">027</span><a id="line.27">  public void initialize() {</a>
-<span class="sourceLineNo">028</span><a id="line.28">    for (Command command : m_toSchedule) {</a>
-<span class="sourceLineNo">029</span><a id="line.29">      command.schedule();</a>
-<span class="sourceLineNo">030</span><a id="line.30">    }</a>
-<span class="sourceLineNo">031</span><a id="line.31">  }</a>
-<span class="sourceLineNo">032</span><a id="line.32"></a>
-<span class="sourceLineNo">033</span><a id="line.33">  @Override</a>
-<span class="sourceLineNo">034</span><a id="line.34">  public boolean isFinished() {</a>
-<span class="sourceLineNo">035</span><a id="line.35">    return true;</a>
-<span class="sourceLineNo">036</span><a id="line.36">  }</a>
-<span class="sourceLineNo">037</span><a id="line.37"></a>
-<span class="sourceLineNo">038</span><a id="line.38">  @Override</a>
-<span class="sourceLineNo">039</span><a id="line.39">  public boolean runsWhenDisabled() {</a>
-<span class="sourceLineNo">040</span><a id="line.40">    return true;</a>
-<span class="sourceLineNo">041</span><a id="line.41">  }</a>
-<span class="sourceLineNo">042</span><a id="line.42">}</a>
+<span class="sourceLineNo">013</span><a id="line.13"> *</a>
+<span class="sourceLineNo">014</span><a id="line.14"> * &lt;p&gt;This class is provided by the NewCommands VendorDep</a>
+<span class="sourceLineNo">015</span><a id="line.15"> */</a>
+<span class="sourceLineNo">016</span><a id="line.16">public class ScheduleCommand extends CommandBase {</a>
+<span class="sourceLineNo">017</span><a id="line.17">  private final Set&lt;Command&gt; m_toSchedule;</a>
+<span class="sourceLineNo">018</span><a id="line.18"></a>
+<span class="sourceLineNo">019</span><a id="line.19">  /**</a>
+<span class="sourceLineNo">020</span><a id="line.20">   * Creates a new ScheduleCommand that schedules the given commands when initialized.</a>
+<span class="sourceLineNo">021</span><a id="line.21">   *</a>
+<span class="sourceLineNo">022</span><a id="line.22">   * @param toSchedule the commands to schedule</a>
+<span class="sourceLineNo">023</span><a id="line.23">   */</a>
+<span class="sourceLineNo">024</span><a id="line.24">  public ScheduleCommand(Command... toSchedule) {</a>
+<span class="sourceLineNo">025</span><a id="line.25">    m_toSchedule = Set.of(toSchedule);</a>
+<span class="sourceLineNo">026</span><a id="line.26">  }</a>
+<span class="sourceLineNo">027</span><a id="line.27"></a>
+<span class="sourceLineNo">028</span><a id="line.28">  @Override</a>
+<span class="sourceLineNo">029</span><a id="line.29">  public void initialize() {</a>
+<span class="sourceLineNo">030</span><a id="line.30">    for (Command command : m_toSchedule) {</a>
+<span class="sourceLineNo">031</span><a id="line.31">      command.schedule();</a>
+<span class="sourceLineNo">032</span><a id="line.32">    }</a>
+<span class="sourceLineNo">033</span><a id="line.33">  }</a>
+<span class="sourceLineNo">034</span><a id="line.34"></a>
+<span class="sourceLineNo">035</span><a id="line.35">  @Override</a>
+<span class="sourceLineNo">036</span><a id="line.36">  public boolean isFinished() {</a>
+<span class="sourceLineNo">037</span><a id="line.37">    return true;</a>
+<span class="sourceLineNo">038</span><a id="line.38">  }</a>
+<span class="sourceLineNo">039</span><a id="line.39"></a>
+<span class="sourceLineNo">040</span><a id="line.40">  @Override</a>
+<span class="sourceLineNo">041</span><a id="line.41">  public boolean runsWhenDisabled() {</a>
+<span class="sourceLineNo">042</span><a id="line.42">    return true;</a>
+<span class="sourceLineNo">043</span><a id="line.43">  }</a>
+<span class="sourceLineNo">044</span><a id="line.44">}</a>
 
 
 

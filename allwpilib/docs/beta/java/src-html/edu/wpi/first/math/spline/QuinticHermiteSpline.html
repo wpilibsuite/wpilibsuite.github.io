@@ -92,33 +92,33 @@
 <span class="sourceLineNo">080</span><a id="line.80">   */</a>
 <span class="sourceLineNo">081</span><a id="line.81">  private SimpleMatrix makeHermiteBasis() {</a>
 <span class="sourceLineNo">082</span><a id="line.82">    if (hermiteBasis == null) {</a>
-<span class="sourceLineNo">083</span><a id="line.83">      // Given P(i), P'(i), P''(i), P(i+1), P'(i+1), P''(i+1), the control</a>
-<span class="sourceLineNo">084</span><a id="line.84">      // vectors, we want to find the coefficients of the spline</a>
-<span class="sourceLineNo">085</span><a id="line.85">      // P(t) = a5 * t^5 + a4 * t^4 + a3 * t^3 + a2 * t^2 + a1 * t + a0.</a>
+<span class="sourceLineNo">083</span><a id="line.83">      // Given P(i), P'(i), P"(i), P(i+1), P'(i+1), P"(i+1), the control vectors,</a>
+<span class="sourceLineNo">084</span><a id="line.84">      // we want to find the coefficients of the spline</a>
+<span class="sourceLineNo">085</span><a id="line.85">      // P(t) = a₅t⁵ + a₄t⁴ + a₃t³ + a₂t² + a₁t + a₀.</a>
 <span class="sourceLineNo">086</span><a id="line.86">      //</a>
-<span class="sourceLineNo">087</span><a id="line.87">      // P(i)     = P(0)   = a0</a>
-<span class="sourceLineNo">088</span><a id="line.88">      // P'(i)    = P'(0)  = a1</a>
-<span class="sourceLineNo">089</span><a id="line.89">      // P''(i)   = P''(0) = 2 * a2</a>
-<span class="sourceLineNo">090</span><a id="line.90">      // P(i+1)   = P(1)   = a5 + a4 + a3 + a2 + a1 + a0</a>
-<span class="sourceLineNo">091</span><a id="line.91">      // P'(i+1)  = P'(1)  = 5 * a5 + 4 * a4 + 3 * a3 + 2 * a2 + a1</a>
-<span class="sourceLineNo">092</span><a id="line.92">      // P''(i+1) = P''(1) = 20 * a5 + 12 * a4 + 6 * a3 + 2 * a2</a>
+<span class="sourceLineNo">087</span><a id="line.87">      // P(i)    = P(0)  = a₀</a>
+<span class="sourceLineNo">088</span><a id="line.88">      // P'(i)   = P'(0) = a₁</a>
+<span class="sourceLineNo">089</span><a id="line.89">      // P''(i)  = P"(0) = 2a₂</a>
+<span class="sourceLineNo">090</span><a id="line.90">      // P(i+1)  = P(1)  = a₅ + a₄ + a₃ + a₂ + a₁ + a₀</a>
+<span class="sourceLineNo">091</span><a id="line.91">      // P'(i+1) = P'(1) = 5a₅ + 4a₄ + 3a₃ + 2a₂ + a₁</a>
+<span class="sourceLineNo">092</span><a id="line.92">      // P"(i+1) = P"(1) = 20a₅ + 12a₄ + 6a₃ + 2a₂</a>
 <span class="sourceLineNo">093</span><a id="line.93">      //</a>
-<span class="sourceLineNo">094</span><a id="line.94">      // [ P(i)     ] = [  0  0  0  0  0  1 ][ a5 ]</a>
-<span class="sourceLineNo">095</span><a id="line.95">      // [ P'(i)    ] = [  0  0  0  0  1  0 ][ a4 ]</a>
-<span class="sourceLineNo">096</span><a id="line.96">      // [ P''(i)   ] = [  0  0  0  2  0  0 ][ a3 ]</a>
-<span class="sourceLineNo">097</span><a id="line.97">      // [ P(i+1)   ] = [  1  1  1  1  1  1 ][ a2 ]</a>
-<span class="sourceLineNo">098</span><a id="line.98">      // [ P'(i+1)  ] = [  5  4  3  2  1  0 ][ a1 ]</a>
-<span class="sourceLineNo">099</span><a id="line.99">      // [ P''(i+1) ] = [ 20 12  6  2  0  0 ][ a0 ]</a>
+<span class="sourceLineNo">094</span><a id="line.94">      // [P(i)   ] = [ 0  0  0  0  0  1][a₅]</a>
+<span class="sourceLineNo">095</span><a id="line.95">      // [P'(i)  ] = [ 0  0  0  0  1  0][a₄]</a>
+<span class="sourceLineNo">096</span><a id="line.96">      // [P"(i)  ] = [ 0  0  0  2  0  0][a₃]</a>
+<span class="sourceLineNo">097</span><a id="line.97">      // [P(i+1) ] = [ 1  1  1  1  1  1][a₂]</a>
+<span class="sourceLineNo">098</span><a id="line.98">      // [P'(i+1)] = [ 5  4  3  2  1  0][a₁]</a>
+<span class="sourceLineNo">099</span><a id="line.99">      // [P"(i+1)] = [20 12  6  2  0  0][a₀]</a>
 <span class="sourceLineNo">100</span><a id="line.100">      //</a>
 <span class="sourceLineNo">101</span><a id="line.101">      // To solve for the coefficients, we can invert the 6x6 matrix and move it</a>
 <span class="sourceLineNo">102</span><a id="line.102">      // to the other side of the equation.</a>
 <span class="sourceLineNo">103</span><a id="line.103">      //</a>
-<span class="sourceLineNo">104</span><a id="line.104">      // [ a5 ] = [  -6.0  -3.0  -0.5   6.0  -3.0   0.5 ][ P(i)     ]</a>
-<span class="sourceLineNo">105</span><a id="line.105">      // [ a4 ] = [  15.0   8.0   1.5 -15.0   7.0  -1.0 ][ P'(i)    ]</a>
-<span class="sourceLineNo">106</span><a id="line.106">      // [ a3 ] = [ -10.0  -6.0  -1.5  10.0  -4.0   0.5 ][ P''(i)   ]</a>
-<span class="sourceLineNo">107</span><a id="line.107">      // [ a2 ] = [   0.0   0.0   0.5   0.0   0.0   0.0 ][ P(i+1)   ]</a>
-<span class="sourceLineNo">108</span><a id="line.108">      // [ a1 ] = [   0.0   1.0   0.0   0.0   0.0   0.0 ][ P'(i+1)  ]</a>
-<span class="sourceLineNo">109</span><a id="line.109">      // [ a0 ] = [   1.0   0.0   0.0   0.0   0.0   0.0 ][ P''(i+1) ]</a>
+<span class="sourceLineNo">104</span><a id="line.104">      // [a₅] = [ -6.0  -3.0  -0.5   6.0  -3.0   0.5][P(i)   ]</a>
+<span class="sourceLineNo">105</span><a id="line.105">      // [a₄] = [ 15.0   8.0   1.5 -15.0   7.0  -1.0][P'(i)  ]</a>
+<span class="sourceLineNo">106</span><a id="line.106">      // [a₃] = [-10.0  -6.0  -1.5  10.0  -4.0   0.5][P"(i)  ]</a>
+<span class="sourceLineNo">107</span><a id="line.107">      // [a₂] = [  0.0   0.0   0.5   0.0   0.0   0.0][P(i+1) ]</a>
+<span class="sourceLineNo">108</span><a id="line.108">      // [a₁] = [  0.0   1.0   0.0   0.0   0.0   0.0][P'(i+1)]</a>
+<span class="sourceLineNo">109</span><a id="line.109">      // [a₀] = [  1.0   0.0   0.0   0.0   0.0   0.0][P"(i+1)]</a>
 <span class="sourceLineNo">110</span><a id="line.110">      hermiteBasis =</a>
 <span class="sourceLineNo">111</span><a id="line.111">          new SimpleMatrix(</a>
 <span class="sourceLineNo">112</span><a id="line.112">              6,</a>

@@ -135,114 +135,128 @@
 <span class="sourceLineNo">123</span><a id="line.123">  SimpleWidget add(String title, Object defaultValue);</a>
 <span class="sourceLineNo">124</span><a id="line.124"></a>
 <span class="sourceLineNo">125</span><a id="line.125">  /**</a>
-<span class="sourceLineNo">126</span><a id="line.126">   * Adds a widget to this container. The widget will display the data provided by the value</a>
-<span class="sourceLineNo">127</span><a id="line.127">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
-<span class="sourceLineNo">128</span><a id="line.128">   * overridden by values from the value supplier.</a>
-<span class="sourceLineNo">129</span><a id="line.129">   *</a>
-<span class="sourceLineNo">130</span><a id="line.130">   * @param title the title of the widget</a>
-<span class="sourceLineNo">131</span><a id="line.131">   * @param valueSupplier the supplier for values</a>
-<span class="sourceLineNo">132</span><a id="line.132">   * @return a widget to display data</a>
-<span class="sourceLineNo">133</span><a id="line.133">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">134</span><a id="line.134">   *     title</a>
-<span class="sourceLineNo">135</span><a id="line.135">   */</a>
-<span class="sourceLineNo">136</span><a id="line.136">  SuppliedValueWidget&lt;String&gt; addString(String title, Supplier&lt;String&gt; valueSupplier);</a>
-<span class="sourceLineNo">137</span><a id="line.137"></a>
-<span class="sourceLineNo">138</span><a id="line.138">  /**</a>
-<span class="sourceLineNo">139</span><a id="line.139">   * Adds a widget to this container. The widget will display the data provided by the value</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
-<span class="sourceLineNo">141</span><a id="line.141">   * overridden by values from the value supplier.</a>
-<span class="sourceLineNo">142</span><a id="line.142">   *</a>
-<span class="sourceLineNo">143</span><a id="line.143">   * @param title the title of the widget</a>
-<span class="sourceLineNo">144</span><a id="line.144">   * @param valueSupplier the supplier for values</a>
-<span class="sourceLineNo">145</span><a id="line.145">   * @return a widget to display data</a>
-<span class="sourceLineNo">146</span><a id="line.146">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">147</span><a id="line.147">   *     title</a>
-<span class="sourceLineNo">148</span><a id="line.148">   */</a>
-<span class="sourceLineNo">149</span><a id="line.149">  SuppliedValueWidget&lt;Double&gt; addNumber(String title, DoubleSupplier valueSupplier);</a>
-<span class="sourceLineNo">150</span><a id="line.150"></a>
-<span class="sourceLineNo">151</span><a id="line.151">  /**</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * Adds a widget to this container. The widget will display the data provided by the value</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * overridden by values from the value supplier.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   *</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * @param title the title of the widget</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * @param valueSupplier the supplier for values</a>
-<span class="sourceLineNo">158</span><a id="line.158">   * @return a widget to display data</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">160</span><a id="line.160">   *     title</a>
-<span class="sourceLineNo">161</span><a id="line.161">   */</a>
-<span class="sourceLineNo">162</span><a id="line.162">  SuppliedValueWidget&lt;Boolean&gt; addBoolean(String title, BooleanSupplier valueSupplier);</a>
-<span class="sourceLineNo">163</span><a id="line.163"></a>
-<span class="sourceLineNo">164</span><a id="line.164">  /**</a>
-<span class="sourceLineNo">165</span><a id="line.165">   * Adds a widget to this container. The widget will display the data provided by the value</a>
-<span class="sourceLineNo">166</span><a id="line.166">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
-<span class="sourceLineNo">167</span><a id="line.167">   * overridden by values from the value supplier.</a>
-<span class="sourceLineNo">168</span><a id="line.168">   *</a>
-<span class="sourceLineNo">169</span><a id="line.169">   * @param title the title of the widget</a>
-<span class="sourceLineNo">170</span><a id="line.170">   * @param valueSupplier the supplier for values</a>
-<span class="sourceLineNo">171</span><a id="line.171">   * @return a widget to display data</a>
-<span class="sourceLineNo">172</span><a id="line.172">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">173</span><a id="line.173">   *     title</a>
-<span class="sourceLineNo">174</span><a id="line.174">   */</a>
-<span class="sourceLineNo">175</span><a id="line.175">  SuppliedValueWidget&lt;String[]&gt; addStringArray(String title, Supplier&lt;String[]&gt; valueSupplier);</a>
-<span class="sourceLineNo">176</span><a id="line.176"></a>
-<span class="sourceLineNo">177</span><a id="line.177">  /**</a>
-<span class="sourceLineNo">178</span><a id="line.178">   * Adds a widget to this container. The widget will display the data provided by the value</a>
-<span class="sourceLineNo">179</span><a id="line.179">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * overridden by values from the value supplier.</a>
-<span class="sourceLineNo">181</span><a id="line.181">   *</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * @param title the title of the widget</a>
-<span class="sourceLineNo">183</span><a id="line.183">   * @param valueSupplier the supplier for values</a>
-<span class="sourceLineNo">184</span><a id="line.184">   * @return a widget to display data</a>
-<span class="sourceLineNo">185</span><a id="line.185">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">186</span><a id="line.186">   *     title</a>
-<span class="sourceLineNo">187</span><a id="line.187">   */</a>
-<span class="sourceLineNo">188</span><a id="line.188">  SuppliedValueWidget&lt;double[]&gt; addDoubleArray(String title, Supplier&lt;double[]&gt; valueSupplier);</a>
-<span class="sourceLineNo">189</span><a id="line.189"></a>
-<span class="sourceLineNo">190</span><a id="line.190">  /**</a>
-<span class="sourceLineNo">191</span><a id="line.191">   * Adds a widget to this container. The widget will display the data provided by the value</a>
-<span class="sourceLineNo">192</span><a id="line.192">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
-<span class="sourceLineNo">193</span><a id="line.193">   * overridden by values from the value supplier.</a>
-<span class="sourceLineNo">194</span><a id="line.194">   *</a>
-<span class="sourceLineNo">195</span><a id="line.195">   * @param title the title of the widget</a>
-<span class="sourceLineNo">196</span><a id="line.196">   * @param valueSupplier the supplier for values</a>
-<span class="sourceLineNo">197</span><a id="line.197">   * @return a widget to display data</a>
-<span class="sourceLineNo">198</span><a id="line.198">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">199</span><a id="line.199">   *     title</a>
-<span class="sourceLineNo">200</span><a id="line.200">   */</a>
-<span class="sourceLineNo">201</span><a id="line.201">  SuppliedValueWidget&lt;boolean[]&gt; addBooleanArray(String title, Supplier&lt;boolean[]&gt; valueSupplier);</a>
-<span class="sourceLineNo">202</span><a id="line.202"></a>
-<span class="sourceLineNo">203</span><a id="line.203">  /**</a>
-<span class="sourceLineNo">204</span><a id="line.204">   * Adds a widget to this container. The widget will display the data provided by the value</a>
-<span class="sourceLineNo">205</span><a id="line.205">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
-<span class="sourceLineNo">206</span><a id="line.206">   * overridden by values from the value supplier.</a>
-<span class="sourceLineNo">207</span><a id="line.207">   *</a>
-<span class="sourceLineNo">208</span><a id="line.208">   * @param title the title of the widget</a>
-<span class="sourceLineNo">209</span><a id="line.209">   * @param valueSupplier the supplier for values</a>
-<span class="sourceLineNo">210</span><a id="line.210">   * @return a widget to display data</a>
-<span class="sourceLineNo">211</span><a id="line.211">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">212</span><a id="line.212">   *     title</a>
-<span class="sourceLineNo">213</span><a id="line.213">   */</a>
-<span class="sourceLineNo">214</span><a id="line.214">  SuppliedValueWidget&lt;byte[]&gt; addRaw(String title, Supplier&lt;byte[]&gt; valueSupplier);</a>
-<span class="sourceLineNo">215</span><a id="line.215"></a>
-<span class="sourceLineNo">216</span><a id="line.216">  /**</a>
-<span class="sourceLineNo">217</span><a id="line.217">   * Adds a widget to this container to display a simple piece of data. Unlike {@link #add(String,</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * Object)}, the value in the widget will be saved on the robot and will be used when the robot</a>
-<span class="sourceLineNo">219</span><a id="line.219">   * program next starts rather than {@code defaultValue}.</a>
-<span class="sourceLineNo">220</span><a id="line.220">   *</a>
-<span class="sourceLineNo">221</span><a id="line.221">   * @param title the title of the widget</a>
-<span class="sourceLineNo">222</span><a id="line.222">   * @param defaultValue the default value of the widget</a>
-<span class="sourceLineNo">223</span><a id="line.223">   * @return a widget to display the sendable data</a>
-<span class="sourceLineNo">224</span><a id="line.224">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
-<span class="sourceLineNo">225</span><a id="line.225">   *     title</a>
-<span class="sourceLineNo">226</span><a id="line.226">   * @see #add(String, Object) add(String title, Object defaultValue)</a>
+<span class="sourceLineNo">126</span><a id="line.126">   * Adds a widget to this container to display a video stream.</a>
+<span class="sourceLineNo">127</span><a id="line.127">   *</a>
+<span class="sourceLineNo">128</span><a id="line.128">   * @param title the title of the widget</a>
+<span class="sourceLineNo">129</span><a id="line.129">   * @param cameraName the name of the streamed camera</a>
+<span class="sourceLineNo">130</span><a id="line.130">   * @param cameraUrls the URLs with which the dashboard can access the camera stream</a>
+<span class="sourceLineNo">131</span><a id="line.131">   * @return a widget to display the camera stream</a>
+<span class="sourceLineNo">132</span><a id="line.132">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">133</span><a id="line.133">   *     title</a>
+<span class="sourceLineNo">134</span><a id="line.134">   */</a>
+<span class="sourceLineNo">135</span><a id="line.135">  default ComplexWidget addCamera(String title, String cameraName, String... cameraUrls) {</a>
+<span class="sourceLineNo">136</span><a id="line.136">    return add(title, SendableCameraWrapper.wrap(cameraName, cameraUrls));</a>
+<span class="sourceLineNo">137</span><a id="line.137">  }</a>
+<span class="sourceLineNo">138</span><a id="line.138"></a>
+<span class="sourceLineNo">139</span><a id="line.139">  /**</a>
+<span class="sourceLineNo">140</span><a id="line.140">   * Adds a widget to this container. The widget will display the data provided by the value</a>
+<span class="sourceLineNo">141</span><a id="line.141">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
+<span class="sourceLineNo">142</span><a id="line.142">   * overridden by values from the value supplier.</a>
+<span class="sourceLineNo">143</span><a id="line.143">   *</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * @param title the title of the widget</a>
+<span class="sourceLineNo">145</span><a id="line.145">   * @param valueSupplier the supplier for values</a>
+<span class="sourceLineNo">146</span><a id="line.146">   * @return a widget to display data</a>
+<span class="sourceLineNo">147</span><a id="line.147">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">148</span><a id="line.148">   *     title</a>
+<span class="sourceLineNo">149</span><a id="line.149">   */</a>
+<span class="sourceLineNo">150</span><a id="line.150">  SuppliedValueWidget&lt;String&gt; addString(String title, Supplier&lt;String&gt; valueSupplier);</a>
+<span class="sourceLineNo">151</span><a id="line.151"></a>
+<span class="sourceLineNo">152</span><a id="line.152">  /**</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * Adds a widget to this container. The widget will display the data provided by the value</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * overridden by values from the value supplier.</a>
+<span class="sourceLineNo">156</span><a id="line.156">   *</a>
+<span class="sourceLineNo">157</span><a id="line.157">   * @param title the title of the widget</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * @param valueSupplier the supplier for values</a>
+<span class="sourceLineNo">159</span><a id="line.159">   * @return a widget to display data</a>
+<span class="sourceLineNo">160</span><a id="line.160">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">161</span><a id="line.161">   *     title</a>
+<span class="sourceLineNo">162</span><a id="line.162">   */</a>
+<span class="sourceLineNo">163</span><a id="line.163">  SuppliedValueWidget&lt;Double&gt; addNumber(String title, DoubleSupplier valueSupplier);</a>
+<span class="sourceLineNo">164</span><a id="line.164"></a>
+<span class="sourceLineNo">165</span><a id="line.165">  /**</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * Adds a widget to this container. The widget will display the data provided by the value</a>
+<span class="sourceLineNo">167</span><a id="line.167">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * overridden by values from the value supplier.</a>
+<span class="sourceLineNo">169</span><a id="line.169">   *</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * @param title the title of the widget</a>
+<span class="sourceLineNo">171</span><a id="line.171">   * @param valueSupplier the supplier for values</a>
+<span class="sourceLineNo">172</span><a id="line.172">   * @return a widget to display data</a>
+<span class="sourceLineNo">173</span><a id="line.173">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">174</span><a id="line.174">   *     title</a>
+<span class="sourceLineNo">175</span><a id="line.175">   */</a>
+<span class="sourceLineNo">176</span><a id="line.176">  SuppliedValueWidget&lt;Boolean&gt; addBoolean(String title, BooleanSupplier valueSupplier);</a>
+<span class="sourceLineNo">177</span><a id="line.177"></a>
+<span class="sourceLineNo">178</span><a id="line.178">  /**</a>
+<span class="sourceLineNo">179</span><a id="line.179">   * Adds a widget to this container. The widget will display the data provided by the value</a>
+<span class="sourceLineNo">180</span><a id="line.180">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * overridden by values from the value supplier.</a>
+<span class="sourceLineNo">182</span><a id="line.182">   *</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * @param title the title of the widget</a>
+<span class="sourceLineNo">184</span><a id="line.184">   * @param valueSupplier the supplier for values</a>
+<span class="sourceLineNo">185</span><a id="line.185">   * @return a widget to display data</a>
+<span class="sourceLineNo">186</span><a id="line.186">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">187</span><a id="line.187">   *     title</a>
+<span class="sourceLineNo">188</span><a id="line.188">   */</a>
+<span class="sourceLineNo">189</span><a id="line.189">  SuppliedValueWidget&lt;String[]&gt; addStringArray(String title, Supplier&lt;String[]&gt; valueSupplier);</a>
+<span class="sourceLineNo">190</span><a id="line.190"></a>
+<span class="sourceLineNo">191</span><a id="line.191">  /**</a>
+<span class="sourceLineNo">192</span><a id="line.192">   * Adds a widget to this container. The widget will display the data provided by the value</a>
+<span class="sourceLineNo">193</span><a id="line.193">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
+<span class="sourceLineNo">194</span><a id="line.194">   * overridden by values from the value supplier.</a>
+<span class="sourceLineNo">195</span><a id="line.195">   *</a>
+<span class="sourceLineNo">196</span><a id="line.196">   * @param title the title of the widget</a>
+<span class="sourceLineNo">197</span><a id="line.197">   * @param valueSupplier the supplier for values</a>
+<span class="sourceLineNo">198</span><a id="line.198">   * @return a widget to display data</a>
+<span class="sourceLineNo">199</span><a id="line.199">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">200</span><a id="line.200">   *     title</a>
+<span class="sourceLineNo">201</span><a id="line.201">   */</a>
+<span class="sourceLineNo">202</span><a id="line.202">  SuppliedValueWidget&lt;double[]&gt; addDoubleArray(String title, Supplier&lt;double[]&gt; valueSupplier);</a>
+<span class="sourceLineNo">203</span><a id="line.203"></a>
+<span class="sourceLineNo">204</span><a id="line.204">  /**</a>
+<span class="sourceLineNo">205</span><a id="line.205">   * Adds a widget to this container. The widget will display the data provided by the value</a>
+<span class="sourceLineNo">206</span><a id="line.206">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
+<span class="sourceLineNo">207</span><a id="line.207">   * overridden by values from the value supplier.</a>
+<span class="sourceLineNo">208</span><a id="line.208">   *</a>
+<span class="sourceLineNo">209</span><a id="line.209">   * @param title the title of the widget</a>
+<span class="sourceLineNo">210</span><a id="line.210">   * @param valueSupplier the supplier for values</a>
+<span class="sourceLineNo">211</span><a id="line.211">   * @return a widget to display data</a>
+<span class="sourceLineNo">212</span><a id="line.212">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">213</span><a id="line.213">   *     title</a>
+<span class="sourceLineNo">214</span><a id="line.214">   */</a>
+<span class="sourceLineNo">215</span><a id="line.215">  SuppliedValueWidget&lt;boolean[]&gt; addBooleanArray(String title, Supplier&lt;boolean[]&gt; valueSupplier);</a>
+<span class="sourceLineNo">216</span><a id="line.216"></a>
+<span class="sourceLineNo">217</span><a id="line.217">  /**</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * Adds a widget to this container. The widget will display the data provided by the value</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * supplier. Changes made on the dashboard will not propagate to the widget object, and will be</a>
+<span class="sourceLineNo">220</span><a id="line.220">   * overridden by values from the value supplier.</a>
+<span class="sourceLineNo">221</span><a id="line.221">   *</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * @param title the title of the widget</a>
+<span class="sourceLineNo">223</span><a id="line.223">   * @param valueSupplier the supplier for values</a>
+<span class="sourceLineNo">224</span><a id="line.224">   * @return a widget to display data</a>
+<span class="sourceLineNo">225</span><a id="line.225">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">226</span><a id="line.226">   *     title</a>
 <span class="sourceLineNo">227</span><a id="line.227">   */</a>
-<span class="sourceLineNo">228</span><a id="line.228">  default SimpleWidget addPersistent(String title, Object defaultValue) {</a>
-<span class="sourceLineNo">229</span><a id="line.229">    SimpleWidget widget = add(title, defaultValue);</a>
-<span class="sourceLineNo">230</span><a id="line.230">    widget.getEntry().setPersistent();</a>
-<span class="sourceLineNo">231</span><a id="line.231">    return widget;</a>
-<span class="sourceLineNo">232</span><a id="line.232">  }</a>
-<span class="sourceLineNo">233</span><a id="line.233">}</a>
+<span class="sourceLineNo">228</span><a id="line.228">  SuppliedValueWidget&lt;byte[]&gt; addRaw(String title, Supplier&lt;byte[]&gt; valueSupplier);</a>
+<span class="sourceLineNo">229</span><a id="line.229"></a>
+<span class="sourceLineNo">230</span><a id="line.230">  /**</a>
+<span class="sourceLineNo">231</span><a id="line.231">   * Adds a widget to this container to display a simple piece of data. Unlike {@link #add(String,</a>
+<span class="sourceLineNo">232</span><a id="line.232">   * Object)}, the value in the widget will be saved on the robot and will be used when the robot</a>
+<span class="sourceLineNo">233</span><a id="line.233">   * program next starts rather than {@code defaultValue}.</a>
+<span class="sourceLineNo">234</span><a id="line.234">   *</a>
+<span class="sourceLineNo">235</span><a id="line.235">   * @param title the title of the widget</a>
+<span class="sourceLineNo">236</span><a id="line.236">   * @param defaultValue the default value of the widget</a>
+<span class="sourceLineNo">237</span><a id="line.237">   * @return a widget to display the sendable data</a>
+<span class="sourceLineNo">238</span><a id="line.238">   * @throws IllegalArgumentException if a widget already exists in this container with the given</a>
+<span class="sourceLineNo">239</span><a id="line.239">   *     title</a>
+<span class="sourceLineNo">240</span><a id="line.240">   * @see #add(String, Object) add(String title, Object defaultValue)</a>
+<span class="sourceLineNo">241</span><a id="line.241">   */</a>
+<span class="sourceLineNo">242</span><a id="line.242">  default SimpleWidget addPersistent(String title, Object defaultValue) {</a>
+<span class="sourceLineNo">243</span><a id="line.243">    SimpleWidget widget = add(title, defaultValue);</a>
+<span class="sourceLineNo">244</span><a id="line.244">    widget.getEntry().setPersistent();</a>
+<span class="sourceLineNo">245</span><a id="line.245">    return widget;</a>
+<span class="sourceLineNo">246</span><a id="line.246">  }</a>
+<span class="sourceLineNo">247</span><a id="line.247">}</a>
 
 
 

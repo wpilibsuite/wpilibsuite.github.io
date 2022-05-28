@@ -198,7 +198,7 @@
 <span class="sourceLineNo">186</span><a id="line.186">   * @return The normalized input.</a>
 <span class="sourceLineNo">187</span><a id="line.187">   */</a>
 <span class="sourceLineNo">188</span><a id="line.188">  protected Matrix&lt;Inputs, N1&gt; clampInput(Matrix&lt;Inputs, N1&gt; u) {</a>
-<span class="sourceLineNo">189</span><a id="line.189">    return StateSpaceUtil.normalizeInputVector(u, RobotController.getBatteryVoltage());</a>
+<span class="sourceLineNo">189</span><a id="line.189">    return StateSpaceUtil.desaturateInputVector(u, RobotController.getBatteryVoltage());</a>
 <span class="sourceLineNo">190</span><a id="line.190">  }</a>
 <span class="sourceLineNo">191</span><a id="line.191">}</a>
 
