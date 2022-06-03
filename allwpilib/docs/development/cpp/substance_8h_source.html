@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-7-g8b6df88</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-5-g45b598d</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('substance_8h_source.html',''); initRes
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if !defined(DISABLE_PREDEFINED_UNITS) || \</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    defined(ENABLE_PREDEFINED_SUBSTANCE_UNITS)</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespaceunits.html#a86ecbd4213d0789000445fcf4d13b0f5">   42</a></span><a class="code hl_function" href="namespaceunits.html#ab5b9556772b691f6ce8d3a41c4d9562a">UNIT_ADD</a>(substance, mole, moles, mol,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespaceunits.html#a86ecbd4213d0789000445fcf4d13b0f5">   42</a></span><a class="code hl_function" href="namespaceunits.html#ab56e69b8cee8cd4041a747dbe1189e83">UNIT_ADD</a>(substance, mole, moles, mol,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>         <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1&gt;, <a class="code hl_struct" href="structunits_1_1base__unit.html">units::category::substance_unit</a>&gt;)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_define" href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a>(substance)</div>
@@ -145,8 +145,8 @@ $(document).ready(function(){initNavTree('substance_8h_source.html',''); initRes
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}  <span class="comment">// namespace units</span></div>
 <div class="ttc" id="abase_8h_html"><div class="ttname"><a href="base_8h.html">base.h</a></div></div>
 <div class="ttc" id="abase_8h_html_aa0b0ec340728bbef5aeab07641a61948"><div class="ttname"><a href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a></div><div class="ttdeci">#define UNIT_ADD_CATEGORY_TRAIT(unitCategory)</div><div class="ttdoc">Macro to create the is_category_unit type trait.</div><div class="ttdef"><b>Definition:</b> base.h:384</div></div>
-<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> angular_velocity.h:33</div></div>
-<div class="ttc" id="anamespaceunits_html_ab5b9556772b691f6ce8d3a41c4d9562a"><div class="ttname"><a href="namespaceunits.html#ab5b9556772b691f6ce8d3a41c4d9562a">units::UNIT_ADD</a></div><div class="ttdeci">UNIT_ADD(angular_velocity, radians_per_second, radians_per_second, rad_per_s, unit&lt; std::ratio&lt; 1 &gt;, units::category::angular_velocity_unit &gt;) UNIT_ADD(angular_velocity</div></div>
+<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> torque.h:34</div></div>
+<div class="ttc" id="anamespaceunits_html_ab56e69b8cee8cd4041a747dbe1189e83"><div class="ttname"><a href="namespaceunits.html#ab56e69b8cee8cd4041a747dbe1189e83">units::UNIT_ADD</a></div><div class="ttdeci">UNIT_ADD(torque, newton_meter, newton_meters, Nm, unit&lt; std::ratio&lt; 1 &gt;, units::energy::joule &gt;) UNIT_ADD(torque</div></div>
 <div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:761</div></div>
 <div class="ttc" id="astructunits_1_1unit_html"><div class="ttname"><a href="structunits_1_1unit.html">units::unit</a></div><div class="ttdoc">Type representing an arbitrary unit.</div><div class="ttdef"><b>Definition:</b> base.h:887</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('substance_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="substance_8h.html">substance.h</a></li>
-    <li class="footer">Generated on Wed Jun 1 2022 17:16:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jun 3 2022 04:26:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

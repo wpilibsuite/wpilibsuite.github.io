@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-7-g8b6df88</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-5-g45b598d</span>
    </div>
   </td>
  </tr>
@@ -354,7 +354,7 @@ Public Attributes</h2></td></tr>
 <p>Calculates the feedforward from the gains and setpoints. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angle</td><td>The angle setpoint, in radians. </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle setpoint, in radians. This angle should be measured from the horizontal (i.e. if the provided angle is 0, the arm should be parallel to the floor). If your encoder does not follow this convention, an offset should be added. </td></tr>
     <tr><td class="paramname">velocity</td><td>The velocity setpoint, in radians per second. </td></tr>
     <tr><td class="paramname">acceleration</td><td>The acceleration setpoint, in radians per second². </td></tr>
   </table>
@@ -409,7 +409,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">maxVoltage</td><td>The maximum voltage that can be supplied to the arm. </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle of the arm </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle of the arm. This angle should be measured from the horizontal (i.e. if the provided angle is 0, the arm should be parallel to the floor). If your encoder does not follow this convention, an offset should be added. </td></tr>
     <tr><td class="paramname">velocity</td><td>The velocity of the arm. </td></tr>
   </table>
   </dd>
@@ -463,7 +463,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">maxVoltage</td><td>The maximum voltage that can be supplied to the arm. </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle of the arm </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle of the arm. This angle should be measured from the horizontal (i.e. if the provided angle is 0, the arm should be parallel to the floor). If your encoder does not follow this convention, an offset should be added. </td></tr>
     <tr><td class="paramname">acceleration</td><td>The acceleration of the arm. </td></tr>
   </table>
   </dd>
@@ -517,7 +517,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">maxVoltage</td><td>The maximum voltage that can be supplied to the arm. </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle of the arm </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle of the arm. This angle should be measured from the horizontal (i.e. if the provided angle is 0, the arm should be parallel to the floor). If your encoder does not follow this convention, an offset should be added. </td></tr>
     <tr><td class="paramname">velocity</td><td>The velocity of the arm. </td></tr>
   </table>
   </dd>
@@ -571,7 +571,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">maxVoltage</td><td>The maximum voltage that can be supplied to the arm. </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle of the arm </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle of the arm. This angle should be measured from the horizontal (i.e. if the provided angle is 0, the arm should be parallel to the floor). If your encoder does not follow this convention, an offset should be added. </td></tr>
     <tr><td class="paramname">acceleration</td><td>The acceleration of the arm. </td></tr>
   </table>
   </dd>
@@ -646,7 +646,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_arm_feedforward.html">ArmFeedforward</a></li>
-    <li class="footer">Generated on Wed Jun 1 2022 17:16:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jun 3 2022 04:26:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

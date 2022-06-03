@@ -22,7 +22,7 @@ var searchData=
   ['degrees_5fper_5fsecond_5fsquared_19',['degrees_per_second_squared',['../namespaceunits.html#ab9ed75ae4e37ac937709c6675cee205f',1,'units']]],
   ['degrees_5fsquared_20',['degrees_squared',['../namespaceunits.html#a7c2a72cd884899cf6eb716f10d319d72',1,'units']]],
   ['deleterfn_21',['DeleterFn',['../classwpi_1_1_managed_static_base.html#a80556703b2bdb7df2c79598701e65674',1,'wpi::ManagedStaticBase']]],
-  ['dev_22',['dev',['../structcs_1_1_usb_camera_info.html#a0c88d22224cb6730d162f9fb7dcdb8e2',1,'cs::UsbCameraInfo::dev()'],['../struct_c_s___usb_camera_info.html#a81311211a5ded68cf47ac7cb02c5cbcf',1,'CS_UsbCameraInfo::dev()']]],
+  ['dev_22',['dev',['../struct_c_s___usb_camera_info.html#a81311211a5ded68cf47ac7cb02c5cbcf',1,'CS_UsbCameraInfo::dev()'],['../structcs_1_1_usb_camera_info.html#a0c88d22224cb6730d162f9fb7dcdb8e2',1,'cs::UsbCameraInfo::dev()']]],
   ['digits_23',['digits',['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#ab317215b9bcdb33d87dcb230b7103fee',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::digits()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a91b8bad7187ffaf230ef371991797928',1,'std::numeric_limits&lt; Eigen::half &gt;::digits()']]],
   ['digits10_24',['digits10',['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a7b371870b43b6b4c3a3e1cb07e3dbe60',1,'std::numeric_limits&lt; Eigen::half &gt;::digits10()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#aad9076bd155630e569a3987d523a7d16',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::digits10()']]],
   ['direct_25',['DIRECT',['../_third_party_notices_8txt.html#af5ec8e2594bad18dada913cb109a67ab',1,'ThirdPartyNotices.txt']]],
