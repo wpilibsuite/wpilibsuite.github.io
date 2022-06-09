@@ -137,18 +137,45 @@
 <span class="sourceLineNo">125</span><a id="line.125">   */</a>
 <span class="sourceLineNo">126</span><a id="line.126">  public static native String serializeTrajectory(double[] elements);</a>
 <span class="sourceLineNo">127</span><a id="line.127"></a>
-<span class="sourceLineNo">128</span><a id="line.128">  public static class Helper {</a>
-<span class="sourceLineNo">129</span><a id="line.129">    private static AtomicBoolean extractOnStaticLoad = new AtomicBoolean(true);</a>
-<span class="sourceLineNo">130</span><a id="line.130"></a>
-<span class="sourceLineNo">131</span><a id="line.131">    public static boolean getExtractOnStaticLoad() {</a>
-<span class="sourceLineNo">132</span><a id="line.132">      return extractOnStaticLoad.get();</a>
-<span class="sourceLineNo">133</span><a id="line.133">    }</a>
-<span class="sourceLineNo">134</span><a id="line.134"></a>
-<span class="sourceLineNo">135</span><a id="line.135">    public static void setExtractOnStaticLoad(boolean load) {</a>
-<span class="sourceLineNo">136</span><a id="line.136">      extractOnStaticLoad.set(load);</a>
-<span class="sourceLineNo">137</span><a id="line.137">    }</a>
-<span class="sourceLineNo">138</span><a id="line.138">  }</a>
-<span class="sourceLineNo">139</span><a id="line.139">}</a>
+<span class="sourceLineNo">128</span><a id="line.128">  /**</a>
+<span class="sourceLineNo">129</span><a id="line.129">   * Performs an inplace rank one update (or downdate) of an upper triangular Cholesky decomposition</a>
+<span class="sourceLineNo">130</span><a id="line.130">   * matrix.</a>
+<span class="sourceLineNo">131</span><a id="line.131">   *</a>
+<span class="sourceLineNo">132</span><a id="line.132">   * @param mat Array of elements of the matrix to be updated.</a>
+<span class="sourceLineNo">133</span><a id="line.133">   * @param lowerTriangular Whether or not mat is lower triangular.</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * @param rows How many rows there are.</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * @param vec Vector to use for the rank update.</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * @param sigma Sigma value to use for the rank update.</a>
+<span class="sourceLineNo">137</span><a id="line.137">   */</a>
+<span class="sourceLineNo">138</span><a id="line.138">  public static native void rankUpdate(</a>
+<span class="sourceLineNo">139</span><a id="line.139">      double[] mat, int rows, double[] vec, double sigma, boolean lowerTriangular);</a>
+<span class="sourceLineNo">140</span><a id="line.140"></a>
+<span class="sourceLineNo">141</span><a id="line.141">  public static class Helper {</a>
+<span class="sourceLineNo">142</span><a id="line.142">    private static AtomicBoolean extractOnStaticLoad = new AtomicBoolean(true);</a>
+<span class="sourceLineNo">143</span><a id="line.143"></a>
+<span class="sourceLineNo">144</span><a id="line.144">    public static boolean getExtractOnStaticLoad() {</a>
+<span class="sourceLineNo">145</span><a id="line.145">      return extractOnStaticLoad.get();</a>
+<span class="sourceLineNo">146</span><a id="line.146">    }</a>
+<span class="sourceLineNo">147</span><a id="line.147"></a>
+<span class="sourceLineNo">148</span><a id="line.148">    public static void setExtractOnStaticLoad(boolean load) {</a>
+<span class="sourceLineNo">149</span><a id="line.149">      extractOnStaticLoad.set(load);</a>
+<span class="sourceLineNo">150</span><a id="line.150">    }</a>
+<span class="sourceLineNo">151</span><a id="line.151">  }</a>
+<span class="sourceLineNo">152</span><a id="line.152"></a>
+<span class="sourceLineNo">153</span><a id="line.153">  /**</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * Solves the least-squares problem Ax=B using a QR decomposition with full pivoting.</a>
+<span class="sourceLineNo">155</span><a id="line.155">   *</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * @param A Array of elements of the A matrix.</a>
+<span class="sourceLineNo">157</span><a id="line.157">   * @param Arows Number of rows of the A matrix.</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * @param Acols Number of rows of the A matrix.</a>
+<span class="sourceLineNo">159</span><a id="line.159">   * @param B Array of elements of the B matrix.</a>
+<span class="sourceLineNo">160</span><a id="line.160">   * @param Brows Number of rows of the B matrix.</a>
+<span class="sourceLineNo">161</span><a id="line.161">   * @param Bcols Number of rows of the B matrix.</a>
+<span class="sourceLineNo">162</span><a id="line.162">   * @param dst Array to store solution in. If A is m-n and B is m-p, dst is n-p.</a>
+<span class="sourceLineNo">163</span><a id="line.163">   */</a>
+<span class="sourceLineNo">164</span><a id="line.164">  public static native void solveFullPivHouseholderQr(</a>
+<span class="sourceLineNo">165</span><a id="line.165">      double[] A, int Arows, int Acols, double[] B, int Brows, int Bcols, double[] dst);</a>
+<span class="sourceLineNo">166</span><a id="line.166">}</a>
 
 
 

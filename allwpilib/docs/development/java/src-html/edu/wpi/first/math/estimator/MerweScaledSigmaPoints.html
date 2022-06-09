@@ -83,16 +83,16 @@
 <span class="sourceLineNo">071</span><a id="line.71">   * of the filter.</a>
 <span class="sourceLineNo">072</span><a id="line.72">   *</a>
 <span class="sourceLineNo">073</span><a id="line.73">   * @param x An array of the means.</a>
-<span class="sourceLineNo">074</span><a id="line.74">   * @param P Covariance of the filter.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * @param s Square-root covariance of the filter.</a>
 <span class="sourceLineNo">075</span><a id="line.75">   * @return Two dimensional array of sigma points. Each column contains all of the sigmas for one</a>
 <span class="sourceLineNo">076</span><a id="line.76">   *     dimension in the problem space. Ordered by Xi_0, Xi_{1..n}, Xi_{n+1..2n}.</a>
 <span class="sourceLineNo">077</span><a id="line.77">   */</a>
 <span class="sourceLineNo">078</span><a id="line.78">  @SuppressWarnings({"ParameterName", "LocalVariableName"})</a>
-<span class="sourceLineNo">079</span><a id="line.79">  public Matrix&lt;S, ?&gt; sigmaPoints(Matrix&lt;S, N1&gt; x, Matrix&lt;S, S&gt; P) {</a>
+<span class="sourceLineNo">079</span><a id="line.79">  public Matrix&lt;S, ?&gt; squareRootSigmaPoints(Matrix&lt;S, N1&gt; x, Matrix&lt;S, S&gt; s) {</a>
 <span class="sourceLineNo">080</span><a id="line.80">    double lambda = Math.pow(m_alpha, 2) * (m_states.getNum() + m_kappa) - m_states.getNum();</a>
-<span class="sourceLineNo">081</span><a id="line.81"></a>
-<span class="sourceLineNo">082</span><a id="line.82">    var intermediate = P.times(lambda + m_states.getNum());</a>
-<span class="sourceLineNo">083</span><a id="line.83">    var U = intermediate.lltDecompose(true); // Lower triangular</a>
+<span class="sourceLineNo">081</span><a id="line.81">    double eta = Math.sqrt(lambda + m_states.getNum());</a>
+<span class="sourceLineNo">082</span><a id="line.82"></a>
+<span class="sourceLineNo">083</span><a id="line.83">    Matrix&lt;S, S&gt; U = s.times(eta);</a>
 <span class="sourceLineNo">084</span><a id="line.84"></a>
 <span class="sourceLineNo">085</span><a id="line.85">    // 2 * states + 1 by states</a>
 <span class="sourceLineNo">086</span><a id="line.86">    Matrix&lt;S, ?&gt; sigmas =</a>
