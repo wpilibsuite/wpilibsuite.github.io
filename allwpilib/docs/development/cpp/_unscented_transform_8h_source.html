@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-12-g17752f1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-17-g30f5b68</span>
    </div>
   </td>
  </tr>
@@ -102,75 +102,89 @@ $(document).ready(function(){initNavTree('_unscented_transform_8h_source.html','
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_eigen_core_8h.html">frc/EigenCore.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * Computes unscented transform of a set of sigma points and weights. CovDim</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * returns the mean and covariance in a tuple.</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * This works in conjunction with the UnscentedKalmanFilter class.</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * @tparam CovDim      Dimension of covariance of sigma points after passing</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *                     through the transform.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * @tparam States      Number of states.</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * @param sigmas       List of sigma points.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * @param Wm           Weights for the mean.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * @param Wc           Weights for the covariance.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * @param meanFunc     A function that computes the mean of 2 * States + 1 state</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *                     vectors using a given set of weights.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * @param residualFunc A function that computes the residual of two state</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *                     vectors (i.e. it subtracts them.)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * @return Tuple of x, mean of sigma points; P, covariance of sigma points after</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> *         passing through the transform.</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> CovDim, <span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacefrc.html#ab63048f4802b541ebccfd7e9982a688a">   34</a></span>std::tuple&lt;Vectord&lt;CovDim&gt;, <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, CovDim&gt;</a>&gt; <a class="code hl_function" href="namespacefrc.html#ab63048f4802b541ebccfd7e9982a688a">UnscentedTransform</a>(</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, 2 * States + 1&gt;</a>&amp; sigmas,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2 * States + 1&gt;</a>&amp; Wm, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2 * States + 1&gt;</a>&amp; Wc,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    std::function&lt;<a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, 2 * States + 1&gt;</a>&amp;,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2 * States + 1&gt;</a>&amp;)&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        meanFunc,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::function&lt;<a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>&amp;,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>&amp;)&gt;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        residualFunc) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// New mean is usually just the sum of the sigmas * weight:</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="comment">//       n</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="comment">// dot = Σ W[k] Xᵢ[k]</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="comment">//      k=1</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a> x = meanFunc(sigmas, Wm);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="comment">// New covariance is the sum of the outer product of the residuals times the</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// weights</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, 2 * States + 1&gt;</a> <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2 * States + 1; ++i) {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// y[:, i] = sigmas[:, i] - x</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>.template block&lt;CovDim, 1&gt;(0, i) =</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        residualFunc(sigmas.template block&lt;CovDim, 1&gt;(0, i), x);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, CovDim&gt;</a> P =</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a> * <a class="code hl_class" href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix&lt;double, 2 * States + 1&gt;</a>(Wc) * <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>.transpose();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">return</span> std::make_tuple(x, P);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_q_r.html">Eigen/QR</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_eigen_core_8h.html">frc/EigenCore.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"></span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * Computes unscented transform of a set of sigma points and weights. CovDim</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * returns the mean and square-root covariance of the sigma points in a tuple.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * This works in conjunction with the UnscentedKalmanFilter class. For use with</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * square-root form UKFs.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * @tparam CovDim      Dimension of covariance of sigma points after passing</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> *                     through the transform.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * @tparam States      Number of states.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * @param sigmas       List of sigma points.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * @param Wm           Weights for the mean.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * @param Wc           Weights for the covariance.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * @param meanFunc     A function that computes the mean of 2 * States + 1 state</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *                     vectors using a given set of weights.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * @param residualFunc A function that computes the residual of two state</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *                     vectors (i.e. it subtracts them.)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * @param squareRootR  Square-root of the noise covaraince of the sigma points.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * @return Tuple of x, mean of sigma points; S, square-root covariance of</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * sigmas.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> CovDim, <span class="keywordtype">int</span> States&gt;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>std::tuple&lt;Vectord&lt;CovDim&gt;, Matrixd&lt;CovDim, CovDim&gt;&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacefrc.html#a1af422167b03c22307c4bba4b9ee4c32">   38</a></span><a class="code hl_function" href="namespacefrc.html#a1af422167b03c22307c4bba4b9ee4c32">SquareRootUnscentedTransform</a>(</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, 2 * States + 1&gt;</a>&amp; sigmas,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2 * States + 1&gt;</a>&amp; Wm, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2 * States + 1&gt;</a>&amp; Wc,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    std::function&lt;<a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, 2 * States + 1&gt;</a>&amp;,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2 * States + 1&gt;</a>&amp;)&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        meanFunc,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::function&lt;<a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>&amp;,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                  <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a>&amp;)&gt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        residualFunc,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, CovDim&gt;</a>&amp; squareRootR) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">// New mean is usually just the sum of the sigmas * weight:</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="comment">//       n</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// dot = Σ W[k] Xᵢ[k]</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">//      k=1</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a> x = meanFunc(sigmas, Wm);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, States * 2 + CovDim&gt;</a> Sbar;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; States * 2; i++) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Sbar.template block&lt;CovDim, 1&gt;(0, i) =</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">std::sqrt</a>(Wc[1]) *</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        residualFunc(sigmas.template block&lt;CovDim, 1&gt;(0, 1 + i), x);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  Sbar.template block&lt;CovDim, CovDim&gt;(0, States * 2) = squareRootR;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">// Merwe defines the QR decomposition as Aᵀ = QR</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, CovDim&gt;</a> <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> = Sbar.transpose()</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                  .householderQr()</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                  .matrixQR()</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                  .template block&lt;CovDim, CovDim&gt;(0, 0)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                  .template triangularView&lt;Eigen::Upper&gt;();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <a class="code hl_struct" href="struct_eigen_1_1internal_1_1llt__inplace.html">Eigen::internal::llt_inplace&lt;double, Eigen::Upper&gt;::rankUpdate</a>(</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>, residualFunc(sigmas.template block&lt;CovDim, 1&gt;(0, 0), x), Wc[0]);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">return</span> std::make_tuple(x, <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a656b9217a2fcb6de59dc8d1eb3079cc7"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SqrtReturnType sqrt() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:187</div></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
-<div class="ttc" id="aclass_eigen_1_1_diagonal_matrix_html"><div class="ttname"><a href="class_eigen_1_1_diagonal_matrix.html">Eigen::DiagonalMatrix</a></div><div class="ttdoc">Represents a diagonal matrix with its storage.</div><div class="ttdef"><b>Definition:</b> DiagonalMatrix.h:142</div></div>
+<div class="ttc" id="a_q_r_html"><div class="ttname"><a href="_q_r.html">QR</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
-<div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:17</div></div>
+<div class="ttc" id="anamespacefrc_html_a1af422167b03c22307c4bba4b9ee4c32"><div class="ttname"><a href="namespacefrc.html#a1af422167b03c22307c4bba4b9ee4c32">frc::SquareRootUnscentedTransform</a></div><div class="ttdeci">std::tuple&lt; Vectord&lt; CovDim &gt;, Matrixd&lt; CovDim, CovDim &gt; &gt; SquareRootUnscentedTransform(const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;sigmas, const Vectord&lt; 2 *States+1 &gt; &amp;Wm, const Vectord&lt; 2 *States+1 &gt; &amp;Wc, std::function&lt; Vectord&lt; CovDim &gt;(const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;, const Vectord&lt; 2 *States+1 &gt; &amp;)&gt; meanFunc, std::function&lt; Vectord&lt; CovDim &gt;(const Vectord&lt; CovDim &gt; &amp;, const Vectord&lt; CovDim &gt; &amp;)&gt; residualFunc, const Matrixd&lt; CovDim, CovDim &gt; &amp;squareRootR)</div><div class="ttdoc">Computes unscented transform of a set of sigma points and weights.</div><div class="ttdef"><b>Definition:</b> UnscentedTransform.h:38</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
-<div class="ttc" id="anamespacefrc_html_ab63048f4802b541ebccfd7e9982a688a"><div class="ttname"><a href="namespacefrc.html#ab63048f4802b541ebccfd7e9982a688a">frc::UnscentedTransform</a></div><div class="ttdeci">std::tuple&lt; Vectord&lt; CovDim &gt;, Matrixd&lt; CovDim, CovDim &gt; &gt; UnscentedTransform(const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;sigmas, const Vectord&lt; 2 *States+1 &gt; &amp;Wm, const Vectord&lt; 2 *States+1 &gt; &amp;Wc, std::function&lt; Vectord&lt; CovDim &gt;(const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;, const Vectord&lt; 2 *States+1 &gt; &amp;)&gt; meanFunc, std::function&lt; Vectord&lt; CovDim &gt;(const Vectord&lt; CovDim &gt; &amp;, const Vectord&lt; CovDim &gt; &amp;)&gt; residualFunc)</div><div class="ttdoc">Computes unscented transform of a set of sigma points and weights.</div><div class="ttdef"><b>Definition:</b> UnscentedTransform.h:34</div></div>
+<div class="ttc" id="astruct_eigen_1_1internal_1_1llt__inplace_html"><div class="ttname"><a href="struct_eigen_1_1internal_1_1llt__inplace.html">Eigen::internal::llt_inplace</a></div><div class="ttdef"><b>Definition:</b> LLT.h:237</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html_a82134794782845c50b9a960bb191ba30"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a></div><div class="ttdeci">#define S(label, offset, message)</div><div class="ttdef"><b>Definition:</b> Errors.h:119</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_unscented_transform_8h.html">UnscentedTransform.h</a></li>
-    <li class="footer">Generated on Tue Jun 7 2022 00:27:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Jun 9 2022 05:24:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

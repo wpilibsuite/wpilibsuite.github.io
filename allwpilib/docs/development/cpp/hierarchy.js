@@ -319,6 +319,15 @@ var hierarchy =
       [ "arg_mapper< Context >::formattable< T, U >", "structarg__mapper_1_1formattable.html", null ]
     ] ],
     [ "Eigen::internal::bool_constant< Condition >", "struct_eigen_1_1internal_1_1bool__constant.html", null ],
+    [ "frc::BooleanEvent", "classfrc_1_1_boolean_event.html", [
+      [ "frc2::Trigger", "classfrc2_1_1_trigger.html", [
+        [ "frc2::Button", "classfrc2_1_1_button.html", [
+          [ "frc2::JoystickButton", "classfrc2_1_1_joystick_button.html", null ],
+          [ "frc2::NetworkButton", "classfrc2_1_1_network_button.html", null ],
+          [ "frc2::POVButton", "classfrc2_1_1_p_o_v_button.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "buffer< T >", "classbuffer.html", [
       [ "iterator_buffer< OutputIt, T, Traits >", "classiterator__buffer.html", null ],
       [ "iterator_buffer< T *, T >", "classiterator__buffer_3_01_t_01_5_00_01_t_01_4.html", null ],
@@ -1049,6 +1058,7 @@ var hierarchy =
     [ "Eigen::internal::evaluator_traits_base< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits__base.html", [
       [ "Eigen::internal::evaluator_traits< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_householder_sequence_3_01_vectors_type_00_01_5d5adf52607be62fe2f73ff93bacbb36.html", null ]
     ] ],
+    [ "frc::EventLoop", "classfrc_1_1_event_loop.html", null ],
     [ "std::exception", null, [
       [ "wpi::detail::exception", "classwpi_1_1detail_1_1exception.html", [
         [ "wpi::detail::invalid_iterator", "classwpi_1_1detail_1_1invalid__iterator.html", null ],
@@ -3307,13 +3317,6 @@ var hierarchy =
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, Size, IsComplex >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector.html", null ],
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, 1, IsComplex >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector_3_01_matrix_type_00_011_00_01_is_complex_01_4.html", null ],
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, 3, false >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector_3_01_matrix_type_00_013_00_01false_01_4.html", null ],
-    [ "frc2::Trigger", "classfrc2_1_1_trigger.html", [
-      [ "frc2::Button", "classfrc2_1_1_button.html", [
-        [ "frc2::JoystickButton", "classfrc2_1_1_joystick_button.html", null ],
-        [ "frc2::NetworkButton", "classfrc2_1_1_network_button.html", null ],
-        [ "frc2::POVButton", "classfrc2_1_1_p_o_v_button.html", null ]
-      ] ]
-    ] ],
     [ "wpi::detail::trivial_helper< T >", "unionwpi_1_1detail_1_1trivial__helper.html", null ],
     [ "Eigen::internal::trmv_selector< Mode, StorageOrder >", "struct_eigen_1_1internal_1_1trmv__selector.html", null ],
     [ "Eigen::internal::trmv_selector< Mode, ColMajor >", "struct_eigen_1_1internal_1_1trmv__selector_3_01_mode_00_01_col_major_01_4.html", null ],

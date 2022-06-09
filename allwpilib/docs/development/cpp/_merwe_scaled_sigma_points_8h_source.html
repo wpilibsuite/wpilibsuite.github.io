@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-12-g17752f1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-17-g30f5b68</span>
    </div>
   </td>
  </tr>
@@ -102,66 +102,66 @@ $(document).ready(function(){initNavTree('_merwe_scaled_sigma_points_8h_source.h
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_cholesky.html">Eigen/Cholesky</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_eigen_core_8h.html">frc/EigenCore.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"></span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * Generates sigma points and weights according to Van der Merwe&#39;s 2004</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * dissertation[1] for the UnscentedKalmanFilter class.</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * It parametrizes the sigma points using alpha, beta, kappa terms, and is the</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * version seen in most publications. Unless you know better, this should be</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * your default choice.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * [1] R. Van der Merwe &quot;Sigma-Point Kalman Filters for Probabilitic</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *     Inference in Dynamic State-Space Models&quot; (Doctoral dissertation)</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * @tparam States The dimensionality of the state. 2*States+1 weights will be</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *                generated.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_merwe_scaled_sigma_points.html">MerweScaledSigmaPoints</a> {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * Constructs a generator for Van der Merwe scaled sigma points.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * @param alpha Determines the spread of the sigma points around the mean.</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   *              Usually a small positive value (1e-3).</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param beta Incorporates prior knowledge of the distribution of the mean.</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   *             For Gaussian distributions, beta = 2 is optimal.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * @param kappa Secondary scaling parameter usually set to 0 or 3 - States.</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a376a61a41f7e2cd5bae21588aa7560">   40</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a376a61a41f7e2cd5bae21588aa7560">MerweScaledSigmaPoints</a>(<span class="keywordtype">double</span> alpha = 1<a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>-3, <span class="keywordtype">double</span> beta = 2,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                  <span class="keywordtype">int</span> kappa = 3 - States) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    m_alpha = alpha;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    m_kappa = kappa;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    ComputeWeights(beta);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * Returns number of sigma points for each variable in the state x.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">   51</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">NumSigmas</a>() { <span class="keywordflow">return</span> 2 * States + 1; }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * Computes the sigma points for an unscented Kalman filter given the mean</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   * (x) and covariance(P) of the filter.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * @param x An array of the means.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   * @param P Covariance of the filter.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   * @return Two dimensional array of sigma points. Each column contains all of</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   *         the sigmas for one dimension in the problem space. Ordered by</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   *         Xi_0, Xi_{1..n}, Xi_{n+1..2n}.</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html#ae320add2fbb1b0425560b17eec6f34d1">   65</a></span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, 2 * States + 1&gt;</a> <a class="code hl_function" href="classfrc_1_1_merwe_scaled_sigma_points.html#ae320add2fbb1b0425560b17eec6f34d1">SigmaPoints</a>(</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;States&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a>&amp; P) {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">double</span> lambda = <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(m_alpha, 2) * (States + m_kappa) - States;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a> U = ((lambda + States) * P).llt().matrixL();</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_eigen_core_8h.html">frc/EigenCore.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * Generates sigma points and weights according to Van der Merwe&#39;s 2004</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * dissertation[1] for the UnscentedKalmanFilter class.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * It parametrizes the sigma points using alpha, beta, kappa terms, and is the</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * version seen in most publications. Unless you know better, this should be</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * your default choice.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * [1] R. Van der Merwe &quot;Sigma-Point Kalman Filters for Probabilitic</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> *     Inference in Dynamic State-Space Models&quot; (Doctoral dissertation)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * @tparam States The dimensionality of the state. 2*States+1 weights will be</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *                generated.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_merwe_scaled_sigma_points.html">MerweScaledSigmaPoints</a> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * Constructs a generator for Van der Merwe scaled sigma points.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * @param alpha Determines the spread of the sigma points around the mean.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   *              Usually a small positive value (1e-3).</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * @param beta Incorporates prior knowledge of the distribution of the mean.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   *             For Gaussian distributions, beta = 2 is optimal.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * @param kappa Secondary scaling parameter usually set to 0 or 3 - States.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a376a61a41f7e2cd5bae21588aa7560">   39</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a376a61a41f7e2cd5bae21588aa7560">MerweScaledSigmaPoints</a>(<span class="keywordtype">double</span> alpha = 1<a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>-3, <span class="keywordtype">double</span> beta = 2,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                  <span class="keywordtype">int</span> kappa = 3 - States) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    m_alpha = alpha;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    m_kappa = kappa;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    ComputeWeights(beta);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   * Returns number of sigma points for each variable in the state x.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">   50</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">NumSigmas</a>() { <span class="keywordflow">return</span> 2 * States + 1; }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"></span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * Computes the sigma points for an unscented Kalman filter given the mean</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * (x) and square-root covariance(S) of the filter.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   * @param x An array of the means.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * @param S Square-root covariance of the filter.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * @return Two dimensional array of sigma points. Each column contains all of</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   *         the sigmas for one dimension in the problem space. Ordered by</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   *         Xi_0, Xi_{1..n}, Xi_{n+1..2n}.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classfrc_1_1_merwe_scaled_sigma_points.html#a6c07d8fb9c79df0168b642bcb01b057f">   64</a></span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, 2 * States + 1&gt;</a> <a class="code hl_function" href="classfrc_1_1_merwe_scaled_sigma_points.html#a6c07d8fb9c79df0168b642bcb01b057f">SquareRootSigmaPoints</a>(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;States&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a>&amp; <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">double</span> lambda = <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(m_alpha, 2) * (States + m_kappa) - States;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">double</span> eta = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">std::sqrt</a>(lambda + States);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, States&gt;</a> U = eta * <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;States, 2 * States + 1&gt;</a> sigmas;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    sigmas.template block&lt;States, 1&gt;(0, 0) = x;</div>
@@ -223,29 +223,30 @@ $(document).ready(function(){initNavTree('_merwe_scaled_sigma_points_8h_source.h
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>};</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace frc</span></div>
-<div class="ttc" id="a_cholesky_html"><div class="ttname"><a href="_cholesky.html">Cholesky</a></div></div>
+<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a656b9217a2fcb6de59dc8d1eb3079cc7"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SqrtReturnType sqrt() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:187</div></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
-<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a></div><div class="ttdoc">Generates sigma points and weights according to Van der Merwe's 2004 dissertation[1] for the Unscente...</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:29</div></div>
-<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a15c06c71c78144ba7d589bdbdfccf404"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">frc::MerweScaledSigmaPoints::NumSigmas</a></div><div class="ttdeci">int NumSigmas()</div><div class="ttdoc">Returns number of sigma points for each variable in the state x.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:51</div></div>
-<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a2a376a61a41f7e2cd5bae21588aa7560"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a376a61a41f7e2cd5bae21588aa7560">frc::MerweScaledSigmaPoints::MerweScaledSigmaPoints</a></div><div class="ttdeci">MerweScaledSigmaPoints(double alpha=1e-3, double beta=2, int kappa=3 - States)</div><div class="ttdoc">Constructs a generator for Van der Merwe scaled sigma points.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:40</div></div>
+<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html">frc::MerweScaledSigmaPoints</a></div><div class="ttdoc">Generates sigma points and weights according to Van der Merwe's 2004 dissertation[1] for the Unscente...</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:28</div></div>
+<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a15c06c71c78144ba7d589bdbdfccf404"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a15c06c71c78144ba7d589bdbdfccf404">frc::MerweScaledSigmaPoints::NumSigmas</a></div><div class="ttdeci">int NumSigmas()</div><div class="ttdoc">Returns number of sigma points for each variable in the state x.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:50</div></div>
+<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a2a376a61a41f7e2cd5bae21588aa7560"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a2a376a61a41f7e2cd5bae21588aa7560">frc::MerweScaledSigmaPoints::MerweScaledSigmaPoints</a></div><div class="ttdeci">MerweScaledSigmaPoints(double alpha=1e-3, double beta=2, int kappa=3 - States)</div><div class="ttdoc">Constructs a generator for Van der Merwe scaled sigma points.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:39</div></div>
 <div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a539ed39d0c09683d022e072796696cf0"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a539ed39d0c09683d022e072796696cf0">frc::MerweScaledSigmaPoints::Wc</a></div><div class="ttdeci">double Wc(int i) const</div><div class="ttdoc">Returns an element of the weight for each sigma point for the covariance.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:104</div></div>
+<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a6c07d8fb9c79df0168b642bcb01b057f"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a6c07d8fb9c79df0168b642bcb01b057f">frc::MerweScaledSigmaPoints::SquareRootSigmaPoints</a></div><div class="ttdeci">Matrixd&lt; States, 2 *States+1 &gt; SquareRootSigmaPoints(const Vectord&lt; States &gt; &amp;x, const Matrixd&lt; States, States &gt; &amp;S)</div><div class="ttdoc">Computes the sigma points for an unscented Kalman filter given the mean (x) and square-root covarianc...</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:64</div></div>
 <div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a7e4bd5990975d8d226f92460094ef071"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a7e4bd5990975d8d226f92460094ef071">frc::MerweScaledSigmaPoints::Wm</a></div><div class="ttdeci">double Wm(int i) const</div><div class="ttdoc">Returns an element of the weight for each sigma point for the mean.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:92</div></div>
 <div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_a93b404b28762c849c7b9cbfbf4ff6205"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#a93b404b28762c849c7b9cbfbf4ff6205">frc::MerweScaledSigmaPoints::Wm</a></div><div class="ttdeci">const Vectord&lt; 2 *States+1 &gt; &amp; Wm() const</div><div class="ttdoc">Returns the weight for each sigma point for the mean.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:85</div></div>
 <div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_aa06bc30f985bb64ecf863b63feb2be03"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#aa06bc30f985bb64ecf863b63feb2be03">frc::MerweScaledSigmaPoints::Wc</a></div><div class="ttdeci">const Vectord&lt; 2 *States+1 &gt; &amp; Wc() const</div><div class="ttdoc">Returns the weight for each sigma point for the covariance.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:97</div></div>
-<div class="ttc" id="aclassfrc_1_1_merwe_scaled_sigma_points_html_ae320add2fbb1b0425560b17eec6f34d1"><div class="ttname"><a href="classfrc_1_1_merwe_scaled_sigma_points.html#ae320add2fbb1b0425560b17eec6f34d1">frc::MerweScaledSigmaPoints::SigmaPoints</a></div><div class="ttdeci">Matrixd&lt; States, 2 *States+1 &gt; SigmaPoints(const Vectord&lt; States &gt; &amp;x, const Matrixd&lt; States, States &gt; &amp;P)</div><div class="ttdoc">Computes the sigma points for an unscented Kalman filter given the mean (x) and covariance(P) of the ...</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:65</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:17</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acfa211a9904208ac580676b5cc42b04a"><div class="ttname"><a href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">units::constants::c</a></div><div class="ttdeci">static constexpr const velocity::meters_per_second_t c(299792458.0)</div><div class="ttdoc">Speed of light in vacuum.</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_a8bc48cef3fdfae35910a4bbe5011abcd"><div class="ttname"><a href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">units::math::pow</a></div><div class="ttdeci">auto pow(const UnitType &amp;value) noexcept -&gt; unit_t&lt; typename units::detail::power_of_unit&lt; power, typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;::type, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the value of value raised to the power</div><div class="ttdef"><b>Definition:</b> base.h:2809</div></div>
 <div class="ttc" id="anamespacewpi_1_1numbers_html_a2d77ce99cbb4b9e449846009e5828e58"><div class="ttname"><a href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">wpi::numbers::e</a></div><div class="ttdeci">constexpr double e</div><div class="ttdef"><b>Definition:</b> numbers:50</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html_a82134794782845c50b9a960bb191ba30"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a></div><div class="ttdeci">#define S(label, offset, message)</div><div class="ttdef"><b>Definition:</b> Errors.h:119</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_merwe_scaled_sigma_points_8h.html">MerweScaledSigmaPoints.h</a></li>
-    <li class="footer">Generated on Tue Jun 7 2022 00:27:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Jun 9 2022 05:24:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

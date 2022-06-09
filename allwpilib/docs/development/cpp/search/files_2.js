@@ -12,10 +12,11 @@ var searchData=
   ['block_2eh_9',['Block.h',['../_block_8h.html',1,'']]],
   ['blockhouseholder_2eh_10',['BlockHouseholder.h',['../_block_householder_8h.html',1,'']]],
   ['blockmethods_2eh_11',['BlockMethods.h',['../_block_methods_8h.html',1,'']]],
-  ['booleanredux_2eh_12',['BooleanRedux.h',['../_boolean_redux_8h.html',1,'']]],
-  ['builtinaccelerometer_2eh_13',['BuiltInAccelerometer.h',['../_built_in_accelerometer_8h.html',1,'']]],
-  ['builtinaccelerometersim_2eh_14',['BuiltInAccelerometerSim.h',['../_built_in_accelerometer_sim_8h.html',1,'']]],
-  ['builtinlayouts_2eh_15',['BuiltInLayouts.h',['../_built_in_layouts_8h.html',1,'']]],
-  ['builtinwidgets_2eh_16',['BuiltInWidgets.h',['../_built_in_widgets_8h.html',1,'']]],
-  ['button_2eh_17',['Button.h',['../_button_8h.html',1,'']]]
+  ['booleanevent_2eh_12',['BooleanEvent.h',['../_boolean_event_8h.html',1,'']]],
+  ['booleanredux_2eh_13',['BooleanRedux.h',['../_boolean_redux_8h.html',1,'']]],
+  ['builtinaccelerometer_2eh_14',['BuiltInAccelerometer.h',['../_built_in_accelerometer_8h.html',1,'']]],
+  ['builtinaccelerometersim_2eh_15',['BuiltInAccelerometerSim.h',['../_built_in_accelerometer_sim_8h.html',1,'']]],
+  ['builtinlayouts_2eh_16',['BuiltInLayouts.h',['../_built_in_layouts_8h.html',1,'']]],
+  ['builtinwidgets_2eh_17',['BuiltInWidgets.h',['../_built_in_widgets_8h.html',1,'']]],
+  ['button_2eh_18',['Button.h',['../_button_8h.html',1,'']]]
 ];
