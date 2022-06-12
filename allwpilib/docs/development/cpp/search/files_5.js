@@ -20,7 +20,7 @@ var searchData=
   ['errc_2eh_17',['Errc.h',['../_errc_8h.html',1,'']]],
   ['errno_2eh_18',['Errno.h',['../_errno_8h.html',1,'']]],
   ['errorhandling_2eh_19',['ErrorHandling.h',['../_error_handling_8h.html',1,'']]],
-  ['errors_2eh_20',['Errors.h',['../hal_2src_2main_2native_2include_2hal_2_errors_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html',1,'(Global Namespace)']]],
+  ['errors_2eh_20',['Errors.h',['../wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html',1,'(Global Namespace)'],['../hal_2src_2main_2native_2include_2hal_2_errors_8h.html',1,'(Global Namespace)']]],
   ['eventloop_2eh_21',['EventLoop.h',['../_event_loop_8h.html',1,'']]],
   ['extendedkalmanfilter_2eh_22',['ExtendedKalmanFilter.h',['../_extended_kalman_filter_8h.html',1,'']]],
   ['extendedkalmanfilter_2einc_23',['ExtendedKalmanFilter.inc',['../_extended_kalman_filter_8inc.html',1,'']]],

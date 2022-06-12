@@ -27,7 +27,7 @@ var searchData=
   ['povbutton_2eh_24',['POVButton.h',['../_p_o_v_button_8h.html',1,'']]],
   ['power_2eh_25',['Power.h',['../hal_2src_2main_2native_2include_2hal_2_power_8h.html',1,'']]],
   ['power_2eh_26',['power.h',['../wpimath_2src_2main_2native_2include_2units_2_power_8h.html',1,'']]],
-  ['powerdistribution_2eh_27',['PowerDistribution.h',['../hal_2src_2main_2native_2include_2hal_2_power_distribution_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_power_distribution_8h.html',1,'(Global Namespace)']]],
+  ['powerdistribution_2eh_27',['PowerDistribution.h',['../wpilibc_2src_2main_2native_2include_2frc_2_power_distribution_8h.html',1,'(Global Namespace)'],['../hal_2src_2main_2native_2include_2hal_2_power_distribution_8h.html',1,'(Global Namespace)']]],
   ['powerdistributiondata_2eh_28',['PowerDistributionData.h',['../_power_distribution_data_8h.html',1,'']]],
   ['powerdistributionsim_2eh_29',['PowerDistributionSim.h',['../_power_distribution_sim_8h.html',1,'']]],
   ['preferences_2eh_30',['Preferences.h',['../_preferences_8h.html',1,'']]],

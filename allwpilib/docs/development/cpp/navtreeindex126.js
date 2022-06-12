@@ -1,5 +1,9 @@
 var NAVTREEINDEX126 =
 {
+"namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88aae6035e37ce53de5e15e2d11ab3aaa8d2":[4,0,20,196,2],
+"namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88aaec2f6db5ca268bd387c48d6e06c06ecc":[4,0,20,196,7],
+"namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88aafb54895e0b8a35d815e26607f33bc33c":[4,0,20,196,3],
+"namespacewpi.html#ae217f4a23d9e6957bd7e67f2630807ca":[4,0,20,389],
 "namespacewpi.html#ae24c771b8df1d9311b05e5aa01ec09b3":[4,0,20,322],
 "namespacewpi.html#ae3e2a33d363a34850deae1866c324eb6":[4,0,20,375],
 "namespacewpi.html#ae4078daddfc211a1376eeb038ebc2657":[4,0,20,237],
@@ -245,9 +249,5 @@ var NAVTREEINDEX126 =
 "namespacewpi_1_1support_1_1endian.html#a0471904a2f43f438b0ab04839358c6d0":[4,0,20,9,1,16],
 "namespacewpi_1_1support_1_1endian.html#a0a527f6b2a97f4811f4322f6a8f23ea2":[4,0,20,9,1,39],
 "namespacewpi_1_1support_1_1endian.html#a0f81d88fd2a521607fcde7f5c789031b":[4,0,20,9,1,11],
-"namespacewpi_1_1support_1_1endian.html#a0fc1b62539d2bcea4dcc3e6573191dca":[4,0,20,9,1,14],
-"namespacewpi_1_1support_1_1endian.html#a1860e8c05fe03cd6b9912c5bec5f8c2f":[4,0,20,9,1,4],
-"namespacewpi_1_1support_1_1endian.html#a3680c253da9bc0534ebf7c631968f86d":[4,0,20,9,1,17],
-"namespacewpi_1_1support_1_1endian.html#a3b8d71620ad791b975bd4f5d223bce57":[4,0,20,9,1,26],
-"namespacewpi_1_1support_1_1endian.html#a42a46051ed741253056d7d3c026fe4e2":[4,0,20,9,1,33]
+"namespacewpi_1_1support_1_1endian.html#a0fc1b62539d2bcea4dcc3e6573191dca":[4,0,20,9,1,14]
 };

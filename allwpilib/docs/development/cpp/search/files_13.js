@@ -68,7 +68,7 @@ var searchData=
   ['span_2eh_65',['span.h',['../span_8h.html',1,'']]],
   ['spanextras_2eh_66',['SpanExtras.h',['../_span_extras_8h.html',1,'']]],
   ['spark_2eh_67',['Spark.h',['../_spark_8h.html',1,'']]],
-  ['spi_2eh_68',['SPI.h',['../hal_2src_2main_2native_2include_2hal_2_s_p_i_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h.html',1,'(Global Namespace)']]],
+  ['spi_2eh_68',['SPI.h',['../wpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h.html',1,'(Global Namespace)'],['../hal_2src_2main_2native_2include_2hal_2_s_p_i_8h.html',1,'(Global Namespace)']]],
   ['spiaccelerometerdata_2eh_69',['SPIAccelerometerData.h',['../_s_p_i_accelerometer_data_8h.html',1,'']]],
   ['spiaccelerometersim_2eh_70',['SPIAccelerometerSim.h',['../_s_p_i_accelerometer_sim_8h.html',1,'']]],
   ['spidata_2eh_71',['SPIData.h',['../_s_p_i_data_8h.html',1,'']]],

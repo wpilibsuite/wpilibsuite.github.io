@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['h_0',['h',['../_third_party_notices_8txt.html#a078f9104dd9726774d52993c580db4bb',1,'ThirdPartyNotices.txt']]],
+  ['h_0',['h',['../_third_party_notices_8txt.html#a0b9497966a18c75a4a869dba59cf35d3',1,'ThirdPartyNotices.txt']]],
   ['h0_1',['h0',['../structwpi_1_1hashing_1_1detail_1_1hash__state.html#adfb7abeb61e65a191831e0f240a5fa6c',1,'wpi::hashing::detail::hash_state']]],
   ['h1_2',['h1',['../structwpi_1_1hashing_1_1detail_1_1hash__state.html#aaff77debd07984758963840a130ef7b2',1,'wpi::hashing::detail::hash_state']]],
   ['h2_3',['h2',['../structwpi_1_1hashing_1_1detail_1_1hash__state.html#a22a0b0ed99e3ad1e0870c1904e180b78',1,'wpi::hashing::detail::hash_state']]],
@@ -22,8 +22,8 @@ var searchData=
   ['has_5flinear_5fscale_5fv_19',['has_linear_scale_v',['../namespaceunits_1_1traits.html#a679ec0736cd021e6e37ed0f710b5b6d7',1,'units::traits']]],
   ['has_5fquiet_5fnan_20',['has_quiet_NaN',['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a0151f0265c7f1f9b94a4b93c9218d214',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::has_quiet_NaN()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#aa2516a8ba990214bb64d25c30e04b3bb',1,'std::numeric_limits&lt; Eigen::half &gt;::has_quiet_NaN()']]],
   ['has_5fsignaling_5fnan_21',['has_signaling_NaN',['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a6b8221429e375d4f322c8fa9557bb314',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::has_signaling_NaN()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a007c526a58348f56ff2ca2f1e698b945',1,'std::numeric_limits&lt; Eigen::half &gt;::has_signaling_NaN()']]],
-  ['hasreset_22',['hasReset',['../struct_h_a_l___r_e_v_p_h_sticky_faults.html#ac00179debf185931bde323e458bc3e06',1,'HAL_REVPHStickyFaults::hasReset()'],['../struct_h_a_l___power_distribution_sticky_faults.html#a79b836549c4ab209bf3976cdddf79ec1',1,'HAL_PowerDistributionStickyFaults::hasReset()']]],
-  ['hasreset_23',['HasReset',['../structfrc_1_1_pneumatic_hub_1_1_sticky_faults.html#aca1f7cb800d2cb57673e05a95d8f55fe',1,'frc::PneumaticHub::StickyFaults::HasReset()'],['../structfrc_1_1_power_distribution_1_1_sticky_faults.html#adc57c1e1f43488b767a42943861e0567',1,'frc::PowerDistribution::StickyFaults::HasReset()']]],
+  ['hasreset_22',['HasReset',['../structfrc_1_1_pneumatic_hub_1_1_sticky_faults.html#aca1f7cb800d2cb57673e05a95d8f55fe',1,'frc::PneumaticHub::StickyFaults::HasReset()'],['../structfrc_1_1_power_distribution_1_1_sticky_faults.html#adc57c1e1f43488b767a42943861e0567',1,'frc::PowerDistribution::StickyFaults::HasReset()']]],
+  ['hasreset_23',['hasReset',['../struct_h_a_l___r_e_v_p_h_sticky_faults.html#ac00179debf185931bde323e458bc3e06',1,'HAL_REVPHStickyFaults::hasReset()'],['../struct_h_a_l___power_distribution_sticky_faults.html#a79b836549c4ab209bf3976cdddf79ec1',1,'HAL_PowerDistributionStickyFaults::hasReset()']]],
   ['height_24',['height',['../struct_c_s___raw_frame.html#aea6fc12b7b14df7dba58fc9c39a044ee',1,'CS_RawFrame::height()'],['../struct_c_s___video_mode.html#ada90f303ae60ea79624fdf03d6094c1e',1,'CS_VideoMode::height()']]],
   ['hereditarybits_25',['HereditaryBits',['../namespace_eigen.html#a297729d26fa056b10e9d8d5d088b12e6',1,'Eigen']]],
   ['high_5f_26',['high_',['../structdetail_1_1uint128__wrapper.html#ab6711e88022a76035685c6cd8cfe7eff',1,'detail::uint128_wrapper']]],

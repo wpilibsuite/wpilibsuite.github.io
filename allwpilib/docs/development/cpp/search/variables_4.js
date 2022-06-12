@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['damage_0',['DAMAGE',['../_third_party_notices_8txt.html#a417e292875f3bc9f77644fda02efefc3',1,'ThirdPartyNotices.txt']]],
+  ['damage_0',['DAMAGE',['../_third_party_notices_8txt.html#a8eccab1cb22ccaf5636415b04b13d08f',1,'ThirdPartyNotices.txt']]],
   ['data_1',['data',['../struct_h_a_l___c_a_n_stream_message.html#acfa19ea403d0ea7dffc746efcac0c9f0',1,'HAL_CANStreamMessage::data()'],['../struct_h_a_l___value.html#ade61067b4f6774bf7c56102edb7c573f',1,'HAL_Value::data()'],['../structfrc_1_1_c_a_n_data.html#aa275b9146373ebbbdf5c1f224fcd7352',1,'frc::CANData::data()'],['../class_eigen_1_1internal_1_1plainobjectbase__evaluator__data_3_01_scalar_00_01_dynamic_01_4.html#a0d6a023445cd118eb928bc9559e1473a',1,'Eigen::internal::plainobjectbase_evaluator_data&lt; Scalar, Dynamic &gt;::data()'],['../class_eigen_1_1internal_1_1plainobjectbase__evaluator__data.html#a6f27c1d3e06f6cd0cbae5d437d717026',1,'Eigen::internal::plainobjectbase_evaluator_data::data()'],['../struct_n_t___value.html#acf3bc1ae02ca73d2d663f62939b73bfc',1,'NT_Value::data()'],['../struct_c_s___raw_frame.html#ab2f502bc5cd698e3e9fbd6472a5fd5c0',1,'CS_RawFrame::data()'],['../structwpi_1_1_sendable_registry_1_1_callback_data.html#abc76545f319025fa00e49b73c2e64010',1,'wpi::SendableRegistry::CallbackData::data()'],['../structnamed__arg__value.html#a175ba9f5700e0b4edb8683a254e01941',1,'named_arg_value::data()'],['../structstring__value.html#a9bd9eaf37486cf6b36bc5e475d9fd50c',1,'string_value::data()']]],
   ['datalength_2',['dataLength',['../struct_c_s___raw_frame.html#a2f6434aec06d4d264699239b577a4631',1,'CS_RawFrame']]],
   ['datasize_3',['dataSize',['../struct_h_a_l___c_a_n_stream_message.html#ae67cb566f4ce5f03016f6d127aeff546',1,'HAL_CANStreamMessage']]],
@@ -10,7 +10,7 @@ var searchData=
   ['defaultl1cachesize_7',['defaultL1CacheSize',['../namespace_eigen_1_1internal.html#aca0e350087dd459cc7e036355dca1fb7',1,'Eigen::internal']]],
   ['defaultl2cachesize_8',['defaultL2CacheSize',['../namespace_eigen_1_1internal.html#a04dbd7a9ba7069a05726b5b09d1ee5db',1,'Eigen::internal']]],
   ['defaultl3cachesize_9',['defaultL3CacheSize',['../namespace_eigen_1_1internal.html#a79ced96f603f3cf40ee565c8fb9002fb',1,'Eigen::internal']]],
-  ['definition_10',['definition',['../_third_party_notices_8txt.html#a9b82d13982ac0b17c045773ea7bbd3fc',1,'ThirdPartyNotices.txt']]],
+  ['definition_10',['definition',['../_third_party_notices_8txt.html#a3c0641667c49233501e0a86ace2003ac',1,'ThirdPartyNotices.txt']]],
   ['deg_11',['deg',['../namespaceunits.html#a452daea7e98f422a757a4c21758c3d94',1,'units']]],
   ['deg_5fper_5fs_12',['deg_per_s',['../namespaceunits.html#abdbc99745ee461edcccadf6562b6b788',1,'units']]],
   ['deg_5fper_5fs_5fsq_13',['deg_per_s_sq',['../namespaceunits.html#ae4bb365b1e9664c7551f46070c2ece2d',1,'units']]],
@@ -25,9 +25,9 @@ var searchData=
   ['dev_22',['dev',['../struct_c_s___usb_camera_info.html#a81311211a5ded68cf47ac7cb02c5cbcf',1,'CS_UsbCameraInfo::dev()'],['../structcs_1_1_usb_camera_info.html#a0c88d22224cb6730d162f9fb7dcdb8e2',1,'cs::UsbCameraInfo::dev()']]],
   ['digits_23',['digits',['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#ab317215b9bcdb33d87dcb230b7103fee',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::digits()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a91b8bad7187ffaf230ef371991797928',1,'std::numeric_limits&lt; Eigen::half &gt;::digits()']]],
   ['digits10_24',['digits10',['../structstd_1_1numeric__limits_3_01_eigen_1_1half_01_4.html#a7b371870b43b6b4c3a3e1cb07e3dbe60',1,'std::numeric_limits&lt; Eigen::half &gt;::digits10()'],['../structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#aad9076bd155630e569a3987d523a7d16',1,'std::numeric_limits&lt; Eigen::bfloat16 &gt;::digits10()']]],
-  ['direct_25',['DIRECT',['../_third_party_notices_8txt.html#af5ec8e2594bad18dada913cb109a67ab',1,'ThirdPartyNotices.txt']]],
+  ['direct_25',['DIRECT',['../_third_party_notices_8txt.html#a782e2372eaeb9b203c9c41476a5813b1',1,'ThirdPartyNotices.txt']]],
   ['directaccessbit_26',['DirectAccessBit',['../group__flags.html#gabf1e9d0516a933445a4c307ad8f14915',1,'Eigen']]],
-  ['display_27',['display',['../_third_party_notices_8txt.html#a55d00035fb967569aeb8d34dfaa7ea90',1,'ThirdPartyNotices.txt']]],
+  ['display_27',['display',['../_third_party_notices_8txt.html#ab7ad90237e77de51b1df3d4b5093eca4',1,'ThirdPartyNotices.txt']]],
   ['distribute_28',['distribute',['../_third_party_notices_8txt.html#a4043f6796a9cc8a7ee48fdad37e3788f',1,'ThirdPartyNotices.txt']]],
   ['divisibility_5fcheck_5fby_5f5_5fthreshold_29',['divisibility_check_by_5_threshold',['../structdragonbox_1_1float__info_3_01double_01_4.html#a07dd3de5739172f1478270bda2808bf0',1,'dragonbox::float_info&lt; double &gt;::divisibility_check_by_5_threshold()'],['../structdragonbox_1_1float__info_3_01float_01_4.html#ab7b21ace649cecc2433ea913d89786bf',1,'dragonbox::float_info&lt; float &gt;::divisibility_check_by_5_threshold()']]],
   ['documentation_30',['documentation',['../_third_party_notices_8txt.html#a7afdcebc9fb04562c0bb505121fdd890',1,'ThirdPartyNotices.txt']]],
