@@ -5,6 +5,9 @@ var classfrc_1_1_xbox_controller =
     [ "XboxController", "classfrc_1_1_xbox_controller.html#a879dbba9de63acca156dc2184fccab88", null ],
     [ "~XboxController", "classfrc_1_1_xbox_controller.html#a9478d06e07e01e7b6bf7301b73d8c3e4", null ],
     [ "XboxController", "classfrc_1_1_xbox_controller.html#a51be4ced5d222649f900de435badbbc0", null ],
+    [ "A", "classfrc_1_1_xbox_controller.html#a0a74d58fe129461ee93b76796957b59e", null ],
+    [ "B", "classfrc_1_1_xbox_controller.html#a65c14345476d1264670a5a735914a80d", null ],
+    [ "Back", "classfrc_1_1_xbox_controller.html#a31fe3cae5e3e6e1a49fcca396b7c2c17", null ],
     [ "GetAButton", "classfrc_1_1_xbox_controller.html#a1bd1ad7e87475764f51fd765917a0a70", null ],
     [ "GetAButtonPressed", "classfrc_1_1_xbox_controller.html#ac68847e4f82d5ac78026b8212d06b693", null ],
     [ "GetAButtonReleased", "classfrc_1_1_xbox_controller.html#a4462c05823456c74ccc4f6f78caf6631", null ],
@@ -41,5 +44,12 @@ var classfrc_1_1_xbox_controller =
     [ "GetYButton", "classfrc_1_1_xbox_controller.html#aa21a91dcde95248df8bc633c0e22601c", null ],
     [ "GetYButtonPressed", "classfrc_1_1_xbox_controller.html#afc1acfc3f13bc56134a450d31e20dc9d", null ],
     [ "GetYButtonReleased", "classfrc_1_1_xbox_controller.html#a686efc14d81cd4f80887d2a1a27c4448", null ],
-    [ "operator=", "classfrc_1_1_xbox_controller.html#a5e44122d1ddadf07d8306ddf1cd66a71", null ]
+    [ "LeftBumper", "classfrc_1_1_xbox_controller.html#af098ba71c545abc35ed1a60ef88940a6", null ],
+    [ "LeftStick", "classfrc_1_1_xbox_controller.html#a363153a404ffacdbbfc080b390861d78", null ],
+    [ "operator=", "classfrc_1_1_xbox_controller.html#a5e44122d1ddadf07d8306ddf1cd66a71", null ],
+    [ "RightBumper", "classfrc_1_1_xbox_controller.html#a6efa00b5a167246176978372eedb6fca", null ],
+    [ "RightStick", "classfrc_1_1_xbox_controller.html#adcc182659e92d6ef79f76100042f675d", null ],
+    [ "Start", "classfrc_1_1_xbox_controller.html#a471ccf86997e96502902ab06d3c804f7", null ],
+    [ "X", "classfrc_1_1_xbox_controller.html#ac7b2d4c9bfc7061f1b6be7e5d4c29f65", null ],
+    [ "Y", "classfrc_1_1_xbox_controller.html#afd8db9d036eefa1d6050193197b655f7", null ]
 ];

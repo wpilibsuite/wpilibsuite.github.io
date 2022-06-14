@@ -1402,9 +1402,16 @@ var hierarchy =
     [ "Eigen::internal::generic_xpr_base< Derived, MatrixXpr, SolverStorage >", "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_matrix_xpr_00_01_solver_storage_01_4.html", null ],
     [ "Eigen::internal::generic_xpr_base< Derived, XprKind, Dense >", "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_xpr_kind_00_01_dense_01_4.html", null ],
     [ "frc::GenericHID", "classfrc_1_1_generic_h_i_d.html", [
-      [ "frc::Joystick", "classfrc_1_1_joystick.html", null ],
-      [ "frc::PS4Controller", "classfrc_1_1_p_s4_controller.html", null ],
-      [ "frc::XboxController", "classfrc_1_1_xbox_controller.html", null ]
+      [ "frc2::CommandGenericHID", "classfrc2_1_1_command_generic_h_i_d.html", null ],
+      [ "frc::Joystick", "classfrc_1_1_joystick.html", [
+        [ "frc2::CommandJoystick", "classfrc2_1_1_command_joystick.html", null ]
+      ] ],
+      [ "frc::PS4Controller", "classfrc_1_1_p_s4_controller.html", [
+        [ "frc2::CommandPS4Controller", "classfrc2_1_1_command_p_s4_controller.html", null ]
+      ] ],
+      [ "frc::XboxController", "classfrc_1_1_xbox_controller.html", [
+        [ "frc2::CommandXboxController", "classfrc2_1_1_command_xbox_controller.html", null ]
+      ] ]
     ] ],
     [ "frc::sim::GenericHIDSim", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html", [
       [ "frc::sim::JoystickSim", "classfrc_1_1sim_1_1_joystick_sim.html", null ],

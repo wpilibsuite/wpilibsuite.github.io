@@ -26,6 +26,7 @@ var classfrc_1_1_generic_h_i_d =
     [ "GenericHID", "classfrc_1_1_generic_h_i_d.html#ac3800a450e72919a59b70caf85bbad82", null ],
     [ "~GenericHID", "classfrc_1_1_generic_h_i_d.html#a198bc47fac8e662a5f7a9b018dc9154e", null ],
     [ "GenericHID", "classfrc_1_1_generic_h_i_d.html#a8da5ec717899a25e7689d222a42a492d", null ],
+    [ "Button", "classfrc_1_1_generic_h_i_d.html#a859817de11db3bf0718c3dd083dce43c", null ],
     [ "GetAxisCount", "classfrc_1_1_generic_h_i_d.html#ae59fa53ad800be21b65b19fe7690497e", null ],
     [ "GetAxisType", "classfrc_1_1_generic_h_i_d.html#a2fafc600a5cf100f363d8bef7c1d9e30", null ],
     [ "GetButtonCount", "classfrc_1_1_generic_h_i_d.html#abf59064892d29c2b82e51782384344e9", null ],

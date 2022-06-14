@@ -5,6 +5,8 @@ var classfrc_1_1_p_s4_controller =
     [ "PS4Controller", "classfrc_1_1_p_s4_controller.html#a8da5815a438fe4d07fec619a772aa7f3", null ],
     [ "~PS4Controller", "classfrc_1_1_p_s4_controller.html#aebefb3596dc57d82b8a3d861fcdb6b0e", null ],
     [ "PS4Controller", "classfrc_1_1_p_s4_controller.html#adfce9851e9901945d05fd250dd8bf538", null ],
+    [ "Circle", "classfrc_1_1_p_s4_controller.html#a29c81f16797420f1c701aadd0aa2aced", null ],
+    [ "Cross", "classfrc_1_1_p_s4_controller.html#a41ae92be88cbbe3e8675633312486864", null ],
     [ "GetCircleButton", "classfrc_1_1_p_s4_controller.html#a83437f884958564d68d489fab5473f87", null ],
     [ "GetCircleButtonPressed", "classfrc_1_1_p_s4_controller.html#a972fcfc6aeea1d18f82b50153d1c820d", null ],
     [ "GetCircleButtonReleased", "classfrc_1_1_p_s4_controller.html#af3da77ad531c2cd1fe2240da224d634c", null ],
@@ -53,5 +55,17 @@ var classfrc_1_1_p_s4_controller =
     [ "GetTriangleButton", "classfrc_1_1_p_s4_controller.html#a9176bb3c32e62bc6847395c4ffafffc0", null ],
     [ "GetTriangleButtonPressed", "classfrc_1_1_p_s4_controller.html#aab587418eda3bd7c9e6dca7e19f8369e", null ],
     [ "GetTriangleButtonReleased", "classfrc_1_1_p_s4_controller.html#a94f7910d08e289a733d36d677d24c21d", null ],
-    [ "operator=", "classfrc_1_1_p_s4_controller.html#ae1e37826165b20e0916ea0a4aeaefa20", null ]
+    [ "L1", "classfrc_1_1_p_s4_controller.html#a91b739399eea3119143d5827395d4afb", null ],
+    [ "L2", "classfrc_1_1_p_s4_controller.html#af6dacefec949a5e88801ce49d50009df", null ],
+    [ "L3", "classfrc_1_1_p_s4_controller.html#ae5171cdacdb8b22f922568f901ddb58c", null ],
+    [ "operator=", "classfrc_1_1_p_s4_controller.html#ae1e37826165b20e0916ea0a4aeaefa20", null ],
+    [ "Options", "classfrc_1_1_p_s4_controller.html#a13f1609c41fbe007e55281a1c76356f1", null ],
+    [ "PS", "classfrc_1_1_p_s4_controller.html#a925067919341f93eba93ea77a1088249", null ],
+    [ "R1", "classfrc_1_1_p_s4_controller.html#a62b0e1dbe03958445ec43f967eaa2551", null ],
+    [ "R2", "classfrc_1_1_p_s4_controller.html#a6f94e46ec2a031a02398b18fa5792bff", null ],
+    [ "R3", "classfrc_1_1_p_s4_controller.html#a5dd2d55f24761e5b88fb7b95252f728f", null ],
+    [ "Share", "classfrc_1_1_p_s4_controller.html#a7d25bf69bfd417841753c302114c1cb4", null ],
+    [ "Square", "classfrc_1_1_p_s4_controller.html#a190b1d396115ff9f69890a39a2fb394b", null ],
+    [ "Touchpad", "classfrc_1_1_p_s4_controller.html#a8b9067a170c6378fd5c84bf73292751a", null ],
+    [ "Triangle", "classfrc_1_1_p_s4_controller.html#a2f376fa0f5e4db80b0ab8725210ea6a2", null ]
 ];
