@@ -1,5 +1,7 @@
 var NAVTREEINDEX143 =
 {
+"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html#afdf60c92332e0463ee10245d0cdc6f05":[5,0,4,2,665,0],
+"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html#afdf60c92332e0463ee10245d0cdc6f05":[4,0,7,4,667,0],
 "struct_eigen_1_1internal_1_1log1p__retval.html":[5,0,4,2,666],
 "struct_eigen_1_1internal_1_1log1p__retval.html":[4,0,7,4,668],
 "struct_eigen_1_1internal_1_1log1p__retval.html#ad20e438f9c73d391972259df9fa21c06":[5,0,4,2,666,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX143 =
 "struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__move__down_01_4.html":[4,0,7,4,718],
 "struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__move__down_01_4.html":[5,0,4,2,716],
 "struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__move__up_01_4.html":[4,0,7,4,719],
-"struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__move__up_01_4.html":[5,0,4,2,717],
-"struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__terminate_01_4.html":[4,0,7,4,720],
-"struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__terminate_01_4.html":[5,0,4,2,718]
+"struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__move__up_01_4.html":[5,0,4,2,717]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX158 =
 {
+"struct_h_a_l___match_info.html#ac3865133373b573e8826a3bc15fa7de6":[3,1,10,5,4],
+"struct_h_a_l___match_info.html#af51a5019e4855d652c759b1462fa9ad6":[3,1,10,5,5],
 "struct_h_a_l___power_distribution_faults.html":[3,1,31,1],
 "struct_h_a_l___power_distribution_faults.html#a022d1d5111180ca439842104da121778":[3,1,31,1,15],
 "struct_h_a_l___power_distribution_faults.html#a0529fcb57fa581fe9555b92572a4bbb7":[3,1,31,1,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX158 =
 "structarg__mapper.html#a6a556343b552b1370d18446ef1bdd887":[5,0,20,31],
 "structarg__mapper.html#a814451c2db4b8ff1dd0d63ec14730d26":[5,0,20,34],
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[5,0,20,6],
-"structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,20,40],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,20,14],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,20,13]
+"structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,20,40]
 };

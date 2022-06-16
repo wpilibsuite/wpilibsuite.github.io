@@ -1,5 +1,7 @@
 var NAVTREEINDEX123 =
 {
+"namespaceghc_1_1filesystem.html#aba1f146a355fcc65fa89bf68ec686564":[4,0,12,0,95],
+"namespaceghc_1_1filesystem.html#abbc5c1144aae6b3423c7cc7673cb71d1":[4,0,12,0,51],
 "namespaceghc_1_1filesystem.html#abc7cfc43ecce625aa77dd6a6b34f3e58":[4,0,12,0,67],
 "namespaceghc_1_1filesystem.html#abd862550f9ea0d0c96623cbafd167c8c":[4,0,12,0,56],
 "namespaceghc_1_1filesystem.html#abee346f227a4aa8689b59ab60202e0f1":[4,0,12,0,103],
@@ -247,7 +249,5 @@ var NAVTREEINDEX123 =
 "namespaceunits.html#a0739129fc44e438d4ae5df3c98e31bfb":[4,0,19,303],
 "namespaceunits.html#a07d2834b487a021722179ab6e414ad63":[4,0,19,221],
 "namespaceunits.html#a0a47ab6ba6eb721b67d4d4a42f759997":[4,0,19,242],
-"namespaceunits.html#a0a878abc7d833c3363db93fb70d609a6":[4,0,19,215],
-"namespaceunits.html#a0e70fbe82fa3e174bec8df6a82978ee3":[4,0,19,97],
-"namespaceunits.html#a0f295928d36eeddcff6d2d05c5f77462":[4,0,19,145]
+"namespaceunits.html#a0a878abc7d833c3363db93fb70d609a6":[4,0,19,215]
 };

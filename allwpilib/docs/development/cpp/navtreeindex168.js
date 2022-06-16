@@ -1,5 +1,7 @@
 var NAVTREEINDEX168 =
 {
+"structwpi_1_1disjunction_3_01_b1_01_4.html":[5,0,13,52],
+"structwpi_1_1disjunction_3_01_b1_01_4.html":[4,0,20,54],
 "structwpi_1_1empty__array__t.html":[4,0,20,56],
 "structwpi_1_1empty__array__t.html":[5,0,13,54],
 "structwpi_1_1hashing_1_1detail_1_1hash__combine__recursive__helper.html":[4,0,20,1,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX168 =
 "timestamp_8h.html#a90b882859f08f10af3bd3203600b4f5e":[6,0,11,82,1],
 "timestamp_8h.html#af693bd934f41368ae3cbdb9a1c50ed32":[6,0,11,82,0],
 "timestamp_8h_source.html":[6,0,11,82],
-"todo.html":[1],
-"torque_8h.html":[6,0,9,38],
-"torque_8h.html#a0a47ab6ba6eb721b67d4d4a42f759997":[6,0,9,38,4]
+"todo.html":[1]
 };

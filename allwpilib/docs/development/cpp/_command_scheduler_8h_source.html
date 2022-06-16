@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-25-ge61028c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-26-g9ac9b69</span>
    </div>
   </td>
  </tr>
@@ -463,8 +463,11 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">frc::Watchdog</a> m_watchdog;</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">  369</a></span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">CommandTestBase</a>;</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>};</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">  372</a></span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">CommandTestBaseWithParam</a>;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>};</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_event_loop_8h_html"><div class="ttname"><a href="_event_loop_8h.html">EventLoop.h</a></div></div>
 <div class="ttc" id="a_function_extras_8h_html"><div class="ttname"><a href="_function_extras_8h.html">FunctionExtras.h</a></div><div class="ttdoc">This file provides a collection of function (or more generally, callable) type erasure utilities supp...</div></div>
 <div class="ttc" id="a_n_t_sendable_8h_html"><div class="ttname"><a href="_n_t_sendable_8h.html">NTSendable.h</a></div></div>
@@ -490,6 +493,7 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a62d623797743f33f54f5ae1a9842e832"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a62d623797743f33f54f5ae1a9842e832">frc2::CommandScheduler::InitSendable</a></div><div class="ttdeci">void InitSendable(nt::NTSendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a65395de50d102cab9e7b61dd1c3f581a"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">frc2::CommandScheduler::Action</a></div><div class="ttdeci">std::function&lt; void(const Command &amp;)&gt; Action</div><div class="ttdef"><b>Definition:</b> CommandScheduler.h:48</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a66995c59146e8dff02d5279c8c2afc70"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a66995c59146e8dff02d5279c8c2afc70">frc2::CommandScheduler::SetActiveButtonLoop</a></div><div class="ttdeci">void SetActiveButtonLoop(frc::EventLoop *loop)</div><div class="ttdoc">Replace the button poll with another one.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a67346353f8a6c7c9638d4d1ebf9720ba"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">frc2::CommandScheduler::CommandTestBaseWithParam</a></div><div class="ttdeci">friend class CommandTestBaseWithParam</div><div class="ttdef"><b>Definition:</b> CommandScheduler.h:372</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a688ba62345990347a777f786a0c652b7"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a688ba62345990347a777f786a0c652b7">frc2::CommandScheduler::Disable</a></div><div class="ttdeci">void Disable()</div><div class="ttdoc">Disables the command scheduler.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a7a5dbc8fcac9c6828ffd39ffcf5aa240"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a7a5dbc8fcac9c6828ffd39ffcf5aa240">frc2::CommandScheduler::IsScheduled</a></div><div class="ttdeci">bool IsScheduled(wpi::span&lt; const Command *const &gt; commands) const</div><div class="ttdoc">Whether the given commands are running.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a7af6270403e23499db27b99e34cddb92"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a7af6270403e23499db27b99e34cddb92">frc2::CommandScheduler::ClearButtons</a></div><div class="ttdeci">void ClearButtons()</div><div class="ttdoc">Removes all button bindings from the scheduler.</div></div>
@@ -529,7 +533,7 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_command_scheduler_8h.html">CommandScheduler.h</a></li>
-    <li class="footer">Generated on Thu Jun 16 2022 06:17:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Jun 16 2022 06:50:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

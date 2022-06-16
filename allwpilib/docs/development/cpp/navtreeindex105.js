@@ -1,5 +1,7 @@
 var NAVTREEINDEX105 =
 {
+"group__cscore__logging__func.html#ga0a656d0d01cc1c848b89a4d3ddacec48":[3,11,13,1],
+"group__cscore__logging__func.html#ga1dc027dfb55fce0ad05b35ca6ae4c24f":[3,11,13,0],
 "group__cscore__logging__func.html#gad24ff6b7ebfb0fe2b873503b6aaa93ab":[3,11,13,2],
 "group__cscore__mjpegserver__cfunc.html":[3,14,10],
 "group__cscore__mjpegserver__cfunc.html#ga237393fc37481281b86a0670d545e25f":[3,14,10,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX105 =
 "group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdafca2ccebb604f171656deb53e8c083c1":[3,24,3,10,1],
 "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a2639cfa1e8faac751556bc0009fe95a4":[3,24,3,1,4],
 "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a47779b66e706c87e0850af31224ae9f6":[3,24,3,1,6],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a4e19dd09d5ff42295ba1d72d12a46686":[3,24,3,1,0],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a60057da2408e499b5656244d0b26cc20":[3,24,3,1,5],
-"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a8a380b1cd0c3e5a6cceac06f8235157a":[3,24,3,1,3]
+"group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a4e19dd09d5ff42295ba1d72d12a46686":[3,24,3,1,0]
 };

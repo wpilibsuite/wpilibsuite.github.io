@@ -41,5 +41,6 @@ var classfrc2_1_1_command_scheduler =
     [ "UnregisterSubsystem", "classfrc2_1_1_command_scheduler.html#ac8d83b513ca63f86e12c866f21baf0c9", null ],
     [ "UnregisterSubsystem", "classfrc2_1_1_command_scheduler.html#a4c6c118d955821e086f9f64700250923", null ],
     [ "UnregisterSubsystem", "classfrc2_1_1_command_scheduler.html#a89a2ad74eba2eed8b340d6ac709868ec", null ],
-    [ "CommandTestBase", "classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4", null ]
+    [ "CommandTestBase", "classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4", null ],
+    [ "CommandTestBaseWithParam", "classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba", null ]
 ];

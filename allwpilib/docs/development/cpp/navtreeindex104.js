@@ -1,5 +1,7 @@
 var NAVTREEINDEX104 =
 {
+"group___unit_math.html#gaef69e3da7b1cf820853dc8bb5043e1e7":[3,19,25],
+"group___unit_math.html#gaf02e920d1b57574f1c8ae3974d1e3c80":[3,19,24],
 "group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850":[3,19,29],
 "group___unit_math.html#gafeea9aa149ff1d941ed830ec389bf7f4":[3,19,8],
 "group___unit_math.html#gaffaf53aeed1529243100d0922bdce834":[3,19,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX104 =
 "group__cscore__logging__cfunc.html#ga2b4d450fc62f9d615eec5ace597d95e1":[3,14,14,1],
 "group__cscore__logging__cfunc.html#ga38e5aeab07ab49cd338db2aaa9fe3976":[3,14,14,0],
 "group__cscore__logging__cfunc.html#gaf2cacb1c5e55d199e39df7c9457e1cec":[3,14,14,2],
-"group__cscore__logging__func.html":[3,11,13],
-"group__cscore__logging__func.html#ga0a656d0d01cc1c848b89a4d3ddacec48":[3,11,13,1],
-"group__cscore__logging__func.html#ga1dc027dfb55fce0ad05b35ca6ae4c24f":[3,11,13,0]
+"group__cscore__logging__func.html":[3,11,13]
 };
