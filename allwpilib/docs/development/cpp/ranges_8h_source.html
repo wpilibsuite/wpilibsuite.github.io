@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-26-g9ac9b69</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-27-g6671f8d</span>
    </div>
   </td>
  </tr>
@@ -583,21 +583,21 @@ $(document).ready(function(){initNavTree('ranges_8h_source.html',''); initResiza
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="core_8h.html#aa775e2eb7e88a4d76cd37d63126aef11">is_utf8</a>()) {</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        <span class="keywordflow">if</span> (escape.cp &lt; 0x100) {</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>          out = <a class="code hl_function" href="core_8h.html#acccb7c60aa962b39ef947435def89471">format_to</a>(out, <span class="stringliteral">&quot;\\x{:02x}&quot;</span>, escape.cp);</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>          out = <a class="code hl_function" href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a>(out, <span class="stringliteral">&quot;\\x{:02x}&quot;</span>, escape.cp);</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>        }</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>        <span class="keywordflow">if</span> (escape.cp &lt; 0x10000) {</div>
-<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>          out = <a class="code hl_function" href="core_8h.html#acccb7c60aa962b39ef947435def89471">format_to</a>(out, <span class="stringliteral">&quot;\\u{:04x}&quot;</span>, escape.cp);</div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>          out = <a class="code hl_function" href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a>(out, <span class="stringliteral">&quot;\\u{:04x}&quot;</span>, escape.cp);</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>        }</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>        <span class="keywordflow">if</span> (escape.cp &lt; 0x110000) {</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>          out = <a class="code hl_function" href="core_8h.html#acccb7c60aa962b39ef947435def89471">format_to</a>(out, <span class="stringliteral">&quot;\\U{:08x}&quot;</span>, escape.cp);</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>          out = <a class="code hl_function" href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a>(out, <span class="stringliteral">&quot;\\U{:08x}&quot;</span>, escape.cp);</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>        }</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>      }</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>      <span class="keywordflow">for</span> (Char escape_char : <a class="code hl_class" href="classbasic__string__view.html">basic_string_view&lt;Char&gt;</a>(</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>               escape.begin, <a class="code hl_function" href="core_8h.html#abd7b6da8e7d4699f92f3d6adf12aa0ca">to_unsigned</a>(escape.end - escape.begin))) {</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>        out = <a class="code hl_function" href="core_8h.html#acccb7c60aa962b39ef947435def89471">format_to</a>(</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>        out = <a class="code hl_function" href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a>(</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>            out, <span class="stringliteral">&quot;\\x{:02x}&quot;</span>,</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>            <span class="keyword">static_cast&lt;</span>typename <a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">std::make_unsigned&lt;Char&gt;::type</a><span class="keyword">&gt;</span>(escape_char));</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>      }</div>
@@ -908,7 +908,6 @@ $(document).ready(function(){initNavTree('ranges_8h_source.html',''); initResiza
 <div class="ttc" id="acore_8h_html_ab02671eb0d43965fe2957e844f427451"><div class="ttname"><a href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a></div><div class="ttdeci">#define FMT_ENABLE_IF(...)</div><div class="ttdef"><b>Definition:</b> core.h:344</div></div>
 <div class="ttc" id="acore_8h_html_ab8ddf9531fc4ac7ce28574db20c8f20e"><div class="ttname"><a href="core_8h.html#ab8ddf9531fc4ac7ce28574db20c8f20e">void_t</a></div><div class="ttdeci">void void_t</div><div class="ttdef"><b>Definition:</b> core.h:1641</div></div>
 <div class="ttc" id="acore_8h_html_abd7b6da8e7d4699f92f3d6adf12aa0ca"><div class="ttname"><a href="core_8h.html#abd7b6da8e7d4699f92f3d6adf12aa0ca">to_unsigned</a></div><div class="ttdeci">FMT_CONSTEXPR auto to_unsigned(Int value) -&gt; typename std::make_unsigned&lt; Int &gt;::type</div><div class="ttdef"><b>Definition:</b> core.h:424</div></div>
-<div class="ttc" id="acore_8h_html_acccb7c60aa962b39ef947435def89471"><div class="ttname"><a href="core_8h.html#acccb7c60aa962b39ef947435def89471">format_to</a></div><div class="ttdeci">FMT_INLINE auto format_to(OutputIt out, format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; OutputIt</div><div class="ttdoc">\rst Formats args according to specifications in fmt, writes the result to the output iterator out an...</div><div class="ttdef"><b>Definition:</b> core.h:3146</div></div>
 <div class="ttc" id="acore_8h_html_acdb0eff728aec08ed6fff07d2885ea9d"><div class="ttname"><a href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a></div><div class="ttdeci">typename std::conditional&lt; B, T, F &gt;::type conditional_t</div><div class="ttdef"><b>Definition:</b> core.h:323</div></div>
 <div class="ttc" id="acore_8h_html_ada5b2a956a74d40f6afec72d7d0adc27"><div class="ttname"><a href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a></div><div class="ttdeci">typename std::remove_cv&lt; remove_reference_t&lt; T &gt; &gt;::type remove_cvref_t</div><div class="ttdef"><b>Definition:</b> core.h:330</div></div>
 <div class="ttc" id="acore_8h_html_ae0d2fbdf031547a949fc7e1c0b3c97f1"><div class="ttname"><a href="core_8h.html#ae0d2fbdf031547a949fc7e1c0b3c97f1">FMT_END_NAMESPACE</a></div><div class="ttdeci">#define FMT_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> core.h:240</div></div>
@@ -921,7 +920,7 @@ $(document).ready(function(){initNavTree('ranges_8h_source.html',''); initResiza
 <div class="ttc" id="anamespace_eigen_1_1numext_html_af6a076c0f63ad22b8620d4de6fc6f632"><div class="ttname"><a href="namespace_eigen_1_1numext.html#af6a076c0f63ad22b8620d4de6fc6f632">Eigen::numext::uint32_t</a></div><div class="ttdeci">typedef::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:56</div></div>
 <div class="ttc" id="anamespace_eigen_1_1placeholders_html_a24a00ff0f09137dcde6952ff29fb9f9d"><div class="ttname"><a href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">Eigen::placeholders::end</a></div><div class="ttdeci">static EIGEN_DEPRECATED const end_t end</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:181</div></div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:639</div></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> format-inl.h:32</div></div>
+<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> ostream.h:19</div></div>
 <div class="ttc" id="anamespacedetail_html_a01e20f71930337b925dda0602e4d1101"><div class="ttname"><a href="namespacedetail.html#a01e20f71930337b925dda0602e4d1101">detail::write_delimiter</a></div><div class="ttdeci">OutputIt write_delimiter(OutputIt out)</div><div class="ttdef"><b>Definition:</b> ranges.h:228</div></div>
 <div class="ttc" id="anamespacedetail_html_a0fe4689328674fb3fcc1dab25e7d56fd"><div class="ttname"><a href="namespacedetail.html#a0fe4689328674fb3fcc1dab25e7d56fd">detail::copy</a></div><div class="ttdeci">OutputIterator copy(wchar_t ch, OutputIterator out)</div><div class="ttdef"><b>Definition:</b> ranges.h:45</div></div>
 <div class="ttc" id="anamespacedetail_html_a13f263662d2a7d37893dbacfc534889f"><div class="ttname"><a href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">detail::value_type</a></div><div class="ttdeci">remove_cvref_t&lt; decltype(*detail::range_begin(std::declval&lt; Range &gt;()))&gt; value_type</div><div class="ttdef"><b>Definition:</b> ranges.h:226</div></div>
@@ -978,13 +977,14 @@ $(document).ready(function(){initNavTree('ranges_8h_source.html',''); initResiza
 <div class="ttc" id="astructtuple__join__view_html_a5360614eedaff4fe6375268447769828"><div class="ttname"><a href="structtuple__join__view.html#a5360614eedaff4fe6375268447769828">tuple_join_view::tuple_join_view</a></div><div class="ttdeci">tuple_join_view(const std::tuple&lt; T... &gt; &amp;t, basic_string_view&lt; Char &gt; s)</div><div class="ttdef"><b>Definition:</b> ranges.h:671</div></div>
 <div class="ttc" id="astructtuple__join__view_html_aaf69dbefaf462bf66a7b6a1ba6eabf2c"><div class="ttname"><a href="structtuple__join__view.html#aaf69dbefaf462bf66a7b6a1ba6eabf2c">tuple_join_view::tuple</a></div><div class="ttdeci">const std::tuple&lt; T... &gt; &amp; tuple</div><div class="ttdef"><b>Definition:</b> ranges.h:668</div></div>
 <div class="ttc" id="astructtuple__join__view_html_ae66f6f760fa6d34625c3aab25e9d219e"><div class="ttname"><a href="structtuple__join__view.html#ae66f6f760fa6d34625c3aab25e9d219e">tuple_join_view::sep</a></div><div class="ttdeci">basic_string_view&lt; Char &gt; sep</div><div class="ttdef"><b>Definition:</b> ranges.h:669</div></div>
+<div class="ttc" id="axchar_8h_html_a4ba756b447388cbd97a3f5b4954d7db6"><div class="ttname"><a href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a></div><div class="ttdeci">auto format_to(OutputIt out, const S &amp;fmt, Args &amp;&amp;... args) -&gt; OutputIt</div><div class="ttdef"><b>Definition:</b> xchar.h:134</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><a class="el" href="ranges_8h.html">ranges.h</a></li>
-    <li class="footer">Generated on Thu Jun 16 2022 06:50:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jun 18 2022 05:50:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

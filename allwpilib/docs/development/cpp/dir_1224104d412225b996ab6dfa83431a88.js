@@ -73,9 +73,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "leb128.h", "leb128_8h.html", "leb128_8h" ],
     [ "Logger.h", "_logger_8h.html", "_logger_8h" ],
     [ "ManagedStatic.h", "_managed_static_8h.html", "_managed_static_8h" ],
-    [ "MappedFileRegion.h", "_mapped_file_region_8h.html", [
-      [ "wpi::MappedFileRegion", "classwpi_1_1_mapped_file_region.html", "classwpi_1_1_mapped_file_region" ]
-    ] ],
+    [ "MappedFileRegion.h", "_mapped_file_region_8h.html", "_mapped_file_region_8h" ],
     [ "MapVector.h", "_map_vector_8h.html", [
       [ "wpi::MapVector< KeyT, ValueT, MapType, VectorType >", "classwpi_1_1_map_vector.html", "classwpi_1_1_map_vector" ],
       [ "wpi::SmallMapVector< KeyT, ValueT, N >", "structwpi_1_1_small_map_vector.html", null ]
@@ -83,7 +81,12 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "math", "math.html", null ],
     [ "MathExtras.h", "_math_extras_8h.html", "_math_extras_8h" ],
     [ "MemAlloc.h", "_mem_alloc_8h.html", "_mem_alloc_8h" ],
-    [ "MemoryBuffer.h", "_memory_buffer_8h.html", "_memory_buffer_8h" ],
+    [ "MemoryBuffer.h", "_memory_buffer_8h.html", [
+      [ "wpi::MemoryBuffer", "classwpi_1_1_memory_buffer.html", "classwpi_1_1_memory_buffer" ],
+      [ "wpi::WritableMemoryBuffer", "classwpi_1_1_writable_memory_buffer.html", "classwpi_1_1_writable_memory_buffer" ],
+      [ "wpi::WriteThroughMemoryBuffer", "classwpi_1_1_write_through_memory_buffer.html", "classwpi_1_1_write_through_memory_buffer" ],
+      [ "wpi::MemoryBufferRef", "classwpi_1_1_memory_buffer_ref.html", "classwpi_1_1_memory_buffer_ref" ]
+    ] ],
     [ "mpack.h", "mpack_8h.html", "mpack_8h" ],
     [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
     [ "nodiscard.h", "nodiscard_8h.html", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-26-g9ac9b69</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-27-g6671f8d</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('_generic_packet_math_functions_fwd_8h_
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// a floating-point Packet type. Used by pfrexp_generic. Override this if</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// there is no unpacket_traits&lt;Packet&gt;::integer_packet.</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Packet&gt; <a class="code hl_define" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> <a class="code hl_define" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>Packet <a class="code hl_function" href="namespace_eigen_1_1internal.html#ae613bd261d7701bbc5d18a4f800ca60f">pfrexp_generic_get_biased_exponent</a>(<span class="keyword">const</span> Packet&amp; p);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>Packet <a class="code hl_function" href="namespace_eigen_1_1internal.html#afee8a210263b3aff85ec85a60c34344a">pfrexp_generic_get_biased_exponent</a>(<span class="keyword">const</span> Packet&amp; p);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/** Default implementation of pldexp.</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  * It is expected to be called by implementers of template&lt;&gt; pldexp.</span></div>
@@ -221,15 +221,15 @@ $(document).ready(function(){initNavTree('_generic_packet_math_functions_fwd_8h_
 <div class="ttc" id="anamespace_eigen_1_1internal_html_abaa447709922cc22eb5dddfa2e7cf967"><div class="ttname"><a href="namespace_eigen_1_1internal.html#abaa447709922cc22eb5dddfa2e7cf967">Eigen::internal::pldexp_generic</a></div><div class="ttdeci">EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC Packet pldexp_generic(const Packet &amp;a, const Packet &amp;exponent)</div><div class="ttdoc">Default implementation of pldexp.</div><div class="ttdef"><b>Definition:</b> GenericPacketMathFunctions.h:85</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_ace01ecfb4f96a051479c259c31cddba8"><div class="ttname"><a href="namespace_eigen_1_1internal.html#ace01ecfb4f96a051479c259c31cddba8">Eigen::internal::pfrexp_generic</a></div><div class="ttdeci">EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC Packet pfrexp_generic(const Packet &amp;a, Packet &amp;exponent)</div><div class="ttdoc">Default implementation of pfrexp.</div><div class="ttdef"><b>Definition:</b> GenericPacketMathFunctions.h:40</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_adf8efa275ad2eee600065f2a23b6d9ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#adf8efa275ad2eee600065f2a23b6d9ec">Eigen::internal::pexp_float</a></div><div class="ttdeci">EIGEN_DEFINE_FUNCTION_ALLOWING_MULTIPLE_DEFINITIONS EIGEN_UNUSED Packet pexp_float(const Packet _x)</div><div class="ttdef"><b>Definition:</b> GenericPacketMathFunctions.h:439</div></div>
-<div class="ttc" id="anamespace_eigen_1_1internal_html_ae613bd261d7701bbc5d18a4f800ca60f"><div class="ttname"><a href="namespace_eigen_1_1internal.html#ae613bd261d7701bbc5d18a4f800ca60f">Eigen::internal::pfrexp_generic_get_biased_exponent</a></div><div class="ttdeci">EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC Packet pfrexp_generic_get_biased_exponent(const Packet &amp;a)</div><div class="ttdef"><b>Definition:</b> GenericPacketMathFunctions.h:30</div></div>
-<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> MatrixFunction.h:16</div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html_afee8a210263b3aff85ec85a60c34344a"><div class="ttname"><a href="namespace_eigen_1_1internal.html#afee8a210263b3aff85ec85a60c34344a">Eigen::internal::pfrexp_generic_get_biased_exponent</a></div><div class="ttdeci">EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC Packet pfrexp_generic_get_biased_exponent(const Packet &amp;p)</div><div class="ttdef"><b>Definition:</b> GenericPacketMathFunctions.h:30</div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> Core:141</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_7e22f4c3bff1da2631ff9f7e4f928280.html">Core</a></li><li class="navelem"><a class="el" href="dir_5ecb211690c931281f1306a5cd720017.html">arch</a></li><li class="navelem"><a class="el" href="dir_0a46a090988936395187126999913ceb.html">Default</a></li><li class="navelem"><a class="el" href="_generic_packet_math_functions_fwd_8h.html">GenericPacketMathFunctionsFwd.h</a></li>
-    <li class="footer">Generated on Thu Jun 16 2022 06:50:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jun 18 2022 05:50:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
