@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: wpi/ReverseIteration.h Source File</title>
+<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/llvm/include/wpi/ReverseIteration.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-27-g6671f8d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-28-g787fe6e</span>
    </div>
   </td>
  </tr>
@@ -94,31 +94,35 @@ $(document).ready(function(){initNavTree('_reverse_iteration_8h_source.html','')
   <div class="headertitle"><div class="title">ReverseIteration.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_reverse_iteration_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef WPI_REVERSEITERATION_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define WPI_REVERSEITERATION_H</span></div>
+<a href="_reverse_iteration_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef WPIUTIL_WPI_REVERSEITERATION_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define WPIUTIL_WPI_REVERSEITERATION_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_pointer_like_type_traits_8h.html">wpi/PointerLikeTypeTraits.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacewpi.html">wpi</a> {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> T = <span class="keywordtype">void</span> *&gt;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespacewpi.html#aadcf09f283e254bf6198212ffa0ee130">    9</a></span><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacewpi.html#aadcf09f283e254bf6198212ffa0ee130">shouldReverseIterate</a>() {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="namespacewpi.html#afbf26bf198ea436f545bf8205670ff7a">    9</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacewpi.html#afbf26bf198ea436f545bf8205670ff7a">shouldReverseIterate</a>() {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#if LLVM_ENABLE_REVERSE_ITERATION</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="structwpi_1_1detail_1_1_is_pointer_like.html">detail::IsPointerLike&lt;T&gt;::value</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_pointer_like_type_traits_8h_html"><div class="ttname"><a href="_pointer_like_type_traits_8h.html">PointerLikeTypeTraits.h</a></div></div>
-<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> WindowsError.h:14</div></div>
-<div class="ttc" id="anamespacewpi_html_aadcf09f283e254bf6198212ffa0ee130"><div class="ttname"><a href="namespacewpi.html#aadcf09f283e254bf6198212ffa0ee130">wpi::shouldReverseIterate</a></div><div class="ttdeci">constexpr bool shouldReverseIterate()</div><div class="ttdef"><b>Definition:</b> ReverseIteration.h:9</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> condition_variable.h:11</div></div>
+<div class="ttc" id="anamespacewpi_html_afbf26bf198ea436f545bf8205670ff7a"><div class="ttname"><a href="namespacewpi.html#afbf26bf198ea436f545bf8205670ff7a">wpi::shouldReverseIterate</a></div><div class="ttdeci">bool shouldReverseIterate()</div><div class="ttdef"><b>Definition:</b> ReverseIteration.h:9</div></div>
+<div class="ttc" id="astructwpi_1_1detail_1_1_is_pointer_like_html"><div class="ttname"><a href="structwpi_1_1detail_1_1_is_pointer_like.html">wpi::detail::IsPointerLike</a></div><div class="ttdef"><b>Definition:</b> PointerLikeTypeTraits.h:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_reverse_iteration_8h.html">ReverseIteration.h</a></li>
-    <li class="footer">Generated on Sat Jun 18 2022 05:50:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_3c14e2811843326714b08335f4db6d6f.html">llvm</a></li><li class="navelem"><a class="el" href="dir_c9d71ee896d0afc8c2dc55673cfe897b.html">include</a></li><li class="navelem"><a class="el" href="dir_a809135da9c9e78db898aa42d248563a.html">wpi</a></li><li class="navelem"><a class="el" href="_reverse_iteration_8h.html">ReverseIteration.h</a></li>
+    <li class="footer">Generated on Sat Jun 18 2022 15:11:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

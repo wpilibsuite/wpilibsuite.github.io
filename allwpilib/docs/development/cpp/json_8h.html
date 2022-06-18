@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: wpi/json.h File Reference</title>
+<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/json/include/wpi/json.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-27-g6671f8d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-28-g787fe6e</span>
    </div>
   </td>
  </tr>
@@ -271,6 +271,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memTemplParams" colspan="2">template&lt;bool B, typename T  = void&gt; </td></tr>
 <tr class="memitem:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#afe0837f80c2797e20e43f5cf9d1f5174">wpi::detail::enable_if_t</a> = typename std::enable_if&lt; B, T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
 <tr class="separator:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7989691524c4283ec6ef011a57486f4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad7989691524c4283ec6ef011a57486f4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#ad7989691524c4283ec6ef011a57486f4">wpi::detail::uncvref_t</a> = typename std::remove_cv&lt; typename std::remove_reference&lt; T &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="separator:ad7989691524c4283ec6ef011a57486f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -382,7 +385,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a6af4aed802e2ee957fdac4e7cf368946"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType &gt; </td></tr>
 <tr class="memitem:a6af4aed802e2ee957fdac4e7cf368946"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#a6af4aed802e2ee957fdac4e7cf368946">wpi::detail::to_json</a> (BasicJsonType &amp;j, const std::vector&lt; bool &gt; &amp;e)</td></tr>
 <tr class="separator:a6af4aed802e2ee957fdac4e7cf368946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3edb2a6bfb82ce388cfe4df7587bf707"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename CompatibleArrayType , <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt; is_compatible_array_type&lt; BasicJsonType, CompatibleArrayType &gt;::<a class="el" href="classvalue.html">value</a> <a class="el" href="_third_party_notices_8txt.html#a46c4f230524f71a1c0164accc25c0987">or</a> std::is_same&lt; typename BasicJsonType::array_t, CompatibleArrayType &gt;::<a class="el" href="classvalue.html">value</a>, int &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a3edb2a6bfb82ce388cfe4df7587bf707"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename CompatibleArrayType , <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt; is_compatible_array_type&lt; BasicJsonType, CompatibleArrayType &gt;::<a class="el" href="classvalue.html">value</a> <a class="el" href="_third_party_notices_8txt.html#a3d2bcfd013d8297d0df0a31cb92e058c">or</a> std::is_same&lt; typename BasicJsonType::array_t, CompatibleArrayType &gt;::<a class="el" href="classvalue.html">value</a>, int &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a3edb2a6bfb82ce388cfe4df7587bf707"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#a3edb2a6bfb82ce388cfe4df7587bf707">wpi::detail::to_json</a> (BasicJsonType &amp;j, const CompatibleArrayType &amp;arr)</td></tr>
 <tr class="separator:a3edb2a6bfb82ce388cfe4df7587bf707"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe28311734636c9c39e0ce661ea60ab"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType &gt; </td></tr>
@@ -682,8 +685,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="json_8h.html">json.h</a></li>
-    <li class="footer">Generated on Sat Jun 18 2022 05:50:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_c5899dcd8d70be9995aa46df1e95d573.html">json</a></li><li class="navelem"><a class="el" href="dir_55e13a782ff7e1eb68ac482c6e742089.html">include</a></li><li class="navelem"><a class="el" href="dir_0ebdfd797abcdc883dc565d0762779d9.html">wpi</a></li><li class="navelem"><a class="el" href="json_8h.html">json.h</a></li>
+    <li class="footer">Generated on Sat Jun 18 2022 15:11:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

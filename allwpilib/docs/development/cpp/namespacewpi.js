@@ -518,7 +518,7 @@ var namespacewpi =
     [ "set_fixed_execution_hash_seed", "namespacewpi.html#ab9199d95a0d0ca4ba23a42b8c9cd4763", null ],
     [ "SetGetStackTraceImpl", "namespacewpi.html#a3776b907dc530ce3556e36bcb5a68462", null ],
     [ "sgn", "namespacewpi.html#a0dca6ddf9e17f10ec7699c29819b6c18", null ],
-    [ "shouldReverseIterate", "namespacewpi.html#aadcf09f283e254bf6198212ffa0ee130", null ],
+    [ "shouldReverseIterate", "namespacewpi.html#afbf26bf198ea436f545bf8205670ff7a", null ],
     [ "SignExtend32", "namespacewpi.html#ae892922c9d93c91d358b554fec2b6505", null ],
     [ "SignExtend32", "namespacewpi.html#a9c3d762ed7571ddac4e212f583eb0a12", null ],
     [ "SignExtend64", "namespacewpi.html#a401f9f01b250b094f790fab7706106d8", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-27-g6671f8d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-28-g787fe6e</span>
    </div>
   </td>
  </tr>
@@ -156,9 +156,9 @@ $(document).ready(function(){initNavTree('_inverse_impl_8h_source.html',''); ini
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">bool</span>&amp; invertible</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  )</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">using</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">using</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    determinant = matrix.coeff(0,0);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    invertible = <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(determinant) &gt; absDeterminantThreshold;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    invertible = <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(determinant) &gt; absDeterminantThreshold;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span>(invertible) <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>.coeffRef(0,0) = <span class="keyword">typename</span> ResultType::Scalar(1) / determinant;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
@@ -204,10 +204,10 @@ $(document).ready(function(){initNavTree('_inverse_impl_8h_source.html',''); ini
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">bool</span>&amp; invertible</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  )</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">using</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">using</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> ResultType::Scalar Scalar;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    determinant = matrix.determinant();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    invertible = <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(determinant) &gt; absDeterminantThreshold;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    invertible = <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(determinant) &gt; absDeterminantThreshold;</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">if</span>(!invertible) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">const</span> Scalar invdet = Scalar(1) / determinant;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <a class="code hl_function" href="namespace_eigen_1_1internal.html#a226353f68c902ad825660b118014f21f">compute_inverse_size2_helper</a>(matrix, invdet, <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ab3df1b08b9c073db2a7e61a9b06bb295">inverse</a>);</div>
@@ -371,9 +371,9 @@ $(document).ready(function(){initNavTree('_inverse_impl_8h_source.html',''); ini
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordtype">bool</span>&amp; invertible</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  )</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  {</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keyword">using</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keyword">using</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>;</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    determinant = matrix.determinant();</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    invertible = <a class="code hl_function" href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(determinant) &gt; absDeterminantThreshold;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    invertible = <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(determinant) &gt; absDeterminantThreshold;</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordflow">if</span>(invertible &amp;&amp; <a class="code hl_function" href="namespace_eigen_1_1internal.html#ac36d192dba2ce85748797331ed3b1bbe">extract_data</a>(matrix) != <a class="code hl_function" href="namespace_eigen_1_1internal.html#ac36d192dba2ce85748797331ed3b1bbe">extract_data</a>(<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ab3df1b08b9c073db2a7e61a9b06bb295">inverse</a>)) {</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>      <a class="code hl_function" href="struct_eigen_1_1internal_1_1compute__inverse.html#ab3392d7cab242bdb510741c662dc01dd">compute_inverse&lt;MatrixType, ResultType&gt;::run</a>(matrix, <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ab3df1b08b9c073db2a7e61a9b06bb295">inverse</a>);</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
@@ -545,7 +545,7 @@ $(document).ready(function(){initNavTree('_inverse_impl_8h_source.html',''); ini
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html_ad6ab241435124b11a3921df752d28daf"><div class="ttname"><a href="class_eigen_1_1_matrix.html#ad6ab241435124b11a3921df752d28daf">Eigen::Matrix::coeffRef</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE Scalar &amp; coeffRef(Index rowId, Index colId)</div><div class="ttdoc">This is an overloaded version of DenseCoeffsBase&lt;Derived,WriteAccessors&gt;::coeffRef(Index,...</div><div class="ttdef"><b>Definition:</b> PlainObjectBase.h:175</div></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1131</div></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2_chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2_chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1488</div></div>
+<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1488</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a226353f68c902ad825660b118014f21f"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a226353f68c902ad825660b118014f21f">Eigen::internal::compute_inverse_size2_helper</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC void compute_inverse_size2_helper(const MatrixType &amp;matrix, const typename ResultType::Scalar &amp;invdet, ResultType &amp;result)</div><div class="ttdef"><b>Definition:</b> InverseImpl.h:76</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a2f9bd6b722b2debe228dc7b07737d6f7"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a2f9bd6b722b2debe228dc7b07737d6f7">Eigen::internal::general_det3_helper</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const Derived::Scalar general_det3_helper(const MatrixBase&lt; Derived &gt; &amp;matrix, int i1, int i2, int i3, int j1, int j2, int j3)</div><div class="ttdef"><b>Definition:</b> InverseImpl.h:210</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a59da7796f5fabd3f99a7af0c5c3b6e74"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a59da7796f5fabd3f99a7af0c5c3b6e74">Eigen::internal::cofactor_4x4</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC MatrixType::Scalar cofactor_4x4(const MatrixType &amp;matrix)</div><div class="ttdef"><b>Definition:</b> InverseImpl.h:218</div></div>
@@ -585,7 +585,7 @@ $(document).ready(function(){initNavTree('_inverse_impl_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_ab643b2b1527c452fab7a68b435c648a.html">LU</a></li><li class="navelem"><a class="el" href="_inverse_impl_8h.html">InverseImpl.h</a></li>
-    <li class="footer">Generated on Sat Jun 18 2022 05:50:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jun 18 2022 15:11:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-27-g6671f8d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-28-g787fe6e</span>
    </div>
   </td>
  </tr>
@@ -440,7 +440,7 @@ Typedefs</h2></td></tr>
 <p >Builder containers can be nested within normal (known size) containers and vice versa. You can call <a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a>, then <a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329" title="Opens an array.">mpack_start_array()</a> inside it, then <a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> inside that, and so forth.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga65e149d035d8de105774ebad2363cac5" title="Completes an array being built.">mpack_complete_array()</a> to complete this array </dd>
 <dd>
-<a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329" title="Opens an array.">mpack_start_array()</a> <a class="el" href="_third_party_notices_8txt.html#a073cc636a4a3b099f4c7946d4eae4f48">if</a> you already know the size <a class="el" href="_third_party_notices_8txt.html#a82ade4266c4afbba726ebbab8698845c">of</a> the array </dd>
+<a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329" title="Opens an array.">mpack_start_array()</a> <a class="el" href="_third_party_notices_8txt.html#a073cc636a4a3b099f4c7946d4eae4f48">if</a> you already know the size <a class="el" href="_third_party_notices_8txt.html#a722520c6e3abb87f2a1ab08c64a89ced">of</a> the array </dd>
 <dd>
 <a class="el" href="group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8" title="Starts building a map.">mpack_build_map()</a> for implementation details </dd></dl>
 
@@ -472,7 +472,7 @@ Typedefs</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>When an array or map starts being built, nothing will be flushed until it is completed. If you are building a large message that does not fit in the output stream, you won't get an error about it until everything is written.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga10d9f55e0a512d88ede66bbbc543f711" title="Completes a map being built.">mpack_complete_map()</a> to complete this map </dd>
 <dd>
-<a class="el" href="group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61" title="Opens a map.">mpack_start_map()</a> <a class="el" href="_third_party_notices_8txt.html#a073cc636a4a3b099f4c7946d4eae4f48">if</a> you already know the size <a class="el" href="_third_party_notices_8txt.html#a82ade4266c4afbba726ebbab8698845c">of</a> the map </dd></dl>
+<a class="el" href="group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61" title="Opens a map.">mpack_start_map()</a> <a class="el" href="_third_party_notices_8txt.html#a073cc636a4a3b099f4c7946d4eae4f48">if</a> you already know the size <a class="el" href="_third_party_notices_8txt.html#a722520c6e3abb87f2a1ab08c64a89ced">of</a> the map </dd></dl>
 
 </div>
 </div>
@@ -794,7 +794,7 @@ Typedefs</h2></td></tr>
 <p >If you do not know the number of elements to be written ahead of time, call <a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> instead.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga1c597827ddb001bd2551e4f8b7fb1c95" title="Finishes writing an array.">mpack_finish_array()</a> </dd>
 <dd>
-<a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> to <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a> the number <a class="el" href="_third_party_notices_8txt.html#a82ade4266c4afbba726ebbab8698845c">of</a> elements automatically </dd></dl>
+<a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> to <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a> the number <a class="el" href="_third_party_notices_8txt.html#a722520c6e3abb87f2a1ab08c64a89ced">of</a> elements automatically </dd></dl>
 
 </div>
 </div>
@@ -861,7 +861,7 @@ Typedefs</h2></td></tr>
 <p >Remember that while map elements in MessagePack are implicitly ordered, they are not ordered in JSON. If you need elements to be read back in the order they are written, consider use an array instead.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga3e783297212b505681f32400a7416fa0" title="Finishes writing a map.">mpack_finish_map()</a> </dd>
 <dd>
-<a class="el" href="group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8" title="Starts building a map.">mpack_build_map()</a> to <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a> the number <a class="el" href="_third_party_notices_8txt.html#a82ade4266c4afbba726ebbab8698845c">of</a> key/value pairs automatically </dd></dl>
+<a class="el" href="group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8" title="Starts building a map.">mpack_build_map()</a> to <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a> the number <a class="el" href="_third_party_notices_8txt.html#a722520c6e3abb87f2a1ab08c64a89ced">of</a> key/value pairs automatically </dd></dl>
 
 </div>
 </div>
@@ -2126,7 +2126,7 @@ finish" bug from causing a never-ending message. </p>
 
 <p>Initializes an MPack writer using a growable buffer. </p>
 <p >The data is placed in the given data pointer if and when the writer is destroyed without error. The data pointer is NULL during writing, and will remain NULL if an error occurs.</p>
-<p >The allocated data must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply <a class="el" href="_third_party_notices_8txt.html#ab531b7d95cd61823259f644014f432a6">free()</a> if MPack's allocator hasn't been customized.)</p>
+<p >The allocated data must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply <a class="el" href="_third_party_notices_8txt.html#a22852d05d86a994ddfa3c5109b64ebb2">free()</a> if MPack's allocator hasn't been customized.)</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">mpack_error_memory</td><td>if the buffer fails to grow when flushing.</td></tr>
@@ -2352,7 +2352,7 @@ finish" bug from causing a never-ending message. </p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 18 2022 05:50:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Jun 18 2022 15:11:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
