@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"_math_functions_8h.html#a23043b8c165331b25be039f495dfa1c6":[6,0,8,1,0,0,0,1,40,83],
 "_math_functions_8h.html#a283774f4ea81069e1eb63452ae925770":[6,0,8,1,0,0,0,1,40,142],
 "_math_functions_8h.html#a28dbd9a9c8208199e41f9cb4f8a9abcc":[6,0,8,1,0,0,0,1,40,121],
 "_math_functions_8h.html#a29d502349f2ec9897c808e65e0f96eb4":[6,0,8,1,0,0,0,1,40,143],
@@ -9,6 +8,7 @@ var NAVTREEINDEX10 =
 "_math_functions_8h.html#a36862639fe0e8879b650a1111db1eec6":[6,0,8,1,0,0,0,1,40,154],
 "_math_functions_8h.html#a379005605a0d52888b75a516d191d37c":[6,0,8,1,0,0,0,1,40,147],
 "_math_functions_8h.html#a37fe89516bf3a3a0ddad3e0a8b89c206":[6,0,8,1,0,0,0,1,40,107],
+"_math_functions_8h.html#a381f80dcff321d22be012ec77817bb94":[6,0,8,1,0,0,0,1,40,100],
 "_math_functions_8h.html#a3971fed6f1aa9f60bf2b3c9c29f674b4":[6,0,8,1,0,0,0,1,40,124],
 "_math_functions_8h.html#a3a16f08b4c93e2853d700d73afe9a8f2":[6,0,8,1,0,0,0,1,40,112],
 "_math_functions_8h.html#a3cc80fc03610837da180f7e6d8e7b3ec":[6,0,8,1,0,0,0,1,40,153],
@@ -40,6 +40,7 @@ var NAVTREEINDEX10 =
 "_math_functions_8h.html#a9b2237b8d2efcbad55586743f3882a64":[6,0,8,1,0,0,0,1,40,109],
 "_math_functions_8h.html#a9b7a415a3401c28e7f8320e796159680":[6,0,8,1,0,0,0,1,40,96],
 "_math_functions_8h.html#aa4be6feea9e2540d3e3e1f411df2a5e6":[6,0,8,1,0,0,0,1,40,151],
+"_math_functions_8h.html#aa66707871e0b19a13608de358389972e":[6,0,8,1,0,0,0,1,40,99],
 "_math_functions_8h.html#aa813ff3fa5b9e7d7e64813d01701a83e":[6,0,8,1,0,0,0,1,40,106],
 "_math_functions_8h.html#aaae7a38ff399cff8362c40e9338002f6":[6,0,8,1,0,0,0,1,40,80],
 "_math_functions_8h.html#aab765557e1249782dbc24d6642e49c26":[6,0,8,1,0,0,0,1,40,139],
@@ -49,7 +50,6 @@ var NAVTREEINDEX10 =
 "_math_functions_8h.html#abac0da1e999e0f1bda99ef3c90eb8cb0":[6,0,8,1,0,0,0,1,40,104],
 "_math_functions_8h.html#ac09cd9261a50a46dd4937868020c7c45":[6,0,8,1,0,0,0,1,40,86],
 "_math_functions_8h.html#ac7ea6bc9ae520ddba4114982fc587ffc":[6,0,8,1,0,0,0,1,40,132],
-"_math_functions_8h.html#ac92e3e68f2311398a6fa4c8b6f188283":[6,0,8,1,0,0,0,1,40,100],
 "_math_functions_8h.html#ad09350f823b13ad700a58ffecc99cab9":[6,0,8,1,0,0,0,1,40,141],
 "_math_functions_8h.html#ad59216129a430099e97b4c4b1e2f2984":[6,0,8,1,0,0,0,1,40,88],
 "_math_functions_8h.html#ad7a90176816bfd3586bb9e84c5edd704":[6,0,8,1,0,0,0,1,40,149],
@@ -62,16 +62,15 @@ var NAVTREEINDEX10 =
 "_math_functions_8h.html#aecd03a9e5cbe688b927ba09ff456a036":[6,0,8,1,0,0,0,1,40,118],
 "_math_functions_8h.html#af52c29f5576f7fdbb7f7335bbe55287e":[6,0,8,1,0,0,0,1,40,110],
 "_math_functions_8h.html#af96302f95b827c59b9285b16508282b8":[6,0,8,1,0,0,0,1,40,115],
-"_math_functions_8h.html#afa8377dd47b49bcccc7a3fd43c3ba77c":[6,0,8,1,0,0,0,1,40,99],
 "_math_functions_8h.html#afd221b41868bd0f3675c6ccf2dfa2239":[6,0,8,1,0,0,0,1,40,113],
 "_math_functions_8h.html#afece450c6344e5a39261f006e0e8513d":[6,0,8,1,0,0,0,1,40,126],
 "_math_functions_8h_source.html":[6,0,8,1,0,0,0,1,40],
 "_math_functions_impl_8h.html":[6,0,8,1,0,0,0,1,41],
 "_math_functions_impl_8h.html#a34bb4f1547f13730e187d12038529cd5":[6,0,8,1,0,0,0,1,41,5],
+"_math_functions_impl_8h.html#a381f80dcff321d22be012ec77817bb94":[6,0,8,1,0,0,0,1,41,3],
+"_math_functions_impl_8h.html#aa66707871e0b19a13608de358389972e":[6,0,8,1,0,0,0,1,41,2],
 "_math_functions_impl_8h.html#ab589c1da1f207b3493c463c5f006c8cc":[6,0,8,1,0,0,0,1,41,4],
 "_math_functions_impl_8h.html#ab618d9f91937fc8af2f975fd29447a97":[6,0,8,1,0,0,0,1,41,1],
-"_math_functions_impl_8h.html#ac92e3e68f2311398a6fa4c8b6f188283":[6,0,8,1,0,0,0,1,41,3],
-"_math_functions_impl_8h.html#afa8377dd47b49bcccc7a3fd43c3ba77c":[6,0,8,1,0,0,0,1,41,2],
 "_math_functions_impl_8h_source.html":[6,0,8,1,0,0,0,1,41],
 "_math_shared_8h.html":[6,0,12,0],
 "_math_shared_8h.html#af988a6ae82b74fd638848ac5824ad461":[6,0,12,0,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "_memory_8h.html#adbf078c78da41b6c2ca7f85cf32e59b5":[6,0,8,1,0,0,0,1,3,8,36],
 "_memory_8h.html#ae4bf2b34741512d206aa238550a2c42c":[6,0,8,1,0,0,0,1,3,8,7],
 "_memory_8h.html#aea41e5e1db6ad09e6179067833413451":[6,0,8,1,0,0,0,1,3,8,31],
-"_memory_8h.html#aef45b3d13f972b0edee7537f50c929c9":[6,0,8,1,0,0,0,1,3,8,37]
+"_memory_8h.html#aef45b3d13f972b0edee7537f50c929c9":[6,0,8,1,0,0,0,1,3,8,37],
+"_memory_8h.html#aefb14fc87518cc6b91063a820a66a21b":[6,0,8,1,0,0,0,1,3,8,48]
 };

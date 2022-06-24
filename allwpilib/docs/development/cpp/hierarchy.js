@@ -476,6 +476,9 @@ var hierarchy =
         [ "frc2::CommandHelper< CommandBase, WaitUntilCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::WaitUntilCommand", "classfrc2_1_1_wait_until_command.html", null ]
         ] ],
+        [ "frc2::CommandHelper< CommandBase, WrapperCommand >", "classfrc2_1_1_command_helper.html", [
+          [ "frc2::WrapperCommand", "classfrc2_1_1_wrapper_command.html", null ]
+        ] ],
         [ "frc2::CommandGroupBase", "classfrc2_1_1_command_group_base.html", [
           [ "frc2::CommandHelper< CommandGroupBase, ParallelCommandGroup >", "classfrc2_1_1_command_helper.html", [
             [ "frc2::ParallelCommandGroup", "classfrc2_1_1_parallel_command_group.html", null ]

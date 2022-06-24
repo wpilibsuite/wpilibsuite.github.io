@@ -46,6 +46,7 @@ var namespacefrc2 =
     [ "Trigger", "classfrc2_1_1_trigger.html", "classfrc2_1_1_trigger" ],
     [ "WaitCommand", "classfrc2_1_1_wait_command.html", "classfrc2_1_1_wait_command" ],
     [ "WaitUntilCommand", "classfrc2_1_1_wait_until_command.html", "classfrc2_1_1_wait_until_command" ],
+    [ "WrapperCommand", "classfrc2_1_1_wrapper_command.html", "classfrc2_1_1_wrapper_command" ],
     [ "GetTypeName", "namespacefrc2.html#a238ba66ee92553efe2e8f3d5452816bd", null ],
     [ "RequirementsDisjoint", "namespacefrc2.html#a4a39157216e8af34bf8b27df43ae20db", null ],
     [ "SetInsert", "namespacefrc2.html#a708ef2018d9f0cfa30b7ff3ebfc1f83f", null ],

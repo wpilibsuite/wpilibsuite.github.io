@@ -16,6 +16,7 @@ var classfrc2_1_1_command =
     [ "GetName", "classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b", null ],
     [ "GetRequirements", "classfrc2_1_1_command.html#a4830db450b1382e0b7395143e457ddc6", null ],
     [ "HasRequirement", "classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4", null ],
+    [ "IgnoringDisable", "classfrc2_1_1_command.html#af7f8cbee58cacc610a5200a653fd9ed2", null ],
     [ "Initialize", "classfrc2_1_1_command.html#ad3f1971a1b44ecdd4683d766f831bccd", null ],
     [ "IsFinished", "classfrc2_1_1_command.html#af5e8c12152d195a4f3c06789366aac88", null ],
     [ "IsGrouped", "classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40", null ],

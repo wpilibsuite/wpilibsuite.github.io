@@ -106,5 +106,8 @@ var dir_25d5854705192c92d2d003534c71255a =
     ] ],
     [ "WaitUntilCommand.h", "_wait_until_command_8h.html", [
       [ "frc2::WaitUntilCommand", "classfrc2_1_1_wait_until_command.html", "classfrc2_1_1_wait_until_command" ]
+    ] ],
+    [ "WrapperCommand.h", "_wrapper_command_8h.html", [
+      [ "frc2::WrapperCommand", "classfrc2_1_1_wrapper_command.html", "classfrc2_1_1_wrapper_command" ]
     ] ]
 ];

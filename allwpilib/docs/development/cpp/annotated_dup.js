@@ -2052,7 +2052,8 @@ var annotated_dup =
       [ "TrapezoidProfileSubsystem", "classfrc2_1_1_trapezoid_profile_subsystem.html", "classfrc2_1_1_trapezoid_profile_subsystem" ],
       [ "Trigger", "classfrc2_1_1_trigger.html", "classfrc2_1_1_trigger" ],
       [ "WaitCommand", "classfrc2_1_1_wait_command.html", "classfrc2_1_1_wait_command" ],
-      [ "WaitUntilCommand", "classfrc2_1_1_wait_until_command.html", "classfrc2_1_1_wait_until_command" ]
+      [ "WaitUntilCommand", "classfrc2_1_1_wait_until_command.html", "classfrc2_1_1_wait_until_command" ],
+      [ "WrapperCommand", "classfrc2_1_1_wrapper_command.html", "classfrc2_1_1_wrapper_command" ]
     ] ],
     [ "ghc", "namespaceghc.html", [
       [ "filesystem", "namespaceghc_1_1filesystem.html", [
