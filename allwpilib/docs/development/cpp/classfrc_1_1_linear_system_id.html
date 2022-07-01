@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-33-g2e09fa7</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-37-gfaa29d5</span>
    </div>
   </td>
  </tr>
@@ -127,10 +127,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9dfa2cb9de19595c5eb43d2842e00689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state-space model for a 1 DOF position system from system identification data.  <a href="classfrc_1_1_linear_system_id.html#a9dfa2cb9de19595c5eb43d2842e00689">More...</a><br /></td></tr>
 <tr class="separator:a9dfa2cb9de19595c5eb43d2842e00689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683b6de8c6a77b64329f0184b8f2bff2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; 2, 2, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_id.html#a683b6de8c6a77b64329f0184b8f2bff2">IdentifyDrivetrainSystem</a> (decltype(1_V/1_mps) kVlinear, decltype(1_V/1_mps_sq) kAlinear, decltype(1_V/1_mps) kVangular, decltype(1_V/1_mps_sq) kAangular)</td></tr>
-<tr class="memdesc:a683b6de8c6a77b64329f0184b8f2bff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state-space model for a 2 DOF drivetrain velocity system from system identification data.  <a href="classfrc_1_1_linear_system_id.html#a683b6de8c6a77b64329f0184b8f2bff2">More...</a><br /></td></tr>
+<tr class="memdesc:a683b6de8c6a77b64329f0184b8f2bff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify a differential drive drivetrain given the drivetrain's kV and kA in both linear (volts/(meter/sec) and volts/(meter/sec²)) and angular (volts/(radian/sec) and volts/(radian/sec²)) cases.  <a href="classfrc_1_1_linear_system_id.html#a683b6de8c6a77b64329f0184b8f2bff2">More...</a><br /></td></tr>
 <tr class="separator:a683b6de8c6a77b64329f0184b8f2bff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9880b786f4fe79178de1696f2a1a4ef"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; 2, 2, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_id.html#aa9880b786f4fe79178de1696f2a1a4ef">IdentifyDrivetrainSystem</a> (decltype(1_V/1_mps) kVlinear, decltype(1_V/1_mps_sq) kAlinear, decltype(1_V/1_rad_per_s) kVangular, decltype(1_V/1_rad_per_s_sq) kAangular, units::meter_t trackwidth)</td></tr>
-<tr class="memdesc:aa9880b786f4fe79178de1696f2a1a4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state-space model for a 2 DOF drivetrain velocity system from system identification data.  <a href="classfrc_1_1_linear_system_id.html#aa9880b786f4fe79178de1696f2a1a4ef">More...</a><br /></td></tr>
+<tr class="memdesc:aa9880b786f4fe79178de1696f2a1a4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identify a differential drive drivetrain given the drivetrain's kV and kA in both linear (volts/(meter/sec) and volts/(meter/sec²)) and angular (volts/(radian/sec) and volts/(radian/sec²)) cases.  <a href="classfrc_1_1_linear_system_id.html#aa9880b786f4fe79178de1696f2a1a4ef">More...</a><br /></td></tr>
 <tr class="separator:aa9880b786f4fe79178de1696f2a1a4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88f743980122d1e2c19ea4dd2c72edc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; 1, 1, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_system_id.html#ae88f743980122d1e2c19ea4dd2c72edc">FlywheelSystem</a> (<a class="el" href="classfrc_1_1_d_c_motor.html">DCMotor</a> motor, units::kilogram_square_meter_t J, double G)</td></tr>
 <tr class="memdesc:ae88f743980122d1e2c19ea4dd2c72edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state-space model for a flywheel.  <a href="classfrc_1_1_linear_system_id.html#ae88f743980122d1e2c19ea4dd2c72edc">More...</a><br /></td></tr>
@@ -486,8 +486,11 @@ template&lt;typename Distance &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs the state-space model for a 2 DOF drivetrain velocity system from system identification data. </p>
-<p >States: [[left velocity], [right velocity]] Inputs: [[left voltage], [right voltage]] Outputs: [[left velocity], [right velocity]]</p>
+<p>Identify a differential drive drivetrain given the drivetrain's kV and kA in both linear (volts/(meter/sec) and volts/(meter/sec²)) and angular (volts/(radian/sec) and volts/(radian/sec²)) cases. </p>
+<p >This can be found using SysId.</p>
+<p >States: [[left velocity], [right velocity]]<br  />
+ Inputs: [[left voltage], [right voltage]]<br  />
+ Outputs: [[left velocity], [right velocity]]</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">kVlinear</td><td>The linear velocity gain in volts per (meter per second). </td></tr>
@@ -558,15 +561,18 @@ template&lt;typename Distance &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs the state-space model for a 2 DOF drivetrain velocity system from system identification data. </p>
-<p >States: [[left velocity], [right velocity]] Inputs: [[left voltage], [right voltage]] Outputs: [[left velocity], [right velocity]]</p>
+<p>Identify a differential drive drivetrain given the drivetrain's kV and kA in both linear (volts/(meter/sec) and volts/(meter/sec²)) and angular (volts/(radian/sec) and volts/(radian/sec²)) cases. </p>
+<p >This can be found using SysId.</p>
+<p >States: [[left velocity], [right velocity]]<br  />
+ Inputs: [[left voltage], [right voltage]]<br  />
+ Outputs: [[left velocity], [right velocity]]</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">kVlinear</td><td>The linear velocity gain in volts per (meter per second). </td></tr>
     <tr><td class="paramname">kAlinear</td><td>The linear acceleration gain in volts per (meter per second squared). </td></tr>
     <tr><td class="paramname">kVangular</td><td>The angular velocity gain in volts per (radian per second). </td></tr>
     <tr><td class="paramname">kAangular</td><td>The angular acceleration gain in volts per (radian per second squared). </td></tr>
-    <tr><td class="paramname">trackwidth</td><td>The width of the drivetrain. </td></tr>
+    <tr><td class="paramname">trackwidth</td><td>The distance between the differential drive's left and right wheels. </td></tr>
   </table>
   </dd>
 </dl>
@@ -761,7 +767,7 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_linear_system_id.html">LinearSystemId</a></li>
-    <li class="footer">Generated on Sat Jun 25 2022 02:38:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jul 1 2022 13:48:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

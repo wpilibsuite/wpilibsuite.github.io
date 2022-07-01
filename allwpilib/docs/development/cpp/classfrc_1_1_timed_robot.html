@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-33-g2e09fa7</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-37-gfaa29d5</span>
    </div>
   </td>
  </tr>
@@ -266,7 +266,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classfrc_1_1_timed_robot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a> implements the <a class="el" href="classfrc_1_1_iterative_robot_base.html" title="IterativeRobotBase implements a specific type of robot program framework, extending the RobotBase cla...">IterativeRobotBase</a> robot program framework. </p>
 <p >The <a class="el" href="classfrc_1_1_timed_robot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a> class is intended to be subclassed by a user creating a robot program.</p>
-<p >Periodic() functions from the base class are called on an interval by a <a class="el" href="classfrc_1_1_notifier.html">Notifier</a> instance. </p>
+<p >Periodic() functions from the base class are called on an interval by a <a class="el" href="classfrc_1_1_notifier.html" title="Notifiers run a callback function on a separate thread at a specified period.">Notifier</a> instance. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a622f35ae5205eed127b5016b189ec274" name="a622f35ae5205eed127b5016b189ec274"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a622f35ae5205eed127b5016b189ec274">&#9670;&nbsp;</a></span>TimedRobot() <span class="overload">[1/2]</span></h2>
@@ -387,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add a callback to run at a specific period with a starting time offset. </p>
-<p >This is scheduled on <a class="el" href="classfrc_1_1_timed_robot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>'s <a class="el" href="classfrc_1_1_notifier.html">Notifier</a>, so <a class="el" href="classfrc_1_1_timed_robot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a> and the callback run synchronously. Interactions between them are thread-safe.</p>
+<p >This is scheduled on <a class="el" href="classfrc_1_1_timed_robot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>'s <a class="el" href="classfrc_1_1_notifier.html" title="Notifiers run a callback function on a separate thread at a specified period.">Notifier</a>, so <a class="el" href="classfrc_1_1_timed_robot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a> and the callback run synchronously. Interactions between them are thread-safe.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">callback</td><td>The callback to run. </td></tr>
@@ -515,7 +515,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_timed_robot.html">TimedRobot</a></li>
-    <li class="footer">Generated on Sat Jun 25 2022 02:38:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Jul 1 2022 13:48:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
