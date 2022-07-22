@@ -156,40 +156,40 @@
 <span class="sourceLineNo">144</span><a id="line.144">   * &lt;p&gt;Stencil points are the indices of the samples to use in the finite difference. 0 is the</a>
 <span class="sourceLineNo">145</span><a id="line.145">   * current sample, -1 is the previous sample, -2 is the sample before that, etc. Don't use</a>
 <span class="sourceLineNo">146</span><a id="line.146">   * positive stencil points (samples from the future) if the LinearFilter will be used for</a>
-<span class="sourceLineNo">147</span><a id="line.147">   * stream-based online filtering.</a>
+<span class="sourceLineNo">147</span><a id="line.147">   * stream-based online filtering (e.g., taking derivative of encoder samples in real-time).</a>
 <span class="sourceLineNo">148</span><a id="line.148">   *</a>
 <span class="sourceLineNo">149</span><a id="line.149">   * @param derivative The order of the derivative to compute.</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * @param samples The number of samples to use to compute the given derivative. This must be one</a>
-<span class="sourceLineNo">151</span><a id="line.151">   *     more than the order of derivative or higher.</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * @param stencil List of stencil points.</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * @param period The period in seconds between samples taken by the user.</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * @return Linear filter.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   * @throws IllegalArgumentException if derivative &amp;lt; 1, samples &amp;lt;= 0, or derivative &amp;gt;=</a>
-<span class="sourceLineNo">156</span><a id="line.156">   *     samples.</a>
-<span class="sourceLineNo">157</span><a id="line.157">   */</a>
-<span class="sourceLineNo">158</span><a id="line.158">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">159</span><a id="line.159">  public static LinearFilter finiteDifference(</a>
-<span class="sourceLineNo">160</span><a id="line.160">      int derivative, int samples, int[] stencil, double period) {</a>
-<span class="sourceLineNo">161</span><a id="line.161">    // See</a>
-<span class="sourceLineNo">162</span><a id="line.162">    // https://en.wikipedia.org/wiki/Finite_difference_coefficient#Arbitrary_stencil_points</a>
-<span class="sourceLineNo">163</span><a id="line.163">    //</a>
-<span class="sourceLineNo">164</span><a id="line.164">    // For a given list of stencil points s of length n and the order of</a>
-<span class="sourceLineNo">165</span><a id="line.165">    // derivative d &lt; n, the finite difference coefficients can be obtained by</a>
-<span class="sourceLineNo">166</span><a id="line.166">    // solving the following linear system for the vector a.</a>
-<span class="sourceLineNo">167</span><a id="line.167">    //</a>
-<span class="sourceLineNo">168</span><a id="line.168">    // [s₁⁰   ⋯  sₙ⁰ ][a₁]      [ δ₀,d ]</a>
-<span class="sourceLineNo">169</span><a id="line.169">    // [ ⋮    ⋱  ⋮   ][⋮ ] = d! [  ⋮   ]</a>
-<span class="sourceLineNo">170</span><a id="line.170">    // [s₁ⁿ⁻¹ ⋯ sₙⁿ⁻¹][aₙ]      [δₙ₋₁,d]</a>
-<span class="sourceLineNo">171</span><a id="line.171">    //</a>
-<span class="sourceLineNo">172</span><a id="line.172">    // where δᵢ,ⱼ are the Kronecker delta. The FIR gains are the elements of the</a>
-<span class="sourceLineNo">173</span><a id="line.173">    // vector a in reverse order divided by hᵈ.</a>
-<span class="sourceLineNo">174</span><a id="line.174">    //</a>
-<span class="sourceLineNo">175</span><a id="line.175">    // The order of accuracy of the approximation is of the form O(hⁿ⁻ᵈ).</a>
-<span class="sourceLineNo">176</span><a id="line.176"></a>
-<span class="sourceLineNo">177</span><a id="line.177">    if (derivative &lt; 1) {</a>
-<span class="sourceLineNo">178</span><a id="line.178">      throw new IllegalArgumentException(</a>
-<span class="sourceLineNo">179</span><a id="line.179">          "Order of derivative must be greater than or equal to one.");</a>
-<span class="sourceLineNo">180</span><a id="line.180">    }</a>
+<span class="sourceLineNo">150</span><a id="line.150">   * @param stencil List of stencil points. Its length is the number of samples to use to compute</a>
+<span class="sourceLineNo">151</span><a id="line.151">   *     the given derivative. This must be one more than the order of the derivative or higher.</a>
+<span class="sourceLineNo">152</span><a id="line.152">   * @param period The period in seconds between samples taken by the user.</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * @return Linear filter.</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * @throws IllegalArgumentException if derivative &amp;lt; 1, samples &amp;lt;= 0, or derivative &amp;gt;=</a>
+<span class="sourceLineNo">155</span><a id="line.155">   *     samples.</a>
+<span class="sourceLineNo">156</span><a id="line.156">   */</a>
+<span class="sourceLineNo">157</span><a id="line.157">  @SuppressWarnings("LocalVariableName")</a>
+<span class="sourceLineNo">158</span><a id="line.158">  public static LinearFilter finiteDifference(int derivative, int[] stencil, double period) {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    // See</a>
+<span class="sourceLineNo">160</span><a id="line.160">    // https://en.wikipedia.org/wiki/Finite_difference_coefficient#Arbitrary_stencil_points</a>
+<span class="sourceLineNo">161</span><a id="line.161">    //</a>
+<span class="sourceLineNo">162</span><a id="line.162">    // For a given list of stencil points s of length n and the order of</a>
+<span class="sourceLineNo">163</span><a id="line.163">    // derivative d &lt; n, the finite difference coefficients can be obtained by</a>
+<span class="sourceLineNo">164</span><a id="line.164">    // solving the following linear system for the vector a.</a>
+<span class="sourceLineNo">165</span><a id="line.165">    //</a>
+<span class="sourceLineNo">166</span><a id="line.166">    // [s₁⁰   ⋯  sₙ⁰ ][a₁]      [ δ₀,d ]</a>
+<span class="sourceLineNo">167</span><a id="line.167">    // [ ⋮    ⋱  ⋮   ][⋮ ] = d! [  ⋮   ]</a>
+<span class="sourceLineNo">168</span><a id="line.168">    // [s₁ⁿ⁻¹ ⋯ sₙⁿ⁻¹][aₙ]      [δₙ₋₁,d]</a>
+<span class="sourceLineNo">169</span><a id="line.169">    //</a>
+<span class="sourceLineNo">170</span><a id="line.170">    // where δᵢ,ⱼ are the Kronecker delta. The FIR gains are the elements of the</a>
+<span class="sourceLineNo">171</span><a id="line.171">    // vector a in reverse order divided by hᵈ.</a>
+<span class="sourceLineNo">172</span><a id="line.172">    //</a>
+<span class="sourceLineNo">173</span><a id="line.173">    // The order of accuracy of the approximation is of the form O(hⁿ⁻ᵈ).</a>
+<span class="sourceLineNo">174</span><a id="line.174"></a>
+<span class="sourceLineNo">175</span><a id="line.175">    if (derivative &lt; 1) {</a>
+<span class="sourceLineNo">176</span><a id="line.176">      throw new IllegalArgumentException(</a>
+<span class="sourceLineNo">177</span><a id="line.177">          "Order of derivative must be greater than or equal to one.");</a>
+<span class="sourceLineNo">178</span><a id="line.178">    }</a>
+<span class="sourceLineNo">179</span><a id="line.179"></a>
+<span class="sourceLineNo">180</span><a id="line.180">    int samples = stencil.length;</a>
 <span class="sourceLineNo">181</span><a id="line.181"></a>
 <span class="sourceLineNo">182</span><a id="line.182">    if (samples &lt;= 0) {</a>
 <span class="sourceLineNo">183</span><a id="line.183">      throw new IllegalArgumentException("Number of samples must be greater than zero.");</a>
@@ -248,7 +248,7 @@
 <span class="sourceLineNo">236</span><a id="line.236">      stencil[i] = -(samples - 1) + i;</a>
 <span class="sourceLineNo">237</span><a id="line.237">    }</a>
 <span class="sourceLineNo">238</span><a id="line.238"></a>
-<span class="sourceLineNo">239</span><a id="line.239">    return finiteDifference(derivative, samples, stencil, period);</a>
+<span class="sourceLineNo">239</span><a id="line.239">    return finiteDifference(derivative, stencil, period);</a>
 <span class="sourceLineNo">240</span><a id="line.240">  }</a>
 <span class="sourceLineNo">241</span><a id="line.241"></a>
 <span class="sourceLineNo">242</span><a id="line.242">  /** Reset the filter state. */</a>
