@@ -132,56 +132,59 @@
 <span class="sourceLineNo">120</span><a id="line.120">    final double vRef = linearVelocityRefMeters;</a>
 <span class="sourceLineNo">121</span><a id="line.121">    final double omegaRef = angularVelocityRefRadiansPerSecond;</a>
 <span class="sourceLineNo">122</span><a id="line.122"></a>
-<span class="sourceLineNo">123</span><a id="line.123">    double k = 2.0 * m_zeta * Math.sqrt(Math.pow(omegaRef, 2) + m_b * Math.pow(vRef, 2));</a>
-<span class="sourceLineNo">124</span><a id="line.124"></a>
-<span class="sourceLineNo">125</span><a id="line.125">    return new ChassisSpeeds(</a>
-<span class="sourceLineNo">126</span><a id="line.126">        vRef * m_poseError.getRotation().getCos() + k * eX,</a>
-<span class="sourceLineNo">127</span><a id="line.127">        0.0,</a>
-<span class="sourceLineNo">128</span><a id="line.128">        omegaRef + k * eTheta + m_b * vRef * sinc(eTheta) * eY);</a>
-<span class="sourceLineNo">129</span><a id="line.129">  }</a>
-<span class="sourceLineNo">130</span><a id="line.130"></a>
-<span class="sourceLineNo">131</span><a id="line.131">  /**</a>
-<span class="sourceLineNo">132</span><a id="line.132">   * Returns the next output of the Ramsete controller.</a>
-<span class="sourceLineNo">133</span><a id="line.133">   *</a>
-<span class="sourceLineNo">134</span><a id="line.134">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
-<span class="sourceLineNo">135</span><a id="line.135">   * trajectory.</a>
+<span class="sourceLineNo">123</span><a id="line.123">    // k = 2ζ√(ω_ref² + b v_ref²)</a>
+<span class="sourceLineNo">124</span><a id="line.124">    double k = 2.0 * m_zeta * Math.sqrt(Math.pow(omegaRef, 2) + m_b * Math.pow(vRef, 2));</a>
+<span class="sourceLineNo">125</span><a id="line.125"></a>
+<span class="sourceLineNo">126</span><a id="line.126">    // v_cmd = v_ref cos(e_θ) + k e_x</a>
+<span class="sourceLineNo">127</span><a id="line.127">    // ω_cmd = ω_ref + k e_θ + b v_ref sinc(e_θ) e_y</a>
+<span class="sourceLineNo">128</span><a id="line.128">    return new ChassisSpeeds(</a>
+<span class="sourceLineNo">129</span><a id="line.129">        vRef * m_poseError.getRotation().getCos() + k * eX,</a>
+<span class="sourceLineNo">130</span><a id="line.130">        0.0,</a>
+<span class="sourceLineNo">131</span><a id="line.131">        omegaRef + k * eTheta + m_b * vRef * sinc(eTheta) * eY);</a>
+<span class="sourceLineNo">132</span><a id="line.132">  }</a>
+<span class="sourceLineNo">133</span><a id="line.133"></a>
+<span class="sourceLineNo">134</span><a id="line.134">  /**</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * Returns the next output of the Ramsete controller.</a>
 <span class="sourceLineNo">136</span><a id="line.136">   *</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * @param currentPose The current pose.</a>
-<span class="sourceLineNo">138</span><a id="line.138">   * @param desiredState The desired pose, linear velocity, and angular velocity from a trajectory.</a>
-<span class="sourceLineNo">139</span><a id="line.139">   * @return The next controller output.</a>
-<span class="sourceLineNo">140</span><a id="line.140">   */</a>
-<span class="sourceLineNo">141</span><a id="line.141">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">142</span><a id="line.142">  public ChassisSpeeds calculate(Pose2d currentPose, Trajectory.State desiredState) {</a>
-<span class="sourceLineNo">143</span><a id="line.143">    return calculate(</a>
-<span class="sourceLineNo">144</span><a id="line.144">        currentPose,</a>
-<span class="sourceLineNo">145</span><a id="line.145">        desiredState.poseMeters,</a>
-<span class="sourceLineNo">146</span><a id="line.146">        desiredState.velocityMetersPerSecond,</a>
-<span class="sourceLineNo">147</span><a id="line.147">        desiredState.velocityMetersPerSecond * desiredState.curvatureRadPerMeter);</a>
-<span class="sourceLineNo">148</span><a id="line.148">  }</a>
-<span class="sourceLineNo">149</span><a id="line.149"></a>
-<span class="sourceLineNo">150</span><a id="line.150">  /**</a>
-<span class="sourceLineNo">151</span><a id="line.151">   * Enables and disables the controller for troubleshooting purposes.</a>
-<span class="sourceLineNo">152</span><a id="line.152">   *</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * @param enabled If the controller is enabled or not.</a>
-<span class="sourceLineNo">154</span><a id="line.154">   */</a>
-<span class="sourceLineNo">155</span><a id="line.155">  public void setEnabled(boolean enabled) {</a>
-<span class="sourceLineNo">156</span><a id="line.156">    m_enabled = enabled;</a>
-<span class="sourceLineNo">157</span><a id="line.157">  }</a>
-<span class="sourceLineNo">158</span><a id="line.158"></a>
-<span class="sourceLineNo">159</span><a id="line.159">  /**</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * Returns sin(x) / x.</a>
-<span class="sourceLineNo">161</span><a id="line.161">   *</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @param x Value of which to take sinc(x).</a>
-<span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">165</span><a id="line.165">  private static double sinc(double x) {</a>
-<span class="sourceLineNo">166</span><a id="line.166">    if (Math.abs(x) &lt; 1e-9) {</a>
-<span class="sourceLineNo">167</span><a id="line.167">      return 1.0 - 1.0 / 6.0 * x * x;</a>
-<span class="sourceLineNo">168</span><a id="line.168">    } else {</a>
-<span class="sourceLineNo">169</span><a id="line.169">      return Math.sin(x) / x;</a>
-<span class="sourceLineNo">170</span><a id="line.170">    }</a>
-<span class="sourceLineNo">171</span><a id="line.171">  }</a>
-<span class="sourceLineNo">172</span><a id="line.172">}</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
+<span class="sourceLineNo">138</span><a id="line.138">   * trajectory.</a>
+<span class="sourceLineNo">139</span><a id="line.139">   *</a>
+<span class="sourceLineNo">140</span><a id="line.140">   * @param currentPose The current pose.</a>
+<span class="sourceLineNo">141</span><a id="line.141">   * @param desiredState The desired pose, linear velocity, and angular velocity from a trajectory.</a>
+<span class="sourceLineNo">142</span><a id="line.142">   * @return The next controller output.</a>
+<span class="sourceLineNo">143</span><a id="line.143">   */</a>
+<span class="sourceLineNo">144</span><a id="line.144">  @SuppressWarnings("LocalVariableName")</a>
+<span class="sourceLineNo">145</span><a id="line.145">  public ChassisSpeeds calculate(Pose2d currentPose, Trajectory.State desiredState) {</a>
+<span class="sourceLineNo">146</span><a id="line.146">    return calculate(</a>
+<span class="sourceLineNo">147</span><a id="line.147">        currentPose,</a>
+<span class="sourceLineNo">148</span><a id="line.148">        desiredState.poseMeters,</a>
+<span class="sourceLineNo">149</span><a id="line.149">        desiredState.velocityMetersPerSecond,</a>
+<span class="sourceLineNo">150</span><a id="line.150">        desiredState.velocityMetersPerSecond * desiredState.curvatureRadPerMeter);</a>
+<span class="sourceLineNo">151</span><a id="line.151">  }</a>
+<span class="sourceLineNo">152</span><a id="line.152"></a>
+<span class="sourceLineNo">153</span><a id="line.153">  /**</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * Enables and disables the controller for troubleshooting purposes.</a>
+<span class="sourceLineNo">155</span><a id="line.155">   *</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * @param enabled If the controller is enabled or not.</a>
+<span class="sourceLineNo">157</span><a id="line.157">   */</a>
+<span class="sourceLineNo">158</span><a id="line.158">  public void setEnabled(boolean enabled) {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    m_enabled = enabled;</a>
+<span class="sourceLineNo">160</span><a id="line.160">  }</a>
+<span class="sourceLineNo">161</span><a id="line.161"></a>
+<span class="sourceLineNo">162</span><a id="line.162">  /**</a>
+<span class="sourceLineNo">163</span><a id="line.163">   * Returns sin(x) / x.</a>
+<span class="sourceLineNo">164</span><a id="line.164">   *</a>
+<span class="sourceLineNo">165</span><a id="line.165">   * @param x Value of which to take sinc(x).</a>
+<span class="sourceLineNo">166</span><a id="line.166">   */</a>
+<span class="sourceLineNo">167</span><a id="line.167">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">168</span><a id="line.168">  private static double sinc(double x) {</a>
+<span class="sourceLineNo">169</span><a id="line.169">    if (Math.abs(x) &lt; 1e-9) {</a>
+<span class="sourceLineNo">170</span><a id="line.170">      return 1.0 - 1.0 / 6.0 * x * x;</a>
+<span class="sourceLineNo">171</span><a id="line.171">    } else {</a>
+<span class="sourceLineNo">172</span><a id="line.172">      return Math.sin(x) / x;</a>
+<span class="sourceLineNo">173</span><a id="line.173">    }</a>
+<span class="sourceLineNo">174</span><a id="line.174">  }</a>
+<span class="sourceLineNo">175</span><a id="line.175">}</a>
 
 
 
