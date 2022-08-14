@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-48-g3fdb2f7</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-50-gc5db23f</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('_transpose_8h_source.html',''); initRe
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>internal {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceinternal.html">internal</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType&gt;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;<a class="code hl_class" href="class_eigen_1_1_transpose.html">Transpose</a>&lt;MatrixType&gt; &gt; : <span class="keyword">public</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;MatrixType&gt;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('_transpose_8h_source.html',''); initRe
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_eigen_1_1_transpose.html#a36d09cc8bd5cfd70edade814ac6293f6">   59</a></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_class" href="class_eigen_1_1_transpose_impl.html">TransposeImpl&lt;MatrixType,typename internal::traits&lt;MatrixType&gt;::StorageKind</a>&gt;<a class="code hl_typedef" href="class_eigen_1_1_transpose.html#a36d09cc8bd5cfd70edade814ac6293f6">::Base</a> <a class="code hl_typedef" href="class_eigen_1_1_transpose.html#a36d09cc8bd5cfd70edade814ac6293f6">Base</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_define" href="_macros_8h.html#a2e5d5054c3dfcf7642af8bf98e917d67">EIGEN_GENERIC_PUBLIC_INTERFACE</a>(<a class="code hl_class" href="class_eigen_1_1_transpose.html">Transpose</a>)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_eigen_1_1_transpose.html#ad647d12ef19ec62e9c549b162e2d55c3">   61</a></span>    typedef typename internal::<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a5800151c7b68737a331d17a014b5176e">remove_all</a>&lt;MatrixType&gt;::<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="code hl_typedef" href="class_eigen_1_1_transpose.html#ad647d12ef19ec62e9c549b162e2d55c3">NestedExpression</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_eigen_1_1_transpose.html#ad647d12ef19ec62e9c549b162e2d55c3">   61</a></span>    typedef typename <a class="code hl_namespace" href="namespaceinternal.html">internal</a>::<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a5800151c7b68737a331d17a014b5176e">remove_all</a>&lt;MatrixType&gt;::<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="code hl_typedef" href="class_eigen_1_1_transpose.html#ad647d12ef19ec62e9c549b162e2d55c3">NestedExpression</a>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_define" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_eigen_1_1_transpose.html#a4e28c98d95306881bee44141bf16602c">   64</a></span>    explicit <a class="code hl_define" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> <a class="code hl_class" href="class_eigen_1_1_transpose.html">Transpose</a>(MatrixType&amp; matrix) : <a class="code hl_variable" href="class_eigen_1_1_transpose.html#ad67b9a99f0c2859e56128159db5a749d">m_matrix</a>(matrix) {}</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('_transpose_8h_source.html',''); initRe
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_eigen_1_1_transpose.html#ad67b9a99f0c2859e56128159db5a749d">   90</a></span>    <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">internal::ref_selector&lt;MatrixType&gt;::non_const_type</a> <a class="code hl_variable" href="class_eigen_1_1_transpose.html#ad67b9a99f0c2859e56128159db5a749d">m_matrix</a>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>};</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">namespace </span>internal {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceinternal.html">internal</a> {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>template&lt;typename MatrixType, bool HasDirectAccess = has_direct_access&lt;MatrixType&gt;::ret&gt;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1_transpose_impl__base.html">   96</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1_transpose_impl__base.html">TransposeImpl_base</a></div>
@@ -323,7 +323,7 @@ $(document).ready(function(){initNavTree('_transpose_8h_source.html',''); initRe
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">* &quot;in place&quot; transpose implementation</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">***************************************************************************/</span></div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="keyword">namespace </span>internal {</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceinternal.html">internal</a> {</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType,</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordtype">bool</span> IsSquare = (MatrixType::RowsAtCompileTime == MatrixType::ColsAtCompileTime) &amp;&amp; MatrixType::RowsAtCompileTime!=<a class="code hl_variable" href="namespace_eigen.html#ad81fa7195215a0ce30017dfac309f0b2">Dynamic</a>,</div>
@@ -477,7 +477,7 @@ $(document).ready(function(){initNavTree('_transpose_8h_source.html',''); initRe
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="comment">// The following is to detect aliasing problems in most common cases.</span></div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="keyword">namespace </span>internal {</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceinternal.html">internal</a> {</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="keyword">template</span>&lt;<span class="keywordtype">bool</span> DestIsTransposed, <span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1check__transpose__aliasing__compile__time__selector.html">  387</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1check__transpose__aliasing__compile__time__selector.html">check_transpose_aliasing_compile_time_selector</a></div>
@@ -609,6 +609,7 @@ $(document).ready(function(){initNavTree('_transpose_8h_source.html',''); initRe
 <div class="ttc" id="anamespace_eigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
 <div class="ttc" id="anamespace_eigen_html_ad81fa7195215a0ce30017dfac309f0b2"><div class="ttname"><a href="namespace_eigen.html#ad81fa7195215a0ce30017dfac309f0b2">Eigen::Dynamic</a></div><div class="ttdeci">const int Dynamic</div><div class="ttdoc">This value means that a positive quantity (e.g., a size) is not known at compile-time,...</div><div class="ttdef"><b>Definition:</b> Constants.h:22</div></div>
 <div class="ttc" id="anamespaceghc_1_1filesystem_html_a5800151c7b68737a331d17a014b5176e"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#a5800151c7b68737a331d17a014b5176e">ghc::filesystem::remove_all</a></div><div class="ttdeci">GHC_FS_API uintmax_t remove_all(const path &amp;p, std::error_code &amp;ec) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:4732</div></div>
+<div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="astruct_eigen_1_1_dense_html"><div class="ttname"><a href="struct_eigen_1_1_dense.html">Eigen::Dense</a></div><div class="ttdoc">The type used to identify a dense storage.</div><div class="ttdef"><b>Definition:</b> Constants.h:507</div></div>
 <div class="ttc" id="astruct_eigen_1_1_num_traits_html"><div class="ttname"><a href="struct_eigen_1_1_num_traits.html">Eigen::NumTraits</a></div><div class="ttdoc">Holds information about the various numeric (i.e.</div><div class="ttdef"><b>Definition:</b> NumTraits.h:233</div></div>
 <div class="ttc" id="astruct_eigen_1_1internal_1_1_packet_block_html"><div class="ttname"><a href="struct_eigen_1_1internal_1_1_packet_block.html">Eigen::internal::PacketBlock</a></div><div class="ttdef"><b>Definition:</b> GenericPacketMath.h:1014</div></div>
@@ -652,7 +653,7 @@ $(document).ready(function(){initNavTree('_transpose_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_7e22f4c3bff1da2631ff9f7e4f928280.html">Core</a></li><li class="navelem"><a class="el" href="_transpose_8h.html">Transpose.h</a></li>
-    <li class="footer">Generated on Thu Aug 11 2022 14:12:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Aug 14 2022 01:35:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

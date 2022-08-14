@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-48-g3fdb2f7</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-50-gc5db23f</span>
    </div>
   </td>
  </tr>
@@ -126,9 +126,10 @@ class Eigen::ScalarBinaryOpTraits&lt; ScalarA, ScalarB, BinaryOp &gt;</div><p >D
 <div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> BinaryOp&gt;</div>
 <div class="line"><span class="keyword">struct </span>ScalarBinaryOpTraits&lt;U2,U1,BinaryOp&gt; { <span class="keyword">typedef</span> U3 ReturnType;  };</div>
 </div><!-- fragment --><p> You can then explicitly disable some particular operations to get more explicit error messages: </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><span class="keyword">struct </span>ScalarBinaryOpTraits&lt;U1,U2,internal::scalar_max_op&lt;U1,U2&gt; &gt; {};</div>
+<div class="line"><span class="keyword">struct </span>ScalarBinaryOpTraits&lt;U1,U2,<a class="code hl_namespace" href="namespaceinternal.html">internal</a>::scalar_max_op&lt;U1,U2&gt; &gt; {};</div>
+<div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 </div><!-- fragment --><p> Or customize the return type for individual operation: </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><span class="keyword">struct </span>ScalarBinaryOpTraits&lt;U1,U2,internal::scalar_sum_op&lt;U1,U2&gt; &gt; { <span class="keyword">typedef</span> U1 ReturnType; };</div>
+<div class="line"><span class="keyword">struct </span>ScalarBinaryOpTraits&lt;U1,U2,<a class="code hl_namespace" href="namespaceinternal.html">internal</a>::scalar_sum_op&lt;U1,U2&gt; &gt; { <span class="keyword">typedef</span> U1 ReturnType; };</div>
 </div><!-- fragment --><p >By default, the following generic combinations are supported: </p><table class="manual">
 <tr>
 <th>ScalarA</th><th>ScalarB</th><th>BinaryOp</th><th>ReturnType</th><th>Note </th></tr>
@@ -149,7 +150,7 @@ class Eigen::ScalarBinaryOpTraits&lt; ScalarA, ScalarB, BinaryOp &gt;</div><p >D
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a></li>
-    <li class="footer">Generated on Thu Aug 11 2022 14:12:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Aug 14 2022 01:35:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

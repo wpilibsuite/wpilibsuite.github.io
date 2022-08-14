@@ -1079,7 +1079,7 @@ var group___core___module =
       [ "setIdentity", "class_eigen_1_1_matrix_base.html#a054e0ad7e745cb1b9f2e87807e4d2200", null ],
       [ "setUnit", "class_eigen_1_1_matrix_base.html#af5fc86a27db5c5a38dad49174f43fe7c", null ],
       [ "setUnit", "class_eigen_1_1_matrix_base.html#a775bfaeb1ba1abc0f63771ac6dafe5f9", null ],
-      [ "sparseView", "class_eigen_1_1_matrix_base.html#a320dd291cbf4339c6118c41521b75350", null ],
+      [ "sparseView", "group___sparse_core___module.html#ga320dd291cbf4339c6118c41521b75350", null ],
       [ "squaredNorm", "class_eigen_1_1_matrix_base.html#a0afd613885f8d3a66978b1255b5887c1", null ],
       [ "stableNorm", "class_eigen_1_1_matrix_base.html#a624431d9543dacf9aef2bee325a0686f", null ],
       [ "stableNormalize", "class_eigen_1_1_matrix_base.html#a4c5e4f21e24a98f0fbb0a0ea18f81add", null ],

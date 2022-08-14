@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-48-g3fdb2f7</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-50-gc5db23f</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespace_eigen.html">   16</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> { </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespace_eigen_1_1internal.html">   18</a></span><span class="keyword">namespace </span>internal {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespace_eigen_1_1internal.html">   18</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceinternal.html">internal</a> {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/** \brief Maximum distance allowed between eigenvalues to be considered &quot;close&quot;. */</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespace_eigen_1_1internal.html#a83aececb2dc32d30c1aa55f9aa5532d9">   21</a></span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a83aececb2dc32d30c1aa55f9aa5532d9">matrix_function_separation</a> = 0.1f;</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_eigen_1_1internal_1_1_matrix_function_atomic.html#a704ccdc87d66cb6f93d16e0a0b9e8acf">   64</a></span>MatrixType <a class="code hl_function" href="class_eigen_1_1internal_1_1_matrix_function_atomic.html#a704ccdc87d66cb6f93d16e0a0b9e8acf">MatrixFunctionAtomic&lt;MatrixType&gt;::compute</a>(<span class="keyword">const</span> MatrixType&amp; A)</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// TODO: Use that A is upper triangular</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_typedef" href="struct_eigen_1_1_generic_num_traits.html#abca8573812593670795c41f22aa9d5e2">NumTraits&lt;Scalar&gt;::Real</a> RealScalar;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::Real</a> RealScalar;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rows = A.rows();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <a class="code hl_typedef" href="class_eigen_1_1internal_1_1_matrix_function_atomic.html#a36e1110dfad326a36f2024128a7cd57f">Scalar</a> avgEival = A.trace() / <a class="code hl_typedef" href="class_eigen_1_1internal_1_1_matrix_function_atomic.html#a36e1110dfad326a36f2024128a7cd57f">Scalar</a>(RealScalar(rows));</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  MatrixType Ashifted = A - avgEival * MatrixType::Identity(rows, rows);</div>
@@ -609,7 +609,7 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>    <a class="code hl_typedef" href="class_eigen_1_1_matrix_function_return_value.html#a1c4568cb2dc9683383dbf1729f3fe51e">StemFunction</a> *m_f;</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>};</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span> </div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="keyword">namespace </span>internal {</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceinternal.html">internal</a> {</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1traits_3_01_matrix_function_return_value_3_01_derived_01_4_01_4.html">  518</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;<a class="code hl_class" href="class_eigen_1_1_matrix_function_return_value.html">MatrixFunctionReturnValue</a>&lt;Derived&gt; &gt;</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>{</div>
@@ -712,6 +712,7 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> MatrixFunction.h:16</div></div>
 <div class="ttc" id="anamespace_eigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format-inl.h:639</div></div>
+<div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="anamespacestd_html_a96fe9b71b86c96cbbd77452a4d949675"><div class="ttname"><a href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallPtrSet&lt; T, N &gt; &amp;LHS, wpi::SmallPtrSet&lt; T, N &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallPtrSet swap.</div><div class="ttdef"><b>Definition:</b> SmallPtrSet.h:511</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a8ef157f2a40ed27a0f834847b332eb72"><div class="ttname"><a href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">units::constants::F</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; charge::coulomb, inverse&lt; substance::mol &gt; &gt; &gt; F(N_A *e)</div><div class="ttdoc">Faraday constant.</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3421</div></div>
@@ -734,7 +735,7 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_ab831a170da7e1b69eb014cca1c75323.html">unsupported</a></li><li class="navelem"><a class="el" href="dir_ad61f57c542da9b9e996cda5564c4956.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_942b1bdc222aa5be112e9d9d68a8b3e8.html">src</a></li><li class="navelem"><a class="el" href="dir_6f78b0333ef2d3d22867da03166eb161.html">MatrixFunctions</a></li><li class="navelem"><a class="el" href="_matrix_function_8h.html">MatrixFunction.h</a></li>
-    <li class="footer">Generated on Thu Aug 11 2022 14:12:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Aug 14 2022 01:35:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

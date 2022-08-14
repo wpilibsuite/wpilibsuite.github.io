@@ -66,6 +66,7 @@ var namespaces_dup =
     ] ],
     [ "ghc", "namespaceghc.html", "namespaceghc" ],
     [ "hal", "namespacehal.html", "namespacehal" ],
+    [ "internal", "namespaceinternal.html", "namespaceinternal" ],
     [ "literals", "namespaceliterals.html", [
       [ "operator\"\"_format", "namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2", null ]
     ] ],

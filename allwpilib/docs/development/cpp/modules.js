@@ -36,9 +36,15 @@ var modules =
     [ "LU module", "group___l_u___module.html", "group___l_u___module" ],
     [ "Core module", "group___core___module.html", "group___core___module" ],
     [ "Cholesky module", "group___cholesky___module.html", "group___cholesky___module" ],
+    [ "OrderingMethods module", "group___ordering_methods___module.html", "group___ordering_methods___module" ],
     [ "SVD module", "group___s_v_d___module.html", "group___s_v_d___module" ],
     [ "Eigenvalues module", "group___eigenvalues___module.html", "group___eigenvalues___module" ],
+    [ "SparseCore module", "group___sparse_core___module.html", "group___sparse_core___module" ],
+    [ "SparseQR module", "group___sparse_q_r___module.html", "group___sparse_q_r___module" ],
     [ "Jacobi module", "group___jacobi___module.html", "group___jacobi___module" ],
+    [ "SparseLU module", "group___sparse_l_u___module.html", "group___sparse_l_u___module" ],
     [ "Householder module", "group___householder___module.html", "group___householder___module" ],
-    [ "QR module", "group___q_r___module.html", "group___q_r___module" ]
+    [ "SparseCholesky module", "group___sparse_cholesky___module.html", "group___sparse_cholesky___module" ],
+    [ "QR module", "group___q_r___module.html", "group___q_r___module" ],
+    [ "IterativeLinearSolvers module", "group___iterative_linear_solvers___module.html", "group___iterative_linear_solvers___module" ]
 ];
