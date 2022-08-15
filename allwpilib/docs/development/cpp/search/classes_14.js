@@ -336,9 +336,8 @@ var searchData=
   ['type_5fconstant_333',['type_constant',['../structtype__constant.html',1,'']]],
   ['type_5ferror_334',['type_error',['../classwpi_1_1detail_1_1type__error.html',1,'wpi::detail']]],
   ['type_5fidentity_335',['type_identity',['../structtype__identity.html',1,'']]],
-  ['typeindex_336',['TypeIndex',['../structwpi_1_1pointer__union__detail_1_1_type_index.html',1,'wpi::pointer_union_detail']]],
-  ['typeindex_3c_20t_20_3e_337',['TypeIndex&lt; T &gt;',['../structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_01_4.html',1,'wpi::pointer_union_detail']]],
-  ['typeindex_3c_20t_2c_20t_2c_20us_2e_2e_2e_20_3e_338',['TypeIndex&lt; T, T, Us... &gt;',['../structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html',1,'wpi::pointer_union_detail']]],
-  ['typeindex_3c_20t_2c_20u_2c_20us_2e_2e_2e_20_3e_339',['TypeIndex&lt; T, U, Us... &gt;',['../structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html',1,'wpi::pointer_union_detail']]],
-  ['typelist_340',['typelist',['../structwpi_1_1sig_1_1trait_1_1typelist.html',1,'wpi::sig::trait']]]
+  ['typelist_336',['typelist',['../structwpi_1_1sig_1_1trait_1_1typelist.html',1,'wpi::sig::trait']]],
+  ['typesaredistinct_337',['TypesAreDistinct',['../structwpi_1_1detail_1_1_types_are_distinct.html',1,'wpi::detail::TypesAreDistinct&lt; T, Us &gt;'],['../structwpi_1_1_types_are_distinct.html',1,'wpi::TypesAreDistinct&lt; Ts &gt;']]],
+  ['typesaredistinct_3c_20t_20_3e_338',['TypesAreDistinct&lt; T &gt;',['../structwpi_1_1detail_1_1_types_are_distinct_3_01_t_01_4.html',1,'wpi::detail']]],
+  ['typesaredistinct_3c_3e_339',['TypesAreDistinct&lt;&gt;',['../structwpi_1_1_types_are_distinct_3_4.html',1,'wpi']]]
 ];

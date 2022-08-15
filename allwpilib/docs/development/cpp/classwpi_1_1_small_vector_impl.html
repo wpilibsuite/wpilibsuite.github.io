@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-50-gc5db23f</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-51-g0e07863</span>
    </div>
   </td>
  </tr>
@@ -168,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d32f02ec452a84ce28ab3922576e0d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_impl.html#a1d32f02ec452a84ce28ab3922576e0d1">resize_for_overwrite</a> (<a class="el" href="classwpi_1_1_small_vector_template_common.html#a60a7d6366ce59753f8ed50873afe3dae">size_type</a> N)</td></tr>
 <tr class="memdesc:a1d32f02ec452a84ce28ab3922576e0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like resize, but T is POD, the new values won't be initialized.  <a href="classwpi_1_1_small_vector_impl.html#a1d32f02ec452a84ce28ab3922576e0d1">More...</a><br /></td></tr>
 <tr class="separator:a1d32f02ec452a84ce28ab3922576e0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dadf9d2c87f2cdbf58bee57b53e43dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_impl.html#a7dadf9d2c87f2cdbf58bee57b53e43dd">truncate</a> (<a class="el" href="classwpi_1_1_small_vector_template_common.html#a60a7d6366ce59753f8ed50873afe3dae">size_type</a> N)</td></tr>
+<tr class="memdesc:a7dadf9d2c87f2cdbf58bee57b53e43dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like resize, but requires that <code>N</code> is less than <em><a class="el" href="classwpi_1_1_small_vector_template_common.html#a1e0496cb24ce10200238901613bf8676">size()</a></em>.  <a href="classwpi_1_1_small_vector_impl.html#a7dadf9d2c87f2cdbf58bee57b53e43dd">More...</a><br /></td></tr>
+<tr class="separator:a7dadf9d2c87f2cdbf58bee57b53e43dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba43f595f68cac4dfc8cb5e63f4fe454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_impl.html#aba43f595f68cac4dfc8cb5e63f4fe454">resize</a> (<a class="el" href="classwpi_1_1_small_vector_template_common.html#a60a7d6366ce59753f8ed50873afe3dae">size_type</a> N, <a class="el" href="classwpi_1_1_small_vector_template_base.html#a63a2d290def1a3b4f933324bb44d6172">ValueParamT</a> NV)</td></tr>
 <tr class="separator:aba43f595f68cac4dfc8cb5e63f4fe454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66a8548d8eda43fb76f47a84849d8916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_impl.html#a66a8548d8eda43fb76f47a84849d8916">reserve</a> (<a class="el" href="classwpi_1_1_small_vector_template_common.html#a60a7d6366ce59753f8ed50873afe3dae">size_type</a> N)</td></tr>
@@ -287,9 +290,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a412757d92466076145b58eae427016ee inherit pub_methods_classwpi_1_1_small_vector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c11d37314eb4419dabf218c8ccf7918 inherit pub_methods_classwpi_1_1_small_vector_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#a8ce3b3743bf423cf00a9eb18a3f0f139">LLVM_NODISCARD</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a3c11d37314eb4419dabf218c8ccf7918">empty</a> () const</td></tr>
 <tr class="separator:a3c11d37314eb4419dabf218c8ccf7918 inherit pub_methods_classwpi_1_1_small_vector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef8ec092bffa02a109894bf871821c5 inherit pub_methods_classwpi_1_1_small_vector_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#aeef8ec092bffa02a109894bf871821c5">set_size</a> (size_t N)</td></tr>
-<tr class="memdesc:aeef8ec092bffa02a109894bf871821c5 inherit pub_methods_classwpi_1_1_small_vector_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the array size to <code>N</code>, which the current array must have enough capacity for.  <a href="classwpi_1_1_small_vector_base.html#aeef8ec092bffa02a109894bf871821c5">More...</a><br /></td></tr>
-<tr class="separator:aeef8ec092bffa02a109894bf871821c5 inherit pub_methods_classwpi_1_1_small_vector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -303,6 +303,8 @@ Protected Types</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3ef2172e5e908f726d02aef9ca34faee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_impl.html#a3ef2172e5e908f726d02aef9ca34faee">SmallVectorImpl</a> (unsigned N)</td></tr>
 <tr class="separator:a3ef2172e5e908f726d02aef9ca34faee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6d3d4075ef8e2d3d2fbcf1deb94001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_impl.html#a4c6d3d4075ef8e2d3d2fbcf1deb94001">assignRemote</a> (<a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a> &amp;&amp;RHS)</td></tr>
+<tr class="separator:a4c6d3d4075ef8e2d3d2fbcf1deb94001"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_small_vector_template_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_small_vector_template_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_small_vector_template_base.html">wpi::SmallVectorTemplateBase&lt; T, bool &gt;</a></td></tr>
 <tr class="memitem:a40d16c3f54b6740b9e417c6d83b5c571 inherit pro_methods_classwpi_1_1_small_vector_template_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_template_base.html#a40d16c3f54b6740b9e417c6d83b5c571">SmallVectorTemplateBase</a> (size_t <a class="el" href="classwpi_1_1_small_vector_base.html#a254eea40b23eef337293526530965f47">Size</a>)</td></tr>
 <tr class="separator:a40d16c3f54b6740b9e417c6d83b5c571 inherit pro_methods_classwpi_1_1_small_vector_template_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -381,6 +383,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a817168112d7d7dedacf0e73bd2f9812e inherit pro_methods_classwpi_1_1_small_vector_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#a817168112d7d7dedacf0e73bd2f9812e">grow_pod</a> (void *FirstEl, size_t MinSize, size_t TSize)</td></tr>
 <tr class="memdesc:a817168112d7d7dedacf0e73bd2f9812e inherit pro_methods_classwpi_1_1_small_vector_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an implementation of the grow() method which only works on POD-like data types and is out of line to reduce code duplication.  <a href="classwpi_1_1_small_vector_base.html#a817168112d7d7dedacf0e73bd2f9812e">More...</a><br /></td></tr>
 <tr class="separator:a817168112d7d7dedacf0e73bd2f9812e inherit pro_methods_classwpi_1_1_small_vector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef8ec092bffa02a109894bf871821c5 inherit pro_methods_classwpi_1_1_small_vector_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_base.html#aeef8ec092bffa02a109894bf871821c5">set_size</a> (size_t N)</td></tr>
+<tr class="memdesc:aeef8ec092bffa02a109894bf871821c5 inherit pro_methods_classwpi_1_1_small_vector_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the array size to <code>N</code>, which the current array must have enough capacity for.  <a href="classwpi_1_1_small_vector_base.html#aeef8ec092bffa02a109894bf871821c5">More...</a><br /></td></tr>
+<tr class="separator:aeef8ec092bffa02a109894bf871821c5 inherit pro_methods_classwpi_1_1_small_vector_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -862,6 +867,34 @@ template&lt;typename T &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c6d3d4075ef8e2d3d2fbcf1deb94001" name="a4c6d3d4075ef8e2d3d2fbcf1deb94001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c6d3d4075ef8e2d3d2fbcf1deb94001">&#9670;&nbsp;</a></span>assignRemote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; T &gt;::assignRemote </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>RHS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1518,6 +1551,36 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a7dadf9d2c87f2cdbf58bee57b53e43dd" name="a7dadf9d2c87f2cdbf58bee57b53e43dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dadf9d2c87f2cdbf58bee57b53e43dd">&#9670;&nbsp;</a></span>truncate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; T &gt;::truncate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_small_vector_template_common.html#a60a7d6366ce59753f8ed50873afe3dae">size_type</a>&#160;</td>
+          <td class="paramname"><em>N</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Like resize, but requires that <code>N</code> is less than <em><a class="el" href="classwpi_1_1_small_vector_template_common.html#a1e0496cb24ce10200238901613bf8676">size()</a></em>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>wpi/<a class="el" href="leb128_8h_source.html">leb128.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/llvm/include/wpi/<a class="el" href="_small_vector_8h_source.html">SmallVector.h</a></li>
@@ -1528,7 +1591,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a></li>
-    <li class="footer">Generated on Sun Aug 14 2022 01:35:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Aug 15 2022 12:41:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

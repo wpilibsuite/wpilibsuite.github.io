@@ -5,6 +5,7 @@ var _hashing_8h =
     [ "wpi::hashing::detail::is_hashable_data< T >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data.html", null ],
     [ "wpi::hashing::detail::is_hashable_data< std::pair< T, U > >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ],
     [ "wpi::hashing::detail::hash_combine_recursive_helper", "structwpi_1_1hashing_1_1detail_1_1hash__combine__recursive__helper.html", "structwpi_1_1hashing_1_1detail_1_1hash__combine__recursive__helper" ],
+    [ "wpi::DenseMapInfo< hash_code, void >", "structwpi_1_1_dense_map_info_3_01hash__code_00_01void_01_4.html", "structwpi_1_1_dense_map_info_3_01hash__code_00_01void_01_4" ],
     [ "fetch32", "_hashing_8h.html#a0011d6f22f35fd798a36f86c6c87614e", null ],
     [ "fetch64", "_hashing_8h.html#add9cad73fadc7f3312adc36c7c394c29", null ],
     [ "get_execution_seed", "_hashing_8h.html#ae3abec1803a0ccab070f60874811d24b", null ],

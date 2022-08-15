@@ -3,6 +3,7 @@ var classwpi_1_1_map_vector =
     [ "const_iterator", "classwpi_1_1_map_vector.html#a992ed36ca5527a7db963169a368a96bc", null ],
     [ "const_reverse_iterator", "classwpi_1_1_map_vector.html#a3d9b4b16c25179e3eb8006dd5546dac0", null ],
     [ "iterator", "classwpi_1_1_map_vector.html#a94446fe6b0c1b4fdfb4e22475ded7276", null ],
+    [ "key_type", "classwpi_1_1_map_vector.html#a624d53736977f56d84890339ab606639", null ],
     [ "reverse_iterator", "classwpi_1_1_map_vector.html#a75d9437ee362602e90f00762be8e9aa5", null ],
     [ "size_type", "classwpi_1_1_map_vector.html#a35251d981907898f8b9bc2026c3069fb", null ],
     [ "value_type", "classwpi_1_1_map_vector.html#aa9e536c600e9b0d96f0d3ea100f04b6a", null ],

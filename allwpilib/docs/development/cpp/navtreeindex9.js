@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"_jaguar_8h.html":[6,0,2,5,1],
+"_jaguar_8h_source.html":[6,0,2,5,1],
+"_joystick_8h.html":[6,0,2,52],
 "_joystick_8h_source.html":[6,0,2,52],
 "_joystick_button_8h.html":[6,0,4,0,0,5],
 "_joystick_button_8h_source.html":[6,0,4,0,0,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX9 =
 "_map_vector_8h_source.html":[6,0,7,3,0,0,19],
 "_mapped_file_region_8h.html":[6,0,11,20],
 "_mapped_file_region_8h_source.html":[6,0,11,20],
-"_mapped_sparse_matrix_8h.html":[6,0,8,1,0,0,0,12,3],
-"_mapped_sparse_matrix_8h_source.html":[6,0,8,1,0,0,0,12,3],
-"_math_extras_8h.html":[6,0,7,3,0,0,20],
-"_math_extras_8h.html#a01982bb8b119d94de4200ed371ad5397":[6,0,7,3,0,0,20,61]
+"_mapped_sparse_matrix_8h.html":[6,0,8,1,0,0,0,12,3]
 };

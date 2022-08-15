@@ -2,7 +2,7 @@ var searchData=
 [
   ['ka_5funit_0',['ka_unit',['../classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a',1,'frc::SimpleMotorFeedforward::ka_unit()'],['../classfrc_1_1_arm_feedforward.html#a9d4aa1810e66a8047e60ae2744ccc5e6',1,'frc::ArmFeedforward::ka_unit()'],['../classfrc_1_1_elevator_feedforward.html#a90f21d5596abd4f4530c03bea8e20ada',1,'frc::ElevatorFeedforward::ka_unit()']]],
   ['kelvin_5fratio_1',['kelvin_ratio',['../structunits_1_1base__unit.html#a6bdd72bc5315385d75d3baa9e9a9faeb',1,'units::base_unit']]],
-  ['key_5ftype_2',['key_type',['../classwpi_1_1_small_ptr_set_impl.html#a926ddf7d79350c636ba74a4649680b77',1,'wpi::SmallPtrSetImpl::key_type()'],['../classwpi_1_1_dense_map_base.html#a8a5afa76ac08e69b754b1d5da8c0e709',1,'wpi::DenseMapBase::key_type()'],['../classwpi_1_1_string_map.html#abdfe2c7632fbf5448da909e84796d36e',1,'wpi::StringMap::key_type()']]],
+  ['key_5ftype_2',['key_type',['../classwpi_1_1_small_ptr_set_impl.html#a926ddf7d79350c636ba74a4649680b77',1,'wpi::SmallPtrSetImpl::key_type()'],['../classwpi_1_1_dense_map_base.html#a8a5afa76ac08e69b754b1d5da8c0e709',1,'wpi::DenseMapBase::key_type()'],['../classwpi_1_1_string_map.html#abdfe2c7632fbf5448da909e84796d36e',1,'wpi::StringMap::key_type()'],['../classwpi_1_1_map_vector.html#a624d53736977f56d84890339ab606639',1,'wpi::MapVector::key_type()']]],
   ['kibi_3',['kibi',['../group___unit_manipulators.html#gae128b8e57133ff8044ca21d494d73674',1,'units']]],
   ['kilo_4',['kilo',['../group___unit_manipulators.html#gaf1b5108a86458a17f2a28245e52018ca',1,'units']]],
   ['kilogram_5fratio_5',['kilogram_ratio',['../structunits_1_1base__unit.html#a3ac2fe16787943979480726972f8d189',1,'units::base_unit']]],

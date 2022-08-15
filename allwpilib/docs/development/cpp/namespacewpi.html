@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-50-gc5db23f</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-51-g0e07863</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,9 @@ $(document).ready(function(){initNavTree('namespacewpi.html',''); initResizable(
   <div class="headertitle"><div class="title">wpi Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>/file This file defines the <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> class.  
+<a href="namespacewpi.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -189,10 +192,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_dense_map_base.html">DenseMapBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info.html">DenseMapInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An information struct used to provide <a class="el" href="classwpi_1_1_dense_map.html">DenseMap</a> with the various necessary components for a given value type <code>T</code>.  <a href="structwpi_1_1_dense_map_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01char_01_4.html">DenseMapInfo&lt; char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01hash__code_01_4.html">DenseMapInfo&lt; hash_code &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01hash__code_00_01void_01_4.html">DenseMapInfo&lt; hash_code, void &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01int_01_4.html">DenseMapInfo&lt; int &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +204,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01long_01long_01_4.html">DenseMapInfo&lt; long long &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html">DenseMapInfo&lt; PointerIntPair&lt; PointerTy, IntBits, IntType &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4.html">DenseMapInfo&lt; PointerIntPair&lt; PointerTy, IntBits, IntType &gt;, void &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_dense_map_info_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html">DenseMapInfo&lt; PointerUnion&lt; PTs... &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +235,13 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1disjunction_3_01_b1_00_01_bn_8_8_8_01_4.html">disjunction&lt; B1, Bn... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1empty__array__t.html">empty_array_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_first_index_of_type.html">FirstIndexOfType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the first index where a type appears in a list of types.  <a href="structwpi_1_1_first_index_of_type.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_first_index_of_type_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html">FirstIndexOfType&lt; T, T, Us... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_first_index_of_type_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html">FirstIndexOfType&lt; T, U, Us... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1function__ref.html">function_ref</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An efficient, type-erasing, non-owning reference to a callable.  <a href="classwpi_1_1function__ref.html#details">More...</a><br /></td></tr>
@@ -339,15 +350,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_pointer_union.html">PointerUnion</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A discriminated union of two or more pointer types, with the discriminator in the low bit of the pointer.  <a href="classwpi_1_1_pointer_union.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_union_type_selector.html">PointerUnionTypeSelector</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a type based on whether two types are the same or not.  <a href="structwpi_1_1_pointer_union_type_selector.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_union_type_selector_3_01_t_00_01_t_00_01_r_e_t___e_q_00_01_r_e_t___n_e_01_4.html">PointerUnionTypeSelector&lt; T, T, RET_EQ, RET_NE &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_union_type_selector_return.html">PointerUnionTypeSelectorReturn</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_pointer_union_type_selector_return_3_01_pointer_union_type_selector_3_01_t1_00_01_cc46ca047b721b68409be4a9f45bfaff.html">PointerUnionTypeSelectorReturn&lt; PointerUnionTypeSelector&lt; T1, T2, RET_EQ, RET_NE &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1priority__queue.html">priority_queue</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class is the same as std::priority_queue with two changes:  <a href="classwpi_1_1priority__queue.html#details">More...</a><br /></td></tr>
@@ -535,6 +537,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_key_iterator.html">StringMapKeyIterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_types_are_distinct.html">TypesAreDistinct</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if all types in Ts are distinct.  <a href="structwpi_1_1_types_are_distinct.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_types_are_distinct_3_4.html">TypesAreDistinct&lt;&gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_uid_vector.html">UidVector</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector which provides an integrated freelist for removal and reuse of individual elements.  <a href="classwpi_1_1_uid_vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -571,15 +578,19 @@ Typedefs</h2></td></tr>
 <tr class="separator:ac654fbccde78931efbd96a33a8af5726"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97cc1139d8f910187e3d4cd6b8015af8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">condition_variable</a> = ::std::condition_variable</td></tr>
 <tr class="separator:a97cc1139d8f910187e3d4cd6b8015af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd1500d4f0a79e36ea629a6ed4b6f81"><td class="memTemplParams" colspan="2">template&lt;size_t I, typename... Ts&gt; </td></tr>
+<tr class="memitem:a2fd1500d4f0a79e36ea629a6ed4b6f81"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a2fd1500d4f0a79e36ea629a6ed4b6f81">TypeAtIndex</a> = std::tuple_element_t&lt; I, std::tuple&lt; Ts... &gt; &gt;</td></tr>
+<tr class="memdesc:a2fd1500d4f0a79e36ea629a6ed4b6f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the type at a given index in a list of types.  <a href="namespacewpi.html#a2fd1500d4f0a79e36ea629a6ed4b6f81">More...</a><br /></td></tr>
+<tr class="separator:a2fd1500d4f0a79e36ea629a6ed4b6f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c9d00d0810a9683b42e6a4b51cde3f1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a5c9d00d0810a9683b42e6a4b51cde3f1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a5c9d00d0810a9683b42e6a4b51cde3f1">is_trivially_move_constructible</a> = std::is_trivially_move_constructible&lt; T &gt;</td></tr>
 <tr class="separator:a5c9d00d0810a9683b42e6a4b51cde3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bfe9b2fd329532b5e6a1bd52499d7d6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1bfe9b2fd329532b5e6a1bd52499d7d6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a1bfe9b2fd329532b5e6a1bd52499d7d6">is_trivially_copy_constructible</a> = std::is_trivially_copy_constructible&lt; T &gt;</td></tr>
 <tr class="separator:a1bfe9b2fd329532b5e6a1bd52499d7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564fb7aa3eaf3704cbfd276b47f79149"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a564fb7aa3eaf3704cbfd276b47f79149">fatal_error_handler_t</a>) (void *user_data, const std::string &amp;reason, bool gen_crash_diag)</td></tr>
-<tr class="memdesc:a564fb7aa3eaf3704cbfd276b47f79149"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error handler callback.  <a href="namespacewpi.html#a564fb7aa3eaf3704cbfd276b47f79149">More...</a><br /></td></tr>
-<tr class="separator:a564fb7aa3eaf3704cbfd276b47f79149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacde1332b72e968317ed516552a07ca8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aacde1332b72e968317ed516552a07ca8">fatal_error_handler_t</a>) (void *user_data, const char *reason, bool gen_crash_diag)</td></tr>
+<tr class="memdesc:aacde1332b72e968317ed516552a07ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error handler callback.  <a href="namespacewpi.html#aacde1332b72e968317ed516552a07ca8">More...</a><br /></td></tr>
+<tr class="separator:aacde1332b72e968317ed516552a07ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a985e3eb8f9f12493630c5b00866467dd"><td class="memTemplParams" colspan="2">template&lt;typename WrappedIteratorT , typename T1  = std::remove_reference_t&lt;decltype(              **std::declval&lt;WrappedIteratorT&gt;())&gt;, typename T2  = std::add_pointer_t&lt;T1&gt;&gt; </td></tr>
 <tr class="memitem:a985e3eb8f9f12493630c5b00866467dd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a985e3eb8f9f12493630c5b00866467dd">raw_pointer_iterator</a> = <a class="el" href="classwpi_1_1pointer__iterator.html">pointer_iterator</a>&lt; <a class="el" href="structwpi_1_1pointee__iterator.html">pointee_iterator</a>&lt; WrappedIteratorT, T1 &gt;, T2 &gt;</td></tr>
 <tr class="separator:a985e3eb8f9f12493630c5b00866467dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -594,6 +605,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a37bbc3b1e95b6409a042b8089d3d8c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9954615e01ad150570a0e1d4548d879"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ac9954615e01ad150570a0e1d4548d879">Boolean</a></td></tr>
 <tr class="separator:ac9954615e01ad150570a0e1d4548d879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4e2dafd0200d2e7686df5c99d07933"><td class="memTemplParams" colspan="2">template&lt;typename RangeType &gt; </td></tr>
+<tr class="memitem:abd4e2dafd0200d2e7686df5c99d07933"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">ValueTypeFromRangeType</a> = typename std::remove_const&lt; typename std::remove_reference&lt; decltype(*std::begin(std::declval&lt; RangeType &amp; &gt;()))&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td></tr>
+<tr class="separator:abd4e2dafd0200d2e7686df5c99d07933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -963,20 +977,20 @@ Functions</h2></td></tr>
 <tr class="separator:a77ec79c288a28100e273ac8c3e41b85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb20671f09fd21f4f52662c86fd6521"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6bb20671f09fd21f4f52662c86fd6521">make_error_code</a> (<a class="el" href="namespacewpi.html#a0cc73ce1be7e2680fb97374e03368001">errc</a> E)</td></tr>
 <tr class="separator:a6bb20671f09fd21f4f52662c86fd6521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a309bc670f1bda6373a69c5a66eb9849a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a309bc670f1bda6373a69c5a66eb9849a">install_fatal_error_handler</a> (<a class="el" href="namespacewpi.html#a564fb7aa3eaf3704cbfd276b47f79149">fatal_error_handler_t</a> handler, void *user_data=nullptr)</td></tr>
+<tr class="memitem:a309bc670f1bda6373a69c5a66eb9849a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a309bc670f1bda6373a69c5a66eb9849a">install_fatal_error_handler</a> (<a class="el" href="namespacewpi.html#aacde1332b72e968317ed516552a07ca8">fatal_error_handler_t</a> handler, void *user_data=nullptr)</td></tr>
 <tr class="memdesc:a309bc670f1bda6373a69c5a66eb9849a"><td class="mdescLeft">&#160;</td><td class="mdescRight">install_fatal_error_handler - Installs a new error handler to be used whenever a serious (non-recoverable) error is encountered by LLVM.  <a href="namespacewpi.html#a309bc670f1bda6373a69c5a66eb9849a">More...</a><br /></td></tr>
 <tr class="separator:a309bc670f1bda6373a69c5a66eb9849a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d89324acbf36872064573065959d20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a08d89324acbf36872064573065959d20">remove_fatal_error_handler</a> ()</td></tr>
 <tr class="memdesc:a08d89324acbf36872064573065959d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores default error handling behavior.  <a href="namespacewpi.html#a08d89324acbf36872064573065959d20">More...</a><br /></td></tr>
 <tr class="separator:a08d89324acbf36872064573065959d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4e57280c0aca853e1938bc5318c7b1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad4e57280c0aca853e1938bc5318c7b1e">report_fatal_error</a> (const char *reason, bool gen_crash_diag=true)</td></tr>
-<tr class="memdesc:ad4e57280c0aca853e1938bc5318c7b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports a serious error, calling any installed error handler.  <a href="namespacewpi.html#ad4e57280c0aca853e1938bc5318c7b1e">More...</a><br /></td></tr>
-<tr class="separator:ad4e57280c0aca853e1938bc5318c7b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5138167e4448b97cdea5ac04838bd4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae5138167e4448b97cdea5ac04838bd4c">report_fatal_error</a> (const std::string &amp;reason, bool gen_crash_diag=true)</td></tr>
-<tr class="separator:ae5138167e4448b97cdea5ac04838bd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae217f4a23d9e6957bd7e67f2630807ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae217f4a23d9e6957bd7e67f2630807ca">report_fatal_error</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> reason, bool gen_crash_diag=true)</td></tr>
-<tr class="separator:ae217f4a23d9e6957bd7e67f2630807ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5490819a8d9ceedb98494b59ed05917"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad5490819a8d9ceedb98494b59ed05917">install_bad_alloc_error_handler</a> (<a class="el" href="namespacewpi.html#a564fb7aa3eaf3704cbfd276b47f79149">fatal_error_handler_t</a> handler, void *user_data=nullptr)</td></tr>
+<tr class="memitem:a6392584571d4e2bec4247503254d83a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6392584571d4e2bec4247503254d83a3">report_fatal_error</a> (const char *reason, bool gen_crash_diag=true)</td></tr>
+<tr class="memdesc:a6392584571d4e2bec4247503254d83a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports a serious error, calling any installed error handler.  <a href="namespacewpi.html#a6392584571d4e2bec4247503254d83a3">More...</a><br /></td></tr>
+<tr class="separator:a6392584571d4e2bec4247503254d83a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2f5ea71a00431f1def0f2d7daf7af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a2a2f5ea71a00431f1def0f2d7daf7af3">report_fatal_error</a> (const std::string &amp;reason, bool gen_crash_diag=true)</td></tr>
+<tr class="separator:a2a2f5ea71a00431f1def0f2d7daf7af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c5d4610f996de2254ee2eca97aa2da6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9c5d4610f996de2254ee2eca97aa2da6">report_fatal_error</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> reason, bool gen_crash_diag=true)</td></tr>
+<tr class="separator:a9c5d4610f996de2254ee2eca97aa2da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5490819a8d9ceedb98494b59ed05917"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad5490819a8d9ceedb98494b59ed05917">install_bad_alloc_error_handler</a> (<a class="el" href="namespacewpi.html#aacde1332b72e968317ed516552a07ca8">fatal_error_handler_t</a> handler, void *user_data=nullptr)</td></tr>
 <tr class="memdesc:ad5490819a8d9ceedb98494b59ed05917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Installs a new bad alloc error handler that should be used whenever a bad alloc error, e.g.  <a href="namespacewpi.html#ad5490819a8d9ceedb98494b59ed05917">More...</a><br /></td></tr>
 <tr class="separator:ad5490819a8d9ceedb98494b59ed05917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69094b92cf05fe59b51ae012a03d9474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a69094b92cf05fe59b51ae012a03d9474">remove_bad_alloc_error_handler</a> ()</td></tr>
@@ -984,12 +998,12 @@ Functions</h2></td></tr>
 <tr class="separator:a69094b92cf05fe59b51ae012a03d9474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97e6b598cd8e5fe3f4d4e75e83dbb9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad97e6b598cd8e5fe3f4d4e75e83dbb9e">install_out_of_memory_new_handler</a> ()</td></tr>
 <tr class="separator:ad97e6b598cd8e5fe3f4d4e75e83dbb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465fd61d6724137daddb9477fea8b57b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a465fd61d6724137daddb9477fea8b57b">report_bad_alloc_error</a> (const char *Reason, bool GenCrashDiag=true)</td></tr>
-<tr class="memdesc:a465fd61d6724137daddb9477fea8b57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports a bad alloc error, calling any user defined bad alloc error handler.  <a href="namespacewpi.html#a465fd61d6724137daddb9477fea8b57b">More...</a><br /></td></tr>
-<tr class="separator:a465fd61d6724137daddb9477fea8b57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c5c23b35e891a193dffc6dff4b9091f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9c5c23b35e891a193dffc6dff4b9091f">wpi_unreachable_internal</a> (const char *msg=nullptr, const char *<a class="el" href="_third_party_notices_8txt.html#a54c3aaa43358b77e4f57f4f72cbe56c6">file</a>=nullptr, unsigned line=0)</td></tr>
-<tr class="memdesc:a9c5c23b35e891a193dffc6dff4b9091f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calls abort(), and prints the optional message to stderr.  <a href="namespacewpi.html#a9c5c23b35e891a193dffc6dff4b9091f">More...</a><br /></td></tr>
-<tr class="separator:a9c5c23b35e891a193dffc6dff4b9091f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3cd886beda7a2289aa18773f3aa103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6e3cd886beda7a2289aa18773f3aa103">report_bad_alloc_error</a> (const char *Reason, bool GenCrashDiag=true)</td></tr>
+<tr class="memdesc:a6e3cd886beda7a2289aa18773f3aa103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports a bad alloc error, calling any user defined bad alloc error handler.  <a href="namespacewpi.html#a6e3cd886beda7a2289aa18773f3aa103">More...</a><br /></td></tr>
+<tr class="separator:a6e3cd886beda7a2289aa18773f3aa103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a330e37a0f2a3ac6bf2a664ea6d12db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0a330e37a0f2a3ac6bf2a664ea6d12db">wpi_unreachable_internal</a> (const char *msg=nullptr, const char *<a class="el" href="_third_party_notices_8txt.html#a54c3aaa43358b77e4f57f4f72cbe56c6">file</a>=nullptr, unsigned line=0)</td></tr>
+<tr class="memdesc:a0a330e37a0f2a3ac6bf2a664ea6d12db"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function calls abort(), and prints the optional message to stderr.  <a href="namespacewpi.html#a0a330e37a0f2a3ac6bf2a664ea6d12db">More...</a><br /></td></tr>
+<tr class="separator:a0a330e37a0f2a3ac6bf2a664ea6d12db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbf26bf198ea436f545bf8205670ff7a"><td class="memTemplParams" colspan="2">template&lt;class T  = void *&gt; </td></tr>
 <tr class="memitem:afbf26bf198ea436f545bf8205670ff7a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#afbf26bf198ea436f545bf8205670ff7a">shouldReverseIterate</a> ()</td></tr>
 <tr class="separator:afbf26bf198ea436f545bf8205670ff7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1410,8 +1424,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a0e35647cd9f9f0d2c097ea72e6d9f608"><td class="memTemplParams" colspan="2">template&lt;typename T , unsigned N&gt; </td></tr>
 <tr class="memitem:a0e35647cd9f9f0d2c097ea72e6d9f608"><td class="memTemplItemLeft" align="right" valign="top">size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0e35647cd9f9f0d2c097ea72e6d9f608">capacity_in_bytes</a> (const <a class="el" href="classwpi_1_1_small_vector.html">SmallVector</a>&lt; T, N &gt; &amp;X)</td></tr>
 <tr class="separator:a0e35647cd9f9f0d2c097ea72e6d9f608"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8f897983502a09870966cf8ac842246"><td class="memItemLeft" align="right" valign="top">Size&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab8f897983502a09870966cf8ac842246">to_vector</a> (R &amp;&amp;Range)</td></tr>
-<tr class="separator:ab8f897983502a09870966cf8ac842246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5602e08ef8bfc0486d71717a291a06b4"><td class="memTemplParams" colspan="2">template&lt;unsigned Size, typename R &gt; </td></tr>
+<tr class="memitem:a5602e08ef8bfc0486d71717a291a06b4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_vector.html">SmallVector</a>&lt; <a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">ValueTypeFromRangeType</a>&lt; R &gt;, Size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a5602e08ef8bfc0486d71717a291a06b4">to_vector</a> (R &amp;&amp;Range)</td></tr>
+<tr class="memdesc:a5602e08ef8bfc0486d71717a291a06b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a range of type R, iterate the entire range and return a <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> with elements of the vector.  <a href="namespacewpi.html#a5602e08ef8bfc0486d71717a291a06b4">More...</a><br /></td></tr>
+<tr class="separator:a5602e08ef8bfc0486d71717a291a06b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47d27507d50af1b79e67593bf1e8dc6"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
+<tr class="memitem:ab47d27507d50af1b79e67593bf1e8dc6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_vector.html">SmallVector</a>&lt; <a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">ValueTypeFromRangeType</a>&lt; R &gt;, <a class="el" href="structwpi_1_1_calculate_small_vector_default_inlined_elements.html">CalculateSmallVectorDefaultInlinedElements</a>&lt; <a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">ValueTypeFromRangeType</a>&lt; R &gt; &gt;::<a class="el" href="classvalue.html">value</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab47d27507d50af1b79e67593bf1e8dc6">to_vector</a> (R &amp;&amp;Range)</td></tr>
+<tr class="separator:ab47d27507d50af1b79e67593bf1e8dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39d52ea374e69d520e3f696e58c1565f"><td class="memTemplParams" colspan="2">template&lt;class T , size_t N&gt; </td></tr>
 <tr class="memitem:a39d52ea374e69d520e3f696e58c1565f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a39d52ea374e69d520e3f696e58c1565f">span</a> (T(&amp;)[N]) -&gt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; T, N &gt;</td></tr>
 <tr class="separator:a39d52ea374e69d520e3f696e58c1565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1456,7 +1475,9 @@ Variables</h2></td></tr>
 <tr class="memitem:af57e346e8c6106d238edcdb05d9ee776"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a> = SIZE_MAX</td></tr>
 <tr class="separator:af57e346e8c6106d238edcdb05d9ee776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >/file This file defines the <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> class. </p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="ac9954615e01ad150570a0e1d4548d879" name="ac9954615e01ad150570a0e1d4548d879"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9954615e01ad150570a0e1d4548d879">&#9670;&nbsp;</a></span>Boolean</h2>
 
@@ -1485,14 +1506,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a564fb7aa3eaf3704cbfd276b47f79149" name="a564fb7aa3eaf3704cbfd276b47f79149"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a564fb7aa3eaf3704cbfd276b47f79149">&#9670;&nbsp;</a></span>fatal_error_handler_t</h2>
+<a id="aacde1332b72e968317ed516552a07ca8" name="aacde1332b72e968317ed516552a07ca8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacde1332b72e968317ed516552a07ca8">&#9670;&nbsp;</a></span>fatal_error_handler_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* wpi::fatal_error_handler_t) (void *user_data, const std::string &amp;reason, bool gen_crash_diag)</td>
+          <td class="memname">typedef void(* wpi::fatal_error_handler_t) (void *user_data, const char *reason, bool gen_crash_diag)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1607,6 +1628,25 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a2fd1500d4f0a79e36ea629a6ed4b6f81" name="a2fd1500d4f0a79e36ea629a6ed4b6f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd1500d4f0a79e36ea629a6ed4b6f81">&#9670;&nbsp;</a></span>TypeAtIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t I, typename... Ts&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacewpi.html#a2fd1500d4f0a79e36ea629a6ed4b6f81">wpi::TypeAtIndex</a> = typedef std::tuple_element_t&lt;I, std::tuple&lt;Ts...&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Find the type at a given index in a list of types. </p>
+<p >TypeAtIndex&lt;I, Ts...&gt; is the type at index I in Ts. </p>
+
+</div>
+</div>
 <a id="a45f45c50238ed154108c2d79c37d19ab" name="a45f45c50238ed154108c2d79c37d19ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a45f45c50238ed154108c2d79c37d19ab">&#9670;&nbsp;</a></span>UTF16</h2>
 
@@ -1643,6 +1683,22 @@ template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef unsigned char <a class="el" href="namespacewpi.html#a37bbc3b1e95b6409a042b8089d3d8c00">wpi::UTF8</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd4e2dafd0200d2e7686df5c99d07933" name="abd4e2dafd0200d2e7686df5c99d07933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd4e2dafd0200d2e7686df5c99d07933">&#9670;&nbsp;</a></span>ValueTypeFromRangeType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename RangeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">wpi::ValueTypeFromRangeType</a> = typedef typename std::remove_const&lt;typename std::remove_reference&lt; decltype(*std::begin(std::declval&lt;RangeType &amp;&gt;()))&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5286,7 +5342,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void wpi::install_bad_alloc_error_handler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacewpi.html#a564fb7aa3eaf3704cbfd276b47f79149">fatal_error_handler_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacewpi.html#aacde1332b72e968317ed516552a07ca8">fatal_error_handler_t</a>&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
@@ -5325,7 +5381,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">void wpi::install_fatal_error_handler </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacewpi.html#a564fb7aa3eaf3704cbfd276b47f79149">fatal_error_handler_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacewpi.html#aacde1332b72e968317ed516552a07ca8">fatal_error_handler_t</a>&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
@@ -7879,14 +7935,14 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
 
 </div>
 </div>
-<a id="a465fd61d6724137daddb9477fea8b57b" name="a465fd61d6724137daddb9477fea8b57b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a465fd61d6724137daddb9477fea8b57b">&#9670;&nbsp;</a></span>report_bad_alloc_error()</h2>
+<a id="a6e3cd886beda7a2289aa18773f3aa103" name="a6e3cd886beda7a2289aa18773f3aa103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3cd886beda7a2289aa18773f3aa103">&#9670;&nbsp;</a></span>report_bad_alloc_error()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void wpi::report_bad_alloc_error </td>
+          <td class="memname">void wpi::report_bad_alloc_error </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>Reason</em>, </td>
@@ -7912,14 +7968,14 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
 
 </div>
 </div>
-<a id="ad4e57280c0aca853e1938bc5318c7b1e" name="ad4e57280c0aca853e1938bc5318c7b1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4e57280c0aca853e1938bc5318c7b1e">&#9670;&nbsp;</a></span>report_fatal_error() <span class="overload">[1/3]</span></h2>
+<a id="a6392584571d4e2bec4247503254d83a3" name="a6392584571d4e2bec4247503254d83a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6392584571d4e2bec4247503254d83a3">&#9670;&nbsp;</a></span>report_fatal_error() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void wpi::report_fatal_error </td>
+          <td class="memname">void wpi::report_fatal_error </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>reason</em>, </td>
@@ -7944,14 +8000,14 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
 
 </div>
 </div>
-<a id="ae5138167e4448b97cdea5ac04838bd4c" name="ae5138167e4448b97cdea5ac04838bd4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5138167e4448b97cdea5ac04838bd4c">&#9670;&nbsp;</a></span>report_fatal_error() <span class="overload">[2/3]</span></h2>
+<a id="a2a2f5ea71a00431f1def0f2d7daf7af3" name="a2a2f5ea71a00431f1def0f2d7daf7af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a2f5ea71a00431f1def0f2d7daf7af3">&#9670;&nbsp;</a></span>report_fatal_error() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void wpi::report_fatal_error </td>
+          <td class="memname">void wpi::report_fatal_error </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>reason</em>, </td>
@@ -7972,14 +8028,14 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
 
 </div>
 </div>
-<a id="ae217f4a23d9e6957bd7e67f2630807ca" name="ae217f4a23d9e6957bd7e67f2630807ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae217f4a23d9e6957bd7e67f2630807ca">&#9670;&nbsp;</a></span>report_fatal_error() <span class="overload">[3/3]</span></h2>
+<a id="a9c5d4610f996de2254ee2eca97aa2da6" name="a9c5d4610f996de2254ee2eca97aa2da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5d4610f996de2254ee2eca97aa2da6">&#9670;&nbsp;</a></span>report_fatal_error() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void wpi::report_fatal_error </td>
+          <td class="memname">void wpi::report_fatal_error </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>reason</em>, </td>
@@ -9566,14 +9622,39 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ab8f897983502a09870966cf8ac842246" name="ab8f897983502a09870966cf8ac842246"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8f897983502a09870966cf8ac842246">&#9670;&nbsp;</a></span>to_vector()</h2>
+<a id="a5602e08ef8bfc0486d71717a291a06b4" name="a5602e08ef8bfc0486d71717a291a06b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5602e08ef8bfc0486d71717a291a06b4">&#9670;&nbsp;</a></span>to_vector() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;unsigned Size, typename R &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Size wpi::to_vector </td>
+          <td class="memname"><a class="el" href="classwpi_1_1_small_vector.html">SmallVector</a>&lt; <a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">ValueTypeFromRangeType</a>&lt; R &gt;, Size &gt; wpi::to_vector </td>
+          <td>(</td>
+          <td class="paramtype">R &amp;&amp;&#160;</td>
+          <td class="paramname"><em>Range</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Given a range of type R, iterate the entire range and return a <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> with elements of the vector. </p>
+<p >This is useful, for example, when you want to iterate a range and then sort the results. </p>
+
+</div>
+</div>
+<a id="ab47d27507d50af1b79e67593bf1e8dc6" name="ab47d27507d50af1b79e67593bf1e8dc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47d27507d50af1b79e67593bf1e8dc6">&#9670;&nbsp;</a></span>to_vector() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_small_vector.html">SmallVector</a>&lt; <a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">ValueTypeFromRangeType</a>&lt; R &gt;, <a class="el" href="structwpi_1_1_calculate_small_vector_default_inlined_elements.html">CalculateSmallVectorDefaultInlinedElements</a>&lt; <a class="el" href="namespacewpi.html#abd4e2dafd0200d2e7686df5c99d07933">ValueTypeFromRangeType</a>&lt; R &gt; &gt;::<a class="el" href="classvalue.html">value</a> &gt; wpi::to_vector </td>
           <td>(</td>
           <td class="paramtype">R &amp;&amp;&#160;</td>
           <td class="paramname"><em>Range</em></td><td>)</td>
@@ -9771,14 +9852,14 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a9c5c23b35e891a193dffc6dff4b9091f" name="a9c5c23b35e891a193dffc6dff4b9091f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c5c23b35e891a193dffc6dff4b9091f">&#9670;&nbsp;</a></span>wpi_unreachable_internal()</h2>
+<a id="a0a330e37a0f2a3ac6bf2a664ea6d12db" name="a0a330e37a0f2a3ac6bf2a664ea6d12db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a330e37a0f2a3ac6bf2a664ea6d12db">&#9670;&nbsp;</a></span>wpi_unreachable_internal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_compiler_8h.html#ad976faeaf84fb561825e9be4a986f46d">LLVM_ATTRIBUTE_NORETURN</a> void wpi::wpi_unreachable_internal </td>
+          <td class="memname">void wpi::wpi_unreachable_internal </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>msg</em> = <code>nullptr</code>, </td>
@@ -10035,7 +10116,7 @@ template&lt;typename T , unsigned N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li>
-    <li class="footer">Generated on Sun Aug 14 2022 01:35:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Aug 15 2022 12:41:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

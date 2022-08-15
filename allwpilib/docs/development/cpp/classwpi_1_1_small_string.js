@@ -25,6 +25,5 @@ var classwpi_1_1_small_string =
     [ "operator=", "classwpi_1_1_small_string.html#ac778c6a8b40ca9479711c4e7a2fcd8cf", null ],
     [ "rfind", "classwpi_1_1_small_string.html#a21885728b8d81b27a2934360e26c331a", null ],
     [ "rfind", "classwpi_1_1_small_string.html#aa288c587d9ac0df9994bf9f9a321d70c", null ],
-    [ "str", "classwpi_1_1_small_string.html#a45bf4aea608bad21745b7f5ae892951a", null ],
-    [ "string", "classwpi_1_1_small_string.html#a77399254cdeb78917ad8025f19300f43", null ]
+    [ "str", "classwpi_1_1_small_string.html#a45bf4aea608bad21745b7f5ae892951a", null ]
 ];

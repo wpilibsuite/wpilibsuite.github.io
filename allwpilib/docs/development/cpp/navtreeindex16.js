@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"_nullary_functors_8h.html":[6,0,8,1,0,0,0,1,1,2],
+"_nullary_functors_8h_source.html":[6,0,8,1,0,0,0,1,1,2],
+"_num_traits_8h.html":[6,0,8,1,0,0,0,1,46],
 "_num_traits_8h.html#aab7215442e6104d49d9c001a8dcd8caf":[6,0,8,1,0,0,0,1,46,15],
 "_num_traits_8h_source.html":[6,0,8,1,0,0,0,1,46],
 "_numerical_integration_8h.html":[6,0,3,8,4],
@@ -122,6 +125,7 @@ var NAVTREEINDEX16 =
 "_pointer_like_type_traits_8h_source.html":[6,0,7,3,0,0,24],
 "_pointer_union_8h.html":[6,0,7,3,0,0,25],
 "_pointer_union_8h.html#a088be308371a5cee44b52aedf5a619e7":[6,0,7,3,0,0,25,16],
+"_pointer_union_8h.html#a2fd1500d4f0a79e36ea629a6ed4b6f81":[6,0,7,3,0,0,25,13],
 "_pointer_union_8h.html#a3287d2b8e67eaf00c1f275eb1d2b1fd8":[6,0,7,3,0,0,25,18],
 "_pointer_union_8h.html#a4e03174a92e237c3b5544c57d3dee498":[6,0,7,3,0,0,25,17],
 "_pointer_union_8h.html#ab4ab8b1f4c09528021435e2e857ceb93":[6,0,7,3,0,0,25,15],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "_rectangular_region_constraint_8h_source.html":[6,0,3,9,0,6],
 "_redux_8h.html":[6,0,8,1,0,0,0,1,53],
 "_redux_8h_source.html":[6,0,8,1,0,0,0,1,53],
-"_reenable_stupid_warnings_8h.html":[6,0,8,1,0,0,0,1,3,10],
-"_reenable_stupid_warnings_8h_source.html":[6,0,8,1,0,0,0,1,3,10],
-"_ref_8h.html":[6,0,8,1,0,0,0,1,54],
-"_ref_8h_source.html":[6,0,8,1,0,0,0,1,54],
-"_relay_data_8h.html":[6,0,5,2,19]
+"_reenable_stupid_warnings_8h.html":[6,0,8,1,0,0,0,1,3,10]
 };

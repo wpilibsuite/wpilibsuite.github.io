@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-50-gc5db23f</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-51-g0e07863</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('_function_extras_8h.html',''); initRes
 <code>#include &quot;<a class="el" href="_s_t_l_forward_compat_8h_source.html">wpi/STLForwardCompat.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_mem_alloc_8h_source.html">wpi/MemAlloc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="type__traits_8h_source.html">wpi/type_traits.h</a>&quot;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
 </div>
@@ -131,6 +132,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacewpi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html">wpi</a></td></tr>
+<tr class="memdesc:namespacewpi"><td class="mdescLeft">&#160;</td><td class="mdescRight">/file This file defines the <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> class. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacewpi_1_1detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html">wpi::detail</a></td></tr>
 <tr class="memdesc:namespacewpi_1_1detail"><td class="mdescLeft">&#160;</td><td class="mdescRight">detail namespace with internal helper functions <br /></td></tr>
@@ -144,9 +146,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:acf228e430233f227ccd3911e6a128efb"><td class="memTemplParams" colspan="2">template&lt;typename CallableT , typename ThisT &gt; </td></tr>
 <tr class="memitem:acf228e430233f227ccd3911e6a128efb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#acf228e430233f227ccd3911e6a128efb">wpi::detail::EnableUnlessSameType</a> = <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;!std::is_same&lt; <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; CallableT &gt;, ThisT &gt;::<a class="el" href="classvalue.html">value</a> &gt;</td></tr>
 <tr class="separator:acf228e430233f227ccd3911e6a128efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c07f307836517dab40e047af9843bb"><td class="memTemplParams" colspan="2">template&lt;typename CallableT , typename Ret , typename... Params&gt; </td></tr>
-<tr class="memitem:a66c07f307836517dab40e047af9843bb"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#a66c07f307836517dab40e047af9843bb">wpi::detail::EnableIfCallable</a> = <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_void&lt; Ret &gt;::<a class="el" href="classvalue.html">value</a>||std::is_convertible&lt; decltype(std::declval&lt; CallableT &gt;()(std::declval&lt; Params &gt;()...)), Ret &gt;::<a class="el" href="classvalue.html">value</a> &gt;</td></tr>
-<tr class="separator:a66c07f307836517dab40e047af9843bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4554a8a955ee20c3287c7daf2ca9b5d"><td class="memTemplParams" colspan="2">template&lt;typename CallableT , typename Ret , typename... Params&gt; </td></tr>
+<tr class="memitem:ab4554a8a955ee20c3287c7daf2ca9b5d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#ab4554a8a955ee20c3287c7daf2ca9b5d">wpi::detail::EnableIfCallable</a> = <a class="el" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; <a class="el" href="structwpi_1_1disjunction.html">wpi::disjunction</a>&lt; std::is_void&lt; Ret &gt;, std::is_same&lt; decltype(std::declval&lt; CallableT &gt;()(std::declval&lt; Params &gt;()...)), Ret &gt;, std::is_same&lt; const decltype(std::declval&lt; CallableT &gt;()(std::declval&lt; Params &gt;()...)), Ret &gt;, std::is_convertible&lt; decltype(std::declval&lt; CallableT &gt;()(std::declval&lt; Params &gt;()...)), Ret &gt; &gt;::<a class="el" href="classvalue.html">value</a> &gt;</td></tr>
+<tr class="separator:ab4554a8a955ee20c3287c7daf2ca9b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file provides a collection of function (or more generally, callable) type erasure utilities supplementing those provided by the standard library in <code>&lt;function&gt;</code>. </p>
@@ -164,7 +166,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_3c14e2811843326714b08335f4db6d6f.html">llvm</a></li><li class="navelem"><a class="el" href="dir_c9d71ee896d0afc8c2dc55673cfe897b.html">include</a></li><li class="navelem"><a class="el" href="dir_a809135da9c9e78db898aa42d248563a.html">wpi</a></li><li class="navelem"><a class="el" href="_function_extras_8h.html">FunctionExtras.h</a></li>
-    <li class="footer">Generated on Sun Aug 14 2022 01:35:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Aug 15 2022 12:41:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
