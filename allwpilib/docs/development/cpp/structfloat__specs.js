@@ -1,7 +1,6 @@
 var structfloat__specs =
 [
     [ "binary32", "structfloat__specs.html#aa955415b0b318ba6356dae7492d504a7", null ],
-    [ "fallback", "structfloat__specs.html#a42118bbeb2e44f6a1ebf8a6753b4c146", null ],
     [ "format", "structfloat__specs.html#a05bc60d16c34a874a5c79d576581d386", null ],
     [ "locale", "structfloat__specs.html#ab126633f6304a96f6d93ccd745046a20", null ],
     [ "precision", "structfloat__specs.html#a0f0bf3e55b78b4354809190563ff1c2d", null ],

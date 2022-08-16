@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['e_0',['e',['../namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58',1,'wpi::numbers::e()'],['../structdetail_1_1fp.html#a6bc195dc7de66ecea08d907da1e5ae0e',1,'detail::fp::e()']]],
+  ['e_0',['e',['../namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58',1,'wpi::numbers::e()'],['../structbasic__fp.html#a1e4a14ea86e324547aa69f30d426d0c6',1,'basic_fp::e()']]],
   ['e_5fv_1',['e_v',['../namespacewpi_1_1numbers.html#a18cb1db052ecb5fd43a5c17b01e935d2',1,'wpi::numbers']]],
   ['ebps_2',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
   ['ebps_3',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
@@ -11,7 +11,7 @@ var searchData=
   ['empty_8',['Empty',['../namespaceinternal_1_1_colamd.html#ad2feab81142482702b03352689f921b0',1,'internal::Colamd']]],
   ['empty_5farray_9',['empty_array',['../namespacewpi.html#ab3cecb2351a66db7a659706908ff8764',1,'wpi']]],
   ['enabled_10',['enabled',['../struct_h_a_l___control_word.html#a06e6392394544a408e752435488bd354',1,'HAL_ControlWord']]],
-  ['end_11',['end',['../structdetail_1_1find__escape__result.html#a16b4900274c89381dd99dc68518cd9e6',1,'detail::find_escape_result::end()'],['../structdetail_1_1codecvt__result.html#a25929767603becedf453bbfc88c5fcc6',1,'detail::codecvt_result::end()'],['../structformat__decimal__result.html#a37bde482b0196d21330e2264453f711a',1,'format_decimal_result::end()'],['../structjoin__view.html#a9eca47071ad8811c82e8449e257fc469',1,'join_view::end()']]],
+  ['end_11',['end',['../structformat__decimal__result.html#a37bde482b0196d21330e2264453f711a',1,'format_decimal_result::end()'],['../structfind__escape__result.html#a39207ea6cbf3b4a5e62070d35c74f13f',1,'find_escape_result::end()'],['../structjoin__view.html#a9eca47071ad8811c82e8449e257fc469',1,'join_view::end()'],['../structdetail_1_1codecvt__result.html#a25929767603becedf453bbfc88c5fcc6',1,'detail::codecvt_result::end()']]],
   ['end_12',['End',['../classwpi_1_1_small_ptr_set_iterator_impl.html#a7d467ee526d720f76a6a52aac8bd56e3',1,'wpi::SmallPtrSetIteratorImpl']]],
   ['end_13',['end',['../namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d',1,'Eigen::placeholders']]],
   ['endian_14',['endian',['../structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html#a4ed6313a24316ec9ac4f09677f95804b',1,'wpi::support::detail::packed_endian_specific_integral']]],
@@ -26,10 +26,9 @@ var searchData=
   ['exception_23',['exception',['../_third_party_notices_8txt.html#a5378875817b4fe889c3bbcd85fea1862',1,'ThirdPartyNotices.txt']]],
   ['exclusive_24',['exclusive',['../_third_party_notices_8txt.html#a62e4f010cb857f6074e26653bdcd4526',1,'ThirdPartyNotices.txt']]],
   ['exemplary_25',['EXEMPLARY',['../_third_party_notices_8txt.html#a55a60a3ab523c3c7cda7c6572cfd5d7f',1,'ThirdPartyNotices.txt']]],
-  ['exp10_26',['exp10',['../structdetail_1_1gen__digits__handler.html#a53c621b298c53f74612e1de9bebe252e',1,'detail::gen_digits_handler']]],
+  ['exp10_26',['exp10',['../structgen__digits__handler.html#a1b3e7a3f8c58a9c8e05217a30522c1a2',1,'gen_digits_handler']]],
   ['exponent_27',['exponent',['../structbig__decimal__fp.html#a8eadc09484053e86911229ff611b188d',1,'big_decimal_fp::exponent()'],['../structdragonbox_1_1decimal__fp.html#a3502100aff72adfb4009abd97b6a83a2',1,'dragonbox::decimal_fp::exponent()']]],
-  ['exponent_5fbias_28',['exponent_bias',['../structdragonbox_1_1float__info_3_01double_01_4.html#a46eea7b7a6ed79bab1d5f79ebeb6538b',1,'dragonbox::float_info&lt; double &gt;::exponent_bias()'],['../structdragonbox_1_1float__info_3_01float_01_4.html#a5ea44d2775a38156bb883f67d47ebda1',1,'dragonbox::float_info&lt; float &gt;::exponent_bias()']]],
-  ['exponent_5fbits_29',['exponent_bits',['../structdragonbox_1_1float__info_3_01float_01_4.html#a1eeea07196580b65b134245b398adc7c',1,'dragonbox::float_info&lt; float &gt;::exponent_bits()'],['../structdragonbox_1_1float__info_3_01double_01_4.html#a22e3bd20c4145e765ec84eb5a0724741',1,'dragonbox::float_info&lt; double &gt;::exponent_bits()']]],
-  ['exponents_30',['exponents',['../namespace_eigen.html#aebd2d46df7e6d1ffb14367adbe008bfd',1,'Eigen']]],
-  ['extent_31',['extent',['../classwpi_1_1span.html#a0969032dec9f5b876e46758bf1068e1b',1,'wpi::span']]]
+  ['exponent_5fbits_28',['exponent_bits',['../structdragonbox_1_1float__info_3_01double_01_4.html#a22e3bd20c4145e765ec84eb5a0724741',1,'dragonbox::float_info&lt; double &gt;::exponent_bits()'],['../structdragonbox_1_1float__info_3_01_t_00_01enable__if__t_3_01std_1_1numeric__limits_3_01_t_01_4_4ad7b4cb4a466ca2ac994b2f626f3574.html#a6e327eb9977bf89abe08bba3c6e271fa',1,'dragonbox::float_info&lt; T, enable_if_t&lt; std::numeric_limits&lt; T &gt;::digits==64||std::numeric_limits&lt; T &gt;::digits==113||is_float128&lt; T &gt;::value &gt; &gt;::exponent_bits()'],['../structdragonbox_1_1float__info_3_01float_01_4.html#a1eeea07196580b65b134245b398adc7c',1,'dragonbox::float_info&lt; float &gt;::exponent_bits()']]],
+  ['exponents_29',['exponents',['../namespace_eigen.html#aebd2d46df7e6d1ffb14367adbe008bfd',1,'Eigen']]],
+  ['extent_30',['extent',['../classwpi_1_1span.html#a0969032dec9f5b876e46758bf1068e1b',1,'wpi::span']]]
 ];

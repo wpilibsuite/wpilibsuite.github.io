@@ -3,7 +3,7 @@ var searchData=
   ['u8arguments_0',['u8arguments',['../classghc_1_1filesystem_1_1u8arguments.html',1,'ghc::filesystem']]],
   ['uidvector_1',['UidVector',['../classwpi_1_1_uid_vector.html',1,'wpi']]],
   ['uidvectoriterator_2',['UidVectorIterator',['../classwpi_1_1impl_1_1_uid_vector_iterator.html',1,'wpi::impl']]],
-  ['uint128_5fwrapper_3',['uint128_wrapper',['../structdetail_1_1uint128__wrapper.html',1,'detail']]],
+  ['uint128_5ffallback_3',['uint128_fallback',['../classdetail_1_1uint128__fallback.html',1,'detail']]],
   ['uleb128reader_4',['Uleb128Reader',['../classwpi_1_1_uleb128_reader.html',1,'wpi']]],
   ['ultrasonic_5',['Ultrasonic',['../classfrc_1_1_ultrasonic.html',1,'frc']]],
   ['ultrasonicsim_6',['UltrasonicSim',['../classfrc_1_1sim_1_1_ultrasonic_sim.html',1,'frc::sim']]],

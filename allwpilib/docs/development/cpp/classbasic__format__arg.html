@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-52-gd45bcdd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
    </div>
   </td>
  </tr>
@@ -111,8 +111,8 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1627363b8cecc44220df7a4654e8dd4c"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#a1627363b8cecc44220df7a4654e8dd4c">basic_format_arg</a> ()</td></tr>
 <tr class="separator:a1627363b8cecc44220df7a4654e8dd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7517149387133718fa10e3fb15bca09e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#a7517149387133718fa10e3fb15bca09e">operator bool</a> () const <a class="el" href="core_8h.html#aef128913e8400683b1cbd1a3a2e11df3">FMT_NOEXCEPT</a></td></tr>
-<tr class="separator:a7517149387133718fa10e3fb15bca09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b7ec4fdac53e2f2576bf9dd886a801"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#ab1b7ec4fdac53e2f2576bf9dd886a801">operator bool</a> () const noexcept</td></tr>
+<tr class="separator:ab1b7ec4fdac53e2f2576bf9dd886a801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2697987469a9508737d01b4ab7d4dd42"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#a2697987469a9508737d01b4ab7d4dd42">type</a> () const -&gt; detail::type</td></tr>
 <tr class="separator:a2697987469a9508737d01b4ab7d4dd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc117b6627a093e6f1c6295ad33c7dbd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#adc117b6627a093e6f1c6295ad33c7dbd">is_integral</a> () const -&gt; bool</td></tr>
@@ -129,9 +129,9 @@ Friends</h2></td></tr>
 <tr class="memitem:aa8b18531261259cd60c6f7f50fc80338"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Char , size_t NUM_ARGS, size_t NUM_NAMED_ARGS&gt; </td></tr>
 <tr class="memitem:aa8b18531261259cd60c6f7f50fc80338"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#aa8b18531261259cd60c6f7f50fc80338">detail::arg_data</a></td></tr>
 <tr class="separator:aa8b18531261259cd60c6f7f50fc80338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7eaaa007cce86ddd4ded48070f54b72"><td class="memTemplParams" colspan="2">template&lt;typename ContextType , typename T &gt; </td></tr>
-<tr class="memitem:ae7eaaa007cce86ddd4ded48070f54b72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#ae7eaaa007cce86ddd4ded48070f54b72">detail::make_arg</a> (const T &amp;<a class="el" href="classvalue.html">value</a>) -&gt; <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; ContextType &gt;</td></tr>
-<tr class="separator:ae7eaaa007cce86ddd4ded48070f54b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41d23fe182beee9b7795182ab714cc7"><td class="memTemplParams" colspan="2">template&lt;typename ContextType , typename T &gt; </td></tr>
+<tr class="memitem:ae41d23fe182beee9b7795182ab714cc7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#ae41d23fe182beee9b7795182ab714cc7">detail::make_arg</a> (T &amp;&amp;<a class="el" href="classvalue.html">value</a>) -&gt; <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; ContextType &gt;</td></tr>
+<tr class="separator:ae41d23fe182beee9b7795182ab714cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa922c52d8153f500a85f76b15d843657"><td class="memTemplParams" colspan="2">template&lt;typename Visitor , typename Ctx &gt; </td></tr>
 <tr class="memitem:aa922c52d8153f500a85f76b15d843657"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__format__arg.html#aa922c52d8153f500a85f76b15d843657">visit_format_arg</a> (Visitor &amp;&amp;vis, const <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; Ctx &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>) -&gt; decltype(vis(0))</td></tr>
 <tr class="separator:aa922c52d8153f500a85f76b15d843657"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,8 +219,8 @@ template&lt;typename Context &gt; </div>
 
 </div>
 </div>
-<a id="a7517149387133718fa10e3fb15bca09e" name="a7517149387133718fa10e3fb15bca09e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7517149387133718fa10e3fb15bca09e">&#9670;&nbsp;</a></span>operator bool()</h2>
+<a id="ab1b7ec4fdac53e2f2576bf9dd886a801" name="ab1b7ec4fdac53e2f2576bf9dd886a801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b7ec4fdac53e2f2576bf9dd886a801">&#9670;&nbsp;</a></span>operator bool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +239,7 @@ template&lt;typename Context &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -324,8 +324,8 @@ template&lt;typename T , typename Char , size_t NUM_ARGS, size_t NUM_NAMED_ARGS&
 
 </div>
 </div>
-<a id="ae7eaaa007cce86ddd4ded48070f54b72" name="ae7eaaa007cce86ddd4ded48070f54b72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7eaaa007cce86ddd4ded48070f54b72">&#9670;&nbsp;</a></span>detail::make_arg</h2>
+<a id="ae41d23fe182beee9b7795182ab714cc7" name="ae41d23fe182beee9b7795182ab714cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae41d23fe182beee9b7795182ab714cc7">&#9670;&nbsp;</a></span>detail::make_arg</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,9 +338,9 @@ template&lt;typename ContextType , typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto <a class="el" href="core_8h.html#a8f2d4bf9b52be21037c502aa30f0e6e8">detail::make_arg</a> </td>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto <a class="el" href="core_8h.html#ad65f476e32c2b9c9638d980bbd952475">detail::make_arg</a> </td>
           <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td> -&gt;  <a class="el" href="classbasic__format__arg.html">basic_format_arg</a>&lt; ContextType &gt;</td>
         </tr>
@@ -427,7 +427,7 @@ template&lt;typename Visitor , typename Ctx &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classbasic__format__arg.html">basic_format_arg</a></li>
-    <li class="footer">Generated on Mon Aug 15 2022 13:29:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 22:38:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

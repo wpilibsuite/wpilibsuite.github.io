@@ -39,9 +39,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "jni_util.h", "jni__util_8h.html", "jni__util_8h" ],
     [ "leb128.h", "leb128_8h.html", "leb128_8h" ],
     [ "Logger.h", "_logger_8h.html", "_logger_8h" ],
-    [ "MappedFileRegion.h", "_mapped_file_region_8h.html", [
-      [ "wpi::MappedFileRegion", "classwpi_1_1_mapped_file_region.html", "classwpi_1_1_mapped_file_region" ]
-    ] ],
+    [ "MappedFileRegion.h", "_mapped_file_region_8h.html", "_mapped_file_region_8h" ],
     [ "math", "math.html", null ],
     [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
     [ "nodiscard.h", "nodiscard_8h.html", null ],

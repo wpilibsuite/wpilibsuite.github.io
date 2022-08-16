@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-52-gd45bcdd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
    </div>
   </td>
  </tr>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('priority__queue_8h_source.html',''); i
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">static_assert</span>(std::is_same_v&lt;T, typename Sequence::value_type&gt;,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                <span class="stringliteral">&quot;value_type must be the same as the underlying container&quot;</span>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classwpi_1_1priority__queue.html#a152c5da89497f4b8c0d7f6f666d3c7b0">   30</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classwpi_1_1priority__queue.html#a152c5da89497f4b8c0d7f6f666d3c7b0">value_type</a> = <span class="keyword">typename</span> <a class="code hl_typedef" href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">Sequence::value_type</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classwpi_1_1priority__queue.html#a152c5da89497f4b8c0d7f6f666d3c7b0">   30</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classwpi_1_1priority__queue.html#a152c5da89497f4b8c0d7f6f666d3c7b0">value_type</a> = <span class="keyword">typename</span> Sequence::value_type;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classwpi_1_1priority__queue.html#ae14608625ee6da44b4aa1399bae532b6">   31</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classwpi_1_1priority__queue.html#ae14608625ee6da44b4aa1399bae532b6">reference</a> = <span class="keyword">typename</span> Sequence::reference;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classwpi_1_1priority__queue.html#a23f5d41a9f57fddad8793b3b5c99b620">   32</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classwpi_1_1priority__queue.html#a23f5d41a9f57fddad8793b3b5c99b620">const_reference</a> = <span class="keyword">typename</span> Sequence::const_reference;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classwpi_1_1priority__queue.html#a0e31b17e92f554de563cd89df9591fbf">   33</a></span>  <span class="keyword">using</span> <a class="code hl_typedef" href="classwpi_1_1priority__queue.html#a0e31b17e92f554de563cd89df9591fbf">size_type</a> = <span class="keyword">typename</span> Sequence::size_type;</div>
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('priority__queue_8h_source.html',''); i
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}  <span class="comment">// namespace wpi</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif  </span><span class="comment">// WPIUTIL_WPI_PRIORITY_QUEUE_H_</span></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1208</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1221</div></div>
 <div class="ttc" id="aclasswpi_1_1priority__queue_html"><div class="ttname"><a href="classwpi_1_1priority__queue.html">wpi::priority_queue</a></div><div class="ttdoc">This class is the same as std::priority_queue with two changes:</div><div class="ttdef"><b>Definition:</b> priority_queue.h:25</div></div>
 <div class="ttc" id="aclasswpi_1_1priority__queue_html_a0e31b17e92f554de563cd89df9591fbf"><div class="ttname"><a href="classwpi_1_1priority__queue.html#a0e31b17e92f554de563cd89df9591fbf">wpi::priority_queue::size_type</a></div><div class="ttdeci">typename Sequence::size_type size_type</div><div class="ttdef"><b>Definition:</b> priority_queue.h:33</div></div>
 <div class="ttc" id="aclasswpi_1_1priority__queue_html_a116ef7675d0125cedb7fe891b2db5637"><div class="ttname"><a href="classwpi_1_1priority__queue.html#a116ef7675d0125cedb7fe891b2db5637">wpi::priority_queue::emplace</a></div><div class="ttdeci">void emplace(Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> priority_queue.h:85</div></div>
@@ -232,19 +232,18 @@ $(document).ready(function(){initNavTree('priority__queue_8h_source.html',''); i
 <div class="ttc" id="aclasswpi_1_1priority__queue_html_ac4d772b36b04bef2cb3f7fdf51cd48da"><div class="ttname"><a href="classwpi_1_1priority__queue.html#ac4d772b36b04bef2cb3f7fdf51cd48da">wpi::priority_queue::size</a></div><div class="ttdeci">size_type size() const</div><div class="ttdef"><b>Definition:</b> priority_queue.h:70</div></div>
 <div class="ttc" id="aclasswpi_1_1priority__queue_html_ae14608625ee6da44b4aa1399bae532b6"><div class="ttname"><a href="classwpi_1_1priority__queue.html#ae14608625ee6da44b4aa1399bae532b6">wpi::priority_queue::reference</a></div><div class="ttdeci">typename Sequence::reference reference</div><div class="ttdef"><b>Definition:</b> priority_queue.h:31</div></div>
 <div class="ttc" id="aclasswpi_1_1priority__queue_html_aef4886e3e485e20eb5659d1b900f3fb1"><div class="ttname"><a href="classwpi_1_1priority__queue.html#aef4886e3e485e20eb5659d1b900f3fb1">wpi::priority_queue::container_type</a></div><div class="ttdeci">Sequence container_type</div><div class="ttdef"><b>Definition:</b> priority_queue.h:34</div></div>
-<div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:321</div></div>
-<div class="ttc" id="acore_8h_html_a02307ec0131a3aa9df2db7c2f10b69f2"><div class="ttname"><a href="core_8h.html#a02307ec0131a3aa9df2db7c2f10b69f2">find</a></div><div class="ttdeci">FMT_CONSTEXPR auto find(Ptr first, Ptr last, T value, Ptr &amp;out) -&gt; bool</div><div class="ttdef"><b>Definition:</b> core.h:2258</div></div>
+<div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:294</div></div>
+<div class="ttc" id="acore_8h_html_a02307ec0131a3aa9df2db7c2f10b69f2"><div class="ttname"><a href="core_8h.html#a02307ec0131a3aa9df2db7c2f10b69f2">find</a></div><div class="ttdeci">FMT_CONSTEXPR auto find(Ptr first, Ptr last, T value, Ptr &amp;out) -&gt; bool</div><div class="ttdef"><b>Definition:</b> core.h:2288</div></div>
 <div class="ttc" id="agroup___core___module_html_ga2dd8b20d08336af23947e054a17415ee"><div class="ttname"><a href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">Eigen::last</a></div><div class="ttdeci">static const symbolic::SymbolExpr&lt; internal::symbolic_last_tag &gt; last</div><div class="ttdoc">Can be used as a parameter to Eigen::seq and Eigen::seqN functions to symbolically reference the last...</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:38</div></div>
-<div class="ttc" id="anamespacedetail_html_a13f263662d2a7d37893dbacfc534889f"><div class="ttname"><a href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">detail::value_type</a></div><div class="ttdeci">remove_cvref_t&lt; decltype(*detail::range_begin(std::declval&lt; Range &gt;()))&gt; value_type</div><div class="ttdef"><b>Definition:</b> ranges.h:226</div></div>
-<div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:178</div></div>
-<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> circular_buffer.h:10</div></div>
+<div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:138</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="priority__queue_8h.html">priority_queue.h</a></li>
-    <li class="footer">Generated on Mon Aug 15 2022 13:29:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 22:38:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

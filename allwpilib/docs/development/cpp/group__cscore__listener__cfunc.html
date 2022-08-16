@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-52-gd45bcdd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
    </div>
   </td>
  </tr>
@@ -99,11 +99,11 @@ $(document).ready(function(){initNavTree('group__cscore__listener__cfunc.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga63ebcb721a3d6a11744d7ac8640002ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga63ebcb721a3d6a11744d7ac8640002ce">CS_SetListenerOnStart</a> (void(*onStart)(void *data), void *data)</td></tr>
+<tr class="memitem:ga63ebcb721a3d6a11744d7ac8640002ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga63ebcb721a3d6a11744d7ac8640002ce">CS_SetListenerOnStart</a> (void(*onStart)(void *<a class="el" href="structdata.html">data</a>), void *<a class="el" href="structdata.html">data</a>)</td></tr>
 <tr class="separator:ga63ebcb721a3d6a11744d7ac8640002ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga4cbd1deafda979fdfc21112cd6abe9f3">CS_SetListenerOnExit</a> (void(*onExit)(void *data), void *data)</td></tr>
+<tr class="memitem:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga4cbd1deafda979fdfc21112cd6abe9f3">CS_SetListenerOnExit</a> (void(*onExit)(void *<a class="el" href="structdata.html">data</a>), void *<a class="el" href="structdata.html">data</a>)</td></tr>
 <tr class="separator:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga99a8dd6069f7f3f96aa923c5cc1a809b">CS_AddListener</a> (void *data, void(*callback)(void *data, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event), int eventMask, <a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a> immediateNotify, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
+<tr class="memitem:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga99a8dd6069f7f3f96aa923c5cc1a809b">CS_AddListener</a> (void *<a class="el" href="structdata.html">data</a>, void(*callback)(void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event), int eventMask, <a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a> immediateNotify, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
 <tr class="separator:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga6abb2e33f17c5dc953be4926d74a2c12">CS_RemoveListener</a> (<a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a> handle, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
 <tr class="separator:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +139,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void(*)(void *data, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event)&#160;</td>
+          <td class="paramtype">void(*)(void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event)&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -397,7 +397,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void CS_SetListenerOnExit </td>
           <td>(</td>
-          <td class="paramtype">void(*)(void *data)&#160;</td>
+          <td class="paramtype">void(*)(void *<a class="el" href="structdata.html">data</a>)&#160;</td>
           <td class="paramname"><em>onExit</em>, </td>
         </tr>
         <tr>
@@ -425,7 +425,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void CS_SetListenerOnStart </td>
           <td>(</td>
-          <td class="paramtype">void(*)(void *data)&#160;</td>
+          <td class="paramtype">void(*)(void *<a class="el" href="structdata.html">data</a>)&#160;</td>
           <td class="paramname"><em>onStart</em>, </td>
         </tr>
         <tr>
@@ -449,7 +449,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Aug 15 2022 13:29:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 22:38:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

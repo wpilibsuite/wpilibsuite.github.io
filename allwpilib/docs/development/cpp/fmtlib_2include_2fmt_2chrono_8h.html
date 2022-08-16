@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-52-gd45bcdd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,8 @@ $(document).ready(function(){initNavTree('fmtlib_2include_2fmt_2chrono_8h.html',
 <div class="contents">
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
 <code>#include &lt;locale&gt;</code><br />
@@ -136,6 +138,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmake__unsigned__or__unchanged.html">make_unsigned_or_unchanged&lt; T, INTEGRAL &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html">make_unsigned_or_unchanged&lt; T, true &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcount__fractional__digits.html">count_fractional_digits&lt; Num, Den, N, Enabled &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcount__fractional__digits_3_01_num_00_01_den_00_01_n_00_01false_01_4.html">count_fractional_digits&lt; Num, Den, N, false &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classget__locale.html">get_locale</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +185,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac9b448822712d899ac8814dd4e0b6cc9"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; From, To &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; std::numeric_limits&lt; From &gt;::<a class="el" href="format_8h.html#aebd8826912defda6bd2c1c87bdba4f55">is_signed</a>== std::numeric_limits&lt; To &gt;::<a class="el" href="format_8h.html#aebd8826912defda6bd2c1c87bdba4f55">is_signed</a>) &gt; </td></tr>
+<tr class="memitem:ac9b448822712d899ac8814dd4e0b6cc9"><td class="memTemplParams" colspan="2">template&lt;typename To , typename From , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; From, To &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; std::numeric_limits&lt; From &gt;::<a class="el" href="format_8h.html#a56d0276c2e6f4b26cb3565e08ebc9181">is_signed</a>== std::numeric_limits&lt; To &gt;::<a class="el" href="format_8h.html#a56d0276c2e6f4b26cb3565e08ebc9181">is_signed</a>) &gt; </td></tr>
 <tr class="memitem:ac9b448822712d899ac8814dd4e0b6cc9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> To&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9">safe_duration_cast::lossless_integral_conversion</a> (const From <a class="el" href="_third_party_notices_8txt.html#ae1e371287219a11d6a2498f92d3e15d2">from</a>, int &amp;ec)</td></tr>
 <tr class="memdesc:ac9b448822712d899ac8814dd4e0b6cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">converts From to To, without loss.  <a href="namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9">More...</a><br /></td></tr>
 <tr class="separator:ac9b448822712d899ac8814dd4e0b6cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,10 +217,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ad47cd5d042e47e907891568d605e4e29"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ad47cd5d042e47e907891568d605e4e29">detail::write_tm_str</a> (OutputIt out, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> sv, const std::locale &amp;loc) -&gt; OutputIt</td></tr>
 <tr class="separator:ad47cd5d042e47e907891568d605e4e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5007cc441bd246a9096070c10d1ea683"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
-<tr class="memitem:a5007cc441bd246a9096070c10d1ea683"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a5007cc441bd246a9096070c10d1ea683">detail::do_write</a> (<a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;buf, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, char modifier)</td></tr>
+<tr class="memitem:a5007cc441bd246a9096070c10d1ea683"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a5007cc441bd246a9096070c10d1ea683">detail::do_write</a> (<a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;buf, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, char modifier)</td></tr>
 <tr class="separator:a5007cc441bd246a9096070c10d1ea683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename OutputIt , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; Char, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a29dacf26eedc9e3575fb57329a5ca0a3">detail::write</a> (OutputIt out, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, char modifier=0) -&gt; OutputIt</td></tr>
+<tr class="memitem:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a29dacf26eedc9e3575fb57329a5ca0a3">detail::write</a> (OutputIt out, const std::tm &amp;time, const std::locale &amp;loc, char <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, char modifier=0) -&gt; OutputIt</td></tr>
 <tr class="separator:a29dacf26eedc9e3575fb57329a5ca0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a5420acd34656784c3736b4803efad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a405a25ede2658f5f1bd426ce7d10f3ee">FMT_MODULE_EXPORT_BEGIN</a> std::tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#a5a5420acd34656784c3736b4803efad1">localtime</a> (std::time_t time)</td></tr>
 <tr class="memdesc:a5a5420acd34656784c3736b4803efad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts given time since epoch as <code>std::time_t</code> value into calendar time, expressed in local time.  <a href="fmtlib_2include_2fmt_2chrono_8h.html#a5a5420acd34656784c3736b4803efad1">More...</a><br /></td></tr>
@@ -242,9 +248,6 @@ Functions</h2></td></tr>
 <tr class="separator:a1e681c8df2039d0eceebd73f7e8fd370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac71953b3c39cae68b897b2c6815b0714"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#ac71953b3c39cae68b897b2c6815b0714">tm_mon_short_name</a> (int mon)</td></tr>
 <tr class="separator:ac71953b3c39cae68b897b2c6815b0714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e13cf798eee1bf79bcc01b8d94047c7"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a5e13cf798eee1bf79bcc01b8d94047c7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#a5e13cf798eee1bf79bcc01b8d94047c7">isnan</a> (T)</td></tr>
-<tr class="separator:a5e13cf798eee1bf79bcc01b8d94047c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88">isfinite</a> (T)</td></tr>
 <tr class="separator:ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,11 +263,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a90f13cd1ee1d44f9fb07a8a127624609"><td class="memTemplParams" colspan="2">template&lt;typename Rep , typename Period , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_integral&lt; Rep &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:a90f13cd1ee1d44f9fb07a8a127624609"><td class="memTemplItemLeft" align="right" valign="top">std::chrono::duration&lt; Rep, std::milli &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#a90f13cd1ee1d44f9fb07a8a127624609">get_milliseconds</a> (std::chrono::duration&lt; Rep, Period &gt; d)</td></tr>
 <tr class="separator:a90f13cd1ee1d44f9fb07a8a127624609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f192a5c62baee8ffaf2672024814e95"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#a5f192a5c62baee8ffaf2672024814e95">count_fractional_digits</a> (long long num, long long den, int n=0)</td></tr>
-<tr class="separator:a5f192a5c62baee8ffaf2672024814e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07efcf262ed6d2f4b5d7fe3ae4013383"><td class="memItemLeft" align="right" valign="top">constexpr long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#a07efcf262ed6d2f4b5d7fe3ae4013383">pow10</a> (std::uint32_t n)</td></tr>
 <tr class="separator:a07efcf262ed6d2f4b5d7fe3ae4013383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f92706ac7d62fcaef49d59ba5914db7"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::numeric_limits&lt; Rep &gt;::<a class="el" href="format_8h.html#aebd8826912defda6bd2c1c87bdba4f55">is_signed</a>) &gt; </td></tr>
+<tr class="memitem:a2f92706ac7d62fcaef49d59ba5914db7"><td class="memTemplParams" colspan="2">template&lt;class Rep , class Period , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::numeric_limits&lt; Rep &gt;::<a class="el" href="format_8h.html#a56d0276c2e6f4b26cb3565e08ebc9181">is_signed</a>) &gt; </td></tr>
 <tr class="memitem:a2f92706ac7d62fcaef49d59ba5914db7"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::chrono::duration&lt; Rep, Period &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a> (std::chrono::duration&lt; Rep, Period &gt; d)</td></tr>
 <tr class="separator:a2f92706ac7d62fcaef49d59ba5914db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5807d6bf5c62fc94af79d8a167e3dc89"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename Rep , typename OutputIt , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_integral&lt; Rep &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
@@ -357,7 +358,7 @@ Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Rep , class Period , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::numeric_limits&lt; Rep &gt;::<a class="el" href="format_8h.html#aebd8826912defda6bd2c1c87bdba4f55">is_signed</a>) &gt; </div>
+template&lt;class Rep , class Period , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::numeric_limits&lt; Rep &gt;::<a class="el" href="format_8h.html#a56d0276c2e6f4b26cb3565e08ebc9181">is_signed</a>) &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -447,48 +448,6 @@ template&lt;typename OutputIt &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5f192a5c62baee8ffaf2672024814e95" name="a5f192a5c62baee8ffaf2672024814e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f192a5c62baee8ffaf2672024814e95">&#9670;&nbsp;</a></span>count_fractional_digits()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int count_fractional_digits </td>
-          <td>(</td>
-          <td class="paramtype">long long&#160;</td>
-          <td class="paramname"><em>num</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">long long&#160;</td>
-          <td class="paramname"><em>den</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -695,34 +654,6 @@ template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5e13cf798eee1bf79bcc01b8d94047c7" name="a5e13cf798eee1bf79bcc01b8d94047c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e13cf798eee1bf79bcc01b8d94047c7">&#9670;&nbsp;</a></span>isnan()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool isnan </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1092,7 +1023,7 @@ template&lt;typename T , typename Int , <a class="el" href="core_8h.html#ab02671
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="fmtlib_2include_2fmt_2chrono_8h.html">chrono.h</a></li>
-    <li class="footer">Generated on Mon Aug 15 2022 13:29:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 22:38:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

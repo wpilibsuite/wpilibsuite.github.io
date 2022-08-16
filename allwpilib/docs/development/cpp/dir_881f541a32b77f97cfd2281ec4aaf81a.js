@@ -7,10 +7,12 @@ var dir_881f541a32b77f97cfd2281ec4aaf81a =
     [ "core.h", "core_8h.html", "core_8h" ],
     [ "format-inl.h", "format-inl_8h.html", "format-inl_8h" ],
     [ "format.h", "format_8h.html", "format_8h" ],
-    [ "locale.h", "locale_8h.html", null ],
     [ "os.h", "os_8h.html", "os_8h" ],
     [ "ostream.h", "ostream_8h.html", "ostream_8h" ],
     [ "printf.h", "printf_8h.html", "printf_8h" ],
     [ "ranges.h", "ranges_8h.html", "ranges_8h" ],
+    [ "std.h", "std_8h.html", [
+      [ "formatter< std::thread::id, Char >", "structformatter_3_01std_1_1thread_1_1id_00_01_char_01_4.html", null ]
+    ] ],
     [ "xchar.h", "xchar_8h.html", "xchar_8h" ]
 ];

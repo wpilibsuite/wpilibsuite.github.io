@@ -1,13 +1,7 @@
 var namespaces_dup =
 [
     [ "align", "namespacealign.html", [
-      [ "type", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759", [
-        [ "none", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a4ba1498ecf6f0de5baac670a264e43eb", null ],
-        [ "left", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd", null ],
-        [ "right", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79", null ],
-        [ "center", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4", null ],
-        [ "numeric", "namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759af95ea74b65a6ce7cade89d4db5ab5d1b", null ]
-      ] ]
+      [ "FMT_ENUM_UNDERLYING_TYPE", "namespacealign.html#a9ac3ea6c24029f591f5f3bfd324e8bc3", null ]
     ] ],
     [ "cs", "namespacecs.html", "namespacecs" ],
     [ "cv", "namespacecv.html", null ],
@@ -16,9 +10,19 @@ var namespaces_dup =
       [ "compile_string_to_view", "namespacedetail__exported.html#a49a9f461220f70b5fdbdf267b5a92638", null ],
       [ "compile_string_to_view", "namespacedetail__exported.html#a8ce4671a232e1139c6af8c27e6a41354", null ]
     ] ],
+    [ "digits", "namespacedigits.html", [
+      [ "result", "namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8b", [
+        [ "more", "namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8bada4bf0f4825d326ff0dc1d845ef2dac6", null ],
+        [ "done", "namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8ba035d977de44b9c4a46c5679724251866", null ],
+        [ "error", "namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8ba81975fa799af874586bd28abc82f5171", null ]
+      ] ]
+    ] ],
     [ "dragonbox", "namespacedragonbox.html", "namespacedragonbox" ],
     [ "drake", "namespacedrake.html", "namespacedrake" ],
     [ "Eigen", "namespace_eigen.html", "namespace_eigen" ],
+    [ "enums", "namespaceenums.html", [
+      [ "format_as", "namespaceenums.html#a8edb72b998b5c59c01243d908949ce87", null ]
+    ] ],
     [ "fmt", null, [
       [ "formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4.html", "structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4" ],
       [ "formatter< units::dimensionless::dB_t >", "structfmt_1_1formatter_3_01units_1_1dimensionless_1_1d_b__t_01_4.html", "structfmt_1_1formatter_3_01units_1_1dimensionless_1_1d_b__t_01_4" ],
@@ -67,9 +71,7 @@ var namespaces_dup =
     [ "ghc", "namespaceghc.html", "namespaceghc" ],
     [ "hal", "namespacehal.html", "namespacehal" ],
     [ "internal", "namespaceinternal.html", "namespaceinternal" ],
-    [ "literals", "namespaceliterals.html", [
-      [ "operator\"\"_format", "namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2", null ]
-    ] ],
+    [ "literals", "namespaceliterals.html", null ],
     [ "nt", "namespacent.html", "namespacent" ],
     [ "safe_duration_cast", "namespacesafe__duration__cast.html", [
       [ "lossless_integral_conversion", "namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9", null ],
@@ -77,12 +79,7 @@ var namespaces_dup =
       [ "safe_float_conversion", "namespacesafe__duration__cast.html#a4068ce3522b9a60611b5cb6466977e9a", null ]
     ] ],
     [ "sign", "namespacesign.html", [
-      [ "type", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8", [
-        [ "none", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a75c2aa7fc7b2327c3b1b9e4e0e997440", null ],
-        [ "minus", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a7985fecd36375136e45b9c53928f859a", null ],
-        [ "plus", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a0dfb6f25f723da9360584c01aee74389", null ],
-        [ "space", "namespacesign.html#a15b7528752011adf8078cdaf330a21a8a76524fe7132f930875fca352b31e730d", null ]
-      ] ]
+      [ "FMT_ENUM_UNDERLYING_TYPE", "namespacesign.html#ac99478e49f5c4a91ec525f17e8962bad", null ]
     ] ],
     [ "std", "namespacestd.html", "namespacestd" ],
     [ "units", "namespaceunits.html", "namespaceunits" ],

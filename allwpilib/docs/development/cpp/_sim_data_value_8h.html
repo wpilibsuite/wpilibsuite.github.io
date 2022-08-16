@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-52-gd45bcdd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
    </div>
   </td>
  </tr>
@@ -191,21 +191,23 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> NS##_Register##CAPINAME##Callback(                               \</div>
-<div class="line">      <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_typedef" href="_notify_listener_8h.html#a9b2475efb19471df0af938eea8e5a898">HAL_NotifyCallback</a> callback, <span class="keywordtype">void</span>* param,             \</div>
-<div class="line">      <a class="code hl_typedef" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> initialNotify) {                                            \</div>
-<div class="line">    return DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME.RegisterCallback(callback, param,         \</div>
-<div class="line">                                                  initialNotify);          \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">                                                                           \</div>
-<div class="line">  void NS##_Cancel##CAPINAME##Callback(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> uid) {       \</div>
-<div class="line">    DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME.CancelCallback(uid);                             \</div>
-<div class="line">  }                                                                        \</div>
-<div class="line">                                                                           \</div>
-<div class="line">  TYPE NS##_Get##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index) { <span class="keywordflow">return</span> DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME; } \</div>
-<div class="line">                                                                           \</div>
-<div class="line">  void NS##_Set##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, TYPE LOWERNAME) {                 \</div>
-<div class="line">    DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME = LOWERNAME;                                     \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> NS##_Register##CAPINAME##Callback(                              \</div>
+<div class="line">      <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_typedef" href="_notify_listener_8h.html#a9b2475efb19471df0af938eea8e5a898">HAL_NotifyCallback</a> callback, <span class="keywordtype">void</span>* param,            \</div>
+<div class="line">      <a class="code hl_typedef" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> initialNotify) {                                           \</div>
+<div class="line">    return DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME.RegisterCallback(callback, param,        \</div>
+<div class="line">                                                  initialNotify);         \</div>
+<div class="line">  }                                                                       \</div>
+<div class="line">                                                                          \</div>
+<div class="line">  void NS##_Cancel##CAPINAME##Callback(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> uid) {      \</div>
+<div class="line">    DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME.CancelCallback(uid);                            \</div>
+<div class="line">  }                                                                       \</div>
+<div class="line">                                                                          \</div>
+<div class="line">  TYPE NS##_Get##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index) {                                \</div>
+<div class="line">    return DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME;                                         \</div>
+<div class="line">  }                                                                       \</div>
+<div class="line">                                                                          \</div>
+<div class="line">  void NS##_Set##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, TYPE LOWERNAME) {                \</div>
+<div class="line">    DATA[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>].LOWERNAME = LOWERNAME;                                    \</div>
 <div class="line">  }</div>
 <div class="ttc" id="a_notify_listener_8h_html_a9b2475efb19471df0af938eea8e5a898"><div class="ttname"><a href="_notify_listener_8h.html#a9b2475efb19471df0af938eea8e5a898">HAL_NotifyCallback</a></div><div class="ttdeci">void(* HAL_NotifyCallback)(const char *name, void *param, const struct HAL_Value *value)</div><div class="ttdef"><b>Definition:</b> NotifyListener.h:9</div></div>
 <div class="ttc" id="acore_8h_html_a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86"><div class="ttname"><a href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">arg_id_kind::index</a></div><div class="ttdeci">@ index</div></div>
@@ -367,9 +369,13 @@ Macros</h2></td></tr>
 <div class="line">    DATA-&gt;LOWERNAME.CancelCallback(uid);                                     \</div>
 <div class="line">  }                                                                          \</div>
 <div class="line">                                                                             \</div>
-<div class="line">  TYPE NS##_Get##CAPINAME(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> DATA-&gt;LOWERNAME; }                  \</div>
+<div class="line">  TYPE NS##_Get##CAPINAME(<span class="keywordtype">void</span>) {                                            \</div>
+<div class="line">    return DATA-&gt;LOWERNAME;                                                  \</div>
+<div class="line">  }                                                                          \</div>
 <div class="line">                                                                             \</div>
-<div class="line">  void NS##_Set##CAPINAME(TYPE LOWERNAME) { DATA-&gt;LOWERNAME = LOWERNAME; }</div>
+<div class="line">  void NS##_Set##CAPINAME(TYPE LOWERNAME) {                                  \</div>
+<div class="line">    DATA-&gt;LOWERNAME = LOWERNAME;                                             \</div>
+<div class="line">  }</div>
 </div><!-- fragment -->
 <p>Define a standard C API for simulation data (no index variant). </p>
 <p >Functions defined:</p><ul>
@@ -467,7 +473,9 @@ Macros</h2></td></tr>
 <div class="line">                                                                      \</div>
 <div class="line">  void NS##_Cancel##CAPINAME##Callback(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> uid) {} \</div>
 <div class="line">                                                                      \</div>
-<div class="line">  TYPE NS##_Get##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index) { <span class="keywordflow">return</span> RETURN; }           \</div>
+<div class="line">  TYPE NS##_Get##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index) {                            \</div>
+<div class="line">    return RETURN;                                                    \</div>
+<div class="line">  }                                                                   \</div>
 <div class="line">                                                                      \</div>
 <div class="line">  void NS##_Set##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, TYPE) {}</div>
 </div><!-- fragment -->
@@ -527,17 +535,19 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> NS##_Register##CAPINAME##Callback(                                 \</div>
-<div class="line">      <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> channel, <a class="code hl_typedef" href="_notify_listener_8h.html#a9b2475efb19471df0af938eea8e5a898">HAL_NotifyCallback</a> callback,           \</div>
-<div class="line">      <span class="keywordtype">void</span>* param, <a class="code hl_typedef" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> initialNotify) {                                 \</div>
-<div class="line">    return 0;                                                                \</div>
-<div class="line">  }                                                                          \</div>
-<div class="line">                                                                             \</div>
-<div class="line">  void NS##_Cancel##CAPINAME##Callback(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> channel,       \</div>
-<div class="line">                                       <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> uid) {}                       \</div>
-<div class="line">                                                                             \</div>
-<div class="line">  TYPE NS##_Get##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> channel) { <span class="keywordflow">return</span> RETURN; } \</div>
-<div class="line">                                                                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> NS##_Register##CAPINAME##Callback(                           \</div>
+<div class="line">      <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> channel, <a class="code hl_typedef" href="_notify_listener_8h.html#a9b2475efb19471df0af938eea8e5a898">HAL_NotifyCallback</a> callback,     \</div>
+<div class="line">      <span class="keywordtype">void</span>* param, <a class="code hl_typedef" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> initialNotify) {                           \</div>
+<div class="line">    return 0;                                                          \</div>
+<div class="line">  }                                                                    \</div>
+<div class="line">                                                                       \</div>
+<div class="line">  void NS##_Cancel##CAPINAME##Callback(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> channel, \</div>
+<div class="line">                                       <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> uid) {}                 \</div>
+<div class="line">                                                                       \</div>
+<div class="line">  TYPE NS##_Get##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> channel) {            \</div>
+<div class="line">    return RETURN;                                                     \</div>
+<div class="line">  }                                                                    \</div>
+<div class="line">                                                                       \</div>
 <div class="line">  void NS##_Set##CAPINAME(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> index, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> channel, TYPE) {}</div>
 </div><!-- fragment -->
 <p>Define a stub standard C API for simulation data (channel variant). </p>
@@ -603,7 +613,9 @@ Macros</h2></td></tr>
 <div class="line">                                                                          \</div>
 <div class="line">  void NS##_Cancel##CAPINAME##Callback(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> uid) {}                    \</div>
 <div class="line">                                                                          \</div>
-<div class="line">  TYPE NS##_Get##CAPINAME(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> RETURN; }                        \</div>
+<div class="line">  TYPE NS##_Get##CAPINAME(<span class="keywordtype">void</span>) {                                         \</div>
+<div class="line">    return RETURN;                                                        \</div>
+<div class="line">  }                                                                       \</div>
 <div class="line">                                                                          \</div>
 <div class="line">  void NS##_Set##CAPINAME(TYPE) {}</div>
 </div><!-- fragment -->
@@ -632,7 +644,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_03b7d37b9dc08ca478f4c25141f731ae.html">simulation</a></li><li class="navelem"><a class="el" href="_sim_data_value_8h.html">SimDataValue.h</a></li>
-    <li class="footer">Generated on Mon Aug 15 2022 13:29:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 22:38:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

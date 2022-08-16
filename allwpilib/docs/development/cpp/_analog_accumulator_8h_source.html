@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-52-gd45bcdd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
    </div>
   </td>
  </tr>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('_analog_accumulator_8h_source.html',''
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * @param[out] status Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="group__hal__analogaccumulator.html#ga49942774a1f141aa4d723156b8cc9111">   65</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__analogaccumulator.html#ga49942774a1f141aa4d723156b8cc9111">HAL_SetAccumulatorCenter</a>(<a class="code hl_typedef" href="group__hal__types.html#gaef9a45193fbe58ef73f065431c7836de">HAL_AnalogInputHandle</a> analogPortHandle,</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                              <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> <a class="code hl_enumvalue" href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4">center</a>, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                              <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> center, <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * Set the accumulator&#39;s deadband.</span></div>
@@ -215,8 +215,8 @@ $(document).ready(function(){initNavTree('_analog_accumulator_8h_source.html',''
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#endif</span><span class="comment"></span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">/** @} */</span></div>
 <div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1208</div></div>
-<div class="ttc" id="acore_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> core.h:1117</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1221</div></div>
+<div class="ttc" id="acore_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> core.h:1185</div></div>
 <div class="ttc" id="agroup__hal__analogaccumulator_html_ga49942774a1f141aa4d723156b8cc9111"><div class="ttname"><a href="group__hal__analogaccumulator.html#ga49942774a1f141aa4d723156b8cc9111">HAL_SetAccumulatorCenter</a></div><div class="ttdeci">void HAL_SetAccumulatorCenter(HAL_AnalogInputHandle analogPortHandle, int32_t center, int32_t *status)</div><div class="ttdoc">Set the center value of the accumulator.</div></div>
 <div class="ttc" id="agroup__hal__analogaccumulator_html_ga8c5a1fd3000f7f27d343919db5ddc507"><div class="ttname"><a href="group__hal__analogaccumulator.html#ga8c5a1fd3000f7f27d343919db5ddc507">HAL_GetAccumulatorOutput</a></div><div class="ttdeci">void HAL_GetAccumulatorOutput(HAL_AnalogInputHandle analogPortHandle, int64_t *value, int64_t *count, int32_t *status)</div><div class="ttdoc">Read the accumulated value and the number of accumulated values atomically.</div></div>
 <div class="ttc" id="agroup__hal__analogaccumulator_html_ga9a058b98f3c06ea3bc2a828d1ea74967"><div class="ttname"><a href="group__hal__analogaccumulator.html#ga9a058b98f3c06ea3bc2a828d1ea74967">HAL_GetAccumulatorValue</a></div><div class="ttdeci">int64_t HAL_GetAccumulatorValue(HAL_AnalogInputHandle analogPortHandle, int32_t *status)</div><div class="ttdoc">Read the accumulated value.</div></div>
@@ -229,7 +229,6 @@ $(document).ready(function(){initNavTree('_analog_accumulator_8h_source.html',''
 <div class="ttc" id="agroup__hal__types_html_gaef9a45193fbe58ef73f065431c7836de"><div class="ttname"><a href="group__hal__types.html#gaef9a45193fbe58ef73f065431c7836de">HAL_AnalogInputHandle</a></div><div class="ttdeci">HAL_Handle HAL_AnalogInputHandle</div><div class="ttdef"><b>Definition:</b> Types.h:21</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a26035668345422b5f30be2124b0b6f6e"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a26035668345422b5f30be2124b0b6f6e">Eigen::numext::int64_t</a></div><div class="ttdeci">typedef::int64_t int64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:59</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_ae4642fe9b8f3d42e634712b1d5e2fffe"><div class="ttname"><a href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">Eigen::numext::int32_t</a></div><div class="ttdeci">typedef::int32_t int32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:57</div></div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4"><div class="ttname"><a href="namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a522cfe706bd4170b4fded79ff55e4bc4">align::center</a></div><div class="ttdeci">@ center</div><div class="ttdef"><b>Definition:</b> core.h:2021</div></div>
 <div class="ttc" id="anamespaceghc_1_1filesystem_html_a00bcaee548f274868a8b45b7c8547bae"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">ghc::filesystem::status</a></div><div class="ttdeci">GHC_FS_API file_status status(const path &amp;p, std::error_code &amp;ec) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:4892</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -237,7 +236,7 @@ $(document).ready(function(){initNavTree('_analog_accumulator_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="_analog_accumulator_8h.html">AnalogAccumulator.h</a></li>
-    <li class="footer">Generated on Mon Aug 15 2022 13:28:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 22:38:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

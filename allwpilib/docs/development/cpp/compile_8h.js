@@ -1,7 +1,5 @@
 var compile_8h =
 [
-    [ "detail::counting_iterator", "classdetail_1_1counting__iterator.html", "classdetail_1_1counting__iterator" ],
-    [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", "structdetail_1_1counting__iterator_1_1value__type" ],
     [ "detail::truncating_iterator_base< OutputIt >", "classdetail_1_1truncating__iterator__base.html", "classdetail_1_1truncating__iterator__base" ],
     [ "detail::truncating_iterator< OutputIt, std::false_type >", "classdetail_1_1truncating__iterator_3_01_output_it_00_01std_1_1false__type_01_4.html", "classdetail_1_1truncating__iterator_3_01_output_it_00_01std_1_1false__type_01_4" ],
     [ "detail::truncating_iterator< OutputIt, std::true_type >", "classdetail_1_1truncating__iterator_3_01_output_it_00_01std_1_1true__type_01_4.html", "classdetail_1_1truncating__iterator_3_01_output_it_00_01std_1_1true__type_01_4" ],

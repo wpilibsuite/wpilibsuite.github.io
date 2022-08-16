@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-52-gd45bcdd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
    </div>
   </td>
  </tr>
@@ -147,8 +147,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a74dfff9e39ca0520c9a05ac604ef4d40"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a74dfff9e39ca0520c9a05ac604ef4d40"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; <a class="el" href="xchar_8h.html#afaf716eff630583a20315ab7e4f0f8d0">wformat_context</a>, Args... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#a74dfff9e39ca0520c9a05ac604ef4d40">make_wformat_args</a> (const Args &amp;... args)</td></tr>
 <tr class="separator:a74dfff9e39ca0520c9a05ac604ef4d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ee095016dc885b66f19ad3e80f4fc2"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceliterals.html#ad7ee095016dc885b66f19ad3e80f4fc2">literals::operator&quot;&quot;_format</a> (const wchar_t *s, size_t n) -&gt; detail::udl_formatter&lt; wchar_t &gt;</td></tr>
-<tr class="separator:ad7ee095016dc885b66f19ad3e80f4fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a29bcda6ac18660c9ccacd9716e92a"><td class="memTemplParams" colspan="2">template&lt;typename It , typename Sentinel &gt; </td></tr>
 <tr class="memitem:ac1a29bcda6ac18660c9ccacd9716e92a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#ac1a29bcda6ac18660c9ccacd9716e92a">join</a> (It begin, Sentinel end, <a class="el" href="xchar_8h.html#a5164ea4aed26e7700ce4a006d1d32475">wstring_view</a> sep) -&gt; <a class="el" href="structjoin__view.html">join_view</a>&lt; It, Sentinel, wchar_t &gt;</td></tr>
 <tr class="separator:ac1a29bcda6ac18660c9ccacd9716e92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3751e89ff91d5a87a08f5347ee3d86e0"><td class="memTemplParams" colspan="2">template&lt;typename Char , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; Char, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:a3751e89ff91d5a87a08f5347ee3d86e0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#a3751e89ff91d5a87a08f5347ee3d86e0">vformat</a> (<a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt; format_str, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt; &gt; &gt; args) -&gt; std::basic_string&lt; Char &gt;</td></tr>
 <tr class="separator:a3751e89ff91d5a87a08f5347ee3d86e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082005429bfc92924f174a8e1b8619cf"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a082005429bfc92924f174a8e1b8619cf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#a082005429bfc92924f174a8e1b8619cf">format</a> (<a class="el" href="xchar_8h.html#a69c1b057042c87184f2220c79696ef73">wformat_string</a>&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::wstring</td></tr>
+<tr class="separator:a082005429bfc92924f174a8e1b8619cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c91f73305f75572aa73b2386063aeb"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args, typename Char  = char_t&lt;S&gt;, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_same&lt; Char, char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:aa0c91f73305f75572aa73b2386063aeb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#aa0c91f73305f75572aa73b2386063aeb">format</a> (const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;format_str, Args &amp;&amp;... args) -&gt; std::basic_string&lt; Char &gt;</td></tr>
 <tr class="separator:aa0c91f73305f75572aa73b2386063aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +177,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a4ba756b447388cbd97a3f5b4954d7db6"><td class="memTemplParams" colspan="2">template&lt;typename OutputIt , typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args, typename Char  = char_t&lt;S&gt;, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_output_iterator&lt; OutputIt, Char &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; <a class="el" href="namespacedetail.html#a3b3b86611e0c88278feb2098fce10b23">detail::is_exotic_char</a>&lt; Char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:a4ba756b447388cbd97a3f5b4954d7db6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a> (OutputIt out, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;fmt, Args &amp;&amp;... args) -&gt; OutputIt</td></tr>
 <tr class="separator:a4ba756b447388cbd97a3f5b4954d7db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1623c8829582784b239fb528bce4baf"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args, typename Char , size_t SIZE, typename Allocator , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_string&lt; <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:aa1623c8829582784b239fb528bce4baf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#aa1623c8829582784b239fb528bce4baf">format_to</a> (<a class="el" href="classbasic__memory__buffer.html">basic_memory_buffer</a>&lt; Char, SIZE, Allocator &gt; &amp;buf, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;format_str, Args &amp;&amp;... args) -&gt; typename <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; Char &gt;::iterator</td></tr>
-<tr class="separator:aa1623c8829582784b239fb528bce4baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a53a17dd7100353ee30cac0d963cea6"><td class="memTemplParams" colspan="2">template&lt;typename Locale , typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename OutputIt , typename... Args, typename Char  = char_t&lt;S&gt;, <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_output_iterator&lt; OutputIt, Char &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; detail::is_locale&lt; Locale &gt;::<a class="el" href="classvalue.html">value</a> &amp;&amp; <a class="el" href="namespacedetail.html#a3b3b86611e0c88278feb2098fce10b23">detail::is_exotic_char</a>&lt; Char &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
 <tr class="memitem:a2a53a17dd7100353ee30cac0d963cea6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="xchar_8h.html#a2a53a17dd7100353ee30cac0d963cea6">vformat_to</a> (OutputIt out, const Locale &amp;loc, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;format_str, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt; &gt; &gt; args) -&gt; OutputIt</td></tr>
 <tr class="separator:a2a53a17dd7100353ee30cac0d963cea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,7 +296,7 @@ template&lt;typename... Args&gt; </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="adbec664fb40387a823078cb103b965f9" name="adbec664fb40387a823078cb103b965f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbec664fb40387a823078cb103b965f9">&#9670;&nbsp;</a></span>format() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adbec664fb40387a823078cb103b965f9">&#9670;&nbsp;</a></span>format() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +340,7 @@ template&lt;typename Locale , typename <a class="el" href="wpilibc_2src_2main_2n
 </div>
 </div>
 <a id="aa0c91f73305f75572aa73b2386063aeb" name="aa0c91f73305f75572aa73b2386063aeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0c91f73305f75572aa73b2386063aeb">&#9670;&nbsp;</a></span>format() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c91f73305f75572aa73b2386063aeb">&#9670;&nbsp;</a></span>format() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,36 +369,30 @@ template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2fr
 
 </div>
 </div>
-<a id="aa1623c8829582784b239fb528bce4baf" name="aa1623c8829582784b239fb528bce4baf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1623c8829582784b239fb528bce4baf">&#9670;&nbsp;</a></span>format_to() <span class="overload">[1/3]</span></h2>
+<a id="a082005429bfc92924f174a8e1b8619cf" name="a082005429bfc92924f174a8e1b8619cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082005429bfc92924f174a8e1b8619cf">&#9670;&nbsp;</a></span>format() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args, typename Char , size_t SIZE, typename Allocator , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(detail::is_string&lt; <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+template&lt;typename... T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="core_8h.html#a8aba8a78c514e176e0dd0a159de7a369">FMT_DEPRECATED</a> auto format_to </td>
+          <td class="memname">auto format </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classbasic__memory__buffer.html">basic_memory_buffer</a>&lt; Char, SIZE, Allocator &gt; &amp;&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
+          <td class="paramtype"><a class="el" href="xchar_8h.html#a69c1b057042c87184f2220c79696ef73">wformat_string</a>&lt; T... &gt;&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;&#160;</td>
-          <td class="paramname"><em>format_str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramtype">T &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; typename <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt;Char&gt;::iterator </td>
+          <td></td><td> -&gt; std::wstring </td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -408,7 +400,7 @@ template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2fr
 </div>
 </div>
 <a id="aa9e365a3e5b162f895f237d4c192efbb" name="aa9e365a3e5b162f895f237d4c192efbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9e365a3e5b162f895f237d4c192efbb">&#9670;&nbsp;</a></span>format_to() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9e365a3e5b162f895f237d4c192efbb">&#9670;&nbsp;</a></span>format_to() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -458,7 +450,7 @@ template&lt;typename OutputIt , typename Locale , typename <a class="el" href="w
 </div>
 </div>
 <a id="a4ba756b447388cbd97a3f5b4954d7db6" name="a4ba756b447388cbd97a3f5b4954d7db6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ba756b447388cbd97a3f5b4954d7db6">&#9670;&nbsp;</a></span>format_to() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba756b447388cbd97a3f5b4954d7db6">&#9670;&nbsp;</a></span>format_to() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1104,7 +1096,7 @@ template&lt;typename OutputIt , typename Char , typename... Args, <a class="el" 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="xchar_8h.html">xchar.h</a></li>
-    <li class="footer">Generated on Mon Aug 15 2022 13:29:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 16 2022 22:38:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

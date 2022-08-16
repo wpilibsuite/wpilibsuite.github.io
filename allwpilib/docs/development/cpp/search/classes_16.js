@@ -4,7 +4,7 @@ var searchData=
   ['value_1',['value',['../unionarg__ref_1_1value.html',1,'arg_ref']]],
   ['value_2',['Value',['../classnt_1_1_value.html',1,'nt']]],
   ['value_3',['value',['../classvalue.html',1,'']]],
-  ['value_5ftype_4',['value_type',['../structdetail_1_1counting__iterator_1_1value__type.html',1,'detail::counting_iterator']]],
+  ['value_5ftype_4',['value_type',['../structcounting__iterator_1_1value__type.html',1,'counting_iterator']]],
   ['valueexpr_5',['ValueExpr',['../class_eigen_1_1symbolic_1_1_value_expr.html',1,'Eigen::symbolic']]],
   ['valueexpr_3c_20internal_3a_3afixedint_3c_20n_20_3e_20_3e_6',['ValueExpr&lt; internal::FixedInt&lt; N &gt; &gt;',['../class_eigen_1_1symbolic_1_1_value_expr_3_01internal_1_1_fixed_int_3_01_n_01_4_01_4.html',1,'Eigen::symbolic']]],
   ['variable_5fif_5fdynamic_7',['variable_if_dynamic',['../class_eigen_1_1internal_1_1variable__if__dynamic.html',1,'Eigen::internal']]],

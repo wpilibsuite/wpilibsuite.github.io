@@ -11,5 +11,5 @@ var os_8h =
     [ "FMT_USE_FCNTL", "os_8h.html#a4107274242b7f99d9559aabd297f7534", null ],
     [ "cstring_view", "os_8h.html#ab5093e382f19cf769bbb8fed27dd7b1f", null ],
     [ "wcstring_view", "os_8h.html#a98fc52506266131c4391a72514b66272", null ],
-    [ "system_category", "os_8h.html#a7795db0411b810b2dec7d9f72dca9aad", null ]
+    [ "system_category", "os_8h.html#a87236dd191642a2241220abeaf4cf619", null ]
 ];

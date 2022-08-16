@@ -5,5 +5,6 @@ var searchData=
   ['_5fdir_5fentry_2',['_dir_entry',['../classghc_1_1filesystem_1_1directory__iterator_1_1impl.html#ad004cb13e4482af3468694f1f49c4897',1,'ghc::filesystem::directory_iterator::impl']]],
   ['_5fec_3',['_ec',['../classghc_1_1filesystem_1_1directory__iterator_1_1impl.html#a21a5f20fb7964dc64ffcc3ce304c072e',1,'ghc::filesystem::directory_iterator::impl']]],
   ['_5fentry_4',['_entry',['../classghc_1_1filesystem_1_1directory__iterator_1_1impl.html#a90840aae6d236f84578a3808bc1fa427',1,'ghc::filesystem::directory_iterator::impl']]],
-  ['_5foptions_5',['_options',['../classghc_1_1filesystem_1_1directory__iterator_1_1impl.html#ab4c31c5fcab99973f9a710e61e304863',1,'ghc::filesystem::directory_iterator::impl']]]
+  ['_5fmyfile_5',['_Myfile',['../structdetail_1_1dummy__filebuf.html#a7b30085af9dd4d8db9fde187bfcdf9d1',1,'detail::dummy_filebuf']]],
+  ['_5foptions_6',['_options',['../classghc_1_1filesystem_1_1directory__iterator_1_1impl.html#ab4c31c5fcab99973f9a710e61e304863',1,'ghc::filesystem::directory_iterator::impl']]]
 ];
