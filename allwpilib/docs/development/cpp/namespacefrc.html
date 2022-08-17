@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-55-gac9be78</span>
    </div>
   </td>
  </tr>
@@ -2641,7 +2641,7 @@ template&lt;int Outputs&gt; </div>
   <table class="params">
     <tr><td class="paramname">cameraToTarget</td><td>The position of the target relative to the camera. </td></tr>
     <tr><td class="paramname">fieldToTarget</td><td>The position of the target in the field. </td></tr>
-    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">frc::Transform2d(3_in, 0_in, 0_deg)</a>. </td></tr>
+    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">frc::Transform2d</a>{3_in, 0_in, 0_deg}. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2721,7 +2721,7 @@ template&lt;int Outputs&gt; </div>
     <tr><td class="paramname">targetYaw</td><td>The observed yaw of the target. Note that this <em>must</em> be CCW-positive, and Photon returns CW-positive. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The current robot gyro angle, likely from odometry. </td></tr>
     <tr><td class="paramname">fieldToTarget</td><td>A <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a> representing the target position in the field coordinate system. </td></tr>
-    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">frc::Transform2d(3_in, 0_in, 0_deg)</a>. </td></tr>
+    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">frc::Transform2d</a>{3_in, 0_in, 0_deg}. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4635,7 +4635,7 @@ template&lt;class... Wheels&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Tue Aug 16 2022 22:38:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Aug 17 2022 20:45:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

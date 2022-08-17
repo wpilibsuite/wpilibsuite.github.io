@@ -41,5 +41,5 @@ var classfrc_1_1_profiled_p_i_d_controller =
     [ "SetIntegratorRange", "classfrc_1_1_profiled_p_i_d_controller.html#a6e0fa1a31690a67b6e4bc9dece27a68e", null ],
     [ "SetP", "classfrc_1_1_profiled_p_i_d_controller.html#a92e24759072c279ac8c88ef8b37470fd", null ],
     [ "SetPID", "classfrc_1_1_profiled_p_i_d_controller.html#acf426762ec523c28598b203c5c641fb8", null ],
-    [ "SetTolerance", "classfrc_1_1_profiled_p_i_d_controller.html#abd38c5708c1ec8912e25cc631cffbbd1", null ]
+    [ "SetTolerance", "classfrc_1_1_profiled_p_i_d_controller.html#a68384e813c5f0270615fcc6d8f31512e", null ]
 ];

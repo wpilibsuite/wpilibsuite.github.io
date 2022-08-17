@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-54-g151dabb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-55-gac9be78</span>
    </div>
   </td>
  </tr>
@@ -236,8 +236,8 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">   * @return The estimated robot pose in meters.</span></div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classfrc_1_1_swerve_drive_pose_estimator.html#afa43500d257dd6e01c810ffd6992e2a9">  142</a></span>  <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a> <a class="code hl_function" href="classfrc_1_1_swerve_drive_pose_estimator.html#afa43500d257dd6e01c810ffd6992e2a9">GetEstimatedPosition</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacefrc.html#a6bd6f612dd62c1c703e83570f282ce38">Pose2d</a>(m_observer.Xhat(0) * 1_m, m_observer.Xhat(1) * 1_m,</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>(units::radian_t{m_observer.Xhat(2)}));</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>{m_observer.Xhat(0) * 1_m, m_observer.Xhat(1) * 1_m,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>{units::radian_t{m_observer.Xhat(2)}}};</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  }</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment"></span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">  /**</span></div>
@@ -370,8 +370,8 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keyword">auto</span> chassisSpeeds = m_kinematics.ToChassisSpeeds(moduleStates...);</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keyword">auto</span> fieldRelativeSpeeds =</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <a class="code hl_class" href="classfrc_1_1_translation2d.html">Translation2d</a>(chassisSpeeds.vx * 1_s, chassisSpeeds.vy * 1_s)</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            .<a class="code hl_function" href="classfrc_1_1_translation2d.html#af305f18995bea59715535b0636a89abe">RotateBy</a>(angle);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <a class="code hl_class" href="classfrc_1_1_translation2d.html">Translation2d</a>{chassisSpeeds.vx * 1_s, chassisSpeeds.vy * 1_s}.<a class="code hl_function" href="classfrc_1_1_translation2d.html#af305f18995bea59715535b0636a89abe">RotateBy</a>(</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            angle);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a> u{fieldRelativeSpeeds.<a class="code hl_function" href="classfrc_1_1_translation2d.html#aa656d3bc0edaef7499db07c53840e028">X</a>().value(),</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                 fieldRelativeSpeeds.Y().value(), omega.value()};</div>
@@ -450,7 +450,6 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:17</div></div>
 <div class="ttc" id="anamespacefrc_html_a2b2fe197c41c45cb9ee6084cf586b221"><div class="ttname"><a href="namespacefrc.html#a2b2fe197c41c45cb9ee6084cf586b221">frc::MakeCovMatrix</a></div><div class="ttdeci">Matrixd&lt; sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:131</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
-<div class="ttc" id="anamespacefrc_html_a6bd6f612dd62c1c703e83570f282ce38"><div class="ttname"><a href="namespacefrc.html#a6bd6f612dd62c1c703e83570f282ce38">frc::Pose2d</a></div><div class="ttdeci">class WPILIB_DLLEXPORT Pose2d</div><div class="ttdef"><b>Definition:</b> Transform2d.h:13</div></div>
 <div class="ttc" id="anamespacefrc_html_a6d659f789b1e23bd6d29ee6b8880d258"><div class="ttname"><a href="namespacefrc.html#a6d659f789b1e23bd6d29ee6b8880d258">frc::EXPORT_TEMPLATE_DECLARE</a></div><div class="ttdeci">template class EXPORT_TEMPLATE_DECLARE(WPILIB_DLLEXPORT) SwerveDriveKinematics&lt; 4 &gt;</div></div>
 <div class="ttc" id="anamespacefrc_html_ac339c0933066b20131a6e2f13ec1118c"><div class="ttname"><a href="namespacefrc.html#ac339c0933066b20131a6e2f13ec1118c">frc::PoseTo3dVector</a></div><div class="ttdeci">WPILIB_DLLEXPORT Vectord&lt; 3 &gt; PoseTo3dVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, theta].</div></div>
 <div class="ttc" id="anamespacewpi_html_ad487e5ec5a2101d1f02907c77dd50558"><div class="ttname"><a href="namespacewpi.html#ad487e5ec5a2101d1f02907c77dd50558">wpi::array</a></div><div class="ttdeci">array(T, Ts...) -&gt; array&lt; std::enable_if_t&lt;(std::is_same_v&lt; T, Ts &gt; &amp;&amp;...), T &gt;, 1+sizeof...(Ts)&gt;</div></div>
@@ -463,7 +462,7 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_swerve_drive_pose_estimator_8h.html">SwerveDrivePoseEstimator.h</a></li>
-    <li class="footer">Generated on Tue Aug 16 2022 22:38:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Aug 17 2022 20:45:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
