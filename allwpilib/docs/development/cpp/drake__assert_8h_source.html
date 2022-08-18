@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-57-ga2a5c92</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-60-g3d2115c</span>
    </div>
   </td>
  </tr>
@@ -188,9 +188,9 @@ $(document).ready(function(){initNavTree('drake__assert_8h_source.html',''); ini
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespacedrake_1_1assert.html">   92</a></span><span class="keyword">namespace </span>assert {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// Allows for specialization of how to bool-convert Conditions used in</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// assertions, in case they are not intrinsically convertible.  See</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// symbolic_formula.h for an example use.  This is a public interface to</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// extend; it is intended to be specialized by unusual Scalar types that</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// require special handling.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// common/symbolic/expression/formula.h for an example use.  This is a public</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// interface to extend; it is intended to be specialized by unusual Scalar</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// types that require special handling.</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Condition&gt;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structdrake_1_1assert_1_1_condition_traits.html">   99</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdrake_1_1assert_1_1_condition_traits.html">ConditionTraits</a> {</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structdrake_1_1assert_1_1_condition_traits.html#a5e6e691ab6c4b914b0c7f35a9ac4d5ec">  100</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="structdrake_1_1assert_1_1_condition_traits.html#a5e6e691ab6c4b914b0c7f35a9ac4d5ec">is_valid</a> = std::is_convertible_v&lt;Condition, bool&gt;;</div>
@@ -273,7 +273,7 @@ $(document).ready(function(){initNavTree('drake__assert_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_bd588e0e470236005cb3ccf9ff680633.html">drake</a></li><li class="navelem"><a class="el" href="dir_18fe94e2734a5d654fd45d2ab4d2b717.html">include</a></li><li class="navelem"><a class="el" href="dir_93f7bd294303fe2e38bdd415f3cc974e.html">drake</a></li><li class="navelem"><a class="el" href="dir_afb9154d9093cc3740e93bf32742a432.html">common</a></li><li class="navelem"><a class="el" href="drake__assert_8h.html">drake_assert.h</a></li>
-    <li class="footer">Generated on Thu Aug 18 2022 02:57:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Aug 18 2022 21:07:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
