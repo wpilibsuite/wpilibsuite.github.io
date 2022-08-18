@@ -190,6 +190,5 @@ var searchData=
   ['_7evisionrunnerbase_187',['~VisionRunnerBase',['../classfrc_1_1_vision_runner_base.html#af6d096ffa9763977be6d0db5e62005b6',1,'frc::VisionRunnerBase']]],
   ['_7ewatchdog_188',['~Watchdog',['../classfrc_1_1_watchdog.html#aa5748acc01dfa554babf7f98560dae90',1,'frc::Watchdog']]],
   ['_7ewidgettype_189',['~WidgetType',['../classfrc_1_1_widget_type.html#acbc8e56dfc9792190e2f880d1a239582',1,'frc::WidgetType']]],
-  ['_7ewpi_5fshutdown_5fobj_190',['~wpi_shutdown_obj',['../structwpi_1_1wpi__shutdown__obj.html#a8d6b4ce8f860f3ef00a90b9686362f86',1,'wpi::wpi_shutdown_obj']]],
-  ['_7exboxcontroller_191',['~XboxController',['../classfrc_1_1_xbox_controller.html#a9478d06e07e01e7b6bf7301b73d8c3e4',1,'frc::XboxController']]]
+  ['_7exboxcontroller_190',['~XboxController',['../classfrc_1_1_xbox_controller.html#a9478d06e07e01e7b6bf7301b73d8c3e4',1,'frc::XboxController']]]
 ];

@@ -8,10 +8,9 @@ var searchData=
   ['widgettype_5',['WidgetType',['../classfrc_1_1_widget_type.html',1,'frc']]],
   ['width_5fchecker_6',['width_checker',['../classwidth__checker.html',1,'']]],
   ['withformat_7',['WithFormat',['../class_eigen_1_1_with_format.html',1,'Eigen']]],
-  ['wpi_5fshutdown_5fobj_8',['wpi_shutdown_obj',['../structwpi_1_1wpi__shutdown__obj.html',1,'wpi']]],
-  ['wrappercommand_9',['WrapperCommand',['../classfrc2_1_1_wrapper_command.html',1,'frc2']]],
-  ['writablememorybuffer_10',['WritableMemoryBuffer',['../classwpi_1_1_writable_memory_buffer.html',1,'wpi']]],
-  ['write_5fint_5farg_11',['write_int_arg',['../structwrite__int__arg.html',1,'']]],
-  ['write_5fint_5fdata_12',['write_int_data',['../structwrite__int__data.html',1,'']]],
-  ['writethroughmemorybuffer_13',['WriteThroughMemoryBuffer',['../classwpi_1_1_write_through_memory_buffer.html',1,'wpi']]]
+  ['wrappercommand_8',['WrapperCommand',['../classfrc2_1_1_wrapper_command.html',1,'frc2']]],
+  ['writablememorybuffer_9',['WritableMemoryBuffer',['../classwpi_1_1_writable_memory_buffer.html',1,'wpi']]],
+  ['write_5fint_5farg_10',['write_int_arg',['../structwrite__int__arg.html',1,'']]],
+  ['write_5fint_5fdata_11',['write_int_data',['../structwrite__int__data.html',1,'']]],
+  ['writethroughmemorybuffer_12',['WriteThroughMemoryBuffer',['../classwpi_1_1_write_through_memory_buffer.html',1,'wpi']]]
 ];

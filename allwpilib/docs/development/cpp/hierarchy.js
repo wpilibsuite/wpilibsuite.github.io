@@ -2168,9 +2168,6 @@ var hierarchy =
     [ "make_unsigned_or_bool< bool >", "structmake__unsigned__or__bool_3_01bool_01_4.html", null ],
     [ "make_unsigned_or_unchanged< T, INTEGRAL >", "structmake__unsigned__or__unchanged.html", null ],
     [ "make_unsigned_or_unchanged< T, true >", "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
-    [ "wpi::ManagedStaticBase", "classwpi_1_1_managed_static_base.html", [
-      [ "wpi::ManagedStatic< C, Creator, Deleter >", "classwpi_1_1_managed_static.html", null ]
-    ] ],
     [ "Eigen::MapBase< Derived, Level >", "class_eigen_1_1_map_base.html", [
       [ "Eigen::Map< SparseMatrix< _Scalar, _Flags, _StorageIndex > >", "class_eigen_1_1_map.html", [
         [ "Eigen::MappedSparseMatrix< _Scalar, _Flags, _StorageIndex >", "class_eigen_1_1_mapped_sparse_matrix.html", null ]
@@ -2466,9 +2463,6 @@ var hierarchy =
     ] ],
     [ "Eigen::NumTraits< Array< Scalar, Rows, Cols, Options, MaxRows, MaxCols > >", "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html", null ],
     [ "Eigen::NumTraits< void >", "struct_eigen_1_1_num_traits_3_01void_01_4.html", null ],
-    [ "wpi::object_creator< C >", "structwpi_1_1object__creator.html", null ],
-    [ "wpi::object_deleter< T >", "structwpi_1_1object__deleter.html", null ],
-    [ "wpi::object_deleter< T[N]>", "structwpi_1_1object__deleter_3_01_t_0f_n_0e_4.html", null ],
     [ "frc::KalmanFilterLatencyCompensator< States, Inputs, Outputs, KalmanFilterType >::ObserverSnapshot", "structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html", null ],
     [ "Eigen::internal::operator_bitwise_helper< T >", "struct_eigen_1_1internal_1_1operator__bitwise__helper.html", [
       [ "Eigen::internal::bitwise_helper< T, typename internal::enable_if< is_scalar< T >::value &&(NumTraits< T >::IsInteger||NumTraits< T >::RequireInitialization)>::type >", "struct_eigen_1_1internal_1_1bitwise__helper_3_01_t_00_01typename_01internal_1_1enable__if_3_01is511f9b17390a86cf8902d79021239f89.html", null ]
@@ -4428,7 +4422,6 @@ var hierarchy =
     [ "frc::WidgetType", "classfrc_1_1_widget_type.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "Eigen::WithFormat< ExpressionType >", "class_eigen_1_1_with_format.html", null ],
-    [ "wpi::wpi_shutdown_obj", "structwpi_1_1wpi__shutdown__obj.html", null ],
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
     [ "write_int_data< Char >", "structwrite__int__data.html", null ],
     [ "year_month_day", "classyear__month__day.html", null ]

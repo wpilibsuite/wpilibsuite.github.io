@@ -28,7 +28,6 @@ var dir_a809135da9c9e78db898aa42d248563a =
     [ "Hashing.h", "_hashing_8h.html", "_hashing_8h" ],
     [ "iterator.h", "iterator_8h.html", "iterator_8h" ],
     [ "iterator_range.h", "iterator__range_8h.html", "iterator__range_8h" ],
-    [ "ManagedStatic.h", "_managed_static_8h.html", "_managed_static_8h" ],
     [ "MapVector.h", "_map_vector_8h.html", [
       [ "wpi::MapVector< KeyT, ValueT, MapType, VectorType >", "classwpi_1_1_map_vector.html", "classwpi_1_1_map_vector" ],
       [ "wpi::SmallMapVector< KeyT, ValueT, N >", "structwpi_1_1_small_map_vector.html", null ]
