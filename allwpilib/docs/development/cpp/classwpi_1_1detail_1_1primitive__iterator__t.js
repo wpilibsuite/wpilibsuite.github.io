@@ -12,7 +12,7 @@ var classwpi_1_1detail_1_1primitive__iterator__t =
     [ "operator-=", "classwpi_1_1detail_1_1primitive__iterator__t.html#a9a5688b7f8ab5ea9d1faf11992841f71", null ],
     [ "set_begin", "classwpi_1_1detail_1_1primitive__iterator__t.html#a295528d883b79f34ef1f25999e89aa1d", null ],
     [ "set_end", "classwpi_1_1detail_1_1primitive__iterator__t.html#afd6ed0a5ddc9d0098fea4763e29a59c9", null ],
-    [ "operator-", "classwpi_1_1detail_1_1primitive__iterator__t.html#a86a249e92a5274dec7ea20e52b0cc878", null ],
-    [ "operator<", "classwpi_1_1detail_1_1primitive__iterator__t.html#a6b032074795534fe7144a4f1c86ead2f", null ],
-    [ "operator==", "classwpi_1_1detail_1_1primitive__iterator__t.html#af58da4713ea9010912f3da6b22aeee51", null ]
+    [ "operator-", "classwpi_1_1detail_1_1primitive__iterator__t.html#ac6d902d6ec9a02dabed5452d3ae78f7e", null ],
+    [ "operator<", "classwpi_1_1detail_1_1primitive__iterator__t.html#a901a95e6d73c9509d3dcde914f6c8a9d", null ],
+    [ "operator==", "classwpi_1_1detail_1_1primitive__iterator__t.html#aae1e1e2ec0e229d1291d69de57d76bbe", null ]
 ];

@@ -11,8 +11,6 @@ var dir_881f541a32b77f97cfd2281ec4aaf81a =
     [ "ostream.h", "ostream_8h.html", "ostream_8h" ],
     [ "printf.h", "printf_8h.html", "printf_8h" ],
     [ "ranges.h", "ranges_8h.html", "ranges_8h" ],
-    [ "std.h", "std_8h.html", [
-      [ "formatter< std::thread::id, Char >", "structformatter_3_01std_1_1thread_1_1id_00_01_char_01_4.html", null ]
-    ] ],
+    [ "std.h", "std_8h.html", "std_8h" ],
     [ "xchar.h", "xchar_8h.html", "xchar_8h" ]
 ];

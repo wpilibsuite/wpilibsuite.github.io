@@ -289,7 +289,7 @@ var namespacefrc =
     [ "AngleAdd", "namespacefrc.html#a747d332e3a62b6b01b41561f0f1a3ff3", null ],
     [ "AngleMean", "namespacefrc.html#aa909dfc4ca242c2f2950d5b95d558e15", null ],
     [ "AngleMean", "namespacefrc.html#ae4ef754fe0bc4e3e1b49b575d4644b09", null ],
-    [ "AngleModulus", "namespacefrc.html#a7270bc5006a5a8b905ba4b8a9616c3c8", null ],
+    [ "AngleModulus", "namespacefrc.html#a543fea13d5a83401031f4bf9012f2f9e", null ],
     [ "AngleResidual", "namespacefrc.html#a7a51ea5d38bc408070e95e2b17796f3b", null ],
     [ "AngleResidual", "namespacefrc.html#a10f0857d64cbff0cee928c9a3902b2aa", null ],
     [ "ApplyDeadband", "namespacefrc.html#a9a55e5d7e329c0937444a309366aa386", null ],

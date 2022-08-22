@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"_jacobi_s_v_d_8h.html":[6,0,7,1,0,0,0,16,1],
+"_jacobi_s_v_d_8h_source.html":[6,0,7,1,0,0,0,16,1],
 "_jaguar_8h.html":[6,0,2,5,1],
 "_jaguar_8h_source.html":[6,0,2,5,1],
 "_joystick_8h.html":[6,0,2,52],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "_mapped_file_region_8h.html#a69bca4cd48a2ac719202f2f290a78bc9":[6,0,11,20,1],
 "_mapped_file_region_8h_source.html":[6,0,11,20],
 "_mapped_sparse_matrix_8h.html":[6,0,7,1,0,0,0,12,3],
-"_mapped_sparse_matrix_8h_source.html":[6,0,7,1,0,0,0,12,3],
-"_math_extras_8h.html":[6,0,8,3,0,0,19],
-"_math_extras_8h.html#a01982bb8b119d94de4200ed371ad5397":[6,0,8,3,0,0,19,61]
+"_mapped_sparse_matrix_8h_source.html":[6,0,7,1,0,0,0,12,3]
 };

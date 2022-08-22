@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"_d_i_o_data_8h.html#a9aaf99abc337858ee4de4d362e6f5095":[6,0,5,2,9,18],
+"_d_i_o_data_8h.html#a9ff98d022f9b5ee48d7b54c9989fbabe":[6,0,5,2,9,11],
 "_d_i_o_data_8h.html#aa55f447a16d407ae2381f3423210e8b5":[6,0,5,2,9,8],
 "_d_i_o_data_8h.html#aac92176769993bbc2ef9e815f0409489":[6,0,5,2,9,12],
 "_d_i_o_data_8h.html#ac25159eafcdeb63801be1cdef454cb11":[6,0,5,2,9,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "_duty_cycle_encoder_8h_source.html":[6,0,2,45],
 "_duty_cycle_encoder_sim_8h.html":[6,0,2,7,21],
 "_duty_cycle_encoder_sim_8h_source.html":[6,0,2,7,21],
-"_duty_cycle_sim_8h.html":[6,0,2,7,22],
-"_duty_cycle_sim_8h_source.html":[6,0,2,7,22],
-"_edge_configuration_8h.html":[6,0,2,0,0]
+"_duty_cycle_sim_8h.html":[6,0,2,7,22]
 };

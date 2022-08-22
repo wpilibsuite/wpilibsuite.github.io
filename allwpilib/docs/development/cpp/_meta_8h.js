@@ -113,14 +113,20 @@ var _meta_8h =
     [ "Eigen::internal::meta_least_common_multiple< A, B, K, Done, false >", "struct_eigen_1_1internal_1_1meta__least__common__multiple_3_01_a_00_01_b_00_01_k_00_01_done_00_01false_01_4.html", null ],
     [ "Eigen::internal::meta_least_common_multiple< A, B, K, true, true >", "struct_eigen_1_1internal_1_1meta__least__common__multiple_3_01_a_00_01_b_00_01_k_00_01true_00_01true_01_4.html", null ],
     [ "Eigen::internal::scalar_product_traits< T, U >", "struct_eigen_1_1internal_1_1scalar__product__traits.html", null ],
-    [ "Eigen::internal::aligned_storage< Len, Align >", "struct_eigen_1_1internal_1_1aligned__storage.html", [
-      [ "type", "struct_eigen_1_1internal_1_1aligned__storage_1_1type.html", "struct_eigen_1_1internal_1_1aligned__storage_1_1type" ]
-    ] ],
+    [ "Eigen::internal::aligned_storage< Len, Align >", "struct_eigen_1_1internal_1_1aligned__storage.html", "struct_eigen_1_1internal_1_1aligned__storage" ],
     [ "Eigen::internal::aligned_storage< Len, Align >::type", "struct_eigen_1_1internal_1_1aligned__storage_1_1type.html", "struct_eigen_1_1internal_1_1aligned__storage_1_1type" ],
     [ "EIGEN_ICC_NEEDS_CSTDINT", "_meta_8h.html#a4cf64c4070aaeb7d9affd2a1077069f1", null ],
     [ "DenseIndex", "_meta_8h.html#aa06499c94936a19673e53deb516a1b76", null ],
     [ "Index", "_meta_8h.html#a62e77e0933482dafde8fe197d9a2cfde", null ],
+    [ "int16_t", "_meta_8h.html#a05475d0d7f372e4a858d6344e63c148e", null ],
+    [ "int32_t", "_meta_8h.html#a475def88ce2111c2e4a4d3a3976b7c19", null ],
+    [ "int64_t", "_meta_8h.html#a518baced025fde474407c95f9a84d6e1", null ],
+    [ "int8_t", "_meta_8h.html#a4ee778e5a09bde3e01896411e6273058", null ],
     [ "IntPtr", "_meta_8h.html#aa163dba844d8d3fb778e6cc6b207d61e", null ],
+    [ "uint16_t", "_meta_8h.html#a0841ad317de8d5642ab65d9c7cebc42f", null ],
+    [ "uint32_t", "_meta_8h.html#a1fe47e4c63c51696c544a7f24f33b05c", null ],
+    [ "uint64_t", "_meta_8h.html#a0259c31cd34e096be5056e9d88ae0500", null ],
+    [ "uint8_t", "_meta_8h.html#a58c956967b2b3b326df2b220ae9b2274", null ],
     [ "UIntPtr", "_meta_8h.html#a017bb5f182d0e8afd1fed693649d2436", null ],
     [ "div_ceil", "_meta_8h.html#afa01b730028a76ca22b4ee8e62eeeeb7", null ],
     [ "equal_strict", "_meta_8h.html#a687ab3e2bf74e8371d40f729e2b0fb3b", null ],
@@ -132,13 +138,5 @@ var _meta_8h =
     [ "return_ptr", "_meta_8h.html#a1f6a1aca2368e0dc47d3a2b6b4c221e9", null ],
     [ "size", "_meta_8h.html#aa3c1588240009c3c17b3e477512b2ffd", null ],
     [ "size", "_meta_8h.html#ac2e0807305c226dcba7982c30972fab7", null ],
-    [ "swap", "_meta_8h.html#a3b617b6220683f86218071c40c41d381", null ],
-    [ "int16_t", "_meta_8h.html#af0dc7d2cc0233802a4135efe2aac55d3", null ],
-    [ "int32_t", "_meta_8h.html#ae4642fe9b8f3d42e634712b1d5e2fffe", null ],
-    [ "int64_t", "_meta_8h.html#a26035668345422b5f30be2124b0b6f6e", null ],
-    [ "int8_t", "_meta_8h.html#ad65e7154d719b649b9d6018be24e5265", null ],
-    [ "uint16_t", "_meta_8h.html#a8b2dc01f744a47c608f4eddb4ca41e5e", null ],
-    [ "uint32_t", "_meta_8h.html#af6a076c0f63ad22b8620d4de6fc6f632", null ],
-    [ "uint64_t", "_meta_8h.html#a637f20cd528b31ef3ce8d1ef803ebbde", null ],
-    [ "uint8_t", "_meta_8h.html#aadfb7303ce6c1a8f0bdf86cb2cbad6be", null ]
+    [ "swap", "_meta_8h.html#a3b617b6220683f86218071c40c41d381", null ]
 ];

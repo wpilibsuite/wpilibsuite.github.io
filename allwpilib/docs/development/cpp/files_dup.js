@@ -20,10 +20,7 @@ var files_dup =
     [ "cscore_oo.h", "cscore__oo_8h.html", null ],
     [ "cscore_oo.inc", "cscore__oo_8inc.html", "cscore__oo_8inc" ],
     [ "cscore_raw.h", "cscore__raw_8h.html", "cscore__raw_8h" ],
-    [ "cscore_raw_cv.h", "cscore__raw__cv_8h.html", [
-      [ "cs::RawCvSource", "classcs_1_1_raw_cv_source.html", "classcs_1_1_raw_cv_source" ],
-      [ "cs::RawCvSink", "classcs_1_1_raw_cv_sink.html", "classcs_1_1_raw_cv_sink" ]
-    ] ],
+    [ "cscore_raw_cv.h", "cscore__raw__cv_8h.html", "cscore__raw__cv_8h" ],
     [ "ntcore.h", "ntcore_8h.html", null ],
     [ "ntcore_c.h", "ntcore__c_8h.html", "ntcore__c_8h" ],
     [ "ntcore_cpp.h", "ntcore__cpp_8h.html", "ntcore__cpp_8h" ],

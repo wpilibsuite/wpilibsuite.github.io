@@ -25,6 +25,8 @@ var _b_float16_8h =
     [ "expm1", "_b_float16_8h.html#aaef14450e73b2f713cf9a30a15c163c6", null ],
     [ "float_to_bfloat16_rtne", "_b_float16_8h.html#a05d10f6e596c5bb7996999ee0ac9ce51", null ],
     [ "float_to_bfloat16_rtne< false >", "_b_float16_8h.html#ab8e3ba9e783185e66ce673ce348c21eb", null ],
+    [ "float_to_bfloat16_rtne< false >", "_b_float16_8h.html#ab8e3ba9e783185e66ce673ce348c21eb", null ],
+    [ "float_to_bfloat16_rtne< true >", "_b_float16_8h.html#ad564417257334c6bbf88e3c4ff7998d4", null ],
     [ "float_to_bfloat16_rtne< true >", "_b_float16_8h.html#ad564417257334c6bbf88e3c4ff7998d4", null ],
     [ "floor", "_b_float16_8h.html#a31640041d38523bf096fec26745e7d1d", null ],
     [ "fmax", "_b_float16_8h.html#a9c807b906c22d46c81209d69635b33c2", null ],

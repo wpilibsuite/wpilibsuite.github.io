@@ -23,11 +23,6 @@ var namespaces_dup =
     [ "enums", "namespaceenums.html", [
       [ "format_as", "namespaceenums.html#a8edb72b998b5c59c01243d908949ce87", null ]
     ] ],
-    [ "fmt", null, [
-      [ "formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4.html", "structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4" ],
-      [ "formatter< units::dimensionless::dB_t >", "structfmt_1_1formatter_3_01units_1_1dimensionless_1_1d_b__t_01_4.html", "structfmt_1_1formatter_3_01units_1_1dimensionless_1_1d_b__t_01_4" ],
-      [ "formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01_units_00_01_t_00_01_non_linear_scale_01_4_01_4.html", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01_units_00_01_t_00_01_non_linear_scale_01_4_01_4" ]
-    ] ],
     [ "frc", "namespacefrc.html", "namespacefrc" ],
     [ "frc2", "namespacefrc2.html", "namespacefrc2" ],
     [ "fs", "namespacefs.html", [

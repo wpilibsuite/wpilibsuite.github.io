@@ -116,9 +116,7 @@ var annotated_dup =
         [ "add_const_on_value_type< T const *const >", "struct_eigen_1_1internal_1_1add__const__on__value__type_3_01_t_01const_01_5const_01_4.html", "struct_eigen_1_1internal_1_1add__const__on__value__type_3_01_t_01const_01_5const_01_4" ],
         [ "add_const_on_value_type_if_arithmetic", "struct_eigen_1_1internal_1_1add__const__on__value__type__if__arithmetic.html", "struct_eigen_1_1internal_1_1add__const__on__value__type__if__arithmetic" ],
         [ "aligned_stack_memory_handler", "class_eigen_1_1internal_1_1aligned__stack__memory__handler.html", "class_eigen_1_1internal_1_1aligned__stack__memory__handler" ],
-        [ "aligned_storage", "struct_eigen_1_1internal_1_1aligned__storage.html", [
-          [ "type", "struct_eigen_1_1internal_1_1aligned__storage_1_1type.html", "struct_eigen_1_1internal_1_1aligned__storage_1_1type" ]
-        ] ],
+        [ "aligned_storage", "struct_eigen_1_1internal_1_1aligned__storage.html", "struct_eigen_1_1internal_1_1aligned__storage" ],
         [ "all_t", "struct_eigen_1_1internal_1_1all__t.html", "struct_eigen_1_1internal_1_1all__t" ],
         [ "all_unroller", "struct_eigen_1_1internal_1_1all__unroller.html", "struct_eigen_1_1internal_1_1all__unroller" ],
         [ "all_unroller< Derived, 0, Rows >", "struct_eigen_1_1internal_1_1all__unroller_3_01_derived_00_010_00_01_rows_01_4.html", "struct_eigen_1_1internal_1_1all__unroller_3_01_derived_00_010_00_01_rows_01_4" ],

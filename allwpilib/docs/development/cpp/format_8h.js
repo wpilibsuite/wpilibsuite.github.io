@@ -124,6 +124,7 @@ var format_8h =
     [ "decimal_point", "format_8h.html#a1a7fac5647c3de7ab898d6fc7137ec89", null ],
     [ "decimal_point", "format_8h.html#a049d63a32b7b16792f112f7ea908d885", null ],
     [ "decimal_point_impl", "format_8h.html#a1f0fc00c3ee2146524e2ecb3b9cdb4c4", null ],
+    [ "decimal_point_impl", "format_8h.html#a99196186ef24af1265a8eee16cbecabe", null ],
     [ "digits10", "format_8h.html#a0ff2a6d81d2949ea20ee638c8e2790ca", null ],
     [ "digits10< int128_opt >", "format_8h.html#ab23b37848df6c358fc27cb21b71935c0", null ],
     [ "digits10< uint128_t >", "format_8h.html#af843084985f09e117e8b179510a39561", null ],
