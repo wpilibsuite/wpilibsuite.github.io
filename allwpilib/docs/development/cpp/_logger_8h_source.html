@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-72-gfe4d12c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-73-g9e24c6e</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="_logger_8h.html#a764752c80c489a5988892ca7b2a4f224">   63</a></span><span class="preprocessor">#define WPI_LOG(logger_inst, level, format, ...) \</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">  logger_inst.Log(level, __FILE__, __LINE__, FMT_STRING(format), __VA_ARGS__)</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">  (logger_inst).Log(level, __FILE__, __LINE__, FMT_STRING(format), __VA_ARGS__)</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="_logger_8h.html#a84b03a5f502a9c57849b868c7af38941">   66</a></span><span class="preprocessor">#define WPI_ERROR(inst, format, ...) \</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">  WPI_LOG(inst, ::wpi::WPI_LOG_ERROR, format, __VA_ARGS__)</span></div>
@@ -235,7 +235,7 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_logger_8h.html">Logger.h</a></li>
-    <li class="footer">Generated on Mon Aug 29 2022 06:08:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Aug 29 2022 20:28:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

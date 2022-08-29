@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-72-gfe4d12c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-73-g9e24c6e</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a764752c80c489a5988892ca7b2a4f224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a764752c80c489a5988892ca7b2a4f224">WPI_LOG</a>(logger_inst,  level,  <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, ...)&#160;&#160;&#160;  logger_inst.Log(level, __FILE__, __LINE__, <a class="el" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>), __VA_ARGS__)</td></tr>
+<tr class="memitem:a764752c80c489a5988892ca7b2a4f224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a764752c80c489a5988892ca7b2a4f224">WPI_LOG</a>(logger_inst,  level,  <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, ...)&#160;&#160;&#160;  (logger_inst).Log(level, __FILE__, __LINE__, <a class="el" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>), __VA_ARGS__)</td></tr>
 <tr class="separator:a764752c80c489a5988892ca7b2a4f224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b03a5f502a9c57849b868c7af38941"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_logger_8h.html#a84b03a5f502a9c57849b868c7af38941">WPI_ERROR</a>(inst,  <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, ...)&#160;&#160;&#160;  <a class="el" href="_logger_8h.html#a764752c80c489a5988892ca7b2a4f224">WPI_LOG</a>(inst, ::wpi::WPI_LOG_ERROR, <a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>, __VA_ARGS__)</td></tr>
 <tr class="separator:a84b03a5f502a9c57849b868c7af38941"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,7 +427,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;  logger_inst.Log(level, __FILE__, __LINE__, <a class="el" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>), __VA_ARGS__)</td>
+          <td></td><td>&#160;&#160;&#160;  (logger_inst).Log(level, __FILE__, __LINE__, <a class="el" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="el" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>), __VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -474,7 +474,7 @@ Enumerations</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_logger_8h.html">Logger.h</a></li>
-    <li class="footer">Generated on Mon Aug 29 2022 06:08:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Aug 29 2022 20:28:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
