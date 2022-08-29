@@ -9,6 +9,6 @@ var classfrc2_1_1_repeat_command =
     [ "Execute", "classfrc2_1_1_repeat_command.html#a3171742ef1ebe78c169caeb0dc35fd90", null ],
     [ "Initialize", "classfrc2_1_1_repeat_command.html#a40186febf6835f8297c297efedd40af6", null ],
     [ "IsFinished", "classfrc2_1_1_repeat_command.html#a9d486f247e4f005b8a1d1371e370ad88", null ],
-    [ "Repeat", "classfrc2_1_1_repeat_command.html#ad48769da8eeab15bc482f606f474a6f5", null ],
+    [ "Repeatedly", "classfrc2_1_1_repeat_command.html#a1e0924280858196dfb7f14af98464c22", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_repeat_command.html#a3533043d77abaea08e99ea1d5f8b1d83", null ]
 ];

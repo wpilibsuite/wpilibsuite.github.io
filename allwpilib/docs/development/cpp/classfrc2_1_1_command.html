@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-73-g9e24c6e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-74-gf2a8d38</span>
    </div>
   </td>
  </tr>
@@ -192,9 +192,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a74d3779fc3928e9b2d649f29bf42faf9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_endless_command.html">EndlessCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a74d3779fc3928e9b2d649f29bf42faf9">Endlessly</a> () &amp;&amp;</td></tr>
 <tr class="memdesc:a74d3779fc3928e9b2d649f29bf42faf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run endlessly, ignoring its ordinary end conditions.  <a href="classfrc2_1_1_command.html#a74d3779fc3928e9b2d649f29bf42faf9">More...</a><br /></td></tr>
 <tr class="separator:a74d3779fc3928e9b2d649f29bf42faf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f03abf3d59fcd539385e39526751512"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512">Repeat</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:a2f03abf3d59fcd539385e39526751512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512">More...</a><br /></td></tr>
-<tr class="separator:a2f03abf3d59fcd539385e39526751512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab56c1f659685c703f8ad7882842cfaa4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ab56c1f659685c703f8ad7882842cfaa4">Repeatedly</a> () &amp;&amp;</td></tr>
+<tr class="memdesc:ab56c1f659685c703f8ad7882842cfaa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command.html#ab56c1f659685c703f8ad7882842cfaa4">More...</a><br /></td></tr>
+<tr class="separator:ab56c1f659685c703f8ad7882842cfaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd847a1c3b2097e9d13cd0c1b00dbacf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#afd847a1c3b2097e9d13cd0c1b00dbacf">AsProxy</a> ()</td></tr>
 <tr class="memdesc:afd847a1c3b2097e9d13cd0c1b00dbacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.  <a href="classfrc2_1_1_command.html#afd847a1c3b2097e9d13cd0c1b00dbacf">More...</a><br /></td></tr>
 <tr class="separator:afd847a1c3b2097e9d13cd0c1b00dbacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -990,8 +990,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f03abf3d59fcd539385e39526751512" name="a2f03abf3d59fcd539385e39526751512"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f03abf3d59fcd539385e39526751512">&#9670;&nbsp;</a></span>Repeat()</h2>
+<a id="ab56c1f659685c703f8ad7882842cfaa4" name="ab56c1f659685c703f8ad7882842cfaa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab56c1f659685c703f8ad7882842cfaa4">&#9670;&nbsp;</a></span>Repeatedly()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1000,7 +1000,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a> frc2::Command::Repeat </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a> frc2::Command::Repeatedly </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> &amp;&amp;</td>
@@ -1017,7 +1017,7 @@ Protected Attributes</h2></td></tr>
 <p >The decorated command can still be canceled.</p>
 <dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classfrc2_1_1_repeat_command.html#ad48769da8eeab15bc482f606f474a6f5">frc2::RepeatCommand</a>.</p>
+<p>Reimplemented in <a class="el" href="classfrc2_1_1_repeat_command.html#a1e0924280858196dfb7f14af98464c22">frc2::RepeatCommand</a>.</p>
 
 </div>
 </div>
@@ -1332,7 +1332,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command.html">Command</a></li>
-    <li class="footer">Generated on Mon Aug 29 2022 20:29:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Aug 29 2022 22:23:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

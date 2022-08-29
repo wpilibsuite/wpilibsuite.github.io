@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-73-g9e24c6e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-74-gf2a8d38</span>
    </div>
   </td>
  </tr>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('_repeat_command_8h_source.html',''); i
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc2_1_1_repeat_command.html#a3533043d77abaea08e99ea1d5f8b1d83">   70</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_repeat_command.html#a3533043d77abaea08e99ea1d5f8b1d83">RunsWhenDisabled</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classfrc2_1_1_repeat_command.html#ad48769da8eeab15bc482f606f474a6f5">   72</a></span>  <a class="code hl_class" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a> <a class="code hl_function" href="classfrc2_1_1_repeat_command.html#ad48769da8eeab15bc482f606f474a6f5">Repeat</a>() &amp;&amp; <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classfrc2_1_1_repeat_command.html#a1e0924280858196dfb7f14af98464c22">   72</a></span>  <a class="code hl_class" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a> <a class="code hl_function" href="classfrc2_1_1_repeat_command.html#a1e0924280858196dfb7f14af98464c22">Repeatedly</a>() &amp;&amp; <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  std::unique_ptr&lt;Command&gt; m_command;</div>
@@ -183,6 +183,7 @@ $(document).ready(function(){initNavTree('_repeat_command_8h_source.html',''); i
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html">frc2::RepeatCommand</a></div><div class="ttdoc">A command that runs another command repeatedly, restarting it when it ends, until this command is int...</div><div class="ttdef"><b>Definition:</b> RepeatCommand.h:32</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a0c89a58047538d255123815d23d6f8c5"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a0c89a58047538d255123815d23d6f8c5">frc2::RepeatCommand::RepeatCommand</a></div><div class="ttdeci">RepeatCommand(RepeatCommand &amp;&amp;other)=default</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a1b1c5d481727da27bfdf3aa906ee4823"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a1b1c5d481727da27bfdf3aa906ee4823">frc2::RepeatCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a1e0924280858196dfb7f14af98464c22"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a1e0924280858196dfb7f14af98464c22">frc2::RepeatCommand::Repeatedly</a></div><div class="ttdeci">RepeatCommand Repeatedly() &amp;&amp;override</div><div class="ttdoc">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupt...</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a3171742ef1ebe78c169caeb0dc35fd90"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a3171742ef1ebe78c169caeb0dc35fd90">frc2::RepeatCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a3533043d77abaea08e99ea1d5f8b1d83"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a3533043d77abaea08e99ea1d5f8b1d83">frc2::RepeatCommand::RunsWhenDisabled</a></div><div class="ttdeci">bool RunsWhenDisabled() const override</div><div class="ttdoc">Whether the given command should run when the robot is disabled.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a40186febf6835f8297c297efedd40af6"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a40186febf6835f8297c297efedd40af6">frc2::RepeatCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
@@ -191,7 +192,6 @@ $(document).ready(function(){initNavTree('_repeat_command_8h_source.html',''); i
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a6c49b55bf61626fa5022cb7db371ffdd"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a6c49b55bf61626fa5022cb7db371ffdd">frc2::RepeatCommand::RepeatCommand</a></div><div class="ttdeci">RepeatCommand(std::unique_ptr&lt; Command &gt; &amp;&amp;command)</div><div class="ttdoc">Creates a new RepeatCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a8d7e4bc8553df77c6ccf9b39e159c174"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a8d7e4bc8553df77c6ccf9b39e159c174">frc2::RepeatCommand::RepeatCommand</a></div><div class="ttdeci">RepeatCommand(T &amp;&amp;command)</div><div class="ttdoc">Creates a new RepeatCommand.</div><div class="ttdef"><b>Definition:</b> RepeatCommand.h:50</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a9d486f247e4f005b8a1d1371e370ad88"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a9d486f247e4f005b8a1d1371e370ad88">frc2::RepeatCommand::IsFinished</a></div><div class="ttdeci">bool IsFinished() override</div><div class="ttdoc">Whether the command has finished.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_repeat_command_html_ad48769da8eeab15bc482f606f474a6f5"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#ad48769da8eeab15bc482f606f474a6f5">frc2::RepeatCommand::Repeat</a></div><div class="ttdeci">RepeatCommand Repeat() &amp;&amp;override</div><div class="ttdoc">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupt...</div></div>
 <div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:294</div></div>
 <div class="ttc" id="acore_8h_html_a3a08cea569e6926ac8d7d74dd7178b5f"><div class="ttname"><a href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a></div><div class="ttdeci">typename std::remove_reference&lt; T &gt;::type remove_reference_t</div><div class="ttdef"><b>Definition:</b> core.h:299</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('_repeat_command_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_repeat_command_8h.html">RepeatCommand.h</a></li>
-    <li class="footer">Generated on Mon Aug 29 2022 20:28:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Aug 29 2022 22:22:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-73-g9e24c6e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-74-gf2a8d38</span>
    </div>
   </td>
  </tr>
@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">   * @return the decorated command</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512">  209</a></span>  virtual <a class="code hl_class" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a> <a class="code hl_function" href="classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512">Repeat</a>() &amp;&amp;;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#ab56c1f659685c703f8ad7882842cfaa4">  209</a></span>  virtual <a class="code hl_class" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a> <a class="code hl_function" href="classfrc2_1_1_command.html#ab56c1f659685c703f8ad7882842cfaa4">Repeatedly</a>() &amp;&amp;;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment"></span> </div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">   * Decorates this command to run &quot;by proxy&quot; by wrapping it in a</span></div>
@@ -422,7 +422,6 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div class="ttc" id="aclassfrc2_1_1_command_html_a134eda3756f00c667bb5415b23ee920c"><div class="ttname"><a href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c">frc2::Command::End</a></div><div class="ttdeci">virtual void End(bool interrupted)</div><div class="ttdoc">The action to take when the command ends.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a1617d60548cc8a75c12f5ddfe8e3c38c"><div class="ttname"><a href="classfrc2_1_1_command.html#a1617d60548cc8a75c12f5ddfe8e3c38c">frc2::Command::Until</a></div><div class="ttdeci">virtual ParallelRaceGroup Until(std::function&lt; bool()&gt; condition) &amp;&amp;</div><div class="ttdoc">Decorates this command with an interrupt condition.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a21996b687122162a9a5a9d30b929aa57"><div class="ttname"><a href="classfrc2_1_1_command.html#a21996b687122162a9a5a9d30b929aa57">frc2::Command::Command</a></div><div class="ttdeci">Command(Command &amp;&amp;)=default</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_html_a2f03abf3d59fcd539385e39526751512"><div class="ttname"><a href="classfrc2_1_1_command.html#a2f03abf3d59fcd539385e39526751512">frc2::Command::Repeat</a></div><div class="ttdeci">virtual RepeatCommand Repeat() &amp;&amp;</div><div class="ttdoc">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupt...</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a35c2255741bd5841d1c693af1cc833aa"><div class="ttname"><a href="classfrc2_1_1_command.html#a35c2255741bd5841d1c693af1cc833aa">frc2::Command::~Command</a></div><div class="ttdeci">virtual ~Command()</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a3e88666fcca3af7a516176a2a18dfb6c"><div class="ttname"><a href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">frc2::Command::m_isGrouped</a></div><div class="ttdeci">bool m_isGrouped</div><div class="ttdef"><b>Definition:</b> Command.h:308</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a44d39463d12f6dd89c165f6faa746b6b"><div class="ttname"><a href="classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b">frc2::Command::GetName</a></div><div class="ttdeci">virtual std::string GetName() const</div></div>
@@ -441,6 +440,7 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div class="ttc" id="aclassfrc2_1_1_command_html_a9f411a9590b1ab45fbcb132787596662"><div class="ttname"><a href="classfrc2_1_1_command.html#a9f411a9590b1ab45fbcb132787596662">frc2::Command::BeforeStarting</a></div><div class="ttdeci">virtual SequentialCommandGroup BeforeStarting(std::function&lt; void()&gt; toRun, std::initializer_list&lt; Subsystem * &gt; requirements) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run before this command starts.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_aa53c83ad502c48906767c8eef16ee096"><div class="ttname"><a href="classfrc2_1_1_command.html#aa53c83ad502c48906767c8eef16ee096">frc2::Command::operator=</a></div><div class="ttdeci">Command &amp; operator=(const Command &amp;rhs)</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_ab0cc63118f578b328222ab2e9f1b7b65"><div class="ttname"><a href="classfrc2_1_1_command.html#ab0cc63118f578b328222ab2e9f1b7b65">frc2::Command::AndThen</a></div><div class="ttdeci">virtual SequentialCommandGroup AndThen(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={}) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run after the command finishes.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_html_ab56c1f659685c703f8ad7882842cfaa4"><div class="ttname"><a href="classfrc2_1_1_command.html#ab56c1f659685c703f8ad7882842cfaa4">frc2::Command::Repeatedly</a></div><div class="ttdeci">virtual RepeatCommand Repeatedly() &amp;&amp;</div><div class="ttdoc">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupt...</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_ab8d1d6ccf24f90ffa9be270544dd7162"><div class="ttname"><a href="classfrc2_1_1_command.html#ab8d1d6ccf24f90ffa9be270544dd7162">frc2::Command::BeforeStarting</a></div><div class="ttdeci">virtual SequentialCommandGroup BeforeStarting(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={}) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run before this command starts.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_acf24aef63d176810eb1376defc1116b4"><div class="ttname"><a href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">frc2::Command::HasRequirement</a></div><div class="ttdeci">bool HasRequirement(Subsystem *requirement) const</div><div class="ttdoc">Whether the command requires a given subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_ad3f1971a1b44ecdd4683d766f831bccd"><div class="ttname"><a href="classfrc2_1_1_command.html#ad3f1971a1b44ecdd4683d766f831bccd">frc2::Command::Initialize</a></div><div class="ttdeci">virtual void Initialize()</div><div class="ttdoc">The initial subroutine of a command.</div></div>
@@ -477,7 +477,7 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_command_8h.html">Command.h</a></li>
-    <li class="footer">Generated on Mon Aug 29 2022 20:28:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Aug 29 2022 22:22:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
