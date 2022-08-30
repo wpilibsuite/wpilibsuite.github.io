@@ -107,16 +107,21 @@
 <span class="sourceLineNo">095</span><a id="line.95">    return m_command.runsWhenDisabled();</a>
 <span class="sourceLineNo">096</span><a id="line.96">  }</a>
 <span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">  /**</a>
-<span class="sourceLineNo">099</span><a id="line.99">   * Gets the name of this Command.</a>
-<span class="sourceLineNo">100</span><a id="line.100">   *</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * @return Name</a>
-<span class="sourceLineNo">102</span><a id="line.102">   */</a>
-<span class="sourceLineNo">103</span><a id="line.103">  @Override</a>
-<span class="sourceLineNo">104</span><a id="line.104">  public String getName() {</a>
-<span class="sourceLineNo">105</span><a id="line.105">    return m_command.getName();</a>
-<span class="sourceLineNo">106</span><a id="line.106">  }</a>
-<span class="sourceLineNo">107</span><a id="line.107">}</a>
+<span class="sourceLineNo">098</span><a id="line.98">  @Override</a>
+<span class="sourceLineNo">099</span><a id="line.99">  public InterruptionBehavior getInterruptionBehavior() {</a>
+<span class="sourceLineNo">100</span><a id="line.100">    return m_command.getInterruptionBehavior();</a>
+<span class="sourceLineNo">101</span><a id="line.101">  }</a>
+<span class="sourceLineNo">102</span><a id="line.102"></a>
+<span class="sourceLineNo">103</span><a id="line.103">  /**</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * Gets the name of this Command.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   *</a>
+<span class="sourceLineNo">106</span><a id="line.106">   * @return Name</a>
+<span class="sourceLineNo">107</span><a id="line.107">   */</a>
+<span class="sourceLineNo">108</span><a id="line.108">  @Override</a>
+<span class="sourceLineNo">109</span><a id="line.109">  public String getName() {</a>
+<span class="sourceLineNo">110</span><a id="line.110">    return m_command.getName();</a>
+<span class="sourceLineNo">111</span><a id="line.111">  }</a>
+<span class="sourceLineNo">112</span><a id="line.112">}</a>
 
 
 
