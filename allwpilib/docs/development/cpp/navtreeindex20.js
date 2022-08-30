@@ -1,7 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9a9f67b4f1730485e162f277e5f0926037":[6,0,7,1,0,0,0,13,13,2,5],
-"_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9a9f7ac43826c56358b26b891565d7fc37":[6,0,7,1,0,0,0,13,13,2,3],
 "_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9aaa1eaea1634be97600fc1c2fcef05535":[6,0,7,1,0,0,0,13,13,2,4],
 "_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9ae6a146cbb0dde5dfbc141cd44fa5e452":[6,0,7,1,0,0,0,13,13,2,1],
 "_sparse_l_u___structs_8h_source.html":[6,0,7,1,0,0,0,13,13],
@@ -114,8 +112,8 @@ var NAVTREEINDEX20 =
 "_stack_trace_8h.html#a3776b907dc530ce3556e36bcb5a68462":[6,0,11,33,2],
 "_stack_trace_8h.html#a4b125df3c2eaae6f9b8cd09ccd9da98d":[6,0,11,33,0],
 "_stack_trace_8h_source.html":[6,0,11,33],
-"_start_end_command_8h.html":[6,0,4,0,30],
-"_start_end_command_8h_source.html":[6,0,4,0,30],
+"_start_end_command_8h.html":[6,0,4,0,29],
+"_start_end_command_8h_source.html":[6,0,4,0,29],
 "_state_space_util_8h.html":[6,0,3,13],
 "_state_space_util_8h.html#a089ed0e9037f3940cf5a15c29c20140c":[6,0,3,13,17],
 "_state_space_util_8h.html#a16fc31b3575bb922397dca49b2387805":[6,0,3,13,13],
@@ -249,5 +247,7 @@ var NAVTREEINDEX20 =
 "_string_extras_8h.html#aea3739b1e7e77b69e3ce650907ca69ed":[6,0,8,3,0,0,34,37],
 "_string_extras_8h.html#af0739f65c4cc2835777cc34e9241c377":[6,0,8,3,0,0,34,54],
 "_string_extras_8h.html#af5e73ed8bf4d49b2734570b2c83f9303":[6,0,8,3,0,0,34,22],
-"_string_extras_8h.html#af707cd06c4cf5b0a0f6133cb54241b15":[6,0,8,3,0,0,34,2]
+"_string_extras_8h.html#af707cd06c4cf5b0a0f6133cb54241b15":[6,0,8,3,0,0,34,2],
+"_string_extras_8h.html#afd39f69badd5bed05f8020e76e688911":[6,0,8,3,0,0,34,50],
+"_string_extras_8h.html#afec927e053502a01b8b57dbc9fe7ceea":[6,0,8,3,0,0,34,9]
 };

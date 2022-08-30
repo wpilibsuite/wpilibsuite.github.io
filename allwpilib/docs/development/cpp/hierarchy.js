@@ -544,7 +544,6 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "frc2::CommandState", "classfrc2_1_1_command_state.html", null ],
     [ "compile_string", "structcompile__string.html", null ],
     [ "detail::compiled_string", "classdetail_1_1compiled__string.html", null ],
     [ "Eigen::internal::complex_schur_reduce_to_hessenberg< MatrixType, IsComplex >", "struct_eigen_1_1internal_1_1complex__schur__reduce__to__hessenberg.html", null ],

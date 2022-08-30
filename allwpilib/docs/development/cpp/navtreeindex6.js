@@ -1,7 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"_duty_cycle_sim_8h_source.html":[6,0,2,7,22],
-"_edge_configuration_8h.html":[6,0,2,0,0],
 "_edge_configuration_8h.html#a91bd7a402531072636e0dfbedef7a472":[6,0,2,0,0,0],
 "_edge_configuration_8h.html#a91bd7a402531072636e0dfbedef7a472a35c3ace1970663a16e5c65baa5941b13":[6,0,2,0,0,0,0],
 "_edge_configuration_8h.html#a91bd7a402531072636e0dfbedef7a472a4f968049bc5e5f7c6e0d89946366fff2":[6,0,2,0,0,0,3],
@@ -209,8 +207,8 @@ var NAVTREEINDEX6 =
 "_endian_8h.html#af259d10b40c1ccfd81147b0420644d3d":[6,0,8,3,0,0,8,12],
 "_endian_8h.html#affaa58fbd1e3ef061004bc9816620c8a":[6,0,8,3,0,0,8,57],
 "_endian_8h_source.html":[6,0,8,3,0,0,8],
-"_endless_command_8h.html":[6,0,4,0,8],
-"_endless_command_8h_source.html":[6,0,4,0,8],
+"_endless_command_8h.html":[6,0,4,0,7],
+"_endless_command_8h_source.html":[6,0,4,0,7],
 "_entry_listener_flags_8h.html":[6,0,6,0],
 "_entry_listener_flags_8h_source.html":[6,0,6,0],
 "_epoch_tracker_8h.html":[6,0,8,3,0,0,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX6 =
 "_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001ad91a9b8a734f2bef4b778f89806cbab7":[6,0,8,3,0,0,10,1,25],
 "_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001ae46a97ea2906921c8c626890bde832cf":[6,0,8,3,0,0,10,1,33],
 "_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001ae55d43eabeefe5a8271b4a3c898bd18f":[6,0,8,3,0,0,10,1,15],
-"_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001ae8ee838822072f02738dbd7d97ea03fc":[6,0,8,3,0,0,10,1,30]
+"_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001ae8ee838822072f02738dbd7d97ea03fc":[6,0,8,3,0,0,10,1,30],
+"_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001aed2c33c8fe874cfeba6f4a7747c62d05":[6,0,8,3,0,0,10,1,36],
+"_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001aed65f7649c6f0e365673d65a9d8119d8":[6,0,8,3,0,0,10,1,32]
 };

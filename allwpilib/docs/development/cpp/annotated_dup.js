@@ -2261,7 +2261,6 @@ var annotated_dup =
       [ "CommandJoystick", "classfrc2_1_1_command_joystick.html", "classfrc2_1_1_command_joystick" ],
       [ "CommandPS4Controller", "classfrc2_1_1_command_p_s4_controller.html", "classfrc2_1_1_command_p_s4_controller" ],
       [ "CommandScheduler", "classfrc2_1_1_command_scheduler.html", "classfrc2_1_1_command_scheduler" ],
-      [ "CommandState", "classfrc2_1_1_command_state.html", "classfrc2_1_1_command_state" ],
       [ "CommandXboxController", "classfrc2_1_1_command_xbox_controller.html", "classfrc2_1_1_command_xbox_controller" ],
       [ "ConditionalCommand", "classfrc2_1_1_conditional_command.html", "classfrc2_1_1_conditional_command" ],
       [ "EndlessCommand", "classfrc2_1_1_endless_command.html", "classfrc2_1_1_endless_command" ],

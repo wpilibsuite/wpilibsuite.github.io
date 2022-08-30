@@ -1,14 +1,12 @@
 var NAVTREEINDEX34 =
 {
-"class_eigen_1_1_reshaped_impl.html":[4,0,8,180],
 "class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html":[5,0,4,178],
-"class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html":[4,0,8,181],
 "class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#a836cc4ec4e305761244c27ad135286dd":[4,0,8,181,1],
 "class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#a836cc4ec4e305761244c27ad135286dd":[5,0,4,178,1],
-"class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#a9f5fd71e834f8fbf26f80ac9902df9b2":[5,0,4,178,0],
 "class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#a9f5fd71e834f8fbf26f80ac9902df9b2":[4,0,8,181,0],
-"class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#aea0fe00355236f9f28ae6e05fa4ad8db":[5,0,4,178,2],
+"class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#a9f5fd71e834f8fbf26f80ac9902df9b2":[5,0,4,178,0],
 "class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#aea0fe00355236f9f28ae6e05fa4ad8db":[4,0,8,181,2],
+"class_eigen_1_1_reshaped_impl_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01_dense_01_4.html#aea0fe00355236f9f28ae6e05fa4ad8db":[5,0,4,178,2],
 "class_eigen_1_1_return_by_value.html":[3,31,45],
 "class_eigen_1_1_return_by_value.html#a029488d7fe26246e0f5af4b261679d75":[3,31,45,6],
 "class_eigen_1_1_return_by_value.html#a0312789d8bd5e6bab6bed551f617112e":[3,31,45,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX34 =
 "class_eigen_1_1_simplicial_l_d_l_t.html#a6fee7e9b14ee7fbaecabaa27620e2e99":[3,33,2,13],
 "class_eigen_1_1_simplicial_l_d_l_t.html#a75c4a9713dc57cea09c05185a93398b6":[3,33,2,3],
 "class_eigen_1_1_simplicial_l_d_l_t.html#a80564e6741d039a3b7b2b71a96639678":[3,33,2,0],
-"class_eigen_1_1_simplicial_l_d_l_t.html#a8cf16bd92a712d36310397972bdef044":[3,33,2,15]
+"class_eigen_1_1_simplicial_l_d_l_t.html#a8cf16bd92a712d36310397972bdef044":[3,33,2,15],
+"class_eigen_1_1_simplicial_l_d_l_t.html#a95c4c66916a223d1b9ab67ef1f40ddea":[3,33,2,6],
+"class_eigen_1_1_simplicial_l_d_l_t.html#aa25042f3b49880f5e487d468ea20b1b7":[3,33,2,14]
 };

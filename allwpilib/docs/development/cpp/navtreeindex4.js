@@ -14,8 +14,6 @@ var NAVTREEINDEX4 =
 "_command_p_s4_controller_8h_source.html":[6,0,4,0,0,3],
 "_command_scheduler_8h.html":[6,0,4,0,5],
 "_command_scheduler_8h_source.html":[6,0,4,0,5],
-"_command_state_8h.html":[6,0,4,0,6],
-"_command_state_8h_source.html":[6,0,4,0,6],
 "_command_xbox_controller_8h.html":[6,0,4,0,0,4],
 "_command_xbox_controller_8h_source.html":[6,0,4,0,0,4],
 "_common_cwise_binary_ops_8h.html":[6,0,7,1,0,0,0,9,3],
@@ -131,8 +129,8 @@ var NAVTREEINDEX4 =
 "_condition_estimator_8h.html#aa3f5b3cfa34df750994a247d4823aa51":[6,0,7,1,0,0,0,1,14,3],
 "_condition_estimator_8h.html#ad1de0d785387bfb5435c410bf0554068":[6,0,7,1,0,0,0,1,14,2],
 "_condition_estimator_8h_source.html":[6,0,7,1,0,0,0,1,14],
-"_conditional_command_8h.html":[6,0,4,0,7],
-"_conditional_command_8h_source.html":[6,0,4,0,7],
+"_conditional_command_8h.html":[6,0,4,0,6],
+"_conditional_command_8h_source.html":[6,0,4,0,6],
 "_configure_vectorization_8h.html":[6,0,7,1,0,0,0,1,3,1],
 "_configure_vectorization_8h.html#a13d55467be312f50f2ae60737f1ed9f3":[6,0,7,1,0,0,0,1,3,1,4],
 "_configure_vectorization_8h.html#a1606249c901f685bf6cbd231b280a62a":[6,0,7,1,0,0,0,1,3,1,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "_d_i_o_data_8h.html#a72dabe7209fbfe7e7c9e792ffd0a6c8d":[6,0,5,2,9,2],
 "_d_i_o_data_8h.html#a7a5e0397d8b41f013bd65386628e412e":[6,0,5,2,9,1],
 "_d_i_o_data_8h.html#a92af327f39f034db42c30c5a6c48d3f9":[6,0,5,2,9,7],
-"_d_i_o_data_8h.html#a948e994be9bbed2f0a3503677e311840":[6,0,5,2,9,15]
+"_d_i_o_data_8h.html#a948e994be9bbed2f0a3503677e311840":[6,0,5,2,9,15],
+"_d_i_o_data_8h.html#a9aaf99abc337858ee4de4d362e6f5095":[6,0,5,2,9,18],
+"_d_i_o_data_8h.html#a9ff98d022f9b5ee48d7b54c9989fbabe":[6,0,5,2,9,11]
 };
