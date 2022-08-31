@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-77-gd22ff8a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-79-g4254438</span>
    </div>
   </td>
  </tr>
@@ -135,18 +135,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aace40670788c61fb219e3c756ef56ee9"><td class="memTemplParams" colspan="2">template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&lt;                std::is_base_of&lt;Command, std::remove_reference_t&lt;Types&gt;&gt;...&gt;&gt;&gt; </td></tr>
 <tr class="memitem:aace40670788c61fb219e3c756ef56ee9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">AddCommands</a> (Types &amp;&amp;... commands)</td></tr>
 <tr class="separator:aace40670788c61fb219e3c756ef56ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c087934c49ab620029b7c2249fbb6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a31c087934c49ab620029b7c2249fbb6e">Initialize</a> () override</td></tr>
-<tr class="memdesc:a31c087934c49ab620029b7c2249fbb6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial subroutine of a command.  <a href="classfrc2_1_1_sequential_command_group.html#a31c087934c49ab620029b7c2249fbb6e">More...</a><br /></td></tr>
-<tr class="separator:a31c087934c49ab620029b7c2249fbb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089385b0790dee592c70ae54891be209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a089385b0790dee592c70ae54891be209">Execute</a> () override</td></tr>
-<tr class="memdesc:a089385b0790dee592c70ae54891be209"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main body of a command.  <a href="classfrc2_1_1_sequential_command_group.html#a089385b0790dee592c70ae54891be209">More...</a><br /></td></tr>
-<tr class="separator:a089385b0790dee592c70ae54891be209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a798af677bbcbb29270d828749c551bec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a798af677bbcbb29270d828749c551bec">End</a> (bool interrupted) override</td></tr>
-<tr class="memdesc:a798af677bbcbb29270d828749c551bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action to take when the command ends.  <a href="classfrc2_1_1_sequential_command_group.html#a798af677bbcbb29270d828749c551bec">More...</a><br /></td></tr>
-<tr class="separator:a798af677bbcbb29270d828749c551bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f9f2781148cd42ec1847f21cf1369c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a19f9f2781148cd42ec1847f21cf1369c">IsFinished</a> () override</td></tr>
-<tr class="memdesc:a19f9f2781148cd42ec1847f21cf1369c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command has finished.  <a href="classfrc2_1_1_sequential_command_group.html#a19f9f2781148cd42ec1847f21cf1369c">More...</a><br /></td></tr>
-<tr class="separator:a19f9f2781148cd42ec1847f21cf1369c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349a9ce2160e29f11ddccef508d05981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a349a9ce2160e29f11ddccef508d05981">Initialize</a> () final</td></tr>
+<tr class="memdesc:a349a9ce2160e29f11ddccef508d05981"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial subroutine of a command.  <a href="classfrc2_1_1_sequential_command_group.html#a349a9ce2160e29f11ddccef508d05981">More...</a><br /></td></tr>
+<tr class="separator:a349a9ce2160e29f11ddccef508d05981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a61a620f3b5298745b070916436b92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a5a61a620f3b5298745b070916436b92d">Execute</a> () final</td></tr>
+<tr class="memdesc:a5a61a620f3b5298745b070916436b92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main body of a command.  <a href="classfrc2_1_1_sequential_command_group.html#a5a61a620f3b5298745b070916436b92d">More...</a><br /></td></tr>
+<tr class="separator:a5a61a620f3b5298745b070916436b92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed93b720539e878d5ed894152b4f6a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a6ed93b720539e878d5ed894152b4f6a5">End</a> (bool interrupted) final</td></tr>
+<tr class="memdesc:a6ed93b720539e878d5ed894152b4f6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action to take when the command ends.  <a href="classfrc2_1_1_sequential_command_group.html#a6ed93b720539e878d5ed894152b4f6a5">More...</a><br /></td></tr>
+<tr class="separator:a6ed93b720539e878d5ed894152b4f6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1302aa00fc4ec181c4ad73811aa590b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#ad1302aa00fc4ec181c4ad73811aa590b">IsFinished</a> () final</td></tr>
+<tr class="memdesc:ad1302aa00fc4ec181c4ad73811aa590b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command has finished.  <a href="classfrc2_1_1_sequential_command_group.html#ad1302aa00fc4ec181c4ad73811aa590b">More...</a><br /></td></tr>
+<tr class="separator:ad1302aa00fc4ec181c4ad73811aa590b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aa6a2bc503b46495ec47d24ccdf82e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html#a5aa6a2bc503b46495ec47d24ccdf82e5">RunsWhenDisabled</a> () const override</td></tr>
 <tr class="memdesc:a5aa6a2bc503b46495ec47d24ccdf82e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the given command should run when the robot is disabled.  <a href="classfrc2_1_1_sequential_command_group.html#a5aa6a2bc503b46495ec47d24ccdf82e5">More...</a><br /></td></tr>
 <tr class="separator:a5aa6a2bc503b46495ec47d24ccdf82e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,8 +627,8 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 
 </div>
 </div>
-<a id="a798af677bbcbb29270d828749c551bec" name="a798af677bbcbb29270d828749c551bec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a798af677bbcbb29270d828749c551bec">&#9670;&nbsp;</a></span>End()</h2>
+<a id="a6ed93b720539e878d5ed894152b4f6a5" name="a6ed93b720539e878d5ed894152b4f6a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed93b720539e878d5ed894152b4f6a5">&#9670;&nbsp;</a></span>End()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -646,7 +646,7 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -664,8 +664,8 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 
 </div>
 </div>
-<a id="a089385b0790dee592c70ae54891be209" name="a089385b0790dee592c70ae54891be209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089385b0790dee592c70ae54891be209">&#9670;&nbsp;</a></span>Execute()</h2>
+<a id="a5a61a620f3b5298745b070916436b92d" name="a5a61a620f3b5298745b070916436b92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a61a620f3b5298745b070916436b92d">&#9670;&nbsp;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,7 +682,7 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -694,8 +694,8 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 
 </div>
 </div>
-<a id="a31c087934c49ab620029b7c2249fbb6e" name="a31c087934c49ab620029b7c2249fbb6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31c087934c49ab620029b7c2249fbb6e">&#9670;&nbsp;</a></span>Initialize()</h2>
+<a id="a349a9ce2160e29f11ddccef508d05981" name="a349a9ce2160e29f11ddccef508d05981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349a9ce2160e29f11ddccef508d05981">&#9670;&nbsp;</a></span>Initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -712,7 +712,7 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -724,8 +724,8 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 
 </div>
 </div>
-<a id="a19f9f2781148cd42ec1847f21cf1369c" name="a19f9f2781148cd42ec1847f21cf1369c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19f9f2781148cd42ec1847f21cf1369c">&#9670;&nbsp;</a></span>IsFinished()</h2>
+<a id="ad1302aa00fc4ec181c4ad73811aa590b" name="ad1302aa00fc4ec181c4ad73811aa590b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1302aa00fc4ec181c4ad73811aa590b">&#9670;&nbsp;</a></span>IsFinished()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -742,7 +742,7 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -795,7 +795,7 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 03:43:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Aug 31 2022 16:18:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
