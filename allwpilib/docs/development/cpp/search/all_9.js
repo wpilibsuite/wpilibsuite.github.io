@@ -755,7 +755,7 @@ var searchData=
   ['getthread_752',['GetThread',['../classwpi_1_1_callback_manager.html#a14190d8c5c72691b886e2d7dee6efeae',1,'wpi::CallbackManager::GetThread()'],['../classwpi_1_1_safe_thread_owner.html#a18600dcdb5a79da9743cfc35217194f8',1,'wpi::SafeThreadOwner::GetThread()']]],
   ['getthreadid_753',['GetThreadId',['../classfrc_1_1_robot_base.html#a8f20ff1baf57e7adf720c641ed1f576c',1,'frc::RobotBase']]],
   ['getthreadpriority_754',['GetThreadPriority',['../namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b',1,'frc']]],
-  ['getthreadsharedptr_755',['GetThreadSharedPtr',['../classwpi_1_1detail_1_1_safe_thread_owner_base.html#a34078507a59492a2399c655ff60638a5',1,'wpi::detail::SafeThreadOwnerBase::GetThreadSharedPtr()'],['../classwpi_1_1_safe_thread_owner.html#aed671a01af0f954d6d95b4a969d2f5f8',1,'wpi::SafeThreadOwner::GetThreadSharedPtr()']]],
+  ['getthreadsharedptr_755',['GetThreadSharedPtr',['../classwpi_1_1detail_1_1_safe_thread_owner_base.html#adb8634355e3e0d5c0700474e4cfe8158',1,'wpi::detail::SafeThreadOwnerBase::GetThreadSharedPtr()'],['../classwpi_1_1_safe_thread_owner.html#aed671a01af0f954d6d95b4a969d2f5f8',1,'wpi::SafeThreadOwner::GetThreadSharedPtr()']]],
   ['getthrottle_756',['GetThrottle',['../classfrc_1_1_joystick.html#a80ae72780369e15abb601fe976a3274d',1,'frc::Joystick']]],
   ['getthrottlechannel_757',['GetThrottleChannel',['../classfrc_1_1_joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4',1,'frc::Joystick']]],
   ['gettime_758',['GetTime',['../classfrc_1_1_watchdog.html#a854390dec35d194be1e04330a6aae7a8',1,'frc::Watchdog::GetTime()'],['../classfrc_1_1_d_m_a_sample.html#a3c6f59fff1141c027557d183b365ec1c',1,'frc::DMASample::GetTime()'],['../namespacefrc.html#a855035512c23c326a889f96236a132d5',1,'frc::GetTime()']]],

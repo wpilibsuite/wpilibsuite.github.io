@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-79-g4254438</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,7 @@ $(document).ready(function(){initNavTree('_safe_thread_8h.html',''); initResizab
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 <code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="_synchronization_8h_source.html">wpi/Synchronization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="condition__variable_8h_source.html">wpi/condition_variable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mutex_8h_source.html">wpi/mutex.h</a>&quot;</code><br />
 </div>
@@ -109,14 +110,18 @@ $(document).ready(function(){initNavTree('_safe_thread_8h.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread_base.html">wpi::SafeThreadBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <a class="el" href="classwpi_1_1_safe_thread_owner.html">SafeThreadOwner</a> threads.  <a href="classwpi_1_1_safe_thread_base.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread.html">wpi::SafeThread</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <a class="el" href="classwpi_1_1_safe_thread_owner.html">SafeThreadOwner</a> threads.  <a href="classwpi_1_1_safe_thread.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread_event.html">wpi::SafeThreadEvent</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html">wpi::detail::SafeThreadProxyBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-template proxy base class for common proxy code.  <a href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy.html">wpi::detail::SafeThreadProxy&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A proxy for <a class="el" href="classwpi_1_1_safe_thread.html" title="Base class for SafeThreadOwner threads.">SafeThread</a>.  <a href="classwpi_1_1detail_1_1_safe_thread_proxy.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A proxy for <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a>.  <a href="classwpi_1_1detail_1_1_safe_thread_proxy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">wpi::detail::SafeThreadOwnerBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-template owner base class for common owner code.  <a href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#details">More...</a><br /></td></tr>
@@ -144,7 +149,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_safe_thread_8h.html">SafeThread.h</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 16:18:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Aug 31 2022 18:32:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

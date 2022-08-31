@@ -135,7 +135,7 @@ var searchData=
   ['_7erobotbase_132',['~RobotBase',['../classfrc_1_1_robot_base.html#af0e6e38bbcd61791a2bdb782b0e43d00',1,'frc::RobotBase']]],
   ['_7erobotdrivebase_133',['~RobotDriveBase',['../classfrc_1_1_robot_drive_base.html#a821b770d27682489c54eeb76b52aad00',1,'frc::RobotDriveBase']]],
   ['_7erpccall_134',['~RpcCall',['../classnt_1_1_rpc_call.html#aee23105757db0dc09083315a86e492d5',1,'nt::RpcCall']]],
-  ['_7esafethread_135',['~SafeThread',['../classwpi_1_1_safe_thread.html#a9a41aefab8745d898932a4be0b48be01',1,'wpi::SafeThread']]],
+  ['_7esafethreadbase_135',['~SafeThreadBase',['../classwpi_1_1_safe_thread_base.html#a4c72726632780106a00dbc6ee5649ede',1,'wpi::SafeThreadBase']]],
   ['_7esafethreadownerbase_136',['~SafeThreadOwnerBase',['../classwpi_1_1detail_1_1_safe_thread_owner_base.html#aa4c99b4eba93f3cdb0c361f840ae6dfe',1,'wpi::detail::SafeThreadOwnerBase']]],
   ['_7escoped_5farray_137',['~scoped_array',['../class_eigen_1_1internal_1_1scoped__array.html#a708d27772099e7b552ad85668b75cd9e',1,'Eigen::internal::scoped_array']]],
   ['_7escopedconnection_138',['~ScopedConnection',['../classwpi_1_1sig_1_1_scoped_connection.html#a40f4cf282e416035326425751d46df03',1,'wpi::sig::ScopedConnection']]],

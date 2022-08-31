@@ -3098,9 +3098,12 @@ var hierarchy =
       [ "frc::RuntimeError", "classfrc_1_1_runtime_error.html", null ],
       [ "frc::SplineParameterizer::MalformedSplineException", "structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html", null ]
     ] ],
-    [ "wpi::SafeThread", "classwpi_1_1_safe_thread.html", [
-      [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >", "classwpi_1_1_callback_thread.html", null ],
-      [ "wpi::java::JCallbackThread< T >", "classwpi_1_1java_1_1_j_callback_thread.html", null ]
+    [ "wpi::SafeThreadBase", "classwpi_1_1_safe_thread_base.html", [
+      [ "wpi::SafeThread", "classwpi_1_1_safe_thread.html", [
+        [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >", "classwpi_1_1_callback_thread.html", null ],
+        [ "wpi::java::JCallbackThread< T >", "classwpi_1_1java_1_1_j_callback_thread.html", null ]
+      ] ],
+      [ "wpi::SafeThreadEvent", "classwpi_1_1_safe_thread_event.html", null ]
     ] ],
     [ "wpi::detail::SafeThreadOwnerBase", "classwpi_1_1detail_1_1_safe_thread_owner_base.html", [
       [ "wpi::SafeThreadOwner< JCallbackThread< T > >", "classwpi_1_1_safe_thread_owner.html", [

@@ -174,6 +174,8 @@ var namespacewpi =
     [ "RoundUpToPowerOfTwoH", "structwpi_1_1_round_up_to_power_of_two_h.html", null ],
     [ "RoundUpToPowerOfTwoH< N, false >", "structwpi_1_1_round_up_to_power_of_two_h_3_01_n_00_01false_01_4.html", null ],
     [ "SafeThread", "classwpi_1_1_safe_thread.html", "classwpi_1_1_safe_thread" ],
+    [ "SafeThreadBase", "classwpi_1_1_safe_thread_base.html", "classwpi_1_1_safe_thread_base" ],
+    [ "SafeThreadEvent", "classwpi_1_1_safe_thread_event.html", "classwpi_1_1_safe_thread_event" ],
     [ "SafeThreadOwner", "classwpi_1_1_safe_thread_owner.html", "classwpi_1_1_safe_thread_owner" ],
     [ "ScopedFatalErrorHandler", "structwpi_1_1_scoped_fatal_error_handler.html", "structwpi_1_1_scoped_fatal_error_handler" ],
     [ "Sendable", "classwpi_1_1_sendable.html", "classwpi_1_1_sendable" ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-79-g4254438</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
    </div>
   </td>
  </tr>
@@ -115,8 +115,8 @@ Inheritance diagram for wpi::detail::SafeThreadProxyBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a23c7e1ea2a99e850e773d88ad72f7f27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#a23c7e1ea2a99e850e773d88ad72f7f27">SafeThreadProxyBase</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a> &gt; thr)</td></tr>
-<tr class="separator:a23c7e1ea2a99e850e773d88ad72f7f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980d04801123a09c4d72961042d0aaeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#a980d04801123a09c4d72961042d0aaeb">SafeThreadProxyBase</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread_base.html">SafeThreadBase</a> &gt; thr)</td></tr>
+<tr class="separator:a980d04801123a09c4d72961042d0aaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7379ae27227d1ec773cd6f31d6e47f18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#a7379ae27227d1ec773cd6f31d6e47f18">operator bool</a> () const</td></tr>
 <tr class="separator:a7379ae27227d1ec773cd6f31d6e47f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36eec4224a081e9a0a39200e4abe85b8"><td class="memItemLeft" align="right" valign="top">std::unique_lock&lt; <a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#a36eec4224a081e9a0a39200e4abe85b8">GetLock</a> ()</td></tr>
@@ -124,16 +124,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa8befb36ec3669f30ec74afbbe1ea5ad"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#aa8befb36ec3669f30ec74afbbe1ea5ad">m_thread</a></td></tr>
-<tr class="separator:aa8befb36ec3669f30ec74afbbe1ea5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b70d807dea27f150857fc4321e5fecd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread_base.html">SafeThreadBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#a3b70d807dea27f150857fc4321e5fecd">m_thread</a></td></tr>
+<tr class="separator:a3b70d807dea27f150857fc4321e5fecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a94cde588c798dac070a44ade65b63"><td class="memItemLeft" align="right" valign="top">std::unique_lock&lt; <a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html#af9a94cde588c798dac070a44ade65b63">m_lock</a></td></tr>
 <tr class="separator:af9a94cde588c798dac070a44ade65b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Non-template proxy base class for common proxy code. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a23c7e1ea2a99e850e773d88ad72f7f27" name="a23c7e1ea2a99e850e773d88ad72f7f27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23c7e1ea2a99e850e773d88ad72f7f27">&#9670;&nbsp;</a></span>SafeThreadProxyBase()</h2>
+<a id="a980d04801123a09c4d72961042d0aaeb" name="a980d04801123a09c4d72961042d0aaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a980d04801123a09c4d72961042d0aaeb">&#9670;&nbsp;</a></span>SafeThreadProxyBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,7 +144,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">wpi::detail::SafeThreadProxyBase::SafeThreadProxyBase </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread_base.html">SafeThreadBase</a> &gt;&#160;</td>
           <td class="paramname"><em>thr</em></td><td>)</td>
           <td></td>
         </tr>
@@ -232,8 +232,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa8befb36ec3669f30ec74afbbe1ea5ad" name="aa8befb36ec3669f30ec74afbbe1ea5ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8befb36ec3669f30ec74afbbe1ea5ad">&#9670;&nbsp;</a></span>m_thread</h2>
+<a id="a3b70d807dea27f150857fc4321e5fecd" name="a3b70d807dea27f150857fc4321e5fecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b70d807dea27f150857fc4321e5fecd">&#9670;&nbsp;</a></span>m_thread</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a>&gt; wpi::detail::SafeThreadProxyBase::m_thread</td>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="classwpi_1_1_safe_thread_base.html">SafeThreadBase</a>&gt; wpi::detail::SafeThreadProxyBase::m_thread</td>
         </tr>
       </table>
   </td>
@@ -263,7 +263,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy_base.html">SafeThreadProxyBase</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 16:18:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Aug 31 2022 18:33:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

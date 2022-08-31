@@ -62,7 +62,6 @@ var searchData=
   ['propertyhandle_59',['propertyHandle',['../structcs_1_1_raw_event.html#a6b0fe3b3119f4847109f18dff338f19d',1,'cs::RawEvent']]],
   ['propertykind_60',['propertyKind',['../structcs_1_1_raw_event.html#abbb861b2dd2b3cc770f5d5a285c12739',1,'cs::RawEvent::propertyKind()'],['../struct_c_s___event.html#a815e0c8d49a0b452bf7af0627ffaa731',1,'CS_Event::propertyKind()']]],
   ['protocol_5fversion_61',['protocol_version',['../structnt_1_1_connection_info.html#a273236525633a820193505cd4529cf70',1,'nt::ConnectionInfo::protocol_version()'],['../struct_n_t___connection_info.html#a9f03cd89f577238b63383e66c80818ed',1,'NT_ConnectionInfo::protocol_version()']]],
-  ['ptr_62',['ptr',['../structwpi_1_1detail_1_1span__storage_3_01_e_00_01dynamic__extent_01_4.html#a4685de1ab5084d7ee102ef24f7d59351',1,'wpi::detail::span_storage&lt; E, dynamic_extent &gt;']]],
-  ['ptr_63',['Ptr',['../classwpi_1_1_string_map_iter_base.html#ad16147ba833b73b0ddb12ac41a1efe68',1,'wpi::StringMapIterBase']]],
-  ['ptr_64',['ptr',['../structwpi_1_1detail_1_1span__storage.html#ab3171deea4ba8e43a8f781f0b7ad63cb',1,'wpi::detail::span_storage']]]
+  ['ptr_62',['Ptr',['../classwpi_1_1_string_map_iter_base.html#ad16147ba833b73b0ddb12ac41a1efe68',1,'wpi::StringMapIterBase']]],
+  ['ptr_63',['ptr',['../structwpi_1_1detail_1_1span__storage.html#ab3171deea4ba8e43a8f781f0b7ad63cb',1,'wpi::detail::span_storage::ptr()'],['../structwpi_1_1detail_1_1span__storage_3_01_e_00_01dynamic__extent_01_4.html#a4685de1ab5084d7ee102ef24f7d59351',1,'wpi::detail::span_storage&lt; E, dynamic_extent &gt;::ptr()']]]
 ];
