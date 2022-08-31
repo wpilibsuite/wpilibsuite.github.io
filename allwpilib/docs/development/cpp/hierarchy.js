@@ -2194,6 +2194,7 @@ var hierarchy =
     [ "Eigen::JacobiRotation< Scalar >", "class_eigen_1_1_jacobi_rotation.html", null ],
     [ "wpi::java::detail::JArrayRefInner< C, T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner.html", null ],
     [ "wpi::java::detail::JArrayRefInner< C, jbyte >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jbyte_01_4.html", null ],
+    [ "wpi::java::detail::JArrayRefInner< C, jlong >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jlong_01_4.html", null ],
     [ "wpi::java::detail::JArrayRefInner< JArrayRefBase< T >, T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner.html", [
       [ "wpi::java::detail::JArrayRefBase< T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html", null ]
     ] ],

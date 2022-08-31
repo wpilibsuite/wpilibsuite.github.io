@@ -5,8 +5,9 @@ var jni__util_8h =
     [ "wpi::java::JGlobal< T >", "classwpi_1_1java_1_1_j_global.html", "classwpi_1_1java_1_1_j_global" ],
     [ "wpi::java::JLocal< T >", "classwpi_1_1java_1_1_j_local.html", "classwpi_1_1java_1_1_j_local" ],
     [ "wpi::java::JStringRef", "classwpi_1_1java_1_1_j_string_ref.html", "classwpi_1_1java_1_1_j_string_ref" ],
-    [ "wpi::java::detail::JArrayRefInner< C, T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner.html", null ],
+    [ "wpi::java::detail::JArrayRefInner< C, T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner.html", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner" ],
     [ "wpi::java::detail::JArrayRefInner< C, jbyte >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jbyte_01_4.html", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jbyte_01_4" ],
+    [ "wpi::java::detail::JArrayRefInner< C, jlong >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jlong_01_4.html", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jlong_01_4" ],
     [ "wpi::java::detail::JArrayRefBase< T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base" ],
     [ "wpi::java::detail::ConvertIntArray< T, bool >", "structwpi_1_1java_1_1detail_1_1_convert_int_array.html", "structwpi_1_1java_1_1detail_1_1_convert_int_array" ],
     [ "wpi::java::detail::ConvertIntArray< T, true >", "structwpi_1_1java_1_1detail_1_1_convert_int_array_3_01_t_00_01true_01_4.html", "structwpi_1_1java_1_1detail_1_1_convert_int_array_3_01_t_00_01true_01_4" ],
@@ -25,6 +26,7 @@ var jni__util_8h =
     [ "MakeJIntArray", "jni__util_8h.html#a5f408e0ceb0dd41758e6b43649847bfc", null ],
     [ "MakeJIntArray", "jni__util_8h.html#afd8252e0c11698f82fa6a139a9b69268", null ],
     [ "MakeJIntArray", "jni__util_8h.html#aaf77f2f93ed39e36454dc10072314efc", null ],
+    [ "MakeJLongArray", "jni__util_8h.html#a0e34bf5a3185a9a9d3da0fe7a0d545bc", null ],
     [ "MakeJString", "jni__util_8h.html#a03d617c196aeee2778c8b22699dd4acb", null ],
     [ "MakeJStringArray", "jni__util_8h.html#a70b85e53225cfdd4f6e038b20f922737", null ],
     [ "MakeJStringArray", "jni__util_8h.html#add6978ead113293b425c42ceb63698d7", null ]

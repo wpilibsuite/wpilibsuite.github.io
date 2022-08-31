@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-75-gc3a93fb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-77-gd22ff8a</span>
    </div>
   </td>
  </tr>
@@ -164,6 +164,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a97f8291d4b825a3aa8b9cce0cb73289f"><td class="memItemLeft" align="right" valign="top">jbooleanArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#a97f8291d4b825a3aa8b9cce0cb73289f">MakeJBooleanArray</a> (JNIEnv *env, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const bool &gt; arr)</td></tr>
 <tr class="memdesc:a97f8291d4b825a3aa8b9cce0cb73289f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an array of booleans into a jbooleanArray.  <a href="namespacewpi_1_1java.html#a97f8291d4b825a3aa8b9cce0cb73289f">More...</a><br /></td></tr>
 <tr class="separator:a97f8291d4b825a3aa8b9cce0cb73289f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e34bf5a3185a9a9d3da0fe7a0d545bc"><td class="memTemplParams" colspan="2">template&lt;class T , typename  = std::enable_if_t&lt;                       sizeof(typename T::value_type) == sizeof(jlong) &amp;&amp;                       std::is_integral_v&lt;typename T::value_type&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a0e34bf5a3185a9a9d3da0fe7a0d545bc"><td class="memTemplItemLeft" align="right" valign="top">jlongArray&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#a0e34bf5a3185a9a9d3da0fe7a0d545bc">MakeJLongArray</a> (JNIEnv *env, const T &amp;arr)</td></tr>
+<tr class="separator:a0e34bf5a3185a9a9d3da0fe7a0d545bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70b85e53225cfdd4f6e038b20f922737"><td class="memItemLeft" align="right" valign="top">jobjectArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#a70b85e53225cfdd4f6e038b20f922737">MakeJStringArray</a> (JNIEnv *env, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const std::string &gt; arr)</td></tr>
 <tr class="memdesc:a70b85e53225cfdd4f6e038b20f922737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an array of std::string into a jarray of jstring.  <a href="namespacewpi_1_1java.html#a70b85e53225cfdd4f6e038b20f922737">More...</a><br /></td></tr>
 <tr class="separator:a70b85e53225cfdd4f6e038b20f922737"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -543,6 +546,44 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a0e34bf5a3185a9a9d3da0fe7a0d545bc" name="a0e34bf5a3185a9a9d3da0fe7a0d545bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e34bf5a3185a9a9d3da0fe7a0d545bc">&#9670;&nbsp;</a></span>MakeJLongArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , typename  = std::enable_if_t&lt;                       sizeof(typename T::value_type) == sizeof(jlong) &amp;&amp;                       std::is_integral_v&lt;typename T::value_type&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">jlongArray wpi::java::MakeJLongArray </td>
+          <td>(</td>
+          <td class="paramtype">JNIEnv *&#160;</td>
+          <td class="paramname"><em>env</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>arr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a03d617c196aeee2778c8b22699dd4acb" name="a03d617c196aeee2778c8b22699dd4acb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03d617c196aeee2778c8b22699dd4acb">&#9670;&nbsp;</a></span>MakeJString()</h2>
 
@@ -684,7 +725,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1java.html">java</a></li>
-    <li class="footer">Generated on Tue Aug 30 2022 04:57:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Aug 31 2022 03:43:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
