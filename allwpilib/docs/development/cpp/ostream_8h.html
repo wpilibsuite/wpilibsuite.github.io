@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-82-gb5a17f7</span>
    </div>
   </td>
  </tr>
@@ -111,19 +111,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1is__streamable_3_01_t_00_01_char_00_01enable__if__t_3_01std_1_1is__arithmetic_3_bc0b1f731ff3d9ab9d28f3bb9a486c4c.html">detail::is_streamable&lt; T, Char, enable_if_t&lt; std::is_arithmetic&lt; T &gt;::value||std::is_array&lt; T &gt;::value||std::is_pointer&lt; T &gt;::value||std::is_same&lt; T, char8_type &gt;::value||std::is_convertible&lt; T, fmt::basic_string_view&lt; Char &gt; &gt;::value||std::is_same&lt; T, std_string_view&lt; Char &gt; &gt;::value||(std::is_convertible&lt; T, int &gt;::value &amp;&amp;!std::is_enum&lt; T &gt;::value)&gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1dummy__filebuf.html">detail::dummy_filebuf</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1ms__filebuf.html">detail::ms_filebuf&lt; T, U &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1ms__filebuf_3_01_t_00_01decltype_07_t_1_1___myfile_00_010_08_4.html">detail::ms_filebuf&lt; T, decltype(T::_Myfile, 0)&gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1filebuf__access.html">detail::filebuf_access&lt; Tag, FileMemberPtr, file &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1file__access.html">detail::file_access&lt; Tag, BufType, FileMemberPtr &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1streamed__view.html">detail::streamed_view&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbasic__ostream__formatter.html">basic_ostream_formatter&lt; Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01detail_1_1streamed__view_3_01_t_01_4_01_4.html">formatter&lt; detail::streamed_view&lt; T &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01detail_1_1streamed__view_3_01_t_01_4_00_01_char_01_4.html">formatter&lt; detail::streamed_view&lt; T &gt;, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1fallback__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01is__streamable_3_0116a9df8564c2d9e12499cd5b72786d7c.html">detail::fallback_formatter&lt; T, Char, enable_if_t&lt; is_streamable&lt; T, Char &gt;::value &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,22 +129,15 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a1f212938957dc32d31061e4453be7eec"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a1f212938957dc32d31061e4453be7eec">detail::filebuf_type</a> = ms_filebuf&lt; std::filebuf &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a></td></tr>
-<tr class="separator:a1f212938957dc32d31061e4453be7eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c6f5be12db252dec646dad81adee12e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ostream_8h.html#a4c6f5be12db252dec646dad81adee12e">ostream_formatter</a> = <a class="el" href="structbasic__ostream__formatter.html">basic_ostream_formatter</a>&lt; char &gt;</td></tr>
 <tr class="separator:a4c6f5be12db252dec646dad81adee12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a758ab3f0784e18cae7f92a18a3377fd9"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
-<tr class="memitem:a758ab3f0784e18cae7f92a18a3377fd9"><td class="memTemplItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a758ab3f0784e18cae7f92a18a3377fd9">detail::get_file</a> (std::basic_filebuf&lt; Char &gt; &amp;)</td></tr>
-<tr class="separator:a758ab3f0784e18cae7f92a18a3377fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b1bebfe36f2b9adcca6c5bfaac109a"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a66b1bebfe36f2b9adcca6c5bfaac109a">detail::get_file</a> (filebuf_type &amp;buf)</td></tr>
-<tr class="separator:a66b1bebfe36f2b9adcca6c5bfaac109a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eb2fe286afe31b0350d6101fb508a7c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a8eb2fe286afe31b0350d6101fb508a7c">detail::write</a> (std::filebuf &amp;buf, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="structdata.html">data</a>)</td></tr>
-<tr class="separator:a8eb2fe286afe31b0350d6101fb508a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a210fb57ddfd24ad60da11fea8f43d3a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a210fb57ddfd24ad60da11fea8f43d3a6">detail::write</a> (std::wfilebuf &amp;, fmt::basic_string_view&lt; wchar_t &gt;)</td></tr>
-<tr class="separator:a210fb57ddfd24ad60da11fea8f43d3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b3ceaebbda09a40dd19b8424700312"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a18b3ceaebbda09a40dd19b8424700312">detail::write_ostream_unicode</a> (std::ostream &amp;os, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="structdata.html">data</a>)</td></tr>
+<tr class="separator:a18b3ceaebbda09a40dd19b8424700312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c90b64b8207433fdf94ac6f477556e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a57c90b64b8207433fdf94ac6f477556e">detail::write_ostream_unicode</a> (std::wostream &amp;, fmt::basic_string_view&lt; wchar_t &gt;)</td></tr>
+<tr class="separator:a57c90b64b8207433fdf94ac6f477556e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab774ebdb3565689cdc79ab10b0cb16ef"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
 <tr class="memitem:ab774ebdb3565689cdc79ab10b0cb16ef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ab774ebdb3565689cdc79ab10b0cb16ef">detail::write_buffer</a> (std::basic_ostream&lt; Char &gt; &amp;os, <a class="el" href="classbuffer.html">buffer</a>&lt; Char &gt; &amp;buf)</td></tr>
 <tr class="separator:ab774ebdb3565689cdc79ab10b0cb16ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +148,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a37854b23f0c5d5b9ee8f798a32352c16"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ostream_8h.html#a37854b23f0c5d5b9ee8f798a32352c16">streamed</a> (const T &amp;<a class="el" href="classvalue.html">value</a>) -&gt; <a class="el" href="structdetail_1_1streamed__view.html">detail::streamed_view</a>&lt; T &gt;</td></tr>
 <tr class="memdesc:a37854b23f0c5d5b9ee8f798a32352c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">\rst Returns a view that formats <code>value</code> via an ostream <code>operator&lt;&lt;</code>.  <a href="ostream_8h.html#a37854b23f0c5d5b9ee8f798a32352c16">More...</a><br /></td></tr>
 <tr class="separator:a37854b23f0c5d5b9ee8f798a32352c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c63d6bf502bd2ac957a0b6ed46196cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a5c63d6bf502bd2ac957a0b6ed46196cb">detail::vprint_directly</a> (std::ostream &amp;os, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a> format_str, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a> args)</td></tr>
+<tr class="separator:a5c63d6bf502bd2ac957a0b6ed46196cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95daddd607edcc56b0d40b1dd61464cc"><td class="memTemplParams" colspan="2">template&lt;typename Char &gt; </td></tr>
 <tr class="memitem:a95daddd607edcc56b0d40b1dd61464cc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a89d845f93bbf31e93277429b48e36a1e">FMT_MODULE_EXPORT</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ostream_8h.html#a95daddd607edcc56b0d40b1dd61464cc">vprint</a> (std::basic_ostream&lt; Char &gt; &amp;os, <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt; &gt; format_str, <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; <a class="el" href="core_8h.html#aaaef905b4cc5da6969d9ee839d668406">buffer_context</a>&lt; <a class="el" href="core_8h.html#aca42c1976d1b12998afcabf8f39e8c23">type_identity_t</a>&lt; Char &gt; &gt; &gt; args)</td></tr>
 <tr class="separator:a95daddd607edcc56b0d40b1dd61464cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,7 +319,7 @@ template&lt;typename Char &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="ostream_8h.html">ostream.h</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 18:32:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 1 2022 21:50:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

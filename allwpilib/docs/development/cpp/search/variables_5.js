@@ -2,8 +2,8 @@ var searchData=
 [
   ['e_0',['e',['../namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58',1,'wpi::numbers::e()'],['../structbasic__fp.html#a1e4a14ea86e324547aa69f30d426d0c6',1,'basic_fp::e()']]],
   ['e_5fv_1',['e_v',['../namespacewpi_1_1numbers.html#a18cb1db052ecb5fd43a5c17b01e935d2',1,'wpi::numbers']]],
-  ['ebps_2',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
-  ['ebps_3',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
+  ['ebps_2',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
+  ['ebps_3',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
   ['egamma_4',['egamma',['../namespacewpi_1_1numbers.html#a604f75da45b20d844a570a909d1d8755',1,'wpi::numbers']]],
   ['egamma_5fv_5',['egamma_v',['../namespacewpi_1_1numbers.html#a3c901fc24334447fd2b397eacb092f08',1,'wpi::numbers']]],
   ['elaborations_6',['elaborations',['../_third_party_notices_8txt.html#a22adf0f3f4508732c311a0db3aa1e5a3',1,'ThirdPartyNotices.txt']]],

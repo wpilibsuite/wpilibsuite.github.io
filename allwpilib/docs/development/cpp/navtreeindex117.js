@@ -1,5 +1,15 @@
 var NAVTREEINDEX117 =
 {
+"group__hal__driverstation.html#ga3ccd000ef148655282d736312eac1b35":[3,1,26,50],
+"group__hal__driverstation.html#ga42b57ded6c79f4d22b54a84cad92a2ec":[3,1,26,47],
+"group__hal__driverstation.html#ga4eea37e55b0d07dd9e2490004bab5ed4":[3,1,26,31],
+"group__hal__driverstation.html#ga5940b8a0631ad2e59bb74c60874f720f":[3,1,26,25],
+"group__hal__driverstation.html#ga5e8e9c88fbad12c7295cf08cfb6eca18":[3,1,26,27],
+"group__hal__driverstation.html#ga603fe79cae8b979b60aec60d55f444f4":[3,1,26,24],
+"group__hal__driverstation.html#ga6932d728c3dbb4c38c113b114f1129e6":[3,1,26,18],
+"group__hal__driverstation.html#ga724c32729cbe5a7f61407be2547eb811":[3,1,26,35],
+"group__hal__driverstation.html#ga735cc2cab55eb9ee9394aebff01a6f63":[3,1,26,23],
+"group__hal__driverstation.html#ga738d3ae3837710acbfaa0c46fd82412e":[3,1,26,53],
 "group__hal__driverstation.html#ga772a67be43c2e394f3f45b4e29ddd770":[3,1,26,16],
 "group__hal__driverstation.html#ga7b599cd8d6b568304e86ab35d8e48c24":[3,1,26,34],
 "group__hal__driverstation.html#ga7b7f9ea326fc113ee99a66e67887010b":[3,1,26,37],
@@ -239,15 +249,5 @@ var NAVTREEINDEX117 =
 "group__hal__ports.html#gad2640f47afb8191db107a0ca558fc5b0":[3,1,11,15],
 "group__hal__ports.html#gae41833d9f4375b7d7e038bb638720d41":[3,1,11,14],
 "group__hal__ports.html#gafca4607854bbe0c598d7e59d22e625ed":[3,1,11,21],
-"group__hal__power.html":[3,1,4],
-"group__hal__power.html#ga0ffc678a1cce30e7eb7af10a0f53786a":[3,1,4,9],
-"group__hal__power.html#ga3bafe80920775c542d1dc0eada80c548":[3,1,4,13],
-"group__hal__power.html#ga48ee547639beb382aaf30317be5ca6dd":[3,1,4,10],
-"group__hal__power.html#ga52b0f40f1a61e88b50547c8ca611e469":[3,1,4,6],
-"group__hal__power.html#ga54bbd26b5af42f7ee1978681128fbddf":[3,1,4,7],
-"group__hal__power.html#ga5edc3b2140ad16d76545f5a2251843ae":[3,1,4,2],
-"group__hal__power.html#ga6d5cb1a44dbe17802df0b78f8e19bb91":[3,1,4,0],
-"group__hal__power.html#ga772a5710a48dde57c0e93756e897f4b6":[3,1,4,5],
-"group__hal__power.html#ga7bde6a4fc8b7c730b82deea2f50c676e":[3,1,4,1],
-"group__hal__power.html#gab793b44ece04e698052bfd5f1fd331fe":[3,1,4,11]
+"group__hal__power.html":[3,1,4]
 };

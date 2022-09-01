@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-82-gb5a17f7</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,7 @@ $(document).ready(function(){initNavTree('ranges_8h.html',''); initResizable(); 
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">ranges.h File Reference</div></div>
 </div><!--header-->
@@ -157,9 +158,17 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1range__mapper.html">detail::range_mapper&lt; Context &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01_r_00_01_char_00_01enable__if__t_3_01conjunction_3_01fmt_1_1is__range_3_01_rbca8f5d0ca181acb28fae12bebdbed4a.html">formatter&lt; R, Char, enable_if_t&lt; conjunction&lt; fmt::is_range&lt; R, Char &gt;, disjunction&lt; is_formattable&lt; detail::uncvref_type&lt; detail::maybe_const_range&lt; R &gt; &gt;, Char &gt;, detail::has_fallback_formatter&lt; detail::uncvref_type&lt; detail::maybe_const_range&lt; R &gt; &gt;, Char &gt; &gt; &gt;::value &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1is__formattable__delayed.html">detail::is_formattable_delayed&lt; R, Char &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01conjunction_3_01detail_1_1is__map_3_01_0d406c3417c181be9f0eacb53c894f62.html">formatter&lt; T, Char, enable_if_t&lt; conjunction&lt; detail::is_map&lt; T &gt;, disjunction&lt; is_formattable&lt; detail::uncvref_first_type&lt; T &gt;, Char &gt;, detail::has_fallback_formatter&lt; detail::uncvref_first_type&lt; T &gt;, Char &gt; &gt;, disjunction&lt; is_formattable&lt; detail::uncvref_second_type&lt; T &gt;, Char &gt;, detail::has_fallback_formatter&lt; detail::uncvref_second_type&lt; T &gt;, Char &gt; &gt; &gt;::value &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrange__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01conjunction_3_01std_1_1is__same_536f73f090b177cf0b0b66b0cacb6cc1.html">range_formatter&lt; T, Char, enable_if_t&lt; conjunction&lt; std::is_same&lt; T, remove_cvref_t&lt; T &gt; &gt;, disjunction&lt; is_formattable&lt; T, Char &gt;, detail::has_fallback_formatter&lt; T, Char &gt; &gt; &gt;::value &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1range__format__kind__.html">detail::range_format_kind_&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1range__default__formatter_3_01_k_00_01_r_00_01_char_00_01enable__if__t_3_07_k_0a16708de8f3126c16f8d4d6b0d6029b33.html">detail::range_default_formatter&lt; K, R, Char, enable_if_t&lt;(K==range_format::sequence||K==range_format::map||K==range_format::set)&gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrange__format__kind.html">range_format_kind&lt; T, Char, Enable &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structformatter_3_01_r_00_01_char_00_01enable__if__t_3_01conjunction_3_01bool__constant_3_01rang7f5d4717e46da784661cc5904a6b06c3.html">formatter&lt; R, Char, enable_if_t&lt; conjunction&lt; bool_constant&lt; range_format_kind&lt; R, Char &gt;::value !=range_format::disabled &gt;, detail::is_formattable_delayed&lt; R, Char &gt; &gt;::value &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtuple__join__view.html">tuple_join_view&lt; Char, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,9 +204,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a85d29c451cd31d3d672ce9c1826ba46d"><td class="memTemplParams" colspan="2">template&lt;typename Range &gt; </td></tr>
 <tr class="memitem:a85d29c451cd31d3d672ce9c1826ba46d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a85d29c451cd31d3d672ce9c1826ba46d">detail::uncvref_type</a> = <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; range_reference_type&lt; Range &gt; &gt;</td></tr>
 <tr class="separator:a85d29c451cd31d3d672ce9c1826ba46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94cb23bcc038d66206fcc0851ce4f43e"><td class="memTemplParams" colspan="2">template&lt;typename Range &gt; </td></tr>
-<tr class="memitem:a94cb23bcc038d66206fcc0851ce4f43e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a94cb23bcc038d66206fcc0851ce4f43e">detail::uncvref_first_type</a> = <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; decltype(std::declval&lt; range_reference_type&lt; Range &gt; &gt;().first)&gt;</td></tr>
-<tr class="separator:a94cb23bcc038d66206fcc0851ce4f43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44548167d5918074819cfbf4c56263e8"><td class="memTemplParams" colspan="2">template&lt;typename Range &gt; </td></tr>
+<tr class="memitem:a44548167d5918074819cfbf4c56263e8"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a44548167d5918074819cfbf4c56263e8">detail::uncvref_first_type</a> = <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; decltype(std::declval&lt; range_reference_type&lt; Range &gt; &gt;().first)&gt;</td></tr>
+<tr class="separator:a44548167d5918074819cfbf4c56263e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5ca9c693944c5d792259ba87a174fec"><td class="memTemplParams" colspan="2">template&lt;typename Range &gt; </td></tr>
 <tr class="memitem:ae5ca9c693944c5d792259ba87a174fec"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ae5ca9c693944c5d792259ba87a174fec">detail::uncvref_second_type</a> = <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; decltype(std::declval&lt; range_reference_type&lt; Range &gt; &gt;().second)&gt;</td></tr>
 <tr class="separator:ae5ca9c693944c5d792259ba87a174fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,9 +216,26 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa752d7c08f69ccbc3955f5f017b96a43"><td class="memTemplParams" colspan="2">template&lt;typename R &gt; </td></tr>
 <tr class="memitem:aa752d7c08f69ccbc3955f5f017b96a43"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#aa752d7c08f69ccbc3955f5f017b96a43">detail::maybe_const_range</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; has_const_begin_end&lt; R &gt;<a class="el" href="classvalue.html">::value</a>, const R, R &gt;</td></tr>
 <tr class="separator:aa752d7c08f69ccbc3955f5f017b96a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d19a7a5cfc6592c7ddae93d8930c9f"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4d">range_format</a> K&gt; </td></tr>
+<tr class="memitem:ac6d19a7a5cfc6592c7ddae93d8930c9f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ac6d19a7a5cfc6592c7ddae93d8930c9f">detail::range_format_constant</a> = std::integral_constant&lt; <a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4d">range_format</a>, K &gt;</td></tr>
+<tr class="separator:ac6d19a7a5cfc6592c7ddae93d8930c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8920b749a50a22be883802b82c420d23"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename... T&gt; </td></tr>
 <tr class="memitem:a8920b749a50a22be883802b82c420d23"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="ranges_8h.html#a8920b749a50a22be883802b82c420d23">tuple_arg_join</a> = <a class="el" href="structtuple__join__view.html">tuple_join_view</a>&lt; Char, T... &gt;</td></tr>
 <tr class="separator:a8920b749a50a22be883802b82c420d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a080be1238e6ee3bd4b9f193b4181cf4d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4d">range_format</a> { <br />
+&#160;&#160;<a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4da075ae3d2fc31640504f814f60e5ef713">disabled</a>
+, <a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4da1d78dc8ed51214e518b5114fe24490ae">map</a>
+, <a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e">set</a>
+, <a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4dafa1c731ead93e333a9180e16f968c01e">sequence</a>
+, <br />
+&#160;&#160;<a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4dab45cffe084dd3d20d928bee85e7b0f21">string</a>
+, <a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4daa23944d02095b1044f8d7dbfff7d953f">debug_string</a>
+<br />
+ }</td></tr>
+<tr class="separator:a080be1238e6ee3bd4b9f193b4181cf4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -332,6 +358,37 @@ template&lt;typename Char , typename... T&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a080be1238e6ee3bd4b9f193b4181cf4d" name="a080be1238e6ee3bd4b9f193b4181cf4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a080be1238e6ee3bd4b9f193b4181cf4d">&#9670;&nbsp;</a></span>range_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4d">range_format</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a080be1238e6ee3bd4b9f193b4181cf4da075ae3d2fc31640504f814f60e5ef713" name="a080be1238e6ee3bd4b9f193b4181cf4da075ae3d2fc31640504f814f60e5ef713"></a>disabled&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a080be1238e6ee3bd4b9f193b4181cf4da1d78dc8ed51214e518b5114fe24490ae" name="a080be1238e6ee3bd4b9f193b4181cf4da1d78dc8ed51214e518b5114fe24490ae"></a>map&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e" name="a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e"></a>set&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a080be1238e6ee3bd4b9f193b4181cf4dafa1c731ead93e333a9180e16f968c01e" name="a080be1238e6ee3bd4b9f193b4181cf4dafa1c731ead93e333a9180e16f968c01e"></a>sequence&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a080be1238e6ee3bd4b9f193b4181cf4dab45cffe084dd3d20d928bee85e7b0f21" name="a080be1238e6ee3bd4b9f193b4181cf4dab45cffe084dd3d20d928bee85e7b0f21"></a>string&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a080be1238e6ee3bd4b9f193b4181cf4daa23944d02095b1044f8d7dbfff7d953f" name="a080be1238e6ee3bd4b9f193b4181cf4daa23944d02095b1044f8d7dbfff7d953f"></a>debug_string&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac0973a76516aa6938da15e829e50273a" name="ac0973a76516aa6938da15e829e50273a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0973a76516aa6938da15e829e50273a">&#9670;&nbsp;</a></span>join() <span class="overload">[1/3]</span></h2>
@@ -437,7 +494,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="ranges_8h.html">ranges.h</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 18:32:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 1 2022 21:50:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-82-gb5a17f7</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ template&lt;class UnitFrom , class UnitTo , typename T  = UNIT_LIB_DEFAULT_TYPE&
 
 <p>converts a <em>value</em> from one type to another. </p>
 <p >Converts a <em>value</em> of a built-in arithmetic type to another unit. This does not change the type of <em>value</em>, only what it contains. E.g. </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> <a class="code hl_enumeration" href="namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8b">result</a> = convert&lt;length::meters, length::feet&gt;(1.0); <span class="comment">// result == 3.28084 </span></div>
-<div class="ttc" id="anamespacedigits_html_a8875a3e1d62490230fa116b4c1f99c8b"><div class="ttname"><a href="namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8b">digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format.h:2531</div></div>
+<div class="ttc" id="anamespacedigits_html_a8875a3e1d62490230fa116b4c1f99c8b"><div class="ttname"><a href="namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8b">digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format.h:2556</div></div>
 </div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="classunits_1_1unit__t.html" title="Container for values which represent quantities of a given unit.">unit_t</a> for implicit conversion <a class="el" href="_third_party_notices_8txt.html#a722520c6e3abb87f2a1ab08c64a89ced">of</a> <a class="el" href="structunits_1_1unit.html" title="Type representing an arbitrary unit.">unit</a> containers. </dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -191,7 +191,7 @@ template&lt;typename T , typename Units , class  = std::enable_if_t&lt;std::is_a
 <p>Casts a unit container to an arithmetic type. </p>
 <p >unit_cast can be used to remove the strong typing from a unit class, and convert it to a built-in arithmetic type. This may be useful for compatibility with libraries and legacy code that don't support <code><a class="el" href="classunits_1_1unit__t.html" title="Container for values which represent quantities of a given unit.">unit_t</a></code> types. E.g </p><div class="fragment"><div class="line">meter_t unitVal(5);</div>
 <div class="line"><span class="keywordtype">double</span> <a class="code hl_class" href="classvalue.html">value</a> = units::unit_cast&lt;double&gt;(unitVal);  <span class="comment">// value = 5.0</span></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1221</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1240</div></div>
 </div><!-- fragment --> <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Type to cast the unit type to. Must be a built-in arithmetic type. </td></tr>
@@ -213,7 +213,7 @@ template&lt;typename T , typename Units , class  = std::enable_if_t&lt;std::is_a
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Aug 31 2022 18:32:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 1 2022 21:50:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

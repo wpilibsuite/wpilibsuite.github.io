@@ -589,7 +589,8 @@ var hierarchy =
     [ "detail::conditional_helper< Ts >", "structdetail_1_1conditional__helper.html", null ],
     [ "conditional_t", null, [
       [ "conjunction< P1, Pn... >", "structconjunction_3_01_p1_00_01_pn_8_8_8_01_4.html", null ],
-      [ "disjunction< P1, Pn... >", "structdisjunction_3_01_p1_00_01_pn_8_8_8_01_4.html", null ]
+      [ "disjunction< P1, Pn... >", "structdisjunction_3_01_p1_00_01_pn_8_8_8_01_4.html", null ],
+      [ "range_format_kind< T, Char, Enable >", "structrange__format__kind.html", null ]
     ] ],
     [ "drake::assert::ConditionTraits< Condition >", "structdrake_1_1assert_1_1_condition_traits.html", null ],
     [ "Eigen::internal::conj_default_impl< Scalar, IsComplex >", "struct_eigen_1_1internal_1_1conj__default__impl.html", null ],
@@ -913,7 +914,6 @@ var hierarchy =
     [ "frc::DriverStation", "classfrc_1_1_driver_station.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1_driver_station_sim.html", null ],
     [ "frc::DSControlWord", "classfrc_1_1_d_s_control_word.html", null ],
-    [ "detail::dummy_filebuf", "structdetail_1_1dummy__filebuf.html", null ],
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1_duty_cycle_encoder_sim.html", null ],
     [ "frc::sim::DutyCycleSim", "classfrc_1_1sim_1_1_duty_cycle_sim.html", null ],
     [ "detail::dynamic_arg_list", "classdetail_1_1dynamic__arg__list.html", null ],
@@ -1430,6 +1430,9 @@ var hierarchy =
       [ "Eigen::internal::is_exp_known_type< T >", "struct_eigen_1_1internal_1_1is__exp__known__type.html", null ]
     ] ],
     [ "std::false_type", null, [
+      [ "disjunction< is_formattable< uncvref_type< maybe_const_range< R > >, Char >, has_fallback_formatter< uncvref_type< maybe_const_range< R > >, Char > >", "structdisjunction.html", [
+        [ "detail::is_formattable_delayed< R, Char >", "structdetail_1_1is__formattable__delayed.html", null ]
+      ] ],
       [ "is_contiguous< Container >", "structis__contiguous.html", [
         [ "is_contiguous_back_insert_iterator< std::back_insert_iterator< Container > >", "structis__contiguous__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01_container_01_4_01_4.html", null ]
       ] ],
@@ -1475,8 +1478,8 @@ var hierarchy =
     [ "frc::PneumaticHub::Faults", "structfrc_1_1_pneumatic_hub_1_1_faults.html", null ],
     [ "frc::PowerDistribution::Faults", "structfrc_1_1_power_distribution_1_1_faults.html", null ],
     [ "frc::FieldObject2d", "classfrc_1_1_field_object2d.html", null ],
+    [ "detail::file_access< Tag, BufType, FileMemberPtr >", "classdetail_1_1file__access.html", null ],
     [ "ghc::filesystem::file_status", "classghc_1_1filesystem_1_1file__status.html", null ],
-    [ "detail::filebuf_access< Tag, FileMemberPtr, file >", "classdetail_1_1filebuf__access.html", null ],
     [ "fill_t< Char >", "structfill__t.html", null ],
     [ "Eigen::internal::find_best_packet< T, Size >", "struct_eigen_1_1internal_1_1find__best__packet.html", null ],
     [ "Eigen::internal::find_best_packet_helper< Size, PacketType, Stop >", "struct_eigen_1_1internal_1_1find__best__packet__helper.html", null ],
@@ -1515,7 +1518,7 @@ var hierarchy =
     [ "formatter< basic_string_view< Char >, Char >", "structformatter.html", [
       [ "basic_ostream_formatter< Char >", "structbasic__ostream__formatter.html", [
         [ "detail::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >", "structdetail_1_1fallback__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01is__streamable_3_0116a9df8564c2d9e12499cd5b72786d7c.html", null ],
-        [ "formatter< detail::streamed_view< T > >", "structformatter_3_01detail_1_1streamed__view_3_01_t_01_4_01_4.html", null ],
+        [ "formatter< detail::streamed_view< T >, Char >", "structformatter_3_01detail_1_1streamed__view_3_01_t_01_4_00_01_char_01_4.html", null ],
         [ "formatter< std::thread::id, Char >", "structformatter_3_01std_1_1thread_1_1id_00_01_char_01_4.html", null ]
       ] ],
       [ "formatter< Char[N], Char >", "structformatter_3_01_char_0f_n_0e_00_01_char_01_4.html", null ]
@@ -1527,7 +1530,6 @@ var hierarchy =
     [ "formatter< detail::bigint >", "structformatter_3_01detail_1_1bigint_01_4.html", null ],
     [ "fmt::formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4.html", null ],
     [ "formatter< join_view< It, Sentinel, Char >, Char >", "structformatter_3_01join__view_3_01_it_00_01_sentinel_00_01_char_01_4_00_01_char_01_4.html", null ],
-    [ "formatter< R, Char, enable_if_t< conjunction< fmt::is_range< R, Char >, disjunction< is_formattable< detail::uncvref_type< detail::maybe_const_range< R > >, Char >, detail::has_fallback_formatter< detail::uncvref_type< detail::maybe_const_range< R > >, Char > > >::value > >", "structformatter_3_01_r_00_01_char_00_01enable__if__t_3_01conjunction_3_01fmt_1_1is__range_3_01_rbca8f5d0ca181acb28fae12bebdbed4a.html", null ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::error_code, Char >", "structformatter_3_01std_1_1error__code_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
@@ -1536,7 +1538,6 @@ var hierarchy =
     [ "formatter< T, Char >", "structformatter.html", [
       [ "formatter< detail::styled_arg< T >, Char >", "structformatter_3_01detail_1_1styled__arg_3_01_t_01_4_00_01_char_01_4.html", null ]
     ] ],
-    [ "formatter< T, Char, enable_if_t< conjunction< detail::is_map< T >, disjunction< is_formattable< detail::uncvref_first_type< T >, Char >, detail::has_fallback_formatter< detail::uncvref_first_type< T >, Char > >, disjunction< is_formattable< detail::uncvref_second_type< T >, Char >, detail::has_fallback_formatter< detail::uncvref_second_type< T >, Char > > >::value > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01conjunction_3_01detail_1_1is__map_3_01_0d406c3417c181be9f0eacb53c894f62.html", null ],
     [ "formatter< T, Char, enable_if_t< detail::type_constant< T, Char >::value !=detail::type::custom_type > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01detail_1_1type__constant_3_01_t_00_01_ce66aa95d8f86570b04dc47971fbb1e4b.html", null ],
     [ "formatter< tuple_join_view< Char, T... >, Char >", "structformatter_3_01tuple__join__view_3_01_char_00_01_t_8_8_8_01_4_00_01_char_01_4.html", null ],
     [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value &&fmt::is_tuple_formattable< TupleT, Char >::value > >", "structformatter_3_01_tuple_t_00_01_char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01_tuple797f25cc01c29a62004a7da2d63b7b72.html", null ],
@@ -2470,8 +2471,6 @@ var hierarchy =
       ] ]
     ] ],
     [ "wpi::detail::move_construction_triviality_helper< T >", "unionwpi_1_1detail_1_1move__construction__triviality__helper.html", null ],
-    [ "detail::ms_filebuf< T, U >", "structdetail_1_1ms__filebuf.html", null ],
-    [ "detail::ms_filebuf< T, decltype(T::_Myfile, 0)>", "structdetail_1_1ms__filebuf_3_01_t_00_01decltype_07_t_1_1___myfile_00_010_08_4.html", null ],
     [ "Eigen::internal::mul_assign_op< DstScalar, SrcScalar >", "struct_eigen_1_1internal_1_1mul__assign__op.html", null ],
     [ "named_arg_info< Char >", "structnamed__arg__info.html", null ],
     [ "named_arg_info< char_type >", "structnamed__arg__info.html", null ],
@@ -2924,6 +2923,15 @@ var hierarchy =
     [ "Eigen::internal::random_default_impl< Scalar, true, false >", "struct_eigen_1_1internal_1_1random__default__impl_3_01_scalar_00_01true_00_01false_01_4.html", null ],
     [ "Eigen::internal::random_impl< bool >", "struct_eigen_1_1internal_1_1random__impl_3_01bool_01_4.html", null ],
     [ "Eigen::internal::random_retval< Scalar >", "struct_eigen_1_1internal_1_1random__retval.html", null ],
+    [ "detail::range_default_formatter< K, R, Char, Enable >", "structdetail_1_1range__default__formatter.html", null ],
+    [ "detail::range_default_formatter< K, R, Char, enable_if_t<(K==range_format::sequence||K==range_format::map||K==range_format::set)> >", "structdetail_1_1range__default__formatter_3_01_k_00_01_r_00_01_char_00_01enable__if__t_3_07_k_0a16708de8f3126c16f8d4d6b0d6029b33.html", null ],
+    [ "detail::range_default_formatter< range_format_kind< R, Char >::value, R, Char >", "structdetail_1_1range__default__formatter.html", [
+      [ "formatter< R, Char, enable_if_t< conjunction< bool_constant< range_format_kind< R, Char >::value !=range_format::disabled >, detail::is_formattable_delayed< R, Char > >::value > >", "structformatter_3_01_r_00_01_char_00_01enable__if__t_3_01conjunction_3_01bool__constant_3_01rang7f5d4717e46da784661cc5904a6b06c3.html", null ]
+    ] ],
+    [ "detail::range_format_kind_< T >", "structdetail_1_1range__format__kind__.html", null ],
+    [ "range_formatter< T, Char, Enable >", "structrange__formatter.html", null ],
+    [ "range_formatter< detail::uncvref_type< range_type >, Char >", "structrange__formatter.html", null ],
+    [ "range_formatter< T, Char, enable_if_t< conjunction< std::is_same< T, remove_cvref_t< T > >, disjunction< is_formattable< T, Char >, detail::has_fallback_formatter< T, Char > > >::value > >", "structrange__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01conjunction_3_01std_1_1is__same_536f73f090b177cf0b0b66b0cacb6cc1.html", null ],
     [ "detail::range_mapper< Context >", "structdetail_1_1range__mapper.html", null ],
     [ "wpi::raw_istream", "classwpi_1_1raw__istream.html", [
       [ "wpi::raw_fd_istream", "classwpi_1_1raw__fd__istream.html", null ],
@@ -3883,6 +3891,7 @@ var hierarchy =
     [ "Eigen::PlainObjectBase< Derived >::StridedConstAlignedMapType< StrideType >", "struct_eigen_1_1_plain_object_base_1_1_strided_const_aligned_map_type.html", null ],
     [ "Eigen::PlainObjectBase< Derived >::StridedConstMapType< StrideType >", "struct_eigen_1_1_plain_object_base_1_1_strided_const_map_type.html", null ],
     [ "Eigen::PlainObjectBase< Derived >::StridedMapType< StrideType >", "struct_eigen_1_1_plain_object_base_1_1_strided_map_type.html", null ],
+    [ "detail::string_literal< CharT, C >", "structdetail_1_1string__literal.html", null ],
     [ "string_value< Char >", "structstring__value.html", null ],
     [ "string_value< char_type >", "structstring__value.html", null ],
     [ "wpi::StringMapEntryBase", "classwpi_1_1_string_map_entry_base.html", [

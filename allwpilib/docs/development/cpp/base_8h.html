@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-82-gb5a17f7</span>
    </div>
   </td>
  </tr>
@@ -863,8 +863,8 @@ Variables</h2></td></tr>
 <div class="line">        }\<span class="comment"></span></div>
 <div class="line"><span class="comment">        /** @endcond */</span>\</div>
 <div class="line">    }</div>
-<div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:571</div></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> xchar.h:17</div></div>
+<div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
+<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> xchar.h:16</div></div>
 <div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> luminous_flux.h:31</div></div>
 </div><!-- fragment -->
 </div>
@@ -1022,8 +1022,8 @@ Variables</h2></td></tr>
 <div class="line">        }\</div>
 <div class="line">    }</div>
 <div class="ttc" id="anamespaceunits_1_1detail_html_a0fc33d31c4dcf18fd9a2c272f6370b0a"><div class="ttname"><a href="namespaceunits_1_1detail.html#a0fc33d31c4dcf18fd9a2c272f6370b0a">units::detail::to_string</a></div><div class="ttdeci">std::string to_string(const T &amp;t)</div><div class="ttdef"><b>Definition:</b> base.h:97</div></div>
-<div class="ttc" id="axchar_8h_html_a082005429bfc92924f174a8e1b8619cf"><div class="ttname"><a href="xchar_8h.html#a082005429bfc92924f174a8e1b8619cf">format</a></div><div class="ttdeci">auto format(wformat_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::wstring</div><div class="ttdef"><b>Definition:</b> xchar.h:91</div></div>
-<div class="ttc" id="axchar_8h_html_a4ba756b447388cbd97a3f5b4954d7db6"><div class="ttname"><a href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a></div><div class="ttdeci">auto format_to(OutputIt out, const S &amp;fmt, Args &amp;&amp;... args) -&gt; OutputIt</div><div class="ttdef"><b>Definition:</b> xchar.h:139</div></div>
+<div class="ttc" id="axchar_8h_html_a082005429bfc92924f174a8e1b8619cf"><div class="ttname"><a href="xchar_8h.html#a082005429bfc92924f174a8e1b8619cf">format</a></div><div class="ttdeci">auto format(wformat_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::wstring</div><div class="ttdef"><b>Definition:</b> xchar.h:87</div></div>
+<div class="ttc" id="axchar_8h_html_a4ba756b447388cbd97a3f5b4954d7db6"><div class="ttname"><a href="xchar_8h.html#a4ba756b447388cbd97a3f5b4954d7db6">format_to</a></div><div class="ttdeci">auto format_to(OutputIt out, const S &amp;fmt, Args &amp;&amp;... args) -&gt; OutputIt</div><div class="ttdef"><b>Definition:</b> xchar.h:136</div></div>
 </div><!-- fragment -->
 <p>Macro for generating the boiler-plate code needed for I/O for a new unit. </p>
 <p >The macro generates the code to insert units into an ostream. It prints both the value and abbreviation of the unit when invoked. </p><dl class="params"><dt>Parameters</dt><dd>
@@ -1058,7 +1058,7 @@ Variables</h2></td></tr>
 <div class="line">        template&lt;<span class="keyword">typename</span>... T&gt; <span class="keyword">struct </span>is_ ## unitCategory ## _unit : std::integral_constant&lt;bool, units::all_true&lt;units::traits::detail::is_ ## unitCategory ## _unit_impl&lt;std::decay_t&lt;T&gt;&gt;::value...&gt;::value&gt; {};\</div>
 <div class="line">        template&lt;<span class="keyword">typename</span>... T&gt; <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> is_ ## unitCategory ## _unit_v = is_ ## unitCategory ## _unit&lt;T...&gt;<a class="code hl_class" href="classvalue.html">::value</a>;\</div>
 <div class="line">    }</div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1221</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1240</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1104,7 +1104,7 @@ Variables</h2></td></tr>
 <div class="line">            return namespaceName::nameSingular ## _t(<span class="keyword">static_cast&lt;</span>namespaceName::nameSingular ## _t::underlying_type<span class="keyword">&gt;</span>(d));\</div>
 <div class="line">        }\</div>
 <div class="line">    }</div>
-<div class="ttc" id="anamespaceliterals_html"><div class="ttname"><a href="namespaceliterals.html">literals</a></div><div class="ttdef"><b>Definition:</b> xchar.h:49</div></div>
+<div class="ttc" id="anamespaceliterals_html"><div class="ttname"><a href="namespaceliterals.html">literals</a></div><div class="ttdef"><b>Definition:</b> xchar.h:50</div></div>
 </div><!-- fragment -->
 <p>Macro for generating user-defined literals for units. </p>
 <p >The macro generates user-defined literals for units. A literal suffix is created using the abbreviation (e.g. <code>10.0_m</code>). </p><dl class="params"><dt>Parameters</dt><dd>
@@ -1560,7 +1560,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="base_8h.html">base.h</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 18:32:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 1 2022 21:50:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

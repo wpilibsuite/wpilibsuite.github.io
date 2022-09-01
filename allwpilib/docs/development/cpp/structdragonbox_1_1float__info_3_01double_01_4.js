@@ -2,8 +2,6 @@ var structdragonbox_1_1float__info_3_01double_01_4 =
 [
     [ "carrier_uint", "structdragonbox_1_1float__info_3_01double_01_4.html#a2ba1296ddfec66be8d872e09f32c7f2b", null ],
     [ "big_divisor", "structdragonbox_1_1float__info_3_01double_01_4.html#ad5efc588d695588c4e39be90e2df06fd", null ],
-    [ "case_fc_pm_half_lower_threshold", "structdragonbox_1_1float__info_3_01double_01_4.html#a06d6cb45fc7101a3c825599aecbe3051", null ],
-    [ "divisibility_check_by_5_threshold", "structdragonbox_1_1float__info_3_01double_01_4.html#a07dd3de5739172f1478270bda2808bf0", null ],
     [ "exponent_bits", "structdragonbox_1_1float__info_3_01double_01_4.html#a22e3bd20c4145e765ec84eb5a0724741", null ],
     [ "kappa", "structdragonbox_1_1float__info_3_01double_01_4.html#a6a5a64136c606edb6e4cbdc7dc4def0c", null ],
     [ "max_k", "structdragonbox_1_1float__info_3_01double_01_4.html#ac27c0a6bac518775185cd872cd75c4d5", null ],

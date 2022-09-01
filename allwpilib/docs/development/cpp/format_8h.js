@@ -1,5 +1,6 @@
 var format_8h =
 [
+    [ "detail::string_literal< CharT, C >", "structdetail_1_1string__literal.html", "structdetail_1_1string__literal" ],
     [ "detail::formatbuf< Streambuf >", "classdetail_1_1formatbuf.html", "classdetail_1_1formatbuf" ],
     [ "detail::uint128_fallback", "classdetail_1_1uint128__fallback.html", "classdetail_1_1uint128__fallback" ],
     [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", "classbasic__memory__buffer" ],
@@ -143,7 +144,7 @@ var format_8h =
     [ "format", "format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa", null ],
     [ "format_as", "format_8h.html#a8edb72b998b5c59c01243d908949ce87", null ],
     [ "format_decimal", "format_8h.html#a7eadb94a7e705ab1268f23dfe274db8d", null ],
-    [ "format_decimal", "format_8h.html#ad7cfda17749d312d6c63d5eb081dad46", null ],
+    [ "format_decimal", "format_8h.html#a165e3f3ce7817fa3b14dc5920d6acc43", null ],
     [ "format_dragon", "format_8h.html#a510659ecef3d8ef10992996732a723f7", null ],
     [ "format_error_code", "format_8h.html#a2b446037a38bd1da9d56c4e1b25592fe", null ],
     [ "format_float", "format_8h.html#af11f840ad580640b78a64b3353cc7bdf", null ],

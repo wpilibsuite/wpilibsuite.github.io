@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-82-gb5a17f7</span>
    </div>
   </td>
  </tr>
@@ -115,6 +115,8 @@ $(document).ready(function(){initNavTree('format_8h.html',''); initResizable(); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1string__literal.html">detail::string_literal&lt; CharT, C &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1formatbuf.html">detail::formatbuf&lt; Streambuf &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1uint128__fallback.html">detail::uint128_fallback</a></td></tr>
@@ -491,9 +493,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7eadb94a7e705ab1268f23dfe274db8d"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename UInt &gt; </td></tr>
 <tr class="memitem:a7eadb94a7e705ab1268f23dfe274db8d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#acebe0f930dd6aecc374db251062e9d10">FMT_CONSTEXPR20</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="format_8h.html#a7eadb94a7e705ab1268f23dfe274db8d">format_decimal</a> (Char *out, UInt <a class="el" href="classvalue.html">value</a>, int size) -&gt; <a class="el" href="structformat__decimal__result.html">format_decimal_result</a>&lt; Char * &gt;</td></tr>
 <tr class="separator:a7eadb94a7e705ab1268f23dfe274db8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7cfda17749d312d6c63d5eb081dad46"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename UInt , typename Iterator , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_pointer&lt; <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; Iterator &gt; &gt;<a class="el" href="classvalue.html">::value</a>) &gt; </td></tr>
-<tr class="memitem:ad7cfda17749d312d6c63d5eb081dad46"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="format_8h.html#ad7cfda17749d312d6c63d5eb081dad46">format_decimal</a> (Iterator out, UInt <a class="el" href="classvalue.html">value</a>, int size) -&gt; <a class="el" href="structformat__decimal__result.html">format_decimal_result</a>&lt; Iterator &gt;</td></tr>
-<tr class="separator:ad7cfda17749d312d6c63d5eb081dad46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165e3f3ce7817fa3b14dc5920d6acc43"><td class="memTemplParams" colspan="2">template&lt;typename Char , typename UInt , typename Iterator , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_pointer&lt; <a class="el" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a>&lt; Iterator &gt; &gt;<a class="el" href="classvalue.html">::value</a>) &gt; </td></tr>
+<tr class="memitem:a165e3f3ce7817fa3b14dc5920d6acc43"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="format_8h.html#a165e3f3ce7817fa3b14dc5920d6acc43">format_decimal</a> (Iterator out, UInt <a class="el" href="classvalue.html">value</a>, int size) -&gt; <a class="el" href="structformat__decimal__result.html">format_decimal_result</a>&lt; Iterator &gt;</td></tr>
+<tr class="separator:a165e3f3ce7817fa3b14dc5920d6acc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed1232f67fa5db3db0cc267504837ab5"><td class="memTemplParams" colspan="2">template&lt;unsigned BASE_BITS, typename Char , typename UInt &gt; </td></tr>
 <tr class="memitem:aed1232f67fa5db3db0cc267504837ab5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="format_8h.html#aed1232f67fa5db3db0cc267504837ab5">format_uint</a> (Char *<a class="el" href="classbuffer.html">buffer</a>, UInt <a class="el" href="classvalue.html">value</a>, int num_digits, bool upper=false) -&gt; Char *</td></tr>
 <tr class="separator:aed1232f67fa5db3db0cc267504837ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1020,21 +1022,22 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  [] {                                                                     \</div>
-<div class="line">    <span class="comment">/* Use the hidden visibility as a workaround for a GCC bug (#1973). */</span> \</div>
-<div class="line">    <span class="comment">/* Use a macro-like name to avoid shadowing warnings. */</span>               \</div>
-<div class="line">    struct <a class="code hl_define" href="format_8h.html#a65e1bbcd941d957e3bc12befcdc726f3">FMT_GCC_VISIBILITY_HIDDEN</a> FMT_COMPILE_STRING : base {           \</div>
-<div class="line">      using <a class="code hl_enumvalue" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">char_type</a> = <a class="code hl_typedef" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">fmt::remove_cvref_t</a>&lt;<span class="keyword">decltype</span>(s[0])&gt;;               \</div>
-<div class="line">      FMT_MAYBE_UNUSED <a class="code hl_define" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> explicit                              \</div>
-<div class="line">      operator fmt::basic_string_view&lt;char_type&gt;()<span class="keyword"> const </span>{                 \</div>
-<div class="line">        return fmt::detail_exported::compile_string_to_view&lt;char_type&gt;(s); \</div>
-<div class="line">      }                                                                    \</div>
-<div class="line">    };                                                                     \</div>
-<div class="line">    return FMT_COMPILE_STRING();                                           \</div>
+<b>Value:</b><div class="fragment"><div class="line">  [] {                                                                        \</div>
+<div class="line">    <span class="comment">/* Use the hidden visibility as a workaround for a GCC bug (#1973). */</span>    \</div>
+<div class="line">    <span class="comment">/* Use a macro-like name to avoid shadowing warnings. */</span>                  \</div>
+<div class="line">    struct <a class="code hl_define" href="format_8h.html#a65e1bbcd941d957e3bc12befcdc726f3">FMT_GCC_VISIBILITY_HIDDEN</a> FMT_COMPILE_STRING : base {              \</div>
+<div class="line">      using <a class="code hl_enumvalue" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">char_type</a> <a class="code hl_define" href="format_8h.html#a5df1fbe4814ecdaf28b17b6546f80d25">FMT_MAYBE_UNUSED</a> = <a class="code hl_typedef" href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">fmt::remove_cvref_t</a>&lt;<span class="keyword">decltype</span>(s[0])&gt;; \</div>
+<div class="line">      FMT_MAYBE_UNUSED <a class="code hl_define" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> explicit                                 \</div>
+<div class="line">      operator fmt::basic_string_view&lt;char_type&gt;()<span class="keyword"> const </span>{                    \</div>
+<div class="line">        return fmt::detail_exported::compile_string_to_view&lt;char_type&gt;(s);    \</div>
+<div class="line">      }                                                                       \</div>
+<div class="line">    };                                                                        \</div>
+<div class="line">    return FMT_COMPILE_STRING();                                              \</div>
 <div class="line">  }()</div>
 <div class="ttc" id="acore_8h_html_a69201cb276383873487bf68b4ef8b4cd"><div class="ttname"><a href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a></div><div class="ttdeci">#define FMT_CONSTEXPR</div><div class="ttdef"><b>Definition:</b> core.h:106</div></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">type::char_type</a></div><div class="ttdeci">@ char_type</div></div>
-<div class="ttc" id="acore_8h_html_ada5b2a956a74d40f6afec72d7d0adc27"><div class="ttname"><a href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a></div><div class="ttdeci">typename std::remove_cv&lt; remove_reference_t&lt; T &gt; &gt;::type remove_cvref_t</div><div class="ttdef"><b>Definition:</b> core.h:303</div></div>
+<div class="ttc" id="acore_8h_html_ada5b2a956a74d40f6afec72d7d0adc27"><div class="ttname"><a href="core_8h.html#ada5b2a956a74d40f6afec72d7d0adc27">remove_cvref_t</a></div><div class="ttdeci">typename std::remove_cv&lt; remove_reference_t&lt; T &gt; &gt;::type remove_cvref_t</div><div class="ttdef"><b>Definition:</b> core.h:307</div></div>
+<div class="ttc" id="aformat_8h_html_a5df1fbe4814ecdaf28b17b6546f80d25"><div class="ttname"><a href="format_8h.html#a5df1fbe4814ecdaf28b17b6546f80d25">FMT_MAYBE_UNUSED</a></div><div class="ttdeci">#define FMT_MAYBE_UNUSED</div><div class="ttdef"><b>Definition:</b> format.h:117</div></div>
 <div class="ttc" id="aformat_8h_html_a65e1bbcd941d957e3bc12befcdc726f3"><div class="ttname"><a href="format_8h.html#a65e1bbcd941d957e3bc12befcdc726f3">FMT_GCC_VISIBILITY_HIDDEN</a></div><div class="ttdeci">#define FMT_GCC_VISIBILITY_HIDDEN</div><div class="ttdef"><b>Definition:</b> format.h:53</div></div>
 </div><!-- fragment -->
 </div>
@@ -2054,8 +2057,8 @@ template&lt;typename Char , typename UInt &gt; </div>
 
 </div>
 </div>
-<a id="ad7cfda17749d312d6c63d5eb081dad46" name="ad7cfda17749d312d6c63d5eb081dad46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7cfda17749d312d6c63d5eb081dad46">&#9670;&nbsp;</a></span>format_decimal() <span class="overload">[2/2]</span></h2>
+<a id="a165e3f3ce7817fa3b14dc5920d6acc43" name="a165e3f3ce7817fa3b14dc5920d6acc43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a165e3f3ce7817fa3b14dc5920d6acc43">&#9670;&nbsp;</a></span>format_decimal() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2066,7 +2069,7 @@ template&lt;typename Char , typename UInt , typename Iterator , <a class="el" hr
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto format_decimal </td>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto format_decimal </td>
           <td>(</td>
           <td class="paramtype">Iterator&#160;</td>
           <td class="paramname"><em>out</em>, </td>
@@ -5550,7 +5553,7 @@ template&lt;typename OutputIt , typename UInt , typename Char , <a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="format_8h.html">format.h</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 18:32:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 1 2022 21:50:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

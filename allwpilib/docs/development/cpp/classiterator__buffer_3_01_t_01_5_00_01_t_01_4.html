@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-80-gcc56bdc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-82-gb5a17f7</span>
    </div>
   </td>
  </tr>
@@ -154,12 +154,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a144ad707b324a714fbe334896f90ba28 inherit pub_methods_classbuffer"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbuffer.html#a144ad707b324a714fbe334896f90ba28">append</a> (const U *<a class="el" href="classbuffer.html#afd2c50b85d8563291eacfbca972a8e07">begin</a>, const U *<a class="el" href="classbuffer.html#a2c919ef667c8538d64521aaf06db12eb">end</a>)</td></tr>
 <tr class="memdesc:a144ad707b324a714fbe334896f90ba28 inherit pub_methods_classbuffer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends data to the end of the buffer.  <a href="classbuffer.html#a144ad707b324a714fbe334896f90ba28">More...</a><br /></td></tr>
 <tr class="separator:a144ad707b324a714fbe334896f90ba28 inherit pub_methods_classbuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c52bfa09437215d761d1deb04e75cf8 inherit pub_methods_classbuffer"><td class="memTemplParams" colspan="2">template&lt;typename I &gt; </td></tr>
-<tr class="memitem:a6c52bfa09437215d761d1deb04e75cf8 inherit pub_methods_classbuffer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbuffer.html#a6c52bfa09437215d761d1deb04e75cf8">operator[]</a> (I <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>) -&gt; T &amp;</td></tr>
-<tr class="separator:a6c52bfa09437215d761d1deb04e75cf8 inherit pub_methods_classbuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855aaf4ebd6361db54bb4d5da5a28cc8 inherit pub_methods_classbuffer"><td class="memTemplParams" colspan="2">template&lt;typename I &gt; </td></tr>
-<tr class="memitem:a855aaf4ebd6361db54bb4d5da5a28cc8 inherit pub_methods_classbuffer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbuffer.html#a855aaf4ebd6361db54bb4d5da5a28cc8">operator[]</a> (I <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>) const -&gt; const T &amp;</td></tr>
-<tr class="separator:a855aaf4ebd6361db54bb4d5da5a28cc8 inherit pub_methods_classbuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f385f1d0021a99819c6e1caf009ff0 inherit pub_methods_classbuffer"><td class="memTemplParams" colspan="2">template&lt;typename Idx &gt; </td></tr>
+<tr class="memitem:a72f385f1d0021a99819c6e1caf009ff0 inherit pub_methods_classbuffer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbuffer.html#a72f385f1d0021a99819c6e1caf009ff0">operator[]</a> (Idx <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>) -&gt; T &amp;</td></tr>
+<tr class="separator:a72f385f1d0021a99819c6e1caf009ff0 inherit pub_methods_classbuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab692b71d1a391624905cce4823213c0c inherit pub_methods_classbuffer"><td class="memTemplParams" colspan="2">template&lt;typename Idx &gt; </td></tr>
+<tr class="memitem:ab692b71d1a391624905cce4823213c0c inherit pub_methods_classbuffer"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbuffer.html#ab692b71d1a391624905cce4823213c0c">operator[]</a> (Idx <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>) const -&gt; const T &amp;</td></tr>
+<tr class="separator:ab692b71d1a391624905cce4823213c0c inherit pub_methods_classbuffer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -298,7 +298,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classiterator__buffer_3_01_t_01_5_00_01_t_01_4.html">iterator_buffer&lt; T *, T &gt;</a></li>
-    <li class="footer">Generated on Wed Aug 31 2022 18:32:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 1 2022 21:50:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

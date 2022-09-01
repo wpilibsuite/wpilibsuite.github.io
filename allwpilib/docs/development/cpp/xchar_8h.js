@@ -24,6 +24,7 @@ var xchar_8h =
     [ "make_wformat_args", "xchar_8h.html#a74dfff9e39ca0520c9a05ac604ef4d40", null ],
     [ "print", "xchar_8h.html#aca7a32e4363230ba92ebd2e429b1e1b6", null ],
     [ "print", "xchar_8h.html#a8ad2704d2db1ea1b9663084d6fb51e0a", null ],
+    [ "runtime", "xchar_8h.html#afca37c570d66e67b77b8a13818975dfa", null ],
     [ "to_wstring", "xchar_8h.html#ac097a9b8ef6c373be32b7ce1bf329d0b", null ],
     [ "vformat", "xchar_8h.html#a3751e89ff91d5a87a08f5347ee3d86e0", null ],
     [ "vformat", "xchar_8h.html#a240b345af98fec48e13a5e2bc4e9e167", null ],
