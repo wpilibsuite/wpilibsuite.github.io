@@ -92,132 +92,135 @@
 <span class="sourceLineNo">080</span><a id="line.80">  }</a>
 <span class="sourceLineNo">081</span><a id="line.81"></a>
 <span class="sourceLineNo">082</span><a id="line.82">  /**</a>
-<span class="sourceLineNo">083</span><a id="line.83">   * Generate a single pulse. There can only be a single pulse going at any time.</a>
+<span class="sourceLineNo">083</span><a id="line.83">   * Output a single pulse on the digital output line.</a>
 <span class="sourceLineNo">084</span><a id="line.84">   *</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * @param pulseLength The length of the pulse.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   */</a>
-<span class="sourceLineNo">087</span><a id="line.87">  public void pulse(final double pulseLength) {</a>
-<span class="sourceLineNo">088</span><a id="line.88">    DIOJNI.pulse(m_handle, pulseLength);</a>
-<span class="sourceLineNo">089</span><a id="line.89">  }</a>
-<span class="sourceLineNo">090</span><a id="line.90"></a>
-<span class="sourceLineNo">091</span><a id="line.91">  /**</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * Determine if the pulse is still going. Determine if a previously started pulse is still going.</a>
-<span class="sourceLineNo">093</span><a id="line.93">   *</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * @return true if pulsing</a>
-<span class="sourceLineNo">095</span><a id="line.95">   */</a>
-<span class="sourceLineNo">096</span><a id="line.96">  public boolean isPulsing() {</a>
-<span class="sourceLineNo">097</span><a id="line.97">    return DIOJNI.isPulsing(m_handle);</a>
-<span class="sourceLineNo">098</span><a id="line.98">  }</a>
-<span class="sourceLineNo">099</span><a id="line.99"></a>
-<span class="sourceLineNo">100</span><a id="line.100">  /**</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * Change the PWM frequency of the PWM output on a Digital Output line.</a>
-<span class="sourceLineNo">102</span><a id="line.102">   *</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * &lt;p&gt;The valid range is from 0.6 Hz to 19 kHz. The frequency resolution is logarithmic.</a>
-<span class="sourceLineNo">104</span><a id="line.104">   *</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * &lt;p&gt;There is only one PWM frequency for all channels.</a>
-<span class="sourceLineNo">106</span><a id="line.106">   *</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * @param rate The frequency to output all digital output PWM signals.</a>
-<span class="sourceLineNo">108</span><a id="line.108">   */</a>
-<span class="sourceLineNo">109</span><a id="line.109">  public void setPWMRate(double rate) {</a>
-<span class="sourceLineNo">110</span><a id="line.110">    DIOJNI.setDigitalPWMRate(rate);</a>
-<span class="sourceLineNo">111</span><a id="line.111">  }</a>
-<span class="sourceLineNo">112</span><a id="line.112"></a>
-<span class="sourceLineNo">113</span><a id="line.113">  /**</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * Enable a PWM Output on this line.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   *</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * &lt;p&gt;Allocate one of the 6 DO PWM generator resources.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   *</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * &lt;p&gt;Supply the initial duty-cycle to output so as to avoid a glitch when first starting.</a>
-<span class="sourceLineNo">119</span><a id="line.119">   *</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * &lt;p&gt;The resolution of the duty cycle is 8-bit for low frequencies (1kHz or less) but is reduced</a>
-<span class="sourceLineNo">121</span><a id="line.121">   * the higher the frequency of the PWM signal is.</a>
+<span class="sourceLineNo">085</span><a id="line.85">   * &lt;p&gt;Send a single pulse on the digital output line where the pulse duration is specified in</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * seconds. Maximum of 65535 microseconds.</a>
+<span class="sourceLineNo">087</span><a id="line.87">   *</a>
+<span class="sourceLineNo">088</span><a id="line.88">   * @param pulseLengthSeconds The pulse length in seconds</a>
+<span class="sourceLineNo">089</span><a id="line.89">   */</a>
+<span class="sourceLineNo">090</span><a id="line.90">  public void pulse(final double pulseLengthSeconds) {</a>
+<span class="sourceLineNo">091</span><a id="line.91">    DIOJNI.pulse(m_handle, pulseLengthSeconds);</a>
+<span class="sourceLineNo">092</span><a id="line.92">  }</a>
+<span class="sourceLineNo">093</span><a id="line.93"></a>
+<span class="sourceLineNo">094</span><a id="line.94">  /**</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * Determine if the pulse is still going. Determine if a previously started pulse is still going.</a>
+<span class="sourceLineNo">096</span><a id="line.96">   *</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * @return true if pulsing</a>
+<span class="sourceLineNo">098</span><a id="line.98">   */</a>
+<span class="sourceLineNo">099</span><a id="line.99">  public boolean isPulsing() {</a>
+<span class="sourceLineNo">100</span><a id="line.100">    return DIOJNI.isPulsing(m_handle);</a>
+<span class="sourceLineNo">101</span><a id="line.101">  }</a>
+<span class="sourceLineNo">102</span><a id="line.102"></a>
+<span class="sourceLineNo">103</span><a id="line.103">  /**</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * Change the PWM frequency of the PWM output on a Digital Output line.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   *</a>
+<span class="sourceLineNo">106</span><a id="line.106">   * &lt;p&gt;The valid range is from 0.6 Hz to 19 kHz. The frequency resolution is logarithmic.</a>
+<span class="sourceLineNo">107</span><a id="line.107">   *</a>
+<span class="sourceLineNo">108</span><a id="line.108">   * &lt;p&gt;There is only one PWM frequency for all channels.</a>
+<span class="sourceLineNo">109</span><a id="line.109">   *</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * @param rate The frequency to output all digital output PWM signals.</a>
+<span class="sourceLineNo">111</span><a id="line.111">   */</a>
+<span class="sourceLineNo">112</span><a id="line.112">  public void setPWMRate(double rate) {</a>
+<span class="sourceLineNo">113</span><a id="line.113">    DIOJNI.setDigitalPWMRate(rate);</a>
+<span class="sourceLineNo">114</span><a id="line.114">  }</a>
+<span class="sourceLineNo">115</span><a id="line.115"></a>
+<span class="sourceLineNo">116</span><a id="line.116">  /**</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * Enable a PWM Output on this line.</a>
+<span class="sourceLineNo">118</span><a id="line.118">   *</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * &lt;p&gt;Allocate one of the 6 DO PWM generator resources.</a>
+<span class="sourceLineNo">120</span><a id="line.120">   *</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * &lt;p&gt;Supply the initial duty-cycle to output so as to avoid a glitch when first starting.</a>
 <span class="sourceLineNo">122</span><a id="line.122">   *</a>
-<span class="sourceLineNo">123</span><a id="line.123">   * @param initialDutyCycle The duty-cycle to start generating. [0..1]</a>
-<span class="sourceLineNo">124</span><a id="line.124">   */</a>
-<span class="sourceLineNo">125</span><a id="line.125">  public void enablePWM(double initialDutyCycle) {</a>
-<span class="sourceLineNo">126</span><a id="line.126">    if (m_pwmGenerator != invalidPwmGenerator) {</a>
-<span class="sourceLineNo">127</span><a id="line.127">      return;</a>
-<span class="sourceLineNo">128</span><a id="line.128">    }</a>
-<span class="sourceLineNo">129</span><a id="line.129">    m_pwmGenerator = DIOJNI.allocateDigitalPWM();</a>
-<span class="sourceLineNo">130</span><a id="line.130">    DIOJNI.setDigitalPWMDutyCycle(m_pwmGenerator, initialDutyCycle);</a>
-<span class="sourceLineNo">131</span><a id="line.131">    DIOJNI.setDigitalPWMOutputChannel(m_pwmGenerator, m_channel);</a>
-<span class="sourceLineNo">132</span><a id="line.132">  }</a>
-<span class="sourceLineNo">133</span><a id="line.133"></a>
-<span class="sourceLineNo">134</span><a id="line.134">  /**</a>
-<span class="sourceLineNo">135</span><a id="line.135">   * Change this line from a PWM output back to a static Digital Output line.</a>
-<span class="sourceLineNo">136</span><a id="line.136">   *</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * &lt;p&gt;Free up one of the 6 DO PWM generator resources that were in use.</a>
-<span class="sourceLineNo">138</span><a id="line.138">   */</a>
-<span class="sourceLineNo">139</span><a id="line.139">  public void disablePWM() {</a>
-<span class="sourceLineNo">140</span><a id="line.140">    if (m_pwmGenerator == invalidPwmGenerator) {</a>
-<span class="sourceLineNo">141</span><a id="line.141">      return;</a>
-<span class="sourceLineNo">142</span><a id="line.142">    }</a>
-<span class="sourceLineNo">143</span><a id="line.143">    // Disable the output by routing to a dead bit.</a>
-<span class="sourceLineNo">144</span><a id="line.144">    DIOJNI.setDigitalPWMOutputChannel(m_pwmGenerator, SensorUtil.kDigitalChannels);</a>
-<span class="sourceLineNo">145</span><a id="line.145">    DIOJNI.freeDigitalPWM(m_pwmGenerator);</a>
-<span class="sourceLineNo">146</span><a id="line.146">    m_pwmGenerator = invalidPwmGenerator;</a>
-<span class="sourceLineNo">147</span><a id="line.147">  }</a>
-<span class="sourceLineNo">148</span><a id="line.148"></a>
-<span class="sourceLineNo">149</span><a id="line.149">  /**</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * Change the duty-cycle that is being generated on the line.</a>
-<span class="sourceLineNo">151</span><a id="line.151">   *</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * &lt;p&gt;The resolution of the duty cycle is 8-bit for low frequencies (1kHz or less) but is reduced</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * the higher the frequency of the PWM signal is.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * &lt;p&gt;The resolution of the duty cycle is 8-bit for low frequencies (1kHz or less) but is reduced</a>
+<span class="sourceLineNo">124</span><a id="line.124">   * the higher the frequency of the PWM signal is.</a>
+<span class="sourceLineNo">125</span><a id="line.125">   *</a>
+<span class="sourceLineNo">126</span><a id="line.126">   * @param initialDutyCycle The duty-cycle to start generating. [0..1]</a>
+<span class="sourceLineNo">127</span><a id="line.127">   */</a>
+<span class="sourceLineNo">128</span><a id="line.128">  public void enablePWM(double initialDutyCycle) {</a>
+<span class="sourceLineNo">129</span><a id="line.129">    if (m_pwmGenerator != invalidPwmGenerator) {</a>
+<span class="sourceLineNo">130</span><a id="line.130">      return;</a>
+<span class="sourceLineNo">131</span><a id="line.131">    }</a>
+<span class="sourceLineNo">132</span><a id="line.132">    m_pwmGenerator = DIOJNI.allocateDigitalPWM();</a>
+<span class="sourceLineNo">133</span><a id="line.133">    DIOJNI.setDigitalPWMDutyCycle(m_pwmGenerator, initialDutyCycle);</a>
+<span class="sourceLineNo">134</span><a id="line.134">    DIOJNI.setDigitalPWMOutputChannel(m_pwmGenerator, m_channel);</a>
+<span class="sourceLineNo">135</span><a id="line.135">  }</a>
+<span class="sourceLineNo">136</span><a id="line.136"></a>
+<span class="sourceLineNo">137</span><a id="line.137">  /**</a>
+<span class="sourceLineNo">138</span><a id="line.138">   * Change this line from a PWM output back to a static Digital Output line.</a>
+<span class="sourceLineNo">139</span><a id="line.139">   *</a>
+<span class="sourceLineNo">140</span><a id="line.140">   * &lt;p&gt;Free up one of the 6 DO PWM generator resources that were in use.</a>
+<span class="sourceLineNo">141</span><a id="line.141">   */</a>
+<span class="sourceLineNo">142</span><a id="line.142">  public void disablePWM() {</a>
+<span class="sourceLineNo">143</span><a id="line.143">    if (m_pwmGenerator == invalidPwmGenerator) {</a>
+<span class="sourceLineNo">144</span><a id="line.144">      return;</a>
+<span class="sourceLineNo">145</span><a id="line.145">    }</a>
+<span class="sourceLineNo">146</span><a id="line.146">    // Disable the output by routing to a dead bit.</a>
+<span class="sourceLineNo">147</span><a id="line.147">    DIOJNI.setDigitalPWMOutputChannel(m_pwmGenerator, SensorUtil.kDigitalChannels);</a>
+<span class="sourceLineNo">148</span><a id="line.148">    DIOJNI.freeDigitalPWM(m_pwmGenerator);</a>
+<span class="sourceLineNo">149</span><a id="line.149">    m_pwmGenerator = invalidPwmGenerator;</a>
+<span class="sourceLineNo">150</span><a id="line.150">  }</a>
+<span class="sourceLineNo">151</span><a id="line.151"></a>
+<span class="sourceLineNo">152</span><a id="line.152">  /**</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * Change the duty-cycle that is being generated on the line.</a>
 <span class="sourceLineNo">154</span><a id="line.154">   *</a>
-<span class="sourceLineNo">155</span><a id="line.155">   * @param dutyCycle The duty-cycle to change to. [0..1]</a>
-<span class="sourceLineNo">156</span><a id="line.156">   */</a>
-<span class="sourceLineNo">157</span><a id="line.157">  public void updateDutyCycle(double dutyCycle) {</a>
-<span class="sourceLineNo">158</span><a id="line.158">    if (m_pwmGenerator == invalidPwmGenerator) {</a>
-<span class="sourceLineNo">159</span><a id="line.159">      return;</a>
-<span class="sourceLineNo">160</span><a id="line.160">    }</a>
-<span class="sourceLineNo">161</span><a id="line.161">    DIOJNI.setDigitalPWMDutyCycle(m_pwmGenerator, dutyCycle);</a>
-<span class="sourceLineNo">162</span><a id="line.162">  }</a>
-<span class="sourceLineNo">163</span><a id="line.163"></a>
-<span class="sourceLineNo">164</span><a id="line.164">  /**</a>
-<span class="sourceLineNo">165</span><a id="line.165">   * Indicates this input is used by a simulated device.</a>
-<span class="sourceLineNo">166</span><a id="line.166">   *</a>
-<span class="sourceLineNo">167</span><a id="line.167">   * @param device simulated device handle</a>
-<span class="sourceLineNo">168</span><a id="line.168">   */</a>
-<span class="sourceLineNo">169</span><a id="line.169">  public void setSimDevice(SimDevice device) {</a>
-<span class="sourceLineNo">170</span><a id="line.170">    DIOJNI.setDIOSimDevice(m_handle, device.getNativeHandle());</a>
-<span class="sourceLineNo">171</span><a id="line.171">  }</a>
-<span class="sourceLineNo">172</span><a id="line.172"></a>
-<span class="sourceLineNo">173</span><a id="line.173">  @Override</a>
-<span class="sourceLineNo">174</span><a id="line.174">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">175</span><a id="line.175">    builder.setSmartDashboardType("Digital Output");</a>
-<span class="sourceLineNo">176</span><a id="line.176">    builder.addBooleanProperty("Value", this::get, this::set);</a>
-<span class="sourceLineNo">177</span><a id="line.177">  }</a>
-<span class="sourceLineNo">178</span><a id="line.178"></a>
-<span class="sourceLineNo">179</span><a id="line.179">  /**</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * Is this an analog trigger.</a>
-<span class="sourceLineNo">181</span><a id="line.181">   *</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * @return true if this is an analog trigger</a>
-<span class="sourceLineNo">183</span><a id="line.183">   */</a>
-<span class="sourceLineNo">184</span><a id="line.184">  @Override</a>
-<span class="sourceLineNo">185</span><a id="line.185">  public boolean isAnalogTrigger() {</a>
-<span class="sourceLineNo">186</span><a id="line.186">    return false;</a>
-<span class="sourceLineNo">187</span><a id="line.187">  }</a>
-<span class="sourceLineNo">188</span><a id="line.188"></a>
-<span class="sourceLineNo">189</span><a id="line.189">  /**</a>
-<span class="sourceLineNo">190</span><a id="line.190">   * Get the analog trigger type.</a>
-<span class="sourceLineNo">191</span><a id="line.191">   *</a>
-<span class="sourceLineNo">192</span><a id="line.192">   * @return false</a>
-<span class="sourceLineNo">193</span><a id="line.193">   */</a>
-<span class="sourceLineNo">194</span><a id="line.194">  @Override</a>
-<span class="sourceLineNo">195</span><a id="line.195">  public int getAnalogTriggerTypeForRouting() {</a>
-<span class="sourceLineNo">196</span><a id="line.196">    return 0;</a>
-<span class="sourceLineNo">197</span><a id="line.197">  }</a>
-<span class="sourceLineNo">198</span><a id="line.198"></a>
-<span class="sourceLineNo">199</span><a id="line.199">  /**</a>
-<span class="sourceLineNo">200</span><a id="line.200">   * Get the HAL Port Handle.</a>
-<span class="sourceLineNo">201</span><a id="line.201">   *</a>
-<span class="sourceLineNo">202</span><a id="line.202">   * @return The HAL Handle to the specified source.</a>
-<span class="sourceLineNo">203</span><a id="line.203">   */</a>
-<span class="sourceLineNo">204</span><a id="line.204">  @Override</a>
-<span class="sourceLineNo">205</span><a id="line.205">  public int getPortHandleForRouting() {</a>
-<span class="sourceLineNo">206</span><a id="line.206">    return m_handle;</a>
-<span class="sourceLineNo">207</span><a id="line.207">  }</a>
-<span class="sourceLineNo">208</span><a id="line.208">}</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * &lt;p&gt;The resolution of the duty cycle is 8-bit for low frequencies (1kHz or less) but is reduced</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * the higher the frequency of the PWM signal is.</a>
+<span class="sourceLineNo">157</span><a id="line.157">   *</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * @param dutyCycle The duty-cycle to change to. [0..1]</a>
+<span class="sourceLineNo">159</span><a id="line.159">   */</a>
+<span class="sourceLineNo">160</span><a id="line.160">  public void updateDutyCycle(double dutyCycle) {</a>
+<span class="sourceLineNo">161</span><a id="line.161">    if (m_pwmGenerator == invalidPwmGenerator) {</a>
+<span class="sourceLineNo">162</span><a id="line.162">      return;</a>
+<span class="sourceLineNo">163</span><a id="line.163">    }</a>
+<span class="sourceLineNo">164</span><a id="line.164">    DIOJNI.setDigitalPWMDutyCycle(m_pwmGenerator, dutyCycle);</a>
+<span class="sourceLineNo">165</span><a id="line.165">  }</a>
+<span class="sourceLineNo">166</span><a id="line.166"></a>
+<span class="sourceLineNo">167</span><a id="line.167">  /**</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * Indicates this input is used by a simulated device.</a>
+<span class="sourceLineNo">169</span><a id="line.169">   *</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * @param device simulated device handle</a>
+<span class="sourceLineNo">171</span><a id="line.171">   */</a>
+<span class="sourceLineNo">172</span><a id="line.172">  public void setSimDevice(SimDevice device) {</a>
+<span class="sourceLineNo">173</span><a id="line.173">    DIOJNI.setDIOSimDevice(m_handle, device.getNativeHandle());</a>
+<span class="sourceLineNo">174</span><a id="line.174">  }</a>
+<span class="sourceLineNo">175</span><a id="line.175"></a>
+<span class="sourceLineNo">176</span><a id="line.176">  @Override</a>
+<span class="sourceLineNo">177</span><a id="line.177">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">178</span><a id="line.178">    builder.setSmartDashboardType("Digital Output");</a>
+<span class="sourceLineNo">179</span><a id="line.179">    builder.addBooleanProperty("Value", this::get, this::set);</a>
+<span class="sourceLineNo">180</span><a id="line.180">  }</a>
+<span class="sourceLineNo">181</span><a id="line.181"></a>
+<span class="sourceLineNo">182</span><a id="line.182">  /**</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * Is this an analog trigger.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   *</a>
+<span class="sourceLineNo">185</span><a id="line.185">   * @return true if this is an analog trigger</a>
+<span class="sourceLineNo">186</span><a id="line.186">   */</a>
+<span class="sourceLineNo">187</span><a id="line.187">  @Override</a>
+<span class="sourceLineNo">188</span><a id="line.188">  public boolean isAnalogTrigger() {</a>
+<span class="sourceLineNo">189</span><a id="line.189">    return false;</a>
+<span class="sourceLineNo">190</span><a id="line.190">  }</a>
+<span class="sourceLineNo">191</span><a id="line.191"></a>
+<span class="sourceLineNo">192</span><a id="line.192">  /**</a>
+<span class="sourceLineNo">193</span><a id="line.193">   * Get the analog trigger type.</a>
+<span class="sourceLineNo">194</span><a id="line.194">   *</a>
+<span class="sourceLineNo">195</span><a id="line.195">   * @return false</a>
+<span class="sourceLineNo">196</span><a id="line.196">   */</a>
+<span class="sourceLineNo">197</span><a id="line.197">  @Override</a>
+<span class="sourceLineNo">198</span><a id="line.198">  public int getAnalogTriggerTypeForRouting() {</a>
+<span class="sourceLineNo">199</span><a id="line.199">    return 0;</a>
+<span class="sourceLineNo">200</span><a id="line.200">  }</a>
+<span class="sourceLineNo">201</span><a id="line.201"></a>
+<span class="sourceLineNo">202</span><a id="line.202">  /**</a>
+<span class="sourceLineNo">203</span><a id="line.203">   * Get the HAL Port Handle.</a>
+<span class="sourceLineNo">204</span><a id="line.204">   *</a>
+<span class="sourceLineNo">205</span><a id="line.205">   * @return The HAL Handle to the specified source.</a>
+<span class="sourceLineNo">206</span><a id="line.206">   */</a>
+<span class="sourceLineNo">207</span><a id="line.207">  @Override</a>
+<span class="sourceLineNo">208</span><a id="line.208">  public int getPortHandleForRouting() {</a>
+<span class="sourceLineNo">209</span><a id="line.209">    return m_handle;</a>
+<span class="sourceLineNo">210</span><a id="line.210">  }</a>
+<span class="sourceLineNo">211</span><a id="line.211">}</a>
 
 
 
