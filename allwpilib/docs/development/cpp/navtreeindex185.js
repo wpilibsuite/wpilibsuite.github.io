@@ -1,5 +1,6 @@
 var NAVTREEINDEX185 =
 {
+"structwpi_1_1in__place__index__t.html":[5,0,14,64],
 "structwpi_1_1in__place__index__t.html":[4,0,22,66],
 "structwpi_1_1in__place__index__t.html#ac26e9b6c7dc9b8545aca18f1a788d091":[4,0,22,66,0],
 "structwpi_1_1in__place__index__t.html#ac26e9b6c7dc9b8545aca18f1a788d091":[5,0,14,64,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX185 =
 "volume_8h.html":[6,0,9,42],
 "volume_8h.html#a008dda93580736ef905a64f2faa84584":[6,0,9,42,6],
 "volume_8h.html#a07d2834b487a021722179ab6e414ad63":[6,0,9,42,3],
-"volume_8h.html#a544f7e475848ff3bb54794c0e33423c0":[6,0,9,42,11],
-"volume_8h.html#a5d4d6f6eb01ac259ea23e7792b75bb3b":[6,0,9,42,5]
+"volume_8h.html#a544f7e475848ff3bb54794c0e33423c0":[6,0,9,42,11]
 };

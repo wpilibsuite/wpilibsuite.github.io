@@ -1,5 +1,6 @@
 var NAVTREEINDEX176 =
 {
+"structchrono__formatter.html#a44b0403d855f7902f0d9c1a1e9fbbec0":[5,0,50,14],
 "structchrono__formatter.html#a4ad0112ca9a084be9242d7481e3a4a00":[5,0,50,20],
 "structchrono__formatter.html#a4c08d0bec5d2e1dcf1c11d4f3382d2c3":[5,0,50,12],
 "structchrono__formatter.html#a5086b5fc5d58220ea7122150d18369df":[5,0,50,59],
@@ -248,6 +249,5 @@ var NAVTREEINDEX176 =
 "structdetail_1_1is__range___3_01_t_00_01void_01_4.html":[4,0,3,19],
 "structdetail_1_1is__reference__wrapper.html":[5,0,1,20],
 "structdetail_1_1is__reference__wrapper.html":[4,0,3,20],
-"structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01_t_01_4_01_4.html":[4,0,3,21],
-"structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01_t_01_4_01_4.html":[5,0,1,21]
+"structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01_t_01_4_01_4.html":[4,0,3,21]
 };

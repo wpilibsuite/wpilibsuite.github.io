@@ -1,5 +1,6 @@
 var NAVTREEINDEX139 =
 {
+"span_8h.html#ad5aec138436459518e03b347be4a9561":[6,0,8,6,0,0,0,16],
 "span_8h.html#ae828a8c77bdebb5204250519838ed8dc":[6,0,8,6,0,0,0,17],
 "span_8h.html#af57e346e8c6106d238edcdb05d9ee776":[6,0,8,6,0,0,0,25],
 "span_8h_source.html":[6,0,8,6,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX139 =
 "struct_eigen_1_1_plain_object_base_1_1_strided_const_map_type.html#a0219be33d5d936ea7f75c64a53720f43":[4,0,8,162,2,0],
 "struct_eigen_1_1_plain_object_base_1_1_strided_const_map_type.html#a0219be33d5d936ea7f75c64a53720f43":[5,0,4,159,2,0],
 "struct_eigen_1_1_plain_object_base_1_1_strided_map_type.html":[4,0,8,162,3],
-"struct_eigen_1_1_plain_object_base_1_1_strided_map_type.html":[5,0,4,159,3],
-"struct_eigen_1_1_plain_object_base_1_1_strided_map_type.html#a63eeb7d4d8aefb9904a7de79f640648e":[5,0,4,159,3,0]
+"struct_eigen_1_1_plain_object_base_1_1_strided_map_type.html":[5,0,4,159,3]
 };

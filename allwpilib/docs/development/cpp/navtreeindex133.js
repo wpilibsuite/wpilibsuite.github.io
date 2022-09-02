@@ -1,5 +1,6 @@
 var NAVTREEINDEX133 =
 {
+"namespaceghc_1_1filesystem.html#a9435b84cf23ef896d2db0abc7c8549be":[4,0,13,0,52],
 "namespaceghc_1_1filesystem.html#a987589d5785f6d13be743b43c2d47329":[4,0,13,0,99],
 "namespaceghc_1_1filesystem.html#a9a31ba0c82c79a9d2a63f24a1dc02910":[4,0,13,0,42],
 "namespaceghc_1_1filesystem.html#a9bb500e754afb372a0c2c0c14dd326b2":[4,0,13,0,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX133 =
 "namespacemembers_func_w.html":[4,1,1,21],
 "namespacemembers_func_z.html":[4,1,1,22],
 "namespacemembers_g.html":[4,1,0,6],
-"namespacemembers_h.html":[4,1,0,7],
-"namespacemembers_i.html":[4,1,0,8]
+"namespacemembers_h.html":[4,1,0,7]
 };

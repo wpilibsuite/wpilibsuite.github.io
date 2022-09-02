@@ -13,7 +13,7 @@ var classfrc_1_1_digital_output =
     [ "IsAnalogTrigger", "classfrc_1_1_digital_output.html#a06c37af889913c6de0d4894298dd4ed3", null ],
     [ "IsPulsing", "classfrc_1_1_digital_output.html#a816ad772b0e9c5acb24946e980533f9d", null ],
     [ "operator=", "classfrc_1_1_digital_output.html#aee5fe0cb6125409a607464d2d33e9c8e", null ],
-    [ "Pulse", "classfrc_1_1_digital_output.html#af17f69373cfd8434974f89f5d22f58bc", null ],
+    [ "Pulse", "classfrc_1_1_digital_output.html#aff95d049407a02a43d59856bd4fcf1c1", null ],
     [ "Set", "classfrc_1_1_digital_output.html#ab4b3fd836b822c83f35f5f0f980b0247", null ],
     [ "SetPWMRate", "classfrc_1_1_digital_output.html#a9da58ed494c1c9527cee696c546461bd", null ],
     [ "SetSimDevice", "classfrc_1_1_digital_output.html#a3580923e9d0ae8487fa43c567b36465e", null ],

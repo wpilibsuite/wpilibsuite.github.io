@@ -1,5 +1,6 @@
 var NAVTREEINDEX169 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_partial_redux_expr_3_01_matrix_type_00_01_member_op_00_01_direction_01_4_01_4.html#ab185c3fff37e5e5253fdfc037c1abc16":[5,0,4,2,1362,3],
 "struct_eigen_1_1internal_1_1traits_3_01_partial_redux_expr_3_01_matrix_type_00_01_member_op_00_01_direction_01_4_01_4.html#ac45b99c042ca4ebf9195532aed5d9875":[4,0,8,4,1364,2],
 "struct_eigen_1_1internal_1_1traits_3_01_partial_redux_expr_3_01_matrix_type_00_01_member_op_00_01_direction_01_4_01_4.html#ac45b99c042ca4ebf9195532aed5d9875":[5,0,4,2,1362,2],
 "struct_eigen_1_1internal_1_1traits_3_01_permutation_matrix_3_01_size_at_compile_time_00_01_max_sd0808d93099012556270f7c7cd36fcc5.html":[4,0,8,4,1365],
@@ -248,6 +249,5 @@ var NAVTREEINDEX169 =
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html":[4,0,8,4,1396],
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b":[5,0,4,2,1394,1],
 "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b":[4,0,8,4,1396,1],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[5,0,4,2,1394,0],
-"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[4,0,8,4,1396,0]
+"struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee":[5,0,4,2,1394,0]
 };

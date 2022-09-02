@@ -1,5 +1,6 @@
 var NAVTREEINDEX117 =
 {
+"group__hal__driverstation.html#ga3923cba3e237b54984dc5588124fe67b":[3,1,26,21],
 "group__hal__driverstation.html#ga3ccd000ef148655282d736312eac1b35":[3,1,26,50],
 "group__hal__driverstation.html#ga42b57ded6c79f4d22b54a84cad92a2ec":[3,1,26,47],
 "group__hal__driverstation.html#ga4eea37e55b0d07dd9e2490004bab5ed4":[3,1,26,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX117 =
 "group__hal__ports.html#gacb1a057d0c6cbbfd1c7329b13bd1d4ea":[3,1,11,22],
 "group__hal__ports.html#gad2640f47afb8191db107a0ca558fc5b0":[3,1,11,15],
 "group__hal__ports.html#gae41833d9f4375b7d7e038bb638720d41":[3,1,11,14],
-"group__hal__ports.html#gafca4607854bbe0c598d7e59d22e625ed":[3,1,11,21],
-"group__hal__power.html":[3,1,4]
+"group__hal__ports.html#gafca4607854bbe0c598d7e59d22e625ed":[3,1,11,21]
 };

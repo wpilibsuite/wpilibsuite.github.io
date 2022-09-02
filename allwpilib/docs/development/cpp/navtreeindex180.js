@@ -1,5 +1,6 @@
 var NAVTREEINDEX180 =
 {
+"structhal_1_1_d_i_o_set_proxy.html#a256b0940f2a2ce34db9ab1ddea836c9d":[5,0,9,2,5],
 "structhal_1_1_d_i_o_set_proxy.html#a256b0940f2a2ce34db9ab1ddea836c9d":[4,0,14,3,5],
 "structhal_1_1_d_i_o_set_proxy.html#a388429ec7dfcecc1835cf453ca9aad4c":[5,0,9,2,7],
 "structhal_1_1_d_i_o_set_proxy.html#a388429ec7dfcecc1835cf453ca9aad4c":[4,0,14,3,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX180 =
 "structstd_1_1hash_3_01wpi_1_1json_01_4.html":[4,0,20,1],
 "structstd_1_1hash_3_01wpi_1_1json_01_4.html#aa7173072f57ef2a8e0cbda8d5c2e7d2a":[5,0,12,1,0],
 "structstd_1_1hash_3_01wpi_1_1json_01_4.html#aa7173072f57ef2a8e0cbda8d5c2e7d2a":[4,0,20,1,0],
-"structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html":[5,0,12,2],
-"structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html":[4,0,20,2]
+"structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html":[5,0,12,2]
 };

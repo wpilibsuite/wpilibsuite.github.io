@@ -1,5 +1,6 @@
 var NAVTREEINDEX179 =
 {
+"structfrc_1_1_power_distribution_1_1_faults.html#a819fe942564c7f2df5bb8a85b02fe37b":[4,0,10,121,0,24],
 "structfrc_1_1_power_distribution_1_1_faults.html#a819fe942564c7f2df5bb8a85b02fe37b":[5,0,6,117,0,24],
 "structfrc_1_1_power_distribution_1_1_faults.html#aaa1cf1b291ab4d833ac76f8aabe1ee13":[5,0,6,117,0,26],
 "structfrc_1_1_power_distribution_1_1_faults.html#aaa1cf1b291ab4d833ac76f8aabe1ee13":[4,0,10,121,0,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX179 =
 "structhal_1_1_d_i_o_set_proxy.html":[5,0,9,2],
 "structhal_1_1_d_i_o_set_proxy.html":[4,0,14,3],
 "structhal_1_1_d_i_o_set_proxy.html#a02f1e61d6d9426b60543504689ec1698":[5,0,9,2,1],
-"structhal_1_1_d_i_o_set_proxy.html#a02f1e61d6d9426b60543504689ec1698":[4,0,14,3,1],
-"structhal_1_1_d_i_o_set_proxy.html#a256b0940f2a2ce34db9ab1ddea836c9d":[5,0,9,2,5]
+"structhal_1_1_d_i_o_set_proxy.html#a02f1e61d6d9426b60543504689ec1698":[4,0,14,3,1]
 };
