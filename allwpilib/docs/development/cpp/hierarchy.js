@@ -1529,6 +1529,7 @@ var hierarchy =
     ] ],
     [ "formatter< detail::bigint >", "structformatter_3_01detail_1_1bigint_01_4.html", null ],
     [ "fmt::formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4.html", null ],
+    [ "fmt::formatter< Eigen::SparseMatrix< double, Options, StorageIndex > >", "structfmt_1_1formatter_3_01_eigen_1_1_sparse_matrix_3_01double_00_01_options_00_01_storage_index_01_4_01_4.html", null ],
     [ "formatter< join_view< It, Sentinel, Char >, Char >", "structformatter_3_01join__view_3_01_it_00_01_sentinel_00_01_char_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::error_code, Char >", "structformatter_3_01std_1_1error__code_00_01_char_01_4.html", null ],
