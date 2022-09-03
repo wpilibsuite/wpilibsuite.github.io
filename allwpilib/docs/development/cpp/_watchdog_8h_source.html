@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-91-ga5df391</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-93-gaa9d7f1</span>
    </div>
   </td>
  </tr>
@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span>... Args&gt;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#aaf50fdb91b2eadd066e7f5854c849c4d">   38</a></span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#aaf50fdb91b2eadd066e7f5854c849c4d">Watchdog</a>(units::second_t timeout, Callable&amp;&amp; f, Arg&amp;&amp; <a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>, Args&amp;&amp;... args)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      : <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>(timeout,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                 <a class="code hl_namespace" href="namespacestd.html">std</a>::bind(<a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Callable&gt;(f), <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Arg&gt;(<a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>),</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                           <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Args&gt;(args)...)) {}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                 <a class="code hl_namespace" href="namespacestd.html">std</a>::bind(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">forward</a>&lt;Callable&gt;(f), <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">forward</a>&lt;Arg&gt;(<a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>),</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                           <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">forward</a>&lt;Args&gt;(args)...)) {}</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#aa5748acc01dfa554babf7f98560dae90">   43</a></span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#aa5748acc01dfa554babf7f98560dae90">~Watchdog</a>();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
@@ -253,6 +253,7 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:17</div></div>
 <div class="ttc" id="anamespaceghc_1_1filesystem_html_aa669ba09aca7930ec00f43cf09cc6c5b"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#aa669ba09aca7930ec00f43cf09cc6c5b">ghc::filesystem::operator&gt;</a></div><div class="ttdeci">GHC_FS_API bool operator&gt;(const path &amp;lhs, const path &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:3399</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
+<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a8994bf0a428d46893ae0472833726332"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">wpi::memory::detail::forward</a></div><div class="ttdeci">T &amp;&amp; forward(typename std::remove_reference&lt; T &gt;::type &amp;t) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:32</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -260,7 +261,7 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_watchdog_8h.html">Watchdog.h</a></li>
-    <li class="footer">Generated on Fri Sep 2 2022 23:52:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Sep 3 2022 03:35:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

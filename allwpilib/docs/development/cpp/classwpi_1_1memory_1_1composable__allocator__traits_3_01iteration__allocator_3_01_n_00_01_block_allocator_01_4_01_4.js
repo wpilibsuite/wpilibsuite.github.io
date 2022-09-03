@@ -1,0 +1,8 @@
+var classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4 =
+[
+    [ "allocator_type", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a00bebd88c26874be030ad40de99df7bc", null ],
+    [ "try_allocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#abf1ec2abe644f88a91dde217c1b74141", null ],
+    [ "try_allocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a1972ffc01acd4312e166600b4e9dda7d", null ],
+    [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a6d56e7be03428d8f0a64e514499f1a96", null ],
+    [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#ac2b595deef034c5cef36c29f1c23c735", null ]
+];

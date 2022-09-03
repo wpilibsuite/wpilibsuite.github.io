@@ -128,12 +128,14 @@ var searchData=
   ['get_5ffixed_5fvalue_3c_20variableandfixedint_3c_20n_20_3e_2c_20default_20_3e_125',['get_fixed_value&lt; VariableAndFixedInt&lt; N &gt;, Default &gt;',['../struct_eigen_1_1internal_1_1get__fixed__value_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_default_01_4.html',1,'Eigen::internal']]],
   ['get_5flocale_126',['get_locale',['../classget__locale.html',1,'']]],
   ['getfirsttype_127',['GetFirstType',['../structwpi_1_1pointer__union__detail_1_1_get_first_type.html',1,'wpi::pointer_union_detail']]],
-  ['global_5fmath_5ffunctions_5ffiltering_5fbase_128',['global_math_functions_filtering_base',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base.html',1,'Eigen::internal']]],
-  ['global_5fmath_5ffunctions_5ffiltering_5fbase_3c_20t_2c_20typename_20always_5fvoid_3c_20typename_20t_3a_3aeigen_5fbaseclassforspecializationofglobalmathfuncimpl_20_3e_3a_3atype_20_3e_129',['global_math_functions_filtering_base&lt; T, typename always_void&lt; typename T::Eigen_BaseClassForSpecializationOfGlobalMathFuncImpl &gt;::type &gt;',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base_3_01_t_00_01typename_01alwa3a21a82d868fc50f3fc9fd9dd230c694.html',1,'Eigen::internal']]],
-  ['glue_5fshapes_130',['glue_shapes',['../struct_eigen_1_1internal_1_1glue__shapes.html',1,'Eigen::internal']]],
-  ['glue_5fshapes_3c_20denseshape_2c_20triangularshape_20_3e_131',['glue_shapes&lt; DenseShape, TriangularShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_dense_shape_00_01_triangular_shape_01_4.html',1,'Eigen::internal']]],
-  ['glue_5fshapes_3c_20sparseshape_2c_20selfadjointshape_20_3e_132',['glue_shapes&lt; SparseShape, SelfAdjointShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_sparse_shape_00_01_self_adjoint_shape_01_4.html',1,'Eigen::internal']]],
-  ['glue_5fshapes_3c_20sparseshape_2c_20triangularshape_20_3e_133',['glue_shapes&lt; SparseShape, TriangularShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_sparse_shape_00_01_triangular_shape_01_4.html',1,'Eigen::internal']]],
-  ['group_5fdigits_5fview_134',['group_digits_view',['../structgroup__digits__view.html',1,'']]],
-  ['gyro_135',['Gyro',['../classfrc_1_1_gyro.html',1,'frc']]]
+  ['global_5fleak_5fchecker_5fimpl_128',['global_leak_checker_impl',['../classwpi_1_1memory_1_1detail_1_1global__leak__checker__impl.html',1,'wpi::memory::detail']]],
+  ['global_5fmath_5ffunctions_5ffiltering_5fbase_129',['global_math_functions_filtering_base',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base.html',1,'Eigen::internal']]],
+  ['global_5fmath_5ffunctions_5ffiltering_5fbase_3c_20t_2c_20typename_20always_5fvoid_3c_20typename_20t_3a_3aeigen_5fbaseclassforspecializationofglobalmathfuncimpl_20_3e_3a_3atype_20_3e_130',['global_math_functions_filtering_base&lt; T, typename always_void&lt; typename T::Eigen_BaseClassForSpecializationOfGlobalMathFuncImpl &gt;::type &gt;',['../struct_eigen_1_1internal_1_1global__math__functions__filtering__base_3_01_t_00_01typename_01alwa3a21a82d868fc50f3fc9fd9dd230c694.html',1,'Eigen::internal']]],
+  ['glue_5fshapes_131',['glue_shapes',['../struct_eigen_1_1internal_1_1glue__shapes.html',1,'Eigen::internal']]],
+  ['glue_5fshapes_3c_20denseshape_2c_20triangularshape_20_3e_132',['glue_shapes&lt; DenseShape, TriangularShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_dense_shape_00_01_triangular_shape_01_4.html',1,'Eigen::internal']]],
+  ['glue_5fshapes_3c_20sparseshape_2c_20selfadjointshape_20_3e_133',['glue_shapes&lt; SparseShape, SelfAdjointShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_sparse_shape_00_01_self_adjoint_shape_01_4.html',1,'Eigen::internal']]],
+  ['glue_5fshapes_3c_20sparseshape_2c_20triangularshape_20_3e_134',['glue_shapes&lt; SparseShape, TriangularShape &gt;',['../struct_eigen_1_1internal_1_1glue__shapes_3_01_sparse_shape_00_01_triangular_shape_01_4.html',1,'Eigen::internal']]],
+  ['group_5fdigits_5fview_135',['group_digits_view',['../structgroup__digits__view.html',1,'']]],
+  ['growing_5fblock_5fallocator_136',['growing_block_allocator',['../classwpi_1_1memory_1_1growing__block__allocator.html',1,'wpi::memory']]],
+  ['gyro_137',['Gyro',['../classfrc_1_1_gyro.html',1,'frc']]]
 ];

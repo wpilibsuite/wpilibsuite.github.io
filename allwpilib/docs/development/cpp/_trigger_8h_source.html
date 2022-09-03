@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-91-ga5df391</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-93-gaa9d7f1</span>
    </div>
   </td>
  </tr>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('_trigger_8h_source.html',''); initResi
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classfrc2_1_1_trigger.html#addab140045b805eeb89ed5f140c971bc">   41</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_trigger.html#addab140045b805eeb89ed5f140c971bc">Trigger</a>(std::function&lt;<span class="keywordtype">bool</span>()&gt; isActive)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      : <a class="code hl_function" href="classfrc_1_1_boolean_event.html#aeea9362c33b02874d4acfb1f7264510c">BooleanEvent</a>{<a class="code hl_class" href="classfrc2_1_1_command_scheduler.html">CommandScheduler</a>::GetInstance().GetDefaultButtonLoop(),</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                     <a class="code hl_namespace" href="namespacestd.html">std</a>::move(isActive)} {}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                     <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(isActive)} {}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * Create a new trigger that is active when the given condition is true.</span></div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_trigger_8h_source.html',''); initResi
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * @param isActive Whether the trigger is active.</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classfrc2_1_1_trigger.html#a2e24a8e9e623eabebc315818b2953c27">   51</a></span>  <a class="code hl_function" href="classfrc2_1_1_trigger.html#a2e24a8e9e623eabebc315818b2953c27">Trigger</a>(<a class="code hl_class" href="classfrc_1_1_event_loop.html">frc::EventLoop</a>* loop, std::function&lt;<span class="keywordtype">bool</span>()&gt; isActive)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      : <a class="code hl_function" href="classfrc_1_1_boolean_event.html#aeea9362c33b02874d4acfb1f7264510c">BooleanEvent</a>{loop, <a class="code hl_namespace" href="namespacestd.html">std</a>::move(isActive)} {}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      : <a class="code hl_function" href="classfrc_1_1_boolean_event.html#aeea9362c33b02874d4acfb1f7264510c">BooleanEvent</a>{loop, <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(isActive)} {}</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   * Create a new trigger that is never active (default constructor) - activity</span></div>
@@ -478,6 +478,7 @@ $(document).ready(function(){initNavTree('_trigger_8h_source.html',''); initResi
 <div class="ttc" id="aformat_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdoc">\rst Converts p to const void* for pointer formatting.</div><div class="ttdef"><b>Definition:</b> format.h:3808</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
+<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -486,7 +487,7 @@ $(document).ready(function(){initNavTree('_trigger_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="dir_56e1b1ed12101820b621b810be7ef57a.html">button</a></li><li class="navelem"><a class="el" href="_trigger_8h.html">Trigger.h</a></li>
-    <li class="footer">Generated on Fri Sep 2 2022 23:52:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Sep 3 2022 03:35:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

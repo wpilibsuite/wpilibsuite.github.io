@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-91-ga5df391</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-93-gaa9d7f1</span>
    </div>
   </td>
  </tr>
@@ -328,10 +328,10 @@ $(document).ready(function(){initNavTree('_sparse_q_r_8h_source.html',''); initR
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">      * In practice, if during the factorization the norm of the column that has to be eliminated is below</span></div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">      * this threshold, then the entire column is treated as zero, and it is moved at the end.</span></div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">      */</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="class_eigen_1_1_sparse_q_r.html#adb7bfa65f99e3ef91ed58ea663a850a1">  235</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_sparse_q_r.html#adb7bfa65f99e3ef91ed58ea663a850a1">setPivotThreshold</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="class_eigen_1_1_sparse_q_r.html#a30621d97daf0e3ef2337b7c37cb8f3d9">RealScalar</a>&amp; threshold)</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="class_eigen_1_1_sparse_q_r.html#adb7bfa65f99e3ef91ed58ea663a850a1">  235</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_sparse_q_r.html#adb7bfa65f99e3ef91ed58ea663a850a1">setPivotThreshold</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="class_eigen_1_1_sparse_q_r.html#a30621d97daf0e3ef2337b7c37cb8f3d9">RealScalar</a>&amp; <a class="code hl_function" href="namespacewpi_1_1memory.html#a24426d9ba265765e4762dd23e2a9f70a">threshold</a>)</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    {</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      <a class="code hl_variable" href="class_eigen_1_1_sparse_q_r.html#abeff33393a04cec953b58e0ee3fe4ecb">m_useDefaultThreshold</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      <a class="code hl_variable" href="class_eigen_1_1_sparse_q_r.html#a6d78507f2f5c20b0e84e49964f7f6663">m_threshold</a> = threshold;</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      <a class="code hl_variable" href="class_eigen_1_1_sparse_q_r.html#a6d78507f2f5c20b0e84e49964f7f6663">m_threshold</a> = <a class="code hl_function" href="namespacewpi_1_1memory.html#a24426d9ba265765e4762dd23e2a9f70a">threshold</a>;</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="comment"></span></div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">    /** \returns the solution X of \f$ A X = B \f$ using the current decomposition of A.</span></div>
@@ -943,6 +943,7 @@ $(document).ready(function(){initNavTree('_sparse_q_r_8h_source.html',''); initR
 <div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3421</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_ae9f8f59df111748817588a056678942b"><div class="ttname"><a href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">units::math::min</a></div><div class="ttdeci">UnitTypeLhs() min(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3413</div></div>
 <div class="ttc" id="anamespaceunits_html_a77b2abc79841f7f67c7bc406b7c5083b"><div class="ttname"><a href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">units::b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
+<div class="ttc" id="anamespacewpi_1_1memory_html_a24426d9ba265765e4762dd23e2a9f70a"><div class="ttname"><a href="namespacewpi_1_1memory.html#a24426d9ba265765e4762dd23e2a9f70a">wpi::memory::threshold</a></div><div class="ttdeci">threshold_segregatable&lt; typename std::decay&lt; RawAllocator &gt;::type &gt; threshold(std::size_t max_size, RawAllocator &amp;&amp;alloc)</div><div class="ttdef"><b>Definition:</b> segregator.hpp:72</div></div>
 <div class="ttc" id="astruct_eigen_1_1_eigen_base_html"><div class="ttname"><a href="struct_eigen_1_1_eigen_base.html">Eigen::EigenBase</a></div><div class="ttdoc">Common base class for all classes T such that MatrixBase has an operator=(T) and a constructor Matrix...</div><div class="ttdef"><b>Definition:</b> EigenBase.h:30</div></div>
 <div class="ttc" id="astruct_eigen_1_1_eigen_base_html_a554f30542cc2316add4b1ea0a492ff02"><div class="ttname"><a href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Eigen::EigenBase&lt; SparseQRMatrixQReturnType&lt; SparseQRType &gt; &gt;::Index</a></div><div class="ttdeci">Eigen::Index Index</div><div class="ttdoc">The interface type of indices.</div><div class="ttdef"><b>Definition:</b> EigenBase.h:39</div></div>
 <div class="ttc" id="astruct_eigen_1_1_num_traits_html"><div class="ttname"><a href="struct_eigen_1_1_num_traits.html">Eigen::NumTraits</a></div><div class="ttdoc">Holds information about the various numeric (i.e.</div><div class="ttdef"><b>Definition:</b> NumTraits.h:233</div></div>
@@ -1004,7 +1005,7 @@ $(document).ready(function(){initNavTree('_sparse_q_r_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_8f99884b85e81843b5e1cb173a6331df.html">SparseQR</a></li><li class="navelem"><a class="el" href="_sparse_q_r_8h.html">SparseQR.h</a></li>
-    <li class="footer">Generated on Fri Sep 2 2022 23:52:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Sep 3 2022 03:35:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

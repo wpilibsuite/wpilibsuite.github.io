@@ -6,6 +6,7 @@ var namespacewpi =
     [ "java", "namespacewpi_1_1java.html", "namespacewpi_1_1java" ],
     [ "log", "namespacewpi_1_1log.html", "namespacewpi_1_1log" ],
     [ "math", "namespacewpi_1_1math.html", "namespacewpi_1_1math" ],
+    [ "memory", "namespacewpi_1_1memory.html", "namespacewpi_1_1memory" ],
     [ "numbers", "namespacewpi_1_1numbers.html", [
       [ "e", "namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58", null ],
       [ "e_v", "namespacewpi_1_1numbers.html#a18cb1db052ecb5fd43a5c17b01e935d2", null ],

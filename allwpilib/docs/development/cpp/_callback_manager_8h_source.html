@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-91-ga5df391</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-93-gaa9d7f1</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_callback_manager_8h_source.html','');
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classwpi_1_1_callback_thread.html#a6e2c875f1add9114ccac9a90d13d38c4">   54</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="classwpi_1_1_callback_thread.html#a6e2c875f1add9114ccac9a90d13d38c4">ListenerData</a> = TListenerData;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classwpi_1_1_callback_thread.html#a80ec13f5f816bde9013825acd25af294">   56</a></span>  <a class="code hl_function" href="classwpi_1_1_callback_thread.html#a80ec13f5f816bde9013825acd25af294">CallbackThread</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; on_start, std::function&lt;<span class="keywordtype">void</span>()&gt; on_exit)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      : <a class="code hl_variable" href="classwpi_1_1_callback_thread.html#a6643573f02baf4605b1dbb2edbfe2b3d">m_on_start</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(on_start)), <a class="code hl_variable" href="classwpi_1_1_callback_thread.html#ac6eab816a8268b8328f4086d77b76749">m_on_exit</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(on_exit)) {}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      : <a class="code hl_variable" href="classwpi_1_1_callback_thread.html#a6643573f02baf4605b1dbb2edbfe2b3d">m_on_start</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(on_start)), <a class="code hl_variable" href="classwpi_1_1_callback_thread.html#ac6eab816a8268b8328f4086d77b76749">m_on_exit</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(on_exit)) {}</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classwpi_1_1_callback_thread.html#aaa650e856789e126c9795d076159eae6">   59</a></span>  <a class="code hl_function" href="classwpi_1_1_callback_thread.html#aaa650e856789e126c9795d076159eae6">~CallbackThread</a>()<span class="keyword"> override </span>{</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Wake up any blocked pollers</span></div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('_callback_manager_8h_source.html','');
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keywordflow">if</span> (!m_active) {</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="keywordflow">goto</span> <a class="code hl_enumvalue" href="namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8ba035d977de44b9c4a46c5679724251866">done</a>;</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      <span class="keyword">auto</span> item = std::move(m_queue.front());</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      <span class="keyword">auto</span> item = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(m_queue.front());</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      <span class="keywordflow">if</span> (item.first != UINT_MAX) {</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">if</span> (item.first &lt; m_listeners.size()) {</div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('_callback_manager_8h_source.html','');
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                                                      item.second);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>              lock.lock();</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (listener.poller_uid != UINT_MAX) {</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>              SendPoller(listener.poller_uid, std::move(item.second));</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>              SendPoller(listener.poller_uid, <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(item.second));</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            }</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>          }</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        }</div>
@@ -290,11 +290,11 @@ $(document).ready(function(){initNavTree('_callback_manager_8h_source.html','');
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classwpi_1_1_callback_manager.html#a57512b7b7501b1a04eadcc2472da0be3">  196</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_callback_manager.html#a57512b7b7501b1a04eadcc2472da0be3">SetOnStart</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; on_start) {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    m_on_start = std::move(on_start);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    m_on_start = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(on_start);</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  }</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classwpi_1_1_callback_manager.html#a29e9703ab9a1eee597e147fe54e5737c">  200</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_callback_manager.html#a29e9703ab9a1eee597e147fe54e5737c">SetOnExit</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; on_exit) {</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    m_on_exit = std::move(on_exit);</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    m_on_exit = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(on_exit);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  }</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classwpi_1_1_callback_manager.html#ab9e1603ece984e4facf2bb82a98d7b4c">  204</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_callback_manager.html#ab9e1603ece984e4facf2bb82a98d7b4c">Stop</a>() { m_owner.<a class="code hl_function" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a0758e9c33e3cddb01e4218a222d50cd0">Stop</a>(); }</div>
@@ -421,7 +421,7 @@ $(document).ready(function(){initNavTree('_callback_manager_8h_source.html','');
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keywordflow">while</span> (!poller-&gt;poll_queue.empty()) {</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      infos.emplace_back(std::move(poller-&gt;poll_queue.front()));</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      infos.emplace_back(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(poller-&gt;poll_queue.front()));</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>      poller-&gt;poll_queue.pop();</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    }</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordflow">return</span> infos;</div>
@@ -538,6 +538,7 @@ $(document).ready(function(){initNavTree('_callback_manager_8h_source.html','');
 <div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
 <div class="ttc" id="anamespacedigits_html_a8875a3e1d62490230fa116b4c1f99c8ba035d977de44b9c4a46c5679724251866"><div class="ttname"><a href="namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8ba035d977de44b9c4a46c5679724251866">digits::done</a></div><div class="ttdeci">@ done</div><div class="ttdef"><b>Definition:</b> format.h:2558</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
+<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:9</div></div>
 <div class="ttc" id="anamespacewpi_html_a59819be5b11c0fbbc0b8e07c7638af24"><div class="ttname"><a href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a></div><div class="ttdeci">::std::mutex mutex</div><div class="ttdef"><b>Definition:</b> mutex.h:17</div></div>
 <div class="ttc" id="anamespacewpi_html_a97cc1139d8f910187e3d4cd6b8015af8"><div class="ttname"><a href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a></div><div class="ttdeci">::std::condition_variable condition_variable</div><div class="ttdef"><b>Definition:</b> condition_variable.h:16</div></div>
@@ -555,7 +556,7 @@ $(document).ready(function(){initNavTree('_callback_manager_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_callback_manager_8h.html">CallbackManager.h</a></li>
-    <li class="footer">Generated on Fri Sep 2 2022 23:52:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Sep 3 2022 03:35:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

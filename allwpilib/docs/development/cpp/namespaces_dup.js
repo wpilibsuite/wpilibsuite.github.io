@@ -78,5 +78,6 @@ var namespaces_dup =
     ] ],
     [ "std", "namespacestd.html", "namespacestd" ],
     [ "units", "namespaceunits.html", "namespaceunits" ],
-    [ "wpi", "namespacewpi.html", "namespacewpi" ]
+    [ "wpi", "namespacewpi.html", "namespacewpi" ],
+    [ "wpi_memory_pmr", "namespacewpi__memory__pmr.html", "namespacewpi__memory__pmr" ]
 ];
