@@ -1,5 +1,7 @@
 var NAVTREEINDEX183 =
 {
+"struct_h_a_l___joystick_p_o_vs.html#a72965ba8cbcd5aad88057d326c1879ba":[3,1,26,2,0],
+"struct_h_a_l___joystick_p_o_vs.html#adc41b7cdd2e3dd216f919c7659e42d1e":[3,1,26,2,1],
 "struct_h_a_l___match_info.html":[3,1,26,5],
 "struct_h_a_l___match_info.html#a30af18172023d942abbba136df00a3c1":[3,1,26,5,2],
 "struct_h_a_l___match_info.html#a3dbf012b7751ad8c60dadb8d56535266":[3,1,26,5,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX183 =
 "structarg__mapper.html#a55145e4be1d20261299039eb650192cb":[6,0,22,23],
 "structarg__mapper.html#a579bc4d236c988cb800ba15a32b56ff7":[6,0,22,6],
 "structarg__mapper.html#a5d96e6ed049c2eee679cf5ee1c25d230":[6,0,22,26],
-"structarg__mapper.html#a63512c946ba552a819e3d98345e1ffea":[6,0,22,9],
-"structarg__mapper.html#a6a556343b552b1370d18446ef1bdd887":[6,0,22,27],
-"structarg__mapper.html#a814451c2db4b8ff1dd0d63ec14730d26":[6,0,22,30]
+"structarg__mapper.html#a63512c946ba552a819e3d98345e1ffea":[6,0,22,9]
 };
