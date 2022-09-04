@@ -76,7 +76,7 @@
 <span class="sourceLineNo">064</span><a id="line.64">   * @param angleRadians The rotation around the axis in radians.</a>
 <span class="sourceLineNo">065</span><a id="line.65">   */</a>
 <span class="sourceLineNo">066</span><a id="line.66">  public Rotation3d(Vector&lt;N3&gt; axis, double angleRadians) {</a>
-<span class="sourceLineNo">067</span><a id="line.67">    double norm = axis.normF();</a>
+<span class="sourceLineNo">067</span><a id="line.67">    double norm = axis.norm();</a>
 <span class="sourceLineNo">068</span><a id="line.68">    if (norm == 0.0) {</a>
 <span class="sourceLineNo">069</span><a id="line.69">      return;</a>
 <span class="sourceLineNo">070</span><a id="line.70">    }</a>
