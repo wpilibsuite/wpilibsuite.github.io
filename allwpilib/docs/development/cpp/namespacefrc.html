@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-96-g5149f7d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-97-gf36162f</span>
    </div>
   </td>
  </tr>
@@ -2439,7 +2439,12 @@ template&lt;int States&gt; </div>
 
 <p>Discretizes the given continuous A and Q matrices. </p>
 <p >Rather than solving a 2N x 2N matrix exponential like in <a class="el" href="namespacefrc.html#a38a90b29f28a2d7aaa21c407c35c8b26" title="Discretizes the given continuous A and Q matrices.">DiscretizeAQ()</a> (which is expensive), we take advantage of the structure of the block matrix of A and Q.</p>
-<p >1) The exponential of A*t, which is only N x N, is relatively cheap. 2) The upper-right quarter of the 2N x 2N matrix, which we can approximate using a taylor series to several terms and still be substantially cheaper than taking the big exponential.</p>
+<ul>
+<li>
+eᴬᵀ, which is only N x N, is relatively cheap. </li>
+<li>
+The upper-right quarter of the 2N x 2N matrix, which we can approximate using a taylor series to several terms and still be substantially cheaper than taking the big exponential. </li>
+</ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">States</td><td>Number of states. </td></tr>
@@ -4620,7 +4625,7 @@ template&lt;class... Wheels&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Sun Sep 4 2022 20:20:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Sep 5 2022 00:28:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
