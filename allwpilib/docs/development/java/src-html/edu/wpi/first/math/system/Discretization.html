@@ -37,146 +37,194 @@
 <span class="sourceLineNo">025</span><a id="line.25">   */</a>
 <span class="sourceLineNo">026</span><a id="line.26">  public static &lt;States extends Num&gt; Matrix&lt;States, States&gt; discretizeA(</a>
 <span class="sourceLineNo">027</span><a id="line.27">      Matrix&lt;States, States&gt; contA, double dtSeconds) {</a>
-<span class="sourceLineNo">028</span><a id="line.28">    return contA.times(dtSeconds).exp();</a>
-<span class="sourceLineNo">029</span><a id="line.29">  }</a>
-<span class="sourceLineNo">030</span><a id="line.30"></a>
-<span class="sourceLineNo">031</span><a id="line.31">  /**</a>
-<span class="sourceLineNo">032</span><a id="line.32">   * Discretizes the given continuous A and B matrices.</a>
-<span class="sourceLineNo">033</span><a id="line.33">   *</a>
-<span class="sourceLineNo">034</span><a id="line.34">   * @param &lt;States&gt; Nat representing the states of the system.</a>
-<span class="sourceLineNo">035</span><a id="line.35">   * @param &lt;Inputs&gt; Nat representing the inputs to the system.</a>
-<span class="sourceLineNo">036</span><a id="line.36">   * @param contA Continuous system matrix.</a>
-<span class="sourceLineNo">037</span><a id="line.37">   * @param contB Continuous input matrix.</a>
-<span class="sourceLineNo">038</span><a id="line.38">   * @param dtSeconds Discretization timestep.</a>
-<span class="sourceLineNo">039</span><a id="line.39">   * @return a Pair representing discA and diskB.</a>
-<span class="sourceLineNo">040</span><a id="line.40">   */</a>
-<span class="sourceLineNo">041</span><a id="line.41">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">042</span><a id="line.42">  public static &lt;States extends Num, Inputs extends Num&gt;</a>
-<span class="sourceLineNo">043</span><a id="line.43">      Pair&lt;Matrix&lt;States, States&gt;, Matrix&lt;States, Inputs&gt;&gt; discretizeAB(</a>
-<span class="sourceLineNo">044</span><a id="line.44">          Matrix&lt;States, States&gt; contA, Matrix&lt;States, Inputs&gt; contB, double dtSeconds) {</a>
-<span class="sourceLineNo">045</span><a id="line.45">    var scaledA = contA.times(dtSeconds);</a>
-<span class="sourceLineNo">046</span><a id="line.46">    var scaledB = contB.times(dtSeconds);</a>
-<span class="sourceLineNo">047</span><a id="line.47"></a>
-<span class="sourceLineNo">048</span><a id="line.48">    int states = contA.getNumRows();</a>
-<span class="sourceLineNo">049</span><a id="line.49">    int inputs = contB.getNumCols();</a>
-<span class="sourceLineNo">050</span><a id="line.50">    var M = new Matrix&lt;&gt;(new SimpleMatrix(states + inputs, states + inputs));</a>
-<span class="sourceLineNo">051</span><a id="line.51">    M.assignBlock(0, 0, scaledA);</a>
-<span class="sourceLineNo">052</span><a id="line.52">    M.assignBlock(0, scaledA.getNumCols(), scaledB);</a>
-<span class="sourceLineNo">053</span><a id="line.53">    var phi = M.exp();</a>
+<span class="sourceLineNo">028</span><a id="line.28">    // A_d = eᴬᵀ</a>
+<span class="sourceLineNo">029</span><a id="line.29">    return contA.times(dtSeconds).exp();</a>
+<span class="sourceLineNo">030</span><a id="line.30">  }</a>
+<span class="sourceLineNo">031</span><a id="line.31"></a>
+<span class="sourceLineNo">032</span><a id="line.32">  /**</a>
+<span class="sourceLineNo">033</span><a id="line.33">   * Discretizes the given continuous A and B matrices.</a>
+<span class="sourceLineNo">034</span><a id="line.34">   *</a>
+<span class="sourceLineNo">035</span><a id="line.35">   * @param &lt;States&gt; Nat representing the states of the system.</a>
+<span class="sourceLineNo">036</span><a id="line.36">   * @param &lt;Inputs&gt; Nat representing the inputs to the system.</a>
+<span class="sourceLineNo">037</span><a id="line.37">   * @param contA Continuous system matrix.</a>
+<span class="sourceLineNo">038</span><a id="line.38">   * @param contB Continuous input matrix.</a>
+<span class="sourceLineNo">039</span><a id="line.39">   * @param dtSeconds Discretization timestep.</a>
+<span class="sourceLineNo">040</span><a id="line.40">   * @return a Pair representing discA and diskB.</a>
+<span class="sourceLineNo">041</span><a id="line.41">   */</a>
+<span class="sourceLineNo">042</span><a id="line.42">  @SuppressWarnings("LocalVariableName")</a>
+<span class="sourceLineNo">043</span><a id="line.43">  public static &lt;States extends Num, Inputs extends Num&gt;</a>
+<span class="sourceLineNo">044</span><a id="line.44">      Pair&lt;Matrix&lt;States, States&gt;, Matrix&lt;States, Inputs&gt;&gt; discretizeAB(</a>
+<span class="sourceLineNo">045</span><a id="line.45">          Matrix&lt;States, States&gt; contA, Matrix&lt;States, Inputs&gt; contB, double dtSeconds) {</a>
+<span class="sourceLineNo">046</span><a id="line.46">    int states = contA.getNumRows();</a>
+<span class="sourceLineNo">047</span><a id="line.47">    int inputs = contB.getNumCols();</a>
+<span class="sourceLineNo">048</span><a id="line.48"></a>
+<span class="sourceLineNo">049</span><a id="line.49">    // M = [A  B]</a>
+<span class="sourceLineNo">050</span><a id="line.50">    //     [0  0]</a>
+<span class="sourceLineNo">051</span><a id="line.51">    var M = new Matrix&lt;&gt;(new SimpleMatrix(states + inputs, states + inputs));</a>
+<span class="sourceLineNo">052</span><a id="line.52">    M.assignBlock(0, 0, contA);</a>
+<span class="sourceLineNo">053</span><a id="line.53">    M.assignBlock(0, contA.getNumCols(), contB);</a>
 <span class="sourceLineNo">054</span><a id="line.54"></a>
-<span class="sourceLineNo">055</span><a id="line.55">    var discA = new Matrix&lt;States, States&gt;(new SimpleMatrix(states, states));</a>
-<span class="sourceLineNo">056</span><a id="line.56">    var discB = new Matrix&lt;States, Inputs&gt;(new SimpleMatrix(states, inputs));</a>
-<span class="sourceLineNo">057</span><a id="line.57"></a>
-<span class="sourceLineNo">058</span><a id="line.58">    discA.extractFrom(0, 0, phi);</a>
-<span class="sourceLineNo">059</span><a id="line.59">    discB.extractFrom(0, contB.getNumRows(), phi);</a>
-<span class="sourceLineNo">060</span><a id="line.60"></a>
-<span class="sourceLineNo">061</span><a id="line.61">    return new Pair&lt;&gt;(discA, discB);</a>
-<span class="sourceLineNo">062</span><a id="line.62">  }</a>
-<span class="sourceLineNo">063</span><a id="line.63"></a>
-<span class="sourceLineNo">064</span><a id="line.64">  /**</a>
-<span class="sourceLineNo">065</span><a id="line.65">   * Discretizes the given continuous A and Q matrices.</a>
-<span class="sourceLineNo">066</span><a id="line.66">   *</a>
-<span class="sourceLineNo">067</span><a id="line.67">   * @param &lt;States&gt; Nat representing the number of states.</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * @param contA Continuous system matrix.</a>
-<span class="sourceLineNo">069</span><a id="line.69">   * @param contQ Continuous process noise covariance matrix.</a>
-<span class="sourceLineNo">070</span><a id="line.70">   * @param dtSeconds Discretization timestep.</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * @return a pair representing the discrete system matrix and process noise covariance matrix.</a>
-<span class="sourceLineNo">072</span><a id="line.72">   */</a>
-<span class="sourceLineNo">073</span><a id="line.73">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">074</span><a id="line.74">  public static &lt;States extends Num&gt;</a>
-<span class="sourceLineNo">075</span><a id="line.75">      Pair&lt;Matrix&lt;States, States&gt;, Matrix&lt;States, States&gt;&gt; discretizeAQ(</a>
-<span class="sourceLineNo">076</span><a id="line.76">          Matrix&lt;States, States&gt; contA, Matrix&lt;States, States&gt; contQ, double dtSeconds) {</a>
-<span class="sourceLineNo">077</span><a id="line.77">    int states = contA.getNumRows();</a>
-<span class="sourceLineNo">078</span><a id="line.78"></a>
-<span class="sourceLineNo">079</span><a id="line.79">    // Make continuous Q symmetric if it isn't already</a>
-<span class="sourceLineNo">080</span><a id="line.80">    Matrix&lt;States, States&gt; Q = contQ.plus(contQ.transpose()).div(2.0);</a>
-<span class="sourceLineNo">081</span><a id="line.81"></a>
-<span class="sourceLineNo">082</span><a id="line.82">    // Set up the matrix M = [[-A, Q], [0, A.T]]</a>
-<span class="sourceLineNo">083</span><a id="line.83">    final var M = new Matrix&lt;&gt;(new SimpleMatrix(2 * states, 2 * states));</a>
-<span class="sourceLineNo">084</span><a id="line.84">    M.assignBlock(0, 0, contA.times(-1.0));</a>
-<span class="sourceLineNo">085</span><a id="line.85">    M.assignBlock(0, states, Q);</a>
-<span class="sourceLineNo">086</span><a id="line.86">    M.assignBlock(states, 0, new Matrix&lt;&gt;(new SimpleMatrix(states, states)));</a>
-<span class="sourceLineNo">087</span><a id="line.87">    M.assignBlock(states, states, contA.transpose());</a>
-<span class="sourceLineNo">088</span><a id="line.88"></a>
-<span class="sourceLineNo">089</span><a id="line.89">    final var phi = M.times(dtSeconds).exp();</a>
-<span class="sourceLineNo">090</span><a id="line.90"></a>
-<span class="sourceLineNo">091</span><a id="line.91">    // Phi12 = phi[0:States,        States:2*States]</a>
-<span class="sourceLineNo">092</span><a id="line.92">    // Phi22 = phi[States:2*States, States:2*States]</a>
-<span class="sourceLineNo">093</span><a id="line.93">    final Matrix&lt;States, States&gt; phi12 = phi.block(states, states, 0, states);</a>
-<span class="sourceLineNo">094</span><a id="line.94">    final Matrix&lt;States, States&gt; phi22 = phi.block(states, states, states, states);</a>
-<span class="sourceLineNo">095</span><a id="line.95"></a>
-<span class="sourceLineNo">096</span><a id="line.96">    final var discA = phi22.transpose();</a>
+<span class="sourceLineNo">055</span><a id="line.55">    //  ϕ = eᴹᵀ = [A_d  B_d]</a>
+<span class="sourceLineNo">056</span><a id="line.56">    //            [ 0    I ]</a>
+<span class="sourceLineNo">057</span><a id="line.57">    var phi = M.times(dtSeconds).exp();</a>
+<span class="sourceLineNo">058</span><a id="line.58"></a>
+<span class="sourceLineNo">059</span><a id="line.59">    var discA = new Matrix&lt;States, States&gt;(new SimpleMatrix(states, states));</a>
+<span class="sourceLineNo">060</span><a id="line.60">    discA.extractFrom(0, 0, phi);</a>
+<span class="sourceLineNo">061</span><a id="line.61"></a>
+<span class="sourceLineNo">062</span><a id="line.62">    var discB = new Matrix&lt;States, Inputs&gt;(new SimpleMatrix(states, inputs));</a>
+<span class="sourceLineNo">063</span><a id="line.63">    discB.extractFrom(0, contB.getNumRows(), phi);</a>
+<span class="sourceLineNo">064</span><a id="line.64"></a>
+<span class="sourceLineNo">065</span><a id="line.65">    return new Pair&lt;&gt;(discA, discB);</a>
+<span class="sourceLineNo">066</span><a id="line.66">  }</a>
+<span class="sourceLineNo">067</span><a id="line.67"></a>
+<span class="sourceLineNo">068</span><a id="line.68">  /**</a>
+<span class="sourceLineNo">069</span><a id="line.69">   * Discretizes the given continuous A and Q matrices.</a>
+<span class="sourceLineNo">070</span><a id="line.70">   *</a>
+<span class="sourceLineNo">071</span><a id="line.71">   * @param &lt;States&gt; Nat representing the number of states.</a>
+<span class="sourceLineNo">072</span><a id="line.72">   * @param contA Continuous system matrix.</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * @param contQ Continuous process noise covariance matrix.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * @param dtSeconds Discretization timestep.</a>
+<span class="sourceLineNo">075</span><a id="line.75">   * @return a pair representing the discrete system matrix and process noise covariance matrix.</a>
+<span class="sourceLineNo">076</span><a id="line.76">   */</a>
+<span class="sourceLineNo">077</span><a id="line.77">  @SuppressWarnings("LocalVariableName")</a>
+<span class="sourceLineNo">078</span><a id="line.78">  public static &lt;States extends Num&gt;</a>
+<span class="sourceLineNo">079</span><a id="line.79">      Pair&lt;Matrix&lt;States, States&gt;, Matrix&lt;States, States&gt;&gt; discretizeAQ(</a>
+<span class="sourceLineNo">080</span><a id="line.80">          Matrix&lt;States, States&gt; contA, Matrix&lt;States, States&gt; contQ, double dtSeconds) {</a>
+<span class="sourceLineNo">081</span><a id="line.81">    int states = contA.getNumRows();</a>
+<span class="sourceLineNo">082</span><a id="line.82"></a>
+<span class="sourceLineNo">083</span><a id="line.83">    // Make continuous Q symmetric if it isn't already</a>
+<span class="sourceLineNo">084</span><a id="line.84">    Matrix&lt;States, States&gt; Q = contQ.plus(contQ.transpose()).div(2.0);</a>
+<span class="sourceLineNo">085</span><a id="line.85"></a>
+<span class="sourceLineNo">086</span><a id="line.86">    // M = [−A  Q ]</a>
+<span class="sourceLineNo">087</span><a id="line.87">    //     [ 0  Aᵀ]</a>
+<span class="sourceLineNo">088</span><a id="line.88">    final var M = new Matrix&lt;&gt;(new SimpleMatrix(2 * states, 2 * states));</a>
+<span class="sourceLineNo">089</span><a id="line.89">    M.assignBlock(0, 0, contA.times(-1.0));</a>
+<span class="sourceLineNo">090</span><a id="line.90">    M.assignBlock(0, states, Q);</a>
+<span class="sourceLineNo">091</span><a id="line.91">    M.assignBlock(states, 0, new Matrix&lt;&gt;(new SimpleMatrix(states, states)));</a>
+<span class="sourceLineNo">092</span><a id="line.92">    M.assignBlock(states, states, contA.transpose());</a>
+<span class="sourceLineNo">093</span><a id="line.93"></a>
+<span class="sourceLineNo">094</span><a id="line.94">    // ϕ = eᴹᵀ = [−A_d  A_d⁻¹Q_d]</a>
+<span class="sourceLineNo">095</span><a id="line.95">    //           [ 0      A_dᵀ  ]</a>
+<span class="sourceLineNo">096</span><a id="line.96">    final var phi = M.times(dtSeconds).exp();</a>
 <span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">    Q = discA.times(phi12);</a>
-<span class="sourceLineNo">099</span><a id="line.99"></a>
-<span class="sourceLineNo">100</span><a id="line.100">    // Make discrete Q symmetric if it isn't already</a>
-<span class="sourceLineNo">101</span><a id="line.101">    final var discQ = Q.plus(Q.transpose()).div(2.0);</a>
-<span class="sourceLineNo">102</span><a id="line.102"></a>
-<span class="sourceLineNo">103</span><a id="line.103">    return new Pair&lt;&gt;(discA, discQ);</a>
-<span class="sourceLineNo">104</span><a id="line.104">  }</a>
+<span class="sourceLineNo">098</span><a id="line.98">    // ϕ₁₂ = A_d⁻¹Q_d</a>
+<span class="sourceLineNo">099</span><a id="line.99">    final Matrix&lt;States, States&gt; phi12 = phi.block(states, states, 0, states);</a>
+<span class="sourceLineNo">100</span><a id="line.100"></a>
+<span class="sourceLineNo">101</span><a id="line.101">    // ϕ₂₂ = A_dᵀ</a>
+<span class="sourceLineNo">102</span><a id="line.102">    final Matrix&lt;States, States&gt; phi22 = phi.block(states, states, states, states);</a>
+<span class="sourceLineNo">103</span><a id="line.103"></a>
+<span class="sourceLineNo">104</span><a id="line.104">    final var discA = phi22.transpose();</a>
 <span class="sourceLineNo">105</span><a id="line.105"></a>
-<span class="sourceLineNo">106</span><a id="line.106">  /**</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * Discretizes the given continuous A and Q matrices.</a>
-<span class="sourceLineNo">108</span><a id="line.108">   *</a>
-<span class="sourceLineNo">109</span><a id="line.109">   * &lt;p&gt;Rather than solving a 2N x 2N matrix exponential like in DiscretizeQ() (which is expensive),</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * we take advantage of the structure of the block matrix of A and Q.</a>
-<span class="sourceLineNo">111</span><a id="line.111">   *</a>
-<span class="sourceLineNo">112</span><a id="line.112">   * &lt;p&gt;The exponential of A*t, which is only N x N, is relatively cheap. 2) The upper-right quarter</a>
-<span class="sourceLineNo">113</span><a id="line.113">   * of the 2N x 2N matrix, which we can approximate using a taylor series to several terms and</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * still be substantially cheaper than taking the big exponential.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   *</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * @param &lt;States&gt; Nat representing the number of states.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   * @param contA Continuous system matrix.</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * @param contQ Continuous process noise covariance matrix.</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * @param dtSeconds Discretization timestep.</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * @return a pair representing the discrete system matrix and process noise covariance matrix.</a>
-<span class="sourceLineNo">121</span><a id="line.121">   */</a>
-<span class="sourceLineNo">122</span><a id="line.122">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">123</span><a id="line.123">  public static &lt;States extends Num&gt;</a>
-<span class="sourceLineNo">124</span><a id="line.124">      Pair&lt;Matrix&lt;States, States&gt;, Matrix&lt;States, States&gt;&gt; discretizeAQTaylor(</a>
-<span class="sourceLineNo">125</span><a id="line.125">          Matrix&lt;States, States&gt; contA, Matrix&lt;States, States&gt; contQ, double dtSeconds) {</a>
-<span class="sourceLineNo">126</span><a id="line.126">    // Make continuous Q symmetric if it isn't already</a>
-<span class="sourceLineNo">127</span><a id="line.127">    Matrix&lt;States, States&gt; Q = contQ.plus(contQ.transpose()).div(2.0);</a>
-<span class="sourceLineNo">128</span><a id="line.128"></a>
-<span class="sourceLineNo">129</span><a id="line.129">    Matrix&lt;States, States&gt; lastTerm = Q.copy();</a>
-<span class="sourceLineNo">130</span><a id="line.130">    double lastCoeff = dtSeconds;</a>
-<span class="sourceLineNo">131</span><a id="line.131"></a>
-<span class="sourceLineNo">132</span><a id="line.132">    // Aᵀⁿ</a>
-<span class="sourceLineNo">133</span><a id="line.133">    Matrix&lt;States, States&gt; Atn = contA.transpose();</a>
-<span class="sourceLineNo">134</span><a id="line.134">    Matrix&lt;States, States&gt; phi12 = lastTerm.times(lastCoeff);</a>
-<span class="sourceLineNo">135</span><a id="line.135"></a>
-<span class="sourceLineNo">136</span><a id="line.136">    // i = 6 i.e. 5th order should be enough precision</a>
-<span class="sourceLineNo">137</span><a id="line.137">    for (int i = 2; i &lt; 6; ++i) {</a>
-<span class="sourceLineNo">138</span><a id="line.138">      lastTerm = contA.times(-1).times(lastTerm).plus(Q.times(Atn));</a>
-<span class="sourceLineNo">139</span><a id="line.139">      lastCoeff *= dtSeconds / ((double) i);</a>
-<span class="sourceLineNo">140</span><a id="line.140"></a>
-<span class="sourceLineNo">141</span><a id="line.141">      phi12 = phi12.plus(lastTerm.times(lastCoeff));</a>
-<span class="sourceLineNo">142</span><a id="line.142"></a>
-<span class="sourceLineNo">143</span><a id="line.143">      Atn = Atn.times(contA.transpose());</a>
-<span class="sourceLineNo">144</span><a id="line.144">    }</a>
-<span class="sourceLineNo">145</span><a id="line.145"></a>
-<span class="sourceLineNo">146</span><a id="line.146">    var discA = discretizeA(contA, dtSeconds);</a>
-<span class="sourceLineNo">147</span><a id="line.147">    Q = discA.times(phi12);</a>
-<span class="sourceLineNo">148</span><a id="line.148"></a>
-<span class="sourceLineNo">149</span><a id="line.149">    // Make Q symmetric if it isn't already</a>
-<span class="sourceLineNo">150</span><a id="line.150">    var discQ = Q.plus(Q.transpose()).div(2.0);</a>
-<span class="sourceLineNo">151</span><a id="line.151"></a>
-<span class="sourceLineNo">152</span><a id="line.152">    return new Pair&lt;&gt;(discA, discQ);</a>
-<span class="sourceLineNo">153</span><a id="line.153">  }</a>
-<span class="sourceLineNo">154</span><a id="line.154"></a>
-<span class="sourceLineNo">155</span><a id="line.155">  /**</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * Returns a discretized version of the provided continuous measurement noise covariance matrix.</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * Note that dt=0.0 divides R by zero.</a>
-<span class="sourceLineNo">158</span><a id="line.158">   *</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * @param &lt;O&gt; Nat representing the number of outputs.</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * @param R Continuous measurement noise covariance matrix.</a>
-<span class="sourceLineNo">161</span><a id="line.161">   * @param dtSeconds Discretization timestep.</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @return Discretized version of the provided continuous measurement noise covariance matrix.</a>
-<span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  public static &lt;O extends Num&gt; Matrix&lt;O, O&gt; discretizeR(Matrix&lt;O, O&gt; R, double dtSeconds) {</a>
-<span class="sourceLineNo">165</span><a id="line.165">    return R.div(dtSeconds);</a>
-<span class="sourceLineNo">166</span><a id="line.166">  }</a>
-<span class="sourceLineNo">167</span><a id="line.167">}</a>
+<span class="sourceLineNo">106</span><a id="line.106">    Q = discA.times(phi12);</a>
+<span class="sourceLineNo">107</span><a id="line.107"></a>
+<span class="sourceLineNo">108</span><a id="line.108">    // Make discrete Q symmetric if it isn't already</a>
+<span class="sourceLineNo">109</span><a id="line.109">    final var discQ = Q.plus(Q.transpose()).div(2.0);</a>
+<span class="sourceLineNo">110</span><a id="line.110"></a>
+<span class="sourceLineNo">111</span><a id="line.111">    return new Pair&lt;&gt;(discA, discQ);</a>
+<span class="sourceLineNo">112</span><a id="line.112">  }</a>
+<span class="sourceLineNo">113</span><a id="line.113"></a>
+<span class="sourceLineNo">114</span><a id="line.114">  /**</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * Discretizes the given continuous A and Q matrices.</a>
+<span class="sourceLineNo">116</span><a id="line.116">   *</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * &lt;p&gt;Rather than solving a 2N x 2N matrix exponential like in DiscretizeQ() (which is expensive),</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * we take advantage of the structure of the block matrix of A and Q.</a>
+<span class="sourceLineNo">119</span><a id="line.119">   *</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * &lt;ul&gt;</a>
+<span class="sourceLineNo">121</span><a id="line.121">   *   &lt;li&gt;eᴬᵀ, which is only N x N, is relatively cheap.</a>
+<span class="sourceLineNo">122</span><a id="line.122">   *   &lt;li&gt;The upper-right quarter of the 2N x 2N matrix, which we can approximate using a taylor</a>
+<span class="sourceLineNo">123</span><a id="line.123">   *       series to several terms and still be substantially cheaper than taking the big</a>
+<span class="sourceLineNo">124</span><a id="line.124">   *       exponential.</a>
+<span class="sourceLineNo">125</span><a id="line.125">   * &lt;/ul&gt;</a>
+<span class="sourceLineNo">126</span><a id="line.126">   *</a>
+<span class="sourceLineNo">127</span><a id="line.127">   * @param &lt;States&gt; Nat representing the number of states.</a>
+<span class="sourceLineNo">128</span><a id="line.128">   * @param contA Continuous system matrix.</a>
+<span class="sourceLineNo">129</span><a id="line.129">   * @param contQ Continuous process noise covariance matrix.</a>
+<span class="sourceLineNo">130</span><a id="line.130">   * @param dtSeconds Discretization timestep.</a>
+<span class="sourceLineNo">131</span><a id="line.131">   * @return a pair representing the discrete system matrix and process noise covariance matrix.</a>
+<span class="sourceLineNo">132</span><a id="line.132">   */</a>
+<span class="sourceLineNo">133</span><a id="line.133">  @SuppressWarnings("LocalVariableName")</a>
+<span class="sourceLineNo">134</span><a id="line.134">  public static &lt;States extends Num&gt;</a>
+<span class="sourceLineNo">135</span><a id="line.135">      Pair&lt;Matrix&lt;States, States&gt;, Matrix&lt;States, States&gt;&gt; discretizeAQTaylor(</a>
+<span class="sourceLineNo">136</span><a id="line.136">          Matrix&lt;States, States&gt; contA, Matrix&lt;States, States&gt; contQ, double dtSeconds) {</a>
+<span class="sourceLineNo">137</span><a id="line.137">    //       T</a>
+<span class="sourceLineNo">138</span><a id="line.138">    // Q_d = ∫ e^(Aτ) Q e^(Aᵀτ) dτ</a>
+<span class="sourceLineNo">139</span><a id="line.139">    //       0</a>
+<span class="sourceLineNo">140</span><a id="line.140">    //</a>
+<span class="sourceLineNo">141</span><a id="line.141">    // M = [−A  Q ]</a>
+<span class="sourceLineNo">142</span><a id="line.142">    //     [ 0  Aᵀ]</a>
+<span class="sourceLineNo">143</span><a id="line.143">    // ϕ = eᴹᵀ</a>
+<span class="sourceLineNo">144</span><a id="line.144">    // ϕ₁₂ = A_d⁻¹Q_d</a>
+<span class="sourceLineNo">145</span><a id="line.145">    //</a>
+<span class="sourceLineNo">146</span><a id="line.146">    // Taylor series of ϕ:</a>
+<span class="sourceLineNo">147</span><a id="line.147">    //</a>
+<span class="sourceLineNo">148</span><a id="line.148">    //   ϕ = eᴹᵀ = I + MT + 1/2 M²T² + 1/6 M³T³ + …</a>
+<span class="sourceLineNo">149</span><a id="line.149">    //   ϕ = eᴹᵀ = I + MT + 1/2 T²M² + 1/6 T³M³ + …</a>
+<span class="sourceLineNo">150</span><a id="line.150">    //</a>
+<span class="sourceLineNo">151</span><a id="line.151">    // Taylor series of ϕ expanded for ϕ₁₂:</a>
+<span class="sourceLineNo">152</span><a id="line.152">    //</a>
+<span class="sourceLineNo">153</span><a id="line.153">    //   ϕ₁₂ = 0 + QT + 1/2 T² (−AQ + QAᵀ) + 1/6 T³ (−A lastTerm + Q Aᵀ²) + …</a>
+<span class="sourceLineNo">154</span><a id="line.154">    //</a>
+<span class="sourceLineNo">155</span><a id="line.155">    // ```</a>
+<span class="sourceLineNo">156</span><a id="line.156">    // lastTerm = Q</a>
+<span class="sourceLineNo">157</span><a id="line.157">    // lastCoeff = T</a>
+<span class="sourceLineNo">158</span><a id="line.158">    // ATn = Aᵀ</a>
+<span class="sourceLineNo">159</span><a id="line.159">    // ϕ₁₂ = lastTerm lastCoeff = QT</a>
+<span class="sourceLineNo">160</span><a id="line.160">    //</a>
+<span class="sourceLineNo">161</span><a id="line.161">    // for i in range(2, 6):</a>
+<span class="sourceLineNo">162</span><a id="line.162">    //   // i = 2</a>
+<span class="sourceLineNo">163</span><a id="line.163">    //   lastTerm = −A lastTerm + Q ATn = −AQ + QAᵀ</a>
+<span class="sourceLineNo">164</span><a id="line.164">    //   lastCoeff *= T/i → lastCoeff *= T/2 = 1/2 T²</a>
+<span class="sourceLineNo">165</span><a id="line.165">    //   ATn *= Aᵀ = Aᵀ²</a>
+<span class="sourceLineNo">166</span><a id="line.166">    //</a>
+<span class="sourceLineNo">167</span><a id="line.167">    //   // i = 3</a>
+<span class="sourceLineNo">168</span><a id="line.168">    //   lastTerm = −A lastTerm + Q ATn = −A (−AQ + QAᵀ) + QAᵀ² = …</a>
+<span class="sourceLineNo">169</span><a id="line.169">    //   …</a>
+<span class="sourceLineNo">170</span><a id="line.170">    // ```</a>
+<span class="sourceLineNo">171</span><a id="line.171"></a>
+<span class="sourceLineNo">172</span><a id="line.172">    // Make continuous Q symmetric if it isn't already</a>
+<span class="sourceLineNo">173</span><a id="line.173">    Matrix&lt;States, States&gt; Q = contQ.plus(contQ.transpose()).div(2.0);</a>
+<span class="sourceLineNo">174</span><a id="line.174"></a>
+<span class="sourceLineNo">175</span><a id="line.175">    Matrix&lt;States, States&gt; lastTerm = Q.copy();</a>
+<span class="sourceLineNo">176</span><a id="line.176">    double lastCoeff = dtSeconds;</a>
+<span class="sourceLineNo">177</span><a id="line.177"></a>
+<span class="sourceLineNo">178</span><a id="line.178">    // Aᵀⁿ</a>
+<span class="sourceLineNo">179</span><a id="line.179">    Matrix&lt;States, States&gt; ATn = contA.transpose();</a>
+<span class="sourceLineNo">180</span><a id="line.180"></a>
+<span class="sourceLineNo">181</span><a id="line.181">    Matrix&lt;States, States&gt; phi12 = lastTerm.times(lastCoeff);</a>
+<span class="sourceLineNo">182</span><a id="line.182"></a>
+<span class="sourceLineNo">183</span><a id="line.183">    // i = 6 i.e. 5th order should be enough precision</a>
+<span class="sourceLineNo">184</span><a id="line.184">    for (int i = 2; i &lt; 6; ++i) {</a>
+<span class="sourceLineNo">185</span><a id="line.185">      lastTerm = contA.times(-1).times(lastTerm).plus(Q.times(ATn));</a>
+<span class="sourceLineNo">186</span><a id="line.186">      lastCoeff *= dtSeconds / ((double) i);</a>
+<span class="sourceLineNo">187</span><a id="line.187"></a>
+<span class="sourceLineNo">188</span><a id="line.188">      phi12 = phi12.plus(lastTerm.times(lastCoeff));</a>
+<span class="sourceLineNo">189</span><a id="line.189"></a>
+<span class="sourceLineNo">190</span><a id="line.190">      ATn = ATn.times(contA.transpose());</a>
+<span class="sourceLineNo">191</span><a id="line.191">    }</a>
+<span class="sourceLineNo">192</span><a id="line.192"></a>
+<span class="sourceLineNo">193</span><a id="line.193">    var discA = discretizeA(contA, dtSeconds);</a>
+<span class="sourceLineNo">194</span><a id="line.194">    Q = discA.times(phi12);</a>
+<span class="sourceLineNo">195</span><a id="line.195"></a>
+<span class="sourceLineNo">196</span><a id="line.196">    // Make Q symmetric if it isn't already</a>
+<span class="sourceLineNo">197</span><a id="line.197">    var discQ = Q.plus(Q.transpose()).div(2.0);</a>
+<span class="sourceLineNo">198</span><a id="line.198"></a>
+<span class="sourceLineNo">199</span><a id="line.199">    return new Pair&lt;&gt;(discA, discQ);</a>
+<span class="sourceLineNo">200</span><a id="line.200">  }</a>
+<span class="sourceLineNo">201</span><a id="line.201"></a>
+<span class="sourceLineNo">202</span><a id="line.202">  /**</a>
+<span class="sourceLineNo">203</span><a id="line.203">   * Returns a discretized version of the provided continuous measurement noise covariance matrix.</a>
+<span class="sourceLineNo">204</span><a id="line.204">   * Note that dt=0.0 divides R by zero.</a>
+<span class="sourceLineNo">205</span><a id="line.205">   *</a>
+<span class="sourceLineNo">206</span><a id="line.206">   * @param &lt;O&gt; Nat representing the number of outputs.</a>
+<span class="sourceLineNo">207</span><a id="line.207">   * @param R Continuous measurement noise covariance matrix.</a>
+<span class="sourceLineNo">208</span><a id="line.208">   * @param dtSeconds Discretization timestep.</a>
+<span class="sourceLineNo">209</span><a id="line.209">   * @return Discretized version of the provided continuous measurement noise covariance matrix.</a>
+<span class="sourceLineNo">210</span><a id="line.210">   */</a>
+<span class="sourceLineNo">211</span><a id="line.211">  public static &lt;O extends Num&gt; Matrix&lt;O, O&gt; discretizeR(Matrix&lt;O, O&gt; R, double dtSeconds) {</a>
+<span class="sourceLineNo">212</span><a id="line.212">    // R_d = 1/T R</a>
+<span class="sourceLineNo">213</span><a id="line.213">    return R.div(dtSeconds);</a>
+<span class="sourceLineNo">214</span><a id="line.214">  }</a>
+<span class="sourceLineNo">215</span><a id="line.215">}</a>
 
 
 
