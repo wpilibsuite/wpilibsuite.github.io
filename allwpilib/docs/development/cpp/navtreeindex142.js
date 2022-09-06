@@ -1,5 +1,7 @@
 var NAVTREEINDEX142 =
 {
+"namespaceunits.html#a37de99c8989dc30cb3c630ff9780f551":[4,0,21,159],
+"namespaceunits.html#a3800f61db8052a6b2bd46701f623b3f2":[4,0,21,190],
 "namespaceunits.html#a3a5d2fd30f834f853b96be433c1dc125":[4,0,21,106],
 "namespaceunits.html#a3a71b68052438b9369f3d1a32f7928f2":[4,0,21,101],
 "namespaceunits.html#a3afad35fd9cc81544e6ce5d6222b1b88":[4,0,21,174],
@@ -247,7 +249,5 @@ var NAVTREEINDEX142 =
 "namespaceunits_1_1current.html":[4,0,21,11],
 "namespaceunits_1_1data.html":[4,0,21,12],
 "namespaceunits_1_1data__transfer__rate.html":[4,0,21,13],
-"namespaceunits_1_1density.html":[4,0,21,14],
-"namespaceunits_1_1detail.html":[4,0,21,15],
-"namespaceunits_1_1detail.html#a0fc33d31c4dcf18fd9a2c272f6370b0a":[4,0,21,15,0]
+"namespaceunits_1_1density.html":[4,0,21,14]
 };
