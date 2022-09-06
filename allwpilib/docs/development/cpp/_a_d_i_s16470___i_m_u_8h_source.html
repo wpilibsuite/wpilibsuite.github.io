@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-98-g65c8fbd</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-99-g4267fa0</span>
    </div>
   </td>
  </tr>
@@ -392,125 +392,129 @@ $(document).ready(function(){initNavTree('_a_d_i_s16470___i_m_u_8h_source.html',
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> deg_to_rad = 0.0174532;</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> grav = 9.81;</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"></span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">   * @brief Switches to standard SPI operation. Primarily used when exiting auto</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">   * SPI mode.</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">   * @return A boolean indicating the success or failure of setting up the SPI</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">   * peripheral in standard SPI mode.</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="keywordtype">bool</span> SwitchToStandardSPI();</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="comment"></span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">   * @brief Switches to auto SPI operation. Primarily used when exiting standard</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">   * SPI mode.</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">   * @return A boolean indicating the success or failure of setting up the SPI</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">   * peripheral in auto SPI mode.</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordtype">bool</span> SwitchToAutoSPI();</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment"></span> </div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment">   * @brief Reads the contents of a specified register location over SPI.</span></div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment">   * @param reg An unsigned, 8-bit register location.</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment">   * @return An unsigned, 16-bit number representing the contents of the</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">   * requested register location.</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> ReadRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment"></span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">   * @brief Writes an unsigned, 16-bit value to two adjacent, 8-bit register</span></div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment">   * locations over SPI.</span></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">   * @param reg An unsigned, 8-bit register location.</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">   * @param val An unsigned, 16-bit value to be written to the specified</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">   * register location.</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordtype">void</span> WriteRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg, <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> val);</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment"></span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">   * @brief Main acquisition loop. Typically called asynchronously and</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">   * free-wheels while the robot code is active.</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <span class="keywordtype">void</span> Acquire();</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keywordtype">void</span> Close();</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="comment">// Integrated gyro value</span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  <span class="keywordtype">double</span> m_integ_angle = 0.0;</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <span class="comment">// Instant raw outputs</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  <span class="keywordtype">double</span> m_gyro_rate_x = 0.0;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">double</span> m_gyro_rate_y = 0.0;</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  <span class="keywordtype">double</span> m_gyro_rate_z = 0.0;</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <span class="keywordtype">double</span> m_accel_x = 0.0;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="keywordtype">double</span> m_accel_y = 0.0;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <span class="keywordtype">double</span> m_accel_z = 0.0;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <span class="comment">// Complementary filter variables</span></div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keywordtype">double</span> m_tau = 1.0;</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keywordtype">double</span> m_dt, m_alpha = 0.0;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <span class="keywordtype">double</span> m_compAngleX, m_compAngleY, m_accelAngleX, m_accelAngleY = 0.0;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <span class="comment">// Complementary filter functions</span></div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <span class="keywordtype">double</span> FormatFastConverge(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accAngle);</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  <span class="keywordtype">double</span> FormatRange0to2PI(<span class="keywordtype">double</span> compAngle);</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <span class="keywordtype">double</span> FormatAccelRange(<span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> accelZ);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">  /** @brief Resources **/</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  DigitalInput* m_reset_in;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  DigitalOutput* m_status_led;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment"></span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">   * @brief Switches to standard SPI operation. Primarily used when exiting auto</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">   * SPI mode.</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="comment">   * @return A boolean indicating the success or failure of setting up the SPI</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="comment">   * peripheral in standard SPI mode.</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="keywordtype">bool</span> SwitchToStandardSPI();</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment"></span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">   * @brief Switches to auto SPI operation. Primarily used when exiting standard</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">   * SPI mode.</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment">   * @return A boolean indicating the success or failure of setting up the SPI</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">   * peripheral in auto SPI mode.</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">bool</span> SwitchToAutoSPI();</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment"></span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment">   * @brief Reads the contents of a specified register location over SPI.</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">   * @param reg An unsigned, 8-bit register location.</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">   * @return An unsigned, 16-bit number representing the contents of the</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">   * requested register location.</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> ReadRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment"></span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">   * @brief Writes an unsigned, 16-bit value to two adjacent, 8-bit register</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">   * locations over SPI.</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">   * @param reg An unsigned, 8-bit register location.</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment">   * @param val An unsigned, 16-bit value to be written to the specified</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="comment">   * register location.</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <span class="keywordtype">void</span> WriteRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg, <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> val);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="comment"></span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="comment">   * @brief Main acquisition loop. Typically called asynchronously and</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="comment">   * free-wheels while the robot code is active.</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="keywordtype">void</span> Acquire();</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  <span class="keywordtype">void</span> Close();</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  <span class="comment">// Integrated gyro value</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">double</span> m_integ_angle = 0.0;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <span class="comment">// Instant raw outputs</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="keywordtype">double</span> m_gyro_rate_x = 0.0;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <span class="keywordtype">double</span> m_gyro_rate_y = 0.0;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="keywordtype">double</span> m_gyro_rate_z = 0.0;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <span class="keywordtype">double</span> m_accel_x = 0.0;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keywordtype">double</span> m_accel_y = 0.0;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keywordtype">double</span> m_accel_z = 0.0;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="comment">// Complementary filter variables</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <span class="keywordtype">double</span> m_tau = 1.0;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <span class="keywordtype">double</span> m_dt, m_alpha = 0.0;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  <span class="keywordtype">double</span> m_compAngleX, m_compAngleY, m_accelAngleX, m_accelAngleY = 0.0;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  <span class="comment">// Complementary filter functions</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <span class="keywordtype">double</span> FormatFastConverge(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accAngle);</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <span class="keywordtype">double</span> CompFilterProcess(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> omega);</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <span class="keywordtype">double</span> FormatRange0to2PI(<span class="keywordtype">double</span> compAngle);</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="comment">// State and resource variables</span></div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_active = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_first_run = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_idle = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  <span class="keywordtype">bool</span> m_auto_configured = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  <a class="code hl_enumeration" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">SPI::Port</a> m_spi_port;</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> m_calibration_time = 0;</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  SPI* m_spi = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  DigitalInput* m_auto_interrupt = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  <span class="keywordtype">double</span> m_scaled_sample_rate = 2500.0;  <span class="comment">// Default sample rate setting</span></div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  std::thread m_acquire_task;</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  hal::SimDevice m_simDevice;</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>  hal::SimDouble m_simGyroAngleX;</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  hal::SimDouble m_simGyroAngleY;</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  hal::SimDouble m_simGyroAngleZ;</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  hal::SimDouble m_simGyroRateX;</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  hal::SimDouble m_simGyroRateY;</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  hal::SimDouble m_simGyroRateZ;</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  hal::SimDouble m_simAccelX;</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  hal::SimDouble m_simAccelY;</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  hal::SimDouble m_simAccelZ;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>  <span class="keyword">struct </span>NonMovableMutexWrapper {</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>;</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    NonMovableMutexWrapper() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="keywordtype">double</span> FormatAccelRange(<span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> accelZ);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="keywordtype">double</span> CompFilterProcess(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> omega);</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  <span class="comment">// State and resource variables</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_active = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_first_run = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_idle = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  <span class="keywordtype">bool</span> m_auto_configured = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  <a class="code hl_enumeration" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">SPI::Port</a> m_spi_port;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> m_calibration_time = 0;</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  SPI* m_spi = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>  DigitalInput* m_auto_interrupt = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  <span class="keywordtype">double</span> m_scaled_sample_rate = 2500.0;  <span class="comment">// Default sample rate setting</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  std::thread m_acquire_task;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span> </div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  hal::SimDevice m_simDevice;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  hal::SimDouble m_simGyroAngleX;</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  hal::SimDouble m_simGyroAngleY;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  hal::SimDouble m_simGyroAngleZ;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  hal::SimDouble m_simGyroRateX;</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  hal::SimDouble m_simGyroRateY;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  hal::SimDouble m_simGyroRateZ;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>  hal::SimDouble m_simAccelX;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>  hal::SimDouble m_simAccelY;</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>  hal::SimDouble m_simAccelZ;</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    NonMovableMutexWrapper(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#ab05633be4a3573056bbe044badd089f2">operator=</a>(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    NonMovableMutexWrapper(NonMovableMutexWrapper&amp;&amp;) {}</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#ab05633be4a3573056bbe044badd089f2">operator=</a>(NonMovableMutexWrapper&amp;&amp;) {</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    }</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    <span class="keywordtype">void</span> lock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.lock(); }</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="keywordtype">void</span> unlock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.unlock(); }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>  <span class="keyword">struct </span>NonMovableMutexWrapper {</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    NonMovableMutexWrapper() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    NonMovableMutexWrapper(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#ab05633be4a3573056bbe044badd089f2">operator=</a>(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    NonMovableMutexWrapper(NonMovableMutexWrapper&amp;&amp;) {}</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16470___i_m_u.html#ab05633be4a3573056bbe044badd089f2">operator=</a>(NonMovableMutexWrapper&amp;&amp;) {</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    }</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <span class="keywordtype">bool</span> try_lock() noexcept { <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.try_lock(); }</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  };</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>  <span class="keyword">mutable</span> NonMovableMutexWrapper m_mutex;</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>};</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span> </div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <span class="keywordtype">void</span> lock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.lock(); }</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="keywordtype">void</span> unlock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.unlock(); }</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    <span class="keywordtype">bool</span> try_lock() noexcept { <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.try_lock(); }</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  };</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keyword">mutable</span> NonMovableMutexWrapper m_mutex;</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>};</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_digital_input_8h_html"><div class="ttname"><a href="_digital_input_8h.html">DigitalInput.h</a></div></div>
 <div class="ttc" id="a_digital_output_8h_html"><div class="ttname"><a href="_digital_output_8h.html">DigitalOutput.h</a></div></div>
 <div class="ttc" id="a_digital_source_8h_html"><div class="ttname"><a href="_digital_source_8h.html">DigitalSource.h</a></div></div>
@@ -566,7 +570,7 @@ $(document).ready(function(){initNavTree('_a_d_i_s16470___i_m_u_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_a_d_i_s16470___i_m_u_8h.html">ADIS16470_IMU.h</a></li>
-    <li class="footer">Generated on Tue Sep 6 2022 15:22:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Sep 6 2022 20:13:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
