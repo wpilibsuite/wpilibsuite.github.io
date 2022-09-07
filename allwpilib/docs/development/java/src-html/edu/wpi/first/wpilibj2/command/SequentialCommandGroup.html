@@ -106,31 +106,7 @@
 <span class="sourceLineNo">094</span><a id="line.94">  public boolean runsWhenDisabled() {</a>
 <span class="sourceLineNo">095</span><a id="line.95">    return m_runWhenDisabled;</a>
 <span class="sourceLineNo">096</span><a id="line.96">  }</a>
-<span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">  @Override</a>
-<span class="sourceLineNo">099</span><a id="line.99">  public SequentialCommandGroup beforeStarting(Command before) {</a>
-<span class="sourceLineNo">100</span><a id="line.100">    // store all the commands</a>
-<span class="sourceLineNo">101</span><a id="line.101">    var commands = new ArrayList&lt;Command&gt;();</a>
-<span class="sourceLineNo">102</span><a id="line.102">    commands.add(before);</a>
-<span class="sourceLineNo">103</span><a id="line.103">    commands.addAll(m_commands);</a>
-<span class="sourceLineNo">104</span><a id="line.104"></a>
-<span class="sourceLineNo">105</span><a id="line.105">    // reset current state</a>
-<span class="sourceLineNo">106</span><a id="line.106">    commands.forEach(CommandGroupBase::clearGroupedCommand);</a>
-<span class="sourceLineNo">107</span><a id="line.107">    m_commands.clear();</a>
-<span class="sourceLineNo">108</span><a id="line.108">    m_requirements.clear();</a>
-<span class="sourceLineNo">109</span><a id="line.109">    m_runWhenDisabled = true;</a>
-<span class="sourceLineNo">110</span><a id="line.110"></a>
-<span class="sourceLineNo">111</span><a id="line.111">    // add them back</a>
-<span class="sourceLineNo">112</span><a id="line.112">    addCommands(commands.toArray(Command[]::new));</a>
-<span class="sourceLineNo">113</span><a id="line.113">    return this;</a>
-<span class="sourceLineNo">114</span><a id="line.114">  }</a>
-<span class="sourceLineNo">115</span><a id="line.115"></a>
-<span class="sourceLineNo">116</span><a id="line.116">  @Override</a>
-<span class="sourceLineNo">117</span><a id="line.117">  public SequentialCommandGroup andThen(Command... next) {</a>
-<span class="sourceLineNo">118</span><a id="line.118">    addCommands(next);</a>
-<span class="sourceLineNo">119</span><a id="line.119">    return this;</a>
-<span class="sourceLineNo">120</span><a id="line.120">  }</a>
-<span class="sourceLineNo">121</span><a id="line.121">}</a>
+<span class="sourceLineNo">097</span><a id="line.97">}</a>
 
 
 
