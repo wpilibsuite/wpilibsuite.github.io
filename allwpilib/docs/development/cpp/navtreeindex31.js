@@ -1,7 +1,7 @@
 var NAVTREEINDEX31 =
 {
-"class_eigen_1_1_map_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index4032bba20cf92aab8bcf07e926e15a4f.html#aa4b0d0dd528fef0e1f8ce8c043d42b21":[6,0,4,114,2],
 "class_eigen_1_1_map_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index4032bba20cf92aab8bcf07e926e15a4f.html#aa4b0d0dd528fef0e1f8ce8c043d42b21":[4,0,8,117,2],
+"class_eigen_1_1_map_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index4032bba20cf92aab8bcf07e926e15a4f.html#aa4b0d0dd528fef0e1f8ce8c043d42b21":[6,0,4,114,2],
 "class_eigen_1_1_map_base.html":[6,0,4,118],
 "class_eigen_1_1_map_base.html":[4,0,8,121],
 "class_eigen_1_1_map_base_3_01_derived_00_01_read_only_accessors_01_4.html":[3,35,7],
@@ -50,8 +50,8 @@ var NAVTREEINDEX31 =
 "class_eigen_1_1_mapped_sparse_matrix.html":[6,0,4,121],
 "class_eigen_1_1_mapped_sparse_matrix.html#a0c36a53853f1659ea59447bcb9a20799":[4,0,8,124,3],
 "class_eigen_1_1_mapped_sparse_matrix.html#a0c36a53853f1659ea59447bcb9a20799":[6,0,4,121,3],
-"class_eigen_1_1_mapped_sparse_matrix.html#a126bf868e2a441dd0d677805c2de1fa8":[4,0,8,124,2],
 "class_eigen_1_1_mapped_sparse_matrix.html#a126bf868e2a441dd0d677805c2de1fa8":[6,0,4,121,2],
+"class_eigen_1_1_mapped_sparse_matrix.html#a126bf868e2a441dd0d677805c2de1fa8":[4,0,8,124,2],
 "class_eigen_1_1_mapped_sparse_matrix.html#a70e97a4e9933f2d92b30a24f0b8fe02a":[6,0,4,121,0],
 "class_eigen_1_1_mapped_sparse_matrix.html#a70e97a4e9933f2d92b30a24f0b8fe02a":[4,0,8,124,0],
 "class_eigen_1_1_mapped_sparse_matrix.html#adf73cc50ae4835aa4db56740dffacbc2":[6,0,4,121,1],

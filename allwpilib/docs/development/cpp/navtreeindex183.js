@@ -1,15 +1,5 @@
 var NAVTREEINDEX183 =
 {
-"struct_h_a_l___joystick_descriptor.html#afc9f2c48582c93f9569c641da3d14802":[3,1,26,4,3],
-"struct_h_a_l___joystick_p_o_vs.html":[3,1,26,2],
-"struct_h_a_l___joystick_p_o_vs.html#a72965ba8cbcd5aad88057d326c1879ba":[3,1,26,2,0],
-"struct_h_a_l___joystick_p_o_vs.html#adc41b7cdd2e3dd216f919c7659e42d1e":[3,1,26,2,1],
-"struct_h_a_l___match_info.html":[3,1,26,5],
-"struct_h_a_l___match_info.html#a30af18172023d942abbba136df00a3c1":[3,1,26,5,2],
-"struct_h_a_l___match_info.html#a3dbf012b7751ad8c60dadb8d56535266":[3,1,26,5,1],
-"struct_h_a_l___match_info.html#a5dc3c78c6fb994cfd6c6b2af23e17411":[3,1,26,5,0],
-"struct_h_a_l___match_info.html#a6c7a7828a352d1597a975cc5ddcd7e85":[3,1,26,5,3],
-"struct_h_a_l___match_info.html#ac3865133373b573e8826a3bc15fa7de6":[3,1,26,5,4],
 "struct_h_a_l___match_info.html#af51a5019e4855d652c759b1462fa9ad6":[3,1,26,5,5],
 "struct_h_a_l___power_distribution_faults.html":[3,1,18,1],
 "struct_h_a_l___power_distribution_faults.html#a022d1d5111180ca439842104da121778":[3,1,18,1,15],
@@ -249,5 +239,15 @@ var NAVTREEINDEX183 =
 "structarg__mapper.html#a41524f72eef8f9e20a897f3871c8329a":[6,0,22,20],
 "structarg__mapper.html#a4699a0215bcec429751ed5ac953fdec2":[6,0,22,14],
 "structarg__mapper.html#a55145e4be1d20261299039eb650192cb":[6,0,22,23],
-"structarg__mapper.html#a579bc4d236c988cb800ba15a32b56ff7":[6,0,22,6]
+"structarg__mapper.html#a579bc4d236c988cb800ba15a32b56ff7":[6,0,22,6],
+"structarg__mapper.html#a5d96e6ed049c2eee679cf5ee1c25d230":[6,0,22,26],
+"structarg__mapper.html#a63512c946ba552a819e3d98345e1ffea":[6,0,22,9],
+"structarg__mapper.html#a6a556343b552b1370d18446ef1bdd887":[6,0,22,27],
+"structarg__mapper.html#a814451c2db4b8ff1dd0d63ec14730d26":[6,0,22,30],
+"structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[6,0,22,5],
+"structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[6,0,22,35],
+"structarg__mapper.html#a9a433929c4a9821e67847c3f3af1d8e2":[6,0,22,31],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[6,0,22,12],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[6,0,22,11],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[6,0,22,13]
 };

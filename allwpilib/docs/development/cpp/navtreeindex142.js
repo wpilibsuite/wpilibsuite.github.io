@@ -1,15 +1,5 @@
 var NAVTREEINDEX142 =
 {
-"namespaceunits.html#a37de99c8989dc30cb3c630ff9780f551":[4,0,21,159],
-"namespaceunits.html#a3800f61db8052a6b2bd46701f623b3f2":[4,0,21,190],
-"namespaceunits.html#a3a5d2fd30f834f853b96be433c1dc125":[4,0,21,106],
-"namespaceunits.html#a3a71b68052438b9369f3d1a32f7928f2":[4,0,21,101],
-"namespaceunits.html#a3afad35fd9cc81544e6ce5d6222b1b88":[4,0,21,174],
-"namespaceunits.html#a3b3bd901311e31a4220ff385cda71808":[4,0,21,147],
-"namespaceunits.html#a3d62077f367bce565c4a1e4cad5be6b6":[4,0,21,164],
-"namespaceunits.html#a3f007aa4fa440632e97bb39a6d6fffb7":[4,0,21,208],
-"namespaceunits.html#a3f09fd2ffad59f4d04964936fdc33336":[4,0,21,258],
-"namespaceunits.html#a419d9b7804f68ca52937dc889b82f94b":[4,0,21,306],
 "namespaceunits.html#a41c0691af74ef23aecf4d068a2516a57":[4,0,21,121],
 "namespaceunits.html#a4228ad59bbc645b58ea410d919b18420":[4,0,21,160],
 "namespaceunits.html#a43d213fc487f68b3ac3a26308d259833":[4,0,21,231],
@@ -249,5 +239,15 @@ var NAVTREEINDEX142 =
 "namespaceunits_1_1current.html":[4,0,21,11],
 "namespaceunits_1_1data.html":[4,0,21,12],
 "namespaceunits_1_1data__transfer__rate.html":[4,0,21,13],
-"namespaceunits_1_1density.html":[4,0,21,14]
+"namespaceunits_1_1density.html":[4,0,21,14],
+"namespaceunits_1_1detail.html":[4,0,21,15],
+"namespaceunits_1_1detail.html#a0fc33d31c4dcf18fd9a2c272f6370b0a":[4,0,21,15,0],
+"namespaceunits_1_1dimensionless.html":[4,0,21,16],
+"namespaceunits_1_1dimensionless.html#a5d18e4545db54fa93e0ea3aad6449741":[4,0,21,16,0],
+"namespaceunits_1_1dimensionless.html#a72c8dabff15f950fca3c0cbfb0928e91":[4,0,21,16,2],
+"namespaceunits_1_1dimensionless.html#a85dec047260fe77c02d9fdc6c826af83":[4,0,21,16,1],
+"namespaceunits_1_1dimensionless.html#af0d9d40006a8bdac01f5776e42d283f3":[4,0,21,16,3],
+"namespaceunits_1_1dimensionless.html#af747bc24203407ff7374ac2cad2b3808":[4,0,21,16,5],
+"namespaceunits_1_1dimensionless.html#afa05c1eff65b212eba705125a7829f0f":[4,0,21,16,4],
+"namespaceunits_1_1energy.html":[4,0,21,17]
 };
