@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-102-gcb33bd7</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-103-g9ae38ea</span>
    </div>
   </td>
  </tr>
@@ -123,10 +123,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb82482ffd565a6340ce170d86604813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b5fcc57cedb687e276ad6622b0f6d63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#a1b5fcc57cedb687e276ad6622b0f6d63">ProxyScheduleCommand</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *toSchedule)</td></tr>
 <tr class="separator:a1b5fcc57cedb687e276ad6622b0f6d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d24490a254bc5685d685c1ef315d7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#af2d24490a254bc5685d685c1ef315d7b">ProxyScheduleCommand</a> (std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;toSchedule)</td></tr>
+<tr class="memdesc:af2d24490a254bc5685d685c1ef315d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a> that schedules the given command when initialized, and ends when it is no longer scheduled.  <a href="classfrc2_1_1_proxy_schedule_command.html#af2d24490a254bc5685d685c1ef315d7b">More...</a><br /></td></tr>
+<tr class="separator:af2d24490a254bc5685d685c1ef315d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65238e8b49cead638091064abdf95614"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#a65238e8b49cead638091064abdf95614">ProxyScheduleCommand</a> (<a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a> &amp;&amp;other)=default</td></tr>
 <tr class="separator:a65238e8b49cead638091064abdf95614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39a941cfd74b0a38aa88a5f53856360b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#a39a941cfd74b0a38aa88a5f53856360b">ProxyScheduleCommand</a> (const <a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a> &amp;other)=default</td></tr>
-<tr class="separator:a39a941cfd74b0a38aa88a5f53856360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0350faddfc7086907a2b27c70de637f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#aa0350faddfc7086907a2b27c70de637f">Initialize</a> () override</td></tr>
 <tr class="memdesc:aa0350faddfc7086907a2b27c70de637f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial subroutine of a command.  <a href="classfrc2_1_1_proxy_schedule_command.html#aa0350faddfc7086907a2b27c70de637f">More...</a><br /></td></tr>
 <tr class="separator:aa0350faddfc7086907a2b27c70de637f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,8 +380,43 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="af2d24490a254bc5685d685c1ef315d7b" name="af2d24490a254bc5685d685c1ef315d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d24490a254bc5685d685c1ef315d7b">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc2::ProxyScheduleCommand::ProxyScheduleCommand </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>toSchedule</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a> that schedules the given command when initialized, and ends when it is no longer scheduled. </p>
+<p >Note that this constructor passes ownership of the given command to the returned <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toSchedule</td><td>the command to schedule </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a65238e8b49cead638091064abdf95614" name="a65238e8b49cead638091064abdf95614"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65238e8b49cead638091064abdf95614">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65238e8b49cead638091064abdf95614">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,32 +428,6 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">frc2::ProxyScheduleCommand::ProxyScheduleCommand </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39a941cfd74b0a38aa88a5f53856360b" name="a39a941cfd74b0a38aa88a5f53856360b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39a941cfd74b0a38aa88a5f53856360b">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">frc2::ProxyScheduleCommand::ProxyScheduleCommand </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
@@ -569,7 +579,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a></li>
-    <li class="footer">Generated on Sun Sep 11 2022 17:41:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Sep 14 2022 01:36:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
