@@ -1,5 +1,7 @@
 var NAVTREEINDEX130 =
 {
+"namespace_eigen_1_1bfloat16__impl.html#aff7dfa2c21dfbc3a25b302fafea9bcce":[4,0,8,1,36],
+"namespace_eigen_1_1half__impl.html":[4,0,8,2],
 "namespace_eigen_1_1half__impl.html#a03f37f7cb0691e122e6181b6891280e2":[4,0,8,2,3],
 "namespace_eigen_1_1half__impl.html#a04a9e77f022c30b44139bdc0069f4f25":[4,0,8,2,32],
 "namespace_eigen_1_1half__impl.html#a08c4d7059d92a0dc8ff97fbe5ef44fb6":[4,0,8,2,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX130 =
 "namespace_eigen_1_1internal.html#a17db1017816cbbca4bfa964a86140713":[4,0,8,4,1985],
 "namespace_eigen_1_1internal.html#a1870ae734340f0ef9640d59dc98b9df4":[4,0,8,4,2621],
 "namespace_eigen_1_1internal.html#a1896c0953e091890d45773c726c5001d":[4,0,8,4,3334],
-"namespace_eigen_1_1internal.html#a18ca97a81e769f4679706703b17f2e9f":[4,0,8,4,2323],
-"namespace_eigen_1_1internal.html#a190c34785e0f92dea3f8786b8330063a":[4,0,8,4,2775],
-"namespace_eigen_1_1internal.html#a1910eee131fbacbd1f069d6e0758eb3a":[4,0,8,4,2238]
+"namespace_eigen_1_1internal.html#a18ca97a81e769f4679706703b17f2e9f":[4,0,8,4,2323]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX143 =
 {
+"namespaceunits_1_1dimensionless.html#afa05c1eff65b212eba705125a7829f0f":[4,0,21,16,4],
+"namespaceunits_1_1energy.html":[4,0,21,17],
 "namespaceunits_1_1force.html":[4,0,21,18],
 "namespaceunits_1_1frequency.html":[4,0,21,19],
 "namespaceunits_1_1illuminance.html":[4,0,21,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX143 =
 "namespacewpi.html#a9c5d4610f996de2254ee2eca97aa2da6":[4,0,22,390],
 "namespacewpi.html#a9ddfda4dce07ee9575513ba636d6f383":[4,0,22,428],
 "namespacewpi.html#a9e441a1bfb8b548adcb3fd7e08eb3be0":[4,0,22,448],
-"namespacewpi.html#aa1c3ca08347209b40a7330a66e83bf05":[4,0,22,280],
-"namespacewpi.html#aa300eeb1def26aef1ca3af133fb26971":[4,0,22,341],
-"namespacewpi.html#aa3107b50e4fba4c211bc3981f452dfbc":[4,0,22,399]
+"namespacewpi.html#aa1c3ca08347209b40a7330a66e83bf05":[4,0,22,280]
 };

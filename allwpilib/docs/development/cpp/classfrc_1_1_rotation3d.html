@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-103-g9ae38ea</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-110-g4eb1d03</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_rotation3d.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>A rotation in a 3D coordinate frame.  
+<p>A rotation in a 3D coordinate frame represented by a quaternion.  
  <a href="classfrc_1_1_rotation3d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_rotation3d_8h_source.html">frc/geometry/Rotation3d.h</a>&gt;</code></p>
@@ -106,19 +106,22 @@ $(document).ready(function(){initNavTree('classfrc_1_1_rotation3d.html',''); ini
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5296701f027476d18a7b23fab177bb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#ae5296701f027476d18a7b23fab177bb5">Rotation3d</a> ()=default</td></tr>
-<tr class="memdesc:ae5296701f027476d18a7b23fab177bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> with a default angle of 0 degrees.  <a href="classfrc_1_1_rotation3d.html#ae5296701f027476d18a7b23fab177bb5">More...</a><br /></td></tr>
+<tr class="memdesc:ae5296701f027476d18a7b23fab177bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> with a default angle of 0 degrees.  <a href="classfrc_1_1_rotation3d.html#ae5296701f027476d18a7b23fab177bb5">More...</a><br /></td></tr>
 <tr class="separator:ae5296701f027476d18a7b23fab177bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcd766ebcd443e5e427ae82100c3ef73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#abcd766ebcd443e5e427ae82100c3ef73">Rotation3d</a> (const <a class="el" href="classfrc_1_1_quaternion.html">Quaternion</a> &amp;q)</td></tr>
-<tr class="memdesc:abcd766ebcd443e5e427ae82100c3ef73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> from a quaternion.  <a href="classfrc_1_1_rotation3d.html#abcd766ebcd443e5e427ae82100c3ef73">More...</a><br /></td></tr>
+<tr class="memdesc:abcd766ebcd443e5e427ae82100c3ef73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> from a quaternion.  <a href="classfrc_1_1_rotation3d.html#abcd766ebcd443e5e427ae82100c3ef73">More...</a><br /></td></tr>
 <tr class="separator:abcd766ebcd443e5e427ae82100c3ef73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1e513bf8b87f98dfe2342e0e8c4d19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a1b1e513bf8b87f98dfe2342e0e8c4d19">Rotation3d</a> (units::radian_t roll, units::radian_t pitch, units::radian_t yaw)</td></tr>
-<tr class="memdesc:a1b1e513bf8b87f98dfe2342e0e8c4d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> from extrinsic roll, pitch, and yaw.  <a href="classfrc_1_1_rotation3d.html#a1b1e513bf8b87f98dfe2342e0e8c4d19">More...</a><br /></td></tr>
+<tr class="memdesc:a1b1e513bf8b87f98dfe2342e0e8c4d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> from extrinsic roll, pitch, and yaw.  <a href="classfrc_1_1_rotation3d.html#a1b1e513bf8b87f98dfe2342e0e8c4d19">More...</a><br /></td></tr>
 <tr class="separator:a1b1e513bf8b87f98dfe2342e0e8c4d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f6bc85b1bf8932638a80ebc468848d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a9f6bc85b1bf8932638a80ebc468848d8">Rotation3d</a> (const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 3 &gt; &amp;axis, units::radian_t angle)</td></tr>
-<tr class="memdesc:a9f6bc85b1bf8932638a80ebc468848d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> with the given axis-angle representation.  <a href="classfrc_1_1_rotation3d.html#a9f6bc85b1bf8932638a80ebc468848d8">More...</a><br /></td></tr>
+<tr class="memdesc:a9f6bc85b1bf8932638a80ebc468848d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> with the given axis-angle representation.  <a href="classfrc_1_1_rotation3d.html#a9f6bc85b1bf8932638a80ebc468848d8">More...</a><br /></td></tr>
 <tr class="separator:a9f6bc85b1bf8932638a80ebc468848d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c98d9fa4b6d474eefb16c4d41bc37a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a6c98d9fa4b6d474eefb16c4d41bc37a8">Rotation3d</a> (const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 3, 3 &gt; &amp;rotationMatrix)</td></tr>
+<tr class="memdesc:a6c98d9fa4b6d474eefb16c4d41bc37a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> from a rotation matrix.  <a href="classfrc_1_1_rotation3d.html#a6c98d9fa4b6d474eefb16c4d41bc37a8">More...</a><br /></td></tr>
+<tr class="separator:a6c98d9fa4b6d474eefb16c4d41bc37a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade28bdc36bca46ceaa1ae4ba421c18e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#ade28bdc36bca46ceaa1ae4ba421c18e0">Rotation3d</a> (const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 3 &gt; &amp;initial, const <a class="el" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord</a>&lt; 3 &gt; &amp;final)</td></tr>
-<tr class="memdesc:ade28bdc36bca46ceaa1ae4ba421c18e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> that rotates the initial vector onto the final vector.  <a href="classfrc_1_1_rotation3d.html#ade28bdc36bca46ceaa1ae4ba421c18e0">More...</a><br /></td></tr>
+<tr class="memdesc:ade28bdc36bca46ceaa1ae4ba421c18e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> that rotates the initial vector onto the final vector.  <a href="classfrc_1_1_rotation3d.html#ade28bdc36bca46ceaa1ae4ba421c18e0">More...</a><br /></td></tr>
 <tr class="separator:ade28bdc36bca46ceaa1ae4ba421c18e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a226f2d29b9f500e4ab0199b5d33f2f77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a226f2d29b9f500e4ab0199b5d33f2f77">operator+</a> (const <a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a> &amp;other) const</td></tr>
 <tr class="memdesc:a226f2d29b9f500e4ab0199b5d33f2f77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds two rotations together.  <a href="classfrc_1_1_rotation3d.html#a226f2d29b9f500e4ab0199b5d33f2f77">More...</a><br /></td></tr>
@@ -133,16 +136,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aaba304be9fe37eb64bbbfa8542f942bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the current rotation by a scalar.  <a href="classfrc_1_1_rotation3d.html#aaba304be9fe37eb64bbbfa8542f942bf">More...</a><br /></td></tr>
 <tr class="separator:aaba304be9fe37eb64bbbfa8542f942bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a562f994b9fea2d4abc121bf7dde8be11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a562f994b9fea2d4abc121bf7dde8be11">operator==</a> (const <a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a> &amp;other) const</td></tr>
-<tr class="memdesc:a562f994b9fea2d4abc121bf7dde8be11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks equality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> and another object.  <a href="classfrc_1_1_rotation3d.html#a562f994b9fea2d4abc121bf7dde8be11">More...</a><br /></td></tr>
+<tr class="memdesc:a562f994b9fea2d4abc121bf7dde8be11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks equality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> and another object.  <a href="classfrc_1_1_rotation3d.html#a562f994b9fea2d4abc121bf7dde8be11">More...</a><br /></td></tr>
 <tr class="separator:a562f994b9fea2d4abc121bf7dde8be11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a58127775fd92ac61351401b797a7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a19a58127775fd92ac61351401b797a7f">operator!=</a> (const <a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a> &amp;other) const</td></tr>
-<tr class="memdesc:a19a58127775fd92ac61351401b797a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks inequality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> and another object.  <a href="classfrc_1_1_rotation3d.html#a19a58127775fd92ac61351401b797a7f">More...</a><br /></td></tr>
+<tr class="memdesc:a19a58127775fd92ac61351401b797a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks inequality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> and another object.  <a href="classfrc_1_1_rotation3d.html#a19a58127775fd92ac61351401b797a7f">More...</a><br /></td></tr>
 <tr class="separator:a19a58127775fd92ac61351401b797a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a113546b8442f179866e4ca936cfdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#aa2a113546b8442f179866e4ca936cfdb">RotateBy</a> (const <a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a> &amp;other) const</td></tr>
 <tr class="memdesc:aa2a113546b8442f179866e4ca936cfdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the new rotation to the current rotation.  <a href="classfrc_1_1_rotation3d.html#aa2a113546b8442f179866e4ca936cfdb">More...</a><br /></td></tr>
 <tr class="separator:aa2a113546b8442f179866e4ca936cfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9451d6307de622715a6484bbe103be1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_quaternion.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#ad9451d6307de622715a6484bbe103be1">GetQuaternion</a> () const</td></tr>
-<tr class="memdesc:ad9451d6307de622715a6484bbe103be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the quaternion representation of the <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a>.  <a href="classfrc_1_1_rotation3d.html#ad9451d6307de622715a6484bbe103be1">More...</a><br /></td></tr>
+<tr class="memdesc:ad9451d6307de622715a6484bbe103be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the quaternion representation of the <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a>.  <a href="classfrc_1_1_rotation3d.html#ad9451d6307de622715a6484bbe103be1">More...</a><br /></td></tr>
 <tr class="separator:ad9451d6307de622715a6484bbe103be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7e8ea23fb74c18253a1af358c8a8dd"><td class="memItemLeft" align="right" valign="top">units::radian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a5d7e8ea23fb74c18253a1af358c8a8dd">X</a> () const</td></tr>
 <tr class="memdesc:a5d7e8ea23fb74c18253a1af358c8a8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the counterclockwise rotation angle around the X axis (roll).  <a href="classfrc_1_1_rotation3d.html#a5d7e8ea23fb74c18253a1af358c8a8dd">More...</a><br /></td></tr>
@@ -160,14 +163,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8ecdd858ac78eb8057ebf0b9ee1d3df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle in the axis-angle representation of this rotation.  <a href="classfrc_1_1_rotation3d.html#a8ecdd858ac78eb8057ebf0b9ee1d3df3">More...</a><br /></td></tr>
 <tr class="separator:a8ecdd858ac78eb8057ebf0b9ee1d3df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a068d0ebc3457534b7646249ff2bd6750"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation3d.html#a068d0ebc3457534b7646249ff2bd6750">ToRotation2d</a> () const</td></tr>
-<tr class="memdesc:a068d0ebc3457534b7646249ff2bd6750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classfrc_1_1_rotation2d.html" title="A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).">Rotation2d</a> representing this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> projected into the X-Y plane.  <a href="classfrc_1_1_rotation3d.html#a068d0ebc3457534b7646249ff2bd6750">More...</a><br /></td></tr>
+<tr class="memdesc:a068d0ebc3457534b7646249ff2bd6750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="classfrc_1_1_rotation2d.html" title="A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).">Rotation2d</a> representing this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> projected into the X-Y plane.  <a href="classfrc_1_1_rotation3d.html#a068d0ebc3457534b7646249ff2bd6750">More...</a><br /></td></tr>
 <tr class="separator:a068d0ebc3457534b7646249ff2bd6750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A rotation in a 3D coordinate frame. </p>
+<div class="textblock"><p >A rotation in a 3D coordinate frame represented by a quaternion. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5296701f027476d18a7b23fab177bb5" name="ae5296701f027476d18a7b23fab177bb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5296701f027476d18a7b23fab177bb5">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5296701f027476d18a7b23fab177bb5">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,12 +192,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> with a default angle of 0 degrees. </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> with a default angle of 0 degrees. </p>
 
 </div>
 </div>
 <a id="abcd766ebcd443e5e427ae82100c3ef73" name="abcd766ebcd443e5e427ae82100c3ef73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd766ebcd443e5e427ae82100c3ef73">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd766ebcd443e5e427ae82100c3ef73">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +220,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> from a quaternion. </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> from a quaternion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">q</td><td>The quaternion. </td></tr>
@@ -228,7 +231,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1b1e513bf8b87f98dfe2342e0e8c4d19" name="a1b1e513bf8b87f98dfe2342e0e8c4d19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b1e513bf8b87f98dfe2342e0e8c4d19">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1e513bf8b87f98dfe2342e0e8c4d19">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +262,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> from extrinsic roll, pitch, and yaw. </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> from extrinsic roll, pitch, and yaw. </p>
 <p >Extrinsic rotations occur in that order around the axes in the fixed global frame rather than the body frame.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -273,7 +276,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9f6bc85b1bf8932638a80ebc468848d8" name="a9f6bc85b1bf8932638a80ebc468848d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f6bc85b1bf8932638a80ebc468848d8">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6bc85b1bf8932638a80ebc468848d8">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,7 +301,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> with the given axis-angle representation. </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> with the given axis-angle representation. </p>
 <p >The axis doesn't have to be normalized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -310,8 +313,48 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c98d9fa4b6d474eefb16c4d41bc37a8" name="a6c98d9fa4b6d474eefb16c4d41bc37a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c98d9fa4b6d474eefb16c4d41bc37a8">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::Rotation3d::Rotation3d </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacefrc.html#a172bf091f4aff89b71521ade21da546f">Matrixd</a>&lt; 3, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rotationMatrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> from a rotation matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotationMatrix</td><td>The rotation matrix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::domain_error</td><td>if the rotation matrix isn't special orthogonal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ade28bdc36bca46ceaa1ae4ba421c18e0" name="ade28bdc36bca46ceaa1ae4ba421c18e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade28bdc36bca46ceaa1ae4ba421c18e0">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ade28bdc36bca46ceaa1ae4ba421c18e0">&#9670;&nbsp;</a></span>Rotation3d() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,7 +379,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> that rotates the initial vector onto the final vector. </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> that rotates the initial vector onto the final vector. </p>
 <p >This is useful for turning a 3D vector (final) into an orientation relative to a coordinate system vector (initial).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -402,7 +445,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the quaternion representation of the <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a>. </p>
+<p>Returns the quaternion representation of the <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a>. </p>
 
 </div>
 </div>
@@ -422,7 +465,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks inequality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> and another object. </p>
+<p>Checks inequality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> and another object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>The other object. </td></tr>
@@ -456,7 +499,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The new scaled <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The new scaled <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a>. </dd></dl>
 
 </div>
 </div>
@@ -550,7 +593,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks equality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> and another object. </p>
+<p>Checks equality between this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> and another object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">other</td><td>The other object. </td></tr>
@@ -584,7 +627,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The new rotated <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The new rotated <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a>. </dd></dl>
 
 </div>
 </div>
@@ -603,7 +646,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="classfrc_1_1_rotation2d.html" title="A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).">Rotation2d</a> representing this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame.">Rotation3d</a> projected into the X-Y plane. </p>
+<p>Returns a <a class="el" href="classfrc_1_1_rotation2d.html" title="A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).">Rotation2d</a> representing this <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">Rotation3d</a> projected into the X-Y plane. </p>
 
 </div>
 </div>
@@ -673,7 +716,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a></li>
-    <li class="footer">Generated on Wed Sep 14 2022 01:36:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Sep 17 2022 07:27:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

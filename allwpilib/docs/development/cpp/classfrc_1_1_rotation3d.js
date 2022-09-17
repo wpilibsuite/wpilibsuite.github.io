@@ -4,6 +4,7 @@ var classfrc_1_1_rotation3d =
     [ "Rotation3d", "classfrc_1_1_rotation3d.html#abcd766ebcd443e5e427ae82100c3ef73", null ],
     [ "Rotation3d", "classfrc_1_1_rotation3d.html#a1b1e513bf8b87f98dfe2342e0e8c4d19", null ],
     [ "Rotation3d", "classfrc_1_1_rotation3d.html#a9f6bc85b1bf8932638a80ebc468848d8", null ],
+    [ "Rotation3d", "classfrc_1_1_rotation3d.html#a6c98d9fa4b6d474eefb16c4d41bc37a8", null ],
     [ "Rotation3d", "classfrc_1_1_rotation3d.html#ade28bdc36bca46ceaa1ae4ba421c18e0", null ],
     [ "Angle", "classfrc_1_1_rotation3d.html#a8ecdd858ac78eb8057ebf0b9ee1d3df3", null ],
     [ "Axis", "classfrc_1_1_rotation3d.html#aac304fb859570941a1c22b576bf60478", null ],
