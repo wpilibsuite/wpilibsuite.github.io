@@ -178,6 +178,7 @@ var namespacewpi =
     [ "SafeThreadBase", "classwpi_1_1_safe_thread_base.html", "classwpi_1_1_safe_thread_base" ],
     [ "SafeThreadEvent", "classwpi_1_1_safe_thread_event.html", "classwpi_1_1_safe_thread_event" ],
     [ "SafeThreadOwner", "classwpi_1_1_safe_thread_owner.html", "classwpi_1_1_safe_thread_owner" ],
+    [ "scope_exit", "classwpi_1_1scope__exit.html", "classwpi_1_1scope__exit" ],
     [ "ScopedFatalErrorHandler", "structwpi_1_1_scoped_fatal_error_handler.html", "structwpi_1_1_scoped_fatal_error_handler" ],
     [ "Sendable", "classwpi_1_1_sendable.html", "classwpi_1_1_sendable" ],
     [ "SendableBuilder", "classwpi_1_1_sendable_builder.html", "classwpi_1_1_sendable_builder" ],

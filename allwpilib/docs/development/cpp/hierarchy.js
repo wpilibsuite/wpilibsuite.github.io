@@ -3402,6 +3402,7 @@ var hierarchy =
     [ "Eigen::ScalarBinaryOpTraits< typename NumTraits< typename internal::enable_if< NumTraits< T >::IsComplex, T >::type >::Real, T, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01typename_01_num_traits_3_01typename_01internal_1_1e682c29bad5c4221eece44bbf2be041d0.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< void, T, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01void_00_01_t_00_01_binary_op_01_4.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< void, void, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01void_00_01void_00_01_binary_op_01_4.html", null ],
+    [ "wpi::scope_exit< F >", "classwpi_1_1scope__exit.html", null ],
     [ "wpi::ScopedFatalErrorHandler", "structwpi_1_1_scoped_fatal_error_handler.html", null ],
     [ "frc::ScopedTracer", "classfrc_1_1_scoped_tracer.html", null ],
     [ "wpi::memory::detail::segregatable_type< I, Segregator >", "structwpi_1_1memory_1_1detail_1_1segregatable__type.html", null ],

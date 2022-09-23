@@ -30,6 +30,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "priority_queue.h", "priority__queue_8h.html", "priority__queue_8h" ],
     [ "raw_istream.h", "raw__istream_8h.html", "raw__istream_8h" ],
     [ "SafeThread.h", "_safe_thread_8h.html", "_safe_thread_8h" ],
+    [ "scope", "scope.html", "scope" ],
     [ "sha1.h", "sha1_8h.html", "sha1_8h" ],
     [ "SpanExtras.h", "_span_extras_8h.html", "_span_extras_8h" ],
     [ "spinlock.h", "spinlock_8h.html", "spinlock_8h" ],
