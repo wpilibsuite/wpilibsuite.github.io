@@ -1,5 +1,15 @@
 var NAVTREEINDEX197 =
 {
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca9f27410725ab8cc8854a2769c7a516b8":[7,0,8,0,0,0,2,7,51],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca9f370737a8ad22210a0dd6b1c8f00896":[7,0,8,0,0,0,2,7,45],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203caa1876a44fe9d3e277e5a90a14fd1d375":[7,0,8,0,0,0,2,7,27],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203caa6ab62e9da89b20d720c70602624bfc2":[7,0,8,0,0,0,2,7,78],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203caa889858bd19327fe8b643b9ff36a1782":[7,0,8,0,0,0,2,7,140],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203caaac43a86b5d19ed2ff0aefa6b0758fe3":[7,0,8,0,0,0,2,7,29],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cab2fb12c1d8469e020be7d77d0d9cf2dd":[7,0,8,0,0,0,2,7,74],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cab5bd346b77f564748d4d2743156ed6e8":[7,0,8,0,0,0,2,7,105],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cab88072f7e28a64cfd1a36370be8450bb":[7,0,8,0,0,0,2,7,28],
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cabb7aedfa61007447dd6efaf9f37641e3":[7,0,8,0,0,0,2,7,112],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cabc432826c5179d5332c28e32f2ff58a0":[7,0,8,0,0,0,2,7,17],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cabca51d13e304e17f34a3e7c598884ae8":[7,0,8,0,0,0,2,7,73],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cabda9643ac6601722a28f238714274da4":[7,0,8,0,0,0,2,7,114],

@@ -1,5 +1,15 @@
 var NAVTREEINDEX183 =
 {
+"struct_h_a_l___d_m_a_sample.html#a70ba9eb9744d01adf7ea9033237f5140":[3,1,23,0,3],
+"struct_h_a_l___d_m_a_sample.html#a7dfb6df674ecdd01cf2a406bf6685abc":[3,1,23,0,4],
+"struct_h_a_l___d_m_a_sample.html#a8a3bc3bcf128247b72b280bae7cb1d5c":[3,1,23,0,2],
+"struct_h_a_l___d_m_a_sample.html#af6b614251f68cd8bfebd5416a884b712":[3,1,23,0,0],
+"struct_h_a_l___joystick_axes.html":[3,1,26,1],
+"struct_h_a_l___joystick_axes.html#ac0601f26133aad58e9ef4dadf146de6d":[3,1,26,1,1],
+"struct_h_a_l___joystick_axes.html#ae17b86ab52dea8557afcde52a10af779":[3,1,26,1,0],
+"struct_h_a_l___joystick_buttons.html":[3,1,26,3],
+"struct_h_a_l___joystick_buttons.html#a38ec62e88472f4c7918af189d4043cd4":[3,1,26,3,0],
+"struct_h_a_l___joystick_buttons.html#ad2aeabb6cc9c523c765132c1749e82fd":[3,1,26,3,1],
 "struct_h_a_l___joystick_descriptor.html":[3,1,26,4],
 "struct_h_a_l___joystick_descriptor.html#a15fc9338bfe07981f2fc19424b229223":[3,1,26,4,6],
 "struct_h_a_l___joystick_descriptor.html#a1f06f84bae0b1781aa239419432911e0":[3,1,26,4,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX183 =
 "structarg__formatter.html#a672a78bc78c31cac247dda3ee49645d6":[6,0,21,3],
 "structarg__formatter.html#a7564446a13d037cd4e415f17d4ae8214":[6,0,21,4],
 "structarg__formatter.html#a812825d096745167b0b12e87209938b8":[6,0,21,5],
-"structarg__formatter.html#a9cefc9d64ed03494749cb68d70db6292":[6,0,21,1],
-"structarg__mapper.html":[6,0,22],
-"structarg__mapper.html#a0e5fd42160aa65adb46c50c3d04920c8":[6,0,22,19],
-"structarg__mapper.html#a1682c2443b7892553ebb2c67b3ff76b7":[6,0,22,22],
-"structarg__mapper.html#a1f0e3fe09ce54e45f4e63d7a902bde08":[6,0,22,16],
-"structarg__mapper.html#a1f8474167b9620300909fe20a6a2dcc5":[6,0,22,36],
-"structarg__mapper.html#a23a1f95e29f8ac5f32ad5ef07be65798":[6,0,22,1],
-"structarg__mapper.html#a27d915613eac10f891ee79c47bfa293d":[6,0,22,3],
-"structarg__mapper.html#a2b124d792d2d61cbf983df726e7300ae":[6,0,22,4],
-"structarg__mapper.html#a2bd94ea96ac20fa87cd47416706b587f":[6,0,22,15],
-"structarg__mapper.html#a2cddbdef92190f4b9aaedd7142504d32":[6,0,22,18]
+"structarg__formatter.html#a9cefc9d64ed03494749cb68d70db6292":[6,0,21,1]
 };

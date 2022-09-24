@@ -1,5 +1,15 @@
 var NAVTREEINDEX144 =
 {
+"namespacewpi.html#a86598beceb2a41ea10f4335f8d5b99e4":[4,0,22,259],
+"namespacewpi.html#a88303c617dfdc5eca2edb6fb7b10124b":[4,0,22,395],
+"namespacewpi.html#a8af9a7e30ba77940f2ef47d513252866":[4,0,22,347],
+"namespacewpi.html#a8e2f8fc1e0870f5b219a8bc1d3654ecc":[4,0,22,290],
+"namespacewpi.html#a8eb96f94c028542a238feaf8cabb44dc":[4,0,22,293],
+"namespacewpi.html#a8f0cca388f8042851ed82359d23c61e9":[4,0,22,214],
+"namespacewpi.html#a903ac386cdae4917d7cc20ed662dcee5":[4,0,22,240],
+"namespacewpi.html#a905c54ca4b7fdb1633b425ad9ca5dc48":[4,0,22,330],
+"namespacewpi.html#a90d3b71dd4da9a85a35767dfe54e8c84":[4,0,22,253],
+"namespacewpi.html#a91c8224f526316dbd1d8e8c3e53362db":[4,0,22,319],
 "namespacewpi.html#a9257f3c46568bac25b1ba2f3fac4678a":[4,0,22,235],
 "namespacewpi.html#a9258c13f90593d3af2d92dde80a79e9b":[4,0,22,287],
 "namespacewpi.html#a9258f2870864143e01a09bb5cf806ba6":[4,0,22,369],
@@ -239,15 +249,5 @@ var NAVTREEINDEX144 =
 "namespacewpi_1_1java_1_1detail.html":[4,0,22,3,0],
 "namespacewpi_1_1log.html":[4,0,22,4],
 "namespacewpi_1_1log_1_1impl.html":[4,0,22,4,0],
-"namespacewpi_1_1log_1_1impl.html#a1d117294de079965c63555e32e04836c":[4,0,22,4,0,0],
-"namespacewpi_1_1log_1_1impl.html#a1d117294de079965c63555e32e04836ca40df3f5b3b34781c819991b551d2f8a7":[4,0,22,4,0,0,1],
-"namespacewpi_1_1log_1_1impl.html#a1d117294de079965c63555e32e04836ca6c0ad61cee7cec078abedcff78fa4dc9":[4,0,22,4,0,0,0],
-"namespacewpi_1_1log_1_1impl.html#a1d117294de079965c63555e32e04836caa9807fb4bb21392276078c5bad9209ff":[4,0,22,4,0,0,2],
-"namespacewpi_1_1math.html":[4,0,22,5],
-"namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461":[4,0,22,5,2],
-"namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461a11e81cc0057710f794d85054d322a982":[4,0,22,5,2,4],
-"namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461a3307924330ae398307e67711b5a8cd00":[4,0,22,5,2,1],
-"namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461a33d571508539b27a49bdc4171cc048e4":[4,0,22,5,2,7],
-"namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461a5565ed67c83467678597b0ecc5d8c2b1":[4,0,22,5,2,9],
-"namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461a72958290907a7af5043be7f712e625a0":[4,0,22,5,2,8]
+"namespacewpi_1_1log_1_1impl.html#a1d117294de079965c63555e32e04836c":[4,0,22,4,0,0]
 };

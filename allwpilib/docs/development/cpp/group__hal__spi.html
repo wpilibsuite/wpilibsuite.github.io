@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-118-g7731985</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-120-ga791470</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,8 @@ $(document).ready(function(){initNavTree('group__hal__spi.html',''); initResizab
 Functions</h2></td></tr>
 <tr class="memitem:gae58880a5ca64d2a518180674610928a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gae58880a5ca64d2a518180674610928a7">HAL_ENUM</a> (HAL_SPIPort)</td></tr>
 <tr class="separator:gae58880a5ca64d2a518180674610928a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f63b7e19fa46781f7f29aae30c98dad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga4f63b7e19fa46781f7f29aae30c98dad">HAL_ENUM</a> (HAL_SPIMode)</td></tr>
+<tr class="separator:ga4f63b7e19fa46781f7f29aae30c98dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga587eff68a1c97f2a0510048c30c50062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga587eff68a1c97f2a0510048c30c50062">HAL_InitializeSPI</a> (HAL_SPIPort port, int32_t *status)</td></tr>
 <tr class="memdesc:ga587eff68a1c97f2a0510048c30c50062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the SPI port.  <a href="group__hal__spi.html#ga587eff68a1c97f2a0510048c30c50062">More...</a><br /></td></tr>
 <tr class="separator:ga587eff68a1c97f2a0510048c30c50062"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,9 +121,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa20dfef106257122f9b915c93bd28d3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaa20dfef106257122f9b915c93bd28d3b">HAL_SetSPISpeed</a> (HAL_SPIPort port, int32_t speed)</td></tr>
 <tr class="memdesc:gaa20dfef106257122f9b915c93bd28d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the clock speed for the SPI bus.  <a href="group__hal__spi.html#gaa20dfef106257122f9b915c93bd28d3b">More...</a><br /></td></tr>
 <tr class="separator:gaa20dfef106257122f9b915c93bd28d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaead28e2b911d96f42c567ddcb2386224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaead28e2b911d96f42c567ddcb2386224">HAL_SetSPIOpts</a> (HAL_SPIPort port, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> msbFirst, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> sampleOnTrailing, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> clkIdleHigh)</td></tr>
-<tr class="memdesc:gaead28e2b911d96f42c567ddcb2386224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SPI options.  <a href="group__hal__spi.html#gaead28e2b911d96f42c567ddcb2386224">More...</a><br /></td></tr>
-<tr class="separator:gaead28e2b911d96f42c567ddcb2386224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac214e22e973fa151b2e30e0f9a00a7b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gac214e22e973fa151b2e30e0f9a00a7b8">HAL_SetSPIMode</a> (HAL_SPIPort port, HAL_SPIMode mode)</td></tr>
+<tr class="memdesc:gac214e22e973fa151b2e30e0f9a00a7b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SPI Mode.  <a href="group__hal__spi.html#gac214e22e973fa151b2e30e0f9a00a7b8">More...</a><br /></td></tr>
+<tr class="separator:gac214e22e973fa151b2e30e0f9a00a7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f63d48b59a9315d111556e27a3d6667"><td class="memItemLeft" align="right" valign="top">HAL_SPIMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga7f63d48b59a9315d111556e27a3d6667">HAL_GetSPIMode</a> (HAL_SPIPort port)</td></tr>
+<tr class="memdesc:ga7f63d48b59a9315d111556e27a3d6667"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the SPI Mode.  <a href="group__hal__spi.html#ga7f63d48b59a9315d111556e27a3d6667">More...</a><br /></td></tr>
+<tr class="separator:ga7f63d48b59a9315d111556e27a3d6667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef73b829767ac068975ce5d2c93e3b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaef73b829767ac068975ce5d2c93e3b27">HAL_SetSPIChipSelectActiveHigh</a> (HAL_SPIPort port, int32_t *status)</td></tr>
 <tr class="memdesc:gaef73b829767ac068975ce5d2c93e3b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the CS Active high for a SPI port.  <a href="group__hal__spi.html#gaef73b829767ac068975ce5d2c93e3b27">More...</a><br /></td></tr>
 <tr class="separator:gaef73b829767ac068975ce5d2c93e3b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,8 +256,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga4f63b7e19fa46781f7f29aae30c98dad" name="ga4f63b7e19fa46781f7f29aae30c98dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f63b7e19fa46781f7f29aae30c98dad">&#9670;&nbsp;</a></span>HAL_ENUM() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">HAL_SPIMode&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gae58880a5ca64d2a518180674610928a7" name="gae58880a5ca64d2a518180674610928a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae58880a5ca64d2a518180674610928a7">&#9670;&nbsp;</a></span>HAL_ENUM()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae58880a5ca64d2a518180674610928a7">&#9670;&nbsp;</a></span>HAL_ENUM() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,6 +428,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The stored handle for the SPI port. 0 represents no stored handle. </dd></dl>
+
+</div>
+</div>
+<a id="ga7f63d48b59a9315d111556e27a3d6667" name="ga7f63d48b59a9315d111556e27a3d6667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f63d48b59a9315d111556e27a3d6667">&#9670;&nbsp;</a></span>HAL_GetSPIMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_SPIMode HAL_GetSPIMode </td>
+          <td>(</td>
+          <td class="paramtype">HAL_SPIPort&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the SPI Mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The SPI mode currently set </dd></dl>
 
 </div>
 </div>
@@ -767,14 +817,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaead28e2b911d96f42c567ddcb2386224" name="gaead28e2b911d96f42c567ddcb2386224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaead28e2b911d96f42c567ddcb2386224">&#9670;&nbsp;</a></span>HAL_SetSPIOpts()</h2>
+<a id="gac214e22e973fa151b2e30e0f9a00a7b8" name="gac214e22e973fa151b2e30e0f9a00a7b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac214e22e973fa151b2e30e0f9a00a7b8">&#9670;&nbsp;</a></span>HAL_SetSPIMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void HAL_SetSPIOpts </td>
+          <td class="memname">void HAL_SetSPIMode </td>
           <td>(</td>
           <td class="paramtype">HAL_SPIPort&#160;</td>
           <td class="paramname"><em>port</em>, </td>
@@ -782,20 +832,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
-          <td class="paramname"><em>msbFirst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
-          <td class="paramname"><em>sampleOnTrailing</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
-          <td class="paramname"><em>clkIdleHigh</em>&#160;</td>
+          <td class="paramtype">HAL_SPIMode&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -805,13 +843,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the SPI options. </p>
+<p>Sets the SPI Mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
-    <tr><td class="paramname">msbFirst</td><td>True to write the MSB first, False for LSB first </td></tr>
-    <tr><td class="paramname">sampleOnTrailing</td><td>True to sample on the trailing edge, False to sample on the leading edge </td></tr>
-    <tr><td class="paramname">clkIdleHigh</td><td>True to set the clock to active low, False to set the clock active high </td></tr>
+    <tr><td class="paramname">mode</td><td>The SPI mode to use </td></tr>
   </table>
   </dd>
 </dl>
@@ -848,7 +884,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
-    <tr><td class="paramname">speed</td><td>The speed in Hz (0-1MHz) </td></tr>
+    <tr><td class="paramname">speed</td><td>The speed in Hz (500KHz-10MHz) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1106,7 +1142,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 23 2022 21:51:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Sep 24 2022 07:17:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

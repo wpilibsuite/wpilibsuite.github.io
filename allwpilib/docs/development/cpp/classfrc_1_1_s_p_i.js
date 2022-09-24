@@ -1,5 +1,11 @@
 var classfrc_1_1_s_p_i =
 [
+    [ "Mode", "classfrc_1_1_s_p_i.html#ad8b117763d786785afdfbaa703abaced", [
+      [ "kMode0", "classfrc_1_1_s_p_i.html#ad8b117763d786785afdfbaa703abacedaf57e4f93822ca91c1a4fbce8cf21994c", null ],
+      [ "kMode1", "classfrc_1_1_s_p_i.html#ad8b117763d786785afdfbaa703abaceda1a0a24143520cb4a0ce188ba0e12efaa", null ],
+      [ "kMode2", "classfrc_1_1_s_p_i.html#ad8b117763d786785afdfbaa703abaceda01992d06cd7fc81dfa90653af55d2bb3", null ],
+      [ "kMode3", "classfrc_1_1_s_p_i.html#ad8b117763d786785afdfbaa703abacedab3e63158890febc0e482d9b9578b65ae", null ]
+    ] ],
     [ "Port", "classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03", [
       [ "kOnboardCS0", "classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03a4ac014e03bb4ddbe11166bdfcd546321", null ],
       [ "kOnboardCS1", "classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03a1ae02875949f6f4228c6e24c8c81d714", null ],
@@ -39,6 +45,7 @@ var classfrc_1_1_s_p_i =
     [ "SetClockActiveLow", "classfrc_1_1_s_p_i.html#a5ab5f96a82ce90c7345c3a0a20f5a9ce", null ],
     [ "SetClockRate", "classfrc_1_1_s_p_i.html#afbabf1221808896f269dc6a0e76d3670", null ],
     [ "SetLSBFirst", "classfrc_1_1_s_p_i.html#a2d1fddb48bef3faefc190fa7ac9728ca", null ],
+    [ "SetMode", "classfrc_1_1_s_p_i.html#a7847c9ada3ca28f463a1f01fe01ca2b4", null ],
     [ "SetMSBFirst", "classfrc_1_1_s_p_i.html#a8b271f2749fe0f22a5d21c619a83a216", null ],
     [ "SetSampleDataOnLeadingEdge", "classfrc_1_1_s_p_i.html#ab78a7f35b03ccc3d62b656d5430a5eb9", null ],
     [ "SetSampleDataOnTrailingEdge", "classfrc_1_1_s_p_i.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80", null ],
@@ -47,8 +54,6 @@ var classfrc_1_1_s_p_i =
     [ "StopAuto", "classfrc_1_1_s_p_i.html#a24b13f7560a76642a2cb312041421423", null ],
     [ "Transaction", "classfrc_1_1_s_p_i.html#a901a0fc2729722899b1d099e09b9795f", null ],
     [ "Write", "classfrc_1_1_s_p_i.html#ace18201bd33d2a624fa476c75e06cc08", null ],
-    [ "m_clockIdleHigh", "classfrc_1_1_s_p_i.html#a3bc45eeb309686cee22a8f2c2a64f4b4", null ],
-    [ "m_msbFirst", "classfrc_1_1_s_p_i.html#a8c929d9c35610d128efd52ee1fa7b587", null ],
-    [ "m_port", "classfrc_1_1_s_p_i.html#abd07a4e13cc08e18815b0878ef4f52dc", null ],
-    [ "m_sampleOnTrailing", "classfrc_1_1_s_p_i.html#acf98bc487b9bae08ebd5b9319c2fded3", null ]
+    [ "m_mode", "classfrc_1_1_s_p_i.html#ae698154ae6ff38d4027580d280a2618d", null ],
+    [ "m_port", "classfrc_1_1_s_p_i.html#abd07a4e13cc08e18815b0878ef4f52dc", null ]
 ];

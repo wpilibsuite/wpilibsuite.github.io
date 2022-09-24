@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-118-g7731985</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-120-ga791470</span>
    </div>
   </td>
  </tr>
@@ -150,11 +150,11 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="class_eigen_1_1_vectorwise_op.html#a4907c654e5810edd98e4162093b19532">Eigen::VectorwiseOp&lt; ExpressionType, Direction &gt;::Index</a>  </dt>
 <dd><a class="anchor" id="_deprecated000024"></a>since <a class="el" href="namespace_eigen.html" title="Namespace containing all symbols from the Eigen library.">Eigen</a> 3.3  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_command.html#ac215e297864084cba7b0a4b6d4aa558f">frc2::Command::Perpetually</a>  () &amp;&amp;</dt>
-<dd><a class="anchor" id="_deprecated000051"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
+<dd><a class="anchor" id="_deprecated000057"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_command.html#a4a6078c253a1578b3310833dcdfc01f0">frc2::Command::WithInterrupt</a>  (std::function&lt; bool()&gt; condition) &amp;&amp;</dt>
-<dd><a class="anchor" id="_deprecated000050"></a>Replace with <a class="el" href="classfrc2_1_1_command.html#a3efbfb66ab740733b21354710aaea692" title="Decorates this command with an interrupt condition.">Until()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000056"></a>Replace with <a class="el" href="classfrc2_1_1_command.html#a3efbfb66ab740733b21354710aaea692" title="Decorates this command with an interrupt condition.">Until()</a>  </dd>
 <dt>Class <a class="el" href="classfrc2_1_1_perpetual_command.html">frc2::PerpetualCommand</a>  </dt>
-<dd><a class="anchor" id="_deprecated000049"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
+<dd><a class="anchor" id="_deprecated000055"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_camera_server.html#aa164416827096a45eb9e4fd14f2a3e61">frc::CameraServer::SetSize</a>  (int size)</dt>
 <dd><a class="anchor" id="_deprecated000018"></a>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1_camera_server.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_compressor.html#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">frc::Compressor::Enabled</a>  () const</dt>
@@ -165,6 +165,18 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000046"></a>Use getRate() in favor of this method.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_encoder.html#ab2314f41314a2961ed2034f3dab63bab">frc::Encoder::SetMaxPeriod</a>  (units::second_t maxPeriod) override</dt>
 <dd><a class="anchor" id="_deprecated000047"></a>Use <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1_encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>.  </dd>
+<dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#ae15d94ef40c01beb33378d544ed05be6">frc::SPI::SetClockActiveHigh</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000054"></a>Use <a class="el" href="classfrc_1_1_s_p_i.html#a7847c9ada3ca28f463a1f01fe01ca2b4" title="Sets the mode for the SPI device.">SetMode()</a> instead.  </dd>
+<dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#a5ab5f96a82ce90c7345c3a0a20f5a9ce">frc::SPI::SetClockActiveLow</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000053"></a>Use <a class="el" href="classfrc_1_1_s_p_i.html#a7847c9ada3ca28f463a1f01fe01ca2b4" title="Sets the mode for the SPI device.">SetMode()</a> instead.  </dd>
+<dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#a2d1fddb48bef3faefc190fa7ac9728ca">frc::SPI::SetLSBFirst</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000050"></a>Does not work, will be removed.  </dd>
+<dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#a8b271f2749fe0f22a5d21c619a83a216">frc::SPI::SetMSBFirst</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000049"></a>Does not work, will be removed.  </dd>
+<dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#ab78a7f35b03ccc3d62b656d5430a5eb9">frc::SPI::SetSampleDataOnLeadingEdge</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000051"></a>Use <a class="el" href="classfrc_1_1_s_p_i.html#a7847c9ada3ca28f463a1f01fe01ca2b4" title="Sets the mode for the SPI device.">SetMode()</a> instead.  </dd>
+<dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80">frc::SPI::SetSampleDataOnTrailingEdge</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000052"></a>Use <a class="el" href="classfrc_1_1_s_p_i.html#a7847c9ada3ca28f463a1f01fe01ca2b4" title="Sets the mode for the SPI device.">SetMode()</a> instead.  </dd>
 <dt>Member <a class="el" href="group__reader.html#ga58ae5ed702eec1edc717bb91912d0117">mpack_reader_init_file</a>  (mpack_reader_t *reader, const char *filename)</dt>
 <dd><a class="anchor" id="_deprecated000014"></a>Renamed to <a class="el" href="group__reader.html#gadf19892a6dd87d86bdd02646528964ff" title="Initializes an MPack reader that reads from a file.">mpack_reader_init_filename()</a>.  </dd>
 <dt>Member <a class="el" href="group__common.html#ga01f28cf95ddc7c6ecd8dbdd3cfb670ae">mpack_tag_array</a>  (int32_t count)</dt>
@@ -206,7 +218,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 23 2022 21:51:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Sep 24 2022 07:17:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

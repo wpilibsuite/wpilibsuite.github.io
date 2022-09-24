@@ -1,5 +1,15 @@
 var NAVTREEINDEX126 =
 {
+"group__hal__types.html#gaf60cadf05225535fba932dd4ddc2da13":[3,1,5,20],
+"group__hal__types.html#gafc9f89a2d93fdcfecaf44aac0bb41e18":[3,1,5,25],
+"group__hal__types.html#gafccd0f0f8276b9b3c1de9adb8825534b":[3,1,5,2],
+"group__hal__types.html#gaff112475286e1631444c5e2983fafb92":[3,1,5,29],
+"group__hal__types.html#gaffa49c25914b373e4fb72677545ba3df":[3,1,5,1],
+"group__matrixtypedefs.html":[3,35,3],
+"group__node.html":[3,7],
+"group__node.html#ga0180b62e35f1438807cec5f1dc747f3d":[3,7,31],
+"group__node.html#ga03b7cb69d8648ede7a9d9d018b76b8a7":[3,7,41],
+"group__node.html#ga06c2d81ce29bf282a1466bd94a207d2a":[3,7,73],
 "group__node.html#ga08f46371c0c59a2e4dd7bdf1891fb3cb":[3,7,1],
 "group__node.html#ga0972cac5d44d513bebb5df7093f44ea9":[3,7,36],
 "group__node.html#ga107c576a3abc79e7dd0048e8ecdbcffc":[3,7,45],
@@ -239,15 +249,5 @@ var NAVTREEINDEX126 =
 "group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf":[3,13,8,8],
 "group__ntcore__logger__cfunc.html#gab43666f384d6e2a149f93e18e3402cbb":[3,13,8,3],
 "group__ntcore__logger__cfunc.html#gab73de0e404687276b238f4a028606a49":[3,13,8,4],
-"group__ntcore__logger__cfunc.html#gabe1855920ae23107016f7c8b9917a6c0":[3,13,8,9],
-"group__ntcore__logger__cfunc.html#gaed63e3bae15ba09927e1866a0f07e83c":[3,13,8,2],
-"group__ntcore__logger__func.html":[3,12,9],
-"group__ntcore__logger__func.html#ga0941bdeffbe679fa463f30c674e4a203":[3,12,9,3],
-"group__ntcore__logger__func.html#ga19be84b6634ca50e6d317fc3fae728c3":[3,12,9,6],
-"group__ntcore__logger__func.html#ga4fae112bec6981b6636e7999aa40ed92":[3,12,9,8],
-"group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399":[3,12,9,0],
-"group__ntcore__logger__func.html#ga819f35e5e2864fefe1b676d1326f48f3":[3,12,9,5],
-"group__ntcore__logger__func.html#ga875a42e5559a9fb660855de570fa9445":[3,12,9,1],
-"group__ntcore__logger__func.html#ga94afbd1ea3e48f43afef327cb5edc1e6":[3,12,9,2],
-"group__ntcore__logger__func.html#gaba7ed9ad02b89a75bc918f292126a9bf":[3,12,9,7]
+"group__ntcore__logger__cfunc.html#gabe1855920ae23107016f7c8b9917a6c0":[3,13,8,9]
 };
