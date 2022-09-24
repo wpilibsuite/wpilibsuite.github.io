@@ -437,92 +437,86 @@
 <span class="sourceLineNo">425</span><a id="line.425">  }</a>
 <span class="sourceLineNo">426</span><a id="line.426"></a>
 <span class="sourceLineNo">427</span><a id="line.427">  /** Data passed to foreachLiveWindow() callback function. */</a>
-<span class="sourceLineNo">428</span><a id="line.428">  public static class CallbackData {</a>
-<span class="sourceLineNo">429</span><a id="line.429">    /** Sendable object. */</a>
-<span class="sourceLineNo">430</span><a id="line.430">    @SuppressWarnings("MemberName")</a>
+<span class="sourceLineNo">428</span><a id="line.428">  @SuppressWarnings("MemberName")</a>
+<span class="sourceLineNo">429</span><a id="line.429">  public static class CallbackData {</a>
+<span class="sourceLineNo">430</span><a id="line.430">    /** Sendable object. */</a>
 <span class="sourceLineNo">431</span><a id="line.431">    public Sendable sendable;</a>
 <span class="sourceLineNo">432</span><a id="line.432"></a>
 <span class="sourceLineNo">433</span><a id="line.433">    /** Name. */</a>
-<span class="sourceLineNo">434</span><a id="line.434">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">435</span><a id="line.435">    public String name;</a>
-<span class="sourceLineNo">436</span><a id="line.436"></a>
-<span class="sourceLineNo">437</span><a id="line.437">    /** Subsystem. */</a>
-<span class="sourceLineNo">438</span><a id="line.438">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">439</span><a id="line.439">    public String subsystem;</a>
-<span class="sourceLineNo">440</span><a id="line.440"></a>
-<span class="sourceLineNo">441</span><a id="line.441">    /** Parent sendable object. */</a>
-<span class="sourceLineNo">442</span><a id="line.442">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">443</span><a id="line.443">    public Sendable parent;</a>
+<span class="sourceLineNo">434</span><a id="line.434">    public String name;</a>
+<span class="sourceLineNo">435</span><a id="line.435"></a>
+<span class="sourceLineNo">436</span><a id="line.436">    /** Subsystem. */</a>
+<span class="sourceLineNo">437</span><a id="line.437">    public String subsystem;</a>
+<span class="sourceLineNo">438</span><a id="line.438"></a>
+<span class="sourceLineNo">439</span><a id="line.439">    /** Parent sendable object. */</a>
+<span class="sourceLineNo">440</span><a id="line.440">    public Sendable parent;</a>
+<span class="sourceLineNo">441</span><a id="line.441"></a>
+<span class="sourceLineNo">442</span><a id="line.442">    /** Data stored in object with setData(). Update this to change the data. */</a>
+<span class="sourceLineNo">443</span><a id="line.443">    public Object data;</a>
 <span class="sourceLineNo">444</span><a id="line.444"></a>
-<span class="sourceLineNo">445</span><a id="line.445">    /** Data stored in object with setData(). Update this to change the data. */</a>
-<span class="sourceLineNo">446</span><a id="line.446">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">447</span><a id="line.447">    public Object data;</a>
+<span class="sourceLineNo">445</span><a id="line.445">    /** Sendable builder for the sendable. */</a>
+<span class="sourceLineNo">446</span><a id="line.446">    public SendableBuilder builder;</a>
+<span class="sourceLineNo">447</span><a id="line.447">  }</a>
 <span class="sourceLineNo">448</span><a id="line.448"></a>
-<span class="sourceLineNo">449</span><a id="line.449">    /** Sendable builder for the sendable. */</a>
-<span class="sourceLineNo">450</span><a id="line.450">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">451</span><a id="line.451">    public SendableBuilder builder;</a>
-<span class="sourceLineNo">452</span><a id="line.452">  }</a>
-<span class="sourceLineNo">453</span><a id="line.453"></a>
-<span class="sourceLineNo">454</span><a id="line.454">  // As foreachLiveWindow is single threaded, cache the components it</a>
-<span class="sourceLineNo">455</span><a id="line.455">  // iterates over to avoid risk of ConcurrentModificationException</a>
-<span class="sourceLineNo">456</span><a id="line.456">  private static List&lt;Component&gt; foreachComponents = new ArrayList&lt;&gt;();</a>
-<span class="sourceLineNo">457</span><a id="line.457"></a>
-<span class="sourceLineNo">458</span><a id="line.458">  /**</a>
-<span class="sourceLineNo">459</span><a id="line.459">   * Iterates over LiveWindow-enabled objects in the registry. It is *not* safe to call other</a>
-<span class="sourceLineNo">460</span><a id="line.460">   * SendableRegistry functions from the callback.</a>
-<span class="sourceLineNo">461</span><a id="line.461">   *</a>
-<span class="sourceLineNo">462</span><a id="line.462">   * @param dataHandle data handle to get data object passed to callback</a>
-<span class="sourceLineNo">463</span><a id="line.463">   * @param callback function to call for each object</a>
-<span class="sourceLineNo">464</span><a id="line.464">   */</a>
-<span class="sourceLineNo">465</span><a id="line.465">  @SuppressWarnings({"PMD.AvoidCatchingThrowable", "PMD.AvoidReassigningCatchVariables"})</a>
-<span class="sourceLineNo">466</span><a id="line.466">  public static synchronized void foreachLiveWindow(</a>
-<span class="sourceLineNo">467</span><a id="line.467">      int dataHandle, Consumer&lt;CallbackData&gt; callback) {</a>
-<span class="sourceLineNo">468</span><a id="line.468">    CallbackData cbdata = new CallbackData();</a>
-<span class="sourceLineNo">469</span><a id="line.469">    foreachComponents.clear();</a>
-<span class="sourceLineNo">470</span><a id="line.470">    foreachComponents.addAll(components.values());</a>
-<span class="sourceLineNo">471</span><a id="line.471">    for (Component comp : foreachComponents) {</a>
-<span class="sourceLineNo">472</span><a id="line.472">      if (comp.m_builder == null || comp.m_sendable == null) {</a>
-<span class="sourceLineNo">473</span><a id="line.473">        continue;</a>
-<span class="sourceLineNo">474</span><a id="line.474">      }</a>
-<span class="sourceLineNo">475</span><a id="line.475">      cbdata.sendable = comp.m_sendable.get();</a>
-<span class="sourceLineNo">476</span><a id="line.476">      if (cbdata.sendable != null &amp;&amp; comp.m_liveWindow) {</a>
-<span class="sourceLineNo">477</span><a id="line.477">        cbdata.name = comp.m_name;</a>
-<span class="sourceLineNo">478</span><a id="line.478">        cbdata.subsystem = comp.m_subsystem;</a>
-<span class="sourceLineNo">479</span><a id="line.479">        if (comp.m_parent != null) {</a>
-<span class="sourceLineNo">480</span><a id="line.480">          cbdata.parent = comp.m_parent.get();</a>
-<span class="sourceLineNo">481</span><a id="line.481">        } else {</a>
-<span class="sourceLineNo">482</span><a id="line.482">          cbdata.parent = null;</a>
-<span class="sourceLineNo">483</span><a id="line.483">        }</a>
-<span class="sourceLineNo">484</span><a id="line.484">        if (comp.m_data != null &amp;&amp; dataHandle &lt; comp.m_data.length) {</a>
-<span class="sourceLineNo">485</span><a id="line.485">          cbdata.data = comp.m_data[dataHandle];</a>
-<span class="sourceLineNo">486</span><a id="line.486">        } else {</a>
-<span class="sourceLineNo">487</span><a id="line.487">          cbdata.data = null;</a>
-<span class="sourceLineNo">488</span><a id="line.488">        }</a>
-<span class="sourceLineNo">489</span><a id="line.489">        cbdata.builder = comp.m_builder;</a>
-<span class="sourceLineNo">490</span><a id="line.490">        try {</a>
-<span class="sourceLineNo">491</span><a id="line.491">          callback.accept(cbdata);</a>
-<span class="sourceLineNo">492</span><a id="line.492">        } catch (Throwable throwable) {</a>
-<span class="sourceLineNo">493</span><a id="line.493">          Throwable cause = throwable.getCause();</a>
-<span class="sourceLineNo">494</span><a id="line.494">          if (cause != null) {</a>
-<span class="sourceLineNo">495</span><a id="line.495">            throwable = cause;</a>
-<span class="sourceLineNo">496</span><a id="line.496">          }</a>
-<span class="sourceLineNo">497</span><a id="line.497">          System.err.println("Unhandled exception calling LiveWindow for " + comp.m_name + ": ");</a>
-<span class="sourceLineNo">498</span><a id="line.498">          throwable.printStackTrace();</a>
-<span class="sourceLineNo">499</span><a id="line.499">          comp.m_liveWindow = false;</a>
-<span class="sourceLineNo">500</span><a id="line.500">        }</a>
-<span class="sourceLineNo">501</span><a id="line.501">        if (cbdata.data != null) {</a>
-<span class="sourceLineNo">502</span><a id="line.502">          if (comp.m_data == null) {</a>
-<span class="sourceLineNo">503</span><a id="line.503">            comp.m_data = new Object[dataHandle + 1];</a>
-<span class="sourceLineNo">504</span><a id="line.504">          } else if (dataHandle &gt;= comp.m_data.length) {</a>
-<span class="sourceLineNo">505</span><a id="line.505">            comp.m_data = Arrays.copyOf(comp.m_data, dataHandle + 1);</a>
-<span class="sourceLineNo">506</span><a id="line.506">          }</a>
-<span class="sourceLineNo">507</span><a id="line.507">          comp.m_data[dataHandle] = cbdata.data;</a>
-<span class="sourceLineNo">508</span><a id="line.508">        }</a>
-<span class="sourceLineNo">509</span><a id="line.509">      }</a>
-<span class="sourceLineNo">510</span><a id="line.510">    }</a>
-<span class="sourceLineNo">511</span><a id="line.511">    foreachComponents.clear();</a>
-<span class="sourceLineNo">512</span><a id="line.512">  }</a>
-<span class="sourceLineNo">513</span><a id="line.513">}</a>
+<span class="sourceLineNo">449</span><a id="line.449">  // As foreachLiveWindow is single threaded, cache the components it</a>
+<span class="sourceLineNo">450</span><a id="line.450">  // iterates over to avoid risk of ConcurrentModificationException</a>
+<span class="sourceLineNo">451</span><a id="line.451">  private static List&lt;Component&gt; foreachComponents = new ArrayList&lt;&gt;();</a>
+<span class="sourceLineNo">452</span><a id="line.452"></a>
+<span class="sourceLineNo">453</span><a id="line.453">  /**</a>
+<span class="sourceLineNo">454</span><a id="line.454">   * Iterates over LiveWindow-enabled objects in the registry. It is *not* safe to call other</a>
+<span class="sourceLineNo">455</span><a id="line.455">   * SendableRegistry functions from the callback.</a>
+<span class="sourceLineNo">456</span><a id="line.456">   *</a>
+<span class="sourceLineNo">457</span><a id="line.457">   * @param dataHandle data handle to get data object passed to callback</a>
+<span class="sourceLineNo">458</span><a id="line.458">   * @param callback function to call for each object</a>
+<span class="sourceLineNo">459</span><a id="line.459">   */</a>
+<span class="sourceLineNo">460</span><a id="line.460">  public static synchronized void foreachLiveWindow(</a>
+<span class="sourceLineNo">461</span><a id="line.461">      int dataHandle, Consumer&lt;CallbackData&gt; callback) {</a>
+<span class="sourceLineNo">462</span><a id="line.462">    CallbackData cbdata = new CallbackData();</a>
+<span class="sourceLineNo">463</span><a id="line.463">    foreachComponents.clear();</a>
+<span class="sourceLineNo">464</span><a id="line.464">    foreachComponents.addAll(components.values());</a>
+<span class="sourceLineNo">465</span><a id="line.465">    for (Component comp : foreachComponents) {</a>
+<span class="sourceLineNo">466</span><a id="line.466">      if (comp.m_builder == null || comp.m_sendable == null) {</a>
+<span class="sourceLineNo">467</span><a id="line.467">        continue;</a>
+<span class="sourceLineNo">468</span><a id="line.468">      }</a>
+<span class="sourceLineNo">469</span><a id="line.469">      cbdata.sendable = comp.m_sendable.get();</a>
+<span class="sourceLineNo">470</span><a id="line.470">      if (cbdata.sendable != null &amp;&amp; comp.m_liveWindow) {</a>
+<span class="sourceLineNo">471</span><a id="line.471">        cbdata.name = comp.m_name;</a>
+<span class="sourceLineNo">472</span><a id="line.472">        cbdata.subsystem = comp.m_subsystem;</a>
+<span class="sourceLineNo">473</span><a id="line.473">        if (comp.m_parent != null) {</a>
+<span class="sourceLineNo">474</span><a id="line.474">          cbdata.parent = comp.m_parent.get();</a>
+<span class="sourceLineNo">475</span><a id="line.475">        } else {</a>
+<span class="sourceLineNo">476</span><a id="line.476">          cbdata.parent = null;</a>
+<span class="sourceLineNo">477</span><a id="line.477">        }</a>
+<span class="sourceLineNo">478</span><a id="line.478">        if (comp.m_data != null &amp;&amp; dataHandle &lt; comp.m_data.length) {</a>
+<span class="sourceLineNo">479</span><a id="line.479">          cbdata.data = comp.m_data[dataHandle];</a>
+<span class="sourceLineNo">480</span><a id="line.480">        } else {</a>
+<span class="sourceLineNo">481</span><a id="line.481">          cbdata.data = null;</a>
+<span class="sourceLineNo">482</span><a id="line.482">        }</a>
+<span class="sourceLineNo">483</span><a id="line.483">        cbdata.builder = comp.m_builder;</a>
+<span class="sourceLineNo">484</span><a id="line.484">        try {</a>
+<span class="sourceLineNo">485</span><a id="line.485">          callback.accept(cbdata);</a>
+<span class="sourceLineNo">486</span><a id="line.486">        } catch (Throwable throwable) {</a>
+<span class="sourceLineNo">487</span><a id="line.487">          Throwable cause = throwable.getCause();</a>
+<span class="sourceLineNo">488</span><a id="line.488">          if (cause != null) {</a>
+<span class="sourceLineNo">489</span><a id="line.489">            throwable = cause;</a>
+<span class="sourceLineNo">490</span><a id="line.490">          }</a>
+<span class="sourceLineNo">491</span><a id="line.491">          System.err.println("Unhandled exception calling LiveWindow for " + comp.m_name + ": ");</a>
+<span class="sourceLineNo">492</span><a id="line.492">          throwable.printStackTrace();</a>
+<span class="sourceLineNo">493</span><a id="line.493">          comp.m_liveWindow = false;</a>
+<span class="sourceLineNo">494</span><a id="line.494">        }</a>
+<span class="sourceLineNo">495</span><a id="line.495">        if (cbdata.data != null) {</a>
+<span class="sourceLineNo">496</span><a id="line.496">          if (comp.m_data == null) {</a>
+<span class="sourceLineNo">497</span><a id="line.497">            comp.m_data = new Object[dataHandle + 1];</a>
+<span class="sourceLineNo">498</span><a id="line.498">          } else if (dataHandle &gt;= comp.m_data.length) {</a>
+<span class="sourceLineNo">499</span><a id="line.499">            comp.m_data = Arrays.copyOf(comp.m_data, dataHandle + 1);</a>
+<span class="sourceLineNo">500</span><a id="line.500">          }</a>
+<span class="sourceLineNo">501</span><a id="line.501">          comp.m_data[dataHandle] = cbdata.data;</a>
+<span class="sourceLineNo">502</span><a id="line.502">        }</a>
+<span class="sourceLineNo">503</span><a id="line.503">      }</a>
+<span class="sourceLineNo">504</span><a id="line.504">    }</a>
+<span class="sourceLineNo">505</span><a id="line.505">    foreachComponents.clear();</a>
+<span class="sourceLineNo">506</span><a id="line.506">  }</a>
+<span class="sourceLineNo">507</span><a id="line.507">}</a>
 
 
 

@@ -112,22 +112,21 @@
 <span class="sourceLineNo">100</span><a id="line.100">   *</a>
 <span class="sourceLineNo">101</span><a id="line.101">   * @return the FPGA index</a>
 <span class="sourceLineNo">102</span><a id="line.102">   */</a>
-<span class="sourceLineNo">103</span><a id="line.103">  @SuppressWarnings("AbbreviationAsWordInName")</a>
-<span class="sourceLineNo">104</span><a id="line.104">  public final int getFPGAIndex() {</a>
-<span class="sourceLineNo">105</span><a id="line.105">    return DutyCycleJNI.getFPGAIndex(m_handle);</a>
-<span class="sourceLineNo">106</span><a id="line.106">  }</a>
-<span class="sourceLineNo">107</span><a id="line.107"></a>
-<span class="sourceLineNo">108</span><a id="line.108">  public int getSourceChannel() {</a>
-<span class="sourceLineNo">109</span><a id="line.109">    return m_source.getChannel();</a>
-<span class="sourceLineNo">110</span><a id="line.110">  }</a>
-<span class="sourceLineNo">111</span><a id="line.111"></a>
-<span class="sourceLineNo">112</span><a id="line.112">  @Override</a>
-<span class="sourceLineNo">113</span><a id="line.113">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">114</span><a id="line.114">    builder.setSmartDashboardType("Duty Cycle");</a>
-<span class="sourceLineNo">115</span><a id="line.115">    builder.addDoubleProperty("Frequency", this::getFrequency, null);</a>
-<span class="sourceLineNo">116</span><a id="line.116">    builder.addDoubleProperty("Output", this::getOutput, null);</a>
-<span class="sourceLineNo">117</span><a id="line.117">  }</a>
-<span class="sourceLineNo">118</span><a id="line.118">}</a>
+<span class="sourceLineNo">103</span><a id="line.103">  public final int getFPGAIndex() {</a>
+<span class="sourceLineNo">104</span><a id="line.104">    return DutyCycleJNI.getFPGAIndex(m_handle);</a>
+<span class="sourceLineNo">105</span><a id="line.105">  }</a>
+<span class="sourceLineNo">106</span><a id="line.106"></a>
+<span class="sourceLineNo">107</span><a id="line.107">  public int getSourceChannel() {</a>
+<span class="sourceLineNo">108</span><a id="line.108">    return m_source.getChannel();</a>
+<span class="sourceLineNo">109</span><a id="line.109">  }</a>
+<span class="sourceLineNo">110</span><a id="line.110"></a>
+<span class="sourceLineNo">111</span><a id="line.111">  @Override</a>
+<span class="sourceLineNo">112</span><a id="line.112">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">113</span><a id="line.113">    builder.setSmartDashboardType("Duty Cycle");</a>
+<span class="sourceLineNo">114</span><a id="line.114">    builder.addDoubleProperty("Frequency", this::getFrequency, null);</a>
+<span class="sourceLineNo">115</span><a id="line.115">    builder.addDoubleProperty("Output", this::getOutput, null);</a>
+<span class="sourceLineNo">116</span><a id="line.116">  }</a>
+<span class="sourceLineNo">117</span><a id="line.117">}</a>
 
 
 

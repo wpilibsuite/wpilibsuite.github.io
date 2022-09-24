@@ -146,231 +146,228 @@
 <span class="sourceLineNo">134</span><a id="line.134">   * &lt;p&gt;Users should override this method for initialization code which will be called each time the</a>
 <span class="sourceLineNo">135</span><a id="line.135">   * robot enters test mode.</a>
 <span class="sourceLineNo">136</span><a id="line.136">   */</a>
-<span class="sourceLineNo">137</span><a id="line.137">  @SuppressWarnings("PMD.JUnit4TestShouldUseTestAnnotation")</a>
-<span class="sourceLineNo">138</span><a id="line.138">  public void testInit() {}</a>
-<span class="sourceLineNo">139</span><a id="line.139"></a>
-<span class="sourceLineNo">140</span><a id="line.140">  /* ----------- Overridable periodic code ----------------- */</a>
-<span class="sourceLineNo">141</span><a id="line.141"></a>
-<span class="sourceLineNo">142</span><a id="line.142">  private boolean m_rpFirstRun = true;</a>
-<span class="sourceLineNo">143</span><a id="line.143"></a>
-<span class="sourceLineNo">144</span><a id="line.144">  /** Periodic code for all robot modes should go here. */</a>
-<span class="sourceLineNo">145</span><a id="line.145">  public void robotPeriodic() {</a>
-<span class="sourceLineNo">146</span><a id="line.146">    if (m_rpFirstRun) {</a>
-<span class="sourceLineNo">147</span><a id="line.147">      System.out.println("Default robotPeriodic() method... Override me!");</a>
-<span class="sourceLineNo">148</span><a id="line.148">      m_rpFirstRun = false;</a>
-<span class="sourceLineNo">149</span><a id="line.149">    }</a>
-<span class="sourceLineNo">150</span><a id="line.150">  }</a>
-<span class="sourceLineNo">151</span><a id="line.151"></a>
-<span class="sourceLineNo">152</span><a id="line.152">  private boolean m_spFirstRun = true;</a>
-<span class="sourceLineNo">153</span><a id="line.153"></a>
-<span class="sourceLineNo">154</span><a id="line.154">  /**</a>
-<span class="sourceLineNo">155</span><a id="line.155">   * Periodic simulation code should go here.</a>
-<span class="sourceLineNo">156</span><a id="line.156">   *</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * &lt;p&gt;This function is called in a simulated robot after user code executes.</a>
-<span class="sourceLineNo">158</span><a id="line.158">   */</a>
-<span class="sourceLineNo">159</span><a id="line.159">  public void simulationPeriodic() {</a>
-<span class="sourceLineNo">160</span><a id="line.160">    if (m_spFirstRun) {</a>
-<span class="sourceLineNo">161</span><a id="line.161">      System.out.println("Default simulationPeriodic() method... Override me!");</a>
-<span class="sourceLineNo">162</span><a id="line.162">      m_spFirstRun = false;</a>
-<span class="sourceLineNo">163</span><a id="line.163">    }</a>
-<span class="sourceLineNo">164</span><a id="line.164">  }</a>
-<span class="sourceLineNo">165</span><a id="line.165"></a>
-<span class="sourceLineNo">166</span><a id="line.166">  private boolean m_dpFirstRun = true;</a>
-<span class="sourceLineNo">167</span><a id="line.167"></a>
-<span class="sourceLineNo">168</span><a id="line.168">  /** Periodic code for disabled mode should go here. */</a>
-<span class="sourceLineNo">169</span><a id="line.169">  public void disabledPeriodic() {</a>
-<span class="sourceLineNo">170</span><a id="line.170">    if (m_dpFirstRun) {</a>
-<span class="sourceLineNo">171</span><a id="line.171">      System.out.println("Default disabledPeriodic() method... Override me!");</a>
-<span class="sourceLineNo">172</span><a id="line.172">      m_dpFirstRun = false;</a>
-<span class="sourceLineNo">173</span><a id="line.173">    }</a>
-<span class="sourceLineNo">174</span><a id="line.174">  }</a>
-<span class="sourceLineNo">175</span><a id="line.175"></a>
-<span class="sourceLineNo">176</span><a id="line.176">  private boolean m_apFirstRun = true;</a>
-<span class="sourceLineNo">177</span><a id="line.177"></a>
-<span class="sourceLineNo">178</span><a id="line.178">  /** Periodic code for autonomous mode should go here. */</a>
-<span class="sourceLineNo">179</span><a id="line.179">  public void autonomousPeriodic() {</a>
-<span class="sourceLineNo">180</span><a id="line.180">    if (m_apFirstRun) {</a>
-<span class="sourceLineNo">181</span><a id="line.181">      System.out.println("Default autonomousPeriodic() method... Override me!");</a>
-<span class="sourceLineNo">182</span><a id="line.182">      m_apFirstRun = false;</a>
-<span class="sourceLineNo">183</span><a id="line.183">    }</a>
-<span class="sourceLineNo">184</span><a id="line.184">  }</a>
-<span class="sourceLineNo">185</span><a id="line.185"></a>
-<span class="sourceLineNo">186</span><a id="line.186">  private boolean m_tpFirstRun = true;</a>
-<span class="sourceLineNo">187</span><a id="line.187"></a>
-<span class="sourceLineNo">188</span><a id="line.188">  /** Periodic code for teleop mode should go here. */</a>
-<span class="sourceLineNo">189</span><a id="line.189">  public void teleopPeriodic() {</a>
-<span class="sourceLineNo">190</span><a id="line.190">    if (m_tpFirstRun) {</a>
-<span class="sourceLineNo">191</span><a id="line.191">      System.out.println("Default teleopPeriodic() method... Override me!");</a>
-<span class="sourceLineNo">192</span><a id="line.192">      m_tpFirstRun = false;</a>
-<span class="sourceLineNo">193</span><a id="line.193">    }</a>
-<span class="sourceLineNo">194</span><a id="line.194">  }</a>
-<span class="sourceLineNo">195</span><a id="line.195"></a>
-<span class="sourceLineNo">196</span><a id="line.196">  private boolean m_tmpFirstRun = true;</a>
-<span class="sourceLineNo">197</span><a id="line.197"></a>
-<span class="sourceLineNo">198</span><a id="line.198">  /** Periodic code for test mode should go here. */</a>
-<span class="sourceLineNo">199</span><a id="line.199">  @SuppressWarnings("PMD.JUnit4TestShouldUseTestAnnotation")</a>
-<span class="sourceLineNo">200</span><a id="line.200">  public void testPeriodic() {</a>
-<span class="sourceLineNo">201</span><a id="line.201">    if (m_tmpFirstRun) {</a>
-<span class="sourceLineNo">202</span><a id="line.202">      System.out.println("Default testPeriodic() method... Override me!");</a>
-<span class="sourceLineNo">203</span><a id="line.203">      m_tmpFirstRun = false;</a>
-<span class="sourceLineNo">204</span><a id="line.204">    }</a>
-<span class="sourceLineNo">205</span><a id="line.205">  }</a>
-<span class="sourceLineNo">206</span><a id="line.206"></a>
-<span class="sourceLineNo">207</span><a id="line.207">  /**</a>
-<span class="sourceLineNo">208</span><a id="line.208">   * Exit code for disabled mode should go here.</a>
-<span class="sourceLineNo">209</span><a id="line.209">   *</a>
-<span class="sourceLineNo">210</span><a id="line.210">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
-<span class="sourceLineNo">211</span><a id="line.211">   * disabled mode.</a>
-<span class="sourceLineNo">212</span><a id="line.212">   */</a>
-<span class="sourceLineNo">213</span><a id="line.213">  public void disabledExit() {}</a>
-<span class="sourceLineNo">214</span><a id="line.214"></a>
-<span class="sourceLineNo">215</span><a id="line.215">  /**</a>
-<span class="sourceLineNo">216</span><a id="line.216">   * Exit code for autonomous mode should go here.</a>
-<span class="sourceLineNo">217</span><a id="line.217">   *</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
-<span class="sourceLineNo">219</span><a id="line.219">   * autonomous mode.</a>
-<span class="sourceLineNo">220</span><a id="line.220">   */</a>
-<span class="sourceLineNo">221</span><a id="line.221">  public void autonomousExit() {}</a>
-<span class="sourceLineNo">222</span><a id="line.222"></a>
-<span class="sourceLineNo">223</span><a id="line.223">  /**</a>
-<span class="sourceLineNo">224</span><a id="line.224">   * Exit code for teleop mode should go here.</a>
-<span class="sourceLineNo">225</span><a id="line.225">   *</a>
-<span class="sourceLineNo">226</span><a id="line.226">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
-<span class="sourceLineNo">227</span><a id="line.227">   * teleop mode.</a>
-<span class="sourceLineNo">228</span><a id="line.228">   */</a>
-<span class="sourceLineNo">229</span><a id="line.229">  public void teleopExit() {}</a>
-<span class="sourceLineNo">230</span><a id="line.230"></a>
-<span class="sourceLineNo">231</span><a id="line.231">  /**</a>
-<span class="sourceLineNo">232</span><a id="line.232">   * Exit code for test mode should go here.</a>
-<span class="sourceLineNo">233</span><a id="line.233">   *</a>
-<span class="sourceLineNo">234</span><a id="line.234">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
-<span class="sourceLineNo">235</span><a id="line.235">   * test mode.</a>
-<span class="sourceLineNo">236</span><a id="line.236">   */</a>
-<span class="sourceLineNo">237</span><a id="line.237">  @SuppressWarnings("PMD.JUnit4TestShouldUseTestAnnotation")</a>
-<span class="sourceLineNo">238</span><a id="line.238">  public void testExit() {}</a>
-<span class="sourceLineNo">239</span><a id="line.239"></a>
-<span class="sourceLineNo">240</span><a id="line.240">  /**</a>
-<span class="sourceLineNo">241</span><a id="line.241">   * Enables or disables flushing NetworkTables every loop iteration. By default, this is disabled.</a>
-<span class="sourceLineNo">242</span><a id="line.242">   *</a>
-<span class="sourceLineNo">243</span><a id="line.243">   * @param enabled True to enable, false to disable</a>
-<span class="sourceLineNo">244</span><a id="line.244">   */</a>
-<span class="sourceLineNo">245</span><a id="line.245">  public void setNetworkTablesFlushEnabled(boolean enabled) {</a>
-<span class="sourceLineNo">246</span><a id="line.246">    m_ntFlushEnabled = enabled;</a>
-<span class="sourceLineNo">247</span><a id="line.247">  }</a>
-<span class="sourceLineNo">248</span><a id="line.248"></a>
-<span class="sourceLineNo">249</span><a id="line.249">  /**</a>
-<span class="sourceLineNo">250</span><a id="line.250">   * Gets time period between calls to Periodic() functions.</a>
-<span class="sourceLineNo">251</span><a id="line.251">   *</a>
-<span class="sourceLineNo">252</span><a id="line.252">   * @return The time period between calls to Periodic() functions.</a>
-<span class="sourceLineNo">253</span><a id="line.253">   */</a>
-<span class="sourceLineNo">254</span><a id="line.254">  public double getPeriod() {</a>
-<span class="sourceLineNo">255</span><a id="line.255">    return m_period;</a>
-<span class="sourceLineNo">256</span><a id="line.256">  }</a>
+<span class="sourceLineNo">137</span><a id="line.137">  public void testInit() {}</a>
+<span class="sourceLineNo">138</span><a id="line.138"></a>
+<span class="sourceLineNo">139</span><a id="line.139">  /* ----------- Overridable periodic code ----------------- */</a>
+<span class="sourceLineNo">140</span><a id="line.140"></a>
+<span class="sourceLineNo">141</span><a id="line.141">  private boolean m_rpFirstRun = true;</a>
+<span class="sourceLineNo">142</span><a id="line.142"></a>
+<span class="sourceLineNo">143</span><a id="line.143">  /** Periodic code for all robot modes should go here. */</a>
+<span class="sourceLineNo">144</span><a id="line.144">  public void robotPeriodic() {</a>
+<span class="sourceLineNo">145</span><a id="line.145">    if (m_rpFirstRun) {</a>
+<span class="sourceLineNo">146</span><a id="line.146">      System.out.println("Default robotPeriodic() method... Override me!");</a>
+<span class="sourceLineNo">147</span><a id="line.147">      m_rpFirstRun = false;</a>
+<span class="sourceLineNo">148</span><a id="line.148">    }</a>
+<span class="sourceLineNo">149</span><a id="line.149">  }</a>
+<span class="sourceLineNo">150</span><a id="line.150"></a>
+<span class="sourceLineNo">151</span><a id="line.151">  private boolean m_spFirstRun = true;</a>
+<span class="sourceLineNo">152</span><a id="line.152"></a>
+<span class="sourceLineNo">153</span><a id="line.153">  /**</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * Periodic simulation code should go here.</a>
+<span class="sourceLineNo">155</span><a id="line.155">   *</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * &lt;p&gt;This function is called in a simulated robot after user code executes.</a>
+<span class="sourceLineNo">157</span><a id="line.157">   */</a>
+<span class="sourceLineNo">158</span><a id="line.158">  public void simulationPeriodic() {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    if (m_spFirstRun) {</a>
+<span class="sourceLineNo">160</span><a id="line.160">      System.out.println("Default simulationPeriodic() method... Override me!");</a>
+<span class="sourceLineNo">161</span><a id="line.161">      m_spFirstRun = false;</a>
+<span class="sourceLineNo">162</span><a id="line.162">    }</a>
+<span class="sourceLineNo">163</span><a id="line.163">  }</a>
+<span class="sourceLineNo">164</span><a id="line.164"></a>
+<span class="sourceLineNo">165</span><a id="line.165">  private boolean m_dpFirstRun = true;</a>
+<span class="sourceLineNo">166</span><a id="line.166"></a>
+<span class="sourceLineNo">167</span><a id="line.167">  /** Periodic code for disabled mode should go here. */</a>
+<span class="sourceLineNo">168</span><a id="line.168">  public void disabledPeriodic() {</a>
+<span class="sourceLineNo">169</span><a id="line.169">    if (m_dpFirstRun) {</a>
+<span class="sourceLineNo">170</span><a id="line.170">      System.out.println("Default disabledPeriodic() method... Override me!");</a>
+<span class="sourceLineNo">171</span><a id="line.171">      m_dpFirstRun = false;</a>
+<span class="sourceLineNo">172</span><a id="line.172">    }</a>
+<span class="sourceLineNo">173</span><a id="line.173">  }</a>
+<span class="sourceLineNo">174</span><a id="line.174"></a>
+<span class="sourceLineNo">175</span><a id="line.175">  private boolean m_apFirstRun = true;</a>
+<span class="sourceLineNo">176</span><a id="line.176"></a>
+<span class="sourceLineNo">177</span><a id="line.177">  /** Periodic code for autonomous mode should go here. */</a>
+<span class="sourceLineNo">178</span><a id="line.178">  public void autonomousPeriodic() {</a>
+<span class="sourceLineNo">179</span><a id="line.179">    if (m_apFirstRun) {</a>
+<span class="sourceLineNo">180</span><a id="line.180">      System.out.println("Default autonomousPeriodic() method... Override me!");</a>
+<span class="sourceLineNo">181</span><a id="line.181">      m_apFirstRun = false;</a>
+<span class="sourceLineNo">182</span><a id="line.182">    }</a>
+<span class="sourceLineNo">183</span><a id="line.183">  }</a>
+<span class="sourceLineNo">184</span><a id="line.184"></a>
+<span class="sourceLineNo">185</span><a id="line.185">  private boolean m_tpFirstRun = true;</a>
+<span class="sourceLineNo">186</span><a id="line.186"></a>
+<span class="sourceLineNo">187</span><a id="line.187">  /** Periodic code for teleop mode should go here. */</a>
+<span class="sourceLineNo">188</span><a id="line.188">  public void teleopPeriodic() {</a>
+<span class="sourceLineNo">189</span><a id="line.189">    if (m_tpFirstRun) {</a>
+<span class="sourceLineNo">190</span><a id="line.190">      System.out.println("Default teleopPeriodic() method... Override me!");</a>
+<span class="sourceLineNo">191</span><a id="line.191">      m_tpFirstRun = false;</a>
+<span class="sourceLineNo">192</span><a id="line.192">    }</a>
+<span class="sourceLineNo">193</span><a id="line.193">  }</a>
+<span class="sourceLineNo">194</span><a id="line.194"></a>
+<span class="sourceLineNo">195</span><a id="line.195">  private boolean m_tmpFirstRun = true;</a>
+<span class="sourceLineNo">196</span><a id="line.196"></a>
+<span class="sourceLineNo">197</span><a id="line.197">  /** Periodic code for test mode should go here. */</a>
+<span class="sourceLineNo">198</span><a id="line.198">  public void testPeriodic() {</a>
+<span class="sourceLineNo">199</span><a id="line.199">    if (m_tmpFirstRun) {</a>
+<span class="sourceLineNo">200</span><a id="line.200">      System.out.println("Default testPeriodic() method... Override me!");</a>
+<span class="sourceLineNo">201</span><a id="line.201">      m_tmpFirstRun = false;</a>
+<span class="sourceLineNo">202</span><a id="line.202">    }</a>
+<span class="sourceLineNo">203</span><a id="line.203">  }</a>
+<span class="sourceLineNo">204</span><a id="line.204"></a>
+<span class="sourceLineNo">205</span><a id="line.205">  /**</a>
+<span class="sourceLineNo">206</span><a id="line.206">   * Exit code for disabled mode should go here.</a>
+<span class="sourceLineNo">207</span><a id="line.207">   *</a>
+<span class="sourceLineNo">208</span><a id="line.208">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
+<span class="sourceLineNo">209</span><a id="line.209">   * disabled mode.</a>
+<span class="sourceLineNo">210</span><a id="line.210">   */</a>
+<span class="sourceLineNo">211</span><a id="line.211">  public void disabledExit() {}</a>
+<span class="sourceLineNo">212</span><a id="line.212"></a>
+<span class="sourceLineNo">213</span><a id="line.213">  /**</a>
+<span class="sourceLineNo">214</span><a id="line.214">   * Exit code for autonomous mode should go here.</a>
+<span class="sourceLineNo">215</span><a id="line.215">   *</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
+<span class="sourceLineNo">217</span><a id="line.217">   * autonomous mode.</a>
+<span class="sourceLineNo">218</span><a id="line.218">   */</a>
+<span class="sourceLineNo">219</span><a id="line.219">  public void autonomousExit() {}</a>
+<span class="sourceLineNo">220</span><a id="line.220"></a>
+<span class="sourceLineNo">221</span><a id="line.221">  /**</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * Exit code for teleop mode should go here.</a>
+<span class="sourceLineNo">223</span><a id="line.223">   *</a>
+<span class="sourceLineNo">224</span><a id="line.224">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
+<span class="sourceLineNo">225</span><a id="line.225">   * teleop mode.</a>
+<span class="sourceLineNo">226</span><a id="line.226">   */</a>
+<span class="sourceLineNo">227</span><a id="line.227">  public void teleopExit() {}</a>
+<span class="sourceLineNo">228</span><a id="line.228"></a>
+<span class="sourceLineNo">229</span><a id="line.229">  /**</a>
+<span class="sourceLineNo">230</span><a id="line.230">   * Exit code for test mode should go here.</a>
+<span class="sourceLineNo">231</span><a id="line.231">   *</a>
+<span class="sourceLineNo">232</span><a id="line.232">   * &lt;p&gt;Users should override this method for code which will be called each time the robot exits</a>
+<span class="sourceLineNo">233</span><a id="line.233">   * test mode.</a>
+<span class="sourceLineNo">234</span><a id="line.234">   */</a>
+<span class="sourceLineNo">235</span><a id="line.235">  public void testExit() {}</a>
+<span class="sourceLineNo">236</span><a id="line.236"></a>
+<span class="sourceLineNo">237</span><a id="line.237">  /**</a>
+<span class="sourceLineNo">238</span><a id="line.238">   * Enables or disables flushing NetworkTables every loop iteration. By default, this is disabled.</a>
+<span class="sourceLineNo">239</span><a id="line.239">   *</a>
+<span class="sourceLineNo">240</span><a id="line.240">   * @param enabled True to enable, false to disable</a>
+<span class="sourceLineNo">241</span><a id="line.241">   */</a>
+<span class="sourceLineNo">242</span><a id="line.242">  public void setNetworkTablesFlushEnabled(boolean enabled) {</a>
+<span class="sourceLineNo">243</span><a id="line.243">    m_ntFlushEnabled = enabled;</a>
+<span class="sourceLineNo">244</span><a id="line.244">  }</a>
+<span class="sourceLineNo">245</span><a id="line.245"></a>
+<span class="sourceLineNo">246</span><a id="line.246">  /**</a>
+<span class="sourceLineNo">247</span><a id="line.247">   * Gets time period between calls to Periodic() functions.</a>
+<span class="sourceLineNo">248</span><a id="line.248">   *</a>
+<span class="sourceLineNo">249</span><a id="line.249">   * @return The time period between calls to Periodic() functions.</a>
+<span class="sourceLineNo">250</span><a id="line.250">   */</a>
+<span class="sourceLineNo">251</span><a id="line.251">  public double getPeriod() {</a>
+<span class="sourceLineNo">252</span><a id="line.252">    return m_period;</a>
+<span class="sourceLineNo">253</span><a id="line.253">  }</a>
+<span class="sourceLineNo">254</span><a id="line.254"></a>
+<span class="sourceLineNo">255</span><a id="line.255">  protected void loopFunc() {</a>
+<span class="sourceLineNo">256</span><a id="line.256">    m_watchdog.reset();</a>
 <span class="sourceLineNo">257</span><a id="line.257"></a>
-<span class="sourceLineNo">258</span><a id="line.258">  protected void loopFunc() {</a>
-<span class="sourceLineNo">259</span><a id="line.259">    m_watchdog.reset();</a>
-<span class="sourceLineNo">260</span><a id="line.260"></a>
-<span class="sourceLineNo">261</span><a id="line.261">    // Get current mode</a>
-<span class="sourceLineNo">262</span><a id="line.262">    m_word.update();</a>
-<span class="sourceLineNo">263</span><a id="line.263">    Mode mode = Mode.kNone;</a>
-<span class="sourceLineNo">264</span><a id="line.264">    if (m_word.isDisabled()) {</a>
-<span class="sourceLineNo">265</span><a id="line.265">      mode = Mode.kDisabled;</a>
-<span class="sourceLineNo">266</span><a id="line.266">    } else if (m_word.isAutonomous()) {</a>
-<span class="sourceLineNo">267</span><a id="line.267">      mode = Mode.kAutonomous;</a>
-<span class="sourceLineNo">268</span><a id="line.268">    } else if (m_word.isTeleop()) {</a>
-<span class="sourceLineNo">269</span><a id="line.269">      mode = Mode.kTeleop;</a>
-<span class="sourceLineNo">270</span><a id="line.270">    } else if (m_word.isTest()) {</a>
-<span class="sourceLineNo">271</span><a id="line.271">      mode = Mode.kTest;</a>
-<span class="sourceLineNo">272</span><a id="line.272">    }</a>
-<span class="sourceLineNo">273</span><a id="line.273"></a>
-<span class="sourceLineNo">274</span><a id="line.274">    // If mode changed, call mode exit and entry functions</a>
-<span class="sourceLineNo">275</span><a id="line.275">    if (m_lastMode != mode) {</a>
-<span class="sourceLineNo">276</span><a id="line.276">      // Call last mode's exit function</a>
-<span class="sourceLineNo">277</span><a id="line.277">      if (m_lastMode == Mode.kDisabled) {</a>
-<span class="sourceLineNo">278</span><a id="line.278">        disabledExit();</a>
-<span class="sourceLineNo">279</span><a id="line.279">      } else if (m_lastMode == Mode.kAutonomous) {</a>
-<span class="sourceLineNo">280</span><a id="line.280">        autonomousExit();</a>
-<span class="sourceLineNo">281</span><a id="line.281">      } else if (m_lastMode == Mode.kTeleop) {</a>
-<span class="sourceLineNo">282</span><a id="line.282">        teleopExit();</a>
-<span class="sourceLineNo">283</span><a id="line.283">      } else if (m_lastMode == Mode.kTest) {</a>
-<span class="sourceLineNo">284</span><a id="line.284">        LiveWindow.setEnabled(false);</a>
-<span class="sourceLineNo">285</span><a id="line.285">        Shuffleboard.disableActuatorWidgets();</a>
-<span class="sourceLineNo">286</span><a id="line.286">        testExit();</a>
-<span class="sourceLineNo">287</span><a id="line.287">      }</a>
-<span class="sourceLineNo">288</span><a id="line.288"></a>
-<span class="sourceLineNo">289</span><a id="line.289">      // Call current mode's entry function</a>
-<span class="sourceLineNo">290</span><a id="line.290">      if (mode == Mode.kDisabled) {</a>
-<span class="sourceLineNo">291</span><a id="line.291">        disabledInit();</a>
-<span class="sourceLineNo">292</span><a id="line.292">        m_watchdog.addEpoch("disabledInit()");</a>
-<span class="sourceLineNo">293</span><a id="line.293">      } else if (mode == Mode.kAutonomous) {</a>
-<span class="sourceLineNo">294</span><a id="line.294">        autonomousInit();</a>
-<span class="sourceLineNo">295</span><a id="line.295">        m_watchdog.addEpoch("autonomousInit()");</a>
-<span class="sourceLineNo">296</span><a id="line.296">      } else if (mode == Mode.kTeleop) {</a>
-<span class="sourceLineNo">297</span><a id="line.297">        teleopInit();</a>
-<span class="sourceLineNo">298</span><a id="line.298">        m_watchdog.addEpoch("teleopInit()");</a>
-<span class="sourceLineNo">299</span><a id="line.299">      } else if (mode == Mode.kTest) {</a>
-<span class="sourceLineNo">300</span><a id="line.300">        LiveWindow.setEnabled(true);</a>
-<span class="sourceLineNo">301</span><a id="line.301">        Shuffleboard.enableActuatorWidgets();</a>
-<span class="sourceLineNo">302</span><a id="line.302">        testInit();</a>
-<span class="sourceLineNo">303</span><a id="line.303">        m_watchdog.addEpoch("testInit()");</a>
-<span class="sourceLineNo">304</span><a id="line.304">      }</a>
+<span class="sourceLineNo">258</span><a id="line.258">    // Get current mode</a>
+<span class="sourceLineNo">259</span><a id="line.259">    m_word.update();</a>
+<span class="sourceLineNo">260</span><a id="line.260">    Mode mode = Mode.kNone;</a>
+<span class="sourceLineNo">261</span><a id="line.261">    if (m_word.isDisabled()) {</a>
+<span class="sourceLineNo">262</span><a id="line.262">      mode = Mode.kDisabled;</a>
+<span class="sourceLineNo">263</span><a id="line.263">    } else if (m_word.isAutonomous()) {</a>
+<span class="sourceLineNo">264</span><a id="line.264">      mode = Mode.kAutonomous;</a>
+<span class="sourceLineNo">265</span><a id="line.265">    } else if (m_word.isTeleop()) {</a>
+<span class="sourceLineNo">266</span><a id="line.266">      mode = Mode.kTeleop;</a>
+<span class="sourceLineNo">267</span><a id="line.267">    } else if (m_word.isTest()) {</a>
+<span class="sourceLineNo">268</span><a id="line.268">      mode = Mode.kTest;</a>
+<span class="sourceLineNo">269</span><a id="line.269">    }</a>
+<span class="sourceLineNo">270</span><a id="line.270"></a>
+<span class="sourceLineNo">271</span><a id="line.271">    // If mode changed, call mode exit and entry functions</a>
+<span class="sourceLineNo">272</span><a id="line.272">    if (m_lastMode != mode) {</a>
+<span class="sourceLineNo">273</span><a id="line.273">      // Call last mode's exit function</a>
+<span class="sourceLineNo">274</span><a id="line.274">      if (m_lastMode == Mode.kDisabled) {</a>
+<span class="sourceLineNo">275</span><a id="line.275">        disabledExit();</a>
+<span class="sourceLineNo">276</span><a id="line.276">      } else if (m_lastMode == Mode.kAutonomous) {</a>
+<span class="sourceLineNo">277</span><a id="line.277">        autonomousExit();</a>
+<span class="sourceLineNo">278</span><a id="line.278">      } else if (m_lastMode == Mode.kTeleop) {</a>
+<span class="sourceLineNo">279</span><a id="line.279">        teleopExit();</a>
+<span class="sourceLineNo">280</span><a id="line.280">      } else if (m_lastMode == Mode.kTest) {</a>
+<span class="sourceLineNo">281</span><a id="line.281">        LiveWindow.setEnabled(false);</a>
+<span class="sourceLineNo">282</span><a id="line.282">        Shuffleboard.disableActuatorWidgets();</a>
+<span class="sourceLineNo">283</span><a id="line.283">        testExit();</a>
+<span class="sourceLineNo">284</span><a id="line.284">      }</a>
+<span class="sourceLineNo">285</span><a id="line.285"></a>
+<span class="sourceLineNo">286</span><a id="line.286">      // Call current mode's entry function</a>
+<span class="sourceLineNo">287</span><a id="line.287">      if (mode == Mode.kDisabled) {</a>
+<span class="sourceLineNo">288</span><a id="line.288">        disabledInit();</a>
+<span class="sourceLineNo">289</span><a id="line.289">        m_watchdog.addEpoch("disabledInit()");</a>
+<span class="sourceLineNo">290</span><a id="line.290">      } else if (mode == Mode.kAutonomous) {</a>
+<span class="sourceLineNo">291</span><a id="line.291">        autonomousInit();</a>
+<span class="sourceLineNo">292</span><a id="line.292">        m_watchdog.addEpoch("autonomousInit()");</a>
+<span class="sourceLineNo">293</span><a id="line.293">      } else if (mode == Mode.kTeleop) {</a>
+<span class="sourceLineNo">294</span><a id="line.294">        teleopInit();</a>
+<span class="sourceLineNo">295</span><a id="line.295">        m_watchdog.addEpoch("teleopInit()");</a>
+<span class="sourceLineNo">296</span><a id="line.296">      } else if (mode == Mode.kTest) {</a>
+<span class="sourceLineNo">297</span><a id="line.297">        LiveWindow.setEnabled(true);</a>
+<span class="sourceLineNo">298</span><a id="line.298">        Shuffleboard.enableActuatorWidgets();</a>
+<span class="sourceLineNo">299</span><a id="line.299">        testInit();</a>
+<span class="sourceLineNo">300</span><a id="line.300">        m_watchdog.addEpoch("testInit()");</a>
+<span class="sourceLineNo">301</span><a id="line.301">      }</a>
+<span class="sourceLineNo">302</span><a id="line.302"></a>
+<span class="sourceLineNo">303</span><a id="line.303">      m_lastMode = mode;</a>
+<span class="sourceLineNo">304</span><a id="line.304">    }</a>
 <span class="sourceLineNo">305</span><a id="line.305"></a>
-<span class="sourceLineNo">306</span><a id="line.306">      m_lastMode = mode;</a>
-<span class="sourceLineNo">307</span><a id="line.307">    }</a>
-<span class="sourceLineNo">308</span><a id="line.308"></a>
-<span class="sourceLineNo">309</span><a id="line.309">    // Call the appropriate function depending upon the current robot mode</a>
-<span class="sourceLineNo">310</span><a id="line.310">    if (mode == Mode.kDisabled) {</a>
-<span class="sourceLineNo">311</span><a id="line.311">      HAL.observeUserProgramDisabled();</a>
-<span class="sourceLineNo">312</span><a id="line.312">      disabledPeriodic();</a>
-<span class="sourceLineNo">313</span><a id="line.313">      m_watchdog.addEpoch("disabledPeriodic()");</a>
-<span class="sourceLineNo">314</span><a id="line.314">    } else if (mode == Mode.kAutonomous) {</a>
-<span class="sourceLineNo">315</span><a id="line.315">      HAL.observeUserProgramAutonomous();</a>
-<span class="sourceLineNo">316</span><a id="line.316">      autonomousPeriodic();</a>
-<span class="sourceLineNo">317</span><a id="line.317">      m_watchdog.addEpoch("autonomousPeriodic()");</a>
-<span class="sourceLineNo">318</span><a id="line.318">    } else if (mode == Mode.kTeleop) {</a>
-<span class="sourceLineNo">319</span><a id="line.319">      HAL.observeUserProgramTeleop();</a>
-<span class="sourceLineNo">320</span><a id="line.320">      teleopPeriodic();</a>
-<span class="sourceLineNo">321</span><a id="line.321">      m_watchdog.addEpoch("teleopPeriodic()");</a>
-<span class="sourceLineNo">322</span><a id="line.322">    } else {</a>
-<span class="sourceLineNo">323</span><a id="line.323">      HAL.observeUserProgramTest();</a>
-<span class="sourceLineNo">324</span><a id="line.324">      testPeriodic();</a>
-<span class="sourceLineNo">325</span><a id="line.325">      m_watchdog.addEpoch("testPeriodic()");</a>
-<span class="sourceLineNo">326</span><a id="line.326">    }</a>
+<span class="sourceLineNo">306</span><a id="line.306">    // Call the appropriate function depending upon the current robot mode</a>
+<span class="sourceLineNo">307</span><a id="line.307">    if (mode == Mode.kDisabled) {</a>
+<span class="sourceLineNo">308</span><a id="line.308">      HAL.observeUserProgramDisabled();</a>
+<span class="sourceLineNo">309</span><a id="line.309">      disabledPeriodic();</a>
+<span class="sourceLineNo">310</span><a id="line.310">      m_watchdog.addEpoch("disabledPeriodic()");</a>
+<span class="sourceLineNo">311</span><a id="line.311">    } else if (mode == Mode.kAutonomous) {</a>
+<span class="sourceLineNo">312</span><a id="line.312">      HAL.observeUserProgramAutonomous();</a>
+<span class="sourceLineNo">313</span><a id="line.313">      autonomousPeriodic();</a>
+<span class="sourceLineNo">314</span><a id="line.314">      m_watchdog.addEpoch("autonomousPeriodic()");</a>
+<span class="sourceLineNo">315</span><a id="line.315">    } else if (mode == Mode.kTeleop) {</a>
+<span class="sourceLineNo">316</span><a id="line.316">      HAL.observeUserProgramTeleop();</a>
+<span class="sourceLineNo">317</span><a id="line.317">      teleopPeriodic();</a>
+<span class="sourceLineNo">318</span><a id="line.318">      m_watchdog.addEpoch("teleopPeriodic()");</a>
+<span class="sourceLineNo">319</span><a id="line.319">    } else {</a>
+<span class="sourceLineNo">320</span><a id="line.320">      HAL.observeUserProgramTest();</a>
+<span class="sourceLineNo">321</span><a id="line.321">      testPeriodic();</a>
+<span class="sourceLineNo">322</span><a id="line.322">      m_watchdog.addEpoch("testPeriodic()");</a>
+<span class="sourceLineNo">323</span><a id="line.323">    }</a>
+<span class="sourceLineNo">324</span><a id="line.324"></a>
+<span class="sourceLineNo">325</span><a id="line.325">    robotPeriodic();</a>
+<span class="sourceLineNo">326</span><a id="line.326">    m_watchdog.addEpoch("robotPeriodic()");</a>
 <span class="sourceLineNo">327</span><a id="line.327"></a>
-<span class="sourceLineNo">328</span><a id="line.328">    robotPeriodic();</a>
-<span class="sourceLineNo">329</span><a id="line.329">    m_watchdog.addEpoch("robotPeriodic()");</a>
-<span class="sourceLineNo">330</span><a id="line.330"></a>
-<span class="sourceLineNo">331</span><a id="line.331">    SmartDashboard.updateValues();</a>
-<span class="sourceLineNo">332</span><a id="line.332">    m_watchdog.addEpoch("SmartDashboard.updateValues()");</a>
-<span class="sourceLineNo">333</span><a id="line.333">    LiveWindow.updateValues();</a>
-<span class="sourceLineNo">334</span><a id="line.334">    m_watchdog.addEpoch("LiveWindow.updateValues()");</a>
-<span class="sourceLineNo">335</span><a id="line.335">    Shuffleboard.update();</a>
-<span class="sourceLineNo">336</span><a id="line.336">    m_watchdog.addEpoch("Shuffleboard.update()");</a>
-<span class="sourceLineNo">337</span><a id="line.337"></a>
-<span class="sourceLineNo">338</span><a id="line.338">    if (isSimulation()) {</a>
-<span class="sourceLineNo">339</span><a id="line.339">      HAL.simPeriodicBefore();</a>
-<span class="sourceLineNo">340</span><a id="line.340">      simulationPeriodic();</a>
-<span class="sourceLineNo">341</span><a id="line.341">      HAL.simPeriodicAfter();</a>
-<span class="sourceLineNo">342</span><a id="line.342">      m_watchdog.addEpoch("simulationPeriodic()");</a>
-<span class="sourceLineNo">343</span><a id="line.343">    }</a>
-<span class="sourceLineNo">344</span><a id="line.344"></a>
-<span class="sourceLineNo">345</span><a id="line.345">    m_watchdog.disable();</a>
-<span class="sourceLineNo">346</span><a id="line.346"></a>
-<span class="sourceLineNo">347</span><a id="line.347">    // Flush NetworkTables</a>
-<span class="sourceLineNo">348</span><a id="line.348">    if (m_ntFlushEnabled) {</a>
-<span class="sourceLineNo">349</span><a id="line.349">      NetworkTableInstance.getDefault().flush();</a>
-<span class="sourceLineNo">350</span><a id="line.350">    }</a>
-<span class="sourceLineNo">351</span><a id="line.351"></a>
-<span class="sourceLineNo">352</span><a id="line.352">    // Warn on loop time overruns</a>
-<span class="sourceLineNo">353</span><a id="line.353">    if (m_watchdog.isExpired()) {</a>
-<span class="sourceLineNo">354</span><a id="line.354">      m_watchdog.printEpochs();</a>
-<span class="sourceLineNo">355</span><a id="line.355">    }</a>
-<span class="sourceLineNo">356</span><a id="line.356">  }</a>
-<span class="sourceLineNo">357</span><a id="line.357"></a>
-<span class="sourceLineNo">358</span><a id="line.358">  private void printLoopOverrunMessage() {</a>
-<span class="sourceLineNo">359</span><a id="line.359">    DriverStation.reportWarning("Loop time of " + m_period + "s overrun\n", false);</a>
-<span class="sourceLineNo">360</span><a id="line.360">  }</a>
-<span class="sourceLineNo">361</span><a id="line.361">}</a>
+<span class="sourceLineNo">328</span><a id="line.328">    SmartDashboard.updateValues();</a>
+<span class="sourceLineNo">329</span><a id="line.329">    m_watchdog.addEpoch("SmartDashboard.updateValues()");</a>
+<span class="sourceLineNo">330</span><a id="line.330">    LiveWindow.updateValues();</a>
+<span class="sourceLineNo">331</span><a id="line.331">    m_watchdog.addEpoch("LiveWindow.updateValues()");</a>
+<span class="sourceLineNo">332</span><a id="line.332">    Shuffleboard.update();</a>
+<span class="sourceLineNo">333</span><a id="line.333">    m_watchdog.addEpoch("Shuffleboard.update()");</a>
+<span class="sourceLineNo">334</span><a id="line.334"></a>
+<span class="sourceLineNo">335</span><a id="line.335">    if (isSimulation()) {</a>
+<span class="sourceLineNo">336</span><a id="line.336">      HAL.simPeriodicBefore();</a>
+<span class="sourceLineNo">337</span><a id="line.337">      simulationPeriodic();</a>
+<span class="sourceLineNo">338</span><a id="line.338">      HAL.simPeriodicAfter();</a>
+<span class="sourceLineNo">339</span><a id="line.339">      m_watchdog.addEpoch("simulationPeriodic()");</a>
+<span class="sourceLineNo">340</span><a id="line.340">    }</a>
+<span class="sourceLineNo">341</span><a id="line.341"></a>
+<span class="sourceLineNo">342</span><a id="line.342">    m_watchdog.disable();</a>
+<span class="sourceLineNo">343</span><a id="line.343"></a>
+<span class="sourceLineNo">344</span><a id="line.344">    // Flush NetworkTables</a>
+<span class="sourceLineNo">345</span><a id="line.345">    if (m_ntFlushEnabled) {</a>
+<span class="sourceLineNo">346</span><a id="line.346">      NetworkTableInstance.getDefault().flush();</a>
+<span class="sourceLineNo">347</span><a id="line.347">    }</a>
+<span class="sourceLineNo">348</span><a id="line.348"></a>
+<span class="sourceLineNo">349</span><a id="line.349">    // Warn on loop time overruns</a>
+<span class="sourceLineNo">350</span><a id="line.350">    if (m_watchdog.isExpired()) {</a>
+<span class="sourceLineNo">351</span><a id="line.351">      m_watchdog.printEpochs();</a>
+<span class="sourceLineNo">352</span><a id="line.352">    }</a>
+<span class="sourceLineNo">353</span><a id="line.353">  }</a>
+<span class="sourceLineNo">354</span><a id="line.354"></a>
+<span class="sourceLineNo">355</span><a id="line.355">  private void printLoopOverrunMessage() {</a>
+<span class="sourceLineNo">356</span><a id="line.356">    DriverStation.reportWarning("Loop time of " + m_period + "s overrun\n", false);</a>
+<span class="sourceLineNo">357</span><a id="line.357">  }</a>
+<span class="sourceLineNo">358</span><a id="line.358">}</a>
 
 
 

@@ -256,19 +256,18 @@
 <span class="sourceLineNo">244</span><a id="line.244">  }</a>
 <span class="sourceLineNo">245</span><a id="line.245"></a>
 <span class="sourceLineNo">246</span><a id="line.246">  @Override</a>
-<span class="sourceLineNo">247</span><a id="line.247">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">248</span><a id="line.248">  public Pose2d interpolate(Pose2d endValue, double t) {</a>
-<span class="sourceLineNo">249</span><a id="line.249">    if (t &lt; 0) {</a>
-<span class="sourceLineNo">250</span><a id="line.250">      return this;</a>
-<span class="sourceLineNo">251</span><a id="line.251">    } else if (t &gt;= 1) {</a>
-<span class="sourceLineNo">252</span><a id="line.252">      return endValue;</a>
-<span class="sourceLineNo">253</span><a id="line.253">    } else {</a>
-<span class="sourceLineNo">254</span><a id="line.254">      var twist = this.log(endValue);</a>
-<span class="sourceLineNo">255</span><a id="line.255">      var scaledTwist = new Twist2d(twist.dx * t, twist.dy * t, twist.dtheta * t);</a>
-<span class="sourceLineNo">256</span><a id="line.256">      return this.exp(scaledTwist);</a>
-<span class="sourceLineNo">257</span><a id="line.257">    }</a>
-<span class="sourceLineNo">258</span><a id="line.258">  }</a>
-<span class="sourceLineNo">259</span><a id="line.259">}</a>
+<span class="sourceLineNo">247</span><a id="line.247">  public Pose2d interpolate(Pose2d endValue, double t) {</a>
+<span class="sourceLineNo">248</span><a id="line.248">    if (t &lt; 0) {</a>
+<span class="sourceLineNo">249</span><a id="line.249">      return this;</a>
+<span class="sourceLineNo">250</span><a id="line.250">    } else if (t &gt;= 1) {</a>
+<span class="sourceLineNo">251</span><a id="line.251">      return endValue;</a>
+<span class="sourceLineNo">252</span><a id="line.252">    } else {</a>
+<span class="sourceLineNo">253</span><a id="line.253">      var twist = this.log(endValue);</a>
+<span class="sourceLineNo">254</span><a id="line.254">      var scaledTwist = new Twist2d(twist.dx * t, twist.dy * t, twist.dtheta * t);</a>
+<span class="sourceLineNo">255</span><a id="line.255">      return this.exp(scaledTwist);</a>
+<span class="sourceLineNo">256</span><a id="line.256">    }</a>
+<span class="sourceLineNo">257</span><a id="line.257">  }</a>
+<span class="sourceLineNo">258</span><a id="line.258">}</a>
 
 
 

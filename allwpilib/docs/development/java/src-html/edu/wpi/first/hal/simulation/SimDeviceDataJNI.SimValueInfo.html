@@ -40,79 +40,85 @@
 <span class="sourceLineNo">028</span><a id="line.28"></a>
 <span class="sourceLineNo">029</span><a id="line.29">  public static native int getSimValueDeviceHandle(int handle);</a>
 <span class="sourceLineNo">030</span><a id="line.30"></a>
-<span class="sourceLineNo">031</span><a id="line.31">  public static class SimDeviceInfo {</a>
-<span class="sourceLineNo">032</span><a id="line.32">    @SuppressWarnings("JavadocMethod")</a>
-<span class="sourceLineNo">033</span><a id="line.33">    public SimDeviceInfo(String name, int handle) {</a>
-<span class="sourceLineNo">034</span><a id="line.34">      this.name = name;</a>
-<span class="sourceLineNo">035</span><a id="line.35">      this.handle = handle;</a>
-<span class="sourceLineNo">036</span><a id="line.36">    }</a>
-<span class="sourceLineNo">037</span><a id="line.37"></a>
-<span class="sourceLineNo">038</span><a id="line.38">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">039</span><a id="line.39">    public String name;</a>
-<span class="sourceLineNo">040</span><a id="line.40"></a>
-<span class="sourceLineNo">041</span><a id="line.41">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">042</span><a id="line.42">    public int handle;</a>
-<span class="sourceLineNo">043</span><a id="line.43">  }</a>
-<span class="sourceLineNo">044</span><a id="line.44"></a>
-<span class="sourceLineNo">045</span><a id="line.45">  public static native SimDeviceInfo[] enumerateSimDevices(String prefix);</a>
-<span class="sourceLineNo">046</span><a id="line.46"></a>
-<span class="sourceLineNo">047</span><a id="line.47">  public static native int registerSimValueCreatedCallback(</a>
-<span class="sourceLineNo">048</span><a id="line.48">      int device, SimValueCallback callback, boolean initialNotify);</a>
+<span class="sourceLineNo">031</span><a id="line.31">  @SuppressWarnings("MemberName")</a>
+<span class="sourceLineNo">032</span><a id="line.32">  public static class SimDeviceInfo {</a>
+<span class="sourceLineNo">033</span><a id="line.33">    public String name;</a>
+<span class="sourceLineNo">034</span><a id="line.34">    public int handle;</a>
+<span class="sourceLineNo">035</span><a id="line.35"></a>
+<span class="sourceLineNo">036</span><a id="line.36">    /**</a>
+<span class="sourceLineNo">037</span><a id="line.37">     * SimDeviceInfo constructor.</a>
+<span class="sourceLineNo">038</span><a id="line.38">     *</a>
+<span class="sourceLineNo">039</span><a id="line.39">     * @param name SimDevice name.</a>
+<span class="sourceLineNo">040</span><a id="line.40">     * @param handle SimDevice handle.</a>
+<span class="sourceLineNo">041</span><a id="line.41">     */</a>
+<span class="sourceLineNo">042</span><a id="line.42">    public SimDeviceInfo(String name, int handle) {</a>
+<span class="sourceLineNo">043</span><a id="line.43">      this.name = name;</a>
+<span class="sourceLineNo">044</span><a id="line.44">      this.handle = handle;</a>
+<span class="sourceLineNo">045</span><a id="line.45">    }</a>
+<span class="sourceLineNo">046</span><a id="line.46">  }</a>
+<span class="sourceLineNo">047</span><a id="line.47"></a>
+<span class="sourceLineNo">048</span><a id="line.48">  public static native SimDeviceInfo[] enumerateSimDevices(String prefix);</a>
 <span class="sourceLineNo">049</span><a id="line.49"></a>
-<span class="sourceLineNo">050</span><a id="line.50">  public static native void cancelSimValueCreatedCallback(int uid);</a>
-<span class="sourceLineNo">051</span><a id="line.51"></a>
-<span class="sourceLineNo">052</span><a id="line.52">  public static native int registerSimValueChangedCallback(</a>
-<span class="sourceLineNo">053</span><a id="line.53">      int handle, SimValueCallback callback, boolean initialNotify);</a>
+<span class="sourceLineNo">050</span><a id="line.50">  public static native int registerSimValueCreatedCallback(</a>
+<span class="sourceLineNo">051</span><a id="line.51">      int device, SimValueCallback callback, boolean initialNotify);</a>
+<span class="sourceLineNo">052</span><a id="line.52"></a>
+<span class="sourceLineNo">053</span><a id="line.53">  public static native void cancelSimValueCreatedCallback(int uid);</a>
 <span class="sourceLineNo">054</span><a id="line.54"></a>
-<span class="sourceLineNo">055</span><a id="line.55">  public static native void cancelSimValueChangedCallback(int uid);</a>
-<span class="sourceLineNo">056</span><a id="line.56"></a>
-<span class="sourceLineNo">057</span><a id="line.57">  /**</a>
-<span class="sourceLineNo">058</span><a id="line.58">   * Register a callback for SimDeviceJNI.resetSimValue(). The callback is called with the old</a>
-<span class="sourceLineNo">059</span><a id="line.59">   * value.</a>
-<span class="sourceLineNo">060</span><a id="line.60">   *</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * @param callback callback</a>
-<span class="sourceLineNo">063</span><a id="line.63">   * @param initialNotify ignored (present for consistency)</a>
-<span class="sourceLineNo">064</span><a id="line.64">   * @return TODO</a>
-<span class="sourceLineNo">065</span><a id="line.65">   */</a>
-<span class="sourceLineNo">066</span><a id="line.66">  public static native int registerSimValueResetCallback(</a>
-<span class="sourceLineNo">067</span><a id="line.67">      int handle, SimValueCallback callback, boolean initialNotify);</a>
-<span class="sourceLineNo">068</span><a id="line.68"></a>
-<span class="sourceLineNo">069</span><a id="line.69">  public static native void cancelSimValueResetCallback(int uid);</a>
-<span class="sourceLineNo">070</span><a id="line.70"></a>
-<span class="sourceLineNo">071</span><a id="line.71">  public static native int getSimValueHandle(int device, String name);</a>
-<span class="sourceLineNo">072</span><a id="line.72"></a>
-<span class="sourceLineNo">073</span><a id="line.73">  public static class SimValueInfo {</a>
-<span class="sourceLineNo">074</span><a id="line.74">    @SuppressWarnings("JavadocMethod")</a>
-<span class="sourceLineNo">075</span><a id="line.75">    public SimValueInfo(</a>
-<span class="sourceLineNo">076</span><a id="line.76">        String name, int handle, int direction, int type, long value1, double value2) {</a>
-<span class="sourceLineNo">077</span><a id="line.77">      this.name = name;</a>
-<span class="sourceLineNo">078</span><a id="line.78">      this.handle = handle;</a>
-<span class="sourceLineNo">079</span><a id="line.79">      this.direction = direction;</a>
-<span class="sourceLineNo">080</span><a id="line.80">      this.value = HALValue.fromNative(type, value1, value2);</a>
-<span class="sourceLineNo">081</span><a id="line.81">    }</a>
+<span class="sourceLineNo">055</span><a id="line.55">  public static native int registerSimValueChangedCallback(</a>
+<span class="sourceLineNo">056</span><a id="line.56">      int handle, SimValueCallback callback, boolean initialNotify);</a>
+<span class="sourceLineNo">057</span><a id="line.57"></a>
+<span class="sourceLineNo">058</span><a id="line.58">  public static native void cancelSimValueChangedCallback(int uid);</a>
+<span class="sourceLineNo">059</span><a id="line.59"></a>
+<span class="sourceLineNo">060</span><a id="line.60">  /**</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * Register a callback for SimDeviceJNI.resetSimValue(). The callback is called with the old</a>
+<span class="sourceLineNo">062</span><a id="line.62">   * value.</a>
+<span class="sourceLineNo">063</span><a id="line.63">   *</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * @param callback callback</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * @param initialNotify ignored (present for consistency)</a>
+<span class="sourceLineNo">067</span><a id="line.67">   * @return TODO</a>
+<span class="sourceLineNo">068</span><a id="line.68">   */</a>
+<span class="sourceLineNo">069</span><a id="line.69">  public static native int registerSimValueResetCallback(</a>
+<span class="sourceLineNo">070</span><a id="line.70">      int handle, SimValueCallback callback, boolean initialNotify);</a>
+<span class="sourceLineNo">071</span><a id="line.71"></a>
+<span class="sourceLineNo">072</span><a id="line.72">  public static native void cancelSimValueResetCallback(int uid);</a>
+<span class="sourceLineNo">073</span><a id="line.73"></a>
+<span class="sourceLineNo">074</span><a id="line.74">  public static native int getSimValueHandle(int device, String name);</a>
+<span class="sourceLineNo">075</span><a id="line.75"></a>
+<span class="sourceLineNo">076</span><a id="line.76">  @SuppressWarnings("MemberName")</a>
+<span class="sourceLineNo">077</span><a id="line.77">  public static class SimValueInfo {</a>
+<span class="sourceLineNo">078</span><a id="line.78">    public String name;</a>
+<span class="sourceLineNo">079</span><a id="line.79">    public int handle;</a>
+<span class="sourceLineNo">080</span><a id="line.80">    public int direction;</a>
+<span class="sourceLineNo">081</span><a id="line.81">    public HALValue value;</a>
 <span class="sourceLineNo">082</span><a id="line.82"></a>
-<span class="sourceLineNo">083</span><a id="line.83">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">084</span><a id="line.84">    public String name;</a>
-<span class="sourceLineNo">085</span><a id="line.85"></a>
-<span class="sourceLineNo">086</span><a id="line.86">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">087</span><a id="line.87">    public int handle;</a>
-<span class="sourceLineNo">088</span><a id="line.88"></a>
-<span class="sourceLineNo">089</span><a id="line.89">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">090</span><a id="line.90">    public int direction;</a>
-<span class="sourceLineNo">091</span><a id="line.91"></a>
-<span class="sourceLineNo">092</span><a id="line.92">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">093</span><a id="line.93">    public HALValue value;</a>
-<span class="sourceLineNo">094</span><a id="line.94">  }</a>
-<span class="sourceLineNo">095</span><a id="line.95"></a>
-<span class="sourceLineNo">096</span><a id="line.96">  public static native SimValueInfo[] enumerateSimValues(int device);</a>
-<span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">  public static native String[] getSimValueEnumOptions(int handle);</a>
-<span class="sourceLineNo">099</span><a id="line.99"></a>
-<span class="sourceLineNo">100</span><a id="line.100">  public static native double[] getSimValueEnumDoubleValues(int handle);</a>
+<span class="sourceLineNo">083</span><a id="line.83">    /**</a>
+<span class="sourceLineNo">084</span><a id="line.84">     * SimValueInfo constructor.</a>
+<span class="sourceLineNo">085</span><a id="line.85">     *</a>
+<span class="sourceLineNo">086</span><a id="line.86">     * @param name SimValue name.</a>
+<span class="sourceLineNo">087</span><a id="line.87">     * @param handle SimValue handle.</a>
+<span class="sourceLineNo">088</span><a id="line.88">     * @param direction SimValue direction.</a>
+<span class="sourceLineNo">089</span><a id="line.89">     * @param type SimValue type.</a>
+<span class="sourceLineNo">090</span><a id="line.90">     * @param value1 Value 1.</a>
+<span class="sourceLineNo">091</span><a id="line.91">     * @param value2 Value 2.</a>
+<span class="sourceLineNo">092</span><a id="line.92">     */</a>
+<span class="sourceLineNo">093</span><a id="line.93">    public SimValueInfo(</a>
+<span class="sourceLineNo">094</span><a id="line.94">        String name, int handle, int direction, int type, long value1, double value2) {</a>
+<span class="sourceLineNo">095</span><a id="line.95">      this.name = name;</a>
+<span class="sourceLineNo">096</span><a id="line.96">      this.handle = handle;</a>
+<span class="sourceLineNo">097</span><a id="line.97">      this.direction = direction;</a>
+<span class="sourceLineNo">098</span><a id="line.98">      this.value = HALValue.fromNative(type, value1, value2);</a>
+<span class="sourceLineNo">099</span><a id="line.99">    }</a>
+<span class="sourceLineNo">100</span><a id="line.100">  }</a>
 <span class="sourceLineNo">101</span><a id="line.101"></a>
-<span class="sourceLineNo">102</span><a id="line.102">  public static native void resetSimDeviceData();</a>
-<span class="sourceLineNo">103</span><a id="line.103">}</a>
+<span class="sourceLineNo">102</span><a id="line.102">  public static native SimValueInfo[] enumerateSimValues(int device);</a>
+<span class="sourceLineNo">103</span><a id="line.103"></a>
+<span class="sourceLineNo">104</span><a id="line.104">  public static native String[] getSimValueEnumOptions(int handle);</a>
+<span class="sourceLineNo">105</span><a id="line.105"></a>
+<span class="sourceLineNo">106</span><a id="line.106">  public static native double[] getSimValueEnumDoubleValues(int handle);</a>
+<span class="sourceLineNo">107</span><a id="line.107"></a>
+<span class="sourceLineNo">108</span><a id="line.108">  public static native void resetSimDeviceData();</a>
+<span class="sourceLineNo">109</span><a id="line.109">}</a>
 
 
 

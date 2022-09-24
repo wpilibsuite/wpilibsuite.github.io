@@ -311,28 +311,27 @@
 <span class="sourceLineNo">299</span><a id="line.299">   *</a>
 <span class="sourceLineNo">300</span><a id="line.300">   * @return the FPGA index</a>
 <span class="sourceLineNo">301</span><a id="line.301">   */</a>
-<span class="sourceLineNo">302</span><a id="line.302">  @SuppressWarnings("AbbreviationAsWordInName")</a>
-<span class="sourceLineNo">303</span><a id="line.303">  public int getFPGAIndex() {</a>
-<span class="sourceLineNo">304</span><a id="line.304">    return m_dutyCycle.getFPGAIndex();</a>
-<span class="sourceLineNo">305</span><a id="line.305">  }</a>
-<span class="sourceLineNo">306</span><a id="line.306"></a>
-<span class="sourceLineNo">307</span><a id="line.307">  /**</a>
-<span class="sourceLineNo">308</span><a id="line.308">   * Get the channel of the source.</a>
-<span class="sourceLineNo">309</span><a id="line.309">   *</a>
-<span class="sourceLineNo">310</span><a id="line.310">   * @return the source channel</a>
-<span class="sourceLineNo">311</span><a id="line.311">   */</a>
-<span class="sourceLineNo">312</span><a id="line.312">  public int getSourceChannel() {</a>
-<span class="sourceLineNo">313</span><a id="line.313">    return m_dutyCycle.getSourceChannel();</a>
-<span class="sourceLineNo">314</span><a id="line.314">  }</a>
-<span class="sourceLineNo">315</span><a id="line.315"></a>
-<span class="sourceLineNo">316</span><a id="line.316">  @Override</a>
-<span class="sourceLineNo">317</span><a id="line.317">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">318</span><a id="line.318">    builder.setSmartDashboardType("AbsoluteEncoder");</a>
-<span class="sourceLineNo">319</span><a id="line.319">    builder.addDoubleProperty("Distance", this::getDistance, null);</a>
-<span class="sourceLineNo">320</span><a id="line.320">    builder.addDoubleProperty("Distance Per Rotation", this::getDistancePerRotation, null);</a>
-<span class="sourceLineNo">321</span><a id="line.321">    builder.addBooleanProperty("Is Connected", this::isConnected, null);</a>
-<span class="sourceLineNo">322</span><a id="line.322">  }</a>
-<span class="sourceLineNo">323</span><a id="line.323">}</a>
+<span class="sourceLineNo">302</span><a id="line.302">  public int getFPGAIndex() {</a>
+<span class="sourceLineNo">303</span><a id="line.303">    return m_dutyCycle.getFPGAIndex();</a>
+<span class="sourceLineNo">304</span><a id="line.304">  }</a>
+<span class="sourceLineNo">305</span><a id="line.305"></a>
+<span class="sourceLineNo">306</span><a id="line.306">  /**</a>
+<span class="sourceLineNo">307</span><a id="line.307">   * Get the channel of the source.</a>
+<span class="sourceLineNo">308</span><a id="line.308">   *</a>
+<span class="sourceLineNo">309</span><a id="line.309">   * @return the source channel</a>
+<span class="sourceLineNo">310</span><a id="line.310">   */</a>
+<span class="sourceLineNo">311</span><a id="line.311">  public int getSourceChannel() {</a>
+<span class="sourceLineNo">312</span><a id="line.312">    return m_dutyCycle.getSourceChannel();</a>
+<span class="sourceLineNo">313</span><a id="line.313">  }</a>
+<span class="sourceLineNo">314</span><a id="line.314"></a>
+<span class="sourceLineNo">315</span><a id="line.315">  @Override</a>
+<span class="sourceLineNo">316</span><a id="line.316">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">317</span><a id="line.317">    builder.setSmartDashboardType("AbsoluteEncoder");</a>
+<span class="sourceLineNo">318</span><a id="line.318">    builder.addDoubleProperty("Distance", this::getDistance, null);</a>
+<span class="sourceLineNo">319</span><a id="line.319">    builder.addDoubleProperty("Distance Per Rotation", this::getDistancePerRotation, null);</a>
+<span class="sourceLineNo">320</span><a id="line.320">    builder.addBooleanProperty("Is Connected", this::isConnected, null);</a>
+<span class="sourceLineNo">321</span><a id="line.321">  }</a>
+<span class="sourceLineNo">322</span><a id="line.322">}</a>
 
 
 

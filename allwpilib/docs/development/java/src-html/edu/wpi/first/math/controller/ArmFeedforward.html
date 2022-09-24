@@ -20,146 +20,145 @@
 <span class="sourceLineNo">008</span><a id="line.8"> * A helper class that computes feedforward outputs for a simple arm (modeled as a motor acting</a>
 <span class="sourceLineNo">009</span><a id="line.9"> * against the force of gravity on a beam suspended at an angle).</a>
 <span class="sourceLineNo">010</span><a id="line.10"> */</a>
-<span class="sourceLineNo">011</span><a id="line.11">@SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">012</span><a id="line.12">public class ArmFeedforward {</a>
-<span class="sourceLineNo">013</span><a id="line.13">  public final double ks;</a>
-<span class="sourceLineNo">014</span><a id="line.14">  public final double kcos;</a>
-<span class="sourceLineNo">015</span><a id="line.15">  public final double kv;</a>
-<span class="sourceLineNo">016</span><a id="line.16">  public final double ka;</a>
-<span class="sourceLineNo">017</span><a id="line.17"></a>
-<span class="sourceLineNo">018</span><a id="line.18">  /**</a>
-<span class="sourceLineNo">019</span><a id="line.19">   * Creates a new ArmFeedforward with the specified gains. Units of the gain values will dictate</a>
-<span class="sourceLineNo">020</span><a id="line.20">   * units of the computed feedforward.</a>
-<span class="sourceLineNo">021</span><a id="line.21">   *</a>
-<span class="sourceLineNo">022</span><a id="line.22">   * @param ks The static gain.</a>
-<span class="sourceLineNo">023</span><a id="line.23">   * @param kcos The gravity gain.</a>
-<span class="sourceLineNo">024</span><a id="line.24">   * @param kv The velocity gain.</a>
-<span class="sourceLineNo">025</span><a id="line.25">   * @param ka The acceleration gain.</a>
-<span class="sourceLineNo">026</span><a id="line.26">   */</a>
-<span class="sourceLineNo">027</span><a id="line.27">  public ArmFeedforward(double ks, double kcos, double kv, double ka) {</a>
-<span class="sourceLineNo">028</span><a id="line.28">    this.ks = ks;</a>
-<span class="sourceLineNo">029</span><a id="line.29">    this.kcos = kcos;</a>
-<span class="sourceLineNo">030</span><a id="line.30">    this.kv = kv;</a>
-<span class="sourceLineNo">031</span><a id="line.31">    this.ka = ka;</a>
-<span class="sourceLineNo">032</span><a id="line.32">  }</a>
-<span class="sourceLineNo">033</span><a id="line.33"></a>
-<span class="sourceLineNo">034</span><a id="line.34">  /**</a>
-<span class="sourceLineNo">035</span><a id="line.35">   * Creates a new ArmFeedforward with the specified gains. Acceleration gain is defaulted to zero.</a>
-<span class="sourceLineNo">036</span><a id="line.36">   * Units of the gain values will dictate units of the computed feedforward.</a>
-<span class="sourceLineNo">037</span><a id="line.37">   *</a>
-<span class="sourceLineNo">038</span><a id="line.38">   * @param ks The static gain.</a>
-<span class="sourceLineNo">039</span><a id="line.39">   * @param kcos The gravity gain.</a>
-<span class="sourceLineNo">040</span><a id="line.40">   * @param kv The velocity gain.</a>
-<span class="sourceLineNo">041</span><a id="line.41">   */</a>
-<span class="sourceLineNo">042</span><a id="line.42">  public ArmFeedforward(double ks, double kcos, double kv) {</a>
-<span class="sourceLineNo">043</span><a id="line.43">    this(ks, kcos, kv, 0);</a>
-<span class="sourceLineNo">044</span><a id="line.44">  }</a>
-<span class="sourceLineNo">045</span><a id="line.45"></a>
-<span class="sourceLineNo">046</span><a id="line.46">  /**</a>
-<span class="sourceLineNo">047</span><a id="line.47">   * Calculates the feedforward from the gains and setpoints.</a>
-<span class="sourceLineNo">048</span><a id="line.48">   *</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * @param positionRadians The position (angle) setpoint. This angle should be measured from the</a>
-<span class="sourceLineNo">050</span><a id="line.50">   *     horizontal (i.e. if the provided angle is 0, the arm should be parallel with the floor). If</a>
-<span class="sourceLineNo">051</span><a id="line.51">   *     your encoder does not follow this convention, an offset should be added.</a>
-<span class="sourceLineNo">052</span><a id="line.52">   * @param velocityRadPerSec The velocity setpoint.</a>
-<span class="sourceLineNo">053</span><a id="line.53">   * @param accelRadPerSecSquared The acceleration setpoint.</a>
-<span class="sourceLineNo">054</span><a id="line.54">   * @return The computed feedforward.</a>
-<span class="sourceLineNo">055</span><a id="line.55">   */</a>
-<span class="sourceLineNo">056</span><a id="line.56">  public double calculate(</a>
-<span class="sourceLineNo">057</span><a id="line.57">      double positionRadians, double velocityRadPerSec, double accelRadPerSecSquared) {</a>
-<span class="sourceLineNo">058</span><a id="line.58">    return ks * Math.signum(velocityRadPerSec)</a>
-<span class="sourceLineNo">059</span><a id="line.59">        + kcos * Math.cos(positionRadians)</a>
-<span class="sourceLineNo">060</span><a id="line.60">        + kv * velocityRadPerSec</a>
-<span class="sourceLineNo">061</span><a id="line.61">        + ka * accelRadPerSecSquared;</a>
-<span class="sourceLineNo">062</span><a id="line.62">  }</a>
-<span class="sourceLineNo">063</span><a id="line.63"></a>
-<span class="sourceLineNo">064</span><a id="line.64">  /**</a>
-<span class="sourceLineNo">065</span><a id="line.65">   * Calculates the feedforward from the gains and velocity setpoint (acceleration is assumed to be</a>
-<span class="sourceLineNo">066</span><a id="line.66">   * zero).</a>
-<span class="sourceLineNo">067</span><a id="line.67">   *</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * @param positionRadians The position (angle) setpoint. This angle should be measured from the</a>
-<span class="sourceLineNo">069</span><a id="line.69">   *     horizontal (i.e. if the provided angle is 0, the arm should be parallel with the floor). If</a>
-<span class="sourceLineNo">070</span><a id="line.70">   *     your encoder does not follow this convention, an offset should be added.</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * @param velocity The velocity setpoint.</a>
-<span class="sourceLineNo">072</span><a id="line.72">   * @return The computed feedforward.</a>
-<span class="sourceLineNo">073</span><a id="line.73">   */</a>
-<span class="sourceLineNo">074</span><a id="line.74">  public double calculate(double positionRadians, double velocity) {</a>
-<span class="sourceLineNo">075</span><a id="line.75">    return calculate(positionRadians, velocity, 0);</a>
-<span class="sourceLineNo">076</span><a id="line.76">  }</a>
-<span class="sourceLineNo">077</span><a id="line.77"></a>
-<span class="sourceLineNo">078</span><a id="line.78">  // Rearranging the main equation from the calculate() method yields the</a>
-<span class="sourceLineNo">079</span><a id="line.79">  // formulas for the methods below:</a>
-<span class="sourceLineNo">080</span><a id="line.80"></a>
-<span class="sourceLineNo">081</span><a id="line.81">  /**</a>
-<span class="sourceLineNo">082</span><a id="line.82">   * Calculates the maximum achievable velocity given a maximum voltage supply, a position, and an</a>
-<span class="sourceLineNo">083</span><a id="line.83">   * acceleration. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
-<span class="sourceLineNo">084</span><a id="line.84">   * profile are simultaneously achievable - enter the acceleration constraint, and this will give</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * you a simultaneously-achievable velocity constraint.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   *</a>
-<span class="sourceLineNo">087</span><a id="line.87">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
-<span class="sourceLineNo">088</span><a id="line.88">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
-<span class="sourceLineNo">089</span><a id="line.89">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
-<span class="sourceLineNo">090</span><a id="line.90">   *     not follow this convention, an offset should be added.</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * @param acceleration The acceleration of the arm.</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * @return The maximum possible velocity at the given acceleration and angle.</a>
-<span class="sourceLineNo">093</span><a id="line.93">   */</a>
-<span class="sourceLineNo">094</span><a id="line.94">  public double maxAchievableVelocity(double maxVoltage, double angle, double acceleration) {</a>
-<span class="sourceLineNo">095</span><a id="line.95">    // Assume max velocity is positive</a>
-<span class="sourceLineNo">096</span><a id="line.96">    return (maxVoltage - ks - Math.cos(angle) * kcos - acceleration * ka) / kv;</a>
-<span class="sourceLineNo">097</span><a id="line.97">  }</a>
-<span class="sourceLineNo">098</span><a id="line.98"></a>
-<span class="sourceLineNo">099</span><a id="line.99">  /**</a>
-<span class="sourceLineNo">100</span><a id="line.100">   * Calculates the minimum achievable velocity given a maximum voltage supply, a position, and an</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * acceleration. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
-<span class="sourceLineNo">102</span><a id="line.102">   * profile are simultaneously achievable - enter the acceleration constraint, and this will give</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * you a simultaneously-achievable velocity constraint.</a>
-<span class="sourceLineNo">104</span><a id="line.104">   *</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
-<span class="sourceLineNo">106</span><a id="line.106">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
-<span class="sourceLineNo">107</span><a id="line.107">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
-<span class="sourceLineNo">108</span><a id="line.108">   *     not follow this convention, an offset should be added.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   * @param acceleration The acceleration of the arm.</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * @return The minimum possible velocity at the given acceleration and angle.</a>
-<span class="sourceLineNo">111</span><a id="line.111">   */</a>
-<span class="sourceLineNo">112</span><a id="line.112">  public double minAchievableVelocity(double maxVoltage, double angle, double acceleration) {</a>
-<span class="sourceLineNo">113</span><a id="line.113">    // Assume min velocity is negative, ks flips sign</a>
-<span class="sourceLineNo">114</span><a id="line.114">    return (-maxVoltage + ks - Math.cos(angle) * kcos - acceleration * ka) / kv;</a>
-<span class="sourceLineNo">115</span><a id="line.115">  }</a>
-<span class="sourceLineNo">116</span><a id="line.116"></a>
-<span class="sourceLineNo">117</span><a id="line.117">  /**</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * Calculates the maximum achievable acceleration given a maximum voltage supply, a position, and</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * profile are simultaneously achievable - enter the velocity constraint, and this will give you a</a>
-<span class="sourceLineNo">121</span><a id="line.121">   * simultaneously-achievable acceleration constraint.</a>
-<span class="sourceLineNo">122</span><a id="line.122">   *</a>
-<span class="sourceLineNo">123</span><a id="line.123">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
-<span class="sourceLineNo">124</span><a id="line.124">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
-<span class="sourceLineNo">125</span><a id="line.125">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
-<span class="sourceLineNo">126</span><a id="line.126">   *     not follow this convention, an offset should be added.</a>
-<span class="sourceLineNo">127</span><a id="line.127">   * @param velocity The velocity of the arm.</a>
-<span class="sourceLineNo">128</span><a id="line.128">   * @return The maximum possible acceleration at the given velocity.</a>
-<span class="sourceLineNo">129</span><a id="line.129">   */</a>
-<span class="sourceLineNo">130</span><a id="line.130">  public double maxAchievableAcceleration(double maxVoltage, double angle, double velocity) {</a>
-<span class="sourceLineNo">131</span><a id="line.131">    return (maxVoltage - ks * Math.signum(velocity) - Math.cos(angle) * kcos - velocity * kv) / ka;</a>
-<span class="sourceLineNo">132</span><a id="line.132">  }</a>
-<span class="sourceLineNo">133</span><a id="line.133"></a>
-<span class="sourceLineNo">134</span><a id="line.134">  /**</a>
-<span class="sourceLineNo">135</span><a id="line.135">   * Calculates the minimum achievable acceleration given a maximum voltage supply, a position, and</a>
-<span class="sourceLineNo">136</span><a id="line.136">   * a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * profile are simultaneously achievable - enter the velocity constraint, and this will give you a</a>
-<span class="sourceLineNo">138</span><a id="line.138">   * simultaneously-achievable acceleration constraint.</a>
-<span class="sourceLineNo">139</span><a id="line.139">   *</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
-<span class="sourceLineNo">141</span><a id="line.141">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
-<span class="sourceLineNo">142</span><a id="line.142">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
-<span class="sourceLineNo">143</span><a id="line.143">   *     not follow this convention, an offset should be added.</a>
-<span class="sourceLineNo">144</span><a id="line.144">   * @param velocity The velocity of the arm.</a>
-<span class="sourceLineNo">145</span><a id="line.145">   * @return The minimum possible acceleration at the given velocity.</a>
-<span class="sourceLineNo">146</span><a id="line.146">   */</a>
-<span class="sourceLineNo">147</span><a id="line.147">  public double minAchievableAcceleration(double maxVoltage, double angle, double velocity) {</a>
-<span class="sourceLineNo">148</span><a id="line.148">    return maxAchievableAcceleration(-maxVoltage, angle, velocity);</a>
-<span class="sourceLineNo">149</span><a id="line.149">  }</a>
-<span class="sourceLineNo">150</span><a id="line.150">}</a>
+<span class="sourceLineNo">011</span><a id="line.11">public class ArmFeedforward {</a>
+<span class="sourceLineNo">012</span><a id="line.12">  public final double ks;</a>
+<span class="sourceLineNo">013</span><a id="line.13">  public final double kcos;</a>
+<span class="sourceLineNo">014</span><a id="line.14">  public final double kv;</a>
+<span class="sourceLineNo">015</span><a id="line.15">  public final double ka;</a>
+<span class="sourceLineNo">016</span><a id="line.16"></a>
+<span class="sourceLineNo">017</span><a id="line.17">  /**</a>
+<span class="sourceLineNo">018</span><a id="line.18">   * Creates a new ArmFeedforward with the specified gains. Units of the gain values will dictate</a>
+<span class="sourceLineNo">019</span><a id="line.19">   * units of the computed feedforward.</a>
+<span class="sourceLineNo">020</span><a id="line.20">   *</a>
+<span class="sourceLineNo">021</span><a id="line.21">   * @param ks The static gain.</a>
+<span class="sourceLineNo">022</span><a id="line.22">   * @param kcos The gravity gain.</a>
+<span class="sourceLineNo">023</span><a id="line.23">   * @param kv The velocity gain.</a>
+<span class="sourceLineNo">024</span><a id="line.24">   * @param ka The acceleration gain.</a>
+<span class="sourceLineNo">025</span><a id="line.25">   */</a>
+<span class="sourceLineNo">026</span><a id="line.26">  public ArmFeedforward(double ks, double kcos, double kv, double ka) {</a>
+<span class="sourceLineNo">027</span><a id="line.27">    this.ks = ks;</a>
+<span class="sourceLineNo">028</span><a id="line.28">    this.kcos = kcos;</a>
+<span class="sourceLineNo">029</span><a id="line.29">    this.kv = kv;</a>
+<span class="sourceLineNo">030</span><a id="line.30">    this.ka = ka;</a>
+<span class="sourceLineNo">031</span><a id="line.31">  }</a>
+<span class="sourceLineNo">032</span><a id="line.32"></a>
+<span class="sourceLineNo">033</span><a id="line.33">  /**</a>
+<span class="sourceLineNo">034</span><a id="line.34">   * Creates a new ArmFeedforward with the specified gains. Acceleration gain is defaulted to zero.</a>
+<span class="sourceLineNo">035</span><a id="line.35">   * Units of the gain values will dictate units of the computed feedforward.</a>
+<span class="sourceLineNo">036</span><a id="line.36">   *</a>
+<span class="sourceLineNo">037</span><a id="line.37">   * @param ks The static gain.</a>
+<span class="sourceLineNo">038</span><a id="line.38">   * @param kcos The gravity gain.</a>
+<span class="sourceLineNo">039</span><a id="line.39">   * @param kv The velocity gain.</a>
+<span class="sourceLineNo">040</span><a id="line.40">   */</a>
+<span class="sourceLineNo">041</span><a id="line.41">  public ArmFeedforward(double ks, double kcos, double kv) {</a>
+<span class="sourceLineNo">042</span><a id="line.42">    this(ks, kcos, kv, 0);</a>
+<span class="sourceLineNo">043</span><a id="line.43">  }</a>
+<span class="sourceLineNo">044</span><a id="line.44"></a>
+<span class="sourceLineNo">045</span><a id="line.45">  /**</a>
+<span class="sourceLineNo">046</span><a id="line.46">   * Calculates the feedforward from the gains and setpoints.</a>
+<span class="sourceLineNo">047</span><a id="line.47">   *</a>
+<span class="sourceLineNo">048</span><a id="line.48">   * @param positionRadians The position (angle) setpoint. This angle should be measured from the</a>
+<span class="sourceLineNo">049</span><a id="line.49">   *     horizontal (i.e. if the provided angle is 0, the arm should be parallel with the floor). If</a>
+<span class="sourceLineNo">050</span><a id="line.50">   *     your encoder does not follow this convention, an offset should be added.</a>
+<span class="sourceLineNo">051</span><a id="line.51">   * @param velocityRadPerSec The velocity setpoint.</a>
+<span class="sourceLineNo">052</span><a id="line.52">   * @param accelRadPerSecSquared The acceleration setpoint.</a>
+<span class="sourceLineNo">053</span><a id="line.53">   * @return The computed feedforward.</a>
+<span class="sourceLineNo">054</span><a id="line.54">   */</a>
+<span class="sourceLineNo">055</span><a id="line.55">  public double calculate(</a>
+<span class="sourceLineNo">056</span><a id="line.56">      double positionRadians, double velocityRadPerSec, double accelRadPerSecSquared) {</a>
+<span class="sourceLineNo">057</span><a id="line.57">    return ks * Math.signum(velocityRadPerSec)</a>
+<span class="sourceLineNo">058</span><a id="line.58">        + kcos * Math.cos(positionRadians)</a>
+<span class="sourceLineNo">059</span><a id="line.59">        + kv * velocityRadPerSec</a>
+<span class="sourceLineNo">060</span><a id="line.60">        + ka * accelRadPerSecSquared;</a>
+<span class="sourceLineNo">061</span><a id="line.61">  }</a>
+<span class="sourceLineNo">062</span><a id="line.62"></a>
+<span class="sourceLineNo">063</span><a id="line.63">  /**</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * Calculates the feedforward from the gains and velocity setpoint (acceleration is assumed to be</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * zero).</a>
+<span class="sourceLineNo">066</span><a id="line.66">   *</a>
+<span class="sourceLineNo">067</span><a id="line.67">   * @param positionRadians The position (angle) setpoint. This angle should be measured from the</a>
+<span class="sourceLineNo">068</span><a id="line.68">   *     horizontal (i.e. if the provided angle is 0, the arm should be parallel with the floor). If</a>
+<span class="sourceLineNo">069</span><a id="line.69">   *     your encoder does not follow this convention, an offset should be added.</a>
+<span class="sourceLineNo">070</span><a id="line.70">   * @param velocity The velocity setpoint.</a>
+<span class="sourceLineNo">071</span><a id="line.71">   * @return The computed feedforward.</a>
+<span class="sourceLineNo">072</span><a id="line.72">   */</a>
+<span class="sourceLineNo">073</span><a id="line.73">  public double calculate(double positionRadians, double velocity) {</a>
+<span class="sourceLineNo">074</span><a id="line.74">    return calculate(positionRadians, velocity, 0);</a>
+<span class="sourceLineNo">075</span><a id="line.75">  }</a>
+<span class="sourceLineNo">076</span><a id="line.76"></a>
+<span class="sourceLineNo">077</span><a id="line.77">  // Rearranging the main equation from the calculate() method yields the</a>
+<span class="sourceLineNo">078</span><a id="line.78">  // formulas for the methods below:</a>
+<span class="sourceLineNo">079</span><a id="line.79"></a>
+<span class="sourceLineNo">080</span><a id="line.80">  /**</a>
+<span class="sourceLineNo">081</span><a id="line.81">   * Calculates the maximum achievable velocity given a maximum voltage supply, a position, and an</a>
+<span class="sourceLineNo">082</span><a id="line.82">   * acceleration. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
+<span class="sourceLineNo">083</span><a id="line.83">   * profile are simultaneously achievable - enter the acceleration constraint, and this will give</a>
+<span class="sourceLineNo">084</span><a id="line.84">   * you a simultaneously-achievable velocity constraint.</a>
+<span class="sourceLineNo">085</span><a id="line.85">   *</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
+<span class="sourceLineNo">087</span><a id="line.87">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
+<span class="sourceLineNo">088</span><a id="line.88">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
+<span class="sourceLineNo">089</span><a id="line.89">   *     not follow this convention, an offset should be added.</a>
+<span class="sourceLineNo">090</span><a id="line.90">   * @param acceleration The acceleration of the arm.</a>
+<span class="sourceLineNo">091</span><a id="line.91">   * @return The maximum possible velocity at the given acceleration and angle.</a>
+<span class="sourceLineNo">092</span><a id="line.92">   */</a>
+<span class="sourceLineNo">093</span><a id="line.93">  public double maxAchievableVelocity(double maxVoltage, double angle, double acceleration) {</a>
+<span class="sourceLineNo">094</span><a id="line.94">    // Assume max velocity is positive</a>
+<span class="sourceLineNo">095</span><a id="line.95">    return (maxVoltage - ks - Math.cos(angle) * kcos - acceleration * ka) / kv;</a>
+<span class="sourceLineNo">096</span><a id="line.96">  }</a>
+<span class="sourceLineNo">097</span><a id="line.97"></a>
+<span class="sourceLineNo">098</span><a id="line.98">  /**</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * Calculates the minimum achievable velocity given a maximum voltage supply, a position, and an</a>
+<span class="sourceLineNo">100</span><a id="line.100">   * acceleration. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
+<span class="sourceLineNo">101</span><a id="line.101">   * profile are simultaneously achievable - enter the acceleration constraint, and this will give</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * you a simultaneously-achievable velocity constraint.</a>
+<span class="sourceLineNo">103</span><a id="line.103">   *</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
+<span class="sourceLineNo">106</span><a id="line.106">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
+<span class="sourceLineNo">107</span><a id="line.107">   *     not follow this convention, an offset should be added.</a>
+<span class="sourceLineNo">108</span><a id="line.108">   * @param acceleration The acceleration of the arm.</a>
+<span class="sourceLineNo">109</span><a id="line.109">   * @return The minimum possible velocity at the given acceleration and angle.</a>
+<span class="sourceLineNo">110</span><a id="line.110">   */</a>
+<span class="sourceLineNo">111</span><a id="line.111">  public double minAchievableVelocity(double maxVoltage, double angle, double acceleration) {</a>
+<span class="sourceLineNo">112</span><a id="line.112">    // Assume min velocity is negative, ks flips sign</a>
+<span class="sourceLineNo">113</span><a id="line.113">    return (-maxVoltage + ks - Math.cos(angle) * kcos - acceleration * ka) / kv;</a>
+<span class="sourceLineNo">114</span><a id="line.114">  }</a>
+<span class="sourceLineNo">115</span><a id="line.115"></a>
+<span class="sourceLineNo">116</span><a id="line.116">  /**</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * Calculates the maximum achievable acceleration given a maximum voltage supply, a position, and</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * profile are simultaneously achievable - enter the velocity constraint, and this will give you a</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * simultaneously-achievable acceleration constraint.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   *</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
+<span class="sourceLineNo">124</span><a id="line.124">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
+<span class="sourceLineNo">125</span><a id="line.125">   *     not follow this convention, an offset should be added.</a>
+<span class="sourceLineNo">126</span><a id="line.126">   * @param velocity The velocity of the arm.</a>
+<span class="sourceLineNo">127</span><a id="line.127">   * @return The maximum possible acceleration at the given velocity.</a>
+<span class="sourceLineNo">128</span><a id="line.128">   */</a>
+<span class="sourceLineNo">129</span><a id="line.129">  public double maxAchievableAcceleration(double maxVoltage, double angle, double velocity) {</a>
+<span class="sourceLineNo">130</span><a id="line.130">    return (maxVoltage - ks * Math.signum(velocity) - Math.cos(angle) * kcos - velocity * kv) / ka;</a>
+<span class="sourceLineNo">131</span><a id="line.131">  }</a>
+<span class="sourceLineNo">132</span><a id="line.132"></a>
+<span class="sourceLineNo">133</span><a id="line.133">  /**</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * Calculates the minimum achievable acceleration given a maximum voltage supply, a position, and</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * a velocity. Useful for ensuring that velocity and acceleration constraints for a trapezoidal</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * profile are simultaneously achievable - enter the velocity constraint, and this will give you a</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * simultaneously-achievable acceleration constraint.</a>
+<span class="sourceLineNo">138</span><a id="line.138">   *</a>
+<span class="sourceLineNo">139</span><a id="line.139">   * @param maxVoltage The maximum voltage that can be supplied to the arm.</a>
+<span class="sourceLineNo">140</span><a id="line.140">   * @param angle The angle of the arm. This angle should be measured from the horizontal (i.e. if</a>
+<span class="sourceLineNo">141</span><a id="line.141">   *     the provided angle is 0, the arm should be parallel with the floor). If your encoder does</a>
+<span class="sourceLineNo">142</span><a id="line.142">   *     not follow this convention, an offset should be added.</a>
+<span class="sourceLineNo">143</span><a id="line.143">   * @param velocity The velocity of the arm.</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * @return The minimum possible acceleration at the given velocity.</a>
+<span class="sourceLineNo">145</span><a id="line.145">   */</a>
+<span class="sourceLineNo">146</span><a id="line.146">  public double minAchievableAcceleration(double maxVoltage, double angle, double velocity) {</a>
+<span class="sourceLineNo">147</span><a id="line.147">    return maxAchievableAcceleration(-maxVoltage, angle, velocity);</a>
+<span class="sourceLineNo">148</span><a id="line.148">  }</a>
+<span class="sourceLineNo">149</span><a id="line.149">}</a>
 
 
 

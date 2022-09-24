@@ -19,175 +19,174 @@
 <span class="sourceLineNo">007</span><a id="line.7">/**</a>
 <span class="sourceLineNo">008</span><a id="line.8"> * JNI wrapper for library &lt;b&gt;FRC_NetworkCommunication&lt;/b&gt;&lt;br&gt;.</a>
 <span class="sourceLineNo">009</span><a id="line.9"> */</a>
-<span class="sourceLineNo">010</span><a id="line.10">@SuppressWarnings({"MethodName", "LineLength"})</a>
-<span class="sourceLineNo">011</span><a id="line.11">public class FRCNetComm {</a>
-<span class="sourceLineNo">012</span><a id="line.12">  /**</a>
-<span class="sourceLineNo">013</span><a id="line.13">   * Resource type from UsageReporting.</a>
-<span class="sourceLineNo">014</span><a id="line.14">   */</a>
-<span class="sourceLineNo">015</span><a id="line.15">  @SuppressWarnings("TypeName")</a>
-<span class="sourceLineNo">016</span><a id="line.16">  public static final class tResourceType {</a>
-<span class="sourceLineNo">017</span><a id="line.17">    private tResourceType() {</a>
-<span class="sourceLineNo">018</span><a id="line.18">    }</a>
-<span class="sourceLineNo">019</span><a id="line.19"></a>
-<span class="sourceLineNo">020</span><a id="line.20">    public static final int kResourceType_Controller = 0;</a>
-<span class="sourceLineNo">021</span><a id="line.21">    public static final int kResourceType_Module = 1;</a>
-<span class="sourceLineNo">022</span><a id="line.22">    public static final int kResourceType_Language = 2;</a>
-<span class="sourceLineNo">023</span><a id="line.23">    public static final int kResourceType_CANPlugin = 3;</a>
-<span class="sourceLineNo">024</span><a id="line.24">    public static final int kResourceType_Accelerometer = 4;</a>
-<span class="sourceLineNo">025</span><a id="line.25">    public static final int kResourceType_ADXL345 = 5;</a>
-<span class="sourceLineNo">026</span><a id="line.26">    public static final int kResourceType_AnalogChannel = 6;</a>
-<span class="sourceLineNo">027</span><a id="line.27">    public static final int kResourceType_AnalogTrigger = 7;</a>
-<span class="sourceLineNo">028</span><a id="line.28">    public static final int kResourceType_AnalogTriggerOutput = 8;</a>
-<span class="sourceLineNo">029</span><a id="line.29">    public static final int kResourceType_CANJaguar = 9;</a>
-<span class="sourceLineNo">030</span><a id="line.30">    public static final int kResourceType_Compressor = 10;</a>
-<span class="sourceLineNo">031</span><a id="line.31">    public static final int kResourceType_Counter = 11;</a>
-<span class="sourceLineNo">032</span><a id="line.32">    public static final int kResourceType_Dashboard = 12;</a>
-<span class="sourceLineNo">033</span><a id="line.33">    public static final int kResourceType_DigitalInput = 13;</a>
-<span class="sourceLineNo">034</span><a id="line.34">    public static final int kResourceType_DigitalOutput = 14;</a>
-<span class="sourceLineNo">035</span><a id="line.35">    public static final int kResourceType_DriverStationCIO = 15;</a>
-<span class="sourceLineNo">036</span><a id="line.36">    public static final int kResourceType_DriverStationEIO = 16;</a>
-<span class="sourceLineNo">037</span><a id="line.37">    public static final int kResourceType_DriverStationLCD = 17;</a>
-<span class="sourceLineNo">038</span><a id="line.38">    public static final int kResourceType_Encoder = 18;</a>
-<span class="sourceLineNo">039</span><a id="line.39">    public static final int kResourceType_GearTooth = 19;</a>
-<span class="sourceLineNo">040</span><a id="line.40">    public static final int kResourceType_Gyro = 20;</a>
-<span class="sourceLineNo">041</span><a id="line.41">    public static final int kResourceType_I2C = 21;</a>
-<span class="sourceLineNo">042</span><a id="line.42">    public static final int kResourceType_Framework = 22;</a>
-<span class="sourceLineNo">043</span><a id="line.43">    public static final int kResourceType_Jaguar = 23;</a>
-<span class="sourceLineNo">044</span><a id="line.44">    public static final int kResourceType_Joystick = 24;</a>
-<span class="sourceLineNo">045</span><a id="line.45">    public static final int kResourceType_Kinect = 25;</a>
-<span class="sourceLineNo">046</span><a id="line.46">    public static final int kResourceType_KinectStick = 26;</a>
-<span class="sourceLineNo">047</span><a id="line.47">    public static final int kResourceType_PIDController = 27;</a>
-<span class="sourceLineNo">048</span><a id="line.48">    public static final int kResourceType_Preferences = 28;</a>
-<span class="sourceLineNo">049</span><a id="line.49">    public static final int kResourceType_PWM = 29;</a>
-<span class="sourceLineNo">050</span><a id="line.50">    public static final int kResourceType_Relay = 30;</a>
-<span class="sourceLineNo">051</span><a id="line.51">    public static final int kResourceType_RobotDrive = 31;</a>
-<span class="sourceLineNo">052</span><a id="line.52">    public static final int kResourceType_SerialPort = 32;</a>
-<span class="sourceLineNo">053</span><a id="line.53">    public static final int kResourceType_Servo = 33;</a>
-<span class="sourceLineNo">054</span><a id="line.54">    public static final int kResourceType_Solenoid = 34;</a>
-<span class="sourceLineNo">055</span><a id="line.55">    public static final int kResourceType_SPI = 35;</a>
-<span class="sourceLineNo">056</span><a id="line.56">    public static final int kResourceType_Task = 36;</a>
-<span class="sourceLineNo">057</span><a id="line.57">    public static final int kResourceType_Ultrasonic = 37;</a>
-<span class="sourceLineNo">058</span><a id="line.58">    public static final int kResourceType_Victor = 38;</a>
-<span class="sourceLineNo">059</span><a id="line.59">    public static final int kResourceType_Button = 39;</a>
-<span class="sourceLineNo">060</span><a id="line.60">    public static final int kResourceType_Command = 40;</a>
-<span class="sourceLineNo">061</span><a id="line.61">    public static final int kResourceType_AxisCamera = 41;</a>
-<span class="sourceLineNo">062</span><a id="line.62">    public static final int kResourceType_PCVideoServer = 42;</a>
-<span class="sourceLineNo">063</span><a id="line.63">    public static final int kResourceType_SmartDashboard = 43;</a>
-<span class="sourceLineNo">064</span><a id="line.64">    public static final int kResourceType_Talon = 44;</a>
-<span class="sourceLineNo">065</span><a id="line.65">    public static final int kResourceType_HiTechnicColorSensor = 45;</a>
-<span class="sourceLineNo">066</span><a id="line.66">    public static final int kResourceType_HiTechnicAccel = 46;</a>
-<span class="sourceLineNo">067</span><a id="line.67">    public static final int kResourceType_HiTechnicCompass = 47;</a>
-<span class="sourceLineNo">068</span><a id="line.68">    public static final int kResourceType_SRF08 = 48;</a>
-<span class="sourceLineNo">069</span><a id="line.69">    public static final int kResourceType_AnalogOutput = 49;</a>
-<span class="sourceLineNo">070</span><a id="line.70">    public static final int kResourceType_VictorSP = 50;</a>
-<span class="sourceLineNo">071</span><a id="line.71">    public static final int kResourceType_PWMTalonSRX = 51;</a>
-<span class="sourceLineNo">072</span><a id="line.72">    public static final int kResourceType_CANTalonSRX = 52;</a>
-<span class="sourceLineNo">073</span><a id="line.73">    public static final int kResourceType_ADXL362 = 53;</a>
-<span class="sourceLineNo">074</span><a id="line.74">    public static final int kResourceType_ADXRS450 = 54;</a>
-<span class="sourceLineNo">075</span><a id="line.75">    public static final int kResourceType_RevSPARK = 55;</a>
-<span class="sourceLineNo">076</span><a id="line.76">    public static final int kResourceType_MindsensorsSD540 = 56;</a>
-<span class="sourceLineNo">077</span><a id="line.77">    public static final int kResourceType_DigitalGlitchFilter = 57;</a>
-<span class="sourceLineNo">078</span><a id="line.78">    public static final int kResourceType_ADIS16448 = 58;</a>
-<span class="sourceLineNo">079</span><a id="line.79">    public static final int kResourceType_PDP = 59;</a>
-<span class="sourceLineNo">080</span><a id="line.80">    public static final int kResourceType_PCM = 60;</a>
-<span class="sourceLineNo">081</span><a id="line.81">    public static final int kResourceType_PigeonIMU = 61;</a>
-<span class="sourceLineNo">082</span><a id="line.82">    public static final int kResourceType_NidecBrushless = 62;</a>
-<span class="sourceLineNo">083</span><a id="line.83">    public static final int kResourceType_CANifier = 63;</a>
-<span class="sourceLineNo">084</span><a id="line.84">    public static final int kResourceType_TalonFX = 64;</a>
-<span class="sourceLineNo">085</span><a id="line.85">    public static final int kResourceType_CTRE_future1 = 65;</a>
-<span class="sourceLineNo">086</span><a id="line.86">    public static final int kResourceType_CTRE_future2 = 66;</a>
-<span class="sourceLineNo">087</span><a id="line.87">    public static final int kResourceType_CTRE_future3 = 67;</a>
-<span class="sourceLineNo">088</span><a id="line.88">    public static final int kResourceType_CTRE_future4 = 68;</a>
-<span class="sourceLineNo">089</span><a id="line.89">    public static final int kResourceType_CTRE_future5 = 69;</a>
-<span class="sourceLineNo">090</span><a id="line.90">    public static final int kResourceType_CTRE_future6 = 70;</a>
-<span class="sourceLineNo">091</span><a id="line.91">    public static final int kResourceType_LinearFilter = 71;</a>
-<span class="sourceLineNo">092</span><a id="line.92">    public static final int kResourceType_XboxController = 72;</a>
-<span class="sourceLineNo">093</span><a id="line.93">    public static final int kResourceType_UsbCamera = 73;</a>
-<span class="sourceLineNo">094</span><a id="line.94">    public static final int kResourceType_NavX = 74;</a>
-<span class="sourceLineNo">095</span><a id="line.95">    public static final int kResourceType_Pixy = 75;</a>
-<span class="sourceLineNo">096</span><a id="line.96">    public static final int kResourceType_Pixy2 = 76;</a>
-<span class="sourceLineNo">097</span><a id="line.97">    public static final int kResourceType_ScanseSweep = 77;</a>
-<span class="sourceLineNo">098</span><a id="line.98">    public static final int kResourceType_Shuffleboard = 78;</a>
-<span class="sourceLineNo">099</span><a id="line.99">    public static final int kResourceType_CAN = 79;</a>
-<span class="sourceLineNo">100</span><a id="line.100">    public static final int kResourceType_DigilentDMC60 = 80;</a>
-<span class="sourceLineNo">101</span><a id="line.101">    public static final int kResourceType_PWMVictorSPX = 81;</a>
-<span class="sourceLineNo">102</span><a id="line.102">    public static final int kResourceType_RevSparkMaxPWM = 82;</a>
-<span class="sourceLineNo">103</span><a id="line.103">    public static final int kResourceType_RevSparkMaxCAN = 83;</a>
-<span class="sourceLineNo">104</span><a id="line.104">    public static final int kResourceType_ADIS16470 = 84;</a>
-<span class="sourceLineNo">105</span><a id="line.105">    public static final int kResourceType_PIDController2 = 85;</a>
-<span class="sourceLineNo">106</span><a id="line.106">    public static final int kResourceType_ProfiledPIDController = 86;</a>
-<span class="sourceLineNo">107</span><a id="line.107">    public static final int kResourceType_Kinematics = 87;</a>
-<span class="sourceLineNo">108</span><a id="line.108">    public static final int kResourceType_Odometry = 88;</a>
-<span class="sourceLineNo">109</span><a id="line.109">    public static final int kResourceType_Units = 89;</a>
-<span class="sourceLineNo">110</span><a id="line.110">    public static final int kResourceType_TrapezoidProfile = 90;</a>
-<span class="sourceLineNo">111</span><a id="line.111">    public static final int kResourceType_DutyCycle = 91;</a>
-<span class="sourceLineNo">112</span><a id="line.112">    public static final int kResourceType_AddressableLEDs = 92;</a>
-<span class="sourceLineNo">113</span><a id="line.113">    public static final int kResourceType_FusionVenom = 93;</a>
-<span class="sourceLineNo">114</span><a id="line.114">    public static final int kResourceType_PS4Controller = 94;</a>
-<span class="sourceLineNo">115</span><a id="line.115">  }</a>
-<span class="sourceLineNo">116</span><a id="line.116"></a>
-<span class="sourceLineNo">117</span><a id="line.117">  /**</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * Instances from UsageReporting.</a>
-<span class="sourceLineNo">119</span><a id="line.119">   */</a>
-<span class="sourceLineNo">120</span><a id="line.120">  @SuppressWarnings("TypeName")</a>
-<span class="sourceLineNo">121</span><a id="line.121">  public static final class tInstances {</a>
-<span class="sourceLineNo">122</span><a id="line.122">    private tInstances() {</a>
-<span class="sourceLineNo">123</span><a id="line.123">    }</a>
-<span class="sourceLineNo">124</span><a id="line.124"></a>
-<span class="sourceLineNo">125</span><a id="line.125">    public static final int kLanguage_LabVIEW = 1;</a>
-<span class="sourceLineNo">126</span><a id="line.126">    public static final int kLanguage_CPlusPlus = 2;</a>
-<span class="sourceLineNo">127</span><a id="line.127">    public static final int kLanguage_Java = 3;</a>
-<span class="sourceLineNo">128</span><a id="line.128">    public static final int kLanguage_Python = 4;</a>
-<span class="sourceLineNo">129</span><a id="line.129">    public static final int kLanguage_DotNet = 5;</a>
-<span class="sourceLineNo">130</span><a id="line.130">    public static final int kLanguage_Kotlin = 6;</a>
-<span class="sourceLineNo">131</span><a id="line.131">    public static final int kCANPlugin_BlackJagBridge = 1;</a>
-<span class="sourceLineNo">132</span><a id="line.132">    public static final int kCANPlugin_2CAN = 2;</a>
-<span class="sourceLineNo">133</span><a id="line.133">    public static final int kFramework_Iterative = 1;</a>
-<span class="sourceLineNo">134</span><a id="line.134">    public static final int kFramework_Simple = 2;</a>
-<span class="sourceLineNo">135</span><a id="line.135">    public static final int kFramework_CommandControl = 3;</a>
-<span class="sourceLineNo">136</span><a id="line.136">    public static final int kFramework_Timed = 4;</a>
-<span class="sourceLineNo">137</span><a id="line.137">    public static final int kFramework_ROS = 5;</a>
-<span class="sourceLineNo">138</span><a id="line.138">    public static final int kFramework_RobotBuilder = 6;</a>
-<span class="sourceLineNo">139</span><a id="line.139">    public static final int kRobotDrive_ArcadeStandard = 1;</a>
-<span class="sourceLineNo">140</span><a id="line.140">    public static final int kRobotDrive_ArcadeButtonSpin = 2;</a>
-<span class="sourceLineNo">141</span><a id="line.141">    public static final int kRobotDrive_ArcadeRatioCurve = 3;</a>
-<span class="sourceLineNo">142</span><a id="line.142">    public static final int kRobotDrive_Tank = 4;</a>
-<span class="sourceLineNo">143</span><a id="line.143">    public static final int kRobotDrive_MecanumPolar = 5;</a>
-<span class="sourceLineNo">144</span><a id="line.144">    public static final int kRobotDrive_MecanumCartesian = 6;</a>
-<span class="sourceLineNo">145</span><a id="line.145">    public static final int kRobotDrive2_DifferentialArcade = 7;</a>
-<span class="sourceLineNo">146</span><a id="line.146">    public static final int kRobotDrive2_DifferentialTank = 8;</a>
-<span class="sourceLineNo">147</span><a id="line.147">    public static final int kRobotDrive2_DifferentialCurvature = 9;</a>
-<span class="sourceLineNo">148</span><a id="line.148">    public static final int kRobotDrive2_MecanumCartesian = 10;</a>
-<span class="sourceLineNo">149</span><a id="line.149">    public static final int kRobotDrive2_MecanumPolar = 11;</a>
-<span class="sourceLineNo">150</span><a id="line.150">    public static final int kRobotDrive2_KilloughCartesian = 12;</a>
-<span class="sourceLineNo">151</span><a id="line.151">    public static final int kRobotDrive2_KilloughPolar = 13;</a>
-<span class="sourceLineNo">152</span><a id="line.152">    public static final int kDriverStationCIO_Analog = 1;</a>
-<span class="sourceLineNo">153</span><a id="line.153">    public static final int kDriverStationCIO_DigitalIn = 2;</a>
-<span class="sourceLineNo">154</span><a id="line.154">    public static final int kDriverStationCIO_DigitalOut = 3;</a>
-<span class="sourceLineNo">155</span><a id="line.155">    public static final int kDriverStationEIO_Acceleration = 1;</a>
-<span class="sourceLineNo">156</span><a id="line.156">    public static final int kDriverStationEIO_AnalogIn = 2;</a>
-<span class="sourceLineNo">157</span><a id="line.157">    public static final int kDriverStationEIO_AnalogOut = 3;</a>
-<span class="sourceLineNo">158</span><a id="line.158">    public static final int kDriverStationEIO_Button = 4;</a>
-<span class="sourceLineNo">159</span><a id="line.159">    public static final int kDriverStationEIO_LED = 5;</a>
-<span class="sourceLineNo">160</span><a id="line.160">    public static final int kDriverStationEIO_DigitalIn = 6;</a>
-<span class="sourceLineNo">161</span><a id="line.161">    public static final int kDriverStationEIO_DigitalOut = 7;</a>
-<span class="sourceLineNo">162</span><a id="line.162">    public static final int kDriverStationEIO_FixedDigitalOut = 8;</a>
-<span class="sourceLineNo">163</span><a id="line.163">    public static final int kDriverStationEIO_PWM = 9;</a>
-<span class="sourceLineNo">164</span><a id="line.164">    public static final int kDriverStationEIO_Encoder = 10;</a>
-<span class="sourceLineNo">165</span><a id="line.165">    public static final int kDriverStationEIO_TouchSlider = 11;</a>
-<span class="sourceLineNo">166</span><a id="line.166">    public static final int kADXL345_SPI = 1;</a>
-<span class="sourceLineNo">167</span><a id="line.167">    public static final int kADXL345_I2C = 2;</a>
-<span class="sourceLineNo">168</span><a id="line.168">    public static final int kCommand_Scheduler = 1;</a>
-<span class="sourceLineNo">169</span><a id="line.169">    public static final int kCommand2_Scheduler = 2;</a>
-<span class="sourceLineNo">170</span><a id="line.170">    public static final int kSmartDashboard_Instance = 1;</a>
-<span class="sourceLineNo">171</span><a id="line.171">    public static final int kKinematics_DifferentialDrive = 1;</a>
-<span class="sourceLineNo">172</span><a id="line.172">    public static final int kKinematics_MecanumDrive = 2;</a>
-<span class="sourceLineNo">173</span><a id="line.173">    public static final int kKinematics_SwerveDrive = 3;</a>
-<span class="sourceLineNo">174</span><a id="line.174">    public static final int kOdometry_DifferentialDrive = 1;</a>
-<span class="sourceLineNo">175</span><a id="line.175">    public static final int kOdometry_MecanumDrive = 2;</a>
-<span class="sourceLineNo">176</span><a id="line.176">    public static final int kOdometry_SwerveDrive = 3;</a>
-<span class="sourceLineNo">177</span><a id="line.177">  }</a>
-<span class="sourceLineNo">178</span><a id="line.178">}</a>
+<span class="sourceLineNo">010</span><a id="line.10">public class FRCNetComm {</a>
+<span class="sourceLineNo">011</span><a id="line.11">  /**</a>
+<span class="sourceLineNo">012</span><a id="line.12">   * Resource type from UsageReporting.</a>
+<span class="sourceLineNo">013</span><a id="line.13">   */</a>
+<span class="sourceLineNo">014</span><a id="line.14">  @SuppressWarnings("TypeName")</a>
+<span class="sourceLineNo">015</span><a id="line.15">  public static final class tResourceType {</a>
+<span class="sourceLineNo">016</span><a id="line.16">    private tResourceType() {</a>
+<span class="sourceLineNo">017</span><a id="line.17">    }</a>
+<span class="sourceLineNo">018</span><a id="line.18"></a>
+<span class="sourceLineNo">019</span><a id="line.19">    public static final int kResourceType_Controller = 0;</a>
+<span class="sourceLineNo">020</span><a id="line.20">    public static final int kResourceType_Module = 1;</a>
+<span class="sourceLineNo">021</span><a id="line.21">    public static final int kResourceType_Language = 2;</a>
+<span class="sourceLineNo">022</span><a id="line.22">    public static final int kResourceType_CANPlugin = 3;</a>
+<span class="sourceLineNo">023</span><a id="line.23">    public static final int kResourceType_Accelerometer = 4;</a>
+<span class="sourceLineNo">024</span><a id="line.24">    public static final int kResourceType_ADXL345 = 5;</a>
+<span class="sourceLineNo">025</span><a id="line.25">    public static final int kResourceType_AnalogChannel = 6;</a>
+<span class="sourceLineNo">026</span><a id="line.26">    public static final int kResourceType_AnalogTrigger = 7;</a>
+<span class="sourceLineNo">027</span><a id="line.27">    public static final int kResourceType_AnalogTriggerOutput = 8;</a>
+<span class="sourceLineNo">028</span><a id="line.28">    public static final int kResourceType_CANJaguar = 9;</a>
+<span class="sourceLineNo">029</span><a id="line.29">    public static final int kResourceType_Compressor = 10;</a>
+<span class="sourceLineNo">030</span><a id="line.30">    public static final int kResourceType_Counter = 11;</a>
+<span class="sourceLineNo">031</span><a id="line.31">    public static final int kResourceType_Dashboard = 12;</a>
+<span class="sourceLineNo">032</span><a id="line.32">    public static final int kResourceType_DigitalInput = 13;</a>
+<span class="sourceLineNo">033</span><a id="line.33">    public static final int kResourceType_DigitalOutput = 14;</a>
+<span class="sourceLineNo">034</span><a id="line.34">    public static final int kResourceType_DriverStationCIO = 15;</a>
+<span class="sourceLineNo">035</span><a id="line.35">    public static final int kResourceType_DriverStationEIO = 16;</a>
+<span class="sourceLineNo">036</span><a id="line.36">    public static final int kResourceType_DriverStationLCD = 17;</a>
+<span class="sourceLineNo">037</span><a id="line.37">    public static final int kResourceType_Encoder = 18;</a>
+<span class="sourceLineNo">038</span><a id="line.38">    public static final int kResourceType_GearTooth = 19;</a>
+<span class="sourceLineNo">039</span><a id="line.39">    public static final int kResourceType_Gyro = 20;</a>
+<span class="sourceLineNo">040</span><a id="line.40">    public static final int kResourceType_I2C = 21;</a>
+<span class="sourceLineNo">041</span><a id="line.41">    public static final int kResourceType_Framework = 22;</a>
+<span class="sourceLineNo">042</span><a id="line.42">    public static final int kResourceType_Jaguar = 23;</a>
+<span class="sourceLineNo">043</span><a id="line.43">    public static final int kResourceType_Joystick = 24;</a>
+<span class="sourceLineNo">044</span><a id="line.44">    public static final int kResourceType_Kinect = 25;</a>
+<span class="sourceLineNo">045</span><a id="line.45">    public static final int kResourceType_KinectStick = 26;</a>
+<span class="sourceLineNo">046</span><a id="line.46">    public static final int kResourceType_PIDController = 27;</a>
+<span class="sourceLineNo">047</span><a id="line.47">    public static final int kResourceType_Preferences = 28;</a>
+<span class="sourceLineNo">048</span><a id="line.48">    public static final int kResourceType_PWM = 29;</a>
+<span class="sourceLineNo">049</span><a id="line.49">    public static final int kResourceType_Relay = 30;</a>
+<span class="sourceLineNo">050</span><a id="line.50">    public static final int kResourceType_RobotDrive = 31;</a>
+<span class="sourceLineNo">051</span><a id="line.51">    public static final int kResourceType_SerialPort = 32;</a>
+<span class="sourceLineNo">052</span><a id="line.52">    public static final int kResourceType_Servo = 33;</a>
+<span class="sourceLineNo">053</span><a id="line.53">    public static final int kResourceType_Solenoid = 34;</a>
+<span class="sourceLineNo">054</span><a id="line.54">    public static final int kResourceType_SPI = 35;</a>
+<span class="sourceLineNo">055</span><a id="line.55">    public static final int kResourceType_Task = 36;</a>
+<span class="sourceLineNo">056</span><a id="line.56">    public static final int kResourceType_Ultrasonic = 37;</a>
+<span class="sourceLineNo">057</span><a id="line.57">    public static final int kResourceType_Victor = 38;</a>
+<span class="sourceLineNo">058</span><a id="line.58">    public static final int kResourceType_Button = 39;</a>
+<span class="sourceLineNo">059</span><a id="line.59">    public static final int kResourceType_Command = 40;</a>
+<span class="sourceLineNo">060</span><a id="line.60">    public static final int kResourceType_AxisCamera = 41;</a>
+<span class="sourceLineNo">061</span><a id="line.61">    public static final int kResourceType_PCVideoServer = 42;</a>
+<span class="sourceLineNo">062</span><a id="line.62">    public static final int kResourceType_SmartDashboard = 43;</a>
+<span class="sourceLineNo">063</span><a id="line.63">    public static final int kResourceType_Talon = 44;</a>
+<span class="sourceLineNo">064</span><a id="line.64">    public static final int kResourceType_HiTechnicColorSensor = 45;</a>
+<span class="sourceLineNo">065</span><a id="line.65">    public static final int kResourceType_HiTechnicAccel = 46;</a>
+<span class="sourceLineNo">066</span><a id="line.66">    public static final int kResourceType_HiTechnicCompass = 47;</a>
+<span class="sourceLineNo">067</span><a id="line.67">    public static final int kResourceType_SRF08 = 48;</a>
+<span class="sourceLineNo">068</span><a id="line.68">    public static final int kResourceType_AnalogOutput = 49;</a>
+<span class="sourceLineNo">069</span><a id="line.69">    public static final int kResourceType_VictorSP = 50;</a>
+<span class="sourceLineNo">070</span><a id="line.70">    public static final int kResourceType_PWMTalonSRX = 51;</a>
+<span class="sourceLineNo">071</span><a id="line.71">    public static final int kResourceType_CANTalonSRX = 52;</a>
+<span class="sourceLineNo">072</span><a id="line.72">    public static final int kResourceType_ADXL362 = 53;</a>
+<span class="sourceLineNo">073</span><a id="line.73">    public static final int kResourceType_ADXRS450 = 54;</a>
+<span class="sourceLineNo">074</span><a id="line.74">    public static final int kResourceType_RevSPARK = 55;</a>
+<span class="sourceLineNo">075</span><a id="line.75">    public static final int kResourceType_MindsensorsSD540 = 56;</a>
+<span class="sourceLineNo">076</span><a id="line.76">    public static final int kResourceType_DigitalGlitchFilter = 57;</a>
+<span class="sourceLineNo">077</span><a id="line.77">    public static final int kResourceType_ADIS16448 = 58;</a>
+<span class="sourceLineNo">078</span><a id="line.78">    public static final int kResourceType_PDP = 59;</a>
+<span class="sourceLineNo">079</span><a id="line.79">    public static final int kResourceType_PCM = 60;</a>
+<span class="sourceLineNo">080</span><a id="line.80">    public static final int kResourceType_PigeonIMU = 61;</a>
+<span class="sourceLineNo">081</span><a id="line.81">    public static final int kResourceType_NidecBrushless = 62;</a>
+<span class="sourceLineNo">082</span><a id="line.82">    public static final int kResourceType_CANifier = 63;</a>
+<span class="sourceLineNo">083</span><a id="line.83">    public static final int kResourceType_TalonFX = 64;</a>
+<span class="sourceLineNo">084</span><a id="line.84">    public static final int kResourceType_CTRE_future1 = 65;</a>
+<span class="sourceLineNo">085</span><a id="line.85">    public static final int kResourceType_CTRE_future2 = 66;</a>
+<span class="sourceLineNo">086</span><a id="line.86">    public static final int kResourceType_CTRE_future3 = 67;</a>
+<span class="sourceLineNo">087</span><a id="line.87">    public static final int kResourceType_CTRE_future4 = 68;</a>
+<span class="sourceLineNo">088</span><a id="line.88">    public static final int kResourceType_CTRE_future5 = 69;</a>
+<span class="sourceLineNo">089</span><a id="line.89">    public static final int kResourceType_CTRE_future6 = 70;</a>
+<span class="sourceLineNo">090</span><a id="line.90">    public static final int kResourceType_LinearFilter = 71;</a>
+<span class="sourceLineNo">091</span><a id="line.91">    public static final int kResourceType_XboxController = 72;</a>
+<span class="sourceLineNo">092</span><a id="line.92">    public static final int kResourceType_UsbCamera = 73;</a>
+<span class="sourceLineNo">093</span><a id="line.93">    public static final int kResourceType_NavX = 74;</a>
+<span class="sourceLineNo">094</span><a id="line.94">    public static final int kResourceType_Pixy = 75;</a>
+<span class="sourceLineNo">095</span><a id="line.95">    public static final int kResourceType_Pixy2 = 76;</a>
+<span class="sourceLineNo">096</span><a id="line.96">    public static final int kResourceType_ScanseSweep = 77;</a>
+<span class="sourceLineNo">097</span><a id="line.97">    public static final int kResourceType_Shuffleboard = 78;</a>
+<span class="sourceLineNo">098</span><a id="line.98">    public static final int kResourceType_CAN = 79;</a>
+<span class="sourceLineNo">099</span><a id="line.99">    public static final int kResourceType_DigilentDMC60 = 80;</a>
+<span class="sourceLineNo">100</span><a id="line.100">    public static final int kResourceType_PWMVictorSPX = 81;</a>
+<span class="sourceLineNo">101</span><a id="line.101">    public static final int kResourceType_RevSparkMaxPWM = 82;</a>
+<span class="sourceLineNo">102</span><a id="line.102">    public static final int kResourceType_RevSparkMaxCAN = 83;</a>
+<span class="sourceLineNo">103</span><a id="line.103">    public static final int kResourceType_ADIS16470 = 84;</a>
+<span class="sourceLineNo">104</span><a id="line.104">    public static final int kResourceType_PIDController2 = 85;</a>
+<span class="sourceLineNo">105</span><a id="line.105">    public static final int kResourceType_ProfiledPIDController = 86;</a>
+<span class="sourceLineNo">106</span><a id="line.106">    public static final int kResourceType_Kinematics = 87;</a>
+<span class="sourceLineNo">107</span><a id="line.107">    public static final int kResourceType_Odometry = 88;</a>
+<span class="sourceLineNo">108</span><a id="line.108">    public static final int kResourceType_Units = 89;</a>
+<span class="sourceLineNo">109</span><a id="line.109">    public static final int kResourceType_TrapezoidProfile = 90;</a>
+<span class="sourceLineNo">110</span><a id="line.110">    public static final int kResourceType_DutyCycle = 91;</a>
+<span class="sourceLineNo">111</span><a id="line.111">    public static final int kResourceType_AddressableLEDs = 92;</a>
+<span class="sourceLineNo">112</span><a id="line.112">    public static final int kResourceType_FusionVenom = 93;</a>
+<span class="sourceLineNo">113</span><a id="line.113">    public static final int kResourceType_PS4Controller = 94;</a>
+<span class="sourceLineNo">114</span><a id="line.114">  }</a>
+<span class="sourceLineNo">115</span><a id="line.115"></a>
+<span class="sourceLineNo">116</span><a id="line.116">  /**</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * Instances from UsageReporting.</a>
+<span class="sourceLineNo">118</span><a id="line.118">   */</a>
+<span class="sourceLineNo">119</span><a id="line.119">  @SuppressWarnings("TypeName")</a>
+<span class="sourceLineNo">120</span><a id="line.120">  public static final class tInstances {</a>
+<span class="sourceLineNo">121</span><a id="line.121">    private tInstances() {</a>
+<span class="sourceLineNo">122</span><a id="line.122">    }</a>
+<span class="sourceLineNo">123</span><a id="line.123"></a>
+<span class="sourceLineNo">124</span><a id="line.124">    public static final int kLanguage_LabVIEW = 1;</a>
+<span class="sourceLineNo">125</span><a id="line.125">    public static final int kLanguage_CPlusPlus = 2;</a>
+<span class="sourceLineNo">126</span><a id="line.126">    public static final int kLanguage_Java = 3;</a>
+<span class="sourceLineNo">127</span><a id="line.127">    public static final int kLanguage_Python = 4;</a>
+<span class="sourceLineNo">128</span><a id="line.128">    public static final int kLanguage_DotNet = 5;</a>
+<span class="sourceLineNo">129</span><a id="line.129">    public static final int kLanguage_Kotlin = 6;</a>
+<span class="sourceLineNo">130</span><a id="line.130">    public static final int kCANPlugin_BlackJagBridge = 1;</a>
+<span class="sourceLineNo">131</span><a id="line.131">    public static final int kCANPlugin_2CAN = 2;</a>
+<span class="sourceLineNo">132</span><a id="line.132">    public static final int kFramework_Iterative = 1;</a>
+<span class="sourceLineNo">133</span><a id="line.133">    public static final int kFramework_Simple = 2;</a>
+<span class="sourceLineNo">134</span><a id="line.134">    public static final int kFramework_CommandControl = 3;</a>
+<span class="sourceLineNo">135</span><a id="line.135">    public static final int kFramework_Timed = 4;</a>
+<span class="sourceLineNo">136</span><a id="line.136">    public static final int kFramework_ROS = 5;</a>
+<span class="sourceLineNo">137</span><a id="line.137">    public static final int kFramework_RobotBuilder = 6;</a>
+<span class="sourceLineNo">138</span><a id="line.138">    public static final int kRobotDrive_ArcadeStandard = 1;</a>
+<span class="sourceLineNo">139</span><a id="line.139">    public static final int kRobotDrive_ArcadeButtonSpin = 2;</a>
+<span class="sourceLineNo">140</span><a id="line.140">    public static final int kRobotDrive_ArcadeRatioCurve = 3;</a>
+<span class="sourceLineNo">141</span><a id="line.141">    public static final int kRobotDrive_Tank = 4;</a>
+<span class="sourceLineNo">142</span><a id="line.142">    public static final int kRobotDrive_MecanumPolar = 5;</a>
+<span class="sourceLineNo">143</span><a id="line.143">    public static final int kRobotDrive_MecanumCartesian = 6;</a>
+<span class="sourceLineNo">144</span><a id="line.144">    public static final int kRobotDrive2_DifferentialArcade = 7;</a>
+<span class="sourceLineNo">145</span><a id="line.145">    public static final int kRobotDrive2_DifferentialTank = 8;</a>
+<span class="sourceLineNo">146</span><a id="line.146">    public static final int kRobotDrive2_DifferentialCurvature = 9;</a>
+<span class="sourceLineNo">147</span><a id="line.147">    public static final int kRobotDrive2_MecanumCartesian = 10;</a>
+<span class="sourceLineNo">148</span><a id="line.148">    public static final int kRobotDrive2_MecanumPolar = 11;</a>
+<span class="sourceLineNo">149</span><a id="line.149">    public static final int kRobotDrive2_KilloughCartesian = 12;</a>
+<span class="sourceLineNo">150</span><a id="line.150">    public static final int kRobotDrive2_KilloughPolar = 13;</a>
+<span class="sourceLineNo">151</span><a id="line.151">    public static final int kDriverStationCIO_Analog = 1;</a>
+<span class="sourceLineNo">152</span><a id="line.152">    public static final int kDriverStationCIO_DigitalIn = 2;</a>
+<span class="sourceLineNo">153</span><a id="line.153">    public static final int kDriverStationCIO_DigitalOut = 3;</a>
+<span class="sourceLineNo">154</span><a id="line.154">    public static final int kDriverStationEIO_Acceleration = 1;</a>
+<span class="sourceLineNo">155</span><a id="line.155">    public static final int kDriverStationEIO_AnalogIn = 2;</a>
+<span class="sourceLineNo">156</span><a id="line.156">    public static final int kDriverStationEIO_AnalogOut = 3;</a>
+<span class="sourceLineNo">157</span><a id="line.157">    public static final int kDriverStationEIO_Button = 4;</a>
+<span class="sourceLineNo">158</span><a id="line.158">    public static final int kDriverStationEIO_LED = 5;</a>
+<span class="sourceLineNo">159</span><a id="line.159">    public static final int kDriverStationEIO_DigitalIn = 6;</a>
+<span class="sourceLineNo">160</span><a id="line.160">    public static final int kDriverStationEIO_DigitalOut = 7;</a>
+<span class="sourceLineNo">161</span><a id="line.161">    public static final int kDriverStationEIO_FixedDigitalOut = 8;</a>
+<span class="sourceLineNo">162</span><a id="line.162">    public static final int kDriverStationEIO_PWM = 9;</a>
+<span class="sourceLineNo">163</span><a id="line.163">    public static final int kDriverStationEIO_Encoder = 10;</a>
+<span class="sourceLineNo">164</span><a id="line.164">    public static final int kDriverStationEIO_TouchSlider = 11;</a>
+<span class="sourceLineNo">165</span><a id="line.165">    public static final int kADXL345_SPI = 1;</a>
+<span class="sourceLineNo">166</span><a id="line.166">    public static final int kADXL345_I2C = 2;</a>
+<span class="sourceLineNo">167</span><a id="line.167">    public static final int kCommand_Scheduler = 1;</a>
+<span class="sourceLineNo">168</span><a id="line.168">    public static final int kCommand2_Scheduler = 2;</a>
+<span class="sourceLineNo">169</span><a id="line.169">    public static final int kSmartDashboard_Instance = 1;</a>
+<span class="sourceLineNo">170</span><a id="line.170">    public static final int kKinematics_DifferentialDrive = 1;</a>
+<span class="sourceLineNo">171</span><a id="line.171">    public static final int kKinematics_MecanumDrive = 2;</a>
+<span class="sourceLineNo">172</span><a id="line.172">    public static final int kKinematics_SwerveDrive = 3;</a>
+<span class="sourceLineNo">173</span><a id="line.173">    public static final int kOdometry_DifferentialDrive = 1;</a>
+<span class="sourceLineNo">174</span><a id="line.174">    public static final int kOdometry_MecanumDrive = 2;</a>
+<span class="sourceLineNo">175</span><a id="line.175">    public static final int kOdometry_SwerveDrive = 3;</a>
+<span class="sourceLineNo">176</span><a id="line.176">  }</a>
+<span class="sourceLineNo">177</span><a id="line.177">}</a>
 
 
 

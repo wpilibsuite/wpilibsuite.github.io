@@ -113,83 +113,82 @@
 <span class="sourceLineNo">101</span><a id="line.101"></a>
 <span class="sourceLineNo">102</span><a id="line.102">  /** Provide an alternate "main loop" via startCompetition(). */</a>
 <span class="sourceLineNo">103</span><a id="line.103">  @Override</a>
-<span class="sourceLineNo">104</span><a id="line.104">  @SuppressWarnings("UnsafeFinalization")</a>
-<span class="sourceLineNo">105</span><a id="line.105">  public void startCompetition() {</a>
-<span class="sourceLineNo">106</span><a id="line.106">    robotInit();</a>
-<span class="sourceLineNo">107</span><a id="line.107"></a>
-<span class="sourceLineNo">108</span><a id="line.108">    if (isSimulation()) {</a>
-<span class="sourceLineNo">109</span><a id="line.109">      simulationInit();</a>
-<span class="sourceLineNo">110</span><a id="line.110">    }</a>
-<span class="sourceLineNo">111</span><a id="line.111"></a>
-<span class="sourceLineNo">112</span><a id="line.112">    // Tell the DS that the robot is ready to be enabled</a>
-<span class="sourceLineNo">113</span><a id="line.113">    System.out.println("********** Robot program startup complete **********");</a>
-<span class="sourceLineNo">114</span><a id="line.114">    HAL.observeUserProgramStarting();</a>
-<span class="sourceLineNo">115</span><a id="line.115"></a>
-<span class="sourceLineNo">116</span><a id="line.116">    // Loop forever, calling the appropriate mode-dependent function</a>
-<span class="sourceLineNo">117</span><a id="line.117">    while (true) {</a>
-<span class="sourceLineNo">118</span><a id="line.118">      // We don't have to check there's an element in the queue first because</a>
-<span class="sourceLineNo">119</span><a id="line.119">      // there's always at least one (the constructor adds one). It's reenqueued</a>
-<span class="sourceLineNo">120</span><a id="line.120">      // at the end of the loop.</a>
-<span class="sourceLineNo">121</span><a id="line.121">      var callback = m_callbacks.poll();</a>
-<span class="sourceLineNo">122</span><a id="line.122"></a>
-<span class="sourceLineNo">123</span><a id="line.123">      NotifierJNI.updateNotifierAlarm(m_notifier, (long) (callback.expirationTime * 1e6));</a>
-<span class="sourceLineNo">124</span><a id="line.124"></a>
-<span class="sourceLineNo">125</span><a id="line.125">      long curTime = NotifierJNI.waitForNotifierAlarm(m_notifier);</a>
-<span class="sourceLineNo">126</span><a id="line.126">      if (curTime == 0) {</a>
-<span class="sourceLineNo">127</span><a id="line.127">        break;</a>
-<span class="sourceLineNo">128</span><a id="line.128">      }</a>
-<span class="sourceLineNo">129</span><a id="line.129"></a>
-<span class="sourceLineNo">130</span><a id="line.130">      callback.func.run();</a>
-<span class="sourceLineNo">131</span><a id="line.131"></a>
-<span class="sourceLineNo">132</span><a id="line.132">      callback.expirationTime += callback.period;</a>
-<span class="sourceLineNo">133</span><a id="line.133">      m_callbacks.add(callback);</a>
-<span class="sourceLineNo">134</span><a id="line.134"></a>
-<span class="sourceLineNo">135</span><a id="line.135">      // Process all other callbacks that are ready to run</a>
-<span class="sourceLineNo">136</span><a id="line.136">      while ((long) (m_callbacks.peek().expirationTime * 1e6) &lt;= curTime) {</a>
-<span class="sourceLineNo">137</span><a id="line.137">        callback = m_callbacks.poll();</a>
-<span class="sourceLineNo">138</span><a id="line.138"></a>
-<span class="sourceLineNo">139</span><a id="line.139">        callback.func.run();</a>
-<span class="sourceLineNo">140</span><a id="line.140"></a>
-<span class="sourceLineNo">141</span><a id="line.141">        callback.expirationTime += callback.period;</a>
-<span class="sourceLineNo">142</span><a id="line.142">        m_callbacks.add(callback);</a>
-<span class="sourceLineNo">143</span><a id="line.143">      }</a>
-<span class="sourceLineNo">144</span><a id="line.144">    }</a>
-<span class="sourceLineNo">145</span><a id="line.145">  }</a>
-<span class="sourceLineNo">146</span><a id="line.146"></a>
-<span class="sourceLineNo">147</span><a id="line.147">  /** Ends the main loop in startCompetition(). */</a>
-<span class="sourceLineNo">148</span><a id="line.148">  @Override</a>
-<span class="sourceLineNo">149</span><a id="line.149">  public void endCompetition() {</a>
-<span class="sourceLineNo">150</span><a id="line.150">    NotifierJNI.stopNotifier(m_notifier);</a>
-<span class="sourceLineNo">151</span><a id="line.151">  }</a>
-<span class="sourceLineNo">152</span><a id="line.152"></a>
-<span class="sourceLineNo">153</span><a id="line.153">  /**</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * Add a callback to run at a specific period.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   *</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * &lt;p&gt;This is scheduled on TimedRobot's Notifier, so TimedRobot and the callback run</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * synchronously. Interactions between them are thread-safe.</a>
-<span class="sourceLineNo">158</span><a id="line.158">   *</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * @param callback The callback to run.</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * @param periodSeconds The period at which to run the callback in seconds.</a>
-<span class="sourceLineNo">161</span><a id="line.161">   */</a>
-<span class="sourceLineNo">162</span><a id="line.162">  public void addPeriodic(Runnable callback, double periodSeconds) {</a>
-<span class="sourceLineNo">163</span><a id="line.163">    m_callbacks.add(new Callback(callback, m_startTime, periodSeconds, 0.0));</a>
-<span class="sourceLineNo">164</span><a id="line.164">  }</a>
-<span class="sourceLineNo">165</span><a id="line.165"></a>
-<span class="sourceLineNo">166</span><a id="line.166">  /**</a>
-<span class="sourceLineNo">167</span><a id="line.167">   * Add a callback to run at a specific period with a starting time offset.</a>
-<span class="sourceLineNo">168</span><a id="line.168">   *</a>
-<span class="sourceLineNo">169</span><a id="line.169">   * &lt;p&gt;This is scheduled on TimedRobot's Notifier, so TimedRobot and the callback run</a>
-<span class="sourceLineNo">170</span><a id="line.170">   * synchronously. Interactions between them are thread-safe.</a>
-<span class="sourceLineNo">171</span><a id="line.171">   *</a>
-<span class="sourceLineNo">172</span><a id="line.172">   * @param callback The callback to run.</a>
-<span class="sourceLineNo">173</span><a id="line.173">   * @param periodSeconds The period at which to run the callback in seconds.</a>
-<span class="sourceLineNo">174</span><a id="line.174">   * @param offsetSeconds The offset from the common starting time in seconds. This is useful for</a>
-<span class="sourceLineNo">175</span><a id="line.175">   *     scheduling a callback in a different timeslot relative to TimedRobot.</a>
-<span class="sourceLineNo">176</span><a id="line.176">   */</a>
-<span class="sourceLineNo">177</span><a id="line.177">  public void addPeriodic(Runnable callback, double periodSeconds, double offsetSeconds) {</a>
-<span class="sourceLineNo">178</span><a id="line.178">    m_callbacks.add(new Callback(callback, m_startTime, periodSeconds, offsetSeconds));</a>
-<span class="sourceLineNo">179</span><a id="line.179">  }</a>
-<span class="sourceLineNo">180</span><a id="line.180">}</a>
+<span class="sourceLineNo">104</span><a id="line.104">  public void startCompetition() {</a>
+<span class="sourceLineNo">105</span><a id="line.105">    robotInit();</a>
+<span class="sourceLineNo">106</span><a id="line.106"></a>
+<span class="sourceLineNo">107</span><a id="line.107">    if (isSimulation()) {</a>
+<span class="sourceLineNo">108</span><a id="line.108">      simulationInit();</a>
+<span class="sourceLineNo">109</span><a id="line.109">    }</a>
+<span class="sourceLineNo">110</span><a id="line.110"></a>
+<span class="sourceLineNo">111</span><a id="line.111">    // Tell the DS that the robot is ready to be enabled</a>
+<span class="sourceLineNo">112</span><a id="line.112">    System.out.println("********** Robot program startup complete **********");</a>
+<span class="sourceLineNo">113</span><a id="line.113">    HAL.observeUserProgramStarting();</a>
+<span class="sourceLineNo">114</span><a id="line.114"></a>
+<span class="sourceLineNo">115</span><a id="line.115">    // Loop forever, calling the appropriate mode-dependent function</a>
+<span class="sourceLineNo">116</span><a id="line.116">    while (true) {</a>
+<span class="sourceLineNo">117</span><a id="line.117">      // We don't have to check there's an element in the queue first because</a>
+<span class="sourceLineNo">118</span><a id="line.118">      // there's always at least one (the constructor adds one). It's reenqueued</a>
+<span class="sourceLineNo">119</span><a id="line.119">      // at the end of the loop.</a>
+<span class="sourceLineNo">120</span><a id="line.120">      var callback = m_callbacks.poll();</a>
+<span class="sourceLineNo">121</span><a id="line.121"></a>
+<span class="sourceLineNo">122</span><a id="line.122">      NotifierJNI.updateNotifierAlarm(m_notifier, (long) (callback.expirationTime * 1e6));</a>
+<span class="sourceLineNo">123</span><a id="line.123"></a>
+<span class="sourceLineNo">124</span><a id="line.124">      long curTime = NotifierJNI.waitForNotifierAlarm(m_notifier);</a>
+<span class="sourceLineNo">125</span><a id="line.125">      if (curTime == 0) {</a>
+<span class="sourceLineNo">126</span><a id="line.126">        break;</a>
+<span class="sourceLineNo">127</span><a id="line.127">      }</a>
+<span class="sourceLineNo">128</span><a id="line.128"></a>
+<span class="sourceLineNo">129</span><a id="line.129">      callback.func.run();</a>
+<span class="sourceLineNo">130</span><a id="line.130"></a>
+<span class="sourceLineNo">131</span><a id="line.131">      callback.expirationTime += callback.period;</a>
+<span class="sourceLineNo">132</span><a id="line.132">      m_callbacks.add(callback);</a>
+<span class="sourceLineNo">133</span><a id="line.133"></a>
+<span class="sourceLineNo">134</span><a id="line.134">      // Process all other callbacks that are ready to run</a>
+<span class="sourceLineNo">135</span><a id="line.135">      while ((long) (m_callbacks.peek().expirationTime * 1e6) &lt;= curTime) {</a>
+<span class="sourceLineNo">136</span><a id="line.136">        callback = m_callbacks.poll();</a>
+<span class="sourceLineNo">137</span><a id="line.137"></a>
+<span class="sourceLineNo">138</span><a id="line.138">        callback.func.run();</a>
+<span class="sourceLineNo">139</span><a id="line.139"></a>
+<span class="sourceLineNo">140</span><a id="line.140">        callback.expirationTime += callback.period;</a>
+<span class="sourceLineNo">141</span><a id="line.141">        m_callbacks.add(callback);</a>
+<span class="sourceLineNo">142</span><a id="line.142">      }</a>
+<span class="sourceLineNo">143</span><a id="line.143">    }</a>
+<span class="sourceLineNo">144</span><a id="line.144">  }</a>
+<span class="sourceLineNo">145</span><a id="line.145"></a>
+<span class="sourceLineNo">146</span><a id="line.146">  /** Ends the main loop in startCompetition(). */</a>
+<span class="sourceLineNo">147</span><a id="line.147">  @Override</a>
+<span class="sourceLineNo">148</span><a id="line.148">  public void endCompetition() {</a>
+<span class="sourceLineNo">149</span><a id="line.149">    NotifierJNI.stopNotifier(m_notifier);</a>
+<span class="sourceLineNo">150</span><a id="line.150">  }</a>
+<span class="sourceLineNo">151</span><a id="line.151"></a>
+<span class="sourceLineNo">152</span><a id="line.152">  /**</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * Add a callback to run at a specific period.</a>
+<span class="sourceLineNo">154</span><a id="line.154">   *</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * &lt;p&gt;This is scheduled on TimedRobot's Notifier, so TimedRobot and the callback run</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * synchronously. Interactions between them are thread-safe.</a>
+<span class="sourceLineNo">157</span><a id="line.157">   *</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * @param callback The callback to run.</a>
+<span class="sourceLineNo">159</span><a id="line.159">   * @param periodSeconds The period at which to run the callback in seconds.</a>
+<span class="sourceLineNo">160</span><a id="line.160">   */</a>
+<span class="sourceLineNo">161</span><a id="line.161">  public void addPeriodic(Runnable callback, double periodSeconds) {</a>
+<span class="sourceLineNo">162</span><a id="line.162">    m_callbacks.add(new Callback(callback, m_startTime, periodSeconds, 0.0));</a>
+<span class="sourceLineNo">163</span><a id="line.163">  }</a>
+<span class="sourceLineNo">164</span><a id="line.164"></a>
+<span class="sourceLineNo">165</span><a id="line.165">  /**</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * Add a callback to run at a specific period with a starting time offset.</a>
+<span class="sourceLineNo">167</span><a id="line.167">   *</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * &lt;p&gt;This is scheduled on TimedRobot's Notifier, so TimedRobot and the callback run</a>
+<span class="sourceLineNo">169</span><a id="line.169">   * synchronously. Interactions between them are thread-safe.</a>
+<span class="sourceLineNo">170</span><a id="line.170">   *</a>
+<span class="sourceLineNo">171</span><a id="line.171">   * @param callback The callback to run.</a>
+<span class="sourceLineNo">172</span><a id="line.172">   * @param periodSeconds The period at which to run the callback in seconds.</a>
+<span class="sourceLineNo">173</span><a id="line.173">   * @param offsetSeconds The offset from the common starting time in seconds. This is useful for</a>
+<span class="sourceLineNo">174</span><a id="line.174">   *     scheduling a callback in a different timeslot relative to TimedRobot.</a>
+<span class="sourceLineNo">175</span><a id="line.175">   */</a>
+<span class="sourceLineNo">176</span><a id="line.176">  public void addPeriodic(Runnable callback, double periodSeconds, double offsetSeconds) {</a>
+<span class="sourceLineNo">177</span><a id="line.177">    m_callbacks.add(new Callback(callback, m_startTime, periodSeconds, offsetSeconds));</a>
+<span class="sourceLineNo">178</span><a id="line.178">  }</a>
+<span class="sourceLineNo">179</span><a id="line.179">}</a>
 
 
 
