@@ -23,7 +23,7 @@ var format_inl_8h =
     [ "is_printable", "format-inl_8h.html#ac3df1e29ebde78440f3595e480065a59", null ],
     [ "is_printable", "format-inl_8h.html#a7180f964a08acd8e8b2ae8cb52e22529", null ],
     [ "operator==", "format-inl_8h.html#a7d4516c34cce7a679f89a534d0406a63", null ],
-    [ "print", "format-inl_8h.html#a4b7c06a301760f9866b4d66f5c9386a9", null ],
+    [ "print", "format-inl_8h.html#aa348a72f26ad98c21315d54f255f6fcb", null ],
     [ "remove_trailing_zeros", "format-inl_8h.html#a371201301d96bedc919db3a4a871db23", null ],
     [ "remove_trailing_zeros", "format-inl_8h.html#ac63547f6f0df2f1edc3a1bfba84441e6", null ],
     [ "report_error", "format-inl_8h.html#a5258a4ed6751b70d07d3ae85fc5e2fdd", null ],
@@ -45,7 +45,7 @@ var format_inl_8h =
     [ "vprint", "format-inl_8h.html#a9d834f6ef5c0553b6c434f8d9ac105bf", null ],
     [ "vprint", "format-inl_8h.html#a77fcf4959d4c69c3800b759696f37248", null ],
     [ "vsystem_error", "format-inl_8h.html#a1c485113edf9429ab85e8589ba53af1d", null ],
-    [ "div_small_pow10_infos", "format-inl_8h.html#a24f0d0dd74a68e88264a4c02588fa324", null ],
+    [ "div_small_pow10_infos", "format-inl_8h.html#ad6cda5d12a9619cf0f455df6a9c34e4f", null ],
     [ "divisor", "format-inl_8h.html#a55ee9571cc13bd8f6efffbdf22c6931f", null ],
     [ "shift_amount", "format-inl_8h.html#a5440f11212cfda4ccf3ee24746973a09", null ]
 ];

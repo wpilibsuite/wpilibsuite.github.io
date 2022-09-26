@@ -14,7 +14,7 @@ var searchData=
   ['math_11',['math',['../math.html',1,'']]],
   ['math_2eh_12',['math.h',['../math_8h.html',1,'']]],
   ['mathextras_2eh_13',['MathExtras.h',['../_math_extras_8h.html',1,'']]],
-  ['mathfunctions_2eh_14',['MathFunctions.h',['../_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_n_e_o_n_2_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_a_v_x_2_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_s_s_e_2_math_functions_8h.html',1,'(Global Namespace)']]],
+  ['mathfunctions_2eh_14',['MathFunctions.h',['../_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_s_s_e_2_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_n_e_o_n_2_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_a_v_x_2_math_functions_8h.html',1,'(Global Namespace)']]],
   ['mathfunctionsimpl_2eh_15',['MathFunctionsImpl.h',['../_math_functions_impl_8h.html',1,'']]],
   ['mathshared_2eh_16',['MathShared.h',['../_math_shared_8h.html',1,'']]],
   ['mathutil_2eh_17',['MathUtil.h',['../_math_util_8h.html',1,'']]],

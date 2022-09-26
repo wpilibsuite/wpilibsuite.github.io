@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: frc/fmt/Units.h File Reference</title>
+<title>WPILibC++: hal/simulation/Reset.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-120-ga791470</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('frc_2fmt_2_units_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_reset_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -91,29 +91,24 @@ $(document).ready(function(){initNavTree('frc_2fmt_2_units_8h.html',''); initRes
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
-  <div class="headertitle"><div class="title">Units.h File Reference</div></div>
+  <div class="headertitle"><div class="title">Reset.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="format_8h_source.html">fmt/format.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="base_8h_source.html">units/base.h</a>&quot;</code><br />
-</div>
-<p><a href="frc_2fmt_2_units_8h_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfmt_1_1formatter_3_01units_1_1unit__t_3_01_units_00_01_t_00_01_non_linear_scale_01_4_01_4.html">fmt::formatter&lt; units::unit_t&lt; Units, T, NonLinearScale &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formatter for unit types.  <a href="structfmt_1_1formatter_3_01units_1_1unit__t_3_01_units_00_01_t_00_01_non_linear_scale_01_4_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-</div><!-- contents -->
+<a href="_reset_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="_reset_8h.html#a74dc33c1bed5b3357dd6e3e86b5e7f05">    7</a></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">void</span> <a class="code hl_function" href="_reset_8h.html#a74dc33c1bed5b3357dd6e3e86b5e7f05">HALSIM_ResetAllSimData</a>(<span class="keywordtype">void</span>);</div>
+<div class="ttc" id="a_reset_8h_html_a74dc33c1bed5b3357dd6e3e86b5e7f05"><div class="ttname"><a href="_reset_8h.html#a74dc33c1bed5b3357dd6e3e86b5e7f05">HALSIM_ResetAllSimData</a></div><div class="ttdeci">void HALSIM_ResetAllSimData(void)</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_405795ac50a5647e96ff81bf21bb5d20.html">fmt</a></li><li class="navelem"><a class="el" href="frc_2fmt_2_units_8h.html">Units.h</a></li>
-    <li class="footer">Generated on Sat Sep 24 2022 07:17:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_03b7d37b9dc08ca478f4c25141f731ae.html">simulation</a></li><li class="navelem"><a class="el" href="_reset_8h.html">Reset.h</a></li>
+    <li class="footer">Generated on Mon Sep 26 2022 21:41:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

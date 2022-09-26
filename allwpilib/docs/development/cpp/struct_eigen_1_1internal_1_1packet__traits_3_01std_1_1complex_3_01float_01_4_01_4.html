@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-120-ga791470</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1packet__tr
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_s_s_e_2_complex_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/SSE/Complex.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_a_v_x_2_complex_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/AVX/Complex.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Eigen::internal::packet_traits&lt; std::complex&lt; float &gt; &gt;:</div>
 <div class="dyncontent">
@@ -113,72 +113,76 @@ Inheritance diagram for Eigen::internal::packet_traits&lt; std::complex&lt; floa
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aaabc75209f844aef3b251e816b79bdb9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7">Vectorizable</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600">AlignedOnScalar</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a">size</a> = 2
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd">HasHalfPacket</a> = 0
-, <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f">HasAdd</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8">HasSub</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1">HasMul</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1">HasDiv</a> = 1
-, <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1">HasNegate</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba1fef8d13ec062ff3dc874684c67403ce">HasSqrt</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e">HasAbs</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229">HasAbs2</a> = 0
-, <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f">HasMin</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3">HasMax</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041">HasSetLinear</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#aaabc75209f844aef3b251e816b79bdb9a87519673bdf4118ecfa167f9dab69f54">HasBlend</a> = 1
-<br />
- }</td></tr>
-<tr class="separator:aaabc75209f844aef3b251e816b79bdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f023971dac51bba3f5ad162e32175d4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7">Vectorizable</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600">AlignedOnScalar</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a">size</a> = 2
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd">HasHalfPacket</a> = 0
-, <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f">HasAdd</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8">HasSub</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1">HasMul</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1">HasDiv</a> = 1
-, <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1">HasNegate</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e">HasAbs</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229">HasAbs2</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f">HasMin</a> = 0
-, <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3">HasMax</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041">HasSetLinear</a> = 0
-<br />
- }</td></tr>
-<tr class="separator:a2f023971dac51bba3f5ad162e32175d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef6c834775217f7a7b12feb040baf5b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7">Vectorizable</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600">AlignedOnScalar</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a">size</a> = 2
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd">HasHalfPacket</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7">Vectorizable</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600">AlignedOnScalar</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a">size</a> = 4
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd">HasHalfPacket</a> = 1
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f">HasAdd</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8">HasSub</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1">HasMul</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1">HasDiv</a> = 1
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f">HasAdd</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8">HasSub</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1">HasMul</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1">HasDiv</a> = 1
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1">HasNegate</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba1fef8d13ec062ff3dc874684c67403ce">HasSqrt</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e">HasAbs</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229">HasAbs2</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1">HasNegate</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a310cbec2ccb0df60f8a5f4ffe7fb3068a1fef8d13ec062ff3dc874684c67403ce">HasSqrt</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e">HasAbs</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229">HasAbs2</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f">HasMin</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3">HasMax</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041">HasSetLinear</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f">HasMin</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3">HasMax</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041">HasSetLinear</a> = 0
 <br />
  }</td></tr>
 <tr class="separator:a5ef6c834775217f7a7b12feb040baf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310cbec2ccb0df60f8a5f4ffe7fb3068"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7">Vectorizable</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600">AlignedOnScalar</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a">size</a> = 4
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd">HasHalfPacket</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f">HasAdd</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8">HasSub</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1">HasMul</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1">HasDiv</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1">HasNegate</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a310cbec2ccb0df60f8a5f4ffe7fb3068a1fef8d13ec062ff3dc874684c67403ce">HasSqrt</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e">HasAbs</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229">HasAbs2</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f">HasMin</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3">HasMax</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041">HasSetLinear</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a310cbec2ccb0df60f8a5f4ffe7fb3068a87519673bdf4118ecfa167f9dab69f54">HasBlend</a> = 1
+<br />
+ }</td></tr>
+<tr class="separator:a310cbec2ccb0df60f8a5f4ffe7fb3068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a714335a09a9f520fa0688b5b7ec10962"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7">Vectorizable</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600">AlignedOnScalar</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a">size</a> = 4
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd">HasHalfPacket</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f">HasAdd</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8">HasSub</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1">HasMul</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1">HasDiv</a> = 1
+, <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1">HasNegate</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e">HasAbs</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229">HasAbs2</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f">HasMin</a> = 0
+, <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3">HasMax</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041">HasSetLinear</a> = 0
+<br />
+ }</td></tr>
+<tr class="separator:a714335a09a9f520fa0688b5b7ec10962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9687ac24553844fbd766cdaf21c4ded"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1_packet4cf.html">Packet4cf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#ad9687ac24553844fbd766cdaf21c4ded">type</a></td></tr>
+<tr class="separator:ad9687ac24553844fbd766cdaf21c4ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ca9289181f825939af56a94afc23db"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1_packet2cf.html">Packet2cf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a26ca9289181f825939af56a94afc23db">half</a></td></tr>
+<tr class="separator:a26ca9289181f825939af56a94afc23db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580a3908d84d95ba19d0c9bddcb40f6a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1_packet2cf.html">Packet2cf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a580a3908d84d95ba19d0c9bddcb40f6a">type</a></td></tr>
 <tr class="separator:a580a3908d84d95ba19d0c9bddcb40f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ca9289181f825939af56a94afc23db"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1_packet2cf.html">Packet2cf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a26ca9289181f825939af56a94afc23db">half</a></td></tr>
@@ -187,79 +191,75 @@ Public Types</h2></td></tr>
 <tr class="separator:a580a3908d84d95ba19d0c9bddcb40f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a47c2aab01b7c9fe3d9e61e8f2f8b1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1_packet1cf.html">Packet1cf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a91a47c2aab01b7c9fe3d9e61e8f2f8b1">half</a></td></tr>
 <tr class="separator:a91a47c2aab01b7c9fe3d9e61e8f2f8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9687ac24553844fbd766cdaf21c4ded"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1_packet4cf.html">Packet4cf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#ad9687ac24553844fbd766cdaf21c4ded">type</a></td></tr>
-<tr class="separator:ad9687ac24553844fbd766cdaf21c4ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26ca9289181f825939af56a94afc23db"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1_packet2cf.html">Packet2cf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a26ca9289181f825939af56a94afc23db">half</a></td></tr>
-<tr class="separator:a26ca9289181f825939af56a94afc23db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_eigen_1_1internal_1_1default__packet__traits"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_eigen_1_1internal_1_1default__packet__traits')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html">Eigen::internal::default_packet_traits</a></td></tr>
-<tr class="memitem:a9fd3bb1936c612b5138e1b927dfd3fbb inherit pub_types_struct_eigen_1_1internal_1_1default__packet__traits"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbafa23f184ffc2f22eae7d3f02b983882d">HasHalfPacket</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba95535c551abd94d8cd68e175308fee65">HasAdd</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba098a15ff7a8faf702990a73a4bce8f94">HasSub</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba58280f4e9b1858a22049f9c94f2991a6">HasShift</a> = 1
+<tr class="memitem:af3f5955d552983743ab05438628b9506 inherit pub_types_struct_eigen_1_1internal_1_1default__packet__traits"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506afa23f184ffc2f22eae7d3f02b983882d">HasHalfPacket</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a95535c551abd94d8cd68e175308fee65">HasAdd</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a098a15ff7a8faf702990a73a4bce8f94">HasSub</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a58280f4e9b1858a22049f9c94f2991a6">HasShift</a> = 1
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbae79eebb5e6b9997497c5ef193c50a41c">HasMul</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba8ef2fa5b0374ee9ceb9a255a0caa605b">HasNegate</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbac0d6fbe639ba400689f4267874b50c7d">HasAbs</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba24af90b71063b2284fc77a3ef2370f71">HasArg</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506ae79eebb5e6b9997497c5ef193c50a41c">HasMul</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a8ef2fa5b0374ee9ceb9a255a0caa605b">HasNegate</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506ac0d6fbe639ba400689f4267874b50c7d">HasAbs</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a24af90b71063b2284fc77a3ef2370f71">HasArg</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbaeaf4872e2d76d1bc2251259be777ec52">HasAbs2</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba21cbfe21c115d0c7f3356ba96b70e08f">HasAbsDiff</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba21e1dee9db3ecf9b658481cb59ab9c64">HasMin</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba6b9b56cd6c096fe6ce75aa51025c259e">HasMax</a> = 1
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506aeaf4872e2d76d1bc2251259be777ec52">HasAbs2</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a21cbfe21c115d0c7f3356ba96b70e08f">HasAbsDiff</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a21e1dee9db3ecf9b658481cb59ab9c64">HasMin</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a6b9b56cd6c096fe6ce75aa51025c259e">HasMax</a> = 1
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba3cffabfc04805ec8322cb670764e6499">HasConj</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba51168b43e6095a83f924f5e0ebebe426">HasSetLinear</a> = 1
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba154aa7e05e2f3de6473cbc87fec502f8">HasBlend</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba386125a65b04605321322f36639b1e75">HasCmp</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a3cffabfc04805ec8322cb670764e6499">HasConj</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a51168b43e6095a83f924f5e0ebebe426">HasSetLinear</a> = 1
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a154aa7e05e2f3de6473cbc87fec502f8">HasBlend</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a386125a65b04605321322f36639b1e75">HasCmp</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbafb001a46b49e4ee819b181687c707e51">HasDiv</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbab53245fe1d0d2c46396ec9d06b80ee49">HasSqrt</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba09b9a3003d83db4ccc035b348793a501">HasRsqrt</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba9cefd68905fe3b0d9c3b7e3431e30a27">HasExp</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506afb001a46b49e4ee819b181687c707e51">HasDiv</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506ab53245fe1d0d2c46396ec9d06b80ee49">HasSqrt</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a09b9a3003d83db4ccc035b348793a501">HasRsqrt</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a9cefd68905fe3b0d9c3b7e3431e30a27">HasExp</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbadc765ecef85465a791c0e58d8c224050">HasExpm1</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbadf0cb1ad8a2a8ef9710e43f06276e5e8">HasLog</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba687253f1b4a6702185cffe290d5d0d5c">HasLog1p</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba1846c75b0d20d3c439bbbb3abd288788">HasLog10</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506adc765ecef85465a791c0e58d8c224050">HasExpm1</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506adf0cb1ad8a2a8ef9710e43f06276e5e8">HasLog</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a687253f1b4a6702185cffe290d5d0d5c">HasLog1p</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a1846c75b0d20d3c439bbbb3abd288788">HasLog10</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba79828d125f521149de068e5762c31d7a">HasPow</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba127d06bc3b850de6418bcbc6da9a89b9">HasSin</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba2ab094ca9559689e9814be7f9937f755">HasCos</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba1a3a5024255260c5e04962755c8b1ffa">HasTan</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a79828d125f521149de068e5762c31d7a">HasPow</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a127d06bc3b850de6418bcbc6da9a89b9">HasSin</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a2ab094ca9559689e9814be7f9937f755">HasCos</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a1a3a5024255260c5e04962755c8b1ffa">HasTan</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba051435857b2f54b9b43da1e4e8b5a723">HasASin</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba1e4104a04217f765805a472a7d02d582">HasACos</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbaf36e662d5f227dd736fcdde9973200d9">HasATan</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba2ea9c29f285d7a24ec5a75c45d668a19">HasSinh</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a051435857b2f54b9b43da1e4e8b5a723">HasASin</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a1e4104a04217f765805a472a7d02d582">HasACos</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506af36e662d5f227dd736fcdde9973200d9">HasATan</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a2ea9c29f285d7a24ec5a75c45d668a19">HasSinh</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbad69065ef1e5d8a750346e8deed9ca756">HasCosh</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbae1213382680acded865a67f046eca0cb">HasTanh</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbaba19627b8660b8b6675a4b5ca07a64d3">HasLGamma</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba3b41b8dd5d3e3d2da4d0a022d8910506">HasDiGamma</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506ad69065ef1e5d8a750346e8deed9ca756">HasCosh</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506ae1213382680acded865a67f046eca0cb">HasTanh</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506aba19627b8660b8b6675a4b5ca07a64d3">HasLGamma</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a3b41b8dd5d3e3d2da4d0a022d8910506">HasDiGamma</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba03f05b8c4b0a3b8da8db433f4dda785e">HasZeta</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba2ed891c56de134ded7b1350228384260">HasPolygamma</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbabc2a8843b8db8ffbddd39ca4e9f79f35">HasErf</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba1b3c984d59159e2eb045e6ac7c10e541">HasErfc</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a03f05b8c4b0a3b8da8db433f4dda785e">HasZeta</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a2ed891c56de134ded7b1350228384260">HasPolygamma</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506abc2a8843b8db8ffbddd39ca4e9f79f35">HasErf</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a1b3c984d59159e2eb045e6ac7c10e541">HasErfc</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba26d9af923903d1b7086653fdfe24b2f5">HasNdtri</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbabc69837fc843ef9c6b7f99fddb1d8b70">HasBessel</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba05a89e4350d34b2e345515051ba0bf2c">HasIGamma</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbaf33e2fa606d523d84f9603f69476421e">HasIGammaDerA</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a26d9af923903d1b7086653fdfe24b2f5">HasNdtri</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506abc69837fc843ef9c6b7f99fddb1d8b70">HasBessel</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a05a89e4350d34b2e345515051ba0bf2c">HasIGamma</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506af33e2fa606d523d84f9603f69476421e">HasIGammaDerA</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbaf005824acf2f168f53254db214de792b">HasGammaSampleDerAlpha</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba83e0f0bbd5e2c921278e5761aaf9443a">HasIGammac</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbab4f049ebad59a1ea55512487549b59f6">HasBetaInc</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbaa23ab4e0ca925f09e8da7d6a2d6051ad">HasRound</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506af005824acf2f168f53254db214de792b">HasGammaSampleDerAlpha</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a83e0f0bbd5e2c921278e5761aaf9443a">HasIGammac</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506ab4f049ebad59a1ea55512487549b59f6">HasBetaInc</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506aa23ab4e0ca925f09e8da7d6a2d6051ad">HasRound</a> = 0
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbab1018287c81d4fbfbc877b01fb50b858">HasRint</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbbaf90e25e89b0ea814efd4388f4dc15434">HasFloor</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba89b7e48939ec14f8644bcffcc7c1e529">HasCeil</a> = 0
-, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#a9fd3bb1936c612b5138e1b927dfd3fbba02996c652100f31c94c419608feccfeb">HasSign</a> = 0
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506ab1018287c81d4fbfbc877b01fb50b858">HasRint</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506af90e25e89b0ea814efd4388f4dc15434">HasFloor</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a89b7e48939ec14f8644bcffcc7c1e529">HasCeil</a> = 0
+, <a class="el" href="struct_eigen_1_1internal_1_1default__packet__traits.html#af3f5955d552983743ab05438628b9506a02996c652100f31c94c419608feccfeb">HasSign</a> = 0
 <br />
  }</td></tr>
-<tr class="separator:a9fd3bb1936c612b5138e1b927dfd3fbb inherit pub_types_struct_eigen_1_1internal_1_1default__packet__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af3f5955d552983743ab05438628b9506 inherit pub_types_struct_eigen_1_1internal_1_1default__packet__traits"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a26ca9289181f825939af56a94afc23db" name="a26ca9289181f825939af56a94afc23db"></a>
@@ -347,68 +347,6 @@ Public Types</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aaabc75209f844aef3b251e816b79bdb9" name="aaabc75209f844aef3b251e816b79bdb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaabc75209f844aef3b251e816b79bdb9">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7" name="a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7"></a>Vectorizable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600" name="a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600"></a>AlignedOnScalar&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a" name="a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a"></a>size&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd" name="a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd"></a>HasHalfPacket&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f" name="a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f"></a>HasAdd&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8" name="a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8"></a>HasSub&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1" name="a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1"></a>HasMul&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1" name="a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1"></a>HasDiv&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1" name="a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1"></a>HasNegate&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba1fef8d13ec062ff3dc874684c67403ce" name="a5ef6c834775217f7a7b12feb040baf5ba1fef8d13ec062ff3dc874684c67403ce"></a>HasSqrt&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e" name="a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e"></a>HasAbs&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229" name="a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229"></a>HasAbs2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f" name="a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f"></a>HasMin&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3" name="a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3"></a>HasMax&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041" name="a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041"></a>HasSetLinear&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aaabc75209f844aef3b251e816b79bdb9a87519673bdf4118ecfa167f9dab69f54" name="aaabc75209f844aef3b251e816b79bdb9a87519673bdf4118ecfa167f9dab69f54"></a>HasBlend&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a2f023971dac51bba3f5ad162e32175d4" name="a2f023971dac51bba3f5ad162e32175d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f023971dac51bba3f5ad162e32175d4">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7" name="a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7"></a>Vectorizable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600" name="a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600"></a>AlignedOnScalar&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a" name="a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a"></a>size&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd" name="a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd"></a>HasHalfPacket&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f" name="a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f"></a>HasAdd&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8" name="a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8"></a>HasSub&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1" name="a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1"></a>HasMul&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1" name="a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1"></a>HasDiv&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1" name="a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1"></a>HasNegate&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e" name="a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e"></a>HasAbs&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229" name="a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229"></a>HasAbs2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f" name="a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f"></a>HasMin&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3" name="a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3"></a>HasMax&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041" name="a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041"></a>HasSetLinear&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="a5ef6c834775217f7a7b12feb040baf5b" name="a5ef6c834775217f7a7b12feb040baf5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ef6c834775217f7a7b12feb040baf5b">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
@@ -421,29 +359,91 @@ Public Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7" name="a5ef6c834775217f7a7b12feb040baf5badd15db3f86c8177fd458e69769d63cd7"></a>Vectorizable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600" name="a5ef6c834775217f7a7b12feb040baf5ba11ffd6eca1a4d35ad12781794bc68600"></a>AlignedOnScalar&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a" name="a5ef6c834775217f7a7b12feb040baf5ba7fb0ea57a419865fa0d87857327fd53a"></a>size&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd" name="a5ef6c834775217f7a7b12feb040baf5baea902502b7d8abf63e9f13454d0168dd"></a>HasHalfPacket&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f" name="a5ef6c834775217f7a7b12feb040baf5ba43b12d8f1b8f28249bb3483fcb8e4b8f"></a>HasAdd&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8" name="a5ef6c834775217f7a7b12feb040baf5ba14dfbd87e6849e597700f46ac529c8a8"></a>HasSub&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1" name="a5ef6c834775217f7a7b12feb040baf5ba480c13f0e219ae69ca79cb0182453bd1"></a>HasMul&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1" name="a5ef6c834775217f7a7b12feb040baf5bafd851deccc0c1a001698b2b39edb43b1"></a>HasDiv&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1" name="a5ef6c834775217f7a7b12feb040baf5bacb950fbff7c519dd14c8844307aed1a1"></a>HasNegate&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba1fef8d13ec062ff3dc874684c67403ce" name="a5ef6c834775217f7a7b12feb040baf5ba1fef8d13ec062ff3dc874684c67403ce"></a>HasSqrt&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e" name="a5ef6c834775217f7a7b12feb040baf5ba192ff624ea8894f96509f59b4ce9153e"></a>HasAbs&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229" name="a5ef6c834775217f7a7b12feb040baf5baeefd3087e155b0cb8f16ff93ef0cf229"></a>HasAbs2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f" name="a5ef6c834775217f7a7b12feb040baf5bae166f9067c32c50418ebb29316abee5f"></a>HasMin&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3" name="a5ef6c834775217f7a7b12feb040baf5ba8e477d5ddcf420673fe7c452924b86e3"></a>HasMax&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041" name="a5ef6c834775217f7a7b12feb040baf5ba2c1478d24571660b49b4138ef94bf041"></a>HasSetLinear&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7" name="a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7"></a>Vectorizable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600" name="a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600"></a>AlignedOnScalar&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a" name="a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a"></a>size&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd" name="a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd"></a>HasHalfPacket&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f" name="a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f"></a>HasAdd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8" name="a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8"></a>HasSub&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1" name="a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1"></a>HasMul&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1" name="a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1"></a>HasDiv&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1" name="a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1"></a>HasNegate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a310cbec2ccb0df60f8a5f4ffe7fb3068a1fef8d13ec062ff3dc874684c67403ce" name="a310cbec2ccb0df60f8a5f4ffe7fb3068a1fef8d13ec062ff3dc874684c67403ce"></a>HasSqrt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e" name="a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e"></a>HasAbs&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229" name="a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229"></a>HasAbs2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f" name="a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f"></a>HasMin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3" name="a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3"></a>HasMax&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041" name="a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041"></a>HasSetLinear&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a310cbec2ccb0df60f8a5f4ffe7fb3068" name="a310cbec2ccb0df60f8a5f4ffe7fb3068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310cbec2ccb0df60f8a5f4ffe7fb3068">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7" name="a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7"></a>Vectorizable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600" name="a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600"></a>AlignedOnScalar&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a" name="a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a"></a>size&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd" name="a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd"></a>HasHalfPacket&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f" name="a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f"></a>HasAdd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8" name="a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8"></a>HasSub&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1" name="a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1"></a>HasMul&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1" name="a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1"></a>HasDiv&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1" name="a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1"></a>HasNegate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a310cbec2ccb0df60f8a5f4ffe7fb3068a1fef8d13ec062ff3dc874684c67403ce" name="a310cbec2ccb0df60f8a5f4ffe7fb3068a1fef8d13ec062ff3dc874684c67403ce"></a>HasSqrt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e" name="a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e"></a>HasAbs&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229" name="a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229"></a>HasAbs2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f" name="a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f"></a>HasMin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3" name="a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3"></a>HasMax&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041" name="a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041"></a>HasSetLinear&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a310cbec2ccb0df60f8a5f4ffe7fb3068a87519673bdf4118ecfa167f9dab69f54" name="a310cbec2ccb0df60f8a5f4ffe7fb3068a87519673bdf4118ecfa167f9dab69f54"></a>HasBlend&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a714335a09a9f520fa0688b5b7ec10962" name="a714335a09a9f520fa0688b5b7ec10962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a714335a09a9f520fa0688b5b7ec10962">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7" name="a714335a09a9f520fa0688b5b7ec10962add15db3f86c8177fd458e69769d63cd7"></a>Vectorizable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600" name="a714335a09a9f520fa0688b5b7ec10962a11ffd6eca1a4d35ad12781794bc68600"></a>AlignedOnScalar&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a" name="a714335a09a9f520fa0688b5b7ec10962a7fb0ea57a419865fa0d87857327fd53a"></a>size&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd" name="a714335a09a9f520fa0688b5b7ec10962aea902502b7d8abf63e9f13454d0168dd"></a>HasHalfPacket&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f" name="a714335a09a9f520fa0688b5b7ec10962a43b12d8f1b8f28249bb3483fcb8e4b8f"></a>HasAdd&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8" name="a714335a09a9f520fa0688b5b7ec10962a14dfbd87e6849e597700f46ac529c8a8"></a>HasSub&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1" name="a714335a09a9f520fa0688b5b7ec10962a480c13f0e219ae69ca79cb0182453bd1"></a>HasMul&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1" name="a714335a09a9f520fa0688b5b7ec10962afd851deccc0c1a001698b2b39edb43b1"></a>HasDiv&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1" name="a714335a09a9f520fa0688b5b7ec10962acb950fbff7c519dd14c8844307aed1a1"></a>HasNegate&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e" name="a714335a09a9f520fa0688b5b7ec10962a192ff624ea8894f96509f59b4ce9153e"></a>HasAbs&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229" name="a714335a09a9f520fa0688b5b7ec10962aeefd3087e155b0cb8f16ff93ef0cf229"></a>HasAbs2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f" name="a714335a09a9f520fa0688b5b7ec10962ae166f9067c32c50418ebb29316abee5f"></a>HasMin&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3" name="a714335a09a9f520fa0688b5b7ec10962a8e477d5ddcf420673fe7c452924b86e3"></a>HasMax&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041" name="a714335a09a9f520fa0688b5b7ec10962a2c1478d24571660b49b4138ef94bf041"></a>HasSetLinear&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
+<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/AVX/<a class="el" href="_a_v_x_2_complex_8h_source.html">Complex.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/SSE/<a class="el" href="_s_s_e_2_complex_8h_source.html">Complex.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/NEON/<a class="el" href="_n_e_o_n_2_complex_8h_source.html">Complex.h</a></li>
-<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/AVX/<a class="el" href="_a_v_x_2_complex_8h_source.html">Complex.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -451,7 +451,7 @@ Public Types</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html">packet_traits&lt; std::complex&lt; float &gt; &gt;</a></li>
-    <li class="footer">Generated on Sat Sep 24 2022 07:18:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Sep 26 2022 21:42:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

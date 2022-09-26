@@ -1,12 +1,11 @@
 var group__core =
 [
     [ "wpi::memory::", "conceptwpi_1_1memory_1_1.html", null ],
-    [ "wpi::memory::br", "conceptwpi_1_1memory_1_1br.html", null ],
-    [ "wpi::memory::and", "conceptwpi_1_1memory_1_1and.html", null ],
     [ "wpi::memory::for", "conceptwpi_1_1memory_1_1for.html", null ],
     [ "wpi::memory::of", "conceptwpi_1_1memory_1_1of.html", null ],
     [ "wpi::memory::is", "conceptwpi_1_1memory_1_1is.html", null ],
-    [ "wpi::memory::allocator_is_raw_allocator< std::allocator< T > >", "structwpi_1_1memory_1_1allocator__is__raw__allocator_3_01std_1_1allocator_3_01_t_01_4_01_4.html", null ],
+    [ "wpi::memory::br", "conceptwpi_1_1memory_1_1br.html", null ],
+    [ "wpi::memory::and", "conceptwpi_1_1memory_1_1and.html", null ],
     [ "wpi::memory::allocator_info", "structwpi_1_1memory_1_1allocator__info.html", [
       [ "allocator_info", "structwpi_1_1memory_1_1allocator__info.html#ac1aea2e36e8ecd0df984a32a51da63bc", null ],
       [ "operator!=", "structwpi_1_1memory_1_1allocator__info.html#abea413332235c0588040d5e6e58e4257", null ],
@@ -62,6 +61,7 @@ var group__core =
       [ "try_lock", "structwpi_1_1memory_1_1no__mutex.html#a5a13ce027cff5cc0a0639ebc8c7b7676", null ],
       [ "unlock", "structwpi_1_1memory_1_1no__mutex.html#ab0005cc0b668e7a0272b73338d954c8e", null ]
     ] ],
+    [ "wpi::memory::allocator_is_raw_allocator< std::allocator< T > >", "structwpi_1_1memory_1_1allocator__is__raw__allocator_3_01std_1_1allocator_3_01_t_01_4_01_4.html", null ],
     [ "wpi::memory::buffer_overflow_handler", "group__core.html#ga2838b189f63bb9505d4ec3ae9d572ee6", null ],
     [ "wpi::memory::invalid_pointer_handler", "group__core.html#ga5cab10357dccef1206a767c56cbbecb4", null ],
     [ "wpi::memory::leak_handler", "group__core.html#gaa4b33e608d367597cf4f0a0e525999a7", null ],

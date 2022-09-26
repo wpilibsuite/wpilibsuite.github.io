@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-120-ga791470</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('threading_8hpp_source.html',''); initR
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structwpi_1_1memory_1_1no__mutex.html#ab0005cc0b668e7a0272b73338d954c8e">   36</a></span>            <span class="keywordtype">void</span> <a class="code hl_function" href="structwpi_1_1memory_1_1no__mutex.html#ab0005cc0b668e7a0272b73338d954c8e">unlock</a>() noexcept {}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        };</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        /// Specifies whether or not a \concept{concept_rawallocator,RawAllocator} is thread safe as-is.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="conceptwpi_1_1memory_1_1is.html">   39</a></span><span class="comment">        /// Specifies whether or not a \concept{concept_rawallocator,RawAllocator} is thread safe as-is.</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">        /// This allows to use \ref no_mutex as an optimization.</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">        /// Note that stateless allocators are implictly thread-safe.</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">        /// Specialize it only for your own stateful allocators.</span></div>
@@ -270,11 +270,11 @@ $(document).ready(function(){initNavTree('threading_8hpp_source.html',''); initR
 <div class="ttc" id="aconceptwpi_1_1memory_1_1a_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1a.html">wpi::memory::a</a></div><div class="ttdoc">The number of segregator has.</div></div>
 <div class="ttc" id="aconfig_8hpp_html"><div class="ttname"><a href="config_8hpp.html">config.hpp</a></div><div class="ttdoc">Configuration macros.</div></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> xchar.h:16</div></div>
+<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> args.h:19</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a71e3fca3cbd8fbd8a2ce07d29af11172"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a71e3fca3cbd8fbd8a2ce07d29af11172">wpi::memory::detail::mutex_for</a></div><div class="ttdeci">typename std::conditional&lt; is_thread_safe_allocator&lt; RawAllocator &gt;::value, no_mutex, Mutex &gt;::type mutex_for</div><div class="ttdef"><b>Definition:</b> threading.hpp:57</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a746cb12c01973c8e0b361184fd3d23b8"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a746cb12c01973c8e0b361184fd3d23b8">wpi::memory::detail::lock_allocator</a></div><div class="ttdeci">locked_allocator&lt; Alloc, Mutex &gt; lock_allocator(Alloc &amp;a, Mutex &amp;m)</div><div class="ttdef"><b>Definition:</b> threading.hpp:147</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_html"><div class="ttname"><a href="namespacewpi_1_1memory.html">wpi::memory</a></div><div class="ttdoc">Memory namespace.</div><div class="ttdef"><b>Definition:</b> default_allocator.hpp:24</div></div>
-<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:9</div></div>
+<div class="ttc" id="anamespacewpi_1_1memory_html"><div class="ttname"><a href="namespacewpi_1_1memory.html">wpi::memory</a></div><div class="ttdoc">Memory namespace.</div><div class="ttdef"><b>Definition:</b> error.hpp:19</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="astructwpi_1_1memory_1_1is__thread__safe__allocator_html"><div class="ttname"><a href="structwpi_1_1memory_1_1is__thread__safe__allocator.html">wpi::memory::is_thread_safe_allocator</a></div><div class="ttdef"><b>Definition:</b> threading.hpp:47</div></div>
 <div class="ttc" id="astructwpi_1_1memory_1_1no__mutex_html"><div class="ttname"><a href="structwpi_1_1memory_1_1no__mutex.html">wpi::memory::no_mutex</a></div><div class="ttdoc">A dummy Mutex class that does not lock anything.</div><div class="ttdef"><b>Definition:</b> threading.hpp:28</div></div>
 <div class="ttc" id="astructwpi_1_1memory_1_1no__mutex_html_a5a13ce027cff5cc0a0639ebc8c7b7676"><div class="ttname"><a href="structwpi_1_1memory_1_1no__mutex.html#a5a13ce027cff5cc0a0639ebc8c7b7676">wpi::memory::no_mutex::try_lock</a></div><div class="ttdeci">bool try_lock() noexcept</div><div class="ttdef"><b>Definition:</b> threading.hpp:31</div></div>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('threading_8hpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_546ba5aa787ced15236f35cd8ec24069.html">memory</a></li><li class="navelem"><a class="el" href="dir_8cade806b5335aefc15c83738d476d10.html">include</a></li><li class="navelem"><a class="el" href="dir_f60925f5d3c309ad67c392036ce6f1d3.html">wpi</a></li><li class="navelem"><a class="el" href="dir_af118afc52e1adc19596c0ca28b55f16.html">memory</a></li><li class="navelem"><a class="el" href="threading_8hpp.html">threading.hpp</a></li>
-    <li class="footer">Generated on Sat Sep 24 2022 07:17:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Sep 26 2022 21:42:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
