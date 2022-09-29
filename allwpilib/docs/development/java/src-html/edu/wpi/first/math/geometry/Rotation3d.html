@@ -258,139 +258,149 @@
 <span class="sourceLineNo">246</span><a id="line.246">  }</a>
 <span class="sourceLineNo">247</span><a id="line.247"></a>
 <span class="sourceLineNo">248</span><a id="line.248">  /**</a>
-<span class="sourceLineNo">249</span><a id="line.249">   * Adds the new rotation to the current rotation.</a>
+<span class="sourceLineNo">249</span><a id="line.249">   * Divides the current rotation by a scalar.</a>
 <span class="sourceLineNo">250</span><a id="line.250">   *</a>
-<span class="sourceLineNo">251</span><a id="line.251">   * @param other The rotation to rotate by.</a>
-<span class="sourceLineNo">252</span><a id="line.252">   * @return The new rotated Rotation3d.</a>
+<span class="sourceLineNo">251</span><a id="line.251">   * @param scalar The scalar.</a>
+<span class="sourceLineNo">252</span><a id="line.252">   * @return The new scaled Rotation3d.</a>
 <span class="sourceLineNo">253</span><a id="line.253">   */</a>
-<span class="sourceLineNo">254</span><a id="line.254">  public Rotation3d rotateBy(Rotation3d other) {</a>
-<span class="sourceLineNo">255</span><a id="line.255">    return new Rotation3d(other.m_q.times(m_q));</a>
+<span class="sourceLineNo">254</span><a id="line.254">  public Rotation3d div(double scalar) {</a>
+<span class="sourceLineNo">255</span><a id="line.255">    return times(1.0 / scalar);</a>
 <span class="sourceLineNo">256</span><a id="line.256">  }</a>
 <span class="sourceLineNo">257</span><a id="line.257"></a>
 <span class="sourceLineNo">258</span><a id="line.258">  /**</a>
-<span class="sourceLineNo">259</span><a id="line.259">   * Returns the quaternion representation of the Rotation3d.</a>
+<span class="sourceLineNo">259</span><a id="line.259">   * Adds the new rotation to the current rotation.</a>
 <span class="sourceLineNo">260</span><a id="line.260">   *</a>
-<span class="sourceLineNo">261</span><a id="line.261">   * @return The quaternion representation of the Rotation3d.</a>
-<span class="sourceLineNo">262</span><a id="line.262">   */</a>
-<span class="sourceLineNo">263</span><a id="line.263">  public Quaternion getQuaternion() {</a>
-<span class="sourceLineNo">264</span><a id="line.264">    return m_q;</a>
-<span class="sourceLineNo">265</span><a id="line.265">  }</a>
-<span class="sourceLineNo">266</span><a id="line.266"></a>
-<span class="sourceLineNo">267</span><a id="line.267">  /**</a>
-<span class="sourceLineNo">268</span><a id="line.268">   * Returns the counterclockwise rotation angle around the X axis (roll) in radians.</a>
-<span class="sourceLineNo">269</span><a id="line.269">   *</a>
-<span class="sourceLineNo">270</span><a id="line.270">   * @return The counterclockwise rotation angle around the X axis (roll) in radians.</a>
-<span class="sourceLineNo">271</span><a id="line.271">   */</a>
-<span class="sourceLineNo">272</span><a id="line.272">  public double getX() {</a>
-<span class="sourceLineNo">273</span><a id="line.273">    final var w = m_q.getW();</a>
-<span class="sourceLineNo">274</span><a id="line.274">    final var x = m_q.getX();</a>
-<span class="sourceLineNo">275</span><a id="line.275">    final var y = m_q.getY();</a>
-<span class="sourceLineNo">276</span><a id="line.276">    final var z = m_q.getZ();</a>
-<span class="sourceLineNo">277</span><a id="line.277"></a>
-<span class="sourceLineNo">278</span><a id="line.278">    // https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles#Quaternion_to_Euler_angles_conversion</a>
-<span class="sourceLineNo">279</span><a id="line.279">    return Math.atan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));</a>
-<span class="sourceLineNo">280</span><a id="line.280">  }</a>
-<span class="sourceLineNo">281</span><a id="line.281"></a>
-<span class="sourceLineNo">282</span><a id="line.282">  /**</a>
-<span class="sourceLineNo">283</span><a id="line.283">   * Returns the counterclockwise rotation angle around the Y axis (pitch) in radians.</a>
-<span class="sourceLineNo">284</span><a id="line.284">   *</a>
-<span class="sourceLineNo">285</span><a id="line.285">   * @return The counterclockwise rotation angle around the Y axis (pitch) in radians.</a>
-<span class="sourceLineNo">286</span><a id="line.286">   */</a>
-<span class="sourceLineNo">287</span><a id="line.287">  public double getY() {</a>
-<span class="sourceLineNo">288</span><a id="line.288">    final var w = m_q.getW();</a>
-<span class="sourceLineNo">289</span><a id="line.289">    final var x = m_q.getX();</a>
-<span class="sourceLineNo">290</span><a id="line.290">    final var y = m_q.getY();</a>
-<span class="sourceLineNo">291</span><a id="line.291">    final var z = m_q.getZ();</a>
-<span class="sourceLineNo">292</span><a id="line.292"></a>
-<span class="sourceLineNo">293</span><a id="line.293">    // https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles#Quaternion_to_Euler_angles_conversion</a>
-<span class="sourceLineNo">294</span><a id="line.294">    double ratio = 2.0 * (w * y - z * x);</a>
-<span class="sourceLineNo">295</span><a id="line.295">    if (Math.abs(ratio) &gt;= 1.0) {</a>
-<span class="sourceLineNo">296</span><a id="line.296">      return Math.copySign(Math.PI / 2.0, ratio);</a>
-<span class="sourceLineNo">297</span><a id="line.297">    } else {</a>
-<span class="sourceLineNo">298</span><a id="line.298">      return Math.asin(ratio);</a>
-<span class="sourceLineNo">299</span><a id="line.299">    }</a>
-<span class="sourceLineNo">300</span><a id="line.300">  }</a>
-<span class="sourceLineNo">301</span><a id="line.301"></a>
-<span class="sourceLineNo">302</span><a id="line.302">  /**</a>
-<span class="sourceLineNo">303</span><a id="line.303">   * Returns the counterclockwise rotation angle around the Z axis (yaw) in radians.</a>
-<span class="sourceLineNo">304</span><a id="line.304">   *</a>
-<span class="sourceLineNo">305</span><a id="line.305">   * @return The counterclockwise rotation angle around the Z axis (yaw) in radians.</a>
-<span class="sourceLineNo">306</span><a id="line.306">   */</a>
-<span class="sourceLineNo">307</span><a id="line.307">  public double getZ() {</a>
-<span class="sourceLineNo">308</span><a id="line.308">    final var w = m_q.getW();</a>
-<span class="sourceLineNo">309</span><a id="line.309">    final var x = m_q.getX();</a>
-<span class="sourceLineNo">310</span><a id="line.310">    final var y = m_q.getY();</a>
-<span class="sourceLineNo">311</span><a id="line.311">    final var z = m_q.getZ();</a>
-<span class="sourceLineNo">312</span><a id="line.312"></a>
-<span class="sourceLineNo">313</span><a id="line.313">    // https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles#Quaternion_to_Euler_angles_conversion</a>
-<span class="sourceLineNo">314</span><a id="line.314">    return Math.atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));</a>
-<span class="sourceLineNo">315</span><a id="line.315">  }</a>
-<span class="sourceLineNo">316</span><a id="line.316"></a>
-<span class="sourceLineNo">317</span><a id="line.317">  /**</a>
-<span class="sourceLineNo">318</span><a id="line.318">   * Returns the axis in the axis-angle representation of this rotation.</a>
-<span class="sourceLineNo">319</span><a id="line.319">   *</a>
-<span class="sourceLineNo">320</span><a id="line.320">   * @return The axis in the axis-angle representation.</a>
-<span class="sourceLineNo">321</span><a id="line.321">   */</a>
-<span class="sourceLineNo">322</span><a id="line.322">  public Vector&lt;N3&gt; getAxis() {</a>
-<span class="sourceLineNo">323</span><a id="line.323">    double norm =</a>
-<span class="sourceLineNo">324</span><a id="line.324">        Math.sqrt(m_q.getX() * m_q.getX() + m_q.getY() * m_q.getY() + m_q.getZ() * m_q.getZ());</a>
-<span class="sourceLineNo">325</span><a id="line.325">    if (norm == 0.0) {</a>
-<span class="sourceLineNo">326</span><a id="line.326">      return VecBuilder.fill(0.0, 0.0, 0.0);</a>
-<span class="sourceLineNo">327</span><a id="line.327">    } else {</a>
-<span class="sourceLineNo">328</span><a id="line.328">      return VecBuilder.fill(m_q.getX() / norm, m_q.getY() / norm, m_q.getZ() / norm);</a>
-<span class="sourceLineNo">329</span><a id="line.329">    }</a>
-<span class="sourceLineNo">330</span><a id="line.330">  }</a>
-<span class="sourceLineNo">331</span><a id="line.331"></a>
-<span class="sourceLineNo">332</span><a id="line.332">  /**</a>
-<span class="sourceLineNo">333</span><a id="line.333">   * Returns the angle in radians in the axis-angle representation of this rotation.</a>
-<span class="sourceLineNo">334</span><a id="line.334">   *</a>
-<span class="sourceLineNo">335</span><a id="line.335">   * @return The angle in radians in the axis-angle representation of this rotation.</a>
-<span class="sourceLineNo">336</span><a id="line.336">   */</a>
-<span class="sourceLineNo">337</span><a id="line.337">  public double getAngle() {</a>
-<span class="sourceLineNo">338</span><a id="line.338">    double norm =</a>
-<span class="sourceLineNo">339</span><a id="line.339">        Math.sqrt(m_q.getX() * m_q.getX() + m_q.getY() * m_q.getY() + m_q.getZ() * m_q.getZ());</a>
-<span class="sourceLineNo">340</span><a id="line.340">    return 2.0 * Math.atan2(norm, m_q.getW());</a>
-<span class="sourceLineNo">341</span><a id="line.341">  }</a>
-<span class="sourceLineNo">342</span><a id="line.342"></a>
-<span class="sourceLineNo">343</span><a id="line.343">  /**</a>
-<span class="sourceLineNo">344</span><a id="line.344">   * Returns a Rotation2d representing this Rotation3d projected into the X-Y plane.</a>
-<span class="sourceLineNo">345</span><a id="line.345">   *</a>
-<span class="sourceLineNo">346</span><a id="line.346">   * @return A Rotation2d representing this Rotation3d projected into the X-Y plane.</a>
-<span class="sourceLineNo">347</span><a id="line.347">   */</a>
-<span class="sourceLineNo">348</span><a id="line.348">  public Rotation2d toRotation2d() {</a>
-<span class="sourceLineNo">349</span><a id="line.349">    return new Rotation2d(getZ());</a>
-<span class="sourceLineNo">350</span><a id="line.350">  }</a>
-<span class="sourceLineNo">351</span><a id="line.351"></a>
-<span class="sourceLineNo">352</span><a id="line.352">  @Override</a>
-<span class="sourceLineNo">353</span><a id="line.353">  public String toString() {</a>
-<span class="sourceLineNo">354</span><a id="line.354">    return String.format("Rotation3d(%s)", m_q);</a>
-<span class="sourceLineNo">355</span><a id="line.355">  }</a>
-<span class="sourceLineNo">356</span><a id="line.356"></a>
-<span class="sourceLineNo">357</span><a id="line.357">  /**</a>
-<span class="sourceLineNo">358</span><a id="line.358">   * Checks equality between this Rotation3d and another object.</a>
-<span class="sourceLineNo">359</span><a id="line.359">   *</a>
-<span class="sourceLineNo">360</span><a id="line.360">   * @param obj The other object.</a>
-<span class="sourceLineNo">361</span><a id="line.361">   * @return Whether the two objects are equal or not.</a>
-<span class="sourceLineNo">362</span><a id="line.362">   */</a>
-<span class="sourceLineNo">363</span><a id="line.363">  @Override</a>
-<span class="sourceLineNo">364</span><a id="line.364">  public boolean equals(Object obj) {</a>
-<span class="sourceLineNo">365</span><a id="line.365">    if (obj instanceof Rotation3d) {</a>
-<span class="sourceLineNo">366</span><a id="line.366">      var other = (Rotation3d) obj;</a>
-<span class="sourceLineNo">367</span><a id="line.367">      return m_q.equals(other.m_q);</a>
-<span class="sourceLineNo">368</span><a id="line.368">    }</a>
-<span class="sourceLineNo">369</span><a id="line.369">    return false;</a>
-<span class="sourceLineNo">370</span><a id="line.370">  }</a>
-<span class="sourceLineNo">371</span><a id="line.371"></a>
-<span class="sourceLineNo">372</span><a id="line.372">  @Override</a>
-<span class="sourceLineNo">373</span><a id="line.373">  public int hashCode() {</a>
-<span class="sourceLineNo">374</span><a id="line.374">    return Objects.hash(m_q);</a>
-<span class="sourceLineNo">375</span><a id="line.375">  }</a>
-<span class="sourceLineNo">376</span><a id="line.376"></a>
-<span class="sourceLineNo">377</span><a id="line.377">  @Override</a>
-<span class="sourceLineNo">378</span><a id="line.378">  public Rotation3d interpolate(Rotation3d endValue, double t) {</a>
-<span class="sourceLineNo">379</span><a id="line.379">    return plus(endValue.minus(this).times(MathUtil.clamp(t, 0, 1)));</a>
+<span class="sourceLineNo">261</span><a id="line.261">   * @param other The rotation to rotate by.</a>
+<span class="sourceLineNo">262</span><a id="line.262">   * @return The new rotated Rotation3d.</a>
+<span class="sourceLineNo">263</span><a id="line.263">   */</a>
+<span class="sourceLineNo">264</span><a id="line.264">  public Rotation3d rotateBy(Rotation3d other) {</a>
+<span class="sourceLineNo">265</span><a id="line.265">    return new Rotation3d(other.m_q.times(m_q));</a>
+<span class="sourceLineNo">266</span><a id="line.266">  }</a>
+<span class="sourceLineNo">267</span><a id="line.267"></a>
+<span class="sourceLineNo">268</span><a id="line.268">  /**</a>
+<span class="sourceLineNo">269</span><a id="line.269">   * Returns the quaternion representation of the Rotation3d.</a>
+<span class="sourceLineNo">270</span><a id="line.270">   *</a>
+<span class="sourceLineNo">271</span><a id="line.271">   * @return The quaternion representation of the Rotation3d.</a>
+<span class="sourceLineNo">272</span><a id="line.272">   */</a>
+<span class="sourceLineNo">273</span><a id="line.273">  public Quaternion getQuaternion() {</a>
+<span class="sourceLineNo">274</span><a id="line.274">    return m_q;</a>
+<span class="sourceLineNo">275</span><a id="line.275">  }</a>
+<span class="sourceLineNo">276</span><a id="line.276"></a>
+<span class="sourceLineNo">277</span><a id="line.277">  /**</a>
+<span class="sourceLineNo">278</span><a id="line.278">   * Returns the counterclockwise rotation angle around the X axis (roll) in radians.</a>
+<span class="sourceLineNo">279</span><a id="line.279">   *</a>
+<span class="sourceLineNo">280</span><a id="line.280">   * @return The counterclockwise rotation angle around the X axis (roll) in radians.</a>
+<span class="sourceLineNo">281</span><a id="line.281">   */</a>
+<span class="sourceLineNo">282</span><a id="line.282">  public double getX() {</a>
+<span class="sourceLineNo">283</span><a id="line.283">    final var w = m_q.getW();</a>
+<span class="sourceLineNo">284</span><a id="line.284">    final var x = m_q.getX();</a>
+<span class="sourceLineNo">285</span><a id="line.285">    final var y = m_q.getY();</a>
+<span class="sourceLineNo">286</span><a id="line.286">    final var z = m_q.getZ();</a>
+<span class="sourceLineNo">287</span><a id="line.287"></a>
+<span class="sourceLineNo">288</span><a id="line.288">    // https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles#Quaternion_to_Euler_angles_conversion</a>
+<span class="sourceLineNo">289</span><a id="line.289">    return Math.atan2(2.0 * (w * x + y * z), 1.0 - 2.0 * (x * x + y * y));</a>
+<span class="sourceLineNo">290</span><a id="line.290">  }</a>
+<span class="sourceLineNo">291</span><a id="line.291"></a>
+<span class="sourceLineNo">292</span><a id="line.292">  /**</a>
+<span class="sourceLineNo">293</span><a id="line.293">   * Returns the counterclockwise rotation angle around the Y axis (pitch) in radians.</a>
+<span class="sourceLineNo">294</span><a id="line.294">   *</a>
+<span class="sourceLineNo">295</span><a id="line.295">   * @return The counterclockwise rotation angle around the Y axis (pitch) in radians.</a>
+<span class="sourceLineNo">296</span><a id="line.296">   */</a>
+<span class="sourceLineNo">297</span><a id="line.297">  public double getY() {</a>
+<span class="sourceLineNo">298</span><a id="line.298">    final var w = m_q.getW();</a>
+<span class="sourceLineNo">299</span><a id="line.299">    final var x = m_q.getX();</a>
+<span class="sourceLineNo">300</span><a id="line.300">    final var y = m_q.getY();</a>
+<span class="sourceLineNo">301</span><a id="line.301">    final var z = m_q.getZ();</a>
+<span class="sourceLineNo">302</span><a id="line.302"></a>
+<span class="sourceLineNo">303</span><a id="line.303">    // https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles#Quaternion_to_Euler_angles_conversion</a>
+<span class="sourceLineNo">304</span><a id="line.304">    double ratio = 2.0 * (w * y - z * x);</a>
+<span class="sourceLineNo">305</span><a id="line.305">    if (Math.abs(ratio) &gt;= 1.0) {</a>
+<span class="sourceLineNo">306</span><a id="line.306">      return Math.copySign(Math.PI / 2.0, ratio);</a>
+<span class="sourceLineNo">307</span><a id="line.307">    } else {</a>
+<span class="sourceLineNo">308</span><a id="line.308">      return Math.asin(ratio);</a>
+<span class="sourceLineNo">309</span><a id="line.309">    }</a>
+<span class="sourceLineNo">310</span><a id="line.310">  }</a>
+<span class="sourceLineNo">311</span><a id="line.311"></a>
+<span class="sourceLineNo">312</span><a id="line.312">  /**</a>
+<span class="sourceLineNo">313</span><a id="line.313">   * Returns the counterclockwise rotation angle around the Z axis (yaw) in radians.</a>
+<span class="sourceLineNo">314</span><a id="line.314">   *</a>
+<span class="sourceLineNo">315</span><a id="line.315">   * @return The counterclockwise rotation angle around the Z axis (yaw) in radians.</a>
+<span class="sourceLineNo">316</span><a id="line.316">   */</a>
+<span class="sourceLineNo">317</span><a id="line.317">  public double getZ() {</a>
+<span class="sourceLineNo">318</span><a id="line.318">    final var w = m_q.getW();</a>
+<span class="sourceLineNo">319</span><a id="line.319">    final var x = m_q.getX();</a>
+<span class="sourceLineNo">320</span><a id="line.320">    final var y = m_q.getY();</a>
+<span class="sourceLineNo">321</span><a id="line.321">    final var z = m_q.getZ();</a>
+<span class="sourceLineNo">322</span><a id="line.322"></a>
+<span class="sourceLineNo">323</span><a id="line.323">    // https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles#Quaternion_to_Euler_angles_conversion</a>
+<span class="sourceLineNo">324</span><a id="line.324">    return Math.atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));</a>
+<span class="sourceLineNo">325</span><a id="line.325">  }</a>
+<span class="sourceLineNo">326</span><a id="line.326"></a>
+<span class="sourceLineNo">327</span><a id="line.327">  /**</a>
+<span class="sourceLineNo">328</span><a id="line.328">   * Returns the axis in the axis-angle representation of this rotation.</a>
+<span class="sourceLineNo">329</span><a id="line.329">   *</a>
+<span class="sourceLineNo">330</span><a id="line.330">   * @return The axis in the axis-angle representation.</a>
+<span class="sourceLineNo">331</span><a id="line.331">   */</a>
+<span class="sourceLineNo">332</span><a id="line.332">  public Vector&lt;N3&gt; getAxis() {</a>
+<span class="sourceLineNo">333</span><a id="line.333">    double norm =</a>
+<span class="sourceLineNo">334</span><a id="line.334">        Math.sqrt(m_q.getX() * m_q.getX() + m_q.getY() * m_q.getY() + m_q.getZ() * m_q.getZ());</a>
+<span class="sourceLineNo">335</span><a id="line.335">    if (norm == 0.0) {</a>
+<span class="sourceLineNo">336</span><a id="line.336">      return VecBuilder.fill(0.0, 0.0, 0.0);</a>
+<span class="sourceLineNo">337</span><a id="line.337">    } else {</a>
+<span class="sourceLineNo">338</span><a id="line.338">      return VecBuilder.fill(m_q.getX() / norm, m_q.getY() / norm, m_q.getZ() / norm);</a>
+<span class="sourceLineNo">339</span><a id="line.339">    }</a>
+<span class="sourceLineNo">340</span><a id="line.340">  }</a>
+<span class="sourceLineNo">341</span><a id="line.341"></a>
+<span class="sourceLineNo">342</span><a id="line.342">  /**</a>
+<span class="sourceLineNo">343</span><a id="line.343">   * Returns the angle in radians in the axis-angle representation of this rotation.</a>
+<span class="sourceLineNo">344</span><a id="line.344">   *</a>
+<span class="sourceLineNo">345</span><a id="line.345">   * @return The angle in radians in the axis-angle representation of this rotation.</a>
+<span class="sourceLineNo">346</span><a id="line.346">   */</a>
+<span class="sourceLineNo">347</span><a id="line.347">  public double getAngle() {</a>
+<span class="sourceLineNo">348</span><a id="line.348">    double norm =</a>
+<span class="sourceLineNo">349</span><a id="line.349">        Math.sqrt(m_q.getX() * m_q.getX() + m_q.getY() * m_q.getY() + m_q.getZ() * m_q.getZ());</a>
+<span class="sourceLineNo">350</span><a id="line.350">    return 2.0 * Math.atan2(norm, m_q.getW());</a>
+<span class="sourceLineNo">351</span><a id="line.351">  }</a>
+<span class="sourceLineNo">352</span><a id="line.352"></a>
+<span class="sourceLineNo">353</span><a id="line.353">  /**</a>
+<span class="sourceLineNo">354</span><a id="line.354">   * Returns a Rotation2d representing this Rotation3d projected into the X-Y plane.</a>
+<span class="sourceLineNo">355</span><a id="line.355">   *</a>
+<span class="sourceLineNo">356</span><a id="line.356">   * @return A Rotation2d representing this Rotation3d projected into the X-Y plane.</a>
+<span class="sourceLineNo">357</span><a id="line.357">   */</a>
+<span class="sourceLineNo">358</span><a id="line.358">  public Rotation2d toRotation2d() {</a>
+<span class="sourceLineNo">359</span><a id="line.359">    return new Rotation2d(getZ());</a>
+<span class="sourceLineNo">360</span><a id="line.360">  }</a>
+<span class="sourceLineNo">361</span><a id="line.361"></a>
+<span class="sourceLineNo">362</span><a id="line.362">  @Override</a>
+<span class="sourceLineNo">363</span><a id="line.363">  public String toString() {</a>
+<span class="sourceLineNo">364</span><a id="line.364">    return String.format("Rotation3d(%s)", m_q);</a>
+<span class="sourceLineNo">365</span><a id="line.365">  }</a>
+<span class="sourceLineNo">366</span><a id="line.366"></a>
+<span class="sourceLineNo">367</span><a id="line.367">  /**</a>
+<span class="sourceLineNo">368</span><a id="line.368">   * Checks equality between this Rotation3d and another object.</a>
+<span class="sourceLineNo">369</span><a id="line.369">   *</a>
+<span class="sourceLineNo">370</span><a id="line.370">   * @param obj The other object.</a>
+<span class="sourceLineNo">371</span><a id="line.371">   * @return Whether the two objects are equal or not.</a>
+<span class="sourceLineNo">372</span><a id="line.372">   */</a>
+<span class="sourceLineNo">373</span><a id="line.373">  @Override</a>
+<span class="sourceLineNo">374</span><a id="line.374">  public boolean equals(Object obj) {</a>
+<span class="sourceLineNo">375</span><a id="line.375">    if (obj instanceof Rotation3d) {</a>
+<span class="sourceLineNo">376</span><a id="line.376">      var other = (Rotation3d) obj;</a>
+<span class="sourceLineNo">377</span><a id="line.377">      return m_q.equals(other.m_q);</a>
+<span class="sourceLineNo">378</span><a id="line.378">    }</a>
+<span class="sourceLineNo">379</span><a id="line.379">    return false;</a>
 <span class="sourceLineNo">380</span><a id="line.380">  }</a>
-<span class="sourceLineNo">381</span><a id="line.381">}</a>
+<span class="sourceLineNo">381</span><a id="line.381"></a>
+<span class="sourceLineNo">382</span><a id="line.382">  @Override</a>
+<span class="sourceLineNo">383</span><a id="line.383">  public int hashCode() {</a>
+<span class="sourceLineNo">384</span><a id="line.384">    return Objects.hash(m_q);</a>
+<span class="sourceLineNo">385</span><a id="line.385">  }</a>
+<span class="sourceLineNo">386</span><a id="line.386"></a>
+<span class="sourceLineNo">387</span><a id="line.387">  @Override</a>
+<span class="sourceLineNo">388</span><a id="line.388">  public Rotation3d interpolate(Rotation3d endValue, double t) {</a>
+<span class="sourceLineNo">389</span><a id="line.389">    return plus(endValue.minus(this).times(MathUtil.clamp(t, 0, 1)));</a>
+<span class="sourceLineNo">390</span><a id="line.390">  }</a>
+<span class="sourceLineNo">391</span><a id="line.391">}</a>
 
 
 
