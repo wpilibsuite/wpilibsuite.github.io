@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-124-g38bb23e</span>
    </div>
   </td>
  </tr>
@@ -130,8 +130,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8c0add79817a34f71a10808c51c4e8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the transformation.  <a href="classfrc_1_1_transform2d.html#a8c0add79817a34f71a10808c51c4e8f1">More...</a><br /></td></tr>
 <tr class="separator:a8c0add79817a34f71a10808c51c4e8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addd8e78df9632f6b74301ea798aac22c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_transform2d.html">Transform2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_transform2d.html#addd8e78df9632f6b74301ea798aac22c">operator*</a> (double scalar) const</td></tr>
-<tr class="memdesc:addd8e78df9632f6b74301ea798aac22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the transform by the scalar.  <a href="classfrc_1_1_transform2d.html#addd8e78df9632f6b74301ea798aac22c">More...</a><br /></td></tr>
+<tr class="memdesc:addd8e78df9632f6b74301ea798aac22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the transform by the scalar.  <a href="classfrc_1_1_transform2d.html#addd8e78df9632f6b74301ea798aac22c">More...</a><br /></td></tr>
 <tr class="separator:addd8e78df9632f6b74301ea798aac22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4da35a18d87f1176576082413f14b66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_transform2d.html">Transform2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_transform2d.html#ae4da35a18d87f1176576082413f14b66">operator/</a> (double scalar) const</td></tr>
+<tr class="memdesc:ae4da35a18d87f1176576082413f14b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides the transform by the scalar.  <a href="classfrc_1_1_transform2d.html#ae4da35a18d87f1176576082413f14b66">More...</a><br /></td></tr>
+<tr class="separator:ae4da35a18d87f1176576082413f14b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade4943169fbbc538c2cdf23c5cc8cfac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_transform2d.html">Transform2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_transform2d.html#ade4943169fbbc538c2cdf23c5cc8cfac">operator+</a> (const <a class="el" href="classfrc_1_1_transform2d.html">Transform2d</a> &amp;other) const</td></tr>
 <tr class="memdesc:ade4943169fbbc538c2cdf23c5cc8cfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composes two transformations.  <a href="classfrc_1_1_transform2d.html#ade4943169fbbc538c2cdf23c5cc8cfac">More...</a><br /></td></tr>
 <tr class="separator:ade4943169fbbc538c2cdf23c5cc8cfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,7 +322,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Scales the transform by the scalar. </p>
+<p>Multiplies the transform by the scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scalar</td><td>The scalar. </td></tr>
@@ -354,6 +357,41 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The composition of the two transformations. </dd></dl>
+
+</div>
+</div>
+<a id="ae4da35a18d87f1176576082413f14b66" name="ae4da35a18d87f1176576082413f14b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4da35a18d87f1176576082413f14b66">&#9670;&nbsp;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_transform2d.html">Transform2d</a> frc::Transform2d::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Divides the transform by the scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>The scalar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The scaled <a class="el" href="classfrc_1_1_transform2d.html" title="Represents a transformation for a Pose2d.">Transform2d</a>. </dd></dl>
 
 </div>
 </div>
@@ -505,7 +543,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_transform2d.html">Transform2d</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 21:42:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 29 2022 04:38:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

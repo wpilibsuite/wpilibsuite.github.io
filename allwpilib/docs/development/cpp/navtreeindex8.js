@@ -1,7 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"_gyro_8h.html":[7,0,2,3,1],
-"_gyro_8h_source.html":[7,0,2,3,1],
 "_h_a_l_8h.html":[7,0,5,27],
 "_h_a_l_8h_source.html":[7,0,5,27],
 "_h_a_l_base_8h.html":[7,0,5,28],
@@ -239,8 +237,8 @@ var NAVTREEINDEX8 =
 "_inverse_size4_8h_source.html":[7,0,7,1,0,0,0,6,0,0],
 "_iterative_linear_solvers.html":[7,0,7,1,0,0,5],
 "_iterative_linear_solvers.html#aa19dec222fbdf65214fa03aff155d664":[7,0,7,1,0,0,5,0],
-"_iterative_robot_base_8h.html":[7,0,2,51],
-"_iterative_robot_base_8h_source.html":[7,0,2,51],
+"_iterative_robot_base_8h.html":[7,0,2,50],
+"_iterative_robot_base_8h_source.html":[7,0,2,50],
 "_iterative_solver_base_8h.html":[7,0,7,1,0,0,0,4,5],
 "_iterative_solver_base_8h_source.html":[7,0,7,1,0,0,0,4,5],
 "_jacobi.html":[7,0,7,1,0,0,6],
@@ -249,5 +247,7 @@ var NAVTREEINDEX8 =
 "_jacobi_8h.html#ab07ed3204e922baf601da0e8274d998c":[7,0,7,1,0,0,0,5,0,2],
 "_jacobi_8h_source.html":[7,0,7,1,0,0,0,5,0],
 "_jacobi_s_v_d_8h.html":[7,0,7,1,0,0,0,16,1],
-"_jacobi_s_v_d_8h_source.html":[7,0,7,1,0,0,0,16,1]
+"_jacobi_s_v_d_8h_source.html":[7,0,7,1,0,0,0,16,1],
+"_jaguar_8h.html":[7,0,2,5,1],
+"_jaguar_8h_source.html":[7,0,2,5,1]
 };

@@ -1,9 +1,7 @@
 var NAVTREEINDEX9 =
 {
-"_jaguar_8h.html":[7,0,2,5,1],
-"_jaguar_8h_source.html":[7,0,2,5,1],
-"_joystick_8h.html":[7,0,2,52],
-"_joystick_8h_source.html":[7,0,2,52],
+"_joystick_8h.html":[7,0,2,51],
+"_joystick_8h_source.html":[7,0,2,51],
 "_joystick_button_8h.html":[7,0,4,0,0,5],
 "_joystick_button_8h_source.html":[7,0,4,0,0,5],
 "_joystick_sim_8h.html":[7,0,2,7,27],
@@ -249,5 +247,7 @@ var NAVTREEINDEX9 =
 "_mapped_sparse_matrix_8h.html":[7,0,7,1,0,0,0,12,3],
 "_mapped_sparse_matrix_8h_source.html":[7,0,7,1,0,0,0,12,3],
 "_math_extras_8h.html":[7,0,8,3,0,0,19],
-"_math_extras_8h.html#a01982bb8b119d94de4200ed371ad5397":[7,0,8,3,0,0,19,62]
+"_math_extras_8h.html#a01982bb8b119d94de4200ed371ad5397":[7,0,8,3,0,0,19,62],
+"_math_extras_8h.html#a096e48bf0264a255eb2ff954146cc85b":[7,0,8,3,0,0,19,80],
+"_math_extras_8h.html#a0ca1a8d567765c25e5c8aaf6f2a3a51a":[7,0,8,3,0,0,19,58]
 };

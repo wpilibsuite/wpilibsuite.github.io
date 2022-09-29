@@ -1,5 +1,7 @@
 var NAVTREEINDEX145 =
 {
+"namespacewpi_1_1hashing_1_1detail.html#af2c68e80925cf66a933178d3d784f991":[4,0,22,1,0,21],
+"namespacewpi_1_1hashing_1_1detail.html#af92f08c0ae85e093aafeeb2791efb0c8":[4,0,22,1,0,18],
 "namespacewpi_1_1impl.html":[4,0,22,2],
 "namespacewpi_1_1java.html":[4,0,22,3],
 "namespacewpi_1_1java.html#a03d617c196aeee2778c8b22699dd4acb":[4,0,22,3,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX145 =
 "namespacewpi_1_1sig.html#a11d69cafc32da9fb567a7d3376f52a9f":[4,0,22,9,6],
 "namespacewpi_1_1sig.html#a49ce729c0c5d46801c8e09ecd3183206":[4,0,22,9,7],
 "namespacewpi_1_1sig.html#a6f2099017ee51f76c544c58d377ef038":[4,0,22,9,8],
-"namespacewpi_1_1sig_1_1detail.html":[4,0,22,9,0],
-"namespacewpi_1_1sig_1_1detail.html#ae9285405da5d87bb699b6f1ed01d93fd":[4,0,22,9,0,12],
-"namespacewpi_1_1sig_1_1trait.html":[4,0,22,9,1]
+"namespacewpi_1_1sig_1_1detail.html":[4,0,22,9,0]
 };

@@ -2,6 +2,7 @@ var classfrc_1_1_color =
 [
     [ "Color", "classfrc_1_1_color.html#a24089a998315ee2405cf7903a6eaf091", null ],
     [ "Color", "classfrc_1_1_color.html#a3f3ec4679fae082def6223159d3cecf8", null ],
+    [ "Color", "classfrc_1_1_color.html#a08d488358566bdf50628e061e79184f2", null ],
     [ "FromHSV", "classfrc_1_1_color.html#a40b1bce5f8bfe492a05a53ef1bb00e45", null ],
     [ "blue", "classfrc_1_1_color.html#a6a854a122a16594ccc9040e25503170b", null ],
     [ "green", "classfrc_1_1_color.html#a15b96eac9f0faaf19041c5310e6ac09d", null ],

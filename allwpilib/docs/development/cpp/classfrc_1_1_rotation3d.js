@@ -14,6 +14,7 @@ var classfrc_1_1_rotation3d =
     [ "operator+", "classfrc_1_1_rotation3d.html#a226f2d29b9f500e4ab0199b5d33f2f77", null ],
     [ "operator-", "classfrc_1_1_rotation3d.html#a0d4a43b9bcd0d7d495a56a6f5c2cbbbc", null ],
     [ "operator-", "classfrc_1_1_rotation3d.html#a2bfc5a8617883105256e2151db843ddc", null ],
+    [ "operator/", "classfrc_1_1_rotation3d.html#a505389b189b0ccd7c5c3efd48fed7562", null ],
     [ "operator==", "classfrc_1_1_rotation3d.html#a562f994b9fea2d4abc121bf7dde8be11", null ],
     [ "RotateBy", "classfrc_1_1_rotation3d.html#aa2a113546b8442f179866e4ca936cfdb", null ],
     [ "ToRotation2d", "classfrc_1_1_rotation3d.html#a068d0ebc3457534b7646249ff2bd6750", null ],

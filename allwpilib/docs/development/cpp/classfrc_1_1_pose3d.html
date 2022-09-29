@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-124-g38bb23e</span>
    </div>
   </td>
  </tr>
@@ -141,6 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4eebb8d9c383dee7b27ec91ce4f9a135"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_rotation3d.html">Rotation3d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose3d.html#a4eebb8d9c383dee7b27ec91ce4f9a135">Rotation</a> () const</td></tr>
 <tr class="memdesc:a4eebb8d9c383dee7b27ec91ce4f9a135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying rotation.  <a href="classfrc_1_1_pose3d.html#a4eebb8d9c383dee7b27ec91ce4f9a135">More...</a><br /></td></tr>
 <tr class="separator:a4eebb8d9c383dee7b27ec91ce4f9a135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8808339099aa25a58db8869e52f114ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose3d.html">Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose3d.html#a8808339099aa25a58db8869e52f114ff">operator*</a> (double scalar) const</td></tr>
+<tr class="memdesc:a8808339099aa25a58db8869e52f114ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the current pose by a scalar.  <a href="classfrc_1_1_pose3d.html#a8808339099aa25a58db8869e52f114ff">More...</a><br /></td></tr>
+<tr class="separator:a8808339099aa25a58db8869e52f114ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7aee255218ce2b05f3e38aed37d839c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose3d.html">Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose3d.html#ab7aee255218ce2b05f3e38aed37d839c">operator/</a> (double scalar) const</td></tr>
+<tr class="memdesc:ab7aee255218ce2b05f3e38aed37d839c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides the current pose by a scalar.  <a href="classfrc_1_1_pose3d.html#ab7aee255218ce2b05f3e38aed37d839c">More...</a><br /></td></tr>
+<tr class="separator:ab7aee255218ce2b05f3e38aed37d839c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22be64d4ccb7d36d17f1f3133ba45c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose3d.html">Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pose3d.html#a22be64d4ccb7d36d17f1f3133ba45c55">TransformBy</a> (const <a class="el" href="classfrc_1_1_transform3d.html">Transform3d</a> &amp;other) const</td></tr>
 <tr class="memdesc:a22be64d4ccb7d36d17f1f3133ba45c55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the pose by the given transformation and returns the new pose.  <a href="classfrc_1_1_pose3d.html#a22be64d4ccb7d36d17f1f3133ba45c55">More...</a><br /></td></tr>
 <tr class="separator:a22be64d4ccb7d36d17f1f3133ba45c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,6 +366,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8808339099aa25a58db8869e52f114ff" name="a8808339099aa25a58db8869e52f114ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8808339099aa25a58db8869e52f114ff">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_pose3d.html">Pose3d</a> frc::Pose3d::operator* </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Multiplies the current pose by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>The scalar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new scaled <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a>. </dd></dl>
+
+</div>
+</div>
 <a id="a84b219e82230edc2f0e87044321f9158" name="a84b219e82230edc2f0e87044321f9158"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84b219e82230edc2f0e87044321f9158">&#9670;&nbsp;</a></span>operator+()</h2>
 
@@ -411,6 +444,33 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The transform that maps the other pose to the current pose. </dd></dl>
+
+</div>
+</div>
+<a id="ab7aee255218ce2b05f3e38aed37d839c" name="ab7aee255218ce2b05f3e38aed37d839c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7aee255218ce2b05f3e38aed37d839c">&#9670;&nbsp;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_pose3d.html">Pose3d</a> frc::Pose3d::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Divides the current pose by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>The scalar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new scaled <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2D pose containing translational and rotational elements.">Pose2d</a>. </dd></dl>
 
 </div>
 </div>
@@ -665,7 +725,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_pose3d.html">Pose3d</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 21:42:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 29 2022 04:38:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

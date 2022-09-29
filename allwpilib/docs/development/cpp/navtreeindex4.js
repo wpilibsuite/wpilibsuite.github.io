@@ -159,8 +159,6 @@ var NAVTREEINDEX4 =
 "_conservative_sparse_sparse_product_8h_source.html":[7,0,7,1,0,0,0,12,2],
 "_control_affine_plant_inversion_feedforward_8h.html":[7,0,3,0,2],
 "_control_affine_plant_inversion_feedforward_8h_source.html":[7,0,3,0,2],
-"_controller_8h.html":[7,0,2,31],
-"_controller_8h_source.html":[7,0,2,31],
 "_convert_u_t_f_8h.html":[7,0,8,3,0,0,4],
 "_convert_u_t_f_8h.html#a051a613a70381a8d15a4ed7630bfd942":[7,0,8,3,0,0,4,23],
 "_convert_u_t_f_8h.html#a0b2b50e25edd8fc47c0ef3b0929a9aac":[7,0,8,3,0,0,4,14],
@@ -214,8 +212,8 @@ var NAVTREEINDEX4 =
 "_core_evaluators_8h_source.html":[7,0,7,1,0,0,0,1,15],
 "_core_iterators_8h.html":[7,0,7,1,0,0,0,1,16],
 "_core_iterators_8h_source.html":[7,0,7,1,0,0,0,1,16],
-"_counter_base_8h.html":[7,0,2,33],
-"_counter_base_8h_source.html":[7,0,2,33],
+"_counter_base_8h.html":[7,0,2,32],
+"_counter_base_8h_source.html":[7,0,2,32],
 "_cubic_hermite_spline_8h.html":[7,0,3,7,0],
 "_cubic_hermite_spline_8h_source.html":[7,0,3,7,0],
 "_cwise_binary_op_8h.html":[7,0,7,1,0,0,0,1,17],
@@ -249,5 +247,7 @@ var NAVTREEINDEX4 =
 "_d_i_o_data_8h.html#a92af327f39f034db42c30c5a6c48d3f9":[7,0,5,2,9,7],
 "_d_i_o_data_8h.html#a948e994be9bbed2f0a3503677e311840":[7,0,5,2,9,15],
 "_d_i_o_data_8h.html#a9aaf99abc337858ee4de4d362e6f5095":[7,0,5,2,9,18],
-"_d_i_o_data_8h.html#a9ff98d022f9b5ee48d7b54c9989fbabe":[7,0,5,2,9,11]
+"_d_i_o_data_8h.html#a9ff98d022f9b5ee48d7b54c9989fbabe":[7,0,5,2,9,11],
+"_d_i_o_data_8h.html#aa55f447a16d407ae2381f3423210e8b5":[7,0,5,2,9,8],
+"_d_i_o_data_8h.html#aac92176769993bbc2ef9e815f0409489":[7,0,5,2,9,12]
 };

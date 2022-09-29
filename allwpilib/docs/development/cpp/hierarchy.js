@@ -688,7 +688,6 @@ var hierarchy =
     [ "Eigen::SparseMatrixBase< Derived >::ConstSelfAdjointViewReturnType< UpLo >", "struct_eigen_1_1_sparse_matrix_base_1_1_const_self_adjoint_view_return_type.html", null ],
     [ "Eigen::MatrixBase< Derived >::ConstTriangularViewReturnType< Mode >", "struct_eigen_1_1_matrix_base_1_1_const_triangular_view_return_type.html", null ],
     [ "frc::ControlAffinePlantInversionFeedforward< States, Inputs >", "classfrc_1_1_control_affine_plant_inversion_feedforward.html", null ],
-    [ "frc::Controller", "classfrc_1_1_controller.html", null ],
     [ "frc::Spline< Degree >::ControlVector", "structfrc_1_1_spline_1_1_control_vector.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, bool >", "structwpi_1_1java_1_1detail_1_1_convert_int_array.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, true >", "structwpi_1_1java_1_1detail_1_1_convert_int_array_3_01_t_00_01true_01_4.html", null ],

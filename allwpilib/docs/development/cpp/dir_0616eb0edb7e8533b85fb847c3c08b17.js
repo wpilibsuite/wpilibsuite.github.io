@@ -31,7 +31,6 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "CAN.h", "wpilibc_2src_2main_2native_2include_2frc_2_c_a_n_8h.html", "wpilibc_2src_2main_2native_2include_2frc_2_c_a_n_8h" ],
     [ "Compressor.h", "_compressor_8h.html", "_compressor_8h" ],
     [ "CompressorConfigType.h", "_compressor_config_type_8h.html", "_compressor_config_type_8h" ],
-    [ "Controller.h", "_controller_8h.html", "_controller_8h" ],
     [ "Counter.h", "wpilibc_2src_2main_2native_2include_2frc_2_counter_8h.html", "wpilibc_2src_2main_2native_2include_2frc_2_counter_8h" ],
     [ "CounterBase.h", "_counter_base_8h.html", "_counter_base_8h" ],
     [ "DataLogManager.h", "_data_log_manager_8h.html", "_data_log_manager_8h" ],

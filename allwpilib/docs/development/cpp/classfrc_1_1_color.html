@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-124-g38bb23e</span>
    </div>
   </td>
  </tr>
@@ -111,8 +111,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24089a998315ee2405cf7903a6eaf091"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_color.html#a24089a998315ee2405cf7903a6eaf091">Color</a> ()=default</td></tr>
 <tr class="separator:a24089a998315ee2405cf7903a6eaf091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f3ec4679fae082def6223159d3cecf8"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_color.html#a3f3ec4679fae082def6223159d3cecf8">Color</a> (double r, double g, double b)</td></tr>
-<tr class="memdesc:a3f3ec4679fae082def6223159d3cecf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_color.html" title="Represents colors that can be used with Addressable LEDs.">Color</a>.  <a href="classfrc_1_1_color.html#a3f3ec4679fae082def6223159d3cecf8">More...</a><br /></td></tr>
+<tr class="memdesc:a3f3ec4679fae082def6223159d3cecf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_color.html" title="Represents colors that can be used with Addressable LEDs.">Color</a> from doubles (0-1).  <a href="classfrc_1_1_color.html#a3f3ec4679fae082def6223159d3cecf8">More...</a><br /></td></tr>
 <tr class="separator:a3f3ec4679fae082def6223159d3cecf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d488358566bdf50628e061e79184f2"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_color.html#a08d488358566bdf50628e061e79184f2">Color</a> (int r, int g, int b)</td></tr>
+<tr class="memdesc:a08d488358566bdf50628e061e79184f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_color.html" title="Represents colors that can be used with Addressable LEDs.">Color</a> from ints (0-255).  <a href="classfrc_1_1_color.html#a08d488358566bdf50628e061e79184f2">More...</a><br /></td></tr>
+<tr class="separator:a08d488358566bdf50628e061e79184f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -566,7 +569,7 @@ Static Public Attributes</h2></td></tr>
 <p >Limited to 12 bits of precision. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a24089a998315ee2405cf7903a6eaf091" name="a24089a998315ee2405cf7903a6eaf091"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24089a998315ee2405cf7903a6eaf091">&#9670;&nbsp;</a></span>Color() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a24089a998315ee2405cf7903a6eaf091">&#9670;&nbsp;</a></span>Color() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -591,7 +594,7 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a3f3ec4679fae082def6223159d3cecf8" name="a3f3ec4679fae082def6223159d3cecf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f3ec4679fae082def6223159d3cecf8">&#9670;&nbsp;</a></span>Color() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3ec4679fae082def6223159d3cecf8">&#9670;&nbsp;</a></span>Color() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -630,12 +633,64 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfrc_1_1_color.html" title="Represents colors that can be used with Addressable LEDs.">Color</a>. </p>
+<p>Constructs a <a class="el" href="classfrc_1_1_color.html" title="Represents colors that can be used with Addressable LEDs.">Color</a> from doubles (0-1). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">r</td><td>Red value (0-1) </td></tr>
     <tr><td class="paramname">g</td><td>Green value (0-1) </td></tr>
     <tr><td class="paramname">b</td><td>Blue value (0-1) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a08d488358566bdf50628e061e79184f2" name="a08d488358566bdf50628e061e79184f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d488358566bdf50628e061e79184f2">&#9670;&nbsp;</a></span>Color() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr frc::Color::Color </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1_color.html" title="Represents colors that can be used with Addressable LEDs.">Color</a> from ints (0-255). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>Red value (0-255) </td></tr>
+    <tr><td class="paramname">g</td><td>Green value (0-255) </td></tr>
+    <tr><td class="paramname">b</td><td>Blue value (0-255) </td></tr>
   </table>
   </dd>
 </dl>
@@ -686,7 +741,7 @@ Static Public Attributes</h2></td></tr>
 <p>Creates a <a class="el" href="classfrc_1_1_color.html" title="Represents colors that can be used with Addressable LEDs.">Color</a> from HSV values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">h</td><td>The h value [0-180] </td></tr>
+    <tr><td class="paramname">h</td><td>The h value [0-180) </td></tr>
     <tr><td class="paramname">s</td><td>The s value [0-255] </td></tr>
     <tr><td class="paramname">v</td><td>The v value [0-255] </td></tr>
   </table>
@@ -4224,7 +4279,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_color.html">Color</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 21:42:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 29 2022 04:38:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

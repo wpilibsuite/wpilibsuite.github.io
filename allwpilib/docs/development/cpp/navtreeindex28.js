@@ -1,11 +1,9 @@
 var NAVTREEINDEX28 =
 {
-"class_eigen_1_1_diagonal_preconditioner.html#abce7e6e756519949b58f201ef486d162":[3,36,1,11],
-"class_eigen_1_1_diagonal_preconditioner.html#ad66307f966798e1b9ebdc9ef2ddc8ea7":[3,36,1,7],
 "class_eigen_1_1_diagonal_preconditioner.html#ad7d67c2d25072f73543031e4853d443b":[3,36,1,2],
 "class_eigen_1_1_diagonal_preconditioner.html#ae7d19e26de3f8c96f659356b9453a788":[3,36,1,1],
-"class_eigen_1_1_diagonal_product.html":[4,0,8,74],
 "class_eigen_1_1_diagonal_product.html":[6,0,4,71],
+"class_eigen_1_1_diagonal_product.html":[4,0,8,74],
 "class_eigen_1_1_diagonal_wrapper.html":[3,31,16],
 "class_eigen_1_1_diagonal_wrapper.html#a092b3eb01f5202fb28cef77c1914b55c":[3,31,16,3],
 "class_eigen_1_1_diagonal_wrapper.html#a2d709c0cbb450dd9a8463dffcab5fb3d":[3,31,16,1],
@@ -44,8 +42,8 @@ var NAVTREEINDEX28 =
 "class_eigen_1_1_eigen_solver.html#adc446bcb60572758fa64515f2825db62":[3,38,7,2],
 "class_eigen_1_1_eigen_solver.html#ae33fb99005024f07005ab1e409413c5f":[3,38,7,14],
 "class_eigen_1_1_eigen_solver.html#aff5c2bd7843aacdcd59b9cbe420752ff":[3,38,7,13],
-"class_eigen_1_1_flagged.html":[6,0,4,77],
 "class_eigen_1_1_flagged.html":[4,0,8,80],
+"class_eigen_1_1_flagged.html":[6,0,4,77],
 "class_eigen_1_1_force_aligned_access.html":[3,31,28],
 "class_eigen_1_1_force_aligned_access.html#a141302f9b4742f9d36874ac67cff11b4":[3,31,28,6],
 "class_eigen_1_1_force_aligned_access.html#a154c0fa31a48ac44675adf4bf3c1936d":[3,31,28,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX28 =
 "class_eigen_1_1_householder_q_r.html#aef2e07eccf00487740690992eba6530a":[3,30,3,5],
 "class_eigen_1_1_householder_q_r.html#af61b6dbef34fc51c825182b16dc43ca1":[3,30,3,19],
 "class_eigen_1_1_householder_q_r.html#afa7cfb4faa89195c4dc8d196924c8230":[3,30,3,8],
-"class_eigen_1_1_householder_q_r.html#affd506c10ef2d25f56e7b1f9f25ff885":[3,30,3,18]
+"class_eigen_1_1_householder_q_r.html#affd506c10ef2d25f56e7b1f9f25ff885":[3,30,3,18],
+"class_eigen_1_1_householder_sequence.html":[3,28,0],
+"class_eigen_1_1_householder_sequence.html#a02014cb7359500d5bd51b6f8ee4d34fc":[3,28,0,18]
 };

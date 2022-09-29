@@ -7,6 +7,7 @@ var classfrc_1_1_transform2d =
     [ "operator!=", "classfrc_1_1_transform2d.html#a4b4f1c481967b41b56a1225858013a7b", null ],
     [ "operator*", "classfrc_1_1_transform2d.html#addd8e78df9632f6b74301ea798aac22c", null ],
     [ "operator+", "classfrc_1_1_transform2d.html#ade4943169fbbc538c2cdf23c5cc8cfac", null ],
+    [ "operator/", "classfrc_1_1_transform2d.html#ae4da35a18d87f1176576082413f14b66", null ],
     [ "operator==", "classfrc_1_1_transform2d.html#ac3b3aa856dd66518d58400a97fdb0570", null ],
     [ "Rotation", "classfrc_1_1_transform2d.html#a0f1c9df01d08bdf6b3a8504e7891b474", null ],
     [ "Translation", "classfrc_1_1_transform2d.html#acc40b3955bd8a9a0e377cc74faf12d57", null ],

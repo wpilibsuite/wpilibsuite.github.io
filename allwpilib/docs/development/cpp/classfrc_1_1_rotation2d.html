@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-124-g38bb23e</span>
    </div>
   </td>
  </tr>
@@ -129,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a40c7e7761d42be55d9fb2a5cc4a27443"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation2d.html#a40c7e7761d42be55d9fb2a5cc4a27443">operator*</a> (double scalar) const</td></tr>
 <tr class="memdesc:a40c7e7761d42be55d9fb2a5cc4a27443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the current rotation by a scalar.  <a href="classfrc_1_1_rotation2d.html#a40c7e7761d42be55d9fb2a5cc4a27443">More...</a><br /></td></tr>
 <tr class="separator:a40c7e7761d42be55d9fb2a5cc4a27443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ca5d2a8f980a36fbec9e686a9aead16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation2d.html#a5ca5d2a8f980a36fbec9e686a9aead16">operator/</a> (double scalar) const</td></tr>
+<tr class="memdesc:a5ca5d2a8f980a36fbec9e686a9aead16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides the current rotation by a scalar.  <a href="classfrc_1_1_rotation2d.html#a5ca5d2a8f980a36fbec9e686a9aead16">More...</a><br /></td></tr>
+<tr class="separator:a5ca5d2a8f980a36fbec9e686a9aead16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ca68e6ecd1f3a15bd5012e9586a42d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation2d.html#ae2ca68e6ecd1f3a15bd5012e9586a42d">operator==</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;other) const</td></tr>
 <tr class="memdesc:ae2ca68e6ecd1f3a15bd5012e9586a42d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks equality between this <a class="el" href="classfrc_1_1_rotation2d.html" title="A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).">Rotation2d</a> and another object.  <a href="classfrc_1_1_rotation2d.html#ae2ca68e6ecd1f3a15bd5012e9586a42d">More...</a><br /></td></tr>
 <tr class="separator:ae2ca68e6ecd1f3a15bd5012e9586a42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,6 +465,33 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a5ca5d2a8f980a36fbec9e686a9aead16" name="a5ca5d2a8f980a36fbec9e686a9aead16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ca5d2a8f980a36fbec9e686a9aead16">&#9670;&nbsp;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> frc::Rotation2d::operator/ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scalar</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Divides the current rotation by a scalar. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">scalar</td><td>The scalar.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new scaled <a class="el" href="classfrc_1_1_rotation2d.html" title="A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).">Rotation2d</a>. </dd></dl>
+
+</div>
+</div>
 <a id="ae2ca68e6ecd1f3a15bd5012e9586a42d" name="ae2ca68e6ecd1f3a15bd5012e9586a42d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2ca68e6ecd1f3a15bd5012e9586a42d">&#9670;&nbsp;</a></span>operator==()</h2>
 
@@ -613,7 +643,7 @@ value_new = std::atan2(sin_new, cos_new)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a></li>
-    <li class="footer">Generated on Mon Sep 26 2022 21:42:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 29 2022 04:38:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

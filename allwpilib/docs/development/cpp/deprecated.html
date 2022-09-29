@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-121-g4ddb8aa</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-124-g38bb23e</span>
    </div>
   </td>
  </tr>
@@ -150,17 +150,15 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="class_eigen_1_1_vectorwise_op.html#a4907c654e5810edd98e4162093b19532">Eigen::VectorwiseOp&lt; ExpressionType, Direction &gt;::Index</a>  </dt>
 <dd><a class="anchor" id="_deprecated000028"></a>since <a class="el" href="namespace_eigen.html" title="Namespace containing all symbols from the Eigen library.">Eigen</a> 3.3  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_command.html#ac215e297864084cba7b0a4b6d4aa558f">frc2::Command::Perpetually</a>  () &amp;&amp;</dt>
-<dd><a class="anchor" id="_deprecated000056"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
+<dd><a class="anchor" id="_deprecated000055"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_command.html#a4a6078c253a1578b3310833dcdfc01f0">frc2::Command::WithInterrupt</a>  (std::function&lt; bool()&gt; condition) &amp;&amp;</dt>
-<dd><a class="anchor" id="_deprecated000055"></a>Replace with <a class="el" href="classfrc2_1_1_command.html#a3efbfb66ab740733b21354710aaea692" title="Decorates this command with an interrupt condition.">Until()</a>  </dd>
+<dd><a class="anchor" id="_deprecated000054"></a>Replace with <a class="el" href="classfrc2_1_1_command.html#a3efbfb66ab740733b21354710aaea692" title="Decorates this command with an interrupt condition.">Until()</a>  </dd>
 <dt>Class <a class="el" href="classfrc2_1_1_perpetual_command.html">frc2::PerpetualCommand</a>  </dt>
-<dd><a class="anchor" id="_deprecated000057"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
+<dd><a class="anchor" id="_deprecated000056"></a>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a>  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_camera_server.html#aa164416827096a45eb9e4fd14f2a3e61">frc::CameraServer::SetSize</a>  (int size)</dt>
 <dd><a class="anchor" id="_deprecated000018"></a>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1_camera_server.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_compressor.html#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">frc::Compressor::Enabled</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000051"></a>To avoid confusion in thinking this (re)enables the compressor use <a class="el" href="classfrc_1_1_compressor.html#a49311123c190a0720a82337be711da26" title="Returns whether the compressor is active or not.">IsEnabled()</a>.  </dd>
-<dt>Class <a class="el" href="classfrc_1_1_controller.html">frc::Controller</a>  </dt>
-<dd><a class="anchor" id="_deprecated000054"></a>Only used by the deprecated PIDController  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_encoder.html#af32f12dabd0175b8966aba92523d79b2">frc::Encoder::GetPeriod</a>  () const override</dt>
 <dd><a class="anchor" id="_deprecated000052"></a>Use getRate() in favor of this method.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_encoder.html#ab2314f41314a2961ed2034f3dab63bab">frc::Encoder::SetMaxPeriod</a>  (units::second_t maxPeriod) override</dt>
@@ -218,7 +216,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Sep 26 2022 21:42:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Sep 29 2022 04:38:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
