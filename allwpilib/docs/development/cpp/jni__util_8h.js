@@ -22,7 +22,7 @@ var jni__util_8h =
     [ "GetJavaStackTrace", "jni__util_8h.html#a6cbe25ac3d8be6df498bc791b999f143", null ],
     [ "MakeJBooleanArray", "jni__util_8h.html#a97f8291d4b825a3aa8b9cce0cb73289f", null ],
     [ "MakeJBooleanArray", "jni__util_8h.html#adcf8f55412f9e2f279bbeda3abb9c41b", null ],
-    [ "MakeJByteArray", "jni__util_8h.html#aca886121bf517a09913c060d6fe78db9", null ],
+    [ "MakeJByteArray", "jni__util_8h.html#ad2e97ec4fd711ec001dba396aad9b3c6", null ],
     [ "MakeJIntArray", "jni__util_8h.html#a5f408e0ceb0dd41758e6b43649847bfc", null ],
     [ "MakeJIntArray", "jni__util_8h.html#afd8252e0c11698f82fa6a139a9b69268", null ],
     [ "MakeJIntArray", "jni__util_8h.html#aaf77f2f93ed39e36454dc10072314efc", null ],

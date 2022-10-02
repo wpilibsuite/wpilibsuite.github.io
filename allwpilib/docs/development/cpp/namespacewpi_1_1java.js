@@ -15,7 +15,7 @@ var namespacewpi_1_1java =
     [ "GetJavaStackTrace", "namespacewpi_1_1java.html#a6cbe25ac3d8be6df498bc791b999f143", null ],
     [ "MakeJBooleanArray", "namespacewpi_1_1java.html#a97f8291d4b825a3aa8b9cce0cb73289f", null ],
     [ "MakeJBooleanArray", "namespacewpi_1_1java.html#adcf8f55412f9e2f279bbeda3abb9c41b", null ],
-    [ "MakeJByteArray", "namespacewpi_1_1java.html#aca886121bf517a09913c060d6fe78db9", null ],
+    [ "MakeJByteArray", "namespacewpi_1_1java.html#ad2e97ec4fd711ec001dba396aad9b3c6", null ],
     [ "MakeJIntArray", "namespacewpi_1_1java.html#a5f408e0ceb0dd41758e6b43649847bfc", null ],
     [ "MakeJIntArray", "namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268", null ],
     [ "MakeJIntArray", "namespacewpi_1_1java.html#aaf77f2f93ed39e36454dc10072314efc", null ],

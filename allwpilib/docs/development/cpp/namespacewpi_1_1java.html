@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-125-gb53b352</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-130-gceaf493</span>
    </div>
   </td>
  </tr>
@@ -155,9 +155,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afd8252e0c11698f82fa6a139a9b69268"><td class="memTemplItemLeft" align="right" valign="top">jintArray&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268">MakeJIntArray</a> (JNIEnv *env, const std::vector&lt; T &gt; &amp;arr)</td></tr>
 <tr class="memdesc:afd8252e0c11698f82fa6a139a9b69268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::vector to a jintArray.  <a href="namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268">More...</a><br /></td></tr>
 <tr class="separator:afd8252e0c11698f82fa6a139a9b69268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca886121bf517a09913c060d6fe78db9"><td class="memItemLeft" align="right" valign="top">jbyteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#aca886121bf517a09913c060d6fe78db9">MakeJByteArray</a> (JNIEnv *env, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str)</td></tr>
-<tr class="memdesc:aca886121bf517a09913c060d6fe78db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::string_view into a jbyteArray.  <a href="namespacewpi_1_1java.html#aca886121bf517a09913c060d6fe78db9">More...</a><br /></td></tr>
-<tr class="separator:aca886121bf517a09913c060d6fe78db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e97ec4fd711ec001dba396aad9b3c6"><td class="memItemLeft" align="right" valign="top">jbyteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#ad2e97ec4fd711ec001dba396aad9b3c6">MakeJByteArray</a> (JNIEnv *env, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; str)</td></tr>
+<tr class="memdesc:ad2e97ec4fd711ec001dba396aad9b3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a span into a jbyteArray.  <a href="namespacewpi_1_1java.html#ad2e97ec4fd711ec001dba396aad9b3c6">More...</a><br /></td></tr>
+<tr class="separator:ad2e97ec4fd711ec001dba396aad9b3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf8f55412f9e2f279bbeda3abb9c41b"><td class="memItemLeft" align="right" valign="top">jbooleanArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#adcf8f55412f9e2f279bbeda3abb9c41b">MakeJBooleanArray</a> (JNIEnv *env, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const int &gt; arr)</td></tr>
 <tr class="memdesc:adcf8f55412f9e2f279bbeda3abb9c41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an array of integers into a jbooleanArray.  <a href="namespacewpi_1_1java.html#adcf8f55412f9e2f279bbeda3abb9c41b">More...</a><br /></td></tr>
 <tr class="separator:adcf8f55412f9e2f279bbeda3abb9c41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -358,8 +358,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aca886121bf517a09913c060d6fe78db9" name="aca886121bf517a09913c060d6fe78db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca886121bf517a09913c060d6fe78db9">&#9670;&nbsp;</a></span>MakeJByteArray()</h2>
+<a id="ad2e97ec4fd711ec001dba396aad9b3c6" name="ad2e97ec4fd711ec001dba396aad9b3c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e97ec4fd711ec001dba396aad9b3c6">&#9670;&nbsp;</a></span>MakeJByteArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,7 +376,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>str</em>&#160;</td>
         </tr>
         <tr>
@@ -392,11 +392,11 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Convert a std::string_view into a jbyteArray. </p>
+<p>Convert a span into a jbyteArray. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">env</td><td>JRE environment. </td></tr>
-    <tr><td class="paramname">str</td><td>std::string_view to convert. </td></tr>
+    <tr><td class="paramname">str</td><td>span to convert. </td></tr>
   </table>
   </dd>
 </dl>
@@ -725,7 +725,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;                       siz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1java.html">java</a></li>
-    <li class="footer">Generated on Sun Oct 2 2022 04:12:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Oct 2 2022 13:31:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

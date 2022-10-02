@@ -22,6 +22,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "Logger.h", "_logger_8h.html", "_logger_8h" ],
     [ "MappedFileRegion.h", "_mapped_file_region_8h.html", "_mapped_file_region_8h" ],
     [ "math", "math.html", null ],
+    [ "MessagePack.h", "_message_pack_8h.html", "_message_pack_8h" ],
     [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
     [ "nodiscard.h", "nodiscard_8h.html", null ],
     [ "NullDeleter.h", "_null_deleter_8h.html", "_null_deleter_8h" ],

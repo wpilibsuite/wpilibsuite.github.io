@@ -1,5 +1,14 @@
 var NAVTREEINDEX127 =
 {
+"group__ntcore__file__cfunc.html":[3,12,6],
+"group__ntcore__file__cfunc.html#ga01f029e6f1a285478df59cf117f2f990":[3,12,6,0],
+"group__ntcore__file__cfunc.html#ga0d52a4cbf915e9e359795253c374cb8f":[3,12,6,2],
+"group__ntcore__file__cfunc.html#ga98568775e3f0a04f0d3eca8f36612796":[3,12,6,1],
+"group__ntcore__file__cfunc.html#gadd2a06bdadb068d48e6244048eaf1114":[3,12,6,3],
+"group__ntcore__file__func.html":[3,13,6],
+"group__ntcore__file__func.html#ga252af9a49f87c33bd0351b8da60c1176":[3,13,6,0],
+"group__ntcore__file__func.html#ga57141561faa1ad527b9a8b321fa1f39e":[3,13,6,2],
+"group__ntcore__file__func.html#gab1fe20b0b7372e4a79075cf5d783ffdb":[3,13,6,1],
 "group__ntcore__file__func.html#gadb8e03b9a4933a90fb2fd89a7ac2443b":[3,13,6,3],
 "group__ntcore__instance__cfunc.html":[3,12,0],
 "group__ntcore__instance__cfunc.html#ga0e9cfab896ccaf4bc31c2bcc1afae56f":[3,12,0,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX127 =
 "group__reader.html#ga86165fc780e7adef09f4b45aee54842a":[3,5,10],
 "group__reader.html#ga93f5ab68116c0de69a823d7d839f8033":[3,5,15],
 "group__reader.html#ga97127332a566ac5fd7da541cad50bac4":[3,5,32],
-"group__reader.html#ga97503ca06d41d58c60226b2732661eda":[3,5,3],
-"group__reader.html#gaa008b64c5a452b251f5b81717da3d404":[3,5,35],
-"group__reader.html#gaa4676c4b0761de4f864fd81c347a15a0":[3,5,9],
-"group__reader.html#gaa925114414e77ff809fcaaba399c8162":[3,5,37],
-"group__reader.html#gaaad37015e0c53704d9356de06b493de6":[3,5,11],
-"group__reader.html#gab3c8d9ebe78513a17a38af28f387d169":[3,4,59],
-"group__reader.html#gab3c8d9ebe78513a17a38af28f387d169":[3,5,43],
-"group__reader.html#gabe9a212641a4edd010ccdd9ecf888485":[3,5,47],
-"group__reader.html#gabe9a212641a4edd010ccdd9ecf888485":[3,4,63],
-"group__reader.html#gabf46d5fd103d44d03c412cb7bb52e2d0":[3,5,42]
+"group__reader.html#ga97503ca06d41d58c60226b2732661eda":[3,5,3]
 };

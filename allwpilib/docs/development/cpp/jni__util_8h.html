@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-125-gb53b352</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-130-gceaf493</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1java_1_1detail_1_1_j_array_ref_inner.html">wpi::java::detail::JArrayRefInner&lt; C, T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jbyte_01_4.html">wpi::java::detail::JArrayRefInner&lt; C, jbyte &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html" title="Base class for J*ArrayRef and CriticalJ*ArrayRef.">JArrayRefBase</a> to provide std::string_view conversion.  <a href="classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jbyte_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html" title="Base class for J*ArrayRef and CriticalJ*ArrayRef.">JArrayRefBase</a> to provide std::string_view conversion and <a class="el" href="classwpi_1_1span.html">span&lt;const uint8_t&gt;</a> conversion.  <a href="classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jbyte_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jlong_01_4.html">wpi::java::detail::JArrayRefInner&lt; C, jlong &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html" title="Base class for J*ArrayRef and CriticalJ*ArrayRef.">JArrayRefBase</a> to handle both "long long" and "long" on 64-bit systems.  <a href="classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jlong_01_4.html#details">More...</a><br /></td></tr>
@@ -200,9 +200,9 @@ Functions</h2></td></tr>
 <tr class="memitem:afd8252e0c11698f82fa6a139a9b69268"><td class="memTemplItemLeft" align="right" valign="top">jintArray&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268">wpi::java::MakeJIntArray</a> (JNIEnv *env, const std::vector&lt; T &gt; &amp;arr)</td></tr>
 <tr class="memdesc:afd8252e0c11698f82fa6a139a9b69268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::vector to a jintArray.  <a href="namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268">More...</a><br /></td></tr>
 <tr class="separator:afd8252e0c11698f82fa6a139a9b69268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca886121bf517a09913c060d6fe78db9"><td class="memItemLeft" align="right" valign="top">jbyteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#aca886121bf517a09913c060d6fe78db9">wpi::java::MakeJByteArray</a> (JNIEnv *env, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str)</td></tr>
-<tr class="memdesc:aca886121bf517a09913c060d6fe78db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::string_view into a jbyteArray.  <a href="namespacewpi_1_1java.html#aca886121bf517a09913c060d6fe78db9">More...</a><br /></td></tr>
-<tr class="separator:aca886121bf517a09913c060d6fe78db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e97ec4fd711ec001dba396aad9b3c6"><td class="memItemLeft" align="right" valign="top">jbyteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#ad2e97ec4fd711ec001dba396aad9b3c6">wpi::java::MakeJByteArray</a> (JNIEnv *env, span&lt; const uint8_t &gt; str)</td></tr>
+<tr class="memdesc:ad2e97ec4fd711ec001dba396aad9b3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a span into a jbyteArray.  <a href="namespacewpi_1_1java.html#ad2e97ec4fd711ec001dba396aad9b3c6">More...</a><br /></td></tr>
+<tr class="separator:ad2e97ec4fd711ec001dba396aad9b3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf8f55412f9e2f279bbeda3abb9c41b"><td class="memItemLeft" align="right" valign="top">jbooleanArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1java.html#adcf8f55412f9e2f279bbeda3abb9c41b">wpi::java::MakeJBooleanArray</a> (JNIEnv *env, span&lt; const int &gt; arr)</td></tr>
 <tr class="memdesc:adcf8f55412f9e2f279bbeda3abb9c41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an array of integers into a jbooleanArray.  <a href="namespacewpi_1_1java.html#adcf8f55412f9e2f279bbeda3abb9c41b">More...</a><br /></td></tr>
 <tr class="separator:adcf8f55412f9e2f279bbeda3abb9c41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,7 +293,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="jni__util_8h.html">jni_util.h</a></li>
-    <li class="footer">Generated on Sun Oct 2 2022 04:12:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Oct 2 2022 13:31:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

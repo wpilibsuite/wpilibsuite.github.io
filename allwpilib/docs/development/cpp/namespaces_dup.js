@@ -67,6 +67,13 @@ var namespaces_dup =
     [ "hal", "namespacehal.html", "namespacehal" ],
     [ "internal", "namespaceinternal.html", "namespaceinternal" ],
     [ "literals", "namespaceliterals.html", null ],
+    [ "mpack", "namespacempack.html", [
+      [ "mpack_expect_str", "namespacempack.html#ae3f52f08b5a99124f8b689328bf6cceb", null ],
+      [ "mpack_read_str", "namespacempack.html#ae7652794825b469ecc6fd22b83aa034b", null ],
+      [ "mpack_reader_init_data", "namespacempack.html#a966722711ad1814a109d7d12cb34994b", null ],
+      [ "mpack_write_bytes", "namespacempack.html#a7e53c8f8b865567a673c42532a6148f0", null ],
+      [ "mpack_write_str", "namespacempack.html#a081191e7dd35a4be74db72a49defddfa", null ]
+    ] ],
     [ "nt", "namespacent.html", "namespacent" ],
     [ "safe_duration_cast", "namespacesafe__duration__cast.html", [
       [ "lossless_integral_conversion", "namespacesafe__duration__cast.html#ac9b448822712d899ac8814dd4e0b6cc9", null ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX19 =
 {
+"_self_cwise_binary_op_8h_source.html":[7,0,7,1,0,0,0,1,61],
+"_selfadjoint_matrix_matrix_8h.html":[7,0,7,1,0,0,0,1,2,5],
+"_selfadjoint_matrix_matrix_8h_source.html":[7,0,7,1,0,0,0,1,2,5],
+"_selfadjoint_matrix_vector_8h.html":[7,0,7,1,0,0,0,1,2,6],
+"_selfadjoint_matrix_vector_8h_source.html":[7,0,7,1,0,0,0,1,2,6],
+"_selfadjoint_product_8h.html":[7,0,7,1,0,0,0,1,2,7],
+"_selfadjoint_product_8h_source.html":[7,0,7,1,0,0,0,1,2,7],
 "_selfadjoint_rank2_update_8h.html":[7,0,7,1,0,0,0,1,2,8],
 "_selfadjoint_rank2_update_8h_source.html":[7,0,7,1,0,0,0,1,2,8],
 "_sendable_8h.html":[7,0,11,1,0],
@@ -190,10 +197,10 @@ var NAVTREEINDEX19 =
 "_solve_with_guess_8h_source.html":[7,0,7,1,0,0,0,4,7],
 "_solver_base_8h.html":[7,0,7,1,0,0,0,1,63],
 "_solver_base_8h_source.html":[7,0,7,1,0,0,0,1,63],
-"_span_extras_8h.html":[7,0,11,32],
-"_span_extras_8h.html#a756d0431eaf3cc2f4c8d423398c36c06":[7,0,11,32,0],
-"_span_extras_8h.html#ac1971c129c3896d6dcc5c413c9255eae":[7,0,11,32,1],
-"_span_extras_8h_source.html":[7,0,11,32],
+"_span_extras_8h.html":[7,0,11,33],
+"_span_extras_8h.html#a756d0431eaf3cc2f4c8d423398c36c06":[7,0,11,33,0],
+"_span_extras_8h.html#ac1971c129c3896d6dcc5c413c9255eae":[7,0,11,33,1],
+"_span_extras_8h_source.html":[7,0,11,33],
 "_spark_8h.html":[7,0,2,5,13],
 "_spark_8h_source.html":[7,0,2,5,13],
 "_sparse_assign_8h.html":[7,0,7,1,0,0,0,12,4],
@@ -242,12 +249,5 @@ var NAVTREEINDEX19 =
 "_sparse_l_u_8h.html":[7,0,7,1,0,0,0,13,0],
 "_sparse_l_u_8h_source.html":[7,0,7,1,0,0,0,13,0],
 "_sparse_l_u___memory_8h.html":[7,0,7,1,0,0,0,13,7],
-"_sparse_l_u___memory_8h.html#a06f46a81823c2cad7049491f40de06e6":[7,0,7,1,0,0,0,13,7,0],
-"_sparse_l_u___memory_8h.html#a0b9d112ab610214735f9fcdb863287fb":[7,0,7,1,0,0,0,13,7,1],
-"_sparse_l_u___memory_8h_source.html":[7,0,7,1,0,0,0,13,7],
-"_sparse_l_u___structs_8h.html":[7,0,7,1,0,0,0,13,13],
-"_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9":[7,0,7,1,0,0,0,13,13,2],
-"_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9a67fdf1f8848c1619be225d5e2e5b26a1":[7,0,7,1,0,0,0,13,13,2,0],
-"_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9a89630f807204b5851cb6128f33df77ca":[7,0,7,1,0,0,0,13,13,2,2],
-"_sparse_l_u___structs_8h.html#a5ada550dfc9d36503a814391f7f68fc9a9f67b4f1730485e162f277e5f0926037":[7,0,7,1,0,0,0,13,13,2,5]
+"_sparse_l_u___memory_8h.html#a06f46a81823c2cad7049491f40de06e6":[7,0,7,1,0,0,0,13,7,0]
 };
