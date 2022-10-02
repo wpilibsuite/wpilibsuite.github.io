@@ -1,5 +1,7 @@
 var NAVTREEINDEX146 =
 {
+"namespacewpi_1_1sig.html#a6f2099017ee51f76c544c58d377ef038":[4,0,22,9,8],
+"namespacewpi_1_1sig_1_1detail.html":[4,0,22,9,0],
 "namespacewpi_1_1sig_1_1detail.html#ae9285405da5d87bb699b6f1ed01d93fd":[4,0,22,9,0,12],
 "namespacewpi_1_1sig_1_1trait.html":[4,0,22,9,1],
 "namespacewpi_1_1sig_1_1trait.html#a1862ba77d02d51ff569f9113a62b0b5b":[4,0,22,9,1,4],
@@ -239,15 +241,13 @@ var NAVTREEINDEX146 =
 "products_2_general_block_panel_kernel_8h.html#a3d25c17e046c1bc4de77c0b4d4267322":[7,0,7,1,0,0,0,1,2,0,29],
 "products_2_general_block_panel_kernel_8h.html#a3d2ed92f98d5bbeb8547c8cb056bdbc3":[7,0,7,1,0,0,0,1,2,0,47],
 "products_2_general_block_panel_kernel_8h.html#a419aa7e2be7215d78da06bb9c0034fb9":[7,0,7,1,0,0,0,1,2,0,38],
-"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,7,1,0,0,0,1,2,0,24],
-"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,7,1,0,0,0,1,2,0,23],
-"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,7,1,0,0,0,1,2,0,22],
 "products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,7,1,0,0,0,1,2,0,21],
+"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,7,1,0,0,0,1,2,0,22],
+"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,7,1,0,0,0,1,2,0,23],
+"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,7,1,0,0,0,1,2,0,24],
 "products_2_general_block_panel_kernel_8h.html#a666defcfcf2cee6d50436b4144abd49b":[7,0,7,1,0,0,0,1,2,0,37],
 "products_2_general_block_panel_kernel_8h.html#a7506ce2bffd0c4445381b89c43101abc":[7,0,7,1,0,0,0,1,2,0,25],
 "products_2_general_block_panel_kernel_8h.html#a79ced96f603f3cf40ee565c8fb9002fb":[7,0,7,1,0,0,0,1,2,0,53],
 "products_2_general_block_panel_kernel_8h.html#a8257011cae49b2992df612e2ae92d912":[7,0,7,1,0,0,0,1,2,0,35],
-"products_2_general_block_panel_kernel_8h.html#a8257011cae49b2992df612e2ae92d912a379c2f4a26b2c7ff52f0631a99784f49":[7,0,7,1,0,0,0,1,2,0,35,1],
-"products_2_general_block_panel_kernel_8h.html#a8257011cae49b2992df612e2ae92d912a430046160a17c8fda9047751c256c279":[7,0,7,1,0,0,0,1,2,0,35,2],
-"products_2_general_block_panel_kernel_8h.html#a8257011cae49b2992df612e2ae92d912a9586773fd5a366257f484da9a5e59fb3":[7,0,7,1,0,0,0,1,2,0,35,0]
+"products_2_general_block_panel_kernel_8h.html#a8257011cae49b2992df612e2ae92d912a379c2f4a26b2c7ff52f0631a99784f49":[7,0,7,1,0,0,0,1,2,0,35,1]
 };

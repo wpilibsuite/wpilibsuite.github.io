@@ -1,5 +1,7 @@
 var NAVTREEINDEX184 =
 {
+"structansi__color__escape.html#accaf4ee41a0d03b86a0115b45858b91f":[6,0,16,2],
+"structansi__color__escape.html#aef2a620f2e2a8f3a9a685fa018b68597":[6,0,16,1],
 "structarg__data.html":[6,0,19],
 "structarg__data.html#a066861f784ce8301389e9d1672e25142":[6,0,19,4],
 "structarg__data.html#a1c1f92742fd40957dd9eaeba38226854":[6,0,19,1],
@@ -44,9 +46,9 @@ var NAVTREEINDEX184 =
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[6,0,22,5],
 "structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[6,0,22,35],
 "structarg__mapper.html#a9a433929c4a9821e67847c3f3af1d8e2":[6,0,22,31],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[6,0,22,11],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[6,0,22,13],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[6,0,22,12],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[6,0,22,11],
 "structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16":[6,0,22,37],
 "structarg__mapper.html#aba49e677ad2ec1ce1e49fb888a6df858":[6,0,22,33],
 "structarg__mapper.html#abcdde144f8f751365322f26ce20f8616":[6,0,22,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX184 =
 "structcs_1_1_usb_camera_info.html#abf40fa4cd6a97e22bb93c0af1c52f471":[3,17,16,2],
 "structcs_1_1_video_mode.html":[3,17,17],
 "structcs_1_1_video_mode.html#a163bf1a68be118da4263fb77ff51620f":[3,17,17,2],
-"structcs_1_1_video_mode.html#a1ab1b4d090c15a11850819d4c2bafbb5":[3,17,17,1],
-"structcs_1_1_video_mode.html#a7edfda92cb98f2dfb6e91e310e73f8d1":[3,17,17,3],
-"structcs_1_1_video_mode.html#a7fd009ed027c50ca9790fd292aff9258":[3,17,17,5]
+"structcs_1_1_video_mode.html#a1ab1b4d090c15a11850819d4c2bafbb5":[3,17,17,1]
 };

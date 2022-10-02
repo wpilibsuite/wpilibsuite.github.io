@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-124-g38bb23e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-125-gb53b352</span>
    </div>
   </td>
  </tr>
@@ -189,13 +189,25 @@ $(document).ready(function(){initNavTree('_coordinate_system_8h_source.html','')
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classfrc_1_1_coordinate_system.html#a0dc6e0310307555b57e0a0c9d4993836">   94</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_pose3d.html">Pose3d</a> <a class="code hl_function" href="classfrc_1_1_coordinate_system.html#a0dc6e0310307555b57e0a0c9d4993836">Convert</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose3d.html">Pose3d</a>&amp; pose, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_coordinate_system.html">CoordinateSystem</a>&amp; <a class="code hl_variable" href="_third_party_notices_8txt.html#ae1e371287219a11d6a2498f92d3e15d2">from</a>,</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                        <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_coordinate_system.html">CoordinateSystem</a>&amp; to);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">// Rotation from this coordinate system to NWU coordinate system</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <a class="code hl_class" href="classfrc_1_1_rotation3d.html">Rotation3d</a> m_rotation;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"></span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   * Converts the given transform from one coordinate system to another.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   * @param transform The transform to convert.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   * @param from The coordinate system the transform starts in.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">   * @param to The coordinate system to which to convert.</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   * @return The given transform in the desired coordinate system.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classfrc_1_1_coordinate_system.html#ab6b4fce3e0833d7466f9e3287af85753">  105</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">Transform3d</a> <a class="code hl_function" href="classfrc_1_1_coordinate_system.html#ab6b4fce3e0833d7466f9e3287af85753">Convert</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">Transform3d</a>&amp; transform,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                             <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_coordinate_system.html">CoordinateSystem</a>&amp; <a class="code hl_variable" href="_third_party_notices_8txt.html#ae1e371287219a11d6a2498f92d3e15d2">from</a>,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                             <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_coordinate_system.html">CoordinateSystem</a>&amp; to);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="comment">// Rotation from this coordinate system to NWU coordinate system</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_class" href="classfrc_1_1_rotation3d.html">Rotation3d</a> m_rotation;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_coordinate_axis_8h_html"><div class="ttname"><a href="_coordinate_axis_8h.html">CoordinateAxis.h</a></div></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="a_pose3d_8h_html"><div class="ttname"><a href="_pose3d_8h.html">Pose3d.h</a></div></div>
@@ -214,11 +226,13 @@ $(document).ready(function(){initNavTree('_coordinate_system_8h_source.html','')
 <div class="ttc" id="aclassfrc_1_1_coordinate_system_html_a8fed39942fb46fca689f0245a92745f1"><div class="ttname"><a href="classfrc_1_1_coordinate_system.html#a8fed39942fb46fca689f0245a92745f1">frc::CoordinateSystem::Convert</a></div><div class="ttdeci">static Translation3d Convert(const Translation3d &amp;translation, const CoordinateSystem &amp;from, const CoordinateSystem &amp;to)</div><div class="ttdoc">Converts the given translation from one coordinate system to another.</div></div>
 <div class="ttc" id="aclassfrc_1_1_coordinate_system_html_a98ce648380a3de7626e802c982a42429"><div class="ttname"><a href="classfrc_1_1_coordinate_system.html#a98ce648380a3de7626e802c982a42429">frc::CoordinateSystem::EDN</a></div><div class="ttdeci">static const CoordinateSystem &amp; EDN()</div><div class="ttdoc">Returns an instance of the East-Down-North (EDN) coordinate system.</div></div>
 <div class="ttc" id="aclassfrc_1_1_coordinate_system_html_a9910986ef1f1d80150e1730bcaf2c653"><div class="ttname"><a href="classfrc_1_1_coordinate_system.html#a9910986ef1f1d80150e1730bcaf2c653">frc::CoordinateSystem::CoordinateSystem</a></div><div class="ttdeci">CoordinateSystem(CoordinateSystem &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclassfrc_1_1_coordinate_system_html_ab6b4fce3e0833d7466f9e3287af85753"><div class="ttname"><a href="classfrc_1_1_coordinate_system.html#ab6b4fce3e0833d7466f9e3287af85753">frc::CoordinateSystem::Convert</a></div><div class="ttdeci">static Transform3d Convert(const Transform3d &amp;transform, const CoordinateSystem &amp;from, const CoordinateSystem &amp;to)</div><div class="ttdoc">Converts the given transform from one coordinate system to another.</div></div>
 <div class="ttc" id="aclassfrc_1_1_coordinate_system_html_abd605324732c00f30d38630efb42e94c"><div class="ttname"><a href="classfrc_1_1_coordinate_system.html#abd605324732c00f30d38630efb42e94c">frc::CoordinateSystem::CoordinateSystem</a></div><div class="ttdeci">CoordinateSystem(const CoordinateAxis &amp;positiveX, const CoordinateAxis &amp;positiveY, const CoordinateAxis &amp;positiveZ)</div><div class="ttdoc">Constructs a coordinate system with the given cardinal directions for each axis.</div></div>
 <div class="ttc" id="aclassfrc_1_1_coordinate_system_html_abeaa3c9b34b1c9ddeaa86a1c0b3d6a5e"><div class="ttname"><a href="classfrc_1_1_coordinate_system.html#abeaa3c9b34b1c9ddeaa86a1c0b3d6a5e">frc::CoordinateSystem::Convert</a></div><div class="ttdeci">static Rotation3d Convert(const Rotation3d &amp;rotation, const CoordinateSystem &amp;from, const CoordinateSystem &amp;to)</div><div class="ttdoc">Converts the given rotation from one coordinate system to another.</div></div>
 <div class="ttc" id="aclassfrc_1_1_coordinate_system_html_af6bd0ffde2c3c94f83ab1d26df7e5948"><div class="ttname"><a href="classfrc_1_1_coordinate_system.html#af6bd0ffde2c3c94f83ab1d26df7e5948">frc::CoordinateSystem::NWU</a></div><div class="ttdeci">static const CoordinateSystem &amp; NWU()</div><div class="ttdoc">Returns an instance of the North-West-Up (NWU) coordinate system.</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose3d_html"><div class="ttname"><a href="classfrc_1_1_pose3d.html">frc::Pose3d</a></div><div class="ttdoc">Represents a 3D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose3d.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation3d_html"><div class="ttname"><a href="classfrc_1_1_rotation3d.html">frc::Rotation3d</a></div><div class="ttdoc">A rotation in a 3D coordinate frame represented by a quaternion.</div><div class="ttdef"><b>Definition:</b> Rotation3d.h:19</div></div>
+<div class="ttc" id="aclassfrc_1_1_transform3d_html"><div class="ttname"><a href="classfrc_1_1_transform3d.html">frc::Transform3d</a></div><div class="ttdoc">Represents a transformation for a Pose3d.</div><div class="ttdef"><b>Definition:</b> Transform3d.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1_translation3d_html"><div class="ttname"><a href="classfrc_1_1_translation3d.html">frc::Translation3d</a></div><div class="ttdoc">Represents a translation in 3D space.</div><div class="ttdef"><b>Definition:</b> Translation3d.h:23</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -227,7 +241,7 @@ $(document).ready(function(){initNavTree('_coordinate_system_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><a class="el" href="_coordinate_system_8h.html">CoordinateSystem.h</a></li>
-    <li class="footer">Generated on Thu Sep 29 2022 04:37:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Oct 2 2022 04:12:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
