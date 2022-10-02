@@ -122,9 +122,24 @@
 <span class="sourceLineNo">110</span><a id="line.110">   * @return The given pose in the desired coordinate system.</a>
 <span class="sourceLineNo">111</span><a id="line.111">   */</a>
 <span class="sourceLineNo">112</span><a id="line.112">  public static Pose3d convert(Pose3d pose, CoordinateSystem from, CoordinateSystem to) {</a>
-<span class="sourceLineNo">113</span><a id="line.113">    return pose.relativeTo(new Pose3d(new Translation3d(), to.m_rotation.minus(from.m_rotation)));</a>
-<span class="sourceLineNo">114</span><a id="line.114">  }</a>
-<span class="sourceLineNo">115</span><a id="line.115">}</a>
+<span class="sourceLineNo">113</span><a id="line.113">    return new Pose3d(</a>
+<span class="sourceLineNo">114</span><a id="line.114">        convert(pose.getTranslation(), from, to), convert(pose.getRotation(), from, to));</a>
+<span class="sourceLineNo">115</span><a id="line.115">  }</a>
+<span class="sourceLineNo">116</span><a id="line.116"></a>
+<span class="sourceLineNo">117</span><a id="line.117">  /**</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * Converts the given transform from one coordinate system to another.</a>
+<span class="sourceLineNo">119</span><a id="line.119">   *</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param transform The transform to convert.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * @param from The coordinate system the transform starts in.</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @param to The coordinate system to which to convert.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @return The given transform in the desired coordinate system.</a>
+<span class="sourceLineNo">124</span><a id="line.124">   */</a>
+<span class="sourceLineNo">125</span><a id="line.125">  public static Transform3d convert(</a>
+<span class="sourceLineNo">126</span><a id="line.126">      Transform3d transform, CoordinateSystem from, CoordinateSystem to) {</a>
+<span class="sourceLineNo">127</span><a id="line.127">    return new Transform3d(</a>
+<span class="sourceLineNo">128</span><a id="line.128">        convert(transform.getTranslation(), from, to), convert(transform.getRotation(), from, to));</a>
+<span class="sourceLineNo">129</span><a id="line.129">  }</a>
+<span class="sourceLineNo">130</span><a id="line.130">}</a>
 
 
 
