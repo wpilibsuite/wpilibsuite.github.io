@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"_matrix_logarithm_8h.html#a7cdde7861546c148b2067fd94b3933f0":[7,0,7,1,0,1,0,0,0,2,6],
+"_matrix_logarithm_8h.html#ab6cb311dc4965edfa087bc35a9ee99ed":[7,0,7,1,0,1,0,0,0,2,8],
 "_matrix_logarithm_8h.html#ac2de7acbbff34ec236ee5e9fdb2eee38":[7,0,7,1,0,1,0,0,0,2,4],
 "_matrix_logarithm_8h.html#ae0091d6d89ad60b1117bbb1b4b9901d0":[7,0,7,1,0,1,0,0,0,2,7],
 "_matrix_logarithm_8h_source.html":[7,0,7,1,0,1,0,0,0,2],
@@ -17,8 +19,8 @@ var NAVTREEINDEX11 =
 "_matrix_square_root_8h_source.html":[7,0,7,1,0,1,0,0,0,4],
 "_max_velocity_constraint_8h.html":[7,0,3,9,0,4],
 "_max_velocity_constraint_8h_source.html":[7,0,3,9,0,4],
-"_mecanum_controller_command_8h.html":[7,0,4,0,10],
-"_mecanum_controller_command_8h_source.html":[7,0,4,0,10],
+"_mecanum_controller_command_8h.html":[7,0,4,0,11],
+"_mecanum_controller_command_8h_source.html":[7,0,4,0,11],
 "_mecanum_drive_8h.html":[7,0,2,1,2],
 "_mecanum_drive_8h_source.html":[7,0,2,1,2],
 "_mecanum_drive_kinematics_8h.html":[7,0,3,6,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "_n_e_o_n_2_packet_math_8h.html#a075ada383ce5ad40525fd4dfe4ffbc6b":[7,0,7,1,0,0,0,1,0,2,3,712],
 "_n_e_o_n_2_packet_math_8h.html#a078f5cc78f41e43c2230efc916a77f3f":[7,0,7,1,0,0,0,1,0,2,3,739],
 "_n_e_o_n_2_packet_math_8h.html#a07ebf42eb8635c53e144dad7c93d6462":[7,0,7,1,0,0,0,1,0,2,3,468],
-"_n_e_o_n_2_packet_math_8h.html#a07f49ef4a34164770d9c82ac311d8321":[7,0,7,1,0,0,0,1,0,2,3,651],
-"_n_e_o_n_2_packet_math_8h.html#a0815f7fc7eccb5ad106cbb8e978c8106":[7,0,7,1,0,0,0,1,0,2,3,332],
-"_n_e_o_n_2_packet_math_8h.html#a08294f9800e35891b18c4f3f7f590eb8":[7,0,7,1,0,0,0,1,0,2,3,247]
+"_n_e_o_n_2_packet_math_8h.html#a07f49ef4a34164770d9c82ac311d8321":[7,0,7,1,0,0,0,1,0,2,3,651]
 };

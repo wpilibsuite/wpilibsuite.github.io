@@ -8,6 +8,7 @@ var namespacefrc2 =
     [ "CommandHelper", "classfrc2_1_1_command_helper.html", "classfrc2_1_1_command_helper" ],
     [ "CommandJoystick", "classfrc2_1_1_command_joystick.html", "classfrc2_1_1_command_joystick" ],
     [ "CommandPS4Controller", "classfrc2_1_1_command_p_s4_controller.html", "classfrc2_1_1_command_p_s4_controller" ],
+    [ "CommandPtr", "classfrc2_1_1_command_ptr.html", "classfrc2_1_1_command_ptr" ],
     [ "CommandScheduler", "classfrc2_1_1_command_scheduler.html", "classfrc2_1_1_command_scheduler" ],
     [ "CommandXboxController", "classfrc2_1_1_command_xbox_controller.html", "classfrc2_1_1_command_xbox_controller" ],
     [ "ConditionalCommand", "classfrc2_1_1_conditional_command.html", "classfrc2_1_1_conditional_command" ],
