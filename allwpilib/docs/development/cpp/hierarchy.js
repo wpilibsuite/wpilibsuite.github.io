@@ -504,12 +504,19 @@ var hierarchy =
           [ "frc2::EndlessCommand", "classfrc2_1_1_endless_command.html", null ]
         ] ],
         [ "frc2::CommandHelper< CommandBase, FunctionalCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::FunctionalCommand", "classfrc2_1_1_functional_command.html", null ]
-        ] ],
-        [ "frc2::CommandHelper< CommandBase, InstantCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::InstantCommand", "classfrc2_1_1_instant_command.html", [
-            [ "frc2::CommandHelper< InstantCommand, PrintCommand >", "classfrc2_1_1_command_helper.html", [
-              [ "frc2::PrintCommand", "classfrc2_1_1_print_command.html", null ]
+          [ "frc2::FunctionalCommand", "classfrc2_1_1_functional_command.html", [
+            [ "frc2::CommandHelper< FunctionalCommand, InstantCommand >", "classfrc2_1_1_command_helper.html", [
+              [ "frc2::InstantCommand", "classfrc2_1_1_instant_command.html", [
+                [ "frc2::CommandHelper< InstantCommand, PrintCommand >", "classfrc2_1_1_command_helper.html", [
+                  [ "frc2::PrintCommand", "classfrc2_1_1_print_command.html", null ]
+                ] ]
+              ] ]
+            ] ],
+            [ "frc2::CommandHelper< FunctionalCommand, RunCommand >", "classfrc2_1_1_command_helper.html", [
+              [ "frc2::RunCommand", "classfrc2_1_1_run_command.html", null ]
+            ] ],
+            [ "frc2::CommandHelper< FunctionalCommand, StartEndCommand >", "classfrc2_1_1_command_helper.html", [
+              [ "frc2::StartEndCommand", "classfrc2_1_1_start_end_command.html", null ]
             ] ]
           ] ]
         ] ],
@@ -537,17 +544,11 @@ var hierarchy =
         [ "frc2::CommandHelper< CommandBase, RepeatCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::RepeatCommand", "classfrc2_1_1_repeat_command.html", null ]
         ] ],
-        [ "frc2::CommandHelper< CommandBase, RunCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::RunCommand", "classfrc2_1_1_run_command.html", null ]
-        ] ],
         [ "frc2::CommandHelper< CommandBase, ScheduleCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::ScheduleCommand", "classfrc2_1_1_schedule_command.html", null ]
         ] ],
         [ "frc2::CommandHelper< CommandBase, SelectCommand< Key > >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::SelectCommand< Key >", "classfrc2_1_1_select_command.html", null ]
-        ] ],
-        [ "frc2::CommandHelper< CommandBase, StartEndCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::StartEndCommand", "classfrc2_1_1_start_end_command.html", null ]
         ] ],
         [ "frc2::CommandHelper< CommandBase, SwerveControllerCommand< NumModules > >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::SwerveControllerCommand< NumModules >", "classfrc2_1_1_swerve_controller_command.html", null ]
