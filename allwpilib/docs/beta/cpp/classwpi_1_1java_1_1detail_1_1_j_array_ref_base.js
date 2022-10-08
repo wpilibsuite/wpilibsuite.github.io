@@ -7,7 +7,6 @@ var classwpi_1_1java_1_1detail_1_1_j_array_ref_base =
     [ "JArrayRefBase", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html#a1281e2c6f617262e86210ab95fff2813", null ],
     [ "array", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html#a5b163a42630a582a540a4b6e54938f4b", null ],
     [ "operator bool", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html#a1b81de03d7c4f0c4c45a3742b3086288", null ],
-    [ "operator span< const T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html#aa5b470ded5978777992344492ca384cc", null ],
     [ "operator=", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html#a4c864289800749e439e5bb38f1f19bd5", null ],
     [ "operator=", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html#a7447d8887b34c0e739c86119ff6b0449", null ],
     [ "operator[]", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html#a5229bfc684a2c864a6d3a03c3139db1e", null ],

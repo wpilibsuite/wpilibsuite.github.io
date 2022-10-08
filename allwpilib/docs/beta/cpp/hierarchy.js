@@ -22,9 +22,14 @@ var hierarchy =
       [ "units::unit< Conversion, BaseUnit, PiExponent, Translation >", "structunits_1_1unit.html", null ]
     ] ],
     [ "units::detail::_unit_t", null, [
+      [ "units::unit_t< kv_unit >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< ka_unit >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< units::compound_unit< units::radians_per_second, units::inverse< units::volt > > >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< units::compound_unit< units::newton_meters, units::inverse< units::ampere > > >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< units::radian >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< Distance >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< b_unit >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< zeta_unit >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< Rate >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< Unit >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< units::compound_unit< units::radians, units::inverse< units::meters > > >", "classunits_1_1unit__t.html", null ],
@@ -54,7 +59,6 @@ var hierarchy =
       [ "frc::BuiltInAccelerometer", "classfrc_1_1_built_in_accelerometer.html", null ]
     ] ],
     [ "Eigen::internal::accessors_level< Derived >", "struct_eigen_1_1internal_1_1accessors__level.html", null ],
-    [ "detail::accumulator", "structdetail_1_1accumulator.html", null ],
     [ "Eigen::internal::accurate_log2< Scalar >", "struct_eigen_1_1internal_1_1accurate__log2.html", null ],
     [ "Eigen::internal::accurate_log2< double >", "struct_eigen_1_1internal_1_1accurate__log2_3_01double_01_4.html", null ],
     [ "Eigen::internal::accurate_log2< float >", "struct_eigen_1_1internal_1_1accurate__log2_3_01float_01_4.html", null ],
@@ -64,6 +68,7 @@ var hierarchy =
     [ "Eigen::internal::add_const< T & >", "struct_eigen_1_1internal_1_1add__const_3_01_t_01_6_01_4.html", null ],
     [ "Eigen::internal::add_const_on_value_type< T >", "struct_eigen_1_1internal_1_1add__const__on__value__type.html", null ],
     [ "Eigen::internal::add_const_on_value_type< ArgTypeNested >", "struct_eigen_1_1internal_1_1add__const__on__value__type.html", null ],
+    [ "Eigen::internal::add_const_on_value_type< Eigen::internal::true_type >", "struct_eigen_1_1internal_1_1add__const__on__value__type.html", null ],
     [ "Eigen::internal::add_const_on_value_type< T & >", "struct_eigen_1_1internal_1_1add__const__on__value__type_3_01_t_01_6_01_4.html", null ],
     [ "Eigen::internal::add_const_on_value_type< T * >", "struct_eigen_1_1internal_1_1add__const__on__value__type_3_01_t_01_5_01_4.html", null ],
     [ "Eigen::internal::add_const_on_value_type< T *const >", "struct_eigen_1_1internal_1_1add__const__on__value__type_3_01_t_01_5const_01_4.html", null ],
@@ -83,8 +88,12 @@ var hierarchy =
     [ "frc::sim::ADXL362Sim", "classfrc_1_1sim_1_1_a_d_x_l362_sim.html", null ],
     [ "frc::sim::ADXRS450_GyroSim", "classfrc_1_1sim_1_1_a_d_x_r_s450___gyro_sim.html", null ],
     [ "Eigen::internal::aligned_storage< Len, Align >", "struct_eigen_1_1internal_1_1aligned__storage.html", null ],
+    [ "Eigen::internal::aligned_storage< sizeof(Eigen::SparseMatrix), EIGEN_ALIGNOF(Eigen::SparseMatrix)>", "struct_eigen_1_1internal_1_1aligned__storage.html", null ],
+    [ "Eigen::internal::aligned_storage< sizeof(Eigen::SparseVector), EIGEN_ALIGNOF(Eigen::SparseVector)>", "struct_eigen_1_1internal_1_1aligned__storage.html", null ],
     [ "Eigen::AlignedBox< Scalar, Dim >", "class_eigen_1_1_aligned_box.html", null ],
     [ "wpi::AlignedCharArrayUnion< T, Ts >", "structwpi_1_1_aligned_char_array_union.html", null ],
+    [ "wpi::AlignedCharArrayUnion< wpi::detail::DenseMapPair< KeyT, unsigned >[InlineBuckets], LargeRep >", "structwpi_1_1_aligned_char_array_union.html", null ],
+    [ "wpi::AlignedCharArrayUnion< wpi::detail::DenseMapPair< KeyT, ValueT >[4], LargeRep >", "structwpi_1_1_aligned_char_array_union.html", null ],
     [ "Eigen::internal::all_t", "struct_eigen_1_1internal_1_1all__t.html", null ],
     [ "Eigen::internal::all_unroller< Derived, UnrollCount, Rows >", "struct_eigen_1_1internal_1_1all__unroller.html", null ],
     [ "Eigen::internal::all_unroller< Derived, 0, Rows >", "struct_eigen_1_1internal_1_1all__unroller_3_01_derived_00_010_00_01_rows_01_4.html", null ],
@@ -95,12 +104,37 @@ var hierarchy =
     [ "std::allocator", null, [
       [ "Eigen::aligned_allocator< T >", "class_eigen_1_1aligned__allocator.html", null ]
     ] ],
+    [ "wpi::memory::allocator_info", "structwpi_1_1memory_1_1allocator__info.html", null ],
+    [ "wpi::memory::traits_detail::allocator_rebinder< Allocator, T >", "structwpi_1_1memory_1_1traits__detail_1_1allocator__rebinder.html", null ],
+    [ "wpi::memory::traits_detail::allocator_rebinder< Alloc< U, Args... >, T >", "structwpi_1_1memory_1_1traits__detail_1_1allocator__rebinder_3_01_alloc_3_01_u_00_01_args_8_8_8_01_4_00_01_t_01_4.html", null ],
+    [ "wpi::memory::allocator_traits< Allocator >", "classwpi_1_1memory_1_1allocator__traits.html", null ],
+    [ "wpi::memory::allocator_traits< iteration_allocator< N, BlockAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html", null ],
+    [ "wpi::memory::allocator_traits< memory_pool< PoolType, ImplRawAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html", null ],
+    [ "wpi::memory::allocator_traits< memory_pool_collection< Pool, BucketDist, RawAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool__collection_3_01_pool_00_01_bucket_dist_00_01_raw_allocator_01_4_01_4.html", null ],
+    [ "wpi::memory::allocator_traits< memory_stack< BlockAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html", null ],
+    [ "wpi::memory::allocator_traits< temporary_allocator >", "classwpi_1_1memory_1_1allocator__traits_3_01temporary__allocator_01_4.html", null ],
+    [ "allocator_traits::allocator_type", null, [
+      [ "wpi::memory::tracked_allocator< Tracker, RawAllocator >", "classwpi_1_1memory_1_1tracked__allocator.html", null ]
+    ] ],
+    [ "WPI_EBOallocator_traits::allocator_type", null, [
+      [ "wpi::memory::fixed_block_allocator< RawAllocator >", "classwpi_1_1memory_1_1fixed__block__allocator.html", null ],
+      [ "wpi::memory::growing_block_allocator< RawAllocator, Num, Den >", "classwpi_1_1memory_1_1growing__block__allocator.html", null ]
+    ] ],
+    [ "WPI_EBOallocator_traits::allocator_type", null, [
+      [ "wpi::memory::aligned_allocator< RawAllocator >", "classwpi_1_1memory_1_1aligned__allocator.html", null ],
+      [ "wpi::memory::direct_storage< RawAllocator >", "classwpi_1_1memory_1_1direct__storage.html", null ],
+      [ "wpi::memory::memory_resource_adapter< RawAllocator >", "classwpi_1_1memory_1_1memory__resource__adapter.html", null ],
+      [ "wpi::memory::threshold_segregatable< RawAllocator >", "classwpi_1_1memory_1_1threshold__segregatable.html", null ]
+    ] ],
+    [ "wpi::memory::traits_detail::allocator_type_impl< Allocator >", "structwpi_1_1memory_1_1traits__detail_1_1allocator__type__impl.html", null ],
     [ "wpi::AllocatorBase< DerivedT >", "classwpi_1_1_allocator_base.html", null ],
     [ "wpi::AllocatorBase< MallocAllocator >", "classwpi_1_1_allocator_base.html", [
       [ "wpi::MallocAllocator", "classwpi_1_1_malloc_allocator.html", null ]
     ] ],
     [ "Eigen::internal::AllRange< XprSize >", "struct_eigen_1_1internal_1_1_all_range.html", null ],
     [ "Eigen::internal::always_void< T >", "struct_eigen_1_1internal_1_1always__void.html", null ],
+    [ "Eigen::internal::AmbiVector< _Scalar, _StorageIndex >", "class_eigen_1_1internal_1_1_ambi_vector.html", null ],
+    [ "Eigen::AMDOrdering< StorageIndex >", "class_eigen_1_1_a_m_d_ordering.html", null ],
     [ "frc::sim::AnalogEncoderSim", "classfrc_1_1sim_1_1_analog_encoder_sim.html", null ],
     [ "frc::sim::AnalogGyroSim", "classfrc_1_1sim_1_1_analog_gyro_sim.html", null ],
     [ "frc::sim::AnalogInputSim", "classfrc_1_1sim_1_1_analog_input_sim.html", null ],
@@ -108,6 +142,7 @@ var hierarchy =
     [ "frc::sim::AnalogTriggerSim", "classfrc_1_1sim_1_1_analog_trigger_sim.html", null ],
     [ "Eigen::AngleAxis< Scalar >", "class_eigen_1_1_angle_axis.html", null ],
     [ "ansi_color_escape< Char >", "structansi__color__escape.html", null ],
+    [ "wpi::memory::any_allocator", "structwpi_1_1memory_1_1any__allocator.html", null ],
     [ "Eigen::internal::any_unroller< Derived, UnrollCount, Rows >", "struct_eigen_1_1internal_1_1any__unroller.html", null ],
     [ "Eigen::internal::any_unroller< Derived, 0, Rows >", "struct_eigen_1_1internal_1_1any__unroller_3_01_derived_00_010_00_01_rows_01_4.html", null ],
     [ "Eigen::internal::any_unroller< Derived, Dynamic, Rows >", "struct_eigen_1_1internal_1_1any__unroller_3_01_derived_00_01_dynamic_00_01_rows_01_4.html", null ],
@@ -125,10 +160,14 @@ var hierarchy =
     ] ],
     [ "arg_mapper< Context >", "structarg__mapper.html", null ],
     [ "arg_ref< Char >", "structarg__ref.html", null ],
+    [ "arg_ref< char_type >", "structarg__ref.html", null ],
     [ "Eigen::internal::arg_retval< Scalar >", "struct_eigen_1_1internal_1_1arg__retval.html", null ],
     [ "Eigen::ArithmeticSequence< FirstType, SizeType, IncrType >", "class_eigen_1_1_arithmetic_sequence.html", null ],
     [ "frc::ArmFeedforward", "classfrc_1_1_arm_feedforward.html", null ],
     [ "std::array", null, [
+      [ "wpi::array< double,(Degree+1)/2 >", "classwpi_1_1array.html", null ],
+      [ "wpi::array< frc::Translation2d, NumModules >", "classwpi_1_1array.html", null ],
+      [ "wpi::array< frc::SwerveModuleState, NumModules >", "classwpi_1_1array.html", null ],
       [ "wpi::array< T, N >", "classwpi_1_1array.html", null ]
     ] ],
     [ "Eigen::internal::array_size< T, EnableIf >", "struct_eigen_1_1internal_1_1array__size.html", null ],
@@ -156,6 +195,9 @@ var hierarchy =
     [ "Eigen::internal::Assignment< DstXprType, Inverse< FullPivLU< MatrixType > >, internal::assign_op< typename DstXprType::Scalar, typename FullPivLU< MatrixType >::Scalar >, Dense2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_inverse_3_01_full_piv_l_u_3_01_m9a195c884433725cd2990fc22dc66c56.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Inverse< PartialPivLU< MatrixType > >, internal::assign_op< typename DstXprType::Scalar, typename PartialPivLU< MatrixType >::Scalar >, Dense2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_inverse_3_01_partial_piv_l_u_3_0fe0876a690a87045a6eaca571908231d.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Inverse< XprType >, internal::assign_op< typename DstXprType::Scalar, typename XprType::Scalar >, Dense2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_inverse_3_01_xpr_type_01_4_00_019b24182f99081c1fc09beae63c4c392d.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, Product< Lhs, Rhs, AliasFreeProduct >, internal::add_assign_op< typename DstXprType::Scalar, typename Product< Lhs, Rhs, AliasFreeProduct >::Scalar >, Sparse2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01829d7a1a901a0be4e54bdeda694d8781.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, Product< Lhs, Rhs, AliasFreeProduct >, internal::assign_op< typename DstXprType::Scalar, typename Product< Lhs, Rhs, AliasFreeProduct >::Scalar >, Sparse2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, Product< Lhs, Rhs, AliasFreeProduct >, internal::sub_assign_op< typename DstXprType::Scalar, typename Product< Lhs, Rhs, AliasFreeProduct >::Scalar >, Sparse2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_014697dd90e96dca324eed00088adc1a1c.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Product< Lhs, Rhs, DefaultProduct >, internal::add_assign_op< Scalar, typename Product< Lhs, Rhs, DefaultProduct >::Scalar >, Dense2Triangular >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01efc05729801ac09d27a309f4f0923f27.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Product< Lhs, Rhs, DefaultProduct >, internal::assign_op< Scalar, typename Product< Lhs, Rhs, DefaultProduct >::Scalar >, Dense2Triangular >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_0193a1d113168a246bb6cb34430a4d0595.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Product< Lhs, Rhs, DefaultProduct >, internal::sub_assign_op< Scalar, typename Product< Lhs, Rhs, DefaultProduct >::Scalar >, Dense2Triangular >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01bb8efed27d47832b53496ca7f6c9254b.html", null ],
@@ -164,20 +206,37 @@ var hierarchy =
     [ "Eigen::internal::Assignment< DstXprType, Product< Lhs, Rhs, Options >, internal::sub_assign_op< Scalar, Scalar >, Dense2Dense, typename enable_if<(Options==DefaultProduct||Options==AliasFreeProduct)>::type >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01152e807df0d83cf57bdf33fb42d1d87d.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Solve< CwiseUnaryOp< internal::scalar_conjugate_op< typename DecType::Scalar >, const Transpose< const DecType > >, RhsType >, internal::assign_op< Scalar, Scalar >, Dense2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_3_01_cwise_unary_op_3_01in7a0cdfc0a6924bfcd9bc281e374a4ff8.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Solve< DecType, RhsType >, internal::assign_op< Scalar, Scalar >, Dense2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_3_01_dec_type_00_01_rhs_ty3ce26f5f592c582be15e9bcd7c0c0744.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, Solve< DecType, RhsType >, internal::assign_op< Scalar, Scalar >, Sparse2Sparse >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_3_01_dec_type_00_01_rhs_tyc354b114c08238e43cfacd9205f4688c.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, Solve< Transpose< const DecType >, RhsType >, internal::assign_op< Scalar, Scalar >, Dense2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_3_01_transpose_3_01const_002733ef61eadb9652bc6bc1dd0938391.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SolveWithGuess< DecType, RhsType, GuessType >, internal::assign_op< Scalar, Scalar >, Dense2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_with_guess_3_01_dec_type_092a64ffd1d5684a219c114a5d8922118.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SparseQRMatrixQReturnType< SparseQRType >, internal::assign_op< typename DstXprType::Scalar, typename DstXprType::Scalar >, Sparse2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SparseQRMatrixQReturnType< SparseQRType >, internal::assign_op< typename DstXprType::Scalar, typename DstXprType::Scalar >, Sparse2Sparse >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_359637caee80b00c35b5e63bb0a6509c.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SparseSymmetricPermutationProduct< MatrixType, Mode >, internal::assign_op< Scalar, typename MatrixType::Scalar >, Sparse2Sparse >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Dense2Dense, Weak >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_dense2_dense_00_01_weak_01_4.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Dense2Triangular >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_dense2_triangular_01_4.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Diagonal2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_diagonal2_dense_01_4.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Diagonal2Sparse >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_diagonal2_sparse_01_4.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, EigenBase2EigenBase, Weak >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_018d07b9941c0091b62a0d03d702c7ac1b.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Sparse2Dense, Weak >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_sparse2_dense_00_01_weak_01_4.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Sparse2Sparse >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_sparse2_sparse_01_4.html", null ],
+    [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, SparseSelfAdjoint2Sparse >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Triangular2Dense >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_dense_01_4.html", null ],
     [ "Eigen::internal::Assignment< DstXprType, SrcXprType, Functor, Triangular2Triangular >", "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html", null ],
+    [ "Eigen::internal::assignment_from_dense_op_sparse< DstXprType, Func1, Func2 >", "struct_eigen_1_1internal_1_1assignment__from__dense__op__sparse.html", null ],
     [ "Eigen::internal::assignment_from_xpr_op_product< DstXprType, OtherXpr, ProductType, Func1, Func2 >", "struct_eigen_1_1internal_1_1assignment__from__xpr__op__product.html", null ],
     [ "Eigen::internal::AssignmentKind< typename, typename >", "struct_eigen_1_1internal_1_1_assignment_kind.html", null ],
     [ "Eigen::internal::AssignmentKind< DenseShape, BandShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_band_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< DenseShape, DenseShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_dense_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< DenseShape, DiagonalShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_diagonal_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< DenseShape, PermutationShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_permutation_shape_01_4.html", null ],
+    [ "Eigen::internal::AssignmentKind< DenseShape, SparseShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_sparse_shape_01_4.html", null ],
+    [ "Eigen::internal::AssignmentKind< DenseShape, SparseTriangularShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_sparse_triangular_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< DenseShape, TriangularShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_triangular_shape_01_4.html", null ],
+    [ "Eigen::internal::AssignmentKind< SparseSelfAdjointShape, SparseShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_sparse_self_adjoint_shape_00_01_sparse_shape_01_4.html", null ],
+    [ "Eigen::internal::AssignmentKind< SparseShape, DiagonalShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_sparse_shape_00_01_diagonal_shape_01_4.html", null ],
+    [ "Eigen::internal::AssignmentKind< SparseShape, SparseSelfAdjointShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_sparse_shape_00_01_sparse_self_adjoint_shape_01_4.html", null ],
+    [ "Eigen::internal::AssignmentKind< SparseShape, SparseShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_sparse_shape_00_01_sparse_shape_01_4.html", null ],
+    [ "Eigen::internal::AssignmentKind< SparseShape, SparseTriangularShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_sparse_shape_00_01_sparse_triangular_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< TriangularShape, DenseShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_dense_shape_01_4.html", null ],
     [ "Eigen::internal::AssignmentKind< TriangularShape, TriangularShape >", "struct_eigen_1_1internal_1_1_assignment_kind_3_01_triangular_shape_00_01_triangular_shape_01_4.html", null ],
     [ "frc::AsynchronousInterrupt", "classfrc_1_1_asynchronous_interrupt.html", null ],
@@ -190,6 +249,16 @@ var hierarchy =
     ] ],
     [ "std::back_insert_iterator", null, [
       [ "appender", "classappender.html", null ]
+    ] ],
+    [ "std::bad_alloc", null, [
+      [ "wpi::memory::bad_allocation_size", "classwpi_1_1memory_1_1bad__allocation__size.html", [
+        [ "wpi::memory::bad_alignment", "classwpi_1_1memory_1_1bad__alignment.html", null ],
+        [ "wpi::memory::bad_array_size", "classwpi_1_1memory_1_1bad__array__size.html", null ],
+        [ "wpi::memory::bad_node_size", "classwpi_1_1memory_1_1bad__node__size.html", null ]
+      ] ],
+      [ "wpi::memory::out_of_memory", "classwpi_1_1memory_1_1out__of__memory.html", [
+        [ "wpi::memory::out_of_fixed_memory", "classwpi_1_1memory_1_1out__of__fixed__memory.html", null ]
+      ] ]
     ] ],
     [ "Eigen::BandShape", "struct_eigen_1_1_band_shape.html", null ],
     [ "Eigen::internal::BandShape", "struct_eigen_1_1internal_1_1_band_shape.html", null ],
@@ -213,24 +282,32 @@ var hierarchy =
       [ "Eigen::symbolic::SymbolExpr< tag >", "class_eigen_1_1symbolic_1_1_symbol_expr.html", null ]
     ] ],
     [ "basic_cstring_view< Char >", "classbasic__cstring__view.html", null ],
+    [ "basic_data< T >", "structbasic__data.html", [
+      [ "data", "structdata.html", null ]
+    ] ],
     [ "std::basic_filebuf", null, [
       [ "ghc::filesystem::basic_filebuf< charT, traits >", "classghc_1_1filesystem_1_1basic__filebuf.html", null ]
     ] ],
     [ "basic_format_arg< Context >", "classbasic__format__arg.html", null ],
     [ "basic_format_args< Context >", "classbasic__format__args.html", null ],
+    [ "basic_format_args< basic_format_context >", "classbasic__format__args.html", null ],
+    [ "basic_format_args< basic_printf_context >", "classbasic__format__args.html", null ],
     [ "basic_format_context< OutputIt, Char >", "classbasic__format__context.html", null ],
+    [ "basic_format_context< Char >", "classbasic__format__context.html", null ],
     [ "basic_format_specs< Char >", "structbasic__format__specs.html", [
       [ "dynamic_format_specs< Char >", "structdynamic__format__specs.html", null ]
     ] ],
+    [ "basic_format_specs< char_type >", "structbasic__format__specs.html", [
+      [ "dynamic_format_specs< char_type >", "structdynamic__format__specs.html", null ]
+    ] ],
+    [ "basic_format_specs< ParseContext::char_type >", "structbasic__format__specs.html", null ],
     [ "basic_format_string< Char, Args >", "classbasic__format__string.html", null ],
+    [ "basic_fp< F >", "structbasic__fp.html", null ],
     [ "std::basic_fstream", null, [
       [ "ghc::filesystem::basic_fstream< charT, traits >", "classghc_1_1filesystem_1_1basic__fstream.html", null ]
     ] ],
     [ "std::basic_ifstream", null, [
       [ "ghc::filesystem::basic_ifstream< charT, traits >", "classghc_1_1filesystem_1_1basic__ifstream.html", null ]
-    ] ],
-    [ "detail::basic_impl_data< T >", "structdetail_1_1basic__impl__data.html", [
-      [ "detail::impl_data", "structdetail_1_1impl__data.html", null ]
     ] ],
     [ "std::basic_ofstream", null, [
       [ "ghc::filesystem::basic_ofstream< charT, traits >", "classghc_1_1filesystem_1_1basic__ofstream.html", null ]
@@ -241,7 +318,7 @@ var hierarchy =
     [ "basic_string_view< char >", "classbasic__string__view.html", null ],
     [ "frc::sim::BatterySim", "classfrc_1_1sim_1_1_battery_sim.html", null ],
     [ "big_decimal_fp", "structbig__decimal__fp.html", null ],
-    [ "detail::bigint", "classdetail_1_1bigint.html", null ],
+    [ "bigint", "classbigint.html", null ],
     [ "Eigen::internal::binary_evaluator< T, LhsKind, RhsKind, LhsScalar, RhsScalar >", "struct_eigen_1_1internal_1_1binary__evaluator.html", null ],
     [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs > >", "struct_eigen_1_1internal_1_1binary__evaluator.html", [
       [ "Eigen::internal::evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs > >", "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html", null ]
@@ -273,6 +350,7 @@ var hierarchy =
     [ "Eigen::internal::binary_result_of_select< Func, ArgType0, ArgType1, SizeOf >", "struct_eigen_1_1internal_1_1binary__result__of__select.html", null ],
     [ "Eigen::internal::binary_result_of_select< Func, ArgType0, ArgType1, sizeof(has_std_result_type)>", "struct_eigen_1_1internal_1_1binary__result__of__select_3_01_func_00_01_arg_type0_00_01_arg_type12f7b681b9b0e96643c5ba0b38cf06652.html", null ],
     [ "Eigen::internal::binary_result_of_select< Func, ArgType0, ArgType1, sizeof(has_tr1_result)>", "struct_eigen_1_1internal_1_1binary__result__of__select_3_01_func_00_01_arg_type0_00_01_arg_type19eb2d03c93e1465fabde3b560e3be1a4.html", null ],
+    [ "Eigen::internal::binary_sparse_evaluator< XprType >", "struct_eigen_1_1internal_1_1binary__sparse__evaluator.html", null ],
     [ "BinaryOp", null, [
       [ "Eigen::internal::bind1st_op< BinaryOp >", "struct_eigen_1_1internal_1_1bind1st__op.html", null ],
       [ "Eigen::internal::bind2nd_op< BinaryOp >", "struct_eigen_1_1internal_1_1bind2nd__op.html", null ]
@@ -281,7 +359,6 @@ var hierarchy =
     [ "Eigen::internal::bit_not< T >", "struct_eigen_1_1internal_1_1bit__not.html", null ],
     [ "Eigen::internal::bit_or< T >", "struct_eigen_1_1internal_1_1bit__or.html", null ],
     [ "Eigen::internal::bit_xor< T >", "struct_eigen_1_1internal_1_1bit__xor.html", null ],
-    [ "detail::bits< T >", "structdetail_1_1bits.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >", "class_eigen_1_1internal_1_1blas__data__mapper.html", null ],
     [ "Eigen::internal::blas_data_mapper< const Scalar, Index, StorageOrder >", "class_eigen_1_1internal_1_1blas__data__mapper.html", [
       [ "Eigen::internal::const_blas_data_mapper< Scalar, Index, StorageOrder >", "class_eigen_1_1internal_1_1const__blas__data__mapper.html", null ]
@@ -307,7 +384,8 @@ var hierarchy =
     [ "Eigen::internal::block_evaluator< ArgType, BlockRows, BlockCols, InnerPanel, HasDirectAccess >", "struct_eigen_1_1internal_1_1block__evaluator.html", [
       [ "Eigen::internal::evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel > >", "struct_eigen_1_1internal_1_1evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_01_4_01_4.html", null ]
     ] ],
-    [ "Eigen::BlockImpl< XprType, BlockRows, BlockCols, InnerPanel, StorageKind >", "class_eigen_1_1_block_impl.html", [
+    [ "Eigen::BlockImpl< XprType, BlockRows, BlockCols, InnerPanel, StorageKind >", "class_eigen_1_1_block_impl.html", null ],
+    [ "Eigen::BlockImpl< VectorType, BlockRows, BlockCols, InnerPanel, internal::traits< VectorType >::StorageKind >", "class_eigen_1_1_block_impl.html", [
       [ "Eigen::Block< VectorType, internal::traits< VectorType >::Flags &RowMajorBit ? 1 :Size, internal::traits< VectorType >::Flags &RowMajorBit ? Size :1 >", "class_eigen_1_1_block.html", [
         [ "Eigen::VectorBlock< VectorType, Size >", "class_eigen_1_1_vector_block.html", null ]
       ] ]
@@ -319,17 +397,29 @@ var hierarchy =
       [ "arg_mapper< Context >::formattable< T, U >", "structarg__mapper_1_1formattable.html", null ]
     ] ],
     [ "Eigen::internal::bool_constant< Condition >", "struct_eigen_1_1internal_1_1bool__constant.html", null ],
+    [ "frc::BooleanEvent", "classfrc_1_1_boolean_event.html", [
+      [ "frc2::Trigger", "classfrc2_1_1_trigger.html", [
+        [ "frc2::Button", "classfrc2_1_1_button.html", [
+          [ "frc2::JoystickButton", "classfrc2_1_1_joystick_button.html", null ],
+          [ "frc2::NetworkButton", "classfrc2_1_1_network_button.html", null ],
+          [ "frc2::POVButton", "classfrc2_1_1_p_o_v_button.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "buffer< T >", "classbuffer.html", [
       [ "iterator_buffer< OutputIt, T, Traits >", "classiterator__buffer.html", null ],
       [ "iterator_buffer< T *, T >", "classiterator__buffer_3_01_t_01_5_00_01_t_01_4.html", null ],
       [ "iterator_buffer< T *, T, fixed_buffer_traits >", "classiterator__buffer_3_01_t_01_5_00_01_t_00_01fixed__buffer__traits_01_4.html", null ]
     ] ],
     [ "detail::buffer", null, [
+      [ "basic_memory_buffer< bigit, bigits_capacity >", "classbasic__memory__buffer.html", null ],
+      [ "basic_memory_buffer< wchar_t >", "classbasic__memory__buffer.html", null ],
       [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", null ]
     ] ],
     [ "buffer< char >", "classbuffer.html", [
       [ "counting_buffer< T >", "classcounting__buffer.html", null ]
     ] ],
+    [ "buffer< char_type >", "classbuffer.html", null ],
     [ "buffer< Container::value_type >", "classbuffer.html", [
       [ "iterator_buffer< std::back_insert_iterator< Container >, enable_if_t< is_contiguous< Container >::value, typename Container::value_type > >", "classiterator__buffer_3_01std_1_1back__insert__iterator_3_01_container_01_4_00_01enable__if__t_3f9dd5967f8d169dc7f82f3e912e020ba.html", null ]
     ] ],
@@ -371,6 +461,7 @@ var hierarchy =
     [ "frc::ChassisSpeeds", "structfrc_1_1_chassis_speeds.html", null ],
     [ "Eigen::internal::check_rows_cols_for_overflow< MaxSizeAtCompileTime >", "struct_eigen_1_1internal_1_1check__rows__cols__for__overflow.html", null ],
     [ "Eigen::internal::check_rows_cols_for_overflow< Dynamic >", "struct_eigen_1_1internal_1_1check__rows__cols__for__overflow_3_01_dynamic_01_4.html", null ],
+    [ "wpi::memory::detail::check_standard_allocator< Allocator >", "structwpi_1_1memory_1_1detail_1_1check__standard__allocator.html", null ],
     [ "Eigen::internal::check_transpose_aliasing_compile_time_selector< DestIsTransposed, OtherDerived >", "struct_eigen_1_1internal_1_1check__transpose__aliasing__compile__time__selector.html", null ],
     [ "Eigen::internal::check_transpose_aliasing_compile_time_selector< DestIsTransposed, CwiseBinaryOp< BinOp, DerivedA, DerivedB > >", "struct_eigen_1_1internal_1_1check__transpose__aliasing__compile__time__selector_3_01_dest_is_tra9f4c4ffc0d2b0b4cca6adac98dc1ed17.html", null ],
     [ "Eigen::internal::check_transpose_aliasing_run_time_selector< Scalar, DestIsTransposed, OtherDerived >", "struct_eigen_1_1internal_1_1check__transpose__aliasing__run__time__selector.html", null ],
@@ -378,6 +469,7 @@ var hierarchy =
     [ "Eigen::internal::checkTransposeAliasing_impl< Derived, OtherDerived, MightHaveTransposeAliasing >", "struct_eigen_1_1internal_1_1check_transpose_aliasing__impl.html", null ],
     [ "Eigen::internal::checkTransposeAliasing_impl< Derived, OtherDerived, false >", "struct_eigen_1_1internal_1_1check_transpose_aliasing__impl_3_01_derived_00_01_other_derived_00_01false_01_4.html", null ],
     [ "chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structchrono__formatter.html", null ],
+    [ "wpi::memory::detail::chunk_base", "structwpi_1_1memory_1_1detail_1_1chunk__base.html", null ],
     [ "wpi::circular_buffer< T >", "classwpi_1_1circular__buffer.html", null ],
     [ "Eigen::internal::cleanup_index_type< T, DynamicKey, EnableIf >", "struct_eigen_1_1internal_1_1cleanup__index__type.html", null ],
     [ "Eigen::internal::cleanup_index_type< FixedInt< N >(*)(), DynamicKey >", "struct_eigen_1_1internal_1_1cleanup__index__type_3_01_fixed_int_3_01_n_01_4_07_5_08_07_08_00_01_dynamic_key_01_4.html", null ],
@@ -394,10 +486,12 @@ var hierarchy =
       [ "Eigen::internal::min_coeff_visitor< Derived, PropagateNaN >", "struct_eigen_1_1internal_1_1min__coeff__visitor_3_01_derived_00_01_propagate_na_n_01_4.html", null ],
       [ "Eigen::internal::min_coeff_visitor< Derived, PropagateNumbers >", "struct_eigen_1_1internal_1_1min__coeff__visitor_3_01_derived_00_01_propagate_numbers_01_4.html", null ]
     ] ],
+    [ "Eigen::COLAMDOrdering< StorageIndex >", "class_eigen_1_1_c_o_l_a_m_d_ordering.html", null ],
     [ "frc::Color", "classfrc_1_1_color.html", null ],
     [ "frc::Color8Bit", "classfrc_1_1_color8_bit.html", null ],
     [ "color_type", "structcolor__type.html", null ],
     [ "color_type::color_union", "unioncolor__type_1_1color__union.html", null ],
+    [ "internal::Colamd::ColStructure< IndexType >", "structinternal_1_1_colamd_1_1_col_structure.html", null ],
     [ "Eigen::internal::combine_scalar_factors_impl< ResScalar, Lhs, Rhs >", "struct_eigen_1_1internal_1_1combine__scalar__factors__impl.html", null ],
     [ "Eigen::internal::combine_scalar_factors_impl< bool, Lhs, Rhs >", "struct_eigen_1_1internal_1_1combine__scalar__factors__impl_3_01bool_00_01_lhs_00_01_rhs_01_4.html", null ],
     [ "Eigen::CommaInitializer< XprType >", "struct_eigen_1_1_comma_initializer.html", null ],
@@ -410,12 +504,19 @@ var hierarchy =
           [ "frc2::EndlessCommand", "classfrc2_1_1_endless_command.html", null ]
         ] ],
         [ "frc2::CommandHelper< CommandBase, FunctionalCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::FunctionalCommand", "classfrc2_1_1_functional_command.html", null ]
-        ] ],
-        [ "frc2::CommandHelper< CommandBase, InstantCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::InstantCommand", "classfrc2_1_1_instant_command.html", [
-            [ "frc2::CommandHelper< InstantCommand, PrintCommand >", "classfrc2_1_1_command_helper.html", [
-              [ "frc2::PrintCommand", "classfrc2_1_1_print_command.html", null ]
+          [ "frc2::FunctionalCommand", "classfrc2_1_1_functional_command.html", [
+            [ "frc2::CommandHelper< FunctionalCommand, InstantCommand >", "classfrc2_1_1_command_helper.html", [
+              [ "frc2::InstantCommand", "classfrc2_1_1_instant_command.html", [
+                [ "frc2::CommandHelper< InstantCommand, PrintCommand >", "classfrc2_1_1_command_helper.html", [
+                  [ "frc2::PrintCommand", "classfrc2_1_1_print_command.html", null ]
+                ] ]
+              ] ]
+            ] ],
+            [ "frc2::CommandHelper< FunctionalCommand, RunCommand >", "classfrc2_1_1_command_helper.html", [
+              [ "frc2::RunCommand", "classfrc2_1_1_run_command.html", null ]
+            ] ],
+            [ "frc2::CommandHelper< FunctionalCommand, StartEndCommand >", "classfrc2_1_1_command_helper.html", [
+              [ "frc2::StartEndCommand", "classfrc2_1_1_start_end_command.html", null ]
             ] ]
           ] ]
         ] ],
@@ -443,17 +544,11 @@ var hierarchy =
         [ "frc2::CommandHelper< CommandBase, RepeatCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::RepeatCommand", "classfrc2_1_1_repeat_command.html", null ]
         ] ],
-        [ "frc2::CommandHelper< CommandBase, RunCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::RunCommand", "classfrc2_1_1_run_command.html", null ]
-        ] ],
         [ "frc2::CommandHelper< CommandBase, ScheduleCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::ScheduleCommand", "classfrc2_1_1_schedule_command.html", null ]
         ] ],
         [ "frc2::CommandHelper< CommandBase, SelectCommand< Key > >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::SelectCommand< Key >", "classfrc2_1_1_select_command.html", null ]
-        ] ],
-        [ "frc2::CommandHelper< CommandBase, StartEndCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::StartEndCommand", "classfrc2_1_1_start_end_command.html", null ]
         ] ],
         [ "frc2::CommandHelper< CommandBase, SwerveControllerCommand< NumModules > >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::SwerveControllerCommand< NumModules >", "classfrc2_1_1_swerve_controller_command.html", null ]
@@ -466,6 +561,9 @@ var hierarchy =
         ] ],
         [ "frc2::CommandHelper< CommandBase, WaitUntilCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::WaitUntilCommand", "classfrc2_1_1_wait_until_command.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, WrapperCommand >", "classfrc2_1_1_command_helper.html", [
+          [ "frc2::WrapperCommand", "classfrc2_1_1_wrapper_command.html", null ]
         ] ],
         [ "frc2::CommandGroupBase", "classfrc2_1_1_command_group_base.html", [
           [ "frc2::CommandHelper< CommandGroupBase, ParallelCommandGroup >", "classfrc2_1_1_command_helper.html", [
@@ -483,13 +581,21 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "frc2::CommandState", "classfrc2_1_1_command_state.html", null ],
+    [ "frc2::CommandPtr", "classfrc2_1_1_command_ptr.html", null ],
     [ "compile_string", "structcompile__string.html", null ],
     [ "detail::compiled_string", "classdetail_1_1compiled__string.html", null ],
     [ "Eigen::internal::complex_schur_reduce_to_hessenberg< MatrixType, IsComplex >", "struct_eigen_1_1internal_1_1complex__schur__reduce__to__hessenberg.html", null ],
     [ "Eigen::internal::complex_schur_reduce_to_hessenberg< MatrixType, false >", "struct_eigen_1_1internal_1_1complex__schur__reduce__to__hessenberg_3_01_matrix_type_00_01false_01_4.html", null ],
     [ "Eigen::ComplexEigenSolver< _MatrixType >", "class_eigen_1_1_complex_eigen_solver.html", null ],
     [ "Eigen::ComplexSchur< _MatrixType >", "class_eigen_1_1_complex_schur.html", null ],
+    [ "Eigen::ComplexSchur< MatrixType >", "class_eigen_1_1_complex_schur.html", null ],
+    [ "wpi::memory::composable_allocator_traits< Allocator >", "classwpi_1_1memory_1_1composable__allocator__traits.html", null ],
+    [ "wpi::memory::composable_allocator_traits< iteration_allocator< N, BlockAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html", null ],
+    [ "wpi::memory::composable_allocator_traits< memory_pool< PoolType, BlockOrRawAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html", null ],
+    [ "wpi::memory::composable_allocator_traits< memory_pool_collection< Pool, BucketDist, RawAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html", null ],
+    [ "wpi::memory::composable_allocator_traits< memory_stack< BlockAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html", null ],
+    [ "Eigen::internal::CompressedStorage< _Scalar, _StorageIndex >", "class_eigen_1_1internal_1_1_compressed_storage.html", null ],
+    [ "Eigen::internal::CompressedStorage< Scalar, StorageIndex >", "class_eigen_1_1internal_1_1_compressed_storage.html", null ],
     [ "Eigen::internal::compute_default_alignment< T, Size >", "struct_eigen_1_1internal_1_1compute__default__alignment.html", null ],
     [ "Eigen::internal::compute_default_alignment< T, Dynamic >", "struct_eigen_1_1internal_1_1compute__default__alignment_3_01_t_00_01_dynamic_01_4.html", null ],
     [ "Eigen::internal::compute_default_alignment_helper< ArrayBytes, AlignmentBytes >", "struct_eigen_1_1internal_1_1compute__default__alignment__helper.html", null ],
@@ -509,9 +615,14 @@ var hierarchy =
       [ "Eigen::internal::compute_inverse< MatrixType, ResultType, 4 >", "struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_014_01_4.html", null ]
     ] ],
     [ "Eigen::internal::compute_matrix_flags< Scalar, Rows, Cols, Options, MaxRows, MaxCols >", "class_eigen_1_1internal_1_1compute__matrix__flags.html", null ],
+    [ "detail::dragonbox::cache_accessor< double >::compute_mul_parity_result", "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4_1_1compute__mul__parity__result.html", null ],
+    [ "detail::dragonbox::cache_accessor< float >::compute_mul_parity_result", "structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4_1_1compute__mul__parity__result.html", null ],
+    [ "detail::dragonbox::cache_accessor< double >::compute_mul_result", "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4_1_1compute__mul__result.html", null ],
+    [ "detail::dragonbox::cache_accessor< float >::compute_mul_result", "structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4_1_1compute__mul__result.html", null ],
     [ "wpi::ConcurrentQueue< T >", "classwpi_1_1_concurrent_queue.html", null ],
     [ "Eigen::internal::conditional< Condition, Then, Else >", "struct_eigen_1_1internal_1_1conditional.html", null ],
     [ "Eigen::internal::conditional< bool(internal::is_lvalue< Derived >::value), Scalar *, constScalar * >", "struct_eigen_1_1internal_1_1conditional.html", null ],
+    [ "Eigen::internal::conditional< bool(internal::is_lvalue< Derived >::value), StorageIndex *, constStorageIndex * >", "struct_eigen_1_1internal_1_1conditional.html", null ],
     [ "Eigen::internal::conditional< bool(is_lvalue), SubVectorType, ConstSubVectorType >", "struct_eigen_1_1internal_1_1conditional.html", null ],
     [ "Eigen::internal::conditional< bool(is_lvalue), value_type *, constvalue_type * >", "struct_eigen_1_1internal_1_1conditional.html", null ],
     [ "Eigen::internal::conditional< false, Then, Else >", "struct_eigen_1_1internal_1_1conditional_3_01false_00_01_then_00_01_else_01_4.html", null ],
@@ -519,6 +630,11 @@ var hierarchy =
       [ "Eigen::internal::conj_expr_if< Cond, T >", "struct_eigen_1_1internal_1_1conj__expr__if.html", null ]
     ] ],
     [ "detail::conditional_helper< Ts >", "structdetail_1_1conditional__helper.html", null ],
+    [ "conditional_t", null, [
+      [ "conjunction< P1, Pn... >", "structconjunction_3_01_p1_00_01_pn_8_8_8_01_4.html", null ],
+      [ "disjunction< P1, Pn... >", "structdisjunction_3_01_p1_00_01_pn_8_8_8_01_4.html", null ],
+      [ "range_format_kind< T, Char, Enable >", "structrange__format__kind.html", null ]
+    ] ],
     [ "drake::assert::ConditionTraits< Condition >", "structdrake_1_1assert_1_1_condition_traits.html", null ],
     [ "Eigen::internal::conj_default_impl< Scalar, IsComplex >", "struct_eigen_1_1internal_1_1conj__default__impl.html", null ],
     [ "Eigen::internal::conj_default_impl< Scalar, NumTraits< Scalar >::IsComplex >", "struct_eigen_1_1internal_1_1conj__default__impl.html", [
@@ -526,6 +642,7 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::conj_default_impl< Scalar, true >", "struct_eigen_1_1internal_1_1conj__default__impl_3_01_scalar_00_01true_01_4.html", null ],
     [ "Eigen::internal::conj_helper< LhsType, RhsType, ConjLhs, ConjRhs >", "struct_eigen_1_1internal_1_1conj__helper.html", null ],
+    [ "Eigen::internal::conj_helper< LhsScalar, RhsScalar, ConjLhs, ConjRhs >", "struct_eigen_1_1internal_1_1conj__helper.html", null ],
     [ "Eigen::internal::conj_helper< LhsScalar, RhsScalar, true, true >", "struct_eigen_1_1internal_1_1conj__helper_3_01_lhs_scalar_00_01_rhs_scalar_00_01true_00_01true_01_4.html", null ],
     [ "Eigen::internal::conj_helper< Packet, Packet, ConjLhs, ConjRhs >", "struct_eigen_1_1internal_1_1conj__helper_3_01_packet_00_01_packet_00_01_conj_lhs_00_01_conj_rhs_01_4.html", null ],
     [ "Eigen::internal::conj_helper< Packet, Packet, true, true >", "struct_eigen_1_1internal_1_1conj__helper_3_01_packet_00_01_packet_00_01true_00_01true_01_4.html", null ],
@@ -547,6 +664,15 @@ var hierarchy =
     [ "Eigen::internal::conservative_resize_like_impl< Derived, OtherDerived, false >", "struct_eigen_1_1internal_1_1conservative__resize__like__impl.html", [
       [ "Eigen::internal::conservative_resize_like_impl< Derived, OtherDerived, true >", "struct_eigen_1_1internal_1_1conservative__resize__like__impl_3_01_derived_00_01_other_derived_00_01true_01_4.html", null ]
     ] ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, LhsStorageOrder, RhsStorageOrder, ResStorageOrder >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, ColMajor, ColMajor, ColMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_0f4a0316e9e8c40b475b674926b5b8b8d.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, ColMajor, ColMajor, RowMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_0f1680f6d2d45917adac59b754c8465e6.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, ColMajor, RowMajor, ColMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_0d6546946ae9a7e5a4739479fa99718a1.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, ColMajor, RowMajor, RowMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_0f2b5b8a9c2dc31e0d24e7f7768286a83.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, RowMajor, ColMajor, ColMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_0434d91bd03f3817d20ac2e65c68dd100.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, RowMajor, ColMajor, RowMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_0213e811a66030985a0822b6b604bb6aa.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, RowMajor, RowMajor, ColMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_09c6df8c1cfe8f5011ca309f86919cf1f.html", null ],
+    [ "Eigen::internal::conservative_sparse_sparse_product_selector< Lhs, Rhs, ResultType, RowMajor, RowMajor, RowMajor >", "struct_eigen_1_1internal_1_1conservative__sparse__sparse__product__selector_3_01_lhs_00_01_rhs_01e3769f60835369078028e205b540c14.html", null ],
     [ "wpi::circular_buffer< T >::const_iterator", "classwpi_1_1circular__buffer_1_1const__iterator.html", null ],
     [ "wpi::static_circular_buffer< T, N >::const_iterator", "classwpi_1_1static__circular__buffer_1_1const__iterator.html", null ],
     [ "wpi::const_pointer_or_const_ref< T, Enable >", "structwpi_1_1const__pointer__or__const__ref.html", null ],
@@ -558,10 +684,12 @@ var hierarchy =
     [ "ConstNRowsBlockXpr< N >", "struct_const_n_rows_block_xpr.html", null ],
     [ "frc::TrapezoidProfile< Distance >::Constraints", "classfrc_1_1_trapezoid_profile_1_1_constraints.html", null ],
     [ "Eigen::internal::constructor_without_unaligned_array_assert", "struct_eigen_1_1internal_1_1constructor__without__unaligned__array__assert.html", null ],
+    [ "Eigen::internal::generic_matrix_wrapper< MatrixType, false >::ConstSelfAdjointViewReturnType< UpLo >", "struct_eigen_1_1internal_1_1generic__matrix__wrapper_3_01_matrix_type_00_01false_01_4_1_1_const_self_adjoint_view_return_type.html", null ],
+    [ "Eigen::internal::generic_matrix_wrapper< MatrixType, true >::ConstSelfAdjointViewReturnType< UpLo >", "struct_eigen_1_1internal_1_1generic__matrix__wrapper_3_01_matrix_type_00_01true_01_4_1_1_const_self_adjoint_view_return_type.html", null ],
     [ "Eigen::MatrixBase< Derived >::ConstSelfAdjointViewReturnType< UpLo >", "struct_eigen_1_1_matrix_base_1_1_const_self_adjoint_view_return_type.html", null ],
+    [ "Eigen::SparseMatrixBase< Derived >::ConstSelfAdjointViewReturnType< UpLo >", "struct_eigen_1_1_sparse_matrix_base_1_1_const_self_adjoint_view_return_type.html", null ],
     [ "Eigen::MatrixBase< Derived >::ConstTriangularViewReturnType< Mode >", "struct_eigen_1_1_matrix_base_1_1_const_triangular_view_return_type.html", null ],
     [ "frc::ControlAffinePlantInversionFeedforward< States, Inputs >", "classfrc_1_1_control_affine_plant_inversion_feedforward.html", null ],
-    [ "frc::Controller", "classfrc_1_1_controller.html", null ],
     [ "frc::Spline< Degree >::ControlVector", "structfrc_1_1_spline_1_1_control_vector.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, bool >", "structwpi_1_1java_1_1detail_1_1_convert_int_array.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, true >", "structwpi_1_1java_1_1detail_1_1_convert_int_array_3_01_t_00_01true_01_4.html", null ],
@@ -581,11 +709,13 @@ var hierarchy =
     [ "Eigen::internal::copy_using_evaluator_traits< DstEvaluator, SrcEvaluator, AssignFunc, MaxPacketSize >", "struct_eigen_1_1internal_1_1copy__using__evaluator__traits.html", null ],
     [ "Eigen::internal::member_lpnorm< p, ResultType, Scalar >::Cost< Size >", "struct_eigen_1_1internal_1_1member__lpnorm_1_1_cost.html", null ],
     [ "Eigen::internal::member_redux< BinaryOpT, Scalar >::Cost< Size >", "struct_eigen_1_1internal_1_1member__redux_1_1_cost.html", null ],
+    [ "count_fractional_digits< Num, Den, N, Enabled >", "structcount__fractional__digits.html", null ],
+    [ "count_fractional_digits< Num, Den, N, false >", "structcount__fractional__digits_3_01_num_00_01_den_00_01_n_00_01false_01_4.html", null ],
     [ "frc::CounterBase", "classfrc_1_1_counter_base.html", [
       [ "frc::Counter", "classfrc_1_1_counter.html", null ],
       [ "frc::Encoder", "classfrc_1_1_encoder.html", null ]
     ] ],
-    [ "detail::counting_iterator", "classdetail_1_1counting__iterator.html", null ],
+    [ "counting_iterator", "classcounting__iterator.html", null ],
     [ "Eigen::Cross< Lhs, Rhs >", "class_eigen_1_1_cross.html", null ],
     [ "Eigen::MatrixBase< Derived >::cross_product_return_type< OtherDerived >", "struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html", null ],
     [ "CS_Event", "struct_c_s___event.html", null ],
@@ -607,6 +737,7 @@ var hierarchy =
     [ "Eigen::internal::cwise_promote_storage_type< Dense, Dense, Functor >", "struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_dense_00_01_functor_01_4.html", null ],
     [ "Eigen::internal::cwise_promote_storage_type< Dense, Sparse, Functor >", "struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_sparse_00_01_functor_01_4.html", null ],
     [ "Eigen::internal::cwise_promote_storage_type< Sparse, Dense, Functor >", "struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_sparse_00_01_dense_00_01_functor_01_4.html", null ],
+    [ "Eigen::SparseMatrixBase< Derived >::CwiseProductDenseReturnType< OtherDerived >", "struct_eigen_1_1_sparse_matrix_base_1_1_cwise_product_dense_return_type.html", null ],
     [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IndexBased, IndexBased >::Data", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html", null ],
     [ "Eigen::internal::ternary_evaluator< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 >, IndexBased, IndexBased >::Data", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_8eba744208381e51778bcc517b7240fe.html", null ],
     [ "Eigen::internal::unary_evaluator< CwiseUnaryOp< UnaryOp, ArgType >, IndexBased >::Data", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_op_3_01_unary_op_00_01_arg_type_0172a10a169ba39d051c0ca7af1d424ea1.html", null ],
@@ -638,14 +769,23 @@ var hierarchy =
       [ "wpi::DenseMapBase< SmallDenseMap< KeyT, ValueT, 4, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, ValueT > >, KeyT, ValueT, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, ValueT > >", "classwpi_1_1_dense_map_base.html", [
         [ "wpi::SmallDenseMap< KeyT, ValueT, InlineBuckets, KeyInfoT, BucketT >", "classwpi_1_1_small_dense_map.html", null ]
       ] ],
-      [ "wpi::DenseMapBase< DerivedT, KeyT, ValueT, KeyInfoT, BucketT >", "classwpi_1_1_dense_map_base.html", [
+      [ "wpi::DenseMapBase< SmallDenseMap< KeyT, unsigned, InlineBuckets, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, unsigned > >, KeyT, unsigned, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, unsigned > >", "classwpi_1_1_dense_map_base.html", [
+        [ "wpi::SmallDenseMap< KeyT, unsigned, N >", "classwpi_1_1_small_dense_map.html", null ]
+      ] ],
+      [ "wpi::DenseMapBase< DenseMap< KeyT, unsigned, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, unsigned > >, KeyT, unsigned, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, unsigned > >", "classwpi_1_1_dense_map_base.html", [
         [ "wpi::DenseMap< KeyT, unsigned >", "classwpi_1_1_dense_map.html", null ]
       ] ],
+      [ "wpi::DenseMapBase< DenseMap< int, unsigned int, DenseMapInfo< int >, wpi::detail::DenseMapPair< int, unsigned int > >, int, unsigned int, DenseMapInfo< int >, wpi::detail::DenseMapPair< int, unsigned int > >", "classwpi_1_1_dense_map_base.html", [
+        [ "wpi::DenseMap< int, unsigned int >", "classwpi_1_1_dense_map.html", null ]
+      ] ],
+      [ "wpi::DenseMapBase< DerivedT, KeyT, ValueT, KeyInfoT, BucketT >", "classwpi_1_1_dense_map_base.html", null ],
       [ "wpi::SmallPtrSetImplBase", "classwpi_1_1_small_ptr_set_impl_base.html", [
-        [ "wpi::SmallPtrSetImpl< PtrType >", "classwpi_1_1_small_ptr_set_impl.html", [
+        [ "wpi::SmallPtrSetImpl< PointeeType * >", "classwpi_1_1_small_ptr_set_impl.html", [
           [ "wpi::SmallPtrSet< PointeeType *, N >", "classwpi_1_1_small_ptr_set.html", [
             [ "wpi::SmallSet< PointeeType *, N >", "classwpi_1_1_small_set_3_01_pointee_type_01_5_00_01_n_01_4.html", null ]
-          ] ],
+          ] ]
+        ] ],
+        [ "wpi::SmallPtrSetImpl< PtrType >", "classwpi_1_1_small_ptr_set_impl.html", [
           [ "wpi::SmallPtrSet< PtrType, SmallSize >", "classwpi_1_1_small_ptr_set.html", null ]
         ] ]
       ] ]
@@ -660,6 +800,12 @@ var hierarchy =
     [ "Eigen::internal::default_digits_impl< T, use_numeric_limits, is_integer >", "struct_eigen_1_1internal_1_1default__digits__impl.html", null ],
     [ "Eigen::internal::default_digits_impl< T, false, false >", "struct_eigen_1_1internal_1_1default__digits__impl_3_01_t_00_01false_00_01false_01_4.html", null ],
     [ "Eigen::internal::default_digits_impl< T, false, true >", "struct_eigen_1_1internal_1_1default__digits__impl_3_01_t_00_01false_00_01true_01_4.html", null ],
+    [ "WPI_EBOdetail::default_leak_checker", null, [
+      [ "wpi::memory::memory_stack< temporary_block_allocator >", "classwpi_1_1memory_1_1memory__stack.html", null ],
+      [ "wpi::memory::memory_pool< PoolType, BlockOrRawAllocator >", "classwpi_1_1memory_1_1memory__pool.html", null ],
+      [ "wpi::memory::memory_pool_collection< PoolType, BucketDistribution, BlockOrRawAllocator >", "classwpi_1_1memory_1_1memory__pool__collection.html", null ],
+      [ "wpi::memory::memory_stack< BlockOrRawAllocator >", "classwpi_1_1memory_1_1memory__stack.html", null ]
+    ] ],
     [ "Eigen::internal::default_packet_traits", "struct_eigen_1_1internal_1_1default__packet__traits.html", [
       [ "Eigen::internal::packet_traits< T >", "struct_eigen_1_1internal_1_1packet__traits.html", [
         [ "Eigen::internal::packet_traits< const T >", "struct_eigen_1_1internal_1_1packet__traits_3_01const_01_t_01_4.html", null ]
@@ -688,6 +834,7 @@ var hierarchy =
       [ "Eigen::internal::packet_traits< uint64_t >", "struct_eigen_1_1internal_1_1packet__traits_3_01uint64__t_01_4.html", null ],
       [ "Eigen::internal::packet_traits< uint8_t >", "struct_eigen_1_1internal_1_1packet__traits_3_01uint8__t_01_4.html", null ]
     ] ],
+    [ "wpi::memory::temporary_stack_initializer::defer_create_t", "structwpi_1_1memory_1_1temporary__stack__initializer_1_1defer__create__t.html", null ],
     [ "Eigen::Dense", "struct_eigen_1_1_dense.html", null ],
     [ "Eigen::internal::Dense2Dense", "struct_eigen_1_1internal_1_1_dense2_dense.html", null ],
     [ "Eigen::internal::Dense2Triangular", "struct_eigen_1_1internal_1_1_dense2_triangular.html", null ],
@@ -707,34 +854,41 @@ var hierarchy =
     [ "Eigen::internal::dense_xpr_base< Derived, XprKind >", "struct_eigen_1_1internal_1_1dense__xpr__base.html", null ],
     [ "Eigen::internal::dense_xpr_base< Derived, ArrayXpr >", "struct_eigen_1_1internal_1_1dense__xpr__base_3_01_derived_00_01_array_xpr_01_4.html", null ],
     [ "Eigen::internal::dense_xpr_base< Derived, MatrixXpr >", "struct_eigen_1_1internal_1_1dense__xpr__base_3_01_derived_00_01_matrix_xpr_01_4.html", null ],
-    [ "Eigen::DenseCoeffsBase< Derived, Level >", "class_eigen_1_1_dense_coeffs_base.html", [
+    [ "Eigen::DenseCoeffsBase< Derived, Level >", "class_eigen_1_1_dense_coeffs_base.html", null ],
+    [ "Eigen::DenseCoeffsBase< ArrayWrapper< ExpressionType >, internal::accessors_level< ArrayWrapper< ExpressionType > >::value >", "class_eigen_1_1_dense_coeffs_base.html", [
+      [ "Eigen::DenseBase< ArrayWrapper< ExpressionType > >", "class_eigen_1_1_dense_base.html", [
+        [ "Eigen::ArrayBase< ArrayWrapper< ExpressionType > >", "class_eigen_1_1_array_base.html", [
+          [ "Eigen::ArrayWrapper< ExpressionType >", "class_eigen_1_1_array_wrapper.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::DenseCoeffsBase< Derived, internal::accessors_level< Derived >::value >", "class_eigen_1_1_dense_coeffs_base.html", [
+      [ "Eigen::DenseBase< Derived >", "class_eigen_1_1_dense_base.html", [
+        [ "Eigen::ArrayBase< Derived >", "class_eigen_1_1_array_base.html", null ],
+        [ "Eigen::MatrixBase< Derived >", "class_eigen_1_1_matrix_base.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::DenseCoeffsBase< MatrixWrapper< ExpressionType >, internal::accessors_level< MatrixWrapper< ExpressionType > >::value >", "class_eigen_1_1_dense_coeffs_base.html", [
       [ "Eigen::DenseBase< MatrixWrapper< ExpressionType > >", "class_eigen_1_1_dense_base.html", [
         [ "Eigen::MatrixBase< MatrixWrapper< ExpressionType > >", "class_eigen_1_1_matrix_base.html", [
           [ "Eigen::MatrixWrapper< ExpressionType >", "class_eigen_1_1_matrix_wrapper.html", null ]
         ] ]
-      ] ],
+      ] ]
+    ] ],
+    [ "Eigen::DenseCoeffsBase< Solve< Decomposition, RhsType >, internal::accessors_level< Solve< Decomposition, RhsType > >::value >", "class_eigen_1_1_dense_coeffs_base.html", [
       [ "Eigen::DenseBase< Solve< Decomposition, RhsType > >", "class_eigen_1_1_dense_base.html", [
         [ "Eigen::MatrixBase< Solve< Decomposition, RhsType > >", "class_eigen_1_1_matrix_base.html", [
           [ "Eigen::SolveImpl< Decomposition, RhsType, Dense >", "class_eigen_1_1_solve_impl_3_01_decomposition_00_01_rhs_type_00_01_dense_01_4.html", null ]
         ] ]
       ] ]
     ] ],
-    [ "Eigen::DenseCoeffsBase< Derived, internal::accessors_level< Derived >::value >", "class_eigen_1_1_dense_coeffs_base.html", [
-      [ "Eigen::DenseBase< Derived >", "class_eigen_1_1_dense_base.html", [
-        [ "Eigen::ArrayBase< ArrayWrapper< ExpressionType > >", "class_eigen_1_1_array_base.html", [
-          [ "Eigen::ArrayWrapper< ExpressionType >", "class_eigen_1_1_array_wrapper.html", null ]
-        ] ],
-        [ "Eigen::ArrayBase< Derived >", "class_eigen_1_1_array_base.html", null ],
-        [ "Eigen::MatrixBase< Derived >", "class_eigen_1_1_matrix_base.html", null ]
-      ] ]
-    ] ],
-    [ "wpi::DenseMapInfo< T >", "structwpi_1_1_dense_map_info.html", null ],
+    [ "wpi::DenseMapInfo< T, Enable >", "structwpi_1_1_dense_map_info.html", null ],
     [ "wpi::DenseMapInfo< char >", "structwpi_1_1_dense_map_info_3_01char_01_4.html", null ],
-    [ "wpi::DenseMapInfo< hash_code >", "structwpi_1_1_dense_map_info_3_01hash__code_01_4.html", null ],
+    [ "wpi::DenseMapInfo< hash_code, void >", "structwpi_1_1_dense_map_info_3_01hash__code_00_01void_01_4.html", null ],
     [ "wpi::DenseMapInfo< int >", "structwpi_1_1_dense_map_info_3_01int_01_4.html", null ],
     [ "wpi::DenseMapInfo< long >", "structwpi_1_1_dense_map_info_3_01long_01_4.html", null ],
     [ "wpi::DenseMapInfo< long long >", "structwpi_1_1_dense_map_info_3_01long_01long_01_4.html", null ],
-    [ "wpi::DenseMapInfo< PointerIntPair< PointerTy, IntBits, IntType > >", "structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html", null ],
+    [ "wpi::DenseMapInfo< PointerIntPair< PointerTy, IntBits, IntType >, void >", "structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4.html", null ],
     [ "wpi::DenseMapInfo< PointerUnion< PTs... > >", "structwpi_1_1_dense_map_info_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html", null ],
     [ "wpi::DenseMapInfo< short >", "structwpi_1_1_dense_map_info_3_01short_01_4.html", null ],
     [ "wpi::DenseMapInfo< std::pair< T, U > >", "structwpi_1_1_dense_map_info_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ],
@@ -746,7 +900,9 @@ var hierarchy =
     [ "wpi::DenseMapInfo< unsigned long long >", "structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4.html", null ],
     [ "wpi::DenseMapInfo< unsigned short >", "structwpi_1_1_dense_map_info_3_01unsigned_01short_01_4.html", null ],
     [ "Eigen::DenseShape", "struct_eigen_1_1_dense_shape.html", null ],
+    [ "Eigen::DenseSparseProductReturnType< Lhs, Rhs, InnerSize >", "struct_eigen_1_1_dense_sparse_product_return_type.html", null ],
     [ "Eigen::DenseStorage< T, Size, _Rows, _Cols, _Options >", "class_eigen_1_1_dense_storage.html", null ],
+    [ "Eigen::DenseStorage< Scalar, Base::MaxSizeAtCompileTime, Base::RowsAtCompileTime, Base::ColsAtCompileTime, Options >", "class_eigen_1_1_dense_storage.html", null ],
     [ "Eigen::DenseStorage< T, 0, 0, 0, _Options >", "class_eigen_1_1_dense_storage.html", [
       [ "Eigen::DenseStorage< T, 0, Dynamic, Dynamic, _Options >", "class_eigen_1_1_dense_storage_3_01_t_00_010_00_01_dynamic_00_01_dynamic_00_01___options_01_4.html", null ],
       [ "Eigen::DenseStorage< T, 0, Dynamic, _Cols, _Options >", "class_eigen_1_1_dense_storage_3_01_t_00_010_00_01_dynamic_00_01___cols_00_01___options_01_4.html", null ],
@@ -759,6 +915,7 @@ var hierarchy =
     [ "Eigen::DenseStorage< T, Size, _Rows, Dynamic, _Options >", "class_eigen_1_1_dense_storage_3_01_t_00_01_size_00_01___rows_00_01_dynamic_00_01___options_01_4.html", null ],
     [ "Eigen::DenseStorage< T, Size, Dynamic, _Cols, _Options >", "class_eigen_1_1_dense_storage_3_01_t_00_01_size_00_01_dynamic_00_01___cols_00_01___options_01_4.html", null ],
     [ "Eigen::DenseStorage< T, Size, Dynamic, Dynamic, _Options >", "class_eigen_1_1_dense_storage_3_01_t_00_01_size_00_01_dynamic_00_01_dynamic_00_01___options_01_4.html", null ],
+    [ "Eigen::DenseTimeSparseProduct< Lhs, Rhs >", "class_eigen_1_1_dense_time_sparse_product.html", null ],
     [ "deque", null, [
       [ "std::deque< T, EIGEN_ALIGNED_ALLOCATOR< T > >", "classstd_1_1deque_3_01_t_00_01_e_i_g_e_n___a_l_i_g_n_e_d___a_l_l_o_c_a_t_o_r_3_01_t_01_4_01_4.html", null ]
     ] ],
@@ -768,8 +925,12 @@ var hierarchy =
     [ "Eigen::internal::determinant_impl< Derived, 3 >", "struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_013_01_4.html", null ],
     [ "Eigen::internal::determinant_impl< Derived, 4 >", "struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_014_01_4.html", null ],
     [ "Eigen::internal::Diagonal2Dense", "struct_eigen_1_1internal_1_1_diagonal2_dense.html", null ],
+    [ "Eigen::internal::Diagonal2Sparse", "struct_eigen_1_1internal_1_1_diagonal2_sparse.html", null ],
     [ "Eigen::MatrixBase< Derived >::DiagonalIndexReturnType< Index >", "struct_eigen_1_1_matrix_base_1_1_diagonal_index_return_type.html", null ],
     [ "Eigen::internal::BandMatrixBase< Derived >::DiagonalIntReturnType< Index >", "struct_eigen_1_1internal_1_1_band_matrix_base_1_1_diagonal_int_return_type.html", null ],
+    [ "Eigen::DiagonalPreconditioner< _Scalar >", "class_eigen_1_1_diagonal_preconditioner.html", [
+      [ "Eigen::LeastSquareDiagonalPreconditioner< _Scalar >", "class_eigen_1_1_least_square_diagonal_preconditioner.html", null ]
+    ] ],
     [ "Eigen::DiagonalProduct< MatrixType, DiagonalType, ProductOrder >", "class_eigen_1_1_diagonal_product.html", null ],
     [ "Eigen::DiagonalShape", "struct_eigen_1_1_diagonal_shape.html", null ],
     [ "frc::DifferentialDriveAccelerationLimiter", "classfrc_1_1_differential_drive_acceleration_limiter.html", null ],
@@ -794,7 +955,6 @@ var hierarchy =
     [ "ghc::filesystem::directory_entry", "classghc_1_1filesystem_1_1directory__entry.html", null ],
     [ "ghc::filesystem::directory_iterator", "classghc_1_1filesystem_1_1directory__iterator.html", null ],
     [ "Eigen::internal::div_assign_op< DstScalar, SrcScalar >", "struct_eigen_1_1internal_1_1div__assign__op.html", null ],
-    [ "detail::dragonbox::divtest_table_entry< T >", "structdetail_1_1dragonbox_1_1divtest__table__entry.html", null ],
     [ "frc::DMA", "classfrc_1_1_d_m_a.html", null ],
     [ "Eigen::internal::dot_nocheck< T, U, NeedToTranspose >", "struct_eigen_1_1internal_1_1dot__nocheck.html", null ],
     [ "Eigen::internal::dot_nocheck< T, U, true >", "struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html", null ],
@@ -808,62 +968,20 @@ var hierarchy =
     [ "detail::dynamic_arg_list", "classdetail_1_1dynamic__arg__list.html", null ],
     [ "dynamic_format_arg_store< Context >", "classdynamic__format__arg__store.html", null ],
     [ "dynamic_formatter< Char >", "classdynamic__formatter.html", null ],
+    [ "Eigen::DynamicSparseMatrix< _Scalar, _Flags, _StorageIndex >", "class_eigen_1_1_dynamic_sparse_matrix.html", null ],
+    [ "WPI_EBO detail::ebo_storage", null, [
+      [ "wpi::memory::binary_segregator< Segregatable, RawAllocator >", "classwpi_1_1memory_1_1binary__segregator.html", null ]
+    ] ],
+    [ "WPI_EBOdetail::ebo_storage", null, [
+      [ "wpi::memory::fallback_allocator< Default, Fallback >", "classwpi_1_1memory_1_1fallback__allocator.html", null ],
+      [ "wpi::memory::fallback_allocator< Default, Fallback >", "classwpi_1_1memory_1_1fallback__allocator.html", null ]
+    ] ],
     [ "EIGEN_ALIGNED_ALLOCATOR", null, [
       [ "Eigen::aligned_allocator_indirection< T >", "class_eigen_1_1aligned__allocator__indirection.html", null ]
     ] ],
     [ "EIGEN_INDEXED_VIEW_METHOD_TYPE< RowIndices, ColIndices >", "struct_e_i_g_e_n___i_n_d_e_x_e_d___v_i_e_w___m_e_t_h_o_d___t_y_p_e.html", null ],
     [ "Eigen::internal::eigen_packet_wrapper< T, unique_id >", "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html", null ],
     [ "Eigen::EigenBase< Derived >", "struct_eigen_1_1_eigen_base.html", [
-      [ "Eigen::DiagonalBase< DiagonalMatrix< _Scalar, SizeAtCompileTime, MaxSizeAtCompileTime > >", "class_eigen_1_1_diagonal_base.html", [
-        [ "Eigen::DiagonalMatrix< _Scalar, SizeAtCompileTime, MaxSizeAtCompileTime >", "class_eigen_1_1_diagonal_matrix.html", null ]
-      ] ],
-      [ "Eigen::DiagonalBase< DiagonalWrapper< _DiagonalVectorType > >", "class_eigen_1_1_diagonal_base.html", [
-        [ "Eigen::DiagonalWrapper< _DiagonalVectorType >", "class_eigen_1_1_diagonal_wrapper.html", null ]
-      ] ],
-      [ "Eigen::PermutationBase< Map< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex >, _PacketAccess > >", "class_eigen_1_1_permutation_base.html", [
-        [ "Eigen::Map< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex >, _PacketAccess >", "class_eigen_1_1_map_3_01_permutation_matrix_3_01_size_at_compile_time_00_01_max_size_at_compile_2f9d18bf0084dbfb13fbbfe14adaf22d.html", null ]
-      ] ],
-      [ "Eigen::PermutationBase< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex > >", "class_eigen_1_1_permutation_base.html", [
-        [ "Eigen::PermutationMatrix< ColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_permutation_matrix.html", null ],
-        [ "Eigen::PermutationMatrix< RowsAtCompileTime, MaxRowsAtCompileTime >", "class_eigen_1_1_permutation_matrix.html", null ],
-        [ "Eigen::PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex >", "class_eigen_1_1_permutation_matrix.html", null ]
-      ] ],
-      [ "Eigen::PermutationBase< PermutationWrapper< _IndicesType > >", "class_eigen_1_1_permutation_base.html", [
-        [ "Eigen::PermutationWrapper< _IndicesType >", "class_eigen_1_1_permutation_wrapper.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< ColPivHouseholderQR< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::ColPivHouseholderQR< _MatrixType >", "class_eigen_1_1_col_piv_householder_q_r.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< CompleteOrthogonalDecomposition< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::CompleteOrthogonalDecomposition< _MatrixType >", "class_eigen_1_1_complete_orthogonal_decomposition.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< FullPivHouseholderQR< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::FullPivHouseholderQR< _MatrixType >", "class_eigen_1_1_full_piv_householder_q_r.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< FullPivLU< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::FullPivLU< _MatrixType >", "class_eigen_1_1_full_piv_l_u.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< HouseholderQR< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::HouseholderQR< _MatrixType >", "class_eigen_1_1_householder_q_r.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< LDLT< _MatrixType, _UpLo > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::LDLT< _MatrixType, _UpLo >", "class_eigen_1_1_l_d_l_t.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< LLT< _MatrixType, _UpLo > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::LLT< _MatrixType, _UpLo >", "class_eigen_1_1_l_l_t.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< PartialPivLU< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::PartialPivLU< _MatrixType >", "class_eigen_1_1_partial_piv_l_u.html", null ]
-      ] ],
-      [ "Eigen::SolverBase< SVDBase< Derived > >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::SVDBase< Derived >", "class_eigen_1_1_s_v_d_base.html", null ]
-      ] ],
-      [ "Eigen::TriangularBase< SelfAdjointView< _MatrixType, UpLo > >", "class_eigen_1_1_triangular_base.html", [
-        [ "Eigen::SelfAdjointView< _MatrixType, UpLo >", "class_eigen_1_1_self_adjoint_view.html", null ]
-      ] ],
-      [ "Eigen::TriangularBase< TriangularView< _MatrixType, _Mode > >", "class_eigen_1_1_triangular_base.html", [
-        [ "Eigen::TriangularViewImpl< _MatrixType, _Mode, Dense >", "class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html", null ]
-      ] ],
       [ "Eigen::DenseCoeffsBase< Derived, ReadOnlyAccessors >", "class_eigen_1_1_dense_coeffs_base_3_01_derived_00_01_read_only_accessors_01_4.html", [
         [ "Eigen::DenseCoeffsBase< Derived, DirectAccessors >", "class_eigen_1_1_dense_coeffs_base_3_01_derived_00_01_direct_accessors_01_4.html", null ],
         [ "Eigen::DenseCoeffsBase< Derived, WriteAccessors >", "class_eigen_1_1_dense_coeffs_base_3_01_derived_00_01_write_accessors_01_4.html", [
@@ -872,27 +990,16 @@ var hierarchy =
       ] ],
       [ "Eigen::DiagonalBase< Derived >", "class_eigen_1_1_diagonal_base.html", null ],
       [ "Eigen::PermutationBase< Derived >", "class_eigen_1_1_permutation_base.html", null ],
-      [ "Eigen::SolverBase< Derived >", "class_eigen_1_1_solver_base.html", [
-        [ "Eigen::ColPivHouseholderQR< TransposeTypeWithSameStorageOrder >", "class_eigen_1_1_col_piv_householder_q_r.html", null ],
-        [ "Eigen::ColPivHouseholderQR< MatrixType >", "class_eigen_1_1_col_piv_householder_q_r.html", null ],
-        [ "Eigen::FullPivHouseholderQR< TransposeTypeWithSameStorageOrder >", "class_eigen_1_1_full_piv_householder_q_r.html", null ],
-        [ "Eigen::FullPivHouseholderQR< MatrixType >", "class_eigen_1_1_full_piv_householder_q_r.html", null ],
-        [ "Eigen::HouseholderQR< TransposeTypeWithSameStorageOrder >", "class_eigen_1_1_householder_q_r.html", null ],
-        [ "Eigen::HouseholderQR< MatrixType >", "class_eigen_1_1_householder_q_r.html", null ],
-        [ "Eigen::SVDBase< BDCSVD< _MatrixType > >", "class_eigen_1_1_s_v_d_base.html", [
-          [ "Eigen::BDCSVD< _MatrixType >", "class_eigen_1_1_b_d_c_s_v_d.html", null ]
-        ] ],
-        [ "Eigen::SVDBase< JacobiSVD< _MatrixType, QRPreconditioner > >", "class_eigen_1_1_s_v_d_base.html", [
-          [ "Eigen::JacobiSVD< _MatrixType, QRPreconditioner >", "class_eigen_1_1_jacobi_s_v_d.html", null ]
+      [ "Eigen::SolverBase< Derived >", "class_eigen_1_1_solver_base.html", null ],
+      [ "Eigen::SparseMatrixBase< Derived >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< Derived >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::SparseMapBase< Derived, ReadOnlyAccessors >", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html", [
+            [ "Eigen::SparseMapBase< Derived, WriteAccessors >", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html", null ]
+          ] ]
         ] ]
       ] ],
       [ "Eigen::TriangularBase< Derived >", "class_eigen_1_1_triangular_base.html", null ],
-      [ "Eigen::internal::BandMatrixBase< Derived >", "class_eigen_1_1internal_1_1_band_matrix_base.html", [
-        [ "Eigen::internal::BandMatrix< Scalar, Size, Size, Options &SelfAdjoint?0:1, 1, Options|RowMajor >", "class_eigen_1_1internal_1_1_band_matrix.html", [
-          [ "Eigen::internal::TridiagonalMatrix< Scalar, Size, Options >", "class_eigen_1_1internal_1_1_tridiagonal_matrix.html", null ]
-        ] ],
-        [ "Eigen::internal::BandMatrix< RealScalar, ColsAtCompileTime, ColsAtCompileTime, 1, 0, RowMajor >", "class_eigen_1_1internal_1_1_band_matrix.html", null ]
-      ] ]
+      [ "Eigen::internal::BandMatrixBase< Derived >", "class_eigen_1_1internal_1_1_band_matrix_base.html", null ]
     ] ],
     [ "Eigen::internal::EigenBase2EigenBase", "struct_eigen_1_1internal_1_1_eigen_base2_eigen_base.html", null ],
     [ "Eigen::EigenBase< BandMatrix< _Scalar, Rows, Cols, Supers, Subs, Options > >", "struct_eigen_1_1_eigen_base.html", [
@@ -900,9 +1007,136 @@ var hierarchy =
         [ "Eigen::internal::BandMatrix< _Scalar, Rows, Cols, Supers, Subs, Options >", "class_eigen_1_1internal_1_1_band_matrix.html", null ]
       ] ]
     ] ],
+    [ "Eigen::EigenBase< BandMatrix< RealScalar, Rows, Cols, Supers, Subs, Options > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::internal::BandMatrixBase< BandMatrix< RealScalar, Rows, Cols, Supers, Subs, Options > >", "class_eigen_1_1internal_1_1_band_matrix_base.html", [
+        [ "Eigen::internal::BandMatrix< RealScalar, ColsAtCompileTime, ColsAtCompileTime, 1, 0, RowMajor >", "class_eigen_1_1internal_1_1_band_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< BandMatrix< Scalar, Rows, Cols, Supers, Subs, Options > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::internal::BandMatrixBase< BandMatrix< Scalar, Rows, Cols, Supers, Subs, Options > >", "class_eigen_1_1internal_1_1_band_matrix_base.html", [
+        [ "Eigen::internal::BandMatrix< Scalar, Size, Size, Options &SelfAdjoint?0:1, 1, Options|RowMajor >", "class_eigen_1_1internal_1_1_band_matrix.html", [
+          [ "Eigen::internal::TridiagonalMatrix< Scalar, Size, Options >", "class_eigen_1_1internal_1_1_tridiagonal_matrix.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "Eigen::EigenBase< BandMatrixWrapper< _CoefficientsType, _Rows, _Cols, _Supers, _Subs, _Options > >", "struct_eigen_1_1_eigen_base.html", [
       [ "Eigen::internal::BandMatrixBase< BandMatrixWrapper< _CoefficientsType, _Rows, _Cols, _Supers, _Subs, _Options > >", "class_eigen_1_1internal_1_1_band_matrix_base.html", [
         [ "Eigen::internal::BandMatrixWrapper< _CoefficientsType, _Rows, _Cols, _Supers, _Subs, _Options >", "class_eigen_1_1internal_1_1_band_matrix_wrapper.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< Block< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< Block< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< Block< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::internal::sparse_matrix_block_impl< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols >", "class_eigen_1_1internal_1_1sparse__matrix__block__impl.html", [
+            [ "Eigen::BlockImpl< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true, Sparse >", "class_eigen_1_1_block_impl_3_01const_01_sparse_matrix_3_01___scalar_00_01___options_00_01___store3fd33d94eaf95572721ac85ec6beb63.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< Block< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< Block< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< Block< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::internal::sparse_matrix_block_impl< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols >", "class_eigen_1_1internal_1_1sparse__matrix__block__impl.html", [
+            [ "Eigen::BlockImpl< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true, Sparse >", "class_eigen_1_1_block_impl_3_01_sparse_matrix_3_01___scalar_00_01___options_00_01___storage_inded3daac10033a16d6ca9aea81cdfe7eee.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< Block< SparseMatrixType, BlockRows, BlockCols, true > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< Block< SparseMatrixType, BlockRows, BlockCols, true > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< Block< SparseMatrixType, BlockRows, BlockCols, true > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::internal::sparse_matrix_block_impl< SparseMatrixType, BlockRows, BlockCols >", "class_eigen_1_1internal_1_1sparse__matrix__block__impl.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< Block< XprType, BlockRows, BlockCols, InnerPanel > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< Block< XprType, BlockRows, BlockCols, InnerPanel > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::BlockImpl< XprType, BlockRows, BlockCols, InnerPanel, Sparse >", "class_eigen_1_1_block_impl_3_01_xpr_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_00_01_sparse_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< Block< XprType, BlockRows, BlockCols, true > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< Block< XprType, BlockRows, BlockCols, true > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::BlockImpl< XprType, BlockRows, BlockCols, true, Sparse >", "class_eigen_1_1_block_impl_3_01_xpr_type_00_01_block_rows_00_01_block_cols_00_01true_00_01_sparse_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< ColPivHouseholderQR< _MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< ColPivHouseholderQR< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::ColPivHouseholderQR< _MatrixType >", "class_eigen_1_1_col_piv_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< ColPivHouseholderQR< MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< ColPivHouseholderQR< MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::ColPivHouseholderQR< MatrixType >", "class_eigen_1_1_col_piv_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< ColPivHouseholderQR< TransposeTypeWithSameStorageOrder > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< ColPivHouseholderQR< TransposeTypeWithSameStorageOrder > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::ColPivHouseholderQR< TransposeTypeWithSameStorageOrder >", "class_eigen_1_1_col_piv_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< CompleteOrthogonalDecomposition< _MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< CompleteOrthogonalDecomposition< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::CompleteOrthogonalDecomposition< _MatrixType >", "class_eigen_1_1_complete_orthogonal_decomposition.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< CwiseBinaryOp< BinaryOp, Lhs, Rhs > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< CwiseBinaryOp< BinaryOp, Lhs, Rhs > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::CwiseBinaryOpImpl< BinaryOp, Lhs, Rhs, Sparse >", "class_eigen_1_1_cwise_binary_op_impl_3_01_binary_op_00_01_lhs_00_01_rhs_00_01_sparse_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< DiagonalMatrix< _Scalar, SizeAtCompileTime, MaxSizeAtCompileTime > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::DiagonalBase< DiagonalMatrix< _Scalar, SizeAtCompileTime, MaxSizeAtCompileTime > >", "class_eigen_1_1_diagonal_base.html", [
+        [ "Eigen::DiagonalMatrix< _Scalar, SizeAtCompileTime, MaxSizeAtCompileTime >", "class_eigen_1_1_diagonal_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< DiagonalWrapper< _DiagonalVectorType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::DiagonalBase< DiagonalWrapper< _DiagonalVectorType > >", "class_eigen_1_1_diagonal_base.html", [
+        [ "Eigen::DiagonalWrapper< _DiagonalVectorType >", "class_eigen_1_1_diagonal_wrapper.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< FullPivHouseholderQR< _MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< FullPivHouseholderQR< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::FullPivHouseholderQR< _MatrixType >", "class_eigen_1_1_full_piv_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< FullPivHouseholderQR< MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< FullPivHouseholderQR< MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::FullPivHouseholderQR< MatrixType >", "class_eigen_1_1_full_piv_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< FullPivHouseholderQR< TransposeTypeWithSameStorageOrder > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< FullPivHouseholderQR< TransposeTypeWithSameStorageOrder > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::FullPivHouseholderQR< TransposeTypeWithSameStorageOrder >", "class_eigen_1_1_full_piv_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< FullPivLU< _MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< FullPivLU< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::FullPivLU< _MatrixType >", "class_eigen_1_1_full_piv_l_u.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< HouseholderQR< _MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< HouseholderQR< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::HouseholderQR< _MatrixType >", "class_eigen_1_1_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< HouseholderQR< Eigen::Matrix< 4, 3 > > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< HouseholderQR< Eigen::Matrix< 4, 3 > > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::HouseholderQR< Eigen::Matrix< 4, 3 > >", "class_eigen_1_1_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< HouseholderQR< Eigen::Matrix< NumModules *2, 3 > > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< HouseholderQR< Eigen::Matrix< NumModules *2, 3 > > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::HouseholderQR< Eigen::Matrix< NumModules *2, 3 > >", "class_eigen_1_1_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< HouseholderQR< MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< HouseholderQR< MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::HouseholderQR< MatrixType >", "class_eigen_1_1_householder_q_r.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< HouseholderQR< TransposeTypeWithSameStorageOrder > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< HouseholderQR< TransposeTypeWithSameStorageOrder > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::HouseholderQR< TransposeTypeWithSameStorageOrder >", "class_eigen_1_1_householder_q_r.html", null ]
       ] ]
     ] ],
     [ "Eigen::EigenBase< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1_eigen_base.html", [
@@ -910,6 +1144,130 @@ var hierarchy =
     ] ],
     [ "Eigen::EigenBase< Inverse< PermutationType > >", "struct_eigen_1_1_eigen_base.html", [
       [ "Eigen::InverseImpl< PermutationType, PermutationStorage >", "class_eigen_1_1_inverse_impl_3_01_permutation_type_00_01_permutation_storage_01_4.html", null ]
+    ] ],
+    [ "Eigen::EigenBase< LDLT< _MatrixType, _UpLo > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< LDLT< _MatrixType, _UpLo > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::LDLT< _MatrixType, _UpLo >", "class_eigen_1_1_l_d_l_t.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< LLT< _MatrixType, _UpLo > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< LLT< _MatrixType, _UpLo > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::LLT< _MatrixType, _UpLo >", "class_eigen_1_1_l_l_t.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< Map< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex >, _PacketAccess > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::PermutationBase< Map< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex >, _PacketAccess > >", "class_eigen_1_1_permutation_base.html", [
+        [ "Eigen::Map< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex >, _PacketAccess >", "class_eigen_1_1_map_3_01_permutation_matrix_3_01_size_at_compile_time_00_01_max_size_at_compile_2f9d18bf0084dbfb13fbbfe14adaf22d.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< PartialPivLU< _MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< PartialPivLU< _MatrixType > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::PartialPivLU< _MatrixType >", "class_eigen_1_1_partial_piv_l_u.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::PermutationBase< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex > >", "class_eigen_1_1_permutation_base.html", [
+        [ "Eigen::PermutationMatrix< ColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_permutation_matrix.html", null ],
+        [ "Eigen::PermutationMatrix< RowsAtCompileTime, MaxRowsAtCompileTime >", "class_eigen_1_1_permutation_matrix.html", null ],
+        [ "Eigen::PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, _StorageIndex >", "class_eigen_1_1_permutation_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, StorageIndex > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::PermutationBase< PermutationMatrix< SizeAtCompileTime, MaxSizeAtCompileTime, StorageIndex > >", "class_eigen_1_1_permutation_base.html", [
+        [ "Eigen::PermutationMatrix< Dynamic, Dynamic, StorageIndex >", "class_eigen_1_1_permutation_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< PermutationWrapper< _IndicesType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::PermutationBase< PermutationWrapper< _IndicesType > >", "class_eigen_1_1_permutation_base.html", [
+        [ "Eigen::PermutationWrapper< _IndicesType >", "class_eigen_1_1_permutation_wrapper.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SelfAdjointView< _MatrixType, UpLo > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::TriangularBase< SelfAdjointView< _MatrixType, UpLo > >", "class_eigen_1_1_triangular_base.html", [
+        [ "Eigen::SelfAdjointView< _MatrixType, UpLo >", "class_eigen_1_1_self_adjoint_view.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SparseMatrix< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< SparseMatrix< _Scalar, _Options, _StorageIndex > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< SparseMatrix< _Scalar, _Options, _StorageIndex > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::SparseMatrix< _Scalar, _Options, _StorageIndex >", "class_eigen_1_1_sparse_matrix.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SparseMatrix< Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< SparseMatrix< Scalar, _Options, _StorageIndex > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< SparseMatrix< Scalar, _Options, _StorageIndex > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::SparseMatrix< Scalar >", "class_eigen_1_1_sparse_matrix.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SparseMatrix< Scalar, _Options, StorageIndex > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< SparseMatrix< Scalar, _Options, StorageIndex > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< SparseMatrix< Scalar, _Options, StorageIndex > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::SparseMatrix< Scalar, ColMajor, StorageIndex >", "class_eigen_1_1_sparse_matrix.html", null ],
+          [ "Eigen::SparseMatrix< Scalar, RowMajor, StorageIndex >", "class_eigen_1_1_sparse_matrix.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SparseQRMatrixQReturnType< SparseQRType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseQRMatrixQReturnType< SparseQRType >", "struct_eigen_1_1_sparse_q_r_matrix_q_return_type.html", null ]
+    ] ],
+    [ "Eigen::EigenBase< SparseSelfAdjointView< MatrixType, _Mode > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseSelfAdjointView< MatrixType, _Mode >", "class_eigen_1_1_sparse_self_adjoint_view.html", null ]
+    ] ],
+    [ "Eigen::EigenBase< SparseSymmetricPermutationProduct< MatrixType, Mode > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseSymmetricPermutationProduct< MatrixType, Mode >", "class_eigen_1_1_sparse_symmetric_permutation_product.html", null ]
+    ] ],
+    [ "Eigen::EigenBase< SparseVector< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< SparseVector< _Scalar, _Options, _StorageIndex > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< SparseVector< _Scalar, _Options, _StorageIndex > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::SparseVector< _Scalar, _Options, _StorageIndex >", "class_eigen_1_1_sparse_vector.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SparseView< MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< SparseView< MatrixType > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseView< MatrixType >", "class_eigen_1_1_sparse_view.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SVDBase< BDCSVD< _MatrixType > > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< SVDBase< BDCSVD< _MatrixType > > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::SVDBase< BDCSVD< _MatrixType > >", "class_eigen_1_1_s_v_d_base.html", [
+          [ "Eigen::BDCSVD< _MatrixType >", "class_eigen_1_1_b_d_c_s_v_d.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SVDBase< Derived > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< SVDBase< Derived > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::SVDBase< Derived >", "class_eigen_1_1_s_v_d_base.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< SVDBase< JacobiSVD< _MatrixType, QRPreconditioner > > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SolverBase< SVDBase< JacobiSVD< _MatrixType, QRPreconditioner > > >", "class_eigen_1_1_solver_base.html", [
+        [ "Eigen::SVDBase< JacobiSVD< _MatrixType, QRPreconditioner > >", "class_eigen_1_1_s_v_d_base.html", [
+          [ "Eigen::JacobiSVD< _MatrixType, QRPreconditioner >", "class_eigen_1_1_jacobi_s_v_d.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< Transpose< MatrixType > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< Transpose< MatrixType > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::SparseCompressedBase< Transpose< MatrixType > >", "class_eigen_1_1_sparse_compressed_base.html", [
+          [ "Eigen::internal::SparseTransposeImpl< MatrixType, CompressedAccessBit >", "class_eigen_1_1internal_1_1_sparse_transpose_impl_3_01_matrix_type_00_01_compressed_access_bit_01_4.html", null ]
+        ] ],
+        [ "Eigen::internal::SparseTransposeImpl< MatrixType, CompressedAccess >", "class_eigen_1_1internal_1_1_sparse_transpose_impl.html", [
+          [ "Eigen::TransposeImpl< MatrixType, Sparse >", "class_eigen_1_1_transpose_impl_3_01_matrix_type_00_01_sparse_01_4.html", null ]
+        ] ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< TriangularView< _MatrixType, _Mode > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::TriangularBase< TriangularView< _MatrixType, _Mode > >", "class_eigen_1_1_triangular_base.html", [
+        [ "Eigen::TriangularViewImpl< _MatrixType, _Mode, Dense >", "class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::EigenBase< TriangularView< MatrixType, Mode > >", "struct_eigen_1_1_eigen_base.html", [
+      [ "Eigen::SparseMatrixBase< TriangularView< MatrixType, Mode > >", "class_eigen_1_1_sparse_matrix_base.html", [
+        [ "Eigen::TriangularViewImpl< MatrixType, Mode, Sparse >", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html", null ]
+      ] ]
     ] ],
     [ "Eigen::EigenSolver< _MatrixType >", "class_eigen_1_1_eigen_solver.html", null ],
     [ "Eigen::internal::eigenvalues_selector< Derived, IsComplex >", "struct_eigen_1_1internal_1_1eigenvalues__selector.html", null ],
@@ -925,14 +1283,24 @@ var hierarchy =
     [ "nt::EntryInfo", "structnt_1_1_entry_info.html", null ],
     [ "nt::EntryNotification", "classnt_1_1_entry_notification.html", null ],
     [ "Eigen::numext::equal_to< T >", "struct_eigen_1_1numext_1_1equal__to.html", null ],
+    [ "wpi::memory::traits_detail::error", "structwpi_1_1memory_1_1traits__detail_1_1error.html", [
+      [ "wpi::memory::traits_detail::std_concept", "structwpi_1_1memory_1_1traits__detail_1_1std__concept.html", [
+        [ "wpi::memory::traits_detail::min_concept", "structwpi_1_1memory_1_1traits__detail_1_1min__concept.html", [
+          [ "wpi::memory::traits_detail::full_concept", "structwpi_1_1memory_1_1traits__detail_1_1full__concept.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "detail::error_handler", null, [
+      [ "basic_format_parse_context< Char, detail::error_handler >", "classbasic__format__parse__context.html", [
+        [ "compile_parse_context< Char, ErrorHandler >", "classcompile__parse__context.html", null ]
+      ] ],
       [ "basic_format_parse_context< Char, ErrorHandler >", "classbasic__format__parse__context.html", [
-        [ "compile_parse_context< Char, ErrorHandler >", "classcompile__parse__context.html", null ],
         [ "basic_printf_parse_context< Char >", "classbasic__printf__parse__context.html", null ]
       ] ]
     ] ],
-    [ "error_handler", "structerror__handler.html", [
-      [ "basic_format_parse_context< Char, error_handler >", "classbasic__format__parse__context.html", [
+    [ "error_handler", "structerror__handler.html", null ],
+    [ "ErrorHandler", null, [
+      [ "basic_format_parse_context< Char, ErrorHandler >", "classbasic__format__parse__context.html", [
         [ "compile_parse_context< Char, ErrorHandler >", "classcompile__parse__context.html", null ]
       ] ]
     ] ],
@@ -951,33 +1319,41 @@ var hierarchy =
     [ "Eigen::internal::eval< Matrix< _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols >, Dense >", "struct_eigen_1_1internal_1_1eval_3_01_matrix_3_01___scalar_00_01___rows_00_01___cols_00_01___opt9cfa1a2b5d36a2fa1d70e324e0b1c472.html", null ],
     [ "Eigen::internal::eval< T, Dense >", "struct_eigen_1_1internal_1_1eval_3_01_t_00_01_dense_01_4.html", null ],
     [ "Eigen::internal::eval< T, DiagonalShape >", "struct_eigen_1_1internal_1_1eval_3_01_t_00_01_diagonal_shape_01_4.html", null ],
+    [ "EvalIterator", null, [
+      [ "Eigen::internal::unary_evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel >, IteratorBased >::InnerVectorInnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_bloc7b8c3454e32b582bbd24168a4ea19a1b.html", null ],
+      [ "Eigen::internal::unary_evaluator< SparseView< ArgType >, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_sparse_view_3_01_arg_type_01_4_00_01_iterator_based_01_4_1_1_inner_iterator.html", null ],
+      [ "Eigen::internal::unary_evaluator< Transpose< ArgType >, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_iterator_based_01_4_1_1_inner_iterator.html", null ],
+      [ "Eigen::internal::unary_evaluator< TriangularView< ArgType, Mode >, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_arg_type_00_01_mode_01_4_0e8ca4efc3cb45e07bfa597fdc256f969.html", null ]
+    ] ],
+    [ "unary_evaluator::EvalIterator", null, [
+      [ "Eigen::internal::unary_evaluator< CwiseUnaryOp< UnaryOp, ArgType >, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_op_3_01_unary_op_00_01_arg_type_01_629bdbe0b310981fdaf6bb6b6c73ef55.html", null ]
+    ] ],
+    [ "unary_evaluator::EvalIterator", null, [
+      [ "Eigen::internal::unary_evaluator< CwiseUnaryView< ViewOp, ArgType >, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_view_op_00_01_arg_type_011a5afe598192a9657664b0cfbd26765b.html", null ]
+    ] ],
     [ "Eigen::internal::evaluator_assume_aliasing< T, Shape >", "struct_eigen_1_1internal_1_1evaluator__assume__aliasing.html", null ],
     [ "Eigen::internal::evaluator_assume_aliasing< CwiseBinaryOp< internal::scalar_difference_op< typename OtherXpr::Scalar, typename Product< Lhs, Rhs, DefaultProduct >::Scalar >, const OtherXpr, const Product< Lhs, Rhs, DefaultProduct > >, DenseShape >", "struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1sca69efad99c33943cb3731d094798b855b.html", null ],
     [ "Eigen::internal::evaluator_assume_aliasing< CwiseBinaryOp< internal::scalar_product_op< Scalar1, Scalar2 >, const CwiseNullaryOp< internal::scalar_constant_op< Scalar1 >, Plain1 >, const Product< Lhs, Rhs, DefaultProduct > > >", "struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1scae866e2c7242096d7b5fd789e3b867e0a.html", null ],
     [ "Eigen::internal::evaluator_assume_aliasing< CwiseBinaryOp< internal::scalar_sum_op< typename OtherXpr::Scalar, typename Product< Lhs, Rhs, DefaultProduct >::Scalar >, const OtherXpr, const Product< Lhs, Rhs, DefaultProduct > >, DenseShape >", "struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1scac641579c4e5344f96636c29532d8e354.html", null ],
     [ "Eigen::internal::evaluator_assume_aliasing< Product< Lhs, Rhs, DefaultProduct > >", "struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_product_3_01_lhs_00_01_rhs_00_01_default_product_01_4_01_4.html", null ],
-    [ "Eigen::internal::evaluator_base< ExpressionType >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+    [ "Eigen::internal::evaluator_base< ExpressionType >", "struct_eigen_1_1internal_1_1evaluator__base.html", null ],
+    [ "Eigen::internal::evaluator_base< ArrayWrapper< TArgType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::evaluator_wrapper_base< ArrayWrapper< TArgType > >", "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html", [
         [ "Eigen::internal::unary_evaluator< ArrayWrapper< TArgType > >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_array_wrapper_3_01_t_arg_type_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator_wrapper_base< MatrixWrapper< TArgType > >", "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html", [
-        [ "Eigen::internal::unary_evaluator< MatrixWrapper< TArgType > >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_matrix_wrapper_3_01_t_arg_type_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::mapbase_evaluator< Map< PlainObjectType, MapOptions, StrideType >, PlainObjectType >", "struct_eigen_1_1internal_1_1mapbase__evaluator.html", [
-        [ "Eigen::internal::evaluator< Map< PlainObjectType, MapOptions, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::mapbase_evaluator< Ref< PlainObjectType, RefOptions, StrideType >, PlainObjectType >", "struct_eigen_1_1internal_1_1mapbase__evaluator.html", [
-        [ "Eigen::internal::evaluator< Ref< PlainObjectType, RefOptions, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html", null ]
       ] ]
     ] ],
     [ "Eigen::internal::evaluator_base< Block< ArgType, BlockRows, BlockCols, InnerPanel > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::mapbase_evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel >, Block< ArgType, BlockRows, BlockCols, InnerPanel >::PlainObject >", "struct_eigen_1_1internal_1_1mapbase__evaluator.html", [
         [ "Eigen::internal::block_evaluator< ArgType, BlockRows, BlockCols, InnerPanel, true >", "struct_eigen_1_1internal_1_1block__evaluator_3_01_arg_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_00_01true_01_4.html", null ]
       ] ],
-      [ "Eigen::internal::unary_evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_blo4d5c305426f8b1ea1436bf5cefc2693d.html", null ]
+      [ "Eigen::internal::unary_evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_blo4d5c305426f8b1ea1436bf5cefc2693d.html", null ],
+      [ "Eigen::internal::unary_evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_blodb73497179e7c432f93b3052e2754983.html", null ]
     ] ],
     [ "Eigen::internal::evaluator_base< CwiseBinaryOp< BinaryOp, Lhs, Rhs > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
-      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IndexBased, IndexBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html", null ]
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IndexBased, IndexBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html", null ],
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IndexBased, IteratorBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0e1df6e69b5cafbc50d80e8ad3bfd660e.html", null ],
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IteratorBased, IndexBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html", null ],
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IteratorBased, IteratorBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_05c4f9212bd4fb2e2b8664dee5123f03b.html", null ]
     ] ],
     [ "Eigen::internal::evaluator_base< CwiseNullaryOp< NullaryOp, PlainObjectType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::evaluator< CwiseNullaryOp< NullaryOp, PlainObjectType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_nullary_op_3_01_nullary_op_00_01_plain_object_type_01_4_01_4.html", null ]
@@ -986,14 +1362,19 @@ var hierarchy =
       [ "Eigen::internal::ternary_evaluator< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 >, IndexBased, IndexBased >", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html", null ]
     ] ],
     [ "Eigen::internal::evaluator_base< CwiseUnaryOp< UnaryOp, ArgType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
-      [ "Eigen::internal::unary_evaluator< CwiseUnaryOp< UnaryOp, ArgType >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_op_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html", null ]
+      [ "Eigen::internal::unary_evaluator< CwiseUnaryOp< UnaryOp, ArgType >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_op_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html", null ],
+      [ "Eigen::internal::unary_evaluator< CwiseUnaryOp< UnaryOp, ArgType >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_op_3_01_unary_op_00_01_arg_type_01_4_00_01_iterator_based_01_4.html", null ]
     ] ],
     [ "Eigen::internal::evaluator_base< CwiseUnaryView< UnaryOp, ArgType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::unary_evaluator< CwiseUnaryView< UnaryOp, ArgType >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html", null ]
     ] ],
+    [ "Eigen::internal::evaluator_base< CwiseUnaryView< ViewOp, ArgType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+      [ "Eigen::internal::unary_evaluator< CwiseUnaryView< ViewOp, ArgType >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_view_op_00_01_arg_type_01_4_00_01_iterator_based_01_4.html", null ]
+    ] ],
     [ "Eigen::internal::evaluator_base< Derived >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::diagonal_product_evaluator_base< MatrixType, DiagonalType, Derived, ProductOrder >", "struct_eigen_1_1internal_1_1diagonal__product__evaluator__base.html", null ],
       [ "Eigen::internal::evaluator< PlainObjectBase< Derived > >", "struct_eigen_1_1internal_1_1evaluator_3_01_plain_object_base_3_01_derived_01_4_01_4.html", null ],
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Derived > >", "struct_eigen_1_1internal_1_1evaluator_3_01_sparse_compressed_base_3_01_derived_01_4_01_4.html", null ],
       [ "Eigen::internal::mapbase_evaluator< Derived, PlainObjectType >", "struct_eigen_1_1internal_1_1mapbase__evaluator.html", null ]
     ] ],
     [ "Eigen::internal::evaluator_base< Diagonal< ArgType, DiagIndex > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
@@ -1001,6 +1382,16 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::evaluator_base< IndexedView< ArgType, RowIndices, ColIndices > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::unary_evaluator< IndexedView< ArgType, RowIndices, ColIndices >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_indexed_view_3_01_arg_type_00_01_row_indices_0a913f6bc2f452353a41edde576b11553.html", null ]
+    ] ],
+    [ "Eigen::internal::evaluator_base< Map< PlainObjectType, MapOptions, StrideType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+      [ "Eigen::internal::mapbase_evaluator< Map< PlainObjectType, MapOptions, StrideType >, PlainObjectType >", "struct_eigen_1_1internal_1_1mapbase__evaluator.html", [
+        [ "Eigen::internal::evaluator< Map< PlainObjectType, MapOptions, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_plain_object_type_00_01_map_options_00_01_stride_type_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::evaluator_base< MatrixWrapper< TArgType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+      [ "Eigen::internal::evaluator_wrapper_base< MatrixWrapper< TArgType > >", "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html", [
+        [ "Eigen::internal::unary_evaluator< MatrixWrapper< TArgType > >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_matrix_wrapper_3_01_t_arg_type_01_4_01_4.html", null ]
+      ] ]
     ] ],
     [ "Eigen::internal::evaluator_base< PartialReduxExpr< ArgType, MemberOp, Direction > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::evaluator< PartialReduxExpr< ArgType, MemberOp, Direction > >", "struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html", null ]
@@ -1013,6 +1404,11 @@ var hierarchy =
         [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, ProductKind >, ProductTag, DiagonalShape, DenseShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_product_kinb2964e3ecd5359c634047e003305b765.html", null ]
       ] ],
       [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, LazyProduct >, ProductTag, DenseShape, DenseShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_lazy_produc1ed1c0c8715953d10d735722e273406b.html", null ]
+    ] ],
+    [ "Eigen::internal::evaluator_base< Ref< PlainObjectType, RefOptions, StrideType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+      [ "Eigen::internal::mapbase_evaluator< Ref< PlainObjectType, RefOptions, StrideType >, PlainObjectType >", "struct_eigen_1_1internal_1_1mapbase__evaluator.html", [
+        [ "Eigen::internal::evaluator< Ref< PlainObjectType, RefOptions, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html", null ]
+      ] ]
     ] ],
     [ "Eigen::internal::evaluator_base< Replicate< ArgType, RowFactor, ColFactor > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::unary_evaluator< Replicate< ArgType, RowFactor, ColFactor > >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html", null ]
@@ -1029,13 +1425,29 @@ var hierarchy =
     [ "Eigen::internal::evaluator_base< Select< ConditionMatrixType, ThenMatrixType, ElseMatrixType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
       [ "Eigen::internal::evaluator< Select< ConditionMatrixType, ThenMatrixType, ElseMatrixType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_t0c555ecce04e199df0b1ebada3749ccc.html", null ]
     ] ],
+    [ "Eigen::internal::evaluator_base< SparseVector< _Scalar, _Options, _Index > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+      [ "Eigen::internal::evaluator< SparseVector< _Scalar, _Options, _Index > >", "struct_eigen_1_1internal_1_1evaluator_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___index_01_4_01_4.html", null ]
+    ] ],
+    [ "Eigen::internal::evaluator_base< SparseView< ArgType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+      [ "Eigen::internal::unary_evaluator< SparseView< ArgType >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_sparse_view_3_01_arg_type_01_4_00_01_index_based_01_4.html", null ],
+      [ "Eigen::internal::unary_evaluator< SparseView< ArgType >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_sparse_view_3_01_arg_type_01_4_00_01_iterator_based_01_4.html", null ]
+    ] ],
     [ "Eigen::internal::evaluator_base< Transpose< ArgType > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
-      [ "Eigen::internal::unary_evaluator< Transpose< ArgType >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html", null ]
+      [ "Eigen::internal::unary_evaluator< Transpose< ArgType >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_index_based_01_4.html", null ],
+      [ "Eigen::internal::unary_evaluator< Transpose< ArgType >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_transpose_3_01_arg_type_01_4_00_01_iterator_based_01_4.html", null ]
+    ] ],
+    [ "Eigen::internal::evaluator_base< TriangularView< ArgType, Mode > >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
+      [ "Eigen::internal::unary_evaluator< TriangularView< ArgType, Mode >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_arg_type_00_01_mode_01_4_00_01_iterator_based_01_4.html", null ]
     ] ],
     [ "Eigen::internal::evaluator_base< XprType >", "struct_eigen_1_1internal_1_1evaluator__base.html", [
-      [ "Eigen::internal::evaluator_wrapper_base< XprType >", "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html", null ]
+      [ "Eigen::internal::evaluator_wrapper_base< XprType >", "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html", null ],
+      [ "Eigen::internal::sparse_conjunction_evaluator< XprType, IndexBased, IteratorBased >", "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_index_based_00_01_iterator_based_01_4.html", null ],
+      [ "Eigen::internal::sparse_conjunction_evaluator< XprType, IteratorBased, IndexBased >", "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html", null ],
+      [ "Eigen::internal::sparse_conjunction_evaluator< XprType, IteratorBased, IteratorBased >", "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_iterator_based_01_4.html", null ]
     ] ],
     [ "Eigen::internal::evaluator_traits< SelfAdjointView< MatrixType, Mode > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_mode_01_4_01_4.html", null ],
+    [ "Eigen::internal::evaluator_traits< SparseQRMatrixQReturnType< SparseQRType > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html", null ],
+    [ "Eigen::internal::evaluator_traits< SparseSelfAdjointView< MatrixType, Mode > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_self_adjoint_view_3_01_matrix_type_00_01_mode_01_4_01_4.html", null ],
     [ "Eigen::internal::evaluator_traits< TriangularView< MatrixType, Mode > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_01_4.html", null ],
     [ "Eigen::internal::evaluator_traits_base< T >", "struct_eigen_1_1internal_1_1evaluator__traits__base.html", [
       [ "Eigen::internal::evaluator_traits< T >", "struct_eigen_1_1internal_1_1evaluator__traits.html", null ]
@@ -1049,6 +1461,7 @@ var hierarchy =
     [ "Eigen::internal::evaluator_traits_base< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits__base.html", [
       [ "Eigen::internal::evaluator_traits< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_householder_sequence_3_01_vectors_type_00_01_5d5adf52607be62fe2f73ff93bacbb36.html", null ]
     ] ],
+    [ "frc::EventLoop", "classfrc_1_1_event_loop.html", null ],
     [ "std::exception", null, [
       [ "wpi::detail::exception", "classwpi_1_1detail_1_1exception.html", [
         [ "wpi::detail::invalid_iterator", "classwpi_1_1detail_1_1invalid__iterator.html", null ],
@@ -1075,12 +1488,16 @@ var hierarchy =
     [ "Eigen::internal::extract_data_selector< T, false >", "struct_eigen_1_1internal_1_1extract__data__selector_3_01_t_00_01false_01_4.html", null ],
     [ "fallback_digit_grouping< Char >", "classfallback__digit__grouping.html", null ],
     [ "fallback_formatter< T, Char, Enable >", "structfallback__formatter.html", null ],
-    [ "detail::fallback_uintptr", "structdetail_1_1fallback__uintptr.html", null ],
+    [ "wpi::memory::detail::fallback_type< Fallback >", "structwpi_1_1memory_1_1detail_1_1fallback__type.html", null ],
+    [ "wpi::memory::detail::fallback_type< binary_segregator< Segregator, Fallback > >", "structwpi_1_1memory_1_1detail_1_1fallback__type_3_01binary__segregator_3_01_segregator_00_01_fallback_01_4_01_4.html", null ],
     [ "Eigen::internal::false_type", "struct_eigen_1_1internal_1_1false__type.html", [
       [ "Eigen::internal::bool_constant< false >", "struct_eigen_1_1internal_1_1bool__constant_3_01false_01_4.html", null ],
       [ "Eigen::internal::is_exp_known_type< T >", "struct_eigen_1_1internal_1_1is__exp__known__type.html", null ]
     ] ],
     [ "std::false_type", null, [
+      [ "disjunction< is_formattable< uncvref_type< maybe_const_range< R > >, Char >, has_fallback_formatter< uncvref_type< maybe_const_range< R > >, Char > >", "structdisjunction.html", [
+        [ "detail::is_formattable_delayed< R, Char >", "structdetail_1_1is__formattable__delayed.html", null ]
+      ] ],
       [ "is_contiguous< Container >", "structis__contiguous.html", [
         [ "is_contiguous_back_insert_iterator< std::back_insert_iterator< Container > >", "structis__contiguous__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01_container_01_4_01_4.html", null ]
       ] ],
@@ -1092,7 +1509,10 @@ var hierarchy =
       [ "detail::has_mutable_begin_end< T, Enable >", "structdetail_1_1has__mutable__begin__end.html", null ],
       [ "detail::is_range_< T, _ >", "structdetail_1_1is__range__.html", null ],
       [ "detail::is_reference_wrapper< T >", "structdetail_1_1is__reference__wrapper.html", null ],
-      [ "detail::is_streamable< T, Char, enable_if_t< std::is_arithmetic< T >::value||std::is_array< T >::value||std::is_pointer< T >::value||std::is_same< T, char8_type >::value||std::is_same< T, std::basic_string< Char > >::value||std::is_same< T, std_string_view< Char > >::value||(std::is_convertible< T, int >::value &&!std::is_enum< T >::value)> >", "structdetail_1_1is__streamable_3_01_t_00_01_char_00_01enable__if__t_3_01std_1_1is__arithmetic_3_99543233d03d64d9a2040c5204d2e687.html", null ],
+      [ "detail::is_streamable< T, Char, enable_if_t< std::is_arithmetic< T >::value||std::is_array< T >::value||std::is_pointer< T >::value||std::is_same< T, char8_type >::value||std::is_convertible< T, fmt::basic_string_view< Char > >::value||std::is_same< T, std_string_view< Char > >::value||(std::is_convertible< T, int >::value &&!std::is_enum< T >::value)> >", "structdetail_1_1is__streamable_3_01_t_00_01_char_00_01enable__if__t_3_01std_1_1is__arithmetic_3_bc0b1f731ff3d9ab9d28f3bb9a486c4c.html", null ],
+      [ "disjunction<... >", "structdisjunction.html", null ],
+      [ "ghc::filesystem::path::_is_basic_string< T >", "structghc_1_1filesystem_1_1path_1_1__is__basic__string.html", null ],
+      [ "has_isfinite< T, Enable >", "structhas__isfinite.html", null ],
       [ "has_member_data_tm_gmtoff< T, typename >", "structhas__member__data__tm__gmtoff.html", null ],
       [ "has_member_data_tm_zone< T, typename >", "structhas__member__data__tm__zone.html", null ],
       [ "is_back_insert_iterator< OutputIt >", "structis__back__insert__iterator.html", null ],
@@ -1113,9 +1533,14 @@ var hierarchy =
       [ "wpi::detail::is_span< typename >", "structwpi_1_1detail_1_1is__span.html", null ],
       [ "wpi::detail::is_std_array< typename >", "structwpi_1_1detail_1_1is__std__array.html", null ],
       [ "wpi::disjunction<... >", "structwpi_1_1disjunction.html", null ],
+      [ "wpi::memory::detail::is_instantiation_of< Template, T >", "structwpi_1_1memory_1_1detail_1_1is__instantiation__of.html", null ],
+      [ "wpi::memory::is_shared_allocator< RawAllocator >", "structwpi_1_1memory_1_1is__shared__allocator.html", null ],
       [ "wpi::sig::trait::detail::is_callable< typename, typename, typename, typename >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__callable.html", null ],
       [ "wpi::sig::trait::detail::is_weak_ptr< T, typename >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr.html", null ],
       [ "wpi::sig::trait::detail::is_weak_ptr_compatible< T, typename >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr__compatible.html", null ]
+    ] ],
+    [ "WPI_EBOstd::false_type", null, [
+      [ "wpi::memory::small_node_pool", "structwpi_1_1memory_1_1small__node__pool.html", null ]
     ] ],
     [ "Eigen::internal::fast_accurate_exp2< Scalar >", "struct_eigen_1_1internal_1_1fast__accurate__exp2.html", null ],
     [ "Eigen::internal::fast_accurate_exp2< double >", "struct_eigen_1_1internal_1_1fast__accurate__exp2_3_01double_01_4.html", null ],
@@ -1123,26 +1548,31 @@ var hierarchy =
     [ "frc::PneumaticHub::Faults", "structfrc_1_1_pneumatic_hub_1_1_faults.html", null ],
     [ "frc::PowerDistribution::Faults", "structfrc_1_1_power_distribution_1_1_faults.html", null ],
     [ "frc::FieldObject2d", "classfrc_1_1_field_object2d.html", null ],
+    [ "detail::file_access< Tag, BufType, FileMemberPtr >", "classdetail_1_1file__access.html", null ],
     [ "ghc::filesystem::file_status", "classghc_1_1filesystem_1_1file__status.html", null ],
     [ "fill_t< Char >", "structfill__t.html", null ],
     [ "Eigen::internal::find_best_packet< T, Size >", "struct_eigen_1_1internal_1_1find__best__packet.html", null ],
     [ "Eigen::internal::find_best_packet_helper< Size, PacketType, Stop >", "struct_eigen_1_1internal_1_1find__best__packet__helper.html", null ],
     [ "Eigen::internal::find_best_packet_helper< Size, PacketType, false >", "struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01false_01_4.html", null ],
     [ "Eigen::internal::find_best_packet_helper< Size, PacketType, true >", "struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01true_01_4.html", null ],
-    [ "detail::find_escape_result< Char >", "structdetail_1_1find__escape__result.html", null ],
+    [ "find_escape_result< Char >", "structfind__escape__result.html", null ],
     [ "Eigen::internal::first_aligned_impl< Alignment, Derived, JustReturnZero >", "struct_eigen_1_1internal_1_1first__aligned__impl.html", null ],
     [ "Eigen::internal::first_aligned_impl< Alignment, Derived, false >", "struct_eigen_1_1internal_1_1first__aligned__impl_3_01_alignment_00_01_derived_00_01false_01_4.html", null ],
+    [ "wpi::FirstIndexOfType< T, Us >", "structwpi_1_1_first_index_of_type.html", null ],
     [ "fixed_buffer_traits", "classfixed__buffer__traits.html", [
       [ "iterator_buffer< T *, T, fixed_buffer_traits >", "classiterator__buffer_3_01_t_01_5_00_01_t_00_01fixed__buffer__traits_01_4.html", null ]
     ] ],
+    [ "wpi::memory::detail::fixed_memory_stack", "classwpi_1_1memory_1_1detail_1_1fixed__memory__stack.html", null ],
     [ "FixedBlockXpr< Rows, Cols >", "struct_fixed_block_xpr.html", null ],
     [ "Eigen::internal::FixedInt< N >", "class_eigen_1_1internal_1_1_fixed_int.html", null ],
     [ "FixedSegmentReturnType< Size >", "struct_fixed_segment_return_type.html", null ],
     [ "Eigen::Flagged< ExpressionType, Added, Removed >", "class_eigen_1_1_flagged.html", null ],
     [ "Eigen::half_impl::float32_bits", "union_eigen_1_1half__impl_1_1float32__bits.html", null ],
-    [ "dragonbox::float_info< T >", "structdragonbox_1_1float__info.html", null ],
+    [ "dragonbox::float_info< T, Enable >", "structdragonbox_1_1float__info.html", null ],
     [ "dragonbox::float_info< double >", "structdragonbox_1_1float__info_3_01double_01_4.html", null ],
     [ "dragonbox::float_info< float >", "structdragonbox_1_1float__info_3_01float_01_4.html", null ],
+    [ "dragonbox::float_info< T, enable_if_t< is_double_double< T >::value > >", "structdragonbox_1_1float__info_3_01_t_00_01enable__if__t_3_01is__double__double_3_01_t_01_4_1_1value_01_4_01_4.html", null ],
+    [ "dragonbox::float_info< T, enable_if_t< std::numeric_limits< T >::digits==64||std::numeric_limits< T >::digits==113||is_float128< T >::value > >", "structdragonbox_1_1float__info_3_01_t_00_01enable__if__t_3_01std_1_1numeric__limits_3_01_t_01_4_4ad7b4cb4a466ca2ac994b2f626f3574.html", null ],
     [ "float_specs", "structfloat__specs.html", null ],
     [ "format_arg_store< Context, Args >", "classformat__arg__store.html", null ],
     [ "format_decimal_result< Iterator >", "structformat__decimal__result.html", null ],
@@ -1157,7 +1587,11 @@ var hierarchy =
       [ "formatter< group_digits_view< T > >", "structformatter_3_01group__digits__view_3_01_t_01_4_01_4.html", null ]
     ] ],
     [ "formatter< basic_string_view< Char >, Char >", "structformatter.html", [
-      [ "detail::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >", "structdetail_1_1fallback__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01is__streamable_3_0116a9df8564c2d9e12499cd5b72786d7c.html", null ],
+      [ "basic_ostream_formatter< Char >", "structbasic__ostream__formatter.html", [
+        [ "detail::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >", "structdetail_1_1fallback__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01is__streamable_3_0116a9df8564c2d9e12499cd5b72786d7c.html", null ],
+        [ "formatter< detail::streamed_view< T >, Char >", "structformatter_3_01detail_1_1streamed__view_3_01_t_01_4_00_01_char_01_4.html", null ],
+        [ "formatter< std::thread::id, Char >", "structformatter_3_01std_1_1thread_1_1id_00_01_char_01_4.html", null ]
+      ] ],
       [ "formatter< Char[N], Char >", "structformatter_3_01_char_0f_n_0e_00_01_char_01_4.html", null ]
     ] ],
     [ "formatter< bytes >", "structformatter_3_01bytes_01_4.html", null ],
@@ -1166,20 +1600,24 @@ var hierarchy =
     ] ],
     [ "formatter< detail::bigint >", "structformatter_3_01detail_1_1bigint_01_4.html", null ],
     [ "fmt::formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4.html", null ],
+    [ "fmt::formatter< Eigen::SparseMatrix< double, Options, StorageIndex > >", "structfmt_1_1formatter_3_01_eigen_1_1_sparse_matrix_3_01double_00_01_options_00_01_storage_index_01_4_01_4.html", null ],
     [ "formatter< join_view< It, Sentinel, Char >, Char >", "structformatter_3_01join__view_3_01_it_00_01_sentinel_00_01_char_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01_rep_00_01_period_01_4_00_01_char_01_4.html", null ],
     [ "formatter< std::error_code, Char >", "structformatter_3_01std_1_1error__code_00_01_char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01_char_01_4.html", [
       [ "formatter< std::chrono::time_point< std::chrono::system_clock, Duration >, Char >", "structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01_duration_01_4_00_01_char_01_4.html", null ]
     ] ],
-    [ "formatter< T, Char, enable_if_t< detail::is_map< T >::value &&(is_formattable< detail::value_type< T >, Char >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01detail_1_1is__map_3_01_t_01_4_1_1value_53212af8d40eae8d53388dcc2cfe05ab.html", null ],
+    [ "formatter< T, Char >", "structformatter.html", [
+      [ "formatter< detail::styled_arg< T >, Char >", "structformatter_3_01detail_1_1styled__arg_3_01_t_01_4_00_01_char_01_4.html", null ]
+    ] ],
     [ "formatter< T, Char, enable_if_t< detail::type_constant< T, Char >::value !=detail::type::custom_type > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01detail_1_1type__constant_3_01_t_00_01_ce66aa95d8f86570b04dc47971fbb1e4b.html", null ],
-    [ "formatter< T, Char, enable_if_t< fmt::is_range< T, Char >::value &&(is_formattable< detail::value_type< T >, Char >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01_t_00_01_char_00_01enable__if__t_3_01fmt_1_1is__range_3_01_t_00_01_char_01_4cba26440f94df2f142946ab02c9c1c06.html", null ],
     [ "formatter< tuple_join_view< Char, T... >, Char >", "structformatter_3_01tuple__join__view_3_01_char_00_01_t_8_8_8_01_4_00_01_char_01_4.html", null ],
-    [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value > >", "structformatter_3_01_tuple_t_00_01_char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01_tuple_t_01_4_1_1value_01_4_01_4.html", null ],
+    [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value &&fmt::is_tuple_formattable< TupleT, Char >::value > >", "structformatter_3_01_tuple_t_00_01_char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01_tuple797f25cc01c29a62004a7da2d63b7b72.html", null ],
     [ "formatter< weekday, Char >", "structformatter_3_01weekday_00_01_char_01_4.html", null ],
-    [ "detail::fp", "structdetail_1_1fp.html", null ],
     [ "hal::fpga_clock", "classhal_1_1fpga__clock.html", null ],
+    [ "wpi::memory::detail::free_list_array< FreeList, AccessPolicy >", "classwpi_1_1memory_1_1detail_1_1free__list__array.html", null ],
+    [ "wpi::memory::detail::free_list_array< typename PoolType::type, typename BucketDistribution::type >", "classwpi_1_1memory_1_1detail_1_1free__list__array.html", null ],
+    [ "wpi::memory::detail::free_memory_list", "classwpi_1_1memory_1_1detail_1_1free__memory__list.html", null ],
     [ "wpi::detail::from_json_fn", "structwpi_1_1detail_1_1from__json__fn.html", null ],
     [ "wpi::function_ref< Fn >", "classwpi_1_1function__ref.html", null ],
     [ "wpi::function_ref< Ret(Params...)>", "classwpi_1_1function__ref_3_01_ret_07_params_8_8_8_08_4.html", null ],
@@ -1328,7 +1766,7 @@ var hierarchy =
     [ "Eigen::internal::gemv_static_vector_if< Scalar, Size, MaxSize, false >", "struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01false_01_4.html", null ],
     [ "Eigen::internal::gemv_static_vector_if< Scalar, Size, MaxSize, true >", "struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html", null ],
     [ "Eigen::internal::gemv_traits< LhsScalar, RhsScalar, _PacketSize >", "class_eigen_1_1internal_1_1gemv__traits.html", null ],
-    [ "detail::gen_digits_handler", "structdetail_1_1gen__digits__handler.html", null ],
+    [ "gen_digits_handler", "structgen__digits__handler.html", null ],
     [ "Eigen::internal::general_matrix_matrix_product< Index, LhsScalar, LhsStorageOrder, ConjugateLhs, RhsScalar, RhsStorageOrder, ConjugateRhs, ResStorageOrder, ResInnerStride >", "struct_eigen_1_1internal_1_1general__matrix__matrix__product.html", null ],
     [ "Eigen::internal::general_matrix_matrix_product< Index, LhsScalar, LhsStorageOrder, ConjugateLhs, RhsScalar, RhsStorageOrder, ConjugateRhs, ColMajor, ResInnerStride >", "struct_eigen_1_1internal_1_1general__matrix__matrix__product_3_01_index_00_01_lhs_scalar_00_01_l1c18efada955ca658977e927c1127f83.html", null ],
     [ "Eigen::internal::general_matrix_matrix_product< Index, LhsScalar, LhsStorageOrder, ConjugateLhs, RhsScalar, RhsStorageOrder, ConjugateRhs, RowMajor, ResInnerStride >", "struct_eigen_1_1internal_1_1general__matrix__matrix__product_3_01_index_00_01_lhs_scalar_00_01_le432ed816e972784a1617a76eb4d53eb.html", null ],
@@ -1355,6 +1793,9 @@ var hierarchy =
     [ "Eigen::internal::generic_dense_assignment_kernel< DstEvaluatorTypeT, SrcEvaluatorTypeT, swap_assign_op< DstEvaluatorTypeT::Scalar >, BuiltIn >", "class_eigen_1_1internal_1_1generic__dense__assignment__kernel.html", [
       [ "Eigen::internal::generic_dense_assignment_kernel< DstEvaluatorTypeT, SrcEvaluatorTypeT, swap_assign_op< typename DstEvaluatorTypeT::Scalar >, Specialized >", "class_eigen_1_1internal_1_1generic__dense__assignment__kernel_3_01_dst_evaluator_type_t_00_01_sr759181e846694beea0b332c7e3bbe519.html", null ]
     ] ],
+    [ "Eigen::internal::generic_matrix_wrapper< MatrixType, MatrixFree >", "class_eigen_1_1internal_1_1generic__matrix__wrapper.html", null ],
+    [ "Eigen::internal::generic_matrix_wrapper< MatrixType, false >", "class_eigen_1_1internal_1_1generic__matrix__wrapper_3_01_matrix_type_00_01false_01_4.html", null ],
+    [ "Eigen::internal::generic_matrix_wrapper< MatrixType, true >", "class_eigen_1_1internal_1_1generic__matrix__wrapper_3_01_matrix_type_00_01true_01_4.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, LhsShape, RhsShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl.html", null ],
     [ "Eigen::internal::generic_product_impl< Inverse< Lhs >, Rhs, PermutationShape, MatrixShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_inverse_3_01_lhs_01_4_00_01_rhs_00_01_pec7dcfbcd610060a544651ed47d5cce0c.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Inverse< Rhs >, MatrixShape, PermutationShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_inverse_3_01_rhs_01_4_00_01_ma98d6fa405abbfe2d34bd4bd3f95df76a.html", null ],
@@ -1366,6 +1807,10 @@ var hierarchy =
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, MatrixShape, PermutationShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_matrix_shape_00_01_p381c4dc3e0472eab95109350dacc6fc1.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, MatrixShape, TranspositionsShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_matrix_shape_00_01_tf888e33b0f360ba10ea614ccb9c9fdb1.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, PermutationShape, MatrixShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_permutation_shape_00d89930186aaeed972c89117934065103.html", null ],
+    [ "Eigen::internal::generic_product_impl< Lhs, Rhs, SparseShape, SparseShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_sparse_shape_00_01_s0f15bf86456099378e4a76f37323e721.html", [
+      [ "Eigen::internal::generic_product_impl< Lhs, Rhs, SparseShape, SparseTriangularShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_sparse_shape_00_01_s05ccb218a557b35cabc12ad35cb16218.html", null ],
+      [ "Eigen::internal::generic_product_impl< Lhs, Rhs, SparseTriangularShape, SparseShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_sparse_triangular_sh3486abfb0e2b8914c411a6ff792a44dd.html", null ]
+    ] ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, TranspositionsShape, MatrixShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_transpositions_shapea83c7854330208d83886265b658a092d.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Transpose< Rhs >, MatrixShape, TranspositionsShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_transpose_3_01_rhs_01_4_00_01_7e81e525eaa34bd7c41fa1e151593e72.html", null ],
     [ "Eigen::internal::generic_product_impl< Transpose< Lhs >, Rhs, TranspositionsShape, MatrixShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_transpose_3_01_lhs_01_4_00_01_rhs_00_01_287c8e613c7656c0ce6593799fd7b329.html", null ],
@@ -1379,22 +1824,46 @@ var hierarchy =
     [ "Eigen::internal::generic_product_impl_base< Lhs, Rhs, generic_product_impl< Lhs, Rhs, DenseShape, SelfAdjointShape, ProductTag > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
       [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, SelfAdjointShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_se2e8cb7106d8225767d620f93988c2a09.html", null ]
     ] ],
+    [ "Eigen::internal::generic_product_impl_base< Lhs, Rhs, generic_product_impl< Lhs, Rhs, DenseShape, SparseShape, ProductType > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
+      [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, SparseShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_sp21121e5deb0bbd0b6e9032984c439886.html", [
+        [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, SparseTriangularShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_sp47812b7c46d160bb7782b8c6e085fdfe.html", null ]
+      ] ]
+    ] ],
     [ "Eigen::internal::generic_product_impl_base< Lhs, Rhs, generic_product_impl< Lhs, Rhs, DenseShape, TriangularShape, ProductTag > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
       [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, TriangularShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_tre6f7b1bb2806815b569967282a3d5cae.html", null ]
     ] ],
     [ "Eigen::internal::generic_product_impl_base< Lhs, Rhs, generic_product_impl< Lhs, Rhs, SelfAdjointShape, DenseShape, ProductTag > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
       [ "Eigen::internal::generic_product_impl< Lhs, Rhs, SelfAdjointShape, DenseShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_self_adjoint_shape_06e3f81c44c9a89e35e47ffcd48d159f9.html", null ]
     ] ],
+    [ "Eigen::internal::generic_product_impl_base< Lhs, Rhs, generic_product_impl< Lhs, Rhs, SparseShape, DenseShape, ProductType > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
+      [ "Eigen::internal::generic_product_impl< Lhs, Rhs, SparseShape, DenseShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_sparse_shape_00_01_d233f0596d1aaf62fecbcef5d636a2696.html", [
+        [ "Eigen::internal::generic_product_impl< Lhs, Rhs, SparseTriangularShape, DenseShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_sparse_triangular_she6f06f29bc806fe3ce6ddd06da00c291.html", null ]
+      ] ]
+    ] ],
     [ "Eigen::internal::generic_product_impl_base< Lhs, Rhs, generic_product_impl< Lhs, Rhs, TriangularShape, DenseShape, ProductTag > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
       [ "Eigen::internal::generic_product_impl< Lhs, Rhs, TriangularShape, DenseShape, ProductTag >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_triangular_shape_00_4d5779e6000f2bc51bed3ea9b35ea4da.html", null ]
     ] ],
+    [ "Eigen::internal::generic_product_impl_base< Lhs, RhsView, generic_product_impl< Lhs, RhsView, DenseShape, SparseSelfAdjointShape, ProductType > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
+      [ "Eigen::internal::generic_product_impl< Lhs, RhsView, DenseShape, SparseSelfAdjointShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_view_00_01_dense_shape_00_97d81d328d4cc9ddd79aee8e69e68494.html", null ]
+    ] ],
+    [ "Eigen::internal::generic_product_impl_base< LhsView, Rhs, generic_product_impl< LhsView, Rhs, SparseSelfAdjointShape, DenseShape, ProductType > >", "struct_eigen_1_1internal_1_1generic__product__impl__base.html", [
+      [ "Eigen::internal::generic_product_impl< LhsView, Rhs, SparseSelfAdjointShape, DenseShape, ProductType >", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_view_00_01_rhs_00_01_sparse_self_adj0d7cb22d06770c150f0f74fa6f4e5968.html", null ]
+    ] ],
     [ "Eigen::internal::generic_xpr_base< Derived, XprKind, StorageKind >", "struct_eigen_1_1internal_1_1generic__xpr__base.html", null ],
     [ "Eigen::internal::generic_xpr_base< Derived, MatrixXpr, SolverStorage >", "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_matrix_xpr_00_01_solver_storage_01_4.html", null ],
+    [ "Eigen::internal::generic_xpr_base< Derived, MatrixXpr, Sparse >", "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_matrix_xpr_00_01_sparse_01_4.html", null ],
     [ "Eigen::internal::generic_xpr_base< Derived, XprKind, Dense >", "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_xpr_kind_00_01_dense_01_4.html", null ],
     [ "frc::GenericHID", "classfrc_1_1_generic_h_i_d.html", [
-      [ "frc::Joystick", "classfrc_1_1_joystick.html", null ],
-      [ "frc::PS4Controller", "classfrc_1_1_p_s4_controller.html", null ],
-      [ "frc::XboxController", "classfrc_1_1_xbox_controller.html", null ]
+      [ "frc2::CommandGenericHID", "classfrc2_1_1_command_generic_h_i_d.html", null ],
+      [ "frc::Joystick", "classfrc_1_1_joystick.html", [
+        [ "frc2::CommandJoystick", "classfrc2_1_1_command_joystick.html", null ]
+      ] ],
+      [ "frc::PS4Controller", "classfrc_1_1_p_s4_controller.html", [
+        [ "frc2::CommandPS4Controller", "classfrc2_1_1_command_p_s4_controller.html", null ]
+      ] ],
+      [ "frc::XboxController", "classfrc_1_1_xbox_controller.html", [
+        [ "frc2::CommandXboxController", "classfrc2_1_1_command_xbox_controller.html", null ]
+      ] ]
     ] ],
     [ "frc::sim::GenericHIDSim", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html", [
       [ "frc::sim::JoystickSim", "classfrc_1_1sim_1_1_joystick_sim.html", null ],
@@ -1402,7 +1871,6 @@ var hierarchy =
       [ "frc::sim::XboxControllerSim", "classfrc_1_1sim_1_1_xbox_controller_sim.html", null ]
     ] ],
     [ "Eigen::GenericNumTraits< T >", "struct_eigen_1_1_generic_num_traits.html", [
-      [ "Eigen::NumTraits< typenameMatrixType::Scalar >", "struct_eigen_1_1_num_traits.html", null ],
       [ "Eigen::NumTraits< T >", "struct_eigen_1_1_num_traits.html", null ]
     ] ],
     [ "Eigen::GenericNumTraits< bool >", "struct_eigen_1_1_generic_num_traits.html", [
@@ -1423,11 +1891,17 @@ var hierarchy =
     [ "Eigen::GenericNumTraits< long double >", "struct_eigen_1_1_generic_num_traits.html", [
       [ "Eigen::NumTraits< long double >", "struct_eigen_1_1_num_traits_3_01long_01double_01_4.html", null ]
     ] ],
+    [ "Eigen::GenericNumTraits< Scalar >", "struct_eigen_1_1_generic_num_traits.html", [
+      [ "Eigen::NumTraits< Scalar >", "struct_eigen_1_1_num_traits.html", null ]
+    ] ],
     [ "Eigen::GenericNumTraits< std::complex< _Real > >", "struct_eigen_1_1_generic_num_traits.html", [
       [ "Eigen::NumTraits< std::complex< _Real > >", "struct_eigen_1_1_num_traits_3_01std_1_1complex_3_01___real_01_4_01_4.html", null ]
     ] ],
     [ "Eigen::GenericNumTraits< std::string >", "struct_eigen_1_1_generic_num_traits.html", [
       [ "Eigen::NumTraits< std::string >", "struct_eigen_1_1_num_traits_3_01std_1_1string_01_4.html", null ]
+    ] ],
+    [ "Eigen::GenericNumTraits< typenameMatrixType::Scalar >", "struct_eigen_1_1_generic_num_traits.html", [
+      [ "Eigen::NumTraits< typenameMatrixType::Scalar >", "struct_eigen_1_1_num_traits.html", null ]
     ] ],
     [ "Eigen::internal::get_compile_time_incr< T, EnableIf >", "struct_eigen_1_1internal_1_1get__compile__time__incr.html", null ],
     [ "Eigen::internal::get_compile_time_incr< AllRange< Size > >", "struct_eigen_1_1internal_1_1get__compile__time__incr_3_01_all_range_3_01_size_01_4_01_4.html", null ],
@@ -1446,10 +1920,18 @@ var hierarchy =
     [ "Eigen::internal::get_fixed_value< VariableAndFixedInt< N >, Default >", "struct_eigen_1_1internal_1_1get__fixed__value_3_01_variable_and_fixed_int_3_01_n_01_4_00_01_default_01_4.html", null ],
     [ "get_locale", "classget__locale.html", null ],
     [ "wpi::pointer_union_detail::GetFirstType< T,... >", "structwpi_1_1pointer__union__detail_1_1_get_first_type.html", null ],
+    [ "WPI_EBOdetail::global_leak_checker", null, [
+      [ "wpi::memory::virtual_memory_allocator", "classwpi_1_1memory_1_1virtual__memory__allocator.html", null ]
+    ] ],
+    [ "wpi::memory::detail::global_leak_checker_impl< Handler >", "classwpi_1_1memory_1_1detail_1_1global__leak__checker__impl.html", [
+      [ "wpi::memory::detail::lowlevel_allocator< Functor >", "classwpi_1_1memory_1_1detail_1_1lowlevel__allocator.html", null ]
+    ] ],
     [ "Eigen::internal::global_math_functions_filtering_base< T, dummy >", "struct_eigen_1_1internal_1_1global__math__functions__filtering__base.html", null ],
     [ "Eigen::internal::global_math_functions_filtering_base< T, typename always_void< typename T::Eigen_BaseClassForSpecializationOfGlobalMathFuncImpl >::type >", "struct_eigen_1_1internal_1_1global__math__functions__filtering__base_3_01_t_00_01typename_01alwa3a21a82d868fc50f3fc9fd9dd230c694.html", null ],
     [ "Eigen::internal::glue_shapes< S1, S2 >", "struct_eigen_1_1internal_1_1glue__shapes.html", null ],
     [ "Eigen::internal::glue_shapes< DenseShape, TriangularShape >", "struct_eigen_1_1internal_1_1glue__shapes_3_01_dense_shape_00_01_triangular_shape_01_4.html", null ],
+    [ "Eigen::internal::glue_shapes< SparseShape, SelfAdjointShape >", "struct_eigen_1_1internal_1_1glue__shapes_3_01_sparse_shape_00_01_self_adjoint_shape_01_4.html", null ],
+    [ "Eigen::internal::glue_shapes< SparseShape, TriangularShape >", "struct_eigen_1_1internal_1_1glue__shapes_3_01_sparse_shape_00_01_triangular_shape_01_4.html", null ],
     [ "group_digits_view< T >", "structgroup__digits__view.html", null ],
     [ "frc::Gyro", "classfrc_1_1_gyro.html", [
       [ "frc::ADXRS450_Gyro", "classfrc_1_1_a_d_x_r_s450___gyro.html", null ],
@@ -1491,7 +1973,9 @@ var hierarchy =
       [ "wpi::SmallPtrSetIterator< PtrTy >", "classwpi_1_1_small_ptr_set_iterator.html", null ]
     ] ],
     [ "Handler", null, [
-      [ "specs_checker< Handler >", "classspecs__checker.html", null ]
+      [ "specs_checker< Handler >", "classspecs__checker.html", null ],
+      [ "wpi::memory::detail::global_leak_checker_impl< Handler >::counter", "structwpi_1_1memory_1_1detail_1_1global__leak__checker__impl_1_1counter.html", null ],
+      [ "wpi::memory::detail::object_leak_checker< Handler >", "classwpi_1_1memory_1_1detail_1_1object__leak__checker.html", null ]
     ] ],
     [ "Eigen::internal::has_binary_operator< T, IndexType >", "struct_eigen_1_1internal_1_1has__binary__operator.html", null ],
     [ "Eigen::internal::has_binary_operator< linspaced_op< Scalar >, IndexType >", "struct_eigen_1_1internal_1_1has__binary__operator_3_01linspaced__op_3_01_scalar_01_4_00_01_index_type_01_4.html", null ],
@@ -1499,6 +1983,7 @@ var hierarchy =
     [ "Eigen::internal::has_binary_operator< scalar_identity_op< Scalar >, IndexType >", "struct_eigen_1_1internal_1_1has__binary__operator_3_01scalar__identity__op_3_01_scalar_01_4_00_01_index_type_01_4.html", null ],
     [ "Eigen::internal::has_binary_operator< scalar_random_op< Scalar >, IndexType >", "struct_eigen_1_1internal_1_1has__binary__operator_3_01scalar__random__op_3_01_scalar_01_4_00_01_index_type_01_4.html", null ],
     [ "Eigen::internal::has_direct_access< Derived >", "struct_eigen_1_1internal_1_1has__direct__access.html", null ],
+    [ "has_format_as< T >", "structhas__format__as.html", null ],
     [ "wpi::detail::has_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__from__json.html", null ],
     [ "wpi::detail::has_non_default_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__non__default__from__json.html", null ],
     [ "Eigen::internal::has_none", "struct_eigen_1_1internal_1_1has__none.html", null ],
@@ -1522,7 +2007,9 @@ var hierarchy =
     [ "wpi::hashing::detail::hash_state", "structwpi_1_1hashing_1_1detail_1_1hash__state.html", null ],
     [ "wpi::detail::HasPointerLikeTypeTraits< T, U >", "structwpi_1_1detail_1_1_has_pointer_like_type_traits.html", null ],
     [ "wpi::detail::HasPointerLikeTypeTraits< T, decltype((sizeof(PointerLikeTypeTraits< T >)+sizeof(T)), void())>", "structwpi_1_1detail_1_1_has_pointer_like_type_traits_3_01_t_00_01decltype_07_07sizeof_07_pointer671eb09a59b08f00112f7368cac2b1c1.html", null ],
+    [ "wpi::memory::detail::heap_allocator_impl", "structwpi_1_1memory_1_1detail_1_1heap__allocator__impl.html", null ],
     [ "Eigen::HessenbergDecomposition< _MatrixType >", "class_eigen_1_1_hessenberg_decomposition.html", null ],
+    [ "Eigen::HessenbergDecomposition< MatrixType >", "class_eigen_1_1_hessenberg_decomposition.html", null ],
     [ "frc::HolonomicDriveController", "classfrc_1_1_holonomic_drive_controller.html", null ],
     [ "Eigen::Homogeneous< MatrixType, Direction >", "class_eigen_1_1_homogeneous.html", null ],
     [ "Eigen::HomogeneousShape", "struct_eigen_1_1_homogeneous_shape.html", null ],
@@ -1534,6 +2021,9 @@ var hierarchy =
     [ "Eigen::internal::hypot_impl< Scalar >", "struct_eigen_1_1internal_1_1hypot__impl.html", null ],
     [ "Eigen::internal::hypot_retval< Scalar >", "struct_eigen_1_1internal_1_1hypot__retval.html", null ],
     [ "frc::I2C", "classfrc_1_1_i2_c.html", null ],
+    [ "wpi::memory::detail::identity_access_policy", "structwpi_1_1memory_1_1detail_1_1identity__access__policy.html", null ],
+    [ "wpi::memory::identity_buckets", "structwpi_1_1memory_1_1identity__buckets.html", null ],
+    [ "Eigen::IdentityPreconditioner", "class_eigen_1_1_identity_preconditioner.html", null ],
     [ "Eigen::internal::imag_default_impl< Scalar, IsComplex >", "struct_eigen_1_1internal_1_1imag__default__impl.html", [
       [ "Eigen::internal::imag_impl< Scalar >", "struct_eigen_1_1internal_1_1imag__impl.html", null ]
     ] ],
@@ -1577,12 +2067,23 @@ var hierarchy =
     [ "Eigen::internal::IndexedViewCompatibleType< ArithmeticSequence< FirstType, SizeType, IncrType >, XprSize >", "struct_eigen_1_1internal_1_1_indexed_view_compatible_type_3_01_arithmetic_sequence_3_01_first_tyd21593682641b949eb2786d498655b51.html", null ],
     [ "Eigen::internal::IndexedViewCompatibleType< T, XprSize, typename enable_if< symbolic::is_symbolic< T >::value >::type >", "struct_eigen_1_1internal_1_1_indexed_view_compatible_type_3_01_t_00_01_xpr_size_00_01typename_0178e72e0a6bc44ac939f27fc5a061806f.html", null ],
     [ "Eigen::internal::IndexedViewCompatibleType< T, XprSize, typename internal::enable_if< internal::is_integral< T >::value >::type >", "struct_eigen_1_1internal_1_1_indexed_view_compatible_type_3_01_t_00_01_xpr_size_00_01typename_0161696b6cbe1a1578f3c296c7a92445db.html", null ],
+    [ "Eigen::SparseMatrix< _Scalar, _Options, _StorageIndex >::IndexPosPair", "struct_eigen_1_1_sparse_matrix_1_1_index_pos_pair.html", null ],
     [ "Eigen::internal::inner_iterator_selector< XprType, EvaluatorKind >", "class_eigen_1_1internal_1_1inner__iterator__selector.html", null ],
     [ "Eigen::internal::inner_iterator_selector< XprType, IndexBased >", "class_eigen_1_1internal_1_1inner__iterator__selector_3_01_xpr_type_00_01_index_based_01_4.html", null ],
     [ "Eigen::internal::inner_iterator_selector< XprType, typename internal::evaluator_traits< XprType >::Kind >", "class_eigen_1_1internal_1_1inner__iterator__selector.html", null ],
     [ "Eigen::internal::inner_stride_at_compile_time< Derived, HasDirectAccess >", "struct_eigen_1_1internal_1_1inner__stride__at__compile__time.html", null ],
     [ "Eigen::internal::inner_stride_at_compile_time< Derived, false >", "struct_eigen_1_1internal_1_1inner__stride__at__compile__time_3_01_derived_00_01false_01_4.html", null ],
     [ "Eigen::InnerIterator< XprType >", "class_eigen_1_1_inner_iterator.html", null ],
+    [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IndexBased, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01e8cca8cc02c9e5385773e158b41ea484.html", null ],
+    [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IteratorBased, IndexBased >::InnerIterator", "class_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_012b4683c8809d5a8c88ca2030de640ed2.html", null ],
+    [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< BinaryOp, Lhs, Rhs >, IteratorBased, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01bbcbab6e07c6c8a44f9c2134b78b5906.html", null ],
+    [ "Eigen::internal::MappedSuperNodalMatrix< _Scalar, _StorageIndex >::InnerIterator", "class_eigen_1_1internal_1_1_mapped_super_nodal_matrix_1_1_inner_iterator.html", null ],
+    [ "Eigen::internal::sparse_conjunction_evaluator< XprType, IndexBased, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_index_based_00_01_a04df7f6b82f87bde9590608a6f941de.html", null ],
+    [ "Eigen::internal::sparse_conjunction_evaluator< XprType, IteratorBased, IndexBased >::InnerIterator", "class_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_a6ef5c4f649d544c873e35b2b7e6dc62.html", null ],
+    [ "Eigen::internal::sparse_conjunction_evaluator< XprType, IteratorBased, IteratorBased >::InnerIterator", "class_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_c2f169adc5f8760251f1bd99603a9afc.html", null ],
+    [ "Eigen::internal::sparse_diagonal_product_evaluator< SparseXprType, DiagCoeffType, SDP_AsCwiseProduct >::InnerIterator", "class_eigen_1_1internal_1_1sparse__diagonal__product__evaluator_3_01_sparse_xpr_type_00_01_diag_f44167c623880e382ac76ec71f78299c.html", null ],
+    [ "Eigen::internal::unary_evaluator< SparseView< ArgType >, IndexBased >::InnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_sparse_view_3_01_arg_type_01_4_00_01_index_based_01_4_1_1_inner_iterator.html", null ],
+    [ "Eigen::SparseCompressedBase< Derived >::InnerIterator", "class_eigen_1_1_sparse_compressed_base_1_1_inner_iterator.html", null ],
     [ "evaluator::InnerIterator", null, [
       [ "Eigen::internal::inner_iterator_selector< XprType, IteratorBased >", "class_eigen_1_1internal_1_1inner__iterator__selector_3_01_xpr_type_00_01_iterator_based_01_4.html", null ]
     ] ],
@@ -1609,14 +2110,25 @@ var hierarchy =
       [ "units::traits::is_same_scale< T1, T2 >", "structunits_1_1traits_1_1is__same__scale.html", null ],
       [ "units::traits::is_unit_value_t< T, Units >", "structunits_1_1traits_1_1is__unit__value__t.html", null ],
       [ "units::traits::is_unit_value_t_category< Category, T >", "structunits_1_1traits_1_1is__unit__value__t__category.html", null ],
+      [ "wpi::FirstIndexOfType< T, T, Us... >", "structwpi_1_1_first_index_of_type_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html", null ],
+      [ "wpi::FirstIndexOfType< T, U, Us... >", "structwpi_1_1_first_index_of_type_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html", null ],
+      [ "wpi::TypesAreDistinct< Ts >", "structwpi_1_1_types_are_distinct.html", null ],
       [ "wpi::detail::ConstantLog2< N >", "structwpi_1_1detail_1_1_constant_log2.html", null ],
       [ "wpi::detail::ConstantLog2< 1 >", "structwpi_1_1detail_1_1_constant_log2_3_011_01_4.html", null ],
+      [ "wpi::detail::TypesAreDistinct< T, Us >", "structwpi_1_1detail_1_1_types_are_distinct.html", null ],
       [ "wpi::hashing::detail::is_hashable_data< T >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data.html", null ],
       [ "wpi::hashing::detail::is_hashable_data< std::pair< T, U > >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ],
+      [ "wpi::memory::detail::is_composable_allocator< T, std::integral_constant< bool, true > >", "structwpi_1_1memory_1_1detail_1_1is__composable__allocator_3_01_t_00_01std_1_1integral__constant_3_01bool_00_01true_01_4_01_4.html", null ],
+      [ "wpi::memory::detail::is_raw_allocator< T, std::integral_constant< bool, true > >", "structwpi_1_1memory_1_1detail_1_1is__raw__allocator_3_01_t_00_01std_1_1integral__constant_3_01bool_00_01true_01_4_01_4.html", null ],
+      [ "wpi::memory::is_thread_safe_allocator< RawAllocator >", "structwpi_1_1memory_1_1is__thread__safe__allocator.html", null ],
       [ "wpi::negation< T >", "structwpi_1_1negation.html", null ]
     ] ],
     [ "wpi::detail::internal_iterator< BasicJsonType >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
+    [ "wpi::detail::internal_iterator< typename std::remove_const< BasicJsonType >::type >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
     [ "wpi::interpolating_map< Key, Value >", "classwpi_1_1interpolating__map.html", null ],
+    [ "wpi::interpolating_map< units::meters_per_second_t, Eigen::Matrix< 2, 3 > >", "classwpi_1_1interpolating__map.html", null ],
+    [ "wpi::interpolating_map< units::meters_per_second_t, Eigen::Matrix< 2, 5 > >", "classwpi_1_1interpolating__map.html", null ],
+    [ "wpi::memory::traits_detail::invalid_allocator_concept< T >", "structwpi_1_1memory_1_1traits__detail_1_1invalid__allocator__concept.html", null ],
     [ "Eigen::internal::inverse_impl< MatrixType >", "struct_eigen_1_1internal_1_1inverse__impl.html", null ],
     [ "Eigen::internal::invoke_result< F, ArgType0, ArgType1, ArgType2 >", "struct_eigen_1_1internal_1_1invoke__result.html", null ],
     [ "Eigen::internal::invoke_result< F, ArgType0, ArgType1, void >", "struct_eigen_1_1internal_1_1invoke__result_3_01_f_00_01_arg_type0_00_01_arg_type1_00_01void_01_4.html", null ],
@@ -1654,6 +2166,9 @@ var hierarchy =
       [ "detail::is_compiled_string< S >", "structdetail_1_1is__compiled__string.html", null ],
       [ "is_compile_string< S >", "structis__compile__string.html", null ],
       [ "units::traits::is_base_unit< T >", "structunits_1_1traits_1_1is__base__unit.html", null ]
+    ] ],
+    [ "decltypedetail::is_block_allocator_impl", null, [
+      [ "wpi::memory::is_block_allocator< T >", "structwpi_1_1memory_1_1is__block__allocator.html", null ]
     ] ],
     [ "std::is_class", null, [
       [ "is_string< S >", "structis__string.html", null ]
@@ -1700,9 +2215,15 @@ var hierarchy =
     [ "Eigen::internal::is_lvalue< ExpressionType >", "struct_eigen_1_1internal_1_1is__lvalue.html", null ],
     [ "detail::is_map< T >", "classdetail_1_1is__map.html", null ],
     [ "is_range< T, Char >", "structis__range.html", null ],
+    [ "Eigen::internal::is_ref_compatible< MatrixType >", "struct_eigen_1_1internal_1_1is__ref__compatible.html", null ],
+    [ "Eigen::internal::is_ref_compatible_impl< MatrixType >", "struct_eigen_1_1internal_1_1is__ref__compatible__impl.html", null ],
     [ "Eigen::internal::is_same< T, U >", "struct_eigen_1_1internal_1_1is__same.html", null ],
     [ "std::is_same", null, [
-      [ "units::traits::is_convertible_unit< U1, U2 >", "structunits_1_1traits_1_1is__convertible__unit.html", null ]
+      [ "units::traits::is_convertible_unit< U1, U2 >", "structunits_1_1traits_1_1is__convertible__unit.html", null ],
+      [ "wpi::memory::detail::has_invalid_alloc_function< T >", "structwpi_1_1memory_1_1detail_1_1has__invalid__alloc__function.html", null ],
+      [ "wpi::memory::detail::has_invalid_dealloc_function< T >", "structwpi_1_1memory_1_1detail_1_1has__invalid__dealloc__function.html", null ],
+      [ "wpi::memory::detail::has_invalid_try_alloc_function< T >", "structwpi_1_1memory_1_1detail_1_1has__invalid__try__alloc__function.html", null ],
+      [ "wpi::memory::detail::has_invalid_try_dealloc_function< T >", "structwpi_1_1memory_1_1detail_1_1has__invalid__try__dealloc__function.html", null ]
     ] ],
     [ "Eigen::internal::is_same< T, T >", "struct_eigen_1_1internal_1_1is__same_3_01_t_00_01_t_01_4.html", null ],
     [ "Eigen::internal::is_same< void, remove_const< T >::type >", "struct_eigen_1_1internal_1_1is__same.html", [
@@ -1710,9 +2231,15 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::is_scalar< Packet >", "struct_eigen_1_1internal_1_1is__scalar.html", null ],
     [ "detail::is_set< T >", "classdetail_1_1is__set.html", null ],
+    [ "wpi::memory::traits_detail::is_stateful_impl< Allocator, IsEmpty >", "structwpi_1_1memory_1_1traits__detail_1_1is__stateful__impl.html", null ],
+    [ "wpi::memory::traits_detail::is_stateful_impl< Allocator, false >", "structwpi_1_1memory_1_1traits__detail_1_1is__stateful__impl_3_01_allocator_00_01false_01_4.html", null ],
+    [ "wpi::memory::traits_detail::is_stateful_impl< Allocator, true >", "structwpi_1_1memory_1_1traits__detail_1_1is__stateful__impl_3_01_allocator_00_01true_01_4.html", null ],
     [ "detail::is_std_string_like< T >", "classdetail_1_1is__std__string__like.html", null ],
     [ "detail::is_streamable< T, Char, Enable >", "classdetail_1_1is__streamable.html", null ],
     [ "Eigen::symbolic::is_symbolic< T >", "struct_eigen_1_1symbolic_1_1is__symbolic.html", null ],
+    [ "is_tuple_formattable< T, C >", "structis__tuple__formattable.html", null ],
+    [ "detail::is_tuple_formattable_< T, C, bool >", "classdetail_1_1is__tuple__formattable__.html", null ],
+    [ "detail::is_tuple_formattable_< T, C, true >", "classdetail_1_1is__tuple__formattable___3_01_t_00_01_c_00_01true_01_4.html", null ],
     [ "is_tuple_like< T >", "structis__tuple__like.html", null ],
     [ "detail::is_tuple_like_< T >", "classdetail_1_1is__tuple__like__.html", null ],
     [ "Eigen::internal::is_valid_index_type< T >", "struct_eigen_1_1internal_1_1is__valid__index__type.html", null ],
@@ -1726,23 +2253,17 @@ var hierarchy =
     [ "wpi::detail::IsPointerLike< T >", "structwpi_1_1detail_1_1_is_pointer_like.html", null ],
     [ "wpi::detail::IsPointerLike< T * >", "structwpi_1_1detail_1_1_is_pointer_like_3_01_t_01_5_01_4.html", null ],
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
+    [ "WPI_EBOdetail::iteration_block_allocator", null, [
+      [ "wpi::memory::iteration_allocator< N, BlockOrRawAllocator >", "classwpi_1_1memory_1_1iteration__allocator.html", null ]
+    ] ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
+    [ "Eigen::internal::AmbiVector< _Scalar, _StorageIndex >::Iterator", "class_eigen_1_1internal_1_1_ambi_vector_1_1_iterator.html", null ],
     [ "iterator", null, [
       [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ]
     ] ],
     [ "wpi::circular_buffer< T >::iterator", "classwpi_1_1circular__buffer_1_1iterator.html", null ],
     [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
-    [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__facade__base.html", [
-      [ "wpi::StringMapIterBase< StringMapConstIterator< ValueTy >, const StringMapEntry< ValueTy > >", "classwpi_1_1_string_map_iter_base.html", [
-        [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1_string_map_const_iterator.html", null ]
-      ] ],
-      [ "wpi::StringMapIterBase< StringMapIterator< ValueTy >, StringMapEntry< ValueTy > >", "classwpi_1_1_string_map_iter_base.html", [
-        [ "wpi::StringMapIterator< ValueTy >", "classwpi_1_1_string_map_iterator.html", null ]
-      ] ],
-      [ "wpi::iterator_adaptor_base< StringMapKeyIterator< ValueTy >, StringMapConstIterator< ValueTy >, std::forward_iterator_tag, std::string_view >", "classwpi_1_1iterator__adaptor__base.html", [
-        [ "wpi::StringMapKeyIterator< ValueTy >", "classwpi_1_1_string_map_key_iterator.html", null ]
-      ] ]
-    ] ],
+    [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__facade__base.html", null ],
     [ "wpi::iterator_facade_base< DerivedT, typename std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::difference_type, std::conditional_t< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::iterator_traits< WrappedIteratorT >::value_type * >, std::conditional_t< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::iterator_traits< WrappedIteratorT >::value_type & > >", "classwpi_1_1iterator__facade__base.html", [
       [ "wpi::iterator_adaptor_base< DerivedT, WrappedIteratorT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__adaptor__base.html", [
         [ "wpi::pointee_iterator< WrappedIteratorT, T >", "structwpi_1_1pointee__iterator.html", null ]
@@ -1757,11 +2278,27 @@ var hierarchy =
     [ "wpi::iterator_facade_base< SmallSetIterator< T, N, C >, std::forward_iterator_tag, T >", "classwpi_1_1iterator__facade__base.html", [
       [ "wpi::SmallSetIterator< T, N, C >", "classwpi_1_1_small_set_iterator.html", null ]
     ] ],
+    [ "wpi::iterator_facade_base< StringMapConstIterator< ValueTy >, std::forward_iterator_tag, const StringMapEntry< ValueTy > >", "classwpi_1_1iterator__facade__base.html", [
+      [ "wpi::StringMapIterBase< StringMapConstIterator< ValueTy >, const StringMapEntry< ValueTy > >", "classwpi_1_1_string_map_iter_base.html", [
+        [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1_string_map_const_iterator.html", null ]
+      ] ]
+    ] ],
+    [ "wpi::iterator_facade_base< StringMapIterator< ValueTy >, std::forward_iterator_tag, StringMapEntry< ValueTy > >", "classwpi_1_1iterator__facade__base.html", [
+      [ "wpi::StringMapIterBase< StringMapIterator< ValueTy >, StringMapEntry< ValueTy > >", "classwpi_1_1_string_map_iter_base.html", [
+        [ "wpi::StringMapIterator< ValueTy >", "classwpi_1_1_string_map_iterator.html", null ]
+      ] ]
+    ] ],
+    [ "wpi::iterator_facade_base< StringMapKeyIterator< ValueTy >, std::forward_iterator_tag, std::string_view, typename std::iterator_traits< StringMapConstIterator< ValueTy > >::difference_type, std::conditional_t< std::is_same< std::string_view, typename std::iterator_traits< StringMapConstIterator< ValueTy > >::value_type >::value, typename std::iterator_traits< StringMapConstIterator< ValueTy > >::pointer, std::string_view * >, std::conditional_t< std::is_same< std::string_view, typename std::iterator_traits< StringMapConstIterator< ValueTy > >::value_type >::value, typename std::iterator_traits< StringMapConstIterator< ValueTy > >::reference, std::string_view & > >", "classwpi_1_1iterator__facade__base.html", [
+      [ "wpi::iterator_adaptor_base< StringMapKeyIterator< ValueTy >, StringMapConstIterator< ValueTy >, std::forward_iterator_tag, std::string_view >", "classwpi_1_1iterator__adaptor__base.html", [
+        [ "wpi::StringMapKeyIterator< ValueTy >", "classwpi_1_1_string_map_key_iterator.html", null ]
+      ] ]
+    ] ],
     [ "wpi::iterator_range< IteratorT >", "classwpi_1_1iterator__range.html", null ],
     [ "Eigen::internal::IteratorBased", "struct_eigen_1_1internal_1_1_iterator_based.html", null ],
     [ "Eigen::JacobiRotation< Scalar >", "class_eigen_1_1_jacobi_rotation.html", null ],
     [ "wpi::java::detail::JArrayRefInner< C, T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner.html", null ],
     [ "wpi::java::detail::JArrayRefInner< C, jbyte >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jbyte_01_4.html", null ],
+    [ "wpi::java::detail::JArrayRefInner< C, jlong >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner_3_01_c_00_01jlong_01_4.html", null ],
     [ "wpi::java::detail::JArrayRefInner< JArrayRefBase< T >, T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_inner.html", [
       [ "wpi::java::detail::JArrayRefBase< T >", "classwpi_1_1java_1_1detail_1_1_j_array_ref_base.html", null ]
     ] ],
@@ -1772,12 +2309,20 @@ var hierarchy =
     [ "wpi::java::JExceptionInit", "structwpi_1_1java_1_1_j_exception_init.html", null ],
     [ "wpi::java::JGlobal< T >", "classwpi_1_1java_1_1_j_global.html", null ],
     [ "wpi::java::JLocal< T >", "classwpi_1_1java_1_1_j_local.html", null ],
+    [ "wpi::memory::joint", "classwpi_1_1memory_1_1joint.html", null ],
+    [ "wpi::memory::joint_allocator", "classwpi_1_1memory_1_1joint__allocator.html", null ],
+    [ "wpi::memory::joint_array< T >", "classwpi_1_1memory_1_1joint__array.html", null ],
+    [ "wpi::memory::joint_size", "structwpi_1_1memory_1_1joint__size.html", null ],
+    [ "wpi::memory::detail::joint_stack", "classwpi_1_1memory_1_1detail_1_1joint__stack.html", null ],
+    [ "wpi::memory::joint_type< T >", "classwpi_1_1memory_1_1joint__type.html", null ],
     [ "wpi::json", "classwpi_1_1json.html", null ],
     [ "wpi::json_pointer", "classwpi_1_1json__pointer.html", null ],
     [ "wpi::detail::json_ref< BasicJsonType >", "classwpi_1_1detail_1_1json__ref.html", null ],
     [ "wpi::java::JStringRef", "classwpi_1_1java_1_1_j_string_ref.html", null ],
     [ "frc::KalmanFilter< States, Inputs, Outputs >", "classfrc_1_1_kalman_filter.html", null ],
     [ "frc::KalmanFilterLatencyCompensator< States, Inputs, Outputs, KalmanFilterType >", "classfrc_1_1_kalman_filter_latency_compensator.html", null ],
+    [ "Eigen::IncompleteLUT< _Scalar, _StorageIndex >::keep_diag", "struct_eigen_1_1_incomplete_l_u_t_1_1keep__diag.html", null ],
+    [ "Eigen::SimplicialCholeskyBase< Derived >::keep_diag", "struct_eigen_1_1_simplicial_cholesky_base_1_1keep__diag.html", null ],
     [ "Eigen::internal::kernel_retval< DecompositionType >", "struct_eigen_1_1internal_1_1kernel__retval.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::KitbotGearing", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_kitbot_gearing.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::KitbotMotor", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_kitbot_motor.html", null ],
@@ -1802,11 +2347,19 @@ var hierarchy =
     [ "Eigen::internal::lhs_process_one_packet< nr, LhsProgress, RhsProgress, LhsScalar, RhsScalar, ResScalar, AccPacket, LhsPacket, RhsPacket, ResPacket, GEBPTraits, LinearMapper, DataMapper >", "struct_eigen_1_1internal_1_1lhs__process__one__packet.html", [
       [ "Eigen::internal::lhs_process_fraction_of_packet< nr, LhsProgress, RhsProgress, LhsScalar, RhsScalar, ResScalar, AccPacket, LhsPacket, RhsPacket, ResPacket, GEBPTraits, LinearMapper, DataMapper >", "struct_eigen_1_1internal_1_1lhs__process__fraction__of__packet.html", null ]
     ] ],
+    [ "LhsIterator", null, [
+      [ "Eigen::internal::sparse_dense_outer_product_evaluator< LhsT, RhsT, NeedToTranspose >::InnerIterator", "class_eigen_1_1internal_1_1sparse__dense__outer__product__evaluator_1_1_inner_iterator.html", null ]
+    ] ],
     [ "units::linear_scale< T >", "structunits_1_1linear__scale.html", null ],
     [ "units::linear_scale< UNIT_LIB_DEFAULT_TYPE >", "structunits_1_1linear__scale.html", [
+      [ "units::unit_t< kv_unit >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< ka_unit >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< units::compound_unit< units::radians_per_second, units::inverse< units::volt > > >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< units::compound_unit< units::newton_meters, units::inverse< units::ampere > > >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< units::radian >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< Distance >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< b_unit >", "classunits_1_1unit__t.html", null ],
+      [ "units::unit_t< zeta_unit >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< Rate >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< Unit >", "classunits_1_1unit__t.html", null ],
       [ "units::unit_t< units::compound_unit< units::radians, units::inverse< units::meters > > >", "classunits_1_1unit__t.html", null ],
@@ -1818,6 +2371,7 @@ var hierarchy =
     [ "frc::LinearPlantInversionFeedforward< States, Inputs >", "classfrc_1_1_linear_plant_inversion_feedforward.html", null ],
     [ "frc::LinearQuadraticRegulator< States, Inputs >", "classfrc_1_1_linear_quadratic_regulator.html", null ],
     [ "frc::LinearSystem< States, Inputs, Outputs >", "classfrc_1_1_linear_system.html", null ],
+    [ "frc::LinearSystem< 2, 2, 2 >", "classfrc_1_1_linear_system.html", null ],
     [ "frc::LinearSystemId", "classfrc_1_1_linear_system_id.html", null ],
     [ "frc::LinearSystemLoop< States, Inputs, Outputs >", "classfrc_1_1_linear_system_loop.html", null ],
     [ "frc::sim::LinearSystemSim< States, Inputs, Outputs >", "classfrc_1_1sim_1_1_linear_system_sim.html", null ],
@@ -1833,11 +2387,13 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::linspaced_op< Scalar >", "struct_eigen_1_1internal_1_1linspaced__op.html", null ],
     [ "Eigen::internal::linspaced_op_impl< Scalar, IsInteger >", "struct_eigen_1_1internal_1_1linspaced__op__impl.html", null ],
+    [ "Eigen::internal::linspaced_op_impl< Scalar, Eigen::NumTraits< Scalar >::IsInteger >", "struct_eigen_1_1internal_1_1linspaced__op__impl.html", null ],
     [ "Eigen::internal::linspaced_op_impl< Scalar, false >", "struct_eigen_1_1internal_1_1linspaced__op__impl_3_01_scalar_00_01false_01_4.html", null ],
     [ "Eigen::internal::linspaced_op_impl< Scalar, true >", "struct_eigen_1_1internal_1_1linspaced__op__impl_3_01_scalar_00_01true_01_4.html", null ],
     [ "list", null, [
       [ "std::list< T, EIGEN_ALIGNED_ALLOCATOR< T > >", "classstd_1_1list_3_01_t_00_01_e_i_g_e_n___a_l_i_g_n_e_d___a_l_l_o_c_a_t_o_r_3_01_t_01_4_01_4.html", null ]
     ] ],
+    [ "Eigen::internal::AmbiVector< _Scalar, _StorageIndex >::ListEl", "struct_eigen_1_1internal_1_1_ambi_vector_1_1_list_el.html", null ],
     [ "frc::detail::ListenerExecutor", "classfrc_1_1detail_1_1_listener_executor.html", null ],
     [ "frc::LiveWindow", "classfrc_1_1_live_window.html", null ],
     [ "Eigen::internal::llt_inplace< Scalar, UpLo >", "struct_eigen_1_1internal_1_1llt__inplace.html", null ],
@@ -1847,9 +2403,12 @@ var hierarchy =
     [ "Eigen::internal::LLT_Traits< MatrixType, Lower >", "struct_eigen_1_1internal_1_1_l_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html", null ],
     [ "Eigen::internal::LLT_Traits< MatrixType, Upper >", "struct_eigen_1_1internal_1_1_l_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html", null ],
     [ "locale_ref", "classlocale__ref.html", null ],
+    [ "wpi::memory::detail::locked_allocator< Alloc, Mutex >", "classwpi_1_1memory_1_1detail_1_1locked__allocator.html", null ],
     [ "Eigen::internal::log1p_impl< Scalar >", "struct_eigen_1_1internal_1_1log1p__impl.html", null ],
     [ "Eigen::internal::log1p_impl< std::complex< RealScalar > >", "struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html", null ],
     [ "Eigen::internal::log1p_retval< Scalar >", "struct_eigen_1_1internal_1_1log1p__retval.html", null ],
+    [ "wpi::memory::detail::log2_access_policy", "structwpi_1_1memory_1_1detail_1_1log2__access__policy.html", null ],
+    [ "wpi::memory::log2_buckets", "structwpi_1_1memory_1_1log2__buckets.html", null ],
     [ "Eigen::internal::log_impl< Scalar >", "struct_eigen_1_1internal_1_1log__impl.html", null ],
     [ "Eigen::internal::log_impl< std::complex< Scalar > >", "struct_eigen_1_1internal_1_1log__impl_3_01std_1_1complex_3_01_scalar_01_4_01_4.html", null ],
     [ "wpi::Logger", "classwpi_1_1_logger.html", null ],
@@ -1857,6 +2416,8 @@ var hierarchy =
       [ "ghc::filesystem::not_implemented_exception", "classghc_1_1filesystem_1_1not__implemented__exception.html", null ]
     ] ],
     [ "nt::LogMessage", "classnt_1_1_log_message.html", null ],
+    [ "Eigen::internal::LowerBoundIndex", "struct_eigen_1_1internal_1_1_lower_bound_index.html", null ],
+    [ "wpi::memory::detail::lowlevel_allocator_leak_handler< Functor >", "structwpi_1_1memory_1_1detail_1_1lowlevel__allocator__leak__handler.html", null ],
     [ "Eigen::internal::lpNorm_selector< Derived, p >", "struct_eigen_1_1internal_1_1lp_norm__selector.html", null ],
     [ "Eigen::internal::lpNorm_selector< Derived, 1 >", "struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_011_01_4.html", null ],
     [ "Eigen::internal::lpNorm_selector< Derived, 2 >", "struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_012_01_4.html", null ],
@@ -1864,6 +2425,12 @@ var hierarchy =
     [ "Eigen::VectorwiseOp< ExpressionType, Direction >::LpNormReturnType< p >", "struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html", null ],
     [ "frc::LTVDifferentialDriveController", "classfrc_1_1_l_t_v_differential_drive_controller.html", null ],
     [ "frc::LTVUnicycleController", "classfrc_1_1_l_t_v_unicycle_controller.html", null ],
+    [ "Eigen::internal::LU_GlobalLU_t< IndexVector, ScalarVector >", "struct_eigen_1_1internal_1_1_l_u___global_l_u__t.html", null ],
+    [ "Eigen::internal::LU_kernel_bmod< SegSizeAtCompileTime >", "struct_eigen_1_1internal_1_1_l_u__kernel__bmod.html", null ],
+    [ "Eigen::internal::LU_kernel_bmod< 1 >", "struct_eigen_1_1internal_1_1_l_u__kernel__bmod_3_011_01_4.html", null ],
+    [ "make_block_allocator_t", null, [
+      [ "wpi::memory::tracked_block_allocator< Tracker, BlockOrRawAllocator >", "classwpi_1_1memory_1_1tracked__block__allocator.html", null ]
+    ] ],
     [ "Eigen::internal::make_integer< T >", "struct_eigen_1_1internal_1_1make__integer.html", null ],
     [ "Eigen::internal::make_integer< bfloat16 >", "struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html", null ],
     [ "Eigen::internal::make_integer< double >", "struct_eigen_1_1internal_1_1make__integer_3_01double_01_4.html", null ],
@@ -1872,6 +2439,10 @@ var hierarchy =
     [ "detail::make_integer_sequence< T, N, Ns >", "structdetail_1_1make__integer__sequence.html", null ],
     [ "Eigen::internal::make_proper_matrix_type< _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols >", "class_eigen_1_1internal_1_1make__proper__matrix__type.html", null ],
     [ "Eigen::internal::make_proper_matrix_type< Scalar, ColsAtCompileTime, RowsAtCompileTime, Options, MaxColsAtCompileTime, MaxRowsAtCompileTime >", "class_eigen_1_1internal_1_1make__proper__matrix__type.html", null ],
+    [ "wpi::memory::detail::make_segregator_t< Segregatables >", "structwpi_1_1memory_1_1detail_1_1make__segregator__t.html", null ],
+    [ "wpi::memory::detail::make_segregator_t< Segregatable >", "structwpi_1_1memory_1_1detail_1_1make__segregator__t_3_01_segregatable_01_4.html", null ],
+    [ "wpi::memory::detail::make_segregator_t< Segregatable, RawAllocator >", "structwpi_1_1memory_1_1detail_1_1make__segregator__t_3_01_segregatable_00_01_raw_allocator_01_4.html", null ],
+    [ "wpi::memory::detail::make_segregator_t< Segregatable, Tail... >", "structwpi_1_1memory_1_1detail_1_1make__segregator__t_3_01_segregatable_00_01_tail_8_8_8_01_4.html", null ],
     [ "Eigen::internal::make_size_type< T >", "struct_eigen_1_1internal_1_1make__size__type.html", null ],
     [ "Eigen::internal::make_unsigned< typename >", "struct_eigen_1_1internal_1_1make__unsigned.html", null ],
     [ "std::make_unsigned", null, [
@@ -1889,16 +2460,8 @@ var hierarchy =
     [ "make_unsigned_or_bool< bool >", "structmake__unsigned__or__bool_3_01bool_01_4.html", null ],
     [ "make_unsigned_or_unchanged< T, INTEGRAL >", "structmake__unsigned__or__unchanged.html", null ],
     [ "make_unsigned_or_unchanged< T, true >", "structmake__unsigned__or__unchanged_3_01_t_00_01true_01_4.html", null ],
-    [ "wpi::ManagedStaticBase", "classwpi_1_1_managed_static_base.html", [
-      [ "wpi::ManagedStatic< C, Creator, Deleter >", "classwpi_1_1_managed_static.html", null ]
-    ] ],
+    [ "wpi::memory::detail::malloc_allocator_impl", "structwpi_1_1memory_1_1detail_1_1malloc__allocator__impl.html", null ],
     [ "Eigen::MapBase< Derived, Level >", "class_eigen_1_1_map_base.html", [
-      [ "Eigen::RefBase< Ref< PlainObjectType, Options, StrideType > >", "class_eigen_1_1_ref_base.html", [
-        [ "Eigen::Ref< PlainObjectType, Options, StrideType >", "class_eigen_1_1_ref.html", null ]
-      ] ],
-      [ "Eigen::RefBase< Ref< const TPlainObjectType, Options, StrideType > >", "class_eigen_1_1_ref_base.html", [
-        [ "Eigen::Ref< const TPlainObjectType, Options, StrideType >", "class_eigen_1_1_ref_3_01const_01_t_plain_object_type_00_01_options_00_01_stride_type_01_4.html", null ]
-      ] ],
       [ "Eigen::RefBase< Derived >", "class_eigen_1_1_ref_base.html", null ]
     ] ],
     [ "Eigen::MapBase< Block< XprType, BlockRows, BlockCols, InnerPanel > >", "class_eigen_1_1_map_base.html", [
@@ -1907,15 +2470,44 @@ var hierarchy =
     [ "Eigen::MapBase< Map< PlainObjectType, MapOptions, StrideType > >", "class_eigen_1_1_map_base.html", [
       [ "Eigen::Map< PlainObjectType, MapOptions, StrideType >", "class_eigen_1_1_map.html", null ]
     ] ],
+    [ "Eigen::MapBase< Map< SparseMatrix< _Scalar, _Flags, _StorageIndex >, MapOptions, StrideType > >", "class_eigen_1_1_map_base.html", [
+      [ "Eigen::Map< SparseMatrix< _Scalar, _Flags, _StorageIndex > >", "class_eigen_1_1_map.html", [
+        [ "Eigen::MappedSparseMatrix< _Scalar, _Flags, _StorageIndex >", "class_eigen_1_1_mapped_sparse_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::MapBase< Map< SparseMatrix< Scalar, _Flags, StorageIndex >, MapOptions, StrideType > >", "class_eigen_1_1_map_base.html", [
+      [ "Eigen::Map< SparseMatrix< Scalar, _Flags, StorageIndex > >", "class_eigen_1_1_map.html", [
+        [ "Eigen::MappedSparseMatrix< Scalar, ColMajor, StorageIndex >", "class_eigen_1_1_mapped_sparse_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::MapBase< Ref< const MatrixType, Options, StrideType > >", "class_eigen_1_1_map_base.html", [
+      [ "Eigen::RefBase< Ref< const MatrixType, Options, StrideType > >", "class_eigen_1_1_ref_base.html", [
+        [ "Eigen::Ref< const MatrixType >", "class_eigen_1_1_ref.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::MapBase< Ref< const TPlainObjectType, Options, StrideType > >", "class_eigen_1_1_map_base.html", [
+      [ "Eigen::RefBase< Ref< const TPlainObjectType, Options, StrideType > >", "class_eigen_1_1_ref_base.html", [
+        [ "Eigen::Ref< const TPlainObjectType, Options, StrideType >", "class_eigen_1_1_ref_3_01const_01_t_plain_object_type_00_01_options_00_01_stride_type_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::MapBase< Ref< PlainObjectType, Options, StrideType > >", "class_eigen_1_1_map_base.html", [
+      [ "Eigen::RefBase< Ref< PlainObjectType, Options, StrideType > >", "class_eigen_1_1_ref_base.html", [
+        [ "Eigen::Ref< PlainObjectType, Options, StrideType >", "class_eigen_1_1_ref.html", null ]
+      ] ]
+    ] ],
     [ "Eigen::MapBase< Reshaped< XprType, Rows, Cols, Order > >", "class_eigen_1_1_map_base.html", [
       [ "Eigen::internal::ReshapedImpl_dense< XprType, Rows, Cols, Order, true >", "class_eigen_1_1internal_1_1_reshaped_impl__dense_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_00_01true_01_4.html", null ]
     ] ],
     [ "wpi::MappedFileRegion", "classwpi_1_1_mapped_file_region.html", null ],
+    [ "Eigen::internal::MappedSuperNodalMatrix< _Scalar, _StorageIndex >", "class_eigen_1_1internal_1_1_mapped_super_nodal_matrix.html", null ],
+    [ "Eigen::internal::MappedSuperNodalMatrix< Scalar, StorageIndex >", "class_eigen_1_1internal_1_1_mapped_super_nodal_matrix.html", null ],
     [ "wpi::MapVector< KeyT, ValueT, MapType, VectorType >", "classwpi_1_1_map_vector.html", null ],
     [ "wpi::MapVector< KeyT, ValueT, SmallDenseMap< KeyT, unsigned, N >, SmallVector< std::pair< KeyT, ValueT >, N > >", "classwpi_1_1_map_vector.html", [
       [ "wpi::SmallMapVector< KeyT, ValueT, N >", "structwpi_1_1_small_map_vector.html", null ]
     ] ],
     [ "Eigen::internal::traits< Ref< _PlainObjectType, _Options, _StrideType > >::match< Derived >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4_1_1match.html", null ],
+    [ "Eigen::internal::traits< Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, _Options, _StrideType > >::match< Derived >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_optionsc6ef0ce4e339306d76a1e27f17721ded.html", null ],
+    [ "Eigen::internal::traits< Ref< SparseVector< MatScalar, MatOptions, MatIndex >, _Options, _StrideType > >::match< Derived >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_options4b581d834744f71c5c7313d6641690e6.html", null ],
     [ "wpi::math::MathShared", "classwpi_1_1math_1_1_math_shared.html", null ],
     [ "wpi::math::MathSharedStore", "classwpi_1_1math_1_1_math_shared_store.html", null ],
     [ "Eigen::internal::matrix_exp_computeUV< MatrixType, RealScalar >", "struct_eigen_1_1internal_1_1matrix__exp__compute_u_v.html", null ],
@@ -1948,6 +2540,26 @@ var hierarchy =
     [ "frc::MedianFilter< T >", "classfrc_1_1_median_filter.html", null ],
     [ "Eigen::internal::member_lpnorm< p, ResultType, Scalar >", "struct_eigen_1_1internal_1_1member__lpnorm.html", null ],
     [ "Eigen::internal::member_redux< BinaryOpT, Scalar >", "struct_eigen_1_1internal_1_1member__redux.html", null ],
+    [ "wpi::memory::detail::memory_arena_cache< Cached >", "classwpi_1_1memory_1_1detail_1_1memory__arena__cache.html", null ],
+    [ "WPI_EBOdetail::memory_arena_cache", null, [
+      [ "wpi::memory::memory_arena< allocator_type, false >", "classwpi_1_1memory_1_1memory__arena.html", null ],
+      [ "wpi::memory::memory_arena< allocator_type >", "classwpi_1_1memory_1_1memory__arena.html", null ],
+      [ "wpi::memory::memory_arena< BlockAllocator, Cached >", "classwpi_1_1memory_1_1memory__arena.html", null ]
+    ] ],
+    [ "wpi::memory::detail::memory_arena_cache< cached_arena >", "classwpi_1_1memory_1_1detail_1_1memory__arena__cache_3_01cached__arena_01_4.html", null ],
+    [ "wpi::memory::detail::memory_arena_cache< uncached_arena >", "classwpi_1_1memory_1_1detail_1_1memory__arena__cache_3_01uncached__arena_01_4.html", null ],
+    [ "wpi::memory::memory_block", "structwpi_1_1memory_1_1memory__block.html", null ],
+    [ "wpi::memory::detail::memory_block_stack", "classwpi_1_1memory_1_1detail_1_1memory__block__stack.html", null ],
+    [ "wpi::memory::detail::memory_pool_collection_leak_handler", "structwpi_1_1memory_1_1detail_1_1memory__pool__collection__leak__handler.html", null ],
+    [ "wpi::memory::detail::memory_pool_leak_handler", "structwpi_1_1memory_1_1detail_1_1memory__pool__leak__handler.html", null ],
+    [ "memory_resource", null, [
+      [ "wpi::memory::memory_resource_adapter< RawAllocator >", "classwpi_1_1memory_1_1memory__resource__adapter.html", null ]
+    ] ],
+    [ "wpi_memory_pmr::memory_resource", "classwpi__memory__pmr_1_1memory__resource.html", null ],
+    [ "wpi::memory::memory_resource_allocator", "classwpi_1_1memory_1_1memory__resource__allocator.html", null ],
+    [ "wpi::memory::detail::memory_stack_leak_handler", "structwpi_1_1memory_1_1detail_1_1memory__stack__leak__handler.html", null ],
+    [ "wpi::memory::memory_stack_raii_unwind< Stack >", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html", null ],
+    [ "wpi::memory::memory_stack_raii_unwind< wpi::memory::temporary_stack >", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html", null ],
     [ "wpi::MemoryBuffer", "classwpi_1_1_memory_buffer.html", [
       [ "wpi::SmallVectorMemoryBuffer", "classwpi_1_1_small_vector_memory_buffer.html", null ],
       [ "wpi::WritableMemoryBuffer", "classwpi_1_1_writable_memory_buffer.html", null ],
@@ -2001,16 +2613,27 @@ var hierarchy =
     ] ],
     [ "wpi::detail::move_construction_triviality_helper< T >", "unionwpi_1_1detail_1_1move__construction__triviality__helper.html", null ],
     [ "Eigen::internal::mul_assign_op< DstScalar, SrcScalar >", "struct_eigen_1_1internal_1_1mul__assign__op.html", null ],
+    [ "wpi::memory::detail::mutex_storage< Mutex >", "classwpi_1_1memory_1_1detail_1_1mutex__storage.html", null ],
+    [ "wpi::memory::detail::mutex_storage< detail::mutex_for< StoragePolicy::allocator_type, Mutex > >", "classwpi_1_1memory_1_1detail_1_1mutex__storage.html", [
+      [ "wpi::memory::allocator_storage< StoragePolicy, Mutex >", "classwpi_1_1memory_1_1allocator__storage.html", null ]
+    ] ],
+    [ "wpi::memory::detail::mutex_storage< no_mutex >", "classwpi_1_1memory_1_1detail_1_1mutex__storage_3_01no__mutex_01_4.html", null ],
     [ "named_arg_info< Char >", "structnamed__arg__info.html", null ],
+    [ "named_arg_info< char_type >", "structnamed__arg__info.html", null ],
     [ "named_arg_value< Char >", "structnamed__arg__value.html", null ],
+    [ "named_arg_value< char_type >", "structnamed__arg__value.html", null ],
+    [ "Eigen::NaturalOrdering< StorageIndex >", "class_eigen_1_1_natural_ordering.html", null ],
     [ "NColsBlockXpr< N >", "struct_n_cols_block_xpr.html", null ],
     [ "Eigen::internal::nested_eval< T, n, PlainObject >", "struct_eigen_1_1internal_1_1nested__eval.html", null ],
+    [ "Eigen::internal::nested_eval< DiagCoeffType, SparseXprType::IsRowMajor?SparseXprType::RowsAtCompileTime:SparseXprType::ColsAtCompileTime >", "struct_eigen_1_1internal_1_1nested__eval.html", null ],
     [ "Eigen::internal::nested_eval< ReturnByValue< Derived >, n, PlainObject >", "struct_eigen_1_1internal_1_1nested__eval_3_01_return_by_value_3_01_derived_01_4_00_01n_00_01_plain_object_01_4.html", null ],
     [ "nt::NetworkTable", "classnt_1_1_network_table.html", null ],
     [ "nt::NetworkTableEntry", "classnt_1_1_network_table_entry.html", null ],
     [ "nt::NetworkTableInstance", "classnt_1_1_network_table_instance.html", null ],
     [ "drake::never_destroyed< T >", "classdrake_1_1never__destroyed.html", null ],
+    [ "wpi::memory::detail::new_allocator_impl", "structwpi_1_1memory_1_1detail_1_1new__allocator__impl.html", null ],
     [ "Eigen::internal::no_assignment_operator", "class_eigen_1_1internal_1_1no__assignment__operator.html", [
+      [ "Eigen::CwiseNullaryOp< Eigen::internal::linspaced_op< Scalar >, PlainObject >", "class_eigen_1_1_cwise_nullary_op.html", null ],
       [ "Eigen::ReturnByValue< MatrixComplexPowerReturnValue< Derived > >", "class_eigen_1_1_return_by_value.html", [
         [ "Eigen::MatrixComplexPowerReturnValue< Derived >", "class_eigen_1_1_matrix_complex_power_return_value.html", null ]
       ] ],
@@ -2032,6 +2655,9 @@ var hierarchy =
       [ "Eigen::ReturnByValue< MatrixSquareRootReturnValue< Derived > >", "class_eigen_1_1_return_by_value.html", [
         [ "Eigen::MatrixSquareRootReturnValue< Derived >", "class_eigen_1_1_matrix_square_root_return_value.html", null ]
       ] ],
+      [ "Eigen::ReturnByValue< SparseQR_QProduct< SparseQRType, Derived > >", "class_eigen_1_1_return_by_value.html", [
+        [ "Eigen::SparseQR_QProduct< SparseQRType, Derived >", "struct_eigen_1_1_sparse_q_r___q_product.html", null ]
+      ] ],
       [ "Eigen::ReturnByValue< FullPivHouseholderQRMatrixQReturnType< MatrixType > >", "class_eigen_1_1_return_by_value.html", [
         [ "Eigen::internal::FullPivHouseholderQRMatrixQReturnType< MatrixType >", "struct_eigen_1_1internal_1_1_full_piv_householder_q_r_matrix_q_return_type.html", null ]
       ] ],
@@ -2041,8 +2667,18 @@ var hierarchy =
       [ "Eigen::ReturnByValue< TridiagonalizationMatrixTReturnType< MatrixType > >", "class_eigen_1_1_return_by_value.html", [
         [ "Eigen::internal::TridiagonalizationMatrixTReturnType< MatrixType >", "struct_eigen_1_1internal_1_1_tridiagonalization_matrix_t_return_type.html", null ]
       ] ],
+      [ "Eigen::ReturnByValue< image_retval_base< FullPivLU< _MatrixType > > >", "class_eigen_1_1_return_by_value.html", [
+        [ "Eigen::internal::image_retval_base< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1image__retval__base.html", [
+          [ "Eigen::internal::image_retval< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1image__retval_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html", null ]
+        ] ]
+      ] ],
       [ "Eigen::ReturnByValue< image_retval_base< _DecompositionType > >", "class_eigen_1_1_return_by_value.html", [
         [ "Eigen::internal::image_retval_base< _DecompositionType >", "struct_eigen_1_1internal_1_1image__retval__base.html", null ]
+      ] ],
+      [ "Eigen::ReturnByValue< kernel_retval_base< FullPivLU< _MatrixType > > >", "class_eigen_1_1_return_by_value.html", [
+        [ "Eigen::internal::kernel_retval_base< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1kernel__retval__base.html", [
+          [ "Eigen::internal::kernel_retval< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1kernel__retval_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html", null ]
+        ] ]
       ] ],
       [ "Eigen::ReturnByValue< kernel_retval_base< _DecompositionType > >", "class_eigen_1_1_return_by_value.html", [
         [ "Eigen::internal::kernel_retval_base< _DecompositionType >", "struct_eigen_1_1internal_1_1kernel__retval__base.html", null ]
@@ -2050,26 +2686,74 @@ var hierarchy =
       [ "Eigen::ReturnByValue< triangular_solve_retval< Side, TriangularType, Rhs > >", "class_eigen_1_1_return_by_value.html", [
         [ "Eigen::internal::triangular_solve_retval< Side, TriangularType, Rhs >", "struct_eigen_1_1internal_1_1triangular__solve__retval.html", null ]
       ] ],
+      [ "Eigen::BlockImpl< XprType, BlockRows, BlockCols, InnerPanel, Sparse >", "class_eigen_1_1_block_impl_3_01_xpr_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_00_01_sparse_01_4.html", null ],
       [ "Eigen::CwiseBinaryOp< BinaryOp, LhsType, RhsType >", "class_eigen_1_1_cwise_binary_op.html", null ],
       [ "Eigen::CwiseNullaryOp< NullaryOp, PlainObjectType >", "class_eigen_1_1_cwise_nullary_op.html", null ],
       [ "Eigen::CwiseTernaryOp< TernaryOp, Arg1Type, Arg2Type, Arg3Type >", "class_eigen_1_1_cwise_ternary_op.html", null ],
       [ "Eigen::CwiseUnaryOp< UnaryOp, XprType >", "class_eigen_1_1_cwise_unary_op.html", null ],
       [ "Eigen::DiagonalWrapper< _DiagonalVectorType >", "class_eigen_1_1_diagonal_wrapper.html", null ],
       [ "Eigen::PartialReduxExpr< MatrixType, MemberOp, Direction >", "class_eigen_1_1_partial_redux_expr.html", null ],
-      [ "Eigen::ReturnByValue< Derived >", "class_eigen_1_1_return_by_value.html", [
-        [ "Eigen::internal::image_retval_base< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1image__retval__base.html", [
-          [ "Eigen::internal::image_retval< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1image__retval_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html", null ]
-        ] ],
-        [ "Eigen::internal::kernel_retval_base< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1kernel__retval__base.html", [
-          [ "Eigen::internal::kernel_retval< FullPivLU< _MatrixType > >", "struct_eigen_1_1internal_1_1kernel__retval_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html", null ]
-        ] ]
-      ] ],
-      [ "Eigen::Select< ConditionMatrixType, ThenMatrixType, ElseMatrixType >", "class_eigen_1_1_select.html", null ]
+      [ "Eigen::ReturnByValue< Derived >", "class_eigen_1_1_return_by_value.html", null ],
+      [ "Eigen::Select< ConditionMatrixType, ThenMatrixType, ElseMatrixType >", "class_eigen_1_1_select.html", null ],
+      [ "Eigen::SparseLUMatrixLReturnType< MappedSupernodalType >", "struct_eigen_1_1_sparse_l_u_matrix_l_return_type.html", null ],
+      [ "Eigen::SparseLUMatrixUReturnType< MatrixLType, MatrixUType >", "struct_eigen_1_1_sparse_l_u_matrix_u_return_type.html", null ],
+      [ "Eigen::internal::column_dfs_traits< IndexVector, ScalarVector >", "struct_eigen_1_1internal_1_1column__dfs__traits.html", null ]
     ] ],
+    [ "wpi::memory::detail::no_leak_checker< Handler >", "classwpi_1_1memory_1_1detail_1_1no__leak__checker.html", null ],
+    [ "wpi::memory::no_mutex", "structwpi_1_1memory_1_1no__mutex.html", null ],
     [ "Eigen::NoAlias< ExpressionType, StorageBase >", "class_eigen_1_1_no_alias.html", null ],
     [ "Eigen::internal::noncopyable", "class_eigen_1_1internal_1_1noncopyable.html", [
+      [ "Eigen::SparseSolverBase< BiCGSTAB< _MatrixType, _Preconditioner > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::IterativeSolverBase< BiCGSTAB< _MatrixType, _Preconditioner > >", "class_eigen_1_1_iterative_solver_base.html", [
+          [ "Eigen::BiCGSTAB< _MatrixType, _Preconditioner >", "class_eigen_1_1_bi_c_g_s_t_a_b.html", null ]
+        ] ]
+      ] ],
+      [ "Eigen::SparseSolverBase< ConjugateGradient< _MatrixType, _UpLo, _Preconditioner > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::IterativeSolverBase< ConjugateGradient< _MatrixType, _UpLo, _Preconditioner > >", "class_eigen_1_1_iterative_solver_base.html", [
+          [ "Eigen::ConjugateGradient< _MatrixType, _UpLo, _Preconditioner >", "class_eigen_1_1_conjugate_gradient.html", null ]
+        ] ]
+      ] ],
+      [ "Eigen::SparseSolverBase< IncompleteCholesky< Scalar, Lower, AMDOrdering< int > > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::IncompleteCholesky< Scalar, _UpLo, _OrderingType >", "class_eigen_1_1_incomplete_cholesky.html", null ]
+      ] ],
+      [ "Eigen::SparseSolverBase< IncompleteLUT< _Scalar, int > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::IncompleteLUT< _Scalar, _StorageIndex >", "class_eigen_1_1_incomplete_l_u_t.html", null ]
+      ] ],
+      [ "Eigen::SparseSolverBase< LeastSquaresConjugateGradient< _MatrixType, _Preconditioner > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::IterativeSolverBase< LeastSquaresConjugateGradient< _MatrixType, _Preconditioner > >", "class_eigen_1_1_iterative_solver_base.html", [
+          [ "Eigen::LeastSquaresConjugateGradient< _MatrixType, _Preconditioner >", "class_eigen_1_1_least_squares_conjugate_gradient.html", null ]
+        ] ]
+      ] ],
+      [ "Eigen::SparseSolverBase< SimplicialCholesky< _MatrixType, _UpLo, _Ordering > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::SimplicialCholeskyBase< SimplicialCholesky< _MatrixType, _UpLo, _Ordering > >", "class_eigen_1_1_simplicial_cholesky_base.html", [
+          [ "Eigen::SimplicialCholesky< _MatrixType, _UpLo, _Ordering >", "class_eigen_1_1_simplicial_cholesky.html", null ]
+        ] ]
+      ] ],
+      [ "Eigen::SparseSolverBase< SimplicialLDLT< _MatrixType, _UpLo, _Ordering > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::SimplicialCholeskyBase< SimplicialLDLT< _MatrixType, _UpLo, _Ordering > >", "class_eigen_1_1_simplicial_cholesky_base.html", [
+          [ "Eigen::SimplicialLDLT< _MatrixType, _UpLo, _Ordering >", "class_eigen_1_1_simplicial_l_d_l_t.html", null ]
+        ] ]
+      ] ],
+      [ "Eigen::SparseSolverBase< SimplicialLLT< _MatrixType, _UpLo, _Ordering > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::SimplicialCholeskyBase< SimplicialLLT< _MatrixType, _UpLo, _Ordering > >", "class_eigen_1_1_simplicial_cholesky_base.html", [
+          [ "Eigen::SimplicialLLT< _MatrixType, _UpLo, _Ordering >", "class_eigen_1_1_simplicial_l_l_t.html", null ]
+        ] ]
+      ] ],
+      [ "Eigen::SparseSolverBase< SparseLU< _MatrixType, _OrderingType > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::SparseLU< _MatrixType, _OrderingType >", "class_eigen_1_1_sparse_l_u.html", null ]
+      ] ],
+      [ "Eigen::SparseSolverBase< SparseLUTransposeView< Conjugate, SparseLUType > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::SparseLUTransposeView< Conjugate, SparseLUType >", "class_eigen_1_1_sparse_l_u_transpose_view.html", null ]
+      ] ],
+      [ "Eigen::SparseSolverBase< SparseQR< _MatrixType, _OrderingType > >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::SparseQR< _MatrixType, _OrderingType >", "class_eigen_1_1_sparse_q_r.html", null ]
+      ] ],
       [ "Eigen::MatrixPower< MatrixType >", "class_eigen_1_1_matrix_power.html", null ],
       [ "Eigen::MatrixPowerAtomic< MatrixType >", "class_eigen_1_1_matrix_power_atomic.html", null ],
+      [ "Eigen::SparseSolverBase< Derived >", "class_eigen_1_1_sparse_solver_base.html", [
+        [ "Eigen::IterativeSolverBase< Derived >", "class_eigen_1_1_iterative_solver_base.html", null ],
+        [ "Eigen::SimplicialCholeskyBase< Derived >", "class_eigen_1_1_simplicial_cholesky_base.html", null ]
+      ] ],
       [ "Eigen::internal::aligned_stack_memory_handler< T >", "class_eigen_1_1internal_1_1aligned__stack__memory__handler.html", null ],
       [ "Eigen::internal::scoped_array< T >", "class_eigen_1_1internal_1_1scoped__array.html", null ]
     ] ],
@@ -2095,6 +2779,7 @@ var hierarchy =
     [ "NT_String", "struct_n_t___string.html", null ],
     [ "NT_Value", "struct_n_t___value.html", null ],
     [ "detail::null< T >", "structdetail_1_1null.html", null ],
+    [ "wpi::memory::null_allocator", "classwpi_1_1memory_1_1null__allocator.html", null ],
     [ "null_chrono_spec_handler< Derived >", "structnull__chrono__spec__handler.html", null ],
     [ "null_chrono_spec_handler< chrono_format_checker >", "structnull__chrono__spec__handler.html", [
       [ "chrono_format_checker", "structchrono__format__checker.html", null ]
@@ -2106,6 +2791,7 @@ var hierarchy =
     [ "Eigen::internal::nullary_result_of_select< Func, sizeof(has_std_result_type)>", "struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__std__result__type_08_4.html", null ],
     [ "Eigen::internal::nullary_result_of_select< Func, sizeof(has_tr1_result)>", "struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__tr1__result_08_4.html", null ],
     [ "Eigen::internal::nullary_wrapper< Scalar, NullaryOp, has_nullary, has_unary, has_binary >", "struct_eigen_1_1internal_1_1nullary__wrapper.html", null ],
+    [ "Eigen::internal::nullary_wrapper< CoeffReturnType, NullaryOp >", "struct_eigen_1_1internal_1_1nullary__wrapper.html", null ],
     [ "Eigen::internal::nullary_wrapper< Scalar, NullaryOp, false, false, false >", "struct_eigen_1_1internal_1_1nullary__wrapper_3_01_scalar_00_01_nullary_op_00_01false_00_01false_00_01false_01_4.html", null ],
     [ "Eigen::internal::nullary_wrapper< Scalar, NullaryOp, false, false, true >", "struct_eigen_1_1internal_1_1nullary__wrapper_3_01_scalar_00_01_nullary_op_00_01false_00_01false_00_01true_01_4.html", null ],
     [ "Eigen::internal::nullary_wrapper< Scalar, NullaryOp, false, true, false >", "struct_eigen_1_1internal_1_1nullary__wrapper_3_01_scalar_00_01_nullary_op_00_01false_00_01true_00_01false_01_4.html", null ],
@@ -2124,16 +2810,19 @@ var hierarchy =
     ] ],
     [ "Eigen::NumTraits< Array< Scalar, Rows, Cols, Options, MaxRows, MaxCols > >", "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html", null ],
     [ "Eigen::NumTraits< void >", "struct_eigen_1_1_num_traits_3_01void_01_4.html", null ],
-    [ "wpi::object_creator< C >", "structwpi_1_1object__creator.html", null ],
-    [ "wpi::object_deleter< T >", "structwpi_1_1object__deleter.html", null ],
-    [ "wpi::object_deleter< T[N]>", "structwpi_1_1object__deleter_3_01_t_0f_n_0e_4.html", null ],
     [ "frc::KalmanFilterLatencyCompensator< States, Inputs, Outputs, KalmanFilterType >::ObserverSnapshot", "structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html", null ],
     [ "Eigen::internal::operator_bitwise_helper< T >", "struct_eigen_1_1internal_1_1operator__bitwise__helper.html", [
       [ "Eigen::internal::bitwise_helper< T, typename internal::enable_if< is_scalar< T >::value &&(NumTraits< T >::IsInteger||NumTraits< T >::RequireInitialization)>::type >", "struct_eigen_1_1internal_1_1bitwise__helper_3_01_t_00_01typename_01internal_1_1enable__if_3_01is511f9b17390a86cf8902d79021239f89.html", null ]
     ] ],
     [ "Eigen::VectorwiseOp< ExpressionType, Direction >::OppositeExtendedType< OtherDerived >", "struct_eigen_1_1_vectorwise_op_1_1_opposite_extended_type.html", null ],
+    [ "wpi::memory::detail::ordered_free_memory_list", "classwpi_1_1memory_1_1detail_1_1ordered__free__memory__list.html", null ],
     [ "Eigen::internal::outer_stride_at_compile_time< Derived, HasDirectAccess >", "struct_eigen_1_1internal_1_1outer__stride__at__compile__time.html", null ],
     [ "Eigen::internal::outer_stride_at_compile_time< Derived, false >", "struct_eigen_1_1internal_1_1outer__stride__at__compile__time_3_01_derived_00_01false_01_4.html", null ],
+    [ "Eigen::internal::unary_evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel >, IteratorBased >::OuterVectorInnerIterator", "class_eigen_1_1internal_1_1unary__evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_bloc652d26bcece9990189dc15f4df1c964f.html", null ],
+    [ "P", null, [
+      [ "conjunction< P >", "structconjunction_3_01_p_01_4.html", null ],
+      [ "disjunction< P >", "structdisjunction_3_01_p_01_4.html", null ]
+    ] ],
     [ "wpi::support::detail::packed_endian_specific_integral< ValueType, Endian, Alignment, ALIGN >", "structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html", null ],
     [ "Eigen::internal::Packet1cd", "struct_eigen_1_1internal_1_1_packet1cd.html", null ],
     [ "Eigen::internal::Packet1cf", "struct_eigen_1_1internal_1_1_packet1cf.html", null ],
@@ -2147,32 +2836,47 @@ var hierarchy =
     [ "Eigen::internal::PacketBlockManagement< Index, Scalar, Packet, n, idx, StorageOrder >", "struct_eigen_1_1internal_1_1_packet_block_management.html", null ],
     [ "Eigen::internal::PacketBlockManagement< Index, Scalar, Packet, n, -1, RowMajor >", "struct_eigen_1_1internal_1_1_packet_block_management_3_01_index_00_01_scalar_00_01_packet_00_01n_00_01-1_00_01_row_major_01_4.html", null ],
     [ "Eigen::internal::PacketBlockManagement< Index, Scalar, Packet, n, -1, StorageOrder >", "struct_eigen_1_1internal_1_1_packet_block_management_3_01_index_00_01_scalar_00_01_packet_00_01nff208c892a9f40bbef360b2fb540448f.html", null ],
+    [ "Eigen::internal::PacketBlockManagement< Index, Scalar, Packet, n, idx - 1, RowMajor >", "struct_eigen_1_1internal_1_1_packet_block_management.html", null ],
     [ "Eigen::internal::PacketBlockManagement< Index, Scalar, Packet, n, idx, RowMajor >", "struct_eigen_1_1internal_1_1_packet_block_management_3_01_index_00_01_scalar_00_01_packet_00_01n_00_01idx_00_01_row_major_01_4.html", null ],
     [ "Eigen::internal::packetwise_redux_impl< Func, Evaluator, Unrolling >", "struct_eigen_1_1internal_1_1packetwise__redux__impl.html", null ],
     [ "Eigen::internal::packetwise_redux_impl< Func, Evaluator, CompleteUnrolling >", "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_complete_unrolling_01_4.html", null ],
     [ "Eigen::internal::packetwise_redux_impl< Func, Evaluator, NoUnrolling >", "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_no_unrolling_01_4.html", null ],
     [ "Eigen::internal::packetwise_redux_traits< Func, Evaluator >", "struct_eigen_1_1internal_1_1packetwise__redux__traits.html", null ],
     [ "std::pair", null, [
+      [ "wpi::detail::DenseMapPair< KeyT, unsigned >", "structwpi_1_1detail_1_1_dense_map_pair.html", null ],
+      [ "wpi::detail::DenseMapPair< int, unsigned int >", "structwpi_1_1detail_1_1_dense_map_pair.html", null ],
       [ "wpi::detail::DenseMapPair< KeyT, ValueT >", "structwpi_1_1detail_1_1_dense_map_pair.html", null ]
     ] ],
+    [ "Eigen::internal::panel_dfs_traits< IndexVector >", "struct_eigen_1_1internal_1_1panel__dfs__traits.html", null ],
     [ "Eigen::ParametrizedLine< _Scalar, _AmbientDim, Options >", "class_eigen_1_1_parametrized_line.html", null ],
     [ "Eigen::internal::partial_lu_impl< Scalar, StorageOrder, PivIndex, SizeAtCompileTime >", "struct_eigen_1_1internal_1_1partial__lu__impl.html", null ],
     [ "Eigen::partial_redux_dummy_func< A, B >", "struct_eigen_1_1partial__redux__dummy__func.html", null ],
     [ "ghc::filesystem::path_helper_base< char_type >", "classghc_1_1filesystem_1_1path__helper__base.html", null ],
+    [ "ghc::filesystem::path_helper_base< std::string::value_type >", "classghc_1_1filesystem_1_1path__helper__base.html", [
+      [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ]
+    ] ],
     [ "Eigen::internal::pchebevl< Packet, N >", "struct_eigen_1_1internal_1_1pchebevl.html", null ],
+    [ "Eigen::internal::perfvalues", "struct_eigen_1_1internal_1_1perfvalues.html", null ],
     [ "Eigen::internal::permutation_matrix_product< ExpressionType, Side, Transposed, ExpressionShape >", "struct_eigen_1_1internal_1_1permutation__matrix__product.html", null ],
     [ "Eigen::internal::permutation_matrix_product< ExpressionType, Side, Transposed, DenseShape >", "struct_eigen_1_1internal_1_1permutation__matrix__product_3_01_expression_type_00_01_side_00_01_t00744509fe9d67128974220180aea840.html", null ],
+    [ "Eigen::internal::permutation_matrix_product< ExpressionType, Side, Transposed, SparseShape >", "struct_eigen_1_1internal_1_1permutation__matrix__product_3_01_expression_type_00_01_side_00_01_t20ccd76e9ac5a7579d51cf9e9a5cbb67.html", null ],
+    [ "Eigen::internal::permutation_matrix_product< Lhs, OnTheRight, false, SparseShape >", "struct_eigen_1_1internal_1_1permutation__matrix__product.html", null ],
+    [ "Eigen::internal::permutation_matrix_product< Rhs, OnTheLeft, false, SparseShape >", "struct_eigen_1_1internal_1_1permutation__matrix__product.html", null ],
     [ "Eigen::PermutationShape", "struct_eigen_1_1_permutation_shape.html", null ],
     [ "Eigen::PermutationStorage", "struct_eigen_1_1_permutation_storage.html", null ],
     [ "wpi::support::detail::PickAlignment< T, alignment >", "structwpi_1_1support_1_1detail_1_1_pick_alignment.html", null ],
     [ "Eigen::internal::plain_array< T, Size, MatrixOrArrayOptions, Alignment >", "struct_eigen_1_1internal_1_1plain__array.html", null ],
+    [ "Eigen::internal::plain_array< Scalar, EIGEN_SIZE_MIN_PREFER_FIXED(Size, MaxSize)+(ForceAlignment?EIGEN_MAX_ALIGN_BYTES:0), 0 >", "struct_eigen_1_1internal_1_1plain__array.html", null ],
+    [ "Eigen::internal::plain_array< Scalar, Size, _Options >", "struct_eigen_1_1internal_1_1plain__array.html", null ],
     [ "Eigen::internal::plain_array< T, 0, MatrixOrArrayOptions, Alignment >", "struct_eigen_1_1internal_1_1plain__array_3_01_t_00_010_00_01_matrix_or_array_options_00_01_alignment_01_4.html", null ],
+    [ "Eigen::internal::plain_array< T, Size, _Options >", "struct_eigen_1_1internal_1_1plain__array.html", null ],
     [ "Eigen::internal::plain_array< T, Size, MatrixOrArrayOptions, 16 >", "struct_eigen_1_1internal_1_1plain__array_3_01_t_00_01_size_00_01_matrix_or_array_options_00_0116_01_4.html", null ],
     [ "Eigen::internal::plain_array< T, Size, MatrixOrArrayOptions, 32 >", "struct_eigen_1_1internal_1_1plain__array_3_01_t_00_01_size_00_01_matrix_or_array_options_00_0132_01_4.html", null ],
     [ "Eigen::internal::plain_array< T, Size, MatrixOrArrayOptions, 64 >", "struct_eigen_1_1internal_1_1plain__array_3_01_t_00_01_size_00_01_matrix_or_array_options_00_0164_01_4.html", null ],
     [ "Eigen::internal::plain_array< T, Size, MatrixOrArrayOptions, 8 >", "struct_eigen_1_1internal_1_1plain__array_3_01_t_00_01_size_00_01_matrix_or_array_options_00_018_01_4.html", null ],
     [ "Eigen::internal::plain_array_helper", "struct_eigen_1_1internal_1_1plain__array__helper.html", null ],
     [ "Eigen::internal::plain_col_type< ExpressionType, Scalar >", "struct_eigen_1_1internal_1_1plain__col__type.html", null ],
+    [ "Eigen::internal::plain_col_type< MatrixType >", "struct_eigen_1_1internal_1_1plain__col__type.html", null ],
     [ "Eigen::internal::plain_col_type< MatrixType, RealScalar >", "struct_eigen_1_1internal_1_1plain__col__type.html", null ],
     [ "Eigen::internal::plain_col_type< MatrixType, StorageIndex >", "struct_eigen_1_1internal_1_1plain__col__type.html", null ],
     [ "Eigen::internal::plain_constant_type< Expr, Scalar >", "struct_eigen_1_1internal_1_1plain__constant__type.html", null ],
@@ -2182,6 +2886,7 @@ var hierarchy =
     [ "Eigen::internal::plain_matrix_type< T, StorageKind >", "struct_eigen_1_1internal_1_1plain__matrix__type.html", null ],
     [ "Eigen::internal::plain_matrix_type< T, Dense >", "struct_eigen_1_1internal_1_1plain__matrix__type_3_01_t_00_01_dense_01_4.html", null ],
     [ "Eigen::internal::plain_matrix_type< T, DiagonalShape >", "struct_eigen_1_1internal_1_1plain__matrix__type_3_01_t_00_01_diagonal_shape_01_4.html", null ],
+    [ "Eigen::internal::plain_matrix_type< T, Sparse >", "struct_eigen_1_1internal_1_1plain__matrix__type_3_01_t_00_01_sparse_01_4.html", null ],
     [ "Eigen::internal::plain_matrix_type_column_major< T >", "struct_eigen_1_1internal_1_1plain__matrix__type__column__major.html", null ],
     [ "Eigen::internal::plain_matrix_type_dense< T, BaseClassType, Flags >", "struct_eigen_1_1internal_1_1plain__matrix__type__dense.html", null ],
     [ "Eigen::internal::plain_matrix_type_dense< T, ArrayXpr, Flags >", "struct_eigen_1_1internal_1_1plain__matrix__type__dense_3_01_t_00_01_array_xpr_00_01_flags_01_4.html", null ],
@@ -2196,6 +2901,7 @@ var hierarchy =
     [ "Eigen::internal::plain_row_type< MatrixType, StorageIndex >", "struct_eigen_1_1internal_1_1plain__row__type.html", null ],
     [ "Eigen::internal::plainobjectbase_evaluator_data< Scalar, OuterStride >", "class_eigen_1_1internal_1_1plainobjectbase__evaluator__data.html", null ],
     [ "Eigen::internal::plainobjectbase_evaluator_data< Scalar, Dynamic >", "class_eigen_1_1internal_1_1plainobjectbase__evaluator__data_3_01_scalar_00_01_dynamic_01_4.html", null ],
+    [ "Eigen::internal::plainobjectbase_evaluator_data< Scalar, OuterStrideAtCompileTime >", "class_eigen_1_1internal_1_1plainobjectbase__evaluator__data.html", null ],
     [ "Eigen::internal::pldexp_fast_impl< Packet >", "struct_eigen_1_1internal_1_1pldexp__fast__impl.html", null ],
     [ "Eigen::internal::pminmax_impl< NaNPropagation >", "struct_eigen_1_1internal_1_1pminmax__impl.html", null ],
     [ "Eigen::internal::pminmax_impl< PropagateNaN >", "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_na_n_01_4.html", null ],
@@ -2219,6 +2925,7 @@ var hierarchy =
     [ "wpi::PointerLikeTypeTraits< T * >", "structwpi_1_1_pointer_like_type_traits_3_01_t_01_5_01_4.html", null ],
     [ "wpi::PointerLikeTypeTraits< uintptr_t >", "structwpi_1_1_pointer_like_type_traits_3_01uintptr__t_01_4.html", null ],
     [ "wpi::PointerLikeTypeTraits< void * >", "structwpi_1_1_pointer_like_type_traits_3_01void_01_5_01_4.html", null ],
+    [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >::PointerProxy", "classwpi_1_1iterator__facade__base_1_1_pointer_proxy.html", null ],
     [ "wpi::pointer_union_detail::PointerUnionMembers< Derived, ValTy, I, Types >", "classwpi_1_1pointer__union__detail_1_1_pointer_union_members.html", null ],
     [ "wpi::pointer_union_detail::PointerUnionMembers< Derived, ValTy, I >", "classwpi_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_00_01_i_01_4.html", null ],
     [ "wpi::pointer_union_detail::PointerUnionMembers< Derived, ValTy, I+1, Types... >", "classwpi_1_1pointer__union__detail_1_1_pointer_union_members.html", [
@@ -2227,10 +2934,6 @@ var hierarchy =
     [ "wpi::pointer_union_detail::PointerUnionMembers< PointerUnion< PTs... >, PointerIntPair< void *, pointer_union_detail::bitsRequired(sizeof...(PTs)), int, pointer_union_detail::PointerUnionUIntTraits< PTs... > >, 0, PTs... >", "classwpi_1_1pointer__union__detail_1_1_pointer_union_members.html", [
       [ "wpi::PointerUnion< PTs >", "classwpi_1_1_pointer_union.html", null ]
     ] ],
-    [ "wpi::PointerUnionTypeSelector< T1, T2, RET_EQ, RET_NE >", "structwpi_1_1_pointer_union_type_selector.html", null ],
-    [ "wpi::PointerUnionTypeSelector< T, T, RET_EQ, RET_NE >", "structwpi_1_1_pointer_union_type_selector_3_01_t_00_01_t_00_01_r_e_t___e_q_00_01_r_e_t___n_e_01_4.html", null ],
-    [ "wpi::PointerUnionTypeSelectorReturn< T >", "structwpi_1_1_pointer_union_type_selector_return.html", null ],
-    [ "wpi::PointerUnionTypeSelectorReturn< PointerUnionTypeSelector< T1, T2, RET_EQ, RET_NE > >", "structwpi_1_1_pointer_union_type_selector_return_3_01_pointer_union_type_selector_3_01_t1_00_01_cc46ca047b721b68409be4a9f45bfaff.html", null ],
     [ "wpi::pointer_union_detail::PointerUnionUIntTraits< PTs >", "classwpi_1_1pointer__union__detail_1_1_pointer_union_u_int_traits.html", null ],
     [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >::Poller", "structwpi_1_1_callback_thread_1_1_poller.html", null ],
     [ "wpi::detail::PopulationCounter< T, SizeOfT >", "structwpi_1_1detail_1_1_population_counter.html", null ],
@@ -2250,6 +2953,7 @@ var hierarchy =
     [ "printf_precision_handler", "classprintf__precision__handler.html", null ],
     [ "printf_width_handler< Char >", "classprintf__width__handler.html", null ],
     [ "wpi::priority_queue< T, Sequence, Compare >", "classwpi_1_1priority__queue.html", null ],
+    [ "wpi::priority_queue< Callback, std::vector< Callback >, std::greater< Callback > >", "classwpi_1_1priority__queue.html", null ],
     [ "wpi::detail::priority_tag< N >", "structwpi_1_1detail_1_1priority__tag.html", null ],
     [ "wpi::detail::priority_tag< 0 >", "structwpi_1_1detail_1_1priority__tag_3_010_01_4.html", null ],
     [ "Eigen::internal::product_evaluator< T, ProductTag, LhsShape, RhsShape, LhsScalar, RhsScalar >", "struct_eigen_1_1internal_1_1product__evaluator.html", null ],
@@ -2268,10 +2972,14 @@ var hierarchy =
     [ "Eigen::internal::product_promote_storage_type< Dense, Dense, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html", null ],
     [ "Eigen::internal::product_promote_storage_type< Dense, DiagonalShape, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_diagonal_shape_00_01_product_tag_01_4.html", null ],
     [ "Eigen::internal::product_promote_storage_type< Dense, PermutationStorage, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_permutation_storage_00_01_product_tag_01_4.html", null ],
+    [ "Eigen::internal::product_promote_storage_type< Dense, Sparse, OuterProduct >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_sparse_00_01_outer_product_01_4.html", null ],
     [ "Eigen::internal::product_promote_storage_type< DiagonalShape, B, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_b_00_01_product_tag_01_4.html", null ],
     [ "Eigen::internal::product_promote_storage_type< DiagonalShape, Dense, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_dense_00_01_product_tag_01_4.html", null ],
     [ "Eigen::internal::product_promote_storage_type< PermutationStorage, B, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_permutation_storage_00_01_b_00_01_product_tag_01_4.html", null ],
     [ "Eigen::internal::product_promote_storage_type< PermutationStorage, Dense, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_permutation_storage_00_01_dense_00_01_product_tag_01_4.html", null ],
+    [ "Eigen::internal::product_promote_storage_type< PermutationStorage, Sparse, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_permutation_storage_00_01_sparse_00_01_product_tag_01_4.html", null ],
+    [ "Eigen::internal::product_promote_storage_type< Sparse, Dense, OuterProduct >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_sparse_00_01_dense_00_01_outer_product_01_4.html", null ],
+    [ "Eigen::internal::product_promote_storage_type< Sparse, PermutationStorage, ProductTag >", "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_sparse_00_01_permutation_storage_00_01_product_tag_01_4.html", null ],
     [ "Eigen::internal::product_selfadjoint_matrix< Scalar, Index, LhsStorageOrder, LhsSelfAdjoint, ConjugateLhs, RhsStorageOrder, RhsSelfAdjoint, ConjugateRhs, ResStorageOrder, ResInnerStride >", "struct_eigen_1_1internal_1_1product__selfadjoint__matrix.html", null ],
     [ "Eigen::internal::product_selfadjoint_matrix< Scalar, Index, LhsStorageOrder, false, ConjugateLhs, RhsStorageOrder, true, ConjugateRhs, ColMajor, ResInnerStride >", "struct_eigen_1_1internal_1_1product__selfadjoint__matrix_3_01_scalar_00_01_index_00_01_lhs_stora20d9d82a1b15b030b4d3eeb5a6eaa0f1.html", null ],
     [ "Eigen::internal::product_selfadjoint_matrix< Scalar, Index, LhsStorageOrder, LhsSelfAdjoint, ConjugateLhs, RhsStorageOrder, RhsSelfAdjoint, ConjugateRhs, RowMajor, ResInnerStride >", "struct_eigen_1_1internal_1_1product__selfadjoint__matrix_3_01_scalar_00_01_index_00_01_lhs_storaec96dc684abbb8aa9372392f6ca3b35f.html", null ],
@@ -2331,6 +3039,8 @@ var hierarchy =
     [ "Eigen::internal::promote_storage_type< A, A >", "struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01_a_01_4.html", null ],
     [ "Eigen::internal::promote_storage_type< A, const A >", "struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01const_01_a_01_4.html", null ],
     [ "Eigen::internal::promote_storage_type< const A, A >", "struct_eigen_1_1internal_1_1promote__storage__type_3_01const_01_a_00_01_a_01_4.html", null ],
+    [ "wpi::memory::propagation_traits< RawAllocator >", "structwpi_1_1memory_1_1propagation__traits.html", null ],
+    [ "wpi::memory::propagation_traits< joint_allocator >", "structwpi_1_1memory_1_1propagation__traits_3_01joint__allocator_01_4.html", null ],
     [ "ghc::filesystem::directory_iterator::proxy", "classghc_1_1filesystem_1_1directory__iterator_1_1proxy.html", null ],
     [ "Eigen::internal::pselect_impl< Packet, EnableIf >", "struct_eigen_1_1internal_1_1pselect__impl.html", null ],
     [ "Eigen::internal::pselect_impl< Packet, typename internal::enable_if< is_scalar< Packet >::value >::type >", "struct_eigen_1_1internal_1_1pselect__impl_3_01_packet_00_01typename_01internal_1_1enable__if_3_0c344023019a66bfb5bf5fccf19f7e46f.html", null ],
@@ -2347,6 +3057,8 @@ var hierarchy =
     [ "Eigen::internal::qr_preconditioner_impl< MatrixType, HouseholderQRPreconditioner, PreconditionIfMoreColsThanRows, true >", "class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_householder_q_r_preco31667955395337fca0dd5f85cded2a6b.html", null ],
     [ "Eigen::internal::qr_preconditioner_impl< MatrixType, HouseholderQRPreconditioner, PreconditionIfMoreRowsThanCols, true >", "class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_householder_q_r_preco3db9481bdea35fcb59961342158459cb.html", null ],
     [ "Eigen::internal::qr_preconditioner_impl< MatrixType, QRPreconditioner, Case, false >", "class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_q_r_preconditioner_00_01_case_00_01false_01_4.html", null ],
+    [ "Eigen::internal::qr_preconditioner_impl< MatrixType, QRPreconditioner, internal::PreconditionIfMoreColsThanRows >", "struct_eigen_1_1internal_1_1qr__preconditioner__impl.html", null ],
+    [ "Eigen::internal::qr_preconditioner_impl< MatrixType, QRPreconditioner, internal::PreconditionIfMoreRowsThanCols >", "struct_eigen_1_1internal_1_1qr__preconditioner__impl.html", null ],
     [ "Eigen::internal::qr_preconditioner_should_do_anything< MatrixType, QRPreconditioner, Case >", "struct_eigen_1_1internal_1_1qr__preconditioner__should__do__anything.html", null ],
     [ "Eigen::internal::QuadPacket< Packet >", "struct_eigen_1_1internal_1_1_quad_packet.html", null ],
     [ "Eigen::Quaternion< Scalar, Options >", "class_eigen_1_1_quaternion.html", null ],
@@ -2364,6 +3076,16 @@ var hierarchy =
     [ "Eigen::internal::random_default_impl< Scalar, true, false >", "struct_eigen_1_1internal_1_1random__default__impl_3_01_scalar_00_01true_00_01false_01_4.html", null ],
     [ "Eigen::internal::random_impl< bool >", "struct_eigen_1_1internal_1_1random__impl_3_01bool_01_4.html", null ],
     [ "Eigen::internal::random_retval< Scalar >", "struct_eigen_1_1internal_1_1random__retval.html", null ],
+    [ "detail::range_default_formatter< K, R, Char, Enable >", "structdetail_1_1range__default__formatter.html", null ],
+    [ "detail::range_default_formatter< K, R, Char, enable_if_t<(K==range_format::sequence||K==range_format::map||K==range_format::set)> >", "structdetail_1_1range__default__formatter_3_01_k_00_01_r_00_01_char_00_01enable__if__t_3_07_k_0a16708de8f3126c16f8d4d6b0d6029b33.html", null ],
+    [ "detail::range_default_formatter< range_format_kind< R, Char >::value, R, Char >", "structdetail_1_1range__default__formatter.html", [
+      [ "formatter< R, Char, enable_if_t< conjunction< bool_constant< range_format_kind< R, Char >::value !=range_format::disabled >, detail::is_formattable_delayed< R, Char > >::value > >", "structformatter_3_01_r_00_01_char_00_01enable__if__t_3_01conjunction_3_01bool__constant_3_01rang7f5d4717e46da784661cc5904a6b06c3.html", null ]
+    ] ],
+    [ "detail::range_format_kind_< T >", "structdetail_1_1range__format__kind__.html", null ],
+    [ "range_formatter< T, Char, Enable >", "structrange__formatter.html", null ],
+    [ "range_formatter< detail::uncvref_type< range_type >, Char >", "structrange__formatter.html", null ],
+    [ "range_formatter< T, Char, enable_if_t< conjunction< std::is_same< T, remove_cvref_t< T > >, disjunction< is_formattable< T, Char >, detail::has_fallback_formatter< T, Char > > >::value > >", "structrange__formatter_3_01_t_00_01_char_00_01enable__if__t_3_01conjunction_3_01std_1_1is__same_536f73f090b177cf0b0b66b0cacb6cc1.html", null ],
+    [ "detail::range_mapper< Context >", "structdetail_1_1range__mapper.html", null ],
     [ "wpi::raw_istream", "classwpi_1_1raw__istream.html", [
       [ "wpi::raw_fd_istream", "classwpi_1_1raw__fd__istream.html", null ],
       [ "wpi::raw_mem_istream", "classwpi_1_1raw__mem__istream.html", null ]
@@ -2404,9 +3126,14 @@ var hierarchy =
     [ "Eigen::internal::real_ref_retval< Scalar >", "struct_eigen_1_1internal_1_1real__ref__retval.html", null ],
     [ "Eigen::internal::real_retval< Scalar >", "struct_eigen_1_1internal_1_1real__retval.html", null ],
     [ "Eigen::RealQZ< _MatrixType >", "class_eigen_1_1_real_q_z.html", null ],
+    [ "Eigen::RealQZ< MatrixType >", "class_eigen_1_1_real_q_z.html", null ],
     [ "Eigen::RealSchur< _MatrixType >", "class_eigen_1_1_real_schur.html", null ],
+    [ "Eigen::RealSchur< MatrixType >", "class_eigen_1_1_real_schur.html", null ],
     [ "Eigen::aligned_allocator< T >::rebind< U >", "struct_eigen_1_1aligned__allocator_1_1rebind.html", null ],
     [ "Eigen::aligned_allocator_indirection< T >::rebind< U >", "struct_eigen_1_1aligned__allocator__indirection_1_1rebind.html", null ],
+    [ "wpi::memory::std_allocator< T, RawAllocator >::rebind< U >", "structwpi_1_1memory_1_1std__allocator_1_1rebind.html", null ],
+    [ "wpi::memory::detail::rebind_block_allocator< RawAllocator, BlockAllocator >", "structwpi_1_1memory_1_1detail_1_1rebind__block__allocator.html", null ],
+    [ "wpi::memory::detail::rebind_block_allocator< RawAllocator< Args... >, OtherBlockAllocator >", "structwpi_1_1memory_1_1detail_1_1rebind__block__allocator_3_01_raw_allocator_3_01_args_8_8_8_01_600b305b159ae64535881b7c55b7ad7d.html", null ],
     [ "frc::detail::RecordingController", "classfrc_1_1detail_1_1_recording_controller.html", null ],
     [ "ghc::filesystem::recursive_directory_iterator", "classghc_1_1filesystem_1_1recursive__directory__iterator.html", null ],
     [ "wpi::recursive_spinlock1", "classwpi_1_1recursive__spinlock1.html", null ],
@@ -2432,13 +3159,29 @@ var hierarchy =
     [ "Eigen::internal::ref_selector< Arg1Type >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< Arg2Type >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< Arg3Type >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
+    [ "Eigen::internal::ref_selector< const SparseMatrix< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
+    [ "Eigen::internal::ref_selector< Derived >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< ExpressionType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< Lhs >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< LhsType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< MatrixType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< Rhs >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< RhsType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
+    [ "Eigen::internal::ref_selector< SparseMatrix< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
+    [ "Eigen::internal::ref_selector< SparseMatrixType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< XprType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
+    [ "wpi::memory::detail::reference_shared", "structwpi_1_1memory_1_1detail_1_1reference__shared.html", null ],
+    [ "wpi::memory::detail::reference_stateful", "structwpi_1_1memory_1_1detail_1_1reference__stateful.html", null ],
+    [ "wpi::memory::detail::reference_stateless", "structwpi_1_1memory_1_1detail_1_1reference__stateless.html", null ],
+    [ "wpi::memory::reference_storage< any_allocator >", "classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html", null ],
+    [ "wpi::memory::detail::reference_storage_impl< RawAllocator, Tag >", "classwpi_1_1memory_1_1detail_1_1reference__storage__impl.html", null ],
+    [ "WPI_EBOdetail::reference_storage_impl", null, [
+      [ "wpi::memory::reference_storage< RawAllocator >", "classwpi_1_1memory_1_1reference__storage.html", null ]
+    ] ],
+    [ "wpi::memory::detail::reference_storage_impl< allocator_traits< RawAllocator >::allocator_type, decltype(detail::reference_type(allocator_traits< RawAllocator >::is_stateful{}, is_shared_allocator< RawAllocator >{}))>", "classwpi_1_1memory_1_1detail_1_1reference__storage__impl.html", null ],
+    [ "wpi::memory::detail::reference_storage_impl< RawAllocator, reference_shared >", "classwpi_1_1memory_1_1detail_1_1reference__storage__impl_3_01_raw_allocator_00_01reference__shared_01_4.html", null ],
+    [ "wpi::memory::detail::reference_storage_impl< RawAllocator, reference_stateful >", "classwpi_1_1memory_1_1detail_1_1reference__storage__impl_3_01_raw_allocator_00_01reference__stateful_01_4.html", null ],
+    [ "wpi::memory::detail::reference_storage_impl< RawAllocator, reference_stateless >", "classwpi_1_1memory_1_1detail_1_1reference__storage__impl_3_01_raw_allocator_00_01reference__stateless_01_4.html", null ],
     [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >::ReferenceProxy", "classwpi_1_1iterator__facade__base_1_1_reference_proxy.html", null ],
     [ "frc::sim::RelaySim", "classfrc_1_1sim_1_1_relay_sim.html", null ],
     [ "Eigen::internal::remove_all< T >", "struct_eigen_1_1internal_1_1remove__all.html", null ],
@@ -2456,6 +3199,7 @@ var hierarchy =
     [ "Eigen::internal::remove_pointer< T * >", "struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5_01_4.html", null ],
     [ "Eigen::internal::remove_pointer< T *const >", "struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5const_01_4.html", null ],
     [ "Eigen::internal::remove_reference< T >", "struct_eigen_1_1internal_1_1remove__reference.html", null ],
+    [ "Eigen::internal::remove_reference< From >", "struct_eigen_1_1internal_1_1remove__reference.html", null ],
     [ "Eigen::internal::remove_reference< T & >", "struct_eigen_1_1internal_1_1remove__reference_3_01_t_01_6_01_4.html", null ],
     [ "Eigen::internal::reshaped_evaluator< ArgType, Rows, Cols, Order, HasDirectAccess >", "struct_eigen_1_1internal_1_1reshaped__evaluator.html", null ],
     [ "Eigen::internal::reshaped_evaluator< ArgType, Rows, Cols, Order, traits< Reshaped< ArgType, Rows, Cols, Order > >::HasDirectAccess >", "struct_eigen_1_1internal_1_1reshaped__evaluator.html", [
@@ -2482,6 +3226,7 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::reverse_packet_cond< PacketType, ReversePacket >", "struct_eigen_1_1internal_1_1reverse__packet__cond.html", null ],
     [ "Eigen::internal::reverse_packet_cond< PacketType, false >", "struct_eigen_1_1internal_1_1reverse__packet__cond_3_01_packet_type_00_01false_01_4.html", null ],
+    [ "Eigen::SparseCompressedBase< Derived >::ReverseInnerIterator", "class_eigen_1_1_sparse_compressed_base_1_1_reverse_inner_iterator.html", null ],
     [ "rgb", "structrgb.html", null ],
     [ "Eigen::internal::RhsPanelHelper< RhsPacket, RhsPacketx4, registers_taken >", "struct_eigen_1_1internal_1_1_rhs_panel_helper.html", null ],
     [ "Eigen::internal::rint_impl< Scalar >", "struct_eigen_1_1internal_1_1rint__impl.html", null ],
@@ -2514,6 +3259,7 @@ var hierarchy =
     [ "wpi::RoundUpToPowerOfTwo< N >", "structwpi_1_1_round_up_to_power_of_two.html", null ],
     [ "wpi::RoundUpToPowerOfTwoH< N, isPowerTwo >", "structwpi_1_1_round_up_to_power_of_two_h.html", null ],
     [ "wpi::RoundUpToPowerOfTwoH< N, false >", "structwpi_1_1_round_up_to_power_of_two_h_3_01_n_00_01false_01_4.html", null ],
+    [ "internal::Colamd::RowStructure< IndexType >", "structinternal_1_1_colamd_1_1_row_structure.html", null ],
     [ "nt::RpcAnswer", "classnt_1_1_rpc_answer.html", null ],
     [ "nt::RpcCall", "classnt_1_1_rpc_call.html", null ],
     [ "nt::RpcDefinition", "structnt_1_1_rpc_definition.html", null ],
@@ -2528,9 +3274,12 @@ var hierarchy =
       [ "frc::RuntimeError", "classfrc_1_1_runtime_error.html", null ],
       [ "frc::SplineParameterizer::MalformedSplineException", "structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html", null ]
     ] ],
-    [ "wpi::SafeThread", "classwpi_1_1_safe_thread.html", [
-      [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >", "classwpi_1_1_callback_thread.html", null ],
-      [ "wpi::java::JCallbackThread< T >", "classwpi_1_1java_1_1_j_callback_thread.html", null ]
+    [ "wpi::SafeThreadBase", "classwpi_1_1_safe_thread_base.html", [
+      [ "wpi::SafeThread", "classwpi_1_1_safe_thread.html", [
+        [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >", "classwpi_1_1_callback_thread.html", null ],
+        [ "wpi::java::JCallbackThread< T >", "classwpi_1_1java_1_1_j_callback_thread.html", null ]
+      ] ],
+      [ "wpi::SafeThreadEvent", "classwpi_1_1_safe_thread_event.html", null ]
     ] ],
     [ "wpi::detail::SafeThreadOwnerBase", "classwpi_1_1detail_1_1_safe_thread_owner_base.html", [
       [ "wpi::SafeThreadOwner< JCallbackThread< T > >", "classwpi_1_1_safe_thread_owner.html", [
@@ -2538,6 +3287,7 @@ var hierarchy =
           [ "wpi::java::JSingletonCallbackManager< T >", "classwpi_1_1java_1_1_j_singleton_callback_manager.html", null ]
         ] ]
       ] ],
+      [ "wpi::SafeThreadOwner< Thread >", "classwpi_1_1_safe_thread_owner.html", null ],
       [ "wpi::SafeThreadOwner< T >", "classwpi_1_1_safe_thread_owner.html", null ]
     ] ],
     [ "wpi::detail::SafeThreadProxyBase", "classwpi_1_1detail_1_1_safe_thread_proxy_base.html", [
@@ -2653,8 +3403,13 @@ var hierarchy =
     [ "Eigen::ScalarBinaryOpTraits< typename NumTraits< typename internal::enable_if< NumTraits< T >::IsComplex, T >::type >::Real, T, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01typename_01_num_traits_3_01typename_01internal_1_1e682c29bad5c4221eece44bbf2be041d0.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< void, T, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01void_00_01_t_00_01_binary_op_01_4.html", null ],
     [ "Eigen::ScalarBinaryOpTraits< void, void, BinaryOp >", "struct_eigen_1_1_scalar_binary_op_traits_3_01void_00_01void_00_01_binary_op_01_4.html", null ],
+    [ "wpi::scope_exit< F >", "classwpi_1_1scope__exit.html", null ],
     [ "wpi::ScopedFatalErrorHandler", "structwpi_1_1_scoped_fatal_error_handler.html", null ],
     [ "frc::ScopedTracer", "classfrc_1_1_scoped_tracer.html", null ],
+    [ "wpi::memory::detail::segregatable_type< I, Segregator >", "structwpi_1_1memory_1_1detail_1_1segregatable__type.html", null ],
+    [ "wpi::memory::detail::segregatable_type< 0, binary_segregator< Segregator, Fallback > >", "structwpi_1_1memory_1_1detail_1_1segregatable__type_3_010_00_01binary__segregator_3_01_segregator_00_01_fallback_01_4_01_4.html", null ],
+    [ "wpi::memory::detail::segregatable_type< I, binary_segregator< Segregator, Fallback > >", "structwpi_1_1memory_1_1detail_1_1segregatable__type_3_01_i_00_01binary__segregator_3_01_segregator_00_01_fallback_01_4_01_4.html", null ],
+    [ "wpi::memory::segregator_size< Segregator >", "structwpi_1_1memory_1_1segregator__size.html", null ],
     [ "Eigen::internal::Selector< N >", "struct_eigen_1_1internal_1_1_selector.html", null ],
     [ "Eigen::internal::selfadjoint_matrix_vector_product< Scalar, Index, StorageOrder, UpLo, ConjugateLhs, ConjugateRhs, Version >", "struct_eigen_1_1internal_1_1selfadjoint__matrix__vector__product.html", null ],
     [ "Eigen::internal::selfadjoint_product_impl< Lhs, LhsMode, LhsIsVector, Rhs, RhsMode, RhsIsVector >", "struct_eigen_1_1internal_1_1selfadjoint__product__impl.html", null ],
@@ -2675,7 +3430,9 @@ var hierarchy =
     ] ],
     [ "Eigen::SelfAdjointShape", "struct_eigen_1_1_self_adjoint_shape.html", null ],
     [ "Eigen::MatrixBase< Derived >::SelfAdjointViewReturnType< UpLo >", "struct_eigen_1_1_matrix_base_1_1_self_adjoint_view_return_type.html", null ],
+    [ "Eigen::SparseMatrixBase< Derived >::SelfAdjointViewReturnType< UpLo >", "struct_eigen_1_1_sparse_matrix_base_1_1_self_adjoint_view_return_type.html", null ],
     [ "wpi::Sendable", "classwpi_1_1_sendable.html", [
+      [ "frc::ProfiledPIDController< units::radian >", "classfrc_1_1_profiled_p_i_d_controller.html", null ],
       [ "frc2::CommandBase", "classfrc2_1_1_command_base.html", null ],
       [ "frc2::PIDController", "classfrc2_1_1_p_i_d_controller.html", null ],
       [ "frc2::SubsystemBase", "classfrc2_1_1_subsystem_base.html", [
@@ -2855,6 +3612,9 @@ var hierarchy =
     [ "wpi::SendableHelper< ProfiledPIDController< Distance > >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::ProfiledPIDController< Distance >", "classfrc_1_1_profiled_p_i_d_controller.html", null ]
     ] ],
+    [ "wpi::SendableHelper< ProfiledPIDController< units::radian > >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::ProfiledPIDController< units::radian >", "classfrc_1_1_profiled_p_i_d_controller.html", null ]
+    ] ],
     [ "wpi::SendableHelper< PWM >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::PWM", "classfrc_1_1_p_w_m.html", null ]
     ] ],
@@ -2903,19 +3663,25 @@ var hierarchy =
     ] ],
     [ "frc::ShuffleboardValue", "classfrc_1_1_shuffleboard_value.html", [
       [ "frc::ShuffleboardComponentBase", "classfrc_1_1_shuffleboard_component_base.html", [
+        [ "frc::ShuffleboardComponent< ComplexWidget >", "classfrc_1_1_shuffleboard_component.html", [
+          [ "frc::ShuffleboardWidget< ComplexWidget >", "classfrc_1_1_shuffleboard_widget.html", [
+            [ "frc::ComplexWidget", "classfrc_1_1_complex_widget.html", null ]
+          ] ]
+        ] ],
         [ "frc::ShuffleboardComponent< ShuffleboardLayout >", "classfrc_1_1_shuffleboard_component.html", [
           [ "frc::ShuffleboardLayout", "classfrc_1_1_shuffleboard_layout.html", null ]
         ] ],
-        [ "frc::ShuffleboardComponent< Derived >", "classfrc_1_1_shuffleboard_component.html", [
-          [ "frc::ShuffleboardWidget< ComplexWidget >", "classfrc_1_1_shuffleboard_widget.html", [
-            [ "frc::ComplexWidget", "classfrc_1_1_complex_widget.html", null ]
-          ] ],
+        [ "frc::ShuffleboardComponent< SimpleWidget >", "classfrc_1_1_shuffleboard_component.html", [
           [ "frc::ShuffleboardWidget< SimpleWidget >", "classfrc_1_1_shuffleboard_widget.html", [
             [ "frc::SimpleWidget", "classfrc_1_1_simple_widget.html", null ]
-          ] ],
+          ] ]
+        ] ],
+        [ "frc::ShuffleboardComponent< SuppliedValueWidget< T > >", "classfrc_1_1_shuffleboard_component.html", [
           [ "frc::ShuffleboardWidget< SuppliedValueWidget< T > >", "classfrc_1_1_shuffleboard_widget.html", [
             [ "frc::SuppliedValueWidget< T >", "classfrc_1_1_supplied_value_widget.html", null ]
-          ] ],
+          ] ]
+        ] ],
+        [ "frc::ShuffleboardComponent< Derived >", "classfrc_1_1_shuffleboard_component.html", [
           [ "frc::ShuffleboardWidget< Derived >", "classfrc_1_1_shuffleboard_widget.html", null ]
         ] ]
       ] ],
@@ -2934,8 +3700,13 @@ var hierarchy =
     ] ],
     [ "frc::sim::SimDeviceSim", "classfrc_1_1sim_1_1_sim_device_sim.html", null ],
     [ "frc::SimpleMotorFeedforward< Distance >", "classfrc_1_1_simple_motor_feedforward.html", null ],
+    [ "frc::SimpleMotorFeedforward< units::meter >", "classfrc_1_1_simple_motor_feedforward.html", null ],
+    [ "frc::SimpleMotorFeedforward< units::meters >", "classfrc_1_1_simple_motor_feedforward.html", null ],
+    [ "Eigen::internal::simplicial_cholesky_grab_input< CholMatrixType, InputMatrixType >", "struct_eigen_1_1internal_1_1simplicial__cholesky__grab__input.html", null ],
+    [ "Eigen::internal::simplicial_cholesky_grab_input< MatrixType, MatrixType >", "struct_eigen_1_1internal_1_1simplicial__cholesky__grab__input_3_01_matrix_type_00_01_matrix_type_01_4.html", null ],
     [ "Eigen::internal::SingleRange", "struct_eigen_1_1internal_1_1_single_range.html", null ],
     [ "detail::singleton", "structdetail_1_1singleton.html", null ],
+    [ "Eigen::SparseMatrix< _Scalar, _Options, _StorageIndex >::SingletonVector", "class_eigen_1_1_sparse_matrix_1_1_singleton_vector.html", null ],
     [ "Eigen::internal::size_at_compile_time< _Rows, _Cols >", "struct_eigen_1_1internal_1_1size__at__compile__time.html", null ],
     [ "Eigen::internal::size_of_xpr_at_compile_time< XprType >", "struct_eigen_1_1internal_1_1size__of__xpr__at__compile__time.html", null ],
     [ "frc::SlewRateLimiter< Unit >", "classfrc_1_1_slew_rate_limiter.html", null ],
@@ -2953,18 +3724,92 @@ var hierarchy =
       [ "wpi::sig::detail::SlotBase< Args >", "classwpi_1_1sig_1_1detail_1_1_slot_base.html", null ]
     ] ],
     [ "wpi::sig::detail::SlotTracked< typename, typename,... >", "classwpi_1_1sig_1_1detail_1_1_slot_tracked.html", null ],
+    [ "wpi::memory::detail::small_free_memory_list", "classwpi_1_1memory_1_1detail_1_1small__free__memory__list.html", null ],
     [ "wpi::SmallPtrSetIteratorImpl", "classwpi_1_1_small_ptr_set_iterator_impl.html", [
       [ "wpi::SmallPtrSetIterator< PtrTy >", "classwpi_1_1_small_ptr_set_iterator.html", null ]
     ] ],
     [ "wpi::SmallSet< T, N, C >", "classwpi_1_1_small_set.html", null ],
+    [ "wpi::SmallSet< frc2::Subsystem *, 4 >", "classwpi_1_1_small_set.html", null ],
+    [ "wpi::SmallSet< std::string, 32 >", "classwpi_1_1_small_set.html", null ],
     [ "wpi::SmallVectorAlignmentAndSize< T, typename >", "structwpi_1_1_small_vector_alignment_and_size.html", null ],
     [ "wpi::SmallVectorBase", "classwpi_1_1_small_vector_base.html", [
+      [ "wpi::SmallVectorTemplateCommon< std::pair< KeyT, ValueT > >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< std::pair< KeyT, ValueT > >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< std::pair< KeyT, ValueT > >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< std::pair< KeyT, ValueT >, N >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< char >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< char >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< char >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< char, InternalLen >", "classwpi_1_1_small_vector.html", [
+              [ "wpi::SmallString< 128 >", "classwpi_1_1_small_string.html", null ],
+              [ "wpi::SmallString< InternalLen >", "classwpi_1_1_small_string.html", null ]
+            ] ],
+            [ "wpi::SmallVector< char, 0 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< frc2::Subsystem * >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< frc2::Subsystem * >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< frc2::Subsystem * >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< frc2::Subsystem *, N >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< frc2::Command * >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< frc2::Command * >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< frc2::Command * >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< frc2::Command *, 4 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< std::unique_ptr< frc2::Command > >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< std::unique_ptr< frc2::Command > >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< std::unique_ptr< frc2::Command > >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< std::unique_ptr< frc2::Command >, 4 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< frc::Pose2d >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< frc::Pose2d >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< frc::Pose2d >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< frc::Pose2d, 1 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< nt::NetworkTableEntry >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< nt::NetworkTableEntry >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< nt::NetworkTableEntry >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< nt::NetworkTableEntry, 2 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< std::string >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< std::string >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< std::string >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< std::string, N >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< wpi::SmallString< 16 > >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< wpi::SmallString< 16 > >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< wpi::SmallString< 16 > >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< wpi::SmallString< 16 >, 4 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< uint8_t >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< uint8_t >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< uint8_t >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< uint8_t, 0 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "wpi::SmallVectorTemplateCommon< T, typename >", "classwpi_1_1_small_vector_template_common.html", [
         [ "wpi::SmallVectorTemplateBase< T, bool >", "classwpi_1_1_small_vector_template_base.html", [
           [ "wpi::SmallVectorImpl< T >", "classwpi_1_1_small_vector_impl.html", [
-            [ "wpi::SmallVector< char, InternalLen >", "classwpi_1_1_small_vector.html", [
-              [ "wpi::SmallString< InternalLen >", "classwpi_1_1_small_string.html", null ]
-            ] ],
             [ "wpi::SmallVector< T, N >", "classwpi_1_1_small_vector.html", null ],
             [ "wpi::SmallVector< T, N >", "classwpi_1_1_small_vector.html", null ]
           ] ]
@@ -2973,12 +3818,42 @@ var hierarchy =
       ] ]
     ] ],
     [ "wpi::SmallVectorStorage< T, N >", "structwpi_1_1_small_vector_storage.html", [
-      [ "wpi::SmallVector< char, InternalLen >", "classwpi_1_1_small_vector.html", null ],
       [ "wpi::SmallVector< T, N >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< char, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< char, InternalLen >", "classwpi_1_1_small_vector.html", null ],
+      [ "wpi::SmallVector< char, 0 >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< frc2::Command *, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< frc2::Command *, 4 >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< frc2::Subsystem *, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< frc2::Subsystem *, N >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< frc::Pose2d, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< frc::Pose2d, 1 >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< nt::NetworkTableEntry, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< nt::NetworkTableEntry, 2 >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< std::pair< KeyT, ValueT >, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< std::pair< KeyT, ValueT >, N >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< std::string, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< std::string, N >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< std::unique_ptr< frc2::Command >, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< std::unique_ptr< frc2::Command >, 4 >", "classwpi_1_1_small_vector.html", null ]
     ] ],
     [ "wpi::SmallVectorStorage< T, 0 >", "structwpi_1_1_small_vector_storage_3_01_t_00_010_01_4.html", null ],
     [ "wpi::SmallVectorStorage< T, CalculateSmallVectorDefaultInlinedElements< T >::value >", "structwpi_1_1_small_vector_storage.html", [
       [ "wpi::SmallVector< T, N >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< uint8_t, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< uint8_t, 0 >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< wpi::SmallString< 16 >, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< wpi::SmallString< 16 >, 4 >", "classwpi_1_1_small_vector.html", null ]
     ] ],
     [ "Eigen::internal::smart_copy_helper< T, UseMemcpy >", "struct_eigen_1_1internal_1_1smart__copy__helper.html", null ],
     [ "Eigen::internal::smart_copy_helper< T, false >", "struct_eigen_1_1internal_1_1smart__copy__helper_3_01_t_00_01false_01_4.html", null ],
@@ -2993,17 +3868,137 @@ var hierarchy =
     [ "Eigen::internal::solve_assertion< Transpose< Derived > >", "struct_eigen_1_1internal_1_1solve__assertion_3_01_transpose_3_01_derived_01_4_01_4.html", null ],
     [ "Eigen::internal::solve_traits< Decomposition, RhsType, StorageKind >", "struct_eigen_1_1internal_1_1solve__traits.html", null ],
     [ "Eigen::internal::solve_traits< Decomposition, RhsType, Dense >", "struct_eigen_1_1internal_1_1solve__traits_3_01_decomposition_00_01_rhs_type_00_01_dense_01_4.html", null ],
+    [ "Eigen::internal::solve_traits< Decomposition, RhsType, Sparse >", "struct_eigen_1_1internal_1_1solve__traits_3_01_decomposition_00_01_rhs_type_00_01_sparse_01_4.html", null ],
     [ "Eigen::SolverShape", "struct_eigen_1_1_solver_shape.html", null ],
     [ "Eigen::SolverStorage", "struct_eigen_1_1_solver_storage.html", null ],
     [ "ghc::filesystem::space_info", "structghc_1_1filesystem_1_1space__info.html", null ],
     [ "wpi::span< ElementType, Extent >", "classwpi_1_1span.html", null ],
+    [ "wpi::span< const uint8_t >", "classwpi_1_1span.html", null ],
     [ "wpi::detail::span_storage< E, S >", "structwpi_1_1detail_1_1span__storage.html", null ],
+    [ "wpi::detail::span_storage< const uint8_t, Extent >", "structwpi_1_1detail_1_1span__storage.html", null ],
     [ "wpi::detail::span_storage< E, dynamic_extent >", "structwpi_1_1detail_1_1span__storage_3_01_e_00_01dynamic__extent_01_4.html", null ],
     [ "wpi::detail::span_storage< ElementType, Extent >", "structwpi_1_1detail_1_1span__storage.html", null ],
     [ "Eigen::Sparse", "struct_eigen_1_1_sparse.html", null ],
-    [ "Eigen::SparseMatrixBase< Derived >", "class_eigen_1_1_sparse_matrix_base.html", null ],
+    [ "Eigen::internal::Sparse2Dense", "struct_eigen_1_1internal_1_1_sparse2_dense.html", null ],
+    [ "Eigen::internal::Sparse2Sparse", "struct_eigen_1_1internal_1_1_sparse2_sparse.html", null ],
+    [ "Eigen::internal::sparse_conjunction_evaluator< T, LhsKind, RhsKind, LhsScalar, RhsScalar >", "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator.html", null ],
+    [ "Eigen::internal::sparse_conjunction_evaluator< CwiseBinaryOp< scalar_boolean_and_op, Lhs, Rhs > >", "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator.html", [
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< scalar_boolean_and_op, Lhs, Rhs >, IndexBased, IteratorBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01scalar__boolean__and__op_e5783d1feefabf80ecedbbd659dac347.html", null ],
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< scalar_boolean_and_op, Lhs, Rhs >, IteratorBased, IndexBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01scalar__boolean__and__op_e9805903bdca4d8b3e2f0d1430158176.html", null ],
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< scalar_boolean_and_op, Lhs, Rhs >, IteratorBased, IteratorBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01scalar__boolean__and__op_7d0a60161325a43ed07386a5222d16d5.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_conjunction_evaluator< CwiseBinaryOp< scalar_product_op< T1, T2 >, Lhs, Rhs > >", "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator.html", [
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< scalar_product_op< T1, T2 >, Lhs, Rhs >, IndexBased, IteratorBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01scalar__product__op_3_01_4fbec0bc40906a60ec0172ac23f5103a.html", null ],
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< scalar_product_op< T1, T2 >, Lhs, Rhs >, IteratorBased, IndexBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01scalar__product__op_3_01_f2d05246f46046f640624904370b9473.html", null ],
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< scalar_product_op< T1, T2 >, Lhs, Rhs >, IteratorBased, IteratorBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01scalar__product__op_3_01_c08fe00fb24daf817c472c5c54760eed.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_conjunction_evaluator< CwiseBinaryOp< scalar_quotient_op< T1, T2 >, Lhs, Rhs > >", "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator.html", [
+      [ "Eigen::internal::binary_evaluator< CwiseBinaryOp< scalar_quotient_op< T1, T2 >, Lhs, Rhs >, IteratorBased, IndexBased >", "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01scalar__quotient__op_3_0128fd42b06614e5f165ed5bc517363d65.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_dense_outer_product_evaluator< LhsT, RhsT, NeedToTranspose >", "struct_eigen_1_1internal_1_1sparse__dense__outer__product__evaluator.html", null ],
+    [ "Eigen::internal::sparse_dense_outer_product_evaluator< Lhs, Rhs, Lhs::IsRowMajor >", "struct_eigen_1_1internal_1_1sparse__dense__outer__product__evaluator.html", [
+      [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, DefaultProduct >, OuterProduct, SparseShape, DenseShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_default_pro494452499cb2dffb7b0f87034815802e.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_dense_outer_product_evaluator< Lhs, Rhs, Rhs::IsRowMajor >", "struct_eigen_1_1internal_1_1sparse__dense__outer__product__evaluator.html", [
+      [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, DefaultProduct >, OuterProduct, DenseShape, SparseShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_default_pro2587512d8613ab7eaf4e89d5bc171599.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_diagonal_product_evaluator< SparseXprType, DiagonalCoeffType, SDP_Tag >", "struct_eigen_1_1internal_1_1sparse__diagonal__product__evaluator.html", null ],
+    [ "Eigen::internal::sparse_diagonal_product_evaluator< Lhs, Transpose< const Rhs::DiagonalVectorType >, Lhs::Flags &RowMajorBit?SDP_AsCwiseProduct:SDP_AsScalarProduct >", "struct_eigen_1_1internal_1_1sparse__diagonal__product__evaluator.html", [
+      [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, DefaultProduct >, ProductTag, SparseShape, DiagonalShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_default_prod80b2bd6031901e266d576d7eb3e9735.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_diagonal_product_evaluator< Rhs, Lhs::DiagonalVectorType, Rhs::Flags &RowMajorBit?SDP_AsScalarProduct:SDP_AsCwiseProduct >", "struct_eigen_1_1internal_1_1sparse__diagonal__product__evaluator.html", [
+      [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, DefaultProduct >, ProductTag, DiagonalShape, SparseShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_default_pro850b56c5eb8e297547f40d125e705127.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_diagonal_product_evaluator< SparseXprType, DiagCoeffType, SDP_AsCwiseProduct >", "struct_eigen_1_1internal_1_1sparse__diagonal__product__evaluator_3_01_sparse_xpr_type_00_01_diag5c533b27b8fe485cf13e7ad699b99003.html", null ],
+    [ "Eigen::internal::sparse_diagonal_product_evaluator< SparseXprType, DiagonalCoeffType, SDP_AsScalarProduct >", "struct_eigen_1_1internal_1_1sparse__diagonal__product__evaluator_3_01_sparse_xpr_type_00_01_diag3ebd66799ce02a814119c716700b9642.html", null ],
+    [ "Eigen::internal::sparse_eval< T, Rows, Cols, Flags >", "struct_eigen_1_1internal_1_1sparse__eval.html", null ],
+    [ "Eigen::internal::sparse_eval< T, 1, 1, Flags >", "struct_eigen_1_1internal_1_1sparse__eval_3_01_t_00_011_00_011_00_01_flags_01_4.html", null ],
+    [ "Eigen::internal::sparse_eval< T, 1, Cols, Flags >", "struct_eigen_1_1internal_1_1sparse__eval_3_01_t_00_011_00_01_cols_00_01_flags_01_4.html", null ],
+    [ "Eigen::internal::sparse_eval< T, Rows, 1, Flags >", "struct_eigen_1_1internal_1_1sparse__eval_3_01_t_00_01_rows_00_011_00_01_flags_01_4.html", null ],
+    [ "Eigen::internal::sparse_eval< T, traits< T >::RowsAtCompileTime, traits< T >::ColsAtCompileTime, evaluator< T >::Flags >", "struct_eigen_1_1internal_1_1sparse__eval.html", [
+      [ "Eigen::internal::plain_object_eval< T, Sparse >", "struct_eigen_1_1internal_1_1plain__object__eval_3_01_t_00_01_sparse_01_4.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_eval< T, traits< T >::RowsAtCompileTime, traits< T >::ColsAtCompileTime, traits< T >::Flags >", "struct_eigen_1_1internal_1_1sparse__eval.html", [
+      [ "Eigen::internal::eval< T, Sparse >", "struct_eigen_1_1internal_1_1eval_3_01_t_00_01_sparse_01_4.html", null ]
+    ] ],
+    [ "Eigen::internal::sparse_solve_triangular_selector< Lhs, Rhs, Mode, UpLo, StorageOrder >", "struct_eigen_1_1internal_1_1sparse__solve__triangular__selector.html", null ],
+    [ "Eigen::internal::sparse_solve_triangular_selector< Lhs, Rhs, Mode, Lower, ColMajor >", "struct_eigen_1_1internal_1_1sparse__solve__triangular__selector_3_01_lhs_00_01_rhs_00_01_mode_00_01_lower_00_01_col_major_01_4.html", null ],
+    [ "Eigen::internal::sparse_solve_triangular_selector< Lhs, Rhs, Mode, Lower, RowMajor >", "struct_eigen_1_1internal_1_1sparse__solve__triangular__selector_3_01_lhs_00_01_rhs_00_01_mode_00_01_lower_00_01_row_major_01_4.html", null ],
+    [ "Eigen::internal::sparse_solve_triangular_selector< Lhs, Rhs, Mode, Upper, ColMajor >", "struct_eigen_1_1internal_1_1sparse__solve__triangular__selector_3_01_lhs_00_01_rhs_00_01_mode_00_01_upper_00_01_col_major_01_4.html", null ],
+    [ "Eigen::internal::sparse_solve_triangular_selector< Lhs, Rhs, Mode, Upper, RowMajor >", "struct_eigen_1_1internal_1_1sparse__solve__triangular__selector_3_01_lhs_00_01_rhs_00_01_mode_00_01_upper_00_01_row_major_01_4.html", null ],
+    [ "Eigen::internal::sparse_solve_triangular_sparse_selector< Lhs, Rhs, Mode, UpLo, StorageOrder >", "struct_eigen_1_1internal_1_1sparse__solve__triangular__sparse__selector.html", null ],
+    [ "Eigen::internal::sparse_solve_triangular_sparse_selector< Lhs, Rhs, Mode, UpLo, ColMajor >", "struct_eigen_1_1internal_1_1sparse__solve__triangular__sparse__selector_3_01_lhs_00_01_rhs_00_0103d70089ab1c1a5e4529163773532981.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, LhsStorageOrder, RhsStorageOrder, ResStorageOrder >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, ColMajor, ColMajor, ColMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_a7892c8b610053f5d59f33edb611e816.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, ColMajor, ColMajor, RowMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_21e1c567bb33db704730c4eb2830e598.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, ColMajor, RowMajor, ColMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_3de0f703bb5ed649050c959104d3eb1b.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, ColMajor, RowMajor, RowMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_8b2f3809f6470cfe6598a7debb24ca1d.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, RowMajor, ColMajor, ColMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_a29c87f6ec217a6cab39d35f96e8e389.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, RowMajor, ColMajor, RowMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_b0be43d8f2c00d3048196cb82593ae0c.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, RowMajor, RowMajor, ColMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_e175d5ee5e029960308385b07451d28e.html", null ],
+    [ "Eigen::internal::sparse_sparse_product_with_pruning_selector< Lhs, Rhs, ResultType, RowMajor, RowMajor, RowMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__product__with__pruning__selector_3_01_lhs_00_01_rhs_ac6a83f16fa8af56c1b06b928dbc0536.html", null ],
+    [ "Eigen::internal::sparse_sparse_to_dense_product_selector< Lhs, Rhs, ResultType, LhsStorageOrder, RhsStorageOrder >", "struct_eigen_1_1internal_1_1sparse__sparse__to__dense__product__selector.html", null ],
+    [ "Eigen::internal::sparse_sparse_to_dense_product_selector< Lhs, Rhs, ResultType, ColMajor, ColMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__to__dense__product__selector_3_01_lhs_00_01_rhs_00_0b0481ed72407c1b6a48b36ffd79869ef.html", null ],
+    [ "Eigen::internal::sparse_sparse_to_dense_product_selector< Lhs, Rhs, ResultType, ColMajor, RowMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__to__dense__product__selector_3_01_lhs_00_01_rhs_00_03ba5c23d41a3f74ec97ddc300014b4ee.html", null ],
+    [ "Eigen::internal::sparse_sparse_to_dense_product_selector< Lhs, Rhs, ResultType, RowMajor, ColMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__to__dense__product__selector_3_01_lhs_00_01_rhs_00_08b233438bc6784cbf4bc720db2f0656b.html", null ],
+    [ "Eigen::internal::sparse_sparse_to_dense_product_selector< Lhs, Rhs, ResultType, RowMajor, RowMajor >", "struct_eigen_1_1internal_1_1sparse__sparse__to__dense__product__selector_3_01_lhs_00_01_rhs_00_01573c79e134c90f065c2aee6c07fd478.html", null ],
+    [ "Eigen::internal::sparse_time_dense_product_impl< SparseLhsType, DenseRhsType, DenseResType, AlphaType, LhsStorageOrder, ColPerCol >", "struct_eigen_1_1internal_1_1sparse__time__dense__product__impl.html", null ],
+    [ "Eigen::internal::sparse_time_dense_product_impl< SparseLhsType, DenseRhsType, DenseResType, AlphaType, ColMajor, true >", "struct_eigen_1_1internal_1_1sparse__time__dense__product__impl_3_01_sparse_lhs_type_00_01_dense_4902bcccfe44923f57955b34ebedf211.html", null ],
+    [ "Eigen::internal::sparse_time_dense_product_impl< SparseLhsType, DenseRhsType, DenseResType, typename DenseResType::Scalar, ColMajor, false >", "struct_eigen_1_1internal_1_1sparse__time__dense__product__impl_3_01_sparse_lhs_type_00_01_dense_67299fc86a44049a87b7e209695d23ff.html", null ],
+    [ "Eigen::internal::sparse_time_dense_product_impl< SparseLhsType, DenseRhsType, DenseResType, typename DenseResType::Scalar, RowMajor, false >", "struct_eigen_1_1internal_1_1sparse__time__dense__product__impl_3_01_sparse_lhs_type_00_01_dense_14133348dce4820dcfa39d8f4e0ae837.html", null ],
+    [ "Eigen::internal::sparse_time_dense_product_impl< SparseLhsType, DenseRhsType, DenseResType, typename DenseResType::Scalar, RowMajor, true >", "struct_eigen_1_1internal_1_1sparse__time__dense__product__impl_3_01_sparse_lhs_type_00_01_dense_b414480199bc806c66dca70961af5e2d.html", null ],
+    [ "Eigen::internal::sparse_vector_assign_selector< Dest, Src, AssignmentKind >", "struct_eigen_1_1internal_1_1sparse__vector__assign__selector.html", null ],
+    [ "Eigen::internal::sparse_vector_assign_selector< Dest, Src, SVA_Inner >", "struct_eigen_1_1internal_1_1sparse__vector__assign__selector_3_01_dest_00_01_src_00_01_s_v_a___inner_01_4.html", null ],
+    [ "Eigen::internal::sparse_vector_assign_selector< Dest, Src, SVA_Outer >", "struct_eigen_1_1internal_1_1sparse__vector__assign__selector_3_01_dest_00_01_src_00_01_s_v_a___outer_01_4.html", null ],
+    [ "Eigen::internal::sparse_vector_assign_selector< Dest, Src, SVA_RuntimeSwitch >", "struct_eigen_1_1internal_1_1sparse__vector__assign__selector_3_01_dest_00_01_src_00_01_s_v_a___runtime_switch_01_4.html", null ],
+    [ "Eigen::SparseDenseOuterProduct< Lhs, Rhs, Transpose >", "class_eigen_1_1_sparse_dense_outer_product.html", null ],
+    [ "Eigen::SparseDenseProductReturnType< Lhs, Rhs, InnerSize >", "struct_eigen_1_1_sparse_dense_product_return_type.html", null ],
+    [ "Eigen::SparseDiagonalProduct< Lhs, Rhs >", "class_eigen_1_1_sparse_diagonal_product.html", null ],
+    [ "Eigen::internal::SparseLUImpl< Scalar, StorageIndex >", "class_eigen_1_1internal_1_1_sparse_l_u_impl.html", null ],
+    [ "SparseLUImpl< Scalar, StorageIndex >", "class_sparse_l_u_impl.html", null ],
+    [ "Eigen::internal::SparseLUImpl< _MatrixType::Scalar, _MatrixType::StorageIndex >", "class_eigen_1_1internal_1_1_sparse_l_u_impl.html", [
+      [ "Eigen::SparseLU< _MatrixType, _OrderingType >", "class_eigen_1_1_sparse_l_u.html", null ]
+    ] ],
+    [ "Eigen::SparseMapBase< Derived, Level >", "class_eigen_1_1_sparse_map_base.html", [
+      [ "Eigen::internal::SparseRefBase< Derived >", "class_eigen_1_1internal_1_1_sparse_ref_base.html", null ]
+    ] ],
+    [ "Eigen::SparseMapBase< Map< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1_sparse_map_base.html", [
+      [ "Eigen::Map< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType >", "class_eigen_1_1_map_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index4032bba20cf92aab8bcf07e926e15a4f.html", null ]
+    ] ],
+    [ "Eigen::SparseMapBase< Map< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1_sparse_map_base.html", [
+      [ "Eigen::Map< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType >", "class_eigen_1_1_map_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_002c859b470cc9e43a031929bd752a93e6.html", null ]
+    ] ],
+    [ "Eigen::SparseMapBase< Ref< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1_sparse_map_base.html", [
+      [ "Eigen::internal::SparseRefBase< Ref< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1internal_1_1_sparse_ref_base.html", [
+        [ "Eigen::Ref< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType >", "class_eigen_1_1_ref_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index1bbfd78857ba9c14d54178cb3009ac38.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::SparseMapBase< Ref< const SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1_sparse_map_base.html", [
+      [ "Eigen::internal::SparseRefBase< Ref< const SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1internal_1_1_sparse_ref_base.html", [
+        [ "Eigen::Ref< const SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType >", "class_eigen_1_1_ref_3_01const_01_sparse_vector_3_01_mat_scalar_00_01_mat_options_00_01_mat_index673660e6a13ed7a7b712b0f75a25d720.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::SparseMapBase< Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1_sparse_map_base.html", [
+      [ "Eigen::internal::SparseRefBase< Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1internal_1_1_sparse_ref_base.html", [
+        [ "Eigen::Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType >", "class_eigen_1_1_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_0024ec28acf7b4e76d8ff99a0bdc39c296.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::SparseMapBase< Ref< SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1_sparse_map_base.html", [
+      [ "Eigen::internal::SparseRefBase< Ref< SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "class_eigen_1_1internal_1_1_sparse_ref_base.html", [
+        [ "Eigen::Ref< SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType >", "class_eigen_1_1_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_00357b3c2eca55b7ce618d0a2b2447510f.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::SparseQRMatrixQTransposeReturnType< SparseQRType >", "struct_eigen_1_1_sparse_q_r_matrix_q_transpose_return_type.html", null ],
+    [ "Eigen::internal::SparseSelfAdjoint2Sparse", "struct_eigen_1_1internal_1_1_sparse_self_adjoint2_sparse.html", null ],
+    [ "Eigen::internal::SparseSelfAdjointShape", "struct_eigen_1_1internal_1_1_sparse_self_adjoint_shape.html", null ],
     [ "Eigen::SparseShape", "struct_eigen_1_1_sparse_shape.html", null ],
-    [ "Eigen::SparseView< MatrixType >", "class_eigen_1_1_sparse_view.html", null ],
+    [ "Eigen::SparseSparseProduct< Lhs, Rhs >", "class_eigen_1_1_sparse_sparse_product.html", null ],
+    [ "Eigen::SparseSparseProductReturnType< Lhs, Rhs >", "struct_eigen_1_1_sparse_sparse_product_return_type.html", null ],
+    [ "Eigen::SparseTimeDenseProduct< Lhs, Rhs >", "class_eigen_1_1_sparse_time_dense_product.html", null ],
+    [ "Eigen::internal::SparseTriangularShape", "struct_eigen_1_1internal_1_1_sparse_triangular_shape.html", null ],
+    [ "SparseXprInnerIterator", null, [
+      [ "Eigen::internal::sparse_diagonal_product_evaluator< SparseXprType, DiagonalCoeffType, SDP_AsScalarProduct >::InnerIterator", "class_eigen_1_1internal_1_1sparse__diagonal__product__evaluator_3_01_sparse_xpr_type_00_01_diagocbb91bd40f7346bf4110a7aa087884f6.html", null ]
+    ] ],
     [ "specs_setter< Char >", "classspecs__setter.html", [
       [ "specs_handler< Char >", "classspecs__handler.html", null ]
     ] ],
@@ -3025,34 +4020,44 @@ var hierarchy =
     [ "Eigen::internal::sqrt_impl< Scalar >", "struct_eigen_1_1internal_1_1sqrt__impl.html", null ],
     [ "Eigen::internal::sqrt_impl< std::complex< T > >", "struct_eigen_1_1internal_1_1sqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html", null ],
     [ "Eigen::internal::sqrt_retval< Scalar >", "struct_eigen_1_1internal_1_1sqrt__retval.html", null ],
+    [ "wpi::memory::detail::stack_marker", "classwpi_1_1memory_1_1detail_1_1stack__marker.html", null ],
     [ "wpi::log::StartRecordData", "structwpi_1_1log_1_1_start_record_data.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1_differential_drivetrain_sim_1_1_state.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1_trajectory_1_1_state.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1_trapezoid_profile_1_1_state.html", null ],
+    [ "wpi::memory::static_allocator", "classwpi_1_1memory_1_1static__allocator.html", null ],
+    [ "wpi::memory::static_allocator_storage< Size >", "structwpi_1_1memory_1_1static__allocator__storage.html", null ],
     [ "Eigen::internal::static_assertion< condition >", "struct_eigen_1_1internal_1_1static__assertion.html", null ],
     [ "Eigen::internal::static_assertion< true >", "struct_eigen_1_1internal_1_1static__assertion_3_01true_01_4.html", null ],
+    [ "wpi::memory::static_block_allocator", "classwpi_1_1memory_1_1static__block__allocator.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
+    [ "wpi::memory::std_allocator< T, RawAllocator >", "classwpi_1_1memory_1_1std__allocator.html", null ],
     [ "std_string_view< T >", "structstd__string__view.html", null ],
     [ "Eigen::internal::stem_function< Scalar >", "struct_eigen_1_1internal_1_1stem__function.html", null ],
     [ "frc::PneumaticHub::StickyFaults", "structfrc_1_1_pneumatic_hub_1_1_sticky_faults.html", null ],
     [ "frc::PowerDistribution::StickyFaults", "structfrc_1_1_power_distribution_1_1_sticky_faults.html", null ],
     [ "Eigen::internal::storage_kind_to_evaluator_kind< StorageKind >", "struct_eigen_1_1internal_1_1storage__kind__to__evaluator__kind.html", null ],
+    [ "Eigen::internal::storage_kind_to_evaluator_kind< Sparse >", "struct_eigen_1_1internal_1_1storage__kind__to__evaluator__kind_3_01_sparse_01_4.html", null ],
     [ "Eigen::internal::storage_kind_to_shape< StorageKind >", "struct_eigen_1_1internal_1_1storage__kind__to__shape.html", null ],
     [ "Eigen::internal::storage_kind_to_shape< Dense >", "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_dense_01_4.html", null ],
     [ "Eigen::internal::storage_kind_to_shape< DiagonalShape >", "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_diagonal_shape_01_4.html", null ],
     [ "Eigen::internal::storage_kind_to_shape< PermutationStorage >", "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_permutation_storage_01_4.html", null ],
     [ "Eigen::internal::storage_kind_to_shape< SolverStorage >", "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_solver_storage_01_4.html", null ],
+    [ "Eigen::internal::storage_kind_to_shape< Sparse >", "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_sparse_01_4.html", null ],
     [ "Eigen::internal::storage_kind_to_shape< TranspositionsStorage >", "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_transpositions_storage_01_4.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, ScalarT, n, idx >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, ScalarT, n, -1 >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_01_scalar_t_00_01n_00_01-1_01_4.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< double >, n, -1 >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_2f671b0d03fc74fe3416f6070c68c665.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< double >, n, idx >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_11fb595916ab6c56b42dbf4a9ba5366d.html", null ],
+    [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< double >, n, idx-1 >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< float >, n, -1 >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_8693329e3850a66b17c66e21b02756d2.html", null ],
     [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< float >, n, idx >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_66a0834fa5668a55b83645f836a84679.html", null ],
+    [ "Eigen::internal::blas_data_mapper< Scalar, Index, StorageOrder, AlignmentType, Incr >::storePacketBlock_helper< SubPacket, std::complex< float >, n, idx-1 >", "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper.html", null ],
     [ "Streambuf", null, [
       [ "detail::formatbuf< Streambuf >", "classdetail_1_1formatbuf.html", null ]
     ] ],
+    [ "detail::streamed_view< T >", "structdetail_1_1streamed__view.html", null ],
     [ "Eigen::Stride< _OuterStrideAtCompileTime, _InnerStrideAtCompileTime >", "class_eigen_1_1_stride.html", null ],
     [ "Eigen::Stride< 0, Value >", "class_eigen_1_1_stride.html", [
       [ "Eigen::InnerStride< Value >", "class_eigen_1_1_inner_stride.html", null ]
@@ -3065,7 +4070,9 @@ var hierarchy =
     [ "Eigen::PlainObjectBase< Derived >::StridedConstAlignedMapType< StrideType >", "struct_eigen_1_1_plain_object_base_1_1_strided_const_aligned_map_type.html", null ],
     [ "Eigen::PlainObjectBase< Derived >::StridedConstMapType< StrideType >", "struct_eigen_1_1_plain_object_base_1_1_strided_const_map_type.html", null ],
     [ "Eigen::PlainObjectBase< Derived >::StridedMapType< StrideType >", "struct_eigen_1_1_plain_object_base_1_1_strided_map_type.html", null ],
+    [ "detail::string_literal< CharT, C >", "structdetail_1_1string__literal.html", null ],
     [ "string_value< Char >", "structstring__value.html", null ],
+    [ "string_value< char_type >", "structstring__value.html", null ],
     [ "wpi::StringMapEntryBase", "classwpi_1_1_string_map_entry_base.html", [
       [ "wpi::StringMapEntryStorage< ValueTy >", "classwpi_1_1_string_map_entry_storage.html", [
         [ "wpi::StringMapEntry< ValueTy >", "classwpi_1_1_string_map_entry.html", null ]
@@ -3073,8 +4080,19 @@ var hierarchy =
       [ "wpi::StringMapEntryStorage< std::nullopt_t >", "classwpi_1_1_string_map_entry_storage_3_01std_1_1nullopt__t_01_4.html", null ]
     ] ],
     [ "wpi::StringMapImpl", "classwpi_1_1_string_map_impl.html", [
+      [ "wpi::StringMap< std::unique_ptr< frc::MechanismRoot2d > >", "classwpi_1_1_string_map.html", null ],
+      [ "wpi::StringMap< std::unique_ptr< frc::MechanismObject2d > >", "classwpi_1_1_string_map.html", null ],
+      [ "wpi::StringMap< T >", "classwpi_1_1_string_map.html", null ],
+      [ "wpi::StringMap< std::shared_ptr< nt::Value > >", "classwpi_1_1_string_map.html", null ],
+      [ "wpi::StringMap< frc::ShuffleboardLayout * >", "classwpi_1_1_string_map.html", null ],
+      [ "wpi::StringMap< std::chrono::nanoseconds >", "classwpi_1_1_string_map.html", null ],
+      [ "wpi::StringMap< NT_Entry >", "classwpi_1_1_string_map.html", null ],
+      [ "wpi::StringMap< EntryInfo >", "classwpi_1_1_string_map.html", null ],
       [ "wpi::StringMap< ValueTy, AllocatorTy >", "classwpi_1_1_string_map.html", null ]
     ] ],
+    [ "strip_named_arg< T, bool >", "structstrip__named__arg.html", null ],
+    [ "strip_named_arg< T, true >", "structstrip__named__arg_3_01_t_00_01true_01_4.html", null ],
+    [ "styled_arg< T >", "structstyled__arg.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, DenseShape, OuterProduct >::sub", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_de81a9bc57ab96e388cf835587b3174f05.html", null ],
     [ "Eigen::internal::sub_assign_op< DstScalar, SrcScalar >", "struct_eigen_1_1internal_1_1sub__assign__op.html", null ],
     [ "frc2::Subsystem", "classfrc2_1_1_subsystem.html", [
@@ -3084,6 +4102,7 @@ var hierarchy =
     [ "Eigen::internal::svd_precondition_2x2_block_to_be_real< MatrixType, QRPreconditioner, false >", "struct_eigen_1_1internal_1_1svd__precondition__2x2__block__to__be__real_3_01_matrix_type_00_01_q076cf26720930d18ea7d222bbee662fd.html", null ],
     [ "Eigen::internal::svd_precondition_2x2_block_to_be_real< MatrixType, QRPreconditioner, true >", "struct_eigen_1_1internal_1_1svd__precondition__2x2__block__to__be__real_3_01_matrix_type_00_01_qb58fa819a3391e7d55d98ccdc14db9e4.html", null ],
     [ "Eigen::internal::swap_assign_op< Scalar >", "struct_eigen_1_1internal_1_1swap__assign__op.html", null ],
+    [ "Eigen::internal::swap_assign_op< DstEvaluatorTypeT::Scalar >", "struct_eigen_1_1internal_1_1swap__assign__op.html", null ],
     [ "Eigen::SwapWrapper< ExpressionType >", "class_eigen_1_1_swap_wrapper.html", null ],
     [ "frc::SwerveDriveKinematics< NumModules >", "classfrc_1_1_swerve_drive_kinematics.html", null ],
     [ "frc::SwerveDriveOdometry< NumModules >", "classfrc_1_1_swerve_drive_odometry.html", null ],
@@ -3098,6 +4117,17 @@ var hierarchy =
     [ "std::system_error", null, [
       [ "ghc::filesystem::filesystem_error", "classghc_1_1filesystem_1_1filesystem__error.html", null ]
     ] ],
+    [ "T", null, [
+      [ "wpi::memory::detail::ebo_storage< Tag, T >", "classwpi_1_1memory_1_1detail_1_1ebo__storage.html", null ]
+    ] ],
+    [ "wpi::memory::temporary_allocator", "classwpi_1_1memory_1_1temporary__allocator.html", null ],
+    [ "wpi::memory::detail::temporary_allocator_dtor_t", "classwpi_1_1memory_1_1detail_1_1temporary__allocator__dtor__t.html", null ],
+    [ "wpi::memory::detail::temporary_block_allocator", "classwpi_1_1memory_1_1detail_1_1temporary__block__allocator.html", null ],
+    [ "wpi::memory::temporary_stack_initializer", "classwpi_1_1memory_1_1temporary__stack__initializer.html", null ],
+    [ "wpi::memory::detail::temporary_stack_list_node", "classwpi_1_1memory_1_1detail_1_1temporary__stack__list__node.html", null ],
+    [ "WPI_EBOdetail::temporary_stack_list_node", null, [
+      [ "wpi::memory::temporary_stack", "classwpi_1_1memory_1_1temporary__stack.html", null ]
+    ] ],
     [ "Eigen::internal::ternary_evaluator< T, Arg1Kind, Arg2Kind, Arg3Kind, Arg1Scalar, Arg2Scalar, Arg3Scalar >", "struct_eigen_1_1internal_1_1ternary__evaluator.html", null ],
     [ "Eigen::internal::ternary_evaluator< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 > >", "struct_eigen_1_1internal_1_1ternary__evaluator.html", [
       [ "Eigen::internal::evaluator< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 > >", "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html", null ]
@@ -3108,6 +4138,7 @@ var hierarchy =
     [ "text_style", "classtext__style.html", null ],
     [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
     [ "frc::TimeInterpolatableBuffer< T >", "classfrc_1_1_time_interpolatable_buffer.html", null ],
+    [ "frc::TimeInterpolatableBuffer< frc::Pose2d >", "classfrc_1_1_time_interpolatable_buffer.html", null ],
     [ "frc::Timer", "classfrc_1_1_timer.html", null ],
     [ "tm_writer< OutputIt, Char >", "classtm__writer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
@@ -3134,15 +4165,22 @@ var hierarchy =
     [ "Eigen::internal::traits< BandMatrix >", "struct_eigen_1_1internal_1_1traits.html", null ],
     [ "Eigen::internal::traits< BandMatrix< _Scalar, _Rows, _Cols, _Supers, _Subs, _Options > >", "struct_eigen_1_1internal_1_1traits_3_01_band_matrix_3_01___scalar_00_01___rows_00_01___cols_00_03762db5085b3b9896d5a124beda4837b.html", null ],
     [ "Eigen::internal::traits< BandMatrixWrapper< _CoefficientsType, _Rows, _Cols, _Supers, _Subs, _Options > >", "struct_eigen_1_1internal_1_1traits_3_01_band_matrix_wrapper_3_01___coefficients_type_00_01___row768e2717402a9eceb38d536f65ceb4f1.html", null ],
+    [ "Eigen::internal::traits< BiCGSTAB< _MatrixType, _Preconditioner > >", "struct_eigen_1_1internal_1_1traits_3_01_bi_c_g_s_t_a_b_3_01___matrix_type_00_01___preconditioner_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< Block< VectorType, traits< VectorType >::Flags &RowMajorBit ? 1 :Size, traits< VectorType >::Flags &RowMajorBit ? Size :1 > >", "struct_eigen_1_1internal_1_1traits.html", [
       [ "Eigen::internal::traits< VectorBlock< VectorType, Size > >", "struct_eigen_1_1internal_1_1traits_3_01_vector_block_3_01_vector_type_00_01_size_01_4_01_4.html", null ]
     ] ],
+    [ "Eigen::internal::traits< ConjugateGradient< _MatrixType, _UpLo, _Preconditioner > >", "struct_eigen_1_1internal_1_1traits_3_01_conjugate_gradient_3_01___matrix_type_00_01___up_lo_00_01___preconditioner_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< CwiseBinaryOp< BinaryOp, Lhs, Rhs > >", "struct_eigen_1_1internal_1_1traits_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< CwiseTernaryOp< TernaryOp, Arg1, Arg2, Arg3 > >", "struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< Derived >", "struct_eigen_1_1internal_1_1traits.html", [
       [ "Eigen::internal::traits< RefBase< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_ref_base_3_01_derived_01_4_01_4.html", null ],
       [ "Eigen::internal::traits< SVDBase< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_s_v_d_base_3_01_derived_01_4_01_4.html", null ],
+      [ "Eigen::internal::traits< SparseCompressedBase< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_compressed_base_3_01_derived_01_4_01_4.html", null ],
+      [ "Eigen::internal::traits< SparseRefBase< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_ref_base_3_01_derived_01_4_01_4.html", null ],
       [ "Eigen::internal::traits< Transpose< TranspositionsBase< Derived > > >", "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_transpositions_base_3_01_derived_01_4_01_4_01_4.html", null ]
+    ] ],
+    [ "Eigen::internal::traits< Diagonal< SparseMatrix< _Scalar, _Options, _StorageIndex >, DiagIndex > >", "struct_eigen_1_1internal_1_1traits_3_01_diagonal_3_01_sparse_matrix_3_01___scalar_00_01___option6bd26e34064fdba33a44f3bb621d4cca.html", [
+      [ "Eigen::internal::traits< Diagonal< const SparseMatrix< _Scalar, _Options, _StorageIndex >, DiagIndex > >", "struct_eigen_1_1internal_1_1traits_3_01_diagonal_3_01const_01_sparse_matrix_3_01___scalar_00_01_60e2cc1eeaa955bbaca3dbe42dd8c748.html", null ]
     ] ],
     [ "Eigen::internal::traits< DiagonalMatrix >", "struct_eigen_1_1internal_1_1traits.html", null ],
     [ "Eigen::internal::traits< DiagonalWrapper< _DiagonalVectorType > >", "struct_eigen_1_1internal_1_1traits_3_01_diagonal_wrapper_3_01___diagonal_vector_type_01_4_01_4.html", null ],
@@ -3155,6 +4193,7 @@ var hierarchy =
     [ "Eigen::internal::traits< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< image_retval_base< DecompositionType > >", "struct_eigen_1_1internal_1_1traits_3_01image__retval__base_3_01_decomposition_type_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< kernel_retval_base< DecompositionType > >", "struct_eigen_1_1internal_1_1traits_3_01kernel__retval__base_3_01_decomposition_type_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< LeastSquaresConjugateGradient< _MatrixType, _Preconditioner > >", "struct_eigen_1_1internal_1_1traits_3_01_least_squares_conjugate_gradient_3_01___matrix_type_00_01___preconditioner_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< Map< _PlainObjectType, _Options, _StrideType > >", "struct_eigen_1_1internal_1_1traits.html", [
       [ "Eigen::internal::traits< Ref< _PlainObjectType, _Options, _StrideType > >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01___plain_object_type_00_01___options_00_01___stride_type_01_4_01_4.html", null ]
     ] ],
@@ -3185,6 +4224,9 @@ var hierarchy =
       [ "Eigen::internal::traits< Replicate< MatrixType, RowFactor, ColFactor > >", "struct_eigen_1_1internal_1_1traits_3_01_replicate_3_01_matrix_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html", null ],
       [ "Eigen::internal::traits< Reverse< MatrixType, Direction > >", "struct_eigen_1_1internal_1_1traits_3_01_reverse_3_01_matrix_type_00_01_direction_01_4_01_4.html", null ],
       [ "Eigen::internal::traits< SelfAdjointView< MatrixType, UpLo > >", "struct_eigen_1_1internal_1_1traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_up_lo_01_4_01_4.html", null ],
+      [ "Eigen::internal::traits< SparseSelfAdjointView< MatrixType, Mode > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_self_adjoint_view_3_01_matrix_type_00_01_mode_01_4_01_4.html", null ],
+      [ "Eigen::internal::traits< SparseSymmetricPermutationProduct< MatrixType, Mode > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_symmetric_permutation_product_3_01_matrix_type_00_01_mode_01_4_01_4.html", null ],
+      [ "Eigen::internal::traits< SparseView< MatrixType > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_view_3_01_matrix_type_01_4_01_4.html", null ],
       [ "Eigen::internal::traits< Transpose< MatrixType > >", "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html", null ],
       [ "Eigen::internal::traits< TriangularView< MatrixType, _Mode > >", "struct_eigen_1_1internal_1_1traits_3_01_triangular_view_3_01_matrix_type_00_01___mode_01_4_01_4.html", null ]
     ] ],
@@ -3205,8 +4247,33 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::traits< Replicate >", "struct_eigen_1_1internal_1_1traits.html", null ],
     [ "Eigen::internal::traits< SelfAdjointView >", "struct_eigen_1_1internal_1_1traits.html", null ],
+    [ "Eigen::internal::traits< SimplicialCholesky< _MatrixType, _UpLo, _Ordering > >", "struct_eigen_1_1internal_1_1traits_3_01_simplicial_cholesky_3_01___matrix_type_00_01___up_lo_00_01___ordering_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< SimplicialLDLT< _MatrixType, _UpLo, _Ordering > >", "struct_eigen_1_1internal_1_1traits_3_01_simplicial_l_d_l_t_3_01___matrix_type_00_01___up_lo_00_01___ordering_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< SimplicialLLT< _MatrixType, _UpLo, _Ordering > >", "struct_eigen_1_1internal_1_1traits_3_01_simplicial_l_l_t_3_01___matrix_type_00_01___up_lo_00_01___ordering_01_4_01_4.html", null ],
     [ "Eigen::internal::traits< solve_traits< Decomposition, RhsType, internal::traits< RhsType >::StorageKind >::PlainObject >", "struct_eigen_1_1internal_1_1traits.html", [
-      [ "Eigen::internal::traits< Solve< Decomposition, RhsType > >", "struct_eigen_1_1internal_1_1traits_3_01_solve_3_01_decomposition_00_01_rhs_type_01_4_01_4.html", null ]
+      [ "Eigen::internal::traits< Solve< Decomposition, RhsType > >", "struct_eigen_1_1internal_1_1traits_3_01_solve_3_01_decomposition_00_01_rhs_type_01_4_01_4.html", [
+        [ "Eigen::internal::traits< SolveWithGuess< Decomposition, RhsType, GuessType > >", "struct_eigen_1_1internal_1_1traits_3_01_solve_with_guess_3_01_decomposition_00_01_rhs_type_00_01_guess_type_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::traits< SparseMatrix< _Scalar, _Flags, _StorageIndex > >", "struct_eigen_1_1internal_1_1traits.html", [
+      [ "Eigen::internal::traits< MappedSparseMatrix< _Scalar, _Flags, _StorageIndex > >", "struct_eigen_1_1internal_1_1traits_3_01_mapped_sparse_matrix_3_01___scalar_00_01___flags_00_01___storage_index_01_4_01_4.html", null ]
+    ] ],
+    [ "Eigen::internal::traits< SparseMatrix< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_matrix_3_01___scalar_00_01___options_00_01___storage_index_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< SparseMatrix< MatScalar, MatOptions, MatIndex > >", "struct_eigen_1_1internal_1_1traits.html", [
+      [ "Eigen::internal::traits< Map< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1traits_3_01_map_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_optionsc906e4e1b3a968ac003455586a92664c.html", null ],
+      [ "Eigen::internal::traits< Map< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1traits_3_01_map_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_matec7066c11e5361dce6e4102c84e4bcd2.html", null ],
+      [ "Eigen::internal::traits< Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, _Options, _StrideType > >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_optionsa860cad8c30d0eada972a685a49da86f.html", [
+        [ "Eigen::internal::traits< Ref< const SparseMatrix< MatScalar, MatOptions, MatIndex >, _Options, _StrideType > >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_mat06d17b3f87cceb06f00332b993332271.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::traits< SparseQR_QProduct< SparseQRType, Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_q_r___q_product_3_01_sparse_q_r_type_00_01_derived_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< SparseQRMatrixQReturnType< SparseQRType > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< SparseQRMatrixQTransposeReturnType< SparseQRType > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_q_r_matrix_q_transpose_return_type_3_01_sparse_q_r_type_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< SparseVector< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1internal_1_1traits_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___storage_index_01_4_01_4.html", null ],
+    [ "Eigen::internal::traits< SparseVector< MatScalar, MatOptions, MatIndex > >", "struct_eigen_1_1internal_1_1traits.html", [
+      [ "Eigen::internal::traits< Ref< SparseVector< MatScalar, MatOptions, MatIndex >, _Options, _StrideType > >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optionsd46b48c0b126a924a96003bc7b99d5a2.html", [
+        [ "Eigen::internal::traits< Ref< const SparseVector< MatScalar, MatOptions, MatIndex >, _Options, _StrideType > >", "struct_eigen_1_1internal_1_1traits_3_01_ref_3_01const_01_sparse_vector_3_01_mat_scalar_00_01_mat15c4780d000a619e80140ca70456913a.html", null ]
+      ] ]
     ] ],
     [ "Eigen::internal::traits< ThenMatrixType >", "struct_eigen_1_1internal_1_1traits.html", [
       [ "Eigen::internal::traits< Select< ConditionMatrixType, ThenMatrixType, ElseMatrixType > >", "struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html", null ]
@@ -3268,6 +4335,7 @@ var hierarchy =
     [ "Eigen::TranspositionsShape", "struct_eigen_1_1_transpositions_shape.html", null ],
     [ "Eigen::TranspositionsStorage", "struct_eigen_1_1_transpositions_storage.html", null ],
     [ "frc::TrapezoidProfile< Distance >", "classfrc_1_1_trapezoid_profile.html", null ],
+    [ "frc::TrapezoidProfile< units::radian >", "classfrc_1_1_trapezoid_profile.html", null ],
     [ "Eigen::internal::Triangular2Dense", "struct_eigen_1_1internal_1_1_triangular2_dense.html", null ],
     [ "Eigen::internal::Triangular2Triangular", "struct_eigen_1_1internal_1_1_triangular2_triangular.html", null ],
     [ "Eigen::internal::triangular_assignment_loop< Kernel, Mode, UnrollCount, SetOpposite >", "struct_eigen_1_1internal_1_1triangular__assignment__loop.html", null ],
@@ -3307,13 +4375,7 @@ var hierarchy =
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, Size, IsComplex >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector.html", null ],
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, 1, IsComplex >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector_3_01_matrix_type_00_011_00_01_is_complex_01_4.html", null ],
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, 3, false >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector_3_01_matrix_type_00_013_00_01false_01_4.html", null ],
-    [ "frc2::Trigger", "classfrc2_1_1_trigger.html", [
-      [ "frc2::Button", "classfrc2_1_1_button.html", [
-        [ "frc2::JoystickButton", "classfrc2_1_1_joystick_button.html", null ],
-        [ "frc2::NetworkButton", "classfrc2_1_1_network_button.html", null ],
-        [ "frc2::POVButton", "classfrc2_1_1_p_o_v_button.html", null ]
-      ] ]
-    ] ],
+    [ "Eigen::Triplet< Scalar, StorageIndex >", "class_eigen_1_1_triplet.html", null ],
     [ "wpi::detail::trivial_helper< T >", "unionwpi_1_1detail_1_1trivial__helper.html", null ],
     [ "Eigen::internal::trmv_selector< Mode, StorageOrder >", "struct_eigen_1_1internal_1_1trmv__selector.html", null ],
     [ "Eigen::internal::trmv_selector< Mode, ColMajor >", "struct_eigen_1_1internal_1_1trmv__selector_3_01_mode_00_01_col_major_01_4.html", null ],
@@ -3327,11 +4389,27 @@ var hierarchy =
       [ "Eigen::internal::is_exp_known_type< long double >", "struct_eigen_1_1internal_1_1is__exp__known__type_3_01long_01double_01_4.html", null ]
     ] ],
     [ "std::true_type", null, [
+      [ "wpi::memory::detail::is_block_or_raw_allocator_impl< T, memory::is_block_allocator< T >::value >", "structwpi_1_1memory_1_1detail_1_1is__block__or__raw__allocator__impl.html", [
+        [ "wpi::memory::detail::is_block_or_raw_allocator< T >", "structwpi_1_1memory_1_1detail_1_1is__block__or__raw__allocator.html", null ]
+      ] ],
+      [ "wpi::memory::detail::is_raw_allocator< T, decltype(detail::alloc_uses_default_traits(std::declval< T & >()))>", "structwpi_1_1memory_1_1detail_1_1is__raw__allocator.html", [
+        [ "wpi::memory::is_raw_allocator< T >", "structwpi_1_1memory_1_1is__raw__allocator.html", [
+          [ "wpi::memory::detail::is_composable_allocator< T, decltype(detail::composable_alloc_uses_default_traits(std::declval< T & >()))>", "structwpi_1_1memory_1_1detail_1_1is__composable__allocator.html", [
+            [ "wpi::memory::is_composable_allocator< T >", "structwpi_1_1memory_1_1is__composable__allocator.html", null ]
+          ] ],
+          [ "wpi::memory::detail::is_block_or_raw_allocator_impl< T, false >", "structwpi_1_1memory_1_1detail_1_1is__block__or__raw__allocator__impl_3_01_t_00_01false_01_4.html", null ],
+          [ "wpi::memory::detail::is_composable_allocator< T, DefaultTraits >", "structwpi_1_1memory_1_1detail_1_1is__composable__allocator.html", null ]
+        ] ]
+      ] ],
+      [ "conjunction<... >", "structconjunction.html", null ],
       [ "detail::has_const_begin_end< T, void_t< decltype(detail::range_begin(std::declval< const remove_cvref_t< T > & >())), decltype(detail::range_end(std::declval< const remove_cvref_t< T > & >()))> >", "structdetail_1_1has__const__begin__end_3_01_t_00_01void__t_3_01decltype_07detail_1_1range__begin4d0cf3c56adb617747d1750d2b5598ac.html", null ],
       [ "detail::has_member_fn_begin_end_t< T, void_t< decltype(std::declval< T >().begin()), decltype(std::declval< T >().end())> >", "structdetail_1_1has__member__fn__begin__end__t_3_01_t_00_01void__t_3_01decltype_07std_1_1declval2d279443b63d262c3d0c3ea7654a8b24.html", null ],
       [ "detail::has_mutable_begin_end< T, void_t< decltype(detail::range_begin(std::declval< T >())), decltype(detail::range_end(std::declval< T >())), enable_if_t< std::is_copy_constructible< T >::value > > >", "structdetail_1_1has__mutable__begin__end_3_01_t_00_01void__t_3_01decltype_07detail_1_1range__begd5f2729531552232d214cda8da44d539.html", null ],
       [ "detail::is_reference_wrapper< std::reference_wrapper< T > >", "structdetail_1_1is__reference__wrapper_3_01std_1_1reference__wrapper_3_01_t_01_4_01_4.html", null ],
       [ "detail::is_std_string_like< fmt::basic_string_view< Char > >", "structdetail_1_1is__std__string__like_3_01fmt_1_1basic__string__view_3_01_char_01_4_01_4.html", null ],
+      [ "ghc::filesystem::path::_is_basic_string< std::basic_string< CharT, Traits, Alloc > >", "structghc_1_1filesystem_1_1path_1_1__is__basic__string_3_01std_1_1basic__string_3_01_char_t_00_01_traits_00_01_alloc_01_4_01_4.html", null ],
+      [ "ghc::filesystem::path::_is_basic_string< std::basic_string< CharT, std::char_traits< CharT >, std::allocator< CharT > > >", "structghc_1_1filesystem_1_1path_1_1__is__basic__string_3_01std_1_1basic__string_3_01_char_t_00_0454d093cd8125c5149a1fe74ea56d39e.html", null ],
+      [ "has_isfinite< T, enable_if_t< sizeof(std::isfinite(T())) !=0 > >", "structhas__isfinite_3_01_t_00_01enable__if__t_3_01sizeof_07std_1_1isfinite_07_t_07_08_08_08_01_9_0a0_01_4_01_4.html", null ],
       [ "has_member_data_tm_gmtoff< T, void_t< decltype(T::tm_gmtoff)> >", "structhas__member__data__tm__gmtoff_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__gmtoff_08_4_01_4.html", null ],
       [ "has_member_data_tm_zone< T, void_t< decltype(T::tm_zone)> >", "structhas__member__data__tm__zone_3_01_t_00_01void__t_3_01decltype_07_t_1_1tm__zone_08_4_01_4.html", null ],
       [ "is_back_insert_iterator< std::back_insert_iterator< Container > >", "structis__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01_container_01_4_01_4.html", null ],
@@ -3343,21 +4421,34 @@ var hierarchy =
       [ "is_contiguous< basic_memory_buffer< T, SIZE, Allocator > >", "structis__contiguous_3_01basic__memory__buffer_3_01_t_00_01_s_i_z_e_00_01_allocator_01_4_01_4.html", null ],
       [ "is_contiguous< std::basic_string< Char > >", "structis__contiguous_3_01std_1_1basic__string_3_01_char_01_4_01_4.html", null ],
       [ "is_contiguous_back_insert_iterator< appender >", "structis__contiguous__back__insert__iterator_3_01appender_01_4.html", null ],
-      [ "is_integral< int128_t >", "structis__integral_3_01int128__t_01_4.html", null ],
+      [ "is_integral< int128_opt >", "structis__integral_3_01int128__opt_01_4.html", null ],
       [ "is_integral< uint128_t >", "structis__integral_3_01uint128__t_01_4.html", null ],
       [ "is_named_arg< named_arg< Char, T > >", "structis__named__arg_3_01named__arg_3_01_char_00_01_t_01_4_01_4.html", null ],
       [ "is_output_iterator< It, T, void_t< typename std::iterator_traits< It >::iterator_category, decltype(*std::declval< It >()=std::declval< T >())> >", "structis__output__iterator_3_01_it_00_01_t_00_01void__t_3_01typename_01std_1_1iterator__traits_384cf523dd4e4d9030033492a363e38c5.html", null ],
       [ "std::is_error_code_enum< wpi::errc >", "structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html", null ],
+      [ "wpi::TypesAreDistinct<>", "structwpi_1_1_types_are_distinct_3_4.html", null ],
       [ "wpi::conjunction<... >", "structwpi_1_1conjunction.html", null ],
+      [ "wpi::detail::TypesAreDistinct< T >", "structwpi_1_1detail_1_1_types_are_distinct_3_01_t_01_4.html", null ],
       [ "wpi::detail::has_size_and_data< T, std::void_t< decltype(std::size(std::declval< T >())), decltype(std::data(std::declval< T >()))> >", "structwpi_1_1detail_1_1has__size__and__data_3_01_t_00_01std_1_1void__t_3_01decltype_07std_1_1siz4b4f562a3d71e72813c0dac0f39a1c47.html", null ],
       [ "wpi::detail::is_complete< T, decltype(sizeof(T))>", "structwpi_1_1detail_1_1is__complete_3_01_t_00_01decltype_07sizeof_07_t_08_08_4.html", null ],
       [ "wpi::detail::is_complete_type< T, decltype(void(sizeof(T)))>", "structwpi_1_1detail_1_1is__complete__type_3_01_t_00_01decltype_07void_07sizeof_07_t_08_08_08_4.html", null ],
       [ "wpi::detail::is_json< json >", "structwpi_1_1detail_1_1is__json_3_01json_01_4.html", null ],
       [ "wpi::detail::is_span< span< T, S > >", "structwpi_1_1detail_1_1is__span_3_01span_3_01_t_00_01_s_01_4_01_4.html", null ],
       [ "wpi::detail::is_std_array< std::array< T, N > >", "structwpi_1_1detail_1_1is__std__array_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html", null ],
+      [ "wpi::memory::allocator_is_raw_allocator< std::allocator< T > >", "structwpi_1_1memory_1_1allocator__is__raw__allocator_3_01std_1_1allocator_3_01_t_01_4_01_4.html", null ],
+      [ "wpi::memory::detail::is_block_or_raw_allocator_impl< T, Block >", "structwpi_1_1memory_1_1detail_1_1is__block__or__raw__allocator__impl.html", null ],
+      [ "wpi::memory::detail::is_instantiation_of< Template, Template< Args... > >", "structwpi_1_1memory_1_1detail_1_1is__instantiation__of_3_01_template_00_01_template_3_01_args_8_8_8_01_4_01_4.html", null ],
+      [ "wpi::memory::detail::is_raw_allocator< T, DefaultTraits >", "structwpi_1_1memory_1_1detail_1_1is__raw__allocator.html", null ],
+      [ "wpi::memory::is_shared_allocator< joint_allocator >", "structwpi_1_1memory_1_1is__shared__allocator_3_01joint__allocator_01_4.html", null ],
+      [ "wpi::memory::is_shared_allocator< memory_resource_allocator >", "structwpi_1_1memory_1_1is__shared__allocator_3_01memory__resource__allocator_01_4.html", null ],
+      [ "wpi::memory::is_thread_safe_allocator< joint_allocator >", "structwpi_1_1memory_1_1is__thread__safe__allocator_3_01joint__allocator_01_4.html", null ],
       [ "wpi::sig::trait::detail::is_callable< F, P, typelist< T... >, void_t< decltype(((*std::declval< P >()).*std::declval< F >())(std::declval< T >()...))> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__callable_3_01_f_00_01_p_00_01typelist_3_01_t_8_8_8_0125b8be80b42169e456aed7d8c640f0ca.html", null ],
       [ "wpi::sig::trait::detail::is_callable< F, typelist< T... >, void_t< decltype(std::declval< F >()(std::declval< T >()...))> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__callable_3_01_f_00_01typelist_3_01_t_8_8_8_01_4_00_0180a3c18aef8c706a15bc92dffc007b3e.html", null ],
       [ "wpi::sig::trait::detail::is_weak_ptr< T, void_t< decltype(std::declval< T >().expired()), decltype(std::declval< T >().lock()), decltype(std::declval< T >().reset())> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr_3_01_t_00_01void__t_3_01decltype_07std_1_1d502a13558fd27ef56459636c80faafb8.html", null ]
+    ] ],
+    [ "WPI_EBOstd::true_type", null, [
+      [ "wpi::memory::array_pool", "structwpi_1_1memory_1_1array__pool.html", null ],
+      [ "wpi::memory::node_pool", "structwpi_1_1memory_1_1node__pool.html", null ]
     ] ],
     [ "detail::truncating_iterator< OutputIt, Enable >", "classdetail_1_1truncating__iterator.html", null ],
     [ "detail::truncating_iterator_base< OutputIt >", "classdetail_1_1truncating__iterator__base.html", [
@@ -3388,10 +4479,18 @@ var hierarchy =
       ] ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Array< StorageIndex, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Array< StorageIndex, 2, 1 >", "class_eigen_1_1_array.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::internal::BlockImpl_dense< XprType, BlockRows, BlockCols, InnerPanel >", "class_eigen_1_1internal_1_1_block_impl__dense.html", [
         [ "Eigen::BlockImpl< XprType, BlockRows, BlockCols, InnerPanel, Dense >", "class_eigen_1_1_block_impl_3_01_xpr_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_00_01_dense_01_4.html", null ]
       ] ],
       [ "Eigen::internal::BlockImpl_dense< XprType, BlockRows, BlockCols, InnerPanel, HasDirectAccess >", "class_eigen_1_1internal_1_1_block_impl__dense.html", null ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::CwiseNullaryOp< Eigen::internal::linspaced_op< Scalar >, PlainObject >", "class_eigen_1_1_cwise_nullary_op.html", null ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::CwiseNullaryOp< NullaryOp, PlainObjectType >", "class_eigen_1_1_cwise_nullary_op.html", null ]
@@ -3403,24 +4502,7 @@ var hierarchy =
       [ "Eigen::MapBase< Derived, ReadOnlyAccessors >", "class_eigen_1_1_map_base_3_01_derived_00_01_read_only_accessors_01_4.html", [
         [ "Eigen::MapBase< Derived, WriteAccessors >", "class_eigen_1_1_map_base_3_01_derived_00_01_write_accessors_01_4.html", null ]
       ] ],
-      [ "Eigen::PlainObjectBase< Derived >", "class_eigen_1_1_plain_object_base.html", [
-        [ "Eigen::Matrix< RealScalar, Dynamic, Dynamic, ColMajor >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< ComplexScalar, RowsAtCompileTime, ColsAtCompileTime, Options, MaxRowsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< ComplexScalar, ColsAtCompileTime, 1, Options &(~RowMajor), MaxColsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< ComplexScalar, ColsAtCompileTime, 1, Options &~RowMajor, MaxColsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, ColsAtCompileTime, 1, Options &~RowMajor, MaxColsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< StorageIndex, 1, EIGEN_SIZE_MIN_PREFER_DYNAMIC(ColsAtCompileTime, RowsAtCompileTime), RowMajor, 1, EIGEN_SIZE_MIN_PREFER_FIXED(MaxColsAtCompileTime, MaxRowsAtCompileTime)>", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, SizeMinusOne, 1, Options &~RowMajor, MaxSizeMinusOne, 1 >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, 1, Size, int(Options)|int(RowMajor), 1, MaxSize >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, DiagSizeAtCompileTime, DiagSizeAtCompileTime, MatrixOptions, MaxDiagSizeAtCompileTime, MaxDiagSizeAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, RowsAtCompileTime, 1, 0, MaxRowsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< ComplexScalar, Dynamic, Dynamic, 0, MatrixType::RowsAtCompileTime, MatrixType::ColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, RowsAtCompileTime, RowsAtCompileTime, MatrixOptions, MaxRowsAtCompileTime, MaxRowsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, ColsAtCompileTime, ColsAtCompileTime, MatrixOptions, MaxColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, Size, Size, ColMajor, MaxColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< Scalar, 1, RowsAtCompileTime, RowMajor, 1, MaxRowsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< States, States >", "class_eigen_1_1_matrix.html", null ]
-      ] ]
+      [ "Eigen::PlainObjectBase< Derived >", "class_eigen_1_1_plain_object_base.html", null ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::Diagonal< MatrixType, _DiagIndex >", "class_eigen_1_1_diagonal.html", null ]
@@ -3429,8 +4511,84 @@ var hierarchy =
       [ "Eigen::ForceAlignedAccess< ExpressionType >", "class_eigen_1_1_force_aligned_access.html", null ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< 3, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< 3, 3 >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< 4, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< 4, 3 >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< 6, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< 6, 4 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< 6, 6 >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::PlainObjectBase< Matrix< _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
         [ "Eigen::Matrix< _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< ComplexScalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< ComplexScalar, RowsAtCompileTime, ColsAtCompileTime, Options, MaxRowsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< ComplexScalar, ColsAtCompileTime, 1, Options &(~RowMajor), MaxColsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< ComplexScalar, ColsAtCompileTime, 1, Options &~RowMajor, MaxColsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< ComplexScalar, Dynamic, Dynamic, 0, MatrixType::RowsAtCompileTime, MatrixType::ColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< Inputs, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< Inputs, States >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Inputs, Inputs >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< NumModules *2, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< NumModules *2, 3 >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< Outputs, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< Outputs, States >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Outputs, Inputs >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Outputs, Outputs >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< RealScalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< RealScalar, Dynamic, Dynamic, ColMajor >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< RealScalar, Dynamic, 1 >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< Scalar, RowsAtCompileTime, RowsAtCompileTime, MatrixOptions, MaxRowsAtCompileTime, MaxRowsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, ColsAtCompileTime, ColsAtCompileTime, MatrixOptions, MaxColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, Dynamic, 1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, SizeMinusOne, 1, Options &~RowMajor, MaxSizeMinusOne, 1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, 1, Size, int(Options)|int(RowMajor), 1, MaxSize >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, ColsAtCompileTime, 1, Options &~RowMajor, MaxColsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, DiagSizeAtCompileTime, DiagSizeAtCompileTime, MatrixOptions, MaxDiagSizeAtCompileTime, MaxDiagSizeAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, RowsAtCompileTime, 1, 0, MaxRowsAtCompileTime, 1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, Size, Size, ColMajor, MaxColsAtCompileTime, MaxColsAtCompileTime >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< Scalar, 1, RowsAtCompileTime, RowMajor, 1, MaxRowsAtCompileTime >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< States, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< States, Inputs >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< States, States >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< States, 2 *States+1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< States, Outputs >", "class_eigen_1_1_matrix.html", null ]
+      ] ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::PlainObjectBase< Matrix< StorageIndex, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
+        [ "Eigen::Matrix< StorageIndex, Dynamic, 1 >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< StorageIndex, 1, EIGEN_SIZE_MIN_PREFER_DYNAMIC(ColsAtCompileTime, RowsAtCompileTime), RowMajor, 1, EIGEN_SIZE_MIN_PREFER_FIXED(MaxColsAtCompileTime, MaxRowsAtCompileTime)>", "class_eigen_1_1_matrix.html", null ]
       ] ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
@@ -3464,7 +4622,13 @@ var hierarchy =
       [ "Eigen::ReturnByValue< image_retval_base< _DecompositionType > >", "class_eigen_1_1_return_by_value.html", null ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::ReturnByValue< image_retval_base< FullPivLU< _MatrixType > > >", "class_eigen_1_1_return_by_value.html", null ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::ReturnByValue< kernel_retval_base< _DecompositionType > >", "class_eigen_1_1_return_by_value.html", null ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::ReturnByValue< kernel_retval_base< FullPivLU< _MatrixType > > >", "class_eigen_1_1_return_by_value.html", null ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::ReturnByValue< MatrixComplexPowerReturnValue< Derived > >", "class_eigen_1_1_return_by_value.html", null ]
@@ -3486,6 +4650,9 @@ var hierarchy =
     ] ],
     [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::ReturnByValue< MatrixSquareRootReturnValue< Derived > >", "class_eigen_1_1_return_by_value.html", null ]
+    ] ],
+    [ "internal::dense_xpr_base::type", null, [
+      [ "Eigen::ReturnByValue< SparseQR_QProduct< SparseQRType, Derived > >", "class_eigen_1_1_return_by_value.html", null ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::ReturnByValue< triangular_solve_retval< Side, TriangularType, Rhs > >", "class_eigen_1_1_return_by_value.html", null ]
@@ -3547,9 +4714,12 @@ var hierarchy =
       ] ]
     ] ],
     [ "internal::generic_xpr_base::type", null, [
-      [ "Eigen::ProductImpl< Lhs, Rhs, Option, StorageKind >", "class_eigen_1_1_product_impl.html", [
+      [ "Eigen::ProductImpl< Lhs, Rhs, Option, internal::product_promote_storage_type< internal::traits< Lhs >::StorageKind, internal::traits< Rhs >::StorageKind, internal::product_type< Lhs, Rhs >::ret >::ret >", "class_eigen_1_1_product_impl.html", [
         [ "Eigen::Product< Lhs, Rhs >", "class_eigen_1_1_product.html", null ]
       ] ]
+    ] ],
+    [ "internal::generic_xpr_base::type", null, [
+      [ "Eigen::ProductImpl< Lhs, Rhs, Option, StorageKind >", "class_eigen_1_1_product_impl.html", null ]
     ] ],
     [ "internal::generic_xpr_base::type", null, [
       [ "Eigen::SolveImpl< Decomposition, RhsType, internal::traits< RhsType >::StorageKind >", "class_eigen_1_1_solve_impl.html", [
@@ -3558,6 +4728,9 @@ var hierarchy =
     ] ],
     [ "internal::generic_xpr_base::type", null, [
       [ "Eigen::SolveImpl< Decomposition, RhsType, StorageKind >", "class_eigen_1_1_solve_impl.html", null ]
+    ] ],
+    [ "internal::generic_xpr_base::type", null, [
+      [ "Eigen::SolveWithGuess< Decomposition, RhsType, GuessType >", "class_eigen_1_1_solve_with_guess.html", null ]
     ] ],
     [ "internal::generic_xpr_base::type", null, [
       [ "Eigen::TransposeImpl< MatrixType, internal::traits< MatrixType >::StorageKind >", "class_eigen_1_1_transpose_impl.html", [
@@ -3673,65 +4846,227 @@ var hierarchy =
     [ "Eigen::internal::type_casting_traits< numext::uint8_t, numext::uint64_t >", "struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint64__t_01_4.html", null ],
     [ "Eigen::internal::type_casting_traits< numext::uint8_t, numext::uint8_t >", "struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint8__t_01_4.html", null ],
     [ "type_identity< T >", "structtype__identity.html", null ],
-    [ "wpi::pointer_union_detail::TypeIndex< T, Us >", "structwpi_1_1pointer__union__detail_1_1_type_index.html", null ],
-    [ "wpi::pointer_union_detail::TypeIndex< T >", "structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_01_4.html", null ],
-    [ "wpi::pointer_union_detail::TypeIndex< T, T, Us... >", "structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html", null ],
-    [ "wpi::pointer_union_detail::TypeIndex< T, U, Us... >", "structwpi_1_1pointer__union__detail_1_1_type_index_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html", null ],
     [ "wpi::sig::trait::typelist<... >", "structwpi_1_1sig_1_1trait_1_1typelist.html", null ],
     [ "ghc::filesystem::u8arguments", "classghc_1_1filesystem_1_1u8arguments.html", null ],
     [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1_uid_vector.html", null ],
+    [ "wpi::UidVector< ListenerData, 64 >", "classwpi_1_1_uid_vector.html", null ],
+    [ "wpi::UidVector< std::shared_ptr< wpi::CallbackThread::Poller >, 64 >", "classwpi_1_1_uid_vector.html", null ],
     [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1_uid_vector_iterator.html", null ],
-    [ "detail::uint128_wrapper", "structdetail_1_1uint128__wrapper.html", null ],
+    [ "detail::uint128_fallback", "classdetail_1_1uint128__fallback.html", null ],
     [ "wpi::Uleb128Reader", "classwpi_1_1_uleb128_reader.html", null ],
     [ "frc::sim::UltrasonicSim", "classfrc_1_1sim_1_1_ultrasonic_sim.html", null ],
     [ "Eigen::internal::unaligned_dense_assignment_loop< IsAligned >", "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop.html", null ],
     [ "Eigen::internal::unaligned_dense_assignment_loop< false >", "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop_3_01false_01_4.html", null ],
     [ "Eigen::internal::unary_evaluator< T, Kind, Scalar >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
-      [ "Eigen::internal::evaluator< PlainObjectBase< Array< Scalar, Rows, Cols, Options, MaxRows, MaxCols > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< Array< Scalar, Rows, Cols, Options, MaxRows, MaxCols > >", "struct_eigen_1_1internal_1_1evaluator_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options211222ab89c0f0e9e4e97c28137aec40.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< Product< EIGEN_SCALAR_BINARYOP_EXPR_RETURN_TYPE(Scalar1, Lhs, product), Rhs, DefaultProduct > >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< CwiseBinaryOp< internal::scalar_product_op< Scalar1, Scalar2 >, const CwiseNullaryOp< internal::scalar_constant_op< Scalar1 >, Plain1 >, const Product< Lhs, Rhs, DefaultProduct > > >", "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01internal_1_1scalar__product__op_321f22566d2663743c7f9d1c3e4e03f69.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< Diagonal< const Product< Lhs, Rhs, LazyProduct >, DiagIndex > >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< Diagonal< const Product< Lhs, Rhs, DefaultProduct >, DiagIndex > >", "struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01const_01_product_3_01_lhs_00_01_rhs_00_0f2daf8d0d705abfd9eae463424f3e8d5.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< ArgType::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< EvalToTemp< ArgType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_eval_to_temp_3_01_arg_type_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< PlainObjectBase< Matrix< Scalar, Rows, Cols, Options, MaxRows, MaxCols > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< Matrix< Scalar, Rows, Cols, Options, MaxRows, MaxCols > >", "struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< ArgType >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< NestByValue< ArgType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_nest_by_value_3_01_arg_type_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< internal::traits< Derived >::ReturnType >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< ReturnByValue< Derived > >", "struct_eigen_1_1internal_1_1evaluator_3_01_return_by_value_3_01_derived_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< Solve< Decomposition, RhsType >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::evaluator< Solve< Decomposition, RhsType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_solve_3_01_decomposition_00_01_rhs_type_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< Product< Lhs, Rhs, Options >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, Options >, ProductTag, LhsShape, RhsShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_options_01_34fdf849c0cc96fc7f8fe25f34362e65.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< _XprType >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::redux_evaluator< _XprType >", "class_eigen_1_1internal_1_1redux__evaluator.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< Inverse< ArgType >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::unary_evaluator< Inverse< ArgType > >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_inverse_3_01_arg_type_01_4_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< internal::remove_all< MatrixType >::type >", "struct_eigen_1_1internal_1_1evaluator.html", [
-        [ "Eigen::internal::unary_evaluator< TriangularView< MatrixType, Mode >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html", null ]
-      ] ],
-      [ "Eigen::internal::evaluator< XprType >", "struct_eigen_1_1internal_1_1evaluator.html", null ],
-      [ "Eigen::internal::evaluator< LhsNestedCleaned >", "struct_eigen_1_1internal_1_1evaluator.html", null ],
-      [ "Eigen::internal::evaluator< RhsNestedCleaned >", "struct_eigen_1_1internal_1_1evaluator.html", null ],
       [ "Eigen::internal::evaluator< T >", "struct_eigen_1_1internal_1_1evaluator.html", [
         [ "Eigen::internal::evaluator< const T >", "struct_eigen_1_1internal_1_1evaluator_3_01const_01_t_01_4.html", null ]
       ] ]
     ] ],
+    [ "Eigen::internal::unary_evaluator< _XprType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< _XprType >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::redux_evaluator< _XprType >", "class_eigen_1_1internal_1_1redux__evaluator.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Arg1 >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Arg1 >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Arg2 >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Arg2 >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Arg3 >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Arg3 >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< ArgType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< ArgType >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< NestByValue< ArgType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_nest_by_value_3_01_arg_type_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< ArgType::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< ArgType::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< EvalToTemp< ArgType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_eval_to_temp_3_01_arg_type_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< ArgTypeNestedCleaned >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< ArgTypeNestedCleaned >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
     [ "Eigen::internal::unary_evaluator< Block< ArgType, BlockRows, BlockCols, InnerPanel > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
       [ "Eigen::internal::block_evaluator< ArgType, BlockRows, BlockCols, InnerPanel, false >", "struct_eigen_1_1internal_1_1block__evaluator_3_01_arg_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_00_01false_01_4.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< ConditionMatrixType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< ConditionMatrixType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Diagonal< const Product< Lhs, Rhs, LazyProduct >, DiagIndex > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Diagonal< const Product< Lhs, Rhs, LazyProduct >, DiagIndex > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Diagonal< const Product< Lhs, Rhs, DefaultProduct >, DiagIndex > >", "struct_eigen_1_1internal_1_1evaluator_3_01_diagonal_3_01const_01_product_3_01_lhs_00_01_rhs_00_0f2daf8d0d705abfd9eae463424f3e8d5.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< DiagonalCoeffType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< DiagonalCoeffType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< DiagonalType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< DiagonalType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Eigen::internal::true_type >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Eigen::internal::true_type >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< ElseMatrixType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< ElseMatrixType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< internal::remove_all< MatrixType >::type >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< internal::remove_all< MatrixType >::type >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::unary_evaluator< TriangularView< MatrixType, Mode >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< internal::traits< Derived >::ReturnType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< internal::traits< Derived >::ReturnType >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< ReturnByValue< Derived > >", "struct_eigen_1_1internal_1_1evaluator_3_01_return_by_value_3_01_derived_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Inverse< ArgType >::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Inverse< ArgType >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::unary_evaluator< Inverse< ArgType > >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_inverse_3_01_arg_type_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Lhs >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Lhs >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Lhs::DiagonalVectorType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Lhs::DiagonalVectorType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< LhsArg >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< LhsArg >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< LhsNestedCleaned >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< LhsNestedCleaned >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< MatrixType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< MatrixType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< permutation_matrix_product< Lhs, OnTheRight, false, SparseShape >::ReturnType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< permutation_matrix_product< Lhs, OnTheRight, false, SparseShape >::ReturnType >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, AliasFreeProduct >, ProductTag, SparseShape, PermutationShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_alias_free_9d3be1aa43ce7749965c0caa1184b53c.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< permutation_matrix_product< Rhs, OnTheLeft, false, SparseShape >::ReturnType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< permutation_matrix_product< Rhs, OnTheLeft, false, SparseShape >::ReturnType >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, AliasFreeProduct >, ProductTag, PermutationShape, SparseShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_alias_free_0706ef7a5a2e7de13f2e1755913a650d.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< PlainObjectBase< Array< Scalar, Rows, Cols, Options, MaxRows, MaxCols > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< PlainObjectBase< Array< Scalar, Rows, Cols, Options, MaxRows, MaxCols > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Array< Scalar, Rows, Cols, Options, MaxRows, MaxCols > >", "struct_eigen_1_1internal_1_1evaluator_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options211222ab89c0f0e9e4e97c28137aec40.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< PlainObjectBase< Matrix< Scalar, Rows, Cols, Options, MaxRows, MaxCols > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< PlainObjectBase< Matrix< Scalar, Rows, Cols, Options, MaxRows, MaxCols > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Matrix< Scalar, Rows, Cols, Options, MaxRows, MaxCols > >", "struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Product< EIGEN_SCALAR_BINARYOP_EXPR_RETURN_TYPE(Scalar1, Lhs, product), Rhs, DefaultProduct > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Product< EIGEN_SCALAR_BINARYOP_EXPR_RETURN_TYPE(Scalar1, Lhs, product), Rhs, DefaultProduct > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< CwiseBinaryOp< internal::scalar_product_op< Scalar1, Scalar2 >, const CwiseNullaryOp< internal::scalar_constant_op< Scalar1 >, Plain1 >, const Product< Lhs, Rhs, DefaultProduct > > >", "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01internal_1_1scalar__product__op_321f22566d2663743c7f9d1c3e4e03f69.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Product< Lhs, Lhs::PlainObject, DefaultProduct >::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Product< Lhs, Lhs::PlainObject, DefaultProduct >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::product_evaluator< Product< Lhs, RhsView, DefaultProduct >, ProductTag, SparseShape, SparseSelfAdjointShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_view_00_01_defaule3daa34d3e750fc1a34e5c28fcdbf893.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Product< Lhs, Rhs, DefaultProduct >::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Product< Lhs, Rhs, DefaultProduct >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::unary_evaluator< SparseView< Product< Lhs, Rhs, Options > >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_sparse_view_3_01_product_3_01_lhs_00_01_rhs_00009027121becdbd7ae7cc0d8a4c63ed7.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Product< Lhs, Rhs, Options >::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Product< Lhs, Rhs, Options >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::product_evaluator< Product< Lhs, Rhs, Options >, ProductTag, LhsShape, RhsShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_00_01_rhs_00_01_options_01_34fdf849c0cc96fc7f8fe25f34362e65.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Product< Rhs::PlainObject, Rhs, DefaultProduct >::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Product< Rhs::PlainObject, Rhs, DefaultProduct >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::product_evaluator< Product< LhsView, Rhs, DefaultProduct >, ProductTag, SparseSelfAdjointShape, SparseShape >", "struct_eigen_1_1internal_1_1product__evaluator_3_01_product_3_01_lhs_view_00_01_rhs_00_01_defaul9695c5493cd4054bc6e3c91568225f16.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Rhs >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Rhs >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Rhs::DiagonalVectorType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Rhs::DiagonalVectorType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< RhsArg >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< RhsArg >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< RhsNestedCleaned >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< RhsNestedCleaned >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< Solve< Decomposition, RhsType >::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< Solve< Decomposition, RhsType >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Solve< Decomposition, RhsType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_solve_3_01_decomposition_00_01_rhs_type_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SolveWithGuess< Decomposition, RhsType, GuessType >::PlainObject >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SolveWithGuess< Decomposition, RhsType, GuessType >::PlainObject >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< SolveWithGuess< Decomposition, RhsType, GuessType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_solve_with_guess_3_01_decomposition_00_01_rhs_type_00_01_guess_type_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Block< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Block< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::unary_evaluator< Block< const SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_block_3_01const_01_sparse_matrix_3_01___scalarcdbc8f3eebef46901de7cc88abb0e702.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Block< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Block< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::unary_evaluator< Block< SparseMatrix< _Scalar, _Options, _StorageIndex >, BlockRows, BlockCols, true >, IteratorBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_block_3_01_sparse_matrix_3_01___scalar_00_01__bc162881393553b921ff4fd46550ce3d.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Map< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Map< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Map< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_0f7d77d8dc2e7e7ccd8fbd3de5b937dd.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Map< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Map< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Map< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_map_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_optic7190da6f4a73606f624a88388745a36.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< MappedSparseMatrix< _Scalar, _Options, _StorageIndex > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< MappedSparseMatrix< _Scalar, _Options, _StorageIndex > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< MappedSparseMatrix< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1internal_1_1evaluator_3_01_mapped_sparse_matrix_3_01___scalar_00_01___options_00_01___storage_index_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Ref< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Ref< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Ref< const SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01const_01_sparse_matrix_3_01_mat_scalar_00_01_17d98bf798af280639e961c8a27d545c.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Ref< const SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Ref< const SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Ref< const SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01const_01_sparse_vector_3_01_mat_scalar_00_01_a519c1c897a6ea04f0cfeb49f9a37d05.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Ref< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< Ref< SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< Ref< SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< Ref< SparseVector< MatScalar, MatOptions, MatIndex >, Options, StrideType > >", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseCompressedBase< SparseMatrix< _Scalar, _Options, _StorageIndex > > >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseCompressedBase< SparseMatrix< _Scalar, _Options, _StorageIndex > > >", "struct_eigen_1_1internal_1_1evaluator.html", [
+        [ "Eigen::internal::evaluator< SparseMatrix< _Scalar, _Options, _StorageIndex > >", "struct_eigen_1_1internal_1_1evaluator_3_01_sparse_matrix_3_01___scalar_00_01___options_00_01___storage_index_01_4_01_4.html", null ]
+      ] ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< SparseXprType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< SparseXprType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< ThenMatrixType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< ThenMatrixType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
+    ] ],
+    [ "Eigen::internal::unary_evaluator< XprType >", "struct_eigen_1_1internal_1_1unary__evaluator.html", [
+      [ "Eigen::internal::evaluator< XprType >", "struct_eigen_1_1internal_1_1evaluator.html", null ]
     ] ],
     [ "Eigen::internal::unary_result_of_select< Func, ArgType, SizeOf >", "struct_eigen_1_1internal_1_1unary__result__of__select.html", null ],
     [ "Eigen::internal::unary_result_of_select< Func, ArgType, sizeof(has_std_result_type)>", "struct_eigen_1_1internal_1_1unary__result__of__select_3_01_func_00_01_arg_type_00_01sizeof_07has__std__result__type_08_4.html", null ],
@@ -3743,6 +5078,7 @@ var hierarchy =
     ] ],
     [ "Eigen::UniformScaling< Scalar >", "class_eigen_1_1_uniform_scaling.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
+    [ "wpi::unique_function< void()>", "classwpi_1_1unique__function.html", null ],
     [ "wpi::detail::UniqueFunctionBase< ReturnT, ParamTs >", "classwpi_1_1detail_1_1_unique_function_base.html", null ],
     [ "wpi::detail::UniqueFunctionBase< R, P... >", "classwpi_1_1detail_1_1_unique_function_base.html", [
       [ "wpi::unique_function< R(P...) const >", "classwpi_1_1unique__function_3_01_r_07_p_8_8_8_08_01const_01_4.html", null ],
@@ -3792,20 +5128,58 @@ var hierarchy =
     [ "Eigen::internal::unpacket_traits< Packet8uc >", "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet8uc_01_4.html", null ],
     [ "Eigen::internal::unpacket_traits< Packet8us >", "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet8us_01_4.html", null ],
     [ "frc::UnscentedKalmanFilter< States, Inputs, Outputs >", "classfrc_1_1_unscented_kalman_filter.html", null ],
+    [ "frc::UnscentedKalmanFilter< 3, 3, 1 >", "classfrc_1_1_unscented_kalman_filter.html", null ],
+    [ "frc::UnscentedKalmanFilter< 5, 3, 3 >", "classfrc_1_1_unscented_kalman_filter.html", null ],
     [ "Eigen::ReturnByValue< Derived >::Unusable", "class_eigen_1_1_return_by_value_1_1_unusable.html", null ],
     [ "Eigen::internal::UpperBidiagonalization< _MatrixType >", "class_eigen_1_1internal_1_1_upper_bidiagonalization.html", null ],
     [ "cs::UsbCameraInfo", "structcs_1_1_usb_camera_info.html", null ],
     [ "utf8_to_utf16", "classutf8__to__utf16.html", null ],
+    [ "WPI_EBOdetail::check_standard_allocator::valid", null, [
+      [ "wpi::memory::allocator_is_raw_allocator< Allocator >", "structwpi_1_1memory_1_1allocator__is__raw__allocator.html", null ]
+    ] ],
     [ "Eigen::internal::valid_indexed_view_overload< RowIndices, ColIndices >", "struct_eigen_1_1internal_1_1valid__indexed__view__overload.html", null ],
     [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
     [ "nt::Value", "classnt_1_1_value.html", null ],
     [ "value< Context >", "classvalue.html", null ],
-    [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
+    [ "counting_iterator::value_type", "structcounting__iterator_1_1value__type.html", null ],
     [ "Eigen::symbolic::ValueExpr< IndexType >", "class_eigen_1_1symbolic_1_1_value_expr.html", null ],
     [ "Eigen::symbolic::ValueExpr< internal::FixedInt< N > >", "class_eigen_1_1symbolic_1_1_value_expr_3_01internal_1_1_fixed_int_3_01_n_01_4_01_4.html", null ],
     [ "Eigen::internal::variable_if_dynamic< T, Value >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, _Rows >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, _Subs >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, _Supers >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, ArgType::ColsAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, ArgType::RowsAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, ColFactor >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, Cols >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, ColsAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, ForwardLinearAccess ? Dynamic :0 >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, Incr >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, InnerStrideAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, OuterSize >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, OuterStrideAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, ReverseCol ? ArgType::ColsAtCompileTime :1 >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, ReverseRow ? ArgType::RowsAtCompileTime :1 >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, RowFactor >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, Rows >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, RowsAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, Subs >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, Supers >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, XprSize >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, XprType::ColsAtCompileTime==1 ? 0 :Dynamic >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, XprType::InnerStrideAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, XprType::OuterStrideAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index, XprType::RowsAtCompileTime==1 ? 0 :Dynamic >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index,(ArgType::ColsAtCompileTime==1 &&BlockCols==1) ? 0 :Dynamic >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< Index,(ArgType::RowsAtCompileTime==1 &&BlockRows==1) ? 0 :Dynamic >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< StorageIndex, ColsAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< StorageIndex, RowsAtCompileTime >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< StorageIndex,(XprType::ColsAtCompileTime==1 &&BlockCols==1) ? 0 :Dynamic >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
+    [ "Eigen::internal::variable_if_dynamic< StorageIndex,(XprType::RowsAtCompileTime==1 &&BlockRows==1) ? 0 :Dynamic >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
     [ "Eigen::internal::variable_if_dynamic< T, Dynamic >", "class_eigen_1_1internal_1_1variable__if__dynamic_3_01_t_00_01_dynamic_01_4.html", null ],
     [ "Eigen::internal::variable_if_dynamicindex< T, Value >", "class_eigen_1_1internal_1_1variable__if__dynamicindex.html", null ],
+    [ "Eigen::internal::variable_if_dynamicindex< Index, DiagIndex >", "class_eigen_1_1internal_1_1variable__if__dynamicindex.html", null ],
+    [ "Eigen::internal::variable_if_dynamicindex< Index, XprType::DiagIndex >", "class_eigen_1_1internal_1_1variable__if__dynamicindex.html", null ],
     [ "Eigen::internal::variable_if_dynamicindex< T, DynamicIndex >", "class_eigen_1_1internal_1_1variable__if__dynamicindex_3_01_t_00_01_dynamic_index_01_4.html", null ],
     [ "Eigen::internal::VariableAndFixedInt< N >", "class_eigen_1_1internal_1_1_variable_and_fixed_int.html", null ],
     [ "vector", null, [
@@ -3841,6 +5215,8 @@ var hierarchy =
     [ "view", "structview.html", [
       [ "named_arg< Char, T >", "structnamed__arg.html", null ]
     ] ],
+    [ "wpi::memory::virtual_block_allocator", "classwpi_1_1memory_1_1virtual__block__allocator.html", null ],
+    [ "wpi::memory::detail::virtual_memory_allocator_leak_handler", "structwpi_1_1memory_1_1detail_1_1virtual__memory__allocator__leak__handler.html", null ],
     [ "frc::VisionPipeline", "classfrc_1_1_vision_pipeline.html", null ],
     [ "frc::VisionRunnerBase", "classfrc_1_1_vision_runner_base.html", [
       [ "frc::VisionRunner< T >", "classfrc_1_1_vision_runner.html", null ]
@@ -3859,7 +5235,28 @@ var hierarchy =
     [ "frc::WidgetType", "classfrc_1_1_widget_type.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "Eigen::WithFormat< ExpressionType >", "class_eigen_1_1_with_format.html", null ],
-    [ "wpi::wpi_shutdown_obj", "structwpi_1_1wpi__shutdown__obj.html", null ],
+    [ "WPI_EBOallocator_reference", null, [
+      [ "wpi::memory::allocator_deallocator< Type, RawAllocator >", "classwpi_1_1memory_1_1allocator__deallocator.html", null ],
+      [ "wpi::memory::allocator_deallocator< Type[], RawAllocator >", "classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html", null ],
+      [ "wpi::memory::allocator_deleter< Type, RawAllocator >", "classwpi_1_1memory_1_1allocator__deleter.html", null ],
+      [ "wpi::memory::allocator_deleter< Type[], RawAllocator >", "classwpi_1_1memory_1_1allocator__deleter_3_01_type_0f_0e_00_01_raw_allocator_01_4.html", null ],
+      [ "wpi::memory::allocator_polymorphic_deallocator< BaseType, RawAllocator >", "classwpi_1_1memory_1_1allocator__polymorphic__deallocator.html", null ],
+      [ "wpi::memory::allocator_polymorphic_deleter< BaseType, RawAllocator >", "classwpi_1_1memory_1_1allocator__polymorphic__deleter.html", null ],
+      [ "wpi::memory::joint_ptr< T, RawAllocator >", "classwpi_1_1memory_1_1joint__ptr.html", null ]
+    ] ],
+    [ "WPI_EBOBlockAllocator", null, [
+      [ "wpi::memory::memory_arena< allocator_type, false >", "classwpi_1_1memory_1_1memory__arena.html", null ],
+      [ "wpi::memory::memory_arena< allocator_type >", "classwpi_1_1memory_1_1memory__arena.html", null ],
+      [ "wpi::memory::detail::deeply_tracked_block_allocator< Tracker, BlockAllocator >", "classwpi_1_1memory_1_1detail_1_1deeply__tracked__block__allocator.html", null ],
+      [ "wpi::memory::memory_arena< BlockAllocator, Cached >", "classwpi_1_1memory_1_1memory__arena.html", null ]
+    ] ],
+    [ "WPI_EBOStoragePolicy", null, [
+      [ "wpi::memory::allocator_storage< StoragePolicy, Mutex >", "classwpi_1_1memory_1_1allocator__storage.html", null ]
+    ] ],
+    [ "WPI_EBOTracker", null, [
+      [ "wpi::memory::tracked_allocator< Tracker, RawAllocator >", "classwpi_1_1memory_1_1tracked__allocator.html", null ],
+      [ "wpi::memory::tracked_block_allocator< Tracker, BlockOrRawAllocator >", "classwpi_1_1memory_1_1tracked__block__allocator.html", null ]
+    ] ],
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
     [ "write_int_data< Char >", "structwrite__int__data.html", null ],
     [ "year_month_day", "classyear__month__day.html", null ]

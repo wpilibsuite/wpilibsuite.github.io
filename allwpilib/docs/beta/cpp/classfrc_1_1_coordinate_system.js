@@ -5,6 +5,7 @@ var classfrc_1_1_coordinate_system =
     [ "CoordinateSystem", "classfrc_1_1_coordinate_system.html#a9910986ef1f1d80150e1730bcaf2c653", null ],
     [ "Convert", "classfrc_1_1_coordinate_system.html#a0dc6e0310307555b57e0a0c9d4993836", null ],
     [ "Convert", "classfrc_1_1_coordinate_system.html#abeaa3c9b34b1c9ddeaa86a1c0b3d6a5e", null ],
+    [ "Convert", "classfrc_1_1_coordinate_system.html#ab6b4fce3e0833d7466f9e3287af85753", null ],
     [ "Convert", "classfrc_1_1_coordinate_system.html#a8fed39942fb46fca689f0245a92745f1", null ],
     [ "EDN", "classfrc_1_1_coordinate_system.html#a98ce648380a3de7626e802c982a42429", null ],
     [ "NED", "classfrc_1_1_coordinate_system.html#a22e80567e05100162c1b7ba203ce29c7", null ],

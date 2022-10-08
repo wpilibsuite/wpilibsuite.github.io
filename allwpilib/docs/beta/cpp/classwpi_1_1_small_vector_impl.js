@@ -16,6 +16,7 @@ var classwpi_1_1_small_vector_impl =
     [ "assign", "classwpi_1_1_small_vector_impl.html#a12da22127a4a113c09df6634ae03321d", null ],
     [ "assign", "classwpi_1_1_small_vector_impl.html#a8c5a50513552eeb2493d6489b730eed9", null ],
     [ "assign", "classwpi_1_1_small_vector_impl.html#a1e69fb3914c83517c040a1c2260acd55", null ],
+    [ "assignRemote", "classwpi_1_1_small_vector_impl.html#a4c6d3d4075ef8e2d3d2fbcf1deb94001", null ],
     [ "clear", "classwpi_1_1_small_vector_impl.html#a49aea81125688c40f959fbfe5ddabe31", null ],
     [ "emplace_back", "classwpi_1_1_small_vector_impl.html#a17ab5df4c1400dd96b791f8163fd1f46", null ],
     [ "erase", "classwpi_1_1_small_vector_impl.html#a131d43d6ad8f6f953ae30d1a2693cac3", null ],
@@ -36,5 +37,6 @@ var classwpi_1_1_small_vector_impl =
     [ "resize", "classwpi_1_1_small_vector_impl.html#afcc2c09b896d1267702a0f99614281e0", null ],
     [ "resize", "classwpi_1_1_small_vector_impl.html#aba43f595f68cac4dfc8cb5e63f4fe454", null ],
     [ "resize_for_overwrite", "classwpi_1_1_small_vector_impl.html#a1d32f02ec452a84ce28ab3922576e0d1", null ],
-    [ "swap", "classwpi_1_1_small_vector_impl.html#a59e782498b4dadb2fe8d4d039a3d9fd9", null ]
+    [ "swap", "classwpi_1_1_small_vector_impl.html#a59e782498b4dadb2fe8d4d039a3d9fd9", null ],
+    [ "truncate", "classwpi_1_1_small_vector_impl.html#a7dadf9d2c87f2cdbf58bee57b53e43dd", null ]
 ];

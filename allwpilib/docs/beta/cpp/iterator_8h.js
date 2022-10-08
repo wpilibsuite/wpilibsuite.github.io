@@ -2,6 +2,7 @@ var iterator_8h =
 [
     [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__facade__base.html", "classwpi_1_1iterator__facade__base" ],
     [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >::ReferenceProxy", "classwpi_1_1iterator__facade__base_1_1_reference_proxy.html", "classwpi_1_1iterator__facade__base_1_1_reference_proxy" ],
+    [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >::PointerProxy", "classwpi_1_1iterator__facade__base_1_1_pointer_proxy.html", "classwpi_1_1iterator__facade__base_1_1_pointer_proxy" ],
     [ "wpi::iterator_adaptor_base< DerivedT, WrappedIteratorT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__adaptor__base.html", "classwpi_1_1iterator__adaptor__base" ],
     [ "wpi::pointee_iterator< WrappedIteratorT, T >", "structwpi_1_1pointee__iterator.html", "structwpi_1_1pointee__iterator" ],
     [ "wpi::pointer_iterator< WrappedIteratorT, T >", "classwpi_1_1pointer__iterator.html", "classwpi_1_1pointer__iterator" ],

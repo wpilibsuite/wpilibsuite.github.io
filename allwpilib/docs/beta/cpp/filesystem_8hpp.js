@@ -2,8 +2,11 @@ var filesystem_8hpp =
 [
     [ "ghc::filesystem::not_implemented_exception", "classghc_1_1filesystem_1_1not__implemented__exception.html", "classghc_1_1filesystem_1_1not__implemented__exception" ],
     [ "ghc::filesystem::path_helper_base< char_type >", "classghc_1_1filesystem_1_1path__helper__base.html", "classghc_1_1filesystem_1_1path__helper__base" ],
-    [ "ghc::filesystem::filesystem_error", "classghc_1_1filesystem_1_1filesystem__error.html", "classghc_1_1filesystem_1_1filesystem__error" ],
     [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", "classghc_1_1filesystem_1_1path" ],
+    [ "ghc::filesystem::path::_is_basic_string< T >", "structghc_1_1filesystem_1_1path_1_1__is__basic__string.html", null ],
+    [ "ghc::filesystem::path::_is_basic_string< std::basic_string< CharT, Traits, Alloc > >", "structghc_1_1filesystem_1_1path_1_1__is__basic__string_3_01std_1_1basic__string_3_01_char_t_00_01_traits_00_01_alloc_01_4_01_4.html", null ],
+    [ "ghc::filesystem::path::_is_basic_string< std::basic_string< CharT, std::char_traits< CharT >, std::allocator< CharT > > >", "structghc_1_1filesystem_1_1path_1_1__is__basic__string_3_01std_1_1basic__string_3_01_char_t_00_0454d093cd8125c5149a1fe74ea56d39e.html", null ],
+    [ "ghc::filesystem::filesystem_error", "classghc_1_1filesystem_1_1filesystem__error.html", "classghc_1_1filesystem_1_1filesystem__error" ],
     [ "ghc::filesystem::space_info", "structghc_1_1filesystem_1_1space__info.html", "structghc_1_1filesystem_1_1space__info" ],
     [ "ghc::filesystem::file_status", "classghc_1_1filesystem_1_1file__status.html", "classghc_1_1filesystem_1_1file__status" ],
     [ "ghc::filesystem::directory_entry", "classghc_1_1filesystem_1_1directory__entry.html", "classghc_1_1filesystem_1_1directory__entry" ],

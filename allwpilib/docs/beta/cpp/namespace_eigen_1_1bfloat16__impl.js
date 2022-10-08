@@ -14,6 +14,8 @@ var namespace_eigen_1_1bfloat16__impl =
     [ "expm1", "namespace_eigen_1_1bfloat16__impl.html#aaef14450e73b2f713cf9a30a15c163c6", null ],
     [ "float_to_bfloat16_rtne", "namespace_eigen_1_1bfloat16__impl.html#a05d10f6e596c5bb7996999ee0ac9ce51", null ],
     [ "float_to_bfloat16_rtne< false >", "namespace_eigen_1_1bfloat16__impl.html#ab8e3ba9e783185e66ce673ce348c21eb", null ],
+    [ "float_to_bfloat16_rtne< false >", "namespace_eigen_1_1bfloat16__impl.html#ab8e3ba9e783185e66ce673ce348c21eb", null ],
+    [ "float_to_bfloat16_rtne< true >", "namespace_eigen_1_1bfloat16__impl.html#ad564417257334c6bbf88e3c4ff7998d4", null ],
     [ "float_to_bfloat16_rtne< true >", "namespace_eigen_1_1bfloat16__impl.html#ad564417257334c6bbf88e3c4ff7998d4", null ],
     [ "floor", "namespace_eigen_1_1bfloat16__impl.html#a31640041d38523bf096fec26745e7d1d", null ],
     [ "fmax", "namespace_eigen_1_1bfloat16__impl.html#a9c807b906c22d46c81209d69635b33c2", null ],

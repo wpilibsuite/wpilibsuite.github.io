@@ -8,12 +8,8 @@ var dir_46f80a5b907f4a68e6277ec93a133082 =
     [ "NetworkTableInstance.inc", "_network_table_instance_8inc.html", "_network_table_instance_8inc" ],
     [ "NetworkTableType.h", "_network_table_type_8h.html", "_network_table_type_8h" ],
     [ "NetworkTableValue.h", "_network_table_value_8h.html", "_network_table_value_8h" ],
-    [ "NTSendable.h", "_n_t_sendable_8h.html", [
-      [ "nt::NTSendable", "classnt_1_1_n_t_sendable.html", "classnt_1_1_n_t_sendable" ]
-    ] ],
-    [ "NTSendableBuilder.h", "_n_t_sendable_builder_8h.html", [
-      [ "nt::NTSendableBuilder", "classnt_1_1_n_t_sendable_builder.html", "classnt_1_1_n_t_sendable_builder" ]
-    ] ],
+    [ "NTSendable.h", "_n_t_sendable_8h.html", "_n_t_sendable_8h" ],
+    [ "NTSendableBuilder.h", "_n_t_sendable_builder_8h.html", "_n_t_sendable_builder_8h" ],
     [ "RpcCall.h", "_rpc_call_8h.html", null ],
     [ "RpcCall.inc", "_rpc_call_8inc.html", "_rpc_call_8inc" ],
     [ "TableEntryListener.h", "_table_entry_listener_8h.html", "_table_entry_listener_8h" ],

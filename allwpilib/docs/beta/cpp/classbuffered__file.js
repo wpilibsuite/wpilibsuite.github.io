@@ -1,13 +1,13 @@
 var classbuffered__file =
 [
     [ "buffered_file", "classbuffered__file.html#ac1b22b9f97483be7d80bdbd2004071a2", null ],
-    [ "buffered_file", "classbuffered__file.html#ab89aef2bb026cd34b3e8596fe8be52eb", null ],
-    [ "~buffered_file", "classbuffered__file.html#ac39deccbccad32bb79d77471cc76b480", null ],
-    [ "buffered_file", "classbuffered__file.html#a67baacfe70407f0006450c2084ea0b63", null ],
+    [ "buffered_file", "classbuffered__file.html#a8059859b738bd114d3be4dca5412613a", null ],
+    [ "~buffered_file", "classbuffered__file.html#a474cce99ed99bab9c9b76dbd172ac2af", null ],
+    [ "buffered_file", "classbuffered__file.html#a0da0bafb645c7c84540b1539c0ea740a", null ],
     [ "buffered_file", "classbuffered__file.html#a880e91bb129936d5e35f00fde66349e5", null ],
     [ "close", "classbuffered__file.html#a2756c39b06594666c5a8712873d7c878", null ],
-    [ "fileno", "classbuffered__file.html#ab86229c986f9598cf523ce2a026b750c", null ],
-    [ "get", "classbuffered__file.html#a556c4dca63b86513e38dfe3032366f09", null ],
+    [ "descriptor", "classbuffered__file.html#a3e536ce8df63a391e453b19f03a4151b", null ],
+    [ "get", "classbuffered__file.html#a75d904e53e21497d25481778fa735e62", null ],
     [ "operator=", "classbuffered__file.html#af2838e13a04794462fc84baaf93a1b58", null ],
     [ "operator=", "classbuffered__file.html#a218b92e404c0d1261c0bce0eff5e1c80", null ],
     [ "print", "classbuffered__file.html#ad97c4521f94be51a5b30064803e2bef1", null ],

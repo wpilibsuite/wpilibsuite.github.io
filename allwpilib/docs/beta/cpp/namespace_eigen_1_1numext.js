@@ -2,6 +2,14 @@ var namespace_eigen_1_1numext =
 [
     [ "equal_to", "struct_eigen_1_1numext_1_1equal__to.html", "struct_eigen_1_1numext_1_1equal__to" ],
     [ "not_equal_to", "struct_eigen_1_1numext_1_1not__equal__to.html", "struct_eigen_1_1numext_1_1not__equal__to" ],
+    [ "int16_t", "namespace_eigen_1_1numext.html#a05475d0d7f372e4a858d6344e63c148e", null ],
+    [ "int32_t", "namespace_eigen_1_1numext.html#a475def88ce2111c2e4a4d3a3976b7c19", null ],
+    [ "int64_t", "namespace_eigen_1_1numext.html#a518baced025fde474407c95f9a84d6e1", null ],
+    [ "int8_t", "namespace_eigen_1_1numext.html#a4ee778e5a09bde3e01896411e6273058", null ],
+    [ "uint16_t", "namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f", null ],
+    [ "uint32_t", "namespace_eigen_1_1numext.html#a1fe47e4c63c51696c544a7f24f33b05c", null ],
+    [ "uint64_t", "namespace_eigen_1_1numext.html#a0259c31cd34e096be5056e9d88ae0500", null ],
+    [ "uint8_t", "namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274", null ],
     [ "abs", "namespace_eigen_1_1numext.html#ac09cd9261a50a46dd4937868020c7c45", null ],
     [ "abs", "namespace_eigen_1_1numext.html#ade382aafbf0886b96f1624e2261a9330", null ],
     [ "abs2", "namespace_eigen_1_1numext.html#ad59216129a430099e97b4c4b1e2f2984", null ],
@@ -66,13 +74,5 @@ var namespace_eigen_1_1numext =
     [ "swap", "namespace_eigen_1_1numext.html#a3b617b6220683f86218071c40c41d381", null ],
     [ "tan", "namespace_eigen_1_1numext.html#aa4be6feea9e2540d3e3e1f411df2a5e6", null ],
     [ "tanh", "namespace_eigen_1_1numext.html#a5eb0ac5b9cebd93e988b9514952baf01", null ],
-    [ "int16_t", "namespace_eigen_1_1numext.html#af0dc7d2cc0233802a4135efe2aac55d3", null ],
-    [ "int32_t", "namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe", null ],
-    [ "int64_t", "namespace_eigen_1_1numext.html#a26035668345422b5f30be2124b0b6f6e", null ],
-    [ "int8_t", "namespace_eigen_1_1numext.html#ad65e7154d719b649b9d6018be24e5265", null ],
-    [ "uint16_t", "namespace_eigen_1_1numext.html#a8b2dc01f744a47c608f4eddb4ca41e5e", null ],
-    [ "uint32_t", "namespace_eigen_1_1numext.html#af6a076c0f63ad22b8620d4de6fc6f632", null ],
-    [ "uint64_t", "namespace_eigen_1_1numext.html#a637f20cd528b31ef3ce8d1ef803ebbde", null ],
-    [ "uint8_t", "namespace_eigen_1_1numext.html#aadfb7303ce6c1a8f0bdf86cb2cbad6be", null ],
     [ "y", "namespace_eigen_1_1numext.html#a36862639fe0e8879b650a1111db1eec6", null ]
 ];

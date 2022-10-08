@@ -20,6 +20,7 @@ var classwpi_1_1raw__ostream =
     [ "raw_ostream", "classwpi_1_1raw__ostream.html#a43a1c461a49e3baf15ffec06d4210d93", null ],
     [ "~raw_ostream", "classwpi_1_1raw__ostream.html#aeaa8016973e5e7e97b89c63e2e10cf75", null ],
     [ "changeColor", "classwpi_1_1raw__ostream.html#ae838a9a8e7aaa17d56329af887231131", null ],
+    [ "colors_enabled", "classwpi_1_1raw__ostream.html#a3740b3b0e1ca2d5835fddc6c7f07589c", null ],
     [ "enable_colors", "classwpi_1_1raw__ostream.html#a1bec2e621488ef27afe5fd2145ca1adb", null ],
     [ "flush", "classwpi_1_1raw__ostream.html#a209f3bcca8657748af3db4bab3ca6f53", null ],
     [ "get_kind", "classwpi_1_1raw__ostream.html#a0dc3fe1570f5434ae5d0bf6147c6c4b0", null ],

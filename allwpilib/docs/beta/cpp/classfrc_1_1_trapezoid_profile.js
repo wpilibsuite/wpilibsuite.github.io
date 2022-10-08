@@ -7,7 +7,7 @@ var classfrc_1_1_trapezoid_profile =
     [ "Distance_t", "classfrc_1_1_trapezoid_profile.html#a87056359e1f4ed9bf3136338861f3e49", null ],
     [ "Velocity", "classfrc_1_1_trapezoid_profile.html#a2e377ae87db0b7b214e5d6495504d54d", null ],
     [ "Velocity_t", "classfrc_1_1_trapezoid_profile.html#af1572945aaa361827eacd389925eff0b", null ],
-    [ "TrapezoidProfile", "classfrc_1_1_trapezoid_profile.html#a961d1d386882d1d99c9407147d47146d", null ],
+    [ "TrapezoidProfile", "classfrc_1_1_trapezoid_profile.html#a55e739822734694093428cc4019ace03", null ],
     [ "TrapezoidProfile", "classfrc_1_1_trapezoid_profile.html#a46219e2ac843cc76b4149a76ffeb8d00", null ],
     [ "TrapezoidProfile", "classfrc_1_1_trapezoid_profile.html#afe5f8d6f70b3bbe9d2d871fbe1e85495", null ],
     [ "Calculate", "classfrc_1_1_trapezoid_profile.html#a4dbc029bf12b177b39ab6c9f5edcbc92", null ],

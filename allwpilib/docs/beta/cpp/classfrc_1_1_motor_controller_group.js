@@ -10,5 +10,6 @@ var classfrc_1_1_motor_controller_group =
     [ "operator=", "classfrc_1_1_motor_controller_group.html#a293aec96feb0a46d3903935805471578", null ],
     [ "Set", "classfrc_1_1_motor_controller_group.html#a87d2d50dbdebbc4ed2da85d20d7a7607", null ],
     [ "SetInverted", "classfrc_1_1_motor_controller_group.html#afa117b6a610daf923e7ae77eb2e0e19e", null ],
+    [ "SetVoltage", "classfrc_1_1_motor_controller_group.html#a3edbf8deba7d9e7132f0a76023a12b08", null ],
     [ "StopMotor", "classfrc_1_1_motor_controller_group.html#a1018f6fa8af739eb2527ab5edbdca8b2", null ]
 ];

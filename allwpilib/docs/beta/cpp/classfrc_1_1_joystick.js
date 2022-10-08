@@ -39,6 +39,8 @@ var classfrc_1_1_joystick =
     [ "SetXChannel", "classfrc_1_1_joystick.html#ad4ef337272a1e7de7ff13959e7fb4c55", null ],
     [ "SetYChannel", "classfrc_1_1_joystick.html#a93df8f506da8175b8b26070d063655ba", null ],
     [ "SetZChannel", "classfrc_1_1_joystick.html#ab9e402a6429034621c81584deaa9dc8e", null ],
+    [ "Top", "classfrc_1_1_joystick.html#a4c005a645bd8df10d6a701ccf6c00d7c", null ],
+    [ "Trigger", "classfrc_1_1_joystick.html#ab2975fbfb7a27cf9082056aebbc163c4", null ],
     [ "kDefaultThrottleChannel", "classfrc_1_1_joystick.html#a33fc7ea682d18eb78956f2e733c99b34", null ],
     [ "kDefaultTwistChannel", "classfrc_1_1_joystick.html#a8da655d8c056e00ef787373e22fc707e", null ],
     [ "kDefaultXChannel", "classfrc_1_1_joystick.html#a6a2052cc04f070d7ebc933c1895751e8", null ],

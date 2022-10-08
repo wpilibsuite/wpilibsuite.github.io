@@ -56,6 +56,7 @@ var json_8h =
     [ "NLOHMANN_JSON_VERSION_MINOR", "json_8h.html#ab5ca1e164894d78d3276d2e5fe58c5e3", null ],
     [ "NLOHMANN_JSON_VERSION_PATCH", "json_8h.html#a307e0238ebc35e99ea45c68823eb83eb", null ],
     [ "enable_if_t", "json_8h.html#afe0837f80c2797e20e43f5cf9d1f5174", null ],
+    [ "uncvref_t", "json_8h.html#ad7989691524c4283ec6ef011a57486f4", null ],
     [ "value_t", "json_8h.html#a4f2a85d1c51cbd4c58d990499f793788", [
       [ "null", "json_8h.html#a4f2a85d1c51cbd4c58d990499f793788a37a6259cc0c1dae299a7866489dff0bd", null ],
       [ "object", "json_8h.html#a4f2a85d1c51cbd4c58d990499f793788aa8cfde6331bd59eb2ac96f8911c4b666", null ],

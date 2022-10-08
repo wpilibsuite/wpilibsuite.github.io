@@ -20,6 +20,7 @@ var dir_03b7d37b9dc08ca478f4c25141f731ae =
     [ "PowerDistributionData.h", "_power_distribution_data_8h.html", "_power_distribution_data_8h" ],
     [ "PWMData.h", "_p_w_m_data_8h.html", "_p_w_m_data_8h" ],
     [ "RelayData.h", "_relay_data_8h.html", "_relay_data_8h" ],
+    [ "Reset.h", "_reset_8h.html", "_reset_8h" ],
     [ "REVPHData.h", "_r_e_v_p_h_data_8h.html", "_r_e_v_p_h_data_8h" ],
     [ "RoboRioData.h", "_robo_rio_data_8h.html", "_robo_rio_data_8h" ],
     [ "SimCallbackRegistry.h", "_sim_callback_registry_8h.html", "_sim_callback_registry_8h" ],
