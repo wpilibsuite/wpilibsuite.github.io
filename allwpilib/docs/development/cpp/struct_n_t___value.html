@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -107,38 +107,63 @@ $(document).ready(function(){initNavTree('struct_n_t___value.html',''); initResi
 Public Attributes</h2></td></tr>
 <tr class="memitem:a068c2a61fb025e5502658f99a189c842"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a">NT_Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_t___value.html#a068c2a61fb025e5502658f99a189c842">type</a></td></tr>
 <tr class="separator:a068c2a61fb025e5502658f99a189c842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf83749e6dcf2eda3867a904e8ac8c80"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_t___value.html#abf83749e6dcf2eda3867a904e8ac8c80">last_change</a></td></tr>
-<tr class="separator:abf83749e6dcf2eda3867a904e8ac8c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9acff4a2b99ad8443a63ced7104c149"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_t___value.html#aa9acff4a2b99ad8443a63ced7104c149">last_change</a></td></tr>
+<tr class="separator:aa9acff4a2b99ad8443a63ced7104c149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf9b97c6a012698f72b66e80ad004dd"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_t___value.html#aaaf9b97c6a012698f72b66e80ad004dd">server_time</a></td></tr>
+<tr class="separator:aaaf9b97c6a012698f72b66e80ad004dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da99e6741f1f69fd4872604bd9ed87f"><td class="memItemLeft" >union {</td></tr>
 <tr class="memitem:a7bf02e37f6a1cd76879edd00a6d02d45"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a>&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ad57d2f0aaa820d67e013218183b9a329">v_boolean</a></td></tr>
 <tr class="separator:a7bf02e37f6a1cd76879edd00a6d02d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d1710eb2a4513988405b2219ef01be"><td class="memItemLeft" >&#160;&#160;&#160;int64_t&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#af842036c11bd467941c269aeee08e20e">v_int</a></td></tr>
+<tr class="separator:ae9d1710eb2a4513988405b2219ef01be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f83bf683918e365d9792842350d4ba0"><td class="memItemLeft" >&#160;&#160;&#160;float&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a5721c41164d27484cbbedc8a932b7754">v_float</a></td></tr>
+<tr class="separator:a3f83bf683918e365d9792842350d4ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198823e44014e4a56d7e8dfeed5b40fa"><td class="memItemLeft" >&#160;&#160;&#160;double&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ab4fee8c0729e8886dac8bb6a2ba13854">v_double</a></td></tr>
 <tr class="separator:a198823e44014e4a56d7e8dfeed5b40fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d11fefea6eccfba4108bef60c59bd7"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="struct_n_t___string.html">NT_String</a>&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a640ba6c5b32013f1a5e09597e4b77470">v_string</a></td></tr>
 <tr class="separator:ab6d11fefea6eccfba4108bef60c59bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9817cddebcf1a9adfce4cbb2c31b9f4b"><td class="memItemLeft" >&#160;&#160;&#160;struct <a class="el" href="struct_n_t___string.html">NT_String</a>&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a71b27798d67c53e6635d7c38997e3d31">v_raw</a></td></tr>
-<tr class="separator:a9817cddebcf1a9adfce4cbb2c31b9f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae94530067d273373616f92c3a1eac344"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:acb068903ca5bc853e294a42a41380ef4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#aec85a7da81866a1e38efcdcfa33249f7">arr</a></td></tr>
-<tr class="separator:acb068903ca5bc853e294a42a41380ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3596be5c0e8477fd45f2502957c60ae0"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a577985751c8d5a212d4eece674fb95cf"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;uint8_t *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ab84cd8c693047f1d6abe100ec059d6d7">data</a></td></tr>
+<tr class="separator:a577985751c8d5a212d4eece674fb95cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a485d12d4e35958187fdce1bfc3c6f73e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ae8a4e621562c50054b6759e43323dc7f">size</a></td></tr>
 <tr class="separator:a485d12d4e35958187fdce1bfc3c6f73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae94530067d273373616f92c3a1eac344"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a1232e7d342a6a37289348a46ebea7d16">arr_boolean</a></td></tr>
-<tr class="separator:ae94530067d273373616f92c3a1eac344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab32ba221e7766e16436a1784f9af0d"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:aed566f43513e2ec8b4fb79fb0b6929c3"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;double *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a585c8bbb8b307eaf70d47e91285b60e8">arr</a></td></tr>
-<tr class="separator:aed566f43513e2ec8b4fb79fb0b6929c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3596be5c0e8477fd45f2502957c60ae0"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a8542ab05a325eb281a08dade790582fc">v_raw</a></td></tr>
+<tr class="separator:a3596be5c0e8477fd45f2502957c60ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0121c35a0e42091bfc58e97c26942ea4"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a4ce72e35f632e872a5146dcb1cbf08f0"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#aec85a7da81866a1e38efcdcfa33249f7">arr</a></td></tr>
+<tr class="separator:a4ce72e35f632e872a5146dcb1cbf08f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01c736eff403b766d274ed189eb7fc53"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ae8a4e621562c50054b6759e43323dc7f">size</a></td></tr>
 <tr class="separator:a01c736eff403b766d274ed189eb7fc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abab32ba221e7766e16436a1784f9af0d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a4cd645b794409d5ee662049c265811e6">arr_double</a></td></tr>
-<tr class="separator:abab32ba221e7766e16436a1784f9af0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae242c2d141a80d5894b38797c68c18"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ac36cb748dfe311d349bdd5a2fb85d016"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="struct_n_t___string.html">NT_String</a> *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a478ad5dcb928252836bfea3489751991">arr</a></td></tr>
-<tr class="separator:ac36cb748dfe311d349bdd5a2fb85d016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0121c35a0e42091bfc58e97c26942ea4"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#aad78fec1b78de5cd7494ab482601f08e">arr_boolean</a></td></tr>
+<tr class="separator:a0121c35a0e42091bfc58e97c26942ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3570725deb8cc745928d3db4e23bdbbc"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a5515c53497e8ec90d14a82fccdece50b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;double *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a585c8bbb8b307eaf70d47e91285b60e8">arr</a></td></tr>
+<tr class="separator:a5515c53497e8ec90d14a82fccdece50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a979f430823269d6fc2cc7645434c4878"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ae8a4e621562c50054b6759e43323dc7f">size</a></td></tr>
 <tr class="separator:a979f430823269d6fc2cc7645434c4878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae242c2d141a80d5894b38797c68c18"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#aa87a3fdd2e63d6634d528803470e6d0b">arr_string</a></td></tr>
-<tr class="separator:aeae242c2d141a80d5894b38797c68c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3570725deb8cc745928d3db4e23bdbbc"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a4774dfb1875d5e5d6946cd90dc4cc506">arr_double</a></td></tr>
+<tr class="separator:a3570725deb8cc745928d3db4e23bdbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315f41f42e9b3840f09c7b3eb848e07c"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a9cbe6a170c2d2a48f1dc3c2c68ae051a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;float *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a0c6de56187daf24d974c6282fb2564e9">arr</a></td></tr>
+<tr class="separator:a9cbe6a170c2d2a48f1dc3c2c68ae051a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49038ae816b06e31b013fe0e4d42e02c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ae8a4e621562c50054b6759e43323dc7f">size</a></td></tr>
+<tr class="separator:a49038ae816b06e31b013fe0e4d42e02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315f41f42e9b3840f09c7b3eb848e07c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a588c773c14981b35877efbadad13fc2a">arr_float</a></td></tr>
+<tr class="separator:a315f41f42e9b3840f09c7b3eb848e07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2fd12c62f6b5df20dcf2a9833c00d2"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:ae8044c6d386b331f87ec1d90cddba57e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;int64_t *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#af9bab2b8a8a169a76ff52f031c2951c7">arr</a></td></tr>
+<tr class="separator:ae8044c6d386b331f87ec1d90cddba57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab335b3dc488c1092fbc3af64c4345c9e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ae8a4e621562c50054b6759e43323dc7f">size</a></td></tr>
+<tr class="separator:ab335b3dc488c1092fbc3af64c4345c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2fd12c62f6b5df20dcf2a9833c00d2"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a3a36edf57a522824367a77abdb5e29bf">arr_int</a></td></tr>
+<tr class="separator:a1b2fd12c62f6b5df20dcf2a9833c00d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da7e0110e280911962422a9cd89b1a8"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:aba031e2f0b639fbce8f69cfcb26f922b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;struct <a class="el" href="struct_n_t___string.html">NT_String</a> *&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a478ad5dcb928252836bfea3489751991">arr</a></td></tr>
+<tr class="separator:aba031e2f0b639fbce8f69cfcb26f922b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada23538530640725457c588edb1680fb"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#ae8a4e621562c50054b6759e43323dc7f">size</a></td></tr>
+<tr class="separator:ada23538530640725457c588edb1680fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da7e0110e280911962422a9cd89b1a8"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="struct_n_t___value.html#a1b1eda94b461390f48aa318dcb51d9ea">arr_string</a></td></tr>
+<tr class="separator:a9da7e0110e280911962422a9cd89b1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da99e6741f1f69fd4872604bd9ed87f"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_n_t___value.html#a2da99e6741f1f69fd4872604bd9ed87f">data</a></td></tr>
 <tr class="separator:a2da99e6741f1f69fd4872604bd9ed87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -147,7 +172,7 @@ Public Attributes</h2></td></tr>
 <p >Note this is a typed union. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aec85a7da81866a1e38efcdcfa33249f7" name="aec85a7da81866a1e38efcdcfa33249f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec85a7da81866a1e38efcdcfa33249f7">&#9670;&nbsp;</a></span>arr <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aec85a7da81866a1e38efcdcfa33249f7">&#9670;&nbsp;</a></span>arr <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +186,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a585c8bbb8b307eaf70d47e91285b60e8" name="a585c8bbb8b307eaf70d47e91285b60e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a585c8bbb8b307eaf70d47e91285b60e8">&#9670;&nbsp;</a></span>arr <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a585c8bbb8b307eaf70d47e91285b60e8">&#9670;&nbsp;</a></span>arr <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,8 +199,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0c6de56187daf24d974c6282fb2564e9" name="a0c6de56187daf24d974c6282fb2564e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c6de56187daf24d974c6282fb2564e9">&#9670;&nbsp;</a></span>arr <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* NT_Value::arr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9bab2b8a8a169a76ff52f031c2951c7" name="af9bab2b8a8a169a76ff52f031c2951c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9bab2b8a8a169a76ff52f031c2951c7">&#9670;&nbsp;</a></span>arr <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t* NT_Value::arr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a478ad5dcb928252836bfea3489751991" name="a478ad5dcb928252836bfea3489751991"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a478ad5dcb928252836bfea3489751991">&#9670;&nbsp;</a></span>arr <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a478ad5dcb928252836bfea3489751991">&#9670;&nbsp;</a></span>arr <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,8 +241,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1232e7d342a6a37289348a46ebea7d16" name="a1232e7d342a6a37289348a46ebea7d16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1232e7d342a6a37289348a46ebea7d16">&#9670;&nbsp;</a></span></h2>
+<a id="aad78fec1b78de5cd7494ab482601f08e" name="aad78fec1b78de5cd7494ab482601f08e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad78fec1b78de5cd7494ab482601f08e">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,8 +255,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4cd645b794409d5ee662049c265811e6" name="a4cd645b794409d5ee662049c265811e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd645b794409d5ee662049c265811e6">&#9670;&nbsp;</a></span></h2>
+<a id="a4774dfb1875d5e5d6946cd90dc4cc506" name="a4774dfb1875d5e5d6946cd90dc4cc506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4774dfb1875d5e5d6946cd90dc4cc506">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,8 +269,36 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa87a3fdd2e63d6634d528803470e6d0b" name="aa87a3fdd2e63d6634d528803470e6d0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa87a3fdd2e63d6634d528803470e6d0b">&#9670;&nbsp;</a></span></h2>
+<a id="a588c773c14981b35877efbadad13fc2a" name="a588c773c14981b35877efbadad13fc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a588c773c14981b35877efbadad13fc2a">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  NT_Value::arr_float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a36edf57a522824367a77abdb5e29bf" name="a3a36edf57a522824367a77abdb5e29bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a36edf57a522824367a77abdb5e29bf">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  NT_Value::arr_int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b1eda94b461390f48aa318dcb51d9ea" name="a1b1eda94b461390f48aa318dcb51d9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1eda94b461390f48aa318dcb51d9ea">&#9670;&nbsp;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,8 +311,22 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab84cd8c693047f1d6abe100ec059d6d7" name="ab84cd8c693047f1d6abe100ec059d6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84cd8c693047f1d6abe100ec059d6d7">&#9670;&nbsp;</a></span>data <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t* NT_Value::data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2da99e6741f1f69fd4872604bd9ed87f" name="a2da99e6741f1f69fd4872604bd9ed87f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2da99e6741f1f69fd4872604bd9ed87f">&#9670;&nbsp;</a></span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da99e6741f1f69fd4872604bd9ed87f">&#9670;&nbsp;</a></span> <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,14 +339,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abf83749e6dcf2eda3867a904e8ac8c80" name="abf83749e6dcf2eda3867a904e8ac8c80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf83749e6dcf2eda3867a904e8ac8c80">&#9670;&nbsp;</a></span>last_change</h2>
+<a id="aa9acff4a2b99ad8443a63ced7104c149" name="aa9acff4a2b99ad8443a63ced7104c149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9acff4a2b99ad8443a63ced7104c149">&#9670;&nbsp;</a></span>last_change</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t NT_Value::last_change</td>
+          <td class="memname">int64_t NT_Value::last_change</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaaf9b97c6a012698f72b66e80ad004dd" name="aaaf9b97c6a012698f72b66e80ad004dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf9b97c6a012698f72b66e80ad004dd">&#9670;&nbsp;</a></span>server_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t NT_Value::server_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -314,14 +423,42 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a71b27798d67c53e6635d7c38997e3d31" name="a71b27798d67c53e6635d7c38997e3d31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71b27798d67c53e6635d7c38997e3d31">&#9670;&nbsp;</a></span>v_raw</h2>
+<a id="a5721c41164d27484cbbedc8a932b7754" name="a5721c41164d27484cbbedc8a932b7754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5721c41164d27484cbbedc8a932b7754">&#9670;&nbsp;</a></span>v_float</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="struct_n_t___string.html">NT_String</a> NT_Value::v_raw</td>
+          <td class="memname">float NT_Value::v_float</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af842036c11bd467941c269aeee08e20e" name="af842036c11bd467941c269aeee08e20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af842036c11bd467941c269aeee08e20e">&#9670;&nbsp;</a></span>v_int</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t NT_Value::v_int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8542ab05a325eb281a08dade790582fc" name="a8542ab05a325eb281a08dade790582fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8542ab05a325eb281a08dade790582fc">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  NT_Value::v_raw</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -351,7 +488,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_n_t___value.html">NT_Value</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -119,6 +119,7 @@ var namespacefrc =
     [ "MotorController", "classfrc_1_1_motor_controller.html", "classfrc_1_1_motor_controller" ],
     [ "MotorControllerGroup", "classfrc_1_1_motor_controller_group.html", "classfrc_1_1_motor_controller_group" ],
     [ "MotorSafety", "classfrc_1_1_motor_safety.html", "classfrc_1_1_motor_safety" ],
+    [ "NetworkBooleanEvent", "classfrc_1_1_network_boolean_event.html", "classfrc_1_1_network_boolean_event" ],
     [ "NidecBrushless", "classfrc_1_1_nidec_brushless.html", "classfrc_1_1_nidec_brushless" ],
     [ "Notifier", "classfrc_1_1_notifier.html", "classfrc_1_1_notifier" ],
     [ "PneumaticHub", "classfrc_1_1_pneumatic_hub.html", "classfrc_1_1_pneumatic_hub" ],

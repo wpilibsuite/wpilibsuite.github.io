@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('_mechanism_root2d_8h_source.html','');
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_network_table_entry_8h.html">networktables/NetworkTableEntry.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_double_topic_8h.html">networktables/DoubleTopic.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_mechanism_object2d_8h.html">MechanismObject2d.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
@@ -144,20 +144,20 @@ $(document).ready(function(){initNavTree('_mechanism_root2d_8h_source.html','');
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">inline</span> <span class="keywordtype">void</span> Flush();</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">double</span> m_x;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">double</span> m_y;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a> m_xEntry;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a> m_yEntry;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="classnt_1_1_double_publisher.html">nt::DoublePublisher</a> m_xPub;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="classnt_1_1_double_publisher.html">nt::DoublePublisher</a> m_yPub;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_double_topic_8h_html"><div class="ttname"><a href="_double_topic_8h.html">DoubleTopic.h</a></div></div>
 <div class="ttc" id="a_mechanism_object2d_8h_html"><div class="ttname"><a href="_mechanism_object2d_8h.html">MechanismObject2d.h</a></div></div>
-<div class="ttc" id="a_network_table_entry_8h_html"><div class="ttname"><a href="_network_table_entry_8h.html">NetworkTableEntry.h</a></div></div>
-<div class="ttc" id="aclassfrc_1_1_mechanism2d_html"><div class="ttname"><a href="classfrc_1_1_mechanism2d.html">frc::Mechanism2d</a></div><div class="ttdoc">Visual 2D representation of arms, elevators, and general mechanisms through a node-based API.</div><div class="ttdef"><b>Definition:</b> Mechanism2d.h:41</div></div>
+<div class="ttc" id="aclassfrc_1_1_mechanism2d_html"><div class="ttname"><a href="classfrc_1_1_mechanism2d.html">frc::Mechanism2d</a></div><div class="ttdoc">Visual 2D representation of arms, elevators, and general mechanisms through a node-based API.</div><div class="ttdef"><b>Definition:</b> Mechanism2d.h:43</div></div>
 <div class="ttc" id="aclassfrc_1_1_mechanism_object2d_html"><div class="ttname"><a href="classfrc_1_1_mechanism_object2d.html">frc::MechanismObject2d</a></div><div class="ttdoc">Common base class for all Mechanism2d node types.</div><div class="ttdef"><b>Definition:</b> MechanismObject2d.h:31</div></div>
 <div class="ttc" id="aclassfrc_1_1_mechanism_object2d_html_a354a97b9e66b6ed690f2844ea99fb076"><div class="ttname"><a href="classfrc_1_1_mechanism_object2d.html#a354a97b9e66b6ed690f2844ea99fb076">frc::MechanismObject2d::Append</a></div><div class="ttdeci">T * Append(std::string_view name, Args &amp;&amp;... args)</div><div class="ttdoc">Append a Mechanism object that is based on this one.</div><div class="ttdef"><b>Definition:</b> MechanismObject2d.h:68</div></div>
 <div class="ttc" id="aclassfrc_1_1_mechanism_object2d_html_a3fa131845cfc3de7d4bff881d91a4149"><div class="ttname"><a href="classfrc_1_1_mechanism_object2d.html#a3fa131845cfc3de7d4bff881d91a4149">frc::MechanismObject2d::GetName</a></div><div class="ttdeci">const std::string &amp; GetName() const</div><div class="ttdoc">Retrieve the object's name.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mechanism_root2d_html"><div class="ttname"><a href="classfrc_1_1_mechanism_root2d.html">frc::MechanismRoot2d</a></div><div class="ttdoc">Root Mechanism2d node.</div><div class="ttdef"><b>Definition:</b> MechanismRoot2d.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1_mechanism_root2d_html_a29d03ee138b423a7add68ad387ea130f"><div class="ttname"><a href="classfrc_1_1_mechanism_root2d.html#a29d03ee138b423a7add68ad387ea130f">frc::MechanismRoot2d::MechanismRoot2d</a></div><div class="ttdeci">MechanismRoot2d(std::string_view name, double x, double y, const private_init &amp;)</div></div>
 <div class="ttc" id="aclassfrc_1_1_mechanism_root2d_html_a7416fee1be419b5ff33e8157954e64d0"><div class="ttname"><a href="classfrc_1_1_mechanism_root2d.html#a7416fee1be419b5ff33e8157954e64d0">frc::MechanismRoot2d::SetPosition</a></div><div class="ttdeci">void SetPosition(double x, double y)</div><div class="ttdoc">Set the root's position.</div></div>
-<div class="ttc" id="aclassnt_1_1_network_table_entry_html"><div class="ttname"><a href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a></div><div class="ttdoc">NetworkTables Entry.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.h:32</div></div>
+<div class="ttc" id="aclassnt_1_1_double_publisher_html"><div class="ttname"><a href="classnt_1_1_double_publisher.html">nt::DoublePublisher</a></div><div class="ttdoc">NetworkTables Double publisher.</div><div class="ttdef"><b>Definition:</b> DoubleTopic.h:111</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:520</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('_mechanism_root2d_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><a class="el" href="_mechanism_root2d_8h.html">MechanismRoot2d.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

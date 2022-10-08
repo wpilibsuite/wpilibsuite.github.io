@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('_synchronization_8h_source.html',''); 
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> kHandleTypeSemaphore = 2;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> kHandleTypeCSBase = 3;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> kHandleTypeNTBase = 16;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> kHandleTypeHALBase = 32;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> kHandleTypeUserBase = 64;<span class="comment"></span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> kHandleTypeHALBase = 48;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> kHandleTypeUserBase = 80;<span class="comment"></span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">/** @} */</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">/**</span></div>
@@ -462,7 +462,7 @@ $(document).ready(function(){initNavTree('_synchronization_8h_source.html',''); 
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="comment">   * @return True on successful release, false on failure (e.g. release count</span></div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment">   *         would exceed maximum value, or handle invalid)</span></div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <span class="keywordtype">bool</span> Release(<span class="keywordtype">int</span> releaseCount = 1, <span class="keywordtype">int</span>* prevCount = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="group__ntcore__topic__func.html#ga1c51e7981010f19ab58e41496b771edb">Release</a>(<span class="keywordtype">int</span> releaseCount = 1, <span class="keywordtype">int</span>* prevCount = <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordflow">return</span> ReleaseSemaphore(m_handle, releaseCount, prevCount);</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  }</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
@@ -725,6 +725,7 @@ $(document).ready(function(){initNavTree('_synchronization_8h_source.html',''); 
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html_aa8904b247558813df6c35011f5d5709b"><div class="ttname"><a href="classwpi_1_1span.html#aa8904b247558813df6c35011f5d5709b">wpi::span::size</a></div><div class="ttdeci">constexpr size_type size() const noexcept</div><div class="ttdef"><b>Definition:</b> span.h:291</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html_aedeb2649374eeeab8a155d7699c85c15"><div class="ttname"><a href="classwpi_1_1span.html#aedeb2649374eeeab8a155d7699c85c15">wpi::span::begin</a></div><div class="ttdeci">constexpr iterator begin() const noexcept</div><div class="ttdef"><b>Definition:</b> span.h:325</div></div>
+<div class="ttc" id="agroup__ntcore__topic__func_html_ga1c51e7981010f19ab58e41496b771edb"><div class="ttname"><a href="group__ntcore__topic__func.html#ga1c51e7981010f19ab58e41496b771edb">nt::Release</a></div><div class="ttdeci">void Release(NT_Handle pubsubentry)</div><div class="ttdoc">Stops entry/subscriber/publisher.</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -733,7 +734,7 @@ $(document).ready(function(){initNavTree('_synchronization_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_synchronization_8h.html">Synchronization.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

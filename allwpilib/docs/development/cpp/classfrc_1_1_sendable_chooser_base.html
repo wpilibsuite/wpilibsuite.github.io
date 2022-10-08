@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -158,8 +158,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a945ac9e2f78c0de07e651a654e7d6957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa6456025c09fd47c554cb9350d751f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser_base.html#aaa6456025c09fd47c554cb9350d751f7">m_haveSelected</a> = false</td></tr>
 <tr class="separator:aaa6456025c09fd47c554cb9350d751f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d169f796c195543742b06cf88806944"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_vector.html">wpi::SmallVector</a>&lt; <a class="el" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser_base.html#a2d169f796c195543742b06cf88806944">m_activeEntries</a></td></tr>
-<tr class="separator:a2d169f796c195543742b06cf88806944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad262a50c47325b2aade283ffd9ac262c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_vector.html">wpi::SmallVector</a>&lt; <a class="el" href="classnt_1_1_integer_publisher.html">nt::IntegerPublisher</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser_base.html#ad262a50c47325b2aade283ffd9ac262c">m_instancePubs</a></td></tr>
+<tr class="separator:ad262a50c47325b2aade283ffd9ac262c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb431d7dadd4115e66fb797e1bfa8a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_vector.html">wpi::SmallVector</a>&lt; <a class="el" href="classnt_1_1_string_publisher.html">nt::StringPublisher</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser_base.html#a7bb431d7dadd4115e66fb797e1bfa8a6">m_activePubs</a></td></tr>
+<tr class="separator:a7bb431d7dadd4115e66fb797e1bfa8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc63e2b8a93c0e1d757ab6f6ef2c90f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser_base.html#a4bc63e2b8a93c0e1d757ab6f6ef2c90f">m_mutex</a></td></tr>
 <tr class="separator:a4bc63e2b8a93c0e1d757ab6f6ef2c90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6069788f8bd9a6c9837496123313ff6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_sendable_chooser_base.html#ab6069788f8bd9a6c9837496123313ff6">m_instance</a></td></tr>
@@ -382,8 +384,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d169f796c195543742b06cf88806944" name="a2d169f796c195543742b06cf88806944"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d169f796c195543742b06cf88806944">&#9670;&nbsp;</a></span>m_activeEntries</h2>
+<a id="a7bb431d7dadd4115e66fb797e1bfa8a6" name="a7bb431d7dadd4115e66fb797e1bfa8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb431d7dadd4115e66fb797e1bfa8a6">&#9670;&nbsp;</a></span>m_activePubs</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +394,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1_small_vector.html">wpi::SmallVector</a>&lt;<a class="el" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a>, 2&gt; frc::SendableChooserBase::m_activeEntries</td>
+          <td class="memname"><a class="el" href="classwpi_1_1_small_vector.html">wpi::SmallVector</a>&lt;<a class="el" href="classnt_1_1_string_publisher.html">nt::StringPublisher</a>, 2&gt; frc::SendableChooserBase::m_activePubs</td>
         </tr>
       </table>
   </td>
@@ -459,6 +461,28 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">int frc::SendableChooserBase::m_instance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad262a50c47325b2aade283ffd9ac262c" name="ad262a50c47325b2aade283ffd9ac262c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad262a50c47325b2aade283ffd9ac262c">&#9670;&nbsp;</a></span>m_instancePubs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_small_vector.html">wpi::SmallVector</a>&lt;<a class="el" href="classnt_1_1_integer_publisher.html">nt::IntegerPublisher</a>, 2&gt; frc::SendableChooserBase::m_instancePubs</td>
         </tr>
       </table>
   </td>
@@ -545,7 +569,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_sendable_chooser_base.html">SendableChooserBase</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

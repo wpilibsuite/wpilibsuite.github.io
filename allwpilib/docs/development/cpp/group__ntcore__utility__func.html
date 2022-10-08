@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -99,20 +99,83 @@ $(document).ready(function(){initNavTree('group__ntcore__utility__func.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9e57c1308e76272f160b24b18b3ee254"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">nt::Now</a> ()</td></tr>
-<tr class="memdesc:ga9e57c1308e76272f160b24b18b3ee254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns monotonic current time in 1 us increments.  <a href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">More...</a><br /></td></tr>
-<tr class="separator:ga9e57c1308e76272f160b24b18b3ee254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29dbf93f14f9cdffa80b422e9cb2a50e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e">nt::Now</a> ()</td></tr>
+<tr class="memdesc:ga29dbf93f14f9cdffa80b422e9cb2a50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns monotonic current time in 1 us increments.  <a href="group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e">More...</a><br /></td></tr>
+<tr class="separator:ga29dbf93f14f9cdffa80b422e9cb2a50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70b295d6a20a166a49457eb106a9f1d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__utility__func.html#ga70b295d6a20a166a49457eb106a9f1d3">nt::SetNow</a> (int64_t timestamp)</td></tr>
+<tr class="memdesc:ga70b295d6a20a166a49457eb106a9f1d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current timestamp used for timestamping values that do not provide a timestamp (e.g.  <a href="group__ntcore__utility__func.html#ga70b295d6a20a166a49457eb106a9f1d3">More...</a><br /></td></tr>
+<tr class="separator:ga70b295d6a20a166a49457eb106a9f1d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga057ce15a74c4c99e93e16a9fb8e69842"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a">NT_Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__utility__func.html#ga057ce15a74c4c99e93e16a9fb8e69842">nt::GetTypeFromString</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString)</td></tr>
+<tr class="memdesc:ga057ce15a74c4c99e93e16a9fb8e69842"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns a type string into a type enum value.  <a href="group__ntcore__utility__func.html#ga057ce15a74c4c99e93e16a9fb8e69842">More...</a><br /></td></tr>
+<tr class="separator:ga057ce15a74c4c99e93e16a9fb8e69842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0434a01fb18978c84276cc4f9c72edc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__utility__func.html#gaf0434a01fb18978c84276cc4f9c72edc">nt::GetStringFromType</a> (<a class="el" href="group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a">NT_Type</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr class="memdesc:gaf0434a01fb18978c84276cc4f9c72edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turns a type enum value into a type string.  <a href="group__ntcore__utility__func.html#gaf0434a01fb18978c84276cc4f9c72edc">More...</a><br /></td></tr>
+<tr class="separator:gaf0434a01fb18978c84276cc4f9c72edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga9e57c1308e76272f160b24b18b3ee254" name="ga9e57c1308e76272f160b24b18b3ee254"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9e57c1308e76272f160b24b18b3ee254">&#9670;&nbsp;</a></span>Now()</h2>
+<a id="gaf0434a01fb18978c84276cc4f9c72edc" name="gaf0434a01fb18978c84276cc4f9c72edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0434a01fb18978c84276cc4f9c72edc">&#9670;&nbsp;</a></span>GetStringFromType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t nt::Now </td>
+          <td class="memname"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> nt::GetStringFromType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a">NT_Type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turns a type enum value into a type string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>type enum </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Type string </dd></dl>
+
+</div>
+</div>
+<a id="ga057ce15a74c4c99e93e16a9fb8e69842" name="ga057ce15a74c4c99e93e16a9fb8e69842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga057ce15a74c4c99e93e16a9fb8e69842">&#9670;&nbsp;</a></span>GetTypeFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a">NT_Type</a> nt::GetTypeFromString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>typeString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Turns a type string into a type enum value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeString</td><td>type string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Type value </dd></dl>
+
+</div>
+</div>
+<a id="ga29dbf93f14f9cdffa80b422e9cb2a50e" name="ga29dbf93f14f9cdffa80b422e9cb2a50e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29dbf93f14f9cdffa80b422e9cb2a50e">&#9670;&nbsp;</a></span>Now()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t nt::Now </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -121,8 +184,35 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns monotonic current time in 1 us increments. </p>
-<p >This is the same time base used for entry and connection timestamps. This function is a compatibility wrapper around <a class="el" href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254" title="Returns monotonic current time in 1 us increments.">wpi::Now()</a>.</p>
+<p >This is the same time base used for value and connection timestamps. This function by default simply wraps <a class="el" href="group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e" title="Returns monotonic current time in 1 us increments.">wpi::Now()</a>, but if <a class="el" href="group__ntcore__utility__func.html#ga70b295d6a20a166a49457eb106a9f1d3" title="Sets the current timestamp used for timestamping values that do not provide a timestamp (e....">SetNow()</a> is called, this function instead returns the value passed to <a class="el" href="group__ntcore__utility__func.html#ga70b295d6a20a166a49457eb106a9f1d3" title="Sets the current timestamp used for timestamping values that do not provide a timestamp (e....">SetNow()</a>; this can be used to reduce overhead.</p>
 <dl class="section return"><dt>Returns</dt><dd>Timestamp </dd></dl>
+
+</div>
+</div>
+<a id="ga70b295d6a20a166a49457eb106a9f1d3" name="ga70b295d6a20a166a49457eb106a9f1d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70b295d6a20a166a49457eb106a9f1d3">&#9670;&nbsp;</a></span>SetNow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nt::SetNow </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>timestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the current timestamp used for timestamping values that do not provide a timestamp (e.g. </p>
+<p >a value of 0 is passed). For consistency, it also results in <a class="el" href="group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e" title="Returns monotonic current time in 1 us increments.">Now()</a> returning the set value. This should generally be used only if the overhead of calling <a class="el" href="group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e" title="Returns monotonic current time in 1 us increments.">wpi::Now()</a> is a concern. If used, it should be called periodically with the value of <a class="el" href="group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e" title="Returns monotonic current time in 1 us increments.">wpi::Now()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timestamp</td><td>timestamp (1 us increments) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -131,7 +221,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

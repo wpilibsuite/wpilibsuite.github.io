@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -107,9 +107,11 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_network_button.html','')
   <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_trigger.html#a788c512eae37c35fec4d8f2f446f4345">Falling</a>()</td><td class="entry"><a class="el" href="classfrc2_1_1_trigger.html">frc2::Trigger</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_boolean_event.html#a35f44d70a3740b94390841defda16e0c">GetAsBoolean</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_boolean_event.html">frc::BooleanEvent</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_boolean_event.html#a5693a13e69c94eec67ca79272be040ea">IfHigh</a>(wpi::unique_function&lt; void()&gt; action)</td><td class="entry"><a class="el" href="classfrc_1_1_boolean_event.html">frc::BooleanEvent</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#a5c3c855024d386dd1f81acfe069af0d2">NetworkButton</a>(nt::NetworkTableEntry entry)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#af9ceeb4113235520d75232c86b2bccd5">NetworkButton</a>(std::shared_ptr&lt; nt::NetworkTable &gt; table, std::string_view field)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#a86402fa51b2995c7d1351f55c0a49ae7">NetworkButton</a>(std::string_view table, std::string_view field)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#a3ca340eae4f83d85d886b1747ea7906b">NetworkButton</a>(nt::BooleanTopic topic)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#ad8b8491ece5fa55eb6950b1a0b37fb52">NetworkButton</a>(nt::BooleanSubscriber sub)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#af9ceeb4113235520d75232c86b2bccd5">NetworkButton</a>(std::shared_ptr&lt; nt::NetworkTable &gt; table, std::string_view field)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#a86402fa51b2995c7d1351f55c0a49ae7">NetworkButton</a>(std::string_view table, std::string_view field)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html#ac083398b401f73d5fd970108b8f1a356">NetworkButton</a>(nt::NetworkTableInstance inst, std::string_view table, std::string_view field)</td><td class="entry"><a class="el" href="classfrc2_1_1_network_button.html">frc2::NetworkButton</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_boolean_event.html#a9b94fcada04e84e4cc51b0ac57920c9c">operator std::function&lt; bool</a>()&gt;()</td><td class="entry"><a class="el" href="classfrc_1_1_boolean_event.html">frc::BooleanEvent</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_trigger.html#a4c0e51e2f40a2c22b5f6e0599e195cfb">operator!</a>()</td><td class="entry"><a class="el" href="classfrc2_1_1_trigger.html">frc2::Trigger</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_trigger.html#a41ab796d5329690d582f99c5496c554d">operator&amp;&amp;</a>(std::function&lt; bool()&gt; rhs)</td><td class="entry"><a class="el" href="classfrc2_1_1_trigger.html">frc2::Trigger</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -166,7 +168,7 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_network_button.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('_iterative_robot_base_8h_source.html',
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"></span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">   * Enables or disables flushing NetworkTables every loop iteration.</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">   * By default, this is disabled.</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">   * By default, this is enabled.</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">   * @param enabled True to enable, false to disable</span></div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">   */</span></div>
@@ -323,7 +323,7 @@ $(document).ready(function(){initNavTree('_iterative_robot_base_8h_source.html',
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  Mode m_lastMode = Mode::kNone;</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  units::second_t m_period;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a> m_watchdog;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">bool</span> m_ntFlushEnabled = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">bool</span> m_ntFlushEnabled = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordtype">void</span> PrintLoopOverrunMessage();</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>};</div>
@@ -366,7 +366,7 @@ $(document).ready(function(){initNavTree('_iterative_robot_base_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_iterative_robot_base_8h.html">IterativeRobotBase.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

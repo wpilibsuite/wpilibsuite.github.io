@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-137-g90cfa00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
    </div>
   </td>
  </tr>
@@ -135,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ffd2bbd39213eb0b7a1ebadcd6079d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a8ffd2bbd39213eb0b7a1ebadcd6079d0">AddBooleanProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; bool()&gt; getter, std::function&lt; void(bool)&gt; setter)=0</td></tr>
 <tr class="memdesc:a8ffd2bbd39213eb0b7a1ebadcd6079d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean property.  <a href="classwpi_1_1_sendable_builder.html#a8ffd2bbd39213eb0b7a1ebadcd6079d0">More...</a><br /></td></tr>
 <tr class="separator:a8ffd2bbd39213eb0b7a1ebadcd6079d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc1a54e27d666b17170ab98e257bdda"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#adbc1a54e27d666b17170ab98e257bdda">AddIntegerProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; int64_t()&gt; getter, std::function&lt; void(int64_t)&gt; setter)=0</td></tr>
+<tr class="memdesc:adbc1a54e27d666b17170ab98e257bdda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an integer property.  <a href="classwpi_1_1_sendable_builder.html#adbc1a54e27d666b17170ab98e257bdda">More...</a><br /></td></tr>
+<tr class="separator:adbc1a54e27d666b17170ab98e257bdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a1c0357cf2b5efec6a1803eddf4238"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a44a1c0357cf2b5efec6a1803eddf4238">AddFloatProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; float()&gt; getter, std::function&lt; void(float)&gt; setter)=0</td></tr>
+<tr class="memdesc:a44a1c0357cf2b5efec6a1803eddf4238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a float property.  <a href="classwpi_1_1_sendable_builder.html#a44a1c0357cf2b5efec6a1803eddf4238">More...</a><br /></td></tr>
+<tr class="separator:a44a1c0357cf2b5efec6a1803eddf4238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06908bf8ddbf4ff2ada26828d76c696a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a06908bf8ddbf4ff2ada26828d76c696a">AddDoubleProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; double()&gt; getter, std::function&lt; void(double)&gt; setter)=0</td></tr>
 <tr class="memdesc:a06908bf8ddbf4ff2ada26828d76c696a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double property.  <a href="classwpi_1_1_sendable_builder.html#a06908bf8ddbf4ff2ada26828d76c696a">More...</a><br /></td></tr>
 <tr class="separator:a06908bf8ddbf4ff2ada26828d76c696a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,30 +150,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ee147b695aeb8a150cf758baaa443ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a1ee147b695aeb8a150cf758baaa443ea">AddBooleanArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; std::vector&lt; int &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt;)&gt; setter)=0</td></tr>
 <tr class="memdesc:a1ee147b695aeb8a150cf758baaa443ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean array property.  <a href="classwpi_1_1_sendable_builder.html#a1ee147b695aeb8a150cf758baaa443ea">More...</a><br /></td></tr>
 <tr class="separator:a1ee147b695aeb8a150cf758baaa443ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a925fb68fc1c0a19f16505c758db8bbba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a925fb68fc1c0a19f16505c758db8bbba">AddIntegerArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; std::vector&lt; int64_t &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;)&gt; setter)=0</td></tr>
+<tr class="memdesc:a925fb68fc1c0a19f16505c758db8bbba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an integer array property.  <a href="classwpi_1_1_sendable_builder.html#a925fb68fc1c0a19f16505c758db8bbba">More...</a><br /></td></tr>
+<tr class="separator:a925fb68fc1c0a19f16505c758db8bbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf63a274f9acf8965fde0339e307152f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#abf63a274f9acf8965fde0339e307152f">AddFloatArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; std::vector&lt; float &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;)&gt; setter)=0</td></tr>
+<tr class="memdesc:abf63a274f9acf8965fde0339e307152f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a float array property.  <a href="classwpi_1_1_sendable_builder.html#abf63a274f9acf8965fde0339e307152f">More...</a><br /></td></tr>
+<tr class="separator:abf63a274f9acf8965fde0339e307152f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f01ef0d54c00c699ce55183af1ac09f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a0f01ef0d54c00c699ce55183af1ac09f">AddDoubleArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; std::vector&lt; double &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt;)&gt; setter)=0</td></tr>
 <tr class="memdesc:a0f01ef0d54c00c699ce55183af1ac09f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double array property.  <a href="classwpi_1_1_sendable_builder.html#a0f01ef0d54c00c699ce55183af1ac09f">More...</a><br /></td></tr>
 <tr class="separator:a0f01ef0d54c00c699ce55183af1ac09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3bf87e1a97c6fc670e125cc4b271e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a9d3bf87e1a97c6fc670e125cc4b271e9">AddStringArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; std::vector&lt; std::string &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;)&gt; setter)=0</td></tr>
 <tr class="memdesc:a9d3bf87e1a97c6fc670e125cc4b271e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string array property.  <a href="classwpi_1_1_sendable_builder.html#a9d3bf87e1a97c6fc670e125cc4b271e9">More...</a><br /></td></tr>
 <tr class="separator:a9d3bf87e1a97c6fc670e125cc4b271e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8059f3430fa23345010022dd268f02"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a3e8059f3430fa23345010022dd268f02">AddRawProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; std::string()&gt; getter, std::function&lt; void(<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>)&gt; setter)=0</td></tr>
-<tr class="memdesc:a3e8059f3430fa23345010022dd268f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property.  <a href="classwpi_1_1_sendable_builder.html#a3e8059f3430fa23345010022dd268f02">More...</a><br /></td></tr>
-<tr class="separator:a3e8059f3430fa23345010022dd268f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd9d66d9a51626fb3db439b15528332"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#accd9d66d9a51626fb3db439b15528332">AddRawProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, std::function&lt; std::vector&lt; uint8_t &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt;)&gt; setter)=0</td></tr>
+<tr class="memdesc:accd9d66d9a51626fb3db439b15528332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property.  <a href="classwpi_1_1_sendable_builder.html#accd9d66d9a51626fb3db439b15528332">More...</a><br /></td></tr>
+<tr class="separator:accd9d66d9a51626fb3db439b15528332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa73e98e243bad2e4fa95fee8970dc33f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#aa73e98e243bad2e4fa95fee8970dc33f">AddSmallStringProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>)&gt; setter)=0</td></tr>
 <tr class="memdesc:aa73e98e243bad2e4fa95fee8970dc33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string property (<a class="el" href="classwpi_1_1_small_string.html" title="SmallString - A SmallString is just a SmallVector with methods and accessors that make it work better...">SmallString</a> form).  <a href="classwpi_1_1_sendable_builder.html#aa73e98e243bad2e4fa95fee8970dc33f">More...</a><br /></td></tr>
 <tr class="separator:aa73e98e243bad2e4fa95fee8970dc33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4417d768ba42cdd171b6916d64f4ce75"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a4417d768ba42cdd171b6916d64f4ce75">AddSmallBooleanArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; int &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt;)&gt; setter)=0</td></tr>
 <tr class="memdesc:a4417d768ba42cdd171b6916d64f4ce75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean array property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form).  <a href="classwpi_1_1_sendable_builder.html#a4417d768ba42cdd171b6916d64f4ce75">More...</a><br /></td></tr>
 <tr class="separator:a4417d768ba42cdd171b6916d64f4ce75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11cc5d18ac394e7417c318017a6cbcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#ae11cc5d18ac394e7417c318017a6cbcd">AddSmallIntegerArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; int64_t &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;)&gt; setter)=0</td></tr>
+<tr class="memdesc:ae11cc5d18ac394e7417c318017a6cbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an integer array property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form).  <a href="classwpi_1_1_sendable_builder.html#ae11cc5d18ac394e7417c318017a6cbcd">More...</a><br /></td></tr>
+<tr class="separator:ae11cc5d18ac394e7417c318017a6cbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc7a5b479d6445f5086c31c9cbfe68b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#aebc7a5b479d6445f5086c31c9cbfe68b">AddSmallFloatArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;)&gt; setter)=0</td></tr>
+<tr class="memdesc:aebc7a5b479d6445f5086c31c9cbfe68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a float array property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form).  <a href="classwpi_1_1_sendable_builder.html#aebc7a5b479d6445f5086c31c9cbfe68b">More...</a><br /></td></tr>
+<tr class="separator:aebc7a5b479d6445f5086c31c9cbfe68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a384d05d74c1b458d87c1aa21b68b783a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a384d05d74c1b458d87c1aa21b68b783a">AddSmallDoubleArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; double &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt;)&gt; setter)=0</td></tr>
 <tr class="memdesc:a384d05d74c1b458d87c1aa21b68b783a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double array property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form).  <a href="classwpi_1_1_sendable_builder.html#a384d05d74c1b458d87c1aa21b68b783a">More...</a><br /></td></tr>
 <tr class="separator:a384d05d74c1b458d87c1aa21b68b783a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a943cbbd12073fa09e27190c9af2ae0ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a943cbbd12073fa09e27190c9af2ae0ef">AddSmallStringArrayProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; std::string &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;)&gt; setter)=0</td></tr>
 <tr class="memdesc:a943cbbd12073fa09e27190c9af2ae0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string array property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form).  <a href="classwpi_1_1_sendable_builder.html#a943cbbd12073fa09e27190c9af2ae0ef">More...</a><br /></td></tr>
 <tr class="separator:a943cbbd12073fa09e27190c9af2ae0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf23b8a97bfe0295d4aea79d716a49bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#abf23b8a97bfe0295d4aea79d716a49bf">AddSmallRawProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::function&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>)&gt; setter)=0</td></tr>
-<tr class="memdesc:abf23b8a97bfe0295d4aea79d716a49bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form).  <a href="classwpi_1_1_sendable_builder.html#abf23b8a97bfe0295d4aea79d716a49bf">More...</a><br /></td></tr>
-<tr class="separator:abf23b8a97bfe0295d4aea79d716a49bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a487cc3a37e0f839af138091cf7474810"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#a487cc3a37e0f839af138091cf7474810">AddSmallRawProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; uint8_t &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; uint8_t &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt;)&gt; setter)=0</td></tr>
+<tr class="memdesc:a487cc3a37e0f839af138091cf7474810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form).  <a href="classwpi_1_1_sendable_builder.html#a487cc3a37e0f839af138091cf7474810">More...</a><br /></td></tr>
+<tr class="separator:a487cc3a37e0f839af138091cf7474810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbbfb1026a3cb0cc0d9aaa6c8ab598e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwpi_1_1_sendable_builder.html#ac497f0c4267f959542834b9dab7613af">BackendKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_builder.html#adbbfb1026a3cb0cc0d9aaa6c8ab598e2">GetBackendKind</a> () const =0</td></tr>
 <tr class="memdesc:adbbfb1026a3cb0cc0d9aaa6c8ab598e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the kind of backend being used.  <a href="classwpi_1_1_sendable_builder.html#adbbfb1026a3cb0cc0d9aaa6c8ab598e2">More...</a><br /></td></tr>
 <tr class="separator:adbbfb1026a3cb0cc0d9aaa6c8ab598e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -441,8 +459,220 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e8059f3430fa23345010022dd268f02" name="a3e8059f3430fa23345010022dd268f02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e8059f3430fa23345010022dd268f02">&#9670;&nbsp;</a></span>AddRawProperty()</h2>
+<a id="abf63a274f9acf8965fde0339e307152f" name="abf63a274f9acf8965fde0339e307152f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf63a274f9acf8965fde0339e307152f">&#9670;&nbsp;</a></span>AddFloatArrayProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::SendableBuilder::AddFloatArrayProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; std::vector&lt; float &gt;()&gt;&#160;</td>
+          <td class="paramname"><em>getter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;)&gt;&#160;</td>
+          <td class="paramname"><em>setter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a float array property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
+    <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a44a1c0357cf2b5efec6a1803eddf4238" name="a44a1c0357cf2b5efec6a1803eddf4238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a1c0357cf2b5efec6a1803eddf4238">&#9670;&nbsp;</a></span>AddFloatProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::SendableBuilder::AddFloatProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; float()&gt;&#160;</td>
+          <td class="paramname"><em>getter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(float)&gt;&#160;</td>
+          <td class="paramname"><em>setter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a float property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
+    <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_sendable_builder_impl.html#ad715604c8cdbbb76e2ea6b4a6528b403">frc::SendableBuilderImpl</a>.</p>
+
+</div>
+</div>
+<a id="a925fb68fc1c0a19f16505c758db8bbba" name="a925fb68fc1c0a19f16505c758db8bbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925fb68fc1c0a19f16505c758db8bbba">&#9670;&nbsp;</a></span>AddIntegerArrayProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::SendableBuilder::AddIntegerArrayProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; std::vector&lt; int64_t &gt;()&gt;&#160;</td>
+          <td class="paramname"><em>getter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;)&gt;&#160;</td>
+          <td class="paramname"><em>setter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add an integer array property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
+    <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adbc1a54e27d666b17170ab98e257bdda" name="adbc1a54e27d666b17170ab98e257bdda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc1a54e27d666b17170ab98e257bdda">&#9670;&nbsp;</a></span>AddIntegerProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::SendableBuilder::AddIntegerProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; int64_t()&gt;&#160;</td>
+          <td class="paramname"><em>getter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(int64_t)&gt;&#160;</td>
+          <td class="paramname"><em>setter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add an integer property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
+    <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classfrc_1_1_sendable_builder_impl.html#a299dbb0802165ef028ac0d33461f5248">frc::SendableBuilderImpl</a>.</p>
+
+</div>
+</div>
+<a id="accd9d66d9a51626fb3db439b15528332" name="accd9d66d9a51626fb3db439b15528332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd9d66d9a51626fb3db439b15528332">&#9670;&nbsp;</a></span>AddRawProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,13 +689,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; std::string()&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>typeString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; std::vector&lt; uint8_t &gt;()&gt;&#160;</td>
           <td class="paramname"><em>getter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt;)&gt;&#160;</td>
           <td class="paramname"><em>setter</em>&#160;</td>
         </tr>
         <tr>
@@ -485,13 +721,12 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">typeString</td><td>type string </td></tr>
     <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
     <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implemented in <a class="el" href="classfrc_1_1_sendable_builder_impl.html#a3f778a612fe48593dcd064c45c93d96c">frc::SendableBuilderImpl</a>.</p>
 
 </div>
 </div>
@@ -599,8 +834,112 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="abf23b8a97bfe0295d4aea79d716a49bf" name="abf23b8a97bfe0295d4aea79d716a49bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf23b8a97bfe0295d4aea79d716a49bf">&#9670;&nbsp;</a></span>AddSmallRawProperty()</h2>
+<a id="aebc7a5b479d6445f5086c31c9cbfe68b" name="aebc7a5b479d6445f5086c31c9cbfe68b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc7a5b479d6445f5086c31c9cbfe68b">&#9670;&nbsp;</a></span>AddSmallFloatArrayProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::SendableBuilder::AddSmallFloatArrayProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;buf)&gt;&#160;</td>
+          <td class="paramname"><em>getter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;)&gt;&#160;</td>
+          <td class="paramname"><em>setter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a float array property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
+    <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae11cc5d18ac394e7417c318017a6cbcd" name="ae11cc5d18ac394e7417c318017a6cbcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae11cc5d18ac394e7417c318017a6cbcd">&#9670;&nbsp;</a></span>AddSmallIntegerArrayProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::SendableBuilder::AddSmallIntegerArrayProperty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; int64_t &gt; &amp;buf)&gt;&#160;</td>
+          <td class="paramname"><em>getter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;)&gt;&#160;</td>
+          <td class="paramname"><em>setter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add an integer array property (<a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> form). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
+    <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a487cc3a37e0f839af138091cf7474810" name="a487cc3a37e0f839af138091cf7474810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a487cc3a37e0f839af138091cf7474810">&#9670;&nbsp;</a></span>AddSmallRawProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,13 +956,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>typeString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; uint8_t &gt;(<a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; uint8_t &gt; &amp;buf)&gt;&#160;</td>
           <td class="paramname"><em>getter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt;)&gt;&#160;</td>
           <td class="paramname"><em>setter</em>&#160;</td>
         </tr>
         <tr>
@@ -643,6 +988,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>property name </td></tr>
+    <tr><td class="paramname">typeString</td><td>type string </td></tr>
     <tr><td class="paramname">getter</td><td>getter function (returns current value) </td></tr>
     <tr><td class="paramname">setter</td><td>setter function (sets new value) </td></tr>
   </table>
@@ -1098,7 +1444,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_sendable_builder.html">SendableBuilder</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 05:56:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 8 2022 17:04:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
