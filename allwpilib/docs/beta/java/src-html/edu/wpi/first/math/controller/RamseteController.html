@@ -45,143 +45,140 @@
 <span class="sourceLineNo">033</span><a id="line.33"> * derivation and analysis.</a>
 <span class="sourceLineNo">034</span><a id="line.34"> */</a>
 <span class="sourceLineNo">035</span><a id="line.35">public class RamseteController {</a>
-<span class="sourceLineNo">036</span><a id="line.36">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">037</span><a id="line.37">  private final double m_b;</a>
-<span class="sourceLineNo">038</span><a id="line.38"></a>
-<span class="sourceLineNo">039</span><a id="line.39">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">040</span><a id="line.40">  private final double m_zeta;</a>
-<span class="sourceLineNo">041</span><a id="line.41"></a>
-<span class="sourceLineNo">042</span><a id="line.42">  private Pose2d m_poseError = new Pose2d();</a>
-<span class="sourceLineNo">043</span><a id="line.43">  private Pose2d m_poseTolerance = new Pose2d();</a>
-<span class="sourceLineNo">044</span><a id="line.44">  private boolean m_enabled = true;</a>
-<span class="sourceLineNo">045</span><a id="line.45"></a>
-<span class="sourceLineNo">046</span><a id="line.46">  /**</a>
-<span class="sourceLineNo">047</span><a id="line.47">   * Construct a Ramsete unicycle controller.</a>
-<span class="sourceLineNo">048</span><a id="line.48">   *</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * @param b Tuning parameter (b &amp;gt; 0 rad²/m²) for which larger values make convergence more</a>
-<span class="sourceLineNo">050</span><a id="line.50">   *     aggressive like a proportional term.</a>
-<span class="sourceLineNo">051</span><a id="line.51">   * @param zeta Tuning parameter (0 rad⁻¹ &amp;lt; zeta &amp;lt; 1 rad⁻¹) for which larger values provide</a>
-<span class="sourceLineNo">052</span><a id="line.52">   *     more damping in response.</a>
-<span class="sourceLineNo">053</span><a id="line.53">   */</a>
-<span class="sourceLineNo">054</span><a id="line.54">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">055</span><a id="line.55">  public RamseteController(double b, double zeta) {</a>
-<span class="sourceLineNo">056</span><a id="line.56">    m_b = b;</a>
-<span class="sourceLineNo">057</span><a id="line.57">    m_zeta = zeta;</a>
-<span class="sourceLineNo">058</span><a id="line.58">  }</a>
-<span class="sourceLineNo">059</span><a id="line.59"></a>
-<span class="sourceLineNo">060</span><a id="line.60">  /**</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * Construct a Ramsete unicycle controller. The default arguments for b and zeta of 2.0 rad²/m²</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * and 0.7 rad⁻¹ have been well-tested to produce desirable results.</a>
-<span class="sourceLineNo">063</span><a id="line.63">   */</a>
-<span class="sourceLineNo">064</span><a id="line.64">  public RamseteController() {</a>
-<span class="sourceLineNo">065</span><a id="line.65">    this(2.0, 0.7);</a>
-<span class="sourceLineNo">066</span><a id="line.66">  }</a>
-<span class="sourceLineNo">067</span><a id="line.67"></a>
-<span class="sourceLineNo">068</span><a id="line.68">  /**</a>
-<span class="sourceLineNo">069</span><a id="line.69">   * Returns true if the pose error is within tolerance of the reference.</a>
-<span class="sourceLineNo">070</span><a id="line.70">   *</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * @return True if the pose error is within tolerance of the reference.</a>
-<span class="sourceLineNo">072</span><a id="line.72">   */</a>
-<span class="sourceLineNo">073</span><a id="line.73">  public boolean atReference() {</a>
-<span class="sourceLineNo">074</span><a id="line.74">    final var eTranslate = m_poseError.getTranslation();</a>
-<span class="sourceLineNo">075</span><a id="line.75">    final var eRotate = m_poseError.getRotation();</a>
-<span class="sourceLineNo">076</span><a id="line.76">    final var tolTranslate = m_poseTolerance.getTranslation();</a>
-<span class="sourceLineNo">077</span><a id="line.77">    final var tolRotate = m_poseTolerance.getRotation();</a>
-<span class="sourceLineNo">078</span><a id="line.78">    return Math.abs(eTranslate.getX()) &lt; tolTranslate.getX()</a>
-<span class="sourceLineNo">079</span><a id="line.79">        &amp;&amp; Math.abs(eTranslate.getY()) &lt; tolTranslate.getY()</a>
-<span class="sourceLineNo">080</span><a id="line.80">        &amp;&amp; Math.abs(eRotate.getRadians()) &lt; tolRotate.getRadians();</a>
-<span class="sourceLineNo">081</span><a id="line.81">  }</a>
-<span class="sourceLineNo">082</span><a id="line.82"></a>
-<span class="sourceLineNo">083</span><a id="line.83">  /**</a>
-<span class="sourceLineNo">084</span><a id="line.84">   * Sets the pose error which is considered tolerable for use with atReference().</a>
-<span class="sourceLineNo">085</span><a id="line.85">   *</a>
-<span class="sourceLineNo">086</span><a id="line.86">   * @param poseTolerance Pose error which is tolerable.</a>
-<span class="sourceLineNo">087</span><a id="line.87">   */</a>
-<span class="sourceLineNo">088</span><a id="line.88">  public void setTolerance(Pose2d poseTolerance) {</a>
-<span class="sourceLineNo">089</span><a id="line.89">    m_poseTolerance = poseTolerance;</a>
-<span class="sourceLineNo">090</span><a id="line.90">  }</a>
-<span class="sourceLineNo">091</span><a id="line.91"></a>
-<span class="sourceLineNo">092</span><a id="line.92">  /**</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * Returns the next output of the Ramsete controller.</a>
+<span class="sourceLineNo">036</span><a id="line.36">  private final double m_b;</a>
+<span class="sourceLineNo">037</span><a id="line.37"></a>
+<span class="sourceLineNo">038</span><a id="line.38">  private final double m_zeta;</a>
+<span class="sourceLineNo">039</span><a id="line.39"></a>
+<span class="sourceLineNo">040</span><a id="line.40">  private Pose2d m_poseError = new Pose2d();</a>
+<span class="sourceLineNo">041</span><a id="line.41">  private Pose2d m_poseTolerance = new Pose2d();</a>
+<span class="sourceLineNo">042</span><a id="line.42">  private boolean m_enabled = true;</a>
+<span class="sourceLineNo">043</span><a id="line.43"></a>
+<span class="sourceLineNo">044</span><a id="line.44">  /**</a>
+<span class="sourceLineNo">045</span><a id="line.45">   * Construct a Ramsete unicycle controller.</a>
+<span class="sourceLineNo">046</span><a id="line.46">   *</a>
+<span class="sourceLineNo">047</span><a id="line.47">   * @param b Tuning parameter (b &amp;gt; 0 rad²/m²) for which larger values make convergence more</a>
+<span class="sourceLineNo">048</span><a id="line.48">   *     aggressive like a proportional term.</a>
+<span class="sourceLineNo">049</span><a id="line.49">   * @param zeta Tuning parameter (0 rad⁻¹ &amp;lt; zeta &amp;lt; 1 rad⁻¹) for which larger values provide</a>
+<span class="sourceLineNo">050</span><a id="line.50">   *     more damping in response.</a>
+<span class="sourceLineNo">051</span><a id="line.51">   */</a>
+<span class="sourceLineNo">052</span><a id="line.52">  public RamseteController(double b, double zeta) {</a>
+<span class="sourceLineNo">053</span><a id="line.53">    m_b = b;</a>
+<span class="sourceLineNo">054</span><a id="line.54">    m_zeta = zeta;</a>
+<span class="sourceLineNo">055</span><a id="line.55">  }</a>
+<span class="sourceLineNo">056</span><a id="line.56"></a>
+<span class="sourceLineNo">057</span><a id="line.57">  /**</a>
+<span class="sourceLineNo">058</span><a id="line.58">   * Construct a Ramsete unicycle controller. The default arguments for b and zeta of 2.0 rad²/m²</a>
+<span class="sourceLineNo">059</span><a id="line.59">   * and 0.7 rad⁻¹ have been well-tested to produce desirable results.</a>
+<span class="sourceLineNo">060</span><a id="line.60">   */</a>
+<span class="sourceLineNo">061</span><a id="line.61">  public RamseteController() {</a>
+<span class="sourceLineNo">062</span><a id="line.62">    this(2.0, 0.7);</a>
+<span class="sourceLineNo">063</span><a id="line.63">  }</a>
+<span class="sourceLineNo">064</span><a id="line.64"></a>
+<span class="sourceLineNo">065</span><a id="line.65">  /**</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * Returns true if the pose error is within tolerance of the reference.</a>
+<span class="sourceLineNo">067</span><a id="line.67">   *</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * @return True if the pose error is within tolerance of the reference.</a>
+<span class="sourceLineNo">069</span><a id="line.69">   */</a>
+<span class="sourceLineNo">070</span><a id="line.70">  public boolean atReference() {</a>
+<span class="sourceLineNo">071</span><a id="line.71">    final var eTranslate = m_poseError.getTranslation();</a>
+<span class="sourceLineNo">072</span><a id="line.72">    final var eRotate = m_poseError.getRotation();</a>
+<span class="sourceLineNo">073</span><a id="line.73">    final var tolTranslate = m_poseTolerance.getTranslation();</a>
+<span class="sourceLineNo">074</span><a id="line.74">    final var tolRotate = m_poseTolerance.getRotation();</a>
+<span class="sourceLineNo">075</span><a id="line.75">    return Math.abs(eTranslate.getX()) &lt; tolTranslate.getX()</a>
+<span class="sourceLineNo">076</span><a id="line.76">        &amp;&amp; Math.abs(eTranslate.getY()) &lt; tolTranslate.getY()</a>
+<span class="sourceLineNo">077</span><a id="line.77">        &amp;&amp; Math.abs(eRotate.getRadians()) &lt; tolRotate.getRadians();</a>
+<span class="sourceLineNo">078</span><a id="line.78">  }</a>
+<span class="sourceLineNo">079</span><a id="line.79"></a>
+<span class="sourceLineNo">080</span><a id="line.80">  /**</a>
+<span class="sourceLineNo">081</span><a id="line.81">   * Sets the pose error which is considered tolerable for use with atReference().</a>
+<span class="sourceLineNo">082</span><a id="line.82">   *</a>
+<span class="sourceLineNo">083</span><a id="line.83">   * @param poseTolerance Pose error which is tolerable.</a>
+<span class="sourceLineNo">084</span><a id="line.84">   */</a>
+<span class="sourceLineNo">085</span><a id="line.85">  public void setTolerance(Pose2d poseTolerance) {</a>
+<span class="sourceLineNo">086</span><a id="line.86">    m_poseTolerance = poseTolerance;</a>
+<span class="sourceLineNo">087</span><a id="line.87">  }</a>
+<span class="sourceLineNo">088</span><a id="line.88"></a>
+<span class="sourceLineNo">089</span><a id="line.89">  /**</a>
+<span class="sourceLineNo">090</span><a id="line.90">   * Returns the next output of the Ramsete controller.</a>
+<span class="sourceLineNo">091</span><a id="line.91">   *</a>
+<span class="sourceLineNo">092</span><a id="line.92">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * trajectory.</a>
 <span class="sourceLineNo">094</span><a id="line.94">   *</a>
-<span class="sourceLineNo">095</span><a id="line.95">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
-<span class="sourceLineNo">096</span><a id="line.96">   * trajectory.</a>
-<span class="sourceLineNo">097</span><a id="line.97">   *</a>
-<span class="sourceLineNo">098</span><a id="line.98">   * @param currentPose The current pose.</a>
-<span class="sourceLineNo">099</span><a id="line.99">   * @param poseRef The desired pose.</a>
-<span class="sourceLineNo">100</span><a id="line.100">   * @param linearVelocityRefMeters The desired linear velocity in meters per second.</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * @param angularVelocityRefRadiansPerSecond The desired angular velocity in radians per second.</a>
-<span class="sourceLineNo">102</span><a id="line.102">   * @return The next controller output.</a>
-<span class="sourceLineNo">103</span><a id="line.103">   */</a>
-<span class="sourceLineNo">104</span><a id="line.104">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">105</span><a id="line.105">  public ChassisSpeeds calculate(</a>
-<span class="sourceLineNo">106</span><a id="line.106">      Pose2d currentPose,</a>
-<span class="sourceLineNo">107</span><a id="line.107">      Pose2d poseRef,</a>
-<span class="sourceLineNo">108</span><a id="line.108">      double linearVelocityRefMeters,</a>
-<span class="sourceLineNo">109</span><a id="line.109">      double angularVelocityRefRadiansPerSecond) {</a>
-<span class="sourceLineNo">110</span><a id="line.110">    if (!m_enabled) {</a>
-<span class="sourceLineNo">111</span><a id="line.111">      return new ChassisSpeeds(linearVelocityRefMeters, 0.0, angularVelocityRefRadiansPerSecond);</a>
-<span class="sourceLineNo">112</span><a id="line.112">    }</a>
-<span class="sourceLineNo">113</span><a id="line.113"></a>
-<span class="sourceLineNo">114</span><a id="line.114">    m_poseError = poseRef.relativeTo(currentPose);</a>
-<span class="sourceLineNo">115</span><a id="line.115"></a>
-<span class="sourceLineNo">116</span><a id="line.116">    // Aliases for equation readability</a>
-<span class="sourceLineNo">117</span><a id="line.117">    final double eX = m_poseError.getX();</a>
-<span class="sourceLineNo">118</span><a id="line.118">    final double eY = m_poseError.getY();</a>
-<span class="sourceLineNo">119</span><a id="line.119">    final double eTheta = m_poseError.getRotation().getRadians();</a>
-<span class="sourceLineNo">120</span><a id="line.120">    final double vRef = linearVelocityRefMeters;</a>
-<span class="sourceLineNo">121</span><a id="line.121">    final double omegaRef = angularVelocityRefRadiansPerSecond;</a>
-<span class="sourceLineNo">122</span><a id="line.122"></a>
-<span class="sourceLineNo">123</span><a id="line.123">    double k = 2.0 * m_zeta * Math.sqrt(Math.pow(omegaRef, 2) + m_b * Math.pow(vRef, 2));</a>
-<span class="sourceLineNo">124</span><a id="line.124"></a>
-<span class="sourceLineNo">125</span><a id="line.125">    return new ChassisSpeeds(</a>
-<span class="sourceLineNo">126</span><a id="line.126">        vRef * m_poseError.getRotation().getCos() + k * eX,</a>
-<span class="sourceLineNo">127</span><a id="line.127">        0.0,</a>
-<span class="sourceLineNo">128</span><a id="line.128">        omegaRef + k * eTheta + m_b * vRef * sinc(eTheta) * eY);</a>
-<span class="sourceLineNo">129</span><a id="line.129">  }</a>
-<span class="sourceLineNo">130</span><a id="line.130"></a>
-<span class="sourceLineNo">131</span><a id="line.131">  /**</a>
-<span class="sourceLineNo">132</span><a id="line.132">   * Returns the next output of the Ramsete controller.</a>
-<span class="sourceLineNo">133</span><a id="line.133">   *</a>
-<span class="sourceLineNo">134</span><a id="line.134">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
-<span class="sourceLineNo">135</span><a id="line.135">   * trajectory.</a>
-<span class="sourceLineNo">136</span><a id="line.136">   *</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * @param currentPose The current pose.</a>
-<span class="sourceLineNo">138</span><a id="line.138">   * @param desiredState The desired pose, linear velocity, and angular velocity from a trajectory.</a>
-<span class="sourceLineNo">139</span><a id="line.139">   * @return The next controller output.</a>
-<span class="sourceLineNo">140</span><a id="line.140">   */</a>
-<span class="sourceLineNo">141</span><a id="line.141">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">142</span><a id="line.142">  public ChassisSpeeds calculate(Pose2d currentPose, Trajectory.State desiredState) {</a>
-<span class="sourceLineNo">143</span><a id="line.143">    return calculate(</a>
-<span class="sourceLineNo">144</span><a id="line.144">        currentPose,</a>
-<span class="sourceLineNo">145</span><a id="line.145">        desiredState.poseMeters,</a>
-<span class="sourceLineNo">146</span><a id="line.146">        desiredState.velocityMetersPerSecond,</a>
-<span class="sourceLineNo">147</span><a id="line.147">        desiredState.velocityMetersPerSecond * desiredState.curvatureRadPerMeter);</a>
-<span class="sourceLineNo">148</span><a id="line.148">  }</a>
-<span class="sourceLineNo">149</span><a id="line.149"></a>
-<span class="sourceLineNo">150</span><a id="line.150">  /**</a>
-<span class="sourceLineNo">151</span><a id="line.151">   * Enables and disables the controller for troubleshooting purposes.</a>
-<span class="sourceLineNo">152</span><a id="line.152">   *</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * @param enabled If the controller is enabled or not.</a>
-<span class="sourceLineNo">154</span><a id="line.154">   */</a>
-<span class="sourceLineNo">155</span><a id="line.155">  public void setEnabled(boolean enabled) {</a>
-<span class="sourceLineNo">156</span><a id="line.156">    m_enabled = enabled;</a>
-<span class="sourceLineNo">157</span><a id="line.157">  }</a>
-<span class="sourceLineNo">158</span><a id="line.158"></a>
-<span class="sourceLineNo">159</span><a id="line.159">  /**</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * Returns sin(x) / x.</a>
-<span class="sourceLineNo">161</span><a id="line.161">   *</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @param x Value of which to take sinc(x).</a>
-<span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">165</span><a id="line.165">  private static double sinc(double x) {</a>
-<span class="sourceLineNo">166</span><a id="line.166">    if (Math.abs(x) &lt; 1e-9) {</a>
-<span class="sourceLineNo">167</span><a id="line.167">      return 1.0 - 1.0 / 6.0 * x * x;</a>
-<span class="sourceLineNo">168</span><a id="line.168">    } else {</a>
-<span class="sourceLineNo">169</span><a id="line.169">      return Math.sin(x) / x;</a>
-<span class="sourceLineNo">170</span><a id="line.170">    }</a>
-<span class="sourceLineNo">171</span><a id="line.171">  }</a>
-<span class="sourceLineNo">172</span><a id="line.172">}</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * @param currentPose The current pose.</a>
+<span class="sourceLineNo">096</span><a id="line.96">   * @param poseRef The desired pose.</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * @param linearVelocityRefMeters The desired linear velocity in meters per second.</a>
+<span class="sourceLineNo">098</span><a id="line.98">   * @param angularVelocityRefRadiansPerSecond The desired angular velocity in radians per second.</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * @return The next controller output.</a>
+<span class="sourceLineNo">100</span><a id="line.100">   */</a>
+<span class="sourceLineNo">101</span><a id="line.101">  public ChassisSpeeds calculate(</a>
+<span class="sourceLineNo">102</span><a id="line.102">      Pose2d currentPose,</a>
+<span class="sourceLineNo">103</span><a id="line.103">      Pose2d poseRef,</a>
+<span class="sourceLineNo">104</span><a id="line.104">      double linearVelocityRefMeters,</a>
+<span class="sourceLineNo">105</span><a id="line.105">      double angularVelocityRefRadiansPerSecond) {</a>
+<span class="sourceLineNo">106</span><a id="line.106">    if (!m_enabled) {</a>
+<span class="sourceLineNo">107</span><a id="line.107">      return new ChassisSpeeds(linearVelocityRefMeters, 0.0, angularVelocityRefRadiansPerSecond);</a>
+<span class="sourceLineNo">108</span><a id="line.108">    }</a>
+<span class="sourceLineNo">109</span><a id="line.109"></a>
+<span class="sourceLineNo">110</span><a id="line.110">    m_poseError = poseRef.relativeTo(currentPose);</a>
+<span class="sourceLineNo">111</span><a id="line.111"></a>
+<span class="sourceLineNo">112</span><a id="line.112">    // Aliases for equation readability</a>
+<span class="sourceLineNo">113</span><a id="line.113">    final double eX = m_poseError.getX();</a>
+<span class="sourceLineNo">114</span><a id="line.114">    final double eY = m_poseError.getY();</a>
+<span class="sourceLineNo">115</span><a id="line.115">    final double eTheta = m_poseError.getRotation().getRadians();</a>
+<span class="sourceLineNo">116</span><a id="line.116">    final double vRef = linearVelocityRefMeters;</a>
+<span class="sourceLineNo">117</span><a id="line.117">    final double omegaRef = angularVelocityRefRadiansPerSecond;</a>
+<span class="sourceLineNo">118</span><a id="line.118"></a>
+<span class="sourceLineNo">119</span><a id="line.119">    // k = 2ζ√(ω_ref² + b v_ref²)</a>
+<span class="sourceLineNo">120</span><a id="line.120">    double k = 2.0 * m_zeta * Math.sqrt(Math.pow(omegaRef, 2) + m_b * Math.pow(vRef, 2));</a>
+<span class="sourceLineNo">121</span><a id="line.121"></a>
+<span class="sourceLineNo">122</span><a id="line.122">    // v_cmd = v_ref cos(e_θ) + k e_x</a>
+<span class="sourceLineNo">123</span><a id="line.123">    // ω_cmd = ω_ref + k e_θ + b v_ref sinc(e_θ) e_y</a>
+<span class="sourceLineNo">124</span><a id="line.124">    return new ChassisSpeeds(</a>
+<span class="sourceLineNo">125</span><a id="line.125">        vRef * m_poseError.getRotation().getCos() + k * eX,</a>
+<span class="sourceLineNo">126</span><a id="line.126">        0.0,</a>
+<span class="sourceLineNo">127</span><a id="line.127">        omegaRef + k * eTheta + m_b * vRef * sinc(eTheta) * eY);</a>
+<span class="sourceLineNo">128</span><a id="line.128">  }</a>
+<span class="sourceLineNo">129</span><a id="line.129"></a>
+<span class="sourceLineNo">130</span><a id="line.130">  /**</a>
+<span class="sourceLineNo">131</span><a id="line.131">   * Returns the next output of the Ramsete controller.</a>
+<span class="sourceLineNo">132</span><a id="line.132">   *</a>
+<span class="sourceLineNo">133</span><a id="line.133">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * trajectory.</a>
+<span class="sourceLineNo">135</span><a id="line.135">   *</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * @param currentPose The current pose.</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * @param desiredState The desired pose, linear velocity, and angular velocity from a trajectory.</a>
+<span class="sourceLineNo">138</span><a id="line.138">   * @return The next controller output.</a>
+<span class="sourceLineNo">139</span><a id="line.139">   */</a>
+<span class="sourceLineNo">140</span><a id="line.140">  public ChassisSpeeds calculate(Pose2d currentPose, Trajectory.State desiredState) {</a>
+<span class="sourceLineNo">141</span><a id="line.141">    return calculate(</a>
+<span class="sourceLineNo">142</span><a id="line.142">        currentPose,</a>
+<span class="sourceLineNo">143</span><a id="line.143">        desiredState.poseMeters,</a>
+<span class="sourceLineNo">144</span><a id="line.144">        desiredState.velocityMetersPerSecond,</a>
+<span class="sourceLineNo">145</span><a id="line.145">        desiredState.velocityMetersPerSecond * desiredState.curvatureRadPerMeter);</a>
+<span class="sourceLineNo">146</span><a id="line.146">  }</a>
+<span class="sourceLineNo">147</span><a id="line.147"></a>
+<span class="sourceLineNo">148</span><a id="line.148">  /**</a>
+<span class="sourceLineNo">149</span><a id="line.149">   * Enables and disables the controller for troubleshooting purposes.</a>
+<span class="sourceLineNo">150</span><a id="line.150">   *</a>
+<span class="sourceLineNo">151</span><a id="line.151">   * @param enabled If the controller is enabled or not.</a>
+<span class="sourceLineNo">152</span><a id="line.152">   */</a>
+<span class="sourceLineNo">153</span><a id="line.153">  public void setEnabled(boolean enabled) {</a>
+<span class="sourceLineNo">154</span><a id="line.154">    m_enabled = enabled;</a>
+<span class="sourceLineNo">155</span><a id="line.155">  }</a>
+<span class="sourceLineNo">156</span><a id="line.156"></a>
+<span class="sourceLineNo">157</span><a id="line.157">  /**</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * Returns sin(x) / x.</a>
+<span class="sourceLineNo">159</span><a id="line.159">   *</a>
+<span class="sourceLineNo">160</span><a id="line.160">   * @param x Value of which to take sinc(x).</a>
+<span class="sourceLineNo">161</span><a id="line.161">   */</a>
+<span class="sourceLineNo">162</span><a id="line.162">  private static double sinc(double x) {</a>
+<span class="sourceLineNo">163</span><a id="line.163">    if (Math.abs(x) &lt; 1e-9) {</a>
+<span class="sourceLineNo">164</span><a id="line.164">      return 1.0 - 1.0 / 6.0 * x * x;</a>
+<span class="sourceLineNo">165</span><a id="line.165">    } else {</a>
+<span class="sourceLineNo">166</span><a id="line.166">      return Math.sin(x) / x;</a>
+<span class="sourceLineNo">167</span><a id="line.167">    }</a>
+<span class="sourceLineNo">168</span><a id="line.168">  }</a>
+<span class="sourceLineNo">169</span><a id="line.169">}</a>
 
 
 

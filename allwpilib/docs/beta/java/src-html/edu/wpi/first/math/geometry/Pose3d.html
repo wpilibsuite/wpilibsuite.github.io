@@ -127,215 +127,232 @@
 <span class="sourceLineNo">115</span><a id="line.115">  }</a>
 <span class="sourceLineNo">116</span><a id="line.116"></a>
 <span class="sourceLineNo">117</span><a id="line.117">  /**</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * Transforms the pose by the given transformation and returns the new pose. See + operator for</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * the matrix multiplication performed.</a>
-<span class="sourceLineNo">120</span><a id="line.120">   *</a>
-<span class="sourceLineNo">121</span><a id="line.121">   * @param other The transform to transform the pose by.</a>
-<span class="sourceLineNo">122</span><a id="line.122">   * @return The transformed pose.</a>
-<span class="sourceLineNo">123</span><a id="line.123">   */</a>
-<span class="sourceLineNo">124</span><a id="line.124">  public Pose3d transformBy(Transform3d other) {</a>
-<span class="sourceLineNo">125</span><a id="line.125">    return new Pose3d(</a>
-<span class="sourceLineNo">126</span><a id="line.126">        m_translation.plus(other.getTranslation().rotateBy(m_rotation)),</a>
-<span class="sourceLineNo">127</span><a id="line.127">        m_rotation.plus(other.getRotation()));</a>
-<span class="sourceLineNo">128</span><a id="line.128">  }</a>
-<span class="sourceLineNo">129</span><a id="line.129"></a>
-<span class="sourceLineNo">130</span><a id="line.130">  /**</a>
-<span class="sourceLineNo">131</span><a id="line.131">   * Returns the other pose relative to the current pose.</a>
-<span class="sourceLineNo">132</span><a id="line.132">   *</a>
-<span class="sourceLineNo">133</span><a id="line.133">   * &lt;p&gt;This function can often be used for trajectory tracking or pose stabilization algorithms to</a>
-<span class="sourceLineNo">134</span><a id="line.134">   * get the error between the reference and the current pose.</a>
-<span class="sourceLineNo">135</span><a id="line.135">   *</a>
-<span class="sourceLineNo">136</span><a id="line.136">   * @param other The pose that is the origin of the new coordinate frame that the current pose will</a>
-<span class="sourceLineNo">137</span><a id="line.137">   *     be converted into.</a>
-<span class="sourceLineNo">138</span><a id="line.138">   * @return The current pose relative to the new origin pose.</a>
-<span class="sourceLineNo">139</span><a id="line.139">   */</a>
-<span class="sourceLineNo">140</span><a id="line.140">  public Pose3d relativeTo(Pose3d other) {</a>
-<span class="sourceLineNo">141</span><a id="line.141">    var transform = new Transform3d(other, this);</a>
-<span class="sourceLineNo">142</span><a id="line.142">    return new Pose3d(transform.getTranslation(), transform.getRotation());</a>
-<span class="sourceLineNo">143</span><a id="line.143">  }</a>
-<span class="sourceLineNo">144</span><a id="line.144"></a>
-<span class="sourceLineNo">145</span><a id="line.145">  /**</a>
-<span class="sourceLineNo">146</span><a id="line.146">   * Obtain a new Pose3d from a (constant curvature) velocity.</a>
-<span class="sourceLineNo">147</span><a id="line.147">   *</a>
-<span class="sourceLineNo">148</span><a id="line.148">   * &lt;p&gt;The twist is a change in pose in the robot's coordinate frame since the previous pose</a>
-<span class="sourceLineNo">149</span><a id="line.149">   * update. When the user runs exp() on the previous known field-relative pose with the argument</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * being the twist, the user will receive the new field-relative pose.</a>
-<span class="sourceLineNo">151</span><a id="line.151">   *</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * &lt;p&gt;"Exp" represents the pose exponential, which is solving a differential equation moving the</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * pose forward in time.</a>
-<span class="sourceLineNo">154</span><a id="line.154">   *</a>
-<span class="sourceLineNo">155</span><a id="line.155">   * @param twist The change in pose in the robot's coordinate frame since the previous pose update.</a>
-<span class="sourceLineNo">156</span><a id="line.156">   *     For example, if a non-holonomic robot moves forward 0.01 meters and changes angle by 0.5</a>
-<span class="sourceLineNo">157</span><a id="line.157">   *     degrees since the previous pose update, the twist would be Twist3d(0.01, 0.0, 0.0, new new</a>
-<span class="sourceLineNo">158</span><a id="line.158">   *     Rotation3d(0.0, 0.0, Units.degreesToRadians(0.5))).</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * @return The new pose of the robot.</a>
-<span class="sourceLineNo">160</span><a id="line.160">   */</a>
-<span class="sourceLineNo">161</span><a id="line.161">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">162</span><a id="line.162">  public Pose3d exp(Twist3d twist) {</a>
-<span class="sourceLineNo">163</span><a id="line.163">    final var Omega = rotationVectorToMatrix(VecBuilder.fill(twist.rx, twist.ry, twist.rz));</a>
-<span class="sourceLineNo">164</span><a id="line.164">    final var OmegaSq = Omega.times(Omega);</a>
-<span class="sourceLineNo">165</span><a id="line.165"></a>
-<span class="sourceLineNo">166</span><a id="line.166">    double thetaSq = twist.rx * twist.rx + twist.ry * twist.ry + twist.rz * twist.rz;</a>
-<span class="sourceLineNo">167</span><a id="line.167"></a>
-<span class="sourceLineNo">168</span><a id="line.168">    // Get left Jacobian of SO3. See first line in right column of</a>
-<span class="sourceLineNo">169</span><a id="line.169">    // http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17_identities.pdf</a>
-<span class="sourceLineNo">170</span><a id="line.170">    Matrix&lt;N3, N3&gt; J;</a>
-<span class="sourceLineNo">171</span><a id="line.171">    if (thetaSq &lt; 1E-9 * 1E-9) {</a>
-<span class="sourceLineNo">172</span><a id="line.172">      // J = I + 0.5ω</a>
-<span class="sourceLineNo">173</span><a id="line.173">      J = Matrix.eye(Nat.N3()).plus(Omega.times(0.5));</a>
-<span class="sourceLineNo">174</span><a id="line.174">    } else {</a>
-<span class="sourceLineNo">175</span><a id="line.175">      double theta = Math.sqrt(thetaSq);</a>
-<span class="sourceLineNo">176</span><a id="line.176">      // J = I + (1 − cos(θ))/θ² ω + (θ − sin(θ))/θ³ ω²</a>
-<span class="sourceLineNo">177</span><a id="line.177">      J =</a>
-<span class="sourceLineNo">178</span><a id="line.178">          Matrix.eye(Nat.N3())</a>
-<span class="sourceLineNo">179</span><a id="line.179">              .plus(Omega.times((1.0 - Math.cos(theta)) / thetaSq))</a>
-<span class="sourceLineNo">180</span><a id="line.180">              .plus(OmegaSq.times((theta - Math.sin(theta)) / (thetaSq * theta)));</a>
-<span class="sourceLineNo">181</span><a id="line.181">    }</a>
-<span class="sourceLineNo">182</span><a id="line.182"></a>
-<span class="sourceLineNo">183</span><a id="line.183">    // Get translation component</a>
-<span class="sourceLineNo">184</span><a id="line.184">    final var translation =</a>
-<span class="sourceLineNo">185</span><a id="line.185">        J.times(new MatBuilder&lt;&gt;(Nat.N3(), Nat.N1()).fill(twist.dx, twist.dy, twist.dz));</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * Multiplies the current pose by a scalar.</a>
+<span class="sourceLineNo">119</span><a id="line.119">   *</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param scalar The scalar.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * @return The new scaled Pose3d.</a>
+<span class="sourceLineNo">122</span><a id="line.122">   */</a>
+<span class="sourceLineNo">123</span><a id="line.123">  public Pose3d times(double scalar) {</a>
+<span class="sourceLineNo">124</span><a id="line.124">    return new Pose3d(m_translation.times(scalar), m_rotation.times(scalar));</a>
+<span class="sourceLineNo">125</span><a id="line.125">  }</a>
+<span class="sourceLineNo">126</span><a id="line.126"></a>
+<span class="sourceLineNo">127</span><a id="line.127">  /**</a>
+<span class="sourceLineNo">128</span><a id="line.128">   * Divides the current pose by a scalar.</a>
+<span class="sourceLineNo">129</span><a id="line.129">   *</a>
+<span class="sourceLineNo">130</span><a id="line.130">   * @param scalar The scalar.</a>
+<span class="sourceLineNo">131</span><a id="line.131">   * @return The new scaled Pose3d.</a>
+<span class="sourceLineNo">132</span><a id="line.132">   */</a>
+<span class="sourceLineNo">133</span><a id="line.133">  public Pose3d div(double scalar) {</a>
+<span class="sourceLineNo">134</span><a id="line.134">    return times(1.0 / scalar);</a>
+<span class="sourceLineNo">135</span><a id="line.135">  }</a>
+<span class="sourceLineNo">136</span><a id="line.136"></a>
+<span class="sourceLineNo">137</span><a id="line.137">  /**</a>
+<span class="sourceLineNo">138</span><a id="line.138">   * Transforms the pose by the given transformation and returns the new pose. See + operator for</a>
+<span class="sourceLineNo">139</span><a id="line.139">   * the matrix multiplication performed.</a>
+<span class="sourceLineNo">140</span><a id="line.140">   *</a>
+<span class="sourceLineNo">141</span><a id="line.141">   * @param other The transform to transform the pose by.</a>
+<span class="sourceLineNo">142</span><a id="line.142">   * @return The transformed pose.</a>
+<span class="sourceLineNo">143</span><a id="line.143">   */</a>
+<span class="sourceLineNo">144</span><a id="line.144">  public Pose3d transformBy(Transform3d other) {</a>
+<span class="sourceLineNo">145</span><a id="line.145">    return new Pose3d(</a>
+<span class="sourceLineNo">146</span><a id="line.146">        m_translation.plus(other.getTranslation().rotateBy(m_rotation)),</a>
+<span class="sourceLineNo">147</span><a id="line.147">        m_rotation.plus(other.getRotation()));</a>
+<span class="sourceLineNo">148</span><a id="line.148">  }</a>
+<span class="sourceLineNo">149</span><a id="line.149"></a>
+<span class="sourceLineNo">150</span><a id="line.150">  /**</a>
+<span class="sourceLineNo">151</span><a id="line.151">   * Returns the other pose relative to the current pose.</a>
+<span class="sourceLineNo">152</span><a id="line.152">   *</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * &lt;p&gt;This function can often be used for trajectory tracking or pose stabilization algorithms to</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * get the error between the reference and the current pose.</a>
+<span class="sourceLineNo">155</span><a id="line.155">   *</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * @param other The pose that is the origin of the new coordinate frame that the current pose will</a>
+<span class="sourceLineNo">157</span><a id="line.157">   *     be converted into.</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * @return The current pose relative to the new origin pose.</a>
+<span class="sourceLineNo">159</span><a id="line.159">   */</a>
+<span class="sourceLineNo">160</span><a id="line.160">  public Pose3d relativeTo(Pose3d other) {</a>
+<span class="sourceLineNo">161</span><a id="line.161">    var transform = new Transform3d(other, this);</a>
+<span class="sourceLineNo">162</span><a id="line.162">    return new Pose3d(transform.getTranslation(), transform.getRotation());</a>
+<span class="sourceLineNo">163</span><a id="line.163">  }</a>
+<span class="sourceLineNo">164</span><a id="line.164"></a>
+<span class="sourceLineNo">165</span><a id="line.165">  /**</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * Obtain a new Pose3d from a (constant curvature) velocity.</a>
+<span class="sourceLineNo">167</span><a id="line.167">   *</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * &lt;p&gt;The twist is a change in pose in the robot's coordinate frame since the previous pose</a>
+<span class="sourceLineNo">169</span><a id="line.169">   * update. When the user runs exp() on the previous known field-relative pose with the argument</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * being the twist, the user will receive the new field-relative pose.</a>
+<span class="sourceLineNo">171</span><a id="line.171">   *</a>
+<span class="sourceLineNo">172</span><a id="line.172">   * &lt;p&gt;"Exp" represents the pose exponential, which is solving a differential equation moving the</a>
+<span class="sourceLineNo">173</span><a id="line.173">   * pose forward in time.</a>
+<span class="sourceLineNo">174</span><a id="line.174">   *</a>
+<span class="sourceLineNo">175</span><a id="line.175">   * @param twist The change in pose in the robot's coordinate frame since the previous pose update.</a>
+<span class="sourceLineNo">176</span><a id="line.176">   *     For example, if a non-holonomic robot moves forward 0.01 meters and changes angle by 0.5</a>
+<span class="sourceLineNo">177</span><a id="line.177">   *     degrees since the previous pose update, the twist would be Twist3d(0.01, 0.0, 0.0, new new</a>
+<span class="sourceLineNo">178</span><a id="line.178">   *     Rotation3d(0.0, 0.0, Units.degreesToRadians(0.5))).</a>
+<span class="sourceLineNo">179</span><a id="line.179">   * @return The new pose of the robot.</a>
+<span class="sourceLineNo">180</span><a id="line.180">   */</a>
+<span class="sourceLineNo">181</span><a id="line.181">  public Pose3d exp(Twist3d twist) {</a>
+<span class="sourceLineNo">182</span><a id="line.182">    final var Omega = rotationVectorToMatrix(VecBuilder.fill(twist.rx, twist.ry, twist.rz));</a>
+<span class="sourceLineNo">183</span><a id="line.183">    final var OmegaSq = Omega.times(Omega);</a>
+<span class="sourceLineNo">184</span><a id="line.184"></a>
+<span class="sourceLineNo">185</span><a id="line.185">    double thetaSq = twist.rx * twist.rx + twist.ry * twist.ry + twist.rz * twist.rz;</a>
 <span class="sourceLineNo">186</span><a id="line.186"></a>
-<span class="sourceLineNo">187</span><a id="line.187">    final var transform =</a>
-<span class="sourceLineNo">188</span><a id="line.188">        new Transform3d(</a>
-<span class="sourceLineNo">189</span><a id="line.189">            new Translation3d(translation.get(0, 0), translation.get(1, 0), translation.get(2, 0)),</a>
-<span class="sourceLineNo">190</span><a id="line.190">            new Rotation3d(twist.rx, twist.ry, twist.rz));</a>
-<span class="sourceLineNo">191</span><a id="line.191"></a>
-<span class="sourceLineNo">192</span><a id="line.192">    return this.plus(transform);</a>
-<span class="sourceLineNo">193</span><a id="line.193">  }</a>
-<span class="sourceLineNo">194</span><a id="line.194"></a>
-<span class="sourceLineNo">195</span><a id="line.195">  /**</a>
-<span class="sourceLineNo">196</span><a id="line.196">   * Returns a Twist3d that maps this pose to the end pose. If c is the output of a.Log(b), then</a>
-<span class="sourceLineNo">197</span><a id="line.197">   * a.Exp(c) would yield b.</a>
-<span class="sourceLineNo">198</span><a id="line.198">   *</a>
-<span class="sourceLineNo">199</span><a id="line.199">   * @param end The end pose for the transformation.</a>
-<span class="sourceLineNo">200</span><a id="line.200">   * @return The twist that maps this to end.</a>
-<span class="sourceLineNo">201</span><a id="line.201">   */</a>
-<span class="sourceLineNo">202</span><a id="line.202">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">203</span><a id="line.203">  public Twist3d log(Pose3d end) {</a>
-<span class="sourceLineNo">204</span><a id="line.204">    final var transform = end.relativeTo(this);</a>
+<span class="sourceLineNo">187</span><a id="line.187">    // Get left Jacobian of SO3. See first line in right column of</a>
+<span class="sourceLineNo">188</span><a id="line.188">    // http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17_identities.pdf</a>
+<span class="sourceLineNo">189</span><a id="line.189">    Matrix&lt;N3, N3&gt; J;</a>
+<span class="sourceLineNo">190</span><a id="line.190">    if (thetaSq &lt; 1E-9 * 1E-9) {</a>
+<span class="sourceLineNo">191</span><a id="line.191">      // J = I + 0.5ω</a>
+<span class="sourceLineNo">192</span><a id="line.192">      J = Matrix.eye(Nat.N3()).plus(Omega.times(0.5));</a>
+<span class="sourceLineNo">193</span><a id="line.193">    } else {</a>
+<span class="sourceLineNo">194</span><a id="line.194">      double theta = Math.sqrt(thetaSq);</a>
+<span class="sourceLineNo">195</span><a id="line.195">      // J = I + (1 − cos(θ))/θ² ω + (θ − sin(θ))/θ³ ω²</a>
+<span class="sourceLineNo">196</span><a id="line.196">      J =</a>
+<span class="sourceLineNo">197</span><a id="line.197">          Matrix.eye(Nat.N3())</a>
+<span class="sourceLineNo">198</span><a id="line.198">              .plus(Omega.times((1.0 - Math.cos(theta)) / thetaSq))</a>
+<span class="sourceLineNo">199</span><a id="line.199">              .plus(OmegaSq.times((theta - Math.sin(theta)) / (thetaSq * theta)));</a>
+<span class="sourceLineNo">200</span><a id="line.200">    }</a>
+<span class="sourceLineNo">201</span><a id="line.201"></a>
+<span class="sourceLineNo">202</span><a id="line.202">    // Get translation component</a>
+<span class="sourceLineNo">203</span><a id="line.203">    final var translation =</a>
+<span class="sourceLineNo">204</span><a id="line.204">        J.times(new MatBuilder&lt;&gt;(Nat.N3(), Nat.N1()).fill(twist.dx, twist.dy, twist.dz));</a>
 <span class="sourceLineNo">205</span><a id="line.205"></a>
-<span class="sourceLineNo">206</span><a id="line.206">    final var rotVec = transform.getRotation().getQuaternion().toRotationVector();</a>
-<span class="sourceLineNo">207</span><a id="line.207"></a>
-<span class="sourceLineNo">208</span><a id="line.208">    final var Omega = rotationVectorToMatrix(rotVec);</a>
-<span class="sourceLineNo">209</span><a id="line.209">    final var OmegaSq = Omega.times(Omega);</a>
+<span class="sourceLineNo">206</span><a id="line.206">    final var transform =</a>
+<span class="sourceLineNo">207</span><a id="line.207">        new Transform3d(</a>
+<span class="sourceLineNo">208</span><a id="line.208">            new Translation3d(translation.get(0, 0), translation.get(1, 0), translation.get(2, 0)),</a>
+<span class="sourceLineNo">209</span><a id="line.209">            new Rotation3d(twist.rx, twist.ry, twist.rz));</a>
 <span class="sourceLineNo">210</span><a id="line.210"></a>
-<span class="sourceLineNo">211</span><a id="line.211">    double thetaSq =</a>
-<span class="sourceLineNo">212</span><a id="line.212">        rotVec.get(0, 0) * rotVec.get(0, 0)</a>
-<span class="sourceLineNo">213</span><a id="line.213">            + rotVec.get(1, 0) * rotVec.get(1, 0)</a>
-<span class="sourceLineNo">214</span><a id="line.214">            + rotVec.get(2, 0) * rotVec.get(2, 0);</a>
-<span class="sourceLineNo">215</span><a id="line.215"></a>
-<span class="sourceLineNo">216</span><a id="line.216">    // Get left Jacobian inverse of SO3. See fourth line in right column of</a>
-<span class="sourceLineNo">217</span><a id="line.217">    // http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17_identities.pdf</a>
-<span class="sourceLineNo">218</span><a id="line.218">    Matrix&lt;N3, N3&gt; Jinv;</a>
-<span class="sourceLineNo">219</span><a id="line.219">    if (thetaSq &lt; 1E-9 * 1E-9) {</a>
-<span class="sourceLineNo">220</span><a id="line.220">      // J⁻¹ = I − 0.5ω + 1/12 ω²</a>
-<span class="sourceLineNo">221</span><a id="line.221">      Jinv = Matrix.eye(Nat.N3()).minus(Omega.times(0.5)).plus(OmegaSq.times(1.0 / 12.0));</a>
-<span class="sourceLineNo">222</span><a id="line.222">    } else {</a>
-<span class="sourceLineNo">223</span><a id="line.223">      double theta = Math.sqrt(thetaSq);</a>
-<span class="sourceLineNo">224</span><a id="line.224">      double halfTheta = 0.5 * theta;</a>
+<span class="sourceLineNo">211</span><a id="line.211">    return this.plus(transform);</a>
+<span class="sourceLineNo">212</span><a id="line.212">  }</a>
+<span class="sourceLineNo">213</span><a id="line.213"></a>
+<span class="sourceLineNo">214</span><a id="line.214">  /**</a>
+<span class="sourceLineNo">215</span><a id="line.215">   * Returns a Twist3d that maps this pose to the end pose. If c is the output of a.Log(b), then</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * a.Exp(c) would yield b.</a>
+<span class="sourceLineNo">217</span><a id="line.217">   *</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * @param end The end pose for the transformation.</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * @return The twist that maps this to end.</a>
+<span class="sourceLineNo">220</span><a id="line.220">   */</a>
+<span class="sourceLineNo">221</span><a id="line.221">  public Twist3d log(Pose3d end) {</a>
+<span class="sourceLineNo">222</span><a id="line.222">    final var transform = end.relativeTo(this);</a>
+<span class="sourceLineNo">223</span><a id="line.223"></a>
+<span class="sourceLineNo">224</span><a id="line.224">    final var rotVec = transform.getRotation().getQuaternion().toRotationVector();</a>
 <span class="sourceLineNo">225</span><a id="line.225"></a>
-<span class="sourceLineNo">226</span><a id="line.226">      // J⁻¹ = I − 0.5ω + (1 − 0.5θ cos(θ/2) / sin(θ/2))/θ² ω²</a>
-<span class="sourceLineNo">227</span><a id="line.227">      Jinv =</a>
-<span class="sourceLineNo">228</span><a id="line.228">          Matrix.eye(Nat.N3())</a>
-<span class="sourceLineNo">229</span><a id="line.229">              .minus(Omega.times(0.5))</a>
-<span class="sourceLineNo">230</span><a id="line.230">              .plus(</a>
-<span class="sourceLineNo">231</span><a id="line.231">                  OmegaSq.times(</a>
-<span class="sourceLineNo">232</span><a id="line.232">                      (1.0 - 0.5 * theta * Math.cos(halfTheta) / Math.sin(halfTheta)) / thetaSq));</a>
-<span class="sourceLineNo">233</span><a id="line.233">    }</a>
-<span class="sourceLineNo">234</span><a id="line.234"></a>
-<span class="sourceLineNo">235</span><a id="line.235">    // Get dtranslation component</a>
-<span class="sourceLineNo">236</span><a id="line.236">    final var dtranslation =</a>
-<span class="sourceLineNo">237</span><a id="line.237">        Jinv.times(</a>
-<span class="sourceLineNo">238</span><a id="line.238">            new MatBuilder&lt;&gt;(Nat.N3(), Nat.N1())</a>
-<span class="sourceLineNo">239</span><a id="line.239">                .fill(transform.getX(), transform.getY(), transform.getZ()));</a>
-<span class="sourceLineNo">240</span><a id="line.240"></a>
-<span class="sourceLineNo">241</span><a id="line.241">    return new Twist3d(</a>
-<span class="sourceLineNo">242</span><a id="line.242">        dtranslation.get(0, 0),</a>
-<span class="sourceLineNo">243</span><a id="line.243">        dtranslation.get(1, 0),</a>
-<span class="sourceLineNo">244</span><a id="line.244">        dtranslation.get(2, 0),</a>
-<span class="sourceLineNo">245</span><a id="line.245">        rotVec.get(0, 0),</a>
-<span class="sourceLineNo">246</span><a id="line.246">        rotVec.get(1, 0),</a>
-<span class="sourceLineNo">247</span><a id="line.247">        rotVec.get(2, 0));</a>
-<span class="sourceLineNo">248</span><a id="line.248">  }</a>
-<span class="sourceLineNo">249</span><a id="line.249"></a>
-<span class="sourceLineNo">250</span><a id="line.250">  /**</a>
-<span class="sourceLineNo">251</span><a id="line.251">   * Returns a Pose2d representing this Pose3d projected into the X-Y plane.</a>
-<span class="sourceLineNo">252</span><a id="line.252">   *</a>
-<span class="sourceLineNo">253</span><a id="line.253">   * @return A Pose2d representing this Pose3d projected into the X-Y plane.</a>
-<span class="sourceLineNo">254</span><a id="line.254">   */</a>
-<span class="sourceLineNo">255</span><a id="line.255">  public Pose2d toPose2d() {</a>
-<span class="sourceLineNo">256</span><a id="line.256">    return new Pose2d(m_translation.toTranslation2d(), m_rotation.toRotation2d());</a>
-<span class="sourceLineNo">257</span><a id="line.257">  }</a>
+<span class="sourceLineNo">226</span><a id="line.226">    final var Omega = rotationVectorToMatrix(rotVec);</a>
+<span class="sourceLineNo">227</span><a id="line.227">    final var OmegaSq = Omega.times(Omega);</a>
+<span class="sourceLineNo">228</span><a id="line.228"></a>
+<span class="sourceLineNo">229</span><a id="line.229">    double thetaSq =</a>
+<span class="sourceLineNo">230</span><a id="line.230">        rotVec.get(0, 0) * rotVec.get(0, 0)</a>
+<span class="sourceLineNo">231</span><a id="line.231">            + rotVec.get(1, 0) * rotVec.get(1, 0)</a>
+<span class="sourceLineNo">232</span><a id="line.232">            + rotVec.get(2, 0) * rotVec.get(2, 0);</a>
+<span class="sourceLineNo">233</span><a id="line.233"></a>
+<span class="sourceLineNo">234</span><a id="line.234">    // Get left Jacobian inverse of SO3. See fourth line in right column of</a>
+<span class="sourceLineNo">235</span><a id="line.235">    // http://asrl.utias.utoronto.ca/~tdb/bib/barfoot_ser17_identities.pdf</a>
+<span class="sourceLineNo">236</span><a id="line.236">    Matrix&lt;N3, N3&gt; Jinv;</a>
+<span class="sourceLineNo">237</span><a id="line.237">    if (thetaSq &lt; 1E-9 * 1E-9) {</a>
+<span class="sourceLineNo">238</span><a id="line.238">      // J⁻¹ = I − 0.5ω + 1/12 ω²</a>
+<span class="sourceLineNo">239</span><a id="line.239">      Jinv = Matrix.eye(Nat.N3()).minus(Omega.times(0.5)).plus(OmegaSq.times(1.0 / 12.0));</a>
+<span class="sourceLineNo">240</span><a id="line.240">    } else {</a>
+<span class="sourceLineNo">241</span><a id="line.241">      double theta = Math.sqrt(thetaSq);</a>
+<span class="sourceLineNo">242</span><a id="line.242">      double halfTheta = 0.5 * theta;</a>
+<span class="sourceLineNo">243</span><a id="line.243"></a>
+<span class="sourceLineNo">244</span><a id="line.244">      // J⁻¹ = I − 0.5ω + (1 − 0.5θ cos(θ/2) / sin(θ/2))/θ² ω²</a>
+<span class="sourceLineNo">245</span><a id="line.245">      Jinv =</a>
+<span class="sourceLineNo">246</span><a id="line.246">          Matrix.eye(Nat.N3())</a>
+<span class="sourceLineNo">247</span><a id="line.247">              .minus(Omega.times(0.5))</a>
+<span class="sourceLineNo">248</span><a id="line.248">              .plus(</a>
+<span class="sourceLineNo">249</span><a id="line.249">                  OmegaSq.times(</a>
+<span class="sourceLineNo">250</span><a id="line.250">                      (1.0 - 0.5 * theta * Math.cos(halfTheta) / Math.sin(halfTheta)) / thetaSq));</a>
+<span class="sourceLineNo">251</span><a id="line.251">    }</a>
+<span class="sourceLineNo">252</span><a id="line.252"></a>
+<span class="sourceLineNo">253</span><a id="line.253">    // Get dtranslation component</a>
+<span class="sourceLineNo">254</span><a id="line.254">    final var dtranslation =</a>
+<span class="sourceLineNo">255</span><a id="line.255">        Jinv.times(</a>
+<span class="sourceLineNo">256</span><a id="line.256">            new MatBuilder&lt;&gt;(Nat.N3(), Nat.N1())</a>
+<span class="sourceLineNo">257</span><a id="line.257">                .fill(transform.getX(), transform.getY(), transform.getZ()));</a>
 <span class="sourceLineNo">258</span><a id="line.258"></a>
-<span class="sourceLineNo">259</span><a id="line.259">  @Override</a>
-<span class="sourceLineNo">260</span><a id="line.260">  public String toString() {</a>
-<span class="sourceLineNo">261</span><a id="line.261">    return String.format("Pose3d(%s, %s)", m_translation, m_rotation);</a>
-<span class="sourceLineNo">262</span><a id="line.262">  }</a>
-<span class="sourceLineNo">263</span><a id="line.263"></a>
-<span class="sourceLineNo">264</span><a id="line.264">  /**</a>
-<span class="sourceLineNo">265</span><a id="line.265">   * Checks equality between this Pose3d and another object.</a>
-<span class="sourceLineNo">266</span><a id="line.266">   *</a>
-<span class="sourceLineNo">267</span><a id="line.267">   * @param obj The other object.</a>
-<span class="sourceLineNo">268</span><a id="line.268">   * @return Whether the two objects are equal or not.</a>
-<span class="sourceLineNo">269</span><a id="line.269">   */</a>
-<span class="sourceLineNo">270</span><a id="line.270">  @Override</a>
-<span class="sourceLineNo">271</span><a id="line.271">  public boolean equals(Object obj) {</a>
-<span class="sourceLineNo">272</span><a id="line.272">    if (obj instanceof Pose3d) {</a>
-<span class="sourceLineNo">273</span><a id="line.273">      return ((Pose3d) obj).m_translation.equals(m_translation)</a>
-<span class="sourceLineNo">274</span><a id="line.274">          &amp;&amp; ((Pose3d) obj).m_rotation.equals(m_rotation);</a>
-<span class="sourceLineNo">275</span><a id="line.275">    }</a>
-<span class="sourceLineNo">276</span><a id="line.276">    return false;</a>
-<span class="sourceLineNo">277</span><a id="line.277">  }</a>
-<span class="sourceLineNo">278</span><a id="line.278"></a>
-<span class="sourceLineNo">279</span><a id="line.279">  @Override</a>
-<span class="sourceLineNo">280</span><a id="line.280">  public int hashCode() {</a>
-<span class="sourceLineNo">281</span><a id="line.281">    return Objects.hash(m_translation, m_rotation);</a>
-<span class="sourceLineNo">282</span><a id="line.282">  }</a>
-<span class="sourceLineNo">283</span><a id="line.283"></a>
-<span class="sourceLineNo">284</span><a id="line.284">  @Override</a>
-<span class="sourceLineNo">285</span><a id="line.285">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">286</span><a id="line.286">  public Pose3d interpolate(Pose3d endValue, double t) {</a>
-<span class="sourceLineNo">287</span><a id="line.287">    if (t &lt; 0) {</a>
-<span class="sourceLineNo">288</span><a id="line.288">      return this;</a>
-<span class="sourceLineNo">289</span><a id="line.289">    } else if (t &gt;= 1) {</a>
-<span class="sourceLineNo">290</span><a id="line.290">      return endValue;</a>
-<span class="sourceLineNo">291</span><a id="line.291">    } else {</a>
-<span class="sourceLineNo">292</span><a id="line.292">      var twist = this.log(endValue);</a>
-<span class="sourceLineNo">293</span><a id="line.293">      var scaledTwist =</a>
-<span class="sourceLineNo">294</span><a id="line.294">          new Twist3d(</a>
-<span class="sourceLineNo">295</span><a id="line.295">              twist.dx * t, twist.dy * t, twist.dz * t, twist.rx * t, twist.ry * t, twist.rz * t);</a>
-<span class="sourceLineNo">296</span><a id="line.296">      return this.exp(scaledTwist);</a>
-<span class="sourceLineNo">297</span><a id="line.297">    }</a>
-<span class="sourceLineNo">298</span><a id="line.298">  }</a>
-<span class="sourceLineNo">299</span><a id="line.299"></a>
-<span class="sourceLineNo">300</span><a id="line.300">  /**</a>
-<span class="sourceLineNo">301</span><a id="line.301">   * Applies the hat operator to a rotation vector.</a>
-<span class="sourceLineNo">302</span><a id="line.302">   *</a>
-<span class="sourceLineNo">303</span><a id="line.303">   * &lt;p&gt;It takes a rotation vector and returns the corresponding matrix representation of the Lie</a>
-<span class="sourceLineNo">304</span><a id="line.304">   * algebra element (a 3x3 rotation matrix).</a>
-<span class="sourceLineNo">305</span><a id="line.305">   *</a>
-<span class="sourceLineNo">306</span><a id="line.306">   * @param rotation The rotation vector.</a>
-<span class="sourceLineNo">307</span><a id="line.307">   * @return The rotation vector as a 3x3 rotation matrix.</a>
-<span class="sourceLineNo">308</span><a id="line.308">   */</a>
-<span class="sourceLineNo">309</span><a id="line.309">  private Matrix&lt;N3, N3&gt; rotationVectorToMatrix(Vector&lt;N3&gt; rotation) {</a>
-<span class="sourceLineNo">310</span><a id="line.310">    // Given a rotation vector &lt;a, b, c&gt;,</a>
-<span class="sourceLineNo">311</span><a id="line.311">    //         [ 0 -c  b]</a>
-<span class="sourceLineNo">312</span><a id="line.312">    // Omega = [ c  0 -a]</a>
-<span class="sourceLineNo">313</span><a id="line.313">    //         [-b  a  0]</a>
-<span class="sourceLineNo">314</span><a id="line.314">    return new MatBuilder&lt;&gt;(Nat.N3(), Nat.N3())</a>
-<span class="sourceLineNo">315</span><a id="line.315">        .fill(</a>
-<span class="sourceLineNo">316</span><a id="line.316">            0.0,</a>
-<span class="sourceLineNo">317</span><a id="line.317">            -rotation.get(2, 0),</a>
-<span class="sourceLineNo">318</span><a id="line.318">            rotation.get(1, 0),</a>
-<span class="sourceLineNo">319</span><a id="line.319">            rotation.get(2, 0),</a>
-<span class="sourceLineNo">320</span><a id="line.320">            0.0,</a>
-<span class="sourceLineNo">321</span><a id="line.321">            -rotation.get(0, 0),</a>
-<span class="sourceLineNo">322</span><a id="line.322">            -rotation.get(1, 0),</a>
-<span class="sourceLineNo">323</span><a id="line.323">            rotation.get(0, 0),</a>
-<span class="sourceLineNo">324</span><a id="line.324">            0.0);</a>
-<span class="sourceLineNo">325</span><a id="line.325">  }</a>
-<span class="sourceLineNo">326</span><a id="line.326">}</a>
+<span class="sourceLineNo">259</span><a id="line.259">    return new Twist3d(</a>
+<span class="sourceLineNo">260</span><a id="line.260">        dtranslation.get(0, 0),</a>
+<span class="sourceLineNo">261</span><a id="line.261">        dtranslation.get(1, 0),</a>
+<span class="sourceLineNo">262</span><a id="line.262">        dtranslation.get(2, 0),</a>
+<span class="sourceLineNo">263</span><a id="line.263">        rotVec.get(0, 0),</a>
+<span class="sourceLineNo">264</span><a id="line.264">        rotVec.get(1, 0),</a>
+<span class="sourceLineNo">265</span><a id="line.265">        rotVec.get(2, 0));</a>
+<span class="sourceLineNo">266</span><a id="line.266">  }</a>
+<span class="sourceLineNo">267</span><a id="line.267"></a>
+<span class="sourceLineNo">268</span><a id="line.268">  /**</a>
+<span class="sourceLineNo">269</span><a id="line.269">   * Returns a Pose2d representing this Pose3d projected into the X-Y plane.</a>
+<span class="sourceLineNo">270</span><a id="line.270">   *</a>
+<span class="sourceLineNo">271</span><a id="line.271">   * @return A Pose2d representing this Pose3d projected into the X-Y plane.</a>
+<span class="sourceLineNo">272</span><a id="line.272">   */</a>
+<span class="sourceLineNo">273</span><a id="line.273">  public Pose2d toPose2d() {</a>
+<span class="sourceLineNo">274</span><a id="line.274">    return new Pose2d(m_translation.toTranslation2d(), m_rotation.toRotation2d());</a>
+<span class="sourceLineNo">275</span><a id="line.275">  }</a>
+<span class="sourceLineNo">276</span><a id="line.276"></a>
+<span class="sourceLineNo">277</span><a id="line.277">  @Override</a>
+<span class="sourceLineNo">278</span><a id="line.278">  public String toString() {</a>
+<span class="sourceLineNo">279</span><a id="line.279">    return String.format("Pose3d(%s, %s)", m_translation, m_rotation);</a>
+<span class="sourceLineNo">280</span><a id="line.280">  }</a>
+<span class="sourceLineNo">281</span><a id="line.281"></a>
+<span class="sourceLineNo">282</span><a id="line.282">  /**</a>
+<span class="sourceLineNo">283</span><a id="line.283">   * Checks equality between this Pose3d and another object.</a>
+<span class="sourceLineNo">284</span><a id="line.284">   *</a>
+<span class="sourceLineNo">285</span><a id="line.285">   * @param obj The other object.</a>
+<span class="sourceLineNo">286</span><a id="line.286">   * @return Whether the two objects are equal or not.</a>
+<span class="sourceLineNo">287</span><a id="line.287">   */</a>
+<span class="sourceLineNo">288</span><a id="line.288">  @Override</a>
+<span class="sourceLineNo">289</span><a id="line.289">  public boolean equals(Object obj) {</a>
+<span class="sourceLineNo">290</span><a id="line.290">    if (obj instanceof Pose3d) {</a>
+<span class="sourceLineNo">291</span><a id="line.291">      return ((Pose3d) obj).m_translation.equals(m_translation)</a>
+<span class="sourceLineNo">292</span><a id="line.292">          &amp;&amp; ((Pose3d) obj).m_rotation.equals(m_rotation);</a>
+<span class="sourceLineNo">293</span><a id="line.293">    }</a>
+<span class="sourceLineNo">294</span><a id="line.294">    return false;</a>
+<span class="sourceLineNo">295</span><a id="line.295">  }</a>
+<span class="sourceLineNo">296</span><a id="line.296"></a>
+<span class="sourceLineNo">297</span><a id="line.297">  @Override</a>
+<span class="sourceLineNo">298</span><a id="line.298">  public int hashCode() {</a>
+<span class="sourceLineNo">299</span><a id="line.299">    return Objects.hash(m_translation, m_rotation);</a>
+<span class="sourceLineNo">300</span><a id="line.300">  }</a>
+<span class="sourceLineNo">301</span><a id="line.301"></a>
+<span class="sourceLineNo">302</span><a id="line.302">  @Override</a>
+<span class="sourceLineNo">303</span><a id="line.303">  public Pose3d interpolate(Pose3d endValue, double t) {</a>
+<span class="sourceLineNo">304</span><a id="line.304">    if (t &lt; 0) {</a>
+<span class="sourceLineNo">305</span><a id="line.305">      return this;</a>
+<span class="sourceLineNo">306</span><a id="line.306">    } else if (t &gt;= 1) {</a>
+<span class="sourceLineNo">307</span><a id="line.307">      return endValue;</a>
+<span class="sourceLineNo">308</span><a id="line.308">    } else {</a>
+<span class="sourceLineNo">309</span><a id="line.309">      var twist = this.log(endValue);</a>
+<span class="sourceLineNo">310</span><a id="line.310">      var scaledTwist =</a>
+<span class="sourceLineNo">311</span><a id="line.311">          new Twist3d(</a>
+<span class="sourceLineNo">312</span><a id="line.312">              twist.dx * t, twist.dy * t, twist.dz * t, twist.rx * t, twist.ry * t, twist.rz * t);</a>
+<span class="sourceLineNo">313</span><a id="line.313">      return this.exp(scaledTwist);</a>
+<span class="sourceLineNo">314</span><a id="line.314">    }</a>
+<span class="sourceLineNo">315</span><a id="line.315">  }</a>
+<span class="sourceLineNo">316</span><a id="line.316"></a>
+<span class="sourceLineNo">317</span><a id="line.317">  /**</a>
+<span class="sourceLineNo">318</span><a id="line.318">   * Applies the hat operator to a rotation vector.</a>
+<span class="sourceLineNo">319</span><a id="line.319">   *</a>
+<span class="sourceLineNo">320</span><a id="line.320">   * &lt;p&gt;It takes a rotation vector and returns the corresponding matrix representation of the Lie</a>
+<span class="sourceLineNo">321</span><a id="line.321">   * algebra element (a 3x3 rotation matrix).</a>
+<span class="sourceLineNo">322</span><a id="line.322">   *</a>
+<span class="sourceLineNo">323</span><a id="line.323">   * @param rotation The rotation vector.</a>
+<span class="sourceLineNo">324</span><a id="line.324">   * @return The rotation vector as a 3x3 rotation matrix.</a>
+<span class="sourceLineNo">325</span><a id="line.325">   */</a>
+<span class="sourceLineNo">326</span><a id="line.326">  private Matrix&lt;N3, N3&gt; rotationVectorToMatrix(Vector&lt;N3&gt; rotation) {</a>
+<span class="sourceLineNo">327</span><a id="line.327">    // Given a rotation vector &lt;a, b, c&gt;,</a>
+<span class="sourceLineNo">328</span><a id="line.328">    //         [ 0 -c  b]</a>
+<span class="sourceLineNo">329</span><a id="line.329">    // Omega = [ c  0 -a]</a>
+<span class="sourceLineNo">330</span><a id="line.330">    //         [-b  a  0]</a>
+<span class="sourceLineNo">331</span><a id="line.331">    return new MatBuilder&lt;&gt;(Nat.N3(), Nat.N3())</a>
+<span class="sourceLineNo">332</span><a id="line.332">        .fill(</a>
+<span class="sourceLineNo">333</span><a id="line.333">            0.0,</a>
+<span class="sourceLineNo">334</span><a id="line.334">            -rotation.get(2, 0),</a>
+<span class="sourceLineNo">335</span><a id="line.335">            rotation.get(1, 0),</a>
+<span class="sourceLineNo">336</span><a id="line.336">            rotation.get(2, 0),</a>
+<span class="sourceLineNo">337</span><a id="line.337">            0.0,</a>
+<span class="sourceLineNo">338</span><a id="line.338">            -rotation.get(0, 0),</a>
+<span class="sourceLineNo">339</span><a id="line.339">            -rotation.get(1, 0),</a>
+<span class="sourceLineNo">340</span><a id="line.340">            rotation.get(0, 0),</a>
+<span class="sourceLineNo">341</span><a id="line.341">            0.0);</a>
+<span class="sourceLineNo">342</span><a id="line.342">  }</a>
+<span class="sourceLineNo">343</span><a id="line.343">}</a>
 
 
 

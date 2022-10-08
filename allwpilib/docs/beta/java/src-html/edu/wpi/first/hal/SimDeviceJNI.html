@@ -55,325 +55,242 @@
 <span class="sourceLineNo">043</span><a id="line.43">   *</a>
 <span class="sourceLineNo">044</span><a id="line.44">   * @param device simulated device handle</a>
 <span class="sourceLineNo">045</span><a id="line.45">   * @param name value name</a>
-<span class="sourceLineNo">046</span><a id="line.46">   * @param readonly if the value should not be written from simulation side</a>
+<span class="sourceLineNo">046</span><a id="line.46">   * @param direction input/output/bidir (from perspective of user code)</a>
 <span class="sourceLineNo">047</span><a id="line.47">   * @param initialValue initial value</a>
 <span class="sourceLineNo">048</span><a id="line.48">   * @return simulated value handle</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * @deprecated Use direction-taking function instead</a>
-<span class="sourceLineNo">050</span><a id="line.50">   */</a>
-<span class="sourceLineNo">051</span><a id="line.51">  @Deprecated</a>
-<span class="sourceLineNo">052</span><a id="line.52">  public static int createSimValue(</a>
-<span class="sourceLineNo">053</span><a id="line.53">      int device, String name, boolean readonly, HALValue initialValue) {</a>
-<span class="sourceLineNo">054</span><a id="line.54">    return createSimValueNative(</a>
-<span class="sourceLineNo">055</span><a id="line.55">        device,</a>
-<span class="sourceLineNo">056</span><a id="line.56">        name,</a>
-<span class="sourceLineNo">057</span><a id="line.57">        readonly ? kOutput : kInput,</a>
-<span class="sourceLineNo">058</span><a id="line.58">        initialValue.getType(),</a>
-<span class="sourceLineNo">059</span><a id="line.59">        initialValue.getNativeLong(),</a>
-<span class="sourceLineNo">060</span><a id="line.60">        initialValue.getNativeDouble());</a>
-<span class="sourceLineNo">061</span><a id="line.61">  }</a>
-<span class="sourceLineNo">062</span><a id="line.62"></a>
-<span class="sourceLineNo">063</span><a id="line.63">  /**</a>
-<span class="sourceLineNo">064</span><a id="line.64">   * Creates a value on a simulated device.</a>
-<span class="sourceLineNo">065</span><a id="line.65">   *</a>
-<span class="sourceLineNo">066</span><a id="line.66">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">067</span><a id="line.67">   *</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * @param device simulated device handle</a>
-<span class="sourceLineNo">069</span><a id="line.69">   * @param name value name</a>
-<span class="sourceLineNo">070</span><a id="line.70">   * @param direction input/output/bidir (from perspective of user code)</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * @param initialValue initial value</a>
-<span class="sourceLineNo">072</span><a id="line.72">   * @return simulated value handle</a>
-<span class="sourceLineNo">073</span><a id="line.73">   */</a>
-<span class="sourceLineNo">074</span><a id="line.74">  public static int createSimValue(int device, String name, int direction, HALValue initialValue) {</a>
-<span class="sourceLineNo">075</span><a id="line.75">    return createSimValueNative(</a>
-<span class="sourceLineNo">076</span><a id="line.76">        device,</a>
-<span class="sourceLineNo">077</span><a id="line.77">        name,</a>
-<span class="sourceLineNo">078</span><a id="line.78">        direction,</a>
-<span class="sourceLineNo">079</span><a id="line.79">        initialValue.getType(),</a>
-<span class="sourceLineNo">080</span><a id="line.80">        initialValue.getNativeLong(),</a>
-<span class="sourceLineNo">081</span><a id="line.81">        initialValue.getNativeDouble());</a>
-<span class="sourceLineNo">082</span><a id="line.82">  }</a>
-<span class="sourceLineNo">083</span><a id="line.83"></a>
-<span class="sourceLineNo">084</span><a id="line.84">  /**</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * Creates an int value on a simulated device.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   *</a>
-<span class="sourceLineNo">087</span><a id="line.87">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">088</span><a id="line.88">   *</a>
-<span class="sourceLineNo">089</span><a id="line.89">   * @param device simulated device handle</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * @param name value name</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * @param direction input/output/bidir (from perspective of user code)</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * @param initialValue initial value</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * @return simulated value handle</a>
-<span class="sourceLineNo">094</span><a id="line.94">   */</a>
-<span class="sourceLineNo">095</span><a id="line.95">  public static int createSimValueInt(int device, String name, int direction, int initialValue) {</a>
-<span class="sourceLineNo">096</span><a id="line.96">    return createSimValueNative(device, name, direction, HALValue.kInt, initialValue, 0.0);</a>
-<span class="sourceLineNo">097</span><a id="line.97">  }</a>
-<span class="sourceLineNo">098</span><a id="line.98"></a>
-<span class="sourceLineNo">099</span><a id="line.99">  /**</a>
-<span class="sourceLineNo">100</span><a id="line.100">   * Creates a long value on a simulated device.</a>
-<span class="sourceLineNo">101</span><a id="line.101">   *</a>
-<span class="sourceLineNo">102</span><a id="line.102">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">103</span><a id="line.103">   *</a>
-<span class="sourceLineNo">104</span><a id="line.104">   * @param device simulated device handle</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * @param name value name</a>
-<span class="sourceLineNo">106</span><a id="line.106">   * @param direction input/output/bidir (from perspective of user code)</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * @param initialValue initial value</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * @return simulated value handle</a>
-<span class="sourceLineNo">109</span><a id="line.109">   */</a>
-<span class="sourceLineNo">110</span><a id="line.110">  public static int createSimValueLong(int device, String name, int direction, long initialValue) {</a>
-<span class="sourceLineNo">111</span><a id="line.111">    return createSimValueNative(device, name, direction, HALValue.kLong, initialValue, 0.0);</a>
-<span class="sourceLineNo">112</span><a id="line.112">  }</a>
-<span class="sourceLineNo">113</span><a id="line.113"></a>
-<span class="sourceLineNo">114</span><a id="line.114">  /**</a>
-<span class="sourceLineNo">115</span><a id="line.115">   * Creates a double value on a simulated device.</a>
-<span class="sourceLineNo">116</span><a id="line.116">   *</a>
-<span class="sourceLineNo">117</span><a id="line.117">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">118</span><a id="line.118">   *</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * @param device simulated device handle</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * @param name value name</a>
-<span class="sourceLineNo">121</span><a id="line.121">   * @param readonly if the value should not be written from simulation side</a>
-<span class="sourceLineNo">122</span><a id="line.122">   * @param initialValue initial value</a>
-<span class="sourceLineNo">123</span><a id="line.123">   * @return simulated value handle</a>
-<span class="sourceLineNo">124</span><a id="line.124">   * @deprecated Use direction-taking function instead</a>
-<span class="sourceLineNo">125</span><a id="line.125">   */</a>
-<span class="sourceLineNo">126</span><a id="line.126">  @Deprecated</a>
-<span class="sourceLineNo">127</span><a id="line.127">  public static int createSimValueDouble(</a>
-<span class="sourceLineNo">128</span><a id="line.128">      int device, String name, boolean readonly, double initialValue) {</a>
-<span class="sourceLineNo">129</span><a id="line.129">    return createSimValueNative(</a>
-<span class="sourceLineNo">130</span><a id="line.130">        device, name, readonly ? kOutput : kInput, HALValue.kDouble, 0, initialValue);</a>
-<span class="sourceLineNo">131</span><a id="line.131">  }</a>
-<span class="sourceLineNo">132</span><a id="line.132"></a>
-<span class="sourceLineNo">133</span><a id="line.133">  /**</a>
-<span class="sourceLineNo">134</span><a id="line.134">   * Creates a double value on a simulated device.</a>
-<span class="sourceLineNo">135</span><a id="line.135">   *</a>
-<span class="sourceLineNo">136</span><a id="line.136">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">137</span><a id="line.137">   *</a>
-<span class="sourceLineNo">138</span><a id="line.138">   * @param device simulated device handle</a>
-<span class="sourceLineNo">139</span><a id="line.139">   * @param name value name</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * @param direction input/output/bidir (from perspective of user code)</a>
-<span class="sourceLineNo">141</span><a id="line.141">   * @param initialValue initial value</a>
-<span class="sourceLineNo">142</span><a id="line.142">   * @return simulated value handle</a>
-<span class="sourceLineNo">143</span><a id="line.143">   */</a>
-<span class="sourceLineNo">144</span><a id="line.144">  public static int createSimValueDouble(</a>
-<span class="sourceLineNo">145</span><a id="line.145">      int device, String name, int direction, double initialValue) {</a>
-<span class="sourceLineNo">146</span><a id="line.146">    return createSimValueNative(device, name, direction, HALValue.kDouble, 0, initialValue);</a>
-<span class="sourceLineNo">147</span><a id="line.147">  }</a>
-<span class="sourceLineNo">148</span><a id="line.148"></a>
-<span class="sourceLineNo">149</span><a id="line.149">  /**</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * Creates an enumerated value on a simulated device.</a>
-<span class="sourceLineNo">151</span><a id="line.151">   *</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * &lt;p&gt;Enumerated values are always in the range 0 to numOptions-1.</a>
-<span class="sourceLineNo">153</span><a id="line.153">   *</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   *</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * @param device simulated device handle</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * @param name value name</a>
-<span class="sourceLineNo">158</span><a id="line.158">   * @param readonly if the value should not be written from simulation side</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * @param options array of option descriptions</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * @param initialValue initial value (selection)</a>
-<span class="sourceLineNo">161</span><a id="line.161">   * @return simulated value handle</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @deprecated Use direction-taking function instead</a>
-<span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  @Deprecated</a>
-<span class="sourceLineNo">165</span><a id="line.165">  public static int createSimValueEnum(</a>
-<span class="sourceLineNo">166</span><a id="line.166">      int device, String name, boolean readonly, String[] options, int initialValue) {</a>
-<span class="sourceLineNo">167</span><a id="line.167">    return createSimValueEnum(device, name, readonly ? kOutput : kInput, options, initialValue);</a>
-<span class="sourceLineNo">168</span><a id="line.168">  }</a>
-<span class="sourceLineNo">169</span><a id="line.169"></a>
-<span class="sourceLineNo">170</span><a id="line.170">  /**</a>
-<span class="sourceLineNo">171</span><a id="line.171">   * Creates an enumerated value on a simulated device.</a>
-<span class="sourceLineNo">172</span><a id="line.172">   *</a>
-<span class="sourceLineNo">173</span><a id="line.173">   * &lt;p&gt;Enumerated values are always in the range 0 to numOptions-1.</a>
-<span class="sourceLineNo">174</span><a id="line.174">   *</a>
-<span class="sourceLineNo">175</span><a id="line.175">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">176</span><a id="line.176">   *</a>
-<span class="sourceLineNo">177</span><a id="line.177">   * @param device simulated device handle</a>
-<span class="sourceLineNo">178</span><a id="line.178">   * @param name value name</a>
-<span class="sourceLineNo">179</span><a id="line.179">   * @param direction input/output/bidir (from perspective of user code)</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * @param options array of option descriptions</a>
-<span class="sourceLineNo">181</span><a id="line.181">   * @param initialValue initial value (selection)</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * @return simulated value handle</a>
-<span class="sourceLineNo">183</span><a id="line.183">   */</a>
-<span class="sourceLineNo">184</span><a id="line.184">  public static native int createSimValueEnum(</a>
-<span class="sourceLineNo">185</span><a id="line.185">      int device, String name, int direction, String[] options, int initialValue);</a>
+<span class="sourceLineNo">049</span><a id="line.49">   */</a>
+<span class="sourceLineNo">050</span><a id="line.50">  public static int createSimValue(int device, String name, int direction, HALValue initialValue) {</a>
+<span class="sourceLineNo">051</span><a id="line.51">    return createSimValueNative(</a>
+<span class="sourceLineNo">052</span><a id="line.52">        device,</a>
+<span class="sourceLineNo">053</span><a id="line.53">        name,</a>
+<span class="sourceLineNo">054</span><a id="line.54">        direction,</a>
+<span class="sourceLineNo">055</span><a id="line.55">        initialValue.getType(),</a>
+<span class="sourceLineNo">056</span><a id="line.56">        initialValue.getNativeLong(),</a>
+<span class="sourceLineNo">057</span><a id="line.57">        initialValue.getNativeDouble());</a>
+<span class="sourceLineNo">058</span><a id="line.58">  }</a>
+<span class="sourceLineNo">059</span><a id="line.59"></a>
+<span class="sourceLineNo">060</span><a id="line.60">  /**</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * Creates an int value on a simulated device.</a>
+<span class="sourceLineNo">062</span><a id="line.62">   *</a>
+<span class="sourceLineNo">063</span><a id="line.63">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
+<span class="sourceLineNo">064</span><a id="line.64">   *</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * @param device simulated device handle</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * @param name value name</a>
+<span class="sourceLineNo">067</span><a id="line.67">   * @param direction input/output/bidir (from perspective of user code)</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * @param initialValue initial value</a>
+<span class="sourceLineNo">069</span><a id="line.69">   * @return simulated value handle</a>
+<span class="sourceLineNo">070</span><a id="line.70">   */</a>
+<span class="sourceLineNo">071</span><a id="line.71">  public static int createSimValueInt(int device, String name, int direction, int initialValue) {</a>
+<span class="sourceLineNo">072</span><a id="line.72">    return createSimValueNative(device, name, direction, HALValue.kInt, initialValue, 0.0);</a>
+<span class="sourceLineNo">073</span><a id="line.73">  }</a>
+<span class="sourceLineNo">074</span><a id="line.74"></a>
+<span class="sourceLineNo">075</span><a id="line.75">  /**</a>
+<span class="sourceLineNo">076</span><a id="line.76">   * Creates a long value on a simulated device.</a>
+<span class="sourceLineNo">077</span><a id="line.77">   *</a>
+<span class="sourceLineNo">078</span><a id="line.78">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
+<span class="sourceLineNo">079</span><a id="line.79">   *</a>
+<span class="sourceLineNo">080</span><a id="line.80">   * @param device simulated device handle</a>
+<span class="sourceLineNo">081</span><a id="line.81">   * @param name value name</a>
+<span class="sourceLineNo">082</span><a id="line.82">   * @param direction input/output/bidir (from perspective of user code)</a>
+<span class="sourceLineNo">083</span><a id="line.83">   * @param initialValue initial value</a>
+<span class="sourceLineNo">084</span><a id="line.84">   * @return simulated value handle</a>
+<span class="sourceLineNo">085</span><a id="line.85">   */</a>
+<span class="sourceLineNo">086</span><a id="line.86">  public static int createSimValueLong(int device, String name, int direction, long initialValue) {</a>
+<span class="sourceLineNo">087</span><a id="line.87">    return createSimValueNative(device, name, direction, HALValue.kLong, initialValue, 0.0);</a>
+<span class="sourceLineNo">088</span><a id="line.88">  }</a>
+<span class="sourceLineNo">089</span><a id="line.89"></a>
+<span class="sourceLineNo">090</span><a id="line.90">  /**</a>
+<span class="sourceLineNo">091</span><a id="line.91">   * Creates a double value on a simulated device.</a>
+<span class="sourceLineNo">092</span><a id="line.92">   *</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
+<span class="sourceLineNo">094</span><a id="line.94">   *</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * @param device simulated device handle</a>
+<span class="sourceLineNo">096</span><a id="line.96">   * @param name value name</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * @param direction input/output/bidir (from perspective of user code)</a>
+<span class="sourceLineNo">098</span><a id="line.98">   * @param initialValue initial value</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * @return simulated value handle</a>
+<span class="sourceLineNo">100</span><a id="line.100">   */</a>
+<span class="sourceLineNo">101</span><a id="line.101">  public static int createSimValueDouble(</a>
+<span class="sourceLineNo">102</span><a id="line.102">      int device, String name, int direction, double initialValue) {</a>
+<span class="sourceLineNo">103</span><a id="line.103">    return createSimValueNative(device, name, direction, HALValue.kDouble, 0, initialValue);</a>
+<span class="sourceLineNo">104</span><a id="line.104">  }</a>
+<span class="sourceLineNo">105</span><a id="line.105"></a>
+<span class="sourceLineNo">106</span><a id="line.106">  /**</a>
+<span class="sourceLineNo">107</span><a id="line.107">   * Creates an enumerated value on a simulated device.</a>
+<span class="sourceLineNo">108</span><a id="line.108">   *</a>
+<span class="sourceLineNo">109</span><a id="line.109">   * &lt;p&gt;Enumerated values are always in the range 0 to numOptions-1.</a>
+<span class="sourceLineNo">110</span><a id="line.110">   *</a>
+<span class="sourceLineNo">111</span><a id="line.111">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
+<span class="sourceLineNo">112</span><a id="line.112">   *</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * @param device simulated device handle</a>
+<span class="sourceLineNo">114</span><a id="line.114">   * @param name value name</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * @param direction input/output/bidir (from perspective of user code)</a>
+<span class="sourceLineNo">116</span><a id="line.116">   * @param options array of option descriptions</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * @param initialValue initial value (selection)</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * @return simulated value handle</a>
+<span class="sourceLineNo">119</span><a id="line.119">   */</a>
+<span class="sourceLineNo">120</span><a id="line.120">  public static native int createSimValueEnum(</a>
+<span class="sourceLineNo">121</span><a id="line.121">      int device, String name, int direction, String[] options, int initialValue);</a>
+<span class="sourceLineNo">122</span><a id="line.122"></a>
+<span class="sourceLineNo">123</span><a id="line.123">  /**</a>
+<span class="sourceLineNo">124</span><a id="line.124">   * Creates an enumerated value on a simulated device with double values.</a>
+<span class="sourceLineNo">125</span><a id="line.125">   *</a>
+<span class="sourceLineNo">126</span><a id="line.126">   * &lt;p&gt;Enumerated values are always in the range 0 to numOptions-1.</a>
+<span class="sourceLineNo">127</span><a id="line.127">   *</a>
+<span class="sourceLineNo">128</span><a id="line.128">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
+<span class="sourceLineNo">129</span><a id="line.129">   *</a>
+<span class="sourceLineNo">130</span><a id="line.130">   * @param device simulated device handle</a>
+<span class="sourceLineNo">131</span><a id="line.131">   * @param name value name</a>
+<span class="sourceLineNo">132</span><a id="line.132">   * @param direction input/output/bidir (from perspective of user code)</a>
+<span class="sourceLineNo">133</span><a id="line.133">   * @param options array of option descriptions</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * @param optionValues array of option values (must be the same size as options)</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * @param initialValue initial value (selection)</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * @return simulated value handle</a>
+<span class="sourceLineNo">137</span><a id="line.137">   */</a>
+<span class="sourceLineNo">138</span><a id="line.138">  public static native int createSimValueEnumDouble(</a>
+<span class="sourceLineNo">139</span><a id="line.139">      int device,</a>
+<span class="sourceLineNo">140</span><a id="line.140">      String name,</a>
+<span class="sourceLineNo">141</span><a id="line.141">      int direction,</a>
+<span class="sourceLineNo">142</span><a id="line.142">      String[] options,</a>
+<span class="sourceLineNo">143</span><a id="line.143">      double[] optionValues,</a>
+<span class="sourceLineNo">144</span><a id="line.144">      int initialValue);</a>
+<span class="sourceLineNo">145</span><a id="line.145"></a>
+<span class="sourceLineNo">146</span><a id="line.146">  /**</a>
+<span class="sourceLineNo">147</span><a id="line.147">   * Creates a boolean value on a simulated device.</a>
+<span class="sourceLineNo">148</span><a id="line.148">   *</a>
+<span class="sourceLineNo">149</span><a id="line.149">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
+<span class="sourceLineNo">150</span><a id="line.150">   *</a>
+<span class="sourceLineNo">151</span><a id="line.151">   * @param device simulated device handle</a>
+<span class="sourceLineNo">152</span><a id="line.152">   * @param name value name</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * @param direction input/output/bidir (from perspective of user code)</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * @param initialValue initial value</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * @return simulated value handle</a>
+<span class="sourceLineNo">156</span><a id="line.156">   */</a>
+<span class="sourceLineNo">157</span><a id="line.157">  public static int createSimValueBoolean(</a>
+<span class="sourceLineNo">158</span><a id="line.158">      int device, String name, int direction, boolean initialValue) {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    return createSimValueNative(</a>
+<span class="sourceLineNo">160</span><a id="line.160">        device, name, direction, HALValue.kBoolean, initialValue ? 1 : 0, 0.0);</a>
+<span class="sourceLineNo">161</span><a id="line.161">  }</a>
+<span class="sourceLineNo">162</span><a id="line.162"></a>
+<span class="sourceLineNo">163</span><a id="line.163">  /**</a>
+<span class="sourceLineNo">164</span><a id="line.164">   * Gets a simulated value.</a>
+<span class="sourceLineNo">165</span><a id="line.165">   *</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">167</span><a id="line.167">   * @return The current value</a>
+<span class="sourceLineNo">168</span><a id="line.168">   */</a>
+<span class="sourceLineNo">169</span><a id="line.169">  public static native HALValue getSimValue(int handle);</a>
+<span class="sourceLineNo">170</span><a id="line.170"></a>
+<span class="sourceLineNo">171</span><a id="line.171">  /**</a>
+<span class="sourceLineNo">172</span><a id="line.172">   * Gets a simulated value (int).</a>
+<span class="sourceLineNo">173</span><a id="line.173">   *</a>
+<span class="sourceLineNo">174</span><a id="line.174">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">175</span><a id="line.175">   * @return The current value</a>
+<span class="sourceLineNo">176</span><a id="line.176">   */</a>
+<span class="sourceLineNo">177</span><a id="line.177">  public static native int getSimValueInt(int handle);</a>
+<span class="sourceLineNo">178</span><a id="line.178"></a>
+<span class="sourceLineNo">179</span><a id="line.179">  /**</a>
+<span class="sourceLineNo">180</span><a id="line.180">   * Gets a simulated value (long).</a>
+<span class="sourceLineNo">181</span><a id="line.181">   *</a>
+<span class="sourceLineNo">182</span><a id="line.182">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * @return The current value</a>
+<span class="sourceLineNo">184</span><a id="line.184">   */</a>
+<span class="sourceLineNo">185</span><a id="line.185">  public static native long getSimValueLong(int handle);</a>
 <span class="sourceLineNo">186</span><a id="line.186"></a>
 <span class="sourceLineNo">187</span><a id="line.187">  /**</a>
-<span class="sourceLineNo">188</span><a id="line.188">   * Creates an enumerated value on a simulated device with double values.</a>
+<span class="sourceLineNo">188</span><a id="line.188">   * Gets a simulated value (double).</a>
 <span class="sourceLineNo">189</span><a id="line.189">   *</a>
-<span class="sourceLineNo">190</span><a id="line.190">   * &lt;p&gt;Enumerated values are always in the range 0 to numOptions-1.</a>
-<span class="sourceLineNo">191</span><a id="line.191">   *</a>
-<span class="sourceLineNo">192</span><a id="line.192">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">193</span><a id="line.193">   *</a>
-<span class="sourceLineNo">194</span><a id="line.194">   * @param device simulated device handle</a>
-<span class="sourceLineNo">195</span><a id="line.195">   * @param name value name</a>
-<span class="sourceLineNo">196</span><a id="line.196">   * @param direction input/output/bidir (from perspective of user code)</a>
-<span class="sourceLineNo">197</span><a id="line.197">   * @param options array of option descriptions</a>
-<span class="sourceLineNo">198</span><a id="line.198">   * @param optionValues array of option values (must be the same size as options)</a>
-<span class="sourceLineNo">199</span><a id="line.199">   * @param initialValue initial value (selection)</a>
-<span class="sourceLineNo">200</span><a id="line.200">   * @return simulated value handle</a>
-<span class="sourceLineNo">201</span><a id="line.201">   */</a>
-<span class="sourceLineNo">202</span><a id="line.202">  public static native int createSimValueEnumDouble(</a>
-<span class="sourceLineNo">203</span><a id="line.203">      int device,</a>
-<span class="sourceLineNo">204</span><a id="line.204">      String name,</a>
-<span class="sourceLineNo">205</span><a id="line.205">      int direction,</a>
-<span class="sourceLineNo">206</span><a id="line.206">      String[] options,</a>
-<span class="sourceLineNo">207</span><a id="line.207">      double[] optionValues,</a>
-<span class="sourceLineNo">208</span><a id="line.208">      int initialValue);</a>
-<span class="sourceLineNo">209</span><a id="line.209"></a>
-<span class="sourceLineNo">210</span><a id="line.210">  /**</a>
-<span class="sourceLineNo">211</span><a id="line.211">   * Creates a boolean value on a simulated device.</a>
-<span class="sourceLineNo">212</span><a id="line.212">   *</a>
-<span class="sourceLineNo">213</span><a id="line.213">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">214</span><a id="line.214">   *</a>
-<span class="sourceLineNo">215</span><a id="line.215">   * @param device simulated device handle</a>
-<span class="sourceLineNo">216</span><a id="line.216">   * @param name value name</a>
-<span class="sourceLineNo">217</span><a id="line.217">   * @param readonly if the value should not be written from simulation side</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * @param initialValue initial value</a>
-<span class="sourceLineNo">219</span><a id="line.219">   * @return simulated value handle</a>
-<span class="sourceLineNo">220</span><a id="line.220">   * @deprecated Use direction-taking function instead</a>
-<span class="sourceLineNo">221</span><a id="line.221">   */</a>
-<span class="sourceLineNo">222</span><a id="line.222">  @Deprecated</a>
-<span class="sourceLineNo">223</span><a id="line.223">  public static int createSimValueBoolean(</a>
-<span class="sourceLineNo">224</span><a id="line.224">      int device, String name, boolean readonly, boolean initialValue) {</a>
-<span class="sourceLineNo">225</span><a id="line.225">    return createSimValueNative(</a>
-<span class="sourceLineNo">226</span><a id="line.226">        device, name, readonly ? kOutput : kInput, HALValue.kBoolean, initialValue ? 1 : 0, 0.0);</a>
-<span class="sourceLineNo">227</span><a id="line.227">  }</a>
-<span class="sourceLineNo">228</span><a id="line.228"></a>
-<span class="sourceLineNo">229</span><a id="line.229">  /**</a>
-<span class="sourceLineNo">230</span><a id="line.230">   * Creates a boolean value on a simulated device.</a>
-<span class="sourceLineNo">231</span><a id="line.231">   *</a>
-<span class="sourceLineNo">232</span><a id="line.232">   * &lt;p&gt;Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</a>
-<span class="sourceLineNo">233</span><a id="line.233">   *</a>
-<span class="sourceLineNo">234</span><a id="line.234">   * @param device simulated device handle</a>
-<span class="sourceLineNo">235</span><a id="line.235">   * @param name value name</a>
-<span class="sourceLineNo">236</span><a id="line.236">   * @param direction input/output/bidir (from perspective of user code)</a>
-<span class="sourceLineNo">237</span><a id="line.237">   * @param initialValue initial value</a>
-<span class="sourceLineNo">238</span><a id="line.238">   * @return simulated value handle</a>
-<span class="sourceLineNo">239</span><a id="line.239">   */</a>
-<span class="sourceLineNo">240</span><a id="line.240">  public static int createSimValueBoolean(</a>
-<span class="sourceLineNo">241</span><a id="line.241">      int device, String name, int direction, boolean initialValue) {</a>
-<span class="sourceLineNo">242</span><a id="line.242">    return createSimValueNative(</a>
-<span class="sourceLineNo">243</span><a id="line.243">        device, name, direction, HALValue.kBoolean, initialValue ? 1 : 0, 0.0);</a>
-<span class="sourceLineNo">244</span><a id="line.244">  }</a>
-<span class="sourceLineNo">245</span><a id="line.245"></a>
-<span class="sourceLineNo">246</span><a id="line.246">  /**</a>
-<span class="sourceLineNo">247</span><a id="line.247">   * Gets a simulated value.</a>
-<span class="sourceLineNo">248</span><a id="line.248">   *</a>
-<span class="sourceLineNo">249</span><a id="line.249">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">250</span><a id="line.250">   * @return The current value</a>
-<span class="sourceLineNo">251</span><a id="line.251">   */</a>
-<span class="sourceLineNo">252</span><a id="line.252">  public static native HALValue getSimValue(int handle);</a>
-<span class="sourceLineNo">253</span><a id="line.253"></a>
-<span class="sourceLineNo">254</span><a id="line.254">  /**</a>
-<span class="sourceLineNo">255</span><a id="line.255">   * Gets a simulated value (int).</a>
-<span class="sourceLineNo">256</span><a id="line.256">   *</a>
-<span class="sourceLineNo">257</span><a id="line.257">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">258</span><a id="line.258">   * @return The current value</a>
-<span class="sourceLineNo">259</span><a id="line.259">   */</a>
-<span class="sourceLineNo">260</span><a id="line.260">  public static native int getSimValueInt(int handle);</a>
-<span class="sourceLineNo">261</span><a id="line.261"></a>
-<span class="sourceLineNo">262</span><a id="line.262">  /**</a>
-<span class="sourceLineNo">263</span><a id="line.263">   * Gets a simulated value (long).</a>
-<span class="sourceLineNo">264</span><a id="line.264">   *</a>
-<span class="sourceLineNo">265</span><a id="line.265">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">266</span><a id="line.266">   * @return The current value</a>
-<span class="sourceLineNo">267</span><a id="line.267">   */</a>
-<span class="sourceLineNo">268</span><a id="line.268">  public static native long getSimValueLong(int handle);</a>
-<span class="sourceLineNo">269</span><a id="line.269"></a>
-<span class="sourceLineNo">270</span><a id="line.270">  /**</a>
-<span class="sourceLineNo">271</span><a id="line.271">   * Gets a simulated value (double).</a>
-<span class="sourceLineNo">272</span><a id="line.272">   *</a>
-<span class="sourceLineNo">273</span><a id="line.273">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">274</span><a id="line.274">   * @return The current value</a>
-<span class="sourceLineNo">275</span><a id="line.275">   */</a>
-<span class="sourceLineNo">276</span><a id="line.276">  public static native double getSimValueDouble(int handle);</a>
-<span class="sourceLineNo">277</span><a id="line.277"></a>
-<span class="sourceLineNo">278</span><a id="line.278">  /**</a>
-<span class="sourceLineNo">279</span><a id="line.279">   * Gets a simulated value (enum).</a>
-<span class="sourceLineNo">280</span><a id="line.280">   *</a>
-<span class="sourceLineNo">281</span><a id="line.281">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">282</span><a id="line.282">   * @return The current value</a>
-<span class="sourceLineNo">283</span><a id="line.283">   */</a>
-<span class="sourceLineNo">284</span><a id="line.284">  public static native int getSimValueEnum(int handle);</a>
-<span class="sourceLineNo">285</span><a id="line.285"></a>
-<span class="sourceLineNo">286</span><a id="line.286">  /**</a>
-<span class="sourceLineNo">287</span><a id="line.287">   * Gets a simulated value (boolean).</a>
-<span class="sourceLineNo">288</span><a id="line.288">   *</a>
-<span class="sourceLineNo">289</span><a id="line.289">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">290</span><a id="line.290">   * @return The current value</a>
-<span class="sourceLineNo">291</span><a id="line.291">   */</a>
-<span class="sourceLineNo">292</span><a id="line.292">  public static native boolean getSimValueBoolean(int handle);</a>
-<span class="sourceLineNo">293</span><a id="line.293"></a>
-<span class="sourceLineNo">294</span><a id="line.294">  private static native void setSimValueNative(int handle, int type, long value1, double value2);</a>
-<span class="sourceLineNo">295</span><a id="line.295"></a>
-<span class="sourceLineNo">296</span><a id="line.296">  /**</a>
-<span class="sourceLineNo">297</span><a id="line.297">   * Sets a simulated value.</a>
-<span class="sourceLineNo">298</span><a id="line.298">   *</a>
-<span class="sourceLineNo">299</span><a id="line.299">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">300</span><a id="line.300">   * @param value the value to set</a>
-<span class="sourceLineNo">301</span><a id="line.301">   */</a>
-<span class="sourceLineNo">302</span><a id="line.302">  public static void setSimValue(int handle, HALValue value) {</a>
-<span class="sourceLineNo">303</span><a id="line.303">    setSimValueNative(handle, value.getType(), value.getNativeLong(), value.getNativeDouble());</a>
-<span class="sourceLineNo">304</span><a id="line.304">  }</a>
-<span class="sourceLineNo">305</span><a id="line.305"></a>
-<span class="sourceLineNo">306</span><a id="line.306">  /**</a>
-<span class="sourceLineNo">307</span><a id="line.307">   * Sets a simulated value (int).</a>
-<span class="sourceLineNo">308</span><a id="line.308">   *</a>
-<span class="sourceLineNo">309</span><a id="line.309">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">310</span><a id="line.310">   * @param value the value to set</a>
-<span class="sourceLineNo">311</span><a id="line.311">   */</a>
-<span class="sourceLineNo">312</span><a id="line.312">  public static void setSimValueInt(int handle, int value) {</a>
-<span class="sourceLineNo">313</span><a id="line.313">    setSimValueNative(handle, HALValue.kInt, value, 0.0);</a>
-<span class="sourceLineNo">314</span><a id="line.314">  }</a>
-<span class="sourceLineNo">315</span><a id="line.315"></a>
-<span class="sourceLineNo">316</span><a id="line.316">  /**</a>
-<span class="sourceLineNo">317</span><a id="line.317">   * Sets a simulated value (long).</a>
-<span class="sourceLineNo">318</span><a id="line.318">   *</a>
-<span class="sourceLineNo">319</span><a id="line.319">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">320</span><a id="line.320">   * @param value the value to set</a>
-<span class="sourceLineNo">321</span><a id="line.321">   */</a>
-<span class="sourceLineNo">322</span><a id="line.322">  public static void setSimValueLong(int handle, long value) {</a>
-<span class="sourceLineNo">323</span><a id="line.323">    setSimValueNative(handle, HALValue.kLong, value, 0.0);</a>
-<span class="sourceLineNo">324</span><a id="line.324">  }</a>
-<span class="sourceLineNo">325</span><a id="line.325"></a>
-<span class="sourceLineNo">326</span><a id="line.326">  /**</a>
-<span class="sourceLineNo">327</span><a id="line.327">   * Sets a simulated value (double).</a>
-<span class="sourceLineNo">328</span><a id="line.328">   *</a>
-<span class="sourceLineNo">329</span><a id="line.329">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">330</span><a id="line.330">   * @param value the value to set</a>
-<span class="sourceLineNo">331</span><a id="line.331">   */</a>
-<span class="sourceLineNo">332</span><a id="line.332">  public static void setSimValueDouble(int handle, double value) {</a>
-<span class="sourceLineNo">333</span><a id="line.333">    setSimValueNative(handle, HALValue.kDouble, 0, value);</a>
-<span class="sourceLineNo">334</span><a id="line.334">  }</a>
-<span class="sourceLineNo">335</span><a id="line.335"></a>
-<span class="sourceLineNo">336</span><a id="line.336">  /**</a>
-<span class="sourceLineNo">337</span><a id="line.337">   * Sets a simulated value (enum).</a>
-<span class="sourceLineNo">338</span><a id="line.338">   *</a>
-<span class="sourceLineNo">339</span><a id="line.339">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">340</span><a id="line.340">   * @param value the value to set</a>
-<span class="sourceLineNo">341</span><a id="line.341">   */</a>
-<span class="sourceLineNo">342</span><a id="line.342">  public static void setSimValueEnum(int handle, int value) {</a>
-<span class="sourceLineNo">343</span><a id="line.343">    setSimValueNative(handle, HALValue.kEnum, value, 0.0);</a>
-<span class="sourceLineNo">344</span><a id="line.344">  }</a>
-<span class="sourceLineNo">345</span><a id="line.345"></a>
-<span class="sourceLineNo">346</span><a id="line.346">  /**</a>
-<span class="sourceLineNo">347</span><a id="line.347">   * Sets a simulated value (boolean).</a>
-<span class="sourceLineNo">348</span><a id="line.348">   *</a>
-<span class="sourceLineNo">349</span><a id="line.349">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">350</span><a id="line.350">   * @param value the value to set</a>
-<span class="sourceLineNo">351</span><a id="line.351">   */</a>
-<span class="sourceLineNo">352</span><a id="line.352">  public static void setSimValueBoolean(int handle, boolean value) {</a>
-<span class="sourceLineNo">353</span><a id="line.353">    setSimValueNative(handle, HALValue.kBoolean, value ? 1 : 0, 0.0);</a>
-<span class="sourceLineNo">354</span><a id="line.354">  }</a>
-<span class="sourceLineNo">355</span><a id="line.355"></a>
-<span class="sourceLineNo">356</span><a id="line.356">  /**</a>
-<span class="sourceLineNo">357</span><a id="line.357">   * Resets a simulated double or integral value to 0. Has no effect on other value types. Use this</a>
-<span class="sourceLineNo">358</span><a id="line.358">   * instead of Set(0) for resetting incremental sensor values like encoder counts or gyro</a>
-<span class="sourceLineNo">359</span><a id="line.359">   * accumulated angle to ensure correct behavior in a distributed system (e.g. WebSockets).</a>
-<span class="sourceLineNo">360</span><a id="line.360">   *</a>
-<span class="sourceLineNo">361</span><a id="line.361">   * @param handle simulated value handle</a>
-<span class="sourceLineNo">362</span><a id="line.362">   */</a>
-<span class="sourceLineNo">363</span><a id="line.363">  public static native void resetSimValue(int handle);</a>
-<span class="sourceLineNo">364</span><a id="line.364">}</a>
+<span class="sourceLineNo">190</span><a id="line.190">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">191</span><a id="line.191">   * @return The current value</a>
+<span class="sourceLineNo">192</span><a id="line.192">   */</a>
+<span class="sourceLineNo">193</span><a id="line.193">  public static native double getSimValueDouble(int handle);</a>
+<span class="sourceLineNo">194</span><a id="line.194"></a>
+<span class="sourceLineNo">195</span><a id="line.195">  /**</a>
+<span class="sourceLineNo">196</span><a id="line.196">   * Gets a simulated value (enum).</a>
+<span class="sourceLineNo">197</span><a id="line.197">   *</a>
+<span class="sourceLineNo">198</span><a id="line.198">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">199</span><a id="line.199">   * @return The current value</a>
+<span class="sourceLineNo">200</span><a id="line.200">   */</a>
+<span class="sourceLineNo">201</span><a id="line.201">  public static native int getSimValueEnum(int handle);</a>
+<span class="sourceLineNo">202</span><a id="line.202"></a>
+<span class="sourceLineNo">203</span><a id="line.203">  /**</a>
+<span class="sourceLineNo">204</span><a id="line.204">   * Gets a simulated value (boolean).</a>
+<span class="sourceLineNo">205</span><a id="line.205">   *</a>
+<span class="sourceLineNo">206</span><a id="line.206">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">207</span><a id="line.207">   * @return The current value</a>
+<span class="sourceLineNo">208</span><a id="line.208">   */</a>
+<span class="sourceLineNo">209</span><a id="line.209">  public static native boolean getSimValueBoolean(int handle);</a>
+<span class="sourceLineNo">210</span><a id="line.210"></a>
+<span class="sourceLineNo">211</span><a id="line.211">  private static native void setSimValueNative(int handle, int type, long value1, double value2);</a>
+<span class="sourceLineNo">212</span><a id="line.212"></a>
+<span class="sourceLineNo">213</span><a id="line.213">  /**</a>
+<span class="sourceLineNo">214</span><a id="line.214">   * Sets a simulated value.</a>
+<span class="sourceLineNo">215</span><a id="line.215">   *</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">217</span><a id="line.217">   * @param value the value to set</a>
+<span class="sourceLineNo">218</span><a id="line.218">   */</a>
+<span class="sourceLineNo">219</span><a id="line.219">  public static void setSimValue(int handle, HALValue value) {</a>
+<span class="sourceLineNo">220</span><a id="line.220">    setSimValueNative(handle, value.getType(), value.getNativeLong(), value.getNativeDouble());</a>
+<span class="sourceLineNo">221</span><a id="line.221">  }</a>
+<span class="sourceLineNo">222</span><a id="line.222"></a>
+<span class="sourceLineNo">223</span><a id="line.223">  /**</a>
+<span class="sourceLineNo">224</span><a id="line.224">   * Sets a simulated value (int).</a>
+<span class="sourceLineNo">225</span><a id="line.225">   *</a>
+<span class="sourceLineNo">226</span><a id="line.226">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">227</span><a id="line.227">   * @param value the value to set</a>
+<span class="sourceLineNo">228</span><a id="line.228">   */</a>
+<span class="sourceLineNo">229</span><a id="line.229">  public static void setSimValueInt(int handle, int value) {</a>
+<span class="sourceLineNo">230</span><a id="line.230">    setSimValueNative(handle, HALValue.kInt, value, 0.0);</a>
+<span class="sourceLineNo">231</span><a id="line.231">  }</a>
+<span class="sourceLineNo">232</span><a id="line.232"></a>
+<span class="sourceLineNo">233</span><a id="line.233">  /**</a>
+<span class="sourceLineNo">234</span><a id="line.234">   * Sets a simulated value (long).</a>
+<span class="sourceLineNo">235</span><a id="line.235">   *</a>
+<span class="sourceLineNo">236</span><a id="line.236">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">237</span><a id="line.237">   * @param value the value to set</a>
+<span class="sourceLineNo">238</span><a id="line.238">   */</a>
+<span class="sourceLineNo">239</span><a id="line.239">  public static void setSimValueLong(int handle, long value) {</a>
+<span class="sourceLineNo">240</span><a id="line.240">    setSimValueNative(handle, HALValue.kLong, value, 0.0);</a>
+<span class="sourceLineNo">241</span><a id="line.241">  }</a>
+<span class="sourceLineNo">242</span><a id="line.242"></a>
+<span class="sourceLineNo">243</span><a id="line.243">  /**</a>
+<span class="sourceLineNo">244</span><a id="line.244">   * Sets a simulated value (double).</a>
+<span class="sourceLineNo">245</span><a id="line.245">   *</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">247</span><a id="line.247">   * @param value the value to set</a>
+<span class="sourceLineNo">248</span><a id="line.248">   */</a>
+<span class="sourceLineNo">249</span><a id="line.249">  public static void setSimValueDouble(int handle, double value) {</a>
+<span class="sourceLineNo">250</span><a id="line.250">    setSimValueNative(handle, HALValue.kDouble, 0, value);</a>
+<span class="sourceLineNo">251</span><a id="line.251">  }</a>
+<span class="sourceLineNo">252</span><a id="line.252"></a>
+<span class="sourceLineNo">253</span><a id="line.253">  /**</a>
+<span class="sourceLineNo">254</span><a id="line.254">   * Sets a simulated value (enum).</a>
+<span class="sourceLineNo">255</span><a id="line.255">   *</a>
+<span class="sourceLineNo">256</span><a id="line.256">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">257</span><a id="line.257">   * @param value the value to set</a>
+<span class="sourceLineNo">258</span><a id="line.258">   */</a>
+<span class="sourceLineNo">259</span><a id="line.259">  public static void setSimValueEnum(int handle, int value) {</a>
+<span class="sourceLineNo">260</span><a id="line.260">    setSimValueNative(handle, HALValue.kEnum, value, 0.0);</a>
+<span class="sourceLineNo">261</span><a id="line.261">  }</a>
+<span class="sourceLineNo">262</span><a id="line.262"></a>
+<span class="sourceLineNo">263</span><a id="line.263">  /**</a>
+<span class="sourceLineNo">264</span><a id="line.264">   * Sets a simulated value (boolean).</a>
+<span class="sourceLineNo">265</span><a id="line.265">   *</a>
+<span class="sourceLineNo">266</span><a id="line.266">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">267</span><a id="line.267">   * @param value the value to set</a>
+<span class="sourceLineNo">268</span><a id="line.268">   */</a>
+<span class="sourceLineNo">269</span><a id="line.269">  public static void setSimValueBoolean(int handle, boolean value) {</a>
+<span class="sourceLineNo">270</span><a id="line.270">    setSimValueNative(handle, HALValue.kBoolean, value ? 1 : 0, 0.0);</a>
+<span class="sourceLineNo">271</span><a id="line.271">  }</a>
+<span class="sourceLineNo">272</span><a id="line.272"></a>
+<span class="sourceLineNo">273</span><a id="line.273">  /**</a>
+<span class="sourceLineNo">274</span><a id="line.274">   * Resets a simulated double or integral value to 0. Has no effect on other value types. Use this</a>
+<span class="sourceLineNo">275</span><a id="line.275">   * instead of Set(0) for resetting incremental sensor values like encoder counts or gyro</a>
+<span class="sourceLineNo">276</span><a id="line.276">   * accumulated angle to ensure correct behavior in a distributed system (e.g. WebSockets).</a>
+<span class="sourceLineNo">277</span><a id="line.277">   *</a>
+<span class="sourceLineNo">278</span><a id="line.278">   * @param handle simulated value handle</a>
+<span class="sourceLineNo">279</span><a id="line.279">   */</a>
+<span class="sourceLineNo">280</span><a id="line.280">  public static native void resetSimValue(int handle);</a>
+<span class="sourceLineNo">281</span><a id="line.281">}</a>
 
 
 

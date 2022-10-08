@@ -101,7 +101,7 @@
 <span class="sourceLineNo">089</span><a id="line.89">   *     attainable max velocity. Use the {@link #desaturateWheelSpeeds(SwerveModuleState[], double)</a>
 <span class="sourceLineNo">090</span><a id="line.90">   *     DesaturateWheelSpeeds} function to rectify this issue.</a>
 <span class="sourceLineNo">091</span><a id="line.91">   */</a>
-<span class="sourceLineNo">092</span><a id="line.92">  @SuppressWarnings({"LocalVariableName", "PMD.MethodReturnsInternalArray"})</a>
+<span class="sourceLineNo">092</span><a id="line.92">  @SuppressWarnings("PMD.MethodReturnsInternalArray")</a>
 <span class="sourceLineNo">093</span><a id="line.93">  public SwerveModuleState[] toSwerveModuleStates(</a>
 <span class="sourceLineNo">094</span><a id="line.94">      ChassisSpeeds chassisSpeeds, Translation2d centerOfRotationMeters) {</a>
 <span class="sourceLineNo">095</span><a id="line.95">    if (chassisSpeeds.vxMetersPerSecond == 0.0</a>

@@ -167,246 +167,241 @@
 <span class="sourceLineNo">155</span><a id="line.155">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
 <span class="sourceLineNo">156</span><a id="line.156">   *     positive.</a>
 <span class="sourceLineNo">157</span><a id="line.157">   */</a>
-<span class="sourceLineNo">158</span><a id="line.158">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">159</span><a id="line.159">  public void arcadeDrive(double xSpeed, double zRotation) {</a>
-<span class="sourceLineNo">160</span><a id="line.160">    arcadeDrive(xSpeed, zRotation, true);</a>
-<span class="sourceLineNo">161</span><a id="line.161">  }</a>
-<span class="sourceLineNo">162</span><a id="line.162"></a>
-<span class="sourceLineNo">163</span><a id="line.163">  /**</a>
-<span class="sourceLineNo">164</span><a id="line.164">   * Arcade drive method for differential drive platform.</a>
-<span class="sourceLineNo">165</span><a id="line.165">   *</a>
-<span class="sourceLineNo">166</span><a id="line.166">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">167</span><a id="line.167">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
-<span class="sourceLineNo">168</span><a id="line.168">   *     positive.</a>
-<span class="sourceLineNo">169</span><a id="line.169">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
-<span class="sourceLineNo">170</span><a id="line.170">   */</a>
-<span class="sourceLineNo">171</span><a id="line.171">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">172</span><a id="line.172">  public void arcadeDrive(double xSpeed, double zRotation, boolean squareInputs) {</a>
-<span class="sourceLineNo">173</span><a id="line.173">    if (!m_reported) {</a>
-<span class="sourceLineNo">174</span><a id="line.174">      HAL.report(</a>
-<span class="sourceLineNo">175</span><a id="line.175">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_DifferentialArcade, 2);</a>
-<span class="sourceLineNo">176</span><a id="line.176">      m_reported = true;</a>
-<span class="sourceLineNo">177</span><a id="line.177">    }</a>
-<span class="sourceLineNo">178</span><a id="line.178"></a>
-<span class="sourceLineNo">179</span><a id="line.179">    xSpeed = MathUtil.applyDeadband(xSpeed, m_deadband);</a>
-<span class="sourceLineNo">180</span><a id="line.180">    zRotation = MathUtil.applyDeadband(zRotation, m_deadband);</a>
+<span class="sourceLineNo">158</span><a id="line.158">  public void arcadeDrive(double xSpeed, double zRotation) {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    arcadeDrive(xSpeed, zRotation, true);</a>
+<span class="sourceLineNo">160</span><a id="line.160">  }</a>
+<span class="sourceLineNo">161</span><a id="line.161"></a>
+<span class="sourceLineNo">162</span><a id="line.162">  /**</a>
+<span class="sourceLineNo">163</span><a id="line.163">   * Arcade drive method for differential drive platform.</a>
+<span class="sourceLineNo">164</span><a id="line.164">   *</a>
+<span class="sourceLineNo">165</span><a id="line.165">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">167</span><a id="line.167">   *     positive.</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
+<span class="sourceLineNo">169</span><a id="line.169">   */</a>
+<span class="sourceLineNo">170</span><a id="line.170">  public void arcadeDrive(double xSpeed, double zRotation, boolean squareInputs) {</a>
+<span class="sourceLineNo">171</span><a id="line.171">    if (!m_reported) {</a>
+<span class="sourceLineNo">172</span><a id="line.172">      HAL.report(</a>
+<span class="sourceLineNo">173</span><a id="line.173">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_DifferentialArcade, 2);</a>
+<span class="sourceLineNo">174</span><a id="line.174">      m_reported = true;</a>
+<span class="sourceLineNo">175</span><a id="line.175">    }</a>
+<span class="sourceLineNo">176</span><a id="line.176"></a>
+<span class="sourceLineNo">177</span><a id="line.177">    xSpeed = MathUtil.applyDeadband(xSpeed, m_deadband);</a>
+<span class="sourceLineNo">178</span><a id="line.178">    zRotation = MathUtil.applyDeadband(zRotation, m_deadband);</a>
+<span class="sourceLineNo">179</span><a id="line.179"></a>
+<span class="sourceLineNo">180</span><a id="line.180">    var speeds = arcadeDriveIK(xSpeed, zRotation, squareInputs);</a>
 <span class="sourceLineNo">181</span><a id="line.181"></a>
-<span class="sourceLineNo">182</span><a id="line.182">    var speeds = arcadeDriveIK(xSpeed, zRotation, squareInputs);</a>
-<span class="sourceLineNo">183</span><a id="line.183"></a>
-<span class="sourceLineNo">184</span><a id="line.184">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
-<span class="sourceLineNo">185</span><a id="line.185">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
-<span class="sourceLineNo">186</span><a id="line.186"></a>
-<span class="sourceLineNo">187</span><a id="line.187">    feed();</a>
-<span class="sourceLineNo">188</span><a id="line.188">  }</a>
-<span class="sourceLineNo">189</span><a id="line.189"></a>
-<span class="sourceLineNo">190</span><a id="line.190">  /**</a>
-<span class="sourceLineNo">191</span><a id="line.191">   * Curvature drive method for differential drive platform.</a>
-<span class="sourceLineNo">192</span><a id="line.192">   *</a>
-<span class="sourceLineNo">193</span><a id="line.193">   * &lt;p&gt;The rotation argument controls the curvature of the robot's path rather than its rate of</a>
-<span class="sourceLineNo">194</span><a id="line.194">   * heading change. This makes the robot more controllable at high speeds.</a>
-<span class="sourceLineNo">195</span><a id="line.195">   *</a>
-<span class="sourceLineNo">196</span><a id="line.196">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">197</span><a id="line.197">   * @param zRotation The normalized curvature [-1.0..1.0]. Clockwise is positive.</a>
-<span class="sourceLineNo">198</span><a id="line.198">   * @param allowTurnInPlace If set, overrides constant-curvature turning for turn-in-place</a>
-<span class="sourceLineNo">199</span><a id="line.199">   *     maneuvers. zRotation will control turning rate instead of curvature.</a>
-<span class="sourceLineNo">200</span><a id="line.200">   */</a>
-<span class="sourceLineNo">201</span><a id="line.201">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">202</span><a id="line.202">  public void curvatureDrive(double xSpeed, double zRotation, boolean allowTurnInPlace) {</a>
-<span class="sourceLineNo">203</span><a id="line.203">    if (!m_reported) {</a>
-<span class="sourceLineNo">204</span><a id="line.204">      HAL.report(</a>
-<span class="sourceLineNo">205</span><a id="line.205">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_DifferentialCurvature, 2);</a>
-<span class="sourceLineNo">206</span><a id="line.206">      m_reported = true;</a>
-<span class="sourceLineNo">207</span><a id="line.207">    }</a>
+<span class="sourceLineNo">182</span><a id="line.182">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
+<span class="sourceLineNo">183</span><a id="line.183">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
+<span class="sourceLineNo">184</span><a id="line.184"></a>
+<span class="sourceLineNo">185</span><a id="line.185">    feed();</a>
+<span class="sourceLineNo">186</span><a id="line.186">  }</a>
+<span class="sourceLineNo">187</span><a id="line.187"></a>
+<span class="sourceLineNo">188</span><a id="line.188">  /**</a>
+<span class="sourceLineNo">189</span><a id="line.189">   * Curvature drive method for differential drive platform.</a>
+<span class="sourceLineNo">190</span><a id="line.190">   *</a>
+<span class="sourceLineNo">191</span><a id="line.191">   * &lt;p&gt;The rotation argument controls the curvature of the robot's path rather than its rate of</a>
+<span class="sourceLineNo">192</span><a id="line.192">   * heading change. This makes the robot more controllable at high speeds.</a>
+<span class="sourceLineNo">193</span><a id="line.193">   *</a>
+<span class="sourceLineNo">194</span><a id="line.194">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">195</span><a id="line.195">   * @param zRotation The normalized curvature [-1.0..1.0]. Clockwise is positive.</a>
+<span class="sourceLineNo">196</span><a id="line.196">   * @param allowTurnInPlace If set, overrides constant-curvature turning for turn-in-place</a>
+<span class="sourceLineNo">197</span><a id="line.197">   *     maneuvers. zRotation will control turning rate instead of curvature.</a>
+<span class="sourceLineNo">198</span><a id="line.198">   */</a>
+<span class="sourceLineNo">199</span><a id="line.199">  public void curvatureDrive(double xSpeed, double zRotation, boolean allowTurnInPlace) {</a>
+<span class="sourceLineNo">200</span><a id="line.200">    if (!m_reported) {</a>
+<span class="sourceLineNo">201</span><a id="line.201">      HAL.report(</a>
+<span class="sourceLineNo">202</span><a id="line.202">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_DifferentialCurvature, 2);</a>
+<span class="sourceLineNo">203</span><a id="line.203">      m_reported = true;</a>
+<span class="sourceLineNo">204</span><a id="line.204">    }</a>
+<span class="sourceLineNo">205</span><a id="line.205"></a>
+<span class="sourceLineNo">206</span><a id="line.206">    xSpeed = MathUtil.applyDeadband(xSpeed, m_deadband);</a>
+<span class="sourceLineNo">207</span><a id="line.207">    zRotation = MathUtil.applyDeadband(zRotation, m_deadband);</a>
 <span class="sourceLineNo">208</span><a id="line.208"></a>
-<span class="sourceLineNo">209</span><a id="line.209">    xSpeed = MathUtil.applyDeadband(xSpeed, m_deadband);</a>
-<span class="sourceLineNo">210</span><a id="line.210">    zRotation = MathUtil.applyDeadband(zRotation, m_deadband);</a>
-<span class="sourceLineNo">211</span><a id="line.211"></a>
-<span class="sourceLineNo">212</span><a id="line.212">    var speeds = curvatureDriveIK(xSpeed, zRotation, allowTurnInPlace);</a>
+<span class="sourceLineNo">209</span><a id="line.209">    var speeds = curvatureDriveIK(xSpeed, zRotation, allowTurnInPlace);</a>
+<span class="sourceLineNo">210</span><a id="line.210"></a>
+<span class="sourceLineNo">211</span><a id="line.211">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
+<span class="sourceLineNo">212</span><a id="line.212">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
 <span class="sourceLineNo">213</span><a id="line.213"></a>
-<span class="sourceLineNo">214</span><a id="line.214">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
-<span class="sourceLineNo">215</span><a id="line.215">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
+<span class="sourceLineNo">214</span><a id="line.214">    feed();</a>
+<span class="sourceLineNo">215</span><a id="line.215">  }</a>
 <span class="sourceLineNo">216</span><a id="line.216"></a>
-<span class="sourceLineNo">217</span><a id="line.217">    feed();</a>
-<span class="sourceLineNo">218</span><a id="line.218">  }</a>
-<span class="sourceLineNo">219</span><a id="line.219"></a>
-<span class="sourceLineNo">220</span><a id="line.220">  /**</a>
-<span class="sourceLineNo">221</span><a id="line.221">   * Tank drive method for differential drive platform. The calculated values will be squared to</a>
-<span class="sourceLineNo">222</span><a id="line.222">   * decrease sensitivity at low speeds.</a>
-<span class="sourceLineNo">223</span><a id="line.223">   *</a>
-<span class="sourceLineNo">224</span><a id="line.224">   * @param leftSpeed The robot's left side speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">225</span><a id="line.225">   * @param rightSpeed The robot's right side speed along the X axis [-1.0..1.0]. Forward is</a>
-<span class="sourceLineNo">226</span><a id="line.226">   *     positive.</a>
-<span class="sourceLineNo">227</span><a id="line.227">   */</a>
-<span class="sourceLineNo">228</span><a id="line.228">  public void tankDrive(double leftSpeed, double rightSpeed) {</a>
-<span class="sourceLineNo">229</span><a id="line.229">    tankDrive(leftSpeed, rightSpeed, true);</a>
-<span class="sourceLineNo">230</span><a id="line.230">  }</a>
-<span class="sourceLineNo">231</span><a id="line.231"></a>
-<span class="sourceLineNo">232</span><a id="line.232">  /**</a>
-<span class="sourceLineNo">233</span><a id="line.233">   * Tank drive method for differential drive platform.</a>
-<span class="sourceLineNo">234</span><a id="line.234">   *</a>
-<span class="sourceLineNo">235</span><a id="line.235">   * @param leftSpeed The robot left side's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">236</span><a id="line.236">   * @param rightSpeed The robot right side's speed along the X axis [-1.0..1.0]. Forward is</a>
-<span class="sourceLineNo">237</span><a id="line.237">   *     positive.</a>
-<span class="sourceLineNo">238</span><a id="line.238">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
-<span class="sourceLineNo">239</span><a id="line.239">   */</a>
-<span class="sourceLineNo">240</span><a id="line.240">  public void tankDrive(double leftSpeed, double rightSpeed, boolean squareInputs) {</a>
-<span class="sourceLineNo">241</span><a id="line.241">    if (!m_reported) {</a>
-<span class="sourceLineNo">242</span><a id="line.242">      HAL.report(</a>
-<span class="sourceLineNo">243</span><a id="line.243">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_DifferentialTank, 2);</a>
-<span class="sourceLineNo">244</span><a id="line.244">      m_reported = true;</a>
-<span class="sourceLineNo">245</span><a id="line.245">    }</a>
+<span class="sourceLineNo">217</span><a id="line.217">  /**</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * Tank drive method for differential drive platform. The calculated values will be squared to</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * decrease sensitivity at low speeds.</a>
+<span class="sourceLineNo">220</span><a id="line.220">   *</a>
+<span class="sourceLineNo">221</span><a id="line.221">   * @param leftSpeed The robot's left side speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * @param rightSpeed The robot's right side speed along the X axis [-1.0..1.0]. Forward is</a>
+<span class="sourceLineNo">223</span><a id="line.223">   *     positive.</a>
+<span class="sourceLineNo">224</span><a id="line.224">   */</a>
+<span class="sourceLineNo">225</span><a id="line.225">  public void tankDrive(double leftSpeed, double rightSpeed) {</a>
+<span class="sourceLineNo">226</span><a id="line.226">    tankDrive(leftSpeed, rightSpeed, true);</a>
+<span class="sourceLineNo">227</span><a id="line.227">  }</a>
+<span class="sourceLineNo">228</span><a id="line.228"></a>
+<span class="sourceLineNo">229</span><a id="line.229">  /**</a>
+<span class="sourceLineNo">230</span><a id="line.230">   * Tank drive method for differential drive platform.</a>
+<span class="sourceLineNo">231</span><a id="line.231">   *</a>
+<span class="sourceLineNo">232</span><a id="line.232">   * @param leftSpeed The robot left side's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">233</span><a id="line.233">   * @param rightSpeed The robot right side's speed along the X axis [-1.0..1.0]. Forward is</a>
+<span class="sourceLineNo">234</span><a id="line.234">   *     positive.</a>
+<span class="sourceLineNo">235</span><a id="line.235">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
+<span class="sourceLineNo">236</span><a id="line.236">   */</a>
+<span class="sourceLineNo">237</span><a id="line.237">  public void tankDrive(double leftSpeed, double rightSpeed, boolean squareInputs) {</a>
+<span class="sourceLineNo">238</span><a id="line.238">    if (!m_reported) {</a>
+<span class="sourceLineNo">239</span><a id="line.239">      HAL.report(</a>
+<span class="sourceLineNo">240</span><a id="line.240">          tResourceType.kResourceType_RobotDrive, tInstances.kRobotDrive2_DifferentialTank, 2);</a>
+<span class="sourceLineNo">241</span><a id="line.241">      m_reported = true;</a>
+<span class="sourceLineNo">242</span><a id="line.242">    }</a>
+<span class="sourceLineNo">243</span><a id="line.243"></a>
+<span class="sourceLineNo">244</span><a id="line.244">    leftSpeed = MathUtil.applyDeadband(leftSpeed, m_deadband);</a>
+<span class="sourceLineNo">245</span><a id="line.245">    rightSpeed = MathUtil.applyDeadband(rightSpeed, m_deadband);</a>
 <span class="sourceLineNo">246</span><a id="line.246"></a>
-<span class="sourceLineNo">247</span><a id="line.247">    leftSpeed = MathUtil.applyDeadband(leftSpeed, m_deadband);</a>
-<span class="sourceLineNo">248</span><a id="line.248">    rightSpeed = MathUtil.applyDeadband(rightSpeed, m_deadband);</a>
-<span class="sourceLineNo">249</span><a id="line.249"></a>
-<span class="sourceLineNo">250</span><a id="line.250">    var speeds = tankDriveIK(leftSpeed, rightSpeed, squareInputs);</a>
+<span class="sourceLineNo">247</span><a id="line.247">    var speeds = tankDriveIK(leftSpeed, rightSpeed, squareInputs);</a>
+<span class="sourceLineNo">248</span><a id="line.248"></a>
+<span class="sourceLineNo">249</span><a id="line.249">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
+<span class="sourceLineNo">250</span><a id="line.250">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
 <span class="sourceLineNo">251</span><a id="line.251"></a>
-<span class="sourceLineNo">252</span><a id="line.252">    m_leftMotor.set(speeds.left * m_maxOutput);</a>
-<span class="sourceLineNo">253</span><a id="line.253">    m_rightMotor.set(speeds.right * m_maxOutput);</a>
+<span class="sourceLineNo">252</span><a id="line.252">    feed();</a>
+<span class="sourceLineNo">253</span><a id="line.253">  }</a>
 <span class="sourceLineNo">254</span><a id="line.254"></a>
-<span class="sourceLineNo">255</span><a id="line.255">    feed();</a>
-<span class="sourceLineNo">256</span><a id="line.256">  }</a>
-<span class="sourceLineNo">257</span><a id="line.257"></a>
-<span class="sourceLineNo">258</span><a id="line.258">  /**</a>
-<span class="sourceLineNo">259</span><a id="line.259">   * Arcade drive inverse kinematics for differential drive platform.</a>
-<span class="sourceLineNo">260</span><a id="line.260">   *</a>
-<span class="sourceLineNo">261</span><a id="line.261">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">262</span><a id="line.262">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
-<span class="sourceLineNo">263</span><a id="line.263">   *     positive.</a>
-<span class="sourceLineNo">264</span><a id="line.264">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
-<span class="sourceLineNo">265</span><a id="line.265">   * @return Wheel speeds [-1.0..1.0].</a>
-<span class="sourceLineNo">266</span><a id="line.266">   */</a>
-<span class="sourceLineNo">267</span><a id="line.267">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">268</span><a id="line.268">  public static WheelSpeeds arcadeDriveIK(double xSpeed, double zRotation, boolean squareInputs) {</a>
-<span class="sourceLineNo">269</span><a id="line.269">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">270</span><a id="line.270">    zRotation = MathUtil.clamp(zRotation, -1.0, 1.0);</a>
-<span class="sourceLineNo">271</span><a id="line.271"></a>
-<span class="sourceLineNo">272</span><a id="line.272">    // Square the inputs (while preserving the sign) to increase fine control</a>
-<span class="sourceLineNo">273</span><a id="line.273">    // while permitting full power.</a>
-<span class="sourceLineNo">274</span><a id="line.274">    if (squareInputs) {</a>
-<span class="sourceLineNo">275</span><a id="line.275">      xSpeed = Math.copySign(xSpeed * xSpeed, xSpeed);</a>
-<span class="sourceLineNo">276</span><a id="line.276">      zRotation = Math.copySign(zRotation * zRotation, zRotation);</a>
-<span class="sourceLineNo">277</span><a id="line.277">    }</a>
-<span class="sourceLineNo">278</span><a id="line.278"></a>
-<span class="sourceLineNo">279</span><a id="line.279">    double leftSpeed;</a>
-<span class="sourceLineNo">280</span><a id="line.280">    double rightSpeed;</a>
-<span class="sourceLineNo">281</span><a id="line.281"></a>
-<span class="sourceLineNo">282</span><a id="line.282">    double maxInput = Math.copySign(Math.max(Math.abs(xSpeed), Math.abs(zRotation)), xSpeed);</a>
-<span class="sourceLineNo">283</span><a id="line.283"></a>
-<span class="sourceLineNo">284</span><a id="line.284">    if (Double.compare(xSpeed, 0.0) &gt;= 0) {</a>
-<span class="sourceLineNo">285</span><a id="line.285">      // First quadrant, else second quadrant</a>
-<span class="sourceLineNo">286</span><a id="line.286">      if (Double.compare(zRotation, 0.0) &gt;= 0) {</a>
-<span class="sourceLineNo">287</span><a id="line.287">        leftSpeed = maxInput;</a>
-<span class="sourceLineNo">288</span><a id="line.288">        rightSpeed = xSpeed - zRotation;</a>
-<span class="sourceLineNo">289</span><a id="line.289">      } else {</a>
-<span class="sourceLineNo">290</span><a id="line.290">        leftSpeed = xSpeed + zRotation;</a>
-<span class="sourceLineNo">291</span><a id="line.291">        rightSpeed = maxInput;</a>
-<span class="sourceLineNo">292</span><a id="line.292">      }</a>
-<span class="sourceLineNo">293</span><a id="line.293">    } else {</a>
-<span class="sourceLineNo">294</span><a id="line.294">      // Third quadrant, else fourth quadrant</a>
-<span class="sourceLineNo">295</span><a id="line.295">      if (Double.compare(zRotation, 0.0) &gt;= 0) {</a>
-<span class="sourceLineNo">296</span><a id="line.296">        leftSpeed = xSpeed + zRotation;</a>
-<span class="sourceLineNo">297</span><a id="line.297">        rightSpeed = maxInput;</a>
-<span class="sourceLineNo">298</span><a id="line.298">      } else {</a>
-<span class="sourceLineNo">299</span><a id="line.299">        leftSpeed = maxInput;</a>
-<span class="sourceLineNo">300</span><a id="line.300">        rightSpeed = xSpeed - zRotation;</a>
-<span class="sourceLineNo">301</span><a id="line.301">      }</a>
-<span class="sourceLineNo">302</span><a id="line.302">    }</a>
-<span class="sourceLineNo">303</span><a id="line.303"></a>
-<span class="sourceLineNo">304</span><a id="line.304">    // Normalize the wheel speeds</a>
-<span class="sourceLineNo">305</span><a id="line.305">    double maxMagnitude = Math.max(Math.abs(leftSpeed), Math.abs(rightSpeed));</a>
-<span class="sourceLineNo">306</span><a id="line.306">    if (maxMagnitude &gt; 1.0) {</a>
-<span class="sourceLineNo">307</span><a id="line.307">      leftSpeed /= maxMagnitude;</a>
-<span class="sourceLineNo">308</span><a id="line.308">      rightSpeed /= maxMagnitude;</a>
-<span class="sourceLineNo">309</span><a id="line.309">    }</a>
-<span class="sourceLineNo">310</span><a id="line.310"></a>
-<span class="sourceLineNo">311</span><a id="line.311">    return new WheelSpeeds(leftSpeed, rightSpeed);</a>
-<span class="sourceLineNo">312</span><a id="line.312">  }</a>
-<span class="sourceLineNo">313</span><a id="line.313"></a>
-<span class="sourceLineNo">314</span><a id="line.314">  /**</a>
-<span class="sourceLineNo">315</span><a id="line.315">   * Curvature drive inverse kinematics for differential drive platform.</a>
-<span class="sourceLineNo">316</span><a id="line.316">   *</a>
-<span class="sourceLineNo">317</span><a id="line.317">   * &lt;p&gt;The rotation argument controls the curvature of the robot's path rather than its rate of</a>
-<span class="sourceLineNo">318</span><a id="line.318">   * heading change. This makes the robot more controllable at high speeds.</a>
-<span class="sourceLineNo">319</span><a id="line.319">   *</a>
-<span class="sourceLineNo">320</span><a id="line.320">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">321</span><a id="line.321">   * @param zRotation The normalized curvature [-1.0..1.0]. Clockwise is positive.</a>
-<span class="sourceLineNo">322</span><a id="line.322">   * @param allowTurnInPlace If set, overrides constant-curvature turning for turn-in-place</a>
-<span class="sourceLineNo">323</span><a id="line.323">   *     maneuvers. zRotation will control rotation rate around the Z axis instead of curvature.</a>
-<span class="sourceLineNo">324</span><a id="line.324">   * @return Wheel speeds [-1.0..1.0].</a>
-<span class="sourceLineNo">325</span><a id="line.325">   */</a>
-<span class="sourceLineNo">326</span><a id="line.326">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">327</span><a id="line.327">  public static WheelSpeeds curvatureDriveIK(</a>
-<span class="sourceLineNo">328</span><a id="line.328">      double xSpeed, double zRotation, boolean allowTurnInPlace) {</a>
-<span class="sourceLineNo">329</span><a id="line.329">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">330</span><a id="line.330">    zRotation = MathUtil.clamp(zRotation, -1.0, 1.0);</a>
-<span class="sourceLineNo">331</span><a id="line.331"></a>
-<span class="sourceLineNo">332</span><a id="line.332">    double leftSpeed;</a>
-<span class="sourceLineNo">333</span><a id="line.333">    double rightSpeed;</a>
-<span class="sourceLineNo">334</span><a id="line.334"></a>
-<span class="sourceLineNo">335</span><a id="line.335">    if (allowTurnInPlace) {</a>
-<span class="sourceLineNo">336</span><a id="line.336">      leftSpeed = xSpeed + zRotation;</a>
-<span class="sourceLineNo">337</span><a id="line.337">      rightSpeed = xSpeed - zRotation;</a>
-<span class="sourceLineNo">338</span><a id="line.338">    } else {</a>
-<span class="sourceLineNo">339</span><a id="line.339">      leftSpeed = xSpeed + Math.abs(xSpeed) * zRotation;</a>
-<span class="sourceLineNo">340</span><a id="line.340">      rightSpeed = xSpeed - Math.abs(xSpeed) * zRotation;</a>
-<span class="sourceLineNo">341</span><a id="line.341">    }</a>
-<span class="sourceLineNo">342</span><a id="line.342"></a>
-<span class="sourceLineNo">343</span><a id="line.343">    // Normalize wheel speeds</a>
-<span class="sourceLineNo">344</span><a id="line.344">    double maxMagnitude = Math.max(Math.abs(leftSpeed), Math.abs(rightSpeed));</a>
-<span class="sourceLineNo">345</span><a id="line.345">    if (maxMagnitude &gt; 1.0) {</a>
-<span class="sourceLineNo">346</span><a id="line.346">      leftSpeed /= maxMagnitude;</a>
-<span class="sourceLineNo">347</span><a id="line.347">      rightSpeed /= maxMagnitude;</a>
-<span class="sourceLineNo">348</span><a id="line.348">    }</a>
-<span class="sourceLineNo">349</span><a id="line.349"></a>
-<span class="sourceLineNo">350</span><a id="line.350">    return new WheelSpeeds(leftSpeed, rightSpeed);</a>
-<span class="sourceLineNo">351</span><a id="line.351">  }</a>
-<span class="sourceLineNo">352</span><a id="line.352"></a>
-<span class="sourceLineNo">353</span><a id="line.353">  /**</a>
-<span class="sourceLineNo">354</span><a id="line.354">   * Tank drive inverse kinematics for differential drive platform.</a>
-<span class="sourceLineNo">355</span><a id="line.355">   *</a>
-<span class="sourceLineNo">356</span><a id="line.356">   * @param leftSpeed The robot left side's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
-<span class="sourceLineNo">357</span><a id="line.357">   * @param rightSpeed The robot right side's speed along the X axis [-1.0..1.0]. Forward is</a>
-<span class="sourceLineNo">358</span><a id="line.358">   *     positive.</a>
-<span class="sourceLineNo">359</span><a id="line.359">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
-<span class="sourceLineNo">360</span><a id="line.360">   * @return Wheel speeds [-1.0..1.0].</a>
-<span class="sourceLineNo">361</span><a id="line.361">   */</a>
-<span class="sourceLineNo">362</span><a id="line.362">  public static WheelSpeeds tankDriveIK(double leftSpeed, double rightSpeed, boolean squareInputs) {</a>
-<span class="sourceLineNo">363</span><a id="line.363">    leftSpeed = MathUtil.clamp(leftSpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">364</span><a id="line.364">    rightSpeed = MathUtil.clamp(rightSpeed, -1.0, 1.0);</a>
-<span class="sourceLineNo">365</span><a id="line.365"></a>
-<span class="sourceLineNo">366</span><a id="line.366">    // Square the inputs (while preserving the sign) to increase fine control</a>
-<span class="sourceLineNo">367</span><a id="line.367">    // while permitting full power.</a>
-<span class="sourceLineNo">368</span><a id="line.368">    if (squareInputs) {</a>
-<span class="sourceLineNo">369</span><a id="line.369">      leftSpeed = Math.copySign(leftSpeed * leftSpeed, leftSpeed);</a>
-<span class="sourceLineNo">370</span><a id="line.370">      rightSpeed = Math.copySign(rightSpeed * rightSpeed, rightSpeed);</a>
-<span class="sourceLineNo">371</span><a id="line.371">    }</a>
-<span class="sourceLineNo">372</span><a id="line.372"></a>
-<span class="sourceLineNo">373</span><a id="line.373">    return new WheelSpeeds(leftSpeed, rightSpeed);</a>
-<span class="sourceLineNo">374</span><a id="line.374">  }</a>
-<span class="sourceLineNo">375</span><a id="line.375"></a>
-<span class="sourceLineNo">376</span><a id="line.376">  @Override</a>
-<span class="sourceLineNo">377</span><a id="line.377">  public void stopMotor() {</a>
-<span class="sourceLineNo">378</span><a id="line.378">    m_leftMotor.stopMotor();</a>
-<span class="sourceLineNo">379</span><a id="line.379">    m_rightMotor.stopMotor();</a>
-<span class="sourceLineNo">380</span><a id="line.380">    feed();</a>
+<span class="sourceLineNo">255</span><a id="line.255">  /**</a>
+<span class="sourceLineNo">256</span><a id="line.256">   * Arcade drive inverse kinematics for differential drive platform.</a>
+<span class="sourceLineNo">257</span><a id="line.257">   *</a>
+<span class="sourceLineNo">258</span><a id="line.258">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">259</span><a id="line.259">   * @param zRotation The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is</a>
+<span class="sourceLineNo">260</span><a id="line.260">   *     positive.</a>
+<span class="sourceLineNo">261</span><a id="line.261">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
+<span class="sourceLineNo">262</span><a id="line.262">   * @return Wheel speeds [-1.0..1.0].</a>
+<span class="sourceLineNo">263</span><a id="line.263">   */</a>
+<span class="sourceLineNo">264</span><a id="line.264">  public static WheelSpeeds arcadeDriveIK(double xSpeed, double zRotation, boolean squareInputs) {</a>
+<span class="sourceLineNo">265</span><a id="line.265">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">266</span><a id="line.266">    zRotation = MathUtil.clamp(zRotation, -1.0, 1.0);</a>
+<span class="sourceLineNo">267</span><a id="line.267"></a>
+<span class="sourceLineNo">268</span><a id="line.268">    // Square the inputs (while preserving the sign) to increase fine control</a>
+<span class="sourceLineNo">269</span><a id="line.269">    // while permitting full power.</a>
+<span class="sourceLineNo">270</span><a id="line.270">    if (squareInputs) {</a>
+<span class="sourceLineNo">271</span><a id="line.271">      xSpeed = Math.copySign(xSpeed * xSpeed, xSpeed);</a>
+<span class="sourceLineNo">272</span><a id="line.272">      zRotation = Math.copySign(zRotation * zRotation, zRotation);</a>
+<span class="sourceLineNo">273</span><a id="line.273">    }</a>
+<span class="sourceLineNo">274</span><a id="line.274"></a>
+<span class="sourceLineNo">275</span><a id="line.275">    double leftSpeed;</a>
+<span class="sourceLineNo">276</span><a id="line.276">    double rightSpeed;</a>
+<span class="sourceLineNo">277</span><a id="line.277"></a>
+<span class="sourceLineNo">278</span><a id="line.278">    double maxInput = Math.copySign(Math.max(Math.abs(xSpeed), Math.abs(zRotation)), xSpeed);</a>
+<span class="sourceLineNo">279</span><a id="line.279"></a>
+<span class="sourceLineNo">280</span><a id="line.280">    if (Double.compare(xSpeed, 0.0) &gt;= 0) {</a>
+<span class="sourceLineNo">281</span><a id="line.281">      // First quadrant, else second quadrant</a>
+<span class="sourceLineNo">282</span><a id="line.282">      if (Double.compare(zRotation, 0.0) &gt;= 0) {</a>
+<span class="sourceLineNo">283</span><a id="line.283">        leftSpeed = maxInput;</a>
+<span class="sourceLineNo">284</span><a id="line.284">        rightSpeed = xSpeed - zRotation;</a>
+<span class="sourceLineNo">285</span><a id="line.285">      } else {</a>
+<span class="sourceLineNo">286</span><a id="line.286">        leftSpeed = xSpeed + zRotation;</a>
+<span class="sourceLineNo">287</span><a id="line.287">        rightSpeed = maxInput;</a>
+<span class="sourceLineNo">288</span><a id="line.288">      }</a>
+<span class="sourceLineNo">289</span><a id="line.289">    } else {</a>
+<span class="sourceLineNo">290</span><a id="line.290">      // Third quadrant, else fourth quadrant</a>
+<span class="sourceLineNo">291</span><a id="line.291">      if (Double.compare(zRotation, 0.0) &gt;= 0) {</a>
+<span class="sourceLineNo">292</span><a id="line.292">        leftSpeed = xSpeed + zRotation;</a>
+<span class="sourceLineNo">293</span><a id="line.293">        rightSpeed = maxInput;</a>
+<span class="sourceLineNo">294</span><a id="line.294">      } else {</a>
+<span class="sourceLineNo">295</span><a id="line.295">        leftSpeed = maxInput;</a>
+<span class="sourceLineNo">296</span><a id="line.296">        rightSpeed = xSpeed - zRotation;</a>
+<span class="sourceLineNo">297</span><a id="line.297">      }</a>
+<span class="sourceLineNo">298</span><a id="line.298">    }</a>
+<span class="sourceLineNo">299</span><a id="line.299"></a>
+<span class="sourceLineNo">300</span><a id="line.300">    // Normalize the wheel speeds</a>
+<span class="sourceLineNo">301</span><a id="line.301">    double maxMagnitude = Math.max(Math.abs(leftSpeed), Math.abs(rightSpeed));</a>
+<span class="sourceLineNo">302</span><a id="line.302">    if (maxMagnitude &gt; 1.0) {</a>
+<span class="sourceLineNo">303</span><a id="line.303">      leftSpeed /= maxMagnitude;</a>
+<span class="sourceLineNo">304</span><a id="line.304">      rightSpeed /= maxMagnitude;</a>
+<span class="sourceLineNo">305</span><a id="line.305">    }</a>
+<span class="sourceLineNo">306</span><a id="line.306"></a>
+<span class="sourceLineNo">307</span><a id="line.307">    return new WheelSpeeds(leftSpeed, rightSpeed);</a>
+<span class="sourceLineNo">308</span><a id="line.308">  }</a>
+<span class="sourceLineNo">309</span><a id="line.309"></a>
+<span class="sourceLineNo">310</span><a id="line.310">  /**</a>
+<span class="sourceLineNo">311</span><a id="line.311">   * Curvature drive inverse kinematics for differential drive platform.</a>
+<span class="sourceLineNo">312</span><a id="line.312">   *</a>
+<span class="sourceLineNo">313</span><a id="line.313">   * &lt;p&gt;The rotation argument controls the curvature of the robot's path rather than its rate of</a>
+<span class="sourceLineNo">314</span><a id="line.314">   * heading change. This makes the robot more controllable at high speeds.</a>
+<span class="sourceLineNo">315</span><a id="line.315">   *</a>
+<span class="sourceLineNo">316</span><a id="line.316">   * @param xSpeed The robot's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">317</span><a id="line.317">   * @param zRotation The normalized curvature [-1.0..1.0]. Clockwise is positive.</a>
+<span class="sourceLineNo">318</span><a id="line.318">   * @param allowTurnInPlace If set, overrides constant-curvature turning for turn-in-place</a>
+<span class="sourceLineNo">319</span><a id="line.319">   *     maneuvers. zRotation will control rotation rate around the Z axis instead of curvature.</a>
+<span class="sourceLineNo">320</span><a id="line.320">   * @return Wheel speeds [-1.0..1.0].</a>
+<span class="sourceLineNo">321</span><a id="line.321">   */</a>
+<span class="sourceLineNo">322</span><a id="line.322">  public static WheelSpeeds curvatureDriveIK(</a>
+<span class="sourceLineNo">323</span><a id="line.323">      double xSpeed, double zRotation, boolean allowTurnInPlace) {</a>
+<span class="sourceLineNo">324</span><a id="line.324">    xSpeed = MathUtil.clamp(xSpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">325</span><a id="line.325">    zRotation = MathUtil.clamp(zRotation, -1.0, 1.0);</a>
+<span class="sourceLineNo">326</span><a id="line.326"></a>
+<span class="sourceLineNo">327</span><a id="line.327">    double leftSpeed;</a>
+<span class="sourceLineNo">328</span><a id="line.328">    double rightSpeed;</a>
+<span class="sourceLineNo">329</span><a id="line.329"></a>
+<span class="sourceLineNo">330</span><a id="line.330">    if (allowTurnInPlace) {</a>
+<span class="sourceLineNo">331</span><a id="line.331">      leftSpeed = xSpeed + zRotation;</a>
+<span class="sourceLineNo">332</span><a id="line.332">      rightSpeed = xSpeed - zRotation;</a>
+<span class="sourceLineNo">333</span><a id="line.333">    } else {</a>
+<span class="sourceLineNo">334</span><a id="line.334">      leftSpeed = xSpeed + Math.abs(xSpeed) * zRotation;</a>
+<span class="sourceLineNo">335</span><a id="line.335">      rightSpeed = xSpeed - Math.abs(xSpeed) * zRotation;</a>
+<span class="sourceLineNo">336</span><a id="line.336">    }</a>
+<span class="sourceLineNo">337</span><a id="line.337"></a>
+<span class="sourceLineNo">338</span><a id="line.338">    // Normalize wheel speeds</a>
+<span class="sourceLineNo">339</span><a id="line.339">    double maxMagnitude = Math.max(Math.abs(leftSpeed), Math.abs(rightSpeed));</a>
+<span class="sourceLineNo">340</span><a id="line.340">    if (maxMagnitude &gt; 1.0) {</a>
+<span class="sourceLineNo">341</span><a id="line.341">      leftSpeed /= maxMagnitude;</a>
+<span class="sourceLineNo">342</span><a id="line.342">      rightSpeed /= maxMagnitude;</a>
+<span class="sourceLineNo">343</span><a id="line.343">    }</a>
+<span class="sourceLineNo">344</span><a id="line.344"></a>
+<span class="sourceLineNo">345</span><a id="line.345">    return new WheelSpeeds(leftSpeed, rightSpeed);</a>
+<span class="sourceLineNo">346</span><a id="line.346">  }</a>
+<span class="sourceLineNo">347</span><a id="line.347"></a>
+<span class="sourceLineNo">348</span><a id="line.348">  /**</a>
+<span class="sourceLineNo">349</span><a id="line.349">   * Tank drive inverse kinematics for differential drive platform.</a>
+<span class="sourceLineNo">350</span><a id="line.350">   *</a>
+<span class="sourceLineNo">351</span><a id="line.351">   * @param leftSpeed The robot left side's speed along the X axis [-1.0..1.0]. Forward is positive.</a>
+<span class="sourceLineNo">352</span><a id="line.352">   * @param rightSpeed The robot right side's speed along the X axis [-1.0..1.0]. Forward is</a>
+<span class="sourceLineNo">353</span><a id="line.353">   *     positive.</a>
+<span class="sourceLineNo">354</span><a id="line.354">   * @param squareInputs If set, decreases the input sensitivity at low speeds.</a>
+<span class="sourceLineNo">355</span><a id="line.355">   * @return Wheel speeds [-1.0..1.0].</a>
+<span class="sourceLineNo">356</span><a id="line.356">   */</a>
+<span class="sourceLineNo">357</span><a id="line.357">  public static WheelSpeeds tankDriveIK(double leftSpeed, double rightSpeed, boolean squareInputs) {</a>
+<span class="sourceLineNo">358</span><a id="line.358">    leftSpeed = MathUtil.clamp(leftSpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">359</span><a id="line.359">    rightSpeed = MathUtil.clamp(rightSpeed, -1.0, 1.0);</a>
+<span class="sourceLineNo">360</span><a id="line.360"></a>
+<span class="sourceLineNo">361</span><a id="line.361">    // Square the inputs (while preserving the sign) to increase fine control</a>
+<span class="sourceLineNo">362</span><a id="line.362">    // while permitting full power.</a>
+<span class="sourceLineNo">363</span><a id="line.363">    if (squareInputs) {</a>
+<span class="sourceLineNo">364</span><a id="line.364">      leftSpeed = Math.copySign(leftSpeed * leftSpeed, leftSpeed);</a>
+<span class="sourceLineNo">365</span><a id="line.365">      rightSpeed = Math.copySign(rightSpeed * rightSpeed, rightSpeed);</a>
+<span class="sourceLineNo">366</span><a id="line.366">    }</a>
+<span class="sourceLineNo">367</span><a id="line.367"></a>
+<span class="sourceLineNo">368</span><a id="line.368">    return new WheelSpeeds(leftSpeed, rightSpeed);</a>
+<span class="sourceLineNo">369</span><a id="line.369">  }</a>
+<span class="sourceLineNo">370</span><a id="line.370"></a>
+<span class="sourceLineNo">371</span><a id="line.371">  @Override</a>
+<span class="sourceLineNo">372</span><a id="line.372">  public void stopMotor() {</a>
+<span class="sourceLineNo">373</span><a id="line.373">    m_leftMotor.stopMotor();</a>
+<span class="sourceLineNo">374</span><a id="line.374">    m_rightMotor.stopMotor();</a>
+<span class="sourceLineNo">375</span><a id="line.375">    feed();</a>
+<span class="sourceLineNo">376</span><a id="line.376">  }</a>
+<span class="sourceLineNo">377</span><a id="line.377"></a>
+<span class="sourceLineNo">378</span><a id="line.378">  @Override</a>
+<span class="sourceLineNo">379</span><a id="line.379">  public String getDescription() {</a>
+<span class="sourceLineNo">380</span><a id="line.380">    return "DifferentialDrive";</a>
 <span class="sourceLineNo">381</span><a id="line.381">  }</a>
 <span class="sourceLineNo">382</span><a id="line.382"></a>
 <span class="sourceLineNo">383</span><a id="line.383">  @Override</a>
-<span class="sourceLineNo">384</span><a id="line.384">  public String getDescription() {</a>
-<span class="sourceLineNo">385</span><a id="line.385">    return "DifferentialDrive";</a>
-<span class="sourceLineNo">386</span><a id="line.386">  }</a>
-<span class="sourceLineNo">387</span><a id="line.387"></a>
-<span class="sourceLineNo">388</span><a id="line.388">  @Override</a>
-<span class="sourceLineNo">389</span><a id="line.389">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">390</span><a id="line.390">    builder.setSmartDashboardType("DifferentialDrive");</a>
-<span class="sourceLineNo">391</span><a id="line.391">    builder.setActuator(true);</a>
-<span class="sourceLineNo">392</span><a id="line.392">    builder.setSafeState(this::stopMotor);</a>
-<span class="sourceLineNo">393</span><a id="line.393">    builder.addDoubleProperty("Left Motor Speed", m_leftMotor::get, m_leftMotor::set);</a>
-<span class="sourceLineNo">394</span><a id="line.394">    builder.addDoubleProperty(</a>
-<span class="sourceLineNo">395</span><a id="line.395">        "Right Motor Speed", () -&gt; m_rightMotor.get(), x -&gt; m_rightMotor.set(x));</a>
-<span class="sourceLineNo">396</span><a id="line.396">  }</a>
-<span class="sourceLineNo">397</span><a id="line.397">}</a>
+<span class="sourceLineNo">384</span><a id="line.384">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">385</span><a id="line.385">    builder.setSmartDashboardType("DifferentialDrive");</a>
+<span class="sourceLineNo">386</span><a id="line.386">    builder.setActuator(true);</a>
+<span class="sourceLineNo">387</span><a id="line.387">    builder.setSafeState(this::stopMotor);</a>
+<span class="sourceLineNo">388</span><a id="line.388">    builder.addDoubleProperty("Left Motor Speed", m_leftMotor::get, m_leftMotor::set);</a>
+<span class="sourceLineNo">389</span><a id="line.389">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">390</span><a id="line.390">        "Right Motor Speed", () -&gt; m_rightMotor.get(), x -&gt; m_rightMotor.set(x));</a>
+<span class="sourceLineNo">391</span><a id="line.391">  }</a>
+<span class="sourceLineNo">392</span><a id="line.392">}</a>
 
 
 

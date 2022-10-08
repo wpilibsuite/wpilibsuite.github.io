@@ -50,40 +50,40 @@
 <span class="sourceLineNo">038</span><a id="line.38">  private Matrix&lt;N5, N1&gt; m_tolerance = new Matrix&lt;&gt;(Nat.N5(), Nat.N1());</a>
 <span class="sourceLineNo">039</span><a id="line.39"></a>
 <span class="sourceLineNo">040</span><a id="line.40">  /** States of the drivetrain system. */</a>
-<span class="sourceLineNo">041</span><a id="line.41">  enum State {</a>
+<span class="sourceLineNo">041</span><a id="line.41">  private enum State {</a>
 <span class="sourceLineNo">042</span><a id="line.42">    kX(0),</a>
 <span class="sourceLineNo">043</span><a id="line.43">    kY(1),</a>
 <span class="sourceLineNo">044</span><a id="line.44">    kHeading(2),</a>
 <span class="sourceLineNo">045</span><a id="line.45">    kLeftVelocity(3),</a>
 <span class="sourceLineNo">046</span><a id="line.46">    kRightVelocity(4);</a>
 <span class="sourceLineNo">047</span><a id="line.47"></a>
-<span class="sourceLineNo">048</span><a id="line.48">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">049</span><a id="line.49">    public final int value;</a>
-<span class="sourceLineNo">050</span><a id="line.50"></a>
-<span class="sourceLineNo">051</span><a id="line.51">    @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">052</span><a id="line.52">    State(int i) {</a>
-<span class="sourceLineNo">053</span><a id="line.53">      this.value = i;</a>
-<span class="sourceLineNo">054</span><a id="line.54">    }</a>
-<span class="sourceLineNo">055</span><a id="line.55">  }</a>
-<span class="sourceLineNo">056</span><a id="line.56"></a>
-<span class="sourceLineNo">057</span><a id="line.57">  /**</a>
-<span class="sourceLineNo">058</span><a id="line.58">   * Constructs a linear time-varying differential drive controller.</a>
-<span class="sourceLineNo">059</span><a id="line.59">   *</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * @param plant The drivetrain velocity plant.</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * @param trackwidth The drivetrain's trackwidth in meters.</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * @param qelems The maximum desired error tolerance for each state.</a>
-<span class="sourceLineNo">063</span><a id="line.63">   * @param relems The maximum desired control effort for each input.</a>
-<span class="sourceLineNo">064</span><a id="line.64">   * @param dt Discretization timestep in seconds.</a>
-<span class="sourceLineNo">065</span><a id="line.65">   */</a>
-<span class="sourceLineNo">066</span><a id="line.66">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">067</span><a id="line.67">  public LTVDifferentialDriveController(</a>
-<span class="sourceLineNo">068</span><a id="line.68">      LinearSystem&lt;N2, N2, N2&gt; plant,</a>
-<span class="sourceLineNo">069</span><a id="line.69">      double trackwidth,</a>
-<span class="sourceLineNo">070</span><a id="line.70">      Vector&lt;N5&gt; qelems,</a>
-<span class="sourceLineNo">071</span><a id="line.71">      Vector&lt;N2&gt; relems,</a>
-<span class="sourceLineNo">072</span><a id="line.72">      double dt) {</a>
-<span class="sourceLineNo">073</span><a id="line.73">    m_trackwidth = trackwidth;</a>
-<span class="sourceLineNo">074</span><a id="line.74"></a>
+<span class="sourceLineNo">048</span><a id="line.48">    public final int value;</a>
+<span class="sourceLineNo">049</span><a id="line.49"></a>
+<span class="sourceLineNo">050</span><a id="line.50">    State(int i) {</a>
+<span class="sourceLineNo">051</span><a id="line.51">      this.value = i;</a>
+<span class="sourceLineNo">052</span><a id="line.52">    }</a>
+<span class="sourceLineNo">053</span><a id="line.53">  }</a>
+<span class="sourceLineNo">054</span><a id="line.54"></a>
+<span class="sourceLineNo">055</span><a id="line.55">  /**</a>
+<span class="sourceLineNo">056</span><a id="line.56">   * Constructs a linear time-varying differential drive controller.</a>
+<span class="sourceLineNo">057</span><a id="line.57">   *</a>
+<span class="sourceLineNo">058</span><a id="line.58">   * @param plant The differential drive velocity plant.</a>
+<span class="sourceLineNo">059</span><a id="line.59">   * @param trackwidth The distance between the differential drive's left and right wheels in</a>
+<span class="sourceLineNo">060</span><a id="line.60">   *     meters.</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * @param qelems The maximum desired error tolerance for each state.</a>
+<span class="sourceLineNo">062</span><a id="line.62">   * @param relems The maximum desired control effort for each input.</a>
+<span class="sourceLineNo">063</span><a id="line.63">   * @param dt Discretization timestep in seconds.</a>
+<span class="sourceLineNo">064</span><a id="line.64">   */</a>
+<span class="sourceLineNo">065</span><a id="line.65">  public LTVDifferentialDriveController(</a>
+<span class="sourceLineNo">066</span><a id="line.66">      LinearSystem&lt;N2, N2, N2&gt; plant,</a>
+<span class="sourceLineNo">067</span><a id="line.67">      double trackwidth,</a>
+<span class="sourceLineNo">068</span><a id="line.68">      Vector&lt;N5&gt; qelems,</a>
+<span class="sourceLineNo">069</span><a id="line.69">      Vector&lt;N2&gt; relems,</a>
+<span class="sourceLineNo">070</span><a id="line.70">      double dt) {</a>
+<span class="sourceLineNo">071</span><a id="line.71">    m_trackwidth = trackwidth;</a>
+<span class="sourceLineNo">072</span><a id="line.72"></a>
+<span class="sourceLineNo">073</span><a id="line.73">    // Control law derivation is in section 8.7 of</a>
+<span class="sourceLineNo">074</span><a id="line.74">    // https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a>
 <span class="sourceLineNo">075</span><a id="line.75">    var A =</a>
 <span class="sourceLineNo">076</span><a id="line.76">        new MatBuilder&lt;&gt;(Nat.N5(), Nat.N5())</a>
 <span class="sourceLineNo">077</span><a id="line.77">            .fill(</a>
@@ -197,90 +197,89 @@
 <span class="sourceLineNo">185</span><a id="line.185">   * @param rightVelocityRef The desired right velocity in meters per second.</a>
 <span class="sourceLineNo">186</span><a id="line.186">   * @return Left and right output voltages of the LTV controller.</a>
 <span class="sourceLineNo">187</span><a id="line.187">   */</a>
-<span class="sourceLineNo">188</span><a id="line.188">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">189</span><a id="line.189">  public DifferentialDriveWheelVoltages calculate(</a>
-<span class="sourceLineNo">190</span><a id="line.190">      Pose2d currentPose,</a>
-<span class="sourceLineNo">191</span><a id="line.191">      double leftVelocity,</a>
-<span class="sourceLineNo">192</span><a id="line.192">      double rightVelocity,</a>
-<span class="sourceLineNo">193</span><a id="line.193">      Pose2d poseRef,</a>
-<span class="sourceLineNo">194</span><a id="line.194">      double leftVelocityRef,</a>
-<span class="sourceLineNo">195</span><a id="line.195">      double rightVelocityRef) {</a>
-<span class="sourceLineNo">196</span><a id="line.196">    // This implements the linear time-varying differential drive controller in</a>
-<span class="sourceLineNo">197</span><a id="line.197">    // theorem 9.6.3 of https://tavsys.net/controls-in-frc.</a>
-<span class="sourceLineNo">198</span><a id="line.198">    var x =</a>
-<span class="sourceLineNo">199</span><a id="line.199">        new MatBuilder&lt;&gt;(Nat.N5(), Nat.N1())</a>
-<span class="sourceLineNo">200</span><a id="line.200">            .fill(</a>
-<span class="sourceLineNo">201</span><a id="line.201">                currentPose.getX(),</a>
-<span class="sourceLineNo">202</span><a id="line.202">                currentPose.getY(),</a>
-<span class="sourceLineNo">203</span><a id="line.203">                currentPose.getRotation().getRadians(),</a>
-<span class="sourceLineNo">204</span><a id="line.204">                leftVelocity,</a>
-<span class="sourceLineNo">205</span><a id="line.205">                rightVelocity);</a>
-<span class="sourceLineNo">206</span><a id="line.206"></a>
-<span class="sourceLineNo">207</span><a id="line.207">    var inRobotFrame = Matrix.eye(Nat.N5());</a>
-<span class="sourceLineNo">208</span><a id="line.208">    inRobotFrame.set(0, 0, Math.cos(x.get(State.kHeading.value, 0)));</a>
-<span class="sourceLineNo">209</span><a id="line.209">    inRobotFrame.set(0, 1, Math.sin(x.get(State.kHeading.value, 0)));</a>
-<span class="sourceLineNo">210</span><a id="line.210">    inRobotFrame.set(1, 0, -Math.sin(x.get(State.kHeading.value, 0)));</a>
-<span class="sourceLineNo">211</span><a id="line.211">    inRobotFrame.set(1, 1, Math.cos(x.get(State.kHeading.value, 0)));</a>
-<span class="sourceLineNo">212</span><a id="line.212"></a>
-<span class="sourceLineNo">213</span><a id="line.213">    var r =</a>
-<span class="sourceLineNo">214</span><a id="line.214">        new MatBuilder&lt;&gt;(Nat.N5(), Nat.N1())</a>
-<span class="sourceLineNo">215</span><a id="line.215">            .fill(</a>
-<span class="sourceLineNo">216</span><a id="line.216">                poseRef.getX(),</a>
-<span class="sourceLineNo">217</span><a id="line.217">                poseRef.getY(),</a>
-<span class="sourceLineNo">218</span><a id="line.218">                poseRef.getRotation().getRadians(),</a>
-<span class="sourceLineNo">219</span><a id="line.219">                leftVelocityRef,</a>
-<span class="sourceLineNo">220</span><a id="line.220">                rightVelocityRef);</a>
-<span class="sourceLineNo">221</span><a id="line.221">    m_error = r.minus(x);</a>
-<span class="sourceLineNo">222</span><a id="line.222">    m_error.set(</a>
-<span class="sourceLineNo">223</span><a id="line.223">        State.kHeading.value, 0, MathUtil.angleModulus(m_error.get(State.kHeading.value, 0)));</a>
-<span class="sourceLineNo">224</span><a id="line.224"></a>
-<span class="sourceLineNo">225</span><a id="line.225">    double velocity = (leftVelocity + rightVelocity) / 2.0;</a>
-<span class="sourceLineNo">226</span><a id="line.226">    var K = m_table.get(velocity);</a>
-<span class="sourceLineNo">227</span><a id="line.227"></a>
-<span class="sourceLineNo">228</span><a id="line.228">    var u = K.times(inRobotFrame).times(m_error);</a>
-<span class="sourceLineNo">229</span><a id="line.229"></a>
-<span class="sourceLineNo">230</span><a id="line.230">    return new DifferentialDriveWheelVoltages(u.get(0, 0), u.get(1, 0));</a>
-<span class="sourceLineNo">231</span><a id="line.231">  }</a>
-<span class="sourceLineNo">232</span><a id="line.232"></a>
-<span class="sourceLineNo">233</span><a id="line.233">  /**</a>
-<span class="sourceLineNo">234</span><a id="line.234">   * Returns the left and right output voltages of the LTV controller.</a>
-<span class="sourceLineNo">235</span><a id="line.235">   *</a>
-<span class="sourceLineNo">236</span><a id="line.236">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
-<span class="sourceLineNo">237</span><a id="line.237">   * trajectory.</a>
-<span class="sourceLineNo">238</span><a id="line.238">   *</a>
-<span class="sourceLineNo">239</span><a id="line.239">   * @param currentPose The current pose.</a>
-<span class="sourceLineNo">240</span><a id="line.240">   * @param leftVelocity The left velocity in meters per second.</a>
-<span class="sourceLineNo">241</span><a id="line.241">   * @param rightVelocity The right velocity in meters per second.</a>
-<span class="sourceLineNo">242</span><a id="line.242">   * @param desiredState The desired pose, linear velocity, and angular velocity from a trajectory.</a>
-<span class="sourceLineNo">243</span><a id="line.243">   * @return The left and right output voltages of the LTV controller.</a>
-<span class="sourceLineNo">244</span><a id="line.244">   */</a>
-<span class="sourceLineNo">245</span><a id="line.245">  public DifferentialDriveWheelVoltages calculate(</a>
-<span class="sourceLineNo">246</span><a id="line.246">      Pose2d currentPose,</a>
-<span class="sourceLineNo">247</span><a id="line.247">      double leftVelocity,</a>
-<span class="sourceLineNo">248</span><a id="line.248">      double rightVelocity,</a>
-<span class="sourceLineNo">249</span><a id="line.249">      Trajectory.State desiredState) {</a>
-<span class="sourceLineNo">250</span><a id="line.250">    // v = (v_r + v_l) / 2     (1)</a>
-<span class="sourceLineNo">251</span><a id="line.251">    // w = (v_r - v_l) / (2r)  (2)</a>
-<span class="sourceLineNo">252</span><a id="line.252">    // k = w / v               (3)</a>
-<span class="sourceLineNo">253</span><a id="line.253">    //</a>
-<span class="sourceLineNo">254</span><a id="line.254">    // v_l = v - wr</a>
-<span class="sourceLineNo">255</span><a id="line.255">    // v_l = v - (vk)r</a>
-<span class="sourceLineNo">256</span><a id="line.256">    // v_l = v(1 - kr)</a>
-<span class="sourceLineNo">257</span><a id="line.257">    //</a>
-<span class="sourceLineNo">258</span><a id="line.258">    // v_r = v + wr</a>
-<span class="sourceLineNo">259</span><a id="line.259">    // v_r = v + (vk)r</a>
-<span class="sourceLineNo">260</span><a id="line.260">    // v_r = v(1 + kr)</a>
-<span class="sourceLineNo">261</span><a id="line.261">    return calculate(</a>
-<span class="sourceLineNo">262</span><a id="line.262">        currentPose,</a>
-<span class="sourceLineNo">263</span><a id="line.263">        leftVelocity,</a>
-<span class="sourceLineNo">264</span><a id="line.264">        rightVelocity,</a>
-<span class="sourceLineNo">265</span><a id="line.265">        desiredState.poseMeters,</a>
-<span class="sourceLineNo">266</span><a id="line.266">        desiredState.velocityMetersPerSecond</a>
-<span class="sourceLineNo">267</span><a id="line.267">            * (1 - (desiredState.curvatureRadPerMeter * m_trackwidth / 2.0)),</a>
-<span class="sourceLineNo">268</span><a id="line.268">        desiredState.velocityMetersPerSecond</a>
-<span class="sourceLineNo">269</span><a id="line.269">            * (1 + (desiredState.curvatureRadPerMeter * m_trackwidth / 2.0)));</a>
-<span class="sourceLineNo">270</span><a id="line.270">  }</a>
-<span class="sourceLineNo">271</span><a id="line.271">}</a>
+<span class="sourceLineNo">188</span><a id="line.188">  public DifferentialDriveWheelVoltages calculate(</a>
+<span class="sourceLineNo">189</span><a id="line.189">      Pose2d currentPose,</a>
+<span class="sourceLineNo">190</span><a id="line.190">      double leftVelocity,</a>
+<span class="sourceLineNo">191</span><a id="line.191">      double rightVelocity,</a>
+<span class="sourceLineNo">192</span><a id="line.192">      Pose2d poseRef,</a>
+<span class="sourceLineNo">193</span><a id="line.193">      double leftVelocityRef,</a>
+<span class="sourceLineNo">194</span><a id="line.194">      double rightVelocityRef) {</a>
+<span class="sourceLineNo">195</span><a id="line.195">    // This implements the linear time-varying differential drive controller in</a>
+<span class="sourceLineNo">196</span><a id="line.196">    // theorem 9.6.3 of https://tavsys.net/controls-in-frc.</a>
+<span class="sourceLineNo">197</span><a id="line.197">    var x =</a>
+<span class="sourceLineNo">198</span><a id="line.198">        new MatBuilder&lt;&gt;(Nat.N5(), Nat.N1())</a>
+<span class="sourceLineNo">199</span><a id="line.199">            .fill(</a>
+<span class="sourceLineNo">200</span><a id="line.200">                currentPose.getX(),</a>
+<span class="sourceLineNo">201</span><a id="line.201">                currentPose.getY(),</a>
+<span class="sourceLineNo">202</span><a id="line.202">                currentPose.getRotation().getRadians(),</a>
+<span class="sourceLineNo">203</span><a id="line.203">                leftVelocity,</a>
+<span class="sourceLineNo">204</span><a id="line.204">                rightVelocity);</a>
+<span class="sourceLineNo">205</span><a id="line.205"></a>
+<span class="sourceLineNo">206</span><a id="line.206">    var inRobotFrame = Matrix.eye(Nat.N5());</a>
+<span class="sourceLineNo">207</span><a id="line.207">    inRobotFrame.set(0, 0, Math.cos(x.get(State.kHeading.value, 0)));</a>
+<span class="sourceLineNo">208</span><a id="line.208">    inRobotFrame.set(0, 1, Math.sin(x.get(State.kHeading.value, 0)));</a>
+<span class="sourceLineNo">209</span><a id="line.209">    inRobotFrame.set(1, 0, -Math.sin(x.get(State.kHeading.value, 0)));</a>
+<span class="sourceLineNo">210</span><a id="line.210">    inRobotFrame.set(1, 1, Math.cos(x.get(State.kHeading.value, 0)));</a>
+<span class="sourceLineNo">211</span><a id="line.211"></a>
+<span class="sourceLineNo">212</span><a id="line.212">    var r =</a>
+<span class="sourceLineNo">213</span><a id="line.213">        new MatBuilder&lt;&gt;(Nat.N5(), Nat.N1())</a>
+<span class="sourceLineNo">214</span><a id="line.214">            .fill(</a>
+<span class="sourceLineNo">215</span><a id="line.215">                poseRef.getX(),</a>
+<span class="sourceLineNo">216</span><a id="line.216">                poseRef.getY(),</a>
+<span class="sourceLineNo">217</span><a id="line.217">                poseRef.getRotation().getRadians(),</a>
+<span class="sourceLineNo">218</span><a id="line.218">                leftVelocityRef,</a>
+<span class="sourceLineNo">219</span><a id="line.219">                rightVelocityRef);</a>
+<span class="sourceLineNo">220</span><a id="line.220">    m_error = r.minus(x);</a>
+<span class="sourceLineNo">221</span><a id="line.221">    m_error.set(</a>
+<span class="sourceLineNo">222</span><a id="line.222">        State.kHeading.value, 0, MathUtil.angleModulus(m_error.get(State.kHeading.value, 0)));</a>
+<span class="sourceLineNo">223</span><a id="line.223"></a>
+<span class="sourceLineNo">224</span><a id="line.224">    double velocity = (leftVelocity + rightVelocity) / 2.0;</a>
+<span class="sourceLineNo">225</span><a id="line.225">    var K = m_table.get(velocity);</a>
+<span class="sourceLineNo">226</span><a id="line.226"></a>
+<span class="sourceLineNo">227</span><a id="line.227">    var u = K.times(inRobotFrame).times(m_error);</a>
+<span class="sourceLineNo">228</span><a id="line.228"></a>
+<span class="sourceLineNo">229</span><a id="line.229">    return new DifferentialDriveWheelVoltages(u.get(0, 0), u.get(1, 0));</a>
+<span class="sourceLineNo">230</span><a id="line.230">  }</a>
+<span class="sourceLineNo">231</span><a id="line.231"></a>
+<span class="sourceLineNo">232</span><a id="line.232">  /**</a>
+<span class="sourceLineNo">233</span><a id="line.233">   * Returns the left and right output voltages of the LTV controller.</a>
+<span class="sourceLineNo">234</span><a id="line.234">   *</a>
+<span class="sourceLineNo">235</span><a id="line.235">   * &lt;p&gt;The reference pose, linear velocity, and angular velocity should come from a drivetrain</a>
+<span class="sourceLineNo">236</span><a id="line.236">   * trajectory.</a>
+<span class="sourceLineNo">237</span><a id="line.237">   *</a>
+<span class="sourceLineNo">238</span><a id="line.238">   * @param currentPose The current pose.</a>
+<span class="sourceLineNo">239</span><a id="line.239">   * @param leftVelocity The left velocity in meters per second.</a>
+<span class="sourceLineNo">240</span><a id="line.240">   * @param rightVelocity The right velocity in meters per second.</a>
+<span class="sourceLineNo">241</span><a id="line.241">   * @param desiredState The desired pose, linear velocity, and angular velocity from a trajectory.</a>
+<span class="sourceLineNo">242</span><a id="line.242">   * @return The left and right output voltages of the LTV controller.</a>
+<span class="sourceLineNo">243</span><a id="line.243">   */</a>
+<span class="sourceLineNo">244</span><a id="line.244">  public DifferentialDriveWheelVoltages calculate(</a>
+<span class="sourceLineNo">245</span><a id="line.245">      Pose2d currentPose,</a>
+<span class="sourceLineNo">246</span><a id="line.246">      double leftVelocity,</a>
+<span class="sourceLineNo">247</span><a id="line.247">      double rightVelocity,</a>
+<span class="sourceLineNo">248</span><a id="line.248">      Trajectory.State desiredState) {</a>
+<span class="sourceLineNo">249</span><a id="line.249">    // v = (v_r + v_l) / 2     (1)</a>
+<span class="sourceLineNo">250</span><a id="line.250">    // w = (v_r - v_l) / (2r)  (2)</a>
+<span class="sourceLineNo">251</span><a id="line.251">    // k = w / v               (3)</a>
+<span class="sourceLineNo">252</span><a id="line.252">    //</a>
+<span class="sourceLineNo">253</span><a id="line.253">    // v_l = v - wr</a>
+<span class="sourceLineNo">254</span><a id="line.254">    // v_l = v - (vk)r</a>
+<span class="sourceLineNo">255</span><a id="line.255">    // v_l = v(1 - kr)</a>
+<span class="sourceLineNo">256</span><a id="line.256">    //</a>
+<span class="sourceLineNo">257</span><a id="line.257">    // v_r = v + wr</a>
+<span class="sourceLineNo">258</span><a id="line.258">    // v_r = v + (vk)r</a>
+<span class="sourceLineNo">259</span><a id="line.259">    // v_r = v(1 + kr)</a>
+<span class="sourceLineNo">260</span><a id="line.260">    return calculate(</a>
+<span class="sourceLineNo">261</span><a id="line.261">        currentPose,</a>
+<span class="sourceLineNo">262</span><a id="line.262">        leftVelocity,</a>
+<span class="sourceLineNo">263</span><a id="line.263">        rightVelocity,</a>
+<span class="sourceLineNo">264</span><a id="line.264">        desiredState.poseMeters,</a>
+<span class="sourceLineNo">265</span><a id="line.265">        desiredState.velocityMetersPerSecond</a>
+<span class="sourceLineNo">266</span><a id="line.266">            * (1 - (desiredState.curvatureRadPerMeter * m_trackwidth / 2.0)),</a>
+<span class="sourceLineNo">267</span><a id="line.267">        desiredState.velocityMetersPerSecond</a>
+<span class="sourceLineNo">268</span><a id="line.268">            * (1 + (desiredState.curvatureRadPerMeter * m_trackwidth / 2.0)));</a>
+<span class="sourceLineNo">269</span><a id="line.269">  }</a>
+<span class="sourceLineNo">270</span><a id="line.270">}</a>
 
 
 

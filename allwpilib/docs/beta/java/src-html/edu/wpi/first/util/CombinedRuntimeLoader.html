@@ -68,7 +68,7 @@
 <span class="sourceLineNo">056</span><a id="line.56">   * @return List of all libraries that were extracted</a>
 <span class="sourceLineNo">057</span><a id="line.57">   * @throws IOException Thrown if resource not found or file could not be extracted</a>
 <span class="sourceLineNo">058</span><a id="line.58">   */</a>
-<span class="sourceLineNo">059</span><a id="line.59">  @SuppressWarnings({"PMD.UnnecessaryCastRule", "unchecked"})</a>
+<span class="sourceLineNo">059</span><a id="line.59">  @SuppressWarnings("unchecked")</a>
 <span class="sourceLineNo">060</span><a id="line.60">  public static &lt;T&gt; List&lt;String&gt; extractLibraries(Class&lt;T&gt; clazz, String resourceName)</a>
 <span class="sourceLineNo">061</span><a id="line.61">      throws IOException {</a>
 <span class="sourceLineNo">062</span><a id="line.62">    TypeReference&lt;HashMap&lt;String, Object&gt;&gt; typeRef =</a>

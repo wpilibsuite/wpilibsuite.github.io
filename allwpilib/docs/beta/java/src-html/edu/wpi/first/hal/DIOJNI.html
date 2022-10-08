@@ -16,42 +16,43 @@
 <span class="sourceLineNo">004</span><a id="line.4"></a>
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.hal;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
-<span class="sourceLineNo">007</span><a id="line.7">@SuppressWarnings("AbbreviationAsWordInName")</a>
-<span class="sourceLineNo">008</span><a id="line.8">public class DIOJNI extends JNIWrapper {</a>
-<span class="sourceLineNo">009</span><a id="line.9">  public static native int initializeDIOPort(int halPortHandle, boolean input);</a>
-<span class="sourceLineNo">010</span><a id="line.10"></a>
-<span class="sourceLineNo">011</span><a id="line.11">  public static native boolean checkDIOChannel(int channel);</a>
-<span class="sourceLineNo">012</span><a id="line.12"></a>
-<span class="sourceLineNo">013</span><a id="line.13">  public static native void freeDIOPort(int dioPortHandle);</a>
-<span class="sourceLineNo">014</span><a id="line.14"></a>
-<span class="sourceLineNo">015</span><a id="line.15">  public static native void setDIOSimDevice(int handle, int device);</a>
-<span class="sourceLineNo">016</span><a id="line.16"></a>
-<span class="sourceLineNo">017</span><a id="line.17">  public static native void setDIO(int dioPortHandle, boolean value);</a>
-<span class="sourceLineNo">018</span><a id="line.18"></a>
-<span class="sourceLineNo">019</span><a id="line.19">  public static native void setDIODirection(int dioPortHandle, boolean input);</a>
-<span class="sourceLineNo">020</span><a id="line.20"></a>
-<span class="sourceLineNo">021</span><a id="line.21">  public static native boolean getDIO(int dioPortHandle);</a>
-<span class="sourceLineNo">022</span><a id="line.22"></a>
-<span class="sourceLineNo">023</span><a id="line.23">  public static native boolean getDIODirection(int dioPortHandle);</a>
-<span class="sourceLineNo">024</span><a id="line.24"></a>
-<span class="sourceLineNo">025</span><a id="line.25">  public static native void pulse(int dioPortHandle, double pulseLength);</a>
-<span class="sourceLineNo">026</span><a id="line.26"></a>
-<span class="sourceLineNo">027</span><a id="line.27">  public static native boolean isPulsing(int dioPortHandle);</a>
-<span class="sourceLineNo">028</span><a id="line.28"></a>
-<span class="sourceLineNo">029</span><a id="line.29">  public static native boolean isAnyPulsing();</a>
-<span class="sourceLineNo">030</span><a id="line.30"></a>
-<span class="sourceLineNo">031</span><a id="line.31">  public static native short getLoopTiming();</a>
-<span class="sourceLineNo">032</span><a id="line.32"></a>
-<span class="sourceLineNo">033</span><a id="line.33">  public static native int allocateDigitalPWM();</a>
-<span class="sourceLineNo">034</span><a id="line.34"></a>
-<span class="sourceLineNo">035</span><a id="line.35">  public static native void freeDigitalPWM(int pwmGenerator);</a>
-<span class="sourceLineNo">036</span><a id="line.36"></a>
-<span class="sourceLineNo">037</span><a id="line.37">  public static native void setDigitalPWMRate(double rate);</a>
-<span class="sourceLineNo">038</span><a id="line.38"></a>
-<span class="sourceLineNo">039</span><a id="line.39">  public static native void setDigitalPWMDutyCycle(int pwmGenerator, double dutyCycle);</a>
-<span class="sourceLineNo">040</span><a id="line.40"></a>
-<span class="sourceLineNo">041</span><a id="line.41">  public static native void setDigitalPWMOutputChannel(int pwmGenerator, int channel);</a>
-<span class="sourceLineNo">042</span><a id="line.42">}</a>
+<span class="sourceLineNo">007</span><a id="line.7">public class DIOJNI extends JNIWrapper {</a>
+<span class="sourceLineNo">008</span><a id="line.8">  public static native int initializeDIOPort(int halPortHandle, boolean input);</a>
+<span class="sourceLineNo">009</span><a id="line.9"></a>
+<span class="sourceLineNo">010</span><a id="line.10">  public static native boolean checkDIOChannel(int channel);</a>
+<span class="sourceLineNo">011</span><a id="line.11"></a>
+<span class="sourceLineNo">012</span><a id="line.12">  public static native void freeDIOPort(int dioPortHandle);</a>
+<span class="sourceLineNo">013</span><a id="line.13"></a>
+<span class="sourceLineNo">014</span><a id="line.14">  public static native void setDIOSimDevice(int handle, int device);</a>
+<span class="sourceLineNo">015</span><a id="line.15"></a>
+<span class="sourceLineNo">016</span><a id="line.16">  public static native void setDIO(int dioPortHandle, boolean value);</a>
+<span class="sourceLineNo">017</span><a id="line.17"></a>
+<span class="sourceLineNo">018</span><a id="line.18">  public static native void setDIODirection(int dioPortHandle, boolean input);</a>
+<span class="sourceLineNo">019</span><a id="line.19"></a>
+<span class="sourceLineNo">020</span><a id="line.20">  public static native boolean getDIO(int dioPortHandle);</a>
+<span class="sourceLineNo">021</span><a id="line.21"></a>
+<span class="sourceLineNo">022</span><a id="line.22">  public static native boolean getDIODirection(int dioPortHandle);</a>
+<span class="sourceLineNo">023</span><a id="line.23"></a>
+<span class="sourceLineNo">024</span><a id="line.24">  public static native void pulse(int dioPortHandle, double pulseLengthSeconds);</a>
+<span class="sourceLineNo">025</span><a id="line.25"></a>
+<span class="sourceLineNo">026</span><a id="line.26">  public static native void pulseMultiple(long channelMask, double pulseLengthSeconds);</a>
+<span class="sourceLineNo">027</span><a id="line.27"></a>
+<span class="sourceLineNo">028</span><a id="line.28">  public static native boolean isPulsing(int dioPortHandle);</a>
+<span class="sourceLineNo">029</span><a id="line.29"></a>
+<span class="sourceLineNo">030</span><a id="line.30">  public static native boolean isAnyPulsing();</a>
+<span class="sourceLineNo">031</span><a id="line.31"></a>
+<span class="sourceLineNo">032</span><a id="line.32">  public static native short getLoopTiming();</a>
+<span class="sourceLineNo">033</span><a id="line.33"></a>
+<span class="sourceLineNo">034</span><a id="line.34">  public static native int allocateDigitalPWM();</a>
+<span class="sourceLineNo">035</span><a id="line.35"></a>
+<span class="sourceLineNo">036</span><a id="line.36">  public static native void freeDigitalPWM(int pwmGenerator);</a>
+<span class="sourceLineNo">037</span><a id="line.37"></a>
+<span class="sourceLineNo">038</span><a id="line.38">  public static native void setDigitalPWMRate(double rate);</a>
+<span class="sourceLineNo">039</span><a id="line.39"></a>
+<span class="sourceLineNo">040</span><a id="line.40">  public static native void setDigitalPWMDutyCycle(int pwmGenerator, double dutyCycle);</a>
+<span class="sourceLineNo">041</span><a id="line.41"></a>
+<span class="sourceLineNo">042</span><a id="line.42">  public static native void setDigitalPWMOutputChannel(int pwmGenerator, int channel);</a>
+<span class="sourceLineNo">043</span><a id="line.43">}</a>
 
 
 

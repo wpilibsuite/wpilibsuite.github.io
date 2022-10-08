@@ -70,73 +70,71 @@
 <span class="sourceLineNo">058</span><a id="line.58">   * @param jKgMetersSquared The moment of inertia of the flywheel. If this is unknown, use the</a>
 <span class="sourceLineNo">059</span><a id="line.59">   *     {@link #FlywheelSim(LinearSystem, DCMotor, double, Matrix)} constructor.</a>
 <span class="sourceLineNo">060</span><a id="line.60">   */</a>
-<span class="sourceLineNo">061</span><a id="line.61">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">062</span><a id="line.62">  public FlywheelSim(DCMotor gearbox, double gearing, double jKgMetersSquared) {</a>
-<span class="sourceLineNo">063</span><a id="line.63">    super(LinearSystemId.createFlywheelSystem(gearbox, jKgMetersSquared, gearing));</a>
-<span class="sourceLineNo">064</span><a id="line.64">    m_gearbox = gearbox;</a>
-<span class="sourceLineNo">065</span><a id="line.65">    m_gearing = gearing;</a>
-<span class="sourceLineNo">066</span><a id="line.66">  }</a>
-<span class="sourceLineNo">067</span><a id="line.67"></a>
-<span class="sourceLineNo">068</span><a id="line.68">  /**</a>
-<span class="sourceLineNo">069</span><a id="line.69">   * Creates a simulated flywheel mechanism.</a>
-<span class="sourceLineNo">070</span><a id="line.70">   *</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * @param gearbox The type of and number of motors in the flywheel gearbox.</a>
-<span class="sourceLineNo">072</span><a id="line.72">   * @param gearing The gearing of the flywheel (numbers greater than 1 represent reductions).</a>
-<span class="sourceLineNo">073</span><a id="line.73">   * @param jKgMetersSquared The moment of inertia of the flywheel. If this is unknown, use the</a>
-<span class="sourceLineNo">074</span><a id="line.74">   *     {@link #FlywheelSim(LinearSystem, DCMotor, double, Matrix)} constructor.</a>
-<span class="sourceLineNo">075</span><a id="line.75">   * @param measurementStdDevs The standard deviations of the measurements.</a>
-<span class="sourceLineNo">076</span><a id="line.76">   */</a>
-<span class="sourceLineNo">077</span><a id="line.77">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">078</span><a id="line.78">  public FlywheelSim(</a>
-<span class="sourceLineNo">079</span><a id="line.79">      DCMotor gearbox, double gearing, double jKgMetersSquared, Matrix&lt;N1, N1&gt; measurementStdDevs) {</a>
-<span class="sourceLineNo">080</span><a id="line.80">    super(</a>
-<span class="sourceLineNo">081</span><a id="line.81">        LinearSystemId.createFlywheelSystem(gearbox, jKgMetersSquared, gearing),</a>
-<span class="sourceLineNo">082</span><a id="line.82">        measurementStdDevs);</a>
-<span class="sourceLineNo">083</span><a id="line.83">    m_gearbox = gearbox;</a>
-<span class="sourceLineNo">084</span><a id="line.84">    m_gearing = gearing;</a>
-<span class="sourceLineNo">085</span><a id="line.85">  }</a>
-<span class="sourceLineNo">086</span><a id="line.86"></a>
-<span class="sourceLineNo">087</span><a id="line.87">  /**</a>
-<span class="sourceLineNo">088</span><a id="line.88">   * Returns the flywheel velocity.</a>
-<span class="sourceLineNo">089</span><a id="line.89">   *</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * @return The flywheel velocity.</a>
-<span class="sourceLineNo">091</span><a id="line.91">   */</a>
-<span class="sourceLineNo">092</span><a id="line.92">  public double getAngularVelocityRadPerSec() {</a>
-<span class="sourceLineNo">093</span><a id="line.93">    return getOutput(0);</a>
-<span class="sourceLineNo">094</span><a id="line.94">  }</a>
-<span class="sourceLineNo">095</span><a id="line.95"></a>
-<span class="sourceLineNo">096</span><a id="line.96">  /**</a>
-<span class="sourceLineNo">097</span><a id="line.97">   * Returns the flywheel velocity in RPM.</a>
-<span class="sourceLineNo">098</span><a id="line.98">   *</a>
-<span class="sourceLineNo">099</span><a id="line.99">   * @return The flywheel velocity in RPM.</a>
-<span class="sourceLineNo">100</span><a id="line.100">   */</a>
-<span class="sourceLineNo">101</span><a id="line.101">  public double getAngularVelocityRPM() {</a>
-<span class="sourceLineNo">102</span><a id="line.102">    return Units.radiansPerSecondToRotationsPerMinute(getOutput(0));</a>
-<span class="sourceLineNo">103</span><a id="line.103">  }</a>
-<span class="sourceLineNo">104</span><a id="line.104"></a>
-<span class="sourceLineNo">105</span><a id="line.105">  /**</a>
-<span class="sourceLineNo">106</span><a id="line.106">   * Returns the flywheel current draw.</a>
-<span class="sourceLineNo">107</span><a id="line.107">   *</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * @return The flywheel current draw.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   */</a>
-<span class="sourceLineNo">110</span><a id="line.110">  @Override</a>
-<span class="sourceLineNo">111</span><a id="line.111">  public double getCurrentDrawAmps() {</a>
-<span class="sourceLineNo">112</span><a id="line.112">    // I = V / R - omega / (Kv * R)</a>
-<span class="sourceLineNo">113</span><a id="line.113">    // Reductions are output over input, so a reduction of 2:1 means the motor is spinning</a>
-<span class="sourceLineNo">114</span><a id="line.114">    // 2x faster than the flywheel</a>
-<span class="sourceLineNo">115</span><a id="line.115">    return m_gearbox.getCurrent(getAngularVelocityRadPerSec() * m_gearing, m_u.get(0, 0))</a>
-<span class="sourceLineNo">116</span><a id="line.116">        * Math.signum(m_u.get(0, 0));</a>
-<span class="sourceLineNo">117</span><a id="line.117">  }</a>
-<span class="sourceLineNo">118</span><a id="line.118"></a>
-<span class="sourceLineNo">119</span><a id="line.119">  /**</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * Sets the input voltage for the flywheel.</a>
-<span class="sourceLineNo">121</span><a id="line.121">   *</a>
-<span class="sourceLineNo">122</span><a id="line.122">   * @param volts The input voltage.</a>
-<span class="sourceLineNo">123</span><a id="line.123">   */</a>
-<span class="sourceLineNo">124</span><a id="line.124">  public void setInputVoltage(double volts) {</a>
-<span class="sourceLineNo">125</span><a id="line.125">    setInput(volts);</a>
-<span class="sourceLineNo">126</span><a id="line.126">  }</a>
-<span class="sourceLineNo">127</span><a id="line.127">}</a>
+<span class="sourceLineNo">061</span><a id="line.61">  public FlywheelSim(DCMotor gearbox, double gearing, double jKgMetersSquared) {</a>
+<span class="sourceLineNo">062</span><a id="line.62">    super(LinearSystemId.createFlywheelSystem(gearbox, jKgMetersSquared, gearing));</a>
+<span class="sourceLineNo">063</span><a id="line.63">    m_gearbox = gearbox;</a>
+<span class="sourceLineNo">064</span><a id="line.64">    m_gearing = gearing;</a>
+<span class="sourceLineNo">065</span><a id="line.65">  }</a>
+<span class="sourceLineNo">066</span><a id="line.66"></a>
+<span class="sourceLineNo">067</span><a id="line.67">  /**</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * Creates a simulated flywheel mechanism.</a>
+<span class="sourceLineNo">069</span><a id="line.69">   *</a>
+<span class="sourceLineNo">070</span><a id="line.70">   * @param gearbox The type of and number of motors in the flywheel gearbox.</a>
+<span class="sourceLineNo">071</span><a id="line.71">   * @param gearing The gearing of the flywheel (numbers greater than 1 represent reductions).</a>
+<span class="sourceLineNo">072</span><a id="line.72">   * @param jKgMetersSquared The moment of inertia of the flywheel. If this is unknown, use the</a>
+<span class="sourceLineNo">073</span><a id="line.73">   *     {@link #FlywheelSim(LinearSystem, DCMotor, double, Matrix)} constructor.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * @param measurementStdDevs The standard deviations of the measurements.</a>
+<span class="sourceLineNo">075</span><a id="line.75">   */</a>
+<span class="sourceLineNo">076</span><a id="line.76">  public FlywheelSim(</a>
+<span class="sourceLineNo">077</span><a id="line.77">      DCMotor gearbox, double gearing, double jKgMetersSquared, Matrix&lt;N1, N1&gt; measurementStdDevs) {</a>
+<span class="sourceLineNo">078</span><a id="line.78">    super(</a>
+<span class="sourceLineNo">079</span><a id="line.79">        LinearSystemId.createFlywheelSystem(gearbox, jKgMetersSquared, gearing),</a>
+<span class="sourceLineNo">080</span><a id="line.80">        measurementStdDevs);</a>
+<span class="sourceLineNo">081</span><a id="line.81">    m_gearbox = gearbox;</a>
+<span class="sourceLineNo">082</span><a id="line.82">    m_gearing = gearing;</a>
+<span class="sourceLineNo">083</span><a id="line.83">  }</a>
+<span class="sourceLineNo">084</span><a id="line.84"></a>
+<span class="sourceLineNo">085</span><a id="line.85">  /**</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * Returns the flywheel velocity.</a>
+<span class="sourceLineNo">087</span><a id="line.87">   *</a>
+<span class="sourceLineNo">088</span><a id="line.88">   * @return The flywheel velocity.</a>
+<span class="sourceLineNo">089</span><a id="line.89">   */</a>
+<span class="sourceLineNo">090</span><a id="line.90">  public double getAngularVelocityRadPerSec() {</a>
+<span class="sourceLineNo">091</span><a id="line.91">    return getOutput(0);</a>
+<span class="sourceLineNo">092</span><a id="line.92">  }</a>
+<span class="sourceLineNo">093</span><a id="line.93"></a>
+<span class="sourceLineNo">094</span><a id="line.94">  /**</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * Returns the flywheel velocity in RPM.</a>
+<span class="sourceLineNo">096</span><a id="line.96">   *</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * @return The flywheel velocity in RPM.</a>
+<span class="sourceLineNo">098</span><a id="line.98">   */</a>
+<span class="sourceLineNo">099</span><a id="line.99">  public double getAngularVelocityRPM() {</a>
+<span class="sourceLineNo">100</span><a id="line.100">    return Units.radiansPerSecondToRotationsPerMinute(getOutput(0));</a>
+<span class="sourceLineNo">101</span><a id="line.101">  }</a>
+<span class="sourceLineNo">102</span><a id="line.102"></a>
+<span class="sourceLineNo">103</span><a id="line.103">  /**</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * Returns the flywheel current draw.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   *</a>
+<span class="sourceLineNo">106</span><a id="line.106">   * @return The flywheel current draw.</a>
+<span class="sourceLineNo">107</span><a id="line.107">   */</a>
+<span class="sourceLineNo">108</span><a id="line.108">  @Override</a>
+<span class="sourceLineNo">109</span><a id="line.109">  public double getCurrentDrawAmps() {</a>
+<span class="sourceLineNo">110</span><a id="line.110">    // I = V / R - omega / (Kv * R)</a>
+<span class="sourceLineNo">111</span><a id="line.111">    // Reductions are output over input, so a reduction of 2:1 means the motor is spinning</a>
+<span class="sourceLineNo">112</span><a id="line.112">    // 2x faster than the flywheel</a>
+<span class="sourceLineNo">113</span><a id="line.113">    return m_gearbox.getCurrent(getAngularVelocityRadPerSec() * m_gearing, m_u.get(0, 0))</a>
+<span class="sourceLineNo">114</span><a id="line.114">        * Math.signum(m_u.get(0, 0));</a>
+<span class="sourceLineNo">115</span><a id="line.115">  }</a>
+<span class="sourceLineNo">116</span><a id="line.116"></a>
+<span class="sourceLineNo">117</span><a id="line.117">  /**</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * Sets the input voltage for the flywheel.</a>
+<span class="sourceLineNo">119</span><a id="line.119">   *</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param volts The input voltage.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   */</a>
+<span class="sourceLineNo">122</span><a id="line.122">  public void setInputVoltage(double volts) {</a>
+<span class="sourceLineNo">123</span><a id="line.123">    setInput(volts);</a>
+<span class="sourceLineNo">124</span><a id="line.124">  }</a>
+<span class="sourceLineNo">125</span><a id="line.125">}</a>
 
 
 

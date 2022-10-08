@@ -99,40 +99,38 @@
 <span class="sourceLineNo">087</span><a id="line.87">   * @param angleStateIdx The row containing the angles.</a>
 <span class="sourceLineNo">088</span><a id="line.88">   * @return Mean of sigma points.</a>
 <span class="sourceLineNo">089</span><a id="line.89">   */</a>
-<span class="sourceLineNo">090</span><a id="line.90">  @SuppressWarnings("checkstyle:ParameterName")</a>
-<span class="sourceLineNo">091</span><a id="line.91">  public static &lt;S extends Num&gt; Matrix&lt;S, N1&gt; angleMean(</a>
-<span class="sourceLineNo">092</span><a id="line.92">      Matrix&lt;S, ?&gt; sigmas, Matrix&lt;?, N1&gt; Wm, int angleStateIdx) {</a>
-<span class="sourceLineNo">093</span><a id="line.93">    double[] angleSigmas = sigmas.extractRowVector(angleStateIdx).getData();</a>
-<span class="sourceLineNo">094</span><a id="line.94">    Matrix&lt;N1, ?&gt; sinAngleSigmas = new Matrix&lt;&gt;(new SimpleMatrix(1, sigmas.getNumCols()));</a>
-<span class="sourceLineNo">095</span><a id="line.95">    Matrix&lt;N1, ?&gt; cosAngleSigmas = new Matrix&lt;&gt;(new SimpleMatrix(1, sigmas.getNumCols()));</a>
-<span class="sourceLineNo">096</span><a id="line.96">    for (int i = 0; i &lt; angleSigmas.length; i++) {</a>
-<span class="sourceLineNo">097</span><a id="line.97">      sinAngleSigmas.set(0, i, Math.sin(angleSigmas[i]));</a>
-<span class="sourceLineNo">098</span><a id="line.98">      cosAngleSigmas.set(0, i, Math.cos(angleSigmas[i]));</a>
-<span class="sourceLineNo">099</span><a id="line.99">    }</a>
-<span class="sourceLineNo">100</span><a id="line.100"></a>
-<span class="sourceLineNo">101</span><a id="line.101">    double sumSin = sinAngleSigmas.times(Matrix.changeBoundsUnchecked(Wm)).elementSum();</a>
-<span class="sourceLineNo">102</span><a id="line.102">    double sumCos = cosAngleSigmas.times(Matrix.changeBoundsUnchecked(Wm)).elementSum();</a>
-<span class="sourceLineNo">103</span><a id="line.103"></a>
-<span class="sourceLineNo">104</span><a id="line.104">    Matrix&lt;S, N1&gt; ret = sigmas.times(Matrix.changeBoundsUnchecked(Wm));</a>
-<span class="sourceLineNo">105</span><a id="line.105">    ret.set(angleStateIdx, 0, Math.atan2(sumSin, sumCos));</a>
-<span class="sourceLineNo">106</span><a id="line.106"></a>
-<span class="sourceLineNo">107</span><a id="line.107">    return ret;</a>
-<span class="sourceLineNo">108</span><a id="line.108">  }</a>
-<span class="sourceLineNo">109</span><a id="line.109"></a>
-<span class="sourceLineNo">110</span><a id="line.110">  /**</a>
-<span class="sourceLineNo">111</span><a id="line.111">   * Returns a function that computes the mean of sigmas with the weights Wm while computing a</a>
-<span class="sourceLineNo">112</span><a id="line.112">   * special angle mean for a select row.</a>
-<span class="sourceLineNo">113</span><a id="line.113">   *</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * @param &lt;S&gt; Number of rows in sigma point matrix.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   * @param angleStateIdx The row containing the angles.</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * @return Function returning mean of sigma points.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   */</a>
-<span class="sourceLineNo">118</span><a id="line.118">  @SuppressWarnings("LambdaParameterName")</a>
-<span class="sourceLineNo">119</span><a id="line.119">  public static &lt;S extends Num&gt; BiFunction&lt;Matrix&lt;S, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;S, N1&gt;&gt; angleMean(</a>
-<span class="sourceLineNo">120</span><a id="line.120">      int angleStateIdx) {</a>
-<span class="sourceLineNo">121</span><a id="line.121">    return (sigmas, Wm) -&gt; angleMean(sigmas, Wm, angleStateIdx);</a>
-<span class="sourceLineNo">122</span><a id="line.122">  }</a>
-<span class="sourceLineNo">123</span><a id="line.123">}</a>
+<span class="sourceLineNo">090</span><a id="line.90">  public static &lt;S extends Num&gt; Matrix&lt;S, N1&gt; angleMean(</a>
+<span class="sourceLineNo">091</span><a id="line.91">      Matrix&lt;S, ?&gt; sigmas, Matrix&lt;?, N1&gt; Wm, int angleStateIdx) {</a>
+<span class="sourceLineNo">092</span><a id="line.92">    double[] angleSigmas = sigmas.extractRowVector(angleStateIdx).getData();</a>
+<span class="sourceLineNo">093</span><a id="line.93">    Matrix&lt;N1, ?&gt; sinAngleSigmas = new Matrix&lt;&gt;(new SimpleMatrix(1, sigmas.getNumCols()));</a>
+<span class="sourceLineNo">094</span><a id="line.94">    Matrix&lt;N1, ?&gt; cosAngleSigmas = new Matrix&lt;&gt;(new SimpleMatrix(1, sigmas.getNumCols()));</a>
+<span class="sourceLineNo">095</span><a id="line.95">    for (int i = 0; i &lt; angleSigmas.length; i++) {</a>
+<span class="sourceLineNo">096</span><a id="line.96">      sinAngleSigmas.set(0, i, Math.sin(angleSigmas[i]));</a>
+<span class="sourceLineNo">097</span><a id="line.97">      cosAngleSigmas.set(0, i, Math.cos(angleSigmas[i]));</a>
+<span class="sourceLineNo">098</span><a id="line.98">    }</a>
+<span class="sourceLineNo">099</span><a id="line.99"></a>
+<span class="sourceLineNo">100</span><a id="line.100">    double sumSin = sinAngleSigmas.times(Matrix.changeBoundsUnchecked(Wm)).elementSum();</a>
+<span class="sourceLineNo">101</span><a id="line.101">    double sumCos = cosAngleSigmas.times(Matrix.changeBoundsUnchecked(Wm)).elementSum();</a>
+<span class="sourceLineNo">102</span><a id="line.102"></a>
+<span class="sourceLineNo">103</span><a id="line.103">    Matrix&lt;S, N1&gt; ret = sigmas.times(Matrix.changeBoundsUnchecked(Wm));</a>
+<span class="sourceLineNo">104</span><a id="line.104">    ret.set(angleStateIdx, 0, Math.atan2(sumSin, sumCos));</a>
+<span class="sourceLineNo">105</span><a id="line.105"></a>
+<span class="sourceLineNo">106</span><a id="line.106">    return ret;</a>
+<span class="sourceLineNo">107</span><a id="line.107">  }</a>
+<span class="sourceLineNo">108</span><a id="line.108"></a>
+<span class="sourceLineNo">109</span><a id="line.109">  /**</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * Returns a function that computes the mean of sigmas with the weights Wm while computing a</a>
+<span class="sourceLineNo">111</span><a id="line.111">   * special angle mean for a select row.</a>
+<span class="sourceLineNo">112</span><a id="line.112">   *</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * @param &lt;S&gt; Number of rows in sigma point matrix.</a>
+<span class="sourceLineNo">114</span><a id="line.114">   * @param angleStateIdx The row containing the angles.</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * @return Function returning mean of sigma points.</a>
+<span class="sourceLineNo">116</span><a id="line.116">   */</a>
+<span class="sourceLineNo">117</span><a id="line.117">  public static &lt;S extends Num&gt; BiFunction&lt;Matrix&lt;S, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;S, N1&gt;&gt; angleMean(</a>
+<span class="sourceLineNo">118</span><a id="line.118">      int angleStateIdx) {</a>
+<span class="sourceLineNo">119</span><a id="line.119">    return (sigmas, Wm) -&gt; angleMean(sigmas, Wm, angleStateIdx);</a>
+<span class="sourceLineNo">120</span><a id="line.120">  }</a>
+<span class="sourceLineNo">121</span><a id="line.121">}</a>
 
 
 

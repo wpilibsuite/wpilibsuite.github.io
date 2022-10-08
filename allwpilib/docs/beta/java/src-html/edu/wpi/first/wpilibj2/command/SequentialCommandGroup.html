@@ -60,7 +60,7 @@
 <span class="sourceLineNo">048</span><a id="line.48">  }</a>
 <span class="sourceLineNo">049</span><a id="line.49"></a>
 <span class="sourceLineNo">050</span><a id="line.50">  @Override</a>
-<span class="sourceLineNo">051</span><a id="line.51">  public void initialize() {</a>
+<span class="sourceLineNo">051</span><a id="line.51">  public final void initialize() {</a>
 <span class="sourceLineNo">052</span><a id="line.52">    m_currentCommandIndex = 0;</a>
 <span class="sourceLineNo">053</span><a id="line.53"></a>
 <span class="sourceLineNo">054</span><a id="line.54">    if (!m_commands.isEmpty()) {</a>
@@ -69,7 +69,7 @@
 <span class="sourceLineNo">057</span><a id="line.57">  }</a>
 <span class="sourceLineNo">058</span><a id="line.58"></a>
 <span class="sourceLineNo">059</span><a id="line.59">  @Override</a>
-<span class="sourceLineNo">060</span><a id="line.60">  public void execute() {</a>
+<span class="sourceLineNo">060</span><a id="line.60">  public final void execute() {</a>
 <span class="sourceLineNo">061</span><a id="line.61">    if (m_commands.isEmpty()) {</a>
 <span class="sourceLineNo">062</span><a id="line.62">      return;</a>
 <span class="sourceLineNo">063</span><a id="line.63">    }</a>
@@ -87,7 +87,7 @@
 <span class="sourceLineNo">075</span><a id="line.75">  }</a>
 <span class="sourceLineNo">076</span><a id="line.76"></a>
 <span class="sourceLineNo">077</span><a id="line.77">  @Override</a>
-<span class="sourceLineNo">078</span><a id="line.78">  public void end(boolean interrupted) {</a>
+<span class="sourceLineNo">078</span><a id="line.78">  public final void end(boolean interrupted) {</a>
 <span class="sourceLineNo">079</span><a id="line.79">    if (interrupted</a>
 <span class="sourceLineNo">080</span><a id="line.80">        &amp;&amp; !m_commands.isEmpty()</a>
 <span class="sourceLineNo">081</span><a id="line.81">        &amp;&amp; m_currentCommandIndex &gt; -1</a>
@@ -98,7 +98,7 @@
 <span class="sourceLineNo">086</span><a id="line.86">  }</a>
 <span class="sourceLineNo">087</span><a id="line.87"></a>
 <span class="sourceLineNo">088</span><a id="line.88">  @Override</a>
-<span class="sourceLineNo">089</span><a id="line.89">  public boolean isFinished() {</a>
+<span class="sourceLineNo">089</span><a id="line.89">  public final boolean isFinished() {</a>
 <span class="sourceLineNo">090</span><a id="line.90">    return m_currentCommandIndex == m_commands.size();</a>
 <span class="sourceLineNo">091</span><a id="line.91">  }</a>
 <span class="sourceLineNo">092</span><a id="line.92"></a>
@@ -106,31 +106,7 @@
 <span class="sourceLineNo">094</span><a id="line.94">  public boolean runsWhenDisabled() {</a>
 <span class="sourceLineNo">095</span><a id="line.95">    return m_runWhenDisabled;</a>
 <span class="sourceLineNo">096</span><a id="line.96">  }</a>
-<span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">  @Override</a>
-<span class="sourceLineNo">099</span><a id="line.99">  public SequentialCommandGroup beforeStarting(Command before) {</a>
-<span class="sourceLineNo">100</span><a id="line.100">    // store all the commands</a>
-<span class="sourceLineNo">101</span><a id="line.101">    var commands = new ArrayList&lt;Command&gt;();</a>
-<span class="sourceLineNo">102</span><a id="line.102">    commands.add(before);</a>
-<span class="sourceLineNo">103</span><a id="line.103">    commands.addAll(m_commands);</a>
-<span class="sourceLineNo">104</span><a id="line.104"></a>
-<span class="sourceLineNo">105</span><a id="line.105">    // reset current state</a>
-<span class="sourceLineNo">106</span><a id="line.106">    commands.forEach(CommandGroupBase::clearGroupedCommand);</a>
-<span class="sourceLineNo">107</span><a id="line.107">    m_commands.clear();</a>
-<span class="sourceLineNo">108</span><a id="line.108">    m_requirements.clear();</a>
-<span class="sourceLineNo">109</span><a id="line.109">    m_runWhenDisabled = true;</a>
-<span class="sourceLineNo">110</span><a id="line.110"></a>
-<span class="sourceLineNo">111</span><a id="line.111">    // add them back</a>
-<span class="sourceLineNo">112</span><a id="line.112">    addCommands(commands.toArray(Command[]::new));</a>
-<span class="sourceLineNo">113</span><a id="line.113">    return this;</a>
-<span class="sourceLineNo">114</span><a id="line.114">  }</a>
-<span class="sourceLineNo">115</span><a id="line.115"></a>
-<span class="sourceLineNo">116</span><a id="line.116">  @Override</a>
-<span class="sourceLineNo">117</span><a id="line.117">  public SequentialCommandGroup andThen(Command... next) {</a>
-<span class="sourceLineNo">118</span><a id="line.118">    addCommands(next);</a>
-<span class="sourceLineNo">119</span><a id="line.119">    return this;</a>
-<span class="sourceLineNo">120</span><a id="line.120">  }</a>
-<span class="sourceLineNo">121</span><a id="line.121">}</a>
+<span class="sourceLineNo">097</span><a id="line.97">}</a>
 
 
 

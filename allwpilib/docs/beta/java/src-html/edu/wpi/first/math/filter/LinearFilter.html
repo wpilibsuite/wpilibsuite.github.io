@@ -156,150 +156,149 @@
 <span class="sourceLineNo">144</span><a id="line.144">   * &lt;p&gt;Stencil points are the indices of the samples to use in the finite difference. 0 is the</a>
 <span class="sourceLineNo">145</span><a id="line.145">   * current sample, -1 is the previous sample, -2 is the sample before that, etc. Don't use</a>
 <span class="sourceLineNo">146</span><a id="line.146">   * positive stencil points (samples from the future) if the LinearFilter will be used for</a>
-<span class="sourceLineNo">147</span><a id="line.147">   * stream-based online filtering.</a>
+<span class="sourceLineNo">147</span><a id="line.147">   * stream-based online filtering (e.g., taking derivative of encoder samples in real-time).</a>
 <span class="sourceLineNo">148</span><a id="line.148">   *</a>
 <span class="sourceLineNo">149</span><a id="line.149">   * @param derivative The order of the derivative to compute.</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * @param samples The number of samples to use to compute the given derivative. This must be one</a>
-<span class="sourceLineNo">151</span><a id="line.151">   *     more than the order of derivative or higher.</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * @param stencil List of stencil points.</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * @param period The period in seconds between samples taken by the user.</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * @return Linear filter.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   * @throws IllegalArgumentException if derivative &amp;lt; 1, samples &amp;lt;= 0, or derivative &amp;gt;=</a>
-<span class="sourceLineNo">156</span><a id="line.156">   *     samples.</a>
-<span class="sourceLineNo">157</span><a id="line.157">   */</a>
-<span class="sourceLineNo">158</span><a id="line.158">  @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">159</span><a id="line.159">  public static LinearFilter finiteDifference(</a>
-<span class="sourceLineNo">160</span><a id="line.160">      int derivative, int samples, int[] stencil, double period) {</a>
-<span class="sourceLineNo">161</span><a id="line.161">    // See</a>
-<span class="sourceLineNo">162</span><a id="line.162">    // https://en.wikipedia.org/wiki/Finite_difference_coefficient#Arbitrary_stencil_points</a>
-<span class="sourceLineNo">163</span><a id="line.163">    //</a>
-<span class="sourceLineNo">164</span><a id="line.164">    // For a given list of stencil points s of length n and the order of</a>
-<span class="sourceLineNo">165</span><a id="line.165">    // derivative d &lt; n, the finite difference coefficients can be obtained by</a>
-<span class="sourceLineNo">166</span><a id="line.166">    // solving the following linear system for the vector a.</a>
-<span class="sourceLineNo">167</span><a id="line.167">    //</a>
-<span class="sourceLineNo">168</span><a id="line.168">    // [s₁⁰   ⋯  sₙ⁰ ][a₁]      [ δ₀,d ]</a>
-<span class="sourceLineNo">169</span><a id="line.169">    // [ ⋮    ⋱  ⋮   ][⋮ ] = d! [  ⋮   ]</a>
-<span class="sourceLineNo">170</span><a id="line.170">    // [s₁ⁿ⁻¹ ⋯ sₙⁿ⁻¹][aₙ]      [δₙ₋₁,d]</a>
+<span class="sourceLineNo">150</span><a id="line.150">   * @param stencil List of stencil points. Its length is the number of samples to use to compute</a>
+<span class="sourceLineNo">151</span><a id="line.151">   *     the given derivative. This must be one more than the order of the derivative or higher.</a>
+<span class="sourceLineNo">152</span><a id="line.152">   * @param period The period in seconds between samples taken by the user.</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * @return Linear filter.</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * @throws IllegalArgumentException if derivative &amp;lt; 1, samples &amp;lt;= 0, or derivative &amp;gt;=</a>
+<span class="sourceLineNo">155</span><a id="line.155">   *     samples.</a>
+<span class="sourceLineNo">156</span><a id="line.156">   */</a>
+<span class="sourceLineNo">157</span><a id="line.157">  public static LinearFilter finiteDifference(int derivative, int[] stencil, double period) {</a>
+<span class="sourceLineNo">158</span><a id="line.158">    // See</a>
+<span class="sourceLineNo">159</span><a id="line.159">    // https://en.wikipedia.org/wiki/Finite_difference_coefficient#Arbitrary_stencil_points</a>
+<span class="sourceLineNo">160</span><a id="line.160">    //</a>
+<span class="sourceLineNo">161</span><a id="line.161">    // For a given list of stencil points s of length n and the order of</a>
+<span class="sourceLineNo">162</span><a id="line.162">    // derivative d &lt; n, the finite difference coefficients can be obtained by</a>
+<span class="sourceLineNo">163</span><a id="line.163">    // solving the following linear system for the vector a.</a>
+<span class="sourceLineNo">164</span><a id="line.164">    //</a>
+<span class="sourceLineNo">165</span><a id="line.165">    // [s₁⁰   ⋯  sₙ⁰ ][a₁]      [ δ₀,d ]</a>
+<span class="sourceLineNo">166</span><a id="line.166">    // [ ⋮    ⋱  ⋮   ][⋮ ] = d! [  ⋮   ]</a>
+<span class="sourceLineNo">167</span><a id="line.167">    // [s₁ⁿ⁻¹ ⋯ sₙⁿ⁻¹][aₙ]      [δₙ₋₁,d]</a>
+<span class="sourceLineNo">168</span><a id="line.168">    //</a>
+<span class="sourceLineNo">169</span><a id="line.169">    // where δᵢ,ⱼ are the Kronecker delta. The FIR gains are the elements of the</a>
+<span class="sourceLineNo">170</span><a id="line.170">    // vector a in reverse order divided by hᵈ.</a>
 <span class="sourceLineNo">171</span><a id="line.171">    //</a>
-<span class="sourceLineNo">172</span><a id="line.172">    // where δᵢ,ⱼ are the Kronecker delta. The FIR gains are the elements of the</a>
-<span class="sourceLineNo">173</span><a id="line.173">    // vector a in reverse order divided by hᵈ.</a>
-<span class="sourceLineNo">174</span><a id="line.174">    //</a>
-<span class="sourceLineNo">175</span><a id="line.175">    // The order of accuracy of the approximation is of the form O(hⁿ⁻ᵈ).</a>
-<span class="sourceLineNo">176</span><a id="line.176"></a>
-<span class="sourceLineNo">177</span><a id="line.177">    if (derivative &lt; 1) {</a>
-<span class="sourceLineNo">178</span><a id="line.178">      throw new IllegalArgumentException(</a>
-<span class="sourceLineNo">179</span><a id="line.179">          "Order of derivative must be greater than or equal to one.");</a>
-<span class="sourceLineNo">180</span><a id="line.180">    }</a>
-<span class="sourceLineNo">181</span><a id="line.181"></a>
-<span class="sourceLineNo">182</span><a id="line.182">    if (samples &lt;= 0) {</a>
-<span class="sourceLineNo">183</span><a id="line.183">      throw new IllegalArgumentException("Number of samples must be greater than zero.");</a>
-<span class="sourceLineNo">184</span><a id="line.184">    }</a>
-<span class="sourceLineNo">185</span><a id="line.185"></a>
-<span class="sourceLineNo">186</span><a id="line.186">    if (derivative &gt;= samples) {</a>
-<span class="sourceLineNo">187</span><a id="line.187">      throw new IllegalArgumentException(</a>
-<span class="sourceLineNo">188</span><a id="line.188">          "Order of derivative must be less than number of samples.");</a>
-<span class="sourceLineNo">189</span><a id="line.189">    }</a>
-<span class="sourceLineNo">190</span><a id="line.190"></a>
-<span class="sourceLineNo">191</span><a id="line.191">    var S = new SimpleMatrix(samples, samples);</a>
-<span class="sourceLineNo">192</span><a id="line.192">    for (int row = 0; row &lt; samples; ++row) {</a>
-<span class="sourceLineNo">193</span><a id="line.193">      for (int col = 0; col &lt; samples; ++col) {</a>
-<span class="sourceLineNo">194</span><a id="line.194">        S.set(row, col, Math.pow(stencil[col], row));</a>
-<span class="sourceLineNo">195</span><a id="line.195">      }</a>
-<span class="sourceLineNo">196</span><a id="line.196">    }</a>
-<span class="sourceLineNo">197</span><a id="line.197"></a>
-<span class="sourceLineNo">198</span><a id="line.198">    // Fill in Kronecker deltas: https://en.wikipedia.org/wiki/Kronecker_delta</a>
-<span class="sourceLineNo">199</span><a id="line.199">    var d = new SimpleMatrix(samples, 1);</a>
-<span class="sourceLineNo">200</span><a id="line.200">    for (int i = 0; i &lt; samples; ++i) {</a>
-<span class="sourceLineNo">201</span><a id="line.201">      d.set(i, 0, (i == derivative) ? factorial(derivative) : 0.0);</a>
-<span class="sourceLineNo">202</span><a id="line.202">    }</a>
-<span class="sourceLineNo">203</span><a id="line.203"></a>
-<span class="sourceLineNo">204</span><a id="line.204">    var a = S.solve(d).divide(Math.pow(period, derivative));</a>
-<span class="sourceLineNo">205</span><a id="line.205"></a>
-<span class="sourceLineNo">206</span><a id="line.206">    // Reverse gains list</a>
-<span class="sourceLineNo">207</span><a id="line.207">    double[] ffGains = new double[samples];</a>
-<span class="sourceLineNo">208</span><a id="line.208">    for (int i = 0; i &lt; samples; ++i) {</a>
-<span class="sourceLineNo">209</span><a id="line.209">      ffGains[i] = a.get(samples - i - 1, 0);</a>
-<span class="sourceLineNo">210</span><a id="line.210">    }</a>
-<span class="sourceLineNo">211</span><a id="line.211"></a>
-<span class="sourceLineNo">212</span><a id="line.212">    return new LinearFilter(ffGains, new double[0]);</a>
-<span class="sourceLineNo">213</span><a id="line.213">  }</a>
-<span class="sourceLineNo">214</span><a id="line.214"></a>
-<span class="sourceLineNo">215</span><a id="line.215">  /**</a>
-<span class="sourceLineNo">216</span><a id="line.216">   * Creates a backward finite difference filter that computes the nth derivative of the input given</a>
-<span class="sourceLineNo">217</span><a id="line.217">   * the specified number of samples.</a>
-<span class="sourceLineNo">218</span><a id="line.218">   *</a>
-<span class="sourceLineNo">219</span><a id="line.219">   * &lt;p&gt;For example, a first derivative filter that uses two samples and a sample period of 20 ms</a>
-<span class="sourceLineNo">220</span><a id="line.220">   * would be</a>
-<span class="sourceLineNo">221</span><a id="line.221">   *</a>
-<span class="sourceLineNo">222</span><a id="line.222">   * &lt;pre&gt;&lt;code&gt;</a>
-<span class="sourceLineNo">223</span><a id="line.223">   * LinearFilter.backwardFiniteDifference(1, 2, 0.02);</a>
-<span class="sourceLineNo">224</span><a id="line.224">   * &lt;/code&gt;&lt;/pre&gt;</a>
-<span class="sourceLineNo">225</span><a id="line.225">   *</a>
-<span class="sourceLineNo">226</span><a id="line.226">   * @param derivative The order of the derivative to compute.</a>
-<span class="sourceLineNo">227</span><a id="line.227">   * @param samples The number of samples to use to compute the given derivative. This must be one</a>
-<span class="sourceLineNo">228</span><a id="line.228">   *     more than the order of derivative or higher.</a>
-<span class="sourceLineNo">229</span><a id="line.229">   * @param period The period in seconds between samples taken by the user.</a>
-<span class="sourceLineNo">230</span><a id="line.230">   * @return Linear filter.</a>
-<span class="sourceLineNo">231</span><a id="line.231">   */</a>
-<span class="sourceLineNo">232</span><a id="line.232">  public static LinearFilter backwardFiniteDifference(int derivative, int samples, double period) {</a>
-<span class="sourceLineNo">233</span><a id="line.233">    // Generate stencil points from -(samples - 1) to 0</a>
-<span class="sourceLineNo">234</span><a id="line.234">    int[] stencil = new int[samples];</a>
-<span class="sourceLineNo">235</span><a id="line.235">    for (int i = 0; i &lt; samples; ++i) {</a>
-<span class="sourceLineNo">236</span><a id="line.236">      stencil[i] = -(samples - 1) + i;</a>
-<span class="sourceLineNo">237</span><a id="line.237">    }</a>
-<span class="sourceLineNo">238</span><a id="line.238"></a>
-<span class="sourceLineNo">239</span><a id="line.239">    return finiteDifference(derivative, samples, stencil, period);</a>
-<span class="sourceLineNo">240</span><a id="line.240">  }</a>
-<span class="sourceLineNo">241</span><a id="line.241"></a>
-<span class="sourceLineNo">242</span><a id="line.242">  /** Reset the filter state. */</a>
-<span class="sourceLineNo">243</span><a id="line.243">  public void reset() {</a>
-<span class="sourceLineNo">244</span><a id="line.244">    m_inputs.clear();</a>
-<span class="sourceLineNo">245</span><a id="line.245">    m_outputs.clear();</a>
-<span class="sourceLineNo">246</span><a id="line.246">  }</a>
-<span class="sourceLineNo">247</span><a id="line.247"></a>
-<span class="sourceLineNo">248</span><a id="line.248">  /**</a>
-<span class="sourceLineNo">249</span><a id="line.249">   * Calculates the next value of the filter.</a>
-<span class="sourceLineNo">250</span><a id="line.250">   *</a>
-<span class="sourceLineNo">251</span><a id="line.251">   * @param input Current input value.</a>
-<span class="sourceLineNo">252</span><a id="line.252">   * @return The filtered value at this step</a>
-<span class="sourceLineNo">253</span><a id="line.253">   */</a>
-<span class="sourceLineNo">254</span><a id="line.254">  public double calculate(double input) {</a>
-<span class="sourceLineNo">255</span><a id="line.255">    double retVal = 0.0;</a>
-<span class="sourceLineNo">256</span><a id="line.256"></a>
-<span class="sourceLineNo">257</span><a id="line.257">    // Rotate the inputs</a>
-<span class="sourceLineNo">258</span><a id="line.258">    if (m_inputGains.length &gt; 0) {</a>
-<span class="sourceLineNo">259</span><a id="line.259">      m_inputs.addFirst(input);</a>
-<span class="sourceLineNo">260</span><a id="line.260">    }</a>
-<span class="sourceLineNo">261</span><a id="line.261"></a>
-<span class="sourceLineNo">262</span><a id="line.262">    // Calculate the new value</a>
-<span class="sourceLineNo">263</span><a id="line.263">    for (int i = 0; i &lt; m_inputGains.length; i++) {</a>
-<span class="sourceLineNo">264</span><a id="line.264">      retVal += m_inputs.get(i) * m_inputGains[i];</a>
-<span class="sourceLineNo">265</span><a id="line.265">    }</a>
-<span class="sourceLineNo">266</span><a id="line.266">    for (int i = 0; i &lt; m_outputGains.length; i++) {</a>
-<span class="sourceLineNo">267</span><a id="line.267">      retVal -= m_outputs.get(i) * m_outputGains[i];</a>
-<span class="sourceLineNo">268</span><a id="line.268">    }</a>
-<span class="sourceLineNo">269</span><a id="line.269"></a>
-<span class="sourceLineNo">270</span><a id="line.270">    // Rotate the outputs</a>
-<span class="sourceLineNo">271</span><a id="line.271">    if (m_outputGains.length &gt; 0) {</a>
-<span class="sourceLineNo">272</span><a id="line.272">      m_outputs.addFirst(retVal);</a>
-<span class="sourceLineNo">273</span><a id="line.273">    }</a>
-<span class="sourceLineNo">274</span><a id="line.274"></a>
-<span class="sourceLineNo">275</span><a id="line.275">    return retVal;</a>
-<span class="sourceLineNo">276</span><a id="line.276">  }</a>
-<span class="sourceLineNo">277</span><a id="line.277"></a>
-<span class="sourceLineNo">278</span><a id="line.278">  /**</a>
-<span class="sourceLineNo">279</span><a id="line.279">   * Factorial of n.</a>
-<span class="sourceLineNo">280</span><a id="line.280">   *</a>
-<span class="sourceLineNo">281</span><a id="line.281">   * @param n Argument of which to take factorial.</a>
-<span class="sourceLineNo">282</span><a id="line.282">   */</a>
-<span class="sourceLineNo">283</span><a id="line.283">  private static int factorial(int n) {</a>
-<span class="sourceLineNo">284</span><a id="line.284">    if (n &lt; 2) {</a>
-<span class="sourceLineNo">285</span><a id="line.285">      return 1;</a>
-<span class="sourceLineNo">286</span><a id="line.286">    } else {</a>
-<span class="sourceLineNo">287</span><a id="line.287">      return n * factorial(n - 1);</a>
-<span class="sourceLineNo">288</span><a id="line.288">    }</a>
-<span class="sourceLineNo">289</span><a id="line.289">  }</a>
-<span class="sourceLineNo">290</span><a id="line.290">}</a>
+<span class="sourceLineNo">172</span><a id="line.172">    // The order of accuracy of the approximation is of the form O(hⁿ⁻ᵈ).</a>
+<span class="sourceLineNo">173</span><a id="line.173"></a>
+<span class="sourceLineNo">174</span><a id="line.174">    if (derivative &lt; 1) {</a>
+<span class="sourceLineNo">175</span><a id="line.175">      throw new IllegalArgumentException(</a>
+<span class="sourceLineNo">176</span><a id="line.176">          "Order of derivative must be greater than or equal to one.");</a>
+<span class="sourceLineNo">177</span><a id="line.177">    }</a>
+<span class="sourceLineNo">178</span><a id="line.178"></a>
+<span class="sourceLineNo">179</span><a id="line.179">    int samples = stencil.length;</a>
+<span class="sourceLineNo">180</span><a id="line.180"></a>
+<span class="sourceLineNo">181</span><a id="line.181">    if (samples &lt;= 0) {</a>
+<span class="sourceLineNo">182</span><a id="line.182">      throw new IllegalArgumentException("Number of samples must be greater than zero.");</a>
+<span class="sourceLineNo">183</span><a id="line.183">    }</a>
+<span class="sourceLineNo">184</span><a id="line.184"></a>
+<span class="sourceLineNo">185</span><a id="line.185">    if (derivative &gt;= samples) {</a>
+<span class="sourceLineNo">186</span><a id="line.186">      throw new IllegalArgumentException(</a>
+<span class="sourceLineNo">187</span><a id="line.187">          "Order of derivative must be less than number of samples.");</a>
+<span class="sourceLineNo">188</span><a id="line.188">    }</a>
+<span class="sourceLineNo">189</span><a id="line.189"></a>
+<span class="sourceLineNo">190</span><a id="line.190">    var S = new SimpleMatrix(samples, samples);</a>
+<span class="sourceLineNo">191</span><a id="line.191">    for (int row = 0; row &lt; samples; ++row) {</a>
+<span class="sourceLineNo">192</span><a id="line.192">      for (int col = 0; col &lt; samples; ++col) {</a>
+<span class="sourceLineNo">193</span><a id="line.193">        S.set(row, col, Math.pow(stencil[col], row));</a>
+<span class="sourceLineNo">194</span><a id="line.194">      }</a>
+<span class="sourceLineNo">195</span><a id="line.195">    }</a>
+<span class="sourceLineNo">196</span><a id="line.196"></a>
+<span class="sourceLineNo">197</span><a id="line.197">    // Fill in Kronecker deltas: https://en.wikipedia.org/wiki/Kronecker_delta</a>
+<span class="sourceLineNo">198</span><a id="line.198">    var d = new SimpleMatrix(samples, 1);</a>
+<span class="sourceLineNo">199</span><a id="line.199">    for (int i = 0; i &lt; samples; ++i) {</a>
+<span class="sourceLineNo">200</span><a id="line.200">      d.set(i, 0, (i == derivative) ? factorial(derivative) : 0.0);</a>
+<span class="sourceLineNo">201</span><a id="line.201">    }</a>
+<span class="sourceLineNo">202</span><a id="line.202"></a>
+<span class="sourceLineNo">203</span><a id="line.203">    var a = S.solve(d).divide(Math.pow(period, derivative));</a>
+<span class="sourceLineNo">204</span><a id="line.204"></a>
+<span class="sourceLineNo">205</span><a id="line.205">    // Reverse gains list</a>
+<span class="sourceLineNo">206</span><a id="line.206">    double[] ffGains = new double[samples];</a>
+<span class="sourceLineNo">207</span><a id="line.207">    for (int i = 0; i &lt; samples; ++i) {</a>
+<span class="sourceLineNo">208</span><a id="line.208">      ffGains[i] = a.get(samples - i - 1, 0);</a>
+<span class="sourceLineNo">209</span><a id="line.209">    }</a>
+<span class="sourceLineNo">210</span><a id="line.210"></a>
+<span class="sourceLineNo">211</span><a id="line.211">    return new LinearFilter(ffGains, new double[0]);</a>
+<span class="sourceLineNo">212</span><a id="line.212">  }</a>
+<span class="sourceLineNo">213</span><a id="line.213"></a>
+<span class="sourceLineNo">214</span><a id="line.214">  /**</a>
+<span class="sourceLineNo">215</span><a id="line.215">   * Creates a backward finite difference filter that computes the nth derivative of the input given</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * the specified number of samples.</a>
+<span class="sourceLineNo">217</span><a id="line.217">   *</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * &lt;p&gt;For example, a first derivative filter that uses two samples and a sample period of 20 ms</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * would be</a>
+<span class="sourceLineNo">220</span><a id="line.220">   *</a>
+<span class="sourceLineNo">221</span><a id="line.221">   * &lt;pre&gt;&lt;code&gt;</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * LinearFilter.backwardFiniteDifference(1, 2, 0.02);</a>
+<span class="sourceLineNo">223</span><a id="line.223">   * &lt;/code&gt;&lt;/pre&gt;</a>
+<span class="sourceLineNo">224</span><a id="line.224">   *</a>
+<span class="sourceLineNo">225</span><a id="line.225">   * @param derivative The order of the derivative to compute.</a>
+<span class="sourceLineNo">226</span><a id="line.226">   * @param samples The number of samples to use to compute the given derivative. This must be one</a>
+<span class="sourceLineNo">227</span><a id="line.227">   *     more than the order of derivative or higher.</a>
+<span class="sourceLineNo">228</span><a id="line.228">   * @param period The period in seconds between samples taken by the user.</a>
+<span class="sourceLineNo">229</span><a id="line.229">   * @return Linear filter.</a>
+<span class="sourceLineNo">230</span><a id="line.230">   */</a>
+<span class="sourceLineNo">231</span><a id="line.231">  public static LinearFilter backwardFiniteDifference(int derivative, int samples, double period) {</a>
+<span class="sourceLineNo">232</span><a id="line.232">    // Generate stencil points from -(samples - 1) to 0</a>
+<span class="sourceLineNo">233</span><a id="line.233">    int[] stencil = new int[samples];</a>
+<span class="sourceLineNo">234</span><a id="line.234">    for (int i = 0; i &lt; samples; ++i) {</a>
+<span class="sourceLineNo">235</span><a id="line.235">      stencil[i] = -(samples - 1) + i;</a>
+<span class="sourceLineNo">236</span><a id="line.236">    }</a>
+<span class="sourceLineNo">237</span><a id="line.237"></a>
+<span class="sourceLineNo">238</span><a id="line.238">    return finiteDifference(derivative, stencil, period);</a>
+<span class="sourceLineNo">239</span><a id="line.239">  }</a>
+<span class="sourceLineNo">240</span><a id="line.240"></a>
+<span class="sourceLineNo">241</span><a id="line.241">  /** Reset the filter state. */</a>
+<span class="sourceLineNo">242</span><a id="line.242">  public void reset() {</a>
+<span class="sourceLineNo">243</span><a id="line.243">    m_inputs.clear();</a>
+<span class="sourceLineNo">244</span><a id="line.244">    m_outputs.clear();</a>
+<span class="sourceLineNo">245</span><a id="line.245">  }</a>
+<span class="sourceLineNo">246</span><a id="line.246"></a>
+<span class="sourceLineNo">247</span><a id="line.247">  /**</a>
+<span class="sourceLineNo">248</span><a id="line.248">   * Calculates the next value of the filter.</a>
+<span class="sourceLineNo">249</span><a id="line.249">   *</a>
+<span class="sourceLineNo">250</span><a id="line.250">   * @param input Current input value.</a>
+<span class="sourceLineNo">251</span><a id="line.251">   * @return The filtered value at this step</a>
+<span class="sourceLineNo">252</span><a id="line.252">   */</a>
+<span class="sourceLineNo">253</span><a id="line.253">  public double calculate(double input) {</a>
+<span class="sourceLineNo">254</span><a id="line.254">    double retVal = 0.0;</a>
+<span class="sourceLineNo">255</span><a id="line.255"></a>
+<span class="sourceLineNo">256</span><a id="line.256">    // Rotate the inputs</a>
+<span class="sourceLineNo">257</span><a id="line.257">    if (m_inputGains.length &gt; 0) {</a>
+<span class="sourceLineNo">258</span><a id="line.258">      m_inputs.addFirst(input);</a>
+<span class="sourceLineNo">259</span><a id="line.259">    }</a>
+<span class="sourceLineNo">260</span><a id="line.260"></a>
+<span class="sourceLineNo">261</span><a id="line.261">    // Calculate the new value</a>
+<span class="sourceLineNo">262</span><a id="line.262">    for (int i = 0; i &lt; m_inputGains.length; i++) {</a>
+<span class="sourceLineNo">263</span><a id="line.263">      retVal += m_inputs.get(i) * m_inputGains[i];</a>
+<span class="sourceLineNo">264</span><a id="line.264">    }</a>
+<span class="sourceLineNo">265</span><a id="line.265">    for (int i = 0; i &lt; m_outputGains.length; i++) {</a>
+<span class="sourceLineNo">266</span><a id="line.266">      retVal -= m_outputs.get(i) * m_outputGains[i];</a>
+<span class="sourceLineNo">267</span><a id="line.267">    }</a>
+<span class="sourceLineNo">268</span><a id="line.268"></a>
+<span class="sourceLineNo">269</span><a id="line.269">    // Rotate the outputs</a>
+<span class="sourceLineNo">270</span><a id="line.270">    if (m_outputGains.length &gt; 0) {</a>
+<span class="sourceLineNo">271</span><a id="line.271">      m_outputs.addFirst(retVal);</a>
+<span class="sourceLineNo">272</span><a id="line.272">    }</a>
+<span class="sourceLineNo">273</span><a id="line.273"></a>
+<span class="sourceLineNo">274</span><a id="line.274">    return retVal;</a>
+<span class="sourceLineNo">275</span><a id="line.275">  }</a>
+<span class="sourceLineNo">276</span><a id="line.276"></a>
+<span class="sourceLineNo">277</span><a id="line.277">  /**</a>
+<span class="sourceLineNo">278</span><a id="line.278">   * Factorial of n.</a>
+<span class="sourceLineNo">279</span><a id="line.279">   *</a>
+<span class="sourceLineNo">280</span><a id="line.280">   * @param n Argument of which to take factorial.</a>
+<span class="sourceLineNo">281</span><a id="line.281">   */</a>
+<span class="sourceLineNo">282</span><a id="line.282">  private static int factorial(int n) {</a>
+<span class="sourceLineNo">283</span><a id="line.283">    if (n &lt; 2) {</a>
+<span class="sourceLineNo">284</span><a id="line.284">      return 1;</a>
+<span class="sourceLineNo">285</span><a id="line.285">    } else {</a>
+<span class="sourceLineNo">286</span><a id="line.286">      return n * factorial(n - 1);</a>
+<span class="sourceLineNo">287</span><a id="line.287">    }</a>
+<span class="sourceLineNo">288</span><a id="line.288">  }</a>
+<span class="sourceLineNo">289</span><a id="line.289">}</a>
 
 
 

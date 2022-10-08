@@ -256,33 +256,32 @@
 <span class="sourceLineNo">244</span><a id="line.244">   * @param u The system inputs (voltage).</a>
 <span class="sourceLineNo">245</span><a id="line.245">   * @param dtSeconds The time difference between controller updates.</a>
 <span class="sourceLineNo">246</span><a id="line.246">   */</a>
-<span class="sourceLineNo">247</span><a id="line.247">  @SuppressWarnings({"ParameterName", "LambdaParameterName"})</a>
-<span class="sourceLineNo">248</span><a id="line.248">  @Override</a>
-<span class="sourceLineNo">249</span><a id="line.249">  protected Matrix&lt;N2, N1&gt; updateX(Matrix&lt;N2, N1&gt; currentXhat, Matrix&lt;N1, N1&gt; u, double dtSeconds) {</a>
-<span class="sourceLineNo">250</span><a id="line.250">    // Calculate updated x-hat from Runge-Kutta.</a>
-<span class="sourceLineNo">251</span><a id="line.251">    var updatedXhat =</a>
-<span class="sourceLineNo">252</span><a id="line.252">        NumericalIntegration.rkdp(</a>
-<span class="sourceLineNo">253</span><a id="line.253">            (x, u_) -&gt; {</a>
-<span class="sourceLineNo">254</span><a id="line.254">              Matrix&lt;N2, N1&gt; xdot = m_plant.getA().times(x).plus(m_plant.getB().times(u_));</a>
-<span class="sourceLineNo">255</span><a id="line.255">              if (m_simulateGravity) {</a>
-<span class="sourceLineNo">256</span><a id="line.256">                xdot = xdot.plus(VecBuilder.fill(0, -9.8));</a>
-<span class="sourceLineNo">257</span><a id="line.257">              }</a>
-<span class="sourceLineNo">258</span><a id="line.258">              return xdot;</a>
-<span class="sourceLineNo">259</span><a id="line.259">            },</a>
-<span class="sourceLineNo">260</span><a id="line.260">            currentXhat,</a>
-<span class="sourceLineNo">261</span><a id="line.261">            u,</a>
-<span class="sourceLineNo">262</span><a id="line.262">            dtSeconds);</a>
-<span class="sourceLineNo">263</span><a id="line.263"></a>
-<span class="sourceLineNo">264</span><a id="line.264">    // We check for collisions after updating x-hat.</a>
-<span class="sourceLineNo">265</span><a id="line.265">    if (wouldHitLowerLimit(updatedXhat.get(0, 0))) {</a>
-<span class="sourceLineNo">266</span><a id="line.266">      return VecBuilder.fill(m_minHeight, 0);</a>
-<span class="sourceLineNo">267</span><a id="line.267">    }</a>
-<span class="sourceLineNo">268</span><a id="line.268">    if (wouldHitUpperLimit(updatedXhat.get(0, 0))) {</a>
-<span class="sourceLineNo">269</span><a id="line.269">      return VecBuilder.fill(m_maxHeight, 0);</a>
-<span class="sourceLineNo">270</span><a id="line.270">    }</a>
-<span class="sourceLineNo">271</span><a id="line.271">    return updatedXhat;</a>
-<span class="sourceLineNo">272</span><a id="line.272">  }</a>
-<span class="sourceLineNo">273</span><a id="line.273">}</a>
+<span class="sourceLineNo">247</span><a id="line.247">  @Override</a>
+<span class="sourceLineNo">248</span><a id="line.248">  protected Matrix&lt;N2, N1&gt; updateX(Matrix&lt;N2, N1&gt; currentXhat, Matrix&lt;N1, N1&gt; u, double dtSeconds) {</a>
+<span class="sourceLineNo">249</span><a id="line.249">    // Calculate updated x-hat from Runge-Kutta.</a>
+<span class="sourceLineNo">250</span><a id="line.250">    var updatedXhat =</a>
+<span class="sourceLineNo">251</span><a id="line.251">        NumericalIntegration.rkdp(</a>
+<span class="sourceLineNo">252</span><a id="line.252">            (x, _u) -&gt; {</a>
+<span class="sourceLineNo">253</span><a id="line.253">              Matrix&lt;N2, N1&gt; xdot = m_plant.getA().times(x).plus(m_plant.getB().times(_u));</a>
+<span class="sourceLineNo">254</span><a id="line.254">              if (m_simulateGravity) {</a>
+<span class="sourceLineNo">255</span><a id="line.255">                xdot = xdot.plus(VecBuilder.fill(0, -9.8));</a>
+<span class="sourceLineNo">256</span><a id="line.256">              }</a>
+<span class="sourceLineNo">257</span><a id="line.257">              return xdot;</a>
+<span class="sourceLineNo">258</span><a id="line.258">            },</a>
+<span class="sourceLineNo">259</span><a id="line.259">            currentXhat,</a>
+<span class="sourceLineNo">260</span><a id="line.260">            u,</a>
+<span class="sourceLineNo">261</span><a id="line.261">            dtSeconds);</a>
+<span class="sourceLineNo">262</span><a id="line.262"></a>
+<span class="sourceLineNo">263</span><a id="line.263">    // We check for collisions after updating x-hat.</a>
+<span class="sourceLineNo">264</span><a id="line.264">    if (wouldHitLowerLimit(updatedXhat.get(0, 0))) {</a>
+<span class="sourceLineNo">265</span><a id="line.265">      return VecBuilder.fill(m_minHeight, 0);</a>
+<span class="sourceLineNo">266</span><a id="line.266">    }</a>
+<span class="sourceLineNo">267</span><a id="line.267">    if (wouldHitUpperLimit(updatedXhat.get(0, 0))) {</a>
+<span class="sourceLineNo">268</span><a id="line.268">      return VecBuilder.fill(m_maxHeight, 0);</a>
+<span class="sourceLineNo">269</span><a id="line.269">    }</a>
+<span class="sourceLineNo">270</span><a id="line.270">    return updatedXhat;</a>
+<span class="sourceLineNo">271</span><a id="line.271">  }</a>
+<span class="sourceLineNo">272</span><a id="line.272">}</a>
 
 
 

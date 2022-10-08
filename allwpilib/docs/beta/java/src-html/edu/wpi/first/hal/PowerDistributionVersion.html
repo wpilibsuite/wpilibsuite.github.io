@@ -16,50 +16,45 @@
 <span class="sourceLineNo">004</span><a id="line.4"></a>
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.hal;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
-<span class="sourceLineNo">007</span><a id="line.7">public class PowerDistributionVersion {</a>
-<span class="sourceLineNo">008</span><a id="line.8">  @SuppressWarnings("MemberName")</a>
+<span class="sourceLineNo">007</span><a id="line.7">@SuppressWarnings("MemberName")</a>
+<span class="sourceLineNo">008</span><a id="line.8">public class PowerDistributionVersion {</a>
 <span class="sourceLineNo">009</span><a id="line.9">  public final int firmwareMajor;</a>
 <span class="sourceLineNo">010</span><a id="line.10"></a>
-<span class="sourceLineNo">011</span><a id="line.11">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">012</span><a id="line.12">  public final int firmwareMinor;</a>
-<span class="sourceLineNo">013</span><a id="line.13"></a>
-<span class="sourceLineNo">014</span><a id="line.14">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">015</span><a id="line.15">  public final int firmwareFix;</a>
+<span class="sourceLineNo">011</span><a id="line.11">  public final int firmwareMinor;</a>
+<span class="sourceLineNo">012</span><a id="line.12"></a>
+<span class="sourceLineNo">013</span><a id="line.13">  public final int firmwareFix;</a>
+<span class="sourceLineNo">014</span><a id="line.14"></a>
+<span class="sourceLineNo">015</span><a id="line.15">  public final int hardwareMinor;</a>
 <span class="sourceLineNo">016</span><a id="line.16"></a>
-<span class="sourceLineNo">017</span><a id="line.17">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">018</span><a id="line.18">  public final int hardwareMinor;</a>
-<span class="sourceLineNo">019</span><a id="line.19"></a>
-<span class="sourceLineNo">020</span><a id="line.20">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">021</span><a id="line.21">  public final int hardwareMajor;</a>
-<span class="sourceLineNo">022</span><a id="line.22"></a>
-<span class="sourceLineNo">023</span><a id="line.23">  @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">024</span><a id="line.24">  public final int uniqueId;</a>
-<span class="sourceLineNo">025</span><a id="line.25"></a>
-<span class="sourceLineNo">026</span><a id="line.26">  /**</a>
-<span class="sourceLineNo">027</span><a id="line.27">   * Constructs a power distribution version (Called from the HAL).</a>
-<span class="sourceLineNo">028</span><a id="line.28">   *</a>
-<span class="sourceLineNo">029</span><a id="line.29">   * @param firmwareMajor firmware major</a>
-<span class="sourceLineNo">030</span><a id="line.30">   * @param firmwareMinor firmware minor</a>
-<span class="sourceLineNo">031</span><a id="line.31">   * @param firmwareFix firmware fix</a>
-<span class="sourceLineNo">032</span><a id="line.32">   * @param hardwareMinor hardware minor</a>
-<span class="sourceLineNo">033</span><a id="line.33">   * @param hardwareMajor hardware major</a>
-<span class="sourceLineNo">034</span><a id="line.34">   * @param uniqueId unique id</a>
-<span class="sourceLineNo">035</span><a id="line.35">   */</a>
-<span class="sourceLineNo">036</span><a id="line.36">  public PowerDistributionVersion(</a>
-<span class="sourceLineNo">037</span><a id="line.37">      int firmwareMajor,</a>
-<span class="sourceLineNo">038</span><a id="line.38">      int firmwareMinor,</a>
-<span class="sourceLineNo">039</span><a id="line.39">      int firmwareFix,</a>
-<span class="sourceLineNo">040</span><a id="line.40">      int hardwareMinor,</a>
-<span class="sourceLineNo">041</span><a id="line.41">      int hardwareMajor,</a>
-<span class="sourceLineNo">042</span><a id="line.42">      int uniqueId) {</a>
-<span class="sourceLineNo">043</span><a id="line.43">    this.firmwareMajor = firmwareMajor;</a>
-<span class="sourceLineNo">044</span><a id="line.44">    this.firmwareMinor = firmwareMinor;</a>
-<span class="sourceLineNo">045</span><a id="line.45">    this.firmwareFix = firmwareFix;</a>
-<span class="sourceLineNo">046</span><a id="line.46">    this.hardwareMinor = hardwareMinor;</a>
-<span class="sourceLineNo">047</span><a id="line.47">    this.hardwareMajor = hardwareMajor;</a>
-<span class="sourceLineNo">048</span><a id="line.48">    this.uniqueId = uniqueId;</a>
-<span class="sourceLineNo">049</span><a id="line.49">  }</a>
-<span class="sourceLineNo">050</span><a id="line.50">}</a>
+<span class="sourceLineNo">017</span><a id="line.17">  public final int hardwareMajor;</a>
+<span class="sourceLineNo">018</span><a id="line.18"></a>
+<span class="sourceLineNo">019</span><a id="line.19">  public final int uniqueId;</a>
+<span class="sourceLineNo">020</span><a id="line.20"></a>
+<span class="sourceLineNo">021</span><a id="line.21">  /**</a>
+<span class="sourceLineNo">022</span><a id="line.22">   * Constructs a power distribution version (Called from the HAL).</a>
+<span class="sourceLineNo">023</span><a id="line.23">   *</a>
+<span class="sourceLineNo">024</span><a id="line.24">   * @param firmwareMajor firmware major</a>
+<span class="sourceLineNo">025</span><a id="line.25">   * @param firmwareMinor firmware minor</a>
+<span class="sourceLineNo">026</span><a id="line.26">   * @param firmwareFix firmware fix</a>
+<span class="sourceLineNo">027</span><a id="line.27">   * @param hardwareMinor hardware minor</a>
+<span class="sourceLineNo">028</span><a id="line.28">   * @param hardwareMajor hardware major</a>
+<span class="sourceLineNo">029</span><a id="line.29">   * @param uniqueId unique id</a>
+<span class="sourceLineNo">030</span><a id="line.30">   */</a>
+<span class="sourceLineNo">031</span><a id="line.31">  public PowerDistributionVersion(</a>
+<span class="sourceLineNo">032</span><a id="line.32">      int firmwareMajor,</a>
+<span class="sourceLineNo">033</span><a id="line.33">      int firmwareMinor,</a>
+<span class="sourceLineNo">034</span><a id="line.34">      int firmwareFix,</a>
+<span class="sourceLineNo">035</span><a id="line.35">      int hardwareMinor,</a>
+<span class="sourceLineNo">036</span><a id="line.36">      int hardwareMajor,</a>
+<span class="sourceLineNo">037</span><a id="line.37">      int uniqueId) {</a>
+<span class="sourceLineNo">038</span><a id="line.38">    this.firmwareMajor = firmwareMajor;</a>
+<span class="sourceLineNo">039</span><a id="line.39">    this.firmwareMinor = firmwareMinor;</a>
+<span class="sourceLineNo">040</span><a id="line.40">    this.firmwareFix = firmwareFix;</a>
+<span class="sourceLineNo">041</span><a id="line.41">    this.hardwareMinor = hardwareMinor;</a>
+<span class="sourceLineNo">042</span><a id="line.42">    this.hardwareMajor = hardwareMajor;</a>
+<span class="sourceLineNo">043</span><a id="line.43">    this.uniqueId = uniqueId;</a>
+<span class="sourceLineNo">044</span><a id="line.44">  }</a>
+<span class="sourceLineNo">045</span><a id="line.45">}</a>
 
 
 

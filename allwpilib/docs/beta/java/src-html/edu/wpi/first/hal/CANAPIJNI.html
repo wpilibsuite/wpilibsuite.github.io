@@ -16,35 +16,34 @@
 <span class="sourceLineNo">004</span><a id="line.4"></a>
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.hal;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
-<span class="sourceLineNo">007</span><a id="line.7">@SuppressWarnings("AbbreviationAsWordInName")</a>
-<span class="sourceLineNo">008</span><a id="line.8">public class CANAPIJNI extends JNIWrapper {</a>
-<span class="sourceLineNo">009</span><a id="line.9">  public static native int initializeCAN(int manufacturer, int deviceId, int deviceType);</a>
-<span class="sourceLineNo">010</span><a id="line.10"></a>
-<span class="sourceLineNo">011</span><a id="line.11">  public static native void cleanCAN(int handle);</a>
-<span class="sourceLineNo">012</span><a id="line.12"></a>
-<span class="sourceLineNo">013</span><a id="line.13">  public static native void writeCANPacket(int handle, byte[] data, int apiId);</a>
-<span class="sourceLineNo">014</span><a id="line.14"></a>
-<span class="sourceLineNo">015</span><a id="line.15">  public static native void writeCANPacketRepeating(</a>
-<span class="sourceLineNo">016</span><a id="line.16">      int handle, byte[] data, int apiId, int repeatMs);</a>
-<span class="sourceLineNo">017</span><a id="line.17"></a>
-<span class="sourceLineNo">018</span><a id="line.18">  public static native void writeCANRTRFrame(int handle, int length, int apiId);</a>
-<span class="sourceLineNo">019</span><a id="line.19"></a>
-<span class="sourceLineNo">020</span><a id="line.20">  public static native int writeCANPacketNoThrow(int handle, byte[] data, int apiId);</a>
-<span class="sourceLineNo">021</span><a id="line.21"></a>
-<span class="sourceLineNo">022</span><a id="line.22">  public static native int writeCANPacketRepeatingNoThrow(</a>
-<span class="sourceLineNo">023</span><a id="line.23">      int handle, byte[] data, int apiId, int repeatMs);</a>
-<span class="sourceLineNo">024</span><a id="line.24"></a>
-<span class="sourceLineNo">025</span><a id="line.25">  public static native int writeCANRTRFrameNoThrow(int handle, int length, int apiId);</a>
-<span class="sourceLineNo">026</span><a id="line.26"></a>
-<span class="sourceLineNo">027</span><a id="line.27">  public static native void stopCANPacketRepeating(int handle, int apiId);</a>
-<span class="sourceLineNo">028</span><a id="line.28"></a>
-<span class="sourceLineNo">029</span><a id="line.29">  public static native boolean readCANPacketNew(int handle, int apiId, CANData data);</a>
-<span class="sourceLineNo">030</span><a id="line.30"></a>
-<span class="sourceLineNo">031</span><a id="line.31">  public static native boolean readCANPacketLatest(int handle, int apiId, CANData data);</a>
-<span class="sourceLineNo">032</span><a id="line.32"></a>
-<span class="sourceLineNo">033</span><a id="line.33">  public static native boolean readCANPacketTimeout(</a>
-<span class="sourceLineNo">034</span><a id="line.34">      int handle, int apiId, int timeoutMs, CANData data);</a>
-<span class="sourceLineNo">035</span><a id="line.35">}</a>
+<span class="sourceLineNo">007</span><a id="line.7">public class CANAPIJNI extends JNIWrapper {</a>
+<span class="sourceLineNo">008</span><a id="line.8">  public static native int initializeCAN(int manufacturer, int deviceId, int deviceType);</a>
+<span class="sourceLineNo">009</span><a id="line.9"></a>
+<span class="sourceLineNo">010</span><a id="line.10">  public static native void cleanCAN(int handle);</a>
+<span class="sourceLineNo">011</span><a id="line.11"></a>
+<span class="sourceLineNo">012</span><a id="line.12">  public static native void writeCANPacket(int handle, byte[] data, int apiId);</a>
+<span class="sourceLineNo">013</span><a id="line.13"></a>
+<span class="sourceLineNo">014</span><a id="line.14">  public static native void writeCANPacketRepeating(</a>
+<span class="sourceLineNo">015</span><a id="line.15">      int handle, byte[] data, int apiId, int repeatMs);</a>
+<span class="sourceLineNo">016</span><a id="line.16"></a>
+<span class="sourceLineNo">017</span><a id="line.17">  public static native void writeCANRTRFrame(int handle, int length, int apiId);</a>
+<span class="sourceLineNo">018</span><a id="line.18"></a>
+<span class="sourceLineNo">019</span><a id="line.19">  public static native int writeCANPacketNoThrow(int handle, byte[] data, int apiId);</a>
+<span class="sourceLineNo">020</span><a id="line.20"></a>
+<span class="sourceLineNo">021</span><a id="line.21">  public static native int writeCANPacketRepeatingNoThrow(</a>
+<span class="sourceLineNo">022</span><a id="line.22">      int handle, byte[] data, int apiId, int repeatMs);</a>
+<span class="sourceLineNo">023</span><a id="line.23"></a>
+<span class="sourceLineNo">024</span><a id="line.24">  public static native int writeCANRTRFrameNoThrow(int handle, int length, int apiId);</a>
+<span class="sourceLineNo">025</span><a id="line.25"></a>
+<span class="sourceLineNo">026</span><a id="line.26">  public static native void stopCANPacketRepeating(int handle, int apiId);</a>
+<span class="sourceLineNo">027</span><a id="line.27"></a>
+<span class="sourceLineNo">028</span><a id="line.28">  public static native boolean readCANPacketNew(int handle, int apiId, CANData data);</a>
+<span class="sourceLineNo">029</span><a id="line.29"></a>
+<span class="sourceLineNo">030</span><a id="line.30">  public static native boolean readCANPacketLatest(int handle, int apiId, CANData data);</a>
+<span class="sourceLineNo">031</span><a id="line.31"></a>
+<span class="sourceLineNo">032</span><a id="line.32">  public static native boolean readCANPacketTimeout(</a>
+<span class="sourceLineNo">033</span><a id="line.33">      int handle, int apiId, int timeoutMs, CANData data);</a>
+<span class="sourceLineNo">034</span><a id="line.34">}</a>
 
 
 

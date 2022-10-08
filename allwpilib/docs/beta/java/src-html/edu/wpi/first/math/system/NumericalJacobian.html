@@ -42,78 +42,74 @@
 <span class="sourceLineNo">030</span><a id="line.30">   * @param x Vector argument.</a>
 <span class="sourceLineNo">031</span><a id="line.31">   * @return The numerical Jacobian with respect to x for f(x, u, ...).</a>
 <span class="sourceLineNo">032</span><a id="line.32">   */</a>
-<span class="sourceLineNo">033</span><a id="line.33">  @SuppressWarnings({"ParameterName", "MethodTypeParameterName"})</a>
-<span class="sourceLineNo">034</span><a id="line.34">  public static &lt;Rows extends Num, Cols extends Num, States extends Num&gt;</a>
-<span class="sourceLineNo">035</span><a id="line.35">      Matrix&lt;Rows, Cols&gt; numericalJacobian(</a>
-<span class="sourceLineNo">036</span><a id="line.36">          Nat&lt;Rows&gt; rows,</a>
-<span class="sourceLineNo">037</span><a id="line.37">          Nat&lt;Cols&gt; cols,</a>
-<span class="sourceLineNo">038</span><a id="line.38">          Function&lt;Matrix&lt;Cols, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
-<span class="sourceLineNo">039</span><a id="line.39">          Matrix&lt;Cols, N1&gt; x) {</a>
-<span class="sourceLineNo">040</span><a id="line.40">    var result = new Matrix&lt;&gt;(rows, cols);</a>
-<span class="sourceLineNo">041</span><a id="line.41"></a>
-<span class="sourceLineNo">042</span><a id="line.42">    for (int i = 0; i &lt; cols.getNum(); i++) {</a>
-<span class="sourceLineNo">043</span><a id="line.43">      var dxPlus = x.copy();</a>
-<span class="sourceLineNo">044</span><a id="line.44">      var dxMinus = x.copy();</a>
-<span class="sourceLineNo">045</span><a id="line.45">      dxPlus.set(i, 0, dxPlus.get(i, 0) + kEpsilon);</a>
-<span class="sourceLineNo">046</span><a id="line.46">      dxMinus.set(i, 0, dxMinus.get(i, 0) - kEpsilon);</a>
-<span class="sourceLineNo">047</span><a id="line.47">      @SuppressWarnings("LocalVariableName")</a>
-<span class="sourceLineNo">048</span><a id="line.48">      var dF = f.apply(dxPlus).minus(f.apply(dxMinus)).div(2 * kEpsilon);</a>
-<span class="sourceLineNo">049</span><a id="line.49"></a>
-<span class="sourceLineNo">050</span><a id="line.50">      result.setColumn(i, Matrix.changeBoundsUnchecked(dF));</a>
-<span class="sourceLineNo">051</span><a id="line.51">    }</a>
-<span class="sourceLineNo">052</span><a id="line.52"></a>
-<span class="sourceLineNo">053</span><a id="line.53">    return result;</a>
-<span class="sourceLineNo">054</span><a id="line.54">  }</a>
-<span class="sourceLineNo">055</span><a id="line.55"></a>
-<span class="sourceLineNo">056</span><a id="line.56">  /**</a>
-<span class="sourceLineNo">057</span><a id="line.57">   * Returns numerical Jacobian with respect to x for f(x, u, ...).</a>
-<span class="sourceLineNo">058</span><a id="line.58">   *</a>
-<span class="sourceLineNo">059</span><a id="line.59">   * @param &lt;Rows&gt; Number of rows in the result of f(x, u).</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * @param &lt;States&gt; Number of rows in x.</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * @param &lt;Inputs&gt; Number of rows in the second input to f.</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * @param &lt;Outputs&gt; Num representing the rows in the output of f.</a>
-<span class="sourceLineNo">063</span><a id="line.63">   * @param rows Number of rows in the result of f(x, u).</a>
-<span class="sourceLineNo">064</span><a id="line.64">   * @param states Number of rows in x.</a>
-<span class="sourceLineNo">065</span><a id="line.65">   * @param f Vector-valued function from which to compute Jacobian.</a>
-<span class="sourceLineNo">066</span><a id="line.66">   * @param x State vector.</a>
-<span class="sourceLineNo">067</span><a id="line.67">   * @param u Input vector.</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * @return The numerical Jacobian with respect to x for f(x, u, ...).</a>
-<span class="sourceLineNo">069</span><a id="line.69">   */</a>
-<span class="sourceLineNo">070</span><a id="line.70">  @SuppressWarnings({"LambdaParameterName", "MethodTypeParameterName"})</a>
-<span class="sourceLineNo">071</span><a id="line.71">  public static &lt;Rows extends Num, States extends Num, Inputs extends Num, Outputs extends Num&gt;</a>
-<span class="sourceLineNo">072</span><a id="line.72">      Matrix&lt;Rows, States&gt; numericalJacobianX(</a>
-<span class="sourceLineNo">073</span><a id="line.73">          Nat&lt;Rows&gt; rows,</a>
-<span class="sourceLineNo">074</span><a id="line.74">          Nat&lt;States&gt; states,</a>
-<span class="sourceLineNo">075</span><a id="line.75">          BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; f,</a>
-<span class="sourceLineNo">076</span><a id="line.76">          Matrix&lt;States, N1&gt; x,</a>
-<span class="sourceLineNo">077</span><a id="line.77">          Matrix&lt;Inputs, N1&gt; u) {</a>
-<span class="sourceLineNo">078</span><a id="line.78">    return numericalJacobian(rows, states, _x -&gt; f.apply(_x, u), x);</a>
-<span class="sourceLineNo">079</span><a id="line.79">  }</a>
-<span class="sourceLineNo">080</span><a id="line.80"></a>
-<span class="sourceLineNo">081</span><a id="line.81">  /**</a>
-<span class="sourceLineNo">082</span><a id="line.82">   * Returns the numerical Jacobian with respect to u for f(x, u).</a>
-<span class="sourceLineNo">083</span><a id="line.83">   *</a>
-<span class="sourceLineNo">084</span><a id="line.84">   * @param &lt;States&gt; The states of the system.</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * @param &lt;Inputs&gt; The inputs to the system.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   * @param &lt;Rows&gt; Number of rows in the result of f(x, u).</a>
-<span class="sourceLineNo">087</span><a id="line.87">   * @param rows Number of rows in the result of f(x, u).</a>
-<span class="sourceLineNo">088</span><a id="line.88">   * @param inputs Number of rows in u.</a>
-<span class="sourceLineNo">089</span><a id="line.89">   * @param f Vector-valued function from which to compute the Jacobian.</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * @param x State vector.</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * @param u Input vector.</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * @return the numerical Jacobian with respect to u for f(x, u).</a>
-<span class="sourceLineNo">093</span><a id="line.93">   */</a>
-<span class="sourceLineNo">094</span><a id="line.94">  @SuppressWarnings({"LambdaParameterName", "MethodTypeParameterName"})</a>
-<span class="sourceLineNo">095</span><a id="line.95">  public static &lt;Rows extends Num, States extends Num, Inputs extends Num&gt;</a>
-<span class="sourceLineNo">096</span><a id="line.96">      Matrix&lt;Rows, Inputs&gt; numericalJacobianU(</a>
-<span class="sourceLineNo">097</span><a id="line.97">          Nat&lt;Rows&gt; rows,</a>
-<span class="sourceLineNo">098</span><a id="line.98">          Nat&lt;Inputs&gt; inputs,</a>
-<span class="sourceLineNo">099</span><a id="line.99">          BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
-<span class="sourceLineNo">100</span><a id="line.100">          Matrix&lt;States, N1&gt; x,</a>
-<span class="sourceLineNo">101</span><a id="line.101">          Matrix&lt;Inputs, N1&gt; u) {</a>
-<span class="sourceLineNo">102</span><a id="line.102">    return numericalJacobian(rows, inputs, _u -&gt; f.apply(x, _u), u);</a>
-<span class="sourceLineNo">103</span><a id="line.103">  }</a>
-<span class="sourceLineNo">104</span><a id="line.104">}</a>
+<span class="sourceLineNo">033</span><a id="line.33">  public static &lt;Rows extends Num, Cols extends Num, States extends Num&gt;</a>
+<span class="sourceLineNo">034</span><a id="line.34">      Matrix&lt;Rows, Cols&gt; numericalJacobian(</a>
+<span class="sourceLineNo">035</span><a id="line.35">          Nat&lt;Rows&gt; rows,</a>
+<span class="sourceLineNo">036</span><a id="line.36">          Nat&lt;Cols&gt; cols,</a>
+<span class="sourceLineNo">037</span><a id="line.37">          Function&lt;Matrix&lt;Cols, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
+<span class="sourceLineNo">038</span><a id="line.38">          Matrix&lt;Cols, N1&gt; x) {</a>
+<span class="sourceLineNo">039</span><a id="line.39">    var result = new Matrix&lt;&gt;(rows, cols);</a>
+<span class="sourceLineNo">040</span><a id="line.40"></a>
+<span class="sourceLineNo">041</span><a id="line.41">    for (int i = 0; i &lt; cols.getNum(); i++) {</a>
+<span class="sourceLineNo">042</span><a id="line.42">      var dxPlus = x.copy();</a>
+<span class="sourceLineNo">043</span><a id="line.43">      var dxMinus = x.copy();</a>
+<span class="sourceLineNo">044</span><a id="line.44">      dxPlus.set(i, 0, dxPlus.get(i, 0) + kEpsilon);</a>
+<span class="sourceLineNo">045</span><a id="line.45">      dxMinus.set(i, 0, dxMinus.get(i, 0) - kEpsilon);</a>
+<span class="sourceLineNo">046</span><a id="line.46">      var dF = f.apply(dxPlus).minus(f.apply(dxMinus)).div(2 * kEpsilon);</a>
+<span class="sourceLineNo">047</span><a id="line.47"></a>
+<span class="sourceLineNo">048</span><a id="line.48">      result.setColumn(i, Matrix.changeBoundsUnchecked(dF));</a>
+<span class="sourceLineNo">049</span><a id="line.49">    }</a>
+<span class="sourceLineNo">050</span><a id="line.50"></a>
+<span class="sourceLineNo">051</span><a id="line.51">    return result;</a>
+<span class="sourceLineNo">052</span><a id="line.52">  }</a>
+<span class="sourceLineNo">053</span><a id="line.53"></a>
+<span class="sourceLineNo">054</span><a id="line.54">  /**</a>
+<span class="sourceLineNo">055</span><a id="line.55">   * Returns numerical Jacobian with respect to x for f(x, u, ...).</a>
+<span class="sourceLineNo">056</span><a id="line.56">   *</a>
+<span class="sourceLineNo">057</span><a id="line.57">   * @param &lt;Rows&gt; Number of rows in the result of f(x, u).</a>
+<span class="sourceLineNo">058</span><a id="line.58">   * @param &lt;States&gt; Number of rows in x.</a>
+<span class="sourceLineNo">059</span><a id="line.59">   * @param &lt;Inputs&gt; Number of rows in the second input to f.</a>
+<span class="sourceLineNo">060</span><a id="line.60">   * @param &lt;Outputs&gt; Num representing the rows in the output of f.</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * @param rows Number of rows in the result of f(x, u).</a>
+<span class="sourceLineNo">062</span><a id="line.62">   * @param states Number of rows in x.</a>
+<span class="sourceLineNo">063</span><a id="line.63">   * @param f Vector-valued function from which to compute Jacobian.</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * @param x State vector.</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * @param u Input vector.</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * @return The numerical Jacobian with respect to x for f(x, u, ...).</a>
+<span class="sourceLineNo">067</span><a id="line.67">   */</a>
+<span class="sourceLineNo">068</span><a id="line.68">  public static &lt;Rows extends Num, States extends Num, Inputs extends Num, Outputs extends Num&gt;</a>
+<span class="sourceLineNo">069</span><a id="line.69">      Matrix&lt;Rows, States&gt; numericalJacobianX(</a>
+<span class="sourceLineNo">070</span><a id="line.70">          Nat&lt;Rows&gt; rows,</a>
+<span class="sourceLineNo">071</span><a id="line.71">          Nat&lt;States&gt; states,</a>
+<span class="sourceLineNo">072</span><a id="line.72">          BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; f,</a>
+<span class="sourceLineNo">073</span><a id="line.73">          Matrix&lt;States, N1&gt; x,</a>
+<span class="sourceLineNo">074</span><a id="line.74">          Matrix&lt;Inputs, N1&gt; u) {</a>
+<span class="sourceLineNo">075</span><a id="line.75">    return numericalJacobian(rows, states, _x -&gt; f.apply(_x, u), x);</a>
+<span class="sourceLineNo">076</span><a id="line.76">  }</a>
+<span class="sourceLineNo">077</span><a id="line.77"></a>
+<span class="sourceLineNo">078</span><a id="line.78">  /**</a>
+<span class="sourceLineNo">079</span><a id="line.79">   * Returns the numerical Jacobian with respect to u for f(x, u).</a>
+<span class="sourceLineNo">080</span><a id="line.80">   *</a>
+<span class="sourceLineNo">081</span><a id="line.81">   * @param &lt;States&gt; The states of the system.</a>
+<span class="sourceLineNo">082</span><a id="line.82">   * @param &lt;Inputs&gt; The inputs to the system.</a>
+<span class="sourceLineNo">083</span><a id="line.83">   * @param &lt;Rows&gt; Number of rows in the result of f(x, u).</a>
+<span class="sourceLineNo">084</span><a id="line.84">   * @param rows Number of rows in the result of f(x, u).</a>
+<span class="sourceLineNo">085</span><a id="line.85">   * @param inputs Number of rows in u.</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * @param f Vector-valued function from which to compute the Jacobian.</a>
+<span class="sourceLineNo">087</span><a id="line.87">   * @param x State vector.</a>
+<span class="sourceLineNo">088</span><a id="line.88">   * @param u Input vector.</a>
+<span class="sourceLineNo">089</span><a id="line.89">   * @return the numerical Jacobian with respect to u for f(x, u).</a>
+<span class="sourceLineNo">090</span><a id="line.90">   */</a>
+<span class="sourceLineNo">091</span><a id="line.91">  public static &lt;Rows extends Num, States extends Num, Inputs extends Num&gt;</a>
+<span class="sourceLineNo">092</span><a id="line.92">      Matrix&lt;Rows, Inputs&gt; numericalJacobianU(</a>
+<span class="sourceLineNo">093</span><a id="line.93">          Nat&lt;Rows&gt; rows,</a>
+<span class="sourceLineNo">094</span><a id="line.94">          Nat&lt;Inputs&gt; inputs,</a>
+<span class="sourceLineNo">095</span><a id="line.95">          BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
+<span class="sourceLineNo">096</span><a id="line.96">          Matrix&lt;States, N1&gt; x,</a>
+<span class="sourceLineNo">097</span><a id="line.97">          Matrix&lt;Inputs, N1&gt; u) {</a>
+<span class="sourceLineNo">098</span><a id="line.98">    return numericalJacobian(rows, inputs, _u -&gt; f.apply(x, _u), u);</a>
+<span class="sourceLineNo">099</span><a id="line.99">  }</a>
+<span class="sourceLineNo">100</span><a id="line.100">}</a>
 
 
 

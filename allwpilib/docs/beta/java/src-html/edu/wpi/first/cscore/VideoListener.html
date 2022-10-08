@@ -76,66 +76,65 @@
 <span class="sourceLineNo">064</span><a id="line.64">  private static boolean s_waitQueue;</a>
 <span class="sourceLineNo">065</span><a id="line.65">  private static final Condition s_waitQueueCond = s_lock.newCondition();</a>
 <span class="sourceLineNo">066</span><a id="line.66"></a>
-<span class="sourceLineNo">067</span><a id="line.67">  @SuppressWarnings("PMD.AvoidCatchingThrowable")</a>
-<span class="sourceLineNo">068</span><a id="line.68">  private static void startThread() {</a>
-<span class="sourceLineNo">069</span><a id="line.69">    s_thread =</a>
-<span class="sourceLineNo">070</span><a id="line.70">        new Thread(</a>
-<span class="sourceLineNo">071</span><a id="line.71">            () -&gt; {</a>
-<span class="sourceLineNo">072</span><a id="line.72">              boolean wasInterrupted = false;</a>
-<span class="sourceLineNo">073</span><a id="line.73">              while (!Thread.interrupted()) {</a>
-<span class="sourceLineNo">074</span><a id="line.74">                VideoEvent[] events;</a>
-<span class="sourceLineNo">075</span><a id="line.75">                try {</a>
-<span class="sourceLineNo">076</span><a id="line.76">                  events = CameraServerJNI.pollListener(s_poller);</a>
-<span class="sourceLineNo">077</span><a id="line.77">                } catch (InterruptedException ex) {</a>
-<span class="sourceLineNo">078</span><a id="line.78">                  s_lock.lock();</a>
-<span class="sourceLineNo">079</span><a id="line.79">                  try {</a>
-<span class="sourceLineNo">080</span><a id="line.80">                    if (s_waitQueue) {</a>
-<span class="sourceLineNo">081</span><a id="line.81">                      s_waitQueue = false;</a>
-<span class="sourceLineNo">082</span><a id="line.82">                      s_waitQueueCond.signalAll();</a>
-<span class="sourceLineNo">083</span><a id="line.83">                      continue;</a>
-<span class="sourceLineNo">084</span><a id="line.84">                    }</a>
-<span class="sourceLineNo">085</span><a id="line.85">                  } finally {</a>
-<span class="sourceLineNo">086</span><a id="line.86">                    s_lock.unlock();</a>
-<span class="sourceLineNo">087</span><a id="line.87">                  }</a>
-<span class="sourceLineNo">088</span><a id="line.88">                  Thread.currentThread().interrupt();</a>
-<span class="sourceLineNo">089</span><a id="line.89">                  // don't try to destroy poller, as its handle is likely no longer valid</a>
-<span class="sourceLineNo">090</span><a id="line.90">                  wasInterrupted = true;</a>
-<span class="sourceLineNo">091</span><a id="line.91">                  break;</a>
-<span class="sourceLineNo">092</span><a id="line.92">                }</a>
-<span class="sourceLineNo">093</span><a id="line.93">                for (VideoEvent event : events) {</a>
-<span class="sourceLineNo">094</span><a id="line.94">                  Consumer&lt;VideoEvent&gt; listener;</a>
-<span class="sourceLineNo">095</span><a id="line.95">                  s_lock.lock();</a>
-<span class="sourceLineNo">096</span><a id="line.96">                  try {</a>
-<span class="sourceLineNo">097</span><a id="line.97">                    listener = s_listeners.get(event.listener);</a>
-<span class="sourceLineNo">098</span><a id="line.98">                  } finally {</a>
-<span class="sourceLineNo">099</span><a id="line.99">                    s_lock.unlock();</a>
-<span class="sourceLineNo">100</span><a id="line.100">                  }</a>
-<span class="sourceLineNo">101</span><a id="line.101">                  if (listener != null) {</a>
-<span class="sourceLineNo">102</span><a id="line.102">                    try {</a>
-<span class="sourceLineNo">103</span><a id="line.103">                      listener.accept(event);</a>
-<span class="sourceLineNo">104</span><a id="line.104">                    } catch (Throwable throwable) {</a>
-<span class="sourceLineNo">105</span><a id="line.105">                      System.err.println(</a>
-<span class="sourceLineNo">106</span><a id="line.106">                          "Unhandled exception during listener callback: " + throwable.toString());</a>
-<span class="sourceLineNo">107</span><a id="line.107">                      throwable.printStackTrace();</a>
-<span class="sourceLineNo">108</span><a id="line.108">                    }</a>
-<span class="sourceLineNo">109</span><a id="line.109">                  }</a>
-<span class="sourceLineNo">110</span><a id="line.110">                }</a>
-<span class="sourceLineNo">111</span><a id="line.111">              }</a>
-<span class="sourceLineNo">112</span><a id="line.112">              s_lock.lock();</a>
-<span class="sourceLineNo">113</span><a id="line.113">              try {</a>
-<span class="sourceLineNo">114</span><a id="line.114">                if (!wasInterrupted) {</a>
-<span class="sourceLineNo">115</span><a id="line.115">                  CameraServerJNI.destroyListenerPoller(s_poller);</a>
-<span class="sourceLineNo">116</span><a id="line.116">                }</a>
-<span class="sourceLineNo">117</span><a id="line.117">                s_poller = 0;</a>
-<span class="sourceLineNo">118</span><a id="line.118">              } finally {</a>
-<span class="sourceLineNo">119</span><a id="line.119">                s_lock.unlock();</a>
-<span class="sourceLineNo">120</span><a id="line.120">              }</a>
-<span class="sourceLineNo">121</span><a id="line.121">            },</a>
-<span class="sourceLineNo">122</span><a id="line.122">            "VideoListener");</a>
-<span class="sourceLineNo">123</span><a id="line.123">    s_thread.setDaemon(true);</a>
-<span class="sourceLineNo">124</span><a id="line.124">    s_thread.start();</a>
-<span class="sourceLineNo">125</span><a id="line.125">  }</a>
-<span class="sourceLineNo">126</span><a id="line.126">}</a>
+<span class="sourceLineNo">067</span><a id="line.67">  private static void startThread() {</a>
+<span class="sourceLineNo">068</span><a id="line.68">    s_thread =</a>
+<span class="sourceLineNo">069</span><a id="line.69">        new Thread(</a>
+<span class="sourceLineNo">070</span><a id="line.70">            () -&gt; {</a>
+<span class="sourceLineNo">071</span><a id="line.71">              boolean wasInterrupted = false;</a>
+<span class="sourceLineNo">072</span><a id="line.72">              while (!Thread.interrupted()) {</a>
+<span class="sourceLineNo">073</span><a id="line.73">                VideoEvent[] events;</a>
+<span class="sourceLineNo">074</span><a id="line.74">                try {</a>
+<span class="sourceLineNo">075</span><a id="line.75">                  events = CameraServerJNI.pollListener(s_poller);</a>
+<span class="sourceLineNo">076</span><a id="line.76">                } catch (InterruptedException ex) {</a>
+<span class="sourceLineNo">077</span><a id="line.77">                  s_lock.lock();</a>
+<span class="sourceLineNo">078</span><a id="line.78">                  try {</a>
+<span class="sourceLineNo">079</span><a id="line.79">                    if (s_waitQueue) {</a>
+<span class="sourceLineNo">080</span><a id="line.80">                      s_waitQueue = false;</a>
+<span class="sourceLineNo">081</span><a id="line.81">                      s_waitQueueCond.signalAll();</a>
+<span class="sourceLineNo">082</span><a id="line.82">                      continue;</a>
+<span class="sourceLineNo">083</span><a id="line.83">                    }</a>
+<span class="sourceLineNo">084</span><a id="line.84">                  } finally {</a>
+<span class="sourceLineNo">085</span><a id="line.85">                    s_lock.unlock();</a>
+<span class="sourceLineNo">086</span><a id="line.86">                  }</a>
+<span class="sourceLineNo">087</span><a id="line.87">                  Thread.currentThread().interrupt();</a>
+<span class="sourceLineNo">088</span><a id="line.88">                  // don't try to destroy poller, as its handle is likely no longer valid</a>
+<span class="sourceLineNo">089</span><a id="line.89">                  wasInterrupted = true;</a>
+<span class="sourceLineNo">090</span><a id="line.90">                  break;</a>
+<span class="sourceLineNo">091</span><a id="line.91">                }</a>
+<span class="sourceLineNo">092</span><a id="line.92">                for (VideoEvent event : events) {</a>
+<span class="sourceLineNo">093</span><a id="line.93">                  Consumer&lt;VideoEvent&gt; listener;</a>
+<span class="sourceLineNo">094</span><a id="line.94">                  s_lock.lock();</a>
+<span class="sourceLineNo">095</span><a id="line.95">                  try {</a>
+<span class="sourceLineNo">096</span><a id="line.96">                    listener = s_listeners.get(event.listener);</a>
+<span class="sourceLineNo">097</span><a id="line.97">                  } finally {</a>
+<span class="sourceLineNo">098</span><a id="line.98">                    s_lock.unlock();</a>
+<span class="sourceLineNo">099</span><a id="line.99">                  }</a>
+<span class="sourceLineNo">100</span><a id="line.100">                  if (listener != null) {</a>
+<span class="sourceLineNo">101</span><a id="line.101">                    try {</a>
+<span class="sourceLineNo">102</span><a id="line.102">                      listener.accept(event);</a>
+<span class="sourceLineNo">103</span><a id="line.103">                    } catch (Throwable throwable) {</a>
+<span class="sourceLineNo">104</span><a id="line.104">                      System.err.println(</a>
+<span class="sourceLineNo">105</span><a id="line.105">                          "Unhandled exception during listener callback: " + throwable.toString());</a>
+<span class="sourceLineNo">106</span><a id="line.106">                      throwable.printStackTrace();</a>
+<span class="sourceLineNo">107</span><a id="line.107">                    }</a>
+<span class="sourceLineNo">108</span><a id="line.108">                  }</a>
+<span class="sourceLineNo">109</span><a id="line.109">                }</a>
+<span class="sourceLineNo">110</span><a id="line.110">              }</a>
+<span class="sourceLineNo">111</span><a id="line.111">              s_lock.lock();</a>
+<span class="sourceLineNo">112</span><a id="line.112">              try {</a>
+<span class="sourceLineNo">113</span><a id="line.113">                if (!wasInterrupted) {</a>
+<span class="sourceLineNo">114</span><a id="line.114">                  CameraServerJNI.destroyListenerPoller(s_poller);</a>
+<span class="sourceLineNo">115</span><a id="line.115">                }</a>
+<span class="sourceLineNo">116</span><a id="line.116">                s_poller = 0;</a>
+<span class="sourceLineNo">117</span><a id="line.117">              } finally {</a>
+<span class="sourceLineNo">118</span><a id="line.118">                s_lock.unlock();</a>
+<span class="sourceLineNo">119</span><a id="line.119">              }</a>
+<span class="sourceLineNo">120</span><a id="line.120">            },</a>
+<span class="sourceLineNo">121</span><a id="line.121">            "VideoListener");</a>
+<span class="sourceLineNo">122</span><a id="line.122">    s_thread.setDaemon(true);</a>
+<span class="sourceLineNo">123</span><a id="line.123">    s_thread.start();</a>
+<span class="sourceLineNo">124</span><a id="line.124">  }</a>
+<span class="sourceLineNo">125</span><a id="line.125">}</a>
 
 
 

@@ -36,7 +36,7 @@
 <span class="sourceLineNo">024</span><a id="line.24">   * @param dtSeconds The time over which to integrate.</a>
 <span class="sourceLineNo">025</span><a id="line.25">   * @return the integration of dx/dt = f(x) for dt.</a>
 <span class="sourceLineNo">026</span><a id="line.26">   */</a>
-<span class="sourceLineNo">027</span><a id="line.27">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">027</span><a id="line.27">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">028</span><a id="line.28">  public static double rk4(DoubleFunction&lt;Double&gt; f, double x, double dtSeconds) {</a>
 <span class="sourceLineNo">029</span><a id="line.29">    final var h = dtSeconds;</a>
 <span class="sourceLineNo">030</span><a id="line.30">    final var k1 = f.apply(x);</a>
@@ -56,7 +56,7 @@
 <span class="sourceLineNo">044</span><a id="line.44">   * @param dtSeconds The time over which to integrate.</a>
 <span class="sourceLineNo">045</span><a id="line.45">   * @return The result of Runge Kutta integration (4th order).</a>
 <span class="sourceLineNo">046</span><a id="line.46">   */</a>
-<span class="sourceLineNo">047</span><a id="line.47">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">047</span><a id="line.47">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">048</span><a id="line.48">  public static double rk4(</a>
 <span class="sourceLineNo">049</span><a id="line.49">      BiFunction&lt;Double, Double, Double&gt; f, double x, Double u, double dtSeconds) {</a>
 <span class="sourceLineNo">050</span><a id="line.50">    final var h = dtSeconds;</a>
@@ -80,7 +80,7 @@
 <span class="sourceLineNo">068</span><a id="line.68">   * @param dtSeconds The time over which to integrate.</a>
 <span class="sourceLineNo">069</span><a id="line.69">   * @return the integration of dx/dt = f(x, u) for dt.</a>
 <span class="sourceLineNo">070</span><a id="line.70">   */</a>
-<span class="sourceLineNo">071</span><a id="line.71">  @SuppressWarnings({"ParameterName", "MethodTypeParameterName"})</a>
+<span class="sourceLineNo">071</span><a id="line.71">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">072</span><a id="line.72">  public static &lt;States extends Num, Inputs extends Num&gt; Matrix&lt;States, N1&gt; rk4(</a>
 <span class="sourceLineNo">073</span><a id="line.73">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
 <span class="sourceLineNo">074</span><a id="line.74">      Matrix&lt;States, N1&gt; x,</a>
@@ -105,7 +105,7 @@
 <span class="sourceLineNo">093</span><a id="line.93">   * @param dtSeconds The time over which to integrate.</a>
 <span class="sourceLineNo">094</span><a id="line.94">   * @return 4th order Runge-Kutta integration of dx/dt = f(x) for dt.</a>
 <span class="sourceLineNo">095</span><a id="line.95">   */</a>
-<span class="sourceLineNo">096</span><a id="line.96">  @SuppressWarnings({"ParameterName", "MethodTypeParameterName"})</a>
+<span class="sourceLineNo">096</span><a id="line.96">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">097</span><a id="line.97">  public static &lt;States extends Num&gt; Matrix&lt;States, N1&gt; rk4(</a>
 <span class="sourceLineNo">098</span><a id="line.98">      Function&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; f, Matrix&lt;States, N1&gt; x, double dtSeconds) {</a>
 <span class="sourceLineNo">099</span><a id="line.99">    final var h = dtSeconds;</a>
@@ -131,7 +131,7 @@
 <span class="sourceLineNo">119</span><a id="line.119">   * @param dtSeconds The time over which to integrate.</a>
 <span class="sourceLineNo">120</span><a id="line.120">   * @return the integration of dx/dt = f(x, u) for dt.</a>
 <span class="sourceLineNo">121</span><a id="line.121">   */</a>
-<span class="sourceLineNo">122</span><a id="line.122">  @SuppressWarnings("MethodTypeParameterName")</a>
+<span class="sourceLineNo">122</span><a id="line.122">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">123</span><a id="line.123">  public static &lt;States extends Num, Inputs extends Num&gt; Matrix&lt;States, N1&gt; rkf45(</a>
 <span class="sourceLineNo">124</span><a id="line.124">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
 <span class="sourceLineNo">125</span><a id="line.125">      Matrix&lt;States, N1&gt; x,</a>
@@ -153,7 +153,7 @@
 <span class="sourceLineNo">141</span><a id="line.141">   * @param maxError The maximum acceptable truncation error. Usually a small number like 1e-6.</a>
 <span class="sourceLineNo">142</span><a id="line.142">   * @return the integration of dx/dt = f(x, u) for dt.</a>
 <span class="sourceLineNo">143</span><a id="line.143">   */</a>
-<span class="sourceLineNo">144</span><a id="line.144">  @SuppressWarnings("MethodTypeParameterName")</a>
+<span class="sourceLineNo">144</span><a id="line.144">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">145</span><a id="line.145">  public static &lt;States extends Num, Inputs extends Num&gt; Matrix&lt;States, N1&gt; rkf45(</a>
 <span class="sourceLineNo">146</span><a id="line.146">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
 <span class="sourceLineNo">147</span><a id="line.147">      Matrix&lt;States, N1&gt; x,</a>
@@ -263,7 +263,7 @@
 <span class="sourceLineNo">251</span><a id="line.251">   * @param dtSeconds The time over which to integrate.</a>
 <span class="sourceLineNo">252</span><a id="line.252">   * @return the integration of dx/dt = f(x, u) for dt.</a>
 <span class="sourceLineNo">253</span><a id="line.253">   */</a>
-<span class="sourceLineNo">254</span><a id="line.254">  @SuppressWarnings("MethodTypeParameterName")</a>
+<span class="sourceLineNo">254</span><a id="line.254">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">255</span><a id="line.255">  public static &lt;States extends Num, Inputs extends Num&gt; Matrix&lt;States, N1&gt; rkdp(</a>
 <span class="sourceLineNo">256</span><a id="line.256">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
 <span class="sourceLineNo">257</span><a id="line.257">      Matrix&lt;States, N1&gt; x,</a>
@@ -284,7 +284,7 @@
 <span class="sourceLineNo">272</span><a id="line.272">   * @param maxError The maximum acceptable truncation error. Usually a small number like 1e-6.</a>
 <span class="sourceLineNo">273</span><a id="line.273">   * @return the integration of dx/dt = f(x, u) for dt.</a>
 <span class="sourceLineNo">274</span><a id="line.274">   */</a>
-<span class="sourceLineNo">275</span><a id="line.275">  @SuppressWarnings("MethodTypeParameterName")</a>
+<span class="sourceLineNo">275</span><a id="line.275">  @SuppressWarnings("overloads")</a>
 <span class="sourceLineNo">276</span><a id="line.276">  public static &lt;States extends Num, Inputs extends Num&gt; Matrix&lt;States, N1&gt; rkdp(</a>
 <span class="sourceLineNo">277</span><a id="line.277">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
 <span class="sourceLineNo">278</span><a id="line.278">      Matrix&lt;States, N1&gt; x,</a>

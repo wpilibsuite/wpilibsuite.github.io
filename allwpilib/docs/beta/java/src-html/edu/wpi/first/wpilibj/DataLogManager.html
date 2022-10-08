@@ -200,192 +200,191 @@
 <span class="sourceLineNo">188</span><a id="line.188">    }</a>
 <span class="sourceLineNo">189</span><a id="line.189">  }</a>
 <span class="sourceLineNo">190</span><a id="line.190"></a>
-<span class="sourceLineNo">191</span><a id="line.191">  @SuppressWarnings("PMD.EmptyCatchBlock")</a>
-<span class="sourceLineNo">192</span><a id="line.192">  private static String makeLogDir(String dir) {</a>
-<span class="sourceLineNo">193</span><a id="line.193">    if (!dir.isEmpty()) {</a>
-<span class="sourceLineNo">194</span><a id="line.194">      return dir;</a>
-<span class="sourceLineNo">195</span><a id="line.195">    }</a>
-<span class="sourceLineNo">196</span><a id="line.196"></a>
-<span class="sourceLineNo">197</span><a id="line.197">    if (RobotBase.isReal()) {</a>
-<span class="sourceLineNo">198</span><a id="line.198">      try {</a>
-<span class="sourceLineNo">199</span><a id="line.199">        // prefer a mounted USB drive if one is accessible</a>
-<span class="sourceLineNo">200</span><a id="line.200">        Path usbDir = Paths.get("/u").toRealPath();</a>
-<span class="sourceLineNo">201</span><a id="line.201">        if (Files.isWritable(usbDir)) {</a>
-<span class="sourceLineNo">202</span><a id="line.202">          return usbDir.toString();</a>
-<span class="sourceLineNo">203</span><a id="line.203">        }</a>
-<span class="sourceLineNo">204</span><a id="line.204">      } catch (IOException ex) {</a>
-<span class="sourceLineNo">205</span><a id="line.205">        // ignored</a>
-<span class="sourceLineNo">206</span><a id="line.206">      }</a>
-<span class="sourceLineNo">207</span><a id="line.207">    }</a>
-<span class="sourceLineNo">208</span><a id="line.208"></a>
-<span class="sourceLineNo">209</span><a id="line.209">    return Filesystem.getOperatingDirectory().getAbsolutePath();</a>
-<span class="sourceLineNo">210</span><a id="line.210">  }</a>
-<span class="sourceLineNo">211</span><a id="line.211"></a>
-<span class="sourceLineNo">212</span><a id="line.212">  private static String makeLogFilename(String filenameOverride) {</a>
-<span class="sourceLineNo">213</span><a id="line.213">    if (!filenameOverride.isEmpty()) {</a>
-<span class="sourceLineNo">214</span><a id="line.214">      return filenameOverride;</a>
-<span class="sourceLineNo">215</span><a id="line.215">    }</a>
-<span class="sourceLineNo">216</span><a id="line.216">    Random rnd = new Random();</a>
-<span class="sourceLineNo">217</span><a id="line.217">    StringBuilder filename = new StringBuilder();</a>
-<span class="sourceLineNo">218</span><a id="line.218">    filename.append("FRC_TBD_");</a>
-<span class="sourceLineNo">219</span><a id="line.219">    for (int i = 0; i &lt; 4; i++) {</a>
-<span class="sourceLineNo">220</span><a id="line.220">      filename.append(String.format("%04x", rnd.nextInt(0x10000)));</a>
-<span class="sourceLineNo">221</span><a id="line.221">    }</a>
-<span class="sourceLineNo">222</span><a id="line.222">    filename.append(".wpilog");</a>
-<span class="sourceLineNo">223</span><a id="line.223">    return filename.toString();</a>
-<span class="sourceLineNo">224</span><a id="line.224">  }</a>
-<span class="sourceLineNo">225</span><a id="line.225"></a>
-<span class="sourceLineNo">226</span><a id="line.226">  private static void startNtLog() {</a>
-<span class="sourceLineNo">227</span><a id="line.227">    NetworkTableInstance inst = NetworkTableInstance.getDefault();</a>
-<span class="sourceLineNo">228</span><a id="line.228">    m_ntEntryLogger = inst.startEntryDataLog(m_log, "", "NT:");</a>
-<span class="sourceLineNo">229</span><a id="line.229">    m_ntConnLogger = inst.startConnectionDataLog(m_log, "NTConnection");</a>
-<span class="sourceLineNo">230</span><a id="line.230">  }</a>
-<span class="sourceLineNo">231</span><a id="line.231"></a>
-<span class="sourceLineNo">232</span><a id="line.232">  private static void stopNtLog() {</a>
-<span class="sourceLineNo">233</span><a id="line.233">    NetworkTableInstance.stopEntryDataLog(m_ntEntryLogger);</a>
-<span class="sourceLineNo">234</span><a id="line.234">    NetworkTableInstance.stopConnectionDataLog(m_ntConnLogger);</a>
-<span class="sourceLineNo">235</span><a id="line.235">  }</a>
-<span class="sourceLineNo">236</span><a id="line.236"></a>
-<span class="sourceLineNo">237</span><a id="line.237">  private static void logMain() {</a>
-<span class="sourceLineNo">238</span><a id="line.238">    // based on free disk space, scan for "old" FRC_*.wpilog files and remove</a>
-<span class="sourceLineNo">239</span><a id="line.239">    {</a>
-<span class="sourceLineNo">240</span><a id="line.240">      File logDir = new File(m_logDir);</a>
-<span class="sourceLineNo">241</span><a id="line.241">      long freeSpace = logDir.getFreeSpace();</a>
-<span class="sourceLineNo">242</span><a id="line.242">      if (freeSpace &lt; kFreeSpaceThreshold) {</a>
-<span class="sourceLineNo">243</span><a id="line.243">        // Delete oldest FRC_*.wpilog files (ignore FRC_TBD_*.wpilog as we just created one)</a>
-<span class="sourceLineNo">244</span><a id="line.244">        File[] files =</a>
-<span class="sourceLineNo">245</span><a id="line.245">            logDir.listFiles(</a>
-<span class="sourceLineNo">246</span><a id="line.246">                (dir, name) -&gt;</a>
-<span class="sourceLineNo">247</span><a id="line.247">                    name.startsWith("FRC_")</a>
-<span class="sourceLineNo">248</span><a id="line.248">                        &amp;&amp; name.endsWith(".wpilog")</a>
-<span class="sourceLineNo">249</span><a id="line.249">                        &amp;&amp; !name.startsWith("FRC_TBD_"));</a>
-<span class="sourceLineNo">250</span><a id="line.250">        if (files != null) {</a>
-<span class="sourceLineNo">251</span><a id="line.251">          Arrays.sort(files, Comparator.comparingLong(File::lastModified));</a>
-<span class="sourceLineNo">252</span><a id="line.252">          int count = files.length;</a>
-<span class="sourceLineNo">253</span><a id="line.253">          for (File file : files) {</a>
-<span class="sourceLineNo">254</span><a id="line.254">            --count;</a>
-<span class="sourceLineNo">255</span><a id="line.255">            if (count &lt; kFileCountThreshold) {</a>
-<span class="sourceLineNo">256</span><a id="line.256">              break;</a>
-<span class="sourceLineNo">257</span><a id="line.257">            }</a>
-<span class="sourceLineNo">258</span><a id="line.258">            long length = file.length();</a>
-<span class="sourceLineNo">259</span><a id="line.259">            if (file.delete()) {</a>
-<span class="sourceLineNo">260</span><a id="line.260">              freeSpace += length;</a>
-<span class="sourceLineNo">261</span><a id="line.261">              if (freeSpace &gt;= kFreeSpaceThreshold) {</a>
-<span class="sourceLineNo">262</span><a id="line.262">                break;</a>
-<span class="sourceLineNo">263</span><a id="line.263">              }</a>
-<span class="sourceLineNo">264</span><a id="line.264">            } else {</a>
-<span class="sourceLineNo">265</span><a id="line.265">              System.err.println("DataLogManager: could not delete " + file);</a>
-<span class="sourceLineNo">266</span><a id="line.266">            }</a>
-<span class="sourceLineNo">267</span><a id="line.267">          }</a>
-<span class="sourceLineNo">268</span><a id="line.268">        }</a>
-<span class="sourceLineNo">269</span><a id="line.269">      }</a>
-<span class="sourceLineNo">270</span><a id="line.270">    }</a>
-<span class="sourceLineNo">271</span><a id="line.271"></a>
-<span class="sourceLineNo">272</span><a id="line.272">    int timeoutCount = 0;</a>
-<span class="sourceLineNo">273</span><a id="line.273">    boolean paused = false;</a>
-<span class="sourceLineNo">274</span><a id="line.274">    int dsAttachCount = 0;</a>
-<span class="sourceLineNo">275</span><a id="line.275">    int fmsAttachCount = 0;</a>
-<span class="sourceLineNo">276</span><a id="line.276">    boolean dsRenamed = m_filenameOverride;</a>
-<span class="sourceLineNo">277</span><a id="line.277">    boolean fmsRenamed = m_filenameOverride;</a>
-<span class="sourceLineNo">278</span><a id="line.278">    int sysTimeCount = 0;</a>
-<span class="sourceLineNo">279</span><a id="line.279">    IntegerLogEntry sysTimeEntry =</a>
-<span class="sourceLineNo">280</span><a id="line.280">        new IntegerLogEntry(</a>
-<span class="sourceLineNo">281</span><a id="line.281">            m_log, "systemTime", "{\"source\":\"DataLogManager\",\"format\":\"time_t_us\"}");</a>
-<span class="sourceLineNo">282</span><a id="line.282"></a>
-<span class="sourceLineNo">283</span><a id="line.283">    while (!Thread.interrupted()) {</a>
-<span class="sourceLineNo">284</span><a id="line.284">      boolean newData = DriverStation.waitForData(0.25);</a>
-<span class="sourceLineNo">285</span><a id="line.285">      if (Thread.interrupted()) {</a>
-<span class="sourceLineNo">286</span><a id="line.286">        break;</a>
-<span class="sourceLineNo">287</span><a id="line.287">      }</a>
-<span class="sourceLineNo">288</span><a id="line.288">      if (!newData) {</a>
-<span class="sourceLineNo">289</span><a id="line.289">        timeoutCount++;</a>
-<span class="sourceLineNo">290</span><a id="line.290">        // pause logging after being disconnected for 10 seconds</a>
-<span class="sourceLineNo">291</span><a id="line.291">        if (timeoutCount &gt; 40 &amp;&amp; !paused) {</a>
-<span class="sourceLineNo">292</span><a id="line.292">          timeoutCount = 0;</a>
-<span class="sourceLineNo">293</span><a id="line.293">          paused = true;</a>
-<span class="sourceLineNo">294</span><a id="line.294">          m_log.pause();</a>
-<span class="sourceLineNo">295</span><a id="line.295">        }</a>
-<span class="sourceLineNo">296</span><a id="line.296">        continue;</a>
-<span class="sourceLineNo">297</span><a id="line.297">      }</a>
-<span class="sourceLineNo">298</span><a id="line.298">      // when we connect to the DS, resume logging</a>
-<span class="sourceLineNo">299</span><a id="line.299">      timeoutCount = 0;</a>
-<span class="sourceLineNo">300</span><a id="line.300">      if (paused) {</a>
-<span class="sourceLineNo">301</span><a id="line.301">        paused = false;</a>
-<span class="sourceLineNo">302</span><a id="line.302">        m_log.resume();</a>
-<span class="sourceLineNo">303</span><a id="line.303">      }</a>
-<span class="sourceLineNo">304</span><a id="line.304"></a>
-<span class="sourceLineNo">305</span><a id="line.305">      if (!dsRenamed) {</a>
-<span class="sourceLineNo">306</span><a id="line.306">        // track DS attach</a>
-<span class="sourceLineNo">307</span><a id="line.307">        if (DriverStation.isDSAttached()) {</a>
-<span class="sourceLineNo">308</span><a id="line.308">          dsAttachCount++;</a>
-<span class="sourceLineNo">309</span><a id="line.309">        } else {</a>
-<span class="sourceLineNo">310</span><a id="line.310">          dsAttachCount = 0;</a>
-<span class="sourceLineNo">311</span><a id="line.311">        }</a>
-<span class="sourceLineNo">312</span><a id="line.312">        if (dsAttachCount &gt; 50) { // 1 second</a>
-<span class="sourceLineNo">313</span><a id="line.313">          LocalDateTime now = LocalDateTime.now(m_utc);</a>
-<span class="sourceLineNo">314</span><a id="line.314">          if (now.getYear() &gt; 2000) {</a>
-<span class="sourceLineNo">315</span><a id="line.315">            // assume local clock is now synchronized to DS, so rename based on</a>
-<span class="sourceLineNo">316</span><a id="line.316">            // local time</a>
-<span class="sourceLineNo">317</span><a id="line.317">            m_log.setFilename("FRC_" + m_timeFormatter.format(now) + ".wpilog");</a>
-<span class="sourceLineNo">318</span><a id="line.318">            dsRenamed = true;</a>
-<span class="sourceLineNo">319</span><a id="line.319">          } else {</a>
-<span class="sourceLineNo">320</span><a id="line.320">            dsAttachCount = 0; // wait a bit and try again</a>
-<span class="sourceLineNo">321</span><a id="line.321">          }</a>
-<span class="sourceLineNo">322</span><a id="line.322">        }</a>
-<span class="sourceLineNo">323</span><a id="line.323">      }</a>
-<span class="sourceLineNo">324</span><a id="line.324"></a>
-<span class="sourceLineNo">325</span><a id="line.325">      if (!fmsRenamed) {</a>
-<span class="sourceLineNo">326</span><a id="line.326">        // track FMS attach</a>
-<span class="sourceLineNo">327</span><a id="line.327">        if (DriverStation.isFMSAttached()) {</a>
-<span class="sourceLineNo">328</span><a id="line.328">          fmsAttachCount++;</a>
-<span class="sourceLineNo">329</span><a id="line.329">        } else {</a>
-<span class="sourceLineNo">330</span><a id="line.330">          fmsAttachCount = 0;</a>
-<span class="sourceLineNo">331</span><a id="line.331">        }</a>
-<span class="sourceLineNo">332</span><a id="line.332">        if (fmsAttachCount &gt; 100) { // 2 seconds</a>
-<span class="sourceLineNo">333</span><a id="line.333">          // match info comes through TCP, so we need to double-check we've</a>
-<span class="sourceLineNo">334</span><a id="line.334">          // actually received it</a>
-<span class="sourceLineNo">335</span><a id="line.335">          DriverStation.MatchType matchType = DriverStation.getMatchType();</a>
-<span class="sourceLineNo">336</span><a id="line.336">          if (matchType != DriverStation.MatchType.None) {</a>
-<span class="sourceLineNo">337</span><a id="line.337">            // rename per match info</a>
-<span class="sourceLineNo">338</span><a id="line.338">            char matchTypeChar;</a>
-<span class="sourceLineNo">339</span><a id="line.339">            switch (matchType) {</a>
-<span class="sourceLineNo">340</span><a id="line.340">              case Practice:</a>
-<span class="sourceLineNo">341</span><a id="line.341">                matchTypeChar = 'P';</a>
-<span class="sourceLineNo">342</span><a id="line.342">                break;</a>
-<span class="sourceLineNo">343</span><a id="line.343">              case Qualification:</a>
-<span class="sourceLineNo">344</span><a id="line.344">                matchTypeChar = 'Q';</a>
-<span class="sourceLineNo">345</span><a id="line.345">                break;</a>
-<span class="sourceLineNo">346</span><a id="line.346">              case Elimination:</a>
-<span class="sourceLineNo">347</span><a id="line.347">                matchTypeChar = 'E';</a>
-<span class="sourceLineNo">348</span><a id="line.348">                break;</a>
-<span class="sourceLineNo">349</span><a id="line.349">              default:</a>
-<span class="sourceLineNo">350</span><a id="line.350">                matchTypeChar = '_';</a>
-<span class="sourceLineNo">351</span><a id="line.351">                break;</a>
-<span class="sourceLineNo">352</span><a id="line.352">            }</a>
-<span class="sourceLineNo">353</span><a id="line.353">            m_log.setFilename(</a>
-<span class="sourceLineNo">354</span><a id="line.354">                "FRC_"</a>
-<span class="sourceLineNo">355</span><a id="line.355">                    + m_timeFormatter.format(LocalDateTime.now(m_utc))</a>
-<span class="sourceLineNo">356</span><a id="line.356">                    + "_"</a>
-<span class="sourceLineNo">357</span><a id="line.357">                    + DriverStation.getEventName()</a>
-<span class="sourceLineNo">358</span><a id="line.358">                    + "_"</a>
-<span class="sourceLineNo">359</span><a id="line.359">                    + matchTypeChar</a>
-<span class="sourceLineNo">360</span><a id="line.360">                    + DriverStation.getMatchNumber()</a>
-<span class="sourceLineNo">361</span><a id="line.361">                    + ".wpilog");</a>
-<span class="sourceLineNo">362</span><a id="line.362">            fmsRenamed = true;</a>
-<span class="sourceLineNo">363</span><a id="line.363">            dsRenamed = true; // don't override FMS rename</a>
-<span class="sourceLineNo">364</span><a id="line.364">          }</a>
-<span class="sourceLineNo">365</span><a id="line.365">        }</a>
-<span class="sourceLineNo">366</span><a id="line.366">      }</a>
-<span class="sourceLineNo">367</span><a id="line.367"></a>
-<span class="sourceLineNo">368</span><a id="line.368">      // Write system time every ~5 seconds</a>
-<span class="sourceLineNo">369</span><a id="line.369">      sysTimeCount++;</a>
-<span class="sourceLineNo">370</span><a id="line.370">      if (sysTimeCount &gt;= 250) {</a>
-<span class="sourceLineNo">371</span><a id="line.371">        sysTimeCount = 0;</a>
-<span class="sourceLineNo">372</span><a id="line.372">        sysTimeEntry.append(WPIUtilJNI.getSystemTime(), WPIUtilJNI.now());</a>
-<span class="sourceLineNo">373</span><a id="line.373">      }</a>
-<span class="sourceLineNo">374</span><a id="line.374">    }</a>
-<span class="sourceLineNo">375</span><a id="line.375">  }</a>
-<span class="sourceLineNo">376</span><a id="line.376">}</a>
+<span class="sourceLineNo">191</span><a id="line.191">  private static String makeLogDir(String dir) {</a>
+<span class="sourceLineNo">192</span><a id="line.192">    if (!dir.isEmpty()) {</a>
+<span class="sourceLineNo">193</span><a id="line.193">      return dir;</a>
+<span class="sourceLineNo">194</span><a id="line.194">    }</a>
+<span class="sourceLineNo">195</span><a id="line.195"></a>
+<span class="sourceLineNo">196</span><a id="line.196">    if (RobotBase.isReal()) {</a>
+<span class="sourceLineNo">197</span><a id="line.197">      try {</a>
+<span class="sourceLineNo">198</span><a id="line.198">        // prefer a mounted USB drive if one is accessible</a>
+<span class="sourceLineNo">199</span><a id="line.199">        Path usbDir = Paths.get("/u").toRealPath();</a>
+<span class="sourceLineNo">200</span><a id="line.200">        if (Files.isWritable(usbDir)) {</a>
+<span class="sourceLineNo">201</span><a id="line.201">          return usbDir.toString();</a>
+<span class="sourceLineNo">202</span><a id="line.202">        }</a>
+<span class="sourceLineNo">203</span><a id="line.203">      } catch (IOException ex) {</a>
+<span class="sourceLineNo">204</span><a id="line.204">        // ignored</a>
+<span class="sourceLineNo">205</span><a id="line.205">      }</a>
+<span class="sourceLineNo">206</span><a id="line.206">    }</a>
+<span class="sourceLineNo">207</span><a id="line.207"></a>
+<span class="sourceLineNo">208</span><a id="line.208">    return Filesystem.getOperatingDirectory().getAbsolutePath();</a>
+<span class="sourceLineNo">209</span><a id="line.209">  }</a>
+<span class="sourceLineNo">210</span><a id="line.210"></a>
+<span class="sourceLineNo">211</span><a id="line.211">  private static String makeLogFilename(String filenameOverride) {</a>
+<span class="sourceLineNo">212</span><a id="line.212">    if (!filenameOverride.isEmpty()) {</a>
+<span class="sourceLineNo">213</span><a id="line.213">      return filenameOverride;</a>
+<span class="sourceLineNo">214</span><a id="line.214">    }</a>
+<span class="sourceLineNo">215</span><a id="line.215">    Random rnd = new Random();</a>
+<span class="sourceLineNo">216</span><a id="line.216">    StringBuilder filename = new StringBuilder();</a>
+<span class="sourceLineNo">217</span><a id="line.217">    filename.append("FRC_TBD_");</a>
+<span class="sourceLineNo">218</span><a id="line.218">    for (int i = 0; i &lt; 4; i++) {</a>
+<span class="sourceLineNo">219</span><a id="line.219">      filename.append(String.format("%04x", rnd.nextInt(0x10000)));</a>
+<span class="sourceLineNo">220</span><a id="line.220">    }</a>
+<span class="sourceLineNo">221</span><a id="line.221">    filename.append(".wpilog");</a>
+<span class="sourceLineNo">222</span><a id="line.222">    return filename.toString();</a>
+<span class="sourceLineNo">223</span><a id="line.223">  }</a>
+<span class="sourceLineNo">224</span><a id="line.224"></a>
+<span class="sourceLineNo">225</span><a id="line.225">  private static void startNtLog() {</a>
+<span class="sourceLineNo">226</span><a id="line.226">    NetworkTableInstance inst = NetworkTableInstance.getDefault();</a>
+<span class="sourceLineNo">227</span><a id="line.227">    m_ntEntryLogger = inst.startEntryDataLog(m_log, "", "NT:");</a>
+<span class="sourceLineNo">228</span><a id="line.228">    m_ntConnLogger = inst.startConnectionDataLog(m_log, "NTConnection");</a>
+<span class="sourceLineNo">229</span><a id="line.229">  }</a>
+<span class="sourceLineNo">230</span><a id="line.230"></a>
+<span class="sourceLineNo">231</span><a id="line.231">  private static void stopNtLog() {</a>
+<span class="sourceLineNo">232</span><a id="line.232">    NetworkTableInstance.stopEntryDataLog(m_ntEntryLogger);</a>
+<span class="sourceLineNo">233</span><a id="line.233">    NetworkTableInstance.stopConnectionDataLog(m_ntConnLogger);</a>
+<span class="sourceLineNo">234</span><a id="line.234">  }</a>
+<span class="sourceLineNo">235</span><a id="line.235"></a>
+<span class="sourceLineNo">236</span><a id="line.236">  private static void logMain() {</a>
+<span class="sourceLineNo">237</span><a id="line.237">    // based on free disk space, scan for "old" FRC_*.wpilog files and remove</a>
+<span class="sourceLineNo">238</span><a id="line.238">    {</a>
+<span class="sourceLineNo">239</span><a id="line.239">      File logDir = new File(m_logDir);</a>
+<span class="sourceLineNo">240</span><a id="line.240">      long freeSpace = logDir.getFreeSpace();</a>
+<span class="sourceLineNo">241</span><a id="line.241">      if (freeSpace &lt; kFreeSpaceThreshold) {</a>
+<span class="sourceLineNo">242</span><a id="line.242">        // Delete oldest FRC_*.wpilog files (ignore FRC_TBD_*.wpilog as we just created one)</a>
+<span class="sourceLineNo">243</span><a id="line.243">        File[] files =</a>
+<span class="sourceLineNo">244</span><a id="line.244">            logDir.listFiles(</a>
+<span class="sourceLineNo">245</span><a id="line.245">                (dir, name) -&gt;</a>
+<span class="sourceLineNo">246</span><a id="line.246">                    name.startsWith("FRC_")</a>
+<span class="sourceLineNo">247</span><a id="line.247">                        &amp;&amp; name.endsWith(".wpilog")</a>
+<span class="sourceLineNo">248</span><a id="line.248">                        &amp;&amp; !name.startsWith("FRC_TBD_"));</a>
+<span class="sourceLineNo">249</span><a id="line.249">        if (files != null) {</a>
+<span class="sourceLineNo">250</span><a id="line.250">          Arrays.sort(files, Comparator.comparingLong(File::lastModified));</a>
+<span class="sourceLineNo">251</span><a id="line.251">          int count = files.length;</a>
+<span class="sourceLineNo">252</span><a id="line.252">          for (File file : files) {</a>
+<span class="sourceLineNo">253</span><a id="line.253">            --count;</a>
+<span class="sourceLineNo">254</span><a id="line.254">            if (count &lt; kFileCountThreshold) {</a>
+<span class="sourceLineNo">255</span><a id="line.255">              break;</a>
+<span class="sourceLineNo">256</span><a id="line.256">            }</a>
+<span class="sourceLineNo">257</span><a id="line.257">            long length = file.length();</a>
+<span class="sourceLineNo">258</span><a id="line.258">            if (file.delete()) {</a>
+<span class="sourceLineNo">259</span><a id="line.259">              freeSpace += length;</a>
+<span class="sourceLineNo">260</span><a id="line.260">              if (freeSpace &gt;= kFreeSpaceThreshold) {</a>
+<span class="sourceLineNo">261</span><a id="line.261">                break;</a>
+<span class="sourceLineNo">262</span><a id="line.262">              }</a>
+<span class="sourceLineNo">263</span><a id="line.263">            } else {</a>
+<span class="sourceLineNo">264</span><a id="line.264">              System.err.println("DataLogManager: could not delete " + file);</a>
+<span class="sourceLineNo">265</span><a id="line.265">            }</a>
+<span class="sourceLineNo">266</span><a id="line.266">          }</a>
+<span class="sourceLineNo">267</span><a id="line.267">        }</a>
+<span class="sourceLineNo">268</span><a id="line.268">      }</a>
+<span class="sourceLineNo">269</span><a id="line.269">    }</a>
+<span class="sourceLineNo">270</span><a id="line.270"></a>
+<span class="sourceLineNo">271</span><a id="line.271">    int timeoutCount = 0;</a>
+<span class="sourceLineNo">272</span><a id="line.272">    boolean paused = false;</a>
+<span class="sourceLineNo">273</span><a id="line.273">    int dsAttachCount = 0;</a>
+<span class="sourceLineNo">274</span><a id="line.274">    int fmsAttachCount = 0;</a>
+<span class="sourceLineNo">275</span><a id="line.275">    boolean dsRenamed = m_filenameOverride;</a>
+<span class="sourceLineNo">276</span><a id="line.276">    boolean fmsRenamed = m_filenameOverride;</a>
+<span class="sourceLineNo">277</span><a id="line.277">    int sysTimeCount = 0;</a>
+<span class="sourceLineNo">278</span><a id="line.278">    IntegerLogEntry sysTimeEntry =</a>
+<span class="sourceLineNo">279</span><a id="line.279">        new IntegerLogEntry(</a>
+<span class="sourceLineNo">280</span><a id="line.280">            m_log, "systemTime", "{\"source\":\"DataLogManager\",\"format\":\"time_t_us\"}");</a>
+<span class="sourceLineNo">281</span><a id="line.281"></a>
+<span class="sourceLineNo">282</span><a id="line.282">    while (!Thread.interrupted()) {</a>
+<span class="sourceLineNo">283</span><a id="line.283">      boolean newData = DriverStation.waitForData(0.25);</a>
+<span class="sourceLineNo">284</span><a id="line.284">      if (Thread.interrupted()) {</a>
+<span class="sourceLineNo">285</span><a id="line.285">        break;</a>
+<span class="sourceLineNo">286</span><a id="line.286">      }</a>
+<span class="sourceLineNo">287</span><a id="line.287">      if (!newData) {</a>
+<span class="sourceLineNo">288</span><a id="line.288">        timeoutCount++;</a>
+<span class="sourceLineNo">289</span><a id="line.289">        // pause logging after being disconnected for 10 seconds</a>
+<span class="sourceLineNo">290</span><a id="line.290">        if (timeoutCount &gt; 40 &amp;&amp; !paused) {</a>
+<span class="sourceLineNo">291</span><a id="line.291">          timeoutCount = 0;</a>
+<span class="sourceLineNo">292</span><a id="line.292">          paused = true;</a>
+<span class="sourceLineNo">293</span><a id="line.293">          m_log.pause();</a>
+<span class="sourceLineNo">294</span><a id="line.294">        }</a>
+<span class="sourceLineNo">295</span><a id="line.295">        continue;</a>
+<span class="sourceLineNo">296</span><a id="line.296">      }</a>
+<span class="sourceLineNo">297</span><a id="line.297">      // when we connect to the DS, resume logging</a>
+<span class="sourceLineNo">298</span><a id="line.298">      timeoutCount = 0;</a>
+<span class="sourceLineNo">299</span><a id="line.299">      if (paused) {</a>
+<span class="sourceLineNo">300</span><a id="line.300">        paused = false;</a>
+<span class="sourceLineNo">301</span><a id="line.301">        m_log.resume();</a>
+<span class="sourceLineNo">302</span><a id="line.302">      }</a>
+<span class="sourceLineNo">303</span><a id="line.303"></a>
+<span class="sourceLineNo">304</span><a id="line.304">      if (!dsRenamed) {</a>
+<span class="sourceLineNo">305</span><a id="line.305">        // track DS attach</a>
+<span class="sourceLineNo">306</span><a id="line.306">        if (DriverStation.isDSAttached()) {</a>
+<span class="sourceLineNo">307</span><a id="line.307">          dsAttachCount++;</a>
+<span class="sourceLineNo">308</span><a id="line.308">        } else {</a>
+<span class="sourceLineNo">309</span><a id="line.309">          dsAttachCount = 0;</a>
+<span class="sourceLineNo">310</span><a id="line.310">        }</a>
+<span class="sourceLineNo">311</span><a id="line.311">        if (dsAttachCount &gt; 50) { // 1 second</a>
+<span class="sourceLineNo">312</span><a id="line.312">          LocalDateTime now = LocalDateTime.now(m_utc);</a>
+<span class="sourceLineNo">313</span><a id="line.313">          if (now.getYear() &gt; 2000) {</a>
+<span class="sourceLineNo">314</span><a id="line.314">            // assume local clock is now synchronized to DS, so rename based on</a>
+<span class="sourceLineNo">315</span><a id="line.315">            // local time</a>
+<span class="sourceLineNo">316</span><a id="line.316">            m_log.setFilename("FRC_" + m_timeFormatter.format(now) + ".wpilog");</a>
+<span class="sourceLineNo">317</span><a id="line.317">            dsRenamed = true;</a>
+<span class="sourceLineNo">318</span><a id="line.318">          } else {</a>
+<span class="sourceLineNo">319</span><a id="line.319">            dsAttachCount = 0; // wait a bit and try again</a>
+<span class="sourceLineNo">320</span><a id="line.320">          }</a>
+<span class="sourceLineNo">321</span><a id="line.321">        }</a>
+<span class="sourceLineNo">322</span><a id="line.322">      }</a>
+<span class="sourceLineNo">323</span><a id="line.323"></a>
+<span class="sourceLineNo">324</span><a id="line.324">      if (!fmsRenamed) {</a>
+<span class="sourceLineNo">325</span><a id="line.325">        // track FMS attach</a>
+<span class="sourceLineNo">326</span><a id="line.326">        if (DriverStation.isFMSAttached()) {</a>
+<span class="sourceLineNo">327</span><a id="line.327">          fmsAttachCount++;</a>
+<span class="sourceLineNo">328</span><a id="line.328">        } else {</a>
+<span class="sourceLineNo">329</span><a id="line.329">          fmsAttachCount = 0;</a>
+<span class="sourceLineNo">330</span><a id="line.330">        }</a>
+<span class="sourceLineNo">331</span><a id="line.331">        if (fmsAttachCount &gt; 100) { // 2 seconds</a>
+<span class="sourceLineNo">332</span><a id="line.332">          // match info comes through TCP, so we need to double-check we've</a>
+<span class="sourceLineNo">333</span><a id="line.333">          // actually received it</a>
+<span class="sourceLineNo">334</span><a id="line.334">          DriverStation.MatchType matchType = DriverStation.getMatchType();</a>
+<span class="sourceLineNo">335</span><a id="line.335">          if (matchType != DriverStation.MatchType.None) {</a>
+<span class="sourceLineNo">336</span><a id="line.336">            // rename per match info</a>
+<span class="sourceLineNo">337</span><a id="line.337">            char matchTypeChar;</a>
+<span class="sourceLineNo">338</span><a id="line.338">            switch (matchType) {</a>
+<span class="sourceLineNo">339</span><a id="line.339">              case Practice:</a>
+<span class="sourceLineNo">340</span><a id="line.340">                matchTypeChar = 'P';</a>
+<span class="sourceLineNo">341</span><a id="line.341">                break;</a>
+<span class="sourceLineNo">342</span><a id="line.342">              case Qualification:</a>
+<span class="sourceLineNo">343</span><a id="line.343">                matchTypeChar = 'Q';</a>
+<span class="sourceLineNo">344</span><a id="line.344">                break;</a>
+<span class="sourceLineNo">345</span><a id="line.345">              case Elimination:</a>
+<span class="sourceLineNo">346</span><a id="line.346">                matchTypeChar = 'E';</a>
+<span class="sourceLineNo">347</span><a id="line.347">                break;</a>
+<span class="sourceLineNo">348</span><a id="line.348">              default:</a>
+<span class="sourceLineNo">349</span><a id="line.349">                matchTypeChar = '_';</a>
+<span class="sourceLineNo">350</span><a id="line.350">                break;</a>
+<span class="sourceLineNo">351</span><a id="line.351">            }</a>
+<span class="sourceLineNo">352</span><a id="line.352">            m_log.setFilename(</a>
+<span class="sourceLineNo">353</span><a id="line.353">                "FRC_"</a>
+<span class="sourceLineNo">354</span><a id="line.354">                    + m_timeFormatter.format(LocalDateTime.now(m_utc))</a>
+<span class="sourceLineNo">355</span><a id="line.355">                    + "_"</a>
+<span class="sourceLineNo">356</span><a id="line.356">                    + DriverStation.getEventName()</a>
+<span class="sourceLineNo">357</span><a id="line.357">                    + "_"</a>
+<span class="sourceLineNo">358</span><a id="line.358">                    + matchTypeChar</a>
+<span class="sourceLineNo">359</span><a id="line.359">                    + DriverStation.getMatchNumber()</a>
+<span class="sourceLineNo">360</span><a id="line.360">                    + ".wpilog");</a>
+<span class="sourceLineNo">361</span><a id="line.361">            fmsRenamed = true;</a>
+<span class="sourceLineNo">362</span><a id="line.362">            dsRenamed = true; // don't override FMS rename</a>
+<span class="sourceLineNo">363</span><a id="line.363">          }</a>
+<span class="sourceLineNo">364</span><a id="line.364">        }</a>
+<span class="sourceLineNo">365</span><a id="line.365">      }</a>
+<span class="sourceLineNo">366</span><a id="line.366"></a>
+<span class="sourceLineNo">367</span><a id="line.367">      // Write system time every ~5 seconds</a>
+<span class="sourceLineNo">368</span><a id="line.368">      sysTimeCount++;</a>
+<span class="sourceLineNo">369</span><a id="line.369">      if (sysTimeCount &gt;= 250) {</a>
+<span class="sourceLineNo">370</span><a id="line.370">        sysTimeCount = 0;</a>
+<span class="sourceLineNo">371</span><a id="line.371">        sysTimeEntry.append(WPIUtilJNI.getSystemTime(), WPIUtilJNI.now());</a>
+<span class="sourceLineNo">372</span><a id="line.372">      }</a>
+<span class="sourceLineNo">373</span><a id="line.373">    }</a>
+<span class="sourceLineNo">374</span><a id="line.374">  }</a>
+<span class="sourceLineNo">375</span><a id="line.375">}</a>
 
 
 

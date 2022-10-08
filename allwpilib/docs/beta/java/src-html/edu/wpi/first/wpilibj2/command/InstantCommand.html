@@ -16,48 +16,32 @@
 <span class="sourceLineNo">004</span><a id="line.4"></a>
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.wpilibj2.command;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
-<span class="sourceLineNo">007</span><a id="line.7">import static edu.wpi.first.wpilibj.util.ErrorMessages.requireNonNullParam;</a>
-<span class="sourceLineNo">008</span><a id="line.8"></a>
-<span class="sourceLineNo">009</span><a id="line.9">/**</a>
-<span class="sourceLineNo">010</span><a id="line.10"> * A Command that runs instantly; it will initialize, execute once, and end on the same iteration of</a>
-<span class="sourceLineNo">011</span><a id="line.11"> * the scheduler. Users can either pass in a Runnable and a set of requirements, or else subclass</a>
-<span class="sourceLineNo">012</span><a id="line.12"> * this command if desired.</a>
-<span class="sourceLineNo">013</span><a id="line.13"> *</a>
-<span class="sourceLineNo">014</span><a id="line.14"> * &lt;p&gt;This class is provided by the NewCommands VendorDep</a>
-<span class="sourceLineNo">015</span><a id="line.15"> */</a>
-<span class="sourceLineNo">016</span><a id="line.16">public class InstantCommand extends CommandBase {</a>
-<span class="sourceLineNo">017</span><a id="line.17">  private final Runnable m_toRun;</a>
-<span class="sourceLineNo">018</span><a id="line.18"></a>
-<span class="sourceLineNo">019</span><a id="line.19">  /**</a>
-<span class="sourceLineNo">020</span><a id="line.20">   * Creates a new InstantCommand that runs the given Runnable with the given requirements.</a>
-<span class="sourceLineNo">021</span><a id="line.21">   *</a>
-<span class="sourceLineNo">022</span><a id="line.22">   * @param toRun the Runnable to run</a>
-<span class="sourceLineNo">023</span><a id="line.23">   * @param requirements the subsystems required by this command</a>
-<span class="sourceLineNo">024</span><a id="line.24">   */</a>
-<span class="sourceLineNo">025</span><a id="line.25">  public InstantCommand(Runnable toRun, Subsystem... requirements) {</a>
-<span class="sourceLineNo">026</span><a id="line.26">    m_toRun = requireNonNullParam(toRun, "toRun", "InstantCommand");</a>
-<span class="sourceLineNo">027</span><a id="line.27"></a>
-<span class="sourceLineNo">028</span><a id="line.28">    addRequirements(requirements);</a>
-<span class="sourceLineNo">029</span><a id="line.29">  }</a>
-<span class="sourceLineNo">030</span><a id="line.30"></a>
-<span class="sourceLineNo">031</span><a id="line.31">  /**</a>
-<span class="sourceLineNo">032</span><a id="line.32">   * Creates a new InstantCommand with a Runnable that does nothing. Useful only as a no-arg</a>
-<span class="sourceLineNo">033</span><a id="line.33">   * constructor to call implicitly from subclass constructors.</a>
-<span class="sourceLineNo">034</span><a id="line.34">   */</a>
-<span class="sourceLineNo">035</span><a id="line.35">  public InstantCommand() {</a>
-<span class="sourceLineNo">036</span><a id="line.36">    m_toRun = () -&gt; {};</a>
-<span class="sourceLineNo">037</span><a id="line.37">  }</a>
-<span class="sourceLineNo">038</span><a id="line.38"></a>
-<span class="sourceLineNo">039</span><a id="line.39">  @Override</a>
-<span class="sourceLineNo">040</span><a id="line.40">  public void initialize() {</a>
-<span class="sourceLineNo">041</span><a id="line.41">    m_toRun.run();</a>
-<span class="sourceLineNo">042</span><a id="line.42">  }</a>
-<span class="sourceLineNo">043</span><a id="line.43"></a>
-<span class="sourceLineNo">044</span><a id="line.44">  @Override</a>
-<span class="sourceLineNo">045</span><a id="line.45">  public final boolean isFinished() {</a>
-<span class="sourceLineNo">046</span><a id="line.46">    return true;</a>
-<span class="sourceLineNo">047</span><a id="line.47">  }</a>
-<span class="sourceLineNo">048</span><a id="line.48">}</a>
+<span class="sourceLineNo">007</span><a id="line.7">/**</a>
+<span class="sourceLineNo">008</span><a id="line.8"> * A Command that runs instantly; it will initialize, execute once, and end on the same iteration of</a>
+<span class="sourceLineNo">009</span><a id="line.9"> * the scheduler. Users can either pass in a Runnable and a set of requirements, or else subclass</a>
+<span class="sourceLineNo">010</span><a id="line.10"> * this command if desired.</a>
+<span class="sourceLineNo">011</span><a id="line.11"> *</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * &lt;p&gt;This class is provided by the NewCommands VendorDep</a>
+<span class="sourceLineNo">013</span><a id="line.13"> */</a>
+<span class="sourceLineNo">014</span><a id="line.14">public class InstantCommand extends FunctionalCommand {</a>
+<span class="sourceLineNo">015</span><a id="line.15">  /**</a>
+<span class="sourceLineNo">016</span><a id="line.16">   * Creates a new InstantCommand that runs the given Runnable with the given requirements.</a>
+<span class="sourceLineNo">017</span><a id="line.17">   *</a>
+<span class="sourceLineNo">018</span><a id="line.18">   * @param toRun the Runnable to run</a>
+<span class="sourceLineNo">019</span><a id="line.19">   * @param requirements the subsystems required by this command</a>
+<span class="sourceLineNo">020</span><a id="line.20">   */</a>
+<span class="sourceLineNo">021</span><a id="line.21">  public InstantCommand(Runnable toRun, Subsystem... requirements) {</a>
+<span class="sourceLineNo">022</span><a id="line.22">    super(toRun, () -&gt; {}, interrupted -&gt; {}, () -&gt; true, requirements);</a>
+<span class="sourceLineNo">023</span><a id="line.23">  }</a>
+<span class="sourceLineNo">024</span><a id="line.24"></a>
+<span class="sourceLineNo">025</span><a id="line.25">  /**</a>
+<span class="sourceLineNo">026</span><a id="line.26">   * Creates a new InstantCommand with a Runnable that does nothing. Useful only as a no-arg</a>
+<span class="sourceLineNo">027</span><a id="line.27">   * constructor to call implicitly from subclass constructors.</a>
+<span class="sourceLineNo">028</span><a id="line.28">   */</a>
+<span class="sourceLineNo">029</span><a id="line.29">  public InstantCommand() {</a>
+<span class="sourceLineNo">030</span><a id="line.30">    this(() -&gt; {});</a>
+<span class="sourceLineNo">031</span><a id="line.31">  }</a>
+<span class="sourceLineNo">032</span><a id="line.32">}</a>
 
 
 
