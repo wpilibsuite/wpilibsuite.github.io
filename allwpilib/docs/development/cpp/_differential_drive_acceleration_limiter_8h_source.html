@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-4-g1497665</span>
    </div>
   </td>
  </tr>
@@ -137,27 +137,46 @@ $(document).ready(function(){initNavTree('_differential_drive_acceleration_limit
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      units::radians_per_second_squared_t maxAngularAccel);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * Returns the next voltage pair subject to acceleraiton constraints.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * Constructs a DifferentialDriveAccelerationLimiter.</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param leftVelocity The left wheel velocity.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param rightVelocity The right wheel velocity.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   * @param leftVoltage The unconstrained left motor voltage.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * @param rightVoltage The unconstrained right motor voltage.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * @return The constrained wheel voltages.</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">   52</a></span>  <a class="code hl_struct" href="structfrc_1_1_differential_drive_wheel_voltages.html">DifferentialDriveWheelVoltages</a> <a class="code hl_function" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">Calculate</a>(</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      units::meters_per_second_t leftVelocity,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      units::meters_per_second_t rightVelocity, units::volt_t leftVoltage,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      units::volt_t rightVoltage);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_class" href="classfrc_1_1_linear_system.html">LinearSystem&lt;2, 2, 2&gt;</a> m_system;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  units::meter_t m_trackwidth;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  units::meters_per_second_squared_t m_maxLinearAccel;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  units::radians_per_second_squared_t m_maxAngularAccel;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param system The differential drive dynamics.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param trackwidth The distance between the differential drive&#39;s left and</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   *                   right wheels.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * @param minLinearAccel The minimum (most negative) linear acceleration.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * @param maxLinearAccel The maximum (most positive) linear acceleration.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * @param maxAngularAccel The maximum angular acceleration.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * @throws std::invalid_argument if minimum linear acceleration is greater</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * than maximum linear acceleration</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a88b3a466a6e4047098895b7e1ea90ab8">   55</a></span>  <a class="code hl_function" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a88b3a466a6e4047098895b7e1ea90ab8">DifferentialDriveAccelerationLimiter</a>(</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <a class="code hl_class" href="classfrc_1_1_linear_system.html">LinearSystem&lt;2, 2, 2&gt;</a> system, units::meter_t trackwidth,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      units::meters_per_second_squared_t minLinearAccel,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      units::meters_per_second_squared_t maxLinearAccel,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      units::radians_per_second_squared_t maxAngularAccel);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"></span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   * Returns the next voltage pair subject to acceleraiton constraints.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   * @param leftVelocity The left wheel velocity.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   * @param rightVelocity The right wheel velocity.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * @param leftVoltage The unconstrained left motor voltage.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * @param rightVoltage The unconstrained right motor voltage.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   * @return The constrained wheel voltages.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">   70</a></span>  <a class="code hl_struct" href="structfrc_1_1_differential_drive_wheel_voltages.html">DifferentialDriveWheelVoltages</a> <a class="code hl_function" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">Calculate</a>(</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      units::meters_per_second_t leftVelocity,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      units::meters_per_second_t rightVelocity, units::volt_t leftVoltage,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      units::volt_t rightVoltage);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_class" href="classfrc_1_1_linear_system.html">LinearSystem&lt;2, 2, 2&gt;</a> m_system;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  units::meter_t m_trackwidth;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  units::meters_per_second_squared_t m_minLinearAccel;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  units::meters_per_second_squared_t m_maxLinearAccel;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  units::radians_per_second_squared_t m_maxAngularAccel;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
 <div class="ttc" id="a_differential_drive_wheel_voltages_8h_html"><div class="ttname"><a href="_differential_drive_wheel_voltages_8h.html">DifferentialDriveWheelVoltages.h</a></div></div>
 <div class="ttc" id="a_linear_system_8h_html"><div class="ttname"><a href="_linear_system_8h.html">LinearSystem.h</a></div></div>
@@ -166,6 +185,7 @@ $(document).ready(function(){initNavTree('_differential_drive_acceleration_limit
 <div class="ttc" id="aacceleration_8h_html"><div class="ttname"><a href="acceleration_8h.html">acceleration.h</a></div></div>
 <div class="ttc" id="aangular__acceleration_8h_html"><div class="ttname"><a href="angular__acceleration_8h.html">angular_acceleration.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_differential_drive_acceleration_limiter_html"><div class="ttname"><a href="classfrc_1_1_differential_drive_acceleration_limiter.html">frc::DifferentialDriveAccelerationLimiter</a></div><div class="ttdoc">Filters the provided voltages to limit a differential drive's linear and angular acceleration.</div><div class="ttdef"><b>Definition:</b> DifferentialDriveAccelerationLimiter.h:27</div></div>
+<div class="ttc" id="aclassfrc_1_1_differential_drive_acceleration_limiter_html_a88b3a466a6e4047098895b7e1ea90ab8"><div class="ttname"><a href="classfrc_1_1_differential_drive_acceleration_limiter.html#a88b3a466a6e4047098895b7e1ea90ab8">frc::DifferentialDriveAccelerationLimiter::DifferentialDriveAccelerationLimiter</a></div><div class="ttdeci">DifferentialDriveAccelerationLimiter(LinearSystem&lt; 2, 2, 2 &gt; system, units::meter_t trackwidth, units::meters_per_second_squared_t minLinearAccel, units::meters_per_second_squared_t maxLinearAccel, units::radians_per_second_squared_t maxAngularAccel)</div><div class="ttdoc">Constructs a DifferentialDriveAccelerationLimiter.</div></div>
 <div class="ttc" id="aclassfrc_1_1_differential_drive_acceleration_limiter_html_a8cd5a9c294e11114b653cb7e7e776c20"><div class="ttname"><a href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">frc::DifferentialDriveAccelerationLimiter::Calculate</a></div><div class="ttdeci">DifferentialDriveWheelVoltages Calculate(units::meters_per_second_t leftVelocity, units::meters_per_second_t rightVelocity, units::volt_t leftVoltage, units::volt_t rightVoltage)</div><div class="ttdoc">Returns the next voltage pair subject to acceleraiton constraints.</div></div>
 <div class="ttc" id="aclassfrc_1_1_differential_drive_acceleration_limiter_html_aef5c2c2c9e4127c49a3797f2e5e708b2"><div class="ttname"><a href="classfrc_1_1_differential_drive_acceleration_limiter.html#aef5c2c2c9e4127c49a3797f2e5e708b2">frc::DifferentialDriveAccelerationLimiter::DifferentialDriveAccelerationLimiter</a></div><div class="ttdeci">DifferentialDriveAccelerationLimiter(LinearSystem&lt; 2, 2, 2 &gt; system, units::meter_t trackwidth, units::meters_per_second_squared_t maxLinearAccel, units::radians_per_second_squared_t maxAngularAccel)</div><div class="ttdoc">Constructs a DifferentialDriveAccelerationLimiter.</div></div>
 <div class="ttc" id="aclassfrc_1_1_linear_system_html"><div class="ttname"><a href="classfrc_1_1_linear_system.html">frc::LinearSystem&lt; 2, 2, 2 &gt;</a></div></div>
@@ -180,7 +200,7 @@ $(document).ready(function(){initNavTree('_differential_drive_acceleration_limit
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_901369ca5399cfb92b9538222311796d.html">controller</a></li><li class="navelem"><a class="el" href="_differential_drive_acceleration_limiter_8h.html">DifferentialDriveAccelerationLimiter.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:04:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 10 2022 16:03:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

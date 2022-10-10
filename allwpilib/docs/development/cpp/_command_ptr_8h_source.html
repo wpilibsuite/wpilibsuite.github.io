@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-4-g1497665</span>
    </div>
   </td>
  </tr>
@@ -103,203 +103,280 @@ $(document).ready(function(){initNavTree('_command_ptr_8h_source.html',''); init
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_command_8h.html">frc2/command/Command.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc2.html">frc2</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> final {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a71c97eed584d53d9373eb697007cbbb1">   18</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a71c97eed584d53d9373eb697007cbbb1">CommandPtr</a>(std::unique_ptr&lt;Command&gt;&amp;&amp; command)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      : m_ptr(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(command)) {}</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;std::is_base_of_v&lt;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                         <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>, std::remove_reference_t&lt;T&gt;&gt;&gt;&gt;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a5f1fb9b812f7f1f8fdde9f92cdad80d9">   23</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a5f1fb9b812f7f1f8fdde9f92cdad80d9">CommandPtr</a>(T&amp;&amp; command)</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      : <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::make_unique&lt;<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_typedef" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a>&lt;T&gt;&gt;(</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">forward</a>&lt;T&gt;(command))) {}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a295f66213edd114a77e3487e95a20f2b">   27</a></span>  <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a295f66213edd114a77e3487e95a20f2b">CommandPtr</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#acf315b2f0197ccd414fc20d9e25259e6">   28</a></span>  <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp; <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#acf315b2f0197ccd414fc20d9e25259e6">operator=</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"></span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * Decorates this command to run repeatedly, restarting it when it ends, until</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * this command is interrupted. The decorated command can still be canceled.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * @return the decorated command</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694">   36</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694">Repeatedly</a>() &amp;&amp;;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * Decorates this command to run endlessly, ignoring its ordinary end</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * conditions. The decorated command can still be interrupted or canceled.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   * @return the decorated command</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730">   44</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730">Endlessly</a>() &amp;&amp;;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * Decorates this command to run &quot;by proxy&quot; by wrapping it in a</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   * ProxyScheduleCommand. This is useful for &quot;forking off&quot; from command groups</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * when the user does not wish to extend the command&#39;s requirements to the</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * entire command group.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc2.html">frc2</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * semantics. Commands should only be stored and passed around when held in a</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * CommandPtr instance. For more info, see</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * https://github.com/wpilibsuite/allwpilib/issues/4303.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * Various classes in the command-based library accept a</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * std::unique_ptr&lt;Command&gt;, use CommandPtr::Unwrap to convert.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * CommandPtr::UnwrapVector does the same for vectors.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> final {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a71c97eed584d53d9373eb697007cbbb1">   28</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a71c97eed584d53d9373eb697007cbbb1">CommandPtr</a>(std::unique_ptr&lt;Command&gt;&amp;&amp; command)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      : m_ptr(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(command)) {}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">template</span> &lt;<span class="keyword">class </span>T, <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;std::is_base_of_v&lt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                         <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>, std::remove_reference_t&lt;T&gt;&gt;&gt;&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a5f1fb9b812f7f1f8fdde9f92cdad80d9">   33</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a5f1fb9b812f7f1f8fdde9f92cdad80d9">CommandPtr</a>(T&amp;&amp; command)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      : <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::make_unique&lt;<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_typedef" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a>&lt;T&gt;&gt;(</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">forward</a>&lt;T&gt;(command))) {}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a295f66213edd114a77e3487e95a20f2b">   37</a></span>  <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a295f66213edd114a77e3487e95a20f2b">CommandPtr</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#acf315b2f0197ccd414fc20d9e25259e6">   38</a></span>  <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp; <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#acf315b2f0197ccd414fc20d9e25259e6">operator=</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * Decorates this command to run repeatedly, restarting it when it ends, until</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   * this command is interrupted. The decorated command can still be canceled.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694">   46</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694">Repeatedly</a>() &amp;&amp;;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * Decorates this command to run endlessly, ignoring its ordinary end</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * conditions. The decorated command can still be interrupted or canceled.</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * @return the decorated command</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">   54</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">AsProxy</a>() &amp;&amp;;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730">   54</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730">Endlessly</a>() &amp;&amp;;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * Decorates this command to run or stop when disabled.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * @param doesRunWhenDisabled true to run when disabled.</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   * @return the decorated command</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057">   62</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057">IgnoringDisable</a>(<span class="keywordtype">bool</span> doesRunWhenDisabled) &amp;&amp;;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   * Decorates this command to run or stop when disabled.</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * @param interruptBehavior true to run when disabled.</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   * @return the decorated command</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a5855e3c9041001b4a0774c7abf3aef58">   70</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a5855e3c9041001b4a0774c7abf3aef58">WithInterruptBehavior</a>(</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <a class="code hl_enumeration" href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">Command::InterruptionBehavior</a> interruptBehavior) &amp;&amp;;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"></span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   * Decorates this command with a runnable to run after the command finishes.</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   * @param toRun the Runnable to run</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   * @param requirements the required subsystems</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * Decorates this command to run &quot;by proxy&quot; by wrapping it in a</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   * ProxyScheduleCommand. This is useful for &quot;forking off&quot; from command groups</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * when the user does not wish to extend the command&#39;s requirements to the</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   * entire command group.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">   64</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">AsProxy</a>() &amp;&amp;;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"></span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * Decorates this command to run or stop when disabled.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * @param doesRunWhenDisabled true to run when disabled.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057">   72</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057">IgnoringDisable</a>(<span class="keywordtype">bool</span> doesRunWhenDisabled) &amp;&amp;;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"></span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   * Decorates this command to run or stop when disabled.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   * @param interruptBehavior true to run when disabled.</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   * @return the decorated command</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a35cdd1f298edf781b9f0ccb828dd242a">   80</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a35cdd1f298edf781b9f0ccb828dd242a">AndThen</a>(</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {}) &amp;&amp;;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * Decorates this command with a runnable to run after the command finishes.</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">   * @param toRun the Runnable to run</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">   * @param requirements the required subsystems</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">   * @return the decorated command</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#aebff80b7aaad64856f1488c2fef6ce0c">   91</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#aebff80b7aaad64856f1488c2fef6ce0c">AndThen</a>(</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      std::initializer_list&lt;Subsystem*&gt; requirements) &amp;&amp;;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"></span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   * Decorates this command with a runnable to run before this command starts.</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   * @param toRun the Runnable to run</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">   * @param requirements the required subsystems</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   * @return the decorated command</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a27bab7a73ea12f1715f2202ba42d1c86">  102</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a27bab7a73ea12f1715f2202ba42d1c86">BeforeStarting</a>(</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      std::initializer_list&lt;Subsystem*&gt; requirements) &amp;&amp;;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"></span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   * Decorates this command with a runnable to run before this command starts.</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   * @param toRun the Runnable to run</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">   * @param requirements the required subsystems</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a5855e3c9041001b4a0774c7abf3aef58">   80</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a5855e3c9041001b4a0774c7abf3aef58">WithInterruptBehavior</a>(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <a class="code hl_enumeration" href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">Command::InterruptionBehavior</a> interruptBehavior) &amp;&amp;;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"></span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">   * Decorates this command with a runnable to run after the command finishes.</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   * @param toRun the Runnable to run</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">   * @param requirements the required subsystems</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a35cdd1f298edf781b9f0ccb828dd242a">   90</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a35cdd1f298edf781b9f0ccb828dd242a">AndThen</a>(</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {}) &amp;&amp;;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">   * Decorates this command with a runnable to run after the command finishes.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">   * @param toRun the Runnable to run</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   * @param requirements the required subsystems</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#aebff80b7aaad64856f1488c2fef6ce0c">  101</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#aebff80b7aaad64856f1488c2fef6ce0c">AndThen</a>(</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      std::initializer_list&lt;Subsystem*&gt; requirements) &amp;&amp;;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"></span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   * Decorates this command with a set of commands to run after it in sequence.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   * Often more convenient/less-verbose than constructing a new {@link</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   * SequentialCommandGroup} explicitly.</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">   * @param next the commands to run next</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   * @return the decorated command</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#ac734c6173823c0074ba99b6759ba83e6">  113</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#ac734c6173823c0074ba99b6759ba83e6">BeforeStarting</a>(</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {}) &amp;&amp;;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"></span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   * Decorates this command with a timeout.  If the specified timeout is</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   * exceeded before the command finishes normally, the command will be</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * interrupted and un-scheduled.  Note that the timeout only applies to the</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   * command returned by this method; the calling command is not itself changed.</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   * @param duration the timeout duration</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   * @return the command with the timeout added</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0">  126</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0">WithTimeout</a>(units::second_t duration) &amp;&amp;;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"></span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   * Decorates this command with an interrupt condition.  If the specified</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   * condition becomes true before the command finishes normally, the command</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   * will be interrupted and un-scheduled. Note that this only applies to the</span></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">   * command returned by this method; the calling command is not itself changed.</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">   * @param condition the interrupt condition</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   * @return the command with the interrupt condition added</span></div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a4ffddf195a71e71d80e62df95fffdfcf">  137</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a4ffddf195a71e71d80e62df95fffdfcf">Until</a>(std::function&lt;<span class="keywordtype">bool</span>()&gt; condition) &amp;&amp;;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment"></span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">   * Decorates this command to only run if this condition is not met. If the</span></div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">   * command is already running and the condition changes to true, the command</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">   * will not stop running. The requirements of this command will be kept for</span></div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">   * the new conditonal command.</span></div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   * @param condition the condition that will prevent the command from running</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">   * @return the decorated command</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a2be7f65d40f68581104ab1f6a1ba5e93">  148</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a2be7f65d40f68581104ab1f6a1ba5e93">Unless</a>(std::function&lt;<span class="keywordtype">bool</span>()&gt; condition) &amp;&amp;;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment"></span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">   * Get a raw pointer to the held command.</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">  153</a></span>  <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">get</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment"></span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   * Schedules this command.</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">  158</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">Schedule</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment"></span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">   * Cancels this command. Will call End(true). Commands will be canceled</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">   * regardless of interruption behavior.</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a07c720c9016a098e648f7a29dd4f21e0">  164</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a07c720c9016a098e648f7a29dd4f21e0">Cancel</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment"></span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">   * Whether or not the command is currently scheduled. Note that this does not</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">   * detect whether the command is being run by a CommandGroup, only whether it</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">   * is directly being run by the scheduler.</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">   * @return Whether the command is scheduled.</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#ad45dfe80354f94ee4e02017886b63d89">  173</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#ad45dfe80354f94ee4e02017886b63d89">IsScheduled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment"></span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">   * Whether the command requires a given subsystem.  Named &quot;HasRequirement&quot;</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">   * rather than &quot;requires&quot; to avoid confusion with Command::Requires(Subsystem)</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">   * -- this may be able to be changed in a few years.</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">   * @param requirement the subsystem to inquire about</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">   * @return whether the subsystem is required</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">  183</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">HasRequirement</a>(<a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* requirement) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  std::unique_ptr&lt;Command&gt; m_ptr;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>};</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a4ea952f52baf9fb157bb42801be602c0">  113</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a4ea952f52baf9fb157bb42801be602c0">AndThen</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; next) &amp;&amp;;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"></span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   * Decorates this command with a runnable to run before this command starts.</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   * @param toRun the Runnable to run</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   * @param requirements the required subsystems</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a27bab7a73ea12f1715f2202ba42d1c86">  122</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a27bab7a73ea12f1715f2202ba42d1c86">BeforeStarting</a>(</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      std::initializer_list&lt;Subsystem*&gt; requirements) &amp;&amp;;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment"></span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   * Decorates this command with a runnable to run before this command starts.</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   * @param toRun the Runnable to run</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   * @param requirements the required subsystems</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#ac734c6173823c0074ba99b6759ba83e6">  133</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#ac734c6173823c0074ba99b6759ba83e6">BeforeStarting</a>(</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {}) &amp;&amp;;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"></span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">   * Decorates this command with another command to run before this command</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">   * starts.</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">   * @param before the command to run before this one</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a61e9a735d7b48dafd4b7499af8ff0c23">  144</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a61e9a735d7b48dafd4b7499af8ff0c23">BeforeStarting</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; before) &amp;&amp;;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment"></span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">   * Decorates this command with a timeout.  If the specified timeout is</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">   * exceeded before the command finishes normally, the command will be</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">   * interrupted and un-scheduled.  Note that the timeout only applies to the</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">   * command returned by this method; the calling command is not itself changed.</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">   * @param duration the timeout duration</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">   * @return the command with the timeout added</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0">  155</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0">WithTimeout</a>(units::second_t duration) &amp;&amp;;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"></span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   * Decorates this command with an interrupt condition.  If the specified</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">   * condition becomes true before the command finishes normally, the command</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">   * will be interrupted and un-scheduled. Note that this only applies to the</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">   * command returned by this method; the calling command is not itself changed.</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">   * @param condition the interrupt condition</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">   * @return the command with the interrupt condition added</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a4ffddf195a71e71d80e62df95fffdfcf">  166</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a4ffddf195a71e71d80e62df95fffdfcf">Until</a>(std::function&lt;<span class="keywordtype">bool</span>()&gt; condition) &amp;&amp;;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment"></span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">   * Decorates this command to only run if this condition is not met. If the</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">   * command is already running and the condition changes to true, the command</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">   * will not stop running. The requirements of this command will be kept for</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">   * the new conditonal command.</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">   * @param condition the condition that will prevent the command from running</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a2be7f65d40f68581104ab1f6a1ba5e93">  177</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a2be7f65d40f68581104ab1f6a1ba5e93">Unless</a>(std::function&lt;<span class="keywordtype">bool</span>()&gt; condition) &amp;&amp;;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment"></span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">   * Decorates this command with a set of commands to run parallel to it, ending</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">   * when the calling command ends and interrupting all the others. Often more</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">   * convenient/less-verbose than constructing a new {@link</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">   * ParallelDeadlineGroup} explicitly.</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">   * @param parallel the commands to run in parallel</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#afafe81bf1624eb0ef78b30232087b4bf">  188</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#afafe81bf1624eb0ef78b30232087b4bf">DeadlineWith</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; parallel) &amp;&amp;;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"></span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">   * Decorates this command with a set of commands to run parallel to it, ending</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">   * when the last command ends. Often more convenient/less-verbose than</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">   * constructing a new {@link ParallelCommandGroup} explicitly.</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">   * @param parallel the commands to run in parallel</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a6b9700cd25277a3ac558d63301985f40">  198</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a6b9700cd25277a3ac558d63301985f40">AlongWith</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; parallel) &amp;&amp;;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"></span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">   * Decorates this command with a set of commands to run parallel to it, ending</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">   * when the first command ends. Often more convenient/less-verbose than</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">   * constructing a new {@link ParallelRaceGroup} explicitly.</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">   * @param parallel the commands to run in parallel</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">   * @return the decorated command</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0">  208</a></span>  [[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0">RaceWith</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; parallel) &amp;&amp;;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"></span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">   * Get a raw pointer to the held command.</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">  213</a></span>  <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">get</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment"></span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">   * Convert to the underlying unique_ptr.</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed">  218</a></span>  std::unique_ptr&lt;Command&gt; <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed">Unwrap</a>() &amp;&amp;;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment"></span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">   * Schedules this command.</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">  223</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">Schedule</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment"></span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">   * Cancels this command. Will call End(true). Commands will be canceled</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">   * regardless of interruption behavior.</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a07c720c9016a098e648f7a29dd4f21e0">  229</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a07c720c9016a098e648f7a29dd4f21e0">Cancel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment"></span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">   * Whether or not the command is currently scheduled. Note that this does not</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">   * detect whether the command is being run by a CommandGroup, only whether it</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">   * is directly being run by the scheduler.</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">   * @return Whether the command is scheduled.</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#ad45dfe80354f94ee4e02017886b63d89">  238</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#ad45dfe80354f94ee4e02017886b63d89">IsScheduled</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment"></span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">   * Whether the command requires a given subsystem.  Named &quot;HasRequirement&quot;</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">   * rather than &quot;requires&quot; to avoid confusion with Command::Requires(Subsystem)</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">   * -- this may be able to be changed in a few years.</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">   * @param requirement the subsystem to inquire about</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">   * @return whether the subsystem is required</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">  248</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">HasRequirement</a>(<a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* requirement) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment"></span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">   * Convert a vector of CommandPtr objects to their underlying unique_ptrs.</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">  253</a></span>  <span class="keyword">static</span> std::vector&lt;std::unique_ptr&lt;Command&gt;&gt; <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">UnwrapVector</a>(</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>      std::vector&lt;CommandPtr&gt;&amp;&amp; vec);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  std::unique_ptr&lt;Command&gt; m_ptr;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>};</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_command_8h_html"><div class="ttname"><a href="_command_8h.html">Command.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html"><div class="ttname"><a href="classfrc2_1_1_command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:48</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_ae1917498fac57d1330c27405cdc80c48"><div class="ttname"><a href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">frc2::Command::InterruptionBehavior</a></div><div class="ttdeci">InterruptionBehavior</div><div class="ttdoc">An enum describing the command's behavior when another command with a shared requirement is scheduled...</div><div class="ttdef"><b>Definition:</b> Command.h:105</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_ptr_html"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html">frc2::CommandPtr</a></div><div class="ttdef"><b>Definition:</b> CommandPtr.h:16</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html">frc2::CommandPtr</a></div><div class="ttdoc">A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.</div><div class="ttdef"><b>Definition:</b> CommandPtr.h:26</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a0774dd503e82b8c40edd68bfd393b6eb"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">frc2::CommandPtr::HasRequirement</a></div><div class="ttdeci">bool HasRequirement(Subsystem *requirement) const</div><div class="ttdoc">Whether the command requires a given subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a079b63fc68212d4a3b02b332f192a1e2"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">frc2::CommandPtr::get</a></div><div class="ttdeci">Command * get() const</div><div class="ttdoc">Get a raw pointer to the held command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a07c720c9016a098e648f7a29dd4f21e0"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a07c720c9016a098e648f7a29dd4f21e0">frc2::CommandPtr::Cancel</a></div><div class="ttdeci">void Cancel() const</div><div class="ttdoc">Cancels this command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a172d7875d6cbf4d4c56e925a1eb37fed"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed">frc2::CommandPtr::Unwrap</a></div><div class="ttdeci">std::unique_ptr&lt; Command &gt; Unwrap() &amp;&amp;</div><div class="ttdoc">Convert to the underlying unique_ptr.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a27bab7a73ea12f1715f2202ba42d1c86"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a27bab7a73ea12f1715f2202ba42d1c86">frc2::CommandPtr::BeforeStarting</a></div><div class="ttdeci">CommandPtr BeforeStarting(std::function&lt; void()&gt; toRun, std::initializer_list&lt; Subsystem * &gt; requirements) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run before this command starts.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a295f66213edd114a77e3487e95a20f2b"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a295f66213edd114a77e3487e95a20f2b">frc2::CommandPtr::CommandPtr</a></div><div class="ttdeci">CommandPtr(CommandPtr &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a2be7f65d40f68581104ab1f6a1ba5e93"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a2be7f65d40f68581104ab1f6a1ba5e93">frc2::CommandPtr::Unless</a></div><div class="ttdeci">CommandPtr Unless(std::function&lt; bool()&gt; condition) &amp;&amp;</div><div class="ttdoc">Decorates this command to only run if this condition is not met.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a35cdd1f298edf781b9f0ccb828dd242a"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a35cdd1f298edf781b9f0ccb828dd242a">frc2::CommandPtr::AndThen</a></div><div class="ttdeci">CommandPtr AndThen(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={}) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run after the command finishes.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a4d6c1761cef10bb79a727e43e89643d0"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0">frc2::CommandPtr::RaceWith</a></div><div class="ttdeci">CommandPtr RaceWith(CommandPtr &amp;&amp;parallel) &amp;&amp;</div><div class="ttdoc">Decorates this command with a set of commands to run parallel to it, ending when the first command en...</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a4ea952f52baf9fb157bb42801be602c0"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a4ea952f52baf9fb157bb42801be602c0">frc2::CommandPtr::AndThen</a></div><div class="ttdeci">CommandPtr AndThen(CommandPtr &amp;&amp;next) &amp;&amp;</div><div class="ttdoc">Decorates this command with a set of commands to run after it in sequence.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a4ffddf195a71e71d80e62df95fffdfcf"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a4ffddf195a71e71d80e62df95fffdfcf">frc2::CommandPtr::Until</a></div><div class="ttdeci">CommandPtr Until(std::function&lt; bool()&gt; condition) &amp;&amp;</div><div class="ttdoc">Decorates this command with an interrupt condition.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a51bba456731cdeab745fb14b6f4c7057"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057">frc2::CommandPtr::IgnoringDisable</a></div><div class="ttdeci">CommandPtr IgnoringDisable(bool doesRunWhenDisabled) &amp;&amp;</div><div class="ttdoc">Decorates this command to run or stop when disabled.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a5855e3c9041001b4a0774c7abf3aef58"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a5855e3c9041001b4a0774c7abf3aef58">frc2::CommandPtr::WithInterruptBehavior</a></div><div class="ttdeci">CommandPtr WithInterruptBehavior(Command::InterruptionBehavior interruptBehavior) &amp;&amp;</div><div class="ttdoc">Decorates this command to run or stop when disabled.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a5f1fb9b812f7f1f8fdde9f92cdad80d9"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a5f1fb9b812f7f1f8fdde9f92cdad80d9">frc2::CommandPtr::CommandPtr</a></div><div class="ttdeci">CommandPtr(T &amp;&amp;command)</div><div class="ttdef"><b>Definition:</b> CommandPtr.h:23</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a5f1fb9b812f7f1f8fdde9f92cdad80d9"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a5f1fb9b812f7f1f8fdde9f92cdad80d9">frc2::CommandPtr::CommandPtr</a></div><div class="ttdeci">CommandPtr(T &amp;&amp;command)</div><div class="ttdef"><b>Definition:</b> CommandPtr.h:33</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a61e9a735d7b48dafd4b7499af8ff0c23"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a61e9a735d7b48dafd4b7499af8ff0c23">frc2::CommandPtr::BeforeStarting</a></div><div class="ttdeci">CommandPtr BeforeStarting(CommandPtr &amp;&amp;before) &amp;&amp;</div><div class="ttdoc">Decorates this command with another command to run before this command starts.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a6a2453f7255db9f22f0779074ca0bc8a"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">frc2::CommandPtr::Schedule</a></div><div class="ttdeci">void Schedule() const</div><div class="ttdoc">Schedules this command.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a71c97eed584d53d9373eb697007cbbb1"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a71c97eed584d53d9373eb697007cbbb1">frc2::CommandPtr::CommandPtr</a></div><div class="ttdeci">CommandPtr(std::unique_ptr&lt; Command &gt; &amp;&amp;command)</div><div class="ttdef"><b>Definition:</b> CommandPtr.h:18</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a6b9700cd25277a3ac558d63301985f40"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a6b9700cd25277a3ac558d63301985f40">frc2::CommandPtr::AlongWith</a></div><div class="ttdeci">CommandPtr AlongWith(CommandPtr &amp;&amp;parallel) &amp;&amp;</div><div class="ttdoc">Decorates this command with a set of commands to run parallel to it, ending when the last command end...</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a71c97eed584d53d9373eb697007cbbb1"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a71c97eed584d53d9373eb697007cbbb1">frc2::CommandPtr::CommandPtr</a></div><div class="ttdeci">CommandPtr(std::unique_ptr&lt; Command &gt; &amp;&amp;command)</div><div class="ttdef"><b>Definition:</b> CommandPtr.h:28</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a9badf2eab812a48402e366ec8b6c3f34"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">frc2::CommandPtr::UnwrapVector</a></div><div class="ttdeci">static std::vector&lt; std::unique_ptr&lt; Command &gt; &gt; UnwrapVector(std::vector&lt; CommandPtr &gt; &amp;&amp;vec)</div><div class="ttdoc">Convert a vector of CommandPtr objects to their underlying unique_ptrs.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_aa45784053431393e3277e5bc5ae7f751"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">frc2::CommandPtr::AsProxy</a></div><div class="ttdeci">CommandPtr AsProxy() &amp;&amp;</div><div class="ttdoc">Decorates this command to run &quot;by proxy&quot; by wrapping it in a ProxyScheduleCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_abe3f9d4a4034a6c7bfc55435f0c77730"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730">frc2::CommandPtr::Endlessly</a></div><div class="ttdeci">CommandPtr Endlessly() &amp;&amp;</div><div class="ttdoc">Decorates this command to run endlessly, ignoring its ordinary end conditions.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_ac6b2e1e4f55ed905ec7d189b9288e3d0"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0">frc2::CommandPtr::WithTimeout</a></div><div class="ttdeci">CommandPtr WithTimeout(units::second_t duration) &amp;&amp;</div><div class="ttdoc">Decorates this command with a timeout.</div></div>
@@ -308,6 +385,7 @@ $(document).ready(function(){initNavTree('_command_ptr_8h_source.html',''); init
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_acf315b2f0197ccd414fc20d9e25259e6"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#acf315b2f0197ccd414fc20d9e25259e6">frc2::CommandPtr::operator=</a></div><div class="ttdeci">CommandPtr &amp; operator=(CommandPtr &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_ad45dfe80354f94ee4e02017886b63d89"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#ad45dfe80354f94ee4e02017886b63d89">frc2::CommandPtr::IsScheduled</a></div><div class="ttdeci">bool IsScheduled() const</div><div class="ttdoc">Whether or not the command is currently scheduled.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_aebff80b7aaad64856f1488c2fef6ce0c"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#aebff80b7aaad64856f1488c2fef6ce0c">frc2::CommandPtr::AndThen</a></div><div class="ttdeci">CommandPtr AndThen(std::function&lt; void()&gt; toRun, std::initializer_list&lt; Subsystem * &gt; requirements) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run after the command finishes.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_afafe81bf1624eb0ef78b30232087b4bf"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#afafe81bf1624eb0ef78b30232087b4bf">frc2::CommandPtr::DeadlineWith</a></div><div class="ttdeci">CommandPtr DeadlineWith(CommandPtr &amp;&amp;parallel) &amp;&amp;</div><div class="ttdoc">Decorates this command with a set of commands to run parallel to it, ending when the calling command ...</div></div>
 <div class="ttc" id="aclassfrc2_1_1_subsystem_html"><div class="ttname"><a href="classfrc2_1_1_subsystem.html">frc2::Subsystem</a></div><div class="ttdoc">A robot subsystem.</div><div class="ttdef"><b>Definition:</b> Subsystem.h:38</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
 <div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:298</div></div>
@@ -322,7 +400,7 @@ $(document).ready(function(){initNavTree('_command_ptr_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_command_ptr_8h.html">CommandPtr.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:04:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 10 2022 16:03:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

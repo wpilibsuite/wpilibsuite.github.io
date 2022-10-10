@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-4-g1497665</span>
    </div>
   </td>
  </tr>
@@ -93,10 +93,14 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_command_ptr.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classfrc2_1_1_command_ptr-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc2::CommandPtr Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.  
+ <a href="classfrc2_1_1_command_ptr.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_command_ptr_8h_source.html">frc2/command/CommandPtr.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -132,12 +136,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aebff80b7aaad64856f1488c2fef6ce0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#aebff80b7aaad64856f1488c2fef6ce0c">AndThen</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
 <tr class="memdesc:aebff80b7aaad64856f1488c2fef6ce0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1_command_ptr.html#aebff80b7aaad64856f1488c2fef6ce0c">More...</a><br /></td></tr>
 <tr class="separator:aebff80b7aaad64856f1488c2fef6ce0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea952f52baf9fb157bb42801be602c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a4ea952f52baf9fb157bb42801be602c0">AndThen</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;next) &amp;&amp;</td></tr>
+<tr class="memdesc:a4ea952f52baf9fb157bb42801be602c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a set of commands to run after it in sequence.  <a href="classfrc2_1_1_command_ptr.html#a4ea952f52baf9fb157bb42801be602c0">More...</a><br /></td></tr>
+<tr class="separator:a4ea952f52baf9fb157bb42801be602c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bab7a73ea12f1715f2202ba42d1c86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a27bab7a73ea12f1715f2202ba42d1c86">BeforeStarting</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
 <tr class="memdesc:a27bab7a73ea12f1715f2202ba42d1c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1_command_ptr.html#a27bab7a73ea12f1715f2202ba42d1c86">More...</a><br /></td></tr>
 <tr class="separator:a27bab7a73ea12f1715f2202ba42d1c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac734c6173823c0074ba99b6759ba83e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#ac734c6173823c0074ba99b6759ba83e6">BeforeStarting</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;</td></tr>
 <tr class="memdesc:ac734c6173823c0074ba99b6759ba83e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1_command_ptr.html#ac734c6173823c0074ba99b6759ba83e6">More...</a><br /></td></tr>
 <tr class="separator:ac734c6173823c0074ba99b6759ba83e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e9a735d7b48dafd4b7499af8ff0c23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a61e9a735d7b48dafd4b7499af8ff0c23">BeforeStarting</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;before) &amp;&amp;</td></tr>
+<tr class="memdesc:a61e9a735d7b48dafd4b7499af8ff0c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with another command to run before this command starts.  <a href="classfrc2_1_1_command_ptr.html#a61e9a735d7b48dafd4b7499af8ff0c23">More...</a><br /></td></tr>
+<tr class="separator:a61e9a735d7b48dafd4b7499af8ff0c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b2e1e4f55ed905ec7d189b9288e3d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0">WithTimeout</a> (units::second_t duration) &amp;&amp;</td></tr>
 <tr class="memdesc:ac6b2e1e4f55ed905ec7d189b9288e3d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a timeout.  <a href="classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0">More...</a><br /></td></tr>
 <tr class="separator:ac6b2e1e4f55ed905ec7d189b9288e3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,9 +157,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2be7f65d40f68581104ab1f6a1ba5e93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a2be7f65d40f68581104ab1f6a1ba5e93">Unless</a> (std::function&lt; bool()&gt; condition) &amp;&amp;</td></tr>
 <tr class="memdesc:a2be7f65d40f68581104ab1f6a1ba5e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to only run if this condition is not met.  <a href="classfrc2_1_1_command_ptr.html#a2be7f65d40f68581104ab1f6a1ba5e93">More...</a><br /></td></tr>
 <tr class="separator:a2be7f65d40f68581104ab1f6a1ba5e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafe81bf1624eb0ef78b30232087b4bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#afafe81bf1624eb0ef78b30232087b4bf">DeadlineWith</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;parallel) &amp;&amp;</td></tr>
+<tr class="memdesc:afafe81bf1624eb0ef78b30232087b4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a set of commands to run parallel to it, ending when the calling command ends and interrupting all the others.  <a href="classfrc2_1_1_command_ptr.html#afafe81bf1624eb0ef78b30232087b4bf">More...</a><br /></td></tr>
+<tr class="separator:afafe81bf1624eb0ef78b30232087b4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9700cd25277a3ac558d63301985f40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a6b9700cd25277a3ac558d63301985f40">AlongWith</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;parallel) &amp;&amp;</td></tr>
+<tr class="memdesc:a6b9700cd25277a3ac558d63301985f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a set of commands to run parallel to it, ending when the last command ends.  <a href="classfrc2_1_1_command_ptr.html#a6b9700cd25277a3ac558d63301985f40">More...</a><br /></td></tr>
+<tr class="separator:a6b9700cd25277a3ac558d63301985f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6c1761cef10bb79a727e43e89643d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0">RaceWith</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;parallel) &amp;&amp;</td></tr>
+<tr class="memdesc:a4d6c1761cef10bb79a727e43e89643d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a set of commands to run parallel to it, ending when the first command ends.  <a href="classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0">More...</a><br /></td></tr>
+<tr class="separator:a4d6c1761cef10bb79a727e43e89643d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079b63fc68212d4a3b02b332f192a1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">get</a> () const</td></tr>
 <tr class="memdesc:a079b63fc68212d4a3b02b332f192a1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a raw pointer to the held command.  <a href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">More...</a><br /></td></tr>
 <tr class="separator:a079b63fc68212d4a3b02b332f192a1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a172d7875d6cbf4d4c56e925a1eb37fed"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed">Unwrap</a> () &amp;&amp;</td></tr>
+<tr class="memdesc:a172d7875d6cbf4d4c56e925a1eb37fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to the underlying unique_ptr.  <a href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed">More...</a><br /></td></tr>
+<tr class="separator:a172d7875d6cbf4d4c56e925a1eb37fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a2453f7255db9f22f0779074ca0bc8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">Schedule</a> () const</td></tr>
 <tr class="memdesc:a6a2453f7255db9f22f0779074ca0bc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules this command.  <a href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">More...</a><br /></td></tr>
 <tr class="separator:a6a2453f7255db9f22f0779074ca0bc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,8 +184,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0774dd503e82b8c40edd68bfd393b6eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">HasRequirement</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *requirement) const</td></tr>
 <tr class="memdesc:a0774dd503e82b8c40edd68bfd393b6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command requires a given subsystem.  <a href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">More...</a><br /></td></tr>
 <tr class="separator:a0774dd503e82b8c40edd68bfd393b6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9badf2eab812a48402e366ec8b6c3f34"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">UnwrapVector</a> (std::vector&lt; <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &gt; &amp;&amp;vec)</td></tr>
+<tr class="memdesc:a9badf2eab812a48402e366ec8b6c3f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a vector of <a class="el" href="classfrc2_1_1_command_ptr.html" title="A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.">CommandPtr</a> objects to their underlying unique_ptrs.  <a href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">More...</a><br /></td></tr>
+<tr class="separator:a9badf2eab812a48402e366ec8b6c3f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics. </p>
+<p >Commands should only be stored and passed around when held in a <a class="el" href="classfrc2_1_1_command_ptr.html" title="A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.">CommandPtr</a> instance. For more info, see <a href="https://github.com/wpilibsuite/allwpilib/issues/4303">https://github.com/wpilibsuite/allwpilib/issues/4303</a>.</p>
+<p >Various classes in the command-based library accept a std::unique_ptr&lt;Command&gt;, use <a class="el" href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed" title="Convert to the underlying unique_ptr.">CommandPtr::Unwrap</a> to convert. <a class="el" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34" title="Convert a vector of CommandPtr objects to their underlying unique_ptrs.">CommandPtr::UnwrapVector</a> does the same for vectors. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a71c97eed584d53d9373eb697007cbbb1" name="a71c97eed584d53d9373eb697007cbbb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71c97eed584d53d9373eb697007cbbb1">&#9670;&nbsp;</a></span>CommandPtr() <span class="overload">[1/3]</span></h2>
 
@@ -245,8 +277,64 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6b9700cd25277a3ac558d63301985f40" name="a6b9700cd25277a3ac558d63301985f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9700cd25277a3ac558d63301985f40">&#9670;&nbsp;</a></span>AlongWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::AlongWith </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>parallel</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a set of commands to run parallel to it, ending when the last command ends. </p>
+<p >Often more convenient/less-verbose than constructing a new <code><a class="el" href="classfrc2_1_1_parallel_command_group.html">ParallelCommandGroup</a></code> explicitly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parallel</td><td>the commands to run in parallel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+</div>
+</div>
+<a id="a4ea952f52baf9fb157bb42801be602c0" name="a4ea952f52baf9fb157bb42801be602c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea952f52baf9fb157bb42801be602c0">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::AndThen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>next</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a set of commands to run after it in sequence. </p>
+<p >Often more convenient/less-verbose than constructing a new <code><a class="el" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a></code> explicitly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">next</td><td>the commands to run next </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+</div>
+</div>
 <a id="aebff80b7aaad64856f1488c2fef6ce0c" name="aebff80b7aaad64856f1488c2fef6ce0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebff80b7aaad64856f1488c2fef6ce0c">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aebff80b7aaad64856f1488c2fef6ce0c">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -284,7 +372,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 </div>
 </div>
 <a id="a35cdd1f298edf781b9f0ccb828dd242a" name="a35cdd1f298edf781b9f0ccb828dd242a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35cdd1f298edf781b9f0ccb828dd242a">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a35cdd1f298edf781b9f0ccb828dd242a">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,8 +430,35 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
+<a id="a61e9a735d7b48dafd4b7499af8ff0c23" name="a61e9a735d7b48dafd4b7499af8ff0c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e9a735d7b48dafd4b7499af8ff0c23">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::BeforeStarting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>before</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this command with another command to run before this command starts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">before</td><td>the command to run before this one </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+</div>
+</div>
 <a id="a27bab7a73ea12f1715f2202ba42d1c86" name="a27bab7a73ea12f1715f2202ba42d1c86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27bab7a73ea12f1715f2202ba42d1c86">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a27bab7a73ea12f1715f2202ba42d1c86">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,7 +496,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 </div>
 </div>
 <a id="ac734c6173823c0074ba99b6759ba83e6" name="ac734c6173823c0074ba99b6759ba83e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac734c6173823c0074ba99b6759ba83e6">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac734c6173823c0074ba99b6759ba83e6">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,6 +550,34 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 <p>Cancels this command. </p>
 <p >Will call End(true). Commands will be canceled regardless of interruption behavior. </p>
+
+</div>
+</div>
+<a id="afafe81bf1624eb0ef78b30232087b4bf" name="afafe81bf1624eb0ef78b30232087b4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafe81bf1624eb0ef78b30232087b4bf">&#9670;&nbsp;</a></span>DeadlineWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::DeadlineWith </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>parallel</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a set of commands to run parallel to it, ending when the calling command ends and interrupting all the others. </p>
+<p >Often more convenient/less-verbose than constructing a new <code><a class="el" href="classfrc2_1_1_parallel_deadline_group.html">ParallelDeadlineGroup</a></code> explicitly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parallel</td><td>the commands to run in parallel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
 
 </div>
 </div>
@@ -580,6 +723,34 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
+<a id="a4d6c1761cef10bb79a727e43e89643d0" name="a4d6c1761cef10bb79a727e43e89643d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6c1761cef10bb79a727e43e89643d0">&#9670;&nbsp;</a></span>RaceWith()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::RaceWith </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>parallel</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a set of commands to run parallel to it, ending when the first command ends. </p>
+<p >Often more convenient/less-verbose than constructing a new <code><a class="el" href="classfrc2_1_1_parallel_race_group.html">ParallelRaceGroup</a></code> explicitly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parallel</td><td>the commands to run in parallel </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+</div>
+</div>
 <a id="acc156a5299699110729918c3aa2b2694" name="acc156a5299699110729918c3aa2b2694"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc156a5299699110729918c3aa2b2694">&#9670;&nbsp;</a></span>Repeatedly()</h2>
 
@@ -676,6 +847,53 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
+<a id="a172d7875d6cbf4d4c56e925a1eb37fed" name="a172d7875d6cbf4d4c56e925a1eb37fed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a172d7875d6cbf4d4c56e925a1eb37fed">&#9670;&nbsp;</a></span>Unwrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; frc2::CommandPtr::Unwrap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert to the underlying unique_ptr. </p>
+
+</div>
+</div>
+<a id="a9badf2eab812a48402e366ec8b6c3f34" name="a9badf2eab812a48402e366ec8b6c3f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9badf2eab812a48402e366ec8b6c3f34">&#9670;&nbsp;</a></span>UnwrapVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt; std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &gt; frc2::CommandPtr::UnwrapVector </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>vec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a vector of <a class="el" href="classfrc2_1_1_command_ptr.html" title="A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.">CommandPtr</a> objects to their underlying unique_ptrs. </p>
+
+</div>
+</div>
 <a id="a5855e3c9041001b4a0774c7abf3aef58" name="a5855e3c9041001b4a0774c7abf3aef58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5855e3c9041001b4a0774c7abf3aef58">&#9670;&nbsp;</a></span>WithInterruptBehavior()</h2>
 
@@ -740,7 +958,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:04:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 10 2022 16:04:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

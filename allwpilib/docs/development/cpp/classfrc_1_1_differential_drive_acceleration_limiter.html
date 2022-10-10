@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-1-138-g77301b1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-4-g1497665</span>
    </div>
   </td>
  </tr>
@@ -108,6 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aef5c2c2c9e4127c49a3797f2e5e708b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html#aef5c2c2c9e4127c49a3797f2e5e708b2">DifferentialDriveAccelerationLimiter</a> (<a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; 2, 2, 2 &gt; system, units::meter_t trackwidth, units::meters_per_second_squared_t maxLinearAccel, units::radians_per_second_squared_t maxAngularAccel)</td></tr>
 <tr class="memdesc:aef5c2c2c9e4127c49a3797f2e5e708b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html" title="Filters the provided voltages to limit a differential drive&#39;s linear and angular acceleration.">DifferentialDriveAccelerationLimiter</a>.  <a href="classfrc_1_1_differential_drive_acceleration_limiter.html#aef5c2c2c9e4127c49a3797f2e5e708b2">More...</a><br /></td></tr>
 <tr class="separator:aef5c2c2c9e4127c49a3797f2e5e708b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b3a466a6e4047098895b7e1ea90ab8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a88b3a466a6e4047098895b7e1ea90ab8">DifferentialDriveAccelerationLimiter</a> (<a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; 2, 2, 2 &gt; system, units::meter_t trackwidth, units::meters_per_second_squared_t minLinearAccel, units::meters_per_second_squared_t maxLinearAccel, units::radians_per_second_squared_t maxAngularAccel)</td></tr>
+<tr class="memdesc:a88b3a466a6e4047098895b7e1ea90ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html" title="Filters the provided voltages to limit a differential drive&#39;s linear and angular acceleration.">DifferentialDriveAccelerationLimiter</a>.  <a href="classfrc_1_1_differential_drive_acceleration_limiter.html#a88b3a466a6e4047098895b7e1ea90ab8">More...</a><br /></td></tr>
+<tr class="separator:a88b3a466a6e4047098895b7e1ea90ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd5a9c294e11114b653cb7e7e776c20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_differential_drive_wheel_voltages.html">DifferentialDriveWheelVoltages</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">Calculate</a> (units::meters_per_second_t leftVelocity, units::meters_per_second_t rightVelocity, units::volt_t leftVoltage, units::volt_t rightVoltage)</td></tr>
 <tr class="memdesc:a8cd5a9c294e11114b653cb7e7e776c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next voltage pair subject to acceleraiton constraints.  <a href="classfrc_1_1_differential_drive_acceleration_limiter.html#a8cd5a9c294e11114b653cb7e7e776c20">More...</a><br /></td></tr>
 <tr class="separator:a8cd5a9c294e11114b653cb7e7e776c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <p >The differential drive model can be created via the functions in <a class="el" href="classfrc_1_1_linear_system_id.html">LinearSystemId</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aef5c2c2c9e4127c49a3797f2e5e708b2" name="aef5c2c2c9e4127c49a3797f2e5e708b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef5c2c2c9e4127c49a3797f2e5e708b2">&#9670;&nbsp;</a></span>DifferentialDriveAccelerationLimiter()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5c2c2c9e4127c49a3797f2e5e708b2">&#9670;&nbsp;</a></span>DifferentialDriveAccelerationLimiter() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,6 +164,70 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">trackwidth</td><td>The distance between the differential drive's left and right wheels. </td></tr>
     <tr><td class="paramname">maxLinearAccel</td><td>The maximum linear acceleration. </td></tr>
     <tr><td class="paramname">maxAngularAccel</td><td>The maximum angular acceleration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a88b3a466a6e4047098895b7e1ea90ab8" name="a88b3a466a6e4047098895b7e1ea90ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88b3a466a6e4047098895b7e1ea90ab8">&#9670;&nbsp;</a></span>DifferentialDriveAccelerationLimiter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::DifferentialDriveAccelerationLimiter::DifferentialDriveAccelerationLimiter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; 2, 2, 2 &gt;&#160;</td>
+          <td class="paramname"><em>system</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meter_t&#160;</td>
+          <td class="paramname"><em>trackwidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meters_per_second_squared_t&#160;</td>
+          <td class="paramname"><em>minLinearAccel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meters_per_second_squared_t&#160;</td>
+          <td class="paramname"><em>maxLinearAccel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::radians_per_second_squared_t&#160;</td>
+          <td class="paramname"><em>maxAngularAccel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html" title="Filters the provided voltages to limit a differential drive&#39;s linear and angular acceleration.">DifferentialDriveAccelerationLimiter</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">system</td><td>The differential drive dynamics. </td></tr>
+    <tr><td class="paramname">trackwidth</td><td>The distance between the differential drive's left and right wheels. </td></tr>
+    <tr><td class="paramname">minLinearAccel</td><td>The minimum (most negative) linear acceleration. </td></tr>
+    <tr><td class="paramname">maxLinearAccel</td><td>The maximum (most positive) linear acceleration. </td></tr>
+    <tr><td class="paramname">maxAngularAccel</td><td>The maximum angular acceleration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>if minimum linear acceleration is greater than maximum linear acceleration </td></tr>
   </table>
   </dd>
 </dl>
@@ -229,7 +296,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_differential_drive_acceleration_limiter.html">DifferentialDriveAccelerationLimiter</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:04:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 10 2022 16:04:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
