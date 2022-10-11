@@ -1,5 +1,13 @@
 var NAVTREEINDEX127 =
 {
+"functions_f.html":[6,3,0,7],
+"functions_func.html":[6,3,1,0],
+"functions_func.html":[6,3,1],
+"functions_func_a.html":[6,3,1,1],
+"functions_func_b.html":[6,3,1,2],
+"functions_func_c.html":[6,3,1,3],
+"functions_func_d.html":[6,3,1,4],
+"functions_func_e.html":[6,3,1,5],
 "functions_func_f.html":[6,3,1,6],
 "functions_func_g.html":[6,3,1,7],
 "functions_func_h.html":[6,3,1,8],
@@ -34,8 +42,8 @@ var NAVTREEINDEX127 =
 "functions_p.html":[6,3,0,17],
 "functions_q.html":[6,3,0,18],
 "functions_r.html":[6,3,0,19],
-"functions_rela.html":[6,3,6,0],
 "functions_rela.html":[6,3,6],
+"functions_rela.html":[6,3,6,0],
 "functions_rela_a.html":[6,3,6,1],
 "functions_rela_b.html":[6,3,6,2],
 "functions_rela_c.html":[6,3,6,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX127 =
 "group___matrix_functions___module.html#matrixbase_cosh":[3,51,13,0,1],
 "group___matrix_functions___module.html#matrixbase_cosh":[3,51,13,0,0,1],
 "group___matrix_functions___module.html#matrixbase_cosh":[0,1],
-"group___matrix_functions___module.html#matrixbase_exp":[0,2],
-"group___matrix_functions___module.html#matrixbase_exp":[3,51,13,0,2],
-"group___matrix_functions___module.html#matrixbase_exp":[3,51,13,0,0,2],
-"group___matrix_functions___module.html#matrixbase_log":[0,3],
-"group___matrix_functions___module.html#matrixbase_log":[3,51,13,0,3],
-"group___matrix_functions___module.html#matrixbase_log":[3,51,13,0,0,3],
-"group___matrix_functions___module.html#matrixbase_matrixfunction":[0,5],
-"group___matrix_functions___module.html#matrixbase_matrixfunction":[3,51,13,0,5],
-"group___matrix_functions___module.html#matrixbase_matrixfunction":[3,51,13,0,0,5]
+"group___matrix_functions___module.html#matrixbase_exp":[0,2]
 };

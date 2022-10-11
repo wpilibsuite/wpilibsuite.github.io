@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-4-g1497665</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-5-g89a3d00</span>
    </div>
   </td>
  </tr>
@@ -115,10 +115,12 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_wait_until_command.html'
   <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c">End</a>(bool interrupted)</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#a78f14ef7e23e07963892bb7ee069839d">Endlessly</a>() &amp;&amp;</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#a7d7ea1271f7dcc65c0ba3221d179b510">Execute</a>()</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#ab1e027e86fc5c9132914ca566a9845a8">GetInterruptionBehavior</a>() const</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">GetName</a>() const override</td><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">GetRequirements</a>() const override</td><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">GetSubsystem</a>() const</td><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#a67b46d318b6cc22123fd5adf718953f1">FinallyDo</a>(std::function&lt; void(bool)&gt; end) &amp;&amp;</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#ab1e027e86fc5c9132914ca566a9845a8">GetInterruptionBehavior</a>() const</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">GetName</a>() const override</td><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">GetRequirements</a>() const override</td><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">GetSubsystem</a>() const</td><td class="entry"><a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#a22c8f3cdba793a9ba4d63b4155e3c82b">HandleInterrupt</a>(std::function&lt; void()&gt; handler) &amp;&amp;</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">HasRequirement</a>(Subsystem *requirement) const</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#acc67b15e71a66aafb7523ccdd0a7a834">IgnoringDisable</a>(bool doesRunWhenDisabled) &amp;&amp;</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command.html#ad3f1971a1b44ecdd4683d766f831bccd">Initialize</a>()</td><td class="entry"><a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -162,7 +164,7 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_wait_until_command.html'
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 10 2022 16:04:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 11 2022 16:56:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

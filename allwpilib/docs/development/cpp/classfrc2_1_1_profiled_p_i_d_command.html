@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-4-g1497665</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-5-g89a3d00</span>
    </div>
   </td>
  </tr>
@@ -265,6 +265,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6583f966509478a29e7764a72c4bf177 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a6583f966509478a29e7764a72c4bf177">WithInterruptBehavior</a> (<a class="el" href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">Command::InterruptionBehavior</a> interruptBehavior) &amp;&amp;</td></tr>
 <tr class="memdesc:a6583f966509478a29e7764a72c4bf177 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run or stop when disabled.  <a href="classfrc2_1_1_command.html#a6583f966509478a29e7764a72c4bf177">More...</a><br /></td></tr>
 <tr class="separator:a6583f966509478a29e7764a72c4bf177 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b46d318b6cc22123fd5adf718953f1 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a67b46d318b6cc22123fd5adf718953f1">FinallyDo</a> (std::function&lt; void(bool)&gt; end) &amp;&amp;</td></tr>
+<tr class="memdesc:a67b46d318b6cc22123fd5adf718953f1 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a lambda to call on interrupt or end, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method.  <a href="classfrc2_1_1_command.html#a67b46d318b6cc22123fd5adf718953f1">More...</a><br /></td></tr>
+<tr class="separator:a67b46d318b6cc22123fd5adf718953f1 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c8f3cdba793a9ba4d63b4155e3c82b inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a22c8f3cdba793a9ba4d63b4155e3c82b">HandleInterrupt</a> (std::function&lt; void()&gt; handler) &amp;&amp;</td></tr>
+<tr class="memdesc:a22c8f3cdba793a9ba4d63b4155e3c82b inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a lambda to call on interrupt, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method.  <a href="classfrc2_1_1_command.html#a22c8f3cdba793a9ba4d63b4155e3c82b">More...</a><br /></td></tr>
+<tr class="separator:a22c8f3cdba793a9ba4d63b4155e3c82b inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710">Schedule</a> ()</td></tr>
 <tr class="memdesc:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules this command.  <a href="classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710">More...</a><br /></td></tr>
 <tr class="separator:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1194,7 +1200,7 @@ template&lt;class Distance &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_profiled_p_i_d_command.html">ProfiledPIDCommand</a></li>
-    <li class="footer">Generated on Mon Oct 10 2022 16:04:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 11 2022 16:56:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

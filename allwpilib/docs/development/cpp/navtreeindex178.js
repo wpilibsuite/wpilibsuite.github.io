@@ -1,5 +1,13 @@
 var NAVTREEINDEX178 =
 {
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01_a_01_4.html":[4,0,8,4,986],
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01_a_01_4.html":[6,0,4,2,984],
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01_a_01_4.html#ab091df47078e366a85a513704ae9c415":[4,0,8,4,986,0],
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01_a_01_4.html#ab091df47078e366a85a513704ae9c415":[6,0,4,2,984,0],
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01const_01_a_01_4.html":[6,0,4,2,985],
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01const_01_a_01_4.html":[4,0,8,4,987],
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01const_01_a_01_4.html#a467ead79b4ebc007504bc2560a556094":[4,0,8,4,987,0],
+"struct_eigen_1_1internal_1_1promote__storage__type_3_01_a_00_01const_01_a_01_4.html#a467ead79b4ebc007504bc2560a556094":[6,0,4,2,985,0],
 "struct_eigen_1_1internal_1_1promote__storage__type_3_01const_01_a_00_01_a_01_4.html":[4,0,8,4,988],
 "struct_eigen_1_1internal_1_1promote__storage__type_3_01const_01_a_00_01_a_01_4.html":[6,0,4,2,986],
 "struct_eigen_1_1internal_1_1promote__storage__type_3_01const_01_a_00_01_a_01_4.html#a7135a092ef51abf165d7036c5b74084b":[4,0,8,4,988,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX178 =
 "struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5_01_4.html":[6,0,4,2,1046],
 "struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5_01_4.html":[4,0,8,4,1048],
 "struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5_01_4.html#a4b303d342d6f988b381ee5a7cc37b269":[4,0,8,4,1048,0],
-"struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5_01_4.html#a4b303d342d6f988b381ee5a7cc37b269":[6,0,4,2,1046,0],
-"struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5const_01_4.html":[4,0,8,4,1049],
-"struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5const_01_4.html":[6,0,4,2,1047],
-"struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5const_01_4.html#ac2307323104253824b1c08e4970a24e7":[6,0,4,2,1047,0],
-"struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5const_01_4.html#ac2307323104253824b1c08e4970a24e7":[4,0,8,4,1049,0],
-"struct_eigen_1_1internal_1_1remove__reference.html":[4,0,8,4,1050],
-"struct_eigen_1_1internal_1_1remove__reference.html":[6,0,4,2,1048],
-"struct_eigen_1_1internal_1_1remove__reference.html#a48fc595958f2006d8ddea90f18833ae0":[4,0,8,4,1050,0],
-"struct_eigen_1_1internal_1_1remove__reference.html#a48fc595958f2006d8ddea90f18833ae0":[6,0,4,2,1048,0]
+"struct_eigen_1_1internal_1_1remove__pointer_3_01_t_01_5_01_4.html#a4b303d342d6f988b381ee5a7cc37b269":[6,0,4,2,1046,0]
 };

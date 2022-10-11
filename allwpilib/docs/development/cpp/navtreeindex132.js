@@ -1,5 +1,13 @@
 var NAVTREEINDEX132 =
 {
+"group__hal__dma.html#gaf93f82cd4ab2647de5aaae3d8d3f906c":[3,1,16,13],
+"group__hal__dma.html#gafedcea65ab948106f8f5b9461585ff3a":[3,1,16,25],
+"group__hal__driverstation.html":[3,1,10],
+"group__hal__driverstation.html#ga00603ecd30baaa0d0712488161a83f38":[3,1,10,33],
+"group__hal__driverstation.html#ga02f43dddbf4334027d37ba7c195dd83b":[3,1,10,15],
+"group__hal__driverstation.html#ga0427c199d9eda38ddd73b0ccee94d478":[3,1,10,9],
+"group__hal__driverstation.html#ga075016b9b67bd12a3a305833c6dc057d":[3,1,10,12],
+"group__hal__driverstation.html#ga0c6bcb0e4f74f48f8d8456ccb8d0761f":[3,1,10,13],
 "group__hal__driverstation.html#ga0f27efa938c6e345a87a94de86a8ccaf":[3,1,10,8],
 "group__hal__driverstation.html#ga10e5c8ea5a1b890126167e9d352e9e0a":[3,1,10,30],
 "group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155":[3,1,10,51],
@@ -241,13 +249,5 @@ var NAVTREEINDEX132 =
 "group__hal__ports.html#ga25c6b2e7401ce5d8b4cb3ad2ecca9d16":[3,1,15,2],
 "group__hal__ports.html#ga2c372db73b25f485b870b1ba1e38660a":[3,1,15,4],
 "group__hal__ports.html#ga34879b0f89502ffd47f75c579f59ea59":[3,1,15,7],
-"group__hal__ports.html#ga3f207b761554be4fceb82d8bc5d33f89":[3,1,15,11],
-"group__hal__ports.html#ga4121bca3cf2db1933fd2df812ace1677":[3,1,15,3],
-"group__hal__ports.html#ga4ed963097651ceec6db417755a9094a9":[3,1,15,9],
-"group__hal__ports.html#ga5c72a1106b4e8ef39bfa17a2146e93eb":[3,1,15,10],
-"group__hal__ports.html#ga5daf68b1d8bdc5a2e04f5c0ba84ce6fa":[3,1,15,16],
-"group__hal__ports.html#ga7867d08ba3d3418edcc7c4c2a72d9ca5":[3,1,15,18],
-"group__hal__ports.html#ga8232fc3204c36875eab4836aec4b9193":[3,1,15,1],
-"group__hal__ports.html#ga87839cac4ebb29bace0e828a5a751ca0":[3,1,15,8],
-"group__hal__ports.html#ga87f828d3d50de55f38f12e66ee1681af":[3,1,15,23]
+"group__hal__ports.html#ga3f207b761554be4fceb82d8bc5d33f89":[3,1,15,11]
 };

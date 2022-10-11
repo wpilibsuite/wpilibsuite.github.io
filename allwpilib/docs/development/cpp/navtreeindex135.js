@@ -1,5 +1,13 @@
 var NAVTREEINDEX135 =
 {
+"group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09":[3,12,27],
+"group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e":[3,12,26],
+"group__ntcore__c__api.html#gga3cca2867677bf312d4d8df4aa48a09d7a2c81b499d36812fd97bad09fbfdb95d4":[3,12,40,1],
+"group__ntcore__c__api.html#gga3cca2867677bf312d4d8df4aa48a09d7a3a52e7917f951a0c6ea1b70ef48efb65":[3,12,40,0],
+"group__ntcore__c__api.html#gga57e71a22090e6970470a2ea43d91a4fea25023ff58443d9c4bce3fa646eb09537":[3,12,46,0],
+"group__ntcore__c__api.html#gga57e71a22090e6970470a2ea43d91a4fea818845ca17ce29cf852821d2e7e982d3":[3,12,46,1],
+"group__ntcore__c__api.html#gga57e71a22090e6970470a2ea43d91a4feafcdda34ad3b9fd52c4650eb8c8a25aa4":[3,12,46,2],
+"group__ntcore__c__api.html#gga5a37c1408d3bd3090edcfd497c00acbea0bfd3cbadf312f62cf465c0c2ba3e2dd":[3,12,41,8],
 "group__ntcore__c__api.html#gga5a37c1408d3bd3090edcfd497c00acbea1b50bd492a985eb3e88609f50d48751a":[3,12,41,2],
 "group__ntcore__c__api.html#gga5a37c1408d3bd3090edcfd497c00acbea267f0adee8fc86c6f70f9d364e9110dc":[3,12,41,3],
 "group__ntcore__c__api.html#gga5a37c1408d3bd3090edcfd497c00acbea571cf1cb6d306a2631d85f11f16e1e4d":[3,12,41,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX135 =
 "group__ntcore__topiclistener__cfunc.html#ga80c9b2687b2425e2c335ecb412ecacca":[3,12,4,10],
 "group__ntcore__topiclistener__cfunc.html#ga8f292f1d0b00fc917af3b73d6f2cf77e":[3,12,4,0],
 "group__ntcore__topiclistener__cfunc.html#ga9b6adef53182feab900dc086f8224171":[3,12,4,7],
-"group__ntcore__topiclistener__cfunc.html#gafdeeca302f19b34db3f949bbe34325d3":[3,12,4,6],
-"group__ntcore__topiclistener__func.html":[3,13,4],
-"group__ntcore__topiclistener__func.html#ga0b9ac806179754e3793d6f0500df2d9d":[3,13,4,6],
-"group__ntcore__topiclistener__func.html#ga1ca5f9d3a28f5fdeebe6707fe5218740":[3,13,4,7],
-"group__ntcore__topiclistener__func.html#ga330e11c6b633c21ba5087f14612e8394":[3,13,4,4],
-"group__ntcore__topiclistener__func.html#ga38c8cf53d8a3d97bd771b504ef64b0b2":[3,13,4,3],
-"group__ntcore__topiclistener__func.html#ga9e9ca0c086d490c3c6e28261ed9331ce":[3,13,4,1],
-"group__ntcore__topiclistener__func.html#gaaff2e1a4fb20abeeadd7ca4a01a6ee4c":[3,13,4,2],
-"group__ntcore__topiclistener__func.html#gac4116678759c9e1f9e35c825a2507945":[3,13,4,5]
+"group__ntcore__topiclistener__cfunc.html#gafdeeca302f19b34db3f949bbe34325d3":[3,12,4,6]
 };

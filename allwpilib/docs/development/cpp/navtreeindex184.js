@@ -1,5 +1,13 @@
 var NAVTREEINDEX184 =
 {
+"struct_eigen_1_1internal_1_1sqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html#a98f169ff8853e545ca714085ba824c7e":[4,0,8,4,1279,0],
+"struct_eigen_1_1internal_1_1sqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html#a98f169ff8853e545ca714085ba824c7e":[6,0,4,2,1277,0],
+"struct_eigen_1_1internal_1_1sqrt__retval.html":[4,0,8,4,1280],
+"struct_eigen_1_1internal_1_1sqrt__retval.html":[6,0,4,2,1278],
+"struct_eigen_1_1internal_1_1sqrt__retval.html#abd9ab3c2030ff07c1075a79b37e03b36":[4,0,8,4,1280,0],
+"struct_eigen_1_1internal_1_1sqrt__retval.html#abd9ab3c2030ff07c1075a79b37e03b36":[6,0,4,2,1278,0],
+"struct_eigen_1_1internal_1_1static__assertion.html":[6,0,4,2,1279],
+"struct_eigen_1_1internal_1_1static__assertion.html":[4,0,8,4,1281],
 "struct_eigen_1_1internal_1_1static__assertion_3_01true_01_4.html":[6,0,4,2,1280],
 "struct_eigen_1_1internal_1_1static__assertion_3_01true_01_4.html":[4,0,8,4,1282],
 "struct_eigen_1_1internal_1_1stem__function.html":[6,0,4,2,1281],
@@ -241,13 +249,5 @@ var NAVTREEINDEX184 =
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a6e3de1b585019288ab163f5c067e4085":[6,0,4,2,1320,8],
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a6e3de1b585019288ab163f5c067e4085":[4,0,8,4,1322,8],
 "struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a83f26aa75a8298b2d41a83da5d0e19fb":[4,0,8,4,1322,5],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a83f26aa75a8298b2d41a83da5d0e19fb":[6,0,4,2,1320,5],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a8661ddba074cfb332a97398a01cdb0bb":[6,0,4,2,1320,2],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a8661ddba074cfb332a97398a01cdb0bb":[4,0,8,4,1322,2],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a8a7924e1a78c45c5e63322f9bb66ea1f":[6,0,4,2,1320,4],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a8a7924e1a78c45c5e63322f9bb66ea1f":[4,0,8,4,1322,4],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#ad3221c7291ce3aeb4fee113040a253e3":[6,0,4,2,1320,1],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#ad3221c7291ce3aeb4fee113040a253e3":[4,0,8,4,1322,1],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#ad98ca0c9eb73f558a20b7aeec6dfcf4d":[6,0,4,2,1320,10],
-"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#ad98ca0c9eb73f558a20b7aeec6dfcf4d":[4,0,8,4,1322,10]
+"struct_eigen_1_1internal_1_1traits_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_00_01_arg2_00_01_arg3_01_4_01_4.html#a83f26aa75a8298b2d41a83da5d0e19fb":[6,0,4,2,1320,5]
 };

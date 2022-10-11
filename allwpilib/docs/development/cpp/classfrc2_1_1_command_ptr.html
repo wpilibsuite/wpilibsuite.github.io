@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-4-g1497665</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-5-g89a3d00</span>
    </div>
   </td>
  </tr>
@@ -166,6 +166,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d6c1761cef10bb79a727e43e89643d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0">RaceWith</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;parallel) &amp;&amp;</td></tr>
 <tr class="memdesc:a4d6c1761cef10bb79a727e43e89643d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a set of commands to run parallel to it, ending when the first command ends.  <a href="classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0">More...</a><br /></td></tr>
 <tr class="separator:a4d6c1761cef10bb79a727e43e89643d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0ae6c855d7cf1f1a33cda5575a7b8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#abd0ae6c855d7cf1f1a33cda5575a7b8f">FinallyDo</a> (std::function&lt; void(bool)&gt; end) &amp;&amp;</td></tr>
+<tr class="memdesc:abd0ae6c855d7cf1f1a33cda5575a7b8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a lambda to call on interrupt or end, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method.  <a href="classfrc2_1_1_command_ptr.html#abd0ae6c855d7cf1f1a33cda5575a7b8f">More...</a><br /></td></tr>
+<tr class="separator:abd0ae6c855d7cf1f1a33cda5575a7b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5580e71dfe356d2b261efe213f7c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a2a5580e71dfe356d2b261efe213f7c67">HandleInterrupt</a> (std::function&lt; void()&gt; handler) &amp;&amp;</td></tr>
+<tr class="memdesc:a2a5580e71dfe356d2b261efe213f7c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a lambda to call on interrupt, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method.  <a href="classfrc2_1_1_command_ptr.html#a2a5580e71dfe356d2b261efe213f7c67">More...</a><br /></td></tr>
+<tr class="separator:a2a5580e71dfe356d2b261efe213f7c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079b63fc68212d4a3b02b332f192a1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">get</a> () const</td></tr>
 <tr class="memdesc:a079b63fc68212d4a3b02b332f192a1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a raw pointer to the held command.  <a href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">More...</a><br /></td></tr>
 <tr class="separator:a079b63fc68212d4a3b02b332f192a1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -602,6 +608,33 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
+<a id="abd0ae6c855d7cf1f1a33cda5575a7b8f" name="abd0ae6c855d7cf1f1a33cda5575a7b8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0ae6c855d7cf1f1a33cda5575a7b8f">&#9670;&nbsp;</a></span>FinallyDo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::FinallyDo </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(bool)&gt;&#160;</td>
+          <td class="paramname"><em>end</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a lambda to call on interrupt or end, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">end</td><td>a lambda accepting a boolean parameter specifying whether the command was interrupted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+</div>
+</div>
 <a id="a079b63fc68212d4a3b02b332f192a1e2" name="a079b63fc68212d4a3b02b332f192a1e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a079b63fc68212d4a3b02b332f192a1e2">&#9670;&nbsp;</a></span>get()</h2>
 
@@ -618,6 +651,33 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 </div><div class="memdoc">
 
 <p>Get a raw pointer to the held command. </p>
+
+</div>
+</div>
+<a id="a2a5580e71dfe356d2b261efe213f7c67" name="a2a5580e71dfe356d2b261efe213f7c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5580e71dfe356d2b261efe213f7c67">&#9670;&nbsp;</a></span>HandleInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::HandleInterrupt </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a lambda to call on interrupt, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>a lambda to run when the command is interrupted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
 
 </div>
 </div>
@@ -958,7 +1018,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a></li>
-    <li class="footer">Generated on Mon Oct 10 2022 16:04:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Oct 11 2022 16:56:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
