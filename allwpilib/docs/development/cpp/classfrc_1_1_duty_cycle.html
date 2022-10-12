@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-5-g89a3d00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-6-g87a64cc</span>
    </div>
   </td>
  </tr>
@@ -139,9 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4c08afa87660c508135044e897c517d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_duty_cycle.html#aa4c08afa87660c508135044e897c517d">GetOutput</a> () const</td></tr>
 <tr class="memdesc:aa4c08afa87660c508135044e897c517d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output ratio of the duty cycle signal.  <a href="classfrc_1_1_duty_cycle.html#aa4c08afa87660c508135044e897c517d">More...</a><br /></td></tr>
 <tr class="separator:aa4c08afa87660c508135044e897c517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab106328df2b825d5d77e2097cf9bd85a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_duty_cycle.html#ab106328df2b825d5d77e2097cf9bd85a">GetOutputRaw</a> () const</td></tr>
-<tr class="memdesc:ab106328df2b825d5d77e2097cf9bd85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw output ratio of the duty cycle signal.  <a href="classfrc_1_1_duty_cycle.html#ab106328df2b825d5d77e2097cf9bd85a">More...</a><br /></td></tr>
-<tr class="separator:ab106328df2b825d5d77e2097cf9bd85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54e423089a19cdd865fe321eee63d2e"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_duty_cycle.html#ae54e423089a19cdd865fe321eee63d2e">GetHighTime</a> () const</td></tr>
+<tr class="memdesc:ae54e423089a19cdd865fe321eee63d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw high time of the duty cycle signal.  <a href="classfrc_1_1_duty_cycle.html#ae54e423089a19cdd865fe321eee63d2e">More...</a><br /></td></tr>
+<tr class="separator:ae54e423089a19cdd865fe321eee63d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5de1c5bd282d9f9d3b802a2cfb2b115"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_duty_cycle.html#ac5de1c5bd282d9f9d3b802a2cfb2b115">GetOutputScaleFactor</a> () const</td></tr>
 <tr class="memdesc:ac5de1c5bd282d9f9d3b802a2cfb2b115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scale factor of the output.  <a href="classfrc_1_1_duty_cycle.html#ac5de1c5bd282d9f9d3b802a2cfb2b115">More...</a><br /></td></tr>
 <tr class="separator:ac5de1c5bd282d9f9d3b802a2cfb2b115"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -391,6 +391,26 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ae54e423089a19cdd865fe321eee63d2e" name="ae54e423089a19cdd865fe321eee63d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54e423089a19cdd865fe321eee63d2e">&#9670;&nbsp;</a></span>GetHighTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::second_t frc::DutyCycle::GetHighTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the raw high time of the duty cycle signal. </p>
+<dl class="section return"><dt>Returns</dt><dd>high time of last pulse </dd></dl>
+
+</div>
+</div>
 <a id="aa4c08afa87660c508135044e897c517d" name="aa4c08afa87660c508135044e897c517d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4c08afa87660c508135044e897c517d">&#9670;&nbsp;</a></span>GetOutput()</h2>
 
@@ -412,27 +432,6 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="ab106328df2b825d5d77e2097cf9bd85a" name="ab106328df2b825d5d77e2097cf9bd85a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab106328df2b825d5d77e2097cf9bd85a">&#9670;&nbsp;</a></span>GetOutputRaw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int frc::DutyCycle::GetOutputRaw </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the raw output ratio of the duty cycle signal. </p>
-<p >0 means always low, an output equal to <a class="el" href="classfrc_1_1_duty_cycle.html#ac5de1c5bd282d9f9d3b802a2cfb2b115" title="Get the scale factor of the output.">GetOutputScaleFactor()</a> means always high.</p>
-<dl class="section return"><dt>Returns</dt><dd>output ratio in raw units </dd></dl>
-
-</div>
-</div>
 <a id="ac5de1c5bd282d9f9d3b802a2cfb2b115" name="ac5de1c5bd282d9f9d3b802a2cfb2b115"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5de1c5bd282d9f9d3b802a2cfb2b115">&#9670;&nbsp;</a></span>GetOutputScaleFactor()</h2>
 
@@ -449,7 +448,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the scale factor of the output. </p>
-<p >An output equal to this value is always high, and then linearly scales down to 0. Divide the result of getOutputRaw by this in order to get the percentage between 0 and 1.</p>
+<p >An output equal to this value is always high, and then linearly scales down to 0. Divide a raw result by this in order to get the percentage between 0 and 1. Used by <a class="el" href="classfrc_1_1_d_m_a.html">DMA</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>the output scale factor </dd></dl>
 
 </div>
@@ -612,7 +611,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_duty_cycle.html">DutyCycle</a></li>
-    <li class="footer">Generated on Tue Oct 11 2022 16:56:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 12 2022 17:18:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-5-g89a3d00</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-6-g87a64cc</span>
    </div>
   </td>
  </tr>
@@ -114,9 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3303e61c5f9e30dcd87b267d93e253dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc">HAL_GetDutyCycleOutput</a> (<a class="el" href="group__hal__types.html#gac70d236ab38d6aa2d8cd153ee59412d8">HAL_DutyCycleHandle</a> dutyCycleHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga3303e61c5f9e30dcd87b267d93e253dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the output ratio of the duty cycle signal.  <a href="group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc">More...</a><br /></td></tr>
 <tr class="separator:ga3303e61c5f9e30dcd87b267d93e253dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6ee0f5f0df7b6949be45b715b07667e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e">HAL_GetDutyCycleOutputRaw</a> (<a class="el" href="group__hal__types.html#gac70d236ab38d6aa2d8cd153ee59412d8">HAL_DutyCycleHandle</a> dutyCycleHandle, int32_t *status)</td></tr>
-<tr class="memdesc:gac6ee0f5f0df7b6949be45b715b07667e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw output ratio of the duty cycle signal.  <a href="group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e">More...</a><br /></td></tr>
-<tr class="separator:gac6ee0f5f0df7b6949be45b715b07667e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0048959d5f30c0d37f124b79390af782"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dutycycle.html#ga0048959d5f30c0d37f124b79390af782">HAL_GetDutyCycleHighTime</a> (<a class="el" href="group__hal__types.html#gac70d236ab38d6aa2d8cd153ee59412d8">HAL_DutyCycleHandle</a> dutyCycleHandle, int32_t *status)</td></tr>
+<tr class="memdesc:ga0048959d5f30c0d37f124b79390af782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw high time of the duty cycle signal.  <a href="group__hal__dutycycle.html#ga0048959d5f30c0d37f124b79390af782">More...</a><br /></td></tr>
+<tr class="separator:ga0048959d5f30c0d37f124b79390af782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga86097e61efe8ea0b69abec9fd6834b0f"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f">HAL_GetDutyCycleOutputScaleFactor</a> (<a class="el" href="group__hal__types.html#gac70d236ab38d6aa2d8cd153ee59412d8">HAL_DutyCycleHandle</a> dutyCycleHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga86097e61efe8ea0b69abec9fd6834b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scale factor of the output.  <a href="group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f">More...</a><br /></td></tr>
 <tr class="separator:ga86097e61efe8ea0b69abec9fd6834b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +228,44 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga0048959d5f30c0d37f124b79390af782" name="ga0048959d5f30c0d37f124b79390af782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0048959d5f30c0d37f124b79390af782">&#9670;&nbsp;</a></span>HAL_GetDutyCycleHighTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t HAL_GetDutyCycleHighTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac70d236ab38d6aa2d8cd153ee59412d8">HAL_DutyCycleHandle</a>&#160;</td>
+          <td class="paramname"><em>dutyCycleHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the raw high time of the duty cycle signal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dutyCycleHandle</td><td>the duty cycle handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>high time of last pulse in nanoseconds </dd></dl>
+
+</div>
+</div>
 <a id="ga3303e61c5f9e30dcd87b267d93e253dc" name="ga3303e61c5f9e30dcd87b267d93e253dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3303e61c5f9e30dcd87b267d93e253dc">&#9670;&nbsp;</a></span>HAL_GetDutyCycleOutput()</h2>
 
@@ -267,45 +305,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac6ee0f5f0df7b6949be45b715b07667e" name="gac6ee0f5f0df7b6949be45b715b07667e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6ee0f5f0df7b6949be45b715b07667e">&#9670;&nbsp;</a></span>HAL_GetDutyCycleOutputRaw()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t HAL_GetDutyCycleOutputRaw </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__hal__types.html#gac70d236ab38d6aa2d8cd153ee59412d8">HAL_DutyCycleHandle</a>&#160;</td>
-          <td class="paramname"><em>dutyCycleHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the raw output ratio of the duty cycle signal. </p>
-<p >0 means always low, an output equal to GetOutputScaleFactor() means always high.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">dutyCycleHandle</td><td>the duty cycle handle </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>output ratio in raw units </dd></dl>
-
-</div>
-</div>
 <a id="ga86097e61efe8ea0b69abec9fd6834b0f" name="ga86097e61efe8ea0b69abec9fd6834b0f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga86097e61efe8ea0b69abec9fd6834b0f">&#9670;&nbsp;</a></span>HAL_GetDutyCycleOutputScaleFactor()</h2>
 
@@ -333,7 +332,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the scale factor of the output. </p>
-<p >An output equal to this value is always high, and then linearly scales down to 0. Divide the result of getOutputRaw by this in order to get the percentage between 0 and 1.</p>
+<p >An output equal to this value is always high, and then linearly scales down to 0. Divide a raw result by this in order to get the percentage between 0 and 1. Used by DMA.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dutyCycleHandle</td><td>the duty cycle handle </td></tr>
@@ -432,7 +431,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 11 2022 16:56:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 12 2022 17:18:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
