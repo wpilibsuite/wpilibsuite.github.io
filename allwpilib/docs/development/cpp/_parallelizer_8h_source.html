@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-7-gca43fe2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-8-g58b6484</span>
    </div>
   </td>
  </tr>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('_parallelizer_8h_source.html',''); ini
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  func.initParallelSession(threads);</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordflow">if</span>(transpose)</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(rows,cols);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_function" href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a>(rows,cols);</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <a class="code hl_define" href="_memory_8h.html#ae4bf2b34741512d206aa238550a2c42c">ei_declare_aligned_stack_constructed_variable</a>(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1_gemm_parallel_info.html">GemmParallelInfo&lt;Index&gt;</a>,info,threads,0);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('_parallelizer_8h_source.html',''); ini
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a6e841e3c4f4914cf1e06704ec8537db3"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a6e841e3c4f4914cf1e06704ec8537db3">Eigen::internal::manage_multi_threading</a></div><div class="ttdeci">void manage_multi_threading(Action action, int *v)</div><div class="ttdef"><b>Definition:</b> Parallelizer.h:22</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_aa32f9fb4cd20f86ef87d00db101e2f7c"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa32f9fb4cd20f86ef87d00db101e2f7c">Eigen::internal::manage_caching_sizes</a></div><div class="ttdeci">void manage_caching_sizes(Action action, std::ptrdiff_t *l1, std::ptrdiff_t *l2, std::ptrdiff_t *l3)</div><div class="ttdef"><b>Definition:</b> GeneralBlockPanelKernel.h:86</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_aa3c1588240009c3c17b3e477512b2ffd"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">Eigen::internal::size</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index size(const T &amp;x)</div><div class="ttdef"><b>Definition:</b> Meta.h:479</div></div>
-<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> Core:141</div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> MatrixPower.h:13</div></div>
 <div class="ttc" id="anamespace_eigen_html_a3cbc3ee52075935e7854d9f65c5a8e03"><div class="ttname"><a href="namespace_eigen.html#a3cbc3ee52075935e7854d9f65c5a8e03">Eigen::Action</a></div><div class="ttdeci">Action</div><div class="ttdef"><b>Definition:</b> Constants.h:504</div></div>
 <div class="ttc" id="anamespace_eigen_html_a3cbc3ee52075935e7854d9f65c5a8e03a50e0300a7050ebe879b82484f89efb68"><div class="ttname"><a href="namespace_eigen.html#a3cbc3ee52075935e7854d9f65c5a8e03a50e0300a7050ebe879b82484f89efb68">Eigen::GetAction</a></div><div class="ttdeci">@ GetAction</div><div class="ttdef"><b>Definition:</b> Constants.h:504</div></div>
 <div class="ttc" id="anamespace_eigen_html_a3cbc3ee52075935e7854d9f65c5a8e03af86f2d01b29fe43e67fee437b0cf45ba"><div class="ttname"><a href="namespace_eigen.html#a3cbc3ee52075935e7854d9f65c5a8e03af86f2d01b29fe43e67fee437b0cf45ba">Eigen::SetAction</a></div><div class="ttdeci">@ SetAction</div><div class="ttdef"><b>Definition:</b> Constants.h:504</div></div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('_parallelizer_8h_source.html',''); ini
 <div class="ttc" id="anamespace_eigen_html_a9aca97d83e21b91a04ec079360dfffeb"><div class="ttname"><a href="namespace_eigen.html#a9aca97d83e21b91a04ec079360dfffeb">Eigen::nbThreads</a></div><div class="ttdeci">int nbThreads()</div><div class="ttdef"><b>Definition:</b> Parallelizer.h:63</div></div>
 <div class="ttc" id="anamespace_eigen_html_af9cd17c2fe18204239cd11c88c120b50"><div class="ttname"><a href="namespace_eigen.html#af9cd17c2fe18204239cd11c88c120b50">Eigen::setNbThreads</a></div><div class="ttdeci">void setNbThreads(int v)</div><div class="ttdoc">Sets the max number of threads reserved for Eigen.</div><div class="ttdef"><b>Definition:</b> Parallelizer.h:72</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
-<div class="ttc" id="anamespacestd_html_a8de3b111383ccb7c625398925d4c7add"><div class="ttname"><a href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallVectorImpl&lt; T &gt; &amp;LHS, wpi::SmallVectorImpl&lt; T &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallVector swap.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1299</div></div>
+<div class="ttc" id="anamespacestd_html_a96fe9b71b86c96cbbd77452a4d949675"><div class="ttname"><a href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallPtrSet&lt; T, N &gt; &amp;LHS, wpi::SmallPtrSet&lt; T, N &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallPtrSet swap.</div><div class="ttdef"><b>Definition:</b> SmallPtrSet.h:512</div></div>
 <div class="ttc" id="astruct_eigen_1_1internal_1_1_gemm_parallel_info_html"><div class="ttname"><a href="struct_eigen_1_1internal_1_1_gemm_parallel_info.html">Eigen::internal::GemmParallelInfo</a></div><div class="ttdef"><b>Definition:</b> Parallelizer.h:80</div></div>
 <div class="ttc" id="astruct_eigen_1_1internal_1_1_gemm_parallel_info_html_a667052537d47851e8561ce8c8679a5de"><div class="ttname"><a href="struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a667052537d47851e8561ce8c8679a5de">Eigen::internal::GemmParallelInfo::GemmParallelInfo</a></div><div class="ttdeci">GemmParallelInfo()</div><div class="ttdef"><b>Definition:</b> Parallelizer.h:81</div></div>
 <div class="ttc" id="astruct_eigen_1_1internal_1_1_gemm_parallel_info_html_a6709199f56602a45662c9eb6c1178dd2"><div class="ttname"><a href="struct_eigen_1_1internal_1_1_gemm_parallel_info.html#a6709199f56602a45662c9eb6c1178dd2">Eigen::internal::GemmParallelInfo::lhs_length</a></div><div class="ttdeci">Index lhs_length</div><div class="ttdef"><b>Definition:</b> Parallelizer.h:96</div></div>
@@ -304,7 +304,7 @@ $(document).ready(function(){initNavTree('_parallelizer_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_7e22f4c3bff1da2631ff9f7e4f928280.html">Core</a></li><li class="navelem"><a class="el" href="dir_88e4a88e5aa83939a778e7b81b7b8a0f.html">products</a></li><li class="navelem"><a class="el" href="_parallelizer_8h.html">Parallelizer.h</a></li>
-    <li class="footer">Generated on Wed Oct 12 2022 20:57:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 14 2022 00:28:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

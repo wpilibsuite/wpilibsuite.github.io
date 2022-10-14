@@ -7,5 +7,6 @@ var _interrupts_8h =
     [ "HAL_ReleaseWaitingInterrupt", "group__hal__interrupts.html#ga67f157be25831233951cb239c837d098", null ],
     [ "HAL_RequestInterrupts", "group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0", null ],
     [ "HAL_SetInterruptUpSourceEdge", "group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0", null ],
-    [ "HAL_WaitForInterrupt", "group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d", null ]
+    [ "HAL_WaitForInterrupt", "group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d", null ],
+    [ "HAL_WaitForMultipleInterrupts", "group__hal__interrupts.html#gac57843b0ae03b0fee990cbb1a759ed60", null ]
 ];

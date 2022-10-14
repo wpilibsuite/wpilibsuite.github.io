@@ -2129,6 +2129,7 @@ var hierarchy =
     [ "wpi::interpolating_map< Key, Value >", "classwpi_1_1interpolating__map.html", null ],
     [ "wpi::interpolating_map< units::meters_per_second_t, Eigen::Matrix< 2, 3 > >", "classwpi_1_1interpolating__map.html", null ],
     [ "wpi::interpolating_map< units::meters_per_second_t, Eigen::Matrix< 2, 5 > >", "classwpi_1_1interpolating__map.html", null ],
+    [ "hal::InterruptManager", "classhal_1_1_interrupt_manager.html", null ],
     [ "wpi::memory::traits_detail::invalid_allocator_concept< T >", "structwpi_1_1memory_1_1traits__detail_1_1invalid__allocator__concept.html", null ],
     [ "Eigen::internal::inverse_impl< MatrixType >", "struct_eigen_1_1internal_1_1inverse__impl.html", null ],
     [ "Eigen::internal::invoke_result< F, ArgType0, ArgType1, ArgType2 >", "struct_eigen_1_1internal_1_1invoke__result.html", null ],

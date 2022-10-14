@@ -1,6 +1,6 @@
 var NAVTREEINDEX0 =
 {
-"_8clang-tidy.html":[7,0,6,3],
+"_8clang-tidy.html":[7,0,6,4],
 "_a_d_i_s16448___i_m_u_8h.html":[7,0,3,11],
 "_a_d_i_s16448___i_m_u_8h_source.html":[7,0,3,11],
 "_a_d_i_s16448___i_m_u_sim_8h.html":[7,0,3,7,1],

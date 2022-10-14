@@ -2332,6 +2332,7 @@ var annotated_dup =
       [ "HandleBase", "classhal_1_1_handle_base.html", "classhal_1_1_handle_base" ],
       [ "IndexedClassedHandleResource", "classhal_1_1_indexed_classed_handle_resource.html", "classhal_1_1_indexed_classed_handle_resource" ],
       [ "IndexedHandleResource", "classhal_1_1_indexed_handle_resource.html", "classhal_1_1_indexed_handle_resource" ],
+      [ "InterruptManager", "classhal_1_1_interrupt_manager.html", "classhal_1_1_interrupt_manager" ],
       [ "LimitedClassedHandleResource", "classhal_1_1_limited_classed_handle_resource.html", "classhal_1_1_limited_classed_handle_resource" ],
       [ "LimitedHandleResource", "classhal_1_1_limited_handle_resource.html", "classhal_1_1_limited_handle_resource" ],
       [ "SerialHelper", "classhal_1_1_serial_helper.html", "classhal_1_1_serial_helper" ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-7-gca43fe2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-8-g58b6484</span>
    </div>
   </td>
  </tr>
@@ -3789,7 +3789,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a id="l03693" name="l03693"></a><span class="lineno"> 3693</span>        <span class="comment">// check that passed value is valid</span></div>
 <div class="line"><a id="l03694" name="l03694"></a><span class="lineno"> 3694</span>        other.assert_invariant();</div>
 <div class="line"><a id="l03695" name="l03695"></a><span class="lineno"> 3695</span> </div>
-<div class="line"><a id="l03696" name="l03696"></a><span class="lineno"> 3696</span>        <span class="keyword">using </span><a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>;</div>
+<div class="line"><a id="l03696" name="l03696"></a><span class="lineno"> 3696</span>        <span class="keyword">using </span><a class="code hl_function" href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a>;</div>
 <div class="line"><a id="l03697" name="l03697"></a><span class="lineno"> 3697</span>        <a class="code hl_function" href="classwpi_1_1json.html#ae707b415da6c78c08e9fce024ff66615">swap</a>(m_type, other.m_type);</div>
 <div class="line"><a id="l03698" name="l03698"></a><span class="lineno"> 3698</span>        <a class="code hl_function" href="classwpi_1_1json.html#ae707b415da6c78c08e9fce024ff66615">swap</a>(m_value, other.m_value);</div>
 <div class="line"><a id="l03699" name="l03699"></a><span class="lineno"> 3699</span> </div>
@@ -6583,8 +6583,8 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a id="l06487" name="l06487"></a><span class="lineno"> 6487</span>        std::is_nothrow_move_assignable&lt;json_value&gt;::value</div>
 <div class="line"><a id="l06488" name="l06488"></a><span class="lineno"> 6488</span>    )</div>
 <div class="line"><a id="l06489" name="l06489"></a><span class="lineno"> 6489</span>    {</div>
-<div class="line"><a id="l06490" name="l06490"></a><span class="lineno"> 6490</span>        <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(m_type, other.m_type);</div>
-<div class="line"><a id="l06491" name="l06491"></a><span class="lineno"> 6491</span>        <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(m_value, other.m_value);</div>
+<div class="line"><a id="l06490" name="l06490"></a><span class="lineno"> 6490</span>        <a class="code hl_function" href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a>(m_type, other.m_type);</div>
+<div class="line"><a id="l06491" name="l06491"></a><span class="lineno"> 6491</span>        <a class="code hl_function" href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a>(m_value, other.m_value);</div>
 <div class="line"><a id="l06492" name="l06492"></a><span class="lineno"> 6492</span>        assert_invariant();</div>
 <div class="line"><a id="l06493" name="l06493"></a><span class="lineno"> 6493</span>    }</div>
 <div class="line"><a id="l06494" name="l06494"></a><span class="lineno"> 6494</span><span class="comment"></span> </div>
@@ -6613,7 +6613,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a id="l06517" name="l06517"></a><span class="lineno"> 6517</span>        <span class="comment">// swap only works for arrays</span></div>
 <div class="line"><a id="l06518" name="l06518"></a><span class="lineno"> 6518</span>        <span class="keywordflow">if</span> (<a class="code hl_define" href="json_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(<a class="code hl_function" href="classwpi_1_1json.html#ac609abf5d11cafdd8ef86b51855c1cff">is_array</a>()))</div>
 <div class="line"><a id="l06519" name="l06519"></a><span class="lineno"> 6519</span>        {</div>
-<div class="line"><a id="l06520" name="l06520"></a><span class="lineno"> 6520</span>            <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(*(m_value.array), other);</div>
+<div class="line"><a id="l06520" name="l06520"></a><span class="lineno"> 6520</span>            <a class="code hl_function" href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a>(*(m_value.array), other);</div>
 <div class="line"><a id="l06521" name="l06521"></a><span class="lineno"> 6521</span>        }</div>
 <div class="line"><a id="l06522" name="l06522"></a><span class="lineno"> 6522</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l06523" name="l06523"></a><span class="lineno"> 6523</span>        {</div>
@@ -6646,7 +6646,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a id="l06550" name="l06550"></a><span class="lineno"> 6550</span>        <span class="comment">// swap only works for objects</span></div>
 <div class="line"><a id="l06551" name="l06551"></a><span class="lineno"> 6551</span>        <span class="keywordflow">if</span> (<a class="code hl_define" href="json_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(<a class="code hl_function" href="classwpi_1_1json.html#ad9bba2e624678133a1616cc01cc09943">is_object</a>()))</div>
 <div class="line"><a id="l06552" name="l06552"></a><span class="lineno"> 6552</span>        {</div>
-<div class="line"><a id="l06553" name="l06553"></a><span class="lineno"> 6553</span>            <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(*(m_value.object), other);</div>
+<div class="line"><a id="l06553" name="l06553"></a><span class="lineno"> 6553</span>            <a class="code hl_function" href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a>(*(m_value.object), other);</div>
 <div class="line"><a id="l06554" name="l06554"></a><span class="lineno"> 6554</span>        }</div>
 <div class="line"><a id="l06555" name="l06555"></a><span class="lineno"> 6555</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l06556" name="l06556"></a><span class="lineno"> 6556</span>        {</div>
@@ -6679,7 +6679,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a id="l06583" name="l06583"></a><span class="lineno"> 6583</span>        <span class="comment">// swap only works for strings</span></div>
 <div class="line"><a id="l06584" name="l06584"></a><span class="lineno"> 6584</span>        <span class="keywordflow">if</span> (<a class="code hl_define" href="json_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(<a class="code hl_function" href="classwpi_1_1json.html#adad8aa57b7ea21024b98b932d030a40a">is_string</a>()))</div>
 <div class="line"><a id="l06585" name="l06585"></a><span class="lineno"> 6585</span>        {</div>
-<div class="line"><a id="l06586" name="l06586"></a><span class="lineno"> 6586</span>            <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(*(m_value.string), other);</div>
+<div class="line"><a id="l06586" name="l06586"></a><span class="lineno"> 6586</span>            <a class="code hl_function" href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a>(*(m_value.string), other);</div>
 <div class="line"><a id="l06587" name="l06587"></a><span class="lineno"> 6587</span>        }</div>
 <div class="line"><a id="l06588" name="l06588"></a><span class="lineno"> 6588</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l06589" name="l06589"></a><span class="lineno"> 6589</span>        {</div>
@@ -8524,12 +8524,12 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a518baced025fde474407c95f9a84d6e1"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a518baced025fde474407c95f9a84d6e1">Eigen::numext::int64_t</a></div><div class="ttdeci">::int64_t int64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:59</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a58c956967b2b3b326df2b220ae9b2274"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">Eigen::numext::uint8_t</a></div><div class="ttdeci">::uint8_t uint8_t</div><div class="ttdef"><b>Definition:</b> Meta.h:52</div></div>
 <div class="ttc" id="anamespace_eigen_1_1placeholders_html_a24a00ff0f09137dcde6952ff29fb9f9d"><div class="ttname"><a href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">Eigen::placeholders::end</a></div><div class="ttdeci">static EIGEN_DEPRECATED const end_t end</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:181</div></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> args.h:19</div></div>
+<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> chrono.h:303</div></div>
 <div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:138</div></div>
 <div class="ttc" id="anamespacedigits_html_a8875a3e1d62490230fa116b4c1f99c8b"><div class="ttname"><a href="namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8b">digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> format.h:2556</div></div>
 <div class="ttc" id="anamespaceghc_1_1filesystem_html_a5f795790830f15b8959bdf1af7b2dbad"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#a5f795790830f15b8959bdf1af7b2dbad">ghc::filesystem::begin</a></div><div class="ttdeci">GHC_FS_API directory_iterator begin(directory_iterator iter) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:5746</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacestd_html_a8de3b111383ccb7c625398925d4c7add"><div class="ttname"><a href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallVectorImpl&lt; T &gt; &amp;LHS, wpi::SmallVectorImpl&lt; T &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallVector swap.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1299</div></div>
+<div class="ttc" id="anamespacestd_html_a96fe9b71b86c96cbbd77452a4d949675"><div class="ttname"><a href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallPtrSet&lt; T, N &gt; &amp;LHS, wpi::SmallPtrSet&lt; T, N &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallPtrSet swap.</div><div class="ttdef"><b>Definition:</b> SmallPtrSet.h:512</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a88751eee8d448ad7d24121e14fa7582a"><div class="ttname"><a href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">units::constants::h</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; energy::joule, time::seconds &gt; &gt; h(6.626070040e-34)</div><div class="ttdoc">Planck constant.</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_ae9f8f59df111748817588a056678942b"><div class="ttname"><a href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">units::math::min</a></div><div class="ttdeci">UnitTypeLhs() min(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3413</div></div>
 <div class="ttc" id="anamespaceunits_html_a3a5d2fd30f834f853b96be433c1dc125"><div class="ttname"><a href="namespaceunits.html#a3a5d2fd30f834f853b96be433c1dc125">units::operator+=</a></div><div class="ttdeci">unit_t&lt; Units, T, NonLinearScale &gt; &amp; operator+=(unit_t&lt; Units, T, NonLinearScale &gt; &amp;lhs, const RhsType &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> base.h:2284</div></div>
@@ -8563,7 +8563,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a8994bf0a428d46893ae0472833726332"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">wpi::memory::detail::forward</a></div><div class="ttdeci">T &amp;&amp; forward(typename std::remove_reference&lt; T &gt;::type &amp;t) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:32</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_1_1numbers_html_a2d77ce99cbb4b9e449846009e5828e58"><div class="ttname"><a href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">wpi::numbers::e</a></div><div class="ttdeci">constexpr double e</div><div class="ttdef"><b>Definition:</b> numbers:50</div></div>
-<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> priority_queue.h:13</div></div>
 <div class="ttc" id="anamespacewpi_html_a0f9d3d4eb9461ff65cb2743afa9fd08a"><div class="ttname"><a href="namespacewpi.html#a0f9d3d4eb9461ff65cb2743afa9fd08a">wpi::split</a></div><div class="ttdeci">constexpr std::pair&lt; std::string_view, std::string_view &gt; split(std::string_view str, char separator) noexcept</div><div class="ttdoc">Splits str into two substrings around the first occurrence of a separator character.</div><div class="ttdef"><b>Definition:</b> StringExtras.h:438</div></div>
 <div class="ttc" id="anamespacewpi_html_a642b2450b4eef7de6728e218adde13b5"><div class="ttname"><a href="namespacewpi.html#a642b2450b4eef7de6728e218adde13b5">wpi::get</a></div><div class="ttdeci">constexpr auto get(span&lt; E, S &gt; s) -&gt; decltype(s[N])</div><div class="ttdef"><b>Definition:</b> span.h:387</div></div>
 <div class="ttc" id="anamespacewpi_html_ad032764915283409382ba49638651b69"><div class="ttname"><a href="namespacewpi.html#ad032764915283409382ba49638651b69">wpi::operator!=</a></div><div class="ttdeci">bool operator!=(const SmallSet&lt; T, LN, C &gt; &amp;LHS, const SmallSet&lt; T, RN, C &gt; &amp;RHS)</div><div class="ttdoc">Inequality comparison for SmallSet.</div><div class="ttdef"><b>Definition:</b> SmallSet.h:280</div></div>
@@ -8624,7 +8624,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_c5899dcd8d70be9995aa46df1e95d573.html">json</a></li><li class="navelem"><a class="el" href="dir_55e13a782ff7e1eb68ac482c6e742089.html">include</a></li><li class="navelem"><a class="el" href="dir_0ebdfd797abcdc883dc565d0762779d9.html">wpi</a></li><li class="navelem"><a class="el" href="json_8h.html">json.h</a></li>
-    <li class="footer">Generated on Wed Oct 12 2022 20:57:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 14 2022 00:28:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

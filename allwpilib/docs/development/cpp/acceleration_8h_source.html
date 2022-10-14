@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-7-gca43fe2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-8-g58b6484</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('acceleration_8h_source.html',''); init
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="length_8h.html">units/length.h</a>&quot;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">units/time.h</a>&quot;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunits.html">units</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceunits.html">   33</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunits.html">units</a> {<span class="comment"></span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespaceunits_1_1acceleration.html">   35</a></span><span class="comment"> * @namespace units::acceleration</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * @brief namespace for unit types and containers representing acceleration</span></div>
@@ -138,11 +138,11 @@ $(document).ready(function(){initNavTree('acceleration_8h_source.html',''); init
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#if !defined(DISABLE_PREDEFINED_UNITS) || \</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">    defined(ENABLE_PREDEFINED_ACCELERATION_UNITS)</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">   45</a></span><a class="code hl_function" href="namespaceunits.html#a6e0f1b1079e323019f66b1cdeb86c45e">UNIT_ADD</a>(acceleration, meters_per_second_squared, meters_per_second_squared,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">   45</a></span><a class="code hl_function" href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">UNIT_ADD</a>(acceleration, meters_per_second_squared, meters_per_second_squared,</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>         mps_sq, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1&gt;, <a class="code hl_struct" href="structunits_1_1base__unit.html">units::category::acceleration_unit</a>&gt;)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespaceunits.html#ab6d74831636b47d250f952b0489cefec">   47</a></span><a class="code hl_function" href="namespaceunits.html#a6e0f1b1079e323019f66b1cdeb86c45e">UNIT_ADD</a>(acceleration, <a class="code hl_variable" href="namespaceunits.html#ab6d74831636b47d250f952b0489cefec">feet_per_second_squared</a>, <a class="code hl_variable" href="namespaceunits.html#ab6d74831636b47d250f952b0489cefec">feet_per_second_squared</a>, <a class="code hl_variable" href="namespaceunits.html#af05b755ce5c951c4a22ab05ecdc4828c">fps_sq</a>,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespaceunits.html#ab6d74831636b47d250f952b0489cefec">   47</a></span><a class="code hl_function" href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">UNIT_ADD</a>(acceleration, <a class="code hl_variable" href="namespaceunits.html#ab6d74831636b47d250f952b0489cefec">feet_per_second_squared</a>, <a class="code hl_variable" href="namespaceunits.html#ab6d74831636b47d250f952b0489cefec">feet_per_second_squared</a>, <a class="code hl_variable" href="namespaceunits.html#af05b755ce5c951c4a22ab05ecdc4828c">fps_sq</a>,</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>         <a class="code hl_typedef" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">compound_unit</a>&lt;length::feet, <a class="code hl_typedef" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">inverse</a>&lt;<a class="code hl_typedef" href="group___unit_manipulators.html#ga38048bc5246636a5eb0007262475dc38">squared</a>&lt;time::seconds&gt;&gt;&gt;)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespaceunits.html#a33a854bf79373c23b2ffdd77fb88dc84">   49</a></span><a class="code hl_function" href="namespaceunits.html#a6e0f1b1079e323019f66b1cdeb86c45e">UNIT_ADD</a>(acceleration, standard_gravity, standard_gravity, SG,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespaceunits.html#a33a854bf79373c23b2ffdd77fb88dc84">   49</a></span><a class="code hl_function" href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">UNIT_ADD</a>(acceleration, standard_gravity, standard_gravity, SG,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>         <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;<a class="code hl_namespace" href="namespacestd.html">std</a>::ratio&lt;980665, 100000&gt;, meters_per_second_squared&gt;)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><a class="code hl_define" href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a>(acceleration)</div>
@@ -157,8 +157,8 @@ $(document).ready(function(){initNavTree('acceleration_8h_source.html',''); init
 <div class="ttc" id="agroup___unit_types_html_ga36d8b8cf508bd5ac7854d15f6eaf2d7c"><div class="ttname"><a href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a></div><div class="ttdeci">typename units::detail::compound_impl&lt; U, Us... &gt;::type compound_unit</div><div class="ttdoc">Represents a unit type made up from other units.</div><div class="ttdef"><b>Definition:</b> base.h:1437</div></div>
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> mass.h:31</div></div>
-<div class="ttc" id="anamespaceunits_html_a6e0f1b1079e323019f66b1cdeb86c45e"><div class="ttname"><a href="namespaceunits.html#a6e0f1b1079e323019f66b1cdeb86c45e">units::UNIT_ADD</a></div><div class="ttdeci">unit&lt; std::ratio&lt; 45359237, 100000000 &gt;, kilograms &gt; UNIT_ADD(mass, slug, slugs, slug, unit&lt; std::ratio&lt; 145939029, 10000000 &gt;, kilograms &gt;) using namespace mass</div></div>
+<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> acceleration.h:33</div></div>
+<div class="ttc" id="anamespaceunits_html_a03fc94499a6da0de5d3c05a545005d7e"><div class="ttname"><a href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">units::UNIT_ADD</a></div><div class="ttdeci">UNIT_ADD(acceleration, meters_per_second_squared, meters_per_second_squared, mps_sq, unit&lt; std::ratio&lt; 1 &gt;, units::category::acceleration_unit &gt;) UNIT_ADD(acceleration</div></div>
 <div class="ttc" id="anamespaceunits_html_ab6d74831636b47d250f952b0489cefec"><div class="ttname"><a href="namespaceunits.html#ab6d74831636b47d250f952b0489cefec">units::feet_per_second_squared</a></div><div class="ttdeci">feet_per_second_squared</div><div class="ttdef"><b>Definition:</b> acceleration.h:47</div></div>
 <div class="ttc" id="anamespaceunits_html_af05b755ce5c951c4a22ab05ecdc4828c"><div class="ttname"><a href="namespaceunits.html#af05b755ce5c951c4a22ab05ecdc4828c">units::fps_sq</a></div><div class="ttdeci">fps_sq</div><div class="ttdef"><b>Definition:</b> acceleration.h:47</div></div>
 <div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:761</div></div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('acceleration_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="acceleration_8h.html">acceleration.h</a></li>
-    <li class="footer">Generated on Wed Oct 12 2022 20:57:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 14 2022 00:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
