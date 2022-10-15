@@ -18,55 +18,140 @@
 <span class="sourceLineNo">006</span><a id="line.6"></a>
 <span class="sourceLineNo">007</span><a id="line.7">/** Network table data types. */</a>
 <span class="sourceLineNo">008</span><a id="line.8">public enum NetworkTableType {</a>
-<span class="sourceLineNo">009</span><a id="line.9">  kUnassigned(0),</a>
-<span class="sourceLineNo">010</span><a id="line.10">  kBoolean(0x01),</a>
-<span class="sourceLineNo">011</span><a id="line.11">  kDouble(0x02),</a>
-<span class="sourceLineNo">012</span><a id="line.12">  kString(0x04),</a>
-<span class="sourceLineNo">013</span><a id="line.13">  kRaw(0x08),</a>
-<span class="sourceLineNo">014</span><a id="line.14">  kBooleanArray(0x10),</a>
-<span class="sourceLineNo">015</span><a id="line.15">  kDoubleArray(0x20),</a>
-<span class="sourceLineNo">016</span><a id="line.16">  kStringArray(0x40),</a>
-<span class="sourceLineNo">017</span><a id="line.17">  kRpc(0x80);</a>
-<span class="sourceLineNo">018</span><a id="line.18"></a>
-<span class="sourceLineNo">019</span><a id="line.19">  private final int value;</a>
-<span class="sourceLineNo">020</span><a id="line.20"></a>
-<span class="sourceLineNo">021</span><a id="line.21">  NetworkTableType(int value) {</a>
-<span class="sourceLineNo">022</span><a id="line.22">    this.value = value;</a>
-<span class="sourceLineNo">023</span><a id="line.23">  }</a>
+<span class="sourceLineNo">009</span><a id="line.9">  kUnassigned(0, ""),</a>
+<span class="sourceLineNo">010</span><a id="line.10">  kBoolean(0x01, "boolean"),</a>
+<span class="sourceLineNo">011</span><a id="line.11">  kDouble(0x02, "double"),</a>
+<span class="sourceLineNo">012</span><a id="line.12">  kString(0x04, "string"),</a>
+<span class="sourceLineNo">013</span><a id="line.13">  kRaw(0x08, "raw"),</a>
+<span class="sourceLineNo">014</span><a id="line.14">  kBooleanArray(0x10, "boolean[]"),</a>
+<span class="sourceLineNo">015</span><a id="line.15">  kDoubleArray(0x20, "double[]"),</a>
+<span class="sourceLineNo">016</span><a id="line.16">  kStringArray(0x40, "string[]"),</a>
+<span class="sourceLineNo">017</span><a id="line.17">  kInteger(0x100, "int"),</a>
+<span class="sourceLineNo">018</span><a id="line.18">  kFloat(0x200, "float"),</a>
+<span class="sourceLineNo">019</span><a id="line.19">  kIntegerArray(0x400, "int[]"),</a>
+<span class="sourceLineNo">020</span><a id="line.20">  kFloatArray(0x800, "float[]");</a>
+<span class="sourceLineNo">021</span><a id="line.21"></a>
+<span class="sourceLineNo">022</span><a id="line.22">  private final int m_value;</a>
+<span class="sourceLineNo">023</span><a id="line.23">  private final String m_valueStr;</a>
 <span class="sourceLineNo">024</span><a id="line.24"></a>
-<span class="sourceLineNo">025</span><a id="line.25">  public int getValue() {</a>
-<span class="sourceLineNo">026</span><a id="line.26">    return value;</a>
-<span class="sourceLineNo">027</span><a id="line.27">  }</a>
-<span class="sourceLineNo">028</span><a id="line.28"></a>
-<span class="sourceLineNo">029</span><a id="line.29">  /**</a>
-<span class="sourceLineNo">030</span><a id="line.30">   * Convert from the numerical representation of type to an enum type.</a>
-<span class="sourceLineNo">031</span><a id="line.31">   *</a>
-<span class="sourceLineNo">032</span><a id="line.32">   * @param value The numerical representation of kind</a>
-<span class="sourceLineNo">033</span><a id="line.33">   * @return The kind</a>
-<span class="sourceLineNo">034</span><a id="line.34">   */</a>
-<span class="sourceLineNo">035</span><a id="line.35">  public static NetworkTableType getFromInt(int value) {</a>
-<span class="sourceLineNo">036</span><a id="line.36">    switch (value) {</a>
-<span class="sourceLineNo">037</span><a id="line.37">      case 0x01:</a>
-<span class="sourceLineNo">038</span><a id="line.38">        return kBoolean;</a>
-<span class="sourceLineNo">039</span><a id="line.39">      case 0x02:</a>
-<span class="sourceLineNo">040</span><a id="line.40">        return kDouble;</a>
-<span class="sourceLineNo">041</span><a id="line.41">      case 0x04:</a>
-<span class="sourceLineNo">042</span><a id="line.42">        return kString;</a>
-<span class="sourceLineNo">043</span><a id="line.43">      case 0x08:</a>
-<span class="sourceLineNo">044</span><a id="line.44">        return kRaw;</a>
-<span class="sourceLineNo">045</span><a id="line.45">      case 0x10:</a>
-<span class="sourceLineNo">046</span><a id="line.46">        return kBooleanArray;</a>
-<span class="sourceLineNo">047</span><a id="line.47">      case 0x20:</a>
-<span class="sourceLineNo">048</span><a id="line.48">        return kDoubleArray;</a>
-<span class="sourceLineNo">049</span><a id="line.49">      case 0x40:</a>
-<span class="sourceLineNo">050</span><a id="line.50">        return kStringArray;</a>
-<span class="sourceLineNo">051</span><a id="line.51">      case 0x80:</a>
-<span class="sourceLineNo">052</span><a id="line.52">        return kRpc;</a>
-<span class="sourceLineNo">053</span><a id="line.53">      default:</a>
-<span class="sourceLineNo">054</span><a id="line.54">        return kUnassigned;</a>
-<span class="sourceLineNo">055</span><a id="line.55">    }</a>
-<span class="sourceLineNo">056</span><a id="line.56">  }</a>
-<span class="sourceLineNo">057</span><a id="line.57">}</a>
+<span class="sourceLineNo">025</span><a id="line.25">  NetworkTableType(int value, String valueStr) {</a>
+<span class="sourceLineNo">026</span><a id="line.26">    m_value = value;</a>
+<span class="sourceLineNo">027</span><a id="line.27">    m_valueStr = valueStr;</a>
+<span class="sourceLineNo">028</span><a id="line.28">  }</a>
+<span class="sourceLineNo">029</span><a id="line.29"></a>
+<span class="sourceLineNo">030</span><a id="line.30">  public int getValue() {</a>
+<span class="sourceLineNo">031</span><a id="line.31">    return m_value;</a>
+<span class="sourceLineNo">032</span><a id="line.32">  }</a>
+<span class="sourceLineNo">033</span><a id="line.33"></a>
+<span class="sourceLineNo">034</span><a id="line.34">  public String getValueStr() {</a>
+<span class="sourceLineNo">035</span><a id="line.35">    return m_valueStr;</a>
+<span class="sourceLineNo">036</span><a id="line.36">  }</a>
+<span class="sourceLineNo">037</span><a id="line.37"></a>
+<span class="sourceLineNo">038</span><a id="line.38">  /**</a>
+<span class="sourceLineNo">039</span><a id="line.39">   * Convert from the numerical representation of type to an enum type.</a>
+<span class="sourceLineNo">040</span><a id="line.40">   *</a>
+<span class="sourceLineNo">041</span><a id="line.41">   * @param value The numerical representation of kind</a>
+<span class="sourceLineNo">042</span><a id="line.42">   * @return The kind</a>
+<span class="sourceLineNo">043</span><a id="line.43">   */</a>
+<span class="sourceLineNo">044</span><a id="line.44">  public static NetworkTableType getFromInt(int value) {</a>
+<span class="sourceLineNo">045</span><a id="line.45">    switch (value) {</a>
+<span class="sourceLineNo">046</span><a id="line.46">      case 0x01:</a>
+<span class="sourceLineNo">047</span><a id="line.47">        return kBoolean;</a>
+<span class="sourceLineNo">048</span><a id="line.48">      case 0x02:</a>
+<span class="sourceLineNo">049</span><a id="line.49">        return kDouble;</a>
+<span class="sourceLineNo">050</span><a id="line.50">      case 0x04:</a>
+<span class="sourceLineNo">051</span><a id="line.51">        return kString;</a>
+<span class="sourceLineNo">052</span><a id="line.52">      case 0x08:</a>
+<span class="sourceLineNo">053</span><a id="line.53">        return kRaw;</a>
+<span class="sourceLineNo">054</span><a id="line.54">      case 0x10:</a>
+<span class="sourceLineNo">055</span><a id="line.55">        return kBooleanArray;</a>
+<span class="sourceLineNo">056</span><a id="line.56">      case 0x20:</a>
+<span class="sourceLineNo">057</span><a id="line.57">        return kDoubleArray;</a>
+<span class="sourceLineNo">058</span><a id="line.58">      case 0x40:</a>
+<span class="sourceLineNo">059</span><a id="line.59">        return kStringArray;</a>
+<span class="sourceLineNo">060</span><a id="line.60">      case 0x100:</a>
+<span class="sourceLineNo">061</span><a id="line.61">        return kInteger;</a>
+<span class="sourceLineNo">062</span><a id="line.62">      case 0x200:</a>
+<span class="sourceLineNo">063</span><a id="line.63">        return kFloat;</a>
+<span class="sourceLineNo">064</span><a id="line.64">      case 0x400:</a>
+<span class="sourceLineNo">065</span><a id="line.65">        return kIntegerArray;</a>
+<span class="sourceLineNo">066</span><a id="line.66">      case 0x800:</a>
+<span class="sourceLineNo">067</span><a id="line.67">        return kFloatArray;</a>
+<span class="sourceLineNo">068</span><a id="line.68">      default:</a>
+<span class="sourceLineNo">069</span><a id="line.69">        return kUnassigned;</a>
+<span class="sourceLineNo">070</span><a id="line.70">    }</a>
+<span class="sourceLineNo">071</span><a id="line.71">  }</a>
+<span class="sourceLineNo">072</span><a id="line.72"></a>
+<span class="sourceLineNo">073</span><a id="line.73">  /**</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * Convert from a type string to an enum type.</a>
+<span class="sourceLineNo">075</span><a id="line.75">   *</a>
+<span class="sourceLineNo">076</span><a id="line.76">   * @param typeString type string</a>
+<span class="sourceLineNo">077</span><a id="line.77">   * @return The kind</a>
+<span class="sourceLineNo">078</span><a id="line.78">   */</a>
+<span class="sourceLineNo">079</span><a id="line.79">  public static NetworkTableType getFromString(String typeString) {</a>
+<span class="sourceLineNo">080</span><a id="line.80">    switch (typeString) {</a>
+<span class="sourceLineNo">081</span><a id="line.81">      case "boolean":</a>
+<span class="sourceLineNo">082</span><a id="line.82">        return kBoolean;</a>
+<span class="sourceLineNo">083</span><a id="line.83">      case "double":</a>
+<span class="sourceLineNo">084</span><a id="line.84">        return kDouble;</a>
+<span class="sourceLineNo">085</span><a id="line.85">      case "float":</a>
+<span class="sourceLineNo">086</span><a id="line.86">        return kFloat;</a>
+<span class="sourceLineNo">087</span><a id="line.87">      case "int":</a>
+<span class="sourceLineNo">088</span><a id="line.88">        return kInteger;</a>
+<span class="sourceLineNo">089</span><a id="line.89">      case "string":</a>
+<span class="sourceLineNo">090</span><a id="line.90">      case "json":</a>
+<span class="sourceLineNo">091</span><a id="line.91">        return kString;</a>
+<span class="sourceLineNo">092</span><a id="line.92">      case "boolean[]":</a>
+<span class="sourceLineNo">093</span><a id="line.93">        return kBooleanArray;</a>
+<span class="sourceLineNo">094</span><a id="line.94">      case "double[]":</a>
+<span class="sourceLineNo">095</span><a id="line.95">        return kDoubleArray;</a>
+<span class="sourceLineNo">096</span><a id="line.96">      case "float[]":</a>
+<span class="sourceLineNo">097</span><a id="line.97">        return kFloatArray;</a>
+<span class="sourceLineNo">098</span><a id="line.98">      case "int[]":</a>
+<span class="sourceLineNo">099</span><a id="line.99">        return kIntegerArray;</a>
+<span class="sourceLineNo">100</span><a id="line.100">      case "string[]":</a>
+<span class="sourceLineNo">101</span><a id="line.101">        return kStringArray;</a>
+<span class="sourceLineNo">102</span><a id="line.102">      case "":</a>
+<span class="sourceLineNo">103</span><a id="line.103">        return kUnassigned;</a>
+<span class="sourceLineNo">104</span><a id="line.104">      default:</a>
+<span class="sourceLineNo">105</span><a id="line.105">        return kRaw;</a>
+<span class="sourceLineNo">106</span><a id="line.106">    }</a>
+<span class="sourceLineNo">107</span><a id="line.107">  }</a>
+<span class="sourceLineNo">108</span><a id="line.108"></a>
+<span class="sourceLineNo">109</span><a id="line.109">  /**</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * Gets string from generic data value.</a>
+<span class="sourceLineNo">111</span><a id="line.111">   *</a>
+<span class="sourceLineNo">112</span><a id="line.112">   * @param data the data to check</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * @return type string of the data, or empty string if no match</a>
+<span class="sourceLineNo">114</span><a id="line.114">   */</a>
+<span class="sourceLineNo">115</span><a id="line.115">  public static String getStringFromObject(Object data) {</a>
+<span class="sourceLineNo">116</span><a id="line.116">    if (data instanceof Boolean) {</a>
+<span class="sourceLineNo">117</span><a id="line.117">      return "boolean";</a>
+<span class="sourceLineNo">118</span><a id="line.118">    } else if (data instanceof Float) {</a>
+<span class="sourceLineNo">119</span><a id="line.119">      return "float";</a>
+<span class="sourceLineNo">120</span><a id="line.120">    } else if (data instanceof Long) {</a>
+<span class="sourceLineNo">121</span><a id="line.121">      return "int";</a>
+<span class="sourceLineNo">122</span><a id="line.122">    } else if (data instanceof Double || data instanceof Number) {</a>
+<span class="sourceLineNo">123</span><a id="line.123">      return "double";</a>
+<span class="sourceLineNo">124</span><a id="line.124">    } else if (data instanceof String) {</a>
+<span class="sourceLineNo">125</span><a id="line.125">      return "string";</a>
+<span class="sourceLineNo">126</span><a id="line.126">    } else if (data instanceof boolean[] || data instanceof Boolean[]) {</a>
+<span class="sourceLineNo">127</span><a id="line.127">      return "boolean[]";</a>
+<span class="sourceLineNo">128</span><a id="line.128">    } else if (data instanceof float[] || data instanceof Float[]) {</a>
+<span class="sourceLineNo">129</span><a id="line.129">      return "float[]";</a>
+<span class="sourceLineNo">130</span><a id="line.130">    } else if (data instanceof long[] || data instanceof Long[]) {</a>
+<span class="sourceLineNo">131</span><a id="line.131">      return "int[]";</a>
+<span class="sourceLineNo">132</span><a id="line.132">    } else if (data instanceof double[] || data instanceof Double[] || data instanceof Number[]) {</a>
+<span class="sourceLineNo">133</span><a id="line.133">      return "double[]";</a>
+<span class="sourceLineNo">134</span><a id="line.134">    } else if (data instanceof String[]) {</a>
+<span class="sourceLineNo">135</span><a id="line.135">      return "string[]";</a>
+<span class="sourceLineNo">136</span><a id="line.136">    } else if (data instanceof byte[] || data instanceof Byte[]) {</a>
+<span class="sourceLineNo">137</span><a id="line.137">      return "raw";</a>
+<span class="sourceLineNo">138</span><a id="line.138">    } else {</a>
+<span class="sourceLineNo">139</span><a id="line.139">      return "";</a>
+<span class="sourceLineNo">140</span><a id="line.140">    }</a>
+<span class="sourceLineNo">141</span><a id="line.141">  }</a>
+<span class="sourceLineNo">142</span><a id="line.142">}</a>
 
 
 

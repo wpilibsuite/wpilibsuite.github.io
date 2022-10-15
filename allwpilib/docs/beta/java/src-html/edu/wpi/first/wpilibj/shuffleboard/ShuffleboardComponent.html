@@ -127,21 +127,21 @@
 <span class="sourceLineNo">115</span><a id="line.115">    }</a>
 <span class="sourceLineNo">116</span><a id="line.116">    // Component type</a>
 <span class="sourceLineNo">117</span><a id="line.117">    if (getType() == null) {</a>
-<span class="sourceLineNo">118</span><a id="line.118">      metaTable.getEntry("PreferredComponent").delete();</a>
+<span class="sourceLineNo">118</span><a id="line.118">      metaTable.getEntry("PreferredComponent").unpublish();</a>
 <span class="sourceLineNo">119</span><a id="line.119">    } else {</a>
-<span class="sourceLineNo">120</span><a id="line.120">      metaTable.getEntry("PreferredComponent").forceSetString(getType());</a>
+<span class="sourceLineNo">120</span><a id="line.120">      metaTable.getEntry("PreferredComponent").setString(getType());</a>
 <span class="sourceLineNo">121</span><a id="line.121">    }</a>
 <span class="sourceLineNo">122</span><a id="line.122"></a>
 <span class="sourceLineNo">123</span><a id="line.123">    // Tile size</a>
 <span class="sourceLineNo">124</span><a id="line.124">    if (m_width &lt;= 0 || m_height &lt;= 0) {</a>
-<span class="sourceLineNo">125</span><a id="line.125">      metaTable.getEntry("Size").delete();</a>
+<span class="sourceLineNo">125</span><a id="line.125">      metaTable.getEntry("Size").unpublish();</a>
 <span class="sourceLineNo">126</span><a id="line.126">    } else {</a>
 <span class="sourceLineNo">127</span><a id="line.127">      metaTable.getEntry("Size").setDoubleArray(new double[] {m_width, m_height});</a>
 <span class="sourceLineNo">128</span><a id="line.128">    }</a>
 <span class="sourceLineNo">129</span><a id="line.129"></a>
 <span class="sourceLineNo">130</span><a id="line.130">    // Tile position</a>
 <span class="sourceLineNo">131</span><a id="line.131">    if (m_column &lt; 0 || m_row &lt; 0) {</a>
-<span class="sourceLineNo">132</span><a id="line.132">      metaTable.getEntry("Position").delete();</a>
+<span class="sourceLineNo">132</span><a id="line.132">      metaTable.getEntry("Position").unpublish();</a>
 <span class="sourceLineNo">133</span><a id="line.133">    } else {</a>
 <span class="sourceLineNo">134</span><a id="line.134">      metaTable.getEntry("Position").setDoubleArray(new double[] {m_column, m_row});</a>
 <span class="sourceLineNo">135</span><a id="line.135">    }</a>

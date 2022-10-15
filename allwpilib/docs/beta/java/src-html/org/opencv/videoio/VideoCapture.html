@@ -99,10 +99,10 @@
 <span class="sourceLineNo">087</span><a id="line.87">     *      or GStreamer pipeline string in gst-launch tool format in case if GStreamer is used as backend</a>
 <span class="sourceLineNo">088</span><a id="line.88">     *       Note that each video stream or IP camera feed has its own URL scheme. Please refer to the</a>
 <span class="sourceLineNo">089</span><a id="line.89">     *       documentation of source stream to know the right URL.</a>
-<span class="sourceLineNo">090</span><a id="line.90">     *     @param apiPreference preferred Capture API backends to use. Can be used to enforce a specific reader</a>
-<span class="sourceLineNo">091</span><a id="line.91">     *     implementation if multiple are available: e.g. cv::CAP_FFMPEG or cv::CAP_IMAGES or cv::CAP_DSHOW.</a>
-<span class="sourceLineNo">092</span><a id="line.92">     *   &lt;/li&gt;</a>
-<span class="sourceLineNo">093</span><a id="line.93">     * &lt;/ul&gt;</a>
+<span class="sourceLineNo">090</span><a id="line.90">     *   &lt;/li&gt;</a>
+<span class="sourceLineNo">091</span><a id="line.91">     * &lt;/ul&gt;</a>
+<span class="sourceLineNo">092</span><a id="line.92">     *     @param apiPreference preferred Capture API backends to use. Can be used to enforce a specific reader</a>
+<span class="sourceLineNo">093</span><a id="line.93">     *     implementation if multiple are available: e.g. cv::CAP_FFMPEG or cv::CAP_IMAGES or cv::CAP_DSHOW.</a>
 <span class="sourceLineNo">094</span><a id="line.94">     *</a>
 <span class="sourceLineNo">095</span><a id="line.95">     *     SEE: cv::VideoCaptureAPIs</a>
 <span class="sourceLineNo">096</span><a id="line.96">     */</a>
@@ -129,9 +129,9 @@
 <span class="sourceLineNo">117</span><a id="line.117">     *      or GStreamer pipeline string in gst-launch tool format in case if GStreamer is used as backend</a>
 <span class="sourceLineNo">118</span><a id="line.118">     *       Note that each video stream or IP camera feed has its own URL scheme. Please refer to the</a>
 <span class="sourceLineNo">119</span><a id="line.119">     *       documentation of source stream to know the right URL.</a>
-<span class="sourceLineNo">120</span><a id="line.120">     *     implementation if multiple are available: e.g. cv::CAP_FFMPEG or cv::CAP_IMAGES or cv::CAP_DSHOW.</a>
-<span class="sourceLineNo">121</span><a id="line.121">     *   &lt;/li&gt;</a>
-<span class="sourceLineNo">122</span><a id="line.122">     * &lt;/ul&gt;</a>
+<span class="sourceLineNo">120</span><a id="line.120">     *   &lt;/li&gt;</a>
+<span class="sourceLineNo">121</span><a id="line.121">     * &lt;/ul&gt;</a>
+<span class="sourceLineNo">122</span><a id="line.122">     *     implementation if multiple are available: e.g. cv::CAP_FFMPEG or cv::CAP_IMAGES or cv::CAP_DSHOW.</a>
 <span class="sourceLineNo">123</span><a id="line.123">     *</a>
 <span class="sourceLineNo">124</span><a id="line.124">     *     SEE: cv::VideoCaptureAPIs</a>
 <span class="sourceLineNo">125</span><a id="line.125">     */</a>
@@ -255,7 +255,7 @@
 <span class="sourceLineNo">243</span><a id="line.243">    //</a>
 <span class="sourceLineNo">244</span><a id="line.244"></a>
 <span class="sourceLineNo">245</span><a id="line.245">    /**</a>
-<span class="sourceLineNo">246</span><a id="line.246">     *  Opens a camera for video capturing</a>
+<span class="sourceLineNo">246</span><a id="line.246">     *  Opens a video file or a capturing device or an IP video stream for video capturing with API Preference and parameters</a>
 <span class="sourceLineNo">247</span><a id="line.247">     *</a>
 <span class="sourceLineNo">248</span><a id="line.248">     *     </a>
 <span class="sourceLineNo">249</span><a id="line.249">     *</a>
@@ -316,7 +316,7 @@
 <span class="sourceLineNo">304</span><a id="line.304">    //</a>
 <span class="sourceLineNo">305</span><a id="line.305"></a>
 <span class="sourceLineNo">306</span><a id="line.306">    /**</a>
-<span class="sourceLineNo">307</span><a id="line.307">     * Returns true if video capturing has been initialized already.</a>
+<span class="sourceLineNo">307</span><a id="line.307">     *  Opens a camera for video capturing with API Preference and parameters</a>
 <span class="sourceLineNo">308</span><a id="line.308">     *</a>
 <span class="sourceLineNo">309</span><a id="line.309">     *     </a>
 <span class="sourceLineNo">310</span><a id="line.310">     *</a>

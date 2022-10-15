@@ -85,48 +85,46 @@
 <span class="sourceLineNo">073</span><a id="line.73">  }</a>
 <span class="sourceLineNo">074</span><a id="line.74"></a>
 <span class="sourceLineNo">075</span><a id="line.75">  /**</a>
-<span class="sourceLineNo">076</span><a id="line.76">   * Get the raw output ratio of the duty cycle signal.</a>
+<span class="sourceLineNo">076</span><a id="line.76">   * Get the raw high time of the duty cycle signal.</a>
 <span class="sourceLineNo">077</span><a id="line.77">   *</a>
-<span class="sourceLineNo">078</span><a id="line.78">   * &lt;p&gt;0 means always low, an output equal to getOutputScaleFactor() means always high.</a>
-<span class="sourceLineNo">079</span><a id="line.79">   *</a>
-<span class="sourceLineNo">080</span><a id="line.80">   * @return output ratio in raw units</a>
-<span class="sourceLineNo">081</span><a id="line.81">   */</a>
-<span class="sourceLineNo">082</span><a id="line.82">  public int getOutputRaw() {</a>
-<span class="sourceLineNo">083</span><a id="line.83">    return DutyCycleJNI.getOutputRaw(m_handle);</a>
-<span class="sourceLineNo">084</span><a id="line.84">  }</a>
-<span class="sourceLineNo">085</span><a id="line.85"></a>
-<span class="sourceLineNo">086</span><a id="line.86">  /**</a>
-<span class="sourceLineNo">087</span><a id="line.87">   * Get the scale factor of the output.</a>
-<span class="sourceLineNo">088</span><a id="line.88">   *</a>
-<span class="sourceLineNo">089</span><a id="line.89">   * &lt;p&gt;An output equal to this value is always high, and then linearly scales down to 0. Divide the</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * result of getOutputRaw by this in order to get the percentage between 0 and 1.</a>
-<span class="sourceLineNo">091</span><a id="line.91">   *</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * @return the output scale factor</a>
-<span class="sourceLineNo">093</span><a id="line.93">   */</a>
-<span class="sourceLineNo">094</span><a id="line.94">  public int getOutputScaleFactor() {</a>
-<span class="sourceLineNo">095</span><a id="line.95">    return DutyCycleJNI.getOutputScaleFactor(m_handle);</a>
-<span class="sourceLineNo">096</span><a id="line.96">  }</a>
-<span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">  /**</a>
-<span class="sourceLineNo">099</span><a id="line.99">   * Get the FPGA index for the DutyCycle.</a>
-<span class="sourceLineNo">100</span><a id="line.100">   *</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * @return the FPGA index</a>
-<span class="sourceLineNo">102</span><a id="line.102">   */</a>
-<span class="sourceLineNo">103</span><a id="line.103">  public final int getFPGAIndex() {</a>
-<span class="sourceLineNo">104</span><a id="line.104">    return DutyCycleJNI.getFPGAIndex(m_handle);</a>
-<span class="sourceLineNo">105</span><a id="line.105">  }</a>
-<span class="sourceLineNo">106</span><a id="line.106"></a>
-<span class="sourceLineNo">107</span><a id="line.107">  public int getSourceChannel() {</a>
-<span class="sourceLineNo">108</span><a id="line.108">    return m_source.getChannel();</a>
-<span class="sourceLineNo">109</span><a id="line.109">  }</a>
-<span class="sourceLineNo">110</span><a id="line.110"></a>
-<span class="sourceLineNo">111</span><a id="line.111">  @Override</a>
-<span class="sourceLineNo">112</span><a id="line.112">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">113</span><a id="line.113">    builder.setSmartDashboardType("Duty Cycle");</a>
-<span class="sourceLineNo">114</span><a id="line.114">    builder.addDoubleProperty("Frequency", this::getFrequency, null);</a>
-<span class="sourceLineNo">115</span><a id="line.115">    builder.addDoubleProperty("Output", this::getOutput, null);</a>
-<span class="sourceLineNo">116</span><a id="line.116">  }</a>
-<span class="sourceLineNo">117</span><a id="line.117">}</a>
+<span class="sourceLineNo">078</span><a id="line.78">   * @return high time of last pulse in nanoseconds</a>
+<span class="sourceLineNo">079</span><a id="line.79">   */</a>
+<span class="sourceLineNo">080</span><a id="line.80">  public int getHighTimeNanoseconds() {</a>
+<span class="sourceLineNo">081</span><a id="line.81">    return DutyCycleJNI.getHighTime(m_handle);</a>
+<span class="sourceLineNo">082</span><a id="line.82">  }</a>
+<span class="sourceLineNo">083</span><a id="line.83"></a>
+<span class="sourceLineNo">084</span><a id="line.84">  /**</a>
+<span class="sourceLineNo">085</span><a id="line.85">   * Get the scale factor of the output.</a>
+<span class="sourceLineNo">086</span><a id="line.86">   *</a>
+<span class="sourceLineNo">087</span><a id="line.87">   * &lt;p&gt;An output equal to this value is always high, and then linearly scales down to 0. Divide a</a>
+<span class="sourceLineNo">088</span><a id="line.88">   * raw result by this in order to get the percentage between 0 and 1. Used by DMA.</a>
+<span class="sourceLineNo">089</span><a id="line.89">   *</a>
+<span class="sourceLineNo">090</span><a id="line.90">   * @return the output scale factor</a>
+<span class="sourceLineNo">091</span><a id="line.91">   */</a>
+<span class="sourceLineNo">092</span><a id="line.92">  public int getOutputScaleFactor() {</a>
+<span class="sourceLineNo">093</span><a id="line.93">    return DutyCycleJNI.getOutputScaleFactor(m_handle);</a>
+<span class="sourceLineNo">094</span><a id="line.94">  }</a>
+<span class="sourceLineNo">095</span><a id="line.95"></a>
+<span class="sourceLineNo">096</span><a id="line.96">  /**</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * Get the FPGA index for the DutyCycle.</a>
+<span class="sourceLineNo">098</span><a id="line.98">   *</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * @return the FPGA index</a>
+<span class="sourceLineNo">100</span><a id="line.100">   */</a>
+<span class="sourceLineNo">101</span><a id="line.101">  public final int getFPGAIndex() {</a>
+<span class="sourceLineNo">102</span><a id="line.102">    return DutyCycleJNI.getFPGAIndex(m_handle);</a>
+<span class="sourceLineNo">103</span><a id="line.103">  }</a>
+<span class="sourceLineNo">104</span><a id="line.104"></a>
+<span class="sourceLineNo">105</span><a id="line.105">  public int getSourceChannel() {</a>
+<span class="sourceLineNo">106</span><a id="line.106">    return m_source.getChannel();</a>
+<span class="sourceLineNo">107</span><a id="line.107">  }</a>
+<span class="sourceLineNo">108</span><a id="line.108"></a>
+<span class="sourceLineNo">109</span><a id="line.109">  @Override</a>
+<span class="sourceLineNo">110</span><a id="line.110">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">111</span><a id="line.111">    builder.setSmartDashboardType("Duty Cycle");</a>
+<span class="sourceLineNo">112</span><a id="line.112">    builder.addDoubleProperty("Frequency", this::getFrequency, null);</a>
+<span class="sourceLineNo">113</span><a id="line.113">    builder.addDoubleProperty("Output", this::getOutput, null);</a>
+<span class="sourceLineNo">114</span><a id="line.114">  }</a>
+<span class="sourceLineNo">115</span><a id="line.115">}</a>
 
 
 
