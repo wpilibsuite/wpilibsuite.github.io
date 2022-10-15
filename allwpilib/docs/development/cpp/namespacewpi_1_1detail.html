@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-11-g1f45732</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
    </div>
   </td>
  </tr>
@@ -439,6 +439,9 @@ Functions</h2></td></tr>
 <tr class="memitem:acfcb089b73de4517011b431978f39778"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename... Args&gt; </td></tr>
 <tr class="memitem:acfcb089b73de4517011b431978f39778"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#acfcb089b73de4517011b431978f39778">to_json</a> (BasicJsonType &amp;j, const std::tuple&lt; Args... &gt; &amp;t)</td></tr>
 <tr class="separator:acfcb089b73de4517011b431978f39778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333649a1789bc79e44f927ee73c60c25"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#a333649a1789bc79e44f927ee73c60c25">combineHashValue</a> (unsigned a, unsigned b)</td></tr>
+<tr class="memdesc:a333649a1789bc79e44f927ee73c60c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simplistic combination of 32-bit hash values into 32-bit hash values.  <a href="namespacewpi_1_1detail.html#a333649a1789bc79e44f927ee73c60c25">More...</a><br /></td></tr>
+<tr class="separator:a333649a1789bc79e44f927ee73c60c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba379bdfe3dc1495ea9bdbc8975e4493"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#aba379bdfe3dc1495ea9bdbc8975e4493">GetAsUnsignedInteger</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, unsigned radix, unsigned long long &amp;result) noexcept</td></tr>
 <tr class="separator:aba379bdfe3dc1495ea9bdbc8975e4493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a399e353f27a456e8c7fabaa4e3b0e171"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#a399e353f27a456e8c7fabaa4e3b0e171">GetAsSignedInteger</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, unsigned radix, long long &amp;result) noexcept</td></tr>
@@ -447,9 +450,6 @@ Functions</h2></td></tr>
 <tr class="separator:a3cfddbbfbd641d2c2a775d966db02713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af707cd06c4cf5b0a0f6133cb54241b15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#af707cd06c4cf5b0a0f6133cb54241b15">ConsumeSignedInteger</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &amp;str, unsigned radix, long long &amp;result) noexcept</td></tr>
 <tr class="separator:af707cd06c4cf5b0a0f6133cb54241b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a333649a1789bc79e44f927ee73c60c25"><td class="memItemLeft" align="right" valign="top">static unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1detail.html#a333649a1789bc79e44f927ee73c60c25">combineHashValue</a> (unsigned a, unsigned b)</td></tr>
-<tr class="memdesc:a333649a1789bc79e44f927ee73c60c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simplistic combination of 32-bit hash values into 32-bit hash values.  <a href="namespacewpi_1_1detail.html#a333649a1789bc79e44f927ee73c60c25">More...</a><br /></td></tr>
-<tr class="separator:a333649a1789bc79e44f927ee73c60c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >detail namespace with internal helper functions </p>
@@ -2067,7 +2067,7 @@ template&lt;typename BasicJsonType , typename Tuple , std::size_t... Idx&gt; </d
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 06:41:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 08:06:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

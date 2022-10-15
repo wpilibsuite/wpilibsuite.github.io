@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"_s_s_e_2_type_casting_8h.html#a4d363aa0f26d1590a08f81a0b079d42a":[7,0,8,1,0,0,0,1,0,3,3,5],
 "_s_s_e_2_type_casting_8h.html#a775cfd8f6fc50e460760f68fda93a9ba":[7,0,8,1,0,0,0,1,0,3,3,7],
 "_s_s_e_2_type_casting_8h.html#a826463eae153b0d20e1fae7e0bf61bba":[7,0,8,1,0,0,0,1,0,3,3,8],
 "_s_s_e_2_type_casting_8h.html#abda77c788d4df187c3a0c560b40ce7f7":[7,0,8,1,0,0,0,1,0,3,3,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "_sparse_assign_8h_source.html":[7,0,8,1,0,0,0,12,4],
 "_sparse_block_8h.html":[7,0,8,1,0,0,0,12,5],
 "_sparse_block_8h_source.html":[7,0,8,1,0,0,0,12,5],
-"_sparse_cholesky.html":[7,0,8,1,0,0,10],
-"_sparse_cholesky.html#a4ab47afbedb2bdb41b927537e0cf5e87":[7,0,8,1,0,0,10,0]
+"_sparse_cholesky.html":[7,0,8,1,0,0,10]
 };

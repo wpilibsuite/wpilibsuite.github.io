@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-11-g1f45732</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
    </div>
   </td>
  </tr>
@@ -91,30 +91,30 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1of.html',''); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">wpi::memory::of Concept Reference<div class="ingroups"><a class="el" href="group__allocator.html">Allocator implementations</a> &#124; <a class="el" href="group__core.html">Core components</a></div></div></div>
+  <div class="headertitle"><div class="title">wpi::memory::of Concept Reference<div class="ingroups"><a class="el" href="group__core.html">Core components</a> &#124; <a class="el" href="group__allocator.html">Allocator implementations</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>fixed size.  
 <a href="conceptwpi_1_1memory_1_1of.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="memory__pool_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_pool.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="memory__arena_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_arena.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1of.html">wpi::memory::of</a> = </div>
 <div class="ttc" id="aconceptwpi_1_1memory_1_1of_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1of.html">wpi::memory::of</a></div><div class="ttdoc">fixed size.</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >fixed size. </p>
+<p >the given type created with the given arguments. \requires Same requirements as the constructor.</p>
 <p >It uses a memory_arena with a given <code>BlockOrRawAllocator</code> defaulting to growing_block_allocator, subdivides them in small nodes of given size and puts them onto a free list. Allocation and deallocation simply remove or add nodes from this list and are thus fast. The way the list is maintained can be controlled via the <code>PoolType</code> which is either node_pool, array_pool or small_node_pool.<br  />
- This kind of allocator is ideal for fixed size allocations and deallocations in any order, for example in a node based container like <code>std::list</code>. It is not so good for different allocation sizes and has some drawbacks for arrays as described in <a class="el" href="memory__pool__type_8hpp.html">memory_pool_type.hpp</a>.</p>
-<p >the given type created with the given arguments. \requires Same requirements as the constructor. </p>
+ This kind of allocator is ideal for fixed size allocations and deallocations in any order, for example in a node based container like <code>std::list</code>. It is not so good for different allocation sizes and has some drawbacks for arrays as described in <a class="el" href="memory__pool__type_8hpp.html">memory_pool_type.hpp</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1of.html">of</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 06:41:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 08:06:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"_string_extras_8h.html#a3ed163433a5d70554975df8e7ef7f4df":[7,0,9,3,0,0,34,39],
 "_string_extras_8h.html#a3f23b372d35fd43e572bd6310538d3b4":[7,0,9,3,0,0,34,26],
 "_string_extras_8h.html#a47d0773c177190213ead75a95fe7fc46":[7,0,9,3,0,0,34,61],
 "_string_extras_8h.html#a4c8e2346d8ddaaaecfd3bc8760d09d9a":[7,0,9,3,0,0,34,63],
@@ -93,7 +94,7 @@ var NAVTREEINDEX21 =
 "_swerve_controller_command_8h_source.html":[7,0,5,0,33],
 "_swerve_controller_command_8inc.html":[7,0,5,0,34],
 "_swerve_drive_kinematics_8h.html":[7,0,4,6,7],
-"_swerve_drive_kinematics_8h.html#a6d659f789b1e23bd6d29ee6b8880d258":[7,0,4,6,7,1],
+"_swerve_drive_kinematics_8h.html#a691e3058f88028f72b7162ab75bc4cb4":[7,0,4,6,7,1],
 "_swerve_drive_kinematics_8h_source.html":[7,0,4,6,7],
 "_swerve_drive_kinematics_8inc.html":[7,0,4,6,8],
 "_swerve_drive_kinematics_8inc.html#acf032b8adc55f3de1e6828f68f86b409":[7,0,4,6,8,0],
@@ -101,11 +102,11 @@ var NAVTREEINDEX21 =
 "_swerve_drive_kinematics_constraint_8h_source.html":[7,0,4,9,0,7],
 "_swerve_drive_kinematics_constraint_8inc.html":[7,0,4,9,0,8],
 "_swerve_drive_odometry_8h.html":[7,0,4,6,9],
-"_swerve_drive_odometry_8h.html#a6d659f789b1e23bd6d29ee6b8880d258":[7,0,4,6,9,1],
+"_swerve_drive_odometry_8h.html#a691e3058f88028f72b7162ab75bc4cb4":[7,0,4,6,9,1],
 "_swerve_drive_odometry_8h_source.html":[7,0,4,6,9],
 "_swerve_drive_odometry_8inc.html":[7,0,4,6,10],
 "_swerve_drive_pose_estimator_8h.html":[7,0,4,1,9],
-"_swerve_drive_pose_estimator_8h.html#a6d659f789b1e23bd6d29ee6b8880d258":[7,0,4,1,9,1],
+"_swerve_drive_pose_estimator_8h.html#a691e3058f88028f72b7162ab75bc4cb4":[7,0,4,1,9,1],
 "_swerve_drive_pose_estimator_8h_source.html":[7,0,4,1,9],
 "_swerve_module_state_8h.html":[7,0,4,6,11],
 "_swerve_module_state_8h_source.html":[7,0,4,6,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "_twist2d_8h_source.html":[7,0,4,4,11],
 "_twist3d_8h.html":[7,0,4,4,12],
 "_twist3d_8h_source.html":[7,0,4,4,12],
-"_types_8h.html":[7,0,6,46],
-"_types_8h_source.html":[7,0,6,46]
+"_types_8h.html":[7,0,6,46]
 };

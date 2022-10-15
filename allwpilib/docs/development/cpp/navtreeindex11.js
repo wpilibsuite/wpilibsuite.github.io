@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"_matrix_cwise_unary_ops_8h.html#afaccb60c8e7e930b441a048374b64ea3":[7,0,8,1,0,0,0,9,7,6],
 "_matrix_cwise_unary_ops_8h_source.html":[7,0,8,1,0,0,0,9,7],
 "_matrix_exponential_8h.html":[7,0,8,1,0,1,0,0,0,0],
 "_matrix_exponential_8h.html#a1abecb439e6cb1b5188828cdb7e0ab60":[7,0,8,1,0,1,0,0,0,0,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "_n_e_o_n_2_complex_8h.html#ad6c7a6a32409a31dde3aa6f87e5fae6a":[7,0,8,1,0,0,0,1,0,2,0,60],
 "_n_e_o_n_2_complex_8h.html#ade9c3ce8224bc8269e6e6a6a0a73bdd1":[7,0,8,1,0,0,0,1,0,2,0,8],
 "_n_e_o_n_2_complex_8h.html#ae169245df6f6b82a61cf0f50056404ba":[7,0,8,1,0,0,0,1,0,2,0,17],
-"_n_e_o_n_2_complex_8h.html#aea1bbf9163a69da80cbf07c4c2a50091":[7,0,8,1,0,0,0,1,0,2,0,47],
-"_n_e_o_n_2_complex_8h.html#af81c4d0c2698178237ada44c0af7ef7d":[7,0,8,1,0,0,0,1,0,2,0,21]
+"_n_e_o_n_2_complex_8h.html#aea1bbf9163a69da80cbf07c4c2a50091":[7,0,8,1,0,0,0,1,0,2,0,47]
 };

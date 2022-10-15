@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-11-g1f45732</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
    </div>
   </td>
  </tr>
@@ -98,41 +98,41 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1unpacket__
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="_n_e_o_n_2_packet_math_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/NEON/PacketMath.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_s_s_e_2_packet_math_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/SSE/PacketMath.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abd25ce7be153d057739c5b308dfa5289"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a7d2ad21bc467be00edc45df608ffaa6f">size</a> = 4
-, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a16836b832a7a678c14eea5039c2ad06e">alignment</a> = Aligned16
-, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a8062989dbb089a7e005edbfaec4b9417">vectorizable</a> = true
-, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a9d860c8f1452684f3c70bec6637c74c7">masked_load_available</a> = false
+<tr class="memitem:aaee0175297e1c2275b791d2f3353275d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa7d2ad21bc467be00edc45df608ffaa6f">size</a> =4
+, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa16836b832a7a678c14eea5039c2ad06e">alignment</a> =Aligned16
+, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa8062989dbb089a7e005edbfaec4b9417">vectorizable</a> =true
+, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa9d860c8f1452684f3c70bec6637c74c7">masked_load_available</a> =false
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7afa6988326035d8c6e08eecfe7e4b9439">masked_store_available</a> = false
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daafa6988326035d8c6e08eecfe7e4b9439">masked_store_available</a> =false
 <br />
  }</td></tr>
-<tr class="separator:abd25ce7be153d057739c5b308dfa5289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6c6e8579419bfd0a69bbf15c6a60c7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a7d2ad21bc467be00edc45df608ffaa6f">size</a> = 4
-, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a16836b832a7a678c14eea5039c2ad06e">alignment</a> = Aligned16
-, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a8062989dbb089a7e005edbfaec4b9417">vectorizable</a> = true
-, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7a9d860c8f1452684f3c70bec6637c74c7">masked_load_available</a> = false
+<tr class="separator:aaee0175297e1c2275b791d2f3353275d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57e380d3ad0c1d40101dd24471c01da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa7d2ad21bc467be00edc45df608ffaa6f">size</a> =4
+, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa16836b832a7a678c14eea5039c2ad06e">alignment</a> =Aligned16
+, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa8062989dbb089a7e005edbfaec4b9417">vectorizable</a> =true
+, <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daa9d860c8f1452684f3c70bec6637c74c7">masked_load_available</a> =false
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a1d6c6e8579419bfd0a69bbf15c6a60c7afa6988326035d8c6e08eecfe7e4b9439">masked_store_available</a> = false
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#ad57e380d3ad0c1d40101dd24471c01daafa6988326035d8c6e08eecfe7e4b9439">masked_store_available</a> =false
 <br />
  }</td></tr>
-<tr class="separator:a1d6c6e8579419bfd0a69bbf15c6a60c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad57e380d3ad0c1d40101dd24471c01da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec581636b9b1f84c6f7900dd54f7933e"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#aec581636b9b1f84c6f7900dd54f7933e">type</a></td></tr>
+<tr class="separator:aec581636b9b1f84c6f7900dd54f7933e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd79255574a93f1ca0eb2eb62ca1417"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a6fd79255574a93f1ca0eb2eb62ca1417">half</a></td></tr>
+<tr class="separator:a6fd79255574a93f1ca0eb2eb62ca1417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5364099410eb1c5f56ffd22021c6e2a1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen_1_1internal.html#afc7c614a6ce8dbe0585e2dafab27e984">Packet4i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a5364099410eb1c5f56ffd22021c6e2a1">integer_packet</a></td></tr>
+<tr class="separator:a5364099410eb1c5f56ffd22021c6e2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec581636b9b1f84c6f7900dd54f7933e"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#aec581636b9b1f84c6f7900dd54f7933e">type</a></td></tr>
 <tr class="separator:aec581636b9b1f84c6f7900dd54f7933e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaadbbe38c2a512b09ca3f22de5ad95c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen_1_1internal.html#aa6fad2033c6a65eea2b7d918a62f4c83">Packet2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#abaadbbe38c2a512b09ca3f22de5ad95c">half</a></td></tr>
 <tr class="separator:abaadbbe38c2a512b09ca3f22de5ad95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5364099410eb1c5f56ffd22021c6e2a1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen_1_1internal.html#aa775a29ff167527717885381190f4d9a">Packet4i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a5364099410eb1c5f56ffd22021c6e2a1">integer_packet</a></td></tr>
-<tr class="separator:a5364099410eb1c5f56ffd22021c6e2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec581636b9b1f84c6f7900dd54f7933e"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#aec581636b9b1f84c6f7900dd54f7933e">type</a></td></tr>
-<tr class="separator:aec581636b9b1f84c6f7900dd54f7933e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fd79255574a93f1ca0eb2eb62ca1417"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a6fd79255574a93f1ca0eb2eb62ca1417">half</a></td></tr>
-<tr class="separator:a6fd79255574a93f1ca0eb2eb62ca1417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5364099410eb1c5f56ffd22021c6e2a1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen_1_1internal.html#aa775a29ff167527717885381190f4d9a">Packet4i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a5364099410eb1c5f56ffd22021c6e2a1">integer_packet</a></td></tr>
+<tr class="memitem:a5364099410eb1c5f56ffd22021c6e2a1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen_1_1internal.html#afc7c614a6ce8dbe0585e2dafab27e984">Packet4i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html#a5364099410eb1c5f56ffd22021c6e2a1">integer_packet</a></td></tr>
 <tr class="separator:a5364099410eb1c5f56ffd22021c6e2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -143,7 +143,7 @@ Public Types</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#aa6fad2033c6a65eea2b7d918a62f4c83">Packet2f</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a> &gt;::half</td>
+          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#aa6fad2033c6a65eea2b7d918a62f4c83">Packet2f</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a> &gt;::half</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,7 +157,7 @@ Public Types</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a> &gt;::half</td>
+          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a> &gt;::half</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -171,7 +171,7 @@ Public Types</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#aa775a29ff167527717885381190f4d9a">Packet4i</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a> &gt;::integer_packet</td>
+          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#afc7c614a6ce8dbe0585e2dafab27e984">Packet4i</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a> &gt;::integer_packet</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -185,7 +185,7 @@ Public Types</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#aa775a29ff167527717885381190f4d9a">Packet4i</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a> &gt;::integer_packet</td>
+          <td class="memname">typedef <a class="el" href="namespace_eigen_1_1internal.html#afc7c614a6ce8dbe0585e2dafab27e984">Packet4i</a> <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a> &gt;::integer_packet</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -199,7 +199,7 @@ Public Types</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef float <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a> &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a></td>
+          <td class="memname">typedef float <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a> &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,7 +213,7 @@ Public Types</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef float <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a2e4841a659d4211ca894a9bb5941b2ec">Packet4f</a> &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a></td>
+          <td class="memname">typedef float <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">Eigen::internal::unpacket_traits</a>&lt; <a class="el" href="namespace_eigen_1_1internal.html#a1cd5e41eb79fa7029010b1e211f359f4">Packet4f</a> &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -221,8 +221,8 @@ Public Types</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="abd25ce7be153d057739c5b308dfa5289" name="abd25ce7be153d057739c5b308dfa5289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd25ce7be153d057739c5b308dfa5289">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="aaee0175297e1c2275b791d2f3353275d" name="aaee0175297e1c2275b791d2f3353275d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee0175297e1c2275b791d2f3353275d">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -233,17 +233,17 @@ Public Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a7d2ad21bc467be00edc45df608ffaa6f" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a7d2ad21bc467be00edc45df608ffaa6f"></a>size&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a16836b832a7a678c14eea5039c2ad06e" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a16836b832a7a678c14eea5039c2ad06e"></a>alignment&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a8062989dbb089a7e005edbfaec4b9417" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a8062989dbb089a7e005edbfaec4b9417"></a>vectorizable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a9d860c8f1452684f3c70bec6637c74c7" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a9d860c8f1452684f3c70bec6637c74c7"></a>masked_load_available&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7afa6988326035d8c6e08eecfe7e4b9439" name="a1d6c6e8579419bfd0a69bbf15c6a60c7afa6988326035d8c6e08eecfe7e4b9439"></a>masked_store_available&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa7d2ad21bc467be00edc45df608ffaa6f" name="ad57e380d3ad0c1d40101dd24471c01daa7d2ad21bc467be00edc45df608ffaa6f"></a>size&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa16836b832a7a678c14eea5039c2ad06e" name="ad57e380d3ad0c1d40101dd24471c01daa16836b832a7a678c14eea5039c2ad06e"></a>alignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa8062989dbb089a7e005edbfaec4b9417" name="ad57e380d3ad0c1d40101dd24471c01daa8062989dbb089a7e005edbfaec4b9417"></a>vectorizable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa9d860c8f1452684f3c70bec6637c74c7" name="ad57e380d3ad0c1d40101dd24471c01daa9d860c8f1452684f3c70bec6637c74c7"></a>masked_load_available&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daafa6988326035d8c6e08eecfe7e4b9439" name="ad57e380d3ad0c1d40101dd24471c01daafa6988326035d8c6e08eecfe7e4b9439"></a>masked_store_available&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a1d6c6e8579419bfd0a69bbf15c6a60c7" name="a1d6c6e8579419bfd0a69bbf15c6a60c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d6c6e8579419bfd0a69bbf15c6a60c7">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ad57e380d3ad0c1d40101dd24471c01da" name="ad57e380d3ad0c1d40101dd24471c01da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57e380d3ad0c1d40101dd24471c01da">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,18 +254,18 @@ Public Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a7d2ad21bc467be00edc45df608ffaa6f" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a7d2ad21bc467be00edc45df608ffaa6f"></a>size&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a16836b832a7a678c14eea5039c2ad06e" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a16836b832a7a678c14eea5039c2ad06e"></a>alignment&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a8062989dbb089a7e005edbfaec4b9417" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a8062989dbb089a7e005edbfaec4b9417"></a>vectorizable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7a9d860c8f1452684f3c70bec6637c74c7" name="a1d6c6e8579419bfd0a69bbf15c6a60c7a9d860c8f1452684f3c70bec6637c74c7"></a>masked_load_available&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1d6c6e8579419bfd0a69bbf15c6a60c7afa6988326035d8c6e08eecfe7e4b9439" name="a1d6c6e8579419bfd0a69bbf15c6a60c7afa6988326035d8c6e08eecfe7e4b9439"></a>masked_store_available&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa7d2ad21bc467be00edc45df608ffaa6f" name="ad57e380d3ad0c1d40101dd24471c01daa7d2ad21bc467be00edc45df608ffaa6f"></a>size&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa16836b832a7a678c14eea5039c2ad06e" name="ad57e380d3ad0c1d40101dd24471c01daa16836b832a7a678c14eea5039c2ad06e"></a>alignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa8062989dbb089a7e005edbfaec4b9417" name="ad57e380d3ad0c1d40101dd24471c01daa8062989dbb089a7e005edbfaec4b9417"></a>vectorizable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daa9d860c8f1452684f3c70bec6637c74c7" name="ad57e380d3ad0c1d40101dd24471c01daa9d860c8f1452684f3c70bec6637c74c7"></a>masked_load_available&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad57e380d3ad0c1d40101dd24471c01daafa6988326035d8c6e08eecfe7e4b9439" name="ad57e380d3ad0c1d40101dd24471c01daafa6988326035d8c6e08eecfe7e4b9439"></a>masked_store_available&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/NEON/<a class="el" href="_n_e_o_n_2_packet_math_8h_source.html">PacketMath.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/SSE/<a class="el" href="_s_s_e_2_packet_math_8h_source.html">PacketMath.h</a></li>
+<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/arch/NEON/<a class="el" href="_n_e_o_n_2_packet_math_8h_source.html">PacketMath.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -273,7 +273,7 @@ Public Types</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet4f_01_4.html">unpacket_traits&lt; Packet4f &gt;</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 06:41:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 08:06:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

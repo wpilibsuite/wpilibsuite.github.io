@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-11-g1f45732</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
    </div>
   </td>
  </tr>
@@ -91,34 +91,34 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1is.html',''); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">wpi::memory::is Concept Reference<div class="ingroups"><a class="el" href="group__adapter.html">Adapters and Wrappers</a> &#124; <a class="el" href="group__core.html">Core components</a></div></div></div>
+  <div class="headertitle"><div class="title">wpi::memory::is Concept Reference<div class="ingroups"><a class="el" href="group__core.html">Core components</a> &#124; <a class="el" href="group__adapter.html">Adapters and Wrappers</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>required and the memory usage will be tracked.  
+<p>Specifies whether or not a thread safe as-is.  
 <a href="conceptwpi_1_1memory_1_1is.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="tracking_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/tracking.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="threading_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/threading.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1is.html">wpi::memory::is</a> = </div>
-<div class="ttc" id="aconceptwpi_1_1memory_1_1is_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1is.html">wpi::memory::is</a></div><div class="ttdoc">required and the memory usage will be tracked.</div></div>
+<div class="ttc" id="aconceptwpi_1_1memory_1_1is_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1is.html">wpi::memory::is</a></div><div class="ttdoc">Specifies whether or not a thread safe as-is.</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >required and the memory usage will be tracked. </p>
-<p >Specifies whether or not a thread safe as-is.</p>
+<div class="textblock"><p >Specifies whether or not a thread safe as-is. </p>
 <p >normally used inside higher allocators only.</p>
+<p >required and the memory usage will be tracked.</p>
+<p >This allows to use no_mutex as an optimization. Note that stateless allocators are implictly thread-safe. Specialize it only for your own stateful allocators.</p>
 <p ><br  />
  It will only call the <code>on_allocator_growth()</code> and <code>on_allocator_shrinking()</code> tracking functions, since a</p>
 <p ><br  />
- If the</p>
-<p >This allows to use no_mutex as an optimization. Note that stateless allocators are implictly thread-safe. Specialize it only for your own stateful allocators. </p>
+ If the </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1is.html">is</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 06:41:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 08:06:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

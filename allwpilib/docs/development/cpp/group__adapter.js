@@ -2,13 +2,13 @@ var group__adapter =
 [
     [ "wpi::memory::", "conceptwpi_1_1memory_1_1.html", null ],
     [ "wpi::memory::and", "conceptwpi_1_1memory_1_1and.html", null ],
-    [ "wpi::memory::is", "conceptwpi_1_1memory_1_1is.html", null ],
     [ "wpi::memory::for", "conceptwpi_1_1memory_1_1for.html", null ],
-    [ "wpi::memory::that", "conceptwpi_1_1memory_1_1that.html", null ],
-    [ "wpi::memory::or", "conceptwpi_1_1memory_1_1or.html", null ],
+    [ "wpi::memory::is", "conceptwpi_1_1memory_1_1is.html", null ],
+    [ "wpi::memory::adapter", "conceptwpi_1_1memory_1_1adapter.html", null ],
     [ "wpi::memory::It", "conceptwpi_1_1memory_1_1_it.html", null ],
     [ "wpi::memory::returns", "conceptwpi_1_1memory_1_1returns.html", null ],
-    [ "wpi::memory::adapter", "conceptwpi_1_1memory_1_1adapter.html", null ],
+    [ "wpi::memory::that", "conceptwpi_1_1memory_1_1that.html", null ],
+    [ "wpi::memory::or", "conceptwpi_1_1memory_1_1or.html", null ],
     [ "wpi::memory::allocator_deallocator< Type[], RawAllocator >", "classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html", [
       [ "allocator_type", "classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#ae612352d360faf0e09017791f3cef936", null ],
       [ "value_type", "classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#a32ff7267ef649ec50959c2dee6749e2a", null ],

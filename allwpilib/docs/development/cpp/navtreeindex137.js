@@ -1,11 +1,5 @@
 var NAVTREEINDEX137 =
 {
-"hal_2src_2main_2native_2include_2hal_2_s_p_i_8h_source.html":[7,0,6,43],
-"hal_2src_2main_2native_2include_2hal_2_serial_port_8h.html":[7,0,6,41],
-"hal_2src_2main_2native_2include_2hal_2_serial_port_8h_source.html":[7,0,6,41],
-"hal_2src_2main_2native_2include_2hal_2_threads_8h.html":[7,0,6,45],
-"hal_2src_2main_2native_2include_2hal_2_threads_8h_source.html":[7,0,6,45],
-"heap__allocator_8hpp.html":[7,0,9,4,0,0,0,12],
 "heap__allocator_8hpp.html#ae7d45e393fa087b34b4634e79203529b":[7,0,9,4,0,0,0,12,1],
 "heap__allocator_8hpp_source.html":[7,0,9,4,0,0,0,12],
 "hierarchy.html":[6,2],
@@ -203,6 +197,8 @@ var NAVTREEINDEX137 =
 "mass_8h.html#a6a7d06078e20a9102992ec978e669a59":[7,0,10,28,2],
 "mass_8h.html#a6e0f1b1079e323019f66b1cdeb86c45e":[7,0,10,28,0],
 "mass_8h.html#aa94010d6299c6d8acccf9647fef66634":[7,0,10,28,1],
+"mass_8h.html#ae953ea35eaae483641065974c8fb7bea":[7,0,10,28,4],
+"mass_8h.html#af8e4972985bd025575c5101daf34e505":[7,0,10,28,3],
 "mass_8h_source.html":[7,0,10,28],
 "math.html":[7,0,12,21],
 "math_8h.html":[7,0,10,29],
@@ -249,5 +245,9 @@ var NAVTREEINDEX137 =
 "mpack_8h.html#acb435fe0f6edbecfd687e3ecc6061152":[7,0,9,5,0,0,0,15],
 "mpack_8h.html#afd5b5b7338c2b459f86154686b8225cd":[7,0,9,5,0,0,0,6],
 "mpack_8h_source.html":[7,0,9,5,0,0,0],
-"mutex_8h.html":[7,0,12,23]
+"mutex_8h.html":[7,0,12,23],
+"mutex_8h.html#a59819be5b11c0fbbc0b8e07c7638af24":[7,0,12,23,0],
+"mutex_8h.html#ac654fbccde78931efbd96a33a8af5726":[7,0,12,23,1],
+"mutex_8h_source.html":[7,0,12,23],
+"namespace__alias_8hpp.html":[7,0,9,4,0,0,0,22]
 };

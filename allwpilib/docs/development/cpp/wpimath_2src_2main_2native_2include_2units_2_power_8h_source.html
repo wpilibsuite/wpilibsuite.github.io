@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-11-g1f45732</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
    </div>
   </td>
  </tr>
@@ -134,9 +134,9 @@ $(document).ready(function(){initNavTree('wpimath_2src_2main_2native_2include_2u
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * @sa See unit_t for more information on unit type containers.</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if !defined(DISABLE_PREDEFINED_UNITS) || defined(ENABLE_PREDEFINED_POWER_UNITS)</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceunits.html#a1f739cb56d4dd9ce8be36aaab5ae312b">   41</a></span><a class="code hl_function" href="namespaceunits.html#abbf3a12277f057acc6b6d2518bec2091">UNIT_ADD_WITH_METRIC_PREFIXES</a>(power, watt, watts, W,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespaceunits.html#a1f739cb56d4dd9ce8be36aaab5ae312b">   41</a></span><a class="code hl_function" href="namespaceunits.html#aa94010d6299c6d8acccf9647fef66634">UNIT_ADD_WITH_METRIC_PREFIXES</a>(power, watt, watts, W,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                              <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1&gt;, <a class="code hl_struct" href="structunits_1_1base__unit.html">units::category::power_unit</a>&gt;)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_function" href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">UNIT_ADD</a>(power, horsepower, horsepower, hp, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;<a class="code hl_namespace" href="namespacestd.html">std</a>::ratio&lt;7457, 10&gt;, watts&gt;)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_function" href="namespaceunits.html#a6e0f1b1079e323019f66b1cdeb86c45e">UNIT_ADD</a>(power, horsepower, horsepower, hp, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;<a class="code hl_namespace" href="namespacestd.html">std</a>::ratio&lt;7457, 10&gt;, watts&gt;)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><a class="code hl_define" href="base_8h.html#aacbc20cfef3586d1c51b51c998679b99">UNIT_ADD_DECIBEL</a>(power, watt, dBW)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_define" href="base_8h.html#aacbc20cfef3586d1c51b51c998679b99">UNIT_ADD_DECIBEL</a>(power, milliwatt, dBm)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
@@ -149,9 +149,9 @@ $(document).ready(function(){initNavTree('wpimath_2src_2main_2native_2include_2u
 <div class="ttc" id="abase_8h_html_aa0b0ec340728bbef5aeab07641a61948"><div class="ttname"><a href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a></div><div class="ttdeci">#define UNIT_ADD_CATEGORY_TRAIT(unitCategory)</div><div class="ttdoc">Macro to create the is_category_unit type trait.</div><div class="ttdef"><b>Definition:</b> base.h:384</div></div>
 <div class="ttc" id="abase_8h_html_aacbc20cfef3586d1c51b51c998679b99"><div class="ttname"><a href="base_8h.html#aacbc20cfef3586d1c51b51c998679b99">UNIT_ADD_DECIBEL</a></div><div class="ttdeci">#define UNIT_ADD_DECIBEL(namespaceName, nameSingular, abbreviation)</div><div class="ttdoc">Macro to create decibel container and literals for an existing unit type.</div><div class="ttdef"><b>Definition:</b> base.h:332</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> acceleration.h:33</div></div>
-<div class="ttc" id="anamespaceunits_html_a03fc94499a6da0de5d3c05a545005d7e"><div class="ttname"><a href="namespaceunits.html#a03fc94499a6da0de5d3c05a545005d7e">units::UNIT_ADD</a></div><div class="ttdeci">UNIT_ADD(acceleration, meters_per_second_squared, meters_per_second_squared, mps_sq, unit&lt; std::ratio&lt; 1 &gt;, units::category::acceleration_unit &gt;) UNIT_ADD(acceleration</div></div>
-<div class="ttc" id="anamespaceunits_html_abbf3a12277f057acc6b6d2518bec2091"><div class="ttname"><a href="namespaceunits.html#abbf3a12277f057acc6b6d2518bec2091">units::UNIT_ADD_WITH_METRIC_PREFIXES</a></div><div class="ttdeci">UNIT_ADD_WITH_METRIC_PREFIXES(magnetic_field_strength, tesla, teslas, Te, unit&lt; std::ratio&lt; 1 &gt;, units::category::magnetic_field_strength_unit &gt;) UNIT_ADD(magnetic_field_strength</div></div>
+<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> mass.h:31</div></div>
+<div class="ttc" id="anamespaceunits_html_a6e0f1b1079e323019f66b1cdeb86c45e"><div class="ttname"><a href="namespaceunits.html#a6e0f1b1079e323019f66b1cdeb86c45e">units::UNIT_ADD</a></div><div class="ttdeci">unit&lt; std::ratio&lt; 45359237, 100000000 &gt;, kilograms &gt; UNIT_ADD(mass, slug, slugs, slug, unit&lt; std::ratio&lt; 145939029, 10000000 &gt;, kilograms &gt;) using namespace mass</div></div>
+<div class="ttc" id="anamespaceunits_html_aa94010d6299c6d8acccf9647fef66634"><div class="ttname"><a href="namespaceunits.html#aa94010d6299c6d8acccf9647fef66634">units::UNIT_ADD_WITH_METRIC_PREFIXES</a></div><div class="ttdeci">UNIT_ADD_WITH_METRIC_PREFIXES(mass, gram, grams, g, unit&lt; std::ratio&lt; 1, 1000 &gt;, units::category::mass_unit &gt;) UNIT_ADD(mass</div></div>
 <div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:761</div></div>
 <div class="ttc" id="astructunits_1_1unit_html"><div class="ttname"><a href="structunits_1_1unit.html">units::unit</a></div><div class="ttdoc">Type representing an arbitrary unit.</div><div class="ttdef"><b>Definition:</b> base.h:887</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('wpimath_2src_2main_2native_2include_2u
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="wpimath_2src_2main_2native_2include_2units_2_power_8h.html">power.h</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 06:40:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 08:05:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

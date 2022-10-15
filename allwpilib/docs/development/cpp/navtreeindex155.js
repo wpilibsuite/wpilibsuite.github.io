@@ -1,9 +1,5 @@
 var NAVTREEINDEX155 =
 {
-"new__allocator_8hpp.html#ac7778578540eb33611902c32326c7e61":[7,0,9,4,0,0,0,23,1],
-"new__allocator_8hpp_source.html":[7,0,9,4,0,0,0,23],
-"nodiscard_8h.html":[7,0,12,24],
-"nodiscard_8h_source.html":[7,0,12,24],
 "ntcore_8h.html":[7,0,22],
 "ntcore_8h_source.html":[7,0,22],
 "ntcore__c_8h.html":[7,0,23],
@@ -125,10 +121,10 @@ var NAVTREEINDEX155 =
 "products_2_general_block_panel_kernel_8h.html#a3d25c17e046c1bc4de77c0b4d4267322":[7,0,8,1,0,0,0,1,2,0,29],
 "products_2_general_block_panel_kernel_8h.html#a3d2ed92f98d5bbeb8547c8cb056bdbc3":[7,0,8,1,0,0,0,1,2,0,47],
 "products_2_general_block_panel_kernel_8h.html#a419aa7e2be7215d78da06bb9c0034fb9":[7,0,8,1,0,0,0,1,2,0,38],
+"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,8,1,0,0,0,1,2,0,21],
 "products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,8,1,0,0,0,1,2,0,24],
 "products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,8,1,0,0,0,1,2,0,23],
 "products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,8,1,0,0,0,1,2,0,22],
-"products_2_general_block_panel_kernel_8h.html#a54627191295de1c5d1d74049c7b16cf7":[7,0,8,1,0,0,0,1,2,0,21],
 "products_2_general_block_panel_kernel_8h.html#a666defcfcf2cee6d50436b4144abd49b":[7,0,8,1,0,0,0,1,2,0,37],
 "products_2_general_block_panel_kernel_8h.html#a7506ce2bffd0c4445381b89c43101abc":[7,0,8,1,0,0,0,1,2,0,25],
 "products_2_general_block_panel_kernel_8h.html#a79ced96f603f3cf40ee565c8fb9002fb":[7,0,8,1,0,0,0,1,2,0,53],
@@ -249,5 +245,9 @@ var NAVTREEINDEX155 =
 "solid__angle_8h.html#a766ce1e81f4ddad2fa7d9ce8167e2ac3":[7,0,10,34,4],
 "solid__angle_8h.html#a7c2a72cd884899cf6eb716f10d319d72":[7,0,10,34,3],
 "solid__angle_8h.html#ac5df1345f227fbf76e7fe3913a76b863":[7,0,10,34,2],
-"solid__angle_8h_source.html":[7,0,10,34]
+"solid__angle_8h_source.html":[7,0,10,34],
+"span_8h.html":[7,0,9,7,0,0,0],
+"span_8h.html#a0505b5d13f504fa6069411cb2fdbddaf":[7,0,9,7,0,0,0,20],
+"span_8h.html#a39d52ea374e69d520e3f696e58c1565f":[7,0,9,7,0,0,0,24],
+"span_8h.html#a4bed3e5edc3cdb7e7086a1e81c33abcb":[7,0,9,7,0,0,0,23]
 };
