@@ -24,7 +24,7 @@ var classnt_1_1_topic =
     [ "operator!=", "classnt_1_1_topic.html#a63302bb4f355d7ed8b0ca7122da39f59", null ],
     [ "operator==", "classnt_1_1_topic.html#a31be9e5bebeb02633f1cacdaf58b5969", null ],
     [ "SetPersistent", "classnt_1_1_topic.html#a9d4673c5abd71df9566cf9c2f2d6c4d0", null ],
-    [ "SetProperties", "classnt_1_1_topic.html#a1989f62b9fd4cb84499496d60d43e2d5", null ],
+    [ "SetProperties", "classnt_1_1_topic.html#a0eb3ab58996594c8222da27cceb21f8b", null ],
     [ "SetProperty", "classnt_1_1_topic.html#addcc2c4bf8c8dafb730beeb7cc1a5a5c", null ],
     [ "SetRetained", "classnt_1_1_topic.html#a19909b0413b14ba60438f95cd3819962", null ],
     [ "m_handle", "classnt_1_1_topic.html#a77c16e04560b691bbe003fea2ece1894", null ]

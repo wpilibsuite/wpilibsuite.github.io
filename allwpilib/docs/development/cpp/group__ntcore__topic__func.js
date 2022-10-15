@@ -22,7 +22,7 @@ var group__ntcore__topic__func =
     [ "nt::Release", "group__ntcore__topic__func.html#ga1c51e7981010f19ab58e41496b771edb", null ],
     [ "nt::ReleaseEntry", "group__ntcore__topic__func.html#gadb23796cfd84e2dfe880b949c09f4343", null ],
     [ "nt::SetTopicPersistent", "group__ntcore__topic__func.html#gad677863dc1fa493da5e003473b0f0f60", null ],
-    [ "nt::SetTopicProperties", "group__ntcore__topic__func.html#ga623623ac2bb80ee9926caaaef23c71df", null ],
+    [ "nt::SetTopicProperties", "group__ntcore__topic__func.html#gaac1dd0526b999f425a512559f3d6ebd5", null ],
     [ "nt::SetTopicProperty", "group__ntcore__topic__func.html#ga6606e5deddbd3b08b5baf1b8d4392ed2", null ],
     [ "nt::SetTopicRetained", "group__ntcore__topic__func.html#ga9297aee2c9f8f4640c2c1853112bce57", null ],
     [ "nt::Subscribe", "group__ntcore__topic__func.html#gaf916231b8a035bb04951643d80c67fb6", null ],

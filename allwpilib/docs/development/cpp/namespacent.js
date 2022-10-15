@@ -259,7 +259,7 @@ var namespacent =
     [ "SetString", "group__ntcore___string__func.html#ga9f7f57a4cdaf55376eaf676f08794c77", null ],
     [ "SetStringArray", "group__ntcore___string_array__func.html#ga07b0807931cdf358d61fa17b64764796", null ],
     [ "SetTopicPersistent", "group__ntcore__topic__func.html#gad677863dc1fa493da5e003473b0f0f60", null ],
-    [ "SetTopicProperties", "group__ntcore__topic__func.html#ga623623ac2bb80ee9926caaaef23c71df", null ],
+    [ "SetTopicProperties", "group__ntcore__topic__func.html#gaac1dd0526b999f425a512559f3d6ebd5", null ],
     [ "SetTopicProperty", "group__ntcore__topic__func.html#ga6606e5deddbd3b08b5baf1b8d4392ed2", null ],
     [ "SetTopicRetained", "group__ntcore__topic__func.html#ga9297aee2c9f8f4640c2c1853112bce57", null ],
     [ "StartClient3", "group__ntcore__network__func.html#ga81aad79d81fa4b93a899d8ca53d82bf5", null ],

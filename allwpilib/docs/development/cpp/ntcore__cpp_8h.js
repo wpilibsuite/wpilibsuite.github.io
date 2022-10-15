@@ -75,7 +75,7 @@ var ntcore__cpp_8h =
     [ "SetServer", "ntcore__cpp_8h.html#ga3e14725b6b590f7c26357a846f55e4df", null ],
     [ "SetServerTeam", "ntcore__cpp_8h.html#gad5d4afbe000bb6f39f9d4f48cecadd0e", null ],
     [ "SetTopicPersistent", "ntcore__cpp_8h.html#gad677863dc1fa493da5e003473b0f0f60", null ],
-    [ "SetTopicProperties", "ntcore__cpp_8h.html#ga623623ac2bb80ee9926caaaef23c71df", null ],
+    [ "SetTopicProperties", "ntcore__cpp_8h.html#gaac1dd0526b999f425a512559f3d6ebd5", null ],
     [ "SetTopicProperty", "ntcore__cpp_8h.html#ga6606e5deddbd3b08b5baf1b8d4392ed2", null ],
     [ "SetTopicRetained", "ntcore__cpp_8h.html#ga9297aee2c9f8f4640c2c1853112bce57", null ],
     [ "StartClient3", "ntcore__cpp_8h.html#ga81aad79d81fa4b93a899d8ca53d82bf5", null ],
