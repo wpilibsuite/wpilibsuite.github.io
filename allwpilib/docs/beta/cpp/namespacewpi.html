@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -123,8 +123,6 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacewpi_1_1memory"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1memory.html">memory</a></td></tr>
 <tr class="memdesc:namespacewpi_1_1memory"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory namespace. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacewpi_1_1numbers"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1numbers.html">numbers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacewpi_1_1pointer__union__detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1pointer__union__detail.html">pointer_union_detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,8 +497,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_small_vector_template_common.html">SmallVectorTemplateCommon</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the part of <a class="el" href="classwpi_1_1_small_vector_template_base.html" title="SmallVectorTemplateBase&lt;TriviallyCopyable = false&gt; - This is where we put method implementations that...">SmallVectorTemplateBase</a> which does not depend on whether the type T is a POD.  <a href="classwpi_1_1_small_vector_template_common.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1span.html">span</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1spinlock.html">spinlock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A spinlock mutex.  <a href="classwpi_1_1spinlock.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -703,14 +699,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ade4e972587009901ad40bc390e4bb8db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ade4e972587009901ad40bc390e4bb8db">ReadUleb128</a> (<a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;is, uint64_t *ret)</td></tr>
 <tr class="memdesc:ade4e972587009901ad40bc390e4bb8db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read unsigned LEB128 data from a stream.  <a href="namespacewpi.html#ade4e972587009901ad40bc390e4bb8db">More...</a><br /></td></tr>
 <tr class="separator:ade4e972587009901ad40bc390e4bb8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1971c129c3896d6dcc5c413c9255eae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac1971c129c3896d6dcc5c413c9255eae"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ac1971c129c3896d6dcc5c413c9255eae">drop_front</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt; in, typename <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;::size_type n=1)</td></tr>
-<tr class="memdesc:ac1971c129c3896d6dcc5c413c9255eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the first <code>N</code> elements of the array.  <a href="namespacewpi.html#ac1971c129c3896d6dcc5c413c9255eae">More...</a><br /></td></tr>
-<tr class="separator:ac1971c129c3896d6dcc5c413c9255eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a756d0431eaf3cc2f4c8d423398c36c06"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a756d0431eaf3cc2f4c8d423398c36c06"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a756d0431eaf3cc2f4c8d423398c36c06">drop_back</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt; in, typename <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;::size_type n=1)</td></tr>
-<tr class="memdesc:a756d0431eaf3cc2f4c8d423398c36c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the last <code>N</code> elements of the array.  <a href="namespacewpi.html#a756d0431eaf3cc2f4c8d423398c36c06">More...</a><br /></td></tr>
-<tr class="separator:a756d0431eaf3cc2f4c8d423398c36c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf0701ba0d3863a755e0b2a1cc08603"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abbf0701ba0d3863a755e0b2a1cc08603"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::span&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#abbf0701ba0d3863a755e0b2a1cc08603">drop_front</a> (std::span&lt; T &gt; in, typename std::span&lt; T &gt;::size_type n=1)</td></tr>
+<tr class="memdesc:abbf0701ba0d3863a755e0b2a1cc08603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the first <code>N</code> elements of the array.  <a href="namespacewpi.html#abbf0701ba0d3863a755e0b2a1cc08603">More...</a><br /></td></tr>
+<tr class="separator:abbf0701ba0d3863a755e0b2a1cc08603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b74b99b021d98ad0b415c12920f259"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a58b74b99b021d98ad0b415c12920f259"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::span&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a58b74b99b021d98ad0b415c12920f259">drop_back</a> (std::span&lt; T &gt; in, typename std::span&lt; T &gt;::size_type n=1)</td></tr>
+<tr class="memdesc:a58b74b99b021d98ad0b415c12920f259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the last <code>N</code> elements of the array.  <a href="namespacewpi.html#a58b74b99b021d98ad0b415c12920f259">More...</a><br /></td></tr>
+<tr class="separator:a58b74b99b021d98ad0b415c12920f259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed245bfb118e5dfe475bf2044a4985d8"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aed245bfb118e5dfe475bf2044a4985d8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1future.html">future</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aed245bfb118e5dfe475bf2044a4985d8">make_ready_future</a> (T &amp;&amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:aed245bfb118e5dfe475bf2044a4985d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a valid future with the value set.  <a href="namespacewpi.html#aed245bfb118e5dfe475bf2044a4985d8">More...</a><br /></td></tr>
@@ -726,20 +722,20 @@ Functions</h2></td></tr>
 <tr class="separator:ac503c8c47490fca90512a88b23b65358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46c4d7b36efb76fd101c8cd219c9bdb8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a46c4d7b36efb76fd101c8cd219c9bdb8">Base64Decode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> encoded, std::vector&lt; uint8_t &gt; *plain)</td></tr>
 <tr class="separator:a46c4d7b36efb76fd101c8cd219c9bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a2cf06e04019f9efafca5db093ef85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1span.html">span</a>&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a54a2cf06e04019f9efafca5db093ef85">Base64Decode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> encoded, size_t *num_read, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; uint8_t &gt; &amp;buf)</td></tr>
-<tr class="separator:a54a2cf06e04019f9efafca5db093ef85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa145997bec65a8d0e2b783c384a6e3e4"><td class="memItemLeft" align="right" valign="top">std::span&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa145997bec65a8d0e2b783c384a6e3e4">Base64Decode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> encoded, size_t *num_read, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; uint8_t &gt; &amp;buf)</td></tr>
+<tr class="separator:aa145997bec65a8d0e2b783c384a6e3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f0cca388f8042851ed82359d23c61e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8f0cca388f8042851ed82359d23c61e9">Base64Encode</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;os, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> plain)</td></tr>
 <tr class="separator:a8f0cca388f8042851ed82359d23c61e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4351dc23f99c30ed993190988f3da889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a4351dc23f99c30ed993190988f3da889">Base64Encode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> plain, std::string *encoded)</td></tr>
 <tr class="separator:a4351dc23f99c30ed993190988f3da889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbfd836e85f4e66313113339d542ae76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#adbfd836e85f4e66313113339d542ae76">Base64Encode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> plain, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf)</td></tr>
 <tr class="separator:adbfd836e85f4e66313113339d542ae76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae97e81fc664dc623ed15f4d6f1bb9255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae97e81fc664dc623ed15f4d6f1bb9255">Base64Encode</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;os, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; plain)</td></tr>
-<tr class="separator:ae97e81fc664dc623ed15f4d6f1bb9255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762ff79f9bb32d72681ecbc27f84fea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a762ff79f9bb32d72681ecbc27f84fea6">Base64Encode</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; plain, std::string *encoded)</td></tr>
-<tr class="separator:a762ff79f9bb32d72681ecbc27f84fea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b3dba60397b9cada557c0d71c05b62f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a1b3dba60397b9cada557c0d71c05b62f">Base64Encode</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; plain, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf)</td></tr>
-<tr class="separator:a1b3dba60397b9cada557c0d71c05b62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d319e2a72f572e4fbdbb2017fd203e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad2d319e2a72f572e4fbdbb2017fd203e">Base64Encode</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;os, std::span&lt; const uint8_t &gt; plain)</td></tr>
+<tr class="separator:ad2d319e2a72f572e4fbdbb2017fd203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f1eed3c192da2db90b3d0ab15d24c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a94f1eed3c192da2db90b3d0ab15d24c8">Base64Encode</a> (std::span&lt; const uint8_t &gt; plain, std::string *encoded)</td></tr>
+<tr class="separator:a94f1eed3c192da2db90b3d0ab15d24c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c10d4e853c1b2027f22c23c46106f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3c10d4e853c1b2027f22c23c46106f15">Base64Encode</a> (std::span&lt; const uint8_t &gt; plain, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf)</td></tr>
+<tr class="separator:a3c10d4e853c1b2027f22c23c46106f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b125df3c2eaae6f9b8cd09ccd9da98d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a4b125df3c2eaae6f9b8cd09ccd9da98d">GetStackTrace</a> (int offset)</td></tr>
 <tr class="memdesc:a4b125df3c2eaae6f9b8cd09ccd9da98d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a stack trace, ignoring the first "offset" symbols.  <a href="namespacewpi.html#a4b125df3c2eaae6f9b8cd09ccd9da98d">More...</a><br /></td></tr>
 <tr class="separator:a4b125df3c2eaae6f9b8cd09ccd9da98d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -837,15 +833,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a349ec073e684b8777cd7e7166dd3b465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#ac792221430e4bf80c1b31493afd90bfe">ConversionResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a349ec073e684b8777cd7e7166dd3b465">convertUTF8Sequence</a> (const <a class="el" href="namespacewpi.html#a37bbc3b1e95b6409a042b8089d3d8c00">UTF8</a> **<a class="el" href="_third_party_notices_8txt.html#a7e4b2af6b1063d628370e894227dec10">source</a>, const <a class="el" href="namespacewpi.html#a37bbc3b1e95b6409a042b8089d3d8c00">UTF8</a> *sourceEnd, <a class="el" href="namespacewpi.html#ab31f8b5d3b4b5750e308b9486c8063cf">UTF32</a> *target, <a class="el" href="namespacewpi.html#aae6baba019eee7e75848c7c03db9557b">ConversionFlags</a> flags)</td></tr>
 <tr class="memdesc:a349ec073e684b8777cd7e7166dd3b465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the first UTF8 sequence in the given source buffer to a UTF32 code point.  <a href="namespacewpi.html#a349ec073e684b8777cd7e7166dd3b465">More...</a><br /></td></tr>
 <tr class="separator:a349ec073e684b8777cd7e7166dd3b465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437ee39acb7a5f002458f11c638d2647"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a437ee39acb7a5f002458f11c638d2647">hasUTF16ByteOrderMark</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const char &gt; SrcBytes)</td></tr>
-<tr class="memdesc:a437ee39acb7a5f002458f11c638d2647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a blob of text starts with a UTF-16 big or little endian byte order mark.  <a href="namespacewpi.html#a437ee39acb7a5f002458f11c638d2647">More...</a><br /></td></tr>
-<tr class="separator:a437ee39acb7a5f002458f11c638d2647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a433f87b659353a4c7c808d18ae10de6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a433f87b659353a4c7c808d18ae10de6c">convertUTF16ToUTF8String</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const char &gt; SrcBytes, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;Out)</td></tr>
-<tr class="memdesc:a433f87b659353a4c7c808d18ae10de6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a stream of raw bytes assumed to be UTF16 into a UTF8 std::string.  <a href="namespacewpi.html#a433f87b659353a4c7c808d18ae10de6c">More...</a><br /></td></tr>
-<tr class="separator:a433f87b659353a4c7c808d18ae10de6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4078daddfc211a1376eeb038ebc2657"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae4078daddfc211a1376eeb038ebc2657">convertUTF16ToUTF8String</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="namespacewpi.html#a45f45c50238ed154108c2d79c37d19ab">UTF16</a> &gt; Src, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;Out)</td></tr>
-<tr class="memdesc:ae4078daddfc211a1376eeb038ebc2657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a UTF16 string into a UTF8 std::string.  <a href="namespacewpi.html#ae4078daddfc211a1376eeb038ebc2657">More...</a><br /></td></tr>
-<tr class="separator:ae4078daddfc211a1376eeb038ebc2657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328c5e2f088e151affd5ff9d7b398c42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a328c5e2f088e151affd5ff9d7b398c42">hasUTF16ByteOrderMark</a> (std::span&lt; const char &gt; SrcBytes)</td></tr>
+<tr class="memdesc:a328c5e2f088e151affd5ff9d7b398c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if a blob of text starts with a UTF-16 big or little endian byte order mark.  <a href="namespacewpi.html#a328c5e2f088e151affd5ff9d7b398c42">More...</a><br /></td></tr>
+<tr class="separator:a328c5e2f088e151affd5ff9d7b398c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96959c1be95aa4d288cc84e11ab6f1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad96959c1be95aa4d288cc84e11ab6f1b">convertUTF16ToUTF8String</a> (std::span&lt; const char &gt; SrcBytes, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;Out)</td></tr>
+<tr class="memdesc:ad96959c1be95aa4d288cc84e11ab6f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a stream of raw bytes assumed to be UTF16 into a UTF8 std::string.  <a href="namespacewpi.html#ad96959c1be95aa4d288cc84e11ab6f1b">More...</a><br /></td></tr>
+<tr class="separator:ad96959c1be95aa4d288cc84e11ab6f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae550217f649fc634dfa84af9795df29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aae550217f649fc634dfa84af9795df29">convertUTF16ToUTF8String</a> (std::span&lt; const <a class="el" href="namespacewpi.html#a45f45c50238ed154108c2d79c37d19ab">UTF16</a> &gt; Src, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;Out)</td></tr>
+<tr class="memdesc:aae550217f649fc634dfa84af9795df29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a UTF16 string into a UTF8 std::string.  <a href="namespacewpi.html#aae550217f649fc634dfa84af9795df29">More...</a><br /></td></tr>
+<tr class="separator:aae550217f649fc634dfa84af9795df29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051a613a70381a8d15a4ed7630bfd942"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a051a613a70381a8d15a4ed7630bfd942">convertUTF8ToUTF16String</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> SrcUTF8, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; <a class="el" href="namespacewpi.html#a45f45c50238ed154108c2d79c37d19ab">UTF16</a> &gt; &amp;DstUTF16)</td></tr>
 <tr class="memdesc:a051a613a70381a8d15a4ed7630bfd942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a UTF-8 string into a UTF-16 string with native endianness.  <a href="namespacewpi.html#a051a613a70381a8d15a4ed7630bfd942">More...</a><br /></td></tr>
 <tr class="separator:a051a613a70381a8d15a4ed7630bfd942"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1422,30 +1418,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa300eeb1def26aef1ca3af133fb26971"><td class="memTemplParams" colspan="2">template&lt;typename RangeT , typename WrappedIteratorT  = decltype(std::begin(std::declval&lt;RangeT&gt;()))&gt; </td></tr>
 <tr class="memitem:aa300eeb1def26aef1ca3af133fb26971"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1iterator__range.html">iterator_range</a>&lt; <a class="el" href="classwpi_1_1pointer__iterator.html">pointer_iterator</a>&lt; WrappedIteratorT &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa300eeb1def26aef1ca3af133fb26971">make_pointer_range</a> (RangeT &amp;&amp;Range)</td></tr>
 <tr class="separator:aa300eeb1def26aef1ca3af133fb26971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d52ea374e69d520e3f696e58c1565f"><td class="memTemplParams" colspan="2">template&lt;class T , size_t N&gt; </td></tr>
-<tr class="memitem:a39d52ea374e69d520e3f696e58c1565f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a39d52ea374e69d520e3f696e58c1565f">span</a> (T(&amp;)[N]) -&gt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; T, N &gt;</td></tr>
-<tr class="separator:a39d52ea374e69d520e3f696e58c1565f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bed3e5edc3cdb7e7086a1e81c33abcb"><td class="memTemplParams" colspan="2">template&lt;class T , size_t N&gt; </td></tr>
-<tr class="memitem:a4bed3e5edc3cdb7e7086a1e81c33abcb"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a4bed3e5edc3cdb7e7086a1e81c33abcb">span</a> (std::array&lt; T, N &gt; &amp;) -&gt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; T, N &gt;</td></tr>
-<tr class="separator:a4bed3e5edc3cdb7e7086a1e81c33abcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cf9bbb4260087299a39334b54ca9a9"><td class="memTemplParams" colspan="2">template&lt;class T , size_t N&gt; </td></tr>
-<tr class="memitem:a69cf9bbb4260087299a39334b54ca9a9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a69cf9bbb4260087299a39334b54ca9a9">span</a> (const std::array&lt; T, N &gt; &amp;) -&gt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; const T, N &gt;</td></tr>
-<tr class="separator:a69cf9bbb4260087299a39334b54ca9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab606cdff09cfdd6ab575a6f9e777905a"><td class="memTemplParams" colspan="2">template&lt;class Container &gt; </td></tr>
-<tr class="memitem:ab606cdff09cfdd6ab575a6f9e777905a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab606cdff09cfdd6ab575a6f9e777905a">span</a> (Container &amp;) -&gt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; typename Container::value_type &gt;</td></tr>
-<tr class="separator:ab606cdff09cfdd6ab575a6f9e777905a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0505b5d13f504fa6069411cb2fdbddaf"><td class="memTemplParams" colspan="2">template&lt;class Container &gt; </td></tr>
-<tr class="memitem:a0505b5d13f504fa6069411cb2fdbddaf"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0505b5d13f504fa6069411cb2fdbddaf">span</a> (const Container &amp;) -&gt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; const typename Container::value_type &gt;</td></tr>
-<tr class="separator:a0505b5d13f504fa6069411cb2fdbddaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae828a8c77bdebb5204250519838ed8dc"><td class="memTemplParams" colspan="2">template&lt;typename ElementType , std::size_t Extent&gt; </td></tr>
-<tr class="memitem:ae828a8c77bdebb5204250519838ed8dc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const std::byte,((Extent==<a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a>) ? <a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a> :sizeof(ElementType) *Extent)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae828a8c77bdebb5204250519838ed8dc">as_bytes</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; ElementType, Extent &gt; s) noexcept</td></tr>
-<tr class="separator:ae828a8c77bdebb5204250519838ed8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70214806b2200e893f4f33e54fb6166a"><td class="memTemplParams" colspan="2">template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::is_const&lt; ElementType &gt;<a class="el" href="classvalue.html">::value</a>, int &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>  = 0&gt; </td></tr>
-<tr class="memitem:a70214806b2200e893f4f33e54fb6166a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1span.html">span</a>&lt; std::byte,((Extent==<a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a>) ? <a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a> :sizeof(ElementType) *Extent)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a70214806b2200e893f4f33e54fb6166a">as_writable_bytes</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; ElementType, Extent &gt; s) noexcept</td></tr>
-<tr class="separator:a70214806b2200e893f4f33e54fb6166a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642b2450b4eef7de6728e218adde13b5"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, typename E , std::size_t S&gt; </td></tr>
-<tr class="memitem:a642b2450b4eef7de6728e218adde13b5"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a642b2450b4eef7de6728e218adde13b5">get</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; E, <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt; s) -&gt; decltype(s[N])</td></tr>
-<tr class="separator:a642b2450b4eef7de6728e218adde13b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1463,8 +1435,6 @@ Variables</h2></td></tr>
 <tr class="memitem:a68147e630fcf898faec5b0f4cacd7214"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a68147e630fcf898faec5b0f4cacd7214">huge_valf</a></td></tr>
 <tr class="memdesc:a68147e630fcf898faec5b0f4cacd7214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this rather than HUGE_VALF; the latter causes warnings on MSVC.  <a href="namespacewpi.html#a68147e630fcf898faec5b0f4cacd7214">More...</a><br /></td></tr>
 <tr class="separator:a68147e630fcf898faec5b0f4cacd7214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57e346e8c6106d238edcdb05d9ee776"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a> = SIZE_MAX</td></tr>
-<tr class="separator:af57e346e8c6106d238edcdb05d9ee776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >/file This file defines the <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> class. </p>
@@ -2112,62 +2082,6 @@ template&lt;typename T , typename... Ts&gt; </div>
 
 </div>
 </div>
-<a id="ae828a8c77bdebb5204250519838ed8dc" name="ae828a8c77bdebb5204250519838ed8dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae828a8c77bdebb5204250519838ed8dc">&#9670;&nbsp;</a></span>as_bytes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename ElementType , std::size_t Extent&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const std::byte,((Extent==<a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a>) ? <a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a> :sizeof(ElementType) *Extent)&gt; wpi::as_bytes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; ElementType, Extent &gt;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a70214806b2200e893f4f33e54fb6166a" name="a70214806b2200e893f4f33e54fb6166a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70214806b2200e893f4f33e54fb6166a">&#9670;&nbsp;</a></span>as_writable_bytes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::is_const&lt; ElementType &gt;<a class="el" href="classvalue.html">::value</a>, int &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>  = 0&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">span</a>&lt; std::byte,((Extent==<a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a>) ? <a class="el" href="namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776">dynamic_extent</a> :sizeof(ElementType) *Extent)&gt; wpi::as_writable_bytes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; ElementType, Extent &gt;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa84cf72de6e08899df61612e400beff1" name="aa84cf72de6e08899df61612e400beff1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa84cf72de6e08899df61612e400beff1">&#9670;&nbsp;</a></span>Base64Decode() <span class="overload">[1/5]</span></h2>
 
@@ -2230,14 +2144,14 @@ template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::
 
 </div>
 </div>
-<a id="a54a2cf06e04019f9efafca5db093ef85" name="a54a2cf06e04019f9efafca5db093ef85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54a2cf06e04019f9efafca5db093ef85">&#9670;&nbsp;</a></span>Base64Decode() <span class="overload">[3/5]</span></h2>
+<a id="aa145997bec65a8d0e2b783c384a6e3e4" name="aa145997bec65a8d0e2b783c384a6e3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa145997bec65a8d0e2b783c384a6e3e4">&#9670;&nbsp;</a></span>Base64Decode() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">span</a>&lt; uint8_t &gt; wpi::Base64Decode </td>
+          <td class="memname">std::span&lt; uint8_t &gt; wpi::Base64Decode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>encoded</em>, </td>
@@ -2320,8 +2234,8 @@ template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::
 
 </div>
 </div>
-<a id="ae97e81fc664dc623ed15f4d6f1bb9255" name="ae97e81fc664dc623ed15f4d6f1bb9255"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae97e81fc664dc623ed15f4d6f1bb9255">&#9670;&nbsp;</a></span>Base64Encode() <span class="overload">[1/6]</span></h2>
+<a id="ad2d319e2a72f572e4fbdbb2017fd203e" name="ad2d319e2a72f572e4fbdbb2017fd203e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d319e2a72f572e4fbdbb2017fd203e">&#9670;&nbsp;</a></span>Base64Encode() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2335,7 +2249,7 @@ template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>plain</em>&#160;</td>
         </tr>
         <tr>
@@ -2376,8 +2290,8 @@ template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::
 
 </div>
 </div>
-<a id="a1b3dba60397b9cada557c0d71c05b62f" name="a1b3dba60397b9cada557c0d71c05b62f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b3dba60397b9cada557c0d71c05b62f">&#9670;&nbsp;</a></span>Base64Encode() <span class="overload">[3/6]</span></h2>
+<a id="a3c10d4e853c1b2027f22c23c46106f15" name="a3c10d4e853c1b2027f22c23c46106f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c10d4e853c1b2027f22c23c46106f15">&#9670;&nbsp;</a></span>Base64Encode() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2385,7 +2299,7 @@ template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::
         <tr>
           <td class="memname"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> wpi::Base64Encode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>plain</em>, </td>
         </tr>
         <tr>
@@ -2404,8 +2318,8 @@ template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::
 
 </div>
 </div>
-<a id="a762ff79f9bb32d72681ecbc27f84fea6" name="a762ff79f9bb32d72681ecbc27f84fea6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a762ff79f9bb32d72681ecbc27f84fea6">&#9670;&nbsp;</a></span>Base64Encode() <span class="overload">[4/6]</span></h2>
+<a id="a94f1eed3c192da2db90b3d0ab15d24c8" name="a94f1eed3c192da2db90b3d0ab15d24c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f1eed3c192da2db90b3d0ab15d24c8">&#9670;&nbsp;</a></span>Base64Encode() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2413,7 +2327,7 @@ template&lt;class ElementType , size_t Extent, typename std::enable_if&lt;!std::
         <tr>
           <td class="memname">void wpi::Base64Encode </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>plain</em>, </td>
         </tr>
         <tr>
@@ -3122,8 +3036,8 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
 
 </div>
 </div>
-<a id="a433f87b659353a4c7c808d18ae10de6c" name="a433f87b659353a4c7c808d18ae10de6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a433f87b659353a4c7c808d18ae10de6c">&#9670;&nbsp;</a></span>convertUTF16ToUTF8String() <span class="overload">[1/2]</span></h2>
+<a id="ad96959c1be95aa4d288cc84e11ab6f1b" name="ad96959c1be95aa4d288cc84e11ab6f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96959c1be95aa4d288cc84e11ab6f1b">&#9670;&nbsp;</a></span>convertUTF16ToUTF8String() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3131,7 +3045,7 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
         <tr>
           <td class="memname">bool wpi::convertUTF16ToUTF8String </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const char &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const char &gt;&#160;</td>
           <td class="paramname"><em>SrcBytes</em>, </td>
         </tr>
         <tr>
@@ -3160,8 +3074,8 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
 
 </div>
 </div>
-<a id="ae4078daddfc211a1376eeb038ebc2657" name="ae4078daddfc211a1376eeb038ebc2657"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4078daddfc211a1376eeb038ebc2657">&#9670;&nbsp;</a></span>convertUTF16ToUTF8String() <span class="overload">[2/2]</span></h2>
+<a id="aae550217f649fc634dfa84af9795df29" name="aae550217f649fc634dfa84af9795df29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae550217f649fc634dfa84af9795df29">&#9670;&nbsp;</a></span>convertUTF16ToUTF8String() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3169,7 +3083,7 @@ template&lt;typename T , <a class="el" href="core_8h.html#a012819c9e8b5e04872a27
         <tr>
           <td class="memname">bool wpi::convertUTF16ToUTF8String </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="namespacewpi.html#a45f45c50238ed154108c2d79c37d19ab">UTF16</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="namespacewpi.html#a45f45c50238ed154108c2d79c37d19ab">UTF16</a> &gt;&#160;</td>
           <td class="paramname"><em>Src</em>, </td>
         </tr>
         <tr>
@@ -4114,8 +4028,8 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a id="a756d0431eaf3cc2f4c8d423398c36c06" name="a756d0431eaf3cc2f4c8d423398c36c06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a756d0431eaf3cc2f4c8d423398c36c06">&#9670;&nbsp;</a></span>drop_back() <span class="overload">[1/2]</span></h2>
+<a id="a58b74b99b021d98ad0b415c12920f259" name="a58b74b99b021d98ad0b415c12920f259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b74b99b021d98ad0b415c12920f259">&#9670;&nbsp;</a></span>drop_back() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4126,15 +4040,15 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt; wpi::drop_back </td>
+          <td class="memname">constexpr std::span&lt; T &gt; wpi::drop_back </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; T &gt;&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;::size_type&#160;</td>
+          <td class="paramtype">typename std::span&lt; T &gt;::size_type&#160;</td>
           <td class="paramname"><em>n</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -4192,8 +4106,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="ac1971c129c3896d6dcc5c413c9255eae" name="ac1971c129c3896d6dcc5c413c9255eae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1971c129c3896d6dcc5c413c9255eae">&#9670;&nbsp;</a></span>drop_front() <span class="overload">[1/2]</span></h2>
+<a id="abbf0701ba0d3863a755e0b2a1cc08603" name="abbf0701ba0d3863a755e0b2a1cc08603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf0701ba0d3863a755e0b2a1cc08603">&#9670;&nbsp;</a></span>drop_front() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4204,15 +4118,15 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt; wpi::drop_front </td>
+          <td class="memname">constexpr std::span&lt; T &gt; wpi::drop_front </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; T &gt;&#160;</td>
           <td class="paramname"><em>in</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;::size_type&#160;</td>
+          <td class="paramtype">typename std::span&lt; T &gt;::size_type&#160;</td>
           <td class="paramname"><em>n</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
@@ -4836,35 +4750,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a642b2450b4eef7de6728e218adde13b5" name="a642b2450b4eef7de6728e218adde13b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a642b2450b4eef7de6728e218adde13b5">&#9670;&nbsp;</a></span>get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t N, typename E , std::size_t S&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto wpi::get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; E, <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &gt;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td> -&gt; decltype(s[N])
-</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a54a45aaed6f6214f0a95dc9fd352b628" name="a54a45aaed6f6214f0a95dc9fd352b628"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54a45aaed6f6214f0a95dc9fd352b628">&#9670;&nbsp;</a></span>getNumBytesForUTF8()</h2>
 
@@ -5180,8 +5065,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a437ee39acb7a5f002458f11c638d2647" name="a437ee39acb7a5f002458f11c638d2647"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a437ee39acb7a5f002458f11c638d2647">&#9670;&nbsp;</a></span>hasUTF16ByteOrderMark()</h2>
+<a id="a328c5e2f088e151affd5ff9d7b398c42" name="a328c5e2f088e151affd5ff9d7b398c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328c5e2f088e151affd5ff9d7b398c42">&#9670;&nbsp;</a></span>hasUTF16ByteOrderMark()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5189,7 +5074,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool wpi::hasUTF16ByteOrderMark </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const char &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const char &gt;&#160;</td>
           <td class="paramname"><em>SrcBytes</em></td><td>)</td>
           <td></td>
         </tr>
@@ -8913,106 +8798,6 @@ template&lt;unsigned B&gt; </div>
 
 </div>
 </div>
-<a id="a0505b5d13f504fa6069411cb2fdbddaf" name="a0505b5d13f504fa6069411cb2fdbddaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0505b5d13f504fa6069411cb2fdbddaf">&#9670;&nbsp;</a></span>span() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">wpi::span</a> </td>
-          <td>(</td>
-          <td class="paramtype">const Container &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt;  <a class="el" href="classwpi_1_1span.html">span</a>&lt; const typename Container::value_type &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a69cf9bbb4260087299a39334b54ca9a9" name="a69cf9bbb4260087299a39334b54ca9a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69cf9bbb4260087299a39334b54ca9a9">&#9670;&nbsp;</a></span>span() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">wpi::span</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt;  <a class="el" href="classwpi_1_1span.html">span</a>&lt; const T, N &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab606cdff09cfdd6ab575a6f9e777905a" name="ab606cdff09cfdd6ab575a6f9e777905a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab606cdff09cfdd6ab575a6f9e777905a">&#9670;&nbsp;</a></span>span() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">wpi::span</a> </td>
-          <td>(</td>
-          <td class="paramtype">Container &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt;  <a class="el" href="classwpi_1_1span.html">span</a>&lt; typename Container::value_type &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4bed3e5edc3cdb7e7086a1e81c33abcb" name="a4bed3e5edc3cdb7e7086a1e81c33abcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bed3e5edc3cdb7e7086a1e81c33abcb">&#9670;&nbsp;</a></span>span() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">wpi::span</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::array&lt; T, N &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt;  <a class="el" href="classwpi_1_1span.html">span</a>&lt; T, N &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39d52ea374e69d520e3f696e58c1565f" name="a39d52ea374e69d520e3f696e58c1565f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d52ea374e69d520e3f696e58c1565f">&#9670;&nbsp;</a></span>span() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">wpi::span</a> </td>
-          <td>(</td>
-          <td class="paramtype">T(&amp;)&#160;</td>
-          <td class="paramname">[N]</td><td>)</td>
-          <td> -&gt;  <a class="el" href="classwpi_1_1span.html">span</a>&lt; T, N &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a0f9d3d4eb9461ff65cb2743afa9fd08a" name="a0f9d3d4eb9461ff65cb2743afa9fd08a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f9d3d4eb9461ff65cb2743afa9fd08a">&#9670;&nbsp;</a></span>split() <span class="overload">[1/4]</span></h2>
 
@@ -9992,28 +9777,6 @@ template&lt;typename R &gt; </div>
 
 </div>
 </div>
-<a id="af57e346e8c6106d238edcdb05d9ee776" name="af57e346e8c6106d238edcdb05d9ee776"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57e346e8c6106d238edcdb05d9ee776">&#9670;&nbsp;</a></span>dynamic_extent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t wpi::dynamic_extent = SIZE_MAX</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab3cecb2351a66db7a659706908ff8764" name="ab3cecb2351a66db7a659706908ff8764"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3cecb2351a66db7a659706908ff8764">&#9670;&nbsp;</a></span>empty_array</h2>
 
@@ -10107,7 +9870,7 @@ template&lt;typename T , unsigned N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,8 @@ $(document).ready(function(){initNavTree('structhal_1_1_d_i_o_set_proxy.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3433e455edd7dd7d2723d84273e625ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1_d_i_o_set_proxy.html#a3433e455edd7dd7d2723d84273e625ea">DIOSetProxy</a> (tDIO::tOutputEnable setOutputDirReg, tDIO::tOutputEnable unsetOutputDirReg, tDIO::tDO setOutputStateReg, tDIO::tDO unsetOutputStateReg, tDIO *dio)</td></tr>
+<tr class="separator:a3433e455edd7dd7d2723d84273e625ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae75f1cc8f9136f5ccd62ee976235493c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1_d_i_o_set_proxy.html#ae75f1cc8f9136f5ccd62ee976235493c">DIOSetProxy</a> (const <a class="el" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a> &amp;)=delete</td></tr>
 <tr class="separator:ae75f1cc8f9136f5ccd62ee976235493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02f1e61d6d9426b60543504689ec1698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhal_1_1_d_i_o_set_proxy.html#a02f1e61d6d9426b60543504689ec1698">DIOSetProxy</a> (<a class="el" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a> &amp;&amp;)=delete</td></tr>
@@ -140,8 +142,62 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p >Proxy class for directly manipulating the DIO pins. </p>
 <p >This class is not copyable or movable, and should never be used outside of the UnsafeManipulateDIO callback. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3433e455edd7dd7d2723d84273e625ea" name="a3433e455edd7dd7d2723d84273e625ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3433e455edd7dd7d2723d84273e625ea">&#9670;&nbsp;</a></span>DIOSetProxy() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hal::DIOSetProxy::DIOSetProxy </td>
+          <td>(</td>
+          <td class="paramtype">tDIO::tOutputEnable&#160;</td>
+          <td class="paramname"><em>setOutputDirReg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tDIO::tOutputEnable&#160;</td>
+          <td class="paramname"><em>unsetOutputDirReg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tDIO::tDO&#160;</td>
+          <td class="paramname"><em>setOutputStateReg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tDIO::tDO&#160;</td>
+          <td class="paramname"><em>unsetOutputStateReg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tDIO *&#160;</td>
+          <td class="paramname"><em>dio</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae75f1cc8f9136f5ccd62ee976235493c" name="ae75f1cc8f9136f5ccd62ee976235493c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae75f1cc8f9136f5ccd62ee976235493c">&#9670;&nbsp;</a></span>DIOSetProxy() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75f1cc8f9136f5ccd62ee976235493c">&#9670;&nbsp;</a></span>DIOSetProxy() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,7 +223,7 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a02f1e61d6d9426b60543504689ec1698" name="a02f1e61d6d9426b60543504689ec1698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02f1e61d6d9426b60543504689ec1698">&#9670;&nbsp;</a></span>DIOSetProxy() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f1e61d6d9426b60543504689ec1698">&#9670;&nbsp;</a></span>DIOSetProxy() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -429,7 +485,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacehal.html">hal</a></li><li class="navelem"><a class="el" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

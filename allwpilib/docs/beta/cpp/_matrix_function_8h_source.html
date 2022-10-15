@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -151,9 +151,9 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1plain__col__type.html">plain_col_type&lt;MatrixType&gt;::type</a> VectorType;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rows = A.rows();</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">const</span> MatrixType N = MatrixType::Identity(rows, rows) - A;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  VectorType <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a> = VectorType::Ones(rows);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  N.template triangularView&lt;Upper&gt;().solveInPlace(<a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>.cwiseAbs().maxCoeff();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  VectorType <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a> = VectorType::Ones(rows);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  N.template triangularView&lt;Upper&gt;().solveInPlace(<a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>.cwiseAbs().maxCoeff();</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> MatrixType&gt;</div>
@@ -715,8 +715,8 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="anamespacestd_html_a8de3b111383ccb7c625398925d4c7add"><div class="ttname"><a href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallVectorImpl&lt; T &gt; &amp;LHS, wpi::SmallVectorImpl&lt; T &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallVector swap.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1299</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a8ef157f2a40ed27a0f834847b332eb72"><div class="ttname"><a href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">units::constants::F</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; charge::coulomb, inverse&lt; substance::mol &gt; &gt; &gt; F(N_A *e)</div><div class="ttdoc">Faraday constant.</div></div>
+<div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3421</div></div>
-<div class="ttc" id="anamespacewpi_1_1numbers_html_a2d77ce99cbb4b9e449846009e5828e58"><div class="ttname"><a href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">wpi::numbers::e</a></div><div class="ttdeci">constexpr double e</div><div class="ttdef"><b>Definition:</b> numbers:50</div></div>
 <div class="ttc" id="astruct_eigen_1_1_generic_num_traits_html_abca8573812593670795c41f22aa9d5e2"><div class="ttname"><a href="struct_eigen_1_1_generic_num_traits.html#abca8573812593670795c41f22aa9d5e2">Eigen::GenericNumTraits::Real</a></div><div class="ttdeci">T Real</div><div class="ttdef"><b>Definition:</b> NumTraits.h:164</div></div>
 <div class="ttc" id="astruct_eigen_1_1_num_traits_html"><div class="ttname"><a href="struct_eigen_1_1_num_traits.html">Eigen::NumTraits</a></div><div class="ttdoc">Holds information about the various numeric (i.e.</div><div class="ttdef"><b>Definition:</b> NumTraits.h:233</div></div>
 <div class="ttc" id="astruct_eigen_1_1internal_1_1matrix__function__compute_3_01_matrix_type_00_010_01_4_html_ade2dde964eb0b03fb28a13d5d33696e3"><div class="ttname"><a href="struct_eigen_1_1internal_1_1matrix__function__compute_3_01_matrix_type_00_010_01_4.html#ade2dde964eb0b03fb28a13d5d33696e3">Eigen::internal::matrix_function_compute&lt; MatrixType, 0 &gt;::run</a></div><div class="ttdeci">static void run(const MatA &amp;A, AtomicType &amp;atomic, ResultType &amp;result)</div><div class="ttdef"><b>Definition:</b> MatrixFunction.h:393</div></div>
@@ -736,7 +736,7 @@ $(document).ready(function(){initNavTree('_matrix_function_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_ab831a170da7e1b69eb014cca1c75323.html">unsupported</a></li><li class="navelem"><a class="el" href="dir_ad61f57c542da9b9e996cda5564c4956.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_942b1bdc222aa5be112e9d9d68a8b3e8.html">src</a></li><li class="navelem"><a class="el" href="dir_6f78b0333ef2d3d22867da03166eb161.html">MatrixFunctions</a></li><li class="navelem"><a class="el" href="_matrix_function_8h.html">MatrixFunction.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

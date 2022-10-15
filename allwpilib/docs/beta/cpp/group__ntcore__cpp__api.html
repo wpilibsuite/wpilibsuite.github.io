@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -107,9 +107,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html">nt::NetworkTableInstance</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables Instance.  <a href="classnt_1_1_network_table_instance.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_call.html">nt::RpcCall</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables Remote Procedure Call.  <a href="classnt_1_1_rpc_call.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A network table that knows its subtable path.  <a href="classnt_1_1_network_table.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,33 +116,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables Entry.  <a href="classnt_1_1_network_table_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnt_1_1_topic_listener_flags.html">nt::TopicListenerFlags</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag values for use with topic listeners.  <a href="structnt_1_1_topic_listener_flags.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga2bdfee8c11f9a4cfb1951cc824428725"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__cpp__api.html#ga2bdfee8c11f9a4cfb1951cc824428725">nt::NetworkTableValue</a> = <a class="el" href="classnt_1_1_value.html">Value</a></td></tr>
 <tr class="memdesc:ga2bdfee8c11f9a4cfb1951cc824428725"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a> <a class="el" href="classnt_1_1_value.html" title="A network table entry value.">Value</a> alias for similarity with Java.  <a href="group__ntcore__cpp__api.html#ga2bdfee8c11f9a4cfb1951cc824428725">More...</a><br /></td></tr>
 <tr class="separator:ga2bdfee8c11f9a4cfb1951cc824428725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabefa1316ff1efa7c7bf48d855a8a7ea3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__cpp__api.html#gabefa1316ff1efa7c7bf48d855a8a7ea3">nt::TableListener</a> = std::function&lt; void(<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a> *parent, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, std::shared_ptr&lt; <a class="el" href="classnt_1_1_network_table.html">NetworkTable</a> &gt; table)&gt;</td></tr>
-<tr class="memdesc:gabefa1316ff1efa7c7bf48d855a8a7ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A listener that listens to new sub-tables in a <a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a>.  <a href="group__ntcore__cpp__api.html#gabefa1316ff1efa7c7bf48d855a8a7ea3">More...</a><br /></td></tr>
-<tr class="separator:gabefa1316ff1efa7c7bf48d855a8a7ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2803a8887ee10b29350d4cd1301937fc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__cpp__api.html#ga2803a8887ee10b29350d4cd1301937fc">nt::TableEntryListener</a> = std::function&lt; void(<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a> *table, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, <a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> entry, std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">Value</a> &gt; <a class="el" href="classvalue.html">value</a>, int flags)&gt;</td></tr>
-<tr class="memdesc:ga2803a8887ee10b29350d4cd1301937fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A listener that listens to changes in values in a <a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a>.  <a href="group__ntcore__cpp__api.html#ga2803a8887ee10b29350d4cd1301937fc">More...</a><br /></td></tr>
-<tr class="separator:ga2803a8887ee10b29350d4cd1301937fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga90913d56c915df137d79593d8ab61911"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="group__ntcore__cpp__api.html#gga90913d56c915df137d79593d8ab61911aa637552032d3e89f0db0e302122b691d">nt::EntryListenerFlags::kImmediate</a> = NT_NOTIFY_IMMEDIATE
-, <a class="el" href="group__ntcore__cpp__api.html#gga90913d56c915df137d79593d8ab61911aa4fd4805f919234abe0f9a8750d3eebe">nt::EntryListenerFlags::kLocal</a> = NT_NOTIFY_LOCAL
-, <a class="el" href="group__ntcore__cpp__api.html#gga90913d56c915df137d79593d8ab61911aeb1c99cf2cfb3074c4d21f3297b81167">nt::EntryListenerFlags::kNew</a> = NT_NOTIFY_NEW
-, <a class="el" href="group__ntcore__cpp__api.html#gga90913d56c915df137d79593d8ab61911ab598151d1b91de678e6b01cf3eb58ff9">nt::EntryListenerFlags::kDelete</a> = NT_NOTIFY_DELETE
-, <br />
-&#160;&#160;<a class="el" href="group__ntcore__cpp__api.html#gga90913d56c915df137d79593d8ab61911a0ccb0be5fa05a46c301a4f70d2a036cd">nt::EntryListenerFlags::kUpdate</a> = NT_NOTIFY_UPDATE
-, <a class="el" href="group__ntcore__cpp__api.html#gga90913d56c915df137d79593d8ab61911afc5104febfc8a08878f3b5b589298a18">nt::EntryListenerFlags::kFlags</a> = NT_NOTIFY_FLAGS
-<br />
- }</td></tr>
-<tr class="memdesc:ga90913d56c915df137d79593d8ab61911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag values for use with entry listeners.  <a href="group__ntcore__cpp__api.html#ga90913d56c915df137d79593d8ab61911">More...</a><br /></td></tr>
-<tr class="separator:ga90913d56c915df137d79593d8ab61911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6389efeaed0733f40baa02cd3070a15c"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c">nt::NetworkTableType</a> { <br />
 &#160;&#160;<a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca41ba12ed492ce20c3ff503a553ae85ea">nt::NetworkTableType::kUnassigned</a> = NT_UNASSIGNED
 , <a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca57f58630ea0106aa965e5bf61a49d02c">nt::NetworkTableType::kBoolean</a> = NT_BOOLEAN
@@ -157,7 +139,10 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca3b0c09d2d3b86da2330c195889798d72">nt::NetworkTableType::kDoubleArray</a> = NT_DOUBLE_ARRAY
 , <a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15cab77ee53359ad606360288eaba24142bf">nt::NetworkTableType::kStringArray</a> = NT_STRING_ARRAY
 , <br />
-&#160;&#160;<a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca6e7af25906963812381b145a083e6492">nt::NetworkTableType::kRpc</a> = NT_RPC
+&#160;&#160;<a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15cab7400e777db61f5f726caeeab0a7dcc2">nt::NetworkTableType::kInteger</a> = NT_INTEGER
+, <a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca8425cd882e78bc9251db970b8a1da20e">nt::NetworkTableType::kFloat</a> = NT_FLOAT
+, <a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca67113db1e1ffe0f04dde96bf9c802386">nt::NetworkTableType::kIntegerArray</a> = NT_INTEGER_ARRAY
+, <a class="el" href="group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca497f8684227bbfb38d270ad87c5a6267">nt::NetworkTableType::kFloatArray</a> = NT_FLOAT_ARRAY
 <br />
  }</td></tr>
 <tr class="memdesc:ga6389efeaed0733f40baa02cd3070a15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTable entry type.  <a href="group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c">More...</a><br /></td></tr>
@@ -182,98 +167,7 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2803a8887ee10b29350d4cd1301937fc" name="ga2803a8887ee10b29350d4cd1301937fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2803a8887ee10b29350d4cd1301937fc">&#9670;&nbsp;</a></span>TableEntryListener</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__ntcore__cpp__api.html#ga2803a8887ee10b29350d4cd1301937fc">nt::TableEntryListener</a> = typedef std::function&lt;void( <a class="el" href="classnt_1_1_network_table.html">NetworkTable</a>* table, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, <a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> entry, std::shared_ptr&lt;<a class="el" href="classnt_1_1_value.html">Value</a>&gt; <a class="el" href="classvalue.html">value</a>, int flags)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A listener that listens to changes in values in a <a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a>. </p>
-<p >Called when a key-value pair is changed in a <a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">table</td><td>the table the key-value pair exists in </td></tr>
-    <tr><td class="paramname">key</td><td>the key associated with the value that changed </td></tr>
-    <tr><td class="paramname">entry</td><td>the entry associated with the value that changed </td></tr>
-    <tr><td class="paramname">value</td><td>the new value </td></tr>
-    <tr><td class="paramname">flags</td><td>update flags; for example, <a class="el" href="group__ntcore__cpp__api.html#gga90913d56c915df137d79593d8ab61911aeb1c99cf2cfb3074c4d21f3297b81167" title="Newly created entry.">EntryListenerFlags.kNew</a> if the key did not previously exist </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gabefa1316ff1efa7c7bf48d855a8a7ea3" name="gabefa1316ff1efa7c7bf48d855a8a7ea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabefa1316ff1efa7c7bf48d855a8a7ea3">&#9670;&nbsp;</a></span>TableListener</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__ntcore__cpp__api.html#gabefa1316ff1efa7c7bf48d855a8a7ea3">nt::TableListener</a> = typedef std::function&lt;void(<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a>* parent, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, std::shared_ptr&lt;<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a>&gt; table)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A listener that listens to new sub-tables in a <a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a>. </p>
-<p >Called when a new table is created.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">parent</td><td>the parent of the table </td></tr>
-    <tr><td class="paramname">name</td><td>the name of the new table </td></tr>
-    <tr><td class="paramname">table</td><td>the new table </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga90913d56c915df137d79593d8ab61911" name="ga90913d56c915df137d79593d8ab61911"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga90913d56c915df137d79593d8ab61911">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Flag values for use with entry listeners. </p>
-<p >The flags are a bitmask and must be OR'ed together to indicate the combination of events desired to be received.</p>
-<p >The constants kNew, kDelete, kUpdate, and kFlags represent different events that can occur to entries.</p>
-<p >By default, notifications are only generated for remote changes occurring after the listener is created. The constants kImmediate and kLocal are modifiers that cause notifications to be generated at other times. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga90913d56c915df137d79593d8ab61911aa637552032d3e89f0db0e302122b691d" name="gga90913d56c915df137d79593d8ab61911aa637552032d3e89f0db0e302122b691d"></a>kImmediate&#160;</td><td class="fielddoc"><p >Initial listener addition. </p>
-<p >Set this flag to receive immediate notification of entries matching the flag criteria (generally only useful when combined with kNew). </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga90913d56c915df137d79593d8ab61911aa4fd4805f919234abe0f9a8750d3eebe" name="gga90913d56c915df137d79593d8ab61911aa4fd4805f919234abe0f9a8750d3eebe"></a>kLocal&#160;</td><td class="fielddoc"><p >Changed locally. </p>
-<p >Set this flag to receive notification of both local changes and changes coming from remote nodes. By default, notifications are only generated for remote changes. Must be combined with some combination of kNew, kDelete, kUpdate, and kFlags to receive notifications of those respective events. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga90913d56c915df137d79593d8ab61911aeb1c99cf2cfb3074c4d21f3297b81167" name="gga90913d56c915df137d79593d8ab61911aeb1c99cf2cfb3074c4d21f3297b81167"></a>kNew&#160;</td><td class="fielddoc"><p >Newly created entry. </p>
-<p >Set this flag to receive a notification when an entry is created. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga90913d56c915df137d79593d8ab61911ab598151d1b91de678e6b01cf3eb58ff9" name="gga90913d56c915df137d79593d8ab61911ab598151d1b91de678e6b01cf3eb58ff9"></a>kDelete&#160;</td><td class="fielddoc"><p >Entry was deleted. </p>
-<p >Set this flag to receive a notification when an entry is deleted. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga90913d56c915df137d79593d8ab61911a0ccb0be5fa05a46c301a4f70d2a036cd" name="gga90913d56c915df137d79593d8ab61911a0ccb0be5fa05a46c301a4f70d2a036cd"></a>kUpdate&#160;</td><td class="fielddoc"><p >Entry's value changed. </p>
-<p >Set this flag to receive a notification when an entry's value (or type) changes. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga90913d56c915df137d79593d8ab61911afc5104febfc8a08878f3b5b589298a18" name="gga90913d56c915df137d79593d8ab61911afc5104febfc8a08878f3b5b589298a18"></a>kFlags&#160;</td><td class="fielddoc"><p >Entry's flags changed. </p>
-<p >Set this flag to receive a notification when an entry's flags value changes. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a id="ga6389efeaed0733f40baa02cd3070a15c" name="ga6389efeaed0733f40baa02cd3070a15c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6389efeaed0733f40baa02cd3070a15c">&#9670;&nbsp;</a></span>NetworkTableType</h2>
 
@@ -304,7 +198,10 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15ca74a2c02b2ecfbc77d60fa2f37958be6b" name="gga6389efeaed0733f40baa02cd3070a15ca74a2c02b2ecfbc77d60fa2f37958be6b"></a>kBooleanArray&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15ca3b0c09d2d3b86da2330c195889798d72" name="gga6389efeaed0733f40baa02cd3070a15ca3b0c09d2d3b86da2330c195889798d72"></a>kDoubleArray&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15cab77ee53359ad606360288eaba24142bf" name="gga6389efeaed0733f40baa02cd3070a15cab77ee53359ad606360288eaba24142bf"></a>kStringArray&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15ca6e7af25906963812381b145a083e6492" name="gga6389efeaed0733f40baa02cd3070a15ca6e7af25906963812381b145a083e6492"></a>kRpc&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15cab7400e777db61f5f726caeeab0a7dcc2" name="gga6389efeaed0733f40baa02cd3070a15cab7400e777db61f5f726caeeab0a7dcc2"></a>kInteger&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15ca8425cd882e78bc9251db970b8a1da20e" name="gga6389efeaed0733f40baa02cd3070a15ca8425cd882e78bc9251db970b8a1da20e"></a>kFloat&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15ca67113db1e1ffe0f04dde96bf9c802386" name="gga6389efeaed0733f40baa02cd3070a15ca67113db1e1ffe0f04dde96bf9c802386"></a>kIntegerArray&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga6389efeaed0733f40baa02cd3070a15ca497f8684227bbfb38d270ad87c5a6267" name="gga6389efeaed0733f40baa02cd3070a15ca497f8684227bbfb38d270ad87c5a6267"></a>kFloatArray&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -314,7 +211,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

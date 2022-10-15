@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -106,10 +106,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa3c5680eec4e8544806f3ae9c6232fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28e8bf855fa1561ef766551ca6020346"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_memory_buffer_ref.html#a28e8bf855fa1561ef766551ca6020346">MemoryBufferRef</a> (<a class="el" href="classwpi_1_1_memory_buffer.html">MemoryBuffer</a> &amp;<a class="el" href="classbuffer.html">buffer</a>)</td></tr>
 <tr class="separator:a28e8bf855fa1561ef766551ca6020346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1557dac89696f618f69a06816d7b4cdf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_memory_buffer_ref.html#a1557dac89696f618f69a06816d7b4cdf">MemoryBufferRef</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; <a class="el" href="classbuffer.html">buffer</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> id)</td></tr>
-<tr class="separator:a1557dac89696f618f69a06816d7b4cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0de400226782649a8e9e20d6b386d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_memory_buffer_ref.html#a2b0de400226782649a8e9e20d6b386d4">GetBuffer</a> () const</td></tr>
-<tr class="separator:a2b0de400226782649a8e9e20d6b386d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ae82123771865ec9027d490f5b6597"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_memory_buffer_ref.html#a69ae82123771865ec9027d490f5b6597">MemoryBufferRef</a> (std::span&lt; const uint8_t &gt; <a class="el" href="classbuffer.html">buffer</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> id)</td></tr>
+<tr class="separator:a69ae82123771865ec9027d490f5b6597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f6a14a272b1e73041b0d99822790ca"><td class="memItemLeft" align="right" valign="top">std::span&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_memory_buffer_ref.html#a65f6a14a272b1e73041b0d99822790ca">GetBuffer</a> () const</td></tr>
+<tr class="separator:a65f6a14a272b1e73041b0d99822790ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a082e5bc5fbaeeb629010bb6499b35e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_memory_buffer_ref.html#a082e5bc5fbaeeb629010bb6499b35e82">GetBufferIdentifier</a> () const</td></tr>
 <tr class="separator:a082e5bc5fbaeeb629010bb6499b35e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913228fbbd9149d27bf28c17b208e515"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_memory_buffer_ref.html#a913228fbbd9149d27bf28c17b208e515">begin</a> () const</td></tr>
@@ -171,8 +171,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1557dac89696f618f69a06816d7b4cdf" name="a1557dac89696f618f69a06816d7b4cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1557dac89696f618f69a06816d7b4cdf">&#9670;&nbsp;</a></span>MemoryBufferRef() <span class="overload">[3/3]</span></h2>
+<a id="a69ae82123771865ec9027d490f5b6597" name="a69ae82123771865ec9027d490f5b6597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ae82123771865ec9027d490f5b6597">&#9670;&nbsp;</a></span>MemoryBufferRef() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">wpi::MemoryBufferRef::MemoryBufferRef </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
@@ -258,8 +258,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b0de400226782649a8e9e20d6b386d4" name="a2b0de400226782649a8e9e20d6b386d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b0de400226782649a8e9e20d6b386d4">&#9670;&nbsp;</a></span>GetBuffer()</h2>
+<a id="a65f6a14a272b1e73041b0d99822790ca" name="a65f6a14a272b1e73041b0d99822790ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65f6a14a272b1e73041b0d99822790ca">&#9670;&nbsp;</a></span>GetBuffer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +268,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; wpi::MemoryBufferRef::GetBuffer </td>
+          <td class="memname">std::span&lt; const uint8_t &gt; wpi::MemoryBufferRef::GetBuffer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -342,7 +342,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_memory_buffer_ref.html">MemoryBufferRef</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

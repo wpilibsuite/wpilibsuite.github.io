@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -118,21 +118,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaed63e3bae15ba09927e1866a0f07e83c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gaed63e3bae15ba09927e1866a0f07e83c">NT_AddPolledLogger</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller, unsigned int min_level, unsigned int max_level)</td></tr>
 <tr class="memdesc:gaed63e3bae15ba09927e1866a0f07e83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log level for a log poller.  <a href="group__ntcore__logger__cfunc.html#gaed63e3bae15ba09927e1866a0f07e83c">More...</a><br /></td></tr>
 <tr class="separator:gaed63e3bae15ba09927e1866a0f07e83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2159876879ab57462a026faabf0f3372"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga2159876879ab57462a026faabf0f3372">NT_PollLogger</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller, size_t *len)</td></tr>
-<tr class="memdesc:ga2159876879ab57462a026faabf0f3372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next log event.  <a href="group__ntcore__logger__cfunc.html#ga2159876879ab57462a026faabf0f3372">More...</a><br /></td></tr>
-<tr class="separator:ga2159876879ab57462a026faabf0f3372"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga182f51cc8196a89fce36dd2565814aef"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga182f51cc8196a89fce36dd2565814aef">NT_PollLoggerTimeout</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller, size_t *len, double timeout, <a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> *timed_out)</td></tr>
-<tr class="memdesc:ga182f51cc8196a89fce36dd2565814aef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next log event.  <a href="group__ntcore__logger__cfunc.html#ga182f51cc8196a89fce36dd2565814aef">More...</a><br /></td></tr>
-<tr class="separator:ga182f51cc8196a89fce36dd2565814aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab43666f384d6e2a149f93e18e3402cbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gab43666f384d6e2a149f93e18e3402cbb">NT_CancelPollLogger</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller)</td></tr>
-<tr class="memdesc:gab43666f384d6e2a149f93e18e3402cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel a PollLogger call.  <a href="group__ntcore__logger__cfunc.html#gab43666f384d6e2a149f93e18e3402cbb">More...</a><br /></td></tr>
-<tr class="separator:gab43666f384d6e2a149f93e18e3402cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34b75ca00c0adf8bcf8dcedc30d92d57"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga34b75ca00c0adf8bcf8dcedc30d92d57">NT_ReadLoggerQueue</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller, size_t *len)</td></tr>
+<tr class="memdesc:ga34b75ca00c0adf8bcf8dcedc30d92d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next log event.  <a href="group__ntcore__logger__cfunc.html#ga34b75ca00c0adf8bcf8dcedc30d92d57">More...</a><br /></td></tr>
+<tr class="separator:ga34b75ca00c0adf8bcf8dcedc30d92d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaaf0d1c5efd341c80fb2ced526b53adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf">NT_RemoveLogger</a> (<a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a> logger)</td></tr>
 <tr class="memdesc:gaaaf0d1c5efd341c80fb2ced526b53adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a logger.  <a href="group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf">More...</a><br /></td></tr>
 <tr class="separator:gaaaf0d1c5efd341c80fb2ced526b53adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe1855920ae23107016f7c8b9917a6c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gabe1855920ae23107016f7c8b9917a6c0">NT_WaitForLoggerQueue</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, double timeout)</td></tr>
-<tr class="memdesc:gabe1855920ae23107016f7c8b9917a6c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the incoming log event queue to be empty.  <a href="group__ntcore__logger__cfunc.html#gabe1855920ae23107016f7c8b9917a6c0">More...</a><br /></td></tr>
-<tr class="separator:gabe1855920ae23107016f7c8b9917a6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -266,33 +257,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab43666f384d6e2a149f93e18e3402cbb" name="gab43666f384d6e2a149f93e18e3402cbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab43666f384d6e2a149f93e18e3402cbb">&#9670;&nbsp;</a></span>NT_CancelPollLogger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NT_CancelPollLogger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td>
-          <td class="paramname"><em>poller</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cancel a PollLogger call. </p>
-<p >This wakes up a call to PollLogger for this poller and causes it to immediately return an empty array.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">poller</td><td>poller handle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="gab73de0e404687276b238f4a028606a49" name="gab73de0e404687276b238f4a028606a49"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab73de0e404687276b238f4a028606a49">&#9670;&nbsp;</a></span>NT_CreateLoggerPoller()</h2>
 
@@ -348,14 +312,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga2159876879ab57462a026faabf0f3372" name="ga2159876879ab57462a026faabf0f3372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2159876879ab57462a026faabf0f3372">&#9670;&nbsp;</a></span>NT_PollLogger()</h2>
+<a id="ga34b75ca00c0adf8bcf8dcedc30d92d57" name="ga34b75ca00c0adf8bcf8dcedc30d92d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34b75ca00c0adf8bcf8dcedc30d92d57">&#9670;&nbsp;</a></span>NT_ReadLoggerQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> * NT_PollLogger </td>
+          <td class="memname">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> * NT_ReadLoggerQueue </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td>
           <td class="paramname"><em>poller</em>, </td>
@@ -387,59 +351,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga182f51cc8196a89fce36dd2565814aef" name="ga182f51cc8196a89fce36dd2565814aef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga182f51cc8196a89fce36dd2565814aef">&#9670;&nbsp;</a></span>NT_PollLoggerTimeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> * NT_PollLoggerTimeout </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td>
-          <td class="paramname"><em>poller</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> *&#160;</td>
-          <td class="paramname"><em>timed_out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the next log event. </p>
-<p >This blocks until the next log occurs or it times out.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">poller</td><td>poller handle </td></tr>
-    <tr><td class="paramname">len</td><td>length of returned array (output) </td></tr>
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds </td></tr>
-    <tr><td class="paramname">timed_out</td><td>true if the timeout period elapsed (output) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of information on the log events. If NULL is returned and timed_out is also false, an error occurred (e.g. the instance was invalid or is shutting down). </dd></dl>
-
-</div>
-</div>
 <a id="gaaaf0d1c5efd341c80fb2ced526b53adf" name="gaaaf0d1c5efd341c80fb2ced526b53adf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaaf0d1c5efd341c80fb2ced526b53adf">&#9670;&nbsp;</a></span>NT_RemoveLogger()</h2>
 
@@ -466,51 +377,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gabe1855920ae23107016f7c8b9917a6c0" name="gabe1855920ae23107016f7c8b9917a6c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabe1855920ae23107016f7c8b9917a6c0">&#9670;&nbsp;</a></span>NT_WaitForLoggerQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> NT_WaitForLoggerQueue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Wait for the incoming log event queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the log event queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inst</td><td>instance handle </td></tr>
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

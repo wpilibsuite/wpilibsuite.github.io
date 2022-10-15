@@ -4,5 +4,5 @@ var group__cscore__opencv__source__func =
     [ "cs::NotifySourceError", "group__cscore__opencv__source__func.html#ga9bd8653ffe3d6208bf514db29c31e32a", null ],
     [ "cs::SetSourceConnected", "group__cscore__opencv__source__func.html#ga1d6122c193bc08a1589285ffd208d5b7", null ],
     [ "cs::SetSourceDescription", "group__cscore__opencv__source__func.html#ga78cc02e47052d3342f54a088f0a6edcf", null ],
-    [ "cs::SetSourceEnumPropertyChoices", "group__cscore__opencv__source__func.html#ga207bb29e83232d91bacaf5a4c2fab121", null ]
+    [ "cs::SetSourceEnumPropertyChoices", "group__cscore__opencv__source__func.html#ga1d340693662fa6debb3c39d9ae7584ff", null ]
 ];

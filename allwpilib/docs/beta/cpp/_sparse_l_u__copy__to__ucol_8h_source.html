@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('_sparse_l_u__copy__to__ucol_8h_source.
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">if</span> (jsupno != ksupno ) <span class="comment">// should go into ucol(); </span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      kfnz = repfnz(krep); </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordflow">if</span> (kfnz != <a class="code hl_enumvalue" href="namespace_eigen_1_1internal.html#a116cff36612aa417ce7b02c7c07d7db1ae257de63ffe726374aebcdd6c7b64be1">emptyIdxLU</a>)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordflow">if</span> (kfnz != <a class="code hl_enumvalue" href="namespace_eigen_1_1internal.html#a4db9df5085bdf77411d9780f8d4a49baae257de63ffe726374aebcdd6c7b64be1">emptyIdxLU</a>)</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      { <span class="comment">// Nonzero U-segment </span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        fsupc = glu.<a class="code hl_variable" href="struct_eigen_1_1internal_1_1_l_u___global_l_u__t.html#a3ee8e1b2d3cf4031088a3f898eff8da7">xsup</a>(ksupno); </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        isub = glu.<a class="code hl_variable" href="struct_eigen_1_1internal_1_1_l_u___global_l_u__t.html#ad9c8574f7b8b951f460f0eca6ec98e72">xlsub</a>(fsupc) + kfnz - fsupc; </div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('_sparse_l_u__copy__to__ucol_8h_source.
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt; StorageIndex, Dynamic, 1 &gt;</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_ref_html"><div class="ttname"><a href="class_eigen_1_1_ref.html">Eigen::Ref</a></div><div class="ttdoc">A matrix or vector expression mapping an existing expression.</div><div class="ttdef"><b>Definition:</b> Ref.h:283</div></div>
 <div class="ttc" id="aclass_eigen_1_1internal_1_1_sparse_l_u_impl_html_ae4867ed1d5f104f9245411c356416a21"><div class="ttname"><a href="class_eigen_1_1internal_1_1_sparse_l_u_impl.html#ae4867ed1d5f104f9245411c356416a21">Eigen::internal::SparseLUImpl::copy_to_ucol</a></div><div class="ttdeci">Index copy_to_ucol(const Index jcol, const Index nseg, IndexVector &amp;segrep, BlockIndexVector repfnz, IndexVector &amp;perm_r, BlockScalarVector dense, GlobalLU_t &amp;glu)</div><div class="ttdoc">Performs numeric block updates (sup-col) in topological order.</div><div class="ttdef"><b>Definition:</b> SparseLU_copy_to_ucol.h:50</div></div>
-<div class="ttc" id="anamespace_eigen_1_1internal_html_a116cff36612aa417ce7b02c7c07d7db1ae257de63ffe726374aebcdd6c7b64be1"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a116cff36612aa417ce7b02c7c07d7db1ae257de63ffe726374aebcdd6c7b64be1">Eigen::internal::emptyIdxLU</a></div><div class="ttdeci">@ emptyIdxLU</div><div class="ttdef"><b>Definition:</b> SparseLU_Memory.h:38</div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html_a4db9df5085bdf77411d9780f8d4a49baae257de63ffe726374aebcdd6c7b64be1"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a4db9df5085bdf77411d9780f8d4a49baae257de63ffe726374aebcdd6c7b64be1">Eigen::internal::emptyIdxLU</a></div><div class="ttdeci">@ emptyIdxLU</div><div class="ttdef"><b>Definition:</b> SparseLU_Memory.h:38</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a5ada550dfc9d36503a814391f7f68fc9a9f7ac43826c56358b26b891565d7fc37"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a5ada550dfc9d36503a814391f7f68fc9a9f7ac43826c56358b26b891565d7fc37">Eigen::internal::USUB</a></div><div class="ttdeci">@ USUB</div><div class="ttdef"><b>Definition:</b> SparseLU_Structs.h:74</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a5ada550dfc9d36503a814391f7f68fc9ae6a146cbb0dde5dfbc141cd44fa5e452"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a5ada550dfc9d36503a814391f7f68fc9ae6a146cbb0dde5dfbc141cd44fa5e452">Eigen::internal::UCOL</a></div><div class="ttdeci">@ UCOL</div><div class="ttdef"><b>Definition:</b> SparseLU_Structs.h:74</div></div>
 <div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> Core:141</div></div>
@@ -226,7 +226,7 @@ $(document).ready(function(){initNavTree('_sparse_l_u__copy__to__ucol_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_94752814cd7f6fb6b6a90d2bd0d0e9a6.html">SparseLU</a></li><li class="navelem"><a class="el" href="_sparse_l_u__copy__to__ucol_8h.html">SparseLU_copy_to_ucol.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

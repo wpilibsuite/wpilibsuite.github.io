@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('_span_extras_8h.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &quot;<a class="el" href="span_8h_source.html">wpi/span.h</a>&quot;</code><br />
+<code>#include &lt;span&gt;</code><br />
 </div>
 <p><a href="_span_extras_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,14 +110,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac1971c129c3896d6dcc5c413c9255eae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac1971c129c3896d6dcc5c413c9255eae"><td class="memTemplItemLeft" align="right" valign="top">constexpr span&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ac1971c129c3896d6dcc5c413c9255eae">wpi::drop_front</a> (span&lt; T &gt; in, typename span&lt; T &gt;::size_type n=1)</td></tr>
-<tr class="memdesc:ac1971c129c3896d6dcc5c413c9255eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the first <code>N</code> elements of the array.  <a href="namespacewpi.html#ac1971c129c3896d6dcc5c413c9255eae">More...</a><br /></td></tr>
-<tr class="separator:ac1971c129c3896d6dcc5c413c9255eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a756d0431eaf3cc2f4c8d423398c36c06"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a756d0431eaf3cc2f4c8d423398c36c06"><td class="memTemplItemLeft" align="right" valign="top">constexpr span&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a756d0431eaf3cc2f4c8d423398c36c06">wpi::drop_back</a> (span&lt; T &gt; in, typename span&lt; T &gt;::size_type n=1)</td></tr>
-<tr class="memdesc:a756d0431eaf3cc2f4c8d423398c36c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the last <code>N</code> elements of the array.  <a href="namespacewpi.html#a756d0431eaf3cc2f4c8d423398c36c06">More...</a><br /></td></tr>
-<tr class="separator:a756d0431eaf3cc2f4c8d423398c36c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf0701ba0d3863a755e0b2a1cc08603"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abbf0701ba0d3863a755e0b2a1cc08603"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::span&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#abbf0701ba0d3863a755e0b2a1cc08603">wpi::drop_front</a> (std::span&lt; T &gt; in, typename std::span&lt; T &gt;::size_type n=1)</td></tr>
+<tr class="memdesc:abbf0701ba0d3863a755e0b2a1cc08603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the first <code>N</code> elements of the array.  <a href="namespacewpi.html#abbf0701ba0d3863a755e0b2a1cc08603">More...</a><br /></td></tr>
+<tr class="separator:abbf0701ba0d3863a755e0b2a1cc08603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b74b99b021d98ad0b415c12920f259"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a58b74b99b021d98ad0b415c12920f259"><td class="memTemplItemLeft" align="right" valign="top">constexpr std::span&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a58b74b99b021d98ad0b415c12920f259">wpi::drop_back</a> (std::span&lt; T &gt; in, typename std::span&lt; T &gt;::size_type n=1)</td></tr>
+<tr class="memdesc:a58b74b99b021d98ad0b415c12920f259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drop the last <code>N</code> elements of the array.  <a href="namespacewpi.html#a58b74b99b021d98ad0b415c12920f259">More...</a><br /></td></tr>
+<tr class="separator:a58b74b99b021d98ad0b415c12920f259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -125,7 +125,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_span_extras_8h.html">SpanExtras.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

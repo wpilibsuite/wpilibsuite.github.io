@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -101,13 +101,13 @@ $(document).ready(function(){initNavTree('_command_base_8h_source.html',''); ini
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="_small_set_8h.html">wpi/SmallSet.h</a>&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_8h.html">wpi/sendable/Sendable.h</a>&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_helper_8h.html">wpi/sendable/SendableHelper.h</a>&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="span_8h.html">wpi/span.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;span&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_small_set_8h.html">wpi/SmallSet.h</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_8h.html">wpi/sendable/Sendable.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_helper_8h.html">wpi/sendable/SendableHelper.h</a>&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_command_8h.html">frc2/command/Command.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('_command_base_8h_source.html',''); ini
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * @param requirements the Subsystem requirements to add</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#ab35d893f3c42a882dbafbcbccce1396a">   40</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#ab35d893f3c42a882dbafbcbccce1396a">AddRequirements</a>(<a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a7e3fdac60399f003fce1609664e5fe26">   40</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a7e3fdac60399f003fce1609664e5fe26">AddRequirements</a>(std::span&lt;Subsystem* const&gt; requirements);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   * Adds the specified Subsystem requirements to the command.</span></div>
@@ -201,10 +201,10 @@ $(document).ready(function(){initNavTree('_command_base_8h_source.html',''); ini
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a58db2748d46a01b31a1afa748aa398fc"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a58db2748d46a01b31a1afa748aa398fc">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(wpi::SmallSet&lt; Subsystem *, 4 &gt; requirements)</div><div class="ttdoc">Adds the specified Subsystem requirements to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a64f050689acd13a075633d78786d5aaf"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Adds the specified Subsystem requirements to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a75fa3f1baf64ecde0a946e4da4bbee18"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">frc2::CommandBase::SetName</a></div><div class="ttdeci">void SetName(std::string_view name)</div><div class="ttdoc">Sets the name of this Command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_base_html_a7e3fdac60399f003fce1609664e5fe26"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a7e3fdac60399f003fce1609664e5fe26">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(std::span&lt; Subsystem *const &gt; requirements)</div><div class="ttdoc">Adds the specified Subsystem requirements to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a805d7e700007025500de08d88d53a1e8"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">frc2::CommandBase::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a9158db92e0150fedddc904f28f628849"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a9158db92e0150fedddc904f28f628849">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(Subsystem *requirement)</div><div class="ttdoc">Adds the specified Subsystem requirement to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a9bcb764f5f464d52f3d175fd80790916"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">frc2::CommandBase::GetName</a></div><div class="ttdeci">std::string GetName() const override</div><div class="ttdoc">Gets the name of this Command.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_base_html_ab35d893f3c42a882dbafbcbccce1396a"><div class="ttname"><a href="classfrc2_1_1_command_base.html#ab35d893f3c42a882dbafbcbccce1396a">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(wpi::span&lt; Subsystem *const &gt; requirements)</div><div class="ttdoc">Adds the specified Subsystem requirements to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_acd23702bf1d4155eda6c071e1aa9bdaf"><div class="ttname"><a href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">frc2::CommandBase::GetSubsystem</a></div><div class="ttdeci">std::string GetSubsystem() const</div><div class="ttdoc">Gets the subsystem name of this Command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_ae03b1c6ce3a67b2ba0b401e6f5fdb18b"><div class="ttname"><a href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">frc2::CommandBase::SetSubsystem</a></div><div class="ttdeci">void SetSubsystem(std::string_view subsystem)</div><div class="ttdoc">Sets the subsystem name of this Command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_afbb8296539ba60bb84e99460a841e526"><div class="ttname"><a href="classfrc2_1_1_command_base.html#afbb8296539ba60bb84e99460a841e526">frc2::CommandBase::CommandBase</a></div><div class="ttdeci">CommandBase()</div></div>
@@ -214,17 +214,15 @@ $(document).ready(function(){initNavTree('_command_base_8h_source.html',''); ini
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:19</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
 <div class="ttc" id="aclasswpi_1_1_small_set_html"><div class="ttname"><a href="classwpi_1_1_small_set.html">wpi::SmallSet</a></div><div class="ttdoc">SmallSet - This maintains a set of unique values, optimizing for the case when the set is small (less...</div><div class="ttdef"><b>Definition:</b> SmallSet.h:135</div></div>
-<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:520</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
-<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_command_base_8h.html">CommandBase.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:22:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

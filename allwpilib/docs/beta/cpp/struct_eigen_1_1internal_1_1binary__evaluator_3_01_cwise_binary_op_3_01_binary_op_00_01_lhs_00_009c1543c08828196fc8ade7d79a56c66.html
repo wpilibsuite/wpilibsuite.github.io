@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -119,26 +119,26 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac499b465b040f2529f7c75a8025825d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8a1f2384bf096a64d3c2fb2013ae02d830">CoeffReadCost</a> = int(evaluator&lt;Lhs&gt;::CoeffReadCost) + int(evaluator&lt;Rhs&gt;::CoeffReadCost) + int(functor_traits&lt;BinaryOp&gt;::Cost)
-, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8a6492a4020f00b686a7a57650a999ab54">LhsFlags</a> = evaluator&lt;Lhs&gt;::Flags
-, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8a635b001629a4c600c6913c510147576d">RhsFlags</a> = evaluator&lt;Rhs&gt;::Flags
-, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8a55f0b0dd777cc46b613193ac5ad686db">SameType</a> = is_same&lt;typename Lhs::Scalar,typename Rhs::Scalar&gt;::value
+<tr class="memitem:a968602f36306c82be2715e0bf9da7956"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956a1f2384bf096a64d3c2fb2013ae02d830">CoeffReadCost</a> = int(evaluator&lt;Lhs&gt;::CoeffReadCost) + int(evaluator&lt;Rhs&gt;::CoeffReadCost) + int(functor_traits&lt;BinaryOp&gt;::Cost)
+, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956a6492a4020f00b686a7a57650a999ab54">LhsFlags</a> = evaluator&lt;Lhs&gt;::Flags
+, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956a635b001629a4c600c6913c510147576d">RhsFlags</a> = evaluator&lt;Rhs&gt;::Flags
+, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956a55f0b0dd777cc46b613193ac5ad686db">SameType</a> = is_same&lt;typename Lhs::Scalar,typename Rhs::Scalar&gt;::value
 , <br />
-&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8a58a0ada8dba874164a5bef45b01ccefe">StorageOrdersAgree</a> = (int(LhsFlags)&amp;RowMajorBit)==(int(RhsFlags)&amp;RowMajorBit)
-, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8ad9e7f9a09ef3e2fca1dd9dc4c4694c5e">Flags0</a>
-, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8a555a91c46c7e86b0328d81d2485fdfa0">Flags</a> = (Flags0 &amp; ~RowMajorBit) | (LhsFlags &amp; RowMajorBit)
-, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#ac499b465b040f2529f7c75a8025825d8af07ad7eb628213d7a0b203d5e8a4a5e3">Alignment</a> = EIGEN_PLAIN_ENUM_MIN(evaluator&lt;Lhs&gt;::Alignment,evaluator&lt;Rhs&gt;::Alignment)
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956a58a0ada8dba874164a5bef45b01ccefe">StorageOrdersAgree</a> = (int(LhsFlags)&amp;RowMajorBit)==(int(RhsFlags)&amp;RowMajorBit)
+, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956ad9e7f9a09ef3e2fca1dd9dc4c4694c5e">Flags0</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956a555a91c46c7e86b0328d81d2485fdfa0">Flags</a> = (Flags0 &amp; ~RowMajorBit) | (LhsFlags &amp; RowMajorBit)
+, <a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a968602f36306c82be2715e0bf9da7956af07ad7eb628213d7a0b203d5e8a4a5e3">Alignment</a> = EIGEN_PLAIN_ENUM_MIN(evaluator&lt;Lhs&gt;::Alignment,evaluator&lt;Rhs&gt;::Alignment)
 <br />
  }</td></tr>
-<tr class="separator:ac499b465b040f2529f7c75a8025825d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a968602f36306c82be2715e0bf9da7956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c97a698e57625386a888928bd9d4e2d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_cwise_binary_op.html">CwiseBinaryOp</a>&lt; BinaryOp, Lhs, Rhs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#a8c97a698e57625386a888928bd9d4e2d">XprType</a></td></tr>
 <tr class="separator:a8c97a698e57625386a888928bd9d4e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad152cbdb60b334a5764e945d3fb840f"><td class="memItemLeft" align="right" valign="top">typedef XprType::CoeffReturnType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html#aad152cbdb60b334a5764e945d3fb840f">CoeffReturnType</a></td></tr>
 <tr class="separator:aad152cbdb60b334a5764e945d3fb840f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_eigen_1_1internal_1_1evaluator__base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html">Eigen::internal::evaluator_base&lt; CwiseBinaryOp&lt; BinaryOp, Lhs, Rhs &gt; &gt;</a></td></tr>
-<tr class="memitem:a0c0d950208bd52849daba3de678c165f inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a0c0d950208bd52849daba3de678c165f inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e565a559ab11c2265943a6d436d1a5e inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a9e565a559ab11c2265943a6d436d1a5e inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; <a class="el" href="class_eigen_1_1_cwise_binary_op.html">CwiseBinaryOp</a>&lt; BinaryOp, Lhs, Rhs &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator__base.html#acb94884a759bb59a96c8c3eea1e50c10">ExpressionTraits</a></td></tr>
 <tr class="separator:acb94884a759bb59a96c8c3eea1e50c10 inherit pub_types_struct_eigen_1_1internal_1_1evaluator__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -201,8 +201,8 @@ template&lt;typename BinaryOp , typename Lhs , typename Rhs &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ac499b465b040f2529f7c75a8025825d8" name="ac499b465b040f2529f7c75a8025825d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac499b465b040f2529f7c75a8025825d8">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a968602f36306c82be2715e0bf9da7956" name="a968602f36306c82be2715e0bf9da7956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968602f36306c82be2715e0bf9da7956">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,14 +215,14 @@ template&lt;typename BinaryOp , typename Lhs , typename Rhs &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8a1f2384bf096a64d3c2fb2013ae02d830" name="ac499b465b040f2529f7c75a8025825d8a1f2384bf096a64d3c2fb2013ae02d830"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8a6492a4020f00b686a7a57650a999ab54" name="ac499b465b040f2529f7c75a8025825d8a6492a4020f00b686a7a57650a999ab54"></a>LhsFlags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8a635b001629a4c600c6913c510147576d" name="ac499b465b040f2529f7c75a8025825d8a635b001629a4c600c6913c510147576d"></a>RhsFlags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8a55f0b0dd777cc46b613193ac5ad686db" name="ac499b465b040f2529f7c75a8025825d8a55f0b0dd777cc46b613193ac5ad686db"></a>SameType&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8a58a0ada8dba874164a5bef45b01ccefe" name="ac499b465b040f2529f7c75a8025825d8a58a0ada8dba874164a5bef45b01ccefe"></a>StorageOrdersAgree&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8ad9e7f9a09ef3e2fca1dd9dc4c4694c5e" name="ac499b465b040f2529f7c75a8025825d8ad9e7f9a09ef3e2fca1dd9dc4c4694c5e"></a>Flags0&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8a555a91c46c7e86b0328d81d2485fdfa0" name="ac499b465b040f2529f7c75a8025825d8a555a91c46c7e86b0328d81d2485fdfa0"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac499b465b040f2529f7c75a8025825d8af07ad7eb628213d7a0b203d5e8a4a5e3" name="ac499b465b040f2529f7c75a8025825d8af07ad7eb628213d7a0b203d5e8a4a5e3"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956a1f2384bf096a64d3c2fb2013ae02d830" name="a968602f36306c82be2715e0bf9da7956a1f2384bf096a64d3c2fb2013ae02d830"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956a6492a4020f00b686a7a57650a999ab54" name="a968602f36306c82be2715e0bf9da7956a6492a4020f00b686a7a57650a999ab54"></a>LhsFlags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956a635b001629a4c600c6913c510147576d" name="a968602f36306c82be2715e0bf9da7956a635b001629a4c600c6913c510147576d"></a>RhsFlags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956a55f0b0dd777cc46b613193ac5ad686db" name="a968602f36306c82be2715e0bf9da7956a55f0b0dd777cc46b613193ac5ad686db"></a>SameType&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956a58a0ada8dba874164a5bef45b01ccefe" name="a968602f36306c82be2715e0bf9da7956a58a0ada8dba874164a5bef45b01ccefe"></a>StorageOrdersAgree&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956ad9e7f9a09ef3e2fca1dd9dc4c4694c5e" name="a968602f36306c82be2715e0bf9da7956ad9e7f9a09ef3e2fca1dd9dc4c4694c5e"></a>Flags0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956a555a91c46c7e86b0328d81d2485fdfa0" name="a968602f36306c82be2715e0bf9da7956a555a91c46c7e86b0328d81d2485fdfa0"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a968602f36306c82be2715e0bf9da7956af07ad7eb628213d7a0b203d5e8a4a5e3" name="a968602f36306c82be2715e0bf9da7956af07ad7eb628213d7a0b203d5e8a4a5e3"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -427,7 +427,7 @@ template&lt;typename BinaryOp , typename Lhs , typename Rhs &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_009c1543c08828196fc8ade7d79a56c66.html">binary_evaluator&lt; CwiseBinaryOp&lt; BinaryOp, Lhs, Rhs &gt;, IndexBased, IndexBased &gt;</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

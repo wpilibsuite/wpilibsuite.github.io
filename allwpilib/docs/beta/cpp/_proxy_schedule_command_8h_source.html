@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -101,9 +101,9 @@ $(document).ready(function(){initNavTree('_proxy_schedule_command_8h_source.html
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_small_vector_8h.html">wpi/SmallVector.h</a>&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="span_8h.html">wpi/span.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;span&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_small_vector_8h.html">wpi/SmallVector.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_command_base_8h.html">frc2/command/CommandBase.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_command_helper_8h.html">frc2/command/CommandHelper.h</a>&quot;</span></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('_proxy_schedule_command_8h_source.html
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * @param toSchedule the commands to schedule</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc2_1_1_proxy_schedule_command.html#afb82482ffd565a6340ce170d86604813">   34</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_proxy_schedule_command.html#afb82482ffd565a6340ce170d86604813">ProxyScheduleCommand</a>(<a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Command* const&gt;</a> toSchedule);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc2_1_1_proxy_schedule_command.html#af91258ffcb47bc50adc0350309a78f0f">   34</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_proxy_schedule_command.html#af91258ffcb47bc50adc0350309a78f0f">ProxyScheduleCommand</a>(std::span&lt;Command* const&gt; toSchedule);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classfrc2_1_1_proxy_schedule_command.html#a1b5fcc57cedb687e276ad6622b0f6d63">   36</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_proxy_schedule_command.html#a1b5fcc57cedb687e276ad6622b0f6d63">ProxyScheduleCommand</a>(<a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* toSchedule);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span> </div>
@@ -172,18 +172,16 @@ $(document).ready(function(){initNavTree('_proxy_schedule_command_8h_source.html
 <div class="ttc" id="aclassfrc2_1_1_proxy_schedule_command_html_aa0350faddfc7086907a2b27c70de637f"><div class="ttname"><a href="classfrc2_1_1_proxy_schedule_command.html#aa0350faddfc7086907a2b27c70de637f">frc2::ProxyScheduleCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_proxy_schedule_command_html_ad82bd0277ba41a28ba2cb9c2e6ddd8fe"><div class="ttname"><a href="classfrc2_1_1_proxy_schedule_command.html#ad82bd0277ba41a28ba2cb9c2e6ddd8fe">frc2::ProxyScheduleCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_proxy_schedule_command_html_af2d24490a254bc5685d685c1ef315d7b"><div class="ttname"><a href="classfrc2_1_1_proxy_schedule_command.html#af2d24490a254bc5685d685c1ef315d7b">frc2::ProxyScheduleCommand::ProxyScheduleCommand</a></div><div class="ttdeci">ProxyScheduleCommand(std::unique_ptr&lt; Command &gt; &amp;&amp;toSchedule)</div><div class="ttdoc">Creates a new ProxyScheduleCommand that schedules the given command when initialized,...</div></div>
-<div class="ttc" id="aclassfrc2_1_1_proxy_schedule_command_html_afb82482ffd565a6340ce170d86604813"><div class="ttname"><a href="classfrc2_1_1_proxy_schedule_command.html#afb82482ffd565a6340ce170d86604813">frc2::ProxyScheduleCommand::ProxyScheduleCommand</a></div><div class="ttdeci">ProxyScheduleCommand(wpi::span&lt; Command *const &gt; toSchedule)</div><div class="ttdoc">Creates a new ProxyScheduleCommand that schedules the given commands when initialized,...</div></div>
+<div class="ttc" id="aclassfrc2_1_1_proxy_schedule_command_html_af91258ffcb47bc50adc0350309a78f0f"><div class="ttname"><a href="classfrc2_1_1_proxy_schedule_command.html#af91258ffcb47bc50adc0350309a78f0f">frc2::ProxyScheduleCommand::ProxyScheduleCommand</a></div><div class="ttdeci">ProxyScheduleCommand(std::span&lt; Command *const &gt; toSchedule)</div><div class="ttdoc">Creates a new ProxyScheduleCommand that schedules the given commands when initialized,...</div></div>
 <div class="ttc" id="aclasswpi_1_1_small_vector_html"><div class="ttname"><a href="classwpi_1_1_small_vector.html">wpi::SmallVector</a></div><div class="ttdoc">This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1186</div></div>
-<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
-<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_proxy_schedule_command_8h.html">ProxyScheduleCommand.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:22:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

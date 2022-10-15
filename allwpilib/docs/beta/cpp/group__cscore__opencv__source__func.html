@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga78cc02e47052d3342f54a088f0a6edcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga981d61fad9a668f3ec42b6a71d991314"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377">CS_Property</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__opencv__source__func.html#ga981d61fad9a668f3ec42b6a71d991314">cs::CreateSourceProperty</a> (<a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a> <a class="el" href="_third_party_notices_8txt.html#a7e4b2af6b1063d628370e894227dec10">source</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> kind, int minimum, int maximum, int step, int defaultValue, int <a class="el" href="classvalue.html">value</a>, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
 <tr class="separator:ga981d61fad9a668f3ec42b6a71d991314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga207bb29e83232d91bacaf5a4c2fab121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__opencv__source__func.html#ga207bb29e83232d91bacaf5a4c2fab121">cs::SetSourceEnumPropertyChoices</a> (<a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a> <a class="el" href="_third_party_notices_8txt.html#a7e4b2af6b1063d628370e894227dec10">source</a>, <a class="el" href="group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377">CS_Property</a> property, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; choices, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
-<tr class="separator:ga207bb29e83232d91bacaf5a4c2fab121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d340693662fa6debb3c39d9ae7584ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__opencv__source__func.html#ga1d340693662fa6debb3c39d9ae7584ff">cs::SetSourceEnumPropertyChoices</a> (<a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a> <a class="el" href="_third_party_notices_8txt.html#a7e4b2af6b1063d628370e894227dec10">source</a>, <a class="el" href="group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377">CS_Property</a> property, std::span&lt; const std::string &gt; choices, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
+<tr class="separator:ga1d340693662fa6debb3c39d9ae7584ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -284,8 +284,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga207bb29e83232d91bacaf5a4c2fab121" name="ga207bb29e83232d91bacaf5a4c2fab121"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga207bb29e83232d91bacaf5a4c2fab121">&#9670;&nbsp;</a></span>SetSourceEnumPropertyChoices()</h2>
+<a id="ga1d340693662fa6debb3c39d9ae7584ff" name="ga1d340693662fa6debb3c39d9ae7584ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1d340693662fa6debb3c39d9ae7584ff">&#9670;&nbsp;</a></span>SetSourceEnumPropertyChoices()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +305,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const std::string &gt;&#160;</td>
           <td class="paramname"><em>choices</em>, </td>
         </tr>
         <tr>
@@ -329,7 +329,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

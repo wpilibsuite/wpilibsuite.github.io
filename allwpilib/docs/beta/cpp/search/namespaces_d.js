@@ -9,14 +9,13 @@ var searchData=
   ['log_6',['log',['../namespacewpi_1_1log.html',1,'wpi']]],
   ['math_7',['math',['../namespacewpi_1_1math.html',1,'wpi']]],
   ['memory_8',['memory',['../namespacewpi_1_1memory.html',1,'wpi']]],
-  ['numbers_9',['numbers',['../namespacewpi_1_1numbers.html',1,'wpi']]],
-  ['pointer_5funion_5fdetail_10',['pointer_union_detail',['../namespacewpi_1_1pointer__union__detail.html',1,'wpi']]],
-  ['sig_11',['sig',['../namespacewpi_1_1sig.html',1,'wpi']]],
-  ['support_12',['support',['../namespacewpi_1_1support.html',1,'wpi']]],
-  ['swap_5f_13',['swap_',['../namespacewpi_1_1memory_1_1detail_1_1swap__.html',1,'wpi::memory::detail']]],
-  ['sys_14',['sys',['../namespacewpi_1_1sys.html',1,'wpi']]],
-  ['trait_15',['trait',['../namespacewpi_1_1sig_1_1trait.html',1,'wpi::sig']]],
-  ['traits_5fdetail_16',['traits_detail',['../namespacewpi_1_1memory_1_1traits__detail.html',1,'wpi::memory']]],
-  ['wpi_17',['wpi',['../namespacewpi.html',1,'']]],
-  ['wpi_5fmemory_5fpmr_18',['wpi_memory_pmr',['../namespacewpi__memory__pmr.html',1,'']]]
+  ['pointer_5funion_5fdetail_9',['pointer_union_detail',['../namespacewpi_1_1pointer__union__detail.html',1,'wpi']]],
+  ['sig_10',['sig',['../namespacewpi_1_1sig.html',1,'wpi']]],
+  ['support_11',['support',['../namespacewpi_1_1support.html',1,'wpi']]],
+  ['swap_5f_12',['swap_',['../namespacewpi_1_1memory_1_1detail_1_1swap__.html',1,'wpi::memory::detail']]],
+  ['sys_13',['sys',['../namespacewpi_1_1sys.html',1,'wpi']]],
+  ['trait_14',['trait',['../namespacewpi_1_1sig_1_1trait.html',1,'wpi::sig']]],
+  ['traits_5fdetail_15',['traits_detail',['../namespacewpi_1_1memory_1_1traits__detail.html',1,'wpi::memory']]],
+  ['wpi_16',['wpi',['../namespacewpi.html',1,'']]],
+  ['wpi_5fmemory_5fpmr_17',['wpi_memory_pmr',['../namespacewpi__memory__pmr.html',1,'']]]
 ];

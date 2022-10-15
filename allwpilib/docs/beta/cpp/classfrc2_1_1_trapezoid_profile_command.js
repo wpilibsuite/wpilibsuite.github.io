@@ -1,7 +1,7 @@
 var classfrc2_1_1_trapezoid_profile_command =
 [
     [ "TrapezoidProfileCommand", "classfrc2_1_1_trapezoid_profile_command.html#a8be5e44daadaf9003ecaaa4f28b548ef", null ],
-    [ "TrapezoidProfileCommand", "classfrc2_1_1_trapezoid_profile_command.html#a942776626612c743c074a8e0b72cbfee", null ],
+    [ "TrapezoidProfileCommand", "classfrc2_1_1_trapezoid_profile_command.html#a94dcfd1f93cebc51f7ac71e1d782015e", null ],
     [ "End", "classfrc2_1_1_trapezoid_profile_command.html#ae8056f2fab05e0df1e6c9cd32c5a4b79", null ],
     [ "Execute", "classfrc2_1_1_trapezoid_profile_command.html#acd0673ce0d587d76fafbb0709743baf3", null ],
     [ "Initialize", "classfrc2_1_1_trapezoid_profile_command.html#a179e30f028f1dfdcbb2020a95583dcd9", null ],

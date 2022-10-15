@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -102,9 +102,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gafce13bfbcc1dcf58bde987c2488971a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#gafce13bfbcc1dcf58bde987c2488971a5">NT_GetEntry</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, const char *name, size_t name_len)</td></tr>
 <tr class="memdesc:gafce13bfbcc1dcf58bde987c2488971a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Entry Handle.  <a href="group__ntcore__table__cfunc.html#gafce13bfbcc1dcf58bde987c2488971a5">More...</a><br /></td></tr>
 <tr class="separator:gafce13bfbcc1dcf58bde987c2488971a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac09a2e4f4e87f328eae51b9397ac18c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#gaac09a2e4f4e87f328eae51b9397ac18c">NT_GetEntries</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, const char *prefix, size_t prefix_len, unsigned int types, size_t *<a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
-<tr class="memdesc:gaac09a2e4f4e87f328eae51b9397ac18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Entry Handles.  <a href="group__ntcore__table__cfunc.html#gaac09a2e4f4e87f328eae51b9397ac18c">More...</a><br /></td></tr>
-<tr class="separator:gaac09a2e4f4e87f328eae51b9397ac18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf95c0f8c14601e44cfc96da0749d9711"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#gaf95c0f8c14601e44cfc96da0749d9711">NT_GetEntryName</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, size_t *name_len)</td></tr>
 <tr class="memdesc:gaf95c0f8c14601e44cfc96da0749d9711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the specified entry.  <a href="group__ntcore__table__cfunc.html#gaf95c0f8c14601e44cfc96da0749d9711">More...</a><br /></td></tr>
 <tr class="separator:gaf95c0f8c14601e44cfc96da0749d9711"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,146 +120,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0cbb1ad66f3abcd2b0a66dc760c691ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#ga0cbb1ad66f3abcd2b0a66dc760c691ee">NT_SetEntryValue</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, const struct <a class="el" href="struct_n_t___value.html">NT_Value</a> *<a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:ga0cbb1ad66f3abcd2b0a66dc760c691ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Entry Value.  <a href="group__ntcore__table__cfunc.html#ga0cbb1ad66f3abcd2b0a66dc760c691ee">More...</a><br /></td></tr>
 <tr class="separator:ga0cbb1ad66f3abcd2b0a66dc760c691ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b93b7fe70e3b0484654b16fd6e9e1f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#ga9b93b7fe70e3b0484654b16fd6e9e1f1">NT_SetEntryTypeValue</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, const struct <a class="el" href="struct_n_t___value.html">NT_Value</a> *<a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga9b93b7fe70e3b0484654b16fd6e9e1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Entry Type and Value.  <a href="group__ntcore__table__cfunc.html#ga9b93b7fe70e3b0484654b16fd6e9e1f1">More...</a><br /></td></tr>
-<tr class="separator:ga9b93b7fe70e3b0484654b16fd6e9e1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad3c56c028bc02e677f51a97ed14e91a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#gad3c56c028bc02e677f51a97ed14e91a5">NT_SetEntryFlags</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, unsigned int flags)</td></tr>
 <tr class="memdesc:gad3c56c028bc02e677f51a97ed14e91a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set Entry Flags.  <a href="group__ntcore__table__cfunc.html#gad3c56c028bc02e677f51a97ed14e91a5">More...</a><br /></td></tr>
 <tr class="separator:gad3c56c028bc02e677f51a97ed14e91a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga876e709ee3f18c20255e0d983170cfc0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#ga876e709ee3f18c20255e0d983170cfc0">NT_GetEntryFlags</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry)</td></tr>
 <tr class="memdesc:ga876e709ee3f18c20255e0d983170cfc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Entry Flags.  <a href="group__ntcore__table__cfunc.html#ga876e709ee3f18c20255e0d983170cfc0">More...</a><br /></td></tr>
 <tr class="separator:ga876e709ee3f18c20255e0d983170cfc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e66176df0aedf317d5071a267d709fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#ga9e66176df0aedf317d5071a267d709fa">NT_DeleteEntry</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry)</td></tr>
-<tr class="memdesc:ga9e66176df0aedf317d5071a267d709fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete Entry.  <a href="group__ntcore__table__cfunc.html#ga9e66176df0aedf317d5071a267d709fa">More...</a><br /></td></tr>
-<tr class="separator:ga9e66176df0aedf317d5071a267d709fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e698049464d76765ebac73c024fb0de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#ga5e698049464d76765ebac73c024fb0de">NT_DeleteAllEntries</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
-<tr class="memdesc:ga5e698049464d76765ebac73c024fb0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete All Entries.  <a href="group__ntcore__table__cfunc.html#ga5e698049464d76765ebac73c024fb0de">More...</a><br /></td></tr>
-<tr class="separator:ga5e698049464d76765ebac73c024fb0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacb909b2a4d714213d5af0ca27723760f"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___entry_info.html">NT_EntryInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#gacb909b2a4d714213d5af0ca27723760f">NT_GetEntryInfo</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, const char *prefix, size_t prefix_len, unsigned int types, size_t *<a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
-<tr class="memdesc:gacb909b2a4d714213d5af0ca27723760f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Entry Information.  <a href="group__ntcore__table__cfunc.html#gacb909b2a4d714213d5af0ca27723760f">More...</a><br /></td></tr>
-<tr class="separator:gacb909b2a4d714213d5af0ca27723760f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga514cc9cc9f6a095e838965b0ae94a8ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#ga514cc9cc9f6a095e838965b0ae94a8ba">NT_GetEntryInfoHandle</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry, struct <a class="el" href="struct_n_t___entry_info.html">NT_EntryInfo</a> *info)</td></tr>
-<tr class="memdesc:ga514cc9cc9f6a095e838965b0ae94a8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Entry Information.  <a href="group__ntcore__table__cfunc.html#ga514cc9cc9f6a095e838965b0ae94a8ba">More...</a><br /></td></tr>
-<tr class="separator:ga514cc9cc9f6a095e838965b0ae94a8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga490a66af1b63d589b6f1a29852aaa1c4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___value.html">NT_Value</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__table__cfunc.html#ga490a66af1b63d589b6f1a29852aaa1c4">NT_ReadQueueValue</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, size_t *<a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
+<tr class="memdesc:ga490a66af1b63d589b6f1a29852aaa1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read Entry Queue.  <a href="group__ntcore__table__cfunc.html#ga490a66af1b63d589b6f1a29852aaa1c4">More...</a><br /></td></tr>
+<tr class="separator:ga490a66af1b63d589b6f1a29852aaa1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5e698049464d76765ebac73c024fb0de" name="ga5e698049464d76765ebac73c024fb0de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e698049464d76765ebac73c024fb0de">&#9670;&nbsp;</a></span>NT_DeleteAllEntries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NT_DeleteAllEntries </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Delete All Entries. </p>
-<p >Deletes ALL table entries. This is a new feature in version 3.0 of the so this may not have an effect if any other node in the network is not version 3.0 or newer.</p>
-<p >Note: <a class="el" href="group__ntcore__network__cfunc.html#gae4abb8a32eb89eb80fc92e4d1b529281" title="Get information on the currently established network connections.">NT_GetConnections()</a> can be used to determine the protocol version of direct remote connection(s), but this is not sufficient to determine if all nodes in the network are version 3.0 or newer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inst</td><td>instance handle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga9e66176df0aedf317d5071a267d709fa" name="ga9e66176df0aedf317d5071a267d709fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9e66176df0aedf317d5071a267d709fa">&#9670;&nbsp;</a></span>NT_DeleteEntry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NT_DeleteEntry </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a>&#160;</td>
-          <td class="paramname"><em>entry</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Delete Entry. </p>
-<p >Deletes an entry. This is a new feature in version 3.0 of the protocol, so this may not have an effect if any other node in the network is not version 3.0 or newer.</p>
-<p >Note: <a class="el" href="group__ntcore__network__cfunc.html#gae4abb8a32eb89eb80fc92e4d1b529281" title="Get information on the currently established network connections.">NT_GetConnections()</a> can be used to determine the protocol version of direct remote connection(s), but this is not sufficient to determine if all nodes in the network are version 3.0 or newer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry</td><td>entry handle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gaac09a2e4f4e87f328eae51b9397ac18c" name="gaac09a2e4f4e87f328eae51b9397ac18c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaac09a2e4f4e87f328eae51b9397ac18c">&#9670;&nbsp;</a></span>NT_GetEntries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> * NT_GetEntries </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>prefix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>prefix_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>types</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get Entry Handles. </p>
-<p >Returns an array of entry handles. The results are optionally filtered by string prefix and entry type to only return a subset of all entries.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inst</td><td>NetworkTable instance </td></tr>
-    <tr><td class="paramname">prefix</td><td>entry name required prefix; only entries whose name starts with this string are returned </td></tr>
-    <tr><td class="paramname">prefix_len</td><td>length of prefix in bytes </td></tr>
-    <tr><td class="paramname">types</td><td>bitmask of NT_Type values; 0 is treated specially as a "don't care" </td></tr>
-    <tr><td class="paramname">count</td><td>stores number of entry handles returned </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of entry handles. </dd></dl>
-
-</div>
-</div>
 <a id="gafce13bfbcc1dcf58bde987c2488971a5" name="gafce13bfbcc1dcf58bde987c2488971a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafce13bfbcc1dcf58bde987c2488971a5">&#9670;&nbsp;</a></span>NT_GetEntry()</h2>
 
@@ -332,105 +201,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Flags value (bitmask of NT_EntryFlags) </dd></dl>
-
-</div>
-</div>
-<a id="gacb909b2a4d714213d5af0ca27723760f" name="gacb909b2a4d714213d5af0ca27723760f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacb909b2a4d714213d5af0ca27723760f">&#9670;&nbsp;</a></span>NT_GetEntryInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="struct_n_t___entry_info.html">NT_EntryInfo</a> * NT_GetEntryInfo </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>prefix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>prefix_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>types</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get Entry Information. </p>
-<p >Returns an array of entry information (entry handle, name, entry type, and timestamp of last change to type/value). The results are optionally filtered by string prefix and entry type to only return a subset of all entries.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inst</td><td>instance handle </td></tr>
-    <tr><td class="paramname">prefix</td><td>entry name required prefix; only entries whose name starts with this string are returned </td></tr>
-    <tr><td class="paramname">prefix_len</td><td>length of prefix in bytes </td></tr>
-    <tr><td class="paramname">types</td><td>bitmask of NT_Type values; 0 is treated specially as a "don't care" </td></tr>
-    <tr><td class="paramname">count</td><td>output parameter; set to length of returned array </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of entry information. </dd></dl>
-
-</div>
-</div>
-<a id="ga514cc9cc9f6a095e838965b0ae94a8ba" name="ga514cc9cc9f6a095e838965b0ae94a8ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga514cc9cc9f6a095e838965b0ae94a8ba">&#9670;&nbsp;</a></span>NT_GetEntryInfoHandle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> NT_GetEntryInfoHandle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a>&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="struct_n_t___entry_info.html">NT_EntryInfo</a> *&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get Entry Information. </p>
-<p >Returns information about an entry (name, entry type, and timestamp of last change to type/value).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry</td><td>entry handle </td></tr>
-    <tr><td class="paramname">info</td><td>entry information (output) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if successful, false on error. </dd></dl>
 
 </div>
 </div>
@@ -567,6 +337,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga490a66af1b63d589b6f1a29852aaa1c4" name="ga490a66af1b63d589b6f1a29852aaa1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga490a66af1b63d589b6f1a29852aaa1c4">&#9670;&nbsp;</a></span>NT_ReadQueueValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_n_t___value.html">NT_Value</a> * NT_ReadQueueValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a>&#160;</td>
+          <td class="paramname"><em>subentry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read Entry Queue. </p>
+<p >Returns new entry values since last call. The returned array must be freed using <a class="el" href="group__ntcore__utility__cfunc.html#gaa03a3e1a8ecdac17ad4890ce17875f8a" title="Frees an array of NT_Values.">NT_DisposeValueArray()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subentry</td><td>subscriber or entry handle </td></tr>
+    <tr><td class="paramname">count</td><td>count of items in returned array (output) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>entry value array; returns NULL and count=0 if no new values </dd></dl>
+
+</div>
+</div>
 <a id="ga4d4e95c13b6b13920af6db25cfc36931" name="ga4d4e95c13b6b13920af6db25cfc36931"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4d4e95c13b6b13920af6db25cfc36931">&#9670;&nbsp;</a></span>NT_SetDefaultEntryValue()</h2>
 
@@ -643,45 +452,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9b93b7fe70e3b0484654b16fd6e9e1f1" name="ga9b93b7fe70e3b0484654b16fd6e9e1f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9b93b7fe70e3b0484654b16fd6e9e1f1">&#9670;&nbsp;</a></span>NT_SetEntryTypeValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NT_SetEntryTypeValue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a>&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const struct <a class="el" href="struct_n_t___value.html">NT_Value</a> *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set Entry Type and Value. </p>
-<p >Sets new entry value. If type of new value differs from the type of the currently stored entry, the currently stored entry type is overridden (generally this will generate an Entry Assignment message).</p>
-<p >This is NOT the preferred method to update a value; generally <a class="el" href="group__ntcore__table__cfunc.html#ga0cbb1ad66f3abcd2b0a66dc760c691ee" title="Set Entry Value.">NT_SetEntryValue()</a> should be used instead, with appropriate error handling.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry</td><td>entry handle </td></tr>
-    <tr><td class="paramname">value</td><td>new entry value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ga0cbb1ad66f3abcd2b0a66dc760c691ee" name="ga0cbb1ad66f3abcd2b0a66dc760c691ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0cbb1ad66f3abcd2b0a66dc760c691ee">&#9670;&nbsp;</a></span>NT_SetEntryValue()</h2>
 
@@ -726,7 +496,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

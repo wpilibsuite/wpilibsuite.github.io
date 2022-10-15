@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -127,8 +127,8 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      *robot = &amp;theRobot;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    }</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    theRobot.StartCompetition();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_runtime_error.html">frc::RuntimeError</a>&amp; <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>) {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>.Report();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_runtime_error.html">frc::RuntimeError</a>&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>.Report();</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a89aececfad081ca3a319cbca54288764">FRC_ReportError</a>(</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        err::Error, <span class="stringliteral">&quot;{}&quot;</span>,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="stringliteral">&quot;The robot program quit unexpectedly.&quot;</span></div>
@@ -136,8 +136,8 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="stringliteral">&quot;  The above stacktrace can help determine where the error occurred.\n&quot;</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="stringliteral">&quot;  See https://wpilib.org/stacktrace for more information.\n&quot;</span>);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">throw</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_variable" href="_third_party_notices_8txt.html#a5378875817b4fe889c3bbcd85fea1862">std::exception</a>&amp; <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>) {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155">HAL_SendError</a>(1, err::Error, 0, <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>.what(), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 1);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_variable" href="_third_party_notices_8txt.html#a5378875817b4fe889c3bbcd85fea1862">std::exception</a>&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155">HAL_SendError</a>(1, err::Error, 0, <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>.what(), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 1);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">throw</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
@@ -342,7 +342,7 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="ttc" id="a_h_a_l_base_8h_html"><div class="ttname"><a href="_h_a_l_base_8h.html">HALBase.h</a></div></div>
 <div class="ttc" id="a_main_8h_html"><div class="ttname"><a href="_main_8h.html">Main.h</a></div></div>
 <div class="ttc" id="a_runtime_type_8h_html"><div class="ttname"><a href="_runtime_type_8h.html">RuntimeType.h</a></div></div>
-<div class="ttc" id="a_third_party_notices_8txt_html_a5378875817b4fe889c3bbcd85fea1862"><div class="ttname"><a href="_third_party_notices_8txt.html#a5378875817b4fe889c3bbcd85fea1862">exception</a></div><div class="ttdeci">you may not use this file except in compliance with the License You may obtain a copy of the License at software distributed under the License is distributed on an AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY either express or implied See the License for the specific language governing permissions and limitations under the License LLVM Exceptions to the Apache License As an exception</div><div class="ttdef"><b>Definition:</b> ThirdPartyNotices.txt:293</div></div>
+<div class="ttc" id="a_third_party_notices_8txt_html_a5378875817b4fe889c3bbcd85fea1862"><div class="ttname"><a href="_third_party_notices_8txt.html#a5378875817b4fe889c3bbcd85fea1862">exception</a></div><div class="ttdeci">you may not use this file except in compliance with the License You may obtain a copy of the License at software distributed under the License is distributed on an AS IS WITHOUT WARRANTIES OR CONDITIONS OF ANY either express or implied See the License for the specific language governing permissions and limitations under the License LLVM Exceptions to the Apache License As an exception</div><div class="ttdef"><b>Definition:</b> ThirdPartyNotices.txt:291</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html"><div class="ttname"><a href="classfrc_1_1_robot_base.html">frc::RobotBase</a></div><div class="ttdoc">Implement a Robot Program framework.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:121</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_a1da594bfb434873d127c55c1f4117004"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a1da594bfb434873d127c55c1f4117004">frc::RobotBase::RobotBase</a></div><div class="ttdeci">RobotBase()</div><div class="ttdoc">Constructor for a generic robot program.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_a2c1dab1c96a32013a136e38030097abd"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a2c1dab1c96a32013a136e38030097abd">frc::RobotBase::IsReal</a></div><div class="ttdeci">static constexpr bool IsReal()</div><div class="ttdoc">Get if the robot is real.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:206</div></div>
@@ -378,7 +378,7 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="ttc" id="anamespacefrc_html_a34e168565dec463c0b67d584e80c2c0d"><div class="ttname"><a href="namespacefrc.html#a34e168565dec463c0b67d584e80c2c0d">frc::StartRobot</a></div><div class="ttdeci">int StartRobot()</div><div class="ttdef"><b>Definition:</b> RobotBase.h:52</div></div>
 <div class="ttc" id="anamespacefrc_html_a8d83e7ec5a444cd625593917680b750c"><div class="ttname"><a href="namespacefrc.html#a8d83e7ec5a444cd625593917680b750c">frc::RunHALInitialization</a></div><div class="ttdeci">int RunHALInitialization()</div></div>
 <div class="ttc" id="anamespacefrc_html_ace6d4bb3b8c926d6b8a1e69fa3df37d5"><div class="ttname"><a href="namespacefrc.html#ace6d4bb3b8c926d6b8a1e69fa3df37d5">frc::RuntimeType</a></div><div class="ttdeci">RuntimeType</div><div class="ttdef"><b>Definition:</b> RuntimeType.h:8</div></div>
-<div class="ttc" id="anamespacewpi_1_1numbers_html_a2d77ce99cbb4b9e449846009e5828e58"><div class="ttname"><a href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">wpi::numbers::e</a></div><div class="ttdeci">constexpr double e</div><div class="ttdef"><b>Definition:</b> numbers:50</div></div>
+<div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
 <div class="ttc" id="anamespacewpi_html_a59819be5b11c0fbbc0b8e07c7638af24"><div class="ttname"><a href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a></div><div class="ttdeci">::std::mutex mutex</div><div class="ttdef"><b>Definition:</b> mutex.h:17</div></div>
 <div class="ttc" id="anamespacewpi_html_a97cc1139d8f910187e3d4cd6b8015af8"><div class="ttname"><a href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a></div><div class="ttdeci">::std::condition_variable condition_variable</div><div class="ttdef"><b>Definition:</b> condition_variable.h:16</div></div>
 <div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html">Errors.h</a></div></div>
@@ -389,7 +389,7 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_robot_base_8h.html">RobotBase.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:22:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

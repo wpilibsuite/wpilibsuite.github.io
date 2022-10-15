@@ -6,6 +6,5 @@ var dir_cbe59d583f188c45398369bc04fba8f9 =
     [ "llvm", "dir_3c14e2811843326714b08335f4db6d6f.html", "dir_3c14e2811843326714b08335f4db6d6f" ],
     [ "memory", "dir_546ba5aa787ced15236f35cd8ec24069.html", "dir_546ba5aa787ced15236f35cd8ec24069" ],
     [ "mpack", "dir_c9005440f6bf15aac4d659d0df5bcda1.html", "dir_c9005440f6bf15aac4d659d0df5bcda1" ],
-    [ "sigslot", "dir_bcfdc129fb13bedb79a257e60e81f586.html", "dir_bcfdc129fb13bedb79a257e60e81f586" ],
-    [ "tcb_span", "dir_f9d0497cbeb8af70b790266b2b1e7ca1.html", "dir_f9d0497cbeb8af70b790266b2b1e7ca1" ]
+    [ "sigslot", "dir_bcfdc129fb13bedb79a257e60e81f586.html", "dir_bcfdc129fb13bedb79a257e60e81f586" ]
 ];

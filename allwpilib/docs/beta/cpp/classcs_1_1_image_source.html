@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -136,9 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac808b3fc19fe35b083bc9e64d0e380e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcs_1_1_video_property.html">VideoProperty</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1_image_source.html#ac808b3fc19fe35b083bc9e64d0e380e2">CreateStringProperty</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:ac808b3fc19fe35b083bc9e64d0e380e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string property.  <a href="classcs_1_1_image_source.html#ac808b3fc19fe35b083bc9e64d0e380e2">More...</a><br /></td></tr>
 <tr class="separator:ac808b3fc19fe35b083bc9e64d0e380e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f8bab97d1530306bb0fe5c24a68465e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1_image_source.html#a8f8bab97d1530306bb0fe5c24a68465e">SetEnumPropertyChoices</a> (const <a class="el" href="classcs_1_1_video_property.html">VideoProperty</a> &amp;property, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; choices)</td></tr>
-<tr class="memdesc:a8f8bab97d1530306bb0fe5c24a68465e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure enum property choices.  <a href="classcs_1_1_image_source.html#a8f8bab97d1530306bb0fe5c24a68465e">More...</a><br /></td></tr>
-<tr class="separator:a8f8bab97d1530306bb0fe5c24a68465e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae656cc186f6890e08cc73923ab7c68cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1_image_source.html#ae656cc186f6890e08cc73923ab7c68cf">SetEnumPropertyChoices</a> (const <a class="el" href="classcs_1_1_video_property.html">VideoProperty</a> &amp;property, std::span&lt; const std::string &gt; choices)</td></tr>
+<tr class="memdesc:ae656cc186f6890e08cc73923ab7c68cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure enum property choices.  <a href="classcs_1_1_image_source.html#ae656cc186f6890e08cc73923ab7c68cf">More...</a><br /></td></tr>
+<tr class="separator:ae656cc186f6890e08cc73923ab7c68cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3883f83d4b3a1c2f298a327440a9c510"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3883f83d4b3a1c2f298a327440a9c510"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classcs_1_1_image_source.html#a3883f83d4b3a1c2f298a327440a9c510">SetEnumPropertyChoices</a> (const <a class="el" href="classcs_1_1_video_property.html">VideoProperty</a> &amp;property, std::initializer_list&lt; T &gt; choices)</td></tr>
 <tr class="memdesc:a3883f83d4b3a1c2f298a327440a9c510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure enum property choices.  <a href="classcs_1_1_image_source.html#a3883f83d4b3a1c2f298a327440a9c510">More...</a><br /></td></tr>
@@ -701,8 +701,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a8f8bab97d1530306bb0fe5c24a68465e" name="a8f8bab97d1530306bb0fe5c24a68465e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f8bab97d1530306bb0fe5c24a68465e">&#9670;&nbsp;</a></span>SetEnumPropertyChoices() <span class="overload">[2/2]</span></h2>
+<a id="ae656cc186f6890e08cc73923ab7c68cf" name="ae656cc186f6890e08cc73923ab7c68cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae656cc186f6890e08cc73923ab7c68cf">&#9670;&nbsp;</a></span>SetEnumPropertyChoices() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,7 +719,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const std::string &gt;&#160;</td>
           <td class="paramname"><em>choices</em>&#160;</td>
         </tr>
         <tr>
@@ -756,7 +756,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecs.html">cs</a></li><li class="navelem"><a class="el" href="classcs_1_1_image_source.html">ImageSource</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,7 @@ $(document).ready(function(){initNavTree('classnt_1_1_network_table_instance.htm
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classnt_1_1_network_table_instance-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">nt::NetworkTableInstance Class Reference<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="group__ntcore__cpp__api.html">ntcore C++ object-oriented API</a></div></div></div>
 </div><!--header-->
@@ -110,11 +111,10 @@ Public Types</h2></td></tr>
 <tr class="memitem:a13cc5d54545b54712b5470065f953c52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52">NetworkMode</a> { <br />
 &#160;&#160;<a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52af76215bacd142be2f7329a49880d056b">kNetModeNone</a> = NT_NET_MODE_NONE
 , <a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52a64b42da92fbb4c973edd9de518441035">kNetModeServer</a> = NT_NET_MODE_SERVER
-, <a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52a43fb7c45ce58e13523e1891476e44ddc">kNetModeClient</a> = NT_NET_MODE_CLIENT
-, <a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52aa75289755e13e600d79919141ed8e2d7">kNetModeStarting</a> = NT_NET_MODE_STARTING
+, <a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52abb356f6cb6d21f314c5faeb77c38899f">kNetModeClient3</a> = NT_NET_MODE_CLIENT3
+, <a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52a35fc237bc834b90e39cdba23c1a37655">kNetModeClient4</a> = NT_NET_MODE_CLIENT4
 , <br />
-&#160;&#160;<a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52a615a1eec424a7ff6bf6fad03e01dfdb7">kNetModeFailure</a> = NT_NET_MODE_FAILURE
-, <a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52a7dd62ee066ff12177dd6da5ed134274b">kNetModeLocal</a> = NT_NET_MODE_LOCAL
+&#160;&#160;<a class="el" href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52a7dd62ee066ff12177dd6da5ed134274b">kNetModeLocal</a> = NT_NET_MODE_LOCAL
 <br />
  }</td></tr>
 <tr class="memdesc:a13cc5d54545b54712b5470065f953c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Client/server mode flag values (as returned by <a class="el" href="classnt_1_1_network_table_instance.html#a53729757adbb20394e13f64d7e38fe1e" title="Get the current network mode.">GetNetworkMode()</a>).  <a href="classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52">More...</a><br /></td></tr>
@@ -135,10 +135,6 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a88dfe5b82924f347c572cdada2707150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging levels (as used by <a class="el" href="group__cscore__logging__func.html#gad24ff6b7ebfb0fe2b873503b6aaa93ab">SetLogger()</a>).  <a href="classnt_1_1_network_table_instance.html#a88dfe5b82924f347c572cdada2707150">More...</a><br /></td></tr>
 <tr class="separator:a88dfe5b82924f347c572cdada2707150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b4a01f476be412a5ea13dda407c4af"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a> = NT_DEFAULT_PORT
- }</td></tr>
-<tr class="memdesc:ae2b4a01f476be412a5ea13dda407c4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default port that network tables operates on.  <a href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4af">More...</a><br /></td></tr>
-<tr class="separator:ae2b4a01f476be412a5ea13dda407c4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -154,31 +150,78 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a553f753c4ddd32c6e8c875f997936f4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a553f753c4ddd32c6e8c875f997936f4f">GetHandle</a> () const</td></tr>
 <tr class="memdesc:a553f753c4ddd32c6e8c875f997936f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the native handle for the entry.  <a href="classnt_1_1_network_table_instance.html#a553f753c4ddd32c6e8c875f997936f4f">More...</a><br /></td></tr>
 <tr class="separator:a553f753c4ddd32c6e8c875f997936f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab33f155eda62ef9fab18336e1c693cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_topic.html">Topic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ab33f155eda62ef9fab18336e1c693cd3">GetTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:ab33f155eda62ef9fab18336e1c693cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a "generic" (untyped) topic.  <a href="classnt_1_1_network_table_instance.html#ab33f155eda62ef9fab18336e1c693cd3">More...</a><br /></td></tr>
+<tr class="separator:ab33f155eda62ef9fab18336e1c693cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179b98434d8f93d57614aa003be77a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_boolean_topic.html">BooleanTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a179b98434d8f93d57614aa003be77a90">GetBooleanTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a179b98434d8f93d57614aa003be77a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean topic.  <a href="classnt_1_1_network_table_instance.html#a179b98434d8f93d57614aa003be77a90">More...</a><br /></td></tr>
+<tr class="separator:a179b98434d8f93d57614aa003be77a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc53af856c37548216e9405d9dc290ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_integer_topic.html">IntegerTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#adc53af856c37548216e9405d9dc290ee">GetIntegerTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:adc53af856c37548216e9405d9dc290ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an integer topic.  <a href="classnt_1_1_network_table_instance.html#adc53af856c37548216e9405d9dc290ee">More...</a><br /></td></tr>
+<tr class="separator:adc53af856c37548216e9405d9dc290ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8711f78e3c77a985035333f329c176"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_float_topic.html">FloatTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1c8711f78e3c77a985035333f329c176">GetFloatTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a1c8711f78e3c77a985035333f329c176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a float topic.  <a href="classnt_1_1_network_table_instance.html#a1c8711f78e3c77a985035333f329c176">More...</a><br /></td></tr>
+<tr class="separator:a1c8711f78e3c77a985035333f329c176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab251bf2905ab6e487e07249892baea15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_double_topic.html">DoubleTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ab251bf2905ab6e487e07249892baea15">GetDoubleTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:ab251bf2905ab6e487e07249892baea15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a double topic.  <a href="classnt_1_1_network_table_instance.html#ab251bf2905ab6e487e07249892baea15">More...</a><br /></td></tr>
+<tr class="separator:ab251bf2905ab6e487e07249892baea15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773920db6df398fa49769ab4cfe602b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_topic.html">StringTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a773920db6df398fa49769ab4cfe602b4">GetStringTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a773920db6df398fa49769ab4cfe602b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a string topic.  <a href="classnt_1_1_network_table_instance.html#a773920db6df398fa49769ab4cfe602b4">More...</a><br /></td></tr>
+<tr class="separator:a773920db6df398fa49769ab4cfe602b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66de2cc51e6381c586c59cf07592ed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_raw_topic.html">RawTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aa66de2cc51e6381c586c59cf07592ed4">GetRawTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:aa66de2cc51e6381c586c59cf07592ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a raw topic.  <a href="classnt_1_1_network_table_instance.html#aa66de2cc51e6381c586c59cf07592ed4">More...</a><br /></td></tr>
+<tr class="separator:aa66de2cc51e6381c586c59cf07592ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fa77481bb234cbe5b5438d5933dee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_boolean_array_topic.html">BooleanArrayTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a73fa77481bb234cbe5b5438d5933dee2">GetBooleanArrayTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a73fa77481bb234cbe5b5438d5933dee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a boolean array topic.  <a href="classnt_1_1_network_table_instance.html#a73fa77481bb234cbe5b5438d5933dee2">More...</a><br /></td></tr>
+<tr class="separator:a73fa77481bb234cbe5b5438d5933dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a514ab15981faa99e2fac7512fe1af3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_integer_array_topic.html">IntegerArrayTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a0a514ab15981faa99e2fac7512fe1af3">GetIntegerArrayTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a0a514ab15981faa99e2fac7512fe1af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an integer array topic.  <a href="classnt_1_1_network_table_instance.html#a0a514ab15981faa99e2fac7512fe1af3">More...</a><br /></td></tr>
+<tr class="separator:a0a514ab15981faa99e2fac7512fe1af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495b9f3126324986aa076b4802cff00f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_float_array_topic.html">FloatArrayTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a495b9f3126324986aa076b4802cff00f">GetFloatArrayTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a495b9f3126324986aa076b4802cff00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a float array topic.  <a href="classnt_1_1_network_table_instance.html#a495b9f3126324986aa076b4802cff00f">More...</a><br /></td></tr>
+<tr class="separator:a495b9f3126324986aa076b4802cff00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d0ab9d0cf8aa32e55b5a005acc28f5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_double_array_topic.html">DoubleArrayTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a2d0ab9d0cf8aa32e55b5a005acc28f5e">GetDoubleArrayTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a2d0ab9d0cf8aa32e55b5a005acc28f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a double array topic.  <a href="classnt_1_1_network_table_instance.html#a2d0ab9d0cf8aa32e55b5a005acc28f5e">More...</a><br /></td></tr>
+<tr class="separator:a2d0ab9d0cf8aa32e55b5a005acc28f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ea7d010bf79a3383a2457cd168c7ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html">StringArrayTopic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a47ea7d010bf79a3383a2457cd168c7ef">GetStringArrayTopic</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) const</td></tr>
+<tr class="memdesc:a47ea7d010bf79a3383a2457cd168c7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a string array topic.  <a href="classnt_1_1_network_table_instance.html#a47ea7d010bf79a3383a2457cd168c7ef">More...</a><br /></td></tr>
+<tr class="separator:a47ea7d010bf79a3383a2457cd168c7ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1564a667021fd518d8f1e72b6a97266"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ae1564a667021fd518d8f1e72b6a97266">GetTopics</a> ()</td></tr>
+<tr class="memdesc:ae1564a667021fd518d8f1e72b6a97266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Published Topics.  <a href="classnt_1_1_network_table_instance.html#ae1564a667021fd518d8f1e72b6a97266">More...</a><br /></td></tr>
+<tr class="separator:ae1564a667021fd518d8f1e72b6a97266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaca07b06a3e4f487fcc7e90b2e9adf7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#acaca07b06a3e4f487fcc7e90b2e9adf7">GetTopics</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix)</td></tr>
+<tr class="memdesc:acaca07b06a3e4f487fcc7e90b2e9adf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Published Topics.  <a href="classnt_1_1_network_table_instance.html#acaca07b06a3e4f487fcc7e90b2e9adf7">More...</a><br /></td></tr>
+<tr class="separator:acaca07b06a3e4f487fcc7e90b2e9adf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d35664593371af2ec6f932f0d4bd258"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1d35664593371af2ec6f932f0d4bd258">GetTopics</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, unsigned int types)</td></tr>
+<tr class="memdesc:a1d35664593371af2ec6f932f0d4bd258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Published Topics.  <a href="classnt_1_1_network_table_instance.html#a1d35664593371af2ec6f932f0d4bd258">More...</a><br /></td></tr>
+<tr class="separator:a1d35664593371af2ec6f932f0d4bd258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e9db055ef2aa905f9a184c48fd0d5f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ae9e9db055ef2aa905f9a184c48fd0d5f">GetTopics</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, std::span&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; types)</td></tr>
+<tr class="memdesc:ae9e9db055ef2aa905f9a184c48fd0d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Published Topics.  <a href="classnt_1_1_network_table_instance.html#ae9e9db055ef2aa905f9a184c48fd0d5f">More...</a><br /></td></tr>
+<tr class="separator:ae9e9db055ef2aa905f9a184c48fd0d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19e8cf971ea7c3c3bc72f3e492edec0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ab19e8cf971ea7c3c3bc72f3e492edec0">GetTopicInfo</a> ()</td></tr>
+<tr class="memdesc:ab19e8cf971ea7c3c3bc72f3e492edec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics.  <a href="classnt_1_1_network_table_instance.html#ab19e8cf971ea7c3c3bc72f3e492edec0">More...</a><br /></td></tr>
+<tr class="separator:ab19e8cf971ea7c3c3bc72f3e492edec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3af945f924935d4b98dcef1e1b120ebb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3af945f924935d4b98dcef1e1b120ebb">GetTopicInfo</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix)</td></tr>
+<tr class="memdesc:a3af945f924935d4b98dcef1e1b120ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics.  <a href="classnt_1_1_network_table_instance.html#a3af945f924935d4b98dcef1e1b120ebb">More...</a><br /></td></tr>
+<tr class="separator:a3af945f924935d4b98dcef1e1b120ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb0f722b5467f5b13d069880bbb30e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a7fb0f722b5467f5b13d069880bbb30e6">GetTopicInfo</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, unsigned int types)</td></tr>
+<tr class="memdesc:a7fb0f722b5467f5b13d069880bbb30e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics.  <a href="classnt_1_1_network_table_instance.html#a7fb0f722b5467f5b13d069880bbb30e6">More...</a><br /></td></tr>
+<tr class="separator:a7fb0f722b5467f5b13d069880bbb30e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0c82e04d4963aa18f97d22c17eef53"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1b0c82e04d4963aa18f97d22c17eef53">GetTopicInfo</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, std::span&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; types)</td></tr>
+<tr class="memdesc:a1b0c82e04d4963aa18f97d22c17eef53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics.  <a href="classnt_1_1_network_table_instance.html#a1b0c82e04d4963aa18f97d22c17eef53">More...</a><br /></td></tr>
+<tr class="separator:a1b0c82e04d4963aa18f97d22c17eef53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a660994417b2cdcb069f7648d55cae5dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a660994417b2cdcb069f7648d55cae5dd">GetEntry</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name)</td></tr>
 <tr class="memdesc:a660994417b2cdcb069f7648d55cae5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry for a key.  <a href="classnt_1_1_network_table_instance.html#a660994417b2cdcb069f7648d55cae5dd">More...</a><br /></td></tr>
 <tr class="separator:a660994417b2cdcb069f7648d55cae5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d2a9ae7f6af74411265137a176bbeb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a24d2a9ae7f6af74411265137a176bbeb">GetEntries</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, unsigned int types)</td></tr>
-<tr class="memdesc:a24d2a9ae7f6af74411265137a176bbeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get entries starting with the given prefix.  <a href="classnt_1_1_network_table_instance.html#a24d2a9ae7f6af74411265137a176bbeb">More...</a><br /></td></tr>
-<tr class="separator:a24d2a9ae7f6af74411265137a176bbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb1007a80b2725a525dc963984dbe6af"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnt_1_1_entry_info.html">EntryInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aeb1007a80b2725a525dc963984dbe6af">GetEntryInfo</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, unsigned int types) const</td></tr>
-<tr class="memdesc:aeb1007a80b2725a525dc963984dbe6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about entries starting with the given prefix.  <a href="classnt_1_1_network_table_instance.html#aeb1007a80b2725a525dc963984dbe6af">More...</a><br /></td></tr>
-<tr class="separator:aeb1007a80b2725a525dc963984dbe6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff8c68eddac070d825193d3253b612c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classnt_1_1_network_table.html">NetworkTable</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a9ff8c68eddac070d825193d3253b612c">GetTable</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key) const</td></tr>
 <tr class="memdesc:a9ff8c68eddac070d825193d3253b612c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the table with the specified key.  <a href="classnt_1_1_network_table_instance.html#a9ff8c68eddac070d825193d3253b612c">More...</a><br /></td></tr>
 <tr class="separator:a9ff8c68eddac070d825193d3253b612c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22b34c327e0da33ab16b53c1994d7cf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a22b34c327e0da33ab16b53c1994d7cf7">DeleteAllEntries</a> ()</td></tr>
-<tr class="memdesc:a22b34c327e0da33ab16b53c1994d7cf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes ALL keys in ALL subtables (except persistent values).  <a href="classnt_1_1_network_table_instance.html#a22b34c327e0da33ab16b53c1994d7cf7">More...</a><br /></td></tr>
-<tr class="separator:a22b34c327e0da33ab16b53c1994d7cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a1b7bfad2b69ffa2fd4c68ab88162e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1a1b7bfad2b69ffa2fd4c68ab88162e9">operator==</a> (const <a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a> &amp;other) const</td></tr>
 <tr class="memdesc:a1a1b7bfad2b69ffa2fd4c68ab88162e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator.  <a href="classnt_1_1_network_table_instance.html#a1a1b7bfad2b69ffa2fd4c68ab88162e9">More...</a><br /></td></tr>
 <tr class="separator:a1a1b7bfad2b69ffa2fd4c68ab88162e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a935a3c2b9987ae4e56751cf0778ee45e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a935a3c2b9987ae4e56751cf0778ee45e">operator!=</a> (const <a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a> &amp;other) const</td></tr>
 <tr class="memdesc:a935a3c2b9987ae4e56751cf0778ee45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator.  <a href="classnt_1_1_network_table_instance.html#a935a3c2b9987ae4e56751cf0778ee45e">More...</a><br /></td></tr>
 <tr class="separator:a935a3c2b9987ae4e56751cf0778ee45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Remote Procedure Call Functions</div></td></tr>
-<tr class="memitem:a03a487ed431a8f56acd11f94ece82bed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a03a487ed431a8f56acd11f94ece82bed">WaitForRpcCallQueue</a> (double timeout)</td></tr>
-<tr class="memdesc:a03a487ed431a8f56acd11f94ece82bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the incoming RPC call queue to be empty.  <a href="classnt_1_1_network_table_instance.html#a03a487ed431a8f56acd11f94ece82bed">More...</a><br /></td></tr>
-<tr class="separator:a03a487ed431a8f56acd11f94ece82bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Client/Server Functions</div></td></tr>
 <tr class="memitem:a3602e21183a54109cfe223514a9ec369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3602e21183a54109cfe223514a9ec369">SetNetworkIdentity</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name)</td></tr>
 <tr class="memdesc:a3602e21183a54109cfe223514a9ec369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the network identity of this node.  <a href="classnt_1_1_network_table_instance.html#a3602e21183a54109cfe223514a9ec369">More...</a><br /></td></tr>
@@ -192,51 +235,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab95d4b1f75c6ab1ff7952088a9565eb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ab95d4b1f75c6ab1ff7952088a9565eb3">StopLocal</a> ()</td></tr>
 <tr class="memdesc:ab95d4b1f75c6ab1ff7952088a9565eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops local-only operation.  <a href="classnt_1_1_network_table_instance.html#ab95d4b1f75c6ab1ff7952088a9565eb3">More...</a><br /></td></tr>
 <tr class="separator:ab95d4b1f75c6ab1ff7952088a9565eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae330e471356df0b0e21c9e0fe1e91eaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ae330e471356df0b0e21c9e0fe1e91eaf">StartServer</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> persist_filename=&quot;networktables.ini&quot;, const char *listen_address=&quot;&quot;, unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:ae330e471356df0b0e21c9e0fe1e91eaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a server using the specified filename, listening address, and port.  <a href="classnt_1_1_network_table_instance.html#ae330e471356df0b0e21c9e0fe1e91eaf">More...</a><br /></td></tr>
-<tr class="separator:ae330e471356df0b0e21c9e0fe1e91eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4db5040aa3ce92464129dba81d142a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ab4db5040aa3ce92464129dba81d142a3">StartServer</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> persist_filename=&quot;networktables.json&quot;, const char *listen_address=&quot;&quot;, unsigned int port3=<a class="el" href="classnt_1_1_network_table_instance.html#a78639af206cc7a2dc74b6edfa98001b6">kDefaultPort3</a>, unsigned int port4=<a class="el" href="classnt_1_1_network_table_instance.html#a5902db4f35b6fbf1859cf65c02c99a85">kDefaultPort4</a>)</td></tr>
+<tr class="memdesc:ab4db5040aa3ce92464129dba81d142a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a server using the specified filename, listening address, and port.  <a href="classnt_1_1_network_table_instance.html#ab4db5040aa3ce92464129dba81d142a3">More...</a><br /></td></tr>
+<tr class="separator:ab4db5040aa3ce92464129dba81d142a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c9397edd689ca70aa8f597799665521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a7c9397edd689ca70aa8f597799665521">StopServer</a> ()</td></tr>
 <tr class="memdesc:a7c9397edd689ca70aa8f597799665521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the server if it is running.  <a href="classnt_1_1_network_table_instance.html#a7c9397edd689ca70aa8f597799665521">More...</a><br /></td></tr>
 <tr class="separator:a7c9397edd689ca70aa8f597799665521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a854f73644e3cba3b67d8a07ce71657cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a854f73644e3cba3b67d8a07ce71657cd">StartClient</a> ()</td></tr>
-<tr class="memdesc:a854f73644e3cba3b67d8a07ce71657cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client.  <a href="classnt_1_1_network_table_instance.html#a854f73644e3cba3b67d8a07ce71657cd">More...</a><br /></td></tr>
-<tr class="separator:a854f73644e3cba3b67d8a07ce71657cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7fff110cc9faab6ffb2917a305030fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ad7fff110cc9faab6ffb2917a305030fd">StartClient</a> (const char *server_name, unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:ad7fff110cc9faab6ffb2917a305030fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client using the specified server and port.  <a href="classnt_1_1_network_table_instance.html#ad7fff110cc9faab6ffb2917a305030fd">More...</a><br /></td></tr>
-<tr class="separator:ad7fff110cc9faab6ffb2917a305030fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbabd597270de728466600289af0fed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#adbabd597270de728466600289af0fed3">StartClient</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, unsigned int &gt; &gt; servers)</td></tr>
-<tr class="memdesc:adbabd597270de728466600289af0fed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client using the specified (server, port) combinations.  <a href="classnt_1_1_network_table_instance.html#adbabd597270de728466600289af0fed3">More...</a><br /></td></tr>
-<tr class="separator:adbabd597270de728466600289af0fed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a560d462af9b6a7c92ea77e45c65f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ae1a560d462af9b6a7c92ea77e45c65f6">StartClient</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; servers, unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:ae1a560d462af9b6a7c92ea77e45c65f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client using the specified servers and port.  <a href="classnt_1_1_network_table_instance.html#ae1a560d462af9b6a7c92ea77e45c65f6">More...</a><br /></td></tr>
-<tr class="separator:ae1a560d462af9b6a7c92ea77e45c65f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a262186f1bb98cdec1087f524493f6764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a262186f1bb98cdec1087f524493f6764">StartClientTeam</a> (unsigned int team, unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:a262186f1bb98cdec1087f524493f6764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client using commonly known robot addresses for the specified team.  <a href="classnt_1_1_network_table_instance.html#a262186f1bb98cdec1087f524493f6764">More...</a><br /></td></tr>
-<tr class="separator:a262186f1bb98cdec1087f524493f6764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3141a775a9aa20e7347831627adc51a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3141a775a9aa20e7347831627adc51a6">StartClient3</a> ()</td></tr>
+<tr class="memdesc:a3141a775a9aa20e7347831627adc51a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a NT3 client.  <a href="classnt_1_1_network_table_instance.html#a3141a775a9aa20e7347831627adc51a6">More...</a><br /></td></tr>
+<tr class="separator:a3141a775a9aa20e7347831627adc51a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3da760f8091954d15d7c6ae640f069b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3da760f8091954d15d7c6ae640f069b7">StartClient4</a> ()</td></tr>
+<tr class="memdesc:a3da760f8091954d15d7c6ae640f069b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a NT4 client.  <a href="classnt_1_1_network_table_instance.html#a3da760f8091954d15d7c6ae640f069b7">More...</a><br /></td></tr>
+<tr class="separator:a3da760f8091954d15d7c6ae640f069b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbaea6ef63ff42dbda85a3d5e6d0663e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#acbaea6ef63ff42dbda85a3d5e6d0663e">StopClient</a> ()</td></tr>
 <tr class="memdesc:acbaea6ef63ff42dbda85a3d5e6d0663e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the client if it is running.  <a href="classnt_1_1_network_table_instance.html#acbaea6ef63ff42dbda85a3d5e6d0663e">More...</a><br /></td></tr>
 <tr class="separator:acbaea6ef63ff42dbda85a3d5e6d0663e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2696d5bf7c58db8fe90f310ca7211be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ac2696d5bf7c58db8fe90f310ca7211be">SetServer</a> (const char *server_name, unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:ac2696d5bf7c58db8fe90f310ca7211be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server address and port for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#ac2696d5bf7c58db8fe90f310ca7211be">More...</a><br /></td></tr>
-<tr class="separator:ac2696d5bf7c58db8fe90f310ca7211be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f10003d42a9e2ba3dfe97bd6a35235b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a0f10003d42a9e2ba3dfe97bd6a35235b">SetServer</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, unsigned int &gt; &gt; servers)</td></tr>
-<tr class="memdesc:a0f10003d42a9e2ba3dfe97bd6a35235b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server addresses and ports for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#a0f10003d42a9e2ba3dfe97bd6a35235b">More...</a><br /></td></tr>
-<tr class="separator:a0f10003d42a9e2ba3dfe97bd6a35235b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aed9131b2f0cca655e72af6f50fdcde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a6aed9131b2f0cca655e72af6f50fdcde">SetServer</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; servers, unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:a6aed9131b2f0cca655e72af6f50fdcde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server addresses and port for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#a6aed9131b2f0cca655e72af6f50fdcde">More...</a><br /></td></tr>
-<tr class="separator:a6aed9131b2f0cca655e72af6f50fdcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dee18833d1d25de28773507a13b6f63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a9dee18833d1d25de28773507a13b6f63">SetServerTeam</a> (unsigned int team, unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:a9dee18833d1d25de28773507a13b6f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server addresses and port for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#a9dee18833d1d25de28773507a13b6f63">More...</a><br /></td></tr>
-<tr class="separator:a9dee18833d1d25de28773507a13b6f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cdbcfc6aa5e893afdbbeb437a56bdee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1cdbcfc6aa5e893afdbbeb437a56bdee">StartDSClient</a> (unsigned int port=<a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a>)</td></tr>
-<tr class="memdesc:a1cdbcfc6aa5e893afdbbeb437a56bdee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts requesting server address from Driver Station.  <a href="classnt_1_1_network_table_instance.html#a1cdbcfc6aa5e893afdbbeb437a56bdee">More...</a><br /></td></tr>
-<tr class="separator:a1cdbcfc6aa5e893afdbbeb437a56bdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9c402190a71668398fb5db31168c42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a7f9c402190a71668398fb5db31168c42">SetServer</a> (const char *server_name, unsigned int port=0)</td></tr>
+<tr class="memdesc:a7f9c402190a71668398fb5db31168c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server address and port for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#a7f9c402190a71668398fb5db31168c42">More...</a><br /></td></tr>
+<tr class="separator:a7f9c402190a71668398fb5db31168c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb07f12ba98711379dac93d43993e936"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#adb07f12ba98711379dac93d43993e936">SetServer</a> (std::span&lt; const std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, unsigned int &gt; &gt; servers)</td></tr>
+<tr class="memdesc:adb07f12ba98711379dac93d43993e936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server addresses and ports for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#adb07f12ba98711379dac93d43993e936">More...</a><br /></td></tr>
+<tr class="separator:adb07f12ba98711379dac93d43993e936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf195a418e222ca90e60759635cb9b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aedf195a418e222ca90e60759635cb9b2">SetServer</a> (std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; servers, unsigned int port=0)</td></tr>
+<tr class="memdesc:aedf195a418e222ca90e60759635cb9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server addresses and port for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#aedf195a418e222ca90e60759635cb9b2">More...</a><br /></td></tr>
+<tr class="separator:aedf195a418e222ca90e60759635cb9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8038f6912d2acea5572610a20fa88a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a8038f6912d2acea5572610a20fa88a68">SetServerTeam</a> (unsigned int team, unsigned int port=0)</td></tr>
+<tr class="memdesc:a8038f6912d2acea5572610a20fa88a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets server addresses and port for client (without restarting client).  <a href="classnt_1_1_network_table_instance.html#a8038f6912d2acea5572610a20fa88a68">More...</a><br /></td></tr>
+<tr class="separator:a8038f6912d2acea5572610a20fa88a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37795ff73a9cf7dd04ac9907a0f6251c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a37795ff73a9cf7dd04ac9907a0f6251c">StartDSClient</a> (unsigned int port=0)</td></tr>
+<tr class="memdesc:a37795ff73a9cf7dd04ac9907a0f6251c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts requesting server address from Driver Station.  <a href="classnt_1_1_network_table_instance.html#a37795ff73a9cf7dd04ac9907a0f6251c">More...</a><br /></td></tr>
+<tr class="separator:a37795ff73a9cf7dd04ac9907a0f6251c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8527f50a31a1bbdf73f1f45fd6c0b65d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a8527f50a31a1bbdf73f1f45fd6c0b65d">StopDSClient</a> ()</td></tr>
 <tr class="memdesc:a8527f50a31a1bbdf73f1f45fd6c0b65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops requesting server address from Driver Station.  <a href="classnt_1_1_network_table_instance.html#a8527f50a31a1bbdf73f1f45fd6c0b65d">More...</a><br /></td></tr>
 <tr class="separator:a8527f50a31a1bbdf73f1f45fd6c0b65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8962efa788ed290e65665d3a6f627ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a8962efa788ed290e65665d3a6f627ea8">SetUpdateRate</a> (double interval)</td></tr>
-<tr class="memdesc:a8962efa788ed290e65665d3a6f627ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the periodic update rate.  <a href="classnt_1_1_network_table_instance.html#a8962efa788ed290e65665d3a6f627ea8">More...</a><br /></td></tr>
-<tr class="separator:a8962efa788ed290e65665d3a6f627ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4499c51a86ca1a788b7d6ebcd3560b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a4499c51a86ca1a788b7d6ebcd3560b62">FlushLocal</a> () const</td></tr>
+<tr class="memdesc:a4499c51a86ca1a788b7d6ebcd3560b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes all updated values immediately to the local client/server.  <a href="classnt_1_1_network_table_instance.html#a4499c51a86ca1a788b7d6ebcd3560b62">More...</a><br /></td></tr>
+<tr class="separator:a4499c51a86ca1a788b7d6ebcd3560b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a951a3b2bf019b82032d445321a8ae1e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a951a3b2bf019b82032d445321a8ae1e3">Flush</a> () const</td></tr>
 <tr class="memdesc:a951a3b2bf019b82032d445321a8ae1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flushes all updated values immediately to the network.  <a href="classnt_1_1_network_table_instance.html#a951a3b2bf019b82032d445321a8ae1e3">More...</a><br /></td></tr>
 <tr class="separator:a951a3b2bf019b82032d445321a8ae1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,19 +280,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1dd171401cb72e7e4a5073840584ecb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1dd171401cb72e7e4a5073840584ecb6">IsConnected</a> () const</td></tr>
 <tr class="memdesc:a1dd171401cb72e7e4a5073840584ecb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether or not the instance is connected to another node.  <a href="classnt_1_1_network_table_instance.html#a1dd171401cb72e7e4a5073840584ecb6">More...</a><br /></td></tr>
 <tr class="separator:a1dd171401cb72e7e4a5073840584ecb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">File Save/Load Functions</div></td></tr>
-<tr class="memitem:ad0dd14529a1474df429c5d502ab135b1"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ad0dd14529a1474df429c5d502ab135b1">SavePersistent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> filename) const</td></tr>
-<tr class="memdesc:ad0dd14529a1474df429c5d502ab135b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save persistent values to a file.  <a href="classnt_1_1_network_table_instance.html#ad0dd14529a1474df429c5d502ab135b1">More...</a><br /></td></tr>
-<tr class="separator:ad0dd14529a1474df429c5d502ab135b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2a2954180fd0f4567a4da0530d12450"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ad2a2954180fd0f4567a4da0530d12450">LoadPersistent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> filename, std::function&lt; void(size_t line, const char *msg)&gt; warn)</td></tr>
-<tr class="memdesc:ad2a2954180fd0f4567a4da0530d12450"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load persistent values from a file.  <a href="classnt_1_1_network_table_instance.html#ad2a2954180fd0f4567a4da0530d12450">More...</a><br /></td></tr>
-<tr class="separator:ad2a2954180fd0f4567a4da0530d12450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bc18bf0256fe266abc3e358be17fc77"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1bc18bf0256fe266abc3e358be17fc77">SaveEntries</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> filename, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix) const</td></tr>
-<tr class="memdesc:a1bc18bf0256fe266abc3e358be17fc77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save table values to a file.  <a href="classnt_1_1_network_table_instance.html#a1bc18bf0256fe266abc3e358be17fc77">More...</a><br /></td></tr>
-<tr class="separator:a1bc18bf0256fe266abc3e358be17fc77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e719996c8a6ebd3793cf6e65dfef372"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a2e719996c8a6ebd3793cf6e65dfef372">LoadEntries</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> filename, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, std::function&lt; void(size_t line, const char *msg)&gt; warn)</td></tr>
-<tr class="memdesc:a2e719996c8a6ebd3793cf6e65dfef372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load table values from a file.  <a href="classnt_1_1_network_table_instance.html#a2e719996c8a6ebd3793cf6e65dfef372">More...</a><br /></td></tr>
-<tr class="separator:a2e719996c8a6ebd3793cf6e65dfef372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -272,24 +293,19 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae2415aa85f185e31fd0c136544aa0764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an instance (note: this has global effect).  <a href="classnt_1_1_network_table_instance.html#ae2415aa85f185e31fd0c136544aa0764">More...</a><br /></td></tr>
 <tr class="separator:ae2415aa85f185e31fd0c136544aa0764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Entry Listener Functions</h2></td></tr>
-<tr class="memitem:a00d8045fdac68c976072cfec2dbfe416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a00d8045fdac68c976072cfec2dbfe416">AddEntryListener</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, std::function&lt; void(const <a class="el" href="classnt_1_1_entry_notification.html">EntryNotification</a> &amp;event)&gt; callback, unsigned int flags) const</td></tr>
-<tr class="memdesc:a00d8045fdac68c976072cfec2dbfe416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for all entries starting with a certain prefix.  <a href="classnt_1_1_network_table_instance.html#a00d8045fdac68c976072cfec2dbfe416">More...</a><br /></td></tr>
-<tr class="separator:a00d8045fdac68c976072cfec2dbfe416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae29ca5f81b3af114465c1c23d420f57a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ae29ca5f81b3af114465c1c23d420f57a">WaitForEntryListenerQueue</a> (double timeout)</td></tr>
-<tr class="memdesc:ae29ca5f81b3af114465c1c23d420f57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the entry listener queue to be empty.  <a href="classnt_1_1_network_table_instance.html#ae29ca5f81b3af114465c1c23d420f57a">More...</a><br /></td></tr>
-<tr class="separator:ae29ca5f81b3af114465c1c23d420f57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0121516a20718baab79287388bf6c130"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a0121516a20718baab79287388bf6c130">RemoveEntryListener</a> (<a class="el" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> entry_listener)</td></tr>
-<tr class="memdesc:a0121516a20718baab79287388bf6c130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an entry listener.  <a href="classnt_1_1_network_table_instance.html#a0121516a20718baab79287388bf6c130">More...</a><br /></td></tr>
-<tr class="separator:a0121516a20718baab79287388bf6c130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a78639af206cc7a2dc74b6edfa98001b6"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a78639af206cc7a2dc74b6edfa98001b6">kDefaultPort3</a> = <a class="el" href="group__ntcore__c__api.html#ga512aa52e8250b15e017b7148d818d654">NT_DEFAULT_PORT3</a></td></tr>
+<tr class="memdesc:a78639af206cc7a2dc74b6edfa98001b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default port that network tables operates on for NT3.  <a href="classnt_1_1_network_table_instance.html#a78639af206cc7a2dc74b6edfa98001b6">More...</a><br /></td></tr>
+<tr class="separator:a78639af206cc7a2dc74b6edfa98001b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5902db4f35b6fbf1859cf65c02c99a85"><td class="memItemLeft" align="right" valign="top">static constexpr unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a5902db4f35b6fbf1859cf65c02c99a85">kDefaultPort4</a> = <a class="el" href="group__ntcore__c__api.html#gad5b861965b5c62a13a13768f97f8ebf8">NT_DEFAULT_PORT4</a></td></tr>
+<tr class="memdesc:a5902db4f35b6fbf1859cf65c02c99a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default port that network tables operates on for NT4.  <a href="classnt_1_1_network_table_instance.html#a5902db4f35b6fbf1859cf65c02c99a85">More...</a><br /></td></tr>
+<tr class="separator:a5902db4f35b6fbf1859cf65c02c99a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Connection Listener Functions</h2></td></tr>
 <tr class="memitem:a2864d23f95e78b7edb45a575961fcd9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a2864d23f95e78b7edb45a575961fcd9d">AddConnectionListener</a> (std::function&lt; void(const <a class="el" href="classnt_1_1_connection_notification.html">ConnectionNotification</a> &amp;event)&gt; callback, bool immediate_notify) const</td></tr>
 <tr class="memdesc:a2864d23f95e78b7edb45a575961fcd9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="classnt_1_1_network_table_instance.html#a2864d23f95e78b7edb45a575961fcd9d">More...</a><br /></td></tr>
 <tr class="separator:a2864d23f95e78b7edb45a575961fcd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999bd24ac6f1255f0aa687558b832585"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a999bd24ac6f1255f0aa687558b832585">WaitForConnectionListenerQueue</a> (double timeout)</td></tr>
-<tr class="memdesc:a999bd24ac6f1255f0aa687558b832585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the connection listener queue to be empty.  <a href="classnt_1_1_network_table_instance.html#a999bd24ac6f1255f0aa687558b832585">More...</a><br /></td></tr>
-<tr class="separator:a999bd24ac6f1255f0aa687558b832585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5282662e5be28b164d932a9cdf8e81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a7d5282662e5be28b164d932a9cdf8e81">RemoveConnectionListener</a> (<a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a> conn_listener)</td></tr>
 <tr class="memdesc:a7d5282662e5be28b164d932a9cdf8e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a connection listener.  <a href="classnt_1_1_network_table_instance.html#a7d5282662e5be28b164d932a9cdf8e81">More...</a><br /></td></tr>
 <tr class="separator:a7d5282662e5be28b164d932a9cdf8e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,9 +328,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a39e38354186352eb5351ae671108de5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a39e38354186352eb5351ae671108de5c">AddLogger</a> (std::function&lt; void(const <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &amp;msg)&gt; func, unsigned int minLevel, unsigned int maxLevel)</td></tr>
 <tr class="memdesc:a39e38354186352eb5351ae671108de5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="classnt_1_1_network_table_instance.html#a39e38354186352eb5351ae671108de5c">More...</a><br /></td></tr>
 <tr class="separator:a39e38354186352eb5351ae671108de5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7289d0e9b5d0ff28b7b33bc257670880"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a7289d0e9b5d0ff28b7b33bc257670880">WaitForLoggerQueue</a> (double timeout)</td></tr>
-<tr class="memdesc:a7289d0e9b5d0ff28b7b33bc257670880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the incoming log event queue to be empty.  <a href="classnt_1_1_network_table_instance.html#a7289d0e9b5d0ff28b7b33bc257670880">More...</a><br /></td></tr>
-<tr class="separator:a7289d0e9b5d0ff28b7b33bc257670880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e67285e9e103e77c27c4486d4856927"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3e67285e9e103e77c27c4486d4856927">RemoveLogger</a> (<a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a> logger)</td></tr>
 <tr class="memdesc:a3e67285e9e103e77c27c4486d4856927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a logger.  <a href="classnt_1_1_network_table_instance.html#a3e67285e9e103e77c27c4486d4856927">More...</a><br /></td></tr>
 <tr class="separator:a3e67285e9e103e77c27c4486d4856927"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,25 +338,6 @@ Static Public Member Functions</h2></td></tr>
 <p >The global "default" instance (as returned by <a class="el" href="classnt_1_1_network_table_instance.html#a02ea00d4a2a77b564d384b037f2045e6" title="Get global default instance.">GetDefault()</a>) is always available, and is intended for the common case when there is only a single NetworkTables instance being used in the program. The default instance cannot be destroyed.</p>
 <p >Additional instances can be created with the <a class="el" href="classnt_1_1_network_table_instance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68" title="Create an instance.">Create()</a> function. Instances are not reference counted or RAII. Instead, they must be explicitly destroyed (with <a class="el" href="classnt_1_1_network_table_instance.html#ae2415aa85f185e31fd0c136544aa0764" title="Destroys an instance (note: this has global effect).">Destroy()</a>). </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ae2b4a01f476be412a5ea13dda407c4af" name="ae2b4a01f476be412a5ea13dda407c4af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2b4a01f476be412a5ea13dda407c4af">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The default port that network tables operates on. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979" name="ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979"></a>kDefaultPort&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="a88dfe5b82924f347c572cdada2707150" name="a88dfe5b82924f347c572cdada2707150"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88dfe5b82924f347c572cdada2707150">&#9670;&nbsp;</a></span>LogLevel</h2>
 
@@ -388,9 +382,8 @@ Static Public Member Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52af76215bacd142be2f7329a49880d056b" name="a13cc5d54545b54712b5470065f953c52af76215bacd142be2f7329a49880d056b"></a>kNetModeNone&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52a64b42da92fbb4c973edd9de518441035" name="a13cc5d54545b54712b5470065f953c52a64b42da92fbb4c973edd9de518441035"></a>kNetModeServer&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52a43fb7c45ce58e13523e1891476e44ddc" name="a13cc5d54545b54712b5470065f953c52a43fb7c45ce58e13523e1891476e44ddc"></a>kNetModeClient&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52aa75289755e13e600d79919141ed8e2d7" name="a13cc5d54545b54712b5470065f953c52aa75289755e13e600d79919141ed8e2d7"></a>kNetModeStarting&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52a615a1eec424a7ff6bf6fad03e01dfdb7" name="a13cc5d54545b54712b5470065f953c52a615a1eec424a7ff6bf6fad03e01dfdb7"></a>kNetModeFailure&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52abb356f6cb6d21f314c5faeb77c38899f" name="a13cc5d54545b54712b5470065f953c52abb356f6cb6d21f314c5faeb77c38899f"></a>kNetModeClient3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52a35fc237bc834b90e39cdba23c1a37655" name="a13cc5d54545b54712b5470065f953c52a35fc237bc834b90e39cdba23c1a37655"></a>kNetModeClient4&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a13cc5d54545b54712b5470065f953c52a7dd62ee066ff12177dd6da5ed134274b" name="a13cc5d54545b54712b5470065f953c52a7dd62ee066ff12177dd6da5ed134274b"></a>kNetModeLocal&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -497,51 +490,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a00d8045fdac68c976072cfec2dbfe416" name="a00d8045fdac68c976072cfec2dbfe416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00d8045fdac68c976072cfec2dbfe416">&#9670;&nbsp;</a></span>AddEntryListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> nt::NetworkTableInstance::AddEntryListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>prefix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_entry_notification.html">EntryNotification</a> &amp;event)&gt;&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a listener for all entries starting with a certain prefix. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prefix</td><td>UTF-8 string prefix </td></tr>
-    <tr><td class="paramname">callback</td><td>listener to add </td></tr>
-    <tr><td class="paramname">flags</td><td><a class="el" href="namespacent_1_1_entry_listener_flags.html" title="Entry listener flags.">EntryListenerFlags</a> bitmask </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
 <a id="a39e38354186352eb5351ae671108de5c" name="a39e38354186352eb5351ae671108de5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39e38354186352eb5351ae671108de5c">&#9670;&nbsp;</a></span>AddLogger()</h2>
 
@@ -624,34 +572,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a22b34c327e0da33ab16b53c1994d7cf7" name="a22b34c327e0da33ab16b53c1994d7cf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22b34c327e0da33ab16b53c1994d7cf7">&#9670;&nbsp;</a></span>DeleteAllEntries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::DeleteAllEntries </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deletes ALL keys in ALL subtables (except persistent values). </p>
-<p >Use with caution! </p>
-
-</div>
-</div>
 <a id="ae2415aa85f185e31fd0c136544aa0764" name="ae2415aa85f185e31fd0c136544aa0764"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2415aa85f185e31fd0c136544aa0764">&#9670;&nbsp;</a></span>Destroy()</h2>
 
@@ -714,6 +634,88 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4499c51a86ca1a788b7d6ebcd3560b62" name="a4499c51a86ca1a788b7d6ebcd3560b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4499c51a86ca1a788b7d6ebcd3560b62">&#9670;&nbsp;</a></span>FlushLocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nt::NetworkTableInstance::FlushLocal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flushes all updated values immediately to the local client/server. </p>
+<p >This does not flush to the network. </p>
+
+</div>
+</div>
+<a id="a73fa77481bb234cbe5b5438d5933dee2" name="a73fa77481bb234cbe5b5438d5933dee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73fa77481bb234cbe5b5438d5933dee2">&#9670;&nbsp;</a></span>GetBooleanArrayTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_boolean_array_topic.html">BooleanArrayTopic</a> nt::NetworkTableInstance::GetBooleanArrayTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a boolean array topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
+<a id="a179b98434d8f93d57614aa003be77a90" name="a179b98434d8f93d57614aa003be77a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179b98434d8f93d57614aa003be77a90">&#9670;&nbsp;</a></span>GetBooleanTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_boolean_topic.html">BooleanTopic</a> nt::NetworkTableInstance::GetBooleanTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a boolean topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
 <a id="abe5379f40e3b8e0f22c5abbddaf755e9" name="abe5379f40e3b8e0f22c5abbddaf755e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe5379f40e3b8e0f22c5abbddaf755e9">&#9670;&nbsp;</a></span>GetConnections()</h2>
 
@@ -771,50 +773,57 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a24d2a9ae7f6af74411265137a176bbeb" name="a24d2a9ae7f6af74411265137a176bbeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24d2a9ae7f6af74411265137a176bbeb">&#9670;&nbsp;</a></span>GetEntries()</h2>
+<a id="a2d0ab9d0cf8aa32e55b5a005acc28f5e" name="a2d0ab9d0cf8aa32e55b5a005acc28f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d0ab9d0cf8aa32e55b5a005acc28f5e">&#9670;&nbsp;</a></span>GetDoubleArrayTopic()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &gt; nt::NetworkTableInstance::GetEntries </td>
+          <td class="memname"><a class="el" href="classnt_1_1_double_array_topic.html">DoubleArrayTopic</a> nt::NetworkTableInstance::GetDoubleArrayTopic </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>prefix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>types</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get entries starting with the given prefix. </p>
-<p >The results are optionally filtered by string prefix and entry type to only return a subset of all entries.</p>
+<p>Gets a double array topic. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">prefix</td><td>entry name required prefix; only entries whose name starts with this string are returned </td></tr>
-    <tr><td class="paramname">types</td><td>bitmask of types; 0 is treated as a "don't care" </td></tr>
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of entries. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab251bf2905ab6e487e07249892baea15" name="ab251bf2905ab6e487e07249892baea15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab251bf2905ab6e487e07249892baea15">&#9670;&nbsp;</a></span>GetDoubleTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_double_topic.html">DoubleTopic</a> nt::NetworkTableInstance::GetDoubleTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a double topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
 
 </div>
 </div>
@@ -853,50 +862,57 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb1007a80b2725a525dc963984dbe6af" name="aeb1007a80b2725a525dc963984dbe6af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb1007a80b2725a525dc963984dbe6af">&#9670;&nbsp;</a></span>GetEntryInfo()</h2>
+<a id="a495b9f3126324986aa076b4802cff00f" name="a495b9f3126324986aa076b4802cff00f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495b9f3126324986aa076b4802cff00f">&#9670;&nbsp;</a></span>GetFloatArrayTopic()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="structnt_1_1_entry_info.html">EntryInfo</a> &gt; nt::NetworkTableInstance::GetEntryInfo </td>
+          <td class="memname"><a class="el" href="classnt_1_1_float_array_topic.html">FloatArrayTopic</a> nt::NetworkTableInstance::GetFloatArrayTopic </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>prefix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>types</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get information about entries starting with the given prefix. </p>
-<p >The results are optionally filtered by string prefix and entry type to only return a subset of all entries.</p>
+<p>Gets a float array topic. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">prefix</td><td>entry name required prefix; only entries whose name starts with this string are returned </td></tr>
-    <tr><td class="paramname">types</td><td>bitmask of types; 0 is treated as a "don't care" </td></tr>
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of entry information. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
+<a id="a1c8711f78e3c77a985035333f329c176" name="a1c8711f78e3c77a985035333f329c176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8711f78e3c77a985035333f329c176">&#9670;&nbsp;</a></span>GetFloatTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_float_topic.html">FloatTopic</a> nt::NetworkTableInstance::GetFloatTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a float topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
 
 </div>
 </div>
@@ -928,6 +944,60 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0a514ab15981faa99e2fac7512fe1af3" name="a0a514ab15981faa99e2fac7512fe1af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a514ab15981faa99e2fac7512fe1af3">&#9670;&nbsp;</a></span>GetIntegerArrayTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_integer_array_topic.html">IntegerArrayTopic</a> nt::NetworkTableInstance::GetIntegerArrayTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets an integer array topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
+<a id="adc53af856c37548216e9405d9dc290ee" name="adc53af856c37548216e9405d9dc290ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc53af856c37548216e9405d9dc290ee">&#9670;&nbsp;</a></span>GetIntegerTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_integer_topic.html">IntegerTopic</a> nt::NetworkTableInstance::GetIntegerTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets an integer topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
 <a id="a53729757adbb20394e13f64d7e38fe1e" name="a53729757adbb20394e13f64d7e38fe1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53729757adbb20394e13f64d7e38fe1e">&#9670;&nbsp;</a></span>GetNetworkMode()</h2>
 
@@ -953,6 +1023,87 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get the current network mode. </p>
 <dl class="section return"><dt>Returns</dt><dd>Bitmask of NetworkMode. </dd></dl>
+
+</div>
+</div>
+<a id="aa66de2cc51e6381c586c59cf07592ed4" name="aa66de2cc51e6381c586c59cf07592ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa66de2cc51e6381c586c59cf07592ed4">&#9670;&nbsp;</a></span>GetRawTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_raw_topic.html">RawTopic</a> nt::NetworkTableInstance::GetRawTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a raw topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
+<a id="a47ea7d010bf79a3383a2457cd168c7ef" name="a47ea7d010bf79a3383a2457cd168c7ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ea7d010bf79a3383a2457cd168c7ef">&#9670;&nbsp;</a></span>GetStringArrayTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_string_array_topic.html">StringArrayTopic</a> nt::NetworkTableInstance::GetStringArrayTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a string array topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
+<a id="a773920db6df398fa49769ab4cfe602b4" name="a773920db6df398fa49769ab4cfe602b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773920db6df398fa49769ab4cfe602b4">&#9670;&nbsp;</a></span>GetStringTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_string_topic.html">StringTopic</a> nt::NetworkTableInstance::GetStringTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a string topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
 
 </div>
 </div>
@@ -983,6 +1134,351 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab33f155eda62ef9fab18336e1c693cd3" name="ab33f155eda62ef9fab18336e1c693cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab33f155eda62ef9fab18336e1c693cd3">&#9670;&nbsp;</a></span>GetTopic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnt_1_1_topic.html">Topic</a> nt::NetworkTableInstance::GetTopic </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a "generic" (untyped) topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>topic name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </dd></dl>
+
+</div>
+</div>
+<a id="ab19e8cf971ea7c3c3bc72f3e492edec0" name="ab19e8cf971ea7c3c3bc72f3e492edec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19e8cf971ea7c3c3bc72f3e492edec0">&#9670;&nbsp;</a></span>GetTopicInfo() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt; nt::NetworkTableInstance::GetTopicInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics. </p>
+<p >Returns an array of topic information (handle, name, type, and properties).</p>
+<dl class="section return"><dt>Returns</dt><dd>Array of topic information. </dd></dl>
+
+</div>
+</div>
+<a id="a3af945f924935d4b98dcef1e1b120ebb" name="a3af945f924935d4b98dcef1e1b120ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af945f924935d4b98dcef1e1b120ebb">&#9670;&nbsp;</a></span>GetTopicInfo() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt; nt::NetworkTableInstance::GetTopicInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>prefix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics. </p>
+<p >Returns an array of topic information (handle, name, type, and properties). The results are filtered by string prefix to only return a subset of all topics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>name required prefix; only topics whose name starts with this string are returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of topic information. </dd></dl>
+
+</div>
+</div>
+<a id="a1b0c82e04d4963aa18f97d22c17eef53" name="a1b0c82e04d4963aa18f97d22c17eef53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0c82e04d4963aa18f97d22c17eef53">&#9670;&nbsp;</a></span>GetTopicInfo() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt; nt::NetworkTableInstance::GetTopicInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::span&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
+          <td class="paramname"><em>types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics. </p>
+<p >Returns an array of topic information (handle, name, type, and properties). The results are filtered by string prefix and type to only return a subset of all topics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>name required prefix; only topics whose name starts with this string are returned </td></tr>
+    <tr><td class="paramname">types</td><td>array of type strings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of topic information. </dd></dl>
+
+</div>
+</div>
+<a id="a7fb0f722b5467f5b13d069880bbb30e6" name="a7fb0f722b5467f5b13d069880bbb30e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb0f722b5467f5b13d069880bbb30e6">&#9670;&nbsp;</a></span>GetTopicInfo() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a> &gt; nt::NetworkTableInstance::GetTopicInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Information about multiple topics. </p>
+<p >Returns an array of topic information (handle, name, type, and properties). The results are filtered by string prefix and type to only return a subset of all topics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>name required prefix; only topics whose name starts with this string are returned </td></tr>
+    <tr><td class="paramname">types</td><td>bitmask of NT_Type values; 0 is treated specially as a "don't care" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of topic information. </dd></dl>
+
+</div>
+</div>
+<a id="ae1564a667021fd518d8f1e72b6a97266" name="ae1564a667021fd518d8f1e72b6a97266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1564a667021fd518d8f1e72b6a97266">&#9670;&nbsp;</a></span>GetTopics() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt; nt::NetworkTableInstance::GetTopics </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Published Topics. </p>
+<p >Returns an array of topics.</p>
+<dl class="section return"><dt>Returns</dt><dd>Array of topics. </dd></dl>
+
+</div>
+</div>
+<a id="acaca07b06a3e4f487fcc7e90b2e9adf7" name="acaca07b06a3e4f487fcc7e90b2e9adf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaca07b06a3e4f487fcc7e90b2e9adf7">&#9670;&nbsp;</a></span>GetTopics() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt; nt::NetworkTableInstance::GetTopics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>prefix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Published Topics. </p>
+<p >Returns an array of topics. The results are filtered by string prefix to only return a subset of all topics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>name required prefix; only topics whose name starts with this string are returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of topics. </dd></dl>
+
+</div>
+</div>
+<a id="ae9e9db055ef2aa905f9a184c48fd0d5f" name="ae9e9db055ef2aa905f9a184c48fd0d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e9db055ef2aa905f9a184c48fd0d5f">&#9670;&nbsp;</a></span>GetTopics() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt; nt::NetworkTableInstance::GetTopics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::span&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
+          <td class="paramname"><em>types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Published Topics. </p>
+<p >Returns an array of topics. The results are filtered by string prefix and type to only return a subset of all topics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>name required prefix; only topics whose name starts with this string are returned </td></tr>
+    <tr><td class="paramname">types</td><td>array of type strings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of topic handles. </dd></dl>
+
+</div>
+</div>
+<a id="a1d35664593371af2ec6f932f0d4bd258" name="a1d35664593371af2ec6f932f0d4bd258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d35664593371af2ec6f932f0d4bd258">&#9670;&nbsp;</a></span>GetTopics() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1_topic.html">Topic</a> &gt; nt::NetworkTableInstance::GetTopics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>types</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get Published Topics. </p>
+<p >Returns an array of topics. The results are filtered by string prefix and type to only return a subset of all topics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>name required prefix; only topics whose name starts with this string are returned </td></tr>
+    <tr><td class="paramname">types</td><td>bitmask of NT_Type values; 0 is treated specially as a "don't care" </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of topics. </dd></dl>
+
+</div>
+</div>
 <a id="a1dd171401cb72e7e4a5073840584ecb6" name="a1dd171401cb72e7e4a5073840584ecb6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dd171401cb72e7e4a5073840584ecb6">&#9670;&nbsp;</a></span>IsConnected()</h2>
 
@@ -1008,107 +1504,6 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Return whether or not the instance is connected to another node. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if connected. </dd></dl>
-
-</div>
-</div>
-<a id="a2e719996c8a6ebd3793cf6e65dfef372" name="a2e719996c8a6ebd3793cf6e65dfef372"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e719996c8a6ebd3793cf6e65dfef372">&#9670;&nbsp;</a></span>LoadEntries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char * nt::NetworkTableInstance::LoadEntries </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>prefix</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(size_t line, const char *msg)&gt;&#160;</td>
-          <td class="paramname"><em>warn</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Load table values from a file. </p>
-<p >The file format used is identical to that used for SavePersistent / LoadPersistent.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>filename </td></tr>
-    <tr><td class="paramname">prefix</td><td>load only keys starting with this prefix </td></tr>
-    <tr><td class="paramname">warn</td><td>callback function for warnings </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>error string, or nullptr if successful </dd></dl>
-
-</div>
-</div>
-<a id="ad2a2954180fd0f4567a4da0530d12450" name="ad2a2954180fd0f4567a4da0530d12450"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2a2954180fd0f4567a4da0530d12450">&#9670;&nbsp;</a></span>LoadPersistent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char * nt::NetworkTableInstance::LoadPersistent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(size_t line, const char *msg)&gt;&#160;</td>
-          <td class="paramname"><em>warn</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Load persistent values from a file. </p>
-<p >The server automatically does this at startup, but this function provides a way to restore persistent values in the same format from a file at any time on either a client or a server.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>filename </td></tr>
-    <tr><td class="paramname">warn</td><td>callback function for warnings </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>error string, or nullptr if successful </dd></dl>
 
 </div>
 </div>
@@ -1231,40 +1626,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0121516a20718baab79287388bf6c130" name="a0121516a20718baab79287388bf6c130"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0121516a20718baab79287388bf6c130">&#9670;&nbsp;</a></span>RemoveEntryListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::RemoveEntryListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a>&#160;</td>
-          <td class="paramname"><em>entry_listener</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove an entry listener. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry_listener</td><td>Listener handle to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a3e67285e9e103e77c27c4486d4856927" name="a3e67285e9e103e77c27c4486d4856927"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e67285e9e103e77c27c4486d4856927">&#9670;&nbsp;</a></span>RemoveLogger()</h2>
 
@@ -1296,89 +1657,6 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a1bc18bf0256fe266abc3e358be17fc77" name="a1bc18bf0256fe266abc3e358be17fc77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bc18bf0256fe266abc3e358be17fc77">&#9670;&nbsp;</a></span>SaveEntries()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char * nt::NetworkTableInstance::SaveEntries </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>prefix</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Save table values to a file. </p>
-<p >The file format used is identical to that used for SavePersistent.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>filename </td></tr>
-    <tr><td class="paramname">prefix</td><td>save only keys starting with this prefix </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>error string, or nullptr if successful </dd></dl>
-
-</div>
-</div>
-<a id="ad0dd14529a1474df429c5d502ab135b1" name="ad0dd14529a1474df429c5d502ab135b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0dd14529a1474df429c5d502ab135b1">&#9670;&nbsp;</a></span>SavePersistent()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char * nt::NetworkTableInstance::SavePersistent </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Save persistent values to a file. </p>
-<p >The server automatically does this, but this function provides a way to save persistent values in the same format to a file on either a client or a server.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">filename</td><td>filename </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>error string, or nullptr if successful </dd></dl>
 
 </div>
 </div>
@@ -1417,8 +1695,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac2696d5bf7c58db8fe90f310ca7211be" name="ac2696d5bf7c58db8fe90f310ca7211be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2696d5bf7c58db8fe90f310ca7211be">&#9670;&nbsp;</a></span>SetServer() <span class="overload">[1/3]</span></h2>
+<a id="a7f9c402190a71668398fb5db31168c42" name="a7f9c402190a71668398fb5db31168c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9c402190a71668398fb5db31168c42">&#9670;&nbsp;</a></span>SetServer() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1436,7 +1714,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code>&#160;</td>
+          <td class="paramname"><em>port</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1455,15 +1733,15 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">server_name</td><td>server name (UTF-8 string, null terminated) </td></tr>
-    <tr><td class="paramname">port</td><td>port to communicate over </td></tr>
+    <tr><td class="paramname">port</td><td>port to communicate over (0 = default) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a0f10003d42a9e2ba3dfe97bd6a35235b" name="a0f10003d42a9e2ba3dfe97bd6a35235b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f10003d42a9e2ba3dfe97bd6a35235b">&#9670;&nbsp;</a></span>SetServer() <span class="overload">[2/3]</span></h2>
+<a id="adb07f12ba98711379dac93d43993e936" name="adb07f12ba98711379dac93d43993e936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb07f12ba98711379dac93d43993e936">&#9670;&nbsp;</a></span>SetServer() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1474,7 +1752,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void nt::NetworkTableInstance::SetServer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, unsigned int &gt; &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, unsigned int &gt; &gt;&#160;</td>
           <td class="paramname"><em>servers</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1490,15 +1768,15 @@ Static Public Member Functions</h2></td></tr>
 <p >The client will attempt to connect to each server in round robin fashion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">servers</td><td>array of server name and port pairs </td></tr>
+    <tr><td class="paramname">servers</td><td>array of server address and port pairs </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a6aed9131b2f0cca655e72af6f50fdcde" name="a6aed9131b2f0cca655e72af6f50fdcde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6aed9131b2f0cca655e72af6f50fdcde">&#9670;&nbsp;</a></span>SetServer() <span class="overload">[3/3]</span></h2>
+<a id="aedf195a418e222ca90e60759635cb9b2" name="aedf195a418e222ca90e60759635cb9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf195a418e222ca90e60759635cb9b2">&#9670;&nbsp;</a></span>SetServer() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1506,14 +1784,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void nt::NetworkTableInstance::SetServer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
           <td class="paramname"><em>servers</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code>&#160;</td>
+          <td class="paramname"><em>port</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1528,15 +1806,15 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">servers</td><td>array of server names </td></tr>
-    <tr><td class="paramname">port</td><td>port to communicate over </td></tr>
+    <tr><td class="paramname">port</td><td>port to communicate over (0 = default) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a9dee18833d1d25de28773507a13b6f63" name="a9dee18833d1d25de28773507a13b6f63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dee18833d1d25de28773507a13b6f63">&#9670;&nbsp;</a></span>SetServerTeam()</h2>
+<a id="a8038f6912d2acea5572610a20fa88a68" name="a8038f6912d2acea5572610a20fa88a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8038f6912d2acea5572610a20fa88a68">&#9670;&nbsp;</a></span>SetServerTeam()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1554,7 +1832,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code>&#160;</td>
+          <td class="paramname"><em>port</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1574,15 +1852,15 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">team</td><td>team number </td></tr>
-    <tr><td class="paramname">port</td><td>port to communicate over </td></tr>
+    <tr><td class="paramname">port</td><td>port to communicate over (0 = default) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a8962efa788ed290e65665d3a6f627ea8" name="a8962efa788ed290e65665d3a6f627ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8962efa788ed290e65665d3a6f627ea8">&#9670;&nbsp;</a></span>SetUpdateRate()</h2>
+<a id="a3141a775a9aa20e7347831627adc51a6" name="a3141a775a9aa20e7347831627adc51a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3141a775a9aa20e7347831627adc51a6">&#9670;&nbsp;</a></span>StartClient3()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1591,42 +1869,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void nt::NetworkTableInstance::SetUpdateRate </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>interval</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set the periodic update rate. </p>
-<p >Sets how frequently updates are sent to other nodes over the network.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interval</td><td>update interval in seconds (range 0.01 to 1.0) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a854f73644e3cba3b67d8a07ce71657cd" name="a854f73644e3cba3b67d8a07ce71657cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a854f73644e3cba3b67d8a07ce71657cd">&#9670;&nbsp;</a></span>StartClient() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::StartClient </td>
+          <td class="memname">void nt::NetworkTableInstance::StartClient3 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1639,13 +1882,13 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Starts a client. </p>
-<p >Use SetServer to set the server name and port. </p>
+<p>Starts a NT3 client. </p>
+<p >Use SetServer or SetServerTeam to set the server name and port. </p>
 
 </div>
 </div>
-<a id="ad7fff110cc9faab6ffb2917a305030fd" name="ad7fff110cc9faab6ffb2917a305030fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7fff110cc9faab6ffb2917a305030fd">&#9670;&nbsp;</a></span>StartClient() <span class="overload">[2/4]</span></h2>
+<a id="a3da760f8091954d15d7c6ae640f069b7" name="a3da760f8091954d15d7c6ae640f069b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3da760f8091954d15d7c6ae640f069b7">&#9670;&nbsp;</a></span>StartClient4()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1654,55 +1897,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void nt::NetworkTableInstance::StartClient </td>
+          <td class="memname">void nt::NetworkTableInstance::StartClient4 </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>server_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Starts a client using the specified server and port. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">server_name</td><td>server name (UTF-8 string, null terminated) </td></tr>
-    <tr><td class="paramname">port</td><td>port to communicate over </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="adbabd597270de728466600289af0fed3" name="adbabd597270de728466600289af0fed3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbabd597270de728466600289af0fed3">&#9670;&nbsp;</a></span>StartClient() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::StartClient </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, unsigned int &gt; &gt;&#160;</td>
-          <td class="paramname"><em>servers</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1713,97 +1910,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Starts a client using the specified (server, port) combinations. </p>
-<p >The client will attempt to connect to each server in round robin fashion.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">servers</td><td>array of server name and port pairs </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae1a560d462af9b6a7c92ea77e45c65f6" name="ae1a560d462af9b6a7c92ea77e45c65f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1a560d462af9b6a7c92ea77e45c65f6">&#9670;&nbsp;</a></span>StartClient() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::StartClient </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
-          <td class="paramname"><em>servers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Starts a client using the specified servers and port. </p>
-<p >The client will attempt to connect to each server in round robin fashion.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">servers</td><td>array of server names </td></tr>
-    <tr><td class="paramname">port</td><td>port to communicate over </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a262186f1bb98cdec1087f524493f6764" name="a262186f1bb98cdec1087f524493f6764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a262186f1bb98cdec1087f524493f6764">&#9670;&nbsp;</a></span>StartClientTeam()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::StartClientTeam </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>team</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Starts a client using commonly known robot addresses for the specified team. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">team</td><td>team number </td></tr>
-    <tr><td class="paramname">port</td><td>port to communicate over </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Starts a NT4 client. </p>
+<p >Use SetServer or SetServerTeam to set the server name and port. </p>
 
 </div>
 </div>
@@ -1853,8 +1961,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1cdbcfc6aa5e893afdbbeb437a56bdee" name="a1cdbcfc6aa5e893afdbbeb437a56bdee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cdbcfc6aa5e893afdbbeb437a56bdee">&#9670;&nbsp;</a></span>StartDSClient()</h2>
+<a id="a37795ff73a9cf7dd04ac9907a0f6251c" name="a37795ff73a9cf7dd04ac9907a0f6251c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37795ff73a9cf7dd04ac9907a0f6251c">&#9670;&nbsp;</a></span>StartDSClient()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1866,7 +1974,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void nt::NetworkTableInstance::StartDSClient </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code></td><td>)</td>
+          <td class="paramname"><em>port</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1881,7 +1989,7 @@ Static Public Member Functions</h2></td></tr>
 <p >This connects to the Driver Station running on localhost to obtain the server IP address.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>server port to use in combination with IP from DS </td></tr>
+    <tr><td class="paramname">port</td><td>server port to use in combination with IP from DS (0 = default) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1969,8 +2077,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae330e471356df0b0e21c9e0fe1e91eaf" name="ae330e471356df0b0e21c9e0fe1e91eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae330e471356df0b0e21c9e0fe1e91eaf">&#9670;&nbsp;</a></span>StartServer()</h2>
+<a id="ab4db5040aa3ce92464129dba81d142a3" name="ab4db5040aa3ce92464129dba81d142a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4db5040aa3ce92464129dba81d142a3">&#9670;&nbsp;</a></span>StartServer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1982,7 +2090,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void nt::NetworkTableInstance::StartServer </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
-          <td class="paramname"><em>persist_filename</em> = <code>&quot;networktables.ini&quot;</code>, </td>
+          <td class="paramname"><em>persist_filename</em> = <code>&quot;networktables.json&quot;</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1994,7 +2102,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>port</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#ae2b4a01f476be412a5ea13dda407c4afa56a06549716972d3b062cb7cccaed979">kDefaultPort</a></code>&#160;</td>
+          <td class="paramname"><em>port3</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#a78639af206cc7a2dc74b6edfa98001b6">kDefaultPort3</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>port4</em> = <code><a class="el" href="classnt_1_1_network_table_instance.html#a5902db4f35b6fbf1859cf65c02c99a85">kDefaultPort4</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2014,7 +2128,8 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">persist_filename</td><td>the name of the persist file to use (UTF-8 string, null terminated) </td></tr>
     <tr><td class="paramname">listen_address</td><td>the address to listen on, or null to listen on any address (UTF-8 string, null terminated) </td></tr>
-    <tr><td class="paramname">port</td><td>port to communicate over </td></tr>
+    <tr><td class="paramname">port3</td><td>port to communicate over (NT3) </td></tr>
+    <tr><td class="paramname">port4</td><td>port to communicate over (NT4) </td></tr>
   </table>
   </dd>
 </dl>
@@ -2198,8 +2313,9 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a999bd24ac6f1255f0aa687558b832585" name="a999bd24ac6f1255f0aa687558b832585"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a999bd24ac6f1255f0aa687558b832585">&#9670;&nbsp;</a></span>WaitForConnectionListenerQueue()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a78639af206cc7a2dc74b6edfa98001b6" name="a78639af206cc7a2dc74b6edfa98001b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78639af206cc7a2dc74b6edfa98001b6">&#9670;&nbsp;</a></span>kDefaultPort3</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2208,34 +2324,22 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool nt::NetworkTableInstance::WaitForConnectionListenerQueue </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
+          <td class="memname">constexpr unsigned int nt::NetworkTableInstance::kDefaultPort3 = <a class="el" href="group__ntcore__c__api.html#ga512aa52e8250b15e017b7148d818d654">NT_DEFAULT_PORT3</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Wait for the connection listener queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the connection listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
+<p>The default port that network tables operates on for NT3. </p>
 
 </div>
 </div>
-<a id="ae29ca5f81b3af114465c1c23d420f57a" name="ae29ca5f81b3af114465c1c23d420f57a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae29ca5f81b3af114465c1c23d420f57a">&#9670;&nbsp;</a></span>WaitForEntryListenerQueue()</h2>
+<a id="a5902db4f35b6fbf1859cf65c02c99a85" name="a5902db4f35b6fbf1859cf65c02c99a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5902db4f35b6fbf1859cf65c02c99a85">&#9670;&nbsp;</a></span>kDefaultPort4</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2244,101 +2348,17 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool nt::NetworkTableInstance::WaitForEntryListenerQueue </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
+          <td class="memname">constexpr unsigned int nt::NetworkTableInstance::kDefaultPort4 = <a class="el" href="group__ntcore__c__api.html#gad5b861965b5c62a13a13768f97f8ebf8">NT_DEFAULT_PORT4</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Wait for the entry listener queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the entry listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
-
-</div>
-</div>
-<a id="a7289d0e9b5d0ff28b7b33bc257670880" name="a7289d0e9b5d0ff28b7b33bc257670880"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7289d0e9b5d0ff28b7b33bc257670880">&#9670;&nbsp;</a></span>WaitForLoggerQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool nt::NetworkTableInstance::WaitForLoggerQueue </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wait for the incoming log event queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the log event queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
-
-</div>
-</div>
-<a id="a03a487ed431a8f56acd11f94ece82bed" name="a03a487ed431a8f56acd11f94ece82bed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03a487ed431a8f56acd11f94ece82bed">&#9670;&nbsp;</a></span>WaitForRpcCallQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool nt::NetworkTableInstance::WaitForRpcCallQueue </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wait for the incoming RPC call queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the RPC call queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
+<p>The default port that network tables operates on for NT4. </p>
 
 </div>
 </div>
@@ -2352,7 +2372,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:23:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

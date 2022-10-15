@@ -1,5 +1,6 @@
 var structhal_1_1_d_i_o_set_proxy =
 [
+    [ "DIOSetProxy", "structhal_1_1_d_i_o_set_proxy.html#a3433e455edd7dd7d2723d84273e625ea", null ],
     [ "DIOSetProxy", "structhal_1_1_d_i_o_set_proxy.html#ae75f1cc8f9136f5ccd62ee976235493c", null ],
     [ "DIOSetProxy", "structhal_1_1_d_i_o_set_proxy.html#a02f1e61d6d9426b60543504689ec1698", null ],
     [ "operator=", "structhal_1_1_d_i_o_set_proxy.html#a4298ae04cee5ce30e54622992e16b931", null ],

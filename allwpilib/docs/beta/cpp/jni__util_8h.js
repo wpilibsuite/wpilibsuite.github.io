@@ -20,14 +20,14 @@ var jni__util_8h =
     [ "WPI_JNI_MAKEJARRAY", "jni__util_8h.html#aafc303a924487df6025254f3fe0b6a4e", null ],
     [ "GetJavaStackTrace", "jni__util_8h.html#a4f1058b45861b4abda3c9a43fa80e0fc", null ],
     [ "GetJavaStackTrace", "jni__util_8h.html#a6cbe25ac3d8be6df498bc791b999f143", null ],
-    [ "MakeJBooleanArray", "jni__util_8h.html#a97f8291d4b825a3aa8b9cce0cb73289f", null ],
-    [ "MakeJBooleanArray", "jni__util_8h.html#adcf8f55412f9e2f279bbeda3abb9c41b", null ],
-    [ "MakeJByteArray", "jni__util_8h.html#ad2e97ec4fd711ec001dba396aad9b3c6", null ],
+    [ "MakeJBooleanArray", "jni__util_8h.html#a212545464c44663bc98b95bb87f3fe70", null ],
+    [ "MakeJBooleanArray", "jni__util_8h.html#a720acf766b00bce1f7012b3299933275", null ],
+    [ "MakeJByteArray", "jni__util_8h.html#abdcb0538cf846c18f8aa4a7047026953", null ],
     [ "MakeJIntArray", "jni__util_8h.html#a5f408e0ceb0dd41758e6b43649847bfc", null ],
     [ "MakeJIntArray", "jni__util_8h.html#afd8252e0c11698f82fa6a139a9b69268", null ],
-    [ "MakeJIntArray", "jni__util_8h.html#aaf77f2f93ed39e36454dc10072314efc", null ],
+    [ "MakeJIntArray", "jni__util_8h.html#a03a06f6094e907d556a23b5ef46cc884", null ],
     [ "MakeJLongArray", "jni__util_8h.html#a0e34bf5a3185a9a9d3da0fe7a0d545bc", null ],
     [ "MakeJString", "jni__util_8h.html#a03d617c196aeee2778c8b22699dd4acb", null ],
-    [ "MakeJStringArray", "jni__util_8h.html#a70b85e53225cfdd4f6e038b20f922737", null ],
-    [ "MakeJStringArray", "jni__util_8h.html#add6978ead113293b425c42ceb63698d7", null ]
+    [ "MakeJStringArray", "jni__util_8h.html#a8846c46b513850d8a01f4e2af95f2351", null ],
+    [ "MakeJStringArray", "jni__util_8h.html#aa913bf3a5748c8325758e66bb3ed6cd0", null ]
 ];

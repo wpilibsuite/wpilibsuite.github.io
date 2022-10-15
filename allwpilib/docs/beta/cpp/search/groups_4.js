@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['file_20save_2fload_20functions_0',['File Save/Load Functions',['../group__ntcore__file__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__file__func.html',1,'(Global Namespace)']]],
-  ['flags_1',['Flags',['../group__flags.html',1,'']]]
+  ['eigenvalues_20module_0',['Eigenvalues module',['../group___eigenvalues___module.html',1,'']]],
+  ['encoder_20functions_1',['Encoder Functions',['../group__hal__encoder.html',1,'']]],
+  ['enumerations_2',['Enumerations',['../group__enums.html',1,'']]],
+  ['error_20defines_3',['Error Defines',['../group__hal__errors.html',1,'']]],
+  ['expect_20api_4',['Expect API',['../group__expect.html',1,'']]],
+  ['explicit_20conversion_5',['Explicit Conversion',['../group___conversion.html',1,'']]]
 ];

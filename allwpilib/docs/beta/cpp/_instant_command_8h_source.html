@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
    </div>
   </td>
  </tr>
@@ -102,72 +102,69 @@ $(document).ready(function(){initNavTree('_instant_command_8h_source.html',''); 
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="span_8h.html">wpi/span.h</a>&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_command_helper_8h.html">frc2/command/CommandHelper.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_functional_command_8h.html">frc2/command/FunctionalCommand.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc2.html">frc2</a> {<span class="comment"></span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * A Command that runs instantly; it will initialize, execute once, and end on</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * the same iteration of the scheduler.  Users can either pass in a Runnable and</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * a set of requirements, or else subclass this command if desired.</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * This class is provided by the NewCommands VendorDep</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc2_1_1_instant_command.html">InstantCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="classfrc2_1_1_command_helper.html">CommandHelper</a>&lt;FunctionalCommand, InstantCommand&gt; {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * Creates a new InstantCommand that runs the given Runnable with the given</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   * requirements.</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * @param toRun        the Runnable to run</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a0527c93fc6d34adb5d57ce424a8fb1c4">   32</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a0527c93fc6d34adb5d57ce424a8fb1c4">InstantCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                 std::initializer_list&lt;Subsystem*&gt; requirements);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * Creates a new InstantCommand that runs the given Runnable with the given</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * requirements.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * @param toRun        the Runnable to run</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a14aa3c33fad6aa59a43b7871d9e32787">   42</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a14aa3c33fad6aa59a43b7871d9e32787">InstantCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                          <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a17123c5203555f618da13b584cbd3580">   45</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a17123c5203555f618da13b584cbd3580">InstantCommand</a>(<a class="code hl_class" href="classfrc2_1_1_instant_command.html">InstantCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a41a5f060a61c55f4b6293eb44320d63f">   47</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a41a5f060a61c55f4b6293eb44320d63f">InstantCommand</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_instant_command.html">InstantCommand</a>&amp; other) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * Creates a new InstantCommand with a Runnable that does nothing.  Useful</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * only as a no-arg constructor to call implicitly from subclass constructors.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">   53</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">InstantCommand</a>();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;span&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_command_helper_8h.html">frc2/command/CommandHelper.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_functional_command_8h.html">frc2/command/FunctionalCommand.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc2.html">frc2</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * A Command that runs instantly; it will initialize, execute once, and end on</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * the same iteration of the scheduler.  Users can either pass in a Runnable and</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * a set of requirements, or else subclass this command if desired.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * This class is provided by the NewCommands VendorDep</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc2_1_1_instant_command.html">InstantCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="classfrc2_1_1_command_helper.html">CommandHelper</a>&lt;FunctionalCommand, InstantCommand&gt; {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">   * Creates a new InstantCommand that runs the given Runnable with the given</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * requirements.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   * @param toRun        the Runnable to run</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a0527c93fc6d34adb5d57ce424a8fb1c4">   31</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a0527c93fc6d34adb5d57ce424a8fb1c4">InstantCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                 std::initializer_list&lt;Subsystem*&gt; requirements);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"></span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * Creates a new InstantCommand that runs the given Runnable with the given</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * requirements.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * @param toRun        the Runnable to run</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * @param requirements the subsystems required by this command</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a2ea3d8850f20d0602aeb87a56f2898a8">   41</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a2ea3d8850f20d0602aeb87a56f2898a8">InstantCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                          std::span&lt;Subsystem* const&gt; requirements = {});</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a17123c5203555f618da13b584cbd3580">   44</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a17123c5203555f618da13b584cbd3580">InstantCommand</a>(<a class="code hl_class" href="classfrc2_1_1_instant_command.html">InstantCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a41a5f060a61c55f4b6293eb44320d63f">   46</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a41a5f060a61c55f4b6293eb44320d63f">InstantCommand</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_instant_command.html">InstantCommand</a>&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * Creates a new InstantCommand with a Runnable that does nothing.  Useful</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * only as a no-arg constructor to call implicitly from subclass constructors.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classfrc2_1_1_instant_command.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">   52</a></span>  <a class="code hl_function" href="classfrc2_1_1_instant_command.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">InstantCommand</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_command_helper_8h_html"><div class="ttname"><a href="_command_helper_8h.html">CommandHelper.h</a></div></div>
 <div class="ttc" id="a_functional_command_8h_html"><div class="ttname"><a href="_functional_command_8h.html">FunctionalCommand.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_helper_html"><div class="ttname"><a href="classfrc2_1_1_command_helper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:26</div></div>
-<div class="ttc" id="aclassfrc2_1_1_instant_command_html"><div class="ttname"><a href="classfrc2_1_1_instant_command.html">frc2::InstantCommand</a></div><div class="ttdoc">A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...</div><div class="ttdef"><b>Definition:</b> InstantCommand.h:23</div></div>
+<div class="ttc" id="aclassfrc2_1_1_instant_command_html"><div class="ttname"><a href="classfrc2_1_1_instant_command.html">frc2::InstantCommand</a></div><div class="ttdoc">A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...</div><div class="ttdef"><b>Definition:</b> InstantCommand.h:22</div></div>
 <div class="ttc" id="aclassfrc2_1_1_instant_command_html_a0527c93fc6d34adb5d57ce424a8fb1c4"><div class="ttname"><a href="classfrc2_1_1_instant_command.html#a0527c93fc6d34adb5d57ce424a8fb1c4">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(std::function&lt; void()&gt; toRun, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Creates a new InstantCommand that runs the given Runnable with the given requirements.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_instant_command_html_a14aa3c33fad6aa59a43b7871d9e32787"><div class="ttname"><a href="classfrc2_1_1_instant_command.html#a14aa3c33fad6aa59a43b7871d9e32787">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new InstantCommand that runs the given Runnable with the given requirements.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_instant_command_html_a17123c5203555f618da13b584cbd3580"><div class="ttname"><a href="classfrc2_1_1_instant_command.html#a17123c5203555f618da13b584cbd3580">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(InstantCommand &amp;&amp;other)=default</div></div>
 <div class="ttc" id="aclassfrc2_1_1_instant_command_html_a1f2fd0bb6fa03676cc9ceed0fd49f86a"><div class="ttname"><a href="classfrc2_1_1_instant_command.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand()</div><div class="ttdoc">Creates a new InstantCommand with a Runnable that does nothing.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_instant_command_html_a2ea3d8850f20d0602aeb87a56f2898a8"><div class="ttname"><a href="classfrc2_1_1_instant_command.html#a2ea3d8850f20d0602aeb87a56f2898a8">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(std::function&lt; void()&gt; toRun, std::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new InstantCommand that runs the given Runnable with the given requirements.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_instant_command_html_a41a5f060a61c55f4b6293eb44320d63f"><div class="ttname"><a href="classfrc2_1_1_instant_command.html#a41a5f060a61c55f4b6293eb44320d63f">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(const InstantCommand &amp;other)=default</div></div>
-<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
-<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_instant_command_8h.html">InstantCommand.h</a></li>
-    <li class="footer">Generated on Sat Oct 8 2022 17:22:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:46:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
