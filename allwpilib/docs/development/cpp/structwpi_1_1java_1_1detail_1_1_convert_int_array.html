@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -105,16 +105,16 @@ $(document).ready(function(){initNavTree('structwpi_1_1java_1_1detail_1_1_conver
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a64208aff99fde1d2db9afb6774cc1977"><td class="memItemLeft" align="right" valign="top">static jintArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1java_1_1detail_1_1_convert_int_array.html#a64208aff99fde1d2db9afb6774cc1977">ToJava</a> (JNIEnv *env, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const T &gt; arr)</td></tr>
-<tr class="separator:a64208aff99fde1d2db9afb6774cc1977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371033b6095496955b31a4abffd31d0a"><td class="memItemLeft" align="right" valign="top">static jintArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1java_1_1detail_1_1_convert_int_array.html#a371033b6095496955b31a4abffd31d0a">ToJava</a> (JNIEnv *env, std::span&lt; const T &gt; arr)</td></tr>
+<tr class="separator:a371033b6095496955b31a4abffd31d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, bool = (std::is_integral&lt;T&gt;::value &amp;&amp; sizeof(jint) == sizeof(T))&gt;<br />
 struct wpi::java::detail::ConvertIntArray&lt; T, bool &gt;</div><p >Slow path (get primitive array and set individual elements). </p>
 <p >This is used if the input type is not an integer of the same size (note signed/unsigned is ignored). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a64208aff99fde1d2db9afb6774cc1977" name="a64208aff99fde1d2db9afb6774cc1977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64208aff99fde1d2db9afb6774cc1977">&#9670;&nbsp;</a></span>ToJava()</h2>
+<a id="a371033b6095496955b31a4abffd31d0a" name="a371033b6095496955b31a4abffd31d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a371033b6095496955b31a4abffd31d0a">&#9670;&nbsp;</a></span>ToJava()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +133,7 @@ template&lt;typename T , bool  = (std::is_integral&lt;T&gt;::value &amp;&amp; si
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const T &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const T &gt;&#160;</td>
           <td class="paramname"><em>arr</em>&#160;</td>
         </tr>
         <tr>
@@ -160,7 +160,7 @@ template&lt;typename T , bool  = (std::is_integral&lt;T&gt;::value &amp;&amp; si
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1java.html">java</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1java_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structwpi_1_1java_1_1detail_1_1_convert_int_array.html">ConvertIntArray</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

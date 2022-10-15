@@ -1,7 +1,7 @@
 var classnt_1_1_multi_subscriber =
 [
     [ "MultiSubscriber", "classnt_1_1_multi_subscriber.html#ae79912fc76bccb50c1ac513628c1b14a", null ],
-    [ "MultiSubscriber", "classnt_1_1_multi_subscriber.html#a99ae2f9d91307cb1c707e0885ed0c808", null ],
+    [ "MultiSubscriber", "classnt_1_1_multi_subscriber.html#a70df71eda6006383ba4563469c85b89e", null ],
     [ "MultiSubscriber", "classnt_1_1_multi_subscriber.html#a9c3502e8f592b434cb8e0410e48be34f", null ],
     [ "MultiSubscriber", "classnt_1_1_multi_subscriber.html#a8ba59c374ffdcece54303c2ccad76a17", null ],
     [ "~MultiSubscriber", "classnt_1_1_multi_subscriber.html#a66658f0357e49cf283c480f13e32e168", null ],

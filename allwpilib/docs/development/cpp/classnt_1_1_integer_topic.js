@@ -9,11 +9,11 @@ var classnt_1_1_integer_topic =
     [ "IntegerTopic", "classnt_1_1_integer_topic.html#a7f1d74609b8cd605722ae4a15770b390", null ],
     [ "IntegerTopic", "classnt_1_1_integer_topic.html#a1ac84a700e08c3069c4e63ca85f17089", null ],
     [ "IntegerTopic", "classnt_1_1_integer_topic.html#aaa143baf00220a9e97c6e9a12b4072e0", null ],
-    [ "GetEntry", "classnt_1_1_integer_topic.html#a74c4a015c6aec7063090ad7abd410175", null ],
-    [ "GetEntryEx", "classnt_1_1_integer_topic.html#a7a619a49e63de0cee486bcd63b54134d", null ],
-    [ "Publish", "classnt_1_1_integer_topic.html#a3ff5214bd7702bd6f68e38e7221c6e87", null ],
-    [ "PublishEx", "classnt_1_1_integer_topic.html#ac12e6dad5b826918cf0bf211e9410468", null ],
-    [ "Subscribe", "classnt_1_1_integer_topic.html#afd62b985a642b0e69e5e9ddd3b2145f6", null ],
-    [ "SubscribeEx", "classnt_1_1_integer_topic.html#aa710e35003c9b82812a4023dba8baff1", null ],
+    [ "GetEntry", "classnt_1_1_integer_topic.html#ac2e274155aad06c1a329c2b2594eb8bb", null ],
+    [ "GetEntryEx", "classnt_1_1_integer_topic.html#ab35a5b49f4c7f67a7511807a01e32770", null ],
+    [ "Publish", "classnt_1_1_integer_topic.html#aafb13ee54983767a2e308fae35884b2a", null ],
+    [ "PublishEx", "classnt_1_1_integer_topic.html#a1a9949c2ac2411436ffdc4b0f7df50cf", null ],
+    [ "Subscribe", "classnt_1_1_integer_topic.html#a3ad01be1a67f36259740cc5ee68d09ca", null ],
+    [ "SubscribeEx", "classnt_1_1_integer_topic.html#aea20bf09758f2339c2f0725438df0ad7", null ],
     [ "kTypeString", "classnt_1_1_integer_topic.html#a23b39ec89fd531a20038b0d7f92389c5", null ]
 ];

@@ -13,14 +13,14 @@ var namespacewpi_1_1java =
     [ "JStringRef", "classwpi_1_1java_1_1_j_string_ref.html", "classwpi_1_1java_1_1_j_string_ref" ],
     [ "GetJavaStackTrace", "namespacewpi_1_1java.html#a4f1058b45861b4abda3c9a43fa80e0fc", null ],
     [ "GetJavaStackTrace", "namespacewpi_1_1java.html#a6cbe25ac3d8be6df498bc791b999f143", null ],
-    [ "MakeJBooleanArray", "namespacewpi_1_1java.html#a97f8291d4b825a3aa8b9cce0cb73289f", null ],
-    [ "MakeJBooleanArray", "namespacewpi_1_1java.html#adcf8f55412f9e2f279bbeda3abb9c41b", null ],
-    [ "MakeJByteArray", "namespacewpi_1_1java.html#ad2e97ec4fd711ec001dba396aad9b3c6", null ],
+    [ "MakeJBooleanArray", "namespacewpi_1_1java.html#a212545464c44663bc98b95bb87f3fe70", null ],
+    [ "MakeJBooleanArray", "namespacewpi_1_1java.html#a720acf766b00bce1f7012b3299933275", null ],
+    [ "MakeJByteArray", "namespacewpi_1_1java.html#abdcb0538cf846c18f8aa4a7047026953", null ],
     [ "MakeJIntArray", "namespacewpi_1_1java.html#a5f408e0ceb0dd41758e6b43649847bfc", null ],
     [ "MakeJIntArray", "namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268", null ],
-    [ "MakeJIntArray", "namespacewpi_1_1java.html#aaf77f2f93ed39e36454dc10072314efc", null ],
+    [ "MakeJIntArray", "namespacewpi_1_1java.html#a03a06f6094e907d556a23b5ef46cc884", null ],
     [ "MakeJLongArray", "namespacewpi_1_1java.html#a0e34bf5a3185a9a9d3da0fe7a0d545bc", null ],
     [ "MakeJString", "namespacewpi_1_1java.html#a03d617c196aeee2778c8b22699dd4acb", null ],
-    [ "MakeJStringArray", "namespacewpi_1_1java.html#a70b85e53225cfdd4f6e038b20f922737", null ],
-    [ "MakeJStringArray", "namespacewpi_1_1java.html#add6978ead113293b425c42ceb63698d7", null ]
+    [ "MakeJStringArray", "namespacewpi_1_1java.html#a8846c46b513850d8a01f4e2af95f2351", null ],
+    [ "MakeJStringArray", "namespacewpi_1_1java.html#aa913bf3a5748c8325758e66bb3ed6cd0", null ]
 ];

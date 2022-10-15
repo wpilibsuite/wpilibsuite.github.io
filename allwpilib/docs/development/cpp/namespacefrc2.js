@@ -49,6 +49,6 @@ var namespacefrc2 =
     [ "WrapperCommand", "classfrc2_1_1_wrapper_command.html", "classfrc2_1_1_wrapper_command" ],
     [ "GetTypeName", "namespacefrc2.html#a238ba66ee92553efe2e8f3d5452816bd", null ],
     [ "RequirementsDisjoint", "namespacefrc2.html#a4a39157216e8af34bf8b27df43ae20db", null ],
-    [ "SetInsert", "namespacefrc2.html#a708ef2018d9f0cfa30b7ff3ebfc1f83f", null ],
+    [ "SetInsert", "namespacefrc2.html#ab86144813edd7f4ffc6b2cbde2843952", null ],
     [ "invalid_index", "namespacefrc2.html#aea5b4588c328245930bd43062ff9560f", null ]
 ];

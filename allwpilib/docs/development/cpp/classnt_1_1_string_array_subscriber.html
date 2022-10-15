@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -120,8 +120,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a9a04abf3236ba53d963dbe030915da95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f066b0b1f2687d195c49b014c5167de"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6f066b0b1f2687d195c49b014c5167de">ValueType</a> = std::vector&lt; std::string &gt;</td></tr>
 <tr class="separator:a6f066b0b1f2687d195c49b014c5167de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d28412addff613b3ac86e5a744d5ef4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">ParamType</a> = <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;</td></tr>
-<tr class="separator:a3d28412addff613b3ac86e5a744d5ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcc7b7825387cfa0ba08826f12e2819"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">ParamType</a> = std::span&lt; const std::string &gt;</td></tr>
+<tr class="separator:afbcc7b7825387cfa0ba08826f12e2819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80233adac7280a89ad751ab891005f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#ac80233adac7280a89ad751ab891005f4">TimestampedValueType</a> = <a class="el" href="structnt_1_1_timestamped_string_array.html">TimestampedStringArray</a></td></tr>
 <tr class="separator:ac80233adac7280a89ad751ab891005f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,19 +129,19 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6eabea3d04c715bb1852ada6941afa6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6eabea3d04c715bb1852ada6941afa6c">StringArraySubscriber</a> ()=default</td></tr>
 <tr class="separator:a6eabea3d04c715bb1852ada6941afa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb14044b3fa6fdee518aef0afed223ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#acb14044b3fa6fdee518aef0afed223ea">StringArraySubscriber</a> (<a class="el" href="group__ntcore__c__api.html#ga77957ebd19cd58e3a2df35d9315addff">NT_Subscriber</a> handle, <a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">ParamType</a> defaultValue)</td></tr>
-<tr class="memdesc:acb14044b3fa6fdee518aef0afed223ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_string_array_topic.html#a4e8bc2cd9a61a985d22dd9cc86b9a7a1" title="Create a new subscriber to the topic.">StringArrayTopic::Subscribe()</a> instead.  <a href="classnt_1_1_string_array_subscriber.html#acb14044b3fa6fdee518aef0afed223ea">More...</a><br /></td></tr>
+<tr class="memitem:acb14044b3fa6fdee518aef0afed223ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#acb14044b3fa6fdee518aef0afed223ea">StringArraySubscriber</a> (<a class="el" href="group__ntcore__c__api.html#ga77957ebd19cd58e3a2df35d9315addff">NT_Subscriber</a> handle, <a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">ParamType</a> defaultValue)</td></tr>
+<tr class="memdesc:acb14044b3fa6fdee518aef0afed223ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_string_array_topic.html#a922697471775c3b569a8a7eac663aac7" title="Create a new subscriber to the topic.">StringArrayTopic::Subscribe()</a> instead.  <a href="classnt_1_1_string_array_subscriber.html#acb14044b3fa6fdee518aef0afed223ea">More...</a><br /></td></tr>
 <tr class="separator:acb14044b3fa6fdee518aef0afed223ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac256d01c9ee2d7cc2f815287bd430b39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6f066b0b1f2687d195c49b014c5167de">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#ac256d01c9ee2d7cc2f815287bd430b39">Get</a> () const</td></tr>
 <tr class="memdesc:ac256d01c9ee2d7cc2f815287bd430b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value.  <a href="classnt_1_1_string_array_subscriber.html#ac256d01c9ee2d7cc2f815287bd430b39">More...</a><br /></td></tr>
 <tr class="separator:ac256d01c9ee2d7cc2f815287bd430b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85ae48a36af0f03e376f01218317a007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6f066b0b1f2687d195c49b014c5167de">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a85ae48a36af0f03e376f01218317a007">Get</a> (<a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">ParamType</a> defaultValue) const</td></tr>
+<tr class="memitem:a85ae48a36af0f03e376f01218317a007"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6f066b0b1f2687d195c49b014c5167de">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a85ae48a36af0f03e376f01218317a007">Get</a> (<a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">ParamType</a> defaultValue) const</td></tr>
 <tr class="memdesc:a85ae48a36af0f03e376f01218317a007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value.  <a href="classnt_1_1_string_array_subscriber.html#a85ae48a36af0f03e376f01218317a007">More...</a><br /></td></tr>
 <tr class="separator:a85ae48a36af0f03e376f01218317a007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452cd9db013512195104475f15b0beac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_subscriber.html#ac80233adac7280a89ad751ab891005f4">TimestampedValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a452cd9db013512195104475f15b0beac">GetAtomic</a> () const</td></tr>
 <tr class="memdesc:a452cd9db013512195104475f15b0beac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value along with its timestamp If no value has been published, returns the stored default value and a timestamp of 0.  <a href="classnt_1_1_string_array_subscriber.html#a452cd9db013512195104475f15b0beac">More...</a><br /></td></tr>
 <tr class="separator:a452cd9db013512195104475f15b0beac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a68ddc8fe5974721636fd723d9db1de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_subscriber.html#ac80233adac7280a89ad751ab891005f4">TimestampedValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6a68ddc8fe5974721636fd723d9db1de">GetAtomic</a> (<a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">ParamType</a> defaultValue) const</td></tr>
+<tr class="memitem:a6a68ddc8fe5974721636fd723d9db1de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_subscriber.html#ac80233adac7280a89ad751ab891005f4">TimestampedValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6a68ddc8fe5974721636fd723d9db1de">GetAtomic</a> (<a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">ParamType</a> defaultValue) const</td></tr>
 <tr class="memdesc:a6a68ddc8fe5974721636fd723d9db1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value along with its timestamp.  <a href="classnt_1_1_string_array_subscriber.html#a6a68ddc8fe5974721636fd723d9db1de">More...</a><br /></td></tr>
 <tr class="separator:a6a68ddc8fe5974721636fd723d9db1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21dc103f207fb6eb0920499629cf96d0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_string_array_subscriber.html#ac80233adac7280a89ad751ab891005f4">TimestampedValueType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_subscriber.html#a21dc103f207fb6eb0920499629cf96d0">ReadQueue</a> ()</td></tr>
@@ -191,14 +191,14 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >NetworkTables StringArray subscriber. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3d28412addff613b3ac86e5a744d5ef4" name="a3d28412addff613b3ac86e5a744d5ef4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d28412addff613b3ac86e5a744d5ef4">&#9670;&nbsp;</a></span>ParamType</h2>
+<a id="afbcc7b7825387cfa0ba08826f12e2819" name="afbcc7b7825387cfa0ba08826f12e2819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcc7b7825387cfa0ba08826f12e2819">&#9670;&nbsp;</a></span>ParamType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">nt::StringArraySubscriber::ParamType</a> =  <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt;const std::string&gt;</td>
+          <td class="memname">using <a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">nt::StringArraySubscriber::ParamType</a> =  std::span&lt;const std::string&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -288,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">ParamType</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -299,7 +299,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_string_array_topic.html#a4e8bc2cd9a61a985d22dd9cc86b9a7a1" title="Create a new subscriber to the topic.">StringArrayTopic::Subscribe()</a> instead. </p>
+<p>Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_string_array_topic.html#a922697471775c3b569a8a7eac663aac7" title="Create a new subscriber to the topic.">StringArrayTopic::Subscribe()</a> instead. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>Native handle </td></tr>
@@ -349,7 +349,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classnt_1_1_string_array_subscriber.html#a6f066b0b1f2687d195c49b014c5167de">ValueType</a> nt::StringArraySubscriber::Get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">ParamType</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -405,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classnt_1_1_string_array_subscriber.html#ac80233adac7280a89ad751ab891005f4">TimestampedValueType</a> nt::StringArraySubscriber::GetAtomic </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_subscriber.html#a3d28412addff613b3ac86e5a744d5ef4">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_subscriber.html#afbcc7b7825387cfa0ba08826f12e2819">ParamType</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -492,7 +492,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_string_array_subscriber.html">StringArraySubscriber</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

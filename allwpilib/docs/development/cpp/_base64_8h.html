@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -98,10 +98,10 @@ $(document).ready(function(){initNavTree('_base64_8h.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;span&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;string_view&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="span_8h_source.html">wpi/span.h</a>&quot;</code><br />
 </div>
 <p><a href="_base64_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -121,20 +121,20 @@ Functions</h2></td></tr>
 <tr class="separator:ac503c8c47490fca90512a88b23b65358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46c4d7b36efb76fd101c8cd219c9bdb8"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a46c4d7b36efb76fd101c8cd219c9bdb8">wpi::Base64Decode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> encoded, std::vector&lt; uint8_t &gt; *plain)</td></tr>
 <tr class="separator:a46c4d7b36efb76fd101c8cd219c9bdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a2cf06e04019f9efafca5db093ef85"><td class="memItemLeft" align="right" valign="top">span&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a54a2cf06e04019f9efafca5db093ef85">wpi::Base64Decode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> encoded, size_t *num_read, SmallVectorImpl&lt; uint8_t &gt; &amp;buf)</td></tr>
-<tr class="separator:a54a2cf06e04019f9efafca5db093ef85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa145997bec65a8d0e2b783c384a6e3e4"><td class="memItemLeft" align="right" valign="top">std::span&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa145997bec65a8d0e2b783c384a6e3e4">wpi::Base64Decode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> encoded, size_t *num_read, SmallVectorImpl&lt; uint8_t &gt; &amp;buf)</td></tr>
+<tr class="separator:aa145997bec65a8d0e2b783c384a6e3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f0cca388f8042851ed82359d23c61e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8f0cca388f8042851ed82359d23c61e9">wpi::Base64Encode</a> (raw_ostream &amp;os, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> plain)</td></tr>
 <tr class="separator:a8f0cca388f8042851ed82359d23c61e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4351dc23f99c30ed993190988f3da889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a4351dc23f99c30ed993190988f3da889">wpi::Base64Encode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> plain, std::string *encoded)</td></tr>
 <tr class="separator:a4351dc23f99c30ed993190988f3da889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbfd836e85f4e66313113339d542ae76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#adbfd836e85f4e66313113339d542ae76">wpi::Base64Encode</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> plain, SmallVectorImpl&lt; char &gt; &amp;buf)</td></tr>
 <tr class="separator:adbfd836e85f4e66313113339d542ae76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae97e81fc664dc623ed15f4d6f1bb9255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae97e81fc664dc623ed15f4d6f1bb9255">wpi::Base64Encode</a> (raw_ostream &amp;os, span&lt; const uint8_t &gt; plain)</td></tr>
-<tr class="separator:ae97e81fc664dc623ed15f4d6f1bb9255"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762ff79f9bb32d72681ecbc27f84fea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a762ff79f9bb32d72681ecbc27f84fea6">wpi::Base64Encode</a> (span&lt; const uint8_t &gt; plain, std::string *encoded)</td></tr>
-<tr class="separator:a762ff79f9bb32d72681ecbc27f84fea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b3dba60397b9cada557c0d71c05b62f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a1b3dba60397b9cada557c0d71c05b62f">wpi::Base64Encode</a> (span&lt; const uint8_t &gt; plain, SmallVectorImpl&lt; char &gt; &amp;buf)</td></tr>
-<tr class="separator:a1b3dba60397b9cada557c0d71c05b62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d319e2a72f572e4fbdbb2017fd203e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad2d319e2a72f572e4fbdbb2017fd203e">wpi::Base64Encode</a> (raw_ostream &amp;os, std::span&lt; const uint8_t &gt; plain)</td></tr>
+<tr class="separator:ad2d319e2a72f572e4fbdbb2017fd203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f1eed3c192da2db90b3d0ab15d24c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a94f1eed3c192da2db90b3d0ab15d24c8">wpi::Base64Encode</a> (std::span&lt; const uint8_t &gt; plain, std::string *encoded)</td></tr>
+<tr class="separator:a94f1eed3c192da2db90b3d0ab15d24c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c10d4e853c1b2027f22c23c46106f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3c10d4e853c1b2027f22c23c46106f15">wpi::Base64Encode</a> (std::span&lt; const uint8_t &gt; plain, SmallVectorImpl&lt; char &gt; &amp;buf)</td></tr>
+<tr class="separator:a3c10d4e853c1b2027f22c23c46106f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -142,7 +142,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_base64_8h.html">Base64.h</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

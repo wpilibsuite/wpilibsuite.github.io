@@ -1,11 +1,11 @@
 var group__ntcore___integer_array__func =
 [
-    [ "nt::GetAtomicIntegerArray", "group__ntcore___integer_array__func.html#gafaf0c5ea02e83aaf24fa9c4406496b51", null ],
-    [ "nt::GetAtomicIntegerArray", "group__ntcore___integer_array__func.html#gae549c62f99cdc45ed3991f4cc2d58f40", null ],
-    [ "nt::GetIntegerArray", "group__ntcore___integer_array__func.html#ga4cbffeae7ac0bdcb0a0dc0c834eb96f9", null ],
-    [ "nt::GetIntegerArray", "group__ntcore___integer_array__func.html#gaa996648778698d7078748e5da50f347d", null ],
+    [ "nt::GetAtomicIntegerArray", "group__ntcore___integer_array__func.html#gad398b469a5f806f895b1630bdd56c82b", null ],
+    [ "nt::GetAtomicIntegerArray", "group__ntcore___integer_array__func.html#ga7602b642d3baa14a2f64649453d711e9", null ],
+    [ "nt::GetIntegerArray", "group__ntcore___integer_array__func.html#ga236e00d5f4d8f12c6db587cd8df1ddd5", null ],
+    [ "nt::GetIntegerArray", "group__ntcore___integer_array__func.html#ga03c5c25f3882b130776103b6e23fde88", null ],
     [ "nt::ReadQueueIntegerArray", "group__ntcore___integer_array__func.html#ga335af2e2be0bee24940b815d924f994d", null ],
     [ "nt::ReadQueueValuesIntegerArray", "group__ntcore___integer_array__func.html#ga9f2ca59599254c4af4e24b5f0799ddee", null ],
-    [ "nt::SetDefaultIntegerArray", "group__ntcore___integer_array__func.html#ga19e037ca3a311696f4fff8f6947bb64e", null ],
-    [ "nt::SetIntegerArray", "group__ntcore___integer_array__func.html#ga98b68d1ca1cdfde85d0ca03d43223ddf", null ]
+    [ "nt::SetDefaultIntegerArray", "group__ntcore___integer_array__func.html#ga58d2a3bdd190d469d991782e5bf850b1", null ],
+    [ "nt::SetIntegerArray", "group__ntcore___integer_array__func.html#ga2160ce4368a040f4f1465204ea300e7f", null ]
 ];

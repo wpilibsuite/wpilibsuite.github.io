@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad4243fe3acacdda1ca417e9f6c03c55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#aad4243fe3acacdda1ca417e9f6c03c55">GenericSubscriber</a> ()=default</td></tr>
 <tr class="separator:aad4243fe3acacdda1ca417e9f6c03c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac15b95787c80c691d470dee8f3396bbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#ac15b95787c80c691d470dee8f3396bbf">GenericSubscriber</a> (<a class="el" href="group__ntcore__c__api.html#ga77957ebd19cd58e3a2df35d9315addff">NT_Subscriber</a> handle)</td></tr>
-<tr class="memdesc:ac15b95787c80c691d470dee8f3396bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_topic.html#ab1ab86e959b602a3f541d63492c0d1f6" title="Create a new subscriber to the topic.">Topic::GenericSubscribe()</a> instead.  <a href="classnt_1_1_generic_subscriber.html#ac15b95787c80c691d470dee8f3396bbf">More...</a><br /></td></tr>
+<tr class="memdesc:ac15b95787c80c691d470dee8f3396bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_topic.html#a48d7644d8ffbe7cc62d1e0a7707a770a" title="Create a new subscriber to the topic.">Topic::GenericSubscribe()</a> instead.  <a href="classnt_1_1_generic_subscriber.html#ac15b95787c80c691d470dee8f3396bbf">More...</a><br /></td></tr>
 <tr class="separator:ac15b95787c80c691d470dee8f3396bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e15abd4f64b10739a0c1e273f7bd8da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_subscriber.html#af5155a1e88683296b2d808c2cda8ffad">ValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#a9e15abd4f64b10739a0c1e273f7bd8da">Get</a> () const</td></tr>
 <tr class="memdesc:a9e15abd4f64b10739a0c1e273f7bd8da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value.  <a href="classnt_1_1_generic_subscriber.html#a9e15abd4f64b10739a0c1e273f7bd8da">More...</a><br /></td></tr>
@@ -150,24 +150,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1dffb9695932c2d7abaae138c95ae35"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#ab1dffb9695932c2d7abaae138c95ae35">GetString</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue) const</td></tr>
 <tr class="memdesc:ab1dffb9695932c2d7abaae138c95ae35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a string.  <a href="classnt_1_1_generic_subscriber.html#ab1dffb9695932c2d7abaae138c95ae35">More...</a><br /></td></tr>
 <tr class="separator:ab1dffb9695932c2d7abaae138c95ae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b2c38fd55aaf184b3b9087dbd111db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#ae6b2c38fd55aaf184b3b9087dbd111db">GetRaw</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt; defaultValue) const</td></tr>
-<tr class="memdesc:ae6b2c38fd55aaf184b3b9087dbd111db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a raw.  <a href="classnt_1_1_generic_subscriber.html#ae6b2c38fd55aaf184b3b9087dbd111db">More...</a><br /></td></tr>
-<tr class="separator:ae6b2c38fd55aaf184b3b9087dbd111db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6850411ec77d350f9d51c6453e5945a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#ae6850411ec77d350f9d51c6453e5945a">GetBooleanArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; defaultValue) const</td></tr>
-<tr class="memdesc:ae6850411ec77d350f9d51c6453e5945a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a boolean array.  <a href="classnt_1_1_generic_subscriber.html#ae6850411ec77d350f9d51c6453e5945a">More...</a><br /></td></tr>
-<tr class="separator:ae6850411ec77d350f9d51c6453e5945a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911f913e357ba8f4f18613f40b3676c4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#a911f913e357ba8f4f18613f40b3676c4">GetIntegerArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt; defaultValue) const</td></tr>
-<tr class="memdesc:a911f913e357ba8f4f18613f40b3676c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a integer array.  <a href="classnt_1_1_generic_subscriber.html#a911f913e357ba8f4f18613f40b3676c4">More...</a><br /></td></tr>
-<tr class="separator:a911f913e357ba8f4f18613f40b3676c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f5fc002485147df064f5dfe4f049fb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#a03f5fc002485147df064f5dfe4f049fb">GetFloatArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; defaultValue) const</td></tr>
-<tr class="memdesc:a03f5fc002485147df064f5dfe4f049fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a float array.  <a href="classnt_1_1_generic_subscriber.html#a03f5fc002485147df064f5dfe4f049fb">More...</a><br /></td></tr>
-<tr class="separator:a03f5fc002485147df064f5dfe4f049fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90748b44857f7644e9510f3b2a06ddc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#ae90748b44857f7644e9510f3b2a06ddc">GetDoubleArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; defaultValue) const</td></tr>
-<tr class="memdesc:ae90748b44857f7644e9510f3b2a06ddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a double array.  <a href="classnt_1_1_generic_subscriber.html#ae90748b44857f7644e9510f3b2a06ddc">More...</a><br /></td></tr>
-<tr class="separator:ae90748b44857f7644e9510f3b2a06ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ed10710f42f46417fb899a3d858c010"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#a9ed10710f42f46417fb899a3d858c010">GetStringArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; defaultValue) const</td></tr>
-<tr class="memdesc:a9ed10710f42f46417fb899a3d858c010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a string array.  <a href="classnt_1_1_generic_subscriber.html#a9ed10710f42f46417fb899a3d858c010">More...</a><br /></td></tr>
-<tr class="separator:a9ed10710f42f46417fb899a3d858c010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d38ec4c4b013dacc4d36b0f333c9d4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#aa8d38ec4c4b013dacc4d36b0f333c9d4">GetRaw</a> (std::span&lt; const uint8_t &gt; defaultValue) const</td></tr>
+<tr class="memdesc:aa8d38ec4c4b013dacc4d36b0f333c9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a raw.  <a href="classnt_1_1_generic_subscriber.html#aa8d38ec4c4b013dacc4d36b0f333c9d4">More...</a><br /></td></tr>
+<tr class="separator:aa8d38ec4c4b013dacc4d36b0f333c9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff08c8cf4aa04af8b42e4590703e2e7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#a4ff08c8cf4aa04af8b42e4590703e2e7">GetBooleanArray</a> (std::span&lt; const int &gt; defaultValue) const</td></tr>
+<tr class="memdesc:a4ff08c8cf4aa04af8b42e4590703e2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a boolean array.  <a href="classnt_1_1_generic_subscriber.html#a4ff08c8cf4aa04af8b42e4590703e2e7">More...</a><br /></td></tr>
+<tr class="separator:a4ff08c8cf4aa04af8b42e4590703e2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdcf81c3d3c058d5742e6c3240d3d7b7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#acdcf81c3d3c058d5742e6c3240d3d7b7">GetIntegerArray</a> (std::span&lt; const int64_t &gt; defaultValue) const</td></tr>
+<tr class="memdesc:acdcf81c3d3c058d5742e6c3240d3d7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a integer array.  <a href="classnt_1_1_generic_subscriber.html#acdcf81c3d3c058d5742e6c3240d3d7b7">More...</a><br /></td></tr>
+<tr class="separator:acdcf81c3d3c058d5742e6c3240d3d7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a889eca3730a03ef3548349522aebca46"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#a889eca3730a03ef3548349522aebca46">GetFloatArray</a> (std::span&lt; const float &gt; defaultValue) const</td></tr>
+<tr class="memdesc:a889eca3730a03ef3548349522aebca46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a float array.  <a href="classnt_1_1_generic_subscriber.html#a889eca3730a03ef3548349522aebca46">More...</a><br /></td></tr>
+<tr class="separator:a889eca3730a03ef3548349522aebca46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a4dcd32c2b645f1d804c6a89c48d4d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#ab1a4dcd32c2b645f1d804c6a89c48d4d">GetDoubleArray</a> (std::span&lt; const double &gt; defaultValue) const</td></tr>
+<tr class="memdesc:ab1a4dcd32c2b645f1d804c6a89c48d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a double array.  <a href="classnt_1_1_generic_subscriber.html#ab1a4dcd32c2b645f1d804c6a89c48d4d">More...</a><br /></td></tr>
+<tr class="separator:ab1a4dcd32c2b645f1d804c6a89c48d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac91cf0d215c1a300fd05d8b2d5f99b9c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#ac91cf0d215c1a300fd05d8b2d5f99b9c">GetStringArray</a> (std::span&lt; const std::string &gt; defaultValue) const</td></tr>
+<tr class="memdesc:ac91cf0d215c1a300fd05d8b2d5f99b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the entry's value as a string array.  <a href="classnt_1_1_generic_subscriber.html#ac91cf0d215c1a300fd05d8b2d5f99b9c">More...</a><br /></td></tr>
+<tr class="separator:ac91cf0d215c1a300fd05d8b2d5f99b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ef4cc1d3b69b7d6e8c331e023839e43"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_generic_subscriber.html#add870499b4ebf30041a1408e2555fc51">TimestampedValueType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_subscriber.html#a0ef4cc1d3b69b7d6e8c331e023839e43">ReadQueue</a> ()</td></tr>
 <tr class="memdesc:a0ef4cc1d3b69b7d6e8c331e023839e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an array of all value changes since the last call to ReadQueue.  <a href="classnt_1_1_generic_subscriber.html#a0ef4cc1d3b69b7d6e8c331e023839e43">More...</a><br /></td></tr>
 <tr class="separator:a0ef4cc1d3b69b7d6e8c331e023839e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,7 +321,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_topic.html#ab1ab86e959b602a3f541d63492c0d1f6" title="Create a new subscriber to the topic.">Topic::GenericSubscribe()</a> instead. </p>
+<p>Construct from a subscriber handle; recommended to use <a class="el" href="classnt_1_1_topic.html#a48d7644d8ffbe7cc62d1e0a7707a770a" title="Create a new subscriber to the topic.">Topic::GenericSubscribe()</a> instead. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>Native handle </td></tr>
@@ -397,8 +397,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6850411ec77d350f9d51c6453e5945a" name="ae6850411ec77d350f9d51c6453e5945a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6850411ec77d350f9d51c6453e5945a">&#9670;&nbsp;</a></span>GetBooleanArray()</h2>
+<a id="a4ff08c8cf4aa04af8b42e4590703e2e7" name="a4ff08c8cf4aa04af8b42e4590703e2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff08c8cf4aa04af8b42e4590703e2e7">&#9670;&nbsp;</a></span>GetBooleanArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -409,7 +409,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">std::vector&lt; int &gt; nt::GenericSubscriber::GetBooleanArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const int &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -472,8 +472,8 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 
 </div>
 </div>
-<a id="ae90748b44857f7644e9510f3b2a06ddc" name="ae90748b44857f7644e9510f3b2a06ddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae90748b44857f7644e9510f3b2a06ddc">&#9670;&nbsp;</a></span>GetDoubleArray()</h2>
+<a id="ab1a4dcd32c2b645f1d804c6a89c48d4d" name="ab1a4dcd32c2b645f1d804c6a89c48d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a4dcd32c2b645f1d804c6a89c48d4d">&#9670;&nbsp;</a></span>GetDoubleArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,7 +484,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">std::vector&lt; double &gt; nt::GenericSubscriber::GetDoubleArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const double &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -545,8 +545,8 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 
 </div>
 </div>
-<a id="a03f5fc002485147df064f5dfe4f049fb" name="a03f5fc002485147df064f5dfe4f049fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f5fc002485147df064f5dfe4f049fb">&#9670;&nbsp;</a></span>GetFloatArray()</h2>
+<a id="a889eca3730a03ef3548349522aebca46" name="a889eca3730a03ef3548349522aebca46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a889eca3730a03ef3548349522aebca46">&#9670;&nbsp;</a></span>GetFloatArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +557,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">std::vector&lt; float &gt; nt::GenericSubscriber::GetFloatArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -618,8 +618,8 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 
 </div>
 </div>
-<a id="a911f913e357ba8f4f18613f40b3676c4" name="a911f913e357ba8f4f18613f40b3676c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a911f913e357ba8f4f18613f40b3676c4">&#9670;&nbsp;</a></span>GetIntegerArray()</h2>
+<a id="acdcf81c3d3c058d5742e6c3240d3d7b7" name="acdcf81c3d3c058d5742e6c3240d3d7b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdcf81c3d3c058d5742e6c3240d3d7b7">&#9670;&nbsp;</a></span>GetIntegerArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -630,7 +630,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">std::vector&lt; int64_t &gt; nt::GenericSubscriber::GetIntegerArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const int64_t &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -655,8 +655,8 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 
 </div>
 </div>
-<a id="ae6b2c38fd55aaf184b3b9087dbd111db" name="ae6b2c38fd55aaf184b3b9087dbd111db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b2c38fd55aaf184b3b9087dbd111db">&#9670;&nbsp;</a></span>GetRaw()</h2>
+<a id="aa8d38ec4c4b013dacc4d36b0f333c9d4" name="aa8d38ec4c4b013dacc4d36b0f333c9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d38ec4c4b013dacc4d36b0f333c9d4">&#9670;&nbsp;</a></span>GetRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -667,7 +667,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">std::vector&lt; uint8_t &gt; nt::GenericSubscriber::GetRaw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -727,8 +727,8 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 
 </div>
 </div>
-<a id="a9ed10710f42f46417fb899a3d858c010" name="a9ed10710f42f46417fb899a3d858c010"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ed10710f42f46417fb899a3d858c010">&#9670;&nbsp;</a></span>GetStringArray()</h2>
+<a id="ac91cf0d215c1a300fd05d8b2d5f99b9c" name="ac91cf0d215c1a300fd05d8b2d5f99b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91cf0d215c1a300fd05d8b2d5f99b9c">&#9670;&nbsp;</a></span>GetStringArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,7 +739,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">std::vector&lt; std::string &gt; nt::GenericSubscriber::GetStringArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const std::string &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -832,7 +832,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_generic_subscriber.html">GenericSubscriber</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

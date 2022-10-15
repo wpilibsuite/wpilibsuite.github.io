@@ -9,11 +9,11 @@ var classnt_1_1_double_topic =
     [ "DoubleTopic", "classnt_1_1_double_topic.html#ae4ba5189014d485890e1c435c58c39a1", null ],
     [ "DoubleTopic", "classnt_1_1_double_topic.html#a5002d06667dba9391a8ea676d5b349f6", null ],
     [ "DoubleTopic", "classnt_1_1_double_topic.html#a6bcefa647e746d91bd93925671885288", null ],
-    [ "GetEntry", "classnt_1_1_double_topic.html#a94ed92826a3a97505aa67ac30964ba2e", null ],
-    [ "GetEntryEx", "classnt_1_1_double_topic.html#aea4bf7aac5f586274c694c225b8d7c0d", null ],
-    [ "Publish", "classnt_1_1_double_topic.html#a4bbf9aae96b77f454ddf82cfa64e7580", null ],
-    [ "PublishEx", "classnt_1_1_double_topic.html#a35e41e9602a657c5ba1e4cc4df3d302c", null ],
-    [ "Subscribe", "classnt_1_1_double_topic.html#a02c26e5dfd5462871cf05ac00756881f", null ],
-    [ "SubscribeEx", "classnt_1_1_double_topic.html#ac2d2cbc00239503992821d7e5dddd99b", null ],
+    [ "GetEntry", "classnt_1_1_double_topic.html#a49b35663508b2bbda5f1f8637ce78b4d", null ],
+    [ "GetEntryEx", "classnt_1_1_double_topic.html#a84fdc982cc46bc12b8bb87a1af02c53c", null ],
+    [ "Publish", "classnt_1_1_double_topic.html#ad9937f197a4f356e1370848a8f71b3ce", null ],
+    [ "PublishEx", "classnt_1_1_double_topic.html#a8b15c769e9319a06f4520ec7db1ae6dc", null ],
+    [ "Subscribe", "classnt_1_1_double_topic.html#abda5c30a413d8d049fd1f39d099bbb1b", null ],
+    [ "SubscribeEx", "classnt_1_1_double_topic.html#a41abc09cdb6c9e82b94f574eea38744c", null ],
     [ "kTypeString", "classnt_1_1_double_topic.html#aa7295c542ab4b4a16e4c6f08ea52ab45", null ]
 ];

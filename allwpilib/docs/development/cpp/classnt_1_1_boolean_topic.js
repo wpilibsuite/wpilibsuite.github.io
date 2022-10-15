@@ -9,11 +9,11 @@ var classnt_1_1_boolean_topic =
     [ "BooleanTopic", "classnt_1_1_boolean_topic.html#a1388c7a7d0023c84446d23228fe93124", null ],
     [ "BooleanTopic", "classnt_1_1_boolean_topic.html#a6faa6ee52c170836ce273fd4e1be4c0a", null ],
     [ "BooleanTopic", "classnt_1_1_boolean_topic.html#a4f22c75a3fdbfa7ed89b6f199c112978", null ],
-    [ "GetEntry", "classnt_1_1_boolean_topic.html#a46f433005d36eb4a243a34bccc8d839d", null ],
-    [ "GetEntryEx", "classnt_1_1_boolean_topic.html#afe522357ee5cd469ea72b49531e694cc", null ],
-    [ "Publish", "classnt_1_1_boolean_topic.html#a6ffaaf0d98c82c3d2d50b06a0cca491e", null ],
-    [ "PublishEx", "classnt_1_1_boolean_topic.html#a4fc9ca7db48bfb30f1ff25829517a79f", null ],
-    [ "Subscribe", "classnt_1_1_boolean_topic.html#acca3840c49a022bf9726ba90ee483e80", null ],
-    [ "SubscribeEx", "classnt_1_1_boolean_topic.html#a8d41c578c9405c69e80425019cbb4118", null ],
+    [ "GetEntry", "classnt_1_1_boolean_topic.html#a40461b16c040f7fc97a2e684dccdf190", null ],
+    [ "GetEntryEx", "classnt_1_1_boolean_topic.html#a222ff7e546e079f1a8b3634e808da638", null ],
+    [ "Publish", "classnt_1_1_boolean_topic.html#a5043c9e80132a163c453f3e963755d9e", null ],
+    [ "PublishEx", "classnt_1_1_boolean_topic.html#aadbf93d2f5fafe94414a8640c522a508", null ],
+    [ "Subscribe", "classnt_1_1_boolean_topic.html#a7e5472ce4d9981917797eaff49ec74af", null ],
+    [ "SubscribeEx", "classnt_1_1_boolean_topic.html#a775097a2baa15b769d21e0a940a1bcb8", null ],
     [ "kTypeString", "classnt_1_1_boolean_topic.html#a212b3221e4ff399fd2a97ffb439f23e7", null ]
 ];

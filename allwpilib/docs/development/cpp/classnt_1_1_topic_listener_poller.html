@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -125,9 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a98f37dcdb42f4efe98f63cce6cb7d7ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8dba8518f43f626ce9163cc54b2be1a6">NT_TopicListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic_listener_poller.html#a98f37dcdb42f4efe98f63cce6cb7d7ea">GetHandle</a> () const</td></tr>
 <tr class="memdesc:a98f37dcdb42f4efe98f63cce6cb7d7ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the native handle.  <a href="classnt_1_1_topic_listener_poller.html#a98f37dcdb42f4efe98f63cce6cb7d7ea">More...</a><br /></td></tr>
 <tr class="separator:a98f37dcdb42f4efe98f63cce6cb7d7ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef74101871bf8848b7b02b6670470739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic_listener_poller.html#aef74101871bf8848b7b02b6670470739">Add</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; prefixes, unsigned int mask)</td></tr>
-<tr class="memdesc:aef74101871bf8848b7b02b6670470739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start listening to changes to a particular topic.  <a href="classnt_1_1_topic_listener_poller.html#aef74101871bf8848b7b02b6670470739">More...</a><br /></td></tr>
-<tr class="separator:aef74101871bf8848b7b02b6670470739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7302de4452abe3a1213f098946a437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic_listener_poller.html#a4b7302de4452abe3a1213f098946a437">Add</a> (std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; prefixes, unsigned int mask)</td></tr>
+<tr class="memdesc:a4b7302de4452abe3a1213f098946a437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start listening to changes to a particular topic.  <a href="classnt_1_1_topic_listener_poller.html#a4b7302de4452abe3a1213f098946a437">More...</a><br /></td></tr>
+<tr class="separator:a4b7302de4452abe3a1213f098946a437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329e906c89a92281991a7e0056b5f307"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic_listener_poller.html#a329e906c89a92281991a7e0056b5f307">Add</a> (<a class="el" href="classnt_1_1_topic.html">Topic</a> topic, unsigned int mask)</td></tr>
 <tr class="memdesc:a329e906c89a92281991a7e0056b5f307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start listening to topic changes for topics with names that start with any of the given prefixes.  <a href="classnt_1_1_topic_listener_poller.html#a329e906c89a92281991a7e0056b5f307">More...</a><br /></td></tr>
 <tr class="separator:a329e906c89a92281991a7e0056b5f307"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -426,8 +426,54 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4b7302de4452abe3a1213f098946a437" name="a4b7302de4452abe3a1213f098946a437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7302de4452abe3a1213f098946a437">&#9670;&nbsp;</a></span>Add() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> nt::TopicListenerPoller::Add </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
+          <td class="paramname"><em>prefixes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start listening to changes to a particular topic. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefixes</td><td><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> name string prefixes </td></tr>
+    <tr><td class="paramname">mask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
 <a id="a329e906c89a92281991a7e0056b5f307" name="a329e906c89a92281991a7e0056b5f307"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a329e906c89a92281991a7e0056b5f307">&#9670;&nbsp;</a></span>Add() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a329e906c89a92281991a7e0056b5f307">&#9670;&nbsp;</a></span>Add() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,52 +510,6 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">topic</td><td><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </td></tr>
-    <tr><td class="paramname">mask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="aef74101871bf8848b7b02b6670470739" name="aef74101871bf8848b7b02b6670470739"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef74101871bf8848b7b02b6670470739">&#9670;&nbsp;</a></span>Add() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> nt::TopicListenerPoller::Add </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
-          <td class="paramname"><em>prefixes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>mask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Start listening to changes to a particular topic. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prefixes</td><td><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> name string prefixes </td></tr>
     <tr><td class="paramname">mask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
   </table>
   </dd>
@@ -695,7 +695,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_topic_listener_poller.html">TopicListenerPoller</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

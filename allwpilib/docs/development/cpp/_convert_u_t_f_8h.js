@@ -25,8 +25,8 @@ var _convert_u_t_f_8h =
     [ "ConvertCodePointToUTF8", "_convert_u_t_f_8h.html#a0b2b50e25edd8fc47c0ef3b0929a9aac", null ],
     [ "ConvertUTF16toUTF32", "_convert_u_t_f_8h.html#a9257f3c46568bac25b1ba2f3fac4678a", null ],
     [ "ConvertUTF16toUTF8", "_convert_u_t_f_8h.html#ac54c2f26ecf324df5da9128c77052d31", null ],
-    [ "convertUTF16ToUTF8String", "_convert_u_t_f_8h.html#a433f87b659353a4c7c808d18ae10de6c", null ],
-    [ "convertUTF16ToUTF8String", "_convert_u_t_f_8h.html#ae4078daddfc211a1376eeb038ebc2657", null ],
+    [ "convertUTF16ToUTF8String", "_convert_u_t_f_8h.html#ad96959c1be95aa4d288cc84e11ab6f1b", null ],
+    [ "convertUTF16ToUTF8String", "_convert_u_t_f_8h.html#aae550217f649fc634dfa84af9795df29", null ],
     [ "ConvertUTF32toUTF16", "_convert_u_t_f_8h.html#a323342b32a2c5cf6e46b217e4843c014", null ],
     [ "ConvertUTF32toUTF8", "_convert_u_t_f_8h.html#a903ac386cdae4917d7cc20ed662dcee5", null ],
     [ "convertUTF8Sequence", "_convert_u_t_f_8h.html#a349ec073e684b8777cd7e7166dd3b465", null ],
@@ -39,7 +39,7 @@ var _convert_u_t_f_8h =
     [ "ConvertUTF8toWide", "_convert_u_t_f_8h.html#a4f044a5abfa43152b4511fc34f422abd", null ],
     [ "convertWideToUTF8", "_convert_u_t_f_8h.html#a4e0d4fcb62d165827231b4132e83e1a7", null ],
     [ "getNumBytesForUTF8", "_convert_u_t_f_8h.html#a54a45aaed6f6214f0a95dc9fd352b628", null ],
-    [ "hasUTF16ByteOrderMark", "_convert_u_t_f_8h.html#a437ee39acb7a5f002458f11c638d2647", null ],
+    [ "hasUTF16ByteOrderMark", "_convert_u_t_f_8h.html#a328c5e2f088e151affd5ff9d7b398c42", null ],
     [ "isLegalUTF8Sequence", "_convert_u_t_f_8h.html#a26e27444cfe3390c1682575a3ad1860b", null ],
     [ "isLegalUTF8String", "_convert_u_t_f_8h.html#ad8c7efa3db3243cb89f4f1c15b2a2c10", null ]
 ];

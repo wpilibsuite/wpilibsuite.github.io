@@ -1,8 +1,8 @@
 var group__cscore__source__func =
 [
     [ "cs::CopySource", "group__cscore__source__func.html#ga5e96e9a6f6c3f4c085c33f1bb281a9bd", null ],
-    [ "cs::EnumerateSourceProperties", "group__cscore__source__func.html#ga72704817b07560e56ce41a9b996eb2a9", null ],
-    [ "cs::EnumerateSourceSinks", "group__cscore__source__func.html#gafd37cb4e47f37ae1470db4de907cb789", null ],
+    [ "cs::EnumerateSourceProperties", "group__cscore__source__func.html#ga831aec7aae45a78f1eb02917f0c4487f", null ],
+    [ "cs::EnumerateSourceSinks", "group__cscore__source__func.html#gafa6cd743facb428d5775a2fb181ad59a", null ],
     [ "cs::EnumerateSourceVideoModes", "group__cscore__source__func.html#gaa28d00d83cecf7dbf2b7b31498bb6e1f", null ],
     [ "cs::GetSourceConfigJson", "group__cscore__source__func.html#ga4d07254f2d0553919cce44d563c28547", null ],
     [ "cs::GetSourceConfigJsonObject", "group__cscore__source__func.html#ga50565b188e9bd348f1a4e142bcb450f4", null ],

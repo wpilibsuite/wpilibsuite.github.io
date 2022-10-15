@@ -7,7 +7,7 @@ var group__ntcore__network__func =
     [ "nt::IsConnected", "group__ntcore__network__func.html#ga49907334799547c4aa063e81678a3b44", null ],
     [ "nt::SetNetworkIdentity", "group__ntcore__network__func.html#ga26f9dae0d32d2ed028e917e8cc318f46", null ],
     [ "nt::SetServer", "group__ntcore__network__func.html#gaac5214cc3ff4a327c10d7045f745fcd4", null ],
-    [ "nt::SetServer", "group__ntcore__network__func.html#ga3e14725b6b590f7c26357a846f55e4df", null ],
+    [ "nt::SetServer", "group__ntcore__network__func.html#gae9b2d7bf5edb51050d5cc641a42b0666", null ],
     [ "nt::SetServerTeam", "group__ntcore__network__func.html#gad5d4afbe000bb6f39f9d4f48cecadd0e", null ],
     [ "nt::StartClient3", "group__ntcore__network__func.html#ga81aad79d81fa4b93a899d8ca53d82bf5", null ],
     [ "nt::StartClient4", "group__ntcore__network__func.html#ga0192934c05550a559d64265fc565e585", null ],

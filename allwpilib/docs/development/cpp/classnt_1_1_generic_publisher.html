@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8586210d9c573e9aab92d529fe7e05e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#ac8586210d9c573e9aab92d529fe7e05e">GenericPublisher</a> ()=default</td></tr>
 <tr class="separator:ac8586210d9c573e9aab92d529fe7e05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4028e17a95856a327a4b17b0d29a3de6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a4028e17a95856a327a4b17b0d29a3de6">GenericPublisher</a> (<a class="el" href="group__ntcore__c__api.html#gab17b620982b0278f588693f1992de9c2">NT_Publisher</a> handle)</td></tr>
-<tr class="memdesc:a4028e17a95856a327a4b17b0d29a3de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_topic.html#af4b4404112d00534e74e987137341e30" title="Create a new publisher to the topic.">Topic::GenericPublish()</a> instead.  <a href="classnt_1_1_generic_publisher.html#a4028e17a95856a327a4b17b0d29a3de6">More...</a><br /></td></tr>
+<tr class="memdesc:a4028e17a95856a327a4b17b0d29a3de6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_topic.html#a66782cefe5470389af0d5d293f20b157" title="Create a new publisher to the topic.">Topic::GenericPublish()</a> instead.  <a href="classnt_1_1_generic_publisher.html#a4028e17a95856a327a4b17b0d29a3de6">More...</a><br /></td></tr>
 <tr class="separator:a4028e17a95856a327a4b17b0d29a3de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b515212adeffbc4e9a05d1d71a32564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a8b515212adeffbc4e9a05d1d71a32564">Set</a> (<a class="el" href="classnt_1_1_generic_publisher.html#ae66e9aa63cfc363ace70a5558b1fb429">ParamType</a> <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a8b515212adeffbc4e9a05d1d71a32564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a new value.  <a href="classnt_1_1_generic_publisher.html#a8b515212adeffbc4e9a05d1d71a32564">More...</a><br /></td></tr>
@@ -150,27 +150,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a150ff1fd5db28a47fb7e1f581ca240c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a150ff1fd5db28a47fb7e1f581ca240c4">SetString</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
 <tr class="memdesc:a150ff1fd5db28a47fb7e1f581ca240c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a150ff1fd5db28a47fb7e1f581ca240c4">More...</a><br /></td></tr>
 <tr class="separator:a150ff1fd5db28a47fb7e1f581ca240c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92416a6e805f0adb05b52166536c74c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a92416a6e805f0adb05b52166536c74c1">SetRaw</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:a92416a6e805f0adb05b52166536c74c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a92416a6e805f0adb05b52166536c74c1">More...</a><br /></td></tr>
-<tr class="separator:a92416a6e805f0adb05b52166536c74c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33716bb212260f915c2433298fcc98ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a33716bb212260f915c2433298fcc98ae">SetBooleanArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const bool &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:a33716bb212260f915c2433298fcc98ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a33716bb212260f915c2433298fcc98ae">More...</a><br /></td></tr>
-<tr class="separator:a33716bb212260f915c2433298fcc98ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa741109a8c6624041364f4e7bfb77bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#aaa741109a8c6624041364f4e7bfb77bf">SetBooleanArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:aaa741109a8c6624041364f4e7bfb77bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#aaa741109a8c6624041364f4e7bfb77bf">More...</a><br /></td></tr>
-<tr class="separator:aaa741109a8c6624041364f4e7bfb77bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2662aca78e4790f9eee83059141116"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#aed2662aca78e4790f9eee83059141116">SetIntegerArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:aed2662aca78e4790f9eee83059141116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#aed2662aca78e4790f9eee83059141116">More...</a><br /></td></tr>
-<tr class="separator:aed2662aca78e4790f9eee83059141116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaa9ed7b305661b97d47e4e5ef5057c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#acaa9ed7b305661b97d47e4e5ef5057c0">SetFloatArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:acaa9ed7b305661b97d47e4e5ef5057c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#acaa9ed7b305661b97d47e4e5ef5057c0">More...</a><br /></td></tr>
-<tr class="separator:acaa9ed7b305661b97d47e4e5ef5057c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05fc3f42e198203b8b3fdf7f2df997d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a05fc3f42e198203b8b3fdf7f2df997d1">SetDoubleArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:a05fc3f42e198203b8b3fdf7f2df997d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a05fc3f42e198203b8b3fdf7f2df997d1">More...</a><br /></td></tr>
-<tr class="separator:a05fc3f42e198203b8b3fdf7f2df997d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b26c8de2110db46b580d25738a0eeac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a8b26c8de2110db46b580d25738a0eeac">SetStringArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:a8b26c8de2110db46b580d25738a0eeac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a8b26c8de2110db46b580d25738a0eeac">More...</a><br /></td></tr>
-<tr class="separator:a8b26c8de2110db46b580d25738a0eeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd77b7a6403d602ee407208959e54721"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#afd77b7a6403d602ee407208959e54721">SetRaw</a> (std::span&lt; const uint8_t &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:afd77b7a6403d602ee407208959e54721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#afd77b7a6403d602ee407208959e54721">More...</a><br /></td></tr>
+<tr class="separator:afd77b7a6403d602ee407208959e54721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a9165cf678ad95cac277e4b4222dd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#ac0a9165cf678ad95cac277e4b4222dd8">SetBooleanArray</a> (std::span&lt; const bool &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:ac0a9165cf678ad95cac277e4b4222dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#ac0a9165cf678ad95cac277e4b4222dd8">More...</a><br /></td></tr>
+<tr class="separator:ac0a9165cf678ad95cac277e4b4222dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51df1e3b12a86a45562cb6cc22b14644"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a51df1e3b12a86a45562cb6cc22b14644">SetBooleanArray</a> (std::span&lt; const int &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:a51df1e3b12a86a45562cb6cc22b14644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a51df1e3b12a86a45562cb6cc22b14644">More...</a><br /></td></tr>
+<tr class="separator:a51df1e3b12a86a45562cb6cc22b14644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab012fe801e55413691fd16c92e7ce8f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#ab012fe801e55413691fd16c92e7ce8f1">SetIntegerArray</a> (std::span&lt; const int64_t &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:ab012fe801e55413691fd16c92e7ce8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#ab012fe801e55413691fd16c92e7ce8f1">More...</a><br /></td></tr>
+<tr class="separator:ab012fe801e55413691fd16c92e7ce8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccf61fc5ab8f0ae53d1969a84cf03bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a8ccf61fc5ab8f0ae53d1969a84cf03bc">SetFloatArray</a> (std::span&lt; const float &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:a8ccf61fc5ab8f0ae53d1969a84cf03bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a8ccf61fc5ab8f0ae53d1969a84cf03bc">More...</a><br /></td></tr>
+<tr class="separator:a8ccf61fc5ab8f0ae53d1969a84cf03bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc0047494738ce452caa73737e05ede"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a2cc0047494738ce452caa73737e05ede">SetDoubleArray</a> (std::span&lt; const double &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:a2cc0047494738ce452caa73737e05ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a2cc0047494738ce452caa73737e05ede">More...</a><br /></td></tr>
+<tr class="separator:a2cc0047494738ce452caa73737e05ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a25aa83ff2fe529694d04a9b17c0eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a41a25aa83ff2fe529694d04a9b17c0eb">SetStringArray</a> (std::span&lt; const std::string &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:a41a25aa83ff2fe529694d04a9b17c0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value.  <a href="classnt_1_1_generic_publisher.html#a41a25aa83ff2fe529694d04a9b17c0eb">More...</a><br /></td></tr>
+<tr class="separator:a41a25aa83ff2fe529694d04a9b17c0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a594773d4244b5e0e3b082b973ea30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a60a594773d4244b5e0e3b082b973ea30">SetDefault</a> (<a class="el" href="classnt_1_1_generic_publisher.html#ae66e9aa63cfc363ace70a5558b1fb429">ParamType</a> <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a60a594773d4244b5e0e3b082b973ea30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a default value.  <a href="classnt_1_1_generic_publisher.html#a60a594773d4244b5e0e3b082b973ea30">More...</a><br /></td></tr>
 <tr class="separator:a60a594773d4244b5e0e3b082b973ea30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,24 +189,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0da9b189983a3efadb4164e09eab7ad3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a0da9b189983a3efadb4164e09eab7ad3">SetDefaultString</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue)</td></tr>
 <tr class="memdesc:a0da9b189983a3efadb4164e09eab7ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a0da9b189983a3efadb4164e09eab7ad3">More...</a><br /></td></tr>
 <tr class="separator:a0da9b189983a3efadb4164e09eab7ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd9d51c49ffb5c4dfea3113358ba43e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#acdd9d51c49ffb5c4dfea3113358ba43e">SetDefaultRaw</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt; defaultValue)</td></tr>
-<tr class="memdesc:acdd9d51c49ffb5c4dfea3113358ba43e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#acdd9d51c49ffb5c4dfea3113358ba43e">More...</a><br /></td></tr>
-<tr class="separator:acdd9d51c49ffb5c4dfea3113358ba43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5fd683effcb504c550549326b49540c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#aa5fd683effcb504c550549326b49540c">SetDefaultBooleanArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; defaultValue)</td></tr>
-<tr class="memdesc:aa5fd683effcb504c550549326b49540c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#aa5fd683effcb504c550549326b49540c">More...</a><br /></td></tr>
-<tr class="separator:aa5fd683effcb504c550549326b49540c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9159dea52914911ce904485ccef7b4e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a9159dea52914911ce904485ccef7b4e1">SetDefaultIntegerArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt; defaultValue)</td></tr>
-<tr class="memdesc:a9159dea52914911ce904485ccef7b4e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a9159dea52914911ce904485ccef7b4e1">More...</a><br /></td></tr>
-<tr class="separator:a9159dea52914911ce904485ccef7b4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c5f788388db24db3c05025ef78ad593"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a4c5f788388db24db3c05025ef78ad593">SetDefaultFloatArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; defaultValue)</td></tr>
-<tr class="memdesc:a4c5f788388db24db3c05025ef78ad593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a4c5f788388db24db3c05025ef78ad593">More...</a><br /></td></tr>
-<tr class="separator:a4c5f788388db24db3c05025ef78ad593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f8ab843863e22c16c197e824bac951"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a56f8ab843863e22c16c197e824bac951">SetDefaultDoubleArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; defaultValue)</td></tr>
-<tr class="memdesc:a56f8ab843863e22c16c197e824bac951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a56f8ab843863e22c16c197e824bac951">More...</a><br /></td></tr>
-<tr class="separator:a56f8ab843863e22c16c197e824bac951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a634fbe2bb616e05adf0a4fe75cba22a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a634fbe2bb616e05adf0a4fe75cba22a7">SetDefaultStringArray</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; defaultValue)</td></tr>
-<tr class="memdesc:a634fbe2bb616e05adf0a4fe75cba22a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a634fbe2bb616e05adf0a4fe75cba22a7">More...</a><br /></td></tr>
-<tr class="separator:a634fbe2bb616e05adf0a4fe75cba22a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033b13f207842cf89faffc3aa88352a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a033b13f207842cf89faffc3aa88352a7">SetDefaultRaw</a> (std::span&lt; const uint8_t &gt; defaultValue)</td></tr>
+<tr class="memdesc:a033b13f207842cf89faffc3aa88352a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a033b13f207842cf89faffc3aa88352a7">More...</a><br /></td></tr>
+<tr class="separator:a033b13f207842cf89faffc3aa88352a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7acef9eea4d027d2a7357d574d203e89"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a7acef9eea4d027d2a7357d574d203e89">SetDefaultBooleanArray</a> (std::span&lt; const int &gt; defaultValue)</td></tr>
+<tr class="memdesc:a7acef9eea4d027d2a7357d574d203e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a7acef9eea4d027d2a7357d574d203e89">More...</a><br /></td></tr>
+<tr class="separator:a7acef9eea4d027d2a7357d574d203e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55911f1c5ce2bec8c79a6971f7fc20c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#ac55911f1c5ce2bec8c79a6971f7fc20c">SetDefaultIntegerArray</a> (std::span&lt; const int64_t &gt; defaultValue)</td></tr>
+<tr class="memdesc:ac55911f1c5ce2bec8c79a6971f7fc20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#ac55911f1c5ce2bec8c79a6971f7fc20c">More...</a><br /></td></tr>
+<tr class="separator:ac55911f1c5ce2bec8c79a6971f7fc20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d40484637afca2a9ff6d3101920e159"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a6d40484637afca2a9ff6d3101920e159">SetDefaultFloatArray</a> (std::span&lt; const float &gt; defaultValue)</td></tr>
+<tr class="memdesc:a6d40484637afca2a9ff6d3101920e159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a6d40484637afca2a9ff6d3101920e159">More...</a><br /></td></tr>
+<tr class="separator:a6d40484637afca2a9ff6d3101920e159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d12450d20642c081b9560ee56a0d997"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a0d12450d20642c081b9560ee56a0d997">SetDefaultDoubleArray</a> (std::span&lt; const double &gt; defaultValue)</td></tr>
+<tr class="memdesc:a0d12450d20642c081b9560ee56a0d997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#a0d12450d20642c081b9560ee56a0d997">More...</a><br /></td></tr>
+<tr class="separator:a0d12450d20642c081b9560ee56a0d997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58a61643c59e26e89322a1a649208f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#ac58a61643c59e26e89322a1a649208f5">SetDefaultStringArray</a> (std::span&lt; const std::string &gt; defaultValue)</td></tr>
+<tr class="memdesc:ac58a61643c59e26e89322a1a649208f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the entry's value if it does not exist.  <a href="classnt_1_1_generic_publisher.html#ac58a61643c59e26e89322a1a649208f5">More...</a><br /></td></tr>
+<tr class="separator:ac58a61643c59e26e89322a1a649208f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c61e5744a96593803d98bae641307f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_publisher.html#a80eb6afe7ad48dc7c3383b12c8bf1675">TopicType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_generic_publisher.html#a2c61e5744a96593803d98bae641307f3">GetTopic</a> () const</td></tr>
 <tr class="memdesc:a2c61e5744a96593803d98bae641307f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the corresponding topic.  <a href="classnt_1_1_generic_publisher.html#a2c61e5744a96593803d98bae641307f3">More...</a><br /></td></tr>
 <tr class="separator:a2c61e5744a96593803d98bae641307f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,7 +351,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_topic.html#af4b4404112d00534e74e987137341e30" title="Create a new publisher to the topic.">Topic::GenericPublish()</a> instead. </p>
+<p>Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_topic.html#a66782cefe5470389af0d5d293f20b157" title="Create a new publisher to the topic.">Topic::GenericPublish()</a> instead. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>Native handle </td></tr>
@@ -470,8 +470,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a33716bb212260f915c2433298fcc98ae" name="a33716bb212260f915c2433298fcc98ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33716bb212260f915c2433298fcc98ae">&#9670;&nbsp;</a></span>SetBooleanArray() <span class="overload">[1/2]</span></h2>
+<a id="ac0a9165cf678ad95cac277e4b4222dd8" name="ac0a9165cf678ad95cac277e4b4222dd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a9165cf678ad95cac277e4b4222dd8">&#9670;&nbsp;</a></span>SetBooleanArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,7 +482,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetBooleanArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const bool &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const bool &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -516,8 +516,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa741109a8c6624041364f4e7bfb77bf" name="aaa741109a8c6624041364f4e7bfb77bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa741109a8c6624041364f4e7bfb77bf">&#9670;&nbsp;</a></span>SetBooleanArray() <span class="overload">[2/2]</span></h2>
+<a id="a51df1e3b12a86a45562cb6cc22b14644" name="a51df1e3b12a86a45562cb6cc22b14644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51df1e3b12a86a45562cb6cc22b14644">&#9670;&nbsp;</a></span>SetBooleanArray() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetBooleanArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const int &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -632,8 +632,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa5fd683effcb504c550549326b49540c" name="aa5fd683effcb504c550549326b49540c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5fd683effcb504c550549326b49540c">&#9670;&nbsp;</a></span>SetDefaultBooleanArray()</h2>
+<a id="a7acef9eea4d027d2a7357d574d203e89" name="a7acef9eea4d027d2a7357d574d203e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acef9eea4d027d2a7357d574d203e89">&#9670;&nbsp;</a></span>SetDefaultBooleanArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -644,7 +644,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetDefaultBooleanArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const int &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -702,8 +702,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a56f8ab843863e22c16c197e824bac951" name="a56f8ab843863e22c16c197e824bac951"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56f8ab843863e22c16c197e824bac951">&#9670;&nbsp;</a></span>SetDefaultDoubleArray()</h2>
+<a id="a0d12450d20642c081b9560ee56a0d997" name="a0d12450d20642c081b9560ee56a0d997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d12450d20642c081b9560ee56a0d997">&#9670;&nbsp;</a></span>SetDefaultDoubleArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -714,7 +714,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetDefaultDoubleArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const double &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -772,8 +772,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4c5f788388db24db3c05025ef78ad593" name="a4c5f788388db24db3c05025ef78ad593"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c5f788388db24db3c05025ef78ad593">&#9670;&nbsp;</a></span>SetDefaultFloatArray()</h2>
+<a id="a6d40484637afca2a9ff6d3101920e159" name="a6d40484637afca2a9ff6d3101920e159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d40484637afca2a9ff6d3101920e159">&#9670;&nbsp;</a></span>SetDefaultFloatArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,7 +784,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetDefaultFloatArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -842,8 +842,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9159dea52914911ce904485ccef7b4e1" name="a9159dea52914911ce904485ccef7b4e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9159dea52914911ce904485ccef7b4e1">&#9670;&nbsp;</a></span>SetDefaultIntegerArray()</h2>
+<a id="ac55911f1c5ce2bec8c79a6971f7fc20c" name="ac55911f1c5ce2bec8c79a6971f7fc20c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55911f1c5ce2bec8c79a6971f7fc20c">&#9670;&nbsp;</a></span>SetDefaultIntegerArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -854,7 +854,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetDefaultIntegerArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const int64_t &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -877,8 +877,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acdd9d51c49ffb5c4dfea3113358ba43e" name="acdd9d51c49ffb5c4dfea3113358ba43e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdd9d51c49ffb5c4dfea3113358ba43e">&#9670;&nbsp;</a></span>SetDefaultRaw()</h2>
+<a id="a033b13f207842cf89faffc3aa88352a7" name="a033b13f207842cf89faffc3aa88352a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033b13f207842cf89faffc3aa88352a7">&#9670;&nbsp;</a></span>SetDefaultRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -889,7 +889,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetDefaultRaw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -947,8 +947,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a634fbe2bb616e05adf0a4fe75cba22a7" name="a634fbe2bb616e05adf0a4fe75cba22a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a634fbe2bb616e05adf0a4fe75cba22a7">&#9670;&nbsp;</a></span>SetDefaultStringArray()</h2>
+<a id="ac58a61643c59e26e89322a1a649208f5" name="ac58a61643c59e26e89322a1a649208f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac58a61643c59e26e89322a1a649208f5">&#9670;&nbsp;</a></span>SetDefaultStringArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -959,7 +959,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetDefaultStringArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const std::string &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1028,8 +1028,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a05fc3f42e198203b8b3fdf7f2df997d1" name="a05fc3f42e198203b8b3fdf7f2df997d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05fc3f42e198203b8b3fdf7f2df997d1">&#9670;&nbsp;</a></span>SetDoubleArray()</h2>
+<a id="a2cc0047494738ce452caa73737e05ede" name="a2cc0047494738ce452caa73737e05ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc0047494738ce452caa73737e05ede">&#9670;&nbsp;</a></span>SetDoubleArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,7 +1040,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetDoubleArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const double &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -1120,8 +1120,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="acaa9ed7b305661b97d47e4e5ef5057c0" name="acaa9ed7b305661b97d47e4e5ef5057c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaa9ed7b305661b97d47e4e5ef5057c0">&#9670;&nbsp;</a></span>SetFloatArray()</h2>
+<a id="a8ccf61fc5ab8f0ae53d1969a84cf03bc" name="a8ccf61fc5ab8f0ae53d1969a84cf03bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ccf61fc5ab8f0ae53d1969a84cf03bc">&#9670;&nbsp;</a></span>SetFloatArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1132,7 +1132,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetFloatArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -1212,8 +1212,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aed2662aca78e4790f9eee83059141116" name="aed2662aca78e4790f9eee83059141116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed2662aca78e4790f9eee83059141116">&#9670;&nbsp;</a></span>SetIntegerArray()</h2>
+<a id="ab012fe801e55413691fd16c92e7ce8f1" name="ab012fe801e55413691fd16c92e7ce8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab012fe801e55413691fd16c92e7ce8f1">&#9670;&nbsp;</a></span>SetIntegerArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1224,7 +1224,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetIntegerArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int64_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const int64_t &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -1258,8 +1258,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a92416a6e805f0adb05b52166536c74c1" name="a92416a6e805f0adb05b52166536c74c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92416a6e805f0adb05b52166536c74c1">&#9670;&nbsp;</a></span>SetRaw()</h2>
+<a id="afd77b7a6403d602ee407208959e54721" name="afd77b7a6403d602ee407208959e54721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd77b7a6403d602ee407208959e54721">&#9670;&nbsp;</a></span>SetRaw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1270,7 +1270,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetRaw </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const uint8_t &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -1350,8 +1350,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b26c8de2110db46b580d25738a0eeac" name="a8b26c8de2110db46b580d25738a0eeac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b26c8de2110db46b580d25738a0eeac">&#9670;&nbsp;</a></span>SetStringArray()</h2>
+<a id="a41a25aa83ff2fe529694d04a9b17c0eb" name="a41a25aa83ff2fe529694d04a9b17c0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a25aa83ff2fe529694d04a9b17c0eb">&#9670;&nbsp;</a></span>SetStringArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1362,7 +1362,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">bool nt::GenericPublisher::SetStringArray </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const std::string &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -1406,7 +1406,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_generic_publisher.html">GenericPublisher</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

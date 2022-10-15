@@ -42,7 +42,6 @@ var searchData=
   ['dx_39',['dx',['../structfrc_1_1_twist2d.html#a4acc8a01db2e750d002d3f5983a2004c',1,'frc::Twist2d::dx()'],['../structfrc_1_1_twist3d.html#a3d5f347b69d6df1e04d2089c7dca37f9',1,'frc::Twist3d::dx()']]],
   ['dy_40',['dy',['../structfrc_1_1_twist3d.html#a75c24604ae0d25f04a2c32a5577e065e',1,'frc::Twist3d::dy()'],['../structfrc_1_1_twist2d.html#a06ddc654fc87ce93744e4b85325667b0',1,'frc::Twist2d::dy()']]],
   ['dynamic_41',['Dynamic',['../namespace_eigen.html#ad81fa7195215a0ce30017dfac309f0b2',1,'Eigen']]],
-  ['dynamic_5fextent_42',['dynamic_extent',['../namespacewpi.html#af57e346e8c6106d238edcdb05d9ee776',1,'wpi']]],
-  ['dynamicindex_43',['DynamicIndex',['../namespace_eigen.html#a73c597189a4a99127175e8167c456fff',1,'Eigen']]],
-  ['dz_44',['dz',['../structfrc_1_1_twist3d.html#ad729a92fcfa20a862362d06cb942ed65',1,'frc::Twist3d']]]
+  ['dynamicindex_42',['DynamicIndex',['../namespace_eigen.html#a73c597189a4a99127175e8167c456fff',1,'Eigen']]],
+  ['dz_43',['dz',['../structfrc_1_1_twist3d.html#ad729a92fcfa20a862362d06cb942ed65',1,'frc::Twist3d']]]
 ];

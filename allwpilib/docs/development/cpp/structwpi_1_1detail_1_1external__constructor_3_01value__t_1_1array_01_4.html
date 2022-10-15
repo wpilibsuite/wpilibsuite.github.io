@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a12497a274fb2d7a385d7faa4e0293a70"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType &gt; </td></tr>
 <tr class="memitem:a12497a274fb2d7a385d7faa4e0293a70"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html#a12497a274fb2d7a385d7faa4e0293a70">construct</a> (BasicJsonType &amp;j, typename BasicJsonType::array_t &amp;&amp;arr)</td></tr>
 <tr class="separator:a12497a274fb2d7a385d7faa4e0293a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1c85122cb29357e39d32160f87191b6"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename T &gt; </td></tr>
-<tr class="memitem:ae1c85122cb29357e39d32160f87191b6"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html#ae1c85122cb29357e39d32160f87191b6">construct</a> (BasicJsonType &amp;j, <a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt; arr)</td></tr>
-<tr class="separator:ae1c85122cb29357e39d32160f87191b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721182b3309f11f14bd0004004df4834"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename T &gt; </td></tr>
+<tr class="memitem:a721182b3309f11f14bd0004004df4834"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html#a721182b3309f11f14bd0004004df4834">construct</a> (BasicJsonType &amp;j, std::span&lt; T &gt; arr)</td></tr>
+<tr class="separator:a721182b3309f11f14bd0004004df4834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185a6df672609cd9f3cc9e155c9101cd"><td class="memTemplParams" colspan="2">template&lt;typename BasicJsonType , typename CompatibleArrayType , <a class="el" href="namespacewpi_1_1detail.html#afe0837f80c2797e20e43f5cf9d1f5174">enable_if_t</a>&lt; not std::is_same&lt; CompatibleArrayType, typename BasicJsonType::array_t &gt;<a class="el" href="classvalue.html">::value</a>, int &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a185a6df672609cd9f3cc9e155c9101cd"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html#a185a6df672609cd9f3cc9e155c9101cd">construct</a> (BasicJsonType &amp;j, const CompatibleArrayType &amp;arr)</td></tr>
 <tr class="separator:a185a6df672609cd9f3cc9e155c9101cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,8 +233,8 @@ template&lt;typename BasicJsonType &gt; </div>
 
 </div>
 </div>
-<a id="ae1c85122cb29357e39d32160f87191b6" name="ae1c85122cb29357e39d32160f87191b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1c85122cb29357e39d32160f87191b6">&#9670;&nbsp;</a></span>construct() <span class="overload">[4/5]</span></h2>
+<a id="a721182b3309f11f14bd0004004df4834" name="a721182b3309f11f14bd0004004df4834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a721182b3309f11f14bd0004004df4834">&#9670;&nbsp;</a></span>construct() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +253,7 @@ template&lt;typename BasicJsonType , typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; T &gt;&#160;</td>
           <td class="paramname"><em>arr</em>&#160;</td>
         </tr>
         <tr>
@@ -318,7 +318,7 @@ template&lt;typename BasicJsonType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html">external_constructor&lt; value_t::array &gt;</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -120,10 +120,10 @@ Public Types</h2></td></tr>
 <tr class="separator:ad97cdd0662cd557a41726b135f81d5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33711a7edafd115a569e9d61a3e34ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#ad33711a7edafd115a569e9d61a3e34ce">ValueType</a> = std::vector&lt; double &gt;</td></tr>
 <tr class="separator:ad33711a7edafd115a569e9d61a3e34ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af30b96215495aeae671a48efe0b31b59"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#af30b96215495aeae671a48efe0b31b59">ParamType</a> = <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt;</td></tr>
-<tr class="separator:af30b96215495aeae671a48efe0b31b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c07ecba9c6bc73306d42e571368b9c0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a0c07ecba9c6bc73306d42e571368b9c0">SmallRetType</a> = <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; double &gt;</td></tr>
-<tr class="separator:a0c07ecba9c6bc73306d42e571368b9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af963be3f3bfca90f45d3b0c899227325"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#af963be3f3bfca90f45d3b0c899227325">ParamType</a> = std::span&lt; const double &gt;</td></tr>
+<tr class="separator:af963be3f3bfca90f45d3b0c899227325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0bb62592df9995fe6cc25925390bd4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a4a0bb62592df9995fe6cc25925390bd4">SmallRetType</a> = std::span&lt; double &gt;</td></tr>
+<tr class="separator:a4a0bb62592df9995fe6cc25925390bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e36980bfcb95d69c9823837ad3641a5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a9e36980bfcb95d69c9823837ad3641a5">SmallElemType</a> = double</td></tr>
 <tr class="separator:a9e36980bfcb95d69c9823837ad3641a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadecd180b4ad2d7071adfcbe3b388eae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#aadecd180b4ad2d7071adfcbe3b388eae">TimestampedValueType</a> = <a class="el" href="structnt_1_1_timestamped_double_array.html">TimestampedDoubleArray</a></td></tr>
@@ -134,12 +134,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d31c5d9789adfd04fbc3876a5e682c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a1d31c5d9789adfd04fbc3876a5e682c6">DoubleArrayPublisher</a> ()=default</td></tr>
 <tr class="separator:a1d31c5d9789adfd04fbc3876a5e682c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57698c30364426d3afab6ab92820993a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a57698c30364426d3afab6ab92820993a">DoubleArrayPublisher</a> (<a class="el" href="group__ntcore__c__api.html#gab17b620982b0278f588693f1992de9c2">NT_Publisher</a> handle)</td></tr>
-<tr class="memdesc:a57698c30364426d3afab6ab92820993a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_double_array_topic.html#acd7fc5f875a937908f3ee81a4690b298" title="Create a new publisher to the topic.">DoubleArrayTopic::Publish()</a> instead.  <a href="classnt_1_1_double_array_publisher.html#a57698c30364426d3afab6ab92820993a">More...</a><br /></td></tr>
+<tr class="memdesc:a57698c30364426d3afab6ab92820993a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_double_array_topic.html#aa453498ceba6613f6a3e4d5f52ffa35f" title="Create a new publisher to the topic.">DoubleArrayTopic::Publish()</a> instead.  <a href="classnt_1_1_double_array_publisher.html#a57698c30364426d3afab6ab92820993a">More...</a><br /></td></tr>
 <tr class="separator:a57698c30364426d3afab6ab92820993a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49bc72c009f009778e078e555ae3b525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a49bc72c009f009778e078e555ae3b525">Set</a> (<a class="el" href="classnt_1_1_double_array_publisher.html#af30b96215495aeae671a48efe0b31b59">ParamType</a> <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memitem:a49bc72c009f009778e078e555ae3b525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a49bc72c009f009778e078e555ae3b525">Set</a> (<a class="el" href="classnt_1_1_double_array_publisher.html#af963be3f3bfca90f45d3b0c899227325">ParamType</a> <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
 <tr class="memdesc:a49bc72c009f009778e078e555ae3b525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a new value.  <a href="classnt_1_1_double_array_publisher.html#a49bc72c009f009778e078e555ae3b525">More...</a><br /></td></tr>
 <tr class="separator:a49bc72c009f009778e078e555ae3b525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae685228bcbf2416b7d986d724fc552a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#aae685228bcbf2416b7d986d724fc552a">SetDefault</a> (<a class="el" href="classnt_1_1_double_array_publisher.html#af30b96215495aeae671a48efe0b31b59">ParamType</a> <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:aae685228bcbf2416b7d986d724fc552a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#aae685228bcbf2416b7d986d724fc552a">SetDefault</a> (<a class="el" href="classnt_1_1_double_array_publisher.html#af963be3f3bfca90f45d3b0c899227325">ParamType</a> <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:aae685228bcbf2416b7d986d724fc552a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a default value.  <a href="classnt_1_1_double_array_publisher.html#aae685228bcbf2416b7d986d724fc552a">More...</a><br /></td></tr>
 <tr class="separator:aae685228bcbf2416b7d986d724fc552a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1011cc7e3bb300d1bcffe65f450ba15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_double_array_publisher.html#ad97cdd0662cd557a41726b135f81d5b4">TopicType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_double_array_publisher.html#a1011cc7e3bb300d1bcffe65f450ba15c">GetTopic</a> () const</td></tr>
@@ -180,14 +180,14 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >NetworkTables DoubleArray publisher. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="af30b96215495aeae671a48efe0b31b59" name="af30b96215495aeae671a48efe0b31b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af30b96215495aeae671a48efe0b31b59">&#9670;&nbsp;</a></span>ParamType</h2>
+<a id="af963be3f3bfca90f45d3b0c899227325" name="af963be3f3bfca90f45d3b0c899227325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af963be3f3bfca90f45d3b0c899227325">&#9670;&nbsp;</a></span>ParamType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classnt_1_1_double_array_publisher.html#af30b96215495aeae671a48efe0b31b59">nt::DoubleArrayPublisher::ParamType</a> =  <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt;const double&gt;</td>
+          <td class="memname">using <a class="el" href="classnt_1_1_double_array_publisher.html#af963be3f3bfca90f45d3b0c899227325">nt::DoubleArrayPublisher::ParamType</a> =  std::span&lt;const double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -208,14 +208,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a0c07ecba9c6bc73306d42e571368b9c0" name="a0c07ecba9c6bc73306d42e571368b9c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c07ecba9c6bc73306d42e571368b9c0">&#9670;&nbsp;</a></span>SmallRetType</h2>
+<a id="a4a0bb62592df9995fe6cc25925390bd4" name="a4a0bb62592df9995fe6cc25925390bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a0bb62592df9995fe6cc25925390bd4">&#9670;&nbsp;</a></span>SmallRetType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classnt_1_1_double_array_publisher.html#a0c07ecba9c6bc73306d42e571368b9c0">nt::DoubleArrayPublisher::SmallRetType</a> =  <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="classnt_1_1_double_array_publisher.html#a4a0bb62592df9995fe6cc25925390bd4">nt::DoubleArrayPublisher::SmallRetType</a> =  std::span&lt;double&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -314,7 +314,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_double_array_topic.html#acd7fc5f875a937908f3ee81a4690b298" title="Create a new publisher to the topic.">DoubleArrayTopic::Publish()</a> instead. </p>
+<p>Construct from a publisher handle; recommended to use <a class="el" href="classnt_1_1_double_array_topic.html#aa453498ceba6613f6a3e4d5f52ffa35f" title="Create a new publisher to the topic.">DoubleArrayTopic::Publish()</a> instead. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>Native handle </td></tr>
@@ -365,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void nt::DoubleArrayPublisher::Set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_double_array_publisher.html#af30b96215495aeae671a48efe0b31b59">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_double_array_publisher.html#af963be3f3bfca90f45d3b0c899227325">ParamType</a>&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -410,7 +410,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void nt::DoubleArrayPublisher::SetDefault </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_double_array_publisher.html#af30b96215495aeae671a48efe0b31b59">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_double_array_publisher.html#af963be3f3bfca90f45d3b0c899227325">ParamType</a>&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -443,7 +443,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_double_array_publisher.html">DoubleArrayPublisher</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

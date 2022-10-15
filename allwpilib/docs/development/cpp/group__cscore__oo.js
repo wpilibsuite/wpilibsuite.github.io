@@ -124,18 +124,18 @@ var group__cscore__oo =
       [ "HttpCamera", "classcs_1_1_http_camera.html#a083aafa8d6621b2d6b92a97a7e22dac6", null ],
       [ "HttpCamera", "classcs_1_1_http_camera.html#a113e3be8347f30e5708e8aea5dd2121e", null ],
       [ "HttpCamera", "classcs_1_1_http_camera.html#ada17866aa09cba574d3219352019b217", null ],
-      [ "HttpCamera", "classcs_1_1_http_camera.html#aa8186bf8343569ec2fc0135065d17c61", null ],
+      [ "HttpCamera", "classcs_1_1_http_camera.html#a05d46779c5e12bbeca96e2d1c3f1c799", null ],
       [ "HttpCamera", "classcs_1_1_http_camera.html#aed5a59cc2313596894c757ff81356c81", null ],
       [ "GetHttpCameraKind", "classcs_1_1_http_camera.html#abc4132d35d5405087c14a582ac13a392", null ],
       [ "GetUrls", "classcs_1_1_http_camera.html#a2098e86539dc7882bbf493540b542d65", null ],
       [ "SetUrls", "classcs_1_1_http_camera.html#a4b048a5e03c69c86836b8aba70eba501", null ],
-      [ "SetUrls", "classcs_1_1_http_camera.html#a70f19e655843674534255f65b65363d1", null ]
+      [ "SetUrls", "classcs_1_1_http_camera.html#a6f54b2fce415720cf819f56078b3c0d2", null ]
     ] ],
     [ "cs::AxisCamera", "classcs_1_1_axis_camera.html", [
       [ "AxisCamera", "classcs_1_1_axis_camera.html#a1703b258fd6faf6d03508a7753813043", null ],
       [ "AxisCamera", "classcs_1_1_axis_camera.html#a7c13fea529375fe2e41a492223d645cf", null ],
       [ "AxisCamera", "classcs_1_1_axis_camera.html#a480df872f2501129ad040377d34c6169", null ],
-      [ "AxisCamera", "classcs_1_1_axis_camera.html#a7b54e796b9600eed7e4f14929a6eee6d", null ],
+      [ "AxisCamera", "classcs_1_1_axis_camera.html#a6a979bb8f035fecd30c36c7b57e22e21", null ],
       [ "AxisCamera", "classcs_1_1_axis_camera.html#a0a394899c8bf87d00709cc030f337bbf", null ]
     ] ],
     [ "cs::ImageSource", "classcs_1_1_image_source.html", [
@@ -148,7 +148,7 @@ var group__cscore__oo =
       [ "SetConnected", "classcs_1_1_image_source.html#a5de22bd274261df7d1b601cae45b96cf", null ],
       [ "SetDescription", "classcs_1_1_image_source.html#a150c0993030062cbdee1ab91aa39579d", null ],
       [ "SetEnumPropertyChoices", "classcs_1_1_image_source.html#a3883f83d4b3a1c2f298a327440a9c510", null ],
-      [ "SetEnumPropertyChoices", "classcs_1_1_image_source.html#a8f8bab97d1530306bb0fe5c24a68465e", null ]
+      [ "SetEnumPropertyChoices", "classcs_1_1_image_source.html#ae656cc186f6890e08cc73923ab7c68cf", null ]
     ] ],
     [ "cs::VideoSink", "classcs_1_1_video_sink.html", [
       [ "Kind", "classcs_1_1_video_sink.html#a2dfd389f1cdd5173d67b7dc235c2aba0", [

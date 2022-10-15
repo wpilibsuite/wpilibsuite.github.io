@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -124,8 +124,8 @@ Public Types</h2></td></tr>
 <tr class="separator:af1ff2e5083bf737ee01fd38c85637ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9824f2029a5bac56a7925935237f470f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a9824f2029a5bac56a7925935237f470f">ValueType</a> = std::vector&lt; std::string &gt;</td></tr>
 <tr class="separator:a9824f2029a5bac56a7925935237f470f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c6b791d1e5a3cfa032a126cb726ae7f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a> = <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt;</td></tr>
-<tr class="separator:a6c6b791d1e5a3cfa032a126cb726ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15fc824343bd4aabe47fb2de253ca4c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a> = std::span&lt; const std::string &gt;</td></tr>
+<tr class="separator:ac15fc824343bd4aabe47fb2de253ca4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608eafd14a25d270d927f518b0cbaed8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a608eafd14a25d270d927f518b0cbaed8">TimestampedValueType</a> = <a class="el" href="structnt_1_1_timestamped_string_array.html">TimestampedStringArray</a></td></tr>
 <tr class="separator:a608eafd14a25d270d927f518b0cbaed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -139,24 +139,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96fbc9e269109bd8bffabb754299658b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a96fbc9e269109bd8bffabb754299658b">StringArrayTopic</a> (<a class="el" href="classnt_1_1_topic.html">Topic</a> topic)</td></tr>
 <tr class="memdesc:a96fbc9e269109bd8bffabb754299658b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a generic topic.  <a href="classnt_1_1_string_array_topic.html#a96fbc9e269109bd8bffabb754299658b">More...</a><br /></td></tr>
 <tr class="separator:a96fbc9e269109bd8bffabb754299658b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8bc2cd9a61a985d22dd9cc86b9a7a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#abef4b273476edeec2377b79c2042dc37">SubscriberType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a4e8bc2cd9a61a985d22dd9cc86b9a7a1">Subscribe</a> (<a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a> defaultValue, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:a4e8bc2cd9a61a985d22dd9cc86b9a7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic.  <a href="classnt_1_1_string_array_topic.html#a4e8bc2cd9a61a985d22dd9cc86b9a7a1">More...</a><br /></td></tr>
-<tr class="separator:a4e8bc2cd9a61a985d22dd9cc86b9a7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9135eb28a37a4a56920996f3c95289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#abef4b273476edeec2377b79c2042dc37">SubscriberType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#afe9135eb28a37a4a56920996f3c95289">SubscribeEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, <a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a> defaultValue, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:afe9135eb28a37a4a56920996f3c95289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic, with specific type string.  <a href="classnt_1_1_string_array_topic.html#afe9135eb28a37a4a56920996f3c95289">More...</a><br /></td></tr>
-<tr class="separator:afe9135eb28a37a4a56920996f3c95289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5d94536bd4c8f627a4f0a339c141218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#a1a2163796ad077e1d0d424e40ffdfd47">PublisherType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#ad5d94536bd4c8f627a4f0a339c141218">Publish</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:ad5d94536bd4c8f627a4f0a339c141218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic.  <a href="classnt_1_1_string_array_topic.html#ad5d94536bd4c8f627a4f0a339c141218">More...</a><br /></td></tr>
-<tr class="separator:ad5d94536bd4c8f627a4f0a339c141218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a9d43035523a4a31409f028c8d2e11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#a1a2163796ad077e1d0d424e40ffdfd47">PublisherType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a60a9d43035523a4a31409f028c8d2e11">PublishEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;properties, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:a60a9d43035523a4a31409f028c8d2e11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic, with type string and initial properties.  <a href="classnt_1_1_string_array_topic.html#a60a9d43035523a4a31409f028c8d2e11">More...</a><br /></td></tr>
-<tr class="separator:a60a9d43035523a4a31409f028c8d2e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd1da7396c0109d6d19a0755a4b2d61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#af1ff2e5083bf737ee01fd38c85637ac9">EntryType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a3bd1da7396c0109d6d19a0755a4b2d61">GetEntry</a> (<a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a> defaultValue, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:a3bd1da7396c0109d6d19a0755a4b2d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry for the topic.  <a href="classnt_1_1_string_array_topic.html#a3bd1da7396c0109d6d19a0755a4b2d61">More...</a><br /></td></tr>
-<tr class="separator:a3bd1da7396c0109d6d19a0755a4b2d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9dda7d748b0c2a359e8e7ea3ccf9631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#af1ff2e5083bf737ee01fd38c85637ac9">EntryType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#ae9dda7d748b0c2a359e8e7ea3ccf9631">GetEntryEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, <a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a> defaultValue, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:ae9dda7d748b0c2a359e8e7ea3ccf9631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry for the topic, with specific type string.  <a href="classnt_1_1_string_array_topic.html#ae9dda7d748b0c2a359e8e7ea3ccf9631">More...</a><br /></td></tr>
-<tr class="separator:ae9dda7d748b0c2a359e8e7ea3ccf9631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922697471775c3b569a8a7eac663aac7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#abef4b273476edeec2377b79c2042dc37">SubscriberType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a922697471775c3b569a8a7eac663aac7">Subscribe</a> (<a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a> defaultValue, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a922697471775c3b569a8a7eac663aac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic.  <a href="classnt_1_1_string_array_topic.html#a922697471775c3b569a8a7eac663aac7">More...</a><br /></td></tr>
+<tr class="separator:a922697471775c3b569a8a7eac663aac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a247bcfafe0b8cdf894f3eb3427cf4ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#abef4b273476edeec2377b79c2042dc37">SubscriberType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a247bcfafe0b8cdf894f3eb3427cf4ba9">SubscribeEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, <a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a> defaultValue, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a247bcfafe0b8cdf894f3eb3427cf4ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic, with specific type string.  <a href="classnt_1_1_string_array_topic.html#a247bcfafe0b8cdf894f3eb3427cf4ba9">More...</a><br /></td></tr>
+<tr class="separator:a247bcfafe0b8cdf894f3eb3427cf4ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa097f41af1eb97238cf37bfb4d0b207"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#a1a2163796ad077e1d0d424e40ffdfd47">PublisherType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#afa097f41af1eb97238cf37bfb4d0b207">Publish</a> (std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:afa097f41af1eb97238cf37bfb4d0b207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic.  <a href="classnt_1_1_string_array_topic.html#afa097f41af1eb97238cf37bfb4d0b207">More...</a><br /></td></tr>
+<tr class="separator:afa097f41af1eb97238cf37bfb4d0b207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc76e01dd8753dfa250e54b733824b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#a1a2163796ad077e1d0d424e40ffdfd47">PublisherType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#adc76e01dd8753dfa250e54b733824b71">PublishEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;properties, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:adc76e01dd8753dfa250e54b733824b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic, with type string and initial properties.  <a href="classnt_1_1_string_array_topic.html#adc76e01dd8753dfa250e54b733824b71">More...</a><br /></td></tr>
+<tr class="separator:adc76e01dd8753dfa250e54b733824b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd27cba9de66fbf9acf0d61985b291f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#af1ff2e5083bf737ee01fd38c85637ac9">EntryType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#adfd27cba9de66fbf9acf0d61985b291f">GetEntry</a> (<a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a> defaultValue, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:adfd27cba9de66fbf9acf0d61985b291f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry for the topic.  <a href="classnt_1_1_string_array_topic.html#adfd27cba9de66fbf9acf0d61985b291f">More...</a><br /></td></tr>
+<tr class="separator:adfd27cba9de66fbf9acf0d61985b291f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe2a6a7dfa6ccee939cd486e493f8ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_string_array_topic.html#af1ff2e5083bf737ee01fd38c85637ac9">EntryType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_string_array_topic.html#a3fe2a6a7dfa6ccee939cd486e493f8ea">GetEntryEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, <a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a> defaultValue, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a3fe2a6a7dfa6ccee939cd486e493f8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new entry for the topic, with specific type string.  <a href="classnt_1_1_string_array_topic.html#a3fe2a6a7dfa6ccee939cd486e493f8ea">More...</a><br /></td></tr>
+<tr class="separator:a3fe2a6a7dfa6ccee939cd486e493f8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classnt_1_1_topic"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classnt_1_1_topic')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classnt_1_1_topic.html">nt::Topic</a></td></tr>
 <tr class="memitem:a17ec35ade1f4cee92a22a1c8c6e2e256 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a17ec35ade1f4cee92a22a1c8c6e2e256">Topic</a> ()=default</td></tr>
 <tr class="separator:a17ec35ade1f4cee92a22a1c8c6e2e256 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,24 +213,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbd0852f5e60737bebb981479f20856c inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnt_1_1_topic_info.html">TopicInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#adbd0852f5e60737bebb981479f20856c">GetInfo</a> () const</td></tr>
 <tr class="memdesc:adbd0852f5e60737bebb981479f20856c inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets combined information about the topic.  <a href="classnt_1_1_topic.html#adbd0852f5e60737bebb981479f20856c">More...</a><br /></td></tr>
 <tr class="separator:adbd0852f5e60737bebb981479f20856c inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1ab86e959b602a3f541d63492c0d1f6 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_subscriber.html">GenericSubscriber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#ab1ab86e959b602a3f541d63492c0d1f6">GenericSubscribe</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:ab1ab86e959b602a3f541d63492c0d1f6 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic.  <a href="classnt_1_1_topic.html#ab1ab86e959b602a3f541d63492c0d1f6">More...</a><br /></td></tr>
-<tr class="separator:ab1ab86e959b602a3f541d63492c0d1f6 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36657f346e93082118202d700bbac6b2 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_subscriber.html">GenericSubscriber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a36657f346e93082118202d700bbac6b2">GenericSubscribe</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:a36657f346e93082118202d700bbac6b2 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic.  <a href="classnt_1_1_topic.html#a36657f346e93082118202d700bbac6b2">More...</a><br /></td></tr>
-<tr class="separator:a36657f346e93082118202d700bbac6b2 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4b4404112d00534e74e987137341e30 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_publisher.html">GenericPublisher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#af4b4404112d00534e74e987137341e30">GenericPublish</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:af4b4404112d00534e74e987137341e30 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic.  <a href="classnt_1_1_topic.html#af4b4404112d00534e74e987137341e30">More...</a><br /></td></tr>
-<tr class="separator:af4b4404112d00534e74e987137341e30 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff2e781180d0b3c2b5af0393b033cef inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_publisher.html">GenericPublisher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a1ff2e781180d0b3c2b5af0393b033cef">GenericPublishEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;properties, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:a1ff2e781180d0b3c2b5af0393b033cef inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic, with type string and initial properties.  <a href="classnt_1_1_topic.html#a1ff2e781180d0b3c2b5af0393b033cef">More...</a><br /></td></tr>
-<tr class="separator:a1ff2e781180d0b3c2b5af0393b033cef inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0795a6a8c15656f513c4706cc3dd23f0 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_entry.html">GenericEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a0795a6a8c15656f513c4706cc3dd23f0">GetGenericEntry</a> (<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:a0795a6a8c15656f513c4706cc3dd23f0 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new generic entry for the topic.  <a href="classnt_1_1_topic.html#a0795a6a8c15656f513c4706cc3dd23f0">More...</a><br /></td></tr>
-<tr class="separator:a0795a6a8c15656f513c4706cc3dd23f0 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3136d275b96ef516a898ebb1605cee4f inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_entry.html">GenericEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a3136d275b96ef516a898ebb1605cee4f">GetGenericEntry</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
-<tr class="memdesc:a3136d275b96ef516a898ebb1605cee4f inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new generic entry for the topic.  <a href="classnt_1_1_topic.html#a3136d275b96ef516a898ebb1605cee4f">More...</a><br /></td></tr>
-<tr class="separator:a3136d275b96ef516a898ebb1605cee4f inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48d7644d8ffbe7cc62d1e0a7707a770a inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_subscriber.html">GenericSubscriber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a48d7644d8ffbe7cc62d1e0a7707a770a">GenericSubscribe</a> (std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a48d7644d8ffbe7cc62d1e0a7707a770a inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic.  <a href="classnt_1_1_topic.html#a48d7644d8ffbe7cc62d1e0a7707a770a">More...</a><br /></td></tr>
+<tr class="separator:a48d7644d8ffbe7cc62d1e0a7707a770a inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa972dd6b5822cc12be245170247e7bcf inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_subscriber.html">GenericSubscriber</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#aa972dd6b5822cc12be245170247e7bcf">GenericSubscribe</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:aa972dd6b5822cc12be245170247e7bcf inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new subscriber to the topic.  <a href="classnt_1_1_topic.html#aa972dd6b5822cc12be245170247e7bcf">More...</a><br /></td></tr>
+<tr class="separator:aa972dd6b5822cc12be245170247e7bcf inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66782cefe5470389af0d5d293f20b157 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_publisher.html">GenericPublisher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a66782cefe5470389af0d5d293f20b157">GenericPublish</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a66782cefe5470389af0d5d293f20b157 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic.  <a href="classnt_1_1_topic.html#a66782cefe5470389af0d5d293f20b157">More...</a><br /></td></tr>
+<tr class="separator:a66782cefe5470389af0d5d293f20b157 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7d18d26e08218bc93b14c63f23cb31 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_publisher.html">GenericPublisher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a5a7d18d26e08218bc93b14c63f23cb31">GenericPublishEx</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;properties, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a5a7d18d26e08218bc93b14c63f23cb31 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new publisher to the topic, with type string and initial properties.  <a href="classnt_1_1_topic.html#a5a7d18d26e08218bc93b14c63f23cb31">More...</a><br /></td></tr>
+<tr class="separator:a5a7d18d26e08218bc93b14c63f23cb31 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092483613bdd0498915a9b5ff192c682 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_entry.html">GenericEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a092483613bdd0498915a9b5ff192c682">GetGenericEntry</a> (std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a092483613bdd0498915a9b5ff192c682 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new generic entry for the topic.  <a href="classnt_1_1_topic.html#a092483613bdd0498915a9b5ff192c682">More...</a><br /></td></tr>
+<tr class="separator:a092483613bdd0498915a9b5ff192c682 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e058e9583d510af0432d4463cbefb5 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1_generic_entry.html">GenericEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a11e058e9583d510af0432d4463cbefb5">GetGenericEntry</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> typeString, std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt; options={})</td></tr>
+<tr class="memdesc:a11e058e9583d510af0432d4463cbefb5 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new generic entry for the topic.  <a href="classnt_1_1_topic.html#a11e058e9583d510af0432d4463cbefb5">More...</a><br /></td></tr>
+<tr class="separator:a11e058e9583d510af0432d4463cbefb5 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31be9e5bebeb02633f1cacdaf58b5969 inherit pub_methods_classnt_1_1_topic"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html#a31be9e5bebeb02633f1cacdaf58b5969">operator==</a> (const <a class="el" href="classnt_1_1_topic.html">Topic</a> &amp;oth) const</td></tr>
 <tr class="memdesc:a31be9e5bebeb02633f1cacdaf58b5969 inherit pub_methods_classnt_1_1_topic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator.  <a href="classnt_1_1_topic.html#a31be9e5bebeb02633f1cacdaf58b5969">More...</a><br /></td></tr>
 <tr class="separator:a31be9e5bebeb02633f1cacdaf58b5969 inherit pub_methods_classnt_1_1_topic"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,14 +267,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a6c6b791d1e5a3cfa032a126cb726ae7f" name="a6c6b791d1e5a3cfa032a126cb726ae7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c6b791d1e5a3cfa032a126cb726ae7f">&#9670;&nbsp;</a></span>ParamType</h2>
+<a id="ac15fc824343bd4aabe47fb2de253ca4c" name="ac15fc824343bd4aabe47fb2de253ca4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac15fc824343bd4aabe47fb2de253ca4c">&#9670;&nbsp;</a></span>ParamType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">nt::StringArrayTopic::ParamType</a> =  <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt;const std::string&gt;</td>
+          <td class="memname">using <a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">nt::StringArrayTopic::ParamType</a> =  std::span&lt;const std::string&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -432,8 +432,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3bd1da7396c0109d6d19a0755a4b2d61" name="a3bd1da7396c0109d6d19a0755a4b2d61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bd1da7396c0109d6d19a0755a4b2d61">&#9670;&nbsp;</a></span>GetEntry()</h2>
+<a id="adfd27cba9de66fbf9acf0d61985b291f" name="adfd27cba9de66fbf9acf0d61985b291f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd27cba9de66fbf9acf0d61985b291f">&#9670;&nbsp;</a></span>GetEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,13 +444,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classnt_1_1_string_array_entry.html">StringArrayEntry</a> nt::StringArrayTopic::GetEntry </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -480,8 +480,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ae9dda7d748b0c2a359e8e7ea3ccf9631" name="ae9dda7d748b0c2a359e8e7ea3ccf9631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9dda7d748b0c2a359e8e7ea3ccf9631">&#9670;&nbsp;</a></span>GetEntryEx()</h2>
+<a id="a3fe2a6a7dfa6ccee939cd486e493f8ea" name="a3fe2a6a7dfa6ccee939cd486e493f8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe2a6a7dfa6ccee939cd486e493f8ea">&#9670;&nbsp;</a></span>GetEntryEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,13 +498,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -535,8 +535,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5d94536bd4c8f627a4f0a339c141218" name="ad5d94536bd4c8f627a4f0a339c141218"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5d94536bd4c8f627a4f0a339c141218">&#9670;&nbsp;</a></span>Publish()</h2>
+<a id="afa097f41af1eb97238cf37bfb4d0b207" name="afa097f41af1eb97238cf37bfb4d0b207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa097f41af1eb97238cf37bfb4d0b207">&#9670;&nbsp;</a></span>Publish()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -547,7 +547,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classnt_1_1_string_array_publisher.html">StringArrayPublisher</a> nt::StringArrayTopic::Publish </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em> = <code>{}</code></td><td>)</td>
           <td></td>
         </tr>
@@ -572,8 +572,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a60a9d43035523a4a31409f028c8d2e11" name="a60a9d43035523a4a31409f028c8d2e11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60a9d43035523a4a31409f028c8d2e11">&#9670;&nbsp;</a></span>PublishEx()</h2>
+<a id="adc76e01dd8753dfa250e54b733824b71" name="adc76e01dd8753dfa250e54b733824b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc76e01dd8753dfa250e54b733824b71">&#9670;&nbsp;</a></span>PublishEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,7 +596,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -627,8 +627,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e8bc2cd9a61a985d22dd9cc86b9a7a1" name="a4e8bc2cd9a61a985d22dd9cc86b9a7a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e8bc2cd9a61a985d22dd9cc86b9a7a1">&#9670;&nbsp;</a></span>Subscribe()</h2>
+<a id="a922697471775c3b569a8a7eac663aac7" name="a922697471775c3b569a8a7eac663aac7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922697471775c3b569a8a7eac663aac7">&#9670;&nbsp;</a></span>Subscribe()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -639,13 +639,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classnt_1_1_string_array_subscriber.html">StringArraySubscriber</a> nt::StringArrayTopic::Subscribe </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -675,8 +675,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="afe9135eb28a37a4a56920996f3c95289" name="afe9135eb28a37a4a56920996f3c95289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe9135eb28a37a4a56920996f3c95289">&#9670;&nbsp;</a></span>SubscribeEx()</h2>
+<a id="a247bcfafe0b8cdf894f3eb3427cf4ba9" name="a247bcfafe0b8cdf894f3eb3427cf4ba9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a247bcfafe0b8cdf894f3eb3427cf4ba9">&#9670;&nbsp;</a></span>SubscribeEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -693,13 +693,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#a6c6b791d1e5a3cfa032a126cb726ae7f">ParamType</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_string_array_topic.html#ac15fc824343bd4aabe47fb2de253ca4c">ParamType</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="classnt_1_1_pub_sub_option.html">PubSubOption</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -765,7 +765,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_string_array_topic.html">StringArrayTopic</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

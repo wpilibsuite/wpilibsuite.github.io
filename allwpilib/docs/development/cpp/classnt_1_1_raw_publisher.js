@@ -1,8 +1,8 @@
 var classnt_1_1_raw_publisher =
 [
-    [ "ParamType", "classnt_1_1_raw_publisher.html#ac4085c354452fb3bd5ea441b84176948", null ],
+    [ "ParamType", "classnt_1_1_raw_publisher.html#a43d4f1d9eea7d5963cda4d7bc74cdf71", null ],
     [ "SmallElemType", "classnt_1_1_raw_publisher.html#a72209516caa6b8db16cd8e1d2ce1679b", null ],
-    [ "SmallRetType", "classnt_1_1_raw_publisher.html#af2ac5879f4b4c8435da32c7aab150c59", null ],
+    [ "SmallRetType", "classnt_1_1_raw_publisher.html#abc78093168da5ab86e976f998c5ce944", null ],
     [ "TimestampedValueType", "classnt_1_1_raw_publisher.html#a366b2534ef3906dcb7aee0af03b94ff7", null ],
     [ "TopicType", "classnt_1_1_raw_publisher.html#ad8f8070bf248acf4ddc90c7721643950", null ],
     [ "ValueType", "classnt_1_1_raw_publisher.html#a239a0cc476485d841c338fff1358d82c", null ],

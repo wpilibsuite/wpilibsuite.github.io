@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -99,67 +99,33 @@ $(document).ready(function(){initNavTree('group__ntcore___float_array__func.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga28b4636a82a357ebac6843e43e42048a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga28b4636a82a357ebac6843e43e42048a">nt::SetFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> pubentry, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
-<tr class="memdesc:ga28b4636a82a357ebac6843e43e42048a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a new value.  <a href="group__ntcore___float_array__func.html#ga28b4636a82a357ebac6843e43e42048a">More...</a><br /></td></tr>
-<tr class="separator:ga28b4636a82a357ebac6843e43e42048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga458f9a1802edff40e45c96cfa6495822"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga458f9a1802edff40e45c96cfa6495822">nt::SetDefaultFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> pubentry, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; defaultValue)</td></tr>
-<tr class="memdesc:ga458f9a1802edff40e45c96cfa6495822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a default value.  <a href="group__ntcore___float_array__func.html#ga458f9a1802edff40e45c96cfa6495822">More...</a><br /></td></tr>
-<tr class="separator:ga458f9a1802edff40e45c96cfa6495822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1a8ea36c3b351c14317ff3b5554eb614"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga1a8ea36c3b351c14317ff3b5554eb614">nt::GetFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; defaultValue)</td></tr>
-<tr class="memdesc:ga1a8ea36c3b351c14317ff3b5554eb614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value.  <a href="group__ntcore___float_array__func.html#ga1a8ea36c3b351c14317ff3b5554eb614">More...</a><br /></td></tr>
-<tr class="separator:ga1a8ea36c3b351c14317ff3b5554eb614"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaecc0ced77583d553a88ba22606a9d8e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnt_1_1_timestamped_float_array.html">TimestampedFloatArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#gaecc0ced77583d553a88ba22606a9d8e6">nt::GetAtomicFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; defaultValue)</td></tr>
-<tr class="memdesc:gaecc0ced77583d553a88ba22606a9d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value along with its timestamp.  <a href="group__ntcore___float_array__func.html#gaecc0ced77583d553a88ba22606a9d8e6">More...</a><br /></td></tr>
-<tr class="separator:gaecc0ced77583d553a88ba22606a9d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga906a8e4b6e78ee240c6df80a7abfba48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga906a8e4b6e78ee240c6df80a7abfba48">nt::SetFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> pubentry, std::span&lt; const float &gt; <a class="el" href="classvalue.html">value</a>, int64_t time=0)</td></tr>
+<tr class="memdesc:ga906a8e4b6e78ee240c6df80a7abfba48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a new value.  <a href="group__ntcore___float_array__func.html#ga906a8e4b6e78ee240c6df80a7abfba48">More...</a><br /></td></tr>
+<tr class="separator:ga906a8e4b6e78ee240c6df80a7abfba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b2fecaa687bb16f4f3921edd5a431b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga4b2fecaa687bb16f4f3921edd5a431b7">nt::SetDefaultFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> pubentry, std::span&lt; const float &gt; defaultValue)</td></tr>
+<tr class="memdesc:ga4b2fecaa687bb16f4f3921edd5a431b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publish a default value.  <a href="group__ntcore___float_array__func.html#ga4b2fecaa687bb16f4f3921edd5a431b7">More...</a><br /></td></tr>
+<tr class="separator:ga4b2fecaa687bb16f4f3921edd5a431b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48fadc8702c03e88482e01065e526d35"><td class="memItemLeft" align="right" valign="top">std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga48fadc8702c03e88482e01065e526d35">nt::GetFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, std::span&lt; const float &gt; defaultValue)</td></tr>
+<tr class="memdesc:ga48fadc8702c03e88482e01065e526d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value.  <a href="group__ntcore___float_array__func.html#ga48fadc8702c03e88482e01065e526d35">More...</a><br /></td></tr>
+<tr class="separator:ga48fadc8702c03e88482e01065e526d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf68f3a3c72325a8be1166b6a336970f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnt_1_1_timestamped_float_array.html">TimestampedFloatArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#gacf68f3a3c72325a8be1166b6a336970f">nt::GetAtomicFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, std::span&lt; const float &gt; defaultValue)</td></tr>
+<tr class="memdesc:gacf68f3a3c72325a8be1166b6a336970f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last published value along with its timestamp.  <a href="group__ntcore___float_array__func.html#gacf68f3a3c72325a8be1166b6a336970f">More...</a><br /></td></tr>
+<tr class="separator:gacf68f3a3c72325a8be1166b6a336970f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga78c1bbe45db521539a42802e7e5ff718"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structnt_1_1_timestamped_float_array.html">TimestampedFloatArray</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga78c1bbe45db521539a42802e7e5ff718">nt::ReadQueueFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry)</td></tr>
 <tr class="memdesc:ga78c1bbe45db521539a42802e7e5ff718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an array of all value changes since the last call to ReadQueue.  <a href="group__ntcore___float_array__func.html#ga78c1bbe45db521539a42802e7e5ff718">More...</a><br /></td></tr>
 <tr class="separator:ga78c1bbe45db521539a42802e7e5ff718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9fadcc34fdfaa3083e967df57d6a2f2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; float &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga9fadcc34fdfaa3083e967df57d6a2f2d">nt::ReadQueueValuesFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry)</td></tr>
 <tr class="memdesc:ga9fadcc34fdfaa3083e967df57d6a2f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an array of all value changes since the last call to ReadQueue.  <a href="group__ntcore___float_array__func.html#ga9fadcc34fdfaa3083e967df57d6a2f2d">More...</a><br /></td></tr>
 <tr class="separator:ga9fadcc34fdfaa3083e967df57d6a2f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4773545c79217684c72d43a377c1246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#gac4773545c79217684c72d43a377c1246">nt::GetFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, <a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;buf, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; defaultValue)</td></tr>
-<tr class="separator:gac4773545c79217684c72d43a377c1246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa59b92d30f41d7c865306ecb6ce3a9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnt_1_1_timestamped_float_array_view.html">TimestampedFloatArrayView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#gaaa59b92d30f41d7c865306ecb6ce3a9e">nt::GetAtomicFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, <a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;buf, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt; defaultValue)</td></tr>
-<tr class="separator:gaaa59b92d30f41d7c865306ecb6ce3a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa3b5b32e6667b7f5b2af111df74f571"><td class="memItemLeft" align="right" valign="top">std::span&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#gaaa3b5b32e6667b7f5b2af111df74f571">nt::GetFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, <a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;buf, std::span&lt; const float &gt; defaultValue)</td></tr>
+<tr class="separator:gaaa3b5b32e6667b7f5b2af111df74f571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a80846687c722c5e75a67aba3a46017"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnt_1_1_timestamped_float_array_view.html">TimestampedFloatArrayView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore___float_array__func.html#ga0a80846687c722c5e75a67aba3a46017">nt::GetAtomicFloatArray</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, <a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;buf, std::span&lt; const float &gt; defaultValue)</td></tr>
+<tr class="separator:ga0a80846687c722c5e75a67aba3a46017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaaa59b92d30f41d7c865306ecb6ce3a9e" name="gaaa59b92d30f41d7c865306ecb6ce3a9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa59b92d30f41d7c865306ecb6ce3a9e">&#9670;&nbsp;</a></span>GetAtomicFloatArray() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structnt_1_1_timestamped_float_array_view.html">TimestampedFloatArrayView</a> nt::GetAtomicFloatArray </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a>&#160;</td>
-          <td class="paramname"><em>subentry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
-          <td class="paramname"><em>defaultValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaecc0ced77583d553a88ba22606a9d8e6" name="gaecc0ced77583d553a88ba22606a9d8e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaecc0ced77583d553a88ba22606a9d8e6">&#9670;&nbsp;</a></span>GetAtomicFloatArray() <span class="overload">[2/2]</span></h2>
+<a id="gacf68f3a3c72325a8be1166b6a336970f" name="gacf68f3a3c72325a8be1166b6a336970f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf68f3a3c72325a8be1166b6a336970f">&#9670;&nbsp;</a></span>GetAtomicFloatArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +139,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -197,14 +163,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gac4773545c79217684c72d43a377c1246" name="gac4773545c79217684c72d43a377c1246"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4773545c79217684c72d43a377c1246">&#9670;&nbsp;</a></span>GetFloatArray() <span class="overload">[1/2]</span></h2>
+<a id="ga0a80846687c722c5e75a67aba3a46017" name="ga0a80846687c722c5e75a67aba3a46017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0a80846687c722c5e75a67aba3a46017">&#9670;&nbsp;</a></span>GetAtomicFloatArray() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; float &gt; nt::GetFloatArray </td>
+          <td class="memname"><a class="el" href="structnt_1_1_timestamped_float_array_view.html">TimestampedFloatArrayView</a> nt::GetAtomicFloatArray </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a>&#160;</td>
           <td class="paramname"><em>subentry</em>, </td>
@@ -218,7 +184,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -231,8 +197,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1a8ea36c3b351c14317ff3b5554eb614" name="ga1a8ea36c3b351c14317ff3b5554eb614"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1a8ea36c3b351c14317ff3b5554eb614">&#9670;&nbsp;</a></span>GetFloatArray() <span class="overload">[2/2]</span></h2>
+<a id="ga48fadc8702c03e88482e01065e526d35" name="ga48fadc8702c03e88482e01065e526d35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48fadc8702c03e88482e01065e526d35">&#9670;&nbsp;</a></span>GetFloatArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,7 +212,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -267,6 +233,40 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>value </dd></dl>
+
+</div>
+</div>
+<a id="gaaa3b5b32e6667b7f5b2af111df74f571" name="gaaa3b5b32e6667b7f5b2af111df74f571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa3b5b32e6667b7f5b2af111df74f571">&#9670;&nbsp;</a></span>GetFloatArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::span&lt; float &gt; nt::GetFloatArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a>&#160;</td>
+          <td class="paramname"><em>subentry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a>&lt; float &gt; &amp;&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
+          <td class="paramname"><em>defaultValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -327,8 +327,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga458f9a1802edff40e45c96cfa6495822" name="ga458f9a1802edff40e45c96cfa6495822"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga458f9a1802edff40e45c96cfa6495822">&#9670;&nbsp;</a></span>SetDefaultFloatArray()</h2>
+<a id="ga4b2fecaa687bb16f4f3921edd5a431b7" name="ga4b2fecaa687bb16f4f3921edd5a431b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b2fecaa687bb16f4f3921edd5a431b7">&#9670;&nbsp;</a></span>SetDefaultFloatArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +342,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -365,8 +365,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga28b4636a82a357ebac6843e43e42048a" name="ga28b4636a82a357ebac6843e43e42048a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28b4636a82a357ebac6843e43e42048a">&#9670;&nbsp;</a></span>SetFloatArray()</h2>
+<a id="ga906a8e4b6e78ee240c6df80a7abfba48" name="ga906a8e4b6e78ee240c6df80a7abfba48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga906a8e4b6e78ee240c6df80a7abfba48">&#9670;&nbsp;</a></span>SetFloatArray()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +380,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const float &gt;&#160;</td>
+          <td class="paramtype">std::span&lt; const float &gt;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -414,7 +414,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 15 2022 08:06:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:36:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

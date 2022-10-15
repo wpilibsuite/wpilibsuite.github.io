@@ -1,7 +1,7 @@
 var classwpi_1_1log_1_1_data_log_record =
 [
     [ "DataLogRecord", "classwpi_1_1log_1_1_data_log_record.html#a5aa9344004851c0ba239cf21726a4860", null ],
-    [ "DataLogRecord", "classwpi_1_1log_1_1_data_log_record.html#aaddc2d3619bbf0d7e00b50ef49f48d98", null ],
+    [ "DataLogRecord", "classwpi_1_1log_1_1_data_log_record.html#aed0f1403dcfff6196d3fab632769011b", null ],
     [ "GetBoolean", "classwpi_1_1log_1_1_data_log_record.html#aad1ed110a3279e71a1530bec60e2f450", null ],
     [ "GetBooleanArray", "classwpi_1_1log_1_1_data_log_record.html#a35dc7b37d430c2b7af1b7c4dd333355d", null ],
     [ "GetDouble", "classwpi_1_1log_1_1_data_log_record.html#ae03c8aef461cc53d61f25181ca4fa66a", null ],
@@ -12,7 +12,7 @@ var classwpi_1_1log_1_1_data_log_record =
     [ "GetFloatArray", "classwpi_1_1log_1_1_data_log_record.html#afb4ba2ffbd433a92d3d18b4dc33ac40a", null ],
     [ "GetInteger", "classwpi_1_1log_1_1_data_log_record.html#a0e53f8c91da8afefcf34b84aa4017b48", null ],
     [ "GetIntegerArray", "classwpi_1_1log_1_1_data_log_record.html#a5d3300d627d1e8235ec5b9904dca2d3d", null ],
-    [ "GetRaw", "classwpi_1_1log_1_1_data_log_record.html#aaf85b484322c221789406c5a7dd67a82", null ],
+    [ "GetRaw", "classwpi_1_1log_1_1_data_log_record.html#a619026ee4ca8ce060c182036f4c00d30", null ],
     [ "GetSetMetadataData", "classwpi_1_1log_1_1_data_log_record.html#ad84bb4b01ce4e56ca42437fa62860be7", null ],
     [ "GetSize", "classwpi_1_1log_1_1_data_log_record.html#a87e344a5cdfdd60f2c2287fb3b0edc7d", null ],
     [ "GetStartData", "classwpi_1_1log_1_1_data_log_record.html#a4916ff38c4a7845c99153d8ca37810f4", null ],

@@ -1,7 +1,7 @@
 var group__cscore__sink__func =
 [
     [ "cs::CopySink", "group__cscore__sink__func.html#ga193186f4aa649db438f85406f1115ec6", null ],
-    [ "cs::EnumerateSinkProperties", "group__cscore__sink__func.html#gad438d65c9e7098fb4e97ee5582eee09c", null ],
+    [ "cs::EnumerateSinkProperties", "group__cscore__sink__func.html#ga4f84d70d684e3a0db5e7cb82e4406da3", null ],
     [ "cs::GetSinkConfigJson", "group__cscore__sink__func.html#gab8cb0bb6eab9196b892af26130327bf6", null ],
     [ "cs::GetSinkConfigJsonObject", "group__cscore__sink__func.html#ga1ac139644fa25d72ec161092cd3012cd", null ],
     [ "cs::GetSinkDescription", "group__cscore__sink__func.html#ga651b48c698fec0b730b3e76044011092", null ],

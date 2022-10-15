@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-12-g3961430</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.0.0-alpha-2-13-gfbdc810</span>
    </div>
   </td>
  </tr>
@@ -101,11 +101,11 @@ $(document).ready(function(){initNavTree('_battery_sim_8h_source.html',''); init
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;numeric&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="current_8h.html">units/current.h</a>&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="impedance_8h.html">units/impedance.h</a>&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="voltage_8h.html">units/voltage.h</a>&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="span_8h.html">wpi/span.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;span&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="current_8h.html">units/current.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="impedance_8h.html">units/impedance.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="voltage_8h.html">units/voltage.h</a>&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc_1_1sim.html">frc::sim</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
@@ -126,11 +126,11 @@ $(document).ready(function(){initNavTree('_battery_sim_8h_source.html',''); init
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   * @param currents       The currents drawn from the battery.</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * @return The battery&#39;s voltage under load.</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_battery_sim.html#a18bd689802a525d2c41ce8c0d4055903">   33</a></span>  <span class="keyword">static</span> units::volt_t <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#a18bd689802a525d2c41ce8c0d4055903">Calculate</a>(units::volt_t nominalVoltage,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_battery_sim.html#ad600dbcbf32ad2893095a27af289c1b7">   33</a></span>  <span class="keyword">static</span> units::volt_t <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#ad600dbcbf32ad2893095a27af289c1b7">Calculate</a>(units::volt_t nominalVoltage,</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                                 units::ohm_t resistance,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                 <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;const units::ampere_t&gt;</a> currents) {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                 std::span&lt;const units::ampere_t&gt; currents) {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">return</span> nominalVoltage -</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>           std::accumulate(currents.<a class="code hl_function" href="classwpi_1_1span.html#aedeb2649374eeeab8a155d7699c85c15">begin</a>(), currents.<a class="code hl_function" href="classwpi_1_1span.html#ad80d188e06a484718208b5142947c573">end</a>(), 0_A) * resistance;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>           std::accumulate(currents.begin(), currents.end(), 0_A) * resistance;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  /**</span></div>
@@ -162,8 +162,8 @@ $(document).ready(function(){initNavTree('_battery_sim_8h_source.html',''); init
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * @param currents The currents drawn from the battery.</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * @return The battery&#39;s voltage under load.</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_battery_sim.html#aab3cdc22b7c362da665ead0fa15ffad9">   69</a></span>  <span class="keyword">static</span> units::volt_t <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#aab3cdc22b7c362da665ead0fa15ffad9">Calculate</a>(<a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;const units::ampere_t&gt;</a> currents) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#a18bd689802a525d2c41ce8c0d4055903">Calculate</a>(12_V, 0.02_Ohm, currents);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_battery_sim.html#ae0b3cc4e535ec8ee7626b72680de982a">   69</a></span>  <span class="keyword">static</span> units::volt_t <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#ae0b3cc4e535ec8ee7626b72680de982a">Calculate</a>(std::span&lt;const units::ampere_t&gt; currents) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#ad600dbcbf32ad2893095a27af289c1b7">Calculate</a>(12_V, 0.02_Ohm, currents);</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"></span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  /**</span></div>
@@ -178,23 +178,19 @@ $(document).ready(function(){initNavTree('_battery_sim_8h_source.html',''); init
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_battery_sim.html#a86bdca5dfc8818706f5405aa616e6f82">   83</a></span>  <span class="keyword">static</span> units::volt_t <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#a86bdca5dfc8818706f5405aa616e6f82">Calculate</a>(</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      std::initializer_list&lt;units::ampere_t&gt; currents) {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#a18bd689802a525d2c41ce8c0d4055903">Calculate</a>(12_V, 0.02_Ohm, currents);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_battery_sim.html#ad600dbcbf32ad2893095a27af289c1b7">Calculate</a>(12_V, 0.02_Ohm, currents);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}  <span class="comment">// namespace frc::sim</span></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_battery_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_battery_sim.html">frc::sim::BatterySim</a></div><div class="ttdoc">A utility class to simulate the robot battery.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:19</div></div>
-<div class="ttc" id="aclassfrc_1_1sim_1_1_battery_sim_html_a18bd689802a525d2c41ce8c0d4055903"><div class="ttname"><a href="classfrc_1_1sim_1_1_battery_sim.html#a18bd689802a525d2c41ce8c0d4055903">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(units::volt_t nominalVoltage, units::ohm_t resistance, wpi::span&lt; const units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:33</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_battery_sim_html_a7d24f778a66abea773d7e67947a788bb"><div class="ttname"><a href="classfrc_1_1sim_1_1_battery_sim.html#a7d24f778a66abea773d7e67947a788bb">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(units::volt_t nominalVoltage, units::ohm_t resistance, std::initializer_list&lt; units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:52</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_battery_sim_html_a86bdca5dfc8818706f5405aa616e6f82"><div class="ttname"><a href="classfrc_1_1sim_1_1_battery_sim.html#a86bdca5dfc8818706f5405aa616e6f82">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(std::initializer_list&lt; units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:83</div></div>
-<div class="ttc" id="aclassfrc_1_1sim_1_1_battery_sim_html_aab3cdc22b7c362da665ead0fa15ffad9"><div class="ttname"><a href="classfrc_1_1sim_1_1_battery_sim.html#aab3cdc22b7c362da665ead0fa15ffad9">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(wpi::span&lt; const units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:69</div></div>
-<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
-<div class="ttc" id="aclasswpi_1_1span_html_ad80d188e06a484718208b5142947c573"><div class="ttname"><a href="classwpi_1_1span.html#ad80d188e06a484718208b5142947c573">wpi::span::end</a></div><div class="ttdeci">constexpr iterator end() const noexcept</div><div class="ttdef"><b>Definition:</b> span.h:327</div></div>
-<div class="ttc" id="aclasswpi_1_1span_html_aedeb2649374eeeab8a155d7699c85c15"><div class="ttname"><a href="classwpi_1_1span.html#aedeb2649374eeeab8a155d7699c85c15">wpi::span::begin</a></div><div class="ttdeci">constexpr iterator begin() const noexcept</div><div class="ttdef"><b>Definition:</b> span.h:325</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1_battery_sim_html_ad600dbcbf32ad2893095a27af289c1b7"><div class="ttname"><a href="classfrc_1_1sim_1_1_battery_sim.html#ad600dbcbf32ad2893095a27af289c1b7">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(units::volt_t nominalVoltage, units::ohm_t resistance, std::span&lt; const units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:33</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1_battery_sim_html_ae0b3cc4e535ec8ee7626b72680de982a"><div class="ttname"><a href="classfrc_1_1sim_1_1_battery_sim.html#ae0b3cc4e535ec8ee7626b72680de982a">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(std::span&lt; const units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:69</div></div>
 <div class="ttc" id="acurrent_8h_html"><div class="ttname"><a href="current_8h.html">current.h</a></div></div>
 <div class="ttc" id="aimpedance_8h_html"><div class="ttname"><a href="impedance_8h.html">impedance.h</a></div></div>
 <div class="ttc" id="anamespacefrc_1_1sim_html"><div class="ttname"><a href="namespacefrc_1_1sim.html">frc::sim</a></div><div class="ttdef"><b>Definition:</b> UltrasonicSim.h:14</div></div>
-<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 <div class="ttc" id="avoltage_8h_html"><div class="ttname"><a href="voltage_8h.html">voltage.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -202,7 +198,7 @@ $(document).ready(function(){initNavTree('_battery_sim_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_battery_sim_8h.html">BatterySim.h</a></li>
-    <li class="footer">Generated on Sat Oct 15 2022 08:05:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 15 2022 23:35:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

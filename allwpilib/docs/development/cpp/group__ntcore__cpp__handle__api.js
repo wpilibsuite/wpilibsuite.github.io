@@ -136,10 +136,10 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "nt::TimestampedRawView", "structnt_1_1_timestamped_raw_view.html", [
       [ "TimestampedRawView", "structnt_1_1_timestamped_raw_view.html#a37de1bbfd123c56187f3a9f4e9c2853f", null ],
-      [ "TimestampedRawView", "structnt_1_1_timestamped_raw_view.html#a9db8df5f3103cd0b3c5526dc7320cc72", null ],
+      [ "TimestampedRawView", "structnt_1_1_timestamped_raw_view.html#a5ee01c942f4a1b01c0238c87fb55133c", null ],
       [ "serverTime", "structnt_1_1_timestamped_raw_view.html#a46bde025b984592bdfdb6c42a3152865", null ],
       [ "time", "structnt_1_1_timestamped_raw_view.html#a287d0c5f2fb22e3f406a4b932d18181c", null ],
-      [ "value", "structnt_1_1_timestamped_raw_view.html#afb8e231582f279060e058a3c78aa2c5b", null ]
+      [ "value", "structnt_1_1_timestamped_raw_view.html#a99ae7db7213b1bd76daaf9c32f1d9290", null ]
     ] ],
     [ "nt::TimestampedBooleanArray", "structnt_1_1_timestamped_boolean_array.html", [
       [ "TimestampedBooleanArray", "structnt_1_1_timestamped_boolean_array.html#a3d4f824c84a26382f7c888f10a1db0a8", null ],
@@ -150,10 +150,10 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "nt::TimestampedBooleanArrayView", "structnt_1_1_timestamped_boolean_array_view.html", [
       [ "TimestampedBooleanArrayView", "structnt_1_1_timestamped_boolean_array_view.html#a0743e6a733744ececa2e4faff6b21258", null ],
-      [ "TimestampedBooleanArrayView", "structnt_1_1_timestamped_boolean_array_view.html#a298da05926ec3db7379dbac3b3c880f7", null ],
+      [ "TimestampedBooleanArrayView", "structnt_1_1_timestamped_boolean_array_view.html#aaac058718027b554701d9681ca4c5e60", null ],
       [ "serverTime", "structnt_1_1_timestamped_boolean_array_view.html#a8b13c17788856f5906469ca9a5ee82e6", null ],
       [ "time", "structnt_1_1_timestamped_boolean_array_view.html#a65c8e394e83ea0d5b2b3b84315f65077", null ],
-      [ "value", "structnt_1_1_timestamped_boolean_array_view.html#aade44409a49aa64d59ab89e9e51740f4", null ]
+      [ "value", "structnt_1_1_timestamped_boolean_array_view.html#ac9696b3b84f13e7e6eff24ca1dc65242", null ]
     ] ],
     [ "nt::TimestampedIntegerArray", "structnt_1_1_timestamped_integer_array.html", [
       [ "TimestampedIntegerArray", "structnt_1_1_timestamped_integer_array.html#a05b4c5a1a0c8d5325ae289ef84573175", null ],
@@ -164,10 +164,10 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "nt::TimestampedIntegerArrayView", "structnt_1_1_timestamped_integer_array_view.html", [
       [ "TimestampedIntegerArrayView", "structnt_1_1_timestamped_integer_array_view.html#a91fed909e896e7f5c2fff96e4e4c6746", null ],
-      [ "TimestampedIntegerArrayView", "structnt_1_1_timestamped_integer_array_view.html#adb2bfd0a1903aec378ae1a62defc0203", null ],
+      [ "TimestampedIntegerArrayView", "structnt_1_1_timestamped_integer_array_view.html#a670b9823605ca869731750365c6bc3f6", null ],
       [ "serverTime", "structnt_1_1_timestamped_integer_array_view.html#a94c1a45475d5b1a110474a4ff47b7266", null ],
       [ "time", "structnt_1_1_timestamped_integer_array_view.html#a1866aa54ea4e015769db46178874f058", null ],
-      [ "value", "structnt_1_1_timestamped_integer_array_view.html#a5c70f1858804ceb1a4a4fe8dda406fda", null ]
+      [ "value", "structnt_1_1_timestamped_integer_array_view.html#afa6955cdf1ed863debd12d5c6e9f8568", null ]
     ] ],
     [ "nt::TimestampedFloatArray", "structnt_1_1_timestamped_float_array.html", [
       [ "TimestampedFloatArray", "structnt_1_1_timestamped_float_array.html#a0cb6fce722757250a4c6743799dc9993", null ],
@@ -178,10 +178,10 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "nt::TimestampedFloatArrayView", "structnt_1_1_timestamped_float_array_view.html", [
       [ "TimestampedFloatArrayView", "structnt_1_1_timestamped_float_array_view.html#a6b76c0b40bac66ebd4adfe63227d1a92", null ],
-      [ "TimestampedFloatArrayView", "structnt_1_1_timestamped_float_array_view.html#a4f9a242f96f61045b7449e635697be98", null ],
+      [ "TimestampedFloatArrayView", "structnt_1_1_timestamped_float_array_view.html#a4a54ffc9492f72e3498ee9f3fc408610", null ],
       [ "serverTime", "structnt_1_1_timestamped_float_array_view.html#a7dddaf490ff13e4765f6b6e48acf4c22", null ],
       [ "time", "structnt_1_1_timestamped_float_array_view.html#ab0a92bfe9fe6257ae19ba2d92a3d3183", null ],
-      [ "value", "structnt_1_1_timestamped_float_array_view.html#a5dd46981cf08230458713bc11d89f3ee", null ]
+      [ "value", "structnt_1_1_timestamped_float_array_view.html#af6e364e8d3af035650c3710c4e834cef", null ]
     ] ],
     [ "nt::TimestampedDoubleArray", "structnt_1_1_timestamped_double_array.html", [
       [ "TimestampedDoubleArray", "structnt_1_1_timestamped_double_array.html#a0cf3d99eda11bdd33daa41a2ea40ddb6", null ],
@@ -192,10 +192,10 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "nt::TimestampedDoubleArrayView", "structnt_1_1_timestamped_double_array_view.html", [
       [ "TimestampedDoubleArrayView", "structnt_1_1_timestamped_double_array_view.html#a8bba263edcf022e0ec9a0e09ef5197da", null ],
-      [ "TimestampedDoubleArrayView", "structnt_1_1_timestamped_double_array_view.html#a38c83e3aaa855abd5b8dcff693c7b25e", null ],
+      [ "TimestampedDoubleArrayView", "structnt_1_1_timestamped_double_array_view.html#ad460fe22287100f531e3749c064a4e9a", null ],
       [ "serverTime", "structnt_1_1_timestamped_double_array_view.html#aa0d205315eef074de2408b83e22a3274", null ],
       [ "time", "structnt_1_1_timestamped_double_array_view.html#aa97aa89bdf007fe491ddd88f672f86f2", null ],
-      [ "value", "structnt_1_1_timestamped_double_array_view.html#ad4cdaf6538f6418d4219b87df26f7556", null ]
+      [ "value", "structnt_1_1_timestamped_double_array_view.html#a0b7bdcefe37e3579a0a8d428ad3cf8c3", null ]
     ] ],
     [ "nt::TimestampedStringArray", "structnt_1_1_timestamped_string_array.html", [
       [ "TimestampedStringArray", "structnt_1_1_timestamped_string_array.html#ae810190b78506b217609b58f3535c70e", null ],

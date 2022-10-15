@@ -38,7 +38,7 @@ var classfrc_1_1_s_p_i =
     [ "SetAccumulatorCenter", "classfrc_1_1_s_p_i.html#acac48eeec3574ed6670dfa58fafcdfdd", null ],
     [ "SetAccumulatorDeadband", "classfrc_1_1_s_p_i.html#a5c423b7cb5f34b4c076881f167ff0d9a", null ],
     [ "SetAccumulatorIntegratedCenter", "classfrc_1_1_s_p_i.html#a1a538757d510cbea45e087a7e02e515e", null ],
-    [ "SetAutoTransmitData", "classfrc_1_1_s_p_i.html#a744aac37ffe2f9f81a770492970aee96", null ],
+    [ "SetAutoTransmitData", "classfrc_1_1_s_p_i.html#a791e93d54744eda1181194d99757a8da", null ],
     [ "SetChipSelectActiveHigh", "classfrc_1_1_s_p_i.html#a9d8b94f99e596d25c820b478b07d780e", null ],
     [ "SetChipSelectActiveLow", "classfrc_1_1_s_p_i.html#a220425545082b5137f639b62925f80f1", null ],
     [ "SetClockActiveHigh", "classfrc_1_1_s_p_i.html#ae15d94ef40c01beb33378d544ed05be6", null ],
