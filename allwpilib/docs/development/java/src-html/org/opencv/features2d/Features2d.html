@@ -249,76 +249,125 @@
 <span class="sourceLineNo">237</span><a id="line.237"></a>
 <span class="sourceLineNo">238</span><a id="line.238"></a>
 <span class="sourceLineNo">239</span><a id="line.239">    //</a>
-<span class="sourceLineNo">240</span><a id="line.240">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_vector_DMatch matches1to2, Mat&amp; outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_vector_char matchesMask = std::vector&lt;std::vector&lt;char&gt; &gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
+<span class="sourceLineNo">240</span><a id="line.240">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_DMatch matches1to2, Mat&amp; outImg, int matchesThickness, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_char matchesMask = std::vector&lt;char&gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
 <span class="sourceLineNo">241</span><a id="line.241">    //</a>
 <span class="sourceLineNo">242</span><a id="line.242"></a>
-<span class="sourceLineNo">243</span><a id="line.243">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor, Scalar singlePointColor, List&lt;MatOfByte&gt; matchesMask, int flags) {</a>
+<span class="sourceLineNo">243</span><a id="line.243">    public static void drawMatches(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, MatOfDMatch matches1to2, Mat outImg, int matchesThickness, Scalar matchColor, Scalar singlePointColor, MatOfByte matchesMask, int flags) {</a>
 <span class="sourceLineNo">244</span><a id="line.244">        Mat keypoints1_mat = keypoints1;</a>
 <span class="sourceLineNo">245</span><a id="line.245">        Mat keypoints2_mat = keypoints2;</a>
-<span class="sourceLineNo">246</span><a id="line.246">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
-<span class="sourceLineNo">247</span><a id="line.247">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
-<span class="sourceLineNo">248</span><a id="line.248">        List&lt;Mat&gt; matchesMask_tmplm = new ArrayList&lt;Mat&gt;((matchesMask != null) ? matchesMask.size() : 0);</a>
-<span class="sourceLineNo">249</span><a id="line.249">        Mat matchesMask_mat = Converters.vector_vector_char_to_Mat(matchesMask, matchesMask_tmplm);</a>
-<span class="sourceLineNo">250</span><a id="line.250">        drawMatchesKnn_0(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3], matchesMask_mat.nativeObj, flags);</a>
-<span class="sourceLineNo">251</span><a id="line.251">    }</a>
-<span class="sourceLineNo">252</span><a id="line.252"></a>
-<span class="sourceLineNo">253</span><a id="line.253">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor, Scalar singlePointColor, List&lt;MatOfByte&gt; matchesMask) {</a>
-<span class="sourceLineNo">254</span><a id="line.254">        Mat keypoints1_mat = keypoints1;</a>
-<span class="sourceLineNo">255</span><a id="line.255">        Mat keypoints2_mat = keypoints2;</a>
-<span class="sourceLineNo">256</span><a id="line.256">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
-<span class="sourceLineNo">257</span><a id="line.257">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
-<span class="sourceLineNo">258</span><a id="line.258">        List&lt;Mat&gt; matchesMask_tmplm = new ArrayList&lt;Mat&gt;((matchesMask != null) ? matchesMask.size() : 0);</a>
-<span class="sourceLineNo">259</span><a id="line.259">        Mat matchesMask_mat = Converters.vector_vector_char_to_Mat(matchesMask, matchesMask_tmplm);</a>
-<span class="sourceLineNo">260</span><a id="line.260">        drawMatchesKnn_1(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3], matchesMask_mat.nativeObj);</a>
-<span class="sourceLineNo">261</span><a id="line.261">    }</a>
-<span class="sourceLineNo">262</span><a id="line.262"></a>
-<span class="sourceLineNo">263</span><a id="line.263">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor, Scalar singlePointColor) {</a>
-<span class="sourceLineNo">264</span><a id="line.264">        Mat keypoints1_mat = keypoints1;</a>
-<span class="sourceLineNo">265</span><a id="line.265">        Mat keypoints2_mat = keypoints2;</a>
-<span class="sourceLineNo">266</span><a id="line.266">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
-<span class="sourceLineNo">267</span><a id="line.267">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
-<span class="sourceLineNo">268</span><a id="line.268">        drawMatchesKnn_2(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3]);</a>
-<span class="sourceLineNo">269</span><a id="line.269">    }</a>
-<span class="sourceLineNo">270</span><a id="line.270"></a>
-<span class="sourceLineNo">271</span><a id="line.271">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor) {</a>
-<span class="sourceLineNo">272</span><a id="line.272">        Mat keypoints1_mat = keypoints1;</a>
-<span class="sourceLineNo">273</span><a id="line.273">        Mat keypoints2_mat = keypoints2;</a>
-<span class="sourceLineNo">274</span><a id="line.274">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
-<span class="sourceLineNo">275</span><a id="line.275">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
-<span class="sourceLineNo">276</span><a id="line.276">        drawMatchesKnn_3(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3]);</a>
-<span class="sourceLineNo">277</span><a id="line.277">    }</a>
-<span class="sourceLineNo">278</span><a id="line.278"></a>
-<span class="sourceLineNo">279</span><a id="line.279">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg) {</a>
-<span class="sourceLineNo">280</span><a id="line.280">        Mat keypoints1_mat = keypoints1;</a>
-<span class="sourceLineNo">281</span><a id="line.281">        Mat keypoints2_mat = keypoints2;</a>
-<span class="sourceLineNo">282</span><a id="line.282">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
-<span class="sourceLineNo">283</span><a id="line.283">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
-<span class="sourceLineNo">284</span><a id="line.284">        drawMatchesKnn_4(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj);</a>
-<span class="sourceLineNo">285</span><a id="line.285">    }</a>
-<span class="sourceLineNo">286</span><a id="line.286"></a>
-<span class="sourceLineNo">287</span><a id="line.287"></a>
-<span class="sourceLineNo">288</span><a id="line.288"></a>
-<span class="sourceLineNo">289</span><a id="line.289"></a>
-<span class="sourceLineNo">290</span><a id="line.290">    // C++:  void cv::drawKeypoints(Mat image, vector_KeyPoint keypoints, Mat&amp; outImage, Scalar color = Scalar::all(-1), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
-<span class="sourceLineNo">291</span><a id="line.291">    private static native void drawKeypoints_0(long image_nativeObj, long keypoints_mat_nativeObj, long outImage_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3, int flags);</a>
-<span class="sourceLineNo">292</span><a id="line.292">    private static native void drawKeypoints_1(long image_nativeObj, long keypoints_mat_nativeObj, long outImage_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3);</a>
-<span class="sourceLineNo">293</span><a id="line.293">    private static native void drawKeypoints_2(long image_nativeObj, long keypoints_mat_nativeObj, long outImage_nativeObj);</a>
+<span class="sourceLineNo">246</span><a id="line.246">        Mat matches1to2_mat = matches1to2;</a>
+<span class="sourceLineNo">247</span><a id="line.247">        Mat matchesMask_mat = matchesMask;</a>
+<span class="sourceLineNo">248</span><a id="line.248">        drawMatches_5(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchesThickness, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3], matchesMask_mat.nativeObj, flags);</a>
+<span class="sourceLineNo">249</span><a id="line.249">    }</a>
+<span class="sourceLineNo">250</span><a id="line.250"></a>
+<span class="sourceLineNo">251</span><a id="line.251">    public static void drawMatches(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, MatOfDMatch matches1to2, Mat outImg, int matchesThickness, Scalar matchColor, Scalar singlePointColor, MatOfByte matchesMask) {</a>
+<span class="sourceLineNo">252</span><a id="line.252">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">253</span><a id="line.253">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">254</span><a id="line.254">        Mat matches1to2_mat = matches1to2;</a>
+<span class="sourceLineNo">255</span><a id="line.255">        Mat matchesMask_mat = matchesMask;</a>
+<span class="sourceLineNo">256</span><a id="line.256">        drawMatches_6(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchesThickness, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3], matchesMask_mat.nativeObj);</a>
+<span class="sourceLineNo">257</span><a id="line.257">    }</a>
+<span class="sourceLineNo">258</span><a id="line.258"></a>
+<span class="sourceLineNo">259</span><a id="line.259">    public static void drawMatches(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, MatOfDMatch matches1to2, Mat outImg, int matchesThickness, Scalar matchColor, Scalar singlePointColor) {</a>
+<span class="sourceLineNo">260</span><a id="line.260">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">261</span><a id="line.261">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">262</span><a id="line.262">        Mat matches1to2_mat = matches1to2;</a>
+<span class="sourceLineNo">263</span><a id="line.263">        drawMatches_7(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchesThickness, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3]);</a>
+<span class="sourceLineNo">264</span><a id="line.264">    }</a>
+<span class="sourceLineNo">265</span><a id="line.265"></a>
+<span class="sourceLineNo">266</span><a id="line.266">    public static void drawMatches(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, MatOfDMatch matches1to2, Mat outImg, int matchesThickness, Scalar matchColor) {</a>
+<span class="sourceLineNo">267</span><a id="line.267">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">268</span><a id="line.268">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">269</span><a id="line.269">        Mat matches1to2_mat = matches1to2;</a>
+<span class="sourceLineNo">270</span><a id="line.270">        drawMatches_8(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchesThickness, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3]);</a>
+<span class="sourceLineNo">271</span><a id="line.271">    }</a>
+<span class="sourceLineNo">272</span><a id="line.272"></a>
+<span class="sourceLineNo">273</span><a id="line.273">    public static void drawMatches(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, MatOfDMatch matches1to2, Mat outImg, int matchesThickness) {</a>
+<span class="sourceLineNo">274</span><a id="line.274">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">275</span><a id="line.275">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">276</span><a id="line.276">        Mat matches1to2_mat = matches1to2;</a>
+<span class="sourceLineNo">277</span><a id="line.277">        drawMatches_9(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchesThickness);</a>
+<span class="sourceLineNo">278</span><a id="line.278">    }</a>
+<span class="sourceLineNo">279</span><a id="line.279"></a>
+<span class="sourceLineNo">280</span><a id="line.280"></a>
+<span class="sourceLineNo">281</span><a id="line.281">    //</a>
+<span class="sourceLineNo">282</span><a id="line.282">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_vector_DMatch matches1to2, Mat&amp; outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_vector_char matchesMask = std::vector&lt;std::vector&lt;char&gt; &gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
+<span class="sourceLineNo">283</span><a id="line.283">    //</a>
+<span class="sourceLineNo">284</span><a id="line.284"></a>
+<span class="sourceLineNo">285</span><a id="line.285">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor, Scalar singlePointColor, List&lt;MatOfByte&gt; matchesMask, int flags) {</a>
+<span class="sourceLineNo">286</span><a id="line.286">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">287</span><a id="line.287">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">288</span><a id="line.288">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
+<span class="sourceLineNo">289</span><a id="line.289">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
+<span class="sourceLineNo">290</span><a id="line.290">        List&lt;Mat&gt; matchesMask_tmplm = new ArrayList&lt;Mat&gt;((matchesMask != null) ? matchesMask.size() : 0);</a>
+<span class="sourceLineNo">291</span><a id="line.291">        Mat matchesMask_mat = Converters.vector_vector_char_to_Mat(matchesMask, matchesMask_tmplm);</a>
+<span class="sourceLineNo">292</span><a id="line.292">        drawMatchesKnn_0(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3], matchesMask_mat.nativeObj, flags);</a>
+<span class="sourceLineNo">293</span><a id="line.293">    }</a>
 <span class="sourceLineNo">294</span><a id="line.294"></a>
-<span class="sourceLineNo">295</span><a id="line.295">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_DMatch matches1to2, Mat&amp; outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_char matchesMask = std::vector&lt;char&gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
-<span class="sourceLineNo">296</span><a id="line.296">    private static native void drawMatches_0(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj, int flags);</a>
-<span class="sourceLineNo">297</span><a id="line.297">    private static native void drawMatches_1(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj);</a>
-<span class="sourceLineNo">298</span><a id="line.298">    private static native void drawMatches_2(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3);</a>
-<span class="sourceLineNo">299</span><a id="line.299">    private static native void drawMatches_3(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3);</a>
-<span class="sourceLineNo">300</span><a id="line.300">    private static native void drawMatches_4(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj);</a>
-<span class="sourceLineNo">301</span><a id="line.301"></a>
-<span class="sourceLineNo">302</span><a id="line.302">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_vector_DMatch matches1to2, Mat&amp; outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_vector_char matchesMask = std::vector&lt;std::vector&lt;char&gt; &gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
-<span class="sourceLineNo">303</span><a id="line.303">    private static native void drawMatchesKnn_0(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj, int flags);</a>
-<span class="sourceLineNo">304</span><a id="line.304">    private static native void drawMatchesKnn_1(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj);</a>
-<span class="sourceLineNo">305</span><a id="line.305">    private static native void drawMatchesKnn_2(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3);</a>
-<span class="sourceLineNo">306</span><a id="line.306">    private static native void drawMatchesKnn_3(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3);</a>
-<span class="sourceLineNo">307</span><a id="line.307">    private static native void drawMatchesKnn_4(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj);</a>
-<span class="sourceLineNo">308</span><a id="line.308"></a>
-<span class="sourceLineNo">309</span><a id="line.309">}</a>
+<span class="sourceLineNo">295</span><a id="line.295">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor, Scalar singlePointColor, List&lt;MatOfByte&gt; matchesMask) {</a>
+<span class="sourceLineNo">296</span><a id="line.296">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">297</span><a id="line.297">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">298</span><a id="line.298">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
+<span class="sourceLineNo">299</span><a id="line.299">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
+<span class="sourceLineNo">300</span><a id="line.300">        List&lt;Mat&gt; matchesMask_tmplm = new ArrayList&lt;Mat&gt;((matchesMask != null) ? matchesMask.size() : 0);</a>
+<span class="sourceLineNo">301</span><a id="line.301">        Mat matchesMask_mat = Converters.vector_vector_char_to_Mat(matchesMask, matchesMask_tmplm);</a>
+<span class="sourceLineNo">302</span><a id="line.302">        drawMatchesKnn_1(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3], matchesMask_mat.nativeObj);</a>
+<span class="sourceLineNo">303</span><a id="line.303">    }</a>
+<span class="sourceLineNo">304</span><a id="line.304"></a>
+<span class="sourceLineNo">305</span><a id="line.305">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor, Scalar singlePointColor) {</a>
+<span class="sourceLineNo">306</span><a id="line.306">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">307</span><a id="line.307">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">308</span><a id="line.308">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
+<span class="sourceLineNo">309</span><a id="line.309">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
+<span class="sourceLineNo">310</span><a id="line.310">        drawMatchesKnn_2(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3], singlePointColor.val[0], singlePointColor.val[1], singlePointColor.val[2], singlePointColor.val[3]);</a>
+<span class="sourceLineNo">311</span><a id="line.311">    }</a>
+<span class="sourceLineNo">312</span><a id="line.312"></a>
+<span class="sourceLineNo">313</span><a id="line.313">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg, Scalar matchColor) {</a>
+<span class="sourceLineNo">314</span><a id="line.314">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">315</span><a id="line.315">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">316</span><a id="line.316">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
+<span class="sourceLineNo">317</span><a id="line.317">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
+<span class="sourceLineNo">318</span><a id="line.318">        drawMatchesKnn_3(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj, matchColor.val[0], matchColor.val[1], matchColor.val[2], matchColor.val[3]);</a>
+<span class="sourceLineNo">319</span><a id="line.319">    }</a>
+<span class="sourceLineNo">320</span><a id="line.320"></a>
+<span class="sourceLineNo">321</span><a id="line.321">    public static void drawMatchesKnn(Mat img1, MatOfKeyPoint keypoints1, Mat img2, MatOfKeyPoint keypoints2, List&lt;MatOfDMatch&gt; matches1to2, Mat outImg) {</a>
+<span class="sourceLineNo">322</span><a id="line.322">        Mat keypoints1_mat = keypoints1;</a>
+<span class="sourceLineNo">323</span><a id="line.323">        Mat keypoints2_mat = keypoints2;</a>
+<span class="sourceLineNo">324</span><a id="line.324">        List&lt;Mat&gt; matches1to2_tmplm = new ArrayList&lt;Mat&gt;((matches1to2 != null) ? matches1to2.size() : 0);</a>
+<span class="sourceLineNo">325</span><a id="line.325">        Mat matches1to2_mat = Converters.vector_vector_DMatch_to_Mat(matches1to2, matches1to2_tmplm);</a>
+<span class="sourceLineNo">326</span><a id="line.326">        drawMatchesKnn_4(img1.nativeObj, keypoints1_mat.nativeObj, img2.nativeObj, keypoints2_mat.nativeObj, matches1to2_mat.nativeObj, outImg.nativeObj);</a>
+<span class="sourceLineNo">327</span><a id="line.327">    }</a>
+<span class="sourceLineNo">328</span><a id="line.328"></a>
+<span class="sourceLineNo">329</span><a id="line.329"></a>
+<span class="sourceLineNo">330</span><a id="line.330"></a>
+<span class="sourceLineNo">331</span><a id="line.331"></a>
+<span class="sourceLineNo">332</span><a id="line.332">    // C++:  void cv::drawKeypoints(Mat image, vector_KeyPoint keypoints, Mat&amp; outImage, Scalar color = Scalar::all(-1), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
+<span class="sourceLineNo">333</span><a id="line.333">    private static native void drawKeypoints_0(long image_nativeObj, long keypoints_mat_nativeObj, long outImage_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3, int flags);</a>
+<span class="sourceLineNo">334</span><a id="line.334">    private static native void drawKeypoints_1(long image_nativeObj, long keypoints_mat_nativeObj, long outImage_nativeObj, double color_val0, double color_val1, double color_val2, double color_val3);</a>
+<span class="sourceLineNo">335</span><a id="line.335">    private static native void drawKeypoints_2(long image_nativeObj, long keypoints_mat_nativeObj, long outImage_nativeObj);</a>
+<span class="sourceLineNo">336</span><a id="line.336"></a>
+<span class="sourceLineNo">337</span><a id="line.337">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_DMatch matches1to2, Mat&amp; outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_char matchesMask = std::vector&lt;char&gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
+<span class="sourceLineNo">338</span><a id="line.338">    private static native void drawMatches_0(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj, int flags);</a>
+<span class="sourceLineNo">339</span><a id="line.339">    private static native void drawMatches_1(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj);</a>
+<span class="sourceLineNo">340</span><a id="line.340">    private static native void drawMatches_2(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3);</a>
+<span class="sourceLineNo">341</span><a id="line.341">    private static native void drawMatches_3(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3);</a>
+<span class="sourceLineNo">342</span><a id="line.342">    private static native void drawMatches_4(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj);</a>
+<span class="sourceLineNo">343</span><a id="line.343"></a>
+<span class="sourceLineNo">344</span><a id="line.344">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_DMatch matches1to2, Mat&amp; outImg, int matchesThickness, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_char matchesMask = std::vector&lt;char&gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
+<span class="sourceLineNo">345</span><a id="line.345">    private static native void drawMatches_5(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, int matchesThickness, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj, int flags);</a>
+<span class="sourceLineNo">346</span><a id="line.346">    private static native void drawMatches_6(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, int matchesThickness, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj);</a>
+<span class="sourceLineNo">347</span><a id="line.347">    private static native void drawMatches_7(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, int matchesThickness, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3);</a>
+<span class="sourceLineNo">348</span><a id="line.348">    private static native void drawMatches_8(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, int matchesThickness, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3);</a>
+<span class="sourceLineNo">349</span><a id="line.349">    private static native void drawMatches_9(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, int matchesThickness);</a>
+<span class="sourceLineNo">350</span><a id="line.350"></a>
+<span class="sourceLineNo">351</span><a id="line.351">    // C++:  void cv::drawMatches(Mat img1, vector_KeyPoint keypoints1, Mat img2, vector_KeyPoint keypoints2, vector_vector_DMatch matches1to2, Mat&amp; outImg, Scalar matchColor = Scalar::all(-1), Scalar singlePointColor = Scalar::all(-1), vector_vector_char matchesMask = std::vector&lt;std::vector&lt;char&gt; &gt;(), DrawMatchesFlags flags = DrawMatchesFlags::DEFAULT)</a>
+<span class="sourceLineNo">352</span><a id="line.352">    private static native void drawMatchesKnn_0(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj, int flags);</a>
+<span class="sourceLineNo">353</span><a id="line.353">    private static native void drawMatchesKnn_1(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3, long matchesMask_mat_nativeObj);</a>
+<span class="sourceLineNo">354</span><a id="line.354">    private static native void drawMatchesKnn_2(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3, double singlePointColor_val0, double singlePointColor_val1, double singlePointColor_val2, double singlePointColor_val3);</a>
+<span class="sourceLineNo">355</span><a id="line.355">    private static native void drawMatchesKnn_3(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj, double matchColor_val0, double matchColor_val1, double matchColor_val2, double matchColor_val3);</a>
+<span class="sourceLineNo">356</span><a id="line.356">    private static native void drawMatchesKnn_4(long img1_nativeObj, long keypoints1_mat_nativeObj, long img2_nativeObj, long keypoints2_mat_nativeObj, long matches1to2_mat_nativeObj, long outImg_nativeObj);</a>
+<span class="sourceLineNo">357</span><a id="line.357"></a>
+<span class="sourceLineNo">358</span><a id="line.358">}</a>
 
 
 

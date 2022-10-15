@@ -153,182 +153,185 @@
 <span class="sourceLineNo">141</span><a id="line.141">   *</a>
 <span class="sourceLineNo">142</span><a id="line.142">   * @param name property name</a>
 <span class="sourceLineNo">143</span><a id="line.143">   * @param value property value (JSON string)</a>
-<span class="sourceLineNo">144</span><a id="line.144">   */</a>
-<span class="sourceLineNo">145</span><a id="line.145">  public void setProperty(String name, String value) {</a>
-<span class="sourceLineNo">146</span><a id="line.146">    NetworkTablesJNI.setTopicProperty(m_handle, name, value);</a>
-<span class="sourceLineNo">147</span><a id="line.147">  }</a>
-<span class="sourceLineNo">148</span><a id="line.148"></a>
-<span class="sourceLineNo">149</span><a id="line.149">  /**</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * Deletes a property. Has no effect if the property does not exist.</a>
-<span class="sourceLineNo">151</span><a id="line.151">   *</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * @param name property name</a>
-<span class="sourceLineNo">153</span><a id="line.153">   */</a>
-<span class="sourceLineNo">154</span><a id="line.154">  public void deleteProperty(String name) {</a>
-<span class="sourceLineNo">155</span><a id="line.155">    NetworkTablesJNI.deleteTopicProperty(m_handle, name);</a>
-<span class="sourceLineNo">156</span><a id="line.156">  }</a>
-<span class="sourceLineNo">157</span><a id="line.157"></a>
-<span class="sourceLineNo">158</span><a id="line.158">  /**</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * Gets all topic properties as a JSON object string. Each key in the object is the property name,</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * and the corresponding value is the property value.</a>
-<span class="sourceLineNo">161</span><a id="line.161">   *</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @return JSON string</a>
-<span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  public String getProperties() {</a>
-<span class="sourceLineNo">165</span><a id="line.165">    return NetworkTablesJNI.getTopicProperties(m_handle);</a>
-<span class="sourceLineNo">166</span><a id="line.166">  }</a>
-<span class="sourceLineNo">167</span><a id="line.167"></a>
-<span class="sourceLineNo">168</span><a id="line.168">  /**</a>
-<span class="sourceLineNo">169</span><a id="line.169">   * Updates multiple topic properties. Each key in the passed-in object is the name of the property</a>
-<span class="sourceLineNo">170</span><a id="line.170">   * to add/update, and the corresponding value is the property value to set for that property. Null</a>
-<span class="sourceLineNo">171</span><a id="line.171">   * values result in deletion of the corresponding property.</a>
-<span class="sourceLineNo">172</span><a id="line.172">   *</a>
-<span class="sourceLineNo">173</span><a id="line.173">   * @param properties JSON object string with keys to add/update/delete</a>
-<span class="sourceLineNo">174</span><a id="line.174">   */</a>
-<span class="sourceLineNo">175</span><a id="line.175">  public void setProperties(String properties) {</a>
-<span class="sourceLineNo">176</span><a id="line.176">    NetworkTablesJNI.setTopicProperties(m_handle, properties);</a>
-<span class="sourceLineNo">177</span><a id="line.177">  }</a>
-<span class="sourceLineNo">178</span><a id="line.178"></a>
-<span class="sourceLineNo">179</span><a id="line.179">  /**</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * Create a new subscriber to the topic.</a>
-<span class="sourceLineNo">181</span><a id="line.181">   *</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * &lt;p&gt;The subscriber is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * @throws IllegalArgumentException if properties is not parseable as JSON</a>
+<span class="sourceLineNo">145</span><a id="line.145">   */</a>
+<span class="sourceLineNo">146</span><a id="line.146">  public void setProperty(String name, String value) {</a>
+<span class="sourceLineNo">147</span><a id="line.147">    NetworkTablesJNI.setTopicProperty(m_handle, name, value);</a>
+<span class="sourceLineNo">148</span><a id="line.148">  }</a>
+<span class="sourceLineNo">149</span><a id="line.149"></a>
+<span class="sourceLineNo">150</span><a id="line.150">  /**</a>
+<span class="sourceLineNo">151</span><a id="line.151">   * Deletes a property. Has no effect if the property does not exist.</a>
+<span class="sourceLineNo">152</span><a id="line.152">   *</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * @param name property name</a>
+<span class="sourceLineNo">154</span><a id="line.154">   */</a>
+<span class="sourceLineNo">155</span><a id="line.155">  public void deleteProperty(String name) {</a>
+<span class="sourceLineNo">156</span><a id="line.156">    NetworkTablesJNI.deleteTopicProperty(m_handle, name);</a>
+<span class="sourceLineNo">157</span><a id="line.157">  }</a>
+<span class="sourceLineNo">158</span><a id="line.158"></a>
+<span class="sourceLineNo">159</span><a id="line.159">  /**</a>
+<span class="sourceLineNo">160</span><a id="line.160">   * Gets all topic properties as a JSON object string. Each key in the object is the property name,</a>
+<span class="sourceLineNo">161</span><a id="line.161">   * and the corresponding value is the property value.</a>
+<span class="sourceLineNo">162</span><a id="line.162">   *</a>
+<span class="sourceLineNo">163</span><a id="line.163">   * @return JSON string</a>
+<span class="sourceLineNo">164</span><a id="line.164">   */</a>
+<span class="sourceLineNo">165</span><a id="line.165">  public String getProperties() {</a>
+<span class="sourceLineNo">166</span><a id="line.166">    return NetworkTablesJNI.getTopicProperties(m_handle);</a>
+<span class="sourceLineNo">167</span><a id="line.167">  }</a>
+<span class="sourceLineNo">168</span><a id="line.168"></a>
+<span class="sourceLineNo">169</span><a id="line.169">  /**</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * Updates multiple topic properties. Each key in the passed-in object is the name of the property</a>
+<span class="sourceLineNo">171</span><a id="line.171">   * to add/update, and the corresponding value is the property value to set for that property. Null</a>
+<span class="sourceLineNo">172</span><a id="line.172">   * values result in deletion of the corresponding property.</a>
+<span class="sourceLineNo">173</span><a id="line.173">   *</a>
+<span class="sourceLineNo">174</span><a id="line.174">   * @param properties JSON object string with keys to add/update/delete</a>
+<span class="sourceLineNo">175</span><a id="line.175">   * @throws IllegalArgumentException if properties is not a JSON object</a>
+<span class="sourceLineNo">176</span><a id="line.176">   */</a>
+<span class="sourceLineNo">177</span><a id="line.177">  public void setProperties(String properties) {</a>
+<span class="sourceLineNo">178</span><a id="line.178">    NetworkTablesJNI.setTopicProperties(m_handle, properties);</a>
+<span class="sourceLineNo">179</span><a id="line.179">  }</a>
+<span class="sourceLineNo">180</span><a id="line.180"></a>
+<span class="sourceLineNo">181</span><a id="line.181">  /**</a>
+<span class="sourceLineNo">182</span><a id="line.182">   * Create a new subscriber to the topic.</a>
 <span class="sourceLineNo">183</span><a id="line.183">   *</a>
-<span class="sourceLineNo">184</span><a id="line.184">   * @param options subscribe options</a>
-<span class="sourceLineNo">185</span><a id="line.185">   * @return subscriber</a>
-<span class="sourceLineNo">186</span><a id="line.186">   */</a>
-<span class="sourceLineNo">187</span><a id="line.187">  public GenericSubscriber genericSubscribe(PubSubOption... options) {</a>
-<span class="sourceLineNo">188</span><a id="line.188">    return genericSubscribe("", options);</a>
-<span class="sourceLineNo">189</span><a id="line.189">  }</a>
-<span class="sourceLineNo">190</span><a id="line.190"></a>
-<span class="sourceLineNo">191</span><a id="line.191">  /**</a>
-<span class="sourceLineNo">192</span><a id="line.192">   * Create a new subscriber to the topic.</a>
-<span class="sourceLineNo">193</span><a id="line.193">   *</a>
-<span class="sourceLineNo">194</span><a id="line.194">   * &lt;p&gt;The subscriber is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   * &lt;p&gt;The subscriber is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">185</span><a id="line.185">   *</a>
+<span class="sourceLineNo">186</span><a id="line.186">   * @param options subscribe options</a>
+<span class="sourceLineNo">187</span><a id="line.187">   * @return subscriber</a>
+<span class="sourceLineNo">188</span><a id="line.188">   */</a>
+<span class="sourceLineNo">189</span><a id="line.189">  public GenericSubscriber genericSubscribe(PubSubOption... options) {</a>
+<span class="sourceLineNo">190</span><a id="line.190">    return genericSubscribe("", options);</a>
+<span class="sourceLineNo">191</span><a id="line.191">  }</a>
+<span class="sourceLineNo">192</span><a id="line.192"></a>
+<span class="sourceLineNo">193</span><a id="line.193">  /**</a>
+<span class="sourceLineNo">194</span><a id="line.194">   * Create a new subscriber to the topic.</a>
 <span class="sourceLineNo">195</span><a id="line.195">   *</a>
-<span class="sourceLineNo">196</span><a id="line.196">   * &lt;p&gt;Subscribers that do not match the published data type do not return any values. To determine</a>
-<span class="sourceLineNo">197</span><a id="line.197">   * if the data type matches, use the appropriate Topic functions.</a>
-<span class="sourceLineNo">198</span><a id="line.198">   *</a>
-<span class="sourceLineNo">199</span><a id="line.199">   * @param typeString type string</a>
-<span class="sourceLineNo">200</span><a id="line.200">   * @param options subscribe options</a>
-<span class="sourceLineNo">201</span><a id="line.201">   * @return subscriber</a>
-<span class="sourceLineNo">202</span><a id="line.202">   */</a>
-<span class="sourceLineNo">203</span><a id="line.203">  public GenericSubscriber genericSubscribe(String typeString, PubSubOption... options) {</a>
-<span class="sourceLineNo">204</span><a id="line.204">    return new GenericEntryImpl(</a>
-<span class="sourceLineNo">205</span><a id="line.205">        this,</a>
-<span class="sourceLineNo">206</span><a id="line.206">        NetworkTablesJNI.subscribe(</a>
-<span class="sourceLineNo">207</span><a id="line.207">            m_handle, NetworkTableType.getFromString(typeString).getValue(), typeString, options));</a>
-<span class="sourceLineNo">208</span><a id="line.208">  }</a>
-<span class="sourceLineNo">209</span><a id="line.209"></a>
-<span class="sourceLineNo">210</span><a id="line.210">  /**</a>
-<span class="sourceLineNo">211</span><a id="line.211">   * Create a new publisher to the topic.</a>
-<span class="sourceLineNo">212</span><a id="line.212">   *</a>
-<span class="sourceLineNo">213</span><a id="line.213">   * &lt;p&gt;The publisher is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">196</span><a id="line.196">   * &lt;p&gt;The subscriber is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">197</span><a id="line.197">   *</a>
+<span class="sourceLineNo">198</span><a id="line.198">   * &lt;p&gt;Subscribers that do not match the published data type do not return any values. To determine</a>
+<span class="sourceLineNo">199</span><a id="line.199">   * if the data type matches, use the appropriate Topic functions.</a>
+<span class="sourceLineNo">200</span><a id="line.200">   *</a>
+<span class="sourceLineNo">201</span><a id="line.201">   * @param typeString type string</a>
+<span class="sourceLineNo">202</span><a id="line.202">   * @param options subscribe options</a>
+<span class="sourceLineNo">203</span><a id="line.203">   * @return subscriber</a>
+<span class="sourceLineNo">204</span><a id="line.204">   */</a>
+<span class="sourceLineNo">205</span><a id="line.205">  public GenericSubscriber genericSubscribe(String typeString, PubSubOption... options) {</a>
+<span class="sourceLineNo">206</span><a id="line.206">    return new GenericEntryImpl(</a>
+<span class="sourceLineNo">207</span><a id="line.207">        this,</a>
+<span class="sourceLineNo">208</span><a id="line.208">        NetworkTablesJNI.subscribe(</a>
+<span class="sourceLineNo">209</span><a id="line.209">            m_handle, NetworkTableType.getFromString(typeString).getValue(), typeString, options));</a>
+<span class="sourceLineNo">210</span><a id="line.210">  }</a>
+<span class="sourceLineNo">211</span><a id="line.211"></a>
+<span class="sourceLineNo">212</span><a id="line.212">  /**</a>
+<span class="sourceLineNo">213</span><a id="line.213">   * Create a new publisher to the topic.</a>
 <span class="sourceLineNo">214</span><a id="line.214">   *</a>
-<span class="sourceLineNo">215</span><a id="line.215">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
-<span class="sourceLineNo">216</span><a id="line.216">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
-<span class="sourceLineNo">217</span><a id="line.217">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * the data type matches, use the appropriate Topic functions.</a>
-<span class="sourceLineNo">219</span><a id="line.219">   *</a>
-<span class="sourceLineNo">220</span><a id="line.220">   * @param typeString type string</a>
-<span class="sourceLineNo">221</span><a id="line.221">   * @param options publish options</a>
-<span class="sourceLineNo">222</span><a id="line.222">   * @return publisher</a>
-<span class="sourceLineNo">223</span><a id="line.223">   */</a>
-<span class="sourceLineNo">224</span><a id="line.224">  public GenericPublisher genericPublish(String typeString, PubSubOption... options) {</a>
-<span class="sourceLineNo">225</span><a id="line.225">    return new GenericEntryImpl(</a>
-<span class="sourceLineNo">226</span><a id="line.226">        this,</a>
-<span class="sourceLineNo">227</span><a id="line.227">        NetworkTablesJNI.publish(</a>
-<span class="sourceLineNo">228</span><a id="line.228">            m_handle, NetworkTableType.getFromString(typeString).getValue(), typeString, options));</a>
-<span class="sourceLineNo">229</span><a id="line.229">  }</a>
-<span class="sourceLineNo">230</span><a id="line.230"></a>
-<span class="sourceLineNo">231</span><a id="line.231">  /**</a>
-<span class="sourceLineNo">232</span><a id="line.232">   * Create a new publisher to the topic, with type string and initial properties.</a>
-<span class="sourceLineNo">233</span><a id="line.233">   *</a>
-<span class="sourceLineNo">234</span><a id="line.234">   * &lt;p&gt;The publisher is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">215</span><a id="line.215">   * &lt;p&gt;The publisher is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">216</span><a id="line.216">   *</a>
+<span class="sourceLineNo">217</span><a id="line.217">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
+<span class="sourceLineNo">220</span><a id="line.220">   * the data type matches, use the appropriate Topic functions.</a>
+<span class="sourceLineNo">221</span><a id="line.221">   *</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * @param typeString type string</a>
+<span class="sourceLineNo">223</span><a id="line.223">   * @param options publish options</a>
+<span class="sourceLineNo">224</span><a id="line.224">   * @return publisher</a>
+<span class="sourceLineNo">225</span><a id="line.225">   */</a>
+<span class="sourceLineNo">226</span><a id="line.226">  public GenericPublisher genericPublish(String typeString, PubSubOption... options) {</a>
+<span class="sourceLineNo">227</span><a id="line.227">    return new GenericEntryImpl(</a>
+<span class="sourceLineNo">228</span><a id="line.228">        this,</a>
+<span class="sourceLineNo">229</span><a id="line.229">        NetworkTablesJNI.publish(</a>
+<span class="sourceLineNo">230</span><a id="line.230">            m_handle, NetworkTableType.getFromString(typeString).getValue(), typeString, options));</a>
+<span class="sourceLineNo">231</span><a id="line.231">  }</a>
+<span class="sourceLineNo">232</span><a id="line.232"></a>
+<span class="sourceLineNo">233</span><a id="line.233">  /**</a>
+<span class="sourceLineNo">234</span><a id="line.234">   * Create a new publisher to the topic, with type string and initial properties.</a>
 <span class="sourceLineNo">235</span><a id="line.235">   *</a>
-<span class="sourceLineNo">236</span><a id="line.236">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
-<span class="sourceLineNo">237</span><a id="line.237">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
-<span class="sourceLineNo">238</span><a id="line.238">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
-<span class="sourceLineNo">239</span><a id="line.239">   * the data type matches, use the appropriate Topic functions.</a>
-<span class="sourceLineNo">240</span><a id="line.240">   *</a>
-<span class="sourceLineNo">241</span><a id="line.241">   * @param typeString type string</a>
-<span class="sourceLineNo">242</span><a id="line.242">   * @param properties JSON properties</a>
-<span class="sourceLineNo">243</span><a id="line.243">   * @param options publish options</a>
-<span class="sourceLineNo">244</span><a id="line.244">   * @return publisher</a>
-<span class="sourceLineNo">245</span><a id="line.245">   */</a>
-<span class="sourceLineNo">246</span><a id="line.246">  public GenericPublisher genericPublishEx(</a>
-<span class="sourceLineNo">247</span><a id="line.247">      String typeString, String properties, PubSubOption... options) {</a>
-<span class="sourceLineNo">248</span><a id="line.248">    return new GenericEntryImpl(</a>
-<span class="sourceLineNo">249</span><a id="line.249">        this,</a>
-<span class="sourceLineNo">250</span><a id="line.250">        NetworkTablesJNI.publishEx(</a>
-<span class="sourceLineNo">251</span><a id="line.251">            m_handle,</a>
-<span class="sourceLineNo">252</span><a id="line.252">            NetworkTableType.getFromString(typeString).getValue(),</a>
-<span class="sourceLineNo">253</span><a id="line.253">            typeString,</a>
-<span class="sourceLineNo">254</span><a id="line.254">            properties,</a>
-<span class="sourceLineNo">255</span><a id="line.255">            options));</a>
-<span class="sourceLineNo">256</span><a id="line.256">  }</a>
-<span class="sourceLineNo">257</span><a id="line.257"></a>
-<span class="sourceLineNo">258</span><a id="line.258">  /**</a>
-<span class="sourceLineNo">259</span><a id="line.259">   * Create a new generic entry for the topic.</a>
-<span class="sourceLineNo">260</span><a id="line.260">   *</a>
-<span class="sourceLineNo">261</span><a id="line.261">   * &lt;p&gt;Entries act as a combination of a subscriber and a weak publisher. The subscriber is active</a>
-<span class="sourceLineNo">262</span><a id="line.262">   * as long as the entry is not closed. The publisher is created when the entry is first written</a>
-<span class="sourceLineNo">263</span><a id="line.263">   * to, and remains active until either unpublish() is called or the entry is closed.</a>
-<span class="sourceLineNo">264</span><a id="line.264">   *</a>
-<span class="sourceLineNo">265</span><a id="line.265">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
-<span class="sourceLineNo">266</span><a id="line.266">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
-<span class="sourceLineNo">267</span><a id="line.267">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
-<span class="sourceLineNo">268</span><a id="line.268">   * the data type matches, use the appropriate Topic functions.</a>
-<span class="sourceLineNo">269</span><a id="line.269">   *</a>
-<span class="sourceLineNo">270</span><a id="line.270">   * @param options publish and/or subscribe options</a>
-<span class="sourceLineNo">271</span><a id="line.271">   * @return entry</a>
-<span class="sourceLineNo">272</span><a id="line.272">   */</a>
-<span class="sourceLineNo">273</span><a id="line.273">  public GenericEntry getGenericEntry(PubSubOption... options) {</a>
-<span class="sourceLineNo">274</span><a id="line.274">    return getGenericEntry("", options);</a>
-<span class="sourceLineNo">275</span><a id="line.275">  }</a>
-<span class="sourceLineNo">276</span><a id="line.276"></a>
-<span class="sourceLineNo">277</span><a id="line.277">  /**</a>
-<span class="sourceLineNo">278</span><a id="line.278">   * Create a new generic entry for the topic.</a>
-<span class="sourceLineNo">279</span><a id="line.279">   *</a>
-<span class="sourceLineNo">280</span><a id="line.280">   * &lt;p&gt;Entries act as a combination of a subscriber and a weak publisher. The subscriber is active</a>
-<span class="sourceLineNo">281</span><a id="line.281">   * as long as the entry is not closed. The publisher is created when the entry is first written</a>
-<span class="sourceLineNo">282</span><a id="line.282">   * to, and remains active until either unpublish() is called or the entry is closed.</a>
-<span class="sourceLineNo">283</span><a id="line.283">   *</a>
-<span class="sourceLineNo">284</span><a id="line.284">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
-<span class="sourceLineNo">285</span><a id="line.285">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
-<span class="sourceLineNo">286</span><a id="line.286">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
-<span class="sourceLineNo">287</span><a id="line.287">   * the data type matches, use the appropriate Topic functions.</a>
-<span class="sourceLineNo">288</span><a id="line.288">   *</a>
-<span class="sourceLineNo">289</span><a id="line.289">   * @param typeString type string</a>
-<span class="sourceLineNo">290</span><a id="line.290">   * @param options publish and/or subscribe options</a>
-<span class="sourceLineNo">291</span><a id="line.291">   * @return entry</a>
-<span class="sourceLineNo">292</span><a id="line.292">   */</a>
-<span class="sourceLineNo">293</span><a id="line.293">  public GenericEntry getGenericEntry(String typeString, PubSubOption... options) {</a>
-<span class="sourceLineNo">294</span><a id="line.294">    return new GenericEntryImpl(</a>
-<span class="sourceLineNo">295</span><a id="line.295">        this,</a>
-<span class="sourceLineNo">296</span><a id="line.296">        NetworkTablesJNI.getEntry(</a>
-<span class="sourceLineNo">297</span><a id="line.297">            m_handle, NetworkTableType.getFromString(typeString).getValue(), typeString, options));</a>
-<span class="sourceLineNo">298</span><a id="line.298">  }</a>
-<span class="sourceLineNo">299</span><a id="line.299"></a>
-<span class="sourceLineNo">300</span><a id="line.300">  @Override</a>
-<span class="sourceLineNo">301</span><a id="line.301">  public boolean equals(Object other) {</a>
-<span class="sourceLineNo">302</span><a id="line.302">    if (other == this) {</a>
-<span class="sourceLineNo">303</span><a id="line.303">      return true;</a>
-<span class="sourceLineNo">304</span><a id="line.304">    }</a>
-<span class="sourceLineNo">305</span><a id="line.305">    if (!(other instanceof Topic)) {</a>
-<span class="sourceLineNo">306</span><a id="line.306">      return false;</a>
+<span class="sourceLineNo">236</span><a id="line.236">   * &lt;p&gt;The publisher is only active as long as the returned object is not closed.</a>
+<span class="sourceLineNo">237</span><a id="line.237">   *</a>
+<span class="sourceLineNo">238</span><a id="line.238">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
+<span class="sourceLineNo">239</span><a id="line.239">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
+<span class="sourceLineNo">240</span><a id="line.240">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
+<span class="sourceLineNo">241</span><a id="line.241">   * the data type matches, use the appropriate Topic functions.</a>
+<span class="sourceLineNo">242</span><a id="line.242">   *</a>
+<span class="sourceLineNo">243</span><a id="line.243">   * @param typeString type string</a>
+<span class="sourceLineNo">244</span><a id="line.244">   * @param properties JSON properties</a>
+<span class="sourceLineNo">245</span><a id="line.245">   * @param options publish options</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * @return publisher</a>
+<span class="sourceLineNo">247</span><a id="line.247">   * @throws IllegalArgumentException if properties is not a JSON object</a>
+<span class="sourceLineNo">248</span><a id="line.248">   */</a>
+<span class="sourceLineNo">249</span><a id="line.249">  public GenericPublisher genericPublishEx(</a>
+<span class="sourceLineNo">250</span><a id="line.250">      String typeString, String properties, PubSubOption... options) {</a>
+<span class="sourceLineNo">251</span><a id="line.251">    return new GenericEntryImpl(</a>
+<span class="sourceLineNo">252</span><a id="line.252">        this,</a>
+<span class="sourceLineNo">253</span><a id="line.253">        NetworkTablesJNI.publishEx(</a>
+<span class="sourceLineNo">254</span><a id="line.254">            m_handle,</a>
+<span class="sourceLineNo">255</span><a id="line.255">            NetworkTableType.getFromString(typeString).getValue(),</a>
+<span class="sourceLineNo">256</span><a id="line.256">            typeString,</a>
+<span class="sourceLineNo">257</span><a id="line.257">            properties,</a>
+<span class="sourceLineNo">258</span><a id="line.258">            options));</a>
+<span class="sourceLineNo">259</span><a id="line.259">  }</a>
+<span class="sourceLineNo">260</span><a id="line.260"></a>
+<span class="sourceLineNo">261</span><a id="line.261">  /**</a>
+<span class="sourceLineNo">262</span><a id="line.262">   * Create a new generic entry for the topic.</a>
+<span class="sourceLineNo">263</span><a id="line.263">   *</a>
+<span class="sourceLineNo">264</span><a id="line.264">   * &lt;p&gt;Entries act as a combination of a subscriber and a weak publisher. The subscriber is active</a>
+<span class="sourceLineNo">265</span><a id="line.265">   * as long as the entry is not closed. The publisher is created when the entry is first written</a>
+<span class="sourceLineNo">266</span><a id="line.266">   * to, and remains active until either unpublish() is called or the entry is closed.</a>
+<span class="sourceLineNo">267</span><a id="line.267">   *</a>
+<span class="sourceLineNo">268</span><a id="line.268">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
+<span class="sourceLineNo">269</span><a id="line.269">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
+<span class="sourceLineNo">270</span><a id="line.270">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
+<span class="sourceLineNo">271</span><a id="line.271">   * the data type matches, use the appropriate Topic functions.</a>
+<span class="sourceLineNo">272</span><a id="line.272">   *</a>
+<span class="sourceLineNo">273</span><a id="line.273">   * @param options publish and/or subscribe options</a>
+<span class="sourceLineNo">274</span><a id="line.274">   * @return entry</a>
+<span class="sourceLineNo">275</span><a id="line.275">   */</a>
+<span class="sourceLineNo">276</span><a id="line.276">  public GenericEntry getGenericEntry(PubSubOption... options) {</a>
+<span class="sourceLineNo">277</span><a id="line.277">    return getGenericEntry("", options);</a>
+<span class="sourceLineNo">278</span><a id="line.278">  }</a>
+<span class="sourceLineNo">279</span><a id="line.279"></a>
+<span class="sourceLineNo">280</span><a id="line.280">  /**</a>
+<span class="sourceLineNo">281</span><a id="line.281">   * Create a new generic entry for the topic.</a>
+<span class="sourceLineNo">282</span><a id="line.282">   *</a>
+<span class="sourceLineNo">283</span><a id="line.283">   * &lt;p&gt;Entries act as a combination of a subscriber and a weak publisher. The subscriber is active</a>
+<span class="sourceLineNo">284</span><a id="line.284">   * as long as the entry is not closed. The publisher is created when the entry is first written</a>
+<span class="sourceLineNo">285</span><a id="line.285">   * to, and remains active until either unpublish() is called or the entry is closed.</a>
+<span class="sourceLineNo">286</span><a id="line.286">   *</a>
+<span class="sourceLineNo">287</span><a id="line.287">   * &lt;p&gt;It is not possible to publish two different data types to the same topic. Conflicts between</a>
+<span class="sourceLineNo">288</span><a id="line.288">   * publishers are typically resolved by the server on a first-come, first-served basis. Any</a>
+<span class="sourceLineNo">289</span><a id="line.289">   * published values that do not match the topic's data type are dropped (ignored). To determine if</a>
+<span class="sourceLineNo">290</span><a id="line.290">   * the data type matches, use the appropriate Topic functions.</a>
+<span class="sourceLineNo">291</span><a id="line.291">   *</a>
+<span class="sourceLineNo">292</span><a id="line.292">   * @param typeString type string</a>
+<span class="sourceLineNo">293</span><a id="line.293">   * @param options publish and/or subscribe options</a>
+<span class="sourceLineNo">294</span><a id="line.294">   * @return entry</a>
+<span class="sourceLineNo">295</span><a id="line.295">   */</a>
+<span class="sourceLineNo">296</span><a id="line.296">  public GenericEntry getGenericEntry(String typeString, PubSubOption... options) {</a>
+<span class="sourceLineNo">297</span><a id="line.297">    return new GenericEntryImpl(</a>
+<span class="sourceLineNo">298</span><a id="line.298">        this,</a>
+<span class="sourceLineNo">299</span><a id="line.299">        NetworkTablesJNI.getEntry(</a>
+<span class="sourceLineNo">300</span><a id="line.300">            m_handle, NetworkTableType.getFromString(typeString).getValue(), typeString, options));</a>
+<span class="sourceLineNo">301</span><a id="line.301">  }</a>
+<span class="sourceLineNo">302</span><a id="line.302"></a>
+<span class="sourceLineNo">303</span><a id="line.303">  @Override</a>
+<span class="sourceLineNo">304</span><a id="line.304">  public boolean equals(Object other) {</a>
+<span class="sourceLineNo">305</span><a id="line.305">    if (other == this) {</a>
+<span class="sourceLineNo">306</span><a id="line.306">      return true;</a>
 <span class="sourceLineNo">307</span><a id="line.307">    }</a>
-<span class="sourceLineNo">308</span><a id="line.308"></a>
-<span class="sourceLineNo">309</span><a id="line.309">    return m_handle == ((Topic) other).m_handle;</a>
-<span class="sourceLineNo">310</span><a id="line.310">  }</a>
+<span class="sourceLineNo">308</span><a id="line.308">    if (!(other instanceof Topic)) {</a>
+<span class="sourceLineNo">309</span><a id="line.309">      return false;</a>
+<span class="sourceLineNo">310</span><a id="line.310">    }</a>
 <span class="sourceLineNo">311</span><a id="line.311"></a>
-<span class="sourceLineNo">312</span><a id="line.312">  @Override</a>
-<span class="sourceLineNo">313</span><a id="line.313">  public int hashCode() {</a>
-<span class="sourceLineNo">314</span><a id="line.314">    return m_handle;</a>
-<span class="sourceLineNo">315</span><a id="line.315">  }</a>
-<span class="sourceLineNo">316</span><a id="line.316"></a>
-<span class="sourceLineNo">317</span><a id="line.317">  protected NetworkTableInstance m_inst;</a>
-<span class="sourceLineNo">318</span><a id="line.318">  protected int m_handle;</a>
-<span class="sourceLineNo">319</span><a id="line.319">}</a>
+<span class="sourceLineNo">312</span><a id="line.312">    return m_handle == ((Topic) other).m_handle;</a>
+<span class="sourceLineNo">313</span><a id="line.313">  }</a>
+<span class="sourceLineNo">314</span><a id="line.314"></a>
+<span class="sourceLineNo">315</span><a id="line.315">  @Override</a>
+<span class="sourceLineNo">316</span><a id="line.316">  public int hashCode() {</a>
+<span class="sourceLineNo">317</span><a id="line.317">    return m_handle;</a>
+<span class="sourceLineNo">318</span><a id="line.318">  }</a>
+<span class="sourceLineNo">319</span><a id="line.319"></a>
+<span class="sourceLineNo">320</span><a id="line.320">  protected NetworkTableInstance m_inst;</a>
+<span class="sourceLineNo">321</span><a id="line.321">  protected int m_handle;</a>
+<span class="sourceLineNo">322</span><a id="line.322">}</a>
 
 
 
