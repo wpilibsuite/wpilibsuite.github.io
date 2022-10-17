@@ -1,5 +1,7 @@
 var NAVTREEINDEX128 =
 {
+"group___unit_math.html#ga75fe15cca375d6f73fd1b797d491119d":[3,34,16],
+"group___unit_math.html#ga8262877321f58e73f76a90e1317e1608":[3,34,7],
 "group___unit_math.html#ga83597409663ca3af0892acf87844af49":[3,34,1],
 "group___unit_math.html#ga845823260245af2abc83d2cf47f6e74b":[3,34,6],
 "group___unit_math.html#ga84d1ea9cad48f0b77cf892633240e4a6":[3,34,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX128 =
 "group__cscore__c__api.html#ggac4d8e712e12b167a7038c76f195bab10af39e7039a56f2764e6254ab5684c7d70":[3,29,28,0],
 "group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a531216d1d4b3ea14fa63f0b2ccb854fb":[3,29,29,1],
 "group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a5a5280a50a1d758c433390de50260c98":[3,29,29,2],
-"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a613fa58ec2070d0de9cf9d6edfb4a3f4":[3,29,29,0],
-"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406addabbd23bf38f9d142709ee69ef28f27":[3,29,29,4],
-"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406aef9691cb2529d8eed45affefd5ce6300":[3,29,29,3]
+"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a613fa58ec2070d0de9cf9d6edfb4a3f4":[3,29,29,0]
 };

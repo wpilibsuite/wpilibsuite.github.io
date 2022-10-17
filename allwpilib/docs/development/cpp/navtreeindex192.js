@@ -1,5 +1,7 @@
 var NAVTREEINDEX192 =
 {
+"structarg__formatter.html":[6,0,21],
+"structarg__formatter.html#a2760e4ef8eff76fd158743e830a15da3":[6,0,21,2],
 "structarg__formatter.html#a370a39ceab731acd690fe36a1cbcf920":[6,0,21,0],
 "structarg__formatter.html#a55ad5bf4952eea89d8ad91ab70a1a71f":[6,0,21,6],
 "structarg__formatter.html#a672a78bc78c31cac247dda3ee49645d6":[6,0,21,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX192 =
 "structcustom__formatter.html":[6,0,70],
 "structcustom__formatter.html#a4ed3fa02b4d1bf6e434e61b8313a9dd6":[6,0,70,0],
 "structcustom__formatter.html#a8f67332c042b980be0cb368b5e64d1a5":[6,0,70,1],
-"structcustom__formatter.html#aafc42ddcaf7c8e9df197a91f4e485f63":[6,0,70,2],
-"structcustom__formatter.html#acb18f478613eb8afea27c48c6a63843a":[6,0,70,3],
-"structcustom__value.html":[6,0,71]
+"structcustom__formatter.html#aafc42ddcaf7c8e9df197a91f4e485f63":[6,0,70,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"group__hal__analoginput.html#gae96480fd466fe9ee241f4b7055d7a5b8":[3,1,21,8],
+"group__hal__analoginput.html#gae9946d95a93e01a5a58b6eb5e693cefd":[3,1,21,2],
 "group__hal__analoginput.html#gaf1fd63e2870857b1138bfd360fbfa637":[3,1,21,9],
 "group__hal__analogoutput.html":[3,1,17],
 "group__hal__analogoutput.html#ga21a2c6ba8f3d91782a84fad1fb417110":[3,1,17,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "group__hal__encoder.html#ga690eb0d907f4cbb69f34d6e2635151f7":[3,1,5,22],
 "group__hal__encoder.html#ga709fd36ea2db5e2f60877185bab5f451":[3,1,5,6],
 "group__hal__encoder.html#ga883c644c9b9effbabc3fcc5494e989a8":[3,1,5,4],
-"group__hal__encoder.html#ga969d95c6dcf80cf1d73969c56d13f9ab":[3,1,5,17],
-"group__hal__encoder.html#gaa54c77d5065b82a89317f384a343a706":[3,1,5,1],
-"group__hal__encoder.html#gaa9f4051cb83bcd5ba25031cfab3c59a6":[3,1,5,24]
+"group__hal__encoder.html#ga969d95c6dcf80cf1d73969c56d13f9ab":[3,1,5,17]
 };

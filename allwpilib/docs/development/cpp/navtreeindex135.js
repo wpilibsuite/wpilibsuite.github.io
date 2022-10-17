@@ -1,5 +1,7 @@
 var NAVTREEINDEX135 =
 {
+"group__ntcore__cpp__handle__api.html":[3,13],
+"group__ntcore__data__logger__func.html":[3,13,9],
 "group__ntcore__data__logger__func.html#ga268446df7f13fdf24fb244935d9b8eed":[3,13,9,0],
 "group__ntcore__data__logger__func.html#ga2fd4c47bd5c1f6bb3c8e268135f67a36":[3,13,9,2],
 "group__ntcore__data__logger__func.html#ga8392f6242d167a6023172e4e728060ed":[3,13,9,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX135 =
 "group__reader.html#ga1cf5a2d9b687d94f637a36123ef7cec0":[3,4,54],
 "group__reader.html#ga1d79c00c6c013b879b164c26753b3e83":[3,5,27],
 "group__reader.html#ga291a38358bde6992b16edda81f2fcf45":[3,5,33],
-"group__reader.html#ga2b5b8fd101d63c96b6b89e675c981b78":[3,5,8],
-"group__reader.html#ga3950ce57f3f125755cc1cefd1f54e149":[3,5,0],
-"group__reader.html#ga397a8d0738b8d68753a470a988b813aa":[3,5,13]
+"group__reader.html#ga2b5b8fd101d63c96b6b89e675c981b78":[3,5,8]
 };

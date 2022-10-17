@@ -1,5 +1,7 @@
 var NAVTREEINDEX165 =
 {
+"struct_eigen_1_1internal_1_1eval_3_01_t_00_01_diagonal_shape_01_4.html#a41a0f100ce6d787321b16082a103423b":[4,0,8,4,315,0],
+"struct_eigen_1_1internal_1_1eval_3_01_t_00_01_sparse_01_4.html":[6,0,4,2,314],
 "struct_eigen_1_1internal_1_1eval_3_01_t_00_01_sparse_01_4.html":[4,0,8,4,316],
 "struct_eigen_1_1internal_1_1evaluator.html":[6,0,4,2,316],
 "struct_eigen_1_1internal_1_1evaluator.html":[4,0,8,4,318],
@@ -27,8 +29,8 @@ var NAVTREEINDEX165 =
 "struct_eigen_1_1internal_1_1evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_01_4_01_4.html#a6fdb7fb2890be941c57f823731c4a106":[6,0,4,2,318,1],
 "struct_eigen_1_1internal_1_1evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_01_4_01_4.html#aeac654173d49400de96f827920e5af15":[6,0,4,2,318,2],
 "struct_eigen_1_1internal_1_1evaluator_3_01_block_3_01_arg_type_00_01_block_rows_00_01_block_cols_00_01_inner_panel_01_4_01_4.html#aeac654173d49400de96f827920e5af15":[4,0,8,4,320,2],
-"struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html":[6,0,4,2,320],
 "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html":[4,0,8,4,322],
+"struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html":[6,0,4,2,320],
 "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html#a24ab7370ad4617d9918b64f2dd46d27e":[4,0,8,4,322,0],
 "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html#a24ab7370ad4617d9918b64f2dd46d27e":[6,0,4,2,320,0],
 "struct_eigen_1_1internal_1_1evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_01_rhs_01_4_01_4.html#a5e6ee0fe3dd1aa15739bcf2d4f092982":[4,0,8,4,322,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX165 =
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#a49f98301ac153b880b54008edd822e9e":[6,0,4,2,338,0],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#ada3672ffa0e742024c710069ad8665f8":[4,0,8,4,340,1],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#ada3672ffa0e742024c710069ad8665f8":[6,0,4,2,338,1],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html":[4,0,8,4,341],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html":[6,0,4,2,339],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#a0cccc9f11f1d108fa14ab95ff4459f57":[6,0,4,2,339,3]
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html":[4,0,8,4,341]
 };

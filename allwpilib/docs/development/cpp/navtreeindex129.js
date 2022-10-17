@@ -1,5 +1,7 @@
 var NAVTREEINDEX129 =
 {
+"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406addabbd23bf38f9d142709ee69ef28f27":[3,29,29,4],
+"group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406aef9691cb2529d8eed45affefd5ce6300":[3,29,29,3],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a06476a540bb2e3f19ef82c11fd328c3c":[3,29,30,3],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a0a86d35502281c64d9e18df3651c2e5f":[3,29,30,9],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a4d128f0ab912d8058113bc3533251a25":[3,29,30,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX129 =
 "group__cscore__telemetry__func.html#gaa50a50d5ab75c1e372aea4db3ceefcac":[3,28,12,3],
 "group__cscore__typedefs.html":[3,29,0],
 "group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0":[3,29,0,6],
-"group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5":[3,29,0,7],
-"group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f":[3,29,0,3],
-"group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377":[3,29,0,4]
+"group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5":[3,29,0,7]
 };
