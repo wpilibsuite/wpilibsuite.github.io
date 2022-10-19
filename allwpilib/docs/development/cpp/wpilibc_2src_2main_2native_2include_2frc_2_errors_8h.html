@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-1-g878cc8d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
    </div>
   </td>
  </tr>
@@ -141,7 +141,7 @@ Macros</h2></td></tr>
 <tr class="separator:a548af4bf8d5ee5cc4b888593b3967006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6e058cb8c8062c0cdd799f2112961af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition,  <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, ...)</td></tr>
 <tr class="separator:ac6e058cb8c8062c0cdd799f2112961af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81508d97a92d2c184bbc8fa49ee66651"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a81508d97a92d2c184bbc8fa49ee66651">FRC_Assert</a>(condition)&#160;&#160;&#160;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition, &quot;{}&quot;, #condition)</td></tr>
+<tr class="memitem:a81508d97a92d2c184bbc8fa49ee66651"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a81508d97a92d2c184bbc8fa49ee66651">FRC_Assert</a>(condition)&#160;&#160;&#160;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition, #condition)</td></tr>
 <tr class="separator:a81508d97a92d2c184bbc8fa49ee66651"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -152,16 +152,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ae524c828d05c9df76525cd615a26772a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">frc::ReportErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
 <tr class="memdesc:ae524c828d05c9df76525cd615a26772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">More...</a><br /></td></tr>
 <tr class="separator:ae524c828d05c9df76525cd615a26772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49dbf58a9be631cb32db6def6184cd60"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </td></tr>
-<tr class="memitem:a49dbf58a9be631cb32db6def6184cd60"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">frc::ReportError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a49dbf58a9be631cb32db6def6184cd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">More...</a><br /></td></tr>
-<tr class="separator:a49dbf58a9be631cb32db6def6184cd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fd6947f9bf7ae21949c964385599da"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aa7fd6947f9bf7ae21949c964385599da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">frc::ReportError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aa7fd6947f9bf7ae21949c964385599da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">More...</a><br /></td></tr>
+<tr class="separator:aa7fd6947f9bf7ae21949c964385599da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memItemLeft" align="right" valign="top">RuntimeError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">frc::MakeErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
 <tr class="memdesc:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a runtime error exception object.  <a href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">More...</a><br /></td></tr>
 <tr class="separator:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </td></tr>
-<tr class="memitem:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memTemplItemLeft" align="right" valign="top">RuntimeError&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">frc::MakeError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memTemplItemLeft" align="right" valign="top">RuntimeError&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">frc::MakeError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a81508d97a92d2c184bbc8fa49ee66651" name="a81508d97a92d2c184bbc8fa49ee66651"></a>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">condition</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition, &quot;{}&quot;, #condition)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#ac6e058cb8c8062c0cdd799f2112961af">FRC_AssertMessage</a>(condition, #condition)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -214,13 +214,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">    if (!(condition)) {                                                      <a class="code hl_function" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">\</a></div>
-<div class="line"><a class="code hl_function" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">      throw ::frc::MakeError</a>(err::AssertionFailure, __FILE__, __LINE__,      \</div>
-<div class="line">                             __FUNCTION__, <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>), __VA_ARGS__); \</div>
+<div class="line">    if (!(condition)) {                                                      <a class="code hl_function" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">\</a></div>
+<div class="line"><a class="code hl_function" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">      throw ::frc::MakeError</a>(err::AssertionFailure, __FILE__, __LINE__,      \</div>
+<div class="line">                             __FUNCTION__,                                   \</div>
+<div class="line">                             <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>) __VA_OPT__(, ) __VA_ARGS__); \</div>
 <div class="line">    }                                                                        \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="aformat_8h_html_a09119ad072f708d17b88704fa898aff0"><div class="ttname"><a href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a></div><div class="ttdeci">#define FMT_STRING(s)</div><div class="ttdoc">\rst Constructs a compile-time format string from a string literal s.</div><div class="ttdef"><b>Definition:</b> format.h:1772</div></div>
-<div class="ttc" id="anamespacefrc_html_af2dbe14bbbcbe0ac98054ac4dab8619b"><div class="ttname"><a href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">frc::MakeError</a></div><div class="ttdeci">RuntimeError MakeError(int32_t status, const char *fileName, int lineNumber, const char *funcName, const S &amp;format, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> Errors.h:103</div></div>
+<div class="ttc" id="anamespacefrc_html_a5d8db52ed33a8353dff3bb57ff019d4e"><div class="ttname"><a href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">frc::MakeError</a></div><div class="ttdeci">RuntimeError MakeError(int32_t status, const char *fileName, int lineNumber, const char *funcName, fmt::string_view format, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> Errors.h:104</div></div>
 <div class="ttc" id="awpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdoc">\rst Formats arguments and returns the result as a string using ANSI escape sequences to specify text...</div><div class="ttdef"><b>Definition:</b> color.h:553</div></div>
 </div><!-- fragment -->
 </div>
@@ -256,16 +257,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                 \</div>
-<div class="line">    if ((<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>) &lt; 0) {                                                <a class="code hl_function" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">\</a></div>
-<div class="line"><a class="code hl_function" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">      throw ::frc::MakeError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__, \</div>
-<div class="line">                             <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>), __VA_ARGS__);         \</div>
-<div class="line">    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>) &gt; 0) {                                         <a class="code hl_function" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">\</a></div>
-<div class="line"><a class="code hl_function" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">      ::frc::ReportError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__,     \</div>
-<div class="line">                         <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>), __VA_ARGS__);             \</div>
-<div class="line">    }                                                                  \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                       \</div>
+<div class="line">    if ((<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>) &lt; 0) {                                                      <a class="code hl_function" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">\</a></div>
+<div class="line"><a class="code hl_function" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">      throw ::frc::MakeError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__,       \</div>
+<div class="line">                             <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>) __VA_OPT__(, ) __VA_ARGS__); \</div>
+<div class="line">    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>) &gt; 0) {                                               <a class="code hl_function" href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">\</a></div>
+<div class="line"><a class="code hl_function" href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">      ::frc::ReportError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__,           \</div>
+<div class="line">                         <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>) __VA_OPT__(, ) __VA_ARGS__);     \</div>
+<div class="line">    }                                                                        \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="anamespacefrc_html_a49dbf58a9be631cb32db6def6184cd60"><div class="ttname"><a href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">frc::ReportError</a></div><div class="ttdeci">void ReportError(int32_t status, const char *fileName, int lineNumber, const char *funcName, const S &amp;format, Args &amp;&amp;... args)</div><div class="ttdoc">Reports an error to the driver station (using HAL_SendError).</div><div class="ttdef"><b>Definition:</b> Errors.h:78</div></div>
+<div class="ttc" id="anamespacefrc_html_aa7fd6947f9bf7ae21949c964385599da"><div class="ttname"><a href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">frc::ReportError</a></div><div class="ttdeci">void ReportError(int32_t status, const char *fileName, int lineNumber, const char *funcName, fmt::string_view format, Args &amp;&amp;... args)</div><div class="ttdoc">Reports an error to the driver station (using HAL_SendError).</div><div class="ttdef"><b>Definition:</b> Errors.h:78</div></div>
 <div class="ttc" id="anamespaceghc_1_1filesystem_html_a00bcaee548f274868a8b45b7c8547bae"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">ghc::filesystem::status</a></div><div class="ttdeci">GHC_FS_API file_status status(const path &amp;p, std::error_code &amp;ec) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:4892</div></div>
 </div><!-- fragment -->
 <p>Checks a status code and depending on its value, either throws a RuntimeError exception, calls ReportError, or does nothing (if no error). </p>
@@ -310,8 +311,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b">::frc::MakeError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__, \</div>
-<div class="line">                   <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>), __VA_ARGS__)</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">::frc::MakeError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__, \</div>
+<div class="line">                   <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>) __VA_OPT__(, ) __VA_ARGS__)</div>
 </div><!-- fragment -->
 <p>Makes a runtime error exception object. </p>
 <p >This object should be thrown by the caller.</p>
@@ -357,11 +358,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                             \</div>
-<div class="line">    if ((<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>) != 0) {                                           <a class="code hl_function" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">\</a></div>
-<div class="line"><a class="code hl_function" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">      ::frc::ReportError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__, \</div>
-<div class="line">                         <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>), __VA_ARGS__);         \</div>
-<div class="line">    }                                                              \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">do</span> {                                                                   \</div>
+<div class="line">    if ((<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>) != 0) {                                                 <a class="code hl_function" href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">\</a></div>
+<div class="line"><a class="code hl_function" href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">      ::frc::ReportError</a>(<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>, __FILE__, __LINE__, __FUNCTION__,       \</div>
+<div class="line">                         <a class="code hl_define" href="format_8h.html#a09119ad072f708d17b88704fa898aff0">FMT_STRING</a>(<a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>) __VA_OPT__(, ) __VA_ARGS__); \</div>
+<div class="line">    }                                                                    \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Reports an error to the driver station (using HAL_SendError). </p>
@@ -449,7 +450,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html">Errors.h</a></li>
-    <li class="footer">Generated on Mon Oct 17 2022 21:43:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 19 2022 17:56:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

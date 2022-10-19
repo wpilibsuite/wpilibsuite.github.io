@@ -45,7 +45,7 @@ var searchData=
   ['makedouble_42',['MakeDouble',['../classnt_1_1_value.html#abab97cc1ff2780fe7618754175877fab',1,'nt::Value']]],
   ['makedoublearray_43',['MakeDoubleArray',['../classnt_1_1_value.html#a7aead299711b561cf4be6f1f6a5c1042',1,'nt::Value::MakeDoubleArray(std::span&lt; const double &gt; value, int64_t time=0)'],['../classnt_1_1_value.html#af76e9d0284481887107a25d963ab7ca1',1,'nt::Value::MakeDoubleArray(std::initializer_list&lt; double &gt; value, int64_t time=0)']]],
   ['makedoublesolenoid_44',['MakeDoubleSolenoid',['../classfrc_1_1_pneumatics_control_module.html#a941182d227aac62685d425a61a6b6c91',1,'frc::PneumaticsControlModule::MakeDoubleSolenoid()'],['../classfrc_1_1_pneumatic_hub.html#ac465b45e305be9f744f554736a0f5345',1,'frc::PneumaticHub::MakeDoubleSolenoid()'],['../classfrc_1_1_pneumatics_base.html#a04d30e25a22b0520683f3399f9550dd0',1,'frc::PneumaticsBase::MakeDoubleSolenoid()']]],
-  ['makeerror_45',['MakeError',['../namespacefrc.html#af2dbe14bbbcbe0ac98054ac4dab8619b',1,'frc']]],
+  ['makeerror_45',['MakeError',['../namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e',1,'frc']]],
   ['makeerrorv_46',['MakeErrorV',['../namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955',1,'frc']]],
   ['makefloat_47',['MakeFloat',['../classnt_1_1_value.html#a1a1ed43a8b8d5d485d21ef52f74a5bdf',1,'nt::Value']]],
   ['makefloatarray_48',['MakeFloatArray',['../classnt_1_1_value.html#a377b964c7771d6e5a0079e7ac6c27af1',1,'nt::Value::MakeFloatArray(std::span&lt; const float &gt; value, int64_t time=0)'],['../classnt_1_1_value.html#a26baff8232c7ab3ecb33fdf93bf0b097',1,'nt::Value::MakeFloatArray(std::initializer_list&lt; float &gt; value, int64_t time=0)']]],
