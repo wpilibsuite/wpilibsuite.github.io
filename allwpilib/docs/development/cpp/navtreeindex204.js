@@ -1,5 +1,9 @@
 var NAVTREEINDEX204 =
 {
+"wpilibc_2src_2main_2native_2include_2frc_2_addressable_l_e_d_8h_source.html":[7,0,3,10],
+"wpilibc_2src_2main_2native_2include_2frc_2_analog_gyro_8h.html":[7,0,3,19],
+"wpilibc_2src_2main_2native_2include_2frc_2_analog_gyro_8h_source.html":[7,0,3,19],
+"wpilibc_2src_2main_2native_2include_2frc_2_analog_input_8h.html":[7,0,3,20],
 "wpilibc_2src_2main_2native_2include_2frc_2_analog_input_8h_source.html":[7,0,3,20],
 "wpilibc_2src_2main_2native_2include_2frc_2_analog_output_8h.html":[7,0,3,21],
 "wpilibc_2src_2main_2native_2include_2frc_2_analog_output_8h_source.html":[7,0,3,21],
@@ -245,9 +249,5 @@ var NAVTREEINDEX204 =
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca573cc0c97e7f05440b7ca67a93e46349":[7,0,9,0,0,0,2,7,103],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5841e227ac7407c007c4dea330306f08":[7,0,9,0,0,0,2,7,102],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca58b516fe6ce07478e0fdfe29e18d62fe":[7,0,9,0,0,0,2,7,64],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5afa2a600463278912509f72d9d18ba3":[7,0,9,0,0,0,2,7,30],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5b2d4484498235e80d61a233a7c04991":[7,0,9,0,0,0,2,7,130],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5c090aa7c47fc1b6a05035e07ec9fbb9":[7,0,9,0,0,0,2,7,41],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5e84be20fb6dd068f5368e6d245460bd":[7,0,9,0,0,0,2,7,96],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5fa3ccc64c973db27e9fcade0810423e":[7,0,9,0,0,0,2,7,19]
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5afa2a600463278912509f72d9d18ba3":[7,0,9,0,0,0,2,7,30]
 };

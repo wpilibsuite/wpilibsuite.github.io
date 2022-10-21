@@ -1,5 +1,9 @@
 var NAVTREEINDEX155 =
 {
+"raw__istream_8h_source.html":[7,0,12,27],
+"raw__os__ostream_8h.html":[7,0,9,3,0,0,25],
+"raw__os__ostream_8h_source.html":[7,0,9,3,0,0,25],
+"scope.html":[7,0,12,29],
 "segregator_8hpp.html":[7,0,9,4,0,0,0,24],
 "segregator_8hpp.html#a1f754500044a675a6c2820cba487b394":[7,0,9,4,0,0,0,24,16],
 "segregator_8hpp.html#a226f6df0ddd808d944452b8210987fb5":[7,0,9,4,0,0,0,24,15],
@@ -245,9 +249,5 @@ var NAVTREEINDEX155 =
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#afc1b2953f6707dc4463ad3782929dbd8":[4,0,8,146,0],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#afc1b2953f6707dc4463ad3782929dbd8":[6,0,4,143,0],
 "struct_eigen_1_1_num_traits_3_01bool_01_4.html":[6,0,4,140],
-"struct_eigen_1_1_num_traits_3_01bool_01_4.html":[4,0,8,143],
-"struct_eigen_1_1_num_traits_3_01double_01_4.html":[6,0,4,141],
-"struct_eigen_1_1_num_traits_3_01double_01_4.html":[4,0,8,144],
-"struct_eigen_1_1_num_traits_3_01double_01_4.html#ab2e6b535663f6bbbc382a10a322401a6":[6,0,4,141,0],
-"struct_eigen_1_1_num_traits_3_01double_01_4.html#ab2e6b535663f6bbbc382a10a322401a6":[4,0,8,144,0]
+"struct_eigen_1_1_num_traits_3_01bool_01_4.html":[4,0,8,143]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-7-g0ca2748</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-8-g9c7e66a</span>
    </div>
   </td>
  </tr>
@@ -178,6 +178,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad748198c4967d298dfdab479a00e31b7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_scheduler.html#ad748198c4967d298dfdab479a00e31b7">SetDefaultCommand</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *subsystem, T &amp;&amp;defaultCommand)</td></tr>
 <tr class="memdesc:ad748198c4967d298dfdab479a00e31b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default command for a subsystem.  <a href="classfrc2_1_1_command_scheduler.html#ad748198c4967d298dfdab479a00e31b7">More...</a><br /></td></tr>
 <tr class="separator:ad748198c4967d298dfdab479a00e31b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae9b86d89f70ad34d98458679f80ac0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">SetDefaultCommand</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *subsystem, <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;defaultCommand)</td></tr>
+<tr class="memdesc:a8ae9b86d89f70ad34d98458679f80ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default command for a subsystem.  <a href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">More...</a><br /></td></tr>
+<tr class="separator:a8ae9b86d89f70ad34d98458679f80ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0926767c93981ac3200bc29c4809c34b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">GetDefaultCommand</a> (const <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *subsystem) const</td></tr>
 <tr class="memdesc:a0926767c93981ac3200bc29c4809c34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default command associated with this subsystem.  <a href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">More...</a><br /></td></tr>
 <tr class="separator:a0926767c93981ac3200bc29c4809c34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1161,8 +1164,46 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8ae9b86d89f70ad34d98458679f80ac0" name="a8ae9b86d89f70ad34d98458679f80ac0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ae9b86d89f70ad34d98458679f80ac0">&#9670;&nbsp;</a></span>SetDefaultCommand() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc2::CommandScheduler::SetDefaultCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *&#160;</td>
+          <td class="paramname"><em>subsystem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>defaultCommand</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the default command for a subsystem. </p>
+<p >Registers that subsystem if it is not already registered. Default commands will run whenever there is no other command currently scheduled that requires the subsystem. Default commands should be written to never end (i.e. their IsFinished() method should return false), as they would simply be re-scheduled if they do. Default commands must also require their subsystem.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>the subsystem whose default command will be set </td></tr>
+    <tr><td class="paramname">defaultCommand</td><td>the default command to associate with the subsystem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad748198c4967d298dfdab479a00e31b7" name="ad748198c4967d298dfdab479a00e31b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad748198c4967d298dfdab479a00e31b7">&#9670;&nbsp;</a></span>SetDefaultCommand()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad748198c4967d298dfdab479a00e31b7">&#9670;&nbsp;</a></span>SetDefaultCommand() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1349,7 +1390,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_scheduler.html">CommandScheduler</a></li>
-    <li class="footer">Generated on Fri Oct 21 2022 02:50:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 13:39:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

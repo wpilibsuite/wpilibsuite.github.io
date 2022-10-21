@@ -35,6 +35,7 @@ var classfrc2_1_1_command_scheduler =
     [ "Schedule", "classfrc2_1_1_command_scheduler.html#a00111757dc30378ede1437ae907902c8", null ],
     [ "Schedule", "classfrc2_1_1_command_scheduler.html#a43be350b951fd13993106923c97f920c", null ],
     [ "SetActiveButtonLoop", "classfrc2_1_1_command_scheduler.html#a66995c59146e8dff02d5279c8c2afc70", null ],
+    [ "SetDefaultCommand", "classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0", null ],
     [ "SetDefaultCommand", "classfrc2_1_1_command_scheduler.html#ad748198c4967d298dfdab479a00e31b7", null ],
     [ "SetPeriod", "classfrc2_1_1_command_scheduler.html#a2739ab92351c561ddeb353ea14efa46a", null ],
     [ "UnregisterSubsystem", "classfrc2_1_1_command_scheduler.html#ac8d83b513ca63f86e12c866f21baf0c9", null ],

@@ -1,5 +1,9 @@
 var NAVTREEINDEX131 =
 {
+"group__hal__canapi.html#ga096d75b813ab0c3d4623f174c9f08a82":[3,1,13,3],
+"group__hal__canapi.html#ga140e61c4b22ea7177a249fb6ca208468":[3,1,13,6],
+"group__hal__canapi.html#ga2427e08c4232a0bd698cb595790ce6fc":[3,1,13,5],
+"group__hal__canapi.html#ga6d6f754cb6725d06551dc2bdc86c5a21":[3,1,13,8],
 "group__hal__canapi.html#ga880203118d2d0be33ce083fd08d6fbcc":[3,1,13,0],
 "group__hal__canapi.html#ga8b77b8af14e818ce6566463106648068":[3,1,13,9],
 "group__hal__canapi.html#ga94cd17e0379a90890274ac4abeb2f6c0":[3,1,13,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX131 =
 "group__hal__errors.html#ga1ac6a3629bdb7227b5654a9c5ba575b0":[3,1,21,47],
 "group__hal__errors.html#ga1da1420ada5c3e3655b12ecf03861dc2":[3,1,21,26],
 "group__hal__errors.html#ga21455764586d49d75850cfe97cece461":[3,1,21,19],
-"group__hal__errors.html#ga287bf1c69269142b2402d67460522247":[3,1,21,9],
-"group__hal__errors.html#ga31fcc14c01904eec19d24b8c39263ae1":[3,1,21,33],
-"group__hal__errors.html#ga3293292ffb326062bfbeae6924cb7ebe":[3,1,21,75],
-"group__hal__errors.html#ga3381e4439fe819a9c5fa97277a93b5d6":[3,1,21,41],
-"group__hal__errors.html#ga366b02cc261b9d338e2b977fd3509d56":[3,1,21,62]
+"group__hal__errors.html#ga287bf1c69269142b2402d67460522247":[3,1,21,9]
 };

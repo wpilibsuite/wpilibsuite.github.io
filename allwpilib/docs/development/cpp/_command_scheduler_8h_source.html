@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-7-g0ca2748</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-8-g9c7e66a</span>
    </div>
   </td>
  </tr>
@@ -288,176 +288,189 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  }</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment"></span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">   * Gets the default command associated with this subsystem.  Null if this</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">   * subsystem has no default command associated with it.</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">   * @param subsystem the subsystem to inquire about</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">   * @return the default command associated with the subsystem</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">  201</a></span>  <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">GetDefaultCommand</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* subsystem) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"></span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">   * interruptible.</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">   * Sets the default command for a subsystem.  Registers that subsystem if it</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">   * is not already registered.  Default commands will run whenever there is no</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">   * other command currently scheduled that requires the subsystem.  Default</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">   * commands should be written to never end (i.e. their IsFinished() method</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">   * should return false), as they would simply be re-scheduled if they do.</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">   * Default commands must also require their subsystem.</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">   * @param subsystem      the subsystem whose default command will be set</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">   * @param defaultCommand the default command to associate with the subsystem</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">  205</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">SetDefaultCommand</a>(<a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* subsystem, <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; defaultCommand);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"></span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">   * Gets the default command associated with this subsystem.  Null if this</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">   * subsystem has no default command associated with it.</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">   * @param command the command to cancel</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a56dd22ed91ff409426d1228f83251562">  213</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a56dd22ed91ff409426d1228f83251562">Cancel</a>(<a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* command);</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment"></span> </div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">   * interruptible.</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">   * @param command the command to cancel</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#ad7640ab7f8cba3f8bd176f5df8e58e96">  225</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#ad7640ab7f8cba3f8bd176f5df8e58e96">Cancel</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp; command);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment"></span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">   * interruptible.</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">   * @param commands the commands to cancel</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a7dee99b716e2a2e991075d36bd0d26db">  237</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a7dee99b716e2a2e991075d36bd0d26db">Cancel</a>(std::span&lt;Command* const&gt; commands);</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment"></span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">   * interruptible.</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">   * @param commands the commands to cancel</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a96c960ab3788218b1c094034736ebe2b">  249</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a96c960ab3788218b1c094034736ebe2b">Cancel</a>(std::initializer_list&lt;Command*&gt; commands);</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment"></span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">   * Cancels all commands that are currently scheduled.</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a01ad4d4ab8b9cdf9c3c15f42f47350b5">  254</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a01ad4d4ab8b9cdf9c3c15f42f47350b5">CancelAll</a>();</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment"></span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">   * Whether the given commands are running.  Note that this only works on</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">   * commands that are directly scheduled by the scheduler; it will not work on</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">   * commands inside of CommandGroups, as the scheduler does not see them.</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">   * @param commands the command to query</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#af7a2a559199ef393f6db65fa7a1f1d44">  264</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#af7a2a559199ef393f6db65fa7a1f1d44">IsScheduled</a>(std::span&lt;const Command* const&gt; commands) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment"></span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">   * Whether the given commands are running.  Note that this only works on</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">   * commands that are directly scheduled by the scheduler; it will not work on</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">   * commands inside of CommandGroups, as the scheduler does not see them.</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">   * @param commands the command to query</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a0b321c0d56e092a9a7de1d8dc3d5c977">  274</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a0b321c0d56e092a9a7de1d8dc3d5c977">IsScheduled</a>(std::initializer_list&lt;const Command*&gt; commands) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment"></span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">   * Whether a given command is running.  Note that this only works on commands</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">   * that are directly scheduled by the scheduler; it will not work on commands</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">   * inside of CommandGroups, as the scheduler does not see them.</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">   * @param command the command to query</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2">  284</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2">IsScheduled</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* command) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment"></span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">   * Whether a given command is running.  Note that this only works on commands</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">   * that are directly scheduled by the scheduler; it will not work on commands</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">   * inside of CommandGroups, as the scheduler does not see them.</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment">   * @param command the command to query</span></div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a0dbbf49d8661731d379cf820bd9131c8">  294</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a0dbbf49d8661731d379cf820bd9131c8">IsScheduled</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp; command) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment"></span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment">   * Returns the command currently requiring a given subsystem.  Null if no</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment">   * command is currently requiring the subsystem</span></div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">   * @param subsystem the subsystem to be inquired about</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">   * @return the command currently requiring the subsystem</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#aa8188ad0816a38ef841d1fd58b18fd45">  303</a></span>  <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#aa8188ad0816a38ef841d1fd58b18fd45">Requiring</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* subsystem) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment"></span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="comment">   * Disables the command scheduler.</span></div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a688ba62345990347a777f786a0c652b7">  308</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a688ba62345990347a777f786a0c652b7">Disable</a>();</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment"></span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">   * Enables the command scheduler.</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#ad7d60afe9eb0ff1525d2240efe0c9413">  313</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#ad7d60afe9eb0ff1525d2240efe0c9413">Enable</a>();</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment"></span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment">   * Adds an action to perform on the initialization of any command by the</span></div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">   * scheduler.</span></div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment">   * @param action the action to perform</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">   * @param subsystem the subsystem to inquire about</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">   * @return the default command associated with the subsystem</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">  214</a></span>  <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">GetDefaultCommand</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* subsystem) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment"></span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">   * interruptible.</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">   * @param command the command to cancel</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a56dd22ed91ff409426d1228f83251562">  226</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a56dd22ed91ff409426d1228f83251562">Cancel</a>(<a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* command);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment"></span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">   * interruptible.</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">   * @param command the command to cancel</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#ad7640ab7f8cba3f8bd176f5df8e58e96">  238</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#ad7640ab7f8cba3f8bd176f5df8e58e96">Cancel</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp; command);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment"></span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment">   * interruptible.</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">   * @param commands the commands to cancel</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a7dee99b716e2a2e991075d36bd0d26db">  250</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a7dee99b716e2a2e991075d36bd0d26db">Cancel</a>(std::span&lt;Command* const&gt; commands);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment"></span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">   * Cancels commands. The scheduler will only call Command::End()</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">   * method of the canceled command with true, indicating they were</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">   * canceled (as opposed to finishing normally).</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">   * &lt;p&gt;Commands will be canceled even if they are not scheduled as</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">   * interruptible.</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">   * @param commands the commands to cancel</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a96c960ab3788218b1c094034736ebe2b">  262</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a96c960ab3788218b1c094034736ebe2b">Cancel</a>(std::initializer_list&lt;Command*&gt; commands);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment"></span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">   * Cancels all commands that are currently scheduled.</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a01ad4d4ab8b9cdf9c3c15f42f47350b5">  267</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a01ad4d4ab8b9cdf9c3c15f42f47350b5">CancelAll</a>();</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment"></span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">   * Whether the given commands are running.  Note that this only works on</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">   * commands that are directly scheduled by the scheduler; it will not work on</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">   * commands inside of CommandGroups, as the scheduler does not see them.</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">   * @param commands the command to query</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#af7a2a559199ef393f6db65fa7a1f1d44">  277</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#af7a2a559199ef393f6db65fa7a1f1d44">IsScheduled</a>(std::span&lt;const Command* const&gt; commands) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment"></span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">   * Whether the given commands are running.  Note that this only works on</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">   * commands that are directly scheduled by the scheduler; it will not work on</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment">   * commands inside of CommandGroups, as the scheduler does not see them.</span></div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment">   * @param commands the command to query</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a0b321c0d56e092a9a7de1d8dc3d5c977">  287</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a0b321c0d56e092a9a7de1d8dc3d5c977">IsScheduled</a>(std::initializer_list&lt;const Command*&gt; commands) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment"></span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">   * Whether a given command is running.  Note that this only works on commands</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment">   * that are directly scheduled by the scheduler; it will not work on commands</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">   * inside of CommandGroups, as the scheduler does not see them.</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment">   * @param command the command to query</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2">  297</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2">IsScheduled</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* command) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"></span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">   * Whether a given command is running.  Note that this only works on commands</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">   * that are directly scheduled by the scheduler; it will not work on commands</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">   * inside of CommandGroups, as the scheduler does not see them.</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">   * @param command the command to query</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">   * @return whether the command is currently scheduled</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a0dbbf49d8661731d379cf820bd9131c8">  307</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a0dbbf49d8661731d379cf820bd9131c8">IsScheduled</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp; command) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="comment"></span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">   * Returns the command currently requiring a given subsystem.  Null if no</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">   * command is currently requiring the subsystem</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">   * @param subsystem the subsystem to be inquired about</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">   * @return the command currently requiring the subsystem</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#aa8188ad0816a38ef841d1fd58b18fd45">  316</a></span>  <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#aa8188ad0816a38ef841d1fd58b18fd45">Requiring</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* subsystem) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment"></span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment">   * Disables the command scheduler.</span></div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a5f983f0e45b0500c96eebe52780324d4">  321</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a5f983f0e45b0500c96eebe52780324d4">OnCommandInitialize</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a688ba62345990347a777f786a0c652b7">  321</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a688ba62345990347a777f786a0c652b7">Disable</a>();</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment"></span> </div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">   * Adds an action to perform on the execution of any command by the scheduler.</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">   * @param action the action to perform</span></div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a58c538f4b8dd95e266e4a99167aa7f99">  328</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a58c538f4b8dd95e266e4a99167aa7f99">OnCommandExecute</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment"></span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">   * Adds an action to perform on the interruption of any command by the</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">   * scheduler.</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">   * @param action the action to perform</span></div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#ab5ba99a542aa778a76726d7c68461bf0">  336</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#ab5ba99a542aa778a76726d7c68461bf0">OnCommandInterrupt</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment"></span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">   * Adds an action to perform on the finishing of any command by the scheduler.</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="comment">   * @param action the action to perform</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a068e61446afe2341cc0651f0dfd2a55f">  343</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a068e61446afe2341cc0651f0dfd2a55f">OnCommandFinish</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a62d623797743f33f54f5ae1a9842e832">  345</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a62d623797743f33f54f5ae1a9842e832">InitSendable</a>(<a class="code hl_class" href="classnt_1_1_n_t_sendable_builder.html">nt::NTSendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  <span class="comment">// Constructor; private as this is a singleton</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <a class="code hl_class" href="classfrc2_1_1_command_scheduler.html">CommandScheduler</a>();</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">void</span> SetDefaultCommandImpl(<a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* subsystem,</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                             std::unique_ptr&lt;Command&gt; command);</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="keyword">class </span>Impl;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  std::unique_ptr&lt;Impl&gt; m_impl;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">frc::Watchdog</a> m_watchdog;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">  359</a></span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">CommandTestBase</a>;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">  362</a></span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">CommandTestBaseWithParam</a>;</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>};</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">   * Enables the command scheduler.</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#ad7d60afe9eb0ff1525d2240efe0c9413">  326</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#ad7d60afe9eb0ff1525d2240efe0c9413">Enable</a>();</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment"></span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment">   * Adds an action to perform on the initialization of any command by the</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">   * scheduler.</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">   * @param action the action to perform</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a5f983f0e45b0500c96eebe52780324d4">  334</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a5f983f0e45b0500c96eebe52780324d4">OnCommandInitialize</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment"></span> </div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="comment">   * Adds an action to perform on the execution of any command by the scheduler.</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="comment">   * @param action the action to perform</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a58c538f4b8dd95e266e4a99167aa7f99">  341</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a58c538f4b8dd95e266e4a99167aa7f99">OnCommandExecute</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment"></span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="comment">   * Adds an action to perform on the interruption of any command by the</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">   * scheduler.</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="comment">   * @param action the action to perform</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#ab5ba99a542aa778a76726d7c68461bf0">  349</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#ab5ba99a542aa778a76726d7c68461bf0">OnCommandInterrupt</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment"></span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">   * Adds an action to perform on the finishing of any command by the scheduler.</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="comment">   * @param action the action to perform</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a068e61446afe2341cc0651f0dfd2a55f">  356</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a068e61446afe2341cc0651f0dfd2a55f">OnCommandFinish</a>(<a class="code hl_typedef" href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">Action</a> action);</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a62d623797743f33f54f5ae1a9842e832">  358</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_scheduler.html#a62d623797743f33f54f5ae1a9842e832">InitSendable</a>(<a class="code hl_class" href="classnt_1_1_n_t_sendable_builder.html">nt::NTSendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="comment">// Constructor; private as this is a singleton</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <a class="code hl_class" href="classfrc2_1_1_command_scheduler.html">CommandScheduler</a>();</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  <span class="keywordtype">void</span> SetDefaultCommandImpl(<a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* subsystem,</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                             std::unique_ptr&lt;Command&gt; command);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <span class="keyword">class </span>Impl;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  std::unique_ptr&lt;Impl&gt; m_impl;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">frc::Watchdog</a> m_watchdog;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">  372</a></span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">CommandTestBase</a>;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">  375</a></span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_friend" href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">CommandTestBaseWithParam</a>;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>};</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_event_loop_8h_html"><div class="ttname"><a href="_event_loop_8h.html">EventLoop.h</a></div></div>
 <div class="ttc" id="a_function_extras_8h_html"><div class="ttname"><a href="_function_extras_8h.html">FunctionExtras.h</a></div><div class="ttdoc">This file provides a collection of function (or more generally, callable) type erasure utilities supp...</div></div>
 <div class="ttc" id="a_n_t_sendable_8h_html"><div class="ttname"><a href="_n_t_sendable_8h.html">NTSendable.h</a></div></div>
@@ -473,7 +486,7 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a0dbbf49d8661731d379cf820bd9131c8"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a0dbbf49d8661731d379cf820bd9131c8">frc2::CommandScheduler::IsScheduled</a></div><div class="ttdeci">bool IsScheduled(const CommandPtr &amp;command) const</div><div class="ttdoc">Whether a given command is running.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a225b58d3e2979f36cf9dcd6498168849"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a225b58d3e2979f36cf9dcd6498168849">frc2::CommandScheduler::operator=</a></div><div class="ttdeci">CommandScheduler &amp; operator=(const CommandScheduler &amp;)=delete</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a2739ab92351c561ddeb353ea14efa46a"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a2739ab92351c561ddeb353ea14efa46a">frc2::CommandScheduler::SetPeriod</a></div><div class="ttdeci">void SetPeriod(units::second_t period)</div><div class="ttdoc">Changes the period of the loop overrun watchdog.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a2cee99d360e9b2921ee34e2e1f5cd0d4"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">frc2::CommandScheduler::CommandTestBase</a></div><div class="ttdeci">friend class CommandTestBase</div><div class="ttdef"><b>Definition:</b> CommandScheduler.h:359</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a2cee99d360e9b2921ee34e2e1f5cd0d4"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a2cee99d360e9b2921ee34e2e1f5cd0d4">frc2::CommandScheduler::CommandTestBase</a></div><div class="ttdeci">friend class CommandTestBase</div><div class="ttdef"><b>Definition:</b> CommandScheduler.h:372</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a4c6c118d955821e086f9f64700250923"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a4c6c118d955821e086f9f64700250923">frc2::CommandScheduler::UnregisterSubsystem</a></div><div class="ttdeci">void UnregisterSubsystem(Subsystem *subsystem)</div><div class="ttdoc">Un-registers subsystems with the scheduler.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a508ffa7f0fc5ceea855316d3a191a1f2"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2">frc2::CommandScheduler::IsScheduled</a></div><div class="ttdeci">bool IsScheduled(const Command *command) const</div><div class="ttdoc">Whether a given command is running.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a565f86f2abd1cb34a866c13501d7f0d7"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a565f86f2abd1cb34a866c13501d7f0d7">frc2::CommandScheduler::RegisterSubsystem</a></div><div class="ttdeci">void RegisterSubsystem(Subsystem *subsystem)</div><div class="ttdoc">Registers subsystems with the scheduler.</div></div>
@@ -483,11 +496,12 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a62d623797743f33f54f5ae1a9842e832"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a62d623797743f33f54f5ae1a9842e832">frc2::CommandScheduler::InitSendable</a></div><div class="ttdeci">void InitSendable(nt::NTSendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a65395de50d102cab9e7b61dd1c3f581a"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a65395de50d102cab9e7b61dd1c3f581a">frc2::CommandScheduler::Action</a></div><div class="ttdeci">std::function&lt; void(const Command &amp;)&gt; Action</div><div class="ttdef"><b>Definition:</b> CommandScheduler.h:49</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a66995c59146e8dff02d5279c8c2afc70"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a66995c59146e8dff02d5279c8c2afc70">frc2::CommandScheduler::SetActiveButtonLoop</a></div><div class="ttdeci">void SetActiveButtonLoop(frc::EventLoop *loop)</div><div class="ttdoc">Replace the button poll with another one.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a67346353f8a6c7c9638d4d1ebf9720ba"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">frc2::CommandScheduler::CommandTestBaseWithParam</a></div><div class="ttdeci">friend class CommandTestBaseWithParam</div><div class="ttdef"><b>Definition:</b> CommandScheduler.h:362</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a67346353f8a6c7c9638d4d1ebf9720ba"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a67346353f8a6c7c9638d4d1ebf9720ba">frc2::CommandScheduler::CommandTestBaseWithParam</a></div><div class="ttdeci">friend class CommandTestBaseWithParam</div><div class="ttdef"><b>Definition:</b> CommandScheduler.h:375</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a688ba62345990347a777f786a0c652b7"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a688ba62345990347a777f786a0c652b7">frc2::CommandScheduler::Disable</a></div><div class="ttdeci">void Disable()</div><div class="ttdoc">Disables the command scheduler.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a7af6270403e23499db27b99e34cddb92"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a7af6270403e23499db27b99e34cddb92">frc2::CommandScheduler::ClearButtons</a></div><div class="ttdeci">void ClearButtons()</div><div class="ttdoc">Removes all button bindings from the scheduler.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a7dee99b716e2a2e991075d36bd0d26db"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a7dee99b716e2a2e991075d36bd0d26db">frc2::CommandScheduler::Cancel</a></div><div class="ttdeci">void Cancel(std::span&lt; Command *const &gt; commands)</div><div class="ttdoc">Cancels commands.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a80e95aa2529c45e93866b81b2b4e8e44"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a80e95aa2529c45e93866b81b2b4e8e44">frc2::CommandScheduler::CommandScheduler</a></div><div class="ttdeci">CommandScheduler(const CommandScheduler &amp;)=delete</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a8ae9b86d89f70ad34d98458679f80ac0"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">frc2::CommandScheduler::SetDefaultCommand</a></div><div class="ttdeci">void SetDefaultCommand(Subsystem *subsystem, CommandPtr &amp;&amp;defaultCommand)</div><div class="ttdoc">Sets the default command for a subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a96c960ab3788218b1c094034736ebe2b"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a96c960ab3788218b1c094034736ebe2b">frc2::CommandScheduler::Cancel</a></div><div class="ttdeci">void Cancel(std::initializer_list&lt; Command * &gt; commands)</div><div class="ttdoc">Cancels commands.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a9f3f7bb5c1a3cf57592fe5cfadb6a57d"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a9f3f7bb5c1a3cf57592fe5cfadb6a57d">frc2::CommandScheduler::Schedule</a></div><div class="ttdeci">void Schedule(const CommandPtr &amp;command)</div><div class="ttdoc">Schedules a command for execution.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_a9f85d33948e4a095d0ab137724408bfe"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#a9f85d33948e4a095d0ab137724408bfe">frc2::CommandScheduler::~CommandScheduler</a></div><div class="ttdeci">~CommandScheduler() override</div></div>
@@ -501,7 +515,7 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_ad7d60afe9eb0ff1525d2240efe0c9413"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#ad7d60afe9eb0ff1525d2240efe0c9413">frc2::CommandScheduler::Enable</a></div><div class="ttdeci">void Enable()</div><div class="ttdoc">Enables the command scheduler.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_af732109b0b9c6dbf75f17f6683f0354f"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#af732109b0b9c6dbf75f17f6683f0354f">frc2::CommandScheduler::GetActiveButtonLoop</a></div><div class="ttdeci">frc::EventLoop * GetActiveButtonLoop() const</div><div class="ttdoc">Get the active button poll.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_scheduler_html_af7a2a559199ef393f6db65fa7a1f1d44"><div class="ttname"><a href="classfrc2_1_1_command_scheduler.html#af7a2a559199ef393f6db65fa7a1f1d44">frc2::CommandScheduler::IsScheduled</a></div><div class="ttdeci">bool IsScheduled(std::span&lt; const Command *const &gt; commands) const</div><div class="ttdoc">Whether the given commands are running.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_subsystem_html"><div class="ttname"><a href="classfrc2_1_1_subsystem.html">frc2::Subsystem</a></div><div class="ttdoc">A robot subsystem.</div><div class="ttdef"><b>Definition:</b> Subsystem.h:38</div></div>
+<div class="ttc" id="aclassfrc2_1_1_subsystem_html"><div class="ttname"><a href="classfrc2_1_1_subsystem.html">frc2::Subsystem</a></div><div class="ttdoc">A robot subsystem.</div><div class="ttdef"><b>Definition:</b> Subsystem.h:39</div></div>
 <div class="ttc" id="aclassfrc_1_1_event_loop_html"><div class="ttname"><a href="classfrc_1_1_event_loop.html">frc::EventLoop</a></div><div class="ttdoc">The loop polling BooleanEvent objects and executing the actions bound to them.</div><div class="ttdef"><b>Definition:</b> EventLoop.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html"><div class="ttname"><a href="classfrc_1_1_watchdog.html">frc::Watchdog</a></div><div class="ttdoc">A class that's a wrapper around a watchdog timer.</div><div class="ttdef"><b>Definition:</b> Watchdog.h:26</div></div>
 <div class="ttc" id="aclassnt_1_1_n_t_sendable_builder_html"><div class="ttname"><a href="classnt_1_1_n_t_sendable_builder.html">nt::NTSendableBuilder</a></div><div class="ttdef"><b>Definition:</b> NTSendableBuilder.h:18</div></div>
@@ -521,7 +535,7 @@ $(document).ready(function(){initNavTree('_command_scheduler_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_command_scheduler_8h.html">CommandScheduler.h</a></li>
-    <li class="footer">Generated on Fri Oct 21 2022 02:49:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 13:38:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
