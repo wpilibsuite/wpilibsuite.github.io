@@ -270,215 +270,202 @@
 <span class="sourceLineNo">258</span><a id="line.258">   * decorated without issue.</a>
 <span class="sourceLineNo">259</span><a id="line.259">   *</a>
 <span class="sourceLineNo">260</span><a id="line.260">   * @return the decorated command</a>
-<span class="sourceLineNo">261</span><a id="line.261">   * @deprecated use {@link #endlessly()} instead.</a>
-<span class="sourceLineNo">262</span><a id="line.262">   */</a>
-<span class="sourceLineNo">263</span><a id="line.263">  @SuppressWarnings("removal") // PerpetualCommand</a>
-<span class="sourceLineNo">264</span><a id="line.264">  @Deprecated(forRemoval = true, since = "2023")</a>
-<span class="sourceLineNo">265</span><a id="line.265">  default PerpetualCommand perpetually() {</a>
-<span class="sourceLineNo">266</span><a id="line.266">    return new PerpetualCommand(this);</a>
-<span class="sourceLineNo">267</span><a id="line.267">  }</a>
-<span class="sourceLineNo">268</span><a id="line.268"></a>
-<span class="sourceLineNo">269</span><a id="line.269">  /**</a>
-<span class="sourceLineNo">270</span><a id="line.270">   * Decorates this command to run endlessly, ignoring its ordinary end conditions. The decorated</a>
-<span class="sourceLineNo">271</span><a id="line.271">   * command can still be interrupted or canceled.</a>
-<span class="sourceLineNo">272</span><a id="line.272">   *</a>
-<span class="sourceLineNo">273</span><a id="line.273">   * &lt;p&gt;Note: This decorator works by composing this command within a CommandGroup. The command</a>
-<span class="sourceLineNo">274</span><a id="line.274">   * cannot be used independently after being decorated, or be re-decorated with a different</a>
-<span class="sourceLineNo">275</span><a id="line.275">   * decorator, unless it is manually cleared from the list of grouped commands with {@link</a>
-<span class="sourceLineNo">276</span><a id="line.276">   * CommandGroupBase#clearGroupedCommand(Command)}. The decorated command can, however, be further</a>
-<span class="sourceLineNo">277</span><a id="line.277">   * decorated without issue.</a>
-<span class="sourceLineNo">278</span><a id="line.278">   *</a>
-<span class="sourceLineNo">279</span><a id="line.279">   * @return the decorated command</a>
-<span class="sourceLineNo">280</span><a id="line.280">   */</a>
-<span class="sourceLineNo">281</span><a id="line.281">  default EndlessCommand endlessly() {</a>
-<span class="sourceLineNo">282</span><a id="line.282">    return new EndlessCommand(this);</a>
-<span class="sourceLineNo">283</span><a id="line.283">  }</a>
-<span class="sourceLineNo">284</span><a id="line.284"></a>
-<span class="sourceLineNo">285</span><a id="line.285">  /**</a>
-<span class="sourceLineNo">286</span><a id="line.286">   * Decorates this command to run repeatedly, restarting it when it ends, until this command is</a>
-<span class="sourceLineNo">287</span><a id="line.287">   * interrupted. The decorated command can still be canceled.</a>
-<span class="sourceLineNo">288</span><a id="line.288">   *</a>
-<span class="sourceLineNo">289</span><a id="line.289">   * &lt;p&gt;Note: This decorator works by composing this command within a CommandGroup. The command</a>
-<span class="sourceLineNo">290</span><a id="line.290">   * cannot be used independently after being decorated, or be re-decorated with a different</a>
-<span class="sourceLineNo">291</span><a id="line.291">   * decorator, unless it is manually cleared from the list of grouped commands with {@link</a>
-<span class="sourceLineNo">292</span><a id="line.292">   * CommandGroupBase#clearGroupedCommand(Command)}. The decorated command can, however, be further</a>
-<span class="sourceLineNo">293</span><a id="line.293">   * decorated without issue.</a>
-<span class="sourceLineNo">294</span><a id="line.294">   *</a>
-<span class="sourceLineNo">295</span><a id="line.295">   * @return the decorated command</a>
-<span class="sourceLineNo">296</span><a id="line.296">   */</a>
-<span class="sourceLineNo">297</span><a id="line.297">  default RepeatCommand repeatedly() {</a>
-<span class="sourceLineNo">298</span><a id="line.298">    return new RepeatCommand(this);</a>
-<span class="sourceLineNo">299</span><a id="line.299">  }</a>
-<span class="sourceLineNo">300</span><a id="line.300"></a>
-<span class="sourceLineNo">301</span><a id="line.301">  /**</a>
-<span class="sourceLineNo">302</span><a id="line.302">   * Decorates this command to run "by proxy" by wrapping it in a {@link ProxyScheduleCommand}. This</a>
-<span class="sourceLineNo">303</span><a id="line.303">   * is useful for "forking off" from command groups when the user does not wish to extend the</a>
-<span class="sourceLineNo">304</span><a id="line.304">   * command's requirements to the entire command group.</a>
-<span class="sourceLineNo">305</span><a id="line.305">   *</a>
-<span class="sourceLineNo">306</span><a id="line.306">   * @return the decorated command</a>
-<span class="sourceLineNo">307</span><a id="line.307">   */</a>
-<span class="sourceLineNo">308</span><a id="line.308">  default ProxyScheduleCommand asProxy() {</a>
-<span class="sourceLineNo">309</span><a id="line.309">    return new ProxyScheduleCommand(this);</a>
-<span class="sourceLineNo">310</span><a id="line.310">  }</a>
-<span class="sourceLineNo">311</span><a id="line.311"></a>
-<span class="sourceLineNo">312</span><a id="line.312">  /**</a>
-<span class="sourceLineNo">313</span><a id="line.313">   * Decorates this command to only run if this condition is not met. If the command is already</a>
-<span class="sourceLineNo">314</span><a id="line.314">   * running and the condition changes to true, the command will not stop running. The requirements</a>
-<span class="sourceLineNo">315</span><a id="line.315">   * of this command will be kept for the new conditonal command.</a>
-<span class="sourceLineNo">316</span><a id="line.316">   *</a>
-<span class="sourceLineNo">317</span><a id="line.317">   * @param condition the condition that will prevent the command from running</a>
-<span class="sourceLineNo">318</span><a id="line.318">   * @return the decorated command</a>
-<span class="sourceLineNo">319</span><a id="line.319">   */</a>
-<span class="sourceLineNo">320</span><a id="line.320">  default ConditionalCommand unless(BooleanSupplier condition) {</a>
-<span class="sourceLineNo">321</span><a id="line.321">    return new ConditionalCommand(new InstantCommand(), this, condition);</a>
-<span class="sourceLineNo">322</span><a id="line.322">  }</a>
-<span class="sourceLineNo">323</span><a id="line.323"></a>
-<span class="sourceLineNo">324</span><a id="line.324">  /**</a>
-<span class="sourceLineNo">325</span><a id="line.325">   * Decorates this command to run or stop when disabled.</a>
-<span class="sourceLineNo">326</span><a id="line.326">   *</a>
-<span class="sourceLineNo">327</span><a id="line.327">   * @param doesRunWhenDisabled true to run when disabled.</a>
-<span class="sourceLineNo">328</span><a id="line.328">   * @return the decorated command</a>
-<span class="sourceLineNo">329</span><a id="line.329">   */</a>
-<span class="sourceLineNo">330</span><a id="line.330">  default WrapperCommand ignoringDisable(boolean doesRunWhenDisabled) {</a>
-<span class="sourceLineNo">331</span><a id="line.331">    return new WrapperCommand(this) {</a>
-<span class="sourceLineNo">332</span><a id="line.332">      @Override</a>
-<span class="sourceLineNo">333</span><a id="line.333">      public boolean runsWhenDisabled() {</a>
-<span class="sourceLineNo">334</span><a id="line.334">        return doesRunWhenDisabled;</a>
-<span class="sourceLineNo">335</span><a id="line.335">      }</a>
-<span class="sourceLineNo">336</span><a id="line.336">    };</a>
-<span class="sourceLineNo">337</span><a id="line.337">  }</a>
-<span class="sourceLineNo">338</span><a id="line.338"></a>
-<span class="sourceLineNo">339</span><a id="line.339">  /**</a>
-<span class="sourceLineNo">340</span><a id="line.340">   * Decorates this command to have a different {@link InterruptionBehavior interruption behavior}.</a>
-<span class="sourceLineNo">341</span><a id="line.341">   *</a>
-<span class="sourceLineNo">342</span><a id="line.342">   * @param interruptBehavior the desired interrupt behavior</a>
-<span class="sourceLineNo">343</span><a id="line.343">   * @return the decorated command</a>
-<span class="sourceLineNo">344</span><a id="line.344">   */</a>
-<span class="sourceLineNo">345</span><a id="line.345">  default WrapperCommand withInterruptBehavior(InterruptionBehavior interruptBehavior) {</a>
-<span class="sourceLineNo">346</span><a id="line.346">    return new WrapperCommand(this) {</a>
-<span class="sourceLineNo">347</span><a id="line.347">      @Override</a>
-<span class="sourceLineNo">348</span><a id="line.348">      public InterruptionBehavior getInterruptionBehavior() {</a>
-<span class="sourceLineNo">349</span><a id="line.349">        return interruptBehavior;</a>
-<span class="sourceLineNo">350</span><a id="line.350">      }</a>
-<span class="sourceLineNo">351</span><a id="line.351">    };</a>
-<span class="sourceLineNo">352</span><a id="line.352">  }</a>
-<span class="sourceLineNo">353</span><a id="line.353"></a>
-<span class="sourceLineNo">354</span><a id="line.354">  /**</a>
-<span class="sourceLineNo">355</span><a id="line.355">   * Decorates this command with a lambda to call on interrupt or end, following the command's</a>
-<span class="sourceLineNo">356</span><a id="line.356">   * inherent {@link #end(boolean)} method.</a>
-<span class="sourceLineNo">357</span><a id="line.357">   *</a>
-<span class="sourceLineNo">358</span><a id="line.358">   * @param end a lambda accepting a boolean parameter specifying whether the command was</a>
-<span class="sourceLineNo">359</span><a id="line.359">   *     interrupted.</a>
-<span class="sourceLineNo">360</span><a id="line.360">   * @return the decorated command</a>
-<span class="sourceLineNo">361</span><a id="line.361">   */</a>
-<span class="sourceLineNo">362</span><a id="line.362">  default WrapperCommand finallyDo(BooleanConsumer end) {</a>
-<span class="sourceLineNo">363</span><a id="line.363">    requireNonNullParam(end, "end", "Command.finallyDo()");</a>
-<span class="sourceLineNo">364</span><a id="line.364">    return new WrapperCommand(this) {</a>
-<span class="sourceLineNo">365</span><a id="line.365">      @Override</a>
-<span class="sourceLineNo">366</span><a id="line.366">      public void end(boolean interrupted) {</a>
-<span class="sourceLineNo">367</span><a id="line.367">        super.end(interrupted);</a>
-<span class="sourceLineNo">368</span><a id="line.368">        end.accept(interrupted);</a>
-<span class="sourceLineNo">369</span><a id="line.369">      }</a>
-<span class="sourceLineNo">370</span><a id="line.370">    };</a>
-<span class="sourceLineNo">371</span><a id="line.371">  }</a>
-<span class="sourceLineNo">372</span><a id="line.372"></a>
-<span class="sourceLineNo">373</span><a id="line.373">  /**</a>
-<span class="sourceLineNo">374</span><a id="line.374">   * Decorates this command with a lambda to call on interrupt, following the command's inherent</a>
-<span class="sourceLineNo">375</span><a id="line.375">   * {@link #end(boolean)} method.</a>
-<span class="sourceLineNo">376</span><a id="line.376">   *</a>
-<span class="sourceLineNo">377</span><a id="line.377">   * @param handler a lambda to run when the command is interrupted</a>
-<span class="sourceLineNo">378</span><a id="line.378">   * @return the decorated command</a>
-<span class="sourceLineNo">379</span><a id="line.379">   */</a>
-<span class="sourceLineNo">380</span><a id="line.380">  default WrapperCommand handleInterrupt(Runnable handler) {</a>
-<span class="sourceLineNo">381</span><a id="line.381">    requireNonNullParam(handler, "handler", "Command.handleInterrupt()");</a>
-<span class="sourceLineNo">382</span><a id="line.382">    return finallyDo(</a>
-<span class="sourceLineNo">383</span><a id="line.383">        interrupted -&gt; {</a>
-<span class="sourceLineNo">384</span><a id="line.384">          if (interrupted) {</a>
-<span class="sourceLineNo">385</span><a id="line.385">            handler.run();</a>
-<span class="sourceLineNo">386</span><a id="line.386">          }</a>
-<span class="sourceLineNo">387</span><a id="line.387">        });</a>
-<span class="sourceLineNo">388</span><a id="line.388">  }</a>
-<span class="sourceLineNo">389</span><a id="line.389"></a>
-<span class="sourceLineNo">390</span><a id="line.390">  /** Schedules this command. */</a>
-<span class="sourceLineNo">391</span><a id="line.391">  default void schedule() {</a>
-<span class="sourceLineNo">392</span><a id="line.392">    CommandScheduler.getInstance().schedule(this);</a>
-<span class="sourceLineNo">393</span><a id="line.393">  }</a>
-<span class="sourceLineNo">394</span><a id="line.394"></a>
-<span class="sourceLineNo">395</span><a id="line.395">  /**</a>
-<span class="sourceLineNo">396</span><a id="line.396">   * Cancels this command. Will call {@link #end(boolean) end(true)}. Commands will be canceled</a>
-<span class="sourceLineNo">397</span><a id="line.397">   * regardless of {@link InterruptionBehavior interruption behavior}.</a>
-<span class="sourceLineNo">398</span><a id="line.398">   *</a>
-<span class="sourceLineNo">399</span><a id="line.399">   * @see CommandScheduler#cancel(Command...)</a>
-<span class="sourceLineNo">400</span><a id="line.400">   */</a>
-<span class="sourceLineNo">401</span><a id="line.401">  default void cancel() {</a>
-<span class="sourceLineNo">402</span><a id="line.402">    CommandScheduler.getInstance().cancel(this);</a>
-<span class="sourceLineNo">403</span><a id="line.403">  }</a>
-<span class="sourceLineNo">404</span><a id="line.404"></a>
-<span class="sourceLineNo">405</span><a id="line.405">  /**</a>
-<span class="sourceLineNo">406</span><a id="line.406">   * Whether or not the command is currently scheduled. Note that this does not detect whether the</a>
-<span class="sourceLineNo">407</span><a id="line.407">   * command is being run by a CommandGroup, only whether it is directly being run by the scheduler.</a>
-<span class="sourceLineNo">408</span><a id="line.408">   *</a>
-<span class="sourceLineNo">409</span><a id="line.409">   * @return Whether the command is scheduled.</a>
-<span class="sourceLineNo">410</span><a id="line.410">   */</a>
-<span class="sourceLineNo">411</span><a id="line.411">  default boolean isScheduled() {</a>
-<span class="sourceLineNo">412</span><a id="line.412">    return CommandScheduler.getInstance().isScheduled(this);</a>
-<span class="sourceLineNo">413</span><a id="line.413">  }</a>
-<span class="sourceLineNo">414</span><a id="line.414"></a>
-<span class="sourceLineNo">415</span><a id="line.415">  /**</a>
-<span class="sourceLineNo">416</span><a id="line.416">   * Whether the command requires a given subsystem.</a>
-<span class="sourceLineNo">417</span><a id="line.417">   *</a>
-<span class="sourceLineNo">418</span><a id="line.418">   * @param requirement the subsystem to inquire about</a>
-<span class="sourceLineNo">419</span><a id="line.419">   * @return whether the subsystem is required</a>
-<span class="sourceLineNo">420</span><a id="line.420">   */</a>
-<span class="sourceLineNo">421</span><a id="line.421">  default boolean hasRequirement(Subsystem requirement) {</a>
-<span class="sourceLineNo">422</span><a id="line.422">    return getRequirements().contains(requirement);</a>
-<span class="sourceLineNo">423</span><a id="line.423">  }</a>
-<span class="sourceLineNo">424</span><a id="line.424"></a>
-<span class="sourceLineNo">425</span><a id="line.425">  /**</a>
-<span class="sourceLineNo">426</span><a id="line.426">   * How the command behaves when another command with a shared requirement is scheduled.</a>
-<span class="sourceLineNo">427</span><a id="line.427">   *</a>
-<span class="sourceLineNo">428</span><a id="line.428">   * @return a variant of {@link InterruptionBehavior}, defaulting to {@link</a>
-<span class="sourceLineNo">429</span><a id="line.429">   *     InterruptionBehavior#kCancelSelf kCancelSelf}.</a>
-<span class="sourceLineNo">430</span><a id="line.430">   */</a>
-<span class="sourceLineNo">431</span><a id="line.431">  default InterruptionBehavior getInterruptionBehavior() {</a>
-<span class="sourceLineNo">432</span><a id="line.432">    return InterruptionBehavior.kCancelSelf;</a>
-<span class="sourceLineNo">433</span><a id="line.433">  }</a>
-<span class="sourceLineNo">434</span><a id="line.434"></a>
-<span class="sourceLineNo">435</span><a id="line.435">  /**</a>
-<span class="sourceLineNo">436</span><a id="line.436">   * Whether the given command should run when the robot is disabled. Override to return true if the</a>
-<span class="sourceLineNo">437</span><a id="line.437">   * command should run when disabled.</a>
-<span class="sourceLineNo">438</span><a id="line.438">   *</a>
-<span class="sourceLineNo">439</span><a id="line.439">   * @return whether the command should run when the robot is disabled</a>
-<span class="sourceLineNo">440</span><a id="line.440">   */</a>
-<span class="sourceLineNo">441</span><a id="line.441">  default boolean runsWhenDisabled() {</a>
-<span class="sourceLineNo">442</span><a id="line.442">    return false;</a>
-<span class="sourceLineNo">443</span><a id="line.443">  }</a>
-<span class="sourceLineNo">444</span><a id="line.444"></a>
-<span class="sourceLineNo">445</span><a id="line.445">  /**</a>
-<span class="sourceLineNo">446</span><a id="line.446">   * Gets the name of this Command.</a>
-<span class="sourceLineNo">447</span><a id="line.447">   *</a>
-<span class="sourceLineNo">448</span><a id="line.448">   * @return Name</a>
-<span class="sourceLineNo">449</span><a id="line.449">   */</a>
-<span class="sourceLineNo">450</span><a id="line.450">  default String getName() {</a>
-<span class="sourceLineNo">451</span><a id="line.451">    return this.getClass().getSimpleName();</a>
-<span class="sourceLineNo">452</span><a id="line.452">  }</a>
-<span class="sourceLineNo">453</span><a id="line.453"></a>
-<span class="sourceLineNo">454</span><a id="line.454">  /**</a>
-<span class="sourceLineNo">455</span><a id="line.455">   * An enum describing the command's behavior when another command with a shared requirement is</a>
-<span class="sourceLineNo">456</span><a id="line.456">   * scheduled.</a>
-<span class="sourceLineNo">457</span><a id="line.457">   */</a>
-<span class="sourceLineNo">458</span><a id="line.458">  enum InterruptionBehavior {</a>
-<span class="sourceLineNo">459</span><a id="line.459">    /**</a>
-<span class="sourceLineNo">460</span><a id="line.460">     * This command ends, {@link #end(boolean) end(true)} is called, and the incoming command is</a>
-<span class="sourceLineNo">461</span><a id="line.461">     * scheduled normally.</a>
-<span class="sourceLineNo">462</span><a id="line.462">     *</a>
-<span class="sourceLineNo">463</span><a id="line.463">     * &lt;p&gt;This is the default behavior.</a>
-<span class="sourceLineNo">464</span><a id="line.464">     */</a>
-<span class="sourceLineNo">465</span><a id="line.465">    kCancelSelf,</a>
-<span class="sourceLineNo">466</span><a id="line.466">    /** This command continues, and the incoming command is not scheduled. */</a>
-<span class="sourceLineNo">467</span><a id="line.467">    kCancelIncoming</a>
-<span class="sourceLineNo">468</span><a id="line.468">  }</a>
-<span class="sourceLineNo">469</span><a id="line.469">}</a>
+<span class="sourceLineNo">261</span><a id="line.261">   * @deprecated PerpetualCommand violates the assumption that execute() doesn't get called after</a>
+<span class="sourceLineNo">262</span><a id="line.262">   *     isFinished() returns true -- an assumption that should be valid. This was unsafe/undefined</a>
+<span class="sourceLineNo">263</span><a id="line.263">   *     behavior from the start, and RepeatCommand provides an easy way to achieve similar end</a>
+<span class="sourceLineNo">264</span><a id="line.264">   *     results with slightly different (and safe) semantics.</a>
+<span class="sourceLineNo">265</span><a id="line.265">   */</a>
+<span class="sourceLineNo">266</span><a id="line.266">  @SuppressWarnings("removal") // PerpetualCommand</a>
+<span class="sourceLineNo">267</span><a id="line.267">  @Deprecated(forRemoval = true, since = "2023")</a>
+<span class="sourceLineNo">268</span><a id="line.268">  default PerpetualCommand perpetually() {</a>
+<span class="sourceLineNo">269</span><a id="line.269">    return new PerpetualCommand(this);</a>
+<span class="sourceLineNo">270</span><a id="line.270">  }</a>
+<span class="sourceLineNo">271</span><a id="line.271"></a>
+<span class="sourceLineNo">272</span><a id="line.272">  /**</a>
+<span class="sourceLineNo">273</span><a id="line.273">   * Decorates this command to run repeatedly, restarting it when it ends, until this command is</a>
+<span class="sourceLineNo">274</span><a id="line.274">   * interrupted. The decorated command can still be canceled.</a>
+<span class="sourceLineNo">275</span><a id="line.275">   *</a>
+<span class="sourceLineNo">276</span><a id="line.276">   * &lt;p&gt;Note: This decorator works by composing this command within a CommandGroup. The command</a>
+<span class="sourceLineNo">277</span><a id="line.277">   * cannot be used independently after being decorated, or be re-decorated with a different</a>
+<span class="sourceLineNo">278</span><a id="line.278">   * decorator, unless it is manually cleared from the list of grouped commands with {@link</a>
+<span class="sourceLineNo">279</span><a id="line.279">   * CommandGroupBase#clearGroupedCommand(Command)}. The decorated command can, however, be further</a>
+<span class="sourceLineNo">280</span><a id="line.280">   * decorated without issue.</a>
+<span class="sourceLineNo">281</span><a id="line.281">   *</a>
+<span class="sourceLineNo">282</span><a id="line.282">   * @return the decorated command</a>
+<span class="sourceLineNo">283</span><a id="line.283">   */</a>
+<span class="sourceLineNo">284</span><a id="line.284">  default RepeatCommand repeatedly() {</a>
+<span class="sourceLineNo">285</span><a id="line.285">    return new RepeatCommand(this);</a>
+<span class="sourceLineNo">286</span><a id="line.286">  }</a>
+<span class="sourceLineNo">287</span><a id="line.287"></a>
+<span class="sourceLineNo">288</span><a id="line.288">  /**</a>
+<span class="sourceLineNo">289</span><a id="line.289">   * Decorates this command to run "by proxy" by wrapping it in a {@link ProxyScheduleCommand}. This</a>
+<span class="sourceLineNo">290</span><a id="line.290">   * is useful for "forking off" from command groups when the user does not wish to extend the</a>
+<span class="sourceLineNo">291</span><a id="line.291">   * command's requirements to the entire command group.</a>
+<span class="sourceLineNo">292</span><a id="line.292">   *</a>
+<span class="sourceLineNo">293</span><a id="line.293">   * @return the decorated command</a>
+<span class="sourceLineNo">294</span><a id="line.294">   */</a>
+<span class="sourceLineNo">295</span><a id="line.295">  default ProxyScheduleCommand asProxy() {</a>
+<span class="sourceLineNo">296</span><a id="line.296">    return new ProxyScheduleCommand(this);</a>
+<span class="sourceLineNo">297</span><a id="line.297">  }</a>
+<span class="sourceLineNo">298</span><a id="line.298"></a>
+<span class="sourceLineNo">299</span><a id="line.299">  /**</a>
+<span class="sourceLineNo">300</span><a id="line.300">   * Decorates this command to only run if this condition is not met. If the command is already</a>
+<span class="sourceLineNo">301</span><a id="line.301">   * running and the condition changes to true, the command will not stop running. The requirements</a>
+<span class="sourceLineNo">302</span><a id="line.302">   * of this command will be kept for the new conditonal command.</a>
+<span class="sourceLineNo">303</span><a id="line.303">   *</a>
+<span class="sourceLineNo">304</span><a id="line.304">   * @param condition the condition that will prevent the command from running</a>
+<span class="sourceLineNo">305</span><a id="line.305">   * @return the decorated command</a>
+<span class="sourceLineNo">306</span><a id="line.306">   */</a>
+<span class="sourceLineNo">307</span><a id="line.307">  default ConditionalCommand unless(BooleanSupplier condition) {</a>
+<span class="sourceLineNo">308</span><a id="line.308">    return new ConditionalCommand(new InstantCommand(), this, condition);</a>
+<span class="sourceLineNo">309</span><a id="line.309">  }</a>
+<span class="sourceLineNo">310</span><a id="line.310"></a>
+<span class="sourceLineNo">311</span><a id="line.311">  /**</a>
+<span class="sourceLineNo">312</span><a id="line.312">   * Decorates this command to run or stop when disabled.</a>
+<span class="sourceLineNo">313</span><a id="line.313">   *</a>
+<span class="sourceLineNo">314</span><a id="line.314">   * @param doesRunWhenDisabled true to run when disabled.</a>
+<span class="sourceLineNo">315</span><a id="line.315">   * @return the decorated command</a>
+<span class="sourceLineNo">316</span><a id="line.316">   */</a>
+<span class="sourceLineNo">317</span><a id="line.317">  default WrapperCommand ignoringDisable(boolean doesRunWhenDisabled) {</a>
+<span class="sourceLineNo">318</span><a id="line.318">    return new WrapperCommand(this) {</a>
+<span class="sourceLineNo">319</span><a id="line.319">      @Override</a>
+<span class="sourceLineNo">320</span><a id="line.320">      public boolean runsWhenDisabled() {</a>
+<span class="sourceLineNo">321</span><a id="line.321">        return doesRunWhenDisabled;</a>
+<span class="sourceLineNo">322</span><a id="line.322">      }</a>
+<span class="sourceLineNo">323</span><a id="line.323">    };</a>
+<span class="sourceLineNo">324</span><a id="line.324">  }</a>
+<span class="sourceLineNo">325</span><a id="line.325"></a>
+<span class="sourceLineNo">326</span><a id="line.326">  /**</a>
+<span class="sourceLineNo">327</span><a id="line.327">   * Decorates this command to have a different {@link InterruptionBehavior interruption behavior}.</a>
+<span class="sourceLineNo">328</span><a id="line.328">   *</a>
+<span class="sourceLineNo">329</span><a id="line.329">   * @param interruptBehavior the desired interrupt behavior</a>
+<span class="sourceLineNo">330</span><a id="line.330">   * @return the decorated command</a>
+<span class="sourceLineNo">331</span><a id="line.331">   */</a>
+<span class="sourceLineNo">332</span><a id="line.332">  default WrapperCommand withInterruptBehavior(InterruptionBehavior interruptBehavior) {</a>
+<span class="sourceLineNo">333</span><a id="line.333">    return new WrapperCommand(this) {</a>
+<span class="sourceLineNo">334</span><a id="line.334">      @Override</a>
+<span class="sourceLineNo">335</span><a id="line.335">      public InterruptionBehavior getInterruptionBehavior() {</a>
+<span class="sourceLineNo">336</span><a id="line.336">        return interruptBehavior;</a>
+<span class="sourceLineNo">337</span><a id="line.337">      }</a>
+<span class="sourceLineNo">338</span><a id="line.338">    };</a>
+<span class="sourceLineNo">339</span><a id="line.339">  }</a>
+<span class="sourceLineNo">340</span><a id="line.340"></a>
+<span class="sourceLineNo">341</span><a id="line.341">  /**</a>
+<span class="sourceLineNo">342</span><a id="line.342">   * Decorates this command with a lambda to call on interrupt or end, following the command's</a>
+<span class="sourceLineNo">343</span><a id="line.343">   * inherent {@link #end(boolean)} method.</a>
+<span class="sourceLineNo">344</span><a id="line.344">   *</a>
+<span class="sourceLineNo">345</span><a id="line.345">   * @param end a lambda accepting a boolean parameter specifying whether the command was</a>
+<span class="sourceLineNo">346</span><a id="line.346">   *     interrupted.</a>
+<span class="sourceLineNo">347</span><a id="line.347">   * @return the decorated command</a>
+<span class="sourceLineNo">348</span><a id="line.348">   */</a>
+<span class="sourceLineNo">349</span><a id="line.349">  default WrapperCommand finallyDo(BooleanConsumer end) {</a>
+<span class="sourceLineNo">350</span><a id="line.350">    requireNonNullParam(end, "end", "Command.finallyDo()");</a>
+<span class="sourceLineNo">351</span><a id="line.351">    return new WrapperCommand(this) {</a>
+<span class="sourceLineNo">352</span><a id="line.352">      @Override</a>
+<span class="sourceLineNo">353</span><a id="line.353">      public void end(boolean interrupted) {</a>
+<span class="sourceLineNo">354</span><a id="line.354">        super.end(interrupted);</a>
+<span class="sourceLineNo">355</span><a id="line.355">        end.accept(interrupted);</a>
+<span class="sourceLineNo">356</span><a id="line.356">      }</a>
+<span class="sourceLineNo">357</span><a id="line.357">    };</a>
+<span class="sourceLineNo">358</span><a id="line.358">  }</a>
+<span class="sourceLineNo">359</span><a id="line.359"></a>
+<span class="sourceLineNo">360</span><a id="line.360">  /**</a>
+<span class="sourceLineNo">361</span><a id="line.361">   * Decorates this command with a lambda to call on interrupt, following the command's inherent</a>
+<span class="sourceLineNo">362</span><a id="line.362">   * {@link #end(boolean)} method.</a>
+<span class="sourceLineNo">363</span><a id="line.363">   *</a>
+<span class="sourceLineNo">364</span><a id="line.364">   * @param handler a lambda to run when the command is interrupted</a>
+<span class="sourceLineNo">365</span><a id="line.365">   * @return the decorated command</a>
+<span class="sourceLineNo">366</span><a id="line.366">   */</a>
+<span class="sourceLineNo">367</span><a id="line.367">  default WrapperCommand handleInterrupt(Runnable handler) {</a>
+<span class="sourceLineNo">368</span><a id="line.368">    requireNonNullParam(handler, "handler", "Command.handleInterrupt()");</a>
+<span class="sourceLineNo">369</span><a id="line.369">    return finallyDo(</a>
+<span class="sourceLineNo">370</span><a id="line.370">        interrupted -&gt; {</a>
+<span class="sourceLineNo">371</span><a id="line.371">          if (interrupted) {</a>
+<span class="sourceLineNo">372</span><a id="line.372">            handler.run();</a>
+<span class="sourceLineNo">373</span><a id="line.373">          }</a>
+<span class="sourceLineNo">374</span><a id="line.374">        });</a>
+<span class="sourceLineNo">375</span><a id="line.375">  }</a>
+<span class="sourceLineNo">376</span><a id="line.376"></a>
+<span class="sourceLineNo">377</span><a id="line.377">  /** Schedules this command. */</a>
+<span class="sourceLineNo">378</span><a id="line.378">  default void schedule() {</a>
+<span class="sourceLineNo">379</span><a id="line.379">    CommandScheduler.getInstance().schedule(this);</a>
+<span class="sourceLineNo">380</span><a id="line.380">  }</a>
+<span class="sourceLineNo">381</span><a id="line.381"></a>
+<span class="sourceLineNo">382</span><a id="line.382">  /**</a>
+<span class="sourceLineNo">383</span><a id="line.383">   * Cancels this command. Will call {@link #end(boolean) end(true)}. Commands will be canceled</a>
+<span class="sourceLineNo">384</span><a id="line.384">   * regardless of {@link InterruptionBehavior interruption behavior}.</a>
+<span class="sourceLineNo">385</span><a id="line.385">   *</a>
+<span class="sourceLineNo">386</span><a id="line.386">   * @see CommandScheduler#cancel(Command...)</a>
+<span class="sourceLineNo">387</span><a id="line.387">   */</a>
+<span class="sourceLineNo">388</span><a id="line.388">  default void cancel() {</a>
+<span class="sourceLineNo">389</span><a id="line.389">    CommandScheduler.getInstance().cancel(this);</a>
+<span class="sourceLineNo">390</span><a id="line.390">  }</a>
+<span class="sourceLineNo">391</span><a id="line.391"></a>
+<span class="sourceLineNo">392</span><a id="line.392">  /**</a>
+<span class="sourceLineNo">393</span><a id="line.393">   * Whether or not the command is currently scheduled. Note that this does not detect whether the</a>
+<span class="sourceLineNo">394</span><a id="line.394">   * command is being run by a CommandGroup, only whether it is directly being run by the scheduler.</a>
+<span class="sourceLineNo">395</span><a id="line.395">   *</a>
+<span class="sourceLineNo">396</span><a id="line.396">   * @return Whether the command is scheduled.</a>
+<span class="sourceLineNo">397</span><a id="line.397">   */</a>
+<span class="sourceLineNo">398</span><a id="line.398">  default boolean isScheduled() {</a>
+<span class="sourceLineNo">399</span><a id="line.399">    return CommandScheduler.getInstance().isScheduled(this);</a>
+<span class="sourceLineNo">400</span><a id="line.400">  }</a>
+<span class="sourceLineNo">401</span><a id="line.401"></a>
+<span class="sourceLineNo">402</span><a id="line.402">  /**</a>
+<span class="sourceLineNo">403</span><a id="line.403">   * Whether the command requires a given subsystem.</a>
+<span class="sourceLineNo">404</span><a id="line.404">   *</a>
+<span class="sourceLineNo">405</span><a id="line.405">   * @param requirement the subsystem to inquire about</a>
+<span class="sourceLineNo">406</span><a id="line.406">   * @return whether the subsystem is required</a>
+<span class="sourceLineNo">407</span><a id="line.407">   */</a>
+<span class="sourceLineNo">408</span><a id="line.408">  default boolean hasRequirement(Subsystem requirement) {</a>
+<span class="sourceLineNo">409</span><a id="line.409">    return getRequirements().contains(requirement);</a>
+<span class="sourceLineNo">410</span><a id="line.410">  }</a>
+<span class="sourceLineNo">411</span><a id="line.411"></a>
+<span class="sourceLineNo">412</span><a id="line.412">  /**</a>
+<span class="sourceLineNo">413</span><a id="line.413">   * How the command behaves when another command with a shared requirement is scheduled.</a>
+<span class="sourceLineNo">414</span><a id="line.414">   *</a>
+<span class="sourceLineNo">415</span><a id="line.415">   * @return a variant of {@link InterruptionBehavior}, defaulting to {@link</a>
+<span class="sourceLineNo">416</span><a id="line.416">   *     InterruptionBehavior#kCancelSelf kCancelSelf}.</a>
+<span class="sourceLineNo">417</span><a id="line.417">   */</a>
+<span class="sourceLineNo">418</span><a id="line.418">  default InterruptionBehavior getInterruptionBehavior() {</a>
+<span class="sourceLineNo">419</span><a id="line.419">    return InterruptionBehavior.kCancelSelf;</a>
+<span class="sourceLineNo">420</span><a id="line.420">  }</a>
+<span class="sourceLineNo">421</span><a id="line.421"></a>
+<span class="sourceLineNo">422</span><a id="line.422">  /**</a>
+<span class="sourceLineNo">423</span><a id="line.423">   * Whether the given command should run when the robot is disabled. Override to return true if the</a>
+<span class="sourceLineNo">424</span><a id="line.424">   * command should run when disabled.</a>
+<span class="sourceLineNo">425</span><a id="line.425">   *</a>
+<span class="sourceLineNo">426</span><a id="line.426">   * @return whether the command should run when the robot is disabled</a>
+<span class="sourceLineNo">427</span><a id="line.427">   */</a>
+<span class="sourceLineNo">428</span><a id="line.428">  default boolean runsWhenDisabled() {</a>
+<span class="sourceLineNo">429</span><a id="line.429">    return false;</a>
+<span class="sourceLineNo">430</span><a id="line.430">  }</a>
+<span class="sourceLineNo">431</span><a id="line.431"></a>
+<span class="sourceLineNo">432</span><a id="line.432">  /**</a>
+<span class="sourceLineNo">433</span><a id="line.433">   * Gets the name of this Command.</a>
+<span class="sourceLineNo">434</span><a id="line.434">   *</a>
+<span class="sourceLineNo">435</span><a id="line.435">   * @return Name</a>
+<span class="sourceLineNo">436</span><a id="line.436">   */</a>
+<span class="sourceLineNo">437</span><a id="line.437">  default String getName() {</a>
+<span class="sourceLineNo">438</span><a id="line.438">    return this.getClass().getSimpleName();</a>
+<span class="sourceLineNo">439</span><a id="line.439">  }</a>
+<span class="sourceLineNo">440</span><a id="line.440"></a>
+<span class="sourceLineNo">441</span><a id="line.441">  /**</a>
+<span class="sourceLineNo">442</span><a id="line.442">   * An enum describing the command's behavior when another command with a shared requirement is</a>
+<span class="sourceLineNo">443</span><a id="line.443">   * scheduled.</a>
+<span class="sourceLineNo">444</span><a id="line.444">   */</a>
+<span class="sourceLineNo">445</span><a id="line.445">  enum InterruptionBehavior {</a>
+<span class="sourceLineNo">446</span><a id="line.446">    /**</a>
+<span class="sourceLineNo">447</span><a id="line.447">     * This command ends, {@link #end(boolean) end(true)} is called, and the incoming command is</a>
+<span class="sourceLineNo">448</span><a id="line.448">     * scheduled normally.</a>
+<span class="sourceLineNo">449</span><a id="line.449">     *</a>
+<span class="sourceLineNo">450</span><a id="line.450">     * &lt;p&gt;This is the default behavior.</a>
+<span class="sourceLineNo">451</span><a id="line.451">     */</a>
+<span class="sourceLineNo">452</span><a id="line.452">    kCancelSelf,</a>
+<span class="sourceLineNo">453</span><a id="line.453">    /** This command continues, and the incoming command is not scheduled. */</a>
+<span class="sourceLineNo">454</span><a id="line.454">    kCancelIncoming</a>
+<span class="sourceLineNo">455</span><a id="line.455">  }</a>
+<span class="sourceLineNo">456</span><a id="line.456">}</a>
 
 
 
