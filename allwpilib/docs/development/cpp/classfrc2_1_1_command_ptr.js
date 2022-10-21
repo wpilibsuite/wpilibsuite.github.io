@@ -13,7 +13,6 @@ var classfrc2_1_1_command_ptr =
     [ "BeforeStarting", "classfrc2_1_1_command_ptr.html#a4133a82c1cade9542b87c4560ea5808b", null ],
     [ "Cancel", "classfrc2_1_1_command_ptr.html#a07c720c9016a098e648f7a29dd4f21e0", null ],
     [ "DeadlineWith", "classfrc2_1_1_command_ptr.html#afafe81bf1624eb0ef78b30232087b4bf", null ],
-    [ "Endlessly", "classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730", null ],
     [ "FinallyDo", "classfrc2_1_1_command_ptr.html#abd0ae6c855d7cf1f1a33cda5575a7b8f", null ],
     [ "get", "classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2", null ],
     [ "HandleInterrupt", "classfrc2_1_1_command_ptr.html#a2a5580e71dfe356d2b261efe213f7c67", null ],

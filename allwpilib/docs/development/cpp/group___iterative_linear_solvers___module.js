@@ -1,14 +1,14 @@
 var group___iterative_linear_solvers___module =
 [
-    [ "Eigen::BiCGSTAB< _MatrixType, _Preconditioner >", "class_eigen_1_1_bi_c_g_s_t_a_b.html", [
-      [ "MatrixType", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a32fdde20d29016946ae69b4ed5915f22", null ],
-      [ "Preconditioner", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae530e71021e146c29a47e4d634c279ff", null ],
-      [ "RealScalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a04cd3a89fc09e4fc6a464ee879caa3db", null ],
-      [ "Scalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ac52ea7eaf5cfde0eef5f846e95f49e02", null ],
-      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae1a0df6ef6e947256c3cb83ce7df7eda", null ],
-      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a5842afd9566e254bc727de1fd7f46362", null ],
-      [ "~BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ab478a5cee2227902a89b50a353f055b2", null ],
-      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ad46ef9e0f49aa9b71560249db89d6096", null ]
+    [ "Eigen::LeastSquaresConjugateGradient< _MatrixType, _Preconditioner >", "class_eigen_1_1_least_squares_conjugate_gradient.html", [
+      [ "MatrixType", "class_eigen_1_1_least_squares_conjugate_gradient.html#a56c5362953670bfd8cfa31a51d18ee47", null ],
+      [ "Preconditioner", "class_eigen_1_1_least_squares_conjugate_gradient.html#addeb2525fd746662bee305d73f360204", null ],
+      [ "RealScalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a81b0c2843b7d4118c8cf0529bc21924d", null ],
+      [ "Scalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a9b8be7215e7a9d0871517ccee24d9857", null ],
+      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#ace69f423fcc1f8960d0e2de0667447c9", null ],
+      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a91c4f2edc20f93cee9b721165937fb99", null ],
+      [ "~LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a4be76cc34fe7493c522a67e9952621ab", null ],
+      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_least_squares_conjugate_gradient.html#adf832ac8dac045588f2157b9e9697211", null ]
     ] ],
     [ "Eigen::DiagonalPreconditioner< _Scalar >", "class_eigen_1_1_diagonal_preconditioner.html", [
       [ "StorageIndex", "class_eigen_1_1_diagonal_preconditioner.html#a21a4ddda2e64177b5afc4c7c45a6ced9", null ],
@@ -42,16 +42,6 @@ var group___iterative_linear_solvers___module =
       [ "info", "class_eigen_1_1_identity_preconditioner.html#a450681df926cb312fc71a324e150340c", null ],
       [ "solve", "class_eigen_1_1_identity_preconditioner.html#a7ae8e169e407ffb7cb9d9d6e2e8c27cc", null ]
     ] ],
-    [ "Eigen::LeastSquaresConjugateGradient< _MatrixType, _Preconditioner >", "class_eigen_1_1_least_squares_conjugate_gradient.html", [
-      [ "MatrixType", "class_eigen_1_1_least_squares_conjugate_gradient.html#a56c5362953670bfd8cfa31a51d18ee47", null ],
-      [ "Preconditioner", "class_eigen_1_1_least_squares_conjugate_gradient.html#addeb2525fd746662bee305d73f360204", null ],
-      [ "RealScalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a81b0c2843b7d4118c8cf0529bc21924d", null ],
-      [ "Scalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a9b8be7215e7a9d0871517ccee24d9857", null ],
-      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#ace69f423fcc1f8960d0e2de0667447c9", null ],
-      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a91c4f2edc20f93cee9b721165937fb99", null ],
-      [ "~LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a4be76cc34fe7493c522a67e9952621ab", null ],
-      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_least_squares_conjugate_gradient.html#adf832ac8dac045588f2157b9e9697211", null ]
-    ] ],
     [ "Eigen::ConjugateGradient< _MatrixType, _UpLo, _Preconditioner >", "class_eigen_1_1_conjugate_gradient.html", [
       [ "MatrixType", "class_eigen_1_1_conjugate_gradient.html#ac7e663c3436a92b0c2f45b288fbc1bb9", null ],
       [ "Preconditioner", "class_eigen_1_1_conjugate_gradient.html#a3d4ee165efe6de3647f9a1bc8074b8f0", null ],
@@ -61,6 +51,16 @@ var group___iterative_linear_solvers___module =
       [ "ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#ac10f778fcd137eca1f6057c8ddd3d644", null ],
       [ "~ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#a9c1c5dc0312d20074ecf1fb3874bd1ff", null ],
       [ "_solve_vector_with_guess_impl", "class_eigen_1_1_conjugate_gradient.html#a8567a9ef1f9b2c4ed182e0e0c16d90f2", null ]
+    ] ],
+    [ "Eigen::BiCGSTAB< _MatrixType, _Preconditioner >", "class_eigen_1_1_bi_c_g_s_t_a_b.html", [
+      [ "MatrixType", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a32fdde20d29016946ae69b4ed5915f22", null ],
+      [ "Preconditioner", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae530e71021e146c29a47e4d634c279ff", null ],
+      [ "RealScalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a04cd3a89fc09e4fc6a464ee879caa3db", null ],
+      [ "Scalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ac52ea7eaf5cfde0eef5f846e95f49e02", null ],
+      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae1a0df6ef6e947256c3cb83ce7df7eda", null ],
+      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a5842afd9566e254bc727de1fd7f46362", null ],
+      [ "~BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ab478a5cee2227902a89b50a353f055b2", null ],
+      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ad46ef9e0f49aa9b71560249db89d6096", null ]
     ] ],
     [ "Eigen::IterativeSolverBase< Derived >", "class_eigen_1_1_iterative_solver_base.html", [
       [ "ActualMatrixType", "class_eigen_1_1_iterative_solver_base.html#a483da55fcd8ca464e36f06af7e865bba", null ],

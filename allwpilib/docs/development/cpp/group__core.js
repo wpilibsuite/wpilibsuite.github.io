@@ -3,9 +3,18 @@ var group__core =
     [ "wpi::memory::", "conceptwpi_1_1memory_1_1.html", null ],
     [ "wpi::memory::for", "conceptwpi_1_1memory_1_1for.html", null ],
     [ "wpi::memory::of", "conceptwpi_1_1memory_1_1of.html", null ],
-    [ "wpi::memory::is", "conceptwpi_1_1memory_1_1is.html", null ],
     [ "wpi::memory::br", "conceptwpi_1_1memory_1_1br.html", null ],
     [ "wpi::memory::and", "conceptwpi_1_1memory_1_1and.html", null ],
+    [ "wpi::memory::is", "conceptwpi_1_1memory_1_1is.html", null ],
+    [ "wpi::memory::memory_block", "structwpi_1_1memory_1_1memory__block.html", [
+      [ "memory_block", "structwpi_1_1memory_1_1memory__block.html#a492990125351d99f192fe21e0eade782", null ],
+      [ "memory_block", "structwpi_1_1memory_1_1memory__block.html#a14ba5548551956e5eeba9cca8af1aef2", null ],
+      [ "memory_block", "structwpi_1_1memory_1_1memory__block.html#a240658a7cb8272be04ccf7a30d4aec24", null ],
+      [ "contains", "structwpi_1_1memory_1_1memory__block.html#aa7c4b546cbb4bffcaa24538348f34984", null ],
+      [ "memory", "structwpi_1_1memory_1_1memory__block.html#a8376111e0e6d6f316d9b3a7b25ab768c", null ],
+      [ "size", "structwpi_1_1memory_1_1memory__block.html#a2d4de74417f326fa54652e95aa1ff774", null ]
+    ] ],
+    [ "wpi::memory::allocator_is_raw_allocator< std::allocator< T > >", "structwpi_1_1memory_1_1allocator__is__raw__allocator_3_01std_1_1allocator_3_01_t_01_4_01_4.html", null ],
     [ "wpi::memory::allocator_info", "structwpi_1_1memory_1_1allocator__info.html", [
       [ "allocator_info", "structwpi_1_1memory_1_1allocator__info.html#ac1aea2e36e8ecd0df984a32a51da63bc", null ],
       [ "operator!=", "structwpi_1_1memory_1_1allocator__info.html#abea413332235c0588040d5e6e58e4257", null ],
@@ -48,20 +57,11 @@ var group__core =
       [ "bad_alignment", "classwpi_1_1memory_1_1bad__alignment.html#a2b05d156e809864d99a58e9d34f13e9f", null ],
       [ "what", "classwpi_1_1memory_1_1bad__alignment.html#a7a612e5105e6fb54e894782ef007fec7", null ]
     ] ],
-    [ "wpi::memory::memory_block", "structwpi_1_1memory_1_1memory__block.html", [
-      [ "memory_block", "structwpi_1_1memory_1_1memory__block.html#a492990125351d99f192fe21e0eade782", null ],
-      [ "memory_block", "structwpi_1_1memory_1_1memory__block.html#a14ba5548551956e5eeba9cca8af1aef2", null ],
-      [ "memory_block", "structwpi_1_1memory_1_1memory__block.html#a240658a7cb8272be04ccf7a30d4aec24", null ],
-      [ "contains", "structwpi_1_1memory_1_1memory__block.html#aa7c4b546cbb4bffcaa24538348f34984", null ],
-      [ "memory", "structwpi_1_1memory_1_1memory__block.html#a8376111e0e6d6f316d9b3a7b25ab768c", null ],
-      [ "size", "structwpi_1_1memory_1_1memory__block.html#a2d4de74417f326fa54652e95aa1ff774", null ]
-    ] ],
     [ "wpi::memory::no_mutex", "structwpi_1_1memory_1_1no__mutex.html", [
       [ "lock", "structwpi_1_1memory_1_1no__mutex.html#a68e3d27138d2ab36e8bf5abc041e11ed", null ],
       [ "try_lock", "structwpi_1_1memory_1_1no__mutex.html#a5a13ce027cff5cc0a0639ebc8c7b7676", null ],
       [ "unlock", "structwpi_1_1memory_1_1no__mutex.html#ab0005cc0b668e7a0272b73338d954c8e", null ]
     ] ],
-    [ "wpi::memory::allocator_is_raw_allocator< std::allocator< T > >", "structwpi_1_1memory_1_1allocator__is__raw__allocator_3_01std_1_1allocator_3_01_t_01_4_01_4.html", null ],
     [ "wpi::memory::buffer_overflow_handler", "group__core.html#ga2838b189f63bb9505d4ec3ae9d572ee6", null ],
     [ "wpi::memory::invalid_pointer_handler", "group__core.html#ga5cab10357dccef1206a767c56cbbecb4", null ],
     [ "wpi::memory::leak_handler", "group__core.html#gaa4b33e608d367597cf4f0a0e525999a7", null ],

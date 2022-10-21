@@ -113,7 +113,7 @@ var namespacedetail =
     [ "num_bits< int128_opt >", "namespacedetail.html#a7cea7512fe07229d06131cf0f7705056", null ],
     [ "num_bits< uint128_t >", "namespacedetail.html#a376e7f716016af7f2de3fd974a75045e", null ],
     [ "operator==", "namespacedetail.html#a7d4516c34cce7a679f89a534d0406a63", null ],
-    [ "print", "namespacedetail.html#aa348a72f26ad98c21315d54f255f6fcb", null ],
+    [ "print", "namespacedetail.html#a4b7c06a301760f9866b4d66f5c9386a9", null ],
     [ "range_begin", "namespacedetail.html#a379579c5cd4dea85f22752fc3382e845", null ],
     [ "range_begin", "namespacedetail.html#a0b0f31fb8598cbf414f80bc9104be477", null ],
     [ "range_begin", "namespacedetail.html#a8a1d402c0a162daf8e9b637abe48ca4e", null ],

@@ -1,7 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"_integral_constant_8h.html#afea5b600d99da1dba258125bb31f68a3":[7,0,8,1,0,0,0,1,3,6,13],
-"_integral_constant_8h_source.html":[7,0,8,1,0,0,0,1,3,6],
 "_interrupt_manager_8h.html":[7,0,6,2,0],
 "_interrupt_manager_8h_source.html":[7,0,6,2,0],
 "_interrupts_8h.html":[7,0,6,32],
@@ -39,7 +37,7 @@ var NAVTREEINDEX9 =
 "_joystick_sim_8h.html":[7,0,3,7,27],
 "_joystick_sim_8h_source.html":[7,0,3,7,27],
 "_kalman_filter_8h.html":[7,0,4,1,4],
-"_kalman_filter_8h.html#a691e3058f88028f72b7162ab75bc4cb4":[7,0,4,1,4,1],
+"_kalman_filter_8h.html#a9887b682604801053f103bda680fe9de":[7,0,4,1,4,1],
 "_kalman_filter_8h_source.html":[7,0,4,1,4],
 "_kalman_filter_8inc.html":[7,0,4,1,5],
 "_kalman_filter_latency_compensator_8h.html":[7,0,4,1,6],
@@ -79,7 +77,7 @@ var NAVTREEINDEX9 =
 "_linear_plant_inversion_feedforward_8h.html":[7,0,4,0,8],
 "_linear_plant_inversion_feedforward_8h_source.html":[7,0,4,0,8],
 "_linear_quadratic_regulator_8h.html":[7,0,4,0,9],
-"_linear_quadratic_regulator_8h.html#a691e3058f88028f72b7162ab75bc4cb4":[7,0,4,0,9,1],
+"_linear_quadratic_regulator_8h.html#a9887b682604801053f103bda680fe9de":[7,0,4,0,9,1],
 "_linear_quadratic_regulator_8h_source.html":[7,0,4,0,9],
 "_linear_quadratic_regulator_8inc.html":[7,0,4,0,10],
 "_linear_system_8h.html":[7,0,4,8,2],
@@ -87,7 +85,7 @@ var NAVTREEINDEX9 =
 "_linear_system_id_8h.html":[7,0,4,8,0,1],
 "_linear_system_id_8h_source.html":[7,0,4,8,0,1],
 "_linear_system_loop_8h.html":[7,0,4,8,3],
-"_linear_system_loop_8h.html#a691e3058f88028f72b7162ab75bc4cb4":[7,0,4,8,3,1],
+"_linear_system_loop_8h.html#a9887b682604801053f103bda680fe9de":[7,0,4,8,3,1],
 "_linear_system_loop_8h_source.html":[7,0,4,8,3],
 "_linear_system_sim_8h.html":[7,0,3,7,28],
 "_linear_system_sim_8h_source.html":[7,0,3,7,28],
@@ -249,5 +247,7 @@ var NAVTREEINDEX9 =
 "_macros_8h.html#ae5f3a4bbc2a6c8cd57a429ab742e5e1f":[7,0,8,1,0,0,0,1,3,7,102],
 "_macros_8h.html#ae757d9000c42e036f731e022e98c9ec8":[7,0,8,1,0,0,0,1,3,7,48],
 "_macros_8h.html#aea92f29acf1853073c7ac912a59801a5":[7,0,8,1,0,0,0,1,3,7,74],
-"_macros_8h.html#aeb83818a312f88e2915b064f1a842575":[7,0,8,1,0,0,0,1,3,7,112]
+"_macros_8h.html#aeb83818a312f88e2915b064f1a842575":[7,0,8,1,0,0,0,1,3,7,112],
+"_macros_8h.html#aeebf11535aab0e9856107addc03e6f9b":[7,0,8,1,0,0,0,1,3,7,116],
+"_macros_8h.html#af1d318164eb2bda6b536eb3040d40304":[7,0,8,1,0,0,0,1,3,7,16]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-6-gdc037f8</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('include_2wpi_2fmt_2raw__ostream_8h_sou
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="include_2wpi_2fmt_2raw__ostream_8h.html#ae2f3a3927498c972c6377212ffd076db">   13</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="include_2wpi_2fmt_2raw__ostream_8h.html#ae2f3a3927498c972c6377212ffd076db">vprint</a>(<a class="code hl_class" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a>&amp; os, <a class="code hl_class" href="classbasic__string__view.html">string_view</a> format_str,</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                   <a class="code hl_typedef" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args) {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <a class="code hl_class" href="classbasic__memory__buffer.html">memory_buffer</a> <a class="code hl_class" href="classbuffer.html">buffer</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a7561b7186a6e13a6e73faf71b1b78f19">detail::vformat_to</a>(<a class="code hl_class" href="classbuffer.html">buffer</a>, format_str, args);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_function" href="core_8h.html#a9f9d96e25e444d96cf019afa1c1eb518">detail::vformat_to</a>(<a class="code hl_class" href="classbuffer.html">buffer</a>, format_str, args);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  os.<a class="code hl_function" href="classwpi_1_1raw__ostream.html#ad9bad0857785ecde1a5684d3cc732405">write</a>(<a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#a5fe8b50555561bfb4d77a2adcd5f79b2">data</a>(), <a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#aebcfda1cf597e92fdd876bb1b9a1ba2a">size</a>());</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
@@ -133,6 +133,7 @@ $(document).ready(function(){initNavTree('include_2wpi_2fmt_2raw__ostream_8h_sou
 <div class="ttc" id="aclasswpi_1_1raw__ostream_html_ad9bad0857785ecde1a5684d3cc732405"><div class="ttname"><a href="classwpi_1_1raw__ostream.html#ad9bad0857785ecde1a5684d3cc732405">wpi::raw_ostream::write</a></div><div class="ttdeci">raw_ostream &amp; write(unsigned char C)</div></div>
 <div class="ttc" id="acore_8h_html_a61919fb242708a0cc41b106d850b67b5"><div class="ttname"><a href="core_8h.html#a61919fb242708a0cc41b106d850b67b5">make_format_args</a></div><div class="ttdeci">constexpr auto make_format_args(Args &amp;&amp;... args) -&gt; format_arg_store&lt; Context, remove_cvref_t&lt; Args &gt;... &gt;</div><div class="ttdoc">\rst Constructs a ~fmtformat_arg_store object that contains references to arguments and can be implic...</div><div class="ttdef"><b>Definition:</b> core.h:1916</div></div>
 <div class="ttc" id="acore_8h_html_a887c191adf8cfaf06ed40b5c4d487343"><div class="ttname"><a href="core_8h.html#a887c191adf8cfaf06ed40b5c4d487343">FMT_BEGIN_NAMESPACE</a></div><div class="ttdeci">#define FMT_BEGIN_NAMESPACE</div><div class="ttdef"><b>Definition:</b> core.h:214</div></div>
+<div class="ttc" id="acore_8h_html_a9f9d96e25e444d96cf019afa1c1eb518"><div class="ttname"><a href="core_8h.html#a9f9d96e25e444d96cf019afa1c1eb518">vformat_to</a></div><div class="ttdeci">void vformat_to(buffer&lt; Char &gt; &amp;buf, basic_string_view&lt; Char &gt; fmt, basic_format_args&lt; FMT_BUFFER_CONTEXT(type_identity_t&lt; Char &gt;)&gt; args, locale_ref loc={})</div><div class="ttdef"><b>Definition:</b> format.h:4056</div></div>
 <div class="ttc" id="acore_8h_html_abd8c737296655b44480da4fb422add24"><div class="ttname"><a href="core_8h.html#abd8c737296655b44480da4fb422add24">format_args</a></div><div class="ttdeci">basic_format_args&lt; format_context &gt; format_args</div><div class="ttdoc">An alias to basic_format_args&lt;format_context&gt;.</div><div class="ttdef"><b>Definition:</b> core.h:2062</div></div>
 <div class="ttc" id="acore_8h_html_ae0d2fbdf031547a949fc7e1c0b3c97f1"><div class="ttname"><a href="core_8h.html#ae0d2fbdf031547a949fc7e1c0b3c97f1">FMT_END_NAMESPACE</a></div><div class="ttdeci">#define FMT_END_NAMESPACE</div><div class="ttdef"><b>Definition:</b> core.h:217</div></div>
 <div class="ttc" id="aformat_8h_html"><div class="ttname"><a href="format_8h.html">format.h</a></div></div>
@@ -140,14 +141,13 @@ $(document).ready(function(){initNavTree('include_2wpi_2fmt_2raw__ostream_8h_sou
 <div class="ttc" id="ainclude_2wpi_2fmt_2raw__ostream_8h_html_ae2f3a3927498c972c6377212ffd076db"><div class="ttname"><a href="include_2wpi_2fmt_2raw__ostream_8h.html#ae2f3a3927498c972c6377212ffd076db">vprint</a></div><div class="ttdeci">FMT_BEGIN_NAMESPACE void vprint(wpi::raw_ostream &amp;os, string_view format_str, fmt::format_args args)</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:13</div></div>
 <div class="ttc" id="athirdparty_2llvm_2include_2wpi_2raw__ostream_8h_html"><div class="ttname"><a href="thirdparty_2llvm_2include_2wpi_2raw__ostream_8h.html">raw_ostream.h</a></div></div>
 <div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html_a82134794782845c50b9a960bb191ba30"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a></div><div class="ttdeci">#define S(label, offset, message)</div><div class="ttdef"><b>Definition:</b> Errors.h:118</div></div>
-<div class="ttc" id="awpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h_html_a7561b7186a6e13a6e73faf71b1b78f19"><div class="ttname"><a href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a7561b7186a6e13a6e73faf71b1b78f19">vformat_to</a></div><div class="ttdeci">void vformat_to(buffer&lt; Char &gt; &amp;buf, const text_style &amp;ts, basic_string_view&lt; Char &gt; format_str, basic_format_args&lt; buffer_context&lt; type_identity_t&lt; Char &gt; &gt; &gt; args)</div><div class="ttdef"><b>Definition:</b> color.h:457</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_01760b1104b35a6fd322a027d9259ea5.html">fmt</a></li><li class="navelem"><a class="el" href="include_2wpi_2fmt_2raw__ostream_8h.html">raw_ostream.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 17:56:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 00:29:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

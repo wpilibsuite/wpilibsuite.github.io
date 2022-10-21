@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-6-gdc037f8</span>
    </div>
   </td>
  </tr>
@@ -151,7 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ace5a6b313711eebb101e951d5e889d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the command behaves when another command with a shared requirement is scheduled.  <a href="classfrc2_1_1_wrapper_command.html#ace5a6b313711eebb101e951d5e889d46">More...</a><br /></td></tr>
 <tr class="separator:ace5a6b313711eebb101e951d5e889d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad083b260682f7feed91490fc35b3855d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_set.html">wpi::SmallSet</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_wrapper_command.html#ad083b260682f7feed91490fc35b3855d">GetRequirements</a> () const override</td></tr>
-<tr class="memdesc:ad083b260682f7feed91490fc35b3855d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the set of subsystems used by this command.  <a href="classfrc2_1_1_wrapper_command.html#ad083b260682f7feed91490fc35b3855d">More...</a><br /></td></tr>
+<tr class="memdesc:ad083b260682f7feed91490fc35b3855d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classfrc2_1_1_subsystem.html" title="A robot subsystem.">Subsystem</a> requirements of the command.  <a href="classfrc2_1_1_wrapper_command.html#ad083b260682f7feed91490fc35b3855d">More...</a><br /></td></tr>
 <tr class="separator:ad083b260682f7feed91490fc35b3855d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc2_1_1_command_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc2_1_1_command_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc2_1_1_command_helper.html">frc2::CommandHelper&lt; CommandBase, WrapperCommand &gt;</a></td></tr>
 <tr class="memitem:a999c2432be3efe11eb786e33afa7ae47 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_helper.html#a999c2432be3efe11eb786e33afa7ae47">CommandHelper</a> ()=default</td></tr>
@@ -239,11 +239,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7c6ade077442e7e1e1e3b2f175e7ec8d inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1_command.html#a7c6ade077442e7e1e1e3b2f175e7ec8d">More...</a><br /></td></tr>
 <tr class="separator:a7c6ade077442e7e1e1e3b2f175e7ec8d inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac215e297864084cba7b0a4b6d4aa558f inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_perpetual_command.html">PerpetualCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ac215e297864084cba7b0a4b6d4aa558f">Perpetually</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:ac215e297864084cba7b0a4b6d4aa558f inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run perpetually, ignoring its ordinary end conditions.  <a href="classfrc2_1_1_command.html#ac215e297864084cba7b0a4b6d4aa558f">More...</a><br /></td></tr>
 <tr class="separator:ac215e297864084cba7b0a4b6d4aa558f inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f14ef7e23e07963892bb7ee069839d inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a78f14ef7e23e07963892bb7ee069839d">Endlessly</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:a78f14ef7e23e07963892bb7ee069839d inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run endlessly, ignoring its ordinary end conditions.  <a href="classfrc2_1_1_command.html#a78f14ef7e23e07963892bb7ee069839d">More...</a><br /></td></tr>
-<tr class="separator:a78f14ef7e23e07963892bb7ee069839d inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a49a9719a69c0048b0b6ac19ad165db0c">Repeatedly</a> () &amp;&amp;</td></tr>
 <tr class="memdesc:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command.html#a49a9719a69c0048b0b6ac19ad165db0c">More...</a><br /></td></tr>
 <tr class="separator:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -614,13 +610,10 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 </table>
 </div><div class="memdoc">
 
-<p>Specifies the set of subsystems used by this command. </p>
-<p >Two commands cannot use the same subsystem at the same time. If another command is scheduled that shares a requirement, <a class="el" href="classfrc2_1_1_wrapper_command.html#ace5a6b313711eebb101e951d5e889d46" title="How the command behaves when another command with a shared requirement is scheduled.">GetInterruptionBehavior()</a> will be checked and followed. If no subsystems are required, return an empty set.</p>
-<p >Note: it is recommended that user implementations contain the requirements as a field, and return that field here, rather than allocating a new set every time this is called.</p>
-<dl class="section return"><dt>Returns</dt><dd>the set of subsystems that are required </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48" title="An enum describing the command&#39;s behavior when another command with a shared requirement is scheduled...">InterruptionBehavior</a> </dd></dl>
+<p>Gets the <a class="el" href="classfrc2_1_1_subsystem.html" title="A robot subsystem.">Subsystem</a> requirements of the command. </p>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a>'s <a class="el" href="classfrc2_1_1_subsystem.html" title="A robot subsystem.">Subsystem</a> requirements </dd></dl>
 
-<p>Implements <a class="el" href="classfrc2_1_1_command.html#a4830db450b1382e0b7395143e457ddc6">frc2::Command</a>.</p>
+<p>Reimplemented from <a class="el" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">frc2::CommandBase</a>.</p>
 
 </div>
 </div>
@@ -748,7 +741,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_wrapper_command.html">WrapperCommand</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 17:56:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 00:29:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

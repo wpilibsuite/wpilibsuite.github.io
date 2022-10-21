@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-6-gdc037f8</span>
    </div>
   </td>
  </tr>
@@ -95,65 +95,65 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1that.html','')
 </div><!--header-->
 <div class="contents">
 
-<p>A stateless allocates memory using the virtual memory allocation functions.  
+<p>A uses a given.  
 <a href="conceptwpi_1_1memory_1_1that.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="virtual__memory_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/virtual_memory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="memory__arena_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_arena.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1that.html">wpi::memory::that</a> = </div>
-<div class="ttc" id="aconceptwpi_1_1memory_1_1that_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1that.html">wpi::memory::that</a></div><div class="ttdoc">A stateless allocates memory using the virtual memory allocation functions.</div></div>
+<div class="ttc" id="aconceptwpi_1_1memory_1_1that_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1that.html">wpi::memory::that</a></div><div class="ttdoc">A uses a given.</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A stateless allocates memory using the virtual memory allocation functions. </p>
-<p >A allocates the blocks from a fixed size storage.</p>
-<p >A stateful uses a fixed sized storage for the allocations.</p>
+<div class="textblock"><p >A uses a given. </p>
+<p >A stateless allocates memory using (nothrow) <code>operator new</code>.</p>
+<p >A stateful behaves as a collection of multiple memory_pool objects.</p>
+<p >A stateful manages.</p>
+<p >A stateful provides stack-like (LIFO) allocations.</p>
+<p >A stateless allocates memory from the heap.</p>
+<p >A uses the additional joint memory for its allocation.</p>
 <p >A either uses the.</p>
 <p >A composable will always fail.</p>
 <p >A allocates until a maximum size.</p>
-<p >A stateless allocates memory using <code>std::malloc()</code>.</p>
-<p >A stateless allocates memory using (nothrow) <code>operator new</code>.</p>
 <p >A stores a reference to an allocator.</p>
 <p >A stores the allocator directly.</p>
 <p >A stores another allocator.</p>
-<p >A stateful is designed for allocations in a loop.</p>
-<p >A stateful behaves as a collection of multiple memory_pool objects.</p>
-<p >A uses the additional joint memory for its allocation.</p>
-<p >A stateless allocates memory from the heap.</p>
-<p >A stateful provides stack-like (LIFO) allocations.</p>
+<p >A reserves virtual memory and commits it part by part.</p>
+<p >A stateless allocates memory using the virtual memory allocation functions.</p>
+<p >A stateless allocates memory using <code>std::malloc()</code>.</p>
 <p >A stateful handles temporary allocations.</p>
 <p >will be used for their internal allocation, this type is the default value.</p>
 <p >The default will be used as.</p>
-<p >A stateful manages.</p>
+<p >A allocates the blocks from a fixed size storage.</p>
+<p >A stateful uses a fixed sized storage for the allocations.</p>
+<p >A stateful is designed for allocations in a loop.</p>
 <p >A allows only one block allocation.</p>
-<p >A uses a given.</p>
-<p >A reserves virtual memory and commits it part by part.</p>
+<p >It can be used to prevent higher-level allocators from expanding. The one block allocation is performed through the <code><a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a11ba56c63dcf7c5763ae6d090efc699f">allocate_array()</a></code> function of the given</p>
+<p >It uses <code>N</code> stacks for the allocation, one of them is always active. Allocation uses the currently active stack. Calling iteration_allocator::next_iteration() at the end of the loop, will make the next stack active for allocation, effectively releasing all of its memory. Any memory allocated will thus be usable for <code>N</code> iterations of the loop. This type of allocator is a generalization of the double frame allocator.</p>
+<p >It works on a static_allocator_storage and uses its memory for all allocations. Deallocations are not supported, memory cannot be marked as freed.<br  />
+ </p><dl class="section note"><dt>Note</dt><dd>It is not allowed to share an static_allocator_storage between multiple static_allocator objects.</dd></dl>
+<p>It works on a static_allocator_storage and uses it for all allocations, deallocations are only allowed in reversed order which is guaranteed by memory_arena. </p><dl class="section note"><dt>Note</dt><dd>It is not allowed to share an static_allocator_storage between multiple static_allocator objects.</dd></dl>
+<p>\requiredbe Its type can be changed via the CMake option <code>WPI_MEMORY_DEFAULT_ALLCOATOR</code>, but it must be one of the following: heap_allocator, new_allocator, malloc_allocator, static_allocator, virtual_memory_allocator. \defaultbe The default is heap_allocator.</p>
+<p >It works similar to <code>alloca()</code> but uses a seperate memory_stack for the allocations, instead of the actual program stack. This avoids the stack overflow error and is portable, with a similar speed. All allocations done in the scope of the allocator object are automatically freed when the object is destroyed.</p>
+<p >It throws out_of_memory when the allocation fails.</p>
 <p >It does not prereserve any memory and will always reserve and commit combined.</p>
 <p >It is similar to memory_stack but does not support growing and uses virtual memory, also meant for big blocks not small allocations.</p>
-<p >It can be used to prevent higher-level allocators from expanding. The one block allocation is performed through the <code><a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a11ba56c63dcf7c5763ae6d090efc699f">allocate_array()</a></code> function of the given</p>
-<p >\requiredbe Its type can be changed via the CMake option <code>WPI_MEMORY_DEFAULT_ALLCOATOR</code>, but it must be one of the following: heap_allocator, new_allocator, malloc_allocator, static_allocator, virtual_memory_allocator. \defaultbe The default is heap_allocator.</p>
-<p >It works similar to <code>alloca()</code> but uses a seperate memory_stack for the allocations, instead of the actual program stack. This avoids the stack overflow error and is portable, with a similar speed. All allocations done in the scope of the allocator object are automatically freed when the object is destroyed.</p>
-<p >It uses a memory_arena with a given <code>BlockOrRawAllocator</code> defaulting to growing_block_allocator to allocate huge blocks and saves a marker to the current top. Allocation simply moves this marker by the appropriate number of bytes and returns the pointer at the old marker position, deallocation is not directly supported, only setting the marker to a previously queried position.</p>
-<p >It uses the two functions heap_alloc and heap_dealloc for the allocation, which default to <code>std::malloc</code> and <code>std::free</code>.</p>
-<p >It is somewhat limited and allows only allocation once. All joint allocators for an object share the joint memory and must not be used in multiple threads. The memory it returns is owned by a joint_ptr and will be destroyed through it.</p>
-<p >It maintains a list of multiple free lists, whose types are controlled via the <code>PoolType</code> tags defined in <a class="el" href="memory__pool__type_8hpp.html">memory_pool_type.hpp</a>, each of a different size as defined in the <code>BucketDistribution</code> (identity_buckets or log2_buckets). Allocating a node of given size will use the appropriate free list.<br  />
- This allocator is ideal for</p>
-<p >It uses <code>N</code> stacks for the allocation, one of them is always active. Allocation uses the currently active stack. Calling iteration_allocator::next_iteration() at the end of the loop, will make the next stack active for allocation, effectively releasing all of its memory. Any memory allocated will thus be usable for <code>N</code> iterations of the loop. This type of allocator is a generalization of the double frame allocator.</p>
 <p >The</p>
 <p >It embeds the allocator inside it, i.e. moving the storage policy will move the allocator.</p>
 <p >For stateful allocators it only stores a pointer to an allocator object and copying/moving only copies the pointer. For stateless allocators it does not store anything, an allocator will be constructed as needed. For allocators that are already shared (determined through is_shared_allocator) it will store the allocator type directly. </p><dl class="section note"><dt>Note</dt><dd>It does not take ownership over the allocator in the stateful case, the user has to ensure that the allocator object stays valid. In the other cases the lifetime does not matter.</dd></dl>
-<p>If the operator returns <code>nullptr</code>, it behaves like <code>new</code> and loops calling <code>std::new_handler</code>, but instead of throwing a <code>std::bad_alloc</code> exception, it throws out_of_memory.</p>
-<p >It throws out_of_memory when the allocation fails.</p>
-<p >This is useful for compositioning or as last resort in binary_segregator.</p>
-<p >It works on a static_allocator_storage and uses its memory for all allocations. Deallocations are not supported, memory cannot be marked as freed.<br  />
- </p><dl class="section note"><dt>Note</dt><dd>It is not allowed to share an static_allocator_storage between multiple static_allocator objects.</dd></dl>
-<p>It works on a static_allocator_storage and uses it for all allocations, deallocations are only allowed in reversed order which is guaranteed by memory_arena. </p><dl class="section note"><dt>Note</dt><dd>It is not allowed to share an static_allocator_storage between multiple static_allocator objects. </dd></dl>
+<p>This is useful for compositioning or as last resort in binary_segregator.</p>
+<p >It is somewhat limited and allows only allocation once. All joint allocators for an object share the joint memory and must not be used in multiple threads. The memory it returns is owned by a joint_ptr and will be destroyed through it.</p>
+<p >It uses the two functions heap_alloc and heap_dealloc for the allocation, which default to <code>std::malloc</code> and <code>std::free</code>.</p>
+<p >It uses a memory_arena with a given <code>BlockOrRawAllocator</code> defaulting to growing_block_allocator to allocate huge blocks and saves a marker to the current top. Allocation simply moves this marker by the appropriate number of bytes and returns the pointer at the old marker position, deallocation is not directly supported, only setting the marker to a previously queried position.</p>
+<p >It maintains a list of multiple free lists, whose types are controlled via the <code>PoolType</code> tags defined in <a class="el" href="memory__pool__type_8hpp.html">memory_pool_type.hpp</a>, each of a different size as defined in the <code>BucketDistribution</code> (identity_buckets or log2_buckets). Allocating a node of given size will use the appropriate free list.<br  />
+ This allocator is ideal for</p>
+<p >If the operator returns <code>nullptr</code>, it behaves like <code>new</code> and loops calling <code>std::new_handler</code>, but instead of throwing a <code>std::bad_alloc</code> exception, it throws out_of_memory. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1that.html">that</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 17:56:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 00:29:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

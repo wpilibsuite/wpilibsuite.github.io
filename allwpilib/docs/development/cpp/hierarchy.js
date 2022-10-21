@@ -501,9 +501,6 @@ var hierarchy =
         [ "frc2::CommandHelper< CommandBase, ConditionalCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::ConditionalCommand", "classfrc2_1_1_conditional_command.html", null ]
         ] ],
-        [ "frc2::CommandHelper< CommandBase, EndlessCommand >", "classfrc2_1_1_command_helper.html", [
-          [ "frc2::EndlessCommand", "classfrc2_1_1_endless_command.html", null ]
-        ] ],
         [ "frc2::CommandHelper< CommandBase, FunctionalCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::FunctionalCommand", "classfrc2_1_1_functional_command.html", [
             [ "frc2::CommandHelper< FunctionalCommand, InstantCommand >", "classfrc2_1_1_command_helper.html", [

@@ -2267,7 +2267,6 @@ var annotated_dup =
       [ "CommandScheduler", "classfrc2_1_1_command_scheduler.html", "classfrc2_1_1_command_scheduler" ],
       [ "CommandXboxController", "classfrc2_1_1_command_xbox_controller.html", "classfrc2_1_1_command_xbox_controller" ],
       [ "ConditionalCommand", "classfrc2_1_1_conditional_command.html", "classfrc2_1_1_conditional_command" ],
-      [ "EndlessCommand", "classfrc2_1_1_endless_command.html", "classfrc2_1_1_endless_command" ],
       [ "FunctionalCommand", "classfrc2_1_1_functional_command.html", "classfrc2_1_1_functional_command" ],
       [ "InstantCommand", "classfrc2_1_1_instant_command.html", "classfrc2_1_1_instant_command" ],
       [ "JoystickButton", "classfrc2_1_1_joystick_button.html", "classfrc2_1_1_joystick_button" ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-6-gdc037f8</span>
    </div>
   </td>
  </tr>
@@ -102,35 +102,38 @@ $(document).ready(function(){initNavTree('group__adapter.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="concepts" name="concepts"></a>
 Concepts</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1for.html">wpi::memory::for</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A memory arena that manages huge memory blocks for a higher-level allocator. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1.html">wpi::memory::</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <code>std::unique_ptr</code> that deletes using a. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traits that check whether a type models concept. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1and.html">wpi::memory::and</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <code>std::unique_ptr</code> that deletes using a allows polymorphic types. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1for.html">wpi::memory::for</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <code>std::unique_ptr</code> using a the allocation. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1is.html">wpi::memory::is</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether or not a thread safe as-is. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1adapter.html">wpi::memory::adapter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A that tracks another allocator using a. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps a makes it a memory_resource. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1_it.html">wpi::memory::It</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias template for an STL container that uses a certain is just a shorthand for a passing in the <code>RawAllocator</code> wrapped in a <a class="el" href="classwpi_1_1memory_1_1std__allocator.html">wpi::memory::std_allocator</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1returns.html">wpi::memory::returns</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1adapter.html">wpi::memory::adapter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A that ensures a minimum alignment. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1that.html">wpi::memory::that</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A stateless allocates memory using the virtual memory allocation functions. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A uses a given. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1or.html">wpi::memory::or</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes either a a. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1is.html">wpi::memory::is</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies whether or not a thread safe as-is. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1memory_1_1is__shared__allocator_3_01memory__resource__allocator_01_4.html">wpi::memory::is_shared_allocator&lt; memory_resource_allocator &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="structwpi_1_1memory_1_1is__shared__allocator.html">is_shared_allocator</a> to mark <a class="el" href="classwpi_1_1memory_1_1memory__resource__allocator.html">memory_resource_allocator</a> as shared.  <a href="structwpi_1_1memory_1_1is__shared__allocator_3_01memory__resource__allocator_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html">wpi::memory::allocator_deallocator&lt; Type[], RawAllocator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html">allocator_deallocator</a> for array types.  <a href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,9 +145,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html">wpi::memory::allocator_polymorphic_deleter&lt; BaseType, RawAllocator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to <a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deallocator.html">allocator_polymorphic_deallocator</a> but calls the destructors of the object.  <a href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1memory_1_1is__shared__allocator_3_01memory__resource__allocator_01_4.html">wpi::memory::is_shared_allocator&lt; memory_resource_allocator &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization of <a class="el" href="structwpi_1_1memory_1_1is__shared__allocator.html">is_shared_allocator</a> to mark <a class="el" href="classwpi_1_1memory_1_1memory__resource__allocator.html">memory_resource_allocator</a> as shared.  <a href="structwpi_1_1memory_1_1is__shared__allocator_3_01memory__resource__allocator_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -217,7 +217,7 @@ template&lt;class Tracker , class BlockOrRawAllocator &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 19 2022 17:56:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 00:29:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

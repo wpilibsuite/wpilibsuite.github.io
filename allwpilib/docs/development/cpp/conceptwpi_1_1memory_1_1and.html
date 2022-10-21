@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-6-gdc037f8</span>
    </div>
   </td>
  </tr>
@@ -95,22 +95,22 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1and.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>A <code>std::unique_ptr</code> that deletes using a allows polymorphic types.  
+<p>Wraps a makes it a memory_resource.  
 <a href="conceptwpi_1_1memory_1_1and.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="smart__ptr_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/smart_ptr.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="memory__resource__adapter_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_resource_adapter.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1and.html">wpi::memory::and</a> = </div>
-<div class="ttc" id="aconceptwpi_1_1memory_1_1and_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1and.html">wpi::memory::and</a></div><div class="ttdoc">A std::unique_ptr that deletes using a allows polymorphic types.</div></div>
+<div class="ttc" id="aconceptwpi_1_1memory_1_1and_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1and.html">wpi::memory::and</a></div><div class="ttdoc">Wraps a makes it a memory_resource.</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A <code>std::unique_ptr</code> that deletes using a allows polymorphic types. </p>
-<p >Wraps a makes it a memory_resource.</p>
-<p >either provide the necessary functions for the default traits specialization or has specialized it.</p>
+<div class="textblock"><p >Wraps a makes it a memory_resource. </p>
 <p >\effects Takes a deeply wraps it with a</p>
 <p >\effects Takes a wraps it with a</p>
 <p >calls the tracker function before forwarding to it.</p>
+<p >either provide the necessary functions for the default traits specialization or has specialized it.</p>
 <p >Wraps a makes it a "normal" <code>Allocator</code>.</p>
+<p >A <code>std::unique_ptr</code> that deletes using a allows polymorphic types.</p>
 <p >It can only be created by converting a regular unique pointer to a pointer to a derived class, and is meant to be used inside containers. It is an alias template using allocator_polymorphic_deleter as <code>Deleter</code> class. </p><dl class="section note"><dt>Note</dt><dd>It has a relatively high overhead, so only use it if you have to.</dd></dl>
 <p>It allows using a <code>RawAllocator</code> anywhere a <code>Allocator</code> is required.</p>
 <p >The class can then be used anywhere a </p>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1and.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1and.html">and</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 17:56:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 00:29:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

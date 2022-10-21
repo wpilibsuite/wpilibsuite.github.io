@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-6-gdc037f8</span>
    </div>
   </td>
  </tr>
@@ -118,9 +118,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc156a5299699110729918c3aa2b2694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694">Repeatedly</a> () &amp;&amp;</td></tr>
 <tr class="memdesc:acc156a5299699110729918c3aa2b2694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694">More...</a><br /></td></tr>
 <tr class="separator:acc156a5299699110729918c3aa2b2694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe3f9d4a4034a6c7bfc55435f0c77730"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730">Endlessly</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:abe3f9d4a4034a6c7bfc55435f0c77730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run endlessly, ignoring its ordinary end conditions.  <a href="classfrc2_1_1_command_ptr.html#abe3f9d4a4034a6c7bfc55435f0c77730">More...</a><br /></td></tr>
-<tr class="separator:abe3f9d4a4034a6c7bfc55435f0c77730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45784053431393e3277e5bc5ae7f751"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">AsProxy</a> () &amp;&amp;</td></tr>
 <tr class="memdesc:aa45784053431393e3277e5bc5ae7f751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.  <a href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">More...</a><br /></td></tr>
 <tr class="separator:aa45784053431393e3277e5bc5ae7f751"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,27 +584,6 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
-<a id="abe3f9d4a4034a6c7bfc55435f0c77730" name="abe3f9d4a4034a6c7bfc55435f0c77730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe3f9d4a4034a6c7bfc55435f0c77730">&#9670;&nbsp;</a></span>Endlessly()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::Endlessly </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> &amp;&amp;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Decorates this command to run endlessly, ignoring its ordinary end conditions. </p>
-<p >The decorated command can still be interrupted or canceled.</p>
-<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
-
-</div>
-</div>
 <a id="abd0ae6c855d7cf1f1a33cda5575a7b8f" name="abd0ae6c855d7cf1f1a33cda5575a7b8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd0ae6c855d7cf1f1a33cda5575a7b8f">&#9670;&nbsp;</a></span>FinallyDo()</h2>
 
@@ -1018,7 +994,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 17:56:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 00:29:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

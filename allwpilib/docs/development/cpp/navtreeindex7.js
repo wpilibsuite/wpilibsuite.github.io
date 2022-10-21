@@ -1,7 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001aaf169f73a82794128aa491c4b4f1c071":[7,0,9,3,0,0,10,1,2],
-"_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001aafdb5594dc3e484fc1bfd7c564d550c1":[7,0,9,3,0,0,10,1,27],
 "_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001ab3ab5338a00f49c4451851cc5442f370":[7,0,9,3,0,0,10,1,5],
 "_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001abd86a2c65caf6a270b916234ab321ce3":[7,0,9,3,0,0,10,1,16],
 "_errc_8h.html#a0cc73ce1be7e2680fb97374e03368001abfe22fc9b27a8ff13186aba60b6bc5c8":[7,0,9,3,0,0,10,1,37],
@@ -77,8 +75,8 @@ var NAVTREEINDEX7 =
 "_function_extras_8h.html#ab4554a8a955ee20c3287c7daf2ca9b5d":[7,0,9,3,0,0,14,7],
 "_function_extras_8h.html#acf228e430233f227ccd3911e6a128efb":[7,0,9,3,0,0,14,9],
 "_function_extras_8h_source.html":[7,0,9,3,0,0,14],
-"_functional_command_8h.html":[7,0,5,0,9],
-"_functional_command_8h_source.html":[7,0,5,0,9],
+"_functional_command_8h.html":[7,0,5,0,8],
+"_functional_command_8h_source.html":[7,0,5,0,8],
 "_fuzzy_8h.html":[7,0,8,1,0,0,0,1,31],
 "_fuzzy_8h_source.html":[7,0,8,1,0,0,0,1,31],
 "_general_matrix_matrix_8h.html":[7,0,8,1,0,0,0,1,2,1],
@@ -247,7 +245,9 @@ var NAVTREEINDEX7 =
 "_generic_packet_math_functions_8h.html#ad3d488b5e9c0ec085cd23f896703dd16":[7,0,8,1,0,0,0,1,0,1,2,17],
 "_generic_packet_math_functions_8h.html#adc2f1e87c285134b3da15696642c7558":[7,0,8,1,0,0,0,1,0,1,2,18],
 "_generic_packet_math_functions_8h.html#adf8efa275ad2eee600065f2a23b6d9ec":[7,0,8,1,0,0,0,1,0,1,2,25],
-"_generic_packet_math_functions_8h.html#ae613bd261d7701bbc5d18a4f800ca60f":[7,0,8,1,0,0,0,1,0,1,2,27],
 "_generic_packet_math_functions_8h.html#aefa5c2042f9a5d3d49f3172dd1576a97":[7,0,8,1,0,0,0,1,0,1,2,38],
-"_generic_packet_math_functions_8h.html#af8f045e7bfe0e4e30eae611b8ad9c783":[7,0,8,1,0,0,0,1,0,1,2,39]
+"_generic_packet_math_functions_8h.html#af8f045e7bfe0e4e30eae611b8ad9c783":[7,0,8,1,0,0,0,1,0,1,2,39],
+"_generic_packet_math_functions_8h.html#afee8a210263b3aff85ec85a60c34344a":[7,0,8,1,0,0,0,1,0,1,2,27],
+"_generic_packet_math_functions_8h_source.html":[7,0,8,1,0,0,0,1,0,1,2],
+"_generic_packet_math_functions_fwd_8h.html":[7,0,8,1,0,0,0,1,0,1,3]
 };

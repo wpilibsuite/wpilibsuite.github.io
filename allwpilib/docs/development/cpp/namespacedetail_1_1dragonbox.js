@@ -20,7 +20,7 @@ var namespacedetail_1_1dragonbox =
     [ "umul192_upper128", "namespacedetail_1_1dragonbox.html#ace933887b1bbb4fd1739282bd7e56d21", null ],
     [ "umul96_lower64", "namespacedetail_1_1dragonbox.html#a8a4c38b36533127b0527e4def61f5718", null ],
     [ "umul96_upper64", "namespacedetail_1_1dragonbox.html#a51b90293f736ce4723d0b8426a43c09a", null ],
-    [ "div_small_pow10_infos", "namespacedetail_1_1dragonbox.html#ad6cda5d12a9619cf0f455df6a9c34e4f", null ],
+    [ "div_small_pow10_infos", "namespacedetail_1_1dragonbox.html#aad64c7a2e35183eada539db2afe6a937", null ],
     [ "divisor", "namespacedetail_1_1dragonbox.html#a55ee9571cc13bd8f6efffbdf22c6931f", null ],
     [ "shift_amount", "namespacedetail_1_1dragonbox.html#a5440f11212cfda4ccf3ee24746973a09", null ]
 ];

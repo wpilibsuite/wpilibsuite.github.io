@@ -3,6 +3,7 @@ var classfrc_1_1_pose3d =
     [ "Pose3d", "classfrc_1_1_pose3d.html#af2c1eba8dec95304e264795210b5b207", null ],
     [ "Pose3d", "classfrc_1_1_pose3d.html#a620af710281c358757b0ce859edeb01e", null ],
     [ "Pose3d", "classfrc_1_1_pose3d.html#aea495e62dc547fbd682d969e3e969ad1", null ],
+    [ "Pose3d", "classfrc_1_1_pose3d.html#ab4a93418c5487daec33787da7e984204", null ],
     [ "Exp", "classfrc_1_1_pose3d.html#a64934ea0e06795f2c8ffe67d74f1fbc8", null ],
     [ "Log", "classfrc_1_1_pose3d.html#a50a8f2761cb5b2e744733cffa829f6d6", null ],
     [ "operator!=", "classfrc_1_1_pose3d.html#a6e2a9a6448dc48af72b1b782eb5a34ca", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-2-g1fc098e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-6-gdc037f8</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('base_8h.html',''); initResizable(); })
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;<a class="el" href="format_8h_source.html">fmt/format.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_symbol_exports_8h_source.html">wpi/SymbolExports.h</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="frc_2fmt_2units_8h_source.html">frc/fmt/Units.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="frc_2fmt_2_units_8h_source.html">frc/fmt/Units.h</a>&quot;</code><br />
 </div>
 <p><a href="base_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -864,8 +864,8 @@ Variables</h2></td></tr>
 <div class="line"><span class="comment">        /** @endcond */</span>\</div>
 <div class="line">    }</div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> args.h:19</div></div>
-<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> mass.h:31</div></div>
+<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> ranges.h:23</div></div>
+<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> constants.h:46</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1004,12 +1004,12 @@ Variables</h2></td></tr>
 <div class="line">        : fmt::formatter&lt;double&gt; \</div>
 <div class="line">    {\</div>
 <div class="line">        template &lt;typename FormatContext&gt;\</div>
-<div class="line">        auto <a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>(<span class="keyword">const</span> units::namespaceName::nameSingular ## _t&amp; obj,\</div>
+<div class="line">        auto <a class="code hl_function" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a>(<span class="keyword">const</span> units::namespaceName::nameSingular ## _t&amp; obj,\</div>
 <div class="line">                                FormatContext&amp; ctx) -&gt; <span class="keyword">decltype</span>(ctx.out()) \</div>
 <div class="line">        {\</div>
 <div class="line">            auto out = ctx.out();\</div>
-<div class="line">            out = <a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">fmt::formatter&lt;double&gt;::format</a>(obj(), ctx);\</div>
-<div class="line">            return <a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a3c4d8499969f1378aea4db1993e7c319">fmt::format_to</a>(out, <span class="stringliteral">&quot; &quot;</span> #abbrev);\</div>
+<div class="line">            out = <a class="code hl_function" href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">fmt::formatter&lt;double&gt;::format</a>(obj(), ctx);\</div>
+<div class="line">            return <a class="code hl_function" href="core_8h.html#acccb7c60aa962b39ef947435def89471">fmt::format_to</a>(out, <span class="stringliteral">&quot; &quot;</span> #abbrev);\</div>
 <div class="line">        }\</div>
 <div class="line">    };\</div>
 <div class="line">    namespace <a class="code hl_namespace" href="namespaceunits.html">units</a>\</div>
@@ -1021,9 +1021,9 @@ Variables</h2></td></tr>
 <div class="line">            return <a class="code hl_function" href="namespaceunits_1_1detail.html#a0fc33d31c4dcf18fd9a2c272f6370b0a">units::detail::to_string</a>(obj()) + std::string(<span class="stringliteral">&quot; &quot;</span>#abbrev);\</div>
 <div class="line">        }\</div>
 <div class="line">    }</div>
+<div class="ttc" id="acore_8h_html_a040af707f7f42f401696d0e7263d07cf"><div class="ttname"><a href="core_8h.html#a040af707f7f42f401696d0e7263d07cf">format</a></div><div class="ttdeci">FMT_NODISCARD FMT_INLINE auto format(format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::string</div><div class="ttdoc">\rst Formats args according to specifications in fmt and returns the result as a string.</div><div class="ttdef"><b>Definition:</b> core.h:3204</div></div>
+<div class="ttc" id="acore_8h_html_acccb7c60aa962b39ef947435def89471"><div class="ttname"><a href="core_8h.html#acccb7c60aa962b39ef947435def89471">format_to</a></div><div class="ttdeci">FMT_INLINE auto format_to(OutputIt out, format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; OutputIt</div><div class="ttdoc">\rst Formats args according to specifications in fmt, writes the result to the output iterator out an...</div><div class="ttdef"><b>Definition:</b> core.h:3233</div></div>
 <div class="ttc" id="anamespaceunits_1_1detail_html_a0fc33d31c4dcf18fd9a2c272f6370b0a"><div class="ttname"><a href="namespaceunits_1_1detail.html#a0fc33d31c4dcf18fd9a2c272f6370b0a">units::detail::to_string</a></div><div class="ttdeci">std::string to_string(const T &amp;t)</div><div class="ttdef"><b>Definition:</b> base.h:97</div></div>
-<div class="ttc" id="awpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h_html_a3c4d8499969f1378aea4db1993e7c319"><div class="ttname"><a href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a3c4d8499969f1378aea4db1993e7c319">format_to</a></div><div class="ttdeci">auto format_to(OutputIt out, const text_style &amp;ts, const S &amp;format_str, Args &amp;&amp;... args) -&gt; typename std::enable_if&lt; enable, OutputIt &gt;::type</div><div class="ttdoc">\rst Formats arguments with the given text_style, writes the result to the output iterator out and re...</div><div class="ttdef"><b>Definition:</b> color.h:587</div></div>
-<div class="ttc" id="awpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdoc">\rst Formats arguments and returns the result as a string using ANSI escape sequences to specify text...</div><div class="ttdef"><b>Definition:</b> color.h:553</div></div>
 </div><!-- fragment -->
 <p>Macro for generating the boiler-plate code needed for I/O for a new unit. </p>
 <p >The macro generates the code to insert units into an ostream. It prints both the value and abbreviation of the unit when invoked. </p><dl class="params"><dt>Parameters</dt><dd>
@@ -1560,7 +1560,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="base_8h.html">base.h</a></li>
-    <li class="footer">Generated on Wed Oct 19 2022 17:56:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 21 2022 00:29:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
