@@ -162,70 +162,83 @@
 <span class="sourceLineNo">150</span><a id="line.150">        });</a>
 <span class="sourceLineNo">151</span><a id="line.151">  }</a>
 <span class="sourceLineNo">152</span><a id="line.152"></a>
-<span class="sourceLineNo">153</span><a id="line.153">  /**</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * Tell all the sensors to update (send) their values.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   *</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * &lt;p&gt;Actuators are handled through callbacks on their value changing from the SmartDashboard</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * widgets.</a>
-<span class="sourceLineNo">158</span><a id="line.158">   */</a>
-<span class="sourceLineNo">159</span><a id="line.159">  public static synchronized void updateValues() {</a>
-<span class="sourceLineNo">160</span><a id="line.160">    // Only do this if either LiveWindow mode or telemetry is enabled.</a>
-<span class="sourceLineNo">161</span><a id="line.161">    if (!liveWindowEnabled &amp;&amp; !telemetryEnabled) {</a>
-<span class="sourceLineNo">162</span><a id="line.162">      return;</a>
-<span class="sourceLineNo">163</span><a id="line.163">    }</a>
-<span class="sourceLineNo">164</span><a id="line.164"></a>
-<span class="sourceLineNo">165</span><a id="line.165">    SendableRegistry.foreachLiveWindow(</a>
-<span class="sourceLineNo">166</span><a id="line.166">        dataHandle,</a>
-<span class="sourceLineNo">167</span><a id="line.167">        cbdata -&gt; {</a>
-<span class="sourceLineNo">168</span><a id="line.168">          if (cbdata.sendable == null || cbdata.parent != null) {</a>
-<span class="sourceLineNo">169</span><a id="line.169">            return;</a>
-<span class="sourceLineNo">170</span><a id="line.170">          }</a>
-<span class="sourceLineNo">171</span><a id="line.171"></a>
-<span class="sourceLineNo">172</span><a id="line.172">          if (cbdata.data == null) {</a>
-<span class="sourceLineNo">173</span><a id="line.173">            cbdata.data = new Component();</a>
-<span class="sourceLineNo">174</span><a id="line.174">          }</a>
-<span class="sourceLineNo">175</span><a id="line.175"></a>
-<span class="sourceLineNo">176</span><a id="line.176">          Component component = (Component) cbdata.data;</a>
+<span class="sourceLineNo">153</span><a id="line.153">  /** Enable ALL telemetry. */</a>
+<span class="sourceLineNo">154</span><a id="line.154">  public static synchronized void enableAllTelemetry() {</a>
+<span class="sourceLineNo">155</span><a id="line.155">    telemetryEnabled = true;</a>
+<span class="sourceLineNo">156</span><a id="line.156">    SendableRegistry.foreachLiveWindow(</a>
+<span class="sourceLineNo">157</span><a id="line.157">        dataHandle,</a>
+<span class="sourceLineNo">158</span><a id="line.158">        cbdata -&gt; {</a>
+<span class="sourceLineNo">159</span><a id="line.159">          if (cbdata.data == null) {</a>
+<span class="sourceLineNo">160</span><a id="line.160">            cbdata.data = new Component();</a>
+<span class="sourceLineNo">161</span><a id="line.161">          }</a>
+<span class="sourceLineNo">162</span><a id="line.162">          ((Component) cbdata.data).m_telemetryEnabled = true;</a>
+<span class="sourceLineNo">163</span><a id="line.163">        });</a>
+<span class="sourceLineNo">164</span><a id="line.164">  }</a>
+<span class="sourceLineNo">165</span><a id="line.165"></a>
+<span class="sourceLineNo">166</span><a id="line.166">  /**</a>
+<span class="sourceLineNo">167</span><a id="line.167">   * Tell all the sensors to update (send) their values.</a>
+<span class="sourceLineNo">168</span><a id="line.168">   *</a>
+<span class="sourceLineNo">169</span><a id="line.169">   * &lt;p&gt;Actuators are handled through callbacks on their value changing from the SmartDashboard</a>
+<span class="sourceLineNo">170</span><a id="line.170">   * widgets.</a>
+<span class="sourceLineNo">171</span><a id="line.171">   */</a>
+<span class="sourceLineNo">172</span><a id="line.172">  public static synchronized void updateValues() {</a>
+<span class="sourceLineNo">173</span><a id="line.173">    // Only do this if either LiveWindow mode or telemetry is enabled.</a>
+<span class="sourceLineNo">174</span><a id="line.174">    if (!liveWindowEnabled &amp;&amp; !telemetryEnabled) {</a>
+<span class="sourceLineNo">175</span><a id="line.175">      return;</a>
+<span class="sourceLineNo">176</span><a id="line.176">    }</a>
 <span class="sourceLineNo">177</span><a id="line.177"></a>
-<span class="sourceLineNo">178</span><a id="line.178">          if (!liveWindowEnabled &amp;&amp; !component.m_telemetryEnabled) {</a>
-<span class="sourceLineNo">179</span><a id="line.179">            return;</a>
-<span class="sourceLineNo">180</span><a id="line.180">          }</a>
-<span class="sourceLineNo">181</span><a id="line.181"></a>
-<span class="sourceLineNo">182</span><a id="line.182">          if (component.m_firstTime) {</a>
-<span class="sourceLineNo">183</span><a id="line.183">            // By holding off creating the NetworkTable entries, it allows the</a>
-<span class="sourceLineNo">184</span><a id="line.184">            // components to be redefined. This allows default sensor and actuator</a>
-<span class="sourceLineNo">185</span><a id="line.185">            // values to be created that are replaced with the custom names from</a>
-<span class="sourceLineNo">186</span><a id="line.186">            // users calling setName.</a>
-<span class="sourceLineNo">187</span><a id="line.187">            if (cbdata.name.isEmpty()) {</a>
-<span class="sourceLineNo">188</span><a id="line.188">              return;</a>
-<span class="sourceLineNo">189</span><a id="line.189">            }</a>
-<span class="sourceLineNo">190</span><a id="line.190">            NetworkTable ssTable = liveWindowTable.getSubTable(cbdata.subsystem);</a>
-<span class="sourceLineNo">191</span><a id="line.191">            NetworkTable table;</a>
-<span class="sourceLineNo">192</span><a id="line.192">            // Treat name==subsystem as top level of subsystem</a>
-<span class="sourceLineNo">193</span><a id="line.193">            if (cbdata.name.equals(cbdata.subsystem)) {</a>
-<span class="sourceLineNo">194</span><a id="line.194">              table = ssTable;</a>
-<span class="sourceLineNo">195</span><a id="line.195">            } else {</a>
-<span class="sourceLineNo">196</span><a id="line.196">              table = ssTable.getSubTable(cbdata.name);</a>
-<span class="sourceLineNo">197</span><a id="line.197">            }</a>
-<span class="sourceLineNo">198</span><a id="line.198">            component.m_namePub = new StringTopic(table.getTopic(".name")).publish();</a>
-<span class="sourceLineNo">199</span><a id="line.199">            component.m_namePub.set(cbdata.name);</a>
-<span class="sourceLineNo">200</span><a id="line.200">            ((SendableBuilderImpl) cbdata.builder).setTable(table);</a>
-<span class="sourceLineNo">201</span><a id="line.201">            cbdata.sendable.initSendable(cbdata.builder);</a>
-<span class="sourceLineNo">202</span><a id="line.202">            component.m_typePub = new StringTopic(ssTable.getTopic(".type")).publish();</a>
-<span class="sourceLineNo">203</span><a id="line.203">            component.m_typePub.set("LW Subsystem");</a>
-<span class="sourceLineNo">204</span><a id="line.204"></a>
-<span class="sourceLineNo">205</span><a id="line.205">            component.m_firstTime = false;</a>
-<span class="sourceLineNo">206</span><a id="line.206">          }</a>
-<span class="sourceLineNo">207</span><a id="line.207"></a>
-<span class="sourceLineNo">208</span><a id="line.208">          if (startLiveWindow) {</a>
-<span class="sourceLineNo">209</span><a id="line.209">            ((SendableBuilderImpl) cbdata.builder).startLiveWindowMode();</a>
-<span class="sourceLineNo">210</span><a id="line.210">          }</a>
-<span class="sourceLineNo">211</span><a id="line.211">          cbdata.builder.update();</a>
-<span class="sourceLineNo">212</span><a id="line.212">        });</a>
-<span class="sourceLineNo">213</span><a id="line.213"></a>
-<span class="sourceLineNo">214</span><a id="line.214">    startLiveWindow = false;</a>
-<span class="sourceLineNo">215</span><a id="line.215">  }</a>
-<span class="sourceLineNo">216</span><a id="line.216">}</a>
+<span class="sourceLineNo">178</span><a id="line.178">    SendableRegistry.foreachLiveWindow(</a>
+<span class="sourceLineNo">179</span><a id="line.179">        dataHandle,</a>
+<span class="sourceLineNo">180</span><a id="line.180">        cbdata -&gt; {</a>
+<span class="sourceLineNo">181</span><a id="line.181">          if (cbdata.sendable == null || cbdata.parent != null) {</a>
+<span class="sourceLineNo">182</span><a id="line.182">            return;</a>
+<span class="sourceLineNo">183</span><a id="line.183">          }</a>
+<span class="sourceLineNo">184</span><a id="line.184"></a>
+<span class="sourceLineNo">185</span><a id="line.185">          if (cbdata.data == null) {</a>
+<span class="sourceLineNo">186</span><a id="line.186">            cbdata.data = new Component();</a>
+<span class="sourceLineNo">187</span><a id="line.187">          }</a>
+<span class="sourceLineNo">188</span><a id="line.188"></a>
+<span class="sourceLineNo">189</span><a id="line.189">          Component component = (Component) cbdata.data;</a>
+<span class="sourceLineNo">190</span><a id="line.190"></a>
+<span class="sourceLineNo">191</span><a id="line.191">          if (!liveWindowEnabled &amp;&amp; !component.m_telemetryEnabled) {</a>
+<span class="sourceLineNo">192</span><a id="line.192">            return;</a>
+<span class="sourceLineNo">193</span><a id="line.193">          }</a>
+<span class="sourceLineNo">194</span><a id="line.194"></a>
+<span class="sourceLineNo">195</span><a id="line.195">          if (component.m_firstTime) {</a>
+<span class="sourceLineNo">196</span><a id="line.196">            // By holding off creating the NetworkTable entries, it allows the</a>
+<span class="sourceLineNo">197</span><a id="line.197">            // components to be redefined. This allows default sensor and actuator</a>
+<span class="sourceLineNo">198</span><a id="line.198">            // values to be created that are replaced with the custom names from</a>
+<span class="sourceLineNo">199</span><a id="line.199">            // users calling setName.</a>
+<span class="sourceLineNo">200</span><a id="line.200">            if (cbdata.name.isEmpty()) {</a>
+<span class="sourceLineNo">201</span><a id="line.201">              return;</a>
+<span class="sourceLineNo">202</span><a id="line.202">            }</a>
+<span class="sourceLineNo">203</span><a id="line.203">            NetworkTable ssTable = liveWindowTable.getSubTable(cbdata.subsystem);</a>
+<span class="sourceLineNo">204</span><a id="line.204">            NetworkTable table;</a>
+<span class="sourceLineNo">205</span><a id="line.205">            // Treat name==subsystem as top level of subsystem</a>
+<span class="sourceLineNo">206</span><a id="line.206">            if (cbdata.name.equals(cbdata.subsystem)) {</a>
+<span class="sourceLineNo">207</span><a id="line.207">              table = ssTable;</a>
+<span class="sourceLineNo">208</span><a id="line.208">            } else {</a>
+<span class="sourceLineNo">209</span><a id="line.209">              table = ssTable.getSubTable(cbdata.name);</a>
+<span class="sourceLineNo">210</span><a id="line.210">            }</a>
+<span class="sourceLineNo">211</span><a id="line.211">            component.m_namePub = new StringTopic(table.getTopic(".name")).publish();</a>
+<span class="sourceLineNo">212</span><a id="line.212">            component.m_namePub.set(cbdata.name);</a>
+<span class="sourceLineNo">213</span><a id="line.213">            ((SendableBuilderImpl) cbdata.builder).setTable(table);</a>
+<span class="sourceLineNo">214</span><a id="line.214">            cbdata.sendable.initSendable(cbdata.builder);</a>
+<span class="sourceLineNo">215</span><a id="line.215">            component.m_typePub = new StringTopic(ssTable.getTopic(".type")).publish();</a>
+<span class="sourceLineNo">216</span><a id="line.216">            component.m_typePub.set("LW Subsystem");</a>
+<span class="sourceLineNo">217</span><a id="line.217"></a>
+<span class="sourceLineNo">218</span><a id="line.218">            component.m_firstTime = false;</a>
+<span class="sourceLineNo">219</span><a id="line.219">          }</a>
+<span class="sourceLineNo">220</span><a id="line.220"></a>
+<span class="sourceLineNo">221</span><a id="line.221">          if (startLiveWindow) {</a>
+<span class="sourceLineNo">222</span><a id="line.222">            ((SendableBuilderImpl) cbdata.builder).startLiveWindowMode();</a>
+<span class="sourceLineNo">223</span><a id="line.223">          }</a>
+<span class="sourceLineNo">224</span><a id="line.224">          cbdata.builder.update();</a>
+<span class="sourceLineNo">225</span><a id="line.225">        });</a>
+<span class="sourceLineNo">226</span><a id="line.226"></a>
+<span class="sourceLineNo">227</span><a id="line.227">    startLiveWindow = false;</a>
+<span class="sourceLineNo">228</span><a id="line.228">  }</a>
+<span class="sourceLineNo">229</span><a id="line.229">}</a>
 
 
 
