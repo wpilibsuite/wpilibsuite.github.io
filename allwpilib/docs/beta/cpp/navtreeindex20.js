@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"_sparse_cholesky.html":[7,0,8,1,0,0,10],
 "_sparse_cholesky.html#a4ab47afbedb2bdb41b927537e0cf5e87":[7,0,8,1,0,0,10,0],
 "_sparse_col_etree_8h.html":[7,0,8,1,0,0,0,12,6],
 "_sparse_col_etree_8h.html#a86181db74ba596a7afbfd89efcc5788c":[7,0,8,1,0,0,0,12,6,0],
@@ -149,13 +150,13 @@ var NAVTREEINDEX20 =
 "_stable_norm_8h.html#ad5435f3387e943a41870d140ab0bfd63":[7,0,8,1,0,0,0,1,65,0],
 "_stable_norm_8h.html#aeb44ebe9c6a3631fd8f6f65b1906137a":[7,0,8,1,0,0,0,1,65,1],
 "_stable_norm_8h_source.html":[7,0,8,1,0,0,0,1,65],
-"_stack_trace_8h.html":[7,0,12,33],
-"_stack_trace_8h.html#a17c7ea157a96be60befa9ba11407f839":[7,0,12,33,1],
-"_stack_trace_8h.html#a3776b907dc530ce3556e36bcb5a68462":[7,0,12,33,2],
-"_stack_trace_8h.html#a4b125df3c2eaae6f9b8cd09ccd9da98d":[7,0,12,33,0],
-"_stack_trace_8h_source.html":[7,0,12,33],
-"_start_end_command_8h.html":[7,0,5,0,30],
-"_start_end_command_8h_source.html":[7,0,5,0,30],
+"_stack_trace_8h.html":[7,0,12,34],
+"_stack_trace_8h.html#a17c7ea157a96be60befa9ba11407f839":[7,0,12,34,1],
+"_stack_trace_8h.html#a3776b907dc530ce3556e36bcb5a68462":[7,0,12,34,2],
+"_stack_trace_8h.html#a4b125df3c2eaae6f9b8cd09ccd9da98d":[7,0,12,34,0],
+"_stack_trace_8h_source.html":[7,0,12,34],
+"_start_end_command_8h.html":[7,0,5,0,29],
+"_start_end_command_8h_source.html":[7,0,5,0,29],
 "_state_space_util_8h.html":[7,0,4,13],
 "_state_space_util_8h.html#a089ed0e9037f3940cf5a15c29c20140c":[7,0,4,13,17],
 "_state_space_util_8h.html#a16fc31b3575bb922397dca49b2387805":[7,0,4,13,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "_string_extras_8h.html#a33822f75a8aa525d240b60e5e79568b6":[7,0,9,3,0,0,34,31],
 "_string_extras_8h.html#a368b03e8bb2ecfdc34b02b40523055e4":[7,0,9,3,0,0,34,30],
 "_string_extras_8h.html#a399e353f27a456e8c7fabaa4e3b0e171":[7,0,9,3,0,0,34,23],
-"_string_extras_8h.html#a3cfddbbfbd641d2c2a775d966db02713":[7,0,9,3,0,0,34,3],
-"_string_extras_8h.html#a3ec868a416c46e73b09990b9accd5531":[7,0,9,3,0,0,34,13]
+"_string_extras_8h.html#a3cfddbbfbd641d2c2a775d966db02713":[7,0,9,3,0,0,34,3]
 };

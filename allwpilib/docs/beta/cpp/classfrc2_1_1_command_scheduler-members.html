@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -140,19 +140,20 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_command_scheduler.html',
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a>()=default</td><td class="entry"><a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; CommandScheduler &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a66995c59146e8dff02d5279c8c2afc70">SetActiveButtonLoop</a>(frc::EventLoop *loop)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#ad748198c4967d298dfdab479a00e31b7">SetDefaultCommand</a>(Subsystem *subsystem, T &amp;&amp;defaultCommand)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a2739ab92351c561ddeb353ea14efa46a">SetPeriod</a>(units::second_t period)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a4c6c118d955821e086f9f64700250923">UnregisterSubsystem</a>(Subsystem *subsystem)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#ac8d83b513ca63f86e12c866f21baf0c9">UnregisterSubsystem</a>(std::initializer_list&lt; Subsystem * &gt; subsystems)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a83e23c12dd569c55132295214ac4a935">UnregisterSubsystem</a>(std::span&lt; Subsystem *const &gt; subsystems)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a9f85d33948e4a095d0ab137724408bfe">~CommandScheduler</a>() override</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec">~Sendable</a>()=default</td><td class="entry"><a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a>()</td><td class="entry"><a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; CommandScheduler &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">SetDefaultCommand</a>(Subsystem *subsystem, CommandPtr &amp;&amp;defaultCommand)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a2739ab92351c561ddeb353ea14efa46a">SetPeriod</a>(units::second_t period)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a4c6c118d955821e086f9f64700250923">UnregisterSubsystem</a>(Subsystem *subsystem)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#ac8d83b513ca63f86e12c866f21baf0c9">UnregisterSubsystem</a>(std::initializer_list&lt; Subsystem * &gt; subsystems)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a83e23c12dd569c55132295214ac4a935">UnregisterSubsystem</a>(std::span&lt; Subsystem *const &gt; subsystems)</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html#a9f85d33948e4a095d0ab137724408bfe">~CommandScheduler</a>() override</td><td class="entry"><a class="el" href="classfrc2_1_1_command_scheduler.html">frc2::CommandScheduler</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec">~Sendable</a>()=default</td><td class="entry"><a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a>()</td><td class="entry"><a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; CommandScheduler &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

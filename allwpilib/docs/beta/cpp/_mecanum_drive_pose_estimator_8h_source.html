@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * easy but more accurate drop-in for MecanumDriveOdometry.</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * Update() should be called every robot loop. If your loops are faster or</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * slower than the default of 0.02s, then you should change the nominal delta</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * slower than the default of 20 ms, then you should change the nominal delta</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * time by specifying it in the constructor.</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * AddVisionMeasurement() can be called as infrequently as you want; if you</span></div>
@@ -168,13 +168,13 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   * @param nominalDt                The time in seconds between each robot</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   *                                 loop.</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">   75</a></span>  <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">MecanumDrivePoseEstimator</a>(</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad8c3b8363e48693b5647c24ea88dd472">   75</a></span>  <a class="code hl_function" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad8c3b8363e48693b5647c24ea88dd472">MecanumDrivePoseEstimator</a>(</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; initialPose,</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <a class="code hl_class" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics,</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; stateStdDevs,</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 1&gt;</a>&amp; localMeasurementStdDevs,</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      units::second_t nominalDt = 0.02_s);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      units::second_t nominalDt = 20_ms);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"></span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">   * Sets the pose estimator&#39;s trust of global measurements. This might be used</span></div>
@@ -318,19 +318,9 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_gyroOffset;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_previousAngle;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Dim&gt;</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keyword">static</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> StdDevMatrixToArray(</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Dim&gt;</a>&amp; vector) {</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> array;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; Dim; ++i) {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      array[i] = vector(i);</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">return</span> array;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  }</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>};</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>};</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="a_mecanum_drive_kinematics_8h_html"><div class="ttname"><a href="_mecanum_drive_kinematics_8h.html">MecanumDriveKinematics.h</a></div></div>
 <div class="ttc" id="a_pose2d_8h_html"><div class="ttname"><a href="_pose2d_8h.html">Pose2d.h</a></div></div>
@@ -344,18 +334,18 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a09d595a66bbb8e8779e204003de430f1"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">frc::MecanumDrivePoseEstimator::SetVisionMeasurementStdDevs</a></div><div class="ttdeci">void SetVisionMeasurementStdDevs(const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</div><div class="ttdoc">Sets the pose estimator's trust of global measurements.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a0f8251909256df2c00a750881ed4aee4"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4">frc::MecanumDrivePoseEstimator::Update</a></div><div class="ttdeci">Pose2d Update(const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a17b01865794677d966567bd5eb947935"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a17b01865794677d966567bd5eb947935">frc::MecanumDrivePoseEstimator::ResetPosition</a></div><div class="ttdeci">void ResetPosition(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</div><div class="ttdoc">Resets the robot's position on the field.</div></div>
-<div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a1d58ad2d5e0a0d7a1cfcea46583afe40"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">frc::MecanumDrivePoseEstimator::MecanumDrivePoseEstimator</a></div><div class="ttdeci">MecanumDrivePoseEstimator(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, MecanumDriveKinematics kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</div><div class="ttdoc">Constructs a MecanumDrivePoseEstimator.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_a41f151125d9e8e623a67a3b32f943e2d"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a41f151125d9e8e623a67a3b32f943e2d">frc::MecanumDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</div><div class="ttdoc">Adds a vision measurement to the Unscented Kalman Filter.</div><div class="ttdef"><b>Definition:</b> MecanumDrivePoseEstimator.h:179</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_ab1aa41030fde5363102bba79146747cb"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">frc::MecanumDrivePoseEstimator::GetEstimatedPosition</a></div><div class="ttdeci">Pose2d GetEstimatedPosition() const</div><div class="ttdoc">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_ac44bd596cc67920ca5792203711c1c25"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ac44bd596cc67920ca5792203711c1c25">frc::MecanumDrivePoseEstimator::UpdateWithTime</a></div><div class="ttdeci">Pose2d UpdateWithTime(units::second_t currentTime, const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_ad561f6f2261695854f797b7851bfe949"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad561f6f2261695854f797b7851bfe949">frc::MecanumDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp)</div><div class="ttdoc">Add a vision measurement to the Unscented Kalman Filter.</div></div>
+<div class="ttc" id="aclassfrc_1_1_mecanum_drive_pose_estimator_html_ad8c3b8363e48693b5647c24ea88dd472"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad8c3b8363e48693b5647c24ea88dd472">frc::MecanumDrivePoseEstimator::MecanumDrivePoseEstimator</a></div><div class="ttdeci">MecanumDrivePoseEstimator(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, MecanumDriveKinematics kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</div><div class="ttdoc">Constructs a MecanumDrivePoseEstimator.</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1_time_interpolatable_buffer_html"><div class="ttname"><a href="classfrc_1_1_time_interpolatable_buffer.html">frc::TimeInterpolatableBuffer</a></div><div class="ttdoc">The TimeInterpolatableBuffer provides an easy way to estimate past measurements.</div><div class="ttdef"><b>Definition:</b> TimeInterpolatableBuffer.h:36</div></div>
 <div class="ttc" id="aclassfrc_1_1_unscented_kalman_filter_html"><div class="ttname"><a href="classfrc_1_1_unscented_kalman_filter.html">frc::UnscentedKalmanFilter&lt; 3, 3, 1 &gt;</a></div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
 <div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_speeds_html"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_speeds.html">frc::MecanumDriveWheelSpeeds</a></div><div class="ttdoc">Represents the wheel speeds for a mecanum drive drivetrain.</div><div class="ttdef"><b>Definition:</b> MecanumDriveWheelSpeeds.h:15</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
@@ -366,7 +356,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_pose_estimator_8h_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_mecanum_drive_pose_estimator_8h.html">MecanumDrivePoseEstimator.h</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:07:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

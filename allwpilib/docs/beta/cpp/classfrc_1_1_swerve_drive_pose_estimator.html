@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_swerve_drive_pose_estimat
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a31c93b63c5349dce5053414a6c30dccb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a31c93b63c5349dce5053414a6c30dccb">SwerveDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</td></tr>
-<tr class="memdesc:a31c93b63c5349dce5053414a6c30dccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swer...">SwerveDrivePoseEstimator</a>.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a31c93b63c5349dce5053414a6c30dccb">More...</a><br /></td></tr>
-<tr class="separator:a31c93b63c5349dce5053414a6c30dccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79e9a2228d4df83ad4fe630d96e096e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#ab79e9a2228d4df83ad4fe630d96e096e">SwerveDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td></tr>
+<tr class="memdesc:ab79e9a2228d4df83ad4fe630d96e096e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swer...">SwerveDrivePoseEstimator</a>.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#ab79e9a2228d4df83ad4fe630d96e096e">More...</a><br /></td></tr>
+<tr class="separator:ab79e9a2228d4df83ad4fe630d96e096e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc069c79c0503a5713593eda54af6245"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#abc069c79c0503a5713593eda54af6245">ResetPosition</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle)</td></tr>
 <tr class="memdesc:abc069c79c0503a5713593eda54af6245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#abc069c79c0503a5713593eda54af6245">More...</a><br /></td></tr>
 <tr class="separator:abc069c79c0503a5713593eda54af6245"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,15 +136,15 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t NumModules&gt;<br />
 class frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</div><p >This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. </p>
 <p >It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for <a class="el" href="classfrc_1_1_swerve_drive_odometry.html" title="Class for swerve drive odometry.">SwerveDriveOdometry</a>.</p>
-<p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a1505962f9ffb09955be3b1a406426967" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 0.02s, then you should change the nominal delta time by specifying it in the constructor.</p>
+<p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a1505962f9ffb09955be3b1a406426967" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 20 ms, then you should change the nominal delta time by specifying it in the constructor.</p>
 <p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7" title="Add a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a> can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.</p>
 <p >The state-space system used internally has the following states (x), inputs (u), and outputs (y):</p>
 <p ><b> x = [x, y, theta]ᵀ </b> in the field coordinate system containing x position, y position, and heading.</p>
 <p ><b> u = [v_x, v_y, omega]ᵀ </b> containing x velocity, y velocity, and angular velocity in the field coordinate system.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta]ᵀ </b> containing gyro heading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a31c93b63c5349dce5053414a6c30dccb" name="a31c93b63c5349dce5053414a6c30dccb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31c93b63c5349dce5053414a6c30dccb">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator()</h2>
+<a id="ab79e9a2228d4df83ad4fe630d96e096e" name="ab79e9a2228d4df83ad4fe630d96e096e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79e9a2228d4df83ad4fe630d96e096e">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +194,7 @@ template&lt;size_t NumModules&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">units::second_t&#160;</td>
-          <td class="paramname"><em>nominalDt</em> = <code>0.02_s</code>&#160;</td>
+          <td class="paramname"><em>nominalDt</em> = <code>20_ms</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -567,7 +567,7 @@ template&lt;typename... ModuleState&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">SwerveDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

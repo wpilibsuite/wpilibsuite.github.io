@@ -1,14 +1,15 @@
 var group__adapter =
 [
+    [ "wpi::memory::for", "conceptwpi_1_1memory_1_1for.html", null ],
     [ "wpi::memory::", "conceptwpi_1_1memory_1_1.html", null ],
     [ "wpi::memory::and", "conceptwpi_1_1memory_1_1and.html", null ],
-    [ "wpi::memory::for", "conceptwpi_1_1memory_1_1for.html", null ],
-    [ "wpi::memory::is", "conceptwpi_1_1memory_1_1is.html", null ],
-    [ "wpi::memory::adapter", "conceptwpi_1_1memory_1_1adapter.html", null ],
     [ "wpi::memory::It", "conceptwpi_1_1memory_1_1_it.html", null ],
     [ "wpi::memory::returns", "conceptwpi_1_1memory_1_1returns.html", null ],
+    [ "wpi::memory::adapter", "conceptwpi_1_1memory_1_1adapter.html", null ],
     [ "wpi::memory::that", "conceptwpi_1_1memory_1_1that.html", null ],
     [ "wpi::memory::or", "conceptwpi_1_1memory_1_1or.html", null ],
+    [ "wpi::memory::is", "conceptwpi_1_1memory_1_1is.html", null ],
+    [ "wpi::memory::is_shared_allocator< memory_resource_allocator >", "structwpi_1_1memory_1_1is__shared__allocator_3_01memory__resource__allocator_01_4.html", null ],
     [ "wpi::memory::allocator_deallocator< Type[], RawAllocator >", "classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html", [
       [ "allocator_type", "classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#ae612352d360faf0e09017791f3cef936", null ],
       [ "value_type", "classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#a32ff7267ef649ec50959c2dee6749e2a", null ],
@@ -42,7 +43,6 @@ var group__adapter =
       [ "get_allocator", "classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#a439ea1bf4c22c33dc6f213be40d3d2b8", null ],
       [ "operator()", "classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#a32c2ced12fe3287412203032cf0357aa", null ]
     ] ],
-    [ "wpi::memory::is_shared_allocator< memory_resource_allocator >", "structwpi_1_1memory_1_1is__shared__allocator_3_01memory__resource__allocator_01_4.html", null ],
     [ "wpi::memory::deeply_tracked_block_allocator", "group__adapter.html#ga8d58784d550a3eda4b186fed26e602bb", null ],
     [ "wpi::memory::WPI_ALIAS_TEMPLATE", "group__adapter.html#ga9a52e04544774b2c5fbdafae66fccde9", null ]
 ];

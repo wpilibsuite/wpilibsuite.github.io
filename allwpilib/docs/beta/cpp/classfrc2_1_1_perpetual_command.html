@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -226,11 +226,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7c6ade077442e7e1e1e3b2f175e7ec8d inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1_command.html#a7c6ade077442e7e1e1e3b2f175e7ec8d">More...</a><br /></td></tr>
 <tr class="separator:a7c6ade077442e7e1e1e3b2f175e7ec8d inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac215e297864084cba7b0a4b6d4aa558f inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_perpetual_command.html">PerpetualCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ac215e297864084cba7b0a4b6d4aa558f">Perpetually</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:ac215e297864084cba7b0a4b6d4aa558f inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run perpetually, ignoring its ordinary end conditions.  <a href="classfrc2_1_1_command.html#ac215e297864084cba7b0a4b6d4aa558f">More...</a><br /></td></tr>
 <tr class="separator:ac215e297864084cba7b0a4b6d4aa558f inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f14ef7e23e07963892bb7ee069839d inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a78f14ef7e23e07963892bb7ee069839d">Endlessly</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:a78f14ef7e23e07963892bb7ee069839d inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run endlessly, ignoring its ordinary end conditions.  <a href="classfrc2_1_1_command.html#a78f14ef7e23e07963892bb7ee069839d">More...</a><br /></td></tr>
-<tr class="separator:a78f14ef7e23e07963892bb7ee069839d inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a49a9719a69c0048b0b6ac19ad165db0c">Repeatedly</a> () &amp;&amp;</td></tr>
 <tr class="memdesc:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command.html#a49a9719a69c0048b0b6ac19ad165db0c">More...</a><br /></td></tr>
 <tr class="separator:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -328,7 +324,7 @@ Additional Inherited Members</h2></td></tr>
 <p >While this class does not extend <code><a class="el" href="classfrc2_1_1_command_group_base.html">CommandGroupBase</a></code>, it is still considered a CommandGroup, as it allows one to compose another command within it; the command instances that are passed to it cannot be added to any other groups, or scheduled individually.</p>
 <p >As a rule, CommandGroups require the union of the requirements of their component commands.</p>
 <p >This class is provided by the NewCommands VendorDep</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>replace with <a class="el" href="classfrc2_1_1_endless_command.html" title="A command that runs another command endlessly, ignoring that command&#39;s end conditions.">EndlessCommand</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd><a class="el" href="classfrc2_1_1_perpetual_command.html" title="A command that runs another command in perpetuity, ignoring that command&#39;s end conditions.">PerpetualCommand</a> violates the assumption that execute() doesn't get called after isFinished() returns true &ndash; an assumption that should be valid. This was unsafe/undefined behavior from the start, and <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a> provides an easy way to achieve similar end results with slightly different (and safe) semantics.</dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0659fc8ee5260da19b37ea609baabf8a" name="a0659fc8ee5260da19b37ea609baabf8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0659fc8ee5260da19b37ea609baabf8a">&#9670;&nbsp;</a></span>PerpetualCommand() <span class="overload">[1/5]</span></h2>
@@ -587,7 +583,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_perpetual_command.html">PerpetualCommand</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

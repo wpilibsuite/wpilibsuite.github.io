@@ -1,26 +1,29 @@
 var group__allocator =
 [
     [ "wpi::memory::that", "conceptwpi_1_1memory_1_1that.html", null ],
-    [ "wpi::memory::of", "conceptwpi_1_1memory_1_1of.html", null ],
     [ "wpi::memory::", "conceptwpi_1_1memory_1_1.html", null ],
+    [ "wpi::memory::of", "conceptwpi_1_1memory_1_1of.html", null ],
     [ "wpi::memory::allocations", "conceptwpi_1_1memory_1_1allocations.html", null ],
-    [ "wpi::memory::allocator_traits< memory_pool< PoolType, ImplRawAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html", [
-      [ "allocator_type", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a085e60940b2756a846f8773743d21244", null ],
-      [ "is_stateful", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#ac01ddb1b29296fc0eff40e6ddd5cb496", null ],
-      [ "allocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a03014719170cd3a98760f7e9942995dc", null ],
-      [ "allocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#afbe14873fef4bca07203d8b8c9ff8461", null ],
-      [ "deallocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#af594289c5424fafe4824b187febdacc9", null ],
-      [ "deallocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a011d1a266c6ec6f768ac4665606354f3", null ],
-      [ "max_alignment", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a18d293d0f584f33e0af77e247d45413f", null ],
-      [ "max_array_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a690a5f5079fb60d15d4b4bab466c00a6", null ],
-      [ "max_node_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a5be2eca6b0ef8d5ddbbda18705a6e381", null ]
+    [ "wpi::memory::allocator_traits< iteration_allocator< N, BlockAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html", [
+      [ "allocator_type", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a775cdf1d1ac19485544fe3d01d792b55", null ],
+      [ "is_stateful", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a781b49d967ff7ab9223598be366fe446", null ],
+      [ "allocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a2d39436b733aae5b8af54863d777b45f", null ],
+      [ "allocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#abc684bd97ec6c4bbaa46f89ca93a61d8", null ],
+      [ "deallocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#ac8957f32568d3a303e8d2865dc590471", null ],
+      [ "deallocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a5a57142a9c6cdf9a01e718c0c2b7164e", null ],
+      [ "max_alignment", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#ab62940ba64e1d5e3db5f8de6c4317a65", null ],
+      [ "max_array_size", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#acf1330c1f09396e4f2de9509d3d42418", null ],
+      [ "max_node_size", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a6376f7e69e2fbc3c6452cbd583218b10", null ]
     ] ],
-    [ "wpi::memory::composable_allocator_traits< memory_pool< PoolType, BlockOrRawAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html", [
-      [ "allocator_type", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#a1af7b960db8e3478ad141311c694a609", null ],
-      [ "try_allocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#ad361043708242cd88aad6347c7903af6", null ],
-      [ "try_allocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#a98957f2b7dca1abd328f4308861be496", null ],
-      [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#aaff86725c0d3e9adbfad0121eb08ec1a", null ],
-      [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#a834dafbb9d4bda0cf6292dd81fe2c7a7", null ]
+    [ "wpi::memory::composable_allocator_traits< iteration_allocator< N, BlockAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html", [
+      [ "allocator_type", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a00bebd88c26874be030ad40de99df7bc", null ],
+      [ "try_allocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#abf1ec2abe644f88a91dde217c1b74141", null ],
+      [ "try_allocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a1972ffc01acd4312e166600b4e9dda7d", null ],
+      [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a6d56e7be03428d8f0a64e514499f1a96", null ],
+      [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#ac2b595deef034c5cef36c29f1c23c735", null ]
+    ] ],
+    [ "wpi::memory::static_allocator_storage< Size >", "structwpi_1_1memory_1_1static__allocator__storage.html", [
+      [ "storage", "structwpi_1_1memory_1_1static__allocator__storage.html#a15ac86074fe535ea7947bf8c41aafbb6", null ]
     ] ],
     [ "wpi::memory::temporary_stack", "classwpi_1_1memory_1_1temporary__stack.html", [
       [ "growth_tracker", "classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a", null ],
@@ -40,38 +43,6 @@ var group__allocator =
       [ "max_alignment", "classwpi_1_1memory_1_1allocator__traits_3_01temporary__allocator_01_4.html#ac7fac92f49d788f602d6218a65a10705", null ],
       [ "max_array_size", "classwpi_1_1memory_1_1allocator__traits_3_01temporary__allocator_01_4.html#a8e3d08aaeced4e7b7e79d22f9da37a53", null ],
       [ "max_node_size", "classwpi_1_1memory_1_1allocator__traits_3_01temporary__allocator_01_4.html#a003d79d02afbdfe81c5fd2101aaefee4", null ]
-    ] ],
-    [ "wpi::memory::memory_stack_raii_unwind< Stack >", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html", [
-      [ "marker_type", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ae0b0ce58e0a1d89ad62ca08aaf3fdd8b", null ],
-      [ "stack_type", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4c90daa388c3130b315ff22363a9b778", null ],
-      [ "memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4a773d93e4580152269b50ffde0851e3", null ],
-      [ "memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#af25bf6b4746e420228197a20b8da4089", null ],
-      [ "memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a7a442f8e73c348ab0d97c9d0822ed4f4", null ],
-      [ "~memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a8f408f418096bdaf10d35810b2032fe6", null ],
-      [ "get_marker", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a3de0c5c4b7cdcb1105225acb7449b992", null ],
-      [ "get_stack", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#afbf6e79ce769e4b47b5ffd68f5688a35", null ],
-      [ "operator=", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a1d5335cd2d0c72cb984fce9998127345", null ],
-      [ "release", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a20ccea6bf6bfd666ff9a5be3a049465f", null ],
-      [ "unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a", null ],
-      [ "will_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a2796ec9667c70b321bfee80641d8ab77", null ]
-    ] ],
-    [ "wpi::memory::allocator_traits< memory_stack< BlockAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html", [
-      [ "allocator_type", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#aaef560c4fac98036b0688e307be7607f", null ],
-      [ "is_stateful", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a531df9caf270816f50eaa5e5ce4ca68f", null ],
-      [ "allocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a3898773f9ec5e72f484abf4e993f8e86", null ],
-      [ "allocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a29fda1c499eb04c0b7ec59b058ff6755", null ],
-      [ "deallocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#aec660499ac02131c9b49423e6dd74711", null ],
-      [ "deallocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a0f2bf3e1243c22997cda6b465142467d", null ],
-      [ "max_alignment", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#af8295e98702ee8619fbac9118a59e194", null ],
-      [ "max_array_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a79916e86f1a8a2ac5c3e10ade2e02c4e", null ],
-      [ "max_node_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a58ea8bd16c0274a7444f2da3ce03345d", null ]
-    ] ],
-    [ "wpi::memory::composable_allocator_traits< memory_stack< BlockAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html", [
-      [ "allocator_type", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a43cc370de183d3b953816235b42f1914", null ],
-      [ "try_allocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#aeb608618156b1a0d662a297b21cd00e9", null ],
-      [ "try_allocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a74bdc16e94927e2748a03a95a9e0fded", null ],
-      [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a83cc9beb7162d0a452688a2bafc8248c", null ],
-      [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a5ffb36c11751917be7b6d4a2fdae853a", null ]
     ] ],
     [ "wpi::memory::joint", "classwpi_1_1memory_1_1joint.html", [
       [ "joint_ptr", "classwpi_1_1memory_1_1joint.html#a5c0b4b43a40db3a3565dfe781d98ba34", null ],
@@ -121,6 +92,56 @@ var group__allocator =
       [ "operator[]", "classwpi_1_1memory_1_1joint__array.html#a186898b7c3d86c1ce37a91ce8ea0c838", null ],
       [ "size", "classwpi_1_1memory_1_1joint__array.html#a8ecd1f1332587d8a446329877d9b83c8", null ]
     ] ],
+    [ "wpi::memory::memory_stack_raii_unwind< Stack >", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html", [
+      [ "marker_type", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ae0b0ce58e0a1d89ad62ca08aaf3fdd8b", null ],
+      [ "stack_type", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4c90daa388c3130b315ff22363a9b778", null ],
+      [ "memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4a773d93e4580152269b50ffde0851e3", null ],
+      [ "memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#af25bf6b4746e420228197a20b8da4089", null ],
+      [ "memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a7a442f8e73c348ab0d97c9d0822ed4f4", null ],
+      [ "~memory_stack_raii_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a8f408f418096bdaf10d35810b2032fe6", null ],
+      [ "get_marker", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a3de0c5c4b7cdcb1105225acb7449b992", null ],
+      [ "get_stack", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#afbf6e79ce769e4b47b5ffd68f5688a35", null ],
+      [ "operator=", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a1d5335cd2d0c72cb984fce9998127345", null ],
+      [ "release", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a20ccea6bf6bfd666ff9a5be3a049465f", null ],
+      [ "unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a", null ],
+      [ "will_unwind", "classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a2796ec9667c70b321bfee80641d8ab77", null ]
+    ] ],
+    [ "wpi::memory::allocator_traits< memory_stack< BlockAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html", [
+      [ "allocator_type", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#aaef560c4fac98036b0688e307be7607f", null ],
+      [ "is_stateful", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a531df9caf270816f50eaa5e5ce4ca68f", null ],
+      [ "allocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a3898773f9ec5e72f484abf4e993f8e86", null ],
+      [ "allocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a29fda1c499eb04c0b7ec59b058ff6755", null ],
+      [ "deallocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#aec660499ac02131c9b49423e6dd74711", null ],
+      [ "deallocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a0f2bf3e1243c22997cda6b465142467d", null ],
+      [ "max_alignment", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#af8295e98702ee8619fbac9118a59e194", null ],
+      [ "max_array_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a79916e86f1a8a2ac5c3e10ade2e02c4e", null ],
+      [ "max_node_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a58ea8bd16c0274a7444f2da3ce03345d", null ]
+    ] ],
+    [ "wpi::memory::composable_allocator_traits< memory_stack< BlockAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html", [
+      [ "allocator_type", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a43cc370de183d3b953816235b42f1914", null ],
+      [ "try_allocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#aeb608618156b1a0d662a297b21cd00e9", null ],
+      [ "try_allocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a74bdc16e94927e2748a03a95a9e0fded", null ],
+      [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a83cc9beb7162d0a452688a2bafc8248c", null ],
+      [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__stack_3_01_block_allocator_01_4_01_4.html#a5ffb36c11751917be7b6d4a2fdae853a", null ]
+    ] ],
+    [ "wpi::memory::allocator_traits< memory_pool< PoolType, ImplRawAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html", [
+      [ "allocator_type", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a085e60940b2756a846f8773743d21244", null ],
+      [ "is_stateful", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#ac01ddb1b29296fc0eff40e6ddd5cb496", null ],
+      [ "allocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a03014719170cd3a98760f7e9942995dc", null ],
+      [ "allocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#afbe14873fef4bca07203d8b8c9ff8461", null ],
+      [ "deallocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#af594289c5424fafe4824b187febdacc9", null ],
+      [ "deallocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a011d1a266c6ec6f768ac4665606354f3", null ],
+      [ "max_alignment", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a18d293d0f584f33e0af77e247d45413f", null ],
+      [ "max_array_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a690a5f5079fb60d15d4b4bab466c00a6", null ],
+      [ "max_node_size", "classwpi_1_1memory_1_1allocator__traits_3_01memory__pool_3_01_pool_type_00_01_impl_raw_allocator_01_4_01_4.html#a5be2eca6b0ef8d5ddbbda18705a6e381", null ]
+    ] ],
+    [ "wpi::memory::composable_allocator_traits< memory_pool< PoolType, BlockOrRawAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html", [
+      [ "allocator_type", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#a1af7b960db8e3478ad141311c694a609", null ],
+      [ "try_allocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#ad361043708242cd88aad6347c7903af6", null ],
+      [ "try_allocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#a98957f2b7dca1abd328f4308861be496", null ],
+      [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#aaff86725c0d3e9adbfad0121eb08ec1a", null ],
+      [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool_3_01_pool_type_00_01_block_or_raw_allocator_01_4_01_4.html#a834dafbb9d4bda0cf6292dd81fe2c7a7", null ]
+    ] ],
     [ "wpi::memory::identity_buckets", "structwpi_1_1memory_1_1identity__buckets.html", [
       [ "type", "structwpi_1_1memory_1_1identity__buckets.html#ae2c04f4c6b86a208cdae5589de880412", null ]
     ] ],
@@ -145,24 +166,6 @@ var group__allocator =
       [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#ac1b5c3e9797f6ad031b17ef92274fc83", null ],
       [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#ab6b2ee053486233ab79c63b7c62ebba3", null ]
     ] ],
-    [ "wpi::memory::allocator_traits< iteration_allocator< N, BlockAllocator > >", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html", [
-      [ "allocator_type", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a775cdf1d1ac19485544fe3d01d792b55", null ],
-      [ "is_stateful", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a781b49d967ff7ab9223598be366fe446", null ],
-      [ "allocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a2d39436b733aae5b8af54863d777b45f", null ],
-      [ "allocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#abc684bd97ec6c4bbaa46f89ca93a61d8", null ],
-      [ "deallocate_array", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#ac8957f32568d3a303e8d2865dc590471", null ],
-      [ "deallocate_node", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a5a57142a9c6cdf9a01e718c0c2b7164e", null ],
-      [ "max_alignment", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#ab62940ba64e1d5e3db5f8de6c4317a65", null ],
-      [ "max_array_size", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#acf1330c1f09396e4f2de9509d3d42418", null ],
-      [ "max_node_size", "classwpi_1_1memory_1_1allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a6376f7e69e2fbc3c6452cbd583218b10", null ]
-    ] ],
-    [ "wpi::memory::composable_allocator_traits< iteration_allocator< N, BlockAllocator > >", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html", [
-      [ "allocator_type", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a00bebd88c26874be030ad40de99df7bc", null ],
-      [ "try_allocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#abf1ec2abe644f88a91dde217c1b74141", null ],
-      [ "try_allocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a1972ffc01acd4312e166600b4e9dda7d", null ],
-      [ "try_deallocate_array", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#a6d56e7be03428d8f0a64e514499f1a96", null ],
-      [ "try_deallocate_node", "classwpi_1_1memory_1_1composable__allocator__traits_3_01iteration__allocator_3_01_n_00_01_block_allocator_01_4_01_4.html#ac2b595deef034c5cef36c29f1c23c735", null ]
-    ] ],
     [ "wpi::memory::node_pool", "structwpi_1_1memory_1_1node__pool.html", [
       [ "type", "structwpi_1_1memory_1_1node__pool.html#a72b3404c3e192fe2a301a6d060d27578", null ]
     ] ],
@@ -171,9 +174,6 @@ var group__allocator =
     ] ],
     [ "wpi::memory::small_node_pool", "structwpi_1_1memory_1_1small__node__pool.html", [
       [ "type", "structwpi_1_1memory_1_1small__node__pool.html#ab52d0f07c869bd3dc4b98c330b743c8c", null ]
-    ] ],
-    [ "wpi::memory::static_allocator_storage< Size >", "structwpi_1_1memory_1_1static__allocator__storage.html", [
-      [ "storage", "structwpi_1_1memory_1_1static__allocator__storage.html#a15ac86074fe535ea7947bf8c41aafbb6", null ]
     ] ],
     [ "wpi::memory::allocate_joint", "group__allocator.html#ga2bbc913798578781b6dea3d4aeae8a0e", null ],
     [ "wpi::memory::allocate_joint", "group__allocator.html#gaa386e46d510b33b9ccd41de08abab54b", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -108,18 +108,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplParams" colspan="2">template&lt;typename FailT , typename Fun , typename... Args&gt; </td></tr>
-<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#abf2d0058ae07830ebe9b59a657312f46">RetryAfterSignal</a> (const FailT &amp;Fail, const Fun &amp;F, const Args &amp;... As)</td></tr>
-<tr class="separator:abf2d0058ae07830ebe9b59a657312f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab20407ea1409da137e52f3169d54aec8"><td class="memItemLeft" align="right" valign="top">std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#ab20407ea1409da137e52f3169d54aec8">toTimeT</a> (<a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt;&gt; TP)</td></tr>
-<tr class="memdesc:ab20407ea1409da137e52f3169d54aec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a TimePoint to std::time_t.  <a href="namespacewpi_1_1sys.html#ab20407ea1409da137e52f3169d54aec8">More...</a><br /></td></tr>
-<tr class="separator:ab20407ea1409da137e52f3169d54aec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa144149b38cf444887a3f36ce92215e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aa144149b38cf444887a3f36ce92215e0">toTimePoint</a> (std::time_t T)</td></tr>
-<tr class="memdesc:aa144149b38cf444887a3f36ce92215e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t to a TimePoint.  <a href="namespacewpi_1_1sys.html#aa144149b38cf444887a3f36ce92215e0">More...</a><br /></td></tr>
-<tr class="separator:aa144149b38cf444887a3f36ce92215e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c40676d5469b1565a26039b3fd69ff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a7c40676d5469b1565a26039b3fd69ff2">toTimePoint</a> (std::time_t T, uint32_t nsec)</td></tr>
-<tr class="memdesc:a7c40676d5469b1565a26039b3fd69ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t + nanoseconds to a TimePoint.  <a href="namespacewpi_1_1sys.html#a7c40676d5469b1565a26039b3fd69ff2">More...</a><br /></td></tr>
-<tr class="separator:a7c40676d5469b1565a26039b3fd69ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f28c05961db8438f65c1feee86e27b"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aa9f28c05961db8438f65c1feee86e27b">getSwappedBytes</a> (unsigned char C)</td></tr>
 <tr class="separator:aa9f28c05961db8438f65c1feee86e27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e49d61d0829edd426eb4517f4aa0ac"><td class="memItemLeft" align="right" valign="top">signed char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a98e49d61d0829edd426eb4517f4aa0ac">getSwappedBytes</a> (signed char C)</td></tr>
@@ -152,6 +140,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a103e28fdca610111cb2572b14facecc3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a103e28fdca610111cb2572b14facecc3">swapByteOrder</a> (T &amp;Value)</td></tr>
 <tr class="separator:a103e28fdca610111cb2572b14facecc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20407ea1409da137e52f3169d54aec8"><td class="memItemLeft" align="right" valign="top">std::time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#ab20407ea1409da137e52f3169d54aec8">toTimeT</a> (<a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt;&gt; TP)</td></tr>
+<tr class="memdesc:ab20407ea1409da137e52f3169d54aec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a TimePoint to std::time_t.  <a href="namespacewpi_1_1sys.html#ab20407ea1409da137e52f3169d54aec8">More...</a><br /></td></tr>
+<tr class="separator:ab20407ea1409da137e52f3169d54aec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa144149b38cf444887a3f36ce92215e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&lt; std::chrono::seconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#aa144149b38cf444887a3f36ce92215e0">toTimePoint</a> (std::time_t T)</td></tr>
+<tr class="memdesc:aa144149b38cf444887a3f36ce92215e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t to a TimePoint.  <a href="namespacewpi_1_1sys.html#aa144149b38cf444887a3f36ce92215e0">More...</a><br /></td></tr>
+<tr class="separator:aa144149b38cf444887a3f36ce92215e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c40676d5469b1565a26039b3fd69ff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi_1_1sys.html#a26b4c3769d9f1b9f371d2bf4c07e1946">TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#a7c40676d5469b1565a26039b3fd69ff2">toTimePoint</a> (std::time_t T, uint32_t nsec)</td></tr>
+<tr class="memdesc:a7c40676d5469b1565a26039b3fd69ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a std::time_t + nanoseconds to a TimePoint.  <a href="namespacewpi_1_1sys.html#a7c40676d5469b1565a26039b3fd69ff2">More...</a><br /></td></tr>
+<tr class="separator:a7c40676d5469b1565a26039b3fd69ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplParams" colspan="2">template&lt;typename FailT , typename Fun , typename... Args&gt; </td></tr>
+<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#abf2d0058ae07830ebe9b59a657312f46">RetryAfterSignal</a> (const FailT &amp;Fail, const Fun &amp;F, const Args &amp;... As)</td></tr>
+<tr class="separator:abf2d0058ae07830ebe9b59a657312f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -767,7 +767,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1sys.html">sys</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

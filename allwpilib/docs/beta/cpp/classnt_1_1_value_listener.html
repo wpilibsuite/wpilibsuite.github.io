@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classnt_1_1_value.html" title="A network table entry value.">Value</a> change listener. </p>
-<p >This calls back to a callback function when a value change matching the specified mask occurs. </p>
+<p >This calls back to a callback function when a value change matching the specified mask occurs. The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0a1762109759a21c066fbf52c291e90b" name="a0a1762109759a21c066fbf52c291e90b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a1762109759a21c066fbf52c291e90b">&#9670;&nbsp;</a></span>ValueListener() <span class="overload">[1/7]</span></h2>
@@ -565,7 +565,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_value_listener.html">ValueListener</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

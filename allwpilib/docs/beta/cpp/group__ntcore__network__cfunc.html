@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -99,9 +99,6 @@ $(document).ready(function(){initNavTree('group__ntcore__network__cfunc.html',''
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga70d53212d78cbfea099ba7751609c7b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#ga70d53212d78cbfea099ba7751609c7b1">NT_SetNetworkIdentity</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, const char *name, size_t name_len)</td></tr>
-<tr class="memdesc:ga70d53212d78cbfea099ba7751609c7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the network identity of this node.  <a href="group__ntcore__network__cfunc.html#ga70d53212d78cbfea099ba7751609c7b1">More...</a><br /></td></tr>
-<tr class="separator:ga70d53212d78cbfea099ba7751609c7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7043e1a9b1a13717832fb5a27b69bb24"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#ga7043e1a9b1a13717832fb5a27b69bb24">NT_GetNetworkMode</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:ga7043e1a9b1a13717832fb5a27b69bb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current network mode.  <a href="group__ntcore__network__cfunc.html#ga7043e1a9b1a13717832fb5a27b69bb24">More...</a><br /></td></tr>
 <tr class="separator:ga7043e1a9b1a13717832fb5a27b69bb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,12 +114,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga68386795cf202502b9cb209fa937b987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#ga68386795cf202502b9cb209fa937b987">NT_StopServer</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:ga68386795cf202502b9cb209fa937b987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the server if it is running.  <a href="group__ntcore__network__cfunc.html#ga68386795cf202502b9cb209fa937b987">More...</a><br /></td></tr>
 <tr class="separator:ga68386795cf202502b9cb209fa937b987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad0baac36802314429ef18b16f497c78b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#gad0baac36802314429ef18b16f497c78b">NT_StartClient3</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
-<tr class="memdesc:gad0baac36802314429ef18b16f497c78b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a NT3 client.  <a href="group__ntcore__network__cfunc.html#gad0baac36802314429ef18b16f497c78b">More...</a><br /></td></tr>
-<tr class="separator:gad0baac36802314429ef18b16f497c78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5193d54d803591cfebab775861238837"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#ga5193d54d803591cfebab775861238837">NT_StartClient4</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
-<tr class="memdesc:ga5193d54d803591cfebab775861238837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a NT4 client.  <a href="group__ntcore__network__cfunc.html#ga5193d54d803591cfebab775861238837">More...</a><br /></td></tr>
-<tr class="separator:ga5193d54d803591cfebab775861238837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa48374dcbaccd061655ff8dc9d6a796d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#gaa48374dcbaccd061655ff8dc9d6a796d">NT_StartClient3</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, const char *identity)</td></tr>
+<tr class="memdesc:gaa48374dcbaccd061655ff8dc9d6a796d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a NT3 client.  <a href="group__ntcore__network__cfunc.html#gaa48374dcbaccd061655ff8dc9d6a796d">More...</a><br /></td></tr>
+<tr class="separator:gaa48374dcbaccd061655ff8dc9d6a796d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65540400e24919e69b6363e451cad698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#ga65540400e24919e69b6363e451cad698">NT_StartClient4</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, const char *identity)</td></tr>
+<tr class="memdesc:ga65540400e24919e69b6363e451cad698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a NT4 client.  <a href="group__ntcore__network__cfunc.html#ga65540400e24919e69b6363e451cad698">More...</a><br /></td></tr>
+<tr class="separator:ga65540400e24919e69b6363e451cad698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5753eb2cea6fd950f145bec2e4accc64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__network__cfunc.html#ga5753eb2cea6fd950f145bec2e4accc64">NT_StopClient</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:ga5753eb2cea6fd950f145bec2e4accc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the client if it is running.  <a href="group__ntcore__network__cfunc.html#ga5753eb2cea6fd950f145bec2e4accc64">More...</a><br /></td></tr>
 <tr class="separator:ga5753eb2cea6fd950f145bec2e4accc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,51 +303,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga70d53212d78cbfea099ba7751609c7b1" name="ga70d53212d78cbfea099ba7751609c7b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga70d53212d78cbfea099ba7751609c7b1">&#9670;&nbsp;</a></span>NT_SetNetworkIdentity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NT_SetNetworkIdentity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>name_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the network identity of this node. </p>
-<p >This is the name used during the initial connection handshake, and is visible through <a class="el" href="struct_n_t___connection_info.html" title="NetworkTables Connection Information.">NT_ConnectionInfo</a> on the remote node.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inst</td><td>instance handle </td></tr>
-    <tr><td class="paramname">name</td><td>identity to advertise </td></tr>
-    <tr><td class="paramname">name_len</td><td>length of name in bytes </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ga9cb997b367e0871738ae2975802114b3" name="ga9cb997b367e0871738ae2975802114b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9cb997b367e0871738ae2975802114b3">&#9670;&nbsp;</a></span>NT_SetServer()</h2>
 
@@ -492,8 +444,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gad0baac36802314429ef18b16f497c78b" name="gad0baac36802314429ef18b16f497c78b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad0baac36802314429ef18b16f497c78b">&#9670;&nbsp;</a></span>NT_StartClient3()</h2>
+<a id="gaa48374dcbaccd061655ff8dc9d6a796d" name="gaa48374dcbaccd061655ff8dc9d6a796d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa48374dcbaccd061655ff8dc9d6a796d">&#9670;&nbsp;</a></span>NT_StartClient3()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -502,8 +454,18 @@ Functions</h2></td></tr>
           <td class="memname">void NT_StartClient3 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em></td><td>)</td>
+          <td class="paramname"><em>inst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>identity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -513,14 +475,15 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inst</td><td>instance handle </td></tr>
+    <tr><td class="paramname">identity</td><td>network identity to advertise (cannot be empty string) </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ga5193d54d803591cfebab775861238837" name="ga5193d54d803591cfebab775861238837"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5193d54d803591cfebab775861238837">&#9670;&nbsp;</a></span>NT_StartClient4()</h2>
+<a id="ga65540400e24919e69b6363e451cad698" name="ga65540400e24919e69b6363e451cad698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65540400e24919e69b6363e451cad698">&#9670;&nbsp;</a></span>NT_StartClient4()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,8 +492,18 @@ Functions</h2></td></tr>
           <td class="memname">void NT_StartClient4 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em></td><td>)</td>
+          <td class="paramname"><em>inst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>identity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -540,6 +513,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inst</td><td>instance handle </td></tr>
+    <tr><td class="paramname">identity</td><td>network identity to advertise (cannot be empty string) </td></tr>
   </table>
   </dd>
 </dl>
@@ -767,7 +741,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:07:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

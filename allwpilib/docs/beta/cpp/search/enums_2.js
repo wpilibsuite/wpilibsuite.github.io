@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calibrationtime_0',['CalibrationTime',['../classfrc_1_1_a_d_i_s16470___i_m_u.html#a59cd237aac7d6b0997d53acc444cc7f4',1,'frc::ADIS16470_IMU::CalibrationTime()'],['../classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8',1,'frc::ADIS16448_IMU::CalibrationTime()']]],
+  ['calibrationtime_0',['CalibrationTime',['../classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8',1,'frc::ADIS16448_IMU::CalibrationTime()'],['../classfrc_1_1_a_d_i_s16470___i_m_u.html#a59cd237aac7d6b0997d53acc444cc7f4',1,'frc::ADIS16470_IMU::CalibrationTime()']]],
   ['char8_5ftype_1',['char8_type',['../namespacedetail.html#af2d1c9abcf61fc5c29bb85fdbd0c0153',1,'detail']]],
   ['color_2',['color',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203c',1,'color.h']]],
   ['colors_3',['Colors',['../classwpi_1_1raw__ostream.html#ad198c8e10001e9e8747c50bcbe175631',1,'wpi::raw_ostream']]],

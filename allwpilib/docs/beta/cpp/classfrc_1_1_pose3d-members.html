@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -108,20 +108,21 @@ $(document).ready(function(){initNavTree('classfrc_1_1_pose3d.html',''); initRes
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#af2c1eba8dec95304e264795210b5b207">Pose3d</a>()=default</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a620af710281c358757b0ce859edeb01e">Pose3d</a>(Translation3d translation, Rotation3d rotation)</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#aea495e62dc547fbd682d969e3e969ad1">Pose3d</a>(units::meter_t x, units::meter_t y, units::meter_t z, Rotation3d rotation)</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a094231c5783892368c6178e945e4d294">RelativeTo</a>(const Pose3d &amp;other) const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a4eebb8d9c383dee7b27ec91ce4f9a135">Rotation</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a17962a3308bf3eae71ca89e8a4ed7050">ToPose2d</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a22be64d4ccb7d36d17f1f3133ba45c55">TransformBy</a>(const Transform3d &amp;other) const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a79e70814115a7b9a20bc440b3d72dd17">Translation</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a6da7a17fe2e082e6d4c34e57dc54a1d9">X</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a33cbb3c770e530f82de3e3db1ef00fc9">Y</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#ac6945329b7a94c93a14c464e1752e286">Z</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#ab4a93418c5487daec33787da7e984204">Pose3d</a>(const Pose2d &amp;pose)</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a094231c5783892368c6178e945e4d294">RelativeTo</a>(const Pose3d &amp;other) const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a4eebb8d9c383dee7b27ec91ce4f9a135">Rotation</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a17962a3308bf3eae71ca89e8a4ed7050">ToPose2d</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a22be64d4ccb7d36d17f1f3133ba45c55">TransformBy</a>(const Transform3d &amp;other) const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a79e70814115a7b9a20bc440b3d72dd17">Translation</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a6da7a17fe2e082e6d4c34e57dc54a1d9">X</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#a33cbb3c770e530f82de3e3db1ef00fc9">Y</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html#ac6945329b7a94c93a14c464e1752e286">Z</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

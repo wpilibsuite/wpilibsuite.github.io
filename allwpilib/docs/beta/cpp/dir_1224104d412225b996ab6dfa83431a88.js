@@ -14,6 +14,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "DataLogReader.h", "_data_log_reader_8h.html", "_data_log_reader_8h" ],
     [ "Demangle.h", "_demangle_8h.html", "_demangle_8h" ],
     [ "deprecated.h", "deprecated_8h.html", null ],
+    [ "EventVector.h", "_event_vector_8h.html", "_event_vector_8h" ],
     [ "fs.h", "fs_8h.html", "fs_8h" ],
     [ "future.h", "future_8h.html", "future_8h" ],
     [ "interpolating_map.h", "interpolating__map_8h.html", "interpolating__map_8h" ],

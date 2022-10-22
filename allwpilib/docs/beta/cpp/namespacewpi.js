@@ -80,6 +80,7 @@ var namespacewpi =
     [ "disjunction< B1 >", "structwpi_1_1disjunction_3_01_b1_01_4.html", null ],
     [ "disjunction< B1, Bn... >", "structwpi_1_1disjunction_3_01_b1_00_01_bn_8_8_8_01_4.html", null ],
     [ "empty_array_t", "structwpi_1_1empty__array__t.html", null ],
+    [ "EventVector", "structwpi_1_1_event_vector.html", "structwpi_1_1_event_vector" ],
     [ "FirstIndexOfType", "structwpi_1_1_first_index_of_type.html", null ],
     [ "FirstIndexOfType< T, T, Us... >", "structwpi_1_1_first_index_of_type_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html", null ],
     [ "FirstIndexOfType< T, U, Us... >", "structwpi_1_1_first_index_of_type_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html", null ],

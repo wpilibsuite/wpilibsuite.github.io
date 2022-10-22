@@ -11,7 +11,8 @@ var group__hal__driverstation =
     ] ],
     [ "HAL_JoystickAxes", "struct_h_a_l___joystick_axes.html", [
       [ "axes", "struct_h_a_l___joystick_axes.html#ae17b86ab52dea8557afcde52a10af779", null ],
-      [ "count", "struct_h_a_l___joystick_axes.html#ac0601f26133aad58e9ef4dadf146de6d", null ]
+      [ "count", "struct_h_a_l___joystick_axes.html#ac0601f26133aad58e9ef4dadf146de6d", null ],
+      [ "raw", "struct_h_a_l___joystick_axes.html#a4d12fad6e97e534744b39adb3b741571", null ]
     ] ],
     [ "HAL_JoystickPOVs", "struct_h_a_l___joystick_p_o_vs.html", [
       [ "count", "struct_h_a_l___joystick_p_o_vs.html#a72965ba8cbcd5aad88057d326c1879ba", null ],
@@ -63,6 +64,7 @@ var group__hal__driverstation =
     [ "HAL_ENUM", "group__hal__driverstation.html#ga2c9ac82bc2f384d1ac9fcf6d8d1b851c", null ],
     [ "HAL_FreeJoystickName", "group__hal__driverstation.html#ga90161d733fb0dc23b514c438ebc57706", null ],
     [ "HAL_GetAllianceStation", "group__hal__driverstation.html#ga10e5c8ea5a1b890126167e9d352e9e0a", null ],
+    [ "HAL_GetAllJoystickData", "group__hal__driverstation.html#gae27771cae8b86b2af41ff5fbba206095", null ],
     [ "HAL_GetControlWord", "group__hal__driverstation.html#ga4eea37e55b0d07dd9e2490004bab5ed4", null ],
     [ "HAL_GetJoystickAxes", "group__hal__driverstation.html#ga17675749678926c6ecd3c62fb4da298c", null ],
     [ "HAL_GetJoystickAxisType", "group__hal__driverstation.html#ga00603ecd30baaa0d0712488161a83f38", null ],
@@ -74,17 +76,16 @@ var group__hal__driverstation =
     [ "HAL_GetJoystickType", "group__hal__driverstation.html#gae7bc0e73dbfe813600b03ace2065ff6c", null ],
     [ "HAL_GetMatchInfo", "group__hal__driverstation.html#gab232af731f21e411c3fddb457011799e", null ],
     [ "HAL_GetMatchTime", "group__hal__driverstation.html#ga7e5c44166dda55bedfa8dd5c9ac99faf", null ],
-    [ "HAL_InitializeDriverStation", "group__hal__driverstation.html#ga1cbbdda947c9737a78cefff79524dac2", null ],
-    [ "HAL_IsNewControlData", "group__hal__driverstation.html#gae9df92ccf6ed4ea7f0deb4f075c07248", null ],
+    [ "HAL_GetOutputsEnabled", "group__hal__driverstation.html#gae14d8258ee5d77a5d3ed7e39547bb6f7", null ],
     [ "HAL_ObserveUserProgramAutonomous", "group__hal__driverstation.html#ga7e472ebbc37435a2448a1a67fcfb82e3", null ],
     [ "HAL_ObserveUserProgramDisabled", "group__hal__driverstation.html#ga254ee88ecedb950c19314d855755fc2b", null ],
     [ "HAL_ObserveUserProgramStarting", "group__hal__driverstation.html#ga9812dec72ca0e96bff68369d107cb12a", null ],
     [ "HAL_ObserveUserProgramTeleop", "group__hal__driverstation.html#ga42b57ded6c79f4d22b54a84cad92a2ec", null ],
     [ "HAL_ObserveUserProgramTest", "group__hal__driverstation.html#ga953a31253de78dd59fba77b9387a2da2", null ],
-    [ "HAL_ReleaseDSMutex", "group__hal__driverstation.html#gaace5cec2dc93674fe0149b2e50cff796", null ],
+    [ "HAL_ProvideNewDataEventHandle", "group__hal__driverstation.html#ga5aee9636007e6945eed9345c476dff8f", null ],
+    [ "HAL_RefreshDSData", "group__hal__driverstation.html#gaae9195f7492c0219764b6d0611ceb1a8", null ],
+    [ "HAL_RemoveNewDataEventHandle", "group__hal__driverstation.html#gac5f3772e7745b01a4258c289ca384b7b", null ],
     [ "HAL_SendConsoleLine", "group__hal__driverstation.html#ga3ccd000ef148655282d736312eac1b35", null ],
     [ "HAL_SendError", "group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155", null ],
-    [ "HAL_SetJoystickOutputs", "group__hal__driverstation.html#ga9abd3bfc937e917a7b7174894b1ef5aa", null ],
-    [ "HAL_WaitForDSData", "group__hal__driverstation.html#ga738d3ae3837710acbfaa0c46fd82412e", null ],
-    [ "HAL_WaitForDSDataTimeout", "group__hal__driverstation.html#ga14a875e969edf0b14cfd47b4bf5520f7", null ]
+    [ "HAL_SetJoystickOutputs", "group__hal__driverstation.html#ga9abd3bfc937e917a7b7174894b1ef5aa", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_mecanum_drive_pose_estima
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1d58ad2d5e0a0d7a1cfcea46583afe40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">MecanumDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, <a class="el" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</td></tr>
-<tr class="memdesc:a1d58ad2d5e0a0d7a1cfcea46583afe40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with meca...">MecanumDrivePoseEstimator</a>.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">More...</a><br /></td></tr>
-<tr class="separator:a1d58ad2d5e0a0d7a1cfcea46583afe40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c3b8363e48693b5647c24ea88dd472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad8c3b8363e48693b5647c24ea88dd472">MecanumDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, <a class="el" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td></tr>
+<tr class="memdesc:ad8c3b8363e48693b5647c24ea88dd472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with meca...">MecanumDrivePoseEstimator</a>.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad8c3b8363e48693b5647c24ea88dd472">More...</a><br /></td></tr>
+<tr class="separator:ad8c3b8363e48693b5647c24ea88dd472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09d595a66bbb8e8779e204003de430f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">SetVisionMeasurementStdDevs</a> (const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:a09d595a66bbb8e8779e204003de430f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pose estimator's trust of global measurements.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">More...</a><br /></td></tr>
 <tr class="separator:a09d595a66bbb8e8779e204003de430f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,15 +133,15 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with mecanum drive encoder velocity measurements. </p>
 <p >It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for <a class="el" href="classfrc_1_1_mecanum_drive_odometry.html" title="Class for mecanum drive odometry.">MecanumDriveOdometry</a>.</p>
-<p ><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 0.02s, then you should change the nominal delta time by specifying it in the constructor.</p>
+<p ><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a0f8251909256df2c00a750881ed4aee4" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 20 ms, then you should change the nominal delta time by specifying it in the constructor.</p>
 <p ><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ad561f6f2261695854f797b7851bfe949" title="Add a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a> can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.</p>
 <p >The state-space system used internally has the following states (x), inputs (u), and outputs (y):</p>
 <p ><b> x = [x, y, theta]ᵀ </b> in the field coordinate system containing x position, y position, and heading.</p>
 <p ><b> u = [v_x, v_y, omega]ᵀ </b> containing x velocity, y velocity, and angular velocity in the field coordinate system.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta]ᵀ </b> containing gyro heading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1d58ad2d5e0a0d7a1cfcea46583afe40" name="a1d58ad2d5e0a0d7a1cfcea46583afe40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d58ad2d5e0a0d7a1cfcea46583afe40">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator()</h2>
+<a id="ad8c3b8363e48693b5647c24ea88dd472" name="ad8c3b8363e48693b5647c24ea88dd472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c3b8363e48693b5647c24ea88dd472">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">units::second_t&#160;</td>
-          <td class="paramname"><em>nominalDt</em> = <code>0.02_s</code>&#160;</td>
+          <td class="paramname"><em>nominalDt</em> = <code>20_ms</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -489,7 +489,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html">MecanumDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

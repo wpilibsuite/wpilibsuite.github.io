@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -109,6 +109,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae30530e339a3257a21f68aec2f6aee5a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1_chassis_speeds.html#ae30530e339a3257a21f68aec2f6aee5a">FromFieldRelativeSpeeds</a> (units::meters_per_second_t <a class="el" href="structfrc_1_1_chassis_speeds.html#a01659f3eea6569ee27d4db843d6f5be5">vx</a>, units::meters_per_second_t <a class="el" href="structfrc_1_1_chassis_speeds.html#a1b2ecdc4d2884220274eed58c67fd9dc">vy</a>, units::radians_per_second_t <a class="el" href="structfrc_1_1_chassis_speeds.html#a512d3d4511e399adc63651fbf8ee18bf">omega</a>, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;robotAngle)</td></tr>
 <tr class="memdesc:ae30530e339a3257a21f68aec2f6aee5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a user provided field-relative set of speeds into a robot-relative <a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> object.  <a href="structfrc_1_1_chassis_speeds.html#ae30530e339a3257a21f68aec2f6aee5a">More...</a><br /></td></tr>
 <tr class="separator:ae30530e339a3257a21f68aec2f6aee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22c6296a8e08e6610d35a2b0bdf0ddfb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1_chassis_speeds.html#a22c6296a8e08e6610d35a2b0bdf0ddfb">FromFieldRelativeSpeeds</a> (const <a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a> &amp;fieldRelativeSpeeds, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;robotAngle)</td></tr>
+<tr class="memdesc:a22c6296a8e08e6610d35a2b0bdf0ddfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a user provided field-relative <a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> object into a robot-relative <a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> object.  <a href="structfrc_1_1_chassis_speeds.html#a22c6296a8e08e6610d35a2b0bdf0ddfb">More...</a><br /></td></tr>
+<tr class="separator:a22c6296a8e08e6610d35a2b0bdf0ddfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -127,8 +130,54 @@ Public Attributes</h2></td></tr>
 <p >Although this struct contains similar members compared to a <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a>, they do NOT represent the same thing. Whereas a <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a> represents a change in pose w.r.t to the robot frame of reference, this <a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> struct represents a velocity w.r.t to the robot frame of reference.</p>
 <p >A strictly non-holonomic drivetrain, such as a differential drive, should never have a dy component because it can never move sideways. Holonomic drivetrains such as swerve and mecanum will often have all three components. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a22c6296a8e08e6610d35a2b0bdf0ddfb" name="a22c6296a8e08e6610d35a2b0bdf0ddfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22c6296a8e08e6610d35a2b0bdf0ddfb">&#9670;&nbsp;</a></span>FromFieldRelativeSpeeds() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a> frc::ChassisSpeeds::FromFieldRelativeSpeeds </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a> &amp;&#160;</td>
+          <td class="paramname"><em>fieldRelativeSpeeds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>robotAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a user provided field-relative <a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> object into a robot-relative <a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fieldRelativeSpeeds</td><td>The <a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> object representing the speeds in the field frame of reference. Positive x is away from your alliance wall. Positive y is to your left when standing behind the alliance wall. </td></tr>
+    <tr><td class="paramname">robotAngle</td><td>The angle of the robot as measured by a gyroscope. The robot's angle is considered to be zero when it is facing directly away from your alliance station wall. Remember that this should be CCW positive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structfrc_1_1_chassis_speeds.html" title="Represents the speed of a robot chassis.">ChassisSpeeds</a> object representing the speeds in the robot's frame of reference. </dd></dl>
+
+</div>
+</div>
 <a id="ae30530e339a3257a21f68aec2f6aee5a" name="ae30530e339a3257a21f68aec2f6aee5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae30530e339a3257a21f68aec2f6aee5a">&#9670;&nbsp;</a></span>FromFieldRelativeSpeeds()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae30530e339a3257a21f68aec2f6aee5a">&#9670;&nbsp;</a></span>FromFieldRelativeSpeeds() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,7 +297,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

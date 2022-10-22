@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -105,9 +105,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_differential_drive_pose_e
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe6cb124c1e3195645eaaea9de6632e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#afe6cb124c1e3195645eaaea9de6632e0">DifferentialDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 5 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</td></tr>
-<tr class="memdesc:afe6cb124c1e3195645eaaea9de6632e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with diff...">DifferentialDrivePoseEstimator</a>.  <a href="classfrc_1_1_differential_drive_pose_estimator.html#afe6cb124c1e3195645eaaea9de6632e0">More...</a><br /></td></tr>
-<tr class="separator:afe6cb124c1e3195645eaaea9de6632e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60ee8cb962fc677054bcda1db36087d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ab60ee8cb962fc677054bcda1db36087d">DifferentialDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 5 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td></tr>
+<tr class="memdesc:ab60ee8cb962fc677054bcda1db36087d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with diff...">DifferentialDrivePoseEstimator</a>.  <a href="classfrc_1_1_differential_drive_pose_estimator.html#ab60ee8cb962fc677054bcda1db36087d">More...</a><br /></td></tr>
+<tr class="separator:ab60ee8cb962fc677054bcda1db36087d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16c47b88fa12c715da87d6bf516dcae3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a16c47b88fa12c715da87d6bf516dcae3">SetVisionMeasurementStdDevs</a> (const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:a16c47b88fa12c715da87d6bf516dcae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pose estimator's trust of global measurements.  <a href="classfrc_1_1_differential_drive_pose_estimator.html#a16c47b88fa12c715da87d6bf516dcae3">More...</a><br /></td></tr>
 <tr class="separator:a16c47b88fa12c715da87d6bf516dcae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with differential drive encoder measurements. </p>
 <p >It will correct for noisy vision measurements and encoder drift. It is intended to be an easy drop-in for <a class="el" href="classfrc_1_1_differential_drive_odometry.html" title="Class for differential drive odometry.">DifferentialDriveOdometry</a>. In fact, if you never call <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a08f5072a0aa4e4fba8d7528427047720" title="Adds a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a>, and only call <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ae9d9b994b3e0c0f445b3781ae100c904" title="Updates the Unscented Kalman Filter using only wheel encoder information.">Update()</a>, this will behave exactly the same as <a class="el" href="classfrc_1_1_differential_drive_odometry.html" title="Class for differential drive odometry.">DifferentialDriveOdometry</a>.</p>
-<p ><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ae9d9b994b3e0c0f445b3781ae100c904" title="Updates the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop (if your robot loops are faster or slower than the default, then you should change the nominal delta time via the constructor).</p>
+<p ><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ae9d9b994b3e0c0f445b3781ae100c904" title="Updates the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop (if your robot loops are faster or slower than the default of 20 ms, then you should change the nominal delta time via the constructor).</p>
 <p ><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a08f5072a0aa4e4fba8d7528427047720" title="Adds a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a> can be called as infrequently as you want; if you never call it, then this class will behave like regular encoder odometry.</p>
 <p >The state-space system used internally has the following states (x), inputs (u), and outputs (y):</p>
 <p ><b> x = [x, y, theta, dist_l, dist_r]ᵀ </b> in the field coordinate system containing x position, y position, heading, left encoder distance, and right encoder distance.</p>
@@ -141,8 +141,8 @@ Public Member Functions</h2></td></tr>
 <p >NB: Using velocities make things considerably easier, because it means that teams don't have to worry about getting an accurate model. Basically, we suspect that it's easier for teams to get good encoder data than it is for them to perform system identification well enough to get a good model.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b>y = [dist_l, dist_r, theta] </b> containing left encoder position, right encoder position, and gyro heading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afe6cb124c1e3195645eaaea9de6632e0" name="afe6cb124c1e3195645eaaea9de6632e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe6cb124c1e3195645eaaea9de6632e0">&#9670;&nbsp;</a></span>DifferentialDrivePoseEstimator()</h2>
+<a id="ab60ee8cb962fc677054bcda1db36087d" name="ab60ee8cb962fc677054bcda1db36087d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60ee8cb962fc677054bcda1db36087d">&#9670;&nbsp;</a></span>DifferentialDrivePoseEstimator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +181,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">units::second_t&#160;</td>
-          <td class="paramname"><em>nominalDt</em> = <code>0.02_s</code>&#160;</td>
+          <td class="paramname"><em>nominalDt</em> = <code>20_ms</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -510,7 +510,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">DifferentialDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sun Oct 16 2022 22:51:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 06:08:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
