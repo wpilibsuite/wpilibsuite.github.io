@@ -28,12 +28,12 @@
 <span class="sourceLineNo">016</span><a id="line.16">   * &lt;p&gt;Upon construction, the current Driver Station control word is read and stored internally.</a>
 <span class="sourceLineNo">017</span><a id="line.17">   */</a>
 <span class="sourceLineNo">018</span><a id="line.18">  public DSControlWord() {</a>
-<span class="sourceLineNo">019</span><a id="line.19">    update();</a>
+<span class="sourceLineNo">019</span><a id="line.19">    refresh();</a>
 <span class="sourceLineNo">020</span><a id="line.20">  }</a>
 <span class="sourceLineNo">021</span><a id="line.21"></a>
 <span class="sourceLineNo">022</span><a id="line.22">  /** Update internal Driver Station control word. */</a>
-<span class="sourceLineNo">023</span><a id="line.23">  public void update() {</a>
-<span class="sourceLineNo">024</span><a id="line.24">    DriverStation.updateControlWordFromCache(m_controlWord);</a>
+<span class="sourceLineNo">023</span><a id="line.23">  public void refresh() {</a>
+<span class="sourceLineNo">024</span><a id="line.24">    DriverStation.refreshControlWordFromCache(m_controlWord);</a>
 <span class="sourceLineNo">025</span><a id="line.25">  }</a>
 <span class="sourceLineNo">026</span><a id="line.26"></a>
 <span class="sourceLineNo">027</span><a id="line.27">  /**</a>

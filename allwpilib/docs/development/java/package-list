@@ -32,6 +32,7 @@ edu.wpi.first.wpilibj.counter
 edu.wpi.first.wpilibj.drive
 edu.wpi.first.wpilibj.event
 edu.wpi.first.wpilibj.interfaces
+edu.wpi.first.wpilibj.internal
 edu.wpi.first.wpilibj.livewindow
 edu.wpi.first.wpilibj.motorcontrol
 edu.wpi.first.wpilibj.shuffleboard

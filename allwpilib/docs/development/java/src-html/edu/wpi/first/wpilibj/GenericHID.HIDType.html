@@ -16,7 +16,7 @@
 <span class="sourceLineNo">004</span><a id="line.4"></a>
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.wpilibj;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
-<span class="sourceLineNo">007</span><a id="line.7">import edu.wpi.first.hal.HAL;</a>
+<span class="sourceLineNo">007</span><a id="line.7">import edu.wpi.first.hal.DriverStationJNI;</a>
 <span class="sourceLineNo">008</span><a id="line.8">import edu.wpi.first.wpilibj.event.BooleanEvent;</a>
 <span class="sourceLineNo">009</span><a id="line.9">import edu.wpi.first.wpilibj.event.EventLoop;</a>
 <span class="sourceLineNo">010</span><a id="line.10">import java.util.HashMap;</a>
@@ -260,7 +260,7 @@
 <span class="sourceLineNo">248</span><a id="line.248">   */</a>
 <span class="sourceLineNo">249</span><a id="line.249">  public void setOutput(int outputNumber, boolean value) {</a>
 <span class="sourceLineNo">250</span><a id="line.250">    m_outputs = (m_outputs &amp; ~(1 &lt;&lt; (outputNumber - 1))) | ((value ? 1 : 0) &lt;&lt; (outputNumber - 1));</a>
-<span class="sourceLineNo">251</span><a id="line.251">    HAL.setJoystickOutputs((byte) m_port, m_outputs, m_leftRumble, m_rightRumble);</a>
+<span class="sourceLineNo">251</span><a id="line.251">    DriverStationJNI.setJoystickOutputs((byte) m_port, m_outputs, m_leftRumble, m_rightRumble);</a>
 <span class="sourceLineNo">252</span><a id="line.252">  }</a>
 <span class="sourceLineNo">253</span><a id="line.253"></a>
 <span class="sourceLineNo">254</span><a id="line.254">  /**</a>
@@ -270,7 +270,7 @@
 <span class="sourceLineNo">258</span><a id="line.258">   */</a>
 <span class="sourceLineNo">259</span><a id="line.259">  public void setOutputs(int value) {</a>
 <span class="sourceLineNo">260</span><a id="line.260">    m_outputs = value;</a>
-<span class="sourceLineNo">261</span><a id="line.261">    HAL.setJoystickOutputs((byte) m_port, m_outputs, m_leftRumble, m_rightRumble);</a>
+<span class="sourceLineNo">261</span><a id="line.261">    DriverStationJNI.setJoystickOutputs((byte) m_port, m_outputs, m_leftRumble, m_rightRumble);</a>
 <span class="sourceLineNo">262</span><a id="line.262">  }</a>
 <span class="sourceLineNo">263</span><a id="line.263"></a>
 <span class="sourceLineNo">264</span><a id="line.264">  /**</a>
@@ -291,7 +291,7 @@
 <span class="sourceLineNo">279</span><a id="line.279">    } else {</a>
 <span class="sourceLineNo">280</span><a id="line.280">      m_rightRumble = (short) (value * 65535);</a>
 <span class="sourceLineNo">281</span><a id="line.281">    }</a>
-<span class="sourceLineNo">282</span><a id="line.282">    HAL.setJoystickOutputs((byte) m_port, m_outputs, m_leftRumble, m_rightRumble);</a>
+<span class="sourceLineNo">282</span><a id="line.282">    DriverStationJNI.setJoystickOutputs((byte) m_port, m_outputs, m_leftRumble, m_rightRumble);</a>
 <span class="sourceLineNo">283</span><a id="line.283">  }</a>
 <span class="sourceLineNo">284</span><a id="line.284">}</a>
 

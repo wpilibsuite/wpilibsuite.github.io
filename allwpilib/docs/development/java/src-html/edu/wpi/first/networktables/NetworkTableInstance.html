@@ -743,405 +743,403 @@
 <span class="sourceLineNo">731</span><a id="line.731">   */</a>
 <span class="sourceLineNo">732</span><a id="line.732"></a>
 <span class="sourceLineNo">733</span><a id="line.733">  /**</a>
-<span class="sourceLineNo">734</span><a id="line.734">   * Set the network identity of this node. This is the name used during the initial connection</a>
-<span class="sourceLineNo">735</span><a id="line.735">   * handshake, and is visible through ConnectionInfo on the remote node.</a>
-<span class="sourceLineNo">736</span><a id="line.736">   *</a>
-<span class="sourceLineNo">737</span><a id="line.737">   * @param name identity to advertise</a>
-<span class="sourceLineNo">738</span><a id="line.738">   */</a>
-<span class="sourceLineNo">739</span><a id="line.739">  public void setNetworkIdentity(String name) {</a>
-<span class="sourceLineNo">740</span><a id="line.740">    NetworkTablesJNI.setNetworkIdentity(m_handle, name);</a>
-<span class="sourceLineNo">741</span><a id="line.741">  }</a>
-<span class="sourceLineNo">742</span><a id="line.742"></a>
-<span class="sourceLineNo">743</span><a id="line.743">  /**</a>
-<span class="sourceLineNo">744</span><a id="line.744">   * Get the current network mode.</a>
-<span class="sourceLineNo">745</span><a id="line.745">   *</a>
-<span class="sourceLineNo">746</span><a id="line.746">   * @return Bitmask of NetworkMode.</a>
-<span class="sourceLineNo">747</span><a id="line.747">   */</a>
-<span class="sourceLineNo">748</span><a id="line.748">  public int getNetworkMode() {</a>
-<span class="sourceLineNo">749</span><a id="line.749">    return NetworkTablesJNI.getNetworkMode(m_handle);</a>
-<span class="sourceLineNo">750</span><a id="line.750">  }</a>
-<span class="sourceLineNo">751</span><a id="line.751"></a>
-<span class="sourceLineNo">752</span><a id="line.752">  /**</a>
-<span class="sourceLineNo">753</span><a id="line.753">   * Starts local-only operation. Prevents calls to startServer or startClient from taking effect.</a>
-<span class="sourceLineNo">754</span><a id="line.754">   * Has no effect if startServer or startClient has already been called.</a>
-<span class="sourceLineNo">755</span><a id="line.755">   */</a>
-<span class="sourceLineNo">756</span><a id="line.756">  public void startLocal() {</a>
-<span class="sourceLineNo">757</span><a id="line.757">    NetworkTablesJNI.startLocal(m_handle);</a>
-<span class="sourceLineNo">758</span><a id="line.758">  }</a>
-<span class="sourceLineNo">759</span><a id="line.759"></a>
-<span class="sourceLineNo">760</span><a id="line.760">  /**</a>
-<span class="sourceLineNo">761</span><a id="line.761">   * Stops local-only operation. startServer or startClient can be called after this call to start a</a>
-<span class="sourceLineNo">762</span><a id="line.762">   * server or client.</a>
-<span class="sourceLineNo">763</span><a id="line.763">   */</a>
-<span class="sourceLineNo">764</span><a id="line.764">  public void stopLocal() {</a>
-<span class="sourceLineNo">765</span><a id="line.765">    NetworkTablesJNI.stopLocal(m_handle);</a>
-<span class="sourceLineNo">766</span><a id="line.766">  }</a>
-<span class="sourceLineNo">767</span><a id="line.767"></a>
-<span class="sourceLineNo">768</span><a id="line.768">  /**</a>
-<span class="sourceLineNo">769</span><a id="line.769">   * Starts a server using the networktables.json as the persistent file, using the default</a>
-<span class="sourceLineNo">770</span><a id="line.770">   * listening address and port.</a>
+<span class="sourceLineNo">734</span><a id="line.734">   * Get the current network mode.</a>
+<span class="sourceLineNo">735</span><a id="line.735">   *</a>
+<span class="sourceLineNo">736</span><a id="line.736">   * @return Bitmask of NetworkMode.</a>
+<span class="sourceLineNo">737</span><a id="line.737">   */</a>
+<span class="sourceLineNo">738</span><a id="line.738">  public int getNetworkMode() {</a>
+<span class="sourceLineNo">739</span><a id="line.739">    return NetworkTablesJNI.getNetworkMode(m_handle);</a>
+<span class="sourceLineNo">740</span><a id="line.740">  }</a>
+<span class="sourceLineNo">741</span><a id="line.741"></a>
+<span class="sourceLineNo">742</span><a id="line.742">  /**</a>
+<span class="sourceLineNo">743</span><a id="line.743">   * Starts local-only operation. Prevents calls to startServer or startClient from taking effect.</a>
+<span class="sourceLineNo">744</span><a id="line.744">   * Has no effect if startServer or startClient has already been called.</a>
+<span class="sourceLineNo">745</span><a id="line.745">   */</a>
+<span class="sourceLineNo">746</span><a id="line.746">  public void startLocal() {</a>
+<span class="sourceLineNo">747</span><a id="line.747">    NetworkTablesJNI.startLocal(m_handle);</a>
+<span class="sourceLineNo">748</span><a id="line.748">  }</a>
+<span class="sourceLineNo">749</span><a id="line.749"></a>
+<span class="sourceLineNo">750</span><a id="line.750">  /**</a>
+<span class="sourceLineNo">751</span><a id="line.751">   * Stops local-only operation. startServer or startClient can be called after this call to start a</a>
+<span class="sourceLineNo">752</span><a id="line.752">   * server or client.</a>
+<span class="sourceLineNo">753</span><a id="line.753">   */</a>
+<span class="sourceLineNo">754</span><a id="line.754">  public void stopLocal() {</a>
+<span class="sourceLineNo">755</span><a id="line.755">    NetworkTablesJNI.stopLocal(m_handle);</a>
+<span class="sourceLineNo">756</span><a id="line.756">  }</a>
+<span class="sourceLineNo">757</span><a id="line.757"></a>
+<span class="sourceLineNo">758</span><a id="line.758">  /**</a>
+<span class="sourceLineNo">759</span><a id="line.759">   * Starts a server using the networktables.json as the persistent file, using the default</a>
+<span class="sourceLineNo">760</span><a id="line.760">   * listening address and port.</a>
+<span class="sourceLineNo">761</span><a id="line.761">   */</a>
+<span class="sourceLineNo">762</span><a id="line.762">  public void startServer() {</a>
+<span class="sourceLineNo">763</span><a id="line.763">    startServer("networktables.json");</a>
+<span class="sourceLineNo">764</span><a id="line.764">  }</a>
+<span class="sourceLineNo">765</span><a id="line.765"></a>
+<span class="sourceLineNo">766</span><a id="line.766">  /**</a>
+<span class="sourceLineNo">767</span><a id="line.767">   * Starts a server using the specified persistent filename, using the default listening address</a>
+<span class="sourceLineNo">768</span><a id="line.768">   * and port.</a>
+<span class="sourceLineNo">769</span><a id="line.769">   *</a>
+<span class="sourceLineNo">770</span><a id="line.770">   * @param persistFilename the name of the persist file to use</a>
 <span class="sourceLineNo">771</span><a id="line.771">   */</a>
-<span class="sourceLineNo">772</span><a id="line.772">  public void startServer() {</a>
-<span class="sourceLineNo">773</span><a id="line.773">    startServer("networktables.json");</a>
+<span class="sourceLineNo">772</span><a id="line.772">  public void startServer(String persistFilename) {</a>
+<span class="sourceLineNo">773</span><a id="line.773">    startServer(persistFilename, "");</a>
 <span class="sourceLineNo">774</span><a id="line.774">  }</a>
 <span class="sourceLineNo">775</span><a id="line.775"></a>
 <span class="sourceLineNo">776</span><a id="line.776">  /**</a>
-<span class="sourceLineNo">777</span><a id="line.777">   * Starts a server using the specified persistent filename, using the default listening address</a>
-<span class="sourceLineNo">778</span><a id="line.778">   * and port.</a>
-<span class="sourceLineNo">779</span><a id="line.779">   *</a>
-<span class="sourceLineNo">780</span><a id="line.780">   * @param persistFilename the name of the persist file to use</a>
+<span class="sourceLineNo">777</span><a id="line.777">   * Starts a server using the specified filename and listening address, using the default port.</a>
+<span class="sourceLineNo">778</span><a id="line.778">   *</a>
+<span class="sourceLineNo">779</span><a id="line.779">   * @param persistFilename the name of the persist file to use</a>
+<span class="sourceLineNo">780</span><a id="line.780">   * @param listenAddress the address to listen on, or empty to listen on any address</a>
 <span class="sourceLineNo">781</span><a id="line.781">   */</a>
-<span class="sourceLineNo">782</span><a id="line.782">  public void startServer(String persistFilename) {</a>
-<span class="sourceLineNo">783</span><a id="line.783">    startServer(persistFilename, "");</a>
+<span class="sourceLineNo">782</span><a id="line.782">  public void startServer(String persistFilename, String listenAddress) {</a>
+<span class="sourceLineNo">783</span><a id="line.783">    startServer(persistFilename, listenAddress, kDefaultPort3, kDefaultPort4);</a>
 <span class="sourceLineNo">784</span><a id="line.784">  }</a>
 <span class="sourceLineNo">785</span><a id="line.785"></a>
 <span class="sourceLineNo">786</span><a id="line.786">  /**</a>
-<span class="sourceLineNo">787</span><a id="line.787">   * Starts a server using the specified filename and listening address, using the default port.</a>
+<span class="sourceLineNo">787</span><a id="line.787">   * Starts a server using the specified filename, listening address, and port.</a>
 <span class="sourceLineNo">788</span><a id="line.788">   *</a>
 <span class="sourceLineNo">789</span><a id="line.789">   * @param persistFilename the name of the persist file to use</a>
 <span class="sourceLineNo">790</span><a id="line.790">   * @param listenAddress the address to listen on, or empty to listen on any address</a>
-<span class="sourceLineNo">791</span><a id="line.791">   */</a>
-<span class="sourceLineNo">792</span><a id="line.792">  public void startServer(String persistFilename, String listenAddress) {</a>
-<span class="sourceLineNo">793</span><a id="line.793">    startServer(persistFilename, listenAddress, kDefaultPort3, kDefaultPort4);</a>
-<span class="sourceLineNo">794</span><a id="line.794">  }</a>
-<span class="sourceLineNo">795</span><a id="line.795"></a>
-<span class="sourceLineNo">796</span><a id="line.796">  /**</a>
-<span class="sourceLineNo">797</span><a id="line.797">   * Starts a server using the specified filename, listening address, and port.</a>
-<span class="sourceLineNo">798</span><a id="line.798">   *</a>
-<span class="sourceLineNo">799</span><a id="line.799">   * @param persistFilename the name of the persist file to use</a>
-<span class="sourceLineNo">800</span><a id="line.800">   * @param listenAddress the address to listen on, or empty to listen on any address</a>
-<span class="sourceLineNo">801</span><a id="line.801">   * @param port3 port to communicate over (NT3)</a>
-<span class="sourceLineNo">802</span><a id="line.802">   */</a>
-<span class="sourceLineNo">803</span><a id="line.803">  public void startServer(String persistFilename, String listenAddress, int port3) {</a>
-<span class="sourceLineNo">804</span><a id="line.804">    startServer(persistFilename, listenAddress, port3, kDefaultPort4);</a>
-<span class="sourceLineNo">805</span><a id="line.805">  }</a>
-<span class="sourceLineNo">806</span><a id="line.806"></a>
-<span class="sourceLineNo">807</span><a id="line.807">  /**</a>
-<span class="sourceLineNo">808</span><a id="line.808">   * Starts a server using the specified filename, listening address, and port.</a>
-<span class="sourceLineNo">809</span><a id="line.809">   *</a>
-<span class="sourceLineNo">810</span><a id="line.810">   * @param persistFilename the name of the persist file to use</a>
-<span class="sourceLineNo">811</span><a id="line.811">   * @param listenAddress the address to listen on, or empty to listen on any address</a>
-<span class="sourceLineNo">812</span><a id="line.812">   * @param port3 port to communicate over (NT3)</a>
-<span class="sourceLineNo">813</span><a id="line.813">   * @param port4 port to communicate over (NT4)</a>
-<span class="sourceLineNo">814</span><a id="line.814">   */</a>
-<span class="sourceLineNo">815</span><a id="line.815">  public void startServer(String persistFilename, String listenAddress, int port3, int port4) {</a>
-<span class="sourceLineNo">816</span><a id="line.816">    NetworkTablesJNI.startServer(m_handle, persistFilename, listenAddress, port3, port4);</a>
-<span class="sourceLineNo">817</span><a id="line.817">  }</a>
-<span class="sourceLineNo">818</span><a id="line.818"></a>
-<span class="sourceLineNo">819</span><a id="line.819">  /** Stops the server if it is running. */</a>
-<span class="sourceLineNo">820</span><a id="line.820">  public void stopServer() {</a>
-<span class="sourceLineNo">821</span><a id="line.821">    NetworkTablesJNI.stopServer(m_handle);</a>
-<span class="sourceLineNo">822</span><a id="line.822">  }</a>
-<span class="sourceLineNo">823</span><a id="line.823"></a>
-<span class="sourceLineNo">824</span><a id="line.824">  /** Starts a NT3 client. Use SetServer or SetServerTeam to set the server name and port. */</a>
-<span class="sourceLineNo">825</span><a id="line.825">  public void startClient3() {</a>
-<span class="sourceLineNo">826</span><a id="line.826">    NetworkTablesJNI.startClient3(m_handle);</a>
-<span class="sourceLineNo">827</span><a id="line.827">  }</a>
-<span class="sourceLineNo">828</span><a id="line.828"></a>
-<span class="sourceLineNo">829</span><a id="line.829">  /** Starts a NT4 client. Use SetServer or SetServerTeam to set the server name and port. */</a>
-<span class="sourceLineNo">830</span><a id="line.830">  public void startClient4() {</a>
-<span class="sourceLineNo">831</span><a id="line.831">    NetworkTablesJNI.startClient4(m_handle);</a>
-<span class="sourceLineNo">832</span><a id="line.832">  }</a>
-<span class="sourceLineNo">833</span><a id="line.833"></a>
-<span class="sourceLineNo">834</span><a id="line.834">  /** Stops the client if it is running. */</a>
-<span class="sourceLineNo">835</span><a id="line.835">  public void stopClient() {</a>
-<span class="sourceLineNo">836</span><a id="line.836">    NetworkTablesJNI.stopClient(m_handle);</a>
-<span class="sourceLineNo">837</span><a id="line.837">  }</a>
-<span class="sourceLineNo">838</span><a id="line.838"></a>
-<span class="sourceLineNo">839</span><a id="line.839">  /**</a>
-<span class="sourceLineNo">840</span><a id="line.840">   * Sets server address and port for client (without restarting client). Changes the port to the</a>
-<span class="sourceLineNo">841</span><a id="line.841">   * default port.</a>
-<span class="sourceLineNo">842</span><a id="line.842">   *</a>
-<span class="sourceLineNo">843</span><a id="line.843">   * @param serverName server name</a>
-<span class="sourceLineNo">844</span><a id="line.844">   */</a>
-<span class="sourceLineNo">845</span><a id="line.845">  public void setServer(String serverName) {</a>
-<span class="sourceLineNo">846</span><a id="line.846">    setServer(serverName, 0);</a>
-<span class="sourceLineNo">847</span><a id="line.847">  }</a>
-<span class="sourceLineNo">848</span><a id="line.848"></a>
-<span class="sourceLineNo">849</span><a id="line.849">  /**</a>
-<span class="sourceLineNo">850</span><a id="line.850">   * Sets server address and port for client (without restarting client).</a>
-<span class="sourceLineNo">851</span><a id="line.851">   *</a>
-<span class="sourceLineNo">852</span><a id="line.852">   * @param serverName server name</a>
-<span class="sourceLineNo">853</span><a id="line.853">   * @param port port to communicate over (0=default)</a>
-<span class="sourceLineNo">854</span><a id="line.854">   */</a>
-<span class="sourceLineNo">855</span><a id="line.855">  public void setServer(String serverName, int port) {</a>
-<span class="sourceLineNo">856</span><a id="line.856">    NetworkTablesJNI.setServer(m_handle, serverName, port);</a>
-<span class="sourceLineNo">857</span><a id="line.857">  }</a>
-<span class="sourceLineNo">858</span><a id="line.858"></a>
-<span class="sourceLineNo">859</span><a id="line.859">  /**</a>
-<span class="sourceLineNo">860</span><a id="line.860">   * Sets server addresses and port for client (without restarting client). Changes the port to the</a>
-<span class="sourceLineNo">861</span><a id="line.861">   * default port. The client will attempt to connect to each server in round robin fashion.</a>
-<span class="sourceLineNo">862</span><a id="line.862">   *</a>
-<span class="sourceLineNo">863</span><a id="line.863">   * @param serverNames array of server names</a>
-<span class="sourceLineNo">864</span><a id="line.864">   */</a>
-<span class="sourceLineNo">865</span><a id="line.865">  public void setServer(String[] serverNames) {</a>
-<span class="sourceLineNo">866</span><a id="line.866">    setServer(serverNames, 0);</a>
-<span class="sourceLineNo">867</span><a id="line.867">  }</a>
-<span class="sourceLineNo">868</span><a id="line.868"></a>
-<span class="sourceLineNo">869</span><a id="line.869">  /**</a>
-<span class="sourceLineNo">870</span><a id="line.870">   * Sets server addresses and port for client (without restarting client). The client will attempt</a>
-<span class="sourceLineNo">871</span><a id="line.871">   * to connect to each server in round robin fashion.</a>
-<span class="sourceLineNo">872</span><a id="line.872">   *</a>
-<span class="sourceLineNo">873</span><a id="line.873">   * @param serverNames array of server names</a>
-<span class="sourceLineNo">874</span><a id="line.874">   * @param port port to communicate over (0=default)</a>
-<span class="sourceLineNo">875</span><a id="line.875">   */</a>
-<span class="sourceLineNo">876</span><a id="line.876">  public void setServer(String[] serverNames, int port) {</a>
-<span class="sourceLineNo">877</span><a id="line.877">    int[] ports = new int[serverNames.length];</a>
-<span class="sourceLineNo">878</span><a id="line.878">    for (int i = 0; i &lt; serverNames.length; i++) {</a>
-<span class="sourceLineNo">879</span><a id="line.879">      ports[i] = port;</a>
-<span class="sourceLineNo">880</span><a id="line.880">    }</a>
-<span class="sourceLineNo">881</span><a id="line.881">    setServer(serverNames, ports);</a>
-<span class="sourceLineNo">882</span><a id="line.882">  }</a>
-<span class="sourceLineNo">883</span><a id="line.883"></a>
-<span class="sourceLineNo">884</span><a id="line.884">  /**</a>
-<span class="sourceLineNo">885</span><a id="line.885">   * Sets server addresses and ports for client (without restarting client). The client will attempt</a>
-<span class="sourceLineNo">886</span><a id="line.886">   * to connect to each server in round robin fashion.</a>
-<span class="sourceLineNo">887</span><a id="line.887">   *</a>
-<span class="sourceLineNo">888</span><a id="line.888">   * @param serverNames array of server names</a>
-<span class="sourceLineNo">889</span><a id="line.889">   * @param ports array of port numbers (0=default)</a>
-<span class="sourceLineNo">890</span><a id="line.890">   */</a>
-<span class="sourceLineNo">891</span><a id="line.891">  public void setServer(String[] serverNames, int[] ports) {</a>
-<span class="sourceLineNo">892</span><a id="line.892">    NetworkTablesJNI.setServer(m_handle, serverNames, ports);</a>
-<span class="sourceLineNo">893</span><a id="line.893">  }</a>
-<span class="sourceLineNo">894</span><a id="line.894"></a>
-<span class="sourceLineNo">895</span><a id="line.895">  /**</a>
-<span class="sourceLineNo">896</span><a id="line.896">   * Sets server addresses and port for client (without restarting client). Changes the port to the</a>
-<span class="sourceLineNo">897</span><a id="line.897">   * default port. The client will attempt to connect to each server in round robin fashion.</a>
-<span class="sourceLineNo">898</span><a id="line.898">   *</a>
-<span class="sourceLineNo">899</span><a id="line.899">   * @param team team number</a>
-<span class="sourceLineNo">900</span><a id="line.900">   */</a>
-<span class="sourceLineNo">901</span><a id="line.901">  public void setServerTeam(int team) {</a>
-<span class="sourceLineNo">902</span><a id="line.902">    setServerTeam(team, 0);</a>
-<span class="sourceLineNo">903</span><a id="line.903">  }</a>
-<span class="sourceLineNo">904</span><a id="line.904"></a>
-<span class="sourceLineNo">905</span><a id="line.905">  /**</a>
-<span class="sourceLineNo">906</span><a id="line.906">   * Sets server addresses and port for client (without restarting client). Connects using commonly</a>
-<span class="sourceLineNo">907</span><a id="line.907">   * known robot addresses for the specified team.</a>
-<span class="sourceLineNo">908</span><a id="line.908">   *</a>
-<span class="sourceLineNo">909</span><a id="line.909">   * @param team team number</a>
-<span class="sourceLineNo">910</span><a id="line.910">   * @param port port to communicate over (0=default)</a>
-<span class="sourceLineNo">911</span><a id="line.911">   */</a>
-<span class="sourceLineNo">912</span><a id="line.912">  public void setServerTeam(int team, int port) {</a>
-<span class="sourceLineNo">913</span><a id="line.913">    NetworkTablesJNI.setServerTeam(m_handle, team, port);</a>
-<span class="sourceLineNo">914</span><a id="line.914">  }</a>
-<span class="sourceLineNo">915</span><a id="line.915"></a>
-<span class="sourceLineNo">916</span><a id="line.916">  /**</a>
-<span class="sourceLineNo">917</span><a id="line.917">   * Starts requesting server address from Driver Station. This connects to the Driver Station</a>
-<span class="sourceLineNo">918</span><a id="line.918">   * running on localhost to obtain the server IP address, and connects with the default port.</a>
-<span class="sourceLineNo">919</span><a id="line.919">   */</a>
-<span class="sourceLineNo">920</span><a id="line.920">  public void startDSClient() {</a>
-<span class="sourceLineNo">921</span><a id="line.921">    startDSClient(0);</a>
-<span class="sourceLineNo">922</span><a id="line.922">  }</a>
-<span class="sourceLineNo">923</span><a id="line.923"></a>
-<span class="sourceLineNo">924</span><a id="line.924">  /**</a>
-<span class="sourceLineNo">925</span><a id="line.925">   * Starts requesting server address from Driver Station. This connects to the Driver Station</a>
-<span class="sourceLineNo">926</span><a id="line.926">   * running on localhost to obtain the server IP address.</a>
-<span class="sourceLineNo">927</span><a id="line.927">   *</a>
-<span class="sourceLineNo">928</span><a id="line.928">   * @param port server port to use in combination with IP from DS (0=default)</a>
-<span class="sourceLineNo">929</span><a id="line.929">   */</a>
-<span class="sourceLineNo">930</span><a id="line.930">  public void startDSClient(int port) {</a>
-<span class="sourceLineNo">931</span><a id="line.931">    NetworkTablesJNI.startDSClient(m_handle, port);</a>
-<span class="sourceLineNo">932</span><a id="line.932">  }</a>
-<span class="sourceLineNo">933</span><a id="line.933"></a>
-<span class="sourceLineNo">934</span><a id="line.934">  /** Stops requesting server address from Driver Station. */</a>
-<span class="sourceLineNo">935</span><a id="line.935">  public void stopDSClient() {</a>
-<span class="sourceLineNo">936</span><a id="line.936">    NetworkTablesJNI.stopDSClient(m_handle);</a>
-<span class="sourceLineNo">937</span><a id="line.937">  }</a>
-<span class="sourceLineNo">938</span><a id="line.938"></a>
-<span class="sourceLineNo">939</span><a id="line.939">  /**</a>
-<span class="sourceLineNo">940</span><a id="line.940">   * Flushes all updated values immediately to the local client/server. This does not flush to the</a>
-<span class="sourceLineNo">941</span><a id="line.941">   * network.</a>
-<span class="sourceLineNo">942</span><a id="line.942">   */</a>
-<span class="sourceLineNo">943</span><a id="line.943">  public void flushLocal() {</a>
-<span class="sourceLineNo">944</span><a id="line.944">    NetworkTablesJNI.flushLocal(m_handle);</a>
-<span class="sourceLineNo">945</span><a id="line.945">  }</a>
-<span class="sourceLineNo">946</span><a id="line.946"></a>
-<span class="sourceLineNo">947</span><a id="line.947">  /**</a>
-<span class="sourceLineNo">948</span><a id="line.948">   * Flushes all updated values immediately to the network. Note: This is rate-limited to protect</a>
-<span class="sourceLineNo">949</span><a id="line.949">   * the network from flooding. This is primarily useful for synchronizing network updates with user</a>
-<span class="sourceLineNo">950</span><a id="line.950">   * code.</a>
-<span class="sourceLineNo">951</span><a id="line.951">   */</a>
-<span class="sourceLineNo">952</span><a id="line.952">  public void flush() {</a>
-<span class="sourceLineNo">953</span><a id="line.953">    NetworkTablesJNI.flush(m_handle);</a>
-<span class="sourceLineNo">954</span><a id="line.954">  }</a>
-<span class="sourceLineNo">955</span><a id="line.955"></a>
-<span class="sourceLineNo">956</span><a id="line.956">  /**</a>
-<span class="sourceLineNo">957</span><a id="line.957">   * Gets information on the currently established network connections. If operating as a client,</a>
-<span class="sourceLineNo">958</span><a id="line.958">   * this will return either zero or one values.</a>
-<span class="sourceLineNo">959</span><a id="line.959">   *</a>
-<span class="sourceLineNo">960</span><a id="line.960">   * @return array of connection information</a>
-<span class="sourceLineNo">961</span><a id="line.961">   */</a>
-<span class="sourceLineNo">962</span><a id="line.962">  public ConnectionInfo[] getConnections() {</a>
-<span class="sourceLineNo">963</span><a id="line.963">    return NetworkTablesJNI.getConnections(m_handle);</a>
-<span class="sourceLineNo">964</span><a id="line.964">  }</a>
-<span class="sourceLineNo">965</span><a id="line.965"></a>
-<span class="sourceLineNo">966</span><a id="line.966">  /**</a>
-<span class="sourceLineNo">967</span><a id="line.967">   * Return whether or not the instance is connected to another node.</a>
-<span class="sourceLineNo">968</span><a id="line.968">   *</a>
-<span class="sourceLineNo">969</span><a id="line.969">   * @return True if connected.</a>
-<span class="sourceLineNo">970</span><a id="line.970">   */</a>
-<span class="sourceLineNo">971</span><a id="line.971">  public boolean isConnected() {</a>
-<span class="sourceLineNo">972</span><a id="line.972">    return NetworkTablesJNI.isConnected(m_handle);</a>
-<span class="sourceLineNo">973</span><a id="line.973">  }</a>
-<span class="sourceLineNo">974</span><a id="line.974"></a>
-<span class="sourceLineNo">975</span><a id="line.975">  /**</a>
-<span class="sourceLineNo">976</span><a id="line.976">   * Starts logging entry changes to a DataLog.</a>
-<span class="sourceLineNo">977</span><a id="line.977">   *</a>
-<span class="sourceLineNo">978</span><a id="line.978">   * @param log data log object; lifetime must extend until StopEntryDataLog is called or the</a>
-<span class="sourceLineNo">979</span><a id="line.979">   *     instance is destroyed</a>
-<span class="sourceLineNo">980</span><a id="line.980">   * @param prefix only store entries with names that start with this prefix; the prefix is not</a>
-<span class="sourceLineNo">981</span><a id="line.981">   *     included in the data log entry name</a>
-<span class="sourceLineNo">982</span><a id="line.982">   * @param logPrefix prefix to add to data log entry names</a>
-<span class="sourceLineNo">983</span><a id="line.983">   * @return Data logger handle</a>
-<span class="sourceLineNo">984</span><a id="line.984">   */</a>
-<span class="sourceLineNo">985</span><a id="line.985">  public int startEntryDataLog(DataLog log, String prefix, String logPrefix) {</a>
-<span class="sourceLineNo">986</span><a id="line.986">    return NetworkTablesJNI.startEntryDataLog(m_handle, log, prefix, logPrefix);</a>
-<span class="sourceLineNo">987</span><a id="line.987">  }</a>
-<span class="sourceLineNo">988</span><a id="line.988"></a>
-<span class="sourceLineNo">989</span><a id="line.989">  /**</a>
-<span class="sourceLineNo">990</span><a id="line.990">   * Stops logging entry changes to a DataLog.</a>
-<span class="sourceLineNo">991</span><a id="line.991">   *</a>
-<span class="sourceLineNo">992</span><a id="line.992">   * @param logger data logger handle</a>
-<span class="sourceLineNo">993</span><a id="line.993">   */</a>
-<span class="sourceLineNo">994</span><a id="line.994">  public static void stopEntryDataLog(int logger) {</a>
-<span class="sourceLineNo">995</span><a id="line.995">    NetworkTablesJNI.stopEntryDataLog(logger);</a>
-<span class="sourceLineNo">996</span><a id="line.996">  }</a>
-<span class="sourceLineNo">997</span><a id="line.997"></a>
-<span class="sourceLineNo">998</span><a id="line.998">  /**</a>
-<span class="sourceLineNo">999</span><a id="line.999">   * Starts logging connection changes to a DataLog.</a>
-<span class="sourceLineNo">1000</span><a id="line.1000">   *</a>
-<span class="sourceLineNo">1001</span><a id="line.1001">   * @param log data log object; lifetime must extend until StopConnectionDataLog is called or the</a>
-<span class="sourceLineNo">1002</span><a id="line.1002">   *     instance is destroyed</a>
-<span class="sourceLineNo">1003</span><a id="line.1003">   * @param name data log entry name</a>
-<span class="sourceLineNo">1004</span><a id="line.1004">   * @return Data logger handle</a>
-<span class="sourceLineNo">1005</span><a id="line.1005">   */</a>
-<span class="sourceLineNo">1006</span><a id="line.1006">  public int startConnectionDataLog(DataLog log, String name) {</a>
-<span class="sourceLineNo">1007</span><a id="line.1007">    return NetworkTablesJNI.startConnectionDataLog(m_handle, log, name);</a>
-<span class="sourceLineNo">1008</span><a id="line.1008">  }</a>
-<span class="sourceLineNo">1009</span><a id="line.1009"></a>
-<span class="sourceLineNo">1010</span><a id="line.1010">  /**</a>
-<span class="sourceLineNo">1011</span><a id="line.1011">   * Stops logging connection changes to a DataLog.</a>
-<span class="sourceLineNo">1012</span><a id="line.1012">   *</a>
-<span class="sourceLineNo">1013</span><a id="line.1013">   * @param logger data logger handle</a>
-<span class="sourceLineNo">1014</span><a id="line.1014">   */</a>
-<span class="sourceLineNo">1015</span><a id="line.1015">  public static void stopConnectionDataLog(int logger) {</a>
-<span class="sourceLineNo">1016</span><a id="line.1016">    NetworkTablesJNI.stopConnectionDataLog(logger);</a>
-<span class="sourceLineNo">1017</span><a id="line.1017">  }</a>
-<span class="sourceLineNo">1018</span><a id="line.1018"></a>
-<span class="sourceLineNo">1019</span><a id="line.1019">  private final ReentrantLock m_loggerLock = new ReentrantLock();</a>
-<span class="sourceLineNo">1020</span><a id="line.1020">  private final Map&lt;Integer, Consumer&lt;LogMessage&gt;&gt; m_loggers = new HashMap&lt;&gt;();</a>
-<span class="sourceLineNo">1021</span><a id="line.1021">  private int m_loggerPoller;</a>
-<span class="sourceLineNo">1022</span><a id="line.1022"></a>
-<span class="sourceLineNo">1023</span><a id="line.1023">  @SuppressWarnings("PMD.AvoidCatchingThrowable")</a>
-<span class="sourceLineNo">1024</span><a id="line.1024">  private void startLogThread() {</a>
-<span class="sourceLineNo">1025</span><a id="line.1025">    var loggerThread =</a>
-<span class="sourceLineNo">1026</span><a id="line.1026">        new Thread(</a>
-<span class="sourceLineNo">1027</span><a id="line.1027">            () -&gt; {</a>
-<span class="sourceLineNo">1028</span><a id="line.1028">              boolean wasInterrupted = false;</a>
-<span class="sourceLineNo">1029</span><a id="line.1029">              while (!Thread.interrupted()) {</a>
-<span class="sourceLineNo">1030</span><a id="line.1030">                try {</a>
-<span class="sourceLineNo">1031</span><a id="line.1031">                  WPIUtilJNI.waitForObject(m_loggerPoller);</a>
-<span class="sourceLineNo">1032</span><a id="line.1032">                } catch (InterruptedException ex) {</a>
-<span class="sourceLineNo">1033</span><a id="line.1033">                  Thread.currentThread().interrupt();</a>
-<span class="sourceLineNo">1034</span><a id="line.1034">                  // don't try to destroy poller, as its handle is likely no longer valid</a>
-<span class="sourceLineNo">1035</span><a id="line.1035">                  wasInterrupted = true;</a>
-<span class="sourceLineNo">1036</span><a id="line.1036">                  break;</a>
-<span class="sourceLineNo">1037</span><a id="line.1037">                }</a>
-<span class="sourceLineNo">1038</span><a id="line.1038">                LogMessage[] events = NetworkTablesJNI.readLoggerQueue(this, m_loggerPoller);</a>
-<span class="sourceLineNo">1039</span><a id="line.1039">                for (LogMessage event : events) {</a>
-<span class="sourceLineNo">1040</span><a id="line.1040">                  Consumer&lt;LogMessage&gt; logger;</a>
-<span class="sourceLineNo">1041</span><a id="line.1041">                  m_loggerLock.lock();</a>
-<span class="sourceLineNo">1042</span><a id="line.1042">                  try {</a>
-<span class="sourceLineNo">1043</span><a id="line.1043">                    logger = m_loggers.get(event.logger);</a>
-<span class="sourceLineNo">1044</span><a id="line.1044">                  } finally {</a>
-<span class="sourceLineNo">1045</span><a id="line.1045">                    m_loggerLock.unlock();</a>
-<span class="sourceLineNo">1046</span><a id="line.1046">                  }</a>
-<span class="sourceLineNo">1047</span><a id="line.1047">                  if (logger != null) {</a>
-<span class="sourceLineNo">1048</span><a id="line.1048">                    try {</a>
-<span class="sourceLineNo">1049</span><a id="line.1049">                      logger.accept(event);</a>
-<span class="sourceLineNo">1050</span><a id="line.1050">                    } catch (Throwable throwable) {</a>
-<span class="sourceLineNo">1051</span><a id="line.1051">                      System.err.println(</a>
-<span class="sourceLineNo">1052</span><a id="line.1052">                          "Unhandled exception during logger callback: " + throwable.toString());</a>
-<span class="sourceLineNo">1053</span><a id="line.1053">                      throwable.printStackTrace();</a>
-<span class="sourceLineNo">1054</span><a id="line.1054">                    }</a>
-<span class="sourceLineNo">1055</span><a id="line.1055">                  }</a>
-<span class="sourceLineNo">1056</span><a id="line.1056">                }</a>
-<span class="sourceLineNo">1057</span><a id="line.1057">              }</a>
-<span class="sourceLineNo">1058</span><a id="line.1058">              m_loggerLock.lock();</a>
-<span class="sourceLineNo">1059</span><a id="line.1059">              try {</a>
-<span class="sourceLineNo">1060</span><a id="line.1060">                if (!wasInterrupted) {</a>
-<span class="sourceLineNo">1061</span><a id="line.1061">                  NetworkTablesJNI.destroyLoggerPoller(m_loggerPoller);</a>
-<span class="sourceLineNo">1062</span><a id="line.1062">                }</a>
-<span class="sourceLineNo">1063</span><a id="line.1063">              } finally {</a>
-<span class="sourceLineNo">1064</span><a id="line.1064">                m_loggerLock.unlock();</a>
-<span class="sourceLineNo">1065</span><a id="line.1065">              }</a>
-<span class="sourceLineNo">1066</span><a id="line.1066">            },</a>
-<span class="sourceLineNo">1067</span><a id="line.1067">            "NTLogger");</a>
-<span class="sourceLineNo">1068</span><a id="line.1068">    loggerThread.setDaemon(true);</a>
-<span class="sourceLineNo">1069</span><a id="line.1069">    loggerThread.start();</a>
-<span class="sourceLineNo">1070</span><a id="line.1070">  }</a>
-<span class="sourceLineNo">1071</span><a id="line.1071"></a>
-<span class="sourceLineNo">1072</span><a id="line.1072">  /**</a>
-<span class="sourceLineNo">1073</span><a id="line.1073">   * Add logger callback function. By default, log messages are sent to stderr; this function sends</a>
-<span class="sourceLineNo">1074</span><a id="line.1074">   * log messages with the specified levels to the provided callback function instead. The callback</a>
-<span class="sourceLineNo">1075</span><a id="line.1075">   * function will only be called for log messages with level greater than or equal to minLevel and</a>
-<span class="sourceLineNo">1076</span><a id="line.1076">   * less than or equal to maxLevel; messages outside this range will be silently ignored.</a>
-<span class="sourceLineNo">1077</span><a id="line.1077">   *</a>
-<span class="sourceLineNo">1078</span><a id="line.1078">   * @param func log callback function</a>
-<span class="sourceLineNo">1079</span><a id="line.1079">   * @param minLevel minimum log level</a>
-<span class="sourceLineNo">1080</span><a id="line.1080">   * @param maxLevel maximum log level</a>
-<span class="sourceLineNo">1081</span><a id="line.1081">   * @return Logger handle</a>
-<span class="sourceLineNo">1082</span><a id="line.1082">   */</a>
-<span class="sourceLineNo">1083</span><a id="line.1083">  public int addLogger(Consumer&lt;LogMessage&gt; func, int minLevel, int maxLevel) {</a>
-<span class="sourceLineNo">1084</span><a id="line.1084">    m_loggerLock.lock();</a>
-<span class="sourceLineNo">1085</span><a id="line.1085">    try {</a>
-<span class="sourceLineNo">1086</span><a id="line.1086">      if (m_loggerPoller == 0) {</a>
-<span class="sourceLineNo">1087</span><a id="line.1087">        m_loggerPoller = NetworkTablesJNI.createLoggerPoller(m_handle);</a>
-<span class="sourceLineNo">1088</span><a id="line.1088">        startLogThread();</a>
-<span class="sourceLineNo">1089</span><a id="line.1089">      }</a>
-<span class="sourceLineNo">1090</span><a id="line.1090">      int handle = NetworkTablesJNI.addPolledLogger(m_loggerPoller, minLevel, maxLevel);</a>
-<span class="sourceLineNo">1091</span><a id="line.1091">      m_loggers.put(handle, func);</a>
-<span class="sourceLineNo">1092</span><a id="line.1092">      return handle;</a>
-<span class="sourceLineNo">1093</span><a id="line.1093">    } finally {</a>
-<span class="sourceLineNo">1094</span><a id="line.1094">      m_loggerLock.unlock();</a>
-<span class="sourceLineNo">1095</span><a id="line.1095">    }</a>
-<span class="sourceLineNo">1096</span><a id="line.1096">  }</a>
-<span class="sourceLineNo">1097</span><a id="line.1097"></a>
-<span class="sourceLineNo">1098</span><a id="line.1098">  /**</a>
-<span class="sourceLineNo">1099</span><a id="line.1099">   * Remove a logger.</a>
-<span class="sourceLineNo">1100</span><a id="line.1100">   *</a>
-<span class="sourceLineNo">1101</span><a id="line.1101">   * @param logger Logger handle to remove</a>
-<span class="sourceLineNo">1102</span><a id="line.1102">   */</a>
-<span class="sourceLineNo">1103</span><a id="line.1103">  public void removeLogger(int logger) {</a>
-<span class="sourceLineNo">1104</span><a id="line.1104">    m_loggerLock.lock();</a>
-<span class="sourceLineNo">1105</span><a id="line.1105">    try {</a>
-<span class="sourceLineNo">1106</span><a id="line.1106">      m_loggers.remove(logger);</a>
-<span class="sourceLineNo">1107</span><a id="line.1107">    } finally {</a>
-<span class="sourceLineNo">1108</span><a id="line.1108">      m_loggerLock.unlock();</a>
-<span class="sourceLineNo">1109</span><a id="line.1109">    }</a>
-<span class="sourceLineNo">1110</span><a id="line.1110">    NetworkTablesJNI.removeLogger(logger);</a>
-<span class="sourceLineNo">1111</span><a id="line.1111">  }</a>
-<span class="sourceLineNo">1112</span><a id="line.1112"></a>
-<span class="sourceLineNo">1113</span><a id="line.1113">  @Override</a>
-<span class="sourceLineNo">1114</span><a id="line.1114">  public boolean equals(Object other) {</a>
-<span class="sourceLineNo">1115</span><a id="line.1115">    if (other == this) {</a>
-<span class="sourceLineNo">1116</span><a id="line.1116">      return true;</a>
-<span class="sourceLineNo">1117</span><a id="line.1117">    }</a>
-<span class="sourceLineNo">1118</span><a id="line.1118">    if (!(other instanceof NetworkTableInstance)) {</a>
-<span class="sourceLineNo">1119</span><a id="line.1119">      return false;</a>
-<span class="sourceLineNo">1120</span><a id="line.1120">    }</a>
-<span class="sourceLineNo">1121</span><a id="line.1121"></a>
-<span class="sourceLineNo">1122</span><a id="line.1122">    return m_handle == ((NetworkTableInstance) other).m_handle;</a>
-<span class="sourceLineNo">1123</span><a id="line.1123">  }</a>
-<span class="sourceLineNo">1124</span><a id="line.1124"></a>
-<span class="sourceLineNo">1125</span><a id="line.1125">  @Override</a>
-<span class="sourceLineNo">1126</span><a id="line.1126">  public int hashCode() {</a>
-<span class="sourceLineNo">1127</span><a id="line.1127">    return m_handle;</a>
-<span class="sourceLineNo">1128</span><a id="line.1128">  }</a>
-<span class="sourceLineNo">1129</span><a id="line.1129"></a>
-<span class="sourceLineNo">1130</span><a id="line.1130">  private boolean m_owned;</a>
-<span class="sourceLineNo">1131</span><a id="line.1131">  private final int m_handle;</a>
-<span class="sourceLineNo">1132</span><a id="line.1132">}</a>
+<span class="sourceLineNo">791</span><a id="line.791">   * @param port3 port to communicate over (NT3)</a>
+<span class="sourceLineNo">792</span><a id="line.792">   */</a>
+<span class="sourceLineNo">793</span><a id="line.793">  public void startServer(String persistFilename, String listenAddress, int port3) {</a>
+<span class="sourceLineNo">794</span><a id="line.794">    startServer(persistFilename, listenAddress, port3, kDefaultPort4);</a>
+<span class="sourceLineNo">795</span><a id="line.795">  }</a>
+<span class="sourceLineNo">796</span><a id="line.796"></a>
+<span class="sourceLineNo">797</span><a id="line.797">  /**</a>
+<span class="sourceLineNo">798</span><a id="line.798">   * Starts a server using the specified filename, listening address, and port.</a>
+<span class="sourceLineNo">799</span><a id="line.799">   *</a>
+<span class="sourceLineNo">800</span><a id="line.800">   * @param persistFilename the name of the persist file to use</a>
+<span class="sourceLineNo">801</span><a id="line.801">   * @param listenAddress the address to listen on, or empty to listen on any address</a>
+<span class="sourceLineNo">802</span><a id="line.802">   * @param port3 port to communicate over (NT3)</a>
+<span class="sourceLineNo">803</span><a id="line.803">   * @param port4 port to communicate over (NT4)</a>
+<span class="sourceLineNo">804</span><a id="line.804">   */</a>
+<span class="sourceLineNo">805</span><a id="line.805">  public void startServer(String persistFilename, String listenAddress, int port3, int port4) {</a>
+<span class="sourceLineNo">806</span><a id="line.806">    NetworkTablesJNI.startServer(m_handle, persistFilename, listenAddress, port3, port4);</a>
+<span class="sourceLineNo">807</span><a id="line.807">  }</a>
+<span class="sourceLineNo">808</span><a id="line.808"></a>
+<span class="sourceLineNo">809</span><a id="line.809">  /** Stops the server if it is running. */</a>
+<span class="sourceLineNo">810</span><a id="line.810">  public void stopServer() {</a>
+<span class="sourceLineNo">811</span><a id="line.811">    NetworkTablesJNI.stopServer(m_handle);</a>
+<span class="sourceLineNo">812</span><a id="line.812">  }</a>
+<span class="sourceLineNo">813</span><a id="line.813"></a>
+<span class="sourceLineNo">814</span><a id="line.814">  /**</a>
+<span class="sourceLineNo">815</span><a id="line.815">   * Starts a NT3 client. Use SetServer or SetServerTeam to set the server name and port.</a>
+<span class="sourceLineNo">816</span><a id="line.816">   *</a>
+<span class="sourceLineNo">817</span><a id="line.817">   * @param identity network identity to advertise (cannot be empty string)</a>
+<span class="sourceLineNo">818</span><a id="line.818">   */</a>
+<span class="sourceLineNo">819</span><a id="line.819">  public void startClient3(String identity) {</a>
+<span class="sourceLineNo">820</span><a id="line.820">    NetworkTablesJNI.startClient3(m_handle, identity);</a>
+<span class="sourceLineNo">821</span><a id="line.821">  }</a>
+<span class="sourceLineNo">822</span><a id="line.822"></a>
+<span class="sourceLineNo">823</span><a id="line.823">  /**</a>
+<span class="sourceLineNo">824</span><a id="line.824">   * Starts a NT4 client. Use SetServer or SetServerTeam to set the server name and port.</a>
+<span class="sourceLineNo">825</span><a id="line.825">   *</a>
+<span class="sourceLineNo">826</span><a id="line.826">   * @param identity network identity to advertise (cannot be empty string)</a>
+<span class="sourceLineNo">827</span><a id="line.827">   */</a>
+<span class="sourceLineNo">828</span><a id="line.828">  public void startClient4(String identity) {</a>
+<span class="sourceLineNo">829</span><a id="line.829">    NetworkTablesJNI.startClient4(m_handle, identity);</a>
+<span class="sourceLineNo">830</span><a id="line.830">  }</a>
+<span class="sourceLineNo">831</span><a id="line.831"></a>
+<span class="sourceLineNo">832</span><a id="line.832">  /** Stops the client if it is running. */</a>
+<span class="sourceLineNo">833</span><a id="line.833">  public void stopClient() {</a>
+<span class="sourceLineNo">834</span><a id="line.834">    NetworkTablesJNI.stopClient(m_handle);</a>
+<span class="sourceLineNo">835</span><a id="line.835">  }</a>
+<span class="sourceLineNo">836</span><a id="line.836"></a>
+<span class="sourceLineNo">837</span><a id="line.837">  /**</a>
+<span class="sourceLineNo">838</span><a id="line.838">   * Sets server address and port for client (without restarting client). Changes the port to the</a>
+<span class="sourceLineNo">839</span><a id="line.839">   * default port.</a>
+<span class="sourceLineNo">840</span><a id="line.840">   *</a>
+<span class="sourceLineNo">841</span><a id="line.841">   * @param serverName server name</a>
+<span class="sourceLineNo">842</span><a id="line.842">   */</a>
+<span class="sourceLineNo">843</span><a id="line.843">  public void setServer(String serverName) {</a>
+<span class="sourceLineNo">844</span><a id="line.844">    setServer(serverName, 0);</a>
+<span class="sourceLineNo">845</span><a id="line.845">  }</a>
+<span class="sourceLineNo">846</span><a id="line.846"></a>
+<span class="sourceLineNo">847</span><a id="line.847">  /**</a>
+<span class="sourceLineNo">848</span><a id="line.848">   * Sets server address and port for client (without restarting client).</a>
+<span class="sourceLineNo">849</span><a id="line.849">   *</a>
+<span class="sourceLineNo">850</span><a id="line.850">   * @param serverName server name</a>
+<span class="sourceLineNo">851</span><a id="line.851">   * @param port port to communicate over (0=default)</a>
+<span class="sourceLineNo">852</span><a id="line.852">   */</a>
+<span class="sourceLineNo">853</span><a id="line.853">  public void setServer(String serverName, int port) {</a>
+<span class="sourceLineNo">854</span><a id="line.854">    NetworkTablesJNI.setServer(m_handle, serverName, port);</a>
+<span class="sourceLineNo">855</span><a id="line.855">  }</a>
+<span class="sourceLineNo">856</span><a id="line.856"></a>
+<span class="sourceLineNo">857</span><a id="line.857">  /**</a>
+<span class="sourceLineNo">858</span><a id="line.858">   * Sets server addresses and port for client (without restarting client). Changes the port to the</a>
+<span class="sourceLineNo">859</span><a id="line.859">   * default port. The client will attempt to connect to each server in round robin fashion.</a>
+<span class="sourceLineNo">860</span><a id="line.860">   *</a>
+<span class="sourceLineNo">861</span><a id="line.861">   * @param serverNames array of server names</a>
+<span class="sourceLineNo">862</span><a id="line.862">   */</a>
+<span class="sourceLineNo">863</span><a id="line.863">  public void setServer(String[] serverNames) {</a>
+<span class="sourceLineNo">864</span><a id="line.864">    setServer(serverNames, 0);</a>
+<span class="sourceLineNo">865</span><a id="line.865">  }</a>
+<span class="sourceLineNo">866</span><a id="line.866"></a>
+<span class="sourceLineNo">867</span><a id="line.867">  /**</a>
+<span class="sourceLineNo">868</span><a id="line.868">   * Sets server addresses and port for client (without restarting client). The client will attempt</a>
+<span class="sourceLineNo">869</span><a id="line.869">   * to connect to each server in round robin fashion.</a>
+<span class="sourceLineNo">870</span><a id="line.870">   *</a>
+<span class="sourceLineNo">871</span><a id="line.871">   * @param serverNames array of server names</a>
+<span class="sourceLineNo">872</span><a id="line.872">   * @param port port to communicate over (0=default)</a>
+<span class="sourceLineNo">873</span><a id="line.873">   */</a>
+<span class="sourceLineNo">874</span><a id="line.874">  public void setServer(String[] serverNames, int port) {</a>
+<span class="sourceLineNo">875</span><a id="line.875">    int[] ports = new int[serverNames.length];</a>
+<span class="sourceLineNo">876</span><a id="line.876">    for (int i = 0; i &lt; serverNames.length; i++) {</a>
+<span class="sourceLineNo">877</span><a id="line.877">      ports[i] = port;</a>
+<span class="sourceLineNo">878</span><a id="line.878">    }</a>
+<span class="sourceLineNo">879</span><a id="line.879">    setServer(serverNames, ports);</a>
+<span class="sourceLineNo">880</span><a id="line.880">  }</a>
+<span class="sourceLineNo">881</span><a id="line.881"></a>
+<span class="sourceLineNo">882</span><a id="line.882">  /**</a>
+<span class="sourceLineNo">883</span><a id="line.883">   * Sets server addresses and ports for client (without restarting client). The client will attempt</a>
+<span class="sourceLineNo">884</span><a id="line.884">   * to connect to each server in round robin fashion.</a>
+<span class="sourceLineNo">885</span><a id="line.885">   *</a>
+<span class="sourceLineNo">886</span><a id="line.886">   * @param serverNames array of server names</a>
+<span class="sourceLineNo">887</span><a id="line.887">   * @param ports array of port numbers (0=default)</a>
+<span class="sourceLineNo">888</span><a id="line.888">   */</a>
+<span class="sourceLineNo">889</span><a id="line.889">  public void setServer(String[] serverNames, int[] ports) {</a>
+<span class="sourceLineNo">890</span><a id="line.890">    NetworkTablesJNI.setServer(m_handle, serverNames, ports);</a>
+<span class="sourceLineNo">891</span><a id="line.891">  }</a>
+<span class="sourceLineNo">892</span><a id="line.892"></a>
+<span class="sourceLineNo">893</span><a id="line.893">  /**</a>
+<span class="sourceLineNo">894</span><a id="line.894">   * Sets server addresses and port for client (without restarting client). Changes the port to the</a>
+<span class="sourceLineNo">895</span><a id="line.895">   * default port. The client will attempt to connect to each server in round robin fashion.</a>
+<span class="sourceLineNo">896</span><a id="line.896">   *</a>
+<span class="sourceLineNo">897</span><a id="line.897">   * @param team team number</a>
+<span class="sourceLineNo">898</span><a id="line.898">   */</a>
+<span class="sourceLineNo">899</span><a id="line.899">  public void setServerTeam(int team) {</a>
+<span class="sourceLineNo">900</span><a id="line.900">    setServerTeam(team, 0);</a>
+<span class="sourceLineNo">901</span><a id="line.901">  }</a>
+<span class="sourceLineNo">902</span><a id="line.902"></a>
+<span class="sourceLineNo">903</span><a id="line.903">  /**</a>
+<span class="sourceLineNo">904</span><a id="line.904">   * Sets server addresses and port for client (without restarting client). Connects using commonly</a>
+<span class="sourceLineNo">905</span><a id="line.905">   * known robot addresses for the specified team.</a>
+<span class="sourceLineNo">906</span><a id="line.906">   *</a>
+<span class="sourceLineNo">907</span><a id="line.907">   * @param team team number</a>
+<span class="sourceLineNo">908</span><a id="line.908">   * @param port port to communicate over (0=default)</a>
+<span class="sourceLineNo">909</span><a id="line.909">   */</a>
+<span class="sourceLineNo">910</span><a id="line.910">  public void setServerTeam(int team, int port) {</a>
+<span class="sourceLineNo">911</span><a id="line.911">    NetworkTablesJNI.setServerTeam(m_handle, team, port);</a>
+<span class="sourceLineNo">912</span><a id="line.912">  }</a>
+<span class="sourceLineNo">913</span><a id="line.913"></a>
+<span class="sourceLineNo">914</span><a id="line.914">  /**</a>
+<span class="sourceLineNo">915</span><a id="line.915">   * Starts requesting server address from Driver Station. This connects to the Driver Station</a>
+<span class="sourceLineNo">916</span><a id="line.916">   * running on localhost to obtain the server IP address, and connects with the default port.</a>
+<span class="sourceLineNo">917</span><a id="line.917">   */</a>
+<span class="sourceLineNo">918</span><a id="line.918">  public void startDSClient() {</a>
+<span class="sourceLineNo">919</span><a id="line.919">    startDSClient(0);</a>
+<span class="sourceLineNo">920</span><a id="line.920">  }</a>
+<span class="sourceLineNo">921</span><a id="line.921"></a>
+<span class="sourceLineNo">922</span><a id="line.922">  /**</a>
+<span class="sourceLineNo">923</span><a id="line.923">   * Starts requesting server address from Driver Station. This connects to the Driver Station</a>
+<span class="sourceLineNo">924</span><a id="line.924">   * running on localhost to obtain the server IP address.</a>
+<span class="sourceLineNo">925</span><a id="line.925">   *</a>
+<span class="sourceLineNo">926</span><a id="line.926">   * @param port server port to use in combination with IP from DS (0=default)</a>
+<span class="sourceLineNo">927</span><a id="line.927">   */</a>
+<span class="sourceLineNo">928</span><a id="line.928">  public void startDSClient(int port) {</a>
+<span class="sourceLineNo">929</span><a id="line.929">    NetworkTablesJNI.startDSClient(m_handle, port);</a>
+<span class="sourceLineNo">930</span><a id="line.930">  }</a>
+<span class="sourceLineNo">931</span><a id="line.931"></a>
+<span class="sourceLineNo">932</span><a id="line.932">  /** Stops requesting server address from Driver Station. */</a>
+<span class="sourceLineNo">933</span><a id="line.933">  public void stopDSClient() {</a>
+<span class="sourceLineNo">934</span><a id="line.934">    NetworkTablesJNI.stopDSClient(m_handle);</a>
+<span class="sourceLineNo">935</span><a id="line.935">  }</a>
+<span class="sourceLineNo">936</span><a id="line.936"></a>
+<span class="sourceLineNo">937</span><a id="line.937">  /**</a>
+<span class="sourceLineNo">938</span><a id="line.938">   * Flushes all updated values immediately to the local client/server. This does not flush to the</a>
+<span class="sourceLineNo">939</span><a id="line.939">   * network.</a>
+<span class="sourceLineNo">940</span><a id="line.940">   */</a>
+<span class="sourceLineNo">941</span><a id="line.941">  public void flushLocal() {</a>
+<span class="sourceLineNo">942</span><a id="line.942">    NetworkTablesJNI.flushLocal(m_handle);</a>
+<span class="sourceLineNo">943</span><a id="line.943">  }</a>
+<span class="sourceLineNo">944</span><a id="line.944"></a>
+<span class="sourceLineNo">945</span><a id="line.945">  /**</a>
+<span class="sourceLineNo">946</span><a id="line.946">   * Flushes all updated values immediately to the network. Note: This is rate-limited to protect</a>
+<span class="sourceLineNo">947</span><a id="line.947">   * the network from flooding. This is primarily useful for synchronizing network updates with user</a>
+<span class="sourceLineNo">948</span><a id="line.948">   * code.</a>
+<span class="sourceLineNo">949</span><a id="line.949">   */</a>
+<span class="sourceLineNo">950</span><a id="line.950">  public void flush() {</a>
+<span class="sourceLineNo">951</span><a id="line.951">    NetworkTablesJNI.flush(m_handle);</a>
+<span class="sourceLineNo">952</span><a id="line.952">  }</a>
+<span class="sourceLineNo">953</span><a id="line.953"></a>
+<span class="sourceLineNo">954</span><a id="line.954">  /**</a>
+<span class="sourceLineNo">955</span><a id="line.955">   * Gets information on the currently established network connections. If operating as a client,</a>
+<span class="sourceLineNo">956</span><a id="line.956">   * this will return either zero or one values.</a>
+<span class="sourceLineNo">957</span><a id="line.957">   *</a>
+<span class="sourceLineNo">958</span><a id="line.958">   * @return array of connection information</a>
+<span class="sourceLineNo">959</span><a id="line.959">   */</a>
+<span class="sourceLineNo">960</span><a id="line.960">  public ConnectionInfo[] getConnections() {</a>
+<span class="sourceLineNo">961</span><a id="line.961">    return NetworkTablesJNI.getConnections(m_handle);</a>
+<span class="sourceLineNo">962</span><a id="line.962">  }</a>
+<span class="sourceLineNo">963</span><a id="line.963"></a>
+<span class="sourceLineNo">964</span><a id="line.964">  /**</a>
+<span class="sourceLineNo">965</span><a id="line.965">   * Return whether or not the instance is connected to another node.</a>
+<span class="sourceLineNo">966</span><a id="line.966">   *</a>
+<span class="sourceLineNo">967</span><a id="line.967">   * @return True if connected.</a>
+<span class="sourceLineNo">968</span><a id="line.968">   */</a>
+<span class="sourceLineNo">969</span><a id="line.969">  public boolean isConnected() {</a>
+<span class="sourceLineNo">970</span><a id="line.970">    return NetworkTablesJNI.isConnected(m_handle);</a>
+<span class="sourceLineNo">971</span><a id="line.971">  }</a>
+<span class="sourceLineNo">972</span><a id="line.972"></a>
+<span class="sourceLineNo">973</span><a id="line.973">  /**</a>
+<span class="sourceLineNo">974</span><a id="line.974">   * Starts logging entry changes to a DataLog.</a>
+<span class="sourceLineNo">975</span><a id="line.975">   *</a>
+<span class="sourceLineNo">976</span><a id="line.976">   * @param log data log object; lifetime must extend until StopEntryDataLog is called or the</a>
+<span class="sourceLineNo">977</span><a id="line.977">   *     instance is destroyed</a>
+<span class="sourceLineNo">978</span><a id="line.978">   * @param prefix only store entries with names that start with this prefix; the prefix is not</a>
+<span class="sourceLineNo">979</span><a id="line.979">   *     included in the data log entry name</a>
+<span class="sourceLineNo">980</span><a id="line.980">   * @param logPrefix prefix to add to data log entry names</a>
+<span class="sourceLineNo">981</span><a id="line.981">   * @return Data logger handle</a>
+<span class="sourceLineNo">982</span><a id="line.982">   */</a>
+<span class="sourceLineNo">983</span><a id="line.983">  public int startEntryDataLog(DataLog log, String prefix, String logPrefix) {</a>
+<span class="sourceLineNo">984</span><a id="line.984">    return NetworkTablesJNI.startEntryDataLog(m_handle, log, prefix, logPrefix);</a>
+<span class="sourceLineNo">985</span><a id="line.985">  }</a>
+<span class="sourceLineNo">986</span><a id="line.986"></a>
+<span class="sourceLineNo">987</span><a id="line.987">  /**</a>
+<span class="sourceLineNo">988</span><a id="line.988">   * Stops logging entry changes to a DataLog.</a>
+<span class="sourceLineNo">989</span><a id="line.989">   *</a>
+<span class="sourceLineNo">990</span><a id="line.990">   * @param logger data logger handle</a>
+<span class="sourceLineNo">991</span><a id="line.991">   */</a>
+<span class="sourceLineNo">992</span><a id="line.992">  public static void stopEntryDataLog(int logger) {</a>
+<span class="sourceLineNo">993</span><a id="line.993">    NetworkTablesJNI.stopEntryDataLog(logger);</a>
+<span class="sourceLineNo">994</span><a id="line.994">  }</a>
+<span class="sourceLineNo">995</span><a id="line.995"></a>
+<span class="sourceLineNo">996</span><a id="line.996">  /**</a>
+<span class="sourceLineNo">997</span><a id="line.997">   * Starts logging connection changes to a DataLog.</a>
+<span class="sourceLineNo">998</span><a id="line.998">   *</a>
+<span class="sourceLineNo">999</span><a id="line.999">   * @param log data log object; lifetime must extend until StopConnectionDataLog is called or the</a>
+<span class="sourceLineNo">1000</span><a id="line.1000">   *     instance is destroyed</a>
+<span class="sourceLineNo">1001</span><a id="line.1001">   * @param name data log entry name</a>
+<span class="sourceLineNo">1002</span><a id="line.1002">   * @return Data logger handle</a>
+<span class="sourceLineNo">1003</span><a id="line.1003">   */</a>
+<span class="sourceLineNo">1004</span><a id="line.1004">  public int startConnectionDataLog(DataLog log, String name) {</a>
+<span class="sourceLineNo">1005</span><a id="line.1005">    return NetworkTablesJNI.startConnectionDataLog(m_handle, log, name);</a>
+<span class="sourceLineNo">1006</span><a id="line.1006">  }</a>
+<span class="sourceLineNo">1007</span><a id="line.1007"></a>
+<span class="sourceLineNo">1008</span><a id="line.1008">  /**</a>
+<span class="sourceLineNo">1009</span><a id="line.1009">   * Stops logging connection changes to a DataLog.</a>
+<span class="sourceLineNo">1010</span><a id="line.1010">   *</a>
+<span class="sourceLineNo">1011</span><a id="line.1011">   * @param logger data logger handle</a>
+<span class="sourceLineNo">1012</span><a id="line.1012">   */</a>
+<span class="sourceLineNo">1013</span><a id="line.1013">  public static void stopConnectionDataLog(int logger) {</a>
+<span class="sourceLineNo">1014</span><a id="line.1014">    NetworkTablesJNI.stopConnectionDataLog(logger);</a>
+<span class="sourceLineNo">1015</span><a id="line.1015">  }</a>
+<span class="sourceLineNo">1016</span><a id="line.1016"></a>
+<span class="sourceLineNo">1017</span><a id="line.1017">  private final ReentrantLock m_loggerLock = new ReentrantLock();</a>
+<span class="sourceLineNo">1018</span><a id="line.1018">  private final Map&lt;Integer, Consumer&lt;LogMessage&gt;&gt; m_loggers = new HashMap&lt;&gt;();</a>
+<span class="sourceLineNo">1019</span><a id="line.1019">  private int m_loggerPoller;</a>
+<span class="sourceLineNo">1020</span><a id="line.1020"></a>
+<span class="sourceLineNo">1021</span><a id="line.1021">  @SuppressWarnings("PMD.AvoidCatchingThrowable")</a>
+<span class="sourceLineNo">1022</span><a id="line.1022">  private void startLogThread() {</a>
+<span class="sourceLineNo">1023</span><a id="line.1023">    var loggerThread =</a>
+<span class="sourceLineNo">1024</span><a id="line.1024">        new Thread(</a>
+<span class="sourceLineNo">1025</span><a id="line.1025">            () -&gt; {</a>
+<span class="sourceLineNo">1026</span><a id="line.1026">              boolean wasInterrupted = false;</a>
+<span class="sourceLineNo">1027</span><a id="line.1027">              while (!Thread.interrupted()) {</a>
+<span class="sourceLineNo">1028</span><a id="line.1028">                try {</a>
+<span class="sourceLineNo">1029</span><a id="line.1029">                  WPIUtilJNI.waitForObject(m_loggerPoller);</a>
+<span class="sourceLineNo">1030</span><a id="line.1030">                } catch (InterruptedException ex) {</a>
+<span class="sourceLineNo">1031</span><a id="line.1031">                  Thread.currentThread().interrupt();</a>
+<span class="sourceLineNo">1032</span><a id="line.1032">                  // don't try to destroy poller, as its handle is likely no longer valid</a>
+<span class="sourceLineNo">1033</span><a id="line.1033">                  wasInterrupted = true;</a>
+<span class="sourceLineNo">1034</span><a id="line.1034">                  break;</a>
+<span class="sourceLineNo">1035</span><a id="line.1035">                }</a>
+<span class="sourceLineNo">1036</span><a id="line.1036">                LogMessage[] events = NetworkTablesJNI.readLoggerQueue(this, m_loggerPoller);</a>
+<span class="sourceLineNo">1037</span><a id="line.1037">                for (LogMessage event : events) {</a>
+<span class="sourceLineNo">1038</span><a id="line.1038">                  Consumer&lt;LogMessage&gt; logger;</a>
+<span class="sourceLineNo">1039</span><a id="line.1039">                  m_loggerLock.lock();</a>
+<span class="sourceLineNo">1040</span><a id="line.1040">                  try {</a>
+<span class="sourceLineNo">1041</span><a id="line.1041">                    logger = m_loggers.get(event.logger);</a>
+<span class="sourceLineNo">1042</span><a id="line.1042">                  } finally {</a>
+<span class="sourceLineNo">1043</span><a id="line.1043">                    m_loggerLock.unlock();</a>
+<span class="sourceLineNo">1044</span><a id="line.1044">                  }</a>
+<span class="sourceLineNo">1045</span><a id="line.1045">                  if (logger != null) {</a>
+<span class="sourceLineNo">1046</span><a id="line.1046">                    try {</a>
+<span class="sourceLineNo">1047</span><a id="line.1047">                      logger.accept(event);</a>
+<span class="sourceLineNo">1048</span><a id="line.1048">                    } catch (Throwable throwable) {</a>
+<span class="sourceLineNo">1049</span><a id="line.1049">                      System.err.println(</a>
+<span class="sourceLineNo">1050</span><a id="line.1050">                          "Unhandled exception during logger callback: " + throwable.toString());</a>
+<span class="sourceLineNo">1051</span><a id="line.1051">                      throwable.printStackTrace();</a>
+<span class="sourceLineNo">1052</span><a id="line.1052">                    }</a>
+<span class="sourceLineNo">1053</span><a id="line.1053">                  }</a>
+<span class="sourceLineNo">1054</span><a id="line.1054">                }</a>
+<span class="sourceLineNo">1055</span><a id="line.1055">              }</a>
+<span class="sourceLineNo">1056</span><a id="line.1056">              m_loggerLock.lock();</a>
+<span class="sourceLineNo">1057</span><a id="line.1057">              try {</a>
+<span class="sourceLineNo">1058</span><a id="line.1058">                if (!wasInterrupted) {</a>
+<span class="sourceLineNo">1059</span><a id="line.1059">                  NetworkTablesJNI.destroyLoggerPoller(m_loggerPoller);</a>
+<span class="sourceLineNo">1060</span><a id="line.1060">                }</a>
+<span class="sourceLineNo">1061</span><a id="line.1061">              } finally {</a>
+<span class="sourceLineNo">1062</span><a id="line.1062">                m_loggerLock.unlock();</a>
+<span class="sourceLineNo">1063</span><a id="line.1063">              }</a>
+<span class="sourceLineNo">1064</span><a id="line.1064">            },</a>
+<span class="sourceLineNo">1065</span><a id="line.1065">            "NTLogger");</a>
+<span class="sourceLineNo">1066</span><a id="line.1066">    loggerThread.setDaemon(true);</a>
+<span class="sourceLineNo">1067</span><a id="line.1067">    loggerThread.start();</a>
+<span class="sourceLineNo">1068</span><a id="line.1068">  }</a>
+<span class="sourceLineNo">1069</span><a id="line.1069"></a>
+<span class="sourceLineNo">1070</span><a id="line.1070">  /**</a>
+<span class="sourceLineNo">1071</span><a id="line.1071">   * Add logger callback function. By default, log messages are sent to stderr; this function sends</a>
+<span class="sourceLineNo">1072</span><a id="line.1072">   * log messages with the specified levels to the provided callback function instead. The callback</a>
+<span class="sourceLineNo">1073</span><a id="line.1073">   * function will only be called for log messages with level greater than or equal to minLevel and</a>
+<span class="sourceLineNo">1074</span><a id="line.1074">   * less than or equal to maxLevel; messages outside this range will be silently ignored.</a>
+<span class="sourceLineNo">1075</span><a id="line.1075">   *</a>
+<span class="sourceLineNo">1076</span><a id="line.1076">   * @param func log callback function</a>
+<span class="sourceLineNo">1077</span><a id="line.1077">   * @param minLevel minimum log level</a>
+<span class="sourceLineNo">1078</span><a id="line.1078">   * @param maxLevel maximum log level</a>
+<span class="sourceLineNo">1079</span><a id="line.1079">   * @return Logger handle</a>
+<span class="sourceLineNo">1080</span><a id="line.1080">   */</a>
+<span class="sourceLineNo">1081</span><a id="line.1081">  public int addLogger(Consumer&lt;LogMessage&gt; func, int minLevel, int maxLevel) {</a>
+<span class="sourceLineNo">1082</span><a id="line.1082">    m_loggerLock.lock();</a>
+<span class="sourceLineNo">1083</span><a id="line.1083">    try {</a>
+<span class="sourceLineNo">1084</span><a id="line.1084">      if (m_loggerPoller == 0) {</a>
+<span class="sourceLineNo">1085</span><a id="line.1085">        m_loggerPoller = NetworkTablesJNI.createLoggerPoller(m_handle);</a>
+<span class="sourceLineNo">1086</span><a id="line.1086">        startLogThread();</a>
+<span class="sourceLineNo">1087</span><a id="line.1087">      }</a>
+<span class="sourceLineNo">1088</span><a id="line.1088">      int handle = NetworkTablesJNI.addPolledLogger(m_loggerPoller, minLevel, maxLevel);</a>
+<span class="sourceLineNo">1089</span><a id="line.1089">      m_loggers.put(handle, func);</a>
+<span class="sourceLineNo">1090</span><a id="line.1090">      return handle;</a>
+<span class="sourceLineNo">1091</span><a id="line.1091">    } finally {</a>
+<span class="sourceLineNo">1092</span><a id="line.1092">      m_loggerLock.unlock();</a>
+<span class="sourceLineNo">1093</span><a id="line.1093">    }</a>
+<span class="sourceLineNo">1094</span><a id="line.1094">  }</a>
+<span class="sourceLineNo">1095</span><a id="line.1095"></a>
+<span class="sourceLineNo">1096</span><a id="line.1096">  /**</a>
+<span class="sourceLineNo">1097</span><a id="line.1097">   * Remove a logger.</a>
+<span class="sourceLineNo">1098</span><a id="line.1098">   *</a>
+<span class="sourceLineNo">1099</span><a id="line.1099">   * @param logger Logger handle to remove</a>
+<span class="sourceLineNo">1100</span><a id="line.1100">   */</a>
+<span class="sourceLineNo">1101</span><a id="line.1101">  public void removeLogger(int logger) {</a>
+<span class="sourceLineNo">1102</span><a id="line.1102">    m_loggerLock.lock();</a>
+<span class="sourceLineNo">1103</span><a id="line.1103">    try {</a>
+<span class="sourceLineNo">1104</span><a id="line.1104">      m_loggers.remove(logger);</a>
+<span class="sourceLineNo">1105</span><a id="line.1105">    } finally {</a>
+<span class="sourceLineNo">1106</span><a id="line.1106">      m_loggerLock.unlock();</a>
+<span class="sourceLineNo">1107</span><a id="line.1107">    }</a>
+<span class="sourceLineNo">1108</span><a id="line.1108">    NetworkTablesJNI.removeLogger(logger);</a>
+<span class="sourceLineNo">1109</span><a id="line.1109">  }</a>
+<span class="sourceLineNo">1110</span><a id="line.1110"></a>
+<span class="sourceLineNo">1111</span><a id="line.1111">  @Override</a>
+<span class="sourceLineNo">1112</span><a id="line.1112">  public boolean equals(Object other) {</a>
+<span class="sourceLineNo">1113</span><a id="line.1113">    if (other == this) {</a>
+<span class="sourceLineNo">1114</span><a id="line.1114">      return true;</a>
+<span class="sourceLineNo">1115</span><a id="line.1115">    }</a>
+<span class="sourceLineNo">1116</span><a id="line.1116">    if (!(other instanceof NetworkTableInstance)) {</a>
+<span class="sourceLineNo">1117</span><a id="line.1117">      return false;</a>
+<span class="sourceLineNo">1118</span><a id="line.1118">    }</a>
+<span class="sourceLineNo">1119</span><a id="line.1119"></a>
+<span class="sourceLineNo">1120</span><a id="line.1120">    return m_handle == ((NetworkTableInstance) other).m_handle;</a>
+<span class="sourceLineNo">1121</span><a id="line.1121">  }</a>
+<span class="sourceLineNo">1122</span><a id="line.1122"></a>
+<span class="sourceLineNo">1123</span><a id="line.1123">  @Override</a>
+<span class="sourceLineNo">1124</span><a id="line.1124">  public int hashCode() {</a>
+<span class="sourceLineNo">1125</span><a id="line.1125">    return m_handle;</a>
+<span class="sourceLineNo">1126</span><a id="line.1126">  }</a>
+<span class="sourceLineNo">1127</span><a id="line.1127"></a>
+<span class="sourceLineNo">1128</span><a id="line.1128">  private boolean m_owned;</a>
+<span class="sourceLineNo">1129</span><a id="line.1129">  private final int m_handle;</a>
+<span class="sourceLineNo">1130</span><a id="line.1130">}</a>
 
 
 
