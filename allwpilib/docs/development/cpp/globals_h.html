@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-12-gc195b4f</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
    </div>
   </td>
  </tr>
@@ -225,6 +225,7 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <li>HAL_GetAccumulatorOutput()&#160;:&#160;<a class="el" href="group__hal__analogaccumulator.html#ga8c5a1fd3000f7f27d343919db5ddc507">AnalogAccumulator.h</a></li>
 <li>HAL_GetAccumulatorValue()&#160;:&#160;<a class="el" href="group__hal__analogaccumulator.html#ga9a058b98f3c06ea3bc2a828d1ea74967">AnalogAccumulator.h</a></li>
 <li>HAL_GetAllianceStation()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga10e5c8ea5a1b890126167e9d352e9e0a">DriverStation.h</a></li>
+<li>HAL_GetAllJoystickData()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#gae27771cae8b86b2af41ff5fbba206095">DriverStation.h</a></li>
 <li>HAL_GetAnalogAverageBits()&#160;:&#160;<a class="el" href="group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452">AnalogInput.h</a></li>
 <li>HAL_GetAnalogAverageValue()&#160;:&#160;<a class="el" href="group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb">AnalogInput.h</a></li>
 <li>HAL_GetAnalogAverageVoltage()&#160;:&#160;<a class="el" href="group__hal__analoginput.html#ga859f6b40ac680e70ae338ce8be093e5d">AnalogInput.h</a></li>
@@ -341,6 +342,7 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <li>HAL_GetNumREVPDHModules()&#160;:&#160;<a class="el" href="group__hal__ports.html#gafca4607854bbe0c598d7e59d22e625ed">Ports.h</a></li>
 <li>HAL_GetNumREVPHChannels()&#160;:&#160;<a class="el" href="group__hal__ports.html#gacb1a057d0c6cbbfd1c7329b13bd1d4ea">Ports.h</a></li>
 <li>HAL_GetNumREVPHModules()&#160;:&#160;<a class="el" href="group__hal__ports.html#ga87f828d3d50de55f38f12e66ee1681af">Ports.h</a></li>
+<li>HAL_GetOutputsEnabled()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#gae14d8258ee5d77a5d3ed7e39547bb6f7">DriverStation.h</a></li>
 <li>HAL_GetPort()&#160;:&#160;<a class="el" href="group__hal__capi.html#ga1a4017232c3d7f86712544dfdd9d5dca">HALBase.h</a></li>
 <li>HAL_GetPortWithModule()&#160;:&#160;<a class="el" href="group__hal__capi.html#gae581c7334cf37b57b6b12d3e9113ab74">HALBase.h</a></li>
 <li>HAL_GetPowerDistributionAllChannelCurrents()&#160;:&#160;<a class="el" href="group__hal__pd.html#ga30c5582633fa066ff37851c6c25effbe">PowerDistribution.h</a></li>
@@ -425,7 +427,6 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <li>HAL_InitializeCTREPCM()&#160;:&#160;<a class="el" href="group__hal__ctre__pcm.html#ga7e7c502c11bceeaa3d4388cc560a2e33">CTREPCM.h</a></li>
 <li>HAL_InitializeDIOPort()&#160;:&#160;<a class="el" href="group__hal__dio.html#ga5c42d6d3994fffcc1be089d30cfc2bfc">DIO.h</a></li>
 <li>HAL_InitializeDMA()&#160;:&#160;<a class="el" href="group__hal__dma.html#gafedcea65ab948106f8f5b9461585ff3a">DMA.h</a></li>
-<li>HAL_InitializeDriverStation()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga1cbbdda947c9737a78cefff79524dac2">DriverStation.h</a></li>
 <li>HAL_InitializeDutyCycle()&#160;:&#160;<a class="el" href="group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a">DutyCycle.h</a></li>
 <li>HAL_InitializeEncoder()&#160;:&#160;<a class="el" href="group__hal__encoder.html#ga14a91a7307c5e25108f12fe90199f745">Encoder.h</a></li>
 <li>HAL_InitializeI2C()&#160;:&#160;<a class="el" href="group__hal__i2c.html#ga59ae1919da9b0b9038bba926dde92ea2">I2C.h</a></li>
@@ -450,7 +451,6 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <li>HAL_IO_CONFIG_DATA_SIZE&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga1b4d9a9753e756716998aaef03d0d3dd">DriverStationTypes.h</a></li>
 <li>HAL_IsAccumulatorChannel()&#160;:&#160;<a class="el" href="group__hal__analogaccumulator.html#gab81e29001988d21132fc721327705b6c">AnalogAccumulator.h</a></li>
 <li>HAL_IsAnyPulsing()&#160;:&#160;<a class="el" href="group__hal__dio.html#ga4fac43cb414b237dbe8a82e7dedd9693">DIO.h</a></li>
-<li>HAL_IsNewControlData()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#gae9df92ccf6ed4ea7f0deb4f075c07248">DriverStation.h</a></li>
 <li>HAL_IsPulsing()&#160;:&#160;<a class="el" href="group__hal__dio.html#ga9bab8b1fed969b14463124be0e8137d8">DIO.h</a></li>
 <li>HAL_JoystickAxes&#160;:&#160;<a class="el" href="group__hal__driverstation.html#gaec443640c75efa69cdc1fb295628152a">DriverStationTypes.h</a></li>
 <li>HAL_JoystickAxesCallback&#160;:&#160;<a class="el" href="_driver_station_data_8h.html#ad968d033d051dd2f2d1e2b4b311c7a69">DriverStationData.h</a></li>
@@ -490,6 +490,7 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <li>HAL_PDPHandle&#160;:&#160;<a class="el" href="group__hal__types.html#ga4185de6cf2dfb194071f66b4aa8628cc">Types.h</a></li>
 <li>HAL_PortHandle&#160;:&#160;<a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">Types.h</a></li>
 <li>HAL_PowerDistributionHandle&#160;:&#160;<a class="el" href="group__hal__types.html#gac7b99b6a46682583de1801f5c2f67e7c">Types.h</a></li>
+<li>HAL_ProvideNewDataEventHandle()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga5aee9636007e6945eed9345c476dff8f">DriverStation.h</a></li>
 <li>HAL_Pulse()&#160;:&#160;<a class="el" href="group__hal__dio.html#ga73f69d4f0a01e6304be9386b571b2bc7">DIO.h</a></li>
 <li>HAL_PulseMultiple()&#160;:&#160;<a class="el" href="group__hal__dio.html#ga4cfd264c1dfecb39d4967c842b9c7f8a">DIO.h</a></li>
 <li>HAL_PWM_SCALE_ERROR&#160;:&#160;<a class="el" href="group__hal__errors.html#ga7e1d4238df93d7dc5ff817b43dd9aa12">Errors.h</a></li>
@@ -505,11 +506,12 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <li>HAL_ReadSerial()&#160;:&#160;<a class="el" href="group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84">SerialPort.h</a></li>
 <li>HAL_ReadSPI()&#160;:&#160;<a class="el" href="group__hal__spi.html#ga2ac079dcc211039fccff72ac75e41f0a">SPI.h</a></li>
 <li>HAL_ReadSPIAutoReceivedData()&#160;:&#160;<a class="el" href="group__hal__spi.html#ga2dcc3ad46c3a053d111f5816a0c889c8">SPI.h</a></li>
+<li>HAL_RefreshDSData()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#gaae9195f7492c0219764b6d0611ceb1a8">DriverStation.h</a></li>
 <li>HAL_RegisterExtension()&#160;:&#160;<a class="el" href="group__hal__extensions.html#ga6ce4155f2dd5888c57dafecb43ad299a">Extensions.h</a></li>
 <li>HAL_RegisterExtensionListener()&#160;:&#160;<a class="el" href="group__hal__extensions.html#ga3aa76848cec1882598431fe098f3cbbf">Extensions.h</a></li>
 <li>HAL_RelayHandle&#160;:&#160;<a class="el" href="group__hal__types.html#gaec8309df99bc5b4a5b15a71804fef9d5">Types.h</a></li>
-<li>HAL_ReleaseDSMutex()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#gaace5cec2dc93674fe0149b2e50cff796">DriverStation.h</a></li>
 <li>HAL_ReleaseWaitingInterrupt()&#160;:&#160;<a class="el" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">Interrupts.h</a></li>
+<li>HAL_RemoveNewDataEventHandle()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#gac5f3772e7745b01a4258c289ca384b7b">DriverStation.h</a></li>
 <li>HAL_Report()&#160;:&#160;<a class="el" href="_f_r_c_usage_reporting_8h.html#ace761fe97bad7674bd1cf9994a668074">FRCUsageReporting.h</a></li>
 <li>HAL_RequestInterrupts()&#160;:&#160;<a class="el" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">Interrupts.h</a></li>
 <li>HAL_ResetAccumulator()&#160;:&#160;<a class="el" href="group__hal__analogaccumulator.html#gaf81d827fb12cada06a52ce6978455354">AnalogAccumulator.h</a></li>
@@ -678,8 +680,6 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <li>HAL_USE_LAST_ERROR&#160;:&#160;<a class="el" href="group__hal__errors.html#gab1ec254152790fcb8d84cb626ede8836">Errors.h</a></li>
 <li>HAL_USE_LAST_ERROR_MESSAGE&#160;:&#160;<a class="el" href="group__hal__errors.html#ga741a8f68a4c3d6d9434d4f5019b9e0d8">Errors.h</a></li>
 <li>HAL_USER_STATUS_DATA_SIZE&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga829f6712cd9359aa05006b44d2a5660f">DriverStationTypes.h</a></li>
-<li>HAL_WaitForDSData()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga738d3ae3837710acbfaa0c46fd82412e">DriverStation.h</a></li>
-<li>HAL_WaitForDSDataTimeout()&#160;:&#160;<a class="el" href="group__hal__driverstation.html#ga14a875e969edf0b14cfd47b4bf5520f7">DriverStation.h</a></li>
 <li>HAL_WaitForInterrupt()&#160;:&#160;<a class="el" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">Interrupts.h</a></li>
 <li>HAL_WaitForMultipleInterrupts()&#160;:&#160;<a class="el" href="group__hal__interrupts.html#gac57843b0ae03b0fee990cbb1a759ed60">Interrupts.h</a></li>
 <li>HAL_WaitForNotifierAlarm()&#160;:&#160;<a class="el" href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">Notifier.h</a></li>
@@ -1317,7 +1317,7 @@ $(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 22 2022 02:58:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 05:07:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

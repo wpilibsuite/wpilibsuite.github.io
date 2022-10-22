@@ -10,6 +10,7 @@ var namespacefrc =
     [ "impl", "namespacefrc_1_1impl.html", [
       [ "RunRobot", "namespacefrc_1_1impl.html#ab27ebebfd151bdd128c4876ca9f195f6", null ]
     ] ],
+    [ "internal", "namespacefrc_1_1internal.html", "namespacefrc_1_1internal" ],
     [ "sim", "namespacefrc_1_1sim.html", "namespacefrc_1_1sim" ],
     [ "warn", "namespacefrc_1_1warn.html", null ],
     [ "Accelerometer", "classfrc_1_1_accelerometer.html", "classfrc_1_1_accelerometer" ],

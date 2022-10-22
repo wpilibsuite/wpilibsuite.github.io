@@ -2003,6 +2003,9 @@ var annotated_dup =
         [ "RecordingController", "classfrc_1_1detail_1_1_recording_controller.html", "classfrc_1_1detail_1_1_recording_controller" ],
         [ "ShuffleboardInstance", "classfrc_1_1detail_1_1_shuffleboard_instance.html", "classfrc_1_1detail_1_1_shuffleboard_instance" ]
       ] ],
+      [ "internal", "namespacefrc_1_1internal.html", [
+        [ "DriverStationModeThread", "classfrc_1_1internal_1_1_driver_station_mode_thread.html", "classfrc_1_1internal_1_1_driver_station_mode_thread" ]
+      ] ],
       [ "sim", "namespacefrc_1_1sim.html", [
         [ "AddressableLEDSim", "classfrc_1_1sim_1_1_addressable_l_e_d_sim.html", "classfrc_1_1sim_1_1_addressable_l_e_d_sim" ],
         [ "ADIS16448_IMUSim", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim.html", "classfrc_1_1sim_1_1_a_d_i_s16448___i_m_u_sim" ],
@@ -2864,6 +2867,7 @@ var annotated_dup =
       [ "disjunction< B1 >", "structwpi_1_1disjunction_3_01_b1_01_4.html", null ],
       [ "disjunction< B1, Bn... >", "structwpi_1_1disjunction_3_01_b1_00_01_bn_8_8_8_01_4.html", null ],
       [ "empty_array_t", "structwpi_1_1empty__array__t.html", null ],
+      [ "EventVector", "structwpi_1_1_event_vector.html", "structwpi_1_1_event_vector" ],
       [ "FirstIndexOfType", "structwpi_1_1_first_index_of_type.html", null ],
       [ "FirstIndexOfType< T, T, Us... >", "structwpi_1_1_first_index_of_type_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html", null ],
       [ "FirstIndexOfType< T, U, Us... >", "structwpi_1_1_first_index_of_type_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html", null ],

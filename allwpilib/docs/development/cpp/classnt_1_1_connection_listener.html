@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-12-gc195b4f</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
    </div>
   </td>
  </tr>
@@ -128,7 +128,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Connection listener. </p>
-<p >This calls back to a callback function when a connection change occurs. </p>
+<p >This calls back to a callback function when a connection change occurs. The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af6ea3f429e27a4086f73fd90af1a739a" name="af6ea3f429e27a4086f73fd90af1a739a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6ea3f429e27a4086f73fd90af1a739a">&#9670;&nbsp;</a></span>ConnectionListener() <span class="overload">[1/4]</span></h2>
@@ -400,7 +400,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_connection_listener.html">ConnectionListener</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 02:58:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 05:07:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

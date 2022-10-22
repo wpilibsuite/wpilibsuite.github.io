@@ -961,6 +961,7 @@ var hierarchy =
     [ "Eigen::internal::DoublePacket< Packet >", "struct_eigen_1_1internal_1_1_double_packet.html", null ],
     [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1_double_solenoid_sim.html", null ],
     [ "frc::DriverStation", "classfrc_1_1_driver_station.html", null ],
+    [ "frc::internal::DriverStationModeThread", "classfrc_1_1internal_1_1_driver_station_mode_thread.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1_driver_station_sim.html", null ],
     [ "frc::DSControlWord", "classfrc_1_1_d_s_control_word.html", null ],
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1_duty_cycle_encoder_sim.html", null ],
@@ -1460,6 +1461,7 @@ var hierarchy =
       [ "Eigen::internal::evaluator_traits< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_householder_sequence_3_01_vectors_type_00_01_5d5adf52607be62fe2f73ff93bacbb36.html", null ]
     ] ],
     [ "frc::EventLoop", "classfrc_1_1_event_loop.html", null ],
+    [ "wpi::EventVector", "structwpi_1_1_event_vector.html", null ],
     [ "std::exception", null, [
       [ "wpi::detail::exception", "classwpi_1_1detail_1_1exception.html", [
         [ "wpi::detail::invalid_iterator", "classwpi_1_1detail_1_1invalid__iterator.html", null ],
@@ -3840,6 +3842,13 @@ var hierarchy =
           ] ]
         ] ]
       ] ],
+      [ "wpi::SmallVectorTemplateCommon< WPI_EventHandle >", "classwpi_1_1_small_vector_template_common.html", [
+        [ "wpi::SmallVectorTemplateBase< WPI_EventHandle >", "classwpi_1_1_small_vector_template_base.html", [
+          [ "wpi::SmallVectorImpl< WPI_EventHandle >", "classwpi_1_1_small_vector_impl.html", [
+            [ "wpi::SmallVector< WPI_EventHandle, 4 >", "classwpi_1_1_small_vector.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "wpi::SmallVectorTemplateCommon< uint8_t >", "classwpi_1_1_small_vector_template_common.html", [
         [ "wpi::SmallVectorTemplateBase< uint8_t >", "classwpi_1_1_small_vector_template_base.html", [
           [ "wpi::SmallVectorImpl< uint8_t >", "classwpi_1_1_small_vector_impl.html", [
@@ -3897,6 +3906,9 @@ var hierarchy =
     ] ],
     [ "wpi::SmallVectorStorage< wpi::SmallString< 16 >, N >", "structwpi_1_1_small_vector_storage.html", [
       [ "wpi::SmallVector< wpi::SmallString< 16 >, 4 >", "classwpi_1_1_small_vector.html", null ]
+    ] ],
+    [ "wpi::SmallVectorStorage< WPI_EventHandle, N >", "structwpi_1_1_small_vector_storage.html", [
+      [ "wpi::SmallVector< WPI_EventHandle, 4 >", "classwpi_1_1_small_vector.html", null ]
     ] ],
     [ "Eigen::internal::smart_copy_helper< T, UseMemcpy >", "struct_eigen_1_1internal_1_1smart__copy__helper.html", null ],
     [ "Eigen::internal::smart_copy_helper< T, false >", "struct_eigen_1_1internal_1_1smart__copy__helper_3_01_t_00_01false_01_4.html", null ],

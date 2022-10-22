@@ -10,7 +10,6 @@ var classfrc_1_1_robot_base =
     [ "IsAutonomousEnabled", "classfrc_1_1_robot_base.html#aad77f461c170076a2f2f5477f1d62354", null ],
     [ "IsDisabled", "classfrc_1_1_robot_base.html#ade497eb4c64bf1f8c8b5946a9e7d5ca6", null ],
     [ "IsEnabled", "classfrc_1_1_robot_base.html#aae83dcda11146ce65a0825cd38001d58", null ],
-    [ "IsNewDataAvailable", "classfrc_1_1_robot_base.html#a46b5a3e9546fe7b6ca2b5b19e94d870e", null ],
     [ "IsReal", "classfrc_1_1_robot_base.html#a2c1dab1c96a32013a136e38030097abd", null ],
     [ "IsSimulation", "classfrc_1_1_robot_base.html#a307a770aa58d89e1f1cc8e7970cceb84", null ],
     [ "IsTeleop", "classfrc_1_1_robot_base.html#abb315455cf2315e223523882454ca1c7", null ],
