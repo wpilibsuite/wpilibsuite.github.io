@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-9-g3e5bfff</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-11-g8f2e34c</span>
    </div>
   </td>
  </tr>
@@ -329,17 +329,13 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_gyroOffset;</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_previousAngle;</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Dim&gt;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keyword">static</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> StdDevMatrixToArray(</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Dim&gt;</a>&amp; stdDevs);</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;5&gt;</a> <a class="code hl_function" href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">F</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;5&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a>&amp; u);</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;5&gt;</a> FillStateVector(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose,</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                                    units::meter_t leftDistance,</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>                                    units::meter_t rightDistance);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>};</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;5&gt;</a> <a class="code hl_function" href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">F</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;5&gt;</a>&amp; x, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;3&gt;</a>&amp; u);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;5&gt;</a> FillStateVector(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose,</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                                    units::meter_t leftDistance,</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>                                    units::meter_t rightDistance);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>};</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_differential_drive_wheel_speeds_8h_html"><div class="ttname"><a href="_differential_drive_wheel_speeds_8h.html">DifferentialDriveWheelSpeeds.h</a></div></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="a_pose2d_8h_html"><div class="ttname"><a href="_pose2d_8h.html">Pose2d.h</a></div></div>
@@ -376,7 +372,7 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_differential_drive_pose_estimator_8h.html">DifferentialDrivePoseEstimator.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 02:01:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Oct 22 2022 02:26:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
