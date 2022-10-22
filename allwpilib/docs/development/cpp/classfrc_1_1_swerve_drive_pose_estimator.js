@@ -1,6 +1,6 @@
 var classfrc_1_1_swerve_drive_pose_estimator =
 [
-    [ "SwerveDrivePoseEstimator", "classfrc_1_1_swerve_drive_pose_estimator.html#a31c93b63c5349dce5053414a6c30dccb", null ],
+    [ "SwerveDrivePoseEstimator", "classfrc_1_1_swerve_drive_pose_estimator.html#ab79e9a2228d4df83ad4fe630d96e096e", null ],
     [ "AddVisionMeasurement", "classfrc_1_1_swerve_drive_pose_estimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7", null ],
     [ "AddVisionMeasurement", "classfrc_1_1_swerve_drive_pose_estimator.html#a0b964991242b8c03fc9010cc8001b5b8", null ],
     [ "GetEstimatedPosition", "classfrc_1_1_swerve_drive_pose_estimator.html#afa43500d257dd6e01c810ffd6992e2a9", null ],
