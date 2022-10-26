@@ -20,125 +20,149 @@
 <span class="sourceLineNo">008</span><a id="line.8">import edu.wpi.first.math.MathUsageId;</a>
 <span class="sourceLineNo">009</span><a id="line.9">import edu.wpi.first.math.geometry.Pose2d;</a>
 <span class="sourceLineNo">010</span><a id="line.10">import edu.wpi.first.math.geometry.Rotation2d;</a>
-<span class="sourceLineNo">011</span><a id="line.11">import edu.wpi.first.math.geometry.Twist2d;</a>
-<span class="sourceLineNo">012</span><a id="line.12">import edu.wpi.first.util.WPIUtilJNI;</a>
-<span class="sourceLineNo">013</span><a id="line.13"></a>
-<span class="sourceLineNo">014</span><a id="line.14">/**</a>
-<span class="sourceLineNo">015</span><a id="line.15"> * Class for swerve drive odometry. Odometry allows you to track the robot's position on the field</a>
-<span class="sourceLineNo">016</span><a id="line.16"> * over a course of a match using readings from your swerve drive encoders and swerve azimuth</a>
-<span class="sourceLineNo">017</span><a id="line.17"> * encoders.</a>
-<span class="sourceLineNo">018</span><a id="line.18"> *</a>
-<span class="sourceLineNo">019</span><a id="line.19"> * &lt;p&gt;Teams can use odometry during the autonomous period for complex tasks like path following.</a>
-<span class="sourceLineNo">020</span><a id="line.20"> * Furthermore, odometry can be used for latency compensation when using computer-vision systems.</a>
-<span class="sourceLineNo">021</span><a id="line.21"> */</a>
-<span class="sourceLineNo">022</span><a id="line.22">public class SwerveDriveOdometry {</a>
-<span class="sourceLineNo">023</span><a id="line.23">  private final SwerveDriveKinematics m_kinematics;</a>
-<span class="sourceLineNo">024</span><a id="line.24">  private Pose2d m_poseMeters;</a>
-<span class="sourceLineNo">025</span><a id="line.25">  private double m_prevTimeSeconds = -1;</a>
-<span class="sourceLineNo">026</span><a id="line.26"></a>
-<span class="sourceLineNo">027</span><a id="line.27">  private Rotation2d m_gyroOffset;</a>
-<span class="sourceLineNo">028</span><a id="line.28">  private Rotation2d m_previousAngle;</a>
-<span class="sourceLineNo">029</span><a id="line.29"></a>
-<span class="sourceLineNo">030</span><a id="line.30">  /**</a>
-<span class="sourceLineNo">031</span><a id="line.31">   * Constructs a SwerveDriveOdometry object.</a>
-<span class="sourceLineNo">032</span><a id="line.32">   *</a>
-<span class="sourceLineNo">033</span><a id="line.33">   * @param kinematics The swerve drive kinematics for your drivetrain.</a>
-<span class="sourceLineNo">034</span><a id="line.34">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">011</span><a id="line.11"></a>
+<span class="sourceLineNo">012</span><a id="line.12">/**</a>
+<span class="sourceLineNo">013</span><a id="line.13"> * Class for swerve drive odometry. Odometry allows you to track the robot's position on the field</a>
+<span class="sourceLineNo">014</span><a id="line.14"> * over a course of a match using readings from your swerve drive encoders and swerve azimuth</a>
+<span class="sourceLineNo">015</span><a id="line.15"> * encoders.</a>
+<span class="sourceLineNo">016</span><a id="line.16"> *</a>
+<span class="sourceLineNo">017</span><a id="line.17"> * &lt;p&gt;Teams can use odometry during the autonomous period for complex tasks like path following.</a>
+<span class="sourceLineNo">018</span><a id="line.18"> * Furthermore, odometry can be used for latency compensation when using computer-vision systems.</a>
+<span class="sourceLineNo">019</span><a id="line.19"> */</a>
+<span class="sourceLineNo">020</span><a id="line.20">public class SwerveDriveOdometry {</a>
+<span class="sourceLineNo">021</span><a id="line.21">  private final SwerveDriveKinematics m_kinematics;</a>
+<span class="sourceLineNo">022</span><a id="line.22">  private Pose2d m_poseMeters;</a>
+<span class="sourceLineNo">023</span><a id="line.23"></a>
+<span class="sourceLineNo">024</span><a id="line.24">  private Rotation2d m_gyroOffset;</a>
+<span class="sourceLineNo">025</span><a id="line.25">  private Rotation2d m_previousAngle;</a>
+<span class="sourceLineNo">026</span><a id="line.26">  private final int m_numModules;</a>
+<span class="sourceLineNo">027</span><a id="line.27">  private SwerveModulePosition[] m_previousModulePositions;</a>
+<span class="sourceLineNo">028</span><a id="line.28"></a>
+<span class="sourceLineNo">029</span><a id="line.29">  /**</a>
+<span class="sourceLineNo">030</span><a id="line.30">   * Constructs a SwerveDriveOdometry object.</a>
+<span class="sourceLineNo">031</span><a id="line.31">   *</a>
+<span class="sourceLineNo">032</span><a id="line.32">   * @param kinematics The swerve drive kinematics for your drivetrain.</a>
+<span class="sourceLineNo">033</span><a id="line.33">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">034</span><a id="line.34">   * @param modulePositions The wheel positions reported by each module.</a>
 <span class="sourceLineNo">035</span><a id="line.35">   * @param initialPose The starting position of the robot on the field.</a>
 <span class="sourceLineNo">036</span><a id="line.36">   */</a>
 <span class="sourceLineNo">037</span><a id="line.37">  public SwerveDriveOdometry(</a>
-<span class="sourceLineNo">038</span><a id="line.38">      SwerveDriveKinematics kinematics, Rotation2d gyroAngle, Pose2d initialPose) {</a>
-<span class="sourceLineNo">039</span><a id="line.39">    m_kinematics = kinematics;</a>
-<span class="sourceLineNo">040</span><a id="line.40">    m_poseMeters = initialPose;</a>
-<span class="sourceLineNo">041</span><a id="line.41">    m_gyroOffset = m_poseMeters.getRotation().minus(gyroAngle);</a>
-<span class="sourceLineNo">042</span><a id="line.42">    m_previousAngle = initialPose.getRotation();</a>
-<span class="sourceLineNo">043</span><a id="line.43">    MathSharedStore.reportUsage(MathUsageId.kOdometry_SwerveDrive, 1);</a>
-<span class="sourceLineNo">044</span><a id="line.44">  }</a>
-<span class="sourceLineNo">045</span><a id="line.45"></a>
-<span class="sourceLineNo">046</span><a id="line.46">  /**</a>
-<span class="sourceLineNo">047</span><a id="line.47">   * Constructs a SwerveDriveOdometry object with the default pose at the origin.</a>
-<span class="sourceLineNo">048</span><a id="line.48">   *</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * @param kinematics The swerve drive kinematics for your drivetrain.</a>
-<span class="sourceLineNo">050</span><a id="line.50">   * @param gyroAngle The angle reported by the gyroscope.</a>
-<span class="sourceLineNo">051</span><a id="line.51">   */</a>
-<span class="sourceLineNo">052</span><a id="line.52">  public SwerveDriveOdometry(SwerveDriveKinematics kinematics, Rotation2d gyroAngle) {</a>
-<span class="sourceLineNo">053</span><a id="line.53">    this(kinematics, gyroAngle, new Pose2d());</a>
-<span class="sourceLineNo">054</span><a id="line.54">  }</a>
-<span class="sourceLineNo">055</span><a id="line.55"></a>
-<span class="sourceLineNo">056</span><a id="line.56">  /**</a>
-<span class="sourceLineNo">057</span><a id="line.57">   * Resets the robot's position on the field.</a>
-<span class="sourceLineNo">058</span><a id="line.58">   *</a>
-<span class="sourceLineNo">059</span><a id="line.59">   * &lt;p&gt;The gyroscope angle does not need to be reset here on the user's robot code. The library</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * automatically takes care of offsetting the gyro angle.</a>
-<span class="sourceLineNo">061</span><a id="line.61">   *</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * @param pose The position on the field that your robot is at.</a>
-<span class="sourceLineNo">063</span><a id="line.63">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">038</span><a id="line.38">      SwerveDriveKinematics kinematics,</a>
+<span class="sourceLineNo">039</span><a id="line.39">      Rotation2d gyroAngle,</a>
+<span class="sourceLineNo">040</span><a id="line.40">      SwerveModulePosition[] modulePositions,</a>
+<span class="sourceLineNo">041</span><a id="line.41">      Pose2d initialPose) {</a>
+<span class="sourceLineNo">042</span><a id="line.42">    m_kinematics = kinematics;</a>
+<span class="sourceLineNo">043</span><a id="line.43">    m_poseMeters = initialPose;</a>
+<span class="sourceLineNo">044</span><a id="line.44">    m_gyroOffset = m_poseMeters.getRotation().minus(gyroAngle);</a>
+<span class="sourceLineNo">045</span><a id="line.45">    m_previousAngle = initialPose.getRotation();</a>
+<span class="sourceLineNo">046</span><a id="line.46">    m_numModules = modulePositions.length;</a>
+<span class="sourceLineNo">047</span><a id="line.47"></a>
+<span class="sourceLineNo">048</span><a id="line.48">    m_previousModulePositions = new SwerveModulePosition[m_numModules];</a>
+<span class="sourceLineNo">049</span><a id="line.49">    for (int index = 0; index &lt; m_numModules; index++) {</a>
+<span class="sourceLineNo">050</span><a id="line.50">      m_previousModulePositions[index] =</a>
+<span class="sourceLineNo">051</span><a id="line.51">          new SwerveModulePosition(</a>
+<span class="sourceLineNo">052</span><a id="line.52">              modulePositions[index].distanceMeters, modulePositions[index].angle);</a>
+<span class="sourceLineNo">053</span><a id="line.53">    }</a>
+<span class="sourceLineNo">054</span><a id="line.54"></a>
+<span class="sourceLineNo">055</span><a id="line.55">    MathSharedStore.reportUsage(MathUsageId.kOdometry_SwerveDrive, 1);</a>
+<span class="sourceLineNo">056</span><a id="line.56">  }</a>
+<span class="sourceLineNo">057</span><a id="line.57"></a>
+<span class="sourceLineNo">058</span><a id="line.58">  /**</a>
+<span class="sourceLineNo">059</span><a id="line.59">   * Constructs a SwerveDriveOdometry object with the default pose at the origin.</a>
+<span class="sourceLineNo">060</span><a id="line.60">   *</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * @param kinematics The swerve drive kinematics for your drivetrain.</a>
+<span class="sourceLineNo">062</span><a id="line.62">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">063</span><a id="line.63">   * @param modulePositions The wheel positions reported by each module.</a>
 <span class="sourceLineNo">064</span><a id="line.64">   */</a>
-<span class="sourceLineNo">065</span><a id="line.65">  public void resetPosition(Pose2d pose, Rotation2d gyroAngle) {</a>
-<span class="sourceLineNo">066</span><a id="line.66">    m_poseMeters = pose;</a>
-<span class="sourceLineNo">067</span><a id="line.67">    m_previousAngle = pose.getRotation();</a>
-<span class="sourceLineNo">068</span><a id="line.68">    m_gyroOffset = m_poseMeters.getRotation().minus(gyroAngle);</a>
-<span class="sourceLineNo">069</span><a id="line.69">  }</a>
-<span class="sourceLineNo">070</span><a id="line.70"></a>
-<span class="sourceLineNo">071</span><a id="line.71">  /**</a>
-<span class="sourceLineNo">072</span><a id="line.72">   * Returns the position of the robot on the field.</a>
-<span class="sourceLineNo">073</span><a id="line.73">   *</a>
-<span class="sourceLineNo">074</span><a id="line.74">   * @return The pose of the robot (x and y are in meters).</a>
-<span class="sourceLineNo">075</span><a id="line.75">   */</a>
-<span class="sourceLineNo">076</span><a id="line.76">  public Pose2d getPoseMeters() {</a>
-<span class="sourceLineNo">077</span><a id="line.77">    return m_poseMeters;</a>
-<span class="sourceLineNo">078</span><a id="line.78">  }</a>
-<span class="sourceLineNo">079</span><a id="line.79"></a>
-<span class="sourceLineNo">080</span><a id="line.80">  /**</a>
-<span class="sourceLineNo">081</span><a id="line.81">   * Updates the robot's position on the field using forward kinematics and integration of the pose</a>
-<span class="sourceLineNo">082</span><a id="line.82">   * over time. This method takes in the current time as a parameter to calculate period (difference</a>
-<span class="sourceLineNo">083</span><a id="line.83">   * between two timestamps). The period is used to calculate the change in distance from a</a>
-<span class="sourceLineNo">084</span><a id="line.84">   * velocity. This also takes in an angle parameter which is used instead of the angular rate that</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * is calculated from forward kinematics.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   *</a>
-<span class="sourceLineNo">087</span><a id="line.87">   * @param currentTimeSeconds The current time in seconds.</a>
-<span class="sourceLineNo">088</span><a id="line.88">   * @param gyroAngle The angle reported by the gyroscope.</a>
-<span class="sourceLineNo">089</span><a id="line.89">   * @param moduleStates The current state of all swerve modules. Please provide the states in the</a>
-<span class="sourceLineNo">090</span><a id="line.90">   *     same order in which you instantiated your SwerveDriveKinematics.</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * @return The new pose of the robot.</a>
-<span class="sourceLineNo">092</span><a id="line.92">   */</a>
-<span class="sourceLineNo">093</span><a id="line.93">  public Pose2d updateWithTime(</a>
-<span class="sourceLineNo">094</span><a id="line.94">      double currentTimeSeconds, Rotation2d gyroAngle, SwerveModuleState... moduleStates) {</a>
-<span class="sourceLineNo">095</span><a id="line.95">    double period = m_prevTimeSeconds &gt;= 0 ? currentTimeSeconds - m_prevTimeSeconds : 0.0;</a>
-<span class="sourceLineNo">096</span><a id="line.96">    m_prevTimeSeconds = currentTimeSeconds;</a>
-<span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">    var angle = gyroAngle.plus(m_gyroOffset);</a>
+<span class="sourceLineNo">065</span><a id="line.65">  public SwerveDriveOdometry(</a>
+<span class="sourceLineNo">066</span><a id="line.66">      SwerveDriveKinematics kinematics,</a>
+<span class="sourceLineNo">067</span><a id="line.67">      Rotation2d gyroAngle,</a>
+<span class="sourceLineNo">068</span><a id="line.68">      SwerveModulePosition... modulePositions) {</a>
+<span class="sourceLineNo">069</span><a id="line.69">    this(kinematics, gyroAngle, modulePositions, new Pose2d());</a>
+<span class="sourceLineNo">070</span><a id="line.70">  }</a>
+<span class="sourceLineNo">071</span><a id="line.71"></a>
+<span class="sourceLineNo">072</span><a id="line.72">  /**</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * Resets the robot's position on the field.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   *</a>
+<span class="sourceLineNo">075</span><a id="line.75">   * &lt;p&gt;The gyroscope angle does not need to be reset here on the user's robot code. The library</a>
+<span class="sourceLineNo">076</span><a id="line.76">   * automatically takes care of offsetting the gyro angle.</a>
+<span class="sourceLineNo">077</span><a id="line.77">   *</a>
+<span class="sourceLineNo">078</span><a id="line.78">   * @param pose The position on the field that your robot is at.</a>
+<span class="sourceLineNo">079</span><a id="line.79">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">080</span><a id="line.80">   * @param modulePositions The wheel positions reported by each module.</a>
+<span class="sourceLineNo">081</span><a id="line.81">   */</a>
+<span class="sourceLineNo">082</span><a id="line.82">  public void resetPosition(</a>
+<span class="sourceLineNo">083</span><a id="line.83">      Pose2d pose, Rotation2d gyroAngle, SwerveModulePosition... modulePositions) {</a>
+<span class="sourceLineNo">084</span><a id="line.84">    if (modulePositions.length != m_numModules) {</a>
+<span class="sourceLineNo">085</span><a id="line.85">      throw new IllegalArgumentException(</a>
+<span class="sourceLineNo">086</span><a id="line.86">          "Number of modules is not consistent with number of wheel locations provided in "</a>
+<span class="sourceLineNo">087</span><a id="line.87">              + "constructor");</a>
+<span class="sourceLineNo">088</span><a id="line.88">    }</a>
+<span class="sourceLineNo">089</span><a id="line.89"></a>
+<span class="sourceLineNo">090</span><a id="line.90">    m_poseMeters = pose;</a>
+<span class="sourceLineNo">091</span><a id="line.91">    m_previousAngle = pose.getRotation();</a>
+<span class="sourceLineNo">092</span><a id="line.92">    m_gyroOffset = m_poseMeters.getRotation().minus(gyroAngle);</a>
+<span class="sourceLineNo">093</span><a id="line.93">    for (int index = 0; index &lt; m_numModules; index++) {</a>
+<span class="sourceLineNo">094</span><a id="line.94">      m_previousModulePositions[index] =</a>
+<span class="sourceLineNo">095</span><a id="line.95">          new SwerveModulePosition(</a>
+<span class="sourceLineNo">096</span><a id="line.96">              modulePositions[index].distanceMeters, modulePositions[index].angle);</a>
+<span class="sourceLineNo">097</span><a id="line.97">    }</a>
+<span class="sourceLineNo">098</span><a id="line.98">  }</a>
 <span class="sourceLineNo">099</span><a id="line.99"></a>
-<span class="sourceLineNo">100</span><a id="line.100">    var chassisState = m_kinematics.toChassisSpeeds(moduleStates);</a>
-<span class="sourceLineNo">101</span><a id="line.101">    var newPose =</a>
-<span class="sourceLineNo">102</span><a id="line.102">        m_poseMeters.exp(</a>
-<span class="sourceLineNo">103</span><a id="line.103">            new Twist2d(</a>
-<span class="sourceLineNo">104</span><a id="line.104">                chassisState.vxMetersPerSecond * period,</a>
-<span class="sourceLineNo">105</span><a id="line.105">                chassisState.vyMetersPerSecond * period,</a>
-<span class="sourceLineNo">106</span><a id="line.106">                angle.minus(m_previousAngle).getRadians()));</a>
-<span class="sourceLineNo">107</span><a id="line.107"></a>
-<span class="sourceLineNo">108</span><a id="line.108">    m_previousAngle = angle;</a>
-<span class="sourceLineNo">109</span><a id="line.109">    m_poseMeters = new Pose2d(newPose.getTranslation(), angle);</a>
-<span class="sourceLineNo">110</span><a id="line.110"></a>
-<span class="sourceLineNo">111</span><a id="line.111">    return m_poseMeters;</a>
-<span class="sourceLineNo">112</span><a id="line.112">  }</a>
-<span class="sourceLineNo">113</span><a id="line.113"></a>
-<span class="sourceLineNo">114</span><a id="line.114">  /**</a>
-<span class="sourceLineNo">115</span><a id="line.115">   * Updates the robot's position on the field using forward kinematics and integration of the pose</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * over time. This method automatically calculates the current time to calculate period</a>
-<span class="sourceLineNo">117</span><a id="line.117">   * (difference between two timestamps). The period is used to calculate the change in distance</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * from a velocity. This also takes in an angle parameter which is used instead of the angular</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * rate that is calculated from forward kinematics.</a>
-<span class="sourceLineNo">120</span><a id="line.120">   *</a>
-<span class="sourceLineNo">121</span><a id="line.121">   * @param gyroAngle The angle reported by the gyroscope.</a>
-<span class="sourceLineNo">122</span><a id="line.122">   * @param moduleStates The current state of all swerve modules. Please provide the states in the</a>
-<span class="sourceLineNo">123</span><a id="line.123">   *     same order in which you instantiated your SwerveDriveKinematics.</a>
-<span class="sourceLineNo">124</span><a id="line.124">   * @return The new pose of the robot.</a>
-<span class="sourceLineNo">125</span><a id="line.125">   */</a>
-<span class="sourceLineNo">126</span><a id="line.126">  public Pose2d update(Rotation2d gyroAngle, SwerveModuleState... moduleStates) {</a>
-<span class="sourceLineNo">127</span><a id="line.127">    return updateWithTime(WPIUtilJNI.now() * 1.0e-6, gyroAngle, moduleStates);</a>
-<span class="sourceLineNo">128</span><a id="line.128">  }</a>
-<span class="sourceLineNo">129</span><a id="line.129">}</a>
+<span class="sourceLineNo">100</span><a id="line.100">  /**</a>
+<span class="sourceLineNo">101</span><a id="line.101">   * Returns the position of the robot on the field.</a>
+<span class="sourceLineNo">102</span><a id="line.102">   *</a>
+<span class="sourceLineNo">103</span><a id="line.103">   * @return The pose of the robot (x and y are in meters).</a>
+<span class="sourceLineNo">104</span><a id="line.104">   */</a>
+<span class="sourceLineNo">105</span><a id="line.105">  public Pose2d getPoseMeters() {</a>
+<span class="sourceLineNo">106</span><a id="line.106">    return m_poseMeters;</a>
+<span class="sourceLineNo">107</span><a id="line.107">  }</a>
+<span class="sourceLineNo">108</span><a id="line.108"></a>
+<span class="sourceLineNo">109</span><a id="line.109">  /**</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * Updates the robot's position on the field using forward kinematics and integration of the pose</a>
+<span class="sourceLineNo">111</span><a id="line.111">   * over time. This method automatically calculates the current time to calculate period</a>
+<span class="sourceLineNo">112</span><a id="line.112">   * (difference between two timestamps). The period is used to calculate the change in distance</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * from a velocity. This also takes in an angle parameter which is used instead of the angular</a>
+<span class="sourceLineNo">114</span><a id="line.114">   * rate that is calculated from forward kinematics.</a>
+<span class="sourceLineNo">115</span><a id="line.115">   *</a>
+<span class="sourceLineNo">116</span><a id="line.116">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * @param modulePositions The current position of all swerve modules. Please provide the positions</a>
+<span class="sourceLineNo">118</span><a id="line.118">   *     in the same order in which you instantiated your SwerveDriveKinematics.</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * @return The new pose of the robot.</a>
+<span class="sourceLineNo">120</span><a id="line.120">   */</a>
+<span class="sourceLineNo">121</span><a id="line.121">  public Pose2d update(Rotation2d gyroAngle, SwerveModulePosition... modulePositions) {</a>
+<span class="sourceLineNo">122</span><a id="line.122">    if (modulePositions.length != m_numModules) {</a>
+<span class="sourceLineNo">123</span><a id="line.123">      throw new IllegalArgumentException(</a>
+<span class="sourceLineNo">124</span><a id="line.124">          "Number of modules is not consistent with number of wheel locations provided in "</a>
+<span class="sourceLineNo">125</span><a id="line.125">              + "constructor");</a>
+<span class="sourceLineNo">126</span><a id="line.126">    }</a>
+<span class="sourceLineNo">127</span><a id="line.127"></a>
+<span class="sourceLineNo">128</span><a id="line.128">    var moduleDeltas = new SwerveModulePosition[m_numModules];</a>
+<span class="sourceLineNo">129</span><a id="line.129">    for (int index = 0; index &lt; m_numModules; index++) {</a>
+<span class="sourceLineNo">130</span><a id="line.130">      var current = modulePositions[index];</a>
+<span class="sourceLineNo">131</span><a id="line.131">      var previous = m_previousModulePositions[index];</a>
+<span class="sourceLineNo">132</span><a id="line.132"></a>
+<span class="sourceLineNo">133</span><a id="line.133">      moduleDeltas[index] =</a>
+<span class="sourceLineNo">134</span><a id="line.134">          new SwerveModulePosition(current.distanceMeters - previous.distanceMeters, current.angle);</a>
+<span class="sourceLineNo">135</span><a id="line.135">    }</a>
+<span class="sourceLineNo">136</span><a id="line.136"></a>
+<span class="sourceLineNo">137</span><a id="line.137">    var angle = gyroAngle.plus(m_gyroOffset);</a>
+<span class="sourceLineNo">138</span><a id="line.138"></a>
+<span class="sourceLineNo">139</span><a id="line.139">    var twist = m_kinematics.toTwist2d(moduleDeltas);</a>
+<span class="sourceLineNo">140</span><a id="line.140">    twist.dtheta = angle.minus(m_previousAngle).getRadians();</a>
+<span class="sourceLineNo">141</span><a id="line.141"></a>
+<span class="sourceLineNo">142</span><a id="line.142">    var newPose = m_poseMeters.exp(twist);</a>
+<span class="sourceLineNo">143</span><a id="line.143"></a>
+<span class="sourceLineNo">144</span><a id="line.144">    m_previousAngle = angle;</a>
+<span class="sourceLineNo">145</span><a id="line.145">    m_poseMeters = new Pose2d(newPose.getTranslation(), angle);</a>
+<span class="sourceLineNo">146</span><a id="line.146">    for (int index = 0; index &lt; m_numModules; index++) {</a>
+<span class="sourceLineNo">147</span><a id="line.147">      m_previousModulePositions[index] =</a>
+<span class="sourceLineNo">148</span><a id="line.148">          new SwerveModulePosition(</a>
+<span class="sourceLineNo">149</span><a id="line.149">              modulePositions[index].distanceMeters, modulePositions[index].angle);</a>
+<span class="sourceLineNo">150</span><a id="line.150">    }</a>
+<span class="sourceLineNo">151</span><a id="line.151">    return m_poseMeters;</a>
+<span class="sourceLineNo">152</span><a id="line.152">  }</a>
+<span class="sourceLineNo">153</span><a id="line.153">}</a>
 
 
 

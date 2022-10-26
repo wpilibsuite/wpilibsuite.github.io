@@ -144,247 +144,265 @@
 <span class="sourceLineNo">132</span><a id="line.132">  }</a>
 <span class="sourceLineNo">133</span><a id="line.133"></a>
 <span class="sourceLineNo">134</span><a id="line.134">  /**</a>
-<span class="sourceLineNo">135</span><a id="line.135">   * Sets the goal for the ProfiledPIDController.</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * Returns the position tolerance of this controller.</a>
 <span class="sourceLineNo">136</span><a id="line.136">   *</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * @param goal The desired goal state.</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * @return the position tolerance of the controller.</a>
 <span class="sourceLineNo">138</span><a id="line.138">   */</a>
-<span class="sourceLineNo">139</span><a id="line.139">  public void setGoal(TrapezoidProfile.State goal) {</a>
-<span class="sourceLineNo">140</span><a id="line.140">    m_goal = goal;</a>
+<span class="sourceLineNo">139</span><a id="line.139">  public double getPositionTolerance() {</a>
+<span class="sourceLineNo">140</span><a id="line.140">    return m_controller.getPositionTolerance();</a>
 <span class="sourceLineNo">141</span><a id="line.141">  }</a>
 <span class="sourceLineNo">142</span><a id="line.142"></a>
 <span class="sourceLineNo">143</span><a id="line.143">  /**</a>
-<span class="sourceLineNo">144</span><a id="line.144">   * Sets the goal for the ProfiledPIDController.</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * Returns the velocity tolerance of this controller.</a>
 <span class="sourceLineNo">145</span><a id="line.145">   *</a>
-<span class="sourceLineNo">146</span><a id="line.146">   * @param goal The desired goal position.</a>
+<span class="sourceLineNo">146</span><a id="line.146">   * @return the velocity tolerance of the controller.</a>
 <span class="sourceLineNo">147</span><a id="line.147">   */</a>
-<span class="sourceLineNo">148</span><a id="line.148">  public void setGoal(double goal) {</a>
-<span class="sourceLineNo">149</span><a id="line.149">    m_goal = new TrapezoidProfile.State(goal, 0);</a>
+<span class="sourceLineNo">148</span><a id="line.148">  public double getVelocityTolerance() {</a>
+<span class="sourceLineNo">149</span><a id="line.149">    return m_controller.getVelocityTolerance();</a>
 <span class="sourceLineNo">150</span><a id="line.150">  }</a>
 <span class="sourceLineNo">151</span><a id="line.151"></a>
 <span class="sourceLineNo">152</span><a id="line.152">  /**</a>
-<span class="sourceLineNo">153</span><a id="line.153">   * Gets the goal for the ProfiledPIDController.</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * Sets the goal for the ProfiledPIDController.</a>
 <span class="sourceLineNo">154</span><a id="line.154">   *</a>
-<span class="sourceLineNo">155</span><a id="line.155">   * @return The goal.</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * @param goal The desired goal state.</a>
 <span class="sourceLineNo">156</span><a id="line.156">   */</a>
-<span class="sourceLineNo">157</span><a id="line.157">  public TrapezoidProfile.State getGoal() {</a>
-<span class="sourceLineNo">158</span><a id="line.158">    return m_goal;</a>
+<span class="sourceLineNo">157</span><a id="line.157">  public void setGoal(TrapezoidProfile.State goal) {</a>
+<span class="sourceLineNo">158</span><a id="line.158">    m_goal = goal;</a>
 <span class="sourceLineNo">159</span><a id="line.159">  }</a>
 <span class="sourceLineNo">160</span><a id="line.160"></a>
 <span class="sourceLineNo">161</span><a id="line.161">  /**</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * Returns true if the error is within the tolerance of the error.</a>
+<span class="sourceLineNo">162</span><a id="line.162">   * Sets the goal for the ProfiledPIDController.</a>
 <span class="sourceLineNo">163</span><a id="line.163">   *</a>
-<span class="sourceLineNo">164</span><a id="line.164">   * &lt;p&gt;This will return false until at least one input value has been computed.</a>
-<span class="sourceLineNo">165</span><a id="line.165">   *</a>
-<span class="sourceLineNo">166</span><a id="line.166">   * @return True if the error is within the tolerance of the error.</a>
-<span class="sourceLineNo">167</span><a id="line.167">   */</a>
-<span class="sourceLineNo">168</span><a id="line.168">  public boolean atGoal() {</a>
-<span class="sourceLineNo">169</span><a id="line.169">    return atSetpoint() &amp;&amp; m_goal.equals(m_setpoint);</a>
-<span class="sourceLineNo">170</span><a id="line.170">  }</a>
-<span class="sourceLineNo">171</span><a id="line.171"></a>
-<span class="sourceLineNo">172</span><a id="line.172">  /**</a>
-<span class="sourceLineNo">173</span><a id="line.173">   * Set velocity and acceleration constraints for goal.</a>
-<span class="sourceLineNo">174</span><a id="line.174">   *</a>
-<span class="sourceLineNo">175</span><a id="line.175">   * @param constraints Velocity and acceleration constraints for goal.</a>
-<span class="sourceLineNo">176</span><a id="line.176">   */</a>
-<span class="sourceLineNo">177</span><a id="line.177">  public void setConstraints(TrapezoidProfile.Constraints constraints) {</a>
-<span class="sourceLineNo">178</span><a id="line.178">    m_constraints = constraints;</a>
-<span class="sourceLineNo">179</span><a id="line.179">  }</a>
-<span class="sourceLineNo">180</span><a id="line.180"></a>
-<span class="sourceLineNo">181</span><a id="line.181">  /**</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * Returns the current setpoint of the ProfiledPIDController.</a>
+<span class="sourceLineNo">164</span><a id="line.164">   * @param goal The desired goal position.</a>
+<span class="sourceLineNo">165</span><a id="line.165">   */</a>
+<span class="sourceLineNo">166</span><a id="line.166">  public void setGoal(double goal) {</a>
+<span class="sourceLineNo">167</span><a id="line.167">    m_goal = new TrapezoidProfile.State(goal, 0);</a>
+<span class="sourceLineNo">168</span><a id="line.168">  }</a>
+<span class="sourceLineNo">169</span><a id="line.169"></a>
+<span class="sourceLineNo">170</span><a id="line.170">  /**</a>
+<span class="sourceLineNo">171</span><a id="line.171">   * Gets the goal for the ProfiledPIDController.</a>
+<span class="sourceLineNo">172</span><a id="line.172">   *</a>
+<span class="sourceLineNo">173</span><a id="line.173">   * @return The goal.</a>
+<span class="sourceLineNo">174</span><a id="line.174">   */</a>
+<span class="sourceLineNo">175</span><a id="line.175">  public TrapezoidProfile.State getGoal() {</a>
+<span class="sourceLineNo">176</span><a id="line.176">    return m_goal;</a>
+<span class="sourceLineNo">177</span><a id="line.177">  }</a>
+<span class="sourceLineNo">178</span><a id="line.178"></a>
+<span class="sourceLineNo">179</span><a id="line.179">  /**</a>
+<span class="sourceLineNo">180</span><a id="line.180">   * Returns true if the error is within the tolerance of the error.</a>
+<span class="sourceLineNo">181</span><a id="line.181">   *</a>
+<span class="sourceLineNo">182</span><a id="line.182">   * &lt;p&gt;This will return false until at least one input value has been computed.</a>
 <span class="sourceLineNo">183</span><a id="line.183">   *</a>
-<span class="sourceLineNo">184</span><a id="line.184">   * @return The current setpoint.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   * @return True if the error is within the tolerance of the error.</a>
 <span class="sourceLineNo">185</span><a id="line.185">   */</a>
-<span class="sourceLineNo">186</span><a id="line.186">  public TrapezoidProfile.State getSetpoint() {</a>
-<span class="sourceLineNo">187</span><a id="line.187">    return m_setpoint;</a>
+<span class="sourceLineNo">186</span><a id="line.186">  public boolean atGoal() {</a>
+<span class="sourceLineNo">187</span><a id="line.187">    return atSetpoint() &amp;&amp; m_goal.equals(m_setpoint);</a>
 <span class="sourceLineNo">188</span><a id="line.188">  }</a>
 <span class="sourceLineNo">189</span><a id="line.189"></a>
 <span class="sourceLineNo">190</span><a id="line.190">  /**</a>
-<span class="sourceLineNo">191</span><a id="line.191">   * Returns true if the error is within the tolerance of the error.</a>
+<span class="sourceLineNo">191</span><a id="line.191">   * Set velocity and acceleration constraints for goal.</a>
 <span class="sourceLineNo">192</span><a id="line.192">   *</a>
-<span class="sourceLineNo">193</span><a id="line.193">   * &lt;p&gt;This will return false until at least one input value has been computed.</a>
-<span class="sourceLineNo">194</span><a id="line.194">   *</a>
-<span class="sourceLineNo">195</span><a id="line.195">   * @return True if the error is within the tolerance of the error.</a>
-<span class="sourceLineNo">196</span><a id="line.196">   */</a>
-<span class="sourceLineNo">197</span><a id="line.197">  public boolean atSetpoint() {</a>
-<span class="sourceLineNo">198</span><a id="line.198">    return m_controller.atSetpoint();</a>
-<span class="sourceLineNo">199</span><a id="line.199">  }</a>
-<span class="sourceLineNo">200</span><a id="line.200"></a>
-<span class="sourceLineNo">201</span><a id="line.201">  /**</a>
-<span class="sourceLineNo">202</span><a id="line.202">   * Enables continuous input.</a>
-<span class="sourceLineNo">203</span><a id="line.203">   *</a>
-<span class="sourceLineNo">204</span><a id="line.204">   * &lt;p&gt;Rather then using the max and min input range as constraints, it considers them to be the</a>
-<span class="sourceLineNo">205</span><a id="line.205">   * same point and automatically calculates the shortest route to the setpoint.</a>
-<span class="sourceLineNo">206</span><a id="line.206">   *</a>
-<span class="sourceLineNo">207</span><a id="line.207">   * @param minimumInput The minimum value expected from the input.</a>
-<span class="sourceLineNo">208</span><a id="line.208">   * @param maximumInput The maximum value expected from the input.</a>
-<span class="sourceLineNo">209</span><a id="line.209">   */</a>
-<span class="sourceLineNo">210</span><a id="line.210">  public void enableContinuousInput(double minimumInput, double maximumInput) {</a>
-<span class="sourceLineNo">211</span><a id="line.211">    m_controller.enableContinuousInput(minimumInput, maximumInput);</a>
-<span class="sourceLineNo">212</span><a id="line.212">    m_minimumInput = minimumInput;</a>
-<span class="sourceLineNo">213</span><a id="line.213">    m_maximumInput = maximumInput;</a>
-<span class="sourceLineNo">214</span><a id="line.214">  }</a>
-<span class="sourceLineNo">215</span><a id="line.215"></a>
-<span class="sourceLineNo">216</span><a id="line.216">  /** Disables continuous input. */</a>
-<span class="sourceLineNo">217</span><a id="line.217">  public void disableContinuousInput() {</a>
-<span class="sourceLineNo">218</span><a id="line.218">    m_controller.disableContinuousInput();</a>
-<span class="sourceLineNo">219</span><a id="line.219">  }</a>
-<span class="sourceLineNo">220</span><a id="line.220"></a>
-<span class="sourceLineNo">221</span><a id="line.221">  /**</a>
-<span class="sourceLineNo">222</span><a id="line.222">   * Sets the minimum and maximum values for the integrator.</a>
-<span class="sourceLineNo">223</span><a id="line.223">   *</a>
-<span class="sourceLineNo">224</span><a id="line.224">   * &lt;p&gt;When the cap is reached, the integrator value is added to the controller output rather than</a>
-<span class="sourceLineNo">225</span><a id="line.225">   * the integrator value times the integral gain.</a>
-<span class="sourceLineNo">226</span><a id="line.226">   *</a>
-<span class="sourceLineNo">227</span><a id="line.227">   * @param minimumIntegral The minimum value of the integrator.</a>
-<span class="sourceLineNo">228</span><a id="line.228">   * @param maximumIntegral The maximum value of the integrator.</a>
-<span class="sourceLineNo">229</span><a id="line.229">   */</a>
-<span class="sourceLineNo">230</span><a id="line.230">  public void setIntegratorRange(double minimumIntegral, double maximumIntegral) {</a>
-<span class="sourceLineNo">231</span><a id="line.231">    m_controller.setIntegratorRange(minimumIntegral, maximumIntegral);</a>
+<span class="sourceLineNo">193</span><a id="line.193">   * @param constraints Velocity and acceleration constraints for goal.</a>
+<span class="sourceLineNo">194</span><a id="line.194">   */</a>
+<span class="sourceLineNo">195</span><a id="line.195">  public void setConstraints(TrapezoidProfile.Constraints constraints) {</a>
+<span class="sourceLineNo">196</span><a id="line.196">    m_constraints = constraints;</a>
+<span class="sourceLineNo">197</span><a id="line.197">  }</a>
+<span class="sourceLineNo">198</span><a id="line.198"></a>
+<span class="sourceLineNo">199</span><a id="line.199">  /**</a>
+<span class="sourceLineNo">200</span><a id="line.200">   * Returns the current setpoint of the ProfiledPIDController.</a>
+<span class="sourceLineNo">201</span><a id="line.201">   *</a>
+<span class="sourceLineNo">202</span><a id="line.202">   * @return The current setpoint.</a>
+<span class="sourceLineNo">203</span><a id="line.203">   */</a>
+<span class="sourceLineNo">204</span><a id="line.204">  public TrapezoidProfile.State getSetpoint() {</a>
+<span class="sourceLineNo">205</span><a id="line.205">    return m_setpoint;</a>
+<span class="sourceLineNo">206</span><a id="line.206">  }</a>
+<span class="sourceLineNo">207</span><a id="line.207"></a>
+<span class="sourceLineNo">208</span><a id="line.208">  /**</a>
+<span class="sourceLineNo">209</span><a id="line.209">   * Returns true if the error is within the tolerance of the error.</a>
+<span class="sourceLineNo">210</span><a id="line.210">   *</a>
+<span class="sourceLineNo">211</span><a id="line.211">   * &lt;p&gt;This will return false until at least one input value has been computed.</a>
+<span class="sourceLineNo">212</span><a id="line.212">   *</a>
+<span class="sourceLineNo">213</span><a id="line.213">   * @return True if the error is within the tolerance of the error.</a>
+<span class="sourceLineNo">214</span><a id="line.214">   */</a>
+<span class="sourceLineNo">215</span><a id="line.215">  public boolean atSetpoint() {</a>
+<span class="sourceLineNo">216</span><a id="line.216">    return m_controller.atSetpoint();</a>
+<span class="sourceLineNo">217</span><a id="line.217">  }</a>
+<span class="sourceLineNo">218</span><a id="line.218"></a>
+<span class="sourceLineNo">219</span><a id="line.219">  /**</a>
+<span class="sourceLineNo">220</span><a id="line.220">   * Enables continuous input.</a>
+<span class="sourceLineNo">221</span><a id="line.221">   *</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * &lt;p&gt;Rather then using the max and min input range as constraints, it considers them to be the</a>
+<span class="sourceLineNo">223</span><a id="line.223">   * same point and automatically calculates the shortest route to the setpoint.</a>
+<span class="sourceLineNo">224</span><a id="line.224">   *</a>
+<span class="sourceLineNo">225</span><a id="line.225">   * @param minimumInput The minimum value expected from the input.</a>
+<span class="sourceLineNo">226</span><a id="line.226">   * @param maximumInput The maximum value expected from the input.</a>
+<span class="sourceLineNo">227</span><a id="line.227">   */</a>
+<span class="sourceLineNo">228</span><a id="line.228">  public void enableContinuousInput(double minimumInput, double maximumInput) {</a>
+<span class="sourceLineNo">229</span><a id="line.229">    m_controller.enableContinuousInput(minimumInput, maximumInput);</a>
+<span class="sourceLineNo">230</span><a id="line.230">    m_minimumInput = minimumInput;</a>
+<span class="sourceLineNo">231</span><a id="line.231">    m_maximumInput = maximumInput;</a>
 <span class="sourceLineNo">232</span><a id="line.232">  }</a>
 <span class="sourceLineNo">233</span><a id="line.233"></a>
-<span class="sourceLineNo">234</span><a id="line.234">  /**</a>
-<span class="sourceLineNo">235</span><a id="line.235">   * Sets the error which is considered tolerable for use with atSetpoint().</a>
-<span class="sourceLineNo">236</span><a id="line.236">   *</a>
-<span class="sourceLineNo">237</span><a id="line.237">   * @param positionTolerance Position error which is tolerable.</a>
-<span class="sourceLineNo">238</span><a id="line.238">   */</a>
-<span class="sourceLineNo">239</span><a id="line.239">  public void setTolerance(double positionTolerance) {</a>
-<span class="sourceLineNo">240</span><a id="line.240">    setTolerance(positionTolerance, Double.POSITIVE_INFINITY);</a>
-<span class="sourceLineNo">241</span><a id="line.241">  }</a>
-<span class="sourceLineNo">242</span><a id="line.242"></a>
-<span class="sourceLineNo">243</span><a id="line.243">  /**</a>
-<span class="sourceLineNo">244</span><a id="line.244">   * Sets the error which is considered tolerable for use with atSetpoint().</a>
-<span class="sourceLineNo">245</span><a id="line.245">   *</a>
-<span class="sourceLineNo">246</span><a id="line.246">   * @param positionTolerance Position error which is tolerable.</a>
-<span class="sourceLineNo">247</span><a id="line.247">   * @param velocityTolerance Velocity error which is tolerable.</a>
-<span class="sourceLineNo">248</span><a id="line.248">   */</a>
-<span class="sourceLineNo">249</span><a id="line.249">  public void setTolerance(double positionTolerance, double velocityTolerance) {</a>
-<span class="sourceLineNo">250</span><a id="line.250">    m_controller.setTolerance(positionTolerance, velocityTolerance);</a>
-<span class="sourceLineNo">251</span><a id="line.251">  }</a>
-<span class="sourceLineNo">252</span><a id="line.252"></a>
-<span class="sourceLineNo">253</span><a id="line.253">  /**</a>
-<span class="sourceLineNo">254</span><a id="line.254">   * Returns the difference between the setpoint and the measurement.</a>
-<span class="sourceLineNo">255</span><a id="line.255">   *</a>
-<span class="sourceLineNo">256</span><a id="line.256">   * @return The error.</a>
-<span class="sourceLineNo">257</span><a id="line.257">   */</a>
-<span class="sourceLineNo">258</span><a id="line.258">  public double getPositionError() {</a>
-<span class="sourceLineNo">259</span><a id="line.259">    return m_controller.getPositionError();</a>
-<span class="sourceLineNo">260</span><a id="line.260">  }</a>
-<span class="sourceLineNo">261</span><a id="line.261"></a>
-<span class="sourceLineNo">262</span><a id="line.262">  /**</a>
-<span class="sourceLineNo">263</span><a id="line.263">   * Returns the change in error per second.</a>
-<span class="sourceLineNo">264</span><a id="line.264">   *</a>
-<span class="sourceLineNo">265</span><a id="line.265">   * @return The change in error per second.</a>
+<span class="sourceLineNo">234</span><a id="line.234">  /** Disables continuous input. */</a>
+<span class="sourceLineNo">235</span><a id="line.235">  public void disableContinuousInput() {</a>
+<span class="sourceLineNo">236</span><a id="line.236">    m_controller.disableContinuousInput();</a>
+<span class="sourceLineNo">237</span><a id="line.237">  }</a>
+<span class="sourceLineNo">238</span><a id="line.238"></a>
+<span class="sourceLineNo">239</span><a id="line.239">  /**</a>
+<span class="sourceLineNo">240</span><a id="line.240">   * Sets the minimum and maximum values for the integrator.</a>
+<span class="sourceLineNo">241</span><a id="line.241">   *</a>
+<span class="sourceLineNo">242</span><a id="line.242">   * &lt;p&gt;When the cap is reached, the integrator value is added to the controller output rather than</a>
+<span class="sourceLineNo">243</span><a id="line.243">   * the integrator value times the integral gain.</a>
+<span class="sourceLineNo">244</span><a id="line.244">   *</a>
+<span class="sourceLineNo">245</span><a id="line.245">   * @param minimumIntegral The minimum value of the integrator.</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * @param maximumIntegral The maximum value of the integrator.</a>
+<span class="sourceLineNo">247</span><a id="line.247">   */</a>
+<span class="sourceLineNo">248</span><a id="line.248">  public void setIntegratorRange(double minimumIntegral, double maximumIntegral) {</a>
+<span class="sourceLineNo">249</span><a id="line.249">    m_controller.setIntegratorRange(minimumIntegral, maximumIntegral);</a>
+<span class="sourceLineNo">250</span><a id="line.250">  }</a>
+<span class="sourceLineNo">251</span><a id="line.251"></a>
+<span class="sourceLineNo">252</span><a id="line.252">  /**</a>
+<span class="sourceLineNo">253</span><a id="line.253">   * Sets the error which is considered tolerable for use with atSetpoint().</a>
+<span class="sourceLineNo">254</span><a id="line.254">   *</a>
+<span class="sourceLineNo">255</span><a id="line.255">   * @param positionTolerance Position error which is tolerable.</a>
+<span class="sourceLineNo">256</span><a id="line.256">   */</a>
+<span class="sourceLineNo">257</span><a id="line.257">  public void setTolerance(double positionTolerance) {</a>
+<span class="sourceLineNo">258</span><a id="line.258">    setTolerance(positionTolerance, Double.POSITIVE_INFINITY);</a>
+<span class="sourceLineNo">259</span><a id="line.259">  }</a>
+<span class="sourceLineNo">260</span><a id="line.260"></a>
+<span class="sourceLineNo">261</span><a id="line.261">  /**</a>
+<span class="sourceLineNo">262</span><a id="line.262">   * Sets the error which is considered tolerable for use with atSetpoint().</a>
+<span class="sourceLineNo">263</span><a id="line.263">   *</a>
+<span class="sourceLineNo">264</span><a id="line.264">   * @param positionTolerance Position error which is tolerable.</a>
+<span class="sourceLineNo">265</span><a id="line.265">   * @param velocityTolerance Velocity error which is tolerable.</a>
 <span class="sourceLineNo">266</span><a id="line.266">   */</a>
-<span class="sourceLineNo">267</span><a id="line.267">  public double getVelocityError() {</a>
-<span class="sourceLineNo">268</span><a id="line.268">    return m_controller.getVelocityError();</a>
+<span class="sourceLineNo">267</span><a id="line.267">  public void setTolerance(double positionTolerance, double velocityTolerance) {</a>
+<span class="sourceLineNo">268</span><a id="line.268">    m_controller.setTolerance(positionTolerance, velocityTolerance);</a>
 <span class="sourceLineNo">269</span><a id="line.269">  }</a>
 <span class="sourceLineNo">270</span><a id="line.270"></a>
 <span class="sourceLineNo">271</span><a id="line.271">  /**</a>
-<span class="sourceLineNo">272</span><a id="line.272">   * Returns the next output of the PID controller.</a>
+<span class="sourceLineNo">272</span><a id="line.272">   * Returns the difference between the setpoint and the measurement.</a>
 <span class="sourceLineNo">273</span><a id="line.273">   *</a>
-<span class="sourceLineNo">274</span><a id="line.274">   * @param measurement The current measurement of the process variable.</a>
-<span class="sourceLineNo">275</span><a id="line.275">   * @return The controller's next output.</a>
-<span class="sourceLineNo">276</span><a id="line.276">   */</a>
-<span class="sourceLineNo">277</span><a id="line.277">  public double calculate(double measurement) {</a>
-<span class="sourceLineNo">278</span><a id="line.278">    if (m_controller.isContinuousInputEnabled()) {</a>
-<span class="sourceLineNo">279</span><a id="line.279">      // Get error which is smallest distance between goal and measurement</a>
-<span class="sourceLineNo">280</span><a id="line.280">      double errorBound = (m_maximumInput - m_minimumInput) / 2.0;</a>
-<span class="sourceLineNo">281</span><a id="line.281">      double goalMinDistance =</a>
-<span class="sourceLineNo">282</span><a id="line.282">          MathUtil.inputModulus(m_goal.position - measurement, -errorBound, errorBound);</a>
-<span class="sourceLineNo">283</span><a id="line.283">      double setpointMinDistance =</a>
-<span class="sourceLineNo">284</span><a id="line.284">          MathUtil.inputModulus(m_setpoint.position - measurement, -errorBound, errorBound);</a>
-<span class="sourceLineNo">285</span><a id="line.285"></a>
-<span class="sourceLineNo">286</span><a id="line.286">      // Recompute the profile goal with the smallest error, thus giving the shortest path. The goal</a>
-<span class="sourceLineNo">287</span><a id="line.287">      // may be outside the input range after this operation, but that's OK because the controller</a>
-<span class="sourceLineNo">288</span><a id="line.288">      // will still go there and report an error of zero. In other words, the setpoint only needs to</a>
-<span class="sourceLineNo">289</span><a id="line.289">      // be offset from the measurement by the input range modulus; they don't need to be equal.</a>
-<span class="sourceLineNo">290</span><a id="line.290">      m_goal.position = goalMinDistance + measurement;</a>
-<span class="sourceLineNo">291</span><a id="line.291">      m_setpoint.position = setpointMinDistance + measurement;</a>
-<span class="sourceLineNo">292</span><a id="line.292">    }</a>
-<span class="sourceLineNo">293</span><a id="line.293"></a>
-<span class="sourceLineNo">294</span><a id="line.294">    var profile = new TrapezoidProfile(m_constraints, m_goal, m_setpoint);</a>
-<span class="sourceLineNo">295</span><a id="line.295">    m_setpoint = profile.calculate(getPeriod());</a>
-<span class="sourceLineNo">296</span><a id="line.296">    return m_controller.calculate(measurement, m_setpoint.position);</a>
-<span class="sourceLineNo">297</span><a id="line.297">  }</a>
-<span class="sourceLineNo">298</span><a id="line.298"></a>
-<span class="sourceLineNo">299</span><a id="line.299">  /**</a>
-<span class="sourceLineNo">300</span><a id="line.300">   * Returns the next output of the PID controller.</a>
-<span class="sourceLineNo">301</span><a id="line.301">   *</a>
-<span class="sourceLineNo">302</span><a id="line.302">   * @param measurement The current measurement of the process variable.</a>
-<span class="sourceLineNo">303</span><a id="line.303">   * @param goal The new goal of the controller.</a>
-<span class="sourceLineNo">304</span><a id="line.304">   * @return The controller's next output.</a>
-<span class="sourceLineNo">305</span><a id="line.305">   */</a>
-<span class="sourceLineNo">306</span><a id="line.306">  public double calculate(double measurement, TrapezoidProfile.State goal) {</a>
-<span class="sourceLineNo">307</span><a id="line.307">    setGoal(goal);</a>
-<span class="sourceLineNo">308</span><a id="line.308">    return calculate(measurement);</a>
-<span class="sourceLineNo">309</span><a id="line.309">  }</a>
-<span class="sourceLineNo">310</span><a id="line.310"></a>
-<span class="sourceLineNo">311</span><a id="line.311">  /**</a>
-<span class="sourceLineNo">312</span><a id="line.312">   * Returns the next output of the PIDController.</a>
-<span class="sourceLineNo">313</span><a id="line.313">   *</a>
-<span class="sourceLineNo">314</span><a id="line.314">   * @param measurement The current measurement of the process variable.</a>
-<span class="sourceLineNo">315</span><a id="line.315">   * @param goal The new goal of the controller.</a>
-<span class="sourceLineNo">316</span><a id="line.316">   * @return The controller's next output.</a>
-<span class="sourceLineNo">317</span><a id="line.317">   */</a>
-<span class="sourceLineNo">318</span><a id="line.318">  public double calculate(double measurement, double goal) {</a>
-<span class="sourceLineNo">319</span><a id="line.319">    setGoal(goal);</a>
-<span class="sourceLineNo">320</span><a id="line.320">    return calculate(measurement);</a>
-<span class="sourceLineNo">321</span><a id="line.321">  }</a>
-<span class="sourceLineNo">322</span><a id="line.322"></a>
-<span class="sourceLineNo">323</span><a id="line.323">  /**</a>
-<span class="sourceLineNo">324</span><a id="line.324">   * Returns the next output of the PID controller.</a>
-<span class="sourceLineNo">325</span><a id="line.325">   *</a>
-<span class="sourceLineNo">326</span><a id="line.326">   * @param measurement The current measurement of the process variable.</a>
-<span class="sourceLineNo">327</span><a id="line.327">   * @param goal The new goal of the controller.</a>
-<span class="sourceLineNo">328</span><a id="line.328">   * @param constraints Velocity and acceleration constraints for goal.</a>
-<span class="sourceLineNo">329</span><a id="line.329">   * @return The controller's next output.</a>
-<span class="sourceLineNo">330</span><a id="line.330">   */</a>
-<span class="sourceLineNo">331</span><a id="line.331">  public double calculate(</a>
-<span class="sourceLineNo">332</span><a id="line.332">      double measurement, TrapezoidProfile.State goal, TrapezoidProfile.Constraints constraints) {</a>
-<span class="sourceLineNo">333</span><a id="line.333">    setConstraints(constraints);</a>
-<span class="sourceLineNo">334</span><a id="line.334">    return calculate(measurement, goal);</a>
-<span class="sourceLineNo">335</span><a id="line.335">  }</a>
-<span class="sourceLineNo">336</span><a id="line.336"></a>
-<span class="sourceLineNo">337</span><a id="line.337">  /**</a>
-<span class="sourceLineNo">338</span><a id="line.338">   * Reset the previous error and the integral term.</a>
-<span class="sourceLineNo">339</span><a id="line.339">   *</a>
-<span class="sourceLineNo">340</span><a id="line.340">   * @param measurement The current measured State of the system.</a>
-<span class="sourceLineNo">341</span><a id="line.341">   */</a>
-<span class="sourceLineNo">342</span><a id="line.342">  public void reset(TrapezoidProfile.State measurement) {</a>
-<span class="sourceLineNo">343</span><a id="line.343">    m_controller.reset();</a>
-<span class="sourceLineNo">344</span><a id="line.344">    m_setpoint = measurement;</a>
-<span class="sourceLineNo">345</span><a id="line.345">  }</a>
-<span class="sourceLineNo">346</span><a id="line.346"></a>
-<span class="sourceLineNo">347</span><a id="line.347">  /**</a>
-<span class="sourceLineNo">348</span><a id="line.348">   * Reset the previous error and the integral term.</a>
-<span class="sourceLineNo">349</span><a id="line.349">   *</a>
-<span class="sourceLineNo">350</span><a id="line.350">   * @param measuredPosition The current measured position of the system.</a>
-<span class="sourceLineNo">351</span><a id="line.351">   * @param measuredVelocity The current measured velocity of the system.</a>
-<span class="sourceLineNo">352</span><a id="line.352">   */</a>
-<span class="sourceLineNo">353</span><a id="line.353">  public void reset(double measuredPosition, double measuredVelocity) {</a>
-<span class="sourceLineNo">354</span><a id="line.354">    reset(new TrapezoidProfile.State(measuredPosition, measuredVelocity));</a>
-<span class="sourceLineNo">355</span><a id="line.355">  }</a>
-<span class="sourceLineNo">356</span><a id="line.356"></a>
-<span class="sourceLineNo">357</span><a id="line.357">  /**</a>
-<span class="sourceLineNo">358</span><a id="line.358">   * Reset the previous error and the integral term.</a>
-<span class="sourceLineNo">359</span><a id="line.359">   *</a>
-<span class="sourceLineNo">360</span><a id="line.360">   * @param measuredPosition The current measured position of the system. The velocity is assumed to</a>
-<span class="sourceLineNo">361</span><a id="line.361">   *     be zero.</a>
-<span class="sourceLineNo">362</span><a id="line.362">   */</a>
-<span class="sourceLineNo">363</span><a id="line.363">  public void reset(double measuredPosition) {</a>
-<span class="sourceLineNo">364</span><a id="line.364">    reset(measuredPosition, 0.0);</a>
-<span class="sourceLineNo">365</span><a id="line.365">  }</a>
-<span class="sourceLineNo">366</span><a id="line.366"></a>
-<span class="sourceLineNo">367</span><a id="line.367">  @Override</a>
-<span class="sourceLineNo">368</span><a id="line.368">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">369</span><a id="line.369">    builder.setSmartDashboardType("ProfiledPIDController");</a>
-<span class="sourceLineNo">370</span><a id="line.370">    builder.addDoubleProperty("p", this::getP, this::setP);</a>
-<span class="sourceLineNo">371</span><a id="line.371">    builder.addDoubleProperty("i", this::getI, this::setI);</a>
-<span class="sourceLineNo">372</span><a id="line.372">    builder.addDoubleProperty("d", this::getD, this::setD);</a>
-<span class="sourceLineNo">373</span><a id="line.373">    builder.addDoubleProperty("goal", () -&gt; getGoal().position, this::setGoal);</a>
-<span class="sourceLineNo">374</span><a id="line.374">  }</a>
-<span class="sourceLineNo">375</span><a id="line.375">}</a>
+<span class="sourceLineNo">274</span><a id="line.274">   * @return The error.</a>
+<span class="sourceLineNo">275</span><a id="line.275">   */</a>
+<span class="sourceLineNo">276</span><a id="line.276">  public double getPositionError() {</a>
+<span class="sourceLineNo">277</span><a id="line.277">    return m_controller.getPositionError();</a>
+<span class="sourceLineNo">278</span><a id="line.278">  }</a>
+<span class="sourceLineNo">279</span><a id="line.279"></a>
+<span class="sourceLineNo">280</span><a id="line.280">  /**</a>
+<span class="sourceLineNo">281</span><a id="line.281">   * Returns the change in error per second.</a>
+<span class="sourceLineNo">282</span><a id="line.282">   *</a>
+<span class="sourceLineNo">283</span><a id="line.283">   * @return The change in error per second.</a>
+<span class="sourceLineNo">284</span><a id="line.284">   */</a>
+<span class="sourceLineNo">285</span><a id="line.285">  public double getVelocityError() {</a>
+<span class="sourceLineNo">286</span><a id="line.286">    return m_controller.getVelocityError();</a>
+<span class="sourceLineNo">287</span><a id="line.287">  }</a>
+<span class="sourceLineNo">288</span><a id="line.288"></a>
+<span class="sourceLineNo">289</span><a id="line.289">  /**</a>
+<span class="sourceLineNo">290</span><a id="line.290">   * Returns the next output of the PID controller.</a>
+<span class="sourceLineNo">291</span><a id="line.291">   *</a>
+<span class="sourceLineNo">292</span><a id="line.292">   * @param measurement The current measurement of the process variable.</a>
+<span class="sourceLineNo">293</span><a id="line.293">   * @return The controller's next output.</a>
+<span class="sourceLineNo">294</span><a id="line.294">   */</a>
+<span class="sourceLineNo">295</span><a id="line.295">  public double calculate(double measurement) {</a>
+<span class="sourceLineNo">296</span><a id="line.296">    if (m_controller.isContinuousInputEnabled()) {</a>
+<span class="sourceLineNo">297</span><a id="line.297">      // Get error which is smallest distance between goal and measurement</a>
+<span class="sourceLineNo">298</span><a id="line.298">      double errorBound = (m_maximumInput - m_minimumInput) / 2.0;</a>
+<span class="sourceLineNo">299</span><a id="line.299">      double goalMinDistance =</a>
+<span class="sourceLineNo">300</span><a id="line.300">          MathUtil.inputModulus(m_goal.position - measurement, -errorBound, errorBound);</a>
+<span class="sourceLineNo">301</span><a id="line.301">      double setpointMinDistance =</a>
+<span class="sourceLineNo">302</span><a id="line.302">          MathUtil.inputModulus(m_setpoint.position - measurement, -errorBound, errorBound);</a>
+<span class="sourceLineNo">303</span><a id="line.303"></a>
+<span class="sourceLineNo">304</span><a id="line.304">      // Recompute the profile goal with the smallest error, thus giving the shortest path. The goal</a>
+<span class="sourceLineNo">305</span><a id="line.305">      // may be outside the input range after this operation, but that's OK because the controller</a>
+<span class="sourceLineNo">306</span><a id="line.306">      // will still go there and report an error of zero. In other words, the setpoint only needs to</a>
+<span class="sourceLineNo">307</span><a id="line.307">      // be offset from the measurement by the input range modulus; they don't need to be equal.</a>
+<span class="sourceLineNo">308</span><a id="line.308">      m_goal.position = goalMinDistance + measurement;</a>
+<span class="sourceLineNo">309</span><a id="line.309">      m_setpoint.position = setpointMinDistance + measurement;</a>
+<span class="sourceLineNo">310</span><a id="line.310">    }</a>
+<span class="sourceLineNo">311</span><a id="line.311"></a>
+<span class="sourceLineNo">312</span><a id="line.312">    var profile = new TrapezoidProfile(m_constraints, m_goal, m_setpoint);</a>
+<span class="sourceLineNo">313</span><a id="line.313">    m_setpoint = profile.calculate(getPeriod());</a>
+<span class="sourceLineNo">314</span><a id="line.314">    return m_controller.calculate(measurement, m_setpoint.position);</a>
+<span class="sourceLineNo">315</span><a id="line.315">  }</a>
+<span class="sourceLineNo">316</span><a id="line.316"></a>
+<span class="sourceLineNo">317</span><a id="line.317">  /**</a>
+<span class="sourceLineNo">318</span><a id="line.318">   * Returns the next output of the PID controller.</a>
+<span class="sourceLineNo">319</span><a id="line.319">   *</a>
+<span class="sourceLineNo">320</span><a id="line.320">   * @param measurement The current measurement of the process variable.</a>
+<span class="sourceLineNo">321</span><a id="line.321">   * @param goal The new goal of the controller.</a>
+<span class="sourceLineNo">322</span><a id="line.322">   * @return The controller's next output.</a>
+<span class="sourceLineNo">323</span><a id="line.323">   */</a>
+<span class="sourceLineNo">324</span><a id="line.324">  public double calculate(double measurement, TrapezoidProfile.State goal) {</a>
+<span class="sourceLineNo">325</span><a id="line.325">    setGoal(goal);</a>
+<span class="sourceLineNo">326</span><a id="line.326">    return calculate(measurement);</a>
+<span class="sourceLineNo">327</span><a id="line.327">  }</a>
+<span class="sourceLineNo">328</span><a id="line.328"></a>
+<span class="sourceLineNo">329</span><a id="line.329">  /**</a>
+<span class="sourceLineNo">330</span><a id="line.330">   * Returns the next output of the PIDController.</a>
+<span class="sourceLineNo">331</span><a id="line.331">   *</a>
+<span class="sourceLineNo">332</span><a id="line.332">   * @param measurement The current measurement of the process variable.</a>
+<span class="sourceLineNo">333</span><a id="line.333">   * @param goal The new goal of the controller.</a>
+<span class="sourceLineNo">334</span><a id="line.334">   * @return The controller's next output.</a>
+<span class="sourceLineNo">335</span><a id="line.335">   */</a>
+<span class="sourceLineNo">336</span><a id="line.336">  public double calculate(double measurement, double goal) {</a>
+<span class="sourceLineNo">337</span><a id="line.337">    setGoal(goal);</a>
+<span class="sourceLineNo">338</span><a id="line.338">    return calculate(measurement);</a>
+<span class="sourceLineNo">339</span><a id="line.339">  }</a>
+<span class="sourceLineNo">340</span><a id="line.340"></a>
+<span class="sourceLineNo">341</span><a id="line.341">  /**</a>
+<span class="sourceLineNo">342</span><a id="line.342">   * Returns the next output of the PID controller.</a>
+<span class="sourceLineNo">343</span><a id="line.343">   *</a>
+<span class="sourceLineNo">344</span><a id="line.344">   * @param measurement The current measurement of the process variable.</a>
+<span class="sourceLineNo">345</span><a id="line.345">   * @param goal The new goal of the controller.</a>
+<span class="sourceLineNo">346</span><a id="line.346">   * @param constraints Velocity and acceleration constraints for goal.</a>
+<span class="sourceLineNo">347</span><a id="line.347">   * @return The controller's next output.</a>
+<span class="sourceLineNo">348</span><a id="line.348">   */</a>
+<span class="sourceLineNo">349</span><a id="line.349">  public double calculate(</a>
+<span class="sourceLineNo">350</span><a id="line.350">      double measurement, TrapezoidProfile.State goal, TrapezoidProfile.Constraints constraints) {</a>
+<span class="sourceLineNo">351</span><a id="line.351">    setConstraints(constraints);</a>
+<span class="sourceLineNo">352</span><a id="line.352">    return calculate(measurement, goal);</a>
+<span class="sourceLineNo">353</span><a id="line.353">  }</a>
+<span class="sourceLineNo">354</span><a id="line.354"></a>
+<span class="sourceLineNo">355</span><a id="line.355">  /**</a>
+<span class="sourceLineNo">356</span><a id="line.356">   * Reset the previous error and the integral term.</a>
+<span class="sourceLineNo">357</span><a id="line.357">   *</a>
+<span class="sourceLineNo">358</span><a id="line.358">   * @param measurement The current measured State of the system.</a>
+<span class="sourceLineNo">359</span><a id="line.359">   */</a>
+<span class="sourceLineNo">360</span><a id="line.360">  public void reset(TrapezoidProfile.State measurement) {</a>
+<span class="sourceLineNo">361</span><a id="line.361">    m_controller.reset();</a>
+<span class="sourceLineNo">362</span><a id="line.362">    m_setpoint = measurement;</a>
+<span class="sourceLineNo">363</span><a id="line.363">  }</a>
+<span class="sourceLineNo">364</span><a id="line.364"></a>
+<span class="sourceLineNo">365</span><a id="line.365">  /**</a>
+<span class="sourceLineNo">366</span><a id="line.366">   * Reset the previous error and the integral term.</a>
+<span class="sourceLineNo">367</span><a id="line.367">   *</a>
+<span class="sourceLineNo">368</span><a id="line.368">   * @param measuredPosition The current measured position of the system.</a>
+<span class="sourceLineNo">369</span><a id="line.369">   * @param measuredVelocity The current measured velocity of the system.</a>
+<span class="sourceLineNo">370</span><a id="line.370">   */</a>
+<span class="sourceLineNo">371</span><a id="line.371">  public void reset(double measuredPosition, double measuredVelocity) {</a>
+<span class="sourceLineNo">372</span><a id="line.372">    reset(new TrapezoidProfile.State(measuredPosition, measuredVelocity));</a>
+<span class="sourceLineNo">373</span><a id="line.373">  }</a>
+<span class="sourceLineNo">374</span><a id="line.374"></a>
+<span class="sourceLineNo">375</span><a id="line.375">  /**</a>
+<span class="sourceLineNo">376</span><a id="line.376">   * Reset the previous error and the integral term.</a>
+<span class="sourceLineNo">377</span><a id="line.377">   *</a>
+<span class="sourceLineNo">378</span><a id="line.378">   * @param measuredPosition The current measured position of the system. The velocity is assumed to</a>
+<span class="sourceLineNo">379</span><a id="line.379">   *     be zero.</a>
+<span class="sourceLineNo">380</span><a id="line.380">   */</a>
+<span class="sourceLineNo">381</span><a id="line.381">  public void reset(double measuredPosition) {</a>
+<span class="sourceLineNo">382</span><a id="line.382">    reset(measuredPosition, 0.0);</a>
+<span class="sourceLineNo">383</span><a id="line.383">  }</a>
+<span class="sourceLineNo">384</span><a id="line.384"></a>
+<span class="sourceLineNo">385</span><a id="line.385">  @Override</a>
+<span class="sourceLineNo">386</span><a id="line.386">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">387</span><a id="line.387">    builder.setSmartDashboardType("ProfiledPIDController");</a>
+<span class="sourceLineNo">388</span><a id="line.388">    builder.addDoubleProperty("p", this::getP, this::setP);</a>
+<span class="sourceLineNo">389</span><a id="line.389">    builder.addDoubleProperty("i", this::getI, this::setI);</a>
+<span class="sourceLineNo">390</span><a id="line.390">    builder.addDoubleProperty("d", this::getD, this::setD);</a>
+<span class="sourceLineNo">391</span><a id="line.391">    builder.addDoubleProperty("goal", () -&gt; getGoal().position, this::setGoal);</a>
+<span class="sourceLineNo">392</span><a id="line.392">  }</a>
+<span class="sourceLineNo">393</span><a id="line.393">}</a>
 
 
 

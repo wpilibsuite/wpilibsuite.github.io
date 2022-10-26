@@ -18,35 +18,29 @@
 <span class="sourceLineNo">006</span><a id="line.6"></a>
 <span class="sourceLineNo">007</span><a id="line.7">/** NetworkTables topic notification. */</a>
 <span class="sourceLineNo">008</span><a id="line.8">@SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">009</span><a id="line.9">public final class TopicNotification {</a>
-<span class="sourceLineNo">010</span><a id="line.10">  /**</a>
-<span class="sourceLineNo">011</span><a id="line.11">   * Handle of listener that was triggered. TopicListener.getHandle() or the return value of</a>
-<span class="sourceLineNo">012</span><a id="line.12">   * TopicListenerPoller.add() can be used to map this to a specific added listener.</a>
-<span class="sourceLineNo">013</span><a id="line.13">   */</a>
-<span class="sourceLineNo">014</span><a id="line.14">  public final int listener;</a>
-<span class="sourceLineNo">015</span><a id="line.15"></a>
-<span class="sourceLineNo">016</span><a id="line.16">  /** Topic information. */</a>
-<span class="sourceLineNo">017</span><a id="line.17">  public final TopicInfo info;</a>
+<span class="sourceLineNo">009</span><a id="line.9">public final class TopicNotification extends NotificationBase {</a>
+<span class="sourceLineNo">010</span><a id="line.10">  /** Topic information. */</a>
+<span class="sourceLineNo">011</span><a id="line.11">  public final TopicInfo info;</a>
+<span class="sourceLineNo">012</span><a id="line.12"></a>
+<span class="sourceLineNo">013</span><a id="line.13">  /**</a>
+<span class="sourceLineNo">014</span><a id="line.14">   * Update flags. For example, {@link TopicListenerFlags#kPublish} if the topic was not previously</a>
+<span class="sourceLineNo">015</span><a id="line.15">   * published.</a>
+<span class="sourceLineNo">016</span><a id="line.16">   */</a>
+<span class="sourceLineNo">017</span><a id="line.17">  public final int flags;</a>
 <span class="sourceLineNo">018</span><a id="line.18"></a>
 <span class="sourceLineNo">019</span><a id="line.19">  /**</a>
-<span class="sourceLineNo">020</span><a id="line.20">   * Update flags. For example, {@link TopicListenerFlags#kPublish} if the topic was not previously</a>
-<span class="sourceLineNo">021</span><a id="line.21">   * published.</a>
-<span class="sourceLineNo">022</span><a id="line.22">   */</a>
-<span class="sourceLineNo">023</span><a id="line.23">  public final int flags;</a>
-<span class="sourceLineNo">024</span><a id="line.24"></a>
-<span class="sourceLineNo">025</span><a id="line.25">  /**</a>
-<span class="sourceLineNo">026</span><a id="line.26">   * Constructor. This should generally only be used internally to NetworkTables.</a>
-<span class="sourceLineNo">027</span><a id="line.27">   *</a>
-<span class="sourceLineNo">028</span><a id="line.28">   * @param listener Listener that was triggered</a>
-<span class="sourceLineNo">029</span><a id="line.29">   * @param info Topic information</a>
-<span class="sourceLineNo">030</span><a id="line.30">   * @param flags Update flags</a>
-<span class="sourceLineNo">031</span><a id="line.31">   */</a>
-<span class="sourceLineNo">032</span><a id="line.32">  public TopicNotification(int listener, TopicInfo info, int flags) {</a>
-<span class="sourceLineNo">033</span><a id="line.33">    this.listener = listener;</a>
-<span class="sourceLineNo">034</span><a id="line.34">    this.info = info;</a>
-<span class="sourceLineNo">035</span><a id="line.35">    this.flags = flags;</a>
-<span class="sourceLineNo">036</span><a id="line.36">  }</a>
-<span class="sourceLineNo">037</span><a id="line.37">}</a>
+<span class="sourceLineNo">020</span><a id="line.20">   * Constructor. This should generally only be used internally to NetworkTables.</a>
+<span class="sourceLineNo">021</span><a id="line.21">   *</a>
+<span class="sourceLineNo">022</span><a id="line.22">   * @param listener Listener that was triggered</a>
+<span class="sourceLineNo">023</span><a id="line.23">   * @param info Topic information</a>
+<span class="sourceLineNo">024</span><a id="line.24">   * @param flags Update flags</a>
+<span class="sourceLineNo">025</span><a id="line.25">   */</a>
+<span class="sourceLineNo">026</span><a id="line.26">  public TopicNotification(int listener, TopicInfo info, int flags) {</a>
+<span class="sourceLineNo">027</span><a id="line.27">    super(info.getInstance(), listener);</a>
+<span class="sourceLineNo">028</span><a id="line.28">    this.info = info;</a>
+<span class="sourceLineNo">029</span><a id="line.29">    this.flags = flags;</a>
+<span class="sourceLineNo">030</span><a id="line.30">  }</a>
+<span class="sourceLineNo">031</span><a id="line.31">}</a>
 
 
 
