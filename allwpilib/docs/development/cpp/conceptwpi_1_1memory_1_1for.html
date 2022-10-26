@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -114,15 +114,20 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1for.html','');
 <p >allocating the blocks.</p>
 <p >Some allocators like memory_stack work on huge memory blocks, this class manages them fro those allocators. It uses a the allocation of those blocks. The memory blocks in use are put onto a stack like structure, deallocation will pop from the top, so it is only possible to deallocate the last allocated block of the arena. By default, blocks are not really deallocated but stored in a cache. This can be disabled with the second template parameter, passing it uncached_arena (or <code>false</code>) disables it, cached_arena (or <code>true</code>) enables it explicitly.</p>
 <p >It calls the <code><a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a11ba56c63dcf7c5763ae6d090efc699f">allocate_array()</a></code> function with a node of size <code>1</code> and maximum alignment on the used allocator for the block allocation. The size of the next memory block will grow by a given factor after each allocation, allowing an amortized constant allocation time in the higher level allocator. The factor can be given as rational in the template parameter, default is <code>2</code>.</p>
-<p >\effects Allocates memory for the given type using the allocator and creates a new object inside it passing the given arguments to its constructor. </p><dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> owning that memory. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates memory for the given type using the allocator and creates a new object inside it passing the given arguments to its constructor. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> owning that memory. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the allocator is stateful a reference to the <code>RawAllocator</code> will be stored inside the deleter, the caller has to ensure that the object lives as long as the smart pointer.</dd></dl>
-<p>It is the same as the other overload but stores the reference to the allocator type-erased inside the <code>std::unique_ptr</code>. \effects Allocates memory for the given type using the allocator and creates a new object inside it passing the given arguments to its constructor. </p><dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> with a type-erased allocator reference owning that memory. </dd></dl>
+<p>It is the same as the other overload but stores the reference to the allocator type-erased inside the <code>std::unique_ptr</code>. </p><dl class="section user"><dt>Effects:</dt><dd>Allocates memory for the given type using the allocator and creates a new object inside it passing the given arguments to its constructor. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> with a type-erased allocator reference owning that memory. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the allocator is stateful a reference to the <code>RawAllocator</code> will be stored inside the deleter, the caller has to ensure that the object lives as long as the smart pointer.</dd></dl>
-<p>\effects Allocates memory for an array of given size and value initializes each element inside of it. </p><dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> owning that array. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates memory for an array of given size and value initializes each element inside of it. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> owning that array. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the allocator is stateful a reference to the <code>RawAllocator</code> will be stored inside the deleter, the caller has to ensure that the object lives as long as the smart pointer.</dd></dl>
-<p>It is the same as the other overload but stores the reference to the allocator type-erased inside the <code>std::unique_ptr</code>. \effects Allocates memory for an array of given size and value initializes each element inside of it. </p><dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> with a type-erased allocator reference owning that array. </dd></dl>
+<p>It is the same as the other overload but stores the reference to the allocator type-erased inside the <code>std::unique_ptr</code>. </p><dl class="section user"><dt>Effects:</dt><dd>Allocates memory for an array of given size and value initializes each element inside of it. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>std::unique_ptr</code> with a type-erased allocator reference owning that array. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the allocator is stateful a reference to the <code>RawAllocator</code> will be stored inside the deleter, the caller has to ensure that the object lives as long as the smart pointer.</dd></dl>
-<p>It is similar to <code>std::allocate_shared</code> but uses a <code>RawAllocator</code> (and thus also supports any <code>Allocator</code>). \effects Calls std_allocator::make_std_allocator to wrap the allocator and forwards to <code>std::allocate_shared</code>. </p><dl class="section return"><dt>Returns</dt><dd>A <code>std::shared_ptr</code> created using <code>std::allocate_shared</code>. </dd></dl>
+<p>It is similar to <code>std::allocate_shared</code> but uses a <code>RawAllocator</code> (and thus also supports any <code>Allocator</code>). </p><dl class="section user"><dt>Effects:</dt><dd>Calls std_allocator::make_std_allocator to wrap the allocator and forwards to <code>std::allocate_shared</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A <code>std::shared_ptr</code> created using <code>std::allocate_shared</code>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If the allocator is stateful a reference to the <code>RawAllocator</code> will be stored inside the shared pointer, the caller has to ensure that the object lives as long as the smart pointer. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
@@ -130,7 +135,7 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1for.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1for.html">for</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

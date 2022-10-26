@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -118,12 +118,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af07faa89b87763dd30825f0f4b23ed52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#af07faa89b87763dd30825f0f4b23ed52">aligned_allocator</a> (std::size_t <a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a7ddc604ef973a17b3d4d18b0f7050d9d">min_alignment</a>, <a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a78b17f5f188ea13a24d18b77a807fc96">allocator_type</a> &amp;&amp;alloc={})</td></tr>
-<tr class="memdesc:af07faa89b87763dd30825f0f4b23ed52"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it passing it the minimum alignment value and the allocator object.  <a href="classwpi_1_1memory_1_1aligned__allocator.html#af07faa89b87763dd30825f0f4b23ed52">More...</a><br /></td></tr>
 <tr class="separator:af07faa89b87763dd30825f0f4b23ed52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ddc604ef973a17b3d4d18b0f7050d9d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a7ddc604ef973a17b3d4d18b0f7050d9d">min_alignment</a> () const noexcept</td></tr>
 <tr class="separator:a7ddc604ef973a17b3d4d18b0f7050d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284154c9386764fe5e864e1fe8432329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a284154c9386764fe5e864e1fe8432329">set_min_alignment</a> (std::size_t <a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a7ddc604ef973a17b3d4d18b0f7050d9d">min_alignment</a>)</td></tr>
-<tr class="memdesc:a284154c9386764fe5e864e1fe8432329"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Sets the minimum alignment to a new value.  <a href="classwpi_1_1memory_1_1aligned__allocator.html#a284154c9386764fe5e864e1fe8432329">More...</a><br /></td></tr>
 <tr class="separator:a284154c9386764fe5e864e1fe8432329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a6474240c0f341d7b36c5cb181d555a8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a6474240c0f341d7b36c5cb181d555a8d">aligned_allocator</a> (<a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html">aligned_allocator</a> &amp;&amp;other) noexcept</td></tr>
@@ -238,9 +236,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it passing it the minimum alignment value and the allocator object. </p>
-<p >\requires <code>min_alignment</code> must be less than <code>this-&gt;<a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#af0790be2cc1d737736265b4d2f039310">max_alignment()</a></code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it passing it the minimum alignment value and the allocator object. \requires <code>min_alignment</code> must be less than <code>this-&gt;<a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#af0790be2cc1d737736265b4d2f039310">max_alignment()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -269,7 +265,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Moves the <code><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html">aligned_allocator</a></code> object. It simply moves the underlying allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Moves the <code><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html">aligned_allocator</a></code> object. It simply moves the underlying allocator. </dd></dl>
 
 </div>
 </div>
@@ -353,7 +349,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Forwards to the underlying allocator through the allocator_traits. If the <code>alignment</code> is less than the <code><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a7ddc604ef973a17b3d4d18b0f7050d9d">min_alignment()</a></code>, it is set to the minimum alignment. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Forwards to the underlying allocator through the allocator_traits. If the <code>alignment</code> is less than the <code><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a7ddc604ef973a17b3d4d18b0f7050d9d">min_alignment()</a></code>, it is set to the minimum alignment. </dd></dl>
 
 </div>
 </div>
@@ -669,9 +665,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Sets the minimum alignment to a new value. </p>
-<p >\requires <code>min_alignment</code> must be less than <code>this-&gt;<a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#af0790be2cc1d737736265b4d2f039310">max_alignment()</a></code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Sets the minimum alignment to a new value. \requires <code>min_alignment</code> must be less than <code>this-&gt;<a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#af0790be2cc1d737736265b4d2f039310">max_alignment()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -754,7 +748,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Forwards to the underlying allocator through the <a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits.html">composable_allocator_traits</a>. If the <code>alignment</code> is less than the <code><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a7ddc604ef973a17b3d4d18b0f7050d9d">min_alignment()</a></code>, it is set to the minimum alignment. \requires The underyling allocator must be composable. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Forwards to the underlying allocator through the <a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits.html">composable_allocator_traits</a>. If the <code>alignment</code> is less than the <code><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html#a7ddc604ef973a17b3d4d18b0f7050d9d">min_alignment()</a></code>, it is set to the minimum alignment. \requires The underyling allocator must be composable. </dd></dl>
 
 </div>
 </div>
@@ -902,7 +896,7 @@ template&lt;class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1aligned__allocator.html">aligned_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

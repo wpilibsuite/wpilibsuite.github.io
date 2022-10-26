@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -95,24 +95,21 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1virtual__memor
 </div><!--header-->
 <div class="contents">
 
-<p>\effects A function.  
-<a href="conceptwpi_1_1memory_1_1virtual__memory__allocator_1_1allocation.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="virtual__memory_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/virtual_memory.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1virtual__memory__allocator_1_1allocation.html">wpi::memory::virtual_memory_allocator::allocation</a> = </div>
-<div class="ttc" id="aconceptwpi_1_1memory_1_1virtual__memory__allocator_1_1allocation_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1virtual__memory__allocator_1_1allocation.html">allocation</a></div><div class="ttdoc">\effects A function.</div></div>
+<div class="ttc" id="aconceptwpi_1_1memory_1_1virtual__memory__allocator_1_1allocation_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1virtual__memory__allocator_1_1allocation.html">allocation</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >\effects A function. </p>
-<p >It uses virtual_memory_reserve followed by virtual_memory_commit for the allocation. The number of pages allocated will be the minimum to hold <code>size</code> continuous bytes, i.e. <code>size</code> will be rounded up to the next multiple. If debug fences are activated, one additional page before and after the memory will be allocated. </p><dl class="section return"><dt>Returns</dt><dd>A pointer to a </dd></dl>
+<div class="textblock"><dl class="section user"><dt>Effects:</dt><dd>A function. It uses virtual_memory_reserve followed by virtual_memory_commit for the allocation. The number of pages allocated will be the minimum to hold <code>size</code> continuous bytes, i.e. <code>size</code> will be rounded up to the next multiple. If debug fences are activated, one additional page before and after the memory will be allocated. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1virtual__memory__allocator_1_1allocation.html">allocation</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

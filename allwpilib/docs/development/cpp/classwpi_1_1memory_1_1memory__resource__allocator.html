@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -103,13 +103,10 @@ $(document).ready(function(){initNavTree('classwpi_1_1memory_1_1memory__resource
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac94c81d31dec46ac5c40e36e29e2ff89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__allocator.html#ac94c81d31dec46ac5c40e36e29e2ff89">memory_resource_allocator</a> (memory_resource *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>) noexcept</td></tr>
-<tr class="memdesc:ac94c81d31dec46ac5c40e36e29e2ff89"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by giving it a pointer to the memory_resource.  <a href="classwpi_1_1memory_1_1memory__resource__allocator.html#ac94c81d31dec46ac5c40e36e29e2ff89">More...</a><br /></td></tr>
 <tr class="separator:ac94c81d31dec46ac5c40e36e29e2ff89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaa36516e030fe73728ba0f92834d85d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__allocator.html#afaa36516e030fe73728ba0f92834d85d">allocate_node</a> (std::size_t size, std::size_t alignment)</td></tr>
-<tr class="memdesc:afaa36516e030fe73728ba0f92834d85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Allocates a node by forwarding to the <code>allocate()</code> function.  <a href="classwpi_1_1memory_1_1memory__resource__allocator.html#afaa36516e030fe73728ba0f92834d85d">More...</a><br /></td></tr>
 <tr class="separator:afaa36516e030fe73728ba0f92834d85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae456dc9774ebf2da64877b7188573092"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__allocator.html#ae456dc9774ebf2da64877b7188573092">deallocate_node</a> (void *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:ae456dc9774ebf2da64877b7188573092"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates a node by forwarding to the <code>deallocate()</code> function.  <a href="classwpi_1_1memory_1_1memory__resource__allocator.html#ae456dc9774ebf2da64877b7188573092">More...</a><br /></td></tr>
 <tr class="separator:ae456dc9774ebf2da64877b7188573092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca294f38f5601352f53f9e20e48e59b9"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__allocator.html#aca294f38f5601352f53f9e20e48e59b9">max_alignment</a> () const noexcept</td></tr>
 <tr class="separator:aca294f38f5601352f53f9e20e48e59b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +137,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by giving it a pointer to the memory_resource. </p>
-<p >\requires <code>ptr</code> must not be <code>nullptr</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by giving it a pointer to the memory_resource. \requires <code>ptr</code> must not be <code>nullptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -180,8 +175,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Allocates a node by forwarding to the <code>allocate()</code> function. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates a node by forwarding to the <code>allocate()</code> function. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The node as returned by the memory_resource. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
@@ -231,8 +225,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates a node by forwarding to the <code>deallocate()</code> function. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates a node by forwarding to the <code>deallocate()</code> function. </dd></dl>
 
 </div>
 </div>
@@ -297,7 +290,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1memory__resource__allocator.html">memory_resource_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -104,16 +104,12 @@ $(document).ready(function(){initNavTree('classwpi_1_1memory_1_1virtual__block__
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af69831a2fe63d52d47fe69ac71c6bf7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#af69831a2fe63d52d47fe69ac71c6bf7a">virtual_block_allocator</a> (std::size_t block_size, std::size_t no_blocks)</td></tr>
-<tr class="memdesc:af69831a2fe63d52d47fe69ac71c6bf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it giving it the block size and the total number of blocks it can allocate.  <a href="classwpi_1_1memory_1_1virtual__block__allocator.html#af69831a2fe63d52d47fe69ac71c6bf7a">More...</a><br /></td></tr>
 <tr class="separator:af69831a2fe63d52d47fe69ac71c6bf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f10d16ad20639b5a14e49aa97ff3f1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a0f10d16ad20639b5a14e49aa97ff3f1f">~virtual_block_allocator</a> () noexcept</td></tr>
-<tr class="memdesc:a0f10d16ad20639b5a14e49aa97ff3f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Releases the reserved virtual memory.  <a href="classwpi_1_1memory_1_1virtual__block__allocator.html#a0f10d16ad20639b5a14e49aa97ff3f1f">More...</a><br /></td></tr>
 <tr class="separator:a0f10d16ad20639b5a14e49aa97ff3f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73990501b9edf83c0a8727a530af0a80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73990501b9edf83c0a8727a530af0a80">allocate_block</a> ()</td></tr>
-<tr class="memdesc:a73990501b9edf83c0a8727a530af0a80"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Allocates a new memory block by committing the next <a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73982aa44754815f369dc411e029486b">next_block_size()</a> number of bytes.  <a href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73990501b9edf83c0a8727a530af0a80">More...</a><br /></td></tr>
 <tr class="separator:a73990501b9edf83c0a8727a530af0a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae4758b6a8822a29644254ce40967f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#aae4758b6a8822a29644254ce40967f53">deallocate_block</a> (<a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a> block) noexcept</td></tr>
-<tr class="memdesc:aae4758b6a8822a29644254ce40967f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates the last allocated memory block by decommitting it.  <a href="classwpi_1_1memory_1_1virtual__block__allocator.html#aae4758b6a8822a29644254ce40967f53">More...</a><br /></td></tr>
 <tr class="separator:aae4758b6a8822a29644254ce40967f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73982aa44754815f369dc411e029486b"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73982aa44754815f369dc411e029486b">next_block_size</a> () const noexcept</td></tr>
 <tr class="separator:a73982aa44754815f369dc411e029486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +124,6 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a6d97b79da5f14cf85865e8bde12dab9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a6d97b79da5f14cf85865e8bde12dab9e">swap</a> (<a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html">virtual_block_allocator</a> &amp;a, <a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html">virtual_block_allocator</a> &amp;b) noexcept</td></tr>
-<tr class="memdesc:a6d97b79da5f14cf85865e8bde12dab9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Swaps the ownership over the reserved memory.  <a href="classwpi_1_1memory_1_1virtual__block__allocator.html#a6d97b79da5f14cf85865e8bde12dab9e">More...</a><br /></td></tr>
 <tr class="separator:a6d97b79da5f14cf85865e8bde12dab9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -165,9 +160,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it giving it the block size and the total number of blocks it can allocate. </p>
-<p >It reserves enough virtual memory for <code>block_size * no_blocks</code>. \requires <code>block_size</code> must be non-zero and a multiple of the <a class="el" href="group__allocator.html#ga638f9e52b33b10f14e50de5beb306976">virtual_memory_page_size</a>. <code>no_blocks</code> must be bigger than <code>1</code>. </p><dl class="exception"><dt>Exceptions</dt><dd>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it giving it the block size and the total number of blocks it can allocate. It reserves enough virtual memory for <code>block_size * no_blocks</code>. \requires <code>block_size</code> must be non-zero and a multiple of the <a class="el" href="group__allocator.html#ga638f9e52b33b10f14e50de5beb306976">virtual_memory_page_size</a>. <code>no_blocks</code> must be bigger than <code>1</code>. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
   </table>
@@ -199,8 +193,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Releases the reserved virtual memory. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Releases the reserved virtual memory. </dd></dl>
 
 </div>
 </div>
@@ -227,7 +220,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Moves the block allocator, it transfers ownership over the reserved area. This does not invalidate any memory blocks. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Moves the block allocator, it transfers ownership over the reserved area. This does not invalidate any memory blocks. </dd></dl>
 
 </div>
 </div>
@@ -246,8 +239,7 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>\effects Allocates a new memory block by committing the next <a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73982aa44754815f369dc411e029486b">next_block_size()</a> number of bytes. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates a new memory block by committing the next <a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73982aa44754815f369dc411e029486b">next_block_size()</a> number of bytes. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The <a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a> committed. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
@@ -308,9 +300,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates the last allocated memory block by decommitting it. </p>
-<p >This block will be returned again on the next call to <a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73990501b9edf83c0a8727a530af0a80">allocate_block()</a>. \requires <code>block</code> must be the current top block of the memory, this is guaranteed by <a class="el" href="classwpi_1_1memory_1_1memory__arena.html">memory_arena</a>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates the last allocated memory block by decommitting it. This block will be returned again on the next call to <a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html#a73990501b9edf83c0a8727a530af0a80">allocate_block()</a>. \requires <code>block</code> must be the current top block of the memory, this is guaranteed by <a class="el" href="classwpi_1_1memory_1_1memory__arena.html">memory_arena</a>. </dd></dl>
 
 </div>
 </div>
@@ -400,9 +390,7 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Swaps the ownership over the reserved memory. </p>
-<p >This does not invalidate any memory blocks. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Swaps the ownership over the reserved memory. This does not invalidate any memory blocks. </dd></dl>
 
 </div>
 </div>
@@ -415,7 +403,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1virtual__block__allocator.html">virtual_block_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

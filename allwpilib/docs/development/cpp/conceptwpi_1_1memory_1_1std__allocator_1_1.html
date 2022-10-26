@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -95,17 +95,13 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1std__allocator
 </div><!--header-->
 <div class="contents">
 
-<p>\effects Allocates memory using the underlying If <code>n</code> is <code>1</code>, it will call <code>allocate_node(sizeof(T), alignof(T))</code>, otherwise <code>allocate_array(n, sizeof(T), alignof(T))</code>.  
-<a href="conceptwpi_1_1memory_1_1std__allocator_1_1.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="std__allocator_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/std_allocator.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_class" href="classwpi_1_1memory_1_1std__allocator.html">wpi::memory::std_allocator</a>:: = </div>
 <div class="ttc" id="aclasswpi_1_1memory_1_1std__allocator_html"><div class="ttname"><a href="classwpi_1_1memory_1_1std__allocator.html">wpi::memory::std_allocator</a></div><div class="ttdef"><b>Definition:</b> std_allocator.hpp:81</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >\effects Allocates memory using the underlying If <code>n</code> is <code>1</code>, it will call <code>allocate_node(sizeof(T), alignof(T))</code>, otherwise <code>allocate_array(n, sizeof(T), alignof(T))</code>. </p>
-<p >\effects Deallcoates memory using the underlying It will forward to the deallocation function in the same way as in allocate().</p>
+<div class="textblock"><dl class="section user"><dt>Effects:</dt><dd>Allocates memory using the underlying If <code>n</code> is <code>1</code>, it will call <code>allocate_node(sizeof(T), alignof(T))</code>, otherwise <code>allocate_array(n, sizeof(T), alignof(T))</code>. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a memory block suitable for <code>n</code> objects of type <code>T</code>. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
@@ -113,14 +109,14 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1std__allocator
   </table>
   </dd>
 </dl>
-<p>\requires The pointer must come from a previous call to allocate() with the same <code>n</code> on this object or any copy of it. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallcoates memory using the underlying It will forward to the deallocation function in the same way as in allocate(). \requires The pointer must come from a previous call to allocate() with the same <code>n</code> on this object or any copy of it. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1std__allocator_1_1.html"></a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_interrupt_manager_8h_source.html','')
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classhal_1_1_interrupt_manager.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="classhal_1_1_interrupt_manager.html">InterruptManager</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classhal_1_1_interrupt_manager.html#aca125bf7362d54006ed9b6be3321912c">   16</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classhal_1_1_interrupt_manager.html">InterruptManager</a>&amp; <a class="code hl_function" href="classhal_1_1_interrupt_manager.html#aca125bf7362d54006ed9b6be3321912c">GetInstance</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classhal_1_1_interrupt_manager.html#ae35c65a984900f0abb6013a6463056e9">   17</a></span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a475def88ce2111c2e4a4d3a3976b7c19">int32_t</a> <a class="code hl_function" href="classhal_1_1_interrupt_manager.html#ae35c65a984900f0abb6013a6463056e9">Initialize</a>(tSystemInterface* baseSystem);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classhal_1_1_interrupt_manager.html#ab45b71355385dbf41081e1eeb9714576">   17</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classhal_1_1_interrupt_manager.html#ab45b71355385dbf41081e1eeb9714576">Initialize</a>(tSystemInterface* baseSystem);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classhal_1_1_interrupt_manager.html#a190e69770febf2075320631c488d6e97">   19</a></span>  NiFpga_IrqContext <a class="code hl_function" href="classhal_1_1_interrupt_manager.html#a190e69770febf2075320631c488d6e97">GetContext</a>() noexcept;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classhal_1_1_interrupt_manager.html#a1e2722c18e9c2742793560bfe9cd001b">   20</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classhal_1_1_interrupt_manager.html#a1e2722c18e9c2742793560bfe9cd001b">ReleaseContext</a>(NiFpga_IrqContext context) noexcept;</div>
@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('_interrupt_manager_8h_source.html','')
 <div class="ttc" id="aclasshal_1_1_interrupt_manager_html_a190e69770febf2075320631c488d6e97"><div class="ttname"><a href="classhal_1_1_interrupt_manager.html#a190e69770febf2075320631c488d6e97">hal::InterruptManager::GetContext</a></div><div class="ttdeci">NiFpga_IrqContext GetContext() noexcept</div></div>
 <div class="ttc" id="aclasshal_1_1_interrupt_manager_html_a1e2722c18e9c2742793560bfe9cd001b"><div class="ttname"><a href="classhal_1_1_interrupt_manager.html#a1e2722c18e9c2742793560bfe9cd001b">hal::InterruptManager::ReleaseContext</a></div><div class="ttdeci">void ReleaseContext(NiFpga_IrqContext context) noexcept</div></div>
 <div class="ttc" id="aclasshal_1_1_interrupt_manager_html_a9fccfd9260c0511db3ae2b18e1ad4550"><div class="ttname"><a href="classhal_1_1_interrupt_manager.html#a9fccfd9260c0511db3ae2b18e1ad4550">hal::InterruptManager::WaitForInterrupt</a></div><div class="ttdeci">uint32_t WaitForInterrupt(NiFpga_IrqContext context, uint32_t mask, bool ignorePrevious, uint32_t timeoutInMs, int32_t *status)</div></div>
+<div class="ttc" id="aclasshal_1_1_interrupt_manager_html_ab45b71355385dbf41081e1eeb9714576"><div class="ttname"><a href="classhal_1_1_interrupt_manager.html#ab45b71355385dbf41081e1eeb9714576">hal::InterruptManager::Initialize</a></div><div class="ttdeci">static void Initialize(tSystemInterface *baseSystem)</div></div>
 <div class="ttc" id="aclasshal_1_1_interrupt_manager_html_aca125bf7362d54006ed9b6be3321912c"><div class="ttname"><a href="classhal_1_1_interrupt_manager.html#aca125bf7362d54006ed9b6be3321912c">hal::InterruptManager::GetInstance</a></div><div class="ttdeci">static InterruptManager &amp; GetInstance()</div></div>
-<div class="ttc" id="aclasshal_1_1_interrupt_manager_html_ae35c65a984900f0abb6013a6463056e9"><div class="ttname"><a href="classhal_1_1_interrupt_manager.html#ae35c65a984900f0abb6013a6463056e9">hal::InterruptManager::Initialize</a></div><div class="ttdeci">static int32_t Initialize(tSystemInterface *baseSystem)</div></div>
 <div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a1fe47e4c63c51696c544a7f24f33b05c"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a1fe47e4c63c51696c544a7f24f33b05c">Eigen::numext::uint32_t</a></div><div class="ttdeci">::uint32_t uint32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:56</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a475def88ce2111c2e4a4d3a3976b7c19"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a475def88ce2111c2e4a4d3a3976b7c19">Eigen::numext::int32_t</a></div><div class="ttdeci">::int32_t int32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:57</div></div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('_interrupt_manager_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_cb62d36d8fee827e6c23dea2529cfe29.html">roborio</a></li><li class="navelem"><a class="el" href="_interrupt_manager_8h.html">InterruptManager.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:06:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:23:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

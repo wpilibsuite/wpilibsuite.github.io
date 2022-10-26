@@ -8,6 +8,7 @@ var namespacefrc =
       [ "GetOperatingDirectory", "namespacefrc_1_1filesystem.html#a633e968867d2d64e089fea4e1a8ed2b4", null ]
     ] ],
     [ "impl", "namespacefrc_1_1impl.html", [
+      [ "ResetMotorSafety", "namespacefrc_1_1impl.html#a8d6d629cc4603c12b27d556aeb5a9ffb", null ],
       [ "RunRobot", "namespacefrc_1_1impl.html#ab27ebebfd151bdd128c4876ca9f195f6", null ]
     ] ],
     [ "internal", "namespacefrc_1_1internal.html", "namespacefrc_1_1internal" ],
@@ -110,6 +111,7 @@ var namespacefrc =
     [ "MecanumDriveKinematicsConstraint", "classfrc_1_1_mecanum_drive_kinematics_constraint.html", "classfrc_1_1_mecanum_drive_kinematics_constraint" ],
     [ "MecanumDriveOdometry", "classfrc_1_1_mecanum_drive_odometry.html", "classfrc_1_1_mecanum_drive_odometry" ],
     [ "MecanumDrivePoseEstimator", "classfrc_1_1_mecanum_drive_pose_estimator.html", "classfrc_1_1_mecanum_drive_pose_estimator" ],
+    [ "MecanumDriveWheelPositions", "structfrc_1_1_mecanum_drive_wheel_positions.html", "structfrc_1_1_mecanum_drive_wheel_positions" ],
     [ "MecanumDriveWheelSpeeds", "structfrc_1_1_mecanum_drive_wheel_speeds.html", "structfrc_1_1_mecanum_drive_wheel_speeds" ],
     [ "Mechanism2d", "classfrc_1_1_mechanism2d.html", "classfrc_1_1_mechanism2d" ],
     [ "MechanismLigament2d", "classfrc_1_1_mechanism_ligament2d.html", "classfrc_1_1_mechanism_ligament2d" ],
@@ -185,6 +187,7 @@ var namespacefrc =
     [ "SwerveDriveKinematicsConstraint", "classfrc_1_1_swerve_drive_kinematics_constraint.html", "classfrc_1_1_swerve_drive_kinematics_constraint" ],
     [ "SwerveDriveOdometry", "classfrc_1_1_swerve_drive_odometry.html", "classfrc_1_1_swerve_drive_odometry" ],
     [ "SwerveDrivePoseEstimator", "classfrc_1_1_swerve_drive_pose_estimator.html", "classfrc_1_1_swerve_drive_pose_estimator" ],
+    [ "SwerveModulePosition", "structfrc_1_1_swerve_module_position.html", "structfrc_1_1_swerve_module_position" ],
     [ "SwerveModuleState", "structfrc_1_1_swerve_module_state.html", "structfrc_1_1_swerve_module_state" ],
     [ "SynchronousInterrupt", "classfrc_1_1_synchronous_interrupt.html", "classfrc_1_1_synchronous_interrupt" ],
     [ "Tachometer", "classfrc_1_1_tachometer.html", "classfrc_1_1_tachometer" ],

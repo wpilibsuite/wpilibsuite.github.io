@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -116,10 +116,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ccc623cc94d2ec73ee4d1dcd1a806de"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#a1ccc623cc94d2ec73ee4d1dcd1a806de">try_allocate_array</a> (<a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#a4f0f5ff7d5b6e68bb8724ca779b68a27">allocator_type</a> &amp;state, std::size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
 <tr class="separator:a1ccc623cc94d2ec73ee4d1dcd1a806de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b2ee053486233ab79c63b7c62ebba3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#ab6b2ee053486233ab79c63b7c62ebba3">try_deallocate_node</a> (<a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#a4f0f5ff7d5b6e68bb8724ca779b68a27">allocator_type</a> &amp;state, void *node, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:ab6b2ee053486233ab79c63b7c62ebba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Just forwards to <a class="el" href="classwpi_1_1memory_1_1memory__pool__collection.html#abf69b3a69e0e74e6e96e0311ebc3dbd0">memory_pool_collection::try_deallocate_node()</a>.  <a href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#ab6b2ee053486233ab79c63b7c62ebba3">More...</a><br /></td></tr>
 <tr class="separator:ab6b2ee053486233ab79c63b7c62ebba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1b5c3e9797f6ad031b17ef92274fc83"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#ac1b5c3e9797f6ad031b17ef92274fc83">try_deallocate_array</a> (<a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#a4f0f5ff7d5b6e68bb8724ca779b68a27">allocator_type</a> &amp;state, void *<a class="el" href="classwpi_1_1array.html">array</a>, std::size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:ac1b5c3e9797f6ad031b17ef92274fc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Forwards to <a class="el" href="classwpi_1_1memory_1_1memory__pool__collection.html#ab84c01a99510ca1243fa4e86444364d9">memory_pool_collection::deallocate_array()</a>.  <a href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html#ac1b5c3e9797f6ad031b17ef92274fc83">More...</a><br /></td></tr>
 <tr class="separator:ac1b5c3e9797f6ad031b17ef92274fc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -292,8 +290,7 @@ template&lt;class Pool , class BucketDist , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Forwards to <a class="el" href="classwpi_1_1memory_1_1memory__pool__collection.html#ab84c01a99510ca1243fa4e86444364d9">memory_pool_collection::deallocate_array()</a>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Forwards to <a class="el" href="classwpi_1_1memory_1_1memory__pool__collection.html#ab84c01a99510ca1243fa4e86444364d9">memory_pool_collection::deallocate_array()</a>. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the deallocation was successful. </dd></dl>
 
 </div>
@@ -345,8 +342,7 @@ template&lt;class Pool , class BucketDist , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Just forwards to <a class="el" href="classwpi_1_1memory_1_1memory__pool__collection.html#abf69b3a69e0e74e6e96e0311ebc3dbd0">memory_pool_collection::try_deallocate_node()</a>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Just forwards to <a class="el" href="classwpi_1_1memory_1_1memory__pool__collection.html#abf69b3a69e0e74e6e96e0311ebc3dbd0">memory_pool_collection::try_deallocate_node()</a>. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the deallocation was successful. </dd></dl>
 
 </div>
@@ -360,7 +356,7 @@ template&lt;class Pool , class BucketDist , class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1composable__allocator__traits_3_01memory__pool__collection_3_01_pool_00_01cb002dcf07085c1d53352faa4ab48c7f.html">composable_allocator_traits&lt; memory_pool_collection&lt; Pool, BucketDist, RawAllocator &gt; &gt;</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

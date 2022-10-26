@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -338,6 +338,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnt_1_1_timestamped_string_view.html">TimestampedStringView</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamped String view (for SmallVector-taking functions).  <a href="structnt_1_1_timestamped_string_view.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnt_1_1_timestamped_unit.html">TimestampedUnit</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamped unit.  <a href="structnt_1_1_timestamped_unit.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic.html">Topic</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a>.  <a href="classnt_1_1_topic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,6 +358,18 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables <a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> Notification.  <a href="classnt_1_1_topic_notification.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_unit_entry.html">UnitEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables unit-typed entry.  <a href="classnt_1_1_unit_entry.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_unit_publisher.html">UnitPublisher</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables unit-typed publisher.  <a href="classnt_1_1_unit_publisher.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_unit_subscriber.html">UnitSubscriber</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables unit-typed subscriber.  <a href="classnt_1_1_unit_subscriber.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_unit_topic.html">UnitTopic</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NetworkTables unit-typed topic.  <a href="classnt_1_1_unit_topic.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_value.html">Value</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A network table entry value.  <a href="classnt_1_1_value.html#details">More...</a><br /></td></tr>
@@ -540,6 +555,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaff2e1a4fb20abeeadd7ca4a01a6ee4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__topiclistener__func.html#gaaff2e1a4fb20abeeadd7ca4a01a6ee4c">AddTopicListener</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> handle, unsigned int mask, std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt; callback)</td></tr>
 <tr class="memdesc:gaaff2e1a4fb20abeeadd7ca4a01a6ee4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a listener for changes on a particular topic.  <a href="group__ntcore__topiclistener__func.html#gaaff2e1a4fb20abeeadd7ca4a01a6ee4c">More...</a><br /></td></tr>
 <tr class="separator:gaaff2e1a4fb20abeeadd7ca4a01a6ee4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20ed52e98bc4888b9c0081d1ee38ef34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__topiclistener__func.html#ga20ed52e98bc4888b9c0081d1ee38ef34">WaitForTopicListenerQueue</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> handle, double timeout)</td></tr>
+<tr class="memdesc:ga20ed52e98bc4888b9c0081d1ee38ef34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the topic listener queue to be empty.  <a href="group__ntcore__topiclistener__func.html#ga20ed52e98bc4888b9c0081d1ee38ef34">More...</a><br /></td></tr>
+<tr class="separator:ga20ed52e98bc4888b9c0081d1ee38ef34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga330e11c6b633c21ba5087f14612e8394"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8dba8518f43f626ce9163cc54b2be1a6">NT_TopicListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__topiclistener__func.html#ga330e11c6b633c21ba5087f14612e8394">CreateTopicListenerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:ga330e11c6b633c21ba5087f14612e8394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a topic listener poller.  <a href="group__ntcore__topiclistener__func.html#ga330e11c6b633c21ba5087f14612e8394">More...</a><br /></td></tr>
 <tr class="separator:ga330e11c6b633c21ba5087f14612e8394"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -561,6 +579,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa9f8bdf7c8cfb59b95f151a3a26c3d5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__valuelistener__func.html#gaa9f8bdf7c8cfb59b95f151a3a26c3d5d">AddValueListener</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, unsigned int mask, std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt; callback)</td></tr>
 <tr class="memdesc:gaa9f8bdf7c8cfb59b95f151a3a26c3d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a listener for value changes on a subscriber.  <a href="group__ntcore__valuelistener__func.html#gaa9f8bdf7c8cfb59b95f151a3a26c3d5d">More...</a><br /></td></tr>
 <tr class="separator:gaa9f8bdf7c8cfb59b95f151a3a26c3d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bdb2fde819427487231a086f468d5c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__valuelistener__func.html#ga8bdb2fde819427487231a086f468d5c9">WaitForValueListenerQueue</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> handle, double timeout)</td></tr>
+<tr class="memdesc:ga8bdb2fde819427487231a086f468d5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the value listener queue to be empty.  <a href="group__ntcore__valuelistener__func.html#ga8bdb2fde819427487231a086f468d5c9">More...</a><br /></td></tr>
+<tr class="separator:ga8bdb2fde819427487231a086f468d5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2749c497c9c8cc797721412c12cfd63d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gac36787b6c1c7fdd15f9079f44f5e741b">NT_ValueListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__valuelistener__func.html#ga2749c497c9c8cc797721412c12cfd63d">CreateValueListenerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:ga2749c497c9c8cc797721412c12cfd63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a value listener poller.  <a href="group__ntcore__valuelistener__func.html#ga2749c497c9c8cc797721412c12cfd63d">More...</a><br /></td></tr>
 <tr class="separator:ga2749c497c9c8cc797721412c12cfd63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -576,9 +597,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4fd0d443615d1c62e54ec9b44dcd8442"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__valuelistener__func.html#ga4fd0d443615d1c62e54ec9b44dcd8442">RemoveValueListener</a> (<a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a> listener)</td></tr>
 <tr class="memdesc:ga4fd0d443615d1c62e54ec9b44dcd8442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a value listener.  <a href="group__ntcore__valuelistener__func.html#ga4fd0d443615d1c62e54ec9b44dcd8442">More...</a><br /></td></tr>
 <tr class="separator:ga4fd0d443615d1c62e54ec9b44dcd8442"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf15e7dfa175ea46f2c0ff728a53c8723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723">AddConnectionListener</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, std::function&lt; void(const <a class="el" href="classnt_1_1_connection_notification.html">ConnectionNotification</a> &amp;event)&gt; callback, bool immediate_notify)</td></tr>
-<tr class="memdesc:gaf15e7dfa175ea46f2c0ff728a53c8723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723">More...</a><br /></td></tr>
-<tr class="separator:gaf15e7dfa175ea46f2c0ff728a53c8723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21b129c26da0b0d3ec623c9ff3406a2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#ga21b129c26da0b0d3ec623c9ff3406a2a">AddConnectionListener</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, bool immediate_notify, std::function&lt; void(const <a class="el" href="classnt_1_1_connection_notification.html">ConnectionNotification</a> &amp;event)&gt; callback)</td></tr>
+<tr class="memdesc:ga21b129c26da0b0d3ec623c9ff3406a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="group__ntcore__connectionlistener__func.html#ga21b129c26da0b0d3ec623c9ff3406a2a">More...</a><br /></td></tr>
+<tr class="separator:ga21b129c26da0b0d3ec623c9ff3406a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43fc6732d0e6da2abaccaf9e99466077"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#ga43fc6732d0e6da2abaccaf9e99466077">WaitForConnectionListenerQueue</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> handle, double timeout)</td></tr>
+<tr class="memdesc:ga43fc6732d0e6da2abaccaf9e99466077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the connection listener queue to be empty.  <a href="group__ntcore__connectionlistener__func.html#ga43fc6732d0e6da2abaccaf9e99466077">More...</a><br /></td></tr>
+<tr class="separator:ga43fc6732d0e6da2abaccaf9e99466077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaabb526df98891dd02f12a8b90c75c1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2482a18d8ea87cb75f5e3738759a717f">NT_ConnectionListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#gaabb526df98891dd02f12a8b90c75c1e2">CreateConnectionListenerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:gaabb526df98891dd02f12a8b90c75c1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a connection listener poller.  <a href="group__ntcore__connectionlistener__func.html#gaabb526df98891dd02f12a8b90c75c1e2">More...</a><br /></td></tr>
 <tr class="separator:gaabb526df98891dd02f12a8b90c75c1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -987,7 +1011,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -114,25 +114,18 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a773d93e4580152269b50ffde0851e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4a773d93e4580152269b50ffde0851e3">memory_stack_raii_unwind</a> (<a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4c90daa388c3130b315ff22363a9b778">stack_type</a> &amp;stack) noexcept</td></tr>
-<tr class="memdesc:a4a773d93e4580152269b50ffde0851e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Same as <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html" title="Simple utility that automatically unwinds a Stack to a previously saved location.">memory_stack_raii_unwind</a>(stack, stack.top())</code>.  <a href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4a773d93e4580152269b50ffde0851e3">More...</a><br /></td></tr>
 <tr class="separator:a4a773d93e4580152269b50ffde0851e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af25bf6b4746e420228197a20b8da4089"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#af25bf6b4746e420228197a20b8da4089">memory_stack_raii_unwind</a> (<a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a4c90daa388c3130b315ff22363a9b778">stack_type</a> &amp;stack, <a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ae0b0ce58e0a1d89ad62ca08aaf3fdd8b">marker_type</a> marker) noexcept</td></tr>
-<tr class="memdesc:af25bf6b4746e420228197a20b8da4089"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates the unwinder by giving it the stack and the marker.  <a href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#af25bf6b4746e420228197a20b8da4089">More...</a><br /></td></tr>
 <tr class="separator:af25bf6b4746e420228197a20b8da4089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a442f8e73c348ab0d97c9d0822ed4f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a7a442f8e73c348ab0d97c9d0822ed4f4">memory_stack_raii_unwind</a> (<a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html">memory_stack_raii_unwind</a> &amp;&amp;other) noexcept</td></tr>
-<tr class="memdesc:a7a442f8e73c348ab0d97c9d0822ed4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Move constructs the unwinder by taking the saved position from <code>other</code>.  <a href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a7a442f8e73c348ab0d97c9d0822ed4f4">More...</a><br /></td></tr>
 <tr class="separator:a7a442f8e73c348ab0d97c9d0822ed4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f408f418096bdaf10d35810b2032fe6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a8f408f418096bdaf10d35810b2032fe6">~memory_stack_raii_unwind</a> () noexcept</td></tr>
-<tr class="memdesc:a8f408f418096bdaf10d35810b2032fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Unwinds to the previously saved location, if there is any, by calling <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a" title="\effects Unwinds to the saved location explictly.">unwind()</a></code>.  <a href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a8f408f418096bdaf10d35810b2032fe6">More...</a><br /></td></tr>
 <tr class="separator:a8f408f418096bdaf10d35810b2032fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d5335cd2d0c72cb984fce9998127345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html">memory_stack_raii_unwind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a1d5335cd2d0c72cb984fce9998127345">operator=</a> (<a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html">memory_stack_raii_unwind</a> &amp;&amp;other) noexcept</td></tr>
-<tr class="memdesc:a1d5335cd2d0c72cb984fce9998127345"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Move assigns the unwinder by taking the saved position from <code>other</code>.  <a href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a1d5335cd2d0c72cb984fce9998127345">More...</a><br /></td></tr>
 <tr class="separator:a1d5335cd2d0c72cb984fce9998127345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ccea6bf6bfd666ff9a5be3a049465f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a20ccea6bf6bfd666ff9a5be3a049465f">release</a> () noexcept</td></tr>
-<tr class="memdesc:a20ccea6bf6bfd666ff9a5be3a049465f"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Removes the location without unwinding it.  <a href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a20ccea6bf6bfd666ff9a5be3a049465f">More...</a><br /></td></tr>
 <tr class="separator:a20ccea6bf6bfd666ff9a5be3a049465f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad669094ab78b56ee236fa5e66bbbba5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a">unwind</a> () noexcept</td></tr>
-<tr class="memdesc:ad669094ab78b56ee236fa5e66bbbba5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Unwinds to the saved location explictly.  <a href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a">More...</a><br /></td></tr>
 <tr class="separator:ad669094ab78b56ee236fa5e66bbbba5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2796ec9667c70b321bfee80641d8ab77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a2796ec9667c70b321bfee80641d8ab77">will_unwind</a> () const noexcept</td></tr>
 <tr class="separator:a2796ec9667c70b321bfee80641d8ab77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class Stack = memory_stack&lt;&gt;&gt;<br />
 class wpi::memory::memory_stack_raii_unwind&lt; Stack &gt;</div><p >Simple utility that automatically unwinds a <code>Stack</code> to a previously saved location. </p>
-<p >A <code>Stack</code> is anything that provides a <code>marker</code>, a <code>top()</code> function returning a <code>marker</code> and an <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a" title="\effects Unwinds to the saved location explictly.">unwind()</a></code> function to unwind to a <code>marker</code>, like a <a class="el" href="classwpi_1_1memory_1_1memory__stack.html">wpi::memory::memory_stack</a> </p>
+<p >A <code>Stack</code> is anything that provides a <code>marker</code>, a <code>top()</code> function returning a <code>marker</code> and an <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a">unwind()</a></code> function to unwind to a <code>marker</code>, like a <a class="el" href="classwpi_1_1memory_1_1memory__stack.html">wpi::memory::memory_stack</a> </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae0b0ce58e0a1d89ad62ca08aaf3fdd8b" name="ae0b0ce58e0a1d89ad62ca08aaf3fdd8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0b0ce58e0a1d89ad62ca08aaf3fdd8b">&#9670;&nbsp;</a></span>marker_type</h2>
@@ -204,8 +197,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Same as <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html" title="Simple utility that automatically unwinds a Stack to a previously saved location.">memory_stack_raii_unwind</a>(stack, stack.top())</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Same as <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html" title="Simple utility that automatically unwinds a Stack to a previously saved location.">memory_stack_raii_unwind</a>(stack, stack.top())</code>. </dd></dl>
 
 </div>
 </div>
@@ -244,9 +236,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates the unwinder by giving it the stack and the marker. </p>
-<p >\requires The stack must live longer than this object. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates the unwinder by giving it the stack and the marker. \requires The stack must live longer than this object. </dd></dl>
 
 </div>
 </div>
@@ -275,9 +265,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Move constructs the unwinder by taking the saved position from <code>other</code>. </p>
-<p ><code>other.will_unwind()</code> will return <code>false</code> after it. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Move constructs the unwinder by taking the saved position from <code>other</code>. <code>other.will_unwind()</code> will return <code>false</code> after it. </dd></dl>
 
 </div>
 </div>
@@ -305,8 +293,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Unwinds to the previously saved location, if there is any, by calling <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a" title="\effects Unwinds to the saved location explictly.">unwind()</a></code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Unwinds to the previously saved location, if there is any, by calling <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#ad669094ab78b56ee236fa5e66bbbba5a">unwind()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -392,9 +379,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Move assigns the unwinder by taking the saved position from <code>other</code>. </p>
-<p ><code>other.will_unwind()</code> will return <code>false</code> after it. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Move assigns the unwinder by taking the saved position from <code>other</code>. <code>other.will_unwind()</code> will return <code>false</code> after it. </dd></dl>
 
 </div>
 </div>
@@ -422,9 +407,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Removes the location without unwinding it. </p>
-<p ><code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a2796ec9667c70b321bfee80641d8ab77">will_unwind()</a></code> will return <code>false</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Removes the location without unwinding it. <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a2796ec9667c70b321bfee80641d8ab77">will_unwind()</a></code> will return <code>false</code>. </dd></dl>
 
 </div>
 </div>
@@ -452,9 +435,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Unwinds to the saved location explictly. </p>
-<p >\requires <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a2796ec9667c70b321bfee80641d8ab77">will_unwind()</a></code> must return <code>true</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Unwinds to the saved location explictly. \requires <code><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html#a2796ec9667c70b321bfee80641d8ab77">will_unwind()</a></code> must return <code>true</code>. </dd></dl>
 
 </div>
 </div>
@@ -496,7 +477,7 @@ template&lt;class Stack  = memory_stack&lt;&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1memory__stack__raii__unwind.html">memory_stack_raii_unwind</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a027f71ee63d1baa454b3d6175d12655d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__pool.html#a027f71ee63d1baa454b3d6175d12655d">node_size</a> () const noexcept</td></tr>
 <tr class="separator:a027f71ee63d1baa454b3d6175d12655d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebb55d6f487fc883ef870cc1ef39f4f8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__pool.html#aebb55d6f487fc883ef870cc1ef39f4f8">capacity_left</a> () const noexcept</td></tr>
-<tr class="memdesc:aebb55d6f487fc883ef870cc1ef39f4f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Returns the total amount of bytes remaining on the free list.  <a href="classwpi_1_1memory_1_1memory__pool.html#aebb55d6f487fc883ef870cc1ef39f4f8">More...</a><br /></td></tr>
 <tr class="separator:aebb55d6f487fc883ef870cc1ef39f4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d50968a9ea7ca4a1e04373c3586fefb"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__pool.html#a1d50968a9ea7ca4a1e04373c3586fefb">next_capacity</a> () const noexcept</td></tr>
 <tr class="separator:a1d50968a9ea7ca4a1e04373c3586fefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,7 +295,7 @@ template&lt;typename PoolType  = node_pool, class BlockOrRawAllocator  = default
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Moving a <a class="el" href="classwpi_1_1memory_1_1memory__pool.html">memory_pool</a> object transfers ownership over the free list, i.e. the moved from pool is completely empty and the new one has all its memory. That means that it is not allowed to call <a class="el" href="classwpi_1_1memory_1_1memory__pool.html#a4ab71071cdd6c1154d0fbe8c3741eed8">deallocate_node()</a> on a moved-from allocator even when passing it memory that was previously allocated by this object. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Moving a <a class="el" href="classwpi_1_1memory_1_1memory__pool.html">memory_pool</a> object transfers ownership over the free list, i.e. the moved from pool is completely empty and the new one has all its memory. That means that it is not allowed to call <a class="el" href="classwpi_1_1memory_1_1memory__pool.html#a4ab71071cdd6c1154d0fbe8c3741eed8">deallocate_node()</a> on a moved-from allocator even when passing it memory that was previously allocated by this object. </dd></dl>
 
 </div>
 </div>
@@ -380,9 +379,8 @@ template&lt;typename PoolType  = node_pool, class BlockOrRawAllocator  = default
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Returns the total amount of bytes remaining on the free list. </p>
-<p >Divide it by <a class="el" href="classwpi_1_1memory_1_1memory__pool.html#a027f71ee63d1baa454b3d6175d12655d">node_size()</a> to get the number of nodes that can be allocated without growing the arena. </p><dl class="section note"><dt>Note</dt><dd>Array allocations may lead to a growth even if the capacity_left left is big enough. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Returns the total amount of bytes remaining on the free list. Divide it by <a class="el" href="classwpi_1_1memory_1_1memory__pool.html#a027f71ee63d1baa454b3d6175d12655d">node_size()</a> to get the number of nodes that can be allocated without growing the arena. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Array allocations may lead to a growth even if the capacity_left left is big enough. </dd></dl>
 
 </div>
 </div>
@@ -759,7 +757,7 @@ template&lt;class Type , class Alloc &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1memory__pool.html">memory_pool</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -119,10 +119,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a58181ae38305c81edb72032b181f6bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classwpi_1_1memory_1_1reference__storage.html#a58181ae38305c81edb72032b181f6bca">More...</a><br /></td></tr>
 <tr class="separator:a58181ae38305c81edb72032b181f6bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3700059ff79150b089c5e78b14cdc097"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1reference__storage.html#a3700059ff79150b089c5e78b14cdc097">reference_storage</a> (const <a class="el" href="classwpi_1_1memory_1_1reference__storage.html#a50d25db5668147e0eae0609cbda931c1">allocator_type</a> &amp;alloc) noexcept</td></tr>
-<tr class="memdesc:a3700059ff79150b089c5e78b14cdc097"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it from a stateless or shared allocator.  <a href="classwpi_1_1memory_1_1reference__storage.html#a3700059ff79150b089c5e78b14cdc097">More...</a><br /></td></tr>
 <tr class="separator:a3700059ff79150b089c5e78b14cdc097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d3c5188a024a098876faba40948e75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1reference__storage.html#a88d3c5188a024a098876faba40948e75">reference_storage</a> (<a class="el" href="classwpi_1_1memory_1_1reference__storage.html#a50d25db5668147e0eae0609cbda931c1">allocator_type</a> &amp;alloc) noexcept</td></tr>
-<tr class="memdesc:a88d3c5188a024a098876faba40948e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it from a reference to a stateful allocator.  <a href="classwpi_1_1memory_1_1reference__storage.html#a88d3c5188a024a098876faba40948e75">More...</a><br /></td></tr>
 <tr class="separator:a88d3c5188a024a098876faba40948e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318bfc09607456fa44fa8fb47d5dfe2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1reference__storage.html#a318bfc09607456fa44fa8fb47d5dfe2b">operator bool</a> () const noexcept</td></tr>
 <tr class="separator:a318bfc09607456fa44fa8fb47d5dfe2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,7 +183,7 @@ template&lt;class RawAllocator &gt; </div>
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
-<p >\effects If the allocator is stateless, this has no effect and the object is usable as an allocator. If the allocator is stateful, creates an invalid reference without any associated allocator. Then it must not be used. If the allocator is shared, default constructs the shared allocator. If the shared allocator does not have a default constructor, this constructor is ill-formed. </p>
+<dl class="section user"><dt>Effects:</dt><dd>If the allocator is stateless, this has no effect and the object is usable as an allocator. If the allocator is stateful, creates an invalid reference without any associated allocator. Then it must not be used. If the allocator is shared, default constructs the shared allocator. If the shared allocator does not have a default constructor, this constructor is ill-formed. </dd></dl>
 
 </div>
 </div>
@@ -214,9 +212,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it from a stateless or shared allocator. </p>
-<p >It will not store anything, only creates the allocator as needed. \requires The <code>RawAllocator</code> is stateless or shared. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it from a stateless or shared allocator. It will not store anything, only creates the allocator as needed. \requires The <code>RawAllocator</code> is stateless or shared. </dd></dl>
 
 </div>
 </div>
@@ -245,9 +241,8 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it from a reference to a stateful allocator. </p>
-<p >It will store a pointer to this allocator object. </p><dl class="section note"><dt>Note</dt><dd>The user has to take care that the lifetime of the reference does not exceed the allocator lifetime. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it from a reference to a stateful allocator. It will store a pointer to this allocator object. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The user has to take care that the lifetime of the reference does not exceed the allocator lifetime. </dd></dl>
 
 </div>
 </div>
@@ -276,7 +271,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Copies the <code>allocator_reference</code> object. Only copies the pointer to it in the stateful case. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Copies the <code>allocator_reference</code> object. Only copies the pointer to it in the stateful case. </dd></dl>
 
 </div>
 </div>
@@ -428,7 +423,7 @@ template&lt;class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1reference__storage.html">reference_storage</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

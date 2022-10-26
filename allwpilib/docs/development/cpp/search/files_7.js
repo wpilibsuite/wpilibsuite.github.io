@@ -14,6 +14,8 @@ var searchData=
   ['genericpacketmath_2eh_11',['GenericPacketMath.h',['../_generic_packet_math_8h.html',1,'']]],
   ['genericpacketmathfunctions_2eh_12',['GenericPacketMathFunctions.h',['../_generic_packet_math_functions_8h.html',1,'']]],
   ['genericpacketmathfunctionsfwd_2eh_13',['GenericPacketMathFunctionsFwd.h',['../_generic_packet_math_functions_fwd_8h.html',1,'']]],
-  ['globalfunctions_2eh_14',['GlobalFunctions.h',['../_global_functions_8h.html',1,'']]],
-  ['gyro_2eh_15',['Gyro.h',['../_gyro_8h.html',1,'']]]
+  ['getaddrinfo_2eh_14',['GetAddrInfo.h',['../_get_addr_info_8h.html',1,'']]],
+  ['getnameinfo_2eh_15',['GetNameInfo.h',['../_get_name_info_8h.html',1,'']]],
+  ['globalfunctions_2eh_16',['GlobalFunctions.h',['../_global_functions_8h.html',1,'']]],
+  ['gyro_2eh_17',['Gyro.h',['../_gyro_8h.html',1,'']]]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -116,12 +116,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a154dd09b9c3f748c98a7735200ab53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a6a154dd09b9c3f748c98a7735200ab53">growing_block_allocator</a> (std::size_t block_size, <a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a87e2f89013180557870793ab6d8841a9">allocator_type</a> alloc=<a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a87e2f89013180557870793ab6d8841a9">allocator_type</a>()) noexcept</td></tr>
-<tr class="memdesc:a6a154dd09b9c3f748c98a7735200ab53"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by giving it the initial block size, the allocator object and the growth factor.  <a href="classwpi_1_1memory_1_1growing__block__allocator.html#a6a154dd09b9c3f748c98a7735200ab53">More...</a><br /></td></tr>
 <tr class="separator:a6a154dd09b9c3f748c98a7735200ab53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a2a5bf302f272cea63be7ca7495b1d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a1a2a5bf302f272cea63be7ca7495b1d1">allocate_block</a> ()</td></tr>
 <tr class="separator:a1a2a5bf302f272cea63be7ca7495b1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c160064bb54e585529b5cc85cacccd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a6c160064bb54e585529b5cc85cacccd0">deallocate_block</a> (<a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a> block) noexcept</td></tr>
-<tr class="memdesc:a6c160064bb54e585529b5cc85cacccd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates a previously allocated memory block.  <a href="classwpi_1_1memory_1_1growing__block__allocator.html#a6c160064bb54e585529b5cc85cacccd0">More...</a><br /></td></tr>
 <tr class="separator:a6c160064bb54e585529b5cc85cacccd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20806734dc6c8b4d61d1630af3603b58"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a20806734dc6c8b4d61d1630af3603b58">next_block_size</a> () const noexcept</td></tr>
 <tr class="separator:a20806734dc6c8b4d61d1630af3603b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,9 +186,7 @@ template&lt;class RawAllocator  = default_allocator, unsigned Num = 2, unsigned 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by giving it the initial block size, the allocator object and the growth factor. </p>
-<p >By default, it uses a default-constructed allocator object and a growth factor of <code>2</code>. \requires <code>block_size</code> must be greater than 0. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by giving it the initial block size, the allocator object and the growth factor. By default, it uses a default-constructed allocator object and a growth factor of <code>2</code>. \requires <code>block_size</code> must be greater than 0. </dd></dl>
 
 </div>
 </div>
@@ -247,9 +243,7 @@ template&lt;class RawAllocator  = default_allocator, unsigned Num = 2, unsigned 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates a previously allocated memory block. </p>
-<p >This does not decrease the block size. \requires <code>block</code> must be previously returned by a call to <a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a1a2a5bf302f272cea63be7ca7495b1d1">allocate_block()</a>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates a previously allocated memory block. This does not decrease the block size. \requires <code>block</code> must be previously returned by a call to <a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html#a1a2a5bf302f272cea63be7ca7495b1d1">allocate_block()</a>. </dd></dl>
 
 </div>
 </div>
@@ -373,7 +367,7 @@ template&lt;class RawAllocator  = default_allocator, unsigned Num = 2, unsigned 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1growing__block__allocator.html">growing_block_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

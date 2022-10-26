@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -113,13 +113,10 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a730df90f49fc3c790fa0bc7d3b3d5eb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html#a730df90f49fc3c790fa0bc7d3b3d5eb9">temporary_stack_initializer</a> (<a class="el" href="structwpi_1_1memory_1_1temporary__stack__initializer_1_1defer__create__t.html">defer_create_t</a>) noexcept</td></tr>
-<tr class="memdesc:a730df90f49fc3c790fa0bc7d3b3d5eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Does not create the per-thread stack.  <a href="classwpi_1_1memory_1_1temporary__stack__initializer.html#a730df90f49fc3c790fa0bc7d3b3d5eb9">More...</a><br /></td></tr>
 <tr class="separator:a730df90f49fc3c790fa0bc7d3b3d5eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab196d757e0f03de57842c05a9161fc12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html#ab196d757e0f03de57842c05a9161fc12">temporary_stack_initializer</a> (std::size_t initial_size=<a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html#a0865fd66d723b06d205efe6a295bfa0c">default_stack_size</a>)</td></tr>
-<tr class="memdesc:ab196d757e0f03de57842c05a9161fc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates the per-thread stack with the given default size if it wasn't already created.  <a href="classwpi_1_1memory_1_1temporary__stack__initializer.html#ab196d757e0f03de57842c05a9161fc12">More...</a><br /></td></tr>
 <tr class="separator:ab196d757e0f03de57842c05a9161fc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c65148de05fb3a2ebe8ef3acebab25a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html#a1c65148de05fb3a2ebe8ef3acebab25a">~temporary_stack_initializer</a> () noexcept</td></tr>
-<tr class="memdesc:a1c65148de05fb3a2ebe8ef3acebab25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Destroys the per-thread stack if it isn't already destroyed.  <a href="classwpi_1_1memory_1_1temporary__stack__initializer.html#a1c65148de05fb3a2ebe8ef3acebab25a">More...</a><br /></td></tr>
 <tr class="separator:a1c65148de05fb3a2ebe8ef3acebab25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfeb1cd7a0bf0c41d911b9b7743a935"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html#aacfeb1cd7a0bf0c41d911b9b7743a935">temporary_stack_initializer</a> (<a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html">temporary_stack_initializer</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:aacfeb1cd7a0bf0c41d911b9b7743a935"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,9 +161,8 @@ If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, the use of this class has 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Does not create the per-thread stack. </p>
-<p >It will be created by the first call to <a class="el" href="namespacewpi_1_1memory.html#a7f311d60d4857926d16396fc6a3be15a">get_temporary_stack()</a> in the current thread. </p><dl class="section note"><dt>Note</dt><dd>If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, this function has no effect. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Does not create the per-thread stack. It will be created by the first call to <a class="el" href="namespacewpi_1_1memory.html#a7f311d60d4857926d16396fc6a3be15a">get_temporary_stack()</a> in the current thread. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, this function has no effect. </dd></dl>
 
 </div>
 </div>
@@ -185,9 +181,8 @@ If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, the use of this class has 
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>\effects Creates the per-thread stack with the given default size if it wasn't already created. </p>
-<p >\requires <code>initial_size</code> must not be <code>0</code> if <code>WPI_MEMORY_TEMPORARY_STACK_MODE != 0</code>. </p><dl class="section note"><dt>Note</dt><dd>If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, this function will issue a warning in debug mode. This can be disabled by passing <code>0</code> as the initial size. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Creates the per-thread stack with the given default size if it wasn't already created. \requires <code>initial_size</code> must not be <code>0</code> if <code>WPI_MEMORY_TEMPORARY_STACK_MODE != 0</code>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, this function will issue a warning in debug mode. This can be disabled by passing <code>0</code> as the initial size. </dd></dl>
 
 </div>
 </div>
@@ -213,8 +208,7 @@ If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, the use of this class has 
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Destroys the per-thread stack if it isn't already destroyed. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Destroys the per-thread stack if it isn't already destroyed. </dd></dl>
 
 </div>
 </div>
@@ -325,7 +319,7 @@ If <code>WPI_MEMORY_TEMPORARY_STACK_MODE == 0</code>, the use of this class has 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html">temporary_stack_initializer</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -81,7 +81,7 @@ var ntcore__c_8h =
       [ "NT_VALUE_NOTIFY_IMMEDIATE", "group__ntcore__c__api.html#gga57e71a22090e6970470a2ea43d91a4fea818845ca17ce29cf852821d2e7e982d3", null ],
       [ "NT_VALUE_NOTIFY_LOCAL", "group__ntcore__c__api.html#gga57e71a22090e6970470a2ea43d91a4feafcdda34ad3b9fd52c4650eb8c8a25aa4", null ]
     ] ],
-    [ "NT_AddConnectionListener", "group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062", null ],
+    [ "NT_AddConnectionListener", "group__ntcore__connectionlistener__cfunc.html#gacf983822fafd9999f0a5bee383948126", null ],
     [ "NT_AddLogger", "group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee", null ],
     [ "NT_AddPolledConnectionListener", "group__ntcore__connectionlistener__cfunc.html#gaa018bc4434a3e580ab944f8e0dac7221", null ],
     [ "NT_AddPolledLogger", "group__ntcore__logger__cfunc.html#gaed63e3bae15ba09927e1866a0f07e83c", null ],
@@ -211,5 +211,8 @@ var ntcore__c_8h =
     [ "NT_SubscribeMultiple", "group__ntcore__advancedsub__cfunc.html#gac860998de43e8eae1d581e2e4782d0cb", null ],
     [ "NT_Unpublish", "group__ntcore__topic__cfunc.html#gaebb4f4dcfafae42a9ac69146bf86feac", null ],
     [ "NT_Unsubscribe", "group__ntcore__topic__cfunc.html#gaf99102225ef906e3c1f3273ff5fc26e8", null ],
-    [ "NT_UnsubscribeMultiple", "group__ntcore__advancedsub__cfunc.html#ga3805e9c57da3204fe45de869ed20e39c", null ]
+    [ "NT_UnsubscribeMultiple", "group__ntcore__advancedsub__cfunc.html#ga3805e9c57da3204fe45de869ed20e39c", null ],
+    [ "NT_WaitForConnectionListenerQueue", "group__ntcore__connectionlistener__cfunc.html#ga0d276bfa4ee79065a81a58d75065b242", null ],
+    [ "NT_WaitForTopicListenerQueue", "group__ntcore__topiclistener__cfunc.html#ga7a14e553272b6abc9ebf749c4cfd70e3", null ],
+    [ "NT_WaitForValueListenerQueue", "group__ntcore__valuelistener__cfunc.html#ga54c497a31b01531bb4bd91e582c77b29", null ]
 ];

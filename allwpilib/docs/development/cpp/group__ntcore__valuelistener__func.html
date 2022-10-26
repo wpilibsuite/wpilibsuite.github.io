@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa9f8bdf7c8cfb59b95f151a3a26c3d5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__valuelistener__func.html#gaa9f8bdf7c8cfb59b95f151a3a26c3d5d">nt::AddValueListener</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> subentry, unsigned int mask, std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt; callback)</td></tr>
 <tr class="memdesc:gaa9f8bdf7c8cfb59b95f151a3a26c3d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a listener for value changes on a subscriber.  <a href="group__ntcore__valuelistener__func.html#gaa9f8bdf7c8cfb59b95f151a3a26c3d5d">More...</a><br /></td></tr>
 <tr class="separator:gaa9f8bdf7c8cfb59b95f151a3a26c3d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bdb2fde819427487231a086f468d5c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__valuelistener__func.html#ga8bdb2fde819427487231a086f468d5c9">nt::WaitForValueListenerQueue</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> handle, double timeout)</td></tr>
+<tr class="memdesc:ga8bdb2fde819427487231a086f468d5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the value listener queue to be empty.  <a href="group__ntcore__valuelistener__func.html#ga8bdb2fde819427487231a086f468d5c9">More...</a><br /></td></tr>
+<tr class="separator:ga8bdb2fde819427487231a086f468d5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2749c497c9c8cc797721412c12cfd63d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gac36787b6c1c7fdd15f9079f44f5e741b">NT_ValueListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__valuelistener__func.html#ga2749c497c9c8cc797721412c12cfd63d">nt::CreateValueListenerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:ga2749c497c9c8cc797721412c12cfd63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a value listener poller.  <a href="group__ntcore__valuelistener__func.html#ga2749c497c9c8cc797721412c12cfd63d">More...</a><br /></td></tr>
 <tr class="separator:ga2749c497c9c8cc797721412c12cfd63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,12 +321,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga8bdb2fde819427487231a086f468d5c9" name="ga8bdb2fde819427487231a086f468d5c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bdb2fde819427487231a086f468d5c9">&#9670;&nbsp;</a></span>WaitForValueListenerQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nt::WaitForValueListenerQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for the value listener queue to be empty. </p>
+<p >This is primarily useful for deterministic testing. This blocks until either the value listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle </td></tr>
+    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

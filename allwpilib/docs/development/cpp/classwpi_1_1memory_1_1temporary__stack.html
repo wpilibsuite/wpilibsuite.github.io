@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -120,12 +120,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8d52db0ee57d46ebb02a51d3b58d77d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ac8d52db0ee57d46ebb02a51d3b58d77d">set_growth_tracker</a> (<a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a> t) noexcept</td></tr>
-<tr class="memdesc:ac8d52db0ee57d46ebb02a51d3b58d77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>.  <a href="classwpi_1_1memory_1_1temporary__stack.html#ac8d52db0ee57d46ebb02a51d3b58d77d">More...</a><br /></td></tr>
 <tr class="separator:ac8d52db0ee57d46ebb02a51d3b58d77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45a8e675efe478c1cb982fef190c23f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#a45a8e675efe478c1cb982fef190c23f8">get_growth_tracker</a> () noexcept</td></tr>
 <tr class="separator:a45a8e675efe478c1cb982fef190c23f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88f1a1a2b96e047bbb0fd4917498d4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ab88f1a1a2b96e047bbb0fd4917498d4d">temporary_stack</a> (std::size_t initial_size)</td></tr>
-<tr class="memdesc:ab88f1a1a2b96e047bbb0fd4917498d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it with a given initial size of the stack.  <a href="classwpi_1_1memory_1_1temporary__stack.html#ab88f1a1a2b96e047bbb0fd4917498d4d">More...</a><br /></td></tr>
 <tr class="separator:ab88f1a1a2b96e047bbb0fd4917498d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e9893c6b7d46021df05e7b8344898e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ae3e9893c6b7d46021df05e7b8344898e">next_capacity</a> () const noexcept</td></tr>
 <tr class="separator:ae3e9893c6b7d46021df05e7b8344898e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +133,6 @@ Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p >(Note that these are not member functions.) </p>
 </td></tr>
 <tr class="memitem:a7f311d60d4857926d16396fc6a3be15a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html">temporary_stack</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#a7f311d60d4857926d16396fc6a3be15a">get_temporary_stack</a> (std::size_t initial_size=<a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html#a0865fd66d723b06d205efe6a295bfa0c">temporary_stack_initializer::default_stack_size</a>)</td></tr>
-<tr class="memdesc:a7f311d60d4857926d16396fc6a3be15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates the per-thread <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html">temporary_stack</a> with the given initial size, if it wasn't already created.  <a href="classwpi_1_1memory_1_1temporary__stack.html#a7f311d60d4857926d16396fc6a3be15a">More...</a><br /></td></tr>
 <tr class="separator:a7f311d60d4857926d16396fc6a3be15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -183,9 +180,7 @@ Related Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it with a given initial size of the stack. </p>
-<p >It can grow if needed, although that is expensive. \requires <code>initial_size</code> must be greater than <code>0</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it with a given initial size of the stack. It can grow if needed, although that is expensive. \requires <code>initial_size</code> must be greater than <code>0</code>. </dd></dl>
 
 </div>
 </div>
@@ -265,9 +260,8 @@ Related Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>. </p>
-<p >A <code>nullptr</code> sets the default <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>. Each thread has its own, separate tracker. </p><dl class="section return"><dt>Returns</dt><dd>The previous <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>. This is never <code>nullptr</code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>. A <code>nullptr</code> sets the default <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>. Each thread has its own, separate tracker. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The previous <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html#ad0095e533961804ba2ba722c4eb63b8a">growth_tracker</a>. This is never <code>nullptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -295,8 +289,7 @@ Related Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates the per-thread <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html">temporary_stack</a> with the given initial size, if it wasn't already created. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates the per-thread <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html">temporary_stack</a> with the given initial size, if it wasn't already created. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The per-thread <a class="el" href="classwpi_1_1memory_1_1temporary__stack.html">temporary_stack</a>. \requires There must be a per-thread temporary stack (<a class="el" href="config__impl_8hpp.html#a1cf12a43d0d3af418c32a76a4572eb57">WPI_MEMORY_TEMPORARY_STACK_MODE</a> must not be equal to <code>0</code>). </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>If <a class="el" href="config__impl_8hpp.html#a1cf12a43d0d3af418c32a76a4572eb57">WPI_MEMORY_TEMPORARY_STACK_MODE</a> is equal to <code>1</code>, this function can create the temporary stack. But if there is no <a class="el" href="classwpi_1_1memory_1_1temporary__stack__initializer.html">temporary_stack_initializer</a>, it won't be destroyed. </dd></dl>
 
@@ -311,7 +304,7 @@ Related Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1temporary__stack.html">temporary_stack</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -103,16 +103,13 @@ $(document).ready(function(){initNavTree('classwpi_1_1memory_1_1null__allocator.
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a26bd0c7692413a4c543f06f40dc5bbd8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1null__allocator.html#a26bd0c7692413a4c543f06f40dc5bbd8">allocate_node</a> (std::size_t size, std::size_t)</td></tr>
-<tr class="memdesc:a26bd0c7692413a4c543f06f40dc5bbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Will always throw.  <a href="classwpi_1_1memory_1_1null__allocator.html#a26bd0c7692413a4c543f06f40dc5bbd8">More...</a><br /></td></tr>
 <tr class="separator:a26bd0c7692413a4c543f06f40dc5bbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dabd892e0c3f590fdcfdb524fd12121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1null__allocator.html#a5dabd892e0c3f590fdcfdb524fd12121">deallocate_node</a> (void *, std::size_t, std::size_t) noexcept</td></tr>
 <tr class="memdesc:a5dabd892e0c3f590fdcfdb524fd12121"><td class="mdescLeft">&#160;</td><td class="mdescRight">\requires Must not be called.  <a href="classwpi_1_1memory_1_1null__allocator.html#a5dabd892e0c3f590fdcfdb524fd12121">More...</a><br /></td></tr>
 <tr class="separator:a5dabd892e0c3f590fdcfdb524fd12121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a622d7bb1e09455c50c039dfdf6ebe667"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1null__allocator.html#a622d7bb1e09455c50c039dfdf6ebe667">try_allocate_node</a> (std::size_t, std::size_t) noexcept</td></tr>
-<tr class="memdesc:a622d7bb1e09455c50c039dfdf6ebe667"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Does nothing.  <a href="classwpi_1_1memory_1_1null__allocator.html#a622d7bb1e09455c50c039dfdf6ebe667">More...</a><br /></td></tr>
 <tr class="separator:a622d7bb1e09455c50c039dfdf6ebe667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a845e9b08372ab2daba3f07cfc60b96f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1null__allocator.html#a845e9b08372ab2daba3f07cfc60b96f4">try_deallocate_node</a> (void *, std::size_t, std::size_t) noexcept</td></tr>
-<tr class="memdesc:a845e9b08372ab2daba3f07cfc60b96f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Does nothing.  <a href="classwpi_1_1memory_1_1null__allocator.html#a845e9b08372ab2daba3f07cfc60b96f4">More...</a><br /></td></tr>
 <tr class="separator:a845e9b08372ab2daba3f07cfc60b96f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -149,8 +146,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Will always throw. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Will always throw. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">A</td><td><a class="el" href="classwpi_1_1memory_1_1out__of__fixed__memory.html">out_of_fixed_memory</a> exception. </td></tr>
@@ -237,8 +233,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Does nothing. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Does nothing. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Always returns <code>nullptr</code>. </dd></dl>
 
 </div>
@@ -282,8 +277,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Does nothing. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Does nothing. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Always returns <code>false</code>. </dd></dl>
 
 </div>
@@ -297,7 +291,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1null__allocator.html">null_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

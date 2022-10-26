@@ -10,5 +10,6 @@ var group__ntcore__topiclistener__cfunc =
     [ "NT_CreateTopicListenerPoller", "group__ntcore__topiclistener__cfunc.html#ga9b6adef53182feab900dc086f8224171", null ],
     [ "NT_DestroyTopicListenerPoller", "group__ntcore__topiclistener__cfunc.html#ga327e4bab7968c3f4d25fd4da9643fa7a", null ],
     [ "NT_ReadTopicListenerQueue", "group__ntcore__topiclistener__cfunc.html#ga73358f62d5fe593a2d46abc4ddc8aedf", null ],
-    [ "NT_RemoveTopicListener", "group__ntcore__topiclistener__cfunc.html#ga80c9b2687b2425e2c335ecb412ecacca", null ]
+    [ "NT_RemoveTopicListener", "group__ntcore__topiclistener__cfunc.html#ga80c9b2687b2425e2c335ecb412ecacca", null ],
+    [ "NT_WaitForTopicListenerQueue", "group__ntcore__topiclistener__cfunc.html#ga7a14e553272b6abc9ebf749c4cfd70e3", null ]
 ];

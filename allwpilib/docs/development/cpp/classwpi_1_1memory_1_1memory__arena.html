@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -128,12 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a416ce61caccf77571b59665eeec2e1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__arena.html#a416ce61caccf77571b59665eeec2e1c4">current_block</a> () const noexcept</td></tr>
 <tr class="separator:a416ce61caccf77571b59665eeec2e1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf837039b9750fe098ff0c2810e22c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__arena.html#a6cf837039b9750fe098ff0c2810e22c1">deallocate_block</a> () noexcept</td></tr>
-<tr class="memdesc:a6cf837039b9750fe098ff0c2810e22c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates the current memory block.  <a href="classwpi_1_1memory_1_1memory__arena.html#a6cf837039b9750fe098ff0c2810e22c1">More...</a><br /></td></tr>
 <tr class="separator:a6cf837039b9750fe098ff0c2810e22c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdebed1845b99d79ab0a70f19080f6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__arena.html#acfdebed1845b99d79ab0a70f19080f6a">owns</a> (const void *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>) const noexcept</td></tr>
 <tr class="separator:acfdebed1845b99d79ab0a70f19080f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f937a0901f75af706dc6a70e488924b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__arena.html#a1f937a0901f75af706dc6a70e488924b">shrink_to_fit</a> () noexcept</td></tr>
-<tr class="memdesc:a1f937a0901f75af706dc6a70e488924b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Purges the cache of unused memory blocks by returning them.  <a href="classwpi_1_1memory_1_1memory__arena.html#a1f937a0901f75af706dc6a70e488924b">More...</a><br /></td></tr>
 <tr class="separator:a1f937a0901f75af706dc6a70e488924b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6badeda8cfeed0d9a87c4f8e28079c00"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__arena.html#a6badeda8cfeed0d9a87c4f8e28079c00">capacity</a> () const noexcept</td></tr>
 <tr class="separator:a6badeda8cfeed0d9a87c4f8e28079c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,7 +157,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a2dc598195c9866c89d0914380a37480b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__arena.html#a2dc598195c9866c89d0914380a37480b">swap</a> (<a class="el" href="classwpi_1_1memory_1_1memory__arena.html">memory_arena</a> &amp;a, <a class="el" href="classwpi_1_1memory_1_1memory__arena.html">memory_arena</a> &amp;b) noexcept</td></tr>
-<tr class="memdesc:a2dc598195c9866c89d0914380a37480b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Swaps to memory arena objects.  <a href="classwpi_1_1memory_1_1memory__arena.html#a2dc598195c9866c89d0914380a37480b">More...</a><br /></td></tr>
 <tr class="separator:a2dc598195c9866c89d0914380a37480b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -288,7 +285,7 @@ template&lt;class BlockAllocator , bool Cached&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Moves the arena. The new arena takes ownership over all the memory blocks from the other arena object, which is empty after that. This does not invalidate any memory blocks. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Moves the arena. The new arena takes ownership over all the memory blocks from the other arena object, which is empty after that. This does not invalidate any memory blocks. </dd></dl>
 
 </div>
 </div>
@@ -428,9 +425,7 @@ template&lt;class BlockAllocator , bool Cached&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates the current memory block. </p>
-<p >The current memory block is the block on top of the stack of blocks. If caching is enabled, it does not really deallocate it but puts it onto a cache for later use, use <a class="el" href="classwpi_1_1memory_1_1memory__arena.html#a1f937a0901f75af706dc6a70e488924b">shrink_to_fit()</a> to purge that cache. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates the current memory block. The current memory block is the block on top of the stack of blocks. If caching is enabled, it does not really deallocate it but puts it onto a cache for later use, use <a class="el" href="classwpi_1_1memory_1_1memory__arena.html#a1f937a0901f75af706dc6a70e488924b">shrink_to_fit()</a> to purge that cache. </dd></dl>
 
 </div>
 </div>
@@ -598,9 +593,7 @@ template&lt;class BlockAllocator , bool Cached&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Purges the cache of unused memory blocks by returning them. </p>
-<p >The memory blocks will be deallocated in reversed order of allocation. Does nothing if caching is disabled. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Purges the cache of unused memory blocks by returning them. The memory blocks will be deallocated in reversed order of allocation. Does nothing if caching is disabled. </dd></dl>
 
 </div>
 </div>
@@ -668,9 +661,7 @@ template&lt;class BlockAllocator , bool Cached&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Swaps to memory arena objects. </p>
-<p >This does not invalidate any memory blocks. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Swaps to memory arena objects. This does not invalidate any memory blocks. </dd></dl>
 
 </div>
 </div>
@@ -683,7 +674,7 @@ template&lt;class BlockAllocator , bool Cached&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1memory__arena.html">memory_arena</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -95,32 +95,29 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool_1
 </div><!--header-->
 <div class="contents">
 
-<p>\effects Allocates an nodes by searching for <code>n</code> continuous nodes on the list and removing them.  
-<a href="conceptwpi_1_1memory_1_1memory__pool_1_1of.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="memory__pool_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_pool.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1memory__pool_1_1of.html">wpi::memory::memory_pool::of</a> = </div>
-<div class="ttc" id="aconceptwpi_1_1memory_1_1memory__pool_1_1of_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1memory__pool_1_1of.html">of</a></div><div class="ttdoc">\effects Allocates an nodes by searching for n continuous nodes on the list and removing them.</div></div>
+<div class="ttc" id="aconceptwpi_1_1memory_1_1memory__pool_1_1of_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1memory__pool_1_1of.html">of</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >\effects Allocates an nodes by searching for <code>n</code> continuous nodes on the list and removing them. </p>
-<p >\effects Allocates an nodes similar to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a11ba56c63dcf7c5763ae6d090efc699f">allocate_array()</a>.</p>
-<p >Depending on the <code>PoolType</code> this can be a slow operation or not allowed at all. This can sometimes lead to a growth, even if technically there is enough continuous memory on the free list. </p><dl class="section return"><dt>Returns</dt><dd>An array of <code>n</code> nodes of size node_size() suitable aligned. </dd></dl>
+<div class="textblock"><dl class="section user"><dt>Effects:</dt><dd>Allocates an nodes by searching for <code>n</code> continuous nodes on the list and removing them. Depending on the <code>PoolType</code> this can be a slow operation or not allowed at all. This can sometimes lead to a growth, even if technically there is enough continuous memory on the free list. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An array of <code>n</code> nodes of size node_size() suitable aligned. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">Anything</td><td>thrown by the used</td></tr>
   </table>
   </dd>
 </dl>
-<p>But it will never allocate a new memory block. </p><dl class="section return"><dt>Returns</dt><dd>An array of <code>n</code> nodes of size node_size() suitable aligned or <code>nullptr</code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates an nodes similar to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a11ba56c63dcf7c5763ae6d090efc699f">allocate_array()</a>. But it will never allocate a new memory block. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An array of <code>n</code> nodes of size node_size() suitable aligned or <code>nullptr</code>. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool_1_1of.html">of</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

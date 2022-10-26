@@ -38,6 +38,7 @@ var classfrc_1_1_a_d_i_s16470___i_m_u =
     [ "GetYComplementaryAngle", "classfrc_1_1_a_d_i_s16470___i_m_u.html#aa2c9f7f5fc7cf3d137a39efe297d09f5", null ],
     [ "GetYFilteredAccelAngle", "classfrc_1_1_a_d_i_s16470___i_m_u.html#a2a625eae28d31fb1f0f422d5bcb09921", null ],
     [ "InitSendable", "classfrc_1_1_a_d_i_s16470___i_m_u.html#a10b6241e1eaba3aaa5487d7e7a9b7463", null ],
+    [ "IsConnected", "classfrc_1_1_a_d_i_s16470___i_m_u.html#a279cf7ecb891c496edbf5476483954df", null ],
     [ "operator=", "classfrc_1_1_a_d_i_s16470___i_m_u.html#ab05633be4a3573056bbe044badd089f2", null ],
     [ "Reset", "classfrc_1_1_a_d_i_s16470___i_m_u.html#aca09ca5b4dcfeb0f2fcc27d7b2a202d3", null ],
     [ "SetYawAxis", "classfrc_1_1_a_d_i_s16470___i_m_u.html#a70b510744dca480bf4ba8fbc4a6e46ca", null ],

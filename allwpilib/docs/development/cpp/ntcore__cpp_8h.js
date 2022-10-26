@@ -1,6 +1,6 @@
 var ntcore__cpp_8h =
 [
-    [ "AddConnectionListener", "ntcore__cpp_8h.html#gaf15e7dfa175ea46f2c0ff728a53c8723", null ],
+    [ "AddConnectionListener", "ntcore__cpp_8h.html#ga21b129c26da0b0d3ec623c9ff3406a2a", null ],
     [ "AddLogger", "ntcore__cpp_8h.html#ga8171c7719887be8c60df6fbbf8408399", null ],
     [ "AddPolledConnectionListener", "ntcore__cpp_8h.html#gaf40981b49ae44aa901af719afed08e2c", null ],
     [ "AddPolledLogger", "ntcore__cpp_8h.html#ga875a42e5559a9fb660855de570fa9445", null ],
@@ -94,5 +94,8 @@ var ntcore__cpp_8h =
     [ "SubscribeMultiple", "ntcore__cpp_8h.html#ga5cba9293b52a19368b4b9df8fbb91c0d", null ],
     [ "Unpublish", "ntcore__cpp_8h.html#gae203b3a3d7df7d631d413ba7b15cae3f", null ],
     [ "Unsubscribe", "ntcore__cpp_8h.html#ga0ba450f716fcc7e60be7c8a19e10caad", null ],
-    [ "UnsubscribeMultiple", "ntcore__cpp_8h.html#gaad95d125ab0fb2734b7557886bc168b9", null ]
+    [ "UnsubscribeMultiple", "ntcore__cpp_8h.html#gaad95d125ab0fb2734b7557886bc168b9", null ],
+    [ "WaitForConnectionListenerQueue", "ntcore__cpp_8h.html#ga43fc6732d0e6da2abaccaf9e99466077", null ],
+    [ "WaitForTopicListenerQueue", "ntcore__cpp_8h.html#ga20ed52e98bc4888b9c0081d1ee38ef34", null ],
+    [ "WaitForValueListenerQueue", "ntcore__cpp_8h.html#ga8bdb2fde819427487231a086f468d5c9", null ]
 ];

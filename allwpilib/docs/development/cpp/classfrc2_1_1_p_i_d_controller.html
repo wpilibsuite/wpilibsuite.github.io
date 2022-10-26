@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -152,6 +152,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa04ef363ce45c5c30c579b87335cb59a"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_controller.html#aa04ef363ce45c5c30c579b87335cb59a">GetPeriod</a> () const</td></tr>
 <tr class="memdesc:aa04ef363ce45c5c30c579b87335cb59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the period of this controller.  <a href="classfrc2_1_1_p_i_d_controller.html#aa04ef363ce45c5c30c579b87335cb59a">More...</a><br /></td></tr>
 <tr class="separator:aa04ef363ce45c5c30c579b87335cb59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670a59333ba28e0d3838636088e3a6cb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_controller.html#a670a59333ba28e0d3838636088e3a6cb">GetPositionTolerance</a> () const</td></tr>
+<tr class="memdesc:a670a59333ba28e0d3838636088e3a6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position tolerance of this controller.  <a href="classfrc2_1_1_p_i_d_controller.html#a670a59333ba28e0d3838636088e3a6cb">More...</a><br /></td></tr>
+<tr class="separator:a670a59333ba28e0d3838636088e3a6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5ca1f0837b53d64153ee983f71979c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_controller.html#a5a5ca1f0837b53d64153ee983f71979c">GetVelocityTolerance</a> () const</td></tr>
+<tr class="memdesc:a5a5ca1f0837b53d64153ee983f71979c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the velocity tolerance of this controller.  <a href="classfrc2_1_1_p_i_d_controller.html#a5a5ca1f0837b53d64153ee983f71979c">More...</a><br /></td></tr>
+<tr class="separator:a5a5ca1f0837b53d64153ee983f71979c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a944c25a60818e8401776a8dd89d89b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_controller.html#a8a944c25a60818e8401776a8dd89d89b">SetSetpoint</a> (double setpoint)</td></tr>
 <tr class="memdesc:a8a944c25a60818e8401776a8dd89d89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the setpoint for the <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">PIDController</a>.  <a href="classfrc2_1_1_p_i_d_controller.html#a8a944c25a60818e8401776a8dd89d89b">More...</a><br /></td></tr>
 <tr class="separator:a8a944c25a60818e8401776a8dd89d89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -589,6 +595,26 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a670a59333ba28e0d3838636088e3a6cb" name="a670a59333ba28e0d3838636088e3a6cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670a59333ba28e0d3838636088e3a6cb">&#9670;&nbsp;</a></span>GetPositionTolerance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double frc2::PIDController::GetPositionTolerance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the position tolerance of this controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position tolerance of the controller. </dd></dl>
+
+</div>
+</div>
 <a id="a7ab9fb9348845bbb14ca19cd88c52694" name="a7ab9fb9348845bbb14ca19cd88c52694"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ab9fb9348845bbb14ca19cd88c52694">&#9670;&nbsp;</a></span>GetSetpoint()</h2>
 
@@ -625,6 +651,26 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the velocity error. </p>
+
+</div>
+</div>
+<a id="a5a5ca1f0837b53d64153ee983f71979c" name="a5a5ca1f0837b53d64153ee983f71979c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5ca1f0837b53d64153ee983f71979c">&#9670;&nbsp;</a></span>GetVelocityTolerance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double frc2::PIDController::GetVelocityTolerance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the velocity tolerance of this controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>The velocity tolerance of the controller. </dd></dl>
 
 </div>
 </div>
@@ -987,7 +1033,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

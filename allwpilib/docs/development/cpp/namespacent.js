@@ -78,12 +78,17 @@ var namespacent =
     [ "TimestampedString", "structnt_1_1_timestamped_string.html", "structnt_1_1_timestamped_string" ],
     [ "TimestampedStringArray", "structnt_1_1_timestamped_string_array.html", "structnt_1_1_timestamped_string_array" ],
     [ "TimestampedStringView", "structnt_1_1_timestamped_string_view.html", "structnt_1_1_timestamped_string_view" ],
+    [ "TimestampedUnit", "structnt_1_1_timestamped_unit.html", "structnt_1_1_timestamped_unit" ],
     [ "Topic", "classnt_1_1_topic.html", "classnt_1_1_topic" ],
     [ "TopicInfo", "structnt_1_1_topic_info.html", "structnt_1_1_topic_info" ],
     [ "TopicListener", "classnt_1_1_topic_listener.html", "classnt_1_1_topic_listener" ],
     [ "TopicListenerFlags", "structnt_1_1_topic_listener_flags.html", "structnt_1_1_topic_listener_flags" ],
     [ "TopicListenerPoller", "classnt_1_1_topic_listener_poller.html", "classnt_1_1_topic_listener_poller" ],
     [ "TopicNotification", "classnt_1_1_topic_notification.html", "classnt_1_1_topic_notification" ],
+    [ "UnitEntry", "classnt_1_1_unit_entry.html", "classnt_1_1_unit_entry" ],
+    [ "UnitPublisher", "classnt_1_1_unit_publisher.html", "classnt_1_1_unit_publisher" ],
+    [ "UnitSubscriber", "classnt_1_1_unit_subscriber.html", "classnt_1_1_unit_subscriber" ],
+    [ "UnitTopic", "classnt_1_1_unit_topic.html", "classnt_1_1_unit_topic" ],
     [ "Value", "classnt_1_1_value.html", "classnt_1_1_value" ],
     [ "ValueListener", "classnt_1_1_value_listener.html", "classnt_1_1_value_listener" ],
     [ "ValueListenerFlags", "structnt_1_1_value_listener_flags.html", "structnt_1_1_value_listener_flags" ],
@@ -104,7 +109,7 @@ var namespacent =
       [ "kIntegerArray", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca67113db1e1ffe0f04dde96bf9c802386", null ],
       [ "kFloatArray", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca497f8684227bbfb38d270ad87c5a6267", null ]
     ] ],
-    [ "AddConnectionListener", "group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723", null ],
+    [ "AddConnectionListener", "group__ntcore__connectionlistener__func.html#ga21b129c26da0b0d3ec623c9ff3406a2a", null ],
     [ "AddLogger", "group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399", null ],
     [ "AddPolledConnectionListener", "group__ntcore__connectionlistener__func.html#gaf40981b49ae44aa901af719afed08e2c", null ],
     [ "AddPolledLogger", "group__ntcore__logger__func.html#ga875a42e5559a9fb660855de570fa9445", null ],
@@ -278,5 +283,8 @@ var namespacent =
     [ "SubscribeMultiple", "group__ntcore__advancedsub__func.html#ga5cba9293b52a19368b4b9df8fbb91c0d", null ],
     [ "Unpublish", "group__ntcore__topic__func.html#gae203b3a3d7df7d631d413ba7b15cae3f", null ],
     [ "Unsubscribe", "group__ntcore__topic__func.html#ga0ba450f716fcc7e60be7c8a19e10caad", null ],
-    [ "UnsubscribeMultiple", "group__ntcore__advancedsub__func.html#gaad95d125ab0fb2734b7557886bc168b9", null ]
+    [ "UnsubscribeMultiple", "group__ntcore__advancedsub__func.html#gaad95d125ab0fb2734b7557886bc168b9", null ],
+    [ "WaitForConnectionListenerQueue", "group__ntcore__connectionlistener__func.html#ga43fc6732d0e6da2abaccaf9e99466077", null ],
+    [ "WaitForTopicListenerQueue", "group__ntcore__topiclistener__func.html#ga20ed52e98bc4888b9c0081d1ee38ef34", null ],
+    [ "WaitForValueListenerQueue", "group__ntcore__valuelistener__func.html#ga8bdb2fde819427487231a086f468d5c9", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,6 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a194e53a3acf44b2c1999bda48e5d3971"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a194e53a3acf44b2c1999bda48e5d3971">bad_allocation_size</a> (const <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a> &amp;info, std::size_t passed, std::size_t supported)</td></tr>
-<tr class="memdesc:a194e53a3acf44b2c1999bda48e5d3971"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it the <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a>, the size passed to the allocation function and an upper bound on the supported size.  <a href="classwpi_1_1memory_1_1bad__allocation__size.html#a194e53a3acf44b2c1999bda48e5d3971">More...</a><br /></td></tr>
 <tr class="separator:a194e53a3acf44b2c1999bda48e5d3971"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad12f4f8cc8e5d623077c519e63b0ba1c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#ad12f4f8cc8e5d623077c519e63b0ba1c">what</a> () const noexcept override</td></tr>
 <tr class="separator:ad12f4f8cc8e5d623077c519e63b0ba1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +138,6 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a2821b5b8f92a253f7fbd50607cc3192d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a2821b5b8f92a253f7fbd50607cc3192d">set_handler</a> (<a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a> h)</td></tr>
-<tr class="memdesc:a2821b5b8f92a253f7fbd50607cc3192d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a> in an atomic operation.  <a href="classwpi_1_1memory_1_1bad__allocation__size.html#a2821b5b8f92a253f7fbd50607cc3192d">More...</a><br /></td></tr>
 <tr class="separator:a2821b5b8f92a253f7fbd50607cc3192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19b12281d644b08bd4b6f6987c0d805c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a19b12281d644b08bd4b6f6987c0d805c">get_handler</a> ()</td></tr>
 <tr class="separator:a19b12281d644b08bd4b6f6987c0d805c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +199,7 @@ Most checks will only be done if <a class="el" href="config__impl_8hpp.html#a57b
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it the <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a>, the size passed to the allocation function and an upper bound on the supported size. </p>
-<p >It also calls the <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a> to control whether or not it will be thrown. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it the <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a>, the size passed to the allocation function and an upper bound on the supported size. It also calls the <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a> to control whether or not it will be thrown. </dd></dl>
 
 </div>
 </div>
@@ -309,9 +305,8 @@ Most checks will only be done if <a class="el" href="config__impl_8hpp.html#a57b
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a> in an atomic operation. </p>
-<p >A <code>nullptr</code> sets the default <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a>. </p><dl class="section return"><dt>Returns</dt><dd>The previous <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a>. This is never <code>nullptr</code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a> in an atomic operation. A <code>nullptr</code> sets the default <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The previous <a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html#a50adaca35d429fbb59605995329cebbc">handler</a>. This is never <code>nullptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -376,7 +371,7 @@ Most checks will only be done if <a class="el" href="config__impl_8hpp.html#a57b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1bad__allocation__size.html">bad_allocation_size</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

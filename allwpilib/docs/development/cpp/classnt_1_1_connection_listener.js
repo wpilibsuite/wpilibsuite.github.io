@@ -8,5 +8,6 @@ var classnt_1_1_connection_listener =
     [ "GetHandle", "classnt_1_1_connection_listener.html#a9f057a0b2ed41f30ed5c9b137f3d905a", null ],
     [ "operator bool", "classnt_1_1_connection_listener.html#ad8e0ca7a206355af40cc6e82061c3c30", null ],
     [ "operator=", "classnt_1_1_connection_listener.html#a179dd966088c44dae53902145c882b69", null ],
-    [ "operator=", "classnt_1_1_connection_listener.html#a959496b2864a8b5fce7e44daea873796", null ]
+    [ "operator=", "classnt_1_1_connection_listener.html#a959496b2864a8b5fce7e44daea873796", null ],
+    [ "WaitForQueue", "classnt_1_1_connection_listener.html#aecc0b6c14d2e69520fa2922f9975ccb8", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -121,10 +121,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af65cd2608f9afc924cdc4aef5808a509"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="utility_8hpp.html#aad2ce6c0f67a732899fa005db1fe2f78">WPI_REQUIRES</a>((std::is_base_of&lt; BaseType, T &gt;<a class="el" href="classvalue.html">::value</a>)) &gt; </td></tr>
 <tr class="memitem:af65cd2608f9afc924cdc4aef5808a509"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#af65cd2608f9afc924cdc4aef5808a509">allocator_polymorphic_deleter</a> (<a class="el" href="classwpi_1_1memory_1_1allocator__deleter.html">allocator_deleter</a>&lt; T, RawAllocator &gt; deleter)</td></tr>
-<tr class="memdesc:af65cd2608f9afc924cdc4aef5808a509"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it from a deleter for a derived type.  <a href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#af65cd2608f9afc924cdc4aef5808a509">More...</a><br /></td></tr>
 <tr class="separator:af65cd2608f9afc924cdc4aef5808a509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c2ced12fe3287412203032cf0357aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#a32c2ced12fe3287412203032cf0357aa">operator()</a> (<a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#a0132b85f919b09d93b1d489deef427f0">value_type</a> *pointer) noexcept</td></tr>
-<tr class="memdesc:a32c2ced12fe3287412203032cf0357aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates the memory given to it.  <a href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#a32c2ced12fe3287412203032cf0357aa">More...</a><br /></td></tr>
 <tr class="separator:a32c2ced12fe3287412203032cf0357aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a439ea1bf4c22c33dc6f213be40d3d2b8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#a439ea1bf4c22c33dc6f213be40d3d2b8">get_allocator</a> () const noexcept -&gt; decltype(std::declval&lt; allocator_reference&lt; <a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html#afe0b99ffe04681339b9c43501a896ec0">allocator_type</a> &gt; &gt;().get_allocator())</td></tr>
 <tr class="separator:a439ea1bf4c22c33dc6f213be40d3d2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,9 +192,7 @@ template&lt;typename T , <a class="el" href="utility_8hpp.html#aad2ce6c0f67a7328
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it from a deleter for a derived type. </p>
-<p >It will deallocate the memory as if done by the derived type. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it from a deleter for a derived type. It will deallocate the memory as if done by the derived type. </dd></dl>
 
 </div>
 </div>
@@ -255,9 +251,7 @@ template&lt;typename BaseType , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates the memory given to it. </p>
-<p >Calls <code>deallocate_node(pointer, size, alignment)</code> on the referenced allocator object, where <code>size</code> and <code>alignment</code> are the values of the type it was created with. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates the memory given to it. Calls <code>deallocate_node(pointer, size, alignment)</code> on the referenced allocator object, where <code>size</code> and <code>alignment</code> are the values of the type it was created with. </dd></dl>
 
 </div>
 </div>
@@ -270,7 +264,7 @@ template&lt;typename BaseType , class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1allocator__polymorphic__deleter.html">allocator_polymorphic_deleter</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

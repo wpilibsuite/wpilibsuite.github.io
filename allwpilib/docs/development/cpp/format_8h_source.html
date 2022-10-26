@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -3064,7 +3064,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02968" name="l02968"></a><span class="lineno"> 2968</span><span class="comment">// Positive Floating-Point Printout ((FPP)^2) algorithm by Steele &amp; White:</span></div>
 <div class="line"><a id="l02969" name="l02969"></a><span class="lineno"> 2969</span><span class="comment">// https://fmt.dev/papers/p372-steele.pdf.</span></div>
 <div class="line"><a id="l02970" name="l02970"></a><span class="lineno"><a class="line" href="format_8h.html#a510659ecef3d8ef10992996732a723f7"> 2970</a></span><a class="code hl_define" href="core_8h.html#acebe0f930dd6aecc374db251062e9d10">FMT_CONSTEXPR20</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="format_8h.html#a510659ecef3d8ef10992996732a723f7">format_dragon</a>(<a class="code hl_struct" href="structbasic__fp.html">basic_fp&lt;uint128_t&gt;</a> <a class="code hl_class" href="classvalue.html">value</a>,</div>
-<div class="line"><a id="l02971" name="l02971"></a><span class="lineno"> 2971</span>                                          <span class="keywordtype">unsigned</span> flags, <span class="keywordtype">int</span> num_digits,</div>
+<div class="line"><a id="l02971" name="l02971"></a><span class="lineno"> 2971</span>                                          <span class="keywordtype">unsigned</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>, <span class="keywordtype">int</span> num_digits,</div>
 <div class="line"><a id="l02972" name="l02972"></a><span class="lineno"> 2972</span>                                          <a class="code hl_class" href="classbuffer.html">buffer&lt;char&gt;</a>&amp; buf, <span class="keywordtype">int</span>&amp; exp10) {</div>
 <div class="line"><a id="l02973" name="l02973"></a><span class="lineno"> 2973</span>  <a class="code hl_class" href="classbigint.html">bigint</a> numerator;    <span class="comment">// 2 * R in (FPP)^2.</span></div>
 <div class="line"><a id="l02974" name="l02974"></a><span class="lineno"> 2974</span>  <a class="code hl_class" href="classbigint.html">bigint</a> denominator;  <span class="comment">// 2 * S in (FPP)^2.</span></div>
@@ -3075,7 +3075,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02979" name="l02979"></a><span class="lineno"> 2979</span>  <span class="comment">// Shift numerator and denominator by an extra bit or two (if lower boundary</span></div>
 <div class="line"><a id="l02980" name="l02980"></a><span class="lineno"> 2980</span>  <span class="comment">// is closer) to make lower and upper integers. This eliminates multiplication</span></div>
 <div class="line"><a id="l02981" name="l02981"></a><span class="lineno"> 2981</span>  <span class="comment">// by 2 during later computations.</span></div>
-<div class="line"><a id="l02982" name="l02982"></a><span class="lineno"> 2982</span>  <span class="keywordtype">bool</span> is_predecessor_closer = (flags &amp; <a class="code hl_enumvalue" href="format_8h.html#a4dee4b07c5b2b2fab7d23ec3d775bc92a09dfb43c5882f64f48829ee530d6fc93">dragon::predecessor_closer</a>) != 0;</div>
+<div class="line"><a id="l02982" name="l02982"></a><span class="lineno"> 2982</span>  <span class="keywordtype">bool</span> is_predecessor_closer = (<a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a> &amp; <a class="code hl_enumvalue" href="format_8h.html#a4dee4b07c5b2b2fab7d23ec3d775bc92a09dfb43c5882f64f48829ee530d6fc93">dragon::predecessor_closer</a>) != 0;</div>
 <div class="line"><a id="l02983" name="l02983"></a><span class="lineno"> 2983</span>  <span class="keywordtype">int</span> shift = is_predecessor_closer ? 2 : 1;</div>
 <div class="line"><a id="l02984" name="l02984"></a><span class="lineno"> 2984</span>  <span class="keywordflow">if</span> (<a class="code hl_class" href="classvalue.html">value</a>.e &gt;= 0) {</div>
 <div class="line"><a id="l02985" name="l02985"></a><span class="lineno"> 2985</span>    numerator = <a class="code hl_class" href="classvalue.html">value</a>.f;</div>
@@ -3114,7 +3114,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l03018" name="l03018"></a><span class="lineno"> 3018</span>  }</div>
 <div class="line"><a id="l03019" name="l03019"></a><span class="lineno"> 3019</span>  <span class="keywordtype">int</span> even = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>((<a class="code hl_class" href="classvalue.html">value</a>.f &amp; 1) == 0);</div>
 <div class="line"><a id="l03020" name="l03020"></a><span class="lineno"> 3020</span>  <span class="keywordflow">if</span> (!upper) upper = &amp;lower;</div>
-<div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span>  <span class="keywordflow">if</span> ((flags &amp; <a class="code hl_enumvalue" href="format_8h.html#a4dee4b07c5b2b2fab7d23ec3d775bc92a8535ff0e8fe71cff1e2d4a5119d94183">dragon::fixup</a>) != 0) {</div>
+<div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span>  <span class="keywordflow">if</span> ((<a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a> &amp; <a class="code hl_enumvalue" href="format_8h.html#a4dee4b07c5b2b2fab7d23ec3d775bc92a8535ff0e8fe71cff1e2d4a5119d94183">dragon::fixup</a>) != 0) {</div>
 <div class="line"><a id="l03022" name="l03022"></a><span class="lineno"> 3022</span>    <span class="keywordflow">if</span> (add_compare(numerator, *upper, denominator) + even &lt;= 0) {</div>
 <div class="line"><a id="l03023" name="l03023"></a><span class="lineno"> 3023</span>      --exp10;</div>
 <div class="line"><a id="l03024" name="l03024"></a><span class="lineno"> 3024</span>      numerator *= 10;</div>
@@ -3123,7 +3123,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l03027" name="l03027"></a><span class="lineno"> 3027</span>        <span class="keywordflow">if</span> (upper != &amp;lower) *upper *= 10;</div>
 <div class="line"><a id="l03028" name="l03028"></a><span class="lineno"> 3028</span>      }</div>
 <div class="line"><a id="l03029" name="l03029"></a><span class="lineno"> 3029</span>    }</div>
-<div class="line"><a id="l03030" name="l03030"></a><span class="lineno"> 3030</span>    <span class="keywordflow">if</span> ((flags &amp; <a class="code hl_enumvalue" href="format_8h.html#a4dee4b07c5b2b2fab7d23ec3d775bc92ab9ad6d537a019231f52c2e5ed22d5bfb">dragon::fixed</a>) != 0) <a class="code hl_function" href="format_8h.html#ae8b528974b85b8665de631c7f11a3854">adjust_precision</a>(num_digits, exp10 + 1);</div>
+<div class="line"><a id="l03030" name="l03030"></a><span class="lineno"> 3030</span>    <span class="keywordflow">if</span> ((<a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a> &amp; <a class="code hl_enumvalue" href="format_8h.html#a4dee4b07c5b2b2fab7d23ec3d775bc92ab9ad6d537a019231f52c2e5ed22d5bfb">dragon::fixed</a>) != 0) <a class="code hl_function" href="format_8h.html#ae8b528974b85b8665de631c7f11a3854">adjust_precision</a>(num_digits, exp10 + 1);</div>
 <div class="line"><a id="l03031" name="l03031"></a><span class="lineno"> 3031</span>  }</div>
 <div class="line"><a id="l03032" name="l03032"></a><span class="lineno"> 3032</span>  <span class="comment">// Invariant: value == (numerator / denominator) * pow(10, exp10).</span></div>
 <div class="line"><a id="l03033" name="l03033"></a><span class="lineno"> 3033</span>  <span class="keywordflow">if</span> (num_digits &lt; 0) {</div>
@@ -4716,6 +4716,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="ttc" id="anamespaceunits_html_a77b2abc79841f7f67c7bc406b7c5083b"><div class="ttname"><a href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">units::b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
 <div class="ttc" id="anamespaceunits_html_aecc88b3b6cd76d31d268b8b661eaf4a8"><div class="ttname"><a href="namespaceunits.html#aecc88b3b6cd76d31d268b8b661eaf4a8">units::bits</a></div><div class="ttdeci">bits</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
+<div class="ttc" id="anamespacewpi_html_a7b0000b45b0b55789f757f1c3d2461cb"><div class="ttname"><a href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">wpi::flags</a></div><div class="ttdeci">flags</div><div class="ttdef"><b>Definition:</b> http_parser.h:206</div></div>
 <div class="ttc" id="aranges_8h_html_a080be1238e6ee3bd4b9f193b4181cf4da1d78dc8ed51214e518b5114fe24490ae"><div class="ttname"><a href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4da1d78dc8ed51214e518b5114fe24490ae">range_format::map</a></div><div class="ttdeci">@ map</div></div>
 <div class="ttc" id="aranges_8h_html_a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e"><div class="ttname"><a href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4dacdaeeeba9b4a4c5ebf042c0215a7bb0e">range_format::set</a></div><div class="ttdeci">@ set</div></div>
 <div class="ttc" id="astructarg__formatter_html"><div class="ttname"><a href="structarg__formatter.html">arg_formatter</a></div><div class="ttdef"><b>Definition:</b> format.h:3384</div></div>
@@ -4850,7 +4851,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="format_8h.html">format.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

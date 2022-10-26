@@ -46,7 +46,8 @@ var searchData=
   ['llvm_5fthread_5flocal_43',['LLVM_THREAD_LOCAL',['../_compiler_8h.html#a793005af6ae802d5a2a2e8ceb4ac2135',1,'Compiler.h']]],
   ['llvm_5fthread_5fsanitizer_5fbuild_44',['LLVM_THREAD_SANITIZER_BUILD',['../_compiler_8h.html#ab6b3e49c523b219bee6271deca48ccab',1,'Compiler.h']]],
   ['llvm_5funlikely_45',['LLVM_UNLIKELY',['../_compiler_8h.html#a104cae72182bec0ab951e3faea6ce509',1,'Compiler.h']]],
-  ['lwg_5f2682_5fbehaviour_46',['LWG_2682_BEHAVIOUR',['../filesystem_8hpp.html#aee57d1254f36c2d03761d661d6510e09',1,'filesystem.hpp']]],
-  ['lwg_5f2936_5fbehaviour_47',['LWG_2936_BEHAVIOUR',['../filesystem_8hpp.html#a99e59b30ee1255ba9643483e4a695f54',1,'filesystem.hpp']]],
-  ['lwg_5f2937_5fbehaviour_48',['LWG_2937_BEHAVIOUR',['../filesystem_8hpp.html#ae5f9e15c7ef2758eb345aab62274b178',1,'filesystem.hpp']]]
+  ['locale_5finvariant_46',['LOCALE_INVARIANT',['../win_8h.html#a5d2d8566d17748dcb91375ec41141205',1,'win.h']]],
+  ['lwg_5f2682_5fbehaviour_47',['LWG_2682_BEHAVIOUR',['../filesystem_8hpp.html#aee57d1254f36c2d03761d661d6510e09',1,'filesystem.hpp']]],
+  ['lwg_5f2936_5fbehaviour_48',['LWG_2936_BEHAVIOUR',['../filesystem_8hpp.html#a99e59b30ee1255ba9643483e4a695f54',1,'filesystem.hpp']]],
+  ['lwg_5f2937_5fbehaviour_49',['LWG_2937_BEHAVIOUR',['../filesystem_8hpp.html#ae5f9e15c7ef2758eb345aab62274b178',1,'filesystem.hpp']]]
 ];

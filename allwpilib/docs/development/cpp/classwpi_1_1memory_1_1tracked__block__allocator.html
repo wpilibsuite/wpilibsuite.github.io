@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -118,13 +118,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2da9b8d42c01f72afe5b3ef186202cf3"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a2da9b8d42c01f72afe5b3ef186202cf3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__block__allocator.html#a2da9b8d42c01f72afe5b3ef186202cf3">tracked_block_allocator</a> (std::size_t block_size, <a class="el" href="classwpi_1_1memory_1_1tracked__block__allocator.html#aaa46442045e7cb2a042f107d2a41ec4d">tracker</a> t, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a2da9b8d42c01f72afe5b3ef186202cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it in the form required by the concept.  <a href="classwpi_1_1memory_1_1tracked__block__allocator.html#a2da9b8d42c01f72afe5b3ef186202cf3">More...</a><br /></td></tr>
 <tr class="separator:a2da9b8d42c01f72afe5b3ef186202cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a706174afe15aa67ec4ac1ecf9dd1fca6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__block__allocator.html#a706174afe15aa67ec4ac1ecf9dd1fca6">allocate_block</a> ()</td></tr>
-<tr class="memdesc:a706174afe15aa67ec4ac1ecf9dd1fca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls <code>Tracker::on_allocator_growth()</code> after forwarding to the allocator.  <a href="classwpi_1_1memory_1_1tracked__block__allocator.html#a706174afe15aa67ec4ac1ecf9dd1fca6">More...</a><br /></td></tr>
 <tr class="separator:a706174afe15aa67ec4ac1ecf9dd1fca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ce9eb3150bc0f90412287351cd2db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__block__allocator.html#aa7ce9eb3150bc0f90412287351cd2db9">deallocate_block</a> (<a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a> block) noexcept</td></tr>
-<tr class="memdesc:aa7ce9eb3150bc0f90412287351cd2db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls <code>Tracker::on_allocator_shrinking()</code> and forwards to the allocator.  <a href="classwpi_1_1memory_1_1tracked__block__allocator.html#aa7ce9eb3150bc0f90412287351cd2db9">More...</a><br /></td></tr>
 <tr class="separator:aa7ce9eb3150bc0f90412287351cd2db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074eab52e1751c57ecc8cb5de56a1e7d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__block__allocator.html#a074eab52e1751c57ecc8cb5de56a1e7d">next_block_size</a> () const noexcept</td></tr>
 <tr class="separator:a074eab52e1751c57ecc8cb5de56a1e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,9 +284,7 @@ template&lt;typename... Args&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it in the form required by the concept. </p>
-<p >The allocator will be constructed using <code>block_size</code> and <code>args</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it in the form required by the concept. The allocator will be constructed using <code>block_size</code> and <code>args</code>. </dd></dl>
 
 </div>
 </div>
@@ -318,8 +313,7 @@ template&lt;class Tracker , class BlockOrRawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls <code>Tracker::on_allocator_growth()</code> after forwarding to the allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Calls <code>Tracker::on_allocator_growth()</code> after forwarding to the allocator. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The block as the returned by the allocator. </dd></dl>
 
 </div>
@@ -349,8 +343,7 @@ template&lt;class Tracker , class BlockOrRawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls <code>Tracker::on_allocator_shrinking()</code> and forwards to the allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Calls <code>Tracker::on_allocator_shrinking()</code> and forwards to the allocator. </dd></dl>
 
 </div>
 </div>
@@ -501,7 +494,7 @@ template&lt;class Tracker , class BlockOrRawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1tracked__block__allocator.html">tracked_block_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

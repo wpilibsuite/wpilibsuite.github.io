@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -3932,9 +3932,9 @@ $(document).ready(function(){initNavTree('filesystem_8hpp_source.html',''); init
 <div class="line"><a id="l03836" name="l03836"></a><span class="lineno"> 3836</span>        ::close(in);</div>
 <div class="line"><a id="l03837" name="l03837"></a><span class="lineno"> 3837</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l03838" name="l03838"></a><span class="lineno"> 3838</span>    }</div>
-<div class="line"><a id="l03839" name="l03839"></a><span class="lineno"> 3839</span>    ssize_t br, bw;</div>
+<div class="line"><a id="l03839" name="l03839"></a><span class="lineno"> 3839</span>    <a class="code hl_typedef" href="win_8h.html#af10f4c58d91a6fa30ccc8a19d0ecbf48">ssize_t</a> br, bw;</div>
 <div class="line"><a id="l03840" name="l03840"></a><span class="lineno"> 3840</span>    <span class="keywordflow">while</span> ((br = <a class="code hl_function" href="namespacewpi_1_1support_1_1endian.html#a1860e8c05fe03cd6b9912c5bec5f8c2f">::read</a>(in, <a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#a5fe8b50555561bfb4d77a2adcd5f79b2">data</a>(), <a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#aebcfda1cf597e92fdd876bb1b9a1ba2a">size</a>())) &gt; 0) {</div>
-<div class="line"><a id="l03841" name="l03841"></a><span class="lineno"> 3841</span>        ssize_t offset = 0;</div>
+<div class="line"><a id="l03841" name="l03841"></a><span class="lineno"> 3841</span>        <a class="code hl_typedef" href="win_8h.html#af10f4c58d91a6fa30ccc8a19d0ecbf48">ssize_t</a> offset = 0;</div>
 <div class="line"><a id="l03842" name="l03842"></a><span class="lineno"> 3842</span>        <span class="keywordflow">do</span> {</div>
 <div class="line"><a id="l03843" name="l03843"></a><span class="lineno"> 3843</span>            <span class="keywordflow">if</span> ((bw = <a class="code hl_function" href="format_8h.html#ae4ee88335d231f18bf091ba820592525">::write</a>(out, <a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#a5fe8b50555561bfb4d77a2adcd5f79b2">data</a>() + offset, <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(br))) &gt; 0) {</div>
 <div class="line"><a id="l03844" name="l03844"></a><span class="lineno"> 3844</span>                br -= bw;</div>
@@ -6454,13 +6454,14 @@ $(document).ready(function(){initNavTree('filesystem_8hpp_source.html',''); init
 <div class="ttc" id="astructghc_1_1filesystem_1_1space__info_html_a95b7c53cc1fb574e962dadbb43b4061f"><div class="ttname"><a href="structghc_1_1filesystem_1_1space__info.html#a95b7c53cc1fb574e962dadbb43b4061f">ghc::filesystem::space_info::free</a></div><div class="ttdeci">uintmax_t free</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:700</div></div>
 <div class="ttc" id="astructghc_1_1filesystem_1_1space__info_html_ab682b53b57105c671314ac6da837cf3e"><div class="ttname"><a href="structghc_1_1filesystem_1_1space__info.html#ab682b53b57105c671314ac6da837cf3e">ghc::filesystem::space_info::available</a></div><div class="ttdeci">uintmax_t available</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:701</div></div>
 <div class="ttc" id="astructghc_1_1filesystem_1_1space__info_html_ae3aaec720c16cab46c72d253be7dca9d"><div class="ttname"><a href="structghc_1_1filesystem_1_1space__info.html#ae3aaec720c16cab46c72d253be7dca9d">ghc::filesystem::space_info::capacity</a></div><div class="ttdeci">uintmax_t capacity</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:699</div></div>
+<div class="ttc" id="awin_8h_html_af10f4c58d91a6fa30ccc8a19d0ecbf48"><div class="ttname"><a href="win_8h.html#af10f4c58d91a6fa30ccc8a19d0ecbf48">ssize_t</a></div><div class="ttdeci">intptr_t ssize_t</div><div class="ttdef"><b>Definition:</b> win.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_8670a57877e3a70f24848cb4c5dcb3bb.html">ghc</a></li><li class="navelem"><a class="el" href="dir_41752836929528852a57a200cdd97bed.html">include</a></li><li class="navelem"><a class="el" href="dir_3be2d52c46de7556bd9bcb6f18d723f1.html">wpi</a></li><li class="navelem"><a class="el" href="dir_865798773ba1878bdc02272d2a0d0f2c.html">ghc</a></li><li class="navelem"><a class="el" href="filesystem_8hpp.html">filesystem.hpp</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

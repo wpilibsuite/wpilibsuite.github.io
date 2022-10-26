@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d005e9227bc0fe7f1e8e16997dce4db"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1iteration__allocator.html#a4d005e9227bc0fe7f1e8e16997dce4db">try_allocate</a> (std::size_t size, std::size_t alignment) noexcept</td></tr>
 <tr class="separator:a4d005e9227bc0fe7f1e8e16997dce4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a036475f7aca771390f8e652ccfe1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1iteration__allocator.html#a63a036475f7aca771390f8e652ccfe1d">next_iteration</a> () noexcept</td></tr>
-<tr class="memdesc:a63a036475f7aca771390f8e652ccfe1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Goes to the next internal stack.  <a href="classwpi_1_1memory_1_1iteration__allocator.html#a63a036475f7aca771390f8e652ccfe1d">More...</a><br /></td></tr>
 <tr class="separator:a63a036475f7aca771390f8e652ccfe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2d1cea309a6301db070018f913900f"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1iteration__allocator.html#a1c2d1cea309a6301db070018f913900f">cur_iteration</a> () const noexcept</td></tr>
 <tr class="separator:a1c2d1cea309a6301db070018f913900f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -461,9 +460,8 @@ template&lt;std::size_t N, class BlockOrRawAllocator  = default_allocator&gt; </
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Goes to the next internal stack. </p>
-<p >This will clear the stack whose <a class="el" href="classwpi_1_1memory_1_1iteration__allocator.html#a54548c5e83e7f67cb0d3135c7bd7dce9">max_iterations()</a> lifetime has reached, and use it for all allocations in this iteration. </p><dl class="section note"><dt>Note</dt><dd>This function should be called at the end of the loop. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Goes to the next internal stack. This will clear the stack whose <a class="el" href="classwpi_1_1memory_1_1iteration__allocator.html#a54548c5e83e7f67cb0d3135c7bd7dce9">max_iterations()</a> lifetime has reached, and use it for all allocations in this iteration. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function should be called at the end of the loop. </dd></dl>
 
 </div>
 </div>
@@ -542,7 +540,7 @@ template&lt;std::size_t N, class BlockOrRawAllocator  = default_allocator&gt; </
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1iteration__allocator.html">iteration_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

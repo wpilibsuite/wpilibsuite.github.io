@@ -5,5 +5,6 @@ var group__ntcore__valuelistener__func =
     [ "nt::CreateValueListenerPoller", "group__ntcore__valuelistener__func.html#ga2749c497c9c8cc797721412c12cfd63d", null ],
     [ "nt::DestroyValueListenerPoller", "group__ntcore__valuelistener__func.html#ga80e463eccb661305f2d3f46c35635339", null ],
     [ "nt::ReadValueListenerQueue", "group__ntcore__valuelistener__func.html#ga913b63cb8eb3a93e678ab4e90c0d2ed8", null ],
-    [ "nt::RemoveValueListener", "group__ntcore__valuelistener__func.html#ga4fd0d443615d1c62e54ec9b44dcd8442", null ]
+    [ "nt::RemoveValueListener", "group__ntcore__valuelistener__func.html#ga4fd0d443615d1c62e54ec9b44dcd8442", null ],
+    [ "nt::WaitForValueListenerQueue", "group__ntcore__valuelistener__func.html#ga8bdb2fde819427487231a086f468d5c9", null ]
 ];

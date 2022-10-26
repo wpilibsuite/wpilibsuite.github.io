@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-alpha-1-14-g10ed4b3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-27-gb2a0093</span>
    </div>
   </td>
  </tr>
@@ -105,6 +105,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaff2e1a4fb20abeeadd7ca4a01a6ee4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__topiclistener__func.html#gaaff2e1a4fb20abeeadd7ca4a01a6ee4c">nt::AddTopicListener</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> handle, unsigned int mask, std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt; callback)</td></tr>
 <tr class="memdesc:gaaff2e1a4fb20abeeadd7ca4a01a6ee4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a listener for changes on a particular topic.  <a href="group__ntcore__topiclistener__func.html#gaaff2e1a4fb20abeeadd7ca4a01a6ee4c">More...</a><br /></td></tr>
 <tr class="separator:gaaff2e1a4fb20abeeadd7ca4a01a6ee4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20ed52e98bc4888b9c0081d1ee38ef34"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__topiclistener__func.html#ga20ed52e98bc4888b9c0081d1ee38ef34">nt::WaitForTopicListenerQueue</a> (<a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a> handle, double timeout)</td></tr>
+<tr class="memdesc:ga20ed52e98bc4888b9c0081d1ee38ef34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the topic listener queue to be empty.  <a href="group__ntcore__topiclistener__func.html#ga20ed52e98bc4888b9c0081d1ee38ef34">More...</a><br /></td></tr>
+<tr class="separator:ga20ed52e98bc4888b9c0081d1ee38ef34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga330e11c6b633c21ba5087f14612e8394"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8dba8518f43f626ce9163cc54b2be1a6">NT_TopicListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__topiclistener__func.html#ga330e11c6b633c21ba5087f14612e8394">nt::CreateTopicListenerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
 <tr class="memdesc:ga330e11c6b633c21ba5087f14612e8394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a topic listener poller.  <a href="group__ntcore__topiclistener__func.html#ga330e11c6b633c21ba5087f14612e8394">More...</a><br /></td></tr>
 <tr class="separator:ga330e11c6b633c21ba5087f14612e8394"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,12 +424,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga20ed52e98bc4888b9c0081d1ee38ef34" name="ga20ed52e98bc4888b9c0081d1ee38ef34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20ed52e98bc4888b9c0081d1ee38ef34">&#9670;&nbsp;</a></span>WaitForTopicListenerQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nt::WaitForTopicListenerQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga79f7f312ac11ee9c2f75f34e7aacbed4">NT_Handle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for the topic listener queue to be empty. </p>
+<p >This is primarily useful for deterministic testing. This blocks until either the topic listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle </td></tr>
+    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 22 2022 05:07:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Oct 26 2022 02:24:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

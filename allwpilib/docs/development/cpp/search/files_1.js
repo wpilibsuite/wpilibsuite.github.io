@@ -35,13 +35,13 @@ var searchData=
   ['analoggyrodata_2eh_32',['AnalogGyroData.h',['../_analog_gyro_data_8h.html',1,'']]],
   ['analoggyrosim_2eh_33',['AnalogGyroSim.h',['../_analog_gyro_sim_8h.html',1,'']]],
   ['analogindata_2eh_34',['AnalogInData.h',['../_analog_in_data_8h.html',1,'']]],
-  ['analoginput_2eh_35',['AnalogInput.h',['../hal_2src_2main_2native_2include_2hal_2_analog_input_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_analog_input_8h.html',1,'(Global Namespace)']]],
+  ['analoginput_2eh_35',['AnalogInput.h',['../wpilibc_2src_2main_2native_2include_2frc_2_analog_input_8h.html',1,'(Global Namespace)'],['../hal_2src_2main_2native_2include_2hal_2_analog_input_8h.html',1,'(Global Namespace)']]],
   ['analoginputsim_2eh_36',['AnalogInputSim.h',['../_analog_input_sim_8h.html',1,'']]],
   ['analogoutdata_2eh_37',['AnalogOutData.h',['../_analog_out_data_8h.html',1,'']]],
-  ['analogoutput_2eh_38',['AnalogOutput.h',['../wpilibc_2src_2main_2native_2include_2frc_2_analog_output_8h.html',1,'(Global Namespace)'],['../hal_2src_2main_2native_2include_2hal_2_analog_output_8h.html',1,'(Global Namespace)']]],
+  ['analogoutput_2eh_38',['AnalogOutput.h',['../hal_2src_2main_2native_2include_2hal_2_analog_output_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_analog_output_8h.html',1,'(Global Namespace)']]],
   ['analogoutputsim_2eh_39',['AnalogOutputSim.h',['../_analog_output_sim_8h.html',1,'']]],
   ['analogpotentiometer_2eh_40',['AnalogPotentiometer.h',['../_analog_potentiometer_8h.html',1,'']]],
-  ['analogtrigger_2eh_41',['AnalogTrigger.h',['../wpilibc_2src_2main_2native_2include_2frc_2_analog_trigger_8h.html',1,'(Global Namespace)'],['../hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html',1,'(Global Namespace)']]],
+  ['analogtrigger_2eh_41',['AnalogTrigger.h',['../hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html',1,'(Global Namespace)'],['../wpilibc_2src_2main_2native_2include_2frc_2_analog_trigger_8h.html',1,'(Global Namespace)']]],
   ['analogtriggerdata_2eh_42',['AnalogTriggerData.h',['../_analog_trigger_data_8h.html',1,'']]],
   ['analogtriggeroutput_2eh_43',['AnalogTriggerOutput.h',['../_analog_trigger_output_8h.html',1,'']]],
   ['analogtriggersim_2eh_44',['AnalogTriggerSim.h',['../_analog_trigger_sim_8h.html',1,'']]],
@@ -64,5 +64,7 @@ var searchData=
   ['assign_2eh_61',['Assign.h',['../_assign_8h.html',1,'']]],
   ['assignevaluator_2eh_62',['AssignEvaluator.h',['../_assign_evaluator_8h.html',1,'']]],
   ['assignmentfunctors_2eh_63',['AssignmentFunctors.h',['../_assignment_functors_8h.html',1,'']]],
-  ['asynchronousinterrupt_2eh_64',['AsynchronousInterrupt.h',['../_asynchronous_interrupt_8h.html',1,'']]]
+  ['async_2eh_64',['Async.h',['../_async_8h.html',1,'']]],
+  ['asyncfunction_2eh_65',['AsyncFunction.h',['../_async_function_8h.html',1,'']]],
+  ['asynchronousinterrupt_2eh_66',['AsynchronousInterrupt.h',['../_asynchronous_interrupt_8h.html',1,'']]]
 ];
