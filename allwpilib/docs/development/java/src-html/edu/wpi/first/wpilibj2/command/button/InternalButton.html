@@ -24,44 +24,45 @@
 <span class="sourceLineNo">012</span><a id="line.12"> *</a>
 <span class="sourceLineNo">013</span><a id="line.13"> * &lt;p&gt;This class is provided by the NewCommands VendorDep</a>
 <span class="sourceLineNo">014</span><a id="line.14"> */</a>
-<span class="sourceLineNo">015</span><a id="line.15">public class InternalButton extends Button {</a>
-<span class="sourceLineNo">016</span><a id="line.16">  // need to be references, so they can be mutated after being captured in the constructor.</a>
-<span class="sourceLineNo">017</span><a id="line.17">  private final AtomicBoolean m_pressed;</a>
-<span class="sourceLineNo">018</span><a id="line.18">  private final AtomicBoolean m_inverted;</a>
-<span class="sourceLineNo">019</span><a id="line.19"></a>
-<span class="sourceLineNo">020</span><a id="line.20">  /** Creates an InternalButton that is not inverted. */</a>
-<span class="sourceLineNo">021</span><a id="line.21">  public InternalButton() {</a>
-<span class="sourceLineNo">022</span><a id="line.22">    this(false);</a>
-<span class="sourceLineNo">023</span><a id="line.23">  }</a>
-<span class="sourceLineNo">024</span><a id="line.24"></a>
-<span class="sourceLineNo">025</span><a id="line.25">  /**</a>
-<span class="sourceLineNo">026</span><a id="line.26">   * Creates an InternalButton which is inverted depending on the input.</a>
-<span class="sourceLineNo">027</span><a id="line.27">   *</a>
-<span class="sourceLineNo">028</span><a id="line.28">   * @param inverted if false, then this button is pressed when set to true, otherwise it is pressed</a>
-<span class="sourceLineNo">029</span><a id="line.29">   *     when set to false.</a>
-<span class="sourceLineNo">030</span><a id="line.30">   */</a>
-<span class="sourceLineNo">031</span><a id="line.31">  public InternalButton(boolean inverted) {</a>
-<span class="sourceLineNo">032</span><a id="line.32">    this(new AtomicBoolean(), new AtomicBoolean(inverted));</a>
-<span class="sourceLineNo">033</span><a id="line.33">  }</a>
-<span class="sourceLineNo">034</span><a id="line.34"></a>
-<span class="sourceLineNo">035</span><a id="line.35">  /*</a>
-<span class="sourceLineNo">036</span><a id="line.36">   * Mock constructor so the AtomicBoolean objects can be constructed before the super</a>
-<span class="sourceLineNo">037</span><a id="line.37">   * constructor invocation.</a>
-<span class="sourceLineNo">038</span><a id="line.38">   */</a>
-<span class="sourceLineNo">039</span><a id="line.39">  private InternalButton(AtomicBoolean state, AtomicBoolean inverted) {</a>
-<span class="sourceLineNo">040</span><a id="line.40">    super(() -&gt; state.get() != inverted.get());</a>
-<span class="sourceLineNo">041</span><a id="line.41">    this.m_pressed = state;</a>
-<span class="sourceLineNo">042</span><a id="line.42">    this.m_inverted = inverted;</a>
-<span class="sourceLineNo">043</span><a id="line.43">  }</a>
-<span class="sourceLineNo">044</span><a id="line.44"></a>
-<span class="sourceLineNo">045</span><a id="line.45">  public void setInverted(boolean inverted) {</a>
-<span class="sourceLineNo">046</span><a id="line.46">    m_inverted.set(inverted);</a>
-<span class="sourceLineNo">047</span><a id="line.47">  }</a>
-<span class="sourceLineNo">048</span><a id="line.48"></a>
-<span class="sourceLineNo">049</span><a id="line.49">  public void setPressed(boolean pressed) {</a>
-<span class="sourceLineNo">050</span><a id="line.50">    m_pressed.set(pressed);</a>
-<span class="sourceLineNo">051</span><a id="line.51">  }</a>
-<span class="sourceLineNo">052</span><a id="line.52">}</a>
+<span class="sourceLineNo">015</span><a id="line.15">@SuppressWarnings("deprecation")</a>
+<span class="sourceLineNo">016</span><a id="line.16">public class InternalButton extends Button {</a>
+<span class="sourceLineNo">017</span><a id="line.17">  // need to be references, so they can be mutated after being captured in the constructor.</a>
+<span class="sourceLineNo">018</span><a id="line.18">  private final AtomicBoolean m_pressed;</a>
+<span class="sourceLineNo">019</span><a id="line.19">  private final AtomicBoolean m_inverted;</a>
+<span class="sourceLineNo">020</span><a id="line.20"></a>
+<span class="sourceLineNo">021</span><a id="line.21">  /** Creates an InternalButton that is not inverted. */</a>
+<span class="sourceLineNo">022</span><a id="line.22">  public InternalButton() {</a>
+<span class="sourceLineNo">023</span><a id="line.23">    this(false);</a>
+<span class="sourceLineNo">024</span><a id="line.24">  }</a>
+<span class="sourceLineNo">025</span><a id="line.25"></a>
+<span class="sourceLineNo">026</span><a id="line.26">  /**</a>
+<span class="sourceLineNo">027</span><a id="line.27">   * Creates an InternalButton which is inverted depending on the input.</a>
+<span class="sourceLineNo">028</span><a id="line.28">   *</a>
+<span class="sourceLineNo">029</span><a id="line.29">   * @param inverted if false, then this button is pressed when set to true, otherwise it is pressed</a>
+<span class="sourceLineNo">030</span><a id="line.30">   *     when set to false.</a>
+<span class="sourceLineNo">031</span><a id="line.31">   */</a>
+<span class="sourceLineNo">032</span><a id="line.32">  public InternalButton(boolean inverted) {</a>
+<span class="sourceLineNo">033</span><a id="line.33">    this(new AtomicBoolean(), new AtomicBoolean(inverted));</a>
+<span class="sourceLineNo">034</span><a id="line.34">  }</a>
+<span class="sourceLineNo">035</span><a id="line.35"></a>
+<span class="sourceLineNo">036</span><a id="line.36">  /*</a>
+<span class="sourceLineNo">037</span><a id="line.37">   * Mock constructor so the AtomicBoolean objects can be constructed before the super</a>
+<span class="sourceLineNo">038</span><a id="line.38">   * constructor invocation.</a>
+<span class="sourceLineNo">039</span><a id="line.39">   */</a>
+<span class="sourceLineNo">040</span><a id="line.40">  private InternalButton(AtomicBoolean state, AtomicBoolean inverted) {</a>
+<span class="sourceLineNo">041</span><a id="line.41">    super(() -&gt; state.get() != inverted.get());</a>
+<span class="sourceLineNo">042</span><a id="line.42">    this.m_pressed = state;</a>
+<span class="sourceLineNo">043</span><a id="line.43">    this.m_inverted = inverted;</a>
+<span class="sourceLineNo">044</span><a id="line.44">  }</a>
+<span class="sourceLineNo">045</span><a id="line.45"></a>
+<span class="sourceLineNo">046</span><a id="line.46">  public void setInverted(boolean inverted) {</a>
+<span class="sourceLineNo">047</span><a id="line.47">    m_inverted.set(inverted);</a>
+<span class="sourceLineNo">048</span><a id="line.48">  }</a>
+<span class="sourceLineNo">049</span><a id="line.49"></a>
+<span class="sourceLineNo">050</span><a id="line.50">  public void setPressed(boolean pressed) {</a>
+<span class="sourceLineNo">051</span><a id="line.51">    m_pressed.set(pressed);</a>
+<span class="sourceLineNo">052</span><a id="line.52">  }</a>
+<span class="sourceLineNo">053</span><a id="line.53">}</a>
 
 
 

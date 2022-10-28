@@ -190,7 +190,7 @@
 <span class="sourceLineNo">178</span><a id="line.178">   * @param &lt;T&gt; the subclass type</a>
 <span class="sourceLineNo">179</span><a id="line.179">   * @return an instance of the subclass.</a>
 <span class="sourceLineNo">180</span><a id="line.180">   */</a>
-<span class="sourceLineNo">181</span><a id="line.181">  public &lt;T extends BooleanEvent&gt; T castTo(BiFunction&lt;EventLoop, BooleanSupplier, T&gt; ctor) {</a>
+<span class="sourceLineNo">181</span><a id="line.181">  public &lt;T extends BooleanSupplier&gt; T castTo(BiFunction&lt;EventLoop, BooleanSupplier, T&gt; ctor) {</a>
 <span class="sourceLineNo">182</span><a id="line.182">    return ctor.apply(m_loop, m_signal);</a>
 <span class="sourceLineNo">183</span><a id="line.183">  }</a>
 <span class="sourceLineNo">184</span><a id="line.184">}</a>
