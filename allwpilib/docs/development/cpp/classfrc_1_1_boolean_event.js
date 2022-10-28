@@ -1,7 +1,7 @@
 var classfrc_1_1_boolean_event =
 [
     [ "BooleanEvent", "classfrc_1_1_boolean_event.html#aeea9362c33b02874d4acfb1f7264510c", null ],
-    [ "CastTo", "classfrc_1_1_boolean_event.html#af736c417515c08c23cd7db0d2104f433", null ],
+    [ "CastTo", "classfrc_1_1_boolean_event.html#a980f78da797a8e8ad8010eda37ea3ac6", null ],
     [ "Debounce", "classfrc_1_1_boolean_event.html#a814ff0902c9a735d28a53051a14eadf6", null ],
     [ "Falling", "classfrc_1_1_boolean_event.html#a1aaed05926ef3fbed348e993b6303d1d", null ],
     [ "GetAsBoolean", "classfrc_1_1_boolean_event.html#a35f44d70a3740b94390841defda16e0c", null ],

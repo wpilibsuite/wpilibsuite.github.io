@@ -7,7 +7,7 @@ var searchData=
   ['websocketserver_4',['WebSocketServer',['../classwpi_1_1_web_socket_server.html',1,'wpi']]],
   ['websocketserverhelper_5',['WebSocketServerHelper',['../classwpi_1_1_web_socket_server_helper.html',1,'wpi']]],
   ['weekday_6',['weekday',['../classweekday.html',1,'']]],
-  ['wheelspeeds_7',['WheelSpeeds',['../structfrc_1_1_differential_drive_1_1_wheel_speeds.html',1,'frc::DifferentialDrive::WheelSpeeds'],['../structfrc_1_1_killough_drive_1_1_wheel_speeds.html',1,'frc::KilloughDrive::WheelSpeeds'],['../structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html',1,'frc::MecanumDrive::WheelSpeeds']]],
+  ['wheelspeeds_7',['WheelSpeeds',['../structfrc_1_1_differential_drive_1_1_wheel_speeds.html',1,'frc::DifferentialDrive::WheelSpeeds'],['../structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html',1,'frc::MecanumDrive::WheelSpeeds']]],
   ['widgettype_8',['WidgetType',['../classfrc_1_1_widget_type.html',1,'frc']]],
   ['width_5fchecker_9',['width_checker',['../classwidth__checker.html',1,'']]],
   ['withformat_10',['WithFormat',['../class_eigen_1_1_with_format.html',1,'Eigen']]],

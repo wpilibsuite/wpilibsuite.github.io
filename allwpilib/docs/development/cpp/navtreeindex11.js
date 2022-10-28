@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"_math_functions_8h.html#ad59216129a430099e97b4c4b1e2f2984":[7,0,8,1,0,0,0,1,40,88],
-"_math_functions_8h.html#ad7a90176816bfd3586bb9e84c5edd704":[7,0,8,1,0,0,0,1,40,149],
 "_math_functions_8h.html#ada0735789a38ad1f87335b86bede1280":[7,0,8,1,0,0,0,1,40,89],
 "_math_functions_8h.html#ada2d113db7694e2e21548f60988a3385":[7,0,8,1,0,0,0,1,40,150],
 "_math_functions_8h.html#ade382aafbf0886b96f1624e2261a9330":[7,0,8,1,0,0,0,1,40,87],
@@ -128,8 +126,8 @@ var NAVTREEINDEX11 =
 "_max_velocity_constraint_8h_source.html":[7,0,4,9,0,4],
 "_mecanum_controller_command_8h.html":[7,0,5,0,11],
 "_mecanum_controller_command_8h_source.html":[7,0,5,0,11],
-"_mecanum_drive_8h.html":[7,0,3,1,2],
-"_mecanum_drive_8h_source.html":[7,0,3,1,2],
+"_mecanum_drive_8h.html":[7,0,3,1,1],
+"_mecanum_drive_8h_source.html":[7,0,3,1,1],
 "_mecanum_drive_kinematics_8h.html":[7,0,4,6,4],
 "_mecanum_drive_kinematics_8h_source.html":[7,0,4,6,4],
 "_mecanum_drive_kinematics_constraint_8h.html":[7,0,4,9,0,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "_mock_hooks_8h.html#a05941019c795c73f9c840c40d4da5a06":[7,0,6,3,14,17],
 "_mock_hooks_8h.html#a0d2a43cdf4b63370952ec9df78bed986":[7,0,6,3,14,7],
 "_mock_hooks_8h.html#a1498351dd7427b2eb5ba34271b9f509f":[7,0,6,3,14,19],
-"_mock_hooks_8h.html#a171010d1a59ce8305c3ee1871f44b363":[7,0,6,3,14,10]
+"_mock_hooks_8h.html#a171010d1a59ce8305c3ee1871f44b363":[7,0,6,3,14,10],
+"_mock_hooks_8h.html#a2f4a269636df25efb147b3ea4649a8b2":[7,0,6,3,14,15],
+"_mock_hooks_8h.html#a3d51d50d5557d59504847373d70016aa":[7,0,6,3,14,18]
 };

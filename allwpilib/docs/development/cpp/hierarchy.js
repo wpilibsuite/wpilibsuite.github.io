@@ -403,13 +403,6 @@ var hierarchy =
     ] ],
     [ "Eigen::internal::bool_constant< Condition >", "struct_eigen_1_1internal_1_1bool__constant.html", null ],
     [ "frc::BooleanEvent", "classfrc_1_1_boolean_event.html", [
-      [ "frc2::Trigger", "classfrc2_1_1_trigger.html", [
-        [ "frc2::Button", "classfrc2_1_1_button.html", [
-          [ "frc2::JoystickButton", "classfrc2_1_1_joystick_button.html", null ],
-          [ "frc2::NetworkButton", "classfrc2_1_1_network_button.html", null ],
-          [ "frc2::POVButton", "classfrc2_1_1_p_o_v_button.html", null ]
-        ] ]
-      ] ],
       [ "frc::NetworkBooleanEvent", "classfrc_1_1_network_boolean_event.html", null ]
     ] ],
     [ "buffer< T >", "classbuffer.html", [
@@ -2711,7 +2704,6 @@ var hierarchy =
       [ "frc::Relay", "classfrc_1_1_relay.html", null ],
       [ "frc::RobotDriveBase", "classfrc_1_1_robot_drive_base.html", [
         [ "frc::DifferentialDrive", "classfrc_1_1_differential_drive.html", null ],
-        [ "frc::KilloughDrive", "classfrc_1_1_killough_drive.html", null ],
         [ "frc::MecanumDrive", "classfrc_1_1_mecanum_drive.html", null ]
       ] ]
     ] ],
@@ -3623,7 +3615,6 @@ var hierarchy =
       [ "frc::DutyCycleEncoder", "classfrc_1_1_duty_cycle_encoder.html", null ],
       [ "frc::Encoder", "classfrc_1_1_encoder.html", null ],
       [ "frc::ExternalDirectionCounter", "classfrc_1_1_external_direction_counter.html", null ],
-      [ "frc::KilloughDrive", "classfrc_1_1_killough_drive.html", null ],
       [ "frc::MecanumDrive", "classfrc_1_1_mecanum_drive.html", null ],
       [ "frc::MotorControllerGroup", "classfrc_1_1_motor_controller_group.html", null ],
       [ "frc::NidecBrushless", "classfrc_1_1_nidec_brushless.html", null ],
@@ -3748,9 +3739,6 @@ var hierarchy =
     ] ],
     [ "wpi::SendableHelper< Field2d >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::Field2d", "classfrc_1_1_field2d.html", null ]
-    ] ],
-    [ "wpi::SendableHelper< KilloughDrive >", "classwpi_1_1_sendable_helper.html", [
-      [ "frc::KilloughDrive", "classfrc_1_1_killough_drive.html", null ]
     ] ],
     [ "wpi::SendableHelper< MecanumDrive >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::MecanumDrive", "classfrc_1_1_mecanum_drive.html", null ]
@@ -4679,6 +4667,13 @@ var hierarchy =
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, Size, IsComplex >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector.html", null ],
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, 1, IsComplex >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector_3_01_matrix_type_00_011_00_01_is_complex_01_4.html", null ],
     [ "Eigen::internal::tridiagonalization_inplace_selector< MatrixType, 3, false >", "struct_eigen_1_1internal_1_1tridiagonalization__inplace__selector_3_01_matrix_type_00_013_00_01false_01_4.html", null ],
+    [ "frc2::Trigger", "classfrc2_1_1_trigger.html", [
+      [ "frc2::Button", "classfrc2_1_1_button.html", [
+        [ "frc2::JoystickButton", "classfrc2_1_1_joystick_button.html", null ],
+        [ "frc2::NetworkButton", "classfrc2_1_1_network_button.html", null ],
+        [ "frc2::POVButton", "classfrc2_1_1_p_o_v_button.html", null ]
+      ] ]
+    ] ],
     [ "Eigen::Triplet< Scalar, StorageIndex >", "class_eigen_1_1_triplet.html", null ],
     [ "wpi::detail::trivial_helper< T >", "unionwpi_1_1detail_1_1trivial__helper.html", null ],
     [ "Eigen::internal::trmv_selector< Mode, StorageOrder >", "struct_eigen_1_1internal_1_1trmv__selector.html", null ],
@@ -5548,7 +5543,6 @@ var hierarchy =
     [ "vector", null, [
       [ "std::vector< T, EIGEN_ALIGNED_ALLOCATOR< T > >", "classstd_1_1vector_3_01_t_00_01_e_i_g_e_n___a_l_i_g_n_e_d___a_l_l_o_c_a_t_o_r_3_01_t_01_4_01_4.html", null ]
     ] ],
-    [ "frc::Vector2d", "structfrc_1_1_vector2d.html", null ],
     [ "Eigen::internal::vectorwise_reverse_inplace_impl< Direction >", "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl.html", null ],
     [ "Eigen::internal::vectorwise_reverse_inplace_impl< Horizontal >", "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_horizontal_01_4.html", null ],
     [ "Eigen::internal::vectorwise_reverse_inplace_impl< Vertical >", "struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_vertical_01_4.html", null ],
@@ -5594,7 +5588,6 @@ var hierarchy =
     [ "wpi::WebSocketServerHelper", "classwpi_1_1_web_socket_server_helper.html", null ],
     [ "weekday", "classweekday.html", null ],
     [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1_differential_drive_1_1_wheel_speeds.html", null ],
-    [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1_killough_drive_1_1_wheel_speeds.html", null ],
     [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html", null ],
     [ "frc::WidgetType", "classfrc_1_1_widget_type.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],

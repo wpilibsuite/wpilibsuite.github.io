@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-31-g648ab61</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-34-gdcda09f</span>
    </div>
   </td>
  </tr>
@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_mecanum_drive.html',''); 
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_motor_safety.html#a1449c25e11582cbea7d3e2254479f42b">Check</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_motor_safety.html#a2a666ba39461317728e52fbaa9cdca32">CheckMotors</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_robot_drive_base.html#ab4a29f21c436cbecf0f9812f0240a14b">Desaturate</a>(std::span&lt; double &gt; wheelSpeeds)</td><td class="entry"><a class="el" href="classfrc_1_1_robot_drive_base.html">frc::RobotDriveBase</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html#a7801f779e6486dfd7f6f101d51d5e1f5">DriveCartesian</a>(double ySpeed, double xSpeed, double zRotation, double gyroAngle=0.0)</td><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html">frc::MecanumDrive</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html#ae8ba7951b238cab9512a9d124a86bbec">DriveCartesianIK</a>(double ySpeed, double xSpeed, double zRotation, double gyroAngle=0.0)</td><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html">frc::MecanumDrive</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html#a5fb956c5b44a5b608a85212e77962d08">DrivePolar</a>(double magnitude, double angle, double zRotation)</td><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html">frc::MecanumDrive</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html#aea0777a8508c235c3d2d6490660b6ade">DriveCartesian</a>(double xSpeed, double ySpeed, double zRotation, Rotation2d gyroAngle=0_rad)</td><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html">frc::MecanumDrive</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html#a3e87453e2c9495a789e877a8b24bd3d8">DriveCartesianIK</a>(double xSpeed, double ySpeed, double zRotation, Rotation2d gyroAngle=0_rad)</td><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html">frc::MecanumDrive</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html#a1e4a2b7a7e95345c33ca6503ee8281c1">DrivePolar</a>(double magnitude, Rotation2d angle, double zRotation)</td><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html">frc::MecanumDrive</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_motor_safety.html#a64f96194caddf9df5e0ab9871fb2b7a3">Feed</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_robot_drive_base.html#ac407bc60830a0d639de96bdc53d58a0f">FeedWatchdog</a>()</td><td class="entry"><a class="el" href="classfrc_1_1_robot_drive_base.html">frc::RobotDriveBase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html#ac49f911dea1276792bb84f6ba4f4b0fd">GetDescription</a>() const override</td><td class="entry"><a class="el" href="classfrc_1_1_mecanum_drive.html">frc::MecanumDrive</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_mecanum_drive.html',''); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 27 2022 06:19:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Oct 28 2022 05:06:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"_sim_device_8h_source.html":[7,0,6,42],
-"_sim_device_data_8h.html":[7,0,6,3,25],
 "_sim_device_data_8h.html#a121919b879a2e2d6a3187cfcad54894a":[7,0,6,3,25,0],
 "_sim_device_data_8h.html#a22b8592dadbaa575321ec6a48019a632":[7,0,6,3,25,10],
 "_sim_device_data_8h.html#a34efb65ba681d52a35d0144776bf7e5f":[7,0,6,3,25,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX20 =
 "_sparse_util_8h_source.html":[7,0,8,1,0,0,0,12,26],
 "_sparse_vector_8h.html":[7,0,8,1,0,0,0,12,27],
 "_sparse_vector_8h_source.html":[7,0,8,1,0,0,0,12,27],
-"_sparse_view_8h.html":[7,0,8,1,0,0,0,12,28]
+"_sparse_view_8h.html":[7,0,8,1,0,0,0,12,28],
+"_sparse_view_8h_source.html":[7,0,8,1,0,0,0,12,28],
+"_spline_8h.html":[7,0,4,7,2]
 };
