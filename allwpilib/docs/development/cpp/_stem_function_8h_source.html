@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -122,22 +122,22 @@ $(document).ready(function(){initNavTree('_stem_function_8h_source.html',''); in
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespace_eigen_1_1internal.html#a9727c15ffb97a40df226fce93e2628b3">   27</a></span>Scalar <a class="code hl_function" href="namespace_eigen_1_1internal.html#a9727c15ffb97a40df226fce93e2628b3">stem_function_cos</a>(Scalar x, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">std::cos</a>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">std::sin</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  Scalar res;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">switch</span> (n % 4) {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">case</span> 0: </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">std::cos</a>(x);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    res = <a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>(x);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    res = -<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">std::sin</a>(x);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    res = -<a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>(x);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    res = -<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">std::cos</a>(x);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    res = -<a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>(x);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">std::sin</a>(x);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    res = <a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>(x);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordflow">return</span> res;</div>
@@ -147,22 +147,22 @@ $(document).ready(function(){initNavTree('_stem_function_8h_source.html',''); in
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespace_eigen_1_1internal.html#a297dc38f5c9b80e2a1da7dcf2a453c90">   52</a></span>Scalar <a class="code hl_function" href="namespace_eigen_1_1internal.html#a297dc38f5c9b80e2a1da7dcf2a453c90">stem_function_sin</a>(Scalar x, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">std::cos</a>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">std::sin</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  Scalar res;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">switch</span> (n % 4) {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">std::sin</a>(x);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    res = <a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>(x);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">std::cos</a>(x);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    res = <a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>(x);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    res = -<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">std::sin</a>(x);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    res = -<a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>(x);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    res = -<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">std::cos</a>(x);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    res = -<a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>(x);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">return</span> res;</div>
@@ -172,16 +172,16 @@ $(document).ready(function(){initNavTree('_stem_function_8h_source.html',''); in
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="namespace_eigen_1_1internal.html#aab7949e5c95ec574eff5c4229da36846">   77</a></span>Scalar <a class="code hl_function" href="namespace_eigen_1_1internal.html#aab7949e5c95ec574eff5c4229da36846">stem_function_cosh</a>(Scalar x, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ada19e3b661917a4cd32736c1cead1a04">std::cosh</a>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a2a79b4dc952416cf485d5f84af4c798e">std::sinh</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">std::cosh</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">std::sinh</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  Scalar res;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordflow">switch</span> (n % 2) {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ada19e3b661917a4cd32736c1cead1a04">std::cosh</a>(x);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    res = <a class="code hl_function" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">std::cosh</a>(x);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a2a79b4dc952416cf485d5f84af4c798e">std::sinh</a>(x);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    res = <a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">std::sinh</a>(x);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  }</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordflow">return</span> res;</div>
@@ -191,16 +191,16 @@ $(document).ready(function(){initNavTree('_stem_function_8h_source.html',''); in
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="namespace_eigen_1_1internal.html#ab2855d150c9eebb8ed6cb63a292dda0d">   96</a></span>Scalar <a class="code hl_function" href="namespace_eigen_1_1internal.html#ab2855d150c9eebb8ed6cb63a292dda0d">stem_function_sinh</a>(Scalar x, <span class="keywordtype">int</span> n)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ada19e3b661917a4cd32736c1cead1a04">std::cosh</a>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a2a79b4dc952416cf485d5f84af4c798e">std::sinh</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">std::cosh</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">std::sinh</a>;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  Scalar res;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">switch</span> (n % 2) {</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordflow">case</span> 0:</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a2a79b4dc952416cf485d5f84af4c798e">std::sinh</a>(x);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    res = <a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">std::sinh</a>(x);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    res = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ada19e3b661917a4cd32736c1cead1a04">std::cosh</a>(x);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    res = <a class="code hl_function" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">std::cosh</a>(x);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordflow">return</span> res;</div>
@@ -211,10 +211,10 @@ $(document).ready(function(){initNavTree('_stem_function_8h_source.html',''); in
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>} <span class="comment">// end namespace Eigen</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif </span><span class="comment">// EIGEN_STEM_FUNCTION</span></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a2a79b4dc952416cf485d5f84af4c798e"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a2a79b4dc952416cf485d5f84af4c798e">sinh</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SinhReturnType sinh() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:339</div></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a92b03396990b0e9eea0731aa406e31a4"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">cos</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const CosReturnType cos() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:237</div></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a9cfb0ea58bd813510a9e2db18a5e49f0"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">sin</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SinReturnType sin() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:255</div></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_ada19e3b661917a4cd32736c1cead1a04"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#ada19e3b661917a4cd32736c1cead1a04">cosh</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const CoshReturnType cosh() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:353</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga38584a9aa9ecbcf455f1a75b23fc8495"><div class="ttname"><a href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">units::math::sinh</a></div><div class="ttdeci">dimensionless::scalar_t sinh(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute hyperbolic sine.</div><div class="ttdef"><b>Definition:</b> math.h:226</div></div>
+<div class="ttc" id="agroup___unit_math_html_gab0c26f165fe864ceb9f2af667b3cb66d"><div class="ttname"><a href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">units::math::cosh</a></div><div class="ttdeci">dimensionless::scalar_t cosh(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute hyperbolic cosine.</div><div class="ttdef"><b>Definition:</b> math.h:206</div></div>
+<div class="ttc" id="agroup___unit_math_html_gac2aeac09538ac3f95fff947c12522faa"><div class="ttname"><a href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">units::math::cos</a></div><div class="ttdeci">dimensionless::scalar_t cos(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute cosine.</div><div class="ttdef"><b>Definition:</b> math.h:61</div></div>
+<div class="ttc" id="agroup___unit_math_html_gaf0a50351f8f51550d00e9831b60e1850"><div class="ttname"><a href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">units::math::sin</a></div><div class="ttdeci">dimensionless::scalar_t sin(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute sine.</div><div class="ttdef"><b>Definition:</b> math.h:81</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a0e7bafccf7fa66d965ab6c59444a39c3"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a0e7bafccf7fa66d965ab6c59444a39c3">Eigen::internal::stem_function_exp</a></div><div class="ttdeci">Scalar stem_function_exp(Scalar x, int)</div><div class="ttdoc">The exponential function (and its derivatives).</div><div class="ttdef"><b>Definition:</b> StemFunction.h:19</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a297dc38f5c9b80e2a1da7dcf2a453c90"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a297dc38f5c9b80e2a1da7dcf2a453c90">Eigen::internal::stem_function_sin</a></div><div class="ttdeci">Scalar stem_function_sin(Scalar x, int n)</div><div class="ttdoc">Sine (and its derivatives).</div><div class="ttdef"><b>Definition:</b> StemFunction.h:52</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a9727c15ffb97a40df226fce93e2628b3"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a9727c15ffb97a40df226fce93e2628b3">Eigen::internal::stem_function_cos</a></div><div class="ttdeci">Scalar stem_function_cos(Scalar x, int n)</div><div class="ttdoc">Cosine (and its derivatives).</div><div class="ttdef"><b>Definition:</b> StemFunction.h:27</div></div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('_stem_function_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_ab831a170da7e1b69eb014cca1c75323.html">unsupported</a></li><li class="navelem"><a class="el" href="dir_ad61f57c542da9b9e996cda5564c4956.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_942b1bdc222aa5be112e9d9d68a8b3e8.html">src</a></li><li class="navelem"><a class="el" href="dir_6f78b0333ef2d3d22867da03166eb161.html">MatrixFunctions</a></li><li class="navelem"><a class="el" href="_stem_function_8h.html">StemFunction.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

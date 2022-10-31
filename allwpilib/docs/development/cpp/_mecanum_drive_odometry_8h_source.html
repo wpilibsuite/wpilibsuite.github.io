@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_odometry.html#aa48bf95b46ff5aa0423111312d5b7cdf">   51</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_odometry.html#aa48bf95b46ff5aa0423111312d5b7cdf">ResetPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                     <span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> wheelPositions) {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    m_pose = pose;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    m_previousAngle = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">Rotation</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    m_previousAngle = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b">Rotation</a>();</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    m_gyroOffset = m_pose.Rotation() - gyroAngle;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    m_previousWheelPositions = wheelPositions;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_odometry_html_a7eacc5cc9abdfae570e104292078dc57"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_odometry.html#a7eacc5cc9abdfae570e104292078dc57">frc::MecanumDriveOdometry::Update</a></div><div class="ttdeci">const Pose2d &amp; Update(const Rotation2d &amp;gyroAngle, const MecanumDriveWheelPositions wheelPositions)</div><div class="ttdoc">Updates the robot's position on the field using forward kinematics and integration of the pose over t...</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_odometry_html_aa48bf95b46ff5aa0423111312d5b7cdf"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_odometry.html#aa48bf95b46ff5aa0423111312d5b7cdf">frc::MecanumDriveOdometry::ResetPosition</a></div><div class="ttdeci">void ResetPosition(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle, const MecanumDriveWheelPositions wheelPositions)</div><div class="ttdoc">Resets the robot's position on the field.</div><div class="ttdef"><b>Definition:</b> MecanumDriveOdometry.h:51</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
-<div class="ttc" id="aclassfrc_1_1_pose2d_html_ab58cd85d929e96cbc40360409196921c"><div class="ttname"><a href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">frc::Pose2d::Rotation</a></div><div class="ttdeci">const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:113</div></div>
+<div class="ttc" id="aclassfrc_1_1_pose2d_html_a2936ce7a45e58fce82c8cefa2a56c60b"><div class="ttname"><a href="classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b">frc::Pose2d::Rotation</a></div><div class="ttdeci">constexpr const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:113</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
 <div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_positions_html"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_positions.html">frc::MecanumDriveWheelPositions</a></div><div class="ttdoc">Represents the wheel speeds for a mecanum drive drivetrain.</div><div class="ttdef"><b>Definition:</b> MecanumDriveWheelPositions.h:15</div></div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><a class="el" href="_mecanum_drive_odometry_8h.html">MecanumDriveOdometry.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

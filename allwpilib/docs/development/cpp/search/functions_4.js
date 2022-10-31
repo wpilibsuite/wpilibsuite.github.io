@@ -47,7 +47,7 @@ var searchData=
   ['deeply_5ftracked_5fblock_5fallocator_44',['deeply_tracked_block_allocator',['../classwpi_1_1memory_1_1detail_1_1deeply__tracked__block__allocator.html#a22d635bfbe019d4768d8ae73d38cfc0a',1,'wpi::memory::detail::deeply_tracked_block_allocator']]],
   ['defaultfreebuf_45',['DefaultFreeBuf',['../classwpi_1_1uv_1_1_handle.html#af5b0a3bcbfc67443462c33567d511a27',1,'wpi::uv::Handle']]],
   ['defer_5fcreate_5ft_46',['defer_create_t',['../structwpi_1_1memory_1_1temporary__stack__initializer_1_1defer__create__t.html#ad6fc5645f72d4b89774c3cb72e470dac',1,'wpi::memory::temporary_stack_initializer::defer_create_t']]],
-  ['degrees_47',['Degrees',['../classfrc_1_1_rotation2d.html#a93c8388e59f6817dc800d08af580d5c9',1,'frc::Rotation2d']]],
+  ['degrees_47',['Degrees',['../classfrc_1_1_rotation2d.html#a6c1c060d89264d8f95a19e11cf35664f',1,'frc::Rotation2d']]],
   ['delete_48',['Delete',['../classnt_1_1_network_table_entry.html#a87d9a87ad835548c35b9ad1b95a79d6b',1,'nt::NetworkTableEntry']]],
   ['deleteproperty_49',['DeleteProperty',['../classnt_1_1_topic.html#a160594abe0d3c0fd826d32993dd6f7d0',1,'nt::Topic']]],
   ['deletetopicproperty_50',['DeleteTopicProperty',['../group__ntcore__topic__func.html#gaf0e8727ef6d9fe9f79812bcfac13f243',1,'nt']]],

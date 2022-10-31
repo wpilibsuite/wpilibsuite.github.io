@@ -1,7 +1,7 @@
 var structfrc_1_1_twist3d =
 [
     [ "operator!=", "structfrc_1_1_twist3d.html#a1d02acb8bdf18e567f147a7a08fcd1c0", null ],
-    [ "operator*", "structfrc_1_1_twist3d.html#a64e40a0ff76a4e6fe18a3c9ab59c988a", null ],
+    [ "operator*", "structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1", null ],
     [ "operator==", "structfrc_1_1_twist3d.html#a5de70f587ebc217942a1c0327def0836", null ],
     [ "dx", "structfrc_1_1_twist3d.html#a3d5f347b69d6df1e04d2089c7dca37f9", null ],
     [ "dy", "structfrc_1_1_twist3d.html#a75c24604ae0d25f04a2c32a5577e065e", null ],

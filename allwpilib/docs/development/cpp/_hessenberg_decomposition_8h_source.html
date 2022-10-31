@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -396,10 +396,10 @@ $(document).ready(function(){initNavTree('_hessenberg_decomposition_8h_source.ht
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  {</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="comment">// let&#39;s consider the vector v = i-th column starting at position i+1</span></div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> remainingSize = n-i-1;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    RealScalar beta;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    RealScalar <a class="code hl_function" href="beta_8hpp.html#aed93736cb5c0ec28f5d53a3442453837">beta</a>;</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    Scalar <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>;</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    matA.col(i).tail(remainingSize).makeHouseholderInPlace(<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>, beta);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    matA.col(i).coeffRef(i+1) = beta;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    matA.col(i).tail(remainingSize).makeHouseholderInPlace(<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>, <a class="code hl_function" href="beta_8hpp.html#aed93736cb5c0ec28f5d53a3442453837">beta</a>);</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    matA.col(i).coeffRef(i+1) = <a class="code hl_function" href="beta_8hpp.html#aed93736cb5c0ec28f5d53a3442453837">beta</a>;</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    hCoeffs.coeffRef(i) = <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>;</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="comment">// Apply similarity transformation to remaining columns,</span></div>
@@ -469,6 +469,7 @@ $(document).ready(function(){initNavTree('_hessenberg_decomposition_8h_source.ht
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="preprocessor">#endif </span><span class="comment">// EIGEN_HESSENBERGDECOMPOSITION_H</span></div>
 <div class="ttc" id="a_macros_8h_html_acaa7ba89800cfe18d5fd6eed620aea9c"><div class="ttname"><a href="_macros_8h.html#acaa7ba89800cfe18d5fd6eed620aea9c">eigen_assert</a></div><div class="ttdeci">#define eigen_assert(x)</div><div class="ttdef"><b>Definition:</b> Macros.h:1037</div></div>
+<div class="ttc" id="abeta_8hpp_html_aed93736cb5c0ec28f5d53a3442453837"><div class="ttname"><a href="beta_8hpp.html#aed93736cb5c0ec28f5d53a3442453837">beta</a></div><div class="ttdeci">constexpr common_return_t&lt; T1, T2 &gt; beta(const T1 a, const T2 b) noexcept</div><div class="ttdoc">Compile-time beta function.</div><div class="ttdef"><b>Definition:</b> beta.hpp:36</div></div>
 <div class="ttc" id="aclass_eigen_1_1_hessenberg_decomposition_html"><div class="ttname"><a href="class_eigen_1_1_hessenberg_decomposition.html">Eigen::HessenbergDecomposition</a></div><div class="ttdoc">\eigenvalues_module</div><div class="ttdef"><b>Definition:</b> HessenbergDecomposition.h:58</div></div>
 <div class="ttc" id="aclass_eigen_1_1_hessenberg_decomposition_html_a334e62ab2a1d99e5a3a4f5de76207840"><div class="ttname"><a href="class_eigen_1_1_hessenberg_decomposition.html#a334e62ab2a1d99e5a3a4f5de76207840">Eigen::HessenbergDecomposition::compute</a></div><div class="ttdeci">HessenbergDecomposition &amp; compute(const EigenBase&lt; InputType &gt; &amp;matrix)</div><div class="ttdoc">Computes Hessenberg decomposition of given matrix.</div><div class="ttdef"><b>Definition:</b> HessenbergDecomposition.h:152</div></div>
 <div class="ttc" id="aclass_eigen_1_1_hessenberg_decomposition_html_a346441e4902a58d43d698ac3da6ff791"><div class="ttname"><a href="class_eigen_1_1_hessenberg_decomposition.html#a346441e4902a58d43d698ac3da6ff791">Eigen::HessenbergDecomposition::matrixQ</a></div><div class="ttdeci">HouseholderSequenceType matrixQ() const</div><div class="ttdoc">Reconstructs the orthogonal matrix Q in the decomposition.</div><div class="ttdef"><b>Definition:</b> HessenbergDecomposition.h:234</div></div>
@@ -522,7 +523,7 @@ $(document).ready(function(){initNavTree('_hessenberg_decomposition_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_4744191eefd34b3708aa413d41bde835.html">Eigenvalues</a></li><li class="navelem"><a class="el" href="_hessenberg_decomposition_8h.html">HessenbergDecomposition.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

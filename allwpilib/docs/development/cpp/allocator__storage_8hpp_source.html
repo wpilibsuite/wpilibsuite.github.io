@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -777,17 +777,17 @@ $(document).ready(function(){initNavTree('allocator__storage_8hpp_source.html','
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>                std::size_t <a class="code hl_function" href="namespacewpi_1_1memory_1_1traits__detail.html#ace64c1fc552c7664e06fe54af93d2920">max_node_size</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span><span class="keyword">                </span>{</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>(query::node_size);</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>(query::node_size);</div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>                }</div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span> </div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>                std::size_t <a class="code hl_function" href="namespacewpi_1_1memory_1_1traits__detail.html#ae21da971b914d1bcc566129c643fde96">max_array_size</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="keyword">                </span>{</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>(query::array_size);</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>(query::array_size);</div>
 <div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>                }</div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>                std::size_t <a class="code hl_variable" href="namespacewpi_1_1memory_1_1detail.html#a9c5cd42d3663df4cd82785be1007c862">max_alignment</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><span class="keyword">                </span>{</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>(query::alignment);</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>(query::alignment);</div>
 <div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>                }</div>
 <div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
 <div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1memory_1_1reference__storage.html#a2c3ff61b2e6793c0e14298c9aef42c03">is_composable</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
@@ -800,7 +800,7 @@ $(document).ready(function(){initNavTree('allocator__storage_8hpp_source.html','
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                    alignment</div>
 <div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>                };</div>
 <div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>                <span class="keyword">virtual</span> std::size_t <a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>(query q) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>                <span class="keyword">virtual</span> std::size_t <a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>(query q) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>            };</div>
 <div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
 <div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>        <span class="keyword">public</span>:</div>
@@ -969,7 +969,7 @@ $(document).ready(function(){initNavTree('allocator__storage_8hpp_source.html','
 <div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>                    <span class="keywordflow">return</span> composable::value;</div>
 <div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>                }</div>
 <div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span> </div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>                std::size_t <a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>(query q)<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>                std::size_t <a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>(query q)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span><span class="keyword">                </span>{</div>
 <div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>                    <span class="keyword">auto</span>&amp;&amp; alloc = <a class="code hl_function" href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html#ac4f38ea0cad7df02d1b6bfb99afd673c">get</a>();</div>
 <div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>                    <span class="keywordflow">if</span> (q == query::node_size)</div>
@@ -1123,10 +1123,10 @@ $(document).ready(function(){initNavTree('allocator__storage_8hpp_source.html','
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
 <div class="ttc" id="aformat_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdoc">\rst Converts p to const void* for pointer formatting.</div><div class="ttdef"><b>Definition:</b> format.h:3808</div></div>
 <div class="ttc" id="agroup__adapter_html_ga9a52e04544774b2c5fbdafae66fccde9"><div class="ttname"><a href="group__adapter.html#ga9a52e04544774b2c5fbdafae66fccde9">wpi::memory::WPI_ALIAS_TEMPLATE</a></div><div class="ttdeci">WPI_ALIAS_TEMPLATE(memory_resource, foonathan_memory_pmr::memory_resource)</div><div class="ttdoc">The memory_resource abstract base class used in the implementation.</div></div>
+<div class="ttc" id="amax_8hpp_html_a9d9e64d509ec77f4e1ceec56d222d5f4"><div class="ttname"><a href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; max(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise maximum function.</div><div class="ttdef"><b>Definition:</b> max.hpp:35</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_aa3c1588240009c3c17b3e477512b2ffd"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">Eigen::internal::size</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index size(const T &amp;x)</div><div class="ttdef"><b>Definition:</b> Meta.h:479</div></div>
 <div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> ranges.h:23</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3421</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a12ed056bc64e9df0b13933f353d79d36"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a12ed056bc64e9df0b13933f353d79d36">wpi::memory::detail::try_allocate_node</a></div><div class="ttdeci">void * try_allocate_node(std::false_type, Alloc &amp;, std::size_t, std::size_t) noexcept</div><div class="ttdef"><b>Definition:</b> allocator_storage.hpp:58</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a370a24199e35417adee79b5ba39d8db4"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a370a24199e35417adee79b5ba39d8db4">wpi::memory::detail::try_allocate_node</a></div><div class="ttdeci">void * try_allocate_node(std::true_type, Alloc &amp;alloc, std::size_t size, std::size_t alignment) noexcept</div><div class="ttdef"><b>Definition:</b> allocator_storage.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a3eec2aaf414ffc53dcae6709e44f6833"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a3eec2aaf414ffc53dcae6709e44f6833">wpi::memory::detail::try_deallocate_node</a></div><div class="ttdeci">bool try_deallocate_node(std::true_type, Alloc &amp;alloc, void *ptr, std::size_t size, std::size_t alignment) noexcept</div><div class="ttdef"><b>Definition:</b> allocator_storage.hpp:42</div></div>
@@ -1170,7 +1170,7 @@ $(document).ready(function(){initNavTree('allocator__storage_8hpp_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_546ba5aa787ced15236f35cd8ec24069.html">memory</a></li><li class="navelem"><a class="el" href="dir_8cade806b5335aefc15c83738d476d10.html">include</a></li><li class="navelem"><a class="el" href="dir_f60925f5d3c309ad67c392036ce6f1d3.html">wpi</a></li><li class="navelem"><a class="el" href="dir_af118afc52e1adc19596c0ca28b55f16.html">memory</a></li><li class="navelem"><a class="el" href="allocator__storage_8hpp.html">allocator_storage.hpp</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:20:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

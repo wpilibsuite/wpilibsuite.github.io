@@ -41,8 +41,9 @@ var NAVTREEINDEX17 =
 "_pose2d_8h.html#a110eb6adc14c3cffe104abc63ea380c6":[7,0,4,4,2,1],
 "_pose2d_8h.html#aa084f2ee573258a862b973c9343ee02e":[7,0,4,4,2,2],
 "_pose2d_8h_source.html":[7,0,4,4,2],
-"_pose3d_8h.html":[7,0,4,4,3],
-"_pose3d_8h_source.html":[7,0,4,4,3],
+"_pose2d_8inc.html":[7,0,4,4,3],
+"_pose3d_8h.html":[7,0,4,4,4],
+"_pose3d_8h_source.html":[7,0,4,4,4],
 "_power_distribution_data_8h.html":[7,0,6,3,17],
 "_power_distribution_data_8h.html#a062e2a403ab8d96119e9345244286a99":[7,0,6,3,17,3],
 "_power_distribution_data_8h.html#a0d05e200fd0304be07a71aabee5d2fc1":[7,0,6,3,17,8],
@@ -99,8 +100,8 @@ var NAVTREEINDEX17 =
 "_proxy_schedule_command_8h_source.html":[7,0,5,0,22],
 "_q_r.html":[7,0,8,1,0,0,9],
 "_q_r.html#a4228aa0cc19e998982001afeb05f38dd":[7,0,8,1,0,0,9,0],
-"_quaternion_8h.html":[7,0,4,4,4],
-"_quaternion_8h_source.html":[7,0,4,4,4],
+"_quaternion_8h.html":[7,0,4,4,5],
+"_quaternion_8h_source.html":[7,0,4,4,5],
 "_quintic_hermite_spline_8h.html":[7,0,4,7,1],
 "_quintic_hermite_spline_8h_source.html":[7,0,4,7,1],
 "_r_e_v_p_h_8h.html":[7,0,6,40],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "_robo_rio_data_8h.html#a62922ddb97b2ccf9b9a88eaf64a32181":[7,0,6,3,22,53],
 "_robo_rio_data_8h.html#a66ac9eec70855b6ad1d3377df4819ae5":[7,0,6,3,22,1],
 "_robo_rio_data_8h.html#a69310dd93ac7350479dabf3c2df3ab47":[7,0,6,3,22,3],
-"_robo_rio_data_8h.html#a70334f71f009fd22e90b07e51afa2120":[7,0,6,3,22,36],
-"_robo_rio_data_8h.html#a775f98c4c6c984dd70edd53e9c703300":[7,0,6,3,22,63]
+"_robo_rio_data_8h.html#a70334f71f009fd22e90b07e51afa2120":[7,0,6,3,22,36]
 };

@@ -139,7 +139,7 @@ var searchData=
   ['degree_136',['degree',['../namespaceunits.html#aa4b7ee5bcc7ba9a4639e228c663b1908',1,'units::degree()'],['../structinternal_1_1_colamd_1_1_row_structure.html#a454b9db761840ca25b473e92aa44177d',1,'internal::Colamd::RowStructure::degree()']]],
   ['degree_5fnext_137',['degree_next',['../structinternal_1_1_colamd_1_1_col_structure.html#a8430e726e7770e66b139d897405ad6be',1,'internal::Colamd::ColStructure']]],
   ['degree_5fsquared_138',['degree_squared',['../namespaceunits.html#ac5df1345f227fbf76e7fe3913a76b863',1,'units']]],
-  ['degrees_139',['Degrees',['../classfrc_1_1_rotation2d.html#a93c8388e59f6817dc800d08af580d5c9',1,'frc::Rotation2d']]],
+  ['degrees_139',['Degrees',['../classfrc_1_1_rotation2d.html#a6c1c060d89264d8f95a19e11cf35664f',1,'frc::Rotation2d']]],
   ['degrees_140',['degrees',['../namespaceunits.html#a54f2965e894b6766c86ce675b23f1882',1,'units']]],
   ['degrees_5fper_5fsecond_141',['degrees_per_second',['../namespaceunits.html#a43d213fc487f68b3ac3a26308d259833',1,'units']]],
   ['degrees_5fper_5fsecond_5fsquared_142',['degrees_per_second_squared',['../namespaceunits.html#ab9ed75ae4e37ac937709c6675cee205f',1,'units']]],

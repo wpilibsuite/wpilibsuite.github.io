@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_unscented_transform_8h_source.html','
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrixd&lt;CovDim, States * 2 + CovDim&gt;</a> Sbar;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; States * 2; i++) {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Sbar.template block&lt;CovDim, 1&gt;(0, i) =</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">std::sqrt</a>(Wc[1]) *</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">std::sqrt</a>(Wc[1]) *</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        residualFunc(sigmas.template block&lt;CovDim, 1&gt;(0, 1 + i), x);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  Sbar.template block&lt;CovDim, CovDim&gt;(0, States * 2) = squareRootR;</div>
@@ -169,10 +169,10 @@ $(document).ready(function(){initNavTree('_unscented_transform_8h_source.html','
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace frc</span></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a656b9217a2fcb6de59dc8d1eb3079cc7"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SqrtReturnType sqrt() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:187</div></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="a_q_r_html"><div class="ttname"><a href="_q_r.html">QR</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
+<div class="ttc" id="agroup___unit_math_html_gae52f60a9e2a9e7ad1018a846bcf49140"><div class="ttname"><a href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">units::math::sqrt</a></div><div class="ttdeci">auto sqrt(const UnitType &amp;value) noexcept -&gt; unit_t&lt; square_root&lt; typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the square root of value</div><div class="ttdef"><b>Definition:</b> math.h:483</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
 <div class="ttc" id="anamespacefrc_html_a1af422167b03c22307c4bba4b9ee4c32"><div class="ttname"><a href="namespacefrc.html#a1af422167b03c22307c4bba4b9ee4c32">frc::SquareRootUnscentedTransform</a></div><div class="ttdeci">std::tuple&lt; Vectord&lt; CovDim &gt;, Matrixd&lt; CovDim, CovDim &gt; &gt; SquareRootUnscentedTransform(const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;sigmas, const Vectord&lt; 2 *States+1 &gt; &amp;Wm, const Vectord&lt; 2 *States+1 &gt; &amp;Wc, std::function&lt; Vectord&lt; CovDim &gt;(const Matrixd&lt; CovDim, 2 *States+1 &gt; &amp;, const Vectord&lt; 2 *States+1 &gt; &amp;)&gt; meanFunc, std::function&lt; Vectord&lt; CovDim &gt;(const Vectord&lt; CovDim &gt; &amp;, const Vectord&lt; CovDim &gt; &amp;)&gt; residualFunc, const Matrixd&lt; CovDim, CovDim &gt; &amp;squareRootR)</div><div class="ttdoc">Computes unscented transform of a set of sigma points and weights.</div><div class="ttdef"><b>Definition:</b> UnscentedTransform.h:38</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('_unscented_transform_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_unscented_transform_8h.html">UnscentedTransform.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

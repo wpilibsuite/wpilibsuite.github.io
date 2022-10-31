@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -922,7 +922,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    <span class="comment">// Reduce the number of buckets.</span></div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>    <span class="keywordtype">unsigned</span> NewNumBuckets = 0;</div>
 <div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>    <span class="keywordflow">if</span> (OldNumEntries)</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>      NewNumBuckets = (<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::max</a>)(64, 1 &lt;&lt; (<a class="code hl_function" href="namespacewpi.html#a1be06425de1e3346544e3600fda4f352">Log2_32_Ceil</a>(OldNumEntries) + 1));</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>      NewNumBuckets = (<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::max</a>)(64, 1 &lt;&lt; (<a class="code hl_function" href="namespacewpi.html#a1be06425de1e3346544e3600fda4f352">Log2_32_Ceil</a>(OldNumEntries) + 1));</div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>    <span class="keywordflow">if</span> (NewNumBuckets == NumBuckets) {</div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>      this-&gt;BaseT::initEmpty();</div>
 <div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>      <span class="keywordflow">return</span>;</div>
@@ -1507,6 +1507,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="ttc" id="aclasswpi_1_1_small_dense_map_html_ae912a1913db2d2f3539f557a1bbb4955"><div class="ttname"><a href="classwpi_1_1_small_dense_map.html#ae912a1913db2d2f3539f557a1bbb4955">wpi::SmallDenseMap::SmallDenseMap</a></div><div class="ttdeci">SmallDenseMap(std::initializer_list&lt; typename BaseT::value_type &gt; Vals)</div><div class="ttdef"><b>Definition:</b> DenseMap.h:928</div></div>
 <div class="ttc" id="aclasswpi_1_1_small_dense_map_html_af58026debb7850b8ef2fecc5afc514c6"><div class="ttname"><a href="classwpi_1_1_small_dense_map.html#af58026debb7850b8ef2fecc5afc514c6">wpi::SmallDenseMap::operator=</a></div><div class="ttdeci">SmallDenseMap &amp; operator=(const SmallDenseMap &amp;other)</div><div class="ttdef"><b>Definition:</b> DenseMap.h:1008</div></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
+<div class="ttc" id="amax_8hpp_html_a9d9e64d509ec77f4e1ceec56d222d5f4"><div class="ttname"><a href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; max(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise maximum function.</div><div class="ttdef"><b>Definition:</b> max.hpp:35</div></div>
 <div class="ttc" id="anamespace_eigen_html_a214808bc589e60863fec2a29bfb9c261a8366c3345cf750dd60bc6d25aa98149d"><div class="ttname"><a href="namespace_eigen.html#a214808bc589e60863fec2a29bfb9c261a8366c3345cf750dd60bc6d25aa98149d">Eigen::Small</a></div><div class="ttdeci">@ Small</div><div class="ttdef"><b>Definition:</b> GeneralProduct.h:18</div></div>
 <div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> ranges.h:23</div></div>
 <div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:138</div></div>
@@ -1514,7 +1515,6 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
 <div class="ttc" id="anamespacestd_html_a8de3b111383ccb7c625398925d4c7add"><div class="ttname"><a href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallVectorImpl&lt; T &gt; &amp;LHS, wpi::SmallVectorImpl&lt; T &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallVector swap.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1299</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3421</div></div>
 <div class="ttc" id="anamespacewpi_1_1detail_html_aa6ae57edcc25d4177064c3bc234a106b"><div class="ttname"><a href="namespacewpi_1_1detail.html#aa6ae57edcc25d4177064c3bc234a106b">wpi::detail::swap</a></div><div class="ttdeci">void swap(SafeThreadOwnerBase &amp;lhs, SafeThreadOwnerBase &amp;rhs) noexcept</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a8994bf0a428d46893ae0472833726332"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">wpi::memory::detail::forward</a></div><div class="ttdeci">T &amp;&amp; forward(typename std::remove_reference&lt; T &gt;::type &amp;t) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:32</div></div>
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
@@ -1541,7 +1541,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_3c14e2811843326714b08335f4db6d6f.html">llvm</a></li><li class="navelem"><a class="el" href="dir_c9d71ee896d0afc8c2dc55673cfe897b.html">include</a></li><li class="navelem"><a class="el" href="dir_a809135da9c9e78db898aa42d248563a.html">wpi</a></li><li class="navelem"><a class="el" href="_dense_map_8h.html">DenseMap.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:20:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

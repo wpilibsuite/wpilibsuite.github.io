@@ -1,8 +1,8 @@
 var searchData=
 [
   ['e_0',['e',['../structbasic__fp.html#a1e4a14ea86e324547aa69f30d426d0c6',1,'basic_fp']]],
-  ['ebps_1',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
-  ['ebps_2',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
+  ['ebps_1',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
+  ['ebps_2',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
   ['elaborations_3',['elaborations',['../_third_party_notices_8txt.html#a22adf0f3f4508732c311a0db3aa1e5a3',1,'ThirdPartyNotices.txt']]],
   ['electronic_4',['electronic',['../_third_party_notices_8txt.html#a17eb1cdc4fd8a9cf2e6a8e63448fe148',1,'ThirdPartyNotices.txt']]],
   ['empty_5',['Empty',['../namespaceinternal_1_1_colamd.html#ad2feab81142482702b03352689f921b0',1,'internal::Colamd']]],

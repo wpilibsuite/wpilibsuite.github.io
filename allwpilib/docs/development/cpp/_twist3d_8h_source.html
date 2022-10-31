@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('_twist3d_8h_source.html',''); initResi
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   * @param factor The factor by which to scale.</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * @return The scaled Twist3d.</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist3d.html#a64e40a0ff76a4e6fe18a3c9ab59c988a">   82</a></span>  <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a> <a class="code hl_function" href="structfrc_1_1_twist3d.html#a64e40a0ff76a4e6fe18a3c9ab59c988a">operator*</a>(<span class="keywordtype">double</span> factor)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">   82</a></span>  <span class="keyword">constexpr</span> <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a> <a class="code hl_function" href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">operator*</a>(<span class="keywordtype">double</span> factor)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a>{dx * factor, dy * factor, dz * factor,</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                   rx * factor, ry * factor, rz * factor};</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
@@ -192,10 +192,10 @@ $(document).ready(function(){initNavTree('_twist3d_8h_source.html',''); initResi
 <div class="ttc" id="anamespacefrc_html_ab723662fe47bf067756eb0bca7d404c0"><div class="ttname"><a href="namespacefrc.html#ab723662fe47bf067756eb0bca7d404c0">frc::operator==</a></div><div class="ttdeci">bool operator==(const Color &amp;c1, const Color &amp;c2)</div><div class="ttdef"><b>Definition:</b> Color.h:833</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html"><div class="ttname"><a href="structfrc_1_1_twist3d.html">frc::Twist3d</a></div><div class="ttdoc">A change in distance along a 3D arc since the last pose update.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:22</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a1d02acb8bdf18e567f147a7a08fcd1c0"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a1d02acb8bdf18e567f147a7a08fcd1c0">frc::Twist3d::operator!=</a></div><div class="ttdeci">bool operator!=(const Twist3d &amp;other) const</div><div class="ttdoc">Checks inequality between this Twist3d and another object.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:74</div></div>
+<div class="ttc" id="astructfrc_1_1_twist3d_html_a2d90775d087a68419c1ad4327de27ad1"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">frc::Twist3d::operator*</a></div><div class="ttdeci">constexpr Twist3d operator*(double factor) const</div><div class="ttdoc">Scale this by a given factor.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:82</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a3d5f347b69d6df1e04d2089c7dca37f9"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a3d5f347b69d6df1e04d2089c7dca37f9">frc::Twist3d::dx</a></div><div class="ttdeci">units::meter_t dx</div><div class="ttdoc">Linear &quot;dx&quot; component.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:26</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a42f749cce4a30707935cb78e9518738c"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a42f749cce4a30707935cb78e9518738c">frc::Twist3d::ry</a></div><div class="ttdeci">units::radian_t ry</div><div class="ttdoc">Rotation vector y component.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:46</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a5de70f587ebc217942a1c0327def0836"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a5de70f587ebc217942a1c0327def0836">frc::Twist3d::operator==</a></div><div class="ttdeci">bool operator==(const Twist3d &amp;other) const</div><div class="ttdoc">Checks equality between this Twist3d and another object.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:59</div></div>
-<div class="ttc" id="astructfrc_1_1_twist3d_html_a64e40a0ff76a4e6fe18a3c9ab59c988a"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a64e40a0ff76a4e6fe18a3c9ab59c988a">frc::Twist3d::operator*</a></div><div class="ttdeci">Twist3d operator*(double factor) const</div><div class="ttdoc">Scale this by a given factor.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:82</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a75c24604ae0d25f04a2c32a5577e065e"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a75c24604ae0d25f04a2c32a5577e065e">frc::Twist3d::dy</a></div><div class="ttdeci">units::meter_t dy</div><div class="ttdoc">Linear &quot;dy&quot; component.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:31</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_ac8e4db2c83b18fa30b8dab01bcd17f36"><div class="ttname"><a href="structfrc_1_1_twist3d.html#ac8e4db2c83b18fa30b8dab01bcd17f36">frc::Twist3d::rz</a></div><div class="ttdeci">units::radian_t rz</div><div class="ttdoc">Rotation vector z component.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:51</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_ad729a92fcfa20a862362d06cb942ed65"><div class="ttname"><a href="structfrc_1_1_twist3d.html#ad729a92fcfa20a862362d06cb942ed65">frc::Twist3d::dz</a></div><div class="ttdeci">units::meter_t dz</div><div class="ttdoc">Linear &quot;dz&quot; component.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:36</div></div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('_twist3d_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><a class="el" href="_twist3d_8h.html">Twist3d.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

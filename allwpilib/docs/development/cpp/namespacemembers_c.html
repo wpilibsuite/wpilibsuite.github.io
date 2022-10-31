@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,13 @@ $(document).ready(function(){initNavTree('namespacemembers_c.html',''); initResi
 <li>CD_OpenAlways&#160;:&#160;<a class="el" href="namespacefs.html#a685b73b8c3b15a4105a73cbe08a01c82a709501a1472bc4713b50d0ce69820353">fs</a></li>
 <li>CD_OpenExisting&#160;:&#160;<a class="el" href="namespacefs.html#a685b73b8c3b15a4105a73cbe08a01c82a268ebc4be1a3d8ecbef0bef7137dc6ae">fs</a></li>
 <li>ceil()&#160;:&#160;<a class="el" href="namespace_eigen_1_1bfloat16__impl.html#a482290828682ab07d879f7735c12882d">Eigen::bfloat16_impl</a>, <a class="el" href="namespace_eigen_1_1half__impl.html#a1e913e1f0daf135c9faa88eea06a037e">Eigen::half_impl</a>, <a class="el" href="namespace_eigen_1_1numext.html#a7707f0f4d89be4a801f79133042e8543">Eigen::numext</a>, <a class="el" href="group___unit_math.html#gafeea9aa149ff1d941ed830ec389bf7f4">units::math</a></li>
+<li>ceil_check()&#160;:&#160;<a class="el" href="namespaceinternal.html#ad6eb8b20144f614e089f7742053d9b2d">internal</a></li>
+<li>ceil_check_internal()&#160;:&#160;<a class="el" href="namespaceinternal.html#a5149604f0b970b187cc2585a79e29b85">internal</a></li>
+<li>ceil_check_internal&lt; double &gt;()&#160;:&#160;<a class="el" href="namespaceinternal.html#ab78b612460afd2f612b2cac38c2f68d4">internal</a></li>
+<li>ceil_check_internal&lt; float &gt;()&#160;:&#160;<a class="el" href="namespaceinternal.html#aa0b427bda599fc65ad4e3a6ae096a589">internal</a></li>
+<li>ceil_check_internal&lt; long double &gt;()&#160;:&#160;<a class="el" href="namespaceinternal.html#a7a3e0c431e26d5cfff492310e4c5923c">internal</a></li>
+<li>ceil_int()&#160;:&#160;<a class="el" href="namespaceinternal.html#a0e5bd2b24480b0c34f47df9f4997a40c">internal</a></li>
+<li>ceil_resid()&#160;:&#160;<a class="el" href="namespaceinternal.html#a411fb305178d212c3b4d9f69bb3b3e8a">internal</a></li>
 <li>celsius&#160;:&#160;<a class="el" href="namespaceunits.html#a13f90edf1d7de83a2d8e9a2964587097">units</a></li>
 <li>centi&#160;:&#160;<a class="el" href="group___unit_manipulators.html#gae6350c0e152ef3ab427bb8465e151bcd">units</a></li>
 <li>char8_type&#160;:&#160;<a class="el" href="namespacedetail.html#af2d1c9abcf61fc5c29bb85fdbd0c0153">detail</a></li>
@@ -136,7 +143,7 @@ $(document).ready(function(){initNavTree('namespacemembers_c.html',''); initResi
 <li>chunk_memory_offset&#160;:&#160;<a class="el" href="namespacewpi_1_1memory_1_1detail.html#ad9c1e47ce1b2c59b86372a4f196d8903">wpi::memory::detail</a></li>
 <li>ClampInputMaxMagnitude()&#160;:&#160;<a class="el" href="namespacefrc.html#a402cc4a794a3ea4e084fc271c24351fe">frc</a></li>
 <li>clear_mark()&#160;:&#160;<a class="el" href="namespaceinternal_1_1_colamd.html#abd3c193d0f88aefcc91795fcdb58802e">internal::Colamd</a></li>
-<li>clone_joint()&#160;:&#160;<a class="el" href="group__allocator.html#gaf36e52257430764b51aa6f8938124dfe">wpi::memory</a></li>
+<li>clone_joint()&#160;:&#160;<a class="el" href="group__allocator.html#ga39c25e85f4a787cb798de13ea70d16ca">wpi::memory</a></li>
 <li>CloseFile()&#160;:&#160;<a class="el" href="namespacefs.html#a9ccf202e6da03879cd7945e07c44554a">fs</a></li>
 <li>cmp_EQ&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#a11df3bc16c766c83507d4d59b6ef56e2a5b7c37c3d9ec1d93ec8a59ca1d2c854f">Eigen::internal</a></li>
 <li>cmp_GE&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#a11df3bc16c766c83507d4d59b6ef56e2ac9f0178e42214db49c7ffb4ad677475d">Eigen::internal</a></li>
@@ -158,10 +165,12 @@ $(document).ready(function(){initNavTree('namespacemembers_c.html',''); initResi
 <li>ColumnStatus&#160;:&#160;<a class="el" href="namespaceinternal_1_1_colamd.html#ac0fe732ceef89af6c1aec9205e08e097">internal::Colamd</a></li>
 <li>combine_scalar_factors()&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#a2e72864d2371e64667e33011c5bf613a">Eigen::internal</a></li>
 <li>combineHashValue()&#160;:&#160;<a class="el" href="namespacewpi_1_1detail.html#a333649a1789bc79e44f927ee73c60c25">wpi::detail</a></li>
+<li>common_return_t&#160;:&#160;<a class="el" href="namespacegcem.html#ac3cd31e431a60f2c2059a1287584f811">gcem</a></li>
+<li>common_t&#160;:&#160;<a class="el" href="namespacegcem.html#ae305604734f2b1b1b1a693d8c9b5b2e4">gcem</a></li>
 <li>compare_lower()&#160;:&#160;<a class="el" href="namespacewpi.html#a135363b62874f7e1527b3ee317063f28">wpi</a></li>
 <li>compare_simple_insensitive()&#160;:&#160;<a class="el" href="namespaceghc_1_1filesystem_1_1detail.html#a39e24edaa764da227fbbebfa3cf77232">ghc::filesystem::detail</a></li>
 <li>ComparisonName&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#a11df3bc16c766c83507d4d59b6ef56e2">Eigen::internal</a></li>
-<li>compile_string_to_view()&#160;:&#160;<a class="el" href="namespacedetail__exported.html#a49a9f461220f70b5fdbdf267b5a92638">detail_exported</a></li>
+<li>compile_string_to_view()&#160;:&#160;<a class="el" href="namespacedetail__exported.html#a8ce4671a232e1139c6af8c27e6a41354">detail_exported</a></li>
 <li>CompleteUnrolling&#160;:&#160;<a class="el" href="namespace_eigen.html#ab8c7299b77156ae8c7827ba61787669da73f7b21eee12b2913632a923c29dfaf3">Eigen</a></li>
 <li>complex_log()&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#ab618d9f91937fc8af2f975fd29447a97">Eigen::internal</a></li>
 <li>complex_rsqrt()&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#afa8377dd47b49bcccc7a3fd43c3ba77c">Eigen::internal</a></li>
@@ -174,7 +183,7 @@ $(document).ready(function(){initNavTree('namespacemembers_c.html',''); initResi
 <li>compute_inverse_size2_helper()&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#a226353f68c902ad825660b118014f21f">Eigen::internal</a></li>
 <li>compute_inverse_size3_helper()&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#aa20f632ca9086b4c12fd89ff6c275bff">Eigen::internal</a></li>
 <li>compute_ordering()&#160;:&#160;<a class="el" href="namespaceinternal_1_1_colamd.html#ad6938ea0b757e4dcd97b5a3adf10ea19">internal::Colamd</a></li>
-<li>compute_width()&#160;:&#160;<a class="el" href="namespacedetail.html#a363c0110aa0a03f55993b1a5e9518219">detail</a></li>
+<li>compute_width()&#160;:&#160;<a class="el" href="namespacedetail.html#a24dea5935ac75f12d828ab3ba0adac78">detail</a></li>
 <li>ComputeDigitalMask()&#160;:&#160;<a class="el" href="namespacehal_1_1detail.html#aba1632c233f536c0db420b9fe349daca">hal::detail</a></li>
 <li>ComputeEigenvectors&#160;:&#160;<a class="el" href="group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a7f7d17fba3c9bb92158e346d5979d0f4">Eigen</a></li>
 <li>computeFromTridiagonal_impl()&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#ac382ed93e30e5f435d2f5eacaed57b2c">Eigen::internal</a></li>
@@ -228,7 +237,7 @@ $(document).ready(function(){initNavTree('namespacemembers_c.html',''); initResi
 <li>convertUTF8ToUTF16String()&#160;:&#160;<a class="el" href="namespacewpi.html#a051a613a70381a8d15a4ed7630bfd942">wpi</a></li>
 <li>ConvertUTF8toUTF32()&#160;:&#160;<a class="el" href="namespacewpi.html#ab9c663588a7ff49ab4cb3ffb71e5d5c6">wpi</a></li>
 <li>ConvertUTF8toUTF32Partial()&#160;:&#160;<a class="el" href="namespacewpi.html#aac9f39188361bf855a010751dbafbaff">wpi</a></li>
-<li>ConvertUTF8toWide()&#160;:&#160;<a class="el" href="namespacewpi.html#a4f044a5abfa43152b4511fc34f422abd">wpi</a></li>
+<li>ConvertUTF8toWide()&#160;:&#160;<a class="el" href="namespacewpi.html#a34dcbda849543386fc00cfa5e9a30b1a">wpi</a></li>
 <li>convertWideToUTF8()&#160;:&#160;<a class="el" href="namespacewpi.html#a4e0d4fcb62d165827231b4132e83e1a7">wpi</a></li>
 <li>copy()&#160;:&#160;<a class="el" href="namespacedetail.html#a613a357694355883872e8a7e90acf846">detail</a>, <a class="el" href="namespaceghc_1_1filesystem.html#ac0a778fd88ee3ca06ea150db4e56726b">ghc::filesystem</a></li>
 <li>copy_bool()&#160;:&#160;<a class="el" href="namespace_eigen_1_1internal.html#a6eba203a81c5888c5934ba70ceb0d22c">Eigen::internal</a></li>
@@ -241,7 +250,10 @@ $(document).ready(function(){initNavTree('namespacemembers_c.html',''); initResi
 <li>CopySink()&#160;:&#160;<a class="el" href="group__cscore__sink__func.html#ga193186f4aa649db438f85406f1115ec6">cs</a></li>
 <li>CopySource()&#160;:&#160;<a class="el" href="group__cscore__source__func.html#ga5e96e9a6f6c3f4c085c33f1bb281a9bd">cs</a></li>
 <li>cos()&#160;:&#160;<a class="el" href="namespace_eigen_1_1bfloat16__impl.html#aa65ce5bc90553888b1395635b3f7a878">Eigen::bfloat16_impl</a>, <a class="el" href="namespace_eigen_1_1half__impl.html#a3889c93919a523b15445ebc2162c1611">Eigen::half_impl</a>, <a class="el" href="namespace_eigen_1_1numext.html#a2fb2ee16afbd8bd35db971dff56b7a2b">Eigen::numext</a>, <a class="el" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">units::math</a></li>
+<li>cos_check()&#160;:&#160;<a class="el" href="namespaceinternal.html#a7b8ac651f96a32e6beb51750bfb86b08">internal</a></li>
+<li>cos_compute()&#160;:&#160;<a class="el" href="namespaceinternal.html#a5aef6fd930c70437d92ce42b0ac68f68">internal</a></li>
 <li>cosh()&#160;:&#160;<a class="el" href="namespace_eigen_1_1bfloat16__impl.html#a41a740ca0697a39c1b43fa99057fe5f8">Eigen::bfloat16_impl</a>, <a class="el" href="namespace_eigen_1_1numext.html#a8106cf9b0ce2c035ab58d6e4da0cd50c">Eigen::numext</a>, <a class="el" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">units::math</a></li>
+<li>cosh_compute()&#160;:&#160;<a class="el" href="namespaceinternal.html#ac913a050fdcc9246aefc3150ff049d47">internal</a></li>
 <li>CostMatrixImpl()&#160;:&#160;<a class="el" href="namespacefrc_1_1detail.html#a530fee08ed7a7804fd260e51d989f2be">frc::detail</a></li>
 <li>countLeadingOnes()&#160;:&#160;<a class="el" href="namespacewpi.html#a7bf0e41abe6919730147bff8b43e321e">wpi</a></li>
 <li>countLeadingZeros()&#160;:&#160;<a class="el" href="namespacewpi.html#a2c2b5dfad335d4ed298cf53a9abdfa07">wpi</a></li>
@@ -291,7 +303,7 @@ $(document).ready(function(){initNavTree('namespacemembers_c.html',''); initResi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:20:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -63,6 +63,15 @@ var namespaces_dup =
       [ "operator|=", "namespacefs.html#afec96a8963c222cbf5c8f42013d85cb8", null ],
       [ "kInvalidFile", "namespacefs.html#abcd3d567f1f0913a1ca11eec67e5cf01", null ]
     ] ],
+    [ "gcem", "namespacegcem.html", [
+      [ "common_return_t", "namespacegcem.html#ac3cd31e431a60f2c2059a1287584f811", null ],
+      [ "common_t", "namespacegcem.html#ae305604734f2b1b1b1a693d8c9b5b2e4", null ],
+      [ "GCLIM", "namespacegcem.html#adeb9fca3167886c9646ce8c0e1869c7a", null ],
+      [ "llint_t", "namespacegcem.html#a6df01e90c3b91e664d98b637c2efff7c", null ],
+      [ "return_t", "namespacegcem.html#aff10020e47c778bd46f1c74acc9b6ff2", null ],
+      [ "uint_t", "namespacegcem.html#af862733f4b065bcf380c26f39c995f45", null ],
+      [ "ullint_t", "namespacegcem.html#a3d7e002e0076a5d9fc4204d269b930a0", null ]
+    ] ],
     [ "ghc", "namespaceghc.html", "namespaceghc" ],
     [ "hal", "namespacehal.html", "namespacehal" ],
     [ "internal", "namespaceinternal.html", "namespaceinternal" ],

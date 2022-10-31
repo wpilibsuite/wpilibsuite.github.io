@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('_array_cwise_binary_ops_8h_source.html
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  *</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  * \sa max()</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  */</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><a class="code hl_define" href="_macros_8h.html#ae396082a3cc84a08d3b1824ebf1c6fb5">EIGEN_MAKE_CWISE_BINARY_OP</a>(<a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">min</a>,<a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">min</a>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><a class="code hl_define" href="_macros_8h.html#ae396082a3cc84a08d3b1824ebf1c6fb5">EIGEN_MAKE_CWISE_BINARY_OP</a>(<a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a>,<a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a>)</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/** \returns an expression of the coefficient-wise min of \c *this and scalar \a other</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">  *</span></div>
@@ -136,13 +136,13 @@ $(document).ready(function(){initNavTree('_array_cwise_binary_ops_8h_source.html
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><a class="code hl_define" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> <span class="keyword">const</span> CwiseBinaryOp&lt;internal::scalar_min_op&lt;Scalar,Scalar&gt;, <span class="keyword">const</span> Derived,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                                        <span class="keyword">const</span> CwiseNullaryOp&lt;internal::scalar_constant_op&lt;Scalar&gt;, PlainObject&gt; &gt;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifdef EIGEN_PARSED_BY_DOXYGEN</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">min</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>(<a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">min</a>)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>(<a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a>)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>#endif</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>(<span class="keyword">const</span> Scalar &amp;other)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">min</a>)(Derived::PlainObject::Constant(rows(), cols(), other));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a>)(Derived::PlainObject::Constant(rows(), cols(), other));</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"></span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/** \returns an expression of the coefficient-wise max of \c *this and \a other</span></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('_array_cwise_binary_ops_8h_source.html
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  *</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">  * \sa min()</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  */</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><a class="code hl_define" href="_macros_8h.html#ae396082a3cc84a08d3b1824ebf1c6fb5">EIGEN_MAKE_CWISE_BINARY_OP</a>(<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>,<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><a class="code hl_define" href="_macros_8h.html#ae396082a3cc84a08d3b1824ebf1c6fb5">EIGEN_MAKE_CWISE_BINARY_OP</a>(<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>,<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">/** \returns an expression of the coefficient-wise max of \c *this and scalar \a other</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">  *</span></div>
@@ -162,13 +162,13 @@ $(document).ready(function(){initNavTree('_array_cwise_binary_ops_8h_source.html
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><a class="code hl_define" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> <span class="keyword">const</span> CwiseBinaryOp&lt;internal::scalar_max_op&lt;Scalar,Scalar&gt;, <span class="keyword">const</span> Derived,</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                        <span class="keyword">const</span> CwiseNullaryOp&lt;internal::scalar_constant_op&lt;Scalar&gt;, PlainObject&gt; &gt;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#ifdef EIGEN_PARSED_BY_DOXYGEN</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>(<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>(<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>)</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>#endif</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>(<span class="keyword">const</span> Scalar &amp;other)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">max</a>)(Derived::PlainObject::Constant(rows(), cols(), other));</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordflow">return</span> (<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a>)(Derived::PlainObject::Constant(rows(), cols(), other));</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"></span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">/** \returns an expression of the coefficient-wise absdiff of \c *this and \a other</span></div>
@@ -468,9 +468,9 @@ $(document).ready(function(){initNavTree('_array_cwise_binary_ops_8h_source.html
 <div class="ttc" id="a_static_assert_8h_html_ac95cf960f4a8395b28af90edfda755f0"><div class="ttname"><a href="_static_assert_8h.html#ac95cf960f4a8395b28af90edfda755f0">EIGEN_STATIC_ASSERT</a></div><div class="ttdeci">#define EIGEN_STATIC_ASSERT(CONDITION, MSG)</div><div class="ttdef"><b>Definition:</b> StaticAssert.h:127</div></div>
 <div class="ttc" id="aclass_eigen_1_1_array_base_html_acb769e1ab1d809abb77c7ab98021ad81"><div class="ttname"><a href="class_eigen_1_1_array_base.html#acb769e1ab1d809abb77c7ab98021ad81">Eigen::ArrayBase::pow</a></div><div class="ttdeci">const Eigen::CwiseBinaryOp&lt; Eigen::internal::scalar_pow_op&lt; typename Derived::Scalar, typename ExponentDerived::Scalar &gt;, const Derived, const ExponentDerived &gt; pow(const Eigen::ArrayBase&lt; Derived &gt; &amp;x, const Eigen::ArrayBase&lt; ExponentDerived &gt; &amp;exponents)</div><div class="ttdef"><b>Definition:</b> GlobalFunctions.h:143</div></div>
 <div class="ttc" id="aformat_8h_html_a53543fa01d0b37fd6ccfe73e2976e139"><div class="ttname"><a href="format_8h.html#a53543fa01d0b37fd6ccfe73e2976e139">operator*</a></div><div class="ttdeci">FMT_CONSTEXPR fp operator*(fp x, fp y)</div><div class="ttdef"><b>Definition:</b> format.h:1474</div></div>
+<div class="ttc" id="amax_8hpp_html_a9d9e64d509ec77f4e1ceec56d222d5f4"><div class="ttname"><a href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; max(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise maximum function.</div><div class="ttdef"><b>Definition:</b> max.hpp:35</div></div>
+<div class="ttc" id="amin_8hpp_html_a90dfab1fcb99976507217d8111c3f524"><div class="ttname"><a href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; min(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise minimum function.</div><div class="ttdef"><b>Definition:</b> min.hpp:35</div></div>
 <div class="ttc" id="anamespaceunits_1_1dimensionless_html_afa05c1eff65b212eba705125a7829f0f"><div class="ttname"><a href="namespaceunits_1_1dimensionless.html#afa05c1eff65b212eba705125a7829f0f">units::dimensionless::scalar</a></div><div class="ttdeci">unit&lt; std::ratio&lt; 1 &gt;, units::category::scalar_unit &gt; scalar</div><div class="ttdef"><b>Definition:</b> base.h:2513</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3421</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_ae9f8f59df111748817588a056678942b"><div class="ttname"><a href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">units::math::min</a></div><div class="ttdeci">UnitTypeLhs() min(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3413</div></div>
 <div class="ttc" id="anamespaceunits_html_af918dff6e080530ae222f586143c397f"><div class="ttname"><a href="namespaceunits.html#af918dff6e080530ae222f586143c397f">units::operator+</a></div><div class="ttdeci">constexpr unit_t&lt; Units, T, NonLinearScale &gt; operator+(const unit_t&lt; Units, T, NonLinearScale &gt; &amp;u) noexcept</div><div class="ttdef"><b>Definition:</b> base.h:2331</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('_array_cwise_binary_ops_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_a80376904f468571a7882497560db6cf.html">plugins</a></li><li class="navelem"><a class="el" href="_array_cwise_binary_ops_8h.html">ArrayCwiseBinaryOps.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

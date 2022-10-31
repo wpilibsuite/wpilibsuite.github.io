@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('_numerical_integration_8h_source.html'
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordflow">while</span> (dtElapsed &lt; dt.value()) {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">do</span> {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="comment">// Only allow us to advance up to the dt remaining</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> = <a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">std::min</a>(<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>, dt.value() - dtElapsed);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> = <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">std::min</a>(<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>, dt.value() - dtElapsed);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="comment">// Notice how the derivative in the Wikipedia notation is dy/dx.</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      <span class="comment">// That means their y is our x and their x is our t</span></div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('_numerical_integration_8h_source.html'
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                              (b1[4] - b2[4]) * k5 + (b1[5] - b2[5]) * k6))</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                            .norm();</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> *= 0.9 * <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(maxError / truncationError, 1.0 / 5.0);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> *= 0.9 * <a class="code hl_function" href="pow_8hpp.html#a4bd11447e8e9884ad7eb792bc9fb592c">std::pow</a>(maxError / truncationError, 1.0 / 5.0);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    } <span class="keywordflow">while</span> (truncationError &gt; maxError);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    dtElapsed += <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>;</div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('_numerical_integration_8h_source.html'
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keywordflow">while</span> (dtElapsed &lt; dt.value()) {</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordflow">do</span> {</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      <span class="comment">// Only allow us to advance up to the dt remaining</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> = <a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">std::min</a>(<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>, dt.value() - dtElapsed);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> = <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">std::min</a>(<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>, dt.value() - dtElapsed);</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <span class="comment">// clang-format off</span></div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      T <a class="code hl_variable" href="namespacewpi_1_1hashing_1_1detail.html#a03097c3fe12aebe7428417767a2a146a">k1</a> = f(x, u);</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('_numerical_integration_8h_source.html'
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                              (b1[6] - b2[6]) * k7))</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                            .norm();</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> *= 0.9 * <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(maxError / truncationError, 1.0 / 5.0);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> *= 0.9 * <a class="code hl_function" href="pow_8hpp.html#a4bd11447e8e9884ad7eb792bc9fb592c">std::pow</a>(maxError / truncationError, 1.0 / 5.0);</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    } <span class="keywordflow">while</span> (truncationError &gt; maxError);</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    dtElapsed += <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a>;</div>
@@ -305,6 +305,7 @@ $(document).ready(function(){initNavTree('_numerical_integration_8h_source.html'
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
 <div class="ttc" id="a_state_space_util_8h_html"><div class="ttname"><a href="_state_space_util_8h.html">StateSpaceUtil.h</a></div></div>
+<div class="ttc" id="amin_8hpp_html_a90dfab1fcb99976507217d8111c3f524"><div class="ttname"><a href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; min(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise minimum function.</div><div class="ttdef"><b>Definition:</b> min.hpp:35</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
 <div class="ttc" id="anamespacefrc_html_a1825219cb68950f7b141fabc3fd0904b"><div class="ttname"><a href="namespacefrc.html#a1825219cb68950f7b141fabc3fd0904b">frc::RKF45</a></div><div class="ttdeci">T RKF45(F &amp;&amp;f, T x, U u, units::second_t dt, double maxError=1e-6)</div><div class="ttdoc">Performs adaptive RKF45 integration of dx/dt = f(x, u) for dt, as described in https://en....</div><div class="ttdef"><b>Definition:</b> NumericalIntegration.h:69</div></div>
 <div class="ttc" id="anamespacefrc_html_a362829981d16ca01c86bb52d3df6118b"><div class="ttname"><a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">frc::RK4</a></div><div class="ttdeci">T RK4(F &amp;&amp;f, T x, units::second_t dt)</div><div class="ttdoc">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.</div><div class="ttdef"><b>Definition:</b> NumericalIntegration.h:25</div></div>
@@ -312,11 +313,10 @@ $(document).ready(function(){initNavTree('_numerical_integration_8h_source.html'
 <div class="ttc" id="anamespaceunits_1_1constants_html_a88751eee8d448ad7d24121e14fa7582a"><div class="ttname"><a href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">units::constants::h</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; energy::joule, time::seconds &gt; &gt; h(6.626070040e-34)</div><div class="ttdoc">Planck constant.</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a8ef157f2a40ed27a0f834847b332eb72"><div class="ttname"><a href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">units::constants::F</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; charge::coulomb, inverse&lt; substance::mol &gt; &gt; &gt; F(N_A *e)</div><div class="ttdoc">Faraday constant.</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_a8bc48cef3fdfae35910a4bbe5011abcd"><div class="ttname"><a href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">units::math::pow</a></div><div class="ttdeci">auto pow(const UnitType &amp;value) noexcept -&gt; unit_t&lt; typename units::detail::power_of_unit&lt; power, typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;::type, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the value of value raised to the power</div><div class="ttdef"><b>Definition:</b> base.h:2809</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_ae9f8f59df111748817588a056678942b"><div class="ttname"><a href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">units::math::min</a></div><div class="ttdeci">UnitTypeLhs() min(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3413</div></div>
 <div class="ttc" id="anamespacewpi_1_1hashing_1_1detail_html_a03097c3fe12aebe7428417767a2a146a"><div class="ttname"><a href="namespacewpi_1_1hashing_1_1detail.html#a03097c3fe12aebe7428417767a2a146a">wpi::hashing::detail::k1</a></div><div class="ttdeci">static constexpr uint64_t k1</div><div class="ttdef"><b>Definition:</b> Hashing.h:171</div></div>
 <div class="ttc" id="anamespacewpi_1_1hashing_1_1detail_html_a7d92e356817689e52b821a755601f4c4"><div class="ttname"><a href="namespacewpi_1_1hashing_1_1detail.html#a7d92e356817689e52b821a755601f4c4">wpi::hashing::detail::k3</a></div><div class="ttdeci">static constexpr uint64_t k3</div><div class="ttdef"><b>Definition:</b> Hashing.h:173</div></div>
 <div class="ttc" id="anamespacewpi_1_1hashing_1_1detail_html_a84a7f60bac2688b9b66f5bac6dc7c797"><div class="ttname"><a href="namespacewpi_1_1hashing_1_1detail.html#a84a7f60bac2688b9b66f5bac6dc7c797">wpi::hashing::detail::k2</a></div><div class="ttdeci">static constexpr uint64_t k2</div><div class="ttdef"><b>Definition:</b> Hashing.h:172</div></div>
+<div class="ttc" id="apow_8hpp_html_a4bd11447e8e9884ad7eb792bc9fb592c"><div class="ttname"><a href="pow_8hpp.html#a4bd11447e8e9884ad7eb792bc9fb592c">pow</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; pow(const T1 base, const T2 exp_term) noexcept</div><div class="ttdoc">Compile-time power function.</div><div class="ttdef"><b>Definition:</b> pow.hpp:76</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -324,7 +324,7 @@ $(document).ready(function(){initNavTree('_numerical_integration_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_6a6d4dbfd7def32c812c83ce511abb63.html">system</a></li><li class="navelem"><a class="el" href="_numerical_integration_8h.html">NumericalIntegration.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

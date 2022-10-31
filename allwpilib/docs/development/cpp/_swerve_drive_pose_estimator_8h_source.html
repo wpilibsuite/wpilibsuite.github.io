@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-35-g1c3c86e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-36-g3a5a376</span>
    </div>
   </td>
  </tr>
@@ -261,8 +261,8 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    m_prevTime = -1_s;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    m_gyroOffset = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">Rotation</a>() - gyroAngle;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    m_previousAngle = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">Rotation</a>();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    m_gyroOffset = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b">Rotation</a>() - gyroAngle;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    m_previousAngle = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b">Rotation</a>();</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"></span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">  /**</span></div>
@@ -412,11 +412,11 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    <span class="keyword">auto</span> chassisSpeeds = m_kinematics.ToChassisSpeeds(moduleStates);</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <span class="keyword">auto</span> fieldRelativeSpeeds =</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <a class="code hl_class" href="classfrc_1_1_translation2d.html">Translation2d</a>{chassisSpeeds.vx * 1_s, chassisSpeeds.vy * 1_s}.<a class="code hl_function" href="classfrc_1_1_translation2d.html#af305f18995bea59715535b0636a89abe">RotateBy</a>(</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <a class="code hl_class" href="classfrc_1_1_translation2d.html">Translation2d</a>{chassisSpeeds.vx * 1_s, chassisSpeeds.vy * 1_s}.<a class="code hl_function" href="classfrc_1_1_translation2d.html#a77874d629385fcfa0e3980b7fda281ad">RotateBy</a>(</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            angle);</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;Inputs&gt;</a> u;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    u(0) = fieldRelativeSpeeds.<a class="code hl_function" href="classfrc_1_1_translation2d.html#aa656d3bc0edaef7499db07c53840e028">X</a>().value();</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    u(0) = fieldRelativeSpeeds.<a class="code hl_function" href="classfrc_1_1_translation2d.html#a585a55fd1936298fcf7e4f074fbc7cc7">X</a>().value();</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    u(1) = fieldRelativeSpeeds.Y().value();</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    u(2) = omega.value();</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NumModules; i++) {</div>
@@ -471,7 +471,7 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div class="ttc" id="a_time_interpolatable_buffer_8h_html"><div class="ttname"><a href="_time_interpolatable_buffer_8h.html">TimeInterpolatableBuffer.h</a></div></div>
 <div class="ttc" id="a_unscented_kalman_filter_8h_html"><div class="ttname"><a href="_unscented_kalman_filter_8h.html">UnscentedKalmanFilter.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
-<div class="ttc" id="aclassfrc_1_1_pose2d_html_ab58cd85d929e96cbc40360409196921c"><div class="ttname"><a href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">frc::Pose2d::Rotation</a></div><div class="ttdeci">const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:113</div></div>
+<div class="ttc" id="aclassfrc_1_1_pose2d_html_a2936ce7a45e58fce82c8cefa2a56c60b"><div class="ttname"><a href="classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b">frc::Pose2d::Rotation</a></div><div class="ttdeci">constexpr const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:113</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1_swerve_drive_kinematics_html"><div class="ttname"><a href="classfrc_1_1_swerve_drive_kinematics.html">frc::SwerveDriveKinematics</a></div><div class="ttdoc">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.h:47</div></div>
 <div class="ttc" id="aclassfrc_1_1_swerve_drive_pose_estimator_html"><div class="ttname"><a href="classfrc_1_1_swerve_drive_pose_estimator.html">frc::SwerveDrivePoseEstimator</a></div><div class="ttdoc">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swer...</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:54</div></div>
@@ -488,8 +488,8 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div class="ttc" id="aclassfrc_1_1_swerve_drive_pose_estimator_html_afa43500d257dd6e01c810ffd6992e2a9"><div class="ttname"><a href="classfrc_1_1_swerve_drive_pose_estimator.html#afa43500d257dd6e01c810ffd6992e2a9">frc::SwerveDrivePoseEstimator::GetEstimatedPosition</a></div><div class="ttdeci">Pose2d GetEstimatedPosition() const</div><div class="ttdoc">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:178</div></div>
 <div class="ttc" id="aclassfrc_1_1_time_interpolatable_buffer_html"><div class="ttname"><a href="classfrc_1_1_time_interpolatable_buffer.html">frc::TimeInterpolatableBuffer</a></div><div class="ttdoc">The TimeInterpolatableBuffer provides an easy way to estimate past measurements.</div><div class="ttdef"><b>Definition:</b> TimeInterpolatableBuffer.h:36</div></div>
 <div class="ttc" id="aclassfrc_1_1_translation2d_html"><div class="ttname"><a href="classfrc_1_1_translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2D space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:26</div></div>
-<div class="ttc" id="aclassfrc_1_1_translation2d_html_aa656d3bc0edaef7499db07c53840e028"><div class="ttname"><a href="classfrc_1_1_translation2d.html#aa656d3bc0edaef7499db07c53840e028">frc::Translation2d::X</a></div><div class="ttdeci">units::meter_t X() const</div><div class="ttdoc">Returns the X component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:67</div></div>
-<div class="ttc" id="aclassfrc_1_1_translation2d_html_af305f18995bea59715535b0636a89abe"><div class="ttname"><a href="classfrc_1_1_translation2d.html#af305f18995bea59715535b0636a89abe">frc::Translation2d::RotateBy</a></div><div class="ttdeci">Translation2d RotateBy(const Rotation2d &amp;other) const</div><div class="ttdoc">Applies a rotation to the translation in 2D space.</div></div>
+<div class="ttc" id="aclassfrc_1_1_translation2d_html_a585a55fd1936298fcf7e4f074fbc7cc7"><div class="ttname"><a href="classfrc_1_1_translation2d.html#a585a55fd1936298fcf7e4f074fbc7cc7">frc::Translation2d::X</a></div><div class="ttdeci">constexpr units::meter_t X() const</div><div class="ttdoc">Returns the X component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:67</div></div>
+<div class="ttc" id="aclassfrc_1_1_translation2d_html_a77874d629385fcfa0e3980b7fda281ad"><div class="ttname"><a href="classfrc_1_1_translation2d.html#a77874d629385fcfa0e3980b7fda281ad">frc::Translation2d::RotateBy</a></div><div class="ttdeci">constexpr Translation2d RotateBy(const Rotation2d &amp;other) const</div><div class="ttdoc">Applies a rotation to the translation in 2D space.</div><div class="ttdef"><b>Definition:</b> Translation2d.inc:23</div></div>
 <div class="ttc" id="aclassfrc_1_1_unscented_kalman_filter_html"><div class="ttname"><a href="classfrc_1_1_unscented_kalman_filter.html">frc::UnscentedKalmanFilter</a></div><div class="ttdoc">A Kalman filter combines predictions from a model and measurements to give an estimate of the true sy...</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:47</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="agroup__ntcore__utility__func_html_ga29dbf93f14f9cdffa80b422e9cb2a50e"><div class="ttname"><a href="group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e">nt::Now</a></div><div class="ttdeci">int64_t Now()</div><div class="ttdoc">Returns monotonic current time in 1 us increments.</div></div>
@@ -508,7 +508,7 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_swerve_drive_pose_estimator_8h.html">SwerveDrivePoseEstimator.h</a></li>
-    <li class="footer">Generated on Fri Oct 28 2022 06:37:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Oct 31 2022 16:19:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
