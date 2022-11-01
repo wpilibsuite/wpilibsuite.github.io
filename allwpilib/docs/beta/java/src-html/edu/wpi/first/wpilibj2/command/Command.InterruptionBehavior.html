@@ -442,30 +442,48 @@
 <span class="sourceLineNo">430</span><a id="line.430">  }</a>
 <span class="sourceLineNo">431</span><a id="line.431"></a>
 <span class="sourceLineNo">432</span><a id="line.432">  /**</a>
-<span class="sourceLineNo">433</span><a id="line.433">   * Gets the name of this Command.</a>
+<span class="sourceLineNo">433</span><a id="line.433">   * Gets the name of this Command. Defaults to the simple class name if not overridden.</a>
 <span class="sourceLineNo">434</span><a id="line.434">   *</a>
-<span class="sourceLineNo">435</span><a id="line.435">   * @return Name</a>
+<span class="sourceLineNo">435</span><a id="line.435">   * @return The display name of the Command</a>
 <span class="sourceLineNo">436</span><a id="line.436">   */</a>
 <span class="sourceLineNo">437</span><a id="line.437">  default String getName() {</a>
 <span class="sourceLineNo">438</span><a id="line.438">    return this.getClass().getSimpleName();</a>
 <span class="sourceLineNo">439</span><a id="line.439">  }</a>
 <span class="sourceLineNo">440</span><a id="line.440"></a>
 <span class="sourceLineNo">441</span><a id="line.441">  /**</a>
-<span class="sourceLineNo">442</span><a id="line.442">   * An enum describing the command's behavior when another command with a shared requirement is</a>
-<span class="sourceLineNo">443</span><a id="line.443">   * scheduled.</a>
-<span class="sourceLineNo">444</span><a id="line.444">   */</a>
-<span class="sourceLineNo">445</span><a id="line.445">  enum InterruptionBehavior {</a>
-<span class="sourceLineNo">446</span><a id="line.446">    /**</a>
-<span class="sourceLineNo">447</span><a id="line.447">     * This command ends, {@link #end(boolean) end(true)} is called, and the incoming command is</a>
-<span class="sourceLineNo">448</span><a id="line.448">     * scheduled normally.</a>
-<span class="sourceLineNo">449</span><a id="line.449">     *</a>
-<span class="sourceLineNo">450</span><a id="line.450">     * &lt;p&gt;This is the default behavior.</a>
-<span class="sourceLineNo">451</span><a id="line.451">     */</a>
-<span class="sourceLineNo">452</span><a id="line.452">    kCancelSelf,</a>
-<span class="sourceLineNo">453</span><a id="line.453">    /** This command continues, and the incoming command is not scheduled. */</a>
-<span class="sourceLineNo">454</span><a id="line.454">    kCancelIncoming</a>
-<span class="sourceLineNo">455</span><a id="line.455">  }</a>
-<span class="sourceLineNo">456</span><a id="line.456">}</a>
+<span class="sourceLineNo">442</span><a id="line.442">   * Sets the name of this Command. Nullop if not overridden.</a>
+<span class="sourceLineNo">443</span><a id="line.443">   *</a>
+<span class="sourceLineNo">444</span><a id="line.444">   * @param name The display name of the Command.</a>
+<span class="sourceLineNo">445</span><a id="line.445">   */</a>
+<span class="sourceLineNo">446</span><a id="line.446">  default void setName(String name) {}</a>
+<span class="sourceLineNo">447</span><a id="line.447"></a>
+<span class="sourceLineNo">448</span><a id="line.448">  /**</a>
+<span class="sourceLineNo">449</span><a id="line.449">   * Decorates this Command with a name. Is an inline function for #setName(String);</a>
+<span class="sourceLineNo">450</span><a id="line.450">   *</a>
+<span class="sourceLineNo">451</span><a id="line.451">   * @param name name</a>
+<span class="sourceLineNo">452</span><a id="line.452">   * @return the decorated Command</a>
+<span class="sourceLineNo">453</span><a id="line.453">   */</a>
+<span class="sourceLineNo">454</span><a id="line.454">  default Command withName(String name) {</a>
+<span class="sourceLineNo">455</span><a id="line.455">    this.setName(name);</a>
+<span class="sourceLineNo">456</span><a id="line.456">    return this;</a>
+<span class="sourceLineNo">457</span><a id="line.457">  }</a>
+<span class="sourceLineNo">458</span><a id="line.458"></a>
+<span class="sourceLineNo">459</span><a id="line.459">  /**</a>
+<span class="sourceLineNo">460</span><a id="line.460">   * An enum describing the command's behavior when another command with a shared requirement is</a>
+<span class="sourceLineNo">461</span><a id="line.461">   * scheduled.</a>
+<span class="sourceLineNo">462</span><a id="line.462">   */</a>
+<span class="sourceLineNo">463</span><a id="line.463">  enum InterruptionBehavior {</a>
+<span class="sourceLineNo">464</span><a id="line.464">    /**</a>
+<span class="sourceLineNo">465</span><a id="line.465">     * This command ends, {@link #end(boolean) end(true)} is called, and the incoming command is</a>
+<span class="sourceLineNo">466</span><a id="line.466">     * scheduled normally.</a>
+<span class="sourceLineNo">467</span><a id="line.467">     *</a>
+<span class="sourceLineNo">468</span><a id="line.468">     * &lt;p&gt;This is the default behavior.</a>
+<span class="sourceLineNo">469</span><a id="line.469">     */</a>
+<span class="sourceLineNo">470</span><a id="line.470">    kCancelSelf,</a>
+<span class="sourceLineNo">471</span><a id="line.471">    /** This command continues, and the incoming command is not scheduled. */</a>
+<span class="sourceLineNo">472</span><a id="line.472">    kCancelIncoming</a>
+<span class="sourceLineNo">473</span><a id="line.473">  }</a>
+<span class="sourceLineNo">474</span><a id="line.474">}</a>
 
 
 
