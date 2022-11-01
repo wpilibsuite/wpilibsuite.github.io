@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('_spline_8h_source.html',''); initResiz
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// Populate the polynomial bases</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt;= Degree; i++) {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      polynomialBases(i) = <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(t, Degree - i);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      polynomialBases(i) = <a class="code hl_function" href="pow_8hpp.html#a4bd11447e8e9884ad7eb792bc9fb592c">std::pow</a>(t, Degree - i);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// This simply multiplies by the coefficients. We need to divide out t some</span></div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('_spline_8h_source.html',''); initResiz
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="comment">// Find the curvature.</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">const</span> <span class="keyword">auto</span> curvature =</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        (dx * ddy - ddx * dy) / ((dx * dx + dy * dy) * <a class="code hl_function" href="group___unit_math.html#ga3162ba1ab8f84bcd2d17cbe60769b851">std::hypot</a>(dx, dy));</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        (dx * ddy - ddx * dy) / ((dx * dx + dy * dy) * <a class="code hl_function" href="hypot_8hpp.html#a65cd416d302d47115f1f06958c1eba15">std::hypot</a>(dx, dy));</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        {<a class="code hl_function" href="classfrc_1_1_spline.html#a388b2c4c4c73b480c9cbb7fb4217c07e">FromVector</a>(combined.template block&lt;2, 1&gt;(0, 0)), <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>{dx, dy}},</div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('_spline_8h_source.html',''); initResiz
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   * @return The vector.</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="classfrc_1_1_spline.html#a5d4326aced0e8de8cc2e03f862034cfc">  111</a></span>  <span class="keyword">static</span> Eigen::Vector2d <a class="code hl_function" href="classfrc_1_1_spline.html#a5d4326aced0e8de8cc2e03f862034cfc">ToVector</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_translation2d.html">Translation2d</a>&amp; translation) {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> Eigen::Vector2d{translation.<a class="code hl_function" href="classfrc_1_1_translation2d.html#aa656d3bc0edaef7499db07c53840e028">X</a>().value(), translation.<a class="code hl_function" href="classfrc_1_1_translation2d.html#a6cf391feb31627ca0b90f5e5ba520be6">Y</a>().value()};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span> Eigen::Vector2d{translation.<a class="code hl_function" href="classfrc_1_1_translation2d.html#a585a55fd1936298fcf7e4f074fbc7cc7">X</a>().value(), translation.<a class="code hl_function" href="classfrc_1_1_translation2d.html#a7e2e59300f8638fb41a8daa1b59c5d27">Y</a>().value()};</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"></span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">  /**</span></div>
@@ -236,16 +236,16 @@ $(document).ready(function(){initNavTree('_spline_8h_source.html',''); initResiz
 <div class="ttc" id="aclassfrc_1_1_spline_html_ae0b60a3f29b06993c46973de88fe119f"><div class="ttname"><a href="classfrc_1_1_spline.html#ae0b60a3f29b06993c46973de88fe119f">frc::Spline::Spline</a></div><div class="ttdeci">Spline(Spline &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_spline_html_af55397a21c1cbda0262007916dcd01ff"><div class="ttname"><a href="classfrc_1_1_spline.html#af55397a21c1cbda0262007916dcd01ff">frc::Spline::operator=</a></div><div class="ttdeci">Spline &amp; operator=(Spline &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_translation2d_html"><div class="ttname"><a href="classfrc_1_1_translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2D space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:26</div></div>
-<div class="ttc" id="aclassfrc_1_1_translation2d_html_a6cf391feb31627ca0b90f5e5ba520be6"><div class="ttname"><a href="classfrc_1_1_translation2d.html#a6cf391feb31627ca0b90f5e5ba520be6">frc::Translation2d::Y</a></div><div class="ttdeci">units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:74</div></div>
-<div class="ttc" id="aclassfrc_1_1_translation2d_html_aa656d3bc0edaef7499db07c53840e028"><div class="ttname"><a href="classfrc_1_1_translation2d.html#aa656d3bc0edaef7499db07c53840e028">frc::Translation2d::X</a></div><div class="ttdeci">units::meter_t X() const</div><div class="ttdoc">Returns the X component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:67</div></div>
+<div class="ttc" id="aclassfrc_1_1_translation2d_html_a585a55fd1936298fcf7e4f074fbc7cc7"><div class="ttname"><a href="classfrc_1_1_translation2d.html#a585a55fd1936298fcf7e4f074fbc7cc7">frc::Translation2d::X</a></div><div class="ttdeci">constexpr units::meter_t X() const</div><div class="ttdoc">Returns the X component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:67</div></div>
+<div class="ttc" id="aclassfrc_1_1_translation2d_html_a7e2e59300f8638fb41a8daa1b59c5d27"><div class="ttname"><a href="classfrc_1_1_translation2d.html#a7e2e59300f8638fb41a8daa1b59c5d27">frc::Translation2d::Y</a></div><div class="ttdeci">constexpr units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:74</div></div>
 <div class="ttc" id="aclassunits_1_1unit__t_html"><div class="ttname"><a href="classunits_1_1unit__t.html">units::unit_t&lt; units::compound_unit&lt; units::radians, units::inverse&lt; units::meters &gt; &gt; &gt;</a></div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="acurvature_8h_html"><div class="ttname"><a href="curvature_8h.html">curvature.h</a></div></div>
-<div class="ttc" id="agroup___unit_math_html_ga3162ba1ab8f84bcd2d17cbe60769b851"><div class="ttname"><a href="group___unit_math.html#ga3162ba1ab8f84bcd2d17cbe60769b851">units::math::hypot</a></div><div class="ttdeci">UnitTypeLhs hypot(const UnitTypeLhs &amp;x, const UnitTypeRhs &amp;y)</div><div class="ttdoc">Computes the square root of the sum-of-squares of x and y.</div><div class="ttdef"><b>Definition:</b> math.h:505</div></div>
+<div class="ttc" id="ahypot_8hpp_html_a65cd416d302d47115f1f06958c1eba15"><div class="ttname"><a href="hypot_8hpp.html#a65cd416d302d47115f1f06958c1eba15">hypot</a></div><div class="ttdeci">constexpr common_return_t&lt; T1, T2 &gt; hypot(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time Pythagorean addition function.</div><div class="ttdef"><b>Definition:</b> hypot.hpp:84</div></div>
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_a8bc48cef3fdfae35910a4bbe5011abcd"><div class="ttname"><a href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">units::math::pow</a></div><div class="ttdeci">auto pow(const UnitType &amp;value) noexcept -&gt; unit_t&lt; typename units::detail::power_of_unit&lt; power, typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;::type, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the value of value raised to the power</div><div class="ttdef"><b>Definition:</b> base.h:2809</div></div>
+<div class="ttc" id="apow_8hpp_html_a4bd11447e8e9884ad7eb792bc9fb592c"><div class="ttname"><a href="pow_8hpp.html#a4bd11447e8e9884ad7eb792bc9fb592c">pow</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; pow(const T1 base, const T2 exp_term) noexcept</div><div class="ttdoc">Compile-time power function.</div><div class="ttdef"><b>Definition:</b> pow.hpp:76</div></div>
 <div class="ttc" id="astructfrc_1_1_spline_1_1_control_vector_html"><div class="ttname"><a href="structfrc_1_1_spline_1_1_control_vector.html">frc::Spline::ControlVector</a></div><div class="ttdoc">Represents a control vector for a spline.</div><div class="ttdef"><b>Definition:</b> Spline.h:46</div></div>
 <div class="ttc" id="astructfrc_1_1_spline_1_1_control_vector_html_a7fa1176e9fa0c34ab45d3baf168d75c6"><div class="ttname"><a href="structfrc_1_1_spline_1_1_control_vector.html#a7fa1176e9fa0c34ab45d3baf168d75c6">frc::Spline::ControlVector::x</a></div><div class="ttdeci">wpi::array&lt; double,(Degree+1)/2 &gt; x</div><div class="ttdef"><b>Definition:</b> Spline.h:47</div></div>
 <div class="ttc" id="astructfrc_1_1_spline_1_1_control_vector_html_afd356b7244bceb1c2206177a0281500f"><div class="ttname"><a href="structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f">frc::Spline::ControlVector::y</a></div><div class="ttdeci">wpi::array&lt; double,(Degree+1)/2 &gt; y</div><div class="ttdef"><b>Definition:</b> Spline.h:48</div></div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('_spline_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d71b639942242251bb415aa2ae346d4f.html">spline</a></li><li class="navelem"><a class="el" href="_spline_8h.html">Spline.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -301,231 +301,235 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_8h_source.html',
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a712f877b1e421fda6bf0cec09ff1965f">  206</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a712f877b1e421fda6bf0cec09ff1965f">SetYawAxis</a>(<a class="code hl_enumeration" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a> yaw_axis);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a920f6b6378644b8fc1ff5a11435a44fa">  208</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a920f6b6378644b8fc1ff5a11435a44fa">ConfigDecRate</a>(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> DecimationRate);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"></span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">   * Get the SPI port number.</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">   * @return The SPI port number.</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ad64a6b668aea7caafab31108bfb97156">  215</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ad64a6b668aea7caafab31108bfb97156">GetPort</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1428900d502d7d0f853bafc6016cb28c">  217</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1428900d502d7d0f853bafc6016cb28c">InitSendable</a>(<a class="code hl_class" href="classnt_1_1_n_t_sendable_builder.html">nt::NTSendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#af8d4beec52d3059668256bdae3777af4">  208</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#af8d4beec52d3059668256bdae3777af4">IsConnected</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a920f6b6378644b8fc1ff5a11435a44fa">  210</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a920f6b6378644b8fc1ff5a11435a44fa">ConfigDecRate</a>(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> DecimationRate);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment"></span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">   * Get the SPI port number.</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">   * @return The SPI port number.</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ad64a6b668aea7caafab31108bfb97156">  217</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#ad64a6b668aea7caafab31108bfb97156">GetPort</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> <span class="keyword">private</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">  /** @brief ADIS16448 Register Map Declaration */</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> FLASH_CNT = 0x00;  <span class="comment">// Flash memory write count</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XGYRO_OUT = 0x04;  <span class="comment">// X-axis gyroscope output</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YGYRO_OUT = 0x06;  <span class="comment">// Y-axis gyroscope output</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZGYRO_OUT = 0x08;  <span class="comment">// Z-axis gyroscope output</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XACCL_OUT = 0x0A;  <span class="comment">// X-axis accelerometer output</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YACCL_OUT = 0x0C;  <span class="comment">// Y-axis accelerometer output</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZACCL_OUT = 0x0E;  <span class="comment">// Z-axis accelerometer output</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XMAGN_OUT = 0x10;  <span class="comment">// X-axis magnetometer output</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YMAGN_OUT = 0x12;  <span class="comment">// Y-axis magnetometer output</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZMAGN_OUT = 0x14;  <span class="comment">// Z-axis magnetometer output</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> BARO_OUT =</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      0x16;  <span class="comment">// Barometer pressure measurement, high word</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> TEMP_OUT = 0x18;  <span class="comment">// Temperature output</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XGYRO_OFF =</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      0x1A;  <span class="comment">// X-axis gyroscope bias offset factor</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YGYRO_OFF =</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      0x1C;  <span class="comment">// Y-axis gyroscope bias offset factor</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZGYRO_OFF =</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      0x1E;  <span class="comment">// Z-axis gyroscope bias offset factor</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XACCL_OFF =</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      0x20;  <span class="comment">// X-axis acceleration bias offset factor</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YACCL_OFF =</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      0x22;  <span class="comment">// Y-axis acceleration bias offset factor</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZACCL_OFF =</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      0x24;  <span class="comment">// Z-axis acceleration bias offset factor</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XMAGN_HIC =</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      0x26;  <span class="comment">// X-axis magnetometer, hard iron factor</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YMAGN_HIC =</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      0x28;  <span class="comment">// Y-axis magnetometer, hard iron factor</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZMAGN_HIC =</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      0x2A;  <span class="comment">// Z-axis magnetometer, hard iron factor</span></div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XMAGN_SIC =</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      0x2C;  <span class="comment">// X-axis magnetometer, soft iron factor</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YMAGN_SIC =</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      0x2E;  <span class="comment">// Y-axis magnetometer, soft iron factor</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZMAGN_SIC =</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      0x30;  <span class="comment">// Z-axis magnetometer, soft iron factor</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> GPIO_CTRL = 0x32;  <span class="comment">// GPIO control</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> MSC_CTRL = 0x34;   <span class="comment">// MISC control</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SMPL_PRD =</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      0x36;  <span class="comment">// Sample clock/Decimation filter control</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SENS_AVG = 0x38;    <span class="comment">// Digital filter control</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SEQ_CNT = 0x3A;     <span class="comment">// MAGN_OUT and BARO_OUT counter</span></div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> DIAG_STAT = 0x3C;   <span class="comment">// System status</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> GLOB_CMD = 0x3E;    <span class="comment">// System command</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_MAG1 = 0x40;    <span class="comment">// Alarm 1 amplitude threshold</span></div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_MAG2 = 0x42;    <span class="comment">// Alarm 2 amplitude threshold</span></div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_SMPL1 = 0x44;   <span class="comment">// Alarm 1 sample size</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_SMPL2 = 0x46;   <span class="comment">// Alarm 2 sample size</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_CTRL = 0x48;    <span class="comment">// Alarm control</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> LOT_ID1 = 0x52;     <span class="comment">// Lot identification number</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> LOT_ID2 = 0x54;     <span class="comment">// Lot identification number</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> PROD_ID = 0x56;     <span class="comment">// Product identifier</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SERIAL_NUM = 0x58;  <span class="comment">// Lot-specific serial number</span></div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment"></span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">  /** @brief ADIS16448 Static Constants */</span></div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> rad_to_deg = 57.2957795;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> deg_to_rad = 0.0174532;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> grav = 9.81;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment"></span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">  /** @brief struct to store offset data */</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="keyword">struct </span>OffsetData {</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordtype">double</span> gyro_rate_x = 0.0;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordtype">double</span> gyro_rate_y = 0.0;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="keywordtype">double</span> gyro_rate_z = 0.0;</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  };</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment"></span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">  /** @brief Internal Resources **/</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <a class="code hl_class" href="classfrc_1_1_digital_input.html">DigitalInput</a>* m_reset_in;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <a class="code hl_class" href="classfrc_1_1_digital_output.html">DigitalOutput</a>* m_status_led;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="keywordtype">bool</span> SwitchToStandardSPI();</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1428900d502d7d0f853bafc6016cb28c">  219</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a1428900d502d7d0f853bafc6016cb28c">InitSendable</a>(<a class="code hl_class" href="classnt_1_1_n_t_sendable_builder.html">nt::NTSendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> <span class="keyword">private</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">  /** @brief ADIS16448 Register Map Declaration */</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> FLASH_CNT = 0x00;  <span class="comment">// Flash memory write count</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XGYRO_OUT = 0x04;  <span class="comment">// X-axis gyroscope output</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YGYRO_OUT = 0x06;  <span class="comment">// Y-axis gyroscope output</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZGYRO_OUT = 0x08;  <span class="comment">// Z-axis gyroscope output</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XACCL_OUT = 0x0A;  <span class="comment">// X-axis accelerometer output</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YACCL_OUT = 0x0C;  <span class="comment">// Y-axis accelerometer output</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZACCL_OUT = 0x0E;  <span class="comment">// Z-axis accelerometer output</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XMAGN_OUT = 0x10;  <span class="comment">// X-axis magnetometer output</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YMAGN_OUT = 0x12;  <span class="comment">// Y-axis magnetometer output</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZMAGN_OUT = 0x14;  <span class="comment">// Z-axis magnetometer output</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> BARO_OUT =</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      0x16;  <span class="comment">// Barometer pressure measurement, high word</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> TEMP_OUT = 0x18;  <span class="comment">// Temperature output</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XGYRO_OFF =</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      0x1A;  <span class="comment">// X-axis gyroscope bias offset factor</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YGYRO_OFF =</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      0x1C;  <span class="comment">// Y-axis gyroscope bias offset factor</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZGYRO_OFF =</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      0x1E;  <span class="comment">// Z-axis gyroscope bias offset factor</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XACCL_OFF =</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      0x20;  <span class="comment">// X-axis acceleration bias offset factor</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YACCL_OFF =</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      0x22;  <span class="comment">// Y-axis acceleration bias offset factor</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZACCL_OFF =</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      0x24;  <span class="comment">// Z-axis acceleration bias offset factor</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XMAGN_HIC =</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      0x26;  <span class="comment">// X-axis magnetometer, hard iron factor</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YMAGN_HIC =</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      0x28;  <span class="comment">// Y-axis magnetometer, hard iron factor</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZMAGN_HIC =</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      0x2A;  <span class="comment">// Z-axis magnetometer, hard iron factor</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> XMAGN_SIC =</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      0x2C;  <span class="comment">// X-axis magnetometer, soft iron factor</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> YMAGN_SIC =</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      0x2E;  <span class="comment">// Y-axis magnetometer, soft iron factor</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ZMAGN_SIC =</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      0x30;  <span class="comment">// Z-axis magnetometer, soft iron factor</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> GPIO_CTRL = 0x32;  <span class="comment">// GPIO control</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> MSC_CTRL = 0x34;   <span class="comment">// MISC control</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SMPL_PRD =</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      0x36;  <span class="comment">// Sample clock/Decimation filter control</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SENS_AVG = 0x38;    <span class="comment">// Digital filter control</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SEQ_CNT = 0x3A;     <span class="comment">// MAGN_OUT and BARO_OUT counter</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> DIAG_STAT = 0x3C;   <span class="comment">// System status</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> GLOB_CMD = 0x3E;    <span class="comment">// System command</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_MAG1 = 0x40;    <span class="comment">// Alarm 1 amplitude threshold</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_MAG2 = 0x42;    <span class="comment">// Alarm 2 amplitude threshold</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_SMPL1 = 0x44;   <span class="comment">// Alarm 1 sample size</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_SMPL2 = 0x46;   <span class="comment">// Alarm 2 sample size</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> ALM_CTRL = 0x48;    <span class="comment">// Alarm control</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> LOT_ID1 = 0x52;     <span class="comment">// Lot identification number</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> LOT_ID2 = 0x54;     <span class="comment">// Lot identification number</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> PROD_ID = 0x56;     <span class="comment">// Product identifier</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> SERIAL_NUM = 0x58;  <span class="comment">// Lot-specific serial number</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment"></span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">  /** @brief ADIS16448 Static Constants */</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> rad_to_deg = 57.2957795;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> deg_to_rad = 0.0174532;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> grav = 9.81;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment"></span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">  /** @brief struct to store offset data */</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="keyword">struct </span>OffsetData {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="keywordtype">double</span> gyro_rate_x = 0.0;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordtype">double</span> gyro_rate_y = 0.0;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordtype">double</span> gyro_rate_z = 0.0;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  };</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment"></span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">  /** @brief Internal Resources **/</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <a class="code hl_class" href="classfrc_1_1_digital_input.html">DigitalInput</a>* m_reset_in;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <a class="code hl_class" href="classfrc_1_1_digital_output.html">DigitalOutput</a>* m_status_led;</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <span class="keywordtype">bool</span> SwitchToAutoSPI();</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <span class="keywordtype">bool</span> SwitchToStandardSPI();</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> ReadRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="keywordtype">bool</span> SwitchToAutoSPI();</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <span class="keywordtype">void</span> WriteRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg, <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> val);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> ReadRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg);</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordtype">void</span> Acquire();</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordtype">void</span> WriteRegister(<a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a58c956967b2b3b326df2b220ae9b2274">uint8_t</a> reg, <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> val);</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="keywordtype">void</span> Close();</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="keywordtype">void</span> Acquire();</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="comment">// User-specified yaw axis</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <a class="code hl_enumeration" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a> m_yaw_axis;</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <span class="comment">// Last read values (post-scaling)</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <span class="keywordtype">double</span> m_gyro_rate_x = 0.0;</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <span class="keywordtype">double</span> m_gyro_rate_y = 0.0;</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="keywordtype">double</span> m_gyro_rate_z = 0.0;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordtype">double</span> m_accel_x = 0.0;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="keywordtype">double</span> m_accel_y = 0.0;</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="keywordtype">double</span> m_accel_z = 0.0;</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordtype">double</span> m_mag_x = 0.0;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordtype">double</span> m_mag_y = 0.0;</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <span class="keywordtype">double</span> m_mag_z = 0.0;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <span class="keywordtype">double</span> m_baro = 0.0;</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordtype">double</span> m_temp = 0.0;</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="comment">// Complementary filter variables</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordtype">double</span> m_tau = 0.5;</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordtype">double</span> m_dt, m_alpha = 0.0;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordtype">double</span> m_compAngleX, m_compAngleY, m_accelAngleX, m_accelAngleY = 0.0;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="comment">// vector for storing most recent imu values</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  OffsetData* m_offset_buffer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <span class="keywordtype">double</span> m_gyro_rate_offset_x = 0.0;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  <span class="keywordtype">double</span> m_gyro_rate_offset_y = 0.0;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordtype">double</span> m_gyro_rate_offset_z = 0.0;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <span class="comment">// function to re-init offset buffer</span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keywordtype">void</span> InitOffsetBuffer(<span class="keywordtype">int</span> <a class="code hl_function" href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">size</a>);</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="comment">// Accumulated gyro values (for offset calculation)</span></div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordtype">int</span> m_avg_size = 0;</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keywordtype">int</span> m_accum_count = 0;</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="comment">// Integrated gyro values</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <span class="keywordtype">double</span> m_integ_gyro_angle_x = 0.0;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordtype">double</span> m_integ_gyro_angle_y = 0.0;</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <span class="keywordtype">double</span> m_integ_gyro_angle_z = 0.0;</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="comment">// Complementary filter functions</span></div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keywordtype">double</span> FormatFastConverge(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accAngle);</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  <span class="keywordtype">double</span> FormatRange0to2PI(<span class="keywordtype">double</span> compAngle);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="keywordtype">void</span> Close();</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="comment">// User-specified yaw axis</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <a class="code hl_enumeration" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#a84a9c1b185255f6c8c580bd4e1dc234b">IMUAxis</a> m_yaw_axis;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <span class="comment">// Last read values (post-scaling)</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="keywordtype">double</span> m_gyro_rate_x = 0.0;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordtype">double</span> m_gyro_rate_y = 0.0;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="keywordtype">double</span> m_gyro_rate_z = 0.0;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="keywordtype">double</span> m_accel_x = 0.0;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordtype">double</span> m_accel_y = 0.0;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordtype">double</span> m_accel_z = 0.0;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <span class="keywordtype">double</span> m_mag_x = 0.0;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <span class="keywordtype">double</span> m_mag_y = 0.0;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordtype">double</span> m_mag_z = 0.0;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">double</span> m_baro = 0.0;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordtype">double</span> m_temp = 0.0;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="comment">// Complementary filter variables</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordtype">double</span> m_tau = 0.5;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="keywordtype">double</span> m_dt, m_alpha = 0.0;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="keywordtype">double</span> m_compAngleX, m_compAngleY, m_accelAngleX, m_accelAngleY = 0.0;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <span class="comment">// vector for storing most recent imu values</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  OffsetData* m_offset_buffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordtype">double</span> m_gyro_rate_offset_x = 0.0;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <span class="keywordtype">double</span> m_gyro_rate_offset_y = 0.0;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <span class="keywordtype">double</span> m_gyro_rate_offset_z = 0.0;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="comment">// function to re-init offset buffer</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keywordtype">void</span> InitOffsetBuffer(<span class="keywordtype">int</span> <a class="code hl_function" href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">size</a>);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="comment">// Accumulated gyro values (for offset calculation)</span></div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keywordtype">int</span> m_avg_size = 0;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keywordtype">int</span> m_accum_count = 0;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="comment">// Integrated gyro values</span></div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <span class="keywordtype">double</span> m_integ_gyro_angle_x = 0.0;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  <span class="keywordtype">double</span> m_integ_gyro_angle_y = 0.0;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keywordtype">double</span> m_integ_gyro_angle_z = 0.0;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="comment">// Complementary filter functions</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  <span class="keywordtype">double</span> FormatFastConverge(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accAngle);</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <span class="keywordtype">double</span> FormatAccelRange(<span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> accelZ);</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <span class="keywordtype">double</span> FormatRange0to2PI(<span class="keywordtype">double</span> compAngle);</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">double</span> CompFilterProcess(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> omega);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordtype">double</span> FormatAccelRange(<span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> accelZ);</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <span class="comment">// State and resource variables</span></div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_active = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_first_run = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_idle = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_start_up_mode = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keywordtype">bool</span> m_auto_configured = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <a class="code hl_enumeration" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">SPI::Port</a> m_spi_port;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <a class="code hl_enumeration" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">CalibrationTime</a> m_calibration_time{0};</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  SPI* m_spi = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  DigitalInput* m_auto_interrupt = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  std::thread m_acquire_task;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  hal::SimDevice m_simDevice;</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  hal::SimDouble m_simGyroAngleX;</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  hal::SimDouble m_simGyroAngleY;</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  hal::SimDouble m_simGyroAngleZ;</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  hal::SimDouble m_simGyroRateX;</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  hal::SimDouble m_simGyroRateY;</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  hal::SimDouble m_simGyroRateZ;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  hal::SimDouble m_simAccelX;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  hal::SimDouble m_simAccelY;</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  hal::SimDouble m_simAccelZ;</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  <span class="keyword">struct </span>NonMovableMutexWrapper {</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>;</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    NonMovableMutexWrapper() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <span class="keywordtype">double</span> CompFilterProcess(<span class="keywordtype">double</span> compAngle, <span class="keywordtype">double</span> accelAngle, <span class="keywordtype">double</span> omega);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <span class="comment">// State and resource variables</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_active = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_first_run = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_thread_idle = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keyword">volatile</span> <span class="keywordtype">bool</span> m_start_up_mode = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  <span class="keywordtype">bool</span> m_auto_configured = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <a class="code hl_enumeration" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">SPI::Port</a> m_spi_port;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <a class="code hl_enumeration" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aa4d79379c6ddf65b46ce0c4617ebabd8">CalibrationTime</a> m_calibration_time{0};</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  SPI* m_spi = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  DigitalInput* m_auto_interrupt = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  <span class="keywordtype">bool</span> m_connected{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  std::thread m_acquire_task;</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  hal::SimDevice m_simDevice;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  hal::SimBoolean m_simConnected;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  hal::SimDouble m_simGyroAngleX;</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  hal::SimDouble m_simGyroAngleY;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  hal::SimDouble m_simGyroAngleZ;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  hal::SimDouble m_simGyroRateX;</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  hal::SimDouble m_simGyroRateY;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  hal::SimDouble m_simGyroRateZ;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  hal::SimDouble m_simAccelX;</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  hal::SimDouble m_simAccelY;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  hal::SimDouble m_simAccelZ;</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    NonMovableMutexWrapper(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aee5286def2f4af4f1038cd1df5525c7f">operator=</a>(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    NonMovableMutexWrapper(NonMovableMutexWrapper&amp;&amp;) {}</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aee5286def2f4af4f1038cd1df5525c7f">operator=</a>(NonMovableMutexWrapper&amp;&amp;) {</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    }</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordtype">void</span> lock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.lock(); }</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keywordtype">void</span> unlock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.unlock(); }</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  <span class="keyword">struct </span>NonMovableMutexWrapper {</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>;</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    NonMovableMutexWrapper() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    NonMovableMutexWrapper(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aee5286def2f4af4f1038cd1df5525c7f">operator=</a>(<span class="keyword">const</span> NonMovableMutexWrapper&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    NonMovableMutexWrapper(NonMovableMutexWrapper&amp;&amp;) {}</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    NonMovableMutexWrapper&amp; <a class="code hl_function" href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aee5286def2f4af4f1038cd1df5525c7f">operator=</a>(NonMovableMutexWrapper&amp;&amp;) {</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    }</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="keywordtype">bool</span> try_lock() noexcept { <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.try_lock(); }</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>  };</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>  <span class="keyword">mutable</span> NonMovableMutexWrapper m_mutex;</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>  <span class="comment">// CRC-16 Look-Up Table</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> adiscrc[256] = {</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>      0x0000, 0x17CE, 0x0FDF, 0x1811, 0x1FBE, 0x0870, 0x1061, 0x07AF, 0x1F3F,</div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>      0x08F1, 0x10E0, 0x072E, 0x0081, 0x174F, 0x0F5E, 0x1890, 0x1E3D, 0x09F3,</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>      0x11E2, 0x062C, 0x0183, 0x164D, 0x0E5C, 0x1992, 0x0102, 0x16CC, 0x0EDD,</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>      0x1913, 0x1EBC, 0x0972, 0x1163, 0x06AD, 0x1C39, 0x0BF7, 0x13E6, 0x0428,</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>      0x0387, 0x1449, 0x0C58, 0x1B96, 0x0306, 0x14C8, 0x0CD9, 0x1B17, 0x1CB8,</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>      0x0B76, 0x1367, 0x04A9, 0x0204, 0x15CA, 0x0DDB, 0x1A15, 0x1DBA, 0x0A74,</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>      0x1265, 0x05AB, 0x1D3B, 0x0AF5, 0x12E4, 0x052A, 0x0285, 0x154B, 0x0D5A,</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>      0x1A94, 0x1831, 0x0FFF, 0x17EE, 0x0020, 0x078F, 0x1041, 0x0850, 0x1F9E,</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>      0x070E, 0x10C0, 0x08D1, 0x1F1F, 0x18B0, 0x0F7E, 0x176F, 0x00A1, 0x060C,</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>      0x11C2, 0x09D3, 0x1E1D, 0x19B2, 0x0E7C, 0x166D, 0x01A3, 0x1933, 0x0EFD,</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>      0x16EC, 0x0122, 0x068D, 0x1143, 0x0952, 0x1E9C, 0x0408, 0x13C6, 0x0BD7,</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>      0x1C19, 0x1BB6, 0x0C78, 0x1469, 0x03A7, 0x1B37, 0x0CF9, 0x14E8, 0x0326,</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>      0x0489, 0x1347, 0x0B56, 0x1C98, 0x1A35, 0x0DFB, 0x15EA, 0x0224, 0x058B,</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>      0x1245, 0x0A54, 0x1D9A, 0x050A, 0x12C4, 0x0AD5, 0x1D1B, 0x1AB4, 0x0D7A,</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>      0x156B, 0x02A5, 0x1021, 0x07EF, 0x1FFE, 0x0830, 0x0F9F, 0x1851, 0x0040,</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>      0x178E, 0x0F1E, 0x18D0, 0x00C1, 0x170F, 0x10A0, 0x076E, 0x1F7F, 0x08B1,</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>      0x0E1C, 0x19D2, 0x01C3, 0x160D, 0x11A2, 0x066C, 0x1E7D, 0x09B3, 0x1123,</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>      0x06ED, 0x1EFC, 0x0932, 0x0E9D, 0x1953, 0x0142, 0x168C, 0x0C18, 0x1BD6,</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      0x03C7, 0x1409, 0x13A6, 0x0468, 0x1C79, 0x0BB7, 0x1327, 0x04E9, 0x1CF8,</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      0x0B36, 0x0C99, 0x1B57, 0x0346, 0x1488, 0x1225, 0x05EB, 0x1DFA, 0x0A34,</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>      0x0D9B, 0x1A55, 0x0244, 0x158A, 0x0D1A, 0x1AD4, 0x02C5, 0x150B, 0x12A4,</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>      0x056A, 0x1D7B, 0x0AB5, 0x0810, 0x1FDE, 0x07CF, 0x1001, 0x17AE, 0x0060,</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>      0x1871, 0x0FBF, 0x172F, 0x00E1, 0x18F0, 0x0F3E, 0x0891, 0x1F5F, 0x074E,</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>      0x1080, 0x162D, 0x01E3, 0x19F2, 0x0E3C, 0x0993, 0x1E5D, 0x064C, 0x1182,</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>      0x0912, 0x1EDC, 0x06CD, 0x1103, 0x16AC, 0x0162, 0x1973, 0x0EBD, 0x1429,</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>      0x03E7, 0x1BF6, 0x0C38, 0x0B97, 0x1C59, 0x0448, 0x1386, 0x0B16, 0x1CD8,</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>      0x04C9, 0x1307, 0x14A8, 0x0366, 0x1B77, 0x0CB9, 0x0A14, 0x1DDA, 0x05CB,</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>      0x1205, 0x15AA, 0x0264, 0x1A75, 0x0DBB, 0x152B, 0x02E5, 0x1AF4, 0x0D3A,</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      0x0A95, 0x1D5B, 0x054A, 0x1284};</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>};</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <span class="keywordtype">void</span> lock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.lock(); }</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <span class="keywordtype">void</span> unlock() { <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.unlock(); }</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <span class="keywordtype">bool</span> try_lock() noexcept { <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a>.try_lock(); }</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>  };</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>  <span class="keyword">mutable</span> NonMovableMutexWrapper m_mutex;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>  <span class="comment">// CRC-16 Look-Up Table</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">uint16_t</a> adiscrc[256] = {</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>      0x0000, 0x17CE, 0x0FDF, 0x1811, 0x1FBE, 0x0870, 0x1061, 0x07AF, 0x1F3F,</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>      0x08F1, 0x10E0, 0x072E, 0x0081, 0x174F, 0x0F5E, 0x1890, 0x1E3D, 0x09F3,</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>      0x11E2, 0x062C, 0x0183, 0x164D, 0x0E5C, 0x1992, 0x0102, 0x16CC, 0x0EDD,</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>      0x1913, 0x1EBC, 0x0972, 0x1163, 0x06AD, 0x1C39, 0x0BF7, 0x13E6, 0x0428,</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>      0x0387, 0x1449, 0x0C58, 0x1B96, 0x0306, 0x14C8, 0x0CD9, 0x1B17, 0x1CB8,</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>      0x0B76, 0x1367, 0x04A9, 0x0204, 0x15CA, 0x0DDB, 0x1A15, 0x1DBA, 0x0A74,</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>      0x1265, 0x05AB, 0x1D3B, 0x0AF5, 0x12E4, 0x052A, 0x0285, 0x154B, 0x0D5A,</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>      0x1A94, 0x1831, 0x0FFF, 0x17EE, 0x0020, 0x078F, 0x1041, 0x0850, 0x1F9E,</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>      0x070E, 0x10C0, 0x08D1, 0x1F1F, 0x18B0, 0x0F7E, 0x176F, 0x00A1, 0x060C,</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>      0x11C2, 0x09D3, 0x1E1D, 0x19B2, 0x0E7C, 0x166D, 0x01A3, 0x1933, 0x0EFD,</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>      0x16EC, 0x0122, 0x068D, 0x1143, 0x0952, 0x1E9C, 0x0408, 0x13C6, 0x0BD7,</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>      0x1C19, 0x1BB6, 0x0C78, 0x1469, 0x03A7, 0x1B37, 0x0CF9, 0x14E8, 0x0326,</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>      0x0489, 0x1347, 0x0B56, 0x1C98, 0x1A35, 0x0DFB, 0x15EA, 0x0224, 0x058B,</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>      0x1245, 0x0A54, 0x1D9A, 0x050A, 0x12C4, 0x0AD5, 0x1D1B, 0x1AB4, 0x0D7A,</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      0x156B, 0x02A5, 0x1021, 0x07EF, 0x1FFE, 0x0830, 0x0F9F, 0x1851, 0x0040,</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      0x178E, 0x0F1E, 0x18D0, 0x00C1, 0x170F, 0x10A0, 0x076E, 0x1F7F, 0x08B1,</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>      0x0E1C, 0x19D2, 0x01C3, 0x160D, 0x11A2, 0x066C, 0x1E7D, 0x09B3, 0x1123,</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>      0x06ED, 0x1EFC, 0x0932, 0x0E9D, 0x1953, 0x0142, 0x168C, 0x0C18, 0x1BD6,</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>      0x03C7, 0x1409, 0x13A6, 0x0468, 0x1C79, 0x0BB7, 0x1327, 0x04E9, 0x1CF8,</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>      0x0B36, 0x0C99, 0x1B57, 0x0346, 0x1488, 0x1225, 0x05EB, 0x1DFA, 0x0A34,</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>      0x0D9B, 0x1A55, 0x0244, 0x158A, 0x0D1A, 0x1AD4, 0x02C5, 0x150B, 0x12A4,</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>      0x056A, 0x1D7B, 0x0AB5, 0x0810, 0x1FDE, 0x07CF, 0x1001, 0x17AE, 0x0060,</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>      0x1871, 0x0FBF, 0x172F, 0x00E1, 0x18F0, 0x0F3E, 0x0891, 0x1F5F, 0x074E,</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>      0x1080, 0x162D, 0x01E3, 0x19F2, 0x0E3C, 0x0993, 0x1E5D, 0x064C, 0x1182,</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      0x0912, 0x1EDC, 0x06CD, 0x1103, 0x16AC, 0x0162, 0x1973, 0x0EBD, 0x1429,</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>      0x03E7, 0x1BF6, 0x0C38, 0x0B97, 0x1C59, 0x0448, 0x1386, 0x0B16, 0x1CD8,</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>      0x04C9, 0x1307, 0x14A8, 0x0366, 0x1B77, 0x0CB9, 0x0A14, 0x1DDA, 0x05CB,</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>      0x1205, 0x15AA, 0x0264, 0x1A75, 0x0DBB, 0x152B, 0x02E5, 0x1AF4, 0x0D3A,</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>      0x0A95, 0x1D5B, 0x054A, 0x1284};</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>};</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_digital_input_8h_html"><div class="ttname"><a href="_digital_input_8h.html">DigitalInput.h</a></div></div>
 <div class="ttc" id="a_digital_output_8h_html"><div class="ttname"><a href="_digital_output_8h.html">DigitalOutput.h</a></div></div>
 <div class="ttc" id="a_digital_source_8h_html"><div class="ttname"><a href="_digital_source_8h.html">DigitalSource.h</a></div></div>
@@ -571,6 +575,7 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_8h_source.html',
 <div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html_aec0f41427f1972891841e5376877c82a"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aec0f41427f1972891841e5376877c82a">frc::ADIS16448_IMU::GetYawAxis</a></div><div class="ttdeci">IMUAxis GetYawAxis() const</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html_aee5286def2f4af4f1038cd1df5525c7f"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#aee5286def2f4af4f1038cd1df5525c7f">frc::ADIS16448_IMU::operator=</a></div><div class="ttdeci">ADIS16448_IMU &amp; operator=(ADIS16448_IMU &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html_af5e10dbeac44e48f13ea38ec54dacd75"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#af5e10dbeac44e48f13ea38ec54dacd75">frc::ADIS16448_IMU::ADIS16448_IMU</a></div><div class="ttdeci">ADIS16448_IMU(ADIS16448_IMU &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html_af8d4beec52d3059668256bdae3777af4"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#af8d4beec52d3059668256bdae3777af4">frc::ADIS16448_IMU::IsConnected</a></div><div class="ttdeci">bool IsConnected() const</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html_afc2a99f7eea5c98f5035118f44917b71"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#afc2a99f7eea5c98f5035118f44917b71">frc::ADIS16448_IMU::ADIS16448_IMU</a></div><div class="ttdeci">ADIS16448_IMU()</div><div class="ttdoc">IMU constructor on onboard MXP CS0, Z-up orientation, and complementary AHRS computation.</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html_afc79a38c921c458662df2f922c9e5c83"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#afc79a38c921c458662df2f922c9e5c83">frc::ADIS16448_IMU::GetMagneticFieldX</a></div><div class="ttdeci">units::tesla_t GetMagneticFieldX() const</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_i_s16448___i_m_u_html_afde58029d062ded451010c3cff8f038c"><div class="ttname"><a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#afde58029d062ded451010c3cff8f038c">frc::ADIS16448_IMU::GetGyroRateZ</a></div><div class="ttdeci">units::degrees_per_second_t GetGyroRateZ() const</div><div class="ttdoc">Returns the angular rate in the Z axis.</div></div>
@@ -597,7 +602,7 @@ $(document).ready(function(){initNavTree('_a_d_i_s16448___i_m_u_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_a_d_i_s16448___i_m_u_8h.html">ADIS16448_IMU.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

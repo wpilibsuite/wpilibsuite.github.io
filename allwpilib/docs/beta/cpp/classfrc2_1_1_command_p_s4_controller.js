@@ -1,5 +1,6 @@
 var classfrc2_1_1_command_p_s4_controller =
 [
+    [ "Button", "classfrc2_1_1_command_p_s4_controller.html#a170995d2f1a8a851a8372a2e99c31914", null ],
     [ "Circle", "classfrc2_1_1_command_p_s4_controller.html#a5c5cd5c8027781c516cf62cd70f31d87", null ],
     [ "Cross", "classfrc2_1_1_command_p_s4_controller.html#a4366a8c21c37312f41e62caa1d0cc2e9", null ],
     [ "L1", "classfrc2_1_1_command_p_s4_controller.html#a5137eb4f991f36b40d0168feda945002", null ],

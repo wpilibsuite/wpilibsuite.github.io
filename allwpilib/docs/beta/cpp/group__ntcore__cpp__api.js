@@ -59,13 +59,6 @@ var group__ntcore__cpp__api =
       [ "NetworkTableInstance", "classnt_1_1_network_table.html#a99d2f31dacd310fe96ffa03aa791fd85", null ],
       [ "PATH_SEPARATOR_CHAR", "classnt_1_1_network_table.html#ab0d5324921b216090f76b0c699bb0247", null ]
     ] ],
-    [ "nt::TopicListenerFlags", "structnt_1_1_topic_listener_flags.html", [
-      [ "TopicListenerFlags", "structnt_1_1_topic_listener_flags.html#a5d61de6130ade8ecb964190f4b529c11", null ],
-      [ "kImmediate", "structnt_1_1_topic_listener_flags.html#a76b2c3afd9f3293405c4dac2acc5ff1c", null ],
-      [ "kProperties", "structnt_1_1_topic_listener_flags.html#abbdb889c6f5ca01c2339b76a1590f25e", null ],
-      [ "kPublish", "structnt_1_1_topic_listener_flags.html#ac1665637b254e591b2c40ed72d32e84a", null ],
-      [ "kUnpublish", "structnt_1_1_topic_listener_flags.html#af711fd43f47b3bb95a098d46760dfef1", null ]
-    ] ],
     [ "nt::Value", "classnt_1_1_value.html", [
       [ "Value", "classnt_1_1_value.html#a0223a64ebeb9473f6adc43c9546d6305", null ],
       [ "Value", "classnt_1_1_value.html#af3033e1d42b8e414e3410db5b7051d30", null ],
@@ -209,8 +202,13 @@ var group__ntcore__cpp__api =
       ] ],
       [ "NetworkTableInstance", "classnt_1_1_network_table_instance.html#a1f7a671f7bcdcbe32b3c1092e07f0b17", null ],
       [ "NetworkTableInstance", "classnt_1_1_network_table_instance.html#a2fd93ee4d03aa7c2cc88a5930170f488", null ],
-      [ "AddConnectionListener", "classnt_1_1_network_table_instance.html#a2864d23f95e78b7edb45a575961fcd9d", null ],
-      [ "AddLogger", "classnt_1_1_network_table_instance.html#a39e38354186352eb5351ae671108de5c", null ],
+      [ "AddConnectionListener", "classnt_1_1_network_table_instance.html#a244700aa018b6a4cc801ef9f87ae0db0", null ],
+      [ "AddListener", "classnt_1_1_network_table_instance.html#a3b2ac36f7c0bda302944dfbc3300e70c", null ],
+      [ "AddListener", "classnt_1_1_network_table_instance.html#ab0fd8c21f5d8235a91bc2858259a0005", null ],
+      [ "AddListener", "classnt_1_1_network_table_instance.html#a3149f80a27268b5c1610a590d437ece5", null ],
+      [ "AddListener", "classnt_1_1_network_table_instance.html#a72a3b3655ee043931e176fc1895de380", null ],
+      [ "AddListener", "classnt_1_1_network_table_instance.html#a9c3152f8b83706bcb4bd3d22081adf91", null ],
+      [ "AddLogger", "classnt_1_1_network_table_instance.html#a3679902f58227a93622bd65c05973425", null ],
       [ "Create", "classnt_1_1_network_table_instance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68", null ],
       [ "Destroy", "classnt_1_1_network_table_instance.html#ae2415aa85f185e31fd0c136544aa0764", null ],
       [ "Flush", "classnt_1_1_network_table_instance.html#a951a3b2bf019b82032d445321a8ae1e3", null ],
@@ -245,8 +243,7 @@ var group__ntcore__cpp__api =
       [ "operator bool", "classnt_1_1_network_table_instance.html#a94c22c2e6d9287a40638fd4413351554", null ],
       [ "operator!=", "classnt_1_1_network_table_instance.html#a935a3c2b9987ae4e56751cf0778ee45e", null ],
       [ "operator==", "classnt_1_1_network_table_instance.html#a1a1b7bfad2b69ffa2fd4c68ab88162e9", null ],
-      [ "RemoveConnectionListener", "classnt_1_1_network_table_instance.html#a7d5282662e5be28b164d932a9cdf8e81", null ],
-      [ "RemoveLogger", "classnt_1_1_network_table_instance.html#a3e67285e9e103e77c27c4486d4856927", null ],
+      [ "RemoveListener", "classnt_1_1_network_table_instance.html#aa61e82ca14608ac1ec47ff62ddc1e983", null ],
       [ "SetServer", "classnt_1_1_network_table_instance.html#a7f9c402190a71668398fb5db31168c42", null ],
       [ "SetServer", "classnt_1_1_network_table_instance.html#adb07f12ba98711379dac93d43993e936", null ],
       [ "SetServer", "classnt_1_1_network_table_instance.html#aedf195a418e222ca90e60759635cb9b2", null ],
@@ -264,6 +261,7 @@ var group__ntcore__cpp__api =
       [ "StopEntryDataLog", "classnt_1_1_network_table_instance.html#a28fd85da65fde9cf7d341978b410cc38", null ],
       [ "StopLocal", "classnt_1_1_network_table_instance.html#ab95d4b1f75c6ab1ff7952088a9565eb3", null ],
       [ "StopServer", "classnt_1_1_network_table_instance.html#a7c9397edd689ca70aa8f597799665521", null ],
+      [ "WaitForListenerQueue", "classnt_1_1_network_table_instance.html#a2905300d437f50e15953f62d7341f772", null ],
       [ "kDefaultPort3", "classnt_1_1_network_table_instance.html#a78639af206cc7a2dc74b6edfa98001b6", null ],
       [ "kDefaultPort4", "classnt_1_1_network_table_instance.html#a5902db4f35b6fbf1859cf65c02c99a85", null ]
     ] ],

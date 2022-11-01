@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// Bisection method.</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">unsigned</span> ZeroBits = 0;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    T Shift = std::numeric_limits&lt;T&gt;::digits &gt;&gt; 1;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    T Mask = (<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;T&gt;::max</a>)() &gt;&gt; Shift;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    T Mask = (<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::numeric_limits&lt;T&gt;::max</a>)() &gt;&gt; Shift;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">while</span> (Shift) {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keywordflow">if</span> ((Val &amp; Mask) == 0) {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        Val &gt;&gt;= Shift;</div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">///   valid arguments.</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="namespacewpi.html#a3b142bef5a5b68ba5def7d5428653014">  203</a></span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T <a class="code hl_function" href="namespacewpi.html#a3b142bef5a5b68ba5def7d5428653014">findFirstSet</a>(T Val, <a class="code hl_enumeration" href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efb">ZeroBehavior</a> ZB = <a class="code hl_enumvalue" href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efba7ca42989d02ebf0e4fb3387724228f43">ZB_Max</a>) {</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordflow">if</span> (ZB == <a class="code hl_enumvalue" href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efba7ca42989d02ebf0e4fb3387724228f43">ZB_Max</a> &amp;&amp; Val == 0)</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;T&gt;::max</a>)();</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::numeric_limits&lt;T&gt;::max</a>)();</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewpi.html#a10e2eb77f5b39477413026df59b92032">countTrailingZeros</a>(Val, <a class="code hl_enumvalue" href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efba481d3ff2733f6df876f66977ac4e9824">ZB_Undefined</a>);</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>}</div>
@@ -339,7 +339,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">///   valid arguments.</span></div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="namespacewpi.html#a2b04cd68057d9779f905d1a86d9c9fc9">  244</a></span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T <a class="code hl_function" href="namespacewpi.html#a2b04cd68057d9779f905d1a86d9c9fc9">findLastSet</a>(T Val, <a class="code hl_enumeration" href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efb">ZeroBehavior</a> ZB = <a class="code hl_enumvalue" href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efba7ca42989d02ebf0e4fb3387724228f43">ZB_Max</a>) {</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordflow">if</span> (ZB == <a class="code hl_enumvalue" href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efba7ca42989d02ebf0e4fb3387724228f43">ZB_Max</a> &amp;&amp; Val == 0)</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;T&gt;::max</a>)();</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::numeric_limits&lt;T&gt;::max</a>)();</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="comment">// Use ^ instead of - because both gcc and llvm can remove the associated ^</span></div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="comment">// in the __builtin_clz intrinsic on x86.</span></div>
@@ -655,7 +655,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="preprocessor">#if defined(__ANDROID_API__) &amp;&amp; __ANDROID_API__ &lt; 18</span></div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  <span class="keywordflow">return</span> __builtin_log(Value) / __builtin_log(2.0);</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a6b50fd45f87f306afd49e939b15b9f8f">std::log2</a>(Value);</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gac19a3f10ebced4d7760193130ed220fa">std::log2</a>(Value);</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>}</div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="comment"></span> </div>
@@ -876,7 +876,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>  T Z = X + Y;</div>
 <div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>  Overflowed = (Z &lt; X || Z &lt; Y);</div>
 <div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  <span class="keywordflow">if</span> (Overflowed)</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;T&gt;::max</a>)();</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    <span class="keywordflow">return</span> (<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::numeric_limits&lt;T&gt;::max</a>)();</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    <span class="keywordflow">return</span> Z;</div>
 <div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>}</div>
@@ -901,7 +901,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>  <span class="comment">// Special case: if X or Y is 0, Log2_64 gives -1, and Log2Z</span></div>
 <div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>  <span class="comment">// will necessarily be less than Log2Max as desired.</span></div>
 <div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  <span class="keywordtype">int</span> Log2Z = <a class="code hl_function" href="namespacewpi.html#ab109b30376a3d157344b924e82ccd5ef">Log2_64</a>(X) + <a class="code hl_function" href="namespacewpi.html#ab109b30376a3d157344b924e82ccd5ef">Log2_64</a>(Y);</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  <span class="keyword">const</span> T Max = (<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;T&gt;::max</a>)();</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  <span class="keyword">const</span> T Max = (<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::numeric_limits&lt;T&gt;::max</a>)();</div>
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  <span class="keywordtype">int</span> Log2Max = <a class="code hl_function" href="namespacewpi.html#ab109b30376a3d157344b924e82ccd5ef">Log2_64</a>(Max);</div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>  <span class="keywordflow">if</span> (Log2Z &lt; Log2Max) {</div>
 <div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keywordflow">return</span> X * Y;</div>
@@ -1021,9 +1021,9 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>  <span class="comment">// Check how the max allowed absolute value (2^n for negative, 2^(n-1) for</span></div>
 <div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>  <span class="comment">// positive) divided by an argument compares to the other.</span></div>
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>  <span class="keywordflow">if</span> (IsNegative)</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>    <span class="keywordflow">return</span> UX &gt; (<span class="keyword">static_cast&lt;</span>U<span class="keyword">&gt;</span>((<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;T&gt;::max</a>)()) + U(1)) / UY;</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>    <span class="keywordflow">return</span> UX &gt; (<span class="keyword">static_cast&lt;</span>U<span class="keyword">&gt;</span>((<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::numeric_limits&lt;T&gt;::max</a>)()) + U(1)) / UY;</div>
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    <span class="keywordflow">return</span> UX &gt; (<span class="keyword">static_cast&lt;</span>U<span class="keyword">&gt;</span>((<a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;T&gt;::max</a>)())) / UY;</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    <span class="keywordflow">return</span> UX &gt; (<span class="keyword">static_cast&lt;</span>U<span class="keyword">&gt;</span>((<a class="code hl_function" href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">std::numeric_limits&lt;T&gt;::max</a>)())) / UY;</div>
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>}</div>
 <div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span> </div>
 <div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span><span class="comment">// Typesafe implementation of the signum function.</span></div>
@@ -1049,13 +1049,14 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>} <span class="comment">// End wpi namespace</span></div>
 <div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span> </div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a6b50fd45f87f306afd49e939b15b9f8f"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a6b50fd45f87f306afd49e939b15b9f8f">log2</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const Log2ReturnType log2() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:170</div></div>
 <div class="ttc" id="a_compiler_8h_html"><div class="ttname"><a href="_compiler_8h.html">Compiler.h</a></div></div>
 <div class="ttc" id="a_math_extras_8h_html_ace331bebb5bd2780b8dfb7e6e97db7dd"><div class="ttname"><a href="_math_extras_8h.html#ace331bebb5bd2780b8dfb7e6e97db7dd">R6</a></div><div class="ttdeci">#define R6(n)</div></div>
 <div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:298</div></div>
 <div class="ttc" id="acore_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> core.h:1204</div></div>
 <div class="ttc" id="aformat_8h_html_a180c7fe352095f4ad7379ede8d1da1a0"><div class="ttname"><a href="format_8h.html#a180c7fe352095f4ad7379ede8d1da1a0">is_integer</a></div><div class="ttdeci">bool_constant&lt; is_integral&lt; T &gt;::value &amp;&amp;!std::is_same&lt; T, bool &gt;::value &amp;&amp;!std::is_same&lt; T, char &gt;::value &amp;&amp;!std::is_same&lt; T, wchar_t &gt;::value &gt; is_integer</div><div class="ttdef"><b>Definition:</b> format.h:3418</div></div>
 <div class="ttc" id="aformat_8h_html_a56d0276c2e6f4b26cb3565e08ebc9181"><div class="ttname"><a href="format_8h.html#a56d0276c2e6f4b26cb3565e08ebc9181">is_signed</a></div><div class="ttdeci">std::integral_constant&lt; bool, std::numeric_limits&lt; T &gt;::is_signed||std::is_same&lt; T, int128_opt &gt;::value &gt; is_signed</div><div class="ttdef"><b>Definition:</b> format.h:996</div></div>
+<div class="ttc" id="agroup___unit_math_html_gac19a3f10ebced4d7760193130ed220fa"><div class="ttname"><a href="group___unit_math.html#gac19a3f10ebced4d7760193130ed220fa">units::math::log2</a></div><div class="ttdeci">dimensionless::scalar_t log2(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute binary logarithm.</div><div class="ttdef"><b>Definition:</b> math.h:453</div></div>
+<div class="ttc" id="amax_8hpp_html_a9d9e64d509ec77f4e1ceec56d222d5f4"><div class="ttname"><a href="max_8hpp.html#a9d9e64d509ec77f4e1ceec56d222d5f4">max</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; max(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise maximum function.</div><div class="ttdef"><b>Definition:</b> max.hpp:35</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a0259c31cd34e096be5056e9d88ae0500"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a0259c31cd34e096be5056e9d88ae0500">Eigen::numext::uint64_t</a></div><div class="ttdeci">::uint64_t uint64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:58</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a05475d0d7f372e4a858d6344e63c148e"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a05475d0d7f372e4a858d6344e63c148e">Eigen::numext::int16_t</a></div><div class="ttdeci">::int16_t int16_t</div><div class="ttdef"><b>Definition:</b> Meta.h:55</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a0841ad317de8d5642ab65d9c7cebc42f"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a0841ad317de8d5642ab65d9c7cebc42f">Eigen::numext::uint16_t</a></div><div class="ttdeci">::uint16_t uint16_t</div><div class="ttdef"><b>Definition:</b> Meta.h:54</div></div>
@@ -1067,7 +1068,6 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="ttc" id="anamespace_eigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
 <div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> ranges.h:23</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a8ef157f2a40ed27a0f834847b332eb72"><div class="ttname"><a href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">units::constants::F</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; charge::coulomb, inverse&lt; substance::mol &gt; &gt; &gt; F(N_A *e)</div><div class="ttdoc">Faraday constant.</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3421</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> NullDeleter.h:7</div></div>
 <div class="ttc" id="anamespacewpi_html_a01982bb8b119d94de4200ed371ad5397"><div class="ttname"><a href="namespacewpi.html#a01982bb8b119d94de4200ed371ad5397">wpi::maxIntN</a></div><div class="ttdeci">int64_t maxIntN(int64_t N)</div><div class="ttdoc">Gets the maximum value for a N-bit signed integer.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:419</div></div>
 <div class="ttc" id="anamespacewpi_html_a096e48bf0264a255eb2ff954146cc85b"><div class="ttname"><a href="namespacewpi.html#a096e48bf0264a255eb2ff954146cc85b">wpi::BitReverseTable256</a></div><div class="ttdeci">static const unsigned char BitReverseTable256[256]</div><div class="ttdoc">Macro compressed bit reversal table for 256 bits.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:257</div></div>
@@ -1157,7 +1157,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_3c14e2811843326714b08335f4db6d6f.html">llvm</a></li><li class="navelem"><a class="el" href="dir_c9d71ee896d0afc8c2dc55673cfe897b.html">include</a></li><li class="navelem"><a class="el" href="dir_a809135da9c9e78db898aa42d248563a.html">wpi</a></li><li class="navelem"><a class="el" href="_math_extras_8h.html">MathExtras.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

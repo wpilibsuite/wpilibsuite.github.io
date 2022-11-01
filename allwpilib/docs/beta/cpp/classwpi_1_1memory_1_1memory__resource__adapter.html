@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -117,7 +117,6 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5a051486a01c3ce54506d9d3235ff5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#ad5a051486a01c3ce54506d9d3235ff5d">memory_resource_adapter</a> (<a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#adfd1a61e0271a71992d9e50e20fd4897">allocator_type</a> &amp;&amp;other) noexcept</td></tr>
-<tr class="memdesc:ad5a051486a01c3ce54506d9d3235ff5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates the resource by moving in the allocator.  <a href="classwpi_1_1memory_1_1memory__resource__adapter.html#ad5a051486a01c3ce54506d9d3235ff5d">More...</a><br /></td></tr>
 <tr class="separator:ad5a051486a01c3ce54506d9d3235ff5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a1a11961b344a2027476e34d3c090d47a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#adfd1a61e0271a71992d9e50e20fd4897">allocator_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#a1a11961b344a2027476e34d3c090d47a">get_allocator</a> () noexcept</td></tr>
@@ -135,7 +134,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aec1d4d8ded16c5e24f5a896c6556180a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#aec1d4d8ded16c5e24f5a896c6556180a">do_allocate</a> (std::size_t <a class="el" href="classbytes.html">bytes</a>, std::size_t alignment) override</td></tr>
 <tr class="separator:aec1d4d8ded16c5e24f5a896c6556180a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47aed3b144e809bd89b2529bf8f61b52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#a47aed3b144e809bd89b2529bf8f61b52">do_deallocate</a> (void *p, std::size_t <a class="el" href="classbytes.html">bytes</a>, std::size_t alignment) override</td></tr>
-<tr class="memdesc:a47aed3b144e809bd89b2529bf8f61b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates memory previously allocated by <a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#aec1d4d8ded16c5e24f5a896c6556180a">do_allocate</a>.  <a href="classwpi_1_1memory_1_1memory__resource__adapter.html#a47aed3b144e809bd89b2529bf8f61b52">More...</a><br /></td></tr>
 <tr class="separator:a47aed3b144e809bd89b2529bf8f61b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3dc4e6d9338ef5daa23f25de10ab507"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#aa3dc4e6d9338ef5daa23f25de10ab507">do_is_equal</a> (const memory_resource &amp;other) const noexcept override</td></tr>
 <tr class="separator:aa3dc4e6d9338ef5daa23f25de10ab507"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,8 +205,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates the resource by moving in the allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates the resource by moving in the allocator. </dd></dl>
 
 </div>
 </div>
@@ -292,9 +289,8 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates memory previously allocated by <a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#aec1d4d8ded16c5e24f5a896c6556180a">do_allocate</a>. </p>
-<p >It forwards to <code><a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#ac5a5ea7c5f4680044ba727e50d9476d2">deallocate_node()</a></code> or <code><a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a573e1e7097a40c3d5af2542d0200833e">deallocate_array()</a></code> depending on the size. </p><dl class="exception"><dt>Exceptions</dt><dd>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates memory previously allocated by <a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html#aec1d4d8ded16c5e24f5a896c6556180a">do_allocate</a>. It forwards to <code><a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#ac5a5ea7c5f4680044ba727e50d9476d2">deallocate_node()</a></code> or <code><a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a573e1e7097a40c3d5af2542d0200833e">deallocate_array()</a></code> depending on the size. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">Nothing.</td><td></td></tr>
   </table>
@@ -396,7 +392,7 @@ template&lt;class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1memory__resource__adapter.html">memory_resource_adapter</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

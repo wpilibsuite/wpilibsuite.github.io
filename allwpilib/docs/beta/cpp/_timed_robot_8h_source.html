@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_timed_robot_8h_source.html',''); init
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="priority__queue_8h.html">wpi/priority_queue.h</a>&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_iterative_robot_base_8h.html">frc/IterativeRobotBase.h</a>&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="_timer_8h.html">frc/Timer.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_timer_8h.html">frc/Timer.h</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"></span> </div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('_timed_robot_8h_source.html',''); init
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        : func{<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(func)},</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>          period{period},</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>          expirationTime{startTime + offset +</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                         <a class="code hl_namespace" href="namespaceunits.html">units</a>::math::<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a3230e10964844c34fb73eaccc84dc8a7">floor</a>(</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                         <a class="code hl_namespace" href="namespaceunits.html">units</a>::math::<a class="code hl_function" href="group___unit_math.html#gad7fa514c186141cb9d3fcf824fd41a37">floor</a>(</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                             (<a class="code hl_class" href="classfrc_1_1_timer.html">Timer</a>::GetFPGATimestamp() - startTime) / period) *</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                             period +</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                         period} {}</div>
@@ -202,9 +202,7 @@ $(document).ready(function(){initNavTree('_timed_robot_8h_source.html',''); init
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>};</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}  <span class="comment">// namespace frc</span></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a3230e10964844c34fb73eaccc84dc8a7"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a3230e10964844c34fb73eaccc84dc8a7">floor</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const FloorReturnType floor() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:481</div></div>
 <div class="ttc" id="a_iterative_robot_base_8h_html"><div class="ttname"><a href="_iterative_robot_base_8h.html">IterativeRobotBase.h</a></div></div>
-<div class="ttc" id="a_timer_8h_html"><div class="ttname"><a href="_timer_8h.html">Timer.h</a></div></div>
 <div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html">frc::IterativeRobotBase</a></div><div class="ttdoc">IterativeRobotBase implements a specific type of robot program framework, extending the RobotBase cla...</div><div class="ttdef"><b>Definition:</b> IterativeRobotBase.h:54</div></div>
 <div class="ttc" id="aclassfrc_1_1_timed_robot_html"><div class="ttname"><a href="classfrc_1_1_timed_robot.html">frc::TimedRobot</a></div><div class="ttdoc">TimedRobot implements the IterativeRobotBase robot program framework.</div><div class="ttdef"><b>Definition:</b> TimedRobot.h:30</div></div>
@@ -218,6 +216,7 @@ $(document).ready(function(){initNavTree('_timed_robot_8h_source.html',''); init
 <div class="ttc" id="aclassfrc_1_1_timed_robot_html_afa4de496e6856238b106240012efe889"><div class="ttname"><a href="classfrc_1_1_timed_robot.html#afa4de496e6856238b106240012efe889">frc::TimedRobot::StartCompetition</a></div><div class="ttdeci">void StartCompetition() override</div><div class="ttdoc">Provide an alternate &quot;main loop&quot; via StartCompetition().</div></div>
 <div class="ttc" id="aclassfrc_1_1_timer_html"><div class="ttname"><a href="classfrc_1_1_timer.html">frc::Timer</a></div><div class="ttdoc">A timer class.</div><div class="ttdef"><b>Definition:</b> Timer.h:36</div></div>
 <div class="ttc" id="aclasswpi_1_1priority__queue_html"><div class="ttname"><a href="classwpi_1_1priority__queue.html">wpi::priority_queue</a></div><div class="ttdoc">This class is the same as std::priority_queue with two changes:</div><div class="ttdef"><b>Definition:</b> priority_queue.h:25</div></div>
+<div class="ttc" id="agroup___unit_math_html_gad7fa514c186141cb9d3fcf824fd41a37"><div class="ttname"><a href="group___unit_math.html#gad7fa514c186141cb9d3fcf824fd41a37">units::math::floor</a></div><div class="ttdeci">UnitType floor(const UnitType x) noexcept</div><div class="ttdoc">Round down value.</div><div class="ttdef"><b>Definition:</b> math.h:542</div></div>
 <div class="ttc" id="amath_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
 <div class="ttc" id="anamespaceghc_1_1filesystem_html_aa669ba09aca7930ec00f43cf09cc6c5b"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#aa669ba09aca7930ec00f43cf09cc6c5b">ghc::filesystem::operator&gt;</a></div><div class="ttdeci">GHC_FS_API bool operator&gt;(const path &amp;lhs, const path &amp;rhs) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:3399</div></div>
@@ -226,13 +225,14 @@ $(document).ready(function(){initNavTree('_timed_robot_8h_source.html',''); init
 <div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="apriority__queue_8h_html"><div class="ttname"><a href="priority__queue_8h.html">priority_queue.h</a></div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_timer_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_timer_8h.html">Timer.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_timed_robot_8h.html">TimedRobot.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

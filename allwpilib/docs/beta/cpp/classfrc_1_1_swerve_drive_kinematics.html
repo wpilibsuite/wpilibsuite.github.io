@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -124,6 +124,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a523767a39928074a218f4d7ac30fa267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html#a523767a39928074a218f4d7ac30fa267">ToChassisSpeeds</a> (<a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; moduleStates) const</td></tr>
 <tr class="memdesc:a523767a39928074a218f4d7ac30fa267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs forward kinematics to return the resulting chassis state from the given module states.  <a href="classfrc_1_1_swerve_drive_kinematics.html#a523767a39928074a218f4d7ac30fa267">More...</a><br /></td></tr>
 <tr class="separator:a523767a39928074a218f4d7ac30fa267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e6026b7176f6e16a71dd8c6f6ec663"><td class="memTemplParams" colspan="2">template&lt;typename... ModuleDeltas&gt; </td></tr>
+<tr class="memitem:a93e6026b7176f6e16a71dd8c6f6ec663"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html#a93e6026b7176f6e16a71dd8c6f6ec663">ToTwist2d</a> (ModuleDeltas &amp;&amp;... wheelDeltas) const</td></tr>
+<tr class="memdesc:a93e6026b7176f6e16a71dd8c6f6ec663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs forward kinematics to return the resulting <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a> from the given module position deltas.  <a href="classfrc_1_1_swerve_drive_kinematics.html#a93e6026b7176f6e16a71dd8c6f6ec663">More...</a><br /></td></tr>
+<tr class="separator:a93e6026b7176f6e16a71dd8c6f6ec663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af0b75bd86709eccf6e94453530fca4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html#a4af0b75bd86709eccf6e94453530fca4">ToTwist2d</a> (<a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; wheelDeltas) const</td></tr>
+<tr class="memdesc:a4af0b75bd86709eccf6e94453530fca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs forward kinematics to return the resulting <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a> from the given module position deltas.  <a href="classfrc_1_1_swerve_drive_kinematics.html#a4af0b75bd86709eccf6e94453530fca4">More...</a><br /></td></tr>
+<tr class="separator:a4af0b75bd86709eccf6e94453530fca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -401,6 +408,68 @@ units::meters_per_second_t)</a> function to rectify this issue. In addition, you
 </div><!-- fragment --> 
 </div>
 </div>
+<a id="a93e6026b7176f6e16a71dd8c6f6ec663" name="a93e6026b7176f6e16a71dd8c6f6ec663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e6026b7176f6e16a71dd8c6f6ec663">&#9670;&nbsp;</a></span>ToTwist2d() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t NumModules&gt; </div>
+<div class="memtemplate">
+template&lt;typename... ModuleDeltas&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a> <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">frc::SwerveDriveKinematics</a>&lt; NumModules &gt;::ToTwist2d </td>
+          <td>(</td>
+          <td class="paramtype">ModuleDeltas &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>wheelDeltas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs forward kinematics to return the resulting <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a> from the given module position deltas. </p>
+<p >This method is often used for odometry &ndash; determining the robot's position on the field using data from the real-world position delta and angle of each module on the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wheelDeltas</td><td>The latest change in position of the modules (as a <a class="el" href="structfrc_1_1_swerve_module_position.html" title="Represents the position of one swerve module.">SwerveModulePosition</a> type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a>. </dd></dl>
+
+</div>
+</div>
+<a id="a4af0b75bd86709eccf6e94453530fca4" name="a4af0b75bd86709eccf6e94453530fca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af0b75bd86709eccf6e94453530fca4">&#9670;&nbsp;</a></span>ToTwist2d() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t NumModules&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a> <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">frc::SwerveDriveKinematics</a>&lt; NumModules &gt;::ToTwist2d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
+          <td class="paramname"><em>wheelDeltas</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs forward kinematics to return the resulting <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a> from the given module position deltas. </p>
+<p >This method is often used for odometry &ndash; determining the robot's position on the field using data from the real-world position delta and angle of each module on the robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wheelDeltas</td><td>The latest change in position of the modules (as a <a class="el" href="structfrc_1_1_swerve_module_position.html" title="Represents the position of one swerve module.">SwerveModulePosition</a> type) as measured from respective encoders and gyros. The order of the swerve module states should be same as passed into the constructor of this class.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a>. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>frc/kinematics/<a class="el" href="_swerve_drive_kinematics_8h_source.html">SwerveDriveKinematics.h</a></li>
 <li>frc/kinematics/<a class="el" href="_swerve_drive_kinematics_8inc.html">SwerveDriveKinematics.inc</a></li>
@@ -411,7 +480,7 @@ units::meters_per_second_t)</a> function to rectify this issue. In addition, you
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

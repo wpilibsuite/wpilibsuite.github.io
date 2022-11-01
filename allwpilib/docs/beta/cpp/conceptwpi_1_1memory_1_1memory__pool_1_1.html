@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -105,21 +105,21 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool_1
 <div class="ttc" id="aclasswpi_1_1memory_1_1memory__pool_html"><div class="ttname"><a href="classwpi_1_1memory_1_1memory__pool.html">wpi::memory::memory_pool</a></div><div class="ttdef"><b>Definition:</b> memory_pool.hpp:50</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >and <code>number_of_nodes</code> must be a non-zero value. </p>
-<p >\effects Destroys the memory_pool by returning all memory blocks, regardless of properly deallocated back to the</p>
 <p >and <code>block_size</code> must be at least <code>min_block_size(node_size, 1)</code>.</p>
 <p >and puts it onto the free list.</p>
 <p >If the <code>node_size</code> is less than the <code>min_node_size</code>, the <code>min_node_size</code> will be the actual node size.</p>
 <dl class="section return"><dt>Returns</dt><dd>The minimum block size required for certain number of \requires <code>node_size</code> must be a valid</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>MSVC's implementation of <code>std::list</code> for example is never empty and always allocates proxy nodes. To get enough memory for <code>N</code> elements of a list, <code>number_of_nodes</code> needs to include the proxy count in addition to <code>N</code>.</dd></dl>
 <p>It will allocate an initial memory block with given size from the</p>
-<p >\requires <code>node_size</code> must be a valid </p>
+<p >\requires <code>node_size</code> must be a valid</p>
+<dl class="section user"><dt>Effects:</dt><dd>Destroys the memory_pool by returning all memory blocks, regardless of properly deallocated back to the </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool_1_1.html"></a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

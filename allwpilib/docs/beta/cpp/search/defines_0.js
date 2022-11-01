@@ -10,10 +10,14 @@ var searchData=
   ['_5f_5fmsan_5funpoison_7',['__msan_unpoison',['../_compiler_8h.html#a7b6ebda5fec619759c0522722503be67',1,'Compiler.h']]],
   ['_5feigen_5fdeclare_5fconst_5fpacket2d_8',['_EIGEN_DECLARE_CONST_Packet2d',['../_s_s_e_2_packet_math_8h.html#a0f48c518e762640a6064167fe5b40949',1,'PacketMath.h']]],
   ['_5feigen_5fdeclare_5fconst_5fpacket4d_9',['_EIGEN_DECLARE_CONST_Packet4d',['../_a_v_x_2_packet_math_8h.html#afdf6af02b3f3496c0dfe725a8140c4da',1,'PacketMath.h']]],
-  ['_5feigen_5fdeclare_5fconst_5fpacket4f_10',['_EIGEN_DECLARE_CONST_Packet4f',['../_n_e_o_n_2_packet_math_8h.html#aa8bf4245a28ece6f5c5ef11b8a0caa07',1,'_EIGEN_DECLARE_CONST_Packet4f():&#160;PacketMath.h'],['../_s_s_e_2_packet_math_8h.html#aa8bf4245a28ece6f5c5ef11b8a0caa07',1,'_EIGEN_DECLARE_CONST_Packet4f():&#160;PacketMath.h']]],
+  ['_5feigen_5fdeclare_5fconst_5fpacket4f_10',['_EIGEN_DECLARE_CONST_Packet4f',['../_s_s_e_2_packet_math_8h.html#aa8bf4245a28ece6f5c5ef11b8a0caa07',1,'_EIGEN_DECLARE_CONST_Packet4f():&#160;PacketMath.h'],['../_n_e_o_n_2_packet_math_8h.html#aa8bf4245a28ece6f5c5ef11b8a0caa07',1,'_EIGEN_DECLARE_CONST_Packet4f():&#160;PacketMath.h']]],
   ['_5feigen_5fdeclare_5fconst_5fpacket4f_5ffrom_5fint_11',['_EIGEN_DECLARE_CONST_Packet4f_FROM_INT',['../_n_e_o_n_2_packet_math_8h.html#abecee815522b68a750e619f4cf635286',1,'_EIGEN_DECLARE_CONST_Packet4f_FROM_INT():&#160;PacketMath.h'],['../_s_s_e_2_packet_math_8h.html#abecee815522b68a750e619f4cf635286',1,'_EIGEN_DECLARE_CONST_Packet4f_FROM_INT():&#160;PacketMath.h']]],
   ['_5feigen_5fdeclare_5fconst_5fpacket4i_12',['_EIGEN_DECLARE_CONST_Packet4i',['../_n_e_o_n_2_packet_math_8h.html#a36426dcd60c8a41f43ead903d4935c9c',1,'_EIGEN_DECLARE_CONST_Packet4i():&#160;PacketMath.h'],['../_s_s_e_2_packet_math_8h.html#a36426dcd60c8a41f43ead903d4935c9c',1,'_EIGEN_DECLARE_CONST_Packet4i():&#160;PacketMath.h']]],
   ['_5feigen_5fdeclare_5fconst_5fpacket8f_13',['_EIGEN_DECLARE_CONST_Packet8f',['../_a_v_x_2_packet_math_8h.html#a59e092da0abce8b4d680cd83b06e3fa8',1,'PacketMath.h']]],
   ['_5feigen_5fdeclare_5fconst_5fpacket8f_5ffrom_5fint_14',['_EIGEN_DECLARE_CONST_Packet8f_FROM_INT',['../_a_v_x_2_packet_math_8h.html#af6bc38eb487e368d31695a4e88eb81fd',1,'PacketMath.h']]],
-  ['_5feigen_5fdeclare_5fconst_5fpacket8i_15',['_EIGEN_DECLARE_CONST_Packet8i',['../_a_v_x_2_packet_math_8h.html#a8546a172f02f76a42d9a8339439d08c0',1,'PacketMath.h']]]
+  ['_5feigen_5fdeclare_5fconst_5fpacket8i_15',['_EIGEN_DECLARE_CONST_Packet8i',['../_a_v_x_2_packet_math_8h.html#a8546a172f02f76a42d9a8339439d08c0',1,'PacketMath.h']]],
+  ['_5fssize_5ft_5f_16',['_SSIZE_T_',['../win_8h.html#af0bab7c09207ef994bdc2e6c2888e299',1,'win.h']]],
+  ['_5fssize_5ft_5fdefined_17',['_SSIZE_T_DEFINED',['../win_8h.html#a6316ec18194f4e2a68517d800a32d855',1,'win.h']]],
+  ['_5ftcp_5finitial_5frto_5fparameters_18',['_TCP_INITIAL_RTO_PARAMETERS',['../win_8h.html#a681d9b7ccb885481d4961503343734db',1,'win.h']]],
+  ['_5fwin32_5fwinnt_19',['_WIN32_WINNT',['../win_8h.html#ac50762666aa00bd3a4308158510f1748',1,'win.h']]]
 ];

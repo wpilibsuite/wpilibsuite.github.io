@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('_least_square_conjugate_gradient_8h_so
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                     <span class="keyword">const</span> Preconditioner&amp; precond, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&amp; iters,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                     <span class="keyword">typename</span> Dest::RealScalar&amp; tol_error)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">std::sqrt</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">std::sqrt</a>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">using </span><a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> Dest::RealScalar RealScalar;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> Dest::Scalar Scalar;</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('_least_square_conjugate_gradient_8h_so
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordflow">if</span> (residualNorm2 &lt; <a class="code hl_function" href="namespacewpi_1_1memory.html#a24426d9ba265765e4762dd23e2a9f70a">threshold</a>)</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    iters = 0;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    tol_error = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a>(residualNorm2 / rhsNorm2);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    tol_error = <a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">sqrt</a>(residualNorm2 / rhsNorm2);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  </div>
@@ -179,11 +179,11 @@ $(document).ready(function(){initNavTree('_least_square_conjugate_gradient_8h_so
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    RealScalar absOld = absNew;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    absNew = <a class="code hl_function" href="_common_cwise_unary_ops_8h.html#a560b678a662ccfce4da582595899a0b7">numext::real</a>(normal_residual.dot(z));  <span class="comment">// update the absolute value of r</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    RealScalar beta = absNew / absOld;              <span class="comment">// calculate the Gram-Schmidt value used to create the new search direction</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    p = z + beta * p;                               <span class="comment">// update search direction</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    RealScalar <a class="code hl_function" href="beta_8hpp.html#aed93736cb5c0ec28f5d53a3442453837">beta</a> = absNew / absOld;              <span class="comment">// calculate the Gram-Schmidt value used to create the new search direction</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    p = z + <a class="code hl_function" href="beta_8hpp.html#aed93736cb5c0ec28f5d53a3442453837">beta</a> * p;                               <span class="comment">// update search direction</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    i++;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  tol_error = <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a>(residualNorm2 / rhsNorm2);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  tol_error = <a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">sqrt</a>(residualNorm2 / rhsNorm2);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  iters = i;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
@@ -292,9 +292,9 @@ $(document).ready(function(){initNavTree('_least_square_conjugate_gradient_8h_so
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>} <span class="comment">// end namespace Eigen</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#endif </span><span class="comment">// EIGEN_LEAST_SQUARE_CONJUGATE_GRADIENT_H</span></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a656b9217a2fcb6de59dc8d1eb3079cc7"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SqrtReturnType sqrt() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:187</div></div>
 <div class="ttc" id="a_common_cwise_unary_ops_8h_html_a560b678a662ccfce4da582595899a0b7"><div class="ttname"><a href="_common_cwise_unary_ops_8h.html#a560b678a662ccfce4da582595899a0b7">real</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC RealReturnType real() const</div><div class="ttdef"><b>Definition:</b> CommonCwiseUnaryOps.h:100</div></div>
 <div class="ttc" id="a_macros_8h_html_aa715c1fe854205b27e962ee7d7e06faf"><div class="ttname"><a href="_macros_8h.html#aa715c1fe854205b27e962ee7d7e06faf">EIGEN_DONT_INLINE</a></div><div class="ttdeci">#define EIGEN_DONT_INLINE</div><div class="ttdef"><b>Definition:</b> Macros.h:940</div></div>
+<div class="ttc" id="abeta_8hpp_html_aed93736cb5c0ec28f5d53a3442453837"><div class="ttname"><a href="beta_8hpp.html#aed93736cb5c0ec28f5d53a3442453837">beta</a></div><div class="ttdeci">constexpr common_return_t&lt; T1, T2 &gt; beta(const T1 a, const T2 b) noexcept</div><div class="ttdoc">Compile-time beta function.</div><div class="ttdef"><b>Definition:</b> beta.hpp:36</div></div>
 <div class="ttc" id="aclass_eigen_1_1_iterative_solver_base_html"><div class="ttname"><a href="class_eigen_1_1_iterative_solver_base.html">Eigen::IterativeSolverBase</a></div><div class="ttdoc">Base class for linear iterative solvers.</div><div class="ttdef"><b>Definition:</b> IterativeSolverBase.h:144</div></div>
 <div class="ttc" id="aclass_eigen_1_1_iterative_solver_base_html_a168a74c8dceb6233b220031fdd756ba0"><div class="ttname"><a href="class_eigen_1_1_iterative_solver_base.html#a168a74c8dceb6233b220031fdd756ba0">Eigen::IterativeSolverBase::maxIterations</a></div><div class="ttdeci">Index maxIterations() const</div><div class="ttdef"><b>Definition:</b> IterativeSolverBase.h:281</div></div>
 <div class="ttc" id="aclass_eigen_1_1_iterative_solver_base_html_a283a3c6136f76e77ac29184352c3e940"><div class="ttname"><a href="class_eigen_1_1_iterative_solver_base.html#a283a3c6136f76e77ac29184352c3e940">Eigen::IterativeSolverBase::m_info</a></div><div class="ttdeci">ComputationInfo m_info</div><div class="ttdef"><b>Definition:</b> IterativeSolverBase.h:438</div></div>
@@ -317,6 +317,7 @@ $(document).ready(function(){initNavTree('_least_square_conjugate_gradient_8h_so
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt; Scalar, Dynamic, 1 &gt;</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_plain_object_base_html_afbc668abdcb3bda3bc4c58c4d88e9603"><div class="ttname"><a href="class_eigen_1_1_plain_object_base.html#afbc668abdcb3bda3bc4c58c4d88e9603">Eigen::PlainObjectBase::rows</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE EIGEN_CONSTEXPR Index rows() const EIGEN_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> PlainObjectBase.h:143</div></div>
 <div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
+<div class="ttc" id="agroup___unit_math_html_gae52f60a9e2a9e7ad1018a846bcf49140"><div class="ttname"><a href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">units::math::sqrt</a></div><div class="ttdeci">auto sqrt(const UnitType &amp;value) noexcept -&gt; unit_t&lt; square_root&lt; typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the square root of value</div><div class="ttdef"><b>Definition:</b> math.h:483</div></div>
 <div class="ttc" id="agroup__enums_html_gga85fad7b87587764e5cf6b513a9e0ee5ea671a2aeb0f527802806a441d58a80fcf"><div class="ttname"><a href="group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea671a2aeb0f527802806a441d58a80fcf">Eigen::Success</a></div><div class="ttdeci">@ Success</div><div class="ttdoc">Computation was successful.</div><div class="ttdef"><b>Definition:</b> Constants.h:442</div></div>
 <div class="ttc" id="agroup__enums_html_gga85fad7b87587764e5cf6b513a9e0ee5ea6a68dfb88a8336108a30588bdf356c57"><div class="ttname"><a href="group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea6a68dfb88a8336108a30588bdf356c57">Eigen::NoConvergence</a></div><div class="ttdeci">@ NoConvergence</div><div class="ttdoc">Iterative procedure did not converge.</div><div class="ttdef"><b>Definition:</b> Constants.h:446</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a634d8729318abe89f12e5520951c5131"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a634d8729318abe89f12e5520951c5131">Eigen::internal::least_square_conjugate_gradient</a></div><div class="ttdeci">EIGEN_DONT_INLINE void least_square_conjugate_gradient(const MatrixType &amp;mat, const Rhs &amp;rhs, Dest &amp;x, const Preconditioner &amp;precond, Index &amp;iters, typename Dest::RealScalar &amp;tol_error)</div><div class="ttdef"><b>Definition:</b> LeastSquareConjugateGradient.h:28</div></div>
@@ -335,7 +336,7 @@ $(document).ready(function(){initNavTree('_least_square_conjugate_gradient_8h_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_73e1e2d55eb825345240d63e7ea0b87e.html">IterativeLinearSolvers</a></li><li class="navelem"><a class="el" href="_least_square_conjugate_gradient_8h.html">LeastSquareConjugateGradient.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -128,7 +128,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f5c00877c1efd701babfa38a2257184"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a9de83e4681c56f9d5f87032f646578b4">marker</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a8f5c00877c1efd701babfa38a2257184">top</a> () const noexcept</td></tr>
 <tr class="separator:a8f5c00877c1efd701babfa38a2257184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bec9ed8f1f7bf3705dfe0ef7603f924"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a1bec9ed8f1f7bf3705dfe0ef7603f924">unwind</a> (<a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a9de83e4681c56f9d5f87032f646578b4">marker</a> m) noexcept</td></tr>
-<tr class="memdesc:a1bec9ed8f1f7bf3705dfe0ef7603f924"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Unwinds the stack to a certain marker position.  <a href="classwpi_1_1memory_1_1memory__stack.html#a1bec9ed8f1f7bf3705dfe0ef7603f924">More...</a><br /></td></tr>
 <tr class="separator:a1bec9ed8f1f7bf3705dfe0ef7603f924"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd54c968e6c92c9b435d10b4f804ab07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#acd54c968e6c92c9b435d10b4f804ab07">shrink_to_fit</a> () noexcept</td></tr>
 <tr class="separator:acd54c968e6c92c9b435d10b4f804ab07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,7 +175,7 @@ template&lt;class BlockOrRawAllocator  = default_allocator&gt; </div>
 </div><div class="memdoc">
 
 <p>The marker type that is used for unwinding. </p>
-<p >The exact type is implementation defined, it is only required that it is efficiently copyable and has all the comparision operators defined for two markers on the same stack. Two markers are equal, if they are copies or created from two <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a8f5c00877c1efd701babfa38a2257184">top()</a></code> calls without a call to <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a1bec9ed8f1f7bf3705dfe0ef7603f924" title="\effects Unwinds the stack to a certain marker position.">unwind()</a></code> or <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#ad89e0363a31626e7d5e0a55d1c269b21">allocate()</a></code>. A marker <code>a</code> is less than marker <code>b</code>, if after <code>a</code> was obtained, there was one or more call to <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#ad89e0363a31626e7d5e0a55d1c269b21">allocate()</a></code> and no call to <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a1bec9ed8f1f7bf3705dfe0ef7603f924" title="\effects Unwinds the stack to a certain marker position.">unwind()</a></code>. </p>
+<p >The exact type is implementation defined, it is only required that it is efficiently copyable and has all the comparision operators defined for two markers on the same stack. Two markers are equal, if they are copies or created from two <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a8f5c00877c1efd701babfa38a2257184">top()</a></code> calls without a call to <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a1bec9ed8f1f7bf3705dfe0ef7603f924">unwind()</a></code> or <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#ad89e0363a31626e7d5e0a55d1c269b21">allocate()</a></code>. A marker <code>a</code> is less than marker <code>b</code>, if after <code>a</code> was obtained, there was one or more call to <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#ad89e0363a31626e7d5e0a55d1c269b21">allocate()</a></code> and no call to <code><a class="el" href="classwpi_1_1memory_1_1memory__stack.html#a1bec9ed8f1f7bf3705dfe0ef7603f924">unwind()</a></code>. </p>
 
 </div>
 </div>
@@ -491,9 +490,7 @@ template&lt;class BlockOrRawAllocator  = default_allocator&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Unwinds the stack to a certain marker position. </p>
-<p >This sets the top pointer of the stack to the position described by the marker and has the effect of deallocating all memory allocated since the marker was obtained. If any memory blocks are unused after the operation, they are not deallocated but put in a cache for later use, call <a class="el" href="classwpi_1_1memory_1_1memory__stack.html#acd54c968e6c92c9b435d10b4f804ab07">shrink_to_fit()</a> to actually deallocate them. \requires The marker must point to memory that is still in use and was the whole time, i.e. it must have been pointed below the top at all time. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Unwinds the stack to a certain marker position. This sets the top pointer of the stack to the position described by the marker and has the effect of deallocating all memory allocated since the marker was obtained. If any memory blocks are unused after the operation, they are not deallocated but put in a cache for later use, call <a class="el" href="classwpi_1_1memory_1_1memory__stack.html#acd54c968e6c92c9b435d10b4f804ab07">shrink_to_fit()</a> to actually deallocate them. \requires The marker must point to memory that is still in use and was the whole time, i.e. it must have been pointed below the top at all time. </dd></dl>
 
 </div>
 </div>
@@ -506,7 +503,7 @@ template&lt;class BlockOrRawAllocator  = default_allocator&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1memory__stack.html">memory_stack</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

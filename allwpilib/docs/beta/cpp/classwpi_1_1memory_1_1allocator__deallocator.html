@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -117,13 +117,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a305cad7d19b734863a45db7a5cada1a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html#a305cad7d19b734863a45db7a5cada1a2">allocator_deallocator</a> () noexcept=default</td></tr>
-<tr class="memdesc:a305cad7d19b734863a45db7a5cada1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it without any associated allocator.  <a href="classwpi_1_1memory_1_1allocator__deallocator.html#a305cad7d19b734863a45db7a5cada1a2">More...</a><br /></td></tr>
 <tr class="separator:a305cad7d19b734863a45db7a5cada1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae748e46852c2c444cbd6a8179cb4eb51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html#ae748e46852c2c444cbd6a8179cb4eb51">allocator_deallocator</a> (allocator_reference&lt; RawAllocator &gt; alloc) noexcept</td></tr>
-<tr class="memdesc:ae748e46852c2c444cbd6a8179cb4eb51"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it an allocator_reference.  <a href="classwpi_1_1memory_1_1allocator__deallocator.html#ae748e46852c2c444cbd6a8179cb4eb51">More...</a><br /></td></tr>
 <tr class="separator:ae748e46852c2c444cbd6a8179cb4eb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d294442974e7a96b69aa164ec3c7809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html#a3d294442974e7a96b69aa164ec3c7809">operator()</a> (<a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html#a6175e3a38026195ed7f4f87b92cf44b6">value_type</a> *pointer) noexcept</td></tr>
-<tr class="memdesc:a3d294442974e7a96b69aa164ec3c7809"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates the memory given to it.  <a href="classwpi_1_1memory_1_1allocator__deallocator.html#a3d294442974e7a96b69aa164ec3c7809">More...</a><br /></td></tr>
 <tr class="separator:a3d294442974e7a96b69aa164ec3c7809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce094ca6809ae09c64e785e2c46260c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html#adce094ca6809ae09c64e785e2c46260c">get_allocator</a> () const noexcept -&gt; decltype(std::declval&lt; allocator_reference&lt; <a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html#a91a761f6693a08c3df16b85e9354dd65">allocator_type</a> &gt; &gt;().get_allocator())</td></tr>
 <tr class="separator:adce094ca6809ae09c64e785e2c46260c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,9 +183,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it without any associated allocator. </p>
-<p >The deallocator must not be used if that is the case. \notes This functions is useful if you have want to create an empty smart pointer without giving it an allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it without any associated allocator. The deallocator must not be used if that is the case. \notes This functions is useful if you have want to create an empty smart pointer without giving it an allocator. </dd></dl>
 
 </div>
 </div>
@@ -217,9 +212,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it an allocator_reference. </p>
-<p >It will store the reference to it and uses the referenced allocator object for the deallocation. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it an allocator_reference. It will store the reference to it and uses the referenced allocator object for the deallocation. </dd></dl>
 
 </div>
 </div>
@@ -278,9 +271,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates the memory given to it. </p>
-<p >Calls <code>deallocate_node</code>(pointer, sizeof(value_type), alignof(value_type)) on the referenced allocator object. \requires The deallocator must not have been created by the default constructor. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates the memory given to it. Calls <code>deallocate_node</code>(pointer, sizeof(value_type), alignof(value_type)) on the referenced allocator object. \requires The deallocator must not have been created by the default constructor. </dd></dl>
 
 </div>
 </div>
@@ -293,7 +284,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator.html">allocator_deallocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

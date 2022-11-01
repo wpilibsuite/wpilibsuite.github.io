@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -105,23 +105,26 @@ $(document).ready(function(){initNavTree('classfrc_1_1_swerve_drive_odometry.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae570438d6798931724271b986b73d5ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#ae570438d6798931724271b986b73d5ae">SwerveDriveOdometry</a> (<a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose=<a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>{})</td></tr>
-<tr class="memdesc:ae570438d6798931724271b986b73d5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_odometry.html" title="Class for swerve drive odometry.">SwerveDriveOdometry</a> object.  <a href="classfrc_1_1_swerve_drive_odometry.html#ae570438d6798931724271b986b73d5ae">More...</a><br /></td></tr>
-<tr class="separator:ae570438d6798931724271b986b73d5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ce50875ac5468526ec0ac819c666b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#af8ce50875ac5468526ec0ac819c666b9">ResetPosition</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle)</td></tr>
-<tr class="memdesc:af8ce50875ac5468526ec0ac819c666b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_swerve_drive_odometry.html#af8ce50875ac5468526ec0ac819c666b9">More...</a><br /></td></tr>
-<tr class="separator:af8ce50875ac5468526ec0ac819c666b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a957a476bb7ebf0a8b0c2cdcffd36511e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#a957a476bb7ebf0a8b0c2cdcffd36511e">SwerveDriveOdometry</a> (<a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; modulePositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose=<a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>{})</td></tr>
+<tr class="memdesc:a957a476bb7ebf0a8b0c2cdcffd36511e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_odometry.html" title="Class for swerve drive odometry.">SwerveDriveOdometry</a> object.  <a href="classfrc_1_1_swerve_drive_odometry.html#a957a476bb7ebf0a8b0c2cdcffd36511e">More...</a><br /></td></tr>
+<tr class="separator:a957a476bb7ebf0a8b0c2cdcffd36511e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7b5c50674cb2311112e6f7a35d9d4c"><td class="memTemplParams" colspan="2">template&lt;typename... ModulePositions&gt; </td></tr>
+<tr class="memitem:a9b7b5c50674cb2311112e6f7a35d9d4c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#a9b7b5c50674cb2311112e6f7a35d9d4c">ResetPosition</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, ModulePositions &amp;&amp;... wheelPositions)</td></tr>
+<tr class="memdesc:a9b7b5c50674cb2311112e6f7a35d9d4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_swerve_drive_odometry.html#a9b7b5c50674cb2311112e6f7a35d9d4c">More...</a><br /></td></tr>
+<tr class="separator:a9b7b5c50674cb2311112e6f7a35d9d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef6cdb211baf9a023163ddbe0ecae52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#a6ef6cdb211baf9a023163ddbe0ecae52">ResetPosition</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; modulePositions)</td></tr>
+<tr class="memdesc:a6ef6cdb211baf9a023163ddbe0ecae52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_swerve_drive_odometry.html#a6ef6cdb211baf9a023163ddbe0ecae52">More...</a><br /></td></tr>
+<tr class="separator:a6ef6cdb211baf9a023163ddbe0ecae52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaafdc42f8672ff1c9a220d7a2e5cdcb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#afaafdc42f8672ff1c9a220d7a2e5cdcb">GetPose</a> () const</td></tr>
 <tr class="memdesc:afaafdc42f8672ff1c9a220d7a2e5cdcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the robot on the field.  <a href="classfrc_1_1_swerve_drive_odometry.html#afaafdc42f8672ff1c9a220d7a2e5cdcb">More...</a><br /></td></tr>
 <tr class="separator:afaafdc42f8672ff1c9a220d7a2e5cdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec4fa6c652bba6f666d93380541d906"><td class="memTemplParams" colspan="2">template&lt;typename... ModuleStates&gt; </td></tr>
-<tr class="memitem:a9ec4fa6c652bba6f666d93380541d906"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#a9ec4fa6c652bba6f666d93380541d906">UpdateWithTime</a> (units::second_t currentTime, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, ModuleStates &amp;&amp;... moduleStates)</td></tr>
-<tr class="memdesc:a9ec4fa6c652bba6f666d93380541d906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the robot's position on the field using forward kinematics and integration of the pose over time.  <a href="classfrc_1_1_swerve_drive_odometry.html#a9ec4fa6c652bba6f666d93380541d906">More...</a><br /></td></tr>
-<tr class="separator:a9ec4fa6c652bba6f666d93380541d906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ec37ee14c909815f96a7a600963f760"><td class="memTemplParams" colspan="2">template&lt;typename... ModuleStates&gt; </td></tr>
-<tr class="memitem:a0ec37ee14c909815f96a7a600963f760"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#a0ec37ee14c909815f96a7a600963f760">Update</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, ModuleStates &amp;&amp;... moduleStates)</td></tr>
-<tr class="memdesc:a0ec37ee14c909815f96a7a600963f760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the robot's position on the field using forward kinematics and integration of the pose over time.  <a href="classfrc_1_1_swerve_drive_odometry.html#a0ec37ee14c909815f96a7a600963f760">More...</a><br /></td></tr>
-<tr class="separator:a0ec37ee14c909815f96a7a600963f760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303c732d92101ae66ef3a336680de071"><td class="memTemplParams" colspan="2">template&lt;typename... ModulePositions&gt; </td></tr>
+<tr class="memitem:a303c732d92101ae66ef3a336680de071"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#a303c732d92101ae66ef3a336680de071">Update</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, ModulePositions &amp;&amp;... wheelPositions)</td></tr>
+<tr class="memdesc:a303c732d92101ae66ef3a336680de071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the robot's position on the field using forward kinematics and integration of the pose over time.  <a href="classfrc_1_1_swerve_drive_odometry.html#a303c732d92101ae66ef3a336680de071">More...</a><br /></td></tr>
+<tr class="separator:a303c732d92101ae66ef3a336680de071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6918198e953a2d4f8987a29e5bc85d3c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html#a6918198e953a2d4f8987a29e5bc85d3c">Update</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; modulePositions)</td></tr>
+<tr class="memdesc:a6918198e953a2d4f8987a29e5bc85d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the robot's position on the field using forward kinematics and integration of the pose over time.  <a href="classfrc_1_1_swerve_drive_odometry.html#a6918198e953a2d4f8987a29e5bc85d3c">More...</a><br /></td></tr>
+<tr class="separator:a6918198e953a2d4f8987a29e5bc85d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t NumModules&gt;<br />
@@ -129,8 +132,8 @@ class frc::SwerveDriveOdometry&lt; NumModules &gt;</div><p >Class for swerve dri
 <p >Odometry allows you to track the robot's position on the field over a course of a match using readings from your swerve drive encoders and swerve azimuth encoders.</p>
 <p >Teams can use odometry during the autonomous period for complex tasks like path following. Furthermore, odometry can be used for latency compensation when using computer-vision systems. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae570438d6798931724271b986b73d5ae" name="ae570438d6798931724271b986b73d5ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae570438d6798931724271b986b73d5ae">&#9670;&nbsp;</a></span>SwerveDriveOdometry()</h2>
+<a id="a957a476bb7ebf0a8b0c2cdcffd36511e" name="a957a476bb7ebf0a8b0c2cdcffd36511e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a957a476bb7ebf0a8b0c2cdcffd36511e">&#9670;&nbsp;</a></span>SwerveDriveOdometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -152,6 +155,12 @@ template&lt;size_t NumModules&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
+          <td class="paramname"><em>modulePositions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
           <td class="paramname"><em>initialPose</em> = <code><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>{}</code>&#160;</td>
         </tr>
@@ -168,6 +177,7 @@ template&lt;size_t NumModules&gt; </div>
   <table class="params">
     <tr><td class="paramname">kinematics</td><td>The swerve drive kinematics for your drivetrain. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
+    <tr><td class="paramname">modulePositions</td><td>The wheel positions reported by each module. </td></tr>
     <tr><td class="paramname">initialPose</td><td>The starting position of the robot on the field. </td></tr>
   </table>
   </dd>
@@ -206,16 +216,13 @@ template&lt;size_t NumModules&gt; </div>
 
 </div>
 </div>
-<a id="af8ce50875ac5468526ec0ac819c666b9" name="af8ce50875ac5468526ec0ac819c666b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8ce50875ac5468526ec0ac819c666b9">&#9670;&nbsp;</a></span>ResetPosition()</h2>
+<a id="a6ef6cdb211baf9a023163ddbe0ecae52" name="a6ef6cdb211baf9a023163ddbe0ecae52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef6cdb211baf9a023163ddbe0ecae52">&#9670;&nbsp;</a></span>ResetPosition() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t NumModules&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void <a class="el" href="classfrc_1_1_swerve_drive_odometry.html">frc::SwerveDriveOdometry</a>&lt; NumModules &gt;::ResetPosition </td>
@@ -227,7 +234,13 @@ template&lt;size_t NumModules&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>gyroAngle</em>&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
+          <td class="paramname"><em>modulePositions</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -235,11 +248,6 @@ template&lt;size_t NumModules&gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Resets the robot's position on the field. </p>
@@ -248,24 +256,69 @@ template&lt;size_t NumModules&gt; </div>
   <table class="params">
     <tr><td class="paramname">pose</td><td>The position on the field that your robot is at. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
+    <tr><td class="paramname">modulePositions</td><td>The wheel positions reported by each module. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a0ec37ee14c909815f96a7a600963f760" name="a0ec37ee14c909815f96a7a600963f760"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ec37ee14c909815f96a7a600963f760">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a9b7b5c50674cb2311112e6f7a35d9d4c" name="a9b7b5c50674cb2311112e6f7a35d9d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7b5c50674cb2311112e6f7a35d9d4c">&#9670;&nbsp;</a></span>ResetPosition() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;size_t NumModules&gt; </div>
 <div class="memtemplate">
-template&lt;typename... ModuleStates&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename... ModulePositions&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_swerve_drive_odometry.html">frc::SwerveDriveOdometry</a>&lt; NumModules &gt;::ResetPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>pose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ModulePositions &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>wheelPositions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the robot's position on the field. </p>
+<p >The gyroscope angle does not need to be reset here on the user's robot code. The library automatically takes care of offsetting the gyro angle.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pose</td><td>The position on the field that your robot is at. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
+    <tr><td class="paramname">wheelPositions</td><td>The wheel positions reported by each module. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6918198e953a2d4f8987a29e5bc85d3c" name="a6918198e953a2d4f8987a29e5bc85d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6918198e953a2d4f8987a29e5bc85d3c">&#9670;&nbsp;</a></span>Update() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t NumModules&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp; <a class="el" href="classfrc_1_1_swerve_drive_odometry.html">frc::SwerveDriveOdometry</a>&lt; NumModules &gt;::Update </td>
@@ -276,62 +329,8 @@ template&lt;typename... ModuleStates&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ModuleStates &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>moduleStates</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Updates the robot's position on the field using forward kinematics and integration of the pose over time. </p>
-<p >This method automatically calculates the current time to calculate period (difference between two timestamps). The period is used to calculate the change in distance from a velocity. This also takes in an angle parameter which is used instead of the angular rate that is calculated from forward kinematics.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
-    <tr><td class="paramname">moduleStates</td><td>The current state of all swerve modules. Please provide the states in the same order in which you instantiated your <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html" title="Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...">SwerveDriveKinematics</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The new pose of the robot. </dd></dl>
-
-</div>
-</div>
-<a id="a9ec4fa6c652bba6f666d93380541d906" name="a9ec4fa6c652bba6f666d93380541d906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ec4fa6c652bba6f666d93380541d906">&#9670;&nbsp;</a></span>UpdateWithTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t NumModules&gt; </div>
-<div class="memtemplate">
-template&lt;typename... ModuleStates&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp; <a class="el" href="classfrc_1_1_swerve_drive_odometry.html">frc::SwerveDriveOdometry</a>&lt; NumModules &gt;::UpdateWithTime </td>
-          <td>(</td>
-          <td class="paramtype">units::second_t&#160;</td>
-          <td class="paramname"><em>currentTime</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>gyroAngle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ModuleStates &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>moduleStates</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
+          <td class="paramname"><em>modulePositions</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -345,9 +344,51 @@ template&lt;typename... ModuleStates&gt; </div>
 <p >This method takes in the current time as a parameter to calculate period (difference between two timestamps). The period is used to calculate the change in distance from a velocity. This also takes in an angle parameter which is used instead of the angular rate that is calculated from forward kinematics.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentTime</td><td>The current time. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
-    <tr><td class="paramname">moduleStates</td><td>The current state of all swerve modules. Please provide the states in the same order in which you instantiated your <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html" title="Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...">SwerveDriveKinematics</a>.</td></tr>
+    <tr><td class="paramname">modulePositions</td><td>The current position of all swerve modules. Please provide the positions in the same order in which you instantiated your <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html" title="Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...">SwerveDriveKinematics</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The new pose of the robot. </dd></dl>
+
+</div>
+</div>
+<a id="a303c732d92101ae66ef3a336680de071" name="a303c732d92101ae66ef3a336680de071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303c732d92101ae66ef3a336680de071">&#9670;&nbsp;</a></span>Update() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t NumModules&gt; </div>
+<div class="memtemplate">
+template&lt;typename... ModulePositions&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp; <a class="el" href="classfrc_1_1_swerve_drive_odometry.html">frc::SwerveDriveOdometry</a>&lt; NumModules &gt;::Update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ModulePositions &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>wheelPositions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates the robot's position on the field using forward kinematics and integration of the pose over time. </p>
+<p >This method takes in the current time as a parameter to calculate period (difference between two timestamps). The period is used to calculate the change in distance from a velocity. This also takes in an angle parameter which is used instead of the angular rate that is calculated from forward kinematics.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
+    <tr><td class="paramname">wheelPositions</td><td>The current position of all swerve modules. Please provide the positions in the same order in which you instantiated your <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html" title="Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...">SwerveDriveKinematics</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -365,7 +406,7 @@ template&lt;typename... ModuleStates&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_odometry.html">SwerveDriveOdometry</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

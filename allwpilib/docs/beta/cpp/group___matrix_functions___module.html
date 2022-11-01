@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -185,8 +185,8 @@ MatrixBase methods defined in the MatrixFunctions module</h1>
 <h2><a class="anchor" id="matrixbase_cos"></a>
 MatrixBase::cos()</h2>
 <p >Compute the matrix cosine.</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">MatrixBase&lt;Derived&gt;::cos</a>() const</div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a92b03396990b0e9eea0731aa406e31a4"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">cos</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const CosReturnType cos() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:237</div></div>
+<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">MatrixBase&lt;Derived&gt;::cos</a>() const</div>
+<div class="ttc" id="agroup___unit_math_html_gac2aeac09538ac3f95fff947c12522faa"><div class="ttname"><a href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">units::math::cos</a></div><div class="ttdeci">dimensionless::scalar_t cos(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute cosine.</div><div class="ttdef"><b>Definition:</b> math.h:61</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>a square matrix. </td></tr>
@@ -194,14 +194,14 @@ MatrixBase::cos()</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>expression representing \( \cos(M) \).</dd></dl>
-<p>This function computes the matrix cosine. Use ArrayBase::cos() for computing the entry-wise cosine.</p>
-<p >The implementation calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with StdStemFunctions::cos().</p>
+<p>This function computes the matrix cosine. Use <a class="el" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa" title="Compute cosine.">ArrayBase::cos()</a> for computing the entry-wise cosine.</p>
+<p >The implementation calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with <a class="el" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa" title="Compute cosine.">StdStemFunctions::cos()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group___matrix_functions___module.html#matrixbase_sin">sin()</a> for an example.</dd></dl>
 <h2><a class="anchor" id="matrixbase_cosh"></a>
 MatrixBase::cosh()</h2>
 <p >Compute the matrix hyberbolic cosine.</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#ada19e3b661917a4cd32736c1cead1a04">MatrixBase&lt;Derived&gt;::cosh</a>() const</div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_ada19e3b661917a4cd32736c1cead1a04"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#ada19e3b661917a4cd32736c1cead1a04">cosh</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const CoshReturnType cosh() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:353</div></div>
+<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">MatrixBase&lt;Derived&gt;::cosh</a>() const</div>
+<div class="ttc" id="agroup___unit_math_html_gab0c26f165fe864ceb9f2af667b3cb66d"><div class="ttname"><a href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">units::math::cosh</a></div><div class="ttdeci">dimensionless::scalar_t cosh(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute hyperbolic cosine.</div><div class="ttdef"><b>Definition:</b> math.h:206</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>a square matrix. </td></tr>
@@ -209,7 +209,7 @@ MatrixBase::cosh()</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>expression representing \( \cosh(M) \)</dd></dl>
-<p>This function calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with StdStemFunctions::cosh().</p>
+<p>This function calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with <a class="el" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d" title="Compute hyperbolic cosine.">StdStemFunctions::cosh()</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group___matrix_functions___module.html#matrixbase_sinh">sinh()</a> for an example.</dd></dl>
 <h2><a class="anchor" id="matrixbase_exp"></a>
 MatrixBase::exp()</h2>
@@ -248,8 +248,8 @@ scaling and squaring method for the matrix exponential revisited," <em>SIAM J. M
 <h2><a class="anchor" id="matrixbase_log"></a>
 MatrixBase::log()</h2>
 <p >Compute the matrix logarithm.</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixLogarithmReturnValue&lt;Derived&gt; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a48e72df6412ca98881afcd657352a1d5">MatrixBase&lt;Derived&gt;::log</a>() const</div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a48e72df6412ca98881afcd657352a1d5"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a48e72df6412ca98881afcd657352a1d5">log</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const LogReturnType log() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:128</div></div>
+<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixLogarithmReturnValue&lt;Derived&gt; <a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">MatrixBase&lt;Derived&gt;::log</a>() const</div>
+<div class="ttc" id="agroup___unit_math_html_gaed3e6783dc5ab1dda006913aa53f17c8"><div class="ttname"><a href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">units::math::log</a></div><div class="ttdeci">dimensionless::scalar_t log(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute natural logarithm.</div><div class="ttdef"><b>Definition:</b> math.h:349</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>invertible matrix whose logarithm is to be computed. </td></tr>
@@ -258,9 +258,9 @@ MatrixBase::log()</h2>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>expression representing the matrix logarithm root of <code>M</code>.</dd></dl>
 <p>The matrix logarithm of \( M \) is a matrix \( X \) such that \( \exp(X) = M \) where exp denotes the matrix exponential. As for the scalar logarithm, the equation \( \exp(X) = M \) may have multiple solutions; this function returns a matrix whose eigenvalues have imaginary part in the interval \( (-\pi,\pi] \).</p>
-<p >The matrix logarithm is different from applying the log function to all the entries in the matrix. Use ArrayBase::log() if you want to do the latter.</p>
+<p >The matrix logarithm is different from applying the log function to all the entries in the matrix. Use <a class="el" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8" title="Compute natural logarithm.">ArrayBase::log()</a> if you want to do the latter.</p>
 <p >In the real case, the matrix \( M \) should be invertible and it should have no eigenvalues which are real and negative (pairs of complex conjugate eigenvalues are allowed). In the complex case, it only needs to be invertible.</p>
-<p >This function computes the matrix logarithm using the Schur-Parlett algorithm as implemented by MatrixBase::matrixFunction(). The logarithm of an atomic block is computed by MatrixLogarithmAtomic, which uses direct computation for 1-by-1 and 2-by-2 blocks and an inverse scaling-and-squaring algorithm for bigger blocks, with the square roots computed by MatrixBase::sqrt().</p>
+<p >This function computes the matrix logarithm using the Schur-Parlett algorithm as implemented by MatrixBase::matrixFunction(). The logarithm of an atomic block is computed by MatrixLogarithmAtomic, which uses direct computation for 1-by-1 and 2-by-2 blocks and an inverse scaling-and-squaring algorithm for bigger blocks, with the square roots computed by <a class="el" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140" title="computes the square root of value">MatrixBase::sqrt()</a>.</p>
 <p >Details of the algorithm can be found in Section 11.6.2 of: Nicholas J. Higham, <em>Functions of Matrices: Theory and Computation</em>, SIAM 2008. ISBN 978-0-898716-46-7.</p>
 <p >Example: The following program checks that </p><p class="formulaDsp">
 \[ \log \left[ \begin{array}{ccc} 
@@ -275,12 +275,12 @@ MatrixBase::log()</h2>
 </p>
 <p> This corresponds to a rotation of \( \frac14\pi \) radians around the z-axis. This is the inverse of the example used in the documentation of <a class="el" href="group___matrix_functions___module.html#matrixbase_exp">exp()</a>.</p>
 <div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><dl class="section note"><dt>Note</dt><dd><code>M</code> has to be a matrix of <code>float</code>, <code>double</code>, <code>long double</code>, <code>complex&lt;float&gt;</code>, <code>complex&lt;double&gt;</code>, or <code>complex&lt;long double&gt;</code>.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2" title="Compute exponential function.">MatrixBase::exp()</a>, MatrixBase::matrixFunction(), class MatrixLogarithmAtomic, MatrixBase::sqrt().</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2" title="Compute exponential function.">MatrixBase::exp()</a>, MatrixBase::matrixFunction(), class MatrixLogarithmAtomic, <a class="el" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140" title="computes the square root of value">MatrixBase::sqrt()</a>.</dd></dl>
 <h2><a class="anchor" id="matrixbase_pow"></a>
 MatrixBase::pow()</h2>
 <p >Compute the matrix raised to arbitrary real power.</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixPowerReturnValue&lt;Derived&gt; <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">MatrixBase&lt;Derived&gt;::pow</a>(RealScalar p) <span class="keyword">const</span></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_a8bc48cef3fdfae35910a4bbe5011abcd"><div class="ttname"><a href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">units::math::pow</a></div><div class="ttdeci">auto pow(const UnitType &amp;value) noexcept -&gt; unit_t&lt; typename units::detail::power_of_unit&lt; power, typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;::type, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the value of value raised to the power</div><div class="ttdef"><b>Definition:</b> base.h:2809</div></div>
+<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixPowerReturnValue&lt;Derived&gt; <a class="code hl_function" href="pow_8hpp.html#a4bd11447e8e9884ad7eb792bc9fb592c">MatrixBase&lt;Derived&gt;::pow</a>(RealScalar p) <span class="keyword">const</span></div>
+<div class="ttc" id="apow_8hpp_html_a4bd11447e8e9884ad7eb792bc9fb592c"><div class="ttname"><a href="pow_8hpp.html#a4bd11447e8e9884ad7eb792bc9fb592c">pow</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; pow(const T1 base, const T2 exp_term) noexcept</div><div class="ttdoc">Compile-time power function.</div><div class="ttdef"><b>Definition:</b> pow.hpp:76</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>base of the matrix power, should be a square matrix. </td></tr>
@@ -288,7 +288,7 @@ MatrixBase::pow()</h2>
   </table>
   </dd>
 </dl>
-<p>The matrix power \( M^p \) is defined as \( \exp(p \log(M)) \), where exp denotes the matrix exponential, and log denotes the matrix logarithm. This is different from raising all the entries in the matrix to the p-th power. Use <a class="el" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd" title="computes the value of value raised to the power">ArrayBase::pow()</a> if you want to do the latter.</p>
+<p>The matrix power \( M^p \) is defined as \( \exp(p \log(M)) \), where exp denotes the matrix exponential, and log denotes the matrix logarithm. This is different from raising all the entries in the matrix to the p-th power. Use ArrayBase::pow() if you want to do the latter.</p>
 <p >If <code>p</code> is complex, the scalar type of <code>M</code> should be the type of <code>p</code> . \( M^p \) simply evaluates into \( \exp(p \log(M)) \). Therefore, the matrix \( M \) should meet the conditions to be an argument of matrix logarithm.</p>
 <p >If <code>p</code> is real, it is casted into the real scalar type of <code>M</code>. Then this function computes the matrix power using the Schur-Pad&eacute; algorithm as implemented by class MatrixPower. The exponent is split into integral part and fractional part, where the fractional part is in the interval \( (-1, 1) \). The main diagonal and the first super-diagonal is directly computed.</p>
 <p >If <code>M</code> is singular with a semisimple zero eigenvalue and <code>p</code> is positive, the Schur factor \( T \) is reordered with Givens rotations, i.e.</p>
@@ -340,9 +340,9 @@ matrix," <em>SIAM J. Matrix Anal. Applic.</em>, <b>32(3)</b>:1056&ndash;1078, 20
     \end{array} \right]. \]
 </p>
 <p> This corresponds to \( \frac14\pi \) rotations of 1 radian around the z-axis.</p>
-<div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><p ><a class="el" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd" title="computes the value of value raised to the power">MatrixBase::pow()</a> is user-friendly. However, there are some circumstances under which you should use class MatrixPower directly. MatrixPower can save the result of Schur decomposition, so it's better for computing various powers for the same matrix.</p>
+<div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><p >MatrixBase::pow() is user-friendly. However, there are some circumstances under which you should use class MatrixPower directly. MatrixPower can save the result of Schur decomposition, so it's better for computing various powers for the same matrix.</p>
 <p >Example: </p><div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><dl class="section note"><dt>Note</dt><dd><code>M</code> has to be a matrix of <code>float</code>, <code>double</code>, <code>long double</code>, <code>complex&lt;float&gt;</code>, <code>complex&lt;double&gt;</code>, or <code>complex&lt;long double&gt;</code> .</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2" title="Compute exponential function.">MatrixBase::exp()</a>, MatrixBase::log(), class MatrixPower.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2" title="Compute exponential function.">MatrixBase::exp()</a>, <a class="el" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8" title="Compute natural logarithm.">MatrixBase::log()</a>, class MatrixPower.</dd></dl>
 <h2><a class="anchor" id="matrixbase_matrixfunction"></a>
 MatrixBase::matrixFunction()</h2>
 <p >Compute a matrix function.</p>
@@ -376,8 +376,8 @@ MatrixBase::matrixFunction()</h2>
 </div><!-- fragment --><h2><a class="anchor" id="matrixbase_sin"></a>
 MatrixBase::sin()</h2>
 <p >Compute the matrix sine.</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">MatrixBase&lt;Derived&gt;::sin</a>() const</div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a9cfb0ea58bd813510a9e2db18a5e49f0"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">sin</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SinReturnType sin() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:255</div></div>
+<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">MatrixBase&lt;Derived&gt;::sin</a>() const</div>
+<div class="ttc" id="agroup___unit_math_html_gaf0a50351f8f51550d00e9831b60e1850"><div class="ttname"><a href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">units::math::sin</a></div><div class="ttdeci">dimensionless::scalar_t sin(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute sine.</div><div class="ttdef"><b>Definition:</b> math.h:81</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>a square matrix. </td></tr>
@@ -385,13 +385,13 @@ MatrixBase::sin()</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>expression representing \( \sin(M) \).</dd></dl>
-<p>This function computes the matrix sine. Use ArrayBase::sin() for computing the entry-wise sine.</p>
-<p >The implementation calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with StdStemFunctions::sin().</p>
+<p>This function computes the matrix sine. Use <a class="el" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850" title="Compute sine.">ArrayBase::sin()</a> for computing the entry-wise sine.</p>
+<p >The implementation calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with <a class="el" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850" title="Compute sine.">StdStemFunctions::sin()</a>.</p>
 <p >Example: </p><div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><h2><a class="anchor" id="matrixbase_sinh"></a>
 MatrixBase::sinh()</h2>
 <p >Compute the matrix hyperbolic sine.</p>
-<div class="fragment"><div class="line">MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a2a79b4dc952416cf485d5f84af4c798e">MatrixBase&lt;Derived&gt;::sinh</a>() const</div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a2a79b4dc952416cf485d5f84af4c798e"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a2a79b4dc952416cf485d5f84af4c798e">sinh</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SinhReturnType sinh() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:339</div></div>
+<div class="fragment"><div class="line">MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">MatrixBase&lt;Derived&gt;::sinh</a>() const</div>
+<div class="ttc" id="agroup___unit_math_html_ga38584a9aa9ecbcf455f1a75b23fc8495"><div class="ttname"><a href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">units::math::sinh</a></div><div class="ttdeci">dimensionless::scalar_t sinh(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute hyperbolic sine.</div><div class="ttdef"><b>Definition:</b> math.h:226</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>a square matrix. </td></tr>
@@ -399,12 +399,12 @@ MatrixBase::sinh()</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>expression representing \( \sinh(M) \)</dd></dl>
-<p>This function calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with StdStemFunctions::sinh().</p>
+<p>This function calls <a class="el" href="group___matrix_functions___module.html#matrixbase_matrixfunction">matrixFunction()</a> with <a class="el" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495" title="Compute hyperbolic sine.">StdStemFunctions::sinh()</a>.</p>
 <p >Example: </p><div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><h2><a class="anchor" id="matrixbase_sqrt"></a>
 MatrixBase::sqrt()</h2>
 <p >Compute the matrix square root.</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixSquareRootReturnValue&lt;Derived&gt; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">MatrixBase&lt;Derived&gt;::sqrt</a>() const</div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a656b9217a2fcb6de59dc8d1eb3079cc7"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SqrtReturnType sqrt() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:187</div></div>
+<div class="fragment"><div class="line"><span class="keyword">const</span> MatrixSquareRootReturnValue&lt;Derived&gt; <a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">MatrixBase&lt;Derived&gt;::sqrt</a>() const</div>
+<div class="ttc" id="agroup___unit_math_html_gae52f60a9e2a9e7ad1018a846bcf49140"><div class="ttname"><a href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">units::math::sqrt</a></div><div class="ttdeci">auto sqrt(const UnitType &amp;value) noexcept -&gt; unit_t&lt; square_root&lt; typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the square root of value</div><div class="ttdef"><b>Definition:</b> math.h:483</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">M</td><td>invertible matrix whose square root is to be computed. </td></tr>
@@ -412,7 +412,7 @@ MatrixBase::sqrt()</h2>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>expression representing the matrix square root of <code>M</code>.</dd></dl>
-<p>The matrix square root of \( M \) is the matrix \( M^{1/2} \) whose square is the original matrix; so if \( S = M^{1/2} \) then \( S^2 = M \). This is different from taking the square root of all the entries in the matrix; use ArrayBase::sqrt() if you want to do the latter.</p>
+<p>The matrix square root of \( M \) is the matrix \( M^{1/2} \) whose square is the original matrix; so if \( S = M^{1/2} \) then \( S^2 = M \). This is different from taking the square root of all the entries in the matrix; use <a class="el" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140" title="computes the square root of value">ArrayBase::sqrt()</a> if you want to do the latter.</p>
 <p >In the <b>real case</b>, the matrix \( M \) should be invertible and it should have no eigenvalues which are real and negative (pairs of complex conjugate eigenvalues are allowed). In that case, the matrix has a square root which is also real, and this is the square root computed by this function.</p>
 <p >The matrix square root is computed by first reducing the matrix to quasi-triangular form with the real Schur decomposition. The square root of the quasi-triangular matrix can then be computed directly. The cost is approximately \( 25 n^3 \) real flops for the real Schur decomposition and \( 3\frac13 n^3 \) real flops for the remainder (though the computation time in practice is likely more than this indicates).</p>
 <p >Details of the algorithm can be found in: Nicholas J. Highan, "Computing real square roots of a real matrix", <em>Linear Algebra Appl.</em>, 88/89:405&ndash;430, 1987.</p>
@@ -477,7 +477,7 @@ template&lt;typename MatrixType , typename ResultType &gt; </div>
   </table>
   </dd>
 </dl>
-<p>This function computes the square root of the upper quasi-triangular matrix stored in the upper Hessenberg part of <code>arg</code>. Only the upper Hessenberg part of <code>result</code> is updated, the rest is not touched. See MatrixBase::sqrt() for details on how this computation is implemented.</p>
+<p>This function computes the square root of the upper quasi-triangular matrix stored in the upper Hessenberg part of <code>arg</code>. Only the upper Hessenberg part of <code>result</code> is updated, the rest is not touched. See <a class="el" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140" title="computes the square root of value">MatrixBase::sqrt()</a> for details on how this computation is implemented.</p>
 <dl class="section see"><dt>See also</dt><dd>MatrixSquareRoot, MatrixSquareRootQuasiTriangular </dd></dl>
 
 </div>
@@ -525,7 +525,7 @@ template&lt;typename MatrixType , typename ResultType &gt; </div>
   </table>
   </dd>
 </dl>
-<p>Only the upper triangular part (including the diagonal) of <code>result</code> is updated, the rest is not touched. See MatrixBase::sqrt() for details on how this computation is implemented.</p>
+<p>Only the upper triangular part (including the diagonal) of <code>result</code> is updated, the rest is not touched. See <a class="el" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140" title="computes the square root of value">MatrixBase::sqrt()</a> for details on how this computation is implemented.</p>
 <dl class="section see"><dt>See also</dt><dd>MatrixSquareRoot, MatrixSquareRootQuasiTriangular </dd></dl>
 
 </div>
@@ -535,7 +535,7 @@ template&lt;typename MatrixType , typename ResultType &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

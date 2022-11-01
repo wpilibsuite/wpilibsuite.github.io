@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -134,12 +134,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1e4cea8ae3a05ef1bcfdc48095cde5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ad467ccf4bdcaae827a978465da1c03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_mecanum_drive.html">MecanumDrive</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#a0ad467ccf4bdcaae827a978465da1c03">operator=</a> (<a class="el" href="classfrc_1_1_mecanum_drive.html">MecanumDrive</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a0ad467ccf4bdcaae827a978465da1c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7801f779e6486dfd7f6f101d51d5e1f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#a7801f779e6486dfd7f6f101d51d5e1f5">DriveCartesian</a> (double ySpeed, double xSpeed, double zRotation, double gyroAngle=0.0)</td></tr>
-<tr class="memdesc:a7801f779e6486dfd7f6f101d51d5e1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive method for Mecanum platform.  <a href="classfrc_1_1_mecanum_drive.html#a7801f779e6486dfd7f6f101d51d5e1f5">More...</a><br /></td></tr>
-<tr class="separator:a7801f779e6486dfd7f6f101d51d5e1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb956c5b44a5b608a85212e77962d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#a5fb956c5b44a5b608a85212e77962d08">DrivePolar</a> (double magnitude, double angle, double zRotation)</td></tr>
-<tr class="memdesc:a5fb956c5b44a5b608a85212e77962d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive method for Mecanum platform.  <a href="classfrc_1_1_mecanum_drive.html#a5fb956c5b44a5b608a85212e77962d08">More...</a><br /></td></tr>
-<tr class="separator:a5fb956c5b44a5b608a85212e77962d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0777a8508c235c3d2d6490660b6ade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#aea0777a8508c235c3d2d6490660b6ade">DriveCartesian</a> (double xSpeed, double ySpeed, double zRotation, <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> gyroAngle=0_rad)</td></tr>
+<tr class="memdesc:aea0777a8508c235c3d2d6490660b6ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive method for Mecanum platform.  <a href="classfrc_1_1_mecanum_drive.html#aea0777a8508c235c3d2d6490660b6ade">More...</a><br /></td></tr>
+<tr class="separator:aea0777a8508c235c3d2d6490660b6ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4a2b7a7e95345c33ca6503ee8281c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#a1e4a2b7a7e95345c33ca6503ee8281c1">DrivePolar</a> (double magnitude, <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> angle, double zRotation)</td></tr>
+<tr class="memdesc:a1e4a2b7a7e95345c33ca6503ee8281c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive method for Mecanum platform.  <a href="classfrc_1_1_mecanum_drive.html#a1e4a2b7a7e95345c33ca6503ee8281c1">More...</a><br /></td></tr>
+<tr class="separator:a1e4a2b7a7e95345c33ca6503ee8281c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be57ea2e3869a237086d04a7fbd51e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#a0be57ea2e3869a237086d04a7fbd51e4">StopMotor</a> () override</td></tr>
 <tr class="separator:a0be57ea2e3869a237086d04a7fbd51e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49f911dea1276792bb84f6ba4f4b0fd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#ac49f911dea1276792bb84f6ba4f4b0fd">GetDescription</a> () const override</td></tr>
@@ -224,9 +224,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae8ba7951b238cab9512a9d124a86bbec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html">WheelSpeeds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#ae8ba7951b238cab9512a9d124a86bbec">DriveCartesianIK</a> (double ySpeed, double xSpeed, double zRotation, double gyroAngle=0.0)</td></tr>
-<tr class="memdesc:ae8ba7951b238cab9512a9d124a86bbec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cartesian inverse kinematics for Mecanum platform.  <a href="classfrc_1_1_mecanum_drive.html#ae8ba7951b238cab9512a9d124a86bbec">More...</a><br /></td></tr>
-<tr class="separator:ae8ba7951b238cab9512a9d124a86bbec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e87453e2c9495a789e877a8b24bd3d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html">WheelSpeeds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive.html#a3e87453e2c9495a789e877a8b24bd3d8">DriveCartesianIK</a> (double xSpeed, double ySpeed, double zRotation, <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> gyroAngle=0_rad)</td></tr>
+<tr class="memdesc:a3e87453e2c9495a789e877a8b24bd3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cartesian inverse kinematics for Mecanum platform.  <a href="classfrc_1_1_mecanum_drive.html#a3e87453e2c9495a789e877a8b24bd3d8">More...</a><br /></td></tr>
+<tr class="separator:a3e87453e2c9495a789e877a8b24bd3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classfrc_1_1_motor_safety"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrc_1_1_motor_safety')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></td></tr>
 <tr class="memitem:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#a2a666ba39461317728e52fbaa9cdca32">CheckMotors</a> ()</td></tr>
 <tr class="memdesc:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1_motor_safety"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the motors to see if any have timed out.  <a href="classfrc_1_1_motor_safety.html#a2a666ba39461317728e52fbaa9cdca32">More...</a><br /></td></tr>
@@ -273,7 +273,7 @@ Additional Inherited Members</h2></td></tr>
 /_|___|_\
 /       \
 </pre><p >Each Drive() function provides different inverse kinematic relations for a Mecanum drive robot.</p>
-<p >The positive Y axis points ahead, the positive X axis points to the right, and the positive Z axis points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is positive.</p>
+<p >This library uses the NWU axes convention (North-West-Up as external reference in the world frame). The positive X axis points ahead, the positive Y axis points to the left, and the positive Z axis points up. Rotations follow the right-hand rule, so counterclockwise rotation around the Z axis is positive.</p>
 <p >Note: the axis conventions used in this class differ from <a class="el" href="classfrc_1_1_differential_drive.html" title="A class for driving differential drive/skid-steer drive platforms such as the Kit of Parts drive base...">DifferentialDrive</a>. This may change in a future year's WPILib release.</p>
 <p >Inputs smaller then 0.02 will be set to 0, and larger values will be scaled so that the full range is still used. This deadband value can be changed with <a class="el" href="classfrc_1_1_robot_drive_base.html#a66ca9d336c81659405045bf064490cfe" title="Sets the deadband applied to the drive inputs (e.g., joystick values).">SetDeadband()</a>.</p>
 <p ><a class="el" href="classfrc_1_1_motor_safety.html" title="The Motor Safety feature acts as a watchdog timer for an individual motor.">MotorSafety</a> is enabled by default. The DriveCartesian or DrivePolar methods should be called periodically to avoid Motor Safety timeouts. </p>
@@ -373,8 +373,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7801f779e6486dfd7f6f101d51d5e1f5" name="a7801f779e6486dfd7f6f101d51d5e1f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7801f779e6486dfd7f6f101d51d5e1f5">&#9670;&nbsp;</a></span>DriveCartesian()</h2>
+<a id="aea0777a8508c235c3d2d6490660b6ade" name="aea0777a8508c235c3d2d6490660b6ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0777a8508c235c3d2d6490660b6ade">&#9670;&nbsp;</a></span>DriveCartesian()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,13 +383,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void frc::MecanumDrive::DriveCartesian </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ySpeed</em>, </td>
+          <td class="paramname"><em>xSpeed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>xSpeed</em>, </td>
+          <td class="paramname"><em>ySpeed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -400,8 +400,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>gyroAngle</em> = <code>0.0</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&#160;</td>
+          <td class="paramname"><em>gyroAngle</em> = <code>0_rad</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -412,21 +412,21 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Drive method for Mecanum platform. </p>
-<p >Angles are measured clockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
+<p >Angles are measured counterclockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Forward is positive. </td></tr>
-    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Right is positive. </td></tr>
-    <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is positive. </td></tr>
-    <tr><td class="paramname">gyroAngle</td><td>The current angle reading from the gyro in degrees around the Z axis. Use this to implement field-oriented controls. </td></tr>
+    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Forward is positive. </td></tr>
+    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Left is positive. </td></tr>
+    <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Counterclockwise is positive. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The gyro heading around the Z axis. Use this to implement field-oriented controls. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ae8ba7951b238cab9512a9d124a86bbec" name="ae8ba7951b238cab9512a9d124a86bbec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8ba7951b238cab9512a9d124a86bbec">&#9670;&nbsp;</a></span>DriveCartesianIK()</h2>
+<a id="a3e87453e2c9495a789e877a8b24bd3d8" name="a3e87453e2c9495a789e877a8b24bd3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e87453e2c9495a789e877a8b24bd3d8">&#9670;&nbsp;</a></span>DriveCartesianIK()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,13 +438,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">static <a class="el" href="structfrc_1_1_mecanum_drive_1_1_wheel_speeds.html">WheelSpeeds</a> frc::MecanumDrive::DriveCartesianIK </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>ySpeed</em>, </td>
+          <td class="paramname"><em>xSpeed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>xSpeed</em>, </td>
+          <td class="paramname"><em>ySpeed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -455,8 +455,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>gyroAngle</em> = <code>0.0</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&#160;</td>
+          <td class="paramname"><em>gyroAngle</em> = <code>0_rad</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -472,13 +472,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cartesian inverse kinematics for Mecanum platform. </p>
-<p >Angles are measured clockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
+<p >Angles are measured counterclockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Forward is positive. </td></tr>
-    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Right is positive. </td></tr>
-    <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is positive. </td></tr>
-    <tr><td class="paramname">gyroAngle</td><td>The current angle reading from the gyro in degrees around the Z axis. Use this to implement field-oriented controls. </td></tr>
+    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Forward is positive. </td></tr>
+    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Left is positive. </td></tr>
+    <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Counterclockwise is positive. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The gyro heading around the Z axis. Use this to implement field-oriented controls. </td></tr>
   </table>
   </dd>
 </dl>
@@ -486,8 +486,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5fb956c5b44a5b608a85212e77962d08" name="a5fb956c5b44a5b608a85212e77962d08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb956c5b44a5b608a85212e77962d08">&#9670;&nbsp;</a></span>DrivePolar()</h2>
+<a id="a1e4a2b7a7e95345c33ca6503ee8281c1" name="a1e4a2b7a7e95345c33ca6503ee8281c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4a2b7a7e95345c33ca6503ee8281c1">&#9670;&nbsp;</a></span>DrivePolar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +501,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&#160;</td>
           <td class="paramname"><em>angle</em>, </td>
         </tr>
         <tr>
@@ -519,12 +519,12 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Drive method for Mecanum platform. </p>
-<p >Angles are measured clockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
+<p >Angles are measured counterclockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">magnitude</td><td>The robot's speed at a given angle [-1.0..1.0]. Forward is positive. </td></tr>
-    <tr><td class="paramname">angle</td><td>The angle around the Z axis at which the robot drives in degrees [-180..180]. </td></tr>
-    <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is positive. </td></tr>
+    <tr><td class="paramname">angle</td><td>The angle around the Z axis at which the robot drives. </td></tr>
+    <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Counterclockwise is positive. </td></tr>
   </table>
   </dd>
 </dl>
@@ -659,7 +659,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mecanum_drive.html">MecanumDrive</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

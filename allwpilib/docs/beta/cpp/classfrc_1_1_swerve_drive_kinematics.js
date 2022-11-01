@@ -6,5 +6,7 @@ var classfrc_1_1_swerve_drive_kinematics =
     [ "DesaturateWheelSpeeds", "classfrc_1_1_swerve_drive_kinematics.html#accd3217a7016eb5246f1184b8bc6cc90", null ],
     [ "ToChassisSpeeds", "classfrc_1_1_swerve_drive_kinematics.html#a1b8939ecc3902e895b0489b9eec7e78c", null ],
     [ "ToChassisSpeeds", "classfrc_1_1_swerve_drive_kinematics.html#a523767a39928074a218f4d7ac30fa267", null ],
-    [ "ToSwerveModuleStates", "classfrc_1_1_swerve_drive_kinematics.html#a04a485bbe6294b0fc9c39c8efacc3c79", null ]
+    [ "ToSwerveModuleStates", "classfrc_1_1_swerve_drive_kinematics.html#a04a485bbe6294b0fc9c39c8efacc3c79", null ],
+    [ "ToTwist2d", "classfrc_1_1_swerve_drive_kinematics.html#a93e6026b7176f6e16a71dd8c6f6ec663", null ],
+    [ "ToTwist2d", "classfrc_1_1_swerve_drive_kinematics.html#a4af0b75bd86709eccf6e94453530fca4", null ]
 ];

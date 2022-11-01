@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -92,88 +92,33 @@ $(document).ready(function(){initNavTree('group__ntcore__logger__cfunc.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Logger Functions<div class="ingroups"><a class="el" href="group__ntcore__c__api.html">ntcore C API</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga0a9c5c32c23466b02558b2dd5aae593b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">NT_LogFunc</a>) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *msg)</td></tr>
-<tr class="memdesc:ga0a9c5c32c23466b02558b2dd5aae593b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log function.  <a href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">More...</a><br /></td></tr>
-<tr class="separator:ga0a9c5c32c23466b02558b2dd5aae593b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga28678881c133ffe87f91f621b5558cee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee">NT_AddLogger</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, void *<a class="el" href="structdata.html">data</a>, <a class="el" href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">NT_LogFunc</a> func, unsigned int min_level, unsigned int max_level)</td></tr>
-<tr class="memdesc:ga28678881c133ffe87f91f621b5558cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee">More...</a><br /></td></tr>
-<tr class="separator:ga28678881c133ffe87f91f621b5558cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab73de0e404687276b238f4a028606a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gab73de0e404687276b238f4a028606a49">NT_CreateLoggerPoller</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst)</td></tr>
-<tr class="memdesc:gab73de0e404687276b238f4a028606a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log poller.  <a href="group__ntcore__logger__cfunc.html#gab73de0e404687276b238f4a028606a49">More...</a><br /></td></tr>
-<tr class="separator:gab73de0e404687276b238f4a028606a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52f5816a793c4327333f6aebfbf541ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga52f5816a793c4327333f6aebfbf541ba">NT_DestroyLoggerPoller</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller)</td></tr>
-<tr class="memdesc:ga52f5816a793c4327333f6aebfbf541ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a log poller.  <a href="group__ntcore__logger__cfunc.html#ga52f5816a793c4327333f6aebfbf541ba">More...</a><br /></td></tr>
-<tr class="separator:ga52f5816a793c4327333f6aebfbf541ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaed63e3bae15ba09927e1866a0f07e83c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gaed63e3bae15ba09927e1866a0f07e83c">NT_AddPolledLogger</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller, unsigned int min_level, unsigned int max_level)</td></tr>
-<tr class="memdesc:gaed63e3bae15ba09927e1866a0f07e83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log level for a log poller.  <a href="group__ntcore__logger__cfunc.html#gaed63e3bae15ba09927e1866a0f07e83c">More...</a><br /></td></tr>
-<tr class="separator:gaed63e3bae15ba09927e1866a0f07e83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34b75ca00c0adf8bcf8dcedc30d92d57"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga34b75ca00c0adf8bcf8dcedc30d92d57">NT_ReadLoggerQueue</a> (<a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> poller, size_t *len)</td></tr>
-<tr class="memdesc:ga34b75ca00c0adf8bcf8dcedc30d92d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next log event.  <a href="group__ntcore__logger__cfunc.html#ga34b75ca00c0adf8bcf8dcedc30d92d57">More...</a><br /></td></tr>
-<tr class="separator:ga34b75ca00c0adf8bcf8dcedc30d92d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaaf0d1c5efd341c80fb2ced526b53adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf">NT_RemoveLogger</a> (<a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a> logger)</td></tr>
-<tr class="memdesc:gaaaf0d1c5efd341c80fb2ced526b53adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a logger.  <a href="group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf">More...</a><br /></td></tr>
-<tr class="separator:gaaaf0d1c5efd341c80fb2ced526b53adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50cf136b0c18d51274173426856fd211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga50cf136b0c18d51274173426856fd211">NT_AddLogger</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, unsigned int min_level, unsigned int max_level, void *<a class="el" href="structdata.html">data</a>, <a class="el" href="group__ntcore__listener__cfunc.html#ga3be500fc1de149d79ba4571592397e7c">NT_ListenerCallback</a> func)</td></tr>
+<tr class="memdesc:ga50cf136b0c18d51274173426856fd211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="group__ntcore__logger__cfunc.html#ga50cf136b0c18d51274173426856fd211">More...</a><br /></td></tr>
+<tr class="separator:ga50cf136b0c18d51274173426856fd211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e7a80f40c412376b2a6e4c095bc77cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__cfunc.html#ga3e7a80f40c412376b2a6e4c095bc77cd">NT_AddPolledLogger</a> (<a class="el" href="group__ntcore__c__api.html#gaea69e18ddd87c7f4474aefe85d573449">NT_ListenerPoller</a> poller, unsigned int min_level, unsigned int max_level)</td></tr>
+<tr class="memdesc:ga3e7a80f40c412376b2a6e4c095bc77cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log level for a listener poller.  <a href="group__ntcore__logger__cfunc.html#ga3e7a80f40c412376b2a6e4c095bc77cd">More...</a><br /></td></tr>
+<tr class="separator:ga3e7a80f40c412376b2a6e4c095bc77cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga0a9c5c32c23466b02558b2dd5aae593b" name="ga0a9c5c32c23466b02558b2dd5aae593b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0a9c5c32c23466b02558b2dd5aae593b">&#9670;&nbsp;</a></span>NT_LogFunc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* NT_LogFunc) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> *msg)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Log function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td>data pointer passed to <a class="el" href="group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee" title="Add logger callback function.">NT_AddLogger()</a> </td></tr>
-    <tr><td class="paramname">msg</td><td>message information </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga28678881c133ffe87f91f621b5558cee" name="ga28678881c133ffe87f91f621b5558cee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga28678881c133ffe87f91f621b5558cee">&#9670;&nbsp;</a></span>NT_AddLogger()</h2>
+<a id="ga50cf136b0c18d51274173426856fd211" name="ga50cf136b0c18d51274173426856fd211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50cf136b0c18d51274173426856fd211">&#9670;&nbsp;</a></span>NT_AddLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a> NT_AddLogger </td>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> NT_AddLogger </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
           <td class="paramname"><em>inst</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b">NT_LogFunc</a>&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -185,7 +130,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>max_level</em>&#160;</td>
+          <td class="paramname"><em>max_level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__cfunc.html#ga3be500fc1de149d79ba4571592397e7c">NT_ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -200,27 +157,27 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">inst</td><td>instance handle </td></tr>
-    <tr><td class="paramname">data</td><td>data pointer to pass to func </td></tr>
-    <tr><td class="paramname">func</td><td>log callback function </td></tr>
     <tr><td class="paramname">min_level</td><td>minimum log level </td></tr>
     <tr><td class="paramname">max_level</td><td>maximum log level </td></tr>
+    <tr><td class="paramname">data</td><td>data pointer to pass to func </td></tr>
+    <tr><td class="paramname">func</td><td>listener callback function </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Logger handle </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
 
 </div>
 </div>
-<a id="gaed63e3bae15ba09927e1866a0f07e83c" name="gaed63e3bae15ba09927e1866a0f07e83c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaed63e3bae15ba09927e1866a0f07e83c">&#9670;&nbsp;</a></span>NT_AddPolledLogger()</h2>
+<a id="ga3e7a80f40c412376b2a6e4c095bc77cd" name="ga3e7a80f40c412376b2a6e4c095bc77cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e7a80f40c412376b2a6e4c095bc77cd">&#9670;&nbsp;</a></span>NT_AddPolledLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a> NT_AddPolledLogger </td>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> NT_AddPolledLogger </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaea69e18ddd87c7f4474aefe85d573449">NT_ListenerPoller</a>&#160;</td>
           <td class="paramname"><em>poller</em>, </td>
         </tr>
         <tr>
@@ -243,7 +200,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the log level for a log poller. </p>
+<p>Set the log level for a listener poller. </p>
 <p >Events will only be generated for log messages with level greater than or equal to min_level and less than or equal to max_level; messages outside this range will be silently ignored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -253,127 +210,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Logger handle </dd></dl>
-
-</div>
-</div>
-<a id="gab73de0e404687276b238f4a028606a49" name="gab73de0e404687276b238f4a028606a49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab73de0e404687276b238f4a028606a49">&#9670;&nbsp;</a></span>NT_CreateLoggerPoller()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a> NT_CreateLoggerPoller </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a>&#160;</td>
-          <td class="paramname"><em>inst</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a log poller. </p>
-<p >A poller provides a single queue of poll events. The returned handle must be destroyed with <a class="el" href="group__ntcore__logger__cfunc.html#ga52f5816a793c4327333f6aebfbf541ba" title="Destroy a log poller.">NT_DestroyLoggerPoller()</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inst</td><td>instance handle </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>poller handle </dd></dl>
-
-</div>
-</div>
-<a id="ga52f5816a793c4327333f6aebfbf541ba" name="ga52f5816a793c4327333f6aebfbf541ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52f5816a793c4327333f6aebfbf541ba">&#9670;&nbsp;</a></span>NT_DestroyLoggerPoller()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NT_DestroyLoggerPoller </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td>
-          <td class="paramname"><em>poller</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroy a log poller. </p>
-<p >This will abort any blocked polling call and prevent additional events from being generated for this poller.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">poller</td><td>poller handle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga34b75ca00c0adf8bcf8dcedc30d92d57" name="ga34b75ca00c0adf8bcf8dcedc30d92d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34b75ca00c0adf8bcf8dcedc30d92d57">&#9670;&nbsp;</a></span>NT_ReadLoggerQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="struct_n_t___log_message.html">NT_LogMessage</a> * NT_ReadLoggerQueue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gad9deebbe3ac6b1e15e745b1ff4030442">NT_LoggerPoller</a>&#160;</td>
-          <td class="paramname"><em>poller</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the next log event. </p>
-<p >This blocks until the next log occurs.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">poller</td><td>poller handle </td></tr>
-    <tr><td class="paramname">len</td><td>length of returned array (output) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of information on the log events. Only returns NULL if an error occurred (e.g. the instance was invalid or is shutting down). </dd></dl>
-
-</div>
-</div>
-<a id="gaaaf0d1c5efd341c80fb2ced526b53adf" name="gaaaf0d1c5efd341c80fb2ced526b53adf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaaf0d1c5efd341c80fb2ced526b53adf">&#9670;&nbsp;</a></span>NT_RemoveLogger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void NT_RemoveLogger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td>
-          <td class="paramname"><em>logger</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Remove a logger. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">logger</td><td>Logger handle to remove </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
 
 </div>
 </div>
@@ -382,7 +219,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

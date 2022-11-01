@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -95,34 +95,29 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool_1
 </div><!--header-->
 <div class="contents">
 
-<p>\effects Allocates a single removing it from the free list.  
-<a href="conceptwpi_1_1memory_1_1memory__pool_1_1by.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="memory__pool_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_pool.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1memory__pool_1_1by.html">wpi::memory::memory_pool::by</a> = </div>
-<div class="ttc" id="aconceptwpi_1_1memory_1_1memory__pool_1_1by_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1memory__pool_1_1by.html">by</a></div><div class="ttdoc">\effects Allocates a single removing it from the free list.</div></div>
+<div class="ttc" id="aconceptwpi_1_1memory_1_1memory__pool_1_1by_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1memory__pool_1_1by.html">by</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >\effects Allocates a single removing it from the free list. </p>
-<p >\effects Deallocates an putting it back onto the free list.</p>
-<p >\effects Deallocates a single putting it back onto the free list.</p>
-<p >If the free list is empty, a new memory block will be allocated from the arena and put onto it. The new block size will be next_capacity() big. </p><dl class="section return"><dt>Returns</dt><dd>A node of size node_size() suitable aligned, i.e. suitable for any type where <code>sizeof(T) &lt; node_size()</code>. </dd></dl>
+<div class="textblock"><dl class="section user"><dt>Effects:</dt><dd>Allocates a single removing it from the free list. If the free list is empty, a new memory block will be allocated from the arena and put onto it. The new block size will be next_capacity() big. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A node of size node_size() suitable aligned, i.e. suitable for any type where <code>sizeof(T) &lt; node_size()</code>. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">Anything</td><td>thrown by the used</td></tr>
   </table>
   </dd>
 </dl>
-<p>\requires <code>ptr</code> must be a result from a previous call to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a1676c071165f2f13143866094878629b">allocate_node()</a> on the same free list, i.e. either this allocator object or a new object created by moving this to it.</p>
-<p >\requires <code>ptr</code> must be a result from a previous call to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a11ba56c63dcf7c5763ae6d090efc699f">allocate_array()</a> with the same <code>n</code> on the same free list, i.e. either this allocator object or a new object created by moving this to it. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates a single putting it back onto the free list. \requires <code>ptr</code> must be a result from a previous call to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a1676c071165f2f13143866094878629b">allocate_node()</a> on the same free list, i.e. either this allocator object or a new object created by moving this to it.</dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates an putting it back onto the free list. \requires <code>ptr</code> must be a result from a previous call to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a11ba56c63dcf7c5763ae6d090efc699f">allocate_array()</a> with the same <code>n</code> on the same free list, i.e. either this allocator object or a new object created by moving this to it. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool_1_1by.html">by</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

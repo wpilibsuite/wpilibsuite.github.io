@@ -1,20 +1,20 @@
 var classfrc_1_1_pose2d =
 [
     [ "Pose2d", "classfrc_1_1_pose2d.html#a2602351065049e16f8e3cc19956eb85d", null ],
-    [ "Pose2d", "classfrc_1_1_pose2d.html#abc3533e4d07108d85642d7e752f4c312", null ],
-    [ "Pose2d", "classfrc_1_1_pose2d.html#a327b6932b0eec4f08ce06904c939434b", null ],
+    [ "Pose2d", "classfrc_1_1_pose2d.html#a1d89e55cf66d2ec2833f8af6dcd40b15", null ],
+    [ "Pose2d", "classfrc_1_1_pose2d.html#a5f213064235685d84eebf9e230f8f03f", null ],
     [ "Exp", "classfrc_1_1_pose2d.html#a6a3cfff8496785a2e521bc066ef20fb2", null ],
     [ "Log", "classfrc_1_1_pose2d.html#a230f05ea41c4fa44ff24622638aa20c7", null ],
     [ "operator!=", "classfrc_1_1_pose2d.html#a4e9640e9ef27bca8448c969490342d5d", null ],
-    [ "operator*", "classfrc_1_1_pose2d.html#a9474bf7b7b74aa89a642a03ea280ba33", null ],
-    [ "operator+", "classfrc_1_1_pose2d.html#a1f5c1faa456c95579a9d0369da15f203", null ],
+    [ "operator*", "classfrc_1_1_pose2d.html#a32ddfd69629e8fb5ebd5e1200e0251e8", null ],
+    [ "operator+", "classfrc_1_1_pose2d.html#a1a12791ff71948bddd8c3bb8d69b50ec", null ],
     [ "operator-", "classfrc_1_1_pose2d.html#a08e349adffdba4f7a2fc1f9861b8040d", null ],
-    [ "operator/", "classfrc_1_1_pose2d.html#a74b1b8a1ff1bf012d1af833c2ded3680", null ],
+    [ "operator/", "classfrc_1_1_pose2d.html#abf8307a6197fb9fabba4ba1651a5458f", null ],
     [ "operator==", "classfrc_1_1_pose2d.html#a5fae46630528c38f60c221e481fb5f34", null ],
     [ "RelativeTo", "classfrc_1_1_pose2d.html#ab922c422989dfa732d5059b6ef787e91", null ],
-    [ "Rotation", "classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c", null ],
-    [ "TransformBy", "classfrc_1_1_pose2d.html#a272dfc4cba966ee7eca6333b5d4cda09", null ],
-    [ "Translation", "classfrc_1_1_pose2d.html#a94d982c067ee1e27a817e25a966805a6", null ],
-    [ "X", "classfrc_1_1_pose2d.html#a24e0ea6b41a5b36ce9fbedb2bd774047", null ],
-    [ "Y", "classfrc_1_1_pose2d.html#ad4cf5b44f1623e2b6d62323834a6a996", null ]
+    [ "Rotation", "classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b", null ],
+    [ "TransformBy", "classfrc_1_1_pose2d.html#a08f7c8283698ff2a40097a4741dfec6e", null ],
+    [ "Translation", "classfrc_1_1_pose2d.html#ae4954d2ad0fb2a0ec1bca2d6ed7544db", null ],
+    [ "X", "classfrc_1_1_pose2d.html#a61c54b8f43301729eaace16affe95332", null ],
+    [ "Y", "classfrc_1_1_pose2d.html#a42c2533cfa9e0ac4a6b4ef08dad202e6", null ]
 ];

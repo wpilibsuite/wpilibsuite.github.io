@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('_differential_drive_odometry_8h_source
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1_differential_drive_odometry.html#a918d2c1c2411bb25d2ebeed372646930">   47</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_differential_drive_odometry.html#a918d2c1c2411bb25d2ebeed372646930">ResetPosition</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle) {</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    m_pose = pose;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    m_previousAngle = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">Rotation</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    m_previousAngle = pose.<a class="code hl_function" href="classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b">Rotation</a>();</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    m_gyroOffset = m_pose.Rotation() - gyroAngle;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    m_prevLeftDistance = 0_m;</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('_differential_drive_odometry_8h_source
 <div class="ttc" id="aclassfrc_1_1_differential_drive_odometry_html_a3394cbff3d47be7d478d955a86933e15"><div class="ttname"><a href="classfrc_1_1_differential_drive_odometry.html#a3394cbff3d47be7d478d955a86933e15">frc::DifferentialDriveOdometry::GetPose</a></div><div class="ttdeci">const Pose2d &amp; GetPose() const</div><div class="ttdoc">Returns the position of the robot on the field.</div><div class="ttdef"><b>Definition:</b> DifferentialDriveOdometry.h:60</div></div>
 <div class="ttc" id="aclassfrc_1_1_differential_drive_odometry_html_a918d2c1c2411bb25d2ebeed372646930"><div class="ttname"><a href="classfrc_1_1_differential_drive_odometry.html#a918d2c1c2411bb25d2ebeed372646930">frc::DifferentialDriveOdometry::ResetPosition</a></div><div class="ttdeci">void ResetPosition(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</div><div class="ttdoc">Resets the robot's position on the field.</div><div class="ttdef"><b>Definition:</b> DifferentialDriveOdometry.h:47</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
-<div class="ttc" id="aclassfrc_1_1_pose2d_html_ab58cd85d929e96cbc40360409196921c"><div class="ttname"><a href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">frc::Pose2d::Rotation</a></div><div class="ttdeci">const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:113</div></div>
+<div class="ttc" id="aclassfrc_1_1_pose2d_html_a2936ce7a45e58fce82c8cefa2a56c60b"><div class="ttname"><a href="classfrc_1_1_pose2d.html#a2936ce7a45e58fce82c8cefa2a56c60b">frc::Pose2d::Rotation</a></div><div class="ttdeci">constexpr const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:113</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('_differential_drive_odometry_8h_source
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><a class="el" href="_differential_drive_odometry_8h.html">DifferentialDriveOdometry.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

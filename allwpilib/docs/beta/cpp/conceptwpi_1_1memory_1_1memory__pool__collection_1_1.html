@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool__
 </div><!--header-->
 <div class="contents">
 
-<p>\effects Creates it by giving it the maximum node size it should be able to allocate, the size of the initial memory block and other constructor arguments for the The <code>BucketDistribution</code> controls how many free lists are created, but unlike in memory_pool all free lists are initially empty and the first memory block queued.  
+<p>of size next_capacity() and puts part of it onto this free list.  
 <a href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="memory__pool__collection_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_pool_collection.hpp</a>&gt;</code></p>
@@ -104,13 +104,12 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool__
 <div class="line"><span class="keyword">concept </span><a class="code hl_class" href="classwpi_1_1memory_1_1memory__pool__collection.html">wpi::memory::memory_pool_collection</a>:: = </div>
 <div class="ttc" id="aclasswpi_1_1memory_1_1memory__pool__collection_html"><div class="ttname"><a href="classwpi_1_1memory_1_1memory__pool__collection.html">wpi::memory::memory_pool_collection</a></div><div class="ttdef"><b>Definition:</b> memory_pool_collection.hpp:64</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >\effects Creates it by giving it the maximum node size it should be able to allocate, the size of the initial memory block and other constructor arguments for the The <code>BucketDistribution</code> controls how many free lists are created, but unlike in memory_pool all free lists are initially empty and the first memory block queued. </p>
-<p >\effects Inserts more memory on the free list for nodes of given size.</p>
-<p >of size next_capacity() and puts part of it onto this free list.</p>
-<p >\effects Destroys the memory_pool_collection by returning all memory blocks, regardless of properly deallocated back to the</p>
-<p >\requires <code>max_node_size</code> must be a valid</p>
-<p >Then it removes a node from it. </p><dl class="section return"><dt>Returns</dt><dd>A</dd></dl>
-<p>It will try to put <code>capacity_left</code> bytes from the arena onto the free list defined over the <code>BucketDistribution</code>, if the arena is empty, a new memory block is requested from the and it will be used. </p><dl class="exception"><dt>Exceptions</dt><dd>
+<div class="textblock"><p >of size next_capacity() and puts part of it onto this free list. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by giving it the maximum node size it should be able to allocate, the size of the initial memory block and other constructor arguments for the The <code>BucketDistribution</code> controls how many free lists are created, but unlike in memory_pool all free lists are initially empty and the first memory block queued. \requires <code>max_node_size</code> must be a valid</dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Destroys the memory_pool_collection by returning all memory blocks, regardless of properly deallocated back to the</dd></dl>
+<p>Then it removes a node from it. </p><dl class="section return"><dt>Returns</dt><dd>A</dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Inserts more memory on the free list for nodes of given size. It will try to put <code>capacity_left</code> bytes from the arena onto the free list defined over the <code>BucketDistribution</code>, if the arena is empty, a new memory block is requested from the and it will be used. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">Anything</td><td>thrown by the</td></tr>
   </table>
@@ -124,7 +123,7 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool__
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1.html"></a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

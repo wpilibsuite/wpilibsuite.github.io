@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -119,10 +119,8 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa17beae2318bafe373d6fdbbb22c7f41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1fallback__allocator.html#aa17beae2318bafe373d6fdbbb22c7f41">fallback_allocator</a> ()</td></tr>
-<tr class="memdesc:aa17beae2318bafe373d6fdbbb22c7f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Default constructs both allocators.  <a href="classwpi_1_1memory_1_1fallback__allocator.html#aa17beae2318bafe373d6fdbbb22c7f41">More...</a><br /></td></tr>
 <tr class="separator:aa17beae2318bafe373d6fdbbb22c7f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2fea06cf08102226bb35b8c1f5be68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1fallback__allocator.html#aef2fea06cf08102226bb35b8c1f5be68">fallback_allocator</a> (<a class="el" href="classwpi_1_1memory_1_1fallback__allocator.html#a42147ec9e66061e8476306a9804da1ca">default_allocator_type</a> &amp;&amp;default_alloc, <a class="el" href="classwpi_1_1memory_1_1fallback__allocator.html#a52f22cde47c39ffb7ec5a1db71812de7">fallback_allocator_type</a> &amp;&amp;fallback_alloc={})</td></tr>
-<tr class="memdesc:aef2fea06cf08102226bb35b8c1f5be68"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Constructs the allocator by passing in the two allocators it has.  <a href="classwpi_1_1memory_1_1fallback__allocator.html#aef2fea06cf08102226bb35b8c1f5be68">More...</a><br /></td></tr>
 <tr class="separator:aef2fea06cf08102226bb35b8c1f5be68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a86aa5a3dd260a139f9bfa4cc24a707a4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1fallback__allocator.html#a86aa5a3dd260a139f9bfa4cc24a707a4">allocate_node</a> (std::size_t size, std::size_t alignment)</td></tr>
@@ -234,9 +232,7 @@ template&lt;class Default , class Fallback &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Default constructs both allocators. </p>
-<p >\notes This function only participates in overload resolution, if both allocators are not stateful. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Default constructs both allocators. \notes This function only participates in overload resolution, if both allocators are not stateful. </dd></dl>
 
 </div>
 </div>
@@ -275,8 +271,7 @@ template&lt;class Default , class Fallback &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Constructs the allocator by passing in the two allocators it has. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Constructs the allocator by passing in the two allocators it has. </dd></dl>
 
 </div>
 </div>
@@ -404,7 +399,7 @@ template&lt;class Default , class Fallback &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects First calls the compositioning (de)allocation function on the <code>default_allocator_type</code>. If that fails, uses the non-compositioning function of the <code>fallback_allocator_type</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>First calls the compositioning (de)allocation function on the <code>default_allocator_type</code>. If that fails, uses the non-compositioning function of the <code>fallback_allocator_type</code>. </dd></dl>
 
 </div>
 </div>
@@ -729,7 +724,7 @@ template&lt;class Default , class Fallback &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects First calls the compositioning (de)allocation function on the <code>default_allocator_type</code>. If that fails, uses the compositioning function of the <code>fallback_allocator_type</code>. \requires The <code>fallback_allocator_type</code> msut be composable. </p>
+<dl class="section user"><dt>Effects:</dt><dd>First calls the compositioning (de)allocation function on the <code>default_allocator_type</code>. If that fails, uses the compositioning function of the <code>fallback_allocator_type</code>. \requires The <code>fallback_allocator_type</code> msut be composable. </dd></dl>
 
 </div>
 </div>
@@ -836,7 +831,7 @@ template&lt;class Default , class Fallback &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1fallback__allocator.html">fallback_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

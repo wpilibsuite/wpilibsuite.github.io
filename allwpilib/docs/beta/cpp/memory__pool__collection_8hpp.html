@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -154,13 +154,13 @@ Concepts</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">in any order but with a predefined set of sizes, not only one size like memory_pool. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1.html">wpi::memory::memory_pool_collection::</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by giving it the maximum node size it should be able to allocate, the size of the initial memory block and other constructor arguments for the The <code>BucketDistribution</code> controls how many free lists are created, but unlike in memory_pool all free lists are initially empty and the first memory block queued. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">of size next_capacity() and puts part of it onto this free list. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1size.html">wpi::memory::memory_pool_collection::size</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">and <code>block_size</code> must be non-zero. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1of.html">wpi::memory::memory_pool_collection::of</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Allocates a given size. <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">given size suitable aligned, i.e. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1if.html">wpi::memory::memory_pool_collection::if</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a growth is needed or a bad_node_size exception if the node size is too big. <br /></td></tr>
@@ -172,10 +172,8 @@ Concepts</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>node_size</code> must be valid <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1by.html">wpi::memory::memory_pool_collection::by</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates a putting it back onto the appropriate free list. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1similar.html">wpi::memory::memory_pool_collection::similar</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates a to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#ac5a5ea7c5f4680044ba727e50d9476d2">deallocate_node()</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">concept &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1less.html">wpi::memory::memory_pool_collection::less</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">than or equal to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#ace64c1fc552c7664e06fe54af93d2920">max_node_size()</a>, <code>capacity_left</code> must be less than next_capacity(). <br /></td></tr>
@@ -198,7 +196,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_546ba5aa787ced15236f35cd8ec24069.html">memory</a></li><li class="navelem"><a class="el" href="dir_8cade806b5335aefc15c83738d476d10.html">include</a></li><li class="navelem"><a class="el" href="dir_f60925f5d3c309ad67c392036ce6f1d3.html">wpi</a></li><li class="navelem"><a class="el" href="dir_af118afc52e1adc19596c0ca28b55f16.html">memory</a></li><li class="navelem"><a class="el" href="memory__pool__collection_8hpp.html">memory_pool_collection.hpp</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

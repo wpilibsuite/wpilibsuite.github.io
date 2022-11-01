@@ -9,6 +9,7 @@ var classfrc_1_1_a_d_x_r_s450___gyro =
     [ "GetPort", "classfrc_1_1_a_d_x_r_s450___gyro.html#a23e4d724a4b21b2446b685689b1ab94d", null ],
     [ "GetRate", "classfrc_1_1_a_d_x_r_s450___gyro.html#a294f39dd58e1728d27f0570640f4ff2f", null ],
     [ "InitSendable", "classfrc_1_1_a_d_x_r_s450___gyro.html#a5edf45bd453caa9ea69526c85e79163f", null ],
+    [ "IsConnected", "classfrc_1_1_a_d_x_r_s450___gyro.html#a6e88bc1a96e5175aca5dfcf636e71614", null ],
     [ "operator=", "classfrc_1_1_a_d_x_r_s450___gyro.html#a4a667e5409b79e209e58528668e4f602", null ],
     [ "Reset", "classfrc_1_1_a_d_x_r_s450___gyro.html#a548505e23354192ac81ffed5d21c9981", null ]
 ];

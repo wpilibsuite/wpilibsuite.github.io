@@ -4,9 +4,7 @@ var group__ntcore__cpp__handle__api =
     [ "Table Functions", "group__ntcore__table__func.html", "group__ntcore__table__func" ],
     [ "Topic Functions", "group__ntcore__topic__func.html", "group__ntcore__topic__func" ],
     [ "Advanced Subscriber Functions", "group__ntcore__advancedsub__func.html", "group__ntcore__advancedsub__func" ],
-    [ "Topic Listener Functions", "group__ntcore__topiclistener__func.html", "group__ntcore__topiclistener__func" ],
-    [ "Value Listener Functions", "group__ntcore__valuelistener__func.html", "group__ntcore__valuelistener__func" ],
-    [ "Connection Listener Functions", "group__ntcore__connectionlistener__func.html", "group__ntcore__connectionlistener__func" ],
+    [ "Listener Functions", "group__ntcore__listener__func.html", "group__ntcore__listener__func" ],
     [ "Client/Server Functions", "group__ntcore__network__func.html", "group__ntcore__network__func" ],
     [ "Utility Functions", "group__ntcore__utility__func.html", "group__ntcore__utility__func" ],
     [ "Data Logger Functions", "group__ntcore__data__logger__func.html", "group__ntcore__data__logger__func" ],
@@ -22,6 +20,22 @@ var group__ntcore__cpp__handle__api =
     [ "FloatArray Functions", "group__ntcore___float_array__func.html", "group__ntcore___float_array__func" ],
     [ "DoubleArray Functions", "group__ntcore___double_array__func.html", "group__ntcore___double_array__func" ],
     [ "StringArray Functions", "group__ntcore___string_array__func.html", "group__ntcore___string_array__func" ],
+    [ "nt::EventFlags", "structnt_1_1_event_flags.html", [
+      [ "EventFlags", "structnt_1_1_event_flags.html#abeaf2264c2af4897335e525b6030aa90", null ],
+      [ "kConnected", "structnt_1_1_event_flags.html#aacd6335ae6a213b96b0de6b083c3a7c2", null ],
+      [ "kConnection", "structnt_1_1_event_flags.html#a542a4d069be2c99bb45f57583f9fd7dd", null ],
+      [ "kDisconnected", "structnt_1_1_event_flags.html#aeed1ce8368c05ba59115062f2a44966e", null ],
+      [ "kImmediate", "structnt_1_1_event_flags.html#a525e3f7ff2f8da4333ee740fdecf6ccc", null ],
+      [ "kLogMessage", "structnt_1_1_event_flags.html#a3ba947324a5820b4ccdc8dd69646abb5", null ],
+      [ "kNone", "structnt_1_1_event_flags.html#a3aebe60d5322d2455a2836bc0b80c3ba", null ],
+      [ "kProperties", "structnt_1_1_event_flags.html#a937a42a7b75a0db4d209bf0366690ff1", null ],
+      [ "kPublish", "structnt_1_1_event_flags.html#a8e782d44200587eeeb4bb3291fd7fc25", null ],
+      [ "kTopic", "structnt_1_1_event_flags.html#a39e388205ca7273e31df92c1b6955797", null ],
+      [ "kUnpublish", "structnt_1_1_event_flags.html#a44c2d0dd47f0514da87860db95dec0f8", null ],
+      [ "kValueAll", "structnt_1_1_event_flags.html#a1d6b3c55444edcc72430f8775196cbc2", null ],
+      [ "kValueLocal", "structnt_1_1_event_flags.html#aa18219bb899433860a45eb9fe9c5164d", null ],
+      [ "kValueRemote", "structnt_1_1_event_flags.html#a030e3358df90e8043b05195c25ebe2e1", null ]
+    ] ],
     [ "nt::TopicInfo", "structnt_1_1_topic_info.html", [
       [ "GetProperties", "structnt_1_1_topic_info.html#a139fc19c46542268578740e115383766", null ],
       [ "swap", "structnt_1_1_topic_info.html#aa0bfc04bc3de4f723be7ed3299d40360", null ],
@@ -39,41 +53,40 @@ var group__ntcore__cpp__handle__api =
       [ "remote_ip", "structnt_1_1_connection_info.html#ac68ecd3cbafe77f22de289bd2b0f79ce", null ],
       [ "remote_port", "structnt_1_1_connection_info.html#a374d9048e0a8f8b877ec15ce4f20ec02", null ]
     ] ],
-    [ "nt::TopicNotification", "classnt_1_1_topic_notification.html", [
-      [ "TopicNotification", "classnt_1_1_topic_notification.html#a522a38b702158c3640d4c84aa33a3046", null ],
-      [ "TopicNotification", "classnt_1_1_topic_notification.html#a17ae67ad8c09bd4f68bf8d9c2dff6438", null ],
-      [ "swap", "classnt_1_1_topic_notification.html#ae04037459a88b65025a15f9ba009dfd3", null ],
-      [ "flags", "classnt_1_1_topic_notification.html#a7f558331d19f1c5ed9bbaa1b34459469", null ],
-      [ "info", "classnt_1_1_topic_notification.html#a0301c29e267f8d54a100dea7a90891fb", null ],
-      [ "listener", "classnt_1_1_topic_notification.html#abb39be28639db4be49341862609b5eec", null ]
-    ] ],
-    [ "nt::ValueNotification", "classnt_1_1_value_notification.html", [
-      [ "ValueNotification", "classnt_1_1_value_notification.html#a84e45b3e9d032ee2649eae3d921934a8", null ],
-      [ "ValueNotification", "classnt_1_1_value_notification.html#aeeaaa76f965a55498a477cae4d7303a2", null ],
-      [ "swap", "classnt_1_1_value_notification.html#a244c63209d5aab85f50158bc0d4914a9", null ],
-      [ "flags", "classnt_1_1_value_notification.html#ab416b83253baca1ddcaa8ac4d4a7f39e", null ],
-      [ "listener", "classnt_1_1_value_notification.html#a3a5ae0315586fa8c4608778e1ecbafea", null ],
-      [ "subentry", "classnt_1_1_value_notification.html#a0dbe377f142518eb7f3736a7b5ea3275", null ],
-      [ "topic", "classnt_1_1_value_notification.html#ab1055968ae6f9ea4ab44f90eb7e089f6", null ],
-      [ "value", "classnt_1_1_value_notification.html#aa4a58120a8b3557e46f049d8d2d1ab33", null ]
-    ] ],
-    [ "nt::ConnectionNotification", "classnt_1_1_connection_notification.html", [
-      [ "ConnectionNotification", "classnt_1_1_connection_notification.html#a914e06088022d0dec6d5d5ddb1fdac66", null ],
-      [ "ConnectionNotification", "classnt_1_1_connection_notification.html#a2ef31fd07f9d7be03a5e6b0462addfa8", null ],
-      [ "swap", "classnt_1_1_connection_notification.html#aad68ee1f9c8de2f0c2f019badbbb06d4", null ],
-      [ "conn", "classnt_1_1_connection_notification.html#af7de20981b70adfed64421591fb201c5", null ],
-      [ "connected", "classnt_1_1_connection_notification.html#ac1eb7361187e0bfb7432cccd038d80b4", null ],
-      [ "listener", "classnt_1_1_connection_notification.html#a8fff0cbd030936226424edeafb128dfa", null ]
+    [ "nt::ValueEventData", "classnt_1_1_value_event_data.html", [
+      [ "ValueEventData", "classnt_1_1_value_event_data.html#a485f056385e8331b2bfbc1253de600e4", null ],
+      [ "ValueEventData", "classnt_1_1_value_event_data.html#a7d4f786e0de3045f26a9d8b8729ca826", null ],
+      [ "subentry", "classnt_1_1_value_event_data.html#a44cd2e2834083a24520e3da5e8944c66", null ],
+      [ "topic", "classnt_1_1_value_event_data.html#a9703b2075fe0f7ae0a595439ee924040", null ],
+      [ "value", "classnt_1_1_value_event_data.html#adeb14d6334f4fd3ca54738c983aa9373", null ]
     ] ],
     [ "nt::LogMessage", "classnt_1_1_log_message.html", [
       [ "LogMessage", "classnt_1_1_log_message.html#a80edb2b75f1924d7c68e9fd0efd10c78", null ],
-      [ "LogMessage", "classnt_1_1_log_message.html#a02a5ee12a0259395bdbd03e1a07b129a", null ],
-      [ "swap", "classnt_1_1_log_message.html#a796eccb62d616bbb66106f3cc62bd843", null ],
+      [ "LogMessage", "classnt_1_1_log_message.html#a87a1b9973c99729ff41cb23973d5ff32", null ],
       [ "filename", "classnt_1_1_log_message.html#afef337ab85256e7e83e6cc17c325c3c2", null ],
       [ "level", "classnt_1_1_log_message.html#a8ab3099aaa618a873dbbd1e7bb6b7be2", null ],
       [ "line", "classnt_1_1_log_message.html#a2c13ded725b69ba9de32078807712685", null ],
-      [ "logger", "classnt_1_1_log_message.html#ac4884dfa6ea7878728496ff7bbd4a121", null ],
       [ "message", "classnt_1_1_log_message.html#ac96f427a1107c0f4076f549c06ebb40b", null ]
+    ] ],
+    [ "nt::Event", "classnt_1_1_event.html", [
+      [ "Event", "classnt_1_1_event.html#a9c33b5b91badc09fb3621ff607608aa5", null ],
+      [ "Event", "classnt_1_1_event.html#a1dcdb2b50d5b521bbe89ddc577726b19", null ],
+      [ "Event", "classnt_1_1_event.html#a9dd43306c683dbdac090e93b1a3923d3", null ],
+      [ "Event", "classnt_1_1_event.html#a14322adc39c0013effa546c14e5c51c6", null ],
+      [ "Event", "classnt_1_1_event.html#afe1417affd3342d215d1ce6a0419eed4", null ],
+      [ "Event", "classnt_1_1_event.html#a55ff037fa56e6cc217d74ebbd0a04ab2", null ],
+      [ "Event", "classnt_1_1_event.html#a4d6d951b78ffd87d0deb0b410a3d16a4", null ],
+      [ "GetConnectionInfo", "classnt_1_1_event.html#a90cd078aaf214b6da051fb50131ecc4c", null ],
+      [ "GetConnectionInfo", "classnt_1_1_event.html#a88fd189c0ade0d3d77c51f97ba98dc3c", null ],
+      [ "GetLogMessage", "classnt_1_1_event.html#a41d1783f7f2d69b6f94191849d66fae4", null ],
+      [ "GetLogMessage", "classnt_1_1_event.html#a20397683b2203d08fa65be65b68700f5", null ],
+      [ "GetTopicInfo", "classnt_1_1_event.html#a285d2d2dfccab19afbdfee206383e462", null ],
+      [ "GetTopicInfo", "classnt_1_1_event.html#aff68a7d4f11d778e8f0bf380feddcd24", null ],
+      [ "GetValueEventData", "classnt_1_1_event.html#a312c65066c87fa3bd970c64a12a65b9c", null ],
+      [ "GetValueEventData", "classnt_1_1_event.html#a3b5705edf5b6c720b85b085058422faf", null ],
+      [ "data", "classnt_1_1_event.html#ad76e5d17105bff597308286b3004970a", null ],
+      [ "flags", "classnt_1_1_event.html#a86015080f81891cfa501965daddf1f61", null ],
+      [ "listener", "classnt_1_1_event.html#ad801d97e05bb90c0d9b3c7815b786db7", null ]
     ] ],
     [ "nt::PubSubOption", "classnt_1_1_pub_sub_option.html", [
       [ "PubSubOption", "classnt_1_1_pub_sub_option.html#a06304126472ec0a0ac9d5b961ad07818", null ],

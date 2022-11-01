@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -118,34 +118,27 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a499b6628367088bace380e72e8dc58c4"><td class="memTemplParams" colspan="2">template&lt;typename JointType &gt; </td></tr>
 <tr class="memitem:a499b6628367088bace380e72e8dc58c4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a499b6628367088bace380e72e8dc58c4">joint_array</a> (std::size_t <a class="el" href="classwpi_1_1memory_1_1joint__array.html#a8ecd1f1332587d8a446329877d9b83c8">size</a>, <a class="el" href="classwpi_1_1memory_1_1joint__type.html">joint_type</a>&lt; JointType &gt; &amp;j)</td></tr>
-<tr class="memdesc:a499b6628367088bace380e72e8dc58c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates with <code>size</code> default-constructed objects using the specified joint memory.  <a href="classwpi_1_1memory_1_1joint__array.html#a499b6628367088bace380e72e8dc58c4">More...</a><br /></td></tr>
 <tr class="separator:a499b6628367088bace380e72e8dc58c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ef95a054477d1be0b11ead0b4a945b3"><td class="memTemplParams" colspan="2">template&lt;typename JointType &gt; </td></tr>
 <tr class="memitem:a8ef95a054477d1be0b11ead0b4a945b3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a8ef95a054477d1be0b11ead0b4a945b3">joint_array</a> (std::size_t <a class="el" href="classwpi_1_1memory_1_1joint__array.html#a8ecd1f1332587d8a446329877d9b83c8">size</a>, const <a class="el" href="classwpi_1_1memory_1_1joint__array.html#a5df75951fadf7ce9ceab9500b9d65004">value_type</a> &amp;val, <a class="el" href="classwpi_1_1memory_1_1joint__type.html">joint_type</a>&lt; JointType &gt; &amp;j)</td></tr>
-<tr class="memdesc:a8ef95a054477d1be0b11ead0b4a945b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates with <code>size</code> copies of <code>val</code> using the specified joint memory.  <a href="classwpi_1_1memory_1_1joint__array.html#a8ef95a054477d1be0b11ead0b4a945b3">More...</a><br /></td></tr>
 <tr class="separator:a8ef95a054477d1be0b11ead0b4a945b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc5cb5421b7abd431a4b6b0134301a38"><td class="memTemplParams" colspan="2">template&lt;typename JointType &gt; </td></tr>
 <tr class="memitem:abc5cb5421b7abd431a4b6b0134301a38"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#abc5cb5421b7abd431a4b6b0134301a38">joint_array</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1memory_1_1joint__array.html#a5df75951fadf7ce9ceab9500b9d65004">value_type</a> &gt; ilist, <a class="el" href="classwpi_1_1memory_1_1joint__type.html">joint_type</a>&lt; JointType &gt; &amp;j)</td></tr>
-<tr class="memdesc:abc5cb5421b7abd431a4b6b0134301a38"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates with the copies of the objects in the initializer list using the specified joint memory.  <a href="classwpi_1_1memory_1_1joint__array.html#abc5cb5421b7abd431a4b6b0134301a38">More...</a><br /></td></tr>
 <tr class="separator:abc5cb5421b7abd431a4b6b0134301a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2da78abadf809af10916dc62030a4d5"><td class="memTemplParams" colspan="2">template&lt;typename InIter , typename JointType , typename  = decltype(*std::declval&lt;InIter&amp;&gt;()++)&gt; </td></tr>
 <tr class="memitem:ad2da78abadf809af10916dc62030a4d5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#ad2da78abadf809af10916dc62030a4d5">joint_array</a> (InIter <a class="el" href="classwpi_1_1memory_1_1joint__array.html#af1a90b334ffef842a082510ee9834da7">begin</a>, InIter <a class="el" href="classwpi_1_1memory_1_1joint__array.html#a21e1035785461babf5dd31da71cb0158">end</a>, <a class="el" href="classwpi_1_1memory_1_1joint__type.html">joint_type</a>&lt; JointType &gt; &amp;j)</td></tr>
-<tr class="memdesc:ad2da78abadf809af10916dc62030a4d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by forwarding each element of the range to <code>T</code>s constructor using the specified joint memory.  <a href="classwpi_1_1memory_1_1joint__array.html#ad2da78abadf809af10916dc62030a4d5">More...</a><br /></td></tr>
 <tr class="separator:ad2da78abadf809af10916dc62030a4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5643ecce4291b31b58914f6763c4232d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a5643ecce4291b31b58914f6763c4232d">joint_array</a> (const <a class="el" href="classwpi_1_1memory_1_1joint__array.html">joint_array</a> &amp;)=delete</td></tr>
 <tr class="separator:a5643ecce4291b31b58914f6763c4232d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e3190d61b7940031358ac83108d384a"><td class="memTemplParams" colspan="2">template&lt;typename JointType &gt; </td></tr>
 <tr class="memitem:a3e3190d61b7940031358ac83108d384a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a3e3190d61b7940031358ac83108d384a">joint_array</a> (const <a class="el" href="classwpi_1_1memory_1_1joint__array.html">joint_array</a> &amp;other, <a class="el" href="classwpi_1_1memory_1_1joint__type.html">joint_type</a>&lt; JointType &gt; &amp;j)</td></tr>
-<tr class="memdesc:a3e3190d61b7940031358ac83108d384a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Copy constructs each element from <code>other</code> into the storage of the specified joint memory.  <a href="classwpi_1_1memory_1_1joint__array.html#a3e3190d61b7940031358ac83108d384a">More...</a><br /></td></tr>
 <tr class="separator:a3e3190d61b7940031358ac83108d384a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83434c3c1896b31fc3ce83b4a4597d74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a83434c3c1896b31fc3ce83b4a4597d74">joint_array</a> (<a class="el" href="classwpi_1_1memory_1_1joint__array.html">joint_array</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a83434c3c1896b31fc3ce83b4a4597d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0078ae962942c858d7285f945a21f105"><td class="memTemplParams" colspan="2">template&lt;typename JointType &gt; </td></tr>
 <tr class="memitem:a0078ae962942c858d7285f945a21f105"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a0078ae962942c858d7285f945a21f105">joint_array</a> (<a class="el" href="classwpi_1_1memory_1_1joint__array.html">joint_array</a> &amp;&amp;other, <a class="el" href="classwpi_1_1memory_1_1joint__type.html">joint_type</a>&lt; JointType &gt; &amp;j)</td></tr>
-<tr class="memdesc:a0078ae962942c858d7285f945a21f105"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Move constructs each element from <code>other</code> into the storage of the specified joint memory.  <a href="classwpi_1_1memory_1_1joint__array.html#a0078ae962942c858d7285f945a21f105">More...</a><br /></td></tr>
 <tr class="separator:a0078ae962942c858d7285f945a21f105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32d39fb27357d89f464844c6600ddb1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a32d39fb27357d89f464844c6600ddb1d">~joint_array</a> () noexcept</td></tr>
-<tr class="memdesc:a32d39fb27357d89f464844c6600ddb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Destroys all objects, but does not release the storage.  <a href="classwpi_1_1memory_1_1joint__array.html#a32d39fb27357d89f464844c6600ddb1d">More...</a><br /></td></tr>
 <tr class="separator:a32d39fb27357d89f464844c6600ddb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2095dd824b47977313e5125b4457a223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1joint__array.html">joint_array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1joint__array.html#a2095dd824b47977313e5125b4457a223">operator=</a> (const <a class="el" href="classwpi_1_1memory_1_1joint__array.html">joint_array</a> &amp;)=delete</td></tr>
 <tr class="separator:a2095dd824b47977313e5125b4457a223"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,8 +261,7 @@ template&lt;typename JointType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates with <code>size</code> default-constructed objects using the specified joint memory. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates with <code>size</code> default-constructed objects using the specified joint memory. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
@@ -323,8 +315,7 @@ template&lt;typename JointType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates with <code>size</code> copies of <code>val</code> using the specified joint memory. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates with <code>size</code> copies of <code>val</code> using the specified joint memory. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
@@ -372,8 +363,7 @@ template&lt;typename JointType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates with the copies of the objects in the initializer list using the specified joint memory. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates with the copies of the objects in the initializer list using the specified joint memory. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
@@ -427,8 +417,7 @@ template&lt;typename InIter , typename JointType , typename  = decltype(*std::de
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by forwarding each element of the range to <code>T</code>s constructor using the specified joint memory. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by forwarding each element of the range to <code>T</code>s constructor using the specified joint memory. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
@@ -504,8 +493,7 @@ template&lt;typename JointType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Copy constructs each element from <code>other</code> into the storage of the specified joint memory. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Copy constructs each element from <code>other</code> into the storage of the specified joint memory. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
@@ -581,8 +569,7 @@ template&lt;typename JointType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Move constructs each element from <code>other</code> into the storage of the specified joint memory. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Move constructs each element from <code>other</code> into the storage of the specified joint memory. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"></td><td></td></tr>
@@ -617,8 +604,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Destroys all objects, but does not release the storage. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Destroys all objects, but does not release the storage. </dd></dl>
 
 </div>
 </div>
@@ -966,7 +952,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1joint__array.html">joint_array</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

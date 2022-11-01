@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -187,18 +187,18 @@ $(document).ready(function(){initNavTree('_angle_statistics_8h_source.html','');
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                          <span class="keyword">const</span> <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;2 * States + 1&gt;</a>&amp; Wm,</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                          <span class="keywordtype">int</span> angleStatesIdx) {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">double</span> sumSin = (sigmas.row(angleStatesIdx).unaryExpr([](<span class="keyword">auto</span> it) {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">std::sin</a>(it);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>(it);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                  }) *</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                   Wm)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                      .sum();</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">double</span> sumCos = (sigmas.row(angleStatesIdx).unaryExpr([](<span class="keyword">auto</span> it) {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">std::cos</a>(it);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>(it);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                  }) *</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                   Wm)</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                      .sum();</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_typedef" href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">Vectord&lt;CovDim&gt;</a> ret = sigmas * Wm;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  ret[angleStatesIdx] = <a class="code hl_function" href="group___unit_math.html#ga845823260245af2abc83d2cf47f6e74b">std::atan2</a>(sumSin, sumCos);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  ret[angleStatesIdx] = <a class="code hl_function" href="atan2_8hpp.html#a66199decb724ccba6f6a39b4182b25c0">std::atan2</a>(sumSin, sumCos);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"></span> </div>
@@ -221,13 +221,13 @@ $(document).ready(function(){initNavTree('_angle_statistics_8h_source.html','');
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}  <span class="comment">// namespace frc</span></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a92b03396990b0e9eea0731aa406e31a4"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a92b03396990b0e9eea0731aa406e31a4">cos</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const CosReturnType cos() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:237</div></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a9cfb0ea58bd813510a9e2db18a5e49f0"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a9cfb0ea58bd813510a9e2db18a5e49f0">sin</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SinReturnType sin() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:255</div></div>
 <div class="ttc" id="a_eigen_core_8h_html"><div class="ttname"><a href="_eigen_core_8h.html">EigenCore.h</a></div></div>
 <div class="ttc" id="a_math_util_8h_html"><div class="ttname"><a href="_math_util_8h.html">MathUtil.h</a></div></div>
+<div class="ttc" id="aatan2_8hpp_html_a66199decb724ccba6f6a39b4182b25c0"><div class="ttname"><a href="atan2_8hpp.html#a66199decb724ccba6f6a39b4182b25c0">atan2</a></div><div class="ttdeci">constexpr common_return_t&lt; T1, T2 &gt; atan2(const T1 y, const T2 x) noexcept</div><div class="ttdoc">Compile-time two-argument arctangent function.</div><div class="ttdef"><b>Definition:</b> atan2.hpp:82</div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1240</div></div>
-<div class="ttc" id="agroup___unit_math_html_ga845823260245af2abc83d2cf47f6e74b"><div class="ttname"><a href="group___unit_math.html#ga845823260245af2abc83d2cf47f6e74b">units::math::atan2</a></div><div class="ttdeci">angle::radian_t atan2(const Y y, const X x) noexcept</div><div class="ttdoc">Compute arc tangent with two parameters.</div><div class="ttdef"><b>Definition:</b> math.h:179</div></div>
+<div class="ttc" id="agroup___unit_math_html_gac2aeac09538ac3f95fff947c12522faa"><div class="ttname"><a href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">units::math::cos</a></div><div class="ttdeci">dimensionless::scalar_t cos(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute cosine.</div><div class="ttdef"><b>Definition:</b> math.h:61</div></div>
+<div class="ttc" id="agroup___unit_math_html_gaf0a50351f8f51550d00e9831b60e1850"><div class="ttname"><a href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">units::math::sin</a></div><div class="ttdeci">dimensionless::scalar_t sin(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute sine.</div><div class="ttdef"><b>Definition:</b> math.h:81</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
 <div class="ttc" id="anamespacefrc_html_a10937b90d6bc6f2d2d8a5aee156f1e57"><div class="ttname"><a href="namespacefrc.html#a10937b90d6bc6f2d2d8a5aee156f1e57">frc::AngleAdd</a></div><div class="ttdeci">Vectord&lt; States &gt; AngleAdd(const Vectord&lt; States &gt; &amp;a, const Vectord&lt; States &gt; &amp;b, int angleStateIdx)</div><div class="ttdoc">Adds a and b while normalizing the resulting value in the selected row as an angle.</div><div class="ttdef"><b>Definition:</b> AngleStatistics.h:57</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('_angle_statistics_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_angle_statistics_8h.html">AngleStatistics.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

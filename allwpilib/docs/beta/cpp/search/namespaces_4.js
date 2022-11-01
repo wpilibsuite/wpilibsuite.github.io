@@ -1,13 +1,14 @@
 var searchData=
 [
-  ['detail_0',['detail',['../namespacefrc_1_1detail.html',1,'frc']]],
-  ['err_1',['err',['../namespacefrc_1_1err.html',1,'frc']]],
-  ['filesystem_2',['filesystem',['../namespacefrc_1_1filesystem.html',1,'frc']]],
-  ['frc_3',['frc',['../namespacefrc.html',1,'']]],
-  ['frc2_4',['frc2',['../namespacefrc2.html',1,'']]],
-  ['fs_5',['fs',['../namespacefs.html',1,'']]],
-  ['impl_6',['impl',['../namespacefrc_1_1impl.html',1,'frc']]],
-  ['internal_7',['internal',['../namespacefrc_1_1internal.html',1,'frc']]],
-  ['sim_8',['sim',['../namespacefrc_1_1sim.html',1,'frc']]],
-  ['warn_9',['warn',['../namespacefrc_1_1warn.html',1,'frc']]]
+  ['cmd_0',['cmd',['../namespacefrc2_1_1cmd.html',1,'frc2']]],
+  ['detail_1',['detail',['../namespacefrc_1_1detail.html',1,'frc']]],
+  ['err_2',['err',['../namespacefrc_1_1err.html',1,'frc']]],
+  ['filesystem_3',['filesystem',['../namespacefrc_1_1filesystem.html',1,'frc']]],
+  ['frc_4',['frc',['../namespacefrc.html',1,'']]],
+  ['frc2_5',['frc2',['../namespacefrc2.html',1,'']]],
+  ['fs_6',['fs',['../namespacefs.html',1,'']]],
+  ['impl_7',['impl',['../namespacefrc_1_1impl.html',1,'frc']]],
+  ['internal_8',['internal',['../namespacefrc_1_1internal.html',1,'frc']]],
+  ['sim_9',['sim',['../namespacefrc_1_1sim.html',1,'frc']]],
+  ['warn_10',['warn',['../namespacefrc_1_1warn.html',1,'frc']]]
 ];

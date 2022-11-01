@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -121,10 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4a76eabadbaa84954ad36c4ab83a49b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">It will not store anything, only creates the allocator as needed.  <a href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html#a4a76eabadbaa84954ad36c4ab83a49b4">More...</a><br /></td></tr>
 <tr class="separator:a4a76eabadbaa84954ad36c4ab83a49b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81997159b3300d492d88473ddf99b6f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html#a81997159b3300d492d88473ddf99b6f0">reference_storage</a> (const <a class="el" href="config_8hpp.html#ad9ce7c7a9b4f995a3af52e594bc43e8d">WPI_IMPL_DEFINED</a>(base_allocator) &amp;alloc) noexcept</td></tr>
-<tr class="memdesc:a81997159b3300d492d88473ddf99b6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it from the internal base class for the type-erasure.  <a href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html#a81997159b3300d492d88473ddf99b6f0">More...</a><br /></td></tr>
 <tr class="separator:a81997159b3300d492d88473ddf99b6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd21dda1520e1d33098c317858d0ea5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html#a9cd21dda1520e1d33098c317858d0ea5">reference_storage</a> (<a class="el" href="config_8hpp.html#ad9ce7c7a9b4f995a3af52e594bc43e8d">WPI_IMPL_DEFINED</a>(base_allocator) &amp;alloc) noexcept</td></tr>
-<tr class="memdesc:a9cd21dda1520e1d33098c317858d0ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it from the internal base class for the type-erasure.  <a href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html#a9cd21dda1520e1d33098c317858d0ea5">More...</a><br /></td></tr>
 <tr class="separator:a9cd21dda1520e1d33098c317858d0ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7dd5f2d8525d1e49a2e87014d1c262"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html#ad9004a383427e3d3c685a1733a8223df">allocator_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html#a2e7dd5f2d8525d1e49a2e87014d1c262">get_allocator</a> () const noexcept</td></tr>
 <tr class="separator:a2e7dd5f2d8525d1e49a2e87014d1c262"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,9 +250,8 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it from the internal base class for the type-erasure. </p>
-<p >Has the same effect as if the actual stored allocator were passed to the other constructor overloads. </p><dl class="section note"><dt>Note</dt><dd>This constructor is used internally to avoid double-nesting. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it from the internal base class for the type-erasure. Has the same effect as if the actual stored allocator were passed to the other constructor overloads. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This constructor is used internally to avoid double-nesting. </dd></dl>
 
 </div>
 </div>
@@ -281,9 +278,8 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it from the internal base class for the type-erasure. </p>
-<p >Has the same effect as if the actual stored allocator were passed to the other constructor overloads. </p><dl class="section note"><dt>Note</dt><dd>This constructor is used internally to avoid double-nesting. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it from the internal base class for the type-erasure. Has the same effect as if the actual stored allocator were passed to the other constructor overloads. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This constructor is used internally to avoid double-nesting. </dd></dl>
 
 </div>
 </div>
@@ -310,7 +306,7 @@ template&lt;class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Copies the <code><a class="el" href="classwpi_1_1memory_1_1reference__storage.html">reference_storage</a></code> object. It only copies the pointer to the allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Copies the <code><a class="el" href="classwpi_1_1memory_1_1reference__storage.html">reference_storage</a></code> object. It only copies the pointer to the allocator. </dd></dl>
 
 </div>
 </div>
@@ -425,7 +421,7 @@ template&lt;class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1reference__storage_3_01any__allocator_01_4.html">reference_storage&lt; any_allocator &gt;</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

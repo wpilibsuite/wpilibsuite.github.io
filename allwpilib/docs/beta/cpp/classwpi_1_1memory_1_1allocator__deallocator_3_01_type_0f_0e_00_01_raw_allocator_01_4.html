@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -120,13 +120,10 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a747f60205276d7c2e49010f3d7c55e33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#a747f60205276d7c2e49010f3d7c55e33">allocator_deallocator</a> () noexcept</td></tr>
-<tr class="memdesc:a747f60205276d7c2e49010f3d7c55e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it without any associated allocator.  <a href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#a747f60205276d7c2e49010f3d7c55e33">More...</a><br /></td></tr>
 <tr class="separator:a747f60205276d7c2e49010f3d7c55e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3fc6d797e0c91d6eda3cadb85522ff5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#ae3fc6d797e0c91d6eda3cadb85522ff5">allocator_deallocator</a> (allocator_reference&lt; RawAllocator &gt; alloc, std::size_t size) noexcept</td></tr>
-<tr class="memdesc:ae3fc6d797e0c91d6eda3cadb85522ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it an allocator_reference and the size of the array that will be deallocated.  <a href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#ae3fc6d797e0c91d6eda3cadb85522ff5">More...</a><br /></td></tr>
 <tr class="separator:ae3fc6d797e0c91d6eda3cadb85522ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a023166446a0ef66cdebcb3554a8a4c4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#a023166446a0ef66cdebcb3554a8a4c4a">operator()</a> (<a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#a32ff7267ef649ec50959c2dee6749e2a">value_type</a> *pointer) noexcept</td></tr>
-<tr class="memdesc:a023166446a0ef66cdebcb3554a8a4c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates the memory given to it.  <a href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#a023166446a0ef66cdebcb3554a8a4c4a">More...</a><br /></td></tr>
 <tr class="separator:a023166446a0ef66cdebcb3554a8a4c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb59b0e7d11199e879725c83361f1405"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#afb59b0e7d11199e879725c83361f1405">get_allocator</a> () const noexcept -&gt; decltype(std::declval&lt; allocator_reference&lt; <a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html#ae612352d360faf0e09017791f3cef936">allocator_type</a> &gt; &gt;().get_allocator())</td></tr>
 <tr class="separator:afb59b0e7d11199e879725c83361f1405"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,9 +192,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it without any associated allocator. </p>
-<p >The deallocator must not be used if that is the case. \notes This functions is useful if you have want to create an empty smart pointer without giving it an allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it without any associated allocator. The deallocator must not be used if that is the case. \notes This functions is useful if you have want to create an empty smart pointer without giving it an allocator. </dd></dl>
 
 </div>
 </div>
@@ -236,9 +231,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it an allocator_reference and the size of the array that will be deallocated. </p>
-<p >It will store the reference to the allocator and uses the referenced allocator object for the deallocation. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it an allocator_reference and the size of the array that will be deallocated. It will store the reference to the allocator and uses the referenced allocator object for the deallocation. </dd></dl>
 
 </div>
 </div>
@@ -325,9 +318,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates the memory given to it. </p>
-<p >Calls <code>deallocate_array</code>(pointer, size, sizeof(value_type), alignof(value_type)) on the referenced allocator object with the size given in the constructor. \requires The deallocator must not have been created by the default constructor. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates the memory given to it. Calls <code>deallocate_array</code>(pointer, size, sizeof(value_type), alignof(value_type)) on the referenced allocator object with the size given in the constructor. \requires The deallocator must not have been created by the default constructor. </dd></dl>
 
 </div>
 </div>
@@ -340,7 +331,7 @@ template&lt;typename Type , class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1allocator__deallocator_3_01_type_0f_0e_00_01_raw_allocator_01_4.html">allocator_deallocator&lt; Type[], RawAllocator &gt;</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

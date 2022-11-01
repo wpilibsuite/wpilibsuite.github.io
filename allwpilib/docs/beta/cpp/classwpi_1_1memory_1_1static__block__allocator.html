@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -105,15 +105,12 @@ $(document).ready(function(){initNavTree('classwpi_1_1memory_1_1static__block__a
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a762f59da84509f93c3c023dae9f51151"><td class="memTemplParams" colspan="2">template&lt;std::size_t Size&gt; </td></tr>
 <tr class="memitem:a762f59da84509f93c3c023dae9f51151"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#a762f59da84509f93c3c023dae9f51151">static_block_allocator</a> (std::size_t block_size, <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a>&lt; Size &gt; &amp;storage) noexcept</td></tr>
-<tr class="memdesc:a762f59da84509f93c3c023dae9f51151"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it the block size and a <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> by reference.  <a href="classwpi_1_1memory_1_1static__block__allocator.html#a762f59da84509f93c3c023dae9f51151">More...</a><br /></td></tr>
 <tr class="separator:a762f59da84509f93c3c023dae9f51151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca3f660abd0728aa73c228b956f46a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#a2ca3f660abd0728aa73c228b956f46a2">~static_block_allocator</a> () noexcept=default</td></tr>
 <tr class="separator:a2ca3f660abd0728aa73c228b956f46a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1b4aa1827b667a3463788605d1272d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#ae1b4aa1827b667a3463788605d1272d1">allocate_block</a> ()</td></tr>
-<tr class="memdesc:ae1b4aa1827b667a3463788605d1272d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Allocates a new block by returning the <a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#aff87883a7ec8f2b285f4a4c62e521302">next_block_size()</a> bytes.  <a href="classwpi_1_1memory_1_1static__block__allocator.html#ae1b4aa1827b667a3463788605d1272d1">More...</a><br /></td></tr>
 <tr class="separator:ae1b4aa1827b667a3463788605d1272d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a44115277a8d77678239b6c32e38ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#a99a44115277a8d77678239b6c32e38ec">deallocate_block</a> (<a class="el" href="structwpi_1_1memory_1_1memory__block.html">memory_block</a> block) noexcept</td></tr>
-<tr class="memdesc:a99a44115277a8d77678239b6c32e38ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Deallocates the last memory block by marking the block as free again.  <a href="classwpi_1_1memory_1_1static__block__allocator.html#a99a44115277a8d77678239b6c32e38ec">More...</a><br /></td></tr>
 <tr class="separator:a99a44115277a8d77678239b6c32e38ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff87883a7ec8f2b285f4a4c62e521302"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#aff87883a7ec8f2b285f4a4c62e521302">next_block_size</a> () const noexcept</td></tr>
 <tr class="separator:aff87883a7ec8f2b285f4a4c62e521302"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,7 +123,6 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a64f8c7ec0587836b16ec1f1a3441196b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#a64f8c7ec0587836b16ec1f1a3441196b">swap</a> (<a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html">static_block_allocator</a> &amp;a, <a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html">static_block_allocator</a> &amp;b) noexcept</td></tr>
-<tr class="memdesc:a64f8c7ec0587836b16ec1f1a3441196b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Swaps the ownership over the <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a>.  <a href="classwpi_1_1memory_1_1static__block__allocator.html#a64f8c7ec0587836b16ec1f1a3441196b">More...</a><br /></td></tr>
 <tr class="separator:a64f8c7ec0587836b16ec1f1a3441196b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -165,9 +161,7 @@ template&lt;std::size_t Size&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it the block size and a <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> by reference. </p>
-<p >It will take the address of the storage and use it to allocate <code>block_size'd</code> blocks. \requires The storage object must live as long as the allocator object. It must not be shared between multiple allocators, i.e. the object must not have been passed to a constructor before. The size of the <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> must be a multiple of the (non-null) block size. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it the block size and a <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> by reference. It will take the address of the storage and use it to allocate <code>block_size'd</code> blocks. \requires The storage object must live as long as the allocator object. It must not be shared between multiple allocators, i.e. the object must not have been passed to a constructor before. The size of the <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> must be a multiple of the (non-null) block size. </dd></dl>
 
 </div>
 </div>
@@ -219,7 +213,7 @@ template&lt;std::size_t Size&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Moves the block allocator, it transfers ownership over the <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a>. This does not invalidate any memory blocks. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Moves the block allocator, it transfers ownership over the <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a>. This does not invalidate any memory blocks. </dd></dl>
 
 </div>
 </div>
@@ -238,8 +232,7 @@ template&lt;std::size_t Size&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>\effects Allocates a new block by returning the <a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#aff87883a7ec8f2b285f4a4c62e521302">next_block_size()</a> bytes. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates a new block by returning the <a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#aff87883a7ec8f2b285f4a4c62e521302">next_block_size()</a> bytes. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The new memory block. </dd></dl>
 
 </div>
@@ -267,9 +260,7 @@ template&lt;std::size_t Size&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Deallocates the last memory block by marking the block as free again. </p>
-<p >This block will be returned again by the next call to <a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#ae1b4aa1827b667a3463788605d1272d1">allocate_block()</a>. \requires <code>block</code> must be the current top block of the memory, this is guaranteed by <a class="el" href="classwpi_1_1memory_1_1memory__arena.html">memory_arena</a>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Deallocates the last memory block by marking the block as free again. This block will be returned again by the next call to <a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html#ae1b4aa1827b667a3463788605d1272d1">allocate_block()</a>. \requires <code>block</code> must be the current top block of the memory, this is guaranteed by <a class="el" href="classwpi_1_1memory_1_1memory__arena.html">memory_arena</a>. </dd></dl>
 
 </div>
 </div>
@@ -359,9 +350,7 @@ template&lt;std::size_t Size&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Swaps the ownership over the <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a>. </p>
-<p >This does not invalidate any memory blocks. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Swaps the ownership over the <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a>. This does not invalidate any memory blocks. </dd></dl>
 
 </div>
 </div>
@@ -374,7 +363,7 @@ template&lt;std::size_t Size&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1static__block__allocator.html">static_block_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

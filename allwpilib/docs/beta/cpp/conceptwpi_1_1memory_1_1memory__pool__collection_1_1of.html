@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -95,28 +95,28 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool__
 </div><!--header-->
 <div class="contents">
 
-<p>\effects Allocates a given size.  
+<p>given size suitable aligned, i.e.  
 <a href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1of.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="memory__pool__collection_8hpp_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/memory/include/wpi/memory/memory_pool_collection.hpp</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1of.html">wpi::memory::memory_pool_collection::of</a> = </div>
-<div class="ttc" id="aconceptwpi_1_1memory_1_1memory__pool__collection_1_1of_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1of.html">of</a></div><div class="ttdoc">\effects Allocates a given size.</div></div>
+<div class="ttc" id="aconceptwpi_1_1memory_1_1memory__pool__collection_1_1of_html"><div class="ttname"><a href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1of.html">of</a></div><div class="ttdoc">given size suitable aligned, i.e.</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >\effects Allocates a given size. </p>
-<p >\effects Allocates an nodes by searching for <code>n</code> continuous nodes on the appropriate free list and removing them.</p>
+<div class="textblock"><p >given size suitable aligned, i.e. </p>
 <p >given size suitable aligned or <code>nullptr</code> in case of failure.</p>
-<p >given size suitable aligned, i.e.</p>
-<p >It first finds the appropriate free list as defined in the <code>BucketDistribution</code>. If it is empty, it will use an implementation defined amount of memory from the arena and inserts it in it. If the arena is empty too, it will request a new memory block from the</p>
-<p >suitable for any type where <code>sizeof(T) &lt; node_size</code>. </p><dl class="exception"><dt>Exceptions</dt><dd>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates a given size. It first finds the appropriate free list as defined in the <code>BucketDistribution</code>. If it is empty, it will use an implementation defined amount of memory from the arena and inserts it in it. If the arena is empty too, it will request a new memory block from the</dd></dl>
+<p>suitable for any type where <code>sizeof(T) &lt; node_size</code>. </p><dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">Anything</td><td>thrown by the</td></tr>
   </table>
   </dd>
 </dl>
-<p>It is similar to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a1676c071165f2f13143866094878629b">allocate_node()</a> but will return <code>nullptr</code> on any failure, instead of growing the arnea and possibly throwing. </p><dl class="section return"><dt>Returns</dt><dd>A</dd></dl>
-<p>Depending on the <code>PoolType</code> this can be a slow operation or not allowed at all. This can sometimes lead to a growth on the free list, even if technically there is enough continuous memory on the free list. Otherwise has the same behavior as <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a1676c071165f2f13143866094878629b">allocate_node()</a>. </p><dl class="section return"><dt>Returns</dt><dd>An array of <code>n</code> nodes of size <code>node_size</code> suitable aligned. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates a given size. It is similar to <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a1676c071165f2f13143866094878629b">allocate_node()</a> but will return <code>nullptr</code> on any failure, instead of growing the arnea and possibly throwing. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A</dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Allocates an nodes by searching for <code>n</code> continuous nodes on the appropriate free list and removing them. Depending on the <code>PoolType</code> this can be a slow operation or not allowed at all. This can sometimes lead to a growth on the free list, even if technically there is enough continuous memory on the free list. Otherwise has the same behavior as <a class="el" href="namespacewpi_1_1memory_1_1traits__detail.html#a1676c071165f2f13143866094878629b">allocate_node()</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An array of <code>n</code> nodes of size <code>node_size</code> suitable aligned. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">Anything</td><td>thrown by the used </td></tr>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('conceptwpi_1_1memory_1_1memory__pool__
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="conceptwpi_1_1memory_1_1memory__pool__collection_1_1of.html">of</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

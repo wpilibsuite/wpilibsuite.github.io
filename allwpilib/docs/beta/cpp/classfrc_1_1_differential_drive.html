@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -287,7 +287,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"> </div>
 <div class="line">  <a class="code hl_class" href="classfrc_1_1_differential_drive.html">frc::DifferentialDrive</a> m_drive{m_left, m_right};</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassfrc_1_1_differential_drive_html"><div class="ttname"><a href="classfrc_1_1_differential_drive.html">frc::DifferentialDrive</a></div><div class="ttdoc">A class for driving differential drive/skid-steer drive platforms such as the Kit of Parts drive base...</div><div class="ttdef"><b>Definition:</b> DifferentialDrive.h:94</div></div>
+<div class="ttc" id="aclassfrc_1_1_differential_drive_html"><div class="ttname"><a href="classfrc_1_1_differential_drive.html">frc::DifferentialDrive</a></div><div class="ttdoc">A class for driving differential drive/skid-steer drive platforms such as the Kit of Parts drive base...</div><div class="ttdef"><b>Definition:</b> DifferentialDrive.h:92</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_controller_group_html"><div class="ttname"><a href="classfrc_1_1_motor_controller_group.html">frc::MotorControllerGroup</a></div><div class="ttdoc">Allows multiple MotorController objects to be linked together.</div><div class="ttdef"><b>Definition:</b> MotorControllerGroup.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_w_m_victor_s_p_x_html"><div class="ttname"><a href="classfrc_1_1_p_w_m_victor_s_p_x.html">frc::PWMVictorSPX</a></div><div class="ttdoc">Cross the Road Electronics (CTRE) Victor SPX Motor Controller with PWM control.</div><div class="ttdef"><b>Definition:</b> PWMVictorSPX.h:28</div></div>
 </div><!-- fragment --><p >Six motor drivetrain: </p><div class="fragment"><div class="line"><span class="keyword">class </span>Robot {</div>
@@ -312,8 +312,7 @@ Additional Inherited Members</h2></td></tr>
 |_|___|_|
 |       |
 </pre><p >Each drive function provides different inverse kinematic relations for a differential drive robot.</p>
-<p >This library uses the NED axes convention (North-East-Down as external reference in the world frame): <a href="http://www.nuclearprojects.com/ins/images/axis_big.png">http://www.nuclearprojects.com/ins/images/axis_big.png</a>.</p>
-<p >The positive X axis points ahead, the positive Y axis points to the right, and the positive Z axis points down. Rotations follow the right-hand rule, so clockwise rotation around the Z axis is positive.</p>
+<p >This library uses the NWU axes convention (North-West-Up as external reference in the world frame). The positive X axis points ahead, the positive Y axis points to the left, and the positive Z axis points up. Rotations follow the right-hand rule, so counterclockwise rotation around the Z axis is positive.</p>
 <p >Inputs smaller then 0.02 will be set to 0, and larger values will be scaled so that the full range is still used. This deadband value can be changed with <a class="el" href="classfrc_1_1_robot_drive_base.html#a66ca9d336c81659405045bf064490cfe" title="Sets the deadband applied to the drive inputs (e.g., joystick values).">SetDeadband()</a>.</p>
 <p ><a class="el" href="classfrc_1_1_motor_safety.html" title="The Motor Safety feature acts as a watchdog timer for an individual motor.">MotorSafety</a> is enabled by default. The tankDrive, arcadeDrive, or curvatureDrive methods should be called periodically to avoid Motor Safety timeouts. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -437,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">xSpeed</td><td>The speed at which the robot should drive along the X axis [-1.0..1.0]. Forward is positive. </td></tr>
-    <tr><td class="paramname">zRotation</td><td>The rotation rate of the robot around the Z axis [-1.0..1.0]. Clockwise is positive. </td></tr>
+    <tr><td class="paramname">zRotation</td><td>The rotation rate of the robot around the Z axis [-1.0..1.0]. Counterclockwise is positive. </td></tr>
     <tr><td class="paramname">squareInputs</td><td>If set, decreases the input sensitivity at low speeds. </td></tr>
   </table>
   </dd>
@@ -536,7 +535,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Forward is positive. </td></tr>
-    <tr><td class="paramname">zRotation</td><td>The normalized curvature [-1.0..1.0]. Clockwise is positive. </td></tr>
+    <tr><td class="paramname">zRotation</td><td>The normalized curvature [-1.0..1.0]. Counterclockwise is positive. </td></tr>
     <tr><td class="paramname">allowTurnInPlace</td><td>If set, overrides constant-curvature turning for turn-in-place maneuvers. zRotation will control turning rate instead of curvature. </td></tr>
   </table>
   </dd>
@@ -823,7 +822,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_differential_drive.html">DifferentialDrive</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

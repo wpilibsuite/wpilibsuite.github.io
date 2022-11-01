@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -215,11 +215,11 @@ $(document).ready(function(){initNavTree('_matrix_base_eigenvalues_8h_source.htm
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_typedef" href="class_eigen_1_1_matrix_base.html#a6dbfafdc24900b9266dfeb1590f834c6">MatrixBase&lt;Derived&gt;::RealScalar</a></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a0ff9bc0b9bea2d0822a2bf3192783102">  120</a></span><a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a0ff9bc0b9bea2d0822a2bf3192783102">MatrixBase&lt;Derived&gt;::operatorNorm</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keyword">using </span><a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">std::sqrt</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keyword">using </span><a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">std::sqrt</a>;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keyword">typename</span> Derived::PlainObject m_eval(derived());</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="comment">// FIXME if it is really guaranteed that the eigenvalues are already sorted,</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="comment">// then we don&#39;t need to compute a maxCoeff() here, comparing the 1st and last ones is enough.</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a>((m_eval*m_eval.adjoint())</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">sqrt</a>((m_eval*m_eval.adjoint())</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                 .eval()</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>         .template selfadjointView&lt;Lower&gt;()</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>         .eigenvalues()</div>
@@ -252,7 +252,6 @@ $(document).ready(function(){initNavTree('_matrix_base_eigenvalues_8h_source.htm
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>} <span class="comment">// end namespace Eigen</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a656b9217a2fcb6de59dc8d1eb3079cc7"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a656b9217a2fcb6de59dc8d1eb3079cc7">sqrt</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const SqrtReturnType sqrt() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:187</div></div>
 <div class="ttc" id="a_macros_8h_html_a9efec3cfd22b9a33bead9c6718d128da"><div class="ttname"><a href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a></div><div class="ttdeci">#define EIGEN_DEVICE_FUNC</div><div class="ttdef"><b>Definition:</b> Macros.h:976</div></div>
 <div class="ttc" id="aclass_eigen_1_1_complex_eigen_solver_html"><div class="ttname"><a href="class_eigen_1_1_complex_eigen_solver.html">Eigen::ComplexEigenSolver</a></div><div class="ttdoc">\eigenvalues_module</div><div class="ttdef"><b>Definition:</b> ComplexEigenSolver.h:46</div></div>
 <div class="ttc" id="aclass_eigen_1_1_complex_eigen_solver_html_a021de3dc1f37d4426a639eea39f9caae"><div class="ttname"><a href="class_eigen_1_1_complex_eigen_solver.html#a021de3dc1f37d4426a639eea39f9caae">Eigen::ComplexEigenSolver::eigenvalues</a></div><div class="ttdeci">const EigenvalueType &amp; eigenvalues() const</div><div class="ttdoc">Returns the eigenvalues of given matrix.</div><div class="ttdef"><b>Definition:</b> ComplexEigenSolver.h:182</div></div>
@@ -270,6 +269,7 @@ $(document).ready(function(){initNavTree('_matrix_base_eigenvalues_8h_source.htm
 <div class="ttc" id="aclass_eigen_1_1_self_adjoint_view_html_a66a18e7f6619ebbd3532c93da1209871"><div class="ttname"><a href="class_eigen_1_1_self_adjoint_view.html#a66a18e7f6619ebbd3532c93da1209871">Eigen::SelfAdjointView::eigenvalues</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EigenvaluesReturnType eigenvalues() const</div><div class="ttdoc">Computes the eigenvalues of a matrix.</div><div class="ttdef"><b>Definition:</b> MatrixBaseEigenvalues.h:88</div></div>
 <div class="ttc" id="aclass_eigen_1_1_self_adjoint_view_html_af4867e7938d7f7044cc06159ed01528c"><div class="ttname"><a href="class_eigen_1_1_self_adjoint_view.html#af4867e7938d7f7044cc06159ed01528c">Eigen::SelfAdjointView::PlainObject</a></div><div class="ttdeci">MatrixType::PlainObject PlainObject</div><div class="ttdef"><b>Definition:</b> SelfAdjointView.h:71</div></div>
 <div class="ttc" id="aclass_eigen_1_1_self_adjoint_view_html_af9f0234ebeae4c4ca512bcd5fb5e8bb1"><div class="ttname"><a href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">Eigen::SelfAdjointView::RealScalar</a></div><div class="ttdeci">NumTraits&lt; Scalar &gt;::Real RealScalar</div><div class="ttdoc">Real part of Scalar.</div><div class="ttdef"><b>Definition:</b> SelfAdjointView.h:256</div></div>
+<div class="ttc" id="agroup___unit_math_html_gae52f60a9e2a9e7ad1018a846bcf49140"><div class="ttname"><a href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">units::math::sqrt</a></div><div class="ttdeci">auto sqrt(const UnitType &amp;value) noexcept -&gt; unit_t&lt; square_root&lt; typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the square root of value</div><div class="ttdef"><b>Definition:</b> math.h:483</div></div>
 <div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> MatrixLogarithm.h:14</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="astruct_eigen_1_1internal_1_1eigenvalues__selector_3_01_derived_00_01false_01_4_html_a393e414b671b1279ea04e9bc0f7b2a7f"><div class="ttname"><a href="struct_eigen_1_1internal_1_1eigenvalues__selector_3_01_derived_00_01false_01_4.html#a393e414b671b1279ea04e9bc0f7b2a7f">Eigen::internal::eigenvalues_selector&lt; Derived, false &gt;::run</a></div><div class="ttdeci">static MatrixBase&lt; Derived &gt;::EigenvaluesReturnType const run(const MatrixBase&lt; Derived &gt; &amp;m)</div><div class="ttdef"><b>Definition:</b> MatrixBaseEigenvalues.h:35</div></div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('_matrix_base_eigenvalues_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_4744191eefd34b3708aa413d41bde835.html">Eigenvalues</a></li><li class="navelem"><a class="el" href="_matrix_base_eigenvalues_8h.html">MatrixBaseEigenvalues.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

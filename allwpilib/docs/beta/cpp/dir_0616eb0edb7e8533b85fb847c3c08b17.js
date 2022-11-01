@@ -78,7 +78,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "SynchronousInterrupt.h", "_synchronous_interrupt_8h.html", "_synchronous_interrupt_8h" ],
     [ "Threads.h", "wpilibc_2src_2main_2native_2include_2frc_2_threads_8h.html", "wpilibc_2src_2main_2native_2include_2frc_2_threads_8h" ],
     [ "TimedRobot.h", "_timed_robot_8h.html", "_timed_robot_8h" ],
-    [ "Timer.h", "_timer_8h.html", "_timer_8h" ],
+    [ "Timer.h", "wpilibc_2src_2main_2native_2include_2frc_2_timer_8h.html", "wpilibc_2src_2main_2native_2include_2frc_2_timer_8h" ],
     [ "TimesliceRobot.h", "_timeslice_robot_8h.html", "_timeslice_robot_8h" ],
     [ "Tracer.h", "_tracer_8h.html", "_tracer_8h" ],
     [ "Ultrasonic.h", "_ultrasonic_8h.html", "_ultrasonic_8h" ],

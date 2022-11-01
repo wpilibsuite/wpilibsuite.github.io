@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -123,7 +123,6 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad68e192aebf5ef8c2b2075c8c01319b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#ad68e192aebf5ef8c2b2075c8c01319b6">out_of_memory</a> (const <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a> &amp;info, std::size_t amount)</td></tr>
-<tr class="memdesc:ad68e192aebf5ef8c2b2075c8c01319b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it the <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a> and the amount of memory failed to be allocated.  <a href="classwpi_1_1memory_1_1out__of__memory.html#ad68e192aebf5ef8c2b2075c8c01319b6">More...</a><br /></td></tr>
 <tr class="separator:ad68e192aebf5ef8c2b2075c8c01319b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13b23a1c615ac481cdd8c849abd31c55"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a13b23a1c615ac481cdd8c849abd31c55">what</a> () const noexcept override</td></tr>
 <tr class="separator:a13b23a1c615ac481cdd8c849abd31c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +134,6 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a411b4a891b62849324610e806a534677"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a411b4a891b62849324610e806a534677">set_handler</a> (<a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a> h)</td></tr>
-<tr class="memdesc:a411b4a891b62849324610e806a534677"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a> in an atomic operation.  <a href="classwpi_1_1memory_1_1out__of__memory.html#a411b4a891b62849324610e806a534677">More...</a><br /></td></tr>
 <tr class="separator:a411b4a891b62849324610e806a534677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f7e1fbaf68c12f08b094c11ef5da24"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a48f7e1fbaf68c12f08b094c11ef5da24">get_handler</a> ()</td></tr>
 <tr class="separator:a48f7e1fbaf68c12f08b094c11ef5da24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,9 +185,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it the <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a> and the amount of memory failed to be allocated. </p>
-<p >It also calls the <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a> to control whether or not it will be thrown. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it the <a class="el" href="structwpi_1_1memory_1_1allocator__info.html">allocator_info</a> and the amount of memory failed to be allocated. It also calls the <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a> to control whether or not it will be thrown. </dd></dl>
 
 </div>
 </div>
@@ -295,9 +291,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a> in an atomic operation. </p>
-<p >A <code>nullptr</code> sets the default <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a>. </p><dl class="section return"><dt>Returns</dt><dd>The previous <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a>. This is never <code>nullptr</code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Sets <code>h</code> as the new <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a> in an atomic operation. A <code>nullptr</code> sets the default <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The previous <a class="el" href="classwpi_1_1memory_1_1out__of__memory.html#a5ce0064210ecf6a182bdc2dd61b6166e">handler</a>. This is never <code>nullptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -336,7 +331,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1out__of__memory.html">out_of_memory</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

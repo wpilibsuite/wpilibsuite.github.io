@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -124,15 +124,12 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a85d270d119d99a92cd4338dd4910ca59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#a85d270d119d99a92cd4338dd4910ca59">allocator_storage</a> ()=default</td></tr>
-<tr class="memdesc:a85d270d119d99a92cd4338dd4910ca59"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by default-constructing the <code>StoragePolicy</code>.  <a href="classwpi_1_1memory_1_1allocator__storage.html#a85d270d119d99a92cd4338dd4910ca59">More...</a><br /></td></tr>
 <tr class="separator:a85d270d119d99a92cd4338dd4910ca59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df77aa513fbd87a98b30d4a3c70609c"><td class="memTemplParams" colspan="2">template&lt;class Alloc , <a class="el" href="utility_8hpp.html#aad2ce6c0f67a732899fa005db1fe2f78">WPI_REQUIRES</a>((!std::is_base_of&lt; <a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a>, typename std::decay&lt; Alloc &gt;<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a> &gt;<a class="el" href="classvalue.html">::value</a>)) &gt; </td></tr>
 <tr class="memitem:a7df77aa513fbd87a98b30d4a3c70609c"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#a7df77aa513fbd87a98b30d4a3c70609c">allocator_storage</a> (Alloc &amp;&amp;alloc, <a class="el" href="utility_8hpp.html#a29cf68453fbb7724a89ba52139f84188">WPI_SFINAE</a>(new <a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#afb5b728ba80d27f6764e273705b99a82">storage_policy</a>(<a class="el" href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">detail::forward</a>&lt; Alloc &gt;(alloc))))</td></tr>
-<tr class="memdesc:a7df77aa513fbd87a98b30d4a3c70609c"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it an allocator.  <a href="classwpi_1_1memory_1_1allocator__storage.html#a7df77aa513fbd87a98b30d4a3c70609c">More...</a><br /></td></tr>
 <tr class="separator:a7df77aa513fbd87a98b30d4a3c70609c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00c39d36cf7bd211d1bd3124aae353b"><td class="memTemplParams" colspan="2">template&lt;class OtherPolicy &gt; </td></tr>
 <tr class="memitem:ae00c39d36cf7bd211d1bd3124aae353b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#ae00c39d36cf7bd211d1bd3124aae353b">allocator_storage</a> (const <a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a>&lt; OtherPolicy, Mutex &gt; &amp;other, <a class="el" href="utility_8hpp.html#a29cf68453fbb7724a89ba52139f84188">WPI_SFINAE</a>(new <a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#afb5b728ba80d27f6764e273705b99a82">storage_policy</a>(other.get_allocator())))</td></tr>
-<tr class="memdesc:ae00c39d36cf7bd211d1bd3124aae353b"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it another <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> with a different <code>StoragePolicy</code> but the same <code>Mutex</code> type.  <a href="classwpi_1_1memory_1_1allocator__storage.html#ae00c39d36cf7bd211d1bd3124aae353b">More...</a><br /></td></tr>
 <tr class="separator:ae00c39d36cf7bd211d1bd3124aae353b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae925563a6e9e3f138c2c29128390ae5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#ae925563a6e9e3f138c2c29128390ae5e">is_composable</a> () const noexcept</td></tr>
 <tr class="separator:ae925563a6e9e3f138c2c29128390ae5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,9 +268,7 @@ template&lt;class StoragePolicy , class Mutex &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by default-constructing the <code>StoragePolicy</code>. </p>
-<p >\requires The <code>StoragePolicy</code> must be default-constructible. \notes The default constructor may create an invalid allocator storage not associated with any allocator. If that is the case, it must not be used. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by default-constructing the <code>StoragePolicy</code>. \requires The <code>StoragePolicy</code> must be default-constructible. \notes The default constructor may create an invalid allocator storage not associated with any allocator. If that is the case, it must not be used. </dd></dl>
 
 </div>
 </div>
@@ -314,9 +309,7 @@ template&lt;class Alloc , <a class="el" href="utility_8hpp.html#aad2ce6c0f67a732
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it an allocator. </p>
-<p >The allocator will be forwarded to the <code>StoragePolicy</code>, it decides whether it will be moved, its address stored or something else. \requires The expression <code>new storage_policy(std::forward&lt;Alloc&gt;(alloc))</code> must be well-formed, otherwise this constructor does not participate in overload resolution. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it an allocator. The allocator will be forwarded to the <code>StoragePolicy</code>, it decides whether it will be moved, its address stored or something else. \requires The expression <code>new storage_policy(std::forward&lt;Alloc&gt;(alloc))</code> must be well-formed, otherwise this constructor does not participate in overload resolution. </dd></dl>
 
 </div>
 </div>
@@ -357,9 +350,7 @@ template&lt;class OtherPolicy &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it another <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> with a different <code>StoragePolicy</code> but the same <code>Mutex</code> type. </p>
-<p >Initializes it with the result of <code>other.get_allocator()</code>. \requires The expression <code>new storage_policy(other.get_allocator())</code> must be well-formed, otherwise this constructor does not participate in overload resolution. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it another <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> with a different <code>StoragePolicy</code> but the same <code>Mutex</code> type. Initializes it with the result of <code>other.get_allocator()</code>. \requires The expression <code>new storage_policy(other.get_allocator())</code> must be well-formed, otherwise this constructor does not participate in overload resolution. </dd></dl>
 
 </div>
 </div>
@@ -388,7 +379,7 @@ template&lt;class StoragePolicy , class Mutex &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Moves the <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> object. A moved-out <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> object must still store a valid allocator object. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Moves the <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> object. A moved-out <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> object must still store a valid allocator object. </dd></dl>
 
 </div>
 </div>
@@ -417,7 +408,7 @@ template&lt;class StoragePolicy , class Mutex &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Copies the <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> object. \requires The <code>StoragePolicy</code> must be copyable. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Copies the <code><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></code> object. \requires The <code>StoragePolicy</code> must be copyable. </dd></dl>
 
 </div>
 </div>
@@ -501,7 +492,7 @@ template&lt;class StoragePolicy , class Mutex &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Calls the function on the stored allocator. The <code>Mutex</code> will be locked during the operation. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Calls the function on the stored allocator. The <code>Mutex</code> will be locked during the operation. </dd></dl>
 
 </div>
 </div>
@@ -652,7 +643,8 @@ template&lt;class StoragePolicy , class Mutex &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Forwards to the <code>StoragePolicy</code>. </p><dl class="section return"><dt>Returns</dt><dd>Returns a reference to the stored allocator. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Forwards to the <code>StoragePolicy</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a reference to the stored allocator. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This does not lock the <code>Mutex</code>. </dd></dl>
 
 </div>
@@ -962,7 +954,8 @@ template&lt;class StoragePolicy , class Mutex &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Calls the function on the stored composable allocator. The <code>Mutex</code> will be locked during the operation. \requires The allocator must be composable, i.e. <a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#ae925563a6e9e3f138c2c29128390ae5e">is_composable()</a> must return <code>true</code>. </p><dl class="section note"><dt>Note</dt><dd>This check is done at compile-time where possible, and at runtime in the case of type-erased storage. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Calls the function on the stored composable allocator. The <code>Mutex</code> will be locked during the operation. \requires The allocator must be composable, i.e. <a class="el" href="classwpi_1_1memory_1_1allocator__storage.html#ae925563a6e9e3f138c2c29128390ae5e">is_composable()</a> must return <code>true</code>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This check is done at compile-time where possible, and at runtime in the case of type-erased storage. </dd></dl>
 
 </div>
 </div>
@@ -1069,7 +1062,7 @@ template&lt;class StoragePolicy , class Mutex &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1allocator__storage.html">allocator_storage</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

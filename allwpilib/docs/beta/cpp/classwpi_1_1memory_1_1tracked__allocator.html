@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -119,31 +119,22 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f7e1304191f4694963884223ef2d2e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a9f7e1304191f4694963884223ef2d2e7">~tracked_allocator</a> () noexcept</td></tr>
-<tr class="memdesc:a9f7e1304191f4694963884223ef2d2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Destroys both tracker and allocator.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#a9f7e1304191f4694963884223ef2d2e7">More...</a><br /></td></tr>
 <tr class="separator:a9f7e1304191f4694963884223ef2d2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa898fd67f6c9d59cf44b3296d5b3d7a3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#aa898fd67f6c9d59cf44b3296d5b3d7a3">allocate_node</a> (std::size_t size, std::size_t alignment)</td></tr>
-<tr class="memdesc:aa898fd67f6c9d59cf44b3296d5b3d7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls <code>Tracker::on_node_allocation()</code> and forwards to the allocator.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#aa898fd67f6c9d59cf44b3296d5b3d7a3">More...</a><br /></td></tr>
 <tr class="separator:aa898fd67f6c9d59cf44b3296d5b3d7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de0108abd3fee6c4cf519a0daa660d4"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a7de0108abd3fee6c4cf519a0daa660d4">try_allocate_node</a> (std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:a7de0108abd3fee6c4cf519a0daa660d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls the composable node allocation function.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#a7de0108abd3fee6c4cf519a0daa660d4">More...</a><br /></td></tr>
 <tr class="separator:a7de0108abd3fee6c4cf519a0daa660d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d9f0223435575457ae511dc422fbd26"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a1d9f0223435575457ae511dc422fbd26">allocate_array</a> (std::size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, std::size_t size, std::size_t alignment)</td></tr>
-<tr class="memdesc:a1d9f0223435575457ae511dc422fbd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls <code>Tracker::on_array_allocation()</code> and forwards to the allocator.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#a1d9f0223435575457ae511dc422fbd26">More...</a><br /></td></tr>
 <tr class="separator:a1d9f0223435575457ae511dc422fbd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b13304b4f20c074db83ee5396e9f3b8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a2b13304b4f20c074db83ee5396e9f3b8">try_allocate_array</a> (std::size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:a2b13304b4f20c074db83ee5396e9f3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls the composable array allocation function.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#a2b13304b4f20c074db83ee5396e9f3b8">More...</a><br /></td></tr>
 <tr class="separator:a2b13304b4f20c074db83ee5396e9f3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f9e31771d2f02cd66afdad2fb81d038"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a0f9e31771d2f02cd66afdad2fb81d038">deallocate_node</a> (void *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:a0f9e31771d2f02cd66afdad2fb81d038"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls <code>Tracker::on_node_deallocation()</code> and forwards to the allocator's <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a0f9e31771d2f02cd66afdad2fb81d038" title="\effects Calls Tracker::on_node_deallocation() and forwards to the allocator&#39;s deallocate_node().">deallocate_node()</a></code>.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#a0f9e31771d2f02cd66afdad2fb81d038">More...</a><br /></td></tr>
 <tr class="separator:a0f9e31771d2f02cd66afdad2fb81d038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d5ce203aa33b28a8b8b281c902afcab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a1d5ce203aa33b28a8b8b281c902afcab">try_deallocate_node</a> (void *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:a1d5ce203aa33b28a8b8b281c902afcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls the composable node deallocation function.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#a1d5ce203aa33b28a8b8b281c902afcab">More...</a><br /></td></tr>
 <tr class="separator:a1d5ce203aa33b28a8b8b281c902afcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe92775f7058be5619dfcd0884aede72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#afe92775f7058be5619dfcd0884aede72">deallocate_array</a> (void *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>, std::size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:afe92775f7058be5619dfcd0884aede72"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls <code>Tracker::on_array_deallocation()</code> and forwards to the allocator's <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#afe92775f7058be5619dfcd0884aede72" title="\effects Calls Tracker::on_array_deallocation() and forwards to the allocator&#39;s deallocate_array().">deallocate_array()</a></code>.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#afe92775f7058be5619dfcd0884aede72">More...</a><br /></td></tr>
 <tr class="separator:afe92775f7058be5619dfcd0884aede72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9e7ede3ffdb2490325ae7bfc0dcfe4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a2f9e7ede3ffdb2490325ae7bfc0dcfe4">try_deallocate_array</a> (void *<a class="el" href="format_8h.html#aa6ec2d4315570f27d9637ce3c770e787">ptr</a>, std::size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, std::size_t size, std::size_t alignment) noexcept</td></tr>
-<tr class="memdesc:a2f9e7ede3ffdb2490325ae7bfc0dcfe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Calls the composable array deallocation function.  <a href="classwpi_1_1memory_1_1tracked__allocator.html#a2f9e7ede3ffdb2490325ae7bfc0dcfe4">More...</a><br /></td></tr>
 <tr class="separator:a2f9e7ede3ffdb2490325ae7bfc0dcfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aaffc20fba188e6b74c901f87963f21a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#aaffc20fba188e6b74c901f87963f21a1">tracked_allocator</a> (<a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#aea1875a2f43e8b37949a9ea10e88f254">tracker</a> t={}) noexcept</td></tr>
@@ -313,8 +304,7 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Destroys both tracker and allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Destroys both tracker and allocator. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This will never call the <code>Tracker::on_allocator_shrinking()</code> function. </dd></dl>
 
 </div>
@@ -344,7 +334,7 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >\effects Moving moves both the tracker and the allocator. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Moving moves both the tracker and the allocator. </dd></dl>
 
 </div>
 </div>
@@ -390,9 +380,8 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls <code>Tracker::on_array_allocation()</code> and forwards to the allocator. </p>
-<p >If a growth occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_growth()</code>. </p><dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a1d9f0223435575457ae511dc422fbd26" title="\effects Calls Tracker::on_array_allocation() and forwards to the allocator.">allocate_array()</a></code> </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Calls <code>Tracker::on_array_allocation()</code> and forwards to the allocator. If a growth occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_growth()</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a1d9f0223435575457ae511dc422fbd26">allocate_array()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -431,9 +420,8 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls <code>Tracker::on_node_allocation()</code> and forwards to the allocator. </p>
-<p >If a growth occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_growth()</code>. </p><dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#aa898fd67f6c9d59cf44b3296d5b3d7a3" title="\effects Calls Tracker::on_node_allocation() and forwards to the allocator.">allocate_node()</a></code> </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Calls <code>Tracker::on_node_allocation()</code> and forwards to the allocator. If a growth occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_growth()</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#aa898fd67f6c9d59cf44b3296d5b3d7a3">allocate_node()</a></code> </dd></dl>
 
 </div>
 </div>
@@ -484,9 +472,7 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls <code>Tracker::on_array_deallocation()</code> and forwards to the allocator's <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#afe92775f7058be5619dfcd0884aede72" title="\effects Calls Tracker::on_array_deallocation() and forwards to the allocator&#39;s deallocate_array().">deallocate_array()</a></code>. </p>
-<p >If shrinking occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_shrinking()</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Calls <code>Tracker::on_array_deallocation()</code> and forwards to the allocator's <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#afe92775f7058be5619dfcd0884aede72">deallocate_array()</a></code>. If shrinking occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_shrinking()</code>. </dd></dl>
 
 </div>
 </div>
@@ -531,9 +517,7 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls <code>Tracker::on_node_deallocation()</code> and forwards to the allocator's <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a0f9e31771d2f02cd66afdad2fb81d038" title="\effects Calls Tracker::on_node_deallocation() and forwards to the allocator&#39;s deallocate_node().">deallocate_node()</a></code>. </p>
-<p >If shrinking occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_shrinking()</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Calls <code>Tracker::on_node_deallocation()</code> and forwards to the allocator's <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a0f9e31771d2f02cd66afdad2fb81d038">deallocate_node()</a></code>. If shrinking occurs and the allocator is deeply tracked, also calls <code>Tracker::on_allocator_shrinking()</code>. </dd></dl>
 
 </div>
 </div>
@@ -798,9 +782,8 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls the composable array allocation function. </p>
-<p >If allocation was succesful, also calls <code>Tracker::on_array_allocation()</code>. </p><dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a2b13304b4f20c074db83ee5396e9f3b8" title="\effects Calls the composable array allocation function.">try_allocate_array()</a></code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Calls the composable array allocation function. If allocation was succesful, also calls <code>Tracker::on_array_allocation()</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a2b13304b4f20c074db83ee5396e9f3b8">try_allocate_array()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -839,9 +822,8 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls the composable node allocation function. </p>
-<p >If allocation was successful, also calls <code>Tracker::on_node_allocation()</code>. </p><dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a7de0108abd3fee6c4cf519a0daa660d4" title="\effects Calls the composable node allocation function.">try_allocate_node()</a></code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Calls the composable node allocation function. If allocation was successful, also calls <code>Tracker::on_node_allocation()</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a7de0108abd3fee6c4cf519a0daa660d4">try_allocate_node()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -892,9 +874,8 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls the composable array deallocation function. </p>
-<p >If it was succesful, also calls <code>Tracker::on_array_deallocation()</code>. </p><dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a2f9e7ede3ffdb2490325ae7bfc0dcfe4" title="\effects Calls the composable array deallocation function.">try_deallocate_array()</a></code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Calls the composable array deallocation function. If it was succesful, also calls <code>Tracker::on_array_deallocation()</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a2f9e7ede3ffdb2490325ae7bfc0dcfe4">try_deallocate_array()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -939,9 +920,8 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Calls the composable node deallocation function. </p>
-<p >If it was succesful, also calls <code>Tracker::on_node_deallocation()</code>. </p><dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a1d5ce203aa33b28a8b8b281c902afcab" title="\effects Calls the composable node deallocation function.">try_deallocate_node()</a></code>. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Calls the composable node deallocation function. If it was succesful, also calls <code>Tracker::on_node_deallocation()</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <code><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html#a1d5ce203aa33b28a8b8b281c902afcab">try_deallocate_node()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -954,7 +934,7 @@ template&lt;class Tracker , class RawAllocator &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1tracked__allocator.html">tracked_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

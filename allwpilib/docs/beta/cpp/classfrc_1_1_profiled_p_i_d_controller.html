@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -170,6 +170,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a0152bcb6da5437f6d7da3a5574956c"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html#a8a0152bcb6da5437f6d7da3a5574956c">GetPeriod</a> () const</td></tr>
 <tr class="memdesc:a8a0152bcb6da5437f6d7da3a5574956c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the period of this controller.  <a href="classfrc_1_1_profiled_p_i_d_controller.html#a8a0152bcb6da5437f6d7da3a5574956c">More...</a><br /></td></tr>
 <tr class="separator:a8a0152bcb6da5437f6d7da3a5574956c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a951840914bfa85f5043afae14ed8d4c4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html#a951840914bfa85f5043afae14ed8d4c4">GetPositionTolerance</a> () const</td></tr>
+<tr class="memdesc:a951840914bfa85f5043afae14ed8d4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position tolerance of this controller.  <a href="classfrc_1_1_profiled_p_i_d_controller.html#a951840914bfa85f5043afae14ed8d4c4">More...</a><br /></td></tr>
+<tr class="separator:a951840914bfa85f5043afae14ed8d4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cfc0010ec08649b4b387e8a20f8536"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html#ab2cfc0010ec08649b4b387e8a20f8536">GetVelocityTolerance</a> () const</td></tr>
+<tr class="memdesc:ab2cfc0010ec08649b4b387e8a20f8536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the velocity tolerance of this controller.  <a href="classfrc_1_1_profiled_p_i_d_controller.html#ab2cfc0010ec08649b4b387e8a20f8536">More...</a><br /></td></tr>
+<tr class="separator:ab2cfc0010ec08649b4b387e8a20f8536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc152f90d1b7b4a5a623cd036ae9e556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html#adc152f90d1b7b4a5a623cd036ae9e556">SetGoal</a> (<a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html#acbf77ee14506cb2a67147eda9e48c313">State</a> goal)</td></tr>
 <tr class="memdesc:adc152f90d1b7b4a5a623cd036ae9e556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the goal for the <a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html" title="Implements a PID control loop whose setpoint is constrained by a trapezoid profile.">ProfiledPIDController</a>.  <a href="classfrc_1_1_profiled_p_i_d_controller.html#adc152f90d1b7b4a5a623cd036ae9e556">More...</a><br /></td></tr>
 <tr class="separator:adc152f90d1b7b4a5a623cd036ae9e556"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1028,6 +1034,36 @@ template&lt;class Distance &gt; </div>
 
 </div>
 </div>
+<a id="a951840914bfa85f5043afae14ed8d4c4" name="a951840914bfa85f5043afae14ed8d4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951840914bfa85f5043afae14ed8d4c4">&#9670;&nbsp;</a></span>GetPositionTolerance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html">frc::ProfiledPIDController</a>&lt; Distance &gt;::GetPositionTolerance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the position tolerance of this controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position tolerance of the controller. </dd></dl>
+
+</div>
+</div>
 <a id="a1f09044c1f459a75b6a58d66d93a92dc" name="a1f09044c1f459a75b6a58d66d93a92dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f09044c1f459a75b6a58d66d93a92dc">&#9670;&nbsp;</a></span>GetSetpoint()</h2>
 
@@ -1084,6 +1120,36 @@ template&lt;class Distance &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the change in error per second. </p>
+
+</div>
+</div>
+<a id="ab2cfc0010ec08649b4b387e8a20f8536" name="ab2cfc0010ec08649b4b387e8a20f8536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2cfc0010ec08649b4b387e8a20f8536">&#9670;&nbsp;</a></span>GetVelocityTolerance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html">frc::ProfiledPIDController</a>&lt; Distance &gt;::GetVelocityTolerance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the velocity tolerance of this controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>The velocity tolerance of the controller. </dd></dl>
 
 </div>
 </div>
@@ -1675,7 +1741,7 @@ template&lt;class Distance &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html">ProfiledPIDController</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

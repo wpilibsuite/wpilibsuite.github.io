@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('_sparse_col_etree_8h_source.html','');
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> MatrixType::StorageIndex StorageIndex;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  StorageIndex nc = convert_index&lt;StorageIndex&gt;(mat.cols()); <span class="comment">// Number of columns</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  StorageIndex m = convert_index&lt;StorageIndex&gt;(mat.rows());</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  StorageIndex diagSize = (<a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">std::min</a>)(nc,m);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  StorageIndex diagSize = (<a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">std::min</a>)(nc,m);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  IndexVector root(nc); <span class="comment">// root of subtree of etree </span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  root.setZero();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  IndexVector pp(nc); <span class="comment">// disjoint sets </span></div>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('_sparse_col_etree_8h_source.html','');
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">for</span> (<span class="keyword">typename</span> MatrixType::InnerIterator it(mat, pcol); it; ++it)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    { </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> <a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a> = it.row();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      firstRowElt(<a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>) = (<a class="code hl_function" href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">std::min</a>)(firstRowElt(<a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>), <a class="code hl_function" href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      firstRowElt(<a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>) = (<a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">std::min</a>)(firstRowElt(<a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>), <a class="code hl_function" href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a>);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">/* Compute etree by Liu&#39;s algorithm for symmetric matrices,</span></div>
@@ -302,6 +302,7 @@ $(document).ready(function(){initNavTree('_sparse_col_etree_8h_source.html','');
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#endif </span><span class="comment">// SPARSE_COLETREE_H</span></div>
 <div class="ttc" id="a_block_methods_8h_html_a00a58bf5d6022e451612db73ffbf4aef"><div class="ttname"><a href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE ColXpr col(Index i)</div><div class="ttdoc">This is the const version of col().</div><div class="ttdef"><b>Definition:</b> BlockMethods.h:1097</div></div>
 <div class="ttc" id="a_block_methods_8h_html_ace0220ddc85e95e756b362cda5bf17c9"><div class="ttname"><a href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE RowXpr row(Index i)</div><div class="ttdoc">This is the const version of row(). *‍/.</div><div class="ttdef"><b>Definition:</b> BlockMethods.h:1118</div></div>
+<div class="ttc" id="amin_8hpp_html_a90dfab1fcb99976507217d8111c3f524"><div class="ttname"><a href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; min(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise minimum function.</div><div class="ttdef"><b>Definition:</b> min.hpp:35</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a86181db74ba596a7afbfd89efcc5788c"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a86181db74ba596a7afbfd89efcc5788c">Eigen::internal::coletree</a></div><div class="ttdeci">int coletree(const MatrixType &amp;mat, IndexVector &amp;parent, IndexVector &amp;firstRowElt, typename MatrixType::StorageIndex *perm=0)</div><div class="ttdoc">Compute the column elimination tree of a sparse matrix.</div><div class="ttdef"><b>Definition:</b> SparseColEtree.h:61</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_aa931747bff074d6cacefff640074a4f9"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">Eigen::internal::first</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index first(const T &amp;x) EIGEN_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:81</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_ab414b5990bd6c865958a9231ff418d20"><div class="ttname"><a href="namespace_eigen_1_1internal.html#ab414b5990bd6c865958a9231ff418d20">Eigen::internal::treePostorder</a></div><div class="ttdeci">void treePostorder(typename IndexVector::Scalar n, IndexVector &amp;parent, IndexVector &amp;post)</div><div class="ttdoc">Post order a tree.</div><div class="ttdef"><b>Definition:</b> SparseColEtree.h:178</div></div>
@@ -310,14 +311,13 @@ $(document).ready(function(){initNavTree('_sparse_col_etree_8h_source.html','');
 <div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> MatrixLogarithm.h:14</div></div>
 <div class="ttc" id="anamespace_eigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
-<div class="ttc" id="anamespaceunits_1_1math_html_ae9f8f59df111748817588a056678942b"><div class="ttname"><a href="namespaceunits_1_1math.html#ae9f8f59df111748817588a056678942b">units::math::min</a></div><div class="ttdeci">UnitTypeLhs() min(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3413</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_7bbd0af83fc006f4237a45a82cdad357.html">SparseCore</a></li><li class="navelem"><a class="el" href="_sparse_col_etree_8h.html">SparseColEtree.h</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

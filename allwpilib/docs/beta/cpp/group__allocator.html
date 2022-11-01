@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -505,7 +505,8 @@ template&lt;class RawAllocator , typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Commits reserved virtual memory. </p>
-<p >\effects Marks <code>calc_no_pages</code> pages starting at the given address available for use. </p><dl class="section return"><dt>Returns</dt><dd>The beginning of the committed area, i.e. <code>memory</code>, or <code>nullptr</code> in case of error. \requires The memory must be previously reserved. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Marks <code>calc_no_pages</code> pages starting at the given address available for use. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The beginning of the committed area, i.e. <code>memory</code>, or <code>nullptr</code> in case of error. \requires The memory must be previously reserved. </dd></dl>
 
 </div>
 </div>
@@ -544,7 +545,7 @@ template&lt;class RawAllocator , typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Decommits commited virtual memory. </p>
-<p >\effects Puts commited memory back in the reserved state. \requires <code>memory</code> must come from a previous call to <a class="el" href="group__allocator.html#ga22dd891cd2e42c178cf34b695c4cbd5f">virtual_memory_commit</a> with the same <code>calc_no_pages</code> it must not be <code>nullptr</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Puts commited memory back in the reserved state. \requires <code>memory</code> must come from a previous call to <a class="el" href="group__allocator.html#ga22dd891cd2e42c178cf34b695c4cbd5f">virtual_memory_commit</a> with the same <code>calc_no_pages</code> it must not be <code>nullptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -583,7 +584,7 @@ template&lt;class RawAllocator , typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Releases reserved virtual memory. </p>
-<p >\effects Returns previously reserved pages to the system. \requires <code>pages</code> must come from a previous call to <a class="el" href="group__allocator.html#gad1a7c43913988fb500fba5d302314152">virtual_memory_reserve</a> with the same <code>calc_no_pages</code>, it must not be <code>nullptr</code>. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Returns previously reserved pages to the system. \requires <code>pages</code> must come from a previous call to <a class="el" href="group__allocator.html#gad1a7c43913988fb500fba5d302314152">virtual_memory_reserve</a> with the same <code>calc_no_pages</code>, it must not be <code>nullptr</code>. </dd></dl>
 
 </div>
 </div>
@@ -612,7 +613,8 @@ template&lt;class RawAllocator , typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Reserves virtual memory. </p>
-<p >\effects Reserves the given number of pages. Each page is <a class="el" href="group__allocator.html#ga638f9e52b33b10f14e50de5beb306976">virtual_memory_page_size</a> big. </p><dl class="section return"><dt>Returns</dt><dd>The address of the first reserved page, or <code>nullptr</code> in case of error. </dd></dl>
+<dl class="section user"><dt>Effects:</dt><dd>Reserves the given number of pages. Each page is <a class="el" href="group__allocator.html#ga638f9e52b33b10f14e50de5beb306976">virtual_memory_page_size</a> big. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The address of the first reserved page, or <code>nullptr</code> in case of error. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The memory may not be used, it must first be commited. </dd></dl>
 
 </div>
@@ -713,7 +715,7 @@ template&lt;class BlockOrRawAllocator  = default_allocator&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 22 2022 06:07:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:36:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

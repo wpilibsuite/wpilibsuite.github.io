@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,6 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a263c100a68d8d15614d49badba6896c8"><td class="memTemplParams" colspan="2">template&lt;std::size_t Size&gt; </td></tr>
 <tr class="memitem:a263c100a68d8d15614d49badba6896c8"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__allocator.html#a263c100a68d8d15614d49badba6896c8">static_allocator</a> (<a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a>&lt; Size &gt; &amp;storage) noexcept</td></tr>
-<tr class="memdesc:a263c100a68d8d15614d49badba6896c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">\effects Creates it by passing it a <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> by reference.  <a href="classwpi_1_1memory_1_1static__allocator.html#a263c100a68d8d15614d49badba6896c8">More...</a><br /></td></tr>
 <tr class="separator:a263c100a68d8d15614d49badba6896c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a595147a3099826c851f70a2cb3089e6c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1memory_1_1static__allocator.html#a595147a3099826c851f70a2cb3089e6c">allocate_node</a> (std::size_t size, std::size_t alignment)</td></tr>
 <tr class="separator:a595147a3099826c851f70a2cb3089e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,9 +161,7 @@ template&lt;std::size_t Size&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>\effects Creates it by passing it a <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> by reference. </p>
-<p >It will take the address of the storage and use its memory for the allocation. \requires The storage object must live as long as the allocator object. It must not be shared between multiple allocators, i.e. the object must not have been passed to a constructor before. </p>
+<dl class="section user"><dt>Effects:</dt><dd>Creates it by passing it a <a class="el" href="structwpi_1_1memory_1_1static__allocator__storage.html">static_allocator_storage</a> by reference. It will take the address of the storage and use its memory for the allocation. \requires The storage object must live as long as the allocator object. It must not be shared between multiple allocators, i.e. the object must not have been passed to a constructor before. </dd></dl>
 
 </div>
 </div>
@@ -300,7 +297,7 @@ template&lt;std::size_t Size&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1memory.html">memory</a></li><li class="navelem"><a class="el" href="classwpi_1_1memory_1_1static__allocator.html">static_allocator</a></li>
-    <li class="footer">Generated on Sat Oct 22 2022 06:08:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 05:37:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
