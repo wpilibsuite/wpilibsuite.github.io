@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-37-g0246592</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-1-39-gb114006</span>
    </div>
   </td>
  </tr>
@@ -277,6 +277,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1dd171401cb72e7e4a5073840584ecb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a1dd171401cb72e7e4a5073840584ecb6">IsConnected</a> () const</td></tr>
 <tr class="memdesc:a1dd171401cb72e7e4a5073840584ecb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether or not the instance is connected to another node.  <a href="classnt_1_1_network_table_instance.html#a1dd171401cb72e7e4a5073840584ecb6">More...</a><br /></td></tr>
 <tr class="separator:a1dd171401cb72e7e4a5073840584ecb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Logger Functions</div></td></tr>
+<tr class="memitem:a3679902f58227a93622bd65c05973425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3679902f58227a93622bd65c05973425">AddLogger</a> (unsigned int minLevel, unsigned int maxLevel, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> func)</td></tr>
+<tr class="memdesc:a3679902f58227a93622bd65c05973425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="classnt_1_1_network_table_instance.html#a3679902f58227a93622bd65c05973425">More...</a><br /></td></tr>
+<tr class="separator:a3679902f58227a93622bd65c05973425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -299,56 +303,31 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:a5902db4f35b6fbf1859cf65c02c99a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default port that network tables operates on for NT4.  <a href="classnt_1_1_network_table_instance.html#a5902db4f35b6fbf1859cf65c02c99a85">More...</a><br /></td></tr>
 <tr class="separator:a5902db4f35b6fbf1859cf65c02c99a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Connection Listener Functions</h2></td></tr>
-<tr class="memitem:ac4011bb0aaa7aa0c16da3374222614a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ac4011bb0aaa7aa0c16da3374222614a6">AddConnectionListener</a> (bool immediate_notify, std::function&lt; void(const <a class="el" href="classnt_1_1_connection_notification.html">ConnectionNotification</a> &amp;event)&gt; callback) const</td></tr>
-<tr class="memdesc:ac4011bb0aaa7aa0c16da3374222614a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="classnt_1_1_network_table_instance.html#ac4011bb0aaa7aa0c16da3374222614a6">More...</a><br /></td></tr>
-<tr class="separator:ac4011bb0aaa7aa0c16da3374222614a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999bd24ac6f1255f0aa687558b832585"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a999bd24ac6f1255f0aa687558b832585">WaitForConnectionListenerQueue</a> (double timeout)</td></tr>
-<tr class="memdesc:a999bd24ac6f1255f0aa687558b832585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the connection listener queue to be empty.  <a href="classnt_1_1_network_table_instance.html#a999bd24ac6f1255f0aa687558b832585">More...</a><br /></td></tr>
-<tr class="separator:a999bd24ac6f1255f0aa687558b832585"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d5282662e5be28b164d932a9cdf8e81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a7d5282662e5be28b164d932a9cdf8e81">RemoveConnectionListener</a> (<a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a> conn_listener)</td></tr>
-<tr class="memdesc:a7d5282662e5be28b164d932a9cdf8e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a connection listener.  <a href="classnt_1_1_network_table_instance.html#a7d5282662e5be28b164d932a9cdf8e81">More...</a><br /></td></tr>
-<tr class="separator:a7d5282662e5be28b164d932a9cdf8e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Topic Listener Functions</h2></td></tr>
-<tr class="memitem:a3b3048dfaeac9bf183fecd851e24f1c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3b3048dfaeac9bf183fecd851e24f1c4">AddTopicListener</a> (<a class="el" href="classnt_1_1_topic.html">Topic</a> topic, unsigned int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:a3b3048dfaeac9bf183fecd851e24f1c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a topic listener for changes on a particular topic.  <a href="classnt_1_1_network_table_instance.html#a3b3048dfaeac9bf183fecd851e24f1c4">More...</a><br /></td></tr>
-<tr class="separator:a3b3048dfaeac9bf183fecd851e24f1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b6f1bec3cc3a22df67c81561ee2e06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a52b6f1bec3cc3a22df67c81561ee2e06">AddTopicListener</a> (<a class="el" href="classnt_1_1_subscriber.html">Subscriber</a> &amp;subscriber, unsigned int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:a52b6f1bec3cc3a22df67c81561ee2e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a topic listener for topic changes on a subscriber.  <a href="classnt_1_1_network_table_instance.html#a52b6f1bec3cc3a22df67c81561ee2e06">More...</a><br /></td></tr>
-<tr class="separator:a52b6f1bec3cc3a22df67c81561ee2e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b4fc3f7cd53816cfeec6c5521db939f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a4b4fc3f7cd53816cfeec6c5521db939f">AddTopicListener</a> (<a class="el" href="classnt_1_1_multi_subscriber.html">MultiSubscriber</a> &amp;subscriber, int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:a4b4fc3f7cd53816cfeec6c5521db939f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a topic listener for topic changes on a subscriber.  <a href="classnt_1_1_network_table_instance.html#a4b4fc3f7cd53816cfeec6c5521db939f">More...</a><br /></td></tr>
-<tr class="separator:a4b4fc3f7cd53816cfeec6c5521db939f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ac331fe0a5d0b9d634cd77c6749340b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a5ac331fe0a5d0b9d634cd77c6749340b">AddTopicListener</a> (<a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;entry, int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:a5ac331fe0a5d0b9d634cd77c6749340b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a topic listener for topic changes on an entry.  <a href="classnt_1_1_network_table_instance.html#a5ac331fe0a5d0b9d634cd77c6749340b">More...</a><br /></td></tr>
-<tr class="separator:a5ac331fe0a5d0b9d634cd77c6749340b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af13259c7a65adb4a4f4e93c7495128f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#af13259c7a65adb4a4f4e93c7495128f4">AddTopicListener</a> (std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; prefixes, int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:af13259c7a65adb4a4f4e93c7495128f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a topic listener for changes to topics with names that start with any of the given prefixes.  <a href="classnt_1_1_network_table_instance.html#af13259c7a65adb4a4f4e93c7495128f4">More...</a><br /></td></tr>
-<tr class="separator:af13259c7a65adb4a4f4e93c7495128f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae078eb37e350cc863efa754b1f12290c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ae078eb37e350cc863efa754b1f12290c">WaitForTopicListenerQueue</a> (double timeout)</td></tr>
-<tr class="memdesc:ae078eb37e350cc863efa754b1f12290c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the topic listener queue to be empty.  <a href="classnt_1_1_network_table_instance.html#ae078eb37e350cc863efa754b1f12290c">More...</a><br /></td></tr>
-<tr class="separator:ae078eb37e350cc863efa754b1f12290c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa92167d0315ba83ea6be372eab9b70d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aaa92167d0315ba83ea6be372eab9b70d">RemoveTopicListener</a> (<a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> listener)</td></tr>
-<tr class="memdesc:aaa92167d0315ba83ea6be372eab9b70d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a topic listener.  <a href="classnt_1_1_network_table_instance.html#aaa92167d0315ba83ea6be372eab9b70d">More...</a><br /></td></tr>
-<tr class="separator:aaa92167d0315ba83ea6be372eab9b70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Value Listener Functions</h2></td></tr>
-<tr class="memitem:ac1b94747bb53d4f69f4246ac8c5d4831"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ac1b94747bb53d4f69f4246ac8c5d4831">AddValueListener</a> (<a class="el" href="classnt_1_1_subscriber.html">Subscriber</a> &amp;subscriber, unsigned int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:ac1b94747bb53d4f69f4246ac8c5d4831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a value listener for value changes on a subscriber.  <a href="classnt_1_1_network_table_instance.html#ac1b94747bb53d4f69f4246ac8c5d4831">More...</a><br /></td></tr>
-<tr class="separator:ac1b94747bb53d4f69f4246ac8c5d4831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0933a42baab0a87a6b68d0bcac78ff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ad0933a42baab0a87a6b68d0bcac78ff1">AddValueListener</a> (<a class="el" href="classnt_1_1_multi_subscriber.html">MultiSubscriber</a> &amp;subscriber, unsigned int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:ad0933a42baab0a87a6b68d0bcac78ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a value listener for value changes on a subscriber.  <a href="classnt_1_1_network_table_instance.html#ad0933a42baab0a87a6b68d0bcac78ff1">More...</a><br /></td></tr>
-<tr class="separator:ad0933a42baab0a87a6b68d0bcac78ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff85d4bec5b2223869df7d69078a3e5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aff85d4bec5b2223869df7d69078a3e5f">AddValueListener</a> (<a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;entry, int eventMask, std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt; listener)</td></tr>
-<tr class="memdesc:aff85d4bec5b2223869df7d69078a3e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a value listener for value changes on an entry.  <a href="classnt_1_1_network_table_instance.html#aff85d4bec5b2223869df7d69078a3e5f">More...</a><br /></td></tr>
-<tr class="separator:aff85d4bec5b2223869df7d69078a3e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa87de2dcca33d44161609d107f16535"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aaa87de2dcca33d44161609d107f16535">WaitForValueListenerQueue</a> (double timeout)</td></tr>
-<tr class="memdesc:aaa87de2dcca33d44161609d107f16535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the value listener queue to be empty.  <a href="classnt_1_1_network_table_instance.html#aaa87de2dcca33d44161609d107f16535">More...</a><br /></td></tr>
-<tr class="separator:aaa87de2dcca33d44161609d107f16535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3c69adc66969a38636fe232b01563b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aec3c69adc66969a38636fe232b01563b">RemoveValueListener</a> (<a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a> listener)</td></tr>
-<tr class="memdesc:aec3c69adc66969a38636fe232b01563b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a value listener.  <a href="classnt_1_1_network_table_instance.html#aec3c69adc66969a38636fe232b01563b">More...</a><br /></td></tr>
-<tr class="separator:aec3c69adc66969a38636fe232b01563b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Listener Functions</h2></td></tr>
+<tr class="memitem:a2905300d437f50e15953f62d7341f772"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a2905300d437f50e15953f62d7341f772">WaitForListenerQueue</a> (double timeout)</td></tr>
+<tr class="memdesc:a2905300d437f50e15953f62d7341f772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the listener queue to be empty.  <a href="classnt_1_1_network_table_instance.html#a2905300d437f50e15953f62d7341f772">More...</a><br /></td></tr>
+<tr class="separator:a2905300d437f50e15953f62d7341f772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244700aa018b6a4cc801ef9f87ae0db0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a244700aa018b6a4cc801ef9f87ae0db0">AddConnectionListener</a> (bool immediate_notify, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> callback) const</td></tr>
+<tr class="memdesc:a244700aa018b6a4cc801ef9f87ae0db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="classnt_1_1_network_table_instance.html#a244700aa018b6a4cc801ef9f87ae0db0">More...</a><br /></td></tr>
+<tr class="separator:a244700aa018b6a4cc801ef9f87ae0db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3152f8b83706bcb4bd3d22081adf91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a9c3152f8b83706bcb4bd3d22081adf91">AddListener</a> (<a class="el" href="classnt_1_1_topic.html">Topic</a> topic, unsigned int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
+<tr class="memdesc:a9c3152f8b83706bcb4bd3d22081adf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes on a particular topic.  <a href="classnt_1_1_network_table_instance.html#a9c3152f8b83706bcb4bd3d22081adf91">More...</a><br /></td></tr>
+<tr class="separator:a9c3152f8b83706bcb4bd3d22081adf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a3b3655ee043931e176fc1895de380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a72a3b3655ee043931e176fc1895de380">AddListener</a> (<a class="el" href="classnt_1_1_subscriber.html">Subscriber</a> &amp;subscriber, unsigned int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
+<tr class="memdesc:a72a3b3655ee043931e176fc1895de380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes on a subscriber.  <a href="classnt_1_1_network_table_instance.html#a72a3b3655ee043931e176fc1895de380">More...</a><br /></td></tr>
+<tr class="separator:a72a3b3655ee043931e176fc1895de380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2ac36f7c0bda302944dfbc3300e70c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3b2ac36f7c0bda302944dfbc3300e70c">AddListener</a> (<a class="el" href="classnt_1_1_multi_subscriber.html">MultiSubscriber</a> &amp;subscriber, int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
+<tr class="memdesc:a3b2ac36f7c0bda302944dfbc3300e70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes on a subscriber.  <a href="classnt_1_1_network_table_instance.html#a3b2ac36f7c0bda302944dfbc3300e70c">More...</a><br /></td></tr>
+<tr class="separator:a3b2ac36f7c0bda302944dfbc3300e70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0fd8c21f5d8235a91bc2858259a0005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ab0fd8c21f5d8235a91bc2858259a0005">AddListener</a> (<a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;entry, int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
+<tr class="memdesc:ab0fd8c21f5d8235a91bc2858259a0005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes on an entry.  <a href="classnt_1_1_network_table_instance.html#ab0fd8c21f5d8235a91bc2858259a0005">More...</a><br /></td></tr>
+<tr class="separator:ab0fd8c21f5d8235a91bc2858259a0005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3149f80a27268b5c1610a590d437ece5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3149f80a27268b5c1610a590d437ece5">AddListener</a> (std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; prefixes, int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
+<tr class="memdesc:a3149f80a27268b5c1610a590d437ece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes to topics with names that start with any of the given prefixes.  <a href="classnt_1_1_network_table_instance.html#a3149f80a27268b5c1610a590d437ece5">More...</a><br /></td></tr>
+<tr class="separator:a3149f80a27268b5c1610a590d437ece5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61e82ca14608ac1ec47ff62ddc1e983"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#aa61e82ca14608ac1ec47ff62ddc1e983">RemoveListener</a> (<a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> listener)</td></tr>
+<tr class="memdesc:aa61e82ca14608ac1ec47ff62ddc1e983"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a listener.  <a href="classnt_1_1_network_table_instance.html#aa61e82ca14608ac1ec47ff62ddc1e983">More...</a><br /></td></tr>
+<tr class="separator:aa61e82ca14608ac1ec47ff62ddc1e983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Data Logger Functions</h2></td></tr>
 <tr class="memitem:a5b8f83283dbf3f19246d6ca028d6d243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf787acecd169dedc3f38a4998669494e">NT_DataLogger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a5b8f83283dbf3f19246d6ca028d6d243">StartEntryDataLog</a> (<a class="el" href="classwpi_1_1log_1_1_data_log.html">wpi::log::DataLog</a> &amp;<a class="el" href="log_8hpp.html#a9a1c96da9075980acba41b92ed85c28b">log</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> logPrefix)</td></tr>
@@ -363,14 +342,6 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:acdd2565c1c78f25d2128d0c3e418d575"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#acdd2565c1c78f25d2128d0c3e418d575">StopConnectionDataLog</a> (<a class="el" href="group__ntcore__c__api.html#ga19232d49a80d5e7416dabe12c1035d5b">NT_ConnectionDataLogger</a> logger)</td></tr>
 <tr class="memdesc:acdd2565c1c78f25d2128d0c3e418d575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops logging connection changes to a DataLog.  <a href="classnt_1_1_network_table_instance.html#acdd2565c1c78f25d2128d0c3e418d575">More...</a><br /></td></tr>
 <tr class="separator:acdd2565c1c78f25d2128d0c3e418d575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Logger Functions</h2></td></tr>
-<tr class="memitem:a39e38354186352eb5351ae671108de5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a39e38354186352eb5351ae671108de5c">AddLogger</a> (std::function&lt; void(const <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &amp;msg)&gt; func, unsigned int minLevel, unsigned int maxLevel)</td></tr>
-<tr class="memdesc:a39e38354186352eb5351ae671108de5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="classnt_1_1_network_table_instance.html#a39e38354186352eb5351ae671108de5c">More...</a><br /></td></tr>
-<tr class="separator:a39e38354186352eb5351ae671108de5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e67285e9e103e77c27c4486d4856927"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3e67285e9e103e77c27c4486d4856927">RemoveLogger</a> (<a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a> logger)</td></tr>
-<tr class="memdesc:a3e67285e9e103e77c27c4486d4856927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a logger.  <a href="classnt_1_1_network_table_instance.html#a3e67285e9e103e77c27c4486d4856927">More...</a><br /></td></tr>
-<tr class="separator:a3e67285e9e103e77c27c4486d4856927"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >NetworkTables Instance. </p>
@@ -492,8 +463,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac4011bb0aaa7aa0c16da3374222614a6" name="ac4011bb0aaa7aa0c16da3374222614a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4011bb0aaa7aa0c16da3374222614a6">&#9670;&nbsp;</a></span>AddConnectionListener()</h2>
+<a id="a244700aa018b6a4cc801ef9f87ae0db0" name="a244700aa018b6a4cc801ef9f87ae0db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244700aa018b6a4cc801ef9f87ae0db0">&#9670;&nbsp;</a></span>AddConnectionListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -502,7 +473,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a> nt::NetworkTableInstance::AddConnectionListener </td>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddConnectionListener </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>immediate_notify</em>, </td>
@@ -510,7 +481,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_connection_notification.html">ConnectionNotification</a> &amp;event)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -539,8 +510,54 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a39e38354186352eb5351ae671108de5c" name="a39e38354186352eb5351ae671108de5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39e38354186352eb5351ae671108de5c">&#9670;&nbsp;</a></span>AddLogger()</h2>
+<a id="a3b2ac36f7c0bda302944dfbc3300e70c" name="a3b2ac36f7c0bda302944dfbc3300e70c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2ac36f7c0bda302944dfbc3300e70c">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_multi_subscriber.html">MultiSubscriber</a> &amp;&#160;</td>
+          <td class="paramname"><em>subscriber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a listener for changes on a subscriber. </p>
+<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. This does NOT keep the subscriber active.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subscriber</td><td><a class="el" href="classnt_1_1_subscriber.html" title="NetworkTables subscriber.">Subscriber</a> </td></tr>
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
+<a id="ab0fd8c21f5d8235a91bc2858259a0005" name="ab0fd8c21f5d8235a91bc2858259a0005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0fd8c21f5d8235a91bc2858259a0005">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -549,14 +566,226 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a> nt::NetworkTableInstance::AddLogger </td>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &amp;msg)&gt;&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a listener for changes on an entry. </p>
+<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entry</td><td>Entry </td></tr>
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
+<a id="a3149f80a27268b5c1610a590d437ece5" name="a3149f80a27268b5c1610a590d437ece5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3149f80a27268b5c1610a590d437ece5">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
+          <td class="paramname"><em>prefixes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a listener for changes to topics with names that start with any of the given prefixes. </p>
+<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
+<p >This creates a corresponding internal subscriber with the lifetime of the listener.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefixes</td><td><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> name string prefixes </td></tr>
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
+<a id="a72a3b3655ee043931e176fc1895de380" name="a72a3b3655ee043931e176fc1895de380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a3b3655ee043931e176fc1895de380">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_subscriber.html">Subscriber</a> &amp;&#160;</td>
+          <td class="paramname"><em>subscriber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a listener for changes on a subscriber. </p>
+<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. This does NOT keep the subscriber active.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subscriber</td><td><a class="el" href="classnt_1_1_subscriber.html" title="NetworkTables subscriber.">Subscriber</a> </td></tr>
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
+<a id="a9c3152f8b83706bcb4bd3d22081adf91" name="a9c3152f8b83706bcb4bd3d22081adf91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3152f8b83706bcb4bd3d22081adf91">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_topic.html">Topic</a>&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a listener for changes on a particular topic. </p>
+<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
+<p >This creates a corresponding internal subscriber with the lifetime of the listener.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topic</td><td><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </td></tr>
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
+<a id="a3679902f58227a93622bd65c05973425" name="a3679902f58227a93622bd65c05973425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3679902f58227a93622bd65c05973425">&#9670;&nbsp;</a></span>AddLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddLogger </td>
+          <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>minLevel</em>, </td>
         </tr>
@@ -564,7 +793,13 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>maxLevel</em>&#160;</td>
+          <td class="paramname"><em>maxLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -583,425 +818,9 @@ Static Public Attributes</h2></td></tr>
 <p >By default, log messages are sent to stderr; this function sends log messages with the specified levels to the provided callback function instead. The callback function will only be called for log messages with level greater than or equal to minLevel and less than or equal to maxLevel; messages outside this range will be silently ignored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">func</td><td>log callback function </td></tr>
     <tr><td class="paramname">minLevel</td><td>minimum log level </td></tr>
     <tr><td class="paramname">maxLevel</td><td>maximum log level </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Logger handle </dd></dl>
-
-</div>
-</div>
-<a id="a4b4fc3f7cd53816cfeec6c5521db939f" name="a4b4fc3f7cd53816cfeec6c5521db939f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b4fc3f7cd53816cfeec6c5521db939f">&#9670;&nbsp;</a></span>AddTopicListener() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> nt::NetworkTableInstance::AddTopicListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_multi_subscriber.html">MultiSubscriber</a> &amp;&#160;</td>
-          <td class="paramname"><em>subscriber</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a topic listener for topic changes on a subscriber. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. This does NOT keep the subscriber active.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subscriber</td><td><a class="el" href="classnt_1_1_subscriber.html" title="NetworkTables subscriber.">Subscriber</a> </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="a5ac331fe0a5d0b9d634cd77c6749340b" name="a5ac331fe0a5d0b9d634cd77c6749340b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ac331fe0a5d0b9d634cd77c6749340b">&#9670;&nbsp;</a></span>AddTopicListener() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> nt::NetworkTableInstance::AddTopicListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a topic listener for topic changes on an entry. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry</td><td>Entry </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="af13259c7a65adb4a4f4e93c7495128f4" name="af13259c7a65adb4a4f4e93c7495128f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af13259c7a65adb4a4f4e93c7495128f4">&#9670;&nbsp;</a></span>AddTopicListener() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> nt::NetworkTableInstance::AddTopicListener </td>
-          <td>(</td>
-          <td class="paramtype">std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt;&#160;</td>
-          <td class="paramname"><em>prefixes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a topic listener for changes to topics with names that start with any of the given prefixes. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">prefixes</td><td><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> name string prefixes </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="a52b6f1bec3cc3a22df67c81561ee2e06" name="a52b6f1bec3cc3a22df67c81561ee2e06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52b6f1bec3cc3a22df67c81561ee2e06">&#9670;&nbsp;</a></span>AddTopicListener() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> nt::NetworkTableInstance::AddTopicListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_subscriber.html">Subscriber</a> &amp;&#160;</td>
-          <td class="paramname"><em>subscriber</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a topic listener for topic changes on a subscriber. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. This does NOT keep the subscriber active.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subscriber</td><td><a class="el" href="classnt_1_1_subscriber.html" title="NetworkTables subscriber.">Subscriber</a> </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="a3b3048dfaeac9bf183fecd851e24f1c4" name="a3b3048dfaeac9bf183fecd851e24f1c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b3048dfaeac9bf183fecd851e24f1c4">&#9670;&nbsp;</a></span>AddTopicListener() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a> nt::NetworkTableInstance::AddTopicListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_topic.html">Topic</a>&#160;</td>
-          <td class="paramname"><em>topic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_topic_notification.html">TopicNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a topic listener for changes on a particular topic. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">topic</td><td><a class="el" href="classnt_1_1_topic.html" title="NetworkTables Topic.">Topic</a> </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_topic_listener_flags.html" title="Flag values for use with topic listeners.">TopicListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="ad0933a42baab0a87a6b68d0bcac78ff1" name="ad0933a42baab0a87a6b68d0bcac78ff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0933a42baab0a87a6b68d0bcac78ff1">&#9670;&nbsp;</a></span>AddValueListener() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a> nt::NetworkTableInstance::AddValueListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_multi_subscriber.html">MultiSubscriber</a> &amp;&#160;</td>
-          <td class="paramname"><em>subscriber</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a value listener for value changes on a subscriber. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. This does NOT keep the subscriber active.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subscriber</td><td><a class="el" href="classnt_1_1_subscriber.html" title="NetworkTables subscriber.">Subscriber</a> </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_value_listener_flags.html" title="Flag values for use with value listeners.">ValueListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="aff85d4bec5b2223869df7d69078a3e5f" name="aff85d4bec5b2223869df7d69078a3e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff85d4bec5b2223869df7d69078a3e5f">&#9670;&nbsp;</a></span>AddValueListener() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a> nt::NetworkTableInstance::AddValueListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a value listener for value changes on an entry. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry</td><td>Entry </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_value_listener_flags.html" title="Flag values for use with value listeners.">ValueListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="ac1b94747bb53d4f69f4246ac8c5d4831" name="ac1b94747bb53d4f69f4246ac8c5d4831"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1b94747bb53d4f69f4246ac8c5d4831">&#9670;&nbsp;</a></span>AddValueListener() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a> nt::NetworkTableInstance::AddValueListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_subscriber.html">Subscriber</a> &amp;&#160;</td>
-          <td class="paramname"><em>subscriber</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_value_notification.html">ValueNotification</a> &amp;)&gt;&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Add a value listener for value changes on a subscriber. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function. This does NOT keep the subscriber active.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subscriber</td><td><a class="el" href="classnt_1_1_subscriber.html" title="NetworkTables subscriber.">Subscriber</a> </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_value_listener_flags.html" title="Flag values for use with value listeners.">ValueListenerFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
+    <tr><td class="paramname">func</td><td>callback function </td></tr>
   </table>
   </dd>
 </dl>
@@ -2057,8 +1876,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7d5282662e5be28b164d932a9cdf8e81" name="a7d5282662e5be28b164d932a9cdf8e81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d5282662e5be28b164d932a9cdf8e81">&#9670;&nbsp;</a></span>RemoveConnectionListener()</h2>
+<a id="aa61e82ca14608ac1ec47ff62ddc1e983" name="aa61e82ca14608ac1ec47ff62ddc1e983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa61e82ca14608ac1ec47ff62ddc1e983">&#9670;&nbsp;</a></span>RemoveListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2067,77 +1886,9 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void nt::NetworkTableInstance::RemoveConnectionListener </td>
+          <td class="memname">void nt::NetworkTableInstance::RemoveListener </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga8d3ba6e379733ece67a87e8688b53c17">NT_ConnectionListener</a>&#160;</td>
-          <td class="paramname"><em>conn_listener</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove a connection listener. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">conn_listener</td><td>Listener handle to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3e67285e9e103e77c27c4486d4856927" name="a3e67285e9e103e77c27c4486d4856927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e67285e9e103e77c27c4486d4856927">&#9670;&nbsp;</a></span>RemoveLogger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::RemoveLogger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaad4b20b9e9ba44ad433198efe1456fe2">NT_Logger</a>&#160;</td>
-          <td class="paramname"><em>logger</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove a logger. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">logger</td><td>Logger handle to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aaa92167d0315ba83ea6be372eab9b70d" name="aaa92167d0315ba83ea6be372eab9b70d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa92167d0315ba83ea6be372eab9b70d">&#9670;&nbsp;</a></span>RemoveTopicListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::RemoveTopicListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaf18ca818de1f00789c01f87e62c22da6">NT_TopicListener</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td>
           <td class="paramname"><em>listener</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2149,41 +1900,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Remove a topic listener. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">listener</td><td>Listener handle to remove </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aec3c69adc66969a38636fe232b01563b" name="aec3c69adc66969a38636fe232b01563b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3c69adc66969a38636fe232b01563b">&#9670;&nbsp;</a></span>RemoveValueListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::NetworkTableInstance::RemoveValueListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaf0fd1ca5d916f555e5f0b9cef7b3ecb6">NT_ValueListener</a>&#160;</td>
-          <td class="paramname"><em>listener</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remove a value listener. </p>
+<p>Remove a listener. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">listener</td><td>Listener handle to remove </td></tr>
@@ -2825,8 +2542,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a999bd24ac6f1255f0aa687558b832585" name="a999bd24ac6f1255f0aa687558b832585"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a999bd24ac6f1255f0aa687558b832585">&#9670;&nbsp;</a></span>WaitForConnectionListenerQueue()</h2>
+<a id="a2905300d437f50e15953f62d7341f772" name="a2905300d437f50e15953f62d7341f772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2905300d437f50e15953f62d7341f772">&#9670;&nbsp;</a></span>WaitForListenerQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2835,7 +2552,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool nt::NetworkTableInstance::WaitForConnectionListenerQueue </td>
+          <td class="memname">bool nt::NetworkTableInstance::WaitForListenerQueue </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
@@ -2849,80 +2566,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Wait for the connection listener queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the connection listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
-
-</div>
-</div>
-<a id="ae078eb37e350cc863efa754b1f12290c" name="ae078eb37e350cc863efa754b1f12290c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae078eb37e350cc863efa754b1f12290c">&#9670;&nbsp;</a></span>WaitForTopicListenerQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool nt::NetworkTableInstance::WaitForTopicListenerQueue </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wait for the topic listener queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the topic listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>False if timed out, otherwise true. </dd></dl>
-
-</div>
-</div>
-<a id="aaa87de2dcca33d44161609d107f16535" name="aaa87de2dcca33d44161609d107f16535"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa87de2dcca33d44161609d107f16535">&#9670;&nbsp;</a></span>WaitForValueListenerQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool nt::NetworkTableInstance::WaitForValueListenerQueue </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>timeout</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wait for the value listener queue to be empty. </p>
-<p >This is primarily useful for deterministic testing. This blocks until either the value listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
+<p>Wait for the listener queue to be empty. </p>
+<p >This is primarily useful for deterministic testing. This blocks until either the listener queue is empty (e.g. there are no more events that need to be passed along to callbacks or poll queues) or the timeout expires.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timeout</td><td>timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to block indefinitely </td></tr>
@@ -2992,7 +2637,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a></li>
-    <li class="footer">Generated on Tue Nov 1 2022 02:20:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 1 2022 04:55:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

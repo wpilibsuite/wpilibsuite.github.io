@@ -8,7 +8,7 @@ var structinternal_1_1_colamd_1_1_row_structure =
     [ "length", "structinternal_1_1_colamd_1_1_row_structure.html#a225e93eefd7dba5222de03ded783c5a3", null ],
     [ "mark", "structinternal_1_1_colamd_1_1_row_structure.html#a7a23dd131dfe0e509daf08d0490085dd", null ],
     [ "p", "structinternal_1_1_colamd_1_1_row_structure.html#ab1d50219b2880900591a7de537ce1825", null ],
-    [ "shared1", "structinternal_1_1_colamd_1_1_row_structure.html#a21aad86db3d92da93d248983ecb7f5fd", null ],
-    [ "shared2", "structinternal_1_1_colamd_1_1_row_structure.html#a3bf859955e328cc734cbf2a99a452717", null ],
+    [ "shared1", "structinternal_1_1_colamd_1_1_row_structure.html#a67cc421c9dc3916152e59a2b122b11e5", null ],
+    [ "shared2", "structinternal_1_1_colamd_1_1_row_structure.html#ad7109aa62d83a03d7f2c0b443229cd34", null ],
     [ "start", "structinternal_1_1_colamd_1_1_row_structure.html#aaf061c0463f76355fa845621d87c5c87", null ]
 ];

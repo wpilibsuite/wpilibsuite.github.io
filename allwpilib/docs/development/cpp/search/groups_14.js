@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['value_20listener_20functions_0',['Value Listener Functions',['../group__ntcore__valuelistener__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__valuelistener__func.html',1,'(Global Namespace)']]]
+  ['wpilib_20hal_20api_0',['WPILib HAL API',['../group__hal__capi.html',1,'']]],
+  ['write_20api_1',['Write API',['../group__writer.html',1,'']]]
 ];

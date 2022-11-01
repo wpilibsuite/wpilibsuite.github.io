@@ -656,9 +656,6 @@ var hierarchy =
     ] ],
     [ "wpi::sig::ConnectionBlocker", "classwpi_1_1sig_1_1_connection_blocker.html", null ],
     [ "nt::ConnectionInfo", "structnt_1_1_connection_info.html", null ],
-    [ "nt::ConnectionListener", "classnt_1_1_connection_listener.html", null ],
-    [ "nt::ConnectionListenerPoller", "classnt_1_1_connection_listener_poller.html", null ],
-    [ "nt::ConnectionNotification", "classnt_1_1_connection_notification.html", null ],
     [ "Eigen::internal::conservative_resize_like_impl< Derived, OtherDerived, IsVector >", "struct_eigen_1_1internal_1_1conservative__resize__like__impl.html", null ],
     [ "Eigen::internal::conservative_resize_like_impl< Derived, OtherDerived, false >", "struct_eigen_1_1internal_1_1conservative__resize__like__impl.html", [
       [ "Eigen::internal::conservative_resize_like_impl< Derived, OtherDerived, true >", "struct_eigen_1_1internal_1_1conservative__resize__like__impl_3_01_derived_00_01_other_derived_00_01true_01_4.html", null ]
@@ -1549,6 +1546,8 @@ var hierarchy =
     [ "Eigen::internal::evaluator_traits_base< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits__base.html", [
       [ "Eigen::internal::evaluator_traits< HouseholderSequence< VectorsType, CoeffsType, Side > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_householder_sequence_3_01_vectors_type_00_01_5d5adf52607be62fe2f73ff93bacbb36.html", null ]
     ] ],
+    [ "nt::Event", "classnt_1_1_event.html", null ],
+    [ "nt::EventFlags", "structnt_1_1_event_flags.html", null ],
     [ "frc::EventLoop", "classfrc_1_1_event_loop.html", null ],
     [ "wpi::EventLoopRunner", "classwpi_1_1_event_loop_runner.html", null ],
     [ "wpi::EventVector", "structwpi_1_1_event_vector.html", null ],
@@ -2729,6 +2728,8 @@ var hierarchy =
     [ "nt::NetworkTable", "classnt_1_1_network_table.html", null ],
     [ "nt::NetworkTableEntry", "classnt_1_1_network_table_entry.html", null ],
     [ "nt::NetworkTableInstance", "classnt_1_1_network_table_instance.html", null ],
+    [ "nt::NetworkTableListener", "classnt_1_1_network_table_listener.html", null ],
+    [ "nt::NetworkTableListenerPoller", "classnt_1_1_network_table_listener_poller.html", null ],
     [ "drake::never_destroyed< T >", "classdrake_1_1never__destroyed.html", null ],
     [ "wpi::memory::detail::new_allocator_impl", "structwpi_1_1memory_1_1detail_1_1new__allocator__impl.html", null ],
     [ "Eigen::internal::no_assignment_operator", "class_eigen_1_1internal_1_1no__assignment__operator.html", [
@@ -2867,7 +2868,7 @@ var hierarchy =
     [ "frc::Notifier", "classfrc_1_1_notifier.html", null ],
     [ "NRowsBlockXpr< N >", "struct_n_rows_block_xpr.html", null ],
     [ "NT_ConnectionInfo", "struct_n_t___connection_info.html", null ],
-    [ "NT_ConnectionNotification", "struct_n_t___connection_notification.html", null ],
+    [ "NT_Event", "struct_n_t___event.html", null ],
     [ "NT_LogMessage", "struct_n_t___log_message.html", null ],
     [ "NT_PubSubOption", "struct_n_t___pub_sub_option.html", null ],
     [ "NT_String", "struct_n_t___string.html", null ],
@@ -2883,9 +2884,8 @@ var hierarchy =
     [ "NT_TimestampedString", "struct_n_t___timestamped_string.html", null ],
     [ "NT_TimestampedStringArray", "struct_n_t___timestamped_string_array.html", null ],
     [ "NT_TopicInfo", "struct_n_t___topic_info.html", null ],
-    [ "NT_TopicNotification", "struct_n_t___topic_notification.html", null ],
     [ "NT_Value", "struct_n_t___value.html", null ],
-    [ "NT_ValueNotification", "struct_n_t___value_notification.html", null ],
+    [ "NT_ValueEventData", "struct_n_t___value_event_data.html", null ],
     [ "detail::null< T >", "structdetail_1_1null.html", null ],
     [ "wpi::memory::null_allocator", "classwpi_1_1memory_1_1null__allocator.html", null ],
     [ "null_chrono_spec_handler< Derived >", "structnull__chrono__spec__handler.html", null ],
@@ -4430,10 +4430,6 @@ var hierarchy =
       [ "nt::UnitTopic< T >", "classnt_1_1_unit_topic.html", null ]
     ] ],
     [ "nt::TopicInfo", "structnt_1_1_topic_info.html", null ],
-    [ "nt::TopicListener", "classnt_1_1_topic_listener.html", null ],
-    [ "nt::TopicListenerFlags", "structnt_1_1_topic_listener_flags.html", null ],
-    [ "nt::TopicListenerPoller", "classnt_1_1_topic_listener_poller.html", null ],
-    [ "nt::TopicNotification", "classnt_1_1_topic_notification.html", null ],
     [ "frc::Tracer", "classfrc_1_1_tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1_trailing_zeros_counter.html", null ],
     [ "Eigen::internal::traits< T >", "struct_eigen_1_1internal_1_1traits.html", [
@@ -5496,12 +5492,9 @@ var hierarchy =
     [ "nt::Value", "classnt_1_1_value.html", null ],
     [ "value< Context >", "classvalue.html", null ],
     [ "counting_iterator::value_type", "structcounting__iterator_1_1value__type.html", null ],
+    [ "nt::ValueEventData", "classnt_1_1_value_event_data.html", null ],
     [ "Eigen::symbolic::ValueExpr< IndexType >", "class_eigen_1_1symbolic_1_1_value_expr.html", null ],
     [ "Eigen::symbolic::ValueExpr< internal::FixedInt< N > >", "class_eigen_1_1symbolic_1_1_value_expr_3_01internal_1_1_fixed_int_3_01_n_01_4_01_4.html", null ],
-    [ "nt::ValueListener", "classnt_1_1_value_listener.html", null ],
-    [ "nt::ValueListenerFlags", "structnt_1_1_value_listener_flags.html", null ],
-    [ "nt::ValueListenerPoller", "classnt_1_1_value_listener_poller.html", null ],
-    [ "nt::ValueNotification", "classnt_1_1_value_notification.html", null ],
     [ "Eigen::internal::variable_if_dynamic< T, Value >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
     [ "Eigen::internal::variable_if_dynamic< Index, _Rows >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
     [ "Eigen::internal::variable_if_dynamic< Index, _Subs >", "class_eigen_1_1internal_1_1variable__if__dynamic.html", null ],
