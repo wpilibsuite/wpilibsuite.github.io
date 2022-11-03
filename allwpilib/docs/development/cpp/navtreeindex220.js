@@ -1,5 +1,7 @@
 var NAVTREEINDEX220 =
 {
+"wpimath_2src_2main_2native_2thirdparty_2eigen_2include_2_eigen_2src_2_core_2util_2_constants_8h.html#ae54c092bdb3a978b9aa8cc50dcafc13ca72e4dbf895a172869994a78cb89f7e08":[7,0,8,1,0,0,0,1,3,2,38,2],
+"wpimath_2src_2main_2native_2thirdparty_2eigen_2include_2_eigen_2src_2_core_2util_2_constants_8h.html#ae54c092bdb3a978b9aa8cc50dcafc13ca85f24e89f5889e187a000be8c9b83b69":[7,0,8,1,0,0,0,1,3,2,38,5],
 "wpimath_2src_2main_2native_2thirdparty_2eigen_2include_2_eigen_2src_2_core_2util_2_constants_8h.html#ae54c092bdb3a978b9aa8cc50dcafc13cabc74b8591881b6f1d2c17bd0799362e7":[7,0,8,1,0,0,0,1,3,2,38,7],
 "wpimath_2src_2main_2native_2thirdparty_2eigen_2include_2_eigen_2src_2_core_2util_2_constants_8h.html#ae54c092bdb3a978b9aa8cc50dcafc13caf53681b5ef59001bbea2ea1ecdc1970b":[7,0,8,1,0,0,0,1,3,2,38,6],
 "wpimath_2src_2main_2native_2thirdparty_2eigen_2include_2_eigen_2src_2_core_2util_2_constants_8h_source.html":[7,0,8,1,0,0,0,1,3,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX220 =
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cac10bddadd1786a8a12f96ae7db5bafb8":[7,0,10,0,0,0,2,7,68],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cac378985d629e99a4e86213db0cd5e70d":[7,0,10,0,0,0,2,7,15],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cac55c68625ca1da0e1d4a922fc8cb373e":[7,0,10,0,0,0,2,7,57],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cac5aaf97240e28904c5b96eab2cbf753b":[7,0,10,0,0,0,2,7,85],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cac7357031b08389007e6da9f56ea145e0":[7,0,10,0,0,0,2,7,6],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cacda7a650c5856cf2f6738072447d7825":[7,0,10,0,0,0,2,7,50]
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cac5aaf97240e28904c5b96eab2cbf753b":[7,0,10,0,0,0,2,7,85]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2-2-ga9606ce</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2-7-g0da169d</span>
    </div>
   </td>
  </tr>
@@ -147,9 +147,9 @@ class frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</div><p >This class wrap
 <p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a4d01f397833aaadca1cff931b4749bb6" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 20 ms, then you should change the nominal delta time by specifying it in the constructor.</p>
 <p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7" title="Add a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a> can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.</p>
 <p >The state-space system used internally has the following states (x), inputs (u), and outputs (y):</p>
-<p ><b> x = [x, y, theta, s_0, ... s_n]ᵀ </b> in the field coordinate system containing x position, y position, and heading, followed by the distance travelled by each wheel.</p>
+<p ><b> x = [x, y, theta, s_0, ..., s_n]ᵀ </b> in the field coordinate system containing x position, y position, and heading, followed by the distance travelled by each wheel.</p>
 <p ><b> u = [v_x, v_y, omega, v_0, ... v_n]ᵀ </b> containing x velocity, y velocity, and angular velocity in the field coordinate system, followed by the velocity measured at each wheel.</p>
-<p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta]ᵀ </b> containing gyro heading. </p>
+<p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta, s_0, ..., s_n]ᵀ </b> containing gyro heading, followed by the distance travelled by each wheel. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adb97746be2798b4d824c0d12957db8f2" name="adb97746be2798b4d824c0d12957db8f2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb97746be2798b4d824c0d12957db8f2">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator()</h2>
@@ -672,7 +672,7 @@ template&lt;size_t NumModules&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">SwerveDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Wed Nov 2 2022 17:55:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Nov 3 2022 05:57:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

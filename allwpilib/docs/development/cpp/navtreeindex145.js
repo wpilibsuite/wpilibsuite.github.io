@@ -1,5 +1,7 @@
 var NAVTREEINDEX145 =
 {
+"is__nan_8hpp.html#a7fd4c41351759cc92d90c78cd6e22e5b":[7,0,8,2,0,0,36,0],
+"is__nan_8hpp.html#af80ec3ec573ffd1e1579939a9f63e886":[7,0,8,2,0,0,36,2],
 "is__nan_8hpp_source.html":[7,0,8,2,0,0,36],
 "is__odd_8hpp.html":[7,0,8,2,0,0,37],
 "is__odd_8hpp.html#aae7ef0942c54e1a3b04311bd7a7d9066":[7,0,8,2,0,0,37,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX145 =
 "memory__pool__collection_8hpp.html":[7,0,10,4,0,0,0,18],
 "memory__pool__collection_8hpp_source.html":[7,0,10,4,0,0,0,18],
 "memory__pool__type_8hpp.html":[7,0,10,4,0,0,0,19],
-"memory__pool__type_8hpp_source.html":[7,0,10,4,0,0,0,19],
-"memory__resource__adapter_8hpp.html":[7,0,10,4,0,0,0,20],
-"memory__resource__adapter_8hpp.html#a3083c047d212b6d52b8ba27431d0d8e2":[7,0,10,4,0,0,0,20,5]
+"memory__pool__type_8hpp_source.html":[7,0,10,4,0,0,0,19]
 };

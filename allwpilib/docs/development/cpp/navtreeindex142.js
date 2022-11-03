@@ -1,5 +1,7 @@
 var NAVTREEINDEX142 =
 {
+"group__ntcore___integer__func.html#gafe458d32001bc04cb53fb16f5bee192a":[3,12,10,3],
+"group__ntcore___integer_array__cfunc.html":[3,22],
 "group__ntcore___integer_array__cfunc.html#ga432bb645a0be77a89d5e3152aa57dc92":[3,22,3],
 "group__ntcore___integer_array__cfunc.html#ga52a8e3fede373b5095254e6a6d7ef204":[3,22,2],
 "group__ntcore___integer_array__cfunc.html#ga67641bf08369b3393056d8c506e6f6b1":[3,22,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX142 =
 "group__ntcore__network__func.html#gabeb06b9740c43e70829775328079aa49":[3,12,5,10],
 "group__ntcore__network__func.html#gabebaea0217307bca6ce2d4d1b8e33ba7":[3,12,5,13],
 "group__ntcore__network__func.html#gad5d4afbe000bb6f39f9d4f48cecadd0e":[3,12,5,7],
-"group__ntcore__network__func.html#gad800bceb869152b1da9fe40cae28bab4":[3,12,5,12],
-"group__ntcore__network__func.html#gadadda84f6937e36ee082a05d448d940a":[3,12,5,2],
-"group__ntcore__network__func.html#gadee356b1044eb1ab0083d8eb6967297e":[3,12,5,1]
+"group__ntcore__network__func.html#gad800bceb869152b1da9fe40cae28bab4":[3,12,5,12]
 };

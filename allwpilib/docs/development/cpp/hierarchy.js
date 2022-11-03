@@ -1269,7 +1269,7 @@ var hierarchy =
     [ "Eigen::EigenSolver< _MatrixType >", "class_eigen_1_1_eigen_solver.html", null ],
     [ "Eigen::internal::eigenvalues_selector< Derived, IsComplex >", "struct_eigen_1_1internal_1_1eigenvalues__selector.html", null ],
     [ "Eigen::internal::eigenvalues_selector< Derived, false >", "struct_eigen_1_1internal_1_1eigenvalues__selector_3_01_derived_00_01false_01_4.html", null ],
-    [ "frc::ElevatorFeedforward< Distance >", "classfrc_1_1_elevator_feedforward.html", null ],
+    [ "frc::ElevatorFeedforward", "classfrc_1_1_elevator_feedforward.html", null ],
     [ "wpi::empty_array_t", "structwpi_1_1empty__array__t.html", null ],
     [ "Eigen::internal::enable_if< Condition, T >", "struct_eigen_1_1internal_1_1enable__if.html", null ],
     [ "Eigen::internal::enable_if< true, T >", "struct_eigen_1_1internal_1_1enable__if_3_01true_00_01_t_01_4.html", null ],

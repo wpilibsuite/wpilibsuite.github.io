@@ -1,5 +1,7 @@
 var NAVTREEINDEX143 =
 {
+"group__ntcore__network__func.html#gadadda84f6937e36ee082a05d448d940a":[3,12,5,2],
+"group__ntcore__network__func.html#gadee356b1044eb1ab0083d8eb6967297e":[3,12,5,1],
 "group__ntcore__network__func.html#gae9b2d7bf5edb51050d5cc641a42b0666":[3,12,5,6],
 "group__ntcore__table__cfunc.html":[3,14,1],
 "group__ntcore__table__cfunc.html#ga0cbb1ad66f3abcd2b0a66dc760c691ee":[3,14,1,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX143 =
 "hal_2src_2main_2native_2include_2hal_2_analog_input_8h.html":[7,0,6,10],
 "hal_2src_2main_2native_2include_2hal_2_analog_input_8h_source.html":[7,0,6,10],
 "hal_2src_2main_2native_2include_2hal_2_analog_output_8h.html":[7,0,6,11],
-"hal_2src_2main_2native_2include_2hal_2_analog_output_8h_source.html":[7,0,6,11],
-"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html":[7,0,6,12],
-"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h_source.html":[7,0,6,12]
+"hal_2src_2main_2native_2include_2hal_2_analog_output_8h_source.html":[7,0,6,11]
 };

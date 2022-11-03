@@ -1,5 +1,7 @@
 var NAVTREEINDEX173 =
 {
+"struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_014_01_4.html":[6,0,4,2,188],
+"struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_014_01_4.html":[4,0,8,4,190],
 "struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check.html":[6,0,4,2,189],
 "struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check.html":[4,0,8,4,191],
 "struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check_3_01_matrix_type_00_01_result_type_00_011_01_4.html":[6,0,4,2,190],
@@ -247,7 +249,5 @@ var NAVTREEINDEX173 =
 "struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_dense_00_01_functor_01_4.html":[6,0,4,2,244],
 "struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_dense_00_01_functor_01_4.html":[4,0,8,4,246],
 "struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_dense_00_01_functor_01_4.html#a50e48bcebb52811d17225a868810466a":[4,0,8,4,246,0],
-"struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_dense_00_01_functor_01_4.html#a50e48bcebb52811d17225a868810466a":[6,0,4,2,244,0],
-"struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_sparse_00_01_functor_01_4.html":[6,0,4,2,245],
-"struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_sparse_00_01_functor_01_4.html":[4,0,8,4,247]
+"struct_eigen_1_1internal_1_1cwise__promote__storage__type_3_01_dense_00_01_dense_00_01_functor_01_4.html#a50e48bcebb52811d17225a868810466a":[6,0,4,2,244,0]
 };

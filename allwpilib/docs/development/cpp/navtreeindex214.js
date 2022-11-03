@@ -1,5 +1,7 @@
 var NAVTREEINDEX214 =
 {
+"structwpi_1_1memory_1_1detail_1_1is__composable__allocator.html":[6,0,14,6,0,19],
+"structwpi_1_1memory_1_1detail_1_1is__composable__allocator_3_01_t_00_01std_1_1integral__constant_3_01bool_00_01true_01_4_01_4.html":[4,0,24,6,0,21],
 "structwpi_1_1memory_1_1detail_1_1is__composable__allocator_3_01_t_00_01std_1_1integral__constant_3_01bool_00_01true_01_4_01_4.html":[6,0,14,6,0,20],
 "structwpi_1_1memory_1_1detail_1_1is__instantiation__of.html":[4,0,24,6,0,22],
 "structwpi_1_1memory_1_1detail_1_1is__instantiation__of.html":[6,0,14,6,0,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX214 =
 "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr.html":[4,0,24,8,1,0,3],
 "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr.html":[6,0,14,8,1,0,3],
 "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr_3_01_t_00_01void__t_3_01decltype_07std_1_1d502a13558fd27ef56459636c80faafb8.html":[4,0,24,8,1,0,4],
-"structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr_3_01_t_00_01void__t_3_01decltype_07std_1_1d502a13558fd27ef56459636c80faafb8.html":[6,0,14,8,1,0,4],
-"structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr__compatible.html":[4,0,24,8,1,0,5],
-"structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr__compatible.html":[6,0,14,8,1,0,5]
+"structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr_3_01_t_00_01void__t_3_01decltype_07std_1_1d502a13558fd27ef56459636c80faafb8.html":[6,0,14,8,1,0,4]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2-2-ga9606ce</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2-7-g0da169d</span>
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <p >The state-space system used internally has the following states (x), inputs (u), and outputs (y):</p>
 <p ><b> x = [x, y, theta, s_fl, s_fr, s_rl, s_rr]ᵀ </b> in the field coordinate system containing x position, y position, and heading, followed by the distance driven by the front left, front right, rear left, and rear right wheels.</p>
 <p ><b> u = [v_x, v_y, omega, v_fl, v_fr, v_rl, v_rr]ᵀ </b> containing x velocity, y velocity, and angular rate in the field coordinate system, followed by the velocity of the front left, front right, rear left, and rear right wheels.</p>
-<p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta]ᵀ </b> containing gyro heading. </p>
+<p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta, s_fl, s_fr, s_rl, s_rr]ᵀ </b> containing gyro heading, followed by the distance driven by the front left, front right, rear left, and rear right wheels. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a882a47b87033cf7ad7883bb638a20f05" name="a882a47b87033cf7ad7883bb638a20f05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a882a47b87033cf7ad7883bb638a20f05">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator()</h2>
@@ -517,7 +517,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html">MecanumDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Wed Nov 2 2022 17:55:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Nov 3 2022 05:57:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
