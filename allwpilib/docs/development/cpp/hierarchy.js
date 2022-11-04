@@ -151,6 +151,8 @@ var hierarchy =
     [ "Eigen::internal::any_unroller< Derived, Dynamic, Rows >", "struct_eigen_1_1internal_1_1any__unroller_3_01_derived_00_01_dynamic_00_01_rows_01_4.html", null ],
     [ "Eigen::internal::apply_rotation_in_the_plane_selector< Scalar, OtherScalar, SizeAtCompileTime, MinAlignment, Vectorizable >", "struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector.html", null ],
     [ "Eigen::internal::apply_rotation_in_the_plane_selector< Scalar, OtherScalar, SizeAtCompileTime, MinAlignment, true >", "struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector_3_01_scalar_00_01_other_scbca20de4cedcca0c18dc0bba81af1524.html", null ],
+    [ "frc::AprilTag", "structfrc_1_1_april_tag.html", null ],
+    [ "frc::AprilTagFieldLayout", "classfrc_1_1_april_tag_field_layout.html", null ],
     [ "arg_converter< T, Context >", "classarg__converter.html", null ],
     [ "arg_data< T, Char, NUM_ARGS, NUM_NAMED_ARGS >", "structarg__data.html", null ],
     [ "arg_data< T, Char, NUM_ARGS, 0 >", "structarg__data_3_01_t_00_01_char_00_01_n_u_m___a_r_g_s_00_010_01_4.html", null ],
