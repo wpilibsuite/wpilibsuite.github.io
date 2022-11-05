@@ -16,167 +16,176 @@
 <span class="sourceLineNo">004</span><a id="line.4"></a>
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.networktables;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
-<span class="sourceLineNo">007</span><a id="line.7">import java.util.function.Consumer;</a>
-<span class="sourceLineNo">008</span><a id="line.8"></a>
-<span class="sourceLineNo">009</span><a id="line.9">/**</a>
-<span class="sourceLineNo">010</span><a id="line.10"> * Event listener. This calls back to a callback function when an event matching the specified mask</a>
-<span class="sourceLineNo">011</span><a id="line.11"> * occurs. The callback function is called asynchronously on a separate thread, so it's important to</a>
-<span class="sourceLineNo">012</span><a id="line.12"> * use synchronization or atomics when accessing any shared state from the callback function.</a>
-<span class="sourceLineNo">013</span><a id="line.13"> */</a>
-<span class="sourceLineNo">014</span><a id="line.14">public final class NetworkTableListener implements AutoCloseable {</a>
-<span class="sourceLineNo">015</span><a id="line.15">  /**</a>
-<span class="sourceLineNo">016</span><a id="line.16">   * Create a listener for changes to topics with names that start with any of the given prefixes.</a>
-<span class="sourceLineNo">017</span><a id="line.17">   * This creates a corresponding internal subscriber with the lifetime of the listener.</a>
-<span class="sourceLineNo">018</span><a id="line.18">   *</a>
-<span class="sourceLineNo">019</span><a id="line.19">   * @param inst Instance</a>
-<span class="sourceLineNo">020</span><a id="line.20">   * @param prefixes Topic name string prefixes</a>
-<span class="sourceLineNo">021</span><a id="line.21">   * @param eventMask Bitmask of NetworkTableEvent flags values</a>
-<span class="sourceLineNo">022</span><a id="line.22">   * @param listener Listener function</a>
-<span class="sourceLineNo">023</span><a id="line.23">   * @return Listener</a>
-<span class="sourceLineNo">024</span><a id="line.24">   */</a>
-<span class="sourceLineNo">025</span><a id="line.25">  public static NetworkTableListener createListener(</a>
-<span class="sourceLineNo">026</span><a id="line.26">      NetworkTableInstance inst,</a>
-<span class="sourceLineNo">027</span><a id="line.27">      String[] prefixes,</a>
-<span class="sourceLineNo">028</span><a id="line.28">      int eventMask,</a>
-<span class="sourceLineNo">029</span><a id="line.29">      Consumer&lt;NetworkTableEvent&gt; listener) {</a>
-<span class="sourceLineNo">030</span><a id="line.30">    return new NetworkTableListener(inst, inst.addListener(prefixes, eventMask, listener));</a>
-<span class="sourceLineNo">031</span><a id="line.31">  }</a>
-<span class="sourceLineNo">032</span><a id="line.32"></a>
-<span class="sourceLineNo">033</span><a id="line.33">  /**</a>
-<span class="sourceLineNo">034</span><a id="line.34">   * Create a listener for changes on a particular topic. This creates a corresponding internal</a>
-<span class="sourceLineNo">035</span><a id="line.35">   * subscriber with the lifetime of the listener.</a>
-<span class="sourceLineNo">036</span><a id="line.36">   *</a>
-<span class="sourceLineNo">037</span><a id="line.37">   * @param topic Topic</a>
-<span class="sourceLineNo">038</span><a id="line.38">   * @param eventMask Bitmask of NetworkTableEvent flags values</a>
-<span class="sourceLineNo">039</span><a id="line.39">   * @param listener Listener function</a>
-<span class="sourceLineNo">040</span><a id="line.40">   * @return Listener</a>
-<span class="sourceLineNo">041</span><a id="line.41">   */</a>
-<span class="sourceLineNo">042</span><a id="line.42">  public static NetworkTableListener createListener(</a>
-<span class="sourceLineNo">043</span><a id="line.43">      Topic topic, int eventMask, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
-<span class="sourceLineNo">044</span><a id="line.44">    NetworkTableInstance inst = topic.getInstance();</a>
-<span class="sourceLineNo">045</span><a id="line.45">    return new NetworkTableListener(inst, inst.addListener(topic, eventMask, listener));</a>
-<span class="sourceLineNo">046</span><a id="line.46">  }</a>
-<span class="sourceLineNo">047</span><a id="line.47"></a>
-<span class="sourceLineNo">048</span><a id="line.48">  /**</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * Create a listener for topic changes on a subscriber. This does NOT keep the subscriber active.</a>
-<span class="sourceLineNo">050</span><a id="line.50">   *</a>
-<span class="sourceLineNo">051</span><a id="line.51">   * @param subscriber Subscriber</a>
-<span class="sourceLineNo">052</span><a id="line.52">   * @param eventMask Bitmask of NetworkTableEvent flags values</a>
-<span class="sourceLineNo">053</span><a id="line.53">   * @param listener Listener function</a>
-<span class="sourceLineNo">054</span><a id="line.54">   * @return Listener</a>
-<span class="sourceLineNo">055</span><a id="line.55">   */</a>
-<span class="sourceLineNo">056</span><a id="line.56">  public static NetworkTableListener createListener(</a>
-<span class="sourceLineNo">057</span><a id="line.57">      Subscriber subscriber, int eventMask, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
-<span class="sourceLineNo">058</span><a id="line.58">    NetworkTableInstance inst = subscriber.getTopic().getInstance();</a>
-<span class="sourceLineNo">059</span><a id="line.59">    return new NetworkTableListener(inst, inst.addListener(subscriber, eventMask, listener));</a>
-<span class="sourceLineNo">060</span><a id="line.60">  }</a>
-<span class="sourceLineNo">061</span><a id="line.61"></a>
-<span class="sourceLineNo">062</span><a id="line.62">  /**</a>
-<span class="sourceLineNo">063</span><a id="line.63">   * Create a listener for topic changes on a subscriber. This does NOT keep the subscriber active.</a>
-<span class="sourceLineNo">064</span><a id="line.64">   *</a>
-<span class="sourceLineNo">065</span><a id="line.65">   * @param subscriber Subscriber</a>
-<span class="sourceLineNo">066</span><a id="line.66">   * @param eventMask Bitmask of NetworkTableEvent flags values</a>
-<span class="sourceLineNo">067</span><a id="line.67">   * @param listener Listener function</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * @return Listener</a>
-<span class="sourceLineNo">069</span><a id="line.69">   */</a>
-<span class="sourceLineNo">070</span><a id="line.70">  public static NetworkTableListener createListener(</a>
-<span class="sourceLineNo">071</span><a id="line.71">      MultiSubscriber subscriber, int eventMask, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
-<span class="sourceLineNo">072</span><a id="line.72">    NetworkTableInstance inst = subscriber.getInstance();</a>
-<span class="sourceLineNo">073</span><a id="line.73">    return new NetworkTableListener(inst, inst.addListener(subscriber, eventMask, listener));</a>
-<span class="sourceLineNo">074</span><a id="line.74">  }</a>
-<span class="sourceLineNo">075</span><a id="line.75"></a>
-<span class="sourceLineNo">076</span><a id="line.76">  /**</a>
-<span class="sourceLineNo">077</span><a id="line.77">   * Create a listener for topic changes on an entry.</a>
-<span class="sourceLineNo">078</span><a id="line.78">   *</a>
-<span class="sourceLineNo">079</span><a id="line.79">   * @param entry Entry</a>
-<span class="sourceLineNo">080</span><a id="line.80">   * @param eventMask Bitmask of NetworkTableEvent flags values</a>
-<span class="sourceLineNo">081</span><a id="line.81">   * @param listener Listener function</a>
-<span class="sourceLineNo">082</span><a id="line.82">   * @return Listener</a>
-<span class="sourceLineNo">083</span><a id="line.83">   */</a>
-<span class="sourceLineNo">084</span><a id="line.84">  public static NetworkTableListener createListener(</a>
-<span class="sourceLineNo">085</span><a id="line.85">      NetworkTableEntry entry, int eventMask, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
-<span class="sourceLineNo">086</span><a id="line.86">    NetworkTableInstance inst = entry.getInstance();</a>
-<span class="sourceLineNo">087</span><a id="line.87">    return new NetworkTableListener(inst, inst.addListener(entry, eventMask, listener));</a>
-<span class="sourceLineNo">088</span><a id="line.88">  }</a>
-<span class="sourceLineNo">089</span><a id="line.89"></a>
-<span class="sourceLineNo">090</span><a id="line.90">  /**</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * Create a connection listener.</a>
-<span class="sourceLineNo">092</span><a id="line.92">   *</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * @param inst instance</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * @param immediateNotify notify listener of all existing connections</a>
-<span class="sourceLineNo">095</span><a id="line.95">   * @param listener listener function</a>
-<span class="sourceLineNo">096</span><a id="line.96">   * @return Listener</a>
-<span class="sourceLineNo">097</span><a id="line.97">   */</a>
-<span class="sourceLineNo">098</span><a id="line.98">  public static NetworkTableListener createConnectionListener(</a>
-<span class="sourceLineNo">099</span><a id="line.99">      NetworkTableInstance inst, boolean immediateNotify, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
-<span class="sourceLineNo">100</span><a id="line.100">    return new NetworkTableListener(inst, inst.addConnectionListener(immediateNotify, listener));</a>
-<span class="sourceLineNo">101</span><a id="line.101">  }</a>
-<span class="sourceLineNo">102</span><a id="line.102"></a>
-<span class="sourceLineNo">103</span><a id="line.103">  /**</a>
-<span class="sourceLineNo">104</span><a id="line.104">   * Create a listener for log messages. By default, log messages are sent to stderr; this function</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * sends log messages with the specified levels to the provided callback function instead. The</a>
-<span class="sourceLineNo">106</span><a id="line.106">   * callback function will only be called for log messages with level greater than or equal to</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * minLevel and less than or equal to maxLevel; messages outside this range will be silently</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * ignored.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   *</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * @param inst instance</a>
-<span class="sourceLineNo">111</span><a id="line.111">   * @param minLevel minimum log level</a>
-<span class="sourceLineNo">112</span><a id="line.112">   * @param maxLevel maximum log level</a>
-<span class="sourceLineNo">113</span><a id="line.113">   * @param listener listener function</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * @return Listener</a>
-<span class="sourceLineNo">115</span><a id="line.115">   */</a>
-<span class="sourceLineNo">116</span><a id="line.116">  public static NetworkTableListener createLogger(</a>
-<span class="sourceLineNo">117</span><a id="line.117">      NetworkTableInstance inst, int minLevel, int maxLevel, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
-<span class="sourceLineNo">118</span><a id="line.118">    return new NetworkTableListener(inst, inst.addLogger(minLevel, maxLevel, listener));</a>
-<span class="sourceLineNo">119</span><a id="line.119">  }</a>
-<span class="sourceLineNo">120</span><a id="line.120"></a>
-<span class="sourceLineNo">121</span><a id="line.121">  @Override</a>
-<span class="sourceLineNo">122</span><a id="line.122">  public synchronized void close() {</a>
-<span class="sourceLineNo">123</span><a id="line.123">    if (m_handle != 0) {</a>
-<span class="sourceLineNo">124</span><a id="line.124">      m_inst.removeListener(m_handle);</a>
-<span class="sourceLineNo">125</span><a id="line.125">      m_handle = 0;</a>
-<span class="sourceLineNo">126</span><a id="line.126">    }</a>
-<span class="sourceLineNo">127</span><a id="line.127">  }</a>
-<span class="sourceLineNo">128</span><a id="line.128"></a>
-<span class="sourceLineNo">129</span><a id="line.129">  /**</a>
-<span class="sourceLineNo">130</span><a id="line.130">   * Determines if the native handle is valid.</a>
-<span class="sourceLineNo">131</span><a id="line.131">   *</a>
-<span class="sourceLineNo">132</span><a id="line.132">   * @return True if the native handle is valid, false otherwise.</a>
-<span class="sourceLineNo">133</span><a id="line.133">   */</a>
-<span class="sourceLineNo">134</span><a id="line.134">  public boolean isValid() {</a>
-<span class="sourceLineNo">135</span><a id="line.135">    return m_handle != 0;</a>
+<span class="sourceLineNo">007</span><a id="line.7">import java.util.EnumSet;</a>
+<span class="sourceLineNo">008</span><a id="line.8">import java.util.function.Consumer;</a>
+<span class="sourceLineNo">009</span><a id="line.9"></a>
+<span class="sourceLineNo">010</span><a id="line.10">/**</a>
+<span class="sourceLineNo">011</span><a id="line.11"> * Event listener. This calls back to a callback function when an event matching the specified mask</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * occurs. The callback function is called asynchronously on a separate thread, so it's important to</a>
+<span class="sourceLineNo">013</span><a id="line.13"> * use synchronization or atomics when accessing any shared state from the callback function.</a>
+<span class="sourceLineNo">014</span><a id="line.14"> */</a>
+<span class="sourceLineNo">015</span><a id="line.15">public final class NetworkTableListener implements AutoCloseable {</a>
+<span class="sourceLineNo">016</span><a id="line.16">  /**</a>
+<span class="sourceLineNo">017</span><a id="line.17">   * Create a listener for changes to topics with names that start with any of the given prefixes.</a>
+<span class="sourceLineNo">018</span><a id="line.18">   * This creates a corresponding internal subscriber with the lifetime of the listener.</a>
+<span class="sourceLineNo">019</span><a id="line.19">   *</a>
+<span class="sourceLineNo">020</span><a id="line.20">   * @param inst Instance</a>
+<span class="sourceLineNo">021</span><a id="line.21">   * @param prefixes Topic name string prefixes</a>
+<span class="sourceLineNo">022</span><a id="line.22">   * @param eventKinds set of event kinds to listen to</a>
+<span class="sourceLineNo">023</span><a id="line.23">   * @param listener Listener function</a>
+<span class="sourceLineNo">024</span><a id="line.24">   * @return Listener</a>
+<span class="sourceLineNo">025</span><a id="line.25">   */</a>
+<span class="sourceLineNo">026</span><a id="line.26">  public static NetworkTableListener createListener(</a>
+<span class="sourceLineNo">027</span><a id="line.27">      NetworkTableInstance inst,</a>
+<span class="sourceLineNo">028</span><a id="line.28">      String[] prefixes,</a>
+<span class="sourceLineNo">029</span><a id="line.29">      EnumSet&lt;NetworkTableEvent.Kind&gt; eventKinds,</a>
+<span class="sourceLineNo">030</span><a id="line.30">      Consumer&lt;NetworkTableEvent&gt; listener) {</a>
+<span class="sourceLineNo">031</span><a id="line.31">    return new NetworkTableListener(inst, inst.addListener(prefixes, eventKinds, listener));</a>
+<span class="sourceLineNo">032</span><a id="line.32">  }</a>
+<span class="sourceLineNo">033</span><a id="line.33"></a>
+<span class="sourceLineNo">034</span><a id="line.34">  /**</a>
+<span class="sourceLineNo">035</span><a id="line.35">   * Create a listener for changes on a particular topic. This creates a corresponding internal</a>
+<span class="sourceLineNo">036</span><a id="line.36">   * subscriber with the lifetime of the listener.</a>
+<span class="sourceLineNo">037</span><a id="line.37">   *</a>
+<span class="sourceLineNo">038</span><a id="line.38">   * @param topic Topic</a>
+<span class="sourceLineNo">039</span><a id="line.39">   * @param eventKinds set of event kinds to listen to</a>
+<span class="sourceLineNo">040</span><a id="line.40">   * @param listener Listener function</a>
+<span class="sourceLineNo">041</span><a id="line.41">   * @return Listener</a>
+<span class="sourceLineNo">042</span><a id="line.42">   */</a>
+<span class="sourceLineNo">043</span><a id="line.43">  public static NetworkTableListener createListener(</a>
+<span class="sourceLineNo">044</span><a id="line.44">      Topic topic,</a>
+<span class="sourceLineNo">045</span><a id="line.45">      EnumSet&lt;NetworkTableEvent.Kind&gt; eventKinds,</a>
+<span class="sourceLineNo">046</span><a id="line.46">      Consumer&lt;NetworkTableEvent&gt; listener) {</a>
+<span class="sourceLineNo">047</span><a id="line.47">    NetworkTableInstance inst = topic.getInstance();</a>
+<span class="sourceLineNo">048</span><a id="line.48">    return new NetworkTableListener(inst, inst.addListener(topic, eventKinds, listener));</a>
+<span class="sourceLineNo">049</span><a id="line.49">  }</a>
+<span class="sourceLineNo">050</span><a id="line.50"></a>
+<span class="sourceLineNo">051</span><a id="line.51">  /**</a>
+<span class="sourceLineNo">052</span><a id="line.52">   * Create a listener for topic changes on a subscriber. This does NOT keep the subscriber active.</a>
+<span class="sourceLineNo">053</span><a id="line.53">   *</a>
+<span class="sourceLineNo">054</span><a id="line.54">   * @param subscriber Subscriber</a>
+<span class="sourceLineNo">055</span><a id="line.55">   * @param eventKinds set of event kinds to listen to</a>
+<span class="sourceLineNo">056</span><a id="line.56">   * @param listener Listener function</a>
+<span class="sourceLineNo">057</span><a id="line.57">   * @return Listener</a>
+<span class="sourceLineNo">058</span><a id="line.58">   */</a>
+<span class="sourceLineNo">059</span><a id="line.59">  public static NetworkTableListener createListener(</a>
+<span class="sourceLineNo">060</span><a id="line.60">      Subscriber subscriber,</a>
+<span class="sourceLineNo">061</span><a id="line.61">      EnumSet&lt;NetworkTableEvent.Kind&gt; eventKinds,</a>
+<span class="sourceLineNo">062</span><a id="line.62">      Consumer&lt;NetworkTableEvent&gt; listener) {</a>
+<span class="sourceLineNo">063</span><a id="line.63">    NetworkTableInstance inst = subscriber.getTopic().getInstance();</a>
+<span class="sourceLineNo">064</span><a id="line.64">    return new NetworkTableListener(inst, inst.addListener(subscriber, eventKinds, listener));</a>
+<span class="sourceLineNo">065</span><a id="line.65">  }</a>
+<span class="sourceLineNo">066</span><a id="line.66"></a>
+<span class="sourceLineNo">067</span><a id="line.67">  /**</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * Create a listener for topic changes on a subscriber. This does NOT keep the subscriber active.</a>
+<span class="sourceLineNo">069</span><a id="line.69">   *</a>
+<span class="sourceLineNo">070</span><a id="line.70">   * @param subscriber Subscriber</a>
+<span class="sourceLineNo">071</span><a id="line.71">   * @param eventKinds set of event kinds to listen to</a>
+<span class="sourceLineNo">072</span><a id="line.72">   * @param listener Listener function</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * @return Listener</a>
+<span class="sourceLineNo">074</span><a id="line.74">   */</a>
+<span class="sourceLineNo">075</span><a id="line.75">  public static NetworkTableListener createListener(</a>
+<span class="sourceLineNo">076</span><a id="line.76">      MultiSubscriber subscriber,</a>
+<span class="sourceLineNo">077</span><a id="line.77">      EnumSet&lt;NetworkTableEvent.Kind&gt; eventKinds,</a>
+<span class="sourceLineNo">078</span><a id="line.78">      Consumer&lt;NetworkTableEvent&gt; listener) {</a>
+<span class="sourceLineNo">079</span><a id="line.79">    NetworkTableInstance inst = subscriber.getInstance();</a>
+<span class="sourceLineNo">080</span><a id="line.80">    return new NetworkTableListener(inst, inst.addListener(subscriber, eventKinds, listener));</a>
+<span class="sourceLineNo">081</span><a id="line.81">  }</a>
+<span class="sourceLineNo">082</span><a id="line.82"></a>
+<span class="sourceLineNo">083</span><a id="line.83">  /**</a>
+<span class="sourceLineNo">084</span><a id="line.84">   * Create a listener for topic changes on an entry.</a>
+<span class="sourceLineNo">085</span><a id="line.85">   *</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * @param entry Entry</a>
+<span class="sourceLineNo">087</span><a id="line.87">   * @param eventKinds set of event kinds to listen to</a>
+<span class="sourceLineNo">088</span><a id="line.88">   * @param listener Listener function</a>
+<span class="sourceLineNo">089</span><a id="line.89">   * @return Listener</a>
+<span class="sourceLineNo">090</span><a id="line.90">   */</a>
+<span class="sourceLineNo">091</span><a id="line.91">  public static NetworkTableListener createListener(</a>
+<span class="sourceLineNo">092</span><a id="line.92">      NetworkTableEntry entry,</a>
+<span class="sourceLineNo">093</span><a id="line.93">      EnumSet&lt;NetworkTableEvent.Kind&gt; eventKinds,</a>
+<span class="sourceLineNo">094</span><a id="line.94">      Consumer&lt;NetworkTableEvent&gt; listener) {</a>
+<span class="sourceLineNo">095</span><a id="line.95">    NetworkTableInstance inst = entry.getInstance();</a>
+<span class="sourceLineNo">096</span><a id="line.96">    return new NetworkTableListener(inst, inst.addListener(entry, eventKinds, listener));</a>
+<span class="sourceLineNo">097</span><a id="line.97">  }</a>
+<span class="sourceLineNo">098</span><a id="line.98"></a>
+<span class="sourceLineNo">099</span><a id="line.99">  /**</a>
+<span class="sourceLineNo">100</span><a id="line.100">   * Create a connection listener.</a>
+<span class="sourceLineNo">101</span><a id="line.101">   *</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * @param inst instance</a>
+<span class="sourceLineNo">103</span><a id="line.103">   * @param immediateNotify notify listener of all existing connections</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * @param listener listener function</a>
+<span class="sourceLineNo">105</span><a id="line.105">   * @return Listener</a>
+<span class="sourceLineNo">106</span><a id="line.106">   */</a>
+<span class="sourceLineNo">107</span><a id="line.107">  public static NetworkTableListener createConnectionListener(</a>
+<span class="sourceLineNo">108</span><a id="line.108">      NetworkTableInstance inst, boolean immediateNotify, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
+<span class="sourceLineNo">109</span><a id="line.109">    return new NetworkTableListener(inst, inst.addConnectionListener(immediateNotify, listener));</a>
+<span class="sourceLineNo">110</span><a id="line.110">  }</a>
+<span class="sourceLineNo">111</span><a id="line.111"></a>
+<span class="sourceLineNo">112</span><a id="line.112">  /**</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * Create a listener for log messages. By default, log messages are sent to stderr; this function</a>
+<span class="sourceLineNo">114</span><a id="line.114">   * sends log messages with the specified levels to the provided callback function instead. The</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * callback function will only be called for log messages with level greater than or equal to</a>
+<span class="sourceLineNo">116</span><a id="line.116">   * minLevel and less than or equal to maxLevel; messages outside this range will be silently</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * ignored.</a>
+<span class="sourceLineNo">118</span><a id="line.118">   *</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * @param inst instance</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param minLevel minimum log level</a>
+<span class="sourceLineNo">121</span><a id="line.121">   * @param maxLevel maximum log level</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @param listener listener function</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @return Listener</a>
+<span class="sourceLineNo">124</span><a id="line.124">   */</a>
+<span class="sourceLineNo">125</span><a id="line.125">  public static NetworkTableListener createLogger(</a>
+<span class="sourceLineNo">126</span><a id="line.126">      NetworkTableInstance inst, int minLevel, int maxLevel, Consumer&lt;NetworkTableEvent&gt; listener) {</a>
+<span class="sourceLineNo">127</span><a id="line.127">    return new NetworkTableListener(inst, inst.addLogger(minLevel, maxLevel, listener));</a>
+<span class="sourceLineNo">128</span><a id="line.128">  }</a>
+<span class="sourceLineNo">129</span><a id="line.129"></a>
+<span class="sourceLineNo">130</span><a id="line.130">  @Override</a>
+<span class="sourceLineNo">131</span><a id="line.131">  public synchronized void close() {</a>
+<span class="sourceLineNo">132</span><a id="line.132">    if (m_handle != 0) {</a>
+<span class="sourceLineNo">133</span><a id="line.133">      m_inst.removeListener(m_handle);</a>
+<span class="sourceLineNo">134</span><a id="line.134">      m_handle = 0;</a>
+<span class="sourceLineNo">135</span><a id="line.135">    }</a>
 <span class="sourceLineNo">136</span><a id="line.136">  }</a>
 <span class="sourceLineNo">137</span><a id="line.137"></a>
 <span class="sourceLineNo">138</span><a id="line.138">  /**</a>
-<span class="sourceLineNo">139</span><a id="line.139">   * Gets the native handle.</a>
+<span class="sourceLineNo">139</span><a id="line.139">   * Determines if the native handle is valid.</a>
 <span class="sourceLineNo">140</span><a id="line.140">   *</a>
-<span class="sourceLineNo">141</span><a id="line.141">   * @return Native handle</a>
+<span class="sourceLineNo">141</span><a id="line.141">   * @return True if the native handle is valid, false otherwise.</a>
 <span class="sourceLineNo">142</span><a id="line.142">   */</a>
-<span class="sourceLineNo">143</span><a id="line.143">  public int getHandle() {</a>
-<span class="sourceLineNo">144</span><a id="line.144">    return m_handle;</a>
+<span class="sourceLineNo">143</span><a id="line.143">  public boolean isValid() {</a>
+<span class="sourceLineNo">144</span><a id="line.144">    return m_handle != 0;</a>
 <span class="sourceLineNo">145</span><a id="line.145">  }</a>
 <span class="sourceLineNo">146</span><a id="line.146"></a>
 <span class="sourceLineNo">147</span><a id="line.147">  /**</a>
-<span class="sourceLineNo">148</span><a id="line.148">   * Wait for the topic listener queue to be empty. This is primarily useful for deterministic</a>
-<span class="sourceLineNo">149</span><a id="line.149">   * testing. This blocks until either the topic listener queue is empty (e.g. there are no more</a>
-<span class="sourceLineNo">150</span><a id="line.150">   * events that need to be passed along to callbacks or poll queues) or the timeout expires.</a>
-<span class="sourceLineNo">151</span><a id="line.151">   *</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * @param timeout timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to</a>
-<span class="sourceLineNo">153</span><a id="line.153">   *     block indefinitely</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * @return False if timed out, otherwise true.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   */</a>
-<span class="sourceLineNo">156</span><a id="line.156">  public boolean waitForQueue(double timeout) {</a>
-<span class="sourceLineNo">157</span><a id="line.157">    return m_inst.waitForListenerQueue(timeout);</a>
-<span class="sourceLineNo">158</span><a id="line.158">  }</a>
-<span class="sourceLineNo">159</span><a id="line.159"></a>
-<span class="sourceLineNo">160</span><a id="line.160">  private NetworkTableListener(NetworkTableInstance inst, int handle) {</a>
-<span class="sourceLineNo">161</span><a id="line.161">    m_inst = inst;</a>
-<span class="sourceLineNo">162</span><a id="line.162">    m_handle = handle;</a>
-<span class="sourceLineNo">163</span><a id="line.163">  }</a>
-<span class="sourceLineNo">164</span><a id="line.164"></a>
-<span class="sourceLineNo">165</span><a id="line.165">  private final NetworkTableInstance m_inst;</a>
-<span class="sourceLineNo">166</span><a id="line.166">  private int m_handle;</a>
-<span class="sourceLineNo">167</span><a id="line.167">}</a>
+<span class="sourceLineNo">148</span><a id="line.148">   * Gets the native handle.</a>
+<span class="sourceLineNo">149</span><a id="line.149">   *</a>
+<span class="sourceLineNo">150</span><a id="line.150">   * @return Native handle</a>
+<span class="sourceLineNo">151</span><a id="line.151">   */</a>
+<span class="sourceLineNo">152</span><a id="line.152">  public int getHandle() {</a>
+<span class="sourceLineNo">153</span><a id="line.153">    return m_handle;</a>
+<span class="sourceLineNo">154</span><a id="line.154">  }</a>
+<span class="sourceLineNo">155</span><a id="line.155"></a>
+<span class="sourceLineNo">156</span><a id="line.156">  /**</a>
+<span class="sourceLineNo">157</span><a id="line.157">   * Wait for the topic listener queue to be empty. This is primarily useful for deterministic</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * testing. This blocks until either the topic listener queue is empty (e.g. there are no more</a>
+<span class="sourceLineNo">159</span><a id="line.159">   * events that need to be passed along to callbacks or poll queues) or the timeout expires.</a>
+<span class="sourceLineNo">160</span><a id="line.160">   *</a>
+<span class="sourceLineNo">161</span><a id="line.161">   * @param timeout timeout, in seconds. Set to 0 for non-blocking behavior, or a negative value to</a>
+<span class="sourceLineNo">162</span><a id="line.162">   *     block indefinitely</a>
+<span class="sourceLineNo">163</span><a id="line.163">   * @return False if timed out, otherwise true.</a>
+<span class="sourceLineNo">164</span><a id="line.164">   */</a>
+<span class="sourceLineNo">165</span><a id="line.165">  public boolean waitForQueue(double timeout) {</a>
+<span class="sourceLineNo">166</span><a id="line.166">    return m_inst.waitForListenerQueue(timeout);</a>
+<span class="sourceLineNo">167</span><a id="line.167">  }</a>
+<span class="sourceLineNo">168</span><a id="line.168"></a>
+<span class="sourceLineNo">169</span><a id="line.169">  private NetworkTableListener(NetworkTableInstance inst, int handle) {</a>
+<span class="sourceLineNo">170</span><a id="line.170">    m_inst = inst;</a>
+<span class="sourceLineNo">171</span><a id="line.171">    m_handle = handle;</a>
+<span class="sourceLineNo">172</span><a id="line.172">  }</a>
+<span class="sourceLineNo">173</span><a id="line.173"></a>
+<span class="sourceLineNo">174</span><a id="line.174">  private final NetworkTableInstance m_inst;</a>
+<span class="sourceLineNo">175</span><a id="line.175">  private int m_handle;</a>
+<span class="sourceLineNo">176</span><a id="line.176">}</a>
 
 
 
