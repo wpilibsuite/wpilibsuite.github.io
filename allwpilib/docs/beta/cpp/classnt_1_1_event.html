@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a55ff037fa56e6cc217d74ebbd0a04ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6d951b78ffd87d0deb0b410a3d16a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_event.html#a4d6d951b78ffd87d0deb0b410a3d16a4">Event</a> (<a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> <a class="el" href="classnt_1_1_event.html#ad801d97e05bb90c0d9b3c7815b786db7">listener</a>, unsigned int <a class="el" href="classnt_1_1_event.html#a86015080f81891cfa501965daddf1f61">flags</a>, unsigned int level, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> filename, unsigned int line, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> message)</td></tr>
 <tr class="separator:a4d6d951b78ffd87d0deb0b410a3d16a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5473695a8ee274f18d841549096b5366"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_event.html#a5473695a8ee274f18d841549096b5366">Is</a> (unsigned int kind) const</td></tr>
+<tr class="memdesc:a5473695a8ee274f18d841549096b5366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test event flags.  <a href="classnt_1_1_event.html#a5473695a8ee274f18d841549096b5366">More...</a><br /></td></tr>
+<tr class="separator:a5473695a8ee274f18d841549096b5366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88fd189c0ade0d3d77c51f97ba98dc3c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_event.html#a88fd189c0ade0d3d77c51f97ba98dc3c">GetConnectionInfo</a> () const</td></tr>
 <tr class="separator:a88fd189c0ade0d3d77c51f97ba98dc3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90cd078aaf214b6da051fb50131ecc4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_event.html#a90cd078aaf214b6da051fb50131ecc4c">GetConnectionInfo</a> ()</td></tr>
@@ -660,6 +663,41 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5473695a8ee274f18d841549096b5366" name="a5473695a8ee274f18d841549096b5366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5473695a8ee274f18d841549096b5366">&#9670;&nbsp;</a></span>Is()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool nt::Event::Is </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>kind</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Test event flags. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kind</td><td>event flag(s) to test </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if flags matches kind </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad76e5d17105bff597308286b3004970a" name="ad76e5d17105bff597308286b3004970a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad76e5d17105bff597308286b3004970a">&#9670;&nbsp;</a></span>data</h2>
@@ -724,7 +762,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_event.html">Event</a></li>
-    <li class="footer">Generated on Tue Nov 1 2022 05:37:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 5 2022 03:41:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

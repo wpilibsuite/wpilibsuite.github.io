@@ -11,8 +11,8 @@ var searchData=
   ['kernel_5fretval_5fbase_8',['kernel_retval_base',['../struct_eigen_1_1internal_1_1kernel__retval__base.html#a11788fc65643a5f04d0bf93eb14ab859',1,'Eigen::internal::kernel_retval_base']]],
   ['key_9',['key',['../classwpi_1_1detail_1_1iter__impl.html#a0fae202df4f71dbeb817da73ccb6135c',1,'wpi::detail::iter_impl::key()'],['../classwpi_1_1detail_1_1json__reverse__iterator.html#a287165681c467948ccc00f6b95e60482',1,'wpi::detail::json_reverse_iterator::key()']]],
   ['keys_10',['keys',['../classwpi_1_1_string_map.html#acd1b39cb788d0d8d49b46dacb96480a0',1,'wpi::StringMap']]],
-  ['kill_11',['Kill',['../classwpi_1_1uv_1_1_process.html#ac6e17f247679ac0b36c5286112f3a40d',1,'wpi::uv::Process::Kill(int signum)'],['../classwpi_1_1uv_1_1_process.html#a768802c8c1804f4f516a53054deac961',1,'wpi::uv::Process::Kill(int pid, int signum) noexcept']]],
-  ['kill_12',['kill',['../structinternal_1_1_colamd_1_1_row_structure.html#aaa4525e61d53d5ff44ad834b756e62f4',1,'internal::Colamd::RowStructure']]],
+  ['kill_11',['kill',['../structinternal_1_1_colamd_1_1_row_structure.html#aaa4525e61d53d5ff44ad834b756e62f4',1,'internal::Colamd::RowStructure']]],
+  ['kill_12',['Kill',['../classwpi_1_1uv_1_1_process.html#ac6e17f247679ac0b36c5286112f3a40d',1,'wpi::uv::Process::Kill(int signum)'],['../classwpi_1_1uv_1_1_process.html#a768802c8c1804f4f516a53054deac961',1,'wpi::uv::Process::Kill(int pid, int signum) noexcept']]],
   ['kill_5fnon_5fprincipal_13',['kill_non_principal',['../structinternal_1_1_colamd_1_1_col_structure.html#a3a9adcc3207638d5f2adee379b17b545',1,'internal::Colamd::ColStructure']]],
   ['kill_5fprincipal_14',['kill_principal',['../structinternal_1_1_colamd_1_1_col_structure.html#a740eb9c001d52e399d1625637922d956',1,'internal::Colamd::ColStructure']]]
 ];

@@ -84,6 +84,7 @@ var group__ntcore__cpp__handle__api =
       [ "GetTopicInfo", "classnt_1_1_event.html#aff68a7d4f11d778e8f0bf380feddcd24", null ],
       [ "GetValueEventData", "classnt_1_1_event.html#a312c65066c87fa3bd970c64a12a65b9c", null ],
       [ "GetValueEventData", "classnt_1_1_event.html#a3b5705edf5b6c720b85b085058422faf", null ],
+      [ "Is", "classnt_1_1_event.html#a5473695a8ee274f18d841549096b5366", null ],
       [ "data", "classnt_1_1_event.html#ad76e5d17105bff597308286b3004970a", null ],
       [ "flags", "classnt_1_1_event.html#a86015080f81891cfa501965daddf1f61", null ],
       [ "listener", "classnt_1_1_event.html#ad801d97e05bb90c0d9b3c7815b786db7", null ]
