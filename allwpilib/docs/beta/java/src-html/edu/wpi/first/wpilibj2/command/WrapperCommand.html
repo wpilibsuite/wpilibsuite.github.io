@@ -28,7 +28,7 @@
 <span class="sourceLineNo">016</span><a id="line.16"> * &lt;p&gt;Wrapped commands may only be used through the wrapper, trying to directly schedule them or add</a>
 <span class="sourceLineNo">017</span><a id="line.17"> * them to a group will throw an exception.</a>
 <span class="sourceLineNo">018</span><a id="line.18"> */</a>
-<span class="sourceLineNo">019</span><a id="line.19">public abstract class WrapperCommand implements Command {</a>
+<span class="sourceLineNo">019</span><a id="line.19">public abstract class WrapperCommand extends CommandBase {</a>
 <span class="sourceLineNo">020</span><a id="line.20">  protected final Command m_command;</a>
 <span class="sourceLineNo">021</span><a id="line.21"></a>
 <span class="sourceLineNo">022</span><a id="line.22">  /**</a>
@@ -111,17 +111,7 @@
 <span class="sourceLineNo">099</span><a id="line.99">  public InterruptionBehavior getInterruptionBehavior() {</a>
 <span class="sourceLineNo">100</span><a id="line.100">    return m_command.getInterruptionBehavior();</a>
 <span class="sourceLineNo">101</span><a id="line.101">  }</a>
-<span class="sourceLineNo">102</span><a id="line.102"></a>
-<span class="sourceLineNo">103</span><a id="line.103">  /**</a>
-<span class="sourceLineNo">104</span><a id="line.104">   * Gets the name of this Command.</a>
-<span class="sourceLineNo">105</span><a id="line.105">   *</a>
-<span class="sourceLineNo">106</span><a id="line.106">   * @return Name</a>
-<span class="sourceLineNo">107</span><a id="line.107">   */</a>
-<span class="sourceLineNo">108</span><a id="line.108">  @Override</a>
-<span class="sourceLineNo">109</span><a id="line.109">  public String getName() {</a>
-<span class="sourceLineNo">110</span><a id="line.110">    return m_command.getName();</a>
-<span class="sourceLineNo">111</span><a id="line.111">  }</a>
-<span class="sourceLineNo">112</span><a id="line.112">}</a>
+<span class="sourceLineNo">102</span><a id="line.102">}</a>
 
 
 

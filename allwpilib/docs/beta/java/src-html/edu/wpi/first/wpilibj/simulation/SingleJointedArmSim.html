@@ -189,7 +189,7 @@
 <span class="sourceLineNo">177</span><a id="line.177">   * @return Whether the arm would hit the lower limit.</a>
 <span class="sourceLineNo">178</span><a id="line.178">   */</a>
 <span class="sourceLineNo">179</span><a id="line.179">  public boolean wouldHitLowerLimit(double currentAngleRads) {</a>
-<span class="sourceLineNo">180</span><a id="line.180">    return currentAngleRads &lt; this.m_minAngle;</a>
+<span class="sourceLineNo">180</span><a id="line.180">    return currentAngleRads &lt;= this.m_minAngle;</a>
 <span class="sourceLineNo">181</span><a id="line.181">  }</a>
 <span class="sourceLineNo">182</span><a id="line.182"></a>
 <span class="sourceLineNo">183</span><a id="line.183">  /**</a>
@@ -199,7 +199,7 @@
 <span class="sourceLineNo">187</span><a id="line.187">   * @return Whether the arm would hit the upper limit.</a>
 <span class="sourceLineNo">188</span><a id="line.188">   */</a>
 <span class="sourceLineNo">189</span><a id="line.189">  public boolean wouldHitUpperLimit(double currentAngleRads) {</a>
-<span class="sourceLineNo">190</span><a id="line.190">    return currentAngleRads &gt; this.m_maxAngle;</a>
+<span class="sourceLineNo">190</span><a id="line.190">    return currentAngleRads &gt;= this.m_maxAngle;</a>
 <span class="sourceLineNo">191</span><a id="line.191">  }</a>
 <span class="sourceLineNo">192</span><a id="line.192"></a>
 <span class="sourceLineNo">193</span><a id="line.193">  /**</a>

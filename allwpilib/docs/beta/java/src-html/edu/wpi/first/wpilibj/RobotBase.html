@@ -167,7 +167,7 @@
 <span class="sourceLineNo">155</span><a id="line.155">    // wait for the NT server to actually start</a>
 <span class="sourceLineNo">156</span><a id="line.156">    try {</a>
 <span class="sourceLineNo">157</span><a id="line.157">      int count = 0;</a>
-<span class="sourceLineNo">158</span><a id="line.158">      while ((inst.getNetworkMode() &amp; NetworkTableInstance.kNetModeStarting) != 0) {</a>
+<span class="sourceLineNo">158</span><a id="line.158">      while (inst.getNetworkMode().contains(NetworkTableInstance.NetworkMode.kStarting)) {</a>
 <span class="sourceLineNo">159</span><a id="line.159">        Thread.sleep(10);</a>
 <span class="sourceLineNo">160</span><a id="line.160">        count++;</a>
 <span class="sourceLineNo">161</span><a id="line.161">        if (count &gt; 100) {</a>
