@@ -1,5 +1,6 @@
 var NAVTREEINDEX177 =
 {
+"struct_eigen_1_1internal_1_1evaluator_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___index_01_4_01_4.html#ae9815989633d89cf6e4c88eedfc82101":[4,0,8,4,350,4],
 "struct_eigen_1_1internal_1_1evaluator_3_01const_01_t_01_4.html":[6,0,4,2,319],
 "struct_eigen_1_1internal_1_1evaluator_3_01const_01_t_01_4.html":[4,0,8,4,321],
 "struct_eigen_1_1internal_1_1evaluator_3_01const_01_t_01_4.html#a66c545ed98998f3f4eaa166027e543f9":[4,0,8,4,321,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX177 =
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__exp__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,423],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,424],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,426],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,427],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,425]
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,427]
 };

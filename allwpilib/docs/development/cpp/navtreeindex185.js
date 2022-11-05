@@ -1,5 +1,6 @@
 var NAVTREEINDEX185 =
 {
+"struct_eigen_1_1internal_1_1packetwise__redux__impl.html":[4,0,8,4,864],
 "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_complete_unrolling_01_4.html":[4,0,8,4,865],
 "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_complete_unrolling_01_4.html":[6,0,4,2,863],
 "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_complete_unrolling_01_4.html#a2c80cb68a41208f67cc327a0ff179201":[4,0,8,4,865,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX185 =
 "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_na_n_01_4.html#af1f951bb990af52735433b3a25f961be":[4,0,8,4,902,0],
 "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html":[6,0,4,2,901],
 "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html":[4,0,8,4,903],
-"struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html#a04f8725e33f086a9cca1fbeed1e3c9ee":[6,0,4,2,901,0],
-"struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html#a04f8725e33f086a9cca1fbeed1e3c9ee":[4,0,8,4,903,0]
+"struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html#a04f8725e33f086a9cca1fbeed1e3c9ee":[6,0,4,2,901,0]
 };

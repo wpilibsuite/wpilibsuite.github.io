@@ -1,5 +1,6 @@
 var NAVTREEINDEX208 =
 {
+"structnt_1_1_timestamped_unit.html":[6,0,11,79],
 "structnt_1_1_timestamped_unit.html":[4,0,19,79],
 "structnt_1_1_timestamped_unit.html#aace936d664cabc7094828e74278aafda":[6,0,11,79,3],
 "structnt_1_1_timestamped_unit.html#aace936d664cabc7094828e74278aafda":[4,0,19,79,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX208 =
 "structstyled__arg.html#a3096f0b12ab61846798bf7f28b5c7669":[6,0,237,0],
 "structstyled__arg.html#a68d6bf5d85787f1aec225c4ef13f12c1":[6,0,237,1],
 "structthousands__sep__result.html":[6,0,239],
-"structthousands__sep__result.html#a13f0f9dcb49fb782860eb26155a2f682":[6,0,239,0],
-"structthousands__sep__result.html#a2e564c650f0215c77f13174b5878f888":[6,0,239,1]
+"structthousands__sep__result.html#a13f0f9dcb49fb782860eb26155a2f682":[6,0,239,0]
 };

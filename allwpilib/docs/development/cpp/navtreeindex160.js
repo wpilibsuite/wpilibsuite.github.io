@@ -1,5 +1,6 @@
 var NAVTREEINDEX160 =
 {
+"namespaceunits.html#a4676ba7553daca7fa6d911b48558a7d6":[4,0,23,115],
 "namespaceunits.html#a4b48dbb59414aa4e8086c0df76a1586b":[4,0,23,179],
 "namespaceunits.html#a5152d55c3a0604db8cf531ea9cb3c1f6":[4,0,23,307],
 "namespaceunits.html#a5281d6984eb10345d920f559e58231bb":[4,0,23,217],
@@ -248,6 +249,5 @@ var NAVTREEINDEX160 =
 "namespaceunits_1_1frequency.html":[4,0,23,19],
 "namespaceunits_1_1illuminance.html":[4,0,23,20],
 "namespaceunits_1_1impedance.html":[4,0,23,21],
-"namespaceunits_1_1inductance.html":[4,0,23,22],
-"namespaceunits_1_1length.html":[4,0,23,23]
+"namespaceunits_1_1inductance.html":[4,0,23,22]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX182 =
 {
+"struct_eigen_1_1internal_1_1is__integral_3_01char_01_4.html":[6,0,4,2,691],
 "struct_eigen_1_1internal_1_1is__integral_3_01signed_01char_01_4.html":[6,0,4,2,692],
 "struct_eigen_1_1internal_1_1is__integral_3_01signed_01char_01_4.html":[4,0,8,4,694],
 "struct_eigen_1_1internal_1_1is__integral_3_01signed_01int_01_4.html":[4,0,8,4,695],
@@ -248,6 +249,5 @@ var NAVTREEINDEX182 =
 "struct_eigen_1_1internal_1_1lp_norm__selector.html#a0b5f864c870840d664e36fa33239aed8":[4,0,8,4,747,1],
 "struct_eigen_1_1internal_1_1lp_norm__selector.html#add3e153759c6287e7aab897115e7b94d":[6,0,4,2,745,0],
 "struct_eigen_1_1internal_1_1lp_norm__selector.html#add3e153759c6287e7aab897115e7b94d":[4,0,8,4,747,0],
-"struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_011_01_4.html":[6,0,4,2,746],
-"struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_011_01_4.html":[4,0,8,4,748]
+"struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_011_01_4.html":[6,0,4,2,746]
 };

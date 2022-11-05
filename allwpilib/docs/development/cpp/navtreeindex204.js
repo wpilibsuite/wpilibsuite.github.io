@@ -1,5 +1,6 @@
 var NAVTREEINDEX204 =
 {
+"structdetail_1_1range__mapper.html#a15a39d70b6d03623f2e4d2eb75a17bad":[4,0,3,36,0],
 "structdetail_1_1range__mapper.html#a15a39d70b6d03623f2e4d2eb75a17bad":[6,0,1,36,0],
 "structdetail_1_1range__mapper.html#a85b15893de2acb32e4b6294451f093fb":[6,0,1,36,1],
 "structdetail_1_1range__mapper.html#a85b15893de2acb32e4b6294451f093fb":[4,0,3,36,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX204 =
 "structfrc_1_1_chassis_speeds.html#a01659f3eea6569ee27d4db843d6f5be5":[6,0,6,32,3],
 "structfrc_1_1_chassis_speeds.html#a1b2ecdc4d2884220274eed58c67fd9dc":[4,0,10,36,4],
 "structfrc_1_1_chassis_speeds.html#a1b2ecdc4d2884220274eed58c67fd9dc":[6,0,6,32,4],
-"structfrc_1_1_chassis_speeds.html#a22c6296a8e08e6610d35a2b0bdf0ddfb":[4,0,10,36,0],
-"structfrc_1_1_chassis_speeds.html#a22c6296a8e08e6610d35a2b0bdf0ddfb":[6,0,6,32,0]
+"structfrc_1_1_chassis_speeds.html#a22c6296a8e08e6610d35a2b0bdf0ddfb":[4,0,10,36,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX186 =
 {
+"struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html#a04f8725e33f086a9cca1fbeed1e3c9ee":[4,0,8,4,903,0],
 "struct_eigen_1_1internal_1_1possibly__same__dense.html":[4,0,8,4,905],
 "struct_eigen_1_1internal_1_1possibly__same__dense.html":[6,0,4,2,903],
 "struct_eigen_1_1internal_1_1pow__impl.html":[4,0,8,4,906],
@@ -248,6 +249,5 @@ var NAVTREEINDEX186 =
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_a_00_01_permutation_storage_00_01_product_tag_01_4.html#a01c2d9f17207b5b2a3bf0ed9826523a6":[4,0,8,4,928,0],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html":[6,0,4,2,927],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html":[4,0,8,4,929],
-"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html#ac3a1efea82c04a784a4a91c24f4a24be":[4,0,8,4,929,0],
-"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html#ac3a1efea82c04a784a4a91c24f4a24be":[6,0,4,2,927,0]
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html#ac3a1efea82c04a784a4a91c24f4a24be":[4,0,8,4,929,0]
 };

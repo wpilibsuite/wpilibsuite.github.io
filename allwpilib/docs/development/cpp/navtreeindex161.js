@@ -1,5 +1,6 @@
 var NAVTREEINDEX161 =
 {
+"namespaceunits_1_1length.html":[4,0,23,23],
 "namespaceunits_1_1literals.html":[4,0,23,24],
 "namespaceunits_1_1luminous__flux.html":[4,0,23,25],
 "namespaceunits_1_1luminous__intensity.html":[4,0,23,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX161 =
 "namespacewpi.html#a94f1eed3c192da2db90b3d0ab15d24c8":[4,0,24,251],
 "namespacewpi.html#a95519eb02ecc90f51e4157b797a4c306":[4,0,24,305],
 "namespacewpi.html#a9630e9cd2902c4dbc7f817a6a84bb9da":[4,0,24,392],
-"namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8":[4,0,24,209],
-"namespacewpi.html#a985e3eb8f9f12493630c5b00866467dd":[4,0,24,216]
+"namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8":[4,0,24,209]
 };

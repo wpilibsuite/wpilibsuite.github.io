@@ -1,5 +1,6 @@
 var NAVTREEINDEX142 =
 {
+"group__ntcore___float__cfunc.html#ga9614d6b98ddbcc9da419c4f76776e599":[3,17,5],
 "group__ntcore___float__cfunc.html#gaf8c8b74135e65dd0824f47dbdb9371d6":[3,17,7],
 "group__ntcore___float__func.html":[3,12,11],
 "group__ntcore___float__func.html#ga53a54a9ed5b4e17511746e15c869251a":[3,12,11,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX142 =
 "group__ntcore__memoryallocators__cfunc.html#ga03276b4d758d9e02c2f970f743ae1394":[3,14,8,0,3],
 "group__ntcore__memoryallocators__cfunc.html#ga1c5c49377e02b2cbd2664d44e6e3c970":[3,14,8,0,10],
 "group__ntcore__memoryallocators__cfunc.html#ga485a42101c20b39861ff97ba18fabaad":[3,14,8,0,9],
-"group__ntcore__memoryallocators__cfunc.html#ga4d42423a59d9baf5b75f3d35a6ca65a9":[3,14,8,0,11],
-"group__ntcore__memoryallocators__cfunc.html#ga640219b721e54d92a2c7811a4dbf62a0":[3,14,8,0,6]
+"group__ntcore__memoryallocators__cfunc.html#ga4d42423a59d9baf5b75f3d35a6ca65a9":[3,14,8,0,11]
 };

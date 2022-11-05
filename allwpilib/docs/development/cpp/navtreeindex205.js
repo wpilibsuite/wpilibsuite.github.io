@@ -1,5 +1,6 @@
 var NAVTREEINDEX205 =
 {
+"structfrc_1_1_chassis_speeds.html#a22c6296a8e08e6610d35a2b0bdf0ddfb":[6,0,6,32,0],
 "structfrc_1_1_chassis_speeds.html#a512d3d4511e399adc63651fbf8ee18bf":[6,0,6,32,2],
 "structfrc_1_1_chassis_speeds.html#a512d3d4511e399adc63651fbf8ee18bf":[4,0,10,36,2],
 "structfrc_1_1_chassis_speeds.html#ae30530e339a3257a21f68aec2f6aee5a":[6,0,6,32,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX205 =
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html":[4,0,10,124,1],
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#a0e2109963721e0a58aa90b627be3b77c":[6,0,6,120,1,0],
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#a0e2109963721e0a58aa90b627be3b77c":[4,0,10,124,1,0],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a1773e1445f5623e97667a5ab47744e9f":[4,0,10,124,1,25],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a1773e1445f5623e97667a5ab47744e9f":[6,0,6,120,1,25]
+"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a1773e1445f5623e97667a5ab47744e9f":[4,0,10,124,1,25]
 };

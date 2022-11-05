@@ -1,5 +1,6 @@
 var NAVTREEINDEX168 =
 {
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_0193a1d113168a246bb6cb34430a4d0595.html#ab58ff4f79362d670c01cc6fa4d8f238d":[4,0,8,4,67,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01a15dcdf6b8911ccf07b7aa7de66da2f7.html":[4,0,8,4,69],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01a15dcdf6b8911ccf07b7aa7de66da2f7.html":[6,0,4,2,67],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01a15dcdf6b8911ccf07b7aa7de66da2f7.html#a718b5cb522602e984768c6c4c58801f1":[4,0,8,4,69,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX168 =
 "struct_eigen_1_1internal_1_1_diagonal2_sparse.html":[4,0,8,4,283],
 "struct_eigen_1_1internal_1_1_double_packet.html":[4,0,8,4,291],
 "struct_eigen_1_1internal_1_1_double_packet.html":[6,0,4,2,289],
-"struct_eigen_1_1internal_1_1_double_packet.html#a65a886a57baa7bcc561d53ae58455245":[4,0,8,4,291,1],
-"struct_eigen_1_1internal_1_1_double_packet.html#a65a886a57baa7bcc561d53ae58455245":[6,0,4,2,289,1]
+"struct_eigen_1_1internal_1_1_double_packet.html#a65a886a57baa7bcc561d53ae58455245":[4,0,8,4,291,1]
 };

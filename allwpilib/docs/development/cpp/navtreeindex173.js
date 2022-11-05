@@ -1,5 +1,6 @@
 var NAVTREEINDEX173 =
 {
+"struct_eigen_1_1internal_1_1column__dfs__traits.html#a5b48ce6fa5fa373fd784033df70959ff":[6,0,4,2,175,3],
 "struct_eigen_1_1internal_1_1column__dfs__traits.html#a7c5616d5178c49c1374613aefa1d68ec":[6,0,4,2,175,1],
 "struct_eigen_1_1internal_1_1column__dfs__traits.html#a7c5616d5178c49c1374613aefa1d68ec":[4,0,8,4,177,1],
 "struct_eigen_1_1internal_1_1column__dfs__traits.html#a84be35a20707d05cdf72d18e7755ae96":[6,0,4,2,175,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX173 =
 "struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html":[4,0,8,4,231],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html#a0941896241a59f3dd7d288ae55fd236d":[4,0,8,4,231,2],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html#a0941896241a59f3dd7d288ae55fd236d":[6,0,4,2,229,2],
-"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html#a380af5207fb13006b1a69698fd758082":[6,0,4,2,229,0],
-"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html#a380af5207fb13006b1a69698fd758082":[4,0,8,4,231,0]
+"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html#a380af5207fb13006b1a69698fd758082":[6,0,4,2,229,0]
 };

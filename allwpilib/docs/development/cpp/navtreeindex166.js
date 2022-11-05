@@ -1,5 +1,6 @@
 var NAVTREEINDEX166 =
 {
+"struct_eigen_1_1_eigen_base.html#a80808d9477b4dddab2613a5d8764d79e":[3,41,24,9],
 "struct_eigen_1_1_eigen_base.html#a95ff992a5c4c5debb41f6ae2f639e1f3":[3,41,24,1],
 "struct_eigen_1_1_eigen_base.html#a991b21b79bb613171a53271933c53cab":[3,41,24,10],
 "struct_eigen_1_1_eigen_base.html#a9f40726259520d7e9c5ce58d19d62e79":[3,41,24,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX166 =
 "struct_eigen_1_1_sparse_matrix_base_1_1_cwise_product_dense_return_type.html#a0c5232f6ca39d1d0c0af44389a87916e":[3,50,11,1,0],
 "struct_eigen_1_1_sparse_matrix_base_1_1_self_adjoint_view_return_type.html":[3,50,11,2],
 "struct_eigen_1_1_sparse_matrix_base_1_1_self_adjoint_view_return_type.html#ae7adbe6e76b775017b2177ecccde88f8":[3,50,11,2,0],
-"struct_eigen_1_1_sparse_q_r___q_product.html":[4,0,8,229],
-"struct_eigen_1_1_sparse_q_r___q_product.html":[6,0,4,226]
+"struct_eigen_1_1_sparse_q_r___q_product.html":[4,0,8,229]
 };

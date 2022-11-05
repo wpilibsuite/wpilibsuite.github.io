@@ -1,5 +1,6 @@
 var NAVTREEINDEX203 =
 {
+"structchrono__formatter.html#ae1ceaa40e710d424a31dc346146861b7":[6,0,54,9],
 "structchrono__formatter.html#ae3ca8ab5e9c96c24919a324205b93b90":[6,0,54,38],
 "structchrono__formatter.html#ae5d47c99df249a6771ea392f63439108":[6,0,54,32],
 "structchrono__formatter.html#ae77b2a99a9c5ba5f8ab0b3c2d1fadced":[6,0,54,35],
@@ -248,6 +249,5 @@ var NAVTREEINDEX203 =
 "structdetail_1_1range__format__kind__.html#ae280c192718e38a91e9a2ffdb92b9e0b":[4,0,3,35,0],
 "structdetail_1_1range__format__kind__.html#ae280c192718e38a91e9a2ffdb92b9e0b":[6,0,1,35,0],
 "structdetail_1_1range__mapper.html":[4,0,3,36],
-"structdetail_1_1range__mapper.html":[6,0,1,36],
-"structdetail_1_1range__mapper.html#a15a39d70b6d03623f2e4d2eb75a17bad":[4,0,3,36,0]
+"structdetail_1_1range__mapper.html":[6,0,1,36]
 };
