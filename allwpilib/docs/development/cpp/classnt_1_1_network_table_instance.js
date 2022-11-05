@@ -28,7 +28,7 @@ var classnt_1_1_network_table_instance =
     [ "AddListener", "classnt_1_1_network_table_instance.html#a9c3152f8b83706bcb4bd3d22081adf91", null ],
     [ "AddLogger", "classnt_1_1_network_table_instance.html#a3679902f58227a93622bd65c05973425", null ],
     [ "Create", "classnt_1_1_network_table_instance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68", null ],
-    [ "Destroy", "classnt_1_1_network_table_instance.html#ae2415aa85f185e31fd0c136544aa0764", null ],
+    [ "Destroy", "classnt_1_1_network_table_instance.html#ac6d6208af1c9ada0f7ea0ce124f3c7be", null ],
     [ "Flush", "classnt_1_1_network_table_instance.html#a951a3b2bf019b82032d445321a8ae1e3", null ],
     [ "FlushLocal", "classnt_1_1_network_table_instance.html#a4499c51a86ca1a788b7d6ebcd3560b62", null ],
     [ "GetBooleanArrayTopic", "classnt_1_1_network_table_instance.html#a73fa77481bb234cbe5b5438d5933dee2", null ],

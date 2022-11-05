@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2-13-g837415a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-2-15-gfa44a07</span>
    </div>
   </td>
  </tr>
@@ -290,9 +290,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a16c8cf8b39eaaa5684b6ca6e36a76f68"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68">Create</a> ()</td></tr>
 <tr class="memdesc:a16c8cf8b39eaaa5684b6ca6e36a76f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance.  <a href="classnt_1_1_network_table_instance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68">More...</a><br /></td></tr>
 <tr class="separator:a16c8cf8b39eaaa5684b6ca6e36a76f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2415aa85f185e31fd0c136544aa0764"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ae2415aa85f185e31fd0c136544aa0764">Destroy</a> (<a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a> inst)</td></tr>
-<tr class="memdesc:ae2415aa85f185e31fd0c136544aa0764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an instance (note: this has global effect).  <a href="classnt_1_1_network_table_instance.html#ae2415aa85f185e31fd0c136544aa0764">More...</a><br /></td></tr>
-<tr class="separator:ae2415aa85f185e31fd0c136544aa0764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6d6208af1c9ada0f7ea0ce124f3c7be"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ac6d6208af1c9ada0f7ea0ce124f3c7be">Destroy</a> (<a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a> &amp;inst)</td></tr>
+<tr class="memdesc:ac6d6208af1c9ada0f7ea0ce124f3c7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys an instance (note: this has global effect).  <a href="classnt_1_1_network_table_instance.html#ac6d6208af1c9ada0f7ea0ce124f3c7be">More...</a><br /></td></tr>
+<tr class="separator:ac6d6208af1c9ada0f7ea0ce124f3c7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -347,7 +347,7 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><p >NetworkTables Instance. </p>
 <p >Instances are completely independent from each other. Table operations on one instance will not be visible to other instances unless the instances are connected via the network. The main limitation on instances is that you cannot have two servers on the same network port. The main utility of instances is for unit testing, but they can also enable one program to connect to two different NetworkTables networks.</p>
 <p >The global "default" instance (as returned by <a class="el" href="classnt_1_1_network_table_instance.html#a02ea00d4a2a77b564d384b037f2045e6" title="Get global default instance.">GetDefault()</a>) is always available, and is intended for the common case when there is only a single NetworkTables instance being used in the program. The default instance cannot be destroyed.</p>
-<p >Additional instances can be created with the <a class="el" href="classnt_1_1_network_table_instance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68" title="Create an instance.">Create()</a> function. Instances are not reference counted or RAII. Instead, they must be explicitly destroyed (with <a class="el" href="classnt_1_1_network_table_instance.html#ae2415aa85f185e31fd0c136544aa0764" title="Destroys an instance (note: this has global effect).">Destroy()</a>). </p>
+<p >Additional instances can be created with the <a class="el" href="classnt_1_1_network_table_instance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68" title="Create an instance.">Create()</a> function. Instances are not reference counted or RAII. Instead, they must be explicitly destroyed (with <a class="el" href="classnt_1_1_network_table_instance.html#ac6d6208af1c9ada0f7ea0ce124f3c7be" title="Destroys an instance (note: this has global effect).">Destroy()</a>). </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a88dfe5b82924f347c572cdada2707150" name="a88dfe5b82924f347c572cdada2707150"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88dfe5b82924f347c572cdada2707150">&#9670;&nbsp;</a></span>LogLevel</h2>
@@ -561,9 +561,6 @@ Static Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
@@ -589,11 +586,6 @@ Static Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Add a listener for changes on an entry. </p>
@@ -670,9 +662,6 @@ Static Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
@@ -698,11 +687,6 @@ Static Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Add a listener for changes on a subscriber. </p>
@@ -724,9 +708,6 @@ Static Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
@@ -752,11 +733,6 @@ Static Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Add a listener for changes on a particular topic. </p>
@@ -856,8 +832,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2415aa85f185e31fd0c136544aa0764" name="ae2415aa85f185e31fd0c136544aa0764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2415aa85f185e31fd0c136544aa0764">&#9670;&nbsp;</a></span>Destroy()</h2>
+<a id="ac6d6208af1c9ada0f7ea0ce124f3c7be" name="ac6d6208af1c9ada0f7ea0ce124f3c7be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6d6208af1c9ada0f7ea0ce124f3c7be">&#9670;&nbsp;</a></span>Destroy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -868,7 +844,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void nt::NetworkTableInstance::Destroy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a> &amp;&#160;</td>
           <td class="paramname"><em>inst</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2637,7 +2613,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 02:06:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 5 2022 03:07:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
