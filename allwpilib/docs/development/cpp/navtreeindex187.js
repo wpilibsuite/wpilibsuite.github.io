@@ -1,5 +1,9 @@
 var NAVTREEINDEX187 =
 {
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_a_00_01_permutation_storage_00_01_product_tag_01_4.html#a01c2d9f17207b5b2a3bf0ed9826523a6":[4,0,8,4,928,0],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html":[6,0,4,2,927],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html":[4,0,8,4,929],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html#ac3a1efea82c04a784a4a91c24f4a24be":[4,0,8,4,929,0],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_b_00_01_product_tag_01_4.html#ac3a1efea82c04a784a4a91c24f4a24be":[6,0,4,2,927,0],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html":[6,0,4,2,928],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_dense_00_01_product_tag_01_4.html":[4,0,8,4,930],
@@ -245,9 +249,5 @@ var NAVTREEINDEX187 =
 "struct_eigen_1_1internal_1_1random__retval.html":[6,0,4,2,1011],
 "struct_eigen_1_1internal_1_1random__retval.html#ae3ee34bba049763ec7184efeaff71a52":[4,0,8,4,1013,0],
 "struct_eigen_1_1internal_1_1random__retval.html#ae3ee34bba049763ec7184efeaff71a52":[6,0,4,2,1011,0],
-"struct_eigen_1_1internal_1_1rcond__compute__sign.html":[4,0,8,4,1014],
-"struct_eigen_1_1internal_1_1rcond__compute__sign.html":[6,0,4,2,1012],
-"struct_eigen_1_1internal_1_1rcond__compute__sign.html#a0c1e067cca0d2d9884c310fb86388361":[6,0,4,2,1012,0],
-"struct_eigen_1_1internal_1_1rcond__compute__sign.html#a0c1e067cca0d2d9884c310fb86388361":[4,0,8,4,1014,0],
-"struct_eigen_1_1internal_1_1rcond__compute__sign_3_01_vector_00_01_vector_00_01false_01_4.html":[6,0,4,2,1013]
+"struct_eigen_1_1internal_1_1rcond__compute__sign.html":[4,0,8,4,1014]
 };

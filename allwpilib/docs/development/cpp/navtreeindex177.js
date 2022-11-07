@@ -1,5 +1,9 @@
 var NAVTREEINDEX177 =
 {
+"struct_eigen_1_1internal_1_1evaluator_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___index_01_4_01_4.html#acfa10b88b1ad720154e0bd2bd59caa3d":[6,0,4,2,348,2],
+"struct_eigen_1_1internal_1_1evaluator_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___index_01_4_01_4.html#adcf04c44e52dd68b45506608fabb7f13":[4,0,8,4,350,7],
+"struct_eigen_1_1internal_1_1evaluator_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___index_01_4_01_4.html#adcf04c44e52dd68b45506608fabb7f13":[6,0,4,2,348,7],
+"struct_eigen_1_1internal_1_1evaluator_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___index_01_4_01_4.html#ae9815989633d89cf6e4c88eedfc82101":[6,0,4,2,348,4],
 "struct_eigen_1_1internal_1_1evaluator_3_01_sparse_vector_3_01___scalar_00_01___options_00_01___index_01_4_01_4.html#ae9815989633d89cf6e4c88eedfc82101":[4,0,8,4,350,4],
 "struct_eigen_1_1internal_1_1evaluator_3_01const_01_t_01_4.html":[6,0,4,2,319],
 "struct_eigen_1_1internal_1_1evaluator_3_01const_01_t_01_4.html":[4,0,8,4,321],
@@ -245,9 +249,5 @@ var NAVTREEINDEX177 =
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__cube__op_3_01bool_01_4_01_4.html":[4,0,8,4,422],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__difference__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[4,0,8,4,424],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__difference__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[6,0,4,2,422],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__exp__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,425],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__exp__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,423],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,424],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,426],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,427]
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__exp__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,425]
 };

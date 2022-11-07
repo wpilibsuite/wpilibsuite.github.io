@@ -1,5 +1,9 @@
 var NAVTREEINDEX162 =
 {
+"namespacewpi.html#a94f1eed3c192da2db90b3d0ab15d24c8":[4,0,24,251],
+"namespacewpi.html#a95519eb02ecc90f51e4157b797a4c306":[4,0,24,305],
+"namespacewpi.html#a9630e9cd2902c4dbc7f817a6a84bb9da":[4,0,24,392],
+"namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8":[4,0,24,209],
 "namespacewpi.html#a985e3eb8f9f12493630c5b00866467dd":[4,0,24,216],
 "namespacewpi.html#a9adbe1d3698433c32c8b78b84f582a5b":[4,0,24,319],
 "namespacewpi.html#a9be802a6897b36bbcd4c2dcd23e9e7f3":[4,0,24,340],
@@ -245,9 +249,5 @@ var NAVTREEINDEX162 =
 "namespacewpi_1_1hashing_1_1detail.html#af92f08c0ae85e093aafeeb2791efb0c8":[4,0,24,1,0,18],
 "namespacewpi_1_1impl.html":[4,0,24,2],
 "namespacewpi_1_1java.html":[4,0,24,3],
-"namespacewpi_1_1java.html#a03a06f6094e907d556a23b5ef46cc884":[4,0,24,3,18],
-"namespacewpi_1_1java.html#a03d617c196aeee2778c8b22699dd4acb":[4,0,24,3,20],
-"namespacewpi_1_1java.html#a0e34bf5a3185a9a9d3da0fe7a0d545bc":[4,0,24,3,19],
-"namespacewpi_1_1java.html#a212545464c44663bc98b95bb87f3fe70":[4,0,24,3,13],
-"namespacewpi_1_1java.html#a4f1058b45861b4abda3c9a43fa80e0fc":[4,0,24,3,11]
+"namespacewpi_1_1java.html#a03a06f6094e907d556a23b5ef46cc884":[4,0,24,3,18]
 };

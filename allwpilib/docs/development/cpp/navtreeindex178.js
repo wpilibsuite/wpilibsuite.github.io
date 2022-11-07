@@ -1,5 +1,9 @@
 var NAVTREEINDEX178 =
 {
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__exp__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,423],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,424],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,426],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,427],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[6,0,4,2,425],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__hypot__op_3_01_scalar_00_01_scalar_01_4_01_4.html":[4,0,8,4,428],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__hypot__op_3_01_scalar_00_01_scalar_01_4_01_4.html":[6,0,4,2,426],
@@ -245,9 +249,5 @@ var NAVTREEINDEX178 =
 "struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_col_major_00_01true_01_4.html#ace6cd972a53e1d029ee4a9e32ff68795":[6,0,4,2,503,0],
 "struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01false_01_4.html":[6,0,4,2,504],
 "struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01false_01_4.html":[4,0,8,4,506],
-"struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01false_01_4.html#afa82dad5040f5ee77dc8715e78029573":[6,0,4,2,504,0],
-"struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01false_01_4.html#afa82dad5040f5ee77dc8715e78029573":[4,0,8,4,506,0],
-"struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01true_01_4.html":[6,0,4,2,505],
-"struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01true_01_4.html":[4,0,8,4,507],
-"struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01true_01_4.html#a58d2254655edbf6807aa0b60906ef5f9":[6,0,4,2,505,0]
+"struct_eigen_1_1internal_1_1gemv__dense__selector_3_01_on_the_right_00_01_row_major_00_01false_01_4.html#afa82dad5040f5ee77dc8715e78029573":[6,0,4,2,504,0]
 };

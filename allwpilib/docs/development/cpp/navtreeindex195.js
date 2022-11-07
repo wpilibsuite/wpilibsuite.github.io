@@ -1,5 +1,9 @@
 var NAVTREEINDEX195 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_full_piv_householder_q_r_matrix_q_return_type_3_01_matrix_type_01_4_01_4.html#a1b18d24309d6c761c5b756e76f99f4f9":[6,0,4,2,1331,0],
+"struct_eigen_1_1internal_1_1traits_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html":[4,0,8,4,1334],
+"struct_eigen_1_1internal_1_1traits_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html":[6,0,4,2,1332],
+"struct_eigen_1_1internal_1_1traits_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html#a0a2f243f0f1cde42de22fd71afeb8298":[4,0,8,4,1334,2],
 "struct_eigen_1_1internal_1_1traits_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html#a0a2f243f0f1cde42de22fd71afeb8298":[6,0,4,2,1332,2],
 "struct_eigen_1_1internal_1_1traits_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html#a6676451bd5a119348b521f68ee2ef944":[6,0,4,2,1332,1],
 "struct_eigen_1_1internal_1_1traits_3_01_full_piv_l_u_3_01___matrix_type_01_4_01_4.html#a6676451bd5a119348b521f68ee2ef944":[4,0,8,4,1334,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX195 =
 "struct_eigen_1_1internal_1_1traits_3_01_replicate_3_01_matrix_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#a897e1e1f1b3bf8a29a9f193eb2b123f2":[4,0,8,4,1374,3],
 "struct_eigen_1_1internal_1_1traits_3_01_replicate_3_01_matrix_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#abc7e2bd9b52486df3c210a519b8b5ab6":[6,0,4,2,1372,2],
 "struct_eigen_1_1internal_1_1traits_3_01_replicate_3_01_matrix_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#abc7e2bd9b52486df3c210a519b8b5ab6":[4,0,8,4,1374,2],
-"struct_eigen_1_1internal_1_1traits_3_01_reshaped_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html":[4,0,8,4,1375],
-"struct_eigen_1_1internal_1_1traits_3_01_reshaped_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html":[6,0,4,2,1373],
-"struct_eigen_1_1internal_1_1traits_3_01_reshaped_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a6af33e32f58e0f551cd3c7b06a3f5f5d":[6,0,4,2,1373,1],
-"struct_eigen_1_1internal_1_1traits_3_01_reshaped_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a6af33e32f58e0f551cd3c7b06a3f5f5d":[4,0,8,4,1375,1],
-"struct_eigen_1_1internal_1_1traits_3_01_reshaped_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a844d1bb0cfca7acdbf869ac0364afced":[6,0,4,2,1373,2]
+"struct_eigen_1_1internal_1_1traits_3_01_reshaped_3_01_xpr_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html":[4,0,8,4,1375]
 };

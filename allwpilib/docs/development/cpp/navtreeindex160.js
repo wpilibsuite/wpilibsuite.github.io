@@ -1,5 +1,9 @@
 var NAVTREEINDEX160 =
 {
+"namespaceunits.html#a4228ad59bbc645b58ea410d919b18420":[4,0,23,160],
+"namespaceunits.html#a43d213fc487f68b3ac3a26308d259833":[4,0,23,231],
+"namespaceunits.html#a452daea7e98f422a757a4c21758c3d94":[4,0,23,224],
+"namespaceunits.html#a459180178381cdbad36ddfd67f93352b":[4,0,23,235],
 "namespaceunits.html#a4676ba7553daca7fa6d911b48558a7d6":[4,0,23,115],
 "namespaceunits.html#a4b48dbb59414aa4e8086c0df76a1586b":[4,0,23,179],
 "namespaceunits.html#a5152d55c3a0604db8cf531ea9cb3c1f6":[4,0,23,307],
@@ -245,9 +249,5 @@ var NAVTREEINDEX160 =
 "namespaceunits_1_1dimensionless.html#af747bc24203407ff7374ac2cad2b3808":[4,0,23,16,5],
 "namespaceunits_1_1dimensionless.html#afa05c1eff65b212eba705125a7829f0f":[4,0,23,16,4],
 "namespaceunits_1_1energy.html":[4,0,23,17],
-"namespaceunits_1_1force.html":[4,0,23,18],
-"namespaceunits_1_1frequency.html":[4,0,23,19],
-"namespaceunits_1_1illuminance.html":[4,0,23,20],
-"namespaceunits_1_1impedance.html":[4,0,23,21],
-"namespaceunits_1_1inductance.html":[4,0,23,22]
+"namespaceunits_1_1force.html":[4,0,23,18]
 };

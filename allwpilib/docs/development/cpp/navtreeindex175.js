@@ -1,5 +1,9 @@
 var NAVTREEINDEX175 =
 {
+"struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#adcd4282d8e49e661ed8e123f92bdb308":[4,0,8,4,290,1],
+"struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#af46c6f58464fb29fbf8da63fd2f12f8a":[6,0,4,2,288,0],
+"struct_eigen_1_1internal_1_1dot__nocheck_3_01_t_00_01_u_00_01true_01_4.html#af46c6f58464fb29fbf8da63fd2f12f8a":[4,0,8,4,290,0],
+"struct_eigen_1_1internal_1_1eigen__packet__wrapper.html":[6,0,4,2,290],
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html":[4,0,8,4,292],
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html#a4ff42512ccb382fea39c6d97783244c7":[6,0,4,2,290,3],
 "struct_eigen_1_1internal_1_1eigen__packet__wrapper.html#a4ff42512ccb382fea39c6d97783244c7":[4,0,8,4,292,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX175 =
 "struct_eigen_1_1internal_1_1evaluator_3_01_mapped_sparse_matrix_3_01___scalar_00_01___options_00_01___storage_index_01_4_01_4.html#a3777795983e057b20ea1f3a2d886a07d":[4,0,8,4,332,2],
 "struct_eigen_1_1internal_1_1evaluator_3_01_mapped_sparse_matrix_3_01___scalar_00_01___options_00_01___storage_index_01_4_01_4.html#a5b292dc6d581752e50523f49560fe3d5":[6,0,4,2,330,0],
 "struct_eigen_1_1internal_1_1evaluator_3_01_mapped_sparse_matrix_3_01___scalar_00_01___options_00_01___storage_index_01_4_01_4.html#a5b292dc6d581752e50523f49560fe3d5":[4,0,8,4,332,0],
-"struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html":[6,0,4,2,331],
-"struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html":[4,0,8,4,333],
-"struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html#a122d67ef3951efc2cb8dd8c527d853f6":[6,0,4,2,331,2],
-"struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html#a122d67ef3951efc2cb8dd8c527d853f6":[4,0,8,4,333,2],
-"struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html#a295566c1afa6ea66aa78a32daaf6d938":[4,0,8,4,333,1]
+"struct_eigen_1_1internal_1_1evaluator_3_01_matrix_3_01_scalar_00_01_rows_00_01_cols_00_01_optionc8e41d58a4f0b7a4fe2e5592b375183d.html":[6,0,4,2,331]
 };

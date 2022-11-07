@@ -1,5 +1,9 @@
 var NAVTREEINDEX161 =
 {
+"namespaceunits_1_1frequency.html":[4,0,23,19],
+"namespaceunits_1_1illuminance.html":[4,0,23,20],
+"namespaceunits_1_1impedance.html":[4,0,23,21],
+"namespaceunits_1_1inductance.html":[4,0,23,22],
 "namespaceunits_1_1length.html":[4,0,23,23],
 "namespaceunits_1_1literals.html":[4,0,23,24],
 "namespaceunits_1_1luminous__flux.html":[4,0,23,25],
@@ -245,9 +249,5 @@ var NAVTREEINDEX161 =
 "namespacewpi.html#a9257f3c46568bac25b1ba2f3fac4678a":[4,0,24,270],
 "namespacewpi.html#a9258c13f90593d3af2d92dde80a79e9b":[4,0,24,325],
 "namespacewpi.html#a9258f2870864143e01a09bb5cf806ba6":[4,0,24,421],
-"namespacewpi.html#a93417c92f7c6516d3746b419a5f6ec39":[4,0,24,267],
-"namespacewpi.html#a94f1eed3c192da2db90b3d0ab15d24c8":[4,0,24,251],
-"namespacewpi.html#a95519eb02ecc90f51e4157b797a4c306":[4,0,24,305],
-"namespacewpi.html#a9630e9cd2902c4dbc7f817a6a84bb9da":[4,0,24,392],
-"namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8":[4,0,24,209]
+"namespacewpi.html#a93417c92f7c6516d3746b419a5f6ec39":[4,0,24,267]
 };

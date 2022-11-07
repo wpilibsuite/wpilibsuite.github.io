@@ -1,5 +1,9 @@
 var NAVTREEINDEX166 =
 {
+"struct_eigen_1_1_eigen_base.html#a23248b545ee580f3ddb8150cd3d032a3":[3,41,24,6],
+"struct_eigen_1_1_eigen_base.html#a50c19c45f15acdfe1cb66ab5e879b8e3":[3,41,24,5],
+"struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02":[3,41,24,0],
+"struct_eigen_1_1_eigen_base.html#a677a970c7d063d7033180dd9dbb53565":[3,41,24,13],
 "struct_eigen_1_1_eigen_base.html#a80808d9477b4dddab2613a5d8764d79e":[3,41,24,9],
 "struct_eigen_1_1_eigen_base.html#a95ff992a5c4c5debb41f6ae2f639e1f3":[3,41,24,1],
 "struct_eigen_1_1_eigen_base.html#a991b21b79bb613171a53271933c53cab":[3,41,24,10],
@@ -245,9 +249,5 @@ var NAVTREEINDEX166 =
 "struct_eigen_1_1_sparse_matrix_1_1_index_pos_pair.html#a84b2fc39ebdc3a389ee0a5e75e113192":[3,50,6,0,0],
 "struct_eigen_1_1_sparse_matrix_base_1_1_const_self_adjoint_view_return_type.html":[3,50,11,0],
 "struct_eigen_1_1_sparse_matrix_base_1_1_const_self_adjoint_view_return_type.html#a1cc602fd26edeeaeb8d0d671230f7c2d":[3,50,11,0,0],
-"struct_eigen_1_1_sparse_matrix_base_1_1_cwise_product_dense_return_type.html":[3,50,11,1],
-"struct_eigen_1_1_sparse_matrix_base_1_1_cwise_product_dense_return_type.html#a0c5232f6ca39d1d0c0af44389a87916e":[3,50,11,1,0],
-"struct_eigen_1_1_sparse_matrix_base_1_1_self_adjoint_view_return_type.html":[3,50,11,2],
-"struct_eigen_1_1_sparse_matrix_base_1_1_self_adjoint_view_return_type.html#ae7adbe6e76b775017b2177ecccde88f8":[3,50,11,2,0],
-"struct_eigen_1_1_sparse_q_r___q_product.html":[4,0,8,229]
+"struct_eigen_1_1_sparse_matrix_base_1_1_cwise_product_dense_return_type.html":[3,50,11,1]
 };

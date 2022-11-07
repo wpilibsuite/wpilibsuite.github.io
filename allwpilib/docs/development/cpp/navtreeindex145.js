@@ -1,5 +1,9 @@
 var NAVTREEINDEX145 =
 {
+"inductance_8h.html":[7,0,11,22],
+"inductance_8h.html#a5fcfc6a1a4447a46153137d090cc08a4":[7,0,11,22,0],
+"inductance_8h_source.html":[7,0,11,22],
+"interpolating__map_8h.html":[7,0,13,17],
 "interpolating__map_8h_source.html":[7,0,13,17],
 "inv__sqrt_8hpp.html":[7,0,8,2,0,0,32],
 "inv__sqrt_8hpp.html#a2d2f6e4c1d9c2661728c27e1401129c7":[7,0,8,2,0,0,32,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX145 =
 "luminous__intensity_8h_source.html":[7,0,11,25],
 "magnetic__field__strength_8h.html":[7,0,11,26],
 "magnetic__field__strength_8h.html#a622851f0b67539bfb3e87b2cf39e6ed1":[7,0,11,26,2],
-"magnetic__field__strength_8h.html#abbf3a12277f057acc6b6d2518bec2091":[7,0,11,26,0],
-"magnetic__field__strength_8h.html#ae5abc18fc8428c40bbc7805627eb5ad1":[7,0,11,26,1],
-"magnetic__field__strength_8h_source.html":[7,0,11,26],
-"magnetic__flux_8h.html":[7,0,11,27],
-"magnetic__flux_8h.html#a5e0cd4ef5241a20f2feef3e2d105d86a":[7,0,11,27,1]
+"magnetic__field__strength_8h.html#abbf3a12277f057acc6b6d2518bec2091":[7,0,11,26,0]
 };

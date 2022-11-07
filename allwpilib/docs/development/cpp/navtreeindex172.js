@@ -1,5 +1,9 @@
 var NAVTREEINDEX172 =
 {
+"struct_eigen_1_1internal_1_1bit__not.html":[6,0,4,2,129],
+"struct_eigen_1_1internal_1_1bit__not.html#ab18210f03fea34f9b86ac6f0b81d7ea9":[6,0,4,2,129,0],
+"struct_eigen_1_1internal_1_1bit__not.html#ab18210f03fea34f9b86ac6f0b81d7ea9":[4,0,8,4,131,0],
+"struct_eigen_1_1internal_1_1bit__or.html":[6,0,4,2,130],
 "struct_eigen_1_1internal_1_1bit__or.html":[4,0,8,4,132],
 "struct_eigen_1_1internal_1_1bit__or.html#a22aadc0d99f1752c3ce05665995ff8ad":[6,0,4,2,130,0],
 "struct_eigen_1_1internal_1_1bit__or.html#a22aadc0d99f1752c3ce05665995ff8ad":[4,0,8,4,132,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX172 =
 "struct_eigen_1_1internal_1_1column__dfs__traits.html":[6,0,4,2,175],
 "struct_eigen_1_1internal_1_1column__dfs__traits.html#a034a1bf7ad2d7a4ba7e8c91463dc3f36":[6,0,4,2,175,4],
 "struct_eigen_1_1internal_1_1column__dfs__traits.html#a034a1bf7ad2d7a4ba7e8c91463dc3f36":[4,0,8,4,177,4],
-"struct_eigen_1_1internal_1_1column__dfs__traits.html#a0bfbf67afd5463fd9b10fc6d9bcefedb":[6,0,4,2,175,8],
-"struct_eigen_1_1internal_1_1column__dfs__traits.html#a0bfbf67afd5463fd9b10fc6d9bcefedb":[4,0,8,4,177,8],
-"struct_eigen_1_1internal_1_1column__dfs__traits.html#a1dd26c1caee43988d61d295e7cfa950a":[6,0,4,2,175,5],
-"struct_eigen_1_1internal_1_1column__dfs__traits.html#a1dd26c1caee43988d61d295e7cfa950a":[4,0,8,4,177,5],
-"struct_eigen_1_1internal_1_1column__dfs__traits.html#a5b48ce6fa5fa373fd784033df70959ff":[4,0,8,4,177,3]
+"struct_eigen_1_1internal_1_1column__dfs__traits.html#a0bfbf67afd5463fd9b10fc6d9bcefedb":[6,0,4,2,175,8]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX190 =
 {
+"struct_eigen_1_1internal_1_1scalar__cmp__op_3_01_lhs_scalar_00_01_rhs_scalar_00_01cmp___u_n_o_r_d_01_4.html":[6,0,4,2,1117],
+"struct_eigen_1_1internal_1_1scalar__cmp__op_3_01_lhs_scalar_00_01_rhs_scalar_00_01cmp___u_n_o_r_d_01_4.html#a2213652b1816181cef1d17c3b57b7e73":[6,0,4,2,1117,1],
+"struct_eigen_1_1internal_1_1scalar__cmp__op_3_01_lhs_scalar_00_01_rhs_scalar_00_01cmp___u_n_o_r_d_01_4.html#a2213652b1816181cef1d17c3b57b7e73":[4,0,8,4,1119,1],
+"struct_eigen_1_1internal_1_1scalar__cmp__op_3_01_lhs_scalar_00_01_rhs_scalar_00_01cmp___u_n_o_r_d_01_4.html#ae511083326de74bcd53a5cd609f43532":[6,0,4,2,1117,0],
 "struct_eigen_1_1internal_1_1scalar__cmp__op_3_01_lhs_scalar_00_01_rhs_scalar_00_01cmp___u_n_o_r_d_01_4.html#ae511083326de74bcd53a5cd609f43532":[4,0,8,4,1119,0],
 "struct_eigen_1_1internal_1_1scalar__conj__product__op.html":[4,0,8,4,1120],
 "struct_eigen_1_1internal_1_1scalar__conj__product__op.html":[6,0,4,2,1118],
@@ -245,9 +249,5 @@ var NAVTREEINDEX190 =
 "struct_eigen_1_1internal_1_1scalar__min__op.html#acdb52c87f531b2396bf47bea0646e3aa":[4,0,8,4,1165,3],
 "struct_eigen_1_1internal_1_1scalar__min__op.html#aee2dbc27d2ced73d06adc08e730bbe60":[4,0,8,4,1165,2],
 "struct_eigen_1_1internal_1_1scalar__min__op.html#aee2dbc27d2ced73d06adc08e730bbe60":[6,0,4,2,1163,2],
-"struct_eigen_1_1internal_1_1scalar__ndtri__op.html":[4,0,8,4,1166],
-"struct_eigen_1_1internal_1_1scalar__ndtri__op.html":[6,0,4,2,1164],
-"struct_eigen_1_1internal_1_1scalar__opposite__op.html":[4,0,8,4,1167],
-"struct_eigen_1_1internal_1_1scalar__opposite__op.html":[6,0,4,2,1165],
-"struct_eigen_1_1internal_1_1scalar__opposite__op.html#a2ad34e316a311a4f94a2e0493033acbc":[4,0,8,4,1167,1]
+"struct_eigen_1_1internal_1_1scalar__ndtri__op.html":[4,0,8,4,1166]
 };
