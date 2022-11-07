@@ -1,5 +1,9 @@
 var NAVTREEINDEX146 =
 {
+"luminous__intensity_8h_source.html":[7,0,11,25],
+"magnetic__field__strength_8h.html":[7,0,11,26],
+"magnetic__field__strength_8h.html#a622851f0b67539bfb3e87b2cf39e6ed1":[7,0,11,26,2],
+"magnetic__field__strength_8h.html#abbf3a12277f057acc6b6d2518bec2091":[7,0,11,26,0],
 "magnetic__field__strength_8h.html#ae5abc18fc8428c40bbc7805627eb5ad1":[7,0,11,26,1],
 "magnetic__field__strength_8h_source.html":[7,0,11,26],
 "magnetic__flux_8h.html":[7,0,11,27],
@@ -232,8 +236,8 @@ var NAVTREEINDEX146 =
 "namespace_eigen_1_1bfloat16__impl.html#ac9f6a8c5c1420c1418e70cd02459e20a":[4,0,8,1,23],
 "namespace_eigen_1_1bfloat16__impl.html#ad04be92982355cc746d9d02ae4379fb0":[4,0,8,1,42],
 "namespace_eigen_1_1bfloat16__impl.html#ad42a51b3750fb0a6161ade50aaf1fd3d":[4,0,8,1,35],
-"namespace_eigen_1_1bfloat16__impl.html#ad564417257334c6bbf88e3c4ff7998d4":[4,0,8,1,16],
 "namespace_eigen_1_1bfloat16__impl.html#ad564417257334c6bbf88e3c4ff7998d4":[4,0,8,1,15],
+"namespace_eigen_1_1bfloat16__impl.html#ad564417257334c6bbf88e3c4ff7998d4":[4,0,8,1,16],
 "namespace_eigen_1_1bfloat16__impl.html#ad5ba186f2cbed8bfb9d7ba1f4558ddd8":[4,0,8,1,62],
 "namespace_eigen_1_1bfloat16__impl.html#ad9e04699aea5b9eae8f72e47a12d7603":[4,0,8,1,31],
 "namespace_eigen_1_1bfloat16__impl.html#ade393b7acf30f289f3878e4ac3d3f13b":[4,0,8,1,49],
@@ -245,9 +249,5 @@ var NAVTREEINDEX146 =
 "namespace_eigen_1_1bfloat16__impl.html#afd5f3a67169dae71cb99f55bff80bd9c":[4,0,8,1,6],
 "namespace_eigen_1_1bfloat16__impl.html#aff7dfa2c21dfbc3a25b302fafea9bcce":[4,0,8,1,36],
 "namespace_eigen_1_1half__impl.html":[4,0,8,2],
-"namespace_eigen_1_1half__impl.html#a03f37f7cb0691e122e6181b6891280e2":[4,0,8,2,3],
-"namespace_eigen_1_1half__impl.html#a04a9e77f022c30b44139bdc0069f4f25":[4,0,8,2,32],
-"namespace_eigen_1_1half__impl.html#a08c4d7059d92a0dc8ff97fbe5ef44fb6":[4,0,8,2,18],
-"namespace_eigen_1_1half__impl.html#a08ff9aac56dd6727c46ad9c005e5c010":[4,0,8,2,47],
-"namespace_eigen_1_1half__impl.html#a10fdcc7b5217ef2ce3acf07c240d4bd8":[4,0,8,2,41]
+"namespace_eigen_1_1half__impl.html#a03f37f7cb0691e122e6181b6891280e2":[4,0,8,2,3]
 };
