@@ -177,7 +177,7 @@
 <span class="sourceLineNo">165</span><a id="line.165">  public Pose3d transformBy(Transform3d other) {</a>
 <span class="sourceLineNo">166</span><a id="line.166">    return new Pose3d(</a>
 <span class="sourceLineNo">167</span><a id="line.167">        m_translation.plus(other.getTranslation().rotateBy(m_rotation)),</a>
-<span class="sourceLineNo">168</span><a id="line.168">        m_rotation.plus(other.getRotation()));</a>
+<span class="sourceLineNo">168</span><a id="line.168">        other.getRotation().plus(m_rotation));</a>
 <span class="sourceLineNo">169</span><a id="line.169">  }</a>
 <span class="sourceLineNo">170</span><a id="line.170"></a>
 <span class="sourceLineNo">171</span><a id="line.171">  /**</a>
