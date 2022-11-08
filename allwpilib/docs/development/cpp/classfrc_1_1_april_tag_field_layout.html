@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-9-g2a8e0e1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-10-ge92b6dd</span>
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class for representing a layout of AprilTags on a field and reading them from a JSON format. </p>
-<p >The JSON format contains two top-level objects, "tags" and "field". The "tags" object is a list of all AprilTags contained within a layout. Each <a class="el" href="structfrc_1_1_april_tag.html">AprilTag</a> serializes to a JSON object containing an ID and a <a class="el" href="classfrc_1_1_pose3d.html" title="Represents a 3D pose containing translational and rotational elements.">Pose3d</a>. The "field" object is a descriptor of the size of the field in meters with "width" and "height" values. This is to account for arbitrary field sizes when mirroring the poses.</p>
+<p >The JSON format contains two top-level objects, "tags" and "field". The "tags" object is a list of all AprilTags contained within a layout. Each <a class="el" href="structfrc_1_1_april_tag.html">AprilTag</a> serializes to a JSON object containing an ID and a <a class="el" href="classfrc_1_1_pose3d.html" title="Represents a 3D pose containing translational and rotational elements.">Pose3d</a>. The "field" object is a descriptor of the size of the field in meters with "width" and "length" values. This is to account for arbitrary field sizes when mirroring the poses.</p>
 <p >Pose3ds are assumed to be measured from the bottom-left corner of the field, when the blue alliance is at the left. Pose3ds will automatically be returned as passed in when calling GetTagPose(int). Setting an alliance color via <a class="el" href="classfrc_1_1_april_tag_field_layout.html#a78690b41d1b2a41b41e3d4aaeb1016be" title="Set the alliance that your team is on.">SetAlliance(DriverStation::Alliance)</a> will mirror the poses returned from GetTagPose(int) to be correct relative to the other alliance. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5660e7d36685855f733934e7eb6a5a1" name="ae5660e7d36685855f733934e7eb6a5a1"></a>
@@ -452,7 +452,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a></li>
-    <li class="footer">Generated on Tue Nov 8 2022 18:24:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 8 2022 21:30:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
