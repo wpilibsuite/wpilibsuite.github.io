@@ -40,7 +40,7 @@
 <span class="sourceLineNo">028</span><a id="line.28"> * &lt;p&gt;The JSON format contains two top-level objects, "tags" and "field". The "tags" object is a</a>
 <span class="sourceLineNo">029</span><a id="line.29"> * list of all AprilTags contained within a layout. Each AprilTag serializes to a JSON object</a>
 <span class="sourceLineNo">030</span><a id="line.30"> * containing an ID and a Pose3d. The "field" object is a descriptor of the size of the field in</a>
-<span class="sourceLineNo">031</span><a id="line.31"> * meters with "width" and "height" values. This is to account for arbitrary field sizes when</a>
+<span class="sourceLineNo">031</span><a id="line.31"> * meters with "width" and "length" values. This is to account for arbitrary field sizes when</a>
 <span class="sourceLineNo">032</span><a id="line.32"> * mirroring the poses.</a>
 <span class="sourceLineNo">033</span><a id="line.33"> *</a>
 <span class="sourceLineNo">034</span><a id="line.34"> * &lt;p&gt;Pose3ds are assumed to be measured from the bottom-left corner of the field, when the blue</a>
@@ -188,13 +188,13 @@
 <span class="sourceLineNo">176</span><a id="line.176">    public double fieldWidth;</a>
 <span class="sourceLineNo">177</span><a id="line.177"></a>
 <span class="sourceLineNo">178</span><a id="line.178">    @SuppressWarnings("MemberName")</a>
-<span class="sourceLineNo">179</span><a id="line.179">    @JsonProperty(value = "height")</a>
+<span class="sourceLineNo">179</span><a id="line.179">    @JsonProperty(value = "length")</a>
 <span class="sourceLineNo">180</span><a id="line.180">    public double fieldLength;</a>
 <span class="sourceLineNo">181</span><a id="line.181"></a>
 <span class="sourceLineNo">182</span><a id="line.182">    @JsonCreator()</a>
 <span class="sourceLineNo">183</span><a id="line.183">    FieldDimensions(</a>
 <span class="sourceLineNo">184</span><a id="line.184">        @JsonProperty(required = true, value = "width") double fieldWidth,</a>
-<span class="sourceLineNo">185</span><a id="line.185">        @JsonProperty(required = true, value = "height") double fieldLength) {</a>
+<span class="sourceLineNo">185</span><a id="line.185">        @JsonProperty(required = true, value = "length") double fieldLength) {</a>
 <span class="sourceLineNo">186</span><a id="line.186">      this.fieldWidth = fieldWidth;</a>
 <span class="sourceLineNo">187</span><a id="line.187">      this.fieldLength = fieldLength;</a>
 <span class="sourceLineNo">188</span><a id="line.188">    }</a>
