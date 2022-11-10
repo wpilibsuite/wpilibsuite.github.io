@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-13-g2764004</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-15-g3d8d593</span>
    </div>
   </td>
  </tr>
@@ -154,9 +154,9 @@ $(document).ready(function(){initNavTree('velocity_8h_source.html',''); initResi
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">using namespace </span>velocity;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}  <span class="comment">// namespace units</span></div>
 <div class="ttc" id="abase_8h_html"><div class="ttname"><a href="base_8h.html">base.h</a></div></div>
-<div class="ttc" id="abase_8h_html_aa0b0ec340728bbef5aeab07641a61948"><div class="ttname"><a href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a></div><div class="ttdeci">#define UNIT_ADD_CATEGORY_TRAIT(unitCategory)</div><div class="ttdoc">Macro to create the is_category_unit type trait.</div><div class="ttdef"><b>Definition:</b> base.h:382</div></div>
-<div class="ttc" id="agroup___unit_manipulators_html_ga18b87c9f4576fb72ddc0b2a516a42d41"><div class="ttname"><a href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a></div><div class="ttdeci">typename units::detail::inverse_impl&lt; U &gt;::type inverse</div><div class="ttdoc">represents the inverse unit type of class U.</div><div class="ttdef"><b>Definition:</b> base.h:1135</div></div>
-<div class="ttc" id="agroup___unit_types_html_ga36d8b8cf508bd5ac7854d15f6eaf2d7c"><div class="ttname"><a href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a></div><div class="ttdeci">typename units::detail::compound_impl&lt; U, Us... &gt;::type compound_unit</div><div class="ttdoc">Represents a unit type made up from other units.</div><div class="ttdef"><b>Definition:</b> base.h:1435</div></div>
+<div class="ttc" id="abase_8h_html_aa0b0ec340728bbef5aeab07641a61948"><div class="ttname"><a href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a></div><div class="ttdeci">#define UNIT_ADD_CATEGORY_TRAIT(unitCategory)</div><div class="ttdoc">Macro to create the is_category_unit type trait.</div><div class="ttdef"><b>Definition:</b> base.h:381</div></div>
+<div class="ttc" id="agroup___unit_manipulators_html_ga18b87c9f4576fb72ddc0b2a516a42d41"><div class="ttname"><a href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a></div><div class="ttdeci">typename units::detail::inverse_impl&lt; U &gt;::type inverse</div><div class="ttdoc">represents the inverse unit type of class U.</div><div class="ttdef"><b>Definition:</b> base.h:1134</div></div>
+<div class="ttc" id="agroup___unit_types_html_ga36d8b8cf508bd5ac7854d15f6eaf2d7c"><div class="ttname"><a href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a></div><div class="ttdeci">typename units::detail::compound_impl&lt; U, Us... &gt;::type compound_unit</div><div class="ttdoc">Represents a unit type made up from other units.</div><div class="ttdef"><b>Definition:</b> base.h:1434</div></div>
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> constants.h:46</div></div>
 <div class="ttc" id="anamespaceunits_html_a296b1c25d56aa9cb8805d6ac352fd884"><div class="ttname"><a href="namespaceunits.html#a296b1c25d56aa9cb8805d6ac352fd884">units::kph</a></div><div class="ttdeci">compound_unit&lt; length::feet, inverse&lt; time::seconds &gt; &gt; kph</div><div class="ttdef"><b>Definition:</b> velocity.h:50</div></div>
@@ -165,8 +165,8 @@ $(document).ready(function(){initNavTree('velocity_8h_source.html',''); initResi
 <div class="ttc" id="anamespaceunits_html_aac089182e6aa6693b16216a9fcf17b4a"><div class="ttname"><a href="namespaceunits.html#aac089182e6aa6693b16216a9fcf17b4a">units::kilometers_per_hour</a></div><div class="ttdeci">compound_unit&lt; length::feet, inverse&lt; time::seconds &gt; &gt; kilometers_per_hour</div><div class="ttdef"><b>Definition:</b> velocity.h:50</div></div>
 <div class="ttc" id="anamespaceunits_html_ad98ab5cc355a6d8434e036656fd02443"><div class="ttname"><a href="namespaceunits.html#ad98ab5cc355a6d8434e036656fd02443">units::feet_per_second</a></div><div class="ttdeci">feet_per_second</div><div class="ttdef"><b>Definition:</b> velocity.h:46</div></div>
 <div class="ttc" id="anamespaceunits_html_af458f60785bed0b100feb6696b74f07e"><div class="ttname"><a href="namespaceunits.html#af458f60785bed0b100feb6696b74f07e">units::UNIT_ADD</a></div><div class="ttdeci">unit&lt; std::ratio&lt; 1, 180 &gt;, radians, std::ratio&lt; 1 &gt; &gt; UNIT_ADD(angle, arcsecond, arcseconds, arcsec, unit&lt; std::ratio&lt; 1, 60 &gt;, arcminutes &gt;) using namespace angle</div></div>
-<div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:759</div></div>
-<div class="ttc" id="astructunits_1_1unit_html"><div class="ttname"><a href="structunits_1_1unit.html">units::unit</a></div><div class="ttdoc">Type representing an arbitrary unit.</div><div class="ttdef"><b>Definition:</b> base.h:885</div></div>
+<div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:758</div></div>
+<div class="ttc" id="astructunits_1_1unit_html"><div class="ttname"><a href="structunits_1_1unit.html">units::unit</a></div><div class="ttdoc">Type representing an arbitrary unit.</div><div class="ttdef"><b>Definition:</b> base.h:884</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('velocity_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="velocity_8h.html">velocity.h</a></li>
-    <li class="footer">Generated on Thu Nov 10 2022 17:45:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Nov 10 2022 22:16:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
