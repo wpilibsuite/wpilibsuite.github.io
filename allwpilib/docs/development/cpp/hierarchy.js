@@ -932,6 +932,7 @@ var hierarchy =
     [ "Eigen::DiagonalProduct< MatrixType, DiagonalType, ProductOrder >", "class_eigen_1_1_diagonal_product.html", null ],
     [ "Eigen::DiagonalShape", "struct_eigen_1_1_diagonal_shape.html", null ],
     [ "frc::DifferentialDriveAccelerationLimiter", "classfrc_1_1_differential_drive_acceleration_limiter.html", null ],
+    [ "frc::DifferentialDriveFeedforward", "classfrc_1_1_differential_drive_feedforward.html", null ],
     [ "frc::DifferentialDriveKinematics", "classfrc_1_1_differential_drive_kinematics.html", null ],
     [ "frc::DifferentialDriveOdometry", "classfrc_1_1_differential_drive_odometry.html", null ],
     [ "frc::DifferentialDrivePoseEstimator", "classfrc_1_1_differential_drive_pose_estimator.html", null ],

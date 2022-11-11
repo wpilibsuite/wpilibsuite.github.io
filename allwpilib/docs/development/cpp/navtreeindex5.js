@@ -117,6 +117,8 @@ var NAVTREEINDEX5 =
 "_differential_drive_8h_source.html":[7,0,3,2,0],
 "_differential_drive_acceleration_limiter_8h.html":[7,0,4,0,3],
 "_differential_drive_acceleration_limiter_8h_source.html":[7,0,4,0,3],
+"_differential_drive_feedforward_8h.html":[7,0,4,0,4],
+"_differential_drive_feedforward_8h_source.html":[7,0,4,0,4],
 "_differential_drive_kinematics_8h.html":[7,0,4,6,1],
 "_differential_drive_kinematics_8h_source.html":[7,0,4,6,1],
 "_differential_drive_kinematics_constraint_8h.html":[7,0,4,9,0,1],
@@ -129,8 +131,8 @@ var NAVTREEINDEX5 =
 "_differential_drive_voltage_constraint_8h_source.html":[7,0,4,9,0,2],
 "_differential_drive_wheel_speeds_8h.html":[7,0,4,6,3],
 "_differential_drive_wheel_speeds_8h_source.html":[7,0,4,6,3],
-"_differential_drive_wheel_voltages_8h.html":[7,0,4,0,4],
-"_differential_drive_wheel_voltages_8h_source.html":[7,0,4,0,4],
+"_differential_drive_wheel_voltages_8h.html":[7,0,4,0,5],
+"_differential_drive_wheel_voltages_8h_source.html":[7,0,4,0,5],
 "_differential_drivetrain_sim_8h.html":[7,0,3,9,16],
 "_differential_drivetrain_sim_8h_source.html":[7,0,3,9,16],
 "_digital_glitch_filter_8h.html":[7,0,3,36],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "_driver_station_data_8h.html#aa6e4c947021c25fabb547f85f67a53e4":[7,0,6,3,10,30],
 "_driver_station_data_8h.html#aad09604be335682fd7596fe8f5490c52":[7,0,6,3,10,71],
 "_driver_station_data_8h.html#ab9721d835b5dad85d9df605eda0d27b9":[7,0,6,3,10,37],
-"_driver_station_data_8h.html#abd2ba29e7f217d2368e2af37654d3280":[7,0,6,3,10,13],
-"_driver_station_data_8h.html#abd611bf780dbd12890370348c272a9e4":[7,0,6,3,10,38],
-"_driver_station_data_8h.html#abeb4fb8f47f800797e6588403a7de22e":[7,0,6,3,10,11]
+"_driver_station_data_8h.html#abd2ba29e7f217d2368e2af37654d3280":[7,0,6,3,10,13]
 };

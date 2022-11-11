@@ -1,8 +1,8 @@
 var searchData=
 [
   ['e_0',['e',['../structbasic__fp.html#a1e4a14ea86e324547aa69f30d426d0c6',1,'basic_fp']]],
-  ['ebps_1',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
-  ['ebps_2',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
+  ['ebps_1',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
+  ['ebps_2',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
   ['elaborations_3',['elaborations',['../_third_party_notices_8txt.html#a22adf0f3f4508732c311a0db3aa1e5a3',1,'ThirdPartyNotices.txt']]],
   ['electronic_4',['electronic',['../_third_party_notices_8txt.html#a17eb1cdc4fd8a9cf2e6a8e63448fe148',1,'ThirdPartyNotices.txt']]],
   ['empty_5',['Empty',['../namespaceinternal_1_1_colamd.html#ad2feab81142482702b03352689f921b0',1,'internal::Colamd']]],
@@ -21,8 +21,8 @@ var searchData=
   ['evalbeforenestingbit_18',['EvalBeforeNestingBit',['../group__flags.html#gaa34e83bae46a8eeae4e69ebe3aaecbed',1,'Eigen']]],
   ['event_19',['event',['../structuv__once__s.html#a2bf4247a8c9fe869796f2fb6afd76eb4',1,'uv_once_s']]],
   ['eventname_20',['eventName',['../struct_h_a_l___match_info.html#a5dc3c78c6fb994cfd6c6b2af23e17411',1,'HAL_MatchInfo']]],
-  ['events_21',['events',['../structuv____io__s.html#a575481d9c01f83f1fd15e3f0a2a8befc',1,'uv__io_s::events()'],['../structwpi_1_1_event_vector.html#a6e5c2b1ba617d618e56b3c7dd6ed76d8',1,'wpi::EventVector::events()']]],
-  ['events_22',['Events',['../struct___a_f_d___p_o_l_l___h_a_n_d_l_e___i_n_f_o.html#ac961bebf9ed5ce1d22c3e28fa6abb797',1,'_AFD_POLL_HANDLE_INFO']]],
+  ['events_21',['Events',['../struct___a_f_d___p_o_l_l___h_a_n_d_l_e___i_n_f_o.html#ac961bebf9ed5ce1d22c3e28fa6abb797',1,'_AFD_POLL_HANDLE_INFO']]],
+  ['events_22',['events',['../structuv____io__s.html#a575481d9c01f83f1fd15e3f0a2a8befc',1,'uv__io_s::events()'],['../structwpi_1_1_event_vector.html#a6e5c2b1ba617d618e56b3c7dd6ed76d8',1,'wpi::EventVector::events()']]],
   ['exabits_5fper_5fsecond_23',['exabits_per_second',['../namespaceunits.html#ae9fcb8af659debf0adbb3133e2df177f',1,'units']]],
   ['exabytes_5fper_5fsecond_24',['exabytes_per_second',['../namespaceunits.html#a231d8134d8ed3fb36347afe477798d41',1,'units']]],
   ['exception_25',['exception',['../_third_party_notices_8txt.html#a5378875817b4fe889c3bbcd85fea1862',1,'ThirdPartyNotices.txt']]],

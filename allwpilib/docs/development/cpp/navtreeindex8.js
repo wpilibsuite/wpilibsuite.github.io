@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"_generic_packet_math_8h.html#ae2a6f4fec545ece4df86b64228bdbe56":[7,0,8,1,0,0,0,1,33,117],
+"_generic_packet_math_8h.html#ae2d624a9ecf1e9057bdb809614f5d43b":[7,0,8,1,0,0,0,1,33,38],
 "_generic_packet_math_8h.html#aeb4feddd9334c4ddff94450e2f19e96c":[7,0,8,1,0,0,0,1,33,47],
 "_generic_packet_math_8h.html#aeb7a48085d0438a3a8e8aa297a1093cd":[7,0,8,1,0,0,0,1,33,70],
 "_generic_packet_math_8h.html#aee419455c26d707fd42fe49c7212b9ce":[7,0,8,1,0,0,0,1,33,76],
@@ -225,8 +227,8 @@ var NAVTREEINDEX8 =
 "_hashing_8h_source.html":[7,0,10,3,0,0,15],
 "_hessenberg_decomposition_8h.html":[7,0,8,1,0,0,0,2,5],
 "_hessenberg_decomposition_8h_source.html":[7,0,8,1,0,0,0,2,5],
-"_holonomic_drive_controller_8h.html":[7,0,4,0,6],
-"_holonomic_drive_controller_8h_source.html":[7,0,4,0,6],
+"_holonomic_drive_controller_8h.html":[7,0,4,0,7],
+"_holonomic_drive_controller_8h_source.html":[7,0,4,0,7],
 "_householder.html":[7,0,8,1,0,0,4],
 "_householder.html#ad9787d843c48e739029389b36afab402":[7,0,8,1,0,0,4,0],
 "_householder_8h.html":[7,0,8,1,0,0,0,3,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "_http_util_8h.html#a8efec7766be35df2a4782f6cb1004058":[7,0,15,7,8],
 "_http_util_8h.html#ab6e885a95d4fbe472d78076ecc824194":[7,0,15,7,7],
 "_http_util_8h_source.html":[7,0,15,7],
-"_http_util_8inc.html":[7,0,15,8],
-"_http_util_8inc.html#afd6bf4a6a2999b2f755340eddcc0afa2":[7,0,15,8,0],
-"_http_web_socket_server_connection_8h.html":[7,0,15,9]
+"_http_util_8inc.html":[7,0,15,8]
 };
