@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"_partial_redux_evaluator_8h.html#a7cb69b1a74026b7abe996e6907cfb434":[7,0,8,1,0,0,0,1,47,6],
 "_partial_redux_evaluator_8h.html#aa4e4f9b70a689157beaa384a0e5395e0":[7,0,8,1,0,0,0,1,47,5],
 "_partial_redux_evaluator_8h_source.html":[7,0,8,1,0,0,0,1,47],
 "_permutation_matrix_8h.html":[7,0,8,1,0,0,0,1,48],
@@ -249,5 +248,6 @@ var NAVTREEINDEX17 =
 "_robo_rio_data_8h.html#a24f64f219dfdd81de86ccc74eda36d86":[7,0,6,3,22,21],
 "_robo_rio_data_8h.html#a275a49ed80a5a4ec4772ad45fa16dc7a":[7,0,6,3,22,11],
 "_robo_rio_data_8h.html#a2a74f8ed3a5ddaa7257e012b3bd52c85":[7,0,6,3,22,50],
-"_robo_rio_data_8h.html#a2e00b4b8a73da8949b69a9eb98df9841":[7,0,6,3,22,61]
+"_robo_rio_data_8h.html#a2e00b4b8a73da8949b69a9eb98df9841":[7,0,6,3,22,61],
+"_robo_rio_data_8h.html#a340b30435decafe5c3ca272ed8dbe6d7":[7,0,6,3,22,14]
 };

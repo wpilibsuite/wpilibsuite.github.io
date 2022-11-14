@@ -107,6 +107,7 @@ var NAVTREEINDEX10 =
 "_map_vector_8h.html":[7,0,10,3,0,0,18],
 "_map_vector_8h_source.html":[7,0,10,3,0,0,18],
 "_mapped_file_region_8h.html":[7,0,13,21],
+"_mapped_file_region_8h.html#a69bca4cd48a2ac719202f2f290a78bc9":[7,0,13,21,1],
 "_mapped_file_region_8h_source.html":[7,0,13,21],
 "_mapped_sparse_matrix_8h.html":[7,0,8,1,0,0,0,12,3],
 "_mapped_sparse_matrix_8h_source.html":[7,0,8,1,0,0,0,12,3],
@@ -213,6 +214,7 @@ var NAVTREEINDEX10 =
 "_math_functions_8h.html#a36862639fe0e8879b650a1111db1eec6":[7,0,8,1,0,0,0,1,40,154],
 "_math_functions_8h.html#a379005605a0d52888b75a516d191d37c":[7,0,8,1,0,0,0,1,40,147],
 "_math_functions_8h.html#a37fe89516bf3a3a0ddad3e0a8b89c206":[7,0,8,1,0,0,0,1,40,107],
+"_math_functions_8h.html#a381f80dcff321d22be012ec77817bb94":[7,0,8,1,0,0,0,1,40,100],
 "_math_functions_8h.html#a3971fed6f1aa9f60bf2b3c9c29f674b4":[7,0,8,1,0,0,0,1,40,124],
 "_math_functions_8h.html#a3a16f08b4c93e2853d700d73afe9a8f2":[7,0,8,1,0,0,0,1,40,112],
 "_math_functions_8h.html#a3cc80fc03610837da180f7e6d8e7b3ec":[7,0,8,1,0,0,0,1,40,153],
@@ -244,10 +246,8 @@ var NAVTREEINDEX10 =
 "_math_functions_8h.html#a9b2237b8d2efcbad55586743f3882a64":[7,0,8,1,0,0,0,1,40,109],
 "_math_functions_8h.html#a9b7a415a3401c28e7f8320e796159680":[7,0,8,1,0,0,0,1,40,96],
 "_math_functions_8h.html#aa4be6feea9e2540d3e3e1f411df2a5e6":[7,0,8,1,0,0,0,1,40,151],
+"_math_functions_8h.html#aa66707871e0b19a13608de358389972e":[7,0,8,1,0,0,0,1,40,99],
 "_math_functions_8h.html#aa813ff3fa5b9e7d7e64813d01701a83e":[7,0,8,1,0,0,0,1,40,106],
 "_math_functions_8h.html#aaae7a38ff399cff8362c40e9338002f6":[7,0,8,1,0,0,0,1,40,80],
-"_math_functions_8h.html#aab765557e1249782dbc24d6642e49c26":[7,0,8,1,0,0,0,1,40,139],
-"_math_functions_8h.html#ab3b30bf0bcfa1ad91dbec75fabb3bea0":[7,0,8,1,0,0,0,1,40,144],
-"_math_functions_8h.html#ab589c1da1f207b3493c463c5f006c8cc":[7,0,8,1,0,0,0,1,40,123],
-"_math_functions_8h.html#ab618d9f91937fc8af2f975fd29447a97":[7,0,8,1,0,0,0,1,40,98]
+"_math_functions_8h.html#aab765557e1249782dbc24d6642e49c26":[7,0,8,1,0,0,0,1,40,139]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-24-g5a320c3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-33-g64838e6</span>
    </div>
   </td>
  </tr>
@@ -142,10 +142,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5675dfb538a6bba9038bc4f7a95204e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the new rotation to the current rotation using a rotation matrix.  <a href="classfrc_1_1_rotation2d.html#a5675dfb538a6bba9038bc4f7a95204e2">More...</a><br /></td></tr>
 <tr class="separator:a5675dfb538a6bba9038bc4f7a95204e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad93619fa0138d586a01d1bdc026d4234"><td class="memItemLeft" align="right" valign="top">constexpr units::radian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation2d.html#ad93619fa0138d586a01d1bdc026d4234">Radians</a> () const</td></tr>
-<tr class="memdesc:ad93619fa0138d586a01d1bdc026d4234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the radian value of the rotation.  <a href="classfrc_1_1_rotation2d.html#ad93619fa0138d586a01d1bdc026d4234">More...</a><br /></td></tr>
+<tr class="memdesc:ad93619fa0138d586a01d1bdc026d4234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the radian value of the rotation within (-pi, pi].  <a href="classfrc_1_1_rotation2d.html#ad93619fa0138d586a01d1bdc026d4234">More...</a><br /></td></tr>
 <tr class="separator:ad93619fa0138d586a01d1bdc026d4234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c1c060d89264d8f95a19e11cf35664f"><td class="memItemLeft" align="right" valign="top">constexpr units::degree_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation2d.html#a6c1c060d89264d8f95a19e11cf35664f">Degrees</a> () const</td></tr>
-<tr class="memdesc:a6c1c060d89264d8f95a19e11cf35664f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the degree value of the rotation.  <a href="classfrc_1_1_rotation2d.html#a6c1c060d89264d8f95a19e11cf35664f">More...</a><br /></td></tr>
+<tr class="memdesc:a6c1c060d89264d8f95a19e11cf35664f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the degree value of the rotation within (-180, 180].  <a href="classfrc_1_1_rotation2d.html#a6c1c060d89264d8f95a19e11cf35664f">More...</a><br /></td></tr>
 <tr class="separator:a6c1c060d89264d8f95a19e11cf35664f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a727e2d7ff2cc219f7114d7c6f60a06cc"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_rotation2d.html#a727e2d7ff2cc219f7114d7c6f60a06cc">Cos</a> () const</td></tr>
 <tr class="memdesc:a727e2d7ff2cc219f7114d7c6f60a06cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cosine of the rotation.  <a href="classfrc_1_1_rotation2d.html#a727e2d7ff2cc219f7114d7c6f60a06cc">More...</a><br /></td></tr>
@@ -348,12 +348,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the degree value of the rotation. </p>
+<p>Returns the degree value of the rotation within (-180, 180]. </p>
 <dl class="section return"><dt>Returns</dt><dd>The degree value of the rotation. </dd></dl>
 
 </div>
@@ -617,12 +617,12 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the radian value of the rotation. </p>
+<p>Returns the radian value of the rotation within (-pi, pi]. </p>
 <dl class="section return"><dt>Returns</dt><dd>The radian value of the rotation. </dd></dl>
 
 </div>
@@ -732,7 +732,7 @@ value_new = std::atan2(sin_new, cos_new)
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a></li>
-    <li class="footer">Generated on Mon Nov 14 2022 07:14:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 14 2022 22:31:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

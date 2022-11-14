@@ -19,6 +19,7 @@ var classfrc2_1_1_command_ptr =
     [ "HasRequirement", "classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb", null ],
     [ "IgnoringDisable", "classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057", null ],
     [ "IsScheduled", "classfrc2_1_1_command_ptr.html#ad45dfe80354f94ee4e02017886b63d89", null ],
+    [ "operator bool", "classfrc2_1_1_command_ptr.html#a974c807a9e063a3cc330c9c08bf29687", null ],
     [ "operator=", "classfrc2_1_1_command_ptr.html#acf315b2f0197ccd414fc20d9e25259e6", null ],
     [ "RaceWith", "classfrc2_1_1_command_ptr.html#a4d6c1761cef10bb79a727e43e89643d0", null ],
     [ "Repeatedly", "classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694", null ],

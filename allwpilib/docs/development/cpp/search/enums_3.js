@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['dataformatfields_0',['DataFormatFields',['../classfrc_1_1_a_d_x_l345___s_p_i.html#a8f5c05124b550e41a94b19a80fa8ecd2',1,'frc::ADXL345_SPI::DataFormatFields()'],['../classfrc_1_1_a_d_x_l345___i2_c.html#af8a84639fc13c96249dfbefdf71fa28a',1,'frc::ADXL345_I2C::DataFormatFields()']]],
+  ['dataformatfields_0',['DataFormatFields',['../classfrc_1_1_a_d_x_l345___i2_c.html#af8a84639fc13c96249dfbefdf71fa28a',1,'frc::ADXL345_I2C::DataFormatFields()'],['../classfrc_1_1_a_d_x_l345___s_p_i.html#a8f5c05124b550e41a94b19a80fa8ecd2',1,'frc::ADXL345_SPI::DataFormatFields()']]],
   ['debouncetype_1',['DebounceType',['../classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35ed',1,'frc::Debouncer']]],
   ['debug_5fmagic_2',['debug_magic',['../group__core.html#gadea26fb93affed8c409ec360412d762e',1,'wpi::memory']]],
   ['decompositionoptions_3',['DecompositionOptions',['../group__enums.html#gae3e239fb70022eb8747994cf5d68b4a9',1,'Eigen']]],

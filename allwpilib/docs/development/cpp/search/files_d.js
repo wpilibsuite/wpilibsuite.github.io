@@ -51,7 +51,7 @@ var searchData=
   ['memory_5fpool_5fcollection_2ehpp_48',['memory_pool_collection.hpp',['../memory__pool__collection_8hpp.html',1,'']]],
   ['memory_5fpool_5ftype_2ehpp_49',['memory_pool_type.hpp',['../memory__pool__type_8hpp.html',1,'']]],
   ['memory_5fresource_5fadapter_2ehpp_50',['memory_resource_adapter.hpp',['../memory__resource__adapter_8hpp.html',1,'']]],
-  ['memory_5fstack_2ehpp_51',['memory_stack.hpp',['../memory__stack_8hpp.html',1,'(Global Namespace)'],['../detail_2memory__stack_8hpp.html',1,'(Global Namespace)']]],
+  ['memory_5fstack_2ehpp_51',['memory_stack.hpp',['../detail_2memory__stack_8hpp.html',1,'(Global Namespace)'],['../memory__stack_8hpp.html',1,'(Global Namespace)']]],
   ['memorybuffer_2eh_52',['MemoryBuffer.h',['../_memory_buffer_8h.html',1,'']]],
   ['merwescaledsigmapoints_2eh_53',['MerweScaledSigmaPoints.h',['../_merwe_scaled_sigma_points_8h.html',1,'']]],
   ['messagepack_2eh_54',['MessagePack.h',['../_message_pack_8h.html',1,'']]],

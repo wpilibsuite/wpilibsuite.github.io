@@ -1,7 +1,7 @@
 var classfrc2_1_1_trigger =
 [
-    [ "Trigger", "classfrc2_1_1_trigger.html#addab140045b805eeb89ed5f140c971bc", null ],
-    [ "Trigger", "classfrc2_1_1_trigger.html#a2e24a8e9e623eabebc315818b2953c27", null ],
+    [ "Trigger", "classfrc2_1_1_trigger.html#afa07a273d9e93a2fbe38491fbede911a", null ],
+    [ "Trigger", "classfrc2_1_1_trigger.html#ae35c888fd505843b02d0281a60c9231d", null ],
     [ "Trigger", "classfrc2_1_1_trigger.html#a381e99fad0b62ac634ce50816f96ed7a", null ],
     [ "Trigger", "classfrc2_1_1_trigger.html#aac25ecb356633650dc86369223641f70", null ],
     [ "CancelWhenActive", "classfrc2_1_1_trigger.html#a4815e370d32b42e34f1bb42d33f4a81f", null ],
