@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -288,8 +288,8 @@ $(document).ready(function(){initNavTree('_handle_8h_source.html',''); initResiz
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_handle.html#a042b865e1a760587ccd4910db3810b6e">  193</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#a042b865e1a760587ccd4910db3810b6e">SetBufferAllocator</a>(std::function&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_buffer.html">Buffer</a>(<span class="keywordtype">size_t</span>)&gt; alloc,</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                          std::function&lt;<span class="keywordtype">void</span>(<a class="code hl_class" href="classwpi_1_1uv_1_1_buffer.html">Buffer</a>&amp;)&gt; dealloc) {</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    m_allocBuf = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(alloc);</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    m_freeBuf = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(dealloc);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    m_allocBuf = std::move(alloc);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    m_freeBuf = std::move(dealloc);</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  }</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"></span> </div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">  /**</span></div>
@@ -313,7 +313,7 @@ $(document).ready(function(){initNavTree('_handle_8h_source.html',''); initResiz
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">   * Sets user-defined data.</span></div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">   * @param data User-defined arbitrary data.</span></div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_handle.html#a38888e2dc9c4622b0b63552a093a91f0">  220</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#a38888e2dc9c4622b0b63552a093a91f0">SetData</a>(std::shared_ptr&lt;void&gt; <a class="code hl_struct" href="structdata.html">data</a>) { m_data = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(<a class="code hl_struct" href="structdata.html">data</a>); }</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_handle.html#a38888e2dc9c4622b0b63552a093a91f0">  220</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#a38888e2dc9c4622b0b63552a093a91f0">SetData</a>(std::shared_ptr&lt;void&gt; <a class="code hl_struct" href="structdata.html">data</a>) { m_data = std::move(<a class="code hl_struct" href="structdata.html">data</a>); }</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment"></span> </div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">   * Error signal</span></div>
@@ -443,7 +443,6 @@ $(document).ready(function(){initNavTree('_handle_8h_source.html',''); initResiz
 <div class="ttc" id="anamespace_eigen_1_1internal_html_aa3c1588240009c3c17b3e477512b2ffd"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">Eigen::internal::size</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index size(const T &amp;x)</div><div class="ttdef"><b>Definition:</b> Meta.h:479</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_a8ef157f2a40ed27a0f834847b332eb72"><div class="ttname"><a href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">units::constants::F</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; charge::coulomb, inverse&lt; substance::mol &gt; &gt; &gt; F(N_A *e)</div><div class="ttdoc">Faraday constant.</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> Error.h:10</div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:1544</div></div>
 <div class="ttc" id="astructuv__buf__t_html"><div class="ttname"><a href="structuv__buf__t.html">uv_buf_t</a></div><div class="ttdoc">It should be possible to cast uv_buf_t[] to WSABUF[] see http://msdn.microsoft.com/en-us/library/ms74...</div><div class="ttdef"><b>Definition:</b> win.h:234</div></div>
@@ -464,7 +463,7 @@ $(document).ready(function(){initNavTree('_handle_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e20957744827ba5726af139111576a9.html">wpinet</a></li><li class="navelem"><a class="el" href="dir_12166d0305ec2caa3943538028d23053.html">uv</a></li><li class="navelem"><a class="el" href="_handle_8h.html">Handle.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

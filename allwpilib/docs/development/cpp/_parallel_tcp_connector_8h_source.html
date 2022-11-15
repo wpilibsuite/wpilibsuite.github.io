@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('_parallel_tcp_connector_8h_source.html
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <a class="code hl_class" href="classwpi_1_1uv_1_1_loop.html">wpi::uv::Loop</a>&amp; loop, <a class="code hl_typedef" href="classwpi_1_1uv_1_1_timer.html#ad766cbba1cd9695e8ba2fbff6d8e0485">wpi::uv::Timer::Time</a> reconnectRate,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <a class="code hl_class" href="classwpi_1_1_logger.html">wpi::Logger</a>&amp; logger, std::function&lt;<span class="keywordtype">void</span>(<a class="code hl_class" href="classwpi_1_1uv_1_1_tcp.html">wpi::uv::Tcp</a>&amp; tcp)&gt; connected) {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> std::make_shared&lt;ParallelTcpConnector&gt;(</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        loop, reconnectRate, logger, <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(connected), private_init{});</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        loop, reconnectRate, logger, std::move(connected), private_init{});</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classwpi_1_1_parallel_tcp_connector.html#ad641a567631bcf7dbe89480cbef09e8f">   66</a></span>  <a class="code hl_function" href="classwpi_1_1_parallel_tcp_connector.html#ad641a567631bcf7dbe89480cbef09e8f">ParallelTcpConnector</a>(<a class="code hl_class" href="classwpi_1_1uv_1_1_loop.html">wpi::uv::Loop</a>&amp; loop, <a class="code hl_typedef" href="classwpi_1_1uv_1_1_timer.html#ad766cbba1cd9695e8ba2fbff6d8e0485">wpi::uv::Timer::Time</a> reconnectRate,</div>
@@ -227,7 +227,6 @@ $(document).ready(function(){initNavTree('_parallel_tcp_connector_8h_source.html
 <div class="ttc" id="aclasswpi_1_1uv_1_1_loop_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_loop.html">wpi::uv::Loop</a></div><div class="ttdoc">Event loop.</div><div class="ttdef"><b>Definition:</b> Loop.h:37</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html">wpi::uv::Tcp</a></div><div class="ttdoc">TCP handle.</div><div class="ttdef"><b>Definition:</b> Tcp.h:27</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_timer_html_ad766cbba1cd9695e8ba2fbff6d8e0485"><div class="ttname"><a href="classwpi_1_1uv_1_1_timer.html#ad766cbba1cd9695e8ba2fbff6d8e0485">wpi::uv::Timer::Time</a></div><div class="ttdeci">std::chrono::duration&lt; uint64_t, std::milli &gt; Time</div><div class="ttdef"><b>Definition:</b> Timer.h:31</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="awpinet_2src_2main_2native_2include_2wpinet_2uv_2_timer_8h_html"><div class="ttname"><a href="wpinet_2src_2main_2native_2include_2wpinet_2uv_2_timer_8h.html">Timer.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -236,7 +235,7 @@ $(document).ready(function(){initNavTree('_parallel_tcp_connector_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e20957744827ba5726af139111576a9.html">wpinet</a></li><li class="navelem"><a class="el" href="_parallel_tcp_connector_8h.html">ParallelTcpConnector.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -19,6 +19,5 @@ var searchData=
   ['upperbidiagonalization_2eh_16',['UpperBidiagonalization.h',['../_upper_bidiagonalization_8h.html',1,'']]],
   ['urlparser_2eh_17',['UrlParser.h',['../_url_parser_8h.html',1,'']]],
   ['util_2eh_18',['util.h',['../util_8h.html',1,'']]],
-  ['utility_2ehpp_19',['utility.hpp',['../utility_8hpp.html',1,'']]],
-  ['uv_2eh_20',['uv.h',['../uv_8h.html',1,'']]]
+  ['uv_2eh_19',['uv.h',['../uv_8h.html',1,'']]]
 ];

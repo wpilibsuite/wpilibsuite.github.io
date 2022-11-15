@@ -31,10 +31,9 @@ var searchData=
   ['log_5fbinomial_5fcoef_2ehpp_28',['log_binomial_coef.hpp',['../log__binomial__coef_8hpp.html',1,'']]],
   ['logger_2eh_29',['Logger.h',['../_logger_8h.html',1,'']]],
   ['loop_2eh_30',['Loop.h',['../_loop_8h.html',1,'']]],
-  ['lowlevel_5fallocator_2ehpp_31',['lowlevel_allocator.hpp',['../lowlevel__allocator_8hpp.html',1,'']]],
-  ['ltvdifferentialdrivecontroller_2eh_32',['LTVDifferentialDriveController.h',['../_l_t_v_differential_drive_controller_8h.html',1,'']]],
-  ['ltvunicyclecontroller_2eh_33',['LTVUnicycleController.h',['../_l_t_v_unicycle_controller_8h.html',1,'']]],
-  ['lu_34',['LU',['../_l_u.html',1,'']]],
-  ['luminous_5fflux_2eh_35',['luminous_flux.h',['../luminous__flux_8h.html',1,'']]],
-  ['luminous_5fintensity_2eh_36',['luminous_intensity.h',['../luminous__intensity_8h.html',1,'']]]
+  ['ltvdifferentialdrivecontroller_2eh_31',['LTVDifferentialDriveController.h',['../_l_t_v_differential_drive_controller_8h.html',1,'']]],
+  ['ltvunicyclecontroller_2eh_32',['LTVUnicycleController.h',['../_l_t_v_unicycle_controller_8h.html',1,'']]],
+  ['lu_33',['LU',['../_l_u.html',1,'']]],
+  ['luminous_5fflux_2eh_34',['luminous_flux.h',['../luminous__flux_8h.html',1,'']]],
+  ['luminous_5fintensity_2eh_35',['luminous_intensity.h',['../luminous__intensity_8h.html',1,'']]]
 ];

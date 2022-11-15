@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -126,9 +126,9 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line, <span class="keyword">const</span> <span class="keywordtype">char</span>* msg)&gt;;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classwpi_1_1_logger.html#ad34899da9fc689653c09759b05b5f512">   32</a></span>  <a class="code hl_function" href="classwpi_1_1_logger.html#ad34899da9fc689653c09759b05b5f512">Logger</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classwpi_1_1_logger.html#a78ccf2b88d50f8418428a9bf2235067c">   33</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classwpi_1_1_logger.html#a78ccf2b88d50f8418428a9bf2235067c">Logger</a>(<a class="code hl_typedef" href="classwpi_1_1_logger.html#a070956ea34ca4a590d4c6934c670598e">LogFunc</a> func) : m_func(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(func)) {}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classwpi_1_1_logger.html#a78ccf2b88d50f8418428a9bf2235067c">   33</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classwpi_1_1_logger.html#a78ccf2b88d50f8418428a9bf2235067c">Logger</a>(<a class="code hl_typedef" href="classwpi_1_1_logger.html#a070956ea34ca4a590d4c6934c670598e">LogFunc</a> func) : m_func(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(func)) {}</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classwpi_1_1_logger.html#a40593e240f27e43b4ce2772473d2f638">   34</a></span>  <a class="code hl_function" href="classwpi_1_1_logger.html#a40593e240f27e43b4ce2772473d2f638">Logger</a>(<a class="code hl_typedef" href="classwpi_1_1_logger.html#a070956ea34ca4a590d4c6934c670598e">LogFunc</a> func, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classwpi_1_1_logger.html#a90464d6b6ae54ed09f2e35b732e44a2b">min_level</a>)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      : m_func(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(func)), m_min_level(<a class="code hl_function" href="classwpi_1_1_logger.html#a90464d6b6ae54ed09f2e35b732e44a2b">min_level</a>) {}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      : m_func(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(func)), m_min_level(<a class="code hl_function" href="classwpi_1_1_logger.html#a90464d6b6ae54ed09f2e35b732e44a2b">min_level</a>) {}</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classwpi_1_1_logger.html#ac9df65e435a14cbdce8d00b255d0ff1e">   37</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_logger.html#ac9df65e435a14cbdce8d00b255d0ff1e">SetLogger</a>(<a class="code hl_typedef" href="classwpi_1_1_logger.html#a070956ea34ca4a590d4c6934c670598e">LogFunc</a> func) { m_func = func; }</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -227,7 +227,6 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div class="ttc" id="aformat_8h_html"><div class="ttname"><a href="format_8h.html">format.h</a></div></div>
 <div class="ttc" id="aformat_8h_html_ab5e334342978e8c898e32e5b4f7d08fa"><div class="ttname"><a href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a></div><div class="ttdeci">auto format(const Locale &amp;loc, format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::string</div><div class="ttdef"><b>Definition:</b> format.h:4183</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="anamespacewpi_html_ae00dc51f60e3a7f50eea48b914e9f88a"><div class="ttname"><a href="namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88a">wpi::LogLevel</a></div><div class="ttdeci">LogLevel</div><div class="ttdef"><b>Definition:</b> Logger.h:15</div></div>
 <div class="ttc" id="anamespacewpi_html_ae00dc51f60e3a7f50eea48b914e9f88aa4eaaa435255d53d8ee1ad804ac2fde9d"><div class="ttname"><a href="namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88aa4eaaa435255d53d8ee1ad804ac2fde9d">wpi::WPI_LOG_CRITICAL</a></div><div class="ttdeci">@ WPI_LOG_CRITICAL</div><div class="ttdef"><b>Definition:</b> Logger.h:16</div></div>
@@ -245,7 +244,7 @@ $(document).ready(function(){initNavTree('_logger_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_logger_8h.html">Logger.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -1,3 +1,4 @@
 var searchData=
 [
-'../concept.html',1,'(Global Namespace)'];
+  ['_2eclang_2dtidy_0',['.clang-tidy',['../_8clang-tidy.html',1,'']]]
+];

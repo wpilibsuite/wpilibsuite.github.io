@@ -1,8 +1,8 @@
 var searchData=
 [
   ['e_0',['e',['../structbasic__fp.html#a1e4a14ea86e324547aa69f30d426d0c6',1,'basic_fp']]],
-  ['ebps_1',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
-  ['ebps_2',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
+  ['ebps_1',['Ebps',['../namespaceunits.html#a459180178381cdbad36ddfd67f93352b',1,'units']]],
+  ['ebps_2',['EBps',['../namespaceunits.html#a348bbb9eb5da302fe3c1cf4d34028594',1,'units']]],
   ['elaborations_3',['elaborations',['../_third_party_notices_8txt.html#a22adf0f3f4508732c311a0db3aa1e5a3',1,'ThirdPartyNotices.txt']]],
   ['electronic_4',['electronic',['../_third_party_notices_8txt.html#a17eb1cdc4fd8a9cf2e6a8e63448fe148',1,'ThirdPartyNotices.txt']]],
   ['empty_5',['Empty',['../namespaceinternal_1_1_colamd.html#ad2feab81142482702b03352689f921b0',1,'internal::Colamd']]],
@@ -15,7 +15,7 @@ var searchData=
   ['entry_12',['entry',['../structwpi_1_1log_1_1_start_record_data.html#a7e1c911e0dbfdc32e92f7e3178270a7f',1,'wpi::log::StartRecordData::entry()'],['../structwpi_1_1log_1_1_metadata_record_data.html#a9fa1096fba1158227cf4ba556ba24cd6',1,'wpi::log::MetadataRecordData::entry()']]],
   ['env_13',['env',['../structuv__process__options__s.html#a464c06d2224bb5f7346f705caa2f1778',1,'uv_process_options_s']]],
   ['errmsg_14',['errmsg',['../structuv__lib__t.html#a098655badc5308af959cdac4c2809340',1,'uv_lib_t']]],
-  ['error_15',['error',['../structwpi_1_1memory_1_1traits__detail_1_1invalid__allocator__concept.html#a796332daf4fa6bb95bfefbf2335c2428',1,'wpi::memory::traits_detail::invalid_allocator_concept::error()'],['../classwpi_1_1uv_1_1_loop.html#aecde1d29bb84fe26990fcdeb4b72f3ac',1,'wpi::uv::Loop::error()'],['../classwpi_1_1uv_1_1_request.html#a16d8d94faa23d6cef51622615e22b18a',1,'wpi::uv::Request::error()'],['../classwpi_1_1uv_1_1_handle.html#adfa326501ab92f8134abe4dc9ed402a2',1,'wpi::uv::Handle::error()']]],
+  ['error_15',['error',['../classwpi_1_1uv_1_1_loop.html#aecde1d29bb84fe26990fcdeb4b72f3ac',1,'wpi::uv::Loop::error()'],['../classwpi_1_1uv_1_1_request.html#a16d8d94faa23d6cef51622615e22b18a',1,'wpi::uv::Request::error()'],['../classwpi_1_1uv_1_1_handle.html#adfa326501ab92f8134abe4dc9ed402a2',1,'wpi::uv::Handle::error()']]],
   ['estop_16',['eStop',['../struct_h_a_l___control_word.html#a30ca7c15a8ac6cc3c32290f03f95eda2',1,'HAL_ControlWord']]],
   ['evalbeforeassigningbit_17',['EvalBeforeAssigningBit',['../group__flags.html#ga0972b20dc004d13984e642b3bd12532e',1,'Eigen']]],
   ['evalbeforenestingbit_18',['EvalBeforeNestingBit',['../group__flags.html#gaa34e83bae46a8eeae4e69ebe3aaecbed',1,'Eigen']]],

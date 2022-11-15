@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -256,8 +256,8 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a56f9a9c571bd9da0a0b4612706d8db1c">  160</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a56f9a9c571bd9da0a0b4612706d8db1c">Select</a>(</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    std::function&lt;Key()&gt; selector,</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    std::vector&lt;std::pair&lt;Key, CommandPtr&gt;&gt; commands) {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classfrc2_1_1_select_command.html">SelectCommand</a>(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(selector),</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                       <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">CommandPtr::UnwrapVector</a>(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(commands)))</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classfrc2_1_1_select_command.html">SelectCommand</a>(std::move(selector),</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                       <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">CommandPtr::UnwrapVector</a>(std::move(commands)))</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      .<a class="code hl_function" href="classfrc2_1_1_command_helper.html#a152351c96b7a3e81474c8671931ecd12">ToPtr</a>();</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
@@ -319,14 +319,13 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div class="ttc" id="anamespacefrc2_1_1cmd_html_ae240e65406a7bdffa5ce7f1166128401"><div class="ttname"><a href="namespacefrc2_1_1cmd.html#ae240e65406a7bdffa5ce7f1166128401">frc2::cmd::RunOnce</a></div><div class="ttdeci">CommandPtr RunOnce(std::function&lt; void()&gt; action, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Constructs a command that runs an action once and finishes.</div></div>
 <div class="ttc" id="anamespacefrc2_1_1cmd_html_aef6d71c6173f786516fe3671c40af603"><div class="ttname"><a href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">frc2::cmd::Race</a></div><div class="ttdeci">CommandPtr Race(std::vector&lt; CommandPtr &gt; &amp;&amp;commands)</div><div class="ttdoc">Runs a group of commands at the same time.</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_commands_8h.html">Commands.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

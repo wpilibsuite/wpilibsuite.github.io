@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -1123,7 +1123,7 @@ $(document).ready(function(){initNavTree('core_8h_source.html',''); initResizabl
 <div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>      : <a class="code hl_class" href="classfixed__buffer__traits.html">fixed_buffer_traits</a>(n), <a class="code hl_class" href="classbuffer.html">buffer</a>&lt;T&gt;(<a class="code hl_function" href="classiterator__buffer.html#a0b5c28e024649e026e800dce5550fa36">out</a>, 0, n), out_(<a class="code hl_function" href="classiterator__buffer.html#a0b5c28e024649e026e800dce5550fa36">out</a>) {}</div>
 <div class="line"><a id="l01028" name="l01028"></a><span class="lineno"><a class="line" href="classiterator__buffer_3_01_t_01_5_00_01_t_00_01fixed__buffer__traits_01_4.html#afcc14aefdb90bbe08cbd6aac759d2a9a"> 1028</a></span>  <a class="code hl_function" href="classiterator__buffer_3_01_t_01_5_00_01_t_00_01fixed__buffer__traits_01_4.html#afcc14aefdb90bbe08cbd6aac759d2a9a">iterator_buffer</a>(<a class="code hl_class" href="classiterator__buffer.html">iterator_buffer</a>&amp;&amp; other)</div>
 <div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>      : <a class="code hl_class" href="classfixed__buffer__traits.html">fixed_buffer_traits</a>(other),</div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>        <a class="code hl_class" href="classbuffer.html">buffer</a>&lt;T&gt;(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(other)),</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>        <a class="code hl_class" href="classbuffer.html">buffer</a>&lt;T&gt;(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(other)),</div>
 <div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>        out_(other.out_) {</div>
 <div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>    <span class="keywordflow">if</span> (this-&gt;<a class="code hl_function" href="classbuffer.html#a5fe8b50555561bfb4d77a2adcd5f79b2">data</a>() != out_) {</div>
 <div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>      this-&gt;<a class="code hl_function" href="classbuffer.html#ad6a278000af66f748420780f341c138a">set</a>(data_, buffer_size);</div>
@@ -3838,7 +3838,6 @@ $(document).ready(function(){initNavTree('core_8h_source.html',''); initResizabl
 <div class="ttc" id="anamespaceunits_1_1constants_html_a265cdde8bb6f7e63c0945d51d8f45de4"><div class="ttname"><a href="namespaceunits_1_1constants.html#a265cdde8bb6f7e63c0945d51d8f45de4">units::constants::R</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; energy::joules, inverse&lt; temperature::kelvin &gt;, inverse&lt; substance::moles &gt; &gt; &gt; R(8.3144598)</div><div class="ttdoc">Gas constant.</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acfa211a9904208ac580676b5cc42b04a"><div class="ttname"><a href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">units::constants::c</a></div><div class="ttdeci">static constexpr const velocity::meters_per_second_t c(299792458.0)</div><div class="ttdoc">Speed of light in vacuum.</div></div>
 <div class="ttc" id="anamespaceunits_html_a77b2abc79841f7f67c7bc406b7c5083b"><div class="ttname"><a href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">units::b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="aranges_8h_html_a080be1238e6ee3bd4b9f193b4181cf4da1d78dc8ed51214e518b5114fe24490ae"><div class="ttname"><a href="ranges_8h.html#a080be1238e6ee3bd4b9f193b4181cf4da1d78dc8ed51214e518b5114fe24490ae">range_format::map</a></div><div class="ttdeci">@ map</div></div>
 <div class="ttc" id="astructarg__data_3_01_t_00_01_char_00_01_n_u_m___a_r_g_s_00_010_01_4_html_a315911f9a475b6b715be0917b70e5d8e"><div class="ttname"><a href="structarg__data_3_01_t_00_01_char_00_01_n_u_m___a_r_g_s_00_010_01_4.html#a315911f9a475b6b715be0917b70e5d8e">arg_data&lt; T, Char, NUM_ARGS, 0 &gt;::named_args</a></div><div class="ttdeci">FMT_CONSTEXPR FMT_INLINE auto named_args() -&gt; std::nullptr_t</div><div class="ttdef"><b>Definition:</b> core.h:1171</div></div>
 <div class="ttc" id="astructarg__data_3_01_t_00_01_char_00_01_n_u_m___a_r_g_s_00_010_01_4_html_a6db93b990a99e7883708546c122dbb1d"><div class="ttname"><a href="structarg__data_3_01_t_00_01_char_00_01_n_u_m___a_r_g_s_00_010_01_4.html#a6db93b990a99e7883708546c122dbb1d">arg_data&lt; T, Char, NUM_ARGS, 0 &gt;::args</a></div><div class="ttdeci">FMT_CONSTEXPR FMT_INLINE auto args() const -&gt; const T *</div><div class="ttdef"><b>Definition:</b> core.h:1170</div></div>
@@ -4005,7 +4004,7 @@ $(document).ready(function(){initNavTree('core_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="core_8h.html">core.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

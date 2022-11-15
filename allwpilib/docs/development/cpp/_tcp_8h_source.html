@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -355,11 +355,11 @@ $(document).ready(function(){initNavTree('_tcp_8h_source.html',''); initResizabl
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tcp.html#a83c9a4377a34f606c91422da3970efff">  259</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#a83c9a4377a34f606c91422da3970efff">Connect</a>(<span class="keyword">const</span> sockaddr&amp; addr, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tcp.html#a4bec9e8337bad730cdf4fa505c0a667f">  261</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#a4bec9e8337bad730cdf4fa505c0a667f">Connect</a>(<span class="keyword">const</span> sockaddr_in&amp; addr, std::function&lt;<span class="keywordtype">void</span>()&gt; callback) {</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#ac5e476f55cbc14b2d87ca134cd370129">Connect</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>sockaddr&amp;<span class="keyword">&gt;</span>(addr), <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(callback));</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#ac5e476f55cbc14b2d87ca134cd370129">Connect</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>sockaddr&amp;<span class="keyword">&gt;</span>(addr), std::move(callback));</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  }</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tcp.html#a59250296f19237e0b22e5a7c93e94596">  265</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#a59250296f19237e0b22e5a7c93e94596">Connect</a>(<span class="keyword">const</span> sockaddr_in6&amp; addr, std::function&lt;<span class="keywordtype">void</span>()&gt; callback) {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#ac5e476f55cbc14b2d87ca134cd370129">Connect</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>sockaddr&amp;<span class="keyword">&gt;</span>(addr), <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(callback));</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#ac5e476f55cbc14b2d87ca134cd370129">Connect</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>sockaddr&amp;<span class="keyword">&gt;</span>(addr), std::move(callback));</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  }</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment"></span> </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">  /**</span></div>
@@ -506,7 +506,6 @@ $(document).ready(function(){initNavTree('_tcp_8h_source.html',''); initResizabl
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_af69da37a0ae9cb77b3d74a3ea1b6412e"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#af69da37a0ae9cb77b3d74a3ea1b6412e">wpi::uv::Tcp::Bind</a></div><div class="ttdeci">void Bind(const sockaddr &amp;addr, unsigned int flags=0)</div><div class="ttdoc">Bind the handle to an IPv4 or IPv6 address and port.</div><div class="ttdef"><b>Definition:</b> Tcp.h:163</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:520</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> Error.h:10</div></div>
 <div class="ttc" id="anamespacewpi_html_a7b0000b45b0b55789f757f1c3d2461cb"><div class="ttname"><a href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">wpi::flags</a></div><div class="ttdeci">flags</div><div class="ttdef"><b>Definition:</b> http_parser.h:206</div></div>
 <div class="ttc" id="auv_2_network_stream_8h_html"><div class="ttname"><a href="uv_2_network_stream_8h.html">NetworkStream.h</a></div></div>
@@ -523,7 +522,7 @@ $(document).ready(function(){initNavTree('_tcp_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e20957744827ba5726af139111576a9.html">wpinet</a></li><li class="navelem"><a class="el" href="dir_12166d0305ec2caa3943538028d23053.html">uv</a></li><li class="navelem"><a class="el" href="_tcp_8h.html">Tcp.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

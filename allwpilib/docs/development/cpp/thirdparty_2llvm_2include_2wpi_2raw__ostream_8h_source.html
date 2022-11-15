@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -475,7 +475,7 @@ $(document).ready(function(){initNavTree('thirdparty_2llvm_2include_2wpi_2raw__o
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                 OStream &amp;&amp;&gt;</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><a class="code hl_function" href="namespacewpi.html#afad70263229589236b932dc5ec227436">operator&lt;&lt;</a>(OStream &amp;&amp;OS, <span class="keyword">const</span> T &amp;Value) {</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  OS &lt;&lt; Value;</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(OS);</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  <span class="keywordflow">return</span> std::move(OS);</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>}</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="comment"></span> </div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="comment">/// An abstract base class for streams implementations that also support a</span></div>
@@ -845,7 +845,7 @@ $(document).ready(function(){initNavTree('thirdparty_2llvm_2include_2wpi_2raw__o
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> </div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno"><a class="line" href="classwpi_1_1buffer__unique__ostream.html#a25ccb7296da3f8f4d4f08d38b6bd28b7">  751</a></span>  <a class="code hl_function" href="classwpi_1_1buffer__unique__ostream.html#a25ccb7296da3f8f4d4f08d38b6bd28b7">buffer_unique_ostream</a>(std::unique_ptr&lt;raw_ostream&gt; OS)</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>      : <a class="code hl_class" href="classwpi_1_1raw__svector__ostream.html">raw_svector_ostream</a>(Buffer), OS(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(OS)) {</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>      : <a class="code hl_class" href="classwpi_1_1raw__svector__ostream.html">raw_svector_ostream</a>(Buffer), OS(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(OS)) {</div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <span class="comment">// Turn off buffering on OS, which we now own, to avoid allocating a buffer</span></div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    <span class="comment">// when the destructor writes only to be immediately flushed again.</span></div>
 <div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    this-&gt;OS-&gt;<a class="code hl_function" href="classwpi_1_1raw__ostream.html#aa4a39ffb16e40a429eb314efedf74e69">SetUnbuffered</a>();</div>
@@ -995,7 +995,6 @@ $(document).ready(function(){initNavTree('thirdparty_2llvm_2include_2wpi_2raw__o
 <div class="ttc" id="anamespacefs_html_a2c0f4f5367f7ca7990e6fe9d6ffc845f"><div class="ttname"><a href="namespacefs.html#a2c0f4f5367f7ca7990e6fe9d6ffc845f">fs::FileAccess</a></div><div class="ttdeci">FileAccess</div><div class="ttdef"><b>Definition:</b> fs.h:85</div></div>
 <div class="ttc" id="anamespacefs_html_a685b73b8c3b15a4105a73cbe08a01c82"><div class="ttname"><a href="namespacefs.html#a685b73b8c3b15a4105a73cbe08a01c82">fs::CreationDisposition</a></div><div class="ttdeci">CreationDisposition</div><div class="ttdef"><b>Definition:</b> fs.h:63</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="anamespacewpi_html_a40031774febe762423c2bf6bb4e0094b"><div class="ttname"><a href="namespacewpi.html#a40031774febe762423c2bf6bb4e0094b">wpi::nulls</a></div><div class="ttdeci">raw_ostream &amp; nulls()</div><div class="ttdoc">This returns a reference to a raw_ostream which simply discards output.</div></div>
 <div class="ttc" id="anamespacewpi_html_a4cc9cf60e707bfcf728eb04c4e4b8d2e"><div class="ttname"><a href="namespacewpi.html#a4cc9cf60e707bfcf728eb04c4e4b8d2e">wpi::outs</a></div><div class="ttdeci">raw_fd_ostream &amp; outs()</div><div class="ttdoc">This returns a reference to a raw_fd_ostream for standard output.</div></div>
@@ -1007,7 +1006,7 @@ $(document).ready(function(){initNavTree('thirdparty_2llvm_2include_2wpi_2raw__o
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_3c14e2811843326714b08335f4db6d6f.html">llvm</a></li><li class="navelem"><a class="el" href="dir_c9d71ee896d0afc8c2dc55673cfe897b.html">include</a></li><li class="navelem"><a class="el" href="dir_a809135da9c9e78db898aa42d248563a.html">wpi</a></li><li class="navelem"><a class="el" href="thirdparty_2llvm_2include_2wpi_2raw__ostream_8h.html">raw_ostream.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

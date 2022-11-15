@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="comment">// If the key is already in the map, it returns false and doesn&#39;t update the</span></div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="comment">// value.</span></div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classwpi_1_1_dense_map_base.html#a2d582b92b98a4f69324716de29ab1673">  215</a></span>  std::pair&lt;iterator, bool&gt; <a class="code hl_function" href="classwpi_1_1_dense_map_base.html#a2d582b92b98a4f69324716de29ab1673">insert</a>(std::pair&lt;KeyT, ValueT&gt; &amp;&amp;KV) {</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1_dense_map_base.html#a2020cd0c72142ad57df8f7eaba77a99f">try_emplace</a>(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(KV.first), <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(KV.second));</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1_dense_map_base.html#a2020cd0c72142ad57df8f7eaba77a99f">try_emplace</a>(std::move(KV.first), std::move(KV.second));</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  }</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="comment">// Inserts key,value pair into the map if the key isn&#39;t already in the map.</span></div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="comment">// Otherwise, insert the new element.</span></div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    TheBucket =</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        InsertIntoBucket(TheBucket, <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(Key), std::forward&lt;Ts&gt;(Args)...);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        InsertIntoBucket(TheBucket, std::move(Key), std::forward&lt;Ts&gt;(Args)...);</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">return</span> std::make_pair(makeIterator(TheBucket,</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                                       shouldReverseIterate&lt;KeyT&gt;()</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>                                           ? getBuckets()</div>
@@ -379,8 +379,8 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                            <span class="keyword">false</span>); <span class="comment">// Already in map.</span></div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="comment">// Otherwise, insert the new element.</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    TheBucket = InsertIntoBucketWithLookup(TheBucket, <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(KV.first),</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                                           <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(KV.second), Val);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    TheBucket = InsertIntoBucketWithLookup(TheBucket, std::move(KV.first),</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>                                           std::move(KV.second), Val);</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">return</span> std::make_pair(makeIterator(TheBucket,</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                                       shouldReverseIterate&lt;KeyT&gt;()</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                                           ? getBuckets()</div>
@@ -432,11 +432,11 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    <span class="keywordflow">if</span> (LookupBucketFor(Key, TheBucket))</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>      <span class="keywordflow">return</span> *TheBucket;</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <span class="keywordflow">return</span> *InsertIntoBucket(TheBucket, <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(Key));</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    <span class="keywordflow">return</span> *InsertIntoBucket(TheBucket, std::move(Key));</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  }</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno"><a class="line" href="classwpi_1_1_dense_map_base.html#ac1648edc8af2a1c07e120d7102bb19e3">  342</a></span>  ValueT &amp;<a class="code hl_function" href="classwpi_1_1_dense_map_base.html#ac1648edc8af2a1c07e120d7102bb19e3">operator[]</a>(KeyT &amp;&amp;Key) {</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1_dense_map_base.html#a8df2dff6a4adf6949d13210a48a56d1f">FindAndConstruct</a>(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(Key)).second;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1_dense_map_base.html#a8df2dff6a4adf6949d13210a48a56d1f">FindAndConstruct</a>(std::move(Key)).second;</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  }</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment"></span> </div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment">  /// isPointerIntoBucketsArray - Return true if the specified pointer points</span></div>
@@ -503,8 +503,8 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>        <span class="keywordtype">bool</span> FoundVal = LookupBucketFor(B-&gt;getFirst(), DestBucket);</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        (void)FoundVal; <span class="comment">// silence warning.</span></div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        assert(!FoundVal &amp;&amp; <span class="stringliteral">&quot;Key already in new map?&quot;</span>);</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        DestBucket-&gt;getFirst() = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(B-&gt;getFirst());</div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        ::new (&amp;DestBucket-&gt;getSecond()) ValueT(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(B-&gt;getSecond()));</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        DestBucket-&gt;getFirst() = std::move(B-&gt;getFirst());</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>        ::new (&amp;DestBucket-&gt;getSecond()) ValueT(std::move(B-&gt;getSecond()));</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        incrementNumEntries();</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        <span class="comment">// Free the value.</span></div>
@@ -644,7 +644,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    TheBucket = InsertIntoBucketImpl(Key, Key, TheBucket);</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    TheBucket-&gt;getFirst() = std::forward&lt;KeyArg&gt;(Key);</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    ::new (&amp;TheBucket-&gt;getSecond()) ValueT(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">forward</a>&lt;ValueArgs&gt;(Values)...);</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    ::new (&amp;TheBucket-&gt;getSecond()) ValueT(<a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;ValueArgs&gt;(Values)...);</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    return TheBucket;</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>  }</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
@@ -653,8 +653,8 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                                      ValueT &amp;&amp;Value, LookupKeyT &amp;Lookup) {</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    TheBucket = InsertIntoBucketImpl(Key, Lookup, TheBucket);</div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    TheBucket-&gt;getFirst() = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(Key);</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    ::new (&amp;TheBucket-&gt;getSecond()) ValueT(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(Value));</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    TheBucket-&gt;getFirst() = std::move(Key);</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    ::new (&amp;TheBucket-&gt;getSecond()) ValueT(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(Value));</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    return TheBucket;</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>  }</div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
@@ -1057,10 +1057,10 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>        <span class="comment">// Swap separately and handle any asymmetry.</span></div>
 <div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>        <a class="code hl_function" href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a>(LHSB-&gt;getFirst(), RHSB-&gt;getFirst());</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>        <span class="keywordflow">if</span> (hasLHSValue) {</div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>          ::new (&amp;RHSB-&gt;getSecond()) ValueT(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(LHSB-&gt;getSecond()));</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>          ::new (&amp;RHSB-&gt;getSecond()) ValueT(std::move(LHSB-&gt;getSecond()));</div>
 <div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>          LHSB-&gt;getSecond().~ValueT();</div>
 <div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (hasRHSValue) {</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>          ::new (&amp;LHSB-&gt;getSecond()) ValueT(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(RHSB-&gt;getSecond()));</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>          ::new (&amp;LHSB-&gt;getSecond()) ValueT(std::move(RHSB-&gt;getSecond()));</div>
 <div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>          RHSB-&gt;getSecond().~ValueT();</div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>        }</div>
 <div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>      }</div>
@@ -1076,7 +1076,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a> &amp;LargeSide = <a class="code hl_enumvalue" href="namespace_eigen.html#a0b06f085c10989918a1d641b40ab933ea8366c3345cf750dd60bc6d25aa98149d">Small</a> ? RHS : *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span> </div>
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>    <span class="comment">// First stash the large side&#39;s rep and move the small side across.</span></div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>    LargeRep TmpRep = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(*LargeSide.getLargeRep());</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>    LargeRep TmpRep = std::move(*LargeSide.getLargeRep());</div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    LargeSide.getLargeRep()-&gt;~LargeRep();</div>
 <div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    LargeSide.Small = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>    <span class="comment">// This is similar to the standard move-from-old-buckets, but the bucket</span></div>
@@ -1086,11 +1086,11 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0, <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a> = InlineBuckets; i != <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>; ++i) {</div>
 <div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>      BucketT *NewB = &amp;LargeSide.getInlineBuckets()[i],</div>
 <div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>              *OldB = &amp;SmallSide.getInlineBuckets()[i];</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>      ::new (&amp;NewB-&gt;getFirst()) KeyT(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(OldB-&gt;getFirst()));</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>      ::new (&amp;NewB-&gt;getFirst()) KeyT(std::move(OldB-&gt;getFirst()));</div>
 <div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>      OldB-&gt;getFirst().~KeyT();</div>
 <div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>      <span class="keywordflow">if</span> (!KeyInfoT::isEqual(NewB-&gt;getFirst(), EmptyKey) &amp;&amp;</div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>          !KeyInfoT::isEqual(NewB-&gt;getFirst(), TombstoneKey)) {</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>        ::new (&amp;NewB-&gt;getSecond()) ValueT(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(OldB-&gt;getSecond()));</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>        ::new (&amp;NewB-&gt;getSecond()) ValueT(std::move(OldB-&gt;getSecond()));</div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>        OldB-&gt;getSecond().~ValueT();</div>
 <div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>      }</div>
 <div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    }</div>
@@ -1098,7 +1098,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>    <span class="comment">// The hard part of moving the small buckets across is done, just move</span></div>
 <div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    <span class="comment">// the TmpRep into its new home.</span></div>
 <div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    SmallSide.Small = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>    <span class="keyword">new</span> (SmallSide.getLargeRep()) LargeRep(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(TmpRep));</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>    <span class="keyword">new</span> (SmallSide.getLargeRep()) LargeRep(std::move(TmpRep));</div>
 <div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>  }</div>
 <div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span> </div>
 <div class="line"><a id="l01008" name="l01008"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_dense_map.html#af58026debb7850b8ef2fecc5afc514c6"> 1008</a></span>  <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a>&amp; <a class="code hl_function" href="classwpi_1_1_small_dense_map.html#af58026debb7850b8ef2fecc5afc514c6">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1_small_dense_map.html">SmallDenseMap</a>&amp; other) {</div>
@@ -1154,8 +1154,8 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>            !KeyInfoT::isEqual(P-&gt;getFirst(), TombstoneKey)) {</div>
 <div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>          assert(<span class="keywordtype">size_t</span>(TmpEnd - TmpBegin) &lt; InlineBuckets &amp;&amp;</div>
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>                 <span class="stringliteral">&quot;Too many inline buckets!&quot;</span>);</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>          ::new (&amp;TmpEnd-&gt;getFirst()) KeyT(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(P-&gt;getFirst()));</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>          ::new (&amp;TmpEnd-&gt;getSecond()) ValueT(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(P-&gt;getSecond()));</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>          ::new (&amp;TmpEnd-&gt;getFirst()) KeyT(std::move(P-&gt;getFirst()));</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>          ::new (&amp;TmpEnd-&gt;getSecond()) ValueT(std::move(P-&gt;getSecond()));</div>
 <div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>          ++TmpEnd;</div>
 <div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>          P-&gt;getSecond().~ValueT();</div>
 <div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>        }</div>
@@ -1173,7 +1173,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>    }</div>
 <div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span> </div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    LargeRep OldRep = <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(*getLargeRep());</div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    LargeRep OldRep = std::move(*getLargeRep());</div>
 <div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    getLargeRep()-&gt;~LargeRep();</div>
 <div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    <span class="keywordflow">if</span> (AtLeast &lt;= InlineBuckets) {</div>
 <div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>      <a class="code hl_enumvalue" href="namespace_eigen.html#a0b06f085c10989918a1d641b40ab933ea8366c3345cf750dd60bc6d25aa98149d">Small</a> = <span class="keyword">true</span>;</div>
@@ -1516,8 +1516,6 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="ttc" id="anamespacestd_html_a8de3b111383ccb7c625398925d4c7add"><div class="ttname"><a href="namespacestd.html#a8de3b111383ccb7c625398925d4c7add">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallVectorImpl&lt; T &gt; &amp;LHS, wpi::SmallVectorImpl&lt; T &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallVector swap.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1299</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
 <div class="ttc" id="anamespacewpi_1_1detail_html_aa6ae57edcc25d4177064c3bc234a106b"><div class="ttname"><a href="namespacewpi_1_1detail.html#aa6ae57edcc25d4177064c3bc234a106b">wpi::detail::swap</a></div><div class="ttdeci">void swap(SafeThreadOwnerBase &amp;lhs, SafeThreadOwnerBase &amp;rhs) noexcept</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_a8994bf0a428d46893ae0472833726332"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#a8994bf0a428d46893ae0472833726332">wpi::memory::detail::forward</a></div><div class="ttdeci">T &amp;&amp; forward(typename std::remove_reference&lt; T &gt;::type &amp;t) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:32</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="anamespacewpi_html_a088be308371a5cee44b52aedf5a619e7"><div class="ttname"><a href="namespacewpi.html#a088be308371a5cee44b52aedf5a619e7">wpi::operator!=</a></div><div class="ttdeci">bool operator!=(PointerUnion&lt; PTs... &gt; lhs, PointerUnion&lt; PTs... &gt; rhs)</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:244</div></div>
 <div class="ttc" id="anamespacewpi_html_a0e35647cd9f9f0d2c097ea72e6d9f608"><div class="ttname"><a href="namespacewpi.html#a0e35647cd9f9f0d2c097ea72e6d9f608">wpi::capacity_in_bytes</a></div><div class="ttdeci">size_t capacity_in_bytes(const SmallVector&lt; T, N &gt; &amp;X)</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1268</div></div>
@@ -1541,7 +1539,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_3c14e2811843326714b08335f4db6d6f.html">llvm</a></li><li class="navelem"><a class="el" href="dir_c9d71ee896d0afc8c2dc55673cfe897b.html">include</a></li><li class="navelem"><a class="el" href="dir_a809135da9c9e78db898aa42d248563a.html">wpi</a></li><li class="navelem"><a class="el" href="_dense_map_8h.html">DenseMap.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

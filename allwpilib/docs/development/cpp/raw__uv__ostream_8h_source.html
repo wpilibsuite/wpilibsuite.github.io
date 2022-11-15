@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-34-gb7ca860</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-37-ge4b5795</span>
    </div>
   </td>
  </tr>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('raw__uv__ostream_8h_source.html',''); 
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uv__ostream.html#a041c14b189aaad66c3b9e55f9fde6ed3">   42</a></span>  <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#a041c14b189aaad66c3b9e55f9fde6ed3">raw_uv_ostream</a>(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;uv::Buffer&gt;</a>&amp; <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#a28b7ddc9c99d61e29fe4154ea54ee0df">bufs</a>,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                 std::function&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_buffer.html">uv::Buffer</a>()&gt; alloc)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      : m_bufs(<a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#a28b7ddc9c99d61e29fe4154ea54ee0df">bufs</a>), m_alloc(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">move</a>(alloc)) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      : m_bufs(<a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#a28b7ddc9c99d61e29fe4154ea54ee0df">bufs</a>), m_alloc(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(alloc)) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="classwpi_1_1raw__ostream.html#aa4a39ffb16e40a429eb314efedf74e69">SetUnbuffered</a>();</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
@@ -185,7 +185,6 @@ $(document).ready(function(){initNavTree('raw__uv__ostream_8h_source.html',''); 
 <div class="ttc" id="aclasswpi_1_1uv_1_1_buffer_html_a5189d92a1c07235f0503dd4f6fdffa34"><div class="ttname"><a href="classwpi_1_1uv_1_1_buffer.html#a5189d92a1c07235f0503dd4f6fdffa34">wpi::uv::Buffer::Allocate</a></div><div class="ttdeci">static Buffer Allocate(size_t size)</div><div class="ttdef"><b>Definition:</b> Buffer.h:52</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a0259c31cd34e096be5056e9d88ae0500"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a0259c31cd34e096be5056e9d88ae0500">Eigen::numext::uint64_t</a></div><div class="ttdeci">::uint64_t uint64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:58</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:1544</div></div>
 <div class="ttc" id="athirdparty_2llvm_2include_2wpi_2raw__ostream_8h_html"><div class="ttname"><a href="thirdparty_2llvm_2include_2wpi_2raw__ostream_8h.html">raw_ostream.h</a></div></div>
@@ -195,7 +194,7 @@ $(document).ready(function(){initNavTree('raw__uv__ostream_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e20957744827ba5726af139111576a9.html">wpinet</a></li><li class="navelem"><a class="el" href="raw__uv__ostream_8h.html">raw_uv_ostream.h</a></li>
-    <li class="footer">Generated on Tue Nov 15 2022 03:25:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Nov 15 2022 04:22:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
