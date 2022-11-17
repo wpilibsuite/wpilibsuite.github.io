@@ -264,7 +264,7 @@
 <span class="sourceLineNo">252</span><a id="line.252">   * @param modulePositions The current distance measurements and rotations of the swerve modules.</a>
 <span class="sourceLineNo">253</span><a id="line.253">   */</a>
 <span class="sourceLineNo">254</span><a id="line.254">  public void resetPosition(</a>
-<span class="sourceLineNo">255</span><a id="line.255">      Pose2d poseMeters, Rotation2d gyroAngle, SwerveModulePosition... modulePositions) {</a>
+<span class="sourceLineNo">255</span><a id="line.255">      Pose2d poseMeters, Rotation2d gyroAngle, SwerveModulePosition[] modulePositions) {</a>
 <span class="sourceLineNo">256</span><a id="line.256">    // Reset state estimate and error covariance</a>
 <span class="sourceLineNo">257</span><a id="line.257">    m_observer.reset();</a>
 <span class="sourceLineNo">258</span><a id="line.258">    m_poseBuffer.clear();</a>
