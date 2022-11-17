@@ -1,9 +1,5 @@
 var NAVTREEINDEX180 =
 {
-"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_linear_vectorized_traver59e90806e36c9857da8150f4478a6833.html#a892e6e02f005ccf9c5d2e8ad2d17d2d9":[4,0,8,4,1026,0],
-"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_linear_vectorized_traver59e90806e36c9857da8150f4478a6833.html#a892e6e02f005ccf9c5d2e8ad2d17d2d9":[5,0,4,2,1024,0],
-"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_linear_vectorized_traver59e90806e36c9857da8150f4478a6833.html#af9a3564540ddb235f7afb6283343c942":[4,0,8,4,1026,2],
-"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_linear_vectorized_traver59e90806e36c9857da8150f4478a6833.html#af9a3564540ddb235f7afb6283343c942":[5,0,4,2,1024,2],
 "struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_linear_vectorized_traversal_00_01_no_unrolling_01_4.html":[5,0,4,2,1025],
 "struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_linear_vectorized_traversal_00_01_no_unrolling_01_4.html":[4,0,8,4,1027],
 "struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_linear_vectorized_traversal_00_01_no_unrolling_01_4.html#aabdb72544236038f0a74f0289477695d":[5,0,4,2,1025,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX180 =
 "struct_eigen_1_1internal_1_1rsqrt__impl.html":[5,0,4,2,1075],
 "struct_eigen_1_1internal_1_1rsqrt__impl.html":[4,0,8,4,1077],
 "struct_eigen_1_1internal_1_1rsqrt__impl.html#a8dd571dc396075c2ea56eae4462d1efa":[5,0,4,2,1075,0],
-"struct_eigen_1_1internal_1_1rsqrt__impl.html#a8dd571dc396075c2ea56eae4462d1efa":[4,0,8,4,1077,0]
+"struct_eigen_1_1internal_1_1rsqrt__impl.html#a8dd571dc396075c2ea56eae4462d1efa":[4,0,8,4,1077,0],
+"struct_eigen_1_1internal_1_1rsqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html":[5,0,4,2,1076],
+"struct_eigen_1_1internal_1_1rsqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html":[4,0,8,4,1078],
+"struct_eigen_1_1internal_1_1rsqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html#adf07c7e7143fac410bcdf7c58c7c8c3b":[5,0,4,2,1076,0],
+"struct_eigen_1_1internal_1_1rsqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html#adf07c7e7143fac410bcdf7c58c7c8c3b":[4,0,8,4,1078,0]
 };

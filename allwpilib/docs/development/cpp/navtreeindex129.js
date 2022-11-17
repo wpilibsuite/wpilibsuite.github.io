@@ -1,9 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"group___unit_math.html#gac19a3f10ebced4d7760193130ed220fa":[3,30,26],
-"group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa":[3,30,10],
-"group___unit_math.html#gaca6a60340c678dcce1c2e4afc52f3c9d":[3,30,33],
-"group___unit_math.html#gad7fa514c186141cb9d3fcf824fd41a37":[3,30,17],
 "group___unit_math.html#gade1a8bde53a3516371efc5b0bf026e1d":[3,30,9],
 "group___unit_math.html#gae0019fd57476802def84991c48fe8e66":[3,30,34],
 "group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140":[3,30,31],
@@ -249,5 +245,9 @@ var NAVTREEINDEX129 =
 "group__cscore__listener__func.html#ga415e2d00465ab18b170a15fe1f0fd9e3":[3,22,11,6],
 "group__cscore__listener__func.html#ga5583f54baf42887b38507f5819112d80":[3,22,11,2],
 "group__cscore__listener__func.html#ga888ae5243ba070bd380e5e79a2e0a885":[3,22,11,1],
-"group__cscore__listener__func.html#ga95cace60acbdd324ebb64114c9502cb6":[3,22,11,8]
+"group__cscore__listener__func.html#ga95cace60acbdd324ebb64114c9502cb6":[3,22,11,8],
+"group__cscore__listener__func.html#gac137de0fa60eb351b9b52be726b05a36":[3,22,11,9],
+"group__cscore__listener__func.html#gac20befa30e62222c96f7ea0bf2a4822f":[3,22,11,7],
+"group__cscore__listener__func.html#gaee36a973b98a201ebcfaf61d642bf167":[3,22,11,4],
+"group__cscore__logging__cfunc.html":[3,23,14]
 };

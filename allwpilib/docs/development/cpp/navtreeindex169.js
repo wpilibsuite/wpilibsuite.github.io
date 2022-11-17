@@ -1,9 +1,5 @@
 var NAVTREEINDEX169 =
 {
-"struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html":[5,0,4,2,360],
-"struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html":[4,0,8,4,362],
-"struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html#a4b5651db5c020cc969b35ef8ddca5bf9":[4,0,8,4,362,2],
-"struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html#a4b5651db5c020cc969b35ef8ddca5bf9":[5,0,4,2,360,2],
 "struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html#a7a3054033db305e8bab9f7b896af3ce1":[4,0,8,4,362,0],
 "struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html#a7a3054033db305e8bab9f7b896af3ce1":[5,0,4,2,360,0],
 "struct_eigen_1_1internal_1_1evaluator__traits_3_01_sparse_q_r_matrix_q_return_type_3_01_sparse_q_r_type_01_4_01_4.html#ab28b57aa5e4382128b7d749685cfff58":[5,0,4,2,360,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX169 =
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__round__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,451],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__round__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,449],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__rsqrt__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,450],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__rsqrt__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,452]
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__rsqrt__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,452],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__score__coeff__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,451],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__score__coeff__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,453],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__shift__left__op_3_01_scalar_00_01_n_01_4_01_4.html":[5,0,4,2,452],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__shift__left__op_3_01_scalar_00_01_n_01_4_01_4.html":[4,0,8,4,454]
 };

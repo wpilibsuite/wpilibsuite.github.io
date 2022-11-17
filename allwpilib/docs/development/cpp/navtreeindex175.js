@@ -1,9 +1,5 @@
 var NAVTREEINDEX175 =
 {
-"struct_eigen_1_1internal_1_1make__unsigned_3_01signed_01short_01_4.html":[4,0,8,4,766],
-"struct_eigen_1_1internal_1_1make__unsigned_3_01signed_01short_01_4.html":[5,0,4,2,764],
-"struct_eigen_1_1internal_1_1make__unsigned_3_01signed_01short_01_4.html#a14b26640cdff975eb82863ee3a18efaf":[4,0,8,4,766,0],
-"struct_eigen_1_1internal_1_1make__unsigned_3_01signed_01short_01_4.html#a14b26640cdff975eb82863ee3a18efaf":[5,0,4,2,764,0],
 "struct_eigen_1_1internal_1_1make__unsigned_3_01unsigned_01char_01_4.html":[4,0,8,4,767],
 "struct_eigen_1_1internal_1_1make__unsigned_3_01unsigned_01char_01_4.html":[5,0,4,2,765],
 "struct_eigen_1_1internal_1_1make__unsigned_3_01unsigned_01char_01_4.html#ad1fa54b25b1258570d3ce34dbf23ef4b":[5,0,4,2,765,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX175 =
 "struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__std__result__type_08_4.html":[4,0,8,4,823],
 "struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__std__result__type_08_4.html":[5,0,4,2,821],
 "struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__std__result__type_08_4.html#ac79e4fe6a62fca663241d1121181989d":[5,0,4,2,821,0],
-"struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__std__result__type_08_4.html#ac79e4fe6a62fca663241d1121181989d":[4,0,8,4,823,0]
+"struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__std__result__type_08_4.html#ac79e4fe6a62fca663241d1121181989d":[4,0,8,4,823,0],
+"struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__tr1__result_08_4.html":[4,0,8,4,824],
+"struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__tr1__result_08_4.html":[5,0,4,2,822],
+"struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__tr1__result_08_4.html#a2ab9b7f57d99a2dd47a90ef2cd2684e5":[4,0,8,4,824,0],
+"struct_eigen_1_1internal_1_1nullary__result__of__select_3_01_func_00_01sizeof_07has__tr1__result_08_4.html#a2ab9b7f57d99a2dd47a90ef2cd2684e5":[5,0,4,2,822,0]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX192 =
 {
-"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2f_01_4.html#a38ecc9bf646ead4cd47c13073c9be2f8":[5,0,4,2,1576,1],
-"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2f_01_4.html#a38ecc9bf646ead4cd47c13073c9be2f8":[4,0,8,4,1578,1],
-"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2f_01_4.html#a47244fe23db856d6688aa4304fa71ba6":[5,0,4,2,1576,2],
-"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2f_01_4.html#a47244fe23db856d6688aa4304fa71ba6":[4,0,8,4,1578,2],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html":[4,0,8,4,1579],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html":[5,0,4,2,1577],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html#a9616d03c8c5cc855c0db0609914cff77":[5,0,4,2,1577,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX192 =
 "struct_h_a_l___d_m_a_sample.html#a8a3bc3bcf128247b72b280bae7cb1d5c":[3,1,30,0,2],
 "struct_h_a_l___d_m_a_sample.html#af6b614251f68cd8bfebd5416a884b712":[3,1,30,0,0],
 "struct_h_a_l___joystick_axes.html":[3,1,4,1],
-"struct_h_a_l___joystick_axes.html#a4d12fad6e97e534744b39adb3b741571":[3,1,4,1,2]
+"struct_h_a_l___joystick_axes.html#a4d12fad6e97e534744b39adb3b741571":[3,1,4,1,2],
+"struct_h_a_l___joystick_axes.html#ac0601f26133aad58e9ef4dadf146de6d":[3,1,4,1,1],
+"struct_h_a_l___joystick_axes.html#ae17b86ab52dea8557afcde52a10af779":[3,1,4,1,0],
+"struct_h_a_l___joystick_buttons.html":[3,1,4,3],
+"struct_h_a_l___joystick_buttons.html#a38ec62e88472f4c7918af189d4043cd4":[3,1,4,3,0]
 };

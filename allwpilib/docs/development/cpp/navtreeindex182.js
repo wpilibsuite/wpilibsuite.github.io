@@ -1,9 +1,5 @@
 var NAVTREEINDEX182 =
 {
-"struct_eigen_1_1internal_1_1scalar__difference__op.html#a11b257b9902b537a1d322609c150ced4":[5,0,4,2,1125,2],
-"struct_eigen_1_1internal_1_1scalar__difference__op.html#a11b257b9902b537a1d322609c150ced4":[4,0,8,4,1127,2],
-"struct_eigen_1_1internal_1_1scalar__difference__op.html#a4e65670cc723d0a01418458ee3cdeaed":[5,0,4,2,1125,1],
-"struct_eigen_1_1internal_1_1scalar__difference__op.html#a4e65670cc723d0a01418458ee3cdeaed":[4,0,8,4,1127,1],
 "struct_eigen_1_1internal_1_1scalar__difference__op.html#af12564e6db10e3e97d912c3263feae32":[5,0,4,2,1125,0],
 "struct_eigen_1_1internal_1_1scalar__difference__op.html#af12564e6db10e3e97d912c3263feae32":[4,0,8,4,1127,0],
 "struct_eigen_1_1internal_1_1scalar__digamma__op.html":[5,0,4,2,1126],
@@ -249,5 +245,9 @@ var NAVTREEINDEX182 =
 "struct_eigen_1_1internal_1_1scalar__rint__op.html":[4,0,8,4,1175],
 "struct_eigen_1_1internal_1_1scalar__rint__op.html":[5,0,4,2,1173],
 "struct_eigen_1_1internal_1_1scalar__rint__op.html#a551bc8274f97c3cd65d8d86eee5ae6bc":[5,0,4,2,1173,0],
-"struct_eigen_1_1internal_1_1scalar__rint__op.html#a551bc8274f97c3cd65d8d86eee5ae6bc":[4,0,8,4,1175,0]
+"struct_eigen_1_1internal_1_1scalar__rint__op.html#a551bc8274f97c3cd65d8d86eee5ae6bc":[4,0,8,4,1175,0],
+"struct_eigen_1_1internal_1_1scalar__rint__op.html#a84774388de7989abc8efd1f56d483c96":[4,0,8,4,1175,1],
+"struct_eigen_1_1internal_1_1scalar__rint__op.html#a84774388de7989abc8efd1f56d483c96":[5,0,4,2,1173,1],
+"struct_eigen_1_1internal_1_1scalar__round__op.html":[5,0,4,2,1174],
+"struct_eigen_1_1internal_1_1scalar__round__op.html":[4,0,8,4,1176]
 };

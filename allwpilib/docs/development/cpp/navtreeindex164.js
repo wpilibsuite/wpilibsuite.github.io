@@ -1,9 +1,5 @@
 var NAVTREEINDEX164 =
 {
-"struct_eigen_1_1internal_1_1blas__traits.html#ada873c310e824caadb8bd690cac37316":[5,0,4,2,136,0],
-"struct_eigen_1_1internal_1_1blas__traits.html#ada873c310e824caadb8bd690cac37316":[4,0,8,4,138,0],
-"struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala460c90a32ed86eb7afe907bd9f50947d.html":[4,0,8,4,140],
-"struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala460c90a32ed86eb7afe907bd9f50947d.html":[5,0,4,2,138],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala460c90a32ed86eb7afe907bd9f50947d.html#a3b78ae427bd972407c5ee568b3d55089":[4,0,8,4,140,1],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala460c90a32ed86eb7afe907bd9f50947d.html#a3b78ae427bd972407c5ee568b3d55089":[5,0,4,2,138,1],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala460c90a32ed86eb7afe907bd9f50947d.html#a75eed445291ff3bb32910d2a4800cc1e":[5,0,4,2,138,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX164 =
 "struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_013_01_4.html":[5,0,4,2,187],
 "struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_013_01_4.html":[4,0,8,4,189],
 "struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_013_01_4.html#a85ff1ae68f3676b513dc50428e8a8cf6":[5,0,4,2,187,0],
-"struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_013_01_4.html#a85ff1ae68f3676b513dc50428e8a8cf6":[4,0,8,4,189,0]
+"struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_013_01_4.html#a85ff1ae68f3676b513dc50428e8a8cf6":[4,0,8,4,189,0],
+"struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_014_01_4.html":[4,0,8,4,190],
+"struct_eigen_1_1internal_1_1compute__inverse_3_01_matrix_type_00_01_result_type_00_014_01_4.html":[5,0,4,2,188],
+"struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check.html":[4,0,8,4,191],
+"struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check.html":[5,0,4,2,189]
 };
