@@ -68,51 +68,57 @@
 <span class="sourceLineNo">056</span><a id="line.56">    SendableRegistry.setName(this, name);</a>
 <span class="sourceLineNo">057</span><a id="line.57">  }</a>
 <span class="sourceLineNo">058</span><a id="line.58"></a>
-<span class="sourceLineNo">059</span><a id="line.59">  /**</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * Gets the subsystem name of this Command.</a>
-<span class="sourceLineNo">061</span><a id="line.61">   *</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * @return Subsystem name</a>
-<span class="sourceLineNo">063</span><a id="line.63">   */</a>
-<span class="sourceLineNo">064</span><a id="line.64">  public String getSubsystem() {</a>
-<span class="sourceLineNo">065</span><a id="line.65">    return SendableRegistry.getSubsystem(this);</a>
-<span class="sourceLineNo">066</span><a id="line.66">  }</a>
-<span class="sourceLineNo">067</span><a id="line.67"></a>
-<span class="sourceLineNo">068</span><a id="line.68">  /**</a>
-<span class="sourceLineNo">069</span><a id="line.69">   * Sets the subsystem name of this Command.</a>
-<span class="sourceLineNo">070</span><a id="line.70">   *</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * @param subsystem subsystem name</a>
-<span class="sourceLineNo">072</span><a id="line.72">   */</a>
-<span class="sourceLineNo">073</span><a id="line.73">  public void setSubsystem(String subsystem) {</a>
-<span class="sourceLineNo">074</span><a id="line.74">    SendableRegistry.setSubsystem(this, subsystem);</a>
-<span class="sourceLineNo">075</span><a id="line.75">  }</a>
-<span class="sourceLineNo">076</span><a id="line.76"></a>
-<span class="sourceLineNo">077</span><a id="line.77">  /**</a>
-<span class="sourceLineNo">078</span><a id="line.78">   * Initializes this sendable. Useful for allowing implementations to easily extend SendableBase.</a>
-<span class="sourceLineNo">079</span><a id="line.79">   *</a>
-<span class="sourceLineNo">080</span><a id="line.80">   * @param builder the builder used to construct this sendable</a>
-<span class="sourceLineNo">081</span><a id="line.81">   */</a>
-<span class="sourceLineNo">082</span><a id="line.82">  @Override</a>
-<span class="sourceLineNo">083</span><a id="line.83">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">084</span><a id="line.84">    builder.setSmartDashboardType("Command");</a>
-<span class="sourceLineNo">085</span><a id="line.85">    builder.addStringProperty(".name", this::getName, null);</a>
-<span class="sourceLineNo">086</span><a id="line.86">    builder.addBooleanProperty(</a>
-<span class="sourceLineNo">087</span><a id="line.87">        "running",</a>
-<span class="sourceLineNo">088</span><a id="line.88">        this::isScheduled,</a>
-<span class="sourceLineNo">089</span><a id="line.89">        value -&gt; {</a>
-<span class="sourceLineNo">090</span><a id="line.90">          if (value) {</a>
-<span class="sourceLineNo">091</span><a id="line.91">            if (!isScheduled()) {</a>
-<span class="sourceLineNo">092</span><a id="line.92">              schedule();</a>
-<span class="sourceLineNo">093</span><a id="line.93">            }</a>
-<span class="sourceLineNo">094</span><a id="line.94">          } else {</a>
-<span class="sourceLineNo">095</span><a id="line.95">            if (isScheduled()) {</a>
-<span class="sourceLineNo">096</span><a id="line.96">              cancel();</a>
-<span class="sourceLineNo">097</span><a id="line.97">            }</a>
-<span class="sourceLineNo">098</span><a id="line.98">          }</a>
-<span class="sourceLineNo">099</span><a id="line.99">        });</a>
-<span class="sourceLineNo">100</span><a id="line.100">    builder.addBooleanProperty(</a>
-<span class="sourceLineNo">101</span><a id="line.101">        ".isParented", () -&gt; CommandGroupBase.getGroupedCommands().contains(this), null);</a>
-<span class="sourceLineNo">102</span><a id="line.102">  }</a>
-<span class="sourceLineNo">103</span><a id="line.103">}</a>
+<span class="sourceLineNo">059</span><a id="line.59">  @Override</a>
+<span class="sourceLineNo">060</span><a id="line.60">  public CommandBase withName(String name) {</a>
+<span class="sourceLineNo">061</span><a id="line.61">    this.setName(name);</a>
+<span class="sourceLineNo">062</span><a id="line.62">    return this;</a>
+<span class="sourceLineNo">063</span><a id="line.63">  }</a>
+<span class="sourceLineNo">064</span><a id="line.64"></a>
+<span class="sourceLineNo">065</span><a id="line.65">  /**</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * Gets the subsystem name of this Command.</a>
+<span class="sourceLineNo">067</span><a id="line.67">   *</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * @return Subsystem name</a>
+<span class="sourceLineNo">069</span><a id="line.69">   */</a>
+<span class="sourceLineNo">070</span><a id="line.70">  public String getSubsystem() {</a>
+<span class="sourceLineNo">071</span><a id="line.71">    return SendableRegistry.getSubsystem(this);</a>
+<span class="sourceLineNo">072</span><a id="line.72">  }</a>
+<span class="sourceLineNo">073</span><a id="line.73"></a>
+<span class="sourceLineNo">074</span><a id="line.74">  /**</a>
+<span class="sourceLineNo">075</span><a id="line.75">   * Sets the subsystem name of this Command.</a>
+<span class="sourceLineNo">076</span><a id="line.76">   *</a>
+<span class="sourceLineNo">077</span><a id="line.77">   * @param subsystem subsystem name</a>
+<span class="sourceLineNo">078</span><a id="line.78">   */</a>
+<span class="sourceLineNo">079</span><a id="line.79">  public void setSubsystem(String subsystem) {</a>
+<span class="sourceLineNo">080</span><a id="line.80">    SendableRegistry.setSubsystem(this, subsystem);</a>
+<span class="sourceLineNo">081</span><a id="line.81">  }</a>
+<span class="sourceLineNo">082</span><a id="line.82"></a>
+<span class="sourceLineNo">083</span><a id="line.83">  /**</a>
+<span class="sourceLineNo">084</span><a id="line.84">   * Initializes this sendable. Useful for allowing implementations to easily extend SendableBase.</a>
+<span class="sourceLineNo">085</span><a id="line.85">   *</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * @param builder the builder used to construct this sendable</a>
+<span class="sourceLineNo">087</span><a id="line.87">   */</a>
+<span class="sourceLineNo">088</span><a id="line.88">  @Override</a>
+<span class="sourceLineNo">089</span><a id="line.89">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">090</span><a id="line.90">    builder.setSmartDashboardType("Command");</a>
+<span class="sourceLineNo">091</span><a id="line.91">    builder.addStringProperty(".name", this::getName, null);</a>
+<span class="sourceLineNo">092</span><a id="line.92">    builder.addBooleanProperty(</a>
+<span class="sourceLineNo">093</span><a id="line.93">        "running",</a>
+<span class="sourceLineNo">094</span><a id="line.94">        this::isScheduled,</a>
+<span class="sourceLineNo">095</span><a id="line.95">        value -&gt; {</a>
+<span class="sourceLineNo">096</span><a id="line.96">          if (value) {</a>
+<span class="sourceLineNo">097</span><a id="line.97">            if (!isScheduled()) {</a>
+<span class="sourceLineNo">098</span><a id="line.98">              schedule();</a>
+<span class="sourceLineNo">099</span><a id="line.99">            }</a>
+<span class="sourceLineNo">100</span><a id="line.100">          } else {</a>
+<span class="sourceLineNo">101</span><a id="line.101">            if (isScheduled()) {</a>
+<span class="sourceLineNo">102</span><a id="line.102">              cancel();</a>
+<span class="sourceLineNo">103</span><a id="line.103">            }</a>
+<span class="sourceLineNo">104</span><a id="line.104">          }</a>
+<span class="sourceLineNo">105</span><a id="line.105">        });</a>
+<span class="sourceLineNo">106</span><a id="line.106">    builder.addBooleanProperty(</a>
+<span class="sourceLineNo">107</span><a id="line.107">        ".isParented", () -&gt; CommandGroupBase.getGroupedCommands().contains(this), null);</a>
+<span class="sourceLineNo">108</span><a id="line.108">  }</a>
+<span class="sourceLineNo">109</span><a id="line.109">}</a>
 
 
 
