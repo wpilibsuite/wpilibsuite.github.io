@@ -1,17 +1,9 @@
 var NAVTREEINDEX29 =
 {
-"class_eigen_1_1_eigen_solver.html#aa4edf56ecc178b277b75c13a2ca1089f":[3,46,4,9],
-"class_eigen_1_1_eigen_solver.html#aa7668af4bcb47cd92cfe10640589d88f":[3,46,4,16],
-"class_eigen_1_1_eigen_solver.html#aabb79f8bedf25fe16adf8e49cfee931a":[3,46,4,26],
-"class_eigen_1_1_eigen_solver.html#aac6c2c50adc1930bbb9fa7cfc699474a":[3,46,4,0],
-"class_eigen_1_1_eigen_solver.html#aad50fbc086d07e69015426ffd11f7e44":[3,46,4,6],
-"class_eigen_1_1_eigen_solver.html#abb23dbb6a83e398335bc04394cc85df1":[3,46,4,23],
-"class_eigen_1_1_eigen_solver.html#ac4af54fadc33abcdd1778c87bfbf005b":[3,46,4,17],
-"class_eigen_1_1_eigen_solver.html#adc446bcb60572758fa64515f2825db62":[3,46,4,2],
 "class_eigen_1_1_eigen_solver.html#ae33fb99005024f07005ab1e409413c5f":[3,46,4,14],
 "class_eigen_1_1_eigen_solver.html#aff5c2bd7843aacdcd59b9cbe420752ff":[3,46,4,13],
-"class_eigen_1_1_flagged.html":[5,0,4,77],
 "class_eigen_1_1_flagged.html":[4,0,8,80],
+"class_eigen_1_1_flagged.html":[5,0,4,77],
 "class_eigen_1_1_force_aligned_access.html":[3,38,22],
 "class_eigen_1_1_force_aligned_access.html#a141302f9b4742f9d36874ac67cff11b4":[3,38,22,6],
 "class_eigen_1_1_force_aligned_access.html#a154c0fa31a48ac44675adf4bf3c1936d":[3,38,22,1],
@@ -249,5 +241,13 @@ var NAVTREEINDEX29 =
 "class_eigen_1_1_householder_sequence.html#aec2aa1e2c3568597441eb837e56eb9b9":[3,35,0,14],
 "class_eigen_1_1_householder_sequence.html#af34f776bdc7f1d20ac73c19ddb54d443":[3,35,0,23],
 "class_eigen_1_1_householder_sequence.html#af3967dc6ea7a3671224a4b4a9776a329":[3,35,0,7],
-"class_eigen_1_1_householder_sequence.html#afb2c59fe66cdad3521757886c0d6a1ce":[3,35,0,9]
+"class_eigen_1_1_householder_sequence.html#afb2c59fe66cdad3521757886c0d6a1ce":[3,35,0,9],
+"class_eigen_1_1_householder_sequence.html#afc99539a130da4395c7df7d1ef1f43f3":[3,35,0,11],
+"class_eigen_1_1_householder_sequence.html#afe63789e88c72e4513f8901f357e55d3":[3,35,0,0],
+"class_eigen_1_1_hyperplane.html":[5,0,4,93],
+"class_eigen_1_1_hyperplane.html":[4,0,8,96],
+"class_eigen_1_1_identity_preconditioner.html":[3,39,2],
+"class_eigen_1_1_identity_preconditioner.html#a42cf4bcb43d4d9f2461e82cfcd20ee87":[3,39,2,2],
+"class_eigen_1_1_identity_preconditioner.html#a450681df926cb312fc71a324e150340c":[3,39,2,5],
+"class_eigen_1_1_identity_preconditioner.html#a5fb381c622f38f3b8deb0775867cdf5f":[3,39,2,1]
 };

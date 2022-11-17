@@ -1,15 +1,7 @@
 var NAVTREEINDEX23 =
 {
-"_worker_thread_8h.html":[6,0,15,26],
-"_worker_thread_8h.html#a29f8101fab8b8b9686228cf1bfa8c681":[6,0,15,26,5],
-"_worker_thread_8h.html#aa1975a46000408c21cd1a7958e81cf87":[6,0,15,26,6],
-"_worker_thread_8h_source.html":[6,0,15,26],
-"_wrapper_command_8h.html":[6,0,5,0,39],
-"_wrapper_command_8h_source.html":[6,0,5,0,39],
-"_xbox_controller_8h.html":[6,0,3,86],
-"_xbox_controller_8h_source.html":[6,0,3,86],
-"_xbox_controller_sim_8h.html":[6,0,3,9,42],
-"_xbox_controller_sim_8h_source.html":[6,0,3,9,42],
+"_xbox_controller_sim_8h.html":[6,0,3,8,42],
+"_xbox_controller_sim_8h_source.html":[6,0,3,8,42],
 "_xpr_helper_8h.html":[6,0,8,1,0,0,0,1,3,14],
 "_xpr_helper_8h.html#a4363bfa78f2780a0714888ec373b2673":[6,0,8,1,0,0,0,1,3,14,93],
 "_xpr_helper_8h.html#a53454178d54621169eded201cec9f05e":[6,0,8,1,0,0,0,1,3,14,94],
@@ -249,5 +241,13 @@ var NAVTREEINDEX23 =
 "base_8h.html#abacb2c1570fc66b2d9838618e6b06be3":[6,0,11,5,155],
 "base_8h.html#abb285c204ca46e6e01fd60acbfffb4e2":[6,0,11,5,116],
 "base_8h.html#abb603f3c83459a636aaef8385db3a443":[6,0,11,5,129],
-"base_8h.html#ac83d29f444a9de60d7f454200e33ffbc":[6,0,11,5,154]
+"base_8h.html#ac83d29f444a9de60d7f454200e33ffbc":[6,0,11,5,154],
+"base_8h.html#acaa430d90dc65e5b3fc4ee81139aaf8d":[6,0,11,5,138],
+"base_8h.html#acb409344e80b38f8ab8d1dc72a599623":[6,0,11,5,15],
+"base_8h.html#acd405f8c8254f75f777291f83cf92a0f":[6,0,11,5,127],
+"base_8h.html#acd7d26c3ef641666b95ad90b6a143fdd":[6,0,11,5,144],
+"base_8h.html#ad2faf0f8cb76762e1534a8f35884f8ec":[6,0,11,5,57],
+"base_8h.html#ad4c40cb31fd4fda534f293016693c221":[6,0,11,5,126],
+"base_8h.html#adc650709b31816197530a08cabbd9df2":[6,0,11,5,91],
+"base_8h.html#adcdd7d0eaedc290c7a56b2ce5340175c":[6,0,11,5,50]
 };

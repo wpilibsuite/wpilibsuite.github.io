@@ -2066,8 +2066,6 @@ var annotated_dup =
       [ "AnalogPotentiometer", "classfrc_1_1_analog_potentiometer.html", "classfrc_1_1_analog_potentiometer" ],
       [ "AnalogTrigger", "classfrc_1_1_analog_trigger.html", "classfrc_1_1_analog_trigger" ],
       [ "AnalogTriggerOutput", "classfrc_1_1_analog_trigger_output.html", "classfrc_1_1_analog_trigger_output" ],
-      [ "AprilTag", "structfrc_1_1_april_tag.html", "structfrc_1_1_april_tag" ],
-      [ "AprilTagFieldLayout", "classfrc_1_1_april_tag_field_layout.html", "classfrc_1_1_april_tag_field_layout" ],
       [ "ArmFeedforward", "classfrc_1_1_arm_feedforward.html", "classfrc_1_1_arm_feedforward" ],
       [ "AsynchronousInterrupt", "classfrc_1_1_asynchronous_interrupt.html", "classfrc_1_1_asynchronous_interrupt" ],
       [ "BangBangController", "classfrc_1_1_bang_bang_controller.html", "classfrc_1_1_bang_bang_controller" ],
