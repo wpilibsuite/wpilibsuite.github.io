@@ -1,5 +1,7 @@
 var NAVTREEINDEX181 =
 {
+"struct_eigen_1_1internal_1_1rsqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html#adf07c7e7143fac410bcdf7c58c7c8c3b":[5,0,4,2,1076,0],
+"struct_eigen_1_1internal_1_1rsqrt__impl_3_01std_1_1complex_3_01_t_01_4_01_4.html#adf07c7e7143fac410bcdf7c58c7c8c3b":[4,0,8,4,1078,0],
 "struct_eigen_1_1internal_1_1rsqrt__retval.html":[5,0,4,2,1077],
 "struct_eigen_1_1internal_1_1rsqrt__retval.html":[4,0,8,4,1079],
 "struct_eigen_1_1internal_1_1rsqrt__retval.html#adef732087eccb15f57e39953969fbf43":[4,0,8,4,1079,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX181 =
 "struct_eigen_1_1internal_1_1scalar__difference__op.html":[5,0,4,2,1125],
 "struct_eigen_1_1internal_1_1scalar__difference__op.html":[4,0,8,4,1127],
 "struct_eigen_1_1internal_1_1scalar__difference__op.html#a11b257b9902b537a1d322609c150ced4":[5,0,4,2,1125,2],
-"struct_eigen_1_1internal_1_1scalar__difference__op.html#a11b257b9902b537a1d322609c150ced4":[4,0,8,4,1127,2],
-"struct_eigen_1_1internal_1_1scalar__difference__op.html#a4e65670cc723d0a01418458ee3cdeaed":[5,0,4,2,1125,1],
-"struct_eigen_1_1internal_1_1scalar__difference__op.html#a4e65670cc723d0a01418458ee3cdeaed":[4,0,8,4,1127,1]
+"struct_eigen_1_1internal_1_1scalar__difference__op.html#a11b257b9902b537a1d322609c150ced4":[4,0,8,4,1127,2]
 };

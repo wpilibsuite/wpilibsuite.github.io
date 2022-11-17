@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-40-gce4c45d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-41-g2e88a49</span>
    </div>
   </td>
  </tr>
@@ -137,6 +137,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:accd3217a7016eb5246f1184b8bc6cc90"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html#accd3217a7016eb5246f1184b8bc6cc90">DesaturateWheelSpeeds</a> (<a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; *moduleStates, units::meters_per_second_t attainableMaxSpeed)</td></tr>
 <tr class="memdesc:accd3217a7016eb5246f1184b8bc6cc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renormalizes the wheel speeds if any individual speed is above the specified maximum.  <a href="classfrc_1_1_swerve_drive_kinematics.html#accd3217a7016eb5246f1184b8bc6cc90">More...</a><br /></td></tr>
 <tr class="separator:accd3217a7016eb5246f1184b8bc6cc90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8eae43639bfec03ce4df2e6b56e7836"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html#af8eae43639bfec03ce4df2e6b56e7836">DesaturateWheelSpeeds</a> (<a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; *moduleStates, <a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a> currentChassisSpeed, units::meters_per_second_t attainableMaxModuleSpeed, units::meters_per_second_t attainableMaxRobotTranslationSpeed, units::radians_per_second_t attainableMaxRobotRotationSpeed)</td></tr>
+<tr class="memdesc:af8eae43639bfec03ce4df2e6b56e7836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renormalizes the wheel speeds if any individual speed is above the specified maximum, as well as getting rid of joystick saturation at edges of joystick.  <a href="classfrc_1_1_swerve_drive_kinematics.html#af8eae43639bfec03ce4df2e6b56e7836">More...</a><br /></td></tr>
+<tr class="separator:af8eae43639bfec03ce4df2e6b56e7836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t NumModules&gt;<br />
@@ -253,8 +256,77 @@ template&lt;size_t NumModules&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af8eae43639bfec03ce4df2e6b56e7836" name="af8eae43639bfec03ce4df2e6b56e7836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8eae43639bfec03ce4df2e6b56e7836">&#9670;&nbsp;</a></span>DesaturateWheelSpeeds() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t NumModules&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">frc::SwerveDriveKinematics</a>&lt; NumModules &gt;::DesaturateWheelSpeeds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; *&#160;</td>
+          <td class="paramname"><em>moduleStates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a>&#160;</td>
+          <td class="paramname"><em>currentChassisSpeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meters_per_second_t&#160;</td>
+          <td class="paramname"><em>attainableMaxModuleSpeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meters_per_second_t&#160;</td>
+          <td class="paramname"><em>attainableMaxRobotTranslationSpeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::radians_per_second_t&#160;</td>
+          <td class="paramname"><em>attainableMaxRobotRotationSpeed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Renormalizes the wheel speeds if any individual speed is above the specified maximum, as well as getting rid of joystick saturation at edges of joystick. </p>
+<p >Sometimes, after inverse kinematics, the requested speed from one or more modules may be above the max attainable speed for the driving motor on that module. To fix this issue, one can reduce all the wheel speeds to make sure that all requested module speeds are at-or-below the absolute threshold, while maintaining the ratio of speeds between modules.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moduleStates</td><td>Reference to array of module states. The array will be mutated with the normalized speeds! </td></tr>
+    <tr><td class="paramname">currentChassisSpeed</td><td>Current speed of the robot </td></tr>
+    <tr><td class="paramname">attainableMaxModuleSpeed</td><td>The absolute max speed a module can reach </td></tr>
+    <tr><td class="paramname">attainableMaxRobotTranslationSpeed</td><td>The absolute max speed the robot can reach while translating </td></tr>
+    <tr><td class="paramname">attainableMaxRobotRotationSpeed</td><td>The absolute max speed the robot can reach while rotating </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="accd3217a7016eb5246f1184b8bc6cc90" name="accd3217a7016eb5246f1184b8bc6cc90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accd3217a7016eb5246f1184b8bc6cc90">&#9670;&nbsp;</a></span>DesaturateWheelSpeeds()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#accd3217a7016eb5246f1184b8bc6cc90">&#9670;&nbsp;</a></span>DesaturateWheelSpeeds() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -480,7 +552,7 @@ template&lt;size_t NumModules&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a></li>
-    <li class="footer">Generated on Thu Nov 17 2022 18:39:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Nov 17 2022 18:56:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

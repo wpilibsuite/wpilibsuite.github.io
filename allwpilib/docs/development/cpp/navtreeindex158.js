@@ -1,5 +1,7 @@
 var NAVTREEINDEX158 =
 {
+"struct_eigen_1_1_matrix_xpr.html":[5,0,4,134],
+"struct_eigen_1_1_matrix_xpr.html":[4,0,8,137],
 "struct_eigen_1_1_num_traits.html":[3,38,56],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html":[4,0,8,142],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html":[5,0,4,139],
@@ -247,7 +249,5 @@ var NAVTREEINDEX158 =
 "struct_eigen_1_1_sparse_sparse_product_return_type.html":[4,0,8,236],
 "struct_eigen_1_1_sparse_sparse_product_return_type.html":[5,0,4,233],
 "struct_eigen_1_1_transpositions_shape.html":[4,0,8,253],
-"struct_eigen_1_1_transpositions_shape.html":[5,0,4,250],
-"struct_eigen_1_1_transpositions_shape.html#afad8fac6c0338e163cca86f04fe12cdb":[4,0,8,253,0],
-"struct_eigen_1_1_transpositions_shape.html#afad8fac6c0338e163cca86f04fe12cdb":[5,0,4,250,0]
+"struct_eigen_1_1_transpositions_shape.html":[5,0,4,250]
 };

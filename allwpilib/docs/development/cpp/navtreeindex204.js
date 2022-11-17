@@ -1,5 +1,7 @@
 var NAVTREEINDEX204 =
 {
+"structwpi_1_1detail_1_1_constant_log2.html":[4,0,24,0,0],
+"structwpi_1_1detail_1_1_constant_log2_3_011_01_4.html":[5,0,14,0,1],
 "structwpi_1_1detail_1_1_constant_log2_3_011_01_4.html":[4,0,24,0,1],
 "structwpi_1_1detail_1_1_dense_map_pair.html":[5,0,14,0,3],
 "structwpi_1_1detail_1_1_dense_map_pair.html":[4,0,24,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX204 =
 "structwpi_1_1detail_1_1to__json__fn.html#a43da1cb92a5894857f7d42c9f7c175dc":[4,0,24,0,60,0],
 "structwpi_1_1disjunction.html":[4,0,24,53],
 "structwpi_1_1disjunction.html":[5,0,14,52],
-"structwpi_1_1disjunction_3_01_b1_00_01_bn_8_8_8_01_4.html":[5,0,14,54],
-"structwpi_1_1disjunction_3_01_b1_00_01_bn_8_8_8_01_4.html":[4,0,24,55],
-"structwpi_1_1disjunction_3_01_b1_01_4.html":[5,0,14,53]
+"structwpi_1_1disjunction_3_01_b1_00_01_bn_8_8_8_01_4.html":[5,0,14,54]
 };
