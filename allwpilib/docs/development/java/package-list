@@ -29,7 +29,6 @@ edu.wpi.first.util.function
 edu.wpi.first.util.sendable
 edu.wpi.first.vision
 edu.wpi.first.wpilibj
-edu.wpi.first.wpilibj.apriltag
 edu.wpi.first.wpilibj.counter
 edu.wpi.first.wpilibj.drive
 edu.wpi.first.wpilibj.event
