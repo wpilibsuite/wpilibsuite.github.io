@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-47-g388e7a4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-51-g149bac5</span>
    </div>
   </td>
  </tr>
@@ -248,7 +248,7 @@ $(document).ready(function(){initNavTree('_pose3d_8h_source.html',''); initResiz
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="classfrc_1_1_pose3d.html#a22be64d4ccb7d36d17f1f3133ba45c55">  152</a></span>  <a class="code hl_class" href="classfrc_1_1_pose3d.html">Pose3d</a> <a class="code hl_function" href="classfrc_1_1_pose3d.html#a22be64d4ccb7d36d17f1f3133ba45c55">TransformBy</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">Transform3d</a>&amp; other) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"></span> </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">   * Returns the other pose relative to the current pose.</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">   * Returns the current pose relative to the given pose.</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   * This function can often be used for trajectory tracking or pose</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   * stabilization algorithms to get the error between the reference and the</span></div>
@@ -317,7 +317,7 @@ $(document).ready(function(){initNavTree('_pose3d_8h_source.html',''); initResiz
 <div class="ttc" id="a_twist3d_8h_html"><div class="ttname"><a href="_twist3d_8h.html">Twist3d.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose3d_html"><div class="ttname"><a href="classfrc_1_1_pose3d.html">frc::Pose3d</a></div><div class="ttdoc">Represents a 3D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose3d.h:23</div></div>
-<div class="ttc" id="aclassfrc_1_1_pose3d_html_a094231c5783892368c6178e945e4d294"><div class="ttname"><a href="classfrc_1_1_pose3d.html#a094231c5783892368c6178e945e4d294">frc::Pose3d::RelativeTo</a></div><div class="ttdeci">Pose3d RelativeTo(const Pose3d &amp;other) const</div><div class="ttdoc">Returns the other pose relative to the current pose.</div></div>
+<div class="ttc" id="aclassfrc_1_1_pose3d_html_a094231c5783892368c6178e945e4d294"><div class="ttname"><a href="classfrc_1_1_pose3d.html#a094231c5783892368c6178e945e4d294">frc::Pose3d::RelativeTo</a></div><div class="ttdeci">Pose3d RelativeTo(const Pose3d &amp;other) const</div><div class="ttdoc">Returns the current pose relative to the given pose.</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose3d_html_a17962a3308bf3eae71ca89e8a4ed7050"><div class="ttname"><a href="classfrc_1_1_pose3d.html#a17962a3308bf3eae71ca89e8a4ed7050">frc::Pose3d::ToPose2d</a></div><div class="ttdeci">Pose2d ToPose2d() const</div><div class="ttdoc">Returns a Pose2d representing this Pose3d projected into the X-Y plane.</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose3d_html_a22be64d4ccb7d36d17f1f3133ba45c55"><div class="ttname"><a href="classfrc_1_1_pose3d.html#a22be64d4ccb7d36d17f1f3133ba45c55">frc::Pose3d::TransformBy</a></div><div class="ttdeci">Pose3d TransformBy(const Transform3d &amp;other) const</div><div class="ttdoc">Transforms the pose by the given transformation and returns the new pose.</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose3d_html_a33cbb3c770e530f82de3e3db1ef00fc9"><div class="ttname"><a href="classfrc_1_1_pose3d.html#a33cbb3c770e530f82de3e3db1ef00fc9">frc::Pose3d::Y</a></div><div class="ttdeci">units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the pose's translation.</div><div class="ttdef"><b>Definition:</b> Pose3d.h:110</div></div>
@@ -355,7 +355,7 @@ $(document).ready(function(){initNavTree('_pose3d_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><a class="el" href="_pose3d_8h.html">Pose3d.h</a></li>
-    <li class="footer">Generated on Fri Nov 18 2022 18:24:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Nov 18 2022 22:18:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
