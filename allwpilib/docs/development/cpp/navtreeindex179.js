@@ -1,5 +1,6 @@
 var NAVTREEINDEX179 =
 {
+"struct_eigen_1_1internal_1_1product__type__selector_3_011_00_011_00_01_depth_01_4.html":[4,0,8,4,953],
 "struct_eigen_1_1internal_1_1product__type__selector_3_011_00_01_large_00_01_large_01_4.html":[5,0,4,2,952],
 "struct_eigen_1_1internal_1_1product__type__selector_3_011_00_01_large_00_01_large_01_4.html":[4,0,8,4,954],
 "struct_eigen_1_1internal_1_1product__type__selector_3_011_00_01_large_00_01_small_01_4.html":[4,0,8,4,955],
@@ -248,6 +249,5 @@ var NAVTREEINDEX179 =
 "struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html":[4,0,8,4,1031],
 "struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html#a7d5664c3c40dc809f2efe8fb1b8f3f1a":[5,0,4,2,1029,1],
 "struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html#a7d5664c3c40dc809f2efe8fb1b8f3f1a":[4,0,8,4,1031,1],
-"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html#acb391d86fafd868c1d1484bdd12f0312":[4,0,8,4,1031,0],
-"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html#acb391d86fafd868c1d1484bdd12f0312":[5,0,4,2,1029,0]
+"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html#acb391d86fafd868c1d1484bdd12f0312":[4,0,8,4,1031,0]
 };

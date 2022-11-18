@@ -1,5 +1,6 @@
 var NAVTREEINDEX138 =
 {
+"jni__util_8h.html#a720acf766b00bce1f7012b3299933275":[6,0,13,18,21],
 "jni__util_8h.html#a8846c46b513850d8a01f4e2af95f2351":[6,0,13,18,28],
 "jni__util_8h.html#aa913bf3a5748c8325758e66bb3ed6cd0":[6,0,13,18,29],
 "jni__util_8h.html#aafc303a924487df6025254f3fe0b6a4e":[6,0,13,18,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "namespace_eigen.html#a4c63a9e3b8c513835a3b5551d98bd0c3":[4,0,8,311],
 "namespace_eigen.html#a4eea27a4bf0e3e88d0025ee77628e129":[4,0,8,351],
 "namespace_eigen.html#a502e110d8fd08147e344f6de0428a89e":[4,0,8,324],
-"namespace_eigen.html#a5651354106b1a3b6a5499fec343c8d1d":[4,0,8,299],
-"namespace_eigen.html#a57fe75444f853cd2dd2b6b94e27dcac7":[4,0,8,280]
+"namespace_eigen.html#a5651354106b1a3b6a5499fec343c8d1d":[4,0,8,299]
 };

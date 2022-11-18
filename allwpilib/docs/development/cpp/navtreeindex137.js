@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"hal_2src_2main_2native_2include_2hal_2_encoder_8h.html":[6,0,6,25],
 "hal_2src_2main_2native_2include_2hal_2_encoder_8h_source.html":[6,0,6,25],
 "hal_2src_2main_2native_2include_2hal_2_errors_8h.html":[6,0,6,26],
 "hal_2src_2main_2native_2include_2hal_2_errors_8h_source.html":[6,0,6,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "jni__util_8h.html#a212545464c44663bc98b95bb87f3fe70":[6,0,13,18,20],
 "jni__util_8h.html#a4f1058b45861b4abda3c9a43fa80e0fc":[6,0,13,18,18],
 "jni__util_8h.html#a5f408e0ceb0dd41758e6b43649847bfc":[6,0,13,18,23],
-"jni__util_8h.html#a6cbe25ac3d8be6df498bc791b999f143":[6,0,13,18,19],
-"jni__util_8h.html#a720acf766b00bce1f7012b3299933275":[6,0,13,18,21]
+"jni__util_8h.html#a6cbe25ac3d8be6df498bc791b999f143":[6,0,13,18,19]
 };

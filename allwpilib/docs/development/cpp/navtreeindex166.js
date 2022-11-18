@@ -1,5 +1,6 @@
 var NAVTREEINDEX166 =
 {
+"struct_eigen_1_1internal_1_1dense__assignment__loop.html":[4,0,8,4,259],
 "struct_eigen_1_1internal_1_1dense__assignment__loop_3_01_kernel_00_01_all_at_once_traversal_00_01_unrolling_01_4.html":[5,0,4,2,258],
 "struct_eigen_1_1internal_1_1dense__assignment__loop_3_01_kernel_00_01_all_at_once_traversal_00_01_unrolling_01_4.html":[4,0,8,4,260],
 "struct_eigen_1_1internal_1_1dense__assignment__loop_3_01_kernel_00_01_all_at_once_traversal_00_01_unrolling_01_4.html#a9b22bc3e72fc615c2b73ba65d8cf420b":[4,0,8,4,260,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX166 =
 "struct_eigen_1_1internal_1_1eval_3_01_t_00_01_diagonal_shape_01_4.html#a41a0f100ce6d787321b16082a103423b":[5,0,4,2,313,0],
 "struct_eigen_1_1internal_1_1eval_3_01_t_00_01_sparse_01_4.html":[5,0,4,2,314],
 "struct_eigen_1_1internal_1_1eval_3_01_t_00_01_sparse_01_4.html":[4,0,8,4,316],
-"struct_eigen_1_1internal_1_1evaluator.html":[4,0,8,4,318],
-"struct_eigen_1_1internal_1_1evaluator.html":[5,0,4,2,316]
+"struct_eigen_1_1internal_1_1evaluator.html":[4,0,8,4,318]
 };

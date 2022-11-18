@@ -1,5 +1,6 @@
 var NAVTREEINDEX201 =
 {
+"structunits_1_1traits_1_1is__nonlinear__scale.html":[3,32,4],
 "structunits_1_1traits_1_1is__ratio.html":[4,0,23,39,7],
 "structunits_1_1traits_1_1is__ratio.html":[5,0,13,0,7],
 "structunits_1_1traits_1_1is__same__scale.html":[3,32,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX201 =
 "structuv__work__s.html#aaa3833f7dde2ec43f7d240635546eeb4":[5,0,303,1],
 "structuv__write__s.html":[5,0,304],
 "structuv__write__s.html#a3d98b8c2a08115d17d01ab7c6a7393fb":[5,0,304,2],
-"structuv__write__s.html#ac5347f35c62ede1d6e2d81f1e4ba3992":[5,0,304,1],
-"structuv__write__s.html#afc9df4b96d228f86ab086e31c1cde85e":[5,0,304,0]
+"structuv__write__s.html#ac5347f35c62ede1d6e2d81f1e4ba3992":[5,0,304,1]
 };

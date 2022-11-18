@@ -1,5 +1,6 @@
 var NAVTREEINDEX160 =
 {
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#ab03c962995ac3213c9ebb3eced4aba88":[5,0,4,2,77,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html":[5,0,4,2,85],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html":[4,0,8,4,87],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html#a2f4176d30e11f2c578e3e81b399518cb":[4,0,8,4,87,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX160 =
 "struct_eigen_1_1internal_1_1_l_l_t___traits.html":[4,0,8,4,738],
 "struct_eigen_1_1internal_1_1_l_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html":[5,0,4,2,737],
 "struct_eigen_1_1internal_1_1_l_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html":[4,0,8,4,739],
-"struct_eigen_1_1internal_1_1_l_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a218dbb937419b97f2c55bc3ea9b0945a":[4,0,8,4,739,4],
-"struct_eigen_1_1internal_1_1_l_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a218dbb937419b97f2c55bc3ea9b0945a":[5,0,4,2,737,4]
+"struct_eigen_1_1internal_1_1_l_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a218dbb937419b97f2c55bc3ea9b0945a":[4,0,8,4,739,4]
 };
