@@ -44,7 +44,7 @@
 <span class="sourceLineNo">032</span><a id="line.32"> * &lt;p&gt;{@link MecanumDrivePoseEstimator#update} should be called every robot loop. If your loops are</a>
 <span class="sourceLineNo">033</span><a id="line.33"> * faster or slower than the default of 20 ms, then you should change the nominal delta time using</a>
 <span class="sourceLineNo">034</span><a id="line.34"> * the secondary constructor: {@link MecanumDrivePoseEstimator#MecanumDrivePoseEstimator(Rotation2d,</a>
-<span class="sourceLineNo">035</span><a id="line.35"> * Pose2d, MecanumDriveWheelPositions, MecanumDriveKinematics, Matrix, Matrix, Matrix, double)}.</a>
+<span class="sourceLineNo">035</span><a id="line.35"> * MecanumDriveWheelPositions, Pose2d, MecanumDriveKinematics, Matrix, Matrix, Matrix, double)}.</a>
 <span class="sourceLineNo">036</span><a id="line.36"> *</a>
 <span class="sourceLineNo">037</span><a id="line.37"> * &lt;p&gt;{@link MecanumDrivePoseEstimator#addVisionMeasurement} can be called as infrequently as you</a>
 <span class="sourceLineNo">038</span><a id="line.38"> * want; if you never call it, then this class will behave mostly like regular encoder odometry.</a>
@@ -82,8 +82,8 @@
 <span class="sourceLineNo">070</span><a id="line.70">   * Constructs a MecanumDrivePoseEstimator.</a>
 <span class="sourceLineNo">071</span><a id="line.71">   *</a>
 <span class="sourceLineNo">072</span><a id="line.72">   * @param gyroAngle The current gyro angle.</a>
-<span class="sourceLineNo">073</span><a id="line.73">   * @param initialPoseMeters The starting pose estimate.</a>
-<span class="sourceLineNo">074</span><a id="line.74">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * @param initialPoseMeters The starting pose estimate.</a>
 <span class="sourceLineNo">075</span><a id="line.75">   * @param kinematics A correctly-configured kinematics object for your drivetrain.</a>
 <span class="sourceLineNo">076</span><a id="line.76">   * @param stateStdDevs Standard deviations of model states. Increase these numbers to trust your</a>
 <span class="sourceLineNo">077</span><a id="line.77">   *     model's state estimates less. This matrix is in the form [x, y, theta, s_fl, s_fr, s_rl,</a>
@@ -97,16 +97,16 @@
 <span class="sourceLineNo">085</span><a id="line.85">   */</a>
 <span class="sourceLineNo">086</span><a id="line.86">  public MecanumDrivePoseEstimator(</a>
 <span class="sourceLineNo">087</span><a id="line.87">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">088</span><a id="line.88">      Pose2d initialPoseMeters,</a>
-<span class="sourceLineNo">089</span><a id="line.89">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">088</span><a id="line.88">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">089</span><a id="line.89">      Pose2d initialPoseMeters,</a>
 <span class="sourceLineNo">090</span><a id="line.90">      MecanumDriveKinematics kinematics,</a>
 <span class="sourceLineNo">091</span><a id="line.91">      Matrix&lt;N7, N1&gt; stateStdDevs,</a>
 <span class="sourceLineNo">092</span><a id="line.92">      Matrix&lt;N5, N1&gt; localMeasurementStdDevs,</a>
 <span class="sourceLineNo">093</span><a id="line.93">      Matrix&lt;N3, N1&gt; visionMeasurementStdDevs) {</a>
 <span class="sourceLineNo">094</span><a id="line.94">    this(</a>
 <span class="sourceLineNo">095</span><a id="line.95">        gyroAngle,</a>
-<span class="sourceLineNo">096</span><a id="line.96">        initialPoseMeters,</a>
-<span class="sourceLineNo">097</span><a id="line.97">        wheelPositions,</a>
+<span class="sourceLineNo">096</span><a id="line.96">        wheelPositions,</a>
+<span class="sourceLineNo">097</span><a id="line.97">        initialPoseMeters,</a>
 <span class="sourceLineNo">098</span><a id="line.98">        kinematics,</a>
 <span class="sourceLineNo">099</span><a id="line.99">        stateStdDevs,</a>
 <span class="sourceLineNo">100</span><a id="line.100">        localMeasurementStdDevs,</a>
@@ -118,8 +118,8 @@
 <span class="sourceLineNo">106</span><a id="line.106">   * Constructs a MecanumDrivePoseEstimator.</a>
 <span class="sourceLineNo">107</span><a id="line.107">   *</a>
 <span class="sourceLineNo">108</span><a id="line.108">   * @param gyroAngle The current gyro angle.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   * @param initialPoseMeters The starting pose estimate.</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">109</span><a id="line.109">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * @param initialPoseMeters The starting pose estimate.</a>
 <span class="sourceLineNo">111</span><a id="line.111">   * @param kinematics A correctly-configured kinematics object for your drivetrain.</a>
 <span class="sourceLineNo">112</span><a id="line.112">   * @param stateStdDevs Standard deviations of model states. Increase these numbers to trust your</a>
 <span class="sourceLineNo">113</span><a id="line.113">   *     model's state estimates less. This matrix is in the form [x, y, theta, s_fl, s_fr, s_rl,</a>
@@ -134,8 +134,8 @@
 <span class="sourceLineNo">122</span><a id="line.122">   */</a>
 <span class="sourceLineNo">123</span><a id="line.123">  public MecanumDrivePoseEstimator(</a>
 <span class="sourceLineNo">124</span><a id="line.124">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">125</span><a id="line.125">      Pose2d initialPoseMeters,</a>
-<span class="sourceLineNo">126</span><a id="line.126">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">125</span><a id="line.125">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">126</span><a id="line.126">      Pose2d initialPoseMeters,</a>
 <span class="sourceLineNo">127</span><a id="line.127">      MecanumDriveKinematics kinematics,</a>
 <span class="sourceLineNo">128</span><a id="line.128">      Matrix&lt;N7, N1&gt; stateStdDevs,</a>
 <span class="sourceLineNo">129</span><a id="line.129">      Matrix&lt;N5, N1&gt; localMeasurementStdDevs,</a>
@@ -212,12 +212,12 @@
 <span class="sourceLineNo">200</span><a id="line.200">   * &lt;p&gt;The gyroscope angle does not need to be reset in the user's robot code. The library</a>
 <span class="sourceLineNo">201</span><a id="line.201">   * automatically takes care of offsetting the gyro angle.</a>
 <span class="sourceLineNo">202</span><a id="line.202">   *</a>
-<span class="sourceLineNo">203</span><a id="line.203">   * @param poseMeters The position on the field that your robot is at.</a>
-<span class="sourceLineNo">204</span><a id="line.204">   * @param gyroAngle The angle reported by the gyroscope.</a>
-<span class="sourceLineNo">205</span><a id="line.205">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">203</span><a id="line.203">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">204</span><a id="line.204">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">205</span><a id="line.205">   * @param poseMeters The position on the field that your robot is at.</a>
 <span class="sourceLineNo">206</span><a id="line.206">   */</a>
 <span class="sourceLineNo">207</span><a id="line.207">  public void resetPosition(</a>
-<span class="sourceLineNo">208</span><a id="line.208">      Pose2d poseMeters, Rotation2d gyroAngle, MecanumDriveWheelPositions wheelPositions) {</a>
+<span class="sourceLineNo">208</span><a id="line.208">      Rotation2d gyroAngle, MecanumDriveWheelPositions wheelPositions, Pose2d poseMeters) {</a>
 <span class="sourceLineNo">209</span><a id="line.209">    // Reset state estimate and error covariance</a>
 <span class="sourceLineNo">210</span><a id="line.210">    m_observer.reset();</a>
 <span class="sourceLineNo">211</span><a id="line.211">    m_poseBuffer.clear();</a>

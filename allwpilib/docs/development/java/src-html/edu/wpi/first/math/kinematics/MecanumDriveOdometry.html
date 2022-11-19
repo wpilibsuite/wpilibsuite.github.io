@@ -82,12 +82,12 @@
 <span class="sourceLineNo">070</span><a id="line.70">   * &lt;p&gt;The gyroscope angle does not need to be reset here on the user's robot code. The library</a>
 <span class="sourceLineNo">071</span><a id="line.71">   * automatically takes care of offsetting the gyro angle.</a>
 <span class="sourceLineNo">072</span><a id="line.72">   *</a>
-<span class="sourceLineNo">073</span><a id="line.73">   * @param poseMeters The position on the field that your robot is at.</a>
-<span class="sourceLineNo">074</span><a id="line.74">   * @param gyroAngle The angle reported by the gyroscope.</a>
-<span class="sourceLineNo">075</span><a id="line.75">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">075</span><a id="line.75">   * @param poseMeters The position on the field that your robot is at.</a>
 <span class="sourceLineNo">076</span><a id="line.76">   */</a>
 <span class="sourceLineNo">077</span><a id="line.77">  public void resetPosition(</a>
-<span class="sourceLineNo">078</span><a id="line.78">      Pose2d poseMeters, Rotation2d gyroAngle, MecanumDriveWheelPositions wheelPositions) {</a>
+<span class="sourceLineNo">078</span><a id="line.78">      Rotation2d gyroAngle, MecanumDriveWheelPositions wheelPositions, Pose2d poseMeters) {</a>
 <span class="sourceLineNo">079</span><a id="line.79">    m_poseMeters = poseMeters;</a>
 <span class="sourceLineNo">080</span><a id="line.80">    m_previousAngle = poseMeters.getRotation();</a>
 <span class="sourceLineNo">081</span><a id="line.81">    m_gyroOffset = m_poseMeters.getRotation().minus(gyroAngle);</a>

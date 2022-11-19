@@ -46,7 +46,7 @@
 <span class="sourceLineNo">034</span><a id="line.34"> * &lt;p&gt;{@link SwerveDrivePoseEstimator#update} should be called every robot loop. If your loops are</a>
 <span class="sourceLineNo">035</span><a id="line.35"> * faster or slower than the default of 20 ms, then you should change the nominal delta time using</a>
 <span class="sourceLineNo">036</span><a id="line.36"> * the secondary constructor: {@link SwerveDrivePoseEstimator#SwerveDrivePoseEstimator(Nat, Nat,</a>
-<span class="sourceLineNo">037</span><a id="line.37"> * Nat, Rotation2d, Pose2d, SwerveModulePosition[], SwerveDriveKinematics, Matrix, Matrix, Matrix,</a>
+<span class="sourceLineNo">037</span><a id="line.37"> * Nat, Rotation2d, SwerveModulePosition[], Pose2d, SwerveDriveKinematics, Matrix, Matrix, Matrix,</a>
 <span class="sourceLineNo">038</span><a id="line.38"> * double)}.</a>
 <span class="sourceLineNo">039</span><a id="line.39"> *</a>
 <span class="sourceLineNo">040</span><a id="line.40"> * &lt;p&gt;{@link SwerveDrivePoseEstimator#addVisionMeasurement} can be called as infrequently as you</a>
@@ -108,8 +108,8 @@
 <span class="sourceLineNo">096</span><a id="line.96">      Nat&lt;Inputs&gt; inputs,</a>
 <span class="sourceLineNo">097</span><a id="line.97">      Nat&lt;Outputs&gt; outputs,</a>
 <span class="sourceLineNo">098</span><a id="line.98">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">099</span><a id="line.99">      Pose2d initialPoseMeters,</a>
-<span class="sourceLineNo">100</span><a id="line.100">      SwerveModulePosition[] modulePositions,</a>
+<span class="sourceLineNo">099</span><a id="line.99">      SwerveModulePosition[] modulePositions,</a>
+<span class="sourceLineNo">100</span><a id="line.100">      Pose2d initialPoseMeters,</a>
 <span class="sourceLineNo">101</span><a id="line.101">      SwerveDriveKinematics kinematics,</a>
 <span class="sourceLineNo">102</span><a id="line.102">      Matrix&lt;States, N1&gt; stateStdDevs,</a>
 <span class="sourceLineNo">103</span><a id="line.103">      Matrix&lt;Outputs, N1&gt; localMeasurementStdDevs,</a>
@@ -119,8 +119,8 @@
 <span class="sourceLineNo">107</span><a id="line.107">        inputs,</a>
 <span class="sourceLineNo">108</span><a id="line.108">        outputs,</a>
 <span class="sourceLineNo">109</span><a id="line.109">        gyroAngle,</a>
-<span class="sourceLineNo">110</span><a id="line.110">        initialPoseMeters,</a>
-<span class="sourceLineNo">111</span><a id="line.111">        modulePositions,</a>
+<span class="sourceLineNo">110</span><a id="line.110">        modulePositions,</a>
+<span class="sourceLineNo">111</span><a id="line.111">        initialPoseMeters,</a>
 <span class="sourceLineNo">112</span><a id="line.112">        kinematics,</a>
 <span class="sourceLineNo">113</span><a id="line.113">        stateStdDevs,</a>
 <span class="sourceLineNo">114</span><a id="line.114">        localMeasurementStdDevs,</a>
@@ -135,8 +135,8 @@
 <span class="sourceLineNo">123</span><a id="line.123">   * @param inputs The size of the input vector.</a>
 <span class="sourceLineNo">124</span><a id="line.124">   * @param outputs The size of the outputs vector.</a>
 <span class="sourceLineNo">125</span><a id="line.125">   * @param gyroAngle The current gyro angle.</a>
-<span class="sourceLineNo">126</span><a id="line.126">   * @param initialPoseMeters The starting pose estimate.</a>
-<span class="sourceLineNo">127</span><a id="line.127">   * @param modulePositions The current distance measurements and rotations of the swerve modules.</a>
+<span class="sourceLineNo">126</span><a id="line.126">   * @param modulePositions The current distance measurements and rotations of the swerve modules.</a>
+<span class="sourceLineNo">127</span><a id="line.127">   * @param initialPoseMeters The starting pose estimate.</a>
 <span class="sourceLineNo">128</span><a id="line.128">   * @param kinematics A correctly-configured kinematics object for your drivetrain.</a>
 <span class="sourceLineNo">129</span><a id="line.129">   * @param stateStdDevs Standard deviations of model states. Increase these numbers to trust your</a>
 <span class="sourceLineNo">130</span><a id="line.130">   *     model's state estimates less. This matrix is in the form [x, y, theta, s_0, ... s_n]ᵀ, with</a>
@@ -154,8 +154,8 @@
 <span class="sourceLineNo">142</span><a id="line.142">      Nat&lt;Inputs&gt; inputs,</a>
 <span class="sourceLineNo">143</span><a id="line.143">      Nat&lt;Outputs&gt; outputs,</a>
 <span class="sourceLineNo">144</span><a id="line.144">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">145</span><a id="line.145">      Pose2d initialPoseMeters,</a>
-<span class="sourceLineNo">146</span><a id="line.146">      SwerveModulePosition[] modulePositions,</a>
+<span class="sourceLineNo">145</span><a id="line.145">      SwerveModulePosition[] modulePositions,</a>
+<span class="sourceLineNo">146</span><a id="line.146">      Pose2d initialPoseMeters,</a>
 <span class="sourceLineNo">147</span><a id="line.147">      SwerveDriveKinematics kinematics,</a>
 <span class="sourceLineNo">148</span><a id="line.148">      Matrix&lt;States, N1&gt; stateStdDevs,</a>
 <span class="sourceLineNo">149</span><a id="line.149">      Matrix&lt;Outputs, N1&gt; localMeasurementStdDevs,</a>
@@ -259,12 +259,12 @@
 <span class="sourceLineNo">247</span><a id="line.247">   * &lt;p&gt;The gyroscope angle does not need to be reset in the user's robot code. The library</a>
 <span class="sourceLineNo">248</span><a id="line.248">   * automatically takes care of offsetting the gyro angle.</a>
 <span class="sourceLineNo">249</span><a id="line.249">   *</a>
-<span class="sourceLineNo">250</span><a id="line.250">   * @param poseMeters The position on the field that your robot is at.</a>
-<span class="sourceLineNo">251</span><a id="line.251">   * @param gyroAngle The angle reported by the gyroscope.</a>
-<span class="sourceLineNo">252</span><a id="line.252">   * @param modulePositions The current distance measurements and rotations of the swerve modules.</a>
+<span class="sourceLineNo">250</span><a id="line.250">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">251</span><a id="line.251">   * @param modulePositions The current distance measurements and rotations of the swerve modules.</a>
+<span class="sourceLineNo">252</span><a id="line.252">   * @param poseMeters The position on the field that your robot is at.</a>
 <span class="sourceLineNo">253</span><a id="line.253">   */</a>
 <span class="sourceLineNo">254</span><a id="line.254">  public void resetPosition(</a>
-<span class="sourceLineNo">255</span><a id="line.255">      Pose2d poseMeters, Rotation2d gyroAngle, SwerveModulePosition[] modulePositions) {</a>
+<span class="sourceLineNo">255</span><a id="line.255">      Rotation2d gyroAngle, SwerveModulePosition[] modulePositions, Pose2d poseMeters) {</a>
 <span class="sourceLineNo">256</span><a id="line.256">    // Reset state estimate and error covariance</a>
 <span class="sourceLineNo">257</span><a id="line.257">    m_observer.reset();</a>
 <span class="sourceLineNo">258</span><a id="line.258">    m_poseBuffer.clear();</a>
