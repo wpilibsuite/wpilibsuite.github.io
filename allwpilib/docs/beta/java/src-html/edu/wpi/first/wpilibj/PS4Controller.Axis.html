@@ -507,197 +507,208 @@
 <span class="sourceLineNo">495</span><a id="line.495">  }</a>
 <span class="sourceLineNo">496</span><a id="line.496"></a>
 <span class="sourceLineNo">497</span><a id="line.497">  /**</a>
-<span class="sourceLineNo">498</span><a id="line.498">   * Read the value of the Circle button on the controller.</a>
+<span class="sourceLineNo">498</span><a id="line.498">   * Constructs an event instance around the triangle button's digital signal.</a>
 <span class="sourceLineNo">499</span><a id="line.499">   *</a>
-<span class="sourceLineNo">500</span><a id="line.500">   * @return The state of the button.</a>
-<span class="sourceLineNo">501</span><a id="line.501">   */</a>
-<span class="sourceLineNo">502</span><a id="line.502">  public boolean getCircleButton() {</a>
-<span class="sourceLineNo">503</span><a id="line.503">    return getRawButton(Button.kCircle.value);</a>
-<span class="sourceLineNo">504</span><a id="line.504">  }</a>
-<span class="sourceLineNo">505</span><a id="line.505"></a>
-<span class="sourceLineNo">506</span><a id="line.506">  /**</a>
-<span class="sourceLineNo">507</span><a id="line.507">   * Whether the Circle button was pressed since the last check.</a>
-<span class="sourceLineNo">508</span><a id="line.508">   *</a>
-<span class="sourceLineNo">509</span><a id="line.509">   * @return Whether the button was pressed since the last check.</a>
-<span class="sourceLineNo">510</span><a id="line.510">   */</a>
-<span class="sourceLineNo">511</span><a id="line.511">  public boolean getCircleButtonPressed() {</a>
-<span class="sourceLineNo">512</span><a id="line.512">    return getRawButtonPressed(Button.kCircle.value);</a>
-<span class="sourceLineNo">513</span><a id="line.513">  }</a>
-<span class="sourceLineNo">514</span><a id="line.514"></a>
-<span class="sourceLineNo">515</span><a id="line.515">  /**</a>
-<span class="sourceLineNo">516</span><a id="line.516">   * Whether the Circle button was released since the last check.</a>
-<span class="sourceLineNo">517</span><a id="line.517">   *</a>
-<span class="sourceLineNo">518</span><a id="line.518">   * @return Whether the button was released since the last check.</a>
-<span class="sourceLineNo">519</span><a id="line.519">   */</a>
-<span class="sourceLineNo">520</span><a id="line.520">  public boolean getCircleButtonReleased() {</a>
-<span class="sourceLineNo">521</span><a id="line.521">    return getRawButtonReleased(Button.kCircle.value);</a>
-<span class="sourceLineNo">522</span><a id="line.522">  }</a>
-<span class="sourceLineNo">523</span><a id="line.523"></a>
-<span class="sourceLineNo">524</span><a id="line.524">  /**</a>
-<span class="sourceLineNo">525</span><a id="line.525">   * Constructs an event instance around the circle button's digital signal.</a>
-<span class="sourceLineNo">526</span><a id="line.526">   *</a>
-<span class="sourceLineNo">527</span><a id="line.527">   * @param loop the event loop instance to attach the event to.</a>
-<span class="sourceLineNo">528</span><a id="line.528">   * @return an event instance representing the circle button's digital signal attached to the given</a>
-<span class="sourceLineNo">529</span><a id="line.529">   *     loop.</a>
+<span class="sourceLineNo">500</span><a id="line.500">   * @param loop the event loop instance to attach the event to.</a>
+<span class="sourceLineNo">501</span><a id="line.501">   * @return an event instance representing the triangle button's digital signal attached to the</a>
+<span class="sourceLineNo">502</span><a id="line.502">   *     given loop.</a>
+<span class="sourceLineNo">503</span><a id="line.503">   */</a>
+<span class="sourceLineNo">504</span><a id="line.504">  public BooleanEvent triangle(EventLoop loop) {</a>
+<span class="sourceLineNo">505</span><a id="line.505">    return new BooleanEvent(loop, this::getTriangleButton);</a>
+<span class="sourceLineNo">506</span><a id="line.506">  }</a>
+<span class="sourceLineNo">507</span><a id="line.507"></a>
+<span class="sourceLineNo">508</span><a id="line.508">  /**</a>
+<span class="sourceLineNo">509</span><a id="line.509">   * Read the value of the Circle button on the controller.</a>
+<span class="sourceLineNo">510</span><a id="line.510">   *</a>
+<span class="sourceLineNo">511</span><a id="line.511">   * @return The state of the button.</a>
+<span class="sourceLineNo">512</span><a id="line.512">   */</a>
+<span class="sourceLineNo">513</span><a id="line.513">  public boolean getCircleButton() {</a>
+<span class="sourceLineNo">514</span><a id="line.514">    return getRawButton(Button.kCircle.value);</a>
+<span class="sourceLineNo">515</span><a id="line.515">  }</a>
+<span class="sourceLineNo">516</span><a id="line.516"></a>
+<span class="sourceLineNo">517</span><a id="line.517">  /**</a>
+<span class="sourceLineNo">518</span><a id="line.518">   * Whether the Circle button was pressed since the last check.</a>
+<span class="sourceLineNo">519</span><a id="line.519">   *</a>
+<span class="sourceLineNo">520</span><a id="line.520">   * @return Whether the button was pressed since the last check.</a>
+<span class="sourceLineNo">521</span><a id="line.521">   */</a>
+<span class="sourceLineNo">522</span><a id="line.522">  public boolean getCircleButtonPressed() {</a>
+<span class="sourceLineNo">523</span><a id="line.523">    return getRawButtonPressed(Button.kCircle.value);</a>
+<span class="sourceLineNo">524</span><a id="line.524">  }</a>
+<span class="sourceLineNo">525</span><a id="line.525"></a>
+<span class="sourceLineNo">526</span><a id="line.526">  /**</a>
+<span class="sourceLineNo">527</span><a id="line.527">   * Whether the Circle button was released since the last check.</a>
+<span class="sourceLineNo">528</span><a id="line.528">   *</a>
+<span class="sourceLineNo">529</span><a id="line.529">   * @return Whether the button was released since the last check.</a>
 <span class="sourceLineNo">530</span><a id="line.530">   */</a>
-<span class="sourceLineNo">531</span><a id="line.531">  public BooleanEvent circle(EventLoop loop) {</a>
-<span class="sourceLineNo">532</span><a id="line.532">    return new BooleanEvent(loop, this::getCircleButton);</a>
+<span class="sourceLineNo">531</span><a id="line.531">  public boolean getCircleButtonReleased() {</a>
+<span class="sourceLineNo">532</span><a id="line.532">    return getRawButtonReleased(Button.kCircle.value);</a>
 <span class="sourceLineNo">533</span><a id="line.533">  }</a>
 <span class="sourceLineNo">534</span><a id="line.534"></a>
 <span class="sourceLineNo">535</span><a id="line.535">  /**</a>
-<span class="sourceLineNo">536</span><a id="line.536">   * Read the value of the share button on the controller.</a>
+<span class="sourceLineNo">536</span><a id="line.536">   * Constructs an event instance around the circle button's digital signal.</a>
 <span class="sourceLineNo">537</span><a id="line.537">   *</a>
-<span class="sourceLineNo">538</span><a id="line.538">   * @return The state of the button.</a>
-<span class="sourceLineNo">539</span><a id="line.539">   */</a>
-<span class="sourceLineNo">540</span><a id="line.540">  public boolean getShareButton() {</a>
-<span class="sourceLineNo">541</span><a id="line.541">    return getRawButton(Button.kShare.value);</a>
-<span class="sourceLineNo">542</span><a id="line.542">  }</a>
-<span class="sourceLineNo">543</span><a id="line.543"></a>
-<span class="sourceLineNo">544</span><a id="line.544">  /**</a>
-<span class="sourceLineNo">545</span><a id="line.545">   * Whether the share button was pressed since the last check.</a>
-<span class="sourceLineNo">546</span><a id="line.546">   *</a>
-<span class="sourceLineNo">547</span><a id="line.547">   * @return Whether the button was pressed since the last check.</a>
-<span class="sourceLineNo">548</span><a id="line.548">   */</a>
-<span class="sourceLineNo">549</span><a id="line.549">  public boolean getShareButtonPressed() {</a>
-<span class="sourceLineNo">550</span><a id="line.550">    return getRawButtonPressed(Button.kShare.value);</a>
-<span class="sourceLineNo">551</span><a id="line.551">  }</a>
-<span class="sourceLineNo">552</span><a id="line.552"></a>
-<span class="sourceLineNo">553</span><a id="line.553">  /**</a>
-<span class="sourceLineNo">554</span><a id="line.554">   * Whether the share button was released since the last check.</a>
-<span class="sourceLineNo">555</span><a id="line.555">   *</a>
-<span class="sourceLineNo">556</span><a id="line.556">   * @return Whether the button was released since the last check.</a>
-<span class="sourceLineNo">557</span><a id="line.557">   */</a>
-<span class="sourceLineNo">558</span><a id="line.558">  public boolean getShareButtonReleased() {</a>
-<span class="sourceLineNo">559</span><a id="line.559">    return getRawButtonReleased(Button.kShare.value);</a>
-<span class="sourceLineNo">560</span><a id="line.560">  }</a>
-<span class="sourceLineNo">561</span><a id="line.561"></a>
-<span class="sourceLineNo">562</span><a id="line.562">  /**</a>
-<span class="sourceLineNo">563</span><a id="line.563">   * Constructs an event instance around the share button's digital signal.</a>
-<span class="sourceLineNo">564</span><a id="line.564">   *</a>
-<span class="sourceLineNo">565</span><a id="line.565">   * @param loop the event loop instance to attach the event to.</a>
-<span class="sourceLineNo">566</span><a id="line.566">   * @return an event instance representing the share button's digital signal attached to the given</a>
-<span class="sourceLineNo">567</span><a id="line.567">   *     loop.</a>
+<span class="sourceLineNo">538</span><a id="line.538">   * @param loop the event loop instance to attach the event to.</a>
+<span class="sourceLineNo">539</span><a id="line.539">   * @return an event instance representing the circle button's digital signal attached to the given</a>
+<span class="sourceLineNo">540</span><a id="line.540">   *     loop.</a>
+<span class="sourceLineNo">541</span><a id="line.541">   */</a>
+<span class="sourceLineNo">542</span><a id="line.542">  public BooleanEvent circle(EventLoop loop) {</a>
+<span class="sourceLineNo">543</span><a id="line.543">    return new BooleanEvent(loop, this::getCircleButton);</a>
+<span class="sourceLineNo">544</span><a id="line.544">  }</a>
+<span class="sourceLineNo">545</span><a id="line.545"></a>
+<span class="sourceLineNo">546</span><a id="line.546">  /**</a>
+<span class="sourceLineNo">547</span><a id="line.547">   * Read the value of the share button on the controller.</a>
+<span class="sourceLineNo">548</span><a id="line.548">   *</a>
+<span class="sourceLineNo">549</span><a id="line.549">   * @return The state of the button.</a>
+<span class="sourceLineNo">550</span><a id="line.550">   */</a>
+<span class="sourceLineNo">551</span><a id="line.551">  public boolean getShareButton() {</a>
+<span class="sourceLineNo">552</span><a id="line.552">    return getRawButton(Button.kShare.value);</a>
+<span class="sourceLineNo">553</span><a id="line.553">  }</a>
+<span class="sourceLineNo">554</span><a id="line.554"></a>
+<span class="sourceLineNo">555</span><a id="line.555">  /**</a>
+<span class="sourceLineNo">556</span><a id="line.556">   * Whether the share button was pressed since the last check.</a>
+<span class="sourceLineNo">557</span><a id="line.557">   *</a>
+<span class="sourceLineNo">558</span><a id="line.558">   * @return Whether the button was pressed since the last check.</a>
+<span class="sourceLineNo">559</span><a id="line.559">   */</a>
+<span class="sourceLineNo">560</span><a id="line.560">  public boolean getShareButtonPressed() {</a>
+<span class="sourceLineNo">561</span><a id="line.561">    return getRawButtonPressed(Button.kShare.value);</a>
+<span class="sourceLineNo">562</span><a id="line.562">  }</a>
+<span class="sourceLineNo">563</span><a id="line.563"></a>
+<span class="sourceLineNo">564</span><a id="line.564">  /**</a>
+<span class="sourceLineNo">565</span><a id="line.565">   * Whether the share button was released since the last check.</a>
+<span class="sourceLineNo">566</span><a id="line.566">   *</a>
+<span class="sourceLineNo">567</span><a id="line.567">   * @return Whether the button was released since the last check.</a>
 <span class="sourceLineNo">568</span><a id="line.568">   */</a>
-<span class="sourceLineNo">569</span><a id="line.569">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">570</span><a id="line.570">  public BooleanEvent share(EventLoop loop) {</a>
-<span class="sourceLineNo">571</span><a id="line.571">    return new BooleanEvent(loop, this::getShareButton);</a>
-<span class="sourceLineNo">572</span><a id="line.572">  }</a>
-<span class="sourceLineNo">573</span><a id="line.573"></a>
-<span class="sourceLineNo">574</span><a id="line.574">  /**</a>
-<span class="sourceLineNo">575</span><a id="line.575">   * Read the value of the PS button on the controller.</a>
-<span class="sourceLineNo">576</span><a id="line.576">   *</a>
-<span class="sourceLineNo">577</span><a id="line.577">   * @return The state of the button.</a>
-<span class="sourceLineNo">578</span><a id="line.578">   */</a>
-<span class="sourceLineNo">579</span><a id="line.579">  public boolean getPSButton() {</a>
-<span class="sourceLineNo">580</span><a id="line.580">    return getRawButton(Button.kPS.value);</a>
-<span class="sourceLineNo">581</span><a id="line.581">  }</a>
-<span class="sourceLineNo">582</span><a id="line.582"></a>
-<span class="sourceLineNo">583</span><a id="line.583">  /**</a>
-<span class="sourceLineNo">584</span><a id="line.584">   * Whether the PS button was pressed since the last check.</a>
-<span class="sourceLineNo">585</span><a id="line.585">   *</a>
-<span class="sourceLineNo">586</span><a id="line.586">   * @return Whether the button was pressed since the last check.</a>
-<span class="sourceLineNo">587</span><a id="line.587">   */</a>
-<span class="sourceLineNo">588</span><a id="line.588">  public boolean getPSButtonPressed() {</a>
-<span class="sourceLineNo">589</span><a id="line.589">    return getRawButtonPressed(Button.kPS.value);</a>
-<span class="sourceLineNo">590</span><a id="line.590">  }</a>
-<span class="sourceLineNo">591</span><a id="line.591"></a>
-<span class="sourceLineNo">592</span><a id="line.592">  /**</a>
-<span class="sourceLineNo">593</span><a id="line.593">   * Whether the PS button was released since the last check.</a>
-<span class="sourceLineNo">594</span><a id="line.594">   *</a>
-<span class="sourceLineNo">595</span><a id="line.595">   * @return Whether the button was released since the last check.</a>
-<span class="sourceLineNo">596</span><a id="line.596">   */</a>
-<span class="sourceLineNo">597</span><a id="line.597">  public boolean getPSButtonReleased() {</a>
-<span class="sourceLineNo">598</span><a id="line.598">    return getRawButtonReleased(Button.kPS.value);</a>
-<span class="sourceLineNo">599</span><a id="line.599">  }</a>
-<span class="sourceLineNo">600</span><a id="line.600"></a>
-<span class="sourceLineNo">601</span><a id="line.601">  /**</a>
-<span class="sourceLineNo">602</span><a id="line.602">   * Constructs an event instance around the PS button's digital signal.</a>
-<span class="sourceLineNo">603</span><a id="line.603">   *</a>
-<span class="sourceLineNo">604</span><a id="line.604">   * @param loop the event loop instance to attach the event to.</a>
-<span class="sourceLineNo">605</span><a id="line.605">   * @return an event instance representing the PS button's digital signal attached to the given</a>
-<span class="sourceLineNo">606</span><a id="line.606">   *     loop.</a>
+<span class="sourceLineNo">569</span><a id="line.569">  public boolean getShareButtonReleased() {</a>
+<span class="sourceLineNo">570</span><a id="line.570">    return getRawButtonReleased(Button.kShare.value);</a>
+<span class="sourceLineNo">571</span><a id="line.571">  }</a>
+<span class="sourceLineNo">572</span><a id="line.572"></a>
+<span class="sourceLineNo">573</span><a id="line.573">  /**</a>
+<span class="sourceLineNo">574</span><a id="line.574">   * Constructs an event instance around the share button's digital signal.</a>
+<span class="sourceLineNo">575</span><a id="line.575">   *</a>
+<span class="sourceLineNo">576</span><a id="line.576">   * @param loop the event loop instance to attach the event to.</a>
+<span class="sourceLineNo">577</span><a id="line.577">   * @return an event instance representing the share button's digital signal attached to the given</a>
+<span class="sourceLineNo">578</span><a id="line.578">   *     loop.</a>
+<span class="sourceLineNo">579</span><a id="line.579">   */</a>
+<span class="sourceLineNo">580</span><a id="line.580">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">581</span><a id="line.581">  public BooleanEvent share(EventLoop loop) {</a>
+<span class="sourceLineNo">582</span><a id="line.582">    return new BooleanEvent(loop, this::getShareButton);</a>
+<span class="sourceLineNo">583</span><a id="line.583">  }</a>
+<span class="sourceLineNo">584</span><a id="line.584"></a>
+<span class="sourceLineNo">585</span><a id="line.585">  /**</a>
+<span class="sourceLineNo">586</span><a id="line.586">   * Read the value of the PS button on the controller.</a>
+<span class="sourceLineNo">587</span><a id="line.587">   *</a>
+<span class="sourceLineNo">588</span><a id="line.588">   * @return The state of the button.</a>
+<span class="sourceLineNo">589</span><a id="line.589">   */</a>
+<span class="sourceLineNo">590</span><a id="line.590">  public boolean getPSButton() {</a>
+<span class="sourceLineNo">591</span><a id="line.591">    return getRawButton(Button.kPS.value);</a>
+<span class="sourceLineNo">592</span><a id="line.592">  }</a>
+<span class="sourceLineNo">593</span><a id="line.593"></a>
+<span class="sourceLineNo">594</span><a id="line.594">  /**</a>
+<span class="sourceLineNo">595</span><a id="line.595">   * Whether the PS button was pressed since the last check.</a>
+<span class="sourceLineNo">596</span><a id="line.596">   *</a>
+<span class="sourceLineNo">597</span><a id="line.597">   * @return Whether the button was pressed since the last check.</a>
+<span class="sourceLineNo">598</span><a id="line.598">   */</a>
+<span class="sourceLineNo">599</span><a id="line.599">  public boolean getPSButtonPressed() {</a>
+<span class="sourceLineNo">600</span><a id="line.600">    return getRawButtonPressed(Button.kPS.value);</a>
+<span class="sourceLineNo">601</span><a id="line.601">  }</a>
+<span class="sourceLineNo">602</span><a id="line.602"></a>
+<span class="sourceLineNo">603</span><a id="line.603">  /**</a>
+<span class="sourceLineNo">604</span><a id="line.604">   * Whether the PS button was released since the last check.</a>
+<span class="sourceLineNo">605</span><a id="line.605">   *</a>
+<span class="sourceLineNo">606</span><a id="line.606">   * @return Whether the button was released since the last check.</a>
 <span class="sourceLineNo">607</span><a id="line.607">   */</a>
-<span class="sourceLineNo">608</span><a id="line.608">  @SuppressWarnings("MethodName")</a>
-<span class="sourceLineNo">609</span><a id="line.609">  public BooleanEvent PS(EventLoop loop) {</a>
-<span class="sourceLineNo">610</span><a id="line.610">    return new BooleanEvent(loop, this::getPSButton);</a>
-<span class="sourceLineNo">611</span><a id="line.611">  }</a>
-<span class="sourceLineNo">612</span><a id="line.612"></a>
-<span class="sourceLineNo">613</span><a id="line.613">  /**</a>
-<span class="sourceLineNo">614</span><a id="line.614">   * Read the value of the options button on the controller.</a>
-<span class="sourceLineNo">615</span><a id="line.615">   *</a>
-<span class="sourceLineNo">616</span><a id="line.616">   * @return The state of the button.</a>
-<span class="sourceLineNo">617</span><a id="line.617">   */</a>
-<span class="sourceLineNo">618</span><a id="line.618">  public boolean getOptionsButton() {</a>
-<span class="sourceLineNo">619</span><a id="line.619">    return getRawButton(Button.kOptions.value);</a>
-<span class="sourceLineNo">620</span><a id="line.620">  }</a>
-<span class="sourceLineNo">621</span><a id="line.621"></a>
-<span class="sourceLineNo">622</span><a id="line.622">  /**</a>
-<span class="sourceLineNo">623</span><a id="line.623">   * Whether the options button was pressed since the last check.</a>
-<span class="sourceLineNo">624</span><a id="line.624">   *</a>
-<span class="sourceLineNo">625</span><a id="line.625">   * @return Whether the button was pressed since the last check.</a>
-<span class="sourceLineNo">626</span><a id="line.626">   */</a>
-<span class="sourceLineNo">627</span><a id="line.627">  public boolean getOptionsButtonPressed() {</a>
-<span class="sourceLineNo">628</span><a id="line.628">    return getRawButtonPressed(Button.kOptions.value);</a>
-<span class="sourceLineNo">629</span><a id="line.629">  }</a>
-<span class="sourceLineNo">630</span><a id="line.630"></a>
-<span class="sourceLineNo">631</span><a id="line.631">  /**</a>
-<span class="sourceLineNo">632</span><a id="line.632">   * Whether the options button was released since the last check.</a>
-<span class="sourceLineNo">633</span><a id="line.633">   *</a>
-<span class="sourceLineNo">634</span><a id="line.634">   * @return Whether the button was released since the last check.</a>
-<span class="sourceLineNo">635</span><a id="line.635">   */</a>
-<span class="sourceLineNo">636</span><a id="line.636">  public boolean getOptionsButtonReleased() {</a>
-<span class="sourceLineNo">637</span><a id="line.637">    return getRawButtonReleased(Button.kOptions.value);</a>
-<span class="sourceLineNo">638</span><a id="line.638">  }</a>
-<span class="sourceLineNo">639</span><a id="line.639"></a>
-<span class="sourceLineNo">640</span><a id="line.640">  /**</a>
-<span class="sourceLineNo">641</span><a id="line.641">   * Constructs an event instance around the options button's digital signal.</a>
-<span class="sourceLineNo">642</span><a id="line.642">   *</a>
-<span class="sourceLineNo">643</span><a id="line.643">   * @param loop the event loop instance to attach the event to.</a>
-<span class="sourceLineNo">644</span><a id="line.644">   * @return an event instance representing the options button's digital signal attached to the</a>
-<span class="sourceLineNo">645</span><a id="line.645">   *     given loop.</a>
+<span class="sourceLineNo">608</span><a id="line.608">  public boolean getPSButtonReleased() {</a>
+<span class="sourceLineNo">609</span><a id="line.609">    return getRawButtonReleased(Button.kPS.value);</a>
+<span class="sourceLineNo">610</span><a id="line.610">  }</a>
+<span class="sourceLineNo">611</span><a id="line.611"></a>
+<span class="sourceLineNo">612</span><a id="line.612">  /**</a>
+<span class="sourceLineNo">613</span><a id="line.613">   * Constructs an event instance around the PS button's digital signal.</a>
+<span class="sourceLineNo">614</span><a id="line.614">   *</a>
+<span class="sourceLineNo">615</span><a id="line.615">   * @param loop the event loop instance to attach the event to.</a>
+<span class="sourceLineNo">616</span><a id="line.616">   * @return an event instance representing the PS button's digital signal attached to the given</a>
+<span class="sourceLineNo">617</span><a id="line.617">   *     loop.</a>
+<span class="sourceLineNo">618</span><a id="line.618">   */</a>
+<span class="sourceLineNo">619</span><a id="line.619">  @SuppressWarnings("MethodName")</a>
+<span class="sourceLineNo">620</span><a id="line.620">  public BooleanEvent PS(EventLoop loop) {</a>
+<span class="sourceLineNo">621</span><a id="line.621">    return new BooleanEvent(loop, this::getPSButton);</a>
+<span class="sourceLineNo">622</span><a id="line.622">  }</a>
+<span class="sourceLineNo">623</span><a id="line.623"></a>
+<span class="sourceLineNo">624</span><a id="line.624">  /**</a>
+<span class="sourceLineNo">625</span><a id="line.625">   * Read the value of the options button on the controller.</a>
+<span class="sourceLineNo">626</span><a id="line.626">   *</a>
+<span class="sourceLineNo">627</span><a id="line.627">   * @return The state of the button.</a>
+<span class="sourceLineNo">628</span><a id="line.628">   */</a>
+<span class="sourceLineNo">629</span><a id="line.629">  public boolean getOptionsButton() {</a>
+<span class="sourceLineNo">630</span><a id="line.630">    return getRawButton(Button.kOptions.value);</a>
+<span class="sourceLineNo">631</span><a id="line.631">  }</a>
+<span class="sourceLineNo">632</span><a id="line.632"></a>
+<span class="sourceLineNo">633</span><a id="line.633">  /**</a>
+<span class="sourceLineNo">634</span><a id="line.634">   * Whether the options button was pressed since the last check.</a>
+<span class="sourceLineNo">635</span><a id="line.635">   *</a>
+<span class="sourceLineNo">636</span><a id="line.636">   * @return Whether the button was pressed since the last check.</a>
+<span class="sourceLineNo">637</span><a id="line.637">   */</a>
+<span class="sourceLineNo">638</span><a id="line.638">  public boolean getOptionsButtonPressed() {</a>
+<span class="sourceLineNo">639</span><a id="line.639">    return getRawButtonPressed(Button.kOptions.value);</a>
+<span class="sourceLineNo">640</span><a id="line.640">  }</a>
+<span class="sourceLineNo">641</span><a id="line.641"></a>
+<span class="sourceLineNo">642</span><a id="line.642">  /**</a>
+<span class="sourceLineNo">643</span><a id="line.643">   * Whether the options button was released since the last check.</a>
+<span class="sourceLineNo">644</span><a id="line.644">   *</a>
+<span class="sourceLineNo">645</span><a id="line.645">   * @return Whether the button was released since the last check.</a>
 <span class="sourceLineNo">646</span><a id="line.646">   */</a>
-<span class="sourceLineNo">647</span><a id="line.647">  public BooleanEvent options(EventLoop loop) {</a>
-<span class="sourceLineNo">648</span><a id="line.648">    return new BooleanEvent(loop, this::getOptionsButton);</a>
+<span class="sourceLineNo">647</span><a id="line.647">  public boolean getOptionsButtonReleased() {</a>
+<span class="sourceLineNo">648</span><a id="line.648">    return getRawButtonReleased(Button.kOptions.value);</a>
 <span class="sourceLineNo">649</span><a id="line.649">  }</a>
 <span class="sourceLineNo">650</span><a id="line.650"></a>
 <span class="sourceLineNo">651</span><a id="line.651">  /**</a>
-<span class="sourceLineNo">652</span><a id="line.652">   * Read the value of the touchpad on the controller.</a>
+<span class="sourceLineNo">652</span><a id="line.652">   * Constructs an event instance around the options button's digital signal.</a>
 <span class="sourceLineNo">653</span><a id="line.653">   *</a>
-<span class="sourceLineNo">654</span><a id="line.654">   * @return The state of the touchpad.</a>
-<span class="sourceLineNo">655</span><a id="line.655">   */</a>
-<span class="sourceLineNo">656</span><a id="line.656">  public boolean getTouchpad() {</a>
-<span class="sourceLineNo">657</span><a id="line.657">    return getRawButton(Button.kTouchpad.value);</a>
-<span class="sourceLineNo">658</span><a id="line.658">  }</a>
-<span class="sourceLineNo">659</span><a id="line.659"></a>
-<span class="sourceLineNo">660</span><a id="line.660">  /**</a>
-<span class="sourceLineNo">661</span><a id="line.661">   * Whether the touchpad was pressed since the last check.</a>
-<span class="sourceLineNo">662</span><a id="line.662">   *</a>
-<span class="sourceLineNo">663</span><a id="line.663">   * @return Whether the touchpad was pressed since the last check.</a>
-<span class="sourceLineNo">664</span><a id="line.664">   */</a>
-<span class="sourceLineNo">665</span><a id="line.665">  public boolean getTouchpadPressed() {</a>
-<span class="sourceLineNo">666</span><a id="line.666">    return getRawButtonPressed(Button.kTouchpad.value);</a>
-<span class="sourceLineNo">667</span><a id="line.667">  }</a>
-<span class="sourceLineNo">668</span><a id="line.668"></a>
-<span class="sourceLineNo">669</span><a id="line.669">  /**</a>
-<span class="sourceLineNo">670</span><a id="line.670">   * Whether the touchpad was released since the last check.</a>
-<span class="sourceLineNo">671</span><a id="line.671">   *</a>
-<span class="sourceLineNo">672</span><a id="line.672">   * @return Whether the touchpad was released since the last check.</a>
-<span class="sourceLineNo">673</span><a id="line.673">   */</a>
-<span class="sourceLineNo">674</span><a id="line.674">  public boolean getTouchpadReleased() {</a>
-<span class="sourceLineNo">675</span><a id="line.675">    return getRawButtonReleased(Button.kTouchpad.value);</a>
-<span class="sourceLineNo">676</span><a id="line.676">  }</a>
-<span class="sourceLineNo">677</span><a id="line.677"></a>
-<span class="sourceLineNo">678</span><a id="line.678">  /**</a>
-<span class="sourceLineNo">679</span><a id="line.679">   * Constructs an event instance around the touchpad's digital signal.</a>
-<span class="sourceLineNo">680</span><a id="line.680">   *</a>
-<span class="sourceLineNo">681</span><a id="line.681">   * @param loop the event loop instance to attach the event to.</a>
-<span class="sourceLineNo">682</span><a id="line.682">   * @return an event instance representing the touchpad's digital signal attached to the given</a>
-<span class="sourceLineNo">683</span><a id="line.683">   *     loop.</a>
+<span class="sourceLineNo">654</span><a id="line.654">   * @param loop the event loop instance to attach the event to.</a>
+<span class="sourceLineNo">655</span><a id="line.655">   * @return an event instance representing the options button's digital signal attached to the</a>
+<span class="sourceLineNo">656</span><a id="line.656">   *     given loop.</a>
+<span class="sourceLineNo">657</span><a id="line.657">   */</a>
+<span class="sourceLineNo">658</span><a id="line.658">  public BooleanEvent options(EventLoop loop) {</a>
+<span class="sourceLineNo">659</span><a id="line.659">    return new BooleanEvent(loop, this::getOptionsButton);</a>
+<span class="sourceLineNo">660</span><a id="line.660">  }</a>
+<span class="sourceLineNo">661</span><a id="line.661"></a>
+<span class="sourceLineNo">662</span><a id="line.662">  /**</a>
+<span class="sourceLineNo">663</span><a id="line.663">   * Read the value of the touchpad on the controller.</a>
+<span class="sourceLineNo">664</span><a id="line.664">   *</a>
+<span class="sourceLineNo">665</span><a id="line.665">   * @return The state of the touchpad.</a>
+<span class="sourceLineNo">666</span><a id="line.666">   */</a>
+<span class="sourceLineNo">667</span><a id="line.667">  public boolean getTouchpad() {</a>
+<span class="sourceLineNo">668</span><a id="line.668">    return getRawButton(Button.kTouchpad.value);</a>
+<span class="sourceLineNo">669</span><a id="line.669">  }</a>
+<span class="sourceLineNo">670</span><a id="line.670"></a>
+<span class="sourceLineNo">671</span><a id="line.671">  /**</a>
+<span class="sourceLineNo">672</span><a id="line.672">   * Whether the touchpad was pressed since the last check.</a>
+<span class="sourceLineNo">673</span><a id="line.673">   *</a>
+<span class="sourceLineNo">674</span><a id="line.674">   * @return Whether the touchpad was pressed since the last check.</a>
+<span class="sourceLineNo">675</span><a id="line.675">   */</a>
+<span class="sourceLineNo">676</span><a id="line.676">  public boolean getTouchpadPressed() {</a>
+<span class="sourceLineNo">677</span><a id="line.677">    return getRawButtonPressed(Button.kTouchpad.value);</a>
+<span class="sourceLineNo">678</span><a id="line.678">  }</a>
+<span class="sourceLineNo">679</span><a id="line.679"></a>
+<span class="sourceLineNo">680</span><a id="line.680">  /**</a>
+<span class="sourceLineNo">681</span><a id="line.681">   * Whether the touchpad was released since the last check.</a>
+<span class="sourceLineNo">682</span><a id="line.682">   *</a>
+<span class="sourceLineNo">683</span><a id="line.683">   * @return Whether the touchpad was released since the last check.</a>
 <span class="sourceLineNo">684</span><a id="line.684">   */</a>
-<span class="sourceLineNo">685</span><a id="line.685">  public BooleanEvent touchpad(EventLoop loop) {</a>
-<span class="sourceLineNo">686</span><a id="line.686">    return new BooleanEvent(loop, this::getTouchpad);</a>
+<span class="sourceLineNo">685</span><a id="line.685">  public boolean getTouchpadReleased() {</a>
+<span class="sourceLineNo">686</span><a id="line.686">    return getRawButtonReleased(Button.kTouchpad.value);</a>
 <span class="sourceLineNo">687</span><a id="line.687">  }</a>
-<span class="sourceLineNo">688</span><a id="line.688">}</a>
+<span class="sourceLineNo">688</span><a id="line.688"></a>
+<span class="sourceLineNo">689</span><a id="line.689">  /**</a>
+<span class="sourceLineNo">690</span><a id="line.690">   * Constructs an event instance around the touchpad's digital signal.</a>
+<span class="sourceLineNo">691</span><a id="line.691">   *</a>
+<span class="sourceLineNo">692</span><a id="line.692">   * @param loop the event loop instance to attach the event to.</a>
+<span class="sourceLineNo">693</span><a id="line.693">   * @return an event instance representing the touchpad's digital signal attached to the given</a>
+<span class="sourceLineNo">694</span><a id="line.694">   *     loop.</a>
+<span class="sourceLineNo">695</span><a id="line.695">   */</a>
+<span class="sourceLineNo">696</span><a id="line.696">  public BooleanEvent touchpad(EventLoop loop) {</a>
+<span class="sourceLineNo">697</span><a id="line.697">    return new BooleanEvent(loop, this::getTouchpad);</a>
+<span class="sourceLineNo">698</span><a id="line.698">  }</a>
+<span class="sourceLineNo">699</span><a id="line.699">}</a>
 
 
 

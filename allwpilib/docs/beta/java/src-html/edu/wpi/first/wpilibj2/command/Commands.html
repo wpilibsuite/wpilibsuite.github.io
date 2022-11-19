@@ -33,7 +33,7 @@
 <span class="sourceLineNo">021</span><a id="line.21">   *</a>
 <span class="sourceLineNo">022</span><a id="line.22">   * @return the command</a>
 <span class="sourceLineNo">023</span><a id="line.23">   */</a>
-<span class="sourceLineNo">024</span><a id="line.24">  public static Command none() {</a>
+<span class="sourceLineNo">024</span><a id="line.24">  public static CommandBase none() {</a>
 <span class="sourceLineNo">025</span><a id="line.25">    return new InstantCommand();</a>
 <span class="sourceLineNo">026</span><a id="line.26">  }</a>
 <span class="sourceLineNo">027</span><a id="line.27"></a>
@@ -47,7 +47,7 @@
 <span class="sourceLineNo">035</span><a id="line.35">   * @return the command</a>
 <span class="sourceLineNo">036</span><a id="line.36">   * @see InstantCommand</a>
 <span class="sourceLineNo">037</span><a id="line.37">   */</a>
-<span class="sourceLineNo">038</span><a id="line.38">  public static Command runOnce(Runnable action, Subsystem... requirements) {</a>
+<span class="sourceLineNo">038</span><a id="line.38">  public static CommandBase runOnce(Runnable action, Subsystem... requirements) {</a>
 <span class="sourceLineNo">039</span><a id="line.39">    return new InstantCommand(action, requirements);</a>
 <span class="sourceLineNo">040</span><a id="line.40">  }</a>
 <span class="sourceLineNo">041</span><a id="line.41"></a>
@@ -59,7 +59,7 @@
 <span class="sourceLineNo">047</span><a id="line.47">   * @return the command</a>
 <span class="sourceLineNo">048</span><a id="line.48">   * @see RunCommand</a>
 <span class="sourceLineNo">049</span><a id="line.49">   */</a>
-<span class="sourceLineNo">050</span><a id="line.50">  public static Command run(Runnable action, Subsystem... requirements) {</a>
+<span class="sourceLineNo">050</span><a id="line.50">  public static CommandBase run(Runnable action, Subsystem... requirements) {</a>
 <span class="sourceLineNo">051</span><a id="line.51">    return new RunCommand(action, requirements);</a>
 <span class="sourceLineNo">052</span><a id="line.52">  }</a>
 <span class="sourceLineNo">053</span><a id="line.53"></a>
@@ -73,7 +73,7 @@
 <span class="sourceLineNo">061</span><a id="line.61">   * @return the command</a>
 <span class="sourceLineNo">062</span><a id="line.62">   * @see StartEndCommand</a>
 <span class="sourceLineNo">063</span><a id="line.63">   */</a>
-<span class="sourceLineNo">064</span><a id="line.64">  public static Command startEnd(Runnable start, Runnable end, Subsystem... requirements) {</a>
+<span class="sourceLineNo">064</span><a id="line.64">  public static CommandBase startEnd(Runnable start, Runnable end, Subsystem... requirements) {</a>
 <span class="sourceLineNo">065</span><a id="line.65">    return new StartEndCommand(start, end, requirements);</a>
 <span class="sourceLineNo">066</span><a id="line.66">  }</a>
 <span class="sourceLineNo">067</span><a id="line.67"></a>
@@ -86,7 +86,7 @@
 <span class="sourceLineNo">074</span><a id="line.74">   * @param requirements subsystems the action requires</a>
 <span class="sourceLineNo">075</span><a id="line.75">   * @return the command</a>
 <span class="sourceLineNo">076</span><a id="line.76">   */</a>
-<span class="sourceLineNo">077</span><a id="line.77">  public static Command runEnd(Runnable run, Runnable end, Subsystem... requirements) {</a>
+<span class="sourceLineNo">077</span><a id="line.77">  public static CommandBase runEnd(Runnable run, Runnable end, Subsystem... requirements) {</a>
 <span class="sourceLineNo">078</span><a id="line.78">    requireNonNullParam(end, "end", "Command.runEnd");</a>
 <span class="sourceLineNo">079</span><a id="line.79">    return new FunctionalCommand(</a>
 <span class="sourceLineNo">080</span><a id="line.80">        () -&gt; {}, run, interrupted -&gt; end.run(), () -&gt; false, requirements);</a>
@@ -99,7 +99,7 @@
 <span class="sourceLineNo">087</span><a id="line.87">   * @return the command</a>
 <span class="sourceLineNo">088</span><a id="line.88">   * @see PrintCommand</a>
 <span class="sourceLineNo">089</span><a id="line.89">   */</a>
-<span class="sourceLineNo">090</span><a id="line.90">  public static Command print(String message) {</a>
+<span class="sourceLineNo">090</span><a id="line.90">  public static CommandBase print(String message) {</a>
 <span class="sourceLineNo">091</span><a id="line.91">    return new PrintCommand(message);</a>
 <span class="sourceLineNo">092</span><a id="line.92">  }</a>
 <span class="sourceLineNo">093</span><a id="line.93"></a>
@@ -112,7 +112,7 @@
 <span class="sourceLineNo">100</span><a id="line.100">   * @return the command</a>
 <span class="sourceLineNo">101</span><a id="line.101">   * @see WaitCommand</a>
 <span class="sourceLineNo">102</span><a id="line.102">   */</a>
-<span class="sourceLineNo">103</span><a id="line.103">  public static Command wait(double seconds) {</a>
+<span class="sourceLineNo">103</span><a id="line.103">  public static CommandBase wait(double seconds) {</a>
 <span class="sourceLineNo">104</span><a id="line.104">    return new WaitCommand(seconds);</a>
 <span class="sourceLineNo">105</span><a id="line.105">  }</a>
 <span class="sourceLineNo">106</span><a id="line.106"></a>
@@ -123,7 +123,7 @@
 <span class="sourceLineNo">111</span><a id="line.111">   * @return the command</a>
 <span class="sourceLineNo">112</span><a id="line.112">   * @see WaitUntilCommand</a>
 <span class="sourceLineNo">113</span><a id="line.113">   */</a>
-<span class="sourceLineNo">114</span><a id="line.114">  public static Command waitUntil(BooleanSupplier condition) {</a>
+<span class="sourceLineNo">114</span><a id="line.114">  public static CommandBase waitUntil(BooleanSupplier condition) {</a>
 <span class="sourceLineNo">115</span><a id="line.115">    return new WaitUntilCommand(condition);</a>
 <span class="sourceLineNo">116</span><a id="line.116">  }</a>
 <span class="sourceLineNo">117</span><a id="line.117"></a>
@@ -138,7 +138,7 @@
 <span class="sourceLineNo">126</span><a id="line.126">   * @return the command</a>
 <span class="sourceLineNo">127</span><a id="line.127">   * @see ConditionalCommand</a>
 <span class="sourceLineNo">128</span><a id="line.128">   */</a>
-<span class="sourceLineNo">129</span><a id="line.129">  public static Command either(Command onTrue, Command onFalse, BooleanSupplier selector) {</a>
+<span class="sourceLineNo">129</span><a id="line.129">  public static CommandBase either(Command onTrue, Command onFalse, BooleanSupplier selector) {</a>
 <span class="sourceLineNo">130</span><a id="line.130">    return new ConditionalCommand(onTrue, onFalse, selector);</a>
 <span class="sourceLineNo">131</span><a id="line.131">  }</a>
 <span class="sourceLineNo">132</span><a id="line.132"></a>
@@ -150,7 +150,7 @@
 <span class="sourceLineNo">138</span><a id="line.138">   * @return the command</a>
 <span class="sourceLineNo">139</span><a id="line.139">   * @see SelectCommand</a>
 <span class="sourceLineNo">140</span><a id="line.140">   */</a>
-<span class="sourceLineNo">141</span><a id="line.141">  public static Command select(Map&lt;Object, Command&gt; commands, Supplier&lt;Object&gt; selector) {</a>
+<span class="sourceLineNo">141</span><a id="line.141">  public static CommandBase select(Map&lt;Object, Command&gt; commands, Supplier&lt;Object&gt; selector) {</a>
 <span class="sourceLineNo">142</span><a id="line.142">    return new SelectCommand(commands, selector);</a>
 <span class="sourceLineNo">143</span><a id="line.143">  }</a>
 <span class="sourceLineNo">144</span><a id="line.144"></a>
@@ -161,7 +161,7 @@
 <span class="sourceLineNo">149</span><a id="line.149">   * @return the command group</a>
 <span class="sourceLineNo">150</span><a id="line.150">   * @see SequentialCommandGroup</a>
 <span class="sourceLineNo">151</span><a id="line.151">   */</a>
-<span class="sourceLineNo">152</span><a id="line.152">  public static Command sequence(Command... commands) {</a>
+<span class="sourceLineNo">152</span><a id="line.152">  public static CommandBase sequence(Command... commands) {</a>
 <span class="sourceLineNo">153</span><a id="line.153">    return new SequentialCommandGroup(commands);</a>
 <span class="sourceLineNo">154</span><a id="line.154">  }</a>
 <span class="sourceLineNo">155</span><a id="line.155"></a>
@@ -176,7 +176,7 @@
 <span class="sourceLineNo">164</span><a id="line.164">   * @see SequentialCommandGroup</a>
 <span class="sourceLineNo">165</span><a id="line.165">   * @see Command#repeatedly()</a>
 <span class="sourceLineNo">166</span><a id="line.166">   */</a>
-<span class="sourceLineNo">167</span><a id="line.167">  public static Command repeatingSequence(Command... commands) {</a>
+<span class="sourceLineNo">167</span><a id="line.167">  public static CommandBase repeatingSequence(Command... commands) {</a>
 <span class="sourceLineNo">168</span><a id="line.168">    return sequence(commands).repeatedly();</a>
 <span class="sourceLineNo">169</span><a id="line.169">  }</a>
 <span class="sourceLineNo">170</span><a id="line.170"></a>
@@ -187,7 +187,7 @@
 <span class="sourceLineNo">175</span><a id="line.175">   * @return the command</a>
 <span class="sourceLineNo">176</span><a id="line.176">   * @see ParallelCommandGroup</a>
 <span class="sourceLineNo">177</span><a id="line.177">   */</a>
-<span class="sourceLineNo">178</span><a id="line.178">  public static Command parallel(Command... commands) {</a>
+<span class="sourceLineNo">178</span><a id="line.178">  public static CommandBase parallel(Command... commands) {</a>
 <span class="sourceLineNo">179</span><a id="line.179">    return new ParallelCommandGroup(commands);</a>
 <span class="sourceLineNo">180</span><a id="line.180">  }</a>
 <span class="sourceLineNo">181</span><a id="line.181"></a>
@@ -199,7 +199,7 @@
 <span class="sourceLineNo">187</span><a id="line.187">   * @return the command group</a>
 <span class="sourceLineNo">188</span><a id="line.188">   * @see ParallelRaceGroup</a>
 <span class="sourceLineNo">189</span><a id="line.189">   */</a>
-<span class="sourceLineNo">190</span><a id="line.190">  public static Command race(Command... commands) {</a>
+<span class="sourceLineNo">190</span><a id="line.190">  public static CommandBase race(Command... commands) {</a>
 <span class="sourceLineNo">191</span><a id="line.191">    return new ParallelRaceGroup(commands);</a>
 <span class="sourceLineNo">192</span><a id="line.192">  }</a>
 <span class="sourceLineNo">193</span><a id="line.193"></a>
@@ -212,7 +212,7 @@
 <span class="sourceLineNo">200</span><a id="line.200">   * @return the command group</a>
 <span class="sourceLineNo">201</span><a id="line.201">   * @see ParallelDeadlineGroup</a>
 <span class="sourceLineNo">202</span><a id="line.202">   */</a>
-<span class="sourceLineNo">203</span><a id="line.203">  public static Command deadline(Command deadline, Command... commands) {</a>
+<span class="sourceLineNo">203</span><a id="line.203">  public static CommandBase deadline(Command deadline, Command... commands) {</a>
 <span class="sourceLineNo">204</span><a id="line.204">    return new ParallelDeadlineGroup(deadline, commands);</a>
 <span class="sourceLineNo">205</span><a id="line.205">  }</a>
 <span class="sourceLineNo">206</span><a id="line.206"></a>

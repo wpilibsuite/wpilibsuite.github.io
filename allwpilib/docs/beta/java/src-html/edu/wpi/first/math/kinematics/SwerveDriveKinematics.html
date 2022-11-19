@@ -249,7 +249,51 @@
 <span class="sourceLineNo">237</span><a id="line.237">      }</a>
 <span class="sourceLineNo">238</span><a id="line.238">    }</a>
 <span class="sourceLineNo">239</span><a id="line.239">  }</a>
-<span class="sourceLineNo">240</span><a id="line.240">}</a>
+<span class="sourceLineNo">240</span><a id="line.240"></a>
+<span class="sourceLineNo">241</span><a id="line.241">  /**</a>
+<span class="sourceLineNo">242</span><a id="line.242">   * Renormalizes the wheel speeds if any individual speed is above the specified maximum, as well</a>
+<span class="sourceLineNo">243</span><a id="line.243">   * as getting rid of joystick saturation at edges of joystick.</a>
+<span class="sourceLineNo">244</span><a id="line.244">   *</a>
+<span class="sourceLineNo">245</span><a id="line.245">   * &lt;p&gt;Sometimes, after inverse kinematics, the requested speed from one or more modules may be</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * above the max attainable speed for the driving motor on that module. To fix this issue, one can</a>
+<span class="sourceLineNo">247</span><a id="line.247">   * reduce all the wheel speeds to make sure that all requested module speeds are at-or-below the</a>
+<span class="sourceLineNo">248</span><a id="line.248">   * absolute threshold, while maintaining the ratio of speeds between modules.</a>
+<span class="sourceLineNo">249</span><a id="line.249">   *</a>
+<span class="sourceLineNo">250</span><a id="line.250">   * @param moduleStates Reference to array of module states. The array will be mutated with the</a>
+<span class="sourceLineNo">251</span><a id="line.251">   *     normalized speeds!</a>
+<span class="sourceLineNo">252</span><a id="line.252">   * @param currentChassisSpeed The current speed of the robot</a>
+<span class="sourceLineNo">253</span><a id="line.253">   * @param attainableMaxModuleSpeedMetersPerSecond The absolute max speed that a module can reach</a>
+<span class="sourceLineNo">254</span><a id="line.254">   * @param attainableMaxTranslationalSpeedMetersPerSecond The absolute max speed that your robot</a>
+<span class="sourceLineNo">255</span><a id="line.255">   *     can reach while translating</a>
+<span class="sourceLineNo">256</span><a id="line.256">   * @param attainableMaxRotationalVelocityRadiansPerSecond The absolute max speed the robot can</a>
+<span class="sourceLineNo">257</span><a id="line.257">   *     reach while rotating</a>
+<span class="sourceLineNo">258</span><a id="line.258">   */</a>
+<span class="sourceLineNo">259</span><a id="line.259">  public static void desaturateWheelSpeeds(</a>
+<span class="sourceLineNo">260</span><a id="line.260">      SwerveModuleState[] moduleStates,</a>
+<span class="sourceLineNo">261</span><a id="line.261">      ChassisSpeeds currentChassisSpeed,</a>
+<span class="sourceLineNo">262</span><a id="line.262">      double attainableMaxModuleSpeedMetersPerSecond,</a>
+<span class="sourceLineNo">263</span><a id="line.263">      double attainableMaxTranslationalSpeedMetersPerSecond,</a>
+<span class="sourceLineNo">264</span><a id="line.264">      double attainableMaxRotationalVelocityRadiansPerSecond) {</a>
+<span class="sourceLineNo">265</span><a id="line.265">    double realMaxSpeed = Collections.max(Arrays.asList(moduleStates)).speedMetersPerSecond;</a>
+<span class="sourceLineNo">266</span><a id="line.266"></a>
+<span class="sourceLineNo">267</span><a id="line.267">    if (attainableMaxTranslationalSpeedMetersPerSecond == 0</a>
+<span class="sourceLineNo">268</span><a id="line.268">        || attainableMaxRotationalVelocityRadiansPerSecond == 0</a>
+<span class="sourceLineNo">269</span><a id="line.269">        || realMaxSpeed == 0) {</a>
+<span class="sourceLineNo">270</span><a id="line.270">      return;</a>
+<span class="sourceLineNo">271</span><a id="line.271">    }</a>
+<span class="sourceLineNo">272</span><a id="line.272">    double translationalK =</a>
+<span class="sourceLineNo">273</span><a id="line.273">        Math.hypot(currentChassisSpeed.vxMetersPerSecond, currentChassisSpeed.vyMetersPerSecond)</a>
+<span class="sourceLineNo">274</span><a id="line.274">            / attainableMaxTranslationalSpeedMetersPerSecond;</a>
+<span class="sourceLineNo">275</span><a id="line.275">    double rotationalK =</a>
+<span class="sourceLineNo">276</span><a id="line.276">        Math.abs(currentChassisSpeed.omegaRadiansPerSecond)</a>
+<span class="sourceLineNo">277</span><a id="line.277">            / attainableMaxRotationalVelocityRadiansPerSecond;</a>
+<span class="sourceLineNo">278</span><a id="line.278">    double k = Math.max(translationalK, rotationalK);</a>
+<span class="sourceLineNo">279</span><a id="line.279">    double scale = Math.min(k * attainableMaxModuleSpeedMetersPerSecond / realMaxSpeed, 1);</a>
+<span class="sourceLineNo">280</span><a id="line.280">    for (SwerveModuleState moduleState : moduleStates) {</a>
+<span class="sourceLineNo">281</span><a id="line.281">      moduleState.speedMetersPerSecond *= scale;</a>
+<span class="sourceLineNo">282</span><a id="line.282">    }</a>
+<span class="sourceLineNo">283</span><a id="line.283">  }</a>
+<span class="sourceLineNo">284</span><a id="line.284">}</a>
 
 
 

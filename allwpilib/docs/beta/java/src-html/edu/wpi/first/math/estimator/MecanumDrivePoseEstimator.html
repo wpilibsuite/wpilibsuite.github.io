@@ -44,7 +44,7 @@
 <span class="sourceLineNo">032</span><a id="line.32"> * &lt;p&gt;{@link MecanumDrivePoseEstimator#update} should be called every robot loop. If your loops are</a>
 <span class="sourceLineNo">033</span><a id="line.33"> * faster or slower than the default of 20 ms, then you should change the nominal delta time using</a>
 <span class="sourceLineNo">034</span><a id="line.34"> * the secondary constructor: {@link MecanumDrivePoseEstimator#MecanumDrivePoseEstimator(Rotation2d,</a>
-<span class="sourceLineNo">035</span><a id="line.35"> * Pose2d, MecanumDriveWheelPositions, MecanumDriveKinematics, Matrix, Matrix, Matrix, double)}.</a>
+<span class="sourceLineNo">035</span><a id="line.35"> * MecanumDriveWheelPositions, Pose2d, MecanumDriveKinematics, Matrix, Matrix, Matrix, double)}.</a>
 <span class="sourceLineNo">036</span><a id="line.36"> *</a>
 <span class="sourceLineNo">037</span><a id="line.37"> * &lt;p&gt;{@link MecanumDrivePoseEstimator#addVisionMeasurement} can be called as infrequently as you</a>
 <span class="sourceLineNo">038</span><a id="line.38"> * want; if you never call it, then this class will behave mostly like regular encoder odometry.</a>
@@ -82,8 +82,8 @@
 <span class="sourceLineNo">070</span><a id="line.70">   * Constructs a MecanumDrivePoseEstimator.</a>
 <span class="sourceLineNo">071</span><a id="line.71">   *</a>
 <span class="sourceLineNo">072</span><a id="line.72">   * @param gyroAngle The current gyro angle.</a>
-<span class="sourceLineNo">073</span><a id="line.73">   * @param initialPoseMeters The starting pose estimate.</a>
-<span class="sourceLineNo">074</span><a id="line.74">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * @param initialPoseMeters The starting pose estimate.</a>
 <span class="sourceLineNo">075</span><a id="line.75">   * @param kinematics A correctly-configured kinematics object for your drivetrain.</a>
 <span class="sourceLineNo">076</span><a id="line.76">   * @param stateStdDevs Standard deviations of model states. Increase these numbers to trust your</a>
 <span class="sourceLineNo">077</span><a id="line.77">   *     model's state estimates less. This matrix is in the form [x, y, theta, s_fl, s_fr, s_rl,</a>
@@ -97,16 +97,16 @@
 <span class="sourceLineNo">085</span><a id="line.85">   */</a>
 <span class="sourceLineNo">086</span><a id="line.86">  public MecanumDrivePoseEstimator(</a>
 <span class="sourceLineNo">087</span><a id="line.87">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">088</span><a id="line.88">      Pose2d initialPoseMeters,</a>
-<span class="sourceLineNo">089</span><a id="line.89">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">088</span><a id="line.88">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">089</span><a id="line.89">      Pose2d initialPoseMeters,</a>
 <span class="sourceLineNo">090</span><a id="line.90">      MecanumDriveKinematics kinematics,</a>
 <span class="sourceLineNo">091</span><a id="line.91">      Matrix&lt;N7, N1&gt; stateStdDevs,</a>
 <span class="sourceLineNo">092</span><a id="line.92">      Matrix&lt;N5, N1&gt; localMeasurementStdDevs,</a>
 <span class="sourceLineNo">093</span><a id="line.93">      Matrix&lt;N3, N1&gt; visionMeasurementStdDevs) {</a>
 <span class="sourceLineNo">094</span><a id="line.94">    this(</a>
 <span class="sourceLineNo">095</span><a id="line.95">        gyroAngle,</a>
-<span class="sourceLineNo">096</span><a id="line.96">        initialPoseMeters,</a>
-<span class="sourceLineNo">097</span><a id="line.97">        wheelPositions,</a>
+<span class="sourceLineNo">096</span><a id="line.96">        wheelPositions,</a>
+<span class="sourceLineNo">097</span><a id="line.97">        initialPoseMeters,</a>
 <span class="sourceLineNo">098</span><a id="line.98">        kinematics,</a>
 <span class="sourceLineNo">099</span><a id="line.99">        stateStdDevs,</a>
 <span class="sourceLineNo">100</span><a id="line.100">        localMeasurementStdDevs,</a>
@@ -118,8 +118,8 @@
 <span class="sourceLineNo">106</span><a id="line.106">   * Constructs a MecanumDrivePoseEstimator.</a>
 <span class="sourceLineNo">107</span><a id="line.107">   *</a>
 <span class="sourceLineNo">108</span><a id="line.108">   * @param gyroAngle The current gyro angle.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   * @param initialPoseMeters The starting pose estimate.</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">109</span><a id="line.109">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * @param initialPoseMeters The starting pose estimate.</a>
 <span class="sourceLineNo">111</span><a id="line.111">   * @param kinematics A correctly-configured kinematics object for your drivetrain.</a>
 <span class="sourceLineNo">112</span><a id="line.112">   * @param stateStdDevs Standard deviations of model states. Increase these numbers to trust your</a>
 <span class="sourceLineNo">113</span><a id="line.113">   *     model's state estimates less. This matrix is in the form [x, y, theta, s_fl, s_fr, s_rl,</a>
@@ -134,8 +134,8 @@
 <span class="sourceLineNo">122</span><a id="line.122">   */</a>
 <span class="sourceLineNo">123</span><a id="line.123">  public MecanumDrivePoseEstimator(</a>
 <span class="sourceLineNo">124</span><a id="line.124">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">125</span><a id="line.125">      Pose2d initialPoseMeters,</a>
-<span class="sourceLineNo">126</span><a id="line.126">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">125</span><a id="line.125">      MecanumDriveWheelPositions wheelPositions,</a>
+<span class="sourceLineNo">126</span><a id="line.126">      Pose2d initialPoseMeters,</a>
 <span class="sourceLineNo">127</span><a id="line.127">      MecanumDriveKinematics kinematics,</a>
 <span class="sourceLineNo">128</span><a id="line.128">      Matrix&lt;N7, N1&gt; stateStdDevs,</a>
 <span class="sourceLineNo">129</span><a id="line.129">      Matrix&lt;N5, N1&gt; localMeasurementStdDevs,</a>
@@ -209,180 +209,178 @@
 <span class="sourceLineNo">197</span><a id="line.197">  /**</a>
 <span class="sourceLineNo">198</span><a id="line.198">   * Resets the robot's position on the field.</a>
 <span class="sourceLineNo">199</span><a id="line.199">   *</a>
-<span class="sourceLineNo">200</span><a id="line.200">   * &lt;p&gt;You NEED to reset your encoders (to zero) when calling this method.</a>
-<span class="sourceLineNo">201</span><a id="line.201">   *</a>
-<span class="sourceLineNo">202</span><a id="line.202">   * &lt;p&gt;The gyroscope angle does not need to be reset in the user's robot code. The library</a>
-<span class="sourceLineNo">203</span><a id="line.203">   * automatically takes care of offsetting the gyro angle.</a>
-<span class="sourceLineNo">204</span><a id="line.204">   *</a>
+<span class="sourceLineNo">200</span><a id="line.200">   * &lt;p&gt;The gyroscope angle does not need to be reset in the user's robot code. The library</a>
+<span class="sourceLineNo">201</span><a id="line.201">   * automatically takes care of offsetting the gyro angle.</a>
+<span class="sourceLineNo">202</span><a id="line.202">   *</a>
+<span class="sourceLineNo">203</span><a id="line.203">   * @param gyroAngle The angle reported by the gyroscope.</a>
+<span class="sourceLineNo">204</span><a id="line.204">   * @param wheelPositions The distances driven by each wheel.</a>
 <span class="sourceLineNo">205</span><a id="line.205">   * @param poseMeters The position on the field that your robot is at.</a>
-<span class="sourceLineNo">206</span><a id="line.206">   * @param gyroAngle The angle reported by the gyroscope.</a>
-<span class="sourceLineNo">207</span><a id="line.207">   * @param wheelPositions The distances driven by each wheel.</a>
-<span class="sourceLineNo">208</span><a id="line.208">   */</a>
-<span class="sourceLineNo">209</span><a id="line.209">  public void resetPosition(</a>
-<span class="sourceLineNo">210</span><a id="line.210">      Pose2d poseMeters, Rotation2d gyroAngle, MecanumDriveWheelPositions wheelPositions) {</a>
-<span class="sourceLineNo">211</span><a id="line.211">    // Reset state estimate and error covariance</a>
-<span class="sourceLineNo">212</span><a id="line.212">    m_observer.reset();</a>
-<span class="sourceLineNo">213</span><a id="line.213">    m_poseBuffer.clear();</a>
-<span class="sourceLineNo">214</span><a id="line.214"></a>
-<span class="sourceLineNo">215</span><a id="line.215">    var poseVec = StateSpaceUtil.poseTo3dVector(poseMeters);</a>
-<span class="sourceLineNo">216</span><a id="line.216">    var xhat =</a>
-<span class="sourceLineNo">217</span><a id="line.217">        VecBuilder.fill(</a>
-<span class="sourceLineNo">218</span><a id="line.218">            poseVec.get(0, 0),</a>
-<span class="sourceLineNo">219</span><a id="line.219">            poseVec.get(1, 0),</a>
-<span class="sourceLineNo">220</span><a id="line.220">            poseVec.get(2, 0),</a>
-<span class="sourceLineNo">221</span><a id="line.221">            wheelPositions.frontLeftMeters,</a>
-<span class="sourceLineNo">222</span><a id="line.222">            wheelPositions.frontRightMeters,</a>
-<span class="sourceLineNo">223</span><a id="line.223">            wheelPositions.rearLeftMeters,</a>
-<span class="sourceLineNo">224</span><a id="line.224">            wheelPositions.rearRightMeters);</a>
+<span class="sourceLineNo">206</span><a id="line.206">   */</a>
+<span class="sourceLineNo">207</span><a id="line.207">  public void resetPosition(</a>
+<span class="sourceLineNo">208</span><a id="line.208">      Rotation2d gyroAngle, MecanumDriveWheelPositions wheelPositions, Pose2d poseMeters) {</a>
+<span class="sourceLineNo">209</span><a id="line.209">    // Reset state estimate and error covariance</a>
+<span class="sourceLineNo">210</span><a id="line.210">    m_observer.reset();</a>
+<span class="sourceLineNo">211</span><a id="line.211">    m_poseBuffer.clear();</a>
+<span class="sourceLineNo">212</span><a id="line.212"></a>
+<span class="sourceLineNo">213</span><a id="line.213">    var poseVec = StateSpaceUtil.poseTo3dVector(poseMeters);</a>
+<span class="sourceLineNo">214</span><a id="line.214">    var xhat =</a>
+<span class="sourceLineNo">215</span><a id="line.215">        VecBuilder.fill(</a>
+<span class="sourceLineNo">216</span><a id="line.216">            poseVec.get(0, 0),</a>
+<span class="sourceLineNo">217</span><a id="line.217">            poseVec.get(1, 0),</a>
+<span class="sourceLineNo">218</span><a id="line.218">            poseVec.get(2, 0),</a>
+<span class="sourceLineNo">219</span><a id="line.219">            wheelPositions.frontLeftMeters,</a>
+<span class="sourceLineNo">220</span><a id="line.220">            wheelPositions.frontRightMeters,</a>
+<span class="sourceLineNo">221</span><a id="line.221">            wheelPositions.rearLeftMeters,</a>
+<span class="sourceLineNo">222</span><a id="line.222">            wheelPositions.rearRightMeters);</a>
+<span class="sourceLineNo">223</span><a id="line.223"></a>
+<span class="sourceLineNo">224</span><a id="line.224">    m_observer.setXhat(xhat);</a>
 <span class="sourceLineNo">225</span><a id="line.225"></a>
-<span class="sourceLineNo">226</span><a id="line.226">    m_observer.setXhat(xhat);</a>
+<span class="sourceLineNo">226</span><a id="line.226">    m_prevTimeSeconds = -1;</a>
 <span class="sourceLineNo">227</span><a id="line.227"></a>
-<span class="sourceLineNo">228</span><a id="line.228">    m_prevTimeSeconds = -1;</a>
-<span class="sourceLineNo">229</span><a id="line.229"></a>
-<span class="sourceLineNo">230</span><a id="line.230">    m_gyroOffset = getEstimatedPosition().getRotation().minus(gyroAngle);</a>
-<span class="sourceLineNo">231</span><a id="line.231">    m_previousAngle = poseMeters.getRotation();</a>
-<span class="sourceLineNo">232</span><a id="line.232">  }</a>
-<span class="sourceLineNo">233</span><a id="line.233"></a>
-<span class="sourceLineNo">234</span><a id="line.234">  /**</a>
-<span class="sourceLineNo">235</span><a id="line.235">   * Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.</a>
-<span class="sourceLineNo">236</span><a id="line.236">   *</a>
-<span class="sourceLineNo">237</span><a id="line.237">   * @return The estimated robot pose in meters.</a>
-<span class="sourceLineNo">238</span><a id="line.238">   */</a>
-<span class="sourceLineNo">239</span><a id="line.239">  public Pose2d getEstimatedPosition() {</a>
-<span class="sourceLineNo">240</span><a id="line.240">    return new Pose2d(</a>
-<span class="sourceLineNo">241</span><a id="line.241">        m_observer.getXhat(0), m_observer.getXhat(1), new Rotation2d(m_observer.getXhat(2)));</a>
-<span class="sourceLineNo">242</span><a id="line.242">  }</a>
-<span class="sourceLineNo">243</span><a id="line.243"></a>
-<span class="sourceLineNo">244</span><a id="line.244">  /**</a>
-<span class="sourceLineNo">245</span><a id="line.245">   * Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose</a>
-<span class="sourceLineNo">246</span><a id="line.246">   * estimate while still accounting for measurement noise.</a>
-<span class="sourceLineNo">247</span><a id="line.247">   *</a>
-<span class="sourceLineNo">248</span><a id="line.248">   * &lt;p&gt;This method can be called as infrequently as you want, as long as you are calling {@link</a>
-<span class="sourceLineNo">249</span><a id="line.249">   * MecanumDrivePoseEstimator#update} every loop.</a>
-<span class="sourceLineNo">250</span><a id="line.250">   *</a>
-<span class="sourceLineNo">251</span><a id="line.251">   * &lt;p&gt;To promote stability of the pose estimate and make it robust to bad vision data, we</a>
-<span class="sourceLineNo">252</span><a id="line.252">   * recommend only adding vision measurements that are already within one meter or so of the</a>
-<span class="sourceLineNo">253</span><a id="line.253">   * current pose estimate.</a>
-<span class="sourceLineNo">254</span><a id="line.254">   *</a>
-<span class="sourceLineNo">255</span><a id="line.255">   * @param visionRobotPoseMeters The pose of the robot as measured by the vision camera.</a>
-<span class="sourceLineNo">256</span><a id="line.256">   * @param timestampSeconds The timestamp of the vision measurement in seconds. Note that if you</a>
-<span class="sourceLineNo">257</span><a id="line.257">   *     don't use your own time source by calling {@link MecanumDrivePoseEstimator#updateWithTime}</a>
-<span class="sourceLineNo">258</span><a id="line.258">   *     then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this</a>
-<span class="sourceLineNo">259</span><a id="line.259">   *     timestamp is the same epoch as Timer.getFPGATimestamp.) This means that you should use</a>
-<span class="sourceLineNo">260</span><a id="line.260">   *     Timer.getFPGATimestamp as your time source or sync the epochs.</a>
-<span class="sourceLineNo">261</span><a id="line.261">   */</a>
-<span class="sourceLineNo">262</span><a id="line.262">  public void addVisionMeasurement(Pose2d visionRobotPoseMeters, double timestampSeconds) {</a>
-<span class="sourceLineNo">263</span><a id="line.263">    var sample = m_poseBuffer.getSample(timestampSeconds);</a>
-<span class="sourceLineNo">264</span><a id="line.264">    if (sample.isPresent()) {</a>
-<span class="sourceLineNo">265</span><a id="line.265">      m_visionCorrect.accept(</a>
-<span class="sourceLineNo">266</span><a id="line.266">          new MatBuilder&lt;&gt;(Nat.N7(), Nat.N1()).fill(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),</a>
-<span class="sourceLineNo">267</span><a id="line.267">          StateSpaceUtil.poseTo3dVector(</a>
-<span class="sourceLineNo">268</span><a id="line.268">              getEstimatedPosition().transformBy(visionRobotPoseMeters.minus(sample.get()))));</a>
-<span class="sourceLineNo">269</span><a id="line.269">    }</a>
-<span class="sourceLineNo">270</span><a id="line.270">  }</a>
-<span class="sourceLineNo">271</span><a id="line.271"></a>
-<span class="sourceLineNo">272</span><a id="line.272">  /**</a>
-<span class="sourceLineNo">273</span><a id="line.273">   * Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose</a>
-<span class="sourceLineNo">274</span><a id="line.274">   * estimate while still accounting for measurement noise.</a>
-<span class="sourceLineNo">275</span><a id="line.275">   *</a>
-<span class="sourceLineNo">276</span><a id="line.276">   * &lt;p&gt;This method can be called as infrequently as you want, as long as you are calling {@link</a>
-<span class="sourceLineNo">277</span><a id="line.277">   * MecanumDrivePoseEstimator#update} every loop.</a>
-<span class="sourceLineNo">278</span><a id="line.278">   *</a>
-<span class="sourceLineNo">279</span><a id="line.279">   * &lt;p&gt;To promote stability of the pose estimate and make it robust to bad vision data, we</a>
-<span class="sourceLineNo">280</span><a id="line.280">   * recommend only adding vision measurements that are already within one meter or so of the</a>
-<span class="sourceLineNo">281</span><a id="line.281">   * current pose estimate.</a>
-<span class="sourceLineNo">282</span><a id="line.282">   *</a>
-<span class="sourceLineNo">283</span><a id="line.283">   * &lt;p&gt;Note that the vision measurement standard deviations passed into this method will continue</a>
-<span class="sourceLineNo">284</span><a id="line.284">   * to apply to future measurements until a subsequent call to {@link</a>
-<span class="sourceLineNo">285</span><a id="line.285">   * MecanumDrivePoseEstimator#setVisionMeasurementStdDevs(Matrix)} or this method.</a>
-<span class="sourceLineNo">286</span><a id="line.286">   *</a>
-<span class="sourceLineNo">287</span><a id="line.287">   * @param visionRobotPoseMeters The pose of the robot as measured by the vision camera.</a>
-<span class="sourceLineNo">288</span><a id="line.288">   * @param timestampSeconds The timestamp of the vision measurement in seconds. Note that if you</a>
-<span class="sourceLineNo">289</span><a id="line.289">   *     don't use your own time source by calling {@link MecanumDrivePoseEstimator#updateWithTime}</a>
-<span class="sourceLineNo">290</span><a id="line.290">   *     then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this</a>
-<span class="sourceLineNo">291</span><a id="line.291">   *     timestamp is the same epoch as Timer.getFPGATimestamp.) This means that you should use</a>
-<span class="sourceLineNo">292</span><a id="line.292">   *     Timer.getFPGATimestamp as your time source in this case.</a>
-<span class="sourceLineNo">293</span><a id="line.293">   * @param visionMeasurementStdDevs Standard deviations of the vision measurements. Increase these</a>
-<span class="sourceLineNo">294</span><a id="line.294">   *     numbers to trust global measurements from vision less. This matrix is in the form [x, y,</a>
-<span class="sourceLineNo">295</span><a id="line.295">   *     theta]ᵀ, with units in meters and radians.</a>
-<span class="sourceLineNo">296</span><a id="line.296">   */</a>
-<span class="sourceLineNo">297</span><a id="line.297">  public void addVisionMeasurement(</a>
-<span class="sourceLineNo">298</span><a id="line.298">      Pose2d visionRobotPoseMeters,</a>
-<span class="sourceLineNo">299</span><a id="line.299">      double timestampSeconds,</a>
-<span class="sourceLineNo">300</span><a id="line.300">      Matrix&lt;N3, N1&gt; visionMeasurementStdDevs) {</a>
-<span class="sourceLineNo">301</span><a id="line.301">    setVisionMeasurementStdDevs(visionMeasurementStdDevs);</a>
-<span class="sourceLineNo">302</span><a id="line.302">    addVisionMeasurement(visionRobotPoseMeters, timestampSeconds);</a>
-<span class="sourceLineNo">303</span><a id="line.303">  }</a>
-<span class="sourceLineNo">304</span><a id="line.304"></a>
-<span class="sourceLineNo">305</span><a id="line.305">  /**</a>
-<span class="sourceLineNo">306</span><a id="line.306">   * Updates the the Unscented Kalman Filter using only wheel encoder information. This should be</a>
-<span class="sourceLineNo">307</span><a id="line.307">   * called every loop, and the correct loop period must be passed into the constructor of this</a>
-<span class="sourceLineNo">308</span><a id="line.308">   * class.</a>
-<span class="sourceLineNo">309</span><a id="line.309">   *</a>
-<span class="sourceLineNo">310</span><a id="line.310">   * @param gyroAngle The current gyro angle.</a>
-<span class="sourceLineNo">311</span><a id="line.311">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</a>
-<span class="sourceLineNo">312</span><a id="line.312">   * @param wheelPositions The distances driven by each wheel.</a>
-<span class="sourceLineNo">313</span><a id="line.313">   * @return The estimated pose of the robot in meters.</a>
-<span class="sourceLineNo">314</span><a id="line.314">   */</a>
-<span class="sourceLineNo">315</span><a id="line.315">  public Pose2d update(</a>
-<span class="sourceLineNo">316</span><a id="line.316">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">317</span><a id="line.317">      MecanumDriveWheelSpeeds wheelSpeeds,</a>
-<span class="sourceLineNo">318</span><a id="line.318">      MecanumDriveWheelPositions wheelPositions) {</a>
-<span class="sourceLineNo">319</span><a id="line.319">    return updateWithTime(WPIUtilJNI.now() * 1.0e-6, gyroAngle, wheelSpeeds, wheelPositions);</a>
-<span class="sourceLineNo">320</span><a id="line.320">  }</a>
-<span class="sourceLineNo">321</span><a id="line.321"></a>
-<span class="sourceLineNo">322</span><a id="line.322">  /**</a>
-<span class="sourceLineNo">323</span><a id="line.323">   * Updates the the Unscented Kalman Filter using only wheel encoder information. This should be</a>
-<span class="sourceLineNo">324</span><a id="line.324">   * called every loop, and the correct loop period must be passed into the constructor of this</a>
-<span class="sourceLineNo">325</span><a id="line.325">   * class.</a>
-<span class="sourceLineNo">326</span><a id="line.326">   *</a>
-<span class="sourceLineNo">327</span><a id="line.327">   * @param currentTimeSeconds Time at which this method was called, in seconds.</a>
-<span class="sourceLineNo">328</span><a id="line.328">   * @param gyroAngle The current gyroscope angle.</a>
-<span class="sourceLineNo">329</span><a id="line.329">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</a>
-<span class="sourceLineNo">330</span><a id="line.330">   * @param wheelPositions The distances driven by each wheel.</a>
-<span class="sourceLineNo">331</span><a id="line.331">   * @return The estimated pose of the robot in meters.</a>
-<span class="sourceLineNo">332</span><a id="line.332">   */</a>
-<span class="sourceLineNo">333</span><a id="line.333">  public Pose2d updateWithTime(</a>
-<span class="sourceLineNo">334</span><a id="line.334">      double currentTimeSeconds,</a>
-<span class="sourceLineNo">335</span><a id="line.335">      Rotation2d gyroAngle,</a>
-<span class="sourceLineNo">336</span><a id="line.336">      MecanumDriveWheelSpeeds wheelSpeeds,</a>
-<span class="sourceLineNo">337</span><a id="line.337">      MecanumDriveWheelPositions wheelPositions) {</a>
-<span class="sourceLineNo">338</span><a id="line.338">    double dt = m_prevTimeSeconds &gt;= 0 ? currentTimeSeconds - m_prevTimeSeconds : m_nominalDt;</a>
-<span class="sourceLineNo">339</span><a id="line.339">    m_prevTimeSeconds = currentTimeSeconds;</a>
-<span class="sourceLineNo">340</span><a id="line.340"></a>
-<span class="sourceLineNo">341</span><a id="line.341">    var angle = gyroAngle.plus(m_gyroOffset);</a>
-<span class="sourceLineNo">342</span><a id="line.342">    var omega = angle.minus(m_previousAngle).getRadians() / dt;</a>
-<span class="sourceLineNo">343</span><a id="line.343"></a>
-<span class="sourceLineNo">344</span><a id="line.344">    var chassisSpeeds = m_kinematics.toChassisSpeeds(wheelSpeeds);</a>
-<span class="sourceLineNo">345</span><a id="line.345">    var fieldRelativeVelocities =</a>
-<span class="sourceLineNo">346</span><a id="line.346">        new Translation2d(chassisSpeeds.vxMetersPerSecond, chassisSpeeds.vyMetersPerSecond)</a>
-<span class="sourceLineNo">347</span><a id="line.347">            .rotateBy(angle);</a>
-<span class="sourceLineNo">348</span><a id="line.348"></a>
-<span class="sourceLineNo">349</span><a id="line.349">    var u =</a>
-<span class="sourceLineNo">350</span><a id="line.350">        VecBuilder.fill(</a>
-<span class="sourceLineNo">351</span><a id="line.351">            fieldRelativeVelocities.getX(),</a>
-<span class="sourceLineNo">352</span><a id="line.352">            fieldRelativeVelocities.getY(),</a>
-<span class="sourceLineNo">353</span><a id="line.353">            omega,</a>
-<span class="sourceLineNo">354</span><a id="line.354">            wheelSpeeds.frontLeftMetersPerSecond,</a>
-<span class="sourceLineNo">355</span><a id="line.355">            wheelSpeeds.frontRightMetersPerSecond,</a>
-<span class="sourceLineNo">356</span><a id="line.356">            wheelSpeeds.rearLeftMetersPerSecond,</a>
-<span class="sourceLineNo">357</span><a id="line.357">            wheelSpeeds.rearRightMetersPerSecond);</a>
-<span class="sourceLineNo">358</span><a id="line.358">    m_previousAngle = angle;</a>
-<span class="sourceLineNo">359</span><a id="line.359"></a>
-<span class="sourceLineNo">360</span><a id="line.360">    var localY =</a>
-<span class="sourceLineNo">361</span><a id="line.361">        VecBuilder.fill(</a>
-<span class="sourceLineNo">362</span><a id="line.362">            angle.getRadians(),</a>
-<span class="sourceLineNo">363</span><a id="line.363">            wheelPositions.frontLeftMeters,</a>
-<span class="sourceLineNo">364</span><a id="line.364">            wheelPositions.frontRightMeters,</a>
-<span class="sourceLineNo">365</span><a id="line.365">            wheelPositions.rearLeftMeters,</a>
-<span class="sourceLineNo">366</span><a id="line.366">            wheelPositions.rearRightMeters);</a>
-<span class="sourceLineNo">367</span><a id="line.367">    m_poseBuffer.addSample(currentTimeSeconds, getEstimatedPosition());</a>
-<span class="sourceLineNo">368</span><a id="line.368">    m_observer.predict(u, dt);</a>
-<span class="sourceLineNo">369</span><a id="line.369">    m_observer.correct(u, localY);</a>
-<span class="sourceLineNo">370</span><a id="line.370"></a>
-<span class="sourceLineNo">371</span><a id="line.371">    return getEstimatedPosition();</a>
-<span class="sourceLineNo">372</span><a id="line.372">  }</a>
-<span class="sourceLineNo">373</span><a id="line.373">}</a>
+<span class="sourceLineNo">228</span><a id="line.228">    m_gyroOffset = getEstimatedPosition().getRotation().minus(gyroAngle);</a>
+<span class="sourceLineNo">229</span><a id="line.229">    m_previousAngle = poseMeters.getRotation();</a>
+<span class="sourceLineNo">230</span><a id="line.230">  }</a>
+<span class="sourceLineNo">231</span><a id="line.231"></a>
+<span class="sourceLineNo">232</span><a id="line.232">  /**</a>
+<span class="sourceLineNo">233</span><a id="line.233">   * Gets the pose of the robot at the current time as estimated by the Unscented Kalman Filter.</a>
+<span class="sourceLineNo">234</span><a id="line.234">   *</a>
+<span class="sourceLineNo">235</span><a id="line.235">   * @return The estimated robot pose in meters.</a>
+<span class="sourceLineNo">236</span><a id="line.236">   */</a>
+<span class="sourceLineNo">237</span><a id="line.237">  public Pose2d getEstimatedPosition() {</a>
+<span class="sourceLineNo">238</span><a id="line.238">    return new Pose2d(</a>
+<span class="sourceLineNo">239</span><a id="line.239">        m_observer.getXhat(0), m_observer.getXhat(1), new Rotation2d(m_observer.getXhat(2)));</a>
+<span class="sourceLineNo">240</span><a id="line.240">  }</a>
+<span class="sourceLineNo">241</span><a id="line.241"></a>
+<span class="sourceLineNo">242</span><a id="line.242">  /**</a>
+<span class="sourceLineNo">243</span><a id="line.243">   * Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose</a>
+<span class="sourceLineNo">244</span><a id="line.244">   * estimate while still accounting for measurement noise.</a>
+<span class="sourceLineNo">245</span><a id="line.245">   *</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * &lt;p&gt;This method can be called as infrequently as you want, as long as you are calling {@link</a>
+<span class="sourceLineNo">247</span><a id="line.247">   * MecanumDrivePoseEstimator#update} every loop.</a>
+<span class="sourceLineNo">248</span><a id="line.248">   *</a>
+<span class="sourceLineNo">249</span><a id="line.249">   * &lt;p&gt;To promote stability of the pose estimate and make it robust to bad vision data, we</a>
+<span class="sourceLineNo">250</span><a id="line.250">   * recommend only adding vision measurements that are already within one meter or so of the</a>
+<span class="sourceLineNo">251</span><a id="line.251">   * current pose estimate.</a>
+<span class="sourceLineNo">252</span><a id="line.252">   *</a>
+<span class="sourceLineNo">253</span><a id="line.253">   * @param visionRobotPoseMeters The pose of the robot as measured by the vision camera.</a>
+<span class="sourceLineNo">254</span><a id="line.254">   * @param timestampSeconds The timestamp of the vision measurement in seconds. Note that if you</a>
+<span class="sourceLineNo">255</span><a id="line.255">   *     don't use your own time source by calling {@link MecanumDrivePoseEstimator#updateWithTime}</a>
+<span class="sourceLineNo">256</span><a id="line.256">   *     then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this</a>
+<span class="sourceLineNo">257</span><a id="line.257">   *     timestamp is the same epoch as Timer.getFPGATimestamp.) This means that you should use</a>
+<span class="sourceLineNo">258</span><a id="line.258">   *     Timer.getFPGATimestamp as your time source or sync the epochs.</a>
+<span class="sourceLineNo">259</span><a id="line.259">   */</a>
+<span class="sourceLineNo">260</span><a id="line.260">  public void addVisionMeasurement(Pose2d visionRobotPoseMeters, double timestampSeconds) {</a>
+<span class="sourceLineNo">261</span><a id="line.261">    var sample = m_poseBuffer.getSample(timestampSeconds);</a>
+<span class="sourceLineNo">262</span><a id="line.262">    if (sample.isPresent()) {</a>
+<span class="sourceLineNo">263</span><a id="line.263">      m_visionCorrect.accept(</a>
+<span class="sourceLineNo">264</span><a id="line.264">          new MatBuilder&lt;&gt;(Nat.N7(), Nat.N1()).fill(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0),</a>
+<span class="sourceLineNo">265</span><a id="line.265">          StateSpaceUtil.poseTo3dVector(</a>
+<span class="sourceLineNo">266</span><a id="line.266">              getEstimatedPosition().transformBy(visionRobotPoseMeters.minus(sample.get()))));</a>
+<span class="sourceLineNo">267</span><a id="line.267">    }</a>
+<span class="sourceLineNo">268</span><a id="line.268">  }</a>
+<span class="sourceLineNo">269</span><a id="line.269"></a>
+<span class="sourceLineNo">270</span><a id="line.270">  /**</a>
+<span class="sourceLineNo">271</span><a id="line.271">   * Add a vision measurement to the Unscented Kalman Filter. This will correct the odometry pose</a>
+<span class="sourceLineNo">272</span><a id="line.272">   * estimate while still accounting for measurement noise.</a>
+<span class="sourceLineNo">273</span><a id="line.273">   *</a>
+<span class="sourceLineNo">274</span><a id="line.274">   * &lt;p&gt;This method can be called as infrequently as you want, as long as you are calling {@link</a>
+<span class="sourceLineNo">275</span><a id="line.275">   * MecanumDrivePoseEstimator#update} every loop.</a>
+<span class="sourceLineNo">276</span><a id="line.276">   *</a>
+<span class="sourceLineNo">277</span><a id="line.277">   * &lt;p&gt;To promote stability of the pose estimate and make it robust to bad vision data, we</a>
+<span class="sourceLineNo">278</span><a id="line.278">   * recommend only adding vision measurements that are already within one meter or so of the</a>
+<span class="sourceLineNo">279</span><a id="line.279">   * current pose estimate.</a>
+<span class="sourceLineNo">280</span><a id="line.280">   *</a>
+<span class="sourceLineNo">281</span><a id="line.281">   * &lt;p&gt;Note that the vision measurement standard deviations passed into this method will continue</a>
+<span class="sourceLineNo">282</span><a id="line.282">   * to apply to future measurements until a subsequent call to {@link</a>
+<span class="sourceLineNo">283</span><a id="line.283">   * MecanumDrivePoseEstimator#setVisionMeasurementStdDevs(Matrix)} or this method.</a>
+<span class="sourceLineNo">284</span><a id="line.284">   *</a>
+<span class="sourceLineNo">285</span><a id="line.285">   * @param visionRobotPoseMeters The pose of the robot as measured by the vision camera.</a>
+<span class="sourceLineNo">286</span><a id="line.286">   * @param timestampSeconds The timestamp of the vision measurement in seconds. Note that if you</a>
+<span class="sourceLineNo">287</span><a id="line.287">   *     don't use your own time source by calling {@link MecanumDrivePoseEstimator#updateWithTime}</a>
+<span class="sourceLineNo">288</span><a id="line.288">   *     then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this</a>
+<span class="sourceLineNo">289</span><a id="line.289">   *     timestamp is the same epoch as Timer.getFPGATimestamp.) This means that you should use</a>
+<span class="sourceLineNo">290</span><a id="line.290">   *     Timer.getFPGATimestamp as your time source in this case.</a>
+<span class="sourceLineNo">291</span><a id="line.291">   * @param visionMeasurementStdDevs Standard deviations of the vision measurements. Increase these</a>
+<span class="sourceLineNo">292</span><a id="line.292">   *     numbers to trust global measurements from vision less. This matrix is in the form [x, y,</a>
+<span class="sourceLineNo">293</span><a id="line.293">   *     theta]ᵀ, with units in meters and radians.</a>
+<span class="sourceLineNo">294</span><a id="line.294">   */</a>
+<span class="sourceLineNo">295</span><a id="line.295">  public void addVisionMeasurement(</a>
+<span class="sourceLineNo">296</span><a id="line.296">      Pose2d visionRobotPoseMeters,</a>
+<span class="sourceLineNo">297</span><a id="line.297">      double timestampSeconds,</a>
+<span class="sourceLineNo">298</span><a id="line.298">      Matrix&lt;N3, N1&gt; visionMeasurementStdDevs) {</a>
+<span class="sourceLineNo">299</span><a id="line.299">    setVisionMeasurementStdDevs(visionMeasurementStdDevs);</a>
+<span class="sourceLineNo">300</span><a id="line.300">    addVisionMeasurement(visionRobotPoseMeters, timestampSeconds);</a>
+<span class="sourceLineNo">301</span><a id="line.301">  }</a>
+<span class="sourceLineNo">302</span><a id="line.302"></a>
+<span class="sourceLineNo">303</span><a id="line.303">  /**</a>
+<span class="sourceLineNo">304</span><a id="line.304">   * Updates the the Unscented Kalman Filter using only wheel encoder information. This should be</a>
+<span class="sourceLineNo">305</span><a id="line.305">   * called every loop, and the correct loop period must be passed into the constructor of this</a>
+<span class="sourceLineNo">306</span><a id="line.306">   * class.</a>
+<span class="sourceLineNo">307</span><a id="line.307">   *</a>
+<span class="sourceLineNo">308</span><a id="line.308">   * @param gyroAngle The current gyro angle.</a>
+<span class="sourceLineNo">309</span><a id="line.309">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</a>
+<span class="sourceLineNo">310</span><a id="line.310">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">311</span><a id="line.311">   * @return The estimated pose of the robot in meters.</a>
+<span class="sourceLineNo">312</span><a id="line.312">   */</a>
+<span class="sourceLineNo">313</span><a id="line.313">  public Pose2d update(</a>
+<span class="sourceLineNo">314</span><a id="line.314">      Rotation2d gyroAngle,</a>
+<span class="sourceLineNo">315</span><a id="line.315">      MecanumDriveWheelSpeeds wheelSpeeds,</a>
+<span class="sourceLineNo">316</span><a id="line.316">      MecanumDriveWheelPositions wheelPositions) {</a>
+<span class="sourceLineNo">317</span><a id="line.317">    return updateWithTime(WPIUtilJNI.now() * 1.0e-6, gyroAngle, wheelSpeeds, wheelPositions);</a>
+<span class="sourceLineNo">318</span><a id="line.318">  }</a>
+<span class="sourceLineNo">319</span><a id="line.319"></a>
+<span class="sourceLineNo">320</span><a id="line.320">  /**</a>
+<span class="sourceLineNo">321</span><a id="line.321">   * Updates the the Unscented Kalman Filter using only wheel encoder information. This should be</a>
+<span class="sourceLineNo">322</span><a id="line.322">   * called every loop, and the correct loop period must be passed into the constructor of this</a>
+<span class="sourceLineNo">323</span><a id="line.323">   * class.</a>
+<span class="sourceLineNo">324</span><a id="line.324">   *</a>
+<span class="sourceLineNo">325</span><a id="line.325">   * @param currentTimeSeconds Time at which this method was called, in seconds.</a>
+<span class="sourceLineNo">326</span><a id="line.326">   * @param gyroAngle The current gyroscope angle.</a>
+<span class="sourceLineNo">327</span><a id="line.327">   * @param wheelSpeeds The current speeds of the mecanum drive wheels.</a>
+<span class="sourceLineNo">328</span><a id="line.328">   * @param wheelPositions The distances driven by each wheel.</a>
+<span class="sourceLineNo">329</span><a id="line.329">   * @return The estimated pose of the robot in meters.</a>
+<span class="sourceLineNo">330</span><a id="line.330">   */</a>
+<span class="sourceLineNo">331</span><a id="line.331">  public Pose2d updateWithTime(</a>
+<span class="sourceLineNo">332</span><a id="line.332">      double currentTimeSeconds,</a>
+<span class="sourceLineNo">333</span><a id="line.333">      Rotation2d gyroAngle,</a>
+<span class="sourceLineNo">334</span><a id="line.334">      MecanumDriveWheelSpeeds wheelSpeeds,</a>
+<span class="sourceLineNo">335</span><a id="line.335">      MecanumDriveWheelPositions wheelPositions) {</a>
+<span class="sourceLineNo">336</span><a id="line.336">    double dt = m_prevTimeSeconds &gt;= 0 ? currentTimeSeconds - m_prevTimeSeconds : m_nominalDt;</a>
+<span class="sourceLineNo">337</span><a id="line.337">    m_prevTimeSeconds = currentTimeSeconds;</a>
+<span class="sourceLineNo">338</span><a id="line.338"></a>
+<span class="sourceLineNo">339</span><a id="line.339">    var angle = gyroAngle.plus(m_gyroOffset);</a>
+<span class="sourceLineNo">340</span><a id="line.340">    var omega = angle.minus(m_previousAngle).getRadians() / dt;</a>
+<span class="sourceLineNo">341</span><a id="line.341"></a>
+<span class="sourceLineNo">342</span><a id="line.342">    var chassisSpeeds = m_kinematics.toChassisSpeeds(wheelSpeeds);</a>
+<span class="sourceLineNo">343</span><a id="line.343">    var fieldRelativeVelocities =</a>
+<span class="sourceLineNo">344</span><a id="line.344">        new Translation2d(chassisSpeeds.vxMetersPerSecond, chassisSpeeds.vyMetersPerSecond)</a>
+<span class="sourceLineNo">345</span><a id="line.345">            .rotateBy(angle);</a>
+<span class="sourceLineNo">346</span><a id="line.346"></a>
+<span class="sourceLineNo">347</span><a id="line.347">    var u =</a>
+<span class="sourceLineNo">348</span><a id="line.348">        VecBuilder.fill(</a>
+<span class="sourceLineNo">349</span><a id="line.349">            fieldRelativeVelocities.getX(),</a>
+<span class="sourceLineNo">350</span><a id="line.350">            fieldRelativeVelocities.getY(),</a>
+<span class="sourceLineNo">351</span><a id="line.351">            omega,</a>
+<span class="sourceLineNo">352</span><a id="line.352">            wheelSpeeds.frontLeftMetersPerSecond,</a>
+<span class="sourceLineNo">353</span><a id="line.353">            wheelSpeeds.frontRightMetersPerSecond,</a>
+<span class="sourceLineNo">354</span><a id="line.354">            wheelSpeeds.rearLeftMetersPerSecond,</a>
+<span class="sourceLineNo">355</span><a id="line.355">            wheelSpeeds.rearRightMetersPerSecond);</a>
+<span class="sourceLineNo">356</span><a id="line.356">    m_previousAngle = angle;</a>
+<span class="sourceLineNo">357</span><a id="line.357"></a>
+<span class="sourceLineNo">358</span><a id="line.358">    var localY =</a>
+<span class="sourceLineNo">359</span><a id="line.359">        VecBuilder.fill(</a>
+<span class="sourceLineNo">360</span><a id="line.360">            angle.getRadians(),</a>
+<span class="sourceLineNo">361</span><a id="line.361">            wheelPositions.frontLeftMeters,</a>
+<span class="sourceLineNo">362</span><a id="line.362">            wheelPositions.frontRightMeters,</a>
+<span class="sourceLineNo">363</span><a id="line.363">            wheelPositions.rearLeftMeters,</a>
+<span class="sourceLineNo">364</span><a id="line.364">            wheelPositions.rearRightMeters);</a>
+<span class="sourceLineNo">365</span><a id="line.365">    m_poseBuffer.addSample(currentTimeSeconds, getEstimatedPosition());</a>
+<span class="sourceLineNo">366</span><a id="line.366">    m_observer.predict(u, dt);</a>
+<span class="sourceLineNo">367</span><a id="line.367">    m_observer.correct(u, localY);</a>
+<span class="sourceLineNo">368</span><a id="line.368"></a>
+<span class="sourceLineNo">369</span><a id="line.369">    return getEstimatedPosition();</a>
+<span class="sourceLineNo">370</span><a id="line.370">  }</a>
+<span class="sourceLineNo">371</span><a id="line.371">}</a>
 
 
 
