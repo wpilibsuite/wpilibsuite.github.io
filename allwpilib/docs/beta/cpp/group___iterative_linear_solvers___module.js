@@ -1,15 +1,5 @@
 var group___iterative_linear_solvers___module =
 [
-    [ "Eigen::LeastSquaresConjugateGradient< _MatrixType, _Preconditioner >", "class_eigen_1_1_least_squares_conjugate_gradient.html", [
-      [ "MatrixType", "class_eigen_1_1_least_squares_conjugate_gradient.html#a56c5362953670bfd8cfa31a51d18ee47", null ],
-      [ "Preconditioner", "class_eigen_1_1_least_squares_conjugate_gradient.html#addeb2525fd746662bee305d73f360204", null ],
-      [ "RealScalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a81b0c2843b7d4118c8cf0529bc21924d", null ],
-      [ "Scalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a9b8be7215e7a9d0871517ccee24d9857", null ],
-      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#ace69f423fcc1f8960d0e2de0667447c9", null ],
-      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a91c4f2edc20f93cee9b721165937fb99", null ],
-      [ "~LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a4be76cc34fe7493c522a67e9952621ab", null ],
-      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_least_squares_conjugate_gradient.html#adf832ac8dac045588f2157b9e9697211", null ]
-    ] ],
     [ "Eigen::DiagonalPreconditioner< _Scalar >", "class_eigen_1_1_diagonal_preconditioner.html", [
       [ "StorageIndex", "class_eigen_1_1_diagonal_preconditioner.html#a21a4ddda2e64177b5afc4c7c45a6ced9", null ],
       [ "DiagonalPreconditioner", "class_eigen_1_1_diagonal_preconditioner.html#ae7d19e26de3f8c96f659356b9453a788", null ],
@@ -41,26 +31,6 @@ var group___iterative_linear_solvers___module =
       [ "factorize", "class_eigen_1_1_identity_preconditioner.html#ae893d56f49b8df745fa8af243830864e", null ],
       [ "info", "class_eigen_1_1_identity_preconditioner.html#a450681df926cb312fc71a324e150340c", null ],
       [ "solve", "class_eigen_1_1_identity_preconditioner.html#a7ae8e169e407ffb7cb9d9d6e2e8c27cc", null ]
-    ] ],
-    [ "Eigen::ConjugateGradient< _MatrixType, _UpLo, _Preconditioner >", "class_eigen_1_1_conjugate_gradient.html", [
-      [ "MatrixType", "class_eigen_1_1_conjugate_gradient.html#ac7e663c3436a92b0c2f45b288fbc1bb9", null ],
-      [ "Preconditioner", "class_eigen_1_1_conjugate_gradient.html#a3d4ee165efe6de3647f9a1bc8074b8f0", null ],
-      [ "RealScalar", "class_eigen_1_1_conjugate_gradient.html#aa29f85be5f03e532742c148d00cd56b8", null ],
-      [ "Scalar", "class_eigen_1_1_conjugate_gradient.html#a8c5a83c590bec382e23713092bfeec3f", null ],
-      [ "ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#a92a9656ca9fa4da240194f89229255eb", null ],
-      [ "ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#ac10f778fcd137eca1f6057c8ddd3d644", null ],
-      [ "~ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#a9c1c5dc0312d20074ecf1fb3874bd1ff", null ],
-      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_conjugate_gradient.html#a8567a9ef1f9b2c4ed182e0e0c16d90f2", null ]
-    ] ],
-    [ "Eigen::BiCGSTAB< _MatrixType, _Preconditioner >", "class_eigen_1_1_bi_c_g_s_t_a_b.html", [
-      [ "MatrixType", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a32fdde20d29016946ae69b4ed5915f22", null ],
-      [ "Preconditioner", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae530e71021e146c29a47e4d634c279ff", null ],
-      [ "RealScalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a04cd3a89fc09e4fc6a464ee879caa3db", null ],
-      [ "Scalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ac52ea7eaf5cfde0eef5f846e95f49e02", null ],
-      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae1a0df6ef6e947256c3cb83ce7df7eda", null ],
-      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a5842afd9566e254bc727de1fd7f46362", null ],
-      [ "~BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ab478a5cee2227902a89b50a353f055b2", null ],
-      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ad46ef9e0f49aa9b71560249db89d6096", null ]
     ] ],
     [ "Eigen::IterativeSolverBase< Derived >", "class_eigen_1_1_iterative_solver_base.html", [
       [ "ActualMatrixType", "class_eigen_1_1_iterative_solver_base.html#a483da55fcd8ca464e36f06af7e865bba", null ],
@@ -109,20 +79,35 @@ var group___iterative_linear_solvers___module =
       [ "m_preconditioner", "class_eigen_1_1_iterative_solver_base.html#a965e3600bc2a59bc24af0bdf8e7f4dd4", null ],
       [ "m_tolerance", "class_eigen_1_1_iterative_solver_base.html#acf34fdb3eb17a876810b9d6c5031e175", null ]
     ] ],
-    [ "Eigen::SolveWithGuess< Decomposition, RhsType, GuessType >", "class_eigen_1_1_solve_with_guess.html", [
-      [ "Base", "class_eigen_1_1_solve_with_guess.html#a8bd0574a02ff441f362215cd309ac93a", null ],
-      [ "Nested", "class_eigen_1_1_solve_with_guess.html#adea6251ef44d86ce8b8168d031362b76", null ],
-      [ "PlainObject", "class_eigen_1_1_solve_with_guess.html#a028591bc4ab3fd37657a4a4e88833e3a", null ],
-      [ "Scalar", "class_eigen_1_1_solve_with_guess.html#aa16d60b352ae942494ea37b974ac7b43", null ],
-      [ "SolveWithGuess", "class_eigen_1_1_solve_with_guess.html#ae703bda1fcae1dc8d60078fdd4a8ca06", null ],
-      [ "cols", "class_eigen_1_1_solve_with_guess.html#acb83ea0f9262595fdd432345e8597f7b", null ],
-      [ "dec", "class_eigen_1_1_solve_with_guess.html#a8e37c53f9ef7ccb62cd824f2ea25c2bf", null ],
-      [ "guess", "class_eigen_1_1_solve_with_guess.html#a2f00b75d6bc156e536aea038238aa31d", null ],
-      [ "rhs", "class_eigen_1_1_solve_with_guess.html#a006e5e7d6152f3cb58e8adb8b385075e", null ],
-      [ "rows", "class_eigen_1_1_solve_with_guess.html#a63583e6c69c5a2f58f04d4f79ec6c1f3", null ],
-      [ "m_dec", "class_eigen_1_1_solve_with_guess.html#ab9f552564073250e8093d05503dbe4a5", null ],
-      [ "m_guess", "class_eigen_1_1_solve_with_guess.html#a0943a61d3c7c8f4bb70828399a682fcf", null ],
-      [ "m_rhs", "class_eigen_1_1_solve_with_guess.html#a5b3fe2344b9f82e8df3960152e87967c", null ]
+    [ "Eigen::BiCGSTAB< _MatrixType, _Preconditioner >", "class_eigen_1_1_bi_c_g_s_t_a_b.html", [
+      [ "MatrixType", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a32fdde20d29016946ae69b4ed5915f22", null ],
+      [ "Preconditioner", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae530e71021e146c29a47e4d634c279ff", null ],
+      [ "RealScalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a04cd3a89fc09e4fc6a464ee879caa3db", null ],
+      [ "Scalar", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ac52ea7eaf5cfde0eef5f846e95f49e02", null ],
+      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ae1a0df6ef6e947256c3cb83ce7df7eda", null ],
+      [ "BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#a5842afd9566e254bc727de1fd7f46362", null ],
+      [ "~BiCGSTAB", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ab478a5cee2227902a89b50a353f055b2", null ],
+      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_bi_c_g_s_t_a_b.html#ad46ef9e0f49aa9b71560249db89d6096", null ]
+    ] ],
+    [ "Eigen::LeastSquaresConjugateGradient< _MatrixType, _Preconditioner >", "class_eigen_1_1_least_squares_conjugate_gradient.html", [
+      [ "MatrixType", "class_eigen_1_1_least_squares_conjugate_gradient.html#a56c5362953670bfd8cfa31a51d18ee47", null ],
+      [ "Preconditioner", "class_eigen_1_1_least_squares_conjugate_gradient.html#addeb2525fd746662bee305d73f360204", null ],
+      [ "RealScalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a81b0c2843b7d4118c8cf0529bc21924d", null ],
+      [ "Scalar", "class_eigen_1_1_least_squares_conjugate_gradient.html#a9b8be7215e7a9d0871517ccee24d9857", null ],
+      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#ace69f423fcc1f8960d0e2de0667447c9", null ],
+      [ "LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a91c4f2edc20f93cee9b721165937fb99", null ],
+      [ "~LeastSquaresConjugateGradient", "class_eigen_1_1_least_squares_conjugate_gradient.html#a4be76cc34fe7493c522a67e9952621ab", null ],
+      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_least_squares_conjugate_gradient.html#adf832ac8dac045588f2157b9e9697211", null ]
+    ] ],
+    [ "Eigen::ConjugateGradient< _MatrixType, _UpLo, _Preconditioner >", "class_eigen_1_1_conjugate_gradient.html", [
+      [ "MatrixType", "class_eigen_1_1_conjugate_gradient.html#ac7e663c3436a92b0c2f45b288fbc1bb9", null ],
+      [ "Preconditioner", "class_eigen_1_1_conjugate_gradient.html#a3d4ee165efe6de3647f9a1bc8074b8f0", null ],
+      [ "RealScalar", "class_eigen_1_1_conjugate_gradient.html#aa29f85be5f03e532742c148d00cd56b8", null ],
+      [ "Scalar", "class_eigen_1_1_conjugate_gradient.html#a8c5a83c590bec382e23713092bfeec3f", null ],
+      [ "ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#a92a9656ca9fa4da240194f89229255eb", null ],
+      [ "ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#ac10f778fcd137eca1f6057c8ddd3d644", null ],
+      [ "~ConjugateGradient", "class_eigen_1_1_conjugate_gradient.html#a9c1c5dc0312d20074ecf1fb3874bd1ff", null ],
+      [ "_solve_vector_with_guess_impl", "class_eigen_1_1_conjugate_gradient.html#a8567a9ef1f9b2c4ed182e0e0c16d90f2", null ]
     ] ],
     [ "Eigen::IncompleteLUT< _Scalar, _StorageIndex >", "class_eigen_1_1_incomplete_l_u_t.html", [
       [ "keep_diag", "struct_eigen_1_1_incomplete_l_u_t_1_1keep__diag.html", [
@@ -157,5 +142,20 @@ var group___iterative_linear_solvers___module =
       [ "m_lu", "class_eigen_1_1_incomplete_l_u_t.html#ae2f1c31f87874392c955fab460511d21", null ],
       [ "m_P", "class_eigen_1_1_incomplete_l_u_t.html#af3553f5fb7aa859106c03939e9979635", null ],
       [ "m_Pinv", "class_eigen_1_1_incomplete_l_u_t.html#a652cc8edb84b570f762272f7b63f4238", null ]
+    ] ],
+    [ "Eigen::SolveWithGuess< Decomposition, RhsType, GuessType >", "class_eigen_1_1_solve_with_guess.html", [
+      [ "Base", "class_eigen_1_1_solve_with_guess.html#a8bd0574a02ff441f362215cd309ac93a", null ],
+      [ "Nested", "class_eigen_1_1_solve_with_guess.html#adea6251ef44d86ce8b8168d031362b76", null ],
+      [ "PlainObject", "class_eigen_1_1_solve_with_guess.html#a028591bc4ab3fd37657a4a4e88833e3a", null ],
+      [ "Scalar", "class_eigen_1_1_solve_with_guess.html#aa16d60b352ae942494ea37b974ac7b43", null ],
+      [ "SolveWithGuess", "class_eigen_1_1_solve_with_guess.html#ae703bda1fcae1dc8d60078fdd4a8ca06", null ],
+      [ "cols", "class_eigen_1_1_solve_with_guess.html#acb83ea0f9262595fdd432345e8597f7b", null ],
+      [ "dec", "class_eigen_1_1_solve_with_guess.html#a8e37c53f9ef7ccb62cd824f2ea25c2bf", null ],
+      [ "guess", "class_eigen_1_1_solve_with_guess.html#a2f00b75d6bc156e536aea038238aa31d", null ],
+      [ "rhs", "class_eigen_1_1_solve_with_guess.html#a006e5e7d6152f3cb58e8adb8b385075e", null ],
+      [ "rows", "class_eigen_1_1_solve_with_guess.html#a63583e6c69c5a2f58f04d4f79ec6c1f3", null ],
+      [ "m_dec", "class_eigen_1_1_solve_with_guess.html#ab9f552564073250e8093d05503dbe4a5", null ],
+      [ "m_guess", "class_eigen_1_1_solve_with_guess.html#a0943a61d3c7c8f4bb70828399a682fcf", null ],
+      [ "m_rhs", "class_eigen_1_1_solve_with_guess.html#a5b3fe2344b9f82e8df3960152e87967c", null ]
     ] ]
 ];

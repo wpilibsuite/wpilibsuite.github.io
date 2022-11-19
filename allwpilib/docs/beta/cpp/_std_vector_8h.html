@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -145,12 +145,12 @@ Macros</h2></td></tr>
 <div class="line">    typedef vector&lt;__VA_ARGS__, EIGEN_ALIGNED_ALLOCATOR&lt;__VA_ARGS__&gt; &gt; vector_base; \</div>
 <div class="line">  public: \</div>
 <div class="line">    typedef __VA_ARGS__ value_type; \</div>
-<div class="line">    typedef <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">vector_base::allocator_type</a> <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>; \</div>
+<div class="line">    typedef vector_base::allocator_type allocator_type; \</div>
 <div class="line">    typedef vector_base::size_type size_type;  \</div>
 <div class="line">    typedef vector_base::iterator iterator;  \</div>
-<div class="line">    explicit vector(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>&amp; a = <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>()) : vector_base(a) {}  \</div>
+<div class="line">    explicit vector(<span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : vector_base(a) {}  \</div>
 <div class="line">    template&lt;typename InputIterator&gt; \</div>
-<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>&amp; a = <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>()) : vector_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
+<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : vector_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
 <div class="line">    vector(<span class="keyword">const</span> vector&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) : vector_base(<a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) {}  \</div>
 <div class="line">    explicit vector(size_type num, <span class="keyword">const</span> value_type&amp; val = value_type()) : vector_base(num, val) {} \</div>
 <div class="line">    vector(iterator start_, iterator end_) : vector_base(start_, end_) {}  \</div>
@@ -164,7 +164,6 @@ Macros</h2></td></tr>
 <div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:138</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acfa211a9904208ac580676b5cc42b04a"><div class="ttname"><a href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">units::constants::c</a></div><div class="ttdeci">static constexpr const velocity::meters_per_second_t c(299792458.0)</div><div class="ttdoc">Speed of light in vacuum.</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1traits__detail_html_a5f773cab184a6e0befd318b20808ac00"><div class="ttname"><a href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">wpi::memory::traits_detail::allocator_type</a></div><div class="ttdeci">typename std::decay&lt; typename allocator_type_impl&lt; Allocator &gt;::type &gt;::type allocator_type</div><div class="ttdef"><b>Definition:</b> allocator_traits.hpp:136</div></div>
 </div><!-- fragment -->
 <p>This section contains a convenience MACRO which allows an easy specialization of std::vector such that for data types with alignment issues the correct allocator is used automatically. </p>
 
@@ -183,13 +182,13 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  <span class="keyword">public</span>:  \</div>
 <div class="line">    typedef T value_type; \</div>
-<div class="line">    typedef <span class="keyword">typename</span> <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">vector_base::allocator_type</a> <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>; \</div>
+<div class="line">    typedef <span class="keyword">typename</span> vector_base::allocator_type allocator_type; \</div>
 <div class="line">    typedef <span class="keyword">typename</span> vector_base::size_type size_type;  \</div>
 <div class="line">    typedef <span class="keyword">typename</span> vector_base::iterator iterator;  \</div>
 <div class="line">    typedef <span class="keyword">typename</span> vector_base::const_iterator const_iterator;  \</div>
-<div class="line">    explicit vector(<span class="keyword">const</span> <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>&amp; a = <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>()) : vector_base(a) {}  \</div>
+<div class="line">    explicit vector(<span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : vector_base(a) {}  \</div>
 <div class="line">    template&lt;typename InputIterator&gt; \</div>
-<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>&amp; a = <a class="code hl_typedef" href="namespacewpi_1_1memory_1_1traits__detail.html#a5f773cab184a6e0befd318b20808ac00">allocator_type</a>()) \</div>
+<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) \</div>
 <div class="line">    : vector_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
 <div class="line">    vector(<span class="keyword">const</span> vector&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) : vector_base(<a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) {}  \</div>
 <div class="line">    explicit vector(size_type num, <span class="keyword">const</span> value_type&amp; val = value_type()) : vector_base(num, val) {} \</div>
@@ -207,7 +206,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_692fa8405538ab7865292b691d361c0e.html">StlSupport</a></li><li class="navelem"><a class="el" href="_std_vector_8h.html">StdVector.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

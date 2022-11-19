@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -187,6 +187,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0774dd503e82b8c40edd68bfd393b6eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">HasRequirement</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *requirement) const</td></tr>
 <tr class="memdesc:a0774dd503e82b8c40edd68bfd393b6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command requires a given subsystem.  <a href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">More...</a><br /></td></tr>
 <tr class="separator:a0774dd503e82b8c40edd68bfd393b6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974c807a9e063a3cc330c9c08bf29687"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a974c807a9e063a3cc330c9c08bf29687">operator bool</a> () const</td></tr>
+<tr class="memdesc:a974c807a9e063a3cc330c9c08bf29687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this <a class="el" href="classfrc2_1_1_command_ptr.html" title="A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.">CommandPtr</a> object is valid and wasn't moved-from.  <a href="classfrc2_1_1_command_ptr.html#a974c807a9e063a3cc330c9c08bf29687">More...</a><br /></td></tr>
+<tr class="separator:a974c807a9e063a3cc330c9c08bf29687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -733,6 +736,33 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
+<a id="a974c807a9e063a3cc330c9c08bf29687" name="a974c807a9e063a3cc330c9c08bf29687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a974c807a9e063a3cc330c9c08bf29687">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc2::CommandPtr::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if this <a class="el" href="classfrc2_1_1_command_ptr.html" title="A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.">CommandPtr</a> object is valid and wasn't moved-from. </p>
+
+</div>
+</div>
 <a id="acf315b2f0197ccd414fc20d9e25259e6" name="acf315b2f0197ccd414fc20d9e25259e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf315b2f0197ccd414fc20d9e25259e6">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -994,7 +1024,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('wpinet_2src_2main_2native_2include_2wp
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_timer.html#aab3d0bbf0fde5426db2aa02cdfc75bc3">   68</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_timer.html#aab3d0bbf0fde5426db2aa02cdfc75bc3">SingleShot</a>(<span class="keyword">const</span> std::shared_ptr&lt;Loop&gt;&amp; loop, <a class="code hl_typedef" href="classwpi_1_1uv_1_1_timer.html#ad766cbba1cd9695e8ba2fbff6d8e0485">Time</a> <a class="code hl_variable" href="classwpi_1_1uv_1_1_timer.html#a7739213e3b4ad87d1ca35f24b692c821">timeout</a>,</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                         std::function&lt;<span class="keywordtype">void</span>()&gt; func) {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_timer.html#a00b72760ae9656b50a77f5cdd333e03a">SingleShot</a>(*loop, <a class="code hl_variable" href="classwpi_1_1uv_1_1_timer.html#a7739213e3b4ad87d1ca35f24b692c821">timeout</a>, <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(func));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_timer.html#a00b72760ae9656b50a77f5cdd333e03a">SingleShot</a>(*loop, <a class="code hl_variable" href="classwpi_1_1uv_1_1_timer.html#a7739213e3b4ad87d1ca35f24b692c821">timeout</a>, std::move(func));</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"></span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  /**</span></div>
@@ -260,8 +260,7 @@ $(document).ready(function(){initNavTree('wpinet_2src_2main_2native_2include_2wp
 <div class="ttc" id="aclasswpi_1_1uv_1_1_timer_html_af1c65999d2c52d6c837c952df4c0840a"><div class="ttname"><a href="classwpi_1_1uv_1_1_timer.html#af1c65999d2c52d6c837c952df4c0840a">wpi::uv::Timer::Start</a></div><div class="ttdeci">void Start(Time timeout, Time repeat=Time{0})</div><div class="ttdoc">Start the timer.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_timer_html_af6527ae2ce3a390db3b2f111b3050a52"><div class="ttname"><a href="classwpi_1_1uv_1_1_timer.html#af6527ae2ce3a390db3b2f111b3050a52">wpi::uv::Timer::~Timer</a></div><div class="ttdeci">~Timer() noexcept override=default</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
-<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> ParallelTcpConnector.h:22</div></div>
+<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> Error.h:10</div></div>
 <div class="ttc" id="auv_8h_html"><div class="ttname"><a href="uv_8h.html">uv.h</a></div></div>
 <div class="ttc" id="auv_8h_html_a7e95cc5977a76278100fa25ff7b4eab4"><div class="ttname"><a href="uv_8h.html#a7e95cc5977a76278100fa25ff7b4eab4">uv_timer_stop</a></div><div class="ttdeci">UV_EXTERN int uv_timer_stop(uv_timer_t *handle)</div></div>
 <div class="ttc" id="auv_8h_html_ab5816bc9fbdf6c5bd2a9b29cdd3b91aa"><div class="ttname"><a href="uv_8h.html#ab5816bc9fbdf6c5bd2a9b29cdd3b91aa">uv_timer_get_repeat</a></div><div class="ttdeci">UV_EXTERN uint64_t uv_timer_get_repeat(const uv_timer_t *handle)</div></div>
@@ -275,7 +274,7 @@ $(document).ready(function(){initNavTree('wpinet_2src_2main_2native_2include_2wp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e20957744827ba5726af139111576a9.html">wpinet</a></li><li class="navelem"><a class="el" href="dir_12166d0305ec2caa3943538028d23053.html">uv</a></li><li class="navelem"><a class="el" href="wpinet_2src_2main_2native_2include_2wpinet_2uv_2_timer_8h.html">Timer.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -100,7 +100,6 @@ var menudata={children:[
 {text:"s",url:"namespacemembers_vars.html#index_s"},
 {text:"t",url:"namespacemembers_vars.html#index_t"},
 {text:"u",url:"namespacemembers_vars.html#index_u"},
-{text:"v",url:"namespacemembers_vars.html#index_v"},
 {text:"w",url:"namespacemembers_vars.html#index_w"},
 {text:"y",url:"namespacemembers_vars.html#index_y"}]},
 {text:"Typedefs",url:"namespacemembers_type.html",children:[
@@ -170,7 +169,6 @@ var menudata={children:[
 {text:"v",url:"namespacemembers_eval_v.html#index_v"},
 {text:"w",url:"namespacemembers_eval_w.html#index_w"},
 {text:"z",url:"namespacemembers_eval_z.html#index_z"}]}]}]},
-{text:"Concepts",url:"concepts.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
@@ -355,7 +353,6 @@ var menudata={children:[
 {text:"q",url:"functions_rela_q.html#index_q"},
 {text:"r",url:"functions_rela_r.html#index_r"},
 {text:"s",url:"functions_rela_s.html#index_s"},
-{text:"t",url:"functions_rela_t.html#index_t"},
 {text:"u",url:"functions_rela_u.html#index_u"},
 {text:"v",url:"functions_rela_v.html#index_v"}]}]}]},
 {text:"Files",url:"files.html",children:[

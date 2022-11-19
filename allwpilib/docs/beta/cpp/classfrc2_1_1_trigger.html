@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_trigger.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>This class is a command-based wrapper around <code><a class="el" href="classfrc_1_1_boolean_event.html">frc::BooleanEvent</a></code>, providing an easy way to link commands to inputs.  
+<p>This class provides an easy way to link commands to conditions.  
  <a href="classfrc2_1_1_trigger.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_trigger_8h_source.html">frc2/command/button/Trigger.h</a>&gt;</code></p>
@@ -117,52 +117,52 @@ Inheritance diagram for frc2::Trigger:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:addab140045b805eeb89ed5f140c971bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#addab140045b805eeb89ed5f140c971bc">Trigger</a> (std::function&lt; bool()&gt; isActive)</td></tr>
-<tr class="memdesc:addab140045b805eeb89ed5f140c971bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new trigger with the given condition determining whether it is active.  <a href="classfrc2_1_1_trigger.html#addab140045b805eeb89ed5f140c971bc">More...</a><br /></td></tr>
-<tr class="separator:addab140045b805eeb89ed5f140c971bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e24a8e9e623eabebc315818b2953c27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a2e24a8e9e623eabebc315818b2953c27">Trigger</a> (<a class="el" href="classfrc_1_1_event_loop.html">frc::EventLoop</a> *loop, std::function&lt; bool()&gt; isActive)</td></tr>
-<tr class="memdesc:a2e24a8e9e623eabebc315818b2953c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new trigger that is active when the given condition is true.  <a href="classfrc2_1_1_trigger.html#a2e24a8e9e623eabebc315818b2953c27">More...</a><br /></td></tr>
-<tr class="separator:a2e24a8e9e623eabebc315818b2953c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa07a273d9e93a2fbe38491fbede911a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#afa07a273d9e93a2fbe38491fbede911a">Trigger</a> (std::function&lt; bool()&gt; condition)</td></tr>
+<tr class="memdesc:afa07a273d9e93a2fbe38491fbede911a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new trigger based on the given condition.  <a href="classfrc2_1_1_trigger.html#afa07a273d9e93a2fbe38491fbede911a">More...</a><br /></td></tr>
+<tr class="separator:afa07a273d9e93a2fbe38491fbede911a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35c888fd505843b02d0281a60c9231d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#ae35c888fd505843b02d0281a60c9231d">Trigger</a> (<a class="el" href="classfrc_1_1_event_loop.html">frc::EventLoop</a> *loop, std::function&lt; bool()&gt; condition)</td></tr>
+<tr class="memdesc:ae35c888fd505843b02d0281a60c9231d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new trigger based on the given condition.  <a href="classfrc2_1_1_trigger.html#ae35c888fd505843b02d0281a60c9231d">More...</a><br /></td></tr>
+<tr class="separator:ae35c888fd505843b02d0281a60c9231d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381e99fad0b62ac634ce50816f96ed7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a381e99fad0b62ac634ce50816f96ed7a">Trigger</a> ()</td></tr>
-<tr class="memdesc:a381e99fad0b62ac634ce50816f96ed7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new trigger that is never active (default constructor) - activity can be further determined by subclass code.  <a href="classfrc2_1_1_trigger.html#a381e99fad0b62ac634ce50816f96ed7a">More...</a><br /></td></tr>
+<tr class="memdesc:a381e99fad0b62ac634ce50816f96ed7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new trigger that is always <code>false</code>.  <a href="classfrc2_1_1_trigger.html#a381e99fad0b62ac634ce50816f96ed7a">More...</a><br /></td></tr>
 <tr class="separator:a381e99fad0b62ac634ce50816f96ed7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac25ecb356633650dc86369223641f70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#aac25ecb356633650dc86369223641f70">Trigger</a> (const <a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> &amp;other)</td></tr>
 <tr class="separator:aac25ecb356633650dc86369223641f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98bdc27a66ebe26c19ff493fc54f3fab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a98bdc27a66ebe26c19ff493fc54f3fab">OnTrue</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
-<tr class="memdesc:a98bdc27a66ebe26c19ff493fc54f3fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the signal rises from <code>false</code> to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#a98bdc27a66ebe26c19ff493fc54f3fab">More...</a><br /></td></tr>
+<tr class="memdesc:a98bdc27a66ebe26c19ff493fc54f3fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the condition changes from <code>false</code> to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#a98bdc27a66ebe26c19ff493fc54f3fab">More...</a><br /></td></tr>
 <tr class="separator:a98bdc27a66ebe26c19ff493fc54f3fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a924b719bf6b8a9a040331bcb0de07d60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a924b719bf6b8a9a040331bcb0de07d60">OnTrue</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;command)</td></tr>
-<tr class="memdesc:a924b719bf6b8a9a040331bcb0de07d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the signal rises from <code>false</code> to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#a924b719bf6b8a9a040331bcb0de07d60">More...</a><br /></td></tr>
+<tr class="memdesc:a924b719bf6b8a9a040331bcb0de07d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the condition changes from <code>false</code> to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#a924b719bf6b8a9a040331bcb0de07d60">More...</a><br /></td></tr>
 <tr class="separator:a924b719bf6b8a9a040331bcb0de07d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a71b16a99e74267aa28fe2c9e490168"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a5a71b16a99e74267aa28fe2c9e490168">OnFalse</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
-<tr class="memdesc:a5a71b16a99e74267aa28fe2c9e490168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the signal falls from <code>true</code> to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#a5a71b16a99e74267aa28fe2c9e490168">More...</a><br /></td></tr>
+<tr class="memdesc:a5a71b16a99e74267aa28fe2c9e490168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the condition changes from <code>true</code> to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#a5a71b16a99e74267aa28fe2c9e490168">More...</a><br /></td></tr>
 <tr class="separator:a5a71b16a99e74267aa28fe2c9e490168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fc3205e4d84c6078143bd58b5efccaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a1fc3205e4d84c6078143bd58b5efccaf">OnFalse</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;command)</td></tr>
-<tr class="memdesc:a1fc3205e4d84c6078143bd58b5efccaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the signal falls from <code>true</code> to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#a1fc3205e4d84c6078143bd58b5efccaf">More...</a><br /></td></tr>
+<tr class="memdesc:a1fc3205e4d84c6078143bd58b5efccaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command whenever the condition changes from <code>true</code> to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#a1fc3205e4d84c6078143bd58b5efccaf">More...</a><br /></td></tr>
 <tr class="separator:a1fc3205e4d84c6078143bd58b5efccaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf2ca4623bc2c01ae5ffd3022cd7128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#adbf2ca4623bc2c01ae5ffd3022cd7128">WhileTrue</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
-<tr class="memdesc:adbf2ca4623bc2c01ae5ffd3022cd7128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the signal rises to <code>true</code> and cancels it when the signal falls to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#adbf2ca4623bc2c01ae5ffd3022cd7128">More...</a><br /></td></tr>
+<tr class="memdesc:adbf2ca4623bc2c01ae5ffd3022cd7128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the condition changes to <code>true</code> and cancels it when the condition changes to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#adbf2ca4623bc2c01ae5ffd3022cd7128">More...</a><br /></td></tr>
 <tr class="separator:adbf2ca4623bc2c01ae5ffd3022cd7128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc439608e1788a0bc9646d101e03e75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a4bc439608e1788a0bc9646d101e03e75">WhileTrue</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;command)</td></tr>
-<tr class="memdesc:a4bc439608e1788a0bc9646d101e03e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the signal rises to <code>true</code> and cancels it when the signal falls to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#a4bc439608e1788a0bc9646d101e03e75">More...</a><br /></td></tr>
+<tr class="memdesc:a4bc439608e1788a0bc9646d101e03e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the condition changes to <code>true</code> and cancels it when the condition changes to <code>false</code>.  <a href="classfrc2_1_1_trigger.html#a4bc439608e1788a0bc9646d101e03e75">More...</a><br /></td></tr>
 <tr class="separator:a4bc439608e1788a0bc9646d101e03e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5637b608feb830e5ae002132676f2336"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a5637b608feb830e5ae002132676f2336">WhileFalse</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
-<tr class="memdesc:a5637b608feb830e5ae002132676f2336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the signal falls to <code>false</code> and cancels it when the signal rises.  <a href="classfrc2_1_1_trigger.html#a5637b608feb830e5ae002132676f2336">More...</a><br /></td></tr>
+<tr class="memdesc:a5637b608feb830e5ae002132676f2336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the condition changes to <code>false</code> and cancels it when the condition changes to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#a5637b608feb830e5ae002132676f2336">More...</a><br /></td></tr>
 <tr class="separator:a5637b608feb830e5ae002132676f2336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabaac36b826c84c443221430ae7f73e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#aabaac36b826c84c443221430ae7f73e3">WhileFalse</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;command)</td></tr>
-<tr class="memdesc:aabaac36b826c84c443221430ae7f73e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the signal falls to <code>false</code> and cancels it when the signal rises.  <a href="classfrc2_1_1_trigger.html#aabaac36b826c84c443221430ae7f73e3">More...</a><br /></td></tr>
+<tr class="memdesc:aabaac36b826c84c443221430ae7f73e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given command when the condition changes to <code>false</code> and cancels it when the condition changes to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#aabaac36b826c84c443221430ae7f73e3">More...</a><br /></td></tr>
 <tr class="separator:aabaac36b826c84c443221430ae7f73e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4a0cd5ca454ee6d646704d1bdfed01f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#ab4a0cd5ca454ee6d646704d1bdfed01f">ToggleOnTrue</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
-<tr class="memdesc:ab4a0cd5ca454ee6d646704d1bdfed01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the signal rises from <code>false</code> to the high state.  <a href="classfrc2_1_1_trigger.html#ab4a0cd5ca454ee6d646704d1bdfed01f">More...</a><br /></td></tr>
+<tr class="memdesc:ab4a0cd5ca454ee6d646704d1bdfed01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the condition changes from <code>false</code> to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#ab4a0cd5ca454ee6d646704d1bdfed01f">More...</a><br /></td></tr>
 <tr class="separator:ab4a0cd5ca454ee6d646704d1bdfed01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade76f7151f79c3570eec1ba4261a5e88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#ade76f7151f79c3570eec1ba4261a5e88">ToggleOnTrue</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;command)</td></tr>
-<tr class="memdesc:ade76f7151f79c3570eec1ba4261a5e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the signal rises from <code>false</code> to the high state.  <a href="classfrc2_1_1_trigger.html#ade76f7151f79c3570eec1ba4261a5e88">More...</a><br /></td></tr>
+<tr class="memdesc:ade76f7151f79c3570eec1ba4261a5e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the condition changes from <code>false</code> to <code>true</code>.  <a href="classfrc2_1_1_trigger.html#ade76f7151f79c3570eec1ba4261a5e88">More...</a><br /></td></tr>
 <tr class="separator:ade76f7151f79c3570eec1ba4261a5e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affe2056f0cb02c0602968a4c5325b2f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#affe2056f0cb02c0602968a4c5325b2f6">ToggleOnFalse</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
-<tr class="memdesc:affe2056f0cb02c0602968a4c5325b2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the signal falls from <code>true</code> to the low state.  <a href="classfrc2_1_1_trigger.html#affe2056f0cb02c0602968a4c5325b2f6">More...</a><br /></td></tr>
+<tr class="memdesc:affe2056f0cb02c0602968a4c5325b2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the condition changes from <code>true</code> to the low state.  <a href="classfrc2_1_1_trigger.html#affe2056f0cb02c0602968a4c5325b2f6">More...</a><br /></td></tr>
 <tr class="separator:affe2056f0cb02c0602968a4c5325b2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad40bde1e49b00f98de59e7c522a2fff1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#ad40bde1e49b00f98de59e7c522a2fff1">ToggleOnFalse</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;command)</td></tr>
-<tr class="memdesc:ad40bde1e49b00f98de59e7c522a2fff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the signal falls from <code>true</code> to the low state.  <a href="classfrc2_1_1_trigger.html#ad40bde1e49b00f98de59e7c522a2fff1">More...</a><br /></td></tr>
+<tr class="memdesc:ad40bde1e49b00f98de59e7c522a2fff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles a command when the condition changes from <code>true</code> to the low state.  <a href="classfrc2_1_1_trigger.html#ad40bde1e49b00f98de59e7c522a2fff1">More...</a><br /></td></tr>
 <tr class="separator:ad40bde1e49b00f98de59e7c522a2fff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac889a86413f6dee0c5ea4edad3cdf6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#ac889a86413f6dee0c5ea4edad3cdf6fd">WhenActive</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
 <tr class="memdesc:ac889a86413f6dee0c5ea4edad3cdf6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a command to start when the trigger becomes active.  <a href="classfrc2_1_1_trigger.html#ac889a86413f6dee0c5ea4edad3cdf6fd">More...</a><br /></td></tr>
@@ -229,9 +229,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a41ab796d5329690d582f99c5496c554d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a41ab796d5329690d582f99c5496c554d">operator&amp;&amp;</a> (std::function&lt; bool()&gt; rhs)</td></tr>
 <tr class="memdesc:a41ab796d5329690d582f99c5496c554d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composes two triggers with logical AND.  <a href="classfrc2_1_1_trigger.html#a41ab796d5329690d582f99c5496c554d">More...</a><br /></td></tr>
 <tr class="separator:a41ab796d5329690d582f99c5496c554d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337415c8ca702ef7b1a8ec21f59974c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a337415c8ca702ef7b1a8ec21f59974c8">operator&amp;&amp;</a> (<a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a337415c8ca702ef7b1a8ec21f59974c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composes two triggers with logical AND.  <a href="classfrc2_1_1_trigger.html#a337415c8ca702ef7b1a8ec21f59974c8">More...</a><br /></td></tr>
+<tr class="separator:a337415c8ca702ef7b1a8ec21f59974c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb9c466200b3f4ad26f3a4472861073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#abcb9c466200b3f4ad26f3a4472861073">operator||</a> (std::function&lt; bool()&gt; rhs)</td></tr>
 <tr class="memdesc:abcb9c466200b3f4ad26f3a4472861073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composes two triggers with logical OR.  <a href="classfrc2_1_1_trigger.html#abcb9c466200b3f4ad26f3a4472861073">More...</a><br /></td></tr>
 <tr class="separator:abcb9c466200b3f4ad26f3a4472861073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa9a46fe102413160cb13e1825c7c95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a1fa9a46fe102413160cb13e1825c7c95">operator||</a> (<a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a1fa9a46fe102413160cb13e1825c7c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composes two triggers with logical OR.  <a href="classfrc2_1_1_trigger.html#a1fa9a46fe102413160cb13e1825c7c95">More...</a><br /></td></tr>
+<tr class="separator:a1fa9a46fe102413160cb13e1825c7c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c0e51e2f40a2c22b5f6e0599e195cfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_trigger.html#a4c0e51e2f40a2c22b5f6e0599e195cfb">operator!</a> ()</td></tr>
 <tr class="memdesc:a4c0e51e2f40a2c22b5f6e0599e195cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Composes a trigger with logical NOT.  <a href="classfrc2_1_1_trigger.html#a4c0e51e2f40a2c22b5f6e0599e195cfb">More...</a><br /></td></tr>
 <tr class="separator:a4c0e51e2f40a2c22b5f6e0599e195cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,12 +249,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a05703cb46600eb85bae13613a13e4fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This class is a command-based wrapper around <code><a class="el" href="classfrc_1_1_boolean_event.html">frc::BooleanEvent</a></code>, providing an easy way to link commands to inputs. </p>
-<p >This class is provided by the NewCommands VendorDep</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc2_1_1_button.html" title="A class used to bind command scheduling to button presses.">Button</a> </dd></dl>
+<div class="textblock"><p >This class provides an easy way to link commands to conditions. </p>
+<p >It is very easy to link a button to a command. For instance, you could link the trigger button of a joystick to a "score" command.</p>
+<p >Triggers can easily be composed for advanced functionality using the <code><a class="el" href="classfrc2_1_1_trigger.html#a4c0e51e2f40a2c22b5f6e0599e195cfb">operator!</a></code>, <code><a class="el" href="classfrc2_1_1_trigger.html#abcb9c466200b3f4ad26f3a4472861073">operator||</a></code>, <code><a class="el" href="classfrc2_1_1_trigger.html#a41ab796d5329690d582f99c5496c554d">operator&amp;&amp;</a></code> operators.</p>
+<p >This class is provided by the NewCommands VendorDep </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="addab140045b805eeb89ed5f140c971bc" name="addab140045b805eeb89ed5f140c971bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addab140045b805eeb89ed5f140c971bc">&#9670;&nbsp;</a></span>Trigger() <span class="overload">[1/4]</span></h2>
+<a id="afa07a273d9e93a2fbe38491fbede911a" name="afa07a273d9e93a2fbe38491fbede911a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa07a273d9e93a2fbe38491fbede911a">&#9670;&nbsp;</a></span>Trigger() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,7 +267,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">frc2::Trigger::Trigger </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; bool()&gt;&#160;</td>
-          <td class="paramname"><em>isActive</em></td><td>)</td>
+          <td class="paramname"><em>condition</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -271,19 +278,19 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new trigger with the given condition determining whether it is active. </p>
+<p>Creates a new trigger based on the given condition. </p>
 <p >Polled by the default scheduler button loop.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">isActive</td><td>returns whether or not the trigger should be active </td></tr>
+    <tr><td class="paramname">condition</td><td>the condition represented by this trigger </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a2e24a8e9e623eabebc315818b2953c27" name="a2e24a8e9e623eabebc315818b2953c27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e24a8e9e623eabebc315818b2953c27">&#9670;&nbsp;</a></span>Trigger() <span class="overload">[2/4]</span></h2>
+<a id="ae35c888fd505843b02d0281a60c9231d" name="ae35c888fd505843b02d0281a60c9231d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae35c888fd505843b02d0281a60c9231d">&#9670;&nbsp;</a></span>Trigger() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -301,7 +308,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::function&lt; bool()&gt;&#160;</td>
-          <td class="paramname"><em>isActive</em>&#160;</td>
+          <td class="paramname"><em>condition</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -316,11 +323,11 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create a new trigger that is active when the given condition is true. </p>
+<p>Creates a new trigger based on the given condition. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">loop</td><td>The loop instance that polls this trigger. </td></tr>
-    <tr><td class="paramname">isActive</td><td>Whether the trigger is active. </td></tr>
+    <tr><td class="paramname">condition</td><td>the condition represented by this trigger </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,7 +357,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create a new trigger that is never active (default constructor) - activity can be further determined by subclass code. </p>
+<p>Create a new trigger that is always <code>false</code>. </p>
 
 </div>
 </div>
@@ -398,7 +405,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000095">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc2_1_1_trigger.html#a3b403000578374fd98b70bddc6a1894f" title="Get a new event that events only when this one newly changes to true.">Rising()</a> as a command end condition with Until() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000075">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc2_1_1_trigger.html#a3b403000578374fd98b70bddc6a1894f" title="Get a new event that events only when this one newly changes to true.">Rising()</a> as a command end condition with Until() instead. </dd></dl>
 
 </div>
 </div>
@@ -511,7 +518,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command whenever the signal falls from <code>true</code> to <code>false</code>. </p>
+<p>Starts the given command whenever the condition changes from <code>true</code> to <code>false</code>. </p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -540,7 +547,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command whenever the signal falls from <code>true</code> to <code>false</code>. </p>
+<p>Starts the given command whenever the condition changes from <code>true</code> to <code>false</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">command</td><td>The command to bind. </td></tr>
@@ -567,7 +574,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command whenever the signal rises from <code>false</code> to <code>true</code>. </p>
+<p>Starts the given command whenever the condition changes from <code>false</code> to <code>true</code>. </p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -596,7 +603,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command whenever the signal rises from <code>false</code> to <code>true</code>. </p>
+<p>Starts the given command whenever the condition changes from <code>false</code> to <code>true</code>. </p>
 <p >Moves command ownership to the button scheduler.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -637,7 +644,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a41ab796d5329690d582f99c5496c554d" name="a41ab796d5329690d582f99c5496c554d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41ab796d5329690d582f99c5496c554d">&#9670;&nbsp;</a></span>operator&amp;&amp;()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a41ab796d5329690d582f99c5496c554d">&#9670;&nbsp;</a></span>operator&amp;&amp;() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -665,8 +672,37 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a337415c8ca702ef7b1a8ec21f59974c8" name="a337415c8ca702ef7b1a8ec21f59974c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337415c8ca702ef7b1a8ec21f59974c8">&#9670;&nbsp;</a></span>operator&amp;&amp;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> frc2::Trigger::operator&amp;&amp; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Composes two triggers with logical AND. </p>
+<dl class="section return"><dt>Returns</dt><dd>A trigger which is active when both component triggers are active. </dd></dl>
+
+</div>
+</div>
 <a id="abcb9c466200b3f4ad26f3a4472861073" name="abcb9c466200b3f4ad26f3a4472861073"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcb9c466200b3f4ad26f3a4472861073">&#9670;&nbsp;</a></span>operator||()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb9c466200b3f4ad26f3a4472861073">&#9670;&nbsp;</a></span>operator||() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -678,6 +714,35 @@ Public Member Functions</h2></td></tr>
           <td class="memname"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> frc2::Trigger::operator|| </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; bool()&gt;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Composes two triggers with logical OR. </p>
+<dl class="section return"><dt>Returns</dt><dd>A trigger which is active when either component trigger is active. </dd></dl>
+
+</div>
+</div>
+<a id="a1fa9a46fe102413160cb13e1825c7c95" name="a1fa9a46fe102413160cb13e1825c7c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa9a46fe102413160cb13e1825c7c95">&#9670;&nbsp;</a></span>operator||() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> frc2::Trigger::operator|| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a> &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -738,7 +803,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Toggles a command when the signal falls from <code>true</code> to the low state. </p>
+<p>Toggles a command when the condition changes from <code>true</code> to the low state. </p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -766,7 +831,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Toggles a command when the signal falls from <code>true</code> to the low state. </p>
+<p>Toggles a command when the condition changes from <code>true</code> to the low state. </p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -794,7 +859,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Toggles a command when the signal rises from <code>false</code> to the high state. </p>
+<p>Toggles a command when the condition changes from <code>false</code> to <code>true</code>. </p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -822,7 +887,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Toggles a command when the signal rises from <code>false</code> to the high state. </p>
+<p>Toggles a command when the condition changes from <code>false</code> to <code>true</code>. </p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -859,7 +924,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000093">Deprecated:</a></b></dt><dd>Use ToggleOnTrue(Command) instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000073">Deprecated:</a></b></dt><dd>Use ToggleOnTrue(Command) instead. </dd></dl>
 
 </div>
 </div>
@@ -898,7 +963,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">Deprecated:</a></b></dt><dd>Use ToggleOnTrue(Command) instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000074">Deprecated:</a></b></dt><dd>Use ToggleOnTrue(Command) instead. </dd></dl>
 
 </div>
 </div>
@@ -927,7 +992,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000079">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead </dd></dl>
 
 </div>
 </div>
@@ -965,7 +1030,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000081">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
 
 </div>
 </div>
@@ -1003,7 +1068,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000082">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
 
 </div>
 </div>
@@ -1042,7 +1107,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000080">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000060">Deprecated:</a></b></dt><dd>Use OnTrue(Command) instead </dd></dl>
 
 </div>
 </div>
@@ -1071,7 +1136,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000089">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000069">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead. </dd></dl>
 
 </div>
 </div>
@@ -1109,7 +1174,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000091">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000071">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
 
 </div>
 </div>
@@ -1147,7 +1212,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000092">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000072">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead and construct the <a class="el" href="classfrc2_1_1_instant_command.html" title="A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...">InstantCommand</a> manually </dd></dl>
 
 </div>
 </div>
@@ -1186,7 +1251,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000090">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000070">Deprecated:</a></b></dt><dd>Use OnFalse(Command) instead. </dd></dl>
 
 </div>
 </div>
@@ -1215,7 +1280,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000083">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) with <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>, or bind command::Schedule with IfHigh(std::function&lt;void()&gt;). </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000063">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) with <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>, or bind command::Schedule with IfHigh(std::function&lt;void()&gt;). </dd></dl>
 
 </div>
 </div>
@@ -1253,7 +1318,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000085">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) and construct a <a class="el" href="classfrc2_1_1_run_command.html" title="A command that runs a Runnable continuously.">RunCommand</a> manually </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000065">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) and construct a <a class="el" href="classfrc2_1_1_run_command.html" title="A command that runs a Runnable continuously.">RunCommand</a> manually </dd></dl>
 
 </div>
 </div>
@@ -1291,7 +1356,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000086">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) and construct a <a class="el" href="classfrc2_1_1_run_command.html" title="A command that runs a Runnable continuously.">RunCommand</a> manually </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000066">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) and construct a <a class="el" href="classfrc2_1_1_run_command.html" title="A command that runs a Runnable continuously.">RunCommand</a> manually </dd></dl>
 
 </div>
 </div>
@@ -1330,7 +1395,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000084">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) with <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>, or bind command::Schedule with IfHigh(std::function&lt;void()&gt;). </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) with <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>, or bind command::Schedule with IfHigh(std::function&lt;void()&gt;). </dd></dl>
 
 </div>
 </div>
@@ -1359,7 +1424,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000087">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000067">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) instead. </dd></dl>
 
 </div>
 </div>
@@ -1398,7 +1463,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The trigger, for chained calls. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000088">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000068">Deprecated:</a></b></dt><dd>Use WhileTrue(Command) instead. </dd></dl>
 
 </div>
 </div>
@@ -1418,8 +1483,8 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command when the signal falls to <code>false</code> and cancels it when the signal rises. </p>
-<p >Doesn't re-start the command in-between.</p>
+<p>Starts the given command when the condition changes to <code>false</code> and cancels it when the condition changes to <code>true</code>. </p>
+<p >Doesn't re-start the command if it ends while the condition is still <code>true</code>. If the command should restart, see <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>.</p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1447,8 +1512,9 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command when the signal falls to <code>false</code> and cancels it when the signal rises. </p>
+<p>Starts the given command when the condition changes to <code>false</code> and cancels it when the condition changes to <code>true</code>. </p>
 <p >Moves command ownership to the button scheduler.</p>
+<p >Doesn't re-start the command if it ends while the condition is still <code>false</code>. If the command should restart, see <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">command</td><td>The command to bind. </td></tr>
@@ -1475,8 +1541,8 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command when the signal rises to <code>true</code> and cancels it when the signal falls to <code>false</code>. </p>
-<p >Doesn't re-start the command in-between.</p>
+<p>Starts the given command when the condition changes to <code>true</code> and cancels it when the condition changes to <code>false</code>. </p>
+<p >Doesn't re-start the command if it ends while the condition is still <code>true</code>. If the command should restart, see <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>.</p>
 <p >Takes a raw pointer, and so is non-owning; users are responsible for the lifespan of the command.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1504,8 +1570,9 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given command when the signal rises to <code>true</code> and cancels it when the signal falls to <code>false</code>. </p>
+<p>Starts the given command when the condition changes to <code>true</code> and cancels it when the condition changes to <code>false</code>. </p>
 <p >Moves command ownership to the button scheduler.</p>
+<p >Doesn't re-start the command if it ends while the condition is still <code>true</code>. If the command should restart, see <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">command</td><td>The command to bind. </td></tr>
@@ -1525,7 +1592,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

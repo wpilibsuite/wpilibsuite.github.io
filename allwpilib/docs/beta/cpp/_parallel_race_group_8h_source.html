@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('_parallel_race_group_8h_source.html','
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    ((void)foo.emplace_back(std::make_unique&lt;std::remove_reference_t&lt;Types&gt;&gt;(</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>         std::forward&lt;Types&gt;(commands))),</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>     ...);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="classfrc2_1_1_parallel_race_group.html#adce0f787b5346b6a4086b590f288ccf2">AddCommands</a>(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(foo));</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="classfrc2_1_1_parallel_race_group.html#adce0f787b5346b6a4086b590f288ccf2">AddCommands</a>(std::move(foo));</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classfrc2_1_1_parallel_race_group.html#a99cbad985eea806f210aeba26e852f5d">   65</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_parallel_race_group.html#a99cbad985eea806f210aeba26e852f5d">Initialize</a>() final;</div>
@@ -200,14 +200,13 @@ $(document).ready(function(){initNavTree('_parallel_race_group_8h_source.html','
 <div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:298</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_parallel_race_group_8h.html">ParallelRaceGroup.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:40:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

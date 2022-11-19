@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    ((void)foo.emplace_back(std::make_unique&lt;std::remove_reference_t&lt;Types&gt;&gt;(</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>         std::forward&lt;Types&gt;(commands))),</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>     ...);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">AddCommands</a>(<a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(foo));</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">AddCommands</a>(std::move(foo));</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classfrc2_1_1_sequential_command_group.html#a349a9ce2160e29f11ddccef508d05981">   80</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#a349a9ce2160e29f11ddccef508d05981">Initialize</a>() final;</div>
@@ -216,8 +216,7 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
 <div class="ttc" id="anamespacefrc2_html_aea5b4588c328245930bd43062ff9560f"><div class="ttname"><a href="namespacefrc2.html#aea5b4588c328245930bd43062ff9560f">frc2::invalid_index</a></div><div class="ttdeci">const size_t invalid_index</div><div class="ttdef"><b>Definition:</b> SequentialCommandGroup.h:24</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
-<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> NullDeleter.h:7</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdoc">/file This file defines the SmallVector class.</div><div class="ttdef"><b>Definition:</b> jni_util.h:27</div></div>
 <div class="ttc" id="anamespacewpi_html_a74ddf62331eda674218d045fb5376c13"><div class="ttname"><a href="namespacewpi.html#a74ddf62331eda674218d045fb5376c13">wpi::SmallVector</a></div><div class="ttdeci">class LLVM_GSL_OWNER SmallVector</div><div class="ttdoc">Forward declaration of SmallVector so that calculateSmallVectorDefaultInlinedElements can reference s...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:1112</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -225,7 +224,7 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_sequential_command_group_8h.html">SequentialCommandGroup.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:40:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

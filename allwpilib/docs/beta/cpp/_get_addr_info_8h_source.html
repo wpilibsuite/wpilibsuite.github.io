@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('_get_addr_info_8h_source.html',''); in
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> addrinfo&amp;)&gt; callback,</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                        <a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> node, <a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> service = {},</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                        <span class="keyword">const</span> addrinfo* hints = <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_function" href="namespacewpi_1_1uv.html#ac2590442e4dd190b6c2a3eb65d9779b5">GetAddrInfo</a>(*loop, <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(callback), node, service, hints);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_function" href="namespacewpi_1_1uv.html#ac2590442e4dd190b6c2a3eb65d9779b5">GetAddrInfo</a>(*loop, std::move(callback), node, service, hints);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}  <span class="comment">// namespace wpi::uv</span></div>
@@ -224,8 +224,7 @@ $(document).ready(function(){initNavTree('_get_addr_info_8h_source.html',''); in
 <div class="ttc" id="aclasswpi_1_1uv_1_1_request_impl_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_request_impl.html">wpi::uv::RequestImpl</a></div><div class="ttdoc">Request.</div><div class="ttdef"><b>Definition:</b> Request.h:130</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_request_impl_html_ae1df40b7158f4b7c20b5acf6fbc676e3"><div class="ttname"><a href="classwpi_1_1uv_1_1_request_impl.html#ae1df40b7158f4b7c20b5acf6fbc676e3">wpi::uv::RequestImpl&lt; GetAddrInfoReq, uv_getaddrinfo_t &gt;::GetRaw</a></div><div class="ttdeci">uv_getaddrinfo_t * GetRaw() noexcept</div><div class="ttdoc">Get the underlying request data structure.</div><div class="ttdef"><b>Definition:</b> Request.h:145</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:520</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
-<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> ParallelTcpConnector.h:22</div></div>
+<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> Error.h:10</div></div>
 <div class="ttc" id="anamespacewpi_1_1uv_html_ac2590442e4dd190b6c2a3eb65d9779b5"><div class="ttname"><a href="namespacewpi_1_1uv.html#ac2590442e4dd190b6c2a3eb65d9779b5">wpi::uv::GetAddrInfo</a></div><div class="ttdeci">void GetAddrInfo(Loop &amp;loop, const std::shared_ptr&lt; GetAddrInfoReq &gt; &amp;req, std::string_view node, std::string_view service={}, const addrinfo *hints=nullptr)</div><div class="ttdoc">Asynchronous getaddrinfo(3).</div></div>
 <div class="ttc" id="astructuv__getaddrinfo__s_html_a06945557ddda50095c21e2f290407ea9"><div class="ttname"><a href="structuv__getaddrinfo__s.html#a06945557ddda50095c21e2f290407ea9">uv_getaddrinfo_s::loop</a></div><div class="ttdeci">UV_REQ_FIELDS uv_loop_t * loop</div><div class="ttdef"><b>Definition:</b> uv.h:893</div></div>
 <div class="ttc" id="astructuv__loop__s_html_aaeef0f8d2c764e9919504f76cdc13df1"><div class="ttname"><a href="structuv__loop__s.html#aaeef0f8d2c764e9919504f76cdc13df1">uv_loop_s::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition:</b> uv.h:1795</div></div>
@@ -237,7 +236,7 @@ $(document).ready(function(){initNavTree('_get_addr_info_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e20957744827ba5726af139111576a9.html">wpinet</a></li><li class="navelem"><a class="el" href="dir_12166d0305ec2caa3943538028d23053.html">uv</a></li><li class="navelem"><a class="el" href="_get_addr_info_8h.html">GetAddrInfo.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -4,6 +4,7 @@ var dir_901369ca5399cfb92b9538222311796d =
     [ "BangBangController.h", "_bang_bang_controller_8h.html", "_bang_bang_controller_8h" ],
     [ "ControlAffinePlantInversionFeedforward.h", "_control_affine_plant_inversion_feedforward_8h.html", "_control_affine_plant_inversion_feedforward_8h" ],
     [ "DifferentialDriveAccelerationLimiter.h", "_differential_drive_acceleration_limiter_8h.html", "_differential_drive_acceleration_limiter_8h" ],
+    [ "DifferentialDriveFeedforward.h", "_differential_drive_feedforward_8h.html", "_differential_drive_feedforward_8h" ],
     [ "DifferentialDriveWheelVoltages.h", "_differential_drive_wheel_voltages_8h.html", "_differential_drive_wheel_voltages_8h" ],
     [ "ElevatorFeedforward.h", "_elevator_feedforward_8h.html", "_elevator_feedforward_8h" ],
     [ "HolonomicDriveController.h", "_holonomic_drive_controller_8h.html", "_holonomic_drive_controller_8h" ],

@@ -11,16 +11,6 @@ var group___sparse_core___module =
       [ "Ref", "class_eigen_1_1_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_00357b3c2eca55b7ce618d0a2b2447510f.html#ab072c18638de40af20105b82423b1c07", null ],
       [ "Ref", "class_eigen_1_1_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_00357b3c2eca55b7ce618d0a2b2447510f.html#a96ae29e954eba5a59520ae4f7c1588ab", null ]
     ] ],
-    [ "Eigen::TriangularViewImpl< MatrixType, Mode, Sparse >", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html", [
-      [ "Base", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a3b021ddc08edc7915d178d27d269a272", null ],
-      [ "MatrixTypeNested", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a262b4f203eaea2a8fefad54c7249cff1", null ],
-      [ "MatrixTypeNestedCleaned", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a4ae2e6282dc49f205fa3c70fb4053c81", null ],
-      [ "MatrixTypeNestedNonRef", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a7a3130ba4b539de4c76561ca79607f93", null ],
-      [ "_solve_impl", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a6a290dc48e4276fcbf574c6af28af5cc", null ],
-      [ "solve", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a47379381e1682f59b85212cf856bab2a", null ],
-      [ "solveInPlace", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a3f3385e827fcc0bf27d1ec21c80740bc", null ],
-      [ "solveInPlace", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a70190d4105e1fd4f27abbf73365dfa0c", null ]
-    ] ],
     [ "Eigen::SparseMapBase< Derived, ReadOnlyAccessors >", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html", [
       [ "Base", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a05d81d332f242bd5a98dca5edc5a1b92", null ],
       [ "IndexPointer", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a109785f2bf891789d6d0032b732794ff", null ],
@@ -38,6 +28,10 @@ var group___sparse_core___module =
       [ "innerSize", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a0df6dba8d71e0fb15b2995510853f83e", null ],
       [ "isCompressed", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#aafab4afa7ab2ff89eff049d4c71e2ce4", null ],
       [ "nonZeros", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a753e975b7b3643d821dc061141786870", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#af2eba8c3ea2424df618f3e90f1b5254b", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a379e2a65ec661cceaddc225120ad5cb1", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a3365b1d14b9f6c5d832169b3d07511a4", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#aa171e4de58f2bddb8da0358961c6d3fd", null ],
       [ "outerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#afc5285786459fbd03966c65c60741ae9", null ],
       [ "outerSize", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a3d6ede19db6d42074ae063bc876231b1", null ],
       [ "rows", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_read_only_accessors_01_4.html#a3cdd6cab0abd7ac01925a695fc315d34", null ],
@@ -59,23 +53,39 @@ var group___sparse_core___module =
       [ "~SparseMapBase", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a4dfbcf3ac411885b1710ad04892c984d", null ],
       [ "SparseMapBase", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#ae81a22199343b457903092376d6b7987", null ],
       [ "coeffRef", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a06b06526f5f9ec0dce2dd6bddab1f64a", null ],
-      [ "innerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a3e88baeeffa067c76bcabd7793352895", null ],
       [ "innerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#aa642fb60d5fd6c2a6d0875a6882e76bf", null ],
-      [ "innerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a29104d325f0d4928fa159257183b2f53", null ],
-      [ "innerNonZeroPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a0368c7130d15fbdc1837d6141e1c89e3", null ],
       [ "innerNonZeroPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a3cbe95130ff591846653b095de42c448", null ],
-      [ "innerNonZeroPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#ab8b0aebe77ad28609e715f84d50b0fb6", null ],
-      [ "outerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#acc894ad59034a6233048338732747afe", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#af2eba8c3ea2424df618f3e90f1b5254b", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a379e2a65ec661cceaddc225120ad5cb1", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a3365b1d14b9f6c5d832169b3d07511a4", null ],
+      [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#aa171e4de58f2bddb8da0358961c6d3fd", null ],
       [ "outerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a65b7c440d0b2baad4883678e0add8490", null ],
-      [ "outerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a90208df76cc1c9b8d6ada53fea913de9", null ],
-      [ "valuePtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#aa99f79283d649526977b6058caead4cc", null ],
-      [ "valuePtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a2f496a35ee9ac16a1fb2d1269fff2a22", null ],
-      [ "valuePtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a6373c1dab09c6d3db8fe5e4eea060a86", null ]
+      [ "valuePtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a2f496a35ee9ac16a1fb2d1269fff2a22", null ]
     ] ],
     [ "Eigen::Map< SparseMatrix< MatScalar, MatOptions, MatIndex >, Options, StrideType >", "class_eigen_1_1_map_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_002c859b470cc9e43a031929bd752a93e6.html", [
       [ "Base", "class_eigen_1_1_map_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_002c859b470cc9e43a031929bd752a93e6.html#a46ebd3daf3b4cd2a77b48c6150b56e36", null ],
       [ "Map", "class_eigen_1_1_map_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_002c859b470cc9e43a031929bd752a93e6.html#a634ffe6952d21716ca879e107f620f19", null ],
       [ "~Map", "class_eigen_1_1_map_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_options_00_01_mat_index_01_4_002c859b470cc9e43a031929bd752a93e6.html#a4d2900fdd8c973d24c4cfb0f0ee4f53f", null ]
+    ] ],
+    [ "Eigen::TriangularViewImpl< MatrixType, Mode, Sparse >", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html", [
+      [ "Base", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a3b021ddc08edc7915d178d27d269a272", null ],
+      [ "MatrixTypeNested", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a262b4f203eaea2a8fefad54c7249cff1", null ],
+      [ "MatrixTypeNestedCleaned", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a4ae2e6282dc49f205fa3c70fb4053c81", null ],
+      [ "MatrixTypeNestedNonRef", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a7a3130ba4b539de4c76561ca79607f93", null ],
+      [ "_solve_impl", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a6a290dc48e4276fcbf574c6af28af5cc", null ],
+      [ "solve", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a47379381e1682f59b85212cf856bab2a", null ],
+      [ "solveInPlace", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a3f3385e827fcc0bf27d1ec21c80740bc", null ],
+      [ "solveInPlace", "class_eigen_1_1_triangular_view_impl_3_01_matrix_type_00_01_mode_00_01_sparse_01_4.html#a70190d4105e1fd4f27abbf73365dfa0c", null ]
+    ] ],
+    [ "Eigen::Triplet< Scalar, StorageIndex >", "class_eigen_1_1_triplet.html", [
+      [ "Triplet", "class_eigen_1_1_triplet.html#a4bb0cded483262f1c5ffcac434f9a394", null ],
+      [ "Triplet", "class_eigen_1_1_triplet.html#aba38920ed9d7e9b917cab2f701f9ca62", null ],
+      [ "col", "class_eigen_1_1_triplet.html#a220a0476a592596c2d295f698bee9067", null ],
+      [ "row", "class_eigen_1_1_triplet.html#afd4ff20977ddb3385c7fc66629b91231", null ],
+      [ "value", "class_eigen_1_1_triplet.html#ab11e2110141dc8f144992b0693e00580", null ],
+      [ "m_col", "class_eigen_1_1_triplet.html#a5c18e694e1d03d97c6be31adc0b32a04", null ],
+      [ "m_row", "class_eigen_1_1_triplet.html#a131514b3dd98e819d0e95bed8061b89c", null ],
+      [ "m_value", "class_eigen_1_1_triplet.html#ad50e9b16b92ffa57c5190d3285fca830", null ]
     ] ],
     [ "Eigen::SparseMatrix< _Scalar, _Options, _StorageIndex >", "class_eigen_1_1_sparse_matrix.html", [
       [ "IndexPosPair", "struct_eigen_1_1_sparse_matrix_1_1_index_pos_pair.html", [
@@ -170,31 +180,6 @@ var group___sparse_core___module =
       [ "m_outerIndex", "class_eigen_1_1_sparse_matrix.html#a33d0828b875d1d7abec88788d449f7a9", null ],
       [ "m_outerSize", "class_eigen_1_1_sparse_matrix.html#a0863037124fae230905554497c39b03d", null ]
     ] ],
-    [ "Eigen::SparseSelfAdjointView< MatrixType, _Mode >", "class_eigen_1_1_sparse_self_adjoint_view.html", [
-      [ "_MatrixTypeNested", "class_eigen_1_1_sparse_self_adjoint_view.html#a586093321f7586a0a4f704bca957d6f1", null ],
-      [ "Base", "class_eigen_1_1_sparse_self_adjoint_view.html#ac296adf416c473239ff08544cc26101a", null ],
-      [ "MatrixTypeNested", "class_eigen_1_1_sparse_self_adjoint_view.html#ad69bde509ee3b6f90d53eed97b1b0682", null ],
-      [ "Scalar", "class_eigen_1_1_sparse_self_adjoint_view.html#aba840da2fc87053f6512fe38323809b7", null ],
-      [ "StorageIndex", "class_eigen_1_1_sparse_self_adjoint_view.html#a5d5f3fb28a2ea508c5ca2223bb2dfd5c", null ],
-      [ "VectorI", "class_eigen_1_1_sparse_self_adjoint_view.html#a2489290b4e528ecf2f1222bc379a290c", null ],
-      [ "SparseSelfAdjointView", "class_eigen_1_1_sparse_self_adjoint_view.html#aca0a4560bb307e085dd0a64efc89297e", null ],
-      [ "cols", "class_eigen_1_1_sparse_self_adjoint_view.html#ae3091054ec7ebbbb5547e71096d158fd", null ],
-      [ "matrix", "class_eigen_1_1_sparse_self_adjoint_view.html#afc12934110007129f67e7ce07df0cfc3", null ],
-      [ "matrix", "class_eigen_1_1_sparse_self_adjoint_view.html#ab75ed4d6216b6876c8610ddf1077cb79", null ],
-      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#a9877985694c9aee0a295a377d91e0c16", null ],
-      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#ab4fb467b6f371f6cc58a3dba3030cbc5", null ],
-      [ "operator=", "class_eigen_1_1_sparse_self_adjoint_view.html#aead0b737623b7f281a976721ae8ef37d", null ],
-      [ "operator=", "class_eigen_1_1_sparse_self_adjoint_view.html#a2e4bbb842a4247bc012aa3af64c340b8", null ],
-      [ "operator=", "class_eigen_1_1_sparse_self_adjoint_view.html#aa21739e3c800a519046283b25c5f7b6f", null ],
-      [ "rankUpdate", "class_eigen_1_1_sparse_self_adjoint_view.html#aa7d2154b4abcf86204df522ef9a13f5c", null ],
-      [ "rankUpdate", "class_eigen_1_1_sparse_self_adjoint_view.html#a965f896fc039bf3cb9c7bc7f410310be", null ],
-      [ "resize", "class_eigen_1_1_sparse_self_adjoint_view.html#a6cea37a2e08d934d99936271f182926b", null ],
-      [ "rows", "class_eigen_1_1_sparse_self_adjoint_view.html#ac752c3b95b110340d0eff3ddda976984", null ],
-      [ "twistedBy", "class_eigen_1_1_sparse_self_adjoint_view.html#af4b2d1bbb72254e827a02da34d14279d", null ],
-      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#a87244e14162ceefce9b50627e7c1304b", null ],
-      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#adb2251d5b81d15f3916557c2eefc54e0", null ],
-      [ "m_matrix", "class_eigen_1_1_sparse_self_adjoint_view.html#ac2553431de29927f0ce270cf4b07dacd", null ]
-    ] ],
     [ "Eigen::SparseCompressedBase< Derived >", "class_eigen_1_1_sparse_compressed_base.html", [
       [ "InnerIterator", "class_eigen_1_1_sparse_compressed_base_1_1_inner_iterator.html", [
         [ "OuterType", "class_eigen_1_1_sparse_compressed_base_1_1_inner_iterator.html#a6d02d249b544148e7bb052541212185e", null ],
@@ -264,30 +249,6 @@ var group___sparse_core___module =
       [ "valuePtr", "class_eigen_1_1_sparse_compressed_base.html#aa99f79283d649526977b6058caead4cc", null ],
       [ "valuePtr", "class_eigen_1_1_sparse_compressed_base.html#a6373c1dab09c6d3db8fe5e4eea060a86", null ],
       [ "internal::evaluator< SparseCompressedBase< Derived > >", "class_eigen_1_1_sparse_compressed_base.html#ac4ef84658e5fc400cd2ec57825db0587", null ]
-    ] ],
-    [ "Eigen::Triplet< Scalar, StorageIndex >", "class_eigen_1_1_triplet.html", [
-      [ "Triplet", "class_eigen_1_1_triplet.html#a4bb0cded483262f1c5ffcac434f9a394", null ],
-      [ "Triplet", "class_eigen_1_1_triplet.html#aba38920ed9d7e9b917cab2f701f9ca62", null ],
-      [ "col", "class_eigen_1_1_triplet.html#a220a0476a592596c2d295f698bee9067", null ],
-      [ "row", "class_eigen_1_1_triplet.html#afd4ff20977ddb3385c7fc66629b91231", null ],
-      [ "value", "class_eigen_1_1_triplet.html#ab11e2110141dc8f144992b0693e00580", null ],
-      [ "m_col", "class_eigen_1_1_triplet.html#a5c18e694e1d03d97c6be31adc0b32a04", null ],
-      [ "m_row", "class_eigen_1_1_triplet.html#a131514b3dd98e819d0e95bed8061b89c", null ],
-      [ "m_value", "class_eigen_1_1_triplet.html#ad50e9b16b92ffa57c5190d3285fca830", null ]
-    ] ],
-    [ "Eigen::SparseView< MatrixType >", "class_eigen_1_1_sparse_view.html", [
-      [ "NestedExpression", "class_eigen_1_1_sparse_view.html#a5ea0cd9b743ad42a749ca83409ca0f97", null ],
-      [ "SparseView", "class_eigen_1_1_sparse_view.html#a3999bdfde1e4e35c3a60e33f190257c0", null ],
-      [ "cols", "class_eigen_1_1_sparse_view.html#aea18dd1a3f1e8adef8daa7c12b40354e", null ],
-      [ "epsilon", "class_eigen_1_1_sparse_view.html#afb19356d22b6e402c5d8a5adda3e4eda", null ],
-      [ "innerSize", "class_eigen_1_1_sparse_view.html#ad1436b70d5f02ab8f9c3d350471f0fda", null ],
-      [ "nestedExpression", "class_eigen_1_1_sparse_view.html#a5bc829741c9e96299782b97a3c1660a0", null ],
-      [ "outerSize", "class_eigen_1_1_sparse_view.html#ac40f96dad4dfd0c1da388fb358dcbdea", null ],
-      [ "reference", "class_eigen_1_1_sparse_view.html#a797256d1cc36d3f4c3c20e0cfd4f2103", null ],
-      [ "rows", "class_eigen_1_1_sparse_view.html#af6b051d0399363f5b73a316964ee4e12", null ],
-      [ "m_epsilon", "class_eigen_1_1_sparse_view.html#adf9350e7fd2a4452fb2a02b2498f3bde", null ],
-      [ "m_matrix", "class_eigen_1_1_sparse_view.html#af7f373fad8b84ee90fbef68ae958284e", null ],
-      [ "m_reference", "class_eigen_1_1_sparse_view.html#a98dd015bea709637b3175729c68bdd39", null ]
     ] ],
     [ "Eigen::SparseMatrixBase< Derived >", "class_eigen_1_1_sparse_matrix_base.html", [
       [ "ConstSelfAdjointViewReturnType", "struct_eigen_1_1_sparse_matrix_base_1_1_const_self_adjoint_view_return_type.html", [
@@ -380,16 +341,6 @@ var group___sparse_core___module =
       [ "operator<<", "class_eigen_1_1_sparse_matrix_base.html#aff0ecb14f93c2f946eedc0a68fc2ee84", null ],
       [ "m_isRValue", "class_eigen_1_1_sparse_matrix_base.html#a3e18769c71fc666a57c10f475ea5ada6", null ]
     ] ],
-    [ "Eigen::SparseSolverBase< Derived >", "class_eigen_1_1_sparse_solver_base.html", [
-      [ "SparseSolverBase", "class_eigen_1_1_sparse_solver_base.html#aacd99fa17db475e74d3834767f392f33", null ],
-      [ "~SparseSolverBase", "class_eigen_1_1_sparse_solver_base.html#ac48acdbbbbe58e6ceb0d48566aa5b398", null ],
-      [ "_solve_impl", "class_eigen_1_1_sparse_solver_base.html#a886c757fea6fe1d992a66524213f14fb", null ],
-      [ "derived", "class_eigen_1_1_sparse_solver_base.html#ac8c149c121511c2f7e00a4b83d8b6791", null ],
-      [ "derived", "class_eigen_1_1_sparse_solver_base.html#acd39421d74cb05d9413904c0d2596533", null ],
-      [ "solve", "class_eigen_1_1_sparse_solver_base.html#a57c5b7f5e35274b55b5d57e8c88cc4a6", null ],
-      [ "solve", "class_eigen_1_1_sparse_solver_base.html#aa525407e654603e8275cefeda32054c9", null ],
-      [ "m_isInitialized", "class_eigen_1_1_sparse_solver_base.html#ac52101f69d048d5c4b036eadf1f13673", null ]
-    ] ],
     [ "Eigen::SparseVector< _Scalar, _Options, _StorageIndex >", "class_eigen_1_1_sparse_vector.html", [
       [ "InnerIterator", "class_eigen_1_1_sparse_vector.html#a8ad41a4a6da46ce8a255481e98033afd", null ],
       [ "ReverseInnerIterator", "class_eigen_1_1_sparse_vector.html#a0638716ee804346a3d6171781874ab12", null ],
@@ -452,6 +403,55 @@ var group___sparse_core___module =
       [ "operator<<", "class_eigen_1_1_sparse_vector.html#a8ae5fb2fdd3317efc80bd9a18bc0ba7e", null ],
       [ "m_data", "class_eigen_1_1_sparse_vector.html#aa23353574434152dd19220b89ed9761a", null ],
       [ "m_size", "class_eigen_1_1_sparse_vector.html#afb561f862a7dd20b40f65c234c8a339a", null ]
+    ] ],
+    [ "Eigen::SparseView< MatrixType >", "class_eigen_1_1_sparse_view.html", [
+      [ "NestedExpression", "class_eigen_1_1_sparse_view.html#a5ea0cd9b743ad42a749ca83409ca0f97", null ],
+      [ "SparseView", "class_eigen_1_1_sparse_view.html#a3999bdfde1e4e35c3a60e33f190257c0", null ],
+      [ "cols", "class_eigen_1_1_sparse_view.html#aea18dd1a3f1e8adef8daa7c12b40354e", null ],
+      [ "epsilon", "class_eigen_1_1_sparse_view.html#afb19356d22b6e402c5d8a5adda3e4eda", null ],
+      [ "innerSize", "class_eigen_1_1_sparse_view.html#ad1436b70d5f02ab8f9c3d350471f0fda", null ],
+      [ "nestedExpression", "class_eigen_1_1_sparse_view.html#a5bc829741c9e96299782b97a3c1660a0", null ],
+      [ "outerSize", "class_eigen_1_1_sparse_view.html#ac40f96dad4dfd0c1da388fb358dcbdea", null ],
+      [ "reference", "class_eigen_1_1_sparse_view.html#a797256d1cc36d3f4c3c20e0cfd4f2103", null ],
+      [ "rows", "class_eigen_1_1_sparse_view.html#af6b051d0399363f5b73a316964ee4e12", null ],
+      [ "m_epsilon", "class_eigen_1_1_sparse_view.html#adf9350e7fd2a4452fb2a02b2498f3bde", null ],
+      [ "m_matrix", "class_eigen_1_1_sparse_view.html#af7f373fad8b84ee90fbef68ae958284e", null ],
+      [ "m_reference", "class_eigen_1_1_sparse_view.html#a98dd015bea709637b3175729c68bdd39", null ]
+    ] ],
+    [ "Eigen::SparseSolverBase< Derived >", "class_eigen_1_1_sparse_solver_base.html", [
+      [ "SparseSolverBase", "class_eigen_1_1_sparse_solver_base.html#aacd99fa17db475e74d3834767f392f33", null ],
+      [ "~SparseSolverBase", "class_eigen_1_1_sparse_solver_base.html#ac48acdbbbbe58e6ceb0d48566aa5b398", null ],
+      [ "_solve_impl", "class_eigen_1_1_sparse_solver_base.html#a886c757fea6fe1d992a66524213f14fb", null ],
+      [ "derived", "class_eigen_1_1_sparse_solver_base.html#ac8c149c121511c2f7e00a4b83d8b6791", null ],
+      [ "derived", "class_eigen_1_1_sparse_solver_base.html#acd39421d74cb05d9413904c0d2596533", null ],
+      [ "solve", "class_eigen_1_1_sparse_solver_base.html#a57c5b7f5e35274b55b5d57e8c88cc4a6", null ],
+      [ "solve", "class_eigen_1_1_sparse_solver_base.html#aa525407e654603e8275cefeda32054c9", null ],
+      [ "m_isInitialized", "class_eigen_1_1_sparse_solver_base.html#ac52101f69d048d5c4b036eadf1f13673", null ]
+    ] ],
+    [ "Eigen::SparseSelfAdjointView< MatrixType, _Mode >", "class_eigen_1_1_sparse_self_adjoint_view.html", [
+      [ "_MatrixTypeNested", "class_eigen_1_1_sparse_self_adjoint_view.html#a586093321f7586a0a4f704bca957d6f1", null ],
+      [ "Base", "class_eigen_1_1_sparse_self_adjoint_view.html#ac296adf416c473239ff08544cc26101a", null ],
+      [ "MatrixTypeNested", "class_eigen_1_1_sparse_self_adjoint_view.html#ad69bde509ee3b6f90d53eed97b1b0682", null ],
+      [ "Scalar", "class_eigen_1_1_sparse_self_adjoint_view.html#aba840da2fc87053f6512fe38323809b7", null ],
+      [ "StorageIndex", "class_eigen_1_1_sparse_self_adjoint_view.html#a5d5f3fb28a2ea508c5ca2223bb2dfd5c", null ],
+      [ "VectorI", "class_eigen_1_1_sparse_self_adjoint_view.html#a2489290b4e528ecf2f1222bc379a290c", null ],
+      [ "SparseSelfAdjointView", "class_eigen_1_1_sparse_self_adjoint_view.html#aca0a4560bb307e085dd0a64efc89297e", null ],
+      [ "cols", "class_eigen_1_1_sparse_self_adjoint_view.html#ae3091054ec7ebbbb5547e71096d158fd", null ],
+      [ "matrix", "class_eigen_1_1_sparse_self_adjoint_view.html#afc12934110007129f67e7ce07df0cfc3", null ],
+      [ "matrix", "class_eigen_1_1_sparse_self_adjoint_view.html#ab75ed4d6216b6876c8610ddf1077cb79", null ],
+      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#a9877985694c9aee0a295a377d91e0c16", null ],
+      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#ab4fb467b6f371f6cc58a3dba3030cbc5", null ],
+      [ "operator=", "class_eigen_1_1_sparse_self_adjoint_view.html#aead0b737623b7f281a976721ae8ef37d", null ],
+      [ "operator=", "class_eigen_1_1_sparse_self_adjoint_view.html#a2e4bbb842a4247bc012aa3af64c340b8", null ],
+      [ "operator=", "class_eigen_1_1_sparse_self_adjoint_view.html#aa21739e3c800a519046283b25c5f7b6f", null ],
+      [ "rankUpdate", "class_eigen_1_1_sparse_self_adjoint_view.html#aa7d2154b4abcf86204df522ef9a13f5c", null ],
+      [ "rankUpdate", "class_eigen_1_1_sparse_self_adjoint_view.html#a965f896fc039bf3cb9c7bc7f410310be", null ],
+      [ "resize", "class_eigen_1_1_sparse_self_adjoint_view.html#a6cea37a2e08d934d99936271f182926b", null ],
+      [ "rows", "class_eigen_1_1_sparse_self_adjoint_view.html#ac752c3b95b110340d0eff3ddda976984", null ],
+      [ "twistedBy", "class_eigen_1_1_sparse_self_adjoint_view.html#af4b2d1bbb72254e827a02da34d14279d", null ],
+      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#a87244e14162ceefce9b50627e7c1304b", null ],
+      [ "operator*", "class_eigen_1_1_sparse_self_adjoint_view.html#adb2251d5b81d15f3916557c2eefc54e0", null ],
+      [ "m_matrix", "class_eigen_1_1_sparse_self_adjoint_view.html#ac2553431de29927f0ce270cf4b07dacd", null ]
     ] ],
     [ "Eigen::MatrixBase::sparseView", "group___sparse_core___module.html#ga320dd291cbf4339c6118c41521b75350", null ]
 ];

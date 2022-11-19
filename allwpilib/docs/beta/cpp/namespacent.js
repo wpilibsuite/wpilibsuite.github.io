@@ -212,6 +212,7 @@ var namespacent =
     [ "Release", "group__ntcore__topic__func.html#ga1c51e7981010f19ab58e41496b771edb", null ],
     [ "ReleaseEntry", "group__ntcore__topic__func.html#gadb23796cfd84e2dfe880b949c09f4343", null ],
     [ "RemoveListener", "group__ntcore__listener__func.html#gac4639228e38ef8a544302798ab2240cd", null ],
+    [ "ResetInstance", "group__ntcore__instance__func.html#ga79759cd9666e43baa6d7a7fc862dead4", null ],
     [ "SetBoolean", "group__ntcore___boolean__func.html#ga1867ae0482fefcf26da857d62c081685", null ],
     [ "SetBooleanArray", "group__ntcore___boolean_array__func.html#ga6909fcecee2e0f3b03fee15c29003d5c", null ],
     [ "SetDefaultBoolean", "group__ntcore___boolean__func.html#gab4867ebce214d69f15a634591104170b", null ],

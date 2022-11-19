@@ -51,6 +51,7 @@ var ntcore__cpp_8h =
     [ "Release", "ntcore__cpp_8h.html#ga1c51e7981010f19ab58e41496b771edb", null ],
     [ "ReleaseEntry", "ntcore__cpp_8h.html#gadb23796cfd84e2dfe880b949c09f4343", null ],
     [ "RemoveListener", "ntcore__cpp_8h.html#gac4639228e38ef8a544302798ab2240cd", null ],
+    [ "ResetInstance", "ntcore__cpp_8h.html#ga79759cd9666e43baa6d7a7fc862dead4", null ],
     [ "SetDefaultEntryValue", "ntcore__cpp_8h.html#gae970c08adebb034a725a2a225482174e", null ],
     [ "SetEntryFlags", "ntcore__cpp_8h.html#ga292e4d9eaa943ad91c59d01372d8c1c0", null ],
     [ "SetEntryValue", "ntcore__cpp_8h.html#gaa7988b86534c62bf2ecd812d0a8eb4f6", null ],

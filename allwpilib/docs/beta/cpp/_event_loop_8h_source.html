@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -111,51 +111,56 @@ $(document).ready(function(){initNavTree('_event_loop_8h_source.html',''); initR
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_event_loop.html">EventLoop</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#a18ec685aa126ed4550a7440884a607a9">   17</a></span>  <a class="code hl_function" href="classfrc_1_1_event_loop.html#a18ec685aa126ed4550a7440884a607a9">EventLoop</a>();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"></span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">   * Bind a new action to run whenever the condition is true.</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">   * @param condition the condition to listen to.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">   * @param action the action to run.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#ac85aaf3851270aa5ed29125ea68f0d9d">   25</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#ac85aaf3851270aa5ed29125ea68f0d9d">Bind</a>(std::function&lt;<span class="keywordtype">bool</span>()&gt; condition,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <a class="code hl_class" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt;<span class="keywordtype">void</span>()&gt; action);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * Poll all bindings.</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">   31</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">Poll</a>();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"></span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * Clear all bindings.</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#a00e7b46a411c05e1407fb53d1c6f0147">   36</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#a00e7b46a411c05e1407fb53d1c6f0147">Clear</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">struct </span>Binding {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::function&lt;bool()&gt; condition;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <a class="code hl_class" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt;void()&gt; action;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">Poll</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  };</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  std::vector&lt;Binding&gt; m_bindings;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#aa56c1b1a45ebef451f18d21d953db195">   19</a></span>  <a class="code hl_function" href="classfrc_1_1_event_loop.html#aa56c1b1a45ebef451f18d21d953db195">EventLoop</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_event_loop.html">EventLoop</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#a5ca8f9f480966cfed7a67a1c566a0caf">   20</a></span>  <a class="code hl_class" href="classfrc_1_1_event_loop.html">EventLoop</a>&amp; <a class="code hl_function" href="classfrc_1_1_event_loop.html#a5ca8f9f480966cfed7a67a1c566a0caf">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_event_loop.html">EventLoop</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">   * Bind a new action to run whenever the condition is true.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">   * @param condition the condition to listen to.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * @param action the action to run.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#ac85aaf3851270aa5ed29125ea68f0d9d">   28</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#ac85aaf3851270aa5ed29125ea68f0d9d">Bind</a>(std::function&lt;<span class="keywordtype">bool</span>()&gt; condition,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <a class="code hl_class" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt;<span class="keywordtype">void</span>()&gt; action);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * Poll all bindings.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">   34</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">Poll</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * Clear all bindings.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1_event_loop.html#a00e7b46a411c05e1407fb53d1c6f0147">   39</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#a00e7b46a411c05e1407fb53d1c6f0147">Clear</a>();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">struct </span>Binding {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::function&lt;bool()&gt; condition;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt;void()&gt; action;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">Poll</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  };</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  std::vector&lt;Binding&gt; m_bindings;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_function_extras_8h_html"><div class="ttname"><a href="_function_extras_8h.html">FunctionExtras.h</a></div><div class="ttdoc">This file provides a collection of function (or more generally, callable) type erasure utilities supp...</div></div>
 <div class="ttc" id="aclassfrc_1_1_event_loop_html"><div class="ttname"><a href="classfrc_1_1_event_loop.html">frc::EventLoop</a></div><div class="ttdoc">The loop polling BooleanEvent objects and executing the actions bound to them.</div><div class="ttdef"><b>Definition:</b> EventLoop.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1_event_loop_html_a00e7b46a411c05e1407fb53d1c6f0147"><div class="ttname"><a href="classfrc_1_1_event_loop.html#a00e7b46a411c05e1407fb53d1c6f0147">frc::EventLoop::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clear all bindings.</div></div>
 <div class="ttc" id="aclassfrc_1_1_event_loop_html_a18ec685aa126ed4550a7440884a607a9"><div class="ttname"><a href="classfrc_1_1_event_loop.html#a18ec685aa126ed4550a7440884a607a9">frc::EventLoop::EventLoop</a></div><div class="ttdeci">EventLoop()</div></div>
+<div class="ttc" id="aclassfrc_1_1_event_loop_html_a5ca8f9f480966cfed7a67a1c566a0caf"><div class="ttname"><a href="classfrc_1_1_event_loop.html#a5ca8f9f480966cfed7a67a1c566a0caf">frc::EventLoop::operator=</a></div><div class="ttdeci">EventLoop &amp; operator=(const EventLoop &amp;)=delete</div></div>
 <div class="ttc" id="aclassfrc_1_1_event_loop_html_a93849979c38efc592fa7413da566bacb"><div class="ttname"><a href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">frc::EventLoop::Poll</a></div><div class="ttdeci">void Poll()</div><div class="ttdoc">Poll all bindings.</div></div>
+<div class="ttc" id="aclassfrc_1_1_event_loop_html_aa56c1b1a45ebef451f18d21d953db195"><div class="ttname"><a href="classfrc_1_1_event_loop.html#aa56c1b1a45ebef451f18d21d953db195">frc::EventLoop::EventLoop</a></div><div class="ttdeci">EventLoop(const EventLoop &amp;)=delete</div></div>
 <div class="ttc" id="aclassfrc_1_1_event_loop_html_ac85aaf3851270aa5ed29125ea68f0d9d"><div class="ttname"><a href="classfrc_1_1_event_loop.html#ac85aaf3851270aa5ed29125ea68f0d9d">frc::EventLoop::Bind</a></div><div class="ttdeci">void Bind(std::function&lt; bool()&gt; condition, wpi::unique_function&lt; void()&gt; action)</div><div class="ttdoc">Bind a new action to run whenever the condition is true.</div></div>
 <div class="ttc" id="aclasswpi_1_1unique__function_html"><div class="ttname"><a href="classwpi_1_1unique__function.html">wpi::unique_function</a></div><div class="ttdoc">unique_function is a type-erasing functor similar to std::function.</div><div class="ttdef"><b>Definition:</b> FunctionExtras.h:56</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServer.h:16</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_bc768cd5c43ee86af68d79cd427b3b71.html">event</a></li><li class="navelem"><a class="el" href="_event_loop_8h.html">EventLoop.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:40:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:05:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -5,7 +5,7 @@ var searchData=
   ['k_5fe_2',['k_e',['../namespaceunits_1_1constants.html#a360dd9d7e5172b9305e399d5763a1db2',1,'units::constants']]],
   ['kalmanfilter_3',['KalmanFilter',['../classfrc_1_1_kalman_filter.html#afeb51dfb8b9e26e2f4f8c7799f1ed2e6',1,'frc::KalmanFilter::KalmanFilter(KalmanFilter &amp;&amp;)=default'],['../classfrc_1_1_kalman_filter.html#a13cd1eddf51021d7520f118f7f6ecf87',1,'frc::KalmanFilter::KalmanFilter(LinearSystem&lt; States, Inputs, Outputs &gt; &amp;plant, const StateArray &amp;stateStdDevs, const OutputArray &amp;measurementStdDevs, units::second_t dt)']]],
   ['kc_4',['kc',['../class_eigen_1_1internal_1_1level3__blocking.html#a2348863b8e4618d9cf28ac3274320959',1,'Eigen::internal::level3_blocking']]],
-  ['keep_5',['Keep',['../classwpi_1_1uv_1_1_handle.html#a90f232727f2e42de5d385ae4ba61c8f9',1,'wpi::uv::Handle::Keep()'],['../classwpi_1_1uv_1_1_request.html#abd8e9c22b5bf12d8441e5eeaf9629955',1,'wpi::uv::Request::Keep()']]],
+  ['keep_5',['Keep',['../classwpi_1_1uv_1_1_request.html#abd8e9c22b5bf12d8441e5eeaf9629955',1,'wpi::uv::Request::Keep()'],['../classwpi_1_1uv_1_1_handle.html#a90f232727f2e42de5d385ae4ba61c8f9',1,'wpi::uv::Handle::Keep()']]],
   ['keepduplicates_6',['KeepDuplicates',['../classnt_1_1_pub_sub_option.html#adacacc930b514b7bdbd9e0bcfb5f943e',1,'nt::PubSubOption']]],
   ['kernel_7',['kernel',['../class_eigen_1_1_full_piv_l_u.html#a2eaff4717bc6e5727cb809fe4c407035',1,'Eigen::FullPivLU']]],
   ['kernel_5fretval_5fbase_8',['kernel_retval_base',['../struct_eigen_1_1internal_1_1kernel__retval__base.html#a11788fc65643a5f04d0bf93eb14ab859',1,'Eigen::internal::kernel_retval_base']]],

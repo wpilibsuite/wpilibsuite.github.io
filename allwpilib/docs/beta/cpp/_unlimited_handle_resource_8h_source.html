@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('_unlimited_handle_resource_8h_source.h
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">if</span> (index &lt; 0 || index &gt;= <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespace_eigen_1_1numext.html#a05475d0d7f372e4a858d6344e63c148e">int16_t</a><span class="keyword">&gt;</span>(m_structures.size())) {</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">std::move</a>(m_structures[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>]);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">return</span> std::move(m_structures[<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>]);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> THandle, <span class="keyword">typename</span> TStruct, HAL_HandleEnum enumValue&gt;</div>
@@ -244,10 +244,9 @@ $(document).ready(function(){initNavTree('_unlimited_handle_resource_8h_source.h
 <div class="ttc" id="agroup__hal__types_html_gaffa49c25914b373e4fb72677545ba3df"><div class="ttname"><a href="group__hal__types.html#gaffa49c25914b373e4fb72677545ba3df">HAL_kInvalidHandle</a></div><div class="ttdeci">#define HAL_kInvalidHandle</div><div class="ttdef"><b>Definition:</b> Types.h:15</div></div>
 <div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a05475d0d7f372e4a858d6344e63c148e"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a05475d0d7f372e4a858d6344e63c148e">Eigen::numext::int16_t</a></div><div class="ttdeci">::int16_t int16_t</div><div class="ttdef"><b>Definition:</b> Meta.h:55</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> ChipObject.h:40</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> SerialHelper.h:18</div></div>
 <div class="ttc" id="anamespacehal_html_a39c5c5e666bd856368820ba66b28e8f9"><div class="ttname"><a href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">hal::createHandle</a></div><div class="ttdeci">HAL_Handle createHandle(int16_t index, HAL_HandleEnum handleType, int16_t version)</div><div class="ttdoc">Create a handle for a specific index, type and version.</div></div>
 <div class="ttc" id="anamespacehal_html_afbf5817bf5e1c8a4c8d0684f3bb2c2b6"><div class="ttname"><a href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">hal::getHandleTypedIndex</a></div><div class="ttdeci">int16_t getHandleTypedIndex(HAL_Handle handle, HAL_HandleEnum enumType, int16_t version)</div><div class="ttdoc">Get if the handle is a correct type and version.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:134</div></div>
-<div class="ttc" id="anamespacewpi_1_1memory_1_1detail_html_aac49cfc68f7350903b25904dfe06b0ad"><div class="ttname"><a href="namespacewpi_1_1memory_1_1detail.html#aac49cfc68f7350903b25904dfe06b0ad">wpi::memory::detail::move</a></div><div class="ttdeci">std::remove_reference&lt; T &gt;::type &amp;&amp; move(T &amp;&amp;arg) noexcept</div><div class="ttdef"><b>Definition:</b> utility.hpp:26</div></div>
 <div class="ttc" id="anamespacewpi_html_a59819be5b11c0fbbc0b8e07c7638af24"><div class="ttname"><a href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a></div><div class="ttdeci">::std::mutex mutex</div><div class="ttdef"><b>Definition:</b> mutex.h:17</div></div>
 <div class="ttc" id="awpiutil_2src_2main_2native_2include_2wpi_2array_8h_html_ac4f38ea0cad7df02d1b6bfb99afd673c"><div class="ttname"><a href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html#ac4f38ea0cad7df02d1b6bfb99afd673c">get</a></div><div class="ttdeci">constexpr T &amp; get(wpi::array&lt; T, N &gt; &amp;arr) noexcept</div><div class="ttdef"><b>Definition:</b> array.h:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -256,7 +255,7 @@ $(document).ready(function(){initNavTree('_unlimited_handle_resource_8h_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_02fb1de250452f44c80739865561dc94.html">handles</a></li><li class="navelem"><a class="el" href="_unlimited_handle_resource_8h.html">UnlimitedHandleResource.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:40:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:05:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('_sparse_l_u__gemm__kernel_8h_source.ht
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_typedef" href="struct_eigen_1_1internal_1_1packet__traits.html#a811c5bde6641fd0f7a8f88be5e11ce27">packet_traits&lt;Scalar&gt;::type</a> Packet;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">enum</span> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    NumberOfRegisters = <a class="code hl_define" href="_a_v_x_2_packet_math_8h.html#a97d0981515c4e49cdf6bd537d80d0e7f">EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    NumberOfRegisters = <a class="code hl_define" href="_settings_8h.html#a97d0981515c4e49cdf6bd537d80d0e7f">EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS</a>,</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    PacketSize = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::size</a>,</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    PM = 8,                             <span class="comment">// peeling in M</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    RN = 2,                             <span class="comment">// register blocking</span></div>
@@ -374,18 +374,18 @@ $(document).ready(function(){initNavTree('_sparse_l_u__gemm__kernel_8h_source.ht
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>} <span class="comment">// namespace Eigen</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#endif </span><span class="comment">// EIGEN_SPARSELU_GEMM_KERNEL_H</span></div>
-<div class="ttc" id="a_a_v_x_2_packet_math_8h_html_a97d0981515c4e49cdf6bd537d80d0e7f"><div class="ttname"><a href="_a_v_x_2_packet_math_8h.html#a97d0981515c4e49cdf6bd537d80d0e7f">EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS</a></div><div class="ttdeci">#define EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS</div><div class="ttdef"><b>Definition:</b> PacketMath.h:22</div></div>
 <div class="ttc" id="a_macros_8h_html_a1afbc610f742807153c78d1e66a7576a"><div class="ttname"><a href="_macros_8h.html#a1afbc610f742807153c78d1e66a7576a">EIGEN_ASM_COMMENT</a></div><div class="ttdeci">#define EIGEN_ASM_COMMENT(X)</div><div class="ttdef"><b>Definition:</b> Macros.h:1082</div></div>
 <div class="ttc" id="a_macros_8h_html_a4e742b5a08636a61784c0e173b61e710"><div class="ttname"><a href="_macros_8h.html#a4e742b5a08636a61784c0e173b61e710">eigen_internal_assert</a></div><div class="ttdeci">#define eigen_internal_assert(x)</div><div class="ttdef"><b>Definition:</b> Macros.h:1043</div></div>
 <div class="ttc" id="a_macros_8h_html_aa715c1fe854205b27e962ee7d7e06faf"><div class="ttname"><a href="_macros_8h.html#aa715c1fe854205b27e962ee7d7e06faf">EIGEN_DONT_INLINE</a></div><div class="ttdeci">#define EIGEN_DONT_INLINE</div><div class="ttdef"><b>Definition:</b> Macros.h:940</div></div>
+<div class="ttc" id="a_settings_8h_html_a97d0981515c4e49cdf6bd537d80d0e7f"><div class="ttname"><a href="_settings_8h.html#a97d0981515c4e49cdf6bd537d80d0e7f">EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS</a></div><div class="ttdeci">#define EIGEN_ARCH_DEFAULT_NUMBER_OF_REGISTERS</div><div class="ttdoc">Defines the default number of registers available for that architecture.</div><div class="ttdef"><b>Definition:</b> Settings.h:46</div></div>
 <div class="ttc" id="a_sparse_l_u__gemm__kernel_8h_html_ac0f8112df7f88a3da625a17fbf9f0152"><div class="ttname"><a href="_sparse_l_u__gemm__kernel_8h.html#ac0f8112df7f88a3da625a17fbf9f0152">WORK</a></div><div class="ttdeci">#define WORK(I)</div></div>
 <div class="ttc" id="aclass_eigen_1_1_map_html"><div class="ttname"><a href="class_eigen_1_1_map.html">Eigen::Map</a></div><div class="ttdoc">A matrix or vector expression mapping an existing array of data.</div><div class="ttdef"><b>Definition:</b> Map.h:96</div></div>
 <div class="ttc" id="agroup__enums_html_gga45fe06e29902b7a2773de05ba27b47a1ae12d0f8f869c40c76128260af2242bc8"><div class="ttname"><a href="group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ae12d0f8f869c40c76128260af2242bc8">Eigen::Aligned</a></div><div class="ttdeci">@ Aligned</div><div class="ttdef"><b>Definition:</b> Constants.h:240</div></div>
-<div class="ttc" id="anamespace_eigen_1_1internal_html"><div class="ttname"><a href="namespace_eigen_1_1internal.html">Eigen::internal</a></div><div class="ttdef"><b>Definition:</b> MatrixLogarithm.h:16</div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html"><div class="ttname"><a href="namespace_eigen_1_1internal.html">Eigen::internal</a></div><div class="ttdef"><b>Definition:</b> BDCSVD.h:38</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a32f426c047271d8068ce90f72ff64632"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a32f426c047271d8068ce90f72ff64632">Eigen::internal::sparselu_gemm</a></div><div class="ttdeci">EIGEN_DONT_INLINE void sparselu_gemm(Index m, Index n, Index d, const Scalar *A, Index lda, const Scalar *B, Index ldb, Scalar *C, Index ldc)</div><div class="ttdef"><b>Definition:</b> SparseLU_gemm_kernel.h:26</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a557119ca2ecbb5fc69ad064afe8bca3f"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a557119ca2ecbb5fc69ad064afe8bca3f">Eigen::internal::prefetch</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC void prefetch(const Scalar *addr)</div><div class="ttdef"><b>Definition:</b> GenericPacketMath.h:719</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a8f16b915ba954e15a13f76ca3016830a"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a8f16b915ba954e15a13f76ca3016830a">Eigen::internal::first_default_aligned</a></div><div class="ttdeci">static Index first_default_aligned(const DenseBase&lt; Derived &gt; &amp;m)</div><div class="ttdef"><b>Definition:</b> DenseCoeffsBase.h:650</div></div>
-<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> MatrixLogarithm.h:14</div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> Core:141</div></div>
 <div class="ttc" id="anamespace_eigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acfa211a9904208ac580676b5cc42b04a"><div class="ttname"><a href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">units::constants::c</a></div><div class="ttdeci">static constexpr const velocity::meters_per_second_t c(299792458.0)</div><div class="ttdoc">Speed of light in vacuum.</div></div>
@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('_sparse_l_u__gemm__kernel_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_94752814cd7f6fb6b6a90d2bd0d0e9a6.html">SparseLU</a></li><li class="navelem"><a class="el" href="_sparse_l_u__gemm__kernel_8h.html">SparseLU_gemm_kernel.h</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

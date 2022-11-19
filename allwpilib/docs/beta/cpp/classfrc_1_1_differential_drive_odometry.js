@@ -1,7 +1,7 @@
 var classfrc_1_1_differential_drive_odometry =
 [
-    [ "DifferentialDriveOdometry", "classfrc_1_1_differential_drive_odometry.html#a275156eb3e18090d47dbd5d228198062", null ],
+    [ "DifferentialDriveOdometry", "classfrc_1_1_differential_drive_odometry.html#a58340d1443833c6f493743dd038f3bd5", null ],
     [ "GetPose", "classfrc_1_1_differential_drive_odometry.html#a3394cbff3d47be7d478d955a86933e15", null ],
-    [ "ResetPosition", "classfrc_1_1_differential_drive_odometry.html#a918d2c1c2411bb25d2ebeed372646930", null ],
+    [ "ResetPosition", "classfrc_1_1_differential_drive_odometry.html#abdcd881b66e51b689e8d9a892e2bc7c9", null ],
     [ "Update", "classfrc_1_1_differential_drive_odometry.html#a31209d812bdc2a5522e3f92180c43180", null ]
 ];

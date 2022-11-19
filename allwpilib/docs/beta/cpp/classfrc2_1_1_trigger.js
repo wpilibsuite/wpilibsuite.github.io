@@ -1,7 +1,7 @@
 var classfrc2_1_1_trigger =
 [
-    [ "Trigger", "classfrc2_1_1_trigger.html#addab140045b805eeb89ed5f140c971bc", null ],
-    [ "Trigger", "classfrc2_1_1_trigger.html#a2e24a8e9e623eabebc315818b2953c27", null ],
+    [ "Trigger", "classfrc2_1_1_trigger.html#afa07a273d9e93a2fbe38491fbede911a", null ],
+    [ "Trigger", "classfrc2_1_1_trigger.html#ae35c888fd505843b02d0281a60c9231d", null ],
     [ "Trigger", "classfrc2_1_1_trigger.html#a381e99fad0b62ac634ce50816f96ed7a", null ],
     [ "Trigger", "classfrc2_1_1_trigger.html#aac25ecb356633650dc86369223641f70", null ],
     [ "CancelWhenActive", "classfrc2_1_1_trigger.html#a4815e370d32b42e34f1bb42d33f4a81f", null ],
@@ -14,7 +14,9 @@ var classfrc2_1_1_trigger =
     [ "OnTrue", "classfrc2_1_1_trigger.html#a924b719bf6b8a9a040331bcb0de07d60", null ],
     [ "operator!", "classfrc2_1_1_trigger.html#a4c0e51e2f40a2c22b5f6e0599e195cfb", null ],
     [ "operator&&", "classfrc2_1_1_trigger.html#a41ab796d5329690d582f99c5496c554d", null ],
+    [ "operator&&", "classfrc2_1_1_trigger.html#a337415c8ca702ef7b1a8ec21f59974c8", null ],
     [ "operator||", "classfrc2_1_1_trigger.html#abcb9c466200b3f4ad26f3a4472861073", null ],
+    [ "operator||", "classfrc2_1_1_trigger.html#a1fa9a46fe102413160cb13e1825c7c95", null ],
     [ "Rising", "classfrc2_1_1_trigger.html#a3b403000578374fd98b70bddc6a1894f", null ],
     [ "ToggleOnFalse", "classfrc2_1_1_trigger.html#affe2056f0cb02c0602968a4c5325b2f6", null ],
     [ "ToggleOnFalse", "classfrc2_1_1_trigger.html#ad40bde1e49b00f98de59e7c522a2fff1", null ],

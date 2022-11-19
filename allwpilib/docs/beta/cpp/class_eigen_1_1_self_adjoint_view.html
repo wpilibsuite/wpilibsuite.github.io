@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -118,11 +118,11 @@ Inheritance diagram for Eigen::SelfAdjointView&lt; _MatrixType, UpLo &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a7ae73aac2b2f2a8a18472bc096a1612c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612cac5bf3958babb12b10fa780f96f1902c3">Mode</a> = internal::traits&lt;SelfAdjointView&gt;::Mode
-, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca435823ed083ea5d02d80221ef7e5f182">Flags</a> = internal::traits&lt;SelfAdjointView&gt;::Flags
-, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> = ((int(Mode) &amp; int(Upper)) ? Lower : 0) | ((int(Mode) &amp; int(Lower)) ? Upper : 0)
+<tr class="memitem:af3b8eb56439b29e10ce7af355d0b6127"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127ac5bf3958babb12b10fa780f96f1902c3">Mode</a> = internal::traits&lt;SelfAdjointView&gt;::Mode
+, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a435823ed083ea5d02d80221ef7e5f182">Flags</a> = internal::traits&lt;SelfAdjointView&gt;::Flags
+, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> = ((int(Mode) &amp; int(Upper)) ? Lower : 0) | ((int(Mode) &amp; int(Lower)) ? Upper : 0)
  }</td></tr>
-<tr class="separator:a7ae73aac2b2f2a8a18472bc096a1612c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af3b8eb56439b29e10ce7af355d0b6127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec5b4c046771bcfbfdf751f3356095b"><td class="memItemLeft" align="right" valign="top">typedef _MatrixType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a></td></tr>
 <tr class="separator:a9ec5b4c046771bcfbfdf751f3356095b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c091fa183af81f0d5d45082ad724dfd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_triangular_base.html">TriangularBase</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a2c091fa183af81f0d5d45082ad724dfd">Base</a></td></tr>
@@ -146,21 +146,21 @@ Public Types</h2></td></tr>
 <tr class="separator:af4867e7938d7f7044cc06159ed01528c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa17703ae1b2a688b2bc167d98a4d7f58"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; const <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a1b7a6d14146820e3191086c5f32c1bff">MatrixConjugateReturnType</a>, UpLo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#aa17703ae1b2a688b2bc167d98a4d7f58">ConjugateReturnType</a></td></tr>
 <tr class="separator:aa17703ae1b2a688b2bc167d98a4d7f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa17738ff0610ef13cb569f8da0871770"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; const typename MatrixType::AdjointReturnType, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#aa17738ff0610ef13cb569f8da0871770">AdjointReturnType</a></td></tr>
+<tr class="memitem:aa17738ff0610ef13cb569f8da0871770"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; const typename MatrixType::AdjointReturnType, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#aa17738ff0610ef13cb569f8da0871770">AdjointReturnType</a></td></tr>
 <tr class="separator:aa17738ff0610ef13cb569f8da0871770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d0c17202b034ee2231f26ee6085558"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; typename MatrixType::TransposeReturnType, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a96d0c17202b034ee2231f26ee6085558">TransposeReturnType</a></td></tr>
+<tr class="memitem:a96d0c17202b034ee2231f26ee6085558"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; typename MatrixType::TransposeReturnType, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a96d0c17202b034ee2231f26ee6085558">TransposeReturnType</a></td></tr>
 <tr class="separator:a96d0c17202b034ee2231f26ee6085558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb31929335c590a2599c2c6b90e9c64"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; const typename MatrixType::ConstTransposeReturnType, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7fb31929335c590a2599c2c6b90e9c64">ConstTransposeReturnType</a></td></tr>
+<tr class="memitem:a7fb31929335c590a2599c2c6b90e9c64"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; const typename MatrixType::ConstTransposeReturnType, <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7fb31929335c590a2599c2c6b90e9c64">ConstTransposeReturnType</a></td></tr>
 <tr class="separator:a7fb31929335c590a2599c2c6b90e9c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f0234ebeae4c4ca512bcd5fb5e8bb1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_num_traits.html">NumTraits</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af52acc0942ece2de9b6db4a99cc6656e">Scalar</a> &gt;::Real&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">RealScalar</a></td></tr>
 <tr class="memdesc:af9f0234ebeae4c4ca512bcd5fb5e8bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real part of <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af52acc0942ece2de9b6db4a99cc6656e" title="The type of coefficients in this matrix.">Scalar</a>.  <a href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">More...</a><br /></td></tr>
 <tr class="separator:af9f0234ebeae4c4ca512bcd5fb5e8bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ae92703d920130b38a383f8b165146c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">RealScalar</a>, <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a> &gt;<a class="el" href="class_eigen_1_1_triangular_base.html#a7ebbfa6b2c12bbfd3053b2a769b51290abad1bac630eb1db3efea6149eace694b">::ColsAtCompileTime</a>, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a8ae92703d920130b38a383f8b165146c">EigenvaluesReturnType</a></td></tr>
+<tr class="memitem:a8ae92703d920130b38a383f8b165146c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">RealScalar</a>, <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a> &gt;<a class="el" href="class_eigen_1_1_triangular_base.html#a37197c7c82769efa2a8950c8e12513e9abad1bac630eb1db3efea6149eace694b">::ColsAtCompileTime</a>, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a8ae92703d920130b38a383f8b165146c">EigenvaluesReturnType</a></td></tr>
 <tr class="memdesc:a8ae92703d920130b38a383f8b165146c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return type of <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a66a18e7f6619ebbd3532c93da1209871" title="Computes the eigenvalues of a matrix.">eigenvalues()</a>  <a href="class_eigen_1_1_self_adjoint_view.html#a8ae92703d920130b38a383f8b165146c">More...</a><br /></td></tr>
 <tr class="separator:a8ae92703d920130b38a383f8b165146c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_eigen_1_1_triangular_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_eigen_1_1_triangular_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_eigen_1_1_triangular_base.html">Eigen::TriangularBase&lt; SelfAdjointView&lt; _MatrixType, UpLo &gt; &gt;</a></td></tr>
-<tr class="memitem:a7ebbfa6b2c12bbfd3053b2a769b51290 inherit pub_types_class_eigen_1_1_triangular_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a7ebbfa6b2c12bbfd3053b2a769b51290 inherit pub_types_class_eigen_1_1_triangular_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37197c7c82769efa2a8950c8e12513e9 inherit pub_types_class_eigen_1_1_triangular_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a37197c7c82769efa2a8950c8e12513e9 inherit pub_types_class_eigen_1_1_triangular_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66a300711dd3f1a3c5e76cf5371c6cd8 inherit pub_types_class_eigen_1_1_triangular_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; _MatrixType, UpLo &gt; &gt;::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_triangular_base.html#a66a300711dd3f1a3c5e76cf5371c6cd8">Scalar</a></td></tr>
 <tr class="separator:a66a300711dd3f1a3c5e76cf5371c6cd8 inherit pub_types_class_eigen_1_1_triangular_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a793d02d96bbf60b21d9ba50f2c903 inherit pub_types_class_eigen_1_1_triangular_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; _MatrixType, UpLo &gt; &gt;::StorageKind&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_triangular_base.html#a11a793d02d96bbf60b21d9ba50f2c903">StorageKind</a></td></tr>
@@ -242,12 +242,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a656bf4b77656ad44b144d109240deedc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">RealScalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#a656bf4b77656ad44b144d109240deedc">operatorNorm</a> () const</td></tr>
 <tr class="memdesc:a656bf4b77656ad44b144d109240deedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the L2 operator norm.  <a href="class_eigen_1_1_self_adjoint_view.html#a656bf4b77656ad44b144d109240deedc">More...</a><br /></td></tr>
 <tr class="separator:a656bf4b77656ad44b144d109240deedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2f65cab28d10cff8b715610b972b6e9"><td class="memTemplParams" colspan="2">template&lt;typename DerivedU , typename DerivedV &gt; </td></tr>
-<tr class="memitem:ad2f65cab28d10cff8b715610b972b6e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a>, UpLo &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#ad2f65cab28d10cff8b715610b972b6e9">rankUpdate</a> (const <a class="el" href="class_eigen_1_1_matrix_base.html">MatrixBase</a>&lt; DerivedU &gt; &amp;u, const <a class="el" href="class_eigen_1_1_matrix_base.html">MatrixBase</a>&lt; DerivedV &gt; &amp;v, const <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af52acc0942ece2de9b6db4a99cc6656e">Scalar</a> &amp;alpha)</td></tr>
-<tr class="separator:ad2f65cab28d10cff8b715610b972b6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13de24d1bd9a3d6d9daf52f806d55e8"><td class="memTemplParams" colspan="2">template&lt;typename DerivedU &gt; </td></tr>
 <tr class="memitem:ac13de24d1bd9a3d6d9daf52f806d55e8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a>, UpLo &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#ac13de24d1bd9a3d6d9daf52f806d55e8">rankUpdate</a> (const <a class="el" href="class_eigen_1_1_matrix_base.html">MatrixBase</a>&lt; DerivedU &gt; &amp;u, const <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af52acc0942ece2de9b6db4a99cc6656e">Scalar</a> &amp;alpha)</td></tr>
 <tr class="separator:ac13de24d1bd9a3d6d9daf52f806d55e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f65cab28d10cff8b715610b972b6e9"><td class="memTemplParams" colspan="2">template&lt;typename DerivedU , typename DerivedV &gt; </td></tr>
+<tr class="memitem:ad2f65cab28d10cff8b715610b972b6e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a>, UpLo &gt; &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_self_adjoint_view.html#ad2f65cab28d10cff8b715610b972b6e9">rankUpdate</a> (const <a class="el" href="class_eigen_1_1_matrix_base.html">MatrixBase</a>&lt; DerivedU &gt; &amp;u, const <a class="el" href="class_eigen_1_1_matrix_base.html">MatrixBase</a>&lt; DerivedV &gt; &amp;v, const <a class="el" href="class_eigen_1_1_self_adjoint_view.html#af52acc0942ece2de9b6db4a99cc6656e">Scalar</a> &amp;alpha)</td></tr>
+<tr class="separator:ad2f65cab28d10cff8b715610b972b6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_eigen_1_1_triangular_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_eigen_1_1_triangular_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_eigen_1_1_triangular_base.html">Eigen::TriangularBase&lt; SelfAdjointView&lt; _MatrixType, UpLo &gt; &gt;</a></td></tr>
 <tr class="memitem:afa53d673b6d448d12d7f58f6969040e0 inherit pub_methods_class_eigen_1_1_triangular_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_triangular_base.html#afa53d673b6d448d12d7f58f6969040e0">TriangularBase</a> ()</td></tr>
 <tr class="separator:afa53d673b6d448d12d7f58f6969040e0 inherit pub_methods_class_eigen_1_1_triangular_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,7 +353,7 @@ class Eigen::SelfAdjointView&lt; _MatrixType, UpLo &gt;</div><p >Expression of a
 template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt;const typename MatrixType::AdjointReturnType,<a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a>&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::AdjointReturnType</td>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt;const typename MatrixType::AdjointReturnType,<a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a>&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::AdjointReturnType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -417,7 +417,7 @@ template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
 template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt;const typename MatrixType::ConstTransposeReturnType,<a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a>&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::ConstTransposeReturnType</td>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt;const typename MatrixType::ConstTransposeReturnType,<a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a>&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::ConstTransposeReturnType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -433,7 +433,7 @@ template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
 template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt;<a class="el" href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">RealScalar</a>, <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt;<a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a>&gt;<a class="el" href="class_eigen_1_1_triangular_base.html#a7ebbfa6b2c12bbfd3053b2a769b51290abad1bac630eb1db3efea6149eace694b">::ColsAtCompileTime</a>, 1&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::EigenvaluesReturnType</td>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt;<a class="el" href="class_eigen_1_1_self_adjoint_view.html#af9f0234ebeae4c4ca512bcd5fb5e8bb1">RealScalar</a>, <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt;<a class="el" href="class_eigen_1_1_self_adjoint_view.html#a9ec5b4c046771bcfbfdf751f3356095b">MatrixType</a>&gt;<a class="el" href="class_eigen_1_1_triangular_base.html#a37197c7c82769efa2a8950c8e12513e9abad1bac630eb1db3efea6149eace694b">::ColsAtCompileTime</a>, 1&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::EigenvaluesReturnType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -599,7 +599,7 @@ template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
 template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt;typename MatrixType::TransposeReturnType,<a class="el" href="class_eigen_1_1_self_adjoint_view.html#a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a>&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::TransposeReturnType</td>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a>&lt;typename MatrixType::TransposeReturnType,<a class="el" href="class_eigen_1_1_self_adjoint_view.html#af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0">TransposeMode</a>&gt; <a class="el" href="class_eigen_1_1_self_adjoint_view.html">Eigen::SelfAdjointView</a>&lt; _MatrixType, UpLo &gt;::TransposeReturnType</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -607,8 +607,8 @@ template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a7ae73aac2b2f2a8a18472bc096a1612c" name="a7ae73aac2b2f2a8a18472bc096a1612c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ae73aac2b2f2a8a18472bc096a1612c">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="af3b8eb56439b29e10ce7af355d0b6127" name="af3b8eb56439b29e10ce7af355d0b6127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b8eb56439b29e10ce7af355d0b6127">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,9 +621,9 @@ template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7ae73aac2b2f2a8a18472bc096a1612cac5bf3958babb12b10fa780f96f1902c3" name="a7ae73aac2b2f2a8a18472bc096a1612cac5bf3958babb12b10fa780f96f1902c3"></a>Mode&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ae73aac2b2f2a8a18472bc096a1612ca435823ed083ea5d02d80221ef7e5f182" name="a7ae73aac2b2f2a8a18472bc096a1612ca435823ed083ea5d02d80221ef7e5f182"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0" name="a7ae73aac2b2f2a8a18472bc096a1612ca3f4dda7428e92eba1fd23209d6861ea0"></a>TransposeMode&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af3b8eb56439b29e10ce7af355d0b6127ac5bf3958babb12b10fa780f96f1902c3" name="af3b8eb56439b29e10ce7af355d0b6127ac5bf3958babb12b10fa780f96f1902c3"></a>Mode&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af3b8eb56439b29e10ce7af355d0b6127a435823ed083ea5d02d80221ef7e5f182" name="af3b8eb56439b29e10ce7af355d0b6127a435823ed083ea5d02d80221ef7e5f182"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0" name="af3b8eb56439b29e10ce7af355d0b6127a3f4dda7428e92eba1fd23209d6861ea0"></a>TransposeMode&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1536,11 +1536,12 @@ template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/util/<a class="el" href="_forward_declarations_8h_source.html">ForwardDeclarations.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/<a class="el" href="_self_adjoint_view_8h_source.html">SelfAdjointView.h</a></li>
-<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Cholesky/<a class="el" href="_l_l_t_8h_source.html">LLT.h</a></li>
-<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Cholesky/<a class="el" href="_l_d_l_t_8h_source.html">LDLT.h</a></li>
-<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/products/<a class="el" href="_selfadjoint_rank2_update_8h_source.html">SelfadjointRank2Update.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/products/<a class="el" href="_selfadjoint_product_8h_source.html">SelfadjointProduct.h</a></li>
+<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Core/products/<a class="el" href="_selfadjoint_rank2_update_8h_source.html">SelfadjointRank2Update.h</a></li>
+<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Cholesky/<a class="el" href="_l_d_l_t_8h_source.html">LDLT.h</a></li>
+<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Cholesky/<a class="el" href="_l_l_t_8h_source.html">LLT.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/thirdparty/eigen/include/Eigen/src/Eigenvalues/<a class="el" href="_matrix_base_eigenvalues_8h_source.html">MatrixBaseEigenvalues.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -1549,7 +1550,7 @@ template&lt;typename _MatrixType , unsigned int UpLo&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="class_eigen_1_1_self_adjoint_view.html">SelfAdjointView</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

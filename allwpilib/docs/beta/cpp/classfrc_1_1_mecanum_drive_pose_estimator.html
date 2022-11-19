@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -105,15 +105,15 @@ $(document).ready(function(){initNavTree('classfrc_1_1_mecanum_drive_pose_estima
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a882a47b87033cf7ad7883bb638a20f05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a882a47b87033cf7ad7883bb638a20f05">MecanumDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;wheelPositions, <a class="el" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 7 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 5 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td></tr>
-<tr class="memdesc:a882a47b87033cf7ad7883bb638a20f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with meca...">MecanumDrivePoseEstimator</a>.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a882a47b87033cf7ad7883bb638a20f05">More...</a><br /></td></tr>
-<tr class="separator:a882a47b87033cf7ad7883bb638a20f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b7c8c71f662c4256cb20e171014ff9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a60b7c8c71f662c4256cb20e171014ff9">MecanumDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;wheelPositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, <a class="el" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 7 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 5 &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td></tr>
+<tr class="memdesc:a60b7c8c71f662c4256cb20e171014ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with meca...">MecanumDrivePoseEstimator</a>.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a60b7c8c71f662c4256cb20e171014ff9">More...</a><br /></td></tr>
+<tr class="separator:a60b7c8c71f662c4256cb20e171014ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09d595a66bbb8e8779e204003de430f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">SetVisionMeasurementStdDevs</a> (const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:a09d595a66bbb8e8779e204003de430f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pose estimator's trust of global measurements.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a09d595a66bbb8e8779e204003de430f1">More...</a><br /></td></tr>
 <tr class="separator:a09d595a66bbb8e8779e204003de430f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fa09948429c9387746fcdd590706a13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#a4fa09948429c9387746fcdd590706a13">ResetPosition</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;wheelPositions)</td></tr>
-<tr class="memdesc:a4fa09948429c9387746fcdd590706a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#a4fa09948429c9387746fcdd590706a13">More...</a><br /></td></tr>
-<tr class="separator:a4fa09948429c9387746fcdd590706a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae899e58343cb0e3f429f2f54a6d668d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ae899e58343cb0e3f429f2f54a6d668d7">ResetPosition</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;wheelPositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
+<tr class="memdesc:ae899e58343cb0e3f429f2f54a6d668d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ae899e58343cb0e3f429f2f54a6d668d7">More...</a><br /></td></tr>
+<tr class="separator:ae899e58343cb0e3f429f2f54a6d668d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1aa41030fde5363102bba79146747cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">GetEstimatedPosition</a> () const</td></tr>
 <tr class="memdesc:ab1aa41030fde5363102bba79146747cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab1aa41030fde5363102bba79146747cb">More...</a><br /></td></tr>
 <tr class="separator:ab1aa41030fde5363102bba79146747cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +140,8 @@ Public Member Functions</h2></td></tr>
 <p ><b> u = [v_x, v_y, omega, v_fl, v_fr, v_rl, v_rr]ᵀ </b> containing x velocity, y velocity, and angular rate in the field coordinate system, followed by the velocity of the front left, front right, rear left, and rear right wheels.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta, s_fl, s_fr, s_rl, s_rr]ᵀ </b> containing gyro heading, followed by the distance driven by the front left, front right, rear left, and rear right wheels. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a882a47b87033cf7ad7883bb638a20f05" name="a882a47b87033cf7ad7883bb638a20f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a882a47b87033cf7ad7883bb638a20f05">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator()</h2>
+<a id="a60b7c8c71f662c4256cb20e171014ff9" name="a60b7c8c71f662c4256cb20e171014ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b7c8c71f662c4256cb20e171014ff9">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,14 +155,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>initialPose</em>, </td>
+          <td class="paramtype">const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;&#160;</td>
+          <td class="paramname"><em>wheelPositions</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;&#160;</td>
-          <td class="paramname"><em>wheelPositions</em>, </td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialPose</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -206,8 +206,8 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gyroAngle</td><td>The current gyro angle. </td></tr>
-    <tr><td class="paramname">initialPose</td><td>The starting pose estimate. </td></tr>
     <tr><td class="paramname">wheelPositions</td><td>The distance measured by each wheel. </td></tr>
+    <tr><td class="paramname">initialPose</td><td>The starting pose estimate. </td></tr>
     <tr><td class="paramname">kinematics</td><td>A correctly-configured kinematics object for your drivetrain. </td></tr>
     <tr><td class="paramname">stateStdDevs</td><td>Standard deviations of model states. Increase these numbers to trust your model's state estimates less. This matrix is in the form [x, y, theta, s_fl, s_fr, s_rl, s_rr]ᵀ, with units in meters and radians, followed by meters. </td></tr>
     <tr><td class="paramname">localMeasurementStdDevs</td><td>Standard deviation of the gyro measurement. Increase this number to trust sensor readings from the gyro less. This matrix is in the form [theta, s_fl, s_fr, s_rl, s_rr], with units in radians, followed by meters. </td></tr>
@@ -336,8 +336,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4fa09948429c9387746fcdd590706a13" name="a4fa09948429c9387746fcdd590706a13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fa09948429c9387746fcdd590706a13">&#9670;&nbsp;</a></span>ResetPosition()</h2>
+<a id="ae899e58343cb0e3f429f2f54a6d668d7" name="ae899e58343cb0e3f429f2f54a6d668d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae899e58343cb0e3f429f2f54a6d668d7">&#9670;&nbsp;</a></span>ResetPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -345,12 +345,6 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void frc::MecanumDrivePoseEstimator::ResetPosition </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>pose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
           <td class="paramname"><em>gyroAngle</em>, </td>
         </tr>
@@ -358,7 +352,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;&#160;</td>
-          <td class="paramname"><em>wheelPositions</em>&#160;</td>
+          <td class="paramname"><em>wheelPositions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>pose</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -369,13 +369,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Resets the robot's position on the field. </p>
-<p >You NEED to reset your encoders (to zero) when calling this method.</p>
+<p >IF wheelPositions are unspecified, You NEED to reset your encoders (to zero).</p>
 <p >The gyroscope angle does not need to be reset in the user's robot code. The library automatically takes care of offsetting the gyro angle.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pose</td><td>The position on the field that your robot is at. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
     <tr><td class="paramname">wheelPositions</td><td>The distances measured at each wheel. </td></tr>
+    <tr><td class="paramname">pose</td><td>The position on the field that your robot is at. </td></tr>
   </table>
   </dd>
 </dl>
@@ -517,7 +517,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html">MecanumDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sat Nov 5 2022 03:41:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 08:06:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
