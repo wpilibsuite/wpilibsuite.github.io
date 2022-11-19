@@ -1,5 +1,9 @@
 var NAVTREEINDEX167 =
 {
+"struct_eigen_1_1internal_1_1eval_3_01_t_00_01_diagonal_shape_01_4.html#a41a0f100ce6d787321b16082a103423b":[5,0,4,2,313,0],
+"struct_eigen_1_1internal_1_1eval_3_01_t_00_01_sparse_01_4.html":[5,0,4,2,314],
+"struct_eigen_1_1internal_1_1eval_3_01_t_00_01_sparse_01_4.html":[4,0,8,4,316],
+"struct_eigen_1_1internal_1_1evaluator.html":[4,0,8,4,318],
 "struct_eigen_1_1internal_1_1evaluator.html":[5,0,4,2,316],
 "struct_eigen_1_1internal_1_1evaluator.html#a23e380d87319deaa59368cdf3db87b2b":[5,0,4,2,316,0],
 "struct_eigen_1_1internal_1_1evaluator.html#a23e380d87319deaa59368cdf3db87b2b":[4,0,8,4,318,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX167 =
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#a49f98301ac153b880b54008edd822e9e":[5,0,4,2,338,0],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#ada3672ffa0e742024c710069ad8665f8":[4,0,8,4,340,1],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#ada3672ffa0e742024c710069ad8665f8":[5,0,4,2,338,1],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html":[5,0,4,2,339],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html":[4,0,8,4,341],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#a0cccc9f11f1d108fa14ab95ff4459f57":[5,0,4,2,339,3],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#a0cccc9f11f1d108fa14ab95ff4459f57":[4,0,8,4,341,3],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#a3275d76f3ab41acd11e92b8e91c3bd3b":[5,0,4,2,339,2]
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html":[5,0,4,2,339]
 };

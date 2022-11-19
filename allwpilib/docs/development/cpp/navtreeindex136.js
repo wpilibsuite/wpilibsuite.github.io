@@ -1,5 +1,9 @@
 var NAVTREEINDEX136 =
 {
+"group__ntcore__table__cfunc.html#ga440eb62cdf0781156e82fa4097d29770":[3,8,1,4],
+"group__ntcore__table__cfunc.html#ga490a66af1b63d589b6f1a29852aaa1c4":[3,8,1,6],
+"group__ntcore__table__cfunc.html#ga4d4e95c13b6b13920af6db25cfc36931":[3,8,1,7],
+"group__ntcore__table__cfunc.html#ga876e709ee3f18c20255e0d983170cfc0":[3,8,1,1],
 "group__ntcore__table__cfunc.html#ga9a5302bf89cadf3811ea821cfcd18bad":[3,8,1,2],
 "group__ntcore__table__cfunc.html#gad3c56c028bc02e677f51a97ed14e91a5":[3,8,1,8],
 "group__ntcore__table__cfunc.html#gaf95c0f8c14601e44cfc96da0749d9711":[3,8,1,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX136 =
 "hal_2src_2main_2native_2include_2hal_2_counter_8h.html":[6,0,6,18],
 "hal_2src_2main_2native_2include_2hal_2_counter_8h_source.html":[6,0,6,18],
 "hal_2src_2main_2native_2include_2hal_2_d_m_a_8h.html":[6,0,6,21],
-"hal_2src_2main_2native_2include_2hal_2_d_m_a_8h_source.html":[6,0,6,21],
-"hal_2src_2main_2native_2include_2hal_2_driver_station_8h.html":[6,0,6,22],
-"hal_2src_2main_2native_2include_2hal_2_driver_station_8h_source.html":[6,0,6,22],
-"hal_2src_2main_2native_2include_2hal_2_duty_cycle_8h.html":[6,0,6,24],
-"hal_2src_2main_2native_2include_2hal_2_duty_cycle_8h_source.html":[6,0,6,24]
+"hal_2src_2main_2native_2include_2hal_2_d_m_a_8h_source.html":[6,0,6,21]
 };
