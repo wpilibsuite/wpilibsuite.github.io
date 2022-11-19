@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-52-ge2d4918</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-54-g88bd67e</span>
    </div>
   </td>
  </tr>
@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_differential_drive_pose_e
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a08f5072a0aa4e4fba8d7528427047720">AddVisionMeasurement</a>(const Pose2d &amp;visionRobotPose, units::second_t timestamp)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ad273aa27bda035fe8ca417a7ea2891c5">AddVisionMeasurement</a>(const Pose2d &amp;visionRobotPose, units::second_t timestamp, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ab60ee8cb962fc677054bcda1db36087d">DifferentialDrivePoseEstimator</a>(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, const wpi::array&lt; double, 5 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 3 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#adad8a9c75e1af147a2e68814a1c4834b">DifferentialDrivePoseEstimator</a>(const Rotation2d &amp;gyroAngle, units::meter_t leftDistance, units::meter_t rightDistance, const Pose2d &amp;initialPose, const wpi::array&lt; double, 5 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 3 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a21eaaa6bfa686a0910a999fd7a3624c2">GetEstimatedPosition</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a0fd2c4425e6249e337c0a5d46afac8c3">ResetPosition</a>(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a9a9ed11269b3ca884ed9f2ba0ffad7bf">ResetPosition</a>(const Rotation2d &amp;gyroAngle, units::meter_t leftDistance, units::meter_t rightDistance, const Pose2d &amp;pose)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a16c47b88fa12c715da87d6bf516dcae3">SetVisionMeasurementStdDevs</a>(const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ae9d9b994b3e0c0f445b3781ae100c904">Update</a>(const Rotation2d &amp;gyroAngle, const DifferentialDriveWheelSpeeds &amp;wheelSpeeds, units::meter_t leftDistance, units::meter_t rightDistance)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#a3b1c6307abd690dc1babb27fe96014be">UpdateWithTime</a>(units::second_t currentTime, const Rotation2d &amp;gyroAngle, const DifferentialDriveWheelSpeeds &amp;wheelSpeeds, units::meter_t leftDistance, units::meter_t rightDistance)</td><td class="entry"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></td><td class="entry"></td></tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_differential_drive_pose_e
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Nov 19 2022 03:04:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 04:46:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

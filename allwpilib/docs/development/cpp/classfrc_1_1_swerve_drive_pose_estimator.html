@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-52-ge2d4918</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-3-54-g88bd67e</span>
    </div>
   </td>
  </tr>
@@ -106,12 +106,12 @@ $(document).ready(function(){initNavTree('classfrc_1_1_swerve_drive_pose_estimat
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb97746be2798b4d824c0d12957db8f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#adb97746be2798b4d824c0d12957db8f2">SwerveDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; modulePositions, <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#ac8964f855367a4f027a26d871f13965b">States</a> &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a9142b8f6585f7102eaffceaba1df8c0d">Outputs</a> &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td></tr>
-<tr class="memdesc:adb97746be2798b4d824c0d12957db8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swer...">SwerveDrivePoseEstimator</a>.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#adb97746be2798b4d824c0d12957db8f2">More...</a><br /></td></tr>
-<tr class="separator:adb97746be2798b4d824c0d12957db8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab407eb0ef564f8680639200f00592c0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#ab407eb0ef564f8680639200f00592c0d">ResetPosition</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; modulePositions)</td></tr>
-<tr class="memdesc:ab407eb0ef564f8680639200f00592c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#ab407eb0ef564f8680639200f00592c0d">More...</a><br /></td></tr>
-<tr class="separator:ab407eb0ef564f8680639200f00592c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897055b71e6be4167bef1c47db5f0254"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a897055b71e6be4167bef1c47db5f0254">SwerveDrivePoseEstimator</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;modulePositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, <a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#ac8964f855367a4f027a26d871f13965b">States</a> &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a9142b8f6585f7102eaffceaba1df8c0d">Outputs</a> &gt; &amp;localMeasurementStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=20_ms)</td></tr>
+<tr class="memdesc:a897055b71e6be4167bef1c47db5f0254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swer...">SwerveDrivePoseEstimator</a>.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a897055b71e6be4167bef1c47db5f0254">More...</a><br /></td></tr>
+<tr class="separator:a897055b71e6be4167bef1c47db5f0254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9c637e4ec9b0a7d5f74f7410ad80b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a5d9c637e4ec9b0a7d5f74f7410ad80b1">ResetPosition</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;modulePositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
+<tr class="memdesc:a5d9c637e4ec9b0a7d5f74f7410ad80b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a5d9c637e4ec9b0a7d5f74f7410ad80b1">More...</a><br /></td></tr>
+<tr class="separator:a5d9c637e4ec9b0a7d5f74f7410ad80b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa43500d257dd6e01c810ffd6992e2a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#afa43500d257dd6e01c810ffd6992e2a9">GetEstimatedPosition</a> () const</td></tr>
 <tr class="memdesc:afa43500d257dd6e01c810ffd6992e2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#afa43500d257dd6e01c810ffd6992e2a9">More...</a><br /></td></tr>
 <tr class="separator:afa43500d257dd6e01c810ffd6992e2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,12 +124,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b964991242b8c03fc9010cc8001b5b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a0b964991242b8c03fc9010cc8001b5b8">AddVisionMeasurement</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;visionRobotPose, units::second_t timestamp, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:a0b964991242b8c03fc9010cc8001b5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vision measurement to the Unscented Kalman Filter.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a0b964991242b8c03fc9010cc8001b5b8">More...</a><br /></td></tr>
 <tr class="separator:a0b964991242b8c03fc9010cc8001b5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d01f397833aaadca1cff931b4749bb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a4d01f397833aaadca1cff931b4749bb6">Update</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; moduleStates, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; modulePositions)</td></tr>
-<tr class="memdesc:a4d01f397833aaadca1cff931b4749bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman Filter using only wheel encoder information.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a4d01f397833aaadca1cff931b4749bb6">More...</a><br /></td></tr>
-<tr class="separator:a4d01f397833aaadca1cff931b4749bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d9adc75584153220c5df149d379a976"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a2d9adc75584153220c5df149d379a976">UpdateWithTime</a> (units::second_t currentTime, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; moduleStates, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; modulePositions)</td></tr>
-<tr class="memdesc:a2d9adc75584153220c5df149d379a976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman Filter using only wheel encoder information.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a2d9adc75584153220c5df149d379a976">More...</a><br /></td></tr>
-<tr class="separator:a2d9adc75584153220c5df149d379a976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a1e8803e8ac95db3d924df1c9f13ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a99a1e8803e8ac95db3d924df1c9f13ea">Update</a> (const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; &amp;moduleStates, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;modulePositions)</td></tr>
+<tr class="memdesc:a99a1e8803e8ac95db3d924df1c9f13ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman Filter using only wheel encoder information.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a99a1e8803e8ac95db3d924df1c9f13ea">More...</a><br /></td></tr>
+<tr class="separator:a99a1e8803e8ac95db3d924df1c9f13ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d9975972f6e890adf808f4002d6343c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a7d9975972f6e890adf808f4002d6343c">UpdateWithTime</a> (units::second_t currentTime, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; &amp;moduleStates, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;modulePositions)</td></tr>
+<tr class="memdesc:a7d9975972f6e890adf808f4002d6343c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman Filter using only wheel encoder information.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a7d9975972f6e890adf808f4002d6343c">More...</a><br /></td></tr>
+<tr class="separator:a7d9975972f6e890adf808f4002d6343c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -144,15 +144,15 @@ Static Public Attributes</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t NumModules&gt;<br />
 class frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</div><p >This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. </p>
 <p >It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for <a class="el" href="classfrc_1_1_swerve_drive_odometry.html" title="Class for swerve drive odometry.">SwerveDriveOdometry</a>.</p>
-<p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a4d01f397833aaadca1cff931b4749bb6" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 20 ms, then you should change the nominal delta time by specifying it in the constructor.</p>
+<p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a99a1e8803e8ac95db3d924df1c9f13ea" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 20 ms, then you should change the nominal delta time by specifying it in the constructor.</p>
 <p ><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7" title="Add a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a> can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.</p>
 <p >The state-space system used internally has the following states (x), inputs (u), and outputs (y):</p>
 <p ><b> x = [x, y, theta, s_0, ..., s_n]ᵀ </b> in the field coordinate system containing x position, y position, and heading, followed by the distance travelled by each wheel.</p>
 <p ><b> u = [v_x, v_y, omega, v_0, ... v_n]ᵀ </b> containing x velocity, y velocity, and angular velocity in the field coordinate system, followed by the velocity measured at each wheel.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading; or <b> y = [theta, s_0, ..., s_n]ᵀ </b> containing gyro heading, followed by the distance travelled by each wheel. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="adb97746be2798b4d824c0d12957db8f2" name="adb97746be2798b4d824c0d12957db8f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb97746be2798b4d824c0d12957db8f2">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator()</h2>
+<a id="a897055b71e6be4167bef1c47db5f0254" name="a897055b71e6be4167bef1c47db5f0254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897055b71e6be4167bef1c47db5f0254">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,14 +171,14 @@ template&lt;size_t NumModules&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>initialPose</em>, </td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;&#160;</td>
+          <td class="paramname"><em>modulePositions</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
-          <td class="paramname"><em>modulePositions</em>, </td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialPose</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -227,8 +227,8 @@ template&lt;size_t NumModules&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gyroAngle</td><td>The current gyro angle. </td></tr>
-    <tr><td class="paramname">initialPose</td><td>The starting pose estimate. </td></tr>
     <tr><td class="paramname">modulePositions</td><td>The current distance and rotation measurements of the swerve modules. </td></tr>
+    <tr><td class="paramname">initialPose</td><td>The starting pose estimate. </td></tr>
     <tr><td class="paramname">kinematics</td><td>A correctly-configured kinematics object for your drivetrain. </td></tr>
     <tr><td class="paramname">stateStdDevs</td><td>Standard deviations of model states. Increase these numbers to trust your model's state estimates less. This matrix is in the form [x, y, theta, s_0, ... s_n]ᵀ, with units in meters and radians, then meters. </td></tr>
     <tr><td class="paramname">localMeasurementStdDevs</td><td>Standard deviation of the gyro measurement. Increase this number to trust sensor readings from the gyro less. This matrix is in the form [theta, s_0, ... s_n], with units in radians followed by meters. </td></tr>
@@ -279,12 +279,12 @@ template&lt;size_t NumModules&gt; </div>
 
 <p>Add a vision measurement to the Unscented Kalman Filter. </p>
 <p >This will correct the odometry pose estimate while still accounting for measurement noise.</p>
-<p >This method can be called as infrequently as you want, as long as you are calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a4d01f397833aaadca1cff931b4749bb6" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> every loop.</p>
+<p >This method can be called as infrequently as you want, as long as you are calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a99a1e8803e8ac95db3d924df1c9f13ea" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> every loop.</p>
 <p >To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a2d9adc75584153220c5df149d379a976" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a> then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a>.) This means that you should use <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a> as your time source or sync the epochs. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a7d9975972f6e890adf808f4002d6343c" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a> then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a>.) This means that you should use <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a> as your time source or sync the epochs. </td></tr>
   </table>
   </dd>
 </dl>
@@ -335,13 +335,13 @@ template&lt;size_t NumModules&gt; </div>
 
 <p>Adds a vision measurement to the Unscented Kalman Filter. </p>
 <p >This will correct the odometry pose estimate while still accounting for measurement noise.</p>
-<p >This method can be called as infrequently as you want, as long as you are calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a4d01f397833aaadca1cff931b4749bb6" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> every loop.</p>
+<p >This method can be called as infrequently as you want, as long as you are calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a99a1e8803e8ac95db3d924df1c9f13ea" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> every loop.</p>
 <p >To promote stability of the pose estimate and make it robust to bad vision data, we recommend only adding vision measurements that are already within one meter or so of the current pose estimate.</p>
 <p >Note that the vision measurement standard deviations passed into this method will continue to apply to future measurements until a subsequent call to <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#aa839fb27ac13f391e5f9314e154b8f51" title="Sets the pose estimator&#39;s trust of global measurements.">SetVisionMeasurementStdDevs()</a> or this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a2d9adc75584153220c5df149d379a976" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a7d9975972f6e890adf808f4002d6343c" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc_1_1_timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
     <tr><td class="paramname">visionMeasurementStdDevs</td><td>Standard deviations of the vision measurements. Increase these numbers to trust global measurements from vision less. This matrix is in the form [x, y, theta]ᵀ, with units in meters and radians. </td></tr>
   </table>
   </dd>
@@ -379,8 +379,8 @@ template&lt;size_t NumModules&gt; </div>
 
 </div>
 </div>
-<a id="ab407eb0ef564f8680639200f00592c0d" name="ab407eb0ef564f8680639200f00592c0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab407eb0ef564f8680639200f00592c0d">&#9670;&nbsp;</a></span>ResetPosition()</h2>
+<a id="a5d9c637e4ec9b0a7d5f74f7410ad80b1" name="a5d9c637e4ec9b0a7d5f74f7410ad80b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9c637e4ec9b0a7d5f74f7410ad80b1">&#9670;&nbsp;</a></span>ResetPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,20 +393,20 @@ template&lt;size_t NumModules&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">frc::SwerveDrivePoseEstimator</a>&lt; NumModules &gt;::ResetPosition </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>pose</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
           <td class="paramname"><em>gyroAngle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
-          <td class="paramname"><em>modulePositions</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;&#160;</td>
+          <td class="paramname"><em>modulePositions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>pose</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -422,12 +422,13 @@ template&lt;size_t NumModules&gt; </div>
 </div><div class="memdoc">
 
 <p>Resets the robot's position on the field. </p>
+<p >IF leftDistance and rightDistance are unspecified, You NEED to reset your encoders (to zero).</p>
 <p >The gyroscope angle does not need to be reset in the user's robot code. The library automatically takes care of offsetting the gyro angle.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pose</td><td>The position on the field that your robot is at. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
     <tr><td class="paramname">modulePositions</td><td>The current distance and rotation measurements of the swerve modules. </td></tr>
+    <tr><td class="paramname">pose</td><td>The position on the field that your robot is at. </td></tr>
   </table>
   </dd>
 </dl>
@@ -471,8 +472,8 @@ template&lt;size_t NumModules&gt; </div>
 
 </div>
 </div>
-<a id="a4d01f397833aaadca1cff931b4749bb6" name="a4d01f397833aaadca1cff931b4749bb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d01f397833aaadca1cff931b4749bb6">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a99a1e8803e8ac95db3d924df1c9f13ea" name="a99a1e8803e8ac95db3d924df1c9f13ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a1e8803e8ac95db3d924df1c9f13ea">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -491,13 +492,13 @@ template&lt;size_t NumModules&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; &amp;&#160;</td>
           <td class="paramname"><em>moduleStates</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;&#160;</td>
           <td class="paramname"><em>modulePositions</em>&#160;</td>
         </tr>
         <tr>
@@ -527,8 +528,8 @@ template&lt;size_t NumModules&gt; </div>
 
 </div>
 </div>
-<a id="a2d9adc75584153220c5df149d379a976" name="a2d9adc75584153220c5df149d379a976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d9adc75584153220c5df149d379a976">&#9670;&nbsp;</a></span>UpdateWithTime()</h2>
+<a id="a7d9975972f6e890adf808f4002d6343c" name="a7d9975972f6e890adf808f4002d6343c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d9975972f6e890adf808f4002d6343c">&#9670;&nbsp;</a></span>UpdateWithTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,13 +554,13 @@ template&lt;size_t NumModules&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_state.html">SwerveModuleState</a>, NumModules &gt; &amp;&#160;</td>
           <td class="paramname"><em>moduleStates</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;&#160;</td>
           <td class="paramname"><em>modulePositions</em>&#160;</td>
         </tr>
         <tr>
@@ -672,7 +673,7 @@ template&lt;size_t NumModules&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">SwerveDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sat Nov 19 2022 03:04:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 19 2022 04:46:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
