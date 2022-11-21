@@ -1,5 +1,7 @@
 var NAVTREEINDEX209 =
 {
+"uv_8h.html#adcc1b075d14bda858b758e25ae4d68c0":[6,0,9,0,0,1,173],
+"uv_8h.html#add07b2af0129590df17941db888eabd0":[6,0,9,0,0,1,229],
 "uv_8h.html#add45d36012060022443de46cde2d8407":[6,0,9,0,0,1,225],
 "uv_8h.html#ade78d29630490c4a925dd4accd3901d5":[6,0,9,0,0,1,147],
 "uv_8h.html#ade78d29630490c4a925dd4accd3901d5a11b8161ace7f5d871c18a0f18668a300":[6,0,9,0,0,1,147,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX209 =
 "wpilibc_2src_2main_2native_2include_2frc_2_driver_station_8h_source.html":[6,0,3,42],
 "wpilibc_2src_2main_2native_2include_2frc_2_duty_cycle_8h.html":[6,0,3,44],
 "wpilibc_2src_2main_2native_2include_2frc_2_duty_cycle_8h_source.html":[6,0,3,44],
-"wpilibc_2src_2main_2native_2include_2frc_2_encoder_8h.html":[6,0,3,46],
-"wpilibc_2src_2main_2native_2include_2frc_2_encoder_8h_source.html":[6,0,3,46],
-"wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html":[6,0,3,47]
+"wpilibc_2src_2main_2native_2include_2frc_2_encoder_8h.html":[6,0,3,46]
 };

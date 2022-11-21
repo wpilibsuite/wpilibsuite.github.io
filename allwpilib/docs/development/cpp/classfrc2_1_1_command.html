@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-2-g98e9223</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-3-g0bee875</span>
    </div>
   </td>
  </tr>
@@ -241,6 +241,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab1e027e86fc5c9132914ca566a9845a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d39463d12f6dd89c165f6faa746b6b"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b">GetName</a> () const</td></tr>
 <tr class="separator:a44d39463d12f6dd89c165f6faa746b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b4051a8f46ac65b9c7807ea86688c3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3">ToPtr</a> () &amp;&amp;=0</td></tr>
+<tr class="memdesc:ac2b4051a8f46ac65b9c7807ea86688c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers ownership of this command to a unique pointer.  <a href="classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3">More...</a><br /></td></tr>
+<tr class="separator:ac2b4051a8f46ac65b9c7807ea86688c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -1124,6 +1127,36 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="ac2b4051a8f46ac65b9c7807ea86688c3" name="ac2b4051a8f46ac65b9c7807ea86688c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2b4051a8f46ac65b9c7807ea86688c3">&#9670;&nbsp;</a></span>ToPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::Command::ToPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfers ownership of this command to a unique pointer. </p>
+<p >Used for decorator methods. </p>
+
+<p>Implemented in <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, ConditionalCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, FunctionalCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; FunctionalCommand, InstantCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, MecanumControllerCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, NotifierCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, PIDCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandGroupBase, ParallelCommandGroup &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandGroupBase, ParallelDeadlineGroup &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandGroupBase, ParallelRaceGroup &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, PerpetualCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; InstantCommand, PrintCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, ProfiledPIDCommand&lt; Distance &gt; &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, ProxyScheduleCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, RamseteCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, RepeatCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; FunctionalCommand, RunCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, ScheduleCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, SelectCommand&lt; Key &gt; &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandGroupBase, SequentialCommandGroup &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; FunctionalCommand, StartEndCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, SwerveControllerCommand&lt; NumModules &gt; &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, TrapezoidProfileCommand&lt; Distance &gt; &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, WaitCommand &gt;</a>, <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, WaitUntilCommand &gt;</a>, and <a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper&lt; CommandBase, WrapperCommand &gt;</a>.</p>
+
+</div>
+</div>
 <a id="af4c5f5b02b388017df79f36354a43bf2" name="af4c5f5b02b388017df79f36354a43bf2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af4c5f5b02b388017df79f36354a43bf2">&#9670;&nbsp;</a></span>TransferOwnership()</h2>
 
@@ -1349,7 +1382,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command.html">Command</a></li>
-    <li class="footer">Generated on Mon Nov 21 2022 01:30:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 21 2022 17:48:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-2-g98e9223</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-3-g0bee875</span>
    </div>
   </td>
  </tr>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    std::vector&lt;std::pair&lt;Key, CommandPtr&gt;&gt; commands) {</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classfrc2_1_1_select_command.html">SelectCommand</a>(std::move(selector),</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                       <a class="code hl_function" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">CommandPtr::UnwrapVector</a>(std::move(commands)))</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      .<a class="code hl_function" href="classfrc2_1_1_command_helper.html#a152351c96b7a3e81474c8671931ecd12">ToPtr</a>();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      .<a class="code hl_function" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">ToPtr</a>();</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">// Command Groups</span></div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_command_ptr_8h_html"><div class="ttname"><a href="_command_ptr_8h.html">CommandPtr.h</a></div></div>
 <div class="ttc" id="a_select_command_8h_html"><div class="ttname"><a href="_select_command_8h.html">SelectCommand.h</a></div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_helper_html_a152351c96b7a3e81474c8671931ecd12"><div class="ttname"><a href="classfrc2_1_1_command_helper.html#a152351c96b7a3e81474c8671931ecd12">frc2::CommandHelper::ToPtr</a></div><div class="ttdeci">CommandPtr ToPtr() &amp;&amp;</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:32</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_helper_html_ad0575f649ed4a562db63dc30fa33e80a"><div class="ttname"><a href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper::ToPtr</a></div><div class="ttdeci">CommandPtr ToPtr() &amp;&amp;override</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:32</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html">frc2::CommandPtr</a></div><div class="ttdoc">A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.</div><div class="ttdef"><b>Definition:</b> CommandPtr.h:27</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a9badf2eab812a48402e366ec8b6c3f34"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">frc2::CommandPtr::UnwrapVector</a></div><div class="ttdeci">static std::vector&lt; std::unique_ptr&lt; Command &gt; &gt; UnwrapVector(std::vector&lt; CommandPtr &gt; &amp;&amp;vec)</div><div class="ttdoc">Convert a vector of CommandPtr objects to their underlying unique_ptrs.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_select_command_html"><div class="ttname"><a href="classfrc2_1_1_select_command.html">frc2::SelectCommand</a></div><div class="ttdoc">Runs one of a selection of commands, either using a selector and a key to command mapping,...</div><div class="ttdef"><b>Definition:</b> SelectCommand.h:42</div></div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_commands_8h.html">Commands.h</a></li>
-    <li class="footer">Generated on Mon Nov 21 2022 01:30:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 21 2022 17:48:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

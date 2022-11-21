@@ -1,5 +1,7 @@
 var NAVTREEINDEX159 =
 {
+"struct_eigen_1_1bfloat16.html#a38f274970cab7413e73adaaaddc51bae":[5,0,4,17,2],
+"struct_eigen_1_1bfloat16.html#a9241488b8120724694cfa6f89c739dd5":[4,0,8,20,6],
 "struct_eigen_1_1bfloat16.html#a9241488b8120724694cfa6f89c739dd5":[5,0,4,17,6],
 "struct_eigen_1_1bfloat16.html#a99d68dd4bf74ba699e9d6d73b140e523":[4,0,8,20,5],
 "struct_eigen_1_1bfloat16.html#a99d68dd4bf74ba699e9d6d73b140e523":[5,0,4,17,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX159 =
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#ab019ba7d743296423b446e15d0131ad2":[4,0,8,4,77,2],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html":[5,0,4,2,77],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html":[4,0,8,4,79],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a27237deaf69ded2cfef08d699c0303cc":[4,0,8,4,79,1],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a27237deaf69ded2cfef08d699c0303cc":[5,0,4,2,77,1],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a743214fc5df8550054cff8aaefc5d0db":[4,0,8,4,79,3]
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a27237deaf69ded2cfef08d699c0303cc":[4,0,8,4,79,1]
 };

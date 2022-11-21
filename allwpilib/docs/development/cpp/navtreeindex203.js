@@ -1,5 +1,7 @@
 var NAVTREEINDEX203 =
 {
+"structwpi_1_1_null_deleter.html":[4,0,24,101],
+"structwpi_1_1_null_deleter.html":[5,0,14,100],
 "structwpi_1_1_null_deleter.html#a00548b5af81c06f88ab5bc3f5fcf4461":[5,0,14,100,0],
 "structwpi_1_1_null_deleter.html#a00548b5af81c06f88ab5bc3f5fcf4461":[4,0,24,101,0],
 "structwpi_1_1_pointer_int_pair_info.html":[4,0,24,106],
@@ -247,7 +249,5 @@ var NAVTREEINDEX203 =
 "structwpi_1_1detail_1_1_has_pointer_like_type_traits_3_01_t_00_01decltype_07_07sizeof_07_pointer671eb09a59b08f00112f7368cac2b1c1.html#adce3a5f5e5f9fe3576b96e50ea971ba9":[4,0,24,0,22,0],
 "structwpi_1_1detail_1_1_has_pointer_like_type_traits_3_01_t_00_01decltype_07_07sizeof_07_pointer671eb09a59b08f00112f7368cac2b1c1.html#adce3a5f5e5f9fe3576b96e50ea971ba9":[5,0,14,0,22,0],
 "structwpi_1_1detail_1_1_is_pointer_like.html":[5,0,14,0,39],
-"structwpi_1_1detail_1_1_is_pointer_like.html":[4,0,24,0,39],
-"structwpi_1_1detail_1_1_is_pointer_like.html#a6bba20b158f8d96f09f5b76ba94b03ce":[5,0,14,0,39,0],
-"structwpi_1_1detail_1_1_is_pointer_like.html#a6bba20b158f8d96f09f5b76ba94b03ce":[4,0,24,0,39,0]
+"structwpi_1_1detail_1_1_is_pointer_like.html":[4,0,24,0,39]
 };

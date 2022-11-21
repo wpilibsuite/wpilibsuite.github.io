@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-2-g98e9223</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-3-g0bee875</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_command_ptr.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a71c97eed584d53d9373eb697007cbbb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a71c97eed584d53d9373eb697007cbbb1">CommandPtr</a> (std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;command)</td></tr>
-<tr class="separator:a71c97eed584d53d9373eb697007cbbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13708cb7cb9e309dedbadef97b1d910e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a13708cb7cb9e309dedbadef97b1d910e">CommandPtr</a> (std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a> &gt; &amp;&amp;command)</td></tr>
+<tr class="separator:a13708cb7cb9e309dedbadef97b1d910e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f1fb9b812f7f1f8fdde9f92cdad80d9"><td class="memTemplParams" colspan="2">template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;                         Command, std::remove_reference_t&lt;T&gt;&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a5f1fb9b812f7f1f8fdde9f92cdad80d9"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a5f1fb9b812f7f1f8fdde9f92cdad80d9">CommandPtr</a> (T &amp;&amp;command)</td></tr>
 <tr class="separator:a5f1fb9b812f7f1f8fdde9f92cdad80d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,12 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a5580e71dfe356d2b261efe213f7c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a2a5580e71dfe356d2b261efe213f7c67">HandleInterrupt</a> (std::function&lt; void()&gt; handler) &amp;&amp;</td></tr>
 <tr class="memdesc:a2a5580e71dfe356d2b261efe213f7c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a lambda to call on interrupt, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method.  <a href="classfrc2_1_1_command_ptr.html#a2a5580e71dfe356d2b261efe213f7c67">More...</a><br /></td></tr>
 <tr class="separator:a2a5580e71dfe356d2b261efe213f7c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a079b63fc68212d4a3b02b332f192a1e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">get</a> () const</td></tr>
-<tr class="memdesc:a079b63fc68212d4a3b02b332f192a1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a raw pointer to the held command.  <a href="classfrc2_1_1_command_ptr.html#a079b63fc68212d4a3b02b332f192a1e2">More...</a><br /></td></tr>
-<tr class="separator:a079b63fc68212d4a3b02b332f192a1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a172d7875d6cbf4d4c56e925a1eb37fed"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed">Unwrap</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:a172d7875d6cbf4d4c56e925a1eb37fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to the underlying unique_ptr.  <a href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed">More...</a><br /></td></tr>
-<tr class="separator:a172d7875d6cbf4d4c56e925a1eb37fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49b42b4653dbedf2db66dc0f1a211dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#ab49b42b4653dbedf2db66dc0f1a211dd">get</a> () const</td></tr>
+<tr class="memdesc:ab49b42b4653dbedf2db66dc0f1a211dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a raw pointer to the held command.  <a href="classfrc2_1_1_command_ptr.html#ab49b42b4653dbedf2db66dc0f1a211dd">More...</a><br /></td></tr>
+<tr class="separator:ab49b42b4653dbedf2db66dc0f1a211dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a0d11c6d6e8db57be7b56b6d2a4ad5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#ab3a0d11c6d6e8db57be7b56b6d2a4ad5">Unwrap</a> () &amp;&amp;</td></tr>
+<tr class="memdesc:ab3a0d11c6d6e8db57be7b56b6d2a4ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert to the underlying unique_ptr.  <a href="classfrc2_1_1_command_ptr.html#ab3a0d11c6d6e8db57be7b56b6d2a4ad5">More...</a><br /></td></tr>
+<tr class="separator:ab3a0d11c6d6e8db57be7b56b6d2a4ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a2453f7255db9f22f0779074ca0bc8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">Schedule</a> () const</td></tr>
 <tr class="memdesc:a6a2453f7255db9f22f0779074ca0bc8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules this command.  <a href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">More...</a><br /></td></tr>
 <tr class="separator:a6a2453f7255db9f22f0779074ca0bc8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,10 +200,10 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics. </p>
 <p >Commands should only be stored and passed around when held in a <a class="el" href="classfrc2_1_1_command_ptr.html" title="A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.">CommandPtr</a> instance. For more info, see <a href="https://github.com/wpilibsuite/allwpilib/issues/4303">https://github.com/wpilibsuite/allwpilib/issues/4303</a>.</p>
-<p >Various classes in the command-based library accept a std::unique_ptr&lt;Command&gt;, use <a class="el" href="classfrc2_1_1_command_ptr.html#a172d7875d6cbf4d4c56e925a1eb37fed" title="Convert to the underlying unique_ptr.">CommandPtr::Unwrap</a> to convert. <a class="el" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34" title="Convert a vector of CommandPtr objects to their underlying unique_ptrs.">CommandPtr::UnwrapVector</a> does the same for vectors. </p>
+<p >Various classes in the command-based library accept a std::unique_ptr&lt;Command&gt;, use <a class="el" href="classfrc2_1_1_command_ptr.html#ab3a0d11c6d6e8db57be7b56b6d2a4ad5" title="Convert to the underlying unique_ptr.">CommandPtr::Unwrap</a> to convert. <a class="el" href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34" title="Convert a vector of CommandPtr objects to their underlying unique_ptrs.">CommandPtr::UnwrapVector</a> does the same for vectors. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a71c97eed584d53d9373eb697007cbbb1" name="a71c97eed584d53d9373eb697007cbbb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71c97eed584d53d9373eb697007cbbb1">&#9670;&nbsp;</a></span>CommandPtr() <span class="overload">[1/3]</span></h2>
+<a id="a13708cb7cb9e309dedbadef97b1d910e" name="a13708cb7cb9e309dedbadef97b1d910e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13708cb7cb9e309dedbadef97b1d910e">&#9670;&nbsp;</a></span>CommandPtr() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,7 +214,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">frc2::CommandPtr::CommandPtr </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a> &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
           <td></td>
         </tr>
@@ -614,14 +614,14 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
-<a id="a079b63fc68212d4a3b02b332f192a1e2" name="a079b63fc68212d4a3b02b332f192a1e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a079b63fc68212d4a3b02b332f192a1e2">&#9670;&nbsp;</a></span>get()</h2>
+<a id="ab49b42b4653dbedf2db66dc0f1a211dd" name="ab49b42b4653dbedf2db66dc0f1a211dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49b42b4653dbedf2db66dc0f1a211dd">&#9670;&nbsp;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1_command.html">Command</a> * frc2::CommandPtr::get </td>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a> * frc2::CommandPtr::get </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -913,14 +913,14 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
-<a id="a172d7875d6cbf4d4c56e925a1eb37fed" name="a172d7875d6cbf4d4c56e925a1eb37fed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a172d7875d6cbf4d4c56e925a1eb37fed">&#9670;&nbsp;</a></span>Unwrap()</h2>
+<a id="ab3a0d11c6d6e8db57be7b56b6d2a4ad5" name="ab3a0d11c6d6e8db57be7b56b6d2a4ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a0d11c6d6e8db57be7b56b6d2a4ad5">&#9670;&nbsp;</a></span>Unwrap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; frc2::CommandPtr::Unwrap </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a> &gt; frc2::CommandPtr::Unwrap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> &amp;&amp;</td>
@@ -1024,7 +1024,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a></li>
-    <li class="footer">Generated on Mon Nov 21 2022 01:30:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 21 2022 17:48:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

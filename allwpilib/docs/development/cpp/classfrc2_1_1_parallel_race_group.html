@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-2-g98e9223</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-3-g0bee875</span>
    </div>
   </td>
  </tr>
@@ -152,8 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classfrc2_1_1_command_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc2_1_1_command_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc2_1_1_command_helper.html">frc2::CommandHelper&lt; CommandGroupBase, ParallelRaceGroup &gt;</a></td></tr>
 <tr class="memitem:a999c2432be3efe11eb786e33afa7ae47 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_helper.html#a999c2432be3efe11eb786e33afa7ae47">CommandHelper</a> ()=default</td></tr>
 <tr class="separator:a999c2432be3efe11eb786e33afa7ae47 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a152351c96b7a3e81474c8671931ecd12 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_helper.html#a152351c96b7a3e81474c8671931ecd12">ToPtr</a> () &amp;&amp;</td></tr>
-<tr class="separator:a152351c96b7a3e81474c8671931ecd12 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0575f649ed4a562db63dc30fa33e80a inherit pub_methods_classfrc2_1_1_command_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">ToPtr</a> () &amp;&amp;override</td></tr>
+<tr class="separator:ad0575f649ed4a562db63dc30fa33e80a inherit pub_methods_classfrc2_1_1_command_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a191300536f18d7f575148b040887ad7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_group_base.html#a191300536f18d7f575148b040887ad7e">AddCommands</a> (std::vector&lt; std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &gt; &amp;&amp;commands)=0</td></tr>
 <tr class="memdesc:a191300536f18d7f575148b040887ad7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the given commands to the command group.  <a href="classfrc2_1_1_command_group_base.html#a191300536f18d7f575148b040887ad7e">More...</a><br /></td></tr>
 <tr class="separator:a191300536f18d7f575148b040887ad7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,6 +286,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab1e027e86fc5c9132914ca566a9845a8 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d39463d12f6dd89c165f6faa746b6b inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b">GetName</a> () const</td></tr>
 <tr class="separator:a44d39463d12f6dd89c165f6faa746b6b inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b4051a8f46ac65b9c7807ea86688c3 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3">ToPtr</a> () &amp;&amp;=0</td></tr>
+<tr class="memdesc:ac2b4051a8f46ac65b9c7807ea86688c3 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers ownership of this command to a unique pointer.  <a href="classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3">More...</a><br /></td></tr>
+<tr class="separator:ac2b4051a8f46ac65b9c7807ea86688c3 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_sendable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a></td></tr>
 <tr class="memitem:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec">~Sendable</a> ()=default</td></tr>
 <tr class="separator:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -687,7 +690,7 @@ template&lt;class... Types&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_parallel_race_group.html">ParallelRaceGroup</a></li>
-    <li class="footer">Generated on Mon Nov 21 2022 01:30:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 21 2022 17:48:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

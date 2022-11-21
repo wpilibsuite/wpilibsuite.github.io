@@ -1,5 +1,7 @@
 var NAVTREEINDEX193 =
 {
+"struct_h_a_l___power_distribution_faults.html#a34a0233538235bb543dae0e56b2b8f76":[3,1,8,1,9],
+"struct_h_a_l___power_distribution_faults.html#a36136cb5e5214c12c9cef3854285e47b":[3,1,8,1,16],
 "struct_h_a_l___power_distribution_faults.html#a3e9af2a772f8f2fab3722dc0416d8824":[3,1,8,1,3],
 "struct_h_a_l___power_distribution_faults.html#a49c19c639df9b54ab79527f5914df9f4":[3,1,8,1,7],
 "struct_h_a_l___power_distribution_faults.html#a4d11816e65206f063209f980f3817c4b":[3,1,8,1,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX193 =
 "structarg__data.html":[5,0,21],
 "structarg__data.html#a066861f784ce8301389e9d1672e25142":[5,0,21,4],
 "structarg__data.html#a1c1f92742fd40957dd9eaeba38226854":[5,0,21,1],
-"structarg__data.html#a345dd2a7772f9573bacb312a27401eb4":[5,0,21,2],
-"structarg__data.html#a7a2618d0038b7b2e6bd73ba169a6e153":[5,0,21,3],
-"structarg__data.html#a89a96a0e2da76a3f20b3cc583426f778":[5,0,21,5]
+"structarg__data.html#a345dd2a7772f9573bacb312a27401eb4":[5,0,21,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX197 =
 {
+"structfrc_1_1_p_s4_controller_1_1_button.html#a4998f9ba861b99d6f6e2968b7b5316be":[4,0,10,126,1,11],
+"structfrc_1_1_p_s4_controller_1_1_button.html#a4f5ffbc84d9329ad07c6d94fff42d4df":[4,0,10,126,1,5],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a4f5ffbc84d9329ad07c6d94fff42d4df":[5,0,6,122,1,5],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a63124817ad38ae41dc1442826507e1d1":[5,0,6,122,1,10],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a63124817ad38ae41dc1442826507e1d1":[4,0,10,126,1,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX197 =
 "structfrc_1_1_swerve_module_state.html#ab8c668b9aaea89c1ce37502c09c18c0c":[5,0,6,177,1],
 "structfrc_1_1_trajectory_1_1_state.html":[4,0,10,190,0],
 "structfrc_1_1_trajectory_1_1_state.html":[5,0,6,186,0],
-"structfrc_1_1_trajectory_1_1_state.html#a39de4bdb853c7885f92bb6a037ddddee":[5,0,6,186,0,5],
-"structfrc_1_1_trajectory_1_1_state.html#a39de4bdb853c7885f92bb6a037ddddee":[4,0,10,190,0,5],
-"structfrc_1_1_trajectory_1_1_state.html#a479e2d7059f93e95469348dbde773268":[4,0,10,190,0,0]
+"structfrc_1_1_trajectory_1_1_state.html#a39de4bdb853c7885f92bb6a037ddddee":[5,0,6,186,0,5]
 };

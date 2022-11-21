@@ -1,5 +1,7 @@
 var NAVTREEINDEX210 =
 {
+"wpilibc_2src_2main_2native_2include_2frc_2_encoder_8h_source.html":[6,0,3,46],
+"wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html":[6,0,3,47],
 "wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a548af4bf8d5ee5cc4b888593b3967006":[6,0,3,47,3],
 "wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a5d8db52ed33a8353dff3bb57ff019d4e":[6,0,3,47,9],
 "wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a663812993fa21e0b4d3a7ba1bd1d4955":[6,0,3,47,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX210 =
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a4e3c48db7fa8546d9a89414b2c2f1a9d":[6,0,10,0,0,0,2,16],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91ba":[6,0,10,0,0,0,2,8],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa030c5b6d1e5715105943ac111d9671bf":[6,0,10,0,0,0,2,8,2],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa40652ee9ae143f1c1c830f01a5449ecb":[6,0,10,0,0,0,2,8,4],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa4d9c2073afa3c2abb817dceb22c34de6":[6,0,10,0,0,0,2,8,5],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa69dcab4a73aeec2113f69b61e6263da8":[6,0,10,0,0,0,2,8,0]
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a535b59b8edc8902bb3c4f254625f91baa40652ee9ae143f1c1c830f01a5449ecb":[6,0,10,0,0,0,2,8,4]
 };

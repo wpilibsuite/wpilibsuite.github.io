@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-2-g98e9223</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-3-g0bee875</span>
    </div>
   </td>
  </tr>
@@ -440,26 +440,32 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  }</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b">  346</a></span>  <span class="keyword">virtual</span> std::string <a class="code hl_function" href="classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b">GetName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> <span class="keyword">protected</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">   * Transfers ownership of this command to a unique pointer.  Used for</span></div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">   * decorator methods.</span></div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#af4c5f5b02b388017df79f36354a43bf2">  353</a></span>  <span class="keyword">virtual</span> std::unique_ptr&lt;Command&gt; <a class="code hl_function" href="classfrc2_1_1_command.html#af4c5f5b02b388017df79f36354a43bf2">TransferOwnership</a>() &amp;&amp; = 0;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">  355</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">m_isGrouped</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>};</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment"></span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="comment"> * Checks if two commands have disjoint requirement sets.</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment"> * @param first The first command to check.</span></div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment"> * @param second The second command to check.</span></div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment"> * @return False if first and second share a requirement.</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno"><a class="line" href="namespacefrc2.html#a4a39157216e8af34bf8b27df43ae20db">  365</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc2.html#a4a39157216e8af34bf8b27df43ae20db">RequirementsDisjoint</a>(<a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* second);</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="comment"></span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="comment">   * Transfers ownership of this command to a unique pointer.  Used for</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">   * decorator methods.</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3">  352</a></span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3">ToPtr</a>() &amp;&amp; = 0;</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> <span class="keyword">protected</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment">   * Transfers ownership of this command to a unique pointer.  Used for</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">   * decorator methods.</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#af4c5f5b02b388017df79f36354a43bf2">  359</a></span>  <span class="keyword">virtual</span> std::unique_ptr&lt;Command&gt; <a class="code hl_function" href="classfrc2_1_1_command.html#af4c5f5b02b388017df79f36354a43bf2">TransferOwnership</a>() &amp;&amp; = 0;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">  361</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">m_isGrouped</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>};</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment"></span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment"> * Checks if two commands have disjoint requirement sets.</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment"> * @param first The first command to check.</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment"> * @param second The second command to check.</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment"> * @return False if first and second share a requirement.</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno"><a class="line" href="namespacefrc2.html#a4a39157216e8af34bf8b27df43ae20db">  371</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacefrc2.html#a4a39157216e8af34bf8b27df43ae20db">RequirementsDisjoint</a>(<a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>* second);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_demangle_8h_html"><div class="ttname"><a href="_demangle_8h.html">Demangle.h</a></div></div>
 <div class="ttc" id="a_small_set_8h_html"><div class="ttname"><a href="_small_set_8h.html">SmallSet.h</a></div><div class="ttdoc">This file defines the SmallSet class.</div></div>
 <div class="ttc" id="a_subsystem_8h_html"><div class="ttname"><a href="_subsystem_8h.html">Subsystem.h</a></div></div>
@@ -474,7 +480,7 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div class="ttc" id="aclassfrc2_1_1_command_html_a2b22a2448a2c32503c0c9fb181f568bb"><div class="ttname"><a href="classfrc2_1_1_command.html#a2b22a2448a2c32503c0c9fb181f568bb">frc2::Command::WithInterrupt</a></div><div class="ttdeci">CommandPtr WithInterrupt(std::function&lt; bool()&gt; condition) &amp;&amp;</div><div class="ttdoc">Decorates this command with an interrupt condition.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a340aebeaebd4acfd21f469edd7487f99"><div class="ttname"><a href="classfrc2_1_1_command.html#a340aebeaebd4acfd21f469edd7487f99">frc2::Command::BeforeStarting</a></div><div class="ttdeci">CommandPtr BeforeStarting(std::function&lt; void()&gt; toRun, std::initializer_list&lt; Subsystem * &gt; requirements) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run before this command starts.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a35c2255741bd5841d1c693af1cc833aa"><div class="ttname"><a href="classfrc2_1_1_command.html#a35c2255741bd5841d1c693af1cc833aa">frc2::Command::~Command</a></div><div class="ttdeci">virtual ~Command()</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_html_a3e88666fcca3af7a516176a2a18dfb6c"><div class="ttname"><a href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">frc2::Command::m_isGrouped</a></div><div class="ttdeci">bool m_isGrouped</div><div class="ttdef"><b>Definition:</b> Command.h:355</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_html_a3e88666fcca3af7a516176a2a18dfb6c"><div class="ttname"><a href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">frc2::Command::m_isGrouped</a></div><div class="ttdeci">bool m_isGrouped</div><div class="ttdef"><b>Definition:</b> Command.h:361</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a44d39463d12f6dd89c165f6faa746b6b"><div class="ttname"><a href="classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b">frc2::Command::GetName</a></div><div class="ttdeci">virtual std::string GetName() const</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a4830db450b1382e0b7395143e457ddc6"><div class="ttname"><a href="classfrc2_1_1_command.html#a4830db450b1382e0b7395143e457ddc6">frc2::Command::GetRequirements</a></div><div class="ttdeci">virtual wpi::SmallSet&lt; Subsystem *, 4 &gt; GetRequirements() const =0</div><div class="ttdoc">Specifies the set of subsystems used by this command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a49a9719a69c0048b0b6ac19ad165db0c"><div class="ttname"><a href="classfrc2_1_1_command.html#a49a9719a69c0048b0b6ac19ad165db0c">frc2::Command::Repeatedly</a></div><div class="ttdeci">CommandPtr Repeatedly() &amp;&amp;</div><div class="ttdoc">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupt...</div></div>
@@ -493,6 +499,7 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div class="ttc" id="aclassfrc2_1_1_command_html_aa53c83ad502c48906767c8eef16ee096"><div class="ttname"><a href="classfrc2_1_1_command.html#aa53c83ad502c48906767c8eef16ee096">frc2::Command::operator=</a></div><div class="ttdeci">Command &amp; operator=(const Command &amp;rhs)</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_ab1e027e86fc5c9132914ca566a9845a8"><div class="ttname"><a href="classfrc2_1_1_command.html#ab1e027e86fc5c9132914ca566a9845a8">frc2::Command::GetInterruptionBehavior</a></div><div class="ttdeci">virtual InterruptionBehavior GetInterruptionBehavior() const</div><div class="ttdoc">How the command behaves when another command with a shared requirement is scheduled.</div><div class="ttdef"><b>Definition:</b> Command.h:342</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_ac215e297864084cba7b0a4b6d4aa558f"><div class="ttname"><a href="classfrc2_1_1_command.html#ac215e297864084cba7b0a4b6d4aa558f">frc2::Command::Perpetually</a></div><div class="ttdeci">PerpetualCommand Perpetually() &amp;&amp;</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_html_ac2b4051a8f46ac65b9c7807ea86688c3"><div class="ttname"><a href="classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3">frc2::Command::ToPtr</a></div><div class="ttdeci">virtual CommandPtr ToPtr() &amp;&amp;=0</div><div class="ttdoc">Transfers ownership of this command to a unique pointer.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_acc67b15e71a66aafb7523ccdd0a7a834"><div class="ttname"><a href="classfrc2_1_1_command.html#acc67b15e71a66aafb7523ccdd0a7a834">frc2::Command::IgnoringDisable</a></div><div class="ttdeci">CommandPtr IgnoringDisable(bool doesRunWhenDisabled) &amp;&amp;</div><div class="ttdoc">Decorates this command to run or stop when disabled.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_acf24aef63d176810eb1376defc1116b4"><div class="ttname"><a href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">frc2::Command::HasRequirement</a></div><div class="ttdeci">bool HasRequirement(Subsystem *requirement) const</div><div class="ttdoc">Whether the command requires a given subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_ad3f1971a1b44ecdd4683d766f831bccd"><div class="ttname"><a href="classfrc2_1_1_command.html#ad3f1971a1b44ecdd4683d766f831bccd">frc2::Command::Initialize</a></div><div class="ttdeci">virtual void Initialize()</div><div class="ttdoc">The initial subroutine of a command.</div></div>
@@ -523,7 +530,7 @@ $(document).ready(function(){initNavTree('_command_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_command_8h.html">Command.h</a></li>
-    <li class="footer">Generated on Mon Nov 21 2022 01:30:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 21 2022 17:48:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

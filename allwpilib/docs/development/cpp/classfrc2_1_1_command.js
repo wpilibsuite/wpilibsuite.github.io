@@ -34,6 +34,7 @@ var classfrc2_1_1_command =
     [ "RunsWhenDisabled", "classfrc2_1_1_command.html#a5113cbf3655ce8679dd48bf22700b2f4", null ],
     [ "Schedule", "classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710", null ],
     [ "SetGrouped", "classfrc2_1_1_command.html#a8c3e7ee729136e7e7e18e1e3a48a079a", null ],
+    [ "ToPtr", "classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3", null ],
     [ "TransferOwnership", "classfrc2_1_1_command.html#af4c5f5b02b388017df79f36354a43bf2", null ],
     [ "Unless", "classfrc2_1_1_command.html#af9a0b3cd8fdc4cc7cdabd8ae34ce8841", null ],
     [ "Until", "classfrc2_1_1_command.html#a799e3904f157279d6f146f9968dca3f2", null ],
