@@ -1,5 +1,7 @@
 var NAVTREEINDEX201 =
 {
+"structunits_1_1linear__scale.html#af13ee9d40f7d0e5df73f83e55cb7b16c":[4,0,23,45,3],
+"structunits_1_1traits_1_1has__decibel__scale.html":[3,32,8],
 "structunits_1_1traits_1_1has__linear__scale.html":[3,32,7],
 "structunits_1_1traits_1_1is__base__unit.html":[3,32,1],
 "structunits_1_1traits_1_1is__convertible__unit.html":[3,32,3],
@@ -7,8 +9,8 @@ var NAVTREEINDEX201 =
 "structunits_1_1traits_1_1is__dimensionless__unit.html":[5,0,13,0,5],
 "structunits_1_1traits_1_1is__dimensionless__unit.html":[4,0,23,39,5],
 "structunits_1_1traits_1_1is__nonlinear__scale.html":[3,32,4],
-"structunits_1_1traits_1_1is__ratio.html":[4,0,23,39,7],
 "structunits_1_1traits_1_1is__ratio.html":[5,0,13,0,7],
+"structunits_1_1traits_1_1is__ratio.html":[4,0,23,39,7],
 "structunits_1_1traits_1_1is__same__scale.html":[3,32,9],
 "structunits_1_1traits_1_1is__unit.html":[3,32,2],
 "structunits_1_1traits_1_1is__unit__t.html":[3,32,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX201 =
 "structuv__utsname__s.html":[5,0,302],
 "structuv__utsname__s.html#a28b4fe0a060e24726b383fce8f7b2ac2":[5,0,302,3],
 "structuv__utsname__s.html#a38614b130af177d8e8d3d575a075055f":[5,0,302,0],
-"structuv__utsname__s.html#a9195aedd09aac76e3623bf6b11e68110":[5,0,302,1],
-"structuv__utsname__s.html#aac0f411f42cefa03baa932620f01d30b":[5,0,302,2],
-"structuv__work__s.html":[5,0,303]
+"structuv__utsname__s.html#a9195aedd09aac76e3623bf6b11e68110":[5,0,302,1]
 };

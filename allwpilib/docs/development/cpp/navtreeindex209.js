@@ -1,5 +1,7 @@
 var NAVTREEINDEX209 =
 {
+"uv_8h.html#adba2140910ef0fbd9904b1de01e86cac":[6,0,9,0,0,1,290],
+"uv_8h.html#adcbea894533656c7fd4061fdece81b5f":[6,0,9,0,0,1,372],
 "uv_8h.html#adcc1b075d14bda858b758e25ae4d68c0":[6,0,9,0,0,1,173],
 "uv_8h.html#add07b2af0129590df17941db888eabd0":[6,0,9,0,0,1,229],
 "uv_8h.html#add45d36012060022443de46cde2d8407":[6,0,9,0,0,1,225],
@@ -247,7 +249,5 @@ var NAVTREEINDEX209 =
 "wpilibc_2src_2main_2native_2include_2frc_2_d_m_a_8h_source.html":[6,0,3,39],
 "wpilibc_2src_2main_2native_2include_2frc_2_driver_station_8h.html":[6,0,3,42],
 "wpilibc_2src_2main_2native_2include_2frc_2_driver_station_8h_source.html":[6,0,3,42],
-"wpilibc_2src_2main_2native_2include_2frc_2_duty_cycle_8h.html":[6,0,3,44],
-"wpilibc_2src_2main_2native_2include_2frc_2_duty_cycle_8h_source.html":[6,0,3,44],
-"wpilibc_2src_2main_2native_2include_2frc_2_encoder_8h.html":[6,0,3,46]
+"wpilibc_2src_2main_2native_2include_2frc_2_duty_cycle_8h.html":[6,0,3,44]
 };

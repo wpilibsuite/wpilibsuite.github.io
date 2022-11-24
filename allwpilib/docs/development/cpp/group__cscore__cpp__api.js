@@ -31,7 +31,8 @@ var group__cscore__cpp__api =
         [ "kYUYV", "structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca079dbdeb2ee22b4a1fca071e2a067afc", null ],
         [ "kRGB565", "structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183cad9275bfc801596c593d252f4b12a8fbd", null ],
         [ "kBGR", "structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca6dd1f0ef1bc181b52b5e0c357b665d04", null ],
-        [ "kGray", "structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca3cba1faed93be76a17daf0d962e48015", null ]
+        [ "kGray", "structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca3cba1faed93be76a17daf0d962e48015", null ],
+        [ "kUYVY", "structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183cac360ff4a9884e51123791c4fd6b5a7ef", null ]
       ] ],
       [ "VideoMode", "structcs_1_1_video_mode.html#a1ab1b4d090c15a11850819d4c2bafbb5", null ],
       [ "VideoMode", "structcs_1_1_video_mode.html#a163bf1a68be118da4263fb77ff51620f", null ],

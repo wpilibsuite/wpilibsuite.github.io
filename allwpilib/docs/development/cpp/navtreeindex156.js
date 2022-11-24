@@ -1,5 +1,6 @@
 var NAVTREEINDEX156 =
 {
+"namespacewpi_1_1support_1_1endian.html#a86460a0109d785bad5d26cdd6ce09d81":[4,0,24,8,1,22],
 "namespacewpi_1_1support_1_1endian.html#a882cd78bfb8a4d5fe9d06070e1be976f":[4,0,24,8,1,15],
 "namespacewpi_1_1support_1_1endian.html#a99abf83b98417ffc72605cba444f297f":[4,0,24,8,1,35],
 "namespacewpi_1_1support_1_1endian.html#a9dc61d55881e6e339e0f03235c44aa02":[4,0,24,8,1,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX156 =
 "ranges_8h.html#a740185868c4e97a6e659d7e875a2e4ac":[6,0,10,0,0,0,10,51],
 "ranges_8h.html#a82dd889f447e7a1383b8757be27f66e9":[6,0,10,0,0,0,10,35],
 "ranges_8h.html#a85d29c451cd31d3d672ce9c1826ba46d":[6,0,10,0,0,0,10,44],
-"ranges_8h.html#a8920b749a50a22be883802b82c420d23":[6,0,10,0,0,0,10,40],
-"ranges_8h.html#a8a1d402c0a162daf8e9b637abe48ca4e":[6,0,10,0,0,0,10,58]
+"ranges_8h.html#a8920b749a50a22be883802b82c420d23":[6,0,10,0,0,0,10,40]
 };
