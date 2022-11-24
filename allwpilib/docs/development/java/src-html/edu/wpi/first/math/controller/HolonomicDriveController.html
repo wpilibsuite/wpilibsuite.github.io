@@ -87,67 +87,71 @@
 <span class="sourceLineNo">075</span><a id="line.75">  /**</a>
 <span class="sourceLineNo">076</span><a id="line.76">   * Returns the next output of the holonomic drive controller.</a>
 <span class="sourceLineNo">077</span><a id="line.77">   *</a>
-<span class="sourceLineNo">078</span><a id="line.78">   * @param currentPose The current pose.</a>
-<span class="sourceLineNo">079</span><a id="line.79">   * @param poseRef The desired pose.</a>
-<span class="sourceLineNo">080</span><a id="line.80">   * @param linearVelocityRefMeters The linear velocity reference.</a>
-<span class="sourceLineNo">081</span><a id="line.81">   * @param angleRef The angular reference.</a>
+<span class="sourceLineNo">078</span><a id="line.78">   * @param currentPose The current pose, as measured by odometry or pose estimator.</a>
+<span class="sourceLineNo">079</span><a id="line.79">   * @param trajectoryPose The desired trajectory pose, as sampled for the current timestep.</a>
+<span class="sourceLineNo">080</span><a id="line.80">   * @param desiredLinearVelocityMetersPerSecond The desired linear velocity.</a>
+<span class="sourceLineNo">081</span><a id="line.81">   * @param desiredHeading The desired heading.</a>
 <span class="sourceLineNo">082</span><a id="line.82">   * @return The next output of the holonomic drive controller.</a>
 <span class="sourceLineNo">083</span><a id="line.83">   */</a>
 <span class="sourceLineNo">084</span><a id="line.84">  public ChassisSpeeds calculate(</a>
-<span class="sourceLineNo">085</span><a id="line.85">      Pose2d currentPose, Pose2d poseRef, double linearVelocityRefMeters, Rotation2d angleRef) {</a>
-<span class="sourceLineNo">086</span><a id="line.86">    // If this is the first run, then we need to reset the theta controller to the current pose's</a>
-<span class="sourceLineNo">087</span><a id="line.87">    // heading.</a>
-<span class="sourceLineNo">088</span><a id="line.88">    if (m_firstRun) {</a>
-<span class="sourceLineNo">089</span><a id="line.89">      m_thetaController.reset(currentPose.getRotation().getRadians());</a>
-<span class="sourceLineNo">090</span><a id="line.90">      m_firstRun = false;</a>
-<span class="sourceLineNo">091</span><a id="line.91">    }</a>
-<span class="sourceLineNo">092</span><a id="line.92"></a>
-<span class="sourceLineNo">093</span><a id="line.93">    // Calculate feedforward velocities (field-relative).</a>
-<span class="sourceLineNo">094</span><a id="line.94">    double xFF = linearVelocityRefMeters * poseRef.getRotation().getCos();</a>
-<span class="sourceLineNo">095</span><a id="line.95">    double yFF = linearVelocityRefMeters * poseRef.getRotation().getSin();</a>
-<span class="sourceLineNo">096</span><a id="line.96">    double thetaFF =</a>
-<span class="sourceLineNo">097</span><a id="line.97">        m_thetaController.calculate(currentPose.getRotation().getRadians(), angleRef.getRadians());</a>
-<span class="sourceLineNo">098</span><a id="line.98"></a>
-<span class="sourceLineNo">099</span><a id="line.99">    m_poseError = poseRef.relativeTo(currentPose);</a>
-<span class="sourceLineNo">100</span><a id="line.100">    m_rotationError = angleRef.minus(currentPose.getRotation());</a>
-<span class="sourceLineNo">101</span><a id="line.101"></a>
-<span class="sourceLineNo">102</span><a id="line.102">    if (!m_enabled) {</a>
-<span class="sourceLineNo">103</span><a id="line.103">      return ChassisSpeeds.fromFieldRelativeSpeeds(xFF, yFF, thetaFF, currentPose.getRotation());</a>
-<span class="sourceLineNo">104</span><a id="line.104">    }</a>
+<span class="sourceLineNo">085</span><a id="line.85">      Pose2d currentPose,</a>
+<span class="sourceLineNo">086</span><a id="line.86">      Pose2d trajectoryPose,</a>
+<span class="sourceLineNo">087</span><a id="line.87">      double desiredLinearVelocityMetersPerSecond,</a>
+<span class="sourceLineNo">088</span><a id="line.88">      Rotation2d desiredHeading) {</a>
+<span class="sourceLineNo">089</span><a id="line.89">    // If this is the first run, then we need to reset the theta controller to the current pose's</a>
+<span class="sourceLineNo">090</span><a id="line.90">    // heading.</a>
+<span class="sourceLineNo">091</span><a id="line.91">    if (m_firstRun) {</a>
+<span class="sourceLineNo">092</span><a id="line.92">      m_thetaController.reset(currentPose.getRotation().getRadians());</a>
+<span class="sourceLineNo">093</span><a id="line.93">      m_firstRun = false;</a>
+<span class="sourceLineNo">094</span><a id="line.94">    }</a>
+<span class="sourceLineNo">095</span><a id="line.95"></a>
+<span class="sourceLineNo">096</span><a id="line.96">    // Calculate feedforward velocities (field-relative).</a>
+<span class="sourceLineNo">097</span><a id="line.97">    double xFF = desiredLinearVelocityMetersPerSecond * trajectoryPose.getRotation().getCos();</a>
+<span class="sourceLineNo">098</span><a id="line.98">    double yFF = desiredLinearVelocityMetersPerSecond * trajectoryPose.getRotation().getSin();</a>
+<span class="sourceLineNo">099</span><a id="line.99">    double thetaFF =</a>
+<span class="sourceLineNo">100</span><a id="line.100">        m_thetaController.calculate(</a>
+<span class="sourceLineNo">101</span><a id="line.101">            currentPose.getRotation().getRadians(), desiredHeading.getRadians());</a>
+<span class="sourceLineNo">102</span><a id="line.102"></a>
+<span class="sourceLineNo">103</span><a id="line.103">    m_poseError = trajectoryPose.relativeTo(currentPose);</a>
+<span class="sourceLineNo">104</span><a id="line.104">    m_rotationError = desiredHeading.minus(currentPose.getRotation());</a>
 <span class="sourceLineNo">105</span><a id="line.105"></a>
-<span class="sourceLineNo">106</span><a id="line.106">    // Calculate feedback velocities (based on position error).</a>
-<span class="sourceLineNo">107</span><a id="line.107">    double xFeedback = m_xController.calculate(currentPose.getX(), poseRef.getX());</a>
-<span class="sourceLineNo">108</span><a id="line.108">    double yFeedback = m_yController.calculate(currentPose.getY(), poseRef.getY());</a>
+<span class="sourceLineNo">106</span><a id="line.106">    if (!m_enabled) {</a>
+<span class="sourceLineNo">107</span><a id="line.107">      return ChassisSpeeds.fromFieldRelativeSpeeds(xFF, yFF, thetaFF, currentPose.getRotation());</a>
+<span class="sourceLineNo">108</span><a id="line.108">    }</a>
 <span class="sourceLineNo">109</span><a id="line.109"></a>
-<span class="sourceLineNo">110</span><a id="line.110">    // Return next output.</a>
-<span class="sourceLineNo">111</span><a id="line.111">    return ChassisSpeeds.fromFieldRelativeSpeeds(</a>
-<span class="sourceLineNo">112</span><a id="line.112">        xFF + xFeedback, yFF + yFeedback, thetaFF, currentPose.getRotation());</a>
-<span class="sourceLineNo">113</span><a id="line.113">  }</a>
-<span class="sourceLineNo">114</span><a id="line.114"></a>
-<span class="sourceLineNo">115</span><a id="line.115">  /**</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * Returns the next output of the holonomic drive controller.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   *</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * @param currentPose The current pose.</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * @param desiredState The desired trajectory state.</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * @param angleRef The desired end-angle.</a>
-<span class="sourceLineNo">121</span><a id="line.121">   * @return The next output of the holonomic drive controller.</a>
-<span class="sourceLineNo">122</span><a id="line.122">   */</a>
-<span class="sourceLineNo">123</span><a id="line.123">  public ChassisSpeeds calculate(</a>
-<span class="sourceLineNo">124</span><a id="line.124">      Pose2d currentPose, Trajectory.State desiredState, Rotation2d angleRef) {</a>
-<span class="sourceLineNo">125</span><a id="line.125">    return calculate(</a>
-<span class="sourceLineNo">126</span><a id="line.126">        currentPose, desiredState.poseMeters, desiredState.velocityMetersPerSecond, angleRef);</a>
-<span class="sourceLineNo">127</span><a id="line.127">  }</a>
-<span class="sourceLineNo">128</span><a id="line.128"></a>
-<span class="sourceLineNo">129</span><a id="line.129">  /**</a>
-<span class="sourceLineNo">130</span><a id="line.130">   * Enables and disables the controller for troubleshooting problems. When calculate() is called on</a>
-<span class="sourceLineNo">131</span><a id="line.131">   * a disabled controller, only feedforward values are returned.</a>
-<span class="sourceLineNo">132</span><a id="line.132">   *</a>
-<span class="sourceLineNo">133</span><a id="line.133">   * @param enabled If the controller is enabled or not.</a>
-<span class="sourceLineNo">134</span><a id="line.134">   */</a>
-<span class="sourceLineNo">135</span><a id="line.135">  public void setEnabled(boolean enabled) {</a>
-<span class="sourceLineNo">136</span><a id="line.136">    m_enabled = enabled;</a>
-<span class="sourceLineNo">137</span><a id="line.137">  }</a>
-<span class="sourceLineNo">138</span><a id="line.138">}</a>
+<span class="sourceLineNo">110</span><a id="line.110">    // Calculate feedback velocities (based on position error).</a>
+<span class="sourceLineNo">111</span><a id="line.111">    double xFeedback = m_xController.calculate(currentPose.getX(), trajectoryPose.getX());</a>
+<span class="sourceLineNo">112</span><a id="line.112">    double yFeedback = m_yController.calculate(currentPose.getY(), trajectoryPose.getY());</a>
+<span class="sourceLineNo">113</span><a id="line.113"></a>
+<span class="sourceLineNo">114</span><a id="line.114">    // Return next output.</a>
+<span class="sourceLineNo">115</span><a id="line.115">    return ChassisSpeeds.fromFieldRelativeSpeeds(</a>
+<span class="sourceLineNo">116</span><a id="line.116">        xFF + xFeedback, yFF + yFeedback, thetaFF, currentPose.getRotation());</a>
+<span class="sourceLineNo">117</span><a id="line.117">  }</a>
+<span class="sourceLineNo">118</span><a id="line.118"></a>
+<span class="sourceLineNo">119</span><a id="line.119">  /**</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * Returns the next output of the holonomic drive controller.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   *</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @param currentPose The current pose, as measured by odometry or pose estimator.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @param desiredState The desired trajectory pose, as sampled for the current timestep.</a>
+<span class="sourceLineNo">124</span><a id="line.124">   * @param desiredHeading The desired heading.</a>
+<span class="sourceLineNo">125</span><a id="line.125">   * @return The next output of the holonomic drive controller.</a>
+<span class="sourceLineNo">126</span><a id="line.126">   */</a>
+<span class="sourceLineNo">127</span><a id="line.127">  public ChassisSpeeds calculate(</a>
+<span class="sourceLineNo">128</span><a id="line.128">      Pose2d currentPose, Trajectory.State desiredState, Rotation2d desiredHeading) {</a>
+<span class="sourceLineNo">129</span><a id="line.129">    return calculate(</a>
+<span class="sourceLineNo">130</span><a id="line.130">        currentPose, desiredState.poseMeters, desiredState.velocityMetersPerSecond, desiredHeading);</a>
+<span class="sourceLineNo">131</span><a id="line.131">  }</a>
+<span class="sourceLineNo">132</span><a id="line.132"></a>
+<span class="sourceLineNo">133</span><a id="line.133">  /**</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * Enables and disables the controller for troubleshooting problems. When calculate() is called on</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * a disabled controller, only feedforward values are returned.</a>
+<span class="sourceLineNo">136</span><a id="line.136">   *</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * @param enabled If the controller is enabled or not.</a>
+<span class="sourceLineNo">138</span><a id="line.138">   */</a>
+<span class="sourceLineNo">139</span><a id="line.139">  public void setEnabled(boolean enabled) {</a>
+<span class="sourceLineNo">140</span><a id="line.140">    m_enabled = enabled;</a>
+<span class="sourceLineNo">141</span><a id="line.141">  }</a>
+<span class="sourceLineNo">142</span><a id="line.142">}</a>
 
 
 
