@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-12-gd5200db</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-16-g6b4f262</span>
    </div>
   </td>
  </tr>
@@ -1785,7 +1785,7 @@ $(document).ready(function(){initNavTree('mpack_8h_source.html',''); initResizab
 <div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span><span class="preprocessor">#if MPACK_DEBUG</span></div>
 <div class="line"><a id="l01690" name="l01690"></a><span class="lineno"> 1690</span>    MPACK_NORETURN(<span class="keywordtype">void</span> mpack_assert_fail_wrapper(<span class="keyword">const</span> <span class="keywordtype">char</span>* message));</div>
 <div class="line"><a id="l01691" name="l01691"></a><span class="lineno"> 1691</span><span class="preprocessor">    #if MPACK_STDIO</span></div>
-<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span>        MPACK_NORETURN(<span class="keywordtype">void</span> mpack_assert_fail_format(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, ...));</div>
+<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span>        MPACK_NORETURN(<span class="keywordtype">void</span> mpack_assert_fail_format(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>, ...));</div>
 <div class="line"><a id="l01693" name="l01693"></a><span class="lineno"> 1693</span><span class="preprocessor">        #define mpack_assert_fail_at(line, file, exprstr, format, ...) \</span></div>
 <div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span><span class="preprocessor">                MPACK_EXPAND(mpack_assert_fail_format(&quot;mpack assertion failed at &quot;</span> file &quot;:&quot; #line &quot;\n%s\n&quot; format, exprstr, __VA_ARGS__))</div>
 <div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span><span class="preprocessor">    #else</span></div>
@@ -1816,7 +1816,7 @@ $(document).ready(function(){initNavTree('mpack_8h_source.html',''); initResizab
 <div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span> </div>
 <div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>    <span class="keywordtype">void</span> mpack_break_hit(<span class="keyword">const</span> <span class="keywordtype">char</span>* message);</div>
 <div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span><span class="preprocessor">    #if MPACK_STDIO</span></div>
-<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>        <span class="keywordtype">void</span> mpack_break_hit_format(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, ...);</div>
+<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>        <span class="keywordtype">void</span> mpack_break_hit_format(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>, ...);</div>
 <div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span><span class="preprocessor">        #define mpack_break_hit_at(line, file, ...) \</span></div>
 <div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span><span class="preprocessor">                MPACK_EXPAND(mpack_break_hit_format(&quot;mpack breakpoint hit at &quot;</span> file &quot;:&quot; #line &quot;\n&quot; __VA_ARGS__))</div>
 <div class="line"><a id="l01726" name="l01726"></a><span class="lineno"> 1726</span><span class="preprocessor">    #else</span></div>
@@ -8308,7 +8308,6 @@ $(document).ready(function(){initNavTree('mpack_8h_source.html',''); initResizab
 <div class="ttc" id="acore_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> core.h:1204</div></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
 <div class="ttc" id="aformat_8h_html_aa261c3477724224b49f5dd92aec0c03a"><div class="ttname"><a href="format_8h.html#aa261c3477724224b49f5dd92aec0c03a">fill</a></div><div class="ttdeci">FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t&lt; Char &gt; &amp;fill) -&gt; OutputIt</div><div class="ttdef"><b>Definition:</b> format.h:1637</div></div>
-<div class="ttc" id="aformat_8h_html_ab5e334342978e8c898e32e5b4f7d08fa"><div class="ttname"><a href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a></div><div class="ttdeci">auto format(const Locale &amp;loc, format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::string</div><div class="ttdef"><b>Definition:</b> format.h:4183</div></div>
 <div class="ttc" id="agroup__common_html_ga008da69ac6b5582a893f2d2ffd37f4ac"><div class="ttname"><a href="group__common.html#ga008da69ac6b5582a893f2d2ffd37f4ac">mpack_tag_t</a></div><div class="ttdeci">struct mpack_tag_t mpack_tag_t</div><div class="ttdoc">An MPack tag is a MessagePack object header.</div><div class="ttdef"><b>Definition:</b> mpack.h:2080</div></div>
 <div class="ttc" id="agroup__common_html_ga01f28cf95ddc7c6ecd8dbdd3cfb670ae"><div class="ttname"><a href="group__common.html#ga01f28cf95ddc7c6ecd8dbdd3cfb670ae">mpack_tag_array</a></div><div class="ttdeci">MPACK_INLINE mpack_tag_t mpack_tag_array(int32_t count)</div><div class="ttdef"><b>Definition:</b> mpack.h:2646</div></div>
 <div class="ttc" id="agroup__common_html_ga07fd369f8268e12ed410e7a73ea60a58"><div class="ttname"><a href="group__common.html#ga07fd369f8268e12ed410e7a73ea60a58">mpack_tag_make_double</a></div><div class="ttdeci">MPACK_INLINE mpack_tag_t mpack_tag_make_double(double value)</div><div class="ttdoc">Generates a double tag.</div><div class="ttdef"><b>Definition:</b> mpack.h:2201</div></div>
@@ -8661,13 +8660,14 @@ $(document).ready(function(){initNavTree('mpack_8h_source.html',''); initResizab
 <div class="ttc" id="anamespacewpi_1_1support_1_1endian_html_a1860e8c05fe03cd6b9912c5bec5f8c2f"><div class="ttname"><a href="namespacewpi_1_1support_1_1endian.html#a1860e8c05fe03cd6b9912c5bec5f8c2f">wpi::support::endian::read</a></div><div class="ttdeci">value_type read(const void *memory, endianness endian)</div><div class="ttdoc">Read a value of a particular endianness from memory.</div><div class="ttdef"><b>Definition:</b> Endian.h:65</div></div>
 <div class="ttc" id="aprintf_8h_html_aa3739712ffc6e717626ef803d2782ad5"><div class="ttname"><a href="printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a></div><div class="ttdeci">auto printf(const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdoc">\rst Prints formatted data to stdout.</div><div class="ttdef"><b>Definition:</b> printf.h:631</div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:1544</div></div>
+<div class="ttc" id="awpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdoc">\rst Formats arguments and returns the result as a string using ANSI escape sequences to specify text...</div><div class="ttdef"><b>Definition:</b> color.h:553</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_c9005440f6bf15aac4d659d0df5bcda1.html">mpack</a></li><li class="navelem"><a class="el" href="dir_c40a6bdc22b931e371a7a97f244073dd.html">include</a></li><li class="navelem"><a class="el" href="dir_90b15fee890a29d6e8ba8c089d4d0cf1.html">wpi</a></li><li class="navelem"><a class="el" href="mpack_8h.html">mpack.h</a></li>
-    <li class="footer">Generated on Thu Nov 24 2022 07:16:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Nov 24 2022 17:09:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

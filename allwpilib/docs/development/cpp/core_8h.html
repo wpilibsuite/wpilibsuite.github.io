@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-12-gd5200db</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-16-g6b4f262</span>
    </div>
   </td>
  </tr>
@@ -435,9 +435,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a5389b8c0f53c7663c1eef6271746c73a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Char &gt; </td></tr>
 <tr class="memitem:a5389b8c0f53c7663c1eef6271746c73a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#a5389b8c0f53c7663c1eef6271746c73a">has_fallback_formatter</a> = std::false_type</td></tr>
 <tr class="separator:a5389b8c0f53c7663c1eef6271746c73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9174fa0aac401969efb266e326f42951"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#adc29c2ff13d900c2f185ee95427fb06caa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long &gt;</td></tr>
+<tr class="memitem:a9174fa0aac401969efb266e326f42951"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#a99fb83031ce9923c84392b4e92f956b5aa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long &gt;</td></tr>
 <tr class="separator:a9174fa0aac401969efb266e326f42951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e24c039447f0eda42b5a1185f0dd743"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#adc29c2ff13d900c2f185ee95427fb06caa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long &gt;</td></tr>
+<tr class="memitem:a2e24c039447f0eda42b5a1185f0dd743"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> = <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt; <a class="el" href="core_8h.html#a99fb83031ce9923c84392b4e92f956b5aa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long &gt;</td></tr>
 <tr class="separator:a2e24c039447f0eda42b5a1185f0dd743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4b00dc3259d8fce83f914a5b38f354"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Context &gt; </td></tr>
 <tr class="memitem:adc4b00dc3259d8fce83f914a5b38f354"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#adc4b00dc3259d8fce83f914a5b38f354">mapped_type_constant</a> = <a class="el" href="structtype__constant.html">type_constant</a>&lt; decltype(<a class="el" href="structarg__mapper.html">arg_mapper</a>&lt; Context &gt;().map(std::declval&lt; const T &amp; &gt;())), typename <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2dabdf69faf97b2619c533f3ee73208d6e6">Context::char_type</a> &gt;</td></tr>
@@ -498,21 +498,21 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a7aead736a07eaf25623ad7bfa1f0ee2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc29c2ff13d900c2f185ee95427fb06c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#adc29c2ff13d900c2f185ee95427fb06caa78c25a5df184172695de374af97f6a7">long_short</a> = sizeof(long) == sizeof(int)
+<tr class="memitem:a99fb83031ce9923c84392b4e92f956b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#a99fb83031ce9923c84392b4e92f956b5aa78c25a5df184172695de374af97f6a7">long_short</a> = sizeof(long) == sizeof(int)
+ }</td></tr>
+<tr class="separator:a99fb83031ce9923c84392b4e92f956b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6126af1d45847bc59afa0aa3216b04"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#abc6126af1d45847bc59afa0aa3216b04a20ec9c2d5cac838e8e340c1b371ae6db">packed_arg_bits</a> = 4
+ }</td></tr>
+<tr class="separator:abc6126af1d45847bc59afa0aa3216b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc29c2ff13d900c2f185ee95427fb06c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#adc29c2ff13d900c2f185ee95427fb06caa2aec61a0142d05c79e16212132aa26b">max_packed_args</a> = 62 / packed_arg_bits
  }</td></tr>
 <tr class="separator:adc29c2ff13d900c2f185ee95427fb06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61dadd085c1777f559549e05962b2c9e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#a61dadd085c1777f559549e05962b2c9ea20ec9c2d5cac838e8e340c1b371ae6db">packed_arg_bits</a> = 4
+<tr class="memitem:a67b14ec01c0960c3a1ef74240143e859"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#a67b14ec01c0960c3a1ef74240143e859a144043c49b42deecce880eb6ba67fd4d">is_unpacked_bit</a> = 1ULL &lt;&lt; 63
  }</td></tr>
-<tr class="separator:a61dadd085c1777f559549e05962b2c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726ca809ffd3d67ab4b8476646f26635"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="core_8h.html#a726ca809ffd3d67ab4b8476646f26635aa2aec61a0142d05c79e16212132aa26b">max_packed_args</a> = 62 / packed_arg_bits
+<tr class="separator:a67b14ec01c0960c3a1ef74240143e859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9ca243775915d572d70bcef6f98d1a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#a8d9ca243775915d572d70bcef6f98d1aa3d9e0b7b59aae7e5693ae2b8da34cabe">has_named_args_bit</a> = 1ULL &lt;&lt; 62
  }</td></tr>
-<tr class="separator:a726ca809ffd3d67ab4b8476646f26635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41df38478c51fa852657235158d43472"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#a41df38478c51fa852657235158d43472a144043c49b42deecce880eb6ba67fd4d">is_unpacked_bit</a> = 1ULL &lt;&lt; 63
- }</td></tr>
-<tr class="separator:a41df38478c51fa852657235158d43472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bfaaadddcdbefc75d6c709e186f8e6c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: unsigned long long { <a class="el" href="core_8h.html#a6bfaaadddcdbefc75d6c709e186f8e6ca3d9e0b7b59aae7e5693ae2b8da34cabe">has_named_args_bit</a> = 1ULL &lt;&lt; 62
- }</td></tr>
-<tr class="separator:a6bfaaadddcdbefc75d6c709e186f8e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8d9ca243775915d572d70bcef6f98d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfa139c9a1902753b3696794759b2c48"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48">presentation_type</a> : unsigned char { <br />
 &#160;&#160;<a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a334c4a4c42fdb79d7ebc3e73b517e6f8">none</a>
 , <a class="el" href="core_8h.html#adfa139c9a1902753b3696794759b2c48a1feea25ecb958229287f885aebe7c49b">dec</a>
@@ -626,7 +626,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ac2dddff5c4f81bcda40833bc485853b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#ac9411ed6305aee71472718fa55fcc352">FMT_NORETURN</a> <a class="el" href="core_8h.html#a9a4960b70582ed2620911a0b75dce0b5">FMT_API</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="core_8h.html#ac2dddff5c4f81bcda40833bc485853b5">throw_format_error</a> (const char *message)</td></tr>
 <tr class="separator:ac2dddff5c4f81bcda40833bc485853b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae518bedbde1aadfbd1d9632233b3bf7e"><td class="memTemplParams" colspan="2">template&lt;typename Context , typename T &gt; </td></tr>
-<tr class="memitem:ae518bedbde1aadfbd1d9632233b3bf7e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ae518bedbde1aadfbd1d9632233b3bf7e">has_const_formatter_impl</a> (T *) -&gt; decltype(typename Context::template formatter_type&lt; T &gt;().<a class="el" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>(std::declval&lt; const T &amp; &gt;(), std::declval&lt; Context &amp; &gt;()), true)</td></tr>
+<tr class="memitem:ae518bedbde1aadfbd1d9632233b3bf7e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a940fe09371b00f5b516a670932319fc7">FMT_BEGIN_DETAIL_NAMESPACE</a> constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#ae518bedbde1aadfbd1d9632233b3bf7e">has_const_formatter_impl</a> (T *) -&gt; decltype(typename Context::template formatter_type&lt; T &gt;().<a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>(std::declval&lt; const T &amp; &gt;(), std::declval&lt; Context &amp; &gt;()), true)</td></tr>
 <tr class="separator:ae518bedbde1aadfbd1d9632233b3bf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceece8f2dee76c77ba701a68e72c4496"><td class="memTemplParams" colspan="2">template&lt;typename Context &gt; </td></tr>
 <tr class="memitem:aceece8f2dee76c77ba701a68e72c4496"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="core_8h.html#aceece8f2dee76c77ba701a68e72c4496">has_const_formatter_impl</a> (...) -&gt; bool</td></tr>
@@ -1878,7 +1878,7 @@ template&lt;typename T , typename Char  = char&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#adc29c2ff13d900c2f185ee95427fb06caa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a9174fa0aac401969efb266e326f42951">long_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#a99fb83031ce9923c84392b4e92f956b5aa78c25a5df184172695de374af97f6a7">long_short</a>, int, long long&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2000,7 +2000,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#adc29c2ff13d900c2f185ee95427fb06caa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long&gt;</td>
+          <td class="memname">using <a class="el" href="core_8h.html#a2e24c039447f0eda42b5a1185f0dd743">ulong_type</a> =  <a class="el" href="core_8h.html#acdb0eff728aec08ed6fff07d2885ea9d">conditional_t</a>&lt;<a class="el" href="core_8h.html#a99fb83031ce9923c84392b4e92f956b5aa78c25a5df184172695de374af97f6a7">long_short</a>, unsigned, unsigned long long&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2040,6 +2040,40 @@ template&lt;typename... &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a99fb83031ce9923c84392b4e92f956b5" name="a99fb83031ce9923c84392b4e92f956b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99fb83031ce9923c84392b4e92f956b5">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a99fb83031ce9923c84392b4e92f956b5aa78c25a5df184172695de374af97f6a7" name="a99fb83031ce9923c84392b4e92f956b5aa78c25a5df184172695de374af97f6a7"></a>long_short&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abc6126af1d45847bc59afa0aa3216b04" name="abc6126af1d45847bc59afa0aa3216b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6126af1d45847bc59afa0aa3216b04">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc6126af1d45847bc59afa0aa3216b04a20ec9c2d5cac838e8e340c1b371ae6db" name="abc6126af1d45847bc59afa0aa3216b04a20ec9c2d5cac838e8e340c1b371ae6db"></a>packed_arg_bits&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="adc29c2ff13d900c2f185ee95427fb06c" name="adc29c2ff13d900c2f185ee95427fb06c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc29c2ff13d900c2f185ee95427fb06c">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
@@ -2052,47 +2086,13 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adc29c2ff13d900c2f185ee95427fb06caa78c25a5df184172695de374af97f6a7" name="adc29c2ff13d900c2f185ee95427fb06caa78c25a5df184172695de374af97f6a7"></a>long_short&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adc29c2ff13d900c2f185ee95427fb06caa2aec61a0142d05c79e16212132aa26b" name="adc29c2ff13d900c2f185ee95427fb06caa2aec61a0142d05c79e16212132aa26b"></a>max_packed_args&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a61dadd085c1777f559549e05962b2c9e" name="a61dadd085c1777f559549e05962b2c9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61dadd085c1777f559549e05962b2c9e">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a61dadd085c1777f559549e05962b2c9ea20ec9c2d5cac838e8e340c1b371ae6db" name="a61dadd085c1777f559549e05962b2c9ea20ec9c2d5cac838e8e340c1b371ae6db"></a>packed_arg_bits&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a726ca809ffd3d67ab4b8476646f26635" name="a726ca809ffd3d67ab4b8476646f26635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a726ca809ffd3d67ab4b8476646f26635">&#9670;&nbsp;</a></span>anonymous enum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a726ca809ffd3d67ab4b8476646f26635aa2aec61a0142d05c79e16212132aa26b" name="a726ca809ffd3d67ab4b8476646f26635aa2aec61a0142d05c79e16212132aa26b"></a>max_packed_args&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<a id="a41df38478c51fa852657235158d43472" name="a41df38478c51fa852657235158d43472"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41df38478c51fa852657235158d43472">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a67b14ec01c0960c3a1ef74240143e859" name="a67b14ec01c0960c3a1ef74240143e859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b14ec01c0960c3a1ef74240143e859">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2103,13 +2103,13 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a41df38478c51fa852657235158d43472a144043c49b42deecce880eb6ba67fd4d" name="a41df38478c51fa852657235158d43472a144043c49b42deecce880eb6ba67fd4d"></a>is_unpacked_bit&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a67b14ec01c0960c3a1ef74240143e859a144043c49b42deecce880eb6ba67fd4d" name="a67b14ec01c0960c3a1ef74240143e859a144043c49b42deecce880eb6ba67fd4d"></a>is_unpacked_bit&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a6bfaaadddcdbefc75d6c709e186f8e6c" name="a6bfaaadddcdbefc75d6c709e186f8e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bfaaadddcdbefc75d6c709e186f8e6c">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a8d9ca243775915d572d70bcef6f98d1a" name="a8d9ca243775915d572d70bcef6f98d1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d9ca243775915d572d70bcef6f98d1a">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2120,7 +2120,7 @@ template&lt;typename... &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6bfaaadddcdbefc75d6c709e186f8e6ca3d9e0b7b59aae7e5693ae2b8da34cabe" name="a6bfaaadddcdbefc75d6c709e186f8e6ca3d9e0b7b59aae7e5693ae2b8da34cabe"></a>has_named_args_bit&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8d9ca243775915d572d70bcef6f98d1aa3d9e0b7b59aae7e5693ae2b8da34cabe" name="a8d9ca243775915d572d70bcef6f98d1aa3d9e0b7b59aae7e5693ae2b8da34cabe"></a>has_named_args_bit&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -4120,7 +4120,7 @@ template&lt;typename Context , typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">T *&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td> -&gt; decltype(typename Context::template formatter_type&lt;T&gt;().<a class="el" href="wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a>(
+          <td> -&gt; decltype(typename Context::template formatter_type&lt;T&gt;().<a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>(
                     std::declval&lt;const T&amp;&gt;(), std::declval&lt;Context&amp;&gt;()),
                 true) </td>
         </tr>
@@ -5554,7 +5554,7 @@ template&lt;typename Visitor , typename Context &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_75d22224f7f487f20d980e16d79f32d5.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_4c3f8814ce16778d745337ae31513b92.html">include</a></li><li class="navelem"><a class="el" href="dir_881f541a32b77f97cfd2281ec4aaf81a.html">fmt</a></li><li class="navelem"><a class="el" href="core_8h.html">core.h</a></li>
-    <li class="footer">Generated on Thu Nov 24 2022 07:16:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Nov 24 2022 17:09:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

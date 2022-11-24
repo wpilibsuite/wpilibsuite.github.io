@@ -10,10 +10,6 @@ var class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4 =
     [ "coeffRef", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a06b06526f5f9ec0dce2dd6bddab1f64a", null ],
     [ "innerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#aa642fb60d5fd6c2a6d0875a6882e76bf", null ],
     [ "innerNonZeroPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a3cbe95130ff591846653b095de42c448", null ],
-    [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#af2eba8c3ea2424df618f3e90f1b5254b", null ],
-    [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a379e2a65ec661cceaddc225120ad5cb1", null ],
-    [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a3365b1d14b9f6c5d832169b3d07511a4", null ],
-    [ "operator=", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#aa171e4de58f2bddb8da0358961c6d3fd", null ],
     [ "outerIndexPtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a65b7c440d0b2baad4883678e0add8490", null ],
     [ "valuePtr", "class_eigen_1_1_sparse_map_base_3_01_derived_00_01_write_accessors_01_4.html#a2f496a35ee9ac16a1fb2d1269fff2a22", null ]
 ];

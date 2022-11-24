@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-12-gd5200db</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-16-g6b4f262</span>
    </div>
   </td>
  </tr>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_udp_8h_source.html',''); initResizabl
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   * @param sock A valid socket handle (either a file descriptor or a SOCKET).</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_udp.html#a149358b9c14b45b2300a37b3e121ecbc">   78</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_udp.html#a149358b9c14b45b2300a37b3e121ecbc">Open</a>(<a class="code hl_typedef" href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a> sock) { <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#ac57b8059a53c5b83f25ea84f99c24f7a">Invoke</a>(&amp;<a class="code hl_function" href="uv_8h.html#a818b8782df0c1193b39751e9b4819951">uv_udp_open</a>, <a class="code hl_function" href="classwpi_1_1uv_1_1_handle_impl.html#a33322cdee9abd12d0f7bbf70d72d484b">GetRaw</a>(), sock); }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_udp.html#a149358b9c14b45b2300a37b3e121ecbc">   78</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_udp.html#a149358b9c14b45b2300a37b3e121ecbc">Open</a>(<a class="code hl_typedef" href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a> sock) { <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#ac57b8059a53c5b83f25ea84f99c24f7a">Invoke</a>(&amp;<a class="code hl_function" href="uv_8h.html#a818b8782df0c1193b39751e9b4819951">uv_udp_open</a>, <a class="code hl_function" href="classwpi_1_1uv_1_1_handle_impl.html#a33322cdee9abd12d0f7bbf70d72d484b">GetRaw</a>(), sock); }</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   * Bind the handle to an IPv4 or IPv6 address and port.</span></div>
@@ -553,11 +553,12 @@ $(document).ready(function(){initNavTree('_udp_8h_source.html',''); initResizabl
 <div class="ttc" id="aclasswpi_1_1uv_1_1_udp_send_req_html_aa478fe23322fe450488030887ee0a4b3"><div class="ttname"><a href="classwpi_1_1uv_1_1_udp_send_req.html#aa478fe23322fe450488030887ee0a4b3">wpi::uv::UdpSendReq::complete</a></div><div class="ttdeci">sig::Signal&lt; Error &gt; complete</div><div class="ttdoc">Send completed signal.</div><div class="ttdef"><b>Definition:</b> Udp.h:39</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:520</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> Error.h:10</div></div>
+<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> ParallelTcpConnector.h:22</div></div>
 <div class="ttc" id="anamespacewpi_html_a7b0000b45b0b55789f757f1c3d2461cb"><div class="ttname"><a href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">wpi::flags</a></div><div class="ttdeci">flags</div><div class="ttdef"><b>Definition:</b> http_parser.h:206</div></div>
 <div class="ttc" id="astructuv__udp__s_html_a3e33dd00e19e84788826c7c8b161a086"><div class="ttname"><a href="structuv__udp__s.html#a3e33dd00e19e84788826c7c8b161a086">uv_udp_s::send_queue_count</a></div><div class="ttdeci">size_t send_queue_count</div><div class="ttdef"><b>Definition:</b> uv.h:663</div></div>
 <div class="ttc" id="astructuv__udp__s_html_aa2bee970d8f44dde82ed2ec8c603bf14"><div class="ttname"><a href="structuv__udp__s.html#aa2bee970d8f44dde82ed2ec8c603bf14">uv_udp_s::send_queue_size</a></div><div class="ttdeci">UV_HANDLE_FIELDS size_t send_queue_size</div><div class="ttdef"><b>Definition:</b> uv.h:659</div></div>
 <div class="ttc" id="astructuv__udp__send__s_html_af5349a23208f0171bdccf0a953104125"><div class="ttname"><a href="structuv__udp__send__s.html#af5349a23208f0171bdccf0a953104125">uv_udp_send_s::handle</a></div><div class="ttdeci">UV_REQ_FIELDS uv_udp_t * handle</div><div class="ttdef"><b>Definition:</b> uv.h:670</div></div>
+<div class="ttc" id="aunix_8h_html_af81628992ec6ef4954b291bf7278a383"><div class="ttname"><a href="unix_8h.html#af81628992ec6ef4954b291bf7278a383">uv_os_sock_t</a></div><div class="ttdeci">int uv_os_sock_t</div><div class="ttdef"><b>Definition:</b> unix.h:119</div></div>
 <div class="ttc" id="auv_8h_html"><div class="ttname"><a href="uv_8h.html">uv.h</a></div></div>
 <div class="ttc" id="auv_8h_html_a0b18397552bb19f3d3fbf73f95bb5fc4"><div class="ttname"><a href="uv_8h.html#a0b18397552bb19f3d3fbf73f95bb5fc4">uv_udp_bind</a></div><div class="ttdeci">UV_EXTERN int uv_udp_bind(uv_udp_t *handle, const struct sockaddr *addr, unsigned int flags)</div></div>
 <div class="ttc" id="auv_8h_html_a2a1053b663c5b32b5ac313da2704d832"><div class="ttname"><a href="uv_8h.html#a2a1053b663c5b32b5ac313da2704d832">uv_udp_set_ttl</a></div><div class="ttdeci">UV_EXTERN int uv_udp_set_ttl(uv_udp_t *handle, int ttl)</div></div>
@@ -570,7 +571,6 @@ $(document).ready(function(){initNavTree('_udp_8h_source.html',''); initResizabl
 <div class="ttc" id="auv_8h_html_aabefddd8dadcfdcc01aa39df958be40b"><div class="ttname"><a href="uv_8h.html#aabefddd8dadcfdcc01aa39df958be40b">uv_udp_using_recvmmsg</a></div><div class="ttdeci">UV_EXTERN int uv_udp_using_recvmmsg(const uv_udp_t *handle)</div></div>
 <div class="ttc" id="auv_8h_html_ab3bf80b59b7bd0d423504a08fd0c2ba7"><div class="ttname"><a href="uv_8h.html#ab3bf80b59b7bd0d423504a08fd0c2ba7">uv_udp_set_multicast_loop</a></div><div class="ttdeci">UV_EXTERN int uv_udp_set_multicast_loop(uv_udp_t *handle, int on)</div></div>
 <div class="ttc" id="auv_8h_html_aed10b8b0a6c0691d5091c79a21077853"><div class="ttname"><a href="uv_8h.html#aed10b8b0a6c0691d5091c79a21077853">uv_udp_set_broadcast</a></div><div class="ttdeci">UV_EXTERN int uv_udp_set_broadcast(uv_udp_t *handle, int on)</div></div>
-<div class="ttc" id="awin_8h_html_a6254a394f014a0241b4390944121697d"><div class="ttname"><a href="win_8h.html#a6254a394f014a0241b4390944121697d">uv_os_sock_t</a></div><div class="ttdeci">SOCKET uv_os_sock_t</div><div class="ttdef"><b>Definition:</b> win.h:240</div></div>
 <div class="ttc" id="awpiutil_2src_2main_2native_2thirdparty_2sigslot_2include_2wpi_2_signal_8h_html"><div class="ttname"><a href="wpiutil_2src_2main_2native_2thirdparty_2sigslot_2include_2wpi_2_signal_8h.html">Signal.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -578,7 +578,7 @@ $(document).ready(function(){initNavTree('_udp_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4e20957744827ba5726af139111576a9.html">wpinet</a></li><li class="navelem"><a class="el" href="dir_12166d0305ec2caa3943538028d23053.html">uv</a></li><li class="navelem"><a class="el" href="_udp_8h.html">Udp.h</a></li>
-    <li class="footer">Generated on Thu Nov 24 2022 07:16:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Nov 24 2022 17:09:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

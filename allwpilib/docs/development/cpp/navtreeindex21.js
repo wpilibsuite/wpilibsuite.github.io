@@ -1,6 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"_sparse_util_8h.html#aa49d12e32c9621b2130abc38a317e7b8":[6,0,8,1,0,0,0,12,26,15],
 "_sparse_util_8h.html#ad3a7fa97adf0db7055c92f466cecc271":[6,0,8,1,0,0,0,12,26,20],
 "_sparse_util_8h.html#ad9beed61de5b6f473461b053a43ae793":[6,0,8,1,0,0,0,12,26,22],
 "_sparse_util_8h.html#ae77c267db06bfa11212bc13dfe8f90a6":[6,0,8,1,0,0,0,12,26,19],
@@ -220,7 +219,7 @@ var NAVTREEINDEX21 =
 "_swerve_controller_command_8h_source.html":[6,0,5,0,33],
 "_swerve_controller_command_8inc.html":[6,0,5,0,34],
 "_swerve_drive_kinematics_8h.html":[6,0,4,6,8],
-"_swerve_drive_kinematics_8h.html#a8c0f838088a7362e2f2d492539e070e9":[6,0,4,6,8,1],
+"_swerve_drive_kinematics_8h.html#a2d137160d8fe76de7d65a2b1adc8d6d7":[6,0,4,6,8,1],
 "_swerve_drive_kinematics_8h_source.html":[6,0,4,6,8],
 "_swerve_drive_kinematics_8inc.html":[6,0,4,6,9],
 "_swerve_drive_kinematics_8inc.html#acf032b8adc55f3de1e6828f68f86b409":[6,0,4,6,9,0],
@@ -228,11 +227,11 @@ var NAVTREEINDEX21 =
 "_swerve_drive_kinematics_constraint_8h_source.html":[6,0,4,9,0,7],
 "_swerve_drive_kinematics_constraint_8inc.html":[6,0,4,9,0,8],
 "_swerve_drive_odometry_8h.html":[6,0,4,6,10],
-"_swerve_drive_odometry_8h.html#a8c0f838088a7362e2f2d492539e070e9":[6,0,4,6,10,1],
+"_swerve_drive_odometry_8h.html#a2d137160d8fe76de7d65a2b1adc8d6d7":[6,0,4,6,10,1],
 "_swerve_drive_odometry_8h_source.html":[6,0,4,6,10],
 "_swerve_drive_odometry_8inc.html":[6,0,4,6,11],
 "_swerve_drive_pose_estimator_8h.html":[6,0,4,1,9],
-"_swerve_drive_pose_estimator_8h.html#a8c0f838088a7362e2f2d492539e070e9":[6,0,4,1,9,1],
+"_swerve_drive_pose_estimator_8h.html#a2d137160d8fe76de7d65a2b1adc8d6d7":[6,0,4,1,9,1],
 "_swerve_drive_pose_estimator_8h_source.html":[6,0,4,1,9],
 "_swerve_module_position_8h.html":[6,0,4,6,12],
 "_swerve_module_position_8h_source.html":[6,0,4,6,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX21 =
 "_symbol_exports_8h.html#a3bcd87cbdce20a7e635675198bd4a83f":[6,0,13,36,13],
 "_symbol_exports_8h.html#a3dce7368d3a6db64e8dc128112855f2a":[6,0,13,36,17],
 "_symbol_exports_8h.html#a42afa431ab8211822dcfa0b62ccbba28":[6,0,13,36,18],
-"_symbol_exports_8h.html#a4877a2b4b4badbd7749cd9339e0e9884":[6,0,13,36,7]
+"_symbol_exports_8h.html#a4877a2b4b4badbd7749cd9339e0e9884":[6,0,13,36,7],
+"_symbol_exports_8h.html#a643196856eb2f1c1cb2ebb06bdf994a0":[6,0,13,36,15]
 };

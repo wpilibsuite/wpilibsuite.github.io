@@ -1,6 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"_symbol_exports_8h.html#a643196856eb2f1c1cb2ebb06bdf994a0":[6,0,13,36,15],
 "_symbol_exports_8h.html#a670a1223171a046f7117ea06e52e5037":[6,0,13,36,11],
 "_symbol_exports_8h.html#a679103ea49756668f10f7f4feb0b19a5":[6,0,13,36,12],
 "_symbol_exports_8h.html#a6e371e77bd08dfdd11bd8fc3f0def8ca":[6,0,13,36,16],
@@ -157,7 +156,7 @@ var NAVTREEINDEX22 =
 "_unsafe_d_i_o_8h.html#abfdd219ed1533cc33c0b9e6e6f8f59a2":[6,0,6,0,2,3],
 "_unsafe_d_i_o_8h_source.html":[6,0,6,0,2],
 "_unscented_kalman_filter_8h.html":[6,0,4,1,10],
-"_unscented_kalman_filter_8h.html#a8c0f838088a7362e2f2d492539e070e9":[6,0,4,1,10,1],
+"_unscented_kalman_filter_8h.html#a2d137160d8fe76de7d65a2b1adc8d6d7":[6,0,4,1,10,1],
 "_unscented_kalman_filter_8h_source.html":[6,0,4,1,10],
 "_unscented_kalman_filter_8inc.html":[6,0,4,1,11],
 "_unscented_transform_8h.html":[6,0,4,1,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX22 =
 "_wrapper_command_8h.html":[6,0,5,0,39],
 "_wrapper_command_8h_source.html":[6,0,5,0,39],
 "_xbox_controller_8h.html":[6,0,3,85],
-"_xbox_controller_8h_source.html":[6,0,3,85]
+"_xbox_controller_8h_source.html":[6,0,3,85],
+"_xbox_controller_sim_8h.html":[6,0,3,8,42]
 };

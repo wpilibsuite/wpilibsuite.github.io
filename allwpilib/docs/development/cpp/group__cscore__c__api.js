@@ -97,6 +97,7 @@ var group__cscore__c__api =
       [ "CS_PIXFMT_RGB565", "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a30a2d3c9949d409348ad1e6d2b7a5b30", null ],
       [ "CS_PIXFMT_BGR", "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a23a4eea82ada01483025bfcffeabb2ec", null ],
       [ "CS_PIXFMT_GRAY", "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a26f35234b5274c2d40086610c1cfac72", null ],
+      [ "CS_PIXFMT_Y16", "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a8c1163f415a19815ece7d7e47a121537", null ],
       [ "CS_PIXFMT_UYVY", "group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4ab69e42749ccfbdf21a1a5019fe4c52e4", null ]
     ] ],
     [ "CS_PropertyKind", "group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e", [

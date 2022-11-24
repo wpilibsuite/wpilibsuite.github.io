@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"_permutation_matrix_8h_source.html":[6,0,8,1,0,0,0,1,48],
 "_perpetual_command_8h.html":[6,0,5,0,16],
 "_perpetual_command_8h_source.html":[6,0,5,0,16],
 "_pipe_8h.html":[6,0,15,0,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "_robo_rio_data_8h.html#a4f37c2f685e7abf28574db31e4dd7c7a":[6,0,6,3,22,57],
 "_robo_rio_data_8h.html#a54160cfb9bd4727455258dd369bc8145":[6,0,6,3,22,13],
 "_robo_rio_data_8h.html#a5c9aa9518f360181f5aed1722fff2b6a":[6,0,6,3,22,62],
-"_robo_rio_data_8h.html#a5f8b58fae1f3a7133d0f0dea23415e3f":[6,0,6,3,22,58],
-"_robo_rio_data_8h.html#a611b052689e12e22fc422a9019a15760":[6,0,6,3,22,0]
+"_robo_rio_data_8h.html#a5f8b58fae1f3a7133d0f0dea23415e3f":[6,0,6,3,22,58]
 };
