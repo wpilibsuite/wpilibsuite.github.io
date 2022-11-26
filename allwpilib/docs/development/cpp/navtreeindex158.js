@@ -1,5 +1,7 @@
 var NAVTREEINDEX158 =
 {
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#a41d472ed4e4c33d94ad1cb8149be8464":[4,0,8,146,3],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#a9fec624d3b2a9a9c957691c3e8b71958":[5,0,4,143,2],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#a9fec624d3b2a9a9c957691c3e8b71958":[4,0,8,146,2],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#ab0df6ec64ad44709ddc3b6e544054303":[5,0,4,143,5],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#ab0df6ec64ad44709ddc3b6e544054303":[4,0,8,146,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX158 =
 "struct_eigen_1_1bfloat16.html#abca7169801ab1d472bf2a4751bf9f92f":[5,0,4,17,3],
 "struct_eigen_1_1bfloat16.html#abca7169801ab1d472bf2a4751bf9f92f":[4,0,8,20,3],
 "struct_eigen_1_1bfloat16__impl_1_1____bfloat16__raw.html":[4,0,8,1,0],
-"struct_eigen_1_1bfloat16__impl_1_1____bfloat16__raw.html":[5,0,4,0,0],
-"struct_eigen_1_1bfloat16__impl_1_1____bfloat16__raw.html#a2eaefdd2e0119f99347a89d8c478b953":[5,0,4,0,0,0],
-"struct_eigen_1_1bfloat16__impl_1_1____bfloat16__raw.html#a2eaefdd2e0119f99347a89d8c478b953":[4,0,8,1,0,0]
+"struct_eigen_1_1bfloat16__impl_1_1____bfloat16__raw.html":[5,0,4,0,0]
 };

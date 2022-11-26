@@ -1,5 +1,7 @@
 var NAVTREEINDEX168 =
 {
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html#aca95235be9744b7e5328bffef62c09ca":[5,0,4,2,340,0],
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html#aca95235be9744b7e5328bffef62c09ca":[4,0,8,4,342,0],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html#ad366f882d9f4c24912b72072e2edae2d":[5,0,4,2,340,3],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html#ad366f882d9f4c24912b72072e2edae2d":[4,0,8,4,342,3],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html#add4cf83306c680f4eb763c4eec740cfb":[4,0,8,4,342,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX168 =
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a57aef101e8da79904a4aafce99b2702e":[5,0,4,2,364,6],
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a57aef101e8da79904a4aafce99b2702e":[4,0,8,4,366,6],
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a99bf3690d536cd7da7bdf1cce4ec7baf":[5,0,4,2,364,12],
-"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a99bf3690d536cd7da7bdf1cce4ec7baf":[4,0,8,4,366,12],
-"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#aa507d02b7eed05b93a9ebfcde14028a7":[5,0,4,2,364,9],
-"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#aa507d02b7eed05b93a9ebfcde14028a7":[4,0,8,4,366,9]
+"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a99bf3690d536cd7da7bdf1cce4ec7baf":[4,0,8,4,366,12]
 };

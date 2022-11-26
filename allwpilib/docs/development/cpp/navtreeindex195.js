@@ -1,5 +1,7 @@
 var NAVTREEINDEX195 =
 {
+"structdata.html":[5,0,74],
+"structdefault__arg__formatter.html":[5,0,75],
 "structdefault__arg__formatter.html#a36cffc85932714f47ee362b66095e9e0":[5,0,75,6],
 "structdefault__arg__formatter.html#a7c55fbfae832b0655254a9b5dc47efe8":[5,0,75,0],
 "structdefault__arg__formatter.html#a87dac3079039d85698aa8541cc44a1bd":[5,0,75,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX195 =
 "structdynamic__format__specs.html#a4361aced869a55e14c6eddbcd9fc9849":[5,0,81,1],
 "structerror__handler.html":[5,0,85],
 "structerror__handler.html#a3e09f69bfe8ed9d0309de1215be625c7":[5,0,85,2],
-"structerror__handler.html#a454beb94330b630164d17773037973bb":[5,0,85,0],
-"structerror__handler.html#ad555986b16db2f0f3beca030ef687d06":[5,0,85,1],
-"structfallback__formatter.html":[5,0,87]
+"structerror__handler.html#a454beb94330b630164d17773037973bb":[5,0,85,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX199 =
 {
+"structmake__unsigned__or__bool.html":[5,0,187],
+"structmake__unsigned__or__bool_3_01bool_01_4.html":[5,0,188],
 "structmake__unsigned__or__bool_3_01bool_01_4.html#aaa717db908c1a59247a172d02d38304b":[5,0,188,0],
 "structmake__unsigned__or__unchanged.html":[5,0,189],
 "structmake__unsigned__or__unchanged.html#a1cdb5264b3817c5a8b56d6609f2a66bd":[5,0,189,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX199 =
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a378018ec24318bae2545e573fd198e24":[4,0,22,9,8],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a378018ec24318bae2545e573fd198e24":[5,0,12,9,8],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a427f3210e48539bca5e0d99e28588bb0":[5,0,12,9,24],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a427f3210e48539bca5e0d99e28588bb0":[4,0,22,9,24],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a66f54974a2462fd845b91a1ccaaa27f0":[4,0,22,9,16],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a66f54974a2462fd845b91a1ccaaa27f0":[5,0,12,9,16]
+"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a427f3210e48539bca5e0d99e28588bb0":[4,0,22,9,24]
 };

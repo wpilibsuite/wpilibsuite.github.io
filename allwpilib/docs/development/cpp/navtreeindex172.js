@@ -1,5 +1,7 @@
 var NAVTREEINDEX172 =
 {
+"struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_matrix_xpr_00_01_sparse_01_4.html":[4,0,8,4,562],
+"struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_matrix_xpr_00_01_sparse_01_4.html":[5,0,4,2,560],
 "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_matrix_xpr_00_01_sparse_01_4.html#ac470fe1f432775711644edc7fd42d6e2":[4,0,8,4,562,0],
 "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_matrix_xpr_00_01_sparse_01_4.html#ac470fe1f432775711644edc7fd42d6e2":[5,0,4,2,560,0],
 "struct_eigen_1_1internal_1_1generic__xpr__base_3_01_derived_00_01_xpr_kind_00_01_dense_01_4.html":[4,0,8,4,563],
@@ -247,7 +249,5 @@ var NAVTREEINDEX172 =
 "struct_eigen_1_1internal_1_1indexed__based__stl__iterator__traits_3_01generic__randaccess__stl__146c51368c65146f4d40d1edb19f698a.html#ad9b3659fb8810bb223d4191c7572de58":[5,0,4,2,623,2],
 "struct_eigen_1_1internal_1_1indexed__based__stl__iterator__traits_3_01generic__randaccess__stl__146c51368c65146f4d40d1edb19f698a.html#ad9b3659fb8810bb223d4191c7572de58":[4,0,8,4,625,2],
 "struct_eigen_1_1internal_1_1indexed__based__stl__iterator__traits_3_01subvector__stl__iterator_37819d4a9f8c488ac3a664248f6029e3b.html":[5,0,4,2,624],
-"struct_eigen_1_1internal_1_1indexed__based__stl__iterator__traits_3_01subvector__stl__iterator_37819d4a9f8c488ac3a664248f6029e3b.html":[4,0,8,4,626],
-"struct_eigen_1_1internal_1_1indexed__based__stl__iterator__traits_3_01subvector__stl__iterator_37819d4a9f8c488ac3a664248f6029e3b.html#a4c5472fdd74914ff6805d875b1ad94e7":[5,0,4,2,624,2],
-"struct_eigen_1_1internal_1_1indexed__based__stl__iterator__traits_3_01subvector__stl__iterator_37819d4a9f8c488ac3a664248f6029e3b.html#a4c5472fdd74914ff6805d875b1ad94e7":[4,0,8,4,626,2]
+"struct_eigen_1_1internal_1_1indexed__based__stl__iterator__traits_3_01subvector__stl__iterator_37819d4a9f8c488ac3a664248f6029e3b.html":[4,0,8,4,626]
 };

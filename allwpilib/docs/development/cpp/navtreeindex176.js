@@ -1,5 +1,7 @@
 var NAVTREEINDEX176 =
 {
+"struct_eigen_1_1internal_1_1operator__bitwise__helper.html#aabe4ecda635bda42b03950cb004dfd54":[4,0,8,4,830,2],
+"struct_eigen_1_1internal_1_1operator__bitwise__helper.html#aabe4ecda635bda42b03950cb004dfd54":[5,0,4,2,828,2],
 "struct_eigen_1_1internal_1_1outer__stride__at__compile__time.html":[4,0,8,4,831],
 "struct_eigen_1_1internal_1_1outer__stride__at__compile__time.html":[5,0,4,2,829],
 "struct_eigen_1_1internal_1_1outer__stride__at__compile__time_3_01_derived_00_01false_01_4.html":[4,0,8,4,832],
@@ -247,7 +249,5 @@ var NAVTREEINDEX176 =
 "struct_eigen_1_1internal_1_1permutation__matrix__product_3_01_expression_type_00_01_side_00_01_t20ccd76e9ac5a7579d51cf9e9a5cbb67.html#aec01f5b6941c4fc1848725a833d82de0":[4,0,8,4,874,1],
 "struct_eigen_1_1internal_1_1permutation__matrix__product_3_01_expression_type_00_01_side_00_01_t20ccd76e9ac5a7579d51cf9e9a5cbb67.html#aec01f5b6941c4fc1848725a833d82de0":[5,0,4,2,872,1],
 "struct_eigen_1_1internal_1_1permutation__matrix__product_3_01_expression_type_00_01_side_00_01_t20ccd76e9ac5a7579d51cf9e9a5cbb67.html#aff8eb11a2a810de9e603e9fe5c099443":[5,0,4,2,872,4],
-"struct_eigen_1_1internal_1_1permutation__matrix__product_3_01_expression_type_00_01_side_00_01_t20ccd76e9ac5a7579d51cf9e9a5cbb67.html#aff8eb11a2a810de9e603e9fe5c099443":[4,0,8,4,874,4],
-"struct_eigen_1_1internal_1_1plain__array.html":[5,0,4,2,873],
-"struct_eigen_1_1internal_1_1plain__array.html":[4,0,8,4,875]
+"struct_eigen_1_1internal_1_1permutation__matrix__product_3_01_expression_type_00_01_side_00_01_t20ccd76e9ac5a7579d51cf9e9a5cbb67.html#aff8eb11a2a810de9e603e9fe5c099443":[4,0,8,4,874,4]
 };

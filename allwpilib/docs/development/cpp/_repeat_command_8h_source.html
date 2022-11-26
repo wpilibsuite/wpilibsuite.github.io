@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-17-g7ed9b13</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-21-g148759e</span>
    </div>
   </td>
  </tr>
@@ -165,25 +165,30 @@ $(document).ready(function(){initNavTree('_repeat_command_8h_source.html',''); i
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc2_1_1_repeat_command.html#a3533043d77abaea08e99ea1d5f8b1d83">   70</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc2_1_1_repeat_command.html#a3533043d77abaea08e99ea1d5f8b1d83">RunsWhenDisabled</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  std::unique_ptr&lt;Command&gt; m_command;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace frc2</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#pragma warning(pop)</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classfrc2_1_1_repeat_command.html#a43d2961c295455d0aac6492e9c6aec9c">   72</a></span>  <a class="code hl_enumeration" href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">Command::InterruptionBehavior</a> <a class="code hl_function" href="classfrc2_1_1_repeat_command.html#a43d2961c295455d0aac6492e9c6aec9c">GetInterruptionBehavior</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  std::unique_ptr&lt;Command&gt; m_command;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">bool</span> m_ended;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_command_base_8h_html"><div class="ttname"><a href="_command_base_8h.html">CommandBase.h</a></div></div>
 <div class="ttc" id="a_command_group_base_8h_html"><div class="ttname"><a href="_command_group_base_8h.html">CommandGroupBase.h</a></div></div>
 <div class="ttc" id="a_command_helper_8h_html"><div class="ttname"><a href="_command_helper_8h.html">CommandHelper.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_helper_html"><div class="ttname"><a href="classfrc2_1_1_command_helper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:26</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html_a7d5d23157039a66b8a5fb1967edf0a10"><div class="ttname"><a href="classfrc2_1_1_command.html#a7d5d23157039a66b8a5fb1967edf0a10">frc2::Command::Command</a></div><div class="ttdeci">Command()=default</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_html_ae1917498fac57d1330c27405cdc80c48"><div class="ttname"><a href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">frc2::Command::InterruptionBehavior</a></div><div class="ttdeci">InterruptionBehavior</div><div class="ttdoc">An enum describing the command's behavior when another command with a shared requirement is scheduled...</div><div class="ttdef"><b>Definition:</b> Command.h:105</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html">frc2::RepeatCommand</a></div><div class="ttdoc">A command that runs another command repeatedly, restarting it when it ends, until this command is int...</div><div class="ttdef"><b>Definition:</b> RepeatCommand.h:32</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a0c89a58047538d255123815d23d6f8c5"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a0c89a58047538d255123815d23d6f8c5">frc2::RepeatCommand::RepeatCommand</a></div><div class="ttdeci">RepeatCommand(RepeatCommand &amp;&amp;other)=default</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a1b1c5d481727da27bfdf3aa906ee4823"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a1b1c5d481727da27bfdf3aa906ee4823">frc2::RepeatCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a3171742ef1ebe78c169caeb0dc35fd90"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a3171742ef1ebe78c169caeb0dc35fd90">frc2::RepeatCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a3533043d77abaea08e99ea1d5f8b1d83"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a3533043d77abaea08e99ea1d5f8b1d83">frc2::RepeatCommand::RunsWhenDisabled</a></div><div class="ttdeci">bool RunsWhenDisabled() const override</div><div class="ttdoc">Whether the given command should run when the robot is disabled.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a40186febf6835f8297c297efedd40af6"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a40186febf6835f8297c297efedd40af6">frc2::RepeatCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a43d2961c295455d0aac6492e9c6aec9c"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a43d2961c295455d0aac6492e9c6aec9c">frc2::RepeatCommand::GetInterruptionBehavior</a></div><div class="ttdeci">Command::InterruptionBehavior GetInterruptionBehavior() const override</div><div class="ttdoc">How the command behaves when another command with a shared requirement is scheduled.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a522c36875b73dfd6e78f61541b05d198"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a522c36875b73dfd6e78f61541b05d198">frc2::RepeatCommand::RepeatCommand</a></div><div class="ttdeci">RepeatCommand(const RepeatCommand &amp;other)=delete</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a5ba4af265e4849a6a9e7d6a7476009bd"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a5ba4af265e4849a6a9e7d6a7476009bd">frc2::RepeatCommand::RepeatCommand</a></div><div class="ttdeci">RepeatCommand(RepeatCommand &amp;)=delete</div></div>
 <div class="ttc" id="aclassfrc2_1_1_repeat_command_html_a6c49b55bf61626fa5022cb7db371ffdd"><div class="ttname"><a href="classfrc2_1_1_repeat_command.html#a6c49b55bf61626fa5022cb7db371ffdd">frc2::RepeatCommand::RepeatCommand</a></div><div class="ttdeci">RepeatCommand(std::unique_ptr&lt; Command &gt; &amp;&amp;command)</div><div class="ttdoc">Creates a new RepeatCommand.</div></div>
@@ -199,7 +204,7 @@ $(document).ready(function(){initNavTree('_repeat_command_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_repeat_command_8h.html">RepeatCommand.h</a></li>
-    <li class="footer">Generated on Fri Nov 25 2022 06:13:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Nov 26 2022 07:56:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

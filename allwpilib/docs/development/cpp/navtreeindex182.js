@@ -1,5 +1,7 @@
 var NAVTREEINDEX182 =
 {
+"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#a276ae380835444368edd9e7bab6fb81a":[5,0,4,2,1139,2],
+"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#a276ae380835444368edd9e7bab6fb81a":[4,0,8,4,1141,2],
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#aa4c92580cf3c10157719848b15c6297d":[4,0,8,4,1141,1],
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#aa4c92580cf3c10157719848b15c6297d":[5,0,4,2,1139,1],
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01false_01_4.html#ac7a6fe76e747630758fe3c88904f1836":[5,0,4,2,1139,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX182 =
 "struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01true_00_01is__integer_01_4.html#a0d96e8a708df6bb380fd1f00bb90d17d":[5,0,4,2,1182,0],
 "struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01true_00_01is__integer_01_4.html#a0d96e8a708df6bb380fd1f00bb90d17d":[4,0,8,4,1184,0],
 "struct_eigen_1_1internal_1_1scalar__sin__op.html":[5,0,4,2,1183],
-"struct_eigen_1_1internal_1_1scalar__sin__op.html":[4,0,8,4,1185],
-"struct_eigen_1_1internal_1_1scalar__sin__op.html#ae854606b365690e59e82e853191d28cd":[5,0,4,2,1183,1],
-"struct_eigen_1_1internal_1_1scalar__sin__op.html#ae854606b365690e59e82e853191d28cd":[4,0,8,4,1185,1]
+"struct_eigen_1_1internal_1_1scalar__sin__op.html":[4,0,8,4,1185]
 };

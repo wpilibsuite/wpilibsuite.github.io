@@ -1,5 +1,7 @@
 var NAVTREEINDEX136 =
 {
+"group__ntcore__table__func.html#ga3e772994962a76c1d06161d3f8024cdd":[3,9,1,2],
+"group__ntcore__table__func.html#ga70a9d991624ff61e0d293d3fbd23fa22":[3,9,1,1],
 "group__ntcore__table__func.html#ga71f8d0109c569897f2830a1a07c4ead7":[3,9,1,6],
 "group__ntcore__table__func.html#gaa4e310d5104c2dbcabcbfa0f67a90275":[3,9,1,3],
 "group__ntcore__table__func.html#gaa7988b86534c62bf2ecd812d0a8eb4f6":[3,9,1,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX136 =
 "hal_2src_2main_2native_2include_2hal_2_i2_c_8h_source.html":[6,0,6,30],
 "hal_2src_2main_2native_2include_2hal_2_notifier_8h.html":[6,0,6,34],
 "hal_2src_2main_2native_2include_2hal_2_notifier_8h_source.html":[6,0,6,34],
-"hal_2src_2main_2native_2include_2hal_2_p_w_m_8h.html":[6,0,6,38],
-"hal_2src_2main_2native_2include_2hal_2_p_w_m_8h_source.html":[6,0,6,38],
-"hal_2src_2main_2native_2include_2hal_2_power_8h.html":[6,0,6,36]
+"hal_2src_2main_2native_2include_2hal_2_p_w_m_8h.html":[6,0,6,38]
 };
