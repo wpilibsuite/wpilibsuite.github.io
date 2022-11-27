@@ -597,6 +597,7 @@ var namespacewpi =
     [ "toUpper", "namespacewpi.html#a4fe9106b78ee79e9796550968c3ef216", null ],
     [ "trim", "namespacewpi.html#a4c8e2346d8ddaaaecfd3bc8760d09d9a", null ],
     [ "trim", "namespacewpi.html#a5ddfebd5ca997fb76159b3d79f1a98c9", null ],
+    [ "UnescapeCString", "namespacewpi.html#ab528fd3e2a3f73f3ac2a6ed2177be0a0", null ],
     [ "UnescapeURI", "namespacewpi.html#a55235b8d8fe2b869b11a04237f1c1b5f", null ],
     [ "utohexstr", "namespacewpi.html#ae7da2e15d1e126422095bfbc0e66f1bc", null ],
     [ "wpi_unreachable_internal", "namespacewpi.html#a0a330e37a0f2a3ac6bf2a664ea6d12db", null ],

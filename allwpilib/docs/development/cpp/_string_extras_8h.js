@@ -65,5 +65,6 @@ var _string_extras_8h =
     [ "toUpper", "_string_extras_8h.html#a4fe9106b78ee79e9796550968c3ef216", null ],
     [ "trim", "_string_extras_8h.html#a4c8e2346d8ddaaaecfd3bc8760d09d9a", null ],
     [ "trim", "_string_extras_8h.html#a5ddfebd5ca997fb76159b3d79f1a98c9", null ],
+    [ "UnescapeCString", "_string_extras_8h.html#ab528fd3e2a3f73f3ac2a6ed2177be0a0", null ],
     [ "utohexstr", "_string_extras_8h.html#ae7da2e15d1e126422095bfbc0e66f1bc", null ]
 ];

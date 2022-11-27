@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"_xbox_controller_sim_8h.html":[6,0,3,8,42],
 "_xbox_controller_sim_8h_source.html":[6,0,3,8,42],
 "_xpr_helper_8h.html":[6,0,8,1,0,0,0,1,3,14],
 "_xpr_helper_8h.html#a4363bfa78f2780a0714888ec373b2673":[6,0,8,1,0,0,0,1,3,14,93],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "base_8h.html#ad2faf0f8cb76762e1534a8f35884f8ec":[6,0,11,5,57],
 "base_8h.html#ad4c40cb31fd4fda534f293016693c221":[6,0,11,5,126],
 "base_8h.html#adc650709b31816197530a08cabbd9df2":[6,0,11,5,91],
-"base_8h.html#adcdd7d0eaedc290c7a56b2ce5340175c":[6,0,11,5,50],
-"base_8h.html#add3d43d1395f155226a4c70e33f2e4a2":[6,0,11,5,142]
+"base_8h.html#adcdd7d0eaedc290c7a56b2ce5340175c":[6,0,11,5,50]
 };

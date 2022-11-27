@@ -1,5 +1,7 @@
 var NAVTREEINDEX201 =
 {
+"structunits_1_1traits_1_1is__unit__t.html":[3,32,6],
+"structunits_1_1traits_1_1is__unit__value__t.html":[3,32,10],
 "structunits_1_1traits_1_1is__unit__value__t__category.html":[3,32,11],
 "structunits_1_1unit.html":[3,27,1],
 "structunits_1_1unit.html#a0cdaa6959c83b6ddb1038d99a31e7814":[3,27,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX201 =
 "structview.html":[5,0,306],
 "structwpi_1_1_aligned_char_array_union.html":[5,0,14,15],
 "structwpi_1_1_aligned_char_array_union.html":[4,0,24,16],
-"structwpi_1_1_aligned_char_array_union.html#a6470c0d4f1e56722a193d668a320250f":[4,0,24,16,1],
-"structwpi_1_1_aligned_char_array_union.html#a6470c0d4f1e56722a193d668a320250f":[5,0,14,15,1],
-"structwpi_1_1_aligned_char_array_union.html#abf8ff7602b7b3a397c448a06a189509d":[5,0,14,15,0]
+"structwpi_1_1_aligned_char_array_union.html#a6470c0d4f1e56722a193d668a320250f":[5,0,14,15,1]
 };

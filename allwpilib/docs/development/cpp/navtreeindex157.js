@@ -1,5 +1,7 @@
 var NAVTREEINDEX157 =
 {
+"ranges_8h.html#ae88396df05456f2d386548a9bc4bb66a":[6,0,10,0,0,0,10,38],
+"ranges_8h.html#aeb2cbc0f59eb6ed496738f5e9fa68005":[6,0,10,0,0,0,10,54],
 "ranges_8h_source.html":[6,0,10,0,0,0,10],
 "raw__istream_8h.html":[6,0,13,28],
 "raw__istream_8h_source.html":[6,0,13,28],
@@ -233,21 +235,19 @@ var NAVTREEINDEX157 =
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ae33a724d929f2212615ea61500a7acc9":[4,0,8,142,3],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html":[4,0,8,145],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html":[5,0,4,142],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a06d6a8340d99cd55e74f161b89ab0f35":[5,0,4,142,2],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a06d6a8340d99cd55e74f161b89ab0f35":[4,0,8,145,2],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a5e1aaf257dde09a236c2aaec48febbe0":[5,0,4,142,4],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a06d6a8340d99cd55e74f161b89ab0f35":[5,0,4,142,2],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a5e1aaf257dde09a236c2aaec48febbe0":[4,0,8,145,4],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a6057a5322cbb37c5541f445f639c3984":[5,0,4,142,3],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a5e1aaf257dde09a236c2aaec48febbe0":[5,0,4,142,4],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a6057a5322cbb37c5541f445f639c3984":[4,0,8,145,3],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a6057a5322cbb37c5541f445f639c3984":[5,0,4,142,3],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#ac2d4700de7b9dcd85b8eb4aca7b16a17":[4,0,8,145,5],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#ac2d4700de7b9dcd85b8eb4aca7b16a17":[5,0,4,142,5],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#af7851ea6e2501e54198b9e91cba9f93f":[4,0,8,145,0],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#af7851ea6e2501e54198b9e91cba9f93f":[5,0,4,142,0],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#aff1c39d2050bba03dfe3b846c30bb501":[4,0,8,145,1],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#aff1c39d2050bba03dfe3b846c30bb501":[5,0,4,142,1],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html":[4,0,8,146],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#aff1c39d2050bba03dfe3b846c30bb501":[4,0,8,145,1],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html":[5,0,4,143],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#a1917a6e176cb11a2a149bde1fc452f36":[5,0,4,143,1],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#a1917a6e176cb11a2a149bde1fc452f36":[4,0,8,146,1],
-"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#a41d472ed4e4c33d94ad1cb8149be8464":[5,0,4,143,3]
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html":[4,0,8,146],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1half_01_4.html#a1917a6e176cb11a2a149bde1fc452f36":[5,0,4,143,1]
 };
