@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"_generic_packet_math_8h.html#aeb4feddd9334c4ddff94450e2f19e96c":[6,0,8,1,0,0,0,1,33,47],
+"_generic_packet_math_8h.html#aeb7a48085d0438a3a8e8aa297a1093cd":[6,0,8,1,0,0,0,1,33,70],
+"_generic_packet_math_8h.html#aee419455c26d707fd42fe49c7212b9ce":[6,0,8,1,0,0,0,1,33,76],
+"_generic_packet_math_8h.html#aefe2e122ecae69e814e7709daf2529b3":[6,0,8,1,0,0,0,1,33,95],
+"_generic_packet_math_8h.html#af09888aebeb61a934e0d861356f404be":[6,0,8,1,0,0,0,1,33,100],
+"_generic_packet_math_8h.html#af0d93efd1718510bd216388a89d1e5d4":[6,0,8,1,0,0,0,1,33,42],
 "_generic_packet_math_8h.html#af59e2fabb53b7f974b73600f083c77ca":[6,0,8,1,0,0,0,1,33,97],
 "_generic_packet_math_8h.html#af761ddfbce019c99cf4a481d0d007946":[6,0,8,1,0,0,0,1,33,69],
 "_generic_packet_math_8h.html#afa6f9a9f3c905b28cc29841935e44fdb":[6,0,8,1,0,0,0,1,33,121],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "_http_util_8h_source.html":[6,0,15,7],
 "_http_util_8inc.html":[6,0,15,8],
 "_http_util_8inc.html#afd6bf4a6a2999b2f755340eddcc0afa2":[6,0,15,8,0],
-"_http_web_socket_server_connection_8h.html":[6,0,15,9],
-"_http_web_socket_server_connection_8h_source.html":[6,0,15,9],
-"_http_web_socket_server_connection_8inc.html":[6,0,15,10],
-"_http_web_socket_server_connection_8inc.html#af92a27c472f9643dfd997d32434f7bcd":[6,0,15,10,0],
-"_i2_c_data_8h.html":[6,0,6,3,13],
-"_i2_c_data_8h.html#a040ff2b53aa68402c5cb7cb5776a47b8":[6,0,6,3,13,1],
-"_i2_c_data_8h.html#a3a9a37289b11e5eaa16b96a6cc1844be":[6,0,6,3,13,3]
+"_http_web_socket_server_connection_8h.html":[6,0,15,9]
 };

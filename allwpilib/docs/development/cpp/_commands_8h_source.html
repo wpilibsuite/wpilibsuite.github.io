@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-26-g51fa3e8</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-27-gf40de0c</span>
    </div>
   </td>
  </tr>
@@ -262,39 +262,100 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">// Command Groups</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"></span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"> * Runs a group of commands in series, one after the other.</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">  173</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">Sequence</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment"></span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment"> * Runs a group of commands in series, one after the other. Once the last</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"> * command ends, the group is restarted.</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">  179</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">RepeatingSequence</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"></span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment"> * Runs a group of commands at the same time. Ends once all commands in the</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment"> * group finish.</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">  185</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">Parallel</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"></span> </div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"> * Runs a group of commands at the same time. Ends once any command in the group</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"> * finishes, and cancels the others.</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">  191</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">Race</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"></span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> * Runs a group of commands at the same time. Ends once a specific command</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"> * finishes, and cancels the others.</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">  197</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">Deadline</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; deadline,</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                                  std::vector&lt;CommandPtr&gt;&amp;&amp; others);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}  <span class="comment">// namespace cmd</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd_1_1impl.html">  170</a></span><span class="keyword">namespace </span>impl {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment"></span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment"> * Create a vector of commands.</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">  176</a></span>std::vector&lt;CommandPtr&gt; <a class="code hl_function" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">MakeVector</a>(Args&amp;&amp;... args) {</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  std::vector&lt;CommandPtr&gt; <a class="code hl_struct" href="structdata.html">data</a>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <a class="code hl_struct" href="structdata.html">data</a>.reserve(<span class="keyword">sizeof</span>...(Args));</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  (<a class="code hl_struct" href="structdata.html">data</a>.emplace_back(std::forward&lt;Args&gt;(args)), ...);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="structdata.html">data</a>;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>}</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}  <span class="comment">// namespace impl</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment"></span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment"> * Runs a group of commands in series, one after the other.</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">  188</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">Sequence</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"></span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"> * Runs a group of commands in series, one after the other.</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a2818c000b0b989bc66032847ecb3fed2">  194</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">Sequence</a>(Args&amp;&amp;... commands) {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">Sequence</a>(<a class="code hl_function" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">impl::MakeVector</a>(std::forward&lt;Args&gt;(commands)...));</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"></span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"> * Runs a group of commands in series, one after the other. Once the last</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"> * command ends, the group is restarted.</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">  202</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">RepeatingSequence</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"></span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"> * Runs a group of commands in series, one after the other. Once the last</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"> * command ends, the group is restarted.</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#ae363301748047f753dcbe3eca0a10ced">  209</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">RepeatingSequence</a>(Args&amp;&amp;... commands) {</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">RepeatingSequence</a>(<a class="code hl_function" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">impl::MakeVector</a>(std::forward&lt;Args&gt;(commands)...));</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>}</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment"></span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment"> * Runs a group of commands at the same time. Ends once all commands in the</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment"> * group finish.</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">  217</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">Parallel</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment"></span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment"> * Runs a group of commands at the same time. Ends once all commands in the</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment"> * group finish.</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a0ea0faa5d66fbe942917844936687172">  224</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">Parallel</a>(Args&amp;&amp;... commands) {</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">Parallel</a>(<a class="code hl_function" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">impl::MakeVector</a>(std::forward&lt;Args&gt;(commands)...));</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>}</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment"></span> </div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment"> * Runs a group of commands at the same time. Ends once any command in the group</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment"> * finishes, and cancels the others.</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">  232</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">Race</a>(std::vector&lt;CommandPtr&gt;&amp;&amp; commands);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment"></span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment"> * Runs a group of commands at the same time. Ends once any command in the group</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment"> * finishes, and cancels the others.</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a3455ac77f921f355edae8baeb911ef40">  239</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">Race</a>(Args&amp;&amp;... commands) {</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">Race</a>(<a class="code hl_function" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">impl::MakeVector</a>(std::forward&lt;Args&gt;(commands)...));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>}</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment"></span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="comment"> * Runs a group of commands at the same time. Ends once a specific command</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment"> * finishes, and cancels the others.</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">  247</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">Deadline</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; deadline,</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>                                  std::vector&lt;CommandPtr&gt;&amp;&amp; others);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment"></span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment"> * Runs a group of commands at the same time. Ends once a specific command</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment"> * finishes, and cancels the others.</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="namespacefrc2_1_1cmd.html#aad22f6f92f4dbbe7b5736e0e39e00184">  255</a></span>[[nodiscard]] <a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">Deadline</a>(<a class="code hl_class" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&amp;&amp; deadline, Args&amp;&amp;... commands) {</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">Deadline</a>(std::move(deadline),</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                  <a class="code hl_function" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">impl::MakeVector</a>(std::forward&lt;Args&gt;(commands)...));</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>}</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}  <span class="comment">// namespace cmd</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_command_ptr_8h_html"><div class="ttname"><a href="_command_ptr_8h.html">CommandPtr.h</a></div></div>
 <div class="ttc" id="a_select_command_8h_html"><div class="ttname"><a href="_select_command_8h.html">SelectCommand.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_helper_html_ad0575f649ed4a562db63dc30fa33e80a"><div class="ttname"><a href="classfrc2_1_1_command_helper.html#ad0575f649ed4a562db63dc30fa33e80a">frc2::CommandHelper::ToPtr</a></div><div class="ttdeci">CommandPtr ToPtr() &amp;&amp;override</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:32</div></div>
@@ -303,6 +364,7 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div class="ttc" id="aclassfrc2_1_1_select_command_html"><div class="ttname"><a href="classfrc2_1_1_select_command.html">frc2::SelectCommand</a></div><div class="ttdoc">Runs one of a selection of commands, either using a selector and a key to command mapping,...</div><div class="ttdef"><b>Definition:</b> SelectCommand.h:42</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:520</div></div>
 <div class="ttc" id="anamespace_eigen_1_1placeholders_html_a24a00ff0f09137dcde6952ff29fb9f9d"><div class="ttname"><a href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">Eigen::placeholders::end</a></div><div class="ttdeci">static EIGEN_DEPRECATED const end_t end</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:181</div></div>
+<div class="ttc" id="anamespacefrc2_1_1cmd_1_1impl_html_aeecdbff35c74d96946d439c6a47fcd68"><div class="ttname"><a href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">frc2::cmd::impl::MakeVector</a></div><div class="ttdeci">std::vector&lt; CommandPtr &gt; MakeVector(Args &amp;&amp;... args)</div><div class="ttdoc">Create a vector of commands.</div><div class="ttdef"><b>Definition:</b> Commands.h:176</div></div>
 <div class="ttc" id="anamespacefrc2_1_1cmd_html_a136f83c2c7f8fdc6b80a321914308cd8"><div class="ttname"><a href="namespacefrc2_1_1cmd.html#a136f83c2c7f8fdc6b80a321914308cd8">frc2::cmd::Run</a></div><div class="ttdeci">CommandPtr Run(std::function&lt; void()&gt; action, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Constructs a command that runs an action every iteration until interrupted.</div></div>
 <div class="ttc" id="anamespacefrc2_1_1cmd_html_a14d4a24d412b0ae59435c90ab34ca906"><div class="ttname"><a href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">frc2::cmd::Deadline</a></div><div class="ttdeci">CommandPtr Deadline(CommandPtr &amp;&amp;deadline, std::vector&lt; CommandPtr &gt; &amp;&amp;others)</div><div class="ttdoc">Runs a group of commands at the same time.</div></div>
 <div class="ttc" id="anamespacefrc2_1_1cmd_html_a2cb30991d742d1c9115fe098d3c52efa"><div class="ttname"><a href="namespacefrc2_1_1cmd.html#a2cb30991d742d1c9115fe098d3c52efa">frc2::cmd::WaitUntil</a></div><div class="ttdeci">CommandPtr WaitUntil(std::function&lt; bool()&gt; condition)</div><div class="ttdoc">Constructs a command that does nothing, finishing once a command becomes true.</div></div>
@@ -319,13 +381,14 @@ $(document).ready(function(){initNavTree('_commands_8h_source.html',''); initRes
 <div class="ttc" id="anamespacefrc2_1_1cmd_html_ae240e65406a7bdffa5ce7f1166128401"><div class="ttname"><a href="namespacefrc2_1_1cmd.html#ae240e65406a7bdffa5ce7f1166128401">frc2::cmd::RunOnce</a></div><div class="ttdeci">CommandPtr RunOnce(std::function&lt; void()&gt; action, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Constructs a command that runs an action once and finishes.</div></div>
 <div class="ttc" id="anamespacefrc2_1_1cmd_html_aef6d71c6173f786516fe3671c40af603"><div class="ttname"><a href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">frc2::cmd::Race</a></div><div class="ttdeci">CommandPtr Race(std::vector&lt; CommandPtr &gt; &amp;&amp;commands)</div><div class="ttdoc">Runs a group of commands at the same time.</div></div>
 <div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:1544</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_commands_8h.html">Commands.h</a></li>
-    <li class="footer">Generated on Sun Nov 27 2022 07:08:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Nov 27 2022 19:30:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

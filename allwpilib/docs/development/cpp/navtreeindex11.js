@@ -1,5 +1,11 @@
 var NAVTREEINDEX11 =
 {
+"_math_functions_8h.html#abac0da1e999e0f1bda99ef3c90eb8cb0":[6,0,8,1,0,0,0,1,40,104],
+"_math_functions_8h.html#ac09cd9261a50a46dd4937868020c7c45":[6,0,8,1,0,0,0,1,40,86],
+"_math_functions_8h.html#ac7ea6bc9ae520ddba4114982fc587ffc":[6,0,8,1,0,0,0,1,40,132],
+"_math_functions_8h.html#ad09350f823b13ad700a58ffecc99cab9":[6,0,8,1,0,0,0,1,40,141],
+"_math_functions_8h.html#ad59216129a430099e97b4c4b1e2f2984":[6,0,8,1,0,0,0,1,40,88],
+"_math_functions_8h.html#ad7a90176816bfd3586bb9e84c5edd704":[6,0,8,1,0,0,0,1,40,149],
 "_math_functions_8h.html#ada0735789a38ad1f87335b86bede1280":[6,0,8,1,0,0,0,1,40,89],
 "_math_functions_8h.html#ada2d113db7694e2e21548f60988a3385":[6,0,8,1,0,0,0,1,40,150],
 "_math_functions_8h.html#ade382aafbf0886b96f1624e2261a9330":[6,0,8,1,0,0,0,1,40,87],
@@ -243,11 +249,5 @@ var NAVTREEINDEX11 =
 "_mime_types_8h_source.html":[6,0,15,11],
 "_mock_hooks_8h.html":[6,0,6,3,14],
 "_mock_hooks_8h.html#a00476d77d12a0bc51e5cc3d13da4a347":[6,0,6,3,14,0],
-"_mock_hooks_8h.html#a05941019c795c73f9c840c40d4da5a06":[6,0,6,3,14,17],
-"_mock_hooks_8h.html#a0d2a43cdf4b63370952ec9df78bed986":[6,0,6,3,14,7],
-"_mock_hooks_8h.html#a1498351dd7427b2eb5ba34271b9f509f":[6,0,6,3,14,19],
-"_mock_hooks_8h.html#a171010d1a59ce8305c3ee1871f44b363":[6,0,6,3,14,10],
-"_mock_hooks_8h.html#a2f4a269636df25efb147b3ea4649a8b2":[6,0,6,3,14,15],
-"_mock_hooks_8h.html#a3d51d50d5557d59504847373d70016aa":[6,0,6,3,14,18],
-"_mock_hooks_8h.html#a59a202421a946810c149c2716333deb2":[6,0,6,3,14,6]
+"_mock_hooks_8h.html#a05941019c795c73f9c840c40d4da5a06":[6,0,6,3,14,17]
 };

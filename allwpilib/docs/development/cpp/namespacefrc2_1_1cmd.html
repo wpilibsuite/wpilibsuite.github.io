@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-26-g51fa3e8</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-27-gf40de0c</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('namespacefrc2_1_1cmd.html',''); initRe
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">frc2::cmd Namespace Reference</div></div>
 </div><!--header-->
@@ -100,6 +101,11 @@ $(document).ready(function(){initNavTree('namespacefrc2_1_1cmd.html',''); initRe
 <p>Namespace for command factories.  
 <a href="namespacefrc2_1_1cmd.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacefrc2_1_1cmd_1_1impl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd_1_1impl.html">impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a50c79a838105b483a423860251253c79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a50c79a838105b483a423860251253c79">None</a> ()</td></tr>
@@ -148,24 +154,77 @@ Functions</h2></td></tr>
 <tr class="memitem:a80cc7bc3c089ef7e304cda3d4d506be1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">Sequence</a> (std::vector&lt; <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:a80cc7bc3c089ef7e304cda3d4d506be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">More...</a><br /></td></tr>
 <tr class="separator:a80cc7bc3c089ef7e304cda3d4d506be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2818c000b0b989bc66032847ecb3fed2"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a2818c000b0b989bc66032847ecb3fed2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a2818c000b0b989bc66032847ecb3fed2">Sequence</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:a2818c000b0b989bc66032847ecb3fed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#a2818c000b0b989bc66032847ecb3fed2">More...</a><br /></td></tr>
+<tr class="separator:a2818c000b0b989bc66032847ecb3fed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c69738270860fe5d35a975682047723"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">RepeatingSequence</a> (std::vector&lt; <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:a7c69738270860fe5d35a975682047723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">More...</a><br /></td></tr>
 <tr class="separator:a7c69738270860fe5d35a975682047723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae363301748047f753dcbe3eca0a10ced"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ae363301748047f753dcbe3eca0a10ced"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#ae363301748047f753dcbe3eca0a10ced">RepeatingSequence</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:ae363301748047f753dcbe3eca0a10ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#ae363301748047f753dcbe3eca0a10ced">More...</a><br /></td></tr>
+<tr class="separator:ae363301748047f753dcbe3eca0a10ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7af603ae204876e1f07e4360e5ba1414"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">Parallel</a> (std::vector&lt; <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:a7af603ae204876e1f07e4360e5ba1414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">More...</a><br /></td></tr>
 <tr class="separator:a7af603ae204876e1f07e4360e5ba1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea0faa5d66fbe942917844936687172"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a0ea0faa5d66fbe942917844936687172"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a0ea0faa5d66fbe942917844936687172">Parallel</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:a0ea0faa5d66fbe942917844936687172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a0ea0faa5d66fbe942917844936687172">More...</a><br /></td></tr>
+<tr class="separator:a0ea0faa5d66fbe942917844936687172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6d71c6173f786516fe3671c40af603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">Race</a> (std::vector&lt; <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:aef6d71c6173f786516fe3671c40af603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">More...</a><br /></td></tr>
 <tr class="separator:aef6d71c6173f786516fe3671c40af603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3455ac77f921f355edae8baeb911ef40"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a3455ac77f921f355edae8baeb911ef40"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a3455ac77f921f355edae8baeb911ef40">Race</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:a3455ac77f921f355edae8baeb911ef40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a3455ac77f921f355edae8baeb911ef40">More...</a><br /></td></tr>
+<tr class="separator:a3455ac77f921f355edae8baeb911ef40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d4a24d412b0ae59435c90ab34ca906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">Deadline</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;deadline, std::vector&lt; <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &gt; &amp;&amp;others)</td></tr>
 <tr class="memdesc:a14d4a24d412b0ae59435c90ab34ca906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">More...</a><br /></td></tr>
 <tr class="separator:a14d4a24d412b0ae59435c90ab34ca906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#aad22f6f92f4dbbe7b5736e0e39e00184">Deadline</a> (<a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;deadline, Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#aad22f6f92f4dbbe7b5736e0e39e00184">More...</a><br /></td></tr>
+<tr class="separator:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Namespace for command factories. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="aad22f6f92f4dbbe7b5736e0e39e00184" name="aad22f6f92f4dbbe7b5736e0e39e00184"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad22f6f92f4dbbe7b5736e0e39e00184">&#9670;&nbsp;</a></span>Deadline() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::cmd::Deadline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>deadline</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>commands</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs a group of commands at the same time. </p>
+<p >Ends once a specific command finishes, and cancels the others. </p>
+
+</div>
+</div>
 <a id="a14d4a24d412b0ae59435c90ab34ca906" name="a14d4a24d412b0ae59435c90ab34ca906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14d4a24d412b0ae59435c90ab34ca906">&#9670;&nbsp;</a></span>Deadline()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d4a24d412b0ae59435c90ab34ca906">&#9670;&nbsp;</a></span>Deadline() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,8 +317,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0ea0faa5d66fbe942917844936687172" name="a0ea0faa5d66fbe942917844936687172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ea0faa5d66fbe942917844936687172">&#9670;&nbsp;</a></span>Parallel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::cmd::Parallel </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>commands</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs a group of commands at the same time. </p>
+<p >Ends once all commands in the group finish. </p>
+
+</div>
+</div>
 <a id="a7af603ae204876e1f07e4360e5ba1414" name="a7af603ae204876e1f07e4360e5ba1414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7af603ae204876e1f07e4360e5ba1414">&#9670;&nbsp;</a></span>Parallel()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af603ae204876e1f07e4360e5ba1414">&#9670;&nbsp;</a></span>Parallel() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,8 +387,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3455ac77f921f355edae8baeb911ef40" name="a3455ac77f921f355edae8baeb911ef40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3455ac77f921f355edae8baeb911ef40">&#9670;&nbsp;</a></span>Race() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::cmd::Race </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>commands</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs a group of commands at the same time. </p>
+<p >Ends once any command in the group finishes, and cancels the others. </p>
+
+</div>
+</div>
 <a id="aef6d71c6173f786516fe3671c40af603" name="aef6d71c6173f786516fe3671c40af603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6d71c6173f786516fe3671c40af603">&#9670;&nbsp;</a></span>Race()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6d71c6173f786516fe3671c40af603">&#9670;&nbsp;</a></span>Race() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,8 +431,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae363301748047f753dcbe3eca0a10ced" name="ae363301748047f753dcbe3eca0a10ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae363301748047f753dcbe3eca0a10ced">&#9670;&nbsp;</a></span>RepeatingSequence() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::cmd::RepeatingSequence </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>commands</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs a group of commands in series, one after the other. </p>
+<p >Once the last command ends, the group is restarted. </p>
+
+</div>
+</div>
 <a id="a7c69738270860fe5d35a975682047723" name="a7c69738270860fe5d35a975682047723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c69738270860fe5d35a975682047723">&#9670;&nbsp;</a></span>RepeatingSequence()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c69738270860fe5d35a975682047723">&#9670;&nbsp;</a></span>RepeatingSequence() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,8 +750,30 @@ template&lt;typename Key &gt; </div>
 
 </div>
 </div>
+<a id="a2818c000b0b989bc66032847ecb3fed2" name="a2818c000b0b989bc66032847ecb3fed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2818c000b0b989bc66032847ecb3fed2">&#9670;&nbsp;</a></span>Sequence() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::cmd::Sequence </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>commands</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs a group of commands in series, one after the other. </p>
+
+</div>
+</div>
 <a id="a80cc7bc3c089ef7e304cda3d4d506be1" name="a80cc7bc3c089ef7e304cda3d4d506be1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80cc7bc3c089ef7e304cda3d4d506be1">&#9670;&nbsp;</a></span>Sequence()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a80cc7bc3c089ef7e304cda3d4d506be1">&#9670;&nbsp;</a></span>Sequence() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -788,7 +938,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="namespacefrc2_1_1cmd.html">cmd</a></li>
-    <li class="footer">Generated on Sun Nov 27 2022 07:09:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Nov 27 2022 19:30:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

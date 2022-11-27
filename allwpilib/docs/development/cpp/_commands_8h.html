@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-26-g51fa3e8</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-27-gf40de0c</span>
    </div>
   </td>
  </tr>
@@ -115,6 +115,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacefrc2_1_1cmd"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html">frc2::cmd</a></td></tr>
 <tr class="memdesc:namespacefrc2_1_1cmd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for command factories. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacefrc2_1_1cmd_1_1impl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd_1_1impl.html">frc2::cmd::impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -161,21 +163,45 @@ Functions</h2></td></tr>
 <tr class="memitem:a56f9a9c571bd9da0a0b4612706d8db1c"><td class="memTemplItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a56f9a9c571bd9da0a0b4612706d8db1c">frc2::cmd::Select</a> (std::function&lt; Key()&gt; selector, std::vector&lt; std::pair&lt; Key, CommandPtr &gt; &gt; commands)</td></tr>
 <tr class="memdesc:a56f9a9c571bd9da0a0b4612706d8db1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs one of several commands, based on the selector function.  <a href="namespacefrc2_1_1cmd.html#a56f9a9c571bd9da0a0b4612706d8db1c">More...</a><br /></td></tr>
 <tr class="separator:a56f9a9c571bd9da0a0b4612706d8db1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeecdbff35c74d96946d439c6a47fcd68"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aeecdbff35c74d96946d439c6a47fcd68"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; CommandPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">frc2::cmd::impl::MakeVector</a> (Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aeecdbff35c74d96946d439c6a47fcd68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a vector of commands.  <a href="namespacefrc2_1_1cmd_1_1impl.html#aeecdbff35c74d96946d439c6a47fcd68">More...</a><br /></td></tr>
+<tr class="separator:aeecdbff35c74d96946d439c6a47fcd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80cc7bc3c089ef7e304cda3d4d506be1"><td class="memItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">frc2::cmd::Sequence</a> (std::vector&lt; CommandPtr &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:a80cc7bc3c089ef7e304cda3d4d506be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#a80cc7bc3c089ef7e304cda3d4d506be1">More...</a><br /></td></tr>
 <tr class="separator:a80cc7bc3c089ef7e304cda3d4d506be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2818c000b0b989bc66032847ecb3fed2"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a2818c000b0b989bc66032847ecb3fed2"><td class="memTemplItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a2818c000b0b989bc66032847ecb3fed2">frc2::cmd::Sequence</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:a2818c000b0b989bc66032847ecb3fed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#a2818c000b0b989bc66032847ecb3fed2">More...</a><br /></td></tr>
+<tr class="separator:a2818c000b0b989bc66032847ecb3fed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c69738270860fe5d35a975682047723"><td class="memItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">frc2::cmd::RepeatingSequence</a> (std::vector&lt; CommandPtr &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:a7c69738270860fe5d35a975682047723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#a7c69738270860fe5d35a975682047723">More...</a><br /></td></tr>
 <tr class="separator:a7c69738270860fe5d35a975682047723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae363301748047f753dcbe3eca0a10ced"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ae363301748047f753dcbe3eca0a10ced"><td class="memTemplItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#ae363301748047f753dcbe3eca0a10ced">frc2::cmd::RepeatingSequence</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:ae363301748047f753dcbe3eca0a10ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands in series, one after the other.  <a href="namespacefrc2_1_1cmd.html#ae363301748047f753dcbe3eca0a10ced">More...</a><br /></td></tr>
+<tr class="separator:ae363301748047f753dcbe3eca0a10ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7af603ae204876e1f07e4360e5ba1414"><td class="memItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">frc2::cmd::Parallel</a> (std::vector&lt; CommandPtr &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:a7af603ae204876e1f07e4360e5ba1414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a7af603ae204876e1f07e4360e5ba1414">More...</a><br /></td></tr>
 <tr class="separator:a7af603ae204876e1f07e4360e5ba1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea0faa5d66fbe942917844936687172"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a0ea0faa5d66fbe942917844936687172"><td class="memTemplItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a0ea0faa5d66fbe942917844936687172">frc2::cmd::Parallel</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:a0ea0faa5d66fbe942917844936687172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a0ea0faa5d66fbe942917844936687172">More...</a><br /></td></tr>
+<tr class="separator:a0ea0faa5d66fbe942917844936687172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef6d71c6173f786516fe3671c40af603"><td class="memItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">frc2::cmd::Race</a> (std::vector&lt; CommandPtr &gt; &amp;&amp;commands)</td></tr>
 <tr class="memdesc:aef6d71c6173f786516fe3671c40af603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#aef6d71c6173f786516fe3671c40af603">More...</a><br /></td></tr>
 <tr class="separator:aef6d71c6173f786516fe3671c40af603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3455ac77f921f355edae8baeb911ef40"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a3455ac77f921f355edae8baeb911ef40"><td class="memTemplItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a3455ac77f921f355edae8baeb911ef40">frc2::cmd::Race</a> (Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:a3455ac77f921f355edae8baeb911ef40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a3455ac77f921f355edae8baeb911ef40">More...</a><br /></td></tr>
+<tr class="separator:a3455ac77f921f355edae8baeb911ef40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d4a24d412b0ae59435c90ab34ca906"><td class="memItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">frc2::cmd::Deadline</a> (CommandPtr &amp;&amp;deadline, std::vector&lt; CommandPtr &gt; &amp;&amp;others)</td></tr>
 <tr class="memdesc:a14d4a24d412b0ae59435c90ab34ca906"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#a14d4a24d412b0ae59435c90ab34ca906">More...</a><br /></td></tr>
 <tr class="separator:a14d4a24d412b0ae59435c90ab34ca906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="memTemplItemLeft" align="right" valign="top">CommandPtr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc2_1_1cmd.html#aad22f6f92f4dbbe7b5736e0e39e00184">frc2::cmd::Deadline</a> (CommandPtr &amp;&amp;deadline, Args &amp;&amp;... commands)</td></tr>
+<tr class="memdesc:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a group of commands at the same time.  <a href="namespacefrc2_1_1cmd.html#aad22f6f92f4dbbe7b5736e0e39e00184">More...</a><br /></td></tr>
+<tr class="separator:aad22f6f92f4dbbe7b5736e0e39e00184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -183,7 +209,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_commands_8h.html">Commands.h</a></li>
-    <li class="footer">Generated on Sun Nov 27 2022 07:09:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sun Nov 27 2022 19:30:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
