@@ -1,5 +1,11 @@
 var NAVTREEINDEX158 =
 {
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a2424310bbf6d8d20521d6a8c79324981":[5,0,4,139,2],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a2424310bbf6d8d20521d6a8c79324981":[4,0,8,142,2],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4724a5585f6b9bb8b5b3bdce7de6f3bd":[5,0,4,139,4],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4724a5585f6b9bb8b5b3bdce7de6f3bd":[4,0,8,142,4],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4b36f130a9f51f5012d2630ca70431d7":[5,0,4,139,5],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4b36f130a9f51f5012d2630ca70431d7":[4,0,8,142,5],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#aa65515eccc2c3f0f88080835c975fbc2":[5,0,4,139,0],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#aa65515eccc2c3f0f88080835c975fbc2":[4,0,8,142,0],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ac42a505b6455600139fa25a967de04d6":[4,0,8,142,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX158 =
 "struct_eigen_1_1_vectorwise_op_1_1_extended_type.html#a63e1778bf0805454e1b1d4b6fabdb167":[3,42,24,0,0],
 "struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html":[3,42,24,1],
 "struct_eigen_1_1_vectorwise_op_1_1_lp_norm_return_type.html#a5eaeed5c697de62f5d5f55bf0a0371cc":[3,42,24,1,0],
-"struct_eigen_1_1_vectorwise_op_1_1_opposite_extended_type.html":[3,42,24,2],
-"struct_eigen_1_1_vectorwise_op_1_1_opposite_extended_type.html#a76d7744eef659dd1578fe35fc8e3692b":[3,42,24,2,0],
-"struct_eigen_1_1_vectorwise_op_1_1_redux_return_type.html":[3,42,24,3],
-"struct_eigen_1_1_vectorwise_op_1_1_redux_return_type.html#a39c1f3a1be03b63e1a87c4da765c3b66":[3,42,24,3,0],
-"struct_eigen_1_1_vectorwise_op_1_1_return_type.html":[3,42,24,4],
-"struct_eigen_1_1_vectorwise_op_1_1_return_type.html#a9f3d15c0543c7b6d3e6ab4b6e08bb71d":[3,42,24,4,0],
-"struct_eigen_1_1aligned__allocator_1_1rebind.html":[3,42,58,0]
+"struct_eigen_1_1_vectorwise_op_1_1_opposite_extended_type.html":[3,42,24,2]
 };

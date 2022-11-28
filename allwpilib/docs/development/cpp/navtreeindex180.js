@@ -1,5 +1,11 @@
 var NAVTREEINDEX180 =
 {
+"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#a58a759d1cb8a37dac28d5527633f4243":[4,0,8,4,1028,2],
+"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#abf087de6edd140d83065a034c966b97c":[5,0,4,2,1026,0],
+"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#abf087de6edd140d83065a034c966b97c":[4,0,8,4,1028,0],
+"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#ac4f8bd935f232fd5eeb937f06a9ba958":[5,0,4,2,1026,1],
+"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#ac4f8bd935f232fd5eeb937f06a9ba958":[4,0,8,4,1028,1],
+"struct_eigen_1_1internal_1_1redux__novec__unroller.html":[4,0,8,4,1029],
 "struct_eigen_1_1internal_1_1redux__novec__unroller.html":[5,0,4,2,1027],
 "struct_eigen_1_1internal_1_1redux__novec__unroller.html#a78c78e0ae6f7be49566b4a207b08393d":[5,0,4,2,1027,0],
 "struct_eigen_1_1internal_1_1redux__novec__unroller.html#a78c78e0ae6f7be49566b4a207b08393d":[4,0,8,4,1029,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX180 =
 "struct_eigen_1_1internal_1_1scalar__abs2__op.html#a7f0176339ccb73b9ea97a8871237f5c6":[4,0,8,4,1080,1],
 "struct_eigen_1_1internal_1_1scalar__abs2__op.html#a8a20e6a78a8d74957a7d93c124f7714d":[5,0,4,2,1078,0],
 "struct_eigen_1_1internal_1_1scalar__abs2__op.html#a8a20e6a78a8d74957a7d93c124f7714d":[4,0,8,4,1080,0],
-"struct_eigen_1_1internal_1_1scalar__abs2__op.html#aa33487affb7a7b6395ba0c475c0e548e":[4,0,8,4,1080,2],
-"struct_eigen_1_1internal_1_1scalar__abs2__op.html#aa33487affb7a7b6395ba0c475c0e548e":[5,0,4,2,1078,2],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html":[5,0,4,2,1079],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html":[4,0,8,4,1081],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[4,0,8,4,1081,0],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[5,0,4,2,1079,0],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a2e1557e18aea6d7b6a9b4b2cead03037":[4,0,8,4,1081,1]
+"struct_eigen_1_1internal_1_1scalar__abs2__op.html#aa33487affb7a7b6395ba0c475c0e548e":[4,0,8,4,1080,2]
 };

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-29-g8958b2a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-30-gffbfc61</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('classnt_1_1_network_table.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -107,6 +108,15 @@ $(document).ready(function(){initNavTree('classnt_1_1_network_table.html',''); i
 
 <p><code>#include &lt;<a class="el" href="_network_table_8h_source.html">networktables/NetworkTable.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a62e6ba710645c2511b181afd2b0d039a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#a62e6ba710645c2511b181afd2b0d039a">TableEventListener</a> = std::function&lt; void(<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a> *table, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, const <a class="el" href="classnt_1_1_event.html">Event</a> &amp;event)&gt;</td></tr>
+<tr class="memdesc:a62e6ba710645c2511b181afd2b0d039a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when an event occurs on a topic in a <code><a class="el" href="classnt_1_1_network_table.html">NetworkTable</a></code>.  <a href="classnt_1_1_network_table.html#a62e6ba710645c2511b181afd2b0d039a">More...</a><br /></td></tr>
+<tr class="separator:a62e6ba710645c2511b181afd2b0d039a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b4da2b3c2247f03a5c0ae05f91ab31"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#a61b4da2b3c2247f03a5c0ae05f91ab31">SubTableListener</a> = std::function&lt; void(<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a> *parent, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, std::shared_ptr&lt; <a class="el" href="classnt_1_1_network_table.html">NetworkTable</a> &gt; table)&gt;</td></tr>
+<tr class="memdesc:a61b4da2b3c2247f03a5c0ae05f91ab31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a new table is created within a <a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a>.  <a href="classnt_1_1_network_table.html#a61b4da2b3c2247f03a5c0ae05f91ab31">More...</a><br /></td></tr>
+<tr class="separator:a61b4da2b3c2247f03a5c0ae05f91ab31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad82f666270ef11b0c1c839b791857865"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#ad82f666270ef11b0c1c839b791857865">NetworkTable</a> (<a class="el" href="group__ntcore__c__api.html#ga96d65260b9e30128cf68f838dedfe731">NT_Inst</a> inst, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> path, const private_init &amp;)</td></tr>
@@ -261,6 +271,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a2875fbf1a135f11f09b272f10fb95b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#a4a2875fbf1a135f11f09b272f10fb95b">GetPath</a> () const</td></tr>
 <tr class="memdesc:a4a2875fbf1a135f11f09b272f10fb95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the full path of this table.  <a href="classnt_1_1_network_table.html#a4a2875fbf1a135f11f09b272f10fb95b">More...</a><br /></td></tr>
 <tr class="separator:a4a2875fbf1a135f11f09b272f10fb95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add03551e7edeb302d643e544610eccfa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#add03551e7edeb302d643e544610eccfa">AddListener</a> (int eventMask, <a class="el" href="classnt_1_1_network_table.html#a62e6ba710645c2511b181afd2b0d039a">TableEventListener</a> listener)</td></tr>
+<tr class="memdesc:add03551e7edeb302d643e544610eccfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listen to topics only within this table.  <a href="classnt_1_1_network_table.html#add03551e7edeb302d643e544610eccfa">More...</a><br /></td></tr>
+<tr class="separator:add03551e7edeb302d643e544610eccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29773846c34ce9f243f9bfd889422e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#ad29773846c34ce9f243f9bfd889422e2">AddListener</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, int eventMask, <a class="el" href="classnt_1_1_network_table.html#a62e6ba710645c2511b181afd2b0d039a">TableEventListener</a> listener)</td></tr>
+<tr class="memdesc:ad29773846c34ce9f243f9bfd889422e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listen to a single key.  <a href="classnt_1_1_network_table.html#ad29773846c34ce9f243f9bfd889422e2">More...</a><br /></td></tr>
+<tr class="separator:ad29773846c34ce9f243f9bfd889422e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae156d22701c4d298baa2f87a1c425134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#ae156d22701c4d298baa2f87a1c425134">AddSubTableListener</a> (<a class="el" href="classnt_1_1_network_table.html#a61b4da2b3c2247f03a5c0ae05f91ab31">SubTableListener</a> listener)</td></tr>
+<tr class="memdesc:ae156d22701c4d298baa2f87a1c425134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listen for sub-table creation.  <a href="classnt_1_1_network_table.html#ae156d22701c4d298baa2f87a1c425134">More...</a><br /></td></tr>
+<tr class="separator:ae156d22701c4d298baa2f87a1c425134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9174eccd9e8da51494d3fad7f423b634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table.html#a9174eccd9e8da51494d3fad7f423b634">RemoveListener</a> (<a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> listener)</td></tr>
+<tr class="memdesc:a9174eccd9e8da51494d3fad7f423b634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a listener.  <a href="classnt_1_1_network_table.html#a9174eccd9e8da51494d3fad7f423b634">More...</a><br /></td></tr>
+<tr class="separator:a9174eccd9e8da51494d3fad7f423b634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -289,7 +311,56 @@ Friends</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A network table that knows its subtable path. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a61b4da2b3c2247f03a5c0ae05f91ab31" name="a61b4da2b3c2247f03a5c0ae05f91ab31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b4da2b3c2247f03a5c0ae05f91ab31">&#9670;&nbsp;</a></span>SubTableListener</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnt_1_1_network_table.html#a61b4da2b3c2247f03a5c0ae05f91ab31">nt::NetworkTable::SubTableListener</a> =  std::function&lt;void(<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a>* parent, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, std::shared_ptr&lt;<a class="el" href="classnt_1_1_network_table.html">NetworkTable</a>&gt; table)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when a new table is created within a <a class="el" href="classnt_1_1_network_table.html" title="A network table that knows its subtable path.">NetworkTable</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the parent of the table </td></tr>
+    <tr><td class="paramname">name</td><td>the name of the new table </td></tr>
+    <tr><td class="paramname">table</td><td>the new table </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a62e6ba710645c2511b181afd2b0d039a" name="a62e6ba710645c2511b181afd2b0d039a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62e6ba710645c2511b181afd2b0d039a">&#9670;&nbsp;</a></span>TableEventListener</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classnt_1_1_network_table.html#a62e6ba710645c2511b181afd2b0d039a">nt::NetworkTable::TableEventListener</a> =  std::function&lt;void( <a class="el" href="classnt_1_1_network_table.html">NetworkTable</a>* table, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, const <a class="el" href="classnt_1_1_event.html">Event</a>&amp; event)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Called when an event occurs on a topic in a <code><a class="el" href="classnt_1_1_network_table.html">NetworkTable</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>the table the topic exists in </td></tr>
+    <tr><td class="paramname">key</td><td>the key associated with the topic that changed </td></tr>
+    <tr><td class="paramname">event</td><td>the event </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad82f666270ef11b0c1c839b791857865" name="ad82f666270ef11b0c1c839b791857865"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad82f666270ef11b0c1c839b791857865">&#9670;&nbsp;</a></span>NetworkTable()</h2>
 
@@ -345,6 +416,117 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="add03551e7edeb302d643e544610eccfa" name="add03551e7edeb302d643e544610eccfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add03551e7edeb302d643e544610eccfa">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTable::AddListener </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_network_table.html#a62e6ba710645c2511b181afd2b0d039a">TableEventListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Listen to topics only within this table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>listener to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
+<a id="ad29773846c34ce9f243f9bfd889422e2" name="ad29773846c34ce9f243f9bfd889422e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad29773846c34ce9f243f9bfd889422e2">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTable::AddListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_network_table.html#a62e6ba710645c2511b181afd2b0d039a">TableEventListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Listen to a single key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the key name </td></tr>
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>listener to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
+<a id="ae156d22701c4d298baa2f87a1c425134" name="ae156d22701c4d298baa2f87a1c425134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae156d22701c4d298baa2f87a1c425134">&#9670;&nbsp;</a></span>AddSubTableListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTable::AddSubTableListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_network_table.html#a61b4da2b3c2247f03a5c0ae05f91ab31">SubTableListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Listen for sub-table creation. </p>
+<p >This calls the listener once for each newly created sub-table. It immediately calls the listener for any existing sub-tables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>listener to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
 <a id="ac0bb32af5d7071ae099b2a174a9bdbd9" name="ac0bb32af5d7071ae099b2a174a9bdbd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0bb32af5d7071ae099b2a174a9bdbd9">&#9670;&nbsp;</a></span>BasenameKey()</h2>
 
@@ -1750,6 +1932,32 @@ normalizeKey("foo//bar", false) == "foo/bar"
 
 </div>
 </div>
+<a id="a9174eccd9e8da51494d3fad7f423b634" name="a9174eccd9e8da51494d3fad7f423b634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9174eccd9e8da51494d3fad7f423b634">&#9670;&nbsp;</a></span>RemoveListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nt::NetworkTable::RemoveListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a listener. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>listener handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a502f2c511ab042441dda90d2009fcc66" name="a502f2c511ab042441dda90d2009fcc66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a502f2c511ab042441dda90d2009fcc66">&#9670;&nbsp;</a></span>SetDefaultBoolean()</h2>
 
@@ -2137,7 +2345,7 @@ normalizeKey("foo//bar", false) == "foo/bar"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_network_table.html">NetworkTable</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 00:27:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 03:49:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

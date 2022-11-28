@@ -1,5 +1,11 @@
 var NAVTREEINDEX136 =
 {
+"group__ntcore__network__func.html#gabeb06b9740c43e70829775328079aa49":[3,9,5,10],
+"group__ntcore__network__func.html#gabebaea0217307bca6ce2d4d1b8e33ba7":[3,9,5,13],
+"group__ntcore__network__func.html#gad5d4afbe000bb6f39f9d4f48cecadd0e":[3,9,5,7],
+"group__ntcore__network__func.html#gad800bceb869152b1da9fe40cae28bab4":[3,9,5,12],
+"group__ntcore__network__func.html#gadadda84f6937e36ee082a05d448d940a":[3,9,5,2],
+"group__ntcore__network__func.html#gadee356b1044eb1ab0083d8eb6967297e":[3,9,5,1],
 "group__ntcore__network__func.html#gae9b2d7bf5edb51050d5cc641a42b0666":[3,9,5,6],
 "group__ntcore__table__cfunc.html":[3,10,1],
 "group__ntcore__table__cfunc.html#ga0cbb1ad66f3abcd2b0a66dc760c691ee":[3,10,1,9],
@@ -243,11 +249,5 @@ var NAVTREEINDEX136 =
 "hal_2src_2main_2native_2include_2hal_2_analog_input_8h.html":[6,0,6,10],
 "hal_2src_2main_2native_2include_2hal_2_analog_input_8h_source.html":[6,0,6,10],
 "hal_2src_2main_2native_2include_2hal_2_analog_output_8h.html":[6,0,6,11],
-"hal_2src_2main_2native_2include_2hal_2_analog_output_8h_source.html":[6,0,6,11],
-"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html":[6,0,6,12],
-"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h_source.html":[6,0,6,12],
-"hal_2src_2main_2native_2include_2hal_2_c_a_n_8h.html":[6,0,6,13],
-"hal_2src_2main_2native_2include_2hal_2_c_a_n_8h_source.html":[6,0,6,13],
-"hal_2src_2main_2native_2include_2hal_2_constants_8h.html":[6,0,6,17],
-"hal_2src_2main_2native_2include_2hal_2_constants_8h_source.html":[6,0,6,17]
+"hal_2src_2main_2native_2include_2hal_2_analog_output_8h_source.html":[6,0,6,11]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX195 =
 {
+"structcs_1_1_usb_camera_info.html":[3,25,16],
+"structcs_1_1_usb_camera_info.html#a0c88d22224cb6730d162f9fb7dcdb8e2":[3,25,16,0],
+"structcs_1_1_usb_camera_info.html#a13f32c4bb80329004d8a6cf6c0320bd4":[3,25,16,1],
+"structcs_1_1_usb_camera_info.html#a89e975415e6d1a12c82eb1e40c6eb1cd":[3,25,16,4],
+"structcs_1_1_usb_camera_info.html#aa3c422ce6458222a76347800e69b3df0":[3,25,16,5],
+"structcs_1_1_usb_camera_info.html#aae77dce7f5164fd0db2b63f4ea20eaf2":[3,25,16,3],
 "structcs_1_1_usb_camera_info.html#abf40fa4cd6a97e22bb93c0af1c52f471":[3,25,16,2],
 "structcs_1_1_video_mode.html":[3,25,17],
 "structcs_1_1_video_mode.html#a163bf1a68be118da4263fb77ff51620f":[3,25,17,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX195 =
 "structdragonbox_1_1float__info_3_01double_01_4.html#ac27c0a6bac518775185cd872cd75c4d5":[4,0,6,2,4],
 "structdragonbox_1_1float__info_3_01double_01_4.html#ad5efc588d695588c4e39be90e2df06fd":[4,0,6,2,1],
 "structdragonbox_1_1float__info_3_01double_01_4.html#ad5efc588d695588c4e39be90e2df06fd":[5,0,2,2,1],
-"structdragonbox_1_1float__info_3_01float_01_4.html":[5,0,2,3],
-"structdragonbox_1_1float__info_3_01float_01_4.html":[4,0,6,3],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a0d97103726219426839dc2ff332cf868":[5,0,2,3,4],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a0d97103726219426839dc2ff332cf868":[4,0,6,3,4],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a1eeea07196580b65b134245b398adc7c":[5,0,2,3,2],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a1eeea07196580b65b134245b398adc7c":[4,0,6,3,2],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a48c8e3febe9ce4ca83905039fea6df4e":[5,0,2,3,1]
+"structdragonbox_1_1float__info_3_01float_01_4.html":[5,0,2,3]
 };

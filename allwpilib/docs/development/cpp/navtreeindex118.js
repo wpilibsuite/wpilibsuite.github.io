@@ -1,5 +1,11 @@
 var NAVTREEINDEX118 =
 {
+"classwpi_1_1sig_1_1_connection.html#a194e0f212c5bc1c01cdf7d29fdf78a0b":[4,0,24,7,2,8],
+"classwpi_1_1sig_1_1_connection.html#a247172740cc39655a0a7dedf2478fad2":[5,0,14,7,2,7],
+"classwpi_1_1sig_1_1_connection.html#a247172740cc39655a0a7dedf2478fad2":[4,0,24,7,2,7],
+"classwpi_1_1sig_1_1_connection.html#a2d859ba9acbdad0d563e445c5970f477":[5,0,14,7,2,1],
+"classwpi_1_1sig_1_1_connection.html#a2d859ba9acbdad0d563e445c5970f477":[4,0,24,7,2,1],
+"classwpi_1_1sig_1_1_connection.html#a31e230f5cea56efb2c9024828122b3bc":[5,0,14,7,2,6],
 "classwpi_1_1sig_1_1_connection.html#a31e230f5cea56efb2c9024828122b3bc":[4,0,24,7,2,6],
 "classwpi_1_1sig_1_1_connection.html#a3c19875f452b71710d6c8b6ee700fce4":[4,0,24,7,2,14],
 "classwpi_1_1sig_1_1_connection.html#a3c19875f452b71710d6c8b6ee700fce4":[5,0,14,7,2,14],
@@ -243,11 +249,5 @@ var NAVTREEINDEX118 =
 "classwpi_1_1static__circular__buffer_1_1const__iterator.html#a6e551fd437f91ac254a3737362275fdc":[5,0,14,178,0,8],
 "classwpi_1_1static__circular__buffer_1_1const__iterator.html#a737be1dda0e6a25a5c664d3cd6ad3f40":[4,0,24,179,0,7],
 "classwpi_1_1static__circular__buffer_1_1const__iterator.html#a737be1dda0e6a25a5c664d3cd6ad3f40":[5,0,14,178,0,7],
-"classwpi_1_1static__circular__buffer_1_1const__iterator.html#a89b5592b64d95beeffb133712c543666":[4,0,24,179,0,0],
-"classwpi_1_1static__circular__buffer_1_1const__iterator.html#a89b5592b64d95beeffb133712c543666":[5,0,14,178,0,0],
-"classwpi_1_1static__circular__buffer_1_1const__iterator.html#a8c16f97bdddd87ce507476a18ebf154f":[4,0,24,179,0,3],
-"classwpi_1_1static__circular__buffer_1_1const__iterator.html#a8c16f97bdddd87ce507476a18ebf154f":[5,0,14,178,0,3],
-"classwpi_1_1static__circular__buffer_1_1const__iterator.html#abb615041fe0a2077bf00dc2e14eceeed":[5,0,14,178,0,6],
-"classwpi_1_1static__circular__buffer_1_1const__iterator.html#abb615041fe0a2077bf00dc2e14eceeed":[4,0,24,179,0,6],
-"classwpi_1_1static__circular__buffer_1_1const__iterator.html#ad489e9c6e851103c4cff4a01fccec29f":[4,0,24,179,0,4]
+"classwpi_1_1static__circular__buffer_1_1const__iterator.html#a89b5592b64d95beeffb133712c543666":[4,0,24,179,0,0]
 };

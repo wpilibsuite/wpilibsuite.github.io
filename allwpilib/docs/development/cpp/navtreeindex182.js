@@ -1,5 +1,11 @@
 var NAVTREEINDEX182 =
 {
+"struct_eigen_1_1internal_1_1scalar__div__cost_3_01signed_01long_00_01_vectorized_00_01typename_0f731f5503d8fa02f86b3d6865901484b.html":[4,0,8,4,1132],
+"struct_eigen_1_1internal_1_1scalar__div__cost_3_01std_1_1complex_3_01_t_01_4_00_01_vectorized_01_4.html":[5,0,4,2,1131],
+"struct_eigen_1_1internal_1_1scalar__div__cost_3_01std_1_1complex_3_01_t_01_4_00_01_vectorized_01_4.html":[4,0,8,4,1133],
+"struct_eigen_1_1internal_1_1scalar__div__cost_3_01unsigned_01long_00_01_vectorized_00_01typename7dd413f7ad4af191fe948b2a6032931e.html":[4,0,8,4,1134],
+"struct_eigen_1_1internal_1_1scalar__div__cost_3_01unsigned_01long_00_01_vectorized_00_01typename7dd413f7ad4af191fe948b2a6032931e.html":[5,0,4,2,1132],
+"struct_eigen_1_1internal_1_1scalar__erf__op.html":[4,0,8,4,1135],
 "struct_eigen_1_1internal_1_1scalar__erf__op.html":[5,0,4,2,1133],
 "struct_eigen_1_1internal_1_1scalar__erfc__op.html":[5,0,4,2,1134],
 "struct_eigen_1_1internal_1_1scalar__erfc__op.html":[4,0,8,4,1136],
@@ -243,11 +249,5 @@ var NAVTREEINDEX182 =
 "struct_eigen_1_1internal_1_1scalar__rsqrt__op.html#a9bcf69ff147f7f02a535c4ca8e09c39b":[5,0,4,2,1175,0],
 "struct_eigen_1_1internal_1_1scalar__rsqrt__op.html#ae2bfe3c291802ee0932e37d0850e3ffc":[4,0,8,4,1177,1],
 "struct_eigen_1_1internal_1_1scalar__rsqrt__op.html#ae2bfe3c291802ee0932e37d0850e3ffc":[5,0,4,2,1175,1],
-"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html":[4,0,8,4,1178],
-"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html":[5,0,4,2,1176],
-"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html#a99a09ca4f3cc9013543c01154aff8d8c":[5,0,4,2,1176,0],
-"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html#a99a09ca4f3cc9013543c01154aff8d8c":[4,0,8,4,1178,0],
-"struct_eigen_1_1internal_1_1scalar__shift__left__op.html":[5,0,4,2,1177],
-"struct_eigen_1_1internal_1_1scalar__shift__left__op.html":[4,0,8,4,1179],
-"struct_eigen_1_1internal_1_1scalar__shift__left__op.html#a9364658d4d0d997efa7312cbb41eaca0":[5,0,4,2,1177,0]
+"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html":[4,0,8,4,1178]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX181 =
 {
+"struct_eigen_1_1internal_1_1scalar__abs2__op.html#aa33487affb7a7b6395ba0c475c0e548e":[5,0,4,2,1078,2],
+"struct_eigen_1_1internal_1_1scalar__abs__op.html":[5,0,4,2,1079],
+"struct_eigen_1_1internal_1_1scalar__abs__op.html":[4,0,8,4,1081],
+"struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[4,0,8,4,1081,0],
+"struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[5,0,4,2,1079,0],
+"struct_eigen_1_1internal_1_1scalar__abs__op.html#a2e1557e18aea6d7b6a9b4b2cead03037":[4,0,8,4,1081,1],
 "struct_eigen_1_1internal_1_1scalar__abs__op.html#a2e1557e18aea6d7b6a9b4b2cead03037":[5,0,4,2,1079,1],
 "struct_eigen_1_1internal_1_1scalar__abs__op.html#a78ce4b55dd461fb7b58f7ead3544d37c":[5,0,4,2,1079,2],
 "struct_eigen_1_1internal_1_1scalar__abs__op.html#a78ce4b55dd461fb7b58f7ead3544d37c":[4,0,8,4,1081,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX181 =
 "struct_eigen_1_1internal_1_1scalar__div__cost_3_01double_00_01true_01_4.html":[5,0,4,2,1128],
 "struct_eigen_1_1internal_1_1scalar__div__cost_3_01float_00_01true_01_4.html":[4,0,8,4,1131],
 "struct_eigen_1_1internal_1_1scalar__div__cost_3_01float_00_01true_01_4.html":[5,0,4,2,1129],
-"struct_eigen_1_1internal_1_1scalar__div__cost_3_01signed_01long_00_01_vectorized_00_01typename_0f731f5503d8fa02f86b3d6865901484b.html":[5,0,4,2,1130],
-"struct_eigen_1_1internal_1_1scalar__div__cost_3_01signed_01long_00_01_vectorized_00_01typename_0f731f5503d8fa02f86b3d6865901484b.html":[4,0,8,4,1132],
-"struct_eigen_1_1internal_1_1scalar__div__cost_3_01std_1_1complex_3_01_t_01_4_00_01_vectorized_01_4.html":[5,0,4,2,1131],
-"struct_eigen_1_1internal_1_1scalar__div__cost_3_01std_1_1complex_3_01_t_01_4_00_01_vectorized_01_4.html":[4,0,8,4,1133],
-"struct_eigen_1_1internal_1_1scalar__div__cost_3_01unsigned_01long_00_01_vectorized_00_01typename7dd413f7ad4af191fe948b2a6032931e.html":[4,0,8,4,1134],
-"struct_eigen_1_1internal_1_1scalar__div__cost_3_01unsigned_01long_00_01_vectorized_00_01typename7dd413f7ad4af191fe948b2a6032931e.html":[5,0,4,2,1132],
-"struct_eigen_1_1internal_1_1scalar__erf__op.html":[4,0,8,4,1135]
+"struct_eigen_1_1internal_1_1scalar__div__cost_3_01signed_01long_00_01_vectorized_00_01typename_0f731f5503d8fa02f86b3d6865901484b.html":[5,0,4,2,1130]
 };

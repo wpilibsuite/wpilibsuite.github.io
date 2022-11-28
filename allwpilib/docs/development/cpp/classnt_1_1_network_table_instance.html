@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-29-g8958b2a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-30-gffbfc61</span>
    </div>
   </td>
  </tr>
@@ -319,9 +319,9 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a3b2ac36f7c0bda302944dfbc3300e70c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3b2ac36f7c0bda302944dfbc3300e70c">AddListener</a> (<a class="el" href="classnt_1_1_multi_subscriber.html">MultiSubscriber</a> &amp;subscriber, int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
 <tr class="memdesc:a3b2ac36f7c0bda302944dfbc3300e70c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes on a subscriber.  <a href="classnt_1_1_network_table_instance.html#a3b2ac36f7c0bda302944dfbc3300e70c">More...</a><br /></td></tr>
 <tr class="separator:a3b2ac36f7c0bda302944dfbc3300e70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0fd8c21f5d8235a91bc2858259a0005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#ab0fd8c21f5d8235a91bc2858259a0005">AddListener</a> (<a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;entry, int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
-<tr class="memdesc:ab0fd8c21f5d8235a91bc2858259a0005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes on an entry.  <a href="classnt_1_1_network_table_instance.html#ab0fd8c21f5d8235a91bc2858259a0005">More...</a><br /></td></tr>
-<tr class="separator:ab0fd8c21f5d8235a91bc2858259a0005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2446e34947d27fc6e00c1033c458365f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a2446e34947d27fc6e00c1033c458365f">AddListener</a> (const <a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;entry, int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
+<tr class="memdesc:a2446e34947d27fc6e00c1033c458365f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes on an entry.  <a href="classnt_1_1_network_table_instance.html#a2446e34947d27fc6e00c1033c458365f">More...</a><br /></td></tr>
+<tr class="separator:a2446e34947d27fc6e00c1033c458365f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3149f80a27268b5c1610a590d437ece5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_network_table_instance.html#a3149f80a27268b5c1610a590d437ece5">AddListener</a> (std::span&lt; const <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> &gt; prefixes, int eventMask, <a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a> listener)</td></tr>
 <tr class="memdesc:a3149f80a27268b5c1610a590d437ece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a listener for changes to topics with names that start with any of the given prefixes.  <a href="classnt_1_1_network_table_instance.html#a3149f80a27268b5c1610a590d437ece5">More...</a><br /></td></tr>
 <tr class="separator:a3149f80a27268b5c1610a590d437ece5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -510,8 +510,54 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2446e34947d27fc6e00c1033c458365f" name="a2446e34947d27fc6e00c1033c458365f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2446e34947d27fc6e00c1033c458365f">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
+          <td class="paramname"><em>listener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a listener for changes on an entry. </p>
+<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entry</td><td>Entry </td></tr>
+    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
+    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
+
+</div>
+</div>
 <a id="a3b2ac36f7c0bda302944dfbc3300e70c" name="a3b2ac36f7c0bda302944dfbc3300e70c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b2ac36f7c0bda302944dfbc3300e70c">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2ac36f7c0bda302944dfbc3300e70c">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -547,52 +593,6 @@ Static Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subscriber</td><td><a class="el" href="classnt_1_1_subscriber.html" title="NetworkTables subscriber.">Subscriber</a> </td></tr>
-    <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
-    <tr><td class="paramname">listener</td><td>Listener function </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
-<a id="ab0fd8c21f5d8235a91bc2858259a0005" name="ab0fd8c21f5d8235a91bc2858259a0005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0fd8c21f5d8235a91bc2858259a0005">&#9670;&nbsp;</a></span>AddListener() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__ntcore__c__api.html#ga2d8c7bc1dbbd0e458e1e71d87248674c">NT_Listener</a> nt::NetworkTableInstance::AddListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a> &amp;&#160;</td>
-          <td class="paramname"><em>entry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>eventMask</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__ntcore__listener__func.html#ga27214042de7d2956f52ee13a2eb05f49">ListenerCallback</a>&#160;</td>
-          <td class="paramname"><em>listener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a listener for changes on an entry. </p>
-<p >The callback function is called asynchronously on a separate thread, so it's important to use synchronization or atomics when accessing any shared state from the callback function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">entry</td><td>Entry </td></tr>
     <tr><td class="paramname">eventMask</td><td>Bitmask of <a class="el" href="structnt_1_1_event_flags.html" title="Event notification flags.">EventFlags</a> values </td></tr>
     <tr><td class="paramname">listener</td><td>Listener function </td></tr>
   </table>
@@ -2613,7 +2613,7 @@ Static Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_network_table_instance.html">NetworkTableInstance</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 00:27:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 03:49:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

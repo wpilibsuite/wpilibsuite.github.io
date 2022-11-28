@@ -1,5 +1,11 @@
 var NAVTREEINDEX198 =
 {
+"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[5,0,6,170,0,0],
+"structfrc_1_1_swerve_module_position.html":[4,0,10,180],
+"structfrc_1_1_swerve_module_position.html":[5,0,6,176],
+"structfrc_1_1_swerve_module_position.html#ae5a8dcddd09742336b74fa4962328b02":[5,0,6,176,1],
+"structfrc_1_1_swerve_module_position.html#ae5a8dcddd09742336b74fa4962328b02":[4,0,10,180,1],
+"structfrc_1_1_swerve_module_position.html#afa10ac0192a00b4c4350a68cf1993aca":[5,0,6,176,0],
 "structfrc_1_1_swerve_module_position.html#afa10ac0192a00b4c4350a68cf1993aca":[4,0,10,180,0],
 "structfrc_1_1_swerve_module_state.html":[5,0,6,177],
 "structfrc_1_1_swerve_module_state.html":[4,0,10,181],
@@ -243,11 +249,5 @@ var NAVTREEINDEX198 =
 "structis__back__insert__iterator.html":[5,0,150],
 "structis__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01_container_01_4_01_4.html":[5,0,151],
 "structis__char.html":[5,0,152],
-"structis__char_3_01char16__t_01_4.html":[5,0,154],
-"structis__char_3_01char32__t_01_4.html":[5,0,155],
-"structis__char_3_01char_01_4.html":[5,0,153],
-"structis__char_3_01detail_1_1char8__type_01_4.html":[5,0,156],
-"structis__char_3_01wchar__t_01_4.html":[5,0,157],
-"structis__compile__string.html":[5,0,158],
-"structis__contiguous.html":[5,0,159]
+"structis__char_3_01char16__t_01_4.html":[5,0,154]
 };

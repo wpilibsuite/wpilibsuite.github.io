@@ -1,5 +1,11 @@
 var NAVTREEINDEX183 =
 {
+"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html":[5,0,4,2,1176],
+"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html#a99a09ca4f3cc9013543c01154aff8d8c":[5,0,4,2,1176,0],
+"struct_eigen_1_1internal_1_1scalar__score__coeff__op.html#a99a09ca4f3cc9013543c01154aff8d8c":[4,0,8,4,1178,0],
+"struct_eigen_1_1internal_1_1scalar__shift__left__op.html":[5,0,4,2,1177],
+"struct_eigen_1_1internal_1_1scalar__shift__left__op.html":[4,0,8,4,1179],
+"struct_eigen_1_1internal_1_1scalar__shift__left__op.html#a9364658d4d0d997efa7312cbb41eaca0":[5,0,4,2,1177,0],
 "struct_eigen_1_1internal_1_1scalar__shift__left__op.html#a9364658d4d0d997efa7312cbb41eaca0":[4,0,8,4,1179,0],
 "struct_eigen_1_1internal_1_1scalar__shift__left__op.html#ab53328acd2176f9282d09ae8c75af196":[5,0,4,2,1177,1],
 "struct_eigen_1_1internal_1_1scalar__shift__left__op.html#ab53328acd2176f9282d09ae8c75af196":[4,0,8,4,1179,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX183 =
 "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_index_based_00_01_iterator_based_01_4.html#aeeba72a4859d6acf37814a4b9f37890a":[5,0,4,2,1227,7],
 "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_index_based_00_01_iterator_based_01_4.html#af6cea44890a2a97b728129b7fe11daf0":[5,0,4,2,1227,9],
 "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_index_based_00_01_iterator_based_01_4.html#af6cea44890a2a97b728129b7fe11daf0":[4,0,8,4,1229,9],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html":[4,0,8,4,1230],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html":[5,0,4,2,1228],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#a1eff754f769386b232f927ff202cce17":[4,0,8,4,1230,12],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#a1eff754f769386b232f927ff202cce17":[5,0,4,2,1228,12],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#a33a395e07160ff99d2e762a6b0df0f95":[4,0,8,4,1230,8],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#a33a395e07160ff99d2e762a6b0df0f95":[5,0,4,2,1228,8],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#a5f2fd1a9fba4ad55aa2b9113bbcff2d8":[4,0,8,4,1230,4]
+"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html":[4,0,8,4,1230]
 };

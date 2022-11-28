@@ -1,5 +1,11 @@
 var NAVTREEINDEX160 =
 {
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_359637caee80b00c35b5e63bb0a6509c.html#a4c1abbabaa62775474fce84d579c40dc":[5,0,4,2,76,2],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_359637caee80b00c35b5e63bb0a6509c.html#a93e5753112691850ff80b94096ba0726":[5,0,4,2,76,1],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_359637caee80b00c35b5e63bb0a6509c.html#a93e5753112691850ff80b94096ba0726":[4,0,8,4,78,1],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html":[4,0,8,4,77],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html":[5,0,4,2,75],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#a70e8931a8c4b0ba14aa81dfad16bfb40":[5,0,4,2,75,1],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#a70e8931a8c4b0ba14aa81dfad16bfb40":[4,0,8,4,77,1],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#a984972577f134d4f22af56f47b30e70f":[5,0,4,2,75,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#a984972577f134d4f22af56f47b30e70f":[4,0,8,4,77,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX160 =
 "struct_eigen_1_1internal_1_1_l_d_l_t___traits.html":[5,0,4,2,723],
 "struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html":[5,0,4,2,724],
 "struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html":[4,0,8,4,726],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a0bdfb73fe29737fed4e281100a3bf565":[4,0,8,4,726,2],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a0bdfb73fe29737fed4e281100a3bf565":[5,0,4,2,724,2],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a6106eb13540e7936645b13da031ef2fe":[4,0,8,4,726,1],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a6106eb13540e7936645b13da031ef2fe":[5,0,4,2,724,1],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a71b18cd5918d44a3022f4a6cb5b9da0a":[4,0,8,4,726,3],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a71b18cd5918d44a3022f4a6cb5b9da0a":[5,0,4,2,724,3],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#af252a9d086be312be301820816c0a986":[5,0,4,2,724,0]
+"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a0bdfb73fe29737fed4e281100a3bf565":[4,0,8,4,726,2]
 };

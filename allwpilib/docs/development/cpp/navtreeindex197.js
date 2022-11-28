@@ -1,5 +1,11 @@
 var NAVTREEINDEX197 =
 {
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a81dce19c37b0890e8b64640cd288e7e1":[5,0,6,122,0,1],
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a86c7321e37b1dada95c66a165bca6c85":[4,0,10,126,0,4],
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a86c7321e37b1dada95c66a165bca6c85":[5,0,6,122,0,4],
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a8706b7d02be28856fab55aed81f1fa1a":[4,0,10,126,0,0],
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a8706b7d02be28856fab55aed81f1fa1a":[5,0,6,122,0,0],
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[4,0,10,126,0,2],
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[5,0,6,122,0,2],
 "structfrc_1_1_p_s4_controller_1_1_button.html":[4,0,10,126,1],
 "structfrc_1_1_p_s4_controller_1_1_button.html":[5,0,6,122,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX197 =
 "structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f":[4,0,10,172,0,1],
 "structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html":[5,0,6,170,0],
 "structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html":[4,0,10,174,0],
-"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[4,0,10,174,0,0],
-"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[5,0,6,170,0,0],
-"structfrc_1_1_swerve_module_position.html":[4,0,10,180],
-"structfrc_1_1_swerve_module_position.html":[5,0,6,176],
-"structfrc_1_1_swerve_module_position.html#ae5a8dcddd09742336b74fa4962328b02":[5,0,6,176,1],
-"structfrc_1_1_swerve_module_position.html#ae5a8dcddd09742336b74fa4962328b02":[4,0,10,180,1],
-"structfrc_1_1_swerve_module_position.html#afa10ac0192a00b4c4350a68cf1993aca":[5,0,6,176,0]
+"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[4,0,10,174,0,0]
 };
