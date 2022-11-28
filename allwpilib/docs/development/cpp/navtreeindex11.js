@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"_math_functions_8h.html#abac0da1e999e0f1bda99ef3c90eb8cb0":[6,0,8,1,0,0,0,1,40,104],
 "_math_functions_8h.html#ac09cd9261a50a46dd4937868020c7c45":[6,0,8,1,0,0,0,1,40,86],
 "_math_functions_8h.html#ac7ea6bc9ae520ddba4114982fc587ffc":[6,0,8,1,0,0,0,1,40,132],
 "_math_functions_8h.html#ad09350f823b13ad700a58ffecc99cab9":[6,0,8,1,0,0,0,1,40,141],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "_mime_types_8h_source.html":[6,0,15,11],
 "_mock_hooks_8h.html":[6,0,6,3,14],
 "_mock_hooks_8h.html#a00476d77d12a0bc51e5cc3d13da4a347":[6,0,6,3,14,0],
-"_mock_hooks_8h.html#a05941019c795c73f9c840c40d4da5a06":[6,0,6,3,14,17]
+"_mock_hooks_8h.html#a05941019c795c73f9c840c40d4da5a06":[6,0,6,3,14,17],
+"_mock_hooks_8h.html#a0d2a43cdf4b63370952ec9df78bed986":[6,0,6,3,14,7]
 };

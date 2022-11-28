@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-31-g135c139</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-32-g42b6d4e</span>
    </div>
   </td>
  </tr>
@@ -204,39 +204,27 @@ $(document).ready(function(){initNavTree('_transform3d_8h_source.html',''); init
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"></span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">   * Checks equality between this Transform3d and another object.</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">   * @param other The other object.</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * @return Whether the two objects are equal.</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1_transform3d.html#a12eb2539b34066542525185a77e5c297">  115</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_transform3d.html#a12eb2539b34066542525185a77e5c297">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">Transform3d</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"></span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   * Checks inequality between this Transform3d and another object.</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * @param other The other object.</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   * @return Whether the two objects are not equal.</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="classfrc_1_1_transform3d.html#a71d388d683ba1b56870c079c274313e6">  123</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_transform3d.html#a71d388d683ba1b56870c079c274313e6">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">Transform3d</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <a class="code hl_class" href="classfrc_1_1_translation3d.html">Translation3d</a> m_translation;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <a class="code hl_class" href="classfrc_1_1_rotation3d.html">Rotation3d</a> m_rotation;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>};</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classfrc_1_1_transform3d.html#a6f58f68dd9937b2c5cf69521d287240b">  112</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_transform3d.html#a6f58f68dd9937b2c5cf69521d287240b">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">Transform3d</a>&amp;) <span class="keyword">const</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_class" href="classfrc_1_1_translation3d.html">Translation3d</a> m_translation;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_class" href="classfrc_1_1_rotation3d.html">Rotation3d</a> m_rotation;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>};</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
 <div class="ttc" id="a_translation3d_8h_html"><div class="ttname"><a href="_translation3d_8h.html">Translation3d.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_pose3d_html"><div class="ttname"><a href="classfrc_1_1_pose3d.html">frc::Pose3d</a></div><div class="ttdoc">Represents a 3D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose3d.h:23</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation3d_html"><div class="ttname"><a href="classfrc_1_1_rotation3d.html">frc::Rotation3d</a></div><div class="ttdoc">A rotation in a 3D coordinate frame represented by a quaternion.</div><div class="ttdef"><b>Definition:</b> Rotation3d.h:23</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html"><div class="ttname"><a href="classfrc_1_1_transform3d.html">frc::Transform3d</a></div><div class="ttdoc">Represents a transformation for a Pose3d.</div><div class="ttdef"><b>Definition:</b> Transform3d.h:18</div></div>
-<div class="ttc" id="aclassfrc_1_1_transform3d_html_a12eb2539b34066542525185a77e5c297"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a12eb2539b34066542525185a77e5c297">frc::Transform3d::operator==</a></div><div class="ttdeci">bool operator==(const Transform3d &amp;other) const</div><div class="ttdoc">Checks equality between this Transform3d and another object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a258eb360db756811352d2fb8dd89bfd4"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a258eb360db756811352d2fb8dd89bfd4">frc::Transform3d::operator+</a></div><div class="ttdeci">Transform3d operator+(const Transform3d &amp;other) const</div><div class="ttdoc">Composes two transformations.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a31810c15a05d3a2a8981462c88d965e4"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a31810c15a05d3a2a8981462c88d965e4">frc::Transform3d::Transform3d</a></div><div class="ttdeci">Transform3d(Pose3d initial, Pose3d final)</div><div class="ttdoc">Constructs the transform that maps the initial pose to the final pose.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a336c3761fbd88e191585cb470a7a9048"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a336c3761fbd88e191585cb470a7a9048">frc::Transform3d::Transform3d</a></div><div class="ttdeci">constexpr Transform3d()=default</div><div class="ttdoc">Constructs the identity transform – maps an initial pose to itself.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a5b1756b432c8d66f915af950a8a9f7a2"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a5b1756b432c8d66f915af950a8a9f7a2">frc::Transform3d::Translation</a></div><div class="ttdeci">const Translation3d &amp; Translation() const</div><div class="ttdoc">Returns the translation component of the transformation.</div><div class="ttdef"><b>Definition:</b> Transform3d.h:46</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a5b942705e58979be93d75d51b9216b90"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a5b942705e58979be93d75d51b9216b90">frc::Transform3d::Y</a></div><div class="ttdeci">units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the transformation's translation.</div><div class="ttdef"><b>Definition:</b> Transform3d.h:60</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a5f5a0ed7821e73c83c5387c4862d8bcf"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a5f5a0ed7821e73c83c5387c4862d8bcf">frc::Transform3d::Rotation</a></div><div class="ttdeci">const Rotation3d &amp; Rotation() const</div><div class="ttdoc">Returns the rotational component of the transformation.</div><div class="ttdef"><b>Definition:</b> Transform3d.h:74</div></div>
-<div class="ttc" id="aclassfrc_1_1_transform3d_html_a71d388d683ba1b56870c079c274313e6"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a71d388d683ba1b56870c079c274313e6">frc::Transform3d::operator!=</a></div><div class="ttdeci">bool operator!=(const Transform3d &amp;other) const</div><div class="ttdoc">Checks inequality between this Transform3d and another object.</div></div>
+<div class="ttc" id="aclassfrc_1_1_transform3d_html_a6f58f68dd9937b2c5cf69521d287240b"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a6f58f68dd9937b2c5cf69521d287240b">frc::Transform3d::operator==</a></div><div class="ttdeci">bool operator==(const Transform3d &amp;) const =default</div><div class="ttdoc">Checks equality between this Transform3d and another object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a8e125f30234b234291e9f06b1680c095"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a8e125f30234b234291e9f06b1680c095">frc::Transform3d::X</a></div><div class="ttdeci">units::meter_t X() const</div><div class="ttdoc">Returns the X component of the transformation's translation.</div><div class="ttdef"><b>Definition:</b> Transform3d.h:53</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_a97ae803cc88ba9eb715a4102a9268db2"><div class="ttname"><a href="classfrc_1_1_transform3d.html#a97ae803cc88ba9eb715a4102a9268db2">frc::Transform3d::Inverse</a></div><div class="ttdeci">Transform3d Inverse() const</div><div class="ttdoc">Invert the transformation.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html_aa49e765c6609ebfea5afcdb3024fa7d8"><div class="ttname"><a href="classfrc_1_1_transform3d.html#aa49e765c6609ebfea5afcdb3024fa7d8">frc::Transform3d::Transform3d</a></div><div class="ttdeci">Transform3d(Translation3d translation, Rotation3d rotation)</div><div class="ttdoc">Constructs a transform with the given translation and rotation components.</div></div>
@@ -252,7 +240,7 @@ $(document).ready(function(){initNavTree('_transform3d_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><a class="el" href="_transform3d_8h.html">Transform3d.h</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 04:02:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 05:03:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

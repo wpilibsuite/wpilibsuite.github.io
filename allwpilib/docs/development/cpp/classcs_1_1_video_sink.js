@@ -23,7 +23,6 @@ var classcs_1_1_video_sink =
     [ "GetSource", "classcs_1_1_video_sink.html#aa890216909c3a7c92446af98ff9abb31", null ],
     [ "GetSourceProperty", "classcs_1_1_video_sink.html#a7127a303388778d54295174baf341814", null ],
     [ "operator bool", "classcs_1_1_video_sink.html#af13d27d4792bad1f623ecaf68a9331dc", null ],
-    [ "operator!=", "classcs_1_1_video_sink.html#a449abbf2afcbc76fa1f1f5021f2537db", null ],
     [ "operator=", "classcs_1_1_video_sink.html#aa6c5e370fc420b2ef92effe1359089cc", null ],
     [ "operator==", "classcs_1_1_video_sink.html#acbc4778cc7a123ed785fe29d6c46700d", null ],
     [ "SetConfigJson", "classcs_1_1_video_sink.html#a705c5043fdc08026c6ef36064b1443e4", null ],

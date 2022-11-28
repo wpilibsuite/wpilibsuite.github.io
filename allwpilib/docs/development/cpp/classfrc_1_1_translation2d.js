@@ -6,7 +6,6 @@ var classfrc_1_1_translation2d =
     [ "Angle", "classfrc_1_1_translation2d.html#a8db0a3b31449cc9001f91fa66e3ec85e", null ],
     [ "Distance", "classfrc_1_1_translation2d.html#a8373deb79fcd123cb22f1f98e38f5df8", null ],
     [ "Norm", "classfrc_1_1_translation2d.html#a93137fd4ae0f4856700da154afe2bf6d", null ],
-    [ "operator!=", "classfrc_1_1_translation2d.html#a9d177247ecc2b00c1ca91a2c34502a21", null ],
     [ "operator*", "classfrc_1_1_translation2d.html#a7b72b8732e34d0926dff2b87c83df04c", null ],
     [ "operator+", "classfrc_1_1_translation2d.html#ac2cdf4086f5be18d97f04811950cd049", null ],
     [ "operator-", "classfrc_1_1_translation2d.html#a43e1ecbf35503669e683751bf6bd889d", null ],

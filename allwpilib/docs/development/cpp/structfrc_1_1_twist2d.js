@@ -1,6 +1,5 @@
 var structfrc_1_1_twist2d =
 [
-    [ "operator!=", "structfrc_1_1_twist2d.html#a8017e149cd1036161c34aefe733e0076", null ],
     [ "operator*", "structfrc_1_1_twist2d.html#a494265cee1d509c1693c937114c41cc2", null ],
     [ "operator==", "structfrc_1_1_twist2d.html#aa11987fb55e2191bce89ce8781d3896a", null ],
     [ "dtheta", "structfrc_1_1_twist2d.html#a935ef5e155342a9392c41470839d4a93", null ],

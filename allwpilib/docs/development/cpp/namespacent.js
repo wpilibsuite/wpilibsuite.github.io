@@ -181,7 +181,6 @@ var namespacent =
     [ "GetTypeFromString", "group__ntcore__utility__func.html#ga057ce15a74c4c99e93e16a9fb8e69842", null ],
     [ "IsConnected", "group__ntcore__network__func.html#ga49907334799547c4aa063e81678a3b44", null ],
     [ "Now", "group__ntcore__utility__func.html#ga29dbf93f14f9cdffa80b422e9cb2a50e", null ],
-    [ "operator!=", "namespacent.html#a63a12be9de54aa1ead198950207ca38f", null ],
     [ "operator==", "namespacent.html#a72b7fa3b4a38eadfc5abbb7e7e7c8dda", null ],
     [ "Publish", "group__ntcore__topic__func.html#gacc33f3b2d95f1422510667f0a0f772d5", null ],
     [ "PublishEx", "group__ntcore__topic__func.html#gadefd3dcb6ac64f5dc6ff2a2baca6e6a4", null ],

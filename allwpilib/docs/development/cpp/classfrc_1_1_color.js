@@ -5,6 +5,7 @@ var classfrc_1_1_color =
     [ "Color", "classfrc_1_1_color.html#a08d488358566bdf50628e061e79184f2", null ],
     [ "FromHSV", "classfrc_1_1_color.html#a40b1bce5f8bfe492a05a53ef1bb00e45", null ],
     [ "HexString", "classfrc_1_1_color.html#a37cd7691c1112518974d178f211f7397", null ],
+    [ "operator==", "classfrc_1_1_color.html#a01160d7228b18baf067136f5de4a16c1", null ],
     [ "blue", "classfrc_1_1_color.html#a6a854a122a16594ccc9040e25503170b", null ],
     [ "green", "classfrc_1_1_color.html#a15b96eac9f0faaf19041c5310e6ac09d", null ],
     [ "kAliceBlue", "classfrc_1_1_color.html#a18dad0d21fe3b7b4bc42d5ac28288149", null ],

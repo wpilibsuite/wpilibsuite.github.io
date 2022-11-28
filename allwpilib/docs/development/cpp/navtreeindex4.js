@@ -6,7 +6,6 @@ var NAVTREEINDEX4 =
 "_col_piv_householder_q_r_8h.html":[6,0,8,1,0,0,0,10,0],
 "_col_piv_householder_q_r_8h_source.html":[6,0,8,1,0,0,0,10,0],
 "_color8_bit_8h.html":[6,0,3,10,1],
-"_color8_bit_8h.html#af23e0d617ddcb6f8eb3dad37e179086f":[6,0,3,10,1,1],
 "_color8_bit_8h_source.html":[6,0,3,10,1],
 "_comma_initializer_8h.html":[6,0,8,1,0,0,0,1,13],
 "_comma_initializer_8h_source.html":[6,0,8,1,0,0,0,1,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "_coordinate_system_8h.html":[6,0,4,4,1],
 "_coordinate_system_8h_source.html":[6,0,4,4,1],
 "_core.html":[6,0,8,1,0,0,2],
-"_core.html#a6511c0ea557ee776d3480d6b4a02a89c":[6,0,8,1,0,0,2,1]
+"_core.html#a6511c0ea557ee776d3480d6b4a02a89c":[6,0,8,1,0,0,2,1],
+"_core.html#ab4f4211329f945da6a466d1dc880936e":[6,0,8,1,0,0,2,0]
 };

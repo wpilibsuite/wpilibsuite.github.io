@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-31-g135c139</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-32-g42b6d4e</span>
    </div>
   </td>
  </tr>
@@ -199,27 +199,16 @@ $(document).ready(function(){initNavTree('_transform2d_8h_source.html',''); init
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   * Checks equality between this Transform2d and another object.</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   * @param other The other object.</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   * @return Whether the two objects are equal.</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classfrc_1_1_transform2d.html#ac3b3aa856dd66518d58400a97fdb0570">  110</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_transform2d.html#ac3b3aa856dd66518d58400a97fdb0570">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform2d.html">Transform2d</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"></span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * Checks inequality between this Transform2d and another object.</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * @param other The other object.</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   * @return Whether the two objects are not equal.</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classfrc_1_1_transform2d.html#a4b4f1c481967b41b56a1225858013a7b">  118</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_transform2d.html#a4b4f1c481967b41b56a1225858013a7b">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform2d.html">Transform2d</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_class" href="classfrc_1_1_translation2d.html">Translation2d</a> m_translation;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_rotation;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}  <span class="comment">// namespace frc</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#include &quot;<a class="code" href="_transform2d_8inc.html">Transform2d.inc</a>&quot;</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="classfrc_1_1_transform2d.html#a424e0962661c17dc7ddf7c0d3e030e6d">  107</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_transform2d.html#a424e0962661c17dc7ddf7c0d3e030e6d">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform2d.html">Transform2d</a>&amp;) <span class="keyword">const</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_class" href="classfrc_1_1_translation2d.html">Translation2d</a> m_translation;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a> m_rotation;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#include &quot;<a class="code" href="_transform2d_8inc.html">Transform2d.inc</a>&quot;</span></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
 <div class="ttc" id="a_transform2d_8inc_html"><div class="ttname"><a href="_transform2d_8inc.html">Transform2d.inc</a></div></div>
@@ -228,14 +217,13 @@ $(document).ready(function(){initNavTree('_transform2d_8h_source.html',''); init
 <div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html"><div class="ttname"><a href="classfrc_1_1_transform2d.html">frc::Transform2d</a></div><div class="ttdoc">Represents a transformation for a Pose2d.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_a2f9df3386b4411e5ad8de7e80d100764"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a2f9df3386b4411e5ad8de7e80d100764">frc::Transform2d::Translation</a></div><div class="ttdeci">constexpr const Translation2d &amp; Translation() const</div><div class="ttdoc">Returns the translation component of the transformation.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:46</div></div>
+<div class="ttc" id="aclassfrc_1_1_transform2d_html_a424e0962661c17dc7ddf7c0d3e030e6d"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a424e0962661c17dc7ddf7c0d3e030e6d">frc::Transform2d::operator==</a></div><div class="ttdeci">bool operator==(const Transform2d &amp;) const =default</div><div class="ttdoc">Checks equality between this Transform2d and another object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_a4892aca0f64f88a35ec87a814764a839"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a4892aca0f64f88a35ec87a814764a839">frc::Transform2d::X</a></div><div class="ttdeci">constexpr units::meter_t X() const</div><div class="ttdoc">Returns the X component of the transformation's translation.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:53</div></div>
-<div class="ttc" id="aclassfrc_1_1_transform2d_html_a4b4f1c481967b41b56a1225858013a7b"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a4b4f1c481967b41b56a1225858013a7b">frc::Transform2d::operator!=</a></div><div class="ttdeci">bool operator!=(const Transform2d &amp;other) const</div><div class="ttdoc">Checks inequality between this Transform2d and another object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_a5e59ea725f7eb609e4110d045cf1adfd"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a5e59ea725f7eb609e4110d045cf1adfd">frc::Transform2d::Rotation</a></div><div class="ttdeci">constexpr const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the rotational component of the transformation.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:67</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_a8b9f6e10f3a87335370cfe2c6c98f1b8"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a8b9f6e10f3a87335370cfe2c6c98f1b8">frc::Transform2d::Transform2d</a></div><div class="ttdeci">Transform2d(Pose2d initial, Pose2d final)</div><div class="ttdoc">Constructs the transform that maps the initial pose to the final pose.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_a9be2e8b7b775596dc16b4573ede67108"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a9be2e8b7b775596dc16b4573ede67108">frc::Transform2d::Transform2d</a></div><div class="ttdeci">constexpr Transform2d()=default</div><div class="ttdoc">Constructs the identity transform – maps an initial pose to itself.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_a9c195da1d94411e491c0d9e27773766d"><div class="ttname"><a href="classfrc_1_1_transform2d.html#a9c195da1d94411e491c0d9e27773766d">frc::Transform2d::Y</a></div><div class="ttdeci">constexpr units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the transformation's translation.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:60</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_abd1557db2268e595a6514862702c7108"><div class="ttname"><a href="classfrc_1_1_transform2d.html#abd1557db2268e595a6514862702c7108">frc::Transform2d::operator/</a></div><div class="ttdeci">constexpr Transform2d operator/(double scalar) const</div><div class="ttdoc">Divides the transform by the scalar.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:92</div></div>
-<div class="ttc" id="aclassfrc_1_1_transform2d_html_ac3b3aa856dd66518d58400a97fdb0570"><div class="ttname"><a href="classfrc_1_1_transform2d.html#ac3b3aa856dd66518d58400a97fdb0570">frc::Transform2d::operator==</a></div><div class="ttdeci">bool operator==(const Transform2d &amp;other) const</div><div class="ttdoc">Checks equality between this Transform2d and another object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_ad3bef2098ad66b82fa903127ae81f6d9"><div class="ttname"><a href="classfrc_1_1_transform2d.html#ad3bef2098ad66b82fa903127ae81f6d9">frc::Transform2d::operator*</a></div><div class="ttdeci">constexpr Transform2d operator*(double scalar) const</div><div class="ttdoc">Multiplies the transform by the scalar.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:82</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform2d_html_ade4943169fbbc538c2cdf23c5cc8cfac"><div class="ttname"><a href="classfrc_1_1_transform2d.html#ade4943169fbbc538c2cdf23c5cc8cfac">frc::Transform2d::operator+</a></div><div class="ttdeci">Transform2d operator+(const Transform2d &amp;other) const</div><div class="ttdoc">Composes two transformations.</div></div>
 <div class="ttc" id="aclassfrc_1_1_translation2d_html"><div class="ttname"><a href="classfrc_1_1_translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2D space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:26</div></div>
@@ -247,7 +235,7 @@ $(document).ready(function(){initNavTree('_transform2d_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><a class="el" href="_transform2d_8h.html">Transform2d.h</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 04:02:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 05:03:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

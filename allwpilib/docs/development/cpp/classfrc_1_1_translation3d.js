@@ -5,7 +5,6 @@ var classfrc_1_1_translation3d =
     [ "Translation3d", "classfrc_1_1_translation3d.html#a4e843d4ab65984d00b5fb8b76d3b977e", null ],
     [ "Distance", "classfrc_1_1_translation3d.html#aede38df41d2374f58f94caedf055fb3a", null ],
     [ "Norm", "classfrc_1_1_translation3d.html#ab56a5096c2d7e2aea829d0c0d6b046af", null ],
-    [ "operator!=", "classfrc_1_1_translation3d.html#a516d4528ec7257130b35a5ef4eaedd9b", null ],
     [ "operator*", "classfrc_1_1_translation3d.html#a40d4cf814e023b1debb982c0692dc368", null ],
     [ "operator+", "classfrc_1_1_translation3d.html#a7ea132f209c5779945f80bfa2d5da786", null ],
     [ "operator-", "classfrc_1_1_translation3d.html#a77adeb4ad0dbe7a4557cc18eb9c7f9e2", null ],

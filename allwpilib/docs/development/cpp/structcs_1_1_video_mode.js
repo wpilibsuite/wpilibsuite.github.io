@@ -13,6 +13,5 @@ var structcs_1_1_video_mode =
     [ "VideoMode", "structcs_1_1_video_mode.html#a1ab1b4d090c15a11850819d4c2bafbb5", null ],
     [ "VideoMode", "structcs_1_1_video_mode.html#a163bf1a68be118da4263fb77ff51620f", null ],
     [ "operator bool", "structcs_1_1_video_mode.html#a7edfda92cb98f2dfb6e91e310e73f8d1", null ],
-    [ "operator!=", "structcs_1_1_video_mode.html#ae49551cdd0382d00ad9b716373559fb2", null ],
     [ "operator==", "structcs_1_1_video_mode.html#a7fd009ed027c50ca9790fd292aff9258", null ]
 ];

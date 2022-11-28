@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-31-g135c139</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-32-g42b6d4e</span>
    </div>
   </td>
  </tr>
@@ -162,25 +162,17 @@ $(document).ready(function(){initNavTree('_twist3d_8h_source.html',''); initResi
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * Checks inequality between this Twist3d and another object.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * Scale this by a given factor.</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * @param other The other object.</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   * @return Whether the two objects are not equal.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * @param factor The factor by which to scale.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   * @return The scaled Twist3d.</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist3d.html#a1d02acb8bdf18e567f147a7a08fcd1c0">   74</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structfrc_1_1_twist3d.html#a1d02acb8bdf18e567f147a7a08fcd1c0">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !<a class="code hl_function" href="namespacefrc.html#ab723662fe47bf067756eb0bca7d404c0">operator==</a>(other); }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   * Scale this by a given factor.</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   * @param factor The factor by which to scale.</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * @return The scaled Twist3d.</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">   82</a></span>  <span class="keyword">constexpr</span> <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a> <a class="code hl_function" href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">operator*</a>(<span class="keywordtype">double</span> factor)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a>{dx * factor, dy * factor, dz * factor,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                   rx * factor, ry * factor, rz * factor};</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">   74</a></span>  <span class="keyword">constexpr</span> <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a> <a class="code hl_function" href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">operator*</a>(<span class="keywordtype">double</span> factor)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structfrc_1_1_twist3d.html">Twist3d</a>{dx * factor, dy * factor, dz * factor,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                   rx * factor, ry * factor, rz * factor};</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_rotation3d_8h_html"><div class="ttname"><a href="_rotation3d_8h.html">Rotation3d.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
@@ -189,10 +181,8 @@ $(document).ready(function(){initNavTree('_twist3d_8h_source.html',''); initResi
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="amath_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionPipeline.h:11</div></div>
-<div class="ttc" id="anamespacefrc_html_ab723662fe47bf067756eb0bca7d404c0"><div class="ttname"><a href="namespacefrc.html#ab723662fe47bf067756eb0bca7d404c0">frc::operator==</a></div><div class="ttdeci">bool operator==(const Color &amp;c1, const Color &amp;c2)</div><div class="ttdef"><b>Definition:</b> Color.h:833</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html"><div class="ttname"><a href="structfrc_1_1_twist3d.html">frc::Twist3d</a></div><div class="ttdoc">A change in distance along a 3D arc since the last pose update.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:22</div></div>
-<div class="ttc" id="astructfrc_1_1_twist3d_html_a1d02acb8bdf18e567f147a7a08fcd1c0"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a1d02acb8bdf18e567f147a7a08fcd1c0">frc::Twist3d::operator!=</a></div><div class="ttdeci">bool operator!=(const Twist3d &amp;other) const</div><div class="ttdoc">Checks inequality between this Twist3d and another object.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:74</div></div>
-<div class="ttc" id="astructfrc_1_1_twist3d_html_a2d90775d087a68419c1ad4327de27ad1"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">frc::Twist3d::operator*</a></div><div class="ttdeci">constexpr Twist3d operator*(double factor) const</div><div class="ttdoc">Scale this by a given factor.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:82</div></div>
+<div class="ttc" id="astructfrc_1_1_twist3d_html_a2d90775d087a68419c1ad4327de27ad1"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a2d90775d087a68419c1ad4327de27ad1">frc::Twist3d::operator*</a></div><div class="ttdeci">constexpr Twist3d operator*(double factor) const</div><div class="ttdoc">Scale this by a given factor.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:74</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a3d5f347b69d6df1e04d2089c7dca37f9"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a3d5f347b69d6df1e04d2089c7dca37f9">frc::Twist3d::dx</a></div><div class="ttdeci">units::meter_t dx</div><div class="ttdoc">Linear &quot;dx&quot; component.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:26</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a42f749cce4a30707935cb78e9518738c"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a42f749cce4a30707935cb78e9518738c">frc::Twist3d::ry</a></div><div class="ttdeci">units::radian_t ry</div><div class="ttdoc">Rotation vector y component.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:46</div></div>
 <div class="ttc" id="astructfrc_1_1_twist3d_html_a5de70f587ebc217942a1c0327def0836"><div class="ttname"><a href="structfrc_1_1_twist3d.html#a5de70f587ebc217942a1c0327def0836">frc::Twist3d::operator==</a></div><div class="ttdeci">bool operator==(const Twist3d &amp;other) const</div><div class="ttdoc">Checks equality between this Twist3d and another object.</div><div class="ttdef"><b>Definition:</b> Twist3d.h:59</div></div>
@@ -206,7 +196,7 @@ $(document).ready(function(){initNavTree('_twist3d_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><a class="el" href="_twist3d_8h.html">Twist3d.h</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 04:02:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 05:03:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

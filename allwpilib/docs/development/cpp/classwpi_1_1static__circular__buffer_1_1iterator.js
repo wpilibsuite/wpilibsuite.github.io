@@ -6,9 +6,8 @@ var classwpi_1_1static__circular__buffer_1_1iterator =
     [ "reference", "classwpi_1_1static__circular__buffer_1_1iterator.html#aadfe29e921880999730ecb65a1b516e4", null ],
     [ "value_type", "classwpi_1_1static__circular__buffer_1_1iterator.html#a2687414579bfe023656630c8976426ad", null ],
     [ "iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html#ab6e276df8a2796ef47f2f9cb978dbd40", null ],
-    [ "operator!=", "classwpi_1_1static__circular__buffer_1_1iterator.html#a073d52378093e036ecf9816fea024e7e", null ],
     [ "operator*", "classwpi_1_1static__circular__buffer_1_1iterator.html#a3f748c242f4fd9fd1953d5c4b398b4bf", null ],
     [ "operator++", "classwpi_1_1static__circular__buffer_1_1iterator.html#ab098a1ee86acc894658252b099fd988e", null ],
     [ "operator++", "classwpi_1_1static__circular__buffer_1_1iterator.html#a178dd88a67093964c8ae48e8a6cd34c4", null ],
-    [ "operator==", "classwpi_1_1static__circular__buffer_1_1iterator.html#a8bc233b7c06ebc5371c8059c0cde108c", null ]
+    [ "operator==", "classwpi_1_1static__circular__buffer_1_1iterator.html#a69f74ce442f0d1e4f71d5142a237b17c", null ]
 ];
