@@ -171,15 +171,14 @@
 <span class="sourceLineNo">159</span><a id="line.159">   *</a>
 <span class="sourceLineNo">160</span><a id="line.160">   * @param command the command to start</a>
 <span class="sourceLineNo">161</span><a id="line.161">   * @return this button, so calls can be chained</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @deprecated Instead, pass {@link #rising()} as an end condition to {@link</a>
-<span class="sourceLineNo">163</span><a id="line.163">   *     Command#until(BooleanSupplier)}.</a>
-<span class="sourceLineNo">164</span><a id="line.164">   */</a>
-<span class="sourceLineNo">165</span><a id="line.165">  @Deprecated</a>
-<span class="sourceLineNo">166</span><a id="line.166">  public Button cancelWhenPressed(final Command command) {</a>
-<span class="sourceLineNo">167</span><a id="line.167">    cancelWhenActive(command);</a>
-<span class="sourceLineNo">168</span><a id="line.168">    return this;</a>
-<span class="sourceLineNo">169</span><a id="line.169">  }</a>
-<span class="sourceLineNo">170</span><a id="line.170">}</a>
+<span class="sourceLineNo">162</span><a id="line.162">   * @deprecated Instead, pass this as an end condition to {@link Command#until(BooleanSupplier)}.</a>
+<span class="sourceLineNo">163</span><a id="line.163">   */</a>
+<span class="sourceLineNo">164</span><a id="line.164">  @Deprecated</a>
+<span class="sourceLineNo">165</span><a id="line.165">  public Button cancelWhenPressed(final Command command) {</a>
+<span class="sourceLineNo">166</span><a id="line.166">    cancelWhenActive(command);</a>
+<span class="sourceLineNo">167</span><a id="line.167">    return this;</a>
+<span class="sourceLineNo">168</span><a id="line.168">  }</a>
+<span class="sourceLineNo">169</span><a id="line.169">}</a>
 
 
 
