@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-32-g42b6d4e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-33-g1a59737</span>
    </div>
   </td>
  </tr>
@@ -141,6 +141,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e8adf69482d1b4558788a98e2f2702e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_subsystem.html#a4e8adf69482d1b4558788a98e2f2702e">Register</a> ()</td></tr>
 <tr class="memdesc:a4e8adf69482d1b4558788a98e2f2702e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers this subsystem with the <a class="el" href="classfrc2_1_1_command_scheduler.html" title="The scheduler responsible for running Commands.">CommandScheduler</a>, allowing its <a class="el" href="classfrc2_1_1_subsystem.html#a9b1d8b2045ee578bd7427048c0ee9a6d" title="This method is called periodically by the CommandScheduler.">Periodic()</a> method to be called when the scheduler runs.  <a href="classfrc2_1_1_subsystem.html#a4e8adf69482d1b4558788a98e2f2702e">More...</a><br /></td></tr>
 <tr class="separator:a4e8adf69482d1b4558788a98e2f2702e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8b3b7dab6f54fb8635e335dad448fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_subsystem.html#a6b8b3b7dab6f54fb8635e335dad448fe">RunOnce</a> (std::function&lt; void()&gt; action)</td></tr>
+<tr class="memdesc:a6b8b3b7dab6f54fb8635e335dad448fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a command that runs an action once and finishes.  <a href="classfrc2_1_1_subsystem.html#a6b8b3b7dab6f54fb8635e335dad448fe">More...</a><br /></td></tr>
+<tr class="separator:a6b8b3b7dab6f54fb8635e335dad448fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10a5933061ecec62aef68e6b0e872ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_subsystem.html#ad10a5933061ecec62aef68e6b0e872ec">Run</a> (std::function&lt; void()&gt; action)</td></tr>
+<tr class="memdesc:ad10a5933061ecec62aef68e6b0e872ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a command that runs an action every iteration until interrupted.  <a href="classfrc2_1_1_subsystem.html#ad10a5933061ecec62aef68e6b0e872ec">More...</a><br /></td></tr>
+<tr class="separator:ad10a5933061ecec62aef68e6b0e872ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e0e68a9f673f709607f289a0b0e1586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_subsystem.html#a9e0e68a9f673f709607f289a0b0e1586">StartEnd</a> (std::function&lt; void()&gt; start, std::function&lt; void()&gt; end)</td></tr>
+<tr class="memdesc:a9e0e68a9f673f709607f289a0b0e1586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a command that runs an action once and another action when the command is interrupted.  <a href="classfrc2_1_1_subsystem.html#a9e0e68a9f673f709607f289a0b0e1586">More...</a><br /></td></tr>
+<tr class="separator:a9e0e68a9f673f709607f289a0b0e1586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722d6ea8db79eb7f286b401e085a8e41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_subsystem.html#a722d6ea8db79eb7f286b401e085a8e41">RunEnd</a> (std::function&lt; void()&gt; run, std::function&lt; void()&gt; end)</td></tr>
+<tr class="memdesc:a722d6ea8db79eb7f286b401e085a8e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a command that runs an action every iteration until interrupted, and then runs a second action.  <a href="classfrc2_1_1_subsystem.html#a722d6ea8db79eb7f286b401e085a8e41">More...</a><br /></td></tr>
+<tr class="separator:a722d6ea8db79eb7f286b401e085a8e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A robot subsystem. </p>
@@ -262,6 +274,98 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad10a5933061ecec62aef68e6b0e872ec" name="ad10a5933061ecec62aef68e6b0e872ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10a5933061ecec62aef68e6b0e872ec">&#9670;&nbsp;</a></span>Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::Subsystem::Run </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a command that runs an action every iteration until interrupted. </p>
+<p >Requires this subsystem.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>the action to run </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a722d6ea8db79eb7f286b401e085a8e41" name="a722d6ea8db79eb7f286b401e085a8e41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722d6ea8db79eb7f286b401e085a8e41">&#9670;&nbsp;</a></span>RunEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::Subsystem::RunEnd </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>run</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a command that runs an action every iteration until interrupted, and then runs a second action. </p>
+<p >Requires this subsystem.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">run</td><td>the action to run every iteration </td></tr>
+    <tr><td class="paramname">end</td><td>the action to run on interrupt </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6b8b3b7dab6f54fb8635e335dad448fe" name="a6b8b3b7dab6f54fb8635e335dad448fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8b3b7dab6f54fb8635e335dad448fe">&#9670;&nbsp;</a></span>RunOnce()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::Subsystem::RunOnce </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a command that runs an action once and finishes. </p>
+<p >Requires this subsystem.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>the action to run </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a282fb09a8046ebaa59496fc01ade3b53" name="a282fb09a8046ebaa59496fc01ade3b53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a282fb09a8046ebaa59496fc01ade3b53">&#9670;&nbsp;</a></span>SetDefaultCommand() <span class="overload">[1/2]</span></h2>
 
@@ -354,6 +458,44 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
+<a id="a9e0e68a9f673f709607f289a0b0e1586" name="a9e0e68a9f673f709607f289a0b0e1586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e0e68a9f673f709607f289a0b0e1586">&#9670;&nbsp;</a></span>StartEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::Subsystem::StartEnd </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a command that runs an action once and another action when the command is interrupted. </p>
+<p >Requires this subsystem.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>the action to run on start </td></tr>
+    <tr><td class="paramname">end</td><td>the action to run on interrupt </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc2/command/<a class="el" href="_subsystem_8h_source.html">Subsystem.h</a></li>
 </ul>
@@ -363,7 +505,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 05:03:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 15:44:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

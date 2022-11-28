@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-32-g42b6d4e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-33-g1a59737</span>
    </div>
   </td>
  </tr>
@@ -169,6 +169,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a5580e71dfe356d2b261efe213f7c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a2a5580e71dfe356d2b261efe213f7c67">HandleInterrupt</a> (std::function&lt; void()&gt; handler) &amp;&amp;</td></tr>
 <tr class="memdesc:a2a5580e71dfe356d2b261efe213f7c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a lambda to call on interrupt, following the command's inherent <a class="el" href="classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c" title="The action to take when the command ends.">Command::End(bool)</a> method.  <a href="classfrc2_1_1_command_ptr.html#a2a5580e71dfe356d2b261efe213f7c67">More...</a><br /></td></tr>
 <tr class="separator:a2a5580e71dfe356d2b261efe213f7c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646653c7bc45902ac82186ade733ec8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a646653c7bc45902ac82186ade733ec8e">WithName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name) &amp;&amp;</td></tr>
+<tr class="memdesc:a646653c7bc45902ac82186ade733ec8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this <a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a> with a name.  <a href="classfrc2_1_1_command_ptr.html#a646653c7bc45902ac82186ade733ec8e">More...</a><br /></td></tr>
+<tr class="separator:a646653c7bc45902ac82186ade733ec8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab49b42b4653dbedf2db66dc0f1a211dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_base.html">CommandBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#ab49b42b4653dbedf2db66dc0f1a211dd">get</a> () const</td></tr>
 <tr class="memdesc:ab49b42b4653dbedf2db66dc0f1a211dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a raw pointer to the held command.  <a href="classfrc2_1_1_command_ptr.html#ab49b42b4653dbedf2db66dc0f1a211dd">More...</a><br /></td></tr>
 <tr class="separator:ab49b42b4653dbedf2db66dc0f1a211dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -987,6 +990,34 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
+<a id="a646653c7bc45902ac82186ade733ec8e" name="a646653c7bc45902ac82186ade733ec8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646653c7bc45902ac82186ade733ec8e">&#9670;&nbsp;</a></span>WithName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> frc2::CommandPtr::WithName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decorates this <a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a> with a name. </p>
+<p >Is an inline function for <a class="el" href="classfrc2_1_1_command.html#aa899d204a7af40f2df9874f62ce6d838" title="Sets the name of this Command.">Command::SetName(std::string_view)</a>;</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated <a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a> </dd></dl>
+
+</div>
+</div>
 <a id="ac6b2e1e4f55ed905ec7d189b9288e3d0" name="ac6b2e1e4f55ed905ec7d189b9288e3d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6b2e1e4f55ed905ec7d189b9288e3d0">&#9670;&nbsp;</a></span>WithTimeout()</h2>
 
@@ -1024,7 +1055,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 05:03:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 15:44:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

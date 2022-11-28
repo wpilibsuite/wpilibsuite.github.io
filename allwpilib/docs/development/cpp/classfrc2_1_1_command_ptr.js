@@ -29,5 +29,6 @@ var classfrc2_1_1_command_ptr =
     [ "Unwrap", "classfrc2_1_1_command_ptr.html#ab3a0d11c6d6e8db57be7b56b6d2a4ad5", null ],
     [ "UnwrapVector", "classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34", null ],
     [ "WithInterruptBehavior", "classfrc2_1_1_command_ptr.html#a5855e3c9041001b4a0774c7abf3aef58", null ],
+    [ "WithName", "classfrc2_1_1_command_ptr.html#a646653c7bc45902ac82186ade733ec8e", null ],
     [ "WithTimeout", "classfrc2_1_1_command_ptr.html#ac6b2e1e4f55ed905ec7d189b9288e3d0", null ]
 ];
