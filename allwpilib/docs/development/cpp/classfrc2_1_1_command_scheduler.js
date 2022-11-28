@@ -28,6 +28,7 @@ var classfrc2_1_1_command_scheduler =
     [ "RegisterSubsystem", "classfrc2_1_1_command_scheduler.html#a40983325f92914d56a6c961b4f31c27b", null ],
     [ "RegisterSubsystem", "classfrc2_1_1_command_scheduler.html#a421eb3d84272913e174833eb878ec9e1", null ],
     [ "RegisterSubsystem", "classfrc2_1_1_command_scheduler.html#a565f86f2abd1cb34a866c13501d7f0d7", null ],
+    [ "RemoveDefaultCommand", "classfrc2_1_1_command_scheduler.html#a8643d819f9332bd7b7437fe8635294e1", null ],
     [ "Requiring", "classfrc2_1_1_command_scheduler.html#aa8188ad0816a38ef841d1fd58b18fd45", null ],
     [ "Run", "classfrc2_1_1_command_scheduler.html#aa5000fa52e320da7ba72c196f34aa0f5", null ],
     [ "Schedule", "classfrc2_1_1_command_scheduler.html#a4976d9b37e5547ebdbdfc74ffa4a9be5", null ],

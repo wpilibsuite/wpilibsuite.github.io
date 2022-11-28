@@ -1,9 +1,5 @@
 var NAVTREEINDEX168 =
 {
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ac49137ea19ba3bf0cbcd441d2534492f":[4,0,8,4,341,0],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ae68821f76ebd4ff5e8bdf5c65aa0e2ed":[4,0,8,4,341,1],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ae68821f76ebd4ff5e8bdf5c65aa0e2ed":[5,0,4,2,339,1],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html":[4,0,8,4,342],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html":[5,0,4,2,340],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html#a4eb67ab9d04d1f63990386eeeda00012":[4,0,8,4,342,1],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html#a4eb67ab9d04d1f63990386eeeda00012":[5,0,4,2,340,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX168 =
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a27a59fe6d1013f9ad31889a4fd84ceb0":[5,0,4,2,364,1],
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a28d2f89010648b577bba20078bafbb31":[5,0,4,2,364,3],
 "struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a28d2f89010648b577bba20078bafbb31":[4,0,8,4,366,3],
-"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a4da29230682439ead46dabc2d12254b4":[5,0,4,2,364,2]
+"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a4da29230682439ead46dabc2d12254b4":[5,0,4,2,364,2],
+"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a4da29230682439ead46dabc2d12254b4":[4,0,8,4,366,2],
+"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a557c34b0224f3ca7b0b995c58da42ff9":[4,0,8,4,366,7],
+"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a557c34b0224f3ca7b0b995c58da42ff9":[5,0,4,2,364,7],
+"struct_eigen_1_1internal_1_1evaluator__wrapper__base.html#a57aef101e8da79904a4aafce99b2702e":[4,0,8,4,366,6]
 };

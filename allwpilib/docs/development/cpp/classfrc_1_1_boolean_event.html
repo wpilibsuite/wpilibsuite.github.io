@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-35-gca35a2e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
    </div>
   </td>
  </tr>
@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35f44d70a3740b94390841defda16e0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_boolean_event.html#a35f44d70a3740b94390841defda16e0c">GetAsBoolean</a> () const</td></tr>
 <tr class="memdesc:a35f44d70a3740b94390841defda16e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether this event is active or not.  <a href="classfrc_1_1_boolean_event.html#a35f44d70a3740b94390841defda16e0c">More...</a><br /></td></tr>
 <tr class="separator:a35f44d70a3740b94390841defda16e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5693a13e69c94eec67ca79272be040ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_boolean_event.html#a5693a13e69c94eec67ca79272be040ea">IfHigh</a> (<a class="el" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt; void()&gt; action)</td></tr>
-<tr class="memdesc:a5693a13e69c94eec67ca79272be040ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind an action to this event.  <a href="classfrc_1_1_boolean_event.html#a5693a13e69c94eec67ca79272be040ea">More...</a><br /></td></tr>
-<tr class="separator:a5693a13e69c94eec67ca79272be040ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85bb5ef82fd359357540a9cc7c462104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_boolean_event.html#a85bb5ef82fd359357540a9cc7c462104">IfHigh</a> (std::function&lt; void()&gt; action)</td></tr>
+<tr class="memdesc:a85bb5ef82fd359357540a9cc7c462104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind an action to this event.  <a href="classfrc_1_1_boolean_event.html#a85bb5ef82fd359357540a9cc7c462104">More...</a><br /></td></tr>
+<tr class="separator:a85bb5ef82fd359357540a9cc7c462104"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b94fcada04e84e4cc51b0ac57920c9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_boolean_event.html#a9b94fcada04e84e4cc51b0ac57920c9c">operator std::function&lt; bool</a> ()&gt;()</td></tr>
 <tr class="separator:a9b94fcada04e84e4cc51b0ac57920c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a980f78da797a8e8ad8010eda37ea3ac6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -150,7 +150,7 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class provides an easy way to link actions to inputs. </p>
-<p >Each object represents a boolean condition to which callback actions can be bound using <code><a class="el" href="classfrc_1_1_boolean_event.html#a5693a13e69c94eec67ca79272be040ea">IfHigh(wpi::unique_function&lt;void()&gt;)</a></code>.</p>
+<p >Each object represents a boolean condition to which callback actions can be bound using <code><a class="el" href="classfrc_1_1_boolean_event.html#a85bb5ef82fd359357540a9cc7c462104">IfHigh(std::function&lt;void()&gt;)</a></code>.</p>
 <p >These events can easily be composed using factories such as <code><a class="el" href="classfrc_1_1_boolean_event.html#a5752a8aadbc6112f4d811331697a9824">operator!</a></code>, <code><a class="el" href="classfrc_1_1_boolean_event.html#af13b440dc46878a69aa3bea1fe134d0c">operator||</a></code>, <code><a class="el" href="classfrc_1_1_boolean_event.html#a7d0cb7f01eaa013db803201a558dc17d">operator&amp;&amp;</a></code> etc.</p>
 <p >To get an event that activates only when this one changes, see <code><a class="el" href="classfrc_1_1_boolean_event.html#a1aaed05926ef3fbed348e993b6303d1d">Falling()</a></code> and <code><a class="el" href="classfrc_1_1_boolean_event.html#ab18323c12cfe5ab20b1504a6d9509fcd">Rising()</a></code>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -307,8 +307,8 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="a5693a13e69c94eec67ca79272be040ea" name="a5693a13e69c94eec67ca79272be040ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5693a13e69c94eec67ca79272be040ea">&#9670;&nbsp;</a></span>IfHigh()</h2>
+<a id="a85bb5ef82fd359357540a9cc7c462104" name="a85bb5ef82fd359357540a9cc7c462104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85bb5ef82fd359357540a9cc7c462104">&#9670;&nbsp;</a></span>IfHigh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +316,7 @@ template&lt;class T &gt; </div>
         <tr>
           <td class="memname">void frc::BooleanEvent::IfHigh </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt; void()&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>action</em></td><td>)</td>
           <td></td>
         </tr>
@@ -456,7 +456,7 @@ template&lt;class T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_boolean_event.html">BooleanEvent</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 17:01:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:06:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

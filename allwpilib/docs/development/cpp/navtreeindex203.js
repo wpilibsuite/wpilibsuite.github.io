@@ -1,9 +1,5 @@
 var NAVTREEINDEX203 =
 {
-"structwpi_1_1_pointer_int_pair_info.html#abea6aabb92a791e4a1987553ad2897d0ae4401b6d48b3c6159d5eec1e5c867169":[5,0,14,105,0,2],
-"structwpi_1_1_pointer_int_pair_info.html#abea6aabb92a791e4a1987553ad2897d0aee7e35cc4962c7d9880e52e54bd841da":[4,0,24,106,0,1],
-"structwpi_1_1_pointer_int_pair_info.html#abea6aabb92a791e4a1987553ad2897d0aee7e35cc4962c7d9880e52e54bd841da":[5,0,14,105,0,1],
-"structwpi_1_1_pointer_int_pair_info.html#abea6aabb92a791e4a1987553ad2897d0af0bb3f42ef87792fd8f29549806896db":[5,0,14,105,0,3],
 "structwpi_1_1_pointer_int_pair_info.html#abea6aabb92a791e4a1987553ad2897d0af0bb3f42ef87792fd8f29549806896db":[4,0,24,106,0,3],
 "structwpi_1_1_pointer_int_pair_info.html#ac4187f5d62eaaa1367ed4198b631d965":[4,0,24,106,2],
 "structwpi_1_1_pointer_int_pair_info.html#ac4187f5d62eaaa1367ed4198b631d965":[5,0,14,105,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX203 =
 "structwpi_1_1detail_1_1_leading_zeros_counter.html#a11d23ddbfa19ee289acd8bb7901f1ccd":[5,0,14,0,45,0],
 "structwpi_1_1detail_1_1_population_counter.html":[4,0,24,0,50],
 "structwpi_1_1detail_1_1_population_counter.html":[5,0,14,0,50],
-"structwpi_1_1detail_1_1_population_counter.html#a49e48b0e8456a5009be25e3dd3e7f7ed":[5,0,14,0,50,0]
+"structwpi_1_1detail_1_1_population_counter.html#a49e48b0e8456a5009be25e3dd3e7f7ed":[5,0,14,0,50,0],
+"structwpi_1_1detail_1_1_population_counter.html#a49e48b0e8456a5009be25e3dd3e7f7ed":[4,0,24,0,50,0],
+"structwpi_1_1detail_1_1_population_counter_3_01_t_00_018_01_4.html":[5,0,14,0,51],
+"structwpi_1_1detail_1_1_population_counter_3_01_t_00_018_01_4.html":[4,0,24,0,51],
+"structwpi_1_1detail_1_1_population_counter_3_01_t_00_018_01_4.html#aa21b16d9533711e5eda30c0bde74356b":[5,0,14,0,51,0]
 };

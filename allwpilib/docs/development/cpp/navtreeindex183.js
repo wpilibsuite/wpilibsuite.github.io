@@ -1,9 +1,5 @@
 var NAVTREEINDEX183 =
 {
-"struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01false_00_01true_01_4.html#ad244967e2193066c441e0d897a1045d2":[5,0,4,2,1181,0],
-"struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01true_00_01is__integer_01_4.html":[5,0,4,2,1182],
-"struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01true_00_01is__integer_01_4.html":[4,0,8,4,1184],
-"struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01true_00_01is__integer_01_4.html#a0d96e8a708df6bb380fd1f00bb90d17d":[5,0,4,2,1182,0],
 "struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01true_00_01is__integer_01_4.html#a0d96e8a708df6bb380fd1f00bb90d17d":[4,0,8,4,1184,0],
 "struct_eigen_1_1internal_1_1scalar__sin__op.html":[4,0,8,4,1185],
 "struct_eigen_1_1internal_1_1scalar__sin__op.html":[5,0,4,2,1183],
@@ -249,5 +245,9 @@ var NAVTREEINDEX183 =
 "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#ac3a3f68da00f55e0ea869769e8be0283":[4,0,8,4,1230,10],
 "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#aee1b844c160d1c76f1e8fc71dfd2830b":[5,0,4,2,1228,3],
 "struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#aee1b844c160d1c76f1e8fc71dfd2830b":[4,0,8,4,1230,3],
-"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#aef0b1774a4406198d85fdc910a09f169":[5,0,4,2,1228,2]
+"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#aef0b1774a4406198d85fdc910a09f169":[5,0,4,2,1228,2],
+"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_index_based_01_4.html#aef0b1774a4406198d85fdc910a09f169":[4,0,8,4,1230,2],
+"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_iterator_based_01_4.html":[4,0,8,4,1231],
+"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_iterator_based_01_4.html":[5,0,4,2,1229],
+"struct_eigen_1_1internal_1_1sparse__conjunction__evaluator_3_01_xpr_type_00_01_iterator_based_00_01_iterator_based_01_4.html#a05d24b66562ee67d403a308d59aada26":[4,0,8,4,1231,9]
 };

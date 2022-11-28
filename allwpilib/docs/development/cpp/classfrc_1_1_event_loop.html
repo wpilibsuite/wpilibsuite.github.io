@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-35-gca35a2e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('classfrc_1_1_event_loop.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1_event_loop-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc::EventLoop Class Reference</div></div>
@@ -112,9 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa56c1b1a45ebef451f18d21d953db195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ca8f9f480966cfed7a67a1c566a0caf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_event_loop.html">EventLoop</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_event_loop.html#a5ca8f9f480966cfed7a67a1c566a0caf">operator=</a> (const <a class="el" href="classfrc_1_1_event_loop.html">EventLoop</a> &amp;)=delete</td></tr>
 <tr class="separator:a5ca8f9f480966cfed7a67a1c566a0caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac85aaf3851270aa5ed29125ea68f0d9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_event_loop.html#ac85aaf3851270aa5ed29125ea68f0d9d">Bind</a> (std::function&lt; bool()&gt; condition, <a class="el" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt; void()&gt; action)</td></tr>
-<tr class="memdesc:ac85aaf3851270aa5ed29125ea68f0d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a new action to run whenever the condition is true.  <a href="classfrc_1_1_event_loop.html#ac85aaf3851270aa5ed29125ea68f0d9d">More...</a><br /></td></tr>
-<tr class="separator:ac85aaf3851270aa5ed29125ea68f0d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414398027285312b4d1304db7e9bdc2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_event_loop.html#a414398027285312b4d1304db7e9bdc2b">Bind</a> (<a class="el" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt; void()&gt; action)</td></tr>
+<tr class="memdesc:a414398027285312b4d1304db7e9bdc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a new action to run.  <a href="classfrc_1_1_event_loop.html#a414398027285312b4d1304db7e9bdc2b">More...</a><br /></td></tr>
+<tr class="separator:a414398027285312b4d1304db7e9bdc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93849979c38efc592fa7413da566bacb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">Poll</a> ()</td></tr>
 <tr class="memdesc:a93849979c38efc592fa7413da566bacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll all bindings.  <a href="classfrc_1_1_event_loop.html#a93849979c38efc592fa7413da566bacb">More...</a><br /></td></tr>
 <tr class="separator:a93849979c38efc592fa7413da566bacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,8 +168,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac85aaf3851270aa5ed29125ea68f0d9d" name="ac85aaf3851270aa5ed29125ea68f0d9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac85aaf3851270aa5ed29125ea68f0d9d">&#9670;&nbsp;</a></span>Bind()</h2>
+<a id="a414398027285312b4d1304db7e9bdc2b" name="a414398027285312b4d1304db7e9bdc2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414398027285312b4d1304db7e9bdc2b">&#9670;&nbsp;</a></span>Bind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,27 +177,16 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void frc::EventLoop::Bind </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; bool()&gt;&#160;</td>
-          <td class="paramname"><em>condition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="classwpi_1_1unique__function.html">wpi::unique_function</a>&lt; void()&gt;&#160;</td>
-          <td class="paramname"><em>action</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>action</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Bind a new action to run whenever the condition is true. </p>
+<p>Bind a new action to run. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">condition</td><td>the condition to listen to. </td></tr>
     <tr><td class="paramname">action</td><td>the action to run. </td></tr>
   </table>
   </dd>
@@ -279,7 +267,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_event_loop.html">EventLoop</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 17:01:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:06:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

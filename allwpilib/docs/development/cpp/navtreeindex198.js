@@ -1,9 +1,5 @@
 var NAVTREEINDEX198 =
 {
-"structfrc_1_1_trajectory_1_1_state.html#aa73dc4fb5fdc824aa3d1106bb5a5704d":[4,0,10,190,0,2],
-"structfrc_1_1_trajectory_1_1_state.html#aa73dc4fb5fdc824aa3d1106bb5a5704d":[5,0,6,186,0,2],
-"structfrc_1_1_trajectory_1_1_state.html#acb781fba9b2d252260dd01fb9e7a20c5":[4,0,10,190,0,5],
-"structfrc_1_1_trajectory_1_1_state.html#acb781fba9b2d252260dd01fb9e7a20c5":[5,0,6,186,0,5],
 "structfrc_1_1_trajectory_1_1_state.html#ae28ff15f946768d366e4ba87f319fd50":[4,0,10,190,0,3],
 "structfrc_1_1_trajectory_1_1_state.html#ae28ff15f946768d366e4ba87f319fd50":[5,0,6,186,0,3],
 "structfrc_1_1_trajectory_constraint_1_1_min_max.html":[4,0,10,192,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX198 =
 "structjoin__view.html#a228866dfb9958a016ea4fc9703bc9590":[5,0,185,1],
 "structjoin__view.html#a44c6331d74f29c6bbcae157d76f8969e":[5,0,185,0],
 "structjoin__view.html#a9eca47071ad8811c82e8449e257fc469":[5,0,185,2],
-"structjoin__view.html#ac6c6ff6dc9b7e5a1355982208e7142e0":[5,0,185,3]
+"structjoin__view.html#ac6c6ff6dc9b7e5a1355982208e7142e0":[5,0,185,3],
+"structmake__unsigned__or__bool.html":[5,0,187],
+"structmake__unsigned__or__bool_3_01bool_01_4.html":[5,0,188],
+"structmake__unsigned__or__bool_3_01bool_01_4.html#aaa717db908c1a59247a172d02d38304b":[5,0,188,0],
+"structmake__unsigned__or__unchanged.html":[5,0,189]
 };

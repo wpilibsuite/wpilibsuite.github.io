@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-35-gca35a2e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
    </div>
   </td>
  </tr>
@@ -181,6 +181,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ae9b86d89f70ad34d98458679f80ac0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">SetDefaultCommand</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *subsystem, <a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a> &amp;&amp;defaultCommand)</td></tr>
 <tr class="memdesc:a8ae9b86d89f70ad34d98458679f80ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the default command for a subsystem.  <a href="classfrc2_1_1_command_scheduler.html#a8ae9b86d89f70ad34d98458679f80ac0">More...</a><br /></td></tr>
 <tr class="separator:a8ae9b86d89f70ad34d98458679f80ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8643d819f9332bd7b7437fe8635294e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_scheduler.html#a8643d819f9332bd7b7437fe8635294e1">RemoveDefaultCommand</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *subsystem)</td></tr>
+<tr class="memdesc:a8643d819f9332bd7b7437fe8635294e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the default command for a subsystem.  <a href="classfrc2_1_1_command_scheduler.html#a8643d819f9332bd7b7437fe8635294e1">More...</a><br /></td></tr>
+<tr class="separator:a8643d819f9332bd7b7437fe8635294e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0926767c93981ac3200bc29c4809c34b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">GetDefaultCommand</a> (const <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *subsystem) const</td></tr>
 <tr class="memdesc:a0926767c93981ac3200bc29c4809c34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default command associated with this subsystem.  <a href="classfrc2_1_1_command_scheduler.html#a0926767c93981ac3200bc29c4809c34b">More...</a><br /></td></tr>
 <tr class="separator:a0926767c93981ac3200bc29c4809c34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -977,6 +980,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a8643d819f9332bd7b7437fe8635294e1" name="a8643d819f9332bd7b7437fe8635294e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8643d819f9332bd7b7437fe8635294e1">&#9670;&nbsp;</a></span>RemoveDefaultCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc2::CommandScheduler::RemoveDefaultCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *&#160;</td>
+          <td class="paramname"><em>subsystem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes the default command for a subsystem. </p>
+<p >The current default command will run until another command is scheduled that requires the subsystem, at which point the current default command will not be re-scheduled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subsystem</td><td>the subsystem whose default command will be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa8188ad0816a38ef841d1fd58b18fd45" name="aa8188ad0816a38ef841d1fd58b18fd45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8188ad0816a38ef841d1fd58b18fd45">&#9670;&nbsp;</a></span>Requiring()</h2>
 
@@ -1390,7 +1420,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_scheduler.html">CommandScheduler</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 17:01:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:06:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

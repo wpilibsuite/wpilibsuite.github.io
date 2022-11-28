@@ -5160,7 +5160,6 @@ var hierarchy =
     ] ],
     [ "Eigen::UniformScaling< Scalar >", "class_eigen_1_1_uniform_scaling.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
-    [ "wpi::unique_function< void()>", "classwpi_1_1unique__function.html", null ],
     [ "wpi::detail::UniqueFunctionBase< ReturnT, ParamTs >", "classwpi_1_1detail_1_1_unique_function_base.html", null ],
     [ "wpi::detail::UniqueFunctionBase< R, P... >", "classwpi_1_1detail_1_1_unique_function_base.html", [
       [ "wpi::unique_function< R(P...) const >", "classwpi_1_1unique__function_3_01_r_07_p_8_8_8_08_01const_01_4.html", null ],

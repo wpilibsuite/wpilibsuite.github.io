@@ -1,9 +1,5 @@
 var NAVTREEINDEX159 =
 {
-"struct_eigen_1_1bfloat16.html#a9f4a238f0abe7e9a36344dbe89407ee0":[4,0,8,20,7],
-"struct_eigen_1_1bfloat16.html#ab5ccfea1fdb67bb04ac97d998bbe723c":[4,0,8,20,1],
-"struct_eigen_1_1bfloat16.html#ab5ccfea1fdb67bb04ac97d998bbe723c":[5,0,4,17,1],
-"struct_eigen_1_1bfloat16.html#abca7169801ab1d472bf2a4751bf9f92f":[5,0,4,17,3],
 "struct_eigen_1_1bfloat16.html#abca7169801ab1d472bf2a4751bf9f92f":[4,0,8,20,3],
 "struct_eigen_1_1bfloat16__impl_1_1____bfloat16__raw.html":[5,0,4,0,0],
 "struct_eigen_1_1bfloat16__impl_1_1____bfloat16__raw.html":[4,0,8,1,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX159 =
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a860d6a0c898f8187dab5ca35567082cd":[5,0,4,2,77,2],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#ab03c962995ac3213c9ebb3eced4aba88":[4,0,8,4,79,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#ab03c962995ac3213c9ebb3eced4aba88":[5,0,4,2,77,0],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html":[5,0,4,2,85]
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html":[5,0,4,2,85],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html":[4,0,8,4,87],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html#a2f4176d30e11f2c578e3e81b399518cb":[5,0,4,2,85,5],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html#a2f4176d30e11f2c578e3e81b399518cb":[4,0,8,4,87,5],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_017b35cf78061a31c93b838bddfa619fa3.html#a429efae6af903e6754d8ed4bfd28948a":[5,0,4,2,85,1]
 };

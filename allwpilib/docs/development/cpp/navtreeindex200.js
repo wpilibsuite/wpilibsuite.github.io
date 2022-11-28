@@ -1,9 +1,5 @@
 var NAVTREEINDEX200 =
 {
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a66f54974a2462fd845b91a1ccaaa27f0":[4,0,22,9,16],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a66f54974a2462fd845b91a1ccaaa27f0":[5,0,12,9,16],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a6b8221429e375d4f322c8fa9557bb314":[5,0,12,9,15],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a6b8221429e375d4f322c8fa9557bb314":[4,0,22,9,15],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a6e6b7b17acceab41f2c8ba842a778992":[4,0,22,9,21],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a6e6b7b17acceab41f2c8ba842a778992":[5,0,12,9,21],
 "structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html#a75072f34b1d8ca14eecffe303c30e9ac":[4,0,22,9,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX200 =
 "structunits_1_1traits_1_1is__same__scale.html":[3,32,9],
 "structunits_1_1traits_1_1is__unit.html":[3,32,2],
 "structunits_1_1traits_1_1is__unit__t.html":[3,32,6],
-"structunits_1_1traits_1_1is__unit__value__t.html":[3,32,10]
+"structunits_1_1traits_1_1is__unit__value__t.html":[3,32,10],
+"structunits_1_1traits_1_1is__unit__value__t__category.html":[3,32,11],
+"structunits_1_1unit.html":[3,27,1],
+"structunits_1_1unit.html#a0cdaa6959c83b6ddb1038d99a31e7814":[3,27,1,3],
+"structunits_1_1unit.html#a0f2b640f43170629369706775699fdbe":[3,27,1,1]
 };

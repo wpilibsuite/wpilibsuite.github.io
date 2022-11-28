@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-35-gca35a2e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
    </div>
   </td>
  </tr>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classfrc2_1_1_button.html#ad698bbbc2dd7285a30a3fc6b160e0d14">frc2::Button::Button</a>  ()=default</dt>
 <dd><a class="anchor" id="_deprecated000078"></a>Replace with <a class="el" href="classfrc2_1_1_trigger.html" title="This class provides an easy way to link commands to conditions.">Trigger</a>  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_button.html#afa72c5275d4e40a29dee531792cc1b29">frc2::Button::CancelWhenPressed</a>  (<a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a> *command)</dt>
-<dd><a class="anchor" id="_deprecated000095"></a>Use <a class="el" href="classfrc2_1_1_trigger.html#a3b403000578374fd98b70bddc6a1894f" title="Get a new event that events only when this one newly changes to true.">Rising()</a> as a command end condition with Until() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000095"></a>Pass this as a command end condition with Until() instead.  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_button.html#ac4c211c92f2de467f474e0979b9e4d88">frc2::Button::ToggleWhenPressed</a>  (T &amp;&amp;command)</dt>
 <dd><a class="anchor" id="_deprecated000094"></a>Replace with <a class="el" href="classfrc2_1_1_trigger.html#ab4a0cd5ca454ee6d646704d1bdfed01f" title="Toggles a command when the condition changes from false to true.">Trigger::ToggleOnTrue()</a>  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_button.html#ac23f277fcd6c3b1d68157ed73f2aac55">frc2::Button::ToggleWhenPressed</a>  (<a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a> *command)</dt>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Class <a class="el" href="classfrc2_1_1_perpetual_command.html">frc2::PerpetualCommand</a>  </dt>
 <dd><a class="anchor" id="_deprecated000058"></a><a class="el" href="classfrc2_1_1_perpetual_command.html" title="A command that runs another command in perpetuity, ignoring that command&#39;s end conditions.">PerpetualCommand</a> violates the assumption that execute() doesn't get called after isFinished() returns true &ndash; an assumption that should be valid. This was unsafe/undefined behavior from the start, and <a class="el" href="classfrc2_1_1_repeat_command.html" title="A command that runs another command repeatedly, restarting it when it ends, until this command is int...">RepeatCommand</a> provides an easy way to achieve similar end results with slightly different (and safe) semantics. </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_trigger.html#a4815e370d32b42e34f1bb42d33f4a81f">frc2::Trigger::CancelWhenActive</a>  (<a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a> *command)</dt>
-<dd><a class="anchor" id="_deprecated000076"></a>Use <a class="el" href="classfrc2_1_1_trigger.html#a3b403000578374fd98b70bddc6a1894f" title="Get a new event that events only when this one newly changes to true.">Rising()</a> as a command end condition with Until() instead.  </dd>
+<dd><a class="anchor" id="_deprecated000076"></a>Pass this as a command end condition with Until() instead.  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_trigger.html#acc5ac651a0e7943677ed6e29263d3ff7">frc2::Trigger::ToggleWhenActive</a>  (T &amp;&amp;command)</dt>
 <dd><a class="anchor" id="_deprecated000075"></a>Use ToggleOnTrue(Command) instead.  </dd>
 <dt>Member <a class="el" href="classfrc2_1_1_trigger.html#a83b03f5c385667a378d8cb9694d11dbd">frc2::Trigger::ToggleWhenActive</a>  (<a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a> *command)</dt>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Nov 28 2022 17:01:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:06:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

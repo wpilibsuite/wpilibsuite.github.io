@@ -1,9 +1,5 @@
 var NAVTREEINDEX162 =
 {
-"struct_eigen_1_1internal_1_1abs__knowing__score.html":[4,0,8,4,6],
-"struct_eigen_1_1internal_1_1abs__knowing__score.html#a5e8bf72072f7610591df4e9b6eaf25a5":[5,0,4,2,4,0],
-"struct_eigen_1_1internal_1_1abs__knowing__score.html#a5e8bf72072f7610591df4e9b6eaf25a5":[4,0,8,4,6,0],
-"struct_eigen_1_1internal_1_1abs__knowing__score.html#ae43aa25e52af13ab934224535a1606e2":[5,0,4,2,4,1],
 "struct_eigen_1_1internal_1_1abs__knowing__score.html#ae43aa25e52af13ab934224535a1606e2":[4,0,8,4,6,1],
 "struct_eigen_1_1internal_1_1abs__knowing__score_3_01_scalar_00_01typename_01scalar__score__coeff5c3b449f8772ed2666062ac71b9807cd.html":[5,0,4,2,5],
 "struct_eigen_1_1internal_1_1abs__knowing__score_3_01_scalar_00_01typename_01scalar__score__coeff5c3b449f8772ed2666062ac71b9807cd.html":[4,0,8,4,7],
@@ -249,5 +245,9 @@ var NAVTREEINDEX162 =
 "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0c7254c28a3b1c9eb1087952365c07922.html#ad43763a91c909a6165c69a57f91ac71c":[5,0,4,2,110,0,1],
 "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html":[4,0,8,4,114],
 "struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html":[5,0,4,2,112],
-"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html#a1efc2cf6f2339944d155c90783f22a63":[5,0,4,2,112,3]
+"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html#a1efc2cf6f2339944d155c90783f22a63":[5,0,4,2,112,3],
+"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html#a1efc2cf6f2339944d155c90783f22a63":[4,0,8,4,114,3],
+"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html#a245d953951d776c44160a41718a35dd3":[5,0,4,2,112,7],
+"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html#a245d953951d776c44160a41718a35dd3":[4,0,8,4,114,7],
+"struct_eigen_1_1internal_1_1binary__evaluator_3_01_cwise_binary_op_3_01_binary_op_00_01_lhs_00_0cb5b32f8780f5e04222972f8f6ae2d90.html#a287b169a07a616c109fa94a9eb32c9dd":[4,0,8,4,114,6]
 };

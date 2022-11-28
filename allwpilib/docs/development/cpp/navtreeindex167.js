@@ -1,9 +1,5 @@
 var NAVTREEINDEX167 =
 {
-"struct_eigen_1_1internal_1_1evaluator.html#a23e380d87319deaa59368cdf3db87b2b":[4,0,8,4,318,0],
-"struct_eigen_1_1internal_1_1evaluator.html#af9e49dab1aed5acd0e7ed7989603855e":[5,0,4,2,316,1],
-"struct_eigen_1_1internal_1_1evaluator.html#af9e49dab1aed5acd0e7ed7989603855e":[4,0,8,4,318,1],
-"struct_eigen_1_1internal_1_1evaluator_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options211222ab89c0f0e9e4e97c28137aec40.html":[5,0,4,2,317],
 "struct_eigen_1_1internal_1_1evaluator_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options211222ab89c0f0e9e4e97c28137aec40.html":[4,0,8,4,319],
 "struct_eigen_1_1internal_1_1evaluator_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options211222ab89c0f0e9e4e97c28137aec40.html#a410847b071dd94fa3f6e9adde09d3f4b":[5,0,4,2,317,1],
 "struct_eigen_1_1internal_1_1evaluator_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options211222ab89c0f0e9e4e97c28137aec40.html#a410847b071dd94fa3f6e9adde09d3f4b":[4,0,8,4,319,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX167 =
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#a0cccc9f11f1d108fa14ab95ff4459f57":[5,0,4,2,339,3],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#a3275d76f3ab41acd11e92b8e91c3bd3b":[5,0,4,2,339,2],
 "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#a3275d76f3ab41acd11e92b8e91c3bd3b":[4,0,8,4,341,2],
-"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ac49137ea19ba3bf0cbcd441d2534492f":[5,0,4,2,339,0]
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ac49137ea19ba3bf0cbcd441d2534492f":[5,0,4,2,339,0],
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ac49137ea19ba3bf0cbcd441d2534492f":[4,0,8,4,341,0],
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ae68821f76ebd4ff5e8bdf5c65aa0e2ed":[4,0,8,4,341,1],
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_matrix_3_01_mat_scalar_00_01_mat_opti1f146c69a21d0c41f4f1c116a0c5fce2.html#ae68821f76ebd4ff5e8bdf5c65aa0e2ed":[5,0,4,2,339,1],
+"struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_sparse_vector_3_01_mat_scalar_00_01_mat_optic924bcdf873ee6e467b0642118d17ceb.html":[4,0,8,4,342]
 };
