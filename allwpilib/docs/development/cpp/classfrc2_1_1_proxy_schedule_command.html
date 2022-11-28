@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-41-g7008045</span>
    </div>
   </td>
  </tr>
@@ -123,9 +123,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af91258ffcb47bc50adc0350309a78f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b5fcc57cedb687e276ad6622b0f6d63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#a1b5fcc57cedb687e276ad6622b0f6d63">ProxyScheduleCommand</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> *toSchedule)</td></tr>
 <tr class="separator:a1b5fcc57cedb687e276ad6622b0f6d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2d24490a254bc5685d685c1ef315d7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#af2d24490a254bc5685d685c1ef315d7b">ProxyScheduleCommand</a> (std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;toSchedule)</td></tr>
-<tr class="memdesc:af2d24490a254bc5685d685c1ef315d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a> that schedules the given command when initialized, and ends when it is no longer scheduled.  <a href="classfrc2_1_1_proxy_schedule_command.html#af2d24490a254bc5685d685c1ef315d7b">More...</a><br /></td></tr>
-<tr class="separator:af2d24490a254bc5685d685c1ef315d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65238e8b49cead638091064abdf95614"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#a65238e8b49cead638091064abdf95614">ProxyScheduleCommand</a> (<a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a> &amp;&amp;other)=default</td></tr>
 <tr class="separator:a65238e8b49cead638091064abdf95614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0350faddfc7086907a2b27c70de637f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html#aa0350faddfc7086907a2b27c70de637f">Initialize</a> () override</td></tr>
@@ -231,7 +228,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command.html#a49a9719a69c0048b0b6ac19ad165db0c">More...</a><br /></td></tr>
 <tr class="separator:a49a9719a69c0048b0b6ac19ad165db0c inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e7e1ac777ec231dda8a38f5aedeaa8e inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a0e7e1ac777ec231dda8a38f5aedeaa8e">AsProxy</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:a0e7e1ac777ec231dda8a38f5aedeaa8e inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.  <a href="classfrc2_1_1_command.html#a0e7e1ac777ec231dda8a38f5aedeaa8e">More...</a><br /></td></tr>
+<tr class="memdesc:a0e7e1ac777ec231dda8a38f5aedeaa8e inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_command.html" title="Schedules the given command when this command is initialized, and ends when it ends.">ProxyCommand</a>.  <a href="classfrc2_1_1_command.html#a0e7e1ac777ec231dda8a38f5aedeaa8e">More...</a><br /></td></tr>
 <tr class="separator:a0e7e1ac777ec231dda8a38f5aedeaa8e inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a0b3cd8fdc4cc7cdabd8ae34ce8841 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#af9a0b3cd8fdc4cc7cdabd8ae34ce8841">Unless</a> (std::function&lt; bool()&gt; condition) &amp;&amp;</td></tr>
 <tr class="memdesc:af9a0b3cd8fdc4cc7cdabd8ae34ce8841 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to only run if this condition is not met.  <a href="classfrc2_1_1_command.html#af9a0b3cd8fdc4cc7cdabd8ae34ce8841">More...</a><br /></td></tr>
@@ -335,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 <p >This class is provided by the NewCommands VendorDep </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af91258ffcb47bc50adc0350309a78f0f" name="af91258ffcb47bc50adc0350309a78f0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af91258ffcb47bc50adc0350309a78f0f">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af91258ffcb47bc50adc0350309a78f0f">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,11 +362,12 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>Replace with <code><a class="el" href="classfrc2_1_1_proxy_command.html">ProxyCommand</a></code>, composing multiple of them in a <code><a class="el" href="classfrc2_1_1_parallel_race_group.html">ParallelRaceGroup</a></code> if needed. </dd></dl>
 
 </div>
 </div>
 <a id="a1b5fcc57cedb687e276ad6622b0f6d63" name="a1b5fcc57cedb687e276ad6622b0f6d63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b5fcc57cedb687e276ad6622b0f6d63">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5fcc57cedb687e276ad6622b0f6d63">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,43 +392,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af2d24490a254bc5685d685c1ef315d7b" name="af2d24490a254bc5685d685c1ef315d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2d24490a254bc5685d685c1ef315d7b">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">frc2::ProxyScheduleCommand::ProxyScheduleCommand </td>
-          <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>toSchedule</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates a new <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a> that schedules the given command when initialized, and ends when it is no longer scheduled. </p>
-<p >Note that this constructor passes ownership of the given command to the returned <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">toSchedule</td><td>the command to schedule </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a65238e8b49cead638091064abdf95614" name="a65238e8b49cead638091064abdf95614"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65238e8b49cead638091064abdf95614">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65238e8b49cead638091064abdf95614">&#9670;&nbsp;</a></span>ProxyScheduleCommand() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -593,7 +556,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_proxy_schedule_command.html">ProxyScheduleCommand</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 22:06:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:46:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-41-g7008045</span>
    </div>
   </td>
  </tr>
@@ -880,10 +880,10 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keywordtype">int</span> chroma = (s * v) &gt;&gt; 8;</div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
 <div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    <span class="comment">// Beacuse hue is 0-180 rather than 0-360 use 30 not 60</span></div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <span class="keywordtype">int</span> region = <a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> / 30;</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <span class="keywordtype">int</span> region = (<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> / 30) % 6;</div>
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span> </div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    <span class="comment">// Remainder converted from 0-30 to roughly 0-255</span></div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keywordtype">int</span> remainder = (<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> - (region * 30)) * 9;</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    <span class="comment">// Remainder converted from 0-30 to 0-255</span></div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keywordtype">int</span> remainder = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>((<a class="code hl_function" href="namespaceunits_1_1constants.html#a88751eee8d448ad7d24121e14fa7582a">h</a> % 30) * (255 / 30.0));</div>
 <div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
 <div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    <span class="comment">// Value of the lowest rgb component</span></div>
 <div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    <span class="keywordtype">int</span> m = v - chroma;</div>
@@ -1265,7 +1265,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_e2da7223ff37df93ee932255935b3234.html">util</a></li><li class="navelem"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2util_2color_8h.html">Color.h</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 22:06:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:46:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

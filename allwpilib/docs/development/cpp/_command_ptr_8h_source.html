@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-41-g7008045</span>
    </div>
   </td>
  </tr>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_command_ptr_8h_source.html',''); init
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * Decorates this command to run &quot;by proxy&quot; by wrapping it in a</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * ProxyScheduleCommand. This is useful for &quot;forking off&quot; from command groups</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * ProxyCommand. This is useful for &quot;forking off&quot; from command groups</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * when the user does not wish to extend the command&#39;s requirements to the</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * entire command group.</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   *</span></div>
@@ -384,8 +384,8 @@ $(document).ready(function(){initNavTree('_command_ptr_8h_source.html',''); init
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="a_command_base_8h_html"><div class="ttname"><a href="_command_base_8h.html">CommandBase.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html"><div class="ttname"><a href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></div><div class="ttdoc">A Sendable base class for Commands.</div><div class="ttdef"><b>Definition:</b> CommandBase.h:26</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_html"><div class="ttname"><a href="classfrc2_1_1_command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:48</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_html_ae1917498fac57d1330c27405cdc80c48"><div class="ttname"><a href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">frc2::Command::InterruptionBehavior</a></div><div class="ttdeci">InterruptionBehavior</div><div class="ttdoc">An enum describing the command's behavior when another command with a shared requirement is scheduled...</div><div class="ttdef"><b>Definition:</b> Command.h:105</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_html"><div class="ttname"><a href="classfrc2_1_1_command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:47</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_html_ae1917498fac57d1330c27405cdc80c48"><div class="ttname"><a href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">frc2::Command::InterruptionBehavior</a></div><div class="ttdeci">InterruptionBehavior</div><div class="ttdoc">An enum describing the command's behavior when another command with a shared requirement is scheduled...</div><div class="ttdef"><b>Definition:</b> Command.h:104</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html">frc2::CommandPtr</a></div><div class="ttdoc">A wrapper around std::unique_ptr&lt;Command&gt; so commands have move-only semantics.</div><div class="ttdef"><b>Definition:</b> CommandPtr.h:28</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a0774dd503e82b8c40edd68bfd393b6eb"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a0774dd503e82b8c40edd68bfd393b6eb">frc2::CommandPtr::HasRequirement</a></div><div class="ttdeci">bool HasRequirement(Subsystem *requirement) const</div><div class="ttdoc">Whether the command requires a given subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a07c720c9016a098e648f7a29dd4f21e0"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a07c720c9016a098e648f7a29dd4f21e0">frc2::CommandPtr::Cancel</a></div><div class="ttdeci">void Cancel() const</div><div class="ttdoc">Cancels this command.</div></div>
@@ -406,7 +406,7 @@ $(document).ready(function(){initNavTree('_command_ptr_8h_source.html',''); init
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a6a2453f7255db9f22f0779074ca0bc8a"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a6a2453f7255db9f22f0779074ca0bc8a">frc2::CommandPtr::Schedule</a></div><div class="ttdeci">void Schedule() const</div><div class="ttdoc">Schedules this command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a6b9700cd25277a3ac558d63301985f40"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a6b9700cd25277a3ac558d63301985f40">frc2::CommandPtr::AlongWith</a></div><div class="ttdeci">CommandPtr AlongWith(CommandPtr &amp;&amp;parallel) &amp;&amp;</div><div class="ttdoc">Decorates this command with a set of commands to run parallel to it, ending when the last command end...</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_a9badf2eab812a48402e366ec8b6c3f34"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#a9badf2eab812a48402e366ec8b6c3f34">frc2::CommandPtr::UnwrapVector</a></div><div class="ttdeci">static std::vector&lt; std::unique_ptr&lt; Command &gt; &gt; UnwrapVector(std::vector&lt; CommandPtr &gt; &amp;&amp;vec)</div><div class="ttdoc">Convert a vector of CommandPtr objects to their underlying unique_ptrs.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_aa45784053431393e3277e5bc5ae7f751"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">frc2::CommandPtr::AsProxy</a></div><div class="ttdeci">CommandPtr AsProxy() &amp;&amp;</div><div class="ttdoc">Decorates this command to run &quot;by proxy&quot; by wrapping it in a ProxyScheduleCommand.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_ptr_html_aa45784053431393e3277e5bc5ae7f751"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">frc2::CommandPtr::AsProxy</a></div><div class="ttdeci">CommandPtr AsProxy() &amp;&amp;</div><div class="ttdoc">Decorates this command to run &quot;by proxy&quot; by wrapping it in a ProxyCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_aac3e5100bfa42d7de89fb0f06518b343"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#aac3e5100bfa42d7de89fb0f06518b343">frc2::CommandPtr::AndThen</a></div><div class="ttdeci">CommandPtr AndThen(std::function&lt; void()&gt; toRun, std::span&lt; Subsystem *const &gt; requirements={}) &amp;&amp;</div><div class="ttdoc">Decorates this command with a runnable to run after the command finishes.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_ab3a0d11c6d6e8db57be7b56b6d2a4ad5"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#ab3a0d11c6d6e8db57be7b56b6d2a4ad5">frc2::CommandPtr::Unwrap</a></div><div class="ttdeci">std::unique_ptr&lt; CommandBase &gt; Unwrap() &amp;&amp;</div><div class="ttdoc">Convert to the underlying unique_ptr.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_ptr_html_ab49b42b4653dbedf2db66dc0f1a211dd"><div class="ttname"><a href="classfrc2_1_1_command_ptr.html#ab49b42b4653dbedf2db66dc0f1a211dd">frc2::CommandPtr::get</a></div><div class="ttdeci">CommandBase * get() const</div><div class="ttdoc">Get a raw pointer to the held command.</div></div>
@@ -430,7 +430,7 @@ $(document).ready(function(){initNavTree('_command_ptr_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_command_ptr_8h.html">CommandPtr.h</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 22:06:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:46:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -496,6 +496,9 @@ var hierarchy =
         [ "frc2::CommandHelper< CommandBase, ProfiledPIDCommand< Distance > >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::ProfiledPIDCommand< Distance >", "classfrc2_1_1_profiled_p_i_d_command.html", null ]
         ] ],
+        [ "frc2::CommandHelper< CommandBase, ProxyCommand >", "classfrc2_1_1_command_helper.html", [
+          [ "frc2::ProxyCommand", "classfrc2_1_1_proxy_command.html", null ]
+        ] ],
         [ "frc2::CommandHelper< CommandBase, ProxyScheduleCommand >", "classfrc2_1_1_command_helper.html", [
           [ "frc2::ProxyScheduleCommand", "classfrc2_1_1_proxy_schedule_command.html", null ]
         ] ],
@@ -5160,6 +5163,7 @@ var hierarchy =
     ] ],
     [ "Eigen::UniformScaling< Scalar >", "class_eigen_1_1_uniform_scaling.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
+    [ "wpi::unique_function< frc2::Command *()>", "classwpi_1_1unique__function.html", null ],
     [ "wpi::detail::UniqueFunctionBase< ReturnT, ParamTs >", "classwpi_1_1detail_1_1_unique_function_base.html", null ],
     [ "wpi::detail::UniqueFunctionBase< R, P... >", "classwpi_1_1detail_1_1_unique_function_base.html", [
       [ "wpi::unique_function< R(P...) const >", "classwpi_1_1unique__function_3_01_r_07_p_8_8_8_08_01const_01_4.html", null ],

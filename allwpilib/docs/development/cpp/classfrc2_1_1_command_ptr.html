@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-39-gec124bb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-41-g7008045</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acc156a5299699110729918c3aa2b2694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run repeatedly, restarting it when it ends, until this command is interrupted.  <a href="classfrc2_1_1_command_ptr.html#acc156a5299699110729918c3aa2b2694">More...</a><br /></td></tr>
 <tr class="separator:acc156a5299699110729918c3aa2b2694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45784053431393e3277e5bc5ae7f751"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">AsProxy</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:aa45784053431393e3277e5bc5ae7f751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.  <a href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">More...</a><br /></td></tr>
+<tr class="memdesc:aa45784053431393e3277e5bc5ae7f751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_command.html" title="Schedules the given command when this command is initialized, and ends when it ends.">ProxyCommand</a>.  <a href="classfrc2_1_1_command_ptr.html#aa45784053431393e3277e5bc5ae7f751">More...</a><br /></td></tr>
 <tr class="separator:aa45784053431393e3277e5bc5ae7f751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51bba456731cdeab745fb14b6f4c7057"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057">IgnoringDisable</a> (bool doesRunWhenDisabled) &amp;&amp;</td></tr>
 <tr class="memdesc:a51bba456731cdeab745fb14b6f4c7057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run or stop when disabled.  <a href="classfrc2_1_1_command_ptr.html#a51bba456731cdeab745fb14b6f4c7057">More...</a><br /></td></tr>
@@ -433,7 +433,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
       </table>
 </div><div class="memdoc">
 
-<p>Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_schedule_command.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>. </p>
+<p>Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1_proxy_command.html" title="Schedules the given command when this command is initialized, and ends when it ends.">ProxyCommand</a>. </p>
 <p >This is useful for "forking off" from command groups when the user does not wish to extend the command's requirements to the entire command group.</p>
 <dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
 
@@ -1055,7 +1055,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_ptr.html">CommandPtr</a></li>
-    <li class="footer">Generated on Mon Nov 28 2022 22:06:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 22:46:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

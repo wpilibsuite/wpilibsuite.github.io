@@ -22,6 +22,7 @@ var dir_25d5854705192c92d2d003534c71255a =
     [ "PrintCommand.h", "_print_command_8h.html", "_print_command_8h" ],
     [ "ProfiledPIDCommand.h", "_profiled_p_i_d_command_8h.html", "_profiled_p_i_d_command_8h" ],
     [ "ProfiledPIDSubsystem.h", "_profiled_p_i_d_subsystem_8h.html", "_profiled_p_i_d_subsystem_8h" ],
+    [ "ProxyCommand.h", "_proxy_command_8h.html", "_proxy_command_8h" ],
     [ "ProxyScheduleCommand.h", "_proxy_schedule_command_8h.html", "_proxy_schedule_command_8h" ],
     [ "RamseteCommand.h", "_ramsete_command_8h.html", "_ramsete_command_8h" ],
     [ "RepeatCommand.h", "_repeat_command_8h.html", "_repeat_command_8h" ],
