@@ -298,14 +298,14 @@
 <span class="sourceLineNo">286</span><a id="line.286">  }</a>
 <span class="sourceLineNo">287</span><a id="line.287"></a>
 <span class="sourceLineNo">288</span><a id="line.288">  /**</a>
-<span class="sourceLineNo">289</span><a id="line.289">   * Decorates this command to run "by proxy" by wrapping it in a {@link ProxyScheduleCommand}. This</a>
-<span class="sourceLineNo">290</span><a id="line.290">   * is useful for "forking off" from command groups when the user does not wish to extend the</a>
+<span class="sourceLineNo">289</span><a id="line.289">   * Decorates this command to run "by proxy" by wrapping it in a {@link ProxyCommand}. This is</a>
+<span class="sourceLineNo">290</span><a id="line.290">   * useful for "forking off" from command groups when the user does not wish to extend the</a>
 <span class="sourceLineNo">291</span><a id="line.291">   * command's requirements to the entire command group.</a>
 <span class="sourceLineNo">292</span><a id="line.292">   *</a>
 <span class="sourceLineNo">293</span><a id="line.293">   * @return the decorated command</a>
 <span class="sourceLineNo">294</span><a id="line.294">   */</a>
-<span class="sourceLineNo">295</span><a id="line.295">  default ProxyScheduleCommand asProxy() {</a>
-<span class="sourceLineNo">296</span><a id="line.296">    return new ProxyScheduleCommand(this);</a>
+<span class="sourceLineNo">295</span><a id="line.295">  default ProxyCommand asProxy() {</a>
+<span class="sourceLineNo">296</span><a id="line.296">    return new ProxyCommand(this);</a>
 <span class="sourceLineNo">297</span><a id="line.297">  }</a>
 <span class="sourceLineNo">298</span><a id="line.298"></a>
 <span class="sourceLineNo">299</span><a id="line.299">  /**</a>

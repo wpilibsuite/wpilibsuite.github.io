@@ -75,58 +75,60 @@
 <span class="sourceLineNo">063</span><a id="line.63">   * Creates a new selectcommand.</a>
 <span class="sourceLineNo">064</span><a id="line.64">   *</a>
 <span class="sourceLineNo">065</span><a id="line.65">   * @param toRun a supplier providing the command to run</a>
-<span class="sourceLineNo">066</span><a id="line.66">   */</a>
-<span class="sourceLineNo">067</span><a id="line.67">  public SelectCommand(Supplier&lt;Command&gt; toRun) {</a>
-<span class="sourceLineNo">068</span><a id="line.68">    m_commands = null;</a>
-<span class="sourceLineNo">069</span><a id="line.69">    m_selector = null;</a>
-<span class="sourceLineNo">070</span><a id="line.70">    m_toRun = requireNonNullParam(toRun, "toRun", "SelectCommand");</a>
-<span class="sourceLineNo">071</span><a id="line.71"></a>
-<span class="sourceLineNo">072</span><a id="line.72">    // we have no way of checking the underlying command, so default.</a>
-<span class="sourceLineNo">073</span><a id="line.73">    m_runsWhenDisabled = false;</a>
-<span class="sourceLineNo">074</span><a id="line.74">    m_interruptBehavior = InterruptionBehavior.kCancelSelf;</a>
-<span class="sourceLineNo">075</span><a id="line.75">  }</a>
-<span class="sourceLineNo">076</span><a id="line.76"></a>
-<span class="sourceLineNo">077</span><a id="line.77">  @Override</a>
-<span class="sourceLineNo">078</span><a id="line.78">  public void initialize() {</a>
-<span class="sourceLineNo">079</span><a id="line.79">    if (m_selector != null) {</a>
-<span class="sourceLineNo">080</span><a id="line.80">      if (!m_commands.keySet().contains(m_selector.get())) {</a>
-<span class="sourceLineNo">081</span><a id="line.81">        m_selectedCommand =</a>
-<span class="sourceLineNo">082</span><a id="line.82">            new PrintCommand(</a>
-<span class="sourceLineNo">083</span><a id="line.83">                "SelectCommand selector value does not correspond to" + " any command!");</a>
-<span class="sourceLineNo">084</span><a id="line.84">        return;</a>
-<span class="sourceLineNo">085</span><a id="line.85">      }</a>
-<span class="sourceLineNo">086</span><a id="line.86">      m_selectedCommand = m_commands.get(m_selector.get());</a>
-<span class="sourceLineNo">087</span><a id="line.87">    } else {</a>
-<span class="sourceLineNo">088</span><a id="line.88">      m_selectedCommand = m_toRun.get();</a>
-<span class="sourceLineNo">089</span><a id="line.89">    }</a>
-<span class="sourceLineNo">090</span><a id="line.90">    m_selectedCommand.initialize();</a>
-<span class="sourceLineNo">091</span><a id="line.91">  }</a>
-<span class="sourceLineNo">092</span><a id="line.92"></a>
-<span class="sourceLineNo">093</span><a id="line.93">  @Override</a>
-<span class="sourceLineNo">094</span><a id="line.94">  public void execute() {</a>
-<span class="sourceLineNo">095</span><a id="line.95">    m_selectedCommand.execute();</a>
-<span class="sourceLineNo">096</span><a id="line.96">  }</a>
-<span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">  @Override</a>
-<span class="sourceLineNo">099</span><a id="line.99">  public void end(boolean interrupted) {</a>
-<span class="sourceLineNo">100</span><a id="line.100">    m_selectedCommand.end(interrupted);</a>
-<span class="sourceLineNo">101</span><a id="line.101">  }</a>
-<span class="sourceLineNo">102</span><a id="line.102"></a>
-<span class="sourceLineNo">103</span><a id="line.103">  @Override</a>
-<span class="sourceLineNo">104</span><a id="line.104">  public boolean isFinished() {</a>
-<span class="sourceLineNo">105</span><a id="line.105">    return m_selectedCommand.isFinished();</a>
-<span class="sourceLineNo">106</span><a id="line.106">  }</a>
-<span class="sourceLineNo">107</span><a id="line.107"></a>
-<span class="sourceLineNo">108</span><a id="line.108">  @Override</a>
-<span class="sourceLineNo">109</span><a id="line.109">  public boolean runsWhenDisabled() {</a>
-<span class="sourceLineNo">110</span><a id="line.110">    return m_runsWhenDisabled;</a>
-<span class="sourceLineNo">111</span><a id="line.111">  }</a>
-<span class="sourceLineNo">112</span><a id="line.112"></a>
-<span class="sourceLineNo">113</span><a id="line.113">  @Override</a>
-<span class="sourceLineNo">114</span><a id="line.114">  public InterruptionBehavior getInterruptionBehavior() {</a>
-<span class="sourceLineNo">115</span><a id="line.115">    return m_interruptBehavior;</a>
-<span class="sourceLineNo">116</span><a id="line.116">  }</a>
-<span class="sourceLineNo">117</span><a id="line.117">}</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * @deprecated Replace with {@link ProxyCommand}</a>
+<span class="sourceLineNo">067</span><a id="line.67">   */</a>
+<span class="sourceLineNo">068</span><a id="line.68">  @Deprecated</a>
+<span class="sourceLineNo">069</span><a id="line.69">  public SelectCommand(Supplier&lt;Command&gt; toRun) {</a>
+<span class="sourceLineNo">070</span><a id="line.70">    m_commands = null;</a>
+<span class="sourceLineNo">071</span><a id="line.71">    m_selector = null;</a>
+<span class="sourceLineNo">072</span><a id="line.72">    m_toRun = requireNonNullParam(toRun, "toRun", "SelectCommand");</a>
+<span class="sourceLineNo">073</span><a id="line.73"></a>
+<span class="sourceLineNo">074</span><a id="line.74">    // we have no way of checking the underlying command, so default.</a>
+<span class="sourceLineNo">075</span><a id="line.75">    m_runsWhenDisabled = false;</a>
+<span class="sourceLineNo">076</span><a id="line.76">    m_interruptBehavior = InterruptionBehavior.kCancelSelf;</a>
+<span class="sourceLineNo">077</span><a id="line.77">  }</a>
+<span class="sourceLineNo">078</span><a id="line.78"></a>
+<span class="sourceLineNo">079</span><a id="line.79">  @Override</a>
+<span class="sourceLineNo">080</span><a id="line.80">  public void initialize() {</a>
+<span class="sourceLineNo">081</span><a id="line.81">    if (m_selector != null) {</a>
+<span class="sourceLineNo">082</span><a id="line.82">      if (!m_commands.keySet().contains(m_selector.get())) {</a>
+<span class="sourceLineNo">083</span><a id="line.83">        m_selectedCommand =</a>
+<span class="sourceLineNo">084</span><a id="line.84">            new PrintCommand(</a>
+<span class="sourceLineNo">085</span><a id="line.85">                "SelectCommand selector value does not correspond to" + " any command!");</a>
+<span class="sourceLineNo">086</span><a id="line.86">        return;</a>
+<span class="sourceLineNo">087</span><a id="line.87">      }</a>
+<span class="sourceLineNo">088</span><a id="line.88">      m_selectedCommand = m_commands.get(m_selector.get());</a>
+<span class="sourceLineNo">089</span><a id="line.89">    } else {</a>
+<span class="sourceLineNo">090</span><a id="line.90">      m_selectedCommand = m_toRun.get();</a>
+<span class="sourceLineNo">091</span><a id="line.91">    }</a>
+<span class="sourceLineNo">092</span><a id="line.92">    m_selectedCommand.initialize();</a>
+<span class="sourceLineNo">093</span><a id="line.93">  }</a>
+<span class="sourceLineNo">094</span><a id="line.94"></a>
+<span class="sourceLineNo">095</span><a id="line.95">  @Override</a>
+<span class="sourceLineNo">096</span><a id="line.96">  public void execute() {</a>
+<span class="sourceLineNo">097</span><a id="line.97">    m_selectedCommand.execute();</a>
+<span class="sourceLineNo">098</span><a id="line.98">  }</a>
+<span class="sourceLineNo">099</span><a id="line.99"></a>
+<span class="sourceLineNo">100</span><a id="line.100">  @Override</a>
+<span class="sourceLineNo">101</span><a id="line.101">  public void end(boolean interrupted) {</a>
+<span class="sourceLineNo">102</span><a id="line.102">    m_selectedCommand.end(interrupted);</a>
+<span class="sourceLineNo">103</span><a id="line.103">  }</a>
+<span class="sourceLineNo">104</span><a id="line.104"></a>
+<span class="sourceLineNo">105</span><a id="line.105">  @Override</a>
+<span class="sourceLineNo">106</span><a id="line.106">  public boolean isFinished() {</a>
+<span class="sourceLineNo">107</span><a id="line.107">    return m_selectedCommand.isFinished();</a>
+<span class="sourceLineNo">108</span><a id="line.108">  }</a>
+<span class="sourceLineNo">109</span><a id="line.109"></a>
+<span class="sourceLineNo">110</span><a id="line.110">  @Override</a>
+<span class="sourceLineNo">111</span><a id="line.111">  public boolean runsWhenDisabled() {</a>
+<span class="sourceLineNo">112</span><a id="line.112">    return m_runsWhenDisabled;</a>
+<span class="sourceLineNo">113</span><a id="line.113">  }</a>
+<span class="sourceLineNo">114</span><a id="line.114"></a>
+<span class="sourceLineNo">115</span><a id="line.115">  @Override</a>
+<span class="sourceLineNo">116</span><a id="line.116">  public InterruptionBehavior getInterruptionBehavior() {</a>
+<span class="sourceLineNo">117</span><a id="line.117">    return m_interruptBehavior;</a>
+<span class="sourceLineNo">118</span><a id="line.118">  }</a>
+<span class="sourceLineNo">119</span><a id="line.119">}</a>
 
 
 
