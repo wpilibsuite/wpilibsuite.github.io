@@ -8,6 +8,7 @@ var classfrc2_1_1_parallel_command_group =
     [ "AddCommands", "classfrc2_1_1_parallel_command_group.html#a9b89678cf81eecd4fd1278ca5e1ad703", null ],
     [ "End", "classfrc2_1_1_parallel_command_group.html#aac465a49ac2f2395659bb94eb65d49f0", null ],
     [ "Execute", "classfrc2_1_1_parallel_command_group.html#a3f2408dad93b2ef0af462beeb7968a13", null ],
+    [ "GetInterruptionBehavior", "classfrc2_1_1_parallel_command_group.html#aa870ef3868bcf3389b2446e0f400a60f", null ],
     [ "Initialize", "classfrc2_1_1_parallel_command_group.html#abcfe029d892eeae0a2ad49e94775cd7a", null ],
     [ "IsFinished", "classfrc2_1_1_parallel_command_group.html#a3c9c5e038a0cb95c3ff64e40d459c488", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_parallel_command_group.html#afbe7230b8b95ce64c9439e2fc1b2230c", null ]

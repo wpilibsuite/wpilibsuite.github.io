@@ -1,5 +1,15 @@
 var NAVTREEINDEX158 =
 {
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#aa65515eccc2c3f0f88080835c975fbc2":[5,0,4,139,0],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#aa65515eccc2c3f0f88080835c975fbc2":[4,0,8,142,0],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ac42a505b6455600139fa25a967de04d6":[4,0,8,142,7],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ac42a505b6455600139fa25a967de04d6":[5,0,4,139,7],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ae33a724d929f2212615ea61500a7acc9":[5,0,4,139,3],
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ae33a724d929f2212615ea61500a7acc9":[4,0,8,142,3],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html":[4,0,8,145],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html":[5,0,4,142],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a06d6a8340d99cd55e74f161b89ab0f35":[4,0,8,145,2],
+"struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a06d6a8340d99cd55e74f161b89ab0f35":[5,0,4,142,2],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a5e1aaf257dde09a236c2aaec48febbe0":[4,0,8,145,4],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a5e1aaf257dde09a236c2aaec48febbe0":[5,0,4,142,4],
 "struct_eigen_1_1_num_traits_3_01_eigen_1_1bfloat16_01_4.html#a6057a5322cbb37c5541f445f639c3984":[4,0,8,145,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX158 =
 "struct_eigen_1_1_vectorwise_op_1_1_redux_return_type.html#a39c1f3a1be03b63e1a87c4da765c3b66":[3,42,24,3,0],
 "struct_eigen_1_1_vectorwise_op_1_1_return_type.html":[3,42,24,4],
 "struct_eigen_1_1_vectorwise_op_1_1_return_type.html#a9f3d15c0543c7b6d3e6ab4b6e08bb71d":[3,42,24,4,0],
-"struct_eigen_1_1aligned__allocator_1_1rebind.html":[3,42,58,0],
-"struct_eigen_1_1aligned__allocator_1_1rebind.html#aed3b0e11c4712793af0e508d9d8f4ade":[3,42,58,0,0],
-"struct_eigen_1_1aligned__allocator__indirection_1_1rebind.html":[4,0,8,9,0],
-"struct_eigen_1_1aligned__allocator__indirection_1_1rebind.html":[5,0,4,6,0],
-"struct_eigen_1_1aligned__allocator__indirection_1_1rebind.html#accebeb01e8c70c6a047ecba5c6a8c545":[5,0,4,6,0,0],
-"struct_eigen_1_1aligned__allocator__indirection_1_1rebind.html#accebeb01e8c70c6a047ecba5c6a8c545":[4,0,8,9,0,0],
-"struct_eigen_1_1bfloat16.html":[4,0,8,20],
-"struct_eigen_1_1bfloat16.html":[5,0,4,17],
-"struct_eigen_1_1bfloat16.html#a0871e50585cf2e1a77de6dd3dd001ef6":[4,0,8,20,0],
-"struct_eigen_1_1bfloat16.html#a0871e50585cf2e1a77de6dd3dd001ef6":[5,0,4,17,0],
-"struct_eigen_1_1bfloat16.html#a38f274970cab7413e73adaaaddc51bae":[4,0,8,20,2]
+"struct_eigen_1_1aligned__allocator_1_1rebind.html":[3,42,58,0]
 };

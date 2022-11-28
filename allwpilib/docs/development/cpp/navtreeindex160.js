@@ -1,5 +1,15 @@
 var NAVTREEINDEX160 =
 {
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#a70e8931a8c4b0ba14aa81dfad16bfb40":[4,0,8,4,77,1],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#a984972577f134d4f22af56f47b30e70f":[5,0,4,2,75,0],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#a984972577f134d4f22af56f47b30e70f":[4,0,8,4,77,0],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#aa3918307d0e7004de1be35c89ee4a153":[5,0,4,2,75,3],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#aa3918307d0e7004de1be35c89ee4a153":[4,0,8,4,77,3],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#ab019ba7d743296423b446e15d0131ad2":[5,0,4,2,75,2],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_q_r_matrix_q_return_type_aa91d8fc26832a494363cd7146c14303.html#ab019ba7d743296423b446e15d0131ad2":[4,0,8,4,77,2],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html":[4,0,8,4,79],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html":[5,0,4,2,77],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a27237deaf69ded2cfef08d699c0303cc":[4,0,8,4,79,1],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a27237deaf69ded2cfef08d699c0303cc":[5,0,4,2,77,1],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a743214fc5df8550054cff8aaefc5d0db":[4,0,8,4,79,3],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_sparse_symmetric_permutation_pro69955201e4d84b32d17d1959c46119e9.html#a743214fc5df8550054cff8aaefc5d0db":[5,0,4,2,77,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX160 =
 "struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a6106eb13540e7936645b13da031ef2fe":[5,0,4,2,724,1],
 "struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a71b18cd5918d44a3022f4a6cb5b9da0a":[4,0,8,4,726,3],
 "struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#a71b18cd5918d44a3022f4a6cb5b9da0a":[5,0,4,2,724,3],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#af252a9d086be312be301820816c0a986":[5,0,4,2,724,0],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#af252a9d086be312be301820816c0a986":[4,0,8,4,726,0],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html":[4,0,8,4,727],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html":[5,0,4,2,725],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html#a5b31eeee78528ca777ba86b1a4aab2fb":[4,0,8,4,727,0],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html#a5b31eeee78528ca777ba86b1a4aab2fb":[5,0,4,2,725,0],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html#a85ba974cb566d0b44548c47385805951":[5,0,4,2,725,2],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html#a85ba974cb566d0b44548c47385805951":[4,0,8,4,727,2],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html#a97716be1cddf0883c9a3af1779ce7139":[5,0,4,2,725,1],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html#a97716be1cddf0883c9a3af1779ce7139":[4,0,8,4,727,1],
-"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_upper_01_4.html#aafa2890ad490dd6697899d0cc19cdeac":[4,0,8,4,727,3]
+"struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html#af252a9d086be312be301820816c0a986":[5,0,4,2,724,0]
 };

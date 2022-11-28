@@ -8,6 +8,7 @@ var classfrc2_1_1_parallel_race_group =
     [ "AddCommands", "classfrc2_1_1_parallel_race_group.html#adce0f787b5346b6a4086b590f288ccf2", null ],
     [ "End", "classfrc2_1_1_parallel_race_group.html#a9e70e3c6da8213d8008f2b7e4c7ee7d4", null ],
     [ "Execute", "classfrc2_1_1_parallel_race_group.html#a90c7fae8cd5d69cdb963d4f8ffdfc1eb", null ],
+    [ "GetInterruptionBehavior", "classfrc2_1_1_parallel_race_group.html#a53170f9658f0a1e24e3d191bf3a9d64a", null ],
     [ "Initialize", "classfrc2_1_1_parallel_race_group.html#a99cbad985eea806f210aeba26e852f5d", null ],
     [ "IsFinished", "classfrc2_1_1_parallel_race_group.html#a4dcd3de08abd85d81aa19cba99a88467", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_parallel_race_group.html#ad3eb9d85ddae0cdf2ad9924d703a2020", null ]

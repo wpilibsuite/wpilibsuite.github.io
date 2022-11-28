@@ -8,6 +8,7 @@ var classfrc2_1_1_parallel_deadline_group =
     [ "AddCommands", "classfrc2_1_1_parallel_deadline_group.html#a67756cd772115347370a3569a613abb5", null ],
     [ "End", "classfrc2_1_1_parallel_deadline_group.html#af14fa15b7b938d1c7f40725cae0e5f66", null ],
     [ "Execute", "classfrc2_1_1_parallel_deadline_group.html#a9f2abb8a95d420a927ca7f556d8693dc", null ],
+    [ "GetInterruptionBehavior", "classfrc2_1_1_parallel_deadline_group.html#ab1043048a890698a9220bce50ba3dbd2", null ],
     [ "Initialize", "classfrc2_1_1_parallel_deadline_group.html#a480cf4749ac03f474121fd2caf034947", null ],
     [ "IsFinished", "classfrc2_1_1_parallel_deadline_group.html#a800857b63dc20e4de2a22965869749c7", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_parallel_deadline_group.html#adcaac323ca7beb537ab602bbfc90bdc4", null ]

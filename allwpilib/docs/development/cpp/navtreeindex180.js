@@ -1,5 +1,15 @@
 var NAVTREEINDEX180 =
 {
+"struct_eigen_1_1internal_1_1redux__novec__unroller.html":[5,0,4,2,1027],
+"struct_eigen_1_1internal_1_1redux__novec__unroller.html#a78c78e0ae6f7be49566b4a207b08393d":[5,0,4,2,1027,0],
+"struct_eigen_1_1internal_1_1redux__novec__unroller.html#a78c78e0ae6f7be49566b4a207b08393d":[4,0,8,4,1029,0],
+"struct_eigen_1_1internal_1_1redux__novec__unroller.html#aa344dd4bfe4d37dd1372f2ca39a3d8ec":[5,0,4,2,1027,1],
+"struct_eigen_1_1internal_1_1redux__novec__unroller.html#aa344dd4bfe4d37dd1372f2ca39a3d8ec":[4,0,8,4,1029,1],
+"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_010_01_4.html":[5,0,4,2,1028],
+"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_010_01_4.html":[4,0,8,4,1030],
+"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_010_01_4.html#a70712ed123f27f4e6bb5f3aec30ae299":[5,0,4,2,1028,1],
+"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_010_01_4.html#a70712ed123f27f4e6bb5f3aec30ae299":[4,0,8,4,1030,1],
+"struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_010_01_4.html#abbeb0dd8fd7aff0e68a0619fc61d625d":[5,0,4,2,1028,0],
 "struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_010_01_4.html#abbeb0dd8fd7aff0e68a0619fc61d625d":[4,0,8,4,1030,0],
 "struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html":[5,0,4,2,1029],
 "struct_eigen_1_1internal_1_1redux__novec__unroller_3_01_func_00_01_evaluator_00_01_start_00_011_01_4.html":[4,0,8,4,1031],
@@ -239,15 +249,5 @@ var NAVTREEINDEX180 =
 "struct_eigen_1_1internal_1_1scalar__abs__op.html":[4,0,8,4,1081],
 "struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[4,0,8,4,1081,0],
 "struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[5,0,4,2,1079,0],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a2e1557e18aea6d7b6a9b4b2cead03037":[4,0,8,4,1081,1],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a2e1557e18aea6d7b6a9b4b2cead03037":[5,0,4,2,1079,1],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a78ce4b55dd461fb7b58f7ead3544d37c":[5,0,4,2,1079,2],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a78ce4b55dd461fb7b58f7ead3544d37c":[4,0,8,4,1081,2],
-"struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html":[4,0,8,4,1082],
-"struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html":[5,0,4,2,1080],
-"struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html#a52d5c52297d5070c5182dab3c8c61be8":[4,0,8,4,1082,0],
-"struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html#a52d5c52297d5070c5182dab3c8c61be8":[5,0,4,2,1080,0],
-"struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html#a9e60dcc4f8b89db9b521ca6626df5766":[4,0,8,4,1082,1],
-"struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html#a9e60dcc4f8b89db9b521ca6626df5766":[5,0,4,2,1080,1],
-"struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html#aa641d4fc40fa9421620a4035bb0bcf95":[4,0,8,4,1082,2]
+"struct_eigen_1_1internal_1_1scalar__abs__op.html#a2e1557e18aea6d7b6a9b4b2cead03037":[4,0,8,4,1081,1]
 };

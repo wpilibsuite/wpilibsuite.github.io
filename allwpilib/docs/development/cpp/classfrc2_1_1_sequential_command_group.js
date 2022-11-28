@@ -8,6 +8,7 @@ var classfrc2_1_1_sequential_command_group =
     [ "AddCommands", "classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9", null ],
     [ "End", "classfrc2_1_1_sequential_command_group.html#a6ed93b720539e878d5ed894152b4f6a5", null ],
     [ "Execute", "classfrc2_1_1_sequential_command_group.html#a5a61a620f3b5298745b070916436b92d", null ],
+    [ "GetInterruptionBehavior", "classfrc2_1_1_sequential_command_group.html#a7dad516818caa827872c68c24006c35c", null ],
     [ "Initialize", "classfrc2_1_1_sequential_command_group.html#a349a9ce2160e29f11ddccef508d05981", null ],
     [ "IsFinished", "classfrc2_1_1_sequential_command_group.html#ad1302aa00fc4ec181c4ad73811aa590b", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_sequential_command_group.html#a5aa6a2bc503b46495ec47d24ccdf82e5", null ]

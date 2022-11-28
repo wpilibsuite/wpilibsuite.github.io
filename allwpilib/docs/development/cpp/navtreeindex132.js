@@ -1,5 +1,15 @@
 var NAVTREEINDEX132 =
 {
+"group__hal__counter.html#ga623d99640c3ab2f537d2b22fd1036258":[3,1,31,19],
+"group__hal__counter.html#ga65ce41f9ef724a350f1809598286fb6d":[3,1,31,9],
+"group__hal__counter.html#ga6d12b6d57ef82211521afb0054261314":[3,1,31,8],
+"group__hal__counter.html#ga7196b6edcd3c7aa9fe4193f083823211":[3,1,31,20],
+"group__hal__counter.html#ga724a5d5311c14b01d2be1830d52e7d8b":[3,1,31,3],
+"group__hal__counter.html#ga7f45a16782eff8641fddd6a0506ba654":[3,1,31,10],
+"group__hal__counter.html#ga84bbe84ace9756712e5edbc3a287abc6":[3,1,31,2],
+"group__hal__counter.html#ga8b2212c603ffd7a87b667c0224b7baad":[3,1,31,7],
+"group__hal__counter.html#ga931ff44c6a740ab30155be5e01d732c6":[3,1,31,13],
+"group__hal__counter.html#gaaca5174dea2ea7bf6aefeee5d459ace3":[3,1,31,12],
 "group__hal__counter.html#gab68517796f782b521b3191d67f408adb":[3,1,31,15],
 "group__hal__counter.html#gac069577a4415507798f607fe5e0b61b8":[3,1,31,16],
 "group__hal__counter.html#gac6a581c09d26d458fe0cd078eb012dfc":[3,1,31,22],
@@ -239,15 +249,5 @@ var NAVTREEINDEX132 =
 "group__hal__errors.html#gaa2cdf901559b9696044c89ef9e624736":[3,1,32,14],
 "group__hal__errors.html#gaa55c099690827ee86cf1e430827b9a9f":[3,1,32,10],
 "group__hal__errors.html#gaa5ba6badfbfacf6db4c671b54ba5105e":[3,1,32,56],
-"group__hal__errors.html#gaa8713bb5cee2444a6ae7a8f5ffae0cef":[3,1,32,12],
-"group__hal__errors.html#gaad894dd2b87b8253427f45d21909fd68":[3,1,32,94],
-"group__hal__errors.html#gaaedbe17a8e733e214cb2c1adce982757":[3,1,32,36],
-"group__hal__errors.html#gab0d03b10cbd81ee813d0a4745e4bfe24":[3,1,32,52],
-"group__hal__errors.html#gab1ec254152790fcb8d84cb626ede8836":[3,1,32,49],
-"group__hal__errors.html#gab772fea2c15cca373c7c5335ca411cee":[3,1,32,64],
-"group__hal__errors.html#gabd2b6d6bcd7871ba23494b4de1698fb6":[3,1,32,24],
-"group__hal__errors.html#gabde132e097a1dcb1c92e4de11f170b88":[3,1,32,77],
-"group__hal__errors.html#gabf289a01c73058def6a660d2fec788eb":[3,1,32,89],
-"group__hal__errors.html#gac0b7a0f4474a014ceea87959b086a90a":[3,1,32,40],
-"group__hal__errors.html#gac68bec671393da2dbac1c60f8afb646f":[3,1,32,74]
+"group__hal__errors.html#gaa8713bb5cee2444a6ae7a8f5ffae0cef":[3,1,32,12]
 };

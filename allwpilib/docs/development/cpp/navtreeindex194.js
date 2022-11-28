@@ -1,5 +1,15 @@
 var NAVTREEINDEX194 =
 {
+"structansi__color__escape.html":[5,0,18],
+"structansi__color__escape.html#a5c028786b6961aedfa6ccf0ac58451a1":[5,0,18,3],
+"structansi__color__escape.html#a8468c1d8c2ed520e45b369a7a49389b0":[5,0,18,0],
+"structansi__color__escape.html#aa4c9278497271f2a0640557fb930379a":[5,0,18,4],
+"structansi__color__escape.html#accaf4ee41a0d03b86a0115b45858b91f":[5,0,18,2],
+"structansi__color__escape.html#aef2a620f2e2a8f3a9a685fa018b68597":[5,0,18,1],
+"structarg__data.html":[5,0,21],
+"structarg__data.html#a066861f784ce8301389e9d1672e25142":[5,0,21,4],
+"structarg__data.html#a1c1f92742fd40957dd9eaeba38226854":[5,0,21,1],
+"structarg__data.html#a345dd2a7772f9573bacb312a27401eb4":[5,0,21,2],
 "structarg__data.html#a7a2618d0038b7b2e6bd73ba169a6e153":[5,0,21,3],
 "structarg__data.html#a89a96a0e2da76a3f20b3cc583426f778":[5,0,21,5],
 "structarg__data.html#aa303c84b2eddc86a77e4cfed1af280e1":[5,0,21,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX194 =
 "structcs_1_1_usb_camera_info.html#a13f32c4bb80329004d8a6cf6c0320bd4":[3,25,16,1],
 "structcs_1_1_usb_camera_info.html#a89e975415e6d1a12c82eb1e40c6eb1cd":[3,25,16,4],
 "structcs_1_1_usb_camera_info.html#aa3c422ce6458222a76347800e69b3df0":[3,25,16,5],
-"structcs_1_1_usb_camera_info.html#aae77dce7f5164fd0db2b63f4ea20eaf2":[3,25,16,3],
-"structcs_1_1_usb_camera_info.html#abf40fa4cd6a97e22bb93c0af1c52f471":[3,25,16,2],
-"structcs_1_1_video_mode.html":[3,25,17],
-"structcs_1_1_video_mode.html#a163bf1a68be118da4263fb77ff51620f":[3,25,17,2],
-"structcs_1_1_video_mode.html#a1ab1b4d090c15a11850819d4c2bafbb5":[3,25,17,1],
-"structcs_1_1_video_mode.html#a7edfda92cb98f2dfb6e91e310e73f8d1":[3,25,17,3],
-"structcs_1_1_video_mode.html#a7fd009ed027c50ca9790fd292aff9258":[3,25,17,5],
-"structcs_1_1_video_mode.html#ae49551cdd0382d00ad9b716373559fb2":[3,25,17,4],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c":[3,25,17,0],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca079dbdeb2ee22b4a1fca071e2a067afc":[3,25,17,0,2],
-"structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca30ac416074440d95b3d54defeba28251":[3,25,17,0,0]
+"structcs_1_1_usb_camera_info.html#aae77dce7f5164fd0db2b63f4ea20eaf2":[3,25,16,3]
 };

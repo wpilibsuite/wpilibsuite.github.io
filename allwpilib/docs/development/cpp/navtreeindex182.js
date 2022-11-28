@@ -1,5 +1,15 @@
 var NAVTREEINDEX182 =
 {
+"struct_eigen_1_1internal_1_1scalar__erf__op.html":[5,0,4,2,1133],
+"struct_eigen_1_1internal_1_1scalar__erfc__op.html":[5,0,4,2,1134],
+"struct_eigen_1_1internal_1_1scalar__erfc__op.html":[4,0,8,4,1136],
+"struct_eigen_1_1internal_1_1scalar__exp__op.html":[4,0,8,4,1137],
+"struct_eigen_1_1internal_1_1scalar__exp__op.html":[5,0,4,2,1135],
+"struct_eigen_1_1internal_1_1scalar__exp__op.html#a171b257ff73c7bc17cb153665de38dc4":[4,0,8,4,1137,1],
+"struct_eigen_1_1internal_1_1scalar__exp__op.html#a171b257ff73c7bc17cb153665de38dc4":[5,0,4,2,1135,1],
+"struct_eigen_1_1internal_1_1scalar__exp__op.html#ad942720c55d82955688f907940521662":[4,0,8,4,1137,0],
+"struct_eigen_1_1internal_1_1scalar__exp__op.html#ad942720c55d82955688f907940521662":[5,0,4,2,1135,0],
+"struct_eigen_1_1internal_1_1scalar__expm1__op.html":[4,0,8,4,1138],
 "struct_eigen_1_1internal_1_1scalar__expm1__op.html":[5,0,4,2,1136],
 "struct_eigen_1_1internal_1_1scalar__expm1__op.html#a0a4529cfefa1025b9ace375e3b23d744":[4,0,8,4,1138,1],
 "struct_eigen_1_1internal_1_1scalar__expm1__op.html#a0a4529cfefa1025b9ace375e3b23d744":[5,0,4,2,1136,1],
@@ -239,15 +249,5 @@ var NAVTREEINDEX182 =
 "struct_eigen_1_1internal_1_1scalar__score__coeff__op.html#a99a09ca4f3cc9013543c01154aff8d8c":[4,0,8,4,1178,0],
 "struct_eigen_1_1internal_1_1scalar__shift__left__op.html":[5,0,4,2,1177],
 "struct_eigen_1_1internal_1_1scalar__shift__left__op.html":[4,0,8,4,1179],
-"struct_eigen_1_1internal_1_1scalar__shift__left__op.html#a9364658d4d0d997efa7312cbb41eaca0":[5,0,4,2,1177,0],
-"struct_eigen_1_1internal_1_1scalar__shift__left__op.html#a9364658d4d0d997efa7312cbb41eaca0":[4,0,8,4,1179,0],
-"struct_eigen_1_1internal_1_1scalar__shift__left__op.html#ab53328acd2176f9282d09ae8c75af196":[5,0,4,2,1177,1],
-"struct_eigen_1_1internal_1_1scalar__shift__left__op.html#ab53328acd2176f9282d09ae8c75af196":[4,0,8,4,1179,1],
-"struct_eigen_1_1internal_1_1scalar__shift__right__op.html":[5,0,4,2,1178],
-"struct_eigen_1_1internal_1_1scalar__shift__right__op.html":[4,0,8,4,1180],
-"struct_eigen_1_1internal_1_1scalar__shift__right__op.html#ae7395c5b183b09c8fdc02a21af928ed0":[5,0,4,2,1178,0],
-"struct_eigen_1_1internal_1_1scalar__shift__right__op.html#ae7395c5b183b09c8fdc02a21af928ed0":[4,0,8,4,1180,0],
-"struct_eigen_1_1internal_1_1scalar__shift__right__op.html#afc629f003d2bbfd681716c1467af2deb":[4,0,8,4,1180,1],
-"struct_eigen_1_1internal_1_1scalar__shift__right__op.html#afc629f003d2bbfd681716c1467af2deb":[5,0,4,2,1178,1],
-"struct_eigen_1_1internal_1_1scalar__sign__op.html":[5,0,4,2,1179]
+"struct_eigen_1_1internal_1_1scalar__shift__left__op.html#a9364658d4d0d997efa7312cbb41eaca0":[5,0,4,2,1177,0]
 };

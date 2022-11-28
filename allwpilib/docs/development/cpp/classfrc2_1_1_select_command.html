@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-27-gf40de0c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-29-g8958b2a</span>
    </div>
   </td>
  </tr>
@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a701c6844825d8b6073244c53daf07aa2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_select_command.html#a701c6844825d8b6073244c53daf07aa2">RunsWhenDisabled</a> () const override</td></tr>
 <tr class="memdesc:a701c6844825d8b6073244c53daf07aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the given command should run when the robot is disabled.  <a href="classfrc2_1_1_select_command.html#a701c6844825d8b6073244c53daf07aa2">More...</a><br /></td></tr>
 <tr class="separator:a701c6844825d8b6073244c53daf07aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0e8b6e4feb11173d7946394203b027"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">Command::InterruptionBehavior</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_select_command.html#a8b0e8b6e4feb11173d7946394203b027">GetInterruptionBehavior</a> () const override</td></tr>
+<tr class="memdesc:a8b0e8b6e4feb11173d7946394203b027"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the command behaves when another command with a shared requirement is scheduled.  <a href="classfrc2_1_1_select_command.html#a8b0e8b6e4feb11173d7946394203b027">More...</a><br /></td></tr>
+<tr class="separator:a8b0e8b6e4feb11173d7946394203b027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc2_1_1_command_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc2_1_1_command_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc2_1_1_command_helper.html">frc2::CommandHelper&lt; CommandBase, SelectCommand&lt; Key &gt; &gt;</a></td></tr>
 <tr class="memitem:a999c2432be3efe11eb786e33afa7ae47 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_helper.html#a999c2432be3efe11eb786e33afa7ae47">CommandHelper</a> ()=default</td></tr>
 <tr class="separator:a999c2432be3efe11eb786e33afa7ae47 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -624,6 +627,38 @@ template&lt;typename Key &gt; </div>
 
 </div>
 </div>
+<a id="a8b0e8b6e4feb11173d7946394203b027" name="a8b0e8b6e4feb11173d7946394203b027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0e8b6e4feb11173d7946394203b027">&#9670;&nbsp;</a></span>GetInterruptionBehavior()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Key &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_command.html#ae1917498fac57d1330c27405cdc80c48">Command::InterruptionBehavior</a> <a class="el" href="classfrc2_1_1_select_command.html">frc2::SelectCommand</a>&lt; Key &gt;::GetInterruptionBehavior </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How the command behaves when another command with a shared requirement is scheduled. </p>
+<dl class="section return"><dt>Returns</dt><dd>a variant of InterruptionBehavior, defaulting to kCancelSelf. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classfrc2_1_1_command.html#ab1e027e86fc5c9132914ca566a9845a8">frc2::Command</a>.</p>
+
+</div>
+</div>
 <a id="a58bb9678f54a52e0c5d8e0f3e6e68567" name="a58bb9678f54a52e0c5d8e0f3e6e68567"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58bb9678f54a52e0c5d8e0f3e6e68567">&#9670;&nbsp;</a></span>Initialize()</h2>
 
@@ -763,7 +798,7 @@ template&lt;typename Key &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_select_command.html">SelectCommand</a></li>
-    <li class="footer">Generated on Sun Nov 27 2022 19:30:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Mon Nov 28 2022 00:27:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

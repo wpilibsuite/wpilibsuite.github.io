@@ -1,5 +1,15 @@
 var NAVTREEINDEX134 =
 {
+"group__hal__spi.html#gaa20dfef106257122f9b915c93bd28d3b":[3,1,9,18],
+"group__hal__spi.html#gabd5cc8f827417c02b25e9d21466684b5":[3,1,9,16],
+"group__hal__spi.html#gac214e22e973fa151b2e30e0f9a00a7b8":[3,1,9,17],
+"group__hal__spi.html#gaccf64c2bb95259438ad2c750de5d5482":[3,1,9,20],
+"group__hal__spi.html#gad60d88465ec0e71d9252ad00d8a7ab27":[3,1,9,6],
+"group__hal__spi.html#gae58880a5ca64d2a518180674610928a7":[3,1,9,3],
+"group__hal__spi.html#gaeab0c9497b31c83f83e526df6f0c6758":[3,1,9,19],
+"group__hal__spi.html#gaef73b829767ac068975ce5d2c93e3b27":[3,1,9,14],
+"group__hal__threads.html":[3,1,21],
+"group__hal__threads.html#ga24b740f1b297b0144e0362993e02e9c8":[3,1,21,4],
 "group__hal__threads.html#ga2c0fdc5179026e7027981764e60143fc":[3,1,21,1],
 "group__hal__threads.html#ga4cd4a92031d9cfdf085323c48338fdfc":[3,1,21,2],
 "group__hal__threads.html#ga997a73e6e65b1e5a9584921003044539":[3,1,21,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX134 =
 "group__ntcore___integer__func.html#gaea55c496c105b9e51ef6e000eb96f370":[3,9,10,5],
 "group__ntcore___integer__func.html#gafe458d32001bc04cb53fb16f5bee192a":[3,9,10,3],
 "group__ntcore___integer_array__cfunc.html":[3,18],
-"group__ntcore___integer_array__cfunc.html#ga432bb645a0be77a89d5e3152aa57dc92":[3,18,3],
-"group__ntcore___integer_array__cfunc.html#ga52a8e3fede373b5095254e6a6d7ef204":[3,18,2],
-"group__ntcore___integer_array__cfunc.html#ga67641bf08369b3393056d8c506e6f6b1":[3,18,4],
-"group__ntcore___integer_array__cfunc.html#ga828a0e856e2c4bed9a41578cd107f845":[3,18,5],
-"group__ntcore___integer_array__cfunc.html#gaa68514b525ba42d352d33d94d02d4463":[3,18,6],
-"group__ntcore___integer_array__cfunc.html#gadf95a493145e36072466e0b76b40fbe7":[3,18,0],
-"group__ntcore___integer_array__cfunc.html#gae8bd3f69421a1350a6f071216d1953af":[3,18,1],
-"group__ntcore___integer_array__func.html":[3,9,16],
-"group__ntcore___integer_array__func.html#ga03c5c25f3882b130776103b6e23fde88":[3,9,16,3],
-"group__ntcore___integer_array__func.html#ga2160ce4368a040f4f1465204ea300e7f":[3,9,16,7],
-"group__ntcore___integer_array__func.html#ga236e00d5f4d8f12c6db587cd8df1ddd5":[3,9,16,2]
+"group__ntcore___integer_array__cfunc.html#ga432bb645a0be77a89d5e3152aa57dc92":[3,18,3]
 };
