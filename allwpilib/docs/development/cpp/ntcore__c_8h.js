@@ -58,7 +58,8 @@ var ntcore__c_8h =
       [ "NT_PUBSUB_SENDALL", "group__ntcore__c__api.html#ggad9b95284a18f6a183d207a639099d9d5af05e9148284ad3ed651bada1d11f0ddc", null ],
       [ "NT_PUBSUB_TOPICSONLY", "group__ntcore__c__api.html#ggad9b95284a18f6a183d207a639099d9d5aabfc0e3588adb48a1bc08dc21bfd9d10", null ],
       [ "NT_PUBSUB_POLLSTORAGE", "group__ntcore__c__api.html#ggad9b95284a18f6a183d207a639099d9d5aa44321b19b6fb41c4f0f4284e2aa83fb", null ],
-      [ "NT_PUBSUB_KEEPDUPLICATES", "group__ntcore__c__api.html#ggad9b95284a18f6a183d207a639099d9d5a2920e38080f72d5815b6bf401ce734b1", null ]
+      [ "NT_PUBSUB_KEEPDUPLICATES", "group__ntcore__c__api.html#ggad9b95284a18f6a183d207a639099d9d5a2920e38080f72d5815b6bf401ce734b1", null ],
+      [ "NT_PUBSUB_LOCALREMOTE", "group__ntcore__c__api.html#ggad9b95284a18f6a183d207a639099d9d5a26fe3a0cf99b515ac593e0ab38e78b87", null ]
     ] ],
     [ "NT_Type", "group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a", [
       [ "NT_UNASSIGNED", "group__ntcore__c__api.html#gga85e32a7c652ecd10ca642d78ec21e46aaa9828697c0fd44a1f8ba2d8c635e6c3f", null ],

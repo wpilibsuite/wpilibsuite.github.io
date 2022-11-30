@@ -1,5 +1,9 @@
 var NAVTREEINDEX190 =
 {
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint16__t_01_4.html":[5,0,4,2,1534],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint32__t_01_4.html":[4,0,8,4,1537],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint32__t_01_4.html":[5,0,4,2,1535],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint64__t_01_4.html":[5,0,4,2,1536],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint64__t_01_4.html":[4,0,8,4,1538],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint8__t_01_4.html":[5,0,4,2,1537],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1uint8__t_00_01numext_1_1uint8__t_01_4.html":[4,0,8,4,1539],
@@ -245,9 +249,5 @@ var NAVTREEINDEX190 =
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#a9708d10de38d9593e1b324ff3213b333":[5,0,4,2,1553,2],
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#a9dc15ac07a776d20a9612c2d04e766f2":[5,0,4,2,1553,10],
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#a9dc15ac07a776d20a9612c2d04e766f2":[4,0,8,4,1555,10],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#ab204763236c75b105b51d03e6afc748c":[4,0,8,4,1555,8],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#ab204763236c75b105b51d03e6afc748c":[5,0,4,2,1553,8],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#ac6ec2960821d55102ef914c1e5372fed":[5,0,4,2,1553,12],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#ac6ec2960821d55102ef914c1e5372fed":[4,0,8,4,1555,12],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#ac90c0d4af3deaa85bb92112b00a46f61":[5,0,4,2,1553,1]
+"struct_eigen_1_1internal_1_1unary__evaluator_3_01_replicate_3_01_arg_type_00_01_row_factor_00_01_col_factor_01_4_01_4.html#ab204763236c75b105b51d03e6afc748c":[4,0,8,4,1555,8]
 };
