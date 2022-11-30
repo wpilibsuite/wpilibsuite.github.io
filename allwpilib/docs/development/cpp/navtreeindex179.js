@@ -1,5 +1,6 @@
 var NAVTREEINDEX179 =
 {
+"struct_eigen_1_1internal_1_1product__triangular__matrix__matrix_3_01_scalar_00_01_index_00_01_moe696f4d4dece63a6860a0da4746c57ec.html":[4,0,8,4,949],
 "struct_eigen_1_1internal_1_1product__triangular__matrix__matrix_3_01_scalar_00_01_index_00_01_moe696f4d4dece63a6860a0da4746c57ec.html":[5,0,4,2,947],
 "struct_eigen_1_1internal_1_1product__triangular__matrix__matrix_3_01_scalar_00_01_index_00_01_moe696f4d4dece63a6860a0da4746c57ec.html#a11f446a755e422743117fcd849866b91":[5,0,4,2,947,0],
 "struct_eigen_1_1internal_1_1product__triangular__matrix__matrix_3_01_scalar_00_01_index_00_01_moe696f4d4dece63a6860a0da4746c57ec.html#a11f446a755e422743117fcd849866b91":[4,0,8,4,949,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX179 =
 "struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#abf087de6edd140d83065a034c966b97c":[5,0,4,2,1026,0],
 "struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#abf087de6edd140d83065a034c966b97c":[4,0,8,4,1028,0],
 "struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#ac4f8bd935f232fd5eeb937f06a9ba958":[5,0,4,2,1026,1],
-"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#ac4f8bd935f232fd5eeb937f06a9ba958":[4,0,8,4,1028,1],
-"struct_eigen_1_1internal_1_1redux__novec__unroller.html":[4,0,8,4,1029]
+"struct_eigen_1_1internal_1_1redux__impl_3_01_func_00_01_evaluator_00_01_slice_vectorized_traversal_00_01_unrolling_01_4.html#ac4f8bd935f232fd5eeb937f06a9ba958":[4,0,8,4,1028,1]
 };

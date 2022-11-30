@@ -1,5 +1,6 @@
 var NAVTREEINDEX180 =
 {
+"struct_eigen_1_1internal_1_1redux__novec__unroller.html":[4,0,8,4,1029],
 "struct_eigen_1_1internal_1_1redux__novec__unroller.html":[5,0,4,2,1027],
 "struct_eigen_1_1internal_1_1redux__novec__unroller.html#a78c78e0ae6f7be49566b4a207b08393d":[4,0,8,4,1029,0],
 "struct_eigen_1_1internal_1_1redux__novec__unroller.html#a78c78e0ae6f7be49566b4a207b08393d":[5,0,4,2,1027,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX180 =
 "struct_eigen_1_1internal_1_1scalar__abs__op.html":[4,0,8,4,1081],
 "struct_eigen_1_1internal_1_1scalar__abs__op.html":[5,0,4,2,1079],
 "struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[5,0,4,2,1079,0],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[4,0,8,4,1081,0],
-"struct_eigen_1_1internal_1_1scalar__abs__op.html#a2e1557e18aea6d7b6a9b4b2cead03037":[5,0,4,2,1079,1]
+"struct_eigen_1_1internal_1_1scalar__abs__op.html#a0ba5cca2271250a406faf6f1ca904450":[4,0,8,4,1081,0]
 };

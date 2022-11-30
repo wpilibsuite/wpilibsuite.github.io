@@ -25,5 +25,6 @@ var hal_2src_2main_2native_2include_2hal_2_driver_station_8h =
     [ "HAL_RemoveNewDataEventHandle", "group__hal__driverstation.html#gac5f3772e7745b01a4258c289ca384b7b", null ],
     [ "HAL_SendConsoleLine", "group__hal__driverstation.html#ga3ccd000ef148655282d736312eac1b35", null ],
     [ "HAL_SendError", "group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155", null ],
-    [ "HAL_SetJoystickOutputs", "group__hal__driverstation.html#ga9abd3bfc937e917a7b7174894b1ef5aa", null ]
+    [ "HAL_SetJoystickOutputs", "group__hal__driverstation.html#ga9abd3bfc937e917a7b7174894b1ef5aa", null ],
+    [ "HAL_SetPrintErrorImpl", "group__hal__driverstation.html#ga4c805fd71f4e2d114fd785fa189c1360", null ]
 ];

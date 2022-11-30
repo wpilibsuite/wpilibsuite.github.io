@@ -1,5 +1,6 @@
 var NAVTREEINDEX164 =
 {
+"struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala947462575c60123595df86e5556ae031.html#a451e59046680cf183880a88d7a5ccd1b":[4,0,8,4,142,3],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala947462575c60123595df86e5556ae031.html#a451e59046680cf183880a88d7a5ccd1b":[5,0,4,2,140,3],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala947462575c60123595df86e5556ae031.html#a4c21dd892992bd0b6c3882cf44db323d":[5,0,4,2,140,4],
 "struct_eigen_1_1internal_1_1blas__traits_3_01_cwise_binary_op_3_01scalar__product__op_3_01_scala947462575c60123595df86e5556ae031.html#a4c21dd892992bd0b6c3882cf44db323d":[4,0,8,4,142,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX164 =
 "struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check_3_01_matrix_type_00_01_result_type_00_014_01_4.html":[5,0,4,2,193],
 "struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check_3_01_matrix_type_00_01_result_type_00_014_01_4.html":[4,0,8,4,195],
 "struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check_3_01_matrix_type_00_01_result_type_00_014_01_4.html#abe35a5b8a514af880fd4cdd8186b1918":[5,0,4,2,193,0],
-"struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check_3_01_matrix_type_00_01_result_type_00_014_01_4.html#abe35a5b8a514af880fd4cdd8186b1918":[4,0,8,4,195,0],
-"struct_eigen_1_1internal_1_1compute__inverse__size4.html":[5,0,4,2,194]
+"struct_eigen_1_1internal_1_1compute__inverse__and__det__with__check_3_01_matrix_type_00_01_result_type_00_014_01_4.html#abe35a5b8a514af880fd4cdd8186b1918":[4,0,8,4,195,0]
 };

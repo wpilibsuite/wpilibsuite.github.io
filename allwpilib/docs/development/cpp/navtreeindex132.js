@@ -116,6 +116,7 @@ var NAVTREEINDEX132 =
 "group__hal__driverstation.html#ga3923cba3e237b54984dc5588124fe67b":[3,1,16,21],
 "group__hal__driverstation.html#ga3ccd000ef148655282d736312eac1b35":[3,1,16,52],
 "group__hal__driverstation.html#ga42b57ded6c79f4d22b54a84cad92a2ec":[3,1,16,47],
+"group__hal__driverstation.html#ga4c805fd71f4e2d114fd785fa189c1360":[3,1,16,55],
 "group__hal__driverstation.html#ga4eea37e55b0d07dd9e2490004bab5ed4":[3,1,16,32],
 "group__hal__driverstation.html#ga5940b8a0631ad2e59bb74c60874f720f":[3,1,16,25],
 "group__hal__driverstation.html#ga5aee9636007e6945eed9345c476dff8f":[3,1,16,49],
@@ -248,6 +249,5 @@ var NAVTREEINDEX132 =
 "group__hal__errors.html#ga9c0d70696f00cbc35c510171bd44e33b":[3,1,32,55],
 "group__hal__errors.html#ga9d8d0bc306e15a0a081cca43c0cb0abd":[3,1,32,35],
 "group__hal__errors.html#ga9dc2ea343e10b435341d24edde896ccb":[3,1,32,85],
-"group__hal__errors.html#ga9ef74758089adc39fe617b7da0788155":[3,1,32,78],
-"group__hal__errors.html#gaa2cdf901559b9696044c89ef9e624736":[3,1,32,14]
+"group__hal__errors.html#ga9ef74758089adc39fe617b7da0788155":[3,1,32,78]
 };

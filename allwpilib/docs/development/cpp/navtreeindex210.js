@@ -1,5 +1,6 @@
 var NAVTREEINDEX210 =
 {
+"wpilibc_2src_2main_2native_2include_2frc_2_d_m_a_8h_source.html":[6,0,3,39],
 "wpilibc_2src_2main_2native_2include_2frc_2_driver_station_8h.html":[6,0,3,42],
 "wpilibc_2src_2main_2native_2include_2frc_2_driver_station_8h_source.html":[6,0,3,42],
 "wpilibc_2src_2main_2native_2include_2frc_2_duty_cycle_8h.html":[6,0,3,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX210 =
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a2fead8330d19b9d2f10e6ed9c59e0174":[6,0,10,0,0,0,2,21],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a30839219f297246ebc1babfb45f96f2a":[6,0,10,0,0,0,2,11],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a32bc383ae2b80ffa7188a244c11715b4":[6,0,10,0,0,0,2,28],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a3c4d8499969f1378aea4db1993e7c319":[6,0,10,0,0,0,2,13],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a4e3c48db7fa8546d9a89414b2c2f1a9d":[6,0,10,0,0,0,2,16]
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a3c4d8499969f1378aea4db1993e7c319":[6,0,10,0,0,0,2,13]
 };

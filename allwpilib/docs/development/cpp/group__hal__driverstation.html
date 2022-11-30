@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-48-gaa6499e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-49-g5387541</span>
    </div>
   </td>
  </tr>
@@ -172,6 +172,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga13435855e61c724e9708bdd90baee155"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155">HAL_SendError</a> (<a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> isError, int32_t errorCode, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> isLVCode, const char *details, const char *location, const char *callStack, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> printMsg)</td></tr>
 <tr class="memdesc:ga13435855e61c724e9708bdd90baee155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an error to the driver station.  <a href="group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155">More...</a><br /></td></tr>
 <tr class="separator:ga13435855e61c724e9708bdd90baee155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c805fd71f4e2d114fd785fa189c1360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__driverstation.html#ga4c805fd71f4e2d114fd785fa189c1360">HAL_SetPrintErrorImpl</a> (void(*func)(const char *line, size_t size))</td></tr>
+<tr class="memdesc:ga4c805fd71f4e2d114fd785fa189c1360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the print function used by HAL_SendError.  <a href="group__hal__driverstation.html#ga4c805fd71f4e2d114fd785fa189c1360">More...</a><br /></td></tr>
+<tr class="separator:ga4c805fd71f4e2d114fd785fa189c1360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ccd000ef148655282d736312eac1b35"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__driverstation.html#ga3ccd000ef148655282d736312eac1b35">HAL_SendConsoleLine</a> (const char *line)</td></tr>
 <tr class="memdesc:ga3ccd000ef148655282d736312eac1b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a line to the driver station console.  <a href="group__hal__driverstation.html#ga3ccd000ef148655282d736312eac1b35">More...</a><br /></td></tr>
 <tr class="separator:ga3ccd000ef148655282d736312eac1b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1354,12 +1357,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga4c805fd71f4e2d114fd785fa189c1360" name="ga4c805fd71f4e2d114fd785fa189c1360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c805fd71f4e2d114fd785fa189c1360">&#9670;&nbsp;</a></span>HAL_SetPrintErrorImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetPrintErrorImpl </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(const char *line, size_t size)&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the print function used by HAL_SendError. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>Function called by HAL_SendError when stderr is printed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Nov 30 2022 06:02:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Nov 30 2022 07:22:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

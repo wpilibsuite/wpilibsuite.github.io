@@ -1,5 +1,6 @@
 var NAVTREEINDEX137 =
 {
+"hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h_source.html":[6,0,6,12],
 "hal_2src_2main_2native_2include_2hal_2_c_a_n_8h.html":[6,0,6,13],
 "hal_2src_2main_2native_2include_2hal_2_c_a_n_8h_source.html":[6,0,6,13],
 "hal_2src_2main_2native_2include_2hal_2_constants_8h.html":[6,0,6,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX137 =
 "iterator_8h.html":[6,0,10,3,0,0,16],
 "iterator_8h.html#a9630e9cd2902c4dbc7f817a6a84bb9da":[6,0,10,3,0,0,16,7],
 "iterator_8h.html#a985e3eb8f9f12493630c5b00866467dd":[6,0,10,3,0,0,16,6],
-"iterator_8h.html#aa300eeb1def26aef1ca3af133fb26971":[6,0,10,3,0,0,16,8],
-"iterator_8h_source.html":[6,0,10,3,0,0,16]
+"iterator_8h.html#aa300eeb1def26aef1ca3af133fb26971":[6,0,10,3,0,0,16,8]
 };

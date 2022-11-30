@@ -1,5 +1,6 @@
 var NAVTREEINDEX196 =
 {
+"structdragonbox_1_1float__info_3_01float_01_4.html#a48c8e3febe9ce4ca83905039fea6df4e":[4,0,6,3,1],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a51f7cf5ed43cd1e1f274c70cb7681383":[5,0,2,3,0],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a51f7cf5ed43cd1e1f274c70cb7681383":[4,0,6,3,0],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a9cce74756bd380756e6d62cc177f7c11":[4,0,6,3,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX196 =
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a86c7321e37b1dada95c66a165bca6c85":[5,0,6,122,0,4],
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a8706b7d02be28856fab55aed81f1fa1a":[4,0,10,126,0,0],
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a8706b7d02be28856fab55aed81f1fa1a":[5,0,6,122,0,0],
-"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[5,0,6,122,0,2],
-"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[4,0,10,126,0,2]
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[5,0,6,122,0,2]
 };

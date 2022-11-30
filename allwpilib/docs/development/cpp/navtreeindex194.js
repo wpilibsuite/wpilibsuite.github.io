@@ -1,5 +1,6 @@
 var NAVTREEINDEX194 =
 {
+"struct_w_p_i___service_data.html#ae83b73f29f3839c0e6fa84614ab1d98c":[5,0,309,2],
 "structansi__color__escape.html":[5,0,18],
 "structansi__color__escape.html#a5c028786b6961aedfa6ccf0ac58451a1":[5,0,18,3],
 "structansi__color__escape.html#a8468c1d8c2ed520e45b369a7a49389b0":[5,0,18,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX194 =
 "structcs_1_1_usb_camera_info.html#a0c88d22224cb6730d162f9fb7dcdb8e2":[3,25,16,0],
 "structcs_1_1_usb_camera_info.html#a13f32c4bb80329004d8a6cf6c0320bd4":[3,25,16,1],
 "structcs_1_1_usb_camera_info.html#a89e975415e6d1a12c82eb1e40c6eb1cd":[3,25,16,4],
-"structcs_1_1_usb_camera_info.html#aa3c422ce6458222a76347800e69b3df0":[3,25,16,5],
-"structcs_1_1_usb_camera_info.html#aae77dce7f5164fd0db2b63f4ea20eaf2":[3,25,16,3]
+"structcs_1_1_usb_camera_info.html#aa3c422ce6458222a76347800e69b3df0":[3,25,16,5]
 };

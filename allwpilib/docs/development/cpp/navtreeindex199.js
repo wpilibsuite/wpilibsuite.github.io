@@ -1,5 +1,6 @@
 var NAVTREEINDEX199 =
 {
+"structis__integral_3_01int128__opt_01_4.html":[5,0,166],
 "structis__integral_3_01uint128__t_01_4.html":[5,0,167],
 "structis__named__arg.html":[5,0,168],
 "structis__named__arg_3_01named__arg_3_01_char_00_01_t_01_4_01_4.html":[5,0,169],
@@ -248,6 +249,5 @@ var NAVTREEINDEX199 =
 "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html":[5,0,12,3],
 "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html#a77368f0a5f1dfd597b9805cd89791ed2":[4,0,22,3,0],
 "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html#a77368f0a5f1dfd597b9805cd89791ed2":[5,0,12,3,0],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html":[4,0,22,9],
-"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html":[5,0,12,9]
+"structstd_1_1numeric__limits_3_01_eigen_1_1bfloat16_01_4.html":[4,0,22,9]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX198 =
 {
+"structfrc_1_1_swerve_module_position.html#afa10ac0192a00b4c4350a68cf1993aca":[4,0,10,180,0],
 "structfrc_1_1_swerve_module_state.html":[4,0,10,181],
 "structfrc_1_1_swerve_module_state.html":[5,0,6,177],
 "structfrc_1_1_swerve_module_state.html#a156f23b8877aebb0820c48e2e536ae43":[4,0,10,181,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX198 =
 "structis__contiguous__back__insert__iterator.html":[5,0,162],
 "structis__contiguous__back__insert__iterator_3_01appender_01_4.html":[5,0,163],
 "structis__contiguous__back__insert__iterator_3_01std_1_1back__insert__iterator_3_01_container_01_4_01_4.html":[5,0,164],
-"structis__integral.html":[5,0,165],
-"structis__integral_3_01int128__opt_01_4.html":[5,0,166]
+"structis__integral.html":[5,0,165]
 };
