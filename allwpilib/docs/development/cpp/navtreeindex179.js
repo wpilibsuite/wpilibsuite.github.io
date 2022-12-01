@@ -1,5 +1,9 @@
 var NAVTREEINDEX179 =
 {
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_dense_00_01_sparse_00_01_outer_product_01_4.html#ab4ca8caac8509b62ab8cd0ddacd1fc44":[5,0,4,2,931,0],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_b_00_01_product_tag_01_4.html":[5,0,4,2,932],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_b_00_01_product_tag_01_4.html":[4,0,8,4,934],
+"struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_b_00_01_product_tag_01_4.html#a3f6b937aa24fb81d1e6febbd20e810d2":[4,0,8,4,934,0],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_b_00_01_product_tag_01_4.html#a3f6b937aa24fb81d1e6febbd20e810d2":[5,0,4,2,932,0],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_dense_00_01_product_tag_01_4.html":[5,0,4,2,933],
 "struct_eigen_1_1internal_1_1product__promote__storage__type_3_01_diagonal_shape_00_01_dense_00_01_product_tag_01_4.html":[4,0,8,4,935],
@@ -245,9 +249,5 @@ var NAVTREEINDEX179 =
 "struct_eigen_1_1internal_1_1real__default__impl_3_01_scalar_00_01true_01_4.html#a0a89e41163717e5d5d4b6fd2ed586523":[4,0,8,4,1017,1],
 "struct_eigen_1_1internal_1_1real__default__impl_3_01_scalar_00_01true_01_4.html#ad955f4b83dfa41fa283c7904ad582cdd":[5,0,4,2,1015,0],
 "struct_eigen_1_1internal_1_1real__default__impl_3_01_scalar_00_01true_01_4.html#ad955f4b83dfa41fa283c7904ad582cdd":[4,0,8,4,1017,0],
-"struct_eigen_1_1internal_1_1real__impl.html":[5,0,4,2,1016],
-"struct_eigen_1_1internal_1_1real__impl.html":[4,0,8,4,1018],
-"struct_eigen_1_1internal_1_1real__ref__impl.html":[5,0,4,2,1017],
-"struct_eigen_1_1internal_1_1real__ref__impl.html":[4,0,8,4,1019],
-"struct_eigen_1_1internal_1_1real__ref__impl.html#a7f3386fed59f5edd6a24dfe5762df894":[5,0,4,2,1017,1]
+"struct_eigen_1_1internal_1_1real__impl.html":[5,0,4,2,1016]
 };

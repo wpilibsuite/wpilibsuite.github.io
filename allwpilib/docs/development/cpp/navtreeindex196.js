@@ -1,5 +1,9 @@
 var NAVTREEINDEX196 =
 {
+"structdetail_1_1streamed__view.html#a540a845e8a68a991b0110365dfb9acf3":[5,0,1,38,0],
+"structdetail_1_1string__literal.html":[5,0,1,39],
+"structdetail_1_1string__literal.html":[4,0,3,39],
+"structdetail_1_1string__literal.html#a488064cc6eea7fe043dfec58f78d75f6":[5,0,1,39,0],
 "structdetail_1_1string__literal.html#a488064cc6eea7fe043dfec58f78d75f6":[4,0,3,39,0],
 "structdetail_1_1string__literal.html#a9b0002b0cd434408b8f83a5d503f1a28":[5,0,1,39,1],
 "structdetail_1_1string__literal.html#a9b0002b0cd434408b8f83a5d503f1a28":[4,0,3,39,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX196 =
 "structfrc_1_1_differential_drive_wheel_speeds.html#a1936fbb4670627a049bccc42ea8af0be":[5,0,6,54,1],
 "structfrc_1_1_differential_drive_wheel_speeds.html#a1936fbb4670627a049bccc42ea8af0be":[4,0,10,58,1],
 "structfrc_1_1_differential_drive_wheel_speeds.html#a50ef494cb91c016bfc865dc0a3c95a69":[5,0,6,54,0],
-"structfrc_1_1_differential_drive_wheel_speeds.html#a50ef494cb91c016bfc865dc0a3c95a69":[4,0,10,58,0],
-"structfrc_1_1_differential_drive_wheel_speeds.html#ae705f1cdac4e5bca951472a1a28ff671":[5,0,6,54,2],
-"structfrc_1_1_differential_drive_wheel_speeds.html#ae705f1cdac4e5bca951472a1a28ff671":[4,0,10,58,2],
-"structfrc_1_1_differential_drive_wheel_voltages.html":[5,0,6,55],
-"structfrc_1_1_differential_drive_wheel_voltages.html":[4,0,10,59]
+"structfrc_1_1_differential_drive_wheel_speeds.html#a50ef494cb91c016bfc865dc0a3c95a69":[4,0,10,58,0]
 };

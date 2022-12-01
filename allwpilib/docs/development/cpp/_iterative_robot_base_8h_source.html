@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-54-g1f1461e</span>
    </div>
   </td>
  </tr>
@@ -298,37 +298,51 @@ $(document).ready(function(){initNavTree('_iterative_robot_base_8h_source.html',
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#af55ae3692aeddcb8f9d3e54a5d5b9474">  202</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#af55ae3692aeddcb8f9d3e54a5d5b9474">SetNetworkTablesFlushEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"></span> </div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">   * Gets time period between calls to Periodic() functions.</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#aead36ef3891548d84322a593ddb5d049">  207</a></span>  units::second_t <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#aead36ef3891548d84322a593ddb5d049">GetPeriod</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment"></span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">   * Constructor for IterativeRobotBase.</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">   * @param period Period.</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#afee5b7301bc0f4579d76f840a18f2cca">  214</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#afee5b7301bc0f4579d76f840a18f2cca">IterativeRobotBase</a>(units::second_t period);</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#ad9881dc318ce4ff318d9ede0a57f60bd">  216</a></span>  <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#ad9881dc318ce4ff318d9ede0a57f60bd">~IterativeRobotBase</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#ad98a8afddf5b2718f23e61dde77fd160">  219</a></span>  <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#ad98a8afddf5b2718f23e61dde77fd160">IterativeRobotBase</a>(<a class="code hl_class" href="classfrc_1_1_iterative_robot_base.html">IterativeRobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#a56716f20be0aff471e1c39668a7f5c68">  220</a></span>  <a class="code hl_class" href="classfrc_1_1_iterative_robot_base.html">IterativeRobotBase</a>&amp; <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#a56716f20be0aff471e1c39668a7f5c68">operator=</a>(<a class="code hl_class" href="classfrc_1_1_iterative_robot_base.html">IterativeRobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#a87620f299b086feb73d6625896978396">  222</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#a87620f299b086feb73d6625896978396">LoopFunc</a>();</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keyword">enum class</span> Mode { <a class="code hl_enumvalue" href="namespacefrc.html#a91bd7a402531072636e0dfbedef7a472a35c3ace1970663a16e5c65baa5941b13">kNone</a>, kDisabled, kAutonomous, kTeleop, kTest };</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  Mode m_lastMode = Mode::kNone;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  units::second_t m_period;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a> m_watchdog;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">bool</span> m_ntFlushEnabled = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordtype">void</span> PrintLoopOverrunMessage();</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>};</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">   * Sets whether LiveWindow operation is enabled during test mode.</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">   * @param testLW True to enable, false to disable. Defaults to true.</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">   * @throws if called in test mode.</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#a4dfbcb9befcf9fd4e440a8e5fdff2b72">  210</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#a4dfbcb9befcf9fd4e440a8e5fdff2b72">EnableLiveWindowInTest</a>(<span class="keywordtype">bool</span> testLW);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment"></span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">   * Whether LiveWindow operation is enabled during test mode.</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#ad086787827fa35dab68a03cd2529470a">  215</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#ad086787827fa35dab68a03cd2529470a">IsLiveWindowEnabledInTest</a>();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment"></span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">   * Gets time period between calls to Periodic() functions.</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#aead36ef3891548d84322a593ddb5d049">  220</a></span>  units::second_t <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#aead36ef3891548d84322a593ddb5d049">GetPeriod</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment"></span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">   * Constructor for IterativeRobotBase.</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">   * @param period Period.</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#afee5b7301bc0f4579d76f840a18f2cca">  227</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#afee5b7301bc0f4579d76f840a18f2cca">IterativeRobotBase</a>(units::second_t period);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#ad9881dc318ce4ff318d9ede0a57f60bd">  229</a></span>  <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#ad9881dc318ce4ff318d9ede0a57f60bd">~IterativeRobotBase</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#ad98a8afddf5b2718f23e61dde77fd160">  232</a></span>  <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#ad98a8afddf5b2718f23e61dde77fd160">IterativeRobotBase</a>(<a class="code hl_class" href="classfrc_1_1_iterative_robot_base.html">IterativeRobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#a56716f20be0aff471e1c39668a7f5c68">  233</a></span>  <a class="code hl_class" href="classfrc_1_1_iterative_robot_base.html">IterativeRobotBase</a>&amp; <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#a56716f20be0aff471e1c39668a7f5c68">operator=</a>(<a class="code hl_class" href="classfrc_1_1_iterative_robot_base.html">IterativeRobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno"><a class="line" href="classfrc_1_1_iterative_robot_base.html#a87620f299b086feb73d6625896978396">  235</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_iterative_robot_base.html#a87620f299b086feb73d6625896978396">LoopFunc</a>();</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keyword">enum class</span> Mode { <a class="code hl_enumvalue" href="namespacefrc.html#a91bd7a402531072636e0dfbedef7a472a35c3ace1970663a16e5c65baa5941b13">kNone</a>, kDisabled, kAutonomous, kTeleop, kTest };</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  Mode m_lastMode = Mode::kNone;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  units::second_t m_period;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a> m_watchdog;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordtype">bool</span> m_ntFlushEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keywordtype">bool</span> m_lwEnabledInTest = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keywordtype">void</span> PrintLoopOverrunMessage();</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>};</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_robot_base_8h_html"><div class="ttname"><a href="_robot_base_8h.html">RobotBase.h</a></div></div>
 <div class="ttc" id="a_watchdog_8h_html"><div class="ttname"><a href="_watchdog_8h.html">Watchdog.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html">frc::IterativeRobotBase</a></div><div class="ttdoc">IterativeRobotBase implements a specific type of robot program framework, extending the RobotBase cla...</div><div class="ttdef"><b>Definition:</b> IterativeRobotBase.h:54</div></div>
@@ -340,6 +354,7 @@ $(document).ready(function(){initNavTree('_iterative_robot_base_8h_source.html',
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_a379bededf5d908e76fc6b2b19010e3ab"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#a379bededf5d908e76fc6b2b19010e3ab">frc::IterativeRobotBase::TestPeriodic</a></div><div class="ttdeci">virtual void TestPeriodic()</div><div class="ttdoc">Periodic code for test mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_a3e3798e0ac3ed99fb63a747bfc0622c0"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#a3e3798e0ac3ed99fb63a747bfc0622c0">frc::IterativeRobotBase::TeleopInit</a></div><div class="ttdeci">virtual void TeleopInit()</div><div class="ttdoc">Initialization code for teleop mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_a43ded4345299bb1bdf4d3e615b585dc6"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#a43ded4345299bb1bdf4d3e615b585dc6">frc::IterativeRobotBase::SimulationPeriodic</a></div><div class="ttdeci">virtual void SimulationPeriodic()</div><div class="ttdoc">Periodic simulation code should go here.</div></div>
+<div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_a4dfbcb9befcf9fd4e440a8e5fdff2b72"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#a4dfbcb9befcf9fd4e440a8e5fdff2b72">frc::IterativeRobotBase::EnableLiveWindowInTest</a></div><div class="ttdeci">void EnableLiveWindowInTest(bool testLW)</div><div class="ttdoc">Sets whether LiveWindow operation is enabled during test mode.</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_a56716f20be0aff471e1c39668a7f5c68"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#a56716f20be0aff471e1c39668a7f5c68">frc::IterativeRobotBase::operator=</a></div><div class="ttdeci">IterativeRobotBase &amp; operator=(IterativeRobotBase &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_a6e37576017ae0ef5be38745b5af1819e"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#a6e37576017ae0ef5be38745b5af1819e">frc::IterativeRobotBase::DisabledExit</a></div><div class="ttdeci">virtual void DisabledExit()</div><div class="ttdoc">Exit code for disabled mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_a872774b94df96b454d83e8b22b441153"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#a872774b94df96b454d83e8b22b441153">frc::IterativeRobotBase::TeleopExit</a></div><div class="ttdeci">virtual void TeleopExit()</div><div class="ttdoc">Exit code for teleop mode should go here.</div></div>
@@ -348,6 +363,7 @@ $(document).ready(function(){initNavTree('_iterative_robot_base_8h_source.html',
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_aa1c0335b4c558340a2e624ab2db8c092"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#aa1c0335b4c558340a2e624ab2db8c092">frc::IterativeRobotBase::DisabledPeriodic</a></div><div class="ttdeci">virtual void DisabledPeriodic()</div><div class="ttdoc">Periodic code for disabled mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_aa53a5965b9a01622d221020d2b6b6a8c"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#aa53a5965b9a01622d221020d2b6b6a8c">frc::IterativeRobotBase::DisabledInit</a></div><div class="ttdeci">virtual void DisabledInit()</div><div class="ttdoc">Initialization code for disabled mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_ac9eeeb4ab51bb054d12bca1b398bc352"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#ac9eeeb4ab51bb054d12bca1b398bc352">frc::IterativeRobotBase::AutonomousInit</a></div><div class="ttdeci">virtual void AutonomousInit()</div><div class="ttdoc">Initialization code for autonomous mode should go here.</div></div>
+<div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_ad086787827fa35dab68a03cd2529470a"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#ad086787827fa35dab68a03cd2529470a">frc::IterativeRobotBase::IsLiveWindowEnabledInTest</a></div><div class="ttdeci">bool IsLiveWindowEnabledInTest()</div><div class="ttdoc">Whether LiveWindow operation is enabled during test mode.</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_ad9881dc318ce4ff318d9ede0a57f60bd"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#ad9881dc318ce4ff318d9ede0a57f60bd">frc::IterativeRobotBase::~IterativeRobotBase</a></div><div class="ttdeci">~IterativeRobotBase() override=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_ad98a8afddf5b2718f23e61dde77fd160"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#ad98a8afddf5b2718f23e61dde77fd160">frc::IterativeRobotBase::IterativeRobotBase</a></div><div class="ttdeci">IterativeRobotBase(IterativeRobotBase &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_iterative_robot_base_html_addbb0445808f84a9a50587ee27fc5dd5"><div class="ttname"><a href="classfrc_1_1_iterative_robot_base.html#addbb0445808f84a9a50587ee27fc5dd5">frc::IterativeRobotBase::AutonomousExit</a></div><div class="ttdeci">virtual void AutonomousExit()</div><div class="ttdoc">Exit code for autonomous mode should go here.</div></div>
@@ -366,7 +382,7 @@ $(document).ready(function(){initNavTree('_iterative_robot_base_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_iterative_robot_base_8h.html">IterativeRobotBase.h</a></li>
-    <li class="footer">Generated on Thu Dec 1 2022 03:54:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 21:30:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

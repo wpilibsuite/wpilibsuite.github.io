@@ -1,5 +1,9 @@
 var NAVTREEINDEX149 =
 {
+"namespacedrake_1_1internal.html#ac5a3f9960d318c26e9a2f4640382ca60":[4,0,7,1,3],
+"namespacedrake_1_1math.html":[4,0,7,2],
+"namespacedrake_1_1math.html#a2726b98d0fc5a30d1e5f6de76a9cc501":[4,0,7,2,1],
+"namespacedrake_1_1math.html#a3472d444e88dbd0ac9a47f4166b3eb8a":[4,0,7,2,0],
 "namespaceenums.html":[4,0,9],
 "namespaceenums.html#a8edb72b998b5c59c01243d908949ce87":[4,0,9,0],
 "namespacefrc.html":[4,0,10],
@@ -245,9 +249,5 @@ var NAVTREEINDEX149 =
 "namespacefs.html#a69bca4cd48a2ac719202f2f290a78bc9":[4,0,12,0],
 "namespacefs.html#a9ccf202e6da03879cd7945e07c44554a":[4,0,12,7],
 "namespacefs.html#aa169b3ce314b5e3d7c5158214a43cfc3":[4,0,12,10],
-"namespacefs.html#aa9777ef8d6baa1dfa116c7e482e986e7":[4,0,12,13],
-"namespacefs.html#ab67367b7a886f034f8c8e70a8aa15e6f":[4,0,12,14],
-"namespacefs.html#abcd3d567f1f0913a1ca11eec67e5cf01":[4,0,12,17],
-"namespacefs.html#abd38bed113ec30fc0cf304e41ee3ff12":[4,0,12,1],
-"namespacefs.html#ac99ee6cbdcaf6f7e90def06726182670":[4,0,12,2]
+"namespacefs.html#aa9777ef8d6baa1dfa116c7e482e986e7":[4,0,12,13]
 };

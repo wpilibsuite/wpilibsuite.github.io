@@ -1,5 +1,9 @@
 var NAVTREEINDEX197 =
 {
+"structfrc_1_1_differential_drive_wheel_speeds.html#ae705f1cdac4e5bca951472a1a28ff671":[5,0,6,54,2],
+"structfrc_1_1_differential_drive_wheel_speeds.html#ae705f1cdac4e5bca951472a1a28ff671":[4,0,10,58,2],
+"structfrc_1_1_differential_drive_wheel_voltages.html":[5,0,6,55],
+"structfrc_1_1_differential_drive_wheel_voltages.html":[4,0,10,59],
 "structfrc_1_1_differential_drive_wheel_voltages.html#a228f1f3cfa21caa5943417d12c2473c7":[5,0,6,55,1],
 "structfrc_1_1_differential_drive_wheel_voltages.html#a228f1f3cfa21caa5943417d12c2473c7":[4,0,10,59,1],
 "structfrc_1_1_differential_drive_wheel_voltages.html#ad726e16025ab67888f3edd8cd0b01fca":[5,0,6,55,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX197 =
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#a81d16e05ca1d80e6664784c8ba457e01":[5,0,6,121,1,17],
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#a81d16e05ca1d80e6664784c8ba457e01":[4,0,10,125,1,17],
 "structfrc_1_1_power_distribution_1_1_sticky_faults.html#a85fcdbbdb99be09b560c55b20d42a7d0":[4,0,10,125,1,4],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a85fcdbbdb99be09b560c55b20d42a7d0":[5,0,6,121,1,4],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a90e42a1769e34e47d0c10dcbd07864bc":[4,0,10,125,1,24],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a90e42a1769e34e47d0c10dcbd07864bc":[5,0,6,121,1,24],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a94e2b9b21a1c5922f934bcac30b91f0f":[5,0,6,121,1,13],
-"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a94e2b9b21a1c5922f934bcac30b91f0f":[4,0,10,125,1,13]
+"structfrc_1_1_power_distribution_1_1_sticky_faults.html#a85fcdbbdb99be09b560c55b20d42a7d0":[5,0,6,121,1,4]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX169 =
 {
+"struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1scac641579c4e5344f96636c29532d8e354.html#ae60effa35f65c29890c945271b98a4d6":[4,0,8,4,354,0],
+"struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1scae866e2c7242096d7b5fd789e3b867e0a.html":[5,0,4,2,351],
+"struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1scae866e2c7242096d7b5fd789e3b867e0a.html":[4,0,8,4,353],
+"struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1scae866e2c7242096d7b5fd789e3b867e0a.html#a6ef1525831a97f7b074cce88cf6139fb":[4,0,8,4,353,0],
 "struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_cwise_binary_op_3_01internal_1_1scae866e2c7242096d7b5fd789e3b867e0a.html#a6ef1525831a97f7b074cce88cf6139fb":[5,0,4,2,351,0],
 "struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_product_3_01_lhs_00_01_rhs_00_01_default_product_01_4_01_4.html":[4,0,8,4,355],
 "struct_eigen_1_1internal_1_1evaluator__assume__aliasing_3_01_product_3_01_lhs_00_01_rhs_00_01_default_product_01_4_01_4.html":[5,0,4,2,353],
@@ -245,9 +249,5 @@ var NAVTREEINDEX169 =
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__isfinite__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,433],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__isinf__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,432],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__isinf__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,434],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__isnan__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,435],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__isnan__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,433],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__log10__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,434],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__log10__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,436],
-"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__log1p__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,437]
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__isnan__op_3_01_scalar_01_4_01_4.html":[4,0,8,4,435]
 };

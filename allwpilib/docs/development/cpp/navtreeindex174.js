@@ -1,5 +1,9 @@
 var NAVTREEINDEX174 =
 {
+"struct_eigen_1_1internal_1_1is__integral_3_01unsigned_01short_01_4.html":[4,0,8,4,701],
+"struct_eigen_1_1internal_1_1is__lvalue.html":[5,0,4,2,700],
+"struct_eigen_1_1internal_1_1is__lvalue.html":[4,0,8,4,702],
+"struct_eigen_1_1internal_1_1is__ref__compatible.html":[5,0,4,2,701],
 "struct_eigen_1_1internal_1_1is__ref__compatible.html":[4,0,8,4,703],
 "struct_eigen_1_1internal_1_1is__ref__compatible__impl.html":[4,0,8,4,704],
 "struct_eigen_1_1internal_1_1is__ref__compatible__impl.html":[5,0,4,2,702],
@@ -245,9 +249,5 @@ var NAVTREEINDEX174 =
 "struct_eigen_1_1internal_1_1lp_norm__selector_3_01_derived_00_01_infinity_01_4.html#ac821bb353d90fd75444537c5c8e9354b":[5,0,4,2,748,0],
 "struct_eigen_1_1internal_1_1make__integer.html":[4,0,8,4,754],
 "struct_eigen_1_1internal_1_1make__integer.html":[5,0,4,2,752],
-"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html":[4,0,8,4,755],
-"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html":[5,0,4,2,753],
-"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html#a04f8787f78af6d77d0e9a6743434378b":[4,0,8,4,755,0],
-"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html#a04f8787f78af6d77d0e9a6743434378b":[5,0,4,2,753,0],
-"struct_eigen_1_1internal_1_1make__integer_3_01double_01_4.html":[4,0,8,4,756]
+"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html":[4,0,8,4,755]
 };

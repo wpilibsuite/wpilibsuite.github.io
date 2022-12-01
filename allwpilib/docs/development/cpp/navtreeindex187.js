@@ -1,5 +1,9 @@
 var NAVTREEINDEX187 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_householder_q_r_3_01___matrix_type_01_4_01_4.html#af2acaab694c7805b238f85d353967333":[4,0,8,4,1336,1],
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html":[5,0,4,2,1335],
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html":[4,0,8,4,1337],
+"struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a178edf36545f29db3ec5052a7a79d33d":[5,0,4,2,1335,1],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a178edf36545f29db3ec5052a7a79d33d":[4,0,8,4,1337,1],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a270a1e2a935fb1e006b2eca85157cf7b":[5,0,4,2,1335,2],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_sequence_3_01_vectors_type_00_01_coeffs_type_00_01_side_01_4_01_4.html#a270a1e2a935fb1e006b2eca85157cf7b":[4,0,8,4,1337,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX187 =
 "struct_eigen_1_1internal_1_1traits_3_01_reverse_3_01_matrix_type_00_01_direction_01_4_01_4.html#a661e935d2f1281c8872523d6d81dabfe":[5,0,4,2,1375,4],
 "struct_eigen_1_1internal_1_1traits_3_01_reverse_3_01_matrix_type_00_01_direction_01_4_01_4.html#ac3990c23f2fc7e589f671145407b4649":[5,0,4,2,1375,0],
 "struct_eigen_1_1internal_1_1traits_3_01_reverse_3_01_matrix_type_00_01_direction_01_4_01_4.html#ac3990c23f2fc7e589f671145407b4649":[4,0,8,4,1377,0],
-"struct_eigen_1_1internal_1_1traits_3_01_reverse_3_01_matrix_type_00_01_direction_01_4_01_4.html#ac5be0e9568d9607bcb0a7c1730b3d012":[5,0,4,2,1375,2],
-"struct_eigen_1_1internal_1_1traits_3_01_reverse_3_01_matrix_type_00_01_direction_01_4_01_4.html#ac5be0e9568d9607bcb0a7c1730b3d012":[4,0,8,4,1377,2],
-"struct_eigen_1_1internal_1_1traits_3_01_s_v_d_base_3_01_derived_01_4_01_4.html":[5,0,4,2,1393],
-"struct_eigen_1_1internal_1_1traits_3_01_s_v_d_base_3_01_derived_01_4_01_4.html":[4,0,8,4,1395],
-"struct_eigen_1_1internal_1_1traits_3_01_s_v_d_base_3_01_derived_01_4_01_4.html#a88f6563ea04ae0dfcfa6a9e659bc3bf6":[5,0,4,2,1393,1]
+"struct_eigen_1_1internal_1_1traits_3_01_reverse_3_01_matrix_type_00_01_direction_01_4_01_4.html#ac5be0e9568d9607bcb0a7c1730b3d012":[5,0,4,2,1375,2]
 };

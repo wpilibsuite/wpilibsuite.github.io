@@ -1,5 +1,9 @@
 var NAVTREEINDEX159 =
 {
+"struct_eigen_1_1_sparse_q_r___q_product.html#ae2d110a2af0251b5a1e3b1a0fd258632":[5,0,4,226,6],
+"struct_eigen_1_1_sparse_q_r___q_product.html#aff4a9c22b6a9f018ee5182aabfb6cd06":[4,0,8,229,5],
+"struct_eigen_1_1_sparse_q_r___q_product.html#aff4a9c22b6a9f018ee5182aabfb6cd06":[5,0,4,226,5],
+"struct_eigen_1_1_sparse_q_r_matrix_q_return_type.html":[4,0,8,230],
 "struct_eigen_1_1_sparse_q_r_matrix_q_return_type.html":[5,0,4,227],
 "struct_eigen_1_1_sparse_q_r_matrix_q_return_type.html#a10d5cda7c46fb89564bcafcf2769f56b":[4,0,8,230,7],
 "struct_eigen_1_1_sparse_q_r_matrix_q_return_type.html#a10d5cda7c46fb89564bcafcf2769f56b":[5,0,4,227,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX159 =
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01bb8efed27d47832b53496ca7f6c9254b.html#afaf3ea3984def04214841fd080dedbb6":[4,0,8,4,68,0],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html":[5,0,4,2,62],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html":[4,0,8,4,64],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html#a969d643c0bc0547dda3f2a9d1dbc4285":[5,0,4,2,62,1],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html#a969d643c0bc0547dda3f2a9d1dbc4285":[4,0,8,4,64,1],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html#abddf37655aa7ad93f556b77e97a36ab2":[5,0,4,2,62,0],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html#abddf37655aa7ad93f556b77e97a36ab2":[4,0,8,4,64,0],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01d12e529af555eafd2223434170111bd1.html":[5,0,4,2,68]
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01c841c32521f12d3d43fe6d566cc4cbd8.html#a969d643c0bc0547dda3f2a9d1dbc4285":[5,0,4,2,62,1]
 };

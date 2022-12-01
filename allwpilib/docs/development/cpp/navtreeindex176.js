@@ -1,5 +1,9 @@
 var NAVTREEINDEX176 =
 {
+"struct_eigen_1_1internal_1_1mul__assign__op.html":[4,0,8,4,812],
+"struct_eigen_1_1internal_1_1mul__assign__op.html#a3d86808dcbcc709ee0998c6a89320ecb":[5,0,4,2,810,1],
+"struct_eigen_1_1internal_1_1mul__assign__op.html#a3d86808dcbcc709ee0998c6a89320ecb":[4,0,8,4,812,1],
+"struct_eigen_1_1internal_1_1mul__assign__op.html#acd7bada53be090d217570521d56fddfd":[5,0,4,2,810,0],
 "struct_eigen_1_1internal_1_1mul__assign__op.html#acd7bada53be090d217570521d56fddfd":[4,0,8,4,812,0],
 "struct_eigen_1_1internal_1_1nested__eval.html":[5,0,4,2,811],
 "struct_eigen_1_1internal_1_1nested__eval.html":[4,0,8,4,813],
@@ -245,9 +249,5 @@ var NAVTREEINDEX176 =
 "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_no_unrolling_01_4.html#a3a060aff5749afb7a81c1d5d88fbbd67":[5,0,4,2,864,2],
 "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_no_unrolling_01_4.html#a98875a5927aec7484b7562ba14015e5a":[4,0,8,4,866,1],
 "struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_no_unrolling_01_4.html#a98875a5927aec7484b7562ba14015e5a":[5,0,4,2,864,1],
-"struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_no_unrolling_01_4.html#afcf9f3768b6c0b9d93516bbd6e7b2ff4":[5,0,4,2,864,0],
-"struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_no_unrolling_01_4.html#afcf9f3768b6c0b9d93516bbd6e7b2ff4":[4,0,8,4,866,0],
-"struct_eigen_1_1internal_1_1packetwise__redux__traits.html":[5,0,4,2,865],
-"struct_eigen_1_1internal_1_1packetwise__redux__traits.html":[4,0,8,4,867],
-"struct_eigen_1_1internal_1_1panel__dfs__traits.html":[5,0,4,2,866]
+"struct_eigen_1_1internal_1_1packetwise__redux__impl_3_01_func_00_01_evaluator_00_01_no_unrolling_01_4.html#afcf9f3768b6c0b9d93516bbd6e7b2ff4":[5,0,4,2,864,0]
 };

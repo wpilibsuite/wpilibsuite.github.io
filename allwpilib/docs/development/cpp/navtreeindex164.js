@@ -1,5 +1,9 @@
 var NAVTREEINDEX164 =
 {
+"struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper.html#aae4ed720e21cbc8ac8b2f87b6d822245":[5,0,4,2,134,0,1],
+"struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_01_scalar_t_00_01n_00_01-1_01_4.html":[5,0,4,2,134,1],
+"struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_01_scalar_t_00_01n_00_01-1_01_4.html":[4,0,8,4,136,1],
+"struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_01_scalar_t_00_01n_00_01-1_01_4.html#af79e406e4465a242d92ddfed24fd3492":[5,0,4,2,134,1,0],
 "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_01_scalar_t_00_01n_00_01-1_01_4.html#af79e406e4465a242d92ddfed24fd3492":[4,0,8,4,136,1,0],
 "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_11fb595916ab6c56b42dbf4a9ba5366d.html":[4,0,8,4,136,3],
 "struct_eigen_1_1internal_1_1blas__data__mapper_1_1store_packet_block__helper_3_01_sub_packet_00_11fb595916ab6c56b42dbf4a9ba5366d.html":[5,0,4,2,134,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX164 =
 "struct_eigen_1_1internal_1_1combine__scalar__factors__impl.html":[5,0,4,2,176],
 "struct_eigen_1_1internal_1_1combine__scalar__factors__impl.html#a09e5847386b5d5691d742b3a3b97746a":[4,0,8,4,178,0],
 "struct_eigen_1_1internal_1_1combine__scalar__factors__impl.html#a09e5847386b5d5691d742b3a3b97746a":[5,0,4,2,176,0],
-"struct_eigen_1_1internal_1_1combine__scalar__factors__impl.html#ad818584d45dd2215161c525abaa9af89":[4,0,8,4,178,1],
-"struct_eigen_1_1internal_1_1combine__scalar__factors__impl.html#ad818584d45dd2215161c525abaa9af89":[5,0,4,2,176,1],
-"struct_eigen_1_1internal_1_1combine__scalar__factors__impl_3_01bool_00_01_lhs_00_01_rhs_01_4.html":[5,0,4,2,177],
-"struct_eigen_1_1internal_1_1combine__scalar__factors__impl_3_01bool_00_01_lhs_00_01_rhs_01_4.html":[4,0,8,4,179],
-"struct_eigen_1_1internal_1_1combine__scalar__factors__impl_3_01bool_00_01_lhs_00_01_rhs_01_4.html#a4cbad4889136e978045e4296534d0e57":[4,0,8,4,179,1]
+"struct_eigen_1_1internal_1_1combine__scalar__factors__impl.html#ad818584d45dd2215161c525abaa9af89":[4,0,8,4,178,1]
 };

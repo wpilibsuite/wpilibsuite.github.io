@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-54-g1f1461e</span>
    </div>
   </td>
  </tr>
@@ -168,6 +168,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_iterative_robot_base.html#af55ae3692aeddcb8f9d3e54a5d5b9474">SetNetworkTablesFlushEnabled</a> (bool enabled)</td></tr>
 <tr class="memdesc:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables flushing NetworkTables every loop iteration.  <a href="classfrc_1_1_iterative_robot_base.html#af55ae3692aeddcb8f9d3e54a5d5b9474">More...</a><br /></td></tr>
 <tr class="separator:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfbcb9befcf9fd4e440a8e5fdff2b72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_iterative_robot_base.html#a4dfbcb9befcf9fd4e440a8e5fdff2b72">EnableLiveWindowInTest</a> (bool testLW)</td></tr>
+<tr class="memdesc:a4dfbcb9befcf9fd4e440a8e5fdff2b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether <a class="el" href="classfrc_1_1_live_window.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> operation is enabled during test mode.  <a href="classfrc_1_1_iterative_robot_base.html#a4dfbcb9befcf9fd4e440a8e5fdff2b72">More...</a><br /></td></tr>
+<tr class="separator:a4dfbcb9befcf9fd4e440a8e5fdff2b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad086787827fa35dab68a03cd2529470a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_iterative_robot_base.html#ad086787827fa35dab68a03cd2529470a">IsLiveWindowEnabledInTest</a> ()</td></tr>
+<tr class="memdesc:ad086787827fa35dab68a03cd2529470a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether <a class="el" href="classfrc_1_1_live_window.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> operation is enabled during test mode.  <a href="classfrc_1_1_iterative_robot_base.html#ad086787827fa35dab68a03cd2529470a">More...</a><br /></td></tr>
+<tr class="separator:ad086787827fa35dab68a03cd2529470a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead36ef3891548d84322a593ddb5d049"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_iterative_robot_base.html#aead36ef3891548d84322a593ddb5d049">GetPeriod</a> () const</td></tr>
 <tr class="memdesc:aead36ef3891548d84322a593ddb5d049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets time period between calls to Periodic() functions.  <a href="classfrc_1_1_iterative_robot_base.html#aead36ef3891548d84322a593ddb5d049">More...</a><br /></td></tr>
 <tr class="separator:aead36ef3891548d84322a593ddb5d049"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -523,6 +529,38 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a4dfbcb9befcf9fd4e440a8e5fdff2b72" name="a4dfbcb9befcf9fd4e440a8e5fdff2b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfbcb9befcf9fd4e440a8e5fdff2b72">&#9670;&nbsp;</a></span>EnableLiveWindowInTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::IterativeRobotBase::EnableLiveWindowInTest </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>testLW</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether <a class="el" href="classfrc_1_1_live_window.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> operation is enabled during test mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">testLW</td><td>True to enable, false to disable. Defaults to true. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">if</td><td>called in test mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aead36ef3891548d84322a593ddb5d049" name="aead36ef3891548d84322a593ddb5d049"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aead36ef3891548d84322a593ddb5d049">&#9670;&nbsp;</a></span>GetPeriod()</h2>
 
@@ -539,6 +577,25 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets time period between calls to Periodic() functions. </p>
+
+</div>
+</div>
+<a id="ad086787827fa35dab68a03cd2529470a" name="ad086787827fa35dab68a03cd2529470a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad086787827fa35dab68a03cd2529470a">&#9670;&nbsp;</a></span>IsLiveWindowEnabledInTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::IterativeRobotBase::IsLiveWindowEnabledInTest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether <a class="el" href="classfrc_1_1_live_window.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> operation is enabled during test mode. </p>
 
 </div>
 </div>
@@ -910,7 +967,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_iterative_robot_base.html">IterativeRobotBase</a></li>
-    <li class="footer">Generated on Thu Dec 1 2022 03:54:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 21:30:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

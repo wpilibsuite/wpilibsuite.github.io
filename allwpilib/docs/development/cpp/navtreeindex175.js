@@ -1,5 +1,9 @@
 var NAVTREEINDEX175 =
 {
+"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html":[5,0,4,2,753],
+"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html#a04f8787f78af6d77d0e9a6743434378b":[4,0,8,4,755,0],
+"struct_eigen_1_1internal_1_1make__integer_3_01bfloat16_01_4.html#a04f8787f78af6d77d0e9a6743434378b":[5,0,4,2,753,0],
+"struct_eigen_1_1internal_1_1make__integer_3_01double_01_4.html":[4,0,8,4,756],
 "struct_eigen_1_1internal_1_1make__integer_3_01double_01_4.html":[5,0,4,2,754],
 "struct_eigen_1_1internal_1_1make__integer_3_01double_01_4.html#afeaaaac64c79fe05a0ae0b6a2925bc9c":[4,0,8,4,756,0],
 "struct_eigen_1_1internal_1_1make__integer_3_01double_01_4.html#afeaaaac64c79fe05a0ae0b6a2925bc9c":[5,0,4,2,754,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX175 =
 "struct_eigen_1_1internal_1_1min__coeff__visitor_3_01_derived_00_01_propagate_numbers_01_4.html#a00fb4becf526290c4706d13e58ee14b6":[4,0,8,4,811,1],
 "struct_eigen_1_1internal_1_1min__coeff__visitor_3_01_derived_00_01_propagate_numbers_01_4.html#a7a21c5bdbbd7c3285deb02b4b6ac2831":[5,0,4,2,809,0],
 "struct_eigen_1_1internal_1_1min__coeff__visitor_3_01_derived_00_01_propagate_numbers_01_4.html#a7a21c5bdbbd7c3285deb02b4b6ac2831":[4,0,8,4,811,0],
-"struct_eigen_1_1internal_1_1mul__assign__op.html":[5,0,4,2,810],
-"struct_eigen_1_1internal_1_1mul__assign__op.html":[4,0,8,4,812],
-"struct_eigen_1_1internal_1_1mul__assign__op.html#a3d86808dcbcc709ee0998c6a89320ecb":[5,0,4,2,810,1],
-"struct_eigen_1_1internal_1_1mul__assign__op.html#a3d86808dcbcc709ee0998c6a89320ecb":[4,0,8,4,812,1],
-"struct_eigen_1_1internal_1_1mul__assign__op.html#acd7bada53be090d217570521d56fddfd":[5,0,4,2,810,0]
+"struct_eigen_1_1internal_1_1mul__assign__op.html":[5,0,4,2,810]
 };
