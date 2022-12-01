@@ -1,3 +1,5 @@
+edu.wpi.first.apriltag
+edu.wpi.first.apriltag.jni
 edu.wpi.first.cameraserver
 edu.wpi.first.cscore
 edu.wpi.first.cscore.raw

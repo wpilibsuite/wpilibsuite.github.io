@@ -113,7 +113,7 @@
 <span class="sourceLineNo">101</span><a id="line.101"></a>
 <span class="sourceLineNo">102</span><a id="line.102">    // Require that the rotation matrix is special orthogonal. This is true if</a>
 <span class="sourceLineNo">103</span><a id="line.103">    // the matrix is orthogonal (RRᵀ = I) and normalized (determinant is 1).</a>
-<span class="sourceLineNo">104</span><a id="line.104">    if (!R.times(R.transpose()).equals(Matrix.eye(Nat.N3()))) {</a>
+<span class="sourceLineNo">104</span><a id="line.104">    if (R.times(R.transpose()).minus(Matrix.eye(Nat.N3())).normF() &gt; 1e-9) {</a>
 <span class="sourceLineNo">105</span><a id="line.105">      var builder = new StringBuilder("Rotation matrix isn't orthogonal\n\nR =\n");</a>
 <span class="sourceLineNo">106</span><a id="line.106">      builder.append(R.getStorage().toString()).append('\n');</a>
 <span class="sourceLineNo">107</span><a id="line.107"></a>
@@ -121,7 +121,7 @@
 <span class="sourceLineNo">109</span><a id="line.109">      MathSharedStore.reportError(msg, Thread.currentThread().getStackTrace());</a>
 <span class="sourceLineNo">110</span><a id="line.110">      throw new IllegalArgumentException(msg);</a>
 <span class="sourceLineNo">111</span><a id="line.111">    }</a>
-<span class="sourceLineNo">112</span><a id="line.112">    if (R.det() != 1.0) {</a>
+<span class="sourceLineNo">112</span><a id="line.112">    if (Math.abs(R.det() - 1.0) &gt; 1e-9) {</a>
 <span class="sourceLineNo">113</span><a id="line.113">      var builder =</a>
 <span class="sourceLineNo">114</span><a id="line.114">          new StringBuilder("Rotation matrix is orthogonal but not special orthogonal\n\nR =\n");</a>
 <span class="sourceLineNo">115</span><a id="line.115">      builder.append(R.getStorage().toString()).append('\n');</a>
