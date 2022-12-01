@@ -1,7 +1,7 @@
 var struct_n_t___event =
 [
     [ "connInfo", "struct_n_t___event.html#aa7e1bbdad0b2f2899850733d81111fea", null ],
-    [ "data", "struct_n_t___event.html#ac24e36565f0d220fccfa88baad0d9a0e", null ],
+    [ "data", "struct_n_t___event.html#afe081f20de30f2b339120f121c685455", null ],
     [ "flags", "struct_n_t___event.html#a752c12a159c0571ca77cc3cef3b6f0c9", null ],
     [ "listener", "struct_n_t___event.html#a3d214b75057995aa9aed91c3c47b4fae", null ],
     [ "logMessage", "struct_n_t___event.html#a3c1decf539f70feebf80c034aa5fda9d", null ],

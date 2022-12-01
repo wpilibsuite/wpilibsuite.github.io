@@ -2,7 +2,7 @@ var dir_881f541a32b77f97cfd2281ec4aaf81a =
 [
     [ "args.h", "args_8h.html", "args_8h" ],
     [ "chrono.h", "fmtlib_2include_2fmt_2chrono_8h.html", "fmtlib_2include_2fmt_2chrono_8h" ],
-    [ "color.h", "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html", "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h" ],
+    [ "color.h", "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html", "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h" ],
     [ "compile.h", "compile_8h.html", "compile_8h" ],
     [ "core.h", "core_8h.html", "core_8h" ],
     [ "format-inl.h", "format-inl_8h.html", "format-inl_8h" ],

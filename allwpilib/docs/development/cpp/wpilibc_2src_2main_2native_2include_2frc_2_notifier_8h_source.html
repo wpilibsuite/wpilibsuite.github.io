@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -135,8 +135,8 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">template</span> &lt;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span>... Args,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;std::is_invocable_v&lt;Callable, Arg, Args...&gt;&gt;&gt;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classfrc_1_1_notifier.html#ae71e79fa76eeae3f56fc05309e189457">   42</a></span>  <a class="code hl_function" href="classfrc_1_1_notifier.html#ae71e79fa76eeae3f56fc05309e189457">Notifier</a>(Callable&amp;&amp; f, Arg&amp;&amp; <a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>, Args&amp;&amp;... args)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      : <a class="code hl_class" href="classfrc_1_1_notifier.html">Notifier</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::bind(<a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Callable&gt;(f), <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Arg&gt;(<a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>),</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classfrc_1_1_notifier.html#ae71e79fa76eeae3f56fc05309e189457">   42</a></span>  <a class="code hl_function" href="classfrc_1_1_notifier.html#ae71e79fa76eeae3f56fc05309e189457">Notifier</a>(Callable&amp;&amp; f, Arg&amp;&amp; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>, Args&amp;&amp;... args)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      : <a class="code hl_class" href="classfrc_1_1_notifier.html">Notifier</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::bind(<a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Callable&gt;(f), <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Arg&gt;(<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>),</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                           <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Args&gt;(args)...)) {}</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
@@ -155,9 +155,9 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classfrc_1_1_notifier.html#ab01ce1711d9054c05c670d6184e30696">   59</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_notifier.html#ab01ce1711d9054c05c670d6184e30696">Notifier</a>(<span class="keywordtype">int</span> priority, std::function&lt;<span class="keywordtype">void</span>()&gt; handler);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1_notifier.html#a0eb6ef1b818ddd068ea8b96d34da7f8c">   62</a></span>  <a class="code hl_function" href="classfrc_1_1_notifier.html#a0eb6ef1b818ddd068ea8b96d34da7f8c">Notifier</a>(<span class="keywordtype">int</span> priority, Callable&amp;&amp; f, Arg&amp;&amp; <a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>, Args&amp;&amp;... args)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1_notifier.html#a0eb6ef1b818ddd068ea8b96d34da7f8c">   62</a></span>  <a class="code hl_function" href="classfrc_1_1_notifier.html#a0eb6ef1b818ddd068ea8b96d34da7f8c">Notifier</a>(<span class="keywordtype">int</span> priority, Callable&amp;&amp; f, Arg&amp;&amp; <a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>, Args&amp;&amp;... args)</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      : <a class="code hl_class" href="classfrc_1_1_notifier.html">Notifier</a>(priority,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                 <a class="code hl_namespace" href="namespacestd.html">std</a>::bind(<a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Callable&gt;(f), <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Arg&gt;(<a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>),</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                 <a class="code hl_namespace" href="namespacestd.html">std</a>::bind(<a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Callable&gt;(f), <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Arg&gt;(<a class="code hl_function" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>),</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                           <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Args&gt;(args)...)) {}</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"></span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">  /**</span></div>
@@ -270,6 +270,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>};</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_array_cwise_unary_ops_8h_html_a41ceecca5805bbcbeb0928339a0714da"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE const ArgReturnType arg() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:66</div></div>
 <div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_notifier_html"><div class="ttname"><a href="classfrc_1_1_notifier.html">frc::Notifier</a></div><div class="ttdoc">Notifiers run a callback function on a separate thread at a specified period.</div><div class="ttdef"><b>Definition:</b> Notifier.h:29</div></div>
 <div class="ttc" id="aclassfrc_1_1_notifier_html_a0eb6ef1b818ddd068ea8b96d34da7f8c"><div class="ttname"><a href="classfrc_1_1_notifier.html#a0eb6ef1b818ddd068ea8b96d34da7f8c">frc::Notifier::Notifier</a></div><div class="ttdeci">Notifier(int priority, Callable &amp;&amp;f, Arg &amp;&amp;arg, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> Notifier.h:62</div></div>
@@ -287,12 +288,11 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1_notifier_html_af3ec9ad962fcd60c762f2bc543130088"><div class="ttname"><a href="classfrc_1_1_notifier.html#af3ec9ad962fcd60c762f2bc543130088">frc::Notifier::operator=</a></div><div class="ttdeci">Notifier &amp; operator=(Notifier &amp;&amp;rhs)</div></div>
 <div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:298</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:520</div></div>
-<div class="ttc" id="acore_8h_html_a2c8e80c1b1c8b7747e99b8e9a24a0429"><div class="ttname"><a href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a></div><div class="ttdeci">auto arg(const Char *name, const T &amp;arg) -&gt; detail::named_arg&lt; Char, T &gt;</div><div class="ttdoc">\rst Returns a named argument to be used in a formatting function.</div><div class="ttdef"><b>Definition:</b> core.h:1933</div></div>
 <div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a0259c31cd34e096be5056e9d88ae0500"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a0259c31cd34e096be5056e9d88ae0500">Eigen::numext::uint64_t</a></div><div class="ttdeci">::uint64_t uint64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:58</div></div>
 <div class="ttc" id="anamespace_eigen_1_1numext_html_a475def88ce2111c2e4a4d3a3976b7c19"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a475def88ce2111c2e4a4d3a3976b7c19">Eigen::numext::int32_t</a></div><div class="ttdeci">::int32_t int32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:57</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionPipeline.h:11</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> AprilTagFields.h:13</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> StdDeque.h:50</div></div>
 <div class="ttc" id="anamespacewpi_html_a59819be5b11c0fbbc0b8e07c7638af24"><div class="ttname"><a href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a></div><div class="ttdeci">::std::mutex mutex</div><div class="ttdef"><b>Definition:</b> mutex.h:17</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_notifier_8h.html">Notifier.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

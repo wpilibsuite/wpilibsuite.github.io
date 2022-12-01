@@ -14,10 +14,10 @@ var structinternal_1_1_colamd_1_1_col_structure =
     [ "parent", "structinternal_1_1_colamd_1_1_col_structure.html#a431a3b0b79d0af39354909ea44a2514a", null ],
     [ "prev", "structinternal_1_1_colamd_1_1_col_structure.html#a19d894cd4c27ff43af5fff6e7a4c5f27", null ],
     [ "score", "structinternal_1_1_colamd_1_1_col_structure.html#a0fcbd2d0d06756b10d471e77fc808a50", null ],
-    [ "shared1", "structinternal_1_1_colamd_1_1_col_structure.html#ac5dcc890669cd0928c8ed2c8832c056d", null ],
-    [ "shared2", "structinternal_1_1_colamd_1_1_col_structure.html#a9252da864e3432d51c9a5e243b4bd22e", null ],
-    [ "shared3", "structinternal_1_1_colamd_1_1_col_structure.html#ac4ff90177ad31e31a5579f710cd54e98", null ],
-    [ "shared4", "structinternal_1_1_colamd_1_1_col_structure.html#a6144f34deea493332c45b4d8e2485d20", null ],
+    [ "shared1", "structinternal_1_1_colamd_1_1_col_structure.html#a8ddff923200c1b7acbba0ca2800e22e4", null ],
+    [ "shared2", "structinternal_1_1_colamd_1_1_col_structure.html#a8cfbe1e4f13d8722b852c1a12e77a213", null ],
+    [ "shared3", "structinternal_1_1_colamd_1_1_col_structure.html#a6443b9a3c0ac2f64b6c2f77477dd7b01", null ],
+    [ "shared4", "structinternal_1_1_colamd_1_1_col_structure.html#aa612ac373e49911e33bd91599374db02", null ],
     [ "start", "structinternal_1_1_colamd_1_1_col_structure.html#a2858e82a69f02e4577df3716f13217f5", null ],
     [ "thickness", "structinternal_1_1_colamd_1_1_col_structure.html#a64cce92c11ffb45bf381ecbed255da73", null ]
 ];

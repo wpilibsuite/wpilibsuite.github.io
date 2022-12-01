@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('incomplete__beta_8hpp_source.html','')
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span>( <span class="comment">// tolerance check</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(c_j*d_j - T(1)) &lt; <a class="code hl_define" href="gcem__options_8hpp.html#aa1773d7cdf0768b3588bcb3e0325bd32">GCEM_INCML_BETA_TOL</a> ? f_j*c_j*d_j :</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(c_j*d_j - T(1)) &lt; <a class="code hl_define" href="gcem__options_8hpp.html#aa1773d7cdf0768b3588bcb3e0325bd32">GCEM_INCML_BETA_TOL</a> ? f_j*c_j*d_j :</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <span class="comment">// max_iter check</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                depth &lt; <a class="code hl_define" href="gcem__options_8hpp.html#ac93073af1c5b0fdc89884fc8a4db09b3">GCEM_INCML_BETA_MAX_ITER</a> ? \</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    <span class="comment">// if</span></div>
@@ -288,9 +288,9 @@ $(document).ready(function(){initNavTree('incomplete__beta_8hpp_source.html','')
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>}</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
 <div class="ttc" id="agcem__options_8hpp_html_aa1773d7cdf0768b3588bcb3e0325bd32"><div class="ttname"><a href="gcem__options_8hpp.html#aa1773d7cdf0768b3588bcb3e0325bd32">GCEM_INCML_BETA_TOL</a></div><div class="ttdeci">#define GCEM_INCML_BETA_TOL</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:161</div></div>
 <div class="ttc" id="agcem__options_8hpp_html_ac93073af1c5b0fdc89884fc8a4db09b3"><div class="ttname"><a href="gcem__options_8hpp.html#ac93073af1c5b0fdc89884fc8a4db09b3">GCEM_INCML_BETA_MAX_ITER</a></div><div class="ttdeci">#define GCEM_INCML_BETA_MAX_ITER</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:165</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="agroup___unit_math_html_gaed3e6783dc5ab1dda006913aa53f17c8"><div class="ttname"><a href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">units::math::log</a></div><div class="ttdeci">dimensionless::scalar_t log(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute natural logarithm.</div><div class="ttdef"><b>Definition:</b> math.h:349</div></div>
 <div class="ttc" id="aincomplete__beta_8hpp_html_a98d3c35a70475a413d156a64513f2a5f"><div class="ttname"><a href="incomplete__beta_8hpp.html#a98d3c35a70475a413d156a64513f2a5f">incomplete_beta</a></div><div class="ttdeci">constexpr common_return_t&lt; T1, T2, T3 &gt; incomplete_beta(const T1 a, const T2 b, const T3 z) noexcept</div><div class="ttdoc">Compile-time regularized incomplete beta function.</div><div class="ttdef"><b>Definition:</b> incomplete_beta.hpp:188</div></div>
 <div class="ttc" id="albeta_8hpp_html_ab27a9a7849744f81dd7decff8f9daffa"><div class="ttname"><a href="lbeta_8hpp.html#ab27a9a7849744f81dd7decff8f9daffa">lbeta</a></div><div class="ttdeci">constexpr common_return_t&lt; T1, T2 &gt; lbeta(const T1 a, const T2 b) noexcept</div><div class="ttdoc">Compile-time log-beta function.</div><div class="ttdef"><b>Definition:</b> lbeta.hpp:36</div></div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('incomplete__beta_8hpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="incomplete__beta_8hpp.html">incomplete_beta.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -134,19 +134,19 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:ac438bf7caefb0059a5abdc9e6964fc96"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a76c8eb09290c100fa91b5846008b5153">PacketSize</a> = internal::packet_traits&lt;Scalar&gt;::size
-, <a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96aeb8470b65bad8425f2ec3128499bb277">IsColMajor</a> = !IsRowMajor
-, <a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a5695a62bbcdcc28e7012b1cc355e370e">ReverseRow</a> = (Direction == Vertical) || (Direction == BothDirections)
-, <a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a770ddf07ca46520c9841280e5630dafb">ReverseCol</a> = (Direction == Horizontal) || (Direction == BothDirections)
+<tr class="memitem:ac93c3dba3edc1268c080e37eb278783e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea76c8eb09290c100fa91b5846008b5153">PacketSize</a> = internal::packet_traits&lt;Scalar&gt;::size
+, <a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783eaeb8470b65bad8425f2ec3128499bb277">IsColMajor</a> = !IsRowMajor
+, <a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea5695a62bbcdcc28e7012b1cc355e370e">ReverseRow</a> = (Direction == Vertical) || (Direction == BothDirections)
+, <a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea770ddf07ca46520c9841280e5630dafb">ReverseCol</a> = (Direction == Horizontal) || (Direction == BothDirections)
 , <br />
-&#160;&#160;<a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a82c958ff293e2e4db66e0fd47e92d7f8">OffsetRow</a> = ReverseRow &amp;&amp; IsColMajor ? PacketSize : 1
-, <a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a2fdcf783e1ecede6eebe28f071b498c0">OffsetCol</a> = ReverseCol &amp;&amp; IsRowMajor ? PacketSize : 1
-, <a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a4d9b3dbffb97faac27c6147d863367ee">ReversePacket</a>
+&#160;&#160;<a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea82c958ff293e2e4db66e0fd47e92d7f8">OffsetRow</a> = ReverseRow &amp;&amp; IsColMajor ? PacketSize : 1
+, <a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea2fdcf783e1ecede6eebe28f071b498c0">OffsetCol</a> = ReverseCol &amp;&amp; IsRowMajor ? PacketSize : 1
+, <a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea4d9b3dbffb97faac27c6147d863367ee">ReversePacket</a>
 <br />
  }</td></tr>
-<tr class="separator:ac438bf7caefb0059a5abdc9e6964fc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e8cdf354cf1da1918754405bcb60ea0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1reverse__packet__cond.html">internal::reverse_packet_cond</a>&lt; PacketScalar, <a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a4d9b3dbffb97faac27c6147d863367ee">ReversePacket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_reverse.html#a4e8cdf354cf1da1918754405bcb60ea0">reverse_packet</a></td></tr>
+<tr class="separator:ac93c3dba3edc1268c080e37eb278783e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8cdf354cf1da1918754405bcb60ea0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1reverse__packet__cond.html">internal::reverse_packet_cond</a>&lt; PacketScalar, <a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea4d9b3dbffb97faac27c6147d863367ee">ReversePacket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_reverse.html#a4e8cdf354cf1da1918754405bcb60ea0">reverse_packet</a></td></tr>
 <tr class="separator:a4e8cdf354cf1da1918754405bcb60ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -211,7 +211,7 @@ template&lt;typename MatrixType , int Direction&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1reverse__packet__cond.html">internal::reverse_packet_cond</a>&lt;PacketScalar,<a class="el" href="class_eigen_1_1_reverse.html#ac438bf7caefb0059a5abdc9e6964fc96a4d9b3dbffb97faac27c6147d863367ee">ReversePacket</a>&gt; <a class="el" href="class_eigen_1_1_reverse.html">Eigen::Reverse</a>&lt; MatrixType, Direction &gt;::reverse_packet</td>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1reverse__packet__cond.html">internal::reverse_packet_cond</a>&lt;PacketScalar,<a class="el" href="class_eigen_1_1_reverse.html#ac93c3dba3edc1268c080e37eb278783ea4d9b3dbffb97faac27c6147d863367ee">ReversePacket</a>&gt; <a class="el" href="class_eigen_1_1_reverse.html">Eigen::Reverse</a>&lt; MatrixType, Direction &gt;::reverse_packet</td>
         </tr>
       </table>
   </td>
@@ -224,8 +224,8 @@ template&lt;typename MatrixType , int Direction&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ac438bf7caefb0059a5abdc9e6964fc96" name="ac438bf7caefb0059a5abdc9e6964fc96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac438bf7caefb0059a5abdc9e6964fc96">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="ac93c3dba3edc1268c080e37eb278783e" name="ac93c3dba3edc1268c080e37eb278783e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93c3dba3edc1268c080e37eb278783e">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,13 +246,13 @@ template&lt;typename MatrixType , int Direction&gt; </div>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac438bf7caefb0059a5abdc9e6964fc96a76c8eb09290c100fa91b5846008b5153" name="ac438bf7caefb0059a5abdc9e6964fc96a76c8eb09290c100fa91b5846008b5153"></a>PacketSize&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac438bf7caefb0059a5abdc9e6964fc96aeb8470b65bad8425f2ec3128499bb277" name="ac438bf7caefb0059a5abdc9e6964fc96aeb8470b65bad8425f2ec3128499bb277"></a>IsColMajor&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac438bf7caefb0059a5abdc9e6964fc96a5695a62bbcdcc28e7012b1cc355e370e" name="ac438bf7caefb0059a5abdc9e6964fc96a5695a62bbcdcc28e7012b1cc355e370e"></a>ReverseRow&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac438bf7caefb0059a5abdc9e6964fc96a770ddf07ca46520c9841280e5630dafb" name="ac438bf7caefb0059a5abdc9e6964fc96a770ddf07ca46520c9841280e5630dafb"></a>ReverseCol&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac438bf7caefb0059a5abdc9e6964fc96a82c958ff293e2e4db66e0fd47e92d7f8" name="ac438bf7caefb0059a5abdc9e6964fc96a82c958ff293e2e4db66e0fd47e92d7f8"></a>OffsetRow&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac438bf7caefb0059a5abdc9e6964fc96a2fdcf783e1ecede6eebe28f071b498c0" name="ac438bf7caefb0059a5abdc9e6964fc96a2fdcf783e1ecede6eebe28f071b498c0"></a>OffsetCol&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac438bf7caefb0059a5abdc9e6964fc96a4d9b3dbffb97faac27c6147d863367ee" name="ac438bf7caefb0059a5abdc9e6964fc96a4d9b3dbffb97faac27c6147d863367ee"></a>ReversePacket&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac93c3dba3edc1268c080e37eb278783ea76c8eb09290c100fa91b5846008b5153" name="ac93c3dba3edc1268c080e37eb278783ea76c8eb09290c100fa91b5846008b5153"></a>PacketSize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac93c3dba3edc1268c080e37eb278783eaeb8470b65bad8425f2ec3128499bb277" name="ac93c3dba3edc1268c080e37eb278783eaeb8470b65bad8425f2ec3128499bb277"></a>IsColMajor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac93c3dba3edc1268c080e37eb278783ea5695a62bbcdcc28e7012b1cc355e370e" name="ac93c3dba3edc1268c080e37eb278783ea5695a62bbcdcc28e7012b1cc355e370e"></a>ReverseRow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac93c3dba3edc1268c080e37eb278783ea770ddf07ca46520c9841280e5630dafb" name="ac93c3dba3edc1268c080e37eb278783ea770ddf07ca46520c9841280e5630dafb"></a>ReverseCol&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac93c3dba3edc1268c080e37eb278783ea82c958ff293e2e4db66e0fd47e92d7f8" name="ac93c3dba3edc1268c080e37eb278783ea82c958ff293e2e4db66e0fd47e92d7f8"></a>OffsetRow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac93c3dba3edc1268c080e37eb278783ea2fdcf783e1ecede6eebe28f071b498c0" name="ac93c3dba3edc1268c080e37eb278783ea2fdcf783e1ecede6eebe28f071b498c0"></a>OffsetCol&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac93c3dba3edc1268c080e37eb278783ea4d9b3dbffb97faac27c6147d863367ee" name="ac93c3dba3edc1268c080e37eb278783ea4d9b3dbffb97faac27c6147d863367ee"></a>ReversePacket&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -429,7 +429,7 @@ template&lt;typename MatrixType , int Direction&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="class_eigen_1_1_reverse.html">Reverse</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

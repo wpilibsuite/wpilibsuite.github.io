@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('gcd_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespaceinternal.html#acc9219f83d53af8cace9b70a5be26543">   57</a></span><a class="code hl_function" href="namespaceinternal.html#acc9219f83d53af8cace9b70a5be26543">gcd_type_check</a>(<span class="keyword">const</span> T1 a, <span class="keyword">const</span> T2 <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceinternal.html#ae08a1f1a5272deac2975992b3f483a10">gcd_int_check</a>( <span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(<a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(a)), <span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(<a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(<a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>)) );</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespaceinternal.html#ae08a1f1a5272deac2975992b3f483a10">gcd_int_check</a>( <span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(<a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(a)), <span class="keyword">static_cast&lt;</span>TC<span class="keyword">&gt;</span>(<a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(<a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>)) );</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
@@ -177,8 +177,8 @@ $(document).ready(function(){initNavTree('gcd_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
 <div class="ttc" id="agcd_8hpp_html_a5edbe6ccfe41004c680d7ce0b31ab7d1"><div class="ttname"><a href="gcd_8hpp.html#a5edbe6ccfe41004c680d7ce0b31ab7d1">gcd</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; gcd(const T1 a, const T2 b) noexcept</div><div class="ttdoc">Compile-time greatest common divisor (GCD) function.</div><div class="ttdef"><b>Definition:</b> gcd.hpp:76</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="anamespacegcem_html_a3d7e002e0076a5d9fc4204d269b930a0"><div class="ttname"><a href="namespacegcem.html#a3d7e002e0076a5d9fc4204d269b930a0">gcem::ullint_t</a></div><div class="ttdeci">unsigned long long int ullint_t</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:69</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="anamespaceinternal_html_a3b11a3c668898bafbdaf52a8d7f81946"><div class="ttname"><a href="namespaceinternal.html#a3b11a3c668898bafbdaf52a8d7f81946">internal::gcd_recur</a></div><div class="ttdeci">constexpr T gcd_recur(const T a, const T b) noexcept</div><div class="ttdef"><b>Definition:</b> gcd.hpp:30</div></div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('gcd_8hpp_source.html',''); initResizab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="gcd_8hpp.html">gcd.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

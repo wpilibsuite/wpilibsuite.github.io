@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('find__whole_8hpp_source.html',''); ini
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespaceinternal.html#abc1475c1aeadffa3b27ffaeddce48988">   34</a></span><a class="code hl_function" href="namespaceinternal.html#abc1475c1aeadffa3b27ffaeddce48988">find_whole</a>(<span class="keyword">const</span> T x)</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x - <a class="code hl_function" href="namespaceinternal.html#ae93c2b22fc86f7111c6ef8f42d51a913">internal::floor_check</a>(x)) &gt;= T(0.5) ? \</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x - <a class="code hl_function" href="namespaceinternal.html#ae93c2b22fc86f7111c6ef8f42d51a913">internal::floor_check</a>(x)) &gt;= T(0.5) ? \</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="comment">// if </span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacegcem.html#a6df01e90c3b91e664d98b637c2efff7c">llint_t</a><span class="keyword">&gt;</span>(<a class="code hl_function" href="namespaceinternal.html#ae93c2b22fc86f7111c6ef8f42d51a913">internal::floor_check</a>(x) + <a class="code hl_function" href="sgn_8hpp.html#a782081c5f42a91f74af7cd7787b127aa">sgn</a>(x)) :</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="comment">// else </span></div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('find__whole_8hpp_source.html',''); ini
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="anamespacegcem_html_a6df01e90c3b91e664d98b637c2efff7c"><div class="ttname"><a href="namespacegcem.html#a6df01e90c3b91e664d98b637c2efff7c">gcem::llint_t</a></div><div class="ttdeci">long long int llint_t</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:71</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="anamespaceinternal_html_abc1475c1aeadffa3b27ffaeddce48988"><div class="ttname"><a href="namespaceinternal.html#abc1475c1aeadffa3b27ffaeddce48988">internal::find_whole</a></div><div class="ttdeci">constexpr llint_t find_whole(const T x) noexcept</div><div class="ttdef"><b>Definition:</b> find_whole.hpp:34</div></div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('find__whole_8hpp_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="find__whole_8hpp.html">find_whole.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

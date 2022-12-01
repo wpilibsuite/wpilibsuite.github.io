@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -297,9 +297,9 @@ $(document).ready(function(){initNavTree('incomplete__beta__inv_8hpp_source.html
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>{   <span class="comment">// derivative of the incomplete beta function w.r.t. x</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">return</span>( <span class="comment">// indistinguishable from zero or one</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(<a class="code hl_class" href="classvalue.html">value</a>) ? \</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(<a class="code hl_class" href="classvalue.html">value</a>) ? \</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                T(0) :</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(T(1) - <a class="code hl_class" href="classvalue.html">value</a>) ? \</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(T(1) - <a class="code hl_class" href="classvalue.html">value</a>) ? \</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                T(0) :</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            <span class="comment">// else</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                exp( (alpha_par - T(1))*<a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">log</a>(<a class="code hl_class" href="classvalue.html">value</a>) + (beta_par - T(1))*<a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">log</a>(T(1) - <a class="code hl_class" href="classvalue.html">value</a>) - lb_val ) );</div>
@@ -349,7 +349,7 @@ $(document).ready(function(){initNavTree('incomplete__beta__inv_8hpp_source.html
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>{</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">return</span>( <span class="comment">// derivative = 0</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(deriv_1) ? \</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(deriv_1) ? \</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>                <a class="code hl_function" href="namespaceinternal.html#a75c015a40b8ee5c3655c901a94a80811">incomplete_beta_inv_decision</a>( <a class="code hl_class" href="classvalue.html">value</a>, alpha_par, beta_par, p, T(0), lb_val,</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                    <a class="code hl_define" href="gcem__options_8hpp.html#a39e813da08a458845f0a2ed60c46561a">GCEM_INCML_BETA_INV_MAX_ITER</a>+1) :</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <span class="comment">// else</span></div>
@@ -399,7 +399,7 @@ $(document).ready(function(){initNavTree('incomplete__beta__inv_8hpp_source.html
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <span class="comment">// indistinguishable from zero or one</span></div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; p ? \</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                T(0) :</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(T(1) - p) ? \</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(T(1) - p) ? \</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                T(1) :</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>            <span class="comment">// else</span></div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                <a class="code hl_function" href="namespaceinternal.html#aa601c0d03fde31e0ccebdb5d6c7a2803">incomplete_beta_inv_begin</a>(<a class="code hl_function" href="namespaceinternal.html#af3255962ec95d1cb6d455a5bb4f2e868">incomplete_beta_inv_initial_val</a>(alpha_par,beta_par,p),</div>
@@ -447,8 +447,8 @@ $(document).ready(function(){initNavTree('incomplete__beta__inv_8hpp_source.html
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1240</div></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
 <div class="ttc" id="agcem__options_8hpp_html_a39e813da08a458845f0a2ed60c46561a"><div class="ttname"><a href="gcem__options_8hpp.html#a39e813da08a458845f0a2ed60c46561a">GCEM_INCML_BETA_INV_MAX_ITER</a></div><div class="ttdeci">#define GCEM_INCML_BETA_INV_MAX_ITER</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:169</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="agroup___unit_math_html_gae52f60a9e2a9e7ad1018a846bcf49140"><div class="ttname"><a href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">units::math::sqrt</a></div><div class="ttdeci">auto sqrt(const UnitType &amp;value) noexcept -&gt; unit_t&lt; square_root&lt; typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the square root of value</div><div class="ttdef"><b>Definition:</b> math.h:483</div></div>
 <div class="ttc" id="agroup___unit_math_html_gaed3e6783dc5ab1dda006913aa53f17c8"><div class="ttname"><a href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">units::math::log</a></div><div class="ttdeci">dimensionless::scalar_t log(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute natural logarithm.</div><div class="ttdef"><b>Definition:</b> math.h:349</div></div>
 <div class="ttc" id="aincomplete__beta_8hpp_html_a98d3c35a70475a413d156a64513f2a5f"><div class="ttname"><a href="incomplete__beta_8hpp.html#a98d3c35a70475a413d156a64513f2a5f">incomplete_beta</a></div><div class="ttdeci">constexpr common_return_t&lt; T1, T2, T3 &gt; incomplete_beta(const T1 a, const T2 b, const T3 z) noexcept</div><div class="ttdoc">Compile-time regularized incomplete beta function.</div><div class="ttdef"><b>Definition:</b> incomplete_beta.hpp:188</div></div>
@@ -489,7 +489,7 @@ $(document).ready(function(){initNavTree('incomplete__beta__inv_8hpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="incomplete__beta__inv_8hpp.html">incomplete_beta_inv.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -1,23 +1,10 @@
 var modules =
 [
-    [ "MatrixBase methods defined in the MatrixFunctions module", "group___matrix_functions___module.html#matrixbaseextra", [
-      [ "MatrixBase::cos()", "group___matrix_functions___module.html#matrixbase_cos", null ],
-      [ "MatrixBase::cosh()", "group___matrix_functions___module.html#matrixbase_cosh", null ],
-      [ "MatrixBase::exp()", "group___matrix_functions___module.html#matrixbase_exp", null ],
-      [ "MatrixBase::log()", "group___matrix_functions___module.html#matrixbase_log", null ],
-      [ "MatrixBase::pow()", "group___matrix_functions___module.html#matrixbase_pow", null ],
-      [ "MatrixBase::matrixFunction()", "group___matrix_functions___module.html#matrixbase_matrixfunction", null ],
-      [ "MatrixBase::sin()", "group___matrix_functions___module.html#matrixbase_sin", null ],
-      [ "MatrixBase::sinh()", "group___matrix_functions___module.html#matrixbase_sinh", null ],
-      [ "MatrixBase::sqrt()", "group___matrix_functions___module.html#matrixbase_sqrt", null ]
-    ] ],
+    [ "Raw Image Functions", "group__cscore__raw__cfunc.html", "group__cscore__raw__cfunc" ],
+    [ "cscore C API", "group__cscore__c__api.html", "group__cscore__c__api" ],
+    [ "cscore C++ object-oriented API", "group__cscore__oo.html", "group__cscore__oo" ],
+    [ "cscore C++ function API", "group__cscore__cpp__api.html", "group__cscore__cpp__api" ],
     [ "WPILib HAL API", "group__hal__capi.html", "group__hal__capi" ],
-    [ "Configuration Options", "group__config.html", "group__config" ],
-    [ "Tags and Common Elements", "group__common.html", "group__common" ],
-    [ "Write API", "group__writer.html", "group__writer" ],
-    [ "Reader API", "group__reader.html", "group__reader" ],
-    [ "Expect API", "group__expect.html", "group__expect" ],
-    [ "Node API", "group__node.html", "group__node" ],
     [ "ntcore C++ object-oriented API", "group__ntcore__cpp__api.html", "group__ntcore__cpp__api" ],
     [ "ntcore C++ API", "group__ntcore__cpp__handle__api.html", "group__ntcore__cpp__handle__api" ],
     [ "ntcore C API", "group__ntcore__c__api.html", "group__ntcore__c__api" ],
@@ -32,10 +19,6 @@ var modules =
     [ "FloatArray Functions", "group__ntcore___float_array__cfunc.html", "group__ntcore___float_array__cfunc" ],
     [ "DoubleArray Functions", "group__ntcore___double_array__cfunc.html", "group__ntcore___double_array__cfunc" ],
     [ "StringArray Functions", "group__ntcore___string_array__cfunc.html", "group__ntcore___string_array__cfunc" ],
-    [ "Raw Image Functions", "group__cscore__raw__cfunc.html", "group__cscore__raw__cfunc" ],
-    [ "cscore C API", "group__cscore__c__api.html", "group__cscore__c__api" ],
-    [ "cscore C++ object-oriented API", "group__cscore__oo.html", "group__cscore__oo" ],
-    [ "cscore C++ function API", "group__cscore__cpp__api.html", "group__cscore__cpp__api" ],
     [ "Unit Containers", "group___unit_containers.html", "group___unit_containers" ],
     [ "Unit Types", "group___unit_types.html", "group___unit_types" ],
     [ "Unit Manipulators", "group___unit_manipulators.html", "group___unit_manipulators" ],
@@ -57,5 +40,11 @@ var modules =
     [ "SparseCore module", "group___sparse_core___module.html", "group___sparse_core___module" ],
     [ "SparseLU module", "group___sparse_l_u___module.html", "group___sparse_l_u___module" ],
     [ "Householder module", "group___householder___module.html", "group___householder___module" ],
-    [ "Matrix functions module", "group___matrix_functions___module.html", "group___matrix_functions___module" ]
+    [ "Matrix functions module", "group___matrix_functions___module.html", "group___matrix_functions___module" ],
+    [ "Configuration Options", "group__config.html", "group__config" ],
+    [ "Tags and Common Elements", "group__common.html", "group__common" ],
+    [ "Write API", "group__writer.html", "group__writer" ],
+    [ "Reader API", "group__reader.html", "group__reader" ],
+    [ "Expect API", "group__expect.html", "group__expect" ],
+    [ "Node API", "group__node.html", "group__node" ]
 ];

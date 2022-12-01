@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -168,6 +168,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_analog_trigger_output.html">AnalogTriggerOutput</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to represent a specific output from an analog trigger.  <a href="classfrc_1_1_analog_trigger_output.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1_april_tag.html">AprilTag</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for representing a layout of AprilTags on a field and reading them from a JSON format.  <a href="classfrc_1_1_april_tag_field_layout.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_arm_feedforward.html">ArmFeedforward</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper class that computes feedforward outputs for a simple arm (modeled as a motor acting against the force of gravity on a beam suspended at an angle).  <a href="classfrc_1_1_arm_feedforward.html#details">More...</a><br /></td></tr>
@@ -736,6 +741,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a5f23885bcc9e850c6b99c8cd48b98fd9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9">AprilTagField</a> { <a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9a761719e457487f5c9034a6ddd3877830">k2022RapidReact</a>
+, <a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9afad48c9599777372995b26628ecd81ed">kNumFields</a>
+ }</td></tr>
+<tr class="separator:a5f23885bcc9e850c6b99c8cd48b98fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b4c6f0018b90c1ef0089c6ab4e1e84"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a76b4c6f0018b90c1ef0089c6ab4e1e84">AnalogTriggerType</a> { <a class="el" href="namespacefrc.html#a76b4c6f0018b90c1ef0089c6ab4e1e84a04acabafd026dd826380bf82fa64da86">kInWindow</a> = 0
 , <a class="el" href="namespacefrc.html#a76b4c6f0018b90c1ef0089c6ab4e1e84aafd8bac1c90d2b1e9ad1ea7d74c46618">kState</a> = 1
 , <a class="el" href="namespacefrc.html#a76b4c6f0018b90c1ef0089c6ab4e1e84aeb85d7f3c4b84baa90bd51608a3b8011">kRisingPulse</a> = 2
@@ -817,8 +826,60 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:af9fd070ac23a4daf84810c713471c238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af9fd070ac23a4daf84810c713471c238">LoadAprilTagLayoutField</a> (<a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9">AprilTagField</a> field)</td></tr>
+<tr class="memdesc:af9fd070ac23a4daf84810c713471c238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an <a class="el" href="classfrc_1_1_april_tag_field_layout.html" title="Class for representing a layout of AprilTags on a field and reading them from a JSON format.">AprilTagFieldLayout</a> from a predefined field.  <a href="namespacefrc.html#af9fd070ac23a4daf84810c713471c238">More...</a><br /></td></tr>
+<tr class="separator:af9fd070ac23a4daf84810c713471c238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01eb645a8d471f3467ccaeaf7a23b2c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a01eb645a8d471f3467ccaeaf7a23b2c8">to_json</a> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const <a class="el" href="structfrc_1_1_april_tag.html">AprilTag</a> &amp;apriltag)</td></tr>
+<tr class="separator:a01eb645a8d471f3467ccaeaf7a23b2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eaddd5acc098d94885032178e60e6ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3eaddd5acc098d94885032178e60e6ab">from_json</a> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="structfrc_1_1_april_tag.html">AprilTag</a> &amp;apriltag)</td></tr>
+<tr class="separator:a3eaddd5acc098d94885032178e60e6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3514f6c69534a8d8fbcf2165838c4ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af3514f6c69534a8d8fbcf2165838c4ff">to_json</a> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const <a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a> &amp;layout)</td></tr>
+<tr class="separator:af3514f6c69534a8d8fbcf2165838c4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599251d0d1fde07a3f07f3ecf6d8e78d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a599251d0d1fde07a3f07f3ecf6d8e78d">from_json</a> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a> &amp;layout)</td></tr>
+<tr class="separator:a599251d0d1fde07a3f07f3ecf6d8e78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45df4c928d3e05f76b82979ce7a8489e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_camera_server_shared.html">CameraServerShared</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a45df4c928d3e05f76b82979ce7a8489e">GetCameraServerShared</a> ()</td></tr>
 <tr class="separator:a45df4c928d3e05f76b82979ce7a8489e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3864847b80a90050c09ec4328109932c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3864847b80a90050c09ec4328109932c">Wait</a> (units::second_t seconds)</td></tr>
+<tr class="memdesc:a3864847b80a90050c09ec4328109932c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the task for a specified time.  <a href="namespacefrc.html#a3864847b80a90050c09ec4328109932c">More...</a><br /></td></tr>
+<tr class="separator:a3864847b80a90050c09ec4328109932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855035512c23c326a889f96236a132d5"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a855035512c23c326a889f96236a132d5">GetTime</a> ()</td></tr>
+<tr class="memdesc:a855035512c23c326a889f96236a132d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives real-time clock system time with nanosecond resolution.  <a href="namespacefrc.html#a855035512c23c326a889f96236a132d5">More...</a><br /></td></tr>
+<tr class="separator:a855035512c23c326a889f96236a132d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d83e7ec5a444cd625593917680b750c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a8d83e7ec5a444cd625593917680b750c">RunHALInitialization</a> ()</td></tr>
+<tr class="separator:a8d83e7ec5a444cd625593917680b750c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplParams" colspan="2">template&lt;class Robot &gt; </td></tr>
+<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a34e168565dec463c0b67d584e80c2c0d">StartRobot</a> ()</td></tr>
+<tr class="separator:a34e168565dec463c0b67d584e80c2c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">GetThreadPriority</a> (std::thread &amp;thread, bool *isRealTime)</td></tr>
+<tr class="memdesc:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread priority for the specified thread.  <a href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">More...</a><br /></td></tr>
+<tr class="separator:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240ecbfe0ad32ce081c017bdf344813f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a240ecbfe0ad32ce081c017bdf344813f">GetCurrentThreadPriority</a> (bool *isRealTime)</td></tr>
+<tr class="memdesc:a240ecbfe0ad32ce081c017bdf344813f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread priority for the current thread.  <a href="namespacefrc.html#a240ecbfe0ad32ce081c017bdf344813f">More...</a><br /></td></tr>
+<tr class="separator:a240ecbfe0ad32ce081c017bdf344813f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbae7ad2ff20f360025c771a43aa3ea4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#adbae7ad2ff20f360025c771a43aa3ea4">SetThreadPriority</a> (std::thread &amp;thread, bool realTime, int priority)</td></tr>
+<tr class="memdesc:adbae7ad2ff20f360025c771a43aa3ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the thread priority for the specified thread.  <a href="namespacefrc.html#adbae7ad2ff20f360025c771a43aa3ea4">More...</a><br /></td></tr>
+<tr class="separator:adbae7ad2ff20f360025c771a43aa3ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">SetCurrentThreadPriority</a> (bool realTime, int priority)</td></tr>
+<tr class="memdesc:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the thread priority for the current thread.  <a href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">More...</a><br /></td></tr>
+<tr class="separator:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994ac3c63399b199e3c051dc512dca53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a994ac3c63399b199e3c051dc512dca53">ShuffleboardEventImportanceName</a> (<a class="el" href="namespacefrc.html#a7150d1b34eeaf4d5ef8b480a7f25afe1">ShuffleboardEventImportance</a> importance)</td></tr>
+<tr class="separator:a994ac3c63399b199e3c051dc512dca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae7c9f541a9d22363f20fa1bd14bd459e">GetErrorMessage</a> (int32_t *<a class="el" href="_third_party_notices_8txt.html#a84115a3d674a21b7abd56eab103ff848">code</a>)</td></tr>
+<tr class="memdesc:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets error message string for an error code.  <a href="namespacefrc.html#ae7c9f541a9d22363f20fa1bd14bd459e">More...</a><br /></td></tr>
+<tr class="separator:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae524c828d05c9df76525cd615a26772a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">ReportErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
+<tr class="memdesc:ae524c828d05c9df76525cd615a26772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">More...</a><br /></td></tr>
+<tr class="separator:ae524c828d05c9df76525cd615a26772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fd6947f9bf7ae21949c964385599da"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aa7fd6947f9bf7ae21949c964385599da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">ReportError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:aa7fd6947f9bf7ae21949c964385599da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">More...</a><br /></td></tr>
+<tr class="separator:aa7fd6947f9bf7ae21949c964385599da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_runtime_error.html">RuntimeError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">MakeErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
+<tr class="memdesc:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a runtime error exception object.  <a href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">More...</a><br /></td></tr>
+<tr class="separator:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_runtime_error.html">RuntimeError</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">MakeError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa084f2ee573258a862b973c9343ee02e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa084f2ee573258a862b973c9343ee02e">to_json</a> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
 <tr class="separator:aa084f2ee573258a862b973c9343ee02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a110eb6adc14c3cffe104abc63ea380c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a110eb6adc14c3cffe104abc63ea380c6">from_json</a> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;pose)</td></tr>
@@ -1012,47 +1073,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a85b8d9aa206445d7589f7de21a9709e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">EstimateFieldToCamera</a> (const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget)</td></tr>
 <tr class="memdesc:a85b8d9aa206445d7589f7de21a9709e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field.  <a href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">More...</a><br /></td></tr>
 <tr class="separator:a85b8d9aa206445d7589f7de21a9709e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3864847b80a90050c09ec4328109932c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3864847b80a90050c09ec4328109932c">Wait</a> (units::second_t seconds)</td></tr>
-<tr class="memdesc:a3864847b80a90050c09ec4328109932c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the task for a specified time.  <a href="namespacefrc.html#a3864847b80a90050c09ec4328109932c">More...</a><br /></td></tr>
-<tr class="separator:a3864847b80a90050c09ec4328109932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a855035512c23c326a889f96236a132d5"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a855035512c23c326a889f96236a132d5">GetTime</a> ()</td></tr>
-<tr class="memdesc:a855035512c23c326a889f96236a132d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives real-time clock system time with nanosecond resolution.  <a href="namespacefrc.html#a855035512c23c326a889f96236a132d5">More...</a><br /></td></tr>
-<tr class="separator:a855035512c23c326a889f96236a132d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d83e7ec5a444cd625593917680b750c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a8d83e7ec5a444cd625593917680b750c">RunHALInitialization</a> ()</td></tr>
-<tr class="separator:a8d83e7ec5a444cd625593917680b750c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplParams" colspan="2">template&lt;class Robot &gt; </td></tr>
-<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a34e168565dec463c0b67d584e80c2c0d">StartRobot</a> ()</td></tr>
-<tr class="separator:a34e168565dec463c0b67d584e80c2c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">GetThreadPriority</a> (std::thread &amp;thread, bool *isRealTime)</td></tr>
-<tr class="memdesc:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread priority for the specified thread.  <a href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">More...</a><br /></td></tr>
-<tr class="separator:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240ecbfe0ad32ce081c017bdf344813f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a240ecbfe0ad32ce081c017bdf344813f">GetCurrentThreadPriority</a> (bool *isRealTime)</td></tr>
-<tr class="memdesc:a240ecbfe0ad32ce081c017bdf344813f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread priority for the current thread.  <a href="namespacefrc.html#a240ecbfe0ad32ce081c017bdf344813f">More...</a><br /></td></tr>
-<tr class="separator:a240ecbfe0ad32ce081c017bdf344813f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbae7ad2ff20f360025c771a43aa3ea4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#adbae7ad2ff20f360025c771a43aa3ea4">SetThreadPriority</a> (std::thread &amp;thread, bool realTime, int priority)</td></tr>
-<tr class="memdesc:adbae7ad2ff20f360025c771a43aa3ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the thread priority for the specified thread.  <a href="namespacefrc.html#adbae7ad2ff20f360025c771a43aa3ea4">More...</a><br /></td></tr>
-<tr class="separator:adbae7ad2ff20f360025c771a43aa3ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">SetCurrentThreadPriority</a> (bool realTime, int priority)</td></tr>
-<tr class="memdesc:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the thread priority for the current thread.  <a href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">More...</a><br /></td></tr>
-<tr class="separator:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a994ac3c63399b199e3c051dc512dca53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a994ac3c63399b199e3c051dc512dca53">ShuffleboardEventImportanceName</a> (<a class="el" href="namespacefrc.html#a7150d1b34eeaf4d5ef8b480a7f25afe1">ShuffleboardEventImportance</a> importance)</td></tr>
-<tr class="separator:a994ac3c63399b199e3c051dc512dca53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae7c9f541a9d22363f20fa1bd14bd459e">GetErrorMessage</a> (int32_t *<a class="el" href="_third_party_notices_8txt.html#a84115a3d674a21b7abd56eab103ff848">code</a>)</td></tr>
-<tr class="memdesc:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets error message string for an error code.  <a href="namespacefrc.html#ae7c9f541a9d22363f20fa1bd14bd459e">More...</a><br /></td></tr>
-<tr class="separator:ae7c9f541a9d22363f20fa1bd14bd459e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae524c828d05c9df76525cd615a26772a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">ReportErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
-<tr class="memdesc:ae524c828d05c9df76525cd615a26772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">More...</a><br /></td></tr>
-<tr class="separator:ae524c828d05c9df76525cd615a26772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7fd6947f9bf7ae21949c964385599da"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:aa7fd6947f9bf7ae21949c964385599da"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">ReportError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:aa7fd6947f9bf7ae21949c964385599da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#aa7fd6947f9bf7ae21949c964385599da">More...</a><br /></td></tr>
-<tr class="separator:aa7fd6947f9bf7ae21949c964385599da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_runtime_error.html">RuntimeError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">MakeErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)</td></tr>
-<tr class="memdesc:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a runtime error exception object.  <a href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">More...</a><br /></td></tr>
-<tr class="separator:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_runtime_error.html">RuntimeError</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5d8db52ed33a8353dff3bb57ff019d4e">MakeError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="format_8h.html#ab5e334342978e8c898e32e5b4f7d08fa">format</a>, Args &amp;&amp;... args)</td></tr>
-<tr class="separator:a5d8db52ed33a8353dff3bb57ff019d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1119,6 +1139,32 @@ template&lt;int Size&gt; </div>
 <tr><td class="fieldname"><a id="a76b4c6f0018b90c1ef0089c6ab4e1e84aafd8bac1c90d2b1e9ad1ea7d74c46618" name="a76b4c6f0018b90c1ef0089c6ab4e1e84aafd8bac1c90d2b1e9ad1ea7d74c46618"></a>kState&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a76b4c6f0018b90c1ef0089c6ab4e1e84aeb85d7f3c4b84baa90bd51608a3b8011" name="a76b4c6f0018b90c1ef0089c6ab4e1e84aeb85d7f3c4b84baa90bd51608a3b8011"></a>kRisingPulse&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a76b4c6f0018b90c1ef0089c6ab4e1e84acc77076580c409066b5ec61ec7c8e8b1" name="a76b4c6f0018b90c1ef0089c6ab4e1e84acc77076580c409066b5ec61ec7c8e8b1"></a>kFallingPulse&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a5f23885bcc9e850c6b99c8cd48b98fd9" name="a5f23885bcc9e850c6b99c8cd48b98fd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f23885bcc9e850c6b99c8cd48b98fd9">&#9670;&nbsp;</a></span>AprilTagField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9">frc::AprilTagField</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f23885bcc9e850c6b99c8cd48b98fd9a761719e457487f5c9034a6ddd3877830" name="a5f23885bcc9e850c6b99c8cd48b98fd9a761719e457487f5c9034a6ddd3877830"></a>k2022RapidReact&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5f23885bcc9e850c6b99c8cd48b98fd9afad48c9599777372995b26628ecd81ed" name="a5f23885bcc9e850c6b99c8cd48b98fd9afad48c9599777372995b26628ecd81ed"></a>kNumFields&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -2752,8 +2798,64 @@ template&lt;int Outputs&gt; </div>
 
 </div>
 </div>
+<a id="a3eaddd5acc098d94885032178e60e6ab" name="a3eaddd5acc098d94885032178e60e6ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eaddd5acc098d94885032178e60e6ab">&#9670;&nbsp;</a></span>from_json() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void frc::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;&#160;</td>
+          <td class="paramname"><em>json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structfrc_1_1_april_tag.html">AprilTag</a> &amp;&#160;</td>
+          <td class="paramname"><em>apriltag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a599251d0d1fde07a3f07f3ecf6d8e78d" name="a599251d0d1fde07a3f07f3ecf6d8e78d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a599251d0d1fde07a3f07f3ecf6d8e78d">&#9670;&nbsp;</a></span>from_json() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void frc::from_json </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;&#160;</td>
+          <td class="paramname"><em>json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a> &amp;&#160;</td>
+          <td class="paramname"><em>layout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a110eb6adc14c3cffe104abc63ea380c6" name="a110eb6adc14c3cffe104abc63ea380c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a110eb6adc14c3cffe104abc63ea380c6">&#9670;&nbsp;</a></span>from_json() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a110eb6adc14c3cffe104abc63ea380c6">&#9670;&nbsp;</a></span>from_json() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2781,7 +2883,7 @@ template&lt;int Outputs&gt; </div>
 </div>
 </div>
 <a id="a0bb57fc7a20dea54369dac68f69e0c0e" name="a0bb57fc7a20dea54369dac68f69e0c0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bb57fc7a20dea54369dac68f69e0c0e">&#9670;&nbsp;</a></span>from_json() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb57fc7a20dea54369dac68f69e0c0e">&#9670;&nbsp;</a></span>from_json() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2809,7 +2911,7 @@ template&lt;int Outputs&gt; </div>
 </div>
 </div>
 <a id="ac6fc34819d21015dcc81ba4de2b98d56" name="ac6fc34819d21015dcc81ba4de2b98d56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6fc34819d21015dcc81ba4de2b98d56">&#9670;&nbsp;</a></span>from_json() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fc34819d21015dcc81ba4de2b98d56">&#9670;&nbsp;</a></span>from_json() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2837,7 +2939,7 @@ template&lt;int Outputs&gt; </div>
 </div>
 </div>
 <a id="aa2e4b5dc83f17f67fb1791096fb5d376" name="aa2e4b5dc83f17f67fb1791096fb5d376"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2e4b5dc83f17f67fb1791096fb5d376">&#9670;&nbsp;</a></span>from_json() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e4b5dc83f17f67fb1791096fb5d376">&#9670;&nbsp;</a></span>from_json() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2865,7 +2967,7 @@ template&lt;int Outputs&gt; </div>
 </div>
 </div>
 <a id="ab3d96f15b2db79b63dab1f3e4567bac9" name="ab3d96f15b2db79b63dab1f3e4567bac9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3d96f15b2db79b63dab1f3e4567bac9">&#9670;&nbsp;</a></span>from_json() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d96f15b2db79b63dab1f3e4567bac9">&#9670;&nbsp;</a></span>from_json() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2893,7 +2995,7 @@ template&lt;int Outputs&gt; </div>
 </div>
 </div>
 <a id="a4b5a9b431ae2924414aac97af6c372ae" name="a4b5a9b431ae2924414aac97af6c372ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b5a9b431ae2924414aac97af6c372ae">&#9670;&nbsp;</a></span>from_json() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5a9b431ae2924414aac97af6c372ae">&#9670;&nbsp;</a></span>from_json() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2921,7 +3023,7 @@ template&lt;int Outputs&gt; </div>
 </div>
 </div>
 <a id="a4b4f909d0a4c0b7faf1a1b58cd241138" name="a4b4f909d0a4c0b7faf1a1b58cd241138"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b4f909d0a4c0b7faf1a1b58cd241138">&#9670;&nbsp;</a></span>from_json() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4f909d0a4c0b7faf1a1b58cd241138">&#9670;&nbsp;</a></span>from_json() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2949,7 +3051,7 @@ template&lt;int Outputs&gt; </div>
 </div>
 </div>
 <a id="ab305e209fa489dca809ec90d03988df4" name="ab305e209fa489dca809ec90d03988df4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab305e209fa489dca809ec90d03988df4">&#9670;&nbsp;</a></span>from_json() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab305e209fa489dca809ec90d03988df4">&#9670;&nbsp;</a></span>from_json() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3303,6 +3405,32 @@ template&lt;&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9fd070ac23a4daf84810c713471c238" name="af9fd070ac23a4daf84810c713471c238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9fd070ac23a4daf84810c713471c238">&#9670;&nbsp;</a></span>LoadAprilTagLayoutField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a> frc::LoadAprilTagLayoutField </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9">AprilTagField</a>&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads an <a class="el" href="classfrc_1_1_april_tag_field_layout.html" title="Class for representing a layout of AprilTags on a field and reading them from a JSON format.">AprilTagFieldLayout</a> from a predefined field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>The predefined field </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -4470,8 +4598,64 @@ template&lt;class... Wheels&gt; </div>
 
 </div>
 </div>
+<a id="a01eb645a8d471f3467ccaeaf7a23b2c8" name="a01eb645a8d471f3467ccaeaf7a23b2c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01eb645a8d471f3467ccaeaf7a23b2c8">&#9670;&nbsp;</a></span>to_json() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void frc::to_json </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;&#160;</td>
+          <td class="paramname"><em>json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structfrc_1_1_april_tag.html">AprilTag</a> &amp;&#160;</td>
+          <td class="paramname"><em>apriltag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3514f6c69534a8d8fbcf2165838c4ff" name="af3514f6c69534a8d8fbcf2165838c4ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3514f6c69534a8d8fbcf2165838c4ff">&#9670;&nbsp;</a></span>to_json() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void frc::to_json </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;&#160;</td>
+          <td class="paramname"><em>json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_april_tag_field_layout.html">AprilTagFieldLayout</a> &amp;&#160;</td>
+          <td class="paramname"><em>layout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa084f2ee573258a862b973c9343ee02e" name="aa084f2ee573258a862b973c9343ee02e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa084f2ee573258a862b973c9343ee02e">&#9670;&nbsp;</a></span>to_json() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa084f2ee573258a862b973c9343ee02e">&#9670;&nbsp;</a></span>to_json() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4499,7 +4683,7 @@ template&lt;class... Wheels&gt; </div>
 </div>
 </div>
 <a id="ac1f1638f56e82c9f714cf6fd00863d19" name="ac1f1638f56e82c9f714cf6fd00863d19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1f1638f56e82c9f714cf6fd00863d19">&#9670;&nbsp;</a></span>to_json() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1f1638f56e82c9f714cf6fd00863d19">&#9670;&nbsp;</a></span>to_json() <span class="overload">[4/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4527,7 +4711,7 @@ template&lt;class... Wheels&gt; </div>
 </div>
 </div>
 <a id="a92e932be59dddd39dd730405baf75533" name="a92e932be59dddd39dd730405baf75533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e932be59dddd39dd730405baf75533">&#9670;&nbsp;</a></span>to_json() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e932be59dddd39dd730405baf75533">&#9670;&nbsp;</a></span>to_json() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4555,7 +4739,7 @@ template&lt;class... Wheels&gt; </div>
 </div>
 </div>
 <a id="a3e552b5d2528819c1ed371cdad15173a" name="a3e552b5d2528819c1ed371cdad15173a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e552b5d2528819c1ed371cdad15173a">&#9670;&nbsp;</a></span>to_json() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e552b5d2528819c1ed371cdad15173a">&#9670;&nbsp;</a></span>to_json() <span class="overload">[6/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4583,7 +4767,7 @@ template&lt;class... Wheels&gt; </div>
 </div>
 </div>
 <a id="a0aad1a744a534c81856074f84d76c4c7" name="a0aad1a744a534c81856074f84d76c4c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aad1a744a534c81856074f84d76c4c7">&#9670;&nbsp;</a></span>to_json() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aad1a744a534c81856074f84d76c4c7">&#9670;&nbsp;</a></span>to_json() <span class="overload">[7/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4611,7 +4795,7 @@ template&lt;class... Wheels&gt; </div>
 </div>
 </div>
 <a id="a07fc5d3fd107b59e2d66d799583695bd" name="a07fc5d3fd107b59e2d66d799583695bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07fc5d3fd107b59e2d66d799583695bd">&#9670;&nbsp;</a></span>to_json() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a07fc5d3fd107b59e2d66d799583695bd">&#9670;&nbsp;</a></span>to_json() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4639,7 +4823,7 @@ template&lt;class... Wheels&gt; </div>
 </div>
 </div>
 <a id="a9b7cc85f474012717f6a2f3fddf22386" name="a9b7cc85f474012717f6a2f3fddf22386"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b7cc85f474012717f6a2f3fddf22386">&#9670;&nbsp;</a></span>to_json() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7cc85f474012717f6a2f3fddf22386">&#9670;&nbsp;</a></span>to_json() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4667,7 +4851,7 @@ template&lt;class... Wheels&gt; </div>
 </div>
 </div>
 <a id="ac9c939212a03c73a2d20d676a354b7c8" name="ac9c939212a03c73a2d20d676a354b7c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9c939212a03c73a2d20d676a354b7c8">&#9670;&nbsp;</a></span>to_json() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c939212a03c73a2d20d676a354b7c8">&#9670;&nbsp;</a></span>to_json() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4756,7 +4940,7 @@ template&lt;class... Wheels&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

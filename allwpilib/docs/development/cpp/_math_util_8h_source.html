@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('_math_util_8h_source.html',''); initRe
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacefrc.html#a9a55e5d7e329c0937444a309366aa386">   31</a></span>T <a class="code hl_function" href="namespacefrc.html#a9a55e5d7e329c0937444a309366aa386">ApplyDeadband</a>(T <a class="code hl_class" href="classvalue.html">value</a>, T deadband, T maxMagnitude = T{1.0}) {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  T magnitude;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (std::is_floating_point_v&lt;T&gt;) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    magnitude = <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>(<a class="code hl_class" href="classvalue.html">value</a>);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    magnitude = <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">std::abs</a>(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    magnitude = <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  }</div>
@@ -220,10 +220,9 @@ $(document).ready(function(){initNavTree('_math_util_8h_source.html',''); initRe
 <div class="ttc" id="abase_8h_html"><div class="ttname"><a href="base_8h.html">base.h</a></div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1240</div></div>
 <div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:298</div></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
 <div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="amath_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionPipeline.h:11</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> AprilTagFields.h:13</div></div>
 <div class="ttc" id="anamespacefrc_html_a543fea13d5a83401031f4bf9012f2f9e"><div class="ttname"><a href="namespacefrc.html#a543fea13d5a83401031f4bf9012f2f9e">frc::AngleModulus</a></div><div class="ttdeci">WPILIB_DLLEXPORT constexpr units::radian_t AngleModulus(units::radian_t angle)</div><div class="ttdoc">Wraps an angle to the range -pi to pi radians (-180 to 180 degrees).</div><div class="ttdef"><b>Definition:</b> MathUtil.h:114</div></div>
 <div class="ttc" id="anamespacefrc_html_a9a55e5d7e329c0937444a309366aa386"><div class="ttname"><a href="namespacefrc.html#a9a55e5d7e329c0937444a309366aa386">frc::ApplyDeadband</a></div><div class="ttdeci">T ApplyDeadband(T value, T deadband, T maxMagnitude=T{1.0})</div><div class="ttdoc">Returns 0.0 if the given value is within the specified range around zero.</div><div class="ttdef"><b>Definition:</b> MathUtil.h:31</div></div>
 <div class="ttc" id="anamespacefrc_html_aa026a3c3f3053fcafb58c6be2fa589fa"><div class="ttname"><a href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">frc::InputModulus</a></div><div class="ttdeci">constexpr T InputModulus(T input, T minimumInput, T maximumInput)</div><div class="ttdoc">Returns modulus of input.</div><div class="ttdef"><b>Definition:</b> MathUtil.h:94</div></div>
@@ -235,7 +234,7 @@ $(document).ready(function(){initNavTree('_math_util_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="_math_util_8h.html">MathUtil.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

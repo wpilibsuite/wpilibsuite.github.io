@@ -353,6 +353,7 @@ var menudata={children:[
 {text:"q",url:"functions_rela_q.html#index_q"},
 {text:"r",url:"functions_rela_r.html#index_r"},
 {text:"s",url:"functions_rela_s.html#index_s"},
+{text:"t",url:"functions_rela_t.html#index_t"},
 {text:"u",url:"functions_rela_u.html#index_u"},
 {text:"v",url:"functions_rela_v.html#index_v"}]}]}]},
 {text:"Files",url:"files.html",children:[

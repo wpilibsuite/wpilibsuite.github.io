@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('_perpetual_command_8h_source.html','')
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  template &lt;class T, typename = <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a>&lt;<a class="code hl_namespace" href="namespacestd.html">std</a>::is_base_of_v&lt;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                         <a class="code hl_class" href="classfrc2_1_1_command.html">Command</a>, <a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_typedef" href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a>&lt;T&gt;&gt;&gt;&gt;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  WPI_DEPRECATED(</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      &quot;<a class="code hl_class" href="classfrc2_1_1_perpetual_command.html">PerpetualCommand</a> violates the assumption that execute() doesn&#39;t <a class="code hl_function" href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html#ac4f38ea0cad7df02d1b6bfb99afd673c">get</a> &quot;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      &quot;<a class="code hl_class" href="classfrc2_1_1_perpetual_command.html">PerpetualCommand</a> violates the assumption that execute() doesn&#39;t <a class="code hl_function" href="wpiutil_2src_2main_2native_2include_2wpi_2_array_8h.html#ac4f38ea0cad7df02d1b6bfb99afd673c">get</a> &quot;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      &quot;called after isFinished() returns true -- an assumption that should be &quot;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      &quot;valid.&quot;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      &quot;This was unsafe/undefined behavior <a class="code hl_variable" href="_third_party_notices_8txt.html#ae1e371287219a11d6a2498f92d3e15d2">from</a> the start, <a class="code hl_function" href="_third_party_notices_8txt.html#a44310e8a4338596c818c9c8cc6af8d1e">and</a> <a class="code hl_class" href="classfrc2_1_1_repeat_command.html">RepeatCommand</a> &quot;</div>
@@ -211,16 +211,16 @@ $(document).ready(function(){initNavTree('_perpetual_command_8h_source.html','')
 <div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:298</div></div>
 <div class="ttc" id="acore_8h_html_a3a08cea569e6926ac8d7d74dd7178b5f"><div class="ttname"><a href="core_8h.html#a3a08cea569e6926ac8d7d74dd7178b5f">remove_reference_t</a></div><div class="ttdeci">typename std::remove_reference&lt; T &gt;::type remove_reference_t</div><div class="ttdef"><b>Definition:</b> core.h:303</div></div>
 <div class="ttc" id="anamespace_eigen_1_1placeholders_html_a24a00ff0f09137dcde6952ff29fb9f9d"><div class="ttname"><a href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">Eigen::placeholders::end</a></div><div class="ttdeci">static EIGEN_DEPRECATED const end_t end</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:181</div></div>
-<div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
-<div class="ttc" id="awpiutil_2src_2main_2native_2include_2wpi_2array_8h_html_ac4f38ea0cad7df02d1b6bfb99afd673c"><div class="ttname"><a href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html#ac4f38ea0cad7df02d1b6bfb99afd673c">get</a></div><div class="ttdeci">constexpr T &amp; get(wpi::array&lt; T, N &gt; &amp;arr) noexcept</div><div class="ttdef"><b>Definition:</b> array.h:66</div></div>
+<div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDCommand.h:16</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> StdDeque.h:50</div></div>
+<div class="ttc" id="awpiutil_2src_2main_2native_2include_2wpi_2_array_8h_html_ac4f38ea0cad7df02d1b6bfb99afd673c"><div class="ttname"><a href="wpiutil_2src_2main_2native_2include_2wpi_2_array_8h.html#ac4f38ea0cad7df02d1b6bfb99afd673c">get</a></div><div class="ttdeci">constexpr T &amp; get(wpi::array&lt; T, N &gt; &amp;arr) noexcept</div><div class="ttdef"><b>Definition:</b> array.h:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_perpetual_command_8h.html">PerpetualCommand.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

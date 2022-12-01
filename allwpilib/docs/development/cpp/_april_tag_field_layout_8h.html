@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/thirdparty/llvm/include/wpi/Errno.h File Reference</title>
+<title>WPILibC++: frc/apriltag/AprilTagFieldLayout.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2thirdparty_2llvm_2include_2wpi_2_errno_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_april_tag_field_layout_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,38 +92,51 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2thirdparty
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Errno.h File Reference</div></div>
+  <div class="headertitle"><div class="title">AprilTagFieldLayout.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cerrno&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
+<div class="textblock"><code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;<a class="el" href="length_8h_source.html">units/length.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="_symbol_exports_8h_source.html">wpi/SymbolExports.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="_april_tag_8h_source.html">frc/apriltag/AprilTag.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_pose3d_8h_source.html">frc/geometry/Pose3d.h</a>&quot;</code><br />
 </div>
-<p><a href="wpiutil_2src_2main_2native_2thirdparty_2llvm_2include_2wpi_2_errno_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="_april_tag_field_layout_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_april_tag_field_layout.html">frc::AprilTagFieldLayout</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for representing a layout of AprilTags on a field and reading them from a JSON format.  <a href="classfrc_1_1_april_tag_field_layout.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacewpi"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html">wpi</a></td></tr>
 <tr class="memdesc:namespacewpi"><td class="mdescLeft">&#160;</td><td class="mdescRight">/file This file defines the <a class="el" href="classwpi_1_1_small_vector.html" title="This is a &#39;vector&#39; (really, a variable-sized array), optimized for the case when the array is small.">SmallVector</a> class. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacewpi_1_1sys"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html">wpi::sys</a></td></tr>
+<tr class="memitem:namespacefrc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html">frc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplParams" colspan="2">template&lt;typename FailT , typename Fun , typename... Args&gt; </td></tr>
-<tr class="memitem:abf2d0058ae07830ebe9b59a657312f46"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1sys.html#abf2d0058ae07830ebe9b59a657312f46">wpi::sys::RetryAfterSignal</a> (const FailT &amp;Fail, const Fun &amp;F, const Args &amp;... As)</td></tr>
-<tr class="separator:abf2d0058ae07830ebe9b59a657312f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3514f6c69534a8d8fbcf2165838c4ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af3514f6c69534a8d8fbcf2165838c4ff">frc::to_json</a> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const AprilTagFieldLayout &amp;layout)</td></tr>
+<tr class="separator:af3514f6c69534a8d8fbcf2165838c4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599251d0d1fde07a3f07f3ecf6d8e78d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a599251d0d1fde07a3f07f3ecf6d8e78d">frc::from_json</a> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, AprilTagFieldLayout &amp;layout)</td></tr>
+<tr class="separator:a599251d0d1fde07a3f07f3ecf6d8e78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_cbe59d583f188c45398369bc04fba8f9.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_3c14e2811843326714b08335f4db6d6f.html">llvm</a></li><li class="navelem"><a class="el" href="dir_c9d71ee896d0afc8c2dc55673cfe897b.html">include</a></li><li class="navelem"><a class="el" href="dir_a809135da9c9e78db898aa42d248563a.html">wpi</a></li><li class="navelem"><a class="el" href="wpiutil_2src_2main_2native_2thirdparty_2llvm_2include_2wpi_2_errno_8h.html">Errno.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="navelem"><a class="el" href="dir_f978e330e7f988d946668b0a3265d290.html">frc</a></li><li class="navelem"><a class="el" href="dir_f984795bf8b08c676898742324c7acca.html">apriltag</a></li><li class="navelem"><a class="el" href="_april_tag_field_layout_8h.html">AprilTagFieldLayout.h</a></li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

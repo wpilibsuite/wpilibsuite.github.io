@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ Macros</h2></td></tr>
 <div class="line">    typedef deque_base::iterator iterator;  \</div>
 <div class="line">    explicit deque(<span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : deque_base(a) {}  \</div>
 <div class="line">    template&lt;typename InputIterator&gt; \</div>
-<div class="line">    deque(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : deque_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
+<div class="line">    deque(InputIterator <a class="code hl_function" href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : deque_base(<a class="code hl_function" href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
 <div class="line">    deque(<span class="keyword">const</span> deque&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) : deque_base(<a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) {}  \</div>
 <div class="line">    explicit deque(size_type num, <span class="keyword">const</span> value_type&amp; val = value_type()) : deque_base(num, val) {} \</div>
 <div class="line">    deque(iterator start_, iterator end_) : deque_base(start_, end_) {}  \</div>
@@ -161,8 +161,8 @@ Macros</h2></td></tr>
 <div class="line">  }; \</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup___core___module_html_ga2dd8b20d08336af23947e054a17415ee"><div class="ttname"><a href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">Eigen::last</a></div><div class="ttdeci">static const symbolic::SymbolExpr&lt; internal::symbolic_last_tag &gt; last</div><div class="ttdoc">Can be used as a parameter to Eigen::seq and Eigen::seqN functions to symbolically reference the last...</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:38</div></div>
-<div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:138</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> array.h:90</div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html_aa931747bff074d6cacefff640074a4f9"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">Eigen::internal::first</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index first(const T &amp;x) EIGEN_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:81</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> StdDeque.h:50</div></div>
 <div class="ttc" id="anamespaceunits_1_1constants_html_acfa211a9904208ac580676b5cc42b04a"><div class="ttname"><a href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">units::constants::c</a></div><div class="ttdeci">static constexpr const velocity::meters_per_second_t c(299792458.0)</div><div class="ttdoc">Speed of light in vacuum.</div></div>
 </div><!-- fragment -->
 <p>This section contains a convenience MACRO which allows an easy specialization of std::deque such that for data types with alignment issues the correct allocator is used automatically. </p>
@@ -188,8 +188,8 @@ Macros</h2></td></tr>
 <div class="line">    typedef <span class="keyword">typename</span> deque_base::const_iterator const_iterator;  \</div>
 <div class="line">    explicit deque(<span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : deque_base(a) {}  \</div>
 <div class="line">    template&lt;typename InputIterator&gt; \</div>
-<div class="line">    deque(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) \</div>
-<div class="line">    : deque_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
+<div class="line">    deque(InputIterator <a class="code hl_function" href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) \</div>
+<div class="line">    : deque_base(<a class="code hl_function" href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
 <div class="line">    deque(<span class="keyword">const</span> deque&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) : deque_base(<a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) {}  \</div>
 <div class="line">    explicit deque(size_type num, <span class="keyword">const</span> value_type&amp; val = value_type()) : deque_base(num, val) {} \</div>
 <div class="line">    deque(iterator start_, iterator end_) : deque_base(start_, end_) {}  \</div>
@@ -206,7 +206,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_a503da3b453404e1287272c77071dd3d.html">eigen</a></li><li class="navelem"><a class="el" href="dir_fd4b00ce740d3dd439e603aa9894944a.html">include</a></li><li class="navelem"><a class="el" href="dir_dfd0418832df15abbf3a15b9cdd75456.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_8660c9c7f81f39c9f996cc1681449d65.html">src</a></li><li class="navelem"><a class="el" href="dir_692fa8405538ab7865292b691d361c0e.html">StlSupport</a></li><li class="navelem"><a class="el" href="_std_deque_8h.html">StdDeque.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

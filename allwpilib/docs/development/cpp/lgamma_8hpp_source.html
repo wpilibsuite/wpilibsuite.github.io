@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -197,7 +197,7 @@ $(document).ready(function(){initNavTree('lgamma_8hpp_source.html',''); initResi
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <a class="code hl_function" href="namespaceinternal.html#a4cc2f7eb805496ecf6db5f8f69339d9e">is_nan</a>(x) ? \</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                GCLIM&lt;T&gt;::quiet_NaN() :</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="comment">// indistinguishable from one or &lt;= zero</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x - T(1)) ? \</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x - T(1)) ? \</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                T(0) :</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; x ? \</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                GCLIM&lt;T&gt;::infinity() :</div>
@@ -229,8 +229,8 @@ $(document).ready(function(){initNavTree('lgamma_8hpp_source.html',''); initResi
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
 <div class="ttc" id="agcem__options_8hpp_html_aaa1f6092f162ac6cba1bd6cd54129269"><div class="ttname"><a href="gcem__options_8hpp.html#aaa1f6092f162ac6cba1bd6cd54129269">GCEM_LOG_SQRT_2PI</a></div><div class="ttdeci">#define GCEM_LOG_SQRT_2PI</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:110</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="agroup___unit_math_html_gaed3e6783dc5ab1dda006913aa53f17c8"><div class="ttname"><a href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">units::math::log</a></div><div class="ttdeci">dimensionless::scalar_t log(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute natural logarithm.</div><div class="ttdef"><b>Definition:</b> math.h:349</div></div>
 <div class="ttc" id="algamma_8hpp_html_ac937578541b8f6ec4b19355054ccfda3"><div class="ttname"><a href="lgamma_8hpp.html#ac937578541b8f6ec4b19355054ccfda3">lgamma</a></div><div class="ttdeci">constexpr return_t&lt; T &gt; lgamma(const T x) noexcept</div><div class="ttdoc">Compile-time log-gamma function.</div><div class="ttdef"><b>Definition:</b> lgamma.hpp:129</div></div>
 <div class="ttc" id="amin_8hpp_html_a90dfab1fcb99976507217d8111c3f524"><div class="ttname"><a href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; min(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise minimum function.</div><div class="ttdef"><b>Definition:</b> min.hpp:35</div></div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('lgamma_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="lgamma_8hpp.html">lgamma.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -131,20 +131,20 @@ $(document).ready(function(){initNavTree('copysign_8hpp_source.html',''); initRe
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="copysign_8hpp.html#a3c771d225b3b2e47c697a9b67ed9ae30">   35</a></span><a class="code hl_function" href="copysign_8hpp.html#a3c771d225b3b2e47c697a9b67ed9ae30">copysign</a>(<span class="keyword">const</span> T1 x, <span class="keyword">const</span> T2 <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>)</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="format_8h.html#a9dffefc41110dec0e760d10e635de1a3">signbit</a>(x) != <a class="code hl_function" href="format_8h.html#a9dffefc41110dec0e760d10e635de1a3">signbit</a>(<a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>) ? -x : x );</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="signbit_8hpp.html#aed82d5189d435290c439bcce31436814">signbit</a>(x) != <a class="code hl_function" href="signbit_8hpp.html#aed82d5189d435290c439bcce31436814">signbit</a>(<a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>) ? -x : x );</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acopysign_8hpp_html_a3c771d225b3b2e47c697a9b67ed9ae30"><div class="ttname"><a href="copysign_8hpp.html#a3c771d225b3b2e47c697a9b67ed9ae30">copysign</a></div><div class="ttdeci">constexpr T1 copysign(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time copy sign function.</div><div class="ttdef"><b>Definition:</b> copysign.hpp:35</div></div>
-<div class="ttc" id="aformat_8h_html_a9dffefc41110dec0e760d10e635de1a3"><div class="ttname"><a href="format_8h.html#a9dffefc41110dec0e760d10e635de1a3">signbit</a></div><div class="ttdeci">FMT_INLINE FMT_CONSTEXPR bool signbit(T value)</div><div class="ttdef"><b>Definition:</b> format.h:2520</div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
+<div class="ttc" id="asignbit_8hpp_html_aed82d5189d435290c439bcce31436814"><div class="ttname"><a href="signbit_8hpp.html#aed82d5189d435290c439bcce31436814">signbit</a></div><div class="ttdeci">constexpr bool signbit(const T x) noexcept</div><div class="ttdoc">Compile-time sign bit detection function.</div><div class="ttdef"><b>Definition:</b> signbit.hpp:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="copysign_8hpp.html">copysign.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

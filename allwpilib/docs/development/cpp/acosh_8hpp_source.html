@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('acosh_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            x &lt; T(1) ? \</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                GCLIM&lt;T&gt;::quiet_NaN() :</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="comment">// indistinguishable from 1</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x - T(1)) ? \</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x - T(1)) ? \</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                T(0) :</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="comment">// else</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">log</a>( x + <a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">sqrt</a>(x*x - T(1)) ) );</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('acosh_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aacosh_8hpp_html_aae9ea6869e1bf17fdc6ddc9e75de429f"><div class="ttname"><a href="acosh_8hpp.html#aae9ea6869e1bf17fdc6ddc9e75de429f">acosh</a></div><div class="ttdeci">constexpr return_t&lt; T &gt; acosh(const T x) noexcept</div><div class="ttdoc">Compile-time inverse hyperbolic cosine function.</div><div class="ttdef"><b>Definition:</b> acosh.hpp:62</div></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="agroup___unit_math_html_gae52f60a9e2a9e7ad1018a846bcf49140"><div class="ttname"><a href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">units::math::sqrt</a></div><div class="ttdeci">auto sqrt(const UnitType &amp;value) noexcept -&gt; unit_t&lt; square_root&lt; typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the square root of value</div><div class="ttdef"><b>Definition:</b> math.h:483</div></div>
 <div class="ttc" id="agroup___unit_math_html_gaed3e6783dc5ab1dda006913aa53f17c8"><div class="ttname"><a href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">units::math::log</a></div><div class="ttdeci">dimensionless::scalar_t log(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute natural logarithm.</div><div class="ttdef"><b>Definition:</b> math.h:349</div></div>
 <div class="ttc" id="amin_8hpp_html_a90dfab1fcb99976507217d8111c3f524"><div class="ttname"><a href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; min(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise minimum function.</div><div class="ttdef"><b>Definition:</b> min.hpp:35</div></div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('acosh_8hpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="acosh_8hpp.html">acosh.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

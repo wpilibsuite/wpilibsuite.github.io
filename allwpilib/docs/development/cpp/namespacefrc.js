@@ -30,6 +30,8 @@ var namespacefrc =
     [ "AnalogPotentiometer", "classfrc_1_1_analog_potentiometer.html", "classfrc_1_1_analog_potentiometer" ],
     [ "AnalogTrigger", "classfrc_1_1_analog_trigger.html", "classfrc_1_1_analog_trigger" ],
     [ "AnalogTriggerOutput", "classfrc_1_1_analog_trigger_output.html", "classfrc_1_1_analog_trigger_output" ],
+    [ "AprilTag", "structfrc_1_1_april_tag.html", "structfrc_1_1_april_tag" ],
+    [ "AprilTagFieldLayout", "classfrc_1_1_april_tag_field_layout.html", "classfrc_1_1_april_tag_field_layout" ],
     [ "ArmFeedforward", "classfrc_1_1_arm_feedforward.html", "classfrc_1_1_arm_feedforward" ],
     [ "AsynchronousInterrupt", "classfrc_1_1_asynchronous_interrupt.html", "classfrc_1_1_asynchronous_interrupt" ],
     [ "BangBangController", "classfrc_1_1_bang_bang_controller.html", "classfrc_1_1_bang_bang_controller" ],
@@ -229,6 +231,10 @@ var namespacefrc =
       [ "kRisingPulse", "namespacefrc.html#a76b4c6f0018b90c1ef0089c6ab4e1e84aeb85d7f3c4b84baa90bd51608a3b8011", null ],
       [ "kFallingPulse", "namespacefrc.html#a76b4c6f0018b90c1ef0089c6ab4e1e84acc77076580c409066b5ec61ec7c8e8b1", null ]
     ] ],
+    [ "AprilTagField", "namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9", [
+      [ "k2022RapidReact", "namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9a761719e457487f5c9034a6ddd3877830", null ],
+      [ "kNumFields", "namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9afad48c9599777372995b26628ecd81ed", null ]
+    ] ],
     [ "BuiltInLayouts", "namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472", [
       [ "kList", "namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472af2017436709c101800e7fe65bff7fe27", null ],
       [ "kGrid", "namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472aef22950f87352c1654b4b527212a3be7", null ]
@@ -309,6 +315,8 @@ var namespacefrc =
     [ "EstimateFieldToRobot", "namespacefrc.html#a438357c0dd6f2a736608cf2ec19cc31d", null ],
     [ "EstimateFieldToRobot", "namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770", null ],
     [ "EXPORT_TEMPLATE_DECLARE", "namespacefrc.html#a2d137160d8fe76de7d65a2b1adc8d6d7", null ],
+    [ "from_json", "namespacefrc.html#a3eaddd5acc098d94885032178e60e6ab", null ],
+    [ "from_json", "namespacefrc.html#a599251d0d1fde07a3f07f3ecf6d8e78d", null ],
     [ "from_json", "namespacefrc.html#a110eb6adc14c3cffe104abc63ea380c6", null ],
     [ "from_json", "namespacefrc.html#a0bb57fc7a20dea54369dac68f69e0c0e", null ],
     [ "from_json", "namespacefrc.html#ac6fc34819d21015dcc81ba4de2b98d56", null ],
@@ -327,6 +335,7 @@ var namespacefrc =
     [ "IsStabilizable", "namespacefrc.html#a74b5d3242f01cf66380e19ea14d25252", null ],
     [ "IsStabilizable< 1, 1 >", "namespacefrc.html#a3be056b7ad60b328c32d04126e581a72", null ],
     [ "IsStabilizable< 2, 1 >", "namespacefrc.html#a17d7901da158c6e00cd1864181112323", null ],
+    [ "LoadAprilTagLayoutField", "namespacefrc.html#af9fd070ac23a4daf84810c713471c238", null ],
     [ "MakeCostMatrix", "namespacefrc.html#a24cbbfe2d7c69ba9f4b6955d48d60226", null ],
     [ "MakeCostMatrix", "namespacefrc.html#a24b992ad34579cda928ded108eb31c3c", null ],
     [ "MakeCovMatrix", "namespacefrc.html#aabe1315c6b023c833c8553b2937cbd64", null ],
@@ -354,6 +363,8 @@ var namespacefrc =
     [ "SquareRootUnscentedTransform", "namespacefrc.html#a1af422167b03c22307c4bba4b9ee4c32", null ],
     [ "StartRobot", "namespacefrc.html#a34e168565dec463c0b67d584e80c2c0d", null ],
     [ "SwerveDriveKinematics", "namespacefrc.html#acf032b8adc55f3de1e6828f68f86b409", null ],
+    [ "to_json", "namespacefrc.html#a01eb645a8d471f3467ccaeaf7a23b2c8", null ],
+    [ "to_json", "namespacefrc.html#af3514f6c69534a8d8fbcf2165838c4ff", null ],
     [ "to_json", "namespacefrc.html#aa084f2ee573258a862b973c9343ee02e", null ],
     [ "to_json", "namespacefrc.html#ac1f1638f56e82c9f714cf6fd00863d19", null ],
     [ "to_json", "namespacefrc.html#a92e932be59dddd39dd730405baf75533", null ],

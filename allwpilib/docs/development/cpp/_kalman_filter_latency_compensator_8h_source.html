@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('_kalman_filter_latency_compensator_8h_
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="comment">// If the global measurement is older than any snapshot, throw out the</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="comment">// measurement because there&#39;s no state estimate into which to incorporate</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="comment">// the measurement</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keywordflow">if</span> (timestamp &lt; it-&gt;<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keywordflow">if</span> (timestamp &lt; it-&gt;<a class="code hl_function" href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">first</a>) {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
@@ -212,9 +212,9 @@ $(document).ready(function(){initNavTree('_kalman_filter_latency_compensator_8h_
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      <span class="comment">// Find the snapshot closest in time to global measurement</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      units::second_t prevTimeDiff =</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>          <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(timestamp - m_pastObserverSnapshots[prevIdx].<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>          <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(timestamp - m_pastObserverSnapshots[prevIdx].<a class="code hl_function" href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">first</a>);</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      units::second_t nextTimeDiff =</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>          <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(timestamp - m_pastObserverSnapshots[nextIdx].<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>          <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(timestamp - m_pastObserverSnapshots[nextIdx].<a class="code hl_function" href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">first</a>);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      indexOfClosestEntry = prevTimeDiff &lt; nextTimeDiff ? prevIdx : nextIdx;</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
@@ -268,8 +268,8 @@ $(document).ready(function(){initNavTree('_kalman_filter_latency_compensator_8h_
 <div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="amath_8h_html"><div class="ttname"><a href="math_8h.html">math.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
-<div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:138</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionPipeline.h:11</div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html_aa931747bff074d6cacefff640074a4f9"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa931747bff074d6cacefff640074a4f9">Eigen::internal::first</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index first(const T &amp;x) EIGEN_NOEXCEPT</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:81</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> AprilTagFields.h:13</div></div>
 <div class="ttc" id="anamespacefrc_html_a36df1b7ffbc00aa01634281fe8039e4e"><div class="ttname"><a href="namespacefrc.html#a36df1b7ffbc00aa01634281fe8039e4e">frc::Vectord</a></div><div class="ttdeci">Eigen::Vector&lt; double, Size &gt; Vectord</div><div class="ttdef"><b>Definition:</b> EigenCore.h:12</div></div>
 <div class="ttc" id="astructfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot_html"><div class="ttname"><a href="structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html">frc::KalmanFilterLatencyCompensator::ObserverSnapshot</a></div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:22</div></div>
 <div class="ttc" id="astructfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot_html_a590c7deec392502b2a447024ca264e86"><div class="ttname"><a href="structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html#a590c7deec392502b2a447024ca264e86">frc::KalmanFilterLatencyCompensator::ObserverSnapshot::inputs</a></div><div class="ttdeci">Vectord&lt; Inputs &gt; inputs</div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:25</div></div>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('_kalman_filter_latency_compensator_8h_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_kalman_filter_latency_compensator_8h.html">KalmanFilterLatencyCompensator.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

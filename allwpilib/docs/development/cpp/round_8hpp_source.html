@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('round_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespaceinternal.html#aa921e2a5707e35789ad814586ebdb530">   30</a></span><a class="code hl_function" href="namespaceinternal.html#aa921e2a5707e35789ad814586ebdb530">round_int</a>(<span class="keyword">const</span> T x)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x - <a class="code hl_function" href="namespaceinternal.html#ae93c2b22fc86f7111c6ef8f42d51a913">internal::floor_check</a>(x)) &gt;= T(0.5) ? \</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x - <a class="code hl_function" href="namespaceinternal.html#ae93c2b22fc86f7111c6ef8f42d51a913">internal::floor_check</a>(x)) &gt;= T(0.5) ? \</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="comment">// if </span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <a class="code hl_function" href="namespaceinternal.html#ae93c2b22fc86f7111c6ef8f42d51a913">internal::floor_check</a>(x) + <a class="code hl_function" href="sgn_8hpp.html#a782081c5f42a91f74af7cd7787b127aa">sgn</a>(x) : \</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="comment">// else </span></div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('round_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><a class="code hl_function" href="namespaceinternal.html#a6d0d3ff607c67a804cc0487600c92b55">round_check_internal&lt;float&gt;</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> x)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x) &gt;= 8388608.f ? \</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x) &gt;= 8388608.f ? \</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="comment">// if</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                x : \</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="comment">//else</span></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('round_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><a class="code hl_function" href="namespaceinternal.html#ad46e7c97a9aafcaf8430783835b3d964">round_check_internal&lt;double&gt;</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> x)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x) &gt;= 4503599627370496. ? \</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x) &gt;= 4503599627370496. ? \</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="comment">// if</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                x : \</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <span class="comment">// else</span></div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('round_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><a class="code hl_function" href="namespaceinternal.html#a6d8956c9ea3bf3ca67b919f60a4500dc">round_check_internal&lt;long double&gt;</a>(<span class="keyword">const</span> <span class="keywordtype">long</span> <span class="keywordtype">double</span> x)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>{</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x) &gt;= 9223372036854775808.l ? \</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span>( <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x) &gt;= 9223372036854775808.l ? \</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="comment">// if</span></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                x : \</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="comment">// else</span></div>
@@ -194,10 +194,10 @@ $(document).ready(function(){initNavTree('round_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            !<a class="code hl_function" href="namespaceinternal.html#aa10b74b6a9e14ee58684e6e96fa5b56b">is_finite</a>(x) ? \</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                x :</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="comment">// signed-zero cases</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x) ? \</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x) ? \</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                x :</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="comment">// else</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_function" href="sgn_8hpp.html#a782081c5f42a91f74af7cd7787b127aa">sgn</a>(x) * <a class="code hl_function" href="namespaceinternal.html#afc69b529f24cb54c26eec5520718aa42">round_check_internal</a>(<a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x)) );</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                <a class="code hl_function" href="sgn_8hpp.html#a782081c5f42a91f74af7cd7787b127aa">sgn</a>(x) * <a class="code hl_function" href="namespaceinternal.html#afc69b529f24cb54c26eec5520718aa42">round_check_internal</a>(<a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x)) );</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('round_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="amin_8hpp_html_a90dfab1fcb99976507217d8111c3f524"><div class="ttname"><a href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; min(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise minimum function.</div><div class="ttdef"><b>Definition:</b> min.hpp:35</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
 <div class="ttc" id="anamespaceinternal_html_a4cc2f7eb805496ecf6db5f8f69339d9e"><div class="ttname"><a href="namespaceinternal.html#a4cc2f7eb805496ecf6db5f8f69339d9e">internal::is_nan</a></div><div class="ttdeci">constexpr bool is_nan(const T x) noexcept</div><div class="ttdef"><b>Definition:</b> is_nan.hpp:36</div></div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('round_8hpp_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="round_8hpp.html">round.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

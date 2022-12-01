@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -835,13 +835,13 @@ Friends</h2></td></tr>
 <p ><a href="http://rfc7159.net/rfc7159">RFC 7159</a> describes JSON arrays as follows: </p><blockquote class="doxtable">
 <p >&zwj;An array is an ordered sequence of zero or more values. </p>
 </blockquote>
-<h4><a class="anchor" id="autotoc_md3"></a>
+<h4><a class="anchor" id="autotoc_md5"></a>
 Limits</h4>
 <p ><a href="http://rfc7159.net/rfc7159">RFC 7159</a> specifies: </p><blockquote class="doxtable">
 <p >&zwj;An implementation may set limits on the maximum depth of nesting. </p>
 </blockquote>
 <p>In this class, the array's limit of nesting is not explicitly constrained. However, a maximum depth of nesting may be introduced by the compiler or runtime environment. A theoretical limit can be queried by calling the <a class="el" href="classwpi_1_1json.html#aadf88158899f07f0ae6815074a2c6154">max_size</a> function of a JSON array.</p>
-<h4><a class="anchor" id="autotoc_md4"></a>
+<h4><a class="anchor" id="autotoc_md6"></a>
 Storage</h4>
 <p >Arrays are stored as pointers in a <a class="el" href="classwpi_1_1json.html">json</a> type. That is, for any access to array values, a pointer of type <code>array_t*</code> must be dereferenced.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classwpi_1_1json.html#a5eaf3f4fbf3c4648c70050db480358d6">object_t</a> &ndash; <a class="el" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd" title="return the type of the JSON value (explicit)">type</a> for an <a class="el" href="classwpi_1_1json.html#acf80d4d319d63291e24e3536f6c37bbc" title="explicitly create an object from an initializer list">object</a> <a class="el" href="classvalue.html">value</a></dd></dl>
@@ -1100,7 +1100,7 @@ template&lt;typename T , typename SFINAE &gt; </div>
 <p ><a href="http://rfc7159.net/rfc7159">RFC 7159</a> describes JSON objects as follows: </p><blockquote class="doxtable">
 <p >&zwj;An object is an unordered collection of zero or more name/value pairs, where a name is a string and a value is a string, number, boolean, null, object, or array. </p>
 </blockquote>
-<h4><a class="anchor" id="autotoc_md0"></a>
+<h4><a class="anchor" id="autotoc_md2"></a>
 Behavior</h4>
 <p >The choice of <em>object_t</em> influences the behavior of the JSON class. With the default type, objects have the following behavior:</p>
 <ul>
@@ -1109,13 +1109,13 @@ Behavior</h4>
 <li>Internally, name/value pairs are stored in lexicographical order of the names. Objects will also be serialized (see <a class="el" href="classwpi_1_1json.html#a6344584663e5ba10e8a11b930a627ace">dump</a>) in this order. For instance, <code>{"b": 1, "a": 2}</code> and <code>{"a": 2, "b": 1}</code> will be stored and serialized as <code>{"a": 2, "b": 1}</code>.</li>
 <li>When comparing objects, the order of the name/value pairs is irrelevant. This makes objects interoperable in the sense that they will not be affected by these differences. For instance, <code>{"b": 1, "a": 2}</code> and <code>{"a": 2, "b": 1}</code> will be treated as equal.</li>
 </ul>
-<h4><a class="anchor" id="autotoc_md1"></a>
+<h4><a class="anchor" id="autotoc_md3"></a>
 Limits</h4>
 <p ><a href="http://rfc7159.net/rfc7159">RFC 7159</a> specifies: </p><blockquote class="doxtable">
 <p >&zwj;An implementation may set limits on the maximum depth of nesting. </p>
 </blockquote>
 <p>In this class, the object's limit of nesting is not explicitly constrained. However, a maximum depth of nesting may be introduced by the compiler or runtime environment. A theoretical limit can be queried by calling the <a class="el" href="classwpi_1_1json.html#aadf88158899f07f0ae6815074a2c6154">max_size</a> function of a JSON object.</p>
-<h4><a class="anchor" id="autotoc_md2"></a>
+<h4><a class="anchor" id="autotoc_md4"></a>
 Storage</h4>
 <p >Objects are stored as pointers in a <a class="el" href="classwpi_1_1json.html">json</a> type. That is, for any access to object values, a pointer of type <code>object_t*</code> must be dereferenced.</p>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0</dd></dl>
@@ -9183,10 +9183,10 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <dl class="section note"><dt>Note</dt><dd>Floating-point inside JSON values numbers are compared with <code>double::operator==</code>. To compare floating-point while respecting an epsilon, an alternative <a href="https://github.com/mariokonrad/marnav/blob/master/src/marnav/math/floatingpoint.hpp#L34-#L39">comparison function</a> could be used, for instance <div class="fragment"><div class="line">template&lt;typename T, typename = typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, T&gt;<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>&gt;</div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> is_same(T a, T <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>, T epsilon = std::numeric_limits&lt;T&gt;::epsilon()) noexcept</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
 <div class="line">}</div>
 <div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:575</div></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="anamespaceunits_html_a77b2abc79841f7f67c7bc406b7c5083b"><div class="ttname"><a href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">units::b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
 </div><!-- fragment --></dd>
 <dd>
@@ -9252,7 +9252,7 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <dl class="section note"><dt>Note</dt><dd>Floating-point inside JSON values numbers are compared with <code>double::operator==</code>. To compare floating-point while respecting an epsilon, an alternative <a href="https://github.com/mariokonrad/marnav/blob/master/src/marnav/math/floatingpoint.hpp#L34-#L39">comparison function</a> could be used, for instance <div class="fragment"><div class="line">template&lt;typename T, typename = typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, T&gt;<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>&gt;</div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> is_same(T a, T <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>, T epsilon = std::numeric_limits&lt;T&gt;::epsilon()) noexcept</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
 <div class="line">}</div>
 </div><!-- fragment --></dd>
 <dd>
@@ -9315,7 +9315,7 @@ NaN values never compare equal to themselves or to other NaN values.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>Floating-point inside JSON values numbers are compared with <code>double::operator==</code>. To compare floating-point while respecting an epsilon, an alternative <a href="https://github.com/mariokonrad/marnav/blob/master/src/marnav/math/floatingpoint.hpp#L34-#L39">comparison function</a> could be used, for instance <div class="fragment"><div class="line">template&lt;typename T, typename = typename std::enable_if&lt;std::is_floating_point&lt;T&gt;::value, T&gt;<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a>&gt;</div>
 <div class="line"><span class="keyword">inline</span> <span class="keywordtype">bool</span> is_same(T a, T <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>, T epsilon = std::numeric_limits&lt;T&gt;::epsilon()) noexcept</div>
 <div class="line">{</div>
-<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">std::abs</a>(a - <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>) &lt;= epsilon;</div>
 <div class="line">}</div>
 </div><!-- fragment --></dd>
 <dd>
@@ -9721,7 +9721,7 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1json.html">json</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -630,6 +630,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:af30c1ffd4dedd4ff88adccac000e4c18"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af30c1ffd4dedd4ff88adccac000e4c18">http_data_cb</a>) (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *, const char *at, size_t length)</td></tr>
+<tr class="separator:af30c1ffd4dedd4ff88adccac000e4c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15767624048ad142d04bc6b1eab0d646"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a15767624048ad142d04bc6b1eab0d646">http_cb</a>) (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *)</td></tr>
+<tr class="separator:a15767624048ad142d04bc6b1eab0d646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97cc1139d8f910187e3d4cd6b8015af8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">condition_variable</a> = ::std::condition_variable</td></tr>
 <tr class="separator:a97cc1139d8f910187e3d4cd6b8015af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59819be5b11c0fbbc0b8e07c7638af24"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">mutex</a> = ::std::mutex</td></tr>
@@ -668,13 +672,46 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a985e3eb8f9f12493630c5b00866467dd"><td class="memTemplParams" colspan="2">template&lt;typename WrappedIteratorT , typename T1  = std::remove_reference_t&lt;decltype(              **std::declval&lt;WrappedIteratorT&gt;())&gt;, typename T2  = std::add_pointer_t&lt;T1&gt;&gt; </td></tr>
 <tr class="memitem:a985e3eb8f9f12493630c5b00866467dd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a985e3eb8f9f12493630c5b00866467dd">raw_pointer_iterator</a> = <a class="el" href="classwpi_1_1pointer__iterator.html">pointer_iterator</a>&lt; <a class="el" href="structwpi_1_1pointee__iterator.html">pointee_iterator</a>&lt; WrappedIteratorT, T1 &gt;, T2 &gt;</td></tr>
 <tr class="separator:a985e3eb8f9f12493630c5b00866467dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af30c1ffd4dedd4ff88adccac000e4c18"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af30c1ffd4dedd4ff88adccac000e4c18">http_data_cb</a>) (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *, const char *at, size_t length)</td></tr>
-<tr class="separator:af30c1ffd4dedd4ff88adccac000e4c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15767624048ad142d04bc6b1eab0d646"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a15767624048ad142d04bc6b1eab0d646">http_cb</a>) (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *)</td></tr>
-<tr class="separator:a15767624048ad142d04bc6b1eab0d646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:ae89a1f90a8603e399f9cc0465b0ce21e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae89a1f90a8603e399f9cc0465b0ce21e">http_status</a> </td></tr>
+<tr class="separator:ae89a1f90a8603e399f9cc0465b0ce21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3458579fc7214ea6b0411bbadf6ffcbc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3458579fc7214ea6b0411bbadf6ffcbc">http_method</a> </td></tr>
+<tr class="separator:a3458579fc7214ea6b0411bbadf6ffcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37735642db3ab741e86bf064b2ddbbd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbd">http_parser_type</a> { <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbda83022e72aaa06928c047700a88837608">HTTP_REQUEST</a>
+, <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbdaa131b28da3205e7a497320d97cead4a5">HTTP_RESPONSE</a>
+, <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbda404d2d378af4663f27fc14676459b13b">HTTP_BOTH</a>
+ }</td></tr>
+<tr class="separator:ab37735642db3ab741e86bf064b2ddbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0000b45b0b55789f757f1c3d2461cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a> { <br />
+&#160;&#160;<a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba22ea0cf0d50ecfe6b139d83ecc83d8df">F_CHUNKED</a> = 1 &lt;&lt; 0
+, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cbaf14c04cd6f0125dbeceaf61b94fb1352">F_CONNECTION_KEEP_ALIVE</a> = 1 &lt;&lt; 1
+, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba78a204621316260f385954c3bb0fff0f">F_CONNECTION_CLOSE</a> = 1 &lt;&lt; 2
+, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba608843554e95e8438ea48d18e8034043">F_CONNECTION_UPGRADE</a> = 1 &lt;&lt; 3
+, <br />
+&#160;&#160;<a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba819c3d4c4621c49323e997ef186e81cb">F_TRAILING</a> = 1 &lt;&lt; 4
+, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba91bd0dc716ef59be0726782a89b3fe42">F_UPGRADE</a> = 1 &lt;&lt; 5
+, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba0741b53c2752382134a5c1548c4af772">F_SKIPBODY</a> = 1 &lt;&lt; 6
+, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba63d30d0cca722219ca11f554a1adf1df">F_CONTENTLENGTH</a> = 1 &lt;&lt; 7
+<br />
+ }</td></tr>
+<tr class="separator:a7b0000b45b0b55789f757f1c3d2461cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e56bd09798339ac4f86d36eb8ecea0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0e56bd09798339ac4f86d36eb8ecea0b">http_errno</a> </td></tr>
+<tr class="separator:a0e56bd09798339ac4f86d36eb8ecea0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a0b479c88b876facf868f0c7a6b598"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598">http_parser_url_fields</a> { <br />
+&#160;&#160;<a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a0fc67d54599dc5b503765fb0792e2a54">UF_SCHEMA</a> = 0
+, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598af8e30e235a6bdffaac9f1945ce205851">UF_HOST</a> = 1
+, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598afb2e77eaed47bcfcfee307b2e1aff53a">UF_PORT</a> = 2
+, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a45e701521a7ea4616989a7ed22cd0ae1">UF_PATH</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a0e308fa010b3352bb15d9dee67b5b6ff">UF_QUERY</a> = 4
+, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a8534d7d9e32ee9a877dddc70f7abdefd">UF_FRAGMENT</a> = 5
+, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598ae015b71bf6bfa3cfe09f78f1c9360235">UF_USERINFO</a> = 6
+, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598ac6a7f4a78be5640ed5c926efaf8301c2">UF_MAX</a> = 7
+<br />
+ }</td></tr>
+<tr class="separator:af3a0b479c88b876facf868f0c7a6b598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00dc51f60e3a7f50eea48b914e9f88a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88a">LogLevel</a> { <br />
 &#160;&#160;<a class="el" href="namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88aa4eaaa435255d53d8ee1ad804ac2fde9d">WPI_LOG_CRITICAL</a> = 50
 , <a class="el" href="namespacewpi.html#ae00dc51f60e3a7f50eea48b914e9f88aabd6cb7f9e35184593c719b52e3269f2e">WPI_LOG_ERROR</a> = 40
@@ -757,46 +794,55 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ad1998965a76e8514d00562232f7b5efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The behavior an operation has on an input of 0.  <a href="namespacewpi.html#ad1998965a76e8514d00562232f7b5efb">More...</a><br /></td></tr>
 <tr class="separator:ad1998965a76e8514d00562232f7b5efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae89a1f90a8603e399f9cc0465b0ce21e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ae89a1f90a8603e399f9cc0465b0ce21e">http_status</a> </td></tr>
-<tr class="separator:ae89a1f90a8603e399f9cc0465b0ce21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3458579fc7214ea6b0411bbadf6ffcbc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3458579fc7214ea6b0411bbadf6ffcbc">http_method</a> </td></tr>
-<tr class="separator:a3458579fc7214ea6b0411bbadf6ffcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab37735642db3ab741e86bf064b2ddbbd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbd">http_parser_type</a> { <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbda83022e72aaa06928c047700a88837608">HTTP_REQUEST</a>
-, <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbdaa131b28da3205e7a497320d97cead4a5">HTTP_RESPONSE</a>
-, <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbda404d2d378af4663f27fc14676459b13b">HTTP_BOTH</a>
- }</td></tr>
-<tr class="separator:ab37735642db3ab741e86bf064b2ddbbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b0000b45b0b55789f757f1c3d2461cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a> { <br />
-&#160;&#160;<a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba22ea0cf0d50ecfe6b139d83ecc83d8df">F_CHUNKED</a> = 1 &lt;&lt; 0
-, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cbaf14c04cd6f0125dbeceaf61b94fb1352">F_CONNECTION_KEEP_ALIVE</a> = 1 &lt;&lt; 1
-, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba78a204621316260f385954c3bb0fff0f">F_CONNECTION_CLOSE</a> = 1 &lt;&lt; 2
-, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba608843554e95e8438ea48d18e8034043">F_CONNECTION_UPGRADE</a> = 1 &lt;&lt; 3
-, <br />
-&#160;&#160;<a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba819c3d4c4621c49323e997ef186e81cb">F_TRAILING</a> = 1 &lt;&lt; 4
-, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba91bd0dc716ef59be0726782a89b3fe42">F_UPGRADE</a> = 1 &lt;&lt; 5
-, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba0741b53c2752382134a5c1548c4af772">F_SKIPBODY</a> = 1 &lt;&lt; 6
-, <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cba63d30d0cca722219ca11f554a1adf1df">F_CONTENTLENGTH</a> = 1 &lt;&lt; 7
-<br />
- }</td></tr>
-<tr class="separator:a7b0000b45b0b55789f757f1c3d2461cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e56bd09798339ac4f86d36eb8ecea0b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0e56bd09798339ac4f86d36eb8ecea0b">http_errno</a> </td></tr>
-<tr class="separator:a0e56bd09798339ac4f86d36eb8ecea0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3a0b479c88b876facf868f0c7a6b598"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598">http_parser_url_fields</a> { <br />
-&#160;&#160;<a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a0fc67d54599dc5b503765fb0792e2a54">UF_SCHEMA</a> = 0
-, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598af8e30e235a6bdffaac9f1945ce205851">UF_HOST</a> = 1
-, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598afb2e77eaed47bcfcfee307b2e1aff53a">UF_PORT</a> = 2
-, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a45e701521a7ea4616989a7ed22cd0ae1">UF_PATH</a> = 3
-, <br />
-&#160;&#160;<a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a0e308fa010b3352bb15d9dee67b5b6ff">UF_QUERY</a> = 4
-, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598a8534d7d9e32ee9a877dddc70f7abdefd">UF_FRAGMENT</a> = 5
-, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598ae015b71bf6bfa3cfe09f78f1c9360235">UF_USERINFO</a> = 6
-, <a class="el" href="namespacewpi.html#af3a0b479c88b876facf868f0c7a6b598ac6a7f4a78be5640ed5c926efaf8301c2">UF_MAX</a> = 7
-<br />
- }</td></tr>
-<tr class="separator:af3a0b479c88b876facf868f0c7a6b598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a55235b8d8fe2b869b11a04237f1c1b5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a55235b8d8fe2b869b11a04237f1c1b5f">UnescapeURI</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf, bool *error)</td></tr>
+<tr class="separator:a55235b8d8fe2b869b11a04237f1c1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e885a95d4fbe472d78076ecc824194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab6e885a95d4fbe472d78076ecc824194">EscapeURI</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf, bool spacePlus=true)</td></tr>
+<tr class="separator:ab6e885a95d4fbe472d78076ecc824194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12877798c9e05cae590789ebe25883b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a12877798c9e05cae590789ebe25883b7">ParseHttpHeaders</a> (<a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;is, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; *contentType, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; *contentLength)</td></tr>
+<tr class="separator:a12877798c9e05cae590789ebe25883b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efec7766be35df2a4782f6cb1004058"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8efec7766be35df2a4782f6cb1004058">FindMultipartBoundary</a> (<a class="el" href="classwpi_1_1raw__istream.html">wpi::raw_istream</a> &amp;is, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> boundary, std::string *saveBuf)</td></tr>
+<tr class="separator:a8efec7766be35df2a4782f6cb1004058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af979beb47215754d9f91b67aab2dc4e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af979beb47215754d9f91b67aab2dc4e7">SocketErrno</a> ()</td></tr>
+<tr class="separator:af979beb47215754d9f91b67aab2dc4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b76c9ad108ae76959df39c1d0b6f03b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8b76c9ad108ae76959df39c1d0b6f03b">SocketStrerror</a> (int <a class="el" href="_third_party_notices_8txt.html#a84115a3d674a21b7abd56eab103ff848">code</a>)</td></tr>
+<tr class="separator:a8b76c9ad108ae76959df39c1d0b6f03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d3b98c9badfe33b94b7c6ec1ad3f9f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa4d3b98c9badfe33b94b7c6ec1ad3f9f">SocketStrerror</a> ()</td></tr>
+<tr class="separator:aa4d3b98c9badfe33b94b7c6ec1ad3f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1285c84e98d61b7f161a2213dd9f7940"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a1285c84e98d61b7f161a2213dd9f7940">http_parser_version</a> (void)</td></tr>
+<tr class="separator:a1285c84e98d61b7f161a2213dd9f7940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfaa8c347e0e51020430bcd0d45660b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#adfaa8c347e0e51020430bcd0d45660b4">http_parser_init</a> (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser, enum <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbd">http_parser_type</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
+<tr class="separator:adfaa8c347e0e51020430bcd0d45660b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f661690631e2ba6da370fe0b5bcfc55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9f661690631e2ba6da370fe0b5bcfc55">http_parser_settings_init</a> (<a class="el" href="structwpi_1_1http__parser__settings.html">http_parser_settings</a> *settings)</td></tr>
+<tr class="separator:a9f661690631e2ba6da370fe0b5bcfc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cea3956c069ac99ed2e7eeebb5b3cfb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9cea3956c069ac99ed2e7eeebb5b3cfb">http_parser_execute</a> (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser, const <a class="el" href="structwpi_1_1http__parser__settings.html">http_parser_settings</a> *settings, const char *<a class="el" href="structdata.html">data</a>, size_t len)</td></tr>
+<tr class="separator:a9cea3956c069ac99ed2e7eeebb5b3cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d892e596ff2ee4287ebd021faa63b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad1d892e596ff2ee4287ebd021faa63b4">http_should_keep_alive</a> (const <a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser)</td></tr>
+<tr class="separator:ad1d892e596ff2ee4287ebd021faa63b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be802a6897b36bbcd4c2dcd23e9e7f3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9be802a6897b36bbcd4c2dcd23e9e7f3">http_method_str</a> (enum <a class="el" href="namespacewpi.html#a3458579fc7214ea6b0411bbadf6ffcbc">http_method</a> m)</td></tr>
+<tr class="separator:a9be802a6897b36bbcd4c2dcd23e9e7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af568f1219d61f5c74f4de5caac588a90"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af568f1219d61f5c74f4de5caac588a90">http_status_str</a> (enum <a class="el" href="namespacewpi.html#ae89a1f90a8603e399f9cc0465b0ce21e">http_status</a> s)</td></tr>
+<tr class="separator:af568f1219d61f5c74f4de5caac588a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b4fb11893062b968b86716e84aebae"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab0b4fb11893062b968b86716e84aebae">http_errno_name</a> (enum <a class="el" href="namespacewpi.html#a0e56bd09798339ac4f86d36eb8ecea0b">http_errno</a> err)</td></tr>
+<tr class="separator:ab0b4fb11893062b968b86716e84aebae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534aec91ecbd222189dd61e56e809443"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a534aec91ecbd222189dd61e56e809443">http_errno_description</a> (enum <a class="el" href="namespacewpi.html#a0e56bd09798339ac4f86d36eb8ecea0b">http_errno</a> err)</td></tr>
+<tr class="separator:a534aec91ecbd222189dd61e56e809443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a798587facfa5f28d28e137d96c97a0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a798587facfa5f28d28e137d96c97a0d0">http_parser_url_init</a> (struct <a class="el" href="structwpi_1_1http__parser__url.html">http_parser_url</a> *u)</td></tr>
+<tr class="separator:a798587facfa5f28d28e137d96c97a0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc17f817835ce41947523e20f3feeb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7fc17f817835ce41947523e20f3feeb1">http_parser_parse_url</a> (const char *buf, size_t buflen, int is_connect, struct <a class="el" href="structwpi_1_1http__parser__url.html">http_parser_url</a> *u)</td></tr>
+<tr class="separator:a7fc17f817835ce41947523e20f3feeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc98ce08cafe77beb6171b08d3065181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#afc98ce08cafe77beb6171b08d3065181">http_parser_pause</a> (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser, int paused)</td></tr>
+<tr class="separator:afc98ce08cafe77beb6171b08d3065181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab736f59b1f30b097d559e33acc6bb602"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab736f59b1f30b097d559e33acc6bb602">http_body_is_final</a> (const <a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser)</td></tr>
+<tr class="separator:ab736f59b1f30b097d559e33acc6bb602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863f7dccbe48e628d0674d0957238fe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a863f7dccbe48e628d0674d0957238fe6">MimeTypeFromPath</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> path)</td></tr>
+<tr class="separator:a863f7dccbe48e628d0674d0957238fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9adbe1d3698433c32c8b78b84f582a5b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9adbe1d3698433c32c8b78b84f582a5b">GetHostname</a> ()</td></tr>
+<tr class="separator:a9adbe1d3698433c32c8b78b84f582a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c253c393e339cc29a6e8ff9cb648420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3c253c393e339cc29a6e8ff9cb648420">GetHostname</a> (<a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;name)</td></tr>
+<tr class="separator:a3c253c393e339cc29a6e8ff9cb648420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e7e386e354d5ee78df311f700c7fae0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a1e7e386e354d5ee78df311f700c7fae0">Demangle</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> mangledSymbol)</td></tr>
 <tr class="memdesc:a1e7e386e354d5ee78df311f700c7fae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demangle a C++ symbol.  <a href="namespacewpi.html#a1e7e386e354d5ee78df311f700c7fae0">More...</a><br /></td></tr>
 <tr class="separator:a1e7e386e354d5ee78df311f700c7fae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1037,15 +1083,15 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8eb96f94c028542a238feaf8cabb44dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a pointer's address.  <a href="namespacewpi.html#a8eb96f94c028542a238feaf8cabb44dc">More...</a><br /></td></tr>
 <tr class="separator:a8eb96f94c028542a238feaf8cabb44dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b9238bfb621b5c47abfc9480889408e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:a6b9238bfb621b5c47abfc9480889408e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1hash__code.html">hash_code</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6b9238bfb621b5c47abfc9480889408e">hash_value</a> (const std::pair&lt; T, U &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
+<tr class="memitem:a6b9238bfb621b5c47abfc9480889408e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1hash__code.html">hash_code</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6b9238bfb621b5c47abfc9480889408e">hash_value</a> (const std::pair&lt; T, U &gt; &amp;<a class="el" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>)</td></tr>
 <tr class="memdesc:a6b9238bfb621b5c47abfc9480889408e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a pair of objects.  <a href="namespacewpi.html#a6b9238bfb621b5c47abfc9480889408e">More...</a><br /></td></tr>
 <tr class="separator:a6b9238bfb621b5c47abfc9480889408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1hash__code.html">hash_code</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a09058a5e42b0bee35ae7f6d7bf0822a0">hash_value</a> (const std::tuple&lt; Ts... &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
+<tr class="memitem:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1hash__code.html">hash_code</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a09058a5e42b0bee35ae7f6d7bf0822a0">hash_value</a> (const std::tuple&lt; Ts... &gt; &amp;<a class="el" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>)</td></tr>
 <tr class="memdesc:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a tuple.  <a href="namespacewpi.html#a09058a5e42b0bee35ae7f6d7bf0822a0">More...</a><br /></td></tr>
 <tr class="separator:a09058a5e42b0bee35ae7f6d7bf0822a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1hash__code.html">hash_code</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8e2f8fc1e0870f5b219a8bc1d3654ecc">hash_value</a> (const std::basic_string&lt; T &gt; &amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>)</td></tr>
+<tr class="memitem:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1hash__code.html">hash_code</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8e2f8fc1e0870f5b219a8bc1d3654ecc">hash_value</a> (const std::basic_string&lt; T &gt; &amp;<a class="el" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>)</td></tr>
 <tr class="memdesc:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a <a class="el" href="classwpi_1_1hash__code.html" title="An opaque object representing a hash code.">hash_code</a> for a standard string.  <a href="namespacewpi.html#a8e2f8fc1e0870f5b219a8bc1d3654ecc">More...</a><br /></td></tr>
 <tr class="separator:a8e2f8fc1e0870f5b219a8bc1d3654ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9199d95a0d0ca4ba23a42b8c9cd4763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab9199d95a0d0ca4ba23a42b8c9cd4763">set_fixed_execution_hash_seed</a> (uint64_t fixed_value)</td></tr>
@@ -1534,52 +1580,6 @@ Functions</h2></td></tr>
 <tr class="memitem:afbf26bf198ea436f545bf8205670ff7a"><td class="memTemplParams" colspan="2">template&lt;class T  = void *&gt; </td></tr>
 <tr class="memitem:afbf26bf198ea436f545bf8205670ff7a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacewpi.html#afbf26bf198ea436f545bf8205670ff7a">shouldReverseIterate</a> ()</td></tr>
 <tr class="separator:afbf26bf198ea436f545bf8205670ff7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55235b8d8fe2b869b11a04237f1c1b5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a55235b8d8fe2b869b11a04237f1c1b5f">UnescapeURI</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf, bool *error)</td></tr>
-<tr class="separator:a55235b8d8fe2b869b11a04237f1c1b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e885a95d4fbe472d78076ecc824194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab6e885a95d4fbe472d78076ecc824194">EscapeURI</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf, bool spacePlus=true)</td></tr>
-<tr class="separator:ab6e885a95d4fbe472d78076ecc824194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12877798c9e05cae590789ebe25883b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a12877798c9e05cae590789ebe25883b7">ParseHttpHeaders</a> (<a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;is, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; *contentType, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; *contentLength)</td></tr>
-<tr class="separator:a12877798c9e05cae590789ebe25883b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efec7766be35df2a4782f6cb1004058"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8efec7766be35df2a4782f6cb1004058">FindMultipartBoundary</a> (<a class="el" href="classwpi_1_1raw__istream.html">wpi::raw_istream</a> &amp;is, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> boundary, std::string *saveBuf)</td></tr>
-<tr class="separator:a8efec7766be35df2a4782f6cb1004058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af979beb47215754d9f91b67aab2dc4e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af979beb47215754d9f91b67aab2dc4e7">SocketErrno</a> ()</td></tr>
-<tr class="separator:af979beb47215754d9f91b67aab2dc4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b76c9ad108ae76959df39c1d0b6f03b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a8b76c9ad108ae76959df39c1d0b6f03b">SocketStrerror</a> (int <a class="el" href="_third_party_notices_8txt.html#a84115a3d674a21b7abd56eab103ff848">code</a>)</td></tr>
-<tr class="separator:a8b76c9ad108ae76959df39c1d0b6f03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d3b98c9badfe33b94b7c6ec1ad3f9f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa4d3b98c9badfe33b94b7c6ec1ad3f9f">SocketStrerror</a> ()</td></tr>
-<tr class="separator:aa4d3b98c9badfe33b94b7c6ec1ad3f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1285c84e98d61b7f161a2213dd9f7940"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a1285c84e98d61b7f161a2213dd9f7940">http_parser_version</a> (void)</td></tr>
-<tr class="separator:a1285c84e98d61b7f161a2213dd9f7940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfaa8c347e0e51020430bcd0d45660b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#adfaa8c347e0e51020430bcd0d45660b4">http_parser_init</a> (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser, enum <a class="el" href="namespacewpi.html#ab37735642db3ab741e86bf064b2ddbbd">http_parser_type</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
-<tr class="separator:adfaa8c347e0e51020430bcd0d45660b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f661690631e2ba6da370fe0b5bcfc55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9f661690631e2ba6da370fe0b5bcfc55">http_parser_settings_init</a> (<a class="el" href="structwpi_1_1http__parser__settings.html">http_parser_settings</a> *settings)</td></tr>
-<tr class="separator:a9f661690631e2ba6da370fe0b5bcfc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cea3956c069ac99ed2e7eeebb5b3cfb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9cea3956c069ac99ed2e7eeebb5b3cfb">http_parser_execute</a> (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser, const <a class="el" href="structwpi_1_1http__parser__settings.html">http_parser_settings</a> *settings, const char *<a class="el" href="structdata.html">data</a>, size_t len)</td></tr>
-<tr class="separator:a9cea3956c069ac99ed2e7eeebb5b3cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d892e596ff2ee4287ebd021faa63b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ad1d892e596ff2ee4287ebd021faa63b4">http_should_keep_alive</a> (const <a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser)</td></tr>
-<tr class="separator:ad1d892e596ff2ee4287ebd021faa63b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be802a6897b36bbcd4c2dcd23e9e7f3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9be802a6897b36bbcd4c2dcd23e9e7f3">http_method_str</a> (enum <a class="el" href="namespacewpi.html#a3458579fc7214ea6b0411bbadf6ffcbc">http_method</a> m)</td></tr>
-<tr class="separator:a9be802a6897b36bbcd4c2dcd23e9e7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af568f1219d61f5c74f4de5caac588a90"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af568f1219d61f5c74f4de5caac588a90">http_status_str</a> (enum <a class="el" href="namespacewpi.html#ae89a1f90a8603e399f9cc0465b0ce21e">http_status</a> s)</td></tr>
-<tr class="separator:af568f1219d61f5c74f4de5caac588a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b4fb11893062b968b86716e84aebae"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab0b4fb11893062b968b86716e84aebae">http_errno_name</a> (enum <a class="el" href="namespacewpi.html#a0e56bd09798339ac4f86d36eb8ecea0b">http_errno</a> err)</td></tr>
-<tr class="separator:ab0b4fb11893062b968b86716e84aebae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a534aec91ecbd222189dd61e56e809443"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a534aec91ecbd222189dd61e56e809443">http_errno_description</a> (enum <a class="el" href="namespacewpi.html#a0e56bd09798339ac4f86d36eb8ecea0b">http_errno</a> err)</td></tr>
-<tr class="separator:a534aec91ecbd222189dd61e56e809443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a798587facfa5f28d28e137d96c97a0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a798587facfa5f28d28e137d96c97a0d0">http_parser_url_init</a> (struct <a class="el" href="structwpi_1_1http__parser__url.html">http_parser_url</a> *u)</td></tr>
-<tr class="separator:a798587facfa5f28d28e137d96c97a0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fc17f817835ce41947523e20f3feeb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7fc17f817835ce41947523e20f3feeb1">http_parser_parse_url</a> (const char *buf, size_t buflen, int is_connect, struct <a class="el" href="structwpi_1_1http__parser__url.html">http_parser_url</a> *u)</td></tr>
-<tr class="separator:a7fc17f817835ce41947523e20f3feeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc98ce08cafe77beb6171b08d3065181"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#afc98ce08cafe77beb6171b08d3065181">http_parser_pause</a> (<a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser, int paused)</td></tr>
-<tr class="separator:afc98ce08cafe77beb6171b08d3065181"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab736f59b1f30b097d559e33acc6bb602"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#ab736f59b1f30b097d559e33acc6bb602">http_body_is_final</a> (const <a class="el" href="structwpi_1_1http__parser.html">http_parser</a> *parser)</td></tr>
-<tr class="separator:ab736f59b1f30b097d559e33acc6bb602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a863f7dccbe48e628d0674d0957238fe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a863f7dccbe48e628d0674d0957238fe6">MimeTypeFromPath</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> path)</td></tr>
-<tr class="separator:a863f7dccbe48e628d0674d0957238fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9adbe1d3698433c32c8b78b84f582a5b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a9adbe1d3698433c32c8b78b84f582a5b">GetHostname</a> ()</td></tr>
-<tr class="separator:a9adbe1d3698433c32c8b78b84f582a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c253c393e339cc29a6e8ff9cb648420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a3c253c393e339cc29a6e8ff9cb648420">GetHostname</a> (<a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; &amp;name)</td></tr>
-<tr class="separator:a3c253c393e339cc29a6e8ff9cb648420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -10754,7 +10754,7 @@ template&lt;typename T , unsigned N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

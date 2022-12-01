@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: frc/util/Color.h File Reference</title>
+<title>WPILibC++: frc/apriltag/AprilTagFields.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2frc_2util_2color_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_april_tag_fields_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,34 +92,43 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">Color.h File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">AprilTagFields.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;<a class="el" href="_symbol_exports_8h_source.html">wpi/SymbolExports.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="_april_tag_field_layout_8h_source.html">frc/apriltag/AprilTagFieldLayout.h</a>&quot;</code><br />
 </div>
-<p><a href="wpilibc_2src_2main_2native_2include_2frc_2util_2color_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="_april_tag_fields_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_color.html">frc::Color</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents colors that can be used with Addressable LEDs.  <a href="classfrc_1_1_color.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacefrc"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html">frc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5f23885bcc9e850c6b99c8cd48b98fd9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9">frc::AprilTagField</a> { <a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9a761719e457487f5c9034a6ddd3877830">frc::k2022RapidReact</a>
+, <a class="el" href="namespacefrc.html#a5f23885bcc9e850c6b99c8cd48b98fd9afad48c9599777372995b26628ecd81ed">frc::kNumFields</a>
+ }</td></tr>
+<tr class="separator:a5f23885bcc9e850c6b99c8cd48b98fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:af9fd070ac23a4daf84810c713471c238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> AprilTagFieldLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af9fd070ac23a4daf84810c713471c238">frc::LoadAprilTagLayoutField</a> (AprilTagField field)</td></tr>
+<tr class="memdesc:af9fd070ac23a4daf84810c713471c238"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an <a class="el" href="classfrc_1_1_april_tag_field_layout.html" title="Class for representing a layout of AprilTags on a field and reading them from a JSON format.">AprilTagFieldLayout</a> from a predefined field.  <a href="namespacefrc.html#af9fd070ac23a4daf84810c713471c238">More...</a><br /></td></tr>
+<tr class="separator:af9fd070ac23a4daf84810c713471c238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_e2da7223ff37df93ee932255935b3234.html">util</a></li><li class="navelem"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2util_2color_8h.html">Color.h</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="navelem"><a class="el" href="dir_f978e330e7f988d946668b0a3265d290.html">frc</a></li><li class="navelem"><a class="el" href="dir_f984795bf8b08c676898742324c7acca.html">apriltag</a></li><li class="navelem"><a class="el" href="_april_tag_fields_8h.html">AprilTagFields.h</a></li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

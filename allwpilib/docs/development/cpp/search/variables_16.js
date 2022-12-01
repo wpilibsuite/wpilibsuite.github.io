@@ -11,7 +11,7 @@ var searchData=
   ['wh_8',['Wh',['../namespaceunits.html#a70773ff98648be0121ef13697cf56386',1,'units']]],
   ['white_9',['WHITE',['../classwpi_1_1raw__ostream.html#a6ede8baa5cb4c5364d15d8a70b87d931',1,'wpi::raw_ostream']]],
   ['whole_10',['whole',['../_third_party_notices_8txt.html#a10cf6dee05e6659880b39e81ad558b53',1,'ThirdPartyNotices.txt']]],
-  ['width_11',['width',['../structbasic__format__specs.html#ac05254b4b13aac586b98730d65d73b65',1,'basic_format_specs::width()'],['../struct_c_s___raw_frame.html#a44bb846ef11b4e572861d77ea0e01c22',1,'CS_RawFrame::width()'],['../struct_c_s___video_mode.html#a7712c4356a511ba2d7daee027b509de1',1,'CS_VideoMode::width()']]],
+  ['width_11',['width',['../struct_c_s___raw_frame.html#a44bb846ef11b4e572861d77ea0e01c22',1,'CS_RawFrame::width()'],['../struct_c_s___video_mode.html#a7712c4356a511ba2d7daee027b509de1',1,'CS_VideoMode::width()'],['../structbasic__format__specs.html#ac05254b4b13aac586b98730d65d73b65',1,'basic_format_specs::width()']]],
   ['width_5fref_12',['width_ref',['../structdynamic__format__specs.html#a4361aced869a55e14c6eddbcd9fc9849',1,'dynamic_format_specs']]],
   ['work_13',['Work',['../_third_party_notices_8txt.html#ab5513a0874dcccd8ea863035302d567b',1,'ThirdPartyNotices.txt']]],
   ['work_14',['work',['../structuv____work.html#ae15a4e35dbd9a3172961df99b2c931a8',1,'uv__work::work()'],['../classwpi_1_1uv_1_1_work_req.html#af19e969cec3f7b34e1dc732d41a0745c',1,'wpi::uv::WorkReq::work()'],['../structwpi_1_1detail_1_1_worker_thread_request.html#a05e2e97bf5865387779a5ef0382d9a8c',1,'wpi::detail::WorkerThreadRequest::work()']]],

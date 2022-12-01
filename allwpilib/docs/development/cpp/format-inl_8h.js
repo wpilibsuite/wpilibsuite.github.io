@@ -45,7 +45,7 @@ var format_inl_8h =
     [ "vprint", "format-inl_8h.html#a9d834f6ef5c0553b6c434f8d9ac105bf", null ],
     [ "vprint", "format-inl_8h.html#a77fcf4959d4c69c3800b759696f37248", null ],
     [ "vsystem_error", "format-inl_8h.html#a1c485113edf9429ab85e8589ba53af1d", null ],
-    [ "div_small_pow10_infos", "format-inl_8h.html#a4cc52ac1fcb84942c0ad5d9ca0faf686", null ],
+    [ "div_small_pow10_infos", "format-inl_8h.html#a4f57d64ad7fd03c05c6132e6efa6bf56", null ],
     [ "divisor", "format-inl_8h.html#a55ee9571cc13bd8f6efffbdf22c6931f", null ],
     [ "shift_amount", "format-inl_8h.html#a5440f11212cfda4ccf3ee24746973a09", null ]
 ];

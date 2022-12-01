@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-50-g5e74ff2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-53-geae68fc</span>
    </div>
   </td>
  </tr>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('atan_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <a class="code hl_function" href="namespaceinternal.html#a4cc2f7eb805496ecf6db5f8f69339d9e">is_nan</a>(x) ? \</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                GCLIM&lt;T&gt;::quiet_NaN() :</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="comment">// indistinguishable from zero</span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a>(x) ? \</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <a class="code hl_function" href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">GCLIM&lt;T&gt;::min</a>() &gt; <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">abs</a>(x) ? \</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>                T(0) :</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            <span class="comment">// negative or positive</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            x &lt; T(0) ? \</div>
@@ -250,8 +250,8 @@ $(document).ready(function(){initNavTree('atan_8hpp_source.html',''); initResiza
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aatan_8hpp_html_ace44940e22ec29674508d1ab16bd553d"><div class="ttname"><a href="atan_8hpp.html#ace44940e22ec29674508d1ab16bd553d">atan</a></div><div class="ttdeci">constexpr return_t&lt; T &gt; atan(const T x) noexcept</div><div class="ttdoc">Compile-time arctangent function.</div><div class="ttdef"><b>Definition:</b> atan.hpp:149</div></div>
-<div class="ttc" id="afmtlib_2include_2fmt_2chrono_8h_html_a2f92706ac7d62fcaef49d59ba5914db7"><div class="ttname"><a href="fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7">abs</a></div><div class="ttdeci">constexpr std::chrono::duration&lt; Rep, Period &gt; abs(std::chrono::duration&lt; Rep, Period &gt; d)</div><div class="ttdef"><b>Definition:</b> chrono.h:1489</div></div>
 <div class="ttc" id="agcem__options_8hpp_html_af26fe699fb073e04931328523c23dcb7"><div class="ttname"><a href="gcem__options_8hpp.html#af26fe699fb073e04931328523c23dcb7">GCEM_HALF_PI</a></div><div class="ttdeci">#define GCEM_HALF_PI</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:118</div></div>
+<div class="ttc" id="agroup___unit_math_html_ga1dd8baba0276c51feeb892983d41ef47"><div class="ttname"><a href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a></div><div class="ttdeci">UnitType abs(const UnitType x) noexcept</div><div class="ttdoc">Compute absolute value.</div><div class="ttdef"><b>Definition:</b> math.h:721</div></div>
 <div class="ttc" id="amin_8hpp_html_a90dfab1fcb99976507217d8111c3f524"><div class="ttname"><a href="min_8hpp.html#a90dfab1fcb99976507217d8111c3f524">min</a></div><div class="ttdeci">constexpr common_t&lt; T1, T2 &gt; min(const T1 x, const T2 y) noexcept</div><div class="ttdoc">Compile-time pairwise minimum function.</div><div class="ttdef"><b>Definition:</b> min.hpp:35</div></div>
 <div class="ttc" id="anamespacegcem_html_af862733f4b065bcf380c26f39c995f45"><div class="ttname"><a href="namespacegcem.html#af862733f4b065bcf380c26f39c995f45">gcem::uint_t</a></div><div class="ttdeci">unsigned int uint_t</div><div class="ttdef"><b>Definition:</b> gcem_options.hpp:68</div></div>
 <div class="ttc" id="anamespaceinternal_html"><div class="ttname"><a href="namespaceinternal.html">internal</a></div><div class="ttdef"><b>Definition:</b> Eigen_Colamd.h:50</div></div>
@@ -270,7 +270,7 @@ $(document).ready(function(){initNavTree('atan_8hpp_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_2009839545916a4d216ed9095f3d15a3.html">thirdparty</a></li><li class="navelem"><a class="el" href="dir_36af831fe3b909a88bf6fe0d1fcea19a.html">gcem</a></li><li class="navelem"><a class="el" href="dir_9f5aaa33ee445482a89f4f3f0874b96f.html">include</a></li><li class="navelem"><a class="el" href="dir_0be4129b6d4690c3db1eb8c114378536.html">gcem_incl</a></li><li class="navelem"><a class="el" href="atan_8hpp.html">atan.hpp</a></li>
-    <li class="footer">Generated on Wed Nov 30 2022 08:19:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Thu Dec 1 2022 03:54:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
