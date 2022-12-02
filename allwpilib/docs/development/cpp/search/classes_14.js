@@ -14,7 +14,7 @@ var searchData=
   ['thousands_5fsep_5fresult_11',['thousands_sep_result',['../structthousands__sep__result.html',1,'']]],
   ['timedrobot_12',['TimedRobot',['../classfrc_1_1_timed_robot.html',1,'frc']]],
   ['timeinterpolatablebuffer_13',['TimeInterpolatableBuffer',['../classfrc_1_1_time_interpolatable_buffer.html',1,'frc']]],
-  ['timeinterpolatablebuffer_3c_20frc_3a_3apose2d_20_3e_14',['TimeInterpolatableBuffer&lt; frc::Pose2d &gt;',['../classfrc_1_1_time_interpolatable_buffer.html',1,'frc']]],
+  ['timeinterpolatablebuffer_3c_20interpolationrecord_20_3e_14',['TimeInterpolatableBuffer&lt; InterpolationRecord &gt;',['../classfrc_1_1_time_interpolatable_buffer.html',1,'frc']]],
   ['timer_15',['Timer',['../classfrc_1_1_timer.html',1,'frc::Timer'],['../classwpi_1_1uv_1_1_timer.html',1,'wpi::uv::Timer']]],
   ['timeslicerobot_16',['TimesliceRobot',['../classfrc_1_1_timeslice_robot.html',1,'frc']]],
   ['timestampedboolean_17',['TimestampedBoolean',['../structnt_1_1_timestamped_boolean.html',1,'nt']]],

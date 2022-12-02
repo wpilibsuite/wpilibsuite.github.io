@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-55-g23bfc2d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-59-g66bb0ff</span>
    </div>
   </td>
  </tr>
@@ -128,20 +128,39 @@ $(document).ready(function(){initNavTree('_mecanum_drive_wheel_positions_8h_sour
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * Distance driven by the rear-right wheel.</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structfrc_1_1_mecanum_drive_wheel_positions.html#a7657f766c63ca387186ec9c7b1620f67">   34</a></span>  units::meter_t rearRight = 0_m;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * Checks equality between this MecanumDriveWheelPositions and another object.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * @param other The other object.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * @return Whether the two objects are equal.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structfrc_1_1_mecanum_drive_wheel_positions.html#a1f0a3c4f3f4b29feccea424614b569a0">   42</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structfrc_1_1_mecanum_drive_wheel_positions.html#a1f0a3c4f3f4b29feccea424614b569a0">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a>&amp; other) <span class="keyword">const</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   * Checks inequality between this MecanumDriveWheelPositions and another</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * object.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   * @param other The other object.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * @return Whether the two objects are not equal.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structfrc_1_1_mecanum_drive_wheel_positions.html#a8f3d14d094bba13737fdca84bd0c50d8">   51</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structfrc_1_1_mecanum_drive_wheel_positions.html#a8f3d14d094bba13737fdca84bd0c50d8">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a>&amp; other) <span class="keyword">const</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> AprilTagFields.h:13</div></div>
 <div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_positions_html"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_positions.html">frc::MecanumDriveWheelPositions</a></div><div class="ttdoc">Represents the wheel speeds for a mecanum drive drivetrain.</div><div class="ttdef"><b>Definition:</b> MecanumDriveWheelPositions.h:15</div></div>
+<div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_positions_html_a1f0a3c4f3f4b29feccea424614b569a0"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_positions.html#a1f0a3c4f3f4b29feccea424614b569a0">frc::MecanumDriveWheelPositions::operator==</a></div><div class="ttdeci">bool operator==(const MecanumDriveWheelPositions &amp;other) const =default</div><div class="ttdoc">Checks equality between this MecanumDriveWheelPositions and another object.</div></div>
+<div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_positions_html_a8f3d14d094bba13737fdca84bd0c50d8"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_positions.html#a8f3d14d094bba13737fdca84bd0c50d8">frc::MecanumDriveWheelPositions::operator!=</a></div><div class="ttdeci">bool operator!=(const MecanumDriveWheelPositions &amp;other) const =default</div><div class="ttdoc">Checks inequality between this MecanumDriveWheelPositions and another object.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><a class="el" href="_mecanum_drive_wheel_positions_8h.html">MecanumDriveWheelPositions.h</a></li>
-    <li class="footer">Generated on Fri Dec 2 2022 04:49:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Dec 2 2022 16:43:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

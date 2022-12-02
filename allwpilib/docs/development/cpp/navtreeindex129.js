@@ -1,7 +1,5 @@
 var NAVTREEINDEX129 =
 {
-"group___unit_manipulators.html#gaf1b5108a86458a17f2a28245e52018ca":[3,21,13],
-"group___unit_math.html":[3,23],
 "group___unit_math.html#ga133b8c692d6dbf2d19f27adb13ce6ecf":[3,23,19],
 "group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47":[3,23,0],
 "group___unit_math.html#ga29860e26570c2decc2bb8710c1ae911c":[3,23,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX129 =
 "group__cscore__cpp__api.html":[3,3],
 "group__cscore__cpp__api.html#gad5e69d8e1555b982f540705f28c80d39":[3,3,19],
 "group__cscore__httpcamera__cfunc.html":[3,1,6],
-"group__cscore__httpcamera__cfunc.html#gab8bead55e376e8b75510d2cf7d881622":[3,1,6,1]
+"group__cscore__httpcamera__cfunc.html#gab8bead55e376e8b75510d2cf7d881622":[3,1,6,1],
+"group__cscore__httpcamera__cfunc.html#gac90c673ab9ef5a1554f2f5d54739b995":[3,1,6,0],
+"group__cscore__httpcamera__cfunc.html#gaff8674139e136c50f2fd2f214d1128d4":[3,1,6,2]
 };

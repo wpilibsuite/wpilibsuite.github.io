@@ -1,7 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"erf__inv_8hpp_source.html":[6,0,9,2,0,0,16],
-"exp_8hpp.html":[6,0,9,2,0,0,17],
 "exp_8hpp.html#a1402970338f0a55aa24c8a704bb86549":[6,0,9,2,0,0,17,4],
 "exp_8hpp.html#a1bcfab3fad85a0b2d55e14d1e8e1e92a":[6,0,9,2,0,0,17,1],
 "exp_8hpp.html#a882814440d2296be18325608de14a060":[6,0,9,2,0,0,17,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX125 =
 "fmtlib_2include_2fmt_2chrono_8h.html#a2f92706ac7d62fcaef49d59ba5914db7":[6,0,11,0,0,0,1,26],
 "fmtlib_2include_2fmt_2chrono_8h.html#a323b91e14532e6fbadf8059cec3fb7f1":[6,0,11,0,0,0,1,28],
 "fmtlib_2include_2fmt_2chrono_8h.html#a32c5f2f7a57c9ef03174b888647dfc06":[6,0,11,0,0,0,1,47],
-"fmtlib_2include_2fmt_2chrono_8h.html#a4068ce3522b9a60611b5cb6466977e9a":[6,0,11,0,0,0,1,50]
+"fmtlib_2include_2fmt_2chrono_8h.html#a4068ce3522b9a60611b5cb6466977e9a":[6,0,11,0,0,0,1,50],
+"fmtlib_2include_2fmt_2chrono_8h.html#a4ebaa6b5e722d7f4f43eeae307ed578e":[6,0,11,0,0,0,1,59],
+"fmtlib_2include_2fmt_2chrono_8h.html#a4ed3bdd2ae5dcb224f0e84141a87179d":[6,0,11,0,0,0,1,25]
 };

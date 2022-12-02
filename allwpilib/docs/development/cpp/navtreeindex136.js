@@ -1,7 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"group__ntcore__logger__cfunc.html":[3,7,7],
-"group__ntcore__logger__cfunc.html#ga3e7a80f40c412376b2a6e4c095bc77cd":[3,7,7,1],
 "group__ntcore__logger__cfunc.html#ga50cf136b0c18d51274173426856fd211":[3,7,7,0],
 "group__ntcore__logger__func.html":[3,6,8],
 "group__ntcore__logger__func.html#ga43aac37157146d2a013e6118375741a6":[3,6,8,1],
@@ -167,16 +165,16 @@ var NAVTREEINDEX136 =
 "group__ntcore__utility__func.html#ga70b295d6a20a166a49457eb106a9f1d3":[3,6,6,3],
 "group__ntcore__utility__func.html#gaf0434a01fb18978c84276cc4f9c72edc":[3,6,6,0],
 "group__reader.html":[3,44],
-"group__reader.html#ga0aa3b265fb5ece9c4cba0f2b1bfbdb53":[3,44,46],
 "group__reader.html#ga0aa3b265fb5ece9c4cba0f2b1bfbdb53":[3,43,62],
+"group__reader.html#ga0aa3b265fb5ece9c4cba0f2b1bfbdb53":[3,44,46],
 "group__reader.html#ga0b209288e5aa980d3a2ed8aaf7fa72ce":[3,44,34],
 "group__reader.html#ga0c7e1dd2be56ce3d596326c4463e7229":[3,44,40],
 "group__reader.html#ga15181d2c6766254010359db02f5b036a":[3,43,60],
 "group__reader.html#ga15181d2c6766254010359db02f5b036a":[3,44,44],
 "group__reader.html#ga15496dcbb58a2a66dfe97d8778d54274":[3,44,26],
 "group__reader.html#ga18f41d6786155f265769351ef550e331":[3,44,28],
-"group__reader.html#ga1cf5a2d9b687d94f637a36123ef7cec0":[3,44,41],
 "group__reader.html#ga1cf5a2d9b687d94f637a36123ef7cec0":[3,43,54],
+"group__reader.html#ga1cf5a2d9b687d94f637a36123ef7cec0":[3,44,41],
 "group__reader.html#ga1d79c00c6c013b879b164c26753b3e83":[3,44,27],
 "group__reader.html#ga291a38358bde6992b16edda81f2fcf45":[3,44,33],
 "group__reader.html#ga2b5b8fd101d63c96b6b89e675c981b78":[3,44,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX136 =
 "group__writer.html#ga5342127c784e4516aabb71d3512adcf2":[3,43,51],
 "group__writer.html#ga573a41209a4b9125ee28c19cddef309a":[3,43,45],
 "group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8":[3,43,6],
-"group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61":[3,43,22]
+"group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61":[3,43,22],
+"group__writer.html#ga5c82b06ba51952b2c8f6508e69f3bcc5":[3,43,48],
+"group__writer.html#ga5d8fa89f571534f5ddbdf81f5bbd5de8":[3,43,25]
 };

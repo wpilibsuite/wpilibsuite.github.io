@@ -1,7 +1,5 @@
 var NAVTREEINDEX194 =
 {
-"struct_n_t___timestamped_raw.html#ab61df9324226ea8464ca89aed35b6f8a":[5,0,210,0],
-"struct_n_t___timestamped_raw.html#abad10ebb4372c3010f8904acd7c85eaa":[5,0,210,2],
 "struct_n_t___timestamped_raw.html#ac8af677825616d0062b918911e99d6b2":[5,0,210,3],
 "struct_n_t___timestamped_string.html":[5,0,211],
 "struct_n_t___timestamped_string.html#a68f1fa1a68919a42904c53b09a56de70":[5,0,211,0],
@@ -108,9 +106,9 @@ var NAVTREEINDEX194 =
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[5,0,24,5],
 "structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,24,35],
 "structarg__mapper.html#a9a433929c4a9821e67847c3f3af1d8e2":[5,0,24,31],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,24,11],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,24,12],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,24,13],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,24,11],
 "structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16":[5,0,24,37],
 "structarg__mapper.html#aba49e677ad2ec1ce1e49fb888a6df858":[5,0,24,33],
 "structarg__mapper.html#abcdde144f8f751365322f26ce20f8616":[5,0,24,28],
@@ -147,8 +145,8 @@ var NAVTREEINDEX194 =
 "structbasic__format__specs.html#afe2c0c1192bb04cb8d69943a487fc53f":[5,0,33,4],
 "structbasic__fp.html":[5,0,35],
 "structbasic__fp.html#a1e4a14ea86e324547aa69f30d426d0c6":[5,0,35,5],
-"structbasic__fp.html#a33b2c6d71562fa7c52325e7a0d4a1c28":[5,0,35,4],
 "structbasic__fp.html#a33b2c6d71562fa7c52325e7a0d4a1c28":[5,0,35,3],
+"structbasic__fp.html#a33b2c6d71562fa7c52325e7a0d4a1c28":[5,0,35,4],
 "structbasic__fp.html#a8dcf335c81c0630b9612b57a629584fa":[5,0,35,0],
 "structbasic__fp.html#a8decde1b15c75c275b9c9576474d0d57":[5,0,35,6],
 "structbasic__fp.html#ab2b136890921712188259457c5a558c6":[5,0,35,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX194 =
 "structchrono__formatter.html#afef01a6c5bcc3ec8265c1c92625f4e57":[5,0,53,33],
 "structchrono__formatter.html#affba0b48d0655aedfb449264b125433e":[5,0,53,25],
 "structcolor__type.html":[5,0,54],
-"structcolor__type.html#a454b34beb03b1c53926f3ee641252155":[5,0,54,2]
+"structcolor__type.html#a454b34beb03b1c53926f3ee641252155":[5,0,54,2],
+"structcolor__type.html#a92f61cb6ce3eabe83292e3f5111122b8":[5,0,54,6],
+"structcolor__type.html#abb6687f492714855d13b81bbbb02f90e":[5,0,54,3]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"group__cscore__utility__cfunc.html#gaa98329564f16a4c3b0d193d6ef52e4c2":[3,1,16,4],
-"group__cscore__utility__cfunc.html#gad5b56a38d27ac5f02ab582196b4418b5":[3,1,16,3],
 "group__cscore__utility__cfunc.html#gadcec742fcc29dcbc11f07ec8acc1d9ba":[3,1,16,12],
 "group__cscore__utility__func.html":[3,3,15],
 "group__cscore__utility__func.html#ga263fc200b6a4ea7e0b71492553683199":[3,3,15,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX131 =
 "group__hal__canapi.html":[3,4,7],
 "group__hal__canapi.html#ga096d75b813ab0c3d4623f174c9f08a82":[3,4,7,3],
 "group__hal__canapi.html#ga140e61c4b22ea7177a249fb6ca208468":[3,4,7,6],
-"group__hal__canapi.html#ga2427e08c4232a0bd698cb595790ce6fc":[3,4,7,5]
+"group__hal__canapi.html#ga2427e08c4232a0bd698cb595790ce6fc":[3,4,7,5],
+"group__hal__canapi.html#ga6d6f754cb6725d06551dc2bdc86c5a21":[3,4,7,8],
+"group__hal__canapi.html#ga880203118d2d0be33ce083fd08d6fbcc":[3,4,7,0]
 };

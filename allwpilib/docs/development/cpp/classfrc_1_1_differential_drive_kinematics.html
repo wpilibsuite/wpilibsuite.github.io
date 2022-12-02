@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-55-g23bfc2d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-59-g66bb0ff</span>
    </div>
   </td>
  </tr>
@@ -115,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad1ec6f260c93d1efff03f285f9308f7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structfrc_1_1_differential_drive_wheel_speeds.html">DifferentialDriveWheelSpeeds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_kinematics.html#aad1ec6f260c93d1efff03f285f9308f7">ToWheelSpeeds</a> (const <a class="el" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a> &amp;chassisSpeeds) const</td></tr>
 <tr class="memdesc:aad1ec6f260c93d1efff03f285f9308f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns left and right component velocities from a chassis speed using inverse kinematics.  <a href="classfrc_1_1_differential_drive_kinematics.html#aad1ec6f260c93d1efff03f285f9308f7">More...</a><br /></td></tr>
 <tr class="separator:aad1ec6f260c93d1efff03f285f9308f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97e678967b43b90554e41d788942efd"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_kinematics.html#ac97e678967b43b90554e41d788942efd">ToTwist2d</a> (const units::meter_t leftDistance, const units::meter_t rightDistance) const</td></tr>
+<tr class="memdesc:ac97e678967b43b90554e41d788942efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a twist from left and right distance deltas using forward kinematics.  <a href="classfrc_1_1_differential_drive_kinematics.html#ac97e678967b43b90554e41d788942efd">More...</a><br /></td></tr>
+<tr class="separator:ac97e678967b43b90554e41d788942efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -195,6 +198,52 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac97e678967b43b90554e41d788942efd" name="ac97e678967b43b90554e41d788942efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac97e678967b43b90554e41d788942efd">&#9670;&nbsp;</a></span>ToTwist2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structfrc_1_1_twist2d.html">Twist2d</a> frc::DifferentialDriveKinematics::ToTwist2d </td>
+          <td>(</td>
+          <td class="paramtype">const units::meter_t&#160;</td>
+          <td class="paramname"><em>leftDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const units::meter_t&#160;</td>
+          <td class="paramname"><em>rightDistance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a twist from left and right distance deltas using forward kinematics. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">leftDistance</td><td>The distance measured by the left encoder. </td></tr>
+    <tr><td class="paramname">rightDistance</td><td>The distance measured by the right encoder. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resulting <a class="el" href="structfrc_1_1_twist2d.html" title="A change in distance along a 2D arc since the last pose update.">Twist2d</a>. </dd></dl>
+
+</div>
+</div>
 <a id="aad1ec6f260c93d1efff03f285f9308f7" name="aad1ec6f260c93d1efff03f285f9308f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad1ec6f260c93d1efff03f285f9308f7">&#9670;&nbsp;</a></span>ToWheelSpeeds()</h2>
 
@@ -254,7 +303,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_differential_drive_kinematics.html">DifferentialDriveKinematics</a></li>
-    <li class="footer">Generated on Fri Dec 2 2022 04:49:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Dec 2 2022 16:43:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

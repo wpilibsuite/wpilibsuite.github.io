@@ -146,6 +146,7 @@ var hierarchy =
     [ "Eigen::ArithmeticSequence< FirstType, SizeType, IncrType >", "class_eigen_1_1_arithmetic_sequence.html", null ],
     [ "frc::ArmFeedforward", "classfrc_1_1_arm_feedforward.html", null ],
     [ "std::array", null, [
+      [ "wpi::array< double, 3 >", "classwpi_1_1array.html", null ],
       [ "wpi::array< double,(Degree+1)/2 >", "classwpi_1_1array.html", null ],
       [ "wpi::array< frc::Translation2d, NumModules >", "classwpi_1_1array.html", null ],
       [ "wpi::array< frc::SwerveModuleState, NumModules >", "classwpi_1_1array.html", null ],
@@ -4212,7 +4213,7 @@ var hierarchy =
     [ "text_style", "classtext__style.html", null ],
     [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
     [ "frc::TimeInterpolatableBuffer< T >", "classfrc_1_1_time_interpolatable_buffer.html", null ],
-    [ "frc::TimeInterpolatableBuffer< frc::Pose2d >", "classfrc_1_1_time_interpolatable_buffer.html", null ],
+    [ "frc::TimeInterpolatableBuffer< InterpolationRecord >", "classfrc_1_1_time_interpolatable_buffer.html", null ],
     [ "frc::Timer", "classfrc_1_1_timer.html", null ],
     [ "nt::TimestampedBoolean", "structnt_1_1_timestamped_boolean.html", null ],
     [ "nt::TimestampedBooleanArray", "structnt_1_1_timestamped_boolean_array.html", null ],
@@ -4597,11 +4598,6 @@ var hierarchy =
       [ "Eigen::ForceAlignedAccess< ExpressionType >", "class_eigen_1_1_force_aligned_access.html", null ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
-      [ "Eigen::PlainObjectBase< Matrix< 3, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
-        [ "Eigen::Matrix< 3, 3 >", "class_eigen_1_1_matrix.html", null ]
-      ] ]
-    ] ],
-    [ "internal::dense_xpr_base::type", null, [
       [ "Eigen::PlainObjectBase< Matrix< 4, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
         [ "Eigen::Matrix< 4, 3 >", "class_eigen_1_1_matrix.html", null ]
       ] ]
@@ -4667,8 +4663,8 @@ var hierarchy =
       [ "Eigen::PlainObjectBase< Matrix< States, _Rows, _Cols, _Options, _MaxRows, _MaxCols > >", "class_eigen_1_1_plain_object_base.html", [
         [ "Eigen::Matrix< States, Inputs >", "class_eigen_1_1_matrix.html", null ],
         [ "Eigen::Matrix< States, States >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< States, 2 *States+1 >", "class_eigen_1_1_matrix.html", null ],
-        [ "Eigen::Matrix< States, Outputs >", "class_eigen_1_1_matrix.html", null ]
+        [ "Eigen::Matrix< States, Outputs >", "class_eigen_1_1_matrix.html", null ],
+        [ "Eigen::Matrix< States, 2 *States+1 >", "class_eigen_1_1_matrix.html", null ]
       ] ]
     ] ],
     [ "internal::dense_xpr_base::type", null, [
@@ -5215,8 +5211,6 @@ var hierarchy =
     [ "Eigen::internal::unpacket_traits< Packet8uc >", "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet8uc_01_4.html", null ],
     [ "Eigen::internal::unpacket_traits< Packet8us >", "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet8us_01_4.html", null ],
     [ "frc::UnscentedKalmanFilter< States, Inputs, Outputs >", "classfrc_1_1_unscented_kalman_filter.html", null ],
-    [ "frc::UnscentedKalmanFilter< 5, 3, 3 >", "classfrc_1_1_unscented_kalman_filter.html", null ],
-    [ "frc::UnscentedKalmanFilter< 7, 7, 5 >", "classfrc_1_1_unscented_kalman_filter.html", null ],
     [ "Eigen::ReturnByValue< Derived >::Unusable", "class_eigen_1_1_return_by_value_1_1_unusable.html", null ],
     [ "Eigen::internal::UpperBidiagonalization< _MatrixType >", "class_eigen_1_1internal_1_1_upper_bidiagonalization.html", null ],
     [ "wpi::UrlParser", "classwpi_1_1_url_parser.html", null ],

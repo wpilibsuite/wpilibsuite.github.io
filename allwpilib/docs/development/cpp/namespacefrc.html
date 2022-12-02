@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-55-g23bfc2d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-59-g66bb0ff</span>
    </div>
   </td>
  </tr>
@@ -265,7 +265,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for differential drive odometry.  <a href="classfrc_1_1_differential_drive_odometry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">DifferentialDrivePoseEstimator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with differential drive encoder measurements.  <a href="classfrc_1_1_differential_drive_pose_estimator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps Differential Drive Odometry to fuse latency-compensated vision measurements with differential drive encoder measurements.  <a href="classfrc_1_1_differential_drive_pose_estimator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_voltage_constraint.html">DifferentialDriveVoltageConstraint</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that enforces constraints on differential drive voltage expenditure based on the motor dynamics and the drive kinematics.  <a href="classfrc_1_1_differential_drive_voltage_constraint.html#details">More...</a><br /></td></tr>
@@ -408,7 +408,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for mecanum drive odometry.  <a href="classfrc_1_1_mecanum_drive_odometry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html">MecanumDrivePoseEstimator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with mecanum drive encoder velocity measurements.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps Mecanum Drive Odometry to fuse latency-compensated vision measurements with mecanum drive encoder velocity measurements.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the wheel speeds for a mecanum drive drivetrain.  <a href="structfrc_1_1_mecanum_drive_wheel_positions.html#details">More...</a><br /></td></tr>
@@ -626,7 +626,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for swerve drive odometry.  <a href="classfrc_1_1_swerve_drive_odometry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">SwerveDrivePoseEstimator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps Swerve Drive Odometry to fuse latency-compensated vision measurements with swerve drive encoder distance measurements.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the position of one swerve module.  <a href="structfrc_1_1_swerve_module_position.html#details">More...</a><br /></td></tr>
@@ -4940,7 +4940,7 @@ template&lt;class... Wheels&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Fri Dec 2 2022 04:49:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Dec 2 2022 16:43:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

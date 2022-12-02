@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-55-g23bfc2d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-59-g66bb0ff</span>
    </div>
   </td>
  </tr>
@@ -98,18 +98,17 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h.html',
   <div class="headertitle"><div class="title">SwerveDrivePoseEstimator.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;limits&gt;</code><br />
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;<a class="el" href="format_8h_source.html">fmt/format.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="_symbol_exports_8h_source.html">wpi/SymbolExports.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="wpiutil_2src_2main_2native_2include_2wpi_2_array_8h_source.html">wpi/array.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="timestamp_8h_source.html">wpi/timestamp.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="_eigen_core_8h_source.html">frc/EigenCore.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_state_space_util_8h_source.html">frc/StateSpaceUtil.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_angle_statistics_8h_source.html">frc/estimator/AngleStatistics.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_unscented_kalman_filter_8h_source.html">frc/estimator/UnscentedKalmanFilter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_pose2d_8h_source.html">frc/geometry/Pose2d.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_rotation2d_8h_source.html">frc/geometry/Rotation2d.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_time_interpolatable_buffer_8h_source.html">frc/interpolation/TimeInterpolatableBuffer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_swerve_drive_kinematics_8h_source.html">frc/kinematics/SwerveDriveKinematics.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_swerve_drive_odometry_8h_source.html">frc/kinematics/SwerveDriveOdometry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="time_8h_source.html">units/time.h</a>&quot;</code><br />
 </div>
 <p><a href="_swerve_drive_pose_estimator_8h_source.html">Go to the source code of this file.</a></p>
@@ -117,7 +116,7 @@ $(document).ready(function(){initNavTree('_swerve_drive_pose_estimator_8h.html',
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class wraps Swerve Drive Odometry to fuse latency-compensated vision measurements with swerve drive encoder distance measurements.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -136,7 +135,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_swerve_drive_pose_estimator_8h.html">SwerveDrivePoseEstimator.h</a></li>
-    <li class="footer">Generated on Fri Dec 2 2022 04:49:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Dec 2 2022 16:43:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

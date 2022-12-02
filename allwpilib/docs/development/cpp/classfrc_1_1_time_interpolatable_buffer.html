@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-55-g23bfc2d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-59-g66bb0ff</span>
    </div>
   </td>
  </tr>
@@ -120,13 +120,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2d477d35ed3df1037e14399e1393a3f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_time_interpolatable_buffer.html#ae2d477d35ed3df1037e14399e1393a3f">Sample</a> (units::second_t time)</td></tr>
 <tr class="memdesc:ae2d477d35ed3df1037e14399e1393a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample the buffer at the given time.  <a href="classfrc_1_1_time_interpolatable_buffer.html#ae2d477d35ed3df1037e14399e1393a3f">More...</a><br /></td></tr>
 <tr class="separator:ae2d477d35ed3df1037e14399e1393a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84d7b59e839daf27abeccc0320ed5ae7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; units::second_t, T &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_time_interpolatable_buffer.html#a84d7b59e839daf27abeccc0320ed5ae7">GetInternalBuffer</a> ()</td></tr>
+<tr class="memdesc:a84d7b59e839daf27abeccc0320ed5ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grant access to the internal sample buffer.  <a href="classfrc_1_1_time_interpolatable_buffer.html#a84d7b59e839daf27abeccc0320ed5ae7">More...</a><br /></td></tr>
+<tr class="separator:a84d7b59e839daf27abeccc0320ed5ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e28d8c1b79be4d473ff9a295c033d14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_time_interpolatable_buffer.html#a1e28d8c1b79be4d473ff9a295c033d14">TimeInterpolatableBuffer</a> (units::second_t historySize)</td></tr>
 <tr class="separator:a1e28d8c1b79be4d473ff9a295c033d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 class frc::TimeInterpolatableBuffer&lt; T &gt;</div><p >The <a class="el" href="classfrc_1_1_time_interpolatable_buffer.html" title="The TimeInterpolatableBuffer provides an easy way to estimate past measurements.">TimeInterpolatableBuffer</a> provides an easy way to estimate past measurements. </p>
-<p >One application might be in conjunction with the <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html" title="This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with diff...">DifferentialDrivePoseEstimator</a>, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.</p>
+<p >One application might be in conjunction with the <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html" title="This class wraps Differential Drive Odometry to fuse latency-compensated vision measurements with dif...">DifferentialDrivePoseEstimator</a>, where knowledge of the robot pose at the time when vision or other global measurement were recorded is necessary, or for recording the past angles of mechanisms as measured by encoders.</p>
 <p >When sampling this buffer, a user-provided function or <a class="el" href="namespacewpi.html#a905c54ca4b7fdb1633b425ad9ca5dc48" title="Linearly interpolates between two values.">wpi::Lerp</a> can be used. For Pose2ds, we use Twists.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
@@ -314,6 +317,36 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a84d7b59e839daf27abeccc0320ed5ae7" name="a84d7b59e839daf27abeccc0320ed5ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d7b59e839daf27abeccc0320ed5ae7">&#9670;&nbsp;</a></span>GetInternalBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; units::second_t, T &gt; &gt; &amp; <a class="el" href="classfrc_1_1_time_interpolatable_buffer.html">frc::TimeInterpolatableBuffer</a>&lt; T &gt;::GetInternalBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Grant access to the internal sample buffer. </p>
+<p >Used in Pose Estimation to replay odometry inputs stored within this buffer. </p>
+
+</div>
+</div>
 <a id="ae2d477d35ed3df1037e14399e1393a3f" name="ae2d477d35ed3df1037e14399e1393a3f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2d477d35ed3df1037e14399e1393a3f">&#9670;&nbsp;</a></span>Sample()</h2>
 
@@ -360,7 +393,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_time_interpolatable_buffer.html">TimeInterpolatableBuffer</a></li>
-    <li class="footer">Generated on Fri Dec 2 2022 04:49:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Dec 2 2022 16:43:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
