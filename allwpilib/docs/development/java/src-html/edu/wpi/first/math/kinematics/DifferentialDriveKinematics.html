@@ -18,58 +18,75 @@
 <span class="sourceLineNo">006</span><a id="line.6"></a>
 <span class="sourceLineNo">007</span><a id="line.7">import edu.wpi.first.math.MathSharedStore;</a>
 <span class="sourceLineNo">008</span><a id="line.8">import edu.wpi.first.math.MathUsageId;</a>
-<span class="sourceLineNo">009</span><a id="line.9"></a>
-<span class="sourceLineNo">010</span><a id="line.10">/**</a>
-<span class="sourceLineNo">011</span><a id="line.11"> * Helper class that converts a chassis velocity (dx and dtheta components) to left and right wheel</a>
-<span class="sourceLineNo">012</span><a id="line.12"> * velocities for a differential drive.</a>
-<span class="sourceLineNo">013</span><a id="line.13"> *</a>
-<span class="sourceLineNo">014</span><a id="line.14"> * &lt;p&gt;Inverse kinematics converts a desired chassis speed into left and right velocity components</a>
-<span class="sourceLineNo">015</span><a id="line.15"> * whereas forward kinematics converts left and right component velocities into a linear and angular</a>
-<span class="sourceLineNo">016</span><a id="line.16"> * chassis speed.</a>
-<span class="sourceLineNo">017</span><a id="line.17"> */</a>
-<span class="sourceLineNo">018</span><a id="line.18">public class DifferentialDriveKinematics {</a>
-<span class="sourceLineNo">019</span><a id="line.19">  public final double trackWidthMeters;</a>
-<span class="sourceLineNo">020</span><a id="line.20"></a>
-<span class="sourceLineNo">021</span><a id="line.21">  /**</a>
-<span class="sourceLineNo">022</span><a id="line.22">   * Constructs a differential drive kinematics object.</a>
-<span class="sourceLineNo">023</span><a id="line.23">   *</a>
-<span class="sourceLineNo">024</span><a id="line.24">   * @param trackWidthMeters The track width of the drivetrain. Theoretically, this is the distance</a>
-<span class="sourceLineNo">025</span><a id="line.25">   *     between the left wheels and right wheels. However, the empirical value may be larger than</a>
-<span class="sourceLineNo">026</span><a id="line.26">   *     the physical measured value due to scrubbing effects.</a>
-<span class="sourceLineNo">027</span><a id="line.27">   */</a>
-<span class="sourceLineNo">028</span><a id="line.28">  public DifferentialDriveKinematics(double trackWidthMeters) {</a>
-<span class="sourceLineNo">029</span><a id="line.29">    this.trackWidthMeters = trackWidthMeters;</a>
-<span class="sourceLineNo">030</span><a id="line.30">    MathSharedStore.reportUsage(MathUsageId.kKinematics_DifferentialDrive, 1);</a>
-<span class="sourceLineNo">031</span><a id="line.31">  }</a>
-<span class="sourceLineNo">032</span><a id="line.32"></a>
-<span class="sourceLineNo">033</span><a id="line.33">  /**</a>
-<span class="sourceLineNo">034</span><a id="line.34">   * Returns a chassis speed from left and right component velocities using forward kinematics.</a>
-<span class="sourceLineNo">035</span><a id="line.35">   *</a>
-<span class="sourceLineNo">036</span><a id="line.36">   * @param wheelSpeeds The left and right velocities.</a>
-<span class="sourceLineNo">037</span><a id="line.37">   * @return The chassis speed.</a>
-<span class="sourceLineNo">038</span><a id="line.38">   */</a>
-<span class="sourceLineNo">039</span><a id="line.39">  public ChassisSpeeds toChassisSpeeds(DifferentialDriveWheelSpeeds wheelSpeeds) {</a>
-<span class="sourceLineNo">040</span><a id="line.40">    return new ChassisSpeeds(</a>
-<span class="sourceLineNo">041</span><a id="line.41">        (wheelSpeeds.leftMetersPerSecond + wheelSpeeds.rightMetersPerSecond) / 2,</a>
-<span class="sourceLineNo">042</span><a id="line.42">        0,</a>
-<span class="sourceLineNo">043</span><a id="line.43">        (wheelSpeeds.rightMetersPerSecond - wheelSpeeds.leftMetersPerSecond) / trackWidthMeters);</a>
-<span class="sourceLineNo">044</span><a id="line.44">  }</a>
-<span class="sourceLineNo">045</span><a id="line.45"></a>
-<span class="sourceLineNo">046</span><a id="line.46">  /**</a>
-<span class="sourceLineNo">047</span><a id="line.47">   * Returns left and right component velocities from a chassis speed using inverse kinematics.</a>
-<span class="sourceLineNo">048</span><a id="line.48">   *</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * @param chassisSpeeds The linear and angular (dx and dtheta) components that represent the</a>
-<span class="sourceLineNo">050</span><a id="line.50">   *     chassis' speed.</a>
-<span class="sourceLineNo">051</span><a id="line.51">   * @return The left and right velocities.</a>
-<span class="sourceLineNo">052</span><a id="line.52">   */</a>
-<span class="sourceLineNo">053</span><a id="line.53">  public DifferentialDriveWheelSpeeds toWheelSpeeds(ChassisSpeeds chassisSpeeds) {</a>
-<span class="sourceLineNo">054</span><a id="line.54">    return new DifferentialDriveWheelSpeeds(</a>
-<span class="sourceLineNo">055</span><a id="line.55">        chassisSpeeds.vxMetersPerSecond</a>
-<span class="sourceLineNo">056</span><a id="line.56">            - trackWidthMeters / 2 * chassisSpeeds.omegaRadiansPerSecond,</a>
-<span class="sourceLineNo">057</span><a id="line.57">        chassisSpeeds.vxMetersPerSecond</a>
-<span class="sourceLineNo">058</span><a id="line.58">            + trackWidthMeters / 2 * chassisSpeeds.omegaRadiansPerSecond);</a>
-<span class="sourceLineNo">059</span><a id="line.59">  }</a>
-<span class="sourceLineNo">060</span><a id="line.60">}</a>
+<span class="sourceLineNo">009</span><a id="line.9">import edu.wpi.first.math.geometry.Twist2d;</a>
+<span class="sourceLineNo">010</span><a id="line.10"></a>
+<span class="sourceLineNo">011</span><a id="line.11">/**</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * Helper class that converts a chassis velocity (dx and dtheta components) to left and right wheel</a>
+<span class="sourceLineNo">013</span><a id="line.13"> * velocities for a differential drive.</a>
+<span class="sourceLineNo">014</span><a id="line.14"> *</a>
+<span class="sourceLineNo">015</span><a id="line.15"> * &lt;p&gt;Inverse kinematics converts a desired chassis speed into left and right velocity components</a>
+<span class="sourceLineNo">016</span><a id="line.16"> * whereas forward kinematics converts left and right component velocities into a linear and angular</a>
+<span class="sourceLineNo">017</span><a id="line.17"> * chassis speed.</a>
+<span class="sourceLineNo">018</span><a id="line.18"> */</a>
+<span class="sourceLineNo">019</span><a id="line.19">public class DifferentialDriveKinematics {</a>
+<span class="sourceLineNo">020</span><a id="line.20">  public final double trackWidthMeters;</a>
+<span class="sourceLineNo">021</span><a id="line.21"></a>
+<span class="sourceLineNo">022</span><a id="line.22">  /**</a>
+<span class="sourceLineNo">023</span><a id="line.23">   * Constructs a differential drive kinematics object.</a>
+<span class="sourceLineNo">024</span><a id="line.24">   *</a>
+<span class="sourceLineNo">025</span><a id="line.25">   * @param trackWidthMeters The track width of the drivetrain. Theoretically, this is the distance</a>
+<span class="sourceLineNo">026</span><a id="line.26">   *     between the left wheels and right wheels. However, the empirical value may be larger than</a>
+<span class="sourceLineNo">027</span><a id="line.27">   *     the physical measured value due to scrubbing effects.</a>
+<span class="sourceLineNo">028</span><a id="line.28">   */</a>
+<span class="sourceLineNo">029</span><a id="line.29">  public DifferentialDriveKinematics(double trackWidthMeters) {</a>
+<span class="sourceLineNo">030</span><a id="line.30">    this.trackWidthMeters = trackWidthMeters;</a>
+<span class="sourceLineNo">031</span><a id="line.31">    MathSharedStore.reportUsage(MathUsageId.kKinematics_DifferentialDrive, 1);</a>
+<span class="sourceLineNo">032</span><a id="line.32">  }</a>
+<span class="sourceLineNo">033</span><a id="line.33"></a>
+<span class="sourceLineNo">034</span><a id="line.34">  /**</a>
+<span class="sourceLineNo">035</span><a id="line.35">   * Returns a chassis speed from left and right component velocities using forward kinematics.</a>
+<span class="sourceLineNo">036</span><a id="line.36">   *</a>
+<span class="sourceLineNo">037</span><a id="line.37">   * @param wheelSpeeds The left and right velocities.</a>
+<span class="sourceLineNo">038</span><a id="line.38">   * @return The chassis speed.</a>
+<span class="sourceLineNo">039</span><a id="line.39">   */</a>
+<span class="sourceLineNo">040</span><a id="line.40">  public ChassisSpeeds toChassisSpeeds(DifferentialDriveWheelSpeeds wheelSpeeds) {</a>
+<span class="sourceLineNo">041</span><a id="line.41">    return new ChassisSpeeds(</a>
+<span class="sourceLineNo">042</span><a id="line.42">        (wheelSpeeds.leftMetersPerSecond + wheelSpeeds.rightMetersPerSecond) / 2,</a>
+<span class="sourceLineNo">043</span><a id="line.43">        0,</a>
+<span class="sourceLineNo">044</span><a id="line.44">        (wheelSpeeds.rightMetersPerSecond - wheelSpeeds.leftMetersPerSecond) / trackWidthMeters);</a>
+<span class="sourceLineNo">045</span><a id="line.45">  }</a>
+<span class="sourceLineNo">046</span><a id="line.46"></a>
+<span class="sourceLineNo">047</span><a id="line.47">  /**</a>
+<span class="sourceLineNo">048</span><a id="line.48">   * Returns left and right component velocities from a chassis speed using inverse kinematics.</a>
+<span class="sourceLineNo">049</span><a id="line.49">   *</a>
+<span class="sourceLineNo">050</span><a id="line.50">   * @param chassisSpeeds The linear and angular (dx and dtheta) components that represent the</a>
+<span class="sourceLineNo">051</span><a id="line.51">   *     chassis' speed.</a>
+<span class="sourceLineNo">052</span><a id="line.52">   * @return The left and right velocities.</a>
+<span class="sourceLineNo">053</span><a id="line.53">   */</a>
+<span class="sourceLineNo">054</span><a id="line.54">  public DifferentialDriveWheelSpeeds toWheelSpeeds(ChassisSpeeds chassisSpeeds) {</a>
+<span class="sourceLineNo">055</span><a id="line.55">    return new DifferentialDriveWheelSpeeds(</a>
+<span class="sourceLineNo">056</span><a id="line.56">        chassisSpeeds.vxMetersPerSecond</a>
+<span class="sourceLineNo">057</span><a id="line.57">            - trackWidthMeters / 2 * chassisSpeeds.omegaRadiansPerSecond,</a>
+<span class="sourceLineNo">058</span><a id="line.58">        chassisSpeeds.vxMetersPerSecond</a>
+<span class="sourceLineNo">059</span><a id="line.59">            + trackWidthMeters / 2 * chassisSpeeds.omegaRadiansPerSecond);</a>
+<span class="sourceLineNo">060</span><a id="line.60">  }</a>
+<span class="sourceLineNo">061</span><a id="line.61"></a>
+<span class="sourceLineNo">062</span><a id="line.62">  /**</a>
+<span class="sourceLineNo">063</span><a id="line.63">   * Performs forward kinematics to return the resulting Twist2d from the given left and right side</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * distance deltas. This method is often used for odometry -- determining the robot's position on</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * the field using changes in the distance driven by each wheel on the robot.</a>
+<span class="sourceLineNo">066</span><a id="line.66">   *</a>
+<span class="sourceLineNo">067</span><a id="line.67">   * @param leftDistanceMeters The distance measured by the left side encoder.</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * @param rightDistanceMeters The distance measured by the right side encoder.</a>
+<span class="sourceLineNo">069</span><a id="line.69">   * @return The resulting Twist2d.</a>
+<span class="sourceLineNo">070</span><a id="line.70">   */</a>
+<span class="sourceLineNo">071</span><a id="line.71">  public Twist2d toTwist2d(double leftDistanceMeters, double rightDistanceMeters) {</a>
+<span class="sourceLineNo">072</span><a id="line.72">    return new Twist2d(</a>
+<span class="sourceLineNo">073</span><a id="line.73">        (leftDistanceMeters + rightDistanceMeters) / 2,</a>
+<span class="sourceLineNo">074</span><a id="line.74">        0,</a>
+<span class="sourceLineNo">075</span><a id="line.75">        (rightDistanceMeters - leftDistanceMeters) / trackWidthMeters);</a>
+<span class="sourceLineNo">076</span><a id="line.76">  }</a>
+<span class="sourceLineNo">077</span><a id="line.77">}</a>
 
 
 
