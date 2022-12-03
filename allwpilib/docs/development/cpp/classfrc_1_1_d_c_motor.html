@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-61-g13cdc29</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-64-gff88756</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae39e09029d01d92d7ad33b9b5841ffcd"><td class="memItemLeft" align="right" valign="top">constexpr units::ampere_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_d_c_motor.html#ae39e09029d01d92d7ad33b9b5841ffcd">Current</a> (units::radians_per_second_t speed, units::volt_t inputVoltage) const</td></tr>
 <tr class="memdesc:ae39e09029d01d92d7ad33b9b5841ffcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current drawn by motor with given speed and input voltage.  <a href="classfrc_1_1_d_c_motor.html#ae39e09029d01d92d7ad33b9b5841ffcd">More...</a><br /></td></tr>
 <tr class="separator:ae39e09029d01d92d7ad33b9b5841ffcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3b08966edd5073a3c208ebd9ff2200"><td class="memItemLeft" align="right" valign="top">constexpr units::newton_meter_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_d_c_motor.html#a0a3b08966edd5073a3c208ebd9ff2200">Torque</a> (units::ampere_t current) const</td></tr>
+<tr class="memdesc:a0a3b08966edd5073a3c208ebd9ff2200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns torque produced by the motor with a given current.  <a href="classfrc_1_1_d_c_motor.html#a0a3b08966edd5073a3c208ebd9ff2200">More...</a><br /></td></tr>
+<tr class="separator:a0a3b08966edd5073a3c208ebd9ff2200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2834fc9ae2022e8381a286df964517ef"><td class="memItemLeft" align="right" valign="top">constexpr units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_d_c_motor.html#a2834fc9ae2022e8381a286df964517ef">Voltage</a> (units::newton_meter_t torque, units::radians_per_second_t speed) const</td></tr>
+<tr class="memdesc:a2834fc9ae2022e8381a286df964517ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the voltage provided to the motor for a given torque and angular velocity.  <a href="classfrc_1_1_d_c_motor.html#a2834fc9ae2022e8381a286df964517ef">More...</a><br /></td></tr>
+<tr class="separator:a2834fc9ae2022e8381a286df964517ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab688597adfc6ed6f61a8b572c954a5e8"><td class="memItemLeft" align="right" valign="top">constexpr units::radians_per_second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_d_c_motor.html#ab688597adfc6ed6f61a8b572c954a5e8">Speed</a> (units::newton_meter_t torque, units::volt_t inputVoltage) const</td></tr>
+<tr class="memdesc:ab688597adfc6ed6f61a8b572c954a5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the speed produced by the motor at a given torque and input voltage.  <a href="classfrc_1_1_d_c_motor.html#ab688597adfc6ed6f61a8b572c954a5e8">More...</a><br /></td></tr>
+<tr class="separator:ab688597adfc6ed6f61a8b572c954a5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7b950d3dec953d7a1db4f4004c04a8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classfrc_1_1_d_c_motor.html">DCMotor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_d_c_motor.html#a8f7b950d3dec953d7a1db4f4004c04a8">WithReduction</a> (double gearboxReduction)</td></tr>
+<tr class="memdesc:a8f7b950d3dec953d7a1db4f4004c04a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a copy of this motor with the given gearbox reduction applied.  <a href="classfrc_1_1_d_c_motor.html#a8f7b950d3dec953d7a1db4f4004c04a8">More...</a><br /></td></tr>
+<tr class="separator:a8f7b950d3dec953d7a1db4f4004c04a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -639,6 +651,85 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab688597adfc6ed6f61a8b572c954a5e8" name="ab688597adfc6ed6f61a8b572c954a5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab688597adfc6ed6f61a8b572c954a5e8">&#9670;&nbsp;</a></span>Speed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr units::radians_per_second_t frc::DCMotor::Speed </td>
+          <td>(</td>
+          <td class="paramtype">units::newton_meter_t&#160;</td>
+          <td class="paramname"><em>torque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::volt_t&#160;</td>
+          <td class="paramname"><em>inputVoltage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the speed produced by the motor at a given torque and input voltage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torque</td><td>The torque produced by the motor. </td></tr>
+    <tr><td class="paramname">inputVoltage</td><td>The input voltage provided to the motor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0a3b08966edd5073a3c208ebd9ff2200" name="a0a3b08966edd5073a3c208ebd9ff2200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3b08966edd5073a3c208ebd9ff2200">&#9670;&nbsp;</a></span>Torque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr units::newton_meter_t frc::DCMotor::Torque </td>
+          <td>(</td>
+          <td class="paramtype">units::ampere_t&#160;</td>
+          <td class="paramname"><em>current</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns torque produced by the motor with a given current. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">current</td><td>The current drawn by the motor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a609933c5b8e79f10ad2ecc99e0d012bd" name="a609933c5b8e79f10ad2ecc99e0d012bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a609933c5b8e79f10ad2ecc99e0d012bd">&#9670;&nbsp;</a></span>Vex775Pro()</h2>
 
@@ -664,6 +755,85 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns instance of Vex 775 Pro. </p>
+
+</div>
+</div>
+<a id="a2834fc9ae2022e8381a286df964517ef" name="a2834fc9ae2022e8381a286df964517ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2834fc9ae2022e8381a286df964517ef">&#9670;&nbsp;</a></span>Voltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr units::volt_t frc::DCMotor::Voltage </td>
+          <td>(</td>
+          <td class="paramtype">units::newton_meter_t&#160;</td>
+          <td class="paramname"><em>torque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::radians_per_second_t&#160;</td>
+          <td class="paramname"><em>speed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the voltage provided to the motor for a given torque and angular velocity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torque</td><td>The torque produced by the motor. </td></tr>
+    <tr><td class="paramname">speed</td><td>The current angular velocity of the motor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8f7b950d3dec953d7a1db4f4004c04a8" name="a8f7b950d3dec953d7a1db4f4004c04a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7b950d3dec953d7a1db4f4004c04a8">&#9670;&nbsp;</a></span>WithReduction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classfrc_1_1_d_c_motor.html">DCMotor</a> frc::DCMotor::WithReduction </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gearboxReduction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a copy of this motor with the given gearbox reduction applied. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gearboxReduction</td><td>The gearbox reduction. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -789,7 +959,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_d_c_motor.html">DCMotor</a></li>
-    <li class="footer">Generated on Sat Dec 3 2022 02:26:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Dec 3 2022 17:49:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

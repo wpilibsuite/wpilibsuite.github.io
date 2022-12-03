@@ -1,5 +1,6 @@
 var classfrc_1_1_differential_drive_pose_estimator =
 [
+    [ "DifferentialDrivePoseEstimator", "classfrc_1_1_differential_drive_pose_estimator.html#af1b7919e05ac47c5d7c20a9d98801232", null ],
     [ "DifferentialDrivePoseEstimator", "classfrc_1_1_differential_drive_pose_estimator.html#ac75ea75a8e8774859b0c912972988e0f", null ],
     [ "AddVisionMeasurement", "classfrc_1_1_differential_drive_pose_estimator.html#a08f5072a0aa4e4fba8d7528427047720", null ],
     [ "AddVisionMeasurement", "classfrc_1_1_differential_drive_pose_estimator.html#ad273aa27bda035fe8ca417a7ea2891c5", null ],

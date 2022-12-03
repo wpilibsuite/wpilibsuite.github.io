@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-61-g13cdc29</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-64-gff88756</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_mecanum_drive_pose_estima
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ab5403ab8579d294b5068f222da6a49d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab5403ab8579d294b5068f222da6a49d9">MecanumDrivePoseEstimator</a> (<a class="el" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> &amp;kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;wheelPositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose)</td></tr>
+<tr class="memdesc:ab5403ab8579d294b5068f222da6a49d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html" title="This class wraps Mecanum Drive Odometry to fuse latency-compensated vision measurements with mecanum ...">MecanumDrivePoseEstimator</a> with default standard deviations for the model and vision measurements.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ab5403ab8579d294b5068f222da6a49d9">More...</a><br /></td></tr>
+<tr class="separator:ab5403ab8579d294b5068f222da6a49d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d92edf396b042be08853fb39fe9ba9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html#ae7d92edf396b042be08853fb39fe9ba9">MecanumDrivePoseEstimator</a> (<a class="el" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> &amp;kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;wheelPositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:ae7d92edf396b042be08853fb39fe9ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html" title="This class wraps Mecanum Drive Odometry to fuse latency-compensated vision measurements with mecanum ...">MecanumDrivePoseEstimator</a>.  <a href="classfrc_1_1_mecanum_drive_pose_estimator.html#ae7d92edf396b042be08853fb39fe9ba9">More...</a><br /></td></tr>
 <tr class="separator:ae7d92edf396b042be08853fb39fe9ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +143,60 @@ Public Member Functions</h2></td></tr>
 <p ><b> x = [x, y, theta]ᵀ </b> in the field coordinate system containing x position, y position, and heading.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab5403ab8579d294b5068f222da6a49d9" name="ab5403ab8579d294b5068f222da6a49d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5403ab8579d294b5068f222da6a49d9">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::MecanumDrivePoseEstimator::MecanumDrivePoseEstimator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> &amp;&#160;</td>
+          <td class="paramname"><em>kinematics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structfrc_1_1_mecanum_drive_wheel_positions.html">MecanumDriveWheelPositions</a> &amp;&#160;</td>
+          <td class="paramname"><em>wheelPositions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialPose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html" title="This class wraps Mecanum Drive Odometry to fuse latency-compensated vision measurements with mecanum ...">MecanumDrivePoseEstimator</a> with default standard deviations for the model and vision measurements. </p>
+<p >The default standard deviations of the model states are 0.1 meters for x, 0.1 meters for y, and 0.1 radians for heading. The default standard deviations of the vision measurements are 0.45 meters for x, 0.45 meters for y, and 0.45 radians for heading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kinematics</td><td>A correctly-configured kinematics object for your drivetrain. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The current gyro angle. </td></tr>
+    <tr><td class="paramname">wheelPositions</td><td>The distance measured by each wheel. </td></tr>
+    <tr><td class="paramname">initialPose</td><td>The starting pose estimate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae7d92edf396b042be08853fb39fe9ba9" name="ae7d92edf396b042be08853fb39fe9ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7d92edf396b042be08853fb39fe9ba9">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d92edf396b042be08853fb39fe9ba9">&#9670;&nbsp;</a></span>MecanumDrivePoseEstimator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +543,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mecanum_drive_pose_estimator.html">MecanumDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sat Dec 3 2022 02:26:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Dec 3 2022 17:49:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-61-g13cdc29</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-64-gff88756</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_differential_drive_pose_e
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af1b7919e05ac47c5d7c20a9d98801232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#af1b7919e05ac47c5d7c20a9d98801232">DifferentialDrivePoseEstimator</a> (<a class="el" href="classfrc_1_1_differential_drive_kinematics.html">DifferentialDriveKinematics</a> &amp;kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, units::meter_t leftDistance, units::meter_t rightDistance, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose)</td></tr>
+<tr class="memdesc:af1b7919e05ac47c5d7c20a9d98801232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html" title="This class wraps Differential Drive Odometry to fuse latency-compensated vision measurements with dif...">DifferentialDrivePoseEstimator</a> with default standard deviations for the model and vision measurements.  <a href="classfrc_1_1_differential_drive_pose_estimator.html#af1b7919e05ac47c5d7c20a9d98801232">More...</a><br /></td></tr>
+<tr class="separator:af1b7919e05ac47c5d7c20a9d98801232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac75ea75a8e8774859b0c912972988e0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html#ac75ea75a8e8774859b0c912972988e0f">DifferentialDrivePoseEstimator</a> (<a class="el" href="classfrc_1_1_differential_drive_kinematics.html">DifferentialDriveKinematics</a> &amp;kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, units::meter_t leftDistance, units::meter_t rightDistance, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:ac75ea75a8e8774859b0c912972988e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html" title="This class wraps Differential Drive Odometry to fuse latency-compensated vision measurements with dif...">DifferentialDrivePoseEstimator</a>.  <a href="classfrc_1_1_differential_drive_pose_estimator.html#ac75ea75a8e8774859b0c912972988e0f">More...</a><br /></td></tr>
 <tr class="separator:ac75ea75a8e8774859b0c912972988e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +143,67 @@ Public Member Functions</h2></td></tr>
 <p ><b> x = [x, y, theta]ᵀ </b> in the field coordinate system containing x position, y position, and heading.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af1b7919e05ac47c5d7c20a9d98801232" name="af1b7919e05ac47c5d7c20a9d98801232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1b7919e05ac47c5d7c20a9d98801232">&#9670;&nbsp;</a></span>DifferentialDrivePoseEstimator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::DifferentialDrivePoseEstimator::DifferentialDrivePoseEstimator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_differential_drive_kinematics.html">DifferentialDriveKinematics</a> &amp;&#160;</td>
+          <td class="paramname"><em>kinematics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meter_t&#160;</td>
+          <td class="paramname"><em>leftDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::meter_t&#160;</td>
+          <td class="paramname"><em>rightDistance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialPose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html" title="This class wraps Differential Drive Odometry to fuse latency-compensated vision measurements with dif...">DifferentialDrivePoseEstimator</a> with default standard deviations for the model and vision measurements. </p>
+<p >The default standard deviations of the model states are 0.02 meters for x, 0.02 meters for y, and 0.01 radians for heading. The default standard deviations of the vision measurements are 0.1 meters for x, 0.1 meters for y, and 0.1 radians for heading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kinematics</td><td>A correctly-configured kinematics object for your drivetrain. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The gyro angle of the robot. </td></tr>
+    <tr><td class="paramname">leftDistance</td><td>The distance traveled by the left encoder. </td></tr>
+    <tr><td class="paramname">rightDistance</td><td>The distance traveled by the right encoder. </td></tr>
+    <tr><td class="paramname">initialPose</td><td>The estimated initial pose. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac75ea75a8e8774859b0c912972988e0f" name="ac75ea75a8e8774859b0c912972988e0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac75ea75a8e8774859b0c912972988e0f">&#9670;&nbsp;</a></span>DifferentialDrivePoseEstimator()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75ea75a8e8774859b0c912972988e0f">&#9670;&nbsp;</a></span>DifferentialDrivePoseEstimator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +266,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">leftDistance</td><td>The distance traveled by the left encoder. </td></tr>
     <tr><td class="paramname">rightDistance</td><td>The distance traveled by the right encoder. </td></tr>
     <tr><td class="paramname">initialPose</td><td>The estimated initial pose. </td></tr>
-    <tr><td class="paramname">stateStdDevs</td><td>Standard deviations of model states. Increase these numbers to trust your model's state estimates less. This matrix is in the form [x, y, theta, dist_l, dist_r]ᵀ, with units in meters and radians. </td></tr>
+    <tr><td class="paramname">stateStdDevs</td><td>Standard deviations of model states. Increase these numbers to trust your model's state estimates less. This matrix is in the form [x, y, theta]ᵀ, with units in meters and radians. </td></tr>
     <tr><td class="paramname">visionMeasurementStdDevs</td><td>Standard deviations of the vision measurements. Increase these numbers to trust global measurements from vision less. This matrix is in the form [x, y, theta]ᵀ, with units in meters and radians. </td></tr>
   </table>
   </dd>
@@ -515,7 +577,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_differential_drive_pose_estimator.html">DifferentialDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sat Dec 3 2022 02:26:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Dec 3 2022 17:49:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

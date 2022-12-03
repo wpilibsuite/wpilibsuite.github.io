@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-61-g13cdc29</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-64-gff88756</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1_swerve_drive_pose_estimat
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af1c6c0300070345d37aeea4cb10e2f02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#af1c6c0300070345d37aeea4cb10e2f02">SwerveDrivePoseEstimator</a> (<a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;modulePositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose)</td></tr>
+<tr class="memdesc:af1c6c0300070345d37aeea4cb10e2f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html" title="This class wraps Swerve Drive Odometry to fuse latency-compensated vision measurements with swerve dr...">SwerveDrivePoseEstimator</a> with default standard deviations for the model and vision measurements.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#af1c6c0300070345d37aeea4cb10e2f02">More...</a><br /></td></tr>
+<tr class="separator:af1c6c0300070345d37aeea4cb10e2f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a825b81900d7e6d733cd63e20343eb569"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html#a825b81900d7e6d733cd63e20343eb569">SwerveDrivePoseEstimator</a> (<a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;modulePositions, const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;initialPose, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:a825b81900d7e6d733cd63e20343eb569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html" title="This class wraps Swerve Drive Odometry to fuse latency-compensated vision measurements with swerve dr...">SwerveDrivePoseEstimator</a>.  <a href="classfrc_1_1_swerve_drive_pose_estimator.html#a825b81900d7e6d733cd63e20343eb569">More...</a><br /></td></tr>
 <tr class="separator:a825b81900d7e6d733cd63e20343eb569"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,8 +144,70 @@ class frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</div><p >This class wrap
 <p ><b> x = [x, y, theta]ᵀ </b> in the field coordinate system containing x position, y position, and heading.</p>
 <p ><b> y = [x, y, theta]ᵀ </b> from vision containing x position, y position, and heading. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af1c6c0300070345d37aeea4cb10e2f02" name="af1c6c0300070345d37aeea4cb10e2f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c6c0300070345d37aeea4cb10e2f02">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t NumModules&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">frc::SwerveDrivePoseEstimator</a>&lt; NumModules &gt;::SwerveDrivePoseEstimator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_swerve_drive_kinematics.html">SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;&#160;</td>
+          <td class="paramname"><em>kinematics</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>gyroAngle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; <a class="el" href="structfrc_1_1_swerve_module_position.html">SwerveModulePosition</a>, NumModules &gt; &amp;&#160;</td>
+          <td class="paramname"><em>modulePositions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>initialPose</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html" title="This class wraps Swerve Drive Odometry to fuse latency-compensated vision measurements with swerve dr...">SwerveDrivePoseEstimator</a> with default standard deviations for the model and vision measurements. </p>
+<p >The default standard deviations of the model states are 0.1 meters for x, 0.1 meters for y, and 0.1 radians for heading. The default standard deviations of the vision measurements are 0.9 meters for x, 0.9 meters for y, and 0.9 radians for heading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kinematics</td><td>A correctly-configured kinematics object for your drivetrain. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The current gyro angle. </td></tr>
+    <tr><td class="paramname">modulePositions</td><td>The current distance and rotation measurements of the swerve modules. </td></tr>
+    <tr><td class="paramname">initialPose</td><td>The starting pose estimate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a825b81900d7e6d733cd63e20343eb569" name="a825b81900d7e6d733cd63e20343eb569"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a825b81900d7e6d733cd63e20343eb569">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a825b81900d7e6d733cd63e20343eb569">&#9670;&nbsp;</a></span>SwerveDrivePoseEstimator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -561,7 +626,7 @@ template&lt;size_t NumModules&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_swerve_drive_pose_estimator.html">SwerveDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sat Dec 3 2022 02:26:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Sat Dec 3 2022 17:49:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
