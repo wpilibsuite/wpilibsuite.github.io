@@ -61,7 +61,7 @@
 <span class="sourceLineNo">049</span><a id="line.49">  /**</a>
 <span class="sourceLineNo">050</span><a id="line.50">   * Estimate the current being drawn by this motor.</a>
 <span class="sourceLineNo">051</span><a id="line.51">   *</a>
-<span class="sourceLineNo">052</span><a id="line.52">   * @param speedRadiansPerSec The speed of the rotor.</a>
+<span class="sourceLineNo">052</span><a id="line.52">   * @param speedRadiansPerSec The speed of the motor.</a>
 <span class="sourceLineNo">053</span><a id="line.53">   * @param voltageInputVolts The input voltage.</a>
 <span class="sourceLineNo">054</span><a id="line.54">   * @return The estimated current.</a>
 <span class="sourceLineNo">055</span><a id="line.55">   */</a>
@@ -70,138 +70,186 @@
 <span class="sourceLineNo">058</span><a id="line.58">  }</a>
 <span class="sourceLineNo">059</span><a id="line.59"></a>
 <span class="sourceLineNo">060</span><a id="line.60">  /**</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * Return a gearbox of CIM motors.</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * Calculate the torque produced by the motor for a given current.</a>
 <span class="sourceLineNo">062</span><a id="line.62">   *</a>
-<span class="sourceLineNo">063</span><a id="line.63">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">064</span><a id="line.64">   * @return A gearbox of CIM motors.</a>
+<span class="sourceLineNo">063</span><a id="line.63">   * @param currentAmpere The current drawn by the motor.</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * @return The torque produced.</a>
 <span class="sourceLineNo">065</span><a id="line.65">   */</a>
-<span class="sourceLineNo">066</span><a id="line.66">  public static DCMotor getCIM(int numMotors) {</a>
-<span class="sourceLineNo">067</span><a id="line.67">    return new DCMotor(</a>
-<span class="sourceLineNo">068</span><a id="line.68">        12, 2.42, 133, 2.7, Units.rotationsPerMinuteToRadiansPerSecond(5310), numMotors);</a>
-<span class="sourceLineNo">069</span><a id="line.69">  }</a>
-<span class="sourceLineNo">070</span><a id="line.70"></a>
-<span class="sourceLineNo">071</span><a id="line.71">  /**</a>
-<span class="sourceLineNo">072</span><a id="line.72">   * Return a gearbox of 775Pro motors.</a>
-<span class="sourceLineNo">073</span><a id="line.73">   *</a>
-<span class="sourceLineNo">074</span><a id="line.74">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">075</span><a id="line.75">   * @return A gearbox of 775Pro motors.</a>
+<span class="sourceLineNo">066</span><a id="line.66">  public double getTorque(double currentAmpere) {</a>
+<span class="sourceLineNo">067</span><a id="line.67">    return currentAmpere * KtNMPerAmp;</a>
+<span class="sourceLineNo">068</span><a id="line.68">  }</a>
+<span class="sourceLineNo">069</span><a id="line.69"></a>
+<span class="sourceLineNo">070</span><a id="line.70">  /**</a>
+<span class="sourceLineNo">071</span><a id="line.71">   * Calculate the voltage provided to the motor at a given torque and angular velocity.</a>
+<span class="sourceLineNo">072</span><a id="line.72">   *</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * @param torqueNm The torque produced by the motor.</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * @param speedRadiansPerSec The speed of the motor.</a>
+<span class="sourceLineNo">075</span><a id="line.75">   * @return The voltage of the motor.</a>
 <span class="sourceLineNo">076</span><a id="line.76">   */</a>
-<span class="sourceLineNo">077</span><a id="line.77">  public static DCMotor getVex775Pro(int numMotors) {</a>
-<span class="sourceLineNo">078</span><a id="line.78">    return new DCMotor(</a>
-<span class="sourceLineNo">079</span><a id="line.79">        12, 0.71, 134, 0.7, Units.rotationsPerMinuteToRadiansPerSecond(18730), numMotors);</a>
-<span class="sourceLineNo">080</span><a id="line.80">  }</a>
-<span class="sourceLineNo">081</span><a id="line.81"></a>
-<span class="sourceLineNo">082</span><a id="line.82">  /**</a>
-<span class="sourceLineNo">083</span><a id="line.83">   * Return a gearbox of NEO motors.</a>
-<span class="sourceLineNo">084</span><a id="line.84">   *</a>
-<span class="sourceLineNo">085</span><a id="line.85">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">086</span><a id="line.86">   * @return A gearbox of NEO motors.</a>
+<span class="sourceLineNo">077</span><a id="line.77">  public double getVoltage(double torqueNm, double speedRadiansPerSec) {</a>
+<span class="sourceLineNo">078</span><a id="line.78">    return 1.0 / KvRadPerSecPerVolt * speedRadiansPerSec + 1.0 / KtNMPerAmp * rOhms * torqueNm;</a>
+<span class="sourceLineNo">079</span><a id="line.79">  }</a>
+<span class="sourceLineNo">080</span><a id="line.80"></a>
+<span class="sourceLineNo">081</span><a id="line.81">  /**</a>
+<span class="sourceLineNo">082</span><a id="line.82">   * Calculate the speed of the motor at a given torque and input voltage.</a>
+<span class="sourceLineNo">083</span><a id="line.83">   *</a>
+<span class="sourceLineNo">084</span><a id="line.84">   * @param torqueNm The torque produced by the motor.</a>
+<span class="sourceLineNo">085</span><a id="line.85">   * @param voltageInputVolts The voltage applied to the motor.</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * @return The speed of the motor.</a>
 <span class="sourceLineNo">087</span><a id="line.87">   */</a>
-<span class="sourceLineNo">088</span><a id="line.88">  public static DCMotor getNEO(int numMotors) {</a>
-<span class="sourceLineNo">089</span><a id="line.89">    return new DCMotor(</a>
-<span class="sourceLineNo">090</span><a id="line.90">        12, 2.6, 105, 1.8, Units.rotationsPerMinuteToRadiansPerSecond(5676), numMotors);</a>
-<span class="sourceLineNo">091</span><a id="line.91">  }</a>
-<span class="sourceLineNo">092</span><a id="line.92"></a>
-<span class="sourceLineNo">093</span><a id="line.93">  /**</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * Return a gearbox of MiniCIM motors.</a>
-<span class="sourceLineNo">095</span><a id="line.95">   *</a>
-<span class="sourceLineNo">096</span><a id="line.96">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">097</span><a id="line.97">   * @return A gearbox of MiniCIM motors.</a>
-<span class="sourceLineNo">098</span><a id="line.98">   */</a>
-<span class="sourceLineNo">099</span><a id="line.99">  public static DCMotor getMiniCIM(int numMotors) {</a>
-<span class="sourceLineNo">100</span><a id="line.100">    return new DCMotor(</a>
-<span class="sourceLineNo">101</span><a id="line.101">        12, 1.41, 89, 3, Units.rotationsPerMinuteToRadiansPerSecond(5840), numMotors);</a>
-<span class="sourceLineNo">102</span><a id="line.102">  }</a>
-<span class="sourceLineNo">103</span><a id="line.103"></a>
-<span class="sourceLineNo">104</span><a id="line.104">  /**</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * Return a gearbox of Bag motors.</a>
-<span class="sourceLineNo">106</span><a id="line.106">   *</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * @return A gearbox of Bag motors.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   */</a>
-<span class="sourceLineNo">110</span><a id="line.110">  public static DCMotor getBag(int numMotors) {</a>
-<span class="sourceLineNo">111</span><a id="line.111">    return new DCMotor(</a>
-<span class="sourceLineNo">112</span><a id="line.112">        12, 0.43, 53, 1.8, Units.rotationsPerMinuteToRadiansPerSecond(13180), numMotors);</a>
-<span class="sourceLineNo">113</span><a id="line.113">  }</a>
-<span class="sourceLineNo">114</span><a id="line.114"></a>
-<span class="sourceLineNo">115</span><a id="line.115">  /**</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * Return a gearbox of Andymark RS775-125 motors.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   *</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">119</span><a id="line.119">   * @return A gearbox of Andymark RS775-125 motors.</a>
-<span class="sourceLineNo">120</span><a id="line.120">   */</a>
-<span class="sourceLineNo">121</span><a id="line.121">  public static DCMotor getAndymarkRs775_125(int numMotors) {</a>
-<span class="sourceLineNo">122</span><a id="line.122">    return new DCMotor(</a>
-<span class="sourceLineNo">123</span><a id="line.123">        12, 0.28, 18, 1.6, Units.rotationsPerMinuteToRadiansPerSecond(5800.0), numMotors);</a>
-<span class="sourceLineNo">124</span><a id="line.124">  }</a>
-<span class="sourceLineNo">125</span><a id="line.125"></a>
-<span class="sourceLineNo">126</span><a id="line.126">  /**</a>
-<span class="sourceLineNo">127</span><a id="line.127">   * Return a gearbox of Banebots RS775 motors.</a>
-<span class="sourceLineNo">128</span><a id="line.128">   *</a>
-<span class="sourceLineNo">129</span><a id="line.129">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">130</span><a id="line.130">   * @return A gearbox of Banebots RS775 motors.</a>
-<span class="sourceLineNo">131</span><a id="line.131">   */</a>
-<span class="sourceLineNo">132</span><a id="line.132">  public static DCMotor getBanebotsRs775(int numMotors) {</a>
-<span class="sourceLineNo">133</span><a id="line.133">    return new DCMotor(</a>
-<span class="sourceLineNo">134</span><a id="line.134">        12, 0.72, 97, 2.7, Units.rotationsPerMinuteToRadiansPerSecond(13050.0), numMotors);</a>
-<span class="sourceLineNo">135</span><a id="line.135">  }</a>
-<span class="sourceLineNo">136</span><a id="line.136"></a>
-<span class="sourceLineNo">137</span><a id="line.137">  /**</a>
-<span class="sourceLineNo">138</span><a id="line.138">   * Return a gearbox of Andymark 9015 motors.</a>
-<span class="sourceLineNo">139</span><a id="line.139">   *</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">141</span><a id="line.141">   * @return A gearbox of Andymark 9015 motors.</a>
-<span class="sourceLineNo">142</span><a id="line.142">   */</a>
-<span class="sourceLineNo">143</span><a id="line.143">  public static DCMotor getAndymark9015(int numMotors) {</a>
-<span class="sourceLineNo">144</span><a id="line.144">    return new DCMotor(</a>
-<span class="sourceLineNo">145</span><a id="line.145">        12, 0.36, 71, 3.7, Units.rotationsPerMinuteToRadiansPerSecond(14270.0), numMotors);</a>
-<span class="sourceLineNo">146</span><a id="line.146">  }</a>
-<span class="sourceLineNo">147</span><a id="line.147"></a>
-<span class="sourceLineNo">148</span><a id="line.148">  /**</a>
-<span class="sourceLineNo">149</span><a id="line.149">   * Return a gearbox of Banebots RS 550 motors.</a>
-<span class="sourceLineNo">150</span><a id="line.150">   *</a>
-<span class="sourceLineNo">151</span><a id="line.151">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * @return A gearbox of Banebots RS 550 motors.</a>
-<span class="sourceLineNo">153</span><a id="line.153">   */</a>
-<span class="sourceLineNo">154</span><a id="line.154">  public static DCMotor getBanebotsRs550(int numMotors) {</a>
-<span class="sourceLineNo">155</span><a id="line.155">    return new DCMotor(</a>
-<span class="sourceLineNo">156</span><a id="line.156">        12, 0.38, 84, 0.4, Units.rotationsPerMinuteToRadiansPerSecond(19000.0), numMotors);</a>
-<span class="sourceLineNo">157</span><a id="line.157">  }</a>
-<span class="sourceLineNo">158</span><a id="line.158"></a>
-<span class="sourceLineNo">159</span><a id="line.159">  /**</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * Return a gearbox of NEO 550 motors.</a>
-<span class="sourceLineNo">161</span><a id="line.161">   *</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">163</span><a id="line.163">   * @return A gearbox of NEO 550 motors.</a>
-<span class="sourceLineNo">164</span><a id="line.164">   */</a>
-<span class="sourceLineNo">165</span><a id="line.165">  public static DCMotor getNeo550(int numMotors) {</a>
-<span class="sourceLineNo">166</span><a id="line.166">    return new DCMotor(</a>
-<span class="sourceLineNo">167</span><a id="line.167">        12, 0.97, 100, 1.4, Units.rotationsPerMinuteToRadiansPerSecond(11000.0), numMotors);</a>
-<span class="sourceLineNo">168</span><a id="line.168">  }</a>
-<span class="sourceLineNo">169</span><a id="line.169"></a>
-<span class="sourceLineNo">170</span><a id="line.170">  /**</a>
-<span class="sourceLineNo">171</span><a id="line.171">   * Return a gearbox of Falcon 500 motors.</a>
-<span class="sourceLineNo">172</span><a id="line.172">   *</a>
-<span class="sourceLineNo">173</span><a id="line.173">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">174</span><a id="line.174">   * @return A gearbox of Falcon 500 motors.</a>
-<span class="sourceLineNo">175</span><a id="line.175">   */</a>
-<span class="sourceLineNo">176</span><a id="line.176">  public static DCMotor getFalcon500(int numMotors) {</a>
-<span class="sourceLineNo">177</span><a id="line.177">    return new DCMotor(</a>
-<span class="sourceLineNo">178</span><a id="line.178">        12, 4.69, 257, 1.5, Units.rotationsPerMinuteToRadiansPerSecond(6380.0), numMotors);</a>
-<span class="sourceLineNo">179</span><a id="line.179">  }</a>
-<span class="sourceLineNo">180</span><a id="line.180"></a>
-<span class="sourceLineNo">181</span><a id="line.181">  /**</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * Return a gearbox of Romi/TI_RSLK MAX motors.</a>
-<span class="sourceLineNo">183</span><a id="line.183">   *</a>
-<span class="sourceLineNo">184</span><a id="line.184">   * @param numMotors Number of motors in the gearbox.</a>
-<span class="sourceLineNo">185</span><a id="line.185">   * @return A gearbox of Romi/TI_RSLK MAX motors.</a>
-<span class="sourceLineNo">186</span><a id="line.186">   */</a>
-<span class="sourceLineNo">187</span><a id="line.187">  public static DCMotor getRomiBuiltIn(int numMotors) {</a>
-<span class="sourceLineNo">188</span><a id="line.188">    // From https://www.pololu.com/product/1520/specs</a>
-<span class="sourceLineNo">189</span><a id="line.189">    return new DCMotor(</a>
-<span class="sourceLineNo">190</span><a id="line.190">        4.5, 0.1765, 1.25, 0.13, Units.rotationsPerMinuteToRadiansPerSecond(150.0), numMotors);</a>
-<span class="sourceLineNo">191</span><a id="line.191">  }</a>
-<span class="sourceLineNo">192</span><a id="line.192">}</a>
+<span class="sourceLineNo">088</span><a id="line.88">  public double getSpeed(double torqueNm, double voltageInputVolts) {</a>
+<span class="sourceLineNo">089</span><a id="line.89">    return voltageInputVolts - 1.0 / KtNMPerAmp * torqueNm * rOhms * KvRadPerSecPerVolt;</a>
+<span class="sourceLineNo">090</span><a id="line.90">  }</a>
+<span class="sourceLineNo">091</span><a id="line.91"></a>
+<span class="sourceLineNo">092</span><a id="line.92">  /**</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * Returns a copy of this motor with the given gearbox reduction applied.</a>
+<span class="sourceLineNo">094</span><a id="line.94">   *</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * @param gearboxReduction The gearbox reduction.</a>
+<span class="sourceLineNo">096</span><a id="line.96">   * @return A motor with the gearbox reduction applied.</a>
+<span class="sourceLineNo">097</span><a id="line.97">   */</a>
+<span class="sourceLineNo">098</span><a id="line.98">  public DCMotor withReduction(double gearboxReduction) {</a>
+<span class="sourceLineNo">099</span><a id="line.99">    return new DCMotor(</a>
+<span class="sourceLineNo">100</span><a id="line.100">        nominalVoltageVolts,</a>
+<span class="sourceLineNo">101</span><a id="line.101">        stallTorqueNewtonMeters * gearboxReduction,</a>
+<span class="sourceLineNo">102</span><a id="line.102">        stallCurrentAmps,</a>
+<span class="sourceLineNo">103</span><a id="line.103">        freeCurrentAmps,</a>
+<span class="sourceLineNo">104</span><a id="line.104">        freeSpeedRadPerSec / gearboxReduction,</a>
+<span class="sourceLineNo">105</span><a id="line.105">        1);</a>
+<span class="sourceLineNo">106</span><a id="line.106">  }</a>
+<span class="sourceLineNo">107</span><a id="line.107"></a>
+<span class="sourceLineNo">108</span><a id="line.108">  /**</a>
+<span class="sourceLineNo">109</span><a id="line.109">   * Return a gearbox of CIM motors.</a>
+<span class="sourceLineNo">110</span><a id="line.110">   *</a>
+<span class="sourceLineNo">111</span><a id="line.111">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">112</span><a id="line.112">   * @return A gearbox of CIM motors.</a>
+<span class="sourceLineNo">113</span><a id="line.113">   */</a>
+<span class="sourceLineNo">114</span><a id="line.114">  public static DCMotor getCIM(int numMotors) {</a>
+<span class="sourceLineNo">115</span><a id="line.115">    return new DCMotor(</a>
+<span class="sourceLineNo">116</span><a id="line.116">        12, 2.42, 133, 2.7, Units.rotationsPerMinuteToRadiansPerSecond(5310), numMotors);</a>
+<span class="sourceLineNo">117</span><a id="line.117">  }</a>
+<span class="sourceLineNo">118</span><a id="line.118"></a>
+<span class="sourceLineNo">119</span><a id="line.119">  /**</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * Return a gearbox of 775Pro motors.</a>
+<span class="sourceLineNo">121</span><a id="line.121">   *</a>
+<span class="sourceLineNo">122</span><a id="line.122">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @return A gearbox of 775Pro motors.</a>
+<span class="sourceLineNo">124</span><a id="line.124">   */</a>
+<span class="sourceLineNo">125</span><a id="line.125">  public static DCMotor getVex775Pro(int numMotors) {</a>
+<span class="sourceLineNo">126</span><a id="line.126">    return new DCMotor(</a>
+<span class="sourceLineNo">127</span><a id="line.127">        12, 0.71, 134, 0.7, Units.rotationsPerMinuteToRadiansPerSecond(18730), numMotors);</a>
+<span class="sourceLineNo">128</span><a id="line.128">  }</a>
+<span class="sourceLineNo">129</span><a id="line.129"></a>
+<span class="sourceLineNo">130</span><a id="line.130">  /**</a>
+<span class="sourceLineNo">131</span><a id="line.131">   * Return a gearbox of NEO motors.</a>
+<span class="sourceLineNo">132</span><a id="line.132">   *</a>
+<span class="sourceLineNo">133</span><a id="line.133">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * @return A gearbox of NEO motors.</a>
+<span class="sourceLineNo">135</span><a id="line.135">   */</a>
+<span class="sourceLineNo">136</span><a id="line.136">  public static DCMotor getNEO(int numMotors) {</a>
+<span class="sourceLineNo">137</span><a id="line.137">    return new DCMotor(</a>
+<span class="sourceLineNo">138</span><a id="line.138">        12, 2.6, 105, 1.8, Units.rotationsPerMinuteToRadiansPerSecond(5676), numMotors);</a>
+<span class="sourceLineNo">139</span><a id="line.139">  }</a>
+<span class="sourceLineNo">140</span><a id="line.140"></a>
+<span class="sourceLineNo">141</span><a id="line.141">  /**</a>
+<span class="sourceLineNo">142</span><a id="line.142">   * Return a gearbox of MiniCIM motors.</a>
+<span class="sourceLineNo">143</span><a id="line.143">   *</a>
+<span class="sourceLineNo">144</span><a id="line.144">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">145</span><a id="line.145">   * @return A gearbox of MiniCIM motors.</a>
+<span class="sourceLineNo">146</span><a id="line.146">   */</a>
+<span class="sourceLineNo">147</span><a id="line.147">  public static DCMotor getMiniCIM(int numMotors) {</a>
+<span class="sourceLineNo">148</span><a id="line.148">    return new DCMotor(</a>
+<span class="sourceLineNo">149</span><a id="line.149">        12, 1.41, 89, 3, Units.rotationsPerMinuteToRadiansPerSecond(5840), numMotors);</a>
+<span class="sourceLineNo">150</span><a id="line.150">  }</a>
+<span class="sourceLineNo">151</span><a id="line.151"></a>
+<span class="sourceLineNo">152</span><a id="line.152">  /**</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * Return a gearbox of Bag motors.</a>
+<span class="sourceLineNo">154</span><a id="line.154">   *</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * @return A gearbox of Bag motors.</a>
+<span class="sourceLineNo">157</span><a id="line.157">   */</a>
+<span class="sourceLineNo">158</span><a id="line.158">  public static DCMotor getBag(int numMotors) {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    return new DCMotor(</a>
+<span class="sourceLineNo">160</span><a id="line.160">        12, 0.43, 53, 1.8, Units.rotationsPerMinuteToRadiansPerSecond(13180), numMotors);</a>
+<span class="sourceLineNo">161</span><a id="line.161">  }</a>
+<span class="sourceLineNo">162</span><a id="line.162"></a>
+<span class="sourceLineNo">163</span><a id="line.163">  /**</a>
+<span class="sourceLineNo">164</span><a id="line.164">   * Return a gearbox of Andymark RS775-125 motors.</a>
+<span class="sourceLineNo">165</span><a id="line.165">   *</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">167</span><a id="line.167">   * @return A gearbox of Andymark RS775-125 motors.</a>
+<span class="sourceLineNo">168</span><a id="line.168">   */</a>
+<span class="sourceLineNo">169</span><a id="line.169">  public static DCMotor getAndymarkRs775_125(int numMotors) {</a>
+<span class="sourceLineNo">170</span><a id="line.170">    return new DCMotor(</a>
+<span class="sourceLineNo">171</span><a id="line.171">        12, 0.28, 18, 1.6, Units.rotationsPerMinuteToRadiansPerSecond(5800.0), numMotors);</a>
+<span class="sourceLineNo">172</span><a id="line.172">  }</a>
+<span class="sourceLineNo">173</span><a id="line.173"></a>
+<span class="sourceLineNo">174</span><a id="line.174">  /**</a>
+<span class="sourceLineNo">175</span><a id="line.175">   * Return a gearbox of Banebots RS775 motors.</a>
+<span class="sourceLineNo">176</span><a id="line.176">   *</a>
+<span class="sourceLineNo">177</span><a id="line.177">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">178</span><a id="line.178">   * @return A gearbox of Banebots RS775 motors.</a>
+<span class="sourceLineNo">179</span><a id="line.179">   */</a>
+<span class="sourceLineNo">180</span><a id="line.180">  public static DCMotor getBanebotsRs775(int numMotors) {</a>
+<span class="sourceLineNo">181</span><a id="line.181">    return new DCMotor(</a>
+<span class="sourceLineNo">182</span><a id="line.182">        12, 0.72, 97, 2.7, Units.rotationsPerMinuteToRadiansPerSecond(13050.0), numMotors);</a>
+<span class="sourceLineNo">183</span><a id="line.183">  }</a>
+<span class="sourceLineNo">184</span><a id="line.184"></a>
+<span class="sourceLineNo">185</span><a id="line.185">  /**</a>
+<span class="sourceLineNo">186</span><a id="line.186">   * Return a gearbox of Andymark 9015 motors.</a>
+<span class="sourceLineNo">187</span><a id="line.187">   *</a>
+<span class="sourceLineNo">188</span><a id="line.188">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">189</span><a id="line.189">   * @return A gearbox of Andymark 9015 motors.</a>
+<span class="sourceLineNo">190</span><a id="line.190">   */</a>
+<span class="sourceLineNo">191</span><a id="line.191">  public static DCMotor getAndymark9015(int numMotors) {</a>
+<span class="sourceLineNo">192</span><a id="line.192">    return new DCMotor(</a>
+<span class="sourceLineNo">193</span><a id="line.193">        12, 0.36, 71, 3.7, Units.rotationsPerMinuteToRadiansPerSecond(14270.0), numMotors);</a>
+<span class="sourceLineNo">194</span><a id="line.194">  }</a>
+<span class="sourceLineNo">195</span><a id="line.195"></a>
+<span class="sourceLineNo">196</span><a id="line.196">  /**</a>
+<span class="sourceLineNo">197</span><a id="line.197">   * Return a gearbox of Banebots RS 550 motors.</a>
+<span class="sourceLineNo">198</span><a id="line.198">   *</a>
+<span class="sourceLineNo">199</span><a id="line.199">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">200</span><a id="line.200">   * @return A gearbox of Banebots RS 550 motors.</a>
+<span class="sourceLineNo">201</span><a id="line.201">   */</a>
+<span class="sourceLineNo">202</span><a id="line.202">  public static DCMotor getBanebotsRs550(int numMotors) {</a>
+<span class="sourceLineNo">203</span><a id="line.203">    return new DCMotor(</a>
+<span class="sourceLineNo">204</span><a id="line.204">        12, 0.38, 84, 0.4, Units.rotationsPerMinuteToRadiansPerSecond(19000.0), numMotors);</a>
+<span class="sourceLineNo">205</span><a id="line.205">  }</a>
+<span class="sourceLineNo">206</span><a id="line.206"></a>
+<span class="sourceLineNo">207</span><a id="line.207">  /**</a>
+<span class="sourceLineNo">208</span><a id="line.208">   * Return a gearbox of NEO 550 motors.</a>
+<span class="sourceLineNo">209</span><a id="line.209">   *</a>
+<span class="sourceLineNo">210</span><a id="line.210">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">211</span><a id="line.211">   * @return A gearbox of NEO 550 motors.</a>
+<span class="sourceLineNo">212</span><a id="line.212">   */</a>
+<span class="sourceLineNo">213</span><a id="line.213">  public static DCMotor getNeo550(int numMotors) {</a>
+<span class="sourceLineNo">214</span><a id="line.214">    return new DCMotor(</a>
+<span class="sourceLineNo">215</span><a id="line.215">        12, 0.97, 100, 1.4, Units.rotationsPerMinuteToRadiansPerSecond(11000.0), numMotors);</a>
+<span class="sourceLineNo">216</span><a id="line.216">  }</a>
+<span class="sourceLineNo">217</span><a id="line.217"></a>
+<span class="sourceLineNo">218</span><a id="line.218">  /**</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * Return a gearbox of Falcon 500 motors.</a>
+<span class="sourceLineNo">220</span><a id="line.220">   *</a>
+<span class="sourceLineNo">221</span><a id="line.221">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">222</span><a id="line.222">   * @return A gearbox of Falcon 500 motors.</a>
+<span class="sourceLineNo">223</span><a id="line.223">   */</a>
+<span class="sourceLineNo">224</span><a id="line.224">  public static DCMotor getFalcon500(int numMotors) {</a>
+<span class="sourceLineNo">225</span><a id="line.225">    return new DCMotor(</a>
+<span class="sourceLineNo">226</span><a id="line.226">        12, 4.69, 257, 1.5, Units.rotationsPerMinuteToRadiansPerSecond(6380.0), numMotors);</a>
+<span class="sourceLineNo">227</span><a id="line.227">  }</a>
+<span class="sourceLineNo">228</span><a id="line.228"></a>
+<span class="sourceLineNo">229</span><a id="line.229">  /**</a>
+<span class="sourceLineNo">230</span><a id="line.230">   * Return a gearbox of Romi/TI_RSLK MAX motors.</a>
+<span class="sourceLineNo">231</span><a id="line.231">   *</a>
+<span class="sourceLineNo">232</span><a id="line.232">   * @param numMotors Number of motors in the gearbox.</a>
+<span class="sourceLineNo">233</span><a id="line.233">   * @return A gearbox of Romi/TI_RSLK MAX motors.</a>
+<span class="sourceLineNo">234</span><a id="line.234">   */</a>
+<span class="sourceLineNo">235</span><a id="line.235">  public static DCMotor getRomiBuiltIn(int numMotors) {</a>
+<span class="sourceLineNo">236</span><a id="line.236">    // From https://www.pololu.com/product/1520/specs</a>
+<span class="sourceLineNo">237</span><a id="line.237">    return new DCMotor(</a>
+<span class="sourceLineNo">238</span><a id="line.238">        4.5, 0.1765, 1.25, 0.13, Units.rotationsPerMinuteToRadiansPerSecond(150.0), numMotors);</a>
+<span class="sourceLineNo">239</span><a id="line.239">  }</a>
+<span class="sourceLineNo">240</span><a id="line.240">}</a>
 
 
 
