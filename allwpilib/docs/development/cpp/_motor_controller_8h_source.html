@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-69-geab0d92</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-71-g8618dd4</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('_motor_controller_8h_source.html','');
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classfrc_1_1_motor_controller.html#a3503fdec17aee39377815ef1d252b239">   23</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_motor_controller.html#a3503fdec17aee39377815ef1d252b239">Set</a>(<span class="keywordtype">double</span> speed) = 0;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * Sets the voltage output of the SpeedController.  Compensates for</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * Sets the voltage output of the MotorController.  Compensates for</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   * the current bus voltage to ensure that the desired voltage is output even</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   * if the battery voltage is below 12V - highly useful when the voltage</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * outputs are &quot;meaningful&quot; (e.g. they come from a feedforward calculation).</span></div>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('_motor_controller_8h_source.html','');
 <div class="ttc" id="aclassfrc_1_1_motor_controller_html_a3503fdec17aee39377815ef1d252b239"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#a3503fdec17aee39377815ef1d252b239">frc::MotorController::Set</a></div><div class="ttdeci">virtual void Set(double speed)=0</div><div class="ttdoc">Common interface for setting the speed of a motor controller.</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_controller_html_a362047a8c830e3a436cd944216459614"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#a362047a8c830e3a436cd944216459614">frc::MotorController::Disable</a></div><div class="ttdeci">virtual void Disable()=0</div><div class="ttdoc">Common interface for disabling a motor.</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_controller_html_a3dc030e926e929eeca97d812c603473c"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#a3dc030e926e929eeca97d812c603473c">frc::MotorController::SetInverted</a></div><div class="ttdeci">virtual void SetInverted(bool isInverted)=0</div><div class="ttdoc">Common interface for inverting direction of a motor controller.</div></div>
-<div class="ttc" id="aclassfrc_1_1_motor_controller_html_a613c23a3336e103876e433bcb8b5ad3e"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#a613c23a3336e103876e433bcb8b5ad3e">frc::MotorController::SetVoltage</a></div><div class="ttdeci">virtual void SetVoltage(units::volt_t output)</div><div class="ttdoc">Sets the voltage output of the SpeedController.</div></div>
+<div class="ttc" id="aclassfrc_1_1_motor_controller_html_a613c23a3336e103876e433bcb8b5ad3e"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#a613c23a3336e103876e433bcb8b5ad3e">frc::MotorController::SetVoltage</a></div><div class="ttdeci">virtual void SetVoltage(units::volt_t output)</div><div class="ttdoc">Sets the voltage output of the MotorController.</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_controller_html_a80ee5f38bb4211492c94253d27538c54"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#a80ee5f38bb4211492c94253d27538c54">frc::MotorController::StopMotor</a></div><div class="ttdeci">virtual void StopMotor()=0</div><div class="ttdoc">Common interface to stop the motor until Set is called again.</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_controller_html_abcf93830f33e4867adfa87624f4257fb"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#abcf93830f33e4867adfa87624f4257fb">frc::MotorController::Get</a></div><div class="ttdeci">virtual double Get() const =0</div><div class="ttdoc">Common interface for getting the current set speed of a motor controller.</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_controller_html_acebc615a0549f255b8a002fde8972cb1"><div class="ttname"><a href="classfrc_1_1_motor_controller.html#acebc615a0549f255b8a002fde8972cb1">frc::MotorController::GetInverted</a></div><div class="ttdeci">virtual bool GetInverted() const =0</div><div class="ttdoc">Common interface for returning the inversion state of a motor controller.</div></div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('_motor_controller_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_d0a9c1f552287e8d1bf6d4228ef74d88.html">motorcontrol</a></li><li class="navelem"><a class="el" href="_motor_controller_8h.html">MotorController.h</a></li>
-    <li class="footer">Generated on Mon Dec 5 2022 21:49:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Dec 6 2022 04:09:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

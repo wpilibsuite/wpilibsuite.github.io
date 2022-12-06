@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-69-geab0d92</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-71-g8618dd4</span>
    </div>
   </td>
  </tr>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3503fdec17aee39377815ef1d252b239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for setting the speed of a motor controller.  <a href="classfrc_1_1_motor_controller.html#a3503fdec17aee39377815ef1d252b239">More...</a><br /></td></tr>
 <tr class="separator:a3503fdec17aee39377815ef1d252b239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613c23a3336e103876e433bcb8b5ad3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#a613c23a3336e103876e433bcb8b5ad3e">SetVoltage</a> (units::volt_t output)</td></tr>
-<tr class="memdesc:a613c23a3336e103876e433bcb8b5ad3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voltage output of the SpeedController.  <a href="classfrc_1_1_motor_controller.html#a613c23a3336e103876e433bcb8b5ad3e">More...</a><br /></td></tr>
+<tr class="memdesc:a613c23a3336e103876e433bcb8b5ad3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voltage output of the <a class="el" href="classfrc_1_1_motor_controller.html" title="Interface for motor controlling devices.">MotorController</a>.  <a href="classfrc_1_1_motor_controller.html#a613c23a3336e103876e433bcb8b5ad3e">More...</a><br /></td></tr>
 <tr class="separator:a613c23a3336e103876e433bcb8b5ad3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf93830f33e4867adfa87624f4257fb"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_controller.html#abcf93830f33e4867adfa87624f4257fb">Get</a> () const =0</td></tr>
 <tr class="memdesc:abcf93830f33e4867adfa87624f4257fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for getting the current set speed of a motor controller.  <a href="classfrc_1_1_motor_controller.html#abcf93830f33e4867adfa87624f4257fb">More...</a><br /></td></tr>
@@ -366,7 +366,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets the voltage output of the SpeedController. </p>
+<p>Sets the voltage output of the <a class="el" href="classfrc_1_1_motor_controller.html" title="Interface for motor controlling devices.">MotorController</a>. </p>
 <p >Compensates for the current bus voltage to ensure that the desired voltage is output even if the battery voltage is below 12V - highly useful when the voltage outputs are "meaningful" (e.g. they come from a feedforward calculation).</p>
 <p >NOTE: This function <em>must</em> be called regularly in order for voltage compensation to work properly - unlike the ordinary set function, it is not "set it and forget it."</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -418,7 +418,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_motor_controller.html">MotorController</a></li>
-    <li class="footer">Generated on Mon Dec 5 2022 21:49:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Tue Dec 6 2022 04:09:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
