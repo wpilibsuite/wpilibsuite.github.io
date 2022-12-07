@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-72-g3149dc6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-77-gbe27171</span>
    </div>
   </td>
  </tr>
@@ -99,11 +99,7 @@ $(document).ready(function(){initNavTree('_computer_vision_util_8h.html',''); in
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="_symbol_exports_8h_source.html">wpi/SymbolExports.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="_pose3d_8h_source.html">frc/geometry/Pose3d.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_rotation2d_8h_source.html">frc/geometry/Rotation2d.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_transform3d_8h_source.html">frc/geometry/Transform3d.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_translation3d_8h_source.html">frc/geometry/Translation3d.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="angle_8h_source.html">units/angle.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="length_8h_source.html">units/length.h</a>&quot;</code><br />
 </div>
 <p><a href="_computer_vision_util_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -114,21 +110,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a13c2933c98c2b87c2a51a5b88bf59cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> units::meter_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a13c2933c98c2b87c2a51a5b88bf59cf4">frc::CalculateDistanceToTarget</a> (units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch, units::radian_t targetYaw)</td></tr>
-<tr class="memdesc:a13c2933c98c2b87c2a51a5b88bf59cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm from <a href="https://docs.limelightvision.io/en/latest/cs_estimating_distance.html">https://docs.limelightvision.io/en/latest/cs_estimating_distance.html</a> Estimates range to a target using the target's elevation.  <a href="namespacefrc.html#a13c2933c98c2b87c2a51a5b88bf59cf4">More...</a><br /></td></tr>
-<tr class="separator:a13c2933c98c2b87c2a51a5b88bf59cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fcf968dde451ac8c5a7549abb289770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">frc::EstimateFieldToRobot</a> (units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;targetYaw, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToRobot)</td></tr>
-<tr class="memdesc:a5fcf968dde451ac8c5a7549abb289770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the position of the robot in the field.  <a href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">More...</a><br /></td></tr>
-<tr class="separator:a5fcf968dde451ac8c5a7549abb289770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a438357c0dd6f2a736608cf2ec19cc31d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a438357c0dd6f2a736608cf2ec19cc31d">frc::EstimateFieldToRobot</a> (const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToRobot)</td></tr>
-<tr class="memdesc:a438357c0dd6f2a736608cf2ec19cc31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera.  <a href="namespacefrc.html#a438357c0dd6f2a736608cf2ec19cc31d">More...</a><br /></td></tr>
-<tr class="separator:a438357c0dd6f2a736608cf2ec19cc31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0b73cf20abd503d668560f43a7b2c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aeb0b73cf20abd503d668560f43a7b2c1">frc::EstimateCameraToTarget</a> (const <a class="el" href="classfrc_1_1_translation3d.html">frc::Translation3d</a> &amp;cameraToTargetTranslation, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;gyroAngle)</td></tr>
-<tr class="memdesc:aeb0b73cf20abd503d668560f43a7b2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates a <a class="el" href="classfrc_1_1_transform3d.html" title="Represents a transformation for a Pose3d.">Transform3d</a> that maps the camera position to the target position, using the robot's gyro.  <a href="namespacefrc.html#aeb0b73cf20abd503d668560f43a7b2c1">More...</a><br /></td></tr>
-<tr class="separator:aeb0b73cf20abd503d668560f43a7b2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b8d9aa206445d7589f7de21a9709e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">frc::EstimateFieldToCamera</a> (const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget)</td></tr>
-<tr class="memdesc:a85b8d9aa206445d7589f7de21a9709e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field.  <a href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">More...</a><br /></td></tr>
-<tr class="separator:a85b8d9aa206445d7589f7de21a9709e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bef22fc46c0b06c7c438e34d653102"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a28bef22fc46c0b06c7c438e34d653102">frc::ObjectToRobotPose</a> (const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;objectInField, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToObject, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;robotToCamera)</td></tr>
+<tr class="memdesc:a28bef22fc46c0b06c7c438e34d653102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the robot's pose in the field coordinate system given an object's field-relative pose, the transformation from the camera's pose to the object's pose (obtained via computer vision), and the transformation from the robot's pose to the camera's pose.  <a href="namespacefrc.html#a28bef22fc46c0b06c7c438e34d653102">More...</a><br /></td></tr>
+<tr class="separator:a28bef22fc46c0b06c7c438e34d653102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -136,7 +120,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="_computer_vision_util_8h.html">ComputerVisionUtil.h</a></li>
-    <li class="footer">Generated on Tue Dec 6 2022 23:13:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 05:16:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

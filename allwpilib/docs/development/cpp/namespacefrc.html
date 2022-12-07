@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-72-g3149dc6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-77-gbe27171</span>
    </div>
   </td>
  </tr>
@@ -1058,21 +1058,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af81b951f5d542b8247edd00243513ec8"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af81b951f5d542b8247edd00243513ec8">RKDP</a> (F &amp;&amp;f, T x, U u, units::second_t dt, double maxError=1e-6)</td></tr>
 <tr class="memdesc:af81b951f5d542b8247edd00243513ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs adaptive Dormand-Prince integration of dx/dt = f(x, u) for dt.  <a href="namespacefrc.html#af81b951f5d542b8247edd00243513ec8">More...</a><br /></td></tr>
 <tr class="separator:af81b951f5d542b8247edd00243513ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13c2933c98c2b87c2a51a5b88bf59cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> units::meter_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a13c2933c98c2b87c2a51a5b88bf59cf4">CalculateDistanceToTarget</a> (units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch, units::radian_t targetYaw)</td></tr>
-<tr class="memdesc:a13c2933c98c2b87c2a51a5b88bf59cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Algorithm from <a href="https://docs.limelightvision.io/en/latest/cs_estimating_distance.html">https://docs.limelightvision.io/en/latest/cs_estimating_distance.html</a> Estimates range to a target using the target's elevation.  <a href="namespacefrc.html#a13c2933c98c2b87c2a51a5b88bf59cf4">More...</a><br /></td></tr>
-<tr class="separator:a13c2933c98c2b87c2a51a5b88bf59cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fcf968dde451ac8c5a7549abb289770"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">EstimateFieldToRobot</a> (units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;targetYaw, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;gyroAngle, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToRobot)</td></tr>
-<tr class="memdesc:a5fcf968dde451ac8c5a7549abb289770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimate the position of the robot in the field.  <a href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">More...</a><br /></td></tr>
-<tr class="separator:a5fcf968dde451ac8c5a7549abb289770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a438357c0dd6f2a736608cf2ec19cc31d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a438357c0dd6f2a736608cf2ec19cc31d">EstimateFieldToRobot</a> (const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToRobot)</td></tr>
-<tr class="memdesc:a438357c0dd6f2a736608cf2ec19cc31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera.  <a href="namespacefrc.html#a438357c0dd6f2a736608cf2ec19cc31d">More...</a><br /></td></tr>
-<tr class="separator:a438357c0dd6f2a736608cf2ec19cc31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0b73cf20abd503d668560f43a7b2c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aeb0b73cf20abd503d668560f43a7b2c1">EstimateCameraToTarget</a> (const <a class="el" href="classfrc_1_1_translation3d.html">frc::Translation3d</a> &amp;cameraToTargetTranslation, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget, const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;gyroAngle)</td></tr>
-<tr class="memdesc:aeb0b73cf20abd503d668560f43a7b2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates a <a class="el" href="classfrc_1_1_transform3d.html" title="Represents a transformation for a Pose3d.">Transform3d</a> that maps the camera position to the target position, using the robot's gyro.  <a href="namespacefrc.html#aeb0b73cf20abd503d668560f43a7b2c1">More...</a><br /></td></tr>
-<tr class="separator:aeb0b73cf20abd503d668560f43a7b2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85b8d9aa206445d7589f7de21a9709e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">EstimateFieldToCamera</a> (const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToTarget, const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;fieldToTarget)</td></tr>
-<tr class="memdesc:a85b8d9aa206445d7589f7de21a9709e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field.  <a href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">More...</a><br /></td></tr>
-<tr class="separator:a85b8d9aa206445d7589f7de21a9709e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bef22fc46c0b06c7c438e34d653102"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a28bef22fc46c0b06c7c438e34d653102">ObjectToRobotPose</a> (const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;objectInField, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;cameraToObject, const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;robotToCamera)</td></tr>
+<tr class="memdesc:a28bef22fc46c0b06c7c438e34d653102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the robot's pose in the field coordinate system given an object's field-relative pose, the transformation from the camera's pose to the object's pose (obtained via computer vision), and the transformation from the robot's pose to the camera's pose.  <a href="namespacefrc.html#a28bef22fc46c0b06c7c438e34d653102">More...</a><br /></td></tr>
+<tr class="separator:a28bef22fc46c0b06c7c438e34d653102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -2107,66 +2095,6 @@ template&lt;typename T , typename  = std::enable_if_t&lt;std::disjunction_v&lt; 
 
 </div>
 </div>
-<a id="a13c2933c98c2b87c2a51a5b88bf59cf4" name="a13c2933c98c2b87c2a51a5b88bf59cf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13c2933c98c2b87c2a51a5b88bf59cf4">&#9670;&nbsp;</a></span>CalculateDistanceToTarget()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> units::meter_t frc::CalculateDistanceToTarget </td>
-          <td>(</td>
-          <td class="paramtype">units::meter_t&#160;</td>
-          <td class="paramname"><em>cameraHeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::meter_t&#160;</td>
-          <td class="paramname"><em>targetHeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::radian_t&#160;</td>
-          <td class="paramname"><em>cameraPitch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::radian_t&#160;</td>
-          <td class="paramname"><em>targetPitch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::radian_t&#160;</td>
-          <td class="paramname"><em>targetYaw</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Algorithm from <a href="https://docs.limelightvision.io/en/latest/cs_estimating_distance.html">https://docs.limelightvision.io/en/latest/cs_estimating_distance.html</a> Estimates range to a target using the target's elevation. </p>
-<p >This method can produce more stable results than SolvePNP when well tuned, if the full 6d robot pose is not required.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cameraHeight</td><td>The height of the camera off the floor. </td></tr>
-    <tr><td class="paramname">targetHeight</td><td>The height of the target off the floor. </td></tr>
-    <tr><td class="paramname">cameraPitch</td><td>The pitch of the camera from the horizontal plane. Positive values up. </td></tr>
-    <tr><td class="paramname">targetPitch</td><td>The pitch of the target in the camera's lens. Positive values up. </td></tr>
-    <tr><td class="paramname">targetYaw</td><td>The yaw of the target in the camera's lens. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The estimated distance to the target. </dd></dl>
-
-</div>
-</div>
 <a id="a402cc4a794a3ea4e084fc271c24351fe" name="a402cc4a794a3ea4e084fc271c24351fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a402cc4a794a3ea4e084fc271c24351fe">&#9670;&nbsp;</a></span>ClampInputMaxMagnitude()</h2>
 
@@ -2567,216 +2495,6 @@ template&lt;int Outputs&gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="aeb0b73cf20abd503d668560f43a7b2c1" name="aeb0b73cf20abd503d668560f43a7b2c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0b73cf20abd503d668560f43a7b2c1">&#9670;&nbsp;</a></span>EstimateCameraToTarget()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> frc::EstimateCameraToTarget </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_translation3d.html">frc::Translation3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>cameraToTargetTranslation</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>fieldToTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>gyroAngle</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Estimates a <a class="el" href="classfrc_1_1_transform3d.html" title="Represents a transformation for a Pose3d.">Transform3d</a> that maps the camera position to the target position, using the robot's gyro. </p>
-<p >Note that the gyro angle provided <em>must</em> line up with the field coordinate system &ndash; that is, it should read zero degrees when pointed towards the opposing alliance station, and increase as the robot rotates CCW.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cameraToTargetTranslation</td><td>A <a class="el" href="classfrc_1_1_translation3d.html" title="Represents a translation in 3D space.">Translation3d</a> that encodes the x/y position of the target relative to the camera. </td></tr>
-    <tr><td class="paramname">fieldToTarget</td><td>A <a class="el" href="classfrc_1_1_pose3d.html" title="Represents a 3D pose containing translational and rotational elements.">Pose3d</a> representing the target position in the field coordinate system. </td></tr>
-    <tr><td class="paramname">gyroAngle</td><td>The current robot gyro angle, likely from odometry. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="classfrc_1_1_transform3d.html" title="Represents a transformation for a Pose3d.">Transform3d</a> that takes us from the camera to the target. </dd></dl>
-
-</div>
-</div>
-<a id="a85b8d9aa206445d7589f7de21a9709e2" name="a85b8d9aa206445d7589f7de21a9709e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b8d9aa206445d7589f7de21a9709e2">&#9670;&nbsp;</a></span>EstimateFieldToCamera()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> frc::EstimateFieldToCamera </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>cameraToTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>fieldToTarget</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field. </p>
-<p >This <em>only</em> tracks the position of the camera, not the position of the robot itself.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cameraToTarget</td><td>The position of the target relative to the camera. </td></tr>
-    <tr><td class="paramname">fieldToTarget</td><td>The position of the target in the field. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The position of the camera in the field. </dd></dl>
-
-</div>
-</div>
-<a id="a438357c0dd6f2a736608cf2ec19cc31d" name="a438357c0dd6f2a736608cf2ec19cc31d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a438357c0dd6f2a736608cf2ec19cc31d">&#9670;&nbsp;</a></span>EstimateFieldToRobot() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> frc::EstimateFieldToRobot </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>cameraToTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>fieldToTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>cameraToRobot</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cameraToTarget</td><td>The position of the target relative to the camera. </td></tr>
-    <tr><td class="paramname">fieldToTarget</td><td>The position of the target in the field. </td></tr>
-    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform3d.html" title="Represents a transformation for a Pose3d.">frc::Transform3d</a>{3_in, 0_in, 0_in, <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">frc::Rotation3d</a>{}}. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The position of the robot in the field. </dd></dl>
-
-</div>
-</div>
-<a id="a5fcf968dde451ac8c5a7549abb289770" name="a5fcf968dde451ac8c5a7549abb289770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fcf968dde451ac8c5a7549abb289770">&#9670;&nbsp;</a></span>EstimateFieldToRobot() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> frc::EstimateFieldToRobot </td>
-          <td>(</td>
-          <td class="paramtype">units::meter_t&#160;</td>
-          <td class="paramname"><em>cameraHeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::meter_t&#160;</td>
-          <td class="paramname"><em>targetHeight</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::radian_t&#160;</td>
-          <td class="paramname"><em>cameraPitch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::radian_t&#160;</td>
-          <td class="paramname"><em>targetPitch</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>targetYaw</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>gyroAngle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>fieldToTarget</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>cameraToRobot</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Estimate the position of the robot in the field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cameraHeight</td><td>The physical height of the camera off the floor. </td></tr>
-    <tr><td class="paramname">targetHeight</td><td>The physical height of the target off the floor. This should be the height of whatever is being targeted (i.e. if the targeting region is set to top, this should be the height of the top of the target). </td></tr>
-    <tr><td class="paramname">cameraPitch</td><td>The pitch of the camera from the horizontal plane. Positive values up. </td></tr>
-    <tr><td class="paramname">targetPitch</td><td>The pitch of the target in the camera's lens. Positive values up. </td></tr>
-    <tr><td class="paramname">targetYaw</td><td>The observed yaw of the target. Note that this <em>must</em> be CCW-positive, and Photon returns CW-positive. </td></tr>
-    <tr><td class="paramname">gyroAngle</td><td>The current robot gyro angle, likely from odometry. </td></tr>
-    <tr><td class="paramname">fieldToTarget</td><td>A <a class="el" href="classfrc_1_1_pose3d.html" title="Represents a 3D pose containing translational and rotational elements.">Pose3d</a> representing the target position in the field coordinate system. </td></tr>
-    <tr><td class="paramname">cameraToRobot</td><td>The position of the robot relative to the camera. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform3d.html" title="Represents a transformation for a Pose3d.">frc::Transform3d</a>{3_in, 0_in, 0_in, <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">frc::Rotation3d</a>{}}. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The position of the robot in the field. </dd></dl>
 
 </div>
 </div>
@@ -3904,6 +3622,52 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 
 </div>
 </div>
+<a id="a28bef22fc46c0b06c7c438e34d653102" name="a28bef22fc46c0b06c7c438e34d653102"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28bef22fc46c0b06c7c438e34d653102">&#9670;&nbsp;</a></span>ObjectToRobotPose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> frc::ObjectToRobotPose </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>objectInField</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>cameraToObject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>robotToCamera</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the robot's pose in the field coordinate system given an object's field-relative pose, the transformation from the camera's pose to the object's pose (obtained via computer vision), and the transformation from the robot's pose to the camera's pose. </p>
+<p >The object could be a target or a fiducial marker.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objectInField</td><td>An object's field-relative pose. </td></tr>
+    <tr><td class="paramname">cameraToObject</td><td>The transformation from the camera's pose to the object's pose. This comes from computer vision. </td></tr>
+    <tr><td class="paramname">robotToCamera</td><td>The transformation from the robot's pose to the camera's pose. This can either be a constant for a rigidly mounted camera, or variable if the camera is mounted to a turret. If the camera was mounted 3 inches behind the "origin" (usually physical center) of the robot, this would be <a class="el" href="classfrc_1_1_transform3d.html" title="Represents a transformation for a Pose3d.">frc::Transform3d</a>{3_in, 0_in, 0_in, <a class="el" href="classfrc_1_1_rotation3d.html" title="A rotation in a 3D coordinate frame represented by a quaternion.">frc::Rotation3d</a>{}}. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The robot's field-relative pose. </dd></dl>
+
+</div>
+</div>
 <a id="ac339c0933066b20131a6e2f13ec1118c" name="ac339c0933066b20131a6e2f13ec1118c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac339c0933066b20131a6e2f13ec1118c">&#9670;&nbsp;</a></span>PoseTo3dVector()</h2>
 
@@ -4940,7 +4704,7 @@ template&lt;class... Wheels&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Tue Dec 6 2022 23:13:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 05:16:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

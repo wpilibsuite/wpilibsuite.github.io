@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-72-g3149dc6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-77-gbe27171</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_command_group_base.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classfrc2_1_1_command_group_base-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc2::CommandGroupBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -117,10 +116,10 @@ Inheritance diagram for frc2::CommandGroupBase:</div>
 <area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandGroupBase, ParallelDeadlineGroup &gt;" shape="rect" coords="443,168,876,192"/>
 <area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandGroupBase, ParallelRaceGroup &gt;" shape="rect" coords="886,168,1319,192"/>
 <area href="classfrc2_1_1_command_helper.html" alt="frc2::CommandHelper&lt; CommandGroupBase, SequentialCommandGroup &gt;" shape="rect" coords="1329,168,1762,192"/>
-<area href="classfrc2_1_1_parallel_command_group.html" title="A CommandGroup that runs a set of commands in parallel, ending when the last command ends." alt="frc2::ParallelCommandGroup" shape="rect" coords="0,224,433,248"/>
-<area href="classfrc2_1_1_parallel_deadline_group.html" title="A CommandGroup that runs a set of commands in parallel, ending only when a specific command (the &quot;dea..." alt="frc2::ParallelDeadlineGroup" shape="rect" coords="443,224,876,248"/>
-<area href="classfrc2_1_1_parallel_race_group.html" title="A CommandGroup that runs a set of commands in parallel, ending when any one of the commands ends and ..." alt="frc2::ParallelRaceGroup" shape="rect" coords="886,224,1319,248"/>
-<area href="classfrc2_1_1_sequential_command_group.html" title="A CommandGroups that runs a list of commands in sequence." alt="frc2::SequentialCommandGroup" shape="rect" coords="1329,224,1762,248"/>
+<area href="classfrc2_1_1_parallel_command_group.html" title="A command composition that runs a set of commands in parallel, ending when the last command ends." alt="frc2::ParallelCommandGroup" shape="rect" coords="0,224,433,248"/>
+<area href="classfrc2_1_1_parallel_deadline_group.html" title="A command composition that runs a set of commands in parallel, ending only when a specific command (t..." alt="frc2::ParallelDeadlineGroup" shape="rect" coords="443,224,876,248"/>
+<area href="classfrc2_1_1_parallel_race_group.html" title="A composition that runs a set of commands in parallel, ending when any one of the commands ends and i..." alt="frc2::ParallelRaceGroup" shape="rect" coords="886,224,1319,248"/>
+<area href="classfrc2_1_1_sequential_command_group.html" title="A command composition that runs a list of commands in sequence." alt="frc2::SequentialCommandGroup" shape="rect" coords="1329,224,1762,248"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -247,6 +246,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf24aef63d176810eb1376defc1116b4 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">HasRequirement</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *requirement) const</td></tr>
 <tr class="memdesc:acf24aef63d176810eb1376defc1116b4 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command requires a given subsystem.  <a href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">More...</a><br /></td></tr>
 <tr class="separator:acf24aef63d176810eb1376defc1116b4 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ca846a2352e09cab706774de891ebd inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd">IsComposed</a> () const</td></tr>
+<tr class="memdesc:a71ca846a2352e09cab706774de891ebd inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command is currently grouped in a command group.  <a href="classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd">More...</a><br /></td></tr>
+<tr class="separator:a71ca846a2352e09cab706774de891ebd inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accda431cd9ce9555963633f8818252d7 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7">SetComposed</a> (bool isComposed)</td></tr>
+<tr class="memdesc:accda431cd9ce9555963633f8818252d7 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the command is currently composed in a command composition.  <a href="classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7">More...</a><br /></td></tr>
+<tr class="separator:accda431cd9ce9555963633f8818252d7 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81972b9524bbf1080ce61fd962493e40 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40">IsGrouped</a> () const</td></tr>
 <tr class="memdesc:a81972b9524bbf1080ce61fd962493e40 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command is currently grouped in a command group.  <a href="classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40">More...</a><br /></td></tr>
 <tr class="separator:a81972b9524bbf1080ce61fd962493e40 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,21 +289,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a87ded177225c388fb17ba11ab007aaf5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_group_base.html#a87ded177225c388fb17ba11ab007aaf5">RequireUngrouped</a> (const <a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;command)</td></tr>
-<tr class="memdesc:a87ded177225c388fb17ba11ab007aaf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires that the specified command not have been already allocated to a CommandGroup.  <a href="classfrc2_1_1_command_group_base.html#a87ded177225c388fb17ba11ab007aaf5">More...</a><br /></td></tr>
-<tr class="separator:a87ded177225c388fb17ba11ab007aaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8f420401c29e124d6b660a01377ea22"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_group_base.html#ae8f420401c29e124d6b660a01377ea22">RequireUngrouped</a> (const <a class="el" href="classfrc2_1_1_command.html">Command</a> *command)</td></tr>
-<tr class="memdesc:ae8f420401c29e124d6b660a01377ea22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires that the specified command not have been already allocated to a CommandGroup.  <a href="classfrc2_1_1_command_group_base.html#ae8f420401c29e124d6b660a01377ea22">More...</a><br /></td></tr>
-<tr class="separator:ae8f420401c29e124d6b660a01377ea22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48ef1db31e8e612190a64b69745009fc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_group_base.html#a48ef1db31e8e612190a64b69745009fc">RequireUngrouped</a> (std::span&lt; const std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &gt; commands)</td></tr>
-<tr class="memdesc:a48ef1db31e8e612190a64b69745009fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires that the specified commands not have been already allocated to a CommandGroup.  <a href="classfrc2_1_1_command_group_base.html#a48ef1db31e8e612190a64b69745009fc">More...</a><br /></td></tr>
-<tr class="separator:a48ef1db31e8e612190a64b69745009fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb960dc9c15ba570bdabd16e8464dc2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_group_base.html#a3fb960dc9c15ba570bdabd16e8464dc2">RequireUngrouped</a> (std::initializer_list&lt; const <a class="el" href="classfrc2_1_1_command.html">Command</a> * &gt; commands)</td></tr>
-<tr class="memdesc:a3fb960dc9c15ba570bdabd16e8464dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requires that the specified commands not have been already allocated to a CommandGroup.  <a href="classfrc2_1_1_command_group_base.html#a3fb960dc9c15ba570bdabd16e8464dc2">More...</a><br /></td></tr>
-<tr class="separator:a3fb960dc9c15ba570bdabd16e8464dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classfrc2_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfrc2_1_1_command')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td></tr>
@@ -323,13 +313,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a48dd8f10481cd16e75fb9c6cb49ccbb6 inherit pro_attribs_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_set.html">wpi::SmallSet</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a48dd8f10481cd16e75fb9c6cb49ccbb6">m_requirements</a></td></tr>
 <tr class="separator:a48dd8f10481cd16e75fb9c6cb49ccbb6 inherit pro_attribs_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classfrc2_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc2_1_1_command')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td></tr>
-<tr class="memitem:a3e88666fcca3af7a516176a2a18dfb6c inherit pro_attribs_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">m_isGrouped</a> = false</td></tr>
-<tr class="separator:a3e88666fcca3af7a516176a2a18dfb6c inherit pro_attribs_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7287664e19e024995953f4c79a059391 inherit pro_attribs_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a7287664e19e024995953f4c79a059391">m_isComposed</a> = false</td></tr>
+<tr class="separator:a7287664e19e024995953f4c79a059391 inherit pro_attribs_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A base for CommandGroups. </p>
-<p >Statically tracks commands that have been allocated to groups to ensure those commands are not also used independently, which can result in inconsistent command state and unpredictable execution.</p>
-<p >This class is provided by the NewCommands VendorDep </p>
+<p >This class is provided by the NewCommands VendorDep </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>This class is an empty abstraction. Inherit directly from <a class="el" href="classfrc2_1_1_command_base.html" title="A Sendable base class for Commands.">CommandBase</a>. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a191300536f18d7f575148b040887ad7e" name="a191300536f18d7f575148b040887ad7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a191300536f18d7f575148b040887ad7e">&#9670;&nbsp;</a></span>AddCommands()</h2>
@@ -365,150 +354,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a87ded177225c388fb17ba11ab007aaf5" name="a87ded177225c388fb17ba11ab007aaf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87ded177225c388fb17ba11ab007aaf5">&#9670;&nbsp;</a></span>RequireUngrouped() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool frc2::CommandGroupBase::RequireUngrouped </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&#160;</td>
-          <td class="paramname"><em>command</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Requires that the specified command not have been already allocated to a CommandGroup. </p>
-<p >Reports an error if the command is already grouped.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">command</td><td>The command to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all the command is ungrouped. </dd></dl>
-
-</div>
-</div>
-<a id="ae8f420401c29e124d6b660a01377ea22" name="ae8f420401c29e124d6b660a01377ea22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8f420401c29e124d6b660a01377ea22">&#9670;&nbsp;</a></span>RequireUngrouped() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool frc2::CommandGroupBase::RequireUngrouped </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc2_1_1_command.html">Command</a> *&#160;</td>
-          <td class="paramname"><em>command</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Requires that the specified command not have been already allocated to a CommandGroup. </p>
-<p >Reports an error if the command is already grouped.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">command</td><td>The command to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all the command is ungrouped. </dd></dl>
-
-</div>
-</div>
-<a id="a3fb960dc9c15ba570bdabd16e8464dc2" name="a3fb960dc9c15ba570bdabd16e8464dc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb960dc9c15ba570bdabd16e8464dc2">&#9670;&nbsp;</a></span>RequireUngrouped() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool frc2::CommandGroupBase::RequireUngrouped </td>
-          <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; const <a class="el" href="classfrc2_1_1_command.html">Command</a> * &gt;&#160;</td>
-          <td class="paramname"><em>commands</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Requires that the specified commands not have been already allocated to a CommandGroup. </p>
-<p >Reports an error if any of the commands are already grouped.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">commands</td><td>The commands to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all the commands are ungrouped. </dd></dl>
-
-</div>
-</div>
-<a id="a48ef1db31e8e612190a64b69745009fc" name="a48ef1db31e8e612190a64b69745009fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48ef1db31e8e612190a64b69745009fc">&#9670;&nbsp;</a></span>RequireUngrouped() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool frc2::CommandGroupBase::RequireUngrouped </td>
-          <td>(</td>
-          <td class="paramtype">std::span&lt; const std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &gt;&#160;</td>
-          <td class="paramname"><em>commands</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Requires that the specified commands not have been already allocated to a CommandGroup. </p>
-<p >Reports an error if any of the commands are already grouped.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">commands</td><td>The commands to check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if all the commands are ungrouped. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc2/command/<a class="el" href="_command_group_base_8h_source.html">CommandGroupBase.h</a></li>
 </ul>
@@ -518,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command_group_base.html">CommandGroupBase</a></li>
-    <li class="footer">Generated on Tue Dec 6 2022 23:13:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 05:16:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

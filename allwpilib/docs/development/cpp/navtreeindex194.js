@@ -1,11 +1,5 @@
 var NAVTREEINDEX194 =
 {
-"struct_n_t___timestamped_float_array.html#ac711669c7f0629dc27c75f47f6347eea":[5,0,207,3],
-"struct_n_t___timestamped_integer.html":[5,0,208],
-"struct_n_t___timestamped_integer.html#a6908ddfe2534d495c7cdd28ca54245bf":[5,0,208,1],
-"struct_n_t___timestamped_integer.html#a831f6767c00310246298e2c941c3fb79":[5,0,208,0],
-"struct_n_t___timestamped_integer.html#a8ebd48c4ef76c9b70595848c202c04c8":[5,0,208,2],
-"struct_n_t___timestamped_integer_array.html":[5,0,209],
 "struct_n_t___timestamped_integer_array.html#a06a65f3bec40328b94adef1c30f2f5f0":[5,0,209,0],
 "struct_n_t___timestamped_integer_array.html#a534c76a7a1e96dca306bf664774ea9b2":[5,0,209,2],
 "struct_n_t___timestamped_integer_array.html#abcef6a0aad36dd417526420d752e26dd":[5,0,209,3],
@@ -249,5 +243,11 @@ var NAVTREEINDEX194 =
 "structchrono__formatter.html#ae1ceaa40e710d424a31dc346146861b7":[5,0,53,9],
 "structchrono__formatter.html#ae3ca8ab5e9c96c24919a324205b93b90":[5,0,53,38],
 "structchrono__formatter.html#ae5d47c99df249a6771ea392f63439108":[5,0,53,32],
-"structchrono__formatter.html#ae77b2a99a9c5ba5f8ab0b3c2d1fadced":[5,0,53,35]
+"structchrono__formatter.html#ae77b2a99a9c5ba5f8ab0b3c2d1fadced":[5,0,53,35],
+"structchrono__formatter.html#ae7f39197b9ce28edf4fa79d07774293f":[5,0,53,34],
+"structchrono__formatter.html#aeb57a1ead86c3001d8fc7c2166dd3535":[5,0,53,13],
+"structchrono__formatter.html#aecaf3f06fe22f9e04edb4656b8039d64":[5,0,53,21],
+"structchrono__formatter.html#aee388d6537f95041fa7f17adc141511c":[5,0,53,2],
+"structchrono__formatter.html#aef9d770b96d40e5cbd05ffc79d312d39":[5,0,53,26],
+"structchrono__formatter.html#afa27c67e4e76322c6f4a02ba4330e5b0":[5,0,53,18]
 };

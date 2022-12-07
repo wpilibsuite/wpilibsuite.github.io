@@ -1,11 +1,5 @@
 var NAVTREEINDEX204 =
 {
-"structwpi_1_1_web_socket_1_1_frame.html#ad89f72b281d473a92d48a8262913e5f4":[5,0,14,199,1,10],
-"structwpi_1_1_web_socket_1_1_frame.html#af2db548bf155bcb8693c5b02813e3deb":[4,0,24,200,1,9],
-"structwpi_1_1_web_socket_1_1_frame.html#af2db548bf155bcb8693c5b02813e3deb":[5,0,14,199,1,9],
-"structwpi_1_1_web_socket_1_1_frame.html#af7744e7c7e7abd3be5a3ff3168ddb33a":[4,0,24,200,1,2],
-"structwpi_1_1_web_socket_1_1_frame.html#af7744e7c7e7abd3be5a3ff3168ddb33a":[5,0,14,199,1,2],
-"structwpi_1_1_web_socket_server_1_1_server_options.html":[4,0,24,201,0],
 "structwpi_1_1_web_socket_server_1_1_server_options.html":[5,0,14,200,0],
 "structwpi_1_1_web_socket_server_1_1_server_options.html#a2c701fd5cce082c62724827b83593a42":[4,0,24,201,0,1],
 "structwpi_1_1_web_socket_server_1_1_server_options.html#a2c701fd5cce082c62724827b83593a42":[5,0,14,200,0,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX204 =
 "structwpi_1_1detail_1_1is__compatible__integer__type.html":[5,0,14,0,27],
 "structwpi_1_1detail_1_1is__compatible__integer__type.html#ae403ccd4846850c899bc734aba703a84":[4,0,24,0,27,0],
 "structwpi_1_1detail_1_1is__compatible__integer__type.html#ae403ccd4846850c899bc734aba703a84":[5,0,14,0,27,0],
-"structwpi_1_1detail_1_1is__compatible__integer__type__impl.html":[4,0,24,0,28]
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl.html":[4,0,24,0,28],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl.html":[5,0,14,0,28],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01_real_integer_type_00_0f4c653c5d50ee25b2348a9a9e62e804d.html":[5,0,14,0,29],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01_real_integer_type_00_0f4c653c5d50ee25b2348a9a9e62e804d.html":[4,0,24,0,29],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01_real_integer_type_00_0f4c653c5d50ee25b2348a9a9e62e804d.html#a5a66d173796f602eba4acb4fb22e6305":[5,0,14,0,29,1],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01_real_integer_type_00_0f4c653c5d50ee25b2348a9a9e62e804d.html#a5a66d173796f602eba4acb4fb22e6305":[4,0,24,0,29,1],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01_real_integer_type_00_0f4c653c5d50ee25b2348a9a9e62e804d.html#a6c8e0955c6fbaf9ed2e9a2731c12aa3f":[4,0,24,0,29,2]
 };

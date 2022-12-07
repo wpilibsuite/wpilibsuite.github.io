@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-72-g3149dc6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-77-gbe27171</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classfrc2_1_1_conditional_command.html
 </div><!--header-->
 <div class="contents">
 
-<p>Runs one of two commands, depending on the value of the given condition when this command is initialized.  
+<p>A command composition that runs one of two commands, depending on the value of the given condition when this command is initialized.  
  <a href="classfrc2_1_1_conditional_command.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_conditional_command_8h_source.html">frc2/command/ConditionalCommand.h</a>&gt;</code></p>
@@ -120,10 +120,10 @@ Inheritance diagram for frc2::ConditionalCommand:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a188a04a41c25300aa50ce8b1d258eb32"><td class="memTemplParams" colspan="2">template&lt;class T1 , class T2 , typename  = std::enable_if_t&lt;                std::is_base_of_v&lt;Command, std::remove_reference_t&lt;T1&gt;&gt;&gt;, typename  = std::enable_if_t&lt;                std::is_base_of_v&lt;Command, std::remove_reference_t&lt;T2&gt;&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a188a04a41c25300aa50ce8b1d258eb32"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_conditional_command.html#a188a04a41c25300aa50ce8b1d258eb32">ConditionalCommand</a> (T1 &amp;&amp;onTrue, T2 &amp;&amp;onFalse, std::function&lt; bool()&gt; condition)</td></tr>
-<tr class="memdesc:a188a04a41c25300aa50ce8b1d258eb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="Runs one of two commands, depending on the value of the given condition when this command is initiali...">ConditionalCommand</a>.  <a href="classfrc2_1_1_conditional_command.html#a188a04a41c25300aa50ce8b1d258eb32">More...</a><br /></td></tr>
+<tr class="memdesc:a188a04a41c25300aa50ce8b1d258eb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="A command composition that runs one of two commands, depending on the value of the given condition wh...">ConditionalCommand</a>.  <a href="classfrc2_1_1_conditional_command.html#a188a04a41c25300aa50ce8b1d258eb32">More...</a><br /></td></tr>
 <tr class="separator:a188a04a41c25300aa50ce8b1d258eb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b734c0817eea439a5727f99683f9fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_conditional_command.html#a08b734c0817eea439a5727f99683f9fa">ConditionalCommand</a> (std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;onTrue, std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt; &amp;&amp;onFalse, std::function&lt; bool()&gt; condition)</td></tr>
-<tr class="memdesc:a08b734c0817eea439a5727f99683f9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="Runs one of two commands, depending on the value of the given condition when this command is initiali...">ConditionalCommand</a>.  <a href="classfrc2_1_1_conditional_command.html#a08b734c0817eea439a5727f99683f9fa">More...</a><br /></td></tr>
+<tr class="memdesc:a08b734c0817eea439a5727f99683f9fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="A command composition that runs one of two commands, depending on the value of the given condition wh...">ConditionalCommand</a>.  <a href="classfrc2_1_1_conditional_command.html#a08b734c0817eea439a5727f99683f9fa">More...</a><br /></td></tr>
 <tr class="separator:a08b734c0817eea439a5727f99683f9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac09e0fbc02c6bef973fbf3c0d8df3589"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_conditional_command.html#ac09e0fbc02c6bef973fbf3c0d8df3589">ConditionalCommand</a> (<a class="el" href="classfrc2_1_1_conditional_command.html">ConditionalCommand</a> &amp;&amp;other)=default</td></tr>
 <tr class="separator:ac09e0fbc02c6bef973fbf3c0d8df3589"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,6 +267,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf24aef63d176810eb1376defc1116b4 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">HasRequirement</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *requirement) const</td></tr>
 <tr class="memdesc:acf24aef63d176810eb1376defc1116b4 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command requires a given subsystem.  <a href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">More...</a><br /></td></tr>
 <tr class="separator:acf24aef63d176810eb1376defc1116b4 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ca846a2352e09cab706774de891ebd inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd">IsComposed</a> () const</td></tr>
+<tr class="memdesc:a71ca846a2352e09cab706774de891ebd inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command is currently grouped in a command group.  <a href="classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd">More...</a><br /></td></tr>
+<tr class="separator:a71ca846a2352e09cab706774de891ebd inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accda431cd9ce9555963633f8818252d7 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7">SetComposed</a> (bool isComposed)</td></tr>
+<tr class="memdesc:accda431cd9ce9555963633f8818252d7 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the command is currently composed in a command composition.  <a href="classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7">More...</a><br /></td></tr>
+<tr class="separator:accda431cd9ce9555963633f8818252d7 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81972b9524bbf1080ce61fd962493e40 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40">IsGrouped</a> () const</td></tr>
 <tr class="memdesc:a81972b9524bbf1080ce61fd962493e40 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command is currently grouped in a command group.  <a href="classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40">More...</a><br /></td></tr>
 <tr class="separator:a81972b9524bbf1080ce61fd962493e40 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,16 +336,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a48dd8f10481cd16e75fb9c6cb49ccbb6 inherit pro_attribs_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_set.html">wpi::SmallSet</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a48dd8f10481cd16e75fb9c6cb49ccbb6">m_requirements</a></td></tr>
 <tr class="separator:a48dd8f10481cd16e75fb9c6cb49ccbb6 inherit pro_attribs_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classfrc2_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc2_1_1_command')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td></tr>
-<tr class="memitem:a3e88666fcca3af7a516176a2a18dfb6c inherit pro_attribs_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">m_isGrouped</a> = false</td></tr>
-<tr class="separator:a3e88666fcca3af7a516176a2a18dfb6c inherit pro_attribs_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7287664e19e024995953f4c79a059391 inherit pro_attribs_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a7287664e19e024995953f4c79a059391">m_isComposed</a> = false</td></tr>
+<tr class="separator:a7287664e19e024995953f4c79a059391 inherit pro_attribs_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Runs one of two commands, depending on the value of the given condition when this command is initialized. </p>
-<p >Does not actually schedule the selected command</p><ul>
-<li>rather, the command is run through this command; this ensures that the command will behave as expected if used as part of a CommandGroup. Requires the requirements of both commands, again to ensure proper functioning when used in a CommandGroup. If this is undesired, consider using <a class="el" href="classfrc2_1_1_schedule_command.html" title="Schedules the given commands when this command is initialized.">ScheduleCommand</a>.</li>
-</ul>
-<p >As this command contains multiple component commands within it, it is technically a command group; the command instances that are passed to it cannot be added to any other groups, or scheduled individually.</p>
-<p >As a rule, CommandGroups require the union of the requirements of their component commands.</p>
+<div class="textblock"><p >A command composition that runs one of two commands, depending on the value of the given condition when this command is initialized. </p>
+<p >The rules for command compositions apply: command instances that are passed to it are owned by the composition and cannot be added to any other composition or scheduled individually, and the composition requires all subsystems its components require.</p>
 <p >This class is provided by the NewCommands VendorDep</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc2_1_1_schedule_command.html" title="Schedules the given commands when this command is initialized.">ScheduleCommand</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -385,7 +387,7 @@ template&lt;class T1 , class T2 , typename  = std::enable_if_t&lt;              
 </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="Runs one of two commands, depending on the value of the given condition when this command is initiali...">ConditionalCommand</a>. </p>
+<p>Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="A command composition that runs one of two commands, depending on the value of the given condition wh...">ConditionalCommand</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">onTrue</td><td>the command to run if the condition is true </td></tr>
@@ -429,7 +431,7 @@ template&lt;class T1 , class T2 , typename  = std::enable_if_t&lt;              
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="Runs one of two commands, depending on the value of the given condition when this command is initiali...">ConditionalCommand</a>. </p>
+<p>Creates a new <a class="el" href="classfrc2_1_1_conditional_command.html" title="A command composition that runs one of two commands, depending on the value of the given condition wh...">ConditionalCommand</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">onTrue</td><td>the command to run if the condition is true </td></tr>
@@ -662,7 +664,7 @@ template&lt;class T1 , class T2 , typename  = std::enable_if_t&lt;              
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_conditional_command.html">ConditionalCommand</a></li>
-    <li class="footer">Generated on Tue Dec 6 2022 23:13:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 05:16:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-72-g3149dc6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-77-gbe27171</span>
    </div>
   </td>
  </tr>
@@ -231,6 +231,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf24aef63d176810eb1376defc1116b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">HasRequirement</a> (<a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *requirement) const</td></tr>
 <tr class="memdesc:acf24aef63d176810eb1376defc1116b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command requires a given subsystem.  <a href="classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4">More...</a><br /></td></tr>
 <tr class="separator:acf24aef63d176810eb1376defc1116b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ca846a2352e09cab706774de891ebd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd">IsComposed</a> () const</td></tr>
+<tr class="memdesc:a71ca846a2352e09cab706774de891ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command is currently grouped in a command group.  <a href="classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd">More...</a><br /></td></tr>
+<tr class="separator:a71ca846a2352e09cab706774de891ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accda431cd9ce9555963633f8818252d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7">SetComposed</a> (bool isComposed)</td></tr>
+<tr class="memdesc:accda431cd9ce9555963633f8818252d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the command is currently composed in a command composition.  <a href="classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7">More...</a><br /></td></tr>
+<tr class="separator:accda431cd9ce9555963633f8818252d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81972b9524bbf1080ce61fd962493e40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40">IsGrouped</a> () const</td></tr>
 <tr class="memdesc:a81972b9524bbf1080ce61fd962493e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command is currently grouped in a command group.  <a href="classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40">More...</a><br /></td></tr>
 <tr class="separator:a81972b9524bbf1080ce61fd962493e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,8 +267,8 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a3e88666fcca3af7a516176a2a18dfb6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">m_isGrouped</a> = false</td></tr>
-<tr class="separator:a3e88666fcca3af7a516176a2a18dfb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7287664e19e024995953f4c79a059391"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a7287664e19e024995953f4c79a059391">m_isComposed</a> = false</td></tr>
+<tr class="separator:a7287664e19e024995953f4c79a059391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -908,6 +914,26 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a71ca846a2352e09cab706774de891ebd" name="a71ca846a2352e09cab706774de891ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ca846a2352e09cab706774de891ebd">&#9670;&nbsp;</a></span>IsComposed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc2::Command::IsComposed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the command is currently grouped in a command group. </p>
+<p >Used as extra insurance to prevent accidental independent use of grouped commands. </p>
+
+</div>
+</div>
 <a id="af5e8c12152d195a4f3c06789366aac88" name="af5e8c12152d195a4f3c06789366aac88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5e8c12152d195a4f3c06789366aac88">&#9670;&nbsp;</a></span>IsFinished()</h2>
 
@@ -955,7 +981,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether the command is currently grouped in a command group. </p>
-<p >Used as extra insurance to prevent accidental independent use of grouped commands. </p>
+<p >Used as extra insurance to prevent accidental independent use of grouped commands.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Moved to <a class="el" href="classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd" title="Whether the command is currently grouped in a command group.">IsComposed()</a> </dd></dl>
 
 </div>
 </div>
@@ -975,7 +1002,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether or not the command is currently scheduled. </p>
-<p >Note that this does not detect whether the command is being run by a CommandGroup, only whether it is directly being run by the scheduler.</p>
+<p >Note that this does not detect whether the command is in a composition, only whether it is directly being run by the scheduler.</p>
 <dl class="section return"><dt>Returns</dt><dd>Whether the command is scheduled. </dd></dl>
 
 </div>
@@ -1118,6 +1145,27 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="accda431cd9ce9555963633f8818252d7" name="accda431cd9ce9555963633f8818252d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accda431cd9ce9555963633f8818252d7">&#9670;&nbsp;</a></span>SetComposed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc2::Command::SetComposed </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isComposed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets whether the command is currently composed in a command composition. </p>
+<p >Can be used to "reclaim" a command if a composition is no longer going to use it. NOT ADVISED! </p>
+
+</div>
+</div>
 <a id="a8c3e7ee729136e7e7e18e1e3a48a079a" name="a8c3e7ee729136e7e7e18e1e3a48a079a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c3e7ee729136e7e7e18e1e3a48a079a">&#9670;&nbsp;</a></span>SetGrouped()</h2>
 
@@ -1135,7 +1183,8 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets whether the command is currently grouped in a command group. </p>
-<p >Can be used to "reclaim" a command if a group is no longer going to use it. NOT ADVISED! </p>
+<p >Can be used to "reclaim" a command if a group is no longer going to use it. NOT ADVISED!</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000011">Deprecated:</a></b></dt><dd>Moved to <a class="el" href="classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7" title="Sets whether the command is currently composed in a command composition.">SetComposed()</a> </dd></dl>
 
 </div>
 </div>
@@ -1428,8 +1477,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3e88666fcca3af7a516176a2a18dfb6c" name="a3e88666fcca3af7a516176a2a18dfb6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e88666fcca3af7a516176a2a18dfb6c">&#9670;&nbsp;</a></span>m_isGrouped</h2>
+<a id="a7287664e19e024995953f4c79a059391" name="a7287664e19e024995953f4c79a059391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7287664e19e024995953f4c79a059391">&#9670;&nbsp;</a></span>m_isComposed</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1438,7 +1487,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc2::Command::m_isGrouped = false</td>
+          <td class="memname">bool frc2::Command::m_isComposed = false</td>
         </tr>
       </table>
   </td>
@@ -1459,7 +1508,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_command.html">Command</a></li>
-    <li class="footer">Generated on Tue Dec 6 2022 23:13:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 05:16:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

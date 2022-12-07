@@ -1,9 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"_swerve_drive_odometry_8inc.html":[6,0,5,6,11],
-"_swerve_drive_pose_estimator_8h.html":[6,0,5,1,9],
-"_swerve_drive_pose_estimator_8h.html#a2d137160d8fe76de7d65a2b1adc8d6d7":[6,0,5,1,9,1],
-"_swerve_drive_pose_estimator_8h_source.html":[6,0,5,1,9],
 "_swerve_module_position_8h.html":[6,0,5,6,12],
 "_swerve_module_position_8h_source.html":[6,0,5,6,12],
 "_swerve_module_state_8h.html":[6,0,5,6,13],
@@ -249,5 +245,9 @@ var NAVTREEINDEX22 =
 "_watchdog_8h_source.html":[6,0,4,82],
 "_web_socket_8h.html":[6,0,16,24],
 "_web_socket_8h_source.html":[6,0,16,24],
-"_web_socket_server_8h.html":[6,0,16,25]
+"_web_socket_server_8h.html":[6,0,16,25],
+"_web_socket_server_8h_source.html":[6,0,16,25],
+"_widget_type_8h.html":[6,0,4,7,20],
+"_widget_type_8h_source.html":[6,0,4,7,20],
+"_windows_error_8h.html":[6,0,11,3,0,0,40]
 };

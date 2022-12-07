@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-72-g3149dc6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-77-gbe27171</span>
    </div>
   </td>
  </tr>
@@ -103,144 +103,49 @@ $(document).ready(function(){initNavTree('_computer_vision_util_8h_source.html',
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_symbol_exports_8h.html">wpi/SymbolExports.h</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_pose3d_8h.html">frc/geometry/Pose3d.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_rotation2d_8h.html">frc/geometry/Rotation2d.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_transform3d_8h.html">frc/geometry/Transform3d.h</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_translation3d_8h.html">frc/geometry/Translation3d.h</a>&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="angle_8h.html">units/angle.h</a>&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="length_8h.html">units/length.h</a>&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * Algorithm from</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * https://docs.limelightvision.io/en/latest/cs_estimating_distance.html</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * Estimates range to a target using the target&#39;s elevation. This method can</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * produce more stable results than SolvePNP when well tuned, if the full 6d</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * robot pose is not required.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * @param cameraHeight The height of the camera off the floor.</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * @param targetHeight The height of the target off the floor.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * @param cameraPitch The pitch of the camera from the horizontal plane.</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *                    Positive values up.</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * @param targetPitch The pitch of the target in the camera&#39;s lens. Positive</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *                    values up.</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * @param targetYaw The yaw of the target in the camera&#39;s lens.</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * @return The estimated distance to the target.</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespacefrc.html#a13c2933c98c2b87c2a51a5b88bf59cf4">   35</a></span>units::meter_t <a class="code hl_function" href="namespacefrc.html#a13c2933c98c2b87c2a51a5b88bf59cf4">CalculateDistanceToTarget</a>(units::meter_t cameraHeight,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                         units::meter_t targetHeight,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                         units::radian_t cameraPitch,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                                         units::radian_t targetPitch,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                         units::radian_t targetYaw);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"></span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * Estimate the position of the robot in the field.</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * @param cameraHeight The physical height of the camera off the floor.</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * @param targetHeight The physical height of the target off the floor. This</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> *                     should be the height of whatever is being targeted (i.e.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> *                     if the targeting region is set to top, this should be the</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> *                     height of the top of the target).</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * @param cameraPitch The pitch of the camera from the horizontal plane.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> *                    Positive values up.</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> * @param targetPitch The pitch of the target in the camera&#39;s lens. Positive</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> *                    values up.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> * @param targetYaw The observed yaw of the target. Note that this *must* be</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> *                  CCW-positive, and Photon returns CW-positive.</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * @param gyroAngle The current robot gyro angle, likely from odometry.</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * @param fieldToTarget A Pose3d representing the target position in the field</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> *                      coordinate system.</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * @param cameraToRobot The position of the robot relative to the camera. If the</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> *                      camera was mounted 3 inches behind the &quot;origin&quot; (usually</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> *                      physical center) of the robot, this would be</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> *                      frc::Transform3d{3_in, 0_in, 0_in, frc::Rotation3d{}}.</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * @return The position of the robot in the field.</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">   65</a></span><a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> <a class="code hl_function" href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">EstimateFieldToRobot</a>(</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    units::meter_t cameraHeight, units::meter_t targetHeight,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    units::radian_t cameraPitch, units::radian_t targetPitch,</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a>&amp; targetYaw, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a>&amp; gyroAngle,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&amp; fieldToTarget, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&amp; cameraToRobot);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"></span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> * Estimates the pose of the robot in the field coordinate system, given the</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * position of the target relative to the camera, the target relative to the</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * field, and the robot relative to the camera.</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * @param cameraToTarget The position of the target relative to the camera.</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> * @param fieldToTarget  The position of the target in the field.</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * @param cameraToRobot  The position of the robot relative to the camera. If</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> *                       the camera was mounted 3 inches behind the &quot;origin&quot;</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> *                       (usually physical center) of the robot, this would be</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> *                       frc::Transform3d{3_in, 0_in, 0_in, frc::Rotation3d{}}.</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * @return The position of the robot in the field.</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="namespacefrc.html#a438357c0dd6f2a736608cf2ec19cc31d">   85</a></span><a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> <a class="code hl_function" href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">EstimateFieldToRobot</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&amp; cameraToTarget,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                 <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&amp; fieldToTarget,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                                 <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&amp; cameraToRobot);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"></span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"> * Estimates a Transform3d that maps the camera position to the target position,</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"> * using the robot&#39;s gyro. Note that the gyro angle provided *must* line up with</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment"> * the field coordinate system -- that is, it should read zero degrees when</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"> * pointed towards the opposing alliance station, and increase as the robot</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"> * rotates CCW.</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * @param cameraToTargetTranslation A Translation3d that encodes the x/y</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment"> *                                  position of the target relative to the</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> *                                  camera.</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> * @param fieldToTarget A Pose3d representing the target position in the field</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> *                      coordinate system.</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * @param gyroAngle The current robot gyro angle, likely from odometry.</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * @return A Transform3d that takes us from the camera to the target.</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="namespacefrc.html#aeb0b73cf20abd503d668560f43a7b2c1">  105</a></span><a class="code hl_class" href="classfrc_1_1_transform3d.html">frc::Transform3d</a> <a class="code hl_function" href="namespacefrc.html#aeb0b73cf20abd503d668560f43a7b2c1">EstimateCameraToTarget</a>(</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_translation3d.html">frc::Translation3d</a>&amp; cameraToTargetTranslation,</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&amp; fieldToTarget, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a>&amp; gyroAngle);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"></span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/**</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * Estimates the pose of the camera in the field coordinate system, given the</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * position of the target relative to the camera, and the target relative to</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> * the field. This *only* tracks the position of the camera, not the position</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * of the robot itself.</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> *</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> * @param cameraToTarget The position of the target relative to the camera.</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"> * @param fieldToTarget  The position of the target in the field.</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"> * @return The position of the camera in the field.</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">  120</a></span><a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> <a class="code hl_function" href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">EstimateFieldToCamera</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&amp; cameraToTarget,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                                  <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&amp; fieldToTarget);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_transform3d_8h.html">frc/geometry/Transform3d.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"></span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * Returns the robot&#39;s pose in the field coordinate system given an object&#39;s</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * field-relative pose, the transformation from the camera&#39;s pose to the</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * object&#39;s pose (obtained via computer vision), and the transformation from the</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * robot&#39;s pose to the camera&#39;s pose.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * The object could be a target or a fiducial marker.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * @param objectInField An object&#39;s field-relative pose.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * @param cameraToObject The transformation from the camera&#39;s pose to the</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> *   object&#39;s pose. This comes from computer vision.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * @param robotToCamera The transformation from the robot&#39;s pose to the camera&#39;s</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *   pose. This can either be a constant for a rigidly mounted camera, or</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> *   variable if the camera is mounted to a turret. If the camera was mounted 3</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *   inches behind the &quot;origin&quot; (usually physical center) of the robot, this</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> *   would be frc::Transform3d{3_in, 0_in, 0_in, frc::Rotation3d{}}.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * @return The robot&#39;s field-relative pose.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacefrc.html#a28bef22fc46c0b06c7c438e34d653102">   33</a></span><a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a> <a class="code hl_function" href="namespacefrc.html#a28bef22fc46c0b06c7c438e34d653102">ObjectToRobotPose</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose3d.html">frc::Pose3d</a>&amp; objectInField,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                              <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&amp; cameraToObject,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                              <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_transform3d.html">frc::Transform3d</a>&amp; robotToCamera);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_pose3d_8h_html"><div class="ttname"><a href="_pose3d_8h.html">Pose3d.h</a></div></div>
-<div class="ttc" id="a_rotation2d_8h_html"><div class="ttname"><a href="_rotation2d_8h.html">Rotation2d.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:34</div></div>
 <div class="ttc" id="a_transform3d_8h_html"><div class="ttname"><a href="_transform3d_8h.html">Transform3d.h</a></div></div>
-<div class="ttc" id="a_translation3d_8h_html"><div class="ttname"><a href="_translation3d_8h.html">Translation3d.h</a></div></div>
-<div class="ttc" id="aangle_8h_html"><div class="ttname"><a href="angle_8h.html">angle.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_pose3d_html"><div class="ttname"><a href="classfrc_1_1_pose3d.html">frc::Pose3d</a></div><div class="ttdoc">Represents a 3D pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose3d.h:23</div></div>
-<div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2D coordinate frame represented by a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1_transform3d_html"><div class="ttname"><a href="classfrc_1_1_transform3d.html">frc::Transform3d</a></div><div class="ttdoc">Represents a transformation for a Pose3d.</div><div class="ttdef"><b>Definition:</b> Transform3d.h:18</div></div>
-<div class="ttc" id="aclassfrc_1_1_translation3d_html"><div class="ttname"><a href="classfrc_1_1_translation3d.html">frc::Translation3d</a></div><div class="ttdoc">Represents a translation in 3D space.</div><div class="ttdef"><b>Definition:</b> Translation3d.h:27</div></div>
-<div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> AprilTagFields.h:13</div></div>
-<div class="ttc" id="anamespacefrc_html_a13c2933c98c2b87c2a51a5b88bf59cf4"><div class="ttname"><a href="namespacefrc.html#a13c2933c98c2b87c2a51a5b88bf59cf4">frc::CalculateDistanceToTarget</a></div><div class="ttdeci">WPILIB_DLLEXPORT units::meter_t CalculateDistanceToTarget(units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch, units::radian_t targetYaw)</div><div class="ttdoc">Algorithm from https://docs.limelightvision.io/en/latest/cs_estimating_distance.html Estimates range ...</div></div>
-<div class="ttc" id="anamespacefrc_html_a5fcf968dde451ac8c5a7549abb289770"><div class="ttname"><a href="namespacefrc.html#a5fcf968dde451ac8c5a7549abb289770">frc::EstimateFieldToRobot</a></div><div class="ttdeci">WPILIB_DLLEXPORT frc::Pose3d EstimateFieldToRobot(units::meter_t cameraHeight, units::meter_t targetHeight, units::radian_t cameraPitch, units::radian_t targetPitch, const frc::Rotation2d &amp;targetYaw, const frc::Rotation2d &amp;gyroAngle, const frc::Pose3d &amp;fieldToTarget, const frc::Transform3d &amp;cameraToRobot)</div><div class="ttdoc">Estimate the position of the robot in the field.</div></div>
-<div class="ttc" id="anamespacefrc_html_a85b8d9aa206445d7589f7de21a9709e2"><div class="ttname"><a href="namespacefrc.html#a85b8d9aa206445d7589f7de21a9709e2">frc::EstimateFieldToCamera</a></div><div class="ttdeci">WPILIB_DLLEXPORT frc::Pose3d EstimateFieldToCamera(const frc::Transform3d &amp;cameraToTarget, const frc::Pose3d &amp;fieldToTarget)</div><div class="ttdoc">Estimates the pose of the camera in the field coordinate system, given the position of the target rel...</div></div>
-<div class="ttc" id="anamespacefrc_html_aeb0b73cf20abd503d668560f43a7b2c1"><div class="ttname"><a href="namespacefrc.html#aeb0b73cf20abd503d668560f43a7b2c1">frc::EstimateCameraToTarget</a></div><div class="ttdeci">WPILIB_DLLEXPORT frc::Transform3d EstimateCameraToTarget(const frc::Translation3d &amp;cameraToTargetTranslation, const frc::Pose3d &amp;fieldToTarget, const frc::Rotation2d &amp;gyroAngle)</div><div class="ttdoc">Estimates a Transform3d that maps the camera position to the target position, using the robot's gyro.</div></div>
+<div class="ttc" id="anamespacefrc_html_a28bef22fc46c0b06c7c438e34d653102"><div class="ttname"><a href="namespacefrc.html#a28bef22fc46c0b06c7c438e34d653102">frc::ObjectToRobotPose</a></div><div class="ttdeci">WPILIB_DLLEXPORT frc::Pose3d ObjectToRobotPose(const frc::Pose3d &amp;objectInField, const frc::Transform3d &amp;cameraToObject, const frc::Transform3d &amp;robotToCamera)</div><div class="ttdoc">Returns the robot's pose in the field coordinate system given an object's field-relative pose,...</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="_computer_vision_util_8h.html">ComputerVisionUtil.h</a></li>
-    <li class="footer">Generated on Tue Dec 6 2022 23:13:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 05:16:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

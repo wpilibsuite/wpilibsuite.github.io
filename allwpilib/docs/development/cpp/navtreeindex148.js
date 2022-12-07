@@ -1,7 +1,5 @@
 var NAVTREEINDEX148 =
 {
-"namespace_eigen_1_1internal.html#afef6cec04ef146c5dfbb9bf2513c542a":[4,0,8,4,3071],
-"namespace_eigen_1_1internal.html#aff03485389f6eac2fa89524b64ce6035":[4,0,8,4,2763],
 "namespace_eigen_1_1internal.html#aff18b98e130b547fd3904b4f2977ff62":[4,0,8,4,3355],
 "namespace_eigen_1_1internal.html#aff2e184825a824997558362829777c81":[4,0,8,4,1714],
 "namespace_eigen_1_1internal.html#aff5a174d8c6ed03733427c6330f5cf4b":[4,0,8,4,1900],
@@ -249,5 +247,7 @@ var NAVTREEINDEX148 =
 "namespacedigits.html":[4,0,5],
 "namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8b":[4,0,5,0],
 "namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8ba035d977de44b9c4a46c5679724251866":[4,0,5,0,1],
-"namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8ba81975fa799af874586bd28abc82f5171":[4,0,5,0,2]
+"namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8ba81975fa799af874586bd28abc82f5171":[4,0,5,0,2],
+"namespacedigits.html#a8875a3e1d62490230fa116b4c1f99c8bada4bf0f4825d326ff0dc1d845ef2dac6":[4,0,5,0,0],
+"namespacedragonbox.html":[4,0,6]
 };

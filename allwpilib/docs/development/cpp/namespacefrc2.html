@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-72-g3149dc6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2023.1.1-beta-4-77-gbe27171</span>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A subclass of <code><a class="el" href="classfrc_1_1_xbox_controller.html#a879dbba9de63acca156dc2184fccab88">XboxController</a></code> with <code><a class="el" href="classfrc2_1_1_trigger.html">Trigger</a></code> factories for command-based.  <a href="classfrc2_1_1_command_xbox_controller.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_conditional_command.html">ConditionalCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs one of two commands, depending on the value of the given condition when this command is initialized.  <a href="classfrc2_1_1_conditional_command.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command composition that runs one of two commands, depending on the value of the given condition when this command is initialized.  <a href="classfrc2_1_1_conditional_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_functional_command.html">FunctionalCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that allows the user to pass in functions for each of the basic command methods through the constructor.  <a href="classfrc2_1_1_functional_command.html#details">More...</a><br /></td></tr>
@@ -163,13 +163,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that starts a notifier to run the given runnable periodically in a separate thread.  <a href="classfrc2_1_1_notifier_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_parallel_command_group.html">ParallelCommandGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CommandGroup that runs a set of commands in parallel, ending when the last command ends.  <a href="classfrc2_1_1_parallel_command_group.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command composition that runs a set of commands in parallel, ending when the last command ends.  <a href="classfrc2_1_1_parallel_command_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_parallel_deadline_group.html">ParallelDeadlineGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CommandGroup that runs a set of commands in parallel, ending only when a specific command (the "deadline") ends, interrupting all other commands that are still running at that point.  <a href="classfrc2_1_1_parallel_deadline_group.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command composition that runs a set of commands in parallel, ending only when a specific command (the "deadline") ends, interrupting all other commands that are still running at that point.  <a href="classfrc2_1_1_parallel_deadline_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_parallel_race_group.html">ParallelRaceGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CommandGroup that runs a set of commands in parallel, ending when any one of the commands ends and interrupting all the others.  <a href="classfrc2_1_1_parallel_race_group.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A composition that runs a set of commands in parallel, ending when any one of the commands ends and interrupting all the others.  <a href="classfrc2_1_1_parallel_race_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_perpetual_command.html">PerpetualCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that runs another command in perpetuity, ignoring that command's end conditions.  <a href="classfrc2_1_1_perpetual_command.html#details">More...</a><br /></td></tr>
@@ -214,10 +214,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules the given commands when this command is initialized.  <a href="classfrc2_1_1_schedule_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_select_command.html">SelectCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs one of a selection of commands, either using a selector and a key to command mapping, or a supplier that returns the command directly at runtime.  <a href="classfrc2_1_1_select_command.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command composition that runs one of a selection of commands, either using a selector and a key to command mapping, or a supplier that returns the command directly at runtime.  <a href="classfrc2_1_1_select_command.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A CommandGroups that runs a list of commands in sequence.  <a href="classfrc2_1_1_sequential_command_group.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command composition that runs a list of commands in sequence.  <a href="classfrc2_1_1_sequential_command_group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_start_end_command.html">StartEndCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A command that runs a given runnable when it is initialized, and another runnable when it ends.  <a href="classfrc2_1_1_start_end_command.html#details">More...</a><br /></td></tr>
@@ -377,7 +377,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li>
-    <li class="footer">Generated on Tue Dec 6 2022 23:13:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Wed Dec 7 2022 05:16:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

@@ -24,6 +24,7 @@ var classfrc2_1_1_command =
     [ "HasRequirement", "classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4", null ],
     [ "IgnoringDisable", "classfrc2_1_1_command.html#acc67b15e71a66aafb7523ccdd0a7a834", null ],
     [ "Initialize", "classfrc2_1_1_command.html#ad3f1971a1b44ecdd4683d766f831bccd", null ],
+    [ "IsComposed", "classfrc2_1_1_command.html#a71ca846a2352e09cab706774de891ebd", null ],
     [ "IsFinished", "classfrc2_1_1_command.html#af5e8c12152d195a4f3c06789366aac88", null ],
     [ "IsGrouped", "classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40", null ],
     [ "IsScheduled", "classfrc2_1_1_command.html#a03316d8a51ffcb8262e6f751ae42a494", null ],
@@ -33,6 +34,7 @@ var classfrc2_1_1_command =
     [ "Repeatedly", "classfrc2_1_1_command.html#a49a9719a69c0048b0b6ac19ad165db0c", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_command.html#a5113cbf3655ce8679dd48bf22700b2f4", null ],
     [ "Schedule", "classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710", null ],
+    [ "SetComposed", "classfrc2_1_1_command.html#accda431cd9ce9555963633f8818252d7", null ],
     [ "SetGrouped", "classfrc2_1_1_command.html#a8c3e7ee729136e7e7e18e1e3a48a079a", null ],
     [ "SetName", "classfrc2_1_1_command.html#aa899d204a7af40f2df9874f62ce6d838", null ],
     [ "ToPtr", "classfrc2_1_1_command.html#ac2b4051a8f46ac65b9c7807ea86688c3", null ],
@@ -44,5 +46,5 @@ var classfrc2_1_1_command =
     [ "WithName", "classfrc2_1_1_command.html#a6f2548d955a6886230bc5c52a014b2a6", null ],
     [ "WithTimeout", "classfrc2_1_1_command.html#a289d38b6dd4c869f25fce254bf21fdc3", null ],
     [ "CommandPtr", "classfrc2_1_1_command.html#a1227c1944bf460c0ca39b9cfd8fc950b", null ],
-    [ "m_isGrouped", "classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c", null ]
+    [ "m_isComposed", "classfrc2_1_1_command.html#a7287664e19e024995953f4c79a059391", null ]
 ];

@@ -1,7 +1,5 @@
 var NAVTREEINDEX138 =
 {
-"incomplete__gamma__inv_8hpp.html#ac205df41263c520efa1d0769785afc7b":[6,0,9,2,0,0,31,13],
-"incomplete__gamma__inv_8hpp.html#ad94fc8c7033c1b6b01ff08fa36196f14":[6,0,9,2,0,0,31,10],
 "incomplete__gamma__inv_8hpp.html#adc29da921104e87b2cde7030db9258ba":[6,0,9,2,0,0,31,3],
 "incomplete__gamma__inv_8hpp.html#ae344ba2f8b824feaf7a07f191debd015":[6,0,9,2,0,0,31,15],
 "incomplete__gamma__inv_8hpp_source.html":[6,0,9,2,0,0,31],
@@ -249,5 +247,7 @@ var NAVTREEINDEX138 =
 "magnetic__flux_8h_source.html":[6,0,12,27],
 "mantissa_8hpp.html":[6,0,9,2,0,0,47],
 "mantissa_8hpp.html#ab44c06506958fe4cf7380dc01f4e716b":[6,0,9,2,0,0,47,0],
-"mantissa_8hpp_source.html":[6,0,9,2,0,0,47]
+"mantissa_8hpp_source.html":[6,0,9,2,0,0,47],
+"mass_8h.html":[6,0,12,28],
+"mass_8h.html#a6a7d06078e20a9102992ec978e669a59":[6,0,12,28,2]
 };

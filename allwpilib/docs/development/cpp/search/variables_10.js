@@ -74,6 +74,6 @@ var searchData=
   ['propertyhandle_71',['propertyHandle',['../structcs_1_1_raw_event.html#a6b0fe3b3119f4847109f18dff338f19d',1,'cs::RawEvent']]],
   ['propertykind_72',['propertyKind',['../structcs_1_1_raw_event.html#abbb861b2dd2b3cc770f5d5a285c12739',1,'cs::RawEvent::propertyKind()'],['../struct_c_s___event.html#a815e0c8d49a0b452bf7af0627ffaa731',1,'CS_Event::propertyKind()']]],
   ['protocol_5fversion_73',['protocol_version',['../struct_n_t___connection_info.html#a9f03cd89f577238b63383e66c80818ed',1,'NT_ConnectionInfo::protocol_version()'],['../structnt_1_1_connection_info.html#a273236525633a820193505cd4529cf70',1,'nt::ConnectionInfo::protocol_version()']]],
-  ['ptr_74',['ptr',['../structuv__fs__s.html#a3cf0871cfa7fc20b6bb7e1782e1fc3eb',1,'uv_fs_s']]],
-  ['ptr_75',['Ptr',['../classwpi_1_1_string_map_iter_base.html#ad16147ba833b73b0ddb12ac41a1efe68',1,'wpi::StringMapIterBase']]]
+  ['ptr_74',['Ptr',['../classwpi_1_1_string_map_iter_base.html#ad16147ba833b73b0ddb12ac41a1efe68',1,'wpi::StringMapIterBase']]],
+  ['ptr_75',['ptr',['../structuv__fs__s.html#a3cf0871cfa7fc20b6bb7e1782e1fc3eb',1,'uv_fs_s']]]
 ];

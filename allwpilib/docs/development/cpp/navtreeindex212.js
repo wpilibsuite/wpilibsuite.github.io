@@ -1,11 +1,5 @@
 var NAVTREEINDEX212 =
 {
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203cafe01d67a002dfa0f3ac084298142eccd":[6,0,11,0,0,0,2,7,99],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b":[6,0,11,0,0,0,2,12],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a9e77bfc973c6f5fca4dd20174673ecbf":[6,0,11,0,0,0,2,20],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#aa8fd4d10073eea2a033ca9b853119461":[6,0,11,0,0,0,2,18],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#ab543bcad0658b6bc3fa970fcd39b5040":[6,0,11,0,0,0,2,29],
-"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#ac5d92b90676c3ce2a5a4d452b6832c3c":[6,0,11,0,0,0,2,26],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#ae1af0d62808a99dac446d1de67d36505":[6,0,11,0,0,0,2,10],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#ae83ddf431ef33628b5e887a9236a596c":[6,0,11,0,0,0,2,23],
 "wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#aec7b15fa1ffaf72d11cf316a2ee59a0e":[6,0,11,0,0,0,2,24],

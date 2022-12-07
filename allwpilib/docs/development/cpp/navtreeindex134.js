@@ -1,7 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"group__hal__rev__ph.html#gaedc576384089784816b381679720fd09":[3,4,13,12],
-"group__hal__rev__ph.html#gafa7b94751546e572f14456f02e5ae9e0":[3,4,13,28],
 "group__hal__serialport.html":[3,4,22],
 "group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84":[3,4,22,10],
 "group__hal__serialport.html#ga142ac7d0669849f2b77c7b07946d57a1":[3,4,22,9],
@@ -249,5 +247,7 @@ var NAVTREEINDEX134 =
 "group__ntcore___double__func.html#gada44ab11c6326e91ec73f22ab7232db7":[3,6,12,2],
 "group__ntcore___double_array__cfunc.html":[3,17],
 "group__ntcore___double_array__cfunc.html#ga0d9d4a31b80f9a17f609712806b54025":[3,17,6],
-"group__ntcore___double_array__cfunc.html#ga0fd9c23c8535fbbc2f133b1ac0e1f606":[3,17,2]
+"group__ntcore___double_array__cfunc.html#ga0fd9c23c8535fbbc2f133b1ac0e1f606":[3,17,2],
+"group__ntcore___double_array__cfunc.html#ga63cb4cdfb1e8ec8702cdc432280a641a":[3,17,5],
+"group__ntcore___double_array__cfunc.html#ga9abf2d8c1b92181981547f161001104f":[3,17,3]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"_sparse_self_adjoint_view_8h.html#a2649bfc34f46b48ed846f70da6372841":[6,0,9,1,0,0,0,12,21,15],
-"_sparse_self_adjoint_view_8h.html#a774ca83200adf7454852c72fa7685384":[6,0,9,1,0,0,0,12,21,14],
-"_sparse_self_adjoint_view_8h_source.html":[6,0,9,1,0,0,0,12,21],
-"_sparse_solver_base_8h.html":[6,0,9,1,0,0,0,12,22],
 "_sparse_solver_base_8h.html#ae6ccd0013687eff21e8076dcc282efb8":[6,0,9,1,0,0,0,12,22,0],
 "_sparse_solver_base_8h.html#aef46b79d3f0d993e461160f5164ef5f5":[6,0,9,1,0,0,0,12,22,1],
 "_sparse_solver_base_8h_source.html":[6,0,9,1,0,0,0,12,22],
@@ -249,5 +245,9 @@ var NAVTREEINDEX21 =
 "_swerve_drive_kinematics_constraint_8inc.html":[6,0,5,9,0,8],
 "_swerve_drive_odometry_8h.html":[6,0,5,6,10],
 "_swerve_drive_odometry_8h.html#a2d137160d8fe76de7d65a2b1adc8d6d7":[6,0,5,6,10,1],
-"_swerve_drive_odometry_8h_source.html":[6,0,5,6,10]
+"_swerve_drive_odometry_8h_source.html":[6,0,5,6,10],
+"_swerve_drive_odometry_8inc.html":[6,0,5,6,11],
+"_swerve_drive_pose_estimator_8h.html":[6,0,5,1,9],
+"_swerve_drive_pose_estimator_8h.html#a2d137160d8fe76de7d65a2b1adc8d6d7":[6,0,5,1,9,1],
+"_swerve_drive_pose_estimator_8h_source.html":[6,0,5,1,9]
 };
