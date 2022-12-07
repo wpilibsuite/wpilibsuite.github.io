@@ -16,123 +16,71 @@
 <span class="sourceLineNo">004</span><a id="line.4"></a>
 <span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.wpilibj2.command;</a>
 <span class="sourceLineNo">006</span><a id="line.6"></a>
-<span class="sourceLineNo">007</span><a id="line.7">import java.util.Collection;</a>
-<span class="sourceLineNo">008</span><a id="line.8">import java.util.Collections;</a>
-<span class="sourceLineNo">009</span><a id="line.9">import java.util.Set;</a>
-<span class="sourceLineNo">010</span><a id="line.10">import java.util.WeakHashMap;</a>
-<span class="sourceLineNo">011</span><a id="line.11"></a>
-<span class="sourceLineNo">012</span><a id="line.12">/**</a>
-<span class="sourceLineNo">013</span><a id="line.13"> * A base for CommandGroups. Statically tracks commands that have been allocated to groups to ensure</a>
-<span class="sourceLineNo">014</span><a id="line.14"> * those commands are not also used independently, which can result in inconsistent command state</a>
-<span class="sourceLineNo">015</span><a id="line.15"> * and unpredictable execution.</a>
-<span class="sourceLineNo">016</span><a id="line.16"> *</a>
-<span class="sourceLineNo">017</span><a id="line.17"> * &lt;p&gt;This class is provided by the NewCommands VendorDep</a>
-<span class="sourceLineNo">018</span><a id="line.18"> */</a>
-<span class="sourceLineNo">019</span><a id="line.19">public abstract class CommandGroupBase extends CommandBase {</a>
-<span class="sourceLineNo">020</span><a id="line.20">  private static final Set&lt;Command&gt; m_groupedCommands =</a>
-<span class="sourceLineNo">021</span><a id="line.21">      Collections.newSetFromMap(new WeakHashMap&lt;&gt;());</a>
+<span class="sourceLineNo">007</span><a id="line.7">/**</a>
+<span class="sourceLineNo">008</span><a id="line.8"> * A base for CommandGroups.</a>
+<span class="sourceLineNo">009</span><a id="line.9"> *</a>
+<span class="sourceLineNo">010</span><a id="line.10"> * &lt;p&gt;This class is provided by the NewCommands VendorDep</a>
+<span class="sourceLineNo">011</span><a id="line.11"> *</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * @deprecated This class is an empty abstraction. Inherit directly from CommandBase/Command.</a>
+<span class="sourceLineNo">013</span><a id="line.13"> */</a>
+<span class="sourceLineNo">014</span><a id="line.14">@Deprecated(forRemoval = true)</a>
+<span class="sourceLineNo">015</span><a id="line.15">public abstract class CommandGroupBase extends CommandBase {</a>
+<span class="sourceLineNo">016</span><a id="line.16">  /**</a>
+<span class="sourceLineNo">017</span><a id="line.17">   * Adds the given commands to the command group.</a>
+<span class="sourceLineNo">018</span><a id="line.18">   *</a>
+<span class="sourceLineNo">019</span><a id="line.19">   * @param commands The commands to add.</a>
+<span class="sourceLineNo">020</span><a id="line.20">   */</a>
+<span class="sourceLineNo">021</span><a id="line.21">  public abstract void addCommands(Command... commands);</a>
 <span class="sourceLineNo">022</span><a id="line.22"></a>
-<span class="sourceLineNo">023</span><a id="line.23">  static void registerGroupedCommands(Command... commands) {</a>
-<span class="sourceLineNo">024</span><a id="line.24">    m_groupedCommands.addAll(Set.of(commands));</a>
-<span class="sourceLineNo">025</span><a id="line.25">  }</a>
-<span class="sourceLineNo">026</span><a id="line.26"></a>
-<span class="sourceLineNo">027</span><a id="line.27">  /**</a>
-<span class="sourceLineNo">028</span><a id="line.28">   * Clears the list of grouped commands, allowing all commands to be freely used again.</a>
-<span class="sourceLineNo">029</span><a id="line.29">   *</a>
-<span class="sourceLineNo">030</span><a id="line.30">   * &lt;p&gt;WARNING: Using this haphazardly can result in unexpected/undesirable behavior. Do not use</a>
-<span class="sourceLineNo">031</span><a id="line.31">   * this unless you fully understand what you are doing.</a>
-<span class="sourceLineNo">032</span><a id="line.32">   */</a>
-<span class="sourceLineNo">033</span><a id="line.33">  public static void clearGroupedCommands() {</a>
-<span class="sourceLineNo">034</span><a id="line.34">    m_groupedCommands.clear();</a>
-<span class="sourceLineNo">035</span><a id="line.35">  }</a>
-<span class="sourceLineNo">036</span><a id="line.36"></a>
-<span class="sourceLineNo">037</span><a id="line.37">  /**</a>
-<span class="sourceLineNo">038</span><a id="line.38">   * Removes a single command from the list of grouped commands, allowing it to be freely used</a>
-<span class="sourceLineNo">039</span><a id="line.39">   * again.</a>
-<span class="sourceLineNo">040</span><a id="line.40">   *</a>
-<span class="sourceLineNo">041</span><a id="line.41">   * &lt;p&gt;WARNING: Using this haphazardly can result in unexpected/undesirable behavior. Do not use</a>
-<span class="sourceLineNo">042</span><a id="line.42">   * this unless you fully understand what you are doing.</a>
-<span class="sourceLineNo">043</span><a id="line.43">   *</a>
-<span class="sourceLineNo">044</span><a id="line.44">   * @param command the command to remove from the list of grouped commands</a>
-<span class="sourceLineNo">045</span><a id="line.45">   */</a>
-<span class="sourceLineNo">046</span><a id="line.46">  public static void clearGroupedCommand(Command command) {</a>
-<span class="sourceLineNo">047</span><a id="line.47">    m_groupedCommands.remove(command);</a>
-<span class="sourceLineNo">048</span><a id="line.48">  }</a>
-<span class="sourceLineNo">049</span><a id="line.49"></a>
-<span class="sourceLineNo">050</span><a id="line.50">  /**</a>
-<span class="sourceLineNo">051</span><a id="line.51">   * Requires that the specified commands not have been already allocated to a CommandGroup. Throws</a>
-<span class="sourceLineNo">052</span><a id="line.52">   * an {@link IllegalArgumentException} if commands have been allocated.</a>
-<span class="sourceLineNo">053</span><a id="line.53">   *</a>
-<span class="sourceLineNo">054</span><a id="line.54">   * @param commands The commands to check</a>
-<span class="sourceLineNo">055</span><a id="line.55">   */</a>
-<span class="sourceLineNo">056</span><a id="line.56">  public static void requireUngrouped(Command... commands) {</a>
-<span class="sourceLineNo">057</span><a id="line.57">    requireUngrouped(Set.of(commands));</a>
-<span class="sourceLineNo">058</span><a id="line.58">  }</a>
-<span class="sourceLineNo">059</span><a id="line.59"></a>
-<span class="sourceLineNo">060</span><a id="line.60">  /**</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * Requires that the specified commands not have been already allocated to a CommandGroup. Throws</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * an {@link IllegalArgumentException} if commands have been allocated.</a>
-<span class="sourceLineNo">063</span><a id="line.63">   *</a>
-<span class="sourceLineNo">064</span><a id="line.64">   * @param commands The commands to check</a>
-<span class="sourceLineNo">065</span><a id="line.65">   */</a>
-<span class="sourceLineNo">066</span><a id="line.66">  public static void requireUngrouped(Collection&lt;Command&gt; commands) {</a>
-<span class="sourceLineNo">067</span><a id="line.67">    if (!Collections.disjoint(commands, getGroupedCommands())) {</a>
-<span class="sourceLineNo">068</span><a id="line.68">      throw new IllegalArgumentException("Commands cannot be added to more than one CommandGroup");</a>
-<span class="sourceLineNo">069</span><a id="line.69">    }</a>
+<span class="sourceLineNo">023</span><a id="line.23">  /**</a>
+<span class="sourceLineNo">024</span><a id="line.24">   * Factory method for {@link SequentialCommandGroup}, included for brevity/convenience.</a>
+<span class="sourceLineNo">025</span><a id="line.25">   *</a>
+<span class="sourceLineNo">026</span><a id="line.26">   * @param commands the commands to include</a>
+<span class="sourceLineNo">027</span><a id="line.27">   * @return the command group</a>
+<span class="sourceLineNo">028</span><a id="line.28">   * @deprecated Replace with {@link Commands#sequence(Command...)}</a>
+<span class="sourceLineNo">029</span><a id="line.29">   */</a>
+<span class="sourceLineNo">030</span><a id="line.30">  @Deprecated</a>
+<span class="sourceLineNo">031</span><a id="line.31">  public static SequentialCommandGroup sequence(Command... commands) {</a>
+<span class="sourceLineNo">032</span><a id="line.32">    return new SequentialCommandGroup(commands);</a>
+<span class="sourceLineNo">033</span><a id="line.33">  }</a>
+<span class="sourceLineNo">034</span><a id="line.34"></a>
+<span class="sourceLineNo">035</span><a id="line.35">  /**</a>
+<span class="sourceLineNo">036</span><a id="line.36">   * Factory method for {@link ParallelCommandGroup}, included for brevity/convenience.</a>
+<span class="sourceLineNo">037</span><a id="line.37">   *</a>
+<span class="sourceLineNo">038</span><a id="line.38">   * @param commands the commands to include</a>
+<span class="sourceLineNo">039</span><a id="line.39">   * @return the command group</a>
+<span class="sourceLineNo">040</span><a id="line.40">   * @deprecated Replace with {@link Commands#parallel(Command...)}</a>
+<span class="sourceLineNo">041</span><a id="line.41">   */</a>
+<span class="sourceLineNo">042</span><a id="line.42">  @Deprecated</a>
+<span class="sourceLineNo">043</span><a id="line.43">  public static ParallelCommandGroup parallel(Command... commands) {</a>
+<span class="sourceLineNo">044</span><a id="line.44">    return new ParallelCommandGroup(commands);</a>
+<span class="sourceLineNo">045</span><a id="line.45">  }</a>
+<span class="sourceLineNo">046</span><a id="line.46"></a>
+<span class="sourceLineNo">047</span><a id="line.47">  /**</a>
+<span class="sourceLineNo">048</span><a id="line.48">   * Factory method for {@link ParallelRaceGroup}, included for brevity/convenience.</a>
+<span class="sourceLineNo">049</span><a id="line.49">   *</a>
+<span class="sourceLineNo">050</span><a id="line.50">   * @param commands the commands to include</a>
+<span class="sourceLineNo">051</span><a id="line.51">   * @return the command group</a>
+<span class="sourceLineNo">052</span><a id="line.52">   * @deprecated Replace with {@link Commands#race(Command...)}</a>
+<span class="sourceLineNo">053</span><a id="line.53">   */</a>
+<span class="sourceLineNo">054</span><a id="line.54">  @Deprecated</a>
+<span class="sourceLineNo">055</span><a id="line.55">  public static ParallelRaceGroup race(Command... commands) {</a>
+<span class="sourceLineNo">056</span><a id="line.56">    return new ParallelRaceGroup(commands);</a>
+<span class="sourceLineNo">057</span><a id="line.57">  }</a>
+<span class="sourceLineNo">058</span><a id="line.58"></a>
+<span class="sourceLineNo">059</span><a id="line.59">  /**</a>
+<span class="sourceLineNo">060</span><a id="line.60">   * Factory method for {@link ParallelDeadlineGroup}, included for brevity/convenience.</a>
+<span class="sourceLineNo">061</span><a id="line.61">   *</a>
+<span class="sourceLineNo">062</span><a id="line.62">   * @param deadline the deadline command</a>
+<span class="sourceLineNo">063</span><a id="line.63">   * @param commands the commands to include</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * @return the command group</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * @deprecated Replace with {@link Commands#deadline(Command, Command...)}</a>
+<span class="sourceLineNo">066</span><a id="line.66">   */</a>
+<span class="sourceLineNo">067</span><a id="line.67">  @Deprecated</a>
+<span class="sourceLineNo">068</span><a id="line.68">  public static ParallelDeadlineGroup deadline(Command deadline, Command... commands) {</a>
+<span class="sourceLineNo">069</span><a id="line.69">    return new ParallelDeadlineGroup(deadline, commands);</a>
 <span class="sourceLineNo">070</span><a id="line.70">  }</a>
-<span class="sourceLineNo">071</span><a id="line.71"></a>
-<span class="sourceLineNo">072</span><a id="line.72">  static Set&lt;Command&gt; getGroupedCommands() {</a>
-<span class="sourceLineNo">073</span><a id="line.73">    return m_groupedCommands;</a>
-<span class="sourceLineNo">074</span><a id="line.74">  }</a>
-<span class="sourceLineNo">075</span><a id="line.75"></a>
-<span class="sourceLineNo">076</span><a id="line.76">  /**</a>
-<span class="sourceLineNo">077</span><a id="line.77">   * Adds the given commands to the command group.</a>
-<span class="sourceLineNo">078</span><a id="line.78">   *</a>
-<span class="sourceLineNo">079</span><a id="line.79">   * @param commands The commands to add.</a>
-<span class="sourceLineNo">080</span><a id="line.80">   */</a>
-<span class="sourceLineNo">081</span><a id="line.81">  public abstract void addCommands(Command... commands);</a>
-<span class="sourceLineNo">082</span><a id="line.82"></a>
-<span class="sourceLineNo">083</span><a id="line.83">  /**</a>
-<span class="sourceLineNo">084</span><a id="line.84">   * Factory method for {@link SequentialCommandGroup}, included for brevity/convenience.</a>
-<span class="sourceLineNo">085</span><a id="line.85">   *</a>
-<span class="sourceLineNo">086</span><a id="line.86">   * @param commands the commands to include</a>
-<span class="sourceLineNo">087</span><a id="line.87">   * @return the command group</a>
-<span class="sourceLineNo">088</span><a id="line.88">   */</a>
-<span class="sourceLineNo">089</span><a id="line.89">  public static CommandGroupBase sequence(Command... commands) {</a>
-<span class="sourceLineNo">090</span><a id="line.90">    return new SequentialCommandGroup(commands);</a>
-<span class="sourceLineNo">091</span><a id="line.91">  }</a>
-<span class="sourceLineNo">092</span><a id="line.92"></a>
-<span class="sourceLineNo">093</span><a id="line.93">  /**</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * Factory method for {@link ParallelCommandGroup}, included for brevity/convenience.</a>
-<span class="sourceLineNo">095</span><a id="line.95">   *</a>
-<span class="sourceLineNo">096</span><a id="line.96">   * @param commands the commands to include</a>
-<span class="sourceLineNo">097</span><a id="line.97">   * @return the command group</a>
-<span class="sourceLineNo">098</span><a id="line.98">   */</a>
-<span class="sourceLineNo">099</span><a id="line.99">  public static CommandGroupBase parallel(Command... commands) {</a>
-<span class="sourceLineNo">100</span><a id="line.100">    return new ParallelCommandGroup(commands);</a>
-<span class="sourceLineNo">101</span><a id="line.101">  }</a>
-<span class="sourceLineNo">102</span><a id="line.102"></a>
-<span class="sourceLineNo">103</span><a id="line.103">  /**</a>
-<span class="sourceLineNo">104</span><a id="line.104">   * Factory method for {@link ParallelRaceGroup}, included for brevity/convenience.</a>
-<span class="sourceLineNo">105</span><a id="line.105">   *</a>
-<span class="sourceLineNo">106</span><a id="line.106">   * @param commands the commands to include</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * @return the command group</a>
-<span class="sourceLineNo">108</span><a id="line.108">   */</a>
-<span class="sourceLineNo">109</span><a id="line.109">  public static CommandGroupBase race(Command... commands) {</a>
-<span class="sourceLineNo">110</span><a id="line.110">    return new ParallelRaceGroup(commands);</a>
-<span class="sourceLineNo">111</span><a id="line.111">  }</a>
-<span class="sourceLineNo">112</span><a id="line.112"></a>
-<span class="sourceLineNo">113</span><a id="line.113">  /**</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * Factory method for {@link ParallelDeadlineGroup}, included for brevity/convenience.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   *</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * @param deadline the deadline command</a>
-<span class="sourceLineNo">117</span><a id="line.117">   * @param commands the commands to include</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * @return the command group</a>
-<span class="sourceLineNo">119</span><a id="line.119">   */</a>
-<span class="sourceLineNo">120</span><a id="line.120">  public static CommandGroupBase deadline(Command deadline, Command... commands) {</a>
-<span class="sourceLineNo">121</span><a id="line.121">    return new ParallelDeadlineGroup(deadline, commands);</a>
-<span class="sourceLineNo">122</span><a id="line.122">  }</a>
-<span class="sourceLineNo">123</span><a id="line.123">}</a>
+<span class="sourceLineNo">071</span><a id="line.71">}</a>
 
 
 

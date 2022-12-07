@@ -116,7 +116,7 @@
 <span class="sourceLineNo">104</span><a id="line.104">          }</a>
 <span class="sourceLineNo">105</span><a id="line.105">        });</a>
 <span class="sourceLineNo">106</span><a id="line.106">    builder.addBooleanProperty(</a>
-<span class="sourceLineNo">107</span><a id="line.107">        ".isParented", () -&gt; CommandGroupBase.getGroupedCommands().contains(this), null);</a>
+<span class="sourceLineNo">107</span><a id="line.107">        ".isParented", () -&gt; CommandScheduler.getInstance().isComposed(this), null);</a>
 <span class="sourceLineNo">108</span><a id="line.108">  }</a>
 <span class="sourceLineNo">109</span><a id="line.109">}</a>
 
