@@ -30,21 +30,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: main
       - name: Checkout allwpilib-release
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: allwpilib-release
           path: allwpilib/docs/release
       - name: Checkout allwpilib-beta
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: allwpilib-beta
           path: allwpilib/docs/beta
       - name: Checkout allwpilib-development
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: allwpilib-development
           path: allwpilib/docs/development
@@ -60,12 +60,12 @@ jobs:
           mv allwpilib/docs/development/javadoc allwpilib/docs/development/java
           mv allwpilib/docs/development/doxygen/html allwpilib/docs/development/cpp
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
