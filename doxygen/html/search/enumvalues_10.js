@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['packed_5farg_5fbits_0',['packed_arg_bits',['../namespacedetail.html#a99db2494e7d7df02fab2bcf2a43bc26fa149a6008e8eb33e9f04e9c60e5af67df',1,'detail']]],
+  ['pale_5fgolden_5frod_1',['pale_golden_rod',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca5841e227ac7407c007c4dea330306f08',1,'color.h']]],
+  ['pale_5fgreen_2',['pale_green',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca573cc0c97e7f05440b7ca67a93e46349',1,'color.h']]],
+  ['pale_5fturquoise_3',['pale_turquoise',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca707832f12c57d104ccba9158524e8e69',1,'color.h']]],
+  ['pale_5fviolet_5fred_4',['pale_violet_red',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203cab5bd346b77f564748d4d2743156ed6e8',1,'color.h']]],
+  ['papaya_5fwhip_5',['papaya_whip',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca0ee903fa27ac4513f20d12a86c19e7a2',1,'color.h']]],
+  ['parse_5ferror_6',['parse_error',['../classdetail_1_1lexer__base.html#add65fa7a85aa15052963809fbcc04540a456e19aeafa334241c7ff3f589547f9d',1,'detail::lexer_base']]],
+  ['peach_5fpuff_7',['peach_puff',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203cae74648a463c3d18a05e153977cb39855',1,'color.h']]],
+  ['permission_5fdenied_8',['permission_denied',['../structwpi.html#a0cc73ce1be7e2680fb97374e03368001ae8ee838822072f02738dbd7d97ea03fc',1,'wpi']]],
+  ['peru_9',['peru',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca32e8419a7ecb8f918c70fdadf783e3d8',1,'color.h']]],
+  ['pink_10',['pink',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca4a0b0dcedd48f780778d1cd1bb8f9877',1,'color.h']]],
+  ['plum_11',['plum',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca3e042037287d6871eec3dbd48556b0b4',1,'color.h']]],
+  ['pointer_12',['pointer',['../core_8h.html#adfa139c9a1902753b3696794759b2c48accac8a66d468e2522611be86933cc0d9',1,'core.h']]],
+  ['pointer_5fset_13',['pointer_set',['../namespacedetail.html#ad1e64146711402e2bb669b9e3dad65cea4a50b8b8f33cc6afbebd57e3430a7dca',1,'detail']]],
+  ['pointer_5ftype_14',['pointer_type',['../namespacedetail.html#ad46d232fb6116de4dac0c43dbde8e7a9ac4c3a6c59d8a6e74dc8b960f585f494a',1,'detail']]],
+  ['pointerbitmask_15',['PointerBitMask',['../structwpi_1_1_pointer_int_pair_info.html#abea6aabb92a791e4a1987553ad2897d0ad4d8412a6a5e67595910d32fca3085b6',1,'wpi::PointerIntPairInfo']]],
+  ['port_16',['Port',['../namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a60aaf44d4b562252c04db7f98497e9aa',1,'hal']]],
+  ['powder_5fblue_17',['powder_blue',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203ca76f258d530f43c55523384b472086771',1,'color.h']]],
+  ['precision_18',['precision',['../namespacedetail.html#ac742e301ae0a908dc31e49ac3a31fcc5ae2794d8f12719281eff5601251c8a680',1,'detail']]],
+  ['predecessor_5fcloser_19',['predecessor_closer',['../namespacedetail.html#a3aece1206795dfb0aecd0df1a2ccf1d5aa4c119f416f75e66c6563fcd363d910a',1,'detail']]],
+  ['purple_20',['purple',['../wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2_color_8h.html#a80d1dc5f416b97f92939a4166d41203cabb7aedfa61007447dd6efaf9f37641e3',1,'color.h']]],
+  ['pwm_21',['PWM',['../namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a8449bc264b69c3a0fe8b60361eaf7aeb',1,'hal']]]
+];

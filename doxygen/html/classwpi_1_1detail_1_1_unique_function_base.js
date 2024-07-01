@@ -1,0 +1,26 @@
+var classwpi_1_1detail_1_1_unique_function_base =
+[
+    [ "CallbacksHolder", "structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html", "structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder" ],
+    [ "CallbacksHolder< CallableT, CalledAs, EnableIfTrivial< CallableT > >", "structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder_3_01_callable_t_00_01_called_ab0cbade8ac95d4737d2a9628391544e7.html", "structwpi_1_1detail_1_1_unique_function_base_1_1_callbacks_holder_3_01_callable_t_00_01_called_ab0cbade8ac95d4737d2a9628391544e7" ],
+    [ "CalledAs", "structwpi_1_1detail_1_1_unique_function_base_1_1_called_as.html", null ],
+    [ "IsSizeLessThanThresholdT", "structwpi_1_1detail_1_1_unique_function_base_1_1_is_size_less_than_threshold_t.html", null ],
+    [ "UniqueFunctionBase", "classwpi_1_1detail_1_1_unique_function_base.html#a78b9549fa29444da9b2c82abd40cf930", null ],
+    [ "~UniqueFunctionBase", "classwpi_1_1detail_1_1_unique_function_base.html#af3dc1edb9a4fe5fa7075d07d2252a6b8", null ],
+    [ "UniqueFunctionBase", "classwpi_1_1detail_1_1_unique_function_base.html#a62acbeae587a732a2fd1db6c24bd1583", null ],
+    [ "UniqueFunctionBase", "classwpi_1_1detail_1_1_unique_function_base.html#a6115ff778bed2d8d43c4eaa185c18c09", null ],
+    [ "CallImpl", "classwpi_1_1detail_1_1_unique_function_base.html#a46923a2008dc79f6f74574380f4fcdc4", null ],
+    [ "DestroyImpl", "classwpi_1_1detail_1_1_unique_function_base.html#a8c669dfc87c15e0078a80cd66b728f4d", null ],
+    [ "getCalleePtr", "classwpi_1_1detail_1_1_unique_function_base.html#a9b52e8bc60232ecf79dfeead55dccda3", null ],
+    [ "getCallPtr", "classwpi_1_1detail_1_1_unique_function_base.html#ae96ccf3d9069f433ede8ff25434e453d", null ],
+    [ "getInlineStorage", "classwpi_1_1detail_1_1_unique_function_base.html#a1496f11804f8457386b56cc129c17ee9", null ],
+    [ "getNonTrivialCallbacks", "classwpi_1_1detail_1_1_unique_function_base.html#a420bd8ef1c50a3de05a112eccec1aecf", null ],
+    [ "getOutOfLineStorage", "classwpi_1_1detail_1_1_unique_function_base.html#af2a41fc7fcd21aafebb940ffd537d16f", null ],
+    [ "getOutOfLineStorageAlignment", "classwpi_1_1detail_1_1_unique_function_base.html#a72862f7dc5a00212a7886be55db45411", null ],
+    [ "getOutOfLineStorageSize", "classwpi_1_1detail_1_1_unique_function_base.html#a37aefc04b7d7dec7b3e735d15bb24508", null ],
+    [ "MoveImpl", "classwpi_1_1detail_1_1_unique_function_base.html#ad5a56a6097ba2d05f2ca8b6ecac5cb33", null ],
+    [ "operator bool", "classwpi_1_1detail_1_1_unique_function_base.html#a70cfde8a521e3e0843b593ea1aa963ee", null ],
+    [ "operator=", "classwpi_1_1detail_1_1_unique_function_base.html#a364453a92d148e026e07cacb12640253", null ],
+    [ "setOutOfLineStorage", "classwpi_1_1detail_1_1_unique_function_base.html#a3cd1635b66ab6d4ff26287d4ad5cbc66", null ],
+    [ "CallPtr", "classwpi_1_1detail_1_1_unique_function_base.html#a37c73cdc6cb5b21704147ff90e5c5e90", null ],
+    [ "InlineStorageSize", "classwpi_1_1detail_1_1_unique_function_base.html#a27a44a9f0261c78774ae4e0a7651d320", null ]
+];

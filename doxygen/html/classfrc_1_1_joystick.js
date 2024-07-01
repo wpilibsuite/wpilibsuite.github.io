@@ -1,0 +1,48 @@
+var classfrc_1_1_joystick =
+[
+    [ "AxisType", "classfrc_1_1_joystick.html#abd7d1284c86e3cc2098e9749acc8fd0e", [
+      [ "kXAxis", "classfrc_1_1_joystick.html#abd7d1284c86e3cc2098e9749acc8fd0eac010f9bc0a9522e1086e59e1321a99b9", null ],
+      [ "kYAxis", "classfrc_1_1_joystick.html#abd7d1284c86e3cc2098e9749acc8fd0eacb2930b39e6be338c6b24ac1547e493b", null ],
+      [ "kZAxis", "classfrc_1_1_joystick.html#abd7d1284c86e3cc2098e9749acc8fd0ead19cc9cca265476803d746009df7bb03", null ],
+      [ "kTwistAxis", "classfrc_1_1_joystick.html#abd7d1284c86e3cc2098e9749acc8fd0ea1a1f97d1d153ddb4b7d9e31e6efd6b96", null ],
+      [ "kThrottleAxis", "classfrc_1_1_joystick.html#abd7d1284c86e3cc2098e9749acc8fd0ea04700231aa1b893d075901700ddec18a", null ]
+    ] ],
+    [ "ButtonType", "classfrc_1_1_joystick.html#a224a7aa1be877d08b5a819a4dc2b5602", [
+      [ "kTriggerButton", "classfrc_1_1_joystick.html#a224a7aa1be877d08b5a819a4dc2b5602af9df13633ad9109ebd11d1b8c5ffa7a7", null ],
+      [ "kTopButton", "classfrc_1_1_joystick.html#a224a7aa1be877d08b5a819a4dc2b5602aef2ab7f1b2f8456ba4c32c98fa985a72", null ]
+    ] ],
+    [ "Joystick", "classfrc_1_1_joystick.html#a7bd2084eb3c995a8696666037b2640fe", null ],
+    [ "~Joystick", "classfrc_1_1_joystick.html#a676657af36e8988b8f58592410d8c314", null ],
+    [ "Joystick", "classfrc_1_1_joystick.html#aaa3652f52c28d71b2a372a79b74bf35b", null ],
+    [ "GetDirection", "classfrc_1_1_joystick.html#ad36d7501da995bb28c734ae211f699cc", null ],
+    [ "GetMagnitude", "classfrc_1_1_joystick.html#acb6ad0b83213a24c0f860aef8092d7af", null ],
+    [ "GetThrottle", "classfrc_1_1_joystick.html#a80ae72780369e15abb601fe976a3274d", null ],
+    [ "GetThrottleChannel", "classfrc_1_1_joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4", null ],
+    [ "GetTop", "classfrc_1_1_joystick.html#a86e2971cd0f21cb4ec0594279830fb70", null ],
+    [ "GetTopPressed", "classfrc_1_1_joystick.html#a3787f11e73cbb1ca2c5e690ac8430e18", null ],
+    [ "GetTopReleased", "classfrc_1_1_joystick.html#a8cb0f38310cf9fdd0f5ef7915e9f61f3", null ],
+    [ "GetTrigger", "classfrc_1_1_joystick.html#a0a3686d20fc89b751e48bb7812f428f8", null ],
+    [ "GetTriggerPressed", "classfrc_1_1_joystick.html#a4459f87552a2e42d30af694d1dd943e4", null ],
+    [ "GetTriggerReleased", "classfrc_1_1_joystick.html#a247cbad9c99c23de547c601d8a119071", null ],
+    [ "GetTwist", "classfrc_1_1_joystick.html#a11702430f51a5182f786392253833d6a", null ],
+    [ "GetTwistChannel", "classfrc_1_1_joystick.html#a121cfb8e1160940c9c1945383568cfaf", null ],
+    [ "GetX", "classfrc_1_1_joystick.html#a776cc3cb9a641ea4b940a4f55a3cd16a", null ],
+    [ "GetXChannel", "classfrc_1_1_joystick.html#a7ddb12ad58e6c6639795d119e787633d", null ],
+    [ "GetY", "classfrc_1_1_joystick.html#aa504480f35bcf53bee3108aa29139636", null ],
+    [ "GetYChannel", "classfrc_1_1_joystick.html#a006daacb2f818fa4675b23824c7b3f5f", null ],
+    [ "GetZ", "classfrc_1_1_joystick.html#a8446bec782e1db910d4fe7fef8fd91cc", null ],
+    [ "GetZChannel", "classfrc_1_1_joystick.html#a69ce850bd814962982e462012f489074", null ],
+    [ "operator=", "classfrc_1_1_joystick.html#a903be191cf93d21a474a711b0ffe4041", null ],
+    [ "SetThrottleChannel", "classfrc_1_1_joystick.html#a38d1515448785d62cca5b6640a1744b7", null ],
+    [ "SetTwistChannel", "classfrc_1_1_joystick.html#a0603ed5f427b54d89e09f73a1be832ad", null ],
+    [ "SetXChannel", "classfrc_1_1_joystick.html#ad4ef337272a1e7de7ff13959e7fb4c55", null ],
+    [ "SetYChannel", "classfrc_1_1_joystick.html#a93df8f506da8175b8b26070d063655ba", null ],
+    [ "SetZChannel", "classfrc_1_1_joystick.html#ab9e402a6429034621c81584deaa9dc8e", null ],
+    [ "Top", "classfrc_1_1_joystick.html#a4c005a645bd8df10d6a701ccf6c00d7c", null ],
+    [ "Trigger", "classfrc_1_1_joystick.html#ab2975fbfb7a27cf9082056aebbc163c4", null ],
+    [ "kDefaultThrottleChannel", "classfrc_1_1_joystick.html#a33fc7ea682d18eb78956f2e733c99b34", null ],
+    [ "kDefaultTwistChannel", "classfrc_1_1_joystick.html#a8da655d8c056e00ef787373e22fc707e", null ],
+    [ "kDefaultXChannel", "classfrc_1_1_joystick.html#a6a2052cc04f070d7ebc933c1895751e8", null ],
+    [ "kDefaultYChannel", "classfrc_1_1_joystick.html#a900dc7eeab035c4151fc5ebc88006487", null ],
+    [ "kDefaultZChannel", "classfrc_1_1_joystick.html#ac791ce00b6c5e6b86f6085cbc9548b43", null ]
+];
