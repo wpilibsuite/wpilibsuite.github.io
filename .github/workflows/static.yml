@@ -59,6 +59,15 @@ jobs:
           rm -rf allwpilib/docs/development/java allwpilib/docs/development/cpp
           mv allwpilib/docs/development/javadoc allwpilib/docs/development/java
           mv allwpilib/docs/development/doxygen/html allwpilib/docs/development/cpp
+      - name: Get pages url
+        run: echo url=$(gh api "repos/${{ github.repository }}/pages" --jq '.html_url') >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install sitemap generator
+        run: npm install -g static-sitemap-cli@^2.2.5
+      - name: Generate sitemaps
+        # Disable robots because we don't need it and it opens every html file
+        run: static-sitemap-cli --base ${{ env.url }} --root . --no-robots --verbose --no-clean
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
