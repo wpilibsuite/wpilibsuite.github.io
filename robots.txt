@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /allwpilib/docs/beta/
+Disallow: /allwpilib/docs/development/
+
+Sitemap: https://github.wpilib.org/sitemap.xml
