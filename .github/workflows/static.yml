@@ -65,9 +65,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Install sitemap generator
         run: npm install -g static-sitemap-cli@^2.2.5
-      - name: Generate sitemaps
-        # Disable robots because we don't need it and it opens every html file
-        run: static-sitemap-cli --base ${{ env.url }} --root . --no-robots --verbose --no-clean
+      - name: Generate sitemap
+        run: static-sitemap-cli --base ${{ env.url }} --root . --ignore "allwpilib/docs/beta/**" "allwpilib/docs/development/**" --verbose --no-clean
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
