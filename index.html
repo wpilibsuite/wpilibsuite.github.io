@@ -3,32 +3,35 @@
 
 <head>
   <style>
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+    }
+
     .center {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      flex: 100px;
     }
 
     #logo {
-      width: 50%;
-      height: 50%;
-      display: block;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 
 <body>
   <div class="center">
-    <div class="center">
-      <img id=logo src="https://raw.githubusercontent.com/wpilibsuite/branding/master/svg/wpilib.svg" alt="wpilib" />
+    <div style="padding: 50px;" class="center">
+      <img id=logo src="https://raw.githubusercontent.com/wpilibsuite/branding/main/export/svg/wpilib-generic.svg" alt="wpilib" />
     </div>
+      <p><a href="https://docs.wpilib.org/">FIRST Robotics Competition Control System documentation</a></p>
+      <p><a href="allwpilib/docs/release/java/">WPILib Java API Docs</a></p>
+      <p><a href="allwpilib/docs/release/cpp/">WPILib C++ API Docs</a></p>
   </div>
-
-  <p><a href="https://docs.wpilib.org/">FIRST Robotics Competition Control System documentation</a></p>
-
-  <p><a href="allwpilib/docs/release/java/">WPILib Java API Docs</a></p>
-
-  <p><a href="allwpilib/docs/release/cpp/">WPILib C++ API Docs</a></p>
 </body>
 
 </html>
