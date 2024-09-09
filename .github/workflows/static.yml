@@ -59,6 +59,7 @@ jobs:
           rm -rf allwpilib/docs/development/java allwpilib/docs/development/cpp
           mv allwpilib/docs/development/javadoc allwpilib/docs/development/java
           mv allwpilib/docs/development/doxygen/html allwpilib/docs/development/cpp
+      - run: wget -O favicon.ico https://raw.githubusercontent.com/wpilibsuite/branding/main/export/ico/wpilib-icon-256.ico
       - name: Get pages url
         run: echo url=$(gh api "repos/${{ github.repository }}/pages" --jq '.html_url') >> $GITHUB_ENV
         env:
