@@ -1,0 +1,26 @@
+var namespaceunits_1_1traits =
+[
+    [ "has_decibel_scale", "structunits_1_1traits_1_1has__decibel__scale.html", null ],
+    [ "has_linear_scale", "structunits_1_1traits_1_1has__linear__scale.html", null ],
+    [ "is_base_unit", "structunits_1_1traits_1_1is__base__unit.html", null ],
+    [ "is_convertible_unit", "structunits_1_1traits_1_1is__convertible__unit.html", null ],
+    [ "is_convertible_unit_t", "structunits_1_1traits_1_1is__convertible__unit__t.html", null ],
+    [ "is_dimensionless_unit", "structunits_1_1traits_1_1is__dimensionless__unit.html", null ],
+    [ "is_nonlinear_scale", "structunits_1_1traits_1_1is__nonlinear__scale.html", null ],
+    [ "is_ratio", "structunits_1_1traits_1_1is__ratio.html", null ],
+    [ "is_same_scale", "structunits_1_1traits_1_1is__same__scale.html", null ],
+    [ "is_unit", "structunits_1_1traits_1_1is__unit.html", null ],
+    [ "is_unit_t", "structunits_1_1traits_1_1is__unit__t.html", null ],
+    [ "is_unit_value_t", "structunits_1_1traits_1_1is__unit__value__t.html", null ],
+    [ "is_unit_value_t_category", "structunits_1_1traits_1_1is__unit__value__t__category.html", null ],
+    [ "base_unit_of", "namespaceunits_1_1traits.html#a923f938c6c71c19aeeee6df290c047a8", null ],
+    [ "has_decibel_scale_v", "namespaceunits_1_1traits.html#a548216e183f61c908e6db527be2a7858", null ],
+    [ "has_linear_scale_v", "namespaceunits_1_1traits.html#a679ec0736cd021e6e37ed0f710b5b6d7", null ],
+    [ "is_convertible_unit_v", "namespaceunits_1_1traits.html#a67512190e68b1583ae56ba6bbcdcaa7c", null ],
+    [ "is_ratio_v", "namespaceunits_1_1traits.html#af854617ff2c81618056fe5c43d5da755", null ],
+    [ "is_same_scale_v", "namespaceunits_1_1traits.html#ab1aeb0147750127deaeef7fe452da3f0", null ],
+    [ "is_unit_t_v", "namespaceunits_1_1traits.html#ac83d29f444a9de60d7f454200e33ffbc", null ],
+    [ "is_unit_v", "namespaceunits_1_1traits.html#abacb2c1570fc66b2d9838618e6b06be3", null ],
+    [ "is_unit_value_t_category_v", "namespaceunits_1_1traits.html#a923c255fea7c6ba3d4e7f191a42e93e8", null ],
+    [ "is_unit_value_t_v", "namespaceunits_1_1traits.html#aff46b9ed6f1f6c7580c7b2a44ce801ab", null ]
+];

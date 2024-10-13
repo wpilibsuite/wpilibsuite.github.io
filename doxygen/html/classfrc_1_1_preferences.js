@@ -1,0 +1,25 @@
+var classfrc_1_1_preferences =
+[
+    [ "ContainsKey", "classfrc_1_1_preferences.html#a6596c7c27937cb7c03724780c78ea5ac", null ],
+    [ "GetBoolean", "classfrc_1_1_preferences.html#abc200116b87a5e96fe4f5644f8fe510c", null ],
+    [ "GetDouble", "classfrc_1_1_preferences.html#aeacaad84ba3f41d6c10fe925faa5da33", null ],
+    [ "GetFloat", "classfrc_1_1_preferences.html#a69de3e263be9d52d73ebc06fbaedcbb1", null ],
+    [ "GetInt", "classfrc_1_1_preferences.html#ab797970a7d2cbb3999193a08f8047197", null ],
+    [ "GetKeys", "classfrc_1_1_preferences.html#a6fc2363d63a83f9f5b1c9b6b4a5c6a6b", null ],
+    [ "GetLong", "classfrc_1_1_preferences.html#a4075b4f784f5a68b50110f6faf05a758", null ],
+    [ "GetString", "classfrc_1_1_preferences.html#ad7981a44f41fbd7d23bb96fecfbf0a42", null ],
+    [ "InitBoolean", "classfrc_1_1_preferences.html#a6144526a62c3eab7016800324dae5a95", null ],
+    [ "InitDouble", "classfrc_1_1_preferences.html#ab1eb8b858ccccd7f9d25c92a0a5e2924", null ],
+    [ "InitFloat", "classfrc_1_1_preferences.html#a0c7dd84229f85e6d69b5e19a2d25f421", null ],
+    [ "InitInt", "classfrc_1_1_preferences.html#ac04912e0fd4ce3275ae277ca9c38a576", null ],
+    [ "InitLong", "classfrc_1_1_preferences.html#a22672af0f9b44918d1c321ad87b2f6a1", null ],
+    [ "InitString", "classfrc_1_1_preferences.html#a5ec32e8dd5cdc6bdd81db29fbeee414c", null ],
+    [ "Remove", "classfrc_1_1_preferences.html#afe5715c006538261186817f1e3cbd1bb", null ],
+    [ "RemoveAll", "classfrc_1_1_preferences.html#a9c1967faf43b9f3e6f09dd8eaf29fe21", null ],
+    [ "SetBoolean", "classfrc_1_1_preferences.html#a37169b21a65fd46c1342cde1ea22fa49", null ],
+    [ "SetDouble", "classfrc_1_1_preferences.html#a12df3f7d7ebd6669938fc685a7d0f815", null ],
+    [ "SetFloat", "classfrc_1_1_preferences.html#a678143d109b68b0fa1f0dcf417a31694", null ],
+    [ "SetInt", "classfrc_1_1_preferences.html#a23b560dbbd609f38a9e85307a79dce99", null ],
+    [ "SetLong", "classfrc_1_1_preferences.html#aa856928fda66ad94f2e7e72bd0b14b7a", null ],
+    [ "SetString", "classfrc_1_1_preferences.html#a09f1a87e91e158828f42f38d8e53c82c", null ]
+];

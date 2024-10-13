@@ -1,0 +1,28 @@
+var structsleipnir_1_1detail_1_1_expression =
+[
+    [ "BinaryFuncDouble", "structsleipnir_1_1detail_1_1_expression.html#aa43b70e0f706d4c43d8375b0a7960917", null ],
+    [ "TrinaryFuncDouble", "structsleipnir_1_1detail_1_1_expression.html#a4c835ea8e95229b4adf070365da75d86", null ],
+    [ "TrinaryFuncExpr", "structsleipnir_1_1detail_1_1_expression.html#a42dcb60f17c66ba6118edb1a5845e8a1", null ],
+    [ "Expression", "structsleipnir_1_1detail_1_1_expression.html#a51c4257825121d8cb78b076cead15d3b", null ],
+    [ "Expression", "structsleipnir_1_1detail_1_1_expression.html#a0d93eab3f0ff1c5ae2498d16aca8b5c7", null ],
+    [ "Expression", "structsleipnir_1_1detail_1_1_expression.html#af2b896473c9acaca60bac4c2f74cba44", null ],
+    [ "Expression", "structsleipnir_1_1detail_1_1_expression.html#afc520dc272f9d3d06bc0798e80ad9610", null ],
+    [ "IsConstant", "structsleipnir_1_1detail_1_1_expression.html#a60691b3ad0a9502e3c1f3b5017e17b86", null ],
+    [ "operator*", "structsleipnir_1_1detail_1_1_expression.html#acd6e5c9c9d9570bf22c32413cc68ac23", null ],
+    [ "operator+", "structsleipnir_1_1detail_1_1_expression.html#a8b6e5a3236d62b231f3008b667360593", null ],
+    [ "operator+", "structsleipnir_1_1detail_1_1_expression.html#ae502555022ecc235a9ae91ed959e4ca9", null ],
+    [ "operator-", "structsleipnir_1_1detail_1_1_expression.html#a36494cf2178ea319818fdd8d35a12b2b", null ],
+    [ "operator-", "structsleipnir_1_1detail_1_1_expression.html#a53c81893744e237e0bc78d8316d6e1a3", null ],
+    [ "operator/", "structsleipnir_1_1detail_1_1_expression.html#a532d47b66ad06e3738d48391b3b31676", null ],
+    [ "adjoint", "structsleipnir_1_1detail_1_1_expression.html#a0cfc2dae48223841105121bd4b4ccd3b", null ],
+    [ "adjointExpr", "structsleipnir_1_1detail_1_1_expression.html#a983994e2cdb6273291a750c196b1ca31", null ],
+    [ "args", "structsleipnir_1_1detail_1_1_expression.html#a4d2105c7e547840d2f765132405742e8", null ],
+    [ "duplications", "structsleipnir_1_1detail_1_1_expression.html#a4111033650731045bb1e70a918389572", null ],
+    [ "gradientFuncs", "structsleipnir_1_1detail_1_1_expression.html#ad8f84c2e005c184ec2efc32e0d38ebb4", null ],
+    [ "gradientValueFuncs", "structsleipnir_1_1detail_1_1_expression.html#a3592a1ecd8ded4c1efdc6707cbdd51ce", null ],
+    [ "refCount", "structsleipnir_1_1detail_1_1_expression.html#a991163cafe9c3e15d3ac069527ba7b7e", null ],
+    [ "row", "structsleipnir_1_1detail_1_1_expression.html#afde3dd8d4b3dd902f2dd5bfecae54366", null ],
+    [ "type", "structsleipnir_1_1detail_1_1_expression.html#a070ee6a0d9e8a80f478a3700fd548e42", null ],
+    [ "value", "structsleipnir_1_1detail_1_1_expression.html#ae2d8c4353be19d7b5a2e246f987b898e", null ],
+    [ "valueFunc", "structsleipnir_1_1detail_1_1_expression.html#ae237dde540ae89735c99c4f4ec3dd510", null ]
+];
