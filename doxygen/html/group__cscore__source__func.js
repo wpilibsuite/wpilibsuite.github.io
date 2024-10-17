@@ -1,0 +1,27 @@
+var group__cscore__source__func =
+[
+    [ "cs::CopySource", "group__cscore__source__func.html#ga5e96e9a6f6c3f4c085c33f1bb281a9bd", null ],
+    [ "cs::EnumerateSourceProperties", "group__cscore__source__func.html#ga831aec7aae45a78f1eb02917f0c4487f", null ],
+    [ "cs::EnumerateSourceSinks", "group__cscore__source__func.html#gafa6cd743facb428d5775a2fb181ad59a", null ],
+    [ "cs::EnumerateSourceVideoModes", "group__cscore__source__func.html#gaa28d00d83cecf7dbf2b7b31498bb6e1f", null ],
+    [ "cs::GetSourceConfigJson", "group__cscore__source__func.html#ga4d07254f2d0553919cce44d563c28547", null ],
+    [ "cs::GetSourceConfigJsonObject", "group__cscore__source__func.html#ga50565b188e9bd348f1a4e142bcb450f4", null ],
+    [ "cs::GetSourceDescription", "group__cscore__source__func.html#gab73f2b6e2f5e31ae5d2b542e5f0fd2cc", null ],
+    [ "cs::GetSourceDescription", "group__cscore__source__func.html#ga7dd01c67765445c32248619d2e5afb01", null ],
+    [ "cs::GetSourceKind", "group__cscore__source__func.html#gab32e0ee1453e2edc42c52831fdc9d3d1", null ],
+    [ "cs::GetSourceLastFrameTime", "group__cscore__source__func.html#ga23dfd8f4abeaa9d073008573a23c839d", null ],
+    [ "cs::GetSourceName", "group__cscore__source__func.html#gab5cd727a65199bb4aae5ff3c0e9f0849", null ],
+    [ "cs::GetSourceName", "group__cscore__source__func.html#ga5874309e0f24ed77c53747f064053498", null ],
+    [ "cs::GetSourceProperty", "group__cscore__source__func.html#ga3bc72f22d4c2f22527331fdc81e10bc4", null ],
+    [ "cs::GetSourceVideoMode", "group__cscore__source__func.html#ga59a28273f3bf6eed6a0e57d781b1e1ee", null ],
+    [ "cs::IsSourceConnected", "group__cscore__source__func.html#ga1f90bf7051627dbba5038a26e490883f", null ],
+    [ "cs::IsSourceEnabled", "group__cscore__source__func.html#ga606609a443550d1007805e6673ed8b4f", null ],
+    [ "cs::ReleaseSource", "group__cscore__source__func.html#ga0746fd6725b23c36ca1cb79e27774e87", null ],
+    [ "cs::SetSourceConfigJson", "group__cscore__source__func.html#ga47896bf818efc12943fa44e39a2a05f4", null ],
+    [ "cs::SetSourceConfigJson", "group__cscore__source__func.html#ga42b9391439eadaa637600caa6bc5e83a", null ],
+    [ "cs::SetSourceConnectionStrategy", "group__cscore__source__func.html#ga553dc2208011959122f06f07f4a8c725", null ],
+    [ "cs::SetSourceFPS", "group__cscore__source__func.html#gaf9591cd90e5c884fd6c12b469a44b341", null ],
+    [ "cs::SetSourcePixelFormat", "group__cscore__source__func.html#ga4611681c463db001462787139c80fffc", null ],
+    [ "cs::SetSourceResolution", "group__cscore__source__func.html#ga2a71b2104a708b4fa8231fa377ef8382", null ],
+    [ "cs::SetSourceVideoMode", "group__cscore__source__func.html#gad91b1a33f1773ed6fe36bd60c0876579", null ]
+];

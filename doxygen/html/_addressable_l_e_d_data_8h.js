@@ -1,0 +1,26 @@
+var _addressable_l_e_d_data_8h =
+[
+    [ "HALSIM_CancelAddressableLEDDataCallback", "_addressable_l_e_d_data_8h.html#a96573373bc22c81fb710915167ec552f", null ],
+    [ "HALSIM_CancelAddressableLEDInitializedCallback", "_addressable_l_e_d_data_8h.html#a70cffebf6deebb5afc0d0ad994272183", null ],
+    [ "HALSIM_CancelAddressableLEDLengthCallback", "_addressable_l_e_d_data_8h.html#a69eaf830303a40431de0b39840913547", null ],
+    [ "HALSIM_CancelAddressableLEDOutputPortCallback", "_addressable_l_e_d_data_8h.html#afd6f6951f50384ed8edd2a46c9e34fb4", null ],
+    [ "HALSIM_CancelAddressableLEDRunningCallback", "_addressable_l_e_d_data_8h.html#af5ea0911afe0f49efaf72538fa03baac", null ],
+    [ "HALSIM_FindAddressableLEDForChannel", "_addressable_l_e_d_data_8h.html#ac65e3551cfff412d62cebe6768d794fe", null ],
+    [ "HALSIM_GetAddressableLEDData", "_addressable_l_e_d_data_8h.html#adef5a725b4d2d69cb627a05c208134e0", null ],
+    [ "HALSIM_GetAddressableLEDInitialized", "_addressable_l_e_d_data_8h.html#a4332f6a0d1591e30a1dbd0214edd110c", null ],
+    [ "HALSIM_GetAddressableLEDLength", "_addressable_l_e_d_data_8h.html#ae13cbddfaa9423ad5f75c38a811270a8", null ],
+    [ "HALSIM_GetAddressableLEDOutputPort", "_addressable_l_e_d_data_8h.html#af52ae2012fb1596140267172d8b07324", null ],
+    [ "HALSIM_GetAddressableLEDRunning", "_addressable_l_e_d_data_8h.html#a14b5ab4038928d98ab60216c6fccec02", null ],
+    [ "HALSIM_RegisterAddressableLEDAllCallbacks", "_addressable_l_e_d_data_8h.html#a58fbc649225e4a222a7ee1adb3d9cbd1", null ],
+    [ "HALSIM_RegisterAddressableLEDDataCallback", "_addressable_l_e_d_data_8h.html#a63266a471a7ff708084c08c005844f97", null ],
+    [ "HALSIM_RegisterAddressableLEDInitializedCallback", "_addressable_l_e_d_data_8h.html#aa3488705ea3b175e90296389fb355755", null ],
+    [ "HALSIM_RegisterAddressableLEDLengthCallback", "_addressable_l_e_d_data_8h.html#ab4d24362d047b723f9fa3f4545c11f75", null ],
+    [ "HALSIM_RegisterAddressableLEDOutputPortCallback", "_addressable_l_e_d_data_8h.html#adfe8e08b46ba11dfea2c466f748c907e", null ],
+    [ "HALSIM_RegisterAddressableLEDRunningCallback", "_addressable_l_e_d_data_8h.html#a3143d76114ece29e89dff265020709a6", null ],
+    [ "HALSIM_ResetAddressableLEDData", "_addressable_l_e_d_data_8h.html#ab842fb295e18b76ea2c58f3cc5b67dc6", null ],
+    [ "HALSIM_SetAddressableLEDData", "_addressable_l_e_d_data_8h.html#a216e1fb9d9a715777c500da495a99684", null ],
+    [ "HALSIM_SetAddressableLEDInitialized", "_addressable_l_e_d_data_8h.html#ae264cb8c50c26e0d2e231641d4adcb84", null ],
+    [ "HALSIM_SetAddressableLEDLength", "_addressable_l_e_d_data_8h.html#ae56ace4ff0fdf00dcf5c9e19a59a5069", null ],
+    [ "HALSIM_SetAddressableLEDOutputPort", "_addressable_l_e_d_data_8h.html#a2fd1f9fe43797df6c2f842d792e7f0db", null ],
+    [ "HALSIM_SetAddressableLEDRunning", "_addressable_l_e_d_data_8h.html#a551bbc331489a9f06a01d41a880dbb42", null ]
+];

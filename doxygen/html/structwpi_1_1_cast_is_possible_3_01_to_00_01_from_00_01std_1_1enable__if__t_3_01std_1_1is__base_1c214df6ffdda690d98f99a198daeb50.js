@@ -1,0 +1,4 @@
+var structwpi_1_1_cast_is_possible_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_01std_1_1is__base_1c214df6ffdda690d98f99a198daeb50 =
+[
+    [ "isPossible", "structwpi_1_1_cast_is_possible_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_01std_1_1is__base_1c214df6ffdda690d98f99a198daeb50.html#a174f6e9caa0129811ac26372af59455f", null ]
+];

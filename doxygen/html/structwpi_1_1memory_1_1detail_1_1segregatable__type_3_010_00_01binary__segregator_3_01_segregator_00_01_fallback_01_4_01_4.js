@@ -1,0 +1,6 @@
+var structwpi_1_1memory_1_1detail_1_1segregatable__type_3_010_00_01binary__segregator_3_01_segregator_00_01_fallback_01_4_01_4 =
+[
+    [ "type", "structwpi_1_1memory_1_1detail_1_1segregatable__type_3_010_00_01binary__segregator_3_01_segregator_00_01_fallback_01_4_01_4.html#ae1a8bb216710519b869b6680233f527d", null ],
+    [ "get", "structwpi_1_1memory_1_1detail_1_1segregatable__type_3_010_00_01binary__segregator_3_01_segregator_00_01_fallback_01_4_01_4.html#a2b06b95f25091707a76262e416c0ddb9", null ],
+    [ "get", "structwpi_1_1memory_1_1detail_1_1segregatable__type_3_010_00_01binary__segregator_3_01_segregator_00_01_fallback_01_4_01_4.html#a151a8ca095c87a4bd8fed768b7eeca6f", null ]
+];
