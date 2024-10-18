@@ -1,0 +1,7 @@
+var structwpi_1_1_pointer_like_type_traits_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_07d15f14192fcce1c1fa879f2bfdb0181 =
+[
+    [ "getAsVoidPointer", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_07d15f14192fcce1c1fa879f2bfdb0181.html#a679652e00727bb7f06e4a671097f13a1", null ],
+    [ "getFromVoidPointer", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_07d15f14192fcce1c1fa879f2bfdb0181.html#a73827dfaa97303be589eaa642ca69364", null ],
+    [ "getFromVoidPointer", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_07d15f14192fcce1c1fa879f2bfdb0181.html#aa5e15296879f4d95e40461ab59a16aca", null ],
+    [ "NumLowBitsAvailable", "structwpi_1_1_pointer_like_type_traits_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_07d15f14192fcce1c1fa879f2bfdb0181.html#a93f6a9e8ae6ecc0d0f79533d08b88547", null ]
+];

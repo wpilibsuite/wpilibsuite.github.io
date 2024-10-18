@@ -1,0 +1,27 @@
+var classfrc_1_1_quaternion =
+[
+    [ "Quaternion", "classfrc_1_1_quaternion.html#a912c95bb421f550ffcb306a7e05f6592", null ],
+    [ "Quaternion", "classfrc_1_1_quaternion.html#a476abb665f4da7cfa931452d9d830f5c", null ],
+    [ "Conjugate", "classfrc_1_1_quaternion.html#a501b7579d24b33c83a85d176996ff73e", null ],
+    [ "Dot", "classfrc_1_1_quaternion.html#a229a7f4dcf32b45feff8598cd28b3d18", null ],
+    [ "Exp", "classfrc_1_1_quaternion.html#ad150476c957906115c631103a5ce14ac", null ],
+    [ "Exp", "classfrc_1_1_quaternion.html#af35f6b941ce00fa7073270910c417b4e", null ],
+    [ "FromRotationVector", "classfrc_1_1_quaternion.html#aa9e86c5f0d0b9433643a7479bd92337c", null ],
+    [ "Inverse", "classfrc_1_1_quaternion.html#ad2f8e185b4fa8f0dd505decd06ca0777", null ],
+    [ "Log", "classfrc_1_1_quaternion.html#ae715ff4006e05c76eb1c45443ba71529", null ],
+    [ "Log", "classfrc_1_1_quaternion.html#a022c3361071b1defd5eb4fc939b6ab9c", null ],
+    [ "Norm", "classfrc_1_1_quaternion.html#aa08e381d96d3c72585a43e91df6fa2de", null ],
+    [ "Normalize", "classfrc_1_1_quaternion.html#a3650c788d41c3914078d00731ae79bcb", null ],
+    [ "operator*", "classfrc_1_1_quaternion.html#a3a6b039c379607105d26513c2ea334c6", null ],
+    [ "operator*", "classfrc_1_1_quaternion.html#a4aaf86de15e8184c1bc7fbe32990ad87", null ],
+    [ "operator+", "classfrc_1_1_quaternion.html#a2c03bbdd355d2958d2e1d24c82721e6a", null ],
+    [ "operator-", "classfrc_1_1_quaternion.html#a9ffbc79d90b4ba7dbffc51c6215ff71d", null ],
+    [ "operator/", "classfrc_1_1_quaternion.html#a5b7952aace1d1b2258efdbbeb2b49e32", null ],
+    [ "operator==", "classfrc_1_1_quaternion.html#a2806955646704048f56e01ca8e3b7b57", null ],
+    [ "Pow", "classfrc_1_1_quaternion.html#a594f8eb865fdb45ac1abdcbfc542253e", null ],
+    [ "ToRotationVector", "classfrc_1_1_quaternion.html#aaf5c7f4e20f9c6b95cba127031b69dc6", null ],
+    [ "W", "classfrc_1_1_quaternion.html#ac4d38d624cb8295a993def61470a1de4", null ],
+    [ "X", "classfrc_1_1_quaternion.html#ab9bf9e03394cbf9d67c93e5c954f0865", null ],
+    [ "Y", "classfrc_1_1_quaternion.html#a634fa099efd14f858d84a95302bee113", null ],
+    [ "Z", "classfrc_1_1_quaternion.html#a283d757b441df0484e456a768cbcaa79", null ]
+];
