@@ -1,0 +1,4 @@
+var structwpi_1_1isa__impl_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_357c8de4dbc532e0dce3d4d07d5457cf9 =
+[
+    [ "doit", "structwpi_1_1isa__impl_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_357c8de4dbc532e0dce3d4d07d5457cf9.html#a1c9eae63bf67c8cc69d7c6639ffe87ba", null ]
+];

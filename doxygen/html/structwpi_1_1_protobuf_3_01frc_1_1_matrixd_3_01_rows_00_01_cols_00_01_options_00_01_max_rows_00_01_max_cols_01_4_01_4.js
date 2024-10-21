@@ -1,0 +1,6 @@
+var structwpi_1_1_protobuf_3_01frc_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4 =
+[
+    [ "New", "structwpi_1_1_protobuf_3_01frc_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a316cb260f59cd2ccec9292d2cac20185", null ],
+    [ "Pack", "structwpi_1_1_protobuf_3_01frc_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#aab52b283d7eb49c846176804485ba4ce", null ],
+    [ "Unpack", "structwpi_1_1_protobuf_3_01frc_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a697da888895f7713ae8670ff145792ac", null ]
+];

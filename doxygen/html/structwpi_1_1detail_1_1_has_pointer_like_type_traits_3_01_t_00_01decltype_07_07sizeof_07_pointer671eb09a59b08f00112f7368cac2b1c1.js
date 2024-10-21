@@ -1,0 +1,4 @@
+var structwpi_1_1detail_1_1_has_pointer_like_type_traits_3_01_t_00_01decltype_07_07sizeof_07_pointer671eb09a59b08f00112f7368cac2b1c1 =
+[
+    [ "value", "structwpi_1_1detail_1_1_has_pointer_like_type_traits_3_01_t_00_01decltype_07_07sizeof_07_pointer671eb09a59b08f00112f7368cac2b1c1.html#adce3a5f5e5f9fe3576b96e50ea971ba9", null ]
+];
