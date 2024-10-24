@@ -1,0 +1,10 @@
+var structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4 =
+[
+    [ "Self", "structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4.html#af6227982a7584fe802cd0d87a465d594", null ],
+    [ "SimpleFrom", "structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4.html#a66c49bb0d1111046e4b754b4c8c10287", null ],
+    [ "SimplifiedSelf", "structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4.html#aaeb4610b3c828d1805a6341bbb5af62b", null ],
+    [ "castFailed", "structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4.html#ad407d2d4bca9a064079975068fb72578", null ],
+    [ "doCast", "structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4.html#a75e4bb92b8fc102de2f570958ced3df5", null ],
+    [ "doCastIfPossible", "structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4.html#a045f1e2b7db2b1afcaab93610043a2bb", null ],
+    [ "isPossible", "structwpi_1_1_cast_info_3_01_to_00_01_from_00_01std_1_1enable__if__t_3_9is__simple__type_3_01_from_01_4_1_1value_01_4_01_4.html#ad03566864e817ecc43ba5b2d925f8577", null ]
+];
