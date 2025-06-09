@@ -2,18 +2,12 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the source branches
+  # Runs on pushes targeting the main branch
   push:
-    branches: ["main", "allwpilib-development", "allwpilib-release", "allwpilib-beta"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -22,59 +16,60 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  assemble:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout branch
         uses: actions/checkout@v4
-        with:
-          ref: main
-      - name: Checkout allwpilib-release
-        uses: actions/checkout@v4
+      - name: Install release
+        uses: ./.github/actions/install-docs
         with:
           ref: allwpilib-release
           path: allwpilib/docs/release
-      - name: Checkout allwpilib-beta
-        uses: actions/checkout@v4
+      - name: Install beta
+        uses: ./.github/actions/install-docs
         with:
           ref: allwpilib-beta
           path: allwpilib/docs/beta
-      - name: Checkout allwpilib-development
-        uses: actions/checkout@v4
+      - name: Install development
+        uses: ./.github/actions/install-docs
         with:
           ref: allwpilib-development
           path: allwpilib/docs/development
-      - name: Finalize directory locations
-        run: |
-          rm -rf allwpilib/docs/release/java allwpilib/docs/release/cpp
-          mv allwpilib/docs/release/javadoc allwpilib/docs/release/java
-          mv allwpilib/docs/release/doxygen/html allwpilib/docs/release/cpp
-          rm -rf allwpilib/docs/beta/java allwpilib/docs/beta/cpp
-          mv allwpilib/docs/beta/javadoc allwpilib/docs/beta/java
-          mv allwpilib/docs/beta/doxygen/html allwpilib/docs/beta/cpp
-          rm -rf allwpilib/docs/development/java allwpilib/docs/development/cpp
-          mv allwpilib/docs/development/javadoc allwpilib/docs/development/java
-          mv allwpilib/docs/development/doxygen/html allwpilib/docs/development/cpp
+      - name: Install 2027
+        uses: ./.github/actions/install-docs
+        with:
+          ref: allwpilib-2027
+          path: allwpilib/docs/2027
       - run: wget -O favicon.ico https://raw.githubusercontent.com/wpilibsuite/branding/main/export/ico/wpilib-icon-256.ico
-      - name: Get pages url
-        run: echo url=$(gh api "repos/${{ github.repository }}/pages" --jq '.html_url') >> $GITHUB_ENV
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Pages
+        id: configure-pages
+        uses: actions/configure-pages@v5
+        continue-on-error: ${{ github.repository != 'wpilibsuite/wpilibsuite.github.io'}}
       - name: Install sitemap generator
         run: npm install -g static-sitemap-cli@^2.2.5
+        if: ${{ steps.configure-pages.outcome == 'success' }}
       - name: Generate sitemap
-        run: static-sitemap-cli --base ${{ env.url }} --root . --ignore "allwpilib/docs/beta/**" "allwpilib/docs/development/**" --changefreq  "**,monthly" "allwpilib/docs/**,weekly" --verbose --no-clean
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+        run: static-sitemap-cli --base ${{ steps.configure-pages.outputs.base_url }} --root . --ignore "allwpilib/docs/beta/**" "allwpilib/docs/development/**" "allwpilib/docs/2027/**" --changefreq  "**,monthly" "allwpilib/docs/**,weekly" --verbose --no-clean
+        if: ${{ steps.configure-pages.outcome == 'success' }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '.'
+
+  deploy:
+    needs: assemble
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,0 +1,25 @@
+name: 'Install API docs'
+description: 'Pull and install allwpilib API docs from a given git ref'
+inputs:
+  ref:
+    description: 'git ref to pull API docs from'
+    required: true
+  path:
+    description: 'path to place API docs in'
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout docs
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ inputs.ref }}
+        path: tmp/${{ inputs.ref }}
+    - name: Finalize location
+      shell: bash
+      run: |
+        rm -rf ${{ inputs.path }}/java ${{ inputs.path }}/cpp
+        mkdir -p ${{ inputs.path }}
+        mv tmp/${{ inputs.ref }}/javadoc ${{ inputs.path }}/java
+        mv tmp/${{ inputs.ref }}/doxygen/html ${{ inputs.path }}/cpp
+        rm -rf tmp
