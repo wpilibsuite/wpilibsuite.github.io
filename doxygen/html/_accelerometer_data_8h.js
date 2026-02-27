@@ -1,0 +1,25 @@
+var _accelerometer_data_8h =
+[
+    [ "HALSIM_CancelAccelerometerActiveCallback", "_accelerometer_data_8h.html#a614ce8c5179045cf7860b5e618a8aa8e", null ],
+    [ "HALSIM_CancelAccelerometerRangeCallback", "_accelerometer_data_8h.html#afa350ed98036c9439538418ae6b307ac", null ],
+    [ "HALSIM_CancelAccelerometerXCallback", "_accelerometer_data_8h.html#a9294c7b311cd140702d9a6e51407883c", null ],
+    [ "HALSIM_CancelAccelerometerYCallback", "_accelerometer_data_8h.html#a9d480b9f348db0e6db6f7c9039c10cde", null ],
+    [ "HALSIM_CancelAccelerometerZCallback", "_accelerometer_data_8h.html#a5ac7d4022f5711ee9eb888374f66ac10", null ],
+    [ "HALSIM_GetAccelerometerActive", "_accelerometer_data_8h.html#a56401da5a223f9a8e8dff1dbc4e07573", null ],
+    [ "HALSIM_GetAccelerometerRange", "_accelerometer_data_8h.html#ac39bb0fd0da692742509be293683eb85", null ],
+    [ "HALSIM_GetAccelerometerX", "_accelerometer_data_8h.html#a13296a484f19ff64c6c37545128e5cde", null ],
+    [ "HALSIM_GetAccelerometerY", "_accelerometer_data_8h.html#af2bab2ee280c68eeb9130632a24f7f57", null ],
+    [ "HALSIM_GetAccelerometerZ", "_accelerometer_data_8h.html#a88da5dc80594efcaea9f6c5db4aff3cf", null ],
+    [ "HALSIM_RegisterAccelerometerActiveCallback", "_accelerometer_data_8h.html#a327e6460b84bfce176dac8dbb1de98ab", null ],
+    [ "HALSIM_RegisterAccelerometerAllCallbacks", "_accelerometer_data_8h.html#a5cf5a330b23dc1aae19f6ed39f53b6f4", null ],
+    [ "HALSIM_RegisterAccelerometerRangeCallback", "_accelerometer_data_8h.html#afcc7d3c671efde2a276ee709900a72b1", null ],
+    [ "HALSIM_RegisterAccelerometerXCallback", "_accelerometer_data_8h.html#a9ca40d6ff34b6d7f3589479bbf285328", null ],
+    [ "HALSIM_RegisterAccelerometerYCallback", "_accelerometer_data_8h.html#a8bc34ca563b559fc22ac3b99575e8562", null ],
+    [ "HALSIM_RegisterAccelerometerZCallback", "_accelerometer_data_8h.html#af69f625b44e9961a6becd8452d2366fd", null ],
+    [ "HALSIM_ResetAccelerometerData", "_accelerometer_data_8h.html#ae681c899522e4a9c4d96345e898f634a", null ],
+    [ "HALSIM_SetAccelerometerActive", "_accelerometer_data_8h.html#ab98a91bcfcc0ae202ecbe44a36bbb18b", null ],
+    [ "HALSIM_SetAccelerometerRange", "_accelerometer_data_8h.html#a9542a5f4b24bbb84164bcaee328d5eee", null ],
+    [ "HALSIM_SetAccelerometerX", "_accelerometer_data_8h.html#a1bf1429c1920b7b9c1b4f679a0b26193", null ],
+    [ "HALSIM_SetAccelerometerY", "_accelerometer_data_8h.html#ab6a4c6f3e47c71dfb53f0cf9745fddfc", null ],
+    [ "HALSIM_SetAccelerometerZ", "_accelerometer_data_8h.html#a0b2bbc59f4dafd24afbea0c5668f5d69", null ]
+];

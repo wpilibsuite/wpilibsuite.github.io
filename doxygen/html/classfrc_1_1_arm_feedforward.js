@@ -1,0 +1,25 @@
+var classfrc_1_1_arm_feedforward =
+[
+    [ "Acceleration", "classfrc_1_1_arm_feedforward.html#a2ba7a93cf1b1675f67a528d7bdbfceea", null ],
+    [ "Angle", "classfrc_1_1_arm_feedforward.html#aaabbd274e9c4278f6a95e2c2ef54f33d", null ],
+    [ "ka_unit", "classfrc_1_1_arm_feedforward.html#a284ad753204d1561a1fdeee2c3737cd5", null ],
+    [ "kv_unit", "classfrc_1_1_arm_feedforward.html#a93c00ffd6049ea2269e8d5c4930c14b0", null ],
+    [ "Velocity", "classfrc_1_1_arm_feedforward.html#a2d7490cab277aaa464fbb150cd35d35a", null ],
+    [ "ArmFeedforward", "classfrc_1_1_arm_feedforward.html#a4b6c49902d4710fac39a01d91a3a338c", null ],
+    [ "Calculate", "classfrc_1_1_arm_feedforward.html#a45fef72d52f9521f21d8fe9dc5f47549", null ],
+    [ "Calculate", "classfrc_1_1_arm_feedforward.html#a38778ba24f371eb7a80dc8de0c5f049a", null ],
+    [ "Calculate", "classfrc_1_1_arm_feedforward.html#a3135d1f1226801d552f145d4bd804b3a", null ],
+    [ "Calculate", "classfrc_1_1_arm_feedforward.html#a8f176611840bdd894627fadf612ecd11", null ],
+    [ "GetKa", "classfrc_1_1_arm_feedforward.html#a51148653b9bc88555547c82ac5fbf5e0", null ],
+    [ "GetKg", "classfrc_1_1_arm_feedforward.html#aec0a8e1dc4c404b43457bfda0b1fc3b8", null ],
+    [ "GetKs", "classfrc_1_1_arm_feedforward.html#a3c95d9bdea59b4ab15c1fe7676704412", null ],
+    [ "GetKv", "classfrc_1_1_arm_feedforward.html#a9a37e478fda58f16a63e1197be7475d0", null ],
+    [ "MaxAchievableAcceleration", "classfrc_1_1_arm_feedforward.html#a2c6379a188edd392bb8cebb703b48f42", null ],
+    [ "MaxAchievableVelocity", "classfrc_1_1_arm_feedforward.html#ac82446e61831e0c3f96d709f568f54db", null ],
+    [ "MinAchievableAcceleration", "classfrc_1_1_arm_feedforward.html#a668c47376d54b8ab429ca495492b8c59", null ],
+    [ "MinAchievableVelocity", "classfrc_1_1_arm_feedforward.html#abf15c5ad4d74b600e51c7f1bbde2a54f", null ],
+    [ "SetKa", "classfrc_1_1_arm_feedforward.html#a9d85893bc02fb60bf5275bf8dcad69ee", null ],
+    [ "SetKg", "classfrc_1_1_arm_feedforward.html#a96efc12bc3aec793f38d963608359900", null ],
+    [ "SetKs", "classfrc_1_1_arm_feedforward.html#a3af3027b9c85221a9443c13871cebbcb", null ],
+    [ "SetKv", "classfrc_1_1_arm_feedforward.html#aafc0c0a0a3f8732f69a24a0d320a7ad9", null ]
+];

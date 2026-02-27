@@ -1,0 +1,35 @@
+var hal_2src_2main_2native_2include_2hal_2_power_distribution_8h =
+[
+    [ "HAL_DEFAULT_POWER_DISTRIBUTION_MODULE", "group__hal__pd.html#ga95c5a465ac3f05fc8446c3c4be7eba58", null ],
+    [ "HAL_PowerDistributionChannelData", "group__hal__pd.html#gaf3aa9901d5f1fe458ac587377068a18f", null ],
+    [ "HAL_PowerDistributionType", "group__hal__pd.html#ga35eb5d352665c3b6960d13c626523049", [
+      [ "HAL_PowerDistributionType_kAutomatic", "group__hal__pd.html#gga35eb5d352665c3b6960d13c626523049a91194f65665b34c753dcf682f3d3911d", null ],
+      [ "HAL_PowerDistributionType_kCTRE", "group__hal__pd.html#gga35eb5d352665c3b6960d13c626523049af4c2d2f1457b754a3d1a11368ad9849a", null ],
+      [ "HAL_PowerDistributionType_kRev", "group__hal__pd.html#gga35eb5d352665c3b6960d13c626523049affa591b520e1d92deaf90362d7cc4d19", null ]
+    ] ],
+    [ "HAL_CheckPowerDistributionChannel", "group__hal__pd.html#gabd7460fdcfb9efddf6d63de888eb8d72", null ],
+    [ "HAL_CheckPowerDistributionModule", "group__hal__pd.html#ga4ed7fea46dbcafe5f8bdfef300e2e9d8", null ],
+    [ "HAL_CleanPowerDistribution", "group__hal__pd.html#ga0d6a4aaa5e2f0ec3547bd5a587da9f39", null ],
+    [ "HAL_ClearPowerDistributionStickyFaults", "group__hal__pd.html#ga40e8b7453be701bac6544f51045fb13a", null ],
+    [ "HAL_FreePowerDistributionStreamData", "group__hal__pd.html#ga3ff6112e06341f20089371d0a8f67c3b", null ],
+    [ "HAL_GetPowerDistributionAllChannelCurrents", "group__hal__pd.html#ga30c5582633fa066ff37851c6c25effbe", null ],
+    [ "HAL_GetPowerDistributionChannelCurrent", "group__hal__pd.html#ga02a648b886594fe9cdafd06de385bf13", null ],
+    [ "HAL_GetPowerDistributionFaults", "group__hal__pd.html#ga83156c84e23779cffa8a784af6159717", null ],
+    [ "HAL_GetPowerDistributionModuleNumber", "group__hal__pd.html#ga736f9c496d39151e0a776fdec1d3f3e5", null ],
+    [ "HAL_GetPowerDistributionNumChannels", "group__hal__pd.html#ga51820aab1fdf9abae99fe949d43a0199", null ],
+    [ "HAL_GetPowerDistributionStickyFaults", "group__hal__pd.html#gaa8d8ab305daf84aa782e19c38a65dbef", null ],
+    [ "HAL_GetPowerDistributionStreamData", "group__hal__pd.html#gaa31397d52e9db8b541c7c92039795c46", null ],
+    [ "HAL_GetPowerDistributionSwitchableChannel", "group__hal__pd.html#ga8453cf973fcd7a93abdd9a726ef45946", null ],
+    [ "HAL_GetPowerDistributionTemperature", "group__hal__pd.html#ga03d77039daafc387d4c7d2882a1674dd", null ],
+    [ "HAL_GetPowerDistributionTotalCurrent", "group__hal__pd.html#gafc9b531240bffc7e241e2eeda9ea58cc", null ],
+    [ "HAL_GetPowerDistributionTotalEnergy", "group__hal__pd.html#ga6eda38f8820565a4efa40bd844af624b", null ],
+    [ "HAL_GetPowerDistributionTotalPower", "group__hal__pd.html#ga1ef9ed94c9513d71fbbb592d2cd61d04", null ],
+    [ "HAL_GetPowerDistributionType", "group__hal__pd.html#gaf6e68083a878f013a3c619b49d5ea420", null ],
+    [ "HAL_GetPowerDistributionVersion", "group__hal__pd.html#gaa63477d6fbe6ceee907aee5415180913", null ],
+    [ "HAL_GetPowerDistributionVoltage", "group__hal__pd.html#gad29282762592bf988bb5e7e96f626d36", null ],
+    [ "HAL_InitializePowerDistribution", "group__hal__pd.html#ga6aaba8da6bbe9538f411e21ff36356b7", null ],
+    [ "HAL_ResetPowerDistributionTotalEnergy", "group__hal__pd.html#gaf6f1760cde940d272fa0eeb866a3aeb1", null ],
+    [ "HAL_SetPowerDistributionSwitchableChannel", "group__hal__pd.html#gaefd97007da78dedab4354cc249c34aa4", null ],
+    [ "HAL_StartPowerDistributionStream", "group__hal__pd.html#gaef243cefdf5b8320290b216ffc1ba6af", null ],
+    [ "HAL_StopPowerDistributionStream", "group__hal__pd.html#ga13605c7f290945b50169ba14cdca66b2", null ]
+];

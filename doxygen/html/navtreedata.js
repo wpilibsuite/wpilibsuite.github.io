@@ -1,0 +1,238 @@
+/*
+ @licstart  The following is the entire license notice for the JavaScript code in this file.
+
+ The MIT License (MIT)
+
+ Copyright (C) 1997-2020 by Dimitri van Heesch
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ and associated documentation files (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge, publish, distribute,
+ sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all copies or
+ substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+ @licend  The above is the entire license notice for the JavaScript code in this file
+*/
+var NAVTREE =
+[
+  [ "WPILibC++", "index.html", [
+    [ "LICENSE", "md__2home_2runner_2work_2allwpilib_2allwpilib_2_l_i_c_e_n_s_e.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
+    [ "Todo List", "todo.html", null ],
+    [ "Topics", "topics.html", "topics" ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", "namespacemembers_dup" ],
+        [ "Functions", "namespacemembers_func.html", "namespacemembers_func" ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", "namespacemembers_eval" ]
+      ] ]
+    ] ],
+    [ "Concepts", "concepts.html", "concepts" ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", "functions_type" ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", "functions_eval" ],
+        [ "Related Symbols", "functions_rela.html", "functions_rela" ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", "globals_type" ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", "globals_eval" ],
+        [ "Macros", "globals_defs.html", "globals_defs" ]
+      ] ]
+    ] ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"_a_d_i_s16448___i_m_u_8h.html",
+"_april_tag_detector__cv_8h_source.html",
+"_commands_8h.html#a389d1d0055c3be03a852bfc88aaa2ee5",
+"_differential_drive_wheel_positions_proto_8h.html",
+"_encoder_data_8h.html#a639960da456dbd642079d3ca0895aad7",
+"_f_r_c_usage_reporting_8h.html#a45efdd28fbd9e1629055f697ef98d459a8e684df86d2c4f7b3a062ed481aa7696",
+"_handles_internal_8h_source.html",
+"_math_shared_8h.html#af988a6ae82b74fd638848ac5824ad461a5565ed67c83467678597b0ecc5d8c2b1",
+"_p_w_m_data_8h.html#aeaef5fa1f7c806c2dd1616e2ad584737",
+"_relay_data_8h.html#aea0a09c096f4fbf5e333bc73642d257d",
+"_servo_8h_source.html",
+"_swerve_drive_kinematics_struct_8h_source.html",
+"_usage_reporting_8h.html#a841391f705e35f199dd757566794fdd4a0f0a33b8c2f8b0d8797de74dcf83fd5f",
+"_wait_until_command_8h_source.html",
+"base_8h.html#a7cbc54c89d6fa462d7c9c046c3488fa1",
+"classbasic__json.html#a3d3ea17617e94886f3e86ac921095a13",
+"classbasic__string__view.html#a50919981e514e409fa15da6cfd912acd",
+"classcs_1_1_video_source.html#a07e1a2cbcec8e6fe29fb9c78baa26747",
+"classdetail_1_1file__base.html#acb3f0f5bb76f71e8ba4aa35f136d4fa5",
+"classdetail_1_1to__utf8.html#a67b84dad479dd6085173032aae71b2a1",
+"classfrc2_1_1_command.html#a6f2548d955a6886230bc5c52a014b2a6",
+"classfrc2_1_1_command_ptr.html#a646653c7bc45902ac82186ade733ec8e",
+"classfrc2_1_1_conditional_command.html#a5e0e87f28327f891a536157780fc5f8c",
+"classfrc2_1_1_profiled_p_i_d_command.html",
+"classfrc2_1_1_subsystem.html#a7b39804030d97e09c609a062ba113565",
+"classfrc_1_1_a_d_i_s16448___i_m_u.html#a5599c4bf13b3b1a1befb06ea11c56bc5",
+"classfrc_1_1_a_d_x_l345___s_p_i.html#a4f0575061e3426648b18ef8d04379ab9",
+"classfrc_1_1_analog_gyro.html#a0a99f91859b549a7166723640fe251ca",
+"classfrc_1_1_april_tag_detector.html#a0a4aee2623f072c62c1a94b9fe2ee5dd",
+"classfrc_1_1_built_in_accelerometer.html#aede3676021b8d740ea330597b289f4e0",
+"classfrc_1_1_color.html#a55116b5bf91081c02496add037193de1",
+"classfrc_1_1_compressor.html#a86b8dc0f9657d67ff3c4cf7434c874e2",
+"classfrc_1_1_d_c_motor.html#a202d7437dfc323ed5089fd9bb2024f27",
+"classfrc_1_1_differential_drive.html#afa7985899beba8b42a18444139b433fb",
+"classfrc_1_1_driver_station.html#a0f1d2865a6db25d3e3b58c3d2e644f06",
+"classfrc_1_1_ellipse2d.html",
+"classfrc_1_1_external_direction_counter.html#a69af6cabe3454316b35eb8bfc7fb9c4b",
+"classfrc_1_1_implicit_model_follower.html#a969425e856bc264a211ef7a1cf400156",
+"classfrc_1_1_l_e_d_pattern.html#a8ec02dc1a410dc859acd304e00e79a17",
+"classfrc_1_1_linear_system_loop.html#a2fe51fc0aa03111de5d34a9e7cb45173",
+"classfrc_1_1_merwe_scaled_sigma_points.html#aa06bc30f985bb64ecf863b63feb2be03",
+"classfrc_1_1_p_s4_controller.html#a264ad553f0b682ba71c23d0d56962f90",
+"classfrc_1_1_p_s5_controller.html#ae0c7726d6f36b341f2b6b4f4bffff747",
+"classfrc_1_1_pneumatics_base.html#a2776e997f256bcce99b205328b265ba0",
+"classfrc_1_1_pose_estimator3d.html#a074b789f99ff95c7dffe94ad0075cc97",
+"classfrc_1_1_quaternion.html#a912c95bb421f550ffcb306a7e05f6592",
+"classfrc_1_1_robot_controller.html#abc104dec7713b29bfee35431e2cc16fc",
+"classfrc_1_1_s_p_i.html#abbb8f06f6bdece9794d994809cf46dc7",
+"classfrc_1_1_sensor_util.html#aa3eb99618ada721e8bf26dca89fa77a1",
+"classfrc_1_1_shuffleboard_container.html#a6d570f8145db0e35fda8bcd421a5ad9a",
+"classfrc_1_1_smart_dashboard.html#a80351343d24ff00ebd254e4fc0f1a31b",
+"classfrc_1_1_stadia_controller.html#af5c9335d7c90c43f9d546f3f826e7ced",
+"classfrc_1_1_timer.html#a79c185032dcc8dd906bab83262b349c6",
+"classfrc_1_1_translation2d.html#a8f33b0c12fdcf46883ad698fe5513c6e",
+"classfrc_1_1_vision_runner.html#a6879ef350078dbfe6191fd2a45f192ff",
+"classfrc_1_1ct__matrix.html#a895c3a691f1212d7e632f801802582a0",
+"classfrc_1_1sim_1_1_analog_input_sim.html#a504426226719b3a9a19ab4db2bdb3dca",
+"classfrc_1_1sim_1_1_d_c_motor_sim.html#ac314103ffaf9ca6bdef9d5fa0868d8b6",
+"classfrc_1_1sim_1_1_driver_station_sim.html#aa31a4be28f075020d0a3705f15a1035d",
+"classfrc_1_1sim_1_1_joystick_sim.html#a2ccf79ccd42dc2559edc83173b97def7",
+"classfrc_1_1sim_1_1_power_distribution_sim.html#a5d708f2654f1b4c33b12eab8d5a905fc",
+"classfrc_1_1sim_1_1_s_p_i_accelerometer_sim.html#a3ca4c744647c4d778572121475efd4dc",
+"classgeneric__context.html#ad634125b232cc08e91fb1dd5d4c462a4",
+"classhal_1_1_sim_double.html#a014092ac5e384e34b4b5bb7ecef700af",
+"classnt_1_1_boolean_array_topic.html#a2a17e342b1d64b97fb4fd9a256008019",
+"classnt_1_1_double_array_topic.html#ad9c1ddbfa505fa53745cda7ab3690b8f",
+"classnt_1_1_float_array_topic.html#aa005ceb4457cd6e62da3ac27e69952c3",
+"classnt_1_1_generic_subscriber.html#acdcf81c3d3c058d5742e6c3240d3d7b7",
+"classnt_1_1_multi_subscriber.html",
+"classnt_1_1_network_table_listener.html",
+"classnt_1_1_raw_publisher.html#a195bf7ef39846c3db5894c89c98a2a04",
+"classnt_1_1_string_subscriber.html",
+"classnt_1_1_struct_subscriber.html#a0c7a37252acd201f0b33e3d14e30789f",
+"classnt_1_1_unit_topic.html#aef6204e585d9bfbd2fb6e4ecb4234100",
+"classslp_1_1_problem.html#a7fb4722e6973f059ff71fd2c52b2ff6a",
+"classslp_1_1_variable_block_1_1const__iterator.html#a76f3bccc942a6c80345834cbc68a5021",
+"classslp_1_1function__ref_3_01_r_07_args_8_8_8_08_4.html#af31529274b4c8cf1a28c55fe6d8e6407",
+"classwpi_1_1_argument_parser.html#af4b5c256741c042e0ab05bb3715ab913",
+"classwpi_1_1_dense_map_iterator.html#a23fecc41ced0ef34262b1bdc413c87f8",
+"classwpi_1_1_http_parser.html#a472c21ee8af570a441801a241cd0090f",
+"classwpi_1_1_map_vector.html#a38a4260383862a49ba5f9e6760164efc",
+"classwpi_1_1_network_acceptor.html#aacf2e8e33c51b6103e4b4cf5679e5308",
+"classwpi_1_1_protobuf_message.html#a355b796d09ffdcd66b1a7b591699c1f2",
+"classwpi_1_1_sendable_registry.html#acdfbcda30cc4a9426b44431fab8cf76f",
+"classwpi_1_1_small_set_iterator.html#a14174680e5443136a6a5a532632b429a",
+"classwpi_1_1_struct_array_buffer.html#a0fa60704b0db7bfd46527b31e0b5033e",
+"classwpi_1_1_url_parser.html#a88f8e0a6b9c9065b3a74a276710a14df",
+"classwpi_1_1_writable_memory_buffer.html#a5a920a842f6b361e7b52e2ec2b67de07",
+"classwpi_1_1detail_1_1_safe_thread_owner_base.html#a3049d79839cb03c2c68d80d908d78cd4",
+"classwpi_1_1expected.html#af90da1f5a2a6aa8aba4f91f48e111dc7",
+"classwpi_1_1java_1_1_j_callback_thread.html#ad8db5df09c13c01b5245a7f0eeed76d3",
+"classwpi_1_1log_1_1_data_log.html#aff349351931c8ab5a9c6e36eb5376ce2",
+"classwpi_1_1log_1_1_double_array_log_entry.html#abce9c2f99252e8349667466b9ddcd00d",
+"classwpi_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_00_01_i_06bb8b0c0f4d8e81bebbe85401b3616d6.html",
+"classwpi_1_1rotated__span.html#a29ed6d679ef9594ab1eae21c832a1fa8",
+"classwpi_1_1sig_1_1detail_1_1_slot_3_01_pmf_00_01_ptr_00_01trait_1_1typelist_3_01_connection_01_6_00_01_args_8_8_8_01_4_01_4.html#af52eb9b63acf2232f37c9caa65ff8855",
+"classwpi_1_1uv_1_1_async.html#a7a8b3d27ea08973ccc726dd3394e1aec",
+"classwpi_1_1uv_1_1_idle.html#a417752c5b42cb384a0dbf4234691764d",
+"classwpi_1_1uv_1_1_request.html#aabcd9a62bdc32dd9c420c43c37af91fd",
+"classwpi_1_1uv_1_1_udp.html#a173a5614928b14579ef65c77fc6eed28",
+"cosh_8hpp.html#a0826eef5dc81d1797b37382928f1b044",
+"doubles__floats__impl_8h_source.html",
+"fmtlib_2include_2fmt_2_chrono_8h.html#a8917ae08a68c3c04ebd3338a11387e62",
+"format_8h.html#ad258cc73fca14257a1daee6c735a2df2",
+"gauss__legendre__50_8hpp_source.html",
+"globals_func_z.html",
+"group__cscore__shutdown__cfunc.html#ga13e0675fe9d7a5eace34aaa2ff4fe51f",
+"group__hal__can.html#ga717305ef23111f4c2e6cf4874da5bcd8",
+"group__hal__driverstation.html#gga1487d9b33396818a84272b3a2f746d0da4245c3774797bb4bde217054445ae561",
+"group__hal__power.html#ga0ffc678a1cce30e7eb7af10a0f53786a",
+"group__ntcore___double__cfunc.html#gaec36048a6c6016003de57d211330db4b",
+"group__ntcore__cpp__handle__api.html#gaae9b049e3cf09a53a11812adf786901d",
+"hal_2src_2main_2native_2include_2hal_2_c_a_n_8h.html",
+"image__u8_8h.html#a29bc47576b1e05f48faf2e2e43eb7dec",
+"kinematics_8npb_8h.html#a4fdd9d339689fec3ba69f34779f92573",
+"namespace_h_a_l_usage_reporting.html#a45efdd28fbd9e1629055f697ef98d459a0d50abda8eacf1a6be1105097042f9cc",
+"namespacedetail.html#a17e577ecc6637db977cc515f40ad9966",
+"namespacedetail.html#acb24ae87bf14dd19c1d3bf915cf78d87",
+"namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7abce01e4213d1ecbea3603c9748b40369",
+"namespacegcem.html#ad0c4c7f615aa6e6233b6695455887ad7",
+"namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9",
+"namespacen_usage_reporting.html#ac80f9386b7fe4c6222088527f119c0c2a3b63d92892fd5a7e05397009079b43f4",
+"namespacewpi.html#a0cc73ce1be7e2680fb97374e03368001a2f0338eed54503152be1d31c93c9c2f1",
+"namespacewpi.html#aa7cc4026f84f4c754d494b7d3ced2066",
+"namespacewpi_1_1details.html#a9b9c501dd2943ee9dc4d07852b01891c",
+"ntcore_8h.html",
+"pb_8h.html#abd7ebcfcc8687aebe809bd8bdfd9a6ad",
+"ranges_8h.html#a379579c5cd4dea85f22752fc3382e845",
+"struct__wpi__proto___protobuf_elevator_feedforward.html#ad298e81da3acf9ca6bbe9a4dfb845fbb",
+"struct_h_a_l___d_m_a_sample.html#a8a3bc3bcf128247b72b280bae7cb1d5c",
+"struct_h_a_l_s_i_m___notifier_info.html#ac9e0b85569106a91ee91b971765bb7bb",
+"structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea1184a1c7467bcf73e96cf0c499c5035b",
+"structdetail_1_1chrono__formatter.html#ad78d2d2b84620162584228a742e2dfbc",
+"structdetail_1_1format__handler.html#a09d27ff5a97fa95ecc391da6bc255f41",
+"structdetail_1_1native__formatter.html#af6f15bad58e42d84e9e3a55324b30492",
+"structdetail_1_1type__mapper.html#a1b6654253cb1bff985ec5e9dc1c3952c",
+"structfrc_1_1_april_tag_detection_1_1_point.html#a090992b36890c7c90f449d1ab5f90df0",
+"structfrc_1_1_p_s4_controller_1_1_button.html#a9fd94207427e86af2df20a87f9774450",
+"structfrc_1_1_power_distribution_1_1_sticky_faults.html#af5024d6f45d132f65f30a279c75c17ae",
+"structimage__u32.html#a93be4d53aea5e12003c3d16c8b95ee74",
+"structpb__msgdesc__s.html#aac8ae376cc00d3b9a3b1c4afb14b78df",
+"structslp_1_1detail_1_1_binary_plus_expression.html#ad11ede1a6fd49cdc336167608f731046",
+"structslp_1_1detail_1_1_sinh_expression.html#a14e4748b323f44b75de46895583b66f3",
+"structuv__stat__t.html#a324b6bb9a3dcb70259e0195379c5f9ef",
+"structwpi_1_1_dense_map_info_3_01int_01_4.html#af915204f12f5f61c2674025502ea95b9",
+"structwpi_1_1_pointer_like_type_traits_3_01const_01_t_01_4.html#af410864cf661bad1a335079fee568ed4",
+"structwpi_1_1_protobuf_3_01frc_1_1_pose3d_01_4.html#a39583c989c485bce3d4bdb0cc08c9d3e",
+"structwpi_1_1_struct.html",
+"structwpi_1_1_struct_3_01frc_1_1_mecanum_drive_wheel_speeds_01_4.html#a01f274a2526b2ca10daff392eb62f892",
+"structwpi_1_1_struct_3_01int32__t_01_4.html#a10790b33464b1cd5a921ab85a708a67c",
+"structwpi_1_1cast__retty__impl_3_01_to_00_01const_01_from_01_4.html#aba69b209782f4135ea62e8f2d6a519e9",
+"structwpi_1_1detail__expected_1_1expected__copy__base.html",
+"structwpi_1_1detail__expected_1_1expected__storage__base_3_01_t_00_01_e_00_01false_00_01true_01_4.html#a305814e8baf3eebdf65c4a11805321e8",
+"structwpi_1_1hashing_1_1detail_1_1hash__state.html#ab45e8e5dcf3c0da3e1f12bb4be1d36c7",
+"structwpi_1_1structparser_1_1_parsed_declaration.html#a965115c6b3d78cdb07419a20b1892f7d",
+"thirdparty_2apriltag_2include_2_april_tag_8h.html#ab9c63f2de426533143cfd17873d20e7c",
+"uv_8h.html#a2a1053b663c5b32b5ac313da2704d832",
+"uv_8h.html#a9ba9b39778967bb3123ebf9e481a21ec",
+"wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html",
+"wpiutil_2src_2main_2native_2thirdparty_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203cadfcfa24e3022fb4b704f051d98ec0557"
+];
+
+var SYNCONMSG = 'click to disable panel synchronisation';
+var SYNCOFFMSG = 'click to enable panel synchronisation';
