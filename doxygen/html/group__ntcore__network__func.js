@@ -1,0 +1,21 @@
+var group__ntcore__network__func =
+[
+    [ "wpi::nt::Disconnect", "group__ntcore__network__func.html#gaef84c7d42302aee2106d5b255303500b", null ],
+    [ "wpi::nt::Flush", "group__ntcore__network__func.html#ga8a13b9546eb53c8317a66305b504ef5a", null ],
+    [ "wpi::nt::FlushLocal", "group__ntcore__network__func.html#ga745154ecd7a66d0157234e52dc50cb60", null ],
+    [ "wpi::nt::GetConnections", "group__ntcore__network__func.html#ga254ec01d7b2e87df0aeeff0ca8464699", null ],
+    [ "wpi::nt::GetNetworkMode", "group__ntcore__network__func.html#gae4db8802d750f43fb2cae5c8229c4a7c", null ],
+    [ "wpi::nt::GetServerTimeOffset", "group__ntcore__network__func.html#gad477168d43906f288fdda9c8326261c4", null ],
+    [ "wpi::nt::IsConnected", "group__ntcore__network__func.html#ga11f7744b87c9ce9e6ddda62f9ccdc5c6", null ],
+    [ "wpi::nt::SetServer", "group__ntcore__network__func.html#ga66cc84d41174c422196edac9e2ba1c1f", null ],
+    [ "wpi::nt::SetServer", "group__ntcore__network__func.html#ga3d02a8350b0f7b0597078832a1c432a7", null ],
+    [ "wpi::nt::SetServerTeam", "group__ntcore__network__func.html#ga91ffa7f8b9e8a2d47e88fe632911dc57", null ],
+    [ "wpi::nt::StartClient", "group__ntcore__network__func.html#ga6e7aadc7bd17b00edd240ad65a9e7281", null ],
+    [ "wpi::nt::StartDSClient", "group__ntcore__network__func.html#ga6fb147f850c5e0be9aa0e3c4514d4e04", null ],
+    [ "wpi::nt::StartLocal", "group__ntcore__network__func.html#ga1b125630253a38a8b8e9e67fc33ffdc3", null ],
+    [ "wpi::nt::StartServer", "group__ntcore__network__func.html#gaced2c2fd573e59a5e24518dabf59c958", null ],
+    [ "wpi::nt::StopClient", "group__ntcore__network__func.html#ga84f809a823b4c54d39e182ab3d7a9218", null ],
+    [ "wpi::nt::StopDSClient", "group__ntcore__network__func.html#gae10bce4f73788993273d64e9cfe92ae4", null ],
+    [ "wpi::nt::StopLocal", "group__ntcore__network__func.html#ga5ffb0f985dc244017a221f2953a3959b", null ],
+    [ "wpi::nt::StopServer", "group__ntcore__network__func.html#gabec3b4c0620ad46b522ba783df8177ed", null ]
+];

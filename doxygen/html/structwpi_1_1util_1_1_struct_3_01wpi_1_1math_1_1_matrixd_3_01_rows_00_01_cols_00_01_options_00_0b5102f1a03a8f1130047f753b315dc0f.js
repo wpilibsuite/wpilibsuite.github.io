@@ -1,0 +1,10 @@
+var structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f =
+[
+    [ "GetSchema", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f.html#a575d4de43d007bf04bb45f6312141628", null ],
+    [ "GetSize", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f.html#a5fb9d481df1b6d77f8a36b9b0346b3df", null ],
+    [ "GetTypeName", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f.html#abe87ec6aa9dabb06692fc92f3ef3af7d", null ],
+    [ "Pack", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f.html#a33f30db8441bb55068647cb40af50ff7", null ],
+    [ "Unpack", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f.html#af0e18d993fb86463584982c7819a989d", null ],
+    [ "kSchema", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f.html#adb3ab720bfc633ec406697675e79bbe8", null ],
+    [ "kTypeName", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_rows_00_01_cols_00_01_options_00_0b5102f1a03a8f1130047f753b315dc0f.html#ab1055df1b1f252e4947980dcf0bf6407", null ]
+];

@@ -1,0 +1,24 @@
+var classwpi_1_1_camera_server =
+[
+    [ "AddCamera", "classwpi_1_1_camera_server.html#a6540e9765d0ca37a44b4557cd681b4db", null ],
+    [ "AddServer", "classwpi_1_1_camera_server.html#a98562caceae03c21cf796a3fb7180072", null ],
+    [ "AddServer", "classwpi_1_1_camera_server.html#ac006fcd682441c0412749dffedab5d3a", null ],
+    [ "AddServer", "classwpi_1_1_camera_server.html#adacca97f2cfd54942aac337e38cbdebf", null ],
+    [ "AddSwitchedCamera", "classwpi_1_1_camera_server.html#a949792c2d72eb1a4b1b58be63a7d19f8", null ],
+    [ "GetServer", "classwpi_1_1_camera_server.html#a32c7d0c2ee325ac8cc557258cf128dc2", null ],
+    [ "GetServer", "classwpi_1_1_camera_server.html#a9507fe55b6d99f30b1315fa2be100d5e", null ],
+    [ "GetVideo", "classwpi_1_1_camera_server.html#a52bbe3f753d3f76a10097062d2e61509", null ],
+    [ "GetVideo", "classwpi_1_1_camera_server.html#aee4df5680676cc8c71343346f0f4c8fe", null ],
+    [ "GetVideo", "classwpi_1_1_camera_server.html#a8b74e73a577fb793a506488360b26804", null ],
+    [ "GetVideo", "classwpi_1_1_camera_server.html#a308fb428b39704c9c77af684426193cb", null ],
+    [ "GetVideo", "classwpi_1_1_camera_server.html#a4acdb3e916da89135ba25446ec634e40", null ],
+    [ "PutVideo", "classwpi_1_1_camera_server.html#a129015c6d7306a53ede058ffb4d86991", null ],
+    [ "RemoveCamera", "classwpi_1_1_camera_server.html#a396e90032c46874834f9775bcff3733b", null ],
+    [ "RemoveServer", "classwpi_1_1_camera_server.html#a5a902b3cefad53e245cdf218fa6ba88b", null ],
+    [ "StartAutomaticCapture", "classwpi_1_1_camera_server.html#a53425eb4bd0f163c7179b10e1c533713", null ],
+    [ "StartAutomaticCapture", "classwpi_1_1_camera_server.html#a045d09c04395324731b31ea946c8846e", null ],
+    [ "StartAutomaticCapture", "classwpi_1_1_camera_server.html#a42617b4f9c1ab6f3a179c842cda19810", null ],
+    [ "StartAutomaticCapture", "classwpi_1_1_camera_server.html#acf2c5f43e58107c05c1a03e3f96a88b6", null ],
+    [ "StartAutomaticCapture", "classwpi_1_1_camera_server.html#ac9430b753f301ce9b23610ffcefc4ffb", null ],
+    [ "kBasePort", "classwpi_1_1_camera_server.html#a951c98bd196270851012bba6f922836c", null ]
+];

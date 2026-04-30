@@ -1,0 +1,23 @@
+var _function_extras_8hpp =
+[
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;", "classwpi_1_1util_1_1detail_1_1_unique_function_base.html", "classwpi_1_1util_1_1detail_1_1_unique_function_base" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::IsSizeLessThanThresholdT&lt; T, class &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_is_size_less_than_threshold_t.html", null ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::enable_if_t&lt; sizeof(T)&lt;=2 *sizeof(void *)&gt; &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_is_size_less_than_threshold_t_3_01_t_006996e3cadeb285198fce3cd05f7b85fc.html", null ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::AdjustedParamTBase&lt; T &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_adjusted_param_t_base.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_adjusted_param_t_base" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::AdjustedParamTBase&lt; T &amp; &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_adjusted_param_t_base_3_01_t_01_6_01_4.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_adjusted_param_t_base_3_01_t_01_6_01_4" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::AdjustedParamTBase&lt; T &amp;&amp; &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_adjusted_param_t_base_3_01_t_01_6_6_01_4.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_adjusted_param_t_base_3_01_t_01_6_6_01_4" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::TrivialCallback", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_trivial_callback.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_trivial_callback" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::NonTrivialCallbacks", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_non_trivial_callbacks.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_non_trivial_callbacks" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::StorageUnionT", "unionwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_storage_union_t.html", "unionwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_storage_union_t" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::StorageUnionT::OutOfLineStorageT", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_storage_union_t_1_1_out_of_line_storage_t.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_storage_union_t_1_1_out_of_line_storage_t" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::CallbacksHolder&lt; CallableT, CalledAs, Enable &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_callbacks_holder.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_callbacks_holder" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::CallbacksHolder&lt; CallableT, CalledAs, EnableIfTrivial&lt; CallableT &gt; &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_callbacks_holder_3_01_callable_t_00_01_69d300b01d2c69a940cbddc21001e0c0.html", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_callbacks_holder_3_01_callable_t_00_01_69d300b01d2c69a940cbddc21001e0c0" ],
+    [ "wpi::util::detail::UniqueFunctionBase&lt; ReturnT, ParamTs &gt;::CalledAs&lt; T &gt;", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_called_as.html", null ],
+    [ "wpi::util::unique_function&lt; R(P...)&gt;", "classwpi_1_1util_1_1unique__function_3_01_r_07_p_8_8_8_08_4.html", "classwpi_1_1util_1_1unique__function_3_01_r_07_p_8_8_8_08_4" ],
+    [ "wpi::util::unique_function&lt; R(P...) const &gt;", "classwpi_1_1util_1_1unique__function_3_01_r_07_p_8_8_8_08_01const_01_4.html", "classwpi_1_1util_1_1unique__function_3_01_r_07_p_8_8_8_08_01const_01_4" ],
+    [ "wpi::util::detail::EnableIfCallable", "namespacewpi_1_1util_1_1detail.html#a236459257e0ef0ad823fd494507ec4c5", null ],
+    [ "wpi::util::detail::EnableIfTrivial", "namespacewpi_1_1util_1_1detail.html#ae5fa73c2be8c410e46bb34ad671f8977", null ],
+    [ "wpi::util::detail::EnableUnlessSameType", "namespacewpi_1_1util_1_1detail.html#aad758efc285f6bc6c6a44f410d64d333", null ],
+    [ "wpi::util::detail::Callbacks", "namespacewpi_1_1util_1_1detail.html#a359a2963cd1719d82ea483fd70377384", null ],
+    [ "wpi::util::detail::Callbacks", "namespacewpi_1_1util_1_1detail.html#a42ad7b64dd06176876c3dc906c933cfc", null ]
+];

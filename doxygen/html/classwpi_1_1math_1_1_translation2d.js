@@ -1,0 +1,27 @@
+var classwpi_1_1math_1_1_translation2d =
+[
+    [ "Translation2d", "classwpi_1_1math_1_1_translation2d.html#a7e994ce98e97efc4d8d91b8705a0571e", null ],
+    [ "Translation2d", "classwpi_1_1math_1_1_translation2d.html#aff6d5b91f4cb1cf7f9e0d42c670126f1", null ],
+    [ "Translation2d", "classwpi_1_1math_1_1_translation2d.html#a8751b1a415e3b4dbe663b2fc66c95158", null ],
+    [ "Translation2d", "classwpi_1_1math_1_1_translation2d.html#ac2ea329a1c89048fce90b35c115c21ea", null ],
+    [ "Angle", "classwpi_1_1math_1_1_translation2d.html#a03872ea27c64036e2a5c934b906cc20f", null ],
+    [ "Cross", "classwpi_1_1math_1_1_translation2d.html#abf7e80c739ece3951597a40d308dd301", null ],
+    [ "Distance", "classwpi_1_1math_1_1_translation2d.html#a82368d707645fa7affa51164a05cf291", null ],
+    [ "Dot", "classwpi_1_1math_1_1_translation2d.html#ac65bcdd743375556d265c5f94846a4e4", null ],
+    [ "Nearest", "classwpi_1_1math_1_1_translation2d.html#a78081bcd71bb2fae38a16b2a9c667630", null ],
+    [ "Nearest", "classwpi_1_1math_1_1_translation2d.html#ad3836fc6599703df8a189c66d835419d", null ],
+    [ "Norm", "classwpi_1_1math_1_1_translation2d.html#a7b7232aaebb900c7b438810f2de31415", null ],
+    [ "operator*", "classwpi_1_1math_1_1_translation2d.html#a633e626168d5424108d0d445575e2e76", null ],
+    [ "operator+", "classwpi_1_1math_1_1_translation2d.html#ab73b9a16798e856905eca3d135346a3b", null ],
+    [ "operator-", "classwpi_1_1math_1_1_translation2d.html#a709cb0be8d770ccd464ec73108361664", null ],
+    [ "operator-", "classwpi_1_1math_1_1_translation2d.html#aecdf3752c1fb9ab3853586cf66f4b973", null ],
+    [ "operator/", "classwpi_1_1math_1_1_translation2d.html#a05c7ad94a3d1934fa4b0938f42ab6509", null ],
+    [ "operator==", "classwpi_1_1math_1_1_translation2d.html#a6321a9e7dd9ac1833d52eca770423389", null ],
+    [ "RotateAround", "classwpi_1_1math_1_1_translation2d.html#a2cb50321ea486433158849792f631b72", null ],
+    [ "RotateBy", "classwpi_1_1math_1_1_translation2d.html#a1f61ba6b5e39cbd5457f58eafc89fb91", null ],
+    [ "SquaredDistance", "classwpi_1_1math_1_1_translation2d.html#aeb4e3fad1e7dfddc626b6f1588abffbe", null ],
+    [ "SquaredNorm", "classwpi_1_1math_1_1_translation2d.html#ade2381e4377694bcc13ffa8a1224712c", null ],
+    [ "ToVector", "classwpi_1_1math_1_1_translation2d.html#a994832086ffe3f7b75bae4ea01d76e9b", null ],
+    [ "X", "classwpi_1_1math_1_1_translation2d.html#a6684562f73aa3bf64f81eddc6bd63379", null ],
+    [ "Y", "classwpi_1_1math_1_1_translation2d.html#a5aba8cd3c27df325a08f045659327fd4", null ]
+];

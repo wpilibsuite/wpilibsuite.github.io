@@ -1,0 +1,9 @@
+var structwpi_1_1util_1_1_dense_map_info_3_01_enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum__v_3_01_enum_01_4_01_4_01_4 =
+[
+    [ "Info", "structwpi_1_1util_1_1_dense_map_info_3_01_enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum__v_3_01_enum_01_4_01_4_01_4.html#abd5d52347bbde8f4154f86d77197e844", null ],
+    [ "UnderlyingType", "structwpi_1_1util_1_1_dense_map_info_3_01_enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum__v_3_01_enum_01_4_01_4_01_4.html#af3ec1948c64cbdccf093dc59023185bc", null ],
+    [ "getEmptyKey", "structwpi_1_1util_1_1_dense_map_info_3_01_enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum__v_3_01_enum_01_4_01_4_01_4.html#ab89fc24e0e6ff7d92e43c9fbebe0a218", null ],
+    [ "getHashValue", "structwpi_1_1util_1_1_dense_map_info_3_01_enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum__v_3_01_enum_01_4_01_4_01_4.html#ad1725a8f51d13218ab172ccd802be993", null ],
+    [ "getTombstoneKey", "structwpi_1_1util_1_1_dense_map_info_3_01_enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum__v_3_01_enum_01_4_01_4_01_4.html#ac895115b527d805edcc2ef7b70f25e9f", null ],
+    [ "isEqual", "structwpi_1_1util_1_1_dense_map_info_3_01_enum_00_01std_1_1enable__if__t_3_01std_1_1is__enum__v_3_01_enum_01_4_01_4_01_4.html#a66fcfbcdf357b35ee67875c481786e46", null ]
+];

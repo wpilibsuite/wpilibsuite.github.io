@@ -1,0 +1,4 @@
+var structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_callbacks_holder_3_01_callable_t_00_01_69d300b01d2c69a940cbddc21001e0c0 =
+[
+    [ "Callbacks", "structwpi_1_1util_1_1detail_1_1_unique_function_base_1_1_callbacks_holder_3_01_callable_t_00_01_69d300b01d2c69a940cbddc21001e0c0.html#a5fee93a43c60a6eb7eaec2fc5e95f2bc", null ]
+];

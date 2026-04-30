@@ -1,0 +1,26 @@
+var classwpi_1_1_encoder =
+[
+    [ "Encoder", "classwpi_1_1_encoder.html#a63b21f197bd1511303dee26c2a93681e", null ],
+    [ "Encoder", "classwpi_1_1_encoder.html#a7ecbe56bf593cd0451ec3f60ce801e07", null ],
+    [ "~Encoder", "classwpi_1_1_encoder.html#a1e9e85ba369121674f6e95d1f723be74", null ],
+    [ "Get", "classwpi_1_1_encoder.html#ad8409f957d62bd430c865f148740fbad", null ],
+    [ "GetDirection", "classwpi_1_1_encoder.html#a8fe802762a6ff415f801910bbf3e0545", null ],
+    [ "GetDistance", "classwpi_1_1_encoder.html#a3064b8da8b33baecf9a1067159c0a89a", null ],
+    [ "GetDistancePerPulse", "classwpi_1_1_encoder.html#a66993d63e3fab78f0cd0961653b15471", null ],
+    [ "GetEncodingScale", "classwpi_1_1_encoder.html#a428d1dc90fec9fe4f8bdc1de02d538a1", null ],
+    [ "GetFPGAIndex", "classwpi_1_1_encoder.html#ad815380dc7cb29600a40ef29359a0795", null ],
+    [ "GetPeriod", "classwpi_1_1_encoder.html#a8aee6c2775683e92b0975788f658770d", null ],
+    [ "GetRate", "classwpi_1_1_encoder.html#aaf860f21c5a669cb179bd3904f00d258", null ],
+    [ "GetRaw", "classwpi_1_1_encoder.html#ae2101f6ba30ad9c43239e8e897fe3136", null ],
+    [ "GetSamplesToAverage", "classwpi_1_1_encoder.html#a35340e74a19c5ef6046c1e7fda60e218", null ],
+    [ "GetStopped", "classwpi_1_1_encoder.html#a8bc9bdade0b29e9ca99bf2e452a3c38b", null ],
+    [ "InitSendable", "classwpi_1_1_encoder.html#a728b834f46cfbe7b7d99424bcfda9921", null ],
+    [ "operator=", "classwpi_1_1_encoder.html#ac687f7d62b35e03b461ba57f682021c0", null ],
+    [ "Reset", "classwpi_1_1_encoder.html#a3cb53e63418566877a199dffc5a0ee88", null ],
+    [ "SetDistancePerPulse", "classwpi_1_1_encoder.html#a968ba20550258d3f3fac9887695f01d6", null ],
+    [ "SetMaxPeriod", "classwpi_1_1_encoder.html#afdc09095acf68e43662d60fda44b7412", null ],
+    [ "SetMinRate", "classwpi_1_1_encoder.html#a161d4acb63b45e3f849fd6ac08c58f9b", null ],
+    [ "SetReverseDirection", "classwpi_1_1_encoder.html#a4497b46398b15ec09df8d9eabbeb3e13", null ],
+    [ "SetSamplesToAverage", "classwpi_1_1_encoder.html#a99158d53072a72f07a07cdf8c334b04c", null ],
+    [ "SetSimDevice", "classwpi_1_1_encoder.html#a623ef5ab5daa390f69fb14084ab05ae7", null ]
+];

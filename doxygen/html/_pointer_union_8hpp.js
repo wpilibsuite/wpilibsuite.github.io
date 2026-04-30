@@ -1,0 +1,25 @@
+var _pointer_union_8hpp =
+[
+    [ "wpi::util::detail::TypesAreDistinct&lt; T, Us &gt;", "structwpi_1_1util_1_1detail_1_1_types_are_distinct.html", null ],
+    [ "wpi::util::detail::TypesAreDistinct&lt; T &gt;", "structwpi_1_1util_1_1detail_1_1_types_are_distinct_3_01_t_01_4.html", null ],
+    [ "wpi::util::TypesAreDistinct&lt;&gt;", "structwpi_1_1util_1_1_types_are_distinct_3_4.html", null ],
+    [ "wpi::util::TypesAreDistinct&lt; Ts &gt;", "structwpi_1_1util_1_1_types_are_distinct.html", null ],
+    [ "wpi::util::FirstIndexOfType&lt; T, U, Us... &gt;", "structwpi_1_1util_1_1_first_index_of_type_3_01_t_00_01_u_00_01_us_8_8_8_01_4.html", null ],
+    [ "wpi::util::FirstIndexOfType&lt; T, T, Us... &gt;", "structwpi_1_1util_1_1_first_index_of_type_3_01_t_00_01_t_00_01_us_8_8_8_01_4.html", null ],
+    [ "wpi::util::pointer_union_detail::GetFirstType&lt; T,... &gt;", "structwpi_1_1util_1_1pointer__union__detail_1_1_get_first_type.html", "structwpi_1_1util_1_1pointer__union__detail_1_1_get_first_type" ],
+    [ "wpi::util::pointer_union_detail::PointerUnionUIntTraits&lt; PTs &gt;", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_u_int_traits.html", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_u_int_traits" ],
+    [ "wpi::util::pointer_union_detail::PointerUnionMembers&lt; Derived, ValTy, I &gt;", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_00_01_i_01_4.html", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_00_01_i_01_4" ],
+    [ "wpi::util::pointer_union_detail::PointerUnionMembers&lt; Derived, ValTy, I, Type, Types... &gt;", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_0e27c2da6c2632b422f4c64ab93d72676.html", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_0e27c2da6c2632b422f4c64ab93d72676" ],
+    [ "wpi::util::PointerUnion&lt; PTs &gt;", "classwpi_1_1util_1_1_pointer_union.html", "classwpi_1_1util_1_1_pointer_union" ],
+    [ "wpi::util::CastInfoPointerUnionImpl&lt; PTs &gt;", "structwpi_1_1util_1_1_cast_info_pointer_union_impl.html", "structwpi_1_1util_1_1_cast_info_pointer_union_impl" ],
+    [ "wpi::util::CastInfo&lt; To, PointerUnion&lt; PTs... &gt; &gt;", "structwpi_1_1util_1_1_cast_info_3_01_to_00_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html", "structwpi_1_1util_1_1_cast_info_3_01_to_00_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4" ],
+    [ "wpi::util::CastInfo&lt; To, const PointerUnion&lt; PTs... &gt; &gt;", "structwpi_1_1util_1_1_cast_info_3_01_to_00_01const_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html", "structwpi_1_1util_1_1_cast_info_3_01_to_00_01const_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4" ],
+    [ "wpi::util::PointerLikeTypeTraits&lt; PointerUnion&lt; PTs... &gt; &gt;", "structwpi_1_1util_1_1_pointer_like_type_traits_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html", "structwpi_1_1util_1_1_pointer_like_type_traits_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4" ],
+    [ "wpi::util::DenseMapInfo&lt; PointerUnion&lt; PTs... &gt; &gt;", "structwpi_1_1util_1_1_dense_map_info_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4.html", "structwpi_1_1util_1_1_dense_map_info_3_01_pointer_union_3_01_p_ts_8_8_8_01_4_01_4" ],
+    [ "wpi::util::TypeAtIndex", "namespacewpi_1_1util.html#adb38636f82c92bda229d88a00010a25e", null ],
+    [ "wpi::util::pointer_union_detail::bitsRequired", "namespacewpi_1_1util_1_1pointer__union__detail.html#a8911a438447ae10c8166bc7fa741452f", null ],
+    [ "wpi::util::pointer_union_detail::lowBitsAvailable", "namespacewpi_1_1util_1_1pointer__union__detail.html#add4969f787760a593c7b95b62626c8ce", null ],
+    [ "wpi::util::operator!=", "namespacewpi_1_1util.html#ad2a644ed208e7e7ac39ecc322169c99c", null ],
+    [ "wpi::util::operator<", "namespacewpi_1_1util.html#a7f9cd4de391b6243f29b6f92fe89f04b", null ],
+    [ "wpi::util::operator==", "namespacewpi_1_1util.html#a99e0406431e18ab16d72149af7a7f9c7", null ]
+];
