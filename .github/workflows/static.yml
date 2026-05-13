@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install release
         uses: ./.github/actions/install-docs
         with:
@@ -44,7 +44,7 @@ jobs:
       - run: wget -O favicon.ico https://raw.githubusercontent.com/wpilibsuite/branding/main/export/ico/wpilib-icon-256.ico
       - name: Setup Pages
         id: configure-pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         continue-on-error: ${{ github.repository != 'wpilibsuite/wpilibsuite.github.io'}}
       - name: Install sitemap generator
         run: npm install -g static-sitemap-cli@^2.2.5
@@ -53,7 +53,7 @@ jobs:
         run: static-sitemap-cli --base ${{ steps.configure-pages.outputs.base_url }} --root . --ignore "allwpilib/docs/beta/**" "allwpilib/docs/development/**" "allwpilib/docs/2027/**" --changefreq  "**,monthly" "allwpilib/docs/**,weekly" --verbose --no-clean
         if: ${{ steps.configure-pages.outcome == 'success' }}
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           # Upload entire repository
           path: '.'
@@ -72,4 +72,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
