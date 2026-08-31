@@ -1,0 +1,26 @@
+var classwpi_1_1_robot_controller =
+[
+    [ "RobotController", "classwpi_1_1_robot_controller.html#a590dc455bfe6da27ec8149f66394a910", null ],
+    [ "GetBatteryVoltage", "classwpi_1_1_robot_controller.html#a7e1ee8370b0b6b9084f4264774dd5eed", null ],
+    [ "GetCANStatus", "classwpi_1_1_robot_controller.html#a3c9ce51850f34183a46534253535eb17", null ],
+    [ "GetComments", "classwpi_1_1_robot_controller.html#a6e20029f13df1085ce04cd94e8ec746f", null ],
+    [ "GetCommsDisableCount", "classwpi_1_1_robot_controller.html#a86415d08f56d1767f4c757e5136f54f2", null ],
+    [ "GetCPUTemp", "classwpi_1_1_robot_controller.html#ad5314ebf0184e804886b98f08ef16673", null ],
+    [ "GetCurrent3V3", "classwpi_1_1_robot_controller.html#af5b848c6ed7467b497913f6719e9b9c6", null ],
+    [ "GetEnabled3V3", "classwpi_1_1_robot_controller.html#af19eb812e7d83580920b889ecaeeafcb", null ],
+    [ "GetFaultCount3V3", "classwpi_1_1_robot_controller.html#a9e7e65f76e8bfedfea0cc2304d6b858b", null ],
+    [ "GetInputVoltage", "classwpi_1_1_robot_controller.html#a7f7cb832f661425bcde93d01dfc8b09b", null ],
+    [ "GetMonotonicTime", "classwpi_1_1_robot_controller.html#aafcfb14e1166a3b6cc6ed9392e2949e6", null ],
+    [ "GetRSLState", "classwpi_1_1_robot_controller.html#a44631ebe0e6bf62a11db34a8a0f05049", null ],
+    [ "GetSerialNumber", "classwpi_1_1_robot_controller.html#a801945349a42aed187191215a0179d8c", null ],
+    [ "GetTeamNumber", "classwpi_1_1_robot_controller.html#aa4a082e26102780ff57d99956d39fab6", null ],
+    [ "GetTime", "classwpi_1_1_robot_controller.html#a65a623119d1887856e56620fb3857604", null ],
+    [ "GetVoltage3V3", "classwpi_1_1_robot_controller.html#abfd43b1117ff76b29d47fe7da1f21861", null ],
+    [ "IsBrownedOut", "classwpi_1_1_robot_controller.html#ab7d0bfd3f99aaadaddaa7b04b9a638ab", null ],
+    [ "IsSysActive", "classwpi_1_1_robot_controller.html#a21bbb994914d9f35cda3d100298cf040", null ],
+    [ "IsSystemTimeValid", "classwpi_1_1_robot_controller.html#a2e79e1c79c041a96096cfc2c1097aa4c", null ],
+    [ "ResetRailFaultCounts", "classwpi_1_1_robot_controller.html#a69089b24976691b8c05a1b9259294636", null ],
+    [ "SetBrownoutVoltages", "classwpi_1_1_robot_controller.html#aa885fde06a8ade3f44ac0a16cda7c682", null ],
+    [ "SetEnabled3V3", "classwpi_1_1_robot_controller.html#ad23102ac0728efb80c12456a2ebcb593", null ],
+    [ "SetTimeSource", "classwpi_1_1_robot_controller.html#adc42114d9ddb0fa3afa44955a365f88f", null ]
+];

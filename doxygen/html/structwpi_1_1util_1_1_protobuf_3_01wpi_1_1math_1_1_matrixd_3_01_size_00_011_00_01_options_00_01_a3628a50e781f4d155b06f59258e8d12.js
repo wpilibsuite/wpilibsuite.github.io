@@ -1,0 +1,8 @@
+var structwpi_1_1util_1_1_protobuf_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_a3628a50e781f4d155b06f59258e8d12 =
+[
+    [ "InputStream", "structwpi_1_1util_1_1_protobuf_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_a3628a50e781f4d155b06f59258e8d12.html#a5bdb8ae53c63ce614fcfa23da65cdbc6", null ],
+    [ "MessageStruct", "structwpi_1_1util_1_1_protobuf_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_a3628a50e781f4d155b06f59258e8d12.html#a271a84e1fa5fbd33da5c9dfea459d556", null ],
+    [ "OutputStream", "structwpi_1_1util_1_1_protobuf_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_a3628a50e781f4d155b06f59258e8d12.html#a59f017026a183b79c4d04daf65b75b5d", null ],
+    [ "Pack", "structwpi_1_1util_1_1_protobuf_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_a3628a50e781f4d155b06f59258e8d12.html#a6f2e75ae0a2076d66ce67d0a2e448564", null ],
+    [ "Unpack", "structwpi_1_1util_1_1_protobuf_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_a3628a50e781f4d155b06f59258e8d12.html#aec97bc132817c36c8489cf3f26bbab06", null ]
+];
