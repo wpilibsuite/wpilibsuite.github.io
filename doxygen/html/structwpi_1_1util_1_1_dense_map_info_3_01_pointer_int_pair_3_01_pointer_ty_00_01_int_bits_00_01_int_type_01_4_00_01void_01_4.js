@@ -1,0 +1,8 @@
+var structwpi_1_1util_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4 =
+[
+    [ "Ty", "structwpi_1_1util_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4.html#a70d089ca6f17057a09700976edbaca72", null ],
+    [ "getEmptyKey", "structwpi_1_1util_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4.html#aa14b0742ae011903168370f4f4b4d72a", null ],
+    [ "getHashValue", "structwpi_1_1util_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4.html#a1222f39ea475e84f7a31faf3af0798f1", null ],
+    [ "getTombstoneKey", "structwpi_1_1util_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4.html#ada129f1e81972ff811539a009a5d43b7", null ],
+    [ "isEqual", "structwpi_1_1util_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_00_01void_01_4.html#a785cbc9de6fd68187f6203243df69b66", null ]
+];

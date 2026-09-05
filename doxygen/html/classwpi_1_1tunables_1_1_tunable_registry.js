@@ -1,0 +1,26 @@
+var classwpi_1_1tunables_1_1_tunable_registry =
+[
+    [ "TunableInfo", "structwpi_1_1tunables_1_1_tunable_registry_1_1_tunable_info.html", "structwpi_1_1tunables_1_1_tunable_registry_1_1_tunable_info" ],
+    [ "TunableRegistry", "classwpi_1_1tunables_1_1_tunable_registry.html#a6075a007d9c84751ac111ed0a84bdfdb", null ],
+    [ "GetBackend", "classwpi_1_1tunables_1_1_tunable_registry.html#a1a03a0ddc2b9b6aab1307bad8781f2e7", null ],
+    [ "GetReportWarning", "classwpi_1_1tunables_1_1_tunable_registry.html#a8849d15d899412f5abeb8ed721ae51e5", null ],
+    [ "GetTunable", "classwpi_1_1tunables_1_1_tunable_registry.html#af8311c6c4e893602c5579de97ed5fab1", null ],
+    [ "GetUpdateMutex", "classwpi_1_1tunables_1_1_tunable_registry.html#a8507e8535bccd1ab1e3c1d05418c43fd", null ],
+    [ "MoveTunable", "classwpi_1_1tunables_1_1_tunable_registry.html#af0d4e09724a15c43ef7b58894c7a5a50", null ],
+    [ "MoveTunableCallbackParent", "classwpi_1_1tunables_1_1_tunable_registry.html#a6023675f02e09696fb3e84e358ef2922", null ],
+    [ "NotifyChanged", "classwpi_1_1tunables_1_1_tunable_registry.html#a0f57fc7edc2001cac1cb43c874681bd6", null ],
+    [ "Publish", "classwpi_1_1tunables_1_1_tunable_registry.html#a44cb68f5f23c916f3de3acec447d31ee", null ],
+    [ "Publish", "classwpi_1_1tunables_1_1_tunable_registry.html#a993b226cb70b1e3ed4bb0bd0edb81043", null ],
+    [ "Publish", "classwpi_1_1tunables_1_1_tunable_registry.html#a5cc53da380662a395568057c133e246f", null ],
+    [ "RegisterBackend", "classwpi_1_1tunables_1_1_tunable_registry.html#abc92d20a876e242d09ae2c16e534e2de", null ],
+    [ "RegisterTunable", "classwpi_1_1tunables_1_1_tunable_registry.html#a3b280bf435af48e50be05d55221ba77c", null ],
+    [ "Remove", "classwpi_1_1tunables_1_1_tunable_registry.html#a7accaeb518f733efb7ff8c4dac10a02e", null ],
+    [ "ReportWarning", "classwpi_1_1tunables_1_1_tunable_registry.html#a25c80a1ae45b994e311189f7e455b8e0", null ],
+    [ "Reset", "classwpi_1_1tunables_1_1_tunable_registry.html#a604a09a992ce722d36b692f5f1281e2e", null ],
+    [ "ResetChangedAfterUpdate", "classwpi_1_1tunables_1_1_tunable_registry.html#a09773429641cfbd9b3be2c775922fbb8", null ],
+    [ "RunAfterUpdate", "classwpi_1_1tunables_1_1_tunable_registry.html#aded426438b71f216df7193c29032215f", null ],
+    [ "SetReportWarning", "classwpi_1_1tunables_1_1_tunable_registry.html#a6634eb12f28764a8758b23e9995cc369", null ],
+    [ "UnregisterTunable", "classwpi_1_1tunables_1_1_tunable_registry.html#a85b093b54b36ed6dabd8ba1cf3905d23", null ],
+    [ "Update", "classwpi_1_1tunables_1_1_tunable_registry.html#a65af4369dbdf055efe18a96cc41d5283", null ],
+    [ "ComplexTunable", "classwpi_1_1tunables_1_1_tunable_registry.html#a37d38212999d333abbe4615cfeb3fcc2", null ]
+];

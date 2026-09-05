@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['kupb_5fany_5ftypefieldnumber_0',['kUpb_Any_TypeFieldNumber',['../message__def_8h.html#a99f82e60e3d71b0cc05e0202c834bd18',1,'message_def.h']]],
+  ['kupb_5fany_5fvaluefieldnumber_1',['kUpb_Any_ValueFieldNumber',['../message__def_8h.html#a84479bbb1a45f737cefecbf35c7eb159',1,'message_def.h']]],
+  ['kupb_5fbasefield_5fbegin_2',['kUpb_BaseField_Begin',['../iterator_8h.html#a816a16a370c0d8f8e7f8ed0d6c98f155',1,'iterator.h']]],
+  ['kupb_5fduration_5fnanosfieldnumber_3',['kUpb_Duration_NanosFieldNumber',['../message__def_8h.html#a41f971d78d80a19db3944c41b71e725d',1,'message_def.h']]],
+  ['kupb_5fduration_5fsecondsfieldnumber_4',['kUpb_Duration_SecondsFieldNumber',['../message__def_8h.html#a09f81d75bc2b12adb679e3537e15b1e0',1,'message_def.h']]],
+  ['kupb_5fepscopyinputstream_5fslopbytes_5',['kUpb_EpsCopyInputStream_SlopBytes',['../eps__copy__input__stream_8h.html#aaf9e0453246284263285919580b70813',1,'eps_copy_input_stream.h']]],
+  ['kupb_5ffieldmode_5fmask_6',['kUpb_FieldMode_Mask',['../internal_2field_8h.html#a5d39fce564a88bc68189b436ab472137',1,'field.h']]],
+  ['kupb_5ffieldrep_5fshift_7',['kUpb_FieldRep_Shift',['../internal_2field_8h.html#a3436a85d926478c3081c4087f1e1ea4b',1,'field.h']]],
+  ['kupb_5ffieldtype_5fsizeof_8',['kUpb_FieldType_SizeOf',['../descriptor__constants_8h.html#a71180083880a76d16b1a303b7c9f07fb',1,'descriptor_constants.h']]],
+  ['kupb_5fmap_5fbegin_9',['kUpb_Map_Begin',['../map_8h.html#ae2b0998fb6610d12baa1cd10af015ba7',1,'map.h']]],
+  ['kupb_5fmapentry_5fkeyfieldnumber_10',['kUpb_MapEntry_KeyFieldNumber',['../message__def_8h.html#a8ba6f130ffaf99b11e948c8f54e226a7',1,'message_def.h']]],
+  ['kupb_5fmapentry_5fvaluefieldnumber_11',['kUpb_MapEntry_ValueFieldNumber',['../message__def_8h.html#a2ee4195734be3c1e060606d370ef17f3',1,'message_def.h']]],
+  ['kupb_5fmaxfieldnumber_12',['kUpb_MaxFieldNumber',['../field__def_8h.html#a03cc3f52e3b1cf865725989a8447fb5d',1,'field_def.h']]],
+  ['kupb_5fmessage_5fbegin_13',['kUpb_Message_Begin',['../reflection_2message_8h.html#a047e88bd7566704344b3e5c9fb9a9c95',1,'message.h']]],
+  ['kupb_5fmessage_5fextensionbegin_14',['kUpb_Message_ExtensionBegin',['../message_2message_8h.html#a094a279bd4b4916e8bcb8b6e28fade58',1,'kUpb_Message_ExtensionBegin:&#160;message.h'],['../message_2internal_2message_8h.html#a094a279bd4b4916e8bcb8b6e28fade58',1,'kUpb_Message_ExtensionBegin:&#160;message.h']]],
+  ['kupb_5fmessage_5funknownbegin_15',['kUpb_Message_UnknownBegin',['../message_2message_8h.html#a744d28928c2456f2c3656acf864f94dd',1,'kUpb_Message_UnknownBegin:&#160;message.h'],['../message_2internal_2message_8h.html#a744d28928c2456f2c3656acf864f94dd',1,'kUpb_Message_UnknownBegin:&#160;message.h']]],
+  ['kupb_5fmtdataencoder_5fminsize_16',['kUpb_MtDataEncoder_MinSize',['../mini__descriptor_2internal_2encode_8h.html#aaef9629e909b5240c56b6e891587a8df',1,'encode.h']]],
+  ['kupb_5fnosub_17',['kUpb_NoSub',['../internal_2field_8h.html#a1d18414deb713c5f78eaab28450b0606',1,'field.h']]],
+  ['kupb_5ftimestamp_5fnanosfieldnumber_18',['kUpb_Timestamp_NanosFieldNumber',['../message__def_8h.html#a0c2a81c3ab315011aeb67ab10f5b5df8',1,'message_def.h']]],
+  ['kupb_5ftimestamp_5fsecondsfieldnumber_19',['kUpb_Timestamp_SecondsFieldNumber',['../message__def_8h.html#a7ab7d766e19a8a1c5d44aad4777d446c',1,'message_def.h']]],
+  ['kupb_5fwireformat_5fdefaultdepthlimit_20',['kUpb_WireFormat_DefaultDepthLimit',['../constants_8h.html#afa88bd59a6d34eb713edcda2ebac3ebc',1,'constants.h']]],
+  ['kupb_5fwirereader_5fwiretypebits_21',['kUpb_WireReader_WireTypeBits',['../internal_2reader_8h.html#adb9979e2a51e2d7bd9a9f240aa9daf6c',1,'reader.h']]],
+  ['kupb_5fwirereader_5fwiretypemask_22',['kUpb_WireReader_WireTypeMask',['../internal_2reader_8h.html#ad282f03dfd03804852772418f9419a81',1,'reader.h']]]
+];

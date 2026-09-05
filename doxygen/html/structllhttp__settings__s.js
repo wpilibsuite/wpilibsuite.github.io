@@ -1,0 +1,28 @@
+var structllhttp__settings__s =
+[
+    [ "on_body", "structllhttp__settings__s.html#ad60e11efa98a073a4402e6f15e911d69", null ],
+    [ "on_chunk_complete", "structllhttp__settings__s.html#a76e32cade968ab5da03ae1492f549d51", null ],
+    [ "on_chunk_extension_name", "structllhttp__settings__s.html#a61c721ca74e6eb8daf17b744b181fa62", null ],
+    [ "on_chunk_extension_name_complete", "structllhttp__settings__s.html#abd60d696236b7c2ca918992b8e54d1a8", null ],
+    [ "on_chunk_extension_value", "structllhttp__settings__s.html#a2b7c8633a12f42c2d26b9b2d3a5cc482", null ],
+    [ "on_chunk_extension_value_complete", "structllhttp__settings__s.html#a87e1ac043c776fe1dbf28bb93bab66fb", null ],
+    [ "on_chunk_header", "structllhttp__settings__s.html#a53dec24a1b3c4bb7cad7d8f0619dc11c", null ],
+    [ "on_header_field", "structllhttp__settings__s.html#aaca2b9a1b6ff3f7417d75d3f8a2e183f", null ],
+    [ "on_header_field_complete", "structllhttp__settings__s.html#aedbadab7c2f65d595453bce8d4d531f2", null ],
+    [ "on_header_value", "structllhttp__settings__s.html#ad91b49f8bebdf4600b15fd3a435be99a", null ],
+    [ "on_header_value_complete", "structllhttp__settings__s.html#a98dfcc01ad2d56eb8a9ee72f89d10b8d", null ],
+    [ "on_headers_complete", "structllhttp__settings__s.html#a55c07450cfd491fc2fd62f1616758bae", null ],
+    [ "on_message_begin", "structllhttp__settings__s.html#a1a5b65a1f28c94b09afd0e4415690c32", null ],
+    [ "on_message_complete", "structllhttp__settings__s.html#a728555cc82a819f6f1a9953c006d5b9a", null ],
+    [ "on_method", "structllhttp__settings__s.html#a126f3cdfd2567f76d2601d09d44dfddd", null ],
+    [ "on_method_complete", "structllhttp__settings__s.html#af6682f514a302f2aabb2e63eec8a91f3", null ],
+    [ "on_protocol", "structllhttp__settings__s.html#a83259c07cb2aa8fdbc331d16c1235a71", null ],
+    [ "on_protocol_complete", "structllhttp__settings__s.html#a8ef4bc8877947a042e0553b83533fef2", null ],
+    [ "on_reset", "structllhttp__settings__s.html#a842f405b01a46d4600a98e97c9dacde0", null ],
+    [ "on_status", "structllhttp__settings__s.html#a3e21f3562b579b7e6b8754e39ee0efc1", null ],
+    [ "on_status_complete", "structllhttp__settings__s.html#a13d24d48ab931601cebd5baaa9196318", null ],
+    [ "on_url", "structllhttp__settings__s.html#a17200427a96dd91ba98d9cc604e24482", null ],
+    [ "on_url_complete", "structllhttp__settings__s.html#a55f6af0495efa6989a49ef04f31fd588", null ],
+    [ "on_version", "structllhttp__settings__s.html#adad9d699f0533bebaac7a1457f6b7b99", null ],
+    [ "on_version_complete", "structllhttp__settings__s.html#a7dd1329fcbae93d8f5969321375a7d92", null ]
+];

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['hal_5faddressable_5fled_5fmax_5flen_0',['HAL_ADDRESSABLE_LED_MAX_LEN',['../_addressable_l_e_d_types_8h.html#a364154429958f9ca4b08ef8ab78d69f4',1,'AddressableLEDTypes.h']]],
+  ['hal_5fsimcallbackregistry_5fdefine_5fcapi_1',['HAL_SIMCALLBACKREGISTRY_DEFINE_CAPI',['../_sim_callback_registry_8hpp.html#afb5819f1744683b53da00c97a6b667c2',1,'SimCallbackRegistry.hpp']]],
+  ['hal_5fsimcallbackregistry_5fdefine_5fcapi_5fnoindex_2',['HAL_SIMCALLBACKREGISTRY_DEFINE_CAPI_NOINDEX',['../_sim_callback_registry_8hpp.html#aaa769024eac42b71696a6ae12288f4de',1,'SimCallbackRegistry.hpp']]],
+  ['hal_5fsimcallbackregistry_5fdefine_5fname_3',['HAL_SIMCALLBACKREGISTRY_DEFINE_NAME',['../_sim_callback_registry_8hpp.html#a0b58004d9a70b6901b3f1d9c0ae5dd4d',1,'SimCallbackRegistry.hpp']]],
+  ['hal_5fsimcallbackregistry_5fstub_5fcapi_4',['HAL_SIMCALLBACKREGISTRY_STUB_CAPI',['../_sim_callback_registry_8hpp.html#a14cc0df8bc121df01a7fbdf28344d699',1,'SimCallbackRegistry.hpp']]],
+  ['hal_5fsimcallbackregistry_5fstub_5fcapi_5fnoindex_5',['HAL_SIMCALLBACKREGISTRY_STUB_CAPI_NOINDEX',['../_sim_callback_registry_8hpp.html#a90e687331ae2d6a6a341187dfa966012',1,'SimCallbackRegistry.hpp']]],
+  ['hal_5fsimdatavalue_5fdefine_5fcapi_6',['HAL_SIMDATAVALUE_DEFINE_CAPI',['../_sim_data_value_8hpp.html#a05f222f2f7eea426db97a98a92fa6d6b',1,'SimDataValue.hpp']]],
+  ['hal_5fsimdatavalue_5fdefine_5fcapi_5fchannel_7',['HAL_SIMDATAVALUE_DEFINE_CAPI_CHANNEL',['../_sim_data_value_8hpp.html#a303d8ab7828b8f614ffb933be7da1790',1,'SimDataValue.hpp']]],
+  ['hal_5fsimdatavalue_5fdefine_5fcapi_5fnoindex_8',['HAL_SIMDATAVALUE_DEFINE_CAPI_NOINDEX',['../_sim_data_value_8hpp.html#a880288a6548167457d8ee973bf718c6a',1,'SimDataValue.hpp']]],
+  ['hal_5fsimdatavalue_5fdefine_5fname_9',['HAL_SIMDATAVALUE_DEFINE_NAME',['../_sim_data_value_8hpp.html#a080bd64c0d9ce8bb2ec646282e08ebe4',1,'SimDataValue.hpp']]],
+  ['hal_5fsimdatavalue_5fstub_5fcapi_10',['HAL_SIMDATAVALUE_STUB_CAPI',['../_sim_data_value_8hpp.html#a56149cbf5578a42bc60e6b1c2547e377',1,'SimDataValue.hpp']]],
+  ['hal_5fsimdatavalue_5fstub_5fcapi_5fchannel_11',['HAL_SIMDATAVALUE_STUB_CAPI_CHANNEL',['../_sim_data_value_8hpp.html#a48fc32a2aeb367594e80929239d1cc97',1,'SimDataValue.hpp']]],
+  ['hal_5fsimdatavalue_5fstub_5fcapi_5fnoindex_12',['HAL_SIMDATAVALUE_STUB_CAPI_NOINDEX',['../_sim_data_value_8hpp.html#a6c82a9e890914b0c16334da2d5ed9424',1,'SimDataValue.hpp']]],
+  ['homography_5fcompute_5fflag_5finverse_13',['HOMOGRAPHY_COMPUTE_FLAG_INVERSE',['../homography_8h.html#a0ce589ae8483ea7308cf60a1b5126d1e',1,'homography.h']]],
+  ['homography_5fcompute_5fflag_5fsvd_14',['HOMOGRAPHY_COMPUTE_FLAG_SVD',['../homography_8h.html#afe7eb3d7e542eff435d0efd4fd634f87',1,'homography.h']]],
+  ['http_5fall_5fmethod_5fmap_15',['HTTP_ALL_METHOD_MAP',['../llhttp_8h.html#a6d5b27dbc93ee2bf7872ef85232cde79',1,'llhttp.h']]],
+  ['http_5ferrno_5fmap_16',['HTTP_ERRNO_MAP',['../llhttp_8h.html#a50da2aea232a876bcafc5ea85b465912',1,'llhttp.h']]],
+  ['http_5fmethod_5fmap_17',['HTTP_METHOD_MAP',['../llhttp_8h.html#a062873fd30d66c26468d4f1bd73e2976',1,'llhttp.h']]],
+  ['http_5fstatus_5fmap_18',['HTTP_STATUS_MAP',['../llhttp_8h.html#acbba37710a56ceabef05d8e3e7ed5939',1,'llhttp.h']]]
+];

@@ -1,0 +1,6 @@
+var classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_0e27c2da6c2632b422f4c64ab93d72676 =
+[
+    [ "PointerUnionMembers", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_0e27c2da6c2632b422f4c64ab93d72676.html#a985e9fbbda74fc38e346d3d02febaf65", null ],
+    [ "PointerUnionMembers", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_0e27c2da6c2632b422f4c64ab93d72676.html#ae7456e998011160088ee84b093e963d7", null ],
+    [ "operator=", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_val_ty_0e27c2da6c2632b422f4c64ab93d72676.html#a873d89bc2739b4ed23609433cd0c4a62", null ]
+];
