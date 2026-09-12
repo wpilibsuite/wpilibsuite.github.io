@@ -1,0 +1,5 @@
+var classwpi_1_1util_1_1sig_1_1detail_1_1_slot_3_01_pmf_00_01_ptr_00_01trait_1_1typelist_3_01_args_8_8_8_01_4_01_4 =
+[
+    [ "Slot", "classwpi_1_1util_1_1sig_1_1detail_1_1_slot_3_01_pmf_00_01_ptr_00_01trait_1_1typelist_3_01_args_8_8_8_01_4_01_4.html#a7cf943fd5c63239cb7ac26012538eafe", null ],
+    [ "call_slot", "classwpi_1_1util_1_1sig_1_1detail_1_1_slot_3_01_pmf_00_01_ptr_00_01trait_1_1typelist_3_01_args_8_8_8_01_4_01_4.html#aec6470daf355cf2392edd9a72ceee38b", null ]
+];

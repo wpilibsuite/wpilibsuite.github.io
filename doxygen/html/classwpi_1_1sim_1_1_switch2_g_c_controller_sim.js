@@ -1,0 +1,27 @@
+var classwpi_1_1sim_1_1_switch2_g_c_controller_sim =
+[
+    [ "Switch2GCControllerSim", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a8bb9d7aae366390dda315d2cf970b7c6", null ],
+    [ "Switch2GCControllerSim", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a1c33e5b8045563cf8d12a0c3bd023e59", null ],
+    [ "SetAButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a3b015263254eda79e8346a0431dae830", null ],
+    [ "SetBButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#abeaa3b394e59a997d97289304cb74805", null ],
+    [ "SetCaptureButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a72cada774241049e34b91ee2b9f0f1c3", null ],
+    [ "SetCButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a4b8d0eb36c78cbb34d9e7734d0812224", null ],
+    [ "SetCStickX", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a0cbd5a1d6dfe1f328f23dff6be279802", null ],
+    [ "SetCStickY", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a101ff856e8c20cb1fc5eaae7f71b80ae", null ],
+    [ "SetDpadDownButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a0e31884ac046ee452db322496cf4b1e2", null ],
+    [ "SetDpadLeftButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#aa451090c56c0a9d3681b9af2befb7e80", null ],
+    [ "SetDpadRightButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ab32aa629440429ce0912c5d5668073d0", null ],
+    [ "SetDpadUpButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ac9cb2a277441bc3decd7b2e4f8b29120", null ],
+    [ "SetHomeButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ad881aea7a295b4206392638d0f60cf84", null ],
+    [ "SetLButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ac10a543edd5ec4c03f355362b36561c9", null ],
+    [ "SetLeftX", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a8f34ce3ede0d47bd725c4999fa5fcf0a", null ],
+    [ "SetLeftY", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ac00f6d0f3502badf87efb723ce9816f7", null ],
+    [ "SetLTrigger", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a870d6c8e59d3f8702b26797700859b31", null ],
+    [ "SetRButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#aa28603257ce469b6bb761b6017cb214b", null ],
+    [ "SetRTrigger", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ac3a0a13710d30d6e35d0d71a82fbd438", null ],
+    [ "SetStartButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#aaaecec385cf433b3cf7e9adab80fbfa4", null ],
+    [ "SetXButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ac73761a4fd3fc3fec27dc8bdb6f92189", null ],
+    [ "SetYButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a2d9ea3dbfd81d0b1ded912cc6cf2d99d", null ],
+    [ "SetZButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#a8b9c273f3d550517eb2f053f49c4654c", null ],
+    [ "SetZLButton", "classwpi_1_1sim_1_1_switch2_g_c_controller_sim.html#ab077ed3efee124f543fb3c622a84e163", null ]
+];

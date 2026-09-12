@@ -1,0 +1,26 @@
+var structwpi_1_1_pneumatic_hub_1_1_faults =
+[
+    [ "GetChannelFault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#af316fb3dd77b21b57df43aee39e19ea1", null ],
+    [ "brownout", "structwpi_1_1_pneumatic_hub_1_1_faults.html#abe328ee5ab80e5ff1736ba9ec7aedff2", null ],
+    [ "canWarning", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a5beef5df3998e360e3e738f3f2be95b2", null ],
+    [ "channel0Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#afc8fdb1e74030d6b43338d5625f46b37", null ],
+    [ "channel10Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a16856a64107812de136232a1991ae785", null ],
+    [ "channel11Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a9552901820862809ce4fb1f8ea24bd5d", null ],
+    [ "channel12Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#ae5ec07ded0762e7664e9641700f145ba", null ],
+    [ "channel13Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a610ac14d1edf7b1d94102121466fc047", null ],
+    [ "channel14Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a6355cab0128eaeaca2d5f3b799914d92", null ],
+    [ "channel15Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a99073d6c79d15bfed00504fc3e451ff3", null ],
+    [ "channel1Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a89935d3979d1d6c82a74f3a61aaa0a9a", null ],
+    [ "channel2Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a3970a20e2d252b1e416bcff133b77bba", null ],
+    [ "channel3Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#af53aed9628befd7c21d068998d351679", null ],
+    [ "channel4Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#ab9bbff3aa133ad79a8df0a268d210139", null ],
+    [ "channel5Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#aa59866a80de332e34ad1a6e7c0073c96", null ],
+    [ "channel6Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#abd6537ac67e228d0b678aaf1ecb374d4", null ],
+    [ "channel7Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#aedca72466fff6aca54e1b3ada0fa12d8", null ],
+    [ "channel8Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a71fca8a1198ce0e187c0c4941dfacd41", null ],
+    [ "channel9Fault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a142d0e5d5c5f5671cc8e7efbc503f2e3", null ],
+    [ "compressorOpen", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a142be38db31fc8096208498feeac299c", null ],
+    [ "compressorOverCurrent", "structwpi_1_1_pneumatic_hub_1_1_faults.html#ab8d47dc5dd42fbb17c010e6eadbb6694", null ],
+    [ "hardwareFault", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a38032f4e8ca847f3b0050a38c6fff37b", null ],
+    [ "solenoidOverCurrent", "structwpi_1_1_pneumatic_hub_1_1_faults.html#a3aedc11e825ee0202cec7203951d0554", null ]
+];

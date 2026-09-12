@@ -1,0 +1,37 @@
+var eps__copy__input__stream_8h =
+[
+    [ "upb_EpsCopyInputStream", "structupb___eps_copy_input_stream.html", "structupb___eps_copy_input_stream" ],
+    [ "kUpb_EpsCopyInputStream_SlopBytes", "eps__copy__input__stream_8h.html#aaf9e0453246284263285919580b70813", null ],
+    [ "upb_EpsCopyInputStream_BufferFlipCallback", "eps__copy__input__stream_8h.html#aa864502a1e73c006509d0f1924d3eff3", null ],
+    [ "upb_EpsCopyInputStream_IsDoneFallbackFunc", "eps__copy__input__stream_8h.html#ac4200747cc7b3adfb283151044ea1c5e", null ],
+    [ "upb_EpsCopyInputStream_ParseDelimitedFunc", "eps__copy__input__stream_8h.html#ab816c95cf1e113695379213c7f94fd9f", null ],
+    [ "upb_IsDoneStatus", "eps__copy__input__stream_8h.html#aaadd945823a85c0eed3b09294c1ed51e", [
+      [ "kUpb_IsDoneStatus_Done", "eps__copy__input__stream_8h.html#aaadd945823a85c0eed3b09294c1ed51ead1e9153410d429d1205136fea5368054", null ],
+      [ "kUpb_IsDoneStatus_NotDone", "eps__copy__input__stream_8h.html#aaadd945823a85c0eed3b09294c1ed51ea61e58e5d3e2023ecae103ec9de77da6f", null ],
+      [ "kUpb_IsDoneStatus_NeedFallback", "eps__copy__input__stream_8h.html#aaadd945823a85c0eed3b09294c1ed51eaff568014c677db89b52af8b8ba58152f", null ]
+    ] ],
+    [ "_upb_EpsCopyInputStream_CheckLimit", "eps__copy__input__stream_8h.html#a996d58d2a146f9a21a25c19e5961f7f9", null ],
+    [ "_upb_EpsCopyInputStream_CheckSizeAvailable", "eps__copy__input__stream_8h.html#af887fa12d46208bc671733a2f7855926", null ],
+    [ "_upb_EpsCopyInputStream_IsDoneFallbackInline", "eps__copy__input__stream_8h.html#a5ba091c99a84e74c0764bb62ef167534", null ],
+    [ "_upb_EpsCopyInputStream_IsDoneFallbackNoCallback", "eps__copy__input__stream_8h.html#aaed749df5fe629a7c6593db55b3bd2a4", null ],
+    [ "upb_EpsCopyInputStream_AliasingAvailable", "eps__copy__input__stream_8h.html#a6a6c07c1868df816dbd576bf810155ff", null ],
+    [ "upb_EpsCopyInputStream_AliasingEnabled", "eps__copy__input__stream_8h.html#a70e214a8825c8011b7139074e37ae37c", null ],
+    [ "upb_EpsCopyInputStream_BytesAvailable", "eps__copy__input__stream_8h.html#afea28fb9b8eb1303cb983c1ee740b6a8", null ],
+    [ "upb_EpsCopyInputStream_CheckDataSizeAvailable", "eps__copy__input__stream_8h.html#a0771a43a12e85a1ee6bc94eb1be9b655", null ],
+    [ "upb_EpsCopyInputStream_CheckSize", "eps__copy__input__stream_8h.html#aff9c4b4fe774271176b94c1f4702edac", null ],
+    [ "upb_EpsCopyInputStream_CheckSubMessageSizeAvailable", "eps__copy__input__stream_8h.html#a93ffc2029cc5c16e7a7e4216cb0f9ca8", null ],
+    [ "upb_EpsCopyInputStream_Copy", "eps__copy__input__stream_8h.html#a8933d3c0f5fb358febc6ce1829433fe6", null ],
+    [ "upb_EpsCopyInputStream_GetAliasedPtr", "eps__copy__input__stream_8h.html#a4735ac1a64cded159a68d9c26715a3e4", null ],
+    [ "upb_EpsCopyInputStream_GetInputPtr", "eps__copy__input__stream_8h.html#a2c4d6072481da27dfe28923067ac28df", null ],
+    [ "upb_EpsCopyInputStream_Init", "eps__copy__input__stream_8h.html#a96a22ee39aaa0ce9508277f6eebdea8a", null ],
+    [ "upb_EpsCopyInputStream_IsDone", "eps__copy__input__stream_8h.html#ac0e9f267acaf7d623af718ebbd02a68d", null ],
+    [ "upb_EpsCopyInputStream_IsDoneStatus", "eps__copy__input__stream_8h.html#a7364951b3a54d6cbeb582bcb5f2ea6a4", null ],
+    [ "upb_EpsCopyInputStream_IsDoneWithCallback", "eps__copy__input__stream_8h.html#a6365a160455cbbfb3ae294453cf64df3", null ],
+    [ "upb_EpsCopyInputStream_IsError", "eps__copy__input__stream_8h.html#a897313aa81464cdb668e6931d0176689", null ],
+    [ "upb_EpsCopyInputStream_PopLimit", "eps__copy__input__stream_8h.html#ae84f50395431814d8255f67f3536c0da", null ],
+    [ "upb_EpsCopyInputStream_PushLimit", "eps__copy__input__stream_8h.html#aa7df6173d9e56a12eacfee5eafa3d463", null ],
+    [ "upb_EpsCopyInputStream_ReadString", "eps__copy__input__stream_8h.html#a9744ebbb64562f6cb7ba11b8d748c8d6", null ],
+    [ "upb_EpsCopyInputStream_ReadStringAliased", "eps__copy__input__stream_8h.html#a3960b3e49644a4a3b62e532aff151e7d", null ],
+    [ "upb_EpsCopyInputStream_Skip", "eps__copy__input__stream_8h.html#a06b621ebc2ccbabf93f7dc5044c0b691", null ],
+    [ "upb_EpsCopyInputStream_TryParseDelimitedFast", "eps__copy__input__stream_8h.html#a5d81d52fa7040e00e0098d9cc4eb3709", null ]
+];
