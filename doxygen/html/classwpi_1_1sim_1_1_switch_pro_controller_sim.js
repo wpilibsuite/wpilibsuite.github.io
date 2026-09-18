@@ -1,0 +1,27 @@
+var classwpi_1_1sim_1_1_switch_pro_controller_sim =
+[
+    [ "SwitchProControllerSim", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a28f70ae7a0b438a5d4cc2dcd56a49011", null ],
+    [ "SwitchProControllerSim", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a950d25488c2a03b0b4b33a573fc92ba3", null ],
+    [ "SetAButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#ad6899c5ae14162efcb16bb3e941ff0ca", null ],
+    [ "SetBButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a618328a27d647fa61eef9f5f995ff6c6", null ],
+    [ "SetCaptureButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a882fd8382439073c7ae667b1a3bb8128", null ],
+    [ "SetDpadDownButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a1c453e97ed492adbc747e5abe30bcbd4", null ],
+    [ "SetDpadLeftButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a914ceee2894dccfdaa44718b617a67b3", null ],
+    [ "SetDpadRightButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#aa0fe422cfa73baeb1a5179ce8a37088b", null ],
+    [ "SetDpadUpButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#af5b3661a6d26a6dec12076330a60ac74", null ],
+    [ "SetHomeButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a5644fcc5be98effc57eb5e7b87cb7671", null ],
+    [ "SetLButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#afc97b9a66ddb0a73867e451ae7a3687d", null ],
+    [ "SetLeftStickButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a28dddd6587caa5bf45288a1e5684251d", null ],
+    [ "SetLeftX", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a9e0bf755cf8a4ace3b44aa6d22b376a0", null ],
+    [ "SetLeftY", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a2d9f444f2eefd6f450882dbbb5551a2d", null ],
+    [ "SetMinusButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a8779c7cf1b06575db5d4097b24ea4da4", null ],
+    [ "SetPlusButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#af44f1aba7ace107fbccf12364f239959", null ],
+    [ "SetRButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a3645d10dbdd400283850066a475d0817", null ],
+    [ "SetRightStickButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a44f6ba2ea4206f2327458602e19eb75e", null ],
+    [ "SetRightX", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#afbb4398aeb63972821da324903d360ab", null ],
+    [ "SetRightY", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#aec2adc1946347efcf27965229c4b8ac0", null ],
+    [ "SetXButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#af31347915a5f340d13b7db0b591253df", null ],
+    [ "SetYButton", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a07213a374b4d1b9bbded3256594dc0e7", null ],
+    [ "SetZL", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#a8cd4591cb7e0af0b34aa5577dd324695", null ],
+    [ "SetZR", "classwpi_1_1sim_1_1_switch_pro_controller_sim.html#ace5ec757471cd20cb628cb899f9651b1", null ]
+];

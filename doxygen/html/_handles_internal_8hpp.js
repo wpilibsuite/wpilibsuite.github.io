@@ -1,0 +1,38 @@
+var _handles_internal_8hpp =
+[
+    [ "wpi::hal::HandleBase", "classwpi_1_1hal_1_1_handle_base.html", "classwpi_1_1hal_1_1_handle_base" ],
+    [ "wpi::hal::detail::HasPreviousAllocation", "conceptwpi_1_1hal_1_1detail_1_1_has_previous_allocation.html", null ],
+    [ "wpi::hal::HAL_HandleEnum", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7bef", [
+      [ "wpi::hal::HAL_HandleEnum::UNDEFINED", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa0db45d2a4141101bdfe48e3314cfbca3", null ],
+      [ "wpi::hal::HAL_HandleEnum::DIO", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa920d269f8e1a33f6426ba979ccdfb289", null ],
+      [ "wpi::hal::HAL_HandleEnum::PORT", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa463c00141b4c3a7f76acd3540052f8f5", null ],
+      [ "wpi::hal::HAL_HandleEnum::NOTIFIER", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa236d990a0cfd23558f33f5edd4cc5df4", null ],
+      [ "wpi::hal::HAL_HandleEnum::ANALOG_INPUT", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befadd6f7f26c6cb120bec133cdf88cccb3a", null ],
+      [ "wpi::hal::HAL_HandleEnum::PWM", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa8449bc264b69c3a0fe8b60361eaf7aeb", null ],
+      [ "wpi::hal::HAL_HandleEnum::DIGITAL_PWM", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befabe66f48d08eb69df8e125059d99af644", null ],
+      [ "wpi::hal::HAL_HandleEnum::COUNTER", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa125e831262b4dbbd68c6878c5d3759f6", null ],
+      [ "wpi::hal::HAL_HandleEnum::FPGA_ENCODER", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befaa377f3b0f6c378d7e44d4dfb7748bd73", null ],
+      [ "wpi::hal::HAL_HandleEnum::ENCODER", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa9e1de45ee3c680d9a2ff400816f05e0f", null ],
+      [ "wpi::hal::HAL_HandleEnum::COMPRESSOR", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa4b5b855b64dbb3dcc3e6eb2433a41d36", null ],
+      [ "wpi::hal::HAL_HandleEnum::SOLENOID", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befaa47524fdf667e74db7623a394212fcc8", null ],
+      [ "wpi::hal::HAL_HandleEnum::VENDOR", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa58b3a4895f94d6dc11c4697dbd9fbbbc", null ],
+      [ "wpi::hal::HAL_HandleEnum::SIMULATION_JNI", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa9645a750cb616c2fcc15702b4d5447d3", null ],
+      [ "wpi::hal::HAL_HandleEnum::CAN", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa6d5050f7a97e7e2e881a4e09dfbd6087", null ],
+      [ "wpi::hal::HAL_HandleEnum::SERIAL_PORT", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befacc86c4bcbad19b1f83c960b41169885f", null ],
+      [ "wpi::hal::HAL_HandleEnum::DUTY_CYCLE", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa261f29bff29893dcc1430a35e9f5080b", null ],
+      [ "wpi::hal::HAL_HandleEnum::ADDRESSABLE_LED", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befac58837be90d1f3fb099dc8803271db9e", null ],
+      [ "wpi::hal::HAL_HandleEnum::CTRE_PCM", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befac7ecf0de83b0d4f6922baec8193b20be", null ],
+      [ "wpi::hal::HAL_HandleEnum::CTRE_PDP", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa9632af08035e2a3b25cec1bb2e2f945e", null ],
+      [ "wpi::hal::HAL_HandleEnum::REV_PDH", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befaa5ef23d785bdca69dac9f0ed38563537", null ],
+      [ "wpi::hal::HAL_HandleEnum::REV_PH", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa7a58e38e3d3fb98e93bb8382e4d5fa35", null ],
+      [ "wpi::hal::HAL_HandleEnum::CAN_STREAM", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa7f49bdc2ec130d9fd6591e30ed2ccd79", null ],
+      [ "wpi::hal::HAL_HandleEnum::ALERT", "namespacewpi_1_1hal.html#a187392a1ce9b833441327bf3d6db7befa320f86f60f25459ba5550e000b2c3929", null ]
+    ] ],
+    [ "wpi::hal::createHandle", "namespacewpi_1_1hal.html#a378045ad09221b9c30587d3245f404ef", null ],
+    [ "wpi::hal::getHandleIndex", "namespacewpi_1_1hal.html#a579ad09b75565bc94e9c161d5d03111b", null ],
+    [ "wpi::hal::getHandleType", "namespacewpi_1_1hal.html#acd276e83d59fc258c4108a4f6b2ab1b7", null ],
+    [ "wpi::hal::getHandleTypedIndex", "namespacewpi_1_1hal.html#a1a6bddb2d4d7d5e06ded495a4df3b65a", null ],
+    [ "wpi::hal::isHandleCorrectVersion", "namespacewpi_1_1hal.html#a55ea96d1daf03d3af0910832fca40aa3", null ],
+    [ "wpi::hal::isHandleType", "namespacewpi_1_1hal.html#afbdb4f1e56d0ddc8878cf5419e0bb4bb", null ],
+    [ "wpi::hal::INVALID_HANDLE_INDEX", "namespacewpi_1_1hal.html#aee716b6ea276271269c11f238ffc9a04", null ]
+];
