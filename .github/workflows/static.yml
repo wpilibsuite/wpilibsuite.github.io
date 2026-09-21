@@ -36,11 +36,6 @@ jobs:
         with:
           ref: allwpilib-development
           path: allwpilib/docs/development
-      - name: Install 2027
-        uses: ./.github/actions/install-docs
-        with:
-          ref: allwpilib-2027
-          path: allwpilib/docs/2027
       - run: wget -O favicon.ico https://raw.githubusercontent.com/wpilibsuite/branding/main/export/ico/wpilib-icon-256.ico
       - name: Setup Pages
         id: configure-pages
