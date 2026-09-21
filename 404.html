@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>404 - Page not found</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .wrap {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      width: 280px;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 30px;
+    }
+
+    .box h1 {
+      margin: 0 0 10px;
+      font-size: 36px;
+    }
+
+    .box p {
+      font-size: 16px;
+    }
+
+    .box hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+
+    .links {
+      text-align: left;
+      display: inline-block;
+      margin: 0;
+      padding-left: 20px;
+      font-size: 16px;
+    }
+
+    .links li {
+      margin: 6px 0;
+    }
+
+    a {
+      color: #0066cc;
+    }
+  </style>
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="https://raw.githubusercontent.com/wpilibsuite/branding/main/export/svg/wpilib-icon.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/wpilibsuite/branding/main/export/png/wpilib-icon-256.png"/>
+  <script>
+    // Send /allwpilib/docs/2027/... to /allwpilib/docs/beta/...
+    var path = window.location.pathname;
+    if (path.indexOf('/allwpilib/docs/2027') === 0) {
+      var newPath = '/allwpilib/docs/beta' + path.substring('/allwpilib/docs/2027'.length);
+      window.location.replace(window.location.origin + newPath + window.location.search + window.location.hash);
+    }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <img class="logo" src="https://raw.githubusercontent.com/wpilibsuite/branding/main/export/svg/wpilib-generic.svg" alt="WPILib" />
+    <div class="box">
+      <h1>404</h1>
+      <p>Sorry, that page doesn't exist. It may have been moved or deleted.</p>
+      <p><a id="home-link" href="/">Back to homepage</a></p>
+      <hr />
+      <p>Looking for something specific? Try one of these:</p>
+      <ul class="links">
+        <li><a href="https://docs.wpilib.org/">FIRST Robotics Competition Control System documentation</a></li>
+        <li><a href="/allwpilib/docs/release/java/">WPILib Java API Docs</a></li>
+        <li><a href="/allwpilib/docs/release/cpp/">WPILib C++ API Docs</a></li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    // Point API doc 404s at the docs landing page for their version
+    var docsMatch = window.location.pathname.match(/^\/allwpilib\/docs\/(beta|release|development|2027)(\/|$)/);
+    if (docsMatch) {
+      var version = docsMatch[1] ?? "release";
+      var linkVersion = "";
+      switch (docsMatch[1]) {
+        case 'beta':
+          linkVersion = 'beta ';
+          break;
+        case 'development':
+          linkVersion = 'development ';
+          break;
+      }
+      var homeLink = document.getElementById('home-link');
+      homeLink.href = '/allwpilib/docs/' + version;
+      homeLink.textContent = 'Back to ' + linkVersion + 'API docs';
+    }
+  </script>
+</body>
+
+</html>
