@@ -1,0 +1,27 @@
+var group__cscore__source__func =
+[
+    [ "wpi::cs::CopySource", "group__cscore__source__func.html#ga64c83f2dbe6335c5c27ce5f6b2500988", null ],
+    [ "wpi::cs::EnumerateSourceProperties", "group__cscore__source__func.html#gaf706a562c9d0114e68e35af52ba5be85", null ],
+    [ "wpi::cs::EnumerateSourceSinks", "group__cscore__source__func.html#ga45fba498b69536b40eb00b58f4a832c1", null ],
+    [ "wpi::cs::EnumerateSourceVideoModes", "group__cscore__source__func.html#ga4e31e18487630292f7e0b066425d00e0", null ],
+    [ "wpi::cs::GetSourceConfigJson", "group__cscore__source__func.html#ga33542f67b64592724e7ef4aa7a28d1f4", null ],
+    [ "wpi::cs::GetSourceConfigJsonObject", "group__cscore__source__func.html#gaad7cba43643974ad19a426aa4e7fc8e1", null ],
+    [ "wpi::cs::GetSourceDescription", "group__cscore__source__func.html#ga4ba487425206e5c78aa175fc2038b231", null ],
+    [ "wpi::cs::GetSourceDescription", "group__cscore__source__func.html#gafeb81c0492f36e3ba2c56a953b813dbb", null ],
+    [ "wpi::cs::GetSourceKind", "group__cscore__source__func.html#gac3e6a5e2978b472a7bba7ad6e2139e46", null ],
+    [ "wpi::cs::GetSourceLastFrameTime", "group__cscore__source__func.html#gacf7943d74827c585a2e24e55e312bccd", null ],
+    [ "wpi::cs::GetSourceName", "group__cscore__source__func.html#gad4ef17a2a399d81d49eb73edbedfac51", null ],
+    [ "wpi::cs::GetSourceName", "group__cscore__source__func.html#ga1207cf4d16de5e9202f1eec74932e6b5", null ],
+    [ "wpi::cs::GetSourceProperty", "group__cscore__source__func.html#gab394fce78d9c2d324ea80627a9025a34", null ],
+    [ "wpi::cs::GetSourceVideoMode", "group__cscore__source__func.html#ga0de469b71cff74c9681926aeec7201af", null ],
+    [ "wpi::cs::IsSourceConnected", "group__cscore__source__func.html#gaec8c38d61a5ebfdf40fe35b5ac6c5493", null ],
+    [ "wpi::cs::IsSourceEnabled", "group__cscore__source__func.html#ga62852a7a0bbcde7412ae3b194774fe25", null ],
+    [ "wpi::cs::ReleaseSource", "group__cscore__source__func.html#ga4865e017aac0aa96ee94bfd82a173913", null ],
+    [ "wpi::cs::SetSourceConfigJson", "group__cscore__source__func.html#gaa3ccd50b11810bd43b5f5714968de796", null ],
+    [ "wpi::cs::SetSourceConfigJson", "group__cscore__source__func.html#ga77c5f6f7ed31055e279adc6352aa78f6", null ],
+    [ "wpi::cs::SetSourceConnectionStrategy", "group__cscore__source__func.html#ga36b1533d9e2de78be2e0c63b1895cda9", null ],
+    [ "wpi::cs::SetSourceFPS", "group__cscore__source__func.html#ga4675cf54267308fcc4e2c001bfe7575d", null ],
+    [ "wpi::cs::SetSourcePixelFormat", "group__cscore__source__func.html#gadac0005863f3b6cf32c49b9d72df6206", null ],
+    [ "wpi::cs::SetSourceResolution", "group__cscore__source__func.html#ga2af686ea80a95ec53ab1a22caf610f60", null ],
+    [ "wpi::cs::SetSourceVideoMode", "group__cscore__source__func.html#gaeba83d1eaaaf9535e861566d925c56c6", null ]
+];

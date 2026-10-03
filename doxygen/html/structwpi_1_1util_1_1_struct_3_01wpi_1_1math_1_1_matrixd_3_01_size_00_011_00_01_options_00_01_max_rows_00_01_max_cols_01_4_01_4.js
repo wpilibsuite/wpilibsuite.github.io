@@ -1,0 +1,10 @@
+var structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4 =
+[
+    [ "GetSchema", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a348efed1993873d7193c4dbb2a09b873", null ],
+    [ "GetSize", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a785dfa19cafa77cfbff71784243e3671", null ],
+    [ "GetTypeName", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a51a9192662655ba5001fd7ccd33228fc", null ],
+    [ "Pack", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ae9f6598b96678bdeca297f6ac22c7910", null ],
+    [ "Unpack", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a42fcf471cb563d1f9613c78fdc62327e", null ],
+    [ "SCHEMA", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#afdae04a8fc36efeeb869f4c1dff67737", null ],
+    [ "TYPE_NAME", "structwpi_1_1util_1_1_struct_3_01wpi_1_1math_1_1_matrixd_3_01_size_00_011_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ae42b56834c868f8ede10016491d25eef", null ]
+];
