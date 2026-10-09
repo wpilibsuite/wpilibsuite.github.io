@@ -1,0 +1,28 @@
+var classwpi_1_1math_1_1_rotation3d =
+[
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#a400c2b2b00db4895ded46cfc300906ce", null ],
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#a45e0a763d0fd843786c678276998b105", null ],
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#a490d50a81e4fa75e4c7f23e57d3871ae", null ],
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#abd4845ea4b4cfaf15587e1c46764333f", null ],
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#a67cd4f434acbf655c32551036b45e4ae", null ],
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#a2a90df141456509e102b16e4a1d6f313", null ],
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#a9bd062cd058d43ae6cdc6fe8063ebff2", null ],
+    [ "Rotation3d", "classwpi_1_1math_1_1_rotation3d.html#ad0298fe14909f24c26793260357a6699", null ],
+    [ "Angle", "classwpi_1_1math_1_1_rotation3d.html#a57e851952441a10730ef4a19e8c8f0f8", null ],
+    [ "Axis", "classwpi_1_1math_1_1_rotation3d.html#a47c73dd0a7469d601813434e00536c6e", null ],
+    [ "GetQuaternion", "classwpi_1_1math_1_1_rotation3d.html#a2bb0256c31b41a536f3731ca46ed76cc", null ],
+    [ "Integrate", "classwpi_1_1math_1_1_rotation3d.html#a6073adc09289c87248e165d0f313bd99", null ],
+    [ "Interpolate", "classwpi_1_1math_1_1_rotation3d.html#a36e8325f5318827953fc7f74d17eae43", null ],
+    [ "Inverse", "classwpi_1_1math_1_1_rotation3d.html#a56bf2a7346d591cb678f85e3c964bacb", null ],
+    [ "operator*", "classwpi_1_1math_1_1_rotation3d.html#a51c6b41a0c662971f8834ff58c1515b0", null ],
+    [ "operator/", "classwpi_1_1math_1_1_rotation3d.html#a231dbfd79db07c824fb9d0d83922e38b", null ],
+    [ "operator==", "classwpi_1_1math_1_1_rotation3d.html#aa45a140ddbe678b278a626c70c0e644e", null ],
+    [ "RelativeTo", "classwpi_1_1math_1_1_rotation3d.html#aa80d2371a1cde30a2c4dbc7a9c180211", null ],
+    [ "RotateBy", "classwpi_1_1math_1_1_rotation3d.html#ae6cd971ad889b4e853a7910799c0b257", null ],
+    [ "ToMatrix", "classwpi_1_1math_1_1_rotation3d.html#a8c8d84c2479c3451c2f5a110d939a616", null ],
+    [ "ToRotation2d", "classwpi_1_1math_1_1_rotation3d.html#a1d128add423daffd22e8be20527ef5f4", null ],
+    [ "ToVector", "classwpi_1_1math_1_1_rotation3d.html#a20c1db72ea45a2bb0e8171a7bb19bf1f", null ],
+    [ "X", "classwpi_1_1math_1_1_rotation3d.html#a142a4bdd2ac25ce44751f9d77884a993", null ],
+    [ "Y", "classwpi_1_1math_1_1_rotation3d.html#acf5446fab0019b8eaa12fe25873fb2df", null ],
+    [ "Z", "classwpi_1_1math_1_1_rotation3d.html#a52a4c8ca84b5e23f6753ce24de88a354", null ]
+];

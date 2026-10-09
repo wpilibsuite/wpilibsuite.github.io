@@ -1,0 +1,26 @@
+var _sim_device_data_8h =
+[
+    [ "HALSIM_SimDeviceCallback", "_sim_device_data_8h.html#a121919b879a2e2d6a3187cfcad54894a", null ],
+    [ "HALSIM_SimValueCallback", "_sim_device_data_8h.html#af086bde9a49f117451c5ca0b33f31165", null ],
+    [ "HALSIM_CancelSimDeviceCreatedCallback", "_sim_device_data_8h.html#aa3648cca049f64de833045846c65ed5b", null ],
+    [ "HALSIM_CancelSimDeviceFreedCallback", "_sim_device_data_8h.html#a49d94038d179a325a340538711763bd2", null ],
+    [ "HALSIM_CancelSimValueChangedCallback", "_sim_device_data_8h.html#adf95bd7e90af7b2ee66392456f9af4b6", null ],
+    [ "HALSIM_CancelSimValueCreatedCallback", "_sim_device_data_8h.html#af3e173fadeeb6bb390ee81034c21ceae", null ],
+    [ "HALSIM_CancelSimValueResetCallback", "_sim_device_data_8h.html#ae4c03514e53d5c8bb552506c386d4ea9", null ],
+    [ "HALSIM_EnumerateSimDevices", "_sim_device_data_8h.html#a3b737f075f15bdc5afa6a7bf24e0cf49", null ],
+    [ "HALSIM_EnumerateSimValues", "_sim_device_data_8h.html#a34efb65ba681d52a35d0144776bf7e5f", null ],
+    [ "HALSIM_GetSimDeviceHandle", "_sim_device_data_8h.html#a55a5192deb3e81dc2ad64b0b8d9efd74", null ],
+    [ "HALSIM_GetSimDeviceName", "_sim_device_data_8h.html#a22b8592dadbaa575321ec6a48019a632", null ],
+    [ "HALSIM_GetSimValueDeviceHandle", "_sim_device_data_8h.html#afc7117148a0a3e8bb8132c39a81ce802", null ],
+    [ "HALSIM_GetSimValueEnumDoubleValues", "_sim_device_data_8h.html#aeca504cfaac6764a8c51e7bf7779e7c8", null ],
+    [ "HALSIM_GetSimValueEnumOptions", "_sim_device_data_8h.html#aa9a286a3a082fc6393fa76a99ee12c64", null ],
+    [ "HALSIM_GetSimValueHandle", "_sim_device_data_8h.html#a5660baca624c241a558bd69ab65454a5", null ],
+    [ "HALSIM_IsSimDeviceEnabled", "_sim_device_data_8h.html#ad9c7e270766812ece9c3a29a5d5b8bfa", null ],
+    [ "HALSIM_RegisterSimDeviceCreatedCallback", "_sim_device_data_8h.html#a597c29157313feccef86bc6979d70610", null ],
+    [ "HALSIM_RegisterSimDeviceFreedCallback", "_sim_device_data_8h.html#a670a36bd78bbca388920522ebd5483d2", null ],
+    [ "HALSIM_RegisterSimValueChangedCallback", "_sim_device_data_8h.html#ac71c7c19500e47bff5ad000da97c9e20", null ],
+    [ "HALSIM_RegisterSimValueCreatedCallback", "_sim_device_data_8h.html#a9ed5bb0626a960db6d2fdda29e229a8b", null ],
+    [ "HALSIM_RegisterSimValueResetCallback", "_sim_device_data_8h.html#a8adf2439c412af2c80ac2ed8793c5648", null ],
+    [ "HALSIM_ResetSimDeviceData", "_sim_device_data_8h.html#ad38931b6e11a4c1daf4c7e22b635f764", null ],
+    [ "HALSIM_SetSimDeviceEnabled", "_sim_device_data_8h.html#a65b5b5e5ee2543a37d4b8c37dbede2d1", null ]
+];

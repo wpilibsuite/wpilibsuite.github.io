@@ -1,0 +1,25 @@
+var classwpi_1_1_preferences =
+[
+    [ "ContainsKey", "classwpi_1_1_preferences.html#ab4c95538683b08a9fd51f310bc7dc45b", null ],
+    [ "GetBoolean", "classwpi_1_1_preferences.html#a9bcfea38927a14b17f20dfeabb9d3445", null ],
+    [ "GetDouble", "classwpi_1_1_preferences.html#aa0fa6d570fc2fa3bf327d16236771237", null ],
+    [ "GetFloat", "classwpi_1_1_preferences.html#a05db4866592a545c78c6881ac7d6a34d", null ],
+    [ "GetInt", "classwpi_1_1_preferences.html#a5ec028b447f27f8265d09f5448be339e", null ],
+    [ "GetKeys", "classwpi_1_1_preferences.html#a7450ff43790e02a8f6a65be4d710480f", null ],
+    [ "GetLong", "classwpi_1_1_preferences.html#adbc332e5ddbdaafb030c2a743df99d2b", null ],
+    [ "GetString", "classwpi_1_1_preferences.html#a1a3b53524e8bbea144eb1e4bb36bbb00", null ],
+    [ "InitBoolean", "classwpi_1_1_preferences.html#aee52bb956ee2c18059634ed34e643797", null ],
+    [ "InitDouble", "classwpi_1_1_preferences.html#a62c258d3327e8d934a21b0cada906b95", null ],
+    [ "InitFloat", "classwpi_1_1_preferences.html#aa79d173e801519c30a660ab466b5eeb7", null ],
+    [ "InitInt", "classwpi_1_1_preferences.html#ac66b7c87319e850077b061202ef3e2af", null ],
+    [ "InitLong", "classwpi_1_1_preferences.html#ad4a4f9f6250ee1b30533a34f6687e46c", null ],
+    [ "InitString", "classwpi_1_1_preferences.html#afe4a8f5babb56abf1986d0e0aabcfb4a", null ],
+    [ "Remove", "classwpi_1_1_preferences.html#a9c59f7e8edab2e4a9b9852408738d0ad", null ],
+    [ "RemoveAll", "classwpi_1_1_preferences.html#a22904ea9dc14d9e64b72a95c1322d99a", null ],
+    [ "SetBoolean", "classwpi_1_1_preferences.html#a069c19e4469790d725947bcf8e36c739", null ],
+    [ "SetDouble", "classwpi_1_1_preferences.html#a12d6c56e128cba01c4ffdc557e38e5cc", null ],
+    [ "SetFloat", "classwpi_1_1_preferences.html#a1f2df8e1713fc71441a5a0e48b6e8509", null ],
+    [ "SetInt", "classwpi_1_1_preferences.html#ac906b0e57aa0bb6f46a0d19f2685d14d", null ],
+    [ "SetLong", "classwpi_1_1_preferences.html#abb831f76e25ba76809d7b60168a990de", null ],
+    [ "SetString", "classwpi_1_1_preferences.html#a469bf41556524d284d5126d120be3a0f", null ]
+];

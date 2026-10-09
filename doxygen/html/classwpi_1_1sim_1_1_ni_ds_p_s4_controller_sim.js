@@ -1,0 +1,25 @@
+var classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim =
+[
+    [ "NiDsPS4ControllerSim", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a7e9f92bad8cac5f8866e082747d60406", null ],
+    [ "NiDsPS4ControllerSim", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#ac46860a525ded8c59ba5d814b9d450ed", null ],
+    [ "SetCircleButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a566d27bce1ac0f2e10f42551a41c623a", null ],
+    [ "SetCrossButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#acefd32bbce6952a0c1761d9faeb92aad", null ],
+    [ "SetL1Button", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a21e2643b74fad641ec295a98c256562f", null ],
+    [ "SetL2Axis", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a93b7630ef1ea252da1e22188f74f8182", null ],
+    [ "SetL2Button", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#abebc036a5e014a4c44776415fcf5a67c", null ],
+    [ "SetL3Button", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a1a23cce9c9d8b756188e53f8dd8da535", null ],
+    [ "SetLeftX", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#acdb067c70418f0a506756b6ad8e85284", null ],
+    [ "SetLeftY", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#aa8e3efd1c8f64b3dc6a346751608171f", null ],
+    [ "SetOptionsButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a655f92ccae8f1b74afab889ebad8d41b", null ],
+    [ "SetPSButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#aa804e51c5ed06cf624beb51fbd6be2ac", null ],
+    [ "SetR1Button", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a8446d332d7bcaebde6c365aa248cb5ad", null ],
+    [ "SetR2Axis", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a7dcc93d665dbe3f64edee2b015c7efcc", null ],
+    [ "SetR2Button", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#afcc7d96635f69c23fb194de97d8c2339", null ],
+    [ "SetR3Button", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a50b57aa091462103193e35822f453925", null ],
+    [ "SetRightX", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#aa22dde8d4130a165d686bf0dadaa99df", null ],
+    [ "SetRightY", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#aecc7738124cef637247faac9eab95bb2", null ],
+    [ "SetShareButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a62f145b0f294c8fa03d5d20b5ea2fb57", null ],
+    [ "SetSquareButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#a65029cb8190a68ca63239d4f347fe2c7", null ],
+    [ "SetTouchpadButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#aceec1d1271cf20857dec74714d56a373", null ],
+    [ "SetTriangleButton", "classwpi_1_1sim_1_1_ni_ds_p_s4_controller_sim.html#ab7b0d0586e681123baf1c0d79779a73f", null ]
+];

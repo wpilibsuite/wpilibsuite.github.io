@@ -1,0 +1,28 @@
+var classwpi_1_1sim_1_1_dual_sense_controller_sim =
+[
+    [ "DualSenseControllerSim", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a10a4326183155b4ae882dc8ce2a811c3", null ],
+    [ "DualSenseControllerSim", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a9c4358973bf007b2fc1df91a37a38795", null ],
+    [ "SetCircleButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#ac577376dee2e1d975b4294b33058a2f4", null ],
+    [ "SetCreateButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#ac89856ece7ffceb11dcf972d799d6826", null ],
+    [ "SetCrossButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a8e5cf27b5c59a5e00b5b9af40fce0395", null ],
+    [ "SetDpadDownButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#af02cfec30c6361044d951bbb4d7194fe", null ],
+    [ "SetDpadLeftButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#afd0477ad0920a746cceebbc23369bb93", null ],
+    [ "SetDpadRightButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#aa5d9881a3977cd93b19662e774d3bf9d", null ],
+    [ "SetDpadUpButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#aedfdf252db325c8113f38350357499a8", null ],
+    [ "SetL1Button", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#abf2c429ffa371ecd504f8b83f834f87e", null ],
+    [ "SetL2", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a147ca60b003f1c736ae04a0c3644b6d7", null ],
+    [ "SetL3Button", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a766b2756cc328e7e59fec49e368a1b60", null ],
+    [ "SetLeftX", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#afd7436da2a8cd6acaef0b210c027258f", null ],
+    [ "SetLeftY", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a6d9a56c1fb635a96f846f81fa1068f0e", null ],
+    [ "SetMicrophoneButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#abfac27c3772484cf5f1e8f4b3fe97431", null ],
+    [ "SetOptionsButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a2c8d8ab029dbd674d0a4f9282328fae9", null ],
+    [ "SetPSButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a84d6064e8d095d53589d57d3ebbbc7b9", null ],
+    [ "SetR1Button", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#adbd6e0868612c168463a2960b1b4073d", null ],
+    [ "SetR2", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a8cd21b56e71bc27fe1941373c0f48fe0", null ],
+    [ "SetR3Button", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#afb6f3adbf5c0e370362d0e5a80b90ceb", null ],
+    [ "SetRightX", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#ab33b9c36de5fdf271f3aba0520744c3a", null ],
+    [ "SetRightY", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a618bf6acf37401f6c5732a234e9db65e", null ],
+    [ "SetSquareButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#aa0a2d1a066a6c74f09a587443da0bcae", null ],
+    [ "SetTouchpadButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a51c394dcfbe849158d3f2f009b71eccf", null ],
+    [ "SetTriangleButton", "classwpi_1_1sim_1_1_dual_sense_controller_sim.html#a7e64a42e0d8214ce76234b7bf879653c", null ]
+];
