@@ -1,0 +1,25 @@
+var def__builder_8h =
+[
+    [ "upb_DefBuilder", "structupb___def_builder.html", "structupb___def_builder" ],
+    [ "UPB_DEF_SET_OPTIONS", "def__builder_8h.html#a33a369d6e30417e73c7342f3b317382f", null ],
+    [ "UPB_DEFBUILDER_ALLOCARRAY", "def__builder_8h.html#adc7f386744ccf1792c15bcd6359e6d9f", null ],
+    [ "_upb_DefBuilder_Add", "def__builder_8h.html#a184cb8bce7db512e50e1618b35e5fa05", null ],
+    [ "_upb_DefBuilder_Alloc", "def__builder_8h.html#a44c306393d28a99e8bd6eafe5b32cb96", null ],
+    [ "_upb_DefBuilder_AllocCounted", "def__builder_8h.html#a93075e9237e5da5a7c9f6047357fd34e", null ],
+    [ "_upb_DefBuilder_Arena", "def__builder_8h.html#aefabade09f93174bb84a50a056450f11", null ],
+    [ "_upb_DefBuilder_CheckIdentFull", "def__builder_8h.html#a568964adf81c6c0aacc989bbedd41ace", null ],
+    [ "_upb_DefBuilder_CheckIdentSlow", "def__builder_8h.html#af37937fc6c04a2da2e9a0c2bd59b02c7", null ],
+    [ "_upb_DefBuilder_Errf", "def__builder_8h.html#a7482e3aa7af349270a8f3e11f9950489", null ],
+    [ "_upb_DefBuilder_FailJmp", "def__builder_8h.html#a87d2d9e6a6e839c6b6a06ff40c99c216", null ],
+    [ "_upb_DefBuilder_File", "def__builder_8h.html#a9250c6693e3eb3146349ffdf6d2683f9", null ],
+    [ "_upb_DefBuilder_FullToShort", "def__builder_8h.html#a7c9a813c721b0f2b3f6be7a53a6f2abb", null ],
+    [ "_upb_DefBuilder_GetOrCreateFeatureSet", "def__builder_8h.html#a760284d399735d3ff8fc385745254e7a", null ],
+    [ "_upb_DefBuilder_MakeFullName", "def__builder_8h.html#aa27c62a69b380dd2e70515ad5556c5d9", null ],
+    [ "_upb_DefBuilder_OomErr", "def__builder_8h.html#a00d0fa9d37f21ba2c913acb96a1f3527", null ],
+    [ "_upb_DefBuilder_ParseEscape", "def__builder_8h.html#ae2b0dc5479410b708f5aef68ec4abca5", null ],
+    [ "_upb_DefBuilder_Resolve", "def__builder_8h.html#a59147c3238e09da1893649937cccf410", null ],
+    [ "_upb_DefBuilder_ResolveAny", "def__builder_8h.html#ad117a050bc4576d9fd8079db446313ea", null ],
+    [ "UPB_DESC", "def__builder_8h.html#a23960a59b8c509aa3f39625d4dc954a4", null ],
+    [ "is_implicit", "def__builder_8h.html#a3b8355d591afe2fa418731571a2e7080", null ],
+    [ "kUpbDefOptDefault", "def__builder_8h.html#a0d0474835d978e77905e07a796045d75", null ]
+];

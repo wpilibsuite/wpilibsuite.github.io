@@ -1,0 +1,25 @@
+var classwpi_1_1math_1_1_quaternion =
+[
+    [ "Quaternion", "classwpi_1_1math_1_1_quaternion.html#ab89552cfd5e46c799b8c02463e011a8d", null ],
+    [ "Quaternion", "classwpi_1_1math_1_1_quaternion.html#a52c1d642cf9c661b012165fe5303b248", null ],
+    [ "Conjugate", "classwpi_1_1math_1_1_quaternion.html#aeac8e9831136f20f876005c412cd49fe", null ],
+    [ "Dot", "classwpi_1_1math_1_1_quaternion.html#a422610c5ae0de8458f2585dbf0632090", null ],
+    [ "Exp", "classwpi_1_1math_1_1_quaternion.html#a6b4164e8cd7bb809dca5321d11ee229c", null ],
+    [ "FromRotationVector", "classwpi_1_1math_1_1_quaternion.html#ae768a6fbc1c2b61df5a6015fc7d56c3d", null ],
+    [ "Inverse", "classwpi_1_1math_1_1_quaternion.html#a1e7f1d3314fe55f3ac0ca3b1f87f0a90", null ],
+    [ "Log", "classwpi_1_1math_1_1_quaternion.html#aa969bc73b76e4c150253462e6f224cbf", null ],
+    [ "Norm", "classwpi_1_1math_1_1_quaternion.html#afe2d0fae7cf83e93608434ee6f888b2c", null ],
+    [ "Normalize", "classwpi_1_1math_1_1_quaternion.html#a4cbdfa84574495528e50b7e5f3d0223a", null ],
+    [ "operator*", "classwpi_1_1math_1_1_quaternion.html#a71e915f5d7c5ec42d1bd07b7ea5f56ff", null ],
+    [ "operator*", "classwpi_1_1math_1_1_quaternion.html#af41235442a5e0f2177ebf42de8335ff4", null ],
+    [ "operator+", "classwpi_1_1math_1_1_quaternion.html#a4b393c9012a8d9016419c5c6979b5fef", null ],
+    [ "operator-", "classwpi_1_1math_1_1_quaternion.html#a3091722bac001cca52bd7b075fb8829c", null ],
+    [ "operator/", "classwpi_1_1math_1_1_quaternion.html#a30d6451fb60cc3b094ac0d86f4b66096", null ],
+    [ "operator==", "classwpi_1_1math_1_1_quaternion.html#a76aa1055e1de43e5d08d73238c01047e", null ],
+    [ "Pow", "classwpi_1_1math_1_1_quaternion.html#aa52d9732e722592ce76937fe837a606a", null ],
+    [ "ToRotationVector", "classwpi_1_1math_1_1_quaternion.html#a8b099c426b6f9db28bdc4b367af58a21", null ],
+    [ "W", "classwpi_1_1math_1_1_quaternion.html#a18182125f59d7e523770b20b1dcfdb55", null ],
+    [ "X", "classwpi_1_1math_1_1_quaternion.html#a82ea4ed2f566c099e628ddca85f101d4", null ],
+    [ "Y", "classwpi_1_1math_1_1_quaternion.html#af6e8939aa834627c64074a1b1e56bc92", null ],
+    [ "Z", "classwpi_1_1math_1_1_quaternion.html#aa482f5e713ae9655b05f814e139e0bf8", null ]
+];
