@@ -1,0 +1,25 @@
+var classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim =
+[
+    [ "NiDsPS5ControllerSim", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a3d442723938273e110cd825c4e5f9b4e", null ],
+    [ "NiDsPS5ControllerSim", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a13bc49143b874bf143d8674c79aad60e", null ],
+    [ "SetCircleButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a124567673e7d36a7c5985c5420e2bb60", null ],
+    [ "SetCreateButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#ad086ac5b52d9baeca16a0e46682d2204", null ],
+    [ "SetCrossButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a50c3a36b63122a174ef4398337dfd4f8", null ],
+    [ "SetL1Button", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a7f4f9cc345f6b2629b2830789d5c7ec7", null ],
+    [ "SetL2Axis", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a53fbf9cdf42e6308fbfd0db92aca637f", null ],
+    [ "SetL2Button", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#aa07c956d18a861000afecfceaaa36c59", null ],
+    [ "SetL3Button", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#af4529331965c413733ce1a74f4199a1e", null ],
+    [ "SetLeftX", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#af0486c409376ffbf396b7a8db2abe011", null ],
+    [ "SetLeftY", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a298101fb72c6c071fbed8ab1ddb3ea4d", null ],
+    [ "SetOptionsButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a1853471aa971337a20b7db6180f3fbc0", null ],
+    [ "SetPSButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#ab7ab831673d0243e615dce0448c47011", null ],
+    [ "SetR1Button", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a960e8ff6152e9c4d794e858fc360fc83", null ],
+    [ "SetR2Axis", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a5093d7976398ab8220a8d529b45581d3", null ],
+    [ "SetR2Button", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#aaf0409d36d18fa9c81951ba827d7fdd0", null ],
+    [ "SetR3Button", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a18a4131c0a6d97b96d20676f09b9f26a", null ],
+    [ "SetRightX", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a0cd166a05705a7fc309ab8de0c83f512", null ],
+    [ "SetRightY", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a94b3627fa582797f37b01c9ee458a183", null ],
+    [ "SetSquareButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a49271bd3c69e703a562c656d379afb32", null ],
+    [ "SetTouchpadButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a69b94ac006a9808ab558219c3b4ed3ef", null ],
+    [ "SetTriangleButton", "classwpi_1_1sim_1_1_ni_ds_p_s5_controller_sim.html#a2ca805d6c9d7a86c6d4a0aaa7da20dad", null ]
+];

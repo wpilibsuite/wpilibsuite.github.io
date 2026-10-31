@@ -1,0 +1,6 @@
+var classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_idx_00_01_type_00_01_types_8_8_8_01_4 =
+[
+    [ "PointerUnionMembers", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_idx_00_01_type_00_01_types_8_8_8_01_4.html#a2cf75359f844fb13708c61f40cfaa809", null ],
+    [ "PointerUnionMembers", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_idx_00_01_type_00_01_types_8_8_8_01_4.html#abc4d8602828c21d4285391f257f59a79", null ],
+    [ "operator=", "classwpi_1_1util_1_1pointer__union__detail_1_1_pointer_union_members_3_01_derived_00_01_idx_00_01_type_00_01_types_8_8_8_01_4.html#afa66544bab5dc2936d30623c091facfd", null ]
+];
