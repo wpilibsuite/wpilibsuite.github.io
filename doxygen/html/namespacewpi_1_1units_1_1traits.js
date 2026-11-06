@@ -1,0 +1,26 @@
+var namespacewpi_1_1units_1_1traits =
+[
+    [ "is_ratio", "structwpi_1_1units_1_1traits_1_1is__ratio.html", null ],
+    [ "is_base_unit", "structwpi_1_1units_1_1traits_1_1is__base__unit.html", null ],
+    [ "is_unit", "structwpi_1_1units_1_1traits_1_1is__unit.html", null ],
+    [ "is_convertible_unit", "structwpi_1_1units_1_1traits_1_1is__convertible__unit.html", null ],
+    [ "is_nonlinear_scale", "structwpi_1_1units_1_1traits_1_1is__nonlinear__scale.html", null ],
+    [ "is_convertible_unit_t", "structwpi_1_1units_1_1traits_1_1is__convertible__unit__t.html", null ],
+    [ "is_dimensionless_unit", "structwpi_1_1units_1_1traits_1_1is__dimensionless__unit.html", null ],
+    [ "is_unit_t", "structwpi_1_1units_1_1traits_1_1is__unit__t.html", null ],
+    [ "has_linear_scale", "structwpi_1_1units_1_1traits_1_1has__linear__scale.html", null ],
+    [ "has_decibel_scale", "structwpi_1_1units_1_1traits_1_1has__decibel__scale.html", null ],
+    [ "is_same_scale", "structwpi_1_1units_1_1traits_1_1is__same__scale.html", null ],
+    [ "is_unit_value_t", "structwpi_1_1units_1_1traits_1_1is__unit__value__t.html", null ],
+    [ "is_unit_value_t_category", "structwpi_1_1units_1_1traits_1_1is__unit__value__t__category.html", null ],
+    [ "base_unit_of", "namespacewpi_1_1units_1_1traits.html#a1aeba60f2f81c427e30d81d39ab719e7", null ],
+    [ "has_decibel_scale_v", "namespacewpi_1_1units_1_1traits.html#a37ca2a189324c37eb4895f97e4affbb6", null ],
+    [ "has_linear_scale_v", "namespacewpi_1_1units_1_1traits.html#ad1ffc92cac215b12eb215ab36979e355", null ],
+    [ "is_convertible_unit_v", "namespacewpi_1_1units_1_1traits.html#a0110569df88b66c90df74f56375a74bf", null ],
+    [ "is_ratio_v", "namespacewpi_1_1units_1_1traits.html#abdadaff90ed7b7303f74ed6a3ec66025", null ],
+    [ "is_same_scale_v", "namespacewpi_1_1units_1_1traits.html#a56f119f5913caac3ae79ff7923972e63", null ],
+    [ "is_unit_t_v", "namespacewpi_1_1units_1_1traits.html#a1578e43a505c4d86f9deb860b7b22cfb", null ],
+    [ "is_unit_v", "namespacewpi_1_1units_1_1traits.html#a0ce5f7d9be9bcd33a64edc6b7936fb05", null ],
+    [ "is_unit_value_t_category_v", "namespacewpi_1_1units_1_1traits.html#a65373d8e6722543514194f756ffeb55e", null ],
+    [ "is_unit_value_t_v", "namespacewpi_1_1units_1_1traits.html#aa8799d9a7e2e3212143870d757fdbc13", null ]
+];

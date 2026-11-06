@@ -1,0 +1,26 @@
+var dir_80171b81fb9875ac854d0fb2827887bc =
+[
+    [ "cscore_c.h", "cscore__c_8h.html", "cscore__c_8h" ],
+    [ "cscore_cpp.hpp", "cscore__cpp_8hpp.html", "cscore__cpp_8hpp" ],
+    [ "cscore_raw.h", "cscore__raw_8h.html", "cscore__raw_8h" ],
+    [ "cscore_raw.hpp", "cscore__raw_8hpp.html", "cscore__raw_8hpp" ],
+    [ "cscore_runloop.hpp", "cscore__runloop_8hpp.html", "cscore__runloop_8hpp" ],
+    [ "CvSink.hpp", "_cv_sink_8hpp.html", "_cv_sink_8hpp" ],
+    [ "CvSource.hpp", "_cv_source_8hpp.html", "_cv_source_8hpp" ],
+    [ "HttpCamera.hpp", "_http_camera_8hpp.html", "_http_camera_8hpp" ],
+    [ "ImageSink.hpp", "_image_sink_8hpp.html", "_image_sink_8hpp" ],
+    [ "ImageSource.hpp", "_image_source_8hpp.html", "_image_source_8hpp" ],
+    [ "MjpegServer.hpp", "_mjpeg_server_8hpp.html", "_mjpeg_server_8hpp" ],
+    [ "RawEvent.hpp", "_raw_event_8hpp.html", "_raw_event_8hpp" ],
+    [ "RawSink.hpp", "_raw_sink_8hpp.html", "_raw_sink_8hpp" ],
+    [ "RawSource.hpp", "_raw_source_8hpp.html", "_raw_source_8hpp" ],
+    [ "UsbCamera.hpp", "_usb_camera_8hpp.html", "_usb_camera_8hpp" ],
+    [ "UsbCameraInfo.hpp", "_usb_camera_info_8hpp.html", "_usb_camera_info_8hpp" ],
+    [ "VideoCamera.hpp", "_video_camera_8hpp.html", "_video_camera_8hpp" ],
+    [ "VideoEvent.hpp", "_video_event_8hpp.html", "_video_event_8hpp" ],
+    [ "VideoListener.hpp", "_video_listener_8hpp.html", "_video_listener_8hpp" ],
+    [ "VideoMode.hpp", "_video_mode_8hpp.html", "_video_mode_8hpp" ],
+    [ "VideoProperty.hpp", "_video_property_8hpp.html", null ],
+    [ "VideoSink.hpp", "_video_sink_8hpp.html", "_video_sink_8hpp" ],
+    [ "VideoSource.hpp", "_video_source_8hpp.html", "_video_source_8hpp" ]
+];

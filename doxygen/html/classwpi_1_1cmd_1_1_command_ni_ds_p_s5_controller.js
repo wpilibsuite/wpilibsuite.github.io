@@ -1,0 +1,26 @@
+var classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller =
+[
+    [ "CommandNiDsPS5Controller", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a3a7831c09ed172ba255d66bf8fca68a6", null ],
+    [ "Circle", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a70b1a7039dc18899d7987011de1c6f15", null ],
+    [ "Create", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a67fb0f748650bdf520970ca6e8ba0260", null ],
+    [ "Cross", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#aead6fa32aa13d01e2fc9cbf88202a335", null ],
+    [ "GetHID", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a8892e2dbcb598e0c30ac3fe8814ee201", null ],
+    [ "GetL2Axis", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a05e9ba393acfa2df188fefe862ce7540", null ],
+    [ "GetLeftX", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a4b49622e944134db530d236dfec56d82", null ],
+    [ "GetLeftY", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a6b7d1b5e4de8244fc46ed8f7c5dc7809", null ],
+    [ "GetNiDsPS5Controller", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a721810fd17f5952ad0fd2daf3598bc92", null ],
+    [ "GetR2Axis", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#aa483c4d830ee478f0bfc461fe3206170", null ],
+    [ "GetRightX", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a077c178416d2429e89bb7e05c7e3eaff", null ],
+    [ "GetRightY", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a42d093a8f3d52e319485e1052d12dbc8", null ],
+    [ "L1", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a614d7f82b3700268a8fd86e093cf3896", null ],
+    [ "L2", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#aebafba59f672f0efe8b7ad31dce8e715", null ],
+    [ "L3", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a4f2e9762518698d4d208679262b22b79", null ],
+    [ "Options", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#ac6f7132be5927b0fd17291f1af03ca9d", null ],
+    [ "PS", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#abac316a88c9f847252f82048b9a4efe1", null ],
+    [ "R1", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a12948a2b7095556314563dfc003815b8", null ],
+    [ "R2", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a09b2c1165e5f615e38f46c6e8fb92122", null ],
+    [ "R3", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#af53459b828461f95b8bb0c1fc461de50", null ],
+    [ "Square", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#acbb6501af56f3ee895941d3ec2eac902", null ],
+    [ "Touchpad", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#aa51362ac617915ff85101868a15deb11", null ],
+    [ "Triangle", "classwpi_1_1cmd_1_1_command_ni_ds_p_s5_controller.html#a2adf64fb0ccb7fb9d92366f47622a642", null ]
+];
