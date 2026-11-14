@@ -1,0 +1,27 @@
+var file__def_8h =
+[
+    [ "UPB_DESC", "file__def_8h.html#ac6b7b450044b229bc945de5c4a339d98", null ],
+    [ "UPB_DESC", "file__def_8h.html#a5a1df6fc9cf26b2ccc0dad6a881095fa", null ],
+    [ "UPB_DESC", "file__def_8h.html#ac94913d3097b13215a1c76ee03c2c408", null ],
+    [ "upb_FileDef_Dependency", "file__def_8h.html#a7ac9f1da3c97bb7cb170bc9d60c5cbbb", null ],
+    [ "upb_FileDef_DependencyCount", "file__def_8h.html#a1f1bd7e552dbd888bcfd238dc241f62e", null ],
+    [ "upb_FileDef_EditionName", "file__def_8h.html#a34b29c9c13fc68afd4ccbb80ec8bf6a8", null ],
+    [ "upb_FileDef_HasOptions", "file__def_8h.html#aaf2fb333432226a625d90e349f4f776e", null ],
+    [ "upb_FileDef_Name", "file__def_8h.html#a2be5941af0e6f07405fa9b209dc0dc82", null ],
+    [ "upb_FileDef_Package", "file__def_8h.html#ac87c9380c27e873a4848b83574874e62", null ],
+    [ "upb_FileDef_Pool", "file__def_8h.html#ab77ad95cc8440e8eaaaca4217485730f", null ],
+    [ "upb_FileDef_PublicDependency", "file__def_8h.html#ad6f8e9ae843b1edbfeac55f0668209e4", null ],
+    [ "upb_FileDef_PublicDependencyCount", "file__def_8h.html#a8987aed1cb7997ac09c00c7bb7056f69", null ],
+    [ "upb_FileDef_Resolves", "file__def_8h.html#aa177c99bc104061a22e8857fa32fd8f0", null ],
+    [ "upb_FileDef_Service", "file__def_8h.html#a8332d1591c5b1d69e1cc2a39201385c3", null ],
+    [ "upb_FileDef_ServiceCount", "file__def_8h.html#a34b331efaca7f05f90c095ef5d8554aa", null ],
+    [ "upb_FileDef_Syntax", "file__def_8h.html#a587e597d4b23013f133d39b3222f88dd", null ],
+    [ "upb_FileDef_TopLevelEnum", "file__def_8h.html#a212b4ccc0abe57b2c777228ec7e3eb90", null ],
+    [ "upb_FileDef_TopLevelEnumCount", "file__def_8h.html#a6b1aa9f635cd5c1eb6f7286e4b8dc069", null ],
+    [ "upb_FileDef_TopLevelExtension", "file__def_8h.html#a33b0871b70a3e6dc6140b3f67350ca64", null ],
+    [ "upb_FileDef_TopLevelExtensionCount", "file__def_8h.html#a8ed094c5d37425b490e80953911a1ac5", null ],
+    [ "upb_FileDef_TopLevelMessage", "file__def_8h.html#aebc9fe03da8daec9cc7e06a398e731f3", null ],
+    [ "upb_FileDef_TopLevelMessageCount", "file__def_8h.html#ab70bf7f5189010ed79d00d1fb617ac2e", null ],
+    [ "upb_FileDef_WeakDependency", "file__def_8h.html#a7a6462d34f0c2c3ce5a32f041c479517", null ],
+    [ "upb_FileDef_WeakDependencyCount", "file__def_8h.html#afd2614bb82ea41c9509b515b3a753d35", null ]
+];
