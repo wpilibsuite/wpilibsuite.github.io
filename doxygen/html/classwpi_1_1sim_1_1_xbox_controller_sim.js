@@ -1,0 +1,26 @@
+var classwpi_1_1sim_1_1_xbox_controller_sim =
+[
+    [ "XboxControllerSim", "classwpi_1_1sim_1_1_xbox_controller_sim.html#ac50d770015fc4a71333d87c08f0c08cc", null ],
+    [ "XboxControllerSim", "classwpi_1_1sim_1_1_xbox_controller_sim.html#acf922f8bd3d1ba0880b97682e9e68c23", null ],
+    [ "SetAButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a7eda2a1bd407077eb8d1bf412bc7b675", null ],
+    [ "SetBButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#aa30bfa6561df323db5242e54ca4fc9a4", null ],
+    [ "SetDpadDownButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a6a3d2077eb1d262764430416de6b85bb", null ],
+    [ "SetDpadLeftButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#ab9279b9d9538ae3445f646abdeab64a5", null ],
+    [ "SetDpadRightButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a8d191e5950005770b4664611227109d2", null ],
+    [ "SetDpadUpButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a35b313bb0c5310a14ff3fc882b220b21", null ],
+    [ "SetLeftBumperButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a4f6225611c42b099e349597c7a6e2853", null ],
+    [ "SetLeftStickButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a8ed427829ff96fcbbf0e8e7636ba5a53", null ],
+    [ "SetLeftTrigger", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a5ad0f00f3e8a238d0beea4c531ae5e7f", null ],
+    [ "SetLeftX", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a4fae34554d1e5f3f30fb4f41a6e66802", null ],
+    [ "SetLeftY", "classwpi_1_1sim_1_1_xbox_controller_sim.html#ab12cd80677467f53b62b60d215c243fe", null ],
+    [ "SetMenuButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#aa523afe0790e97271d336b784ec08c53", null ],
+    [ "SetRightBumperButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a370e400e152e42e55564d012d1c69136", null ],
+    [ "SetRightStickButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a6808ab21751d6c77b69ae1189b10da5d", null ],
+    [ "SetRightTrigger", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a68400948b201ef781fcc0c4d3e90a402", null ],
+    [ "SetRightX", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a78aee9c3420a42dc2c5a312c03eded19", null ],
+    [ "SetRightY", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a9d94b105651a2172abcc6aa645dd553f", null ],
+    [ "SetViewButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#ad5303bbbef5f3f5838eeffd6a348b52c", null ],
+    [ "SetXboxButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a5316077a3817262d0c7fdf0e2f8cee20", null ],
+    [ "SetXButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#adb0940e1b208912d76fa3648fc8193ae", null ],
+    [ "SetYButton", "classwpi_1_1sim_1_1_xbox_controller_sim.html#a4e5abe46e3f8f253f1e9adddb9633595", null ]
+];
