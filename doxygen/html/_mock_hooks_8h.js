@@ -1,0 +1,27 @@
+var _mock_hooks_8h =
+[
+    [ "HALSIM_SendConsoleLineHandler", "_mock_hooks_8h.html#af36e6fdde96c7749b860e8e2a142b216", null ],
+    [ "HALSIM_SendErrorHandler", "_mock_hooks_8h.html#aaa2465109b704bc92b07dc1ef7232510", null ],
+    [ "HALSIM_SimPeriodicCallback", "_mock_hooks_8h.html#aa0ba707a7884888d2722bb29ae3d4931", null ],
+    [ "HALSIM_WriteDisplayAnsiHandler", "_mock_hooks_8h.html#a407b41bf58e71aecab501f1a840a1417", null ],
+    [ "HALSIM_CancelAllSimPeriodicCallbacks", "_mock_hooks_8h.html#ae2b6076c6710b37f6fa89ce7654bc9de", null ],
+    [ "HALSIM_CancelSimPeriodicAfterCallback", "_mock_hooks_8h.html#ae17c3b9843c68b32c8218938ea9e14aa", null ],
+    [ "HALSIM_CancelSimPeriodicBeforeCallback", "_mock_hooks_8h.html#a6ed1f2a8c716b82334ff0d3347b8e781", null ],
+    [ "HALSIM_GetProgramStarted", "_mock_hooks_8h.html#a59a202421a946810c149c2716333deb2", null ],
+    [ "HALSIM_GetProgramState", "_mock_hooks_8h.html#a00278827a62bd8d38c6ec4abc05d02ed", null ],
+    [ "HALSIM_IsTimingPaused", "_mock_hooks_8h.html#a0d2a43cdf4b63370952ec9df78bed986", null ],
+    [ "HALSIM_PauseTiming", "_mock_hooks_8h.html#ae407944ee20832bb2015566583bec117", null ],
+    [ "HALSIM_RegisterSimPeriodicAfterCallback", "_mock_hooks_8h.html#ae860f367ab877285fd32f80c15b995f4", null ],
+    [ "HALSIM_RegisterSimPeriodicBeforeCallback", "_mock_hooks_8h.html#a171010d1a59ce8305c3ee1871f44b363", null ],
+    [ "HALSIM_RestartTiming", "_mock_hooks_8h.html#a7f93666ab7eeca0ca5ee87fa0119f854", null ],
+    [ "HALSIM_ResumeTiming", "_mock_hooks_8h.html#a96729aea2f66728ce9bcaead3fbbaee3", null ],
+    [ "HALSIM_SetProgramStarted", "_mock_hooks_8h.html#a38876d46f64051021e28d449b1c26ccb", null ],
+    [ "HALSIM_SetProgramState", "_mock_hooks_8h.html#af65c9d4ea6331898dbbd1e04063c75b5", null ],
+    [ "HALSIM_SetRuntimeType", "_mock_hooks_8h.html#a5fd09898a52ba63e2caafe2496ee4d73", null ],
+    [ "HALSIM_SetSendConsoleLine", "_mock_hooks_8h.html#a2f4a269636df25efb147b3ea4649a8b2", null ],
+    [ "HALSIM_SetSendError", "_mock_hooks_8h.html#a728ac0c7f9145a61ff6b6483344bb8d2", null ],
+    [ "HALSIM_SetWriteDisplayAnsi", "_mock_hooks_8h.html#a7b315f6354668968d8e33a65f5db586a", null ],
+    [ "HALSIM_StepTiming", "_mock_hooks_8h.html#a6b0577c0df98ae27b9fba8d67d415ad5", null ],
+    [ "HALSIM_StepTimingAsync", "_mock_hooks_8h.html#a9c600963f57ea5df9c6a57f246fbb494", null ],
+    [ "HALSIM_WaitForProgramStart", "_mock_hooks_8h.html#aec15dff02b755b9c149b52ea59ce401e", null ]
+];
